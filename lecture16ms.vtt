@@ -1,0 +1,2840 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+kandungan berikut adalah disediakan di bawah lesen Creative Commons
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+sokongan anda akan membantu MIT OpenCourseWare terus tawaran
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+sumber-sumber pendidikan yang berkualiti tinggi secara percuma
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+untuk membuat sumbangan atau melihat bahan-bahan tambahan dari beratus-ratus daripada mereka IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+kursus
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+melawat MIT OpenCourseWare pada 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU ha for the
+bahawa MIT yang EDU ha untuk
+
+00:00:29,000 --> 00:00:31,000
+the
+yang
+
+00:00:31,000 --> 00:00:38,000
+the in
+dalam
+
+00:00:38,000 --> 00:00:45,000
+the new the we concluded the last lecture
+yang baru kita membuat kesimpulan kuliah terakhir
+
+00:00:57,000 --> 00:01:01,000
+with the statement above the sampling theorem and just as a quick reminder
+dengan kenyataan di atas teorem pensampelan dan hanya sebagai peringatan cepat
+
+00:01:01,000 --> 00:01:05,000
+the sampling theorem said that
+teorem pensampelan berkata
+
+00:01:05,000 --> 00:01:08,000
+if we have a continuous-time signal
+jika kita mempunyai isyarat berterusan masa
+
+00:01:08,000 --> 00:01:11,000
+and we have equally spaced samples
+dan kami telah sama jarak sampel
+
+00:01:11,000 --> 00:01:17,000
+all that signal sampled at a sampling period which a indicators capital T
+semua isyarat yang disampel pada tempoh persampelan yang T petunjuk modal
+
+00:01:17,000 --> 00:01:21,000
+and if except he is banned limited
+dan jika kecuali dia diharamkan terhad
+
+00:01:21,000 --> 00:01:25,000
+in other words the forty a transformer 0
+dalam erti kata lain empat puluh pengubah 0
+
+00:01:25,000 --> 00:01:28,000
+outside some band where Omega Sapan
+di luar beberapa band di mana Omega Sapan
+
+00:01:28,000 --> 00:01:32,000
+is the highest frequency then
+adalah kekerapan yang tertinggi
+
+00:01:32,000 --> 00:01:37,000
+under the condition that the sampling frequency which is two-part divided by
+dengan syarat frekuensi pensampelan yang dua bahagian dibahagikan dengan
+
+00:01:37,000 --> 00:01:38,000
+the period
+tempoh yang
+
+00:01:38,000 --> 00:01:42,000
+is greater than twice the highest frequency
+adalah lebih besar daripada dua kali kekerapan tertinggi
+
+00:01:42,000 --> 00:01:46,000
+the original signal is uniquely
+isyarat asal adalah unik
+
+00:01:46,000 --> 00:01:50,000
+recoverable from the set of samples and
+diperolehi dari set sampel dan
+
+00:01:50,000 --> 00:01:54,000
+the sampling theorem essentially was derived by
+teorem pensampelan dasarnya telah diperolehi oleh
+
+00:01:54,000 --> 00:01:57,000
+observing or using the notion that
+pemerhatian atau menggunakan tanggapan bahawa
+
+00:01:57,000 --> 00:02:01,000
+sampling could be done by multiplication
+pensampelan boleh dilakukan dengan pendaraban
+
+00:02:01,000 --> 00:02:05,000
+or modulation with an impulse train and the sampling theorem develop
+atau modulasi dengan kereta api gerak hati dan teorem pensampelan membangunkan
+
+00:02:05,000 --> 00:02:08,000
+by examining the consequence
+dengan memeriksa akibat
+
+00:02:08,000 --> 00:02:13,000
+love the modulation property in the context of the Fourier transform
+suka harta modulasi dalam konteks Fourier
+
+00:02:13,000 --> 00:02:18,000
+in particular if we have our signal accept T
+khususnya jika kita mempunyai isyarat kami menerima T
+
+00:02:18,000 --> 00:02:21,000
+and it's multiplied by an impulse train
+dan ia didarab dengan kereta api gerak hati
+
+00:02:21,000 --> 00:02:25,000
+to give us a sampled signal
+untuk memberi kita isyarat disampel
+
+00:02:25,000 --> 00:02:31,000
+another impose train whose values or areas are samples of the original time
+satu lagi kereta api yang mengenakan nilai-nilai atau kawasan adalah sampel masa yang asal
+
+00:02:31,000 --> 00:02:32,000
+function
+fungsi
+
+00:02:32,000 --> 00:02:36,000
+as i indicate here then
+sebagai i menunjukkan di sini maka
+
+00:02:36,000 --> 00:02:39,000
+in fact if we examine this equation or equivalently
+sebenarnya jika kita mengkaji persamaan ini atau sebandingnya
+
+00:02:39,000 --> 00:02:42,000
+bringing accept T inside this some
+membawa menerima T dalam beberapa ini
+
+00:02:42,000 --> 00:02:48,000
+if we examine either if these equations in the frequency domain
+jika kita mengkaji sama ada jika persamaan ini dalam domain frekuensi
+
+00:02:48,000 --> 00:02:51,000
+the four EA transform love
+empat EA mengubah cinta
+
+00:02:51,000 --> 00:02:56,000
+exe PFT is the convolution
+exe PFT adalah kekusutan yang
+
+00:02:56,000 --> 00:03:01,000
+above the 40 a transformer the original signal and the Fourier transform
+di atas 40 pengubah isyarat asal dan Fourier
+
+00:03:01,000 --> 00:03:05,000
+up the impulse train now
+sehingga kereta api gerak hati kini
+
+00:03:05,000 --> 00:03:08,000
+be imposed strain is a periodic signal its Fourier transform
+tekanan yang dikenakan adalah isyarat berkala Fourier mengubah
+
+00:03:08,000 --> 00:03:12,000
+therefore as we talked about with Fourier transforms itself an impulse
+oleh itu sebagaimana kita berbincang mengenai dengan Fourier mengubah sendiri satu dorongan
+
+00:03:12,000 --> 00:03:13,000
+train
+kereta api
+
+00:03:13,000 --> 00:03:16,000
+and when we do this convolution n
+dan apabila kita melakukan kekusutan ini n
+
+00:03:16,000 --> 00:03:21,000
+using the fact that the 48 race for the imposed strain
+menggunakan fakta bahawa bangsa 48 untuk ketegangan yang dikenakan
+
+00:03:21,000 --> 00:03:24,000
+is an impulse train the result
+adalah kereta api gerak hati hasilnya
+
+00:03:24,000 --> 00:03:28,000
+or this convolution then tells us
+atau kekusutan ini maka memberitahu kita
+
+00:03:28,000 --> 00:03:31,000
+that the 48 transform love
+bahawa 48 mengubah cinta
+
+00:03:31,000 --> 00:03:34,000
+the sampled signal or the impulse train
+isyarat yang disampel atau kereta api gerak hati
+
+00:03:34,000 --> 00:03:38,000
+which represents the samples is a some
+yang mewakili sampel beberapa yang
+
+00:03:38,000 --> 00:03:42,000
+love frequency shifted replications
+kekerapan cinta beralih replikasi
+
+00:03:42,000 --> 00:03:45,000
+up the 48 transform of the original signal
+sehingga 48 mengubah isyarat asal
+
+00:03:45,000 --> 00:03:48,000
+so mathematically
+jadi secara matematik
+
+00:03:48,000 --> 00:03:53,000
+that's the relationship it essentially says that after sampling or modulation
+itulah hubungan ia pada dasarnya mengatakan bahawa selepas persampelan atau modulasi
+
+00:03:53,000 --> 00:03:54,000
+with an impulse train
+dengan kereta api gerak hati
+
+00:03:54,000 --> 00:03:58,000
+the resulting spectrum is the original spectrum
+spektrum yang terhasil adalah spektrum asal
+
+00:03:58,000 --> 00:04:01,000
+added to itself shifted by multiples
+ditambah dengan dirinya sendiri beralih dengan gandaan
+
+00:04:01,000 --> 00:04:05,000
+integer multiples of the sampling frequency well
+gandaan integer frekuensi pensampelan juga
+
+00:04:05,000 --> 00:04:08,000
+let's see that as we did last time in terms of pictures
+mari kita melihat bahawa seperti yang kita lakukan masa lepas dari segi gambar
+
+00:04:08,000 --> 00:04:12,000
+and again to remind you of the basic
+dan sekali lagi untuk mengingatkan anda mengenai asas
+
+00:04:12,000 --> 00:04:16,000
+picture involved if we have an original signal
+gambar yang terlibat jika kita mempunyai isyarat asal
+
+00:04:16,000 --> 00:04:19,000
+with the spectrum is a indicated here where
+dengan spektrum itu adalah di mana yang ditunjukkan di sini
+
+00:04:19,000 --> 00:04:22,000
+its ban limited with the highest frequency Omega Savannah M
+larangan yang terhad dengan kekerapan tertinggi Omega Savannah M
+
+00:04:22,000 --> 00:04:27,000
+and if the time function is sample
+dan jika fungsi masa yang sampel
+
+00:04:27,000 --> 00:04:31,000
+so that in the frequency domain week involved this spectrum
+supaya dalam minggu domain frekuensi yang terlibat spektrum ini
+
+00:04:31,000 --> 00:04:35,000
+with the spectrum shown below which is the
+dengan spektrum yang ditunjukkan di bawah yang merupakan
+
+00:04:35,000 --> 00:04:40,000
+spectrum love the impulse train
+spektrum suka kereta api gerak hati
+
+00:04:40,000 --> 00:04:44,000
+the convolution if these true up these two
+kekusutan yang jika ini benar sehingga kedua-dua
+
+00:04:44,000 --> 00:04:47,000
+is then the Fourier transform or spectrum
+kemudiannya Fourier atau spektrum
+
+00:04:47,000 --> 00:04:51,000
+love the sampled time function
+suka fungsi masa yang disampel
+
+00:04:51,000 --> 00:04:55,000
+and so thats what we end up with here
+dan sebagainya thats apa yang kita berakhir dengan di sini
+
+00:04:55,000 --> 00:05:00,000
+and then as you recall to recover the original time function
+dan kemudian sebagai anda ingat memulihkan fungsi masa yang asal
+
+00:05:00,000 --> 00:05:05,000
+from this as long as these individual triangles don't overlap
+daripada ini selagi ini segi tiga individu tidak bertindih
+
+00:05:05,000 --> 00:05:08,000
+to recover it just simply involves
+untuk mendapatkan semula ia hanya hanya melibatkan
+
+00:05:08,000 --> 00:05:13,000
+passing the impulse train through a low-pass filter in effect
+lulus kereta api gerak hati melalui penapis laluan rendah di kesan
+
+00:05:13,000 --> 00:05:17,000
+extracting just one of these replications
+mengekstrak hanya salah satu daripada replikasi ini
+
+00:05:17,000 --> 00:05:21,000
+love the original spectrum
+suka spektrum asal
+
+00:05:21,000 --> 00:05:25,000
+so the overall system
+supaya keseluruhan sistem
+
+00:05:25,000 --> 00:05:29,000
+then for for doing the sampling and then
+maka bagi untuk menjalankan pensampelan dan kemudian
+
+00:05:29,000 --> 00:05:34,000
+the reconstruction of the original signal from the samples
+pembinaan semula isyarat asal dari sampel
+
+00:05:34,000 --> 00:05:38,000
+consists of multiplying the original time function
+terdiri daripada mendarabkan fungsi masa yang asal
+
+00:05:38,000 --> 00:05:42,000
+by an impulse train and that gives us
+oleh kereta api gerak hati dan yang memberikan kita
+
+00:05:42,000 --> 00:05:45,000
+then the sampled signal
+maka isyarat yang disampel
+
+00:05:45,000 --> 00:05:49,000
+the Fourier transform I show here love the
+Fourier saya menunjukkan di sini suka
+
+00:05:49,000 --> 00:05:54,000
+original signal and after modulation with the impulse train
+isyarat asal dan selepas modulasi dengan kereta api gerak hati
+
+00:05:54,000 --> 00:05:58,000
+the resulting spectrum that we have is
+spektrum yang terhasil yang kita ada adalah
+
+00:05:58,000 --> 00:06:04,000
+that replicated around integer multiples of the sampling frequency
+yang ditiru sekitar gandaan integer frekuensi pensampelan
+
+00:06:04,000 --> 00:06:07,000
+and then finally to recover
+dan akhirnya untuk mendapatkan semula
+
+00:06:07,000 --> 00:06:12,000
+the original signal or to generate a reconstructed signal
+isyarat asal atau untuk menjana isyarat dibina semula
+
+00:06:12,000 --> 00:06:16,000
+we then multiply this in the frequency domain
+kita kemudian darab ini dalam domain frekuensi
+
+00:06:16,000 --> 00:06:20,000
+by the frequency response of an idea low-pass filter
+dengan sambutan frekuensi idea penapis laluan rendah
+
+00:06:20,000 --> 00:06:23,000
+and what that accomplishes forest and
+dan apa yang Kuasa melakukan hutan dan
+
+00:06:23,000 --> 00:06:28,000
+is recovering the original signal
+pulih isyarat asal
+
+00:06:28,000 --> 00:06:32,000
+now in this picture an important point that I raise last time
+kini dalam gambar ini satu titik penting yang saya meningkatkan masa lalu
+
+00:06:32,000 --> 00:06:36,000
+relates to the fact dead in doing the reconstruction
+berkaitan dengan mati fakta dalam melakukan pembinaan semula
+
+00:06:36,000 --> 00:06:40,000
+well we've assumed is dead in replicating
+juga kami telah diandaikan mati mereplikasi
+
+00:06:40,000 --> 00:06:43,000
+these individual versions
+versi individu
+
+00:06:43,000 --> 00:06:47,000
+0 the original signal
+0 isyarat asal
+
+00:06:47,000 --> 00:06:50,000
+those replications don't overlap and sold by passing this through a low-pass
+mereka replikasi tidak bertindih dan dijual dengan melepaskan ini melalui-pass rendah
+
+00:06:50,000 --> 00:06:52,000
+filter in fact
+menapis sebenarnya
+
+00:06:52,000 --> 00:06:55,000
+we can recover the original signal well
+kita boleh memulihkan isyarat asal dengan baik
+
+00:06:55,000 --> 00:06:59,000
+what that requires is that
+apa yang memerlukan ialah
+
+00:06:59,000 --> 00:07:03,000
+this frequency Omega Savannah M be less than
+frekuensi ini Omega Savannah M kurang daripada
+
+00:07:03,000 --> 00:07:07,000
+this frequency and this frequency
+frekuensi ini dan kekerapan ini
+
+00:07:07,000 --> 00:07:12,000
+is Omega so fast minus Omega serve them
+adalah Omega tolak begitu pantas Omega berkhidmat kepada mereka
+
+00:07:12,000 --> 00:07:16,000
+and so what we require is dead the frequency Omega Sapan
+dan sebagainya apa yang kita perlukan adalah mati kekerapan Omega Sapan
+
+00:07:16,000 --> 00:07:20,000
+be less than Omega cyb s minus Omega sed am
+kurang daripada Omega cyb s tolak am Omega sed
+
+00:07:20,000 --> 00:07:25,000
+or equivalent Lee what we require is that the sampling frequency
+atau yang setaraf Lee yang kita perlukan ialah kekerapan pensampelan
+
+00:07:25,000 --> 00:07:29,000
+be greater and twice the highest frequency
+lebih besar dan dua kali kekerapan tertinggi
+
+00:07:29,000 --> 00:07:33,000
+in the original signal now
+dalam isyarat asal kini
+
+00:07:33,000 --> 00:07:37,000
+if in fact that condition is violated
+jika sebenarnya keadaan yang melanggar
+
+00:07:37,000 --> 00:07:40,000
+then we end up with a very important effect
+maka kita berakhir dengan kesan yang sangat penting
+
+00:07:40,000 --> 00:07:44,000
+and that effect is referred to as a leasing
+dan kesan yang dirujuk sebagai pajakan yang
+
+00:07:44,000 --> 00:07:49,000
+in particular if we look back at are
+khususnya jika kita melihat kembali adalah
+
+00:07:49,000 --> 00:07:52,000
+original example we're here
+contoh asal kita di sini
+
+00:07:52,000 --> 00:07:57,000
+we were able to recover our original spectrum by
+kami dapat untuk mendapatkan semula spektrum asal kami dengan
+
+00:07:57,000 --> 00:08:01,000
+low-pass filtering if in fact
+laluan rendah menapis jika sebenarnya
+
+00:08:01,000 --> 00:08:04,000
+the sampling frequency is
+kekerapan pensampelan ialah
+
+00:08:04,000 --> 00:08:07,000
+not high enough to avoid aliasing
+tidak cukup tinggi untuk mengelakkan aliasing
+
+00:08:07,000 --> 00:08:12,000
+then what happens in that case is that the individual replications
+maka apa yang berlaku dalam kes ini bahawa replikasi individu
+
+00:08:12,000 --> 00:08:18,000
+love the Fourier transform above the stove the original signal
+suka Fourier di atas dapur isyarat asal
+
+00:08:18,000 --> 00:08:21,000
+overlap and what we end up with
+bertindih dan apa yang kita berakhir dengan
+
+00:08:21,000 --> 00:08:27,000
+is some distortion as you can see if we tried to pass this through a low-pass
+beberapa penyelewengan seperti yang anda lihat jika kita cuba untuk lulus ini melalui-pass rendah
+
+00:08:27,000 --> 00:08:29,000
+filter
+penapis
+
+00:08:29,000 --> 00:08:34,000
+to recover the original signal in fact we won't recover the original signal
+untuk mendapatkan semula isyarat asal sebenarnya kita tidak akan pulih isyarat asal
+
+00:08:34,000 --> 00:08:38,000
+since these individual replications have overlapped
+kerana ini replikasi individu telah bertindan
+
+00:08:38,000 --> 00:08:43,000
+and this is the case where Omega service minus Omega Savannah is less than
+dan ini adalah kes di mana Omega perkhidmatan tolak Omega Savannah adalah kurang daripada
+
+00:08:43,000 --> 00:08:47,000
+Omega so vast in other words the sampling frequency is not greater
+Omega begitu luas dalam erti kata lain kekerapan pensampelan tidak lebih besar
+
+00:08:47,000 --> 00:08:52,000
+in this case than twice the highest frequency
+dalam kes ini daripada dua kali kekerapan tertinggi
+
+00:08:52,000 --> 00:08:55,000
+so what happens here then is that in effect
+jadi apa yang berlaku di sini maka adalah bahawa dalam kesan
+
+00:08:55,000 --> 00:09:00,000
+higher frequencies get folded down into lower frequencies what would come out of
+frekuensi yang lebih tinggi mendapatkan dilipat ke bawah ke dalam frekuensi yang lebih rendah apa yang akan keluar dari
+
+00:09:00,000 --> 00:09:02,000
+the low-pass filter
+penapis laluan rendah
+
+00:09:02,000 --> 00:09:06,000
+is the reflection of some higher frequencies into lower frequencies
+adalah mencerminkan beberapa frekuensi yang lebih tinggi ke dalam frekuensi yang lebih rendah
+
+00:09:06,000 --> 00:09:09,000
+as I suggested a minute ago that affect
+seperti yang saya nyatakan minit yang lalu yang memberi kesan
+
+00:09:09,000 --> 00:09:13,000
+is referred to as alias saying and in order to
+disebut alias berkata dan untuk
+
+00:09:13,000 --> 00:09:19,000
+both understand that term better and two understand in fact the effect better
+kedua-dua memahami istilah yang lebih baik dan memahami dua sebenarnya kesan yang lebih baik
+
+00:09:19,000 --> 00:09:23,000
+it's useful to examine this a little more closely
+ia berguna untuk memeriksa ini sedikit lebih rapat
+
+00:09:23,000 --> 00:09:27,000
+for the specific example a sinusoidal signal
+sebagai contoh tertentu isyarat sinus
+
+00:09:27,000 --> 00:09:31,000
+so let's concentrate on that and what we want to look at
+jadi mari kita menumpukan perhatian pada itu dan apa yang kita mahu melihat
+
+00:09:31,000 --> 00:09:35,000
+is the effect or alias saying
+adalah kesan atau alias berkata
+
+00:09:35,000 --> 00:09:39,000
+when our input signal is a sinusoidal signal
+apabila isyarat input kami adalah isyarat sinus
+
+00:09:39,000 --> 00:09:43,000
+now to do that what I wanna show shortly
+sekarang untuk melakukan apa yang saya mahu menunjukkan tidak lama
+
+00:09:43,000 --> 00:09:46,000
+is a computer-generated movie
+adalah sebuah filem janaan komputer
+
+00:09:46,000 --> 00:09:49,000
+that we've made and let's first walk-through
+yang telah kami lakukan dan mari kita pertama berjalan-melalui
+
+00:09:49,000 --> 00:09:54,000
+a few frames a bit to give you our first of all
+bingkai beberapa agak untuk memberikan anda pertama kami semua
+
+00:09:54,000 --> 00:09:58,000
+to to set up our notation and to suggest what it is that we're trying to
+untuk menubuhkan notasi kami dan mencadangkan apa yang ia adalah bahawa kita sedang berusaha untuk
+
+00:09:58,000 --> 00:10:00,000
+demonstrate
+menunjukkan
+
+00:10:00,000 --> 00:10:06,000
+well what we have is an input signal
+akan apa yang kami ada ialah isyarat input
+
+00:10:06,000 --> 00:10:09,000
+is a sinusoidal signal and
+adalah isyarat sinus dan
+
+00:10:09,000 --> 00:10:12,000
+the spectrum or for a transformer that
+spektrum atau untuk pengubah yang
+
+00:10:12,000 --> 00:10:15,000
+is an impulse in the frequency domain at
+adalah dorongan dalam domain frekuensi di
+
+00:10:15,000 --> 00:10:18,000
+the frequency the sinusoid we then
+kekerapan sinusoid kita maka
+
+00:10:18,000 --> 00:10:23,000
+have samples love that and when we sample that in for this particular
+telah sampel suka itu dan apabila kita mencuba yang dalam untuk khusus ini
+
+00:10:23,000 --> 00:10:26,000
+example its sample the 10 killer hurts
+contoh sampel kajian pembunuh 10 menyakitkan
+
+00:10:26,000 --> 00:10:29,000
+this spectrum is then replicated
+spektrum ini kemudiannya ditiru
+
+00:10:29,000 --> 00:10:33,000
+at multiples all the sampling frequency
+di gandaan semua frekuensi pensampelan
+
+00:10:33,000 --> 00:10:37,000
+and I haven't shown negative frequencies here but the contribution do
+dan saya tidak menunjukkan frekuensi negatif di sini tetapi sumbangannya yang melakukan
+
+00:10:37,000 --> 00:10:41,000
+to the negative frequency
+kepada frekuensi negatif
+
+00:10:41,000 --> 00:10:46,000
+is at 10 killer hurts minus the input sinusoid
+adalah pada 10 pembunuh menyakitkan tolak sinusoid input
+
+00:10:46,000 --> 00:10:49,000
+we then carry out a reconstruction
+kita kemudian menjalankan pembinaan semula yang
+
+00:10:49,000 --> 00:10:55,000
+with an idea low-pass filter and the ideal ok pass filter is set at
+dengan idea penapis laluan rendah dan penapis lulus ok yang ideal ditetapkan pada
+
+00:10:55,000 --> 00:10:58,000
+half the sampling frequency or five kelleher its
+separuh kekerapan pensampelan atau lima Kelleher yang
+
+00:10:58,000 --> 00:11:01,000
+so what we have then is
+jadi apa yang kita telah maka
+
+00:11:01,000 --> 00:11:05,000
+the input signal accept T
+isyarat input menerima T
+
+00:11:05,000 --> 00:11:09,000
+and the impulse train exe PFT
+dan gerak hati kereta api exe PFT yang
+
+00:11:09,000 --> 00:11:13,000
+and then the reconstructed signal is
+dan kemudian isyarat dibina semula adalah
+
+00:11:13,000 --> 00:11:16,000
+the output from the low-pass filter
+keluaran dari penapis laluan rendah
+
+00:11:16,000 --> 00:11:21,000
+which I denote as X a party
+yang saya menunjukkan sebagai X pihak
+
+00:11:21,000 --> 00:11:24,000
+now as the input frequency X 50
+kini frekuensi input X 50
+
+00:11:24,000 --> 00:11:28,000
+increases this impulse moves up in frequency
+meningkatkan gerak hati ini bergerak ke atas dalam kekerapan
+
+00:11:28,000 --> 00:11:32,000
+but this impulse moves down in frequency
+tetapi gerak hati ini bergerak ke bawah dalam kekerapan
+
+00:11:32,000 --> 00:11:37,000
+and so let's just look at a few frames as the input frequency increases
+dan jadi kita hanya melihat satu bingkai beberapa sebagai frekuensi bertambah input
+
+00:11:37,000 --> 00:11:40,000
+so we have here a case
+jadi kami ada di sini kes
+
+00:11:40,000 --> 00:11:43,000
+where the input frequency has move up
+di mana kekerapan input telah bergerak ke atas
+
+00:11:43,000 --> 00:11:46,000
+close to five killer hurts
+hampir lima pembunuh menyakitkan
+
+00:11:46,000 --> 00:11:50,000
+as we continue further these two impossible's
+seperti yang kita terus lagi kedua-dua ini mustahil
+
+00:11:50,000 --> 00:11:54,000
+will cross and what we'll end up with as i indicated
+akan menyeberang dan apa yang kita akan berakhir dengan sebagai i ditunjukkan
+
+00:11:54,000 --> 00:11:58,000
+is aliasing so here now is a case
+adalah aliasing jadi di sini sekarang ialah kes
+
+00:11:58,000 --> 00:12:01,000
+where we have alias saying the
+di mana kita telah alias mengatakan
+
+00:12:01,000 --> 00:12:05,000
+replication of the negative frequency has crossed into the passband if the
+replikasi frekuensi negatif telah menyeberang ke passband jika
+
+00:12:05,000 --> 00:12:07,000
+filter
+penapis
+
+00:12:07,000 --> 00:12:10,000
+and the reconstructed sinusoid will now
+dan sinusoid yang dibina semula akan kini
+
+00:12:10,000 --> 00:12:14,000
+be the frequency associated with this impulse
+akan kekerapan yang berkaitan dengan gerak hati ini
+
+00:12:14,000 --> 00:12:17,000
+rather than the frequency Associated
+bukannya kekerapan bersekutu
+
+00:12:17,000 --> 00:12:22,000
+with the original sinusoid and to dramatize that
+dengan sinusoid asal dan untuk melakonkan yang
+
+00:12:22,000 --> 00:12:25,000
+even further here is
+lebih jauh lagi di sini ialah
+
+00:12:25,000 --> 00:12:29,000
+the example where now the input frequency
+contoh dimana sekarang frekuensi input
+
+00:12:29,000 --> 00:12:33,000
+has moved up close to 10 killer hurts
+telah naik hampir 10 pembunuh menyakitkan
+
+00:12:33,000 --> 00:12:36,000
+but what comes out of the low-pass filter
+tetapi apa yang keluar dari penapis laluan rendah
+
+00:12:36,000 --> 00:12:39,000
+is a much lower frequency and in fact
+adalah frekuensi yang jauh lebih rendah dan sebenarnya
+
+00:12:39,000 --> 00:12:43,000
+you can see that here is the reconstructed sinusoid
+anda dapat melihat bahawa di sini adalah sinusoid yang dibina semula
+
+00:12:43,000 --> 00:12:48,000
+whereas here we have the input size
+sedangkan di sini kita mempunyai saiz input
+
+00:12:48,000 --> 00:12:51,000
+okay well now what I'm gonna wanna do is
+okay baik sekarang apa yang saya gonna nak buat adalah
+
+00:12:51,000 --> 00:12:56,000
+demonstrate this as i indicated with a computer-generated movie
+menunjukkan ini sebagai i ditandakan dengan filem janaan komputer
+
+00:12:56,000 --> 00:13:00,000
+and well we'll see is the effect
+dan juga kita akan melihat adalah kesan
+
+00:13:00,000 --> 00:13:05,000
+on the effect of reconstructing
+tentang kesan membina semula
+
+00:13:05,000 --> 00:13:08,000
+from the samples using a low-pass filter
+daripada sampel menggunakan penapis laluan rendah
+
+00:13:08,000 --> 00:13:12,000
+for an input which changes in frequency
+untuk input mana perubahan dalam kekerapan
+
+00:13:12,000 --> 00:13:15,000
+and with the sampling rate of 10 killer hurts
+dan dengan kadar sampel 10 pembunuh menyakitkan
+
+00:13:15,000 --> 00:13:19,000
+and what we'll see in the first part of this movie is
+dan apa yang kita akan melihat dalam bahagian pertama filem ini adalah
+
+00:13:19,000 --> 00:13:22,000
+the input except the and the reconstructed signal
+input kecuali dan isyarat yang dibina semula
+
+00:13:22,000 --> 00:13:27,000
+X a party without explicitly showing the samples
+X pihak tanpa jelas menunjukkan sampel
+
+00:13:27,000 --> 00:13:31,000
+and then at a later point will also show this and indicate
+dan kemudian pada satu titik kemudian juga akan menunjukkan ini dan nyatakan
+
+00:13:31,000 --> 00:13:34,000
+that in fact the samples are those two are equal even though
+bahawa sebenarnya sampel kedua-dua adalah sama walaupun
+
+00:13:34,000 --> 00:13:37,000
+they themselves are not
+mereka sendiri tidak
+
+00:13:37,000 --> 00:13:41,000
+so at the top will have the input sinusoid without
+jadi di bahagian atas akan mempunyai sinusoid input tanpa
+
+00:13:41,000 --> 00:13:44,000
+showing the samples and its
+menunjukkan sampel dan yang
+
+00:13:44,000 --> 00:13:50,000
+for EA transform is an impulse in the frequency domain as we've indicated
+untuk EA mengubah adalah impuls dalam domain frekuensi seperti yang kita telah ditunjukkan
+
+00:13:50,000 --> 00:13:55,000
+and if we sample it that imposed and gets replicated
+dan jika kita mencuba ia yang dikenakan dan mendapat replika
+
+00:13:55,000 --> 00:13:58,000
+and so samples in particular
+dan sebagainya sampel khususnya
+
+00:13:58,000 --> 00:14:02,000
+will have a Fourier transform not only with an impulse
+akan mempunyai Fourier mengubah bukan sahaja dengan satu dorongan
+
+00:14:02,000 --> 00:14:07,000
+at the input sinusoid sinusoidal frequency but also attend killer hurts
+pada masukan kekerapan bentuk sinus yang sinusoid tetapi juga menghadiri pembunuh menyakitkan
+
+00:14:07,000 --> 00:14:09,000
+minus that frequency
+tolak frekuensi yang
+
+00:14:09,000 --> 00:14:14,000
+now for the reconstruction we pass the samples through an idea low-pass filter
+sekarang untuk pembinaan semula kami lulus sampel melalui idea penapis laluan rendah
+
+00:14:14,000 --> 00:14:15,000
+I picked
+Saya mengambil
+
+00:14:15,000 --> 00:14:19,000
+the cutoff frequency of the low-pass filter at half the sampling frequency
+kekerapan potong daripada penapis laluan rendah pada separuh kekerapan pensampelan
+
+00:14:19,000 --> 00:14:21,000
+namely 5 killer hurts
+iaitu 5 pembunuh menyakitkan
+
+00:14:21,000 --> 00:14:24,000
+and here we see is that the output
+dan di sini kita lihat adalah bahawa output
+
+00:14:24,000 --> 00:14:29,000
+reconstructed signal in fact matches in frequency the input signal
+isyarat dibina semula sebenarnya perlawanan dalam frekuensi isyarat input
+
+00:14:29,000 --> 00:14:33,000
+now as we change the input frequency
+kini seperti yang kita menukar frekuensi input
+
+00:14:33,000 --> 00:14:36,000
+the reconstructed sinus so it is identical
+resdung yang dibina semula jadi adalah sama
+
+00:14:36,000 --> 00:14:41,000
+until we get to an input frequency
+sehingga kita sampai ke frekuensi input
+
+00:14:41,000 --> 00:14:44,000
+which exceeds half the sampling frequency
+yang melebihi separuh kekerapan pensampelan
+
+00:14:44,000 --> 00:14:50,000
+at that point we have aliasing and while the input frequency is increasing
+pada ketika itu kita telah aliasing dan manakala kekerapan input semakin meningkat
+
+00:14:50,000 --> 00:14:54,000
+the output frequency in fact is decreasing
+frekuensi keluaran sebenarnya semakin berkurangan
+
+00:14:54,000 --> 00:14:58,000
+because that's what's inside the passband the filter
+kerana itulah apa yang di dalam passband penapis yang
+
+00:14:58,000 --> 00:15:05,000
+now let's sweep it back and as the input frequency decreases the output frequency
+sekarang mari kita menyapu kembali dan kekerapan input berkurangan frekuensi keluaran
+
+00:15:05,000 --> 00:15:06,000
+increases
+peningkatan
+
+00:15:06,000 --> 00:15:09,000
+till there's no aliasing and now the output reconstructed
+hingga tidak ada aliasing dan kini output dibina semula
+
+00:15:09,000 --> 00:15:14,000
+signal is equal to the input
+isyarat adalah sama dengan input
+
+00:15:14,000 --> 00:15:18,000
+so we sample the signal and then reconstructed
+jadi kami mencuba isyarat dan kemudian dibina semula
+
+00:15:18,000 --> 00:15:21,000
+the signal from the samples and keep in mind
+isyarat dari sampel dan ingat
+
+00:15:21,000 --> 00:15:26,000
+that given a set of samples there are lots of continuous curves that we can
+yang diberikan satu set sampel terdapat banyak keluk yang berterusan yang kita boleh
+
+00:15:26,000 --> 00:15:28,000
+thread through the set of samples
+benang melalui set sampel
+
+00:15:28,000 --> 00:15:32,000
+the one that we picked up cores is the one consistent
+salah satu yang kita meningkat teras adalah konsisten satu
+
+00:15:32,000 --> 00:15:35,000
+with the assumption about the signal band with
+dengan andaian tentang band isyarat dengan
+
+00:15:35,000 --> 00:15:39,000
+in particular we've reconstructed the signal
+khususnya kita telah dibina semula isyarat
+
+00:15:39,000 --> 00:15:44,000
+that who spectrum falls within the pass band at the filter
+itu yang spektrum berada di dalam kumpulan pas di penapis
+
+00:15:44,000 --> 00:15:48,000
+now what I'd like to show is the same
+kini apa yang saya suka untuk menunjukkan adalah sama
+
+00:15:48,000 --> 00:15:51,000
+reconstruction and input as I showed before
+pembinaan semula dan input yang saya menunjukkan sebelum
+
+00:15:51,000 --> 00:15:55,000
+but now let's look at the samples and what we'll see is that
+tetapi sekarang mari kita lihat sampel dan apa yang kita akan melihat adalah bahawa
+
+00:15:55,000 --> 00:15:58,000
+when there's alias saying even though
+apabila ada alias berkata walaupun
+
+00:15:58,000 --> 00:16:02,000
+the output the reconstructed signal
+output isyarat semula
+
+00:16:02,000 --> 00:16:05,000
+is not identical to the input in fact
+tidak serupa dengan input yang sebenarnya
+
+00:16:05,000 --> 00:16:09,000
+it's consistent with the input samples that is sampling the reconstructed
+ia konsisten dengan sampel input yang pensampelan yang dibina semula
+
+00:16:09,000 --> 00:16:11,000
+signal
+isyarat
+
+00:16:11,000 --> 00:16:15,000
+gives a set of samples identical to the samples at the input
+memberikan satu set sampel sama dengan sampel pada masukan
+
+00:16:15,000 --> 00:16:19,000
+and it's just that the interpolation in between those samples
+dan ia hanya bahawa interpolasi di antara sampel-sampel
+
+00:16:19,000 --> 00:16:22,000
+is an interpolation consistent with you soon
+merupakan interpolasi konsisten dengan anda tidak lama lagi
+
+00:16:22,000 --> 00:16:25,000
+fan with love the input based on the sampling there
+kipas dengan kasih sayang input berdasarkan pensampelan terdapat
+
+00:16:25,000 --> 00:16:28,000
+so let's now look at that with
+jadi mari kita lihat sekarang bahawa dengan
+
+00:16:28,000 --> 00:16:33,000
+the samples also shown along with the sinusoid
+sampel juga ditunjukkan bersama-sama dengan sinusoid yang
+
+00:16:33,000 --> 00:16:38,000
+so at the top we have the input sinusoid together with its samples
+jadi di bahagian atas yang kita ada sinusoid input bersama-sama dengan sampel yang
+
+00:16:38,000 --> 00:16:42,000
+the bottom traces the Fourier transform of the sampled waveform
+bahagian bawah kesan Fourier bentuk gelombang disampel
+
+00:16:42,000 --> 00:16:46,000
+the middle trace is the reconstructed
+surih tengah adalah yang dibina semula
+
+00:16:46,000 --> 00:16:51,000
+sinusoid together with its samples and notice of course that the samples are
+sinusoid bersama-sama dengan sampel dan notis yang sudah tentu bahawa sampel
+
+00:16:51,000 --> 00:16:53,000
+the input a reconstructed signal
+input isyarat dibina semula
+
+00:16:53,000 --> 00:16:56,000
+are identical and also
+adalah serupa dan juga
+
+00:16:56,000 --> 00:17:00,000
+the input sinusoidal frequency
+kekerapan input bentuk sinus
+
+00:17:00,000 --> 00:17:04,000
+and the output sinus or frequency are identical
+dan sinus output atau kekerapan adalah sama
+
+00:17:04,000 --> 00:17:09,000
+we now increase the frequency at the input
+kita kini meningkatkan frekuensi pada masukan
+
+00:17:09,000 --> 00:17:13,000
+the reconstructed sinusoid tracks the input frequency
+sinusoid yang dibina semula menjejaki kekerapan input
+
+00:17:13,000 --> 00:17:16,000
+and of course the samples are the two are identical
+dan sudah tentu sampel adalah dua serupa
+
+00:17:16,000 --> 00:17:20,000
+the interpolation in between the samples is identical
+interpolasi di antara sampel adalah sama
+
+00:17:20,000 --> 00:17:24,000
+because the fact dead the input frequency is still
+kerana hakikat mati frekuensi input masih
+
+00:17:24,000 --> 00:17:31,000
+less than half the sampling frequency
+kurang daripada separuh kekerapan pensampelan
+
+00:17:31,000 --> 00:17:37,000
+and so as long as the input is frequency is less than half the sampling frequency
+dan sebagainya selagi input frekuensi adalah kurang daripada separuh kekerapan pensampelan
+
+00:17:37,000 --> 00:17:40,000
+not only will the samples be identical but also
+bukan sahaja akan sampel serupa tetapi juga
+
+00:17:40,000 --> 00:17:44,000
+the reconstructed continuous waveform will match
+bentuk gelombang berterusan yang dibina semula akan sepadan dengan
+
+00:17:44,000 --> 00:17:51,000
+the input way for
+cara input untuk
+
+00:17:56,000 --> 00:17:59,000
+now when we get to hear the sampling frequency were just
+kini apabila kita mendengar frekuensi pensampelan hanya
+
+00:17:59,000 --> 00:18:02,000
+on the verge Bailey is saying this isn't alias saying
+di ambang Bailey mengatakan ini tidak alias berkata
+
+00:18:02,000 --> 00:18:06,000
+quite yet but any increase in the input frequency
+agak lagi tetapi apa-apa peningkatan dalam kekerapan input
+
+00:18:06,000 --> 00:18:11,000
+will now generate aliasing we now have a leasing
+kini akan menjana aliasing kami kini mempunyai pajakan yang
+
+00:18:11,000 --> 00:18:15,000
+the output frequency is lower than the input frequency but notice
+frekuensi keluaran lebih rendah daripada frekuensi input tetapi notis
+
+00:18:15,000 --> 00:18:20,000
+that the samples are identical now
+bahawa sampel adalah sama kini
+
+00:18:20,000 --> 00:18:24,000
+the low-pass filter is interpolating in between those samples
+penapis laluan rendah adalah interpolasi di antara sampel-sampel
+
+00:18:24,000 --> 00:18:28,000
+with a sinusoid that falls within the past Pandev the low-pass filter
+dengan sinusoid yang termasuk dalam Pandev masa lalu penapis laluan rendah
+
+00:18:28,000 --> 00:18:34,000
+which no longer matches the frequency of the input sinusoid but
+yang tidak lagi sepadan dengan kekerapan sinusoid input tetapi
+
+00:18:34,000 --> 00:18:38,000
+the important point is that even when we have alias saying
+titik penting ialah bahawa walaupun kita mempunyai alias berkata
+
+00:18:38,000 --> 00:18:41,000
+the samples are the reconstructed waveform
+sampel adalah bentuk gelombang yang dibina semula
+
+00:18:41,000 --> 00:18:44,000
+are identical to the samples
+adalah sama dengan sampel
+
+00:18:44,000 --> 00:18:50,000
+of the original way for and notice that as the input frequency increases
+cara asal dan notis itu sebagai frekuensi bertambah input
+
+00:18:50,000 --> 00:18:54,000
+in fact the interpolated output the reconstructed output
+sebenarnya output penentu output yang dibina semula
+
+00:18:54,000 --> 00:19:01,000
+has decreased in frequency now as the input frequency begins to get closer to
+telah menurun dalam kekerapan sekarang kerana kekerapan input bermula untuk mendapatkan lebih dekat dengan
+
+00:19:01,000 --> 00:19:05,000
+10 killer hurts in fact you're all I
+10 pembunuh menyakitkan sebenarnya anda semua saya
+
+00:19:05,000 --> 00:19:08,000
+tends to also interpolate between the samples
+cenderung untuk juga menyisipkan antara sampel
+
+00:19:08,000 --> 00:19:12,000
+with a frequency that is lower
+dengan frekuensi yang lebih rendah
+
+00:19:12,000 --> 00:19:15,000
+day and the input frequency NS particularly evident
+hari dan kekerapan input NS amat jelas
+
+00:19:15,000 --> 00:19:19,000
+here notice that the input samples in fact
+di sini melihat bahawa sampel input sebenarnya
+
+00:19:19,000 --> 00:19:22,000
+look like they would be associated
+kelihatan seperti mereka akan dikaitkan
+
+00:19:22,000 --> 00:19:26,000
+with a much lower frequency sinusoid then in fact
+dengan sinusoid kekerapan yang jauh lebih rendah maka sebenarnya
+
+00:19:26,000 --> 00:19:30,000
+was the sinusoid the generated a lower frequency sinusoid
+telah sinusoid yang kekerapan sinusoid yang lebih rendah dijana
+
+00:19:30,000 --> 00:19:35,000
+in fact corresponds to the reconstructed one now as we sit back down
+sebenarnya sepadan dengan yang dibina semula sekarang kerana kita duduk kembali ke bawah
+
+00:19:35,000 --> 00:19:40,000
+the aliasing eventually disappears and the output sinus or tracks the input
+aliasing akhirnya hilang dan sinus output atau menjejaki input
+
+00:19:40,000 --> 00:19:42,000
+sinusoid in frequency
+sinusoid dalam kekerapan
+
+00:19:42,000 --> 00:19:45,000
+so we've seen the
+jadi kami telah melihat
+
+00:19:45,000 --> 00:19:49,000
+effective aliasing for sinusoidal signals and turns away forms
+aliasing berkesan untuk isyarat sinus dan berpaling bentuk
+
+00:19:49,000 --> 00:19:53,000
+now let's hear how it sounds now
+sekarang mari kita mendengar bagaimana ia kedengaran kini
+
+00:19:53,000 --> 00:19:57,000
+what we have for this demonstration is
+apa yang kita ada untuk demonstrasi ini adalah
+
+00:19:57,000 --> 00:20:00,000
+an oscillator and
+pengayun dan
+
+00:20:00,000 --> 00:20:04,000
+a sampler and the output of the sampler
+suatu sampler dan output sampler
+
+00:20:04,000 --> 00:20:07,000
+goes into a low-pass filter so the
+masuk ke dalam penapis laluan rendah jadi
+
+00:20:07,000 --> 00:20:13,000
+input for from the oscillator goes into the sampler
+input untuk daripada pengayun masuk ke dalam sampler
+
+00:20:13,000 --> 00:20:16,000
+and the output the sampler
+dan output sampler
+
+00:20:16,000 --> 00:20:19,000
+goes into the low-pass filter the
+masuk ke dalam penapis laluan rendah yang
+
+00:20:19,000 --> 00:20:22,000
+sampler frequency is 10 killer hurts
+kekerapan sampler 10 pembunuh menyakitkan
+
+00:20:22,000 --> 00:20:26,000
+and so the low-pass filter
+dan sebagainya penapis laluan rendah
+
+00:20:26,000 --> 00:20:30,000
+has a cutoff frequency as i indicate here
+mempunyai frekuensi potong sebagai i menunjukkan di sini
+
+00:20:30,000 --> 00:20:33,000
+all five killer hurts and
+kesemua lima pembunuh menyakitkan dan
+
+00:20:33,000 --> 00:20:36,000
+what will listened to is the
+apa yang akan mendengar adalah
+
+00:20:36,000 --> 00:20:40,000
+reconstructed output as the
+output dibina semula sebagai
+
+00:20:40,000 --> 00:20:43,000
+oscillator input frequency berries
+beri frekuensi input pengayun
+
+00:20:43,000 --> 00:20:48,000
+and recall there what should happen is that
+dan ingat ada apa yang sepatutnya berlaku ialah
+
+00:20:48,000 --> 00:20:53,000
+when the oscillator input frequency gets past half the sampling frequency
+apabila kekerapan input pengayun mendapat separuh lalu kekerapan pensampelan
+
+00:20:53,000 --> 00:20:59,000
+we should hear aliasing so we'll start the oscillator it to kill her ex
+kita harus mendengar aliasing jadi kita akan mula pengayun ia untuk membunuh bekas itu
+
+00:20:59,000 --> 00:21:02,000
+and keep in mind that what you see on the dial
+dan ingat bahawa apa yang anda lihat pada dail
+
+00:21:02,000 --> 00:21:06,000
+is the input frequency which you here is the output frequency
+frekuensi input yang anda di sini adalah frekuensi keluaran
+
+00:21:06,000 --> 00:21:10,000
+as long as the input frequency is less than half the sampling frequency in
+selagi kekerapan input adalah kurang daripada separuh kekerapan pensampelan dalam
+
+00:21:10,000 --> 00:21:12,000
+other words 5 killer hurts
+erti kata lain 5 pembunuh menyakitkan
+
+00:21:12,000 --> 00:21:16,000
+the reconstructed signal sounds identical to the input
+isyarat dibina semula bunyi sama dengan input
+
+00:21:16,000 --> 00:21:19,000
+now at five still hurts were right
+kini di lima masih menyakitkan betul
+
+00:21:19,000 --> 00:21:24,000
+on the verge of aliasing and when we increase the input frequency past five
+di ambang aliasing dan apabila kita meningkatkan kekerapan input yang lalu lima
+
+00:21:24,000 --> 00:21:25,000
+killer hurts
+pembunuh menyakitkan
+
+00:21:25,000 --> 00:21:29,000
+the reconstructed frequency in fact will decrease
+frekuensi semula sebenarnya akan berkurangan
+
+00:21:29,000 --> 00:21:32,000
+so as we move for example from 5 killer hurts
+supaya kita bergerak sebagai contoh daripada 5 pembunuh menyakitkan
+
+00:21:32,000 --> 00:21:36,000
+up to let's say 6 killer hurts
+sehingga katakan 6 pembunuh menyakitkan
+
+00:21:36,000 --> 00:21:39,000
+sick still hurts in fact yes alias
+sakit masih sakit sebenarnya ya alias
+
+00:21:39,000 --> 00:21:43,000
+down to what gets alias down to
+ke apa yang mendapat alias ke
+
+00:21:43,000 --> 00:21:46,000
+4 killer us so
+4 pembunuh kami supaya
+
+00:21:46,000 --> 00:21:50,000
+6 go over to the input is for killer hurts
+6 pergi ke input adalah untuk pembunuh menyakitkan
+
+00:21:50,000 --> 00:21:54,000
+at the output now if we move up even further
+pada keluaran sekarang jika kita bergerak ke atas lebih jauh
+
+00:21:54,000 --> 00:21:58,000
+7 kilohertz at the end pushed its alias down
+7 kilohertz di hujung ditolak alias ke bawah
+
+00:21:58,000 --> 00:22:01,000
+to three killer hurts at the outpost
+tiga pembunuh menyakitkan di pangkalan luar yang
+
+00:22:01,000 --> 00:22:06,000
+so bad dan is a audio demonstration and aliasing
+begitu buruk dan adalah demonstrasi audio dan aliasing
+
+00:22:06,000 --> 00:22:09,000
+so to summarize
+jadi untuk meringkaskan
+
+00:22:09,000 --> 00:22:12,000
+if we sample signal and then reconstruct
+jika kita mencuba isyarat dan kemudian membina semula
+
+00:22:12,000 --> 00:22:17,000
+from the samples using a low-pass filter as long as the sampling frequency is
+daripada sampel menggunakan penapis laluan rendah selagi kekerapan pensampelan ialah
+
+00:22:17,000 --> 00:22:20,000
+greater than twice the highest frequency in the signal
+lebih besar daripada dua kali kekerapan tertinggi dalam isyarat
+
+00:22:20,000 --> 00:22:23,000
+we reconstruct exactly if on the other hand
+kami menyusun semula jika sebaliknya
+
+00:22:23,000 --> 00:22:28,000
+the sampling frequency is too low less than twice the highest frequency
+kekerapan persampelan terlalu rendah kurang daripada dua kali kekerapan tertinggi
+
+00:22:28,000 --> 00:22:31,000
+then we get alias saying in other words
+maka kita mendapatkan alias berkata dalam erti kata lain
+
+00:22:31,000 --> 00:22:35,000
+higher frequencies get folded or reflected
+frekuensi yang lebih tinggi mendapatkan dilipat atau mencerminkan
+
+00:22:35,000 --> 00:22:38,000
+down into lower frequencies as they come through the low-pass filter
+ke dalam frekuensi yang lebih rendah kerana mereka datang melalui penapis laluan rendah
+
+00:22:38,000 --> 00:22:42,000
+now wanted the
+kini mahu
+
+00:22:42,000 --> 00:22:46,000
+common applications love the whole concept of sampling
+permohonan biasa suka konsep keseluruhan persampelan
+
+00:22:46,000 --> 00:22:52,000
+is the use sampling to convert a continuous-time signal into a
+ialah penggunaan pensampelan untuk menukar isyarat berterusan masa ke
+
+00:22:52,000 --> 00:22:55,000
+discrete-time signal to carry out
+isyarat diskret masa untuk menjalankan
+
+00:22:55,000 --> 00:22:59,000
+what's often referred to as discreet I processing
+apa yang sering dirujuk pemprosesan I sebagai bijaksana
+
+00:22:59,000 --> 00:23:04,000
+of continuous-time signals and this in fact is something that will be talking
+isyarat berterusan masa dan ini sebenarnya adalah sesuatu yang akan bercakap
+
+00:23:04,000 --> 00:23:05,000
+about
+kira-kira
+
+00:23:05,000 --> 00:23:08,000
+in a fair amount of detail beginning with the next lecture
+dalam jumlah yang saksama terperinci bermula dengan kuliah seterusnya
+
+00:23:08,000 --> 00:23:12,000
+but and let me indicate that for
+tetapi dan biarlah saya menunjukkan untuk
+
+00:23:12,000 --> 00:23:15,000
+that kinda processing essentially what happens
+yang agak memproses dasarnya apa yang berlaku
+
+00:23:15,000 --> 00:23:19,000
+is dead we begin with a continuous-time signal
+adalah mati kita bermula dengan isyarat berterusan masa
+
+00:23:19,000 --> 00:23:22,000
+and convert it to a discrete-time signal
+dan menukarkannya kepada isyarat diskret masa
+
+00:23:22,000 --> 00:23:26,000
+carry out the discrete-time processing and then
+menjalankan pemprosesan diskret-masa dan kemudian
+
+00:23:26,000 --> 00:23:29,000
+convert back to continuous-time and
+menukar kembali ke masa yang berterusan dan
+
+00:23:29,000 --> 00:23:34,000
+the conversion from a continuous-time signal to a discrete-time
+penukaran dari isyarat berterusan masa ke semasa diskret yang
+
+00:23:34,000 --> 00:23:37,000
+signal in fact is done
+isyarat sebenarnya dilakukan
+
+00:23:37,000 --> 00:23:41,000
+by exploiting sampling specifically
+dengan mengeksploitasi persampelan khusus
+
+00:23:41,000 --> 00:23:44,000
+by sampling the continuous-time signal
+oleh pensampelan isyarat berterusan masa
+
+00:23:44,000 --> 00:23:48,000
+with an impulse train and then
+dengan kereta api gerak hati dan kemudian
+
+00:23:48,000 --> 00:23:51,000
+converting the impulse train into
+menukar kereta api gerak hati ke
+
+00:23:51,000 --> 00:23:56,000
+a sequence in a manner that all talk about in more detail
+urutan dengan cara yang semua bercakap mengenai dengan lebih terperinci
+
+00:23:56,000 --> 00:23:59,000
+next time now in doing that
+masa depan kini dalam melakukan yang
+
+00:23:59,000 --> 00:24:03,000
+of course as you can imagine it's important since we want
+kursus yang anda boleh bayangkan adalah penting kerana kita mahu
+
+00:24:03,000 --> 00:24:07,000
+an accurate representation of the original continuous-time signal
+gambaran yang tepat isyarat berterusan masa asal
+
+00:24:07,000 --> 00:24:12,000
+to choose the sampling frequency to very carefully avoid aliasing
+untuk memilih kekerapan pensampelan untuk mengelakkan aliasing dengan berhati-hati
+
+00:24:12,000 --> 00:24:15,000
+and so in fact in that context
+dan sebagainya sebenarnya dalam konteks itu
+
+00:24:15,000 --> 00:24:19,000
+and in many other contexts alias saying is something
+dan dalam banyak konteks yang lain alias kata adalah sesuatu
+
+00:24:19,000 --> 00:24:22,000
+that we're very eager to avoid however
+bahawa kita sangat bersemangat untuk mengelakkan bagaimanapun
+
+00:24:22,000 --> 00:24:25,000
+it's also important to understand that alias saying
+ia juga penting untuk memahami bahawa alias berkata
+
+00:24:25,000 --> 00:24:30,000
+isn't all bad and there are some very specific contexts in which
+tidak semua yang buruk dan ada beberapa konteks yang tertentu di mana
+
+00:24:30,000 --> 00:24:34,000
+alias saying is very useful and very heavily exploited
+alias kata adalah sangat berguna dan sangat banyak dieksploitasi
+
+00:24:34,000 --> 00:24:38,000
+one example love
+satu contoh cinta
+
+00:24:38,000 --> 00:24:42,000
+a very useful context valia saying is when
+yang sangat berguna konteks valia kata adalah apabila
+
+00:24:42,000 --> 00:24:45,000
+you want to look at things that happen at frequencies
+anda mahu melihat perkara-perkara yang berlaku pada frekuensi
+
+00:24:45,000 --> 00:24:50,000
+that you can't look at for one reason or another and sampling in a leasing is
+bahawa anda tidak boleh melihat kerana satu sebab atau yang lain dan pensampelan dalam pemajakan adalah
+
+00:24:50,000 --> 00:24:52,000
+used to map those into lower frequencies
+digunakan untuk memetakan mereka ke dalam frekuensi yang lebih rendah
+
+00:24:52,000 --> 00:24:57,000
+one very common example of that is the use of the stroboscopic
+satu contoh yang biasa yang menggunakan stroboscopic yang
+
+00:24:57,000 --> 00:25:01,000
+which was invented by doctor how their chechen
+yang dicipta oleh doktor bagaimana Chechen mereka
+
+00:25:01,000 --> 00:25:06,000
+at MIT and sometime earlier in fact we had
+di MIT dan kadang-kadang sebelum ini sebenarnya kita mempunyai
+
+00:25:06,000 --> 00:25:11,000
+the opportunity to visit doctor Richard ins laboratory at MIT
+peluang untuk melawat doktor Richard in makmal di MIT
+
+00:25:11,000 --> 00:25:15,000
+and see some examples of this so I'd like to
+dan melihat beberapa contoh-contoh ini jadi saya ingin
+
+00:25:15,000 --> 00:25:19,000
+at as a conclusion to this lecture take you
+di sebagai kesimpulan untuk kuliah ini membawa anda
+
+00:25:19,000 --> 00:25:24,000
+on visit to the stroke where and MIT
+pada lawatan ke strok di mana dan MIT
+
+00:25:24,000 --> 00:25:28,000
+in the lecture in discussing aliasing we've stressed
+dalam syarahan dalam membincangkan aliasing kami menekankan
+
+00:25:28,000 --> 00:25:33,000
+the fact that in most situations it's something that would like to avoid
+hakikat bahawa dalam kebanyakan keadaan ia sesuatu yang ingin mengelakkan
+
+00:25:33,000 --> 00:25:37,000
+however right now we're at MIT and stroll Valley
+Walau bagaimanapun sekarang kita di MIT dan bersiar-siar di Lembah
+
+00:25:37,000 --> 00:25:41,000
+as it's called on the way to visit the laboratory
+kerana ia dipanggil dalam perjalanan untuk melawat makmal
+
+00:25:41,000 --> 00:25:45,000
+Mike MIT colleague Professor are alleged
+Mike MIT rakan sekerja Profesor didakwa
+
+00:25:45,000 --> 00:25:49,000
+where in fact a leasing is an everyday occurrence
+di mana sebenarnya pajakan yang merupakan kejadian sehari-hari
+
+00:25:49,000 --> 00:25:53,000
+basically the idea is to follow dead
+pada dasarnya idea ini adalah untuk mengikuti mati
+
+00:25:53,000 --> 00:25:56,000
+it in fact you wanna make measurements
+ia sebenarnya anda ingin membuat ukuran
+
+00:25:56,000 --> 00:26:00,000
+at frequencies that for one reason or another
+pada frekuensi yang bagi sebab-sebab tertentu
+
+00:26:00,000 --> 00:26:05,000
+you can't measure their sampling and consequently aliasing
+anda tidak boleh mengukur persampelan mereka dan akibatnya aliasing
+
+00:26:05,000 --> 00:26:10,000
+can be used to bring those frequencies down into a frequency range that you can
+boleh digunakan untuk membawa mereka ke dalam frekuensi julat frekuensi yang anda boleh
+
+00:26:10,000 --> 00:26:12,000
+measure
+mengukur
+
+00:26:12,000 --> 00:26:15,000
+well professor edgerton alias
+baik alias profesor Edgerton
+
+00:26:15,000 --> 00:26:19,000
+da kitchen invented the strokes call
+da dapur mencipta pukulan memanggil
+
+00:26:19,000 --> 00:26:23,000
+for exactly that reason and kinda the idea is the fall
+untuk betul-betul sebab itu dan agak idea adalah kejatuhan
+
+00:26:23,000 --> 00:26:28,000
+the I essentially is a low pass filter and so there are things that happen
+yang saya asasnya adalah penapis lulus rendah dan begitu juga ada perkara yang berlaku
+
+00:26:28,000 --> 00:26:31,000
+at frequencies boat which
+di bot frekuensi yang
+
+00:26:31,000 --> 00:26:34,000
+your I contract and by
+kontrak saya anda dan dengan
+
+00:26:34,000 --> 00:26:39,000
+sampling with light poles sampling in time
+pensampelan dengan tiang lampu persampelan dalam masa
+
+00:26:39,000 --> 00:26:44,000
+what in effect you're able to do is sample in such a way
+apa kesan anda mampu lakukan adalah sampel dalam apa-apa cara
+
+00:26:44,000 --> 00:26:47,000
+that higher frequencies get alias
+bahawa frekuensi yang lebih tinggi mendapatkan alias
+
+00:26:47,000 --> 00:26:51,000
+down to lower frequencies then factor I contract
+ke frekuensi yang lebih rendah maka kontrak faktor saya
+
+00:26:51,000 --> 00:26:55,000
+so let's take the look inside the where
+jadi mari kita lihat di dalam mana
+
+00:26:55,000 --> 00:26:58,000
+and in fact see no aspiration or
+dan sebenarnya tidak nampak aspirasi atau
+
+00:26:58,000 --> 00:27:05,000
+the scroll and some its effects
+skrol dan ada kesannya
+
+00:27:05,000 --> 00:27:10,000
+will be here introduce you to my mighty colleague I kitchen
+akan di sini memperkenalkan anda kepada rakan sekerja saya perkasa dapur saya
+
+00:27:10,000 --> 00:27:14,000
+in also by the way he this is a great place for kids of all ages
+dalam juga oleh cara dia ini adalah tempat yang baik untuk kanak-kanak daripada semua peringkat umur
+
+00:27:14,000 --> 00:27:18,000
+and so my daughter just insisted on coming along to
+dan sebagainya anak perempuan saya hanya mahu turut bersama-sama untuk
+
+00:27:18,000 --> 00:27:21,000
+also helped out stock need you we could begin with you
+juga dibantu saham perlu anda kami dapat menjalankan anda
+
+00:27:21,000 --> 00:27:26,000
+just saying a little bit about what the strobe is in with some history is
+hanya mengatakan sedikit tentang apa yang strob adalah dengan sejarah beberapa adalah
+
+00:27:26,000 --> 00:27:30,000
+steroids ring resemble an increase in a min ly
+cincin steroid menyerupai peningkatan dalam min ly
+
+00:27:30,000 --> 00:27:33,000
+misses them losing on Lampson
+rindukan mereka kehilangan pada Lampson
+
+00:27:33,000 --> 00:27:37,000
+prices litter control rate planning on
+harga merancang kadar kawalan sampah di
+
+00:27:37,000 --> 00:27:41,000
+school is not a good strategy is going to turn and we're going to look at.
+sekolah bukan strategi yang baik akan bertukar dan kita akan melihat.
+
+00:27:41,000 --> 00:27:44,000
+motor striving on balance weight
+motor berusaha berat badan kira-kira
+
+00:27:44,000 --> 00:27:48,000
+to set up some rhinos lesions in the spring
+untuk menubuhkan beberapa lesi badak pada musim bunga
+
+00:27:48,000 --> 00:27:51,000
+want to know more bring on the throne
+ingin tahu lebih banyak membawa di atas takhta itu
+
+00:27:51,000 --> 00:27:58,000
+by
+
+
+00:27:59,000 --> 00:28:06,000
+by
+
+
+00:28:10,000 --> 00:28:11,000
+you writer and
+penulis anda dan
+
+00:28:11,000 --> 00:28:18,000
+throbs but just in the frequency the way
+throbs tetapi hanya dalam frekuensi cara
+
+00:28:20,000 --> 00:28:25,000
+but corresponds to North influencer little more elusive
+tetapi sepadan dengan influencer Utara sedikit lebih sukar difahami
+
+00:28:25,000 --> 00:28:29,000
+for the facts thought maybe we could the turn the stroller
+untuk fakta-fakta yang mungkin kita fikir yang boleh bertukar kereta dorong
+
+00:28:29,000 --> 00:28:33,000
+for a minute noon the but let me
+untuk tengah hari minit tetapi biarlah saya
+
+00:28:33,000 --> 00:28:37,000
+point out the by the way there the fact that
+menunjukkan dengan cara yang terdapat hakikat bahawa
+
+00:28:37,000 --> 00:28:41,000
+when looking at this without the strong mind always say essentially
+apabila melihat ini tanpa minda yang kuat sentiasa berkata pada dasarnya
+
+00:28:41,000 --> 00:28:45,000
+our frequencies that are I can attract so you can see the motor
+frekuensi kita yang saya boleh menarik supaya anda boleh melihat motor
+
+00:28:45,000 --> 00:28:47,000
+turning and
+berpaling dan
+
+00:28:47,000 --> 00:28:51,000
+we can really see other than then with the were we can see the movie the spring
+kita benar-benar boleh melihat melainkan kemudian dengan Adakah kita boleh lihat filem musim bunga
+
+00:28:51,000 --> 00:28:55,000
+and so I get your point is that when we put the strobe on
+dan saya mendapatkan titik anda ialah apabila kita meletakkan strob pada
+
+00:28:55,000 --> 00:28:59,000
+who were essentially sampling this and no
+yang pada dasarnya pensampelan ini dan tiada
+
+00:28:59,000 --> 00:29:03,000
+you brought this stand with a frequency that there the
+anda membawa pendirian ini dengan kekerapan yang terdapat di
+
+00:29:03,000 --> 00:29:06,000
+Riza with the track in fact
+Riza dengan landasan yang sebenarnya
+
+00:29:06,000 --> 00:29:09,000
+the I guess if we turn the
+yang saya rasa jika kita menjadikan
+
+00:29:09,000 --> 00:29:14,000
+incandescent light of loon
+lampu pijar dari Loon
+
+00:29:14,000 --> 00:29:17,000
+the able to really bring out
+yang dapat benar-benar membawa keluar
+
+00:29:17,000 --> 00:29:22,000
+are the alias frequency so now we're what we're looking at in fact are the
+adalah kekerapan alias jadi sekarang kita apa yang kita sedang lihat sebenarnya adalah
+
+00:29:22,000 --> 00:29:26,000
+the earliest frequencies the street courses moving a lot faster than we see
+frekuensi paling awal kursus jalan bergerak jauh lebih cepat daripada yang kita lihat
+
+00:29:26,000 --> 00:29:27,000
+it in their ranks
+dalam barisan mereka
+
+00:29:27,000 --> 00:29:30,000
+you know that's going on arena
+anda tahu perkara yang berlaku di arena
+
+00:29:30,000 --> 00:29:34,000
+30 times second Bruins are
+30 kali Bruins kedua adalah
+
+00:29:34,000 --> 00:29:37,000
+thirties and second occurs through the survivors include
+tiga puluhan dan kedua berlaku melalui terselamat termasuk
+
+00:29:37,000 --> 00:29:41,000
+next move Rohingya figure 8a. saying you don't see that
+akan datang menggerakkan Rohingya angka 8a. mengatakan anda tidak melihat bahawa
+
+00:29:41,000 --> 00:29:47,000
+yeah friend
+yeah kawan
+
+00:29:47,000 --> 00:29:54,000
+well we'll be seeing now is essentially second harmonic that
+juga kita akan lihat sekarang adalah pada dasarnya harmonik kedua yang
+
+00:30:04,000 --> 00:30:08,000
+someone okay
+seseorang okay
+
+00:30:08,000 --> 00:30:11,000
+and just do you think you can make this spring dance around a little bit
+dan hanya anda berfikir anda boleh membuat tarian musim bunga ini di seluruh sedikit
+
+00:30:11,000 --> 00:30:16,000
+find taking this slow frequency soon as all around
+mencari mengambil frekuensi ini perlahan sahaja di seluruh
+
+00:30:16,000 --> 00:30:19,000
+okay it's really neat let's turn the lights back on
+okay ia benar-benar kemas mari kita menghidupkan lampu belakang pada
+
+00:30:19,000 --> 00:30:23,000
+weekend this is Charles president with anything 3 I'm
+hujung minggu ini adalah Presiden Charles dengan apa-apa 3 Saya
+
+00:30:23,000 --> 00:30:28,000
+yeah has the third what's interesting now if we look at this and
+yeah mempunyai ketiga apa yang menarik sekarang jika kita melihat ini dan
+
+00:30:28,000 --> 00:30:31,000
+seeking a fifth just rolled off again
+mencari kelima hanya dilancarkan di luar lagi
+
+00:30:31,000 --> 00:30:37,000
+earth okay noticed just think we look at the spring man although we can see is a
+bumi okay perasan hanya berfikir kita melihat lelaki musim bunga walaupun kita dapat melihat adalah
+
+00:30:37,000 --> 00:30:37,000
+blur
+kabur
+
+00:30:37,000 --> 00:30:41,000
+and really can't see because you're right here tracking
+dan benar-benar tidak dapat melihat kerana anda di sini mengesan
+
+00:30:41,000 --> 00:30:46,000
+can see things happening station but he said
+boleh melihat perkara yang berlaku stesen yang telah mengatakan
+
+00:30:46,000 --> 00:30:49,000
+by the way this was written demonstrated at the World's Fair
+dengan cara itu ini ditulis ditunjukkan di Pesta Dunia
+
+00:30:49,000 --> 00:30:52,000
+the thickness
+ketebalan
+
+00:30:52,000 --> 00:30:55,000
+world because glasses
+dunia kerana gelas
+
+00:30:55,000 --> 00:30:59,000
+for their Wow a loses all dressed up
+untuk mereka Wow kehilangan semua berpakaian
+
+00:30:59,000 --> 00:31:02,000
+element using
+unsur menggunakan
+
+00:31:02,000 --> 00:31:06,000
+break bring bruises
+memecahkan membawa lebam
+
+00:31:06,000 --> 00:31:10,000
+fine but failed I stick with the miners stresses
+denda tetapi gagal saya tetap dengan pelombong tekanan
+
+00:31:10,000 --> 00:31:14,000
+runners or have break
+pelari atau mempunyai rehat
+
+00:31:14,000 --> 00:31:17,000
+bum they work on automobiles
+mengekori mereka bekerja pada kereta
+
+00:31:17,000 --> 00:31:24,000
+their own thoughts on the vibrate but let's
+pemikiran mereka sendiri di bergetar tetapi mari kita
+
+00:31:25,000 --> 00:31:28,000
+earth buy levitra run this for a lot more than half an hour or a liberal
+bumi membeli levitra menjalankan ini untuk lebih banyak daripada setengah jam atau liberal
+
+00:31:28,000 --> 00:31:33,000
+name is continues
+Nama terus
+
+00:31:33,000 --> 00:31:34,000
+terms
+terma-terma
+
+00:31:34,000 --> 00:31:38,000
+thing me maybe we can look at the
+perkara saya mungkin kita boleh melihat
+
+00:31:38,000 --> 00:31:41,000
+a couple other things have a about the fam
+beberapa perkara yang lain mempunyai kira-kira yang Fam
+
+00:31:41,000 --> 00:31:45,000
+brand the classic buzzed
+jenama yang buzzed klasik
+
+00:31:45,000 --> 00:31:49,000
+that's a good idea makes too much noise
+itu adalah satu idea yang baik membuat terlalu banyak bunyi
+
+00:31:49,000 --> 00:31:54,000
+ok is to remove that over here that's just an ordinary like the fam
+ok adalah untuk membuang bahawa di sini itu hanya biasa seperti Fam yang
+
+00:31:54,000 --> 00:31:58,000
+has a mark on one plate surgeon
+mempunyai tanda pada satu plat bedah
+
+00:31:58,000 --> 00:32:05,000
+identify you can get up to speed
+mengenal pasti anda boleh mendapatkan sehingga kelajuan
+
+00:32:09,000 --> 00:32:12,000
+know that this looks like a phantom was also demonstrated in the
+tahu bahawa ini kelihatan seperti hantu yang juga ditunjukkan dalam
+
+00:32:12,000 --> 00:32:15,000
+world's fair few years ago yeah kinda been
+beberapa tahun yang adil dunia lalu yeah kinda menjadi
+
+00:32:15,000 --> 00:32:19,000
+been does a movie
+menjadi tidak filem
+
+00:32:19,000 --> 00:32:23,000
+quicken awake practicing in to and it was very fan
+menghidupkan terjaga amalan masuk ke dan ia sangat peminat
+
+00:32:23,000 --> 00:32:27,000
+well one like it happened if the reform do
+juga salah satu seperti itu berlaku jika pembaharuan melakukan
+
+00:32:27,000 --> 00:32:32,000
+MGM and the Peters B Smith
+MGM dan Peters B Smith
+
+00:32:32,000 --> 00:32:35,000
+wanted he said he won miss royale up
+mahu dia kata dia memenangi miss royale sehingga
+
+00:32:35,000 --> 00:32:40,000
+custard pie into it not don't know I'm a serious scientists for
+pai kastard ke dalam ia tidak tidak tahu saya ahli-ahli sains yang serius untuk
+
+00:32:40,000 --> 00:32:44,000
+sizes compromise on a I
+saiz berkompromi dengan saya yang
+
+00:32:44,000 --> 00:32:48,000
+so we dropped an egg into it in the news UCI's B-movie
+jadi kita jatuh telur ke dalamnya dalam berita B-filem UCI ini
+
+00:32:48,000 --> 00:32:53,000
+dropping 0 not known struggle there there was with the
+menjatuhkan 0 perjuangan tidak diketahui ada terdapat dengan
+
+00:32:53,000 --> 00:32:56,000
+high-speed great remove yeah it's okay so
+kelajuan tinggi mengeluarkan hebat yeah ia okay jadi
+
+00:32:56,000 --> 00:33:00,000
+so again I guess without this true when we look at its
+sekali lagi saya rasa tanpa ini benar apabila kita melihat yang
+
+00:33:00,000 --> 00:33:04,000
+what we're looking at our frequencies it are
+apa yang kita cari pada frekuensi kami ia adalah
+
+00:33:04,000 --> 00:33:08,000
+much higher than the I think following now with the stroke blindness
+lebih tinggi daripada saya fikir berikut sekarang dengan buta strok
+
+00:33:08,000 --> 00:33:12,000
+you can see both the alias frequency and you can also see the original frequency
+anda boleh melihat kedua-dua frekuensi alias dan anda juga boleh melihat kekerapan asal
+
+00:33:12,000 --> 00:33:13,000
+because we have the
+kerana kita mempunyai
+
+00:33:13,000 --> 00:33:16,000
+investment line sweats I'm let's
+berpeluh talian pelaburan saya mari kita
+
+00:33:16,000 --> 00:33:19,000
+turned down the the background lighting and
+menolak lampu latar belakang dan
+
+00:33:19,000 --> 00:33:23,000
+stand then really all that were able to see or the aliasing
+berdiri maka benar-benar semua yang mampu melihat atau aliasing yang
+
+00:33:23,000 --> 00:33:26,000
+frequencies stand I guess
+frekuensi berdiri saya rasa
+
+00:33:26,000 --> 00:33:29,000
+I guess when we see more than one market means that the
+Saya fikir apabila kita melihat lebih daripada satu pasaran bermakna bahawa
+
+00:33:29,000 --> 00:33:32,000
+stay were actually running its and
+penginapan sebenarnya berjalan dan
+
+00:33:32,000 --> 00:33:36,000
+or guns is more and more things the the using
+atau senjata yang lebih dan lebih banyak perkara yang menggunakan
+
+00:33:36,000 --> 00:33:41,000
+lower radiation steroids because the plans aren't exactly the same
+steroid radiasi lebih rendah kerana pelan tidak tepat yang sama
+
+00:33:41,000 --> 00:33:45,000
+actually this gives me a chance illustrating other important correlated
+sebenarnya ini memberi saya peluang menggambarkan penting lain berkait rapat
+
+00:33:45,000 --> 00:33:46,000
+to the lecture
+untuk kuliah
+
+00:33:46,000 --> 00:33:49,000
+I'll that they could bring them to frequency
+Saya akan bahawa mereka boleh membawa mereka kepada frekuensi
+
+00:33:49,000 --> 00:33:56,000
+so that re only get one more scorched
+jadi semula yang hanya mendapat satu hangus lebih
+
+00:33:56,000 --> 00:33:59,000
+missus begins to move this is just one way there now
+missus mula bergerak ini adalah salah satu cara ada sekarang
+
+00:33:59,000 --> 00:34:04,000
+okay so so the way we have now we've essentially alias the fan speed and so
+ok jadi begitu cara kita kini kami telah pada dasarnya Alias ​​kelajuan kipas dan sebagainya
+
+00:34:04,000 --> 00:34:05,000
+the
+yang
+
+00:34:05,000 --> 00:34:09,000
+is just a little higher than the seeds and now
+hanya sedikit lebih tinggi daripada benih dan kini
+
+00:34:09,000 --> 00:34:14,000
+on right at the sea and now if I could and just a little further in fact that
+di sebelah kanan di laut dan kini jika saya boleh dan hanya sedikit lagi sebenarnya yang
+
+00:34:14,000 --> 00:34:17,000
+looks like the fans turning back hurts
+kelihatan seperti peminat patah balik menyakitkan
+
+00:34:17,000 --> 00:34:21,000
+and if you think that this into context the leasing
+dan jika anda berfikir bahawa ini ke dalam konteks pajakan
+
+00:34:21,000 --> 00:34:25,000
+its it's like this to impulses in the frequency domain
+, ia seperti ini untuk impuls dalam domain frekuensi
+
+00:34:25,000 --> 00:34:30,000
+crossover in with you get an effective you and was mathematically
+crossover dengan anda mendapat yang berkesan anda dan adalah matematik
+
+00:34:30,000 --> 00:34:33,000
+you get a phase reversed in
+anda mendapat fasa dibalikkan dalam
+
+00:34:33,000 --> 00:34:37,000
+no wasn't so I E I first understood have a leasing
+tidak tidak begitu IEI pertama memahami telah pajakan yang
+
+00:34:37,000 --> 00:34:42,000
+with Doc understood why stand with the western movies
+dengan Doc difahami mengapa berdiri dengan filem-filem barat
+
+00:34:42,000 --> 00:34:46,000
+a everyone's Ryan see the wagon wheels through November go backwards train and
+Ryan yang semua orang melihat roda wagon melalui November pergi ke belakang melatih dan
+
+00:34:46,000 --> 00:34:47,000
+there's there the
+ada ada yang
+
+00:34:47,000 --> 00:34:51,000
+wagon wheels in western movie going backwards yes stressed
+roda wagon dalam filem barat pergi ke belakang ya menekankan
+
+00:34:51,000 --> 00:34:56,000
+and just see what you see is %um too much weaker on straight up so you get to
+dan hanya melihat apa yang anda lihat ialah% um terlalu lebih lemah pada lurus sehingga supaya anda mendapat untuk
+
+00:34:56,000 --> 00:34:59,000
+just see greater frequency of so that's
+hanya melihat meningkatkan kekerapan jadi itu
+
+00:34:59,000 --> 00:35:03,000
+you get to marched
+anda dapat berarak
+
+00:35:03,000 --> 00:35:08,000
+u-turn and Justin's governor and you think tourist
+u-turn dan gabenor Justin dan anda berfikir pelancongan
+
+00:35:08,000 --> 00:35:11,000
+you impressed
+anda kagum
+
+00:35:11,000 --> 00:35:14,000
+schoolroom its regular spirits
+darjah semangat tetap yang
+
+00:35:14,000 --> 00:35:18,000
+all rights pictures in your honor older adults
+semua gambar hak untuk menghormati anda dewasa yang lebih tua
+
+00:35:18,000 --> 00:35:23,000
+and I rising price revolution I guess another thing is that this demonstrates
+dan saya meningkat revolusi harga saya rasa perkara yang lain adalah bahawa ini menunjukkan
+
+00:35:23,000 --> 00:35:24,000
+something that is
+sesuatu yang
+
+00:35:24,000 --> 00:35:29,000
+and I heard a long time ago which is its should never use a power so with the
+dan saya mendengar lama yang yang tidak boleh menggunakan kuasa yang demikian dengan
+
+00:35:29,000 --> 00:35:34,000
+fluorescent lights the is arrest like is a little bit of a stroke affecting
+lampu kalimantang adalah penangkapan seperti adalah sedikit strok yang menjejaskan
+
+00:35:34,000 --> 00:35:38,000
+you could actually can misuse of that standing still make mistakes a
+anda boleh benar-benar boleh menyalahgunakan kedudukan yang masih melakukan kesilapan yang
+
+00:35:38,000 --> 00:35:42,000
+strength that you think everything we are doing is a good friend of
+kekuatan yang anda fikir semua yang kita lakukan adalah kawan baik
+
+00:35:42,000 --> 00:35:46,000
+no I don't think I want to try it out how are you this do you think that's
+tidak saya tidak fikir saya mahu mencubanya bagaimana anda ini adakah anda fikir itu
+
+00:35:46,000 --> 00:35:49,000
+any sores and wounds she knows it's going
+apa-apa kudis dan luka dia tahu ia akan
+
+00:35:49,000 --> 00:35:52,000
+sproule undergoing closest friends okay let's
+Sproule menjalani rakan-rakan terdekat okay mari kita
+
+00:35:52,000 --> 00:35:56,000
+I'm actually we turn the lights back on again what's
+Saya sebenarnya kita menghidupkan lampu kembali semula apa yang
+
+00:35:56,000 --> 00:36:00,000
+their latest see once again is that we can see both the alias frequencies going
+melihat terbaru mereka sekali lagi ialah kita boleh melihat kedua-dua frekuensi alias akan
+
+00:36:00,000 --> 00:36:01,000
+to you that's
+kepada anda itu
+
+00:36:01,000 --> 00:36:05,000
+and we we can also see the higher frequencies because the
+dan kita kita juga boleh melihat frekuensi yang lebih tinggi kerana
+
+00:36:05,000 --> 00:36:09,000
+incandescent lighting its okay maybe we can be no
+pijar lampu okay yang mungkin kita tidak ada
+
+00:36:09,000 --> 00:36:12,000
+is parents take a look at some other
+adalah ibu bapa mengambil lihat beberapa lain
+
+00:36:12,000 --> 00:36:16,000
+on things and when I guess I'm curious about is the distance you have over
+kepada perkara-perkara dan apabila saya rasa saya ingin tahu tentang adalah jarak yang anda mempunyai lebih
+
+00:36:16,000 --> 00:36:17,000
+their kids
+anak-anak mereka
+
+00:36:17,000 --> 00:36:21,000
+doc maybe you can tell us what we have here
+doc mungkin anda boleh memberitahu kami apa yang kami ada di sini
+
+00:36:21,000 --> 00:36:24,000
+churros the this to show
+Churros ini untuk menunjukkan
+
+00:36:24,000 --> 00:36:28,000
+how you can get motion pictures on a Susan still pictures
+bagaimana anda boleh mendapatkan gambar bergerak pada Susan masih gambar
+
+00:36:28,000 --> 00:36:32,000
+the circle is repeated 12 times
+kitaran ini berulang 12 kali
+
+00:36:32,000 --> 00:36:35,000
+why does outer part over mmm on this site
+mengapa bahagian luar lebih mmm di laman web ini
+
+00:36:35,000 --> 00:36:40,000
+in part on the other quiet place one time for a revolution on this
+sebahagiannya pada tempat yang tenang yang lain satu masa untuk revolusi pada ini
+
+00:36:40,000 --> 00:36:44,000
+you see the exactly as it is if I skip one picture each time
+anda lihat betul-betul kerana ia adalah jika saya skip satu gambar setiap kali
+
+00:36:44,000 --> 00:36:47,000
+when you get there relative motions
+apabila anda tiba di sana usul relatif
+
+00:36:47,000 --> 00:36:51,000
+mall the object is to show the ball rotating
+pusat membeli-belah objek adalah untuk menunjukkan bola berputar
+
+00:36:51,000 --> 00:36:55,000
+is this where that one depending on mood straw was going faster or slower
+adalah ini di mana yang satu bergantung kepada jerami mood akan lebih cepat atau lebih lambat
+
+00:36:55,000 --> 00:37:00,000
+and the other Uzan this way motion pictures went well
+dan yang lain Uzan cara ini gambar bergerak berjalan lancar
+
+00:37:00,000 --> 00:37:04,000
+100 years school long for photography drew pictures of people
+100 tahun sekolah yang panjang untuk fotografi menarik gambar manusia
+
+00:37:04,000 --> 00:37:09,000
+different animated features like the run yes great
+ciri-ciri animasi yang berbeza seperti jangka masa ya besar
+
+00:37:09,000 --> 00:37:16,000
+is actually the title kinda busy aliasing can be fun conservatism
+sebenarnya tajuk aliasing agak sibuk boleh menjadi konservatif menyeronokkan
+
+00:37:16,000 --> 00:37:19,000
+sterling if the speeds
+sterling jika kelajuan
+
+00:37:19,000 --> 00:37:23,000
+or away if you get a lot of different things sorted veterans
+atau jauh jika anda mendapat banyak perkara yang berbeza disusun veteran
+
+00:37:23,000 --> 00:37:26,000
+go through ruin currently reaches speeds
+melalui kehancuran kini mencapai kelajuan
+
+00:37:26,000 --> 00:37:31,000
+reserve a room in the rules it sounds
+menempah bilik dalam kaedah-kaedah bunyinya
+
+00:37:31,000 --> 00:37:35,000
+ok and the background blur basically the high frequencies the I can't follow
+ok dan kabur latar belakang pada dasarnya frekuensi tinggi yang saya tidak boleh mengikuti
+
+00:37:35,000 --> 00:37:39,000
+and and then we're going to propose and then again we can see
+dan dan kemudian kita akan mencadangkan dan sekali lagi kita dapat melihat
+
+00:37:39,000 --> 00:37:43,000
+frequencies it really is down the nets
+frekuensi yang sebenarnya menurunkan jaring
+
+00:37:43,000 --> 00:37:47,000
+rookie I ends right now I am one place for revolution sleep
+rookie saya berakhir sekarang saya satu tempat untuk tidur revolusi
+
+00:37:47,000 --> 00:37:50,000
+see the corner the move is consuming records
+melihat sudut langkah itu memakan rekod
+
+00:37:50,000 --> 00:37:54,000
+exactly the reasons there are an increasing frequency
+betul-betul sebab-sebab terdapat kekerapan yang meningkat
+
+00:37:54,000 --> 00:38:00,000
+of risk if 100 one server or early get the illusion that diamonds
+risiko jika 100 satu pelayan atau awal mendapatkan ilusi bahawa berlian
+
+00:38:00,000 --> 00:38:04,000
+room in fact let's a let's really enhanced solution
+bilik sebenarnya biarkan satu mari kita benar-benar meningkatkan penyelesaian
+
+00:38:04,000 --> 00:38:09,000
+Western the incandescent lights off
+Barat pijar menyala off
+
+00:38:09,000 --> 00:38:12,000
+and now now are we seeing really you're the alias frequencies
+dan kini kini kita melihat benar-benar anda frekuensi alias
+
+00:38:12,000 --> 00:38:17,000
+or or do you think this just adds
+atau atau adakah anda rasa ini hanya menambah
+
+00:38:17,000 --> 00:38:22,000
+looks like reading recognized through was doing rejoining licensing
+kelihatan seperti bacaan diiktiraf melalui lakukan pelesenan menyertai semula
+
+00:38:22,000 --> 00:38:25,000
+of is the same rules now lower watching is something also
+daripada adalah peraturan yang sama kini memerhati lebih rendah adalah sesuatu yang juga
+
+00:38:25,000 --> 00:38:29,000
+might point out of a for the
+mungkin menunjukkan sesuatu untuk
+
+00:38:29,000 --> 00:38:32,000
+I'm the lecture for the course is that actually there
+Saya adalah kuliah untuk kursus berkenaan adalah yang benar-benar terdapat
+
+00:38:32,000 --> 00:38:35,000
+there really are two sampling frequencies receiving one is this road
+ada benar-benar adalah dua frekuensi pensampelan menerima satu adalah jalan ini
+
+00:38:35,000 --> 00:38:36,000
+and
+dan
+
+00:38:36,000 --> 00:38:40,000
+which is the stroke that you're running the other is the inherent
+yang strok yang anda menjalankan yang lain yang wujud
+
+00:38:40,000 --> 00:38:44,000
+Creamery for the TV that's running at 30 frames a second
+Penjualan susu untuk TV yang berjalan pada 30 bingkai sesaat
+
+00:38:44,000 --> 00:38:47,000
+and that's won the reasons by the way in dead people watching this
+dan itu memenangi sebab dengan cara itu pada orang mati menonton ini
+
+00:38:47,000 --> 00:38:51,000
+on the video worst are in fact seeing
+pada video yang paling teruk sebenarnya melihat
+
+00:38:51,000 --> 00:38:55,000
+Flickr or a feeding or modulation between
+Flickr atau makan atau modulasi antara
+
+00:38:55,000 --> 00:39:00,000
+the two on synchronize frame rates runner grievances
+kedua-dua pada kadar bingkai menyegerakkan pemenang kedua rungutan
+
+00:39:00,000 --> 00:39:06,000
+grow up so we get to of to a room credits
+membesar supaya kita dapat daripada kepada kredit bilik
+
+00:39:06,000 --> 00:39:09,000
+of to
+daripada untuk
+
+00:39:09,000 --> 00:39:16,000
+roaming two runs on each other of
+perayauan dua berjalan di antara satu sama lain daripada
+
+00:39:17,000 --> 00:39:19,000
+of
+
+
+00:39:19,000 --> 00:39:22,000
+you know it senator Reid's learning this
+anda tahu senator Reid pembelajaran ini
+
+00:39:22,000 --> 00:39:26,000
+soon living room when all your friends
+bilik tidak lama lagi hidup apabila semua rakan-rakan anda
+
+00:39:26,000 --> 00:39:30,000
+I think would be a good terrific homered problem getting video Kors
+Saya fikir akan menjadi masalah baik hebat homered mendapatkan video Kors
+
+00:39:30,000 --> 00:39:33,000
+they have them all sit down and analyze all the frequencies that they're seeing
+mereka mempunyai mereka semua duduk dan menganalisis semua frekuensi yang mereka lihat
+
+00:39:33,000 --> 00:39:36,000
+and what they're being alias through the evening event
+dan apa yang mereka menjadi alias melalui acara petang
+
+00:39:36,000 --> 00:39:39,000
+it's a good view run the teacher I love you
+ia pandangan yang baik berjalan guru Saya suka anda
+
+00:39:39,000 --> 00:39:42,000
+who is great yeah remember these dudes list
+yang besar yeah ingat senarai dudes ini
+
+00:39:42,000 --> 00:39:45,000
+I think that a chase a few people away from the courses good
+Saya berfikir bahawa mengejar beberapa orang dari kursus yang baik
+
+00:39:45,000 --> 00:39:49,000
+cracks and you get you get involved in these offerings
+retak dan anda mendapatkan anda terlibat dalam persembahan ini
+
+00:39:49,000 --> 00:39:54,000
+rule ruler and what you can do for a KMS roots
+memerintah pemerintah dan apa yang anda boleh lakukan untuk KMS akar
+
+00:39:54,000 --> 00:39:57,000
+let's bring you the incandescent lights back again
+mari kita membawa anda lampu pijar kembali lagi
+
+00:39:57,000 --> 00:40:01,000
+just to remind everybody that in back row this or
+hanya untuk mengingatkan semua orang bahawa di barisan belakang atau ini
+
+00:40:01,000 --> 00:40:04,000
+some some frequencies that are a lot higher than the ones that
+beberapa beberapa frekuensi yang jauh lebih tinggi daripada orang-orang yang
+
+00:40:04,000 --> 00:40:07,000
+we begin to get the impression that we're watching just the
+kita mula mendapat gambaran bahawa kita menonton sahaja
+
+00:40:07,000 --> 00:40:11,000
+motor running Frances Bean pattern on
+motor berjalan corak Bean Frances pada
+
+00:40:11,000 --> 00:40:15,000
+long Dhaka have to
+lama Dhaka perlu
+
+00:40:15,000 --> 00:40:18,000
+I have to say that there are many people I know they have as much fun in the work
+Yang saya katakan bahawa terdapat banyak orang yang saya tahu mereka mempunyai menyeronokkan sebanyak dalam kerja
+
+00:40:18,000 --> 00:40:19,000
+as you do
+seperti yang anda lakukan
+
+00:40:19,000 --> 00:40:23,000
+home like a man arm quote would but I'd like to
+seperti sebuah rumah yang quote lengan manusia akan tetapi saya ingin
+
+00:40:23,000 --> 00:40:27,000
+do now baby is take a look at one last experiment sure did
+lakukan sekarang bayi adalah lihat satu eksperimen lepas pasti lakukan
+
+00:40:27,000 --> 00:40:31,000
+and what I'd like to do is a.m. is go take a look at the
+dan apa yang saya ingin lakukan adalah pagi adalah pergi lihat di
+
+00:40:31,000 --> 00:40:34,000
+I guess what sometimes is called the home
+Saya rasa apa yang kadang-kadang dipanggil rumah
+
+00:40:34,000 --> 00:40:38,000
+well not the water graphics for men with thin air the minute dole pillar
+juga tidak grafik air untuk lelaki dengan udara nipis minit membahagikan tiang
+
+00:40:38,000 --> 00:40:41,000
+hydraulic everything that's the 1i was thinking and let's take a look over
+semua hidraulik itulah 1i yang berfikir dan mari kita lihat lebih
+
+00:40:41,000 --> 00:40:42,000
+there
+ada
+
+00:40:42,000 --> 00:40:49,000
+okay one just in this Go internal war so
+okay satu hanya dalam ini Pergi perang dalaman
+
+00:40:49,000 --> 00:40:52,000
+your doc this is the what did you got DP
+doc anda ini adalah apa yang anda mendapat DP
+
+00:40:52,000 --> 00:40:56,000
+HHM bird double peddler hydraulic
+HHM burung pedagang dua hidraulik
+
+00:40:56,000 --> 00:41:00,000
+happening machine Gary okay then it's a.m. so please
+berlaku mesin Gary okay maka ia pagi jadi sila
+
+00:41:00,000 --> 00:41:03,000
+it looks like continues dream up it is not its
+ia kelihatan seperti terus impian sehingga ia tidak yang
+
+00:41:03,000 --> 00:41:08,000
+pump over there something sixty post second so those owners
+mengepam di sana sesuatu yang enam puluh post kedua supaya orang-orang pemilik
+
+00:41:08,000 --> 00:41:11,000
+coming out in spurts %uh so actually again it's
+yang keluar dalam spurts% uh jadi sebenarnya lagi ia
+
+00:41:11,000 --> 00:41:14,000
+it's the the sixty boss is the second year I can follow
+ia adalah bos enam puluh merupakan tahun kedua saya boleh mengikuti
+
+00:41:14,000 --> 00:41:18,000
+your eyes so is exactly basically looks like a blur
+mata anda supaya betul-betul pada dasarnya kelihatan seperti Kaburkan
+
+00:41:18,000 --> 00:41:22,000
+ruseler it is a blur writers you learn output stroll on
+ruseler ia adalah penulis kabur anda belajar output berjalan-jalan di
+
+00:41:22,000 --> 00:41:28,000
+okay grace start so again
+rahmat okay mula sekali lagi
+
+00:41:28,000 --> 00:41:32,000
+I guess we have this a essentially alias then in
+Saya rasa kita mempunyai ini yang pada dasarnya alias maka dalam
+
+00:41:32,000 --> 00:41:36,000
+and again with the incandescent light you can see both sky high frequency
+dan sekali lagi dengan lampu pijar, anda dapat melihat kedua-dua langit frekuensi tinggi
+
+00:41:36,000 --> 00:41:40,000
+and the alias frequency its and
+dan yang kekerapan alias dan
+
+00:41:40,000 --> 00:41:44,000
+but see I guess that's with the frequency close to the sea and we can
+tetapi lihat Saya rasa itu dengan kekerapan yang dekat dengan laut dan kita boleh
+
+00:41:44,000 --> 00:41:49,000
+adjusted so that is stop stop bothering me going to go out and then we can
+diselaraskan supaya adalah berhenti berhenti mengganggu saya akan pergi keluar dan kemudian kita boleh
+
+00:41:49,000 --> 00:41:50,000
+actually make it go up
+sebenarnya membuat ia naik
+
+00:41:50,000 --> 00:41:53,000
+scored anybody who is this South
+menjaringkan sesiapa yang Selatan ini
+
+00:41:53,000 --> 00:41:58,000
+yeah effect movie have just just again due to stress this point to the
+yeah filem kesan mempunyai hanya hanya sekali lagi kerana tekanan ketika ini kepada
+
+00:41:58,000 --> 00:42:02,000
+class the the kind of the idea here the face reversal of course
+kelas jenis idea di sini pembalikan muka sudah tentu
+
+00:42:02,000 --> 00:42:05,000
+you can see it in the time domain Chynoweth you just think about when the
+anda boleh melihatnya dalam domain masa Chynoweth anda hanya berfikir tentang apabila
+
+00:42:05,000 --> 00:42:06,000
+flashes of light
+pancaran cahaya
+
+00:42:06,000 --> 00:42:10,000
+come but if you think I love kind of these
+datang tetapi jika anda fikir saya suka jenis ini
+
+00:42:10,000 --> 00:42:14,000
+impulses that we have in the frequency domain
+impuls yang ada di dalam domain frekuensi
+
+00:42:14,000 --> 00:42:18,000
+and we're aliasing as we change the sampling frequency what happens is that
+dan kami aliasing seperti yang kita menukar frekuensi pensampelan apa yang berlaku ialah
+
+00:42:18,000 --> 00:42:20,000
+these impulses crossover
+dorongan ini crossover
+
+00:42:20,000 --> 00:42:24,000
+and what that means is that we get a phase reversal the pending
+dan apa yang bermakna adalah bahawa kita akan mendapat pembalikan fasa pending
+
+00:42:24,000 --> 00:42:28,000
+on which faces are associated with
+di mana wajah-wajah yang berkaitan dengan
+
+00:42:28,000 --> 00:42:32,000
+which side up the sea so that's kind of the idea the phase reversal
+yang sebelah atas laut jadi itu sejenis idea pembalikan fasa
+
+00:42:32,000 --> 00:42:35,000
+okay let's the let's turn the
+okay mari adalah mari kita menjadikan
+
+00:42:35,000 --> 00:42:39,000
+against because it is important thing in between those who got
+terhadap kerana ia adalah perkara penting di antara mereka yang mendapat
+
+00:42:39,000 --> 00:42:42,000
+yeah let's let's turn the incandescent light of first and
+yeah mari kita mari kita menghidupkan lampu pijar pertama dan
+
+00:42:42,000 --> 00:42:46,000
+think one thing your so 103 know through this thing you think you can do to get
+berfikir satu perkara anda supaya 103 tahu melalui perkara ini anda fikir anda boleh lakukan untuk mendapatkan
+
+00:42:46,000 --> 00:42:49,000
+on the other side you're on hand so we can see with
+di sisi lain anda berada di tangan supaya kita dapat melihat dengan
+
+00:42:49,000 --> 00:42:54,000
+when for the UN intervening sleuths
+apabila untuk PBB yang berselang Sleuths
+
+00:42:54,000 --> 00:42:58,000
+water there all the time well on a nosedive it seems to me if we can't we
+air di sana sepanjang masa baik pada menjungkir ia seolah-olah saya jika kita tidak boleh kita
+
+00:42:58,000 --> 00:42:59,000
+just the justices
+hanya Hakim
+
+00:42:59,000 --> 00:43:04,000
+the that's just go through to next year staff the dots can do it just seeing how
+yang yang hanya melalui untuk kakitangan tahun depan titik boleh melakukannya hanya melihat bagaimana
+
+00:43:04,000 --> 00:43:06,000
+come you think your finger in the air
+datang anda berfikir jari anda di udara
+
+00:43:06,000 --> 00:43:10,000
+fun to try once more its
+seronok untuk mencuba sekali lagi di
+
+00:43:10,000 --> 00:43:14,000
+I get snyder et that's one thing we can do this
+Saya mendapat Snyder et itu satu perkara yang boleh kita lakukan ini
+
+00:43:14,000 --> 00:43:17,000
+well as bring the lights back up and its
+serta membawa lampu sandaran dan yang
+
+00:43:17,000 --> 00:43:22,000
+again just to go stress the point scary RTC
+sekali lagi hanya untuk pergi menekankan pada maksud menakutkan RTC
+
+00:43:22,000 --> 00:43:26,000
+there we are at a frequency that it's just a little above the sea
+ada kita berada di frekuensi yang bahawa ia hanya sedikit di atas laut
+
+00:43:26,000 --> 00:43:31,000
+and we can go back there and in the sea and we can actually get a phase reversal
+dan kita boleh kembali di sana dan di laut dan kita sebenarnya boleh mendapatkan pembalikan fasa
+
+00:43:31,000 --> 00:43:35,000
+and I guess if we do this long enough we get at the at the whole ocean and put it
+dan saya rasa jika kita lakukan ini cukup lama kita di dalam keseluruhan lautan dan meletakkannya
+
+00:43:35,000 --> 00:43:36,000
+back in
+kembali
+
+00:43:36,000 --> 00:43:39,000
+we're ever comes from is there in cars in newsrooms gonna run is not running
+kita pernah datang dari yang ada dalam kereta di bilik berita gonna jangka tidak berjalan
+
+00:43:39,000 --> 00:43:43,000
+too long by the Rev trailer get here yet to be careful as well as the Moody Blues
+terlalu panjang dengan treler Rev mendapat di sini lagi berhati-hati serta Blues Moody
+
+00:43:43,000 --> 00:43:44,000
+V
+
+
+00:43:44,000 --> 00:43:49,000
+surface well I don't know about them but I guess I believe you back its
+permukaan juga saya tidak tahu tentang mereka tetapi saya rasa saya percaya anda belakang
+
+00:43:49,000 --> 00:43:52,000
+up a little more pressure on three gods monarchy
+sehingga sedikit tekanan lebih kepada tiga tuhan raja
+
+00:43:52,000 --> 00:43:55,000
+Adams girlfriends or service teams
+Teman wanita Adams atau pasukan perkhidmatan
+
+00:43:55,000 --> 00:44:01,000
+going things together Ste
+akan perkara bersama-sama Ste
+
+00:44:01,000 --> 00:44:05,000
+we have these machines are all over the place lot of fun
+kami telah mesin ini adalah lebih banyak tempat yang menyeronokkan
+
+00:44:05,000 --> 00:44:08,000
+but that this this is really terrific I i think that
+tetapi yang ini ini saya benar-benar hebat saya berfikir bahawa
+
+00:44:08,000 --> 00:44:12,000
+the this whole idea of the
+idea ini seluruh
+
+00:44:12,000 --> 00:44:15,000
+and abusing aliens saying in stroz and
+dan menyalahgunakan makhluk asing berkata dalam stroz dan
+
+00:44:15,000 --> 00:44:19,000
+the kinds of things that did you do with the murder just fantastic in that we
+jenis perkara yang anda lakukan dengan pembunuhan itu hanya hebat dalam kita yang
+
+00:44:19,000 --> 00:44:21,000
+really appreciate the chance to
+benar-benar menghargai peluang untuk
+
+00:44:21,000 --> 00:44:25,000
+come in here and see the demonstration Rose Bowl game ruth's
+datang di sini dan melihat demonstrasi permainan Rose Bowl duka
+
+00:44:25,000 --> 00:44:28,000
+hope you will use it for years the bar over many years to come
+berharap anda akan menggunakannya untuk tahun bar ke atas beberapa tahun akan datang
+
+00:44:28,000 --> 00:44:32,000
+so is I emphasized that the beginning
+kamu tidak menyedari saya menekankan bahawa awal
+
+00:44:32,000 --> 00:44:36,000
+in what situations aliasing can in fact be very useful
+dalam apa keadaan aliasing sebenarnya boleh menjadi sangat berguna
+
+00:44:36,000 --> 00:44:40,000
+also with this demonstrates is that particularly when you have a colleague
+juga dengan ini menunjukkan bahawa terutamanya apabila anda mempunyai rakan sekerja
+
+00:44:40,000 --> 00:44:42,000
+like da kitchen
+seperti dapur da
+
+00:44:42,000 --> 00:44:46,000
+a leasing and for that matter science in general can be an awful lot of fun
+yang pajakan dan untuk itu sains perkara secara umum boleh menjadi banyak sekali yang menyeronokkan
+
+00:44:46,000 --> 00:44:53,000
+by gonna thanks a lot that again and thank you just the name
+oleh gonna terima kasih banyak itu lagi dan terima kasih hanya nama
+
+00:44:54,000 --> 00:44:59,000
+well I have to say that that visit was an awful lot of fun for me and
+juga saya katakan bahawa lawatan yang banyak sekali keseronokan bagi saya dan
+
+00:44:59,000 --> 00:45:04,000
+for Justin in fact to for the whole camera crew that was
+untuk Justin sebenarnya untuk bagi anak-anak kapal kamera keseluruhan yang
+
+00:45:04,000 --> 00:45:09,000
+there and hopefully you all have used at some point will also have a chance to
+sana dan diharapkan anda semua telah digunakan pada satu ketika juga akan mempunyai peluang untuk
+
+00:45:09,000 --> 00:45:13,000
+visited stroll Valley well
+berjalan-jalan melawat Lembah baik
+
+00:45:13,000 --> 00:45:16,000
+hopefully what we've gone through today gives you
+mudah-mudahan apa yang kita lalui hari ini memberikan anda
+
+00:45:16,000 --> 00:45:20,000
+a good feeling for the concepts love sampling an alias saying
+perasaan yang baik untuk konsep suka pensampelan alias berkata
+
+00:45:20,000 --> 00:45:25,000
+and both why it might be useful and why we might want to avoid
+dan kedua-dua mengapa ia mungkin berguna dan mengapa kita mungkin mahu mengelakkan
+
+00:45:25,000 --> 00:45:29,000
+in the next lecture will continue on
+dalam syarahan akan datang akan terus pada
+
+00:45:29,000 --> 00:45:32,000
+the discussion of sampling any particular
+perbincangan mengenai pensampelan apa-apa butir
+
+00:45:32,000 --> 00:45:35,000
+what all be talking about is the interpretation
+apa semua boleh bercakap tentang adalah tafsiran
+
+00:45:35,000 --> 00:45:40,000
+love the reconstruction process not in the frequency domain
+suka proses pembinaan semula tidak dalam domain frekuensi
+
+00:45:40,000 --> 00:45:44,000
+but in a time-domain interpretation specifically associated
+tetapi dalam tafsiran masa-domain yang berkaitan secara khusus
+
+00:45:44,000 --> 00:45:48,000
+with the concept %uh interpolating between the samples
+dengan konsep% uh interpolasi antara sampel
+
+00:45:48,000 --> 00:45:53,000
+well then proceed from there too a discussion as i've alluded to
+dan kemudian meneruskan dari sana juga perbincangan seperti yang telah saya dirujuk kepada
+
+00:45:53,000 --> 00:45:57,000
+in several lectures love what i've referred to as
+dalam beberapa kuliah suka apa yang saya dirujuk sebagai
+
+00:45:57,000 --> 00:46:00,000
+discrete-time processing of continuous-time signals
+pemprosesan diskret masa isyarat berterusan masa
+
+00:46:00,000 --> 00:46:06,000
+very heavily exploiting the concept and issues associated with sample
+sangat banyak mengeksploitasi konsep dan isu-isu yang berkaitan dengan sampel
+
+00:46:06,000 --> 00:46:06,000
+thank you
+terima kasih
+

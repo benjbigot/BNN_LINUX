@@ -1,0 +1,2382 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:20,000
+that MIT ided you
+
+00:00:20,000 --> 00:00:27,000
+home
+
+00:00:35,000 --> 00:00:40,000
+in
+
+00:00:40,000 --> 00:00:45,000
+the norm
+
+00:00:45,000 --> 00:00:52,000
+are
+
+00:00:57,000 --> 00:00:59,000
+the last lecture we discuss the number
+
+00:00:59,000 --> 00:01:03,000
+general properties for systems which
+
+00:01:03,000 --> 00:01:07,000
+as you recall applied both to continuous-time
+
+00:01:07,000 --> 00:01:10,000
+and to discrete-time systems
+
+00:01:10,000 --> 00:01:14,000
+and these properties were the properties
+
+00:01:14,000 --> 00:01:18,000
+associated with the system having memory the issue
+
+00:01:18,000 --> 00:01:21,000
+love whether a system is or isn't convertible
+
+00:01:21,000 --> 00:01:25,000
+we talked about causality instability
+
+00:01:25,000 --> 00:01:28,000
+and finally we talked about when the arity
+
+00:01:28,000 --> 00:01:32,000
+and time-invariant in today's lecture
+
+00:01:32,000 --> 00:01:36,000
+what I'd like to do is focused specifically on when the arity in time
+
+00:01:36,000 --> 00:01:37,000
+invariance
+
+00:01:37,000 --> 00:01:41,000
+and show how for systems that have those properties
+
+00:01:41,000 --> 00:01:45,000
+we can exploit them to generate
+
+00:01:45,000 --> 00:01:48,000
+a general representation well let me begin by
+
+00:01:48,000 --> 00:01:52,000
+just reviewing the two properties again quickly
+
+00:01:52,000 --> 00:01:55,000
+time invariance as you recall
+
+00:01:55,000 --> 00:01:59,000
+is a property that apply both to continuous-time and discrete-time
+
+00:01:59,000 --> 00:02:00,000
+systems
+
+00:02:00,000 --> 00:02:05,000
+and in essence stated bad for any given
+
+00:02:05,000 --> 00:02:09,000
+input and output relationship if we
+
+00:02:09,000 --> 00:02:14,000
+simply shift the input than the output shift by the same amount
+
+00:02:14,000 --> 00:02:19,000
+and of course exactly the same kind of statement
+
+00:02:19,000 --> 00:02:24,000
+applied in discrete-time so it i mean variance was a property
+
+00:02:24,000 --> 00:02:28,000
+it said that the system didn't care about what the time origin
+
+00:02:28,000 --> 00:02:32,000
+the signal is when the arity
+
+00:02:32,000 --> 00:02:36,000
+was a property related to the fact that if we have
+
+00:02:36,000 --> 00:02:40,000
+et cetera outputs associated with a given set of inputs
+
+00:02:40,000 --> 00:02:44,000
+as i've indicated here with the inputs
+
+00:02:44,000 --> 00:02:48,000
+as feasted K and the output decisive K
+
+00:02:48,000 --> 00:02:52,000
+then the property of when the arity
+
+00:02:52,000 --> 00:02:55,000
+States that if we have an input
+
+00:02:55,000 --> 00:02:59,000
+which is a linear combination up those inputs
+
+00:02:59,000 --> 00:03:02,000
+then the output is
+
+00:03:02,000 --> 00:03:05,000
+a linear combination of the Associated outputs
+
+00:03:05,000 --> 00:03:09,000
+so that linear combination of inputs
+
+00:03:09,000 --> 00:03:15,000
+generates for linear system at the end output which is
+
+00:03:15,000 --> 00:03:20,000
+a linear combination up the Associated outputs now
+
+00:03:20,000 --> 00:03:24,000
+the question is how can we exploit the properties have many arity
+
+00:03:24,000 --> 00:03:29,000
+and time-invariant and there's a basic strategy
+
+00:03:29,000 --> 00:03:32,000
+which will flow more or less through mostly this court's
+
+00:03:32,000 --> 00:03:36,000
+the strategy is to
+
+00:03:36,000 --> 00:03:41,000
+attempt to decompose the signal you the continuous-time and discrete-time
+
+00:03:41,000 --> 00:03:44,000
+into it said a basic signals
+
+00:03:44,000 --> 00:03:48,000
+and I've indicated that
+
+00:03:48,000 --> 00:03:52,000
+here and the question then
+
+00:03:52,000 --> 00:03:56,000
+is what basic signal should we pick well
+
+00:03:56,000 --> 00:04:00,000
+the answer kinda is we should pick said a basic signals
+
+00:04:00,000 --> 00:04:04,000
+they provide a certain degree have analytical convenience
+
+00:04:04,000 --> 00:04:07,000
+so we choose instead of inputs for the decomposition
+
+00:04:07,000 --> 00:04:10,000
+bad provide outputs
+
+00:04:10,000 --> 00:04:14,000
+that we can easily generate now and we'll see
+
+00:04:14,000 --> 00:04:18,000
+when we do this there are to
+
+00:04:18,000 --> 00:04:22,000
+classes love inputs that are particularly suited
+
+00:04:22,000 --> 00:04:26,000
+to that strategy one class is
+
+00:04:26,000 --> 00:04:31,000
+the set love the late impulses namely
+
+00:04:31,000 --> 00:04:34,000
+decomposing a signal into a linear combination if the
+
+00:04:34,000 --> 00:04:38,000
+is and as we'll see that leads to a representation
+
+00:04:38,000 --> 00:04:42,000
+for linear time-invariant systems which is referred to
+
+00:04:42,000 --> 00:04:46,000
+as convolution a second
+
+00:04:46,000 --> 00:04:51,000
+is a decomposition of inputs into complex exponentials
+
+00:04:51,000 --> 00:04:55,000
+a linear combination of complex exponentials
+
+00:04:55,000 --> 00:04:58,000
+and that leads to a representation
+
+00:04:58,000 --> 00:05:03,000
+love signals and systems through what will refer to as
+
+00:05:03,000 --> 00:05:06,000
+for your analysis now
+
+00:05:06,000 --> 00:05:10,000
+four-day analysis will be a topic for
+
+00:05:10,000 --> 00:05:13,000
+a setup later lectures but I'd like to begin with
+
+00:05:13,000 --> 00:05:18,000
+is the representation in terms of impulses and the associated description
+
+00:05:18,000 --> 00:05:21,000
+linear time-invariant systems using convolution
+
+00:05:21,000 --> 00:05:24,000
+so let's begin where
+
+00:05:24,000 --> 00:05:28,000
+a discussion are discrete-time signals
+
+00:05:28,000 --> 00:05:32,000
+and in particular the issue of how discrete-time signals
+
+00:05:32,000 --> 00:05:35,000
+can be decomposed as a linear combination
+
+00:05:35,000 --> 00:05:39,000
+love the lady impulses
+
+00:05:39,000 --> 00:05:43,000
+well in fact it's relatively straightforward
+
+00:05:43,000 --> 00:05:47,000
+what I've shown here is a general
+
+00:05:47,000 --> 00:05:50,000
+sequence with values which i've indicated
+
+00:05:50,000 --> 00:05:54,000
+at the top and more or less
+
+00:05:54,000 --> 00:05:58,000
+as we did when we talked about representing
+
+00:05:58,000 --> 00:06:01,000
+a unit step in terms of impulses
+
+00:06:01,000 --> 00:06:05,000
+we can think of this general sequence as a sequence
+
+00:06:05,000 --> 00:06:08,000
+I'll impulses delayed
+
+00:06:08,000 --> 00:06:11,000
+namely occurring at the appropriate
+
+00:06:11,000 --> 00:06:16,000
+prime instant and and with the appropriate ample to
+
+00:06:16,000 --> 00:06:20,000
+so we can think love this general sequence
+
+00:06:20,000 --> 00:06:24,000
+as and im polls occurring at an equal 0
+
+00:06:24,000 --> 00:06:27,000
+and and with the high dive exit 0
+
+00:06:27,000 --> 00:06:31,000
+plus and im polls all quite active one
+
+00:06:31,000 --> 00:06:35,000
+occurring at time n equals 1 and so that's active one time
+
+00:06:35,000 --> 00:06:40,000
+Delta than -1 and in polls at -1
+
+00:06:40,000 --> 00:06:43,000
+with an amplitude love exit -1
+
+00:06:43,000 --> 00:06:48,000
+et cetera so if we continue
+
+00:06:48,000 --> 00:06:52,000
+to generate a said Oh waited the late unit samples like that
+
+00:06:52,000 --> 00:06:55,000
+and if we had all these together
+
+00:06:55,000 --> 00:07:00,000
+then that will generate the total sequence
+
+00:07:00,000 --> 00:07:03,000
+algebraically then what that corresponds to
+
+00:07:03,000 --> 00:07:07,000
+is representing the sequence as
+
+00:07:07,000 --> 00:07:11,000
+some love individual turns over as i've indicated here
+
+00:07:11,000 --> 00:07:14,000
+or in terms over general thumb
+
+00:07:14,000 --> 00:07:18,000
+the song %uh exit K felt the then minus K
+
+00:07:18,000 --> 00:07:23,000
+so that's our strategy the strategy is to decompose
+
+00:07:23,000 --> 00:07:26,000
+an arbitrary sequence into a linear combination
+
+00:07:26,000 --> 00:07:30,000
+or waited too late impulses and here
+
+00:07:30,000 --> 00:07:34,000
+again is the representation which we just
+
+00:07:34,000 --> 00:07:37,000
+finish generating
+
+00:07:37,000 --> 00:07:41,000
+now why is this representation useful
+
+00:07:41,000 --> 00:07:46,000
+it's useful because we now have a decomposition at the sequence
+
+00:07:46,000 --> 00:07:49,000
+as a linear combination all basic
+
+00:07:49,000 --> 00:07:53,000
+sequences namely that the late impulses
+
+00:07:53,000 --> 00:07:58,000
+and if we are talking about a linear system
+
+00:07:58,000 --> 00:08:04,000
+the response to that linear combination is a linear combination of the responses
+
+00:08:04,000 --> 00:08:08,000
+so if we denote the response
+
+00:08:08,000 --> 00:08:12,000
+to with the late in paul's as H+ the cave and
+
+00:08:12,000 --> 00:08:16,000
+then the response to
+
+00:08:16,000 --> 00:08:20,000
+this general input is what i've indicated here
+
+00:08:20,000 --> 00:08:24,000
+where why event of course is the output
+
+00:08:24,000 --> 00:08:27,000
+due to the general in protective and
+
+00:08:27,000 --> 00:08:31,000
+H+ the cave and is the output do
+
+00:08:31,000 --> 00:08:35,000
+to the late in polls and these are simply
+
+00:08:35,000 --> 00:08:40,000
+the coefficients in the waiting
+
+00:08:40,000 --> 00:08:43,000
+so for linear system we have
+
+00:08:43,000 --> 00:08:46,000
+this representation and
+
+00:08:46,000 --> 00:08:50,000
+if now in addition the system is time-invariant
+
+00:08:50,000 --> 00:08:54,000
+we can in fact relate the outputs
+
+00:08:54,000 --> 00:08:57,000
+due to these individuals the late in polls
+
+00:08:57,000 --> 00:09:00,000
+specifically if the system is time-invariant
+
+00:09:00,000 --> 00:09:04,000
+then the response to an impulse at the time
+
+00:09:04,000 --> 00:09:11,000
+K is exactly the same as the response to an impulse at time 0
+
+00:09:11,000 --> 00:09:15,000
+shifted over two-time K said another way
+
+00:09:15,000 --> 00:09:18,000
+h2k a van it simply
+
+00:09:18,000 --> 00:09:22,000
+80 then minus K where 80
+
+00:09:22,000 --> 00:09:27,000
+is the response to the system to an impulse at an equal 0
+
+00:09:27,000 --> 00:09:30,000
+and it's generally useful to
+
+00:09:30,000 --> 00:09:33,000
+rather than carrying around 80 a band
+
+00:09:33,000 --> 00:09:36,000
+just simply define 80 then
+
+00:09:36,000 --> 00:09:40,000
+as a chip and which is
+
+00:09:40,000 --> 00:09:45,000
+the unit sample or unit impulse response to the system
+
+00:09:45,000 --> 00:09:48,000
+and so the consequent then is for
+
+00:09:48,000 --> 00:09:51,000
+a linear time-invariant system
+
+00:09:51,000 --> 00:09:54,000
+the output can be expressed as this
+
+00:09:54,000 --> 00:09:58,000
+some where a true then minus K
+
+00:09:58,000 --> 00:10:03,000
+is the response to an impulse occurring at time n equals K
+
+00:10:03,000 --> 00:10:06,000
+and this is referred to
+
+00:10:06,000 --> 00:10:10,000
+as the convolution saw
+
+00:10:10,000 --> 00:10:14,000
+now we can just to emphasize
+
+00:10:14,000 --> 00:10:21,000
+how we've going about this let me show it from another perspective
+
+00:10:22,000 --> 00:10:26,000
+we of course have taken the sequence X the van
+
+00:10:26,000 --> 00:10:30,000
+we have decomposed that as
+
+00:10:30,000 --> 00:10:35,000
+a linear combination out these waited the late impulses
+
+00:10:35,000 --> 00:10:39,000
+when these are added together those correspond
+
+00:10:39,000 --> 00:10:42,000
+to the original sequence active and
+
+00:10:42,000 --> 00:10:46,000
+if this in polls for example
+
+00:10:46,000 --> 00:10:49,000
+generates a response
+
+00:10:49,000 --> 00:10:54,000
+which is exit 0 times a chip and we're a tremendous the response
+
+00:10:54,000 --> 00:10:57,000
+to unit in polls at an equal 0
+
+00:10:57,000 --> 00:11:01,000
+and the second one the late generates the delayed
+
+00:11:01,000 --> 00:11:05,000
+waited response and the third one similarly
+
+00:11:05,000 --> 00:11:09,000
+and we generate these individual responses
+
+00:11:09,000 --> 00:11:13,000
+these are all added together and it that linear combination
+
+00:11:13,000 --> 00:11:16,000
+that forms the final output
+
+00:11:16,000 --> 00:11:19,000
+so that's really kind of the way we're thinking about it we have a general
+
+00:11:19,000 --> 00:11:20,000
+sequence
+
+00:11:20,000 --> 00:11:24,000
+we're thinking love each individual sample
+
+00:11:24,000 --> 00:11:28,000
+individually each one of those pops the system
+
+00:11:28,000 --> 00:11:31,000
+and because the linearity the response is the sum
+
+00:11:31,000 --> 00:11:34,000
+for those individual responses
+
+00:11:34,000 --> 00:11:38,000
+well thats what happens in discrete-time and
+
+00:11:38,000 --> 00:11:43,000
+pretty much the same strategy works in continuous-time
+
+00:11:43,000 --> 00:11:46,000
+a particular
+
+00:11:46,000 --> 00:11:49,000
+we can begin in continuous-time
+
+00:11:49,000 --> 00:11:54,000
+with the notion 0 decomposing
+
+00:11:54,000 --> 00:11:57,000
+a continuous-time signal into
+
+00:11:57,000 --> 00:12:02,000
+succession love are bitterly narrow rectangles
+
+00:12:02,000 --> 00:12:05,000
+and as these rectangles is the with the rectangles goes
+
+00:12:05,000 --> 00:12:09,000
+0 the approximation gets better and
+
+00:12:09,000 --> 00:12:13,000
+essentially what's going to happen is that you to those individual rectangles
+
+00:12:13,000 --> 00:12:17,000
+as they get narrower and narrower correspond more and more
+
+00:12:17,000 --> 00:12:21,000
+to an impulse well let me show you what I mean
+
+00:12:21,000 --> 00:12:26,000
+here we have a continue with time signal
+
+00:12:26,000 --> 00:12:30,000
+and I've approximated it
+
+00:12:30,000 --> 00:12:33,000
+by staircase
+
+00:12:33,000 --> 00:12:36,000
+so in Athens I can't think of this
+
+00:12:36,000 --> 00:12:39,000
+as individual rectangles
+
+00:12:39,000 --> 00:12:43,000
+a fight associated with the height the continuous curve
+
+00:12:43,000 --> 00:12:47,000
+and so i've indicated that down below here for example
+
+00:12:47,000 --> 00:12:51,000
+is the impulse corresponding to the rectangle between
+
+00:12:51,000 --> 00:12:56,000
+people's -2 dealt in people's minds felker
+
+00:12:56,000 --> 00:12:59,000
+here's the one from minus felt that 20
+
+00:12:59,000 --> 00:13:03,000
+and as we continue on down we get
+
+00:13:03,000 --> 00:13:08,000
+impulses or rather rectangles from success the park to the way for
+
+00:13:08,000 --> 00:13:12,000
+now let's look specifically at the
+
+00:13:12,000 --> 00:13:17,000
+rectangle for example starting at zero and ending at Delta
+
+00:13:17,000 --> 00:13:22,000
+and the amplitude of it is exit Delta
+
+00:13:22,000 --> 00:13:25,000
+and so
+
+00:13:25,000 --> 00:13:29,000
+what we have actually this should be exit 0
+
+00:13:29,000 --> 00:13:32,000
+and so not be just correct that
+
+00:13:32,000 --> 00:13:36,000
+here that sex is zero and so
+
+00:13:36,000 --> 00:13:40,000
+we have a rectangle a fight exit 0
+
+00:13:40,000 --> 00:13:43,000
+and recall the function that I defined last time
+
+00:13:43,000 --> 00:13:46,000
+as dealt this the capital Delta p
+
+00:13:46,000 --> 00:13:50,000
+which had height1 over Delta and with dealt
+
+00:13:50,000 --> 00:13:54,000
+so multiply finally by this last little Delta
+
+00:13:54,000 --> 00:13:57,000
+then this is a representation for
+
+00:13:57,000 --> 00:14:00,000
+the rectangle that i've shown there now
+
+00:14:00,000 --> 00:14:04,000
+there's a little bit about you were there too kinda track through
+
+00:14:04,000 --> 00:14:08,000
+but what we're really doing is just simply representing this
+
+00:14:08,000 --> 00:14:13,000
+in terms the rectangles what I want to do is describing each rectangle
+
+00:14:13,000 --> 00:14:18,000
+as in terms that function dealt with the bell 30
+
+00:14:18,000 --> 00:14:22,000
+which in the limit then becomes an impulse well so extract that
+
+00:14:22,000 --> 00:14:25,000
+through a little further
+
+00:14:25,000 --> 00:14:28,000
+when we have that linear combination
+
+00:14:28,000 --> 00:14:32,000
+then were saying that x50 can be represented
+
+00:14:32,000 --> 00:14:36,000
+by Osama's I indicate here
+
+00:14:36,000 --> 00:14:39,000
+which I can then
+
+00:14:39,000 --> 00:14:46,000
+right more generally in this form just indicating that this is an infinite sum
+
+00:14:46,000 --> 00:14:50,000
+we now want to take the limit as Delta goes to zero
+
+00:14:50,000 --> 00:14:54,000
+and his daughter goes to zero notice
+
+00:14:54,000 --> 00:14:59,000
+that this term becomes are bitterly narrow
+
+00:14:59,000 --> 00:15:02,000
+this goes to our impulse function and this of course
+
+00:15:02,000 --> 00:15:06,000
+goes to exit Towne and in fact
+
+00:15:06,000 --> 00:15:09,000
+in the limit some out this form
+
+00:15:09,000 --> 00:15:13,000
+is exactly the way an integral is the point
+
+00:15:13,000 --> 00:15:16,000
+so we have an expression for wire T
+
+00:15:16,000 --> 00:15:20,000
+in terms of an impulse function their I have to admit
+
+00:15:20,000 --> 00:15:23,000
+is a little bit have detailed the kinda focus on
+
+00:15:23,000 --> 00:15:28,000
+at your leisure but this is the general load the strategy
+
+00:15:28,000 --> 00:15:31,000
+so what we have now is and integral
+
+00:15:31,000 --> 00:15:36,000
+tell that tells us how except he can be described
+
+00:15:36,000 --> 00:15:39,000
+as a thong or linear combination
+
+00:15:39,000 --> 00:15:43,000
+involving in polls
+
+00:15:43,000 --> 00:15:48,000
+this bottom equation by the way is often referred to as the sifting integral
+
+00:15:48,000 --> 00:15:53,000
+in essence what it says is that if I take a time function exit tea and put it
+
+00:15:53,000 --> 00:15:54,000
+through that integral
+
+00:15:54,000 --> 00:15:57,000
+the impulse as did dipped by
+
+00:15:57,000 --> 00:16:02,000
+generates X-eighty all over again
+
+00:16:02,000 --> 00:16:05,000
+now at first glance what it could look like
+
+00:16:05,000 --> 00:16:08,000
+is that we've taken a time function X 50
+
+00:16:08,000 --> 00:16:12,000
+and proceeded to represented in a very complicated way
+
+00:16:12,000 --> 00:16:16,000
+interns have itself and one could ask her why bother doing that
+
+00:16:16,000 --> 00:16:19,000
+and the reason going back to what r
+
+00:16:19,000 --> 00:16:23,000
+strategy was is that
+
+00:16:23,000 --> 00:16:26,000
+what we want to do is exploit
+
+00:16:26,000 --> 00:16:30,000
+the property lovely area so
+
+00:16:30,000 --> 00:16:34,000
+by describing a time function
+
+00:16:34,000 --> 00:16:37,000
+as a linear combination have waited too late impulses
+
+00:16:37,000 --> 00:16:41,000
+as in effect we've done through
+
+00:16:41,000 --> 00:16:47,000
+this some Asian that corresponds to a decomposition in terms of impulses
+
+00:16:47,000 --> 00:16:51,000
+we can now exploit linearity
+
+00:16:51,000 --> 00:16:54,000
+specifically recognizing that the output
+
+00:16:54,000 --> 00:16:57,000
+have a linear system is this some
+
+00:16:57,000 --> 00:17:02,000
+or the responses to these individual inputs
+
+00:17:02,000 --> 00:17:05,000
+so with h2k
+
+00:17:05,000 --> 00:17:09,000
+Delta I love see corresponding to the response
+
+00:17:09,000 --> 00:17:13,000
+to built this adult the T-minus k Delta
+
+00:17:13,000 --> 00:17:18,000
+and arrested this stop the exit k Delta and there's little doubt the
+
+00:17:18,000 --> 00:17:22,000
+are basically scale factors for a linear system
+
+00:17:22,000 --> 00:17:25,000
+then if the input is expressed in this form
+
+00:17:25,000 --> 00:17:28,000
+the output is expressed in this form
+
+00:17:28,000 --> 00:17:31,000
+again taking the limit is Delta goes to zero
+
+00:17:31,000 --> 00:17:35,000
+by definition this corresponds to an integral
+
+00:17:35,000 --> 00:17:38,000
+and it the integral that we indicated that I indicate here
+
+00:17:38,000 --> 00:17:42,000
+with H+ the tower T corresponding to
+
+00:17:42,000 --> 00:17:45,000
+the impulse response
+
+00:17:45,000 --> 00:17:48,000
+due to an impulse occurring at
+
+00:17:48,000 --> 00:17:52,000
+time town now again we can do
+
+00:17:52,000 --> 00:17:55,000
+the same thing a in particular
+
+00:17:55,000 --> 00:18:00,000
+if the system is time-invariant then the response to each of these the late
+
+00:18:00,000 --> 00:18:02,000
+impulses
+
+00:18:02,000 --> 00:18:05,000
+is simply at the late version up the impulse response
+
+00:18:05,000 --> 00:18:10,000
+and so we can relate these individual terms
+
+00:18:10,000 --> 00:18:15,000
+and in particular than the response to an impulse occurring at time t cloth
+
+00:18:15,000 --> 00:18:16,000
+towel
+
+00:18:16,000 --> 00:18:21,000
+it's simply the response to an impulse occurring at time 0
+
+00:18:21,000 --> 00:18:24,000
+shifted over to the time origin town
+
+00:18:24,000 --> 00:18:29,000
+and again as we did before but dropped the subscript 80
+
+00:18:29,000 --> 00:18:32,000
+so 80 love the
+
+00:18:32,000 --> 00:18:36,000
+will simply defined as a trip to the
+
+00:18:36,000 --> 00:18:39,000
+and what we're left with when we do that
+
+00:18:39,000 --> 00:18:44,000
+is the description over linear time-invariant system
+
+00:18:44,000 --> 00:18:47,000
+through this integral which tells us
+
+00:18:47,000 --> 00:18:51,000
+how the output is related to
+
+00:18:51,000 --> 00:18:54,000
+the input and two the impulse response
+
+00:18:54,000 --> 00:18:58,000
+again let's just quickly look at this
+
+00:18:58,000 --> 00:19:03,000
+from another perspective as we did in discrete-time
+
+00:19:03,000 --> 00:19:07,000
+recall that what we've done is to take the
+
+00:19:07,000 --> 00:19:11,000
+continuous function decomposed it in terms
+
+00:19:11,000 --> 00:19:14,000
+%uh rectangles and then
+
+00:19:14,000 --> 00:19:17,000
+each of these rectangles generates
+
+00:19:17,000 --> 00:19:22,000
+its individual response
+
+00:19:22,000 --> 00:19:27,000
+and then these individual responses are added together
+
+00:19:27,000 --> 00:19:30,000
+and as we go through that process
+
+00:19:30,000 --> 00:19:33,000
+the chorus there's a process whereby
+
+00:19:33,000 --> 00:19:36,000
+we let the approximation go to the
+
+00:19:36,000 --> 00:19:40,000
+to the representation over smooth talker
+
+00:19:40,000 --> 00:19:44,000
+now again I stress that their is certainly
+
+00:19:44,000 --> 00:19:48,000
+paramount to kinda examined carefully there
+
+00:19:48,000 --> 00:19:53,000
+but it's important to also reflect on what we've done which
+
+00:19:53,000 --> 00:19:57,000
+is really pretty significant well we've managed to accomplish
+
+00:19:57,000 --> 00:20:01,000
+is to exploit the properties linear ready in time invariance
+
+00:20:01,000 --> 00:20:06,000
+so that the system could be represented
+
+00:20:06,000 --> 00:20:09,000
+interns only over its response to
+
+00:20:09,000 --> 00:20:15,000
+and in polls at time 0 so for a linear time-invariant system quite amazingly
+
+00:20:15,000 --> 00:20:16,000
+actually
+
+00:20:16,000 --> 00:20:21,000
+if you know its response to an impulse at equal 0 or 10 equal 0 depending on
+
+00:20:21,000 --> 00:20:24,000
+discrete or continuous time then in fact
+
+00:20:24,000 --> 00:20:28,000
+through the convolution some in discrete-time or the convolution
+
+00:20:28,000 --> 00:20:29,000
+integral in continuous-time
+
+00:20:29,000 --> 00:20:36,000
+you can generate the response to an arbitrary input
+
+00:20:36,000 --> 00:20:39,000
+let me just introduced a small amount have
+
+00:20:39,000 --> 00:20:43,000
+notation again reminding you
+
+00:20:43,000 --> 00:20:48,000
+all her the convolution some in the discrete-time case
+
+00:20:48,000 --> 00:20:51,000
+which looks as i've indicated here this summer
+
+00:20:51,000 --> 00:20:54,000
+exit Khon minus K
+
+00:20:54,000 --> 00:20:59,000
+will have the requirement to making such frequent reference
+
+00:20:59,000 --> 00:21:03,000
+to convolution dead it can be any and
+
+00:21:03,000 --> 00:21:07,000
+to notation we represented as I have here with an asterisk
+
+00:21:07,000 --> 00:21:10,000
+and so X a van with the asterisk
+
+00:21:10,000 --> 00:21:15,000
+a trip and means r denotes the convolution affects a van with a chip
+
+00:21:15,000 --> 00:21:16,000
+and
+
+00:21:16,000 --> 00:21:21,000
+and correspondingly in the continuous-time case
+
+00:21:21,000 --> 00:21:24,000
+we have the convolution integral in which
+
+00:21:24,000 --> 00:21:29,000
+here is the third thing in to grow as we talked about representing exit the
+
+00:21:29,000 --> 00:21:34,000
+interns or itself hour as a linear combination of the late impulses
+
+00:21:34,000 --> 00:21:38,000
+and here we have the convolution integral and again
+
+00:21:38,000 --> 00:21:41,000
+will use the asterisk to denote convolution
+
+00:21:41,000 --> 00:21:46,000
+now there's a lot about convolution
+
+00:21:46,000 --> 00:21:50,000
+that we want to talk about it their properties of convolution which tell us
+
+00:21:50,000 --> 00:21:51,000
+about properties
+
+00:21:51,000 --> 00:21:54,000
+linear time-invariant systems also
+
+00:21:54,000 --> 00:21:57,000
+it's important to focus on the mechanics
+
+00:21:57,000 --> 00:22:02,000
+or implementing accomplish in in other words understanding and generating some
+
+00:22:02,000 --> 00:22:03,000
+fluency and insight
+
+00:22:03,000 --> 00:22:07,000
+into what these particulars
+
+00:22:07,000 --> 00:22:11,000
+some an integral expressions me
+
+00:22:11,000 --> 00:22:14,000
+so let's first look at discrete-time convolution
+
+00:22:14,000 --> 00:22:19,000
+and examine more specifically what in essence
+
+00:22:19,000 --> 00:22:26,000
+some tells us to do in terms of manipulating the sequences
+
+00:22:26,000 --> 00:22:29,000
+so and returning to the
+
+00:22:29,000 --> 00:22:32,000
+expression for the
+
+00:22:32,000 --> 00:22:36,000
+convolutions Tom as I show here
+
+00:22:36,000 --> 00:22:40,000
+some love exit K a true then minus
+
+00:22:40,000 --> 00:22:44,000
+K let's focused in on an example
+
+00:22:44,000 --> 00:22:47,000
+where we choose active and as a unit
+
+00:22:47,000 --> 00:22:51,000
+step and a chip and as Arial exponential
+
+00:22:51,000 --> 00:22:56,000
+times the unit step so with the quick fix a van
+
+00:22:56,000 --> 00:22:59,000
+is as they indicate here
+
+00:22:59,000 --> 00:23:04,000
+sequence a true fan is an exponential for positive time in zero for negative
+
+00:23:04,000 --> 00:23:08,000
+time so we have active and in a tube and
+
+00:23:08,000 --> 00:23:12,000
+but now let's look back at the equation and
+
+00:23:12,000 --> 00:23:15,000
+let me stress that what we want is not
+
+00:23:15,000 --> 00:23:20,000
+excessive and nature then we want exit K
+
+00:23:20,000 --> 00:23:24,000
+because we're going to some over K and not a trip K
+
+00:23:24,000 --> 00:23:27,000
+but a chip and minus K
+
+00:23:27,000 --> 00:23:31,000
+so we have then from
+
+00:23:31,000 --> 00:23:35,000
+expand its straightforward to generate exit K at that
+
+00:23:35,000 --> 00:23:39,000
+simply changing the index it's a nation
+
+00:23:39,000 --> 00:23:44,000
+and what's a true then minus K well what they two-minus K
+
+00:23:44,000 --> 00:23:49,000
+H A minus K is huka flipped over
+
+00:23:49,000 --> 00:23:52,000
+so hip this is white
+
+00:23:52,000 --> 00:23:57,000
+8 UK looks like than
+
+00:23:57,000 --> 00:24:00,000
+this is what a2 n my SK looks like
+
+00:24:00,000 --> 00:24:05,000
+and in essence why it the operation of convolution
+
+00:24:05,000 --> 00:24:09,000
+or the mechanics of convolution tells us to do
+
+00:24:09,000 --> 00:24:12,000
+is to take the sequence HO
+
+00:24:12,000 --> 00:24:19,000
+and minus K which is a check minus k position with its origin and cake balls
+
+00:24:19,000 --> 00:24:20,000
+and
+
+00:24:20,000 --> 00:24:24,000
+and multiply this sequence by this sequence
+
+00:24:24,000 --> 00:24:29,000
+and some the product from K equals minus infinity plus infinity
+
+00:24:29,000 --> 00:24:35,000
+so if we were to compute for example
+
+00:24:35,000 --> 00:24:38,000
+the output at an equal 0
+
+00:24:38,000 --> 00:24:42,000
+as I positioned this sequence here this is that an equal 0
+
+00:24:42,000 --> 00:24:46,000
+I would take this and multiply it by this and some
+
+00:24:46,000 --> 00:24:49,000
+from minus infinity plus infinity or
+
+00:24:49,000 --> 00:24:53,000
+for an equal one I would position it here frank with two outs with position
+
+00:24:53,000 --> 00:24:55,000
+it here at center
+
+00:24:55,000 --> 00:24:58,000
+well you can kinda see what the idea is
+
+00:24:58,000 --> 00:25:02,000
+let's look at this a little more dynamically and see it
+
+00:25:02,000 --> 00:25:05,000
+in fact how one sequence fly past the other
+
+00:25:05,000 --> 00:25:10,000
+and how the output why I have an build up to
+
+00:25:10,000 --> 00:25:14,000
+the correct answer
+
+00:25:14,000 --> 00:25:18,000
+so the input they were considering is a step input
+
+00:25:18,000 --> 00:25:23,000
+which I show here and the impulse response that we welcome all this with
+
+00:25:23,000 --> 00:25:27,000
+is a decaying exponential now
+
+00:25:27,000 --> 00:25:31,000
+to form the convolution we want the product %uh exit K
+
+00:25:31,000 --> 00:25:34,000
+not with a chip K but with a chip and minus K
+
+00:25:34,000 --> 00:25:37,000
+corresponding to taking a chief K and
+
+00:25:37,000 --> 00:25:41,000
+reflecting at about the origin and then shifting it appropriately
+
+00:25:41,000 --> 00:25:46,000
+so here we see HR then minus K for an equal to 0
+
+00:25:46,000 --> 00:25:50,000
+namely H minus K and now a true
+
+00:25:50,000 --> 00:25:53,000
+one minus K which will show next is this
+
+00:25:53,000 --> 00:25:57,000
+shifted to the right by one point
+
+00:25:57,000 --> 00:26:00,000
+here we have a 2-1 minus K
+
+00:26:00,000 --> 00:26:07,000
+shifting to the right by one more point is a trip to minus K
+
+00:26:07,000 --> 00:26:12,000
+shifting again to the right will have ages 3 minus K
+
+00:26:12,000 --> 00:26:16,000
+and now let's shift back to the left
+
+00:26:16,000 --> 00:26:20,000
+until and is negative and
+
+00:26:20,000 --> 00:26:25,000
+then will begin the convolution so here's an equal 0
+
+00:26:25,000 --> 00:26:30,000
+any cause -1 any cause -2
+
+00:26:30,000 --> 00:26:35,000
+and and it was minus-3 now to form the convolution we want the product
+
+00:26:35,000 --> 00:26:39,000
+exit k with a true then minus K song from
+
+00:26:39,000 --> 00:26:42,000
+minus infinity plus infinity and
+
+00:26:42,000 --> 00:26:48,000
+for and negative that product is zero and therefore the result the convolution
+
+00:26:48,000 --> 00:26:49,000
+is zero
+
+00:26:49,000 --> 00:26:53,000
+as we shift to the right will build up the convolution
+
+00:26:53,000 --> 00:26:57,000
+and the result the convolution will be shown on the bottom trace
+
+00:26:57,000 --> 00:27:00,000
+so we begin the process
+
+00:27:00,000 --> 00:27:03,000
+with and negative and here we have any calls -1
+
+00:27:03,000 --> 00:27:09,000
+at n equals 0 we get our first 90 contribution
+
+00:27:09,000 --> 00:27:14,000
+now as we ship further to the right corresponding to increasing N
+
+00:27:14,000 --> 00:27:18,000
+we will accumulate more and more
+
+00:27:18,000 --> 00:27:21,000
+turns in the psalm and the convolution
+
+00:27:21,000 --> 00:27:25,000
+will build up in particular for this example
+
+00:27:25,000 --> 00:27:28,000
+the result to the convolution increases monotonically
+
+00:27:28,000 --> 00:27:33,000
+asymptotically approaching a constant and that constant in fact
+
+00:27:33,000 --> 00:27:37,000
+is just simply the accumulation love
+
+00:27:37,000 --> 00:27:44,000
+the values under the exponential
+
+00:27:48,000 --> 00:27:53,000
+now let's carry out the convolution this time with an input which is a
+
+00:27:53,000 --> 00:27:55,000
+rectangular pulses that have a step input
+
+00:27:55,000 --> 00:27:59,000
+again the same impulse response namely the King exponential
+
+00:27:59,000 --> 00:28:03,000
+and so we want to begin with HR then minus K
+
+00:28:03,000 --> 00:28:08,000
+again with and negative shown here and again with any negative
+
+00:28:08,000 --> 00:28:11,000
+there are no 90 turns in the product
+
+00:28:11,000 --> 00:28:16,000
+and so the convolution for and negative will be zero as it was in the previous
+
+00:28:16,000 --> 00:28:17,000
+case
+
+00:28:17,000 --> 00:28:22,000
+again on the bottom trace will show the result of the convolution as the impulse
+
+00:28:22,000 --> 00:28:23,000
+response
+
+00:28:23,000 --> 00:28:28,000
+slides along at any cost 0 we get our first 90 term
+
+00:28:28,000 --> 00:28:31,000
+and as in increases passed
+
+00:28:31,000 --> 00:28:35,000
+0 we will begin to generate an output
+
+00:28:35,000 --> 00:28:40,000
+basically the same as the output that we generated with a step input
+
+00:28:40,000 --> 00:28:44,000
+until the impulse response
+
+00:28:44,000 --> 00:28:48,000
+reaches a point where as we slide further
+
+00:28:48,000 --> 00:28:53,000
+we slide outside the interval where the rectangle is non-zero
+
+00:28:53,000 --> 00:28:58,000
+so when we slide one point further from what shown here
+
+00:28:58,000 --> 00:29:01,000
+the output will now DK
+
+00:29:01,000 --> 00:29:05,000
+corresponding to the fact dead the
+
+00:29:05,000 --> 00:29:08,000
+impulse responses sliding outside
+
+00:29:08,000 --> 00:29:12,000
+the interval in which the input is non-zero
+
+00:29:12,000 --> 00:29:19,000
+and so on the bottom trace we now see the result that the convolution
+
+00:29:20,000 --> 00:29:23,000
+okay so what
+
+00:29:23,000 --> 00:29:26,000
+you've seen then is an example
+
+00:29:26,000 --> 00:29:29,000
+love discrete-time convolution let's now
+
+00:29:29,000 --> 00:29:34,000
+look at an example love continuous-time convolution
+
+00:29:34,000 --> 00:29:39,000
+and as you might expect continuous-time convolution operates in
+
+00:29:39,000 --> 00:29:43,000
+exactly the same way continuous-time convolution
+
+00:29:43,000 --> 00:29:47,000
+we have be expression again
+
+00:29:47,000 --> 00:29:50,000
+y'at is an integral with
+
+00:29:50,000 --> 00:29:54,000
+now except now NHL t minus
+
+00:29:54,000 --> 00:29:58,000
+now it had exactly the same kinda perform
+
+00:29:58,000 --> 00:30:02,000
+as we had previously for
+
+00:30:02,000 --> 00:30:06,000
+discrete-time convolution and and in fact the mechanics
+
+00:30:06,000 --> 00:30:09,000
+0 the continuous-time convolution are identical
+
+00:30:09,000 --> 00:30:15,000
+so here Misar example with X 50 equal to unity
+
+00:30:15,000 --> 00:30:22,000
+step and 850 now a real exponential time two units that I show
+
+00:30:23,000 --> 00:30:27,000
+here x50 which is the unit step function
+
+00:30:27,000 --> 00:30:30,000
+here we have a gypsy
+
+00:30:30,000 --> 00:30:34,000
+which is an exponential for positive time
+
+00:30:34,000 --> 00:30:38,000
+and 0 for negative time now
+
+00:30:38,000 --> 00:30:42,000
+again looking back at the expression
+
+00:30:42,000 --> 00:30:46,000
+work on pollution it's not accept either we want
+
+00:30:46,000 --> 00:30:49,000
+its except now that we want and it's not
+
+00:30:49,000 --> 00:30:55,000
+H all tea or a chip how that we want it
+
+00:30:55,000 --> 00:30:59,000
+minus now we plan to multiply these together
+
+00:30:59,000 --> 00:31:03,000
+and integrate over the variable town
+
+00:31:03,000 --> 00:31:07,000
+and that gives us the output at any given time
+
+00:31:07,000 --> 00:31:10,000
+if we wanted at another time we change the value
+
+00:31:10,000 --> 00:31:13,000
+the as an argument inside this integral
+
+00:31:13,000 --> 00:31:17,000
+so here we have exit T
+
+00:31:17,000 --> 00:31:22,000
+here we have a trip to you which isn't quite what we wanted
+
+00:31:22,000 --> 00:31:25,000
+here we have except now and that's fine its just
+
+00:31:25,000 --> 00:31:30,000
+X-eighty with T relabel this panel and now
+
+00:31:30,000 --> 00:31:33,000
+what is 850 minus can now
+
+00:31:33,000 --> 00:31:37,000
+well here's a chip panel
+
+00:31:37,000 --> 00:31:40,000
+and if we simply turn that over
+
+00:31:40,000 --> 00:31:46,000
+here is 850 -10 and a trip T-minus now
+
+00:31:46,000 --> 00:31:49,000
+is position then at now
+
+00:31:49,000 --> 00:31:54,000
+equal to P and as we change the value to the
+
+00:31:54,000 --> 00:32:01,000
+to change the position this signal and now we multiply
+
+00:32:01,000 --> 00:32:06,000
+these two together and integrate from minus infinity Department Kennedy
+
+00:32:06,000 --> 00:32:11,000
+whip 850 minus now positioned at the appropriate value with T
+
+00:32:11,000 --> 00:32:14,000
+well
+
+00:32:14,000 --> 00:32:19,000
+again its best really to see this example and get the notion
+
+00:32:19,000 --> 00:32:24,000
+love seek signal being flipped and the to think not flying past each other
+
+00:32:24,000 --> 00:32:27,000
+multiplying in integrating by
+
+00:32:27,000 --> 00:32:32,000
+looking at it dynamically and observing how the answer build-up
+
+00:32:32,000 --> 00:32:35,000
+again the input that
+
+00:32:35,000 --> 00:32:40,000
+we consider is a step input and again we use an impulse response
+
+00:32:40,000 --> 00:32:44,000
+which is a decaying exponential and
+
+00:32:44,000 --> 00:32:47,000
+to form the convolution we want the product
+
+00:32:47,000 --> 00:32:51,000
+love accept an hour not with a chipped out but with a chip T-minus
+
+00:32:51,000 --> 00:32:54,000
+now so we want HFT time reversed
+
+00:32:54,000 --> 00:32:58,000
+and then shifted appropriately depending on the value with T
+
+00:32:58,000 --> 00:33:02,000
+let's first just look at age 50 -10 now
+
+00:33:02,000 --> 00:33:06,000
+for T positive corresponding to shifting
+
+00:33:06,000 --> 00:33:10,000
+a chip -10 now to the right and here we have
+
+00:33:10,000 --> 00:33:16,000
+TV increasing here
+
+00:33:16,000 --> 00:33:19,000
+is TV decreasing and we
+
+00:33:19,000 --> 00:33:23,000
+we want to begin the convolution with T negative
+
+00:33:23,000 --> 00:33:26,000
+corresponding to shifting H A minus towel
+
+00:33:26,000 --> 00:33:32,000
+to the left now to form the convolution we want the product if these two
+
+00:33:32,000 --> 00:33:35,000
+and pretty negative there are no 90
+
+00:33:35,000 --> 00:33:39,000
+contributions to the integral
+
+00:33:39,000 --> 00:33:43,000
+and so the convolution will be 0 party less than zero
+
+00:33:43,000 --> 00:33:48,000
+and the bottom trace we show the results of the convolution
+
+00:33:48,000 --> 00:33:51,000
+here for T negative
+
+00:33:51,000 --> 00:33:58,000
+and pretty less than zero we will continue to have zero in the convolution
+
+00:33:58,000 --> 00:34:01,000
+now as TV increases past
+
+00:34:01,000 --> 00:34:05,000
+0 we begin to get some 90 contribution
+
+00:34:05,000 --> 00:34:10,000
+in the product indicated by the fact that the convolution
+
+00:34:10,000 --> 00:34:13,000
+the result to the convolution starts to build-up
+
+00:34:13,000 --> 00:34:17,000
+and as see increases further
+
+00:34:17,000 --> 00:34:21,000
+we will get more and more 90 contribution
+
+00:34:21,000 --> 00:34:24,000
+in the in a grand and so
+
+00:34:24,000 --> 00:34:27,000
+the resulted the convolution will be
+
+00:34:27,000 --> 00:34:32,000
+a monotonically increasing function for this particular example
+
+00:34:32,000 --> 00:34:35,000
+which asymptotically approaches a constant
+
+00:34:35,000 --> 00:34:38,000
+and that constant will be proportional
+
+00:34:38,000 --> 00:34:43,000
+to the area under the impulse response because that the fact that work
+
+00:34:43,000 --> 00:34:44,000
+involving
+
+00:34:44,000 --> 00:34:51,000
+with the step input
+
+00:34:59,000 --> 00:35:02,000
+now let's carry out the convolution with an input which is
+
+00:35:02,000 --> 00:35:07,000
+a rectangular Paul's again an impulse response which is an exponential
+
+00:35:07,000 --> 00:35:11,000
+and so to form the convolution we want except now with a2
+
+00:35:11,000 --> 00:35:16,000
+T-minus towel H A T minus now shown here for TE
+
+00:35:16,000 --> 00:35:19,000
+negative and again to form the convolution we take
+
+00:35:19,000 --> 00:35:23,000
+the integral all the product if these two
+
+00:35:23,000 --> 00:35:26,000
+which again will be 0 for
+
+00:35:26,000 --> 00:35:31,000
+T less than zero so the bottom trace shows the result of the convolution
+
+00:35:31,000 --> 00:35:35,000
+here shown is zero and it will continue to be 0
+
+00:35:35,000 --> 00:35:40,000
+until T becomes positive at which point we build up
+
+00:35:40,000 --> 00:35:43,000
+some 90 turn
+
+00:35:43,000 --> 00:35:48,000
+in the in a grant now as we slide further
+
+00:35:48,000 --> 00:35:53,000
+until the impulse response
+
+00:35:53,000 --> 00:35:56,000
+shifts outside the interval in which the polls
+
+00:35:56,000 --> 00:36:00,000
+is 90 the output will build up
+
+00:36:00,000 --> 00:36:04,000
+but here we've now begun to leave that interval
+
+00:36:04,000 --> 00:36:08,000
+and so the output will start to BK exponentially
+
+00:36:08,000 --> 00:36:11,000
+and as the impulse response
+
+00:36:11,000 --> 00:36:15,000
+slides further and further corresponding to
+
+00:36:15,000 --> 00:36:19,000
+increasing see then the output
+
+00:36:19,000 --> 00:36:23,000
+will DK exponentially representing the fact
+
+00:36:23,000 --> 00:36:26,000
+that their is less and less area
+
+00:36:26,000 --> 00:36:30,000
+in the product love except now
+
+00:36:30,000 --> 00:36:35,000
+and a chief T-minus now and asymptotically
+
+00:36:35,000 --> 00:36:41,000
+this output will then approach 0 okay so
+
+00:36:41,000 --> 00:36:46,000
+you've seen convolution a you see the derivation of convolution and kinda the
+
+00:36:46,000 --> 00:36:47,000
+graphical
+
+00:36:47,000 --> 00:36:51,000
+representation convolution finally
+
+00:36:51,000 --> 00:36:55,000
+let's work again with these two examples
+
+00:36:55,000 --> 00:36:59,000
+and let's go through those two examples analytically
+
+00:36:59,000 --> 00:37:03,000
+so that we finally see how analytically
+
+00:37:03,000 --> 00:37:07,000
+the result develops for those same examples
+
+00:37:07,000 --> 00:37:11,000
+well we have
+
+00:37:11,000 --> 00:37:15,000
+first the discrete-time case and let's take our discrete-time example
+
+00:37:15,000 --> 00:37:19,000
+and and in general the convolution some
+
+00:37:19,000 --> 00:37:23,000
+is as I indicated here so yes
+
+00:37:23,000 --> 00:37:27,000
+is just our expression from before which is
+
+00:37:27,000 --> 00:37:32,000
+the convolution some and if we take our two examples
+
+00:37:32,000 --> 00:37:36,000
+the example love and it put which is
+
+00:37:36,000 --> 00:37:40,000
+unit step and an impulse response
+
+00:37:40,000 --> 00:37:45,000
+which is a real exponential multiplied by a unit step
+
+00:37:45,000 --> 00:37:48,000
+we have then
+
+00:37:48,000 --> 00:37:51,000
+replacing exit K by
+
+00:37:51,000 --> 00:37:55,000
+what we know the input to be an HR then minus K
+
+00:37:55,000 --> 00:38:00,000
+by what we know the impulse response to be the output is
+
+00:38:00,000 --> 00:38:05,000
+the expression that we have here now
+
+00:38:05,000 --> 00:38:08,000
+in this expression and you'll see this
+
+00:38:08,000 --> 00:38:13,000
+of very generally and with the more complicated examples
+
+00:38:13,000 --> 00:38:17,000
+when you look at the tax as
+
+00:38:17,000 --> 00:38:21,000
+you go to evaluate these expressions
+
+00:38:21,000 --> 00:38:26,000
+generally what happens is that the signals have different analytical
+
+00:38:26,000 --> 00:38:29,000
+forms in different regions and that's a fact
+
+00:38:29,000 --> 00:38:32,000
+what we have here your particular let's
+
+00:38:32,000 --> 00:38:37,000
+look at the thumb and well we observed first the ball
+
+00:38:37,000 --> 00:38:40,000
+is that the
+
+00:38:40,000 --> 00:38:44,000
+limits on this song are going to be modified
+
+00:38:44,000 --> 00:38:47,000
+depending on where this unit step
+
+00:38:47,000 --> 00:38:51,000
+is zero and non-zero in particular
+
+00:38:51,000 --> 00:38:56,000
+if we first consider what will turn out to be the simple case
+
+00:38:56,000 --> 00:39:00,000
+namely and less than zero for and less than zero
+
+00:39:00,000 --> 00:39:04,000
+this unit step is
+
+00:39:04,000 --> 00:39:08,000
+0 for K
+
+00:39:08,000 --> 00:39:12,000
+greater than an and with an less than zero
+
+00:39:12,000 --> 00:39:16,000
+that means that this unit step never
+
+00:39:16,000 --> 00:39:19,000
+is 90 for K
+
+00:39:19,000 --> 00:39:22,000
+positive on the other hand
+
+00:39:22,000 --> 00:39:27,000
+this unit step is never 90
+
+00:39:27,000 --> 00:39:31,000
+or is always 0 for k negative
+
+00:39:31,000 --> 00:39:35,000
+let me just stressed that by looking at the particular grabs
+
+00:39:35,000 --> 00:39:40,000
+here is the unit step you FK
+
+00:39:40,000 --> 00:39:45,000
+here is the units that you then minus K
+
+00:39:45,000 --> 00:39:51,000
+and for and less than zero so that this point comes before this point
+
+00:39:51,000 --> 00:39:55,000
+the product these two is equal to 0
+
+00:39:55,000 --> 00:39:58,000
+that means there is no overlap between these two terms
+
+00:39:58,000 --> 00:40:01,000
+and so it says that why I have an
+
+00:40:01,000 --> 00:40:05,000
+the output is 0 for and less than 0
+
+00:40:05,000 --> 00:40:09,000
+well that was an easy one a her
+
+00:40:09,000 --> 00:40:12,000
+bring greater than 0 it's not quite a straightforward
+
+00:40:12,000 --> 00:40:16,000
+as coming out with the answers 0 so now
+
+00:40:16,000 --> 00:40:21,000
+let's look at what happens when the two units steps overlap
+
+00:40:21,000 --> 00:40:25,000
+and this would correspond to
+
+00:40:25,000 --> 00:40:30,000
+what i've labeled here as interval to namely for and greater than 0
+
+00:40:30,000 --> 00:40:34,000
+if we just look back at the
+
+00:40:34,000 --> 00:40:39,000
+summation that we had the summation now
+
+00:40:39,000 --> 00:40:43,000
+corresponds to this unit step
+
+00:40:43,000 --> 00:40:48,000
+and this unit step having some overlap
+
+00:40:48,000 --> 00:40:52,000
+so for interval to
+
+00:40:52,000 --> 00:40:56,000
+corresponding to an greater than 0 we have
+
+00:40:56,000 --> 00:41:00,000
+you have K the unit step
+
+00:41:00,000 --> 00:41:03,000
+we have you love and minus K
+
+00:41:03,000 --> 00:41:07,000
+which is a unit step going backward in time
+
+00:41:07,000 --> 00:41:10,000
+by which extends
+
+00:41:10,000 --> 00:41:13,000
+for positive values have an
+
+00:41:13,000 --> 00:41:17,000
+if we think about multiplying these two together
+
+00:41:17,000 --> 00:41:21,000
+we will get in the product unity
+
+00:41:21,000 --> 00:41:24,000
+for what values at K well
+
+00:41:24,000 --> 00:41:29,000
+for K starting at zero corresponding to one of the units steps
+
+00:41:29,000 --> 00:41:33,000
+ending at hand corresponding to the other units that
+
+00:41:33,000 --> 00:41:36,000
+so we have an overlap between these
+
+00:41:36,000 --> 00:41:40,000
+for k equal to 0 et cetera
+
+00:41:40,000 --> 00:41:44,000
+up through the value and
+
+00:41:44,000 --> 00:41:49,000
+right now that means that in terms of the original some
+
+00:41:49,000 --> 00:41:53,000
+we can get rid of the units steps involved by simply changing the limits
+
+00:41:53,000 --> 00:41:55,000
+on the some
+
+00:41:55,000 --> 00:41:59,000
+and the limits now are from zero
+
+00:41:59,000 --> 00:42:02,000
+to an the term
+
+00:42:02,000 --> 00:42:05,000
+out for to the end minus K
+
+00:42:05,000 --> 00:42:10,000
+we had before you with Cain you then minus K and that disappeared because
+
+00:42:10,000 --> 00:42:14,000
+because we don't with that simply by modifying the limits
+
+00:42:14,000 --> 00:42:18,000
+we now pull out the term output to the N
+
+00:42:18,000 --> 00:42:22,000
+because the summation is on canine and so we can
+
+00:42:22,000 --> 00:42:25,000
+simply poll that term
+
+00:42:25,000 --> 00:42:28,000
+out at the some
+
+00:42:28,000 --> 00:42:31,000
+and we now have out but the minus K
+
+00:42:31,000 --> 00:42:36,000
+which we can write rewrite as alpha to the minus 12 PK
+
+00:42:36,000 --> 00:42:40,000
+and the upshot of all of this is that why I have an
+
+00:42:40,000 --> 00:42:44,000
+now we can really express as output to the end
+
+00:42:44,000 --> 00:42:47,000
+its own from 0 to end up outfit to the -1
+
+00:42:47,000 --> 00:42:51,000
+to the K well question is how do we
+
+00:42:51,000 --> 00:42:54,000
+evaluate that and
+
+00:42:54,000 --> 00:42:58,000
+it's essentially corresponds to a finite number
+
+00:42:58,000 --> 00:43:01,000
+turns in a geometric series and that bio
+
+00:43:01,000 --> 00:43:07,000
+by the way is estimation that will recur over and over and over and over again
+
+00:43:07,000 --> 00:43:11,000
+and it's one that you should right down right on your back pocket right in the
+
+00:43:11,000 --> 00:43:13,000
+palm of your hand
+
+00:43:13,000 --> 00:43:18,000
+or whatever it takes to remember it what you'll see is that that will recur
+
+00:43:18,000 --> 00:43:22,000
+can more or less the throughout the course
+
+00:43:22,000 --> 00:43:26,000
+and so it's one worth remembering and in particular
+
+00:43:26,000 --> 00:43:29,000
+what the storm love a geometric
+
+00:43:29,000 --> 00:43:33,000
+series is is what i've indicated here
+
+00:43:33,000 --> 00:43:38,000
+we have this song from 0 to our they did to the K
+
+00:43:38,000 --> 00:43:42,000
+and it's one minus beta to the are plus one
+
+00:43:42,000 --> 00:43:46,000
+this is one more than the
+
+00:43:46,000 --> 00:43:51,000
+upper limit on the summation and in the denominator is one minus beta
+
+00:43:51,000 --> 00:43:55,000
+so this equation is important
+
+00:43:55,000 --> 00:44:00,000
+is no point in attempting to derive it however you get to it it's important
+
+00:44:00,000 --> 00:44:03,000
+to retain okay well
+
+00:44:03,000 --> 00:44:07,000
+we can now use that some Asian
+
+00:44:07,000 --> 00:44:10,000
+in the expression that we just the ballot
+
+00:44:10,000 --> 00:44:15,000
+and so let's proceed to a value a tax on clothes
+
+00:44:15,000 --> 00:44:18,000
+form so we now know go back
+
+00:44:18,000 --> 00:44:22,000
+to the expression that we just worked out
+
+00:44:22,000 --> 00:44:26,000
+why event is output to the end its own from 0 to N
+
+00:44:26,000 --> 00:44:31,000
+output to the -1 to the K
+
+00:44:31,000 --> 00:44:35,000
+this plays the role a beta in a turn that I just
+
+00:44:35,000 --> 00:44:38,000
+in the expression and I just presented
+
+00:44:38,000 --> 00:44:41,000
+and so using
+
+00:44:41,000 --> 00:44:47,000
+bat using that result we can rewrite this summation as i indicate here
+
+00:44:47,000 --> 00:44:51,000
+and the final result that we end up with
+
+00:44:51,000 --> 00:44:54,000
+after a certain amount of algebra is
+
+00:44:54,000 --> 00:44:59,000
+why I have an equal to one minus output to the end plus one
+
+00:44:59,000 --> 00:45:02,000
+divided by one minus out for
+
+00:45:02,000 --> 00:45:07,000
+and let me just kinda vindicate with a few dots here
+
+00:45:07,000 --> 00:45:14,000
+dead there is a certain amount of algebra required in going from
+
+00:45:14,000 --> 00:45:16,000
+this step to this step and
+
+00:45:16,000 --> 00:45:20,000
+and I I'd like to leave you with the phone an opportunity you doing at your
+
+00:45:20,000 --> 00:45:20,000
+leisure
+
+00:45:20,000 --> 00:45:25,000
+okay well so so the expression we have now
+
+00:45:25,000 --> 00:45:28,000
+for wired and is why I have an
+
+00:45:28,000 --> 00:45:33,000
+equal to one myself up to be enforced one divided by one minus now for
+
+00:45:33,000 --> 00:45:38,000
+that bring greater than 0 we found out previously that it was 0 for and less
+
+00:45:38,000 --> 00:45:39,000
+than 0
+
+00:45:39,000 --> 00:45:43,000
+and finally if we were to plot this what we would
+
+00:45:43,000 --> 00:45:47,000
+get is the graph that I indicate here
+
+00:45:47,000 --> 00:45:52,000
+the first non-zero value occurs at an equal 0
+
+00:45:52,000 --> 00:45:56,000
+and it has a height 1 and then
+
+00:45:56,000 --> 00:46:00,000
+the next 90 value at one and this has a height
+
+00:46:00,000 --> 00:46:04,000
+a one plus alpha and this is one place now for
+
+00:46:04,000 --> 00:46:08,000
+on South squared and and
+
+00:46:08,000 --> 00:46:12,000
+the sequence continues on like that
+
+00:46:12,000 --> 00:46:16,000
+an asymptotically approaches as n goes to infinity
+
+00:46:16,000 --> 00:46:20,000
+asymptotically approaches one over one minute South for
+
+00:46:20,000 --> 00:46:24,000
+which is consistent with the algebraic expression
+
+00:46:24,000 --> 00:46:29,000
+that we have that we develop and obviously of course
+
+00:46:29,000 --> 00:46:33,000
+is also consistent with the movie alright so that's our
+
+00:46:33,000 --> 00:46:37,000
+discrete-time example which we kinda went through graphically
+
+00:46:37,000 --> 00:46:41,000
+with the transparencies and we went through graphically with the movie you
+
+00:46:41,000 --> 00:46:43,000
+know we've gone through analytically
+
+00:46:43,000 --> 00:46:46,000
+now let's look analytically at
+
+00:46:46,000 --> 00:46:50,000
+the continuous-time example which pretty much
+
+00:46:50,000 --> 00:46:53,000
+close in the same way as we've just gone through
+
+00:46:53,000 --> 00:46:56,000
+so again we have
+
+00:46:56,000 --> 00:46:59,000
+the convolution integral which is
+
+00:46:59,000 --> 00:47:04,000
+the integral indicated at the top
+
+00:47:04,000 --> 00:47:09,000
+and our example you recall was with accepting as a unit step
+
+00:47:09,000 --> 00:47:12,000
+and a trip to the as
+
+00:47:12,000 --> 00:47:16,000
+an exponential times the units that so
+
+00:47:16,000 --> 00:47:20,000
+when we substitute those then this then corresponds to
+
+00:47:20,000 --> 00:47:26,000
+exit to the and this corresponds to 850 -10 now
+
+00:47:26,000 --> 00:47:30,000
+and again we have the same
+
+00:47:30,000 --> 00:47:34,000
+issue more last which is that inside that integral
+
+00:47:34,000 --> 00:47:38,000
+there are two steps one of them going forward in time and one of them going
+
+00:47:38,000 --> 00:47:42,000
+backward in time and we need to examine
+
+00:47:42,000 --> 00:47:46,000
+when they overlap in when they don't when they don't overlap the product of
+
+00:47:46,000 --> 00:47:47,000
+course is zero
+
+00:47:47,000 --> 00:47:51,000
+and there's no point doing any integration because the anagram 20
+
+00:47:51,000 --> 00:47:56,000
+so if we track it through we have again
+
+00:47:56,000 --> 00:47:59,000
+interval one which is to us$10,000
+
+00:47:59,000 --> 00:48:03,000
+pretty less than zero this unit step
+
+00:48:03,000 --> 00:48:06,000
+which only begins at: equals 0
+
+00:48:06,000 --> 00:48:09,000
+a tally cool 0 and this unit step
+
+00:48:09,000 --> 00:48:13,000
+which is zero by the time
+
+00:48:13,000 --> 00:48:17,000
+how gets up to TN beyond party less than zero
+
+00:48:17,000 --> 00:48:21,000
+is no overlap between
+
+00:48:21,000 --> 00:48:24,000
+the unit step going forward in time
+
+00:48:24,000 --> 00:48:28,000
+and the units that going backward in time and consequently
+
+00:48:28,000 --> 00:48:31,000
+the in a grand is equal to 0 and consequently
+
+00:48:31,000 --> 00:48:37,000
+the output is equal to 0 okay
+
+00:48:37,000 --> 00:48:41,000
+now we can
+
+00:48:41,000 --> 00:48:44,000
+likewise looked at the interval where
+
+00:48:44,000 --> 00:48:50,000
+the to unit steps to overlap and in that case what happens again is that the
+
+00:48:50,000 --> 00:48:51,000
+overlap
+
+00:48:51,000 --> 00:48:55,000
+in essence the units that tells us gives us a range
+
+00:48:55,000 --> 00:49:00,000
+on the integration and in particular
+
+00:49:00,000 --> 00:49:04,000
+the two-step overlap 20 is greater than
+
+00:49:04,000 --> 00:49:07,000
+from how equal 0
+
+00:49:07,000 --> 00:49:10,000
+two towers both T so
+
+00:49:10,000 --> 00:49:14,000
+critical to party greater than 0
+
+00:49:14,000 --> 00:49:18,000
+again of course we have in this expression
+
+00:49:18,000 --> 00:49:22,000
+this product love this unit step
+
+00:49:22,000 --> 00:49:25,000
+and this unit step is equal to 1
+
+00:49:25,000 --> 00:49:29,000
+in this rain
+
+00:49:29,000 --> 00:49:32,000
+and so that allows us then
+
+00:49:32,000 --> 00:49:36,000
+to change the limits on the integral
+
+00:49:36,000 --> 00:49:39,000
+mister from minus infinity two plus infinity
+
+00:49:39,000 --> 00:49:45,000
+we know that the in a grand is non-zero only over this range
+
+00:49:45,000 --> 00:49:50,000
+looking at this in to grow we can now pull out the term which corresponds to
+
+00:49:50,000 --> 00:49:54,000
+you need to the -80 just as we pulled out
+
+00:49:54,000 --> 00:49:58,000
+a term in the discrete-time case
+
+00:49:58,000 --> 00:50:01,000
+and we noticed in the integral we have eat to the
+
+00:50:01,000 --> 00:50:08,000
+-8 -10 now so that gives us the integral from 0 to TV to the eight-hour
+
+00:50:08,000 --> 00:50:11,000
+and if we perform at integration
+
+00:50:11,000 --> 00:50:15,000
+we end up with this expression
+
+00:50:15,000 --> 00:50:19,000
+and finally multiplying this by either the -80
+
+00:50:19,000 --> 00:50:24,000
+we have for y'at pretty greater than 0
+
+00:50:24,000 --> 00:50:27,000
+the algebraic expression that I
+
+00:50:27,000 --> 00:50:31,000
+indicated on the bottom
+
+00:50:31,000 --> 00:50:35,000
+so so we had worked out
+
+00:50:35,000 --> 00:50:38,000
+to less than zero and we come out 10
+
+00:50:38,000 --> 00:50:41,000
+we work out take greater than 0 and we come out
+
+00:50:41,000 --> 00:50:46,000
+with this algebraic expression
+
+00:50:46,000 --> 00:50:51,000
+and if we plot this out to rate expression as a function of time
+
+00:50:51,000 --> 00:50:54,000
+we find that what it corresponds to is
+
+00:50:54,000 --> 00:50:58,000
+an exponential behavior starting at zero
+
+00:50:58,000 --> 00:51:02,000
+and exponentially heading asymptotically
+
+00:51:02,000 --> 00:51:08,000
+forward the bad you one over it
+
+00:51:08,000 --> 00:51:12,000
+okay now we've gone through these examples several ways than one is
+
+00:51:12,000 --> 00:51:14,000
+analytically
+
+00:51:14,000 --> 00:51:19,000
+in order to develop a feel and fluency for convolution
+
+00:51:19,000 --> 00:51:24,000
+it's absolutely essential to work through a variety of examples
+
+00:51:24,000 --> 00:51:29,000
+both understanding them graphically and understanding them as we did hear
+
+00:51:29,000 --> 00:51:34,000
+analytically and you'll have an opportunity to do that
+
+00:51:34,000 --> 00:51:39,000
+through the problems that I suggested in the video course manual
+
+00:51:39,000 --> 00:51:42,000
+in the next lecture what will turn to
+
+00:51:42,000 --> 00:51:46,000
+are some general properties of convolution
+
+00:51:46,000 --> 00:51:49,000
+and show how this rather amazing representation
+
+00:51:49,000 --> 00:51:53,000
+when your time invariant systems in fact leads to a variety
+
+00:51:53,000 --> 00:51:57,000
+%uh properties linear time-invariant systems
+
+00:51:57,000 --> 00:52:00,000
+and will find that convolution its
+
+00:52:00,000 --> 00:52:04,000
+fairly rich in its properties and what this leads to
+
+00:52:04,000 --> 00:52:07,000
+are some very nice and
+
+00:52:07,000 --> 00:52:10,000
+desirable and exploitable properties
+
+00:52:10,000 --> 00:52:12,000
+linear time-invariant systems thank you
+

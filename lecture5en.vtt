@@ -1,0 +1,2553 @@
+00:00:05,000 --> 00:00:12,000
+ha the the
+
+00:00:27,000 --> 00:00:34,000
+the more
+
+00:00:35,000 --> 00:00:42,000
+the last time
+
+00:00:43,000 --> 00:00:46,000
+we talked about the you the representation
+
+00:00:46,000 --> 00:00:50,000
+%uh linear time-invariant systems through the convolution song
+
+00:00:50,000 --> 00:00:53,000
+in the discrete-time case and the convolution integral in the
+
+00:00:53,000 --> 00:00:54,000
+continuous-time
+
+00:00:54,000 --> 00:00:59,000
+case now although the derivation was relatively straightforward
+
+00:00:59,000 --> 00:01:03,000
+in fact the result is really kind of amazing because
+
+00:01:03,000 --> 00:01:07,000
+what it tells us is that for linear time-invariant systems
+
+00:01:07,000 --> 00:01:12,000
+if we know the response to the system to a single in polls
+
+00:01:12,000 --> 00:01:15,000
+at equal 0 or in fact that any other time
+
+00:01:15,000 --> 00:01:19,000
+then we can determine from that its response
+
+00:01:19,000 --> 00:01:25,000
+to an arbitrary input through the use of convolution furthermore
+
+00:01:25,000 --> 00:01:29,000
+what we'll see as the course develops is that in fact
+
+00:01:29,000 --> 00:01:32,000
+the class a linear time-invariant systems is a very rich class
+
+00:01:32,000 --> 00:01:36,000
+there are lots of systems that have that property
+
+00:01:36,000 --> 00:01:40,000
+and in addition there are lots a very interesting things that you can do with
+
+00:01:40,000 --> 00:01:42,000
+linear time-invariant systems
+
+00:01:42,000 --> 00:01:46,000
+in today's lecture
+
+00:01:46,000 --> 00:01:49,000
+what I'd like to begin with is focusing
+
+00:01:49,000 --> 00:01:53,000
+on convolution as an algebraic operation
+
+00:01:53,000 --> 00:01:58,000
+and will see that it has a number of algebraic properties then in turn
+
+00:01:58,000 --> 00:02:01,000
+have important implications for
+
+00:02:01,000 --> 00:02:05,000
+linear time-invariant systems then we'll turn
+
+00:02:05,000 --> 00:02:08,000
+to a discussion or what the
+
+00:02:08,000 --> 00:02:11,000
+characterization %uh linear time-invariant systems
+
+00:02:11,000 --> 00:02:14,000
+through convolution implies
+
+00:02:14,000 --> 00:02:18,000
+in terms of the relationship various other system properties
+
+00:02:18,000 --> 00:02:22,000
+to the impulse response let me begin by
+
+00:02:22,000 --> 00:02:26,000
+reminding you love the basic result that we
+
+00:02:26,000 --> 00:02:30,000
+develop last time which is the convolution some
+
+00:02:30,000 --> 00:02:33,000
+in discrete-time as
+
+00:02:33,000 --> 00:02:36,000
+I indicate here and
+
+00:02:36,000 --> 00:02:39,000
+the convolution integral in continuous-time
+
+00:02:39,000 --> 00:02:45,000
+in and what the convolution some more the convolution integral tells us
+
+00:02:45,000 --> 00:02:48,000
+is how to relate the output
+
+00:02:48,000 --> 00:02:53,000
+to the input and to the system impulse response
+
+00:02:53,000 --> 00:02:57,000
+and the expression looks
+
+00:02:57,000 --> 00:03:00,000
+basically the same in continuous-time and discrete-time
+
+00:03:00,000 --> 00:03:05,000
+and I remind you also that we talked about a graphical interpretation
+
+00:03:05,000 --> 00:03:09,000
+where essentially to graphically
+
+00:03:09,000 --> 00:03:13,000
+interpret convolution required for
+
+00:03:13,000 --> 00:03:16,000
+was developed in terms
+
+00:03:16,000 --> 00:03:19,000
+or taking the system impulse response
+
+00:03:19,000 --> 00:03:23,000
+flipping it sliding it past the input
+
+00:03:23,000 --> 00:03:26,000
+and with positioned appropriately depending on the
+
+00:03:26,000 --> 00:03:30,000
+value of the independent variable for which were computing
+
+00:03:30,000 --> 00:03:33,000
+the convolution and then multiplying and
+
+00:03:33,000 --> 00:03:37,000
+summing in the discrete-time case or integrating
+
+00:03:37,000 --> 00:03:41,000
+in the continuous-time case now
+
+00:03:41,000 --> 00:03:45,000
+convolution as an algebraic operation
+
+00:03:45,000 --> 00:03:49,000
+has a number or important properties
+
+00:03:49,000 --> 00:03:53,000
+one of the properties of convolution
+
+00:03:53,000 --> 00:03:57,000
+is that it is what is referred to as commuted
+
+00:03:57,000 --> 00:04:01,000
+community here means that
+
+00:04:01,000 --> 00:04:04,000
+we can think either a convo loving
+
+00:04:04,000 --> 00:04:08,000
+X with age or H with axe
+
+00:04:08,000 --> 00:04:11,000
+and the order in which that's done
+
+00:04:11,000 --> 00:04:16,000
+doesn't affect the output result so summarized here
+
+00:04:16,000 --> 00:04:19,000
+is what the community operation is
+
+00:04:19,000 --> 00:04:23,000
+in discrete-time or in continuous-time
+
+00:04:23,000 --> 00:04:26,000
+and it says as I just indicated that
+
+00:04:26,000 --> 00:04:29,000
+x7 convolved with a chip and
+
+00:04:29,000 --> 00:04:33,000
+is equal to a chip and convolved
+
+00:04:33,000 --> 00:04:36,000
+with exit or the same course
+
+00:04:36,000 --> 00:04:40,000
+in continuous-time and in fact
+
+00:04:40,000 --> 00:04:43,000
+in the lecture last time
+
+00:04:43,000 --> 00:04:48,000
+we worked an example where we had indiscreet I'm an impulse response which
+
+00:04:48,000 --> 00:04:50,000
+was an exponential
+
+00:04:50,000 --> 00:04:54,000
+and an input which is a unit step
+
+00:04:54,000 --> 00:04:58,000
+and in the text what you'll find is
+
+00:04:58,000 --> 00:05:01,000
+the same example work except in that case
+
+00:05:01,000 --> 00:05:07,000
+the input is the exponential and the system impulse response is the step
+
+00:05:07,000 --> 00:05:10,000
+and that corresponds to the example in the text
+
+00:05:10,000 --> 00:05:15,000
+which is example 3.1
+
+00:05:15,000 --> 00:05:19,000
+and what happens in an example is that in fact
+
+00:05:19,000 --> 00:05:22,000
+what you'll see is that the same result
+
+00:05:22,000 --> 00:05:26,000
+occurs an example 3.1 as we generated
+
+00:05:26,000 --> 00:05:29,000
+in the lecture and there's a similar comparison
+
+00:05:29,000 --> 00:05:33,000
+in continuous-time this example was worked in
+
+00:05:33,000 --> 00:05:36,000
+lecture and this example
+
+00:05:36,000 --> 00:05:40,000
+is work in the text in other words
+
+00:05:40,000 --> 00:05:43,000
+the text works the example where the system
+
+00:05:43,000 --> 00:05:46,000
+impulse response is
+
+00:05:46,000 --> 00:05:52,000
+unit step and the input is an exponential
+
+00:05:52,000 --> 00:05:55,000
+right now the community property as I said tells us
+
+00:05:55,000 --> 00:05:58,000
+that the order in which we do convolution
+
+00:05:58,000 --> 00:06:01,000
+doesn't affect the result to the convolution
+
+00:06:01,000 --> 00:06:04,000
+the same is true for continuous-time and discrete-time
+
+00:06:04,000 --> 00:06:09,000
+and in fact for the other algebraic properties that I'll talk about
+
+00:06:09,000 --> 00:06:15,000
+the results are exactly the same for continuous-time and discrete-time
+
+00:06:15,000 --> 00:06:18,000
+so in fact what we can do is
+
+00:06:18,000 --> 00:06:23,000
+drop the independent variable as an argument
+
+00:06:23,000 --> 00:06:29,000
+so that we suppress any kinda difference between continuous and discrete-time
+
+00:06:29,000 --> 00:06:33,000
+and suppressing be independent variable
+
+00:06:33,000 --> 00:06:37,000
+within state the community property as I've
+
+00:06:37,000 --> 00:06:41,000
+rewritten it here just X convulsed with age because
+
+00:06:41,000 --> 00:06:44,000
+H involved with the ex the same in continuous-time
+
+00:06:44,000 --> 00:06:49,000
+and discrete-time now
+
+00:06:49,000 --> 00:06:52,000
+the derivation to the community property is
+
+00:06:52,000 --> 00:06:57,000
+more less amount you bro which you can follow through in the book it involves
+
+00:06:57,000 --> 00:07:01,000
+soem changes variables and
+
+00:07:01,000 --> 00:07:04,000
+in some things that sort
+
+00:07:04,000 --> 00:07:07,000
+what I'd like to focus on with that and other properties
+
+00:07:07,000 --> 00:07:11,000
+is not the derivation which you can see in the tax
+
+00:07:11,000 --> 00:07:14,000
+by rather the interpretation
+
+00:07:14,000 --> 00:07:18,000
+so we have the community property and now there are two other
+
+00:07:18,000 --> 00:07:22,000
+important algebraic properties one being
+
+00:07:22,000 --> 00:07:26,000
+what is referred to as the associative property
+
+00:07:26,000 --> 00:07:31,000
+which tells us that if we have X convulsed with
+
+00:07:31,000 --> 00:07:35,000
+the result ok involving h1 with h2
+
+00:07:35,000 --> 00:07:39,000
+that's exactly the same as X convolved with h1
+
+00:07:39,000 --> 00:07:42,000
+and that result involved with h2
+
+00:07:42,000 --> 00:07:46,000
+and what this permits is
+
+00:07:46,000 --> 00:07:51,000
+for us to write for example ex-convict alt with h1
+
+00:07:51,000 --> 00:07:56,000
+involved with h2 without any ambiguity
+
+00:07:56,000 --> 00:08:00,000
+because it doesn't matter from the associative property
+
+00:08:00,000 --> 00:08:04,000
+how we grew the terms together
+
+00:08:04,000 --> 00:08:09,000
+the third important property is what is referred to as the distributive property
+
+00:08:09,000 --> 00:08:13,000
+namely the fact the convolution distributes over addition
+
+00:08:13,000 --> 00:08:16,000
+and what I mean by that is what i've indicated
+
+00:08:16,000 --> 00:08:20,000
+here on the slide dead if
+
+00:08:20,000 --> 00:08:23,000
+I think or X convo with the psalm
+
+00:08:23,000 --> 00:08:27,000
+of h1n h2 that's identical
+
+00:08:27,000 --> 00:08:31,000
+to first involving X with h1
+
+00:08:31,000 --> 00:08:34,000
+also can bombing X with h2 and then
+
+00:08:34,000 --> 00:08:38,000
+adding the two together and that result
+
+00:08:38,000 --> 00:08:42,000
+will be the same as this result
+
+00:08:42,000 --> 00:08:46,000
+so convolution is community
+
+00:08:46,000 --> 00:08:49,000
+associative and it distributes over addition
+
+00:08:49,000 --> 00:08:52,000
+three very important algebraic properties and
+
+00:08:52,000 --> 00:08:57,000
+by the way there are other algebraic operations that have
+
+00:08:57,000 --> 00:09:01,000
+that same property for example multiplication
+
+00:09:01,000 --> 00:09:04,000
+numbers is likewise commuted to associative
+
+00:09:04,000 --> 00:09:07,000
+and distributed now
+
+00:09:07,000 --> 00:09:11,000
+let's look at what these three properties
+
+00:09:11,000 --> 00:09:15,000
+imply a specifically for linear time-invariant systems
+
+00:09:15,000 --> 00:09:18,000
+and as we'll see the the implications
+
+00:09:18,000 --> 00:09:22,000
+are both very interesting and very important
+
+00:09:22,000 --> 00:09:26,000
+let's begin with the community property
+
+00:09:26,000 --> 00:09:30,000
+and consider in particular
+
+00:09:30,000 --> 00:09:34,000
+a system with an impulse response age
+
+00:09:34,000 --> 00:09:39,000
+and I represent that by simply writing the H inside the box
+
+00:09:39,000 --> 00:09:42,000
+an input tax and an output then
+
+00:09:42,000 --> 00:09:46,000
+which is X convulsed with age
+
+00:09:46,000 --> 00:09:49,000
+now since this operation is commuted to
+
+00:09:49,000 --> 00:09:53,000
+I can right is that affects convolved with a I can write
+
+00:09:53,000 --> 00:09:56,000
+H convolved with ex and that would correspond
+
+00:09:56,000 --> 00:10:00,000
+to a system with impulse response
+
+00:10:00,000 --> 00:10:04,000
+X and input H and output then
+
+00:10:04,000 --> 00:10:07,000
+age involved with ex
+
+00:10:07,000 --> 00:10:11,000
+so the community property
+
+00:10:11,000 --> 00:10:16,000
+tells us therefore a linear time-invariant system
+
+00:10:16,000 --> 00:10:20,000
+the system output is independent
+
+00:10:20,000 --> 00:10:23,000
+all which function we call the input
+
+00:10:23,000 --> 00:10:27,000
+and which function we call the impulse response kind amazing actually
+
+00:10:27,000 --> 00:10:31,000
+we can interchange the role input and impulse response
+
+00:10:31,000 --> 00:10:35,000
+and from input or permit output point of view
+
+00:10:35,000 --> 00:10:38,000
+the output for the system doesn't care
+
+00:10:38,000 --> 00:10:43,000
+now furthermore if we combine the community property
+
+00:10:43,000 --> 00:10:48,000
+with the associative property we get another very interesting result
+
+00:10:48,000 --> 00:10:53,000
+namely that if we have two linear time-invariant systems in cascade
+
+00:10:53,000 --> 00:10:58,000
+the overall system is independent of the order in which they are cascaded
+
+00:10:58,000 --> 00:11:02,000
+and in fact in either case the Cascade can be
+
+00:11:02,000 --> 00:11:05,000
+collapsed into a single system
+
+00:11:05,000 --> 00:11:11,000
+to see this let's first consider
+
+00:11:11,000 --> 00:11:15,000
+the Cascade or two systems one with impulse response h1
+
+00:11:15,000 --> 00:11:19,000
+the other with impulse response h2 and
+
+00:11:19,000 --> 00:11:22,000
+the outputted the first system is then
+
+00:11:22,000 --> 00:11:25,000
+X convulsed with h1
+
+00:11:25,000 --> 00:11:29,000
+and then that is the input to the second system
+
+00:11:29,000 --> 00:11:33,000
+and so the output a bad is that result
+
+00:11:33,000 --> 00:11:36,000
+convolved with h2
+
+00:11:36,000 --> 00:11:40,000
+so this is the result of cascading the two
+
+00:11:40,000 --> 00:11:45,000
+and now we can use the associative property
+
+00:11:45,000 --> 00:11:49,000
+to rewrite this and as
+
+00:11:49,000 --> 00:11:52,000
+X involved with h1
+
+00:11:52,000 --> 00:11:58,000
+involved with h2 where we grew these two terms together
+
+00:11:58,000 --> 00:12:01,000
+and so using the associative property
+
+00:12:01,000 --> 00:12:05,000
+we now can collapse that into a single system
+
+00:12:05,000 --> 00:12:11,000
+with an input which is ax an impulse response which is h1 convolved with h2
+
+00:12:11,000 --> 00:12:14,000
+and the output is then ex-convict all with
+
+00:12:14,000 --> 00:12:17,000
+the result that those two can borrow
+
+00:12:17,000 --> 00:12:20,000
+next we can apply the community property
+
+00:12:20,000 --> 00:12:24,000
+and the commuter property says we could write
+
+00:12:24,000 --> 00:12:28,000
+this impulse response that way or we can write it this way
+
+00:12:28,000 --> 00:12:33,000
+and since convolutions community the resulting output will be exactly the
+
+00:12:33,000 --> 00:12:34,000
+same
+
+00:12:34,000 --> 00:12:39,000
+and so these resulting output will be exactly the same
+
+00:12:39,000 --> 00:12:44,000
+and now once again we can use the associative property
+
+00:12:44,000 --> 00:12:48,000
+to group these two terms together
+
+00:12:48,000 --> 00:12:52,000
+and X convulsed with h2
+
+00:12:52,000 --> 00:12:56,000
+corresponds to putting X first through the system h2
+
+00:12:56,000 --> 00:13:00,000
+and then an output through the system h1 and so
+
+00:13:00,000 --> 00:13:04,000
+finally applying the associative property again as I just outlined
+
+00:13:04,000 --> 00:13:08,000
+we can expand that system back into
+
+00:13:08,000 --> 00:13:12,000
+two systems in cascade with h2 first
+
+00:13:12,000 --> 00:13:17,000
+NH one second
+
+00:13:17,000 --> 00:13:22,000
+okay well that involves a certain amount love algebraic manipulation
+
+00:13:22,000 --> 00:13:26,000
+and that it's not the algebraic manipulation that's important is the
+
+00:13:26,000 --> 00:13:28,000
+result that it's important
+
+00:13:28,000 --> 00:13:31,000
+and what the result says to reiterate this if I have to
+
+00:13:31,000 --> 00:13:34,000
+linear time-invariant systems in cascade
+
+00:13:34,000 --> 00:13:39,000
+I can cascade them in any order and the result is the same
+
+00:13:39,000 --> 00:13:46,000
+now you might think well G maybe that actually applies the systems in general
+
+00:13:46,000 --> 00:13:50,000
+whether you put them this way or that way but in fact as we talked about last
+
+00:13:50,000 --> 00:13:51,000
+time
+
+00:13:51,000 --> 00:13:54,000
+and I illustrated with an example
+
+00:13:54,000 --> 00:13:58,000
+in general if the system is not linear
+
+00:13:58,000 --> 00:14:01,000
+the systems are not linear and time-invariant then
+
+00:14:01,000 --> 00:14:05,000
+the order in which they are cascaded is important to the interpretation of the
+
+00:14:05,000 --> 00:14:06,000
+overall system
+
+00:14:06,000 --> 00:14:10,000
+for example one system took the square root
+
+00:14:10,000 --> 00:14:14,000
+any other system double the input
+
+00:14:14,000 --> 00:14:18,000
+taking the square root and then doubling
+
+00:14:18,000 --> 00:14:22,000
+gives us a different answer doubling first and then taking the square root
+
+00:14:22,000 --> 00:14:26,000
+and of course one can construct much more elaborate example
+
+00:14:26,000 --> 00:14:31,000
+net so it's a property very particular to linear time-invariant systems and
+
+00:14:31,000 --> 00:14:32,000
+also
+
+00:14:32,000 --> 00:14:39,000
+one that we will exploit many many times as we go through this material
+
+00:14:40,000 --> 00:14:44,000
+the final property related to
+
+00:14:44,000 --> 00:14:47,000
+interconnection systems that I want to just indicate
+
+00:14:47,000 --> 00:14:51,000
+develops ida the distributive property
+
+00:14:51,000 --> 00:14:54,000
+and what it applies to is an interpretation
+
+00:14:54,000 --> 00:14:59,000
+%uh the interconnection of systems in parallel
+
+00:14:59,000 --> 00:15:02,000
+recall there the parallel combination
+
+00:15:02,000 --> 00:15:06,000
+systems corresponds is a indicate here
+
+00:15:06,000 --> 00:15:12,000
+to a system in which we simultaneously feed the input into
+
+00:15:12,000 --> 00:15:16,000
+h1 nh2 these representing the impulse responses
+
+00:15:16,000 --> 00:15:20,000
+and then the outputs our song and to form
+
+00:15:20,000 --> 00:15:23,000
+the overall output and
+
+00:15:23,000 --> 00:15:27,000
+using the fact their convolution distributes
+
+00:15:27,000 --> 00:15:30,000
+over addition we can rewrite yes
+
+00:15:30,000 --> 00:15:34,000
+as X involved with h1
+
+00:15:34,000 --> 00:15:37,000
+plus h2
+
+00:15:37,000 --> 00:15:41,000
+and when we do that then we can recognize this
+
+00:15:41,000 --> 00:15:45,000
+as the output the system with input acts
+
+00:15:45,000 --> 00:15:50,000
+and impulse response which is the sum of these two impulse responses
+
+00:15:50,000 --> 00:15:54,000
+so for linear time-invariant systems in parallel
+
+00:15:54,000 --> 00:15:57,000
+we can if we choose
+
+00:15:57,000 --> 00:16:01,000
+replace that interconnection by a single system
+
+00:16:01,000 --> 00:16:04,000
+whose impulse response is simply some
+
+00:16:04,000 --> 00:16:10,000
+those impulse response
+
+00:16:10,000 --> 00:16:13,000
+okay now we have this very
+
+00:16:13,000 --> 00:16:18,000
+powerful representation for linear time-invariant systems
+
+00:16:18,000 --> 00:16:23,000
+terms 0 convolution and we've seen so far in this lecture
+
+00:16:23,000 --> 00:16:27,000
+how convolution and the representation through the impulse response
+
+00:16:27,000 --> 00:16:34,000
+leads to some but important implications for system interconnections
+
+00:16:34,000 --> 00:16:39,000
+what I like to turn to now are other system properties
+
+00:16:39,000 --> 00:16:45,000
+and see how for linear time-invariant systems in particular
+
+00:16:45,000 --> 00:16:49,000
+other system properties can be Associated
+
+00:16:49,000 --> 00:16:52,000
+with particular properties or characteristics
+
+00:16:52,000 --> 00:16:56,000
+love the system impulse response and what will talk about
+
+00:16:56,000 --> 00:17:00,000
+are a variety of properties will talk about the issue memory will talk about
+
+00:17:00,000 --> 00:17:01,000
+the issue
+
+00:17:01,000 --> 00:17:04,000
+portability and will talk about the issue
+
+00:17:04,000 --> 00:17:10,000
+causality and also stability
+
+00:17:10,000 --> 00:17:14,000
+well let's begin with the issue of memory and the question
+
+00:17:14,000 --> 00:17:18,000
+now is what are the implications
+
+00:17:18,000 --> 00:17:22,000
+for the system impulse response for a linear time-invariant system remember
+
+00:17:22,000 --> 00:17:25,000
+that we're always imposing that on the system
+
+00:17:25,000 --> 00:17:29,000
+what are the implications on the impulse response if the system
+
+00:17:29,000 --> 00:17:32,000
+does or does not have memory
+
+00:17:32,000 --> 00:17:36,000
+well we can answer that by looking at
+
+00:17:36,000 --> 00:17:39,000
+the convolution property
+
+00:17:39,000 --> 00:17:46,000
+and we have here as a reminder the convolution integral
+
+00:17:46,000 --> 00:17:50,000
+which tells us how accept an hour in a chip T-minus
+
+00:17:50,000 --> 00:17:56,000
+now are combined to give us y'at
+
+00:17:56,000 --> 00:17:59,000
+and what I've illustrated above is
+
+00:17:59,000 --> 00:18:02,000
+only general kind of example
+
+00:18:02,000 --> 00:18:05,000
+here is except al here is
+
+00:18:05,000 --> 00:18:09,000
+a chip T-minus now an
+
+00:18:09,000 --> 00:18:12,000
+to compute the output at any time T
+
+00:18:12,000 --> 00:18:16,000
+we would take these two multiply them together
+
+00:18:16,000 --> 00:18:22,000
+and integrate from minus infinity the plus infinity
+
+00:18:22,000 --> 00:18:25,000
+so the question then is what can we say about
+
+00:18:25,000 --> 00:18:29,000
+H T the impulse response
+
+00:18:29,000 --> 00:18:32,000
+in order to guarantee let's say
+
+00:18:32,000 --> 00:18:37,000
+that the output depends only on the input at time t
+
+00:18:37,000 --> 00:18:40,000
+well its pretty much obvious from looking
+
+00:18:40,000 --> 00:18:43,000
+at the grabs
+
+00:18:43,000 --> 00:18:47,000
+if we only want the output to depend
+
+00:18:47,000 --> 00:18:51,000
+on XO how at Tower equals T
+
+00:18:51,000 --> 00:18:54,000
+then a chip T-minus have 0 better
+
+00:18:54,000 --> 00:18:59,000
+be non-zero only at Tower equals T
+
+00:18:59,000 --> 00:19:03,000
+and so the implication is that
+
+00:19:03,000 --> 00:19:06,000
+for the system to be memory less
+
+00:19:06,000 --> 00:19:10,000
+what we require is that HFT -10 now
+
+00:19:10,000 --> 00:19:14,000
+be 90 only at outcalls
+
+00:19:14,000 --> 00:19:17,000
+T so
+
+00:19:17,000 --> 00:19:22,000
+we want the impulse response to be 90 and only one point
+
+00:19:22,000 --> 00:19:26,000
+we wanted to contribute something after we multiply and go through an integral
+
+00:19:26,000 --> 00:19:29,000
+an effect with that says is the only thing they can be
+
+00:19:29,000 --> 00:19:33,000
+and meet all those conditions is a scale dimples
+
+00:19:33,000 --> 00:19:38,000
+so if the system is to be memoryless
+
+00:19:38,000 --> 00:19:43,000
+then that requires that the impulse response you scale them poles
+
+00:19:43,000 --> 00:19:46,000
+any other impulse response
+
+00:19:46,000 --> 00:19:49,000
+then in essence requires
+
+00:19:49,000 --> 00:19:54,000
+that the system has memory or implies that the system member
+
+00:19:54,000 --> 00:19:58,000
+so for the continuous-time case then
+
+00:19:58,000 --> 00:20:03,000
+memoryless would correspond only to the impulse response being proportional to
+
+00:20:03,000 --> 00:20:07,000
+an impulse and in the discrete-time case
+
+00:20:07,000 --> 00:20:10,000
+a similar statement in which case
+
+00:20:10,000 --> 00:20:13,000
+the output is just proportional
+
+00:20:13,000 --> 00:20:17,000
+to the input again either in the continuous-time
+
+00:20:17,000 --> 00:20:22,000
+war in the discrete-time case
+
+00:20:22,000 --> 00:20:26,000
+right now we can turn our attention to the issue
+
+00:20:26,000 --> 00:20:30,000
+love system inverter ability and
+
+00:20:30,000 --> 00:20:34,000
+room recall that what is meant by
+
+00:20:34,000 --> 00:20:37,000
+inverted bility of a system or the inverse of a system
+
+00:20:37,000 --> 00:20:41,000
+the inverse nervous system is a system which one week cascaded
+
+00:20:41,000 --> 00:20:46,000
+with the one that were requiring about the overall cascade
+
+00:20:46,000 --> 00:20:49,000
+is the identity system in other words
+
+00:20:49,000 --> 00:20:53,000
+the output is equal to the in
+
+00:20:53,000 --> 00:20:56,000
+so let's consider a system with
+
+00:20:56,000 --> 00:21:00,000
+impulse response age input is ax
+
+00:21:00,000 --> 00:21:04,000
+and let's say that the impulse response that the inverse system is a
+
+00:21:04,000 --> 00:21:07,000
+by and the output is why
+
+00:21:07,000 --> 00:21:11,000
+then the output of this system is
+
+00:21:11,000 --> 00:21:16,000
+X convolved with age convolved with a stir by
+
+00:21:16,000 --> 00:21:20,000
+and we want this to
+
+00:21:20,000 --> 00:21:24,000
+come out equal X and what that requires then
+
+00:21:24,000 --> 00:21:28,000
+is that this convolution
+
+00:21:28,000 --> 00:21:31,000
+just simply be equal to an impulse
+
+00:21:31,000 --> 00:21:35,000
+either in the discrete-time case
+
+00:21:35,000 --> 00:21:38,000
+or in the continuous-time
+
+00:21:38,000 --> 00:21:41,000
+and under those conditions then HD by
+
+00:21:41,000 --> 00:21:44,000
+is equal to the University
+
+00:21:44,000 --> 00:21:48,000
+rotationally by the way its of inconvenient
+
+00:21:48,000 --> 00:21:52,000
+to right instead of eight supply as the impulse response
+
+00:21:52,000 --> 00:21:57,000
+the embers will find it convenient of any more typical
+
+00:21:57,000 --> 00:22:01,000
+to write as the in burners instead of age to buy
+
+00:22:01,000 --> 00:22:05,000
+age to the -1
+
+00:22:05,000 --> 00:22:08,000
+and we mean by that the inverse
+
+00:22:08,000 --> 00:22:13,000
+impulse response and one has to be careful not to misinterpret this
+
+00:22:13,000 --> 00:22:16,000
+as the reciprocal have a chip to your YouTube and
+
+00:22:16,000 --> 00:22:23,000
+which meant in this notation is the inverse system
+
+00:22:24,000 --> 00:22:28,000
+now if age to buy
+
+00:22:28,000 --> 00:22:33,000
+is the inverse of age is H the inverse have a supply
+
+00:22:33,000 --> 00:22:38,000
+well it seems like that or be plausible or
+
+00:22:38,000 --> 00:22:41,000
+perhaps make sense the question if
+
+00:22:41,000 --> 00:22:44,000
+you believe that the answer is yes is howdy how in fact
+
+00:22:44,000 --> 00:22:48,000
+you verified that and
+
+00:22:48,000 --> 00:22:52,000
+I'll leave that to you think about it the answer is yes that
+
+00:22:52,000 --> 00:22:56,000
+if a surprise the inverse of age than H is the inverse a pizza by
+
+00:22:56,000 --> 00:23:00,000
+and the key to showing that is to exploit the fact
+
+00:23:00,000 --> 00:23:03,000
+that when we take the systems and Cascade them we can cascade
+
+00:23:03,000 --> 00:23:07,000
+them in your order
+
+00:23:07,000 --> 00:23:11,000
+all right now let's turn to another system property
+
+00:23:11,000 --> 00:23:15,000
+the property love stability and again
+
+00:23:15,000 --> 00:23:19,000
+we can't I that property directly
+
+00:23:19,000 --> 00:23:22,000
+to issues related
+
+00:23:22,000 --> 00:23:27,000
+in particular to the system impulse response
+
+00:23:27,000 --> 00:23:31,000
+now stability is defined as we've chosen to define it as I
+
+00:23:31,000 --> 00:23:36,000
+I by the previously as bounded input bounded out but stability in other words
+
+00:23:36,000 --> 00:23:38,000
+for every bounded input
+
+00:23:38,000 --> 00:23:41,000
+is a bounded out what you can show
+
+00:23:41,000 --> 00:23:45,000
+and I won't go through the algebra here it's
+
+00:23:45,000 --> 00:23:49,000
+going through in the book is the
+
+00:23:49,000 --> 00:23:53,000
+a necessary and sufficient condition for
+
+00:23:53,000 --> 00:23:56,000
+a linear time-invariant system to be stable
+
+00:23:56,000 --> 00:24:00,000
+it in the bounded input bounded output sense
+
+00:24:00,000 --> 00:24:03,000
+is that the
+
+00:24:03,000 --> 00:24:06,000
+impulse response be what is referred to as
+
+00:24:06,000 --> 00:24:11,000
+absolutely so mobile in other words if you take the absolute values
+
+00:24:11,000 --> 00:24:16,000
+and some over infinite limits that's fine I
+
+00:24:16,000 --> 00:24:19,000
+or in the continuous-time
+
+00:24:19,000 --> 00:24:23,000
+case that the impulse response is absolutely integral
+
+00:24:23,000 --> 00:24:27,000
+in other words if you take the absolute bad news have a chip T
+
+00:24:27,000 --> 00:24:31,000
+integrate that's fine I'd and under those conditions
+
+00:24:31,000 --> 00:24:34,000
+the system is stable if
+
+00:24:34,000 --> 00:24:38,000
+those conditions are violated then
+
+00:24:38,000 --> 00:24:41,000
+for sure as you'll see in the text the system
+
+00:24:41,000 --> 00:24:44,000
+is on stable so stability can also
+
+00:24:44,000 --> 00:24:50,000
+be tied to the system impulse response
+
+00:24:50,000 --> 00:24:53,000
+now the next property that I wanna talk about
+
+00:24:53,000 --> 00:24:56,000
+is the property of causality
+
+00:24:56,000 --> 00:24:59,000
+and before I do what I'd like to do
+
+00:24:59,000 --> 00:25:03,000
+is introduce peripheral result that will then
+
+00:25:03,000 --> 00:25:06,000
+use when we talk about causality
+
+00:25:06,000 --> 00:25:10,000
+namely what's referred to as the zero input response
+
+00:25:10,000 --> 00:25:14,000
+when your system
+
+00:25:14,000 --> 00:25:19,000
+the basic result which is a very interesting and useful one
+
+00:25:19,000 --> 00:25:22,000
+is that for a linear system and in fact
+
+00:25:22,000 --> 00:25:26,000
+it's whether it's time invariant or not this applies
+
+00:25:26,000 --> 00:25:31,000
+if you put nothing into it you get nothing out
+
+00:25:31,000 --> 00:25:34,000
+so if we have an input
+
+00:25:34,000 --> 00:25:39,000
+accept T which is zero for all T
+
+00:25:39,000 --> 00:25:43,000
+and if the output that system
+
+00:25:43,000 --> 00:25:47,000
+is y'at
+
+00:25:47,000 --> 00:25:50,000
+if the input is zero for all time
+
+00:25:50,000 --> 00:25:54,000
+then the output likewise is 0 for all time
+
+00:25:54,000 --> 00:25:57,000
+that's true for continuous-time and
+
+00:25:57,000 --> 00:26:04,000
+it's also true for discrete-time
+
+00:26:04,000 --> 00:26:07,000
+and in fact to show that result
+
+00:26:07,000 --> 00:26:14,000
+is pretty much straightforward we could do it either by using convolution which
+
+00:26:14,000 --> 00:26:18,000
+would of course be associated with many a ready in time invariance
+
+00:26:18,000 --> 00:26:22,000
+but in fact we can show their property relatively easily
+
+00:26:22,000 --> 00:26:27,000
+by simply using the fact that for a linear system
+
+00:26:27,000 --> 00:26:30,000
+what we know is that if
+
+00:26:30,000 --> 00:26:34,000
+we have an input exit T
+
+00:26:34,000 --> 00:26:37,000
+with an output y'at
+
+00:26:37,000 --> 00:26:40,000
+then if we scale the input
+
+00:26:40,000 --> 00:26:43,000
+then the output scales accordingly
+
+00:26:43,000 --> 00:26:47,000
+well we can simply shoes
+
+00:26:47,000 --> 00:26:51,000
+as the scale factor eight equal 0
+
+00:26:51,000 --> 00:26:54,000
+and if we do that it says put nothing in
+
+00:26:54,000 --> 00:26:58,000
+you get nothing out and
+
+00:26:58,000 --> 00:27:02,000
+what will see is that that has some important implications
+
+00:27:02,000 --> 00:27:05,000
+interns love causality
+
+00:27:05,000 --> 00:27:09,000
+it's important though wall or on it to stress that
+
+00:27:09,000 --> 00:27:12,000
+not every system obviously has that property did nothing
+
+00:27:12,000 --> 00:27:16,000
+you get nothing out a simple example
+
+00:27:16,000 --> 00:27:19,000
+is let's say a battery
+
+00:27:19,000 --> 00:27:24,000
+let's say not connected to anything the output is six bolts no matter what the
+
+00:27:24,000 --> 00:27:25,000
+input is
+
+00:27:25,000 --> 00:27:28,000
+and it of course then doesn't have this
+
+00:27:28,000 --> 00:27:32,000
+0 response to zero input very particular
+
+00:27:32,000 --> 00:27:36,000
+the linear systems or I will now
+
+00:27:36,000 --> 00:27:41,000
+let's see what this means for causality
+
+00:27:41,000 --> 00:27:44,000
+to remind you causality says in effect
+
+00:27:44,000 --> 00:27:47,000
+that the system can't anticipate the input that's what
+
+00:27:47,000 --> 00:27:51,000
+basically causality means when we
+
+00:27:51,000 --> 00:27:55,000
+talked about it previously we defined it in a variety of ways
+
+00:27:55,000 --> 00:27:58,000
+one of which was the statement that
+
+00:27:58,000 --> 00:28:03,000
+if two inputs are identical up until sometime
+
+00:28:03,000 --> 00:28:08,000
+than the outputs must be identical up until the same time
+
+00:28:08,000 --> 00:28:11,000
+the reason kinda to Italy is that
+
+00:28:11,000 --> 00:28:15,000
+if the system is causal so it can anticipate the future
+
+00:28:15,000 --> 00:28:19,000
+can anticipate whether these two identical imports are
+
+00:28:19,000 --> 00:28:22,000
+sometime later going to change from each other
+
+00:28:22,000 --> 00:28:25,000
+or not
+
+00:28:25,000 --> 00:28:30,000
+so causality in general is simply this statement
+
+00:28:30,000 --> 00:28:34,000
+either continuous-time and discrete-time
+
+00:28:34,000 --> 00:28:37,000
+and now let's look at what that means
+
+00:28:37,000 --> 00:28:41,000
+for a linear system for a linear system
+
+00:28:41,000 --> 00:28:45,000
+what that corresponds to or can be translated to
+
+00:28:45,000 --> 00:28:49,000
+is a statement it says that
+
+00:28:49,000 --> 00:28:53,000
+if x50 is 0 party less than $30,000
+
+00:28:53,000 --> 00:28:57,000
+then y'at is the must be zero
+
+00:28:57,000 --> 00:29:00,000
+party less than $30,000 also
+
+00:29:00,000 --> 00:29:04,000
+and so what that in effect
+
+00:29:04,000 --> 00:29:07,000
+says is that the system
+
+00:29:07,000 --> 00:29:12,000
+for a linear system to be causal
+
+00:29:12,000 --> 00:29:15,000
+in mice have the property sometimes referred to
+
+00:29:15,000 --> 00:29:19,000
+as initial rest meaning
+
+00:29:19,000 --> 00:29:23,000
+it doesn't respond until there's some input that happen
+
+00:29:23,000 --> 00:29:27,000
+that it initially at rest until the input becomes
+
+00:29:27,000 --> 00:29:31,000
+90 now why is this true why
+
+00:29:31,000 --> 00:29:35,000
+is this a consequence of causality for
+
+00:29:35,000 --> 00:29:39,000
+Lee year systems well the reason is
+
+00:29:39,000 --> 00:29:43,000
+we know that if we put nothing in we get nothing out
+
+00:29:43,000 --> 00:29:47,000
+if we have an input that 0 perty less than t0
+
+00:29:47,000 --> 00:29:53,000
+and the system can't anticipate whether that input is going to change from zero
+
+00:29:53,000 --> 00:29:57,000
+or not then yes it must also the system must generate
+
+00:29:57,000 --> 00:30:02,000
+and output that 0 up until that time
+
+00:30:02,000 --> 00:30:06,000
+following the principle that if two inputs are identical up until sometime
+
+00:30:06,000 --> 00:30:10,000
+the outputs must be identical up same time
+
+00:30:10,000 --> 00:30:14,000
+so this basic result
+
+00:30:14,000 --> 00:30:18,000
+for when here systems is essentially
+
+00:30:18,000 --> 00:30:22,000
+a consequence all the statement there
+
+00:30:22,000 --> 00:30:25,000
+for a linear system 0n
+
+00:30:25,000 --> 00:30:32,000
+gives us 0 out
+
+00:30:33,000 --> 00:30:37,000
+now bad tells us
+
+00:30:37,000 --> 00:30:41,000
+how to interpret or hi I don't tupac was ality
+
+00:30:41,000 --> 00:30:46,000
+for linear systems now let's proceed to linear time-invariant systems
+
+00:30:46,000 --> 00:30:50,000
+and in fact we can carry the point one step further
+
+00:30:50,000 --> 00:30:55,000
+in particular necessary and sufficient condition
+
+00:30:55,000 --> 00:30:59,000
+for causality in the case linear time-invariant systems
+
+00:30:59,000 --> 00:31:03,000
+is there the impulse response
+
+00:31:03,000 --> 00:31:07,000
+be 0 party less than zero
+
+00:31:07,000 --> 00:31:11,000
+in the continuous-time case or
+
+00:31:11,000 --> 00:31:14,000
+for and less than zero in the discrete-time case
+
+00:31:14,000 --> 00:31:18,000
+so for linear time-invariant systems causality
+
+00:31:18,000 --> 00:31:22,000
+is equivalent to the impulse response
+
+00:31:22,000 --> 00:31:27,000
+being 0 up until to your and equal to 0
+
+00:31:27,000 --> 00:31:31,000
+now to show this it essentially follows
+
+00:31:31,000 --> 00:31:35,000
+by first considering
+
+00:31:35,000 --> 00:31:38,000
+why causality
+
+00:31:38,000 --> 00:31:42,000
+would imply that this is true
+
+00:31:42,000 --> 00:31:46,000
+and that follows because if the straightforward fact
+
+00:31:46,000 --> 00:31:53,000
+that the impulse itself is 0 perty less than zero
+
+00:31:53,000 --> 00:31:57,000
+and what we saw is there before is that
+
+00:31:57,000 --> 00:32:01,000
+for any linear system causality requires that if the input is your office or
+
+00:32:01,000 --> 00:32:02,000
+sometime
+
+00:32:02,000 --> 00:32:06,000
+the output must be zero up until the same time
+
+00:32:06,000 --> 00:32:09,000
+and so thats showing
+
+00:32:09,000 --> 00:32:13,000
+the result in one direction to show the result
+
+00:32:13,000 --> 00:32:17,000
+in the other direction namely to show you that
+
+00:32:17,000 --> 00:32:20,000
+yeah in fact the impulse response
+
+00:32:20,000 --> 00:32:23,000
+satisfied that condition then the system is causal
+
+00:32:23,000 --> 00:32:26,000
+while I won't work through it in detail
+
+00:32:26,000 --> 00:32:30,000
+it essentially boils down to recognizing
+
+00:32:30,000 --> 00:32:35,000
+that in the convolutions some
+
+00:32:35,000 --> 00:32:39,000
+or in the convolution integral
+
+00:32:39,000 --> 00:32:45,000
+if in fact that condition is satisfied on the impulse response
+
+00:32:45,000 --> 00:32:48,000
+then the upper limit on the song the discrete-time
+
+00:32:48,000 --> 00:32:52,000
+case changes an and in the continuous-time
+
+00:32:52,000 --> 00:32:55,000
+case changes to see and that in effect
+
+00:32:55,000 --> 00:32:59,000
+says that bad news or
+
+00:32:59,000 --> 00:33:03,000
+the input only from minus unity up the time n
+
+00:33:03,000 --> 00:33:07,000
+are used in computing y van and a similar kind of result
+
+00:33:07,000 --> 00:33:11,000
+for the continuous-time case why
+
+00:33:11,000 --> 00:33:15,000
+T
+
+00:33:15,000 --> 00:33:19,000
+okay so we've seen how the impulse response
+
+00:33:19,000 --> 00:33:23,000
+or rather how certain system properties in the linear time-invariant
+
+00:33:23,000 --> 00:33:26,000
+case can be converted into
+
+00:33:26,000 --> 00:33:30,000
+various requirements on the imports responsible when your time
+
+00:33:30,000 --> 00:33:35,000
+very insist on the impulse response being complete characterization
+
+00:33:35,000 --> 00:33:38,000
+let's looked at some particular examples just
+
+00:33:38,000 --> 00:33:42,000
+to and a cement the ideas further
+
+00:33:42,000 --> 00:33:46,000
+and let's begin with a system that you've seen previously which is
+
+00:33:46,000 --> 00:33:50,000
+accumulator accumulator as you recall
+
+00:33:50,000 --> 00:33:53,000
+has an output why I have an
+
+00:33:53,000 --> 00:33:57,000
+which is the accumulated value
+
+00:33:57,000 --> 00:34:03,000
+up the input from minus infinity up to n
+
+00:34:03,000 --> 00:34:06,000
+now you've seen in the impose in in
+
+00:34:06,000 --> 00:34:10,000
+a previous lecture or rather in the video course manual for previous
+
+00:34:10,000 --> 00:34:15,000
+lecture that an accumulator is a linear time-invariant system
+
+00:34:15,000 --> 00:34:19,000
+and in fact it's impossible sponsor is the accumulated
+
+00:34:19,000 --> 00:34:23,000
+bad news opinion polls namely the impulse response
+
+00:34:23,000 --> 00:34:27,000
+is equal to a step
+
+00:34:27,000 --> 00:34:31,000
+so what we want to answer is
+
+00:34:31,000 --> 00:34:35,000
+what knowing what that impulse responses what
+
+00:34:35,000 --> 00:34:38,000
+some properties are the accumulator
+
+00:34:38,000 --> 00:34:41,000
+and let's first ask about memory
+
+00:34:41,000 --> 00:34:45,000
+well we recognize that the impulse response
+
+00:34:45,000 --> 00:34:48,000
+is not simply an impulse in fact it's a step
+
+00:34:48,000 --> 00:34:52,000
+and so this implies what well
+
+00:34:52,000 --> 00:34:55,000
+it implies that the system has
+
+00:34:55,000 --> 00:35:00,000
+memory
+
+00:35:00,000 --> 00:35:03,000
+second the impulse response
+
+00:35:03,000 --> 00:35:06,000
+is zero more and less than zero
+
+00:35:06,000 --> 00:35:10,000
+that implies that the system is
+
+00:35:10,000 --> 00:35:15,000
+causal
+
+00:35:15,000 --> 00:35:18,000
+and finally if we look at
+
+00:35:18,000 --> 00:35:24,000
+the some the absolute values at the impulse response from minus infinity
+
+00:35:24,000 --> 00:35:25,000
+plus infinity
+
+00:35:25,000 --> 00:35:30,000
+this is a step we accumulate those values over infinite limits
+
+00:35:30,000 --> 00:35:35,000
+then at in fact comes out to be infinite
+
+00:35:35,000 --> 00:35:39,000
+and so what that implies then is that
+
+00:35:39,000 --> 00:35:42,000
+the accumulator is not stable in
+
+00:35:42,000 --> 00:35:48,000
+the bounded input found that out what sets
+
+00:35:48,000 --> 00:35:52,000
+now I want to turn to some other systems but while we're on the accumulator I
+
+00:35:52,000 --> 00:35:54,000
+just want to draw your attention to the fact
+
+00:35:54,000 --> 00:35:58,000
+which will kinda come up in a variety of ways again later
+
+00:35:58,000 --> 00:36:04,000
+that we can rewrite the equation for an accumulator the difference equation
+
+00:36:04,000 --> 00:36:07,000
+by recognizing that we could in fact
+
+00:36:07,000 --> 00:36:11,000
+write the output as the accumulated values
+
+00:36:11,000 --> 00:36:17,000
+up the time n -1 and then and on the last value
+
+00:36:17,000 --> 00:36:21,000
+and in fact if we do that this corresponds to why
+
+00:36:21,000 --> 00:36:24,000
+van -1 and so
+
+00:36:24,000 --> 00:36:28,000
+we could rewrite this difference equation as why I have an
+
+00:36:28,000 --> 00:36:31,000
+is why event -1 a sexy
+
+00:36:31,000 --> 00:36:34,000
+so the output is the previously computed output
+
+00:36:34,000 --> 00:36:38,000
+plus the input expressed that way
+
+00:36:38,000 --> 00:36:42,000
+what that corresponds to is what is
+
+00:36:42,000 --> 00:36:46,000
+collar workers a difference equation and difference equations will be a topic
+
+00:36:46,000 --> 00:36:51,000
+I'll considerable emphasis in the next lecture
+
+00:36:51,000 --> 00:36:54,000
+now does an accumulator have an inverse well
+
+00:36:54,000 --> 00:36:58,000
+the answer is in fact yes and let's look at what
+
+00:36:58,000 --> 00:37:02,000
+the inverse that the accumulator is
+
+00:37:02,000 --> 00:37:06,000
+the impulse response the accumulator is a step
+
+00:37:06,000 --> 00:37:09,000
+to inquire about its inverse in we inquire
+
+00:37:09,000 --> 00:37:14,000
+about whether there's a system which one we cascade
+
+00:37:14,000 --> 00:37:19,000
+the accumulator with that system which i'm calling its in burrs
+
+00:37:19,000 --> 00:37:22,000
+we get an impulse out
+
+00:37:22,000 --> 00:37:25,000
+well let's see the impulse response
+
+00:37:25,000 --> 00:37:29,000
+the accumulators staff we want to put the step into something
+
+00:37:29,000 --> 00:37:33,000
+and get out in polls and in fact
+
+00:37:33,000 --> 00:37:36,000
+what you recall from the
+
+00:37:36,000 --> 00:37:39,000
+lecture in which we introduce steps and impulses
+
+00:37:39,000 --> 00:37:44,000
+the impulse is in fact the first difference of the units that
+
+00:37:44,000 --> 00:37:47,000
+so we have a difference equation
+
+00:37:47,000 --> 00:37:51,000
+that describes 4s how the impulse
+
+00:37:51,000 --> 00:37:55,000
+is related to the step and so
+
+00:37:55,000 --> 00:37:59,000
+if this system does this the output will be
+
+00:37:59,000 --> 00:38:03,000
+that an impulse and so if we think
+
+00:38:03,000 --> 00:38:06,000
+or x2 a van
+
+00:38:06,000 --> 00:38:10,000
+and as the input and y2 event is the output
+
+00:38:10,000 --> 00:38:14,000
+then difference equation for
+
+00:38:14,000 --> 00:38:18,000
+the inverse system is what i've indicated here
+
+00:38:18,000 --> 00:38:21,000
+and if we want to look at the impulse response to that
+
+00:38:21,000 --> 00:38:26,000
+we can then inquire as to what the responses with an impulse in
+
+00:38:26,000 --> 00:38:30,000
+and white develops in a straightforward way
+
+00:38:30,000 --> 00:38:34,000
+and is Delta van which is are important point
+
+00:38:34,000 --> 00:38:37,000
+minus Delta again -1
+
+00:38:37,000 --> 00:38:40,000
+is equal to the impulse response
+
+00:38:40,000 --> 00:38:43,000
+in burrs system so alright that
+
+00:38:43,000 --> 00:38:47,000
+as age in person
+
+00:38:47,000 --> 00:38:50,000
+now we have been that the accumulator
+
+00:38:50,000 --> 00:38:54,000
+as it infers and this is the embers
+
+00:38:54,000 --> 00:38:59,000
+and you can examine issues a memory stability causality et cetera
+
+00:38:59,000 --> 00:39:04,000
+what you find is that the system has memory
+
+00:39:04,000 --> 00:39:07,000
+the University later it's stable
+
+00:39:07,000 --> 00:39:11,000
+and its causal and it's interesting to note by the way
+
+00:39:11,000 --> 00:39:15,000
+that although the accumulator with an unstable system
+
+00:39:15,000 --> 00:39:19,000
+the embers are the king later is a stable system
+
+00:39:19,000 --> 00:39:23,000
+in general if a system is stable its inverse
+
+00:39:23,000 --> 00:39:26,000
+does not have to be stable or vice versa
+
+00:39:26,000 --> 00:39:32,000
+and the same thing with causality
+
+00:39:32,000 --> 00:39:36,000
+okay now there are
+
+00:39:36,000 --> 00:39:40,000
+a number of other examples which course we could discuss
+
+00:39:40,000 --> 00:39:45,000
+and let me just quickly point to
+
+00:39:45,000 --> 00:39:48,000
+in one example which is a difference equation as i've indicated
+
+00:39:48,000 --> 00:39:54,000
+here and as will talk about it more detail
+
+00:39:54,000 --> 00:39:58,000
+in our next lecture will will
+
+00:39:58,000 --> 00:40:01,000
+get involved in a fairly detailed discussion linear cut coefficient
+
+00:40:01,000 --> 00:40:02,000
+difference
+
+00:40:02,000 --> 00:40:06,000
+and differential equations this falls into that category
+
+00:40:06,000 --> 00:40:09,000
+and under the imposition
+
+00:40:09,000 --> 00:40:12,000
+what's referred to as initial rest
+
+00:40:12,000 --> 00:40:17,000
+which corresponds to response being 0
+
+00:40:17,000 --> 00:40:20,000
+up until the time that the input becomes non-zero
+
+00:40:20,000 --> 00:40:23,000
+the impulse response is a to the N
+
+00:40:23,000 --> 00:40:27,000
+times you have an and something that
+
+00:40:27,000 --> 00:40:31,000
+you'll be asked to think about in the video course manual
+
+00:40:31,000 --> 00:40:34,000
+is whether that system has memory whether its causal
+
+00:40:34,000 --> 00:40:38,000
+and whether it's stable and likewise
+
+00:40:38,000 --> 00:40:41,000
+for a linear constant coefficient
+
+00:40:41,000 --> 00:40:45,000
+differential equation the specific one
+
+00:40:45,000 --> 00:40:48,000
+that I've indicated here under
+
+00:40:48,000 --> 00:40:51,000
+the assumption of initial rest the impulse response
+
+00:40:51,000 --> 00:40:54,000
+is into the minus two tee times you the
+
+00:40:54,000 --> 00:40:58,000
+and in the video course manual again you'll be asked
+
+00:40:58,000 --> 00:41:01,000
+to examined whether the system has memory
+
+00:41:01,000 --> 00:41:06,000
+whether its causal and whether it's stable
+
+00:41:06,000 --> 00:41:10,000
+okay well as i've indicated in the next lecture will
+
+00:41:10,000 --> 00:41:14,000
+return to much more detailed discussion when your constant coefficient
+
+00:41:14,000 --> 00:41:15,000
+differential and difference
+
+00:41:15,000 --> 00:41:20,000
+equations now what I'd like to finally
+
+00:41:20,000 --> 00:41:25,000
+doing this lecture is use the notion of convolution in a much different way
+
+00:41:25,000 --> 00:41:30,000
+to help us with a problem that I alluded to earlier
+
+00:41:30,000 --> 00:41:34,000
+in particular the issue love how to deal with some other mathematical
+
+00:41:34,000 --> 00:41:36,000
+difficulties associated
+
+00:41:36,000 --> 00:41:39,000
+with impulses and steps
+
+00:41:39,000 --> 00:41:42,000
+now let me begin by illustrating
+
+00:41:42,000 --> 00:41:46,000
+kinda what the problem is and the
+
+00:41:46,000 --> 00:41:50,000
+an example of the kinda paradox that sore right to
+
+00:41:50,000 --> 00:41:53,000
+when dealing with impose functions and step
+
+00:41:53,000 --> 00:41:57,000
+options
+
+00:41:57,000 --> 00:42:00,000
+let's consider first the ball a system
+
+00:42:00,000 --> 00:42:04,000
+which is the identity system and so the output is
+
+00:42:04,000 --> 00:42:08,000
+course equal to the input and
+
+00:42:08,000 --> 00:42:14,000
+again we can talk about that either in continuous-time and discrete-time
+
+00:42:14,000 --> 00:42:18,000
+well we know that the function that you
+
+00:42:18,000 --> 00:42:22,000
+convolved with a signal to retain a signal
+
+00:42:22,000 --> 00:42:26,000
+is an impulse and so that means that the impulse response
+
+00:42:26,000 --> 00:42:32,000
+love and identity system is an impulse makes logical sense
+
+00:42:32,000 --> 00:42:37,000
+furthermore if I take to identity systems and Cascade them
+
+00:42:37,000 --> 00:42:41,000
+I put in an input get the same thing and the first system that goes into the
+
+00:42:41,000 --> 00:42:44,000
+second system get the same thing at the second
+
+00:42:44,000 --> 00:42:47,000
+in other words if I have to
+
+00:42:47,000 --> 00:42:51,000
+identity systems in cascade
+
+00:42:51,000 --> 00:42:55,000
+the cascade likewise is an identity system
+
+00:42:55,000 --> 00:42:59,000
+in other words this overall system is
+
+00:42:59,000 --> 00:43:03,000
+also and identity system
+
+00:43:03,000 --> 00:43:07,000
+and the implication there is that the impulse response
+
+00:43:07,000 --> 00:43:11,000
+up this is an impulse the impulse response if this is an impulse
+
+00:43:11,000 --> 00:43:16,000
+and the convolution of those two is also an impulse
+
+00:43:16,000 --> 00:43:21,000
+so for continuous time we require than that
+
+00:43:21,000 --> 00:43:24,000
+interpose convolved with itself was an impulse
+
+00:43:24,000 --> 00:43:28,000
+and the same thing for discrete-time
+
+00:43:28,000 --> 00:43:31,000
+now in discrete-time
+
+00:43:31,000 --> 00:43:35,000
+we don't have any particular problem with that if you think about convolved
+
+00:43:35,000 --> 00:43:36,000
+in these together
+
+00:43:36,000 --> 00:43:40,000
+it's a straightforward mathematical operation
+
+00:43:40,000 --> 00:43:43,000
+since the impulse in continue in discrete-time
+
+00:43:43,000 --> 00:43:47,000
+is very nicely defined
+
+00:43:47,000 --> 00:43:51,000
+however in continuous-time we have to be somewhat careful
+
+00:43:51,000 --> 00:43:54,000
+about the definition at the impulse because
+
+00:43:54,000 --> 00:43:57,000
+it was the derivative a step-by-step has a discontinuity
+
+00:43:57,000 --> 00:44:01,000
+you can't really differentiate at a discontinuity
+
+00:44:01,000 --> 00:44:04,000
+in the way that we dealt with that was
+
+00:44:04,000 --> 00:44:07,000
+to expand out the discontinuity so that
+
+00:44:07,000 --> 00:44:11,000
+it had some finite time region in which it happen
+
+00:44:11,000 --> 00:44:15,000
+when we did that we ended up with a definition for the impulse
+
+00:44:15,000 --> 00:44:19,000
+which was the limiting or up this function
+
+00:44:19,000 --> 00:44:22,000
+which is a rectangle with Delta
+
+00:44:22,000 --> 00:44:27,000
+and height one over Delta and an area equal to 1
+
+00:44:27,000 --> 00:44:31,000
+now if we think I'll convolved being
+
+00:44:31,000 --> 00:44:34,000
+this signal with itself the impose being a limiting
+
+00:44:34,000 --> 00:44:38,000
+former this then the convolution
+
+00:44:38,000 --> 00:44:42,000
+up this with itself is a triangle
+
+00:44:42,000 --> 00:44:45,000
+with to Delta height1 over Delta
+
+00:44:45,000 --> 00:44:48,000
+in area 1 in other words
+
+00:44:48,000 --> 00:44:51,000
+this triangular function is this
+
+00:44:51,000 --> 00:44:54,000
+approximation delta sig Delta T
+
+00:44:54,000 --> 00:44:59,000
+can't fault with dealt this adult T
+
+00:44:59,000 --> 00:45:02,000
+and since this would then
+
+00:45:02,000 --> 00:45:07,000
+the limited this would correspond to the impulse response
+
+00:45:07,000 --> 00:45:10,000
+all the identity system
+
+00:45:10,000 --> 00:45:14,000
+convolved with itself the implication is
+
+00:45:14,000 --> 00:45:17,000
+that not only should the top
+
+00:45:17,000 --> 00:45:21,000
+function this one
+
+00:45:21,000 --> 00:45:24,000
+correspond in its limiting form to an impulse
+
+00:45:24,000 --> 00:45:28,000
+but also this should correspond it is limiting
+
+00:45:28,000 --> 00:45:33,000
+form to an impulse so one could wonder well what is an impulse is it
+
+00:45:33,000 --> 00:45:39,000
+this one in the limit or is that this one in the limit
+
+00:45:39,000 --> 00:45:42,000
+now beyond that there
+
+00:45:42,000 --> 00:45:46,000
+so kinda what this suggests is that in the limiting
+
+00:45:46,000 --> 00:45:49,000
+for me kinda run into a contradiction unless you don't
+
+00:45:49,000 --> 00:45:53,000
+try to distinguish between this rectangle in the Triangle
+
+00:45:53,000 --> 00:45:56,000
+things get even worse when you think about
+
+00:45:56,000 --> 00:45:59,000
+what happens when you put an impulse into a differentiator in a
+
+00:45:59,000 --> 00:46:03,000
+differentiator is a very commonly occurring system
+
+00:46:03,000 --> 00:46:06,000
+in particular suppose we had a system for which
+
+00:46:06,000 --> 00:46:11,000
+the output was the derivative of the input
+
+00:46:11,000 --> 00:46:14,000
+so if we put in extra T we got out the exit
+
+00:46:14,000 --> 00:46:21,000
+the DT if I put in an impulse or if I talked about the impulse response what
+
+00:46:21,000 --> 00:46:23,000
+is that
+
+00:46:23,000 --> 00:46:26,000
+and of course the problem is that if
+
+00:46:26,000 --> 00:46:30,000
+you think that the impossible self is very badly behaved
+
+00:46:30,000 --> 00:46:34,000
+then what about its derivative which is not only
+
+00:46:34,000 --> 00:46:38,000
+infinitely big but there's a positive going on in negative going one in the
+
+00:46:38,000 --> 00:46:40,000
+difference between a handsome area
+
+00:46:40,000 --> 00:46:45,000
+and you your end up in a lot of difficult
+
+00:46:45,000 --> 00:46:50,000
+well the way around this formally is through
+
+00:46:50,000 --> 00:46:56,000
+a set of mathematics refer to as generalized functions
+
+00:46:56,000 --> 00:47:00,000
+we won't be quite that formal but I'd like to at least
+
+00:47:00,000 --> 00:47:03,000
+suggest with the essence that formality is and it really
+
+00:47:03,000 --> 00:47:09,000
+helps us in interpreting the impulses and steps and functions at that time
+
+00:47:09,000 --> 00:47:13,000
+and what it is is operational definition
+
+00:47:13,000 --> 00:47:16,000
+love steps impulses and their derivatives
+
+00:47:16,000 --> 00:47:20,000
+in the following sense: usually when we talk about a function
+
+00:47:20,000 --> 00:47:24,000
+we talk about what the bag with the function is at any instant of time
+
+00:47:24,000 --> 00:47:28,000
+course the trouble with an impulse is it's infinitely bigan 0 within has some
+
+00:47:28,000 --> 00:47:31,000
+areas center
+
+00:47:31,000 --> 00:47:34,000
+well we can turn to is what is referred to as
+
+00:47:34,000 --> 00:47:37,000
+and operational definition where
+
+00:47:37,000 --> 00:47:41,000
+the operational definition
+
+00:47:41,000 --> 00:47:44,000
+is related not to what the impulses
+
+00:47:44,000 --> 00:47:47,000
+but to what the impulse does under
+
+00:47:47,000 --> 00:47:51,000
+the operation convolution so
+
+00:47:51,000 --> 00:47:54,000
+what is an impulse and impose is
+
+00:47:54,000 --> 00:47:59,000
+something which under convolution retains the function
+
+00:47:59,000 --> 00:48:04,000
+and net then conserve as a definition of the imports
+
+00:48:04,000 --> 00:48:08,000
+well let's see where that gets us suppose that we now
+
+00:48:08,000 --> 00:48:13,000
+want to talk about the derivative up the in polls
+
+00:48:13,000 --> 00:48:16,000
+well what we ask about is
+
+00:48:16,000 --> 00:48:21,000
+what it is operationally and so if we have a system
+
+00:48:21,000 --> 00:48:25,000
+which is a differentiator an
+
+00:48:25,000 --> 00:48:29,000
+we inquire about it's impossible response which let's say we define
+
+00:48:29,000 --> 00:48:32,000
+rotationally as you serve 180
+
+00:48:32,000 --> 00:48:36,000
+what's important about this function you serve one ft
+
+00:48:36,000 --> 00:48:40,000
+is not what it is at each value time
+
+00:48:40,000 --> 00:48:43,000
+but what it does under convolution
+
+00:48:43,000 --> 00:48:47,000
+what is it doing a convolution well the
+
+00:48:47,000 --> 00:48:50,000
+output the differentiator is the convolution
+
+00:48:50,000 --> 00:48:55,000
+up the input with the impulse response and so what you serve 180 does on the
+
+00:48:55,000 --> 00:48:56,000
+convolution
+
+00:48:56,000 --> 00:48:59,000
+is to differentiate
+
+00:48:59,000 --> 00:49:03,000
+and Nat is the operational definition
+
+00:49:03,000 --> 00:49:07,000
+and now of course we can think extending net
+
+00:49:07,000 --> 00:49:11,000
+not only would we want to think about differentiating
+
+00:49:11,000 --> 00:49:15,000
+an impulse but we would also what about
+
+00:49:15,000 --> 00:49:18,000
+want to think about differentiating the derivative opinion polls
+
+00:49:18,000 --> 00:49:23,000
+will define that as a function use up to eighty
+
+00:49:23,000 --> 00:49:26,000
+use up to 50 because we have
+
+00:49:26,000 --> 00:49:30,000
+this impulse response convolved with this one is you wanna T convolved you
+
+00:49:30,000 --> 00:49:31,000
+wanna T
+
+00:49:31,000 --> 00:49:34,000
+and what is you 280
+
+00:49:34,000 --> 00:49:38,000
+operationally it is
+
+00:49:38,000 --> 00:49:41,000
+the operation such that when you can ball
+
+00:49:41,000 --> 00:49:44,000
+that with except he what you get
+
+00:49:44,000 --> 00:49:48,000
+is the second derivative
+
+00:49:48,000 --> 00:49:51,000
+okay now we can carry this further and in fact
+
+00:49:51,000 --> 00:49:55,000
+talk about the result I'll involving
+
+00:49:55,000 --> 00:49:58,000
+you wanna TE with itself
+
+00:49:58,000 --> 00:50:01,000
+more times in fact if we think that the convolution
+
+00:50:01,000 --> 00:50:06,000
+or you want it T with it so k times
+
+00:50:06,000 --> 00:50:11,000
+then logically we define that as use a Kft
+
+00:50:11,000 --> 00:50:14,000
+again we would interpret that operationally
+
+00:50:14,000 --> 00:50:17,000
+and the operational definition is through
+
+00:50:17,000 --> 00:50:23,000
+convolution where this corresponds to
+
+00:50:23,000 --> 00:50:26,000
+use a cave T in the impulse response
+
+00:50:26,000 --> 00:50:29,000
+love k differentiators in cascade
+
+00:50:29,000 --> 00:50:33,000
+so what is the operational definition well it simply
+
+00:50:33,000 --> 00:50:38,000
+that except the convolved with you sir kute
+
+00:50:38,000 --> 00:50:42,000
+is the K derivative
+
+00:50:42,000 --> 00:50:45,000
+accept T and
+
+00:50:45,000 --> 00:50:50,000
+this now gives us a set 0 what are referred to as singularity functions
+
+00:50:50,000 --> 00:50:51,000
+very well
+
+00:50:51,000 --> 00:50:55,000
+badly behaved mathematically in a sense but
+
+00:50:55,000 --> 00:51:00,000
+as we've seen reasonably well defined under an operational definition
+
+00:51:00,000 --> 00:51:04,000
+the cake was 0 incidently that's the same as
+
+00:51:04,000 --> 00:51:09,000
+what we have referred to previously as the impulse so
+
+00:51:09,000 --> 00:51:13,000
+cake 0 that's just dealt T
+
+00:51:13,000 --> 00:51:18,000
+now to be completely can also go the other way and talk about
+
+00:51:18,000 --> 00:51:21,000
+the impulse response a string 'em integrators instead of a string it
+
+00:51:21,000 --> 00:51:23,000
+differentiators
+
+00:51:23,000 --> 00:51:27,000
+course the impulse response a single integrator is a unit step
+
+00:51:27,000 --> 00:51:30,000
+to integrators together is the integral the units that
+
+00:51:30,000 --> 00:51:34,000
+et cetera an that
+
+00:51:34,000 --> 00:51:37,000
+likewise corresponds to
+
+00:51:37,000 --> 00:51:40,000
+a Sat Nav what are called singularity functions
+
+00:51:40,000 --> 00:51:43,000
+in particular if I take string or
+
+00:51:43,000 --> 00:51:48,000
+am integrators in cascade
+
+00:51:48,000 --> 00:51:51,000
+then the impulse response that is
+
+00:51:51,000 --> 00:51:56,000
+denoted as use up minus MFT
+
+00:51:56,000 --> 00:52:00,000
+and for example with a single in a greater use up minus 150
+
+00:52:00,000 --> 00:52:04,000
+corresponds to are unit step
+
+00:52:04,000 --> 00:52:08,000
+as we've talked about previously use a -2 ft
+
+00:52:08,000 --> 00:52:12,000
+our spines to unit ramp
+
+00:52:12,000 --> 00:52:18,000
+et cetera and there is in fact a reason for choosing negative values have the
+
+00:52:18,000 --> 00:52:20,000
+argument
+
+00:52:20,000 --> 00:52:24,000
+when going in one direction here integration as compared with positive
+
+00:52:24,000 --> 00:52:26,000
+values the argument we going
+
+00:52:26,000 --> 00:52:29,000
+in the other direction namely differentiation
+
+00:52:29,000 --> 00:52:34,000
+in in particular we know bad
+
+00:52:34,000 --> 00:52:38,000
+with uses my sms to the
+
+00:52:38,000 --> 00:52:41,000
+the operational definition is the AM
+
+00:52:41,000 --> 00:52:45,000
+running into kroll and
+
+00:52:45,000 --> 00:52:48,000
+like why is use a Kft
+
+00:52:48,000 --> 00:52:53,000
+so with a positive subscript has an operational definition
+
+00:52:53,000 --> 00:52:56,000
+which is the derivative so
+
+00:52:56,000 --> 00:53:01,000
+if the Cape derivative exit T
+
+00:53:01,000 --> 00:53:04,000
+and in partly as a consequence if that
+
+00:53:04,000 --> 00:53:07,000
+if we take use it Kft
+
+00:53:07,000 --> 00:53:11,000
+and convolved it with use ability the result
+
+00:53:11,000 --> 00:53:16,000
+is this the singularity function with the subscript which is the sum
+
+00:53:16,000 --> 00:53:19,000
+K&L and that holds whether
+
+00:53:19,000 --> 00:53:23,000
+this is positive values that the subscript or negative values at the
+
+00:53:23,000 --> 00:53:24,000
+subscript
+
+00:53:24,000 --> 00:53:28,000
+so just to summarize this last discussion
+
+00:53:28,000 --> 00:53:31,000
+we've used an operational definition to
+
+00:53:31,000 --> 00:53:35,000
+talk about derivatives love impulses
+
+00:53:35,000 --> 00:53:38,000
+and integrals impulses this led
+
+00:53:38,000 --> 00:53:42,000
+to said a singularity functions work all singularity functions of which
+
+00:53:42,000 --> 00:53:46,000
+the impulse in the stepper two examples by
+
+00:53:46,000 --> 00:53:49,000
+using an operational definition through convolution
+
+00:53:49,000 --> 00:53:53,000
+allows us to to find
+
+00:53:53,000 --> 00:53:57,000
+at least an operational sense these functions that otherwise a very badly
+
+00:53:57,000 --> 00:54:01,000
+a
+
+00:54:01,000 --> 00:54:05,000
+okay now in in this lecture in
+
+00:54:05,000 --> 00:54:09,000
+previous lectures for the most part our discussion has
+
+00:54:09,000 --> 00:54:13,000
+been about linear time-invariant systems
+
+00:54:13,000 --> 00:54:16,000
+fairly general terms and we've seen a variety
+
+00:54:16,000 --> 00:54:20,000
+properties representation through convolution
+
+00:54:20,000 --> 00:54:25,000
+and properties as they can be associated with the impulse response
+
+00:54:25,000 --> 00:54:30,000
+next lecture will turn our attention to a very important
+
+00:54:30,000 --> 00:54:35,000
+subclass those systems namely systems that are described below beilin your
+
+00:54:35,000 --> 00:54:37,000
+constant coefficient
+
+00:54:37,000 --> 00:54:40,000
+difference equations in the discrete-time case and when your car is
+
+00:54:40,000 --> 00:54:42,000
+the coefficient
+
+00:54:42,000 --> 00:54:45,000
+differential equations in the continuous-time case
+
+00:54:45,000 --> 00:54:48,000
+those classes while not
+
+00:54:48,000 --> 00:54:52,000
+forming all the classic linear time-invariant systems
+
+00:54:52,000 --> 00:54:57,000
+are very important subclass and will focus in on those specifically next
+
+00:54:57,000 --> 00:54:57,000
+thank you
+

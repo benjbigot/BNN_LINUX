@@ -1,0 +1,2091 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU home in
+
+00:00:29,000 --> 00:00:29,000
+the
+
+00:00:29,000 --> 00:00:31,000
+
+
+00:00:31,000 --> 00:00:34,000
+the
+
+00:00:34,000 --> 00:00:39,000
+the in
+
+00:00:39,000 --> 00:00:45,000
+the menu
+
+00:00:45,000 --> 00:00:48,000
+are
+
+00:00:48,000 --> 00:00:55,000
+for last time we
+
+00:00:57,000 --> 00:01:01,000
+introduce the notion that mapping continuous-time filters to discrete-time
+
+00:01:01,000 --> 00:01:05,000
+filters and we developed in Polson variance as
+
+00:01:05,000 --> 00:01:09,000
+one useful technique for carrying out that type mapping
+
+00:01:09,000 --> 00:01:13,000
+but I'd like to do in this lecture
+
+00:01:13,000 --> 00:01:17,000
+is illustrate in Polson variants as a design procedure
+
+00:01:17,000 --> 00:01:21,000
+in the context so one specific
+
+00:01:21,000 --> 00:01:24,000
+class all filters namely Butterworth filters
+
+00:01:24,000 --> 00:01:28,000
+and in then following that will proceed on to discuss
+
+00:01:28,000 --> 00:01:34,000
+another very important and useful mapping or design procedure referred to
+
+00:01:34,000 --> 00:01:35,000
+as the by linear transformation
+
+00:01:35,000 --> 00:01:39,000
+so to begin let me
+
+00:01:39,000 --> 00:01:42,000
+just discuss briefly what the class a Butterworth
+
+00:01:42,000 --> 00:01:47,000
+filters is and specifically
+
+00:01:47,000 --> 00:01:50,000
+the Butterworth filters are the fine
+
+00:01:50,000 --> 00:01:55,000
+through their frequency response a transfer function and I'm
+
+00:01:55,000 --> 00:01:58,000
+using capital be to denote a Butterworth filter
+
+00:01:58,000 --> 00:02:02,000
+and by definition the magnitude square to the frequency responsible Butterworth
+
+00:02:02,000 --> 00:02:03,000
+filter
+
+00:02:03,000 --> 00:02:06,000
+is given by this expression and for example
+
+00:02:06,000 --> 00:02:10,000
+if and more equal to 1 then this would simply
+
+00:02:10,000 --> 00:02:14,000
+correspond to the magnitude squared love the frequency response
+
+00:02:14,000 --> 00:02:19,000
+for a first order differential equation now if you
+
+00:02:19,000 --> 00:02:22,000
+look at the frequency response be a filmmaker
+
+00:02:22,000 --> 00:02:25,000
+for this class the filters
+
+00:02:25,000 --> 00:02:29,000
+I've illustrated that below and
+
+00:02:29,000 --> 00:02:32,000
+what we see is that
+
+00:02:32,000 --> 00:02:36,000
+the frequency response starts at Unity
+
+00:02:36,000 --> 00:02:39,000
+because that's that's the way that its normalized and it has
+
+00:02:39,000 --> 00:02:44,000
+a monatomic characteristic in the past band and the stop and
+
+00:02:44,000 --> 00:02:48,000
+at a frequency equal to the pram inner Omega subsea
+
+00:02:48,000 --> 00:02:52,000
+up here which is referred to as the cutoff frequency
+
+00:02:52,000 --> 00:02:55,000
+the Butterworth filter frequency response
+
+00:02:55,000 --> 00:02:59,000
+always goes through the same point namely point 707
+
+00:02:59,000 --> 00:03:04,000
+and as the order the Butterworth filter capital and
+
+00:03:04,000 --> 00:03:07,000
+increases the transition
+
+00:03:07,000 --> 00:03:11,000
+from the passband to the stop band
+
+00:03:11,000 --> 00:03:15,000
+becomes sharper and sharper so for higher-order filters then
+
+00:03:15,000 --> 00:03:18,000
+the frequency response is flattering the passband
+
+00:03:18,000 --> 00:03:22,000
+and drops of more quickly and attenuates more
+
+00:03:22,000 --> 00:03:25,000
+in this topic now
+
+00:03:25,000 --> 00:03:28,000
+in designing Butterworth filters what we
+
+00:03:28,000 --> 00:03:32,000
+we want to look at is the location at the polls
+
+00:03:32,000 --> 00:03:36,000
+all the system function and
+
+00:03:36,000 --> 00:03:39,000
+we can in for those from our definition
+
+00:03:39,000 --> 00:03:43,000
+I'll what the frequency response for the Butterworth filter is
+
+00:03:43,000 --> 00:03:46,000
+in particular we have this expression
+
+00:03:46,000 --> 00:03:50,000
+for the magnitude squared the frequency response
+
+00:03:50,000 --> 00:03:54,000
+and we recognize that of course as
+
+00:03:54,000 --> 00:03:58,000
+be love J Omega times be
+
+00:03:58,000 --> 00:04:03,000
+love minus J Omega that's what the magnitude squared
+
+00:04:03,000 --> 00:04:07,000
+will be equal to and in order to convert this
+
+00:04:07,000 --> 00:04:12,000
+to an expression describing the system function or in terms that the
+
+00:04:12,000 --> 00:04:15,000
+more general applause transform variable ass
+
+00:04:15,000 --> 00:04:18,000
+well we recognize is dead J Omega
+
+00:04:18,000 --> 00:04:23,000
+in the more general setting simply corresponds to
+
+00:04:23,000 --> 00:04:26,000
+the applause transform variable s so
+
+00:04:26,000 --> 00:04:29,000
+this product in fact
+
+00:04:29,000 --> 00:04:33,000
+is the applause transform for st. go to jail make a
+
+00:04:33,000 --> 00:04:38,000
+more generally then this is the result of evaluating
+
+00:04:38,000 --> 00:04:42,000
+be a vast eyes be a minus S&S equals J Omega
+
+00:04:42,000 --> 00:04:46,000
+consequently comparing this expression
+
+00:04:46,000 --> 00:04:49,000
+with this statement leads us to the conclusion
+
+00:04:49,000 --> 00:04:53,000
+dead the transfer function be a badass
+
+00:04:53,000 --> 00:04:57,000
+the Butterworth filter times be off minus s
+
+00:04:57,000 --> 00:05:00,000
+is given by the expression that I indicate here
+
+00:05:00,000 --> 00:05:05,000
+simply replacing J Omega by S
+
+00:05:05,000 --> 00:05:09,000
+now what we want to look at are the holes
+
+00:05:09,000 --> 00:05:13,000
+all be a vast that's what we'll want to get as we
+
+00:05:13,000 --> 00:05:16,000
+design a Butterworth filter and
+
+00:05:16,000 --> 00:05:20,000
+we can recognize the polls love this product
+
+00:05:20,000 --> 00:05:24,000
+simply by looking at the roots at the denominator polynomial
+
+00:05:24,000 --> 00:05:29,000
+and those roots are just taking a counter this factor 2n
+
+00:05:29,000 --> 00:05:33,000
+those routes are at J Omega subsea
+
+00:05:33,000 --> 00:05:37,000
+times the 2n roots I'll
+
+00:05:37,000 --> 00:05:42,000
+-1 those roots in fact all I on a circle
+
+00:05:42,000 --> 00:05:47,000
+an the consequences that is that
+
+00:05:47,000 --> 00:05:53,000
+the holes all this expression
+
+00:05:53,000 --> 00:05:56,000
+are on a circle the circle
+
+00:05:56,000 --> 00:06:00,000
+is radius omega-6 see and the polls are distributed
+
+00:06:00,000 --> 00:06:04,000
+around the circle so here I demonstrated
+
+00:06:04,000 --> 00:06:08,000
+the polls love be a vast size be at minus s
+
+00:06:08,000 --> 00:06:12,000
+for the specific case for capital and is equal to 3 so there are a total of six
+
+00:06:12,000 --> 00:06:13,000
+polls
+
+00:06:13,000 --> 00:06:17,000
+around the circle and
+
+00:06:17,000 --> 00:06:20,000
+then for this specific case the polls a space by
+
+00:06:20,000 --> 00:06:26,000
+sixty degrees now we have PSA's be at minus s
+
+00:06:26,000 --> 00:06:30,000
+to get the system function for the Butterworth filter we'd like to get
+
+00:06:30,000 --> 00:06:35,000
+BFS and the question now is how do we get that
+
+00:06:35,000 --> 00:06:38,000
+well the thing to recognize is dead wherever
+
+00:06:38,000 --> 00:06:42,000
+this factor has a route
+
+00:06:42,000 --> 00:06:45,000
+this factor has to have a root at
+
+00:06:45,000 --> 00:06:51,000
+the negative location so in fact when we look at these polls we compare them
+
+00:06:51,000 --> 00:06:54,000
+with this for example associated with be a badass
+
+00:06:54,000 --> 00:06:58,000
+this associated with the at minus s and
+
+00:06:58,000 --> 00:07:03,000
+likewise we compare these two together likewise we compare these two together
+
+00:07:03,000 --> 00:07:06,000
+and so we can extract the evas from this product
+
+00:07:06,000 --> 00:07:11,000
+simply by taking one poll at a beach those pairs
+
+00:07:11,000 --> 00:07:16,000
+now a question of course is I did each pair which one do we associate with BFS
+
+00:07:16,000 --> 00:07:19,000
+wish to associate with the minus says
+
+00:07:19,000 --> 00:07:22,000
+and the answer drops out fairly simply
+
+00:07:22,000 --> 00:07:25,000
+if we recognize dead if
+
+00:07:25,000 --> 00:07:30,000
+we want to design filters that are stable
+
+00:07:30,000 --> 00:07:33,000
+then be a vast the transfer function that we're designing
+
+00:07:33,000 --> 00:07:36,000
+must have all its polls in the left after the S play
+
+00:07:36,000 --> 00:07:40,000
+so in fact we would associate outta each of these pairs
+
+00:07:40,000 --> 00:07:44,000
+we would associate the left airplane poll with the evas
+
+00:07:44,000 --> 00:07:49,000
+and so the transfer function
+
+00:07:49,000 --> 00:07:54,000
+for the Butterworth filter for this particular case where the parameter
+
+00:07:54,000 --> 00:07:57,000
+where this designates the parameter Omega subsea
+
+00:07:57,000 --> 00:08:01,000
+capital and his three namely a third order Butterworth filter
+
+00:08:01,000 --> 00:08:04,000
+is this center pole locations given those
+
+00:08:04,000 --> 00:08:09,000
+of course we can figure out simply throughout your break means
+
+00:08:09,000 --> 00:08:13,000
+what the transfer function be a veces
+
+00:08:13,000 --> 00:08:17,000
+alright so that's what in Butterworth filters are in now
+
+00:08:17,000 --> 00:08:20,000
+what I'd like to do is talk about
+
+00:08:20,000 --> 00:08:25,000
+the design or additional Butterworth filter
+
+00:08:25,000 --> 00:08:30,000
+using the design technique that we introduced last time namely in polls and
+
+00:08:30,000 --> 00:08:31,000
+variance
+
+00:08:31,000 --> 00:08:35,000
+and the context in which I will
+
+00:08:35,000 --> 00:08:38,000
+phrase the design is the context
+
+00:08:38,000 --> 00:08:41,000
+love mapping a
+
+00:08:41,000 --> 00:08:44,000
+continuous-time signal to a discrete-time signal
+
+00:08:44,000 --> 00:08:48,000
+carrying out filtering using the discrete-time
+
+00:08:48,000 --> 00:08:51,000
+go to that we're designing and then mapping back so
+
+00:08:51,000 --> 00:08:56,000
+we're talking about now a discrete-time filter
+
+00:08:56,000 --> 00:09:00,000
+that we want to designed to impose severe in variance from
+
+00:09:00,000 --> 00:09:03,000
+Butterworth filters from continues time Butterworth filters
+
+00:09:03,000 --> 00:09:07,000
+and we're going to get our design specifications
+
+00:09:07,000 --> 00:09:10,000
+in the context loved having
+
+00:09:10,000 --> 00:09:14,000
+considered discrete-time processing of continuous-time signals
+
+00:09:14,000 --> 00:09:17,000
+where we will map from
+
+00:09:17,000 --> 00:09:22,000
+a continuous-time signal to a sequence
+
+00:09:22,000 --> 00:09:26,000
+carry out the filtering with the discrete-time filter
+
+00:09:26,000 --> 00:09:31,000
+that we're going to design and then
+
+00:09:31,000 --> 00:09:35,000
+we will take the resulting filtered output
+
+00:09:35,000 --> 00:09:39,000
+and map it back to the continuous-time signals
+
+00:09:39,000 --> 00:09:43,000
+but this discrete-time filter is
+
+00:09:43,000 --> 00:09:46,000
+the one that we're talking about designing and
+
+00:09:46,000 --> 00:09:50,000
+for choice a parameter there's a sampling frequency of course involved in
+
+00:09:50,000 --> 00:09:51,000
+this process
+
+00:09:51,000 --> 00:09:55,000
+and the value that I'll pick for the sampling frequency
+
+00:09:55,000 --> 00:09:58,000
+is 10 killers
+
+00:09:58,000 --> 00:10:02,000
+okay all fairly straightforward so far
+
+00:10:02,000 --> 00:10:05,000
+and so since we have a
+
+00:10:05,000 --> 00:10:09,000
+sampling rate of 10 killer hurts we
+
+00:10:09,000 --> 00:10:14,000
+want to first look at our specifications
+
+00:10:14,000 --> 00:10:17,000
+on the desired continuous type filter
+
+00:10:17,000 --> 00:10:21,000
+and then mapped those to appropriate
+
+00:10:21,000 --> 00:10:24,000
+specifications on the discrete I told
+
+00:10:24,000 --> 00:10:27,000
+and what I'll pick for the
+
+00:10:27,000 --> 00:10:32,000
+desired specifications on the continuous-time filter
+
+00:10:32,000 --> 00:10:35,000
+is that at
+
+00:10:35,000 --> 00:10:39,000
+one kilohertz I will ask
+
+00:10:39,000 --> 00:10:43,000
+that the continuous-time frequency response
+
+00:10:43,000 --> 00:10:48,000
+be down by no more then 1db
+
+00:10:48,000 --> 00:10:53,000
+in comparison with its value at Omega equal 0
+
+00:10:53,000 --> 00:10:57,000
+so that in effect specifies the behavior in the past band
+
+00:10:57,000 --> 00:11:01,000
+for the specifications on the passband and
+
+00:11:01,000 --> 00:11:04,000
+for the stop band specify dead
+
+00:11:04,000 --> 00:11:08,000
+the filter is down by 15 DB
+
+00:11:08,000 --> 00:11:12,000
+by the time we've gotten to one-and-a-half kilohertz
+
+00:11:12,000 --> 00:11:17,000
+so we have in essentially the beginning of the transition band the end of the
+
+00:11:17,000 --> 00:11:19,000
+past and it won't kill hurts
+
+00:11:19,000 --> 00:11:23,000
+and the beginning at the stop and at one point five killer hurts
+
+00:11:23,000 --> 00:11:26,000
+and since we're talking about designing
+
+00:11:26,000 --> 00:11:31,000
+a Butterworth filter we know that the Butterworth filter is
+
+00:11:31,000 --> 00:11:34,000
+monatomic in the past and stop and and so
+
+00:11:34,000 --> 00:11:38,000
+will have a filter specification
+
+00:11:38,000 --> 00:11:41,000
+something is a show here this represents
+
+00:11:41,000 --> 00:11:44,000
+the allowable passband tolerance
+
+00:11:44,000 --> 00:11:48,000
+this is the allowable stop and tolerance
+
+00:11:48,000 --> 00:11:51,000
+and if I can draw this without
+
+00:11:51,000 --> 00:11:56,000
+getting myself into trouble a sexually were looking for a filter then
+
+00:11:56,000 --> 00:12:00,000
+then always stays between
+
+00:12:00,000 --> 00:12:04,000
+the specified boundaries
+
+00:12:04,000 --> 00:12:07,000
+here
+
+00:12:07,000 --> 00:12:12,000
+now what we have to figure out is what the corresponding specifications
+
+00:12:12,000 --> 00:12:16,000
+are for the digital filter in the strategy let me emphasize
+
+00:12:16,000 --> 00:12:19,000
+is dead we have
+
+00:12:19,000 --> 00:12:23,000
+situation where we're doing continuous-time and discrete-time
+
+00:12:23,000 --> 00:12:27,000
+processing continuous-time signals
+
+00:12:27,000 --> 00:12:31,000
+and we have specifications associated with that
+
+00:12:31,000 --> 00:12:35,000
+that imposes specifications on our discrete-time
+
+00:12:35,000 --> 00:12:38,000
+filter and then we wanted design
+
+00:12:38,000 --> 00:12:42,000
+the discrete-time filter using impose invariance
+
+00:12:42,000 --> 00:12:47,000
+and that's the discrete I feel to their will use the overall system
+
+00:12:47,000 --> 00:12:51,000
+right now we want specifications
+
+00:12:51,000 --> 00:12:54,000
+on the discrete-time filter
+
+00:12:54,000 --> 00:12:59,000
+and we want the continuous overall equivalent system
+
+00:12:59,000 --> 00:13:02,000
+to have certain arm
+
+00:13:02,000 --> 00:13:06,000
+meet certain specifications a certain frequencies related to
+
+00:13:06,000 --> 00:13:09,000
+continuous-time frequencies recall
+
+00:13:09,000 --> 00:13:14,000
+that when we sample a continuous-time signal
+
+00:13:14,000 --> 00:13:18,000
+is a very specific mapping from the continuous-time
+
+00:13:18,000 --> 00:13:21,000
+frequency axis to the discrete-time frequency axis
+
+00:13:21,000 --> 00:13:24,000
+in particular the sampling frequency
+
+00:13:24,000 --> 00:13:29,000
+gets mapped to to Part II
+
+00:13:29,000 --> 00:13:33,000
+well that means there are other critical frequencies get mapped
+
+00:13:33,000 --> 00:13:37,000
+in proportion to that so one killer hurts which is a 10
+
+00:13:37,000 --> 00:13:41,000
+love the sampling frequency with then
+
+00:13:41,000 --> 00:13:45,000
+convert to a discrete-time frequency love point2 pie
+
+00:13:45,000 --> 00:13:49,000
+and one-and-a-half kilohertz will convert to
+
+00:13:49,000 --> 00:13:54,000
+a discreet I frequency love point three pie
+
+00:13:54,000 --> 00:13:58,000
+so what this says is that for the discrete-time
+
+00:13:58,000 --> 00:14:01,000
+filter we would like
+
+00:14:01,000 --> 00:14:04,000
+the same behavior
+
+00:14:04,000 --> 00:14:07,000
+but at frequencies are the same specifications
+
+00:14:07,000 --> 00:14:10,000
+but at frequencies normalize
+
+00:14:10,000 --> 00:14:14,000
+to the discrete-time frequency axis
+
+00:14:14,000 --> 00:14:18,000
+that means dead we want the discrete-time
+
+00:14:18,000 --> 00:14:21,000
+frequency Mac frequency response magnitude
+
+00:14:21,000 --> 00:14:24,000
+to be greater than or equal to -1 DB at
+
+00:14:24,000 --> 00:14:30,000
+two-tenths pie corresponding to the one killer hurts and continuous-time
+
+00:14:30,000 --> 00:14:33,000
+and four the beginning
+
+00:14:33,000 --> 00:14:37,000
+love this top band in that would occur at point three pie
+
+00:14:37,000 --> 00:14:42,000
+at which point we want this less than or equal to minus 15
+
+00:14:42,000 --> 00:14:45,000
+so those are our discreet I specifications
+
+00:14:45,000 --> 00:14:49,000
+and we now wanted design the
+
+00:14:49,000 --> 00:14:54,000
+discrete-time filter using impulse and parents
+
+00:14:54,000 --> 00:14:58,000
+now in the polls in variance as you recall
+
+00:14:58,000 --> 00:15:01,000
+it corresponds to
+
+00:15:01,000 --> 00:15:05,000
+sampling generating an impulse response which is a sampled
+
+00:15:05,000 --> 00:15:09,000
+version love the continuous-time impulse response
+
+00:15:09,000 --> 00:15:13,000
+and there is a temptation naturally
+
+00:15:13,000 --> 00:15:17,000
+to think love this parameter capital T
+
+00:15:17,000 --> 00:15:20,000
+as necessarily identical
+
+00:15:20,000 --> 00:15:23,000
+to the sampling
+
+00:15:23,000 --> 00:15:27,000
+in the system in which the filter is going to be use
+
+00:15:27,000 --> 00:15:32,000
+now this is a fairly subtle complicated tongue twisting issue
+
+00:15:32,000 --> 00:15:36,000
+but the bottom line on at the essential point
+
+00:15:36,000 --> 00:15:41,000
+is that the parameter capital T that we use in imposing variant
+
+00:15:41,000 --> 00:15:45,000
+design as a totally different unrelated
+
+00:15:45,000 --> 00:15:50,000
+and in fact as it turns out arbitrary parameter
+
+00:15:50,000 --> 00:15:54,000
+which is not necessarilly pegged
+
+00:15:54,000 --> 00:15:58,000
+to the sampling frequency and I think it would be difficult for me to totally
+
+00:15:58,000 --> 00:16:00,000
+clarify that
+
+00:16:00,000 --> 00:16:04,000
+during the lecture it's discussed more the book
+
+00:16:04,000 --> 00:16:08,000
+and certainly you should take plenty of time to reflect on
+
+00:16:08,000 --> 00:16:12,000
+for it but let's no look then
+
+00:16:12,000 --> 00:16:15,000
+at where we are in our design procedure
+
+00:16:15,000 --> 00:16:19,000
+and specifically what it is that we need to do
+
+00:16:19,000 --> 00:16:23,000
+in order to design the digital
+
+00:16:23,000 --> 00:16:27,000
+Butterworth filter now we have
+
+00:16:27,000 --> 00:16:30,000
+a set of specifications there we
+
+00:16:30,000 --> 00:16:34,000
+we've generated relating essentially to
+
+00:16:34,000 --> 00:16:37,000
+how we want the passband if the digital filter
+
+00:16:37,000 --> 00:16:41,000
+and the stop and above the digital filter to behave
+
+00:16:41,000 --> 00:16:44,000
+course since this isn't an ideal filter
+
+00:16:44,000 --> 00:16:48,000
+it has sound transitions from passband to stop and
+
+00:16:48,000 --> 00:16:52,000
+and as we discussed last time there is
+
+00:16:52,000 --> 00:16:57,000
+aliasing which we need to at least beware oath
+
+00:16:57,000 --> 00:17:01,000
+we specified certain frequencies along this axis
+
+00:17:01,000 --> 00:17:05,000
+which are easily converted by
+
+00:17:05,000 --> 00:17:09,000
+relating the the two axes through this mapping
+
+00:17:09,000 --> 00:17:13,000
+are you easily related back to
+
+00:17:13,000 --> 00:17:16,000
+the continuous-time
+
+00:17:16,000 --> 00:17:21,000
+frequency axis as we have here
+
+00:17:21,000 --> 00:17:24,000
+and in particular now if we
+
+00:17:24,000 --> 00:17:29,000
+word is simply pick that parameter in the imposing variant design capital T
+
+00:17:29,000 --> 00:17:35,000
+as equal to unity and I indicated just a minute ago that we can pick it
+
+00:17:35,000 --> 00:17:36,000
+arbitrarily
+
+00:17:36,000 --> 00:17:42,000
+if I a pic is unity then the procedure which consists
+
+00:17:42,000 --> 00:17:45,000
+about designing the continuous-time Butterworth filter
+
+00:17:45,000 --> 00:17:50,000
+with meeting the pro or exceeding the appropriate specifications
+
+00:17:50,000 --> 00:17:55,000
+and then going through the imposing variant procedure
+
+00:17:55,000 --> 00:18:01,000
+alright so let's do that then
+
+00:18:01,000 --> 00:18:06,000
+we want the discrete-time impulse response to be the continuous-time
+
+00:18:06,000 --> 00:18:11,000
+paul's response sampled and for convenience I'm going to pick this
+
+00:18:11,000 --> 00:18:14,000
+parameter capital T equal to 1
+
+00:18:14,000 --> 00:18:19,000
+that means dead the frequency normalization between
+
+00:18:19,000 --> 00:18:22,000
+the discrete-time frequency axis and the continuous-time
+
+00:18:22,000 --> 00:18:26,000
+frequency axis in fact is
+
+00:18:26,000 --> 00:18:29,000
+those axes are scaled identically because
+
+00:18:29,000 --> 00:18:33,000
+capital T is equal to 1 and so now
+
+00:18:33,000 --> 00:18:37,000
+we want the analog for continuous-time
+
+00:18:37,000 --> 00:18:41,000
+specifications and so what we need to do then
+
+00:18:41,000 --> 00:18:46,000
+is design a Butterworth filter I'm using capital be here again to denote
+
+00:18:46,000 --> 00:18:51,000
+the frequency response the Butterworth filter the Butterworth filter
+
+00:18:51,000 --> 00:18:55,000
+to have a magnitude which is greater than or equal to -1 DB
+
+00:18:55,000 --> 00:18:59,000
+prior to the frequency 0.2 pie
+
+00:18:59,000 --> 00:19:03,000
+and less than or equal to -15 at a frequency
+
+00:19:03,000 --> 00:19:07,000
+beyond 0.3 part
+
+00:19:07,000 --> 00:19:12,000
+and so now what we need to do is determine
+
+00:19:12,000 --> 00:19:16,000
+capital and and Omega subsea
+
+00:19:16,000 --> 00:19:21,000
+in order to meet or exceed the specifications
+
+00:19:21,000 --> 00:19:25,000
+now if you go through The Associated algebra doing at let's say that
+
+00:19:25,000 --> 00:19:28,000
+you decide that you want a pic capital and omega-6
+
+00:19:28,000 --> 00:19:32,000
+see to exactly meet those inequalities at
+
+00:19:32,000 --> 00:19:36,000
+the to frequencies point to point point three pie
+
+00:19:36,000 --> 00:19:39,000
+what you'll find after going through the algebra
+
+00:19:39,000 --> 00:19:42,000
+is that there exactly Matt
+
+00:19:42,000 --> 00:19:46,000
+if capital and is 5.88
+
+00:19:46,000 --> 00:19:49,000
+and omega-6 see is point 7047
+
+00:19:49,000 --> 00:19:52,000
+and this obviously can't
+
+00:19:52,000 --> 00:19:56,000
+is in satisfactory as parameters for the Butterworth filter
+
+00:19:56,000 --> 00:19:59,000
+why is that the reason is
+
+00:19:59,000 --> 00:20:03,000
+that capital and isn't an integer and in
+
+00:20:03,000 --> 00:20:07,000
+the class a Butterworth filters to generate a rational transfer function
+
+00:20:07,000 --> 00:20:11,000
+capital N this parameter must be an integer
+
+00:20:11,000 --> 00:20:15,000
+so since it can't be 5.88
+
+00:20:15,000 --> 00:20:19,000
+the natural thing to do is to move it up
+
+00:20:19,000 --> 00:20:22,000
+to the next closest integer namely 6
+
+00:20:22,000 --> 00:20:27,000
+and that means that will end up with a filter that goes even better
+
+00:20:27,000 --> 00:20:31,000
+in the specifications on the other hand
+
+00:20:31,000 --> 00:20:34,000
+there's something kinda underneath the surface
+
+00:20:34,000 --> 00:20:38,000
+dead is inherent in the impulsive area design procedure
+
+00:20:38,000 --> 00:20:42,000
+namely the fact dad there will always be some aliasing
+
+00:20:42,000 --> 00:20:46,000
+so one strategy and a natural one often
+
+00:20:46,000 --> 00:20:51,000
+imposing variant design is to
+
+00:20:51,000 --> 00:20:55,000
+shoes and as the next highest integer as I've done
+
+00:20:55,000 --> 00:20:59,000
+and then shoes the parameter omega-6 see
+
+00:20:59,000 --> 00:21:03,000
+so that the passband specifications
+
+00:21:03,000 --> 00:21:08,000
+are exactly met and the stop and specifications are then slightly
+
+00:21:08,000 --> 00:21:09,000
+exceeded
+
+00:21:09,000 --> 00:21:13,000
+and that will leave some margin for releasing
+
+00:21:13,000 --> 00:21:17,000
+right now continuing this example then
+
+00:21:17,000 --> 00:21:21,000
+how would we complete the design
+
+00:21:21,000 --> 00:21:25,000
+well we know what are two parameters
+
+00:21:25,000 --> 00:21:29,000
+capital and and omega-6
+
+00:21:29,000 --> 00:21:34,000
+CR in that means that we can determine BFS
+
+00:21:34,000 --> 00:21:37,000
+times be at minus s those polls are located
+
+00:21:37,000 --> 00:21:42,000
+on a circle in the complex s plane
+
+00:21:42,000 --> 00:21:46,000
+and the polls on that circle are paired
+
+00:21:46,000 --> 00:21:50,000
+Sat some being associated with BFS and some would be a minus s
+
+00:21:50,000 --> 00:21:54,000
+and in particular to determined be a badass
+
+00:21:54,000 --> 00:21:58,000
+we would simply take the polls
+
+00:21:58,000 --> 00:22:01,000
+on the portion of the circle it's in the left after the S
+
+00:22:01,000 --> 00:22:05,000
+point now
+
+00:22:05,000 --> 00:22:08,000
+with active service is a
+
+00:22:08,000 --> 00:22:13,000
+butterworth continuous-time filter
+
+00:22:13,000 --> 00:22:17,000
+which we're then mapping to impose invariance
+
+00:22:17,000 --> 00:22:20,000
+with capital T equal to 1 to
+
+00:22:20,000 --> 00:22:24,000
+a discrete-time filter that discrete-time filter
+
+00:22:24,000 --> 00:22:28,000
+to be used in a system
+
+00:22:28,000 --> 00:22:31,000
+which has disassociated sampling frequency
+
+00:22:31,000 --> 00:22:34,000
+which is 10 killer hurts
+
+00:22:34,000 --> 00:22:37,000
+so to get the discrete-time filter then
+
+00:22:37,000 --> 00:22:41,000
+we first determine be a vast as we just did
+
+00:22:41,000 --> 00:22:45,000
+or at least they indicated how to do it
+
+00:22:45,000 --> 00:22:50,000
+we would then expand that out in a partial fraction expansion
+
+00:22:50,000 --> 00:22:54,000
+and then apply the imposing variant procedure
+
+00:22:54,000 --> 00:22:58,000
+which consists love mapping the polls
+
+00:22:58,000 --> 00:23:03,000
+in the S plane to polls in the seaplane at locations either the s2k
+
+00:23:03,000 --> 00:23:07,000
+capital T your capital T is equal to 1
+
+00:23:07,000 --> 00:23:11,000
+and retaining the residue where the coefficients
+
+00:23:11,000 --> 00:23:14,000
+in the expansion and this ban
+
+00:23:14,000 --> 00:23:17,000
+will give us the transfer function for the discrete-time
+
+00:23:17,000 --> 00:23:21,000
+filter so
+
+00:23:21,000 --> 00:23:24,000
+if in fact we
+
+00:23:24,000 --> 00:23:28,000
+did at than the resulting frequency response
+
+00:23:28,000 --> 00:23:32,000
+that we would get is what i've indicated here
+
+00:23:32,000 --> 00:23:36,000
+and I indicated first on a magnitude
+
+00:23:36,000 --> 00:23:39,000
+scale linear magnitude scale and second
+
+00:23:39,000 --> 00:23:43,000
+on a like a rhythmic scale and
+
+00:23:43,000 --> 00:23:46,000
+as we had originally specified the digital filter
+
+00:23:46,000 --> 00:23:51,000
+is supposed to be greater than a recall to
+
+00:23:51,000 --> 00:23:56,000
+-1 dB at point to pie and less than or equal to -15
+
+00:23:56,000 --> 00:23:59,000
+the be at point three pie
+
+00:23:59,000 --> 00:24:03,000
+and in fact this slightly exceeds the specifications
+
+00:24:03,000 --> 00:24:07,000
+since we had purposely allowed some margin
+
+00:24:07,000 --> 00:24:14,000
+in this topic
+
+00:24:14,000 --> 00:24:19,000
+now this is an illustration of the impulse invariant procedure
+
+00:24:19,000 --> 00:24:23,000
+and it has a number very nice properties one of which is that
+
+00:24:23,000 --> 00:24:28,000
+it takes a continuous-time filter frequency response
+
+00:24:28,000 --> 00:24:33,000
+and it converts it to a discrete-time frequency response which
+
+00:24:33,000 --> 00:24:37,000
+in the absence Bailey is saying looks identical except for linear frequency
+
+00:24:37,000 --> 00:24:42,000
+scale change and in fact we pick capital T equal to one in there is no scale
+
+00:24:42,000 --> 00:24:43,000
+change
+
+00:24:43,000 --> 00:24:47,000
+it has the major disadvantage
+
+00:24:47,000 --> 00:24:50,000
+dead there is always daily as saying and for some
+
+00:24:50,000 --> 00:24:55,000
+design for some problems for example if the filter we're trying to design
+
+00:24:55,000 --> 00:24:59,000
+is not ban limited or low pass
+
+00:24:59,000 --> 00:25:04,000
+then the alias saying will actually become intolerable
+
+00:25:04,000 --> 00:25:08,000
+well there's another design procedure which I now want to introduce
+
+00:25:08,000 --> 00:25:12,000
+which totally avoids the problems have aliasing
+
+00:25:12,000 --> 00:25:16,000
+but obviously then has its own costs associated with
+
+00:25:16,000 --> 00:25:19,000
+and that procedure is referred to as
+
+00:25:19,000 --> 00:25:24,000
+the by linear transformation
+
+00:25:24,000 --> 00:25:27,000
+the by linear transformation which our own
+
+00:25:27,000 --> 00:25:31,000
+try to drive here in any detail
+
+00:25:31,000 --> 00:25:35,000
+is a mapping love continuous-time filters
+
+00:25:35,000 --> 00:25:40,000
+to discrete-time filters corresponding
+
+00:25:40,000 --> 00:25:43,000
+to taking the applause transform variable ass
+
+00:25:43,000 --> 00:25:47,000
+in the continuous-time filter and replacing it
+
+00:25:47,000 --> 00:25:53,000
+by what is referred to as a file in your function at z
+
+00:25:53,000 --> 00:25:56,000
+and so if I substitute this in here
+
+00:25:56,000 --> 00:26:02,000
+that will give me the discrete-time frequency response
+
+00:26:02,000 --> 00:26:05,000
+again in this procedure there's a primer capital T
+
+00:26:05,000 --> 00:26:09,000
+which again is totally irrelevant given the approach that we're taking
+
+00:26:09,000 --> 00:26:13,000
+and which we will generally tend to normalize out to unity
+
+00:26:13,000 --> 00:26:17,000
+and let me just say quickly and passing
+
+00:26:17,000 --> 00:26:20,000
+dead although we all go through this the
+
+00:26:20,000 --> 00:26:24,000
+notion of the by linear transformation
+
+00:26:24,000 --> 00:26:27,000
+can be tied to the concept love
+
+00:26:27,000 --> 00:26:31,000
+taking the differential equation for the continuous-time
+
+00:26:31,000 --> 00:26:36,000
+filter converting it to an integral equation by integrating
+
+00:26:36,000 --> 00:26:39,000
+enough times on both sides
+
+00:26:39,000 --> 00:26:42,000
+and then converting Matt to
+
+00:26:42,000 --> 00:26:46,000
+a difference equation by approximating
+
+00:26:46,000 --> 00:26:50,000
+the integrals with the trapezoidal rule
+
+00:26:50,000 --> 00:26:53,000
+and that in effect will correspond
+
+00:26:53,000 --> 00:26:57,000
+to mapping the continuous-time filter to a discrete-time
+
+00:26:57,000 --> 00:27:01,000
+filter with the by linear transformation well we'll just focus on
+
+00:27:01,000 --> 00:27:05,000
+the properties love the mapping and in particular
+
+00:27:05,000 --> 00:27:09,000
+if we were to substitute into
+
+00:27:09,000 --> 00:27:16,000
+the expression see equal to you DJ Omega corresponding to the unit circle
+
+00:27:16,000 --> 00:27:19,000
+we would find dead the unit circle
+
+00:27:19,000 --> 00:27:24,000
+in discrete-time corresponds to mapping
+
+00:27:24,000 --> 00:27:29,000
+DJ Omega axis in continuous-time which is exactly
+
+00:27:29,000 --> 00:27:32,000
+what we want now the mapping
+
+00:27:32,000 --> 00:27:36,000
+between the continuous-time frequency
+
+00:27:36,000 --> 00:27:39,000
+and the discrete-time frequency
+
+00:27:39,000 --> 00:27:42,000
+is a nonlinear mapping which
+
+00:27:42,000 --> 00:27:46,000
+is given by the algebraic expression that I indicate here
+
+00:27:46,000 --> 00:27:51,000
+and if we plot this mapping
+
+00:27:51,000 --> 00:27:55,000
+but we have is this Kurt
+
+00:27:55,000 --> 00:28:00,000
+and what this corresponds to then
+
+00:28:00,000 --> 00:28:06,000
+is a mapping cause the J Omega axis or continuous time-frequency
+
+00:28:06,000 --> 00:28:10,000
+to discrete-time frequency
+
+00:28:10,000 --> 00:28:14,000
+and if we think more generally oath the mapping represented by the by a linear
+
+00:28:14,000 --> 00:28:16,000
+transformation
+
+00:28:16,000 --> 00:28:19,000
+in the context of the S plane in the seaplane
+
+00:28:19,000 --> 00:28:23,000
+it corresponds to mapping
+
+00:28:23,000 --> 00:28:26,000
+DJ Omega axis in the S plane
+
+00:28:26,000 --> 00:28:30,000
+to what's around the unit circle in the seaplane
+
+00:28:30,000 --> 00:28:33,000
+and you can also convince yourself
+
+00:28:33,000 --> 00:28:37,000
+that the left after the S plane maps
+
+00:28:37,000 --> 00:28:40,000
+to the inside the unit circle and
+
+00:28:40,000 --> 00:28:43,000
+so that means dead stable
+
+00:28:43,000 --> 00:28:46,000
+continuous-time filters will always map to stable
+
+00:28:46,000 --> 00:28:51,000
+discrete-time filters which is exactly what we desire
+
+00:28:51,000 --> 00:28:56,000
+now notice in this that there's no issue avail yes and what's happened is
+
+00:28:56,000 --> 00:28:59,000
+that we've replaced espy function FZ corresponds to
+
+00:28:59,000 --> 00:29:04,000
+mapping BS point too busy playing fact the whole J Omega axes
+
+00:29:04,000 --> 00:29:09,000
+has mapped to once around the unit circle
+
+00:29:09,000 --> 00:29:15,000
+which obviously requires some type of nonlinear mapping because
+
+00:29:15,000 --> 00:29:18,000
+like the jamming axis is infinitely long
+
+00:29:18,000 --> 00:29:21,000
+the unit circle has a fine I radius
+
+00:29:21,000 --> 00:29:24,000
+and so essentially what has to happen is if you think
+
+00:29:24,000 --> 00:29:28,000
+love walking along the continuous-time
+
+00:29:28,000 --> 00:29:33,000
+frequency axis and simultaneously walking around the unit circle
+
+00:29:33,000 --> 00:29:36,000
+if you walk at a constant rate around the unit circle
+
+00:29:36,000 --> 00:29:40,000
+and your simultaneously walking up the jam a axis
+
+00:29:40,000 --> 00:29:44,000
+if you want to get around the pie by the time
+
+00:29:44,000 --> 00:29:47,000
+here you've gotten tune infinity along
+
+00:29:47,000 --> 00:29:51,000
+the continuous-time frequency axis you better
+
+00:29:51,000 --> 00:29:55,000
+wats kittens are walking faster faster faster because you've got
+
+00:29:55,000 --> 00:30:01,000
+an infinite distance to cover while you just go over a finite distance here
+
+00:30:01,000 --> 00:30:04,000
+well worldwide says really is that
+
+00:30:04,000 --> 00:30:08,000
+that's why in fact we're taking
+
+00:30:08,000 --> 00:30:12,000
+the entire or were able to take the entire
+
+00:30:12,000 --> 00:30:16,000
+Omega axis and just map it into an interval
+
+00:30:16,000 --> 00:30:22,000
+all above link pie
+
+00:30:22,000 --> 00:30:26,000
+right now that means that their
+
+00:30:26,000 --> 00:30:30,000
+is a nonlinear distortion of the frequency axis
+
+00:30:30,000 --> 00:30:33,000
+if we were to take a continuous I filter and converted to
+
+00:30:33,000 --> 00:30:37,000
+a discrete type filter with the by a linear transformation
+
+00:30:37,000 --> 00:30:41,000
+how do we account for that were for that matter
+
+00:30:41,000 --> 00:30:45,000
+when can we really use it and
+
+00:30:45,000 --> 00:30:48,000
+we can see how to had a both take account of it
+
+00:30:48,000 --> 00:30:52,000
+and what its limitations are by
+
+00:30:52,000 --> 00:30:55,000
+recognizing the following suppose that
+
+00:30:55,000 --> 00:30:58,000
+I wanted design a
+
+00:30:58,000 --> 00:31:02,000
+discretized salter and
+
+00:31:02,000 --> 00:31:07,000
+what is going to happen is that it will be mapped to a continuous-time filter
+
+00:31:07,000 --> 00:31:08,000
+the relationship between
+
+00:31:08,000 --> 00:31:14,000
+the two frequency axes will be given by this Kurt
+
+00:31:14,000 --> 00:31:17,000
+so let's supposed dead the
+
+00:31:17,000 --> 00:31:21,000
+continuous-time frequency response looks as I've shown here
+
+00:31:21,000 --> 00:31:27,000
+with a passband cutoff frequency and its top and cut-off frequency
+
+00:31:27,000 --> 00:31:30,000
+if this were mapped
+
+00:31:30,000 --> 00:31:34,000
+through the by a linear transformation to
+
+00:31:34,000 --> 00:31:38,000
+a discrete-time filter then this cutoff frequency
+
+00:31:38,000 --> 00:31:41,000
+would fall over here
+
+00:31:41,000 --> 00:31:45,000
+which is related through this curve and
+
+00:31:45,000 --> 00:31:48,000
+this cutoff frequency to stop and age
+
+00:31:48,000 --> 00:31:53,000
+would be here again reflected it's these frequencies reflected
+
+00:31:53,000 --> 00:31:56,000
+through this skirt
+
+00:31:56,000 --> 00:32:01,000
+so let's suppose now that what I'd like to do is design
+
+00:32:01,000 --> 00:32:07,000
+a discrete-time filter where the discrete-time filter has
+
+00:32:07,000 --> 00:32:10,000
+certain frequency specifications
+
+00:32:10,000 --> 00:32:14,000
+which is what are previous example has
+
+00:32:14,000 --> 00:32:17,000
+it has let's say a specified stop and age
+
+00:32:17,000 --> 00:32:23,000
+as specified past bandage and assess specified stop and age
+
+00:32:23,000 --> 00:32:26,000
+the design procedure within correspond to
+
+00:32:26,000 --> 00:32:31,000
+mapping those frequencies
+
+00:32:31,000 --> 00:32:36,000
+to the corresponding continuous-time frequencies
+
+00:32:36,000 --> 00:32:39,000
+designing the continuous-time filter
+
+00:32:39,000 --> 00:32:42,000
+to me this specification space
+
+00:32:42,000 --> 00:32:46,000
+on those critical frequencies
+
+00:32:46,000 --> 00:32:50,000
+then taking the continuous-time design
+
+00:32:50,000 --> 00:32:53,000
+and mapping it back to a discrete I filter
+
+00:32:53,000 --> 00:32:57,000
+through the by linear transformation
+
+00:32:57,000 --> 00:33:00,000
+right now what we want to do is
+
+00:33:00,000 --> 00:33:05,000
+again map a Butterworth filter continuous-time Butterworth filter to
+
+00:33:05,000 --> 00:33:09,000
+to a digital filter in such a way that the digital filter approximately
+
+00:33:09,000 --> 00:33:13,000
+meets the specifications that we had before
+
+00:33:13,000 --> 00:33:16,000
+and let me just remind you love where we were
+
+00:33:16,000 --> 00:33:21,000
+the critical frequencies were at 0.2 pie
+
+00:33:21,000 --> 00:33:25,000
+and 0.3 pie and
+
+00:33:25,000 --> 00:33:29,000
+what we had asked for is dead the frequency response
+
+00:33:29,000 --> 00:33:33,000
+be down by no more than one dB
+
+00:33:33,000 --> 00:33:37,000
+up 2.2 pie and down by
+
+00:33:37,000 --> 00:33:41,000
+at least 15 TV at Point three-part
+
+00:33:41,000 --> 00:33:45,000
+so we want to design the same
+
+00:33:45,000 --> 00:33:49,000
+discrete-time filter as we did before with imposing variance
+
+00:33:49,000 --> 00:33:52,000
+we now want to do it with the by linear transformation
+
+00:33:52,000 --> 00:33:59,000
+applied to an appropriate butterworth design
+
+00:33:59,000 --> 00:34:05,000
+okay well so let's see what kinda specifications we have
+
+00:34:05,000 --> 00:34:10,000
+we know that the frequency the critical frequencies are mapped
+
+00:34:10,000 --> 00:34:13,000
+through this curve for this equation
+
+00:34:13,000 --> 00:34:18,000
+and I indicated again that this parameter capital T is
+
+00:34:18,000 --> 00:34:21,000
+arbitrary in the design procedure
+
+00:34:21,000 --> 00:34:25,000
+that may seem confusing initially but
+
+00:34:25,000 --> 00:34:29,000
+this some further discussion of it in the book and it's true an important to
+
+00:34:29,000 --> 00:34:31,000
+sort out
+
+00:34:31,000 --> 00:34:35,000
+so we're going to pick capital T equal to unity
+
+00:34:35,000 --> 00:34:38,000
+and that means then that the
+
+00:34:38,000 --> 00:34:41,000
+corresponding critical frequencies
+
+00:34:41,000 --> 00:34:45,000
+all the continuous-time filter
+
+00:34:45,000 --> 00:34:48,000
+are at twice but ancient love
+
+00:34:48,000 --> 00:34:51,000
+0.2 pie over to and twice the tangent
+
+00:34:51,000 --> 00:34:54,000
+love 0.3 pie over to
+
+00:34:54,000 --> 00:34:58,000
+so that means then there the specifications on
+
+00:34:58,000 --> 00:35:02,000
+our continuous-time filter
+
+00:35:02,000 --> 00:35:05,000
+are given by this sensually
+
+00:35:05,000 --> 00:35:09,000
+past fans stop and edges warped through
+
+00:35:09,000 --> 00:35:12,000
+that nonlinear curve this nonlinear curve
+
+00:35:12,000 --> 00:35:16,000
+and I'm using capital G here to denote
+
+00:35:16,000 --> 00:35:19,000
+the system function for the
+
+00:35:19,000 --> 00:35:24,000
+resulting continuous-time salter
+
+00:35:24,000 --> 00:35:28,000
+and so now we could think of designing a Butterworth filter
+
+00:35:28,000 --> 00:35:34,000
+that lets say exactly meets the specifications
+
+00:35:34,000 --> 00:35:37,000
+well if you do that what you'll find is dead
+
+00:35:37,000 --> 00:35:41,000
+you get exact a quality
+
+00:35:41,000 --> 00:35:46,000
+here if you pick capital N
+
+00:35:46,000 --> 00:35:49,000
+equal to 5.3
+
+00:35:49,000 --> 00:35:53,000
+and again we have the issue that
+
+00:35:53,000 --> 00:35:57,000
+if we want to meet or exceed the specifications we can't make
+
+00:35:57,000 --> 00:36:01,000
+the filter order lower we have to make it higher and so
+
+00:36:01,000 --> 00:36:07,000
+we would make it is so to 5.3 with make the filter order equal to 6
+
+00:36:07,000 --> 00:36:10,000
+and now again we have several
+
+00:36:10,000 --> 00:36:14,000
+options and trade-offs before with imposing variance
+
+00:36:14,000 --> 00:36:18,000
+we essentially decided to meet the
+
+00:36:18,000 --> 00:36:22,000
+passband specifications and exceed the stop and specifications
+
+00:36:22,000 --> 00:36:26,000
+to provide some margin for aliasing
+
+00:36:26,000 --> 00:36:30,000
+here we don't have any a leasing
+
+00:36:30,000 --> 00:36:33,000
+and we can't ratings of any way we'd like
+
+00:36:33,000 --> 00:36:36,000
+the way that are chosen to do it is to
+
+00:36:36,000 --> 00:36:39,000
+exactly me the
+
+00:36:39,000 --> 00:36:44,000
+stop and cut off and exceed
+
+00:36:44,000 --> 00:36:47,000
+the passband specifications and
+
+00:36:47,000 --> 00:36:51,000
+the result to doing that is to choose
+
+00:36:51,000 --> 00:36:54,000
+a filter order capital and equal to 6%
+
+00:36:54,000 --> 00:36:58,000
+and though parameter Omega subsea in the Butterworth filter
+
+00:36:58,000 --> 00:37:04,000
+is given by 0.7 6622
+
+00:37:04,000 --> 00:37:07,000
+alright so now we have
+
+00:37:07,000 --> 00:37:11,000
+the parameters for
+
+00:37:11,000 --> 00:37:14,000
+the continuous-time Butterworth filter
+
+00:37:14,000 --> 00:37:18,000
+which when mapped to
+
+00:37:18,000 --> 00:37:22,000
+the discrete-time filter through the by linear transformation
+
+00:37:22,000 --> 00:37:26,000
+will exceed our requirements in the past band and Justin
+
+00:37:26,000 --> 00:37:30,000
+just me the stop and cut off and so
+
+00:37:30,000 --> 00:37:34,000
+now we want to complete the design procedure and
+
+00:37:34,000 --> 00:37:38,000
+given the parameters
+
+00:37:38,000 --> 00:37:41,000
+up the Butterworth filter we can draw
+
+00:37:41,000 --> 00:37:46,000
+are appropriate circle in the S plane which happens to be the same circle as
+
+00:37:46,000 --> 00:37:47,000
+before
+
+00:37:47,000 --> 00:37:50,000
+but with a different radius and
+
+00:37:50,000 --> 00:37:55,000
+then associate polls on this circle
+
+00:37:55,000 --> 00:38:00,000
+with be a bass and be a minus s in particular take the ones in the left
+
+00:38:00,000 --> 00:38:02,000
+after the S plane
+
+00:38:02,000 --> 00:38:07,000
+same ones we had before except we have a different value for Omega subsea
+
+00:38:07,000 --> 00:38:10,000
+in and does then represent
+
+00:38:10,000 --> 00:38:16,000
+BFS so we can now determine be a badass
+
+00:38:16,000 --> 00:38:21,000
+and new ones we have the transfer function be a badass
+
+00:38:21,000 --> 00:38:24,000
+we then map that to a
+
+00:38:24,000 --> 00:38:27,000
+discrete-time filter by mapping through
+
+00:38:27,000 --> 00:38:32,000
+the by linear transformation and that then
+
+00:38:32,000 --> 00:38:35,000
+is the design procedure through
+
+00:38:35,000 --> 00:38:40,000
+which we would follow for this example by well let's just see what
+
+00:38:40,000 --> 00:38:44,000
+the result looks like when we're done
+
+00:38:44,000 --> 00:38:47,000
+here I show again on both
+
+00:38:47,000 --> 00:38:50,000
+a linear magnitude scale in on
+
+00:38:50,000 --> 00:38:54,000
+a logarithmic good DB scale the frequency response
+
+00:38:54,000 --> 00:39:00,000
+love the resulting filter and recall that the specifications were dead 8.2
+
+00:39:00,000 --> 00:39:01,000
+pie
+
+00:39:01,000 --> 00:39:06,000
+we should be down by no more than 1d being clearly we've exceeded that
+
+00:39:06,000 --> 00:39:08,000
+considerably
+
+00:39:08,000 --> 00:39:11,000
+and 8.3 pie we should be
+
+00:39:11,000 --> 00:39:16,000
+are down by at least 15 DB and we chose the design so that we would exactly
+
+00:39:16,000 --> 00:39:20,000
+meet that edge so we've met this point
+
+00:39:20,000 --> 00:39:24,000
+and exceeded this point and this is our Design
+
+00:39:24,000 --> 00:39:27,000
+now let's just compare this
+
+00:39:27,000 --> 00:39:30,000
+with the impulse invariant design that we saw
+
+00:39:30,000 --> 00:39:34,000
+a few minutes ago
+
+00:39:34,000 --> 00:39:38,000
+and the impossibility and design is
+
+00:39:38,000 --> 00:39:41,000
+what I indicate here be
+
+00:39:41,000 --> 00:39:44,000
+by linear transformation design is
+
+00:39:44,000 --> 00:39:47,000
+now overlaid on top of that
+
+00:39:47,000 --> 00:39:51,000
+it's hard to see much difference on a linear
+
+00:39:51,000 --> 00:39:54,000
+magnitude scale but let's look online horrific scale
+
+00:39:54,000 --> 00:40:00,000
+and this one that I'm lifting is the by linear transformation
+
+00:40:00,000 --> 00:40:03,000
+and this is imposing variance
+
+00:40:03,000 --> 00:40:07,000
+and notice in fact something very interesting
+
+00:40:07,000 --> 00:40:12,000
+which is dead the sold the
+
+00:40:12,000 --> 00:40:15,000
+filter dead we obtained by
+
+00:40:15,000 --> 00:40:19,000
+mapping the Butterworth filter to a digital filter through the by a linear
+
+00:40:19,000 --> 00:40:21,000
+transformation
+
+00:40:21,000 --> 00:40:24,000
+in fact falls off in frequency
+
+00:40:24,000 --> 00:40:31,000
+much more rapidly then the one that we got through imposing variance
+
+00:40:31,000 --> 00:40:36,000
+the question is why now one thought that might come to mind is well we possibly
+
+00:40:36,000 --> 00:40:40,000
+Reince as a leasing by linear transformation doesn't have a leasing
+
+00:40:40,000 --> 00:40:45,000
+that must be a consequence a daily as saying
+
+00:40:45,000 --> 00:40:49,000
+in fact that's not the reason aliasing as it turns out in this particular
+
+00:40:49,000 --> 00:40:51,000
+design is raw
+
+00:40:51,000 --> 00:40:54,000
+was relatively minimal in the opossum variant design
+
+00:40:54,000 --> 00:40:57,000
+the reason has to do with
+
+00:40:57,000 --> 00:41:02,000
+is nonlinear mapping in the by a linear transformation
+
+00:41:02,000 --> 00:41:06,000
+from the continuous-time frequency to the discrete-time frequency
+
+00:41:06,000 --> 00:41:10,000
+keep in mind dead through then mapping
+
+00:41:10,000 --> 00:41:15,000
+as you start walking around the unit circle and moving up the Chi Omega axis
+
+00:41:15,000 --> 00:41:21,000
+as you move up the jam make access you have to move faster faster faster faster
+
+00:41:21,000 --> 00:41:27,000
+and what's in continuous-time frequency and infinity
+
+00:41:27,000 --> 00:41:31,000
+is what you get to in a discrete-time frequency by the time you get around the
+
+00:41:31,000 --> 00:41:32,000
+park
+
+00:41:32,000 --> 00:41:36,000
+so in fact what we're looking at is
+
+00:41:36,000 --> 00:41:40,000
+as as we look out along this frequency axis
+
+00:41:40,000 --> 00:41:43,000
+is we're seeing
+
+00:41:43,000 --> 00:41:47,000
+higher and higher and higher frequencies in the continuous-time
+
+00:41:47,000 --> 00:41:51,000
+filter by the time we get the pie
+
+00:41:51,000 --> 00:41:55,000
+we should in fact be in the continuous-time goals are equivalent Lee
+
+00:41:55,000 --> 00:42:02,000
+off to infinity which sounds like pretty uncomfortable place to be
+
+00:42:04,000 --> 00:42:07,000
+okay now this was a a fairly
+
+00:42:07,000 --> 00:42:11,000
+rapid trip through a number of issues
+
+00:42:11,000 --> 00:42:14,000
+i in particular some the issues associated with the filing your
+
+00:42:14,000 --> 00:42:16,000
+transformation
+
+00:42:16,000 --> 00:42:19,000
+and and also this issue
+
+00:42:19,000 --> 00:42:24,000
+love how you pick this parameter capital T and how it might be associated with
+
+00:42:24,000 --> 00:42:25,000
+the
+
+00:42:25,000 --> 00:42:28,000
+sampling frequency if you doing discrete-time processing
+
+00:42:28,000 --> 00:42:32,000
+a continuous-time signals and we don't have time
+
+00:42:32,000 --> 00:42:35,000
+to explore summer those issues more fully
+
+00:42:35,000 --> 00:42:40,000
+in this lecture but in I'd like to conclude by making a
+
+00:42:40,000 --> 00:42:43,000
+couple comments 1 comment is there the
+
+00:42:43,000 --> 00:42:47,000
+two techniques that we've talked about impulse and Berrien center by linear
+
+00:42:47,000 --> 00:42:49,000
+transformation
+
+00:42:49,000 --> 00:42:52,000
+are the two techniques that are principally
+
+00:42:52,000 --> 00:42:55,000
+used when one thinks mapping
+
+00:42:55,000 --> 00:42:58,000
+continuous type filters to discrete-time
+
+00:42:58,000 --> 00:43:02,000
+filters for whatever application and I stress again
+
+00:43:02,000 --> 00:43:07,000
+that you may want to do that mapping whether or not
+
+00:43:07,000 --> 00:43:11,000
+the discrete-time filter is eventually going to be used for processing
+
+00:43:11,000 --> 00:43:15,000
+continuous-time signals
+
+00:43:15,000 --> 00:43:19,000
+now imposing variants
+
+00:43:19,000 --> 00:43:23,000
+have a characteristic dead it very nice characteristic that are
+
+00:43:23,000 --> 00:43:29,000
+that it corresponds to a linear mapping between the two frequency axes
+
+00:43:29,000 --> 00:43:32,000
+except for the issue with aliasing
+
+00:43:32,000 --> 00:43:37,000
+and that's a problem with that and in particular limits its usefulness
+
+00:43:37,000 --> 00:43:41,000
+to filter designs or for mapping continuous-time
+
+00:43:41,000 --> 00:43:46,000
+filters their band limited
+
+00:43:46,000 --> 00:43:51,000
+on the other hand we have the by linear transformation as a design procedure
+
+00:43:51,000 --> 00:43:55,000
+which totally avoid daily as saying
+
+00:43:55,000 --> 00:43:59,000
+but has the disadvantage or difficulty
+
+00:43:59,000 --> 00:44:03,000
+better represents a nonlinear mapping from the continuous type filter
+
+00:44:03,000 --> 00:44:07,000
+to the discrete-time filter now this nonlinear distortion
+
+00:44:07,000 --> 00:44:11,000
+is perfectly acceptable if we're designing
+
+00:44:11,000 --> 00:44:16,000
+or attempting to designed filters that have flack frequency characteristics
+
+00:44:16,000 --> 00:44:21,000
+it's not acceptable if for example we had a linear frequency characteristic
+
+00:44:21,000 --> 00:44:25,000
+that we wanted to map to discreet I filter and end up with a linear
+
+00:44:25,000 --> 00:44:26,000
+frequency characteristic
+
+00:44:26,000 --> 00:44:30,000
+it won't come out to be linear because all
+
+00:44:30,000 --> 00:44:34,000
+this nonlinear mapping at the frequency axis
+
+00:44:34,000 --> 00:44:37,000
+now in there are also
+
+00:44:37,000 --> 00:44:41,000
+a number of other design procedures which we won't go into
+
+00:44:41,000 --> 00:44:45,000
+for designing discrete-time filters and among them
+
+00:44:45,000 --> 00:44:49,000
+are a variety of techniques including for example
+
+00:44:49,000 --> 00:44:54,000
+computer-aided design procedures and I invite you
+
+00:44:54,000 --> 00:44:57,000
+if you're interested and want to dig into that
+
+00:44:57,000 --> 00:45:00,000
+in more detail and more deeply to
+
+00:45:00,000 --> 00:45:05,000
+explore that topic by making reference to
+
+00:45:05,000 --> 00:45:09,000
+various love the books listed in the bibliography
+
+00:45:09,000 --> 00:45:10,000
+in the text thank you
+

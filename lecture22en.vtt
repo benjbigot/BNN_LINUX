@@ -1,0 +1,2397 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:24,000
+that MIT that EDU home in
+
+00:00:24,000 --> 00:00:29,000
+the
+
+00:00:29,000 --> 00:00:29,000
+the
+
+00:00:29,000 --> 00:00:32,000
+the
+
+00:00:32,000 --> 00:00:35,000
+the
+
+00:00:35,000 --> 00:00:38,000
+in
+
+00:00:38,000 --> 00:00:40,000
+in
+
+00:00:40,000 --> 00:00:47,000
+the No
+
+00:00:49,000 --> 00:00:56,000
+the in the last several lectures we talked about
+
+00:00:59,000 --> 00:01:02,000
+a generalization love the continuous-time
+
+00:01:02,000 --> 00:01:05,000
+Fourier transform and a very similar
+
+00:01:05,000 --> 00:01:10,000
+strategy also applies to discrete-time and that's what we want to begin to deal
+
+00:01:10,000 --> 00:01:11,000
+with in today's lecture
+
+00:01:11,000 --> 00:01:15,000
+so what we want to talk about is
+
+00:01:15,000 --> 00:01:18,000
+generalizing the four EA transform
+
+00:01:18,000 --> 00:01:22,000
+and what this will lead to in discrete-time is a notion referred to as
+
+00:01:22,000 --> 00:01:23,000
+the sea transport
+
+00:01:23,000 --> 00:01:26,000
+now just as in continuous-time
+
+00:01:26,000 --> 00:01:30,000
+in discrete-time the 48 transform
+
+00:01:30,000 --> 00:01:33,000
+corresponded to a representation
+
+00:01:33,000 --> 00:01:38,000
+love a sequence as a linear combination
+
+00:01:38,000 --> 00:01:41,000
+love complex exponentials and
+
+00:01:41,000 --> 00:01:47,000
+so this was the synthesis equation and of course there is the corresponding
+
+00:01:47,000 --> 00:01:48,000
+analysis equation
+
+00:01:48,000 --> 00:01:53,000
+and as you recall and as is
+
+00:01:53,000 --> 00:01:56,000
+the same for continuous-time the reason
+
+00:01:56,000 --> 00:01:59,000
+that we pick complex exponentials was
+
+00:01:59,000 --> 00:02:03,000
+because of the fact that their I can functions of linear time-invariant
+
+00:02:03,000 --> 00:02:04,000
+systems
+
+00:02:04,000 --> 00:02:08,000
+in other words if you have a complex exponential
+
+00:02:08,000 --> 00:02:13,000
+into a linear time-invariant system the output is a complex exponential
+
+00:02:13,000 --> 00:02:16,000
+and the change in complex amplitude
+
+00:02:16,000 --> 00:02:21,000
+is which corresponds to the frequency response
+
+00:02:21,000 --> 00:02:25,000
+in fact is what led to the definition of the 48 transform
+
+00:02:25,000 --> 00:02:28,000
+in particular it is the Fourier transform
+
+00:02:28,000 --> 00:02:32,000
+up the impulse response well
+
+00:02:32,000 --> 00:02:36,000
+that said have notions is more or less identical to
+
+00:02:36,000 --> 00:02:39,000
+the way we motivated the look lost transform
+
+00:02:39,000 --> 00:02:44,000
+in the continuous-time case in the 48 transforming the continuous-time case
+
+00:02:44,000 --> 00:02:48,000
+and just as in continuous-time there
+
+00:02:48,000 --> 00:02:52,000
+it are a set signals more general
+
+00:02:52,000 --> 00:02:55,000
+then the complex exponentials which
+
+00:02:55,000 --> 00:02:59,000
+are also I can functions have linear time-invariant systems
+
+00:02:59,000 --> 00:03:03,000
+in particular and discrete-time if
+
+00:03:03,000 --> 00:03:06,000
+we had instead love an exponential
+
+00:03:06,000 --> 00:03:09,000
+you to the Chi Omega and we had a more general
+
+00:03:09,000 --> 00:03:13,000
+complex number Z bad
+
+00:03:13,000 --> 00:03:16,000
+the signals E to the end is also
+
+00:03:16,000 --> 00:03:19,000
+and I can function up a linear time-invariant system
+
+00:03:19,000 --> 00:03:23,000
+for any particular Z so
+
+00:03:23,000 --> 00:03:28,000
+and we can see that by substituting that it to the convolution some
+
+00:03:28,000 --> 00:03:32,000
+and recognizing again very strongly paralleling the
+
+00:03:32,000 --> 00:03:35,000
+continuous-time argument head we can
+
+00:03:35,000 --> 00:03:39,000
+rewrite this factor as Z to the N
+
+00:03:39,000 --> 00:03:43,000
+the to the minus K and
+
+00:03:43,000 --> 00:03:47,000
+because it the fact that it's a someone and are some on K
+
+00:03:47,000 --> 00:03:52,000
+and his term doesn't depend on K we can take that term out
+
+00:03:52,000 --> 00:03:56,000
+and the conclusion is that if we have
+
+00:03:56,000 --> 00:03:59,000
+Z to the end as an input that
+
+00:03:59,000 --> 00:04:03,000
+the output is love the same form times
+
+00:04:03,000 --> 00:04:06,000
+a factor which depends on C
+
+00:04:06,000 --> 00:04:10,000
+but of course doesn't depend on k cuz that is
+
+00:04:10,000 --> 00:04:14,000
+some doubt as we form the summation so in fact
+
+00:04:14,000 --> 00:04:18,000
+this some Asian corresponds to a complex number
+
+00:04:18,000 --> 00:04:21,000
+which will do no as agency
+
+00:04:21,000 --> 00:04:28,000
+where Z will represent a more general complex number
+
+00:04:28,000 --> 00:04:32,000
+namely see is are
+
+00:04:32,000 --> 00:04:36,000
+you to the jail maker are being the magnitude of this complex number
+
+00:04:36,000 --> 00:04:41,000
+and Omega of course being the angle so
+
+00:04:41,000 --> 00:04:45,000
+for linear time-invariant system a more general
+
+00:04:45,000 --> 00:04:49,000
+complex exponential sequence up this form
+
+00:04:49,000 --> 00:04:53,000
+generates an output a complex exponential sequence
+
+00:04:53,000 --> 00:04:57,000
+have the same form with a change in amplitude
+
+00:04:57,000 --> 00:05:00,000
+which were representing as a gypsy
+
+00:05:00,000 --> 00:05:04,000
+recognizing the fact that it's going to be a function of what that complex
+
+00:05:04,000 --> 00:05:06,000
+number is
+
+00:05:06,000 --> 00:05:11,000
+and this amplitude factor is given by this some Asian
+
+00:05:11,000 --> 00:05:14,000
+and it is this some Asian which
+
+00:05:14,000 --> 00:05:18,000
+is defined as busy transform
+
+00:05:18,000 --> 00:05:22,000
+all the sequence H event
+
+00:05:22,000 --> 00:05:27,000
+now let me stress that and I'll continue to stress this is the lecture goes on
+
+00:05:27,000 --> 00:05:31,000
+that much of what we've said is
+
+00:05:31,000 --> 00:05:35,000
+directly parallel to what we said in the continuous-time case
+
+00:05:35,000 --> 00:05:39,000
+and what we simply done is to expand
+
+00:05:39,000 --> 00:05:45,000
+from complex exponentials with a purely imaginary exponent
+
+00:05:45,000 --> 00:05:49,000
+complex exponential time functions are sequences
+
+00:05:49,000 --> 00:05:53,000
+that form into one's that have more general
+
+00:05:53,000 --> 00:05:56,000
+complex exponential factors
+
+00:05:56,000 --> 00:06:00,000
+now we have a mapping here
+
+00:06:00,000 --> 00:06:03,000
+from the impulse response to
+
+00:06:03,000 --> 00:06:07,000
+the Tampa to or the Aiken value
+
+00:06:07,000 --> 00:06:11,000
+associated with that input and this mapping
+
+00:06:11,000 --> 00:06:16,000
+is what is referred to as busy transport
+
+00:06:16,000 --> 00:06:19,000
+so a gypsy is in fact
+
+00:06:19,000 --> 00:06:23,000
+busy transform of the impulse response
+
+00:06:23,000 --> 00:06:26,000
+and if we consider applying this mapping
+
+00:06:26,000 --> 00:06:29,000
+as we did in continuous-time in a similar argument
+
+00:06:29,000 --> 00:06:32,000
+applying this mapping to a
+
+00:06:32,000 --> 00:06:36,000
+sequence whether or not it corresponds to the impulse response to the linear
+
+00:06:36,000 --> 00:06:38,000
+time-invariant system
+
+00:06:38,000 --> 00:06:42,000
+that leads then to busy transform
+
+00:06:42,000 --> 00:06:46,000
+love a general sequence XFN
+
+00:06:46,000 --> 00:06:49,000
+busy transform being defined by
+
+00:06:49,000 --> 00:06:52,000
+this relationship and again
+
+00:06:52,000 --> 00:06:56,000
+rotationally will often represent
+
+00:06:56,000 --> 00:07:00,000
+a time for action and it's the transform through shorthand notation
+
+00:07:00,000 --> 00:07:03,000
+just indicating that accepts the
+
+00:07:03,000 --> 00:07:08,000
+is this the transform love accident
+
+00:07:08,000 --> 00:07:12,000
+alright so we've kind of motivated the development
+
+00:07:12,000 --> 00:07:16,000
+in a manner exactly identical to what we had done with the a-plus transform
+
+00:07:16,000 --> 00:07:19,000
+kinda the idea that if you look at the eigen value associated
+
+00:07:19,000 --> 00:07:22,000
+in with the linear time-invariant system
+
+00:07:22,000 --> 00:07:26,000
+that essentially generates a mapping between
+
+00:07:26,000 --> 00:07:31,000
+the sequence impulse system impulse response
+
+00:07:31,000 --> 00:07:34,000
+and a function of Z and
+
+00:07:34,000 --> 00:07:38,000
+that corresponds to busy transform here at corresponded to applause transform
+
+00:07:38,000 --> 00:07:42,000
+in a continuous-time case that same argument
+
+00:07:42,000 --> 00:07:46,000
+is also the argument the kinda argument that we use
+
+00:07:46,000 --> 00:07:49,000
+to lead us into before EA transform
+
+00:07:49,000 --> 00:07:54,000
+originally an once again what you would expect
+
+00:07:54,000 --> 00:07:58,000
+is dead busy transform has a very close
+
+00:07:58,000 --> 00:08:01,000
+an important relationship to the Fourier transform
+
+00:08:01,000 --> 00:08:05,000
+and indeed that relationship turned down
+
+00:08:05,000 --> 00:08:08,000
+to be more or less identical to
+
+00:08:08,000 --> 00:08:11,000
+the relationship between the applause transform
+
+00:08:11,000 --> 00:08:15,000
+in the 48 transforming continuous-time
+
+00:08:15,000 --> 00:08:18,000
+well let's look at the relationship
+
+00:08:18,000 --> 00:08:21,000
+for civil what we recognize is
+
+00:08:21,000 --> 00:08:25,000
+they if we compare
+
+00:08:25,000 --> 00:08:28,000
+the for EA transform expression
+
+00:08:28,000 --> 00:08:32,000
+for a sequence and busy transform
+
+00:08:32,000 --> 00:08:35,000
+expression for the same sequence
+
+00:08:35,000 --> 00:08:39,000
+dead they involve essentially the same operations
+
+00:08:39,000 --> 00:08:44,000
+and in fact Cincy is of the form are
+
+00:08:44,000 --> 00:08:47,000
+e2 the jail maker if we want
+
+00:08:47,000 --> 00:08:50,000
+this some to look like this some
+
+00:08:50,000 --> 00:08:53,000
+then that would mean that we would choosy
+
+00:08:53,000 --> 00:08:58,000
+equal to either the jail maker said another way
+
+00:08:58,000 --> 00:09:03,000
+busy transform onesie is a to the J Omega
+
+00:09:03,000 --> 00:09:07,000
+is going to reduce to before EA transform
+
+00:09:07,000 --> 00:09:11,000
+so we have relationship like the one
+
+00:09:11,000 --> 00:09:15,000
+again we had between the law applies transforming the forty a transforming
+
+00:09:15,000 --> 00:09:16,000
+continuous-time
+
+00:09:16,000 --> 00:09:21,000
+namely dead for certain set values
+
+00:09:21,000 --> 00:09:25,000
+of the complex variable the transform busy transform reduces
+
+00:09:25,000 --> 00:09:30,000
+to the Fourier transform so if we have ecstasy
+
+00:09:30,000 --> 00:09:33,000
+busy transform and we look at that
+
+00:09:33,000 --> 00:09:37,000
+for see equal to either the jail maker
+
+00:09:37,000 --> 00:09:41,000
+and sequel to you to jail maker is
+
+00:09:41,000 --> 00:09:45,000
+similar to saying that we're looking at that for the magnitude of Z
+
+00:09:45,000 --> 00:09:50,000
+equal to 1 were specifically choosing are equal to one which is the magnitude
+
+00:09:50,000 --> 00:09:53,000
+see then this is equal to
+
+00:09:53,000 --> 00:09:57,000
+the four EA transform love the sequence
+
+00:09:57,000 --> 00:10:00,000
+so busy transform frazee
+
+00:10:00,000 --> 00:10:04,000
+equal to either J Omega is the Fourier transform
+
+00:10:04,000 --> 00:10:09,000
+and so this then corresponds to
+
+00:10:09,000 --> 00:10:14,000
+X love Omega namely the Fourier transform
+
+00:10:14,000 --> 00:10:18,000
+well we now have ourselves in a similar situation
+
+00:10:18,000 --> 00:10:22,000
+again to what we had when we talked about the applause transform
+
+00:10:22,000 --> 00:10:26,000
+namely a notational
+
+00:10:26,000 --> 00:10:30,000
+awkwardness or inconvenience which we can resolve by simply
+
+00:10:30,000 --> 00:10:33,000
+re defining some of our notation
+
+00:10:33,000 --> 00:10:37,000
+in particular the awkwardness relates to the fact that
+
+00:10:37,000 --> 00:10:40,000
+whereas we've been writing or 48 transforms this way
+
+00:10:40,000 --> 00:10:44,000
+as external make a if
+
+00:10:44,000 --> 00:10:48,000
+we were to express XZ and look at it it's equal to either the jail maker
+
+00:10:48,000 --> 00:10:53,000
+we end up with the independent variable be2 the jail maker
+
+00:10:53,000 --> 00:10:57,000
+rather than Omega well in fact
+
+00:10:57,000 --> 00:11:01,000
+the 48 transform is a functional Omega it's also a function to be the jail
+
+00:11:01,000 --> 00:11:02,000
+maker
+
+00:11:02,000 --> 00:11:06,000
+and now we can see is dead given
+
+00:11:06,000 --> 00:11:09,000
+the fact that we want to generalize the four the the
+
+00:11:09,000 --> 00:11:14,000
+for EA transformed to dizzy transform it's convenient now
+
+00:11:14,000 --> 00:11:17,000
+to use as notation for the four th
+
+00:11:17,000 --> 00:11:22,000
+transform exit Z was equal to you DJ Omega
+
+00:11:22,000 --> 00:11:26,000
+namely are Fourier transforms will now be written as i've indicated here
+
+00:11:26,000 --> 00:11:30,000
+so just summarizing that our new notation
+
+00:11:30,000 --> 00:11:34,000
+is dead the independent variable
+
+00:11:34,000 --> 00:11:37,000
+on the Fourier transform is now
+
+00:11:37,000 --> 00:11:41,000
+going to be expressed as EJ Omega rather than
+
+00:11:41,000 --> 00:11:44,000
+as omega its a
+
+00:11:44,000 --> 00:11:48,000
+minor notational change but I recognize the fact that
+
+00:11:48,000 --> 00:11:53,000
+its somewhat confusing initially and takes a few minutes to sit down and just
+
+00:11:53,000 --> 00:11:56,000
+get it straightened out it's very similar to what we did with the
+
+00:11:56,000 --> 00:11:58,000
+apostrophe in swarm
+
+00:11:58,000 --> 00:12:02,000
+but let me draw your attention to the fact that
+
+00:12:02,000 --> 00:12:06,000
+in the applause transform the independent variable that we ended up
+
+00:12:06,000 --> 00:12:08,000
+with
+
+00:12:08,000 --> 00:12:11,000
+in talking about the 48 transform
+
+00:12:11,000 --> 00:12:14,000
+is different then what we're ending up with here
+
+00:12:14,000 --> 00:12:17,000
+in particular before we head J Omega
+
+00:12:17,000 --> 00:12:21,000
+now we have the to the jail make
+
+00:12:21,000 --> 00:12:25,000
+and the reason for that is simply that
+
+00:12:25,000 --> 00:12:29,000
+the whereas in continuous time we were talking about functions are the four
+
+00:12:29,000 --> 00:12:33,000
+you to the st. now we're talking about
+
+00:12:33,000 --> 00:12:37,000
+sequences the form Z to the end
+
+00:12:37,000 --> 00:12:42,000
+alright so in we have one relationship between the four EA transform and dizzy
+
+00:12:42,000 --> 00:12:43,000
+transform namely
+
+00:12:43,000 --> 00:12:47,000
+the fact that for the magnitude is equal to 1
+
+00:12:47,000 --> 00:12:53,000
+busy transform reduces to the Fourier transform
+
+00:12:53,000 --> 00:12:57,000
+now in the applause transform we also had another important relationship an
+
+00:12:57,000 --> 00:12:58,000
+observation
+
+00:12:58,000 --> 00:13:03,000
+which was the fact that the
+
+00:13:03,000 --> 00:13:06,000
+applause transform was
+
+00:13:06,000 --> 00:13:10,000
+the Fourier transform love x50
+
+00:13:10,000 --> 00:13:14,000
+modified and how is a modified it was modified
+
+00:13:14,000 --> 00:13:17,000
+by multiplying by a decaying
+
+00:13:17,000 --> 00:13:21,000
+growing exponentially depending on what the real part a veces
+
+00:13:21,000 --> 00:13:25,000
+well we have a very similar situation with dizzy transform
+
+00:13:25,000 --> 00:13:29,000
+in particular in addition to the fact
+
+00:13:29,000 --> 00:13:33,000
+that busy transform for a sequel the DJ Omega
+
+00:13:33,000 --> 00:13:37,000
+reduces to the four EA transform we'll see
+
+00:13:37,000 --> 00:13:40,000
+that this is a transform for other values as the
+
+00:13:40,000 --> 00:13:44,000
+is the Fourier transform love
+
+00:13:44,000 --> 00:13:47,000
+the sequence with an exponential weighting and let's see where that comes
+
+00:13:47,000 --> 00:13:50,000
+from
+
+00:13:50,000 --> 00:13:55,000
+here we have the expression general expression for the transform
+
+00:13:55,000 --> 00:14:00,000
+and recognizing that see is a complex number which were expressing in polar
+
+00:14:00,000 --> 00:14:01,000
+form
+
+00:14:01,000 --> 00:14:04,000
+as are you to the jail maker
+
+00:14:04,000 --> 00:14:08,000
+substituting that in this summation now becomes
+
+00:14:08,000 --> 00:14:12,000
+exit Van are you to jail make it to the minus an
+
+00:14:12,000 --> 00:14:16,000
+we can factor out these two turns are to the minus and
+
+00:14:16,000 --> 00:14:20,000
+and into the minus J Omega and and
+
+00:14:20,000 --> 00:14:24,000
+combining the art a minus in with excessive and
+
+00:14:24,000 --> 00:14:27,000
+and the in the minus J Omega en
+
+00:14:27,000 --> 00:14:31,000
+being treated separately what we end up with
+
+00:14:31,000 --> 00:14:35,000
+is the summation that I have here
+
+00:14:35,000 --> 00:14:41,000
+well what this says is that the z transform which is this
+
+00:14:41,000 --> 00:14:45,000
+at sea equal to re: to jail maker
+
+00:14:45,000 --> 00:14:49,000
+is in fact the four EA transform
+
+00:14:49,000 --> 00:14:53,000
+allo what
+
+00:14:53,000 --> 00:14:56,000
+it's the Fourier transform our love xom.n
+
+00:14:56,000 --> 00:15:00,000
+multiplied by art to the -10
+
+00:15:00,000 --> 00:15:04,000
+so that is the expression
+
+00:15:04,000 --> 00:15:08,000
+that we have here and in continuous-time
+
+00:15:08,000 --> 00:15:11,000
+we had the applause transform is the Fourier transform
+
+00:15:11,000 --> 00:15:15,000
+love X 50 you to the minus Sigma T
+
+00:15:15,000 --> 00:15:21,000
+here we have the Fourier transform effective and art to the -10
+
+00:15:21,000 --> 00:15:24,000
+now something to just reflect on for a minute
+
+00:15:24,000 --> 00:15:29,000
+is the bit because it tends to cause
+
+00:15:29,000 --> 00:15:33,000
+little better problem with the algebra later on if
+
+00:15:33,000 --> 00:15:37,000
+your attention is drawn to it is that we're talking about multiplying
+
+00:15:37,000 --> 00:15:38,000
+excessive and
+
+00:15:38,000 --> 00:15:43,000
+times are to the minus n the question is
+
+00:15:43,000 --> 00:15:48,000
+for are greater than one
+
+00:15:48,000 --> 00:15:52,000
+bizarre to -10 increase exponentially as N increases
+
+00:15:52,000 --> 00:15:57,000
+it is a decrease we're talking about are to the minus and
+
+00:15:57,000 --> 00:16:01,000
+if the matter if are is greater than one of the magnitude of ours greater than
+
+00:16:01,000 --> 00:16:02,000
+one for example
+
+00:16:02,000 --> 00:16:06,000
+if it's equal to 2 are the minus and is a half to the N
+
+00:16:06,000 --> 00:16:11,000
+and so in fact that decreases exponentially or more generally
+
+00:16:11,000 --> 00:16:15,000
+the larger re: is the faster are to the -10
+
+00:16:15,000 --> 00:16:21,000
+DK's with increasing in
+
+00:16:21,000 --> 00:16:24,000
+okay well let's just look at
+
+00:16:24,000 --> 00:16:28,000
+some examples love the the transform
+
+00:16:28,000 --> 00:16:31,000
+and examples that I picked again
+
+00:16:31,000 --> 00:16:36,000
+are examples directly out of the text and so
+
+00:16:36,000 --> 00:16:39,000
+the details of the algebra you can
+
+00:16:39,000 --> 00:16:44,000
+look at more leisurely as you sit with the textbook
+
+00:16:44,000 --> 00:16:48,000
+let's consider first the ball an exponential sequence x7
+
+00:16:48,000 --> 00:16:52,000
+equals a to the N times unit step so zero for negative time
+
+00:16:52,000 --> 00:16:56,000
+and an exponential for positive time
+
+00:16:56,000 --> 00:16:59,000
+in and the Fourier transform as we've seen in
+
+00:16:59,000 --> 00:17:03,000
+earlier lectures is won over one minus a
+
+00:17:03,000 --> 00:17:06,000
+it to the minus jail maker but
+
+00:17:06,000 --> 00:17:10,000
+this doesn't always converge in particular for convergence of the
+
+00:17:10,000 --> 00:17:12,000
+Fourier transform
+
+00:17:12,000 --> 00:17:16,000
+we would require absolute some ability up the original sequence
+
+00:17:16,000 --> 00:17:20,000
+and that in turn requires that the magnitude have a
+
+00:17:20,000 --> 00:17:25,000
+be less than 1 so the Fourier transform is this
+
+00:17:25,000 --> 00:17:28,000
+provided that the magnitude have a is less than one
+
+00:17:28,000 --> 00:17:34,000
+and what is the Fourier transform if the magnitude a vase not less than 1
+
+00:17:34,000 --> 00:17:40,000
+well the answer is that in that case it doesn't converge
+
+00:17:40,000 --> 00:17:44,000
+right now let's look at the Z transform busy transform
+
+00:17:44,000 --> 00:17:50,000
+is the some from minus infinity plus infinity
+
+00:17:50,000 --> 00:17:54,000
+Aug a to the N see the -10
+
+00:17:54,000 --> 00:17:59,000
+times a unit staff the unit step will change the lower limit 20
+
+00:17:59,000 --> 00:18:05,000
+so some from zero to infinity and this is all the form
+
+00:18:05,000 --> 00:18:08,000
+eight times
+
+00:18:08,000 --> 00:18:11,000
+Z to the -1 to the N
+
+00:18:11,000 --> 00:18:16,000
+so we're summing from zero to infinity eight times even minus 12 the N
+
+00:18:16,000 --> 00:18:22,000
+that some is one over one minus AZ the -1
+
+00:18:22,000 --> 00:18:26,000
+but in order for that song to converge
+
+00:18:26,000 --> 00:18:30,000
+we require that the magnitude have a
+
+00:18:30,000 --> 00:18:35,000
+time see the -1 be less than 1
+
+00:18:35,000 --> 00:18:41,000
+now this is busy transform is the Fourier transform
+
+00:18:41,000 --> 00:18:45,000
+love the sequence a to the N
+
+00:18:45,000 --> 00:18:48,000
+times are to the -10 and
+
+00:18:48,000 --> 00:18:52,000
+this statement about busy transforming converging
+
+00:18:52,000 --> 00:18:58,000
+see transform converging is exactly identical to the statement
+
+00:18:58,000 --> 00:19:01,000
+that what we're requiring is there the magnet too
+
+00:19:01,000 --> 00:19:05,000
+%uh a times art to the -1
+
+00:19:05,000 --> 00:19:09,000
+be less than 1 where
+
+00:19:09,000 --> 00:19:12,000
+this represents the exponential factor
+
+00:19:12,000 --> 00:19:15,000
+that we have are that
+
+00:19:15,000 --> 00:19:20,000
+in effect is applied to the sequence so that
+
+00:19:20,000 --> 00:19:24,000
+the 48 transform becomes the transform and
+
+00:19:24,000 --> 00:19:29,000
+so if we put this condition we can interpret this condition
+
+00:19:29,000 --> 00:19:32,000
+in exactly the same way day we interpret the condition
+
+00:19:32,000 --> 00:19:36,000
+on convergence of the 48 transform
+
+00:19:36,000 --> 00:19:39,000
+right so from this six
+
+00:19:39,000 --> 00:19:42,000
+from what we've worked out here then well we have
+
+00:19:42,000 --> 00:19:45,000
+is the see transform or
+
+00:19:45,000 --> 00:19:49,000
+a to the N times you have an is
+
+00:19:49,000 --> 00:19:52,000
+won over one minus AZ the -1
+
+00:19:52,000 --> 00:19:56,000
+that works for any bad you have a
+
+00:19:56,000 --> 00:20:01,000
+provided that we pick the value Z correctly
+
+00:20:01,000 --> 00:20:05,000
+in particular we have to pick the center values UVC
+
+00:20:05,000 --> 00:20:10,000
+so that what so that the magnitude obey
+
+00:20:10,000 --> 00:20:13,000
+time 0 -1 is less than one
+
+00:20:13,000 --> 00:20:16,000
+or equivalently so that the magnitude of the
+
+00:20:16,000 --> 00:20:20,000
+is greater than the magnitude a so
+
+00:20:20,000 --> 00:20:23,000
+Associated with busy transform
+
+00:20:23,000 --> 00:20:28,000
+of this sequence is this algebraic expression
+
+00:20:28,000 --> 00:20:32,000
+and this set of values on C for which data algebraic expression is valid
+
+00:20:32,000 --> 00:20:37,000
+and just as with the apostrophe its form
+
+00:20:37,000 --> 00:20:41,000
+this range values is referred to as
+
+00:20:41,000 --> 00:20:45,000
+the region of convergence love busy transform
+
+00:20:45,000 --> 00:20:49,000
+now again
+
+00:20:49,000 --> 00:20:53,000
+as we saw with the apostrophe s form it's important
+
+00:20:53,000 --> 00:20:56,000
+to recognize dead in specifying
+
+00:20:56,000 --> 00:20:59,000
+or having worked out the
+
+00:20:59,000 --> 00:21:04,000
+d trance 4ever sequence it's not just the algebraic expression
+
+00:21:04,000 --> 00:21:08,000
+but also the region of convergence that's required
+
+00:21:08,000 --> 00:21:11,000
+to uniquely specified
+
+00:21:11,000 --> 00:21:17,000
+to emphasize that further here is example ten-point to from the text
+
+00:21:17,000 --> 00:21:22,000
+and if you work that went through what you find is that algebraically
+
+00:21:22,000 --> 00:21:25,000
+busy transform love this sequence
+
+00:21:25,000 --> 00:21:30,000
+is 101 minus AZ the -1
+
+00:21:30,000 --> 00:21:34,000
+identical algebraically to what we had up here
+
+00:21:34,000 --> 00:21:40,000
+but now with a region of convergence
+
+00:21:40,000 --> 00:21:45,000
+which is the magnitude of the less than the magnitude have a
+
+00:21:45,000 --> 00:21:48,000
+in contrast to this example
+
+00:21:48,000 --> 00:21:52,000
+where the regional convergence was the magnitude of the
+
+00:21:52,000 --> 00:21:55,000
+greater than the magnitude day
+
+00:21:55,000 --> 00:22:00,000
+alright so again requires not just the algebraic expression
+
+00:22:00,000 --> 00:22:04,000
+but also requires specification
+
+00:22:04,000 --> 00:22:07,000
+the region of convergence and
+
+00:22:07,000 --> 00:22:10,000
+also as with the applause transform
+
+00:22:10,000 --> 00:22:13,000
+it's convenient in looking at
+
+00:22:13,000 --> 00:22:17,000
+the z transform to
+
+00:22:17,000 --> 00:22:22,000
+represented in the complex plane
+
+00:22:22,000 --> 00:22:25,000
+in this case the complex plane referred to as the
+
+00:22:25,000 --> 00:22:30,000
+seaplane whereas in continuous time we talked about the applause transform it
+
+00:22:30,000 --> 00:22:31,000
+was the S point
+
+00:22:31,000 --> 00:22:34,000
+Z of course because he is the complex variable interns in which were
+
+00:22:34,000 --> 00:22:36,000
+representing the sea transport
+
+00:22:36,000 --> 00:22:40,000
+so we will be representing
+
+00:22:40,000 --> 00:22:44,000
+the z transform interns of
+
+00:22:44,000 --> 00:22:47,000
+representations in the complex plane
+
+00:22:47,000 --> 00:22:50,000
+real part an imaginary part
+
+00:22:50,000 --> 00:22:54,000
+but I've also identified a circle here
+
+00:22:54,000 --> 00:22:57,000
+and you could wonder well what's the significance
+
+00:22:57,000 --> 00:23:00,000
+the circle recall
+
+00:23:00,000 --> 00:23:05,000
+dead in the discussion that we just came from
+
+00:23:05,000 --> 00:23:10,000
+when we talked about the relationship between is a transforming the 48
+
+00:23:10,000 --> 00:23:12,000
+transform
+
+00:23:12,000 --> 00:23:15,000
+busy transform reduces to the Fourier transform
+
+00:23:15,000 --> 00:23:19,000
+when the magnitude of Z's equal to 1
+
+00:23:19,000 --> 00:23:23,000
+the magnitude is equal to 1 in the complex plane is a circle
+
+00:23:23,000 --> 00:23:27,000
+and that circle in fact is a circle love radius
+
+00:23:27,000 --> 00:23:31,000
+1 and so its on this contour
+
+00:23:31,000 --> 00:23:34,000
+in the seaplane that busy transform
+
+00:23:34,000 --> 00:23:41,000
+reduces to the 48 transform and we'll see some additional significance to that
+
+00:23:41,000 --> 00:23:46,000
+as we go along just again emphasize the relationship since
+
+00:23:46,000 --> 00:23:51,000
+and differences with continuous-time with the a-plus transform is the
+
+00:23:51,000 --> 00:23:53,000
+behavior in the ass playing on the J Omega axis
+
+00:23:53,000 --> 00:23:56,000
+dead corresponds to
+
+00:23:56,000 --> 00:24:02,000
+the Fourier transform here its the behavior on the unit circle
+
+00:24:02,000 --> 00:24:06,000
+with busy transform corresponds to the Fourier transform
+
+00:24:06,000 --> 00:24:11,000
+now we'll be talking as we did with a plus transform
+
+00:24:11,000 --> 00:24:15,000
+we'll be talking very often about
+
+00:24:15,000 --> 00:24:19,000
+transforms which are rational at and rational transfers as we kiss
+
+00:24:19,000 --> 00:24:23,000
+was we'll see represent systems
+
+00:24:23,000 --> 00:24:27,000
+which are characterized by linear cut the coefficient difference equations
+
+00:24:27,000 --> 00:24:30,000
+and so 4
+
+00:24:30,000 --> 00:24:34,000
+the rational transfer for the rational see transforms
+
+00:24:34,000 --> 00:24:38,000
+will again find it convenient to use a representation
+
+00:24:38,000 --> 00:24:41,000
+interns opposes zeros and dizzy play so let's
+
+00:24:41,000 --> 00:24:45,000
+in look at are example as we worked it out
+
+00:24:45,000 --> 00:24:48,000
+previously example ten-point 1 and
+
+00:24:48,000 --> 00:24:51,000
+with this sequence
+
+00:24:51,000 --> 00:24:56,000
+busy transformers one divided by one minus AZ the -1
+
+00:24:56,000 --> 00:25:00,000
+and we happen to have written it as a function of Z to the -1
+
+00:25:00,000 --> 00:25:05,000
+clearly we can rewrite this by multiplying
+
+00:25:05,000 --> 00:25:10,000
+numerator and denominator by Z and this would equivalent leave NBC divided by
+
+00:25:10,000 --> 00:25:12,000
+see minus a
+
+00:25:12,000 --> 00:25:17,000
+and so if we were to represent this
+
+00:25:17,000 --> 00:25:23,000
+through a poll 0 plot we would have 0 at the arch in corresponding this factor
+
+00:25:23,000 --> 00:25:26,000
+and a poll at Z equals a
+
+00:25:26,000 --> 00:25:29,000
+corresponding to the denominator factor and
+
+00:25:29,000 --> 00:25:33,000
+so the poll 0 pattern for this
+
+00:25:33,000 --> 00:25:36,000
+is then a poll it's equal to a
+
+00:25:36,000 --> 00:25:40,000
+and 0 at the origin
+
+00:25:40,000 --> 00:25:43,000
+now let me just comment quickly about the fact that we wrote
+
+00:25:43,000 --> 00:25:47,000
+that we've written this as one over one minus AZ the -1
+
+00:25:47,000 --> 00:25:52,000
+and it seems kinda strange because perhaps we should have multiplied
+
+00:25:52,000 --> 00:25:54,000
+through by C
+
+00:25:54,000 --> 00:25:57,000
+%uh let me just indicate dead
+
+00:25:57,000 --> 00:26:02,000
+as you'll see as you work examples it's very typical for busy transform
+
+00:26:02,000 --> 00:26:06,000
+to come out as a function %uh Zeta -1
+
+00:26:06,000 --> 00:26:10,000
+and so very typically you'll get to recognize
+
+00:26:10,000 --> 00:26:14,000
+dead things will be expressed in terms of factors involving
+
+00:26:14,000 --> 00:26:19,000
+terms like one minus AZ the -1 rather than
+
+00:26:19,000 --> 00:26:23,000
+factors are the foreign C-minus a alright well
+
+00:26:23,000 --> 00:26:28,000
+here is the one example that we heard referred to
+
+00:26:28,000 --> 00:26:32,000
+and if we consider another example
+
+00:26:32,000 --> 00:26:35,000
+the other example which was example 10.22
+
+00:26:35,000 --> 00:26:39,000
+consists love
+
+00:26:39,000 --> 00:26:43,000
+a an algebraic expression as i indicate here
+
+00:26:43,000 --> 00:26:48,000
+but its region %uh validity is the magnitude is the less than the magnitude
+
+00:26:48,000 --> 00:26:49,000
+have a
+
+00:26:49,000 --> 00:26:52,000
+and that corresponds to the same poll 0
+
+00:26:52,000 --> 00:26:55,000
+apply but a region of convergence
+
+00:26:55,000 --> 00:26:58,000
+which is inside this circle
+
+00:26:58,000 --> 00:27:03,000
+whereas in the previous case
+
+00:27:03,000 --> 00:27:07,000
+with the poll 0 plot we had a region of convergence
+
+00:27:07,000 --> 00:27:11,000
+which was for the magnitude at sea greater than the magnitude have a
+
+00:27:11,000 --> 00:27:15,000
+so these two examples this one and the other one
+
+00:27:15,000 --> 00:27:19,000
+have exactly the same poll 0 pattern and their distinguished by
+
+00:27:19,000 --> 00:27:23,000
+their regional convergence now
+
+00:27:23,000 --> 00:27:28,000
+notice incidently that in this particular case
+
+00:27:28,000 --> 00:27:32,000
+the region of convergence includes the unit circle provided that
+
+00:27:32,000 --> 00:27:36,000
+the magnitude have a is less than one and so in fact
+
+00:27:36,000 --> 00:27:40,000
+that would say dead the sequence
+
+00:27:40,000 --> 00:27:45,000
+has 48 transform that converges namely with the magnitude see
+
+00:27:45,000 --> 00:27:49,000
+equal to 1 whereas in this example
+
+00:27:49,000 --> 00:27:54,000
+the regional convergence does not include the unit circle
+
+00:27:54,000 --> 00:27:59,000
+and so in fact we cannot look at Exit see for the magnitude is equal to 1
+
+00:27:59,000 --> 00:28:03,000
+and so this example with the magnitude have a less than 1
+
+00:28:03,000 --> 00:28:07,000
+does not have a Fourier transform the convergence
+
+00:28:07,000 --> 00:28:12,000
+well assuming that the bank to give a is less than one
+
+00:28:12,000 --> 00:28:15,000
+and the Fourier transform converges we can in fact
+
+00:28:15,000 --> 00:28:19,000
+look at the Fourier transform by
+
+00:28:19,000 --> 00:28:24,000
+observing what happens as we go around the unit circle
+
+00:28:24,000 --> 00:28:28,000
+we've seen as for the a-plus transform interns observing what happened as we
+
+00:28:28,000 --> 00:28:30,000
+move along the jail make axis
+
+00:28:30,000 --> 00:28:34,000
+and here again we can use
+
+00:28:34,000 --> 00:28:37,000
+the vectors
+
+00:28:37,000 --> 00:28:41,000
+as we trace out the unit circle
+
+00:28:41,000 --> 00:28:44,000
+and in particular what we would be looking at in this case
+
+00:28:44,000 --> 00:28:48,000
+is the ratio of the zero vector
+
+00:28:48,000 --> 00:28:54,000
+to the polls actor for example if we were looking at the magnitude busy
+
+00:28:54,000 --> 00:28:55,000
+transform
+
+00:28:55,000 --> 00:29:00,000
+the magnitude is a transform with the the ratio the like that this factor
+
+00:29:00,000 --> 00:29:03,000
+to the like that this specter
+
+00:29:03,000 --> 00:29:08,000
+and to observe the Fourier transform we would observe
+
+00:29:08,000 --> 00:29:11,000
+how those vectors change in length
+
+00:29:11,000 --> 00:29:15,000
+as we move around the unit circle
+
+00:29:15,000 --> 00:29:18,000
+and as we move around the unit circle what we were trace out
+
+00:29:18,000 --> 00:29:22,000
+interns the ratio the lights are those vectors is
+
+00:29:22,000 --> 00:29:26,000
+the for EA transform
+
+00:29:26,000 --> 00:29:31,000
+okay well let's focus
+
+00:29:31,000 --> 00:29:34,000
+on that also in the context
+
+00:29:34,000 --> 00:29:40,000
+love a slightly different the transforming dizzy transform here
+
+00:29:40,000 --> 00:29:45,000
+as we'll see in later lecture is this the transform associated with the
+
+00:29:45,000 --> 00:29:46,000
+second-order
+
+00:29:46,000 --> 00:29:50,000
+difference equation it's a it has a denominator factor which has
+
+00:29:50,000 --> 00:29:54,000
+which has two poles associated with it
+
+00:29:54,000 --> 00:29:58,000
+and so here if we assumed
+
+00:29:58,000 --> 00:30:02,000
+that the forty a transformer The Associated sequence
+
+00:30:02,000 --> 00:30:05,000
+converge then again we would look
+
+00:30:05,000 --> 00:30:09,000
+at the behavior this as we moved around the unit circle
+
+00:30:09,000 --> 00:30:14,000
+and the ratio the links at the appropriate vectors
+
+00:30:14,000 --> 00:30:19,000
+would describe 4s the frequency response
+
+00:30:19,000 --> 00:30:22,000
+I'm sorry the Fourier transform so
+
+00:30:22,000 --> 00:30:27,000
+the Fourier transform magnitude would consist the
+
+00:30:27,000 --> 00:30:30,000
+the ratio the lengths
+
+00:30:30,000 --> 00:30:34,000
+above the zero vectors divided by the links to the poll vectors
+
+00:30:34,000 --> 00:30:38,000
+and one thing that we observe is dead
+
+00:30:38,000 --> 00:30:42,000
+as we move in frequency Omega in the vicinity
+
+00:30:42,000 --> 00:30:46,000
+love this poll this poll fact there in fact
+
+00:30:46,000 --> 00:30:50,000
+reaches a minimum length that would mean
+
+00:30:50,000 --> 00:30:53,000
+there'd its reciprocal would be maximum
+
+00:30:53,000 --> 00:30:58,000
+and then as we sweep past the lysate these two vectors would increase the
+
+00:30:58,000 --> 00:31:00,000
+zero vector is a course
+
+00:31:00,000 --> 00:31:03,000
+would retain the same way no matter where we were
+
+00:31:03,000 --> 00:31:09,000
+on the unit circle so in fact if we look at the Fourier transform associated with
+
+00:31:09,000 --> 00:31:11,000
+this poll 0 pattern
+
+00:31:11,000 --> 00:31:14,000
+if this was for example the the
+
+00:31:14,000 --> 00:31:18,000
+for EA the represented the the
+
+00:31:18,000 --> 00:31:21,000
+see transform or the impulse response
+
+00:31:21,000 --> 00:31:26,000
+the linear time-invariant system the corresponding frequency response
+
+00:31:26,000 --> 00:31:30,000
+would be what I plotted out below and so
+
+00:31:30,000 --> 00:31:33,000
+it would peak and in fact where it would peak
+
+00:31:33,000 --> 00:31:39,000
+is in the vicinity above the frequency location of the poll
+
+00:31:39,000 --> 00:31:45,000
+as I indicate up here
+
+00:31:45,000 --> 00:31:49,000
+so as we sweep past is this poll
+
+00:31:49,000 --> 00:31:52,000
+then in fact this 48 transform
+
+00:31:52,000 --> 00:31:55,000
+peaks well
+
+00:31:55,000 --> 00:31:59,000
+this notion love looking at the frequency response as we move around the
+
+00:31:59,000 --> 00:32:01,000
+unit circle
+
+00:32:01,000 --> 00:32:06,000
+is a very important notion and it's important to recognize that is the unit
+
+00:32:06,000 --> 00:32:09,000
+circle that we're talking about here whereas before
+
+00:32:09,000 --> 00:32:12,000
+we were talking about the jail major axis
+
+00:32:12,000 --> 00:32:16,000
+and to emphasize this further
+
+00:32:16,000 --> 00:32:19,000
+let me just show this example and in fact
+
+00:32:19,000 --> 00:32:22,000
+the previous example with the
+
+00:32:22,000 --> 00:32:26,000
+computer display so that we can see the frequency response
+
+00:32:26,000 --> 00:32:31,000
+as it sweeps out as we go around the unit circle
+
+00:32:31,000 --> 00:32:35,000
+so here we have the poll 0 pattern
+
+00:32:35,000 --> 00:32:41,000
+for the second-order example and to generate the Fourier transform
+
+00:32:41,000 --> 00:32:46,000
+we want to look at the behavior of the polling 0 vectors as we move around the
+
+00:32:46,000 --> 00:32:47,000
+unit circle
+
+00:32:47,000 --> 00:32:51,000
+so first let's display the vectors
+
+00:32:51,000 --> 00:32:54,000
+and here we have them displayed to
+
+00:32:54,000 --> 00:32:57,000
+the point corresponding to zero frequency
+
+00:32:57,000 --> 00:33:02,000
+and the magnitude of the Fourier transform
+
+00:33:02,000 --> 00:33:07,000
+will be as we discussed the magnet to the like that this 0 factors divided by
+
+00:33:07,000 --> 00:33:10,000
+the magnitude of the like that the poll vectors
+
+00:33:10,000 --> 00:33:14,000
+shown below will be the for EA transform
+
+00:33:14,000 --> 00:33:17,000
+and we have the Fourier transform displayed
+
+00:33:17,000 --> 00:33:21,000
+hear from 0 to 2pi rather than
+
+00:33:21,000 --> 00:33:25,000
+from mine despite supply as it was displayed in the transparency
+
+00:33:25,000 --> 00:33:28,000
+because the periodicity the Fourier transform
+
+00:33:28,000 --> 00:33:32,000
+both those are acquittal
+
+00:33:32,000 --> 00:33:36,000
+now we're sweeping away from I'll make equal 0
+
+00:33:36,000 --> 00:33:40,000
+and the lengths on the pole vectors have changed
+
+00:33:40,000 --> 00:33:43,000
+and that of course generates a change in
+
+00:33:43,000 --> 00:33:47,000
+the 48 transform and
+
+00:33:47,000 --> 00:33:50,000
+as we continue the process further
+
+00:33:50,000 --> 00:33:54,000
+if we increase frequency
+
+00:33:54,000 --> 00:33:58,000
+as we sweep closer to the location at the pole
+
+00:33:58,000 --> 00:34:03,000
+the polls actor decreases in length dramatically
+
+00:34:03,000 --> 00:34:07,000
+and net generates a residence in the 48 transform
+
+00:34:07,000 --> 00:34:10,000
+very similar to what we saw in continuous-time
+
+00:34:10,000 --> 00:34:13,000
+now as we continue to sweep
+
+00:34:13,000 --> 00:34:17,000
+further what will happen is that
+
+00:34:17,000 --> 00:34:22,000
+that poll factor will begin to increase in like that again
+
+00:34:22,000 --> 00:34:26,000
+and so in fact the magnitude of the Fourier transform
+
+00:34:26,000 --> 00:34:30,000
+will decrease and we see that here
+
+00:34:30,000 --> 00:34:35,000
+as we sweep toward or making equal to pie
+
+00:34:35,000 --> 00:34:38,000
+now notice in this process that the
+
+00:34:38,000 --> 00:34:42,000
+like that the zero vector is has stayed the same
+
+00:34:42,000 --> 00:34:45,000
+because the fact that this 0 the zeros
+
+00:34:45,000 --> 00:34:50,000
+are at the origin and no matter where we are in the unit circle the like that
+
+00:34:50,000 --> 00:34:52,000
+those factors is unity
+
+00:34:52,000 --> 00:34:56,000
+so they don't influence in this example the magnitude but they would of course
+
+00:34:56,000 --> 00:34:59,000
+influence the face
+
+00:34:59,000 --> 00:35:03,000
+now we want to continue sweeping from make people to pie
+
+00:35:03,000 --> 00:35:07,000
+around to 2pi and because the symmetry in the Fourier transform
+
+00:35:07,000 --> 00:35:12,000
+what we will see in the magnitude is identical to what we would see
+
+00:35:12,000 --> 00:35:16,000
+if we swept from a geek with the pie back
+
+00:35:16,000 --> 00:35:19,000
+clockwise who are making equal 0
+
+00:35:19,000 --> 00:35:22,000
+in particular now as we're increasing frequency
+
+00:35:22,000 --> 00:35:26,000
+notice that the link love the poll
+
+00:35:26,000 --> 00:35:30,000
+vector associated with the lower half plane poll is decreasing
+
+00:35:30,000 --> 00:35:33,000
+and so in fact that corresponds to
+
+00:35:33,000 --> 00:35:37,000
+to generating a residence as
+
+00:35:37,000 --> 00:35:42,000
+we sweep past that polo cation as we are here
+
+00:35:42,000 --> 00:35:45,000
+and then finally that poll factor increases in Lang
+
+00:35:45,000 --> 00:35:49,000
+as we begin to approach will make people to 2pi
+
+00:35:49,000 --> 00:35:56,000
+or equivalent Lee as we approach Omega equal to 0
+
+00:35:59,000 --> 00:36:03,000
+no finally let's also look at
+
+00:36:03,000 --> 00:36:07,000
+the for EA transform associated with
+
+00:36:07,000 --> 00:36:11,000
+the first order example that we discussed earlier in the lecture
+
+00:36:11,000 --> 00:36:16,000
+and so what we wanted look at is the four EA transform as the poll
+
+00:36:16,000 --> 00:36:19,000
+n0 vectors change once again
+
+00:36:19,000 --> 00:36:24,000
+the Fourier transform will be displayed on a scale from 0 to 2pi
+
+00:36:24,000 --> 00:36:29,000
+frequency scale from 0 to 2pi rather than mine despite a pie
+
+00:36:29,000 --> 00:36:33,000
+and we want to observe the poll n0 vectors as we sweep around the unit
+
+00:36:33,000 --> 00:36:38,000
+circle
+
+00:36:38,000 --> 00:36:42,000
+we display first the poll n0 vectors
+
+00:36:42,000 --> 00:36:45,000
+at Omega equal to 0 and
+
+00:36:45,000 --> 00:36:50,000
+as the frequency increases
+
+00:36:50,000 --> 00:36:53,000
+the polls vector increases in length
+
+00:36:53,000 --> 00:36:57,000
+zero vector since the zeros at the origin
+
+00:36:57,000 --> 00:37:02,000
+will have constantly no matter where we are on the unit circle although it would
+
+00:37:02,000 --> 00:37:06,000
+affect the phase which we are not displaying here
+
+00:37:06,000 --> 00:37:10,000
+and so the principal affect the only affect really in the magnitude
+
+00:37:10,000 --> 00:37:14,000
+is due to the poll vector as the frequency
+
+00:37:14,000 --> 00:37:17,000
+continues to increase the poll vector
+
+00:37:17,000 --> 00:37:20,000
+increases in length monotonically
+
+00:37:20,000 --> 00:37:24,000
+in fact and so that means that the magnitude
+
+00:37:24,000 --> 00:37:29,000
+above the 48 transform will decrease monotonically
+
+00:37:29,000 --> 00:37:36,000
+until we get past Omega equal to pie
+
+00:37:44,000 --> 00:37:48,000
+here we are now at Omega equal to pie
+
+00:37:48,000 --> 00:37:52,000
+and when we continue sweeping past
+
+00:37:52,000 --> 00:37:56,000
+this frequency around to 2pi then
+
+00:37:56,000 --> 00:38:00,000
+we will see basically the same curve swept out
+
+00:38:00,000 --> 00:38:03,000
+in reverse sense because the symmetry
+
+00:38:03,000 --> 00:38:07,000
+again if the 48 transform magnitude sweeping from
+
+00:38:07,000 --> 00:38:10,000
+hi tu Pai is going to be equivalent
+
+00:38:10,000 --> 00:38:14,000
+with regard to the magnitude too sweeping from pie
+
+00:38:14,000 --> 00:38:18,000
+back to zero and so now
+
+00:38:18,000 --> 00:38:22,000
+the poll vector begins to decrease in length and
+
+00:38:22,000 --> 00:38:26,000
+correspondingly the magnitude of the Fourier transform
+
+00:38:26,000 --> 00:38:29,000
+will increase and
+
+00:38:29,000 --> 00:38:34,000
+that will continue until we get around to make people to 2pi
+
+00:38:34,000 --> 00:38:37,000
+which is equivalent of course will make people 0
+
+00:38:37,000 --> 00:38:42,000
+and obviously if we continue to sweep around again we would simply
+
+00:38:42,000 --> 00:38:46,000
+trace out other periods associated with
+
+00:38:46,000 --> 00:38:53,000
+the forty a transport
+
+00:38:55,000 --> 00:38:58,000
+well that hopefully gives you care some feel for
+
+00:38:58,000 --> 00:39:03,000
+for the notion I love %uh sweeping around the unit circle and of course you
+
+00:39:03,000 --> 00:39:04,000
+can see that
+
+00:39:04,000 --> 00:39:07,000
+dead because the circle is periodic
+
+00:39:07,000 --> 00:39:11,000
+as we go around and around of course what would get is a periodic for EA
+
+00:39:11,000 --> 00:39:12,000
+transform which is
+
+00:39:12,000 --> 00:39:17,000
+the way for EA transforms are supposed to be now
+
+00:39:17,000 --> 00:39:21,000
+the just is
+
+00:39:21,000 --> 00:39:25,000
+with the Laplace transform the
+
+00:39:25,000 --> 00:39:28,000
+region of convergence that the transform
+
+00:39:28,000 --> 00:39:32,000
+as we've seen in this example and
+
+00:39:32,000 --> 00:39:37,000
+is a very important part the specification
+
+00:39:37,000 --> 00:39:40,000
+above busy transform and we can
+
+00:39:40,000 --> 00:39:43,000
+in talking about sequences near transforms either
+
+00:39:43,000 --> 00:39:47,000
+specify the regional convergence implicitly or we can't specify
+
+00:39:47,000 --> 00:39:48,000
+explicitly
+
+00:39:48,000 --> 00:39:52,000
+we can for example say what it is says
+
+00:39:52,000 --> 00:39:55,000
+let's say the magnitude easy being greater than the magnitude a
+
+00:39:55,000 --> 00:39:59,000
+or we can recognize that the region of convergence
+
+00:39:59,000 --> 00:40:03,000
+has certain constraints associated with
+
+00:40:03,000 --> 00:40:08,000
+certain properties love the time function and
+
+00:40:08,000 --> 00:40:11,000
+in particular there are
+
+00:40:11,000 --> 00:40:15,000
+some important properties love the region of convergence
+
+00:40:15,000 --> 00:40:19,000
+which allow us given
+
+00:40:19,000 --> 00:40:22,000
+bed we know certain characteristics at the time function
+
+00:40:22,000 --> 00:40:25,000
+to then identify the region of convergence
+
+00:40:25,000 --> 00:40:28,000
+by looking at the poll 0 pad for example
+
+00:40:28,000 --> 00:40:32,000
+we recognize that the region of convergence
+
+00:40:32,000 --> 00:40:36,000
+does not contain any polls because the fact that at polls
+
+00:40:36,000 --> 00:40:40,000
+busy transform in fact blows up
+
+00:40:40,000 --> 00:40:44,000
+and of course can converge at that point furthermore
+
+00:40:44,000 --> 00:40:48,000
+the region of convergence consists love a ring
+
+00:40:48,000 --> 00:40:51,000
+in the seaplane centered about the origin
+
+00:40:51,000 --> 00:40:55,000
+recall there with a plus transform
+
+00:40:55,000 --> 00:40:58,000
+the regional convergence consisted of strips in
+
+00:40:58,000 --> 00:41:05,000
+the S plane with the sea transform the region of convergence consist suffering
+
+00:41:05,000 --> 00:41:08,000
+basically because if the fact that the regional convergence
+
+00:41:08,000 --> 00:41:13,000
+is dependent on the magnitude of Z whereas
+
+00:41:13,000 --> 00:41:17,000
+with a plus transform the region of convergence was dependent on the real
+
+00:41:17,000 --> 00:41:18,000
+party vez
+
+00:41:18,000 --> 00:41:21,000
+the fact that is the magnitude of the says
+
+00:41:21,000 --> 00:41:25,000
+in effect dead all values see that have the same magnitude
+
+00:41:25,000 --> 00:41:29,000
+lie on a circle and so the regional convergence you would expect
+
+00:41:29,000 --> 00:41:33,000
+to be a concentric ring
+
+00:41:33,000 --> 00:41:39,000
+in the seaplane furthermore as we've already talked about and exploited
+
+00:41:39,000 --> 00:41:43,000
+actually convergence %uh the Fourier transform
+
+00:41:43,000 --> 00:41:47,000
+is equivalent to the statement that the region of convergence
+
+00:41:47,000 --> 00:41:52,000
+includes the unit circle in the play now
+
+00:41:52,000 --> 00:41:58,000
+in we can also associate the region of convergence with issues
+
+00:41:58,000 --> 00:42:01,000
+about whether the sequence is a finite duration
+
+00:42:01,000 --> 00:42:05,000
+alright cited or left-sided in and
+
+00:42:05,000 --> 00:42:09,000
+let's let me sir quickly indicate again
+
+00:42:09,000 --> 00:42:13,000
+what this I love the argument is if
+
+00:42:13,000 --> 00:42:16,000
+we have a finite duration sequence so that
+
+00:42:16,000 --> 00:42:21,000
+the sequence is absolutely solvable and therefore has a Fourier transform that
+
+00:42:21,000 --> 00:42:22,000
+converges
+
+00:42:22,000 --> 00:42:27,000
+then because of the fact dead it 0 outside some interval
+
+00:42:27,000 --> 00:42:31,000
+I can multiply it by an exponentially
+
+00:42:31,000 --> 00:42:37,000
+decaying sequence or by an exponentially growing sequence
+
+00:42:37,000 --> 00:42:40,000
+and since I'm only doing is over a finite interval
+
+00:42:40,000 --> 00:42:44,000
+no matter how I choose that exponential will end up
+
+00:42:44,000 --> 00:42:47,000
+with an absolutely some herbal product so
+
+00:42:47,000 --> 00:42:52,000
+if accident is a finite duration that in fact the region of convergence
+
+00:42:52,000 --> 00:42:56,000
+is the entire seaplane possibly
+
+00:42:56,000 --> 00:43:02,000
+with the exception of the origin or insanity on the other hand
+
+00:43:02,000 --> 00:43:08,000
+if the sequence is a right-sided sequence
+
+00:43:08,000 --> 00:43:11,000
+then we have to be careful that we don't
+
+00:43:11,000 --> 00:43:15,000
+multiply by an exponential that grows too fast
+
+00:43:15,000 --> 00:43:19,000
+for positive time or equivalent Lee in
+
+00:43:19,000 --> 00:43:22,000
+we have to might have to choose the exponential so that
+
+00:43:22,000 --> 00:43:26,000
+it DK sufficiently fast for positive time
+
+00:43:26,000 --> 00:43:30,000
+as a consequence if that for a right-sided sequence
+
+00:43:30,000 --> 00:43:36,000
+if we have a value which is in the region of convergence
+
+00:43:36,000 --> 00:43:39,000
+as long as I multiply by exponentials
+
+00:43:39,000 --> 00:43:42,000
+that DK faster than that for positive time
+
+00:43:42,000 --> 00:43:46,000
+then also have
+
+00:43:46,000 --> 00:43:50,000
+convergence in other words all finite values Z
+
+00:43:50,000 --> 00:43:53,000
+to which the magnitude it sees greater than this so that the exponentials die
+
+00:43:53,000 --> 00:43:55,000
+of even faster
+
+00:43:55,000 --> 00:43:59,000
+will also be in the region of convergence
+
+00:43:59,000 --> 00:44:02,000
+if we combine that statement with the fact that there are no polls
+
+00:44:02,000 --> 00:44:06,000
+in the region of convergence then we end up with a statement similar to what we
+
+00:44:06,000 --> 00:44:08,000
+had with the applause transform
+
+00:44:08,000 --> 00:44:14,000
+here the statement is dead if the sequences right-sided
+
+00:44:14,000 --> 00:44:17,000
+then the regional convergence
+
+00:44:17,000 --> 00:44:22,000
+has to be outside the outermost poll essentially because it has to be outside
+
+00:44:22,000 --> 00:44:27,000
+someplace and can include any polls
+
+00:44:27,000 --> 00:44:30,000
+finally if we have
+
+00:44:30,000 --> 00:44:34,000
+a left-sided sequence
+
+00:44:34,000 --> 00:44:38,000
+van the if we have a value which is in the region convergence
+
+00:44:38,000 --> 00:44:42,000
+all values for which the magnitude see is less than that
+
+00:44:42,000 --> 00:44:47,000
+will also be in the region of convergence or if ecstasy is rational
+
+00:44:47,000 --> 00:44:51,000
+then the region of convergence must be inside the innermost poll
+
+00:44:51,000 --> 00:44:55,000
+and finally if we have a two-sided sequence
+
+00:44:55,000 --> 00:44:58,000
+then this kind of a balance between
+
+00:44:58,000 --> 00:45:03,000
+the exponential factor that we use and so in that case
+
+00:45:03,000 --> 00:45:06,000
+then the region of convergence will be ring
+
+00:45:06,000 --> 00:45:11,000
+in the seaplane and a essentially will extend outward to a poll
+
+00:45:11,000 --> 00:45:14,000
+an inward to a poll so if we had
+
+00:45:14,000 --> 00:45:18,000
+an algebraic expression let's say as
+
+00:45:18,000 --> 00:45:22,000
+in we have here
+
+00:45:22,000 --> 00:45:26,000
+in then
+
+00:45:26,000 --> 00:45:30,000
+we can associate with that a region of convergence outside this poll
+
+00:45:30,000 --> 00:45:34,000
+and that would correspond to a right-sided sequence
+
+00:45:34,000 --> 00:45:39,000
+or we can associate it with it a region of convergence
+
+00:45:39,000 --> 00:45:43,000
+which is inside
+
+00:45:43,000 --> 00:45:48,000
+the innermost poll and that would correspond to a left-sided sequence
+
+00:45:48,000 --> 00:45:52,000
+and the third and only other possibility
+
+00:45:52,000 --> 00:45:55,000
+is a region of convergence which
+
+00:45:55,000 --> 00:45:59,000
+lies between these two poles and
+
+00:45:59,000 --> 00:46:03,000
+that would then correspond to a two-sided sequence
+
+00:46:03,000 --> 00:46:06,000
+noticed incidentally because that way right place these polls
+
+00:46:06,000 --> 00:46:10,000
+that this is the only one for which the regional convergence includes the unit
+
+00:46:10,000 --> 00:46:11,000
+circle
+
+00:46:11,000 --> 00:46:17,000
+in other words it's the only one for which the Fourier transform convergence
+
+00:46:17,000 --> 00:46:21,000
+okay now we move through that fairly quickly and
+
+00:46:21,000 --> 00:46:25,000
+a I've emphasize the fact that it parallels very closely what we did
+
+00:46:25,000 --> 00:46:28,000
+with the a-plus transform what I'd like to do
+
+00:46:28,000 --> 00:46:32,000
+is just conclude with a discussion of
+
+00:46:32,000 --> 00:46:35,000
+how we get the time function back again
+
+00:46:35,000 --> 00:46:42,000
+when we have busy transform including its regional convergence
+
+00:46:42,000 --> 00:46:46,000
+well we can first the ball develop a more less formal expression
+
+00:46:46,000 --> 00:46:51,000
+and the algebra for this is going through in the text and you went through
+
+00:46:51,000 --> 00:46:52,000
+something similar
+
+00:46:52,000 --> 00:46:57,000
+to this with the applause transform in the video course manual so I won't carry
+
+00:46:57,000 --> 00:46:59,000
+through the details
+
+00:46:59,000 --> 00:47:05,000
+but basically well we can use to develop a formal expression is the fact
+
+00:47:05,000 --> 00:47:09,000
+that dizzy transform is the Fourier transform
+
+00:47:09,000 --> 00:47:13,000
+the sequence exponentially weighted so we can apply the inverse
+
+00:47:13,000 --> 00:47:16,000
+transformed to that and
+
+00:47:16,000 --> 00:47:19,000
+that gives is not active and protective an exponentially weighted
+
+00:47:19,000 --> 00:47:23,000
+and if we track that through then what we'll end up with
+
+00:47:23,000 --> 00:47:27,000
+is an expression after we've taken care of
+
+00:47:27,000 --> 00:47:31,000
+few the app's lines and deltas will end up with an expression
+
+00:47:31,000 --> 00:47:34,000
+that expresses formally
+
+00:47:34,000 --> 00:47:38,000
+the sequence XFN interns
+
+00:47:38,000 --> 00:47:41,000
+love busy transform where
+
+00:47:41,000 --> 00:47:45,000
+this in fact is a cock to her in a goal in the complex plane
+
+00:47:45,000 --> 00:47:48,000
+and so there's a formal expression just
+
+00:47:48,000 --> 00:47:52,000
+as there's a formal expression for the apostrophe its form
+
+00:47:52,000 --> 00:47:56,000
+but in fact the more typical procedure is
+
+00:47:56,000 --> 00:48:01,000
+to use essentially transform pairs that we know
+
+00:48:01,000 --> 00:48:07,000
+together with the idea of using a partial fraction expansion
+
+00:48:07,000 --> 00:48:13,000
+so if we had a sequence if we had a see transformers I indicate here
+
+00:48:13,000 --> 00:48:16,000
+and if we expanded out
+
+00:48:16,000 --> 00:48:20,000
+in a partial fraction expansion
+
+00:48:20,000 --> 00:48:23,000
+then weekend recognize as
+
+00:48:23,000 --> 00:48:27,000
+we did in a similar style with the lip gloss transform
+
+00:48:27,000 --> 00:48:31,000
+we can recognize dead each term
+
+00:48:31,000 --> 00:48:36,000
+together with the identified region of convergence
+
+00:48:36,000 --> 00:48:40,000
+corresponds to an exponential factor
+
+00:48:40,000 --> 00:48:45,000
+and so this term together with the fact that we know that the magnitude of C
+
+00:48:45,000 --> 00:48:49,000
+must be greater than to allows us
+
+00:48:49,000 --> 00:48:52,000
+to recognize this as similar to
+
+00:48:52,000 --> 00:48:56,000
+the example ten-point 1 and in particular than
+
+00:48:56,000 --> 00:49:00,000
+the sequence associated with that is what I indicate here
+
+00:49:00,000 --> 00:49:04,000
+and for the second term the sequence is
+
+00:49:04,000 --> 00:49:07,000
+what I indicate here so
+
+00:49:07,000 --> 00:49:11,000
+what we're simply doing is using the fact that
+
+00:49:11,000 --> 00:49:14,000
+we've worked out big the example going one direction before
+
+00:49:14,000 --> 00:49:19,000
+and now we use that together with the partial fraction expansion
+
+00:49:19,000 --> 00:49:23,000
+to get the individual sequences back again
+
+00:49:23,000 --> 00:49:26,000
+and then at them together is one other method which I'll just point to
+
+00:49:26,000 --> 00:49:31,000
+which eg is also elaborated on a little more in the text
+
+00:49:31,000 --> 00:49:35,000
+but it's kind of the idea I love developing the inverse
+
+00:49:35,000 --> 00:49:38,000
+Z transformed by recognizing dead
+
+00:49:38,000 --> 00:49:42,000
+this the transformer formula
+
+00:49:42,000 --> 00:49:46,000
+in fact is a power series
+
+00:49:46,000 --> 00:49:51,000
+so if we take exigency
+
+00:49:51,000 --> 00:49:54,000
+and expanded into power series
+
+00:49:54,000 --> 00:49:58,000
+then we can pick of the values affect the van
+
+00:49:58,000 --> 00:50:02,000
+by identifying the individual coefficients
+
+00:50:02,000 --> 00:50:05,000
+in this expansion
+
+00:50:05,000 --> 00:50:11,000
+okay and so by simply doing long division for example
+
+00:50:11,000 --> 00:50:14,000
+we can also get the inverse transform
+
+00:50:14,000 --> 00:50:19,000
+and that by the way is very useful particularly
+
+00:50:19,000 --> 00:50:22,000
+if we want to get the inverse see transform
+
+00:50:22,000 --> 00:50:27,000
+for z transform expression which is not rational
+
+00:50:27,000 --> 00:50:32,000
+right now we move through this fairly quickly on the other hand I stress
+
+00:50:32,000 --> 00:50:37,000
+dead it's very similar to what we went through for the applause transform
+
+00:50:37,000 --> 00:50:38,000
+except
+
+00:50:38,000 --> 00:50:41,000
+for a very important difference
+
+00:50:41,000 --> 00:50:46,000
+the principal difference really being that with a plus transform it was the J
+
+00:50:46,000 --> 00:50:48,000
+Omega axis and the S plane
+
+00:50:48,000 --> 00:50:52,000
+that we focused attention on when we're thinking about the Fourier transform
+
+00:50:52,000 --> 00:50:58,000
+here the unit circle in the seaplane plays an important role
+
+00:50:58,000 --> 00:51:03,000
+well we'll see when we continue this in the next lecture is dead
+
+00:51:03,000 --> 00:51:07,000
+there are properties are busy transform
+
+00:51:07,000 --> 00:51:10,000
+just as they were properties of us transform
+
+00:51:10,000 --> 00:51:13,000
+and those properties allow us
+
+00:51:13,000 --> 00:51:16,000
+to develop and exploit
+
+00:51:16,000 --> 00:51:20,000
+busy transform in the context love
+
+00:51:20,000 --> 00:51:23,000
+systems describable by when your constant coefficient difference
+
+00:51:23,000 --> 00:51:24,000
+equations
+
+00:51:24,000 --> 00:51:27,000
+so in the next lecture will focus on
+
+00:51:27,000 --> 00:51:31,000
+some properties busy transform and then we'll see
+
+00:51:31,000 --> 00:51:34,000
+how to use those properties to help us
+
+00:51:34,000 --> 00:51:38,000
+in getting further insight and working with system
+
+00:51:38,000 --> 00:51:40,000
+describe a wall by difference equations thank you
+

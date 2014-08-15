@@ -1,0 +1,2310 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU ha the
+
+00:00:29,000 --> 00:00:34,000
+the
+
+00:00:34,000 --> 00:00:40,000
+the in
+
+00:00:40,000 --> 00:00:47,000
+the new the in the last lecture we discussed discrete-time processing of
+
+00:00:58,000 --> 00:01:00,000
+continuous-time signals
+
+00:01:00,000 --> 00:01:04,000
+and as you know the basis for that arises essentially out at the sampling
+
+00:01:04,000 --> 00:01:09,000
+there now in that context and also in its own right
+
+00:01:09,000 --> 00:01:12,000
+another important sampling issue is
+
+00:01:12,000 --> 00:01:18,000
+the sampling love discrete-time signals in other words the sampling a sequence
+
+00:01:18,000 --> 00:01:22,000
+one comic context in which this arises for example
+
+00:01:22,000 --> 00:01:25,000
+is if we've converted from a continuous-time signal
+
+00:01:25,000 --> 00:01:29,000
+to a sequence and we then
+
+00:01:29,000 --> 00:01:33,000
+carry out some additional filtering then there's the possibility
+
+00:01:33,000 --> 00:01:37,000
+day we can re sable that sequence and as we'll see as we go through the
+
+00:01:37,000 --> 00:01:38,000
+discussion
+
+00:01:38,000 --> 00:01:41,000
+save something in the way of storage or whatever
+
+00:01:41,000 --> 00:01:45,000
+so discrete-time sampling
+
+00:01:45,000 --> 00:01:48,000
+as a indicated has important application
+
+00:01:48,000 --> 00:01:52,000
+in a context referred to here namely re sampling
+
+00:01:52,000 --> 00:01:56,000
+after discrete-time filtering and
+
+00:01:56,000 --> 00:02:00,000
+closely related to that as well indicate in this lecture
+
+00:02:00,000 --> 00:02:04,000
+is the concept love using discrete time sampling
+
+00:02:04,000 --> 00:02:07,000
+for what's referred to as sampling rate
+
+00:02:07,000 --> 00:02:10,000
+conversion and also closely
+
+00:02:10,000 --> 00:02:15,000
+associated with both those ideas is a
+
+00:02:15,000 --> 00:02:19,000
+set of ideas that I'll bring up in today's lecture referred to as
+
+00:02:19,000 --> 00:02:24,000
+decimation and interpolation love discrete-time signals are sequences
+
+00:02:24,000 --> 00:02:27,000
+now the basic process for
+
+00:02:27,000 --> 00:02:33,000
+discrete-time sampling is the same as it is for continuous-time sampling
+
+00:02:33,000 --> 00:02:37,000
+namely we can analyze it and set it up
+
+00:02:37,000 --> 00:02:40,000
+on the basis love multiplying or modulating
+
+00:02:40,000 --> 00:02:44,000
+a discrete-time signal by an impulse train
+
+00:02:44,000 --> 00:02:48,000
+the impulse train essentially or pulse train pulling out
+
+00:02:48,000 --> 00:02:51,000
+sequence values at the times that we want to sample
+
+00:02:51,000 --> 00:02:56,000
+so the basic block diagram for the sampling process
+
+00:02:56,000 --> 00:03:00,000
+is to modulator multiply
+
+00:03:00,000 --> 00:03:03,000
+the sequence that we want to sample by
+
+00:03:03,000 --> 00:03:07,000
+an impulse train and here
+
+00:03:07,000 --> 00:03:10,000
+near Paul strain has imposed a space by
+
+00:03:10,000 --> 00:03:15,000
+integer multiples of capital N this then becomes the sampling period
+
+00:03:15,000 --> 00:03:19,000
+and the result is that modulation is then
+
+00:03:19,000 --> 00:03:23,000
+the sample sequence X appear vent so
+
+00:03:23,000 --> 00:03:29,000
+if we just look at what a sequence in a sample version of that sequence might
+
+00:03:29,000 --> 00:03:29,000
+look like
+
+00:03:29,000 --> 00:03:35,000
+well we have here is an original sequence exit Van
+
+00:03:35,000 --> 00:03:38,000
+and then we have the
+
+00:03:38,000 --> 00:03:42,000
+sampling imposed strain or sampling sequence
+
+00:03:42,000 --> 00:03:46,000
+and it's the modulation or product if these two
+
+00:03:46,000 --> 00:03:50,000
+that gives us the sample sequence X appear van
+
+00:03:50,000 --> 00:03:54,000
+and so as you can see multiplying this by this
+
+00:03:54,000 --> 00:03:58,000
+essentially pulls out love the original sequence
+
+00:03:58,000 --> 00:04:02,000
+sample values at the times that this post rain is on
+
+00:04:02,000 --> 00:04:07,000
+and of course here I've drawn as for the case where capital and
+
+00:04:07,000 --> 00:04:10,000
+the sampling period is equal to 3
+
+00:04:10,000 --> 00:04:13,000
+now the
+
+00:04:13,000 --> 00:04:17,000
+analysis love discrete-time sampling is
+
+00:04:17,000 --> 00:04:21,000
+very similar to the analysis of continuous-time sampling
+
+00:04:21,000 --> 00:04:27,000
+and let's just quickly look through the steps that are involved where
+
+00:04:27,000 --> 00:04:32,000
+modulating are multiplying in the time domain and what that corresponds to
+
+00:04:32,000 --> 00:04:35,000
+in the frequency domain is a convolution and
+
+00:04:35,000 --> 00:04:39,000
+so be spectrum
+
+00:04:39,000 --> 00:04:42,000
+love the sample sequence
+
+00:04:42,000 --> 00:04:46,000
+is the periodic convolution love the spectrum
+
+00:04:46,000 --> 00:04:49,000
+love the sampling sequence and
+
+00:04:49,000 --> 00:04:54,000
+the spectrum love the sequence that were sampling
+
+00:04:54,000 --> 00:04:59,000
+and since the sampling sequences in Nepal strain
+
+00:04:59,000 --> 00:05:03,000
+as we know the 48 transform over Nepal strain
+
+00:05:03,000 --> 00:05:08,000
+is itself an impulse train and so this is the Fourier transform
+
+00:05:08,000 --> 00:05:11,000
+love the sampling sequence
+
+00:05:11,000 --> 00:05:16,000
+and now finally the four EA transform
+
+00:05:16,000 --> 00:05:20,000
+love the resulting sample sequence being the convolution
+
+00:05:20,000 --> 00:05:26,000
+love this with the Fourier transform the sequence that were sampling
+
+00:05:26,000 --> 00:05:31,000
+gives us then spectrum which consists of a some
+
+00:05:31,000 --> 00:05:36,000
+love replicated versions of the Fourier transform above the sequence that were
+
+00:05:36,000 --> 00:05:37,000
+sampling
+
+00:05:37,000 --> 00:05:42,000
+in other words what we're doing very much as we did in continuous-time
+
+00:05:42,000 --> 00:05:47,000
+is through the sampling process when we look at it in the frequency domain
+
+00:05:47,000 --> 00:05:51,000
+taking the spectrum all the sequester were sampling
+
+00:05:51,000 --> 00:05:54,000
+and shifting it and then adding it in
+
+00:05:54,000 --> 00:05:58,000
+shifting it by editor multiples of the sampling frequency
+
+00:05:58,000 --> 00:06:02,000
+in particular looking back at this equation
+
+00:06:02,000 --> 00:06:05,000
+what we recognize is that this term
+
+00:06:05,000 --> 00:06:09,000
+k times to pile over capital and is in fact
+
+00:06:09,000 --> 00:06:14,000
+integer multiple love the sampling frequency
+
+00:06:14,000 --> 00:06:17,000
+and the same thing is true here this
+
+00:06:17,000 --> 00:06:21,000
+is K times Omega so badass
+
+00:06:21,000 --> 00:06:24,000
+where Omega so badass the sampling frequency
+
+00:06:24,000 --> 00:06:30,000
+is to pie divided by capital and
+
+00:06:30,000 --> 00:06:34,000
+alright so now let's look at what this means
+
+00:06:34,000 --> 00:06:37,000
+pictorially are graphically in the frequency domain
+
+00:06:37,000 --> 00:06:40,000
+and as you can imagine since the analysis
+
+00:06:40,000 --> 00:06:45,000
+and algebra is similar to what happens in continuous-time
+
+00:06:45,000 --> 00:06:49,000
+we would expect the pictures to more or less be identical to
+
+00:06:49,000 --> 00:06:52,000
+what we've seen previously for continuous-time and indeed that's the
+
+00:06:52,000 --> 00:06:53,000
+case
+
+00:06:53,000 --> 00:06:56,000
+so here we have the
+
+00:06:56,000 --> 00:07:00,000
+spectrum love the signal that were sampling
+
+00:07:00,000 --> 00:07:06,000
+this is for EA transform with an assumed highest frequency of Omega Savannah M
+
+00:07:06,000 --> 00:07:09,000
+highest frequency over to fire a range or over Ranger
+
+00:07:09,000 --> 00:07:14,000
+higher at their and now the spectrum of the
+
+00:07:14,000 --> 00:07:17,000
+sampling signal is
+
+00:07:17,000 --> 00:07:21,000
+what I show below which is an impulse train
+
+00:07:21,000 --> 00:07:25,000
+with impulses occurring at multiples integer multiples of the sampling
+
+00:07:25,000 --> 00:07:27,000
+frequency
+
+00:07:27,000 --> 00:07:30,000
+and fan finally the convolution
+
+00:07:30,000 --> 00:07:33,000
+up these two is simply this: one
+
+00:07:33,000 --> 00:07:37,000
+replicated at the locations if these impulses
+
+00:07:37,000 --> 00:07:41,000
+and so that's finally what I show below
+
+00:07:41,000 --> 00:07:46,000
+and here are chosen one I've made one particular choice
+
+00:07:46,000 --> 00:07:50,000
+for the sampling period this in particular corresponds to
+
+00:07:50,000 --> 00:07:54,000
+a sampling period which is
+
+00:07:54,000 --> 00:07:58,000
+capitol lawn equal to
+
+00:07:58,000 --> 00:08:02,000
+three and so the sampling frequency
+
+00:08:02,000 --> 00:08:06,000
+Omega so badass is to pie
+
+00:08:06,000 --> 00:08:09,000
+divided by three
+
+00:08:09,000 --> 00:08:14,000
+right now when we look at this what we recognize
+
+00:08:14,000 --> 00:08:18,000
+is dead we have basically the same issue here
+
+00:08:18,000 --> 00:08:21,000
+as we had in continuous time in the sense that
+
+00:08:21,000 --> 00:08:28,000
+when these individual replications of the 48 transform
+
+00:08:28,000 --> 00:08:31,000
+when a fit when the sampling frequency is chosen high enough so that they don't
+
+00:08:31,000 --> 00:08:33,000
+overlap
+
+00:08:33,000 --> 00:08:37,000
+than we see the potential for being able to get one of them back
+
+00:08:37,000 --> 00:08:41,000
+on the other hand when they do overlap then what will have
+
+00:08:41,000 --> 00:08:44,000
+is a daily as saying in particular discrete-time aliasing
+
+00:08:44,000 --> 00:08:48,000
+much as we had continuous time a leasing in the continuous-time case
+
+00:08:48,000 --> 00:08:51,000
+well notice in this picture dead
+
+00:08:51,000 --> 00:08:55,000
+what we have is we've chosen this pictures so that
+
+00:08:55,000 --> 00:08:59,000
+Omega sieve ass minus Omega 7 a.m.
+
+00:08:59,000 --> 00:09:05,000
+is greater than Omega Savannah am work with alertly so that Omega Sebastian is
+
+00:09:05,000 --> 00:09:06,000
+greater than
+
+00:09:06,000 --> 00:09:10,000
+to Omega to Omega
+
+00:09:10,000 --> 00:09:16,000
+so am and so with Omega serve as greater than 20 may get to them that corresponds
+
+00:09:16,000 --> 00:09:17,000
+to this picture
+
+00:09:17,000 --> 00:09:21,000
+whereas if that condition is violated
+
+00:09:21,000 --> 00:09:24,000
+than in fact the picture that we would have
+
+00:09:24,000 --> 00:09:28,000
+is a picture that looks like this and in this picture
+
+00:09:28,000 --> 00:09:33,000
+the individual replications of the four EA transform
+
+00:09:33,000 --> 00:09:38,000
+of the original signal overlap and we can no longer
+
+00:09:38,000 --> 00:09:43,000
+recover the for EA transform the original signal
+
+00:09:43,000 --> 00:09:46,000
+and this just as it was in continuous-time
+
+00:09:46,000 --> 00:09:50,000
+is referred to as alias
+
+00:09:50,000 --> 00:09:56,000
+now let's look more closely at the situation in which there is no aliasing
+
+00:09:56,000 --> 00:10:00,000
+and so in that case
+
+00:10:00,000 --> 00:10:05,000
+what we have is a Fourier transform
+
+00:10:05,000 --> 00:10:08,000
+for the sampled
+
+00:10:08,000 --> 00:10:13,000
+signal which is as i indicated here
+
+00:10:13,000 --> 00:10:16,000
+and the Fourier transform for the original signal
+
+00:10:16,000 --> 00:10:19,000
+as i indicated at the top and
+
+00:10:19,000 --> 00:10:23,000
+the question now is how do we recover this one from this one
+
+00:10:23,000 --> 00:10:28,000
+well the way that we do that just as we did in a continuous-time case
+
+00:10:28,000 --> 00:10:32,000
+is by low-pass filtering in particular
+
+00:10:32,000 --> 00:10:36,000
+processing in the time domain or in the frequency domain
+
+00:10:36,000 --> 00:10:40,000
+this where and idea low-pass filter
+
+00:10:40,000 --> 00:10:43,000
+has the effect of extracting that part
+
+00:10:43,000 --> 00:10:47,000
+the spectrum dead in fact we identify
+
+00:10:47,000 --> 00:10:50,000
+with the original signal that we
+
+00:10:50,000 --> 00:10:55,000
+began so
+
+00:10:55,000 --> 00:10:59,000
+what we see it again is that the process is very much the same as long as there's
+
+00:10:59,000 --> 00:11:00,000
+no aliasing
+
+00:11:00,000 --> 00:11:03,000
+we can recover the original signal by
+
+00:11:03,000 --> 00:11:06,000
+ideal low-pass filtering so
+
+00:11:06,000 --> 00:11:09,000
+the overall system is
+
+00:11:09,000 --> 00:11:13,000
+just to reiterate a system which
+
+00:11:13,000 --> 00:11:16,000
+consists love modulating
+
+00:11:16,000 --> 00:11:19,000
+the original sequence with
+
+00:11:19,000 --> 00:11:22,000
+appall strainer and Paul strain
+
+00:11:22,000 --> 00:11:27,000
+and then that is going to be processed
+
+00:11:27,000 --> 00:11:30,000
+with a low-pass filter
+
+00:11:30,000 --> 00:11:34,000
+the spectrum love the original signal X a van
+
+00:11:34,000 --> 00:11:40,000
+is what I show here the spectrum of the sampled signal where I'm drawing the
+
+00:11:40,000 --> 00:11:43,000
+picture on the assumption that the sampling period is 3
+
+00:11:43,000 --> 00:11:46,000
+is now what's indicated where these are replicated
+
+00:11:46,000 --> 00:11:50,000
+where the original spectrum is replicated
+
+00:11:50,000 --> 00:11:54,000
+this is now processed through a filter
+
+00:11:54,000 --> 00:11:57,000
+which for exact reconstruction
+
+00:11:57,000 --> 00:12:01,000
+is an ideal low-pass filter
+
+00:12:01,000 --> 00:12:04,000
+and so we would multiply this spectrum by this one
+
+00:12:04,000 --> 00:12:08,000
+and the result after doing that will generate
+
+00:12:08,000 --> 00:12:12,000
+a reconstructed spectrum which in fact is identical
+
+00:12:12,000 --> 00:12:16,000
+to the original so the time domain
+
+00:12:16,000 --> 00:12:21,000
+picture is the same I'm sorry the frequency domain pictures the same
+
+00:12:21,000 --> 00:12:24,000
+and what we would expect and is that the time to me
+
+00:12:24,000 --> 00:12:29,000
+picture would be the same well lets in fact look at the time domain
+
+00:12:29,000 --> 00:12:32,000
+and in the time domain what we have
+
+00:12:32,000 --> 00:12:38,000
+is an analysis more less identical to what we had in continuous-time
+
+00:12:38,000 --> 00:12:41,000
+we've course have the same system
+
+00:12:41,000 --> 00:12:45,000
+and in the time domain we r multiplying
+
+00:12:45,000 --> 00:12:48,000
+by an impulse train consequently
+
+00:12:48,000 --> 00:12:52,000
+the sample sequence is
+
+00:12:52,000 --> 00:12:55,000
+and impose train whose values are
+
+00:12:55,000 --> 00:13:01,000
+samples affects a van at integer multiples of capital and
+
+00:13:01,000 --> 00:13:04,000
+for the reconstruction this is
+
+00:13:04,000 --> 00:13:10,000
+now process through idea low-pass filter
+
+00:13:10,000 --> 00:13:13,000
+and that implements the convolution in the time domain
+
+00:13:13,000 --> 00:13:17,000
+and so the reconstructed signal is the convolution
+
+00:13:17,000 --> 00:13:20,000
+of the sample sequence and
+
+00:13:20,000 --> 00:13:23,000
+the filter impulse response and
+
+00:13:23,000 --> 00:13:26,000
+expressed another way namely writing at the convolution is
+
+00:13:26,000 --> 00:13:30,000
+some we have this expression and so it says then
+
+00:13:30,000 --> 00:13:33,000
+that the reconstruction is carried out
+
+00:13:33,000 --> 00:13:38,000
+by replacing the impulses here
+
+00:13:38,000 --> 00:13:42,000
+these impulses by versions of the
+
+00:13:42,000 --> 00:13:47,000
+filter impulse response
+
+00:13:47,000 --> 00:13:52,000
+well if the filter is an ideal 0 pass filter
+
+00:13:52,000 --> 00:13:56,000
+then that corresponds in the time domain to assign an ex
+
+00:13:56,000 --> 00:14:01,000
+over sin x kinda function and that is the interpolation
+
+00:14:01,000 --> 00:14:05,000
+in between the samples to do the reconstruction
+
+00:14:05,000 --> 00:14:10,000
+also as is discussed some white in the text we can
+
+00:14:10,000 --> 00:14:13,000
+consider other kinds of interpolation for example
+
+00:14:13,000 --> 00:14:18,000
+discrete-time zero-order hold or discreet I first-order whole just as we
+
+00:14:18,000 --> 00:14:20,000
+had in continuous-time
+
+00:14:20,000 --> 00:14:24,000
+and the issues and analysis for the discrete-time zero-order hold the
+
+00:14:24,000 --> 00:14:25,000
+first-order hold
+
+00:14:25,000 --> 00:14:30,000
+are very similar to what they were in continuous-time the zero-order hold
+
+00:14:30,000 --> 00:14:34,000
+just simply holding the value until the next sampling instant
+
+00:14:34,000 --> 00:14:38,000
+and the first-order hold carrying out linear interpolation
+
+00:14:38,000 --> 00:14:42,000
+in between the samples
+
+00:14:42,000 --> 00:14:46,000
+now in this sampling process
+
+00:14:46,000 --> 00:14:51,000
+if we look again at the way forms involved
+
+00:14:51,000 --> 00:14:54,000
+or sequences involved the process consisted
+
+00:14:54,000 --> 00:14:57,000
+love taking a sequence
+
+00:14:57,000 --> 00:15:01,000
+and extracting from it
+
+00:15:01,000 --> 00:15:06,000
+individual bad news and
+
+00:15:06,000 --> 00:15:10,000
+in between those values we have sequenced values equal to 0
+
+00:15:10,000 --> 00:15:14,000
+so what we're doing in this case
+
+00:15:14,000 --> 00:15:17,000
+is retaining
+
+00:15:17,000 --> 00:15:21,000
+the same number sequence values and simply setting
+
+00:15:21,000 --> 00:15:25,000
+some number of them equal to 0
+
+00:15:25,000 --> 00:15:29,000
+well let's say for example that we want to carry out
+
+00:15:29,000 --> 00:15:33,000
+sampling and what we're talking about is sequence and let's say the sequence
+
+00:15:33,000 --> 00:15:36,000
+stored in a computer memory
+
+00:15:36,000 --> 00:15:39,000
+as you can imagine the notion love sampling it
+
+00:15:39,000 --> 00:15:43,000
+and actually replacing some with the values by zero
+
+00:15:43,000 --> 00:15:47,000
+is somewhat inefficient namely it doesn't make sense to think of storing
+
+00:15:47,000 --> 00:15:49,000
+the memory a lot of zeros
+
+00:15:49,000 --> 00:15:52,000
+when in fact those zeros that we can always put back in
+
+00:15:52,000 --> 00:15:56,000
+we know exactly with the values are and if we know what the sampling
+
+00:15:56,000 --> 00:15:59,000
+rate was in discrete-time then we would know
+
+00:15:59,000 --> 00:16:03,000
+when and how to put the zeros back in
+
+00:16:03,000 --> 00:16:07,000
+so actually in discrete-time sampling
+
+00:16:07,000 --> 00:16:10,000
+what we've talked about so far is really only one
+
+00:16:10,000 --> 00:16:13,000
+part for one step in the process basically the other
+
+00:16:13,000 --> 00:16:17,000
+step is to take those zeros just throw them away because
+
+00:16:17,000 --> 00:16:22,000
+we can put them in any time we want to and really only retained for example
+
+00:16:22,000 --> 00:16:26,000
+in our computer memory or less than sequence values or whatever
+
+00:16:26,000 --> 00:16:30,000
+only retain the non-zero values
+
+00:16:30,000 --> 00:16:35,000
+so that process and the resulting sequence that we end up with
+
+00:16:35,000 --> 00:16:38,000
+is associated with a concept called estimation
+
+00:16:38,000 --> 00:16:42,000
+what I mean by destination is very simple
+
+00:16:42,000 --> 00:16:45,000
+what we're doing is instead of working with
+
+00:16:45,000 --> 00:16:50,000
+this sequence we're going to work with this sequence
+
+00:16:50,000 --> 00:16:53,000
+namely well toss out zeros
+
+00:16:53,000 --> 00:16:56,000
+in between here and collapse the sequence
+
+00:16:56,000 --> 00:17:00,000
+down only to the sequence values
+
+00:17:00,000 --> 00:17:03,000
+that are associated with the original X event
+
+00:17:03,000 --> 00:17:07,000
+now in talking about a decimated sequence
+
+00:17:07,000 --> 00:17:12,000
+we could of course do that directly from misstep down to hear
+
+00:17:12,000 --> 00:17:15,000
+although again in the analysis it will be somewhat
+
+00:17:15,000 --> 00:17:19,000
+more convenient to carry that out by
+
+00:17:19,000 --> 00:17:23,000
+thinking at least analytically interns with two step process
+
+00:17:23,000 --> 00:17:27,000
+one being a sampling process then the other being
+
+00:17:27,000 --> 00:17:30,000
+the destination but basically this is
+
+00:17:30,000 --> 00:17:33,000
+decimated version %uh that now
+
+00:17:33,000 --> 00:17:37,000
+for the grammatical purists out there
+
+00:17:37,000 --> 00:17:41,000
+the word estimation of course means taking every 10 won the implication is
+
+00:17:41,000 --> 00:17:42,000
+not dead
+
+00:17:42,000 --> 00:17:46,000
+were always sampling with a period of 10 the idea decimating
+
+00:17:46,000 --> 00:17:52,000
+is to pick out every and sample and end up with a collapsed sequence
+
+00:17:52,000 --> 00:17:56,000
+right now let's now look at a little bit in the analysis
+
+00:17:56,000 --> 00:18:02,000
+and understand what the consequences in the frequency domain
+
+00:18:02,000 --> 00:18:05,000
+in particular what we want to develop is
+
+00:18:05,000 --> 00:18:10,000
+how the Fourier transform the decimated sequence
+
+00:18:10,000 --> 00:18:13,000
+is related to the Fourier transform
+
+00:18:13,000 --> 00:18:16,000
+of the original sequence or the sample sequence
+
+00:18:16,000 --> 00:18:20,000
+so let's look at this in the frequency domain
+
+00:18:20,000 --> 00:18:23,000
+and so what we have is a
+
+00:18:23,000 --> 00:18:27,000
+decimated sequence which consists
+
+00:18:27,000 --> 00:18:32,000
+love pulling out every capital and bad you affect the van
+
+00:18:32,000 --> 00:18:36,000
+and of course that's in the same as we can either decimate x7
+
+00:18:36,000 --> 00:18:40,000
+or we can decimate the sample sick
+
+00:18:40,000 --> 00:18:45,000
+now in going through this analysis
+
+00:18:45,000 --> 00:18:48,000
+all kinda go through it quickly because again
+
+00:18:48,000 --> 00:18:51,000
+there's the issue with some slight mental gymnastics and if
+
+00:18:51,000 --> 00:18:56,000
+you're anything like I am it's usually best to kinda try to absorb at
+
+00:18:56,000 --> 00:19:00,000
+by yourself quietly rather than having somebody throw it at you
+
+00:19:00,000 --> 00:19:03,000
+let let me say though that that the steps that are following here are
+
+00:19:03,000 --> 00:19:05,000
+slightly different
+
+00:19:05,000 --> 00:19:08,000
+and the steps that I use in the tax is slightly different wave
+
+00:19:08,000 --> 00:19:13,000
+I'll going through the analysis I guess you could say for one thing that
+
+00:19:13,000 --> 00:19:16,000
+if we go through it twice and it comes out the same well of course it has to be
+
+00:19:16,000 --> 00:19:18,000
+right
+
+00:19:18,000 --> 00:19:22,000
+well anyway a here we have
+
+00:19:22,000 --> 00:19:26,000
+then the relationship between the decimated sequence
+
+00:19:26,000 --> 00:19:29,000
+the original sequence and the
+
+00:19:29,000 --> 00:19:32,000
+sample sequence and we know of course that
+
+00:19:32,000 --> 00:19:35,000
+the Fourier transform love the sample sequence
+
+00:19:35,000 --> 00:19:39,000
+is just simply this nation and now
+
+00:19:39,000 --> 00:19:42,000
+the kinda the idea in the analysis is
+
+00:19:42,000 --> 00:19:45,000
+that we can collapse this summation
+
+00:19:45,000 --> 00:19:49,000
+by recognizing bat this
+
+00:19:49,000 --> 00:19:52,000
+term is only non-zero
+
+00:19:52,000 --> 00:19:57,000
+at every and value and so if we do that
+
+00:19:57,000 --> 00:20:01,000
+essentially making a substitution variables with an equal to small and
+
+00:20:01,000 --> 00:20:03,000
+times capital and
+
+00:20:03,000 --> 00:20:06,000
+we can turn this into a summation on am
+
+00:20:06,000 --> 00:20:10,000
+and that's what I've done here and
+
+00:20:10,000 --> 00:20:13,000
+we've just simply use the fact that we can collapse the some
+
+00:20:13,000 --> 00:20:20,000
+because the fact is dead that all but every and values equal to 0
+
+00:20:20,000 --> 00:20:23,000
+so this then is the Fourier transform all the sample
+
+00:20:23,000 --> 00:20:29,000
+signal and now if we look at the Fourier transform of the
+
+00:20:29,000 --> 00:20:35,000
+decimated signal that for EA transform of course is this summation
+
+00:20:35,000 --> 00:20:38,000
+on the decimated sequence
+
+00:20:38,000 --> 00:20:42,000
+well what we want to look at is a correspondence between this equation and
+
+00:20:42,000 --> 00:20:43,000
+the one above it
+
+00:20:43,000 --> 00:20:47,000
+so we want to compare this equation to this one
+
+00:20:47,000 --> 00:20:52,000
+and recognizing that this decimated sequences just simply
+
+00:20:52,000 --> 00:20:57,000
+related to the sample sequence this way
+
+00:20:57,000 --> 00:21:01,000
+these two become equal under
+
+00:21:01,000 --> 00:21:04,000
+a substitution variables in particular notice
+
+00:21:04,000 --> 00:21:07,000
+that if we replace in
+
+00:21:07,000 --> 00:21:11,000
+this equation Omega by
+
+00:21:11,000 --> 00:21:16,000
+Omega times capital and and these two equations become equal
+
+00:21:16,000 --> 00:21:21,000
+so the consequences that then what it all boils down to and says
+
+00:21:21,000 --> 00:21:25,000
+is that the relationship between the
+
+00:21:25,000 --> 00:21:29,000
+decimated the Fourier transform the decimated sequence
+
+00:21:29,000 --> 00:21:34,000
+and the Fourier transform the sample sequence is simply
+
+00:21:34,000 --> 00:21:37,000
+a frequency scaling corresponding
+
+00:21:37,000 --> 00:21:40,000
+to dividing the frequency axis by capital and
+
+00:21:40,000 --> 00:21:44,000
+so thats essentially what happens that's really all
+
+00:21:44,000 --> 00:21:48,000
+that's involved in the destination process and now
+
+00:21:48,000 --> 00:21:52,000
+again let's look at that pictorially and see what it means
+
+00:21:52,000 --> 00:21:56,000
+so what we want to look at now that we've looked in the time domain
+
+00:21:56,000 --> 00:22:00,000
+in this particular you graph we
+
+00:22:00,000 --> 00:22:04,000
+now wanna look in the frequency-domain
+
+00:22:04,000 --> 00:22:07,000
+and in the frequency domain we have
+
+00:22:07,000 --> 00:22:11,000
+again the
+
+00:22:11,000 --> 00:22:15,000
+Fourier transform of the original sequence
+
+00:22:15,000 --> 00:22:19,000
+and we have the Fourier transform
+
+00:22:19,000 --> 00:22:23,000
+or the sample sequence
+
+00:22:23,000 --> 00:22:26,000
+and now the 48 transform of the
+
+00:22:26,000 --> 00:22:29,000
+decimated sequence is simply this
+
+00:22:29,000 --> 00:22:34,000
+spectrum with a linear frequency scaling
+
+00:22:34,000 --> 00:22:39,000
+and in particular it's simply car sponsor multiplying this frequency axis
+
+00:22:39,000 --> 00:22:41,000
+by capital and
+
+00:22:41,000 --> 00:22:45,000
+and notice noticed that this frequency now
+
+00:22:45,000 --> 00:22:48,000
+to pry or capital and that frequency
+
+00:22:48,000 --> 00:22:51,000
+ends up getting rescaled
+
+00:22:51,000 --> 00:22:55,000
+to a frequency love to pie
+
+00:22:55,000 --> 00:22:59,000
+so in fact now in the rescaling
+
+00:22:59,000 --> 00:23:03,000
+its at this point in the decimation
+
+00:23:03,000 --> 00:23:07,000
+gets rescaled to this point
+
+00:23:07,000 --> 00:23:10,000
+and correspondingly of course the sole spectrum
+
+00:23:10,000 --> 00:23:13,000
+broadens out now we can also look at that
+
+00:23:13,000 --> 00:23:18,000
+in the context of the original spectrum and you can see that the relationship
+
+00:23:18,000 --> 00:23:23,000
+between the original spectrum and the spectrum the decimated signal
+
+00:23:23,000 --> 00:23:26,000
+corresponds to simply linearly scaling
+
+00:23:26,000 --> 00:23:29,000
+yes but it's important also
+
+00:23:29,000 --> 00:23:34,000
+to keep in mind dead that analysis
+
+00:23:34,000 --> 00:23:38,000
+that particular relationship assumes that we've avoided aliasing
+
+00:23:38,000 --> 00:23:42,000
+the relationship between the specter the decimated signal
+
+00:23:42,000 --> 00:23:47,000
+and the spectra the sample signal is true whether or not we have a leasing
+
+00:23:47,000 --> 00:23:51,000
+but being able to clearly associated with
+
+00:23:51,000 --> 00:23:54,000
+just simply scaling love this spectrum
+
+00:23:54,000 --> 00:23:58,000
+the original signal assumes that the spectrum
+
+00:23:58,000 --> 00:24:01,000
+the original signal shape the shape of it is preserved
+
+00:24:01,000 --> 00:24:06,000
+when we generate the sample sick
+
+00:24:06,000 --> 00:24:12,000
+okay well when my eight discrete-time sampling and for that matter decimation
+
+00:24:12,000 --> 00:24:18,000
+the use well i indicated one context in which it might be useful
+
+00:24:18,000 --> 00:24:21,000
+at the beginning at this lecture and let me now focusing on that
+
+00:24:21,000 --> 00:24:25,000
+a little more specifically
+
+00:24:25,000 --> 00:24:29,000
+in particular suppose that we have
+
+00:24:29,000 --> 00:24:33,000
+going through a process
+
+00:24:33,000 --> 00:24:40,000
+in which the a continuous-time signal has been converted to a discrete-time
+
+00:24:40,000 --> 00:24:41,000
+signal
+
+00:24:41,000 --> 00:24:44,000
+and we then carry out some additional discrete-time
+
+00:24:44,000 --> 00:24:49,000
+filtering so we have a situation where we've gone through a continuous to
+
+00:24:49,000 --> 00:24:52,000
+discrete-time conversion
+
+00:24:52,000 --> 00:24:57,000
+and after that conversion we carry out some discrete-time
+
+00:24:57,000 --> 00:25:01,000
+filtering and so
+
+00:25:01,000 --> 00:25:05,000
+and in particular and going through this part of the process
+
+00:25:05,000 --> 00:25:08,000
+we choose the sampling rate for
+
+00:25:08,000 --> 00:25:12,000
+going from the continuous-time signal to the sequence
+
+00:25:12,000 --> 00:25:15,000
+so that we don't violate the sampling there
+
+00:25:15,000 --> 00:25:19,000
+well let's suppose then that this is the spectrum
+
+00:25:19,000 --> 00:25:22,000
+love the continuous time signal
+
+00:25:22,000 --> 00:25:25,000
+below it we have the spectrum love
+
+00:25:25,000 --> 00:25:31,000
+the output of the continuous and discrete-time conversion
+
+00:25:31,000 --> 00:25:34,000
+and I've chosen the sampling frequency
+
+00:25:34,000 --> 00:25:38,000
+to be just high end of so that I avoid aliasing
+
+00:25:38,000 --> 00:25:41,000
+okay well
+
+00:25:41,000 --> 00:25:46,000
+that then is the the lower sampling frequency I can pick
+
+00:25:46,000 --> 00:25:51,000
+but now if we go through some additional ok pass filtering
+
+00:25:51,000 --> 00:25:55,000
+then let's see what happens if I now
+
+00:25:55,000 --> 00:25:59,000
+low-pass filter the sequence XFN then
+
+00:25:59,000 --> 00:26:03,000
+in effect on multiplying the sequence
+
+00:26:03,000 --> 00:26:06,000
+spectrum by this filter
+
+00:26:06,000 --> 00:26:11,000
+and so the result of that the product though the filter frequency response
+
+00:26:11,000 --> 00:26:15,000
+and the Fourier transform exit then would have a shape
+
+00:26:15,000 --> 00:26:20,000
+somewhat like I indicate below
+
+00:26:20,000 --> 00:26:23,000
+now notice that in this spectrum
+
+00:26:23,000 --> 00:26:30,000
+although in this the input to the filter this entire band was filled up
+
+00:26:31,000 --> 00:26:35,000
+in the output the filter there is a band
+
+00:26:35,000 --> 00:26:40,000
+that is in fact up zero a that has zero energy and
+
+00:26:40,000 --> 00:26:43,000
+so what I can consider doing is
+
+00:26:43,000 --> 00:26:46,000
+taking the output sequence from the filter
+
+00:26:46,000 --> 00:26:49,000
+and in fact we see a planet in other words
+
+00:26:49,000 --> 00:26:54,000
+sampling it which would be more less associated with a different sampling
+
+00:26:54,000 --> 00:26:54,000
+rate
+
+00:26:54,000 --> 00:26:58,000
+in the for the continuous-time signals involved
+
+00:26:58,000 --> 00:27:01,000
+so I could now go through a process
+
+00:27:01,000 --> 00:27:05,000
+which is commonly referred to as down sampling that is
+
+00:27:05,000 --> 00:27:09,000
+lowering the sampling rate when we do that of course what's going to happen
+
+00:27:09,000 --> 00:27:13,000
+is that in fact this spectral energy will now
+
+00:27:13,000 --> 00:27:16,000
+fill out more love the band and
+
+00:27:16,000 --> 00:27:20,000
+for example if I if this was the third then
+
+00:27:20,000 --> 00:27:24,000
+in fact if I down sampled by a factor of three then
+
+00:27:24,000 --> 00:27:28,000
+I would fill up the entire band with this energy but since I've done some
+
+00:27:28,000 --> 00:27:31,000
+additional 0 pass filtering as i indicate here
+
+00:27:31,000 --> 00:27:35,000
+there's no problem with aliasing if
+
+00:27:35,000 --> 00:27:39,000
+I had let's say down sample by a factor of three and I'm now taking that signal
+
+00:27:39,000 --> 00:27:43,000
+and can bring it back to a continuous-time signal
+
+00:27:43,000 --> 00:27:47,000
+then course the way I can't do that is by simply running
+
+00:27:47,000 --> 00:27:52,000
+my output clock for the discrete to continuous-time converter
+
+00:27:52,000 --> 00:27:56,000
+I can run my app but clock at a third the rate
+
+00:27:56,000 --> 00:28:03,000
+love the input clock and that in effect takes care the bookkeeping for me
+
+00:28:03,000 --> 00:28:06,000
+okay so here we have now
+
+00:28:06,000 --> 00:28:10,000
+the notion love sampling a sequence
+
+00:28:10,000 --> 00:28:15,000
+and very closely tied in with that the notion of decimating a sequence
+
+00:28:15,000 --> 00:28:18,000
+and related to both of those the notion love
+
+00:28:18,000 --> 00:28:21,000
+down sampling that is changing the sampling
+
+00:28:21,000 --> 00:28:26,000
+rate so that if we were tying this in with continuous-time signals
+
+00:28:26,000 --> 00:28:30,000
+we've essentially changed our clock grade
+
+00:28:30,000 --> 00:28:34,000
+and we might also want to and it's important to
+
+00:28:34,000 --> 00:28:37,000
+considered the opposite of that so
+
+00:28:37,000 --> 00:28:41,000
+now a question is what's an opposite what's the opposite destination suppose
+
+00:28:41,000 --> 00:28:43,000
+that we had a sequence
+
+00:28:43,000 --> 00:28:47,000
+we decimated thinking about it as a two-step process
+
+00:28:47,000 --> 00:28:51,000
+that would correspond to first multiplying by an impulse train where
+
+00:28:51,000 --> 00:28:53,000
+there are bunches zeros
+
+00:28:53,000 --> 00:28:58,000
+in the air and then choosing throwing away the zeros in keeping only the
+
+00:28:58,000 --> 00:28:59,000
+values that
+
+00:28:59,000 --> 00:29:03,000
+are 90 because the zeros we can always recreate
+
+00:29:03,000 --> 00:29:07,000
+well in fact the inverse process is very specifically a process
+
+00:29:07,000 --> 00:29:10,000
+love recreating the zeros and then
+
+00:29:10,000 --> 00:29:14,000
+doing that the sampling so in
+
+00:29:14,000 --> 00:29:19,000
+the opposite operation
+
+00:29:19,000 --> 00:29:22,000
+what we would do is undue
+
+00:29:22,000 --> 00:29:25,000
+the decimation step and
+
+00:29:25,000 --> 00:29:29,000
+that would consist of converting the decimated sequence
+
+00:29:29,000 --> 00:29:33,000
+back to an impulse train
+
+00:29:33,000 --> 00:29:37,000
+and then processing that imposed strain
+
+00:29:37,000 --> 00:29:41,000
+by ideal low-pass filter
+
+00:29:41,000 --> 00:29:45,000
+to do the interpolation or reconstruction
+
+00:29:45,000 --> 00:29:49,000
+filling in the values which in this imposed strain
+
+00:29:49,000 --> 00:29:52,000
+are equal to 0 so
+
+00:29:52,000 --> 00:29:55,000
+we now have the two steps we take the decimated sequence
+
+00:29:55,000 --> 00:29:58,000
+we expanded out putting in 000's
+
+00:29:58,000 --> 00:30:02,000
+and then we the sample that by processing it
+
+00:30:02,000 --> 00:30:06,000
+through a low-pass filter so just
+
+00:30:06,000 --> 00:30:11,000
+have looking at sequences again
+
+00:30:11,000 --> 00:30:15,000
+what we have is an original
+
+00:30:15,000 --> 00:30:19,000
+sequence the secret sex if an and
+
+00:30:19,000 --> 00:30:23,000
+then the sample sequence is simply a sequence
+
+00:30:23,000 --> 00:30:28,000
+which alternates in this particular case those sequence values 0
+
+00:30:28,000 --> 00:30:31,000
+here what we're seeing is that the
+
+00:30:31,000 --> 00:30:35,000
+sampling rate is that that the sampling period is 2
+
+00:30:35,000 --> 00:30:40,000
+and so every other value here is equal to 0
+
+00:30:40,000 --> 00:30:44,000
+the decimated sequence then is this sequence
+
+00:30:44,000 --> 00:30:48,000
+collapsed as a show in the sequence above
+
+00:30:48,000 --> 00:30:51,000
+and so it's in effect I'm compressing
+
+00:30:51,000 --> 00:30:54,000
+the sample sequence or the original sequence
+
+00:30:54,000 --> 00:30:58,000
+so that we throw out the sequence value Z
+
+00:30:58,000 --> 00:31:02,000
+which were equal to 0 in the sample sequence
+
+00:31:02,000 --> 00:31:07,000
+now in recovering the original sequence from the decimated sequence
+
+00:31:07,000 --> 00:31:10,000
+we can think up a two-step process namely
+
+00:31:10,000 --> 00:31:13,000
+we spread this out
+
+00:31:13,000 --> 00:31:17,000
+alternating with zeros and again keeping in mind that this is drawn for the case
+
+00:31:17,000 --> 00:31:19,000
+where capitalists to
+
+00:31:19,000 --> 00:31:23,000
+and then finally we interpolate between
+
+00:31:23,000 --> 00:31:26,000
+the non-zero values here by going through
+
+00:31:26,000 --> 00:31:30,000
+a low-pass filter to reconstruct the
+
+00:31:30,000 --> 00:31:33,000
+original sequence and that's what we show
+
+00:31:33,000 --> 00:31:37,000
+finally on the bottom curve so
+
+00:31:37,000 --> 00:31:40,000
+that's what we would see in the time domain let's
+
+00:31:40,000 --> 00:31:43,000
+look at what we would see in the frequency domain
+
+00:31:43,000 --> 00:31:48,000
+in the frequency domain we have to begin with
+
+00:31:48,000 --> 00:31:51,000
+the sequence on the bottom or the spectrum on the bottom
+
+00:31:51,000 --> 00:31:56,000
+which would correspond to the original spectrum
+
+00:31:56,000 --> 00:32:00,000
+then through the sampling process that is periodically replicated
+
+00:32:00,000 --> 00:32:04,000
+again this is drawn on the assumption that the
+
+00:32:04,000 --> 00:32:09,000
+sampling frequency is pie or the sampling period is equal to 2
+
+00:32:09,000 --> 00:32:13,000
+and so this is now replicated and
+
+00:32:13,000 --> 00:32:16,000
+then in going from this to the
+
+00:32:16,000 --> 00:32:20,000
+spectrum love the decimated sequence
+
+00:32:20,000 --> 00:32:23,000
+we would rescale the frequency axis
+
+00:32:23,000 --> 00:32:27,000
+so that the frequency hi now gets rescaled
+
+00:32:27,000 --> 00:32:31,000
+in the spectrum for the decimated sequence
+
+00:32:31,000 --> 00:32:36,000
+to a frequency which is to pie and so this now is the spectrum
+
+00:32:36,000 --> 00:32:39,000
+love the decimated sequence if we now
+
+00:32:39,000 --> 00:32:43,000
+want to re convert to the original
+
+00:32:43,000 --> 00:32:49,000
+sequence we would first interspersed in the time domain with zeros
+
+00:32:49,000 --> 00:32:54,000
+corresponding to compressing in the frequency domain
+
+00:32:54,000 --> 00:32:57,000
+that this would then be low-pass filtered
+
+00:32:57,000 --> 00:33:01,000
+and the low-pass filtering would consist
+
+00:33:01,000 --> 00:33:05,000
+love throwing away this replication accounting for
+
+00:33:05,000 --> 00:33:08,000
+a factor which is the factor capital and and
+
+00:33:08,000 --> 00:33:13,000
+extracting the portion of the spectrum which is associated
+
+00:33:13,000 --> 00:33:16,000
+with the spectrum love
+
+00:33:16,000 --> 00:33:20,000
+the original signal which we began with so
+
+00:33:20,000 --> 00:33:24,000
+once again you can we have decimation and interpolation
+
+00:33:24,000 --> 00:33:29,000
+and the decimation can be thought I love
+
+00:33:29,000 --> 00:33:32,000
+as a time compression corresponds to
+
+00:33:32,000 --> 00:33:35,000
+frequency expansion and and the interpolation
+
+00:33:35,000 --> 00:33:41,000
+process is then just the reverse
+
+00:33:41,000 --> 00:33:46,000
+now there are lot to situations in which decimation and interpolation
+
+00:33:46,000 --> 00:33:49,000
+and discrete-time sampling are useful and
+
+00:33:49,000 --> 00:33:53,000
+one context that I just want to quickly draw your attention to
+
+00:33:53,000 --> 00:33:57,000
+is the use the decimation and interpolation in
+
+00:33:57,000 --> 00:34:01,000
+what is commonly referred to as sampling rate conversion
+
+00:34:01,000 --> 00:34:07,000
+what the basic issue in sampling rate conversion is is that
+
+00:34:07,000 --> 00:34:10,000
+in some situations in a very common one is
+
+00:34:10,000 --> 00:34:15,000
+digital audio continuous-time signals sample
+
+00:34:15,000 --> 00:34:18,000
+and those sample values are stored or whatever
+
+00:34:18,000 --> 00:34:23,000
+and kinda the notion is that that perhaps when that is played back
+
+00:34:23,000 --> 00:34:28,000
+its playback through a different system and a different system has
+
+00:34:28,000 --> 00:34:33,000
+a different assumed sampling frequency your sampling period
+
+00:34:33,000 --> 00:34:36,000
+so that's kind of the issue in the idea
+
+00:34:36,000 --> 00:34:40,000
+we have but say a continuous-time signal
+
+00:34:40,000 --> 00:34:45,000
+which we've converted to a sequence through a sampling process
+
+00:34:45,000 --> 00:34:48,000
+using innocent sampling period if t1
+
+00:34:48,000 --> 00:34:53,000
+and the sequence values made in for example
+
+00:34:53,000 --> 00:34:56,000
+be put into digital storage in the case
+
+00:34:56,000 --> 00:35:01,000
+have a digital audio system it may for example go on to a digital record
+
+00:35:01,000 --> 00:35:05,000
+in and it might be the output of this that we want
+
+00:35:05,000 --> 00:35:08,000
+to recreate or we might in fact
+
+00:35:08,000 --> 00:35:12,000
+follow that with some additional processing
+
+00:35:12,000 --> 00:35:15,000
+whatever that additional processing is an all kinda put a
+
+00:35:15,000 --> 00:35:21,000
+question mark in there because we don't know exactly what that might be
+
+00:35:21,000 --> 00:35:24,000
+and then in any case the result is that
+
+00:35:24,000 --> 00:35:28,000
+is going to be converted back to
+
+00:35:28,000 --> 00:35:31,000
+a continuous-time signal but
+
+00:35:31,000 --> 00:35:35,000
+it might be converted through a system
+
+00:35:35,000 --> 00:35:38,000
+that has a different assumed
+
+00:35:38,000 --> 00:35:41,000
+sampling period and so
+
+00:35:41,000 --> 00:35:47,000
+a very common issue and it comes up as i indicated particularly in digital audio
+
+00:35:47,000 --> 00:35:51,000
+a very common issue is to be able to convert
+
+00:35:51,000 --> 00:35:54,000
+from wanna soon sampling period
+
+00:35:54,000 --> 00:35:57,000
+t1r sampling frequency to
+
+00:35:57,000 --> 00:36:01,000
+another soon sampling period now
+
+00:36:01,000 --> 00:36:05,000
+how would we do that well in fact we do that by using
+
+00:36:05,000 --> 00:36:09,000
+the ideas of decimation and interpolation
+
+00:36:09,000 --> 00:36:12,000
+in particular if we had for example
+
+00:36:12,000 --> 00:36:16,000
+the situation where we wanted to convert from
+
+00:36:16,000 --> 00:36:20,000
+sampling period t+1 to sampling period
+
+00:36:20,000 --> 00:36:24,000
+which was twice as long as they're at then
+
+00:36:24,000 --> 00:36:27,000
+essentially we got we're going to take the sequence
+
+00:36:27,000 --> 00:36:30,000
+and process it in a way
+
+00:36:30,000 --> 00:36:34,000
+that would in effect correspond to assuming that we had sample
+
+00:36:34,000 --> 00:36:38,000
+at half the original frequency well how do we do that the way we do it
+
+00:36:38,000 --> 00:36:43,000
+is we take the sequence we have we just throw away every other bad
+
+00:36:43,000 --> 00:36:48,000
+so in that case we would then for this sampling rate conversion
+
+00:36:48,000 --> 00:36:52,000
+down sample an decime or
+
+00:36:52,000 --> 00:36:55,000
+actually we might not go through this step formally we might just simply
+
+00:36:55,000 --> 00:36:57,000
+destiny
+
+00:36:57,000 --> 00:37:01,000
+now we might have an alternative situation
+
+00:37:01,000 --> 00:37:06,000
+where in fact the new sampling period sampling purity at put is
+
+00:37:06,000 --> 00:37:10,000
+half the sampling period the input corresponding
+
+00:37:10,000 --> 00:37:15,000
+to soon sampling frequency which is twice as high
+
+00:37:15,000 --> 00:37:21,000
+and in that case then that we would go through a process of interpolation and
+
+00:37:21,000 --> 00:37:22,000
+in particular we were
+
+00:37:22,000 --> 00:37:27,000
+up sample and interpolate by a factor of two to one
+
+00:37:27,000 --> 00:37:33,000
+so in one case were simply throwing away every other value in the other case what
+
+00:37:33,000 --> 00:37:35,000
+we're going to do is take our sequence
+
+00:37:35,000 --> 00:37:39,000
+putting zeros put it through a low-pass filter to interpolate
+
+00:37:39,000 --> 00:37:44,000
+now like would be simple if everything happen in simple integer amounts like
+
+00:37:44,000 --> 00:37:45,000
+that
+
+00:37:45,000 --> 00:37:48,000
+more common situation is that we may have
+
+00:37:48,000 --> 00:37:52,000
+and assumed output sampling period
+
+00:37:52,000 --> 00:37:57,000
+which is three heads above the input sampling period
+
+00:37:57,000 --> 00:38:00,000
+and now the question is what are we going to do to convert from this
+
+00:38:00,000 --> 00:38:02,000
+sampling period
+
+00:38:02,000 --> 00:38:05,000
+to this sampling period well
+
+00:38:05,000 --> 00:38:09,000
+in fact the answer to that is to use a combination
+
+00:38:09,000 --> 00:38:14,000
+all down sampling and up sampling or up sampling and down sampling
+
+00:38:14,000 --> 00:38:17,000
+covertly interpolation decimation
+
+00:38:17,000 --> 00:38:21,000
+and for this particular case in fact what we would do
+
+00:38:21,000 --> 00:38:24,000
+is to first take the data
+
+00:38:24,000 --> 00:38:28,000
+up sample by a factor of two
+
+00:38:28,000 --> 00:38:31,000
+and then down sample the result of that
+
+00:38:31,000 --> 00:38:35,000
+by a factor of three and what that would give us
+
+00:38:35,000 --> 00:38:38,000
+is a sampling rate conversion overall
+
+00:38:38,000 --> 00:38:42,000
+love three hands or sampling period conversion three here's
+
+00:38:42,000 --> 00:38:46,000
+and more generally what you could think of is how you might do this
+
+00:38:46,000 --> 00:38:51,000
+if in general the relationship between the
+
+00:38:51,000 --> 00:38:54,000
+input and output sampling periods with some rational number:
+
+00:38:54,000 --> 00:38:58,000
+P over Q and so in fact in many
+
+00:38:58,000 --> 00:39:02,000
+systems and hardware systems related to digital audio
+
+00:39:02,000 --> 00:39:06,000
+very often the sampling rate conversion most typically the same thing rate
+
+00:39:06,000 --> 00:39:07,000
+conversion is done
+
+00:39:07,000 --> 00:39:12,000
+through apostle process up sampling or interpolating
+
+00:39:12,000 --> 00:39:18,000
+and then down sampling by some other now
+
+00:39:18,000 --> 00:39:22,000
+right now what we've seen we've talked about in
+
+00:39:22,000 --> 00:39:26,000
+in a set of lectures is
+
+00:39:26,000 --> 00:39:29,000
+the concepts love sampling a signal
+
+00:39:29,000 --> 00:39:33,000
+and what we've seen is that the signal can be represented by samples under
+
+00:39:33,000 --> 00:39:35,000
+certain conditions
+
+00:39:35,000 --> 00:39:38,000
+and the sampling that we've been talking about is sampling
+
+00:39:38,000 --> 00:39:41,000
+in the time domain we've done that for continuous-time
+
+00:39:41,000 --> 00:39:45,000
+we've done it for discrete-time
+
+00:39:45,000 --> 00:39:49,000
+now we know that their is some type a duality
+
+00:39:49,000 --> 00:39:52,000
+both continuous-time and discrete-time some type a duality
+
+00:39:52,000 --> 00:39:56,000
+between the time-domain and frequency-domain and so is you can
+
+00:39:56,000 --> 00:39:57,000
+imagine
+
+00:39:57,000 --> 00:40:01,000
+we can also talk about sampling
+
+00:40:01,000 --> 00:40:05,000
+in the frequency domain and expected
+
+00:40:05,000 --> 00:40:10,000
+more or less the kinda properties and analysis
+
+00:40:10,000 --> 00:40:15,000
+will be similar to those related to sampling in the time domain
+
+00:40:15,000 --> 00:40:18,000
+well i wanna talk just briefly about that
+
+00:40:18,000 --> 00:40:22,000
+and leave the more detailed discussion
+
+00:40:22,000 --> 00:40:26,000
+to the text and video course manual
+
+00:40:26,000 --> 00:40:29,000
+but let me indicate for example one context in which
+
+00:40:29,000 --> 00:40:33,000
+frequency-domain sampling is important suppose that
+
+00:40:33,000 --> 00:40:37,000
+you have signal and what you'd like to
+
+00:40:37,000 --> 00:40:41,000
+measure is it's for a a transformer spectra
+
+00:40:41,000 --> 00:40:46,000
+well course if you want to measure it are calculated
+
+00:40:46,000 --> 00:40:49,000
+you can never do that exactly and every single frequency there too many
+
+00:40:49,000 --> 00:40:52,000
+frequencies namely an infinite number of them
+
+00:40:52,000 --> 00:40:56,000
+and so in fact all that you can really calculator measure
+
+00:40:56,000 --> 00:40:59,000
+are is the 48 transform data set
+
+00:40:59,000 --> 00:41:03,000
+love sample frequency so essentially
+
+00:41:03,000 --> 00:41:06,000
+if you are going to look at a spectrum
+
+00:41:06,000 --> 00:41:11,000
+continuous-time and discrete-time you can only really look at samples
+
+00:41:11,000 --> 00:41:14,000
+and a reasonable question to ask Dan is
+
+00:41:14,000 --> 00:41:17,000
+when does a set of samples in fact
+
+00:41:17,000 --> 00:41:20,000
+tell you everything that there is to know about
+
+00:41:20,000 --> 00:41:24,000
+the Fourier transform thats that
+
+00:41:24,000 --> 00:41:27,000
+in the answer to that is very closely related to the concept
+
+00:41:27,000 --> 00:41:31,000
+a frequency-domain sample
+
+00:41:31,000 --> 00:41:34,000
+well frequency-domain sampling just to kinda introduce
+
+00:41:34,000 --> 00:41:37,000
+the topic car spines
+
+00:41:37,000 --> 00:41:40,000
+and can be analyzed interns love
+
+00:41:40,000 --> 00:41:45,000
+doing modulation in the frequency domain
+
+00:41:45,000 --> 00:41:49,000
+very much like the modulation that we carried out in the time domain for
+
+00:41:49,000 --> 00:41:51,000
+time-domain sampling
+
+00:41:51,000 --> 00:41:55,000
+and so we would multiply the Fourier transform
+
+00:41:55,000 --> 00:41:59,000
+love the signal was for
+
+00:41:59,000 --> 00:42:02,000
+spectrum is to be sampled by
+
+00:42:02,000 --> 00:42:05,000
+an impulse train in frequency and so
+
+00:42:05,000 --> 00:42:10,000
+shown below is what might be a representative
+
+00:42:10,000 --> 00:42:13,000
+spectrum for the input signal
+
+00:42:13,000 --> 00:42:17,000
+and the spectrum then for the
+
+00:42:17,000 --> 00:42:21,000
+signal associated with the frequency-domain sampling
+
+00:42:21,000 --> 00:42:25,000
+consists love multiplying the frequency-domain
+
+00:42:25,000 --> 00:42:29,000
+by this impulse train or correspondingly
+
+00:42:29,000 --> 00:42:32,000
+the for EA transform love
+
+00:42:32,000 --> 00:42:36,000
+the resulting signal is an impulse train
+
+00:42:36,000 --> 00:42:40,000
+in frequency with an envelope
+
+00:42:40,000 --> 00:42:43,000
+which is the original spectrum that we were
+
+00:42:43,000 --> 00:42:48,000
+sampling well this of course is what we would do
+
+00:42:48,000 --> 00:42:52,000
+in the frequency domain its modulation by Nepal strain
+
+00:42:52,000 --> 00:42:55,000
+what does this mean in the time domain
+
+00:42:55,000 --> 00:42:59,000
+well let's see multiplication in the time domain is convolution in the
+
+00:42:59,000 --> 00:43:01,000
+frequency domain
+
+00:43:01,000 --> 00:43:04,000
+convolution the frequency domain is multiplication
+
+00:43:04,000 --> 00:43:07,000
+I'm sorry multiplication the frequency domain and is
+
+00:43:07,000 --> 00:43:12,000
+convolution the time to me and in fact the process in the time domain is a
+
+00:43:12,000 --> 00:43:14,000
+convolution process
+
+00:43:14,000 --> 00:43:17,000
+namely the time domain signal is
+
+00:43:17,000 --> 00:43:20,000
+replicated and
+
+00:43:20,000 --> 00:43:25,000
+time an integer amounts love a particular time associated with the
+
+00:43:25,000 --> 00:43:28,000
+spacing in frequency
+
+00:43:28,000 --> 00:43:31,000
+under which we doing the frequency-domain sampling
+
+00:43:31,000 --> 00:43:34,000
+so in fact if we look at this
+
+00:43:34,000 --> 00:43:39,000
+in the time domain
+
+00:43:39,000 --> 00:43:43,000
+the resulting picture corresponds to
+
+00:43:43,000 --> 00:43:50,000
+an original signal whose spectrum or Fourier transform we've sampled
+
+00:43:50,000 --> 00:43:53,000
+and a consequence if the sampling is dead
+
+00:43:53,000 --> 00:43:56,000
+The Associated time domain signal
+
+00:43:56,000 --> 00:44:02,000
+is just like the original signal but periodically replicated in time now not
+
+00:44:02,000 --> 00:44:04,000
+frequency but in time
+
+00:44:04,000 --> 00:44:08,000
+at integer multiples up to par I divided by
+
+00:44:08,000 --> 00:44:12,000
+the spectral sampling interval Omega 0
+
+00:44:12,000 --> 00:44:17,000
+and so this then is the time function associated with
+
+00:44:17,000 --> 00:44:21,000
+the sample frequency function now
+
+00:44:21,000 --> 00:44:25,000
+that's not surprising because what we've done is generated
+
+00:44:25,000 --> 00:44:29,000
+a and impose train and frequency with a certain on below
+
+00:44:29,000 --> 00:44:34,000
+we know that the important post Raina frequencies the Fourier transform
+
+00:44:34,000 --> 00:44:39,000
+love a periodic time function and so in fact we have a periodic time function
+
+00:44:39,000 --> 00:44:43,000
+we also know that the envelope all those impulses we
+
+00:44:43,000 --> 00:44:47,000
+we know this from way back with when we talked about for you transforms
+
+00:44:47,000 --> 00:44:51,000
+the envelope in fact is the Fourier transform one period
+
+00:44:51,000 --> 00:44:54,000
+and so all of this of course fits together as it should in a consistent
+
+00:44:54,000 --> 00:44:56,000
+way
+
+00:44:56,000 --> 00:44:59,000
+now given dead we have
+
+00:44:59,000 --> 00:45:04,000
+is periodic time function whose Fourier transform is
+
+00:45:04,000 --> 00:45:07,000
+the samples in the frequency domain how do we get back
+
+00:45:07,000 --> 00:45:11,000
+the original time function well
+
+00:45:11,000 --> 00:45:15,000
+with time-domain sampling what we did
+
+00:45:15,000 --> 00:45:19,000
+was to multiplying the frequency-domain
+
+00:45:19,000 --> 00:45:24,000
+by agape or window to extract that part of the spectrum
+
+00:45:24,000 --> 00:45:27,000
+what we do here is exactly the same thing
+
+00:45:27,000 --> 00:45:31,000
+namely multiply in the time domain by
+
+00:45:31,000 --> 00:45:35,000
+a time window which extracts just one period
+
+00:45:35,000 --> 00:45:39,000
+his periodic signal which with then give us back
+
+00:45:39,000 --> 00:45:42,000
+the original signal that we started with
+
+00:45:42,000 --> 00:45:45,000
+now also let's keep in mind going back
+
+00:45:45,000 --> 00:45:49,000
+to this spectrum and the related sorry this time function in the relationship
+
+00:45:49,000 --> 00:45:51,000
+between them
+
+00:45:51,000 --> 00:45:56,000
+that again there is the potential if this time function is too long
+
+00:45:56,000 --> 00:45:59,000
+in relation to 2pi divided by Omega 0
+
+00:45:59,000 --> 00:46:03,000
+there's the potential for these two overlap and so
+
+00:46:03,000 --> 00:46:08,000
+what this means is that in fact what we can end up with
+
+00:46:08,000 --> 00:46:12,000
+if the sample spacing a frequency is not small enough
+
+00:46:12,000 --> 00:46:16,000
+well we can end up with isn't overlap in the replication
+
+00:46:16,000 --> 00:46:20,000
+in the time domain and what that corresponds to an what's called
+
+00:46:20,000 --> 00:46:23,000
+is in fact time a lease so
+
+00:46:23,000 --> 00:46:28,000
+we can apply merely saying with frequency-domain sampling just as we can
+
+00:46:28,000 --> 00:46:28,000
+have
+
+00:46:28,000 --> 00:46:33,000
+frequency alias saying with time to meet Sam
+
+00:46:33,000 --> 00:46:37,000
+finally let me just indicate very quickly that
+
+00:46:37,000 --> 00:46:40,000
+although we're not going through this in any detail
+
+00:46:40,000 --> 00:46:44,000
+the same basic idea applies in discrete-time
+
+00:46:44,000 --> 00:46:49,000
+namely if we have a discrete-time signal
+
+00:46:49,000 --> 00:46:52,000
+and if the discrete-time signal
+
+00:46:52,000 --> 00:46:55,000
+is a finite length if we sample
+
+00:46:55,000 --> 00:46:59,000
+its forty-eight transform the
+
+00:46:59,000 --> 00:47:02,000
+the type function associated with those samples
+
+00:47:02,000 --> 00:47:05,000
+is a periodic replication
+
+00:47:05,000 --> 00:47:09,000
+and we can now extract from
+
+00:47:09,000 --> 00:47:12,000
+this periodic signal the original signal
+
+00:47:12,000 --> 00:47:16,000
+by multiplying by an appropriate time window
+
+00:47:16,000 --> 00:47:19,000
+the product if that giving us the reconstructed time
+
+00:47:19,000 --> 00:47:24,000
+function as I indicate below
+
+00:47:24,000 --> 00:47:30,000
+so we've now seen a little bit love the notion of frequency-domain sampling as
+
+00:47:30,000 --> 00:47:30,000
+well as
+
+00:47:30,000 --> 00:47:33,000
+time-domain sampling and let me stress that although
+
+00:47:33,000 --> 00:47:37,000
+I haven't gone into this and a lot of detail its
+
+00:47:37,000 --> 00:47:40,000
+important it's used very often its
+
+00:47:40,000 --> 00:47:44,000
+naturally important to understand it but in fact
+
+00:47:44,000 --> 00:47:48,000
+there is so much to ality between the time-domain and frequency-domain
+
+00:47:48,000 --> 00:47:51,000
+that a thorough understanding of time-domain sampling just naturally
+
+00:47:51,000 --> 00:47:52,000
+leads to
+
+00:47:52,000 --> 00:47:58,000
+a thorough understanding a frequency-domain sample
+
+00:47:58,000 --> 00:48:01,000
+all right now we talk a lot about sampling
+
+00:48:01,000 --> 00:48:06,000
+and this now concludes our discussion sampling
+
+00:48:06,000 --> 00:48:10,000
+I stress many times in the lectures associated with this
+
+00:48:10,000 --> 00:48:17,000
+dead sampling is a very important topic in the context of our whole discussion
+
+00:48:17,000 --> 00:48:21,000
+in part because the poor for such an important bridge between
+
+00:48:21,000 --> 00:48:25,000
+continuous-time and discrete-time ideas and your picture now she can to be a
+
+00:48:25,000 --> 00:48:26,000
+global one
+
+00:48:26,000 --> 00:48:31,000
+that sees how continuous-time and discrete-time fit together
+
+00:48:31,000 --> 00:48:36,000
+not just analytically but also practically
+
+00:48:36,000 --> 00:48:40,000
+beginning in the next lecture what I will introduce
+
+00:48:40,000 --> 00:48:43,000
+is the a-plus transform
+
+00:48:43,000 --> 00:48:49,000
+and beyond that busy transform and what those will correspond to
+
+00:48:49,000 --> 00:48:52,000
+are generalizations are the Fourier transform
+
+00:48:52,000 --> 00:48:57,000
+so we now want to turn our attention back to some analytical tools
+
+00:48:57,000 --> 00:49:00,000
+in particular developing some generalizations
+
+00:49:00,000 --> 00:49:05,000
+love the Fourier transform in both continuous-time and discrete-time
+
+00:49:05,000 --> 00:49:10,000
+and what we'll see is those that those generalizations
+
+00:49:10,000 --> 00:49:15,000
+providers with considerably enhanced flexibility
+
+00:49:15,000 --> 00:49:19,000
+in dealing with and analyzing both signals and linear time-invariant
+
+00:49:19,000 --> 00:49:21,000
+systems
+
+00:49:21,000 --> 00:49:21,000
+thank you
+

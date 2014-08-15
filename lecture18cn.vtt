@@ -1,0 +1,2440 @@
+00:00:06,000 --> 00:00:13,000
+ha the
+公顷
+
+00:00:28,000 --> 00:00:31,000
+the norm
+规范
+
+00:00:31,000 --> 00:00:38,000
+are
+有
+
+00:00:42,000 --> 00:00:42,000
+last time
+上次
+
+00:00:42,000 --> 00:00:47,000
+we began the discussion I'll discrete-time processing
+我们开始讨论我将离散时间处理
+
+00:00:47,000 --> 00:00:51,000
+love continuous-time signals and
+爱连续时间信号和
+
+00:00:51,000 --> 00:00:54,000
+as a reminder let me review
+作为一个提醒，让我回顾
+
+00:00:54,000 --> 00:00:57,000
+the basic notion the idea was
+基本概念的想法是
+
+00:00:57,000 --> 00:01:00,000
+dead we convert
+死了我们转换
+
+00:01:00,000 --> 00:01:05,000
+from a continuous-time signal to a sequence
+从连续时间信号的序列
+
+00:01:05,000 --> 00:01:08,000
+through an operation which I
+通过操作，我
+
+00:01:08,000 --> 00:01:12,000
+represent as a continuous to discrete-time converter
+代表作为连续到离散时间转换器
+
+00:01:12,000 --> 00:01:17,000
+and then that sequence
+然后该序列
+
+00:01:17,000 --> 00:01:20,000
+is used as the input to
+被用作输入到
+
+00:01:20,000 --> 00:01:24,000
+inappropriate discrete-time system
+不恰当的离散时间系统
+
+00:01:24,000 --> 00:01:28,000
+and after appropriate discrete-time processing
+并经过适当的离散时间处理
+
+00:01:28,000 --> 00:01:31,000
+that sequence is converted
+该序列被转换
+
+00:01:31,000 --> 00:01:35,000
+back to a continuous-time signal
+返回到连续时间信号
+
+00:01:35,000 --> 00:01:38,000
+through an operation which i-label as
+通过操作该I-标签为
+
+00:01:38,000 --> 00:01:42,000
+a discrete to continuous-time converter
+一个离散的连续时间转换器
+
+00:01:42,000 --> 00:01:45,000
+now in the lecture
+如今在讲座
+
+00:01:45,000 --> 00:01:49,000
+last time we carried out some analysis
+我们进行了一些分析，最后一次
+
+00:01:49,000 --> 00:01:53,000
+which related 4s the spectra
+其中4S光谱相关
+
+00:01:53,000 --> 00:01:56,000
+in the first step this operation namely
+在第一步骤中这个操作即
+
+00:01:56,000 --> 00:02:00,000
+in the transformation from a continuous-time
+在从连续时间转换
+
+00:02:00,000 --> 00:02:04,000
+signal to sequence and
+对信号序列和
+
+00:02:04,000 --> 00:02:07,000
+let me by the way draw your attention to the fact
+让我的方式提请你注意一个事实，
+
+00:02:07,000 --> 00:02:10,000
+that in the real world this operation
+在现实世界中该操作
+
+00:02:10,000 --> 00:02:13,000
+is essentially implemented
+基本上实现
+
+00:02:13,000 --> 00:02:18,000
+by what you would typically label as an analog to digital converter
+由你通常会标示为模拟到数字转换器
+
+00:02:18,000 --> 00:02:22,000
+if in fact the discrete-time processing
+如果实际上离散时间处理
+
+00:02:22,000 --> 00:02:26,000
+is being done digitally now it's important to emphasize that it's not
+正在做数字现在强调的是，它不是很重要
+
+00:02:26,000 --> 00:02:28,000
+exactly what an analog to digital converter
+正是模拟 - 数字转换器
+
+00:02:28,000 --> 00:02:33,000
+does but in some sense at least you should think
+确实，但在某种意义上，至少你应该考虑
+
+00:02:33,000 --> 00:02:36,000
+love this mapping from continuous time to discrete-time
+喜欢这个映射从连续时间到离散时间
+
+00:02:36,000 --> 00:02:39,000
+in very much the same way there one would think an analog to digital
+在非常有相同的方式人们会认为一个模拟到数字
+
+00:02:39,000 --> 00:02:40,000
+converter
+变流器
+
+00:02:40,000 --> 00:02:45,000
+and the mapping back and is corresponds
+和映射回，且对应
+
+00:02:45,000 --> 00:02:48,000
+in some sense to a what would happen
+在某种意义上，一个会发生什么
+
+00:02:48,000 --> 00:02:52,000
+with a digital to analog converter well
+与数字到模拟转换器以及
+
+00:02:52,000 --> 00:02:56,000
+let me review what is involved in the mapping from
+让我回顾一下涉及的映射关系
+
+00:02:56,000 --> 00:03:00,000
+the continuous-time signal to the sequence and
+连续时间信号的序列和
+
+00:03:00,000 --> 00:03:03,000
+let me stress again that this operation
+让我再次强调，此操作
+
+00:03:03,000 --> 00:03:07,000
+is basically in the continues to discrete-time conversion
+基本上是在继续离散时间转换
+
+00:03:07,000 --> 00:03:10,000
+a two-step process in
+在一个两步骤的过程
+
+00:03:10,000 --> 00:03:14,000
+the first part of the process the continuous-time signal
+该过程的第一部分的连续时间信号
+
+00:03:14,000 --> 00:03:18,000
+is modulated with an impulse train
+调制与脉冲串
+
+00:03:18,000 --> 00:03:23,000
+where the period of the imposed strain is capital T
+其中所施加的应变的周期为大写字母T
+
+00:03:23,000 --> 00:03:26,000
+and so we have a continuous-time
+所以我们有一个连续时间
+
+00:03:26,000 --> 00:03:30,000
+impose Train Signal which captures
+并处火车信号捕获
+
+00:03:30,000 --> 00:03:33,000
+the samples love the original continuous-time signals
+样品爱情原来的连续时间信号
+
+00:03:33,000 --> 00:03:37,000
+that in Paul strain
+在保罗应变
+
+00:03:37,000 --> 00:03:40,000
+is then put through an operation
+然后，通过操作放
+
+00:03:40,000 --> 00:03:44,000
+which essentially re labels
+这基本上重新标签
+
+00:03:44,000 --> 00:03:48,000
+the samples so that the
+样品，使
+
+00:03:48,000 --> 00:03:51,000
+sample values the impulse areas
+采样值的冲动领域
+
+00:03:51,000 --> 00:03:55,000
+are relabeled as sequence values
+被重新标记为序列值
+
+00:03:55,000 --> 00:03:58,000
+and the result of that conversion is then
+而转换的结果是再
+
+00:03:58,000 --> 00:04:03,000
+the sequence X event so the overall process then
+该序列X事件，因此整个过程，然后
+
+00:04:03,000 --> 00:04:08,000
+is a sampling process followed by
+在一个取样过程随后
+
+00:04:08,000 --> 00:04:11,000
+what is simply in this box relabeling
+什么是简单地在此框中重新标记
+
+00:04:11,000 --> 00:04:14,000
+process and although as I
+过程虽然我
+
+00:04:14,000 --> 00:04:19,000
+indicated just a minute ago that is essentially what an analog to digital
+表示只有一分钟以前，基本上是什么模拟到数字
+
+00:04:19,000 --> 00:04:20,000
+converter does
+不转换
+
+00:04:20,000 --> 00:04:25,000
+now like to digital converter doesn't necessarily carry it out
+现在像数字转换器不一定抓落实
+
+00:04:25,000 --> 00:04:28,000
+in those two steps but particularly
+在这两个步骤，但特别
+
+00:04:28,000 --> 00:04:31,000
+in terms love carrying through an analysis
+在爱情方面，通过实施分析
+
+00:04:31,000 --> 00:04:35,000
+thinking of it as a two-step process is particularly convenient
+想到它作为一个两步骤的过程是特别方便
+
+00:04:35,000 --> 00:04:40,000
+now we talked last time
+现在我们谈最后一次
+
+00:04:40,000 --> 00:04:45,000
+about what this mapping from continuous time to discrete-time
+什么这个映射从连续时间到离散时间
+
+00:04:45,000 --> 00:04:49,000
+means both in the time domain in terms of the spectra
+装置，无论是在在光谱方面的时域
+
+00:04:49,000 --> 00:04:52,000
+and in particular in the time domain we
+特别是在时域中我们
+
+00:04:52,000 --> 00:04:56,000
+begin with the continuous-time signal
+开始的连续时间信号
+
+00:04:56,000 --> 00:05:00,000
+which is then samples with an impulse train
+然后将其与一个脉冲串样本
+
+00:05:00,000 --> 00:05:03,000
+and converted to a sequence by
+并转换为一个序列由
+
+00:05:03,000 --> 00:05:07,000
+simply generating a sequence whose values
+简单地生成一个序列，其值
+
+00:05:07,000 --> 00:05:10,000
+are the area is love the impulses
+正在该地区是爱的冲动
+
+00:05:10,000 --> 00:05:14,000
+and I stress the fact that what this corresponds to
+我必须强调这是什么此相对应的事实
+
+00:05:14,000 --> 00:05:18,000
+essentially is and normalization of the time axis
+基本上是和时间轴的归一化
+
+00:05:18,000 --> 00:05:23,000
+essentially by dividing the time axis by capital T
+基本上是由时间轴由大写字母T除以
+
+00:05:23,000 --> 00:05:27,000
+in the frequency-domain then
+在频域，然后
+
+00:05:27,000 --> 00:05:31,000
+we had the spectrum of the original signal
+我们有原始信号的频谱
+
+00:05:31,000 --> 00:05:35,000
+which because that the sampling process is
+这是因为，采样过程是
+
+00:05:35,000 --> 00:05:39,000
+replicated at multiples integer multiples
+在倍数的整数倍复制
+
+00:05:39,000 --> 00:05:42,000
+all the sampling frequency Omega so badass
+所有的采样频率欧米茄所以坏蛋
+
+00:05:42,000 --> 00:05:45,000
+or to pile over capital T
+或堆放在大写字母T
+
+00:05:45,000 --> 00:05:49,000
+and then in converting the impulses
+然后，在变换所述脉冲
+
+00:05:49,000 --> 00:05:53,000
+to a sequence we are essentially
+一个序列，我们基本上是
+
+00:05:53,000 --> 00:05:57,000
+normalizing the frequency axis so that
+频率轴上的归一化，使得
+
+00:05:57,000 --> 00:06:02,000
+the frequency to pile over capital T gets relabeled is to pie
+频率堆放在大写字母T被重新标记是馅饼
+
+00:06:02,000 --> 00:06:05,000
+and the resulting discrete-time spectrum looks like
+将得到的离散时间频谱看起来像
+
+00:06:05,000 --> 00:06:08,000
+I indicate here which really is
+我在这里指出哪个是真的
+
+00:06:08,000 --> 00:06:12,000
+nothing more and a frequency scaling
+仅此而已和频率缩放
+
+00:06:12,000 --> 00:06:16,000
+corresponding to the Associated time scaling so the mapping
+对应于所述相关联的时间缩放这样的映射
+
+00:06:16,000 --> 00:06:20,000
+from the imposed strain spectrum to the discrete-time spectrum
+由所施加的应变的频谱的离散时间谱
+
+00:06:20,000 --> 00:06:24,000
+corresponds to mapping specified
+对应于指定的映射
+
+00:06:24,000 --> 00:06:29,000
+by capital Omega equal to small make a times capital T
+通过资本欧米茄等于小赚了次大写字母T
+
+00:06:29,000 --> 00:06:33,000
+an equivalent Lee it's the frequency
+等效利它的频率
+
+00:06:33,000 --> 00:06:36,000
+to pile over capital T which is
+堆放在大写字母T是
+
+00:06:36,000 --> 00:06:41,000
+of course the sampling frequency which gets normalized
+当然采样频率，得到归一化
+
+00:06:41,000 --> 00:06:44,000
+to the frequency to pie
+到的频率来馅饼
+
+00:06:44,000 --> 00:06:47,000
+and so in the frequency domain
+因此在频域
+
+00:06:47,000 --> 00:06:51,000
+their is a frequency normalization Associated
+它们是相关联的频率归一化
+
+00:06:51,000 --> 00:06:57,000
+with the fact dead corresponding to this spectrum
+与事实死对应于该谱
+
+00:06:57,000 --> 00:07:02,000
+is a time sequence or discrete time sequence
+是一个时间序列或离散时间序列
+
+00:07:02,000 --> 00:07:06,000
+as I show previously and a discrete-time sequence
+如我先前和离散时间序列
+
+00:07:06,000 --> 00:07:10,000
+is related to the
+是关系到
+
+00:07:10,000 --> 00:07:14,000
+original continuous-time signal
+原来的连续时间信号
+
+00:07:14,000 --> 00:07:19,000
+through a time normalization in other words
+通过时间正常化，换句话说
+
+00:07:19,000 --> 00:07:24,000
+these sequence values are simply samples at the continuous-time signal
+这些序列值进行简单的样品在连续时间信号
+
+00:07:24,000 --> 00:07:30,000
+with the time axis we normalized
+与我们归一化的时间轴
+
+00:07:30,000 --> 00:07:34,000
+now what we want to consider this is the conversion from continuous time to
+现在我们要考虑这个东西是从连续时间转换
+
+00:07:34,000 --> 00:07:35,000
+discrete-time
+离散时间
+
+00:07:35,000 --> 00:07:39,000
+what we want to consider now is the overall system
+我们现在要考虑的是整个系统的
+
+00:07:39,000 --> 00:07:42,000
+which implements not just the conversion but filtering
+它实现了不只是转换，但过滤
+
+00:07:42,000 --> 00:07:47,000
+and then coming back onto the conversion back to continuous-time
+然后回来到转换回连续时间
+
+00:07:47,000 --> 00:07:51,000
+so let's look at the overall system
+所以让我们来看看整个系统
+
+00:07:51,000 --> 00:07:55,000
+and the overall system courses I've
+和整个系统的课程我已经
+
+00:07:55,000 --> 00:07:58,000
+stressed several times in the past consists
+过去由强调过好几次
+
+00:07:58,000 --> 00:08:04,000
+love first the sampling process
+第一次爱的采样过程
+
+00:08:04,000 --> 00:08:08,000
+conversion to an impulse train
+转换到一个脉冲串
+
+00:08:08,000 --> 00:08:13,000
+and the imposed strain converted to a sequence
+和所施加的应变转换为一个序列
+
+00:08:13,000 --> 00:08:17,000
+that sequence is then processed
+然后该序列被处理
+
+00:08:17,000 --> 00:08:21,000
+through are discrete-time filter
+通过为离散时间滤波器
+
+00:08:21,000 --> 00:08:25,000
+and after the discrete-time processing
+和离散时间处理后
+
+00:08:25,000 --> 00:08:28,000
+the result of that is converted back
+的，该结果被转换回
+
+00:08:28,000 --> 00:08:34,000
+to an impulse train so this resulting process sequence
+一个脉冲串所以这个过程产生的序列
+
+00:08:34,000 --> 00:08:38,000
+is then converted back to an impulse train
+然后转换回一个脉冲串
+
+00:08:38,000 --> 00:08:41,000
+and then finally we carry out the the sampling
+然后最后我们进行的抽样
+
+00:08:41,000 --> 00:08:45,000
+process by simply using a low-pass filter
+过程通过简单地使用一个低通滤波器
+
+00:08:45,000 --> 00:08:50,000
+Associated with the with the cutoff associated with the sampling frequency
+相关联的带的采样频率有关的截止
+
+00:08:50,000 --> 00:08:53,000
+that we use
+我们使用
+
+00:08:53,000 --> 00:08:57,000
+now typically in a system like that which implements
+现在通常在这样的系统，它实现
+
+00:08:57,000 --> 00:09:00,000
+discrete-time processing continuous-time signals
+离散时间处理连续时间信号
+
+00:09:00,000 --> 00:09:04,000
+we either we need to ensure in one way or another
+我们或者我们需要确保在这样或那样的
+
+00:09:04,000 --> 00:09:08,000
+that the band with love the input is
+与爱乐队的输入是
+
+00:09:08,000 --> 00:09:12,000
+sufficiently limited so that we avoid aliasing
+足够的限制，使我们避免混淆
+
+00:09:12,000 --> 00:09:16,000
+one way to do that is to force it in one way or another or
+要做到这一点的方法之一是迫使它以某种方式或
+
+00:09:16,000 --> 00:09:20,000
+simply know that our signal satisfies the band with constrain
+只是知道，我们的信号满足乐队与约束
+
+00:09:20,000 --> 00:09:23,000
+although a fairly typical thing to do in addition
+虽然一个相当典型的事情，除了
+
+00:09:23,000 --> 00:09:26,000
+to this sampling process is
+该采样过程是
+
+00:09:26,000 --> 00:09:30,000
+to include what is referred to as
+为包括被称为
+
+00:09:30,000 --> 00:09:35,000
+and anti aliasing filter in other words this is a filter
+和换句话说抗混叠滤波器，这是一个过滤器
+
+00:09:35,000 --> 00:09:38,000
+that would ban limit the input
+，将禁止限制输入
+
+00:09:38,000 --> 00:09:42,000
+and at least half the sampling frequency
+和至少一半的采样频率
+
+00:09:42,000 --> 00:09:45,000
+so that we r guaranteed and
+让我们r保证，
+
+00:09:45,000 --> 00:09:48,000
+that their is no aliasing it's carried out
+他们是没有走样它进行
+
+00:09:48,000 --> 00:09:52,000
+in this process and it's important
+在这一过程中，重要的
+
+00:09:52,000 --> 00:09:56,000
+to stress dead in this kinda processing discrete-time processing
+强调死在这有点儿处理离散时间处理
+
+00:09:56,000 --> 00:10:00,000
+continuous-time signals except in certain
+除了在某些连续时间信号
+
+00:10:00,000 --> 00:10:03,000
+special situations its very important
+特殊情况下它很重要
+
+00:10:03,000 --> 00:10:06,000
+to avoid aliasing because we're going to want
+为了避免混淆，因为我们要去想
+
+00:10:06,000 --> 00:10:13,000
+to do a reconstruction after we do the sampling and processing
+做一个改造后，我们做了采样和处理
+
+00:10:13,000 --> 00:10:17,000
+okay now this is the sequence of steps in the time domain
+还好现在这个步骤在时域序列
+
+00:10:17,000 --> 00:10:20,000
+let's examine what happens as a consequence is this
+让我们来看看会发生什么的结果是这样
+
+00:10:20,000 --> 00:10:24,000
+in the frequency domain well
+在频域以及
+
+00:10:24,000 --> 00:10:28,000
+let's choose some typeof simple representative spectrum
+让我们来选择一些简单的typeof代表频谱
+
+00:10:28,000 --> 00:10:31,000
+and of course what's important about it is that
+当然，什么是它重要的是，
+
+00:10:31,000 --> 00:10:36,000
+the specter that we choose is banned limited or that there's an anti-aliasing
+我们选择的幽灵被禁止或限制该有一个抗混叠
+
+00:10:36,000 --> 00:10:37,000
+filter
+过滤器
+
+00:10:37,000 --> 00:10:41,000
+and it's not the shape of course that is critical
+它不是当然的形状是很关键
+
+00:10:41,000 --> 00:10:44,000
+and as we work our way through the system
+当我们通过该系统工作的方式
+
+00:10:44,000 --> 00:10:47,000
+this is the continuous-time spectrum
+这是连续时间频谱
+
+00:10:47,000 --> 00:10:52,000
+after sampling that spectrum is replicated at
+采样后的频谱被复制在
+
+00:10:52,000 --> 00:10:56,000
+multiples of the sampling frequency integer multiples the sampling frequency
+的采样频率的整数倍的倍数的采样频率
+
+00:10:56,000 --> 00:10:57,000
+and so
+等
+
+00:10:57,000 --> 00:11:01,000
+there would be another one over here and another one over here at cetera
+会有另外一个在这里，另一个在这里等等
+
+00:11:01,000 --> 00:11:04,000
+and then in converting to a discrete-time sequence
+然后在变换为离散时间序列
+
+00:11:04,000 --> 00:11:08,000
+their is The Associated
+它们是相关联的
+
+00:11:08,000 --> 00:11:12,000
+frequency normalization so that the sampling frequency
+频率归一化，使采样频率
+
+00:11:12,000 --> 00:11:15,000
+yes normalized to a frequency
+是归一化到一个频率
+
+00:11:15,000 --> 00:11:20,000
+to pie okay now at that point
+到馅饼还好现在在这一点上
+
+00:11:20,000 --> 00:11:24,000
+where we are in the system
+我们在系统中
+
+00:11:24,000 --> 00:11:27,000
+is at this point
+在这一点
+
+00:11:27,000 --> 00:11:31,000
+so that we've converted to a sequence we now
+所以，我们现在已经转化为一个序列，我们
+
+00:11:31,000 --> 00:11:35,000
+want to carry out some filtering and then after that filtering
+要进行一些过滤，然后在过滤后
+
+00:11:35,000 --> 00:11:40,000
+convert back to a continuous-time signals
+转换回一个连续时间信号
+
+00:11:40,000 --> 00:11:43,000
+alright so here we are at the
+好吧所以这里我们都在
+
+00:11:43,000 --> 00:11:46,000
+spectrum Associated with the
+频谱相关的
+
+00:11:46,000 --> 00:11:49,000
+sequence and now
+序列和现在
+
+00:11:49,000 --> 00:11:53,000
+the processing they were carrying out is
+他们进行的处理是
+
+00:11:53,000 --> 00:11:57,000
+linear time-invariant filtering in the discrete time domain
+在离散时间域线性时不变滤波
+
+00:11:57,000 --> 00:12:01,000
+and what that corresponds to then is multiplying
+什么对应然后乘以
+
+00:12:01,000 --> 00:12:06,000
+this spectrum by the filter frequency response and I've chosen
+这个频谱的滤波器的频率响应和我选择
+
+00:12:06,000 --> 00:12:10,000
+a particular shape and again it's not the shape that's important to the
+特定的形状，并再次它不是形状是很重要的
+
+00:12:10,000 --> 00:12:11,000
+discussion
+讨论
+
+00:12:11,000 --> 00:12:16,000
+but the fact for example that it has a particular cutoff frequency which will
+但事实上，例如，它有一个特定的截止频率的，这将
+
+00:12:16,000 --> 00:12:17,000
+kinda track
+还挺追踪
+
+00:12:17,000 --> 00:12:21,000
+as we work through this and so now
+当我们通过这个工作，所以现在
+
+00:12:21,000 --> 00:12:24,000
+the spectrum of why I have an the output
+为什么我有一个输出频谱
+
+00:12:24,000 --> 00:12:28,000
+the digital filter is the product this spectrum
+数字滤波器是产品这个频谱
+
+00:12:28,000 --> 00:12:32,000
+and the 4e a transformer frequency response
+而4E变压器的频率响应
+
+00:12:32,000 --> 00:12:36,000
+I'll the digital filter
+我将数字滤波器
+
+00:12:36,000 --> 00:12:41,000
+now in working our way through we're going to take the output at the filter
+现在我们的工作方式，通过我们将采取输出滤波器
+
+00:12:41,000 --> 00:12:46,000
+and undo the two-step process so we now want to take that sequence
+并撤消了两步过程，所以我们现在要采取的序列
+
+00:12:46,000 --> 00:12:50,000
+converted to an impulse train and then take then imposed strain
+转换到一个脉冲串，然后再采取应变征收
+
+00:12:50,000 --> 00:12:53,000
+Andy sample through a low-pass filter
+通过一个低通滤波器，安迪样品
+
+00:12:53,000 --> 00:12:59,000
+so here we are now at the output to the digital filter
+所以在这里，我们现在是在输出到数字滤波器
+
+00:12:59,000 --> 00:13:03,000
+we then convert that to an impulse train well that's really on doing the original
+我们再转换到一个脉冲串清楚，真的做好原
+
+00:13:03,000 --> 00:13:05,000
+time normalization
+时间正常化
+
+00:13:05,000 --> 00:13:08,000
+and so what that means is that we
+所以这是什么意思是，我们
+
+00:13:08,000 --> 00:13:13,000
+are on doing the frequency normalization in particular
+都在做，特别是归一化频率
+
+00:13:13,000 --> 00:13:16,000
+we're dividing the frequency axis by
+我们将频率轴由
+
+00:13:16,000 --> 00:13:20,000
+capital T whereas this point
+大写字母T，而这一点
+
+00:13:20,000 --> 00:13:23,000
+in y Omega was to pie
+沿y欧米茄是馅饼
+
+00:13:23,000 --> 00:13:26,000
+now it's to pile over capital T
+现在是堆放在大写字母T
+
+00:13:26,000 --> 00:13:31,000
+what that means is that acquittal and Lee were multiplying this spectrum
+这是什么意思是，无罪释放和李本均乘以谱
+
+00:13:31,000 --> 00:13:35,000
+by the frequency response the digital filter
+由频率响应的数字滤波器
+
+00:13:35,000 --> 00:13:38,000
+but now linearly scaled in frequency
+但现在线性缩放的频率
+
+00:13:38,000 --> 00:13:42,000
+so that will what was a cutoff frequency Omega subsea
+因此，这将是怎样的截止频率欧米茄海底
+
+00:13:42,000 --> 00:13:45,000
+is now a cutoff frequency up Omega subsea
+现在是一个截止频率高达欧米茄海底
+
+00:13:45,000 --> 00:13:49,000
+divided by capital T so
+由大写字母T划分，从而
+
+00:13:49,000 --> 00:13:53,000
+now the next step in the process is the reconstructing
+现在在这个过程中，下一步是将重构
+
+00:13:53,000 --> 00:13:58,000
+low-pass filter and what that extracts is simply the portion
+低通滤波器和什么提取仅仅是部分
+
+00:13:58,000 --> 00:14:02,000
+I'll this periodic spectrum around the origin
+我将围绕原点这个周期性频谱
+
+00:14:02,000 --> 00:14:06,000
+and so finally and spectrum of the output
+等终于和输出频谱
+
+00:14:06,000 --> 00:14:10,000
+up the overall system will be the spectrum
+了整个系统将是频谱
+
+00:14:10,000 --> 00:14:13,000
+of the input multiplied
+输入的相乘
+
+00:14:13,000 --> 00:14:17,000
+by a frequency response
+由一个频率响应
+
+00:14:17,000 --> 00:14:21,000
+which is the digital filter frequency response
+这是数字滤波器的频率响应
+
+00:14:21,000 --> 00:14:25,000
+frequency scaled by dividing
+频率缩放除以
+
+00:14:25,000 --> 00:14:30,000
+that digital filter frequency axis by capital T
+由大写字母T的数字滤波器频率轴
+
+00:14:30,000 --> 00:14:34,000
+okay now what we can ask is
+还好现在我们可以问的是
+
+00:14:34,000 --> 00:14:37,000
+we've got this processing we've converted to discrete-time we've gone
+我们已经得到了这个处理我们已经转换为离散时间，我们已经走了
+
+00:14:37,000 --> 00:14:39,000
+back to continuous-time
+回连续时间
+
+00:14:39,000 --> 00:14:42,000
+and one can ask now what acquittal and
+和一个现在可以问什么无罪释放及
+
+00:14:42,000 --> 00:14:46,000
+overall continuous-time systems is that correspond to
+整体连续时间系统是对应于
+
+00:14:46,000 --> 00:14:51,000
+in other words if we that of course is a continuous-time system it's a continuous
+换句话说，如果我们认为当然是一个连续时间系统是一个连续的
+
+00:14:51,000 --> 00:14:53,000
+time you put a continuous-time output
+时间你把一个连续时间输出
+
+00:14:53,000 --> 00:14:57,000
+and the overall system dan
+和整个系统的担
+
+00:14:57,000 --> 00:15:01,000
+would be one that would give us exactly the same output spectrum
+将是一个会给我们完全一样的输出频谱
+
+00:15:01,000 --> 00:15:05,000
+as we're getting well what is that well we have
+因为我们越来越清楚什么是好，我们有
+
+00:15:05,000 --> 00:15:08,000
+is an output spectrum which is the product
+是输出光谱是该产品
+
+00:15:08,000 --> 00:15:14,000
+all the input spectrum and digital filter frequency characteristic
+所有的输入频谱和数字滤波器的频率特性
+
+00:15:14,000 --> 00:15:18,000
+frequency scale and so in fact
+频率刻度等实际上
+
+00:15:18,000 --> 00:15:22,000
+the resulting digital filter I'm sorry continuous-time
+由此产生的数字滤波器对不起连续时间
+
+00:15:22,000 --> 00:15:26,000
+filter is simply the digital filter
+过滤器是简单的数字滤波器
+
+00:15:26,000 --> 00:15:29,000
+with inappropriate frequency scaling
+用不恰当的频率缩放
+
+00:15:29,000 --> 00:15:34,000
+in other words with the frequency axis divided by capital T
+换句话说，与频率轴由大写字母T划分
+
+00:15:34,000 --> 00:15:37,000
+so sent another way if
+所以派出的另一种方式，如果
+
+00:15:37,000 --> 00:15:41,000
+we show here
+我们在这里展示
+
+00:15:41,000 --> 00:15:47,000
+the frequency response or the
+的频率响应或
+
+00:15:47,000 --> 00:15:50,000
+original digital filter
+原来的数字滤波器
+
+00:15:50,000 --> 00:15:54,000
+then the corresponding continuous-time
+然后相应的连续时间
+
+00:15:54,000 --> 00:15:57,000
+filter would be this
+过滤器会是这样
+
+00:15:57,000 --> 00:16:00,000
+frequency scaled and then because love
+频率缩放，然后因为爱情
+
+00:16:00,000 --> 00:16:04,000
+The Associated low-pass filtering in the reconstruction
+在重建相关的低通滤波
+
+00:16:04,000 --> 00:16:08,000
+we would select out just one of these periods in particular the portion around
+我们将选择这些时段特别是只有一个周围的部分
+
+00:16:08,000 --> 00:16:10,000
+the origin
+原产地
+
+00:16:10,000 --> 00:16:14,000
+and the essential consequences that is that the corresponding
+和必要的后果是，对应
+
+00:16:14,000 --> 00:16:17,000
+continuous-time filter then is
+连续时间滤波器则是
+
+00:16:17,000 --> 00:16:21,000
+given by this and these two are related
+通过此给出，与这两个是相关的
+
+00:16:21,000 --> 00:16:25,000
+simply by a linear scaling the frequency axis
+简单地通过线性标度的频率轴
+
+00:16:25,000 --> 00:16:29,000
+and note dead where the digital filter has a cutoff frequency
+和记死其中数字滤波器具有一个截止频率
+
+00:16:29,000 --> 00:16:32,000
+Omega subsea the continuous-time filter
+欧米加海底的连续时间滤波器
+
+00:16:32,000 --> 00:16:38,000
+has a cutoff frequency Omega subsea divided by capital T
+有一个截止频率欧米茄海底除以大写字母T
+
+00:16:38,000 --> 00:16:42,000
+so that's the linear frequency scaling and
+所以这是线性频率调节和
+
+00:16:42,000 --> 00:16:46,000
+by the way plant away for now and will return to this point later
+顺便说一句植物离开现在，稍后会回到这个点
+
+00:16:46,000 --> 00:16:49,000
+plant the way for now the the observation
+对于现在的观察种植方式
+
+00:16:49,000 --> 00:16:53,000
+dad even if the digital filter frequency response
+爸即使数字滤波器的频率响应
+
+00:16:53,000 --> 00:16:57,000
+is fixed which we would assume it is
+是固定的，我们就假设它是
+
+00:16:57,000 --> 00:17:00,000
+by changing the sampling frequency in fact
+通过改变实际上采样频率
+
+00:17:00,000 --> 00:17:04,000
+what we're able to do is a fact a linear scaling
+什么，我们能够做的是一个事实，一个线性缩放
+
+00:17:04,000 --> 00:17:09,000
+or the acquittal in continuous-time
+或者在连续时间的无罪判决
+
+00:17:09,000 --> 00:17:12,000
+okay well this is pretty much the process in the analysis
+还好还有这是相当多的过程分析
+
+00:17:12,000 --> 00:17:18,000
+but to highlight a number the issues and emphasize these points
+但是，突出了一些问题，并强调这几点
+
+00:17:18,000 --> 00:17:22,000
+why I like to do is illustrate
+为什么我喜欢做的是说明
+
+00:17:22,000 --> 00:17:26,000
+somewhat this with a videotape demonstration
+这有点用录像带演示
+
+00:17:26,000 --> 00:17:32,000
+that in fact was made originally as part of another course a course
+这实际上是做最初作为另一个进程的一部分课程
+
+00:17:32,000 --> 00:17:35,000
+devoted entirely to
+完全致力于
+
+00:17:35,000 --> 00:17:39,000
+digital signal processing which essentially is discrete-time processing
+这基本上是离散时间处理的数字信号处理
+
+00:17:39,000 --> 00:17:43,000
+whether or not it's related to continuous-time signals
+不论它涉及到连续时间信号
+
+00:17:43,000 --> 00:17:46,000
+and what I'd like to now focus on
+什么，我想现在专注于
+
+00:17:46,000 --> 00:17:51,000
+are summer the details of that demonstration
+是夏天演示的细节
+
+00:17:51,000 --> 00:17:54,000
+in the demonstration the
+在示范
+
+00:17:54,000 --> 00:17:57,000
+specific impulse response there
+有特定的脉冲响应
+
+00:17:57,000 --> 00:18:00,000
+is used for the digital filter
+用于数字滤波器
+
+00:18:00,000 --> 00:18:06,000
+or discrete-time filter is the one that I show here
+或离散时间滤波器是，我在这里展示一
+
+00:18:06,000 --> 00:18:09,000
+and the Associated
+和美联社
+
+00:18:09,000 --> 00:18:13,000
+frequency response is the frequency response
+频率响应是频率响应
+
+00:18:13,000 --> 00:18:18,000
+love a discrete-time low-pass filter as i indicate below
+爱一个离散时间低通滤波器，因为我在下面注明
+
+00:18:18,000 --> 00:18:24,000
+and the cutoff frequency that filter as i indicate the filter was designed as a
+和截止频率的滤波器为我指明了过滤器被设计成一个
+
+00:18:24,000 --> 00:18:28,000
+discreet I felt with the cutoff frequency hi over five
+谨慎的，我觉得与截止频率喜超五类
+
+00:18:28,000 --> 00:18:32,000
+and let me just draw your attention to the fact that
+并让我提请您注意的是，
+
+00:18:32,000 --> 00:18:35,000
+pie over five is also
+馅饼五年也
+
+00:18:35,000 --> 00:18:39,000
+10 love to pie
+10爱馅饼
+
+00:18:39,000 --> 00:18:42,000
+and so in fact the digital
+所以实际上数字
+
+00:18:42,000 --> 00:18:46,000
+for discrete-time filter cutoff frequency is a tenth
+对于离散时间滤波器的截止频率是第十
+
+00:18:46,000 --> 00:18:49,000
+to pie and as all stress again shortly
+以饼和所有的压力在短期内再次
+
+00:18:49,000 --> 00:18:52,000
+remember that in the frequency normalization
+记得在归一化频率
+
+00:18:52,000 --> 00:18:56,000
+or a normalization to pie represents
+或正常化派代表
+
+00:18:56,000 --> 00:19:00,000
+in effect the sampling frequency and so
+实际上，采样频率等
+
+00:19:00,000 --> 00:19:04,000
+the consequence of that is that cutoff frequency really is going to be
+那后果是，截止频率确实将是
+
+00:19:04,000 --> 00:19:05,000
+associated
+相关
+
+00:19:05,000 --> 00:19:09,000
+with the 10th all the sampling frequency but for now keep in mind that is just
+与10日所有的采样频率，但现在要记住，这只是
+
+00:19:09,000 --> 00:19:10,000
+simply attentive to
+只是细心的
+
+00:19:10,000 --> 00:19:14,000
+on now the
+在现在
+
+00:19:14,000 --> 00:19:18,000
+equivalent continuous-time
+等效连续时间
+
+00:19:18,000 --> 00:19:21,000
+system interns are the impulse response
+系统实习生的脉冲响应
+
+00:19:21,000 --> 00:19:24,000
+is of course a ban limited interpolation
+当然是禁止插值有限
+
+00:19:24,000 --> 00:19:28,000
+love the up the
+爱了
+
+00:19:28,000 --> 00:19:32,000
+impose response associated with the discrete-time
+响应施加的离散时间相关联
+
+00:19:32,000 --> 00:19:36,000
+filter and in the frequency domain the frequency response
+过滤并在频域中的频率响应
+
+00:19:36,000 --> 00:19:39,000
+is correspondingly a timescale
+是相应的时间尺度
+
+00:19:39,000 --> 00:19:43,000
+and a timescale I'm sorry a frequency scale
+和时间表对不起频率规模
+
+00:19:43,000 --> 00:19:47,000
+version at the frequency response so in fact
+版本的频率响应，从而在事实上
+
+00:19:47,000 --> 00:19:50,000
+in the frequency domain and in the time domain
+在频域和时域中的
+
+00:19:50,000 --> 00:19:55,000
+related to the continuous-time signal
+相关的连续时间信号
+
+00:19:55,000 --> 00:19:58,000
+the Associated impulse response is
+美联社脉冲响应
+
+00:19:58,000 --> 00:20:02,000
+what I indicate here a ban limited interpolation
+我在这里表示禁止插值有限
+
+00:20:02,000 --> 00:20:05,000
+or the discrete-time impulse response
+或离散时间冲激响应
+
+00:20:05,000 --> 00:20:09,000
+and time scale than
+比时间尺度
+
+00:20:09,000 --> 00:20:13,000
+and the frequency response following the discussion that we've previously gone
+和频率响应下面我们先前已经走了讨论
+
+00:20:13,000 --> 00:20:14,000
+through
+通过
+
+00:20:14,000 --> 00:20:20,000
+is a frequency scale version all the one associated with the digital filter
+是一个频率刻度版本的所有一个具有数字滤波器相关
+
+00:20:20,000 --> 00:20:24,000
+well the first thing that all want to look at is
+以及所有想要看的第一件事就是
+
+00:20:24,000 --> 00:20:27,000
+the impulse response and when we do
+脉冲响应，当我们做
+
+00:20:27,000 --> 00:20:31,000
+let me just indicate that
+让我表明，
+
+00:20:31,000 --> 00:20:35,000
+in the actual implementation things are slightly different
+在实际执行的事情略有不同
+
+00:20:35,000 --> 00:20:39,000
+then they are associated with the ideal analysis
+然后将它们与理想的分析相关联的
+
+00:20:39,000 --> 00:20:43,000
+in particular in converting
+特别是在转换
+
+00:20:43,000 --> 00:20:46,000
+from a discrete-time sequence
+从离散时间序列
+
+00:20:46,000 --> 00:20:50,000
+to the continuous-time signal whereas
+到而连续时间信号
+
+00:20:50,000 --> 00:20:53,000
+this way of looking at it is convenient
+这样看着很方便
+
+00:20:53,000 --> 00:20:57,000
+in the context that the analysis in fact the way it's done
+在该分析中的事实的方式，它的完成的情况下
+
+00:20:57,000 --> 00:21:01,000
+is is using more or less
+是采用更多或更少
+
+00:21:01,000 --> 00:21:04,000
+standard digital to analog converter
+标准的数字到模拟转换器
+
+00:21:04,000 --> 00:21:09,000
+one what a digital to analog converter does as i indicated in the previous
+1什么是数字到模拟转换器确实正如我在以前的
+
+00:21:09,000 --> 00:21:10,000
+lecture
+演讲
+
+00:21:10,000 --> 00:21:13,000
+is to convert the sequence
+是要转换的序列
+
+00:21:13,000 --> 00:21:17,000
+not to an impulse train but in fact to go directly through
+不是一个冲动的火车，但其实直接通过去
+
+00:21:17,000 --> 00:21:21,000
+zero-order hold and so usually what comes onto
+零阶保持，所以通常随之而来的上
+
+00:21:21,000 --> 00:21:25,000
+a digital to analog converter is a staircase
+一个数字到模拟转换器是一个楼梯
+
+00:21:25,000 --> 00:21:29,000
+tightness signal associated with the zero-order hold
+与零阶保持气密性相关的信号
+
+00:21:29,000 --> 00:21:34,000
+and then the result of that is low-pass filter to do the reconstruction
+然后的，结果是低通滤波器，以执行重建
+
+00:21:34,000 --> 00:21:37,000
+so what we want to look at and is
+所以我们想看看，什么是
+
+00:21:37,000 --> 00:21:42,000
+that reconstruction first with just an impulse input
+该重建第一只用一个脉冲输入
+
+00:21:42,000 --> 00:21:46,000
+and so what we'll see after the low-pass filter
+还等什么，我们的低通滤波器后，会看到
+
+00:21:46,000 --> 00:21:50,000
+for the impulse response is
+供的脉冲响应是
+
+00:21:50,000 --> 00:21:56,000
+a smooth curve like this but also as part of the demonstration
+平滑的曲线像​​这样同时也作为示范的一部分
+
+00:21:56,000 --> 00:21:59,000
+what all do just to show the zero-order hold
+什么都做，是想说明的零阶保持
+
+00:21:59,000 --> 00:22:03,000
+is to take the low-pass filter out temporarily
+是采取低通滤波器输出暂时
+
+00:22:03,000 --> 00:22:07,000
+and then put it back in so first let's just look at
+然后将其放回，所以首先让我们来只是看看
+
+00:22:07,000 --> 00:22:11,000
+the filter impulse response
+该滤波器的脉冲响应
+
+00:22:11,000 --> 00:22:14,000
+what we see here is the impost response
+我们在这里看到的是什么关税响应
+
+00:22:14,000 --> 00:22:18,000
+all the overall system and
+所有整体系统和
+
+00:22:18,000 --> 00:22:21,000
+we observe for one thing that it's a symmetrical impulse response in other
+我们观察到一件事，它是在其他对称的脉冲响应
+
+00:22:21,000 --> 00:22:25,000
+words corresponds to a linear phase filter
+字对应于一个线性相位滤波器
+
+00:22:25,000 --> 00:22:28,000
+we can also look at the impulse response before that the same playing
+我们还可以看看脉冲响应之前，同样的播放
+
+00:22:28,000 --> 00:22:32,000
+low-pass filter let's take out that the sampling low-pass filter
+低通滤波器，让我们拿出了采样低通滤波器
+
+00:22:32,000 --> 00:22:35,000
+slowly and wide
+慢慢地，宽
+
+00:22:35,000 --> 00:22:38,000
+we observe is basically the output I'll
+我们观察基本上是输出我会
+
+00:22:38,000 --> 00:22:44,000
+the digital to analog converter which of course is a staircase a boxcar function
+数字到模拟转换器，当然这是一个楼梯一个棚车功能
+
+00:22:44,000 --> 00:22:47,000
+not an impulse train in the real world the
+在现实世界中不一个脉冲串的
+
+00:22:47,000 --> 00:22:51,000
+output over the day converted generally is a boxcar type function
+输出过的日子通常是转换成一个功能型棚车
+
+00:22:51,000 --> 00:22:54,000
+we can put the the sampling filter back in now
+我们可以把采样滤波器早在现在
+
+00:22:54,000 --> 00:22:59,000
+and notice that the effectivity sampling filter is basically
+并注意有效性采样滤波器基本上
+
+00:22:59,000 --> 00:23:02,000
+to smooth out the rough edges in
+理顺在粗糙的边缘
+
+00:23:02,000 --> 00:23:08,000
+the boxcar output from the DA converter
+从DA转换器输出的矩形波串
+
+00:23:08,000 --> 00:23:12,000
+okay so that's the impulse response the system
+好了，这就是脉冲响应系统
+
+00:23:12,000 --> 00:23:15,000
+now what I like to show is the frequency
+现在我想展示的是频率
+
+00:23:15,000 --> 00:23:20,000
+response the system and to measure the frequency response of course what we can
+响应的系统和测量过程的频率响应我们所能
+
+00:23:20,000 --> 00:23:21,000
+do
+
+
+00:23:21,000 --> 00:23:24,000
+is put a sine wave
+是把一个正弦波
+
+00:23:24,000 --> 00:23:27,000
+into the system and looked at
+进入系统，看着
+
+00:23:27,000 --> 00:23:33,000
+the sinusoidal output so in particular now what will happen is that
+正弦输出，所以尤其现在会发生什么事是，
+
+00:23:33,000 --> 00:23:36,000
+with the system we will put in
+与系统我们将投入
+
+00:23:36,000 --> 00:23:40,000
+a continuous-time sinusoid which is sampled
+一个被采样的连续时间正弦曲线
+
+00:23:40,000 --> 00:23:43,000
+converted to a sequence
+转换成一个序列
+
+00:23:43,000 --> 00:23:48,000
+the sample continues sigh sinus so it is a discrete-time sinusoid
+样品继续叹息窦所以它是一个离散时间正弦曲线
+
+00:23:48,000 --> 00:23:52,000
+that goes through the digital filter and gets attenuated or
+该经过数字滤波和被衰减或
+
+00:23:52,000 --> 00:23:55,000
+amplified appropriately and then
+适当地再扩增
+
+00:23:55,000 --> 00:23:59,000
+the output if that is converted back and that's
+输出如果被转换回，这就是
+
+00:23:59,000 --> 00:24:03,000
+again a sinusoidal output that gets converted back
+再一个正弦输出，被转换回
+
+00:24:03,000 --> 00:24:08,000
+to a continuous-time sinusoid
+到连续时间正弦曲线
+
+00:24:08,000 --> 00:24:11,000
+theoretically as i indicate here but again as we just saw
+理论上，因为我在此表明却又像我们刚才看到的
+
+00:24:11,000 --> 00:24:15,000
+really represented by zero-order hold followed by
+真正的零阶保持后跟代表
+
+00:24:15,000 --> 00:24:18,000
+a low-pass filter so thats
+一个低通滤波器，因此多数民众赞成
+
+00:24:18,000 --> 00:24:22,000
+the overall operation with one
+与1的整体操作
+
+00:24:22,000 --> 00:24:25,000
+modification from the diagram that we have here
+修改从我们这里有图
+
+00:24:25,000 --> 00:24:29,000
+in this particular diagram I've included
+在这个特殊的图我已经包括
+
+00:24:29,000 --> 00:24:32,000
+a and anti-aliasing filter
+一和抗混叠滤波器
+
+00:24:32,000 --> 00:24:35,000
+in fact in the demonstration there is no
+实际上在示范没有
+
+00:24:35,000 --> 00:24:38,000
+anti-aliasing filter and so
+抗混叠滤波器等
+
+00:24:38,000 --> 00:24:43,000
+in fact the input is a sinusoidal input
+实际上输入的是正弦输入
+
+00:24:43,000 --> 00:24:46,000
+which is not band limited
+这不是带宽限制
+
+00:24:46,000 --> 00:24:50,000
+by virtue of an anti-aliasing filter it's only
+凭借一个抗混叠滤波器，这只是
+
+00:24:50,000 --> 00:24:53,000
+course been limited appropriately
+当然了适当的限制
+
+00:24:53,000 --> 00:24:57,000
+if we choose the sinusoidal frequency that way
+如果我们选择的正弦频率的方法
+
+00:24:57,000 --> 00:25:02,000
+so there is no anti-aliasing filter and this is the system
+所以没有抗混叠滤波器，这是该系统
+
+00:25:02,000 --> 00:25:05,000
+and one consequence if that
+和一个后果，如果该
+
+00:25:05,000 --> 00:25:08,000
+is dead in fact if we sweep
+死了，其实，如果我们扫
+
+00:25:08,000 --> 00:25:13,000
+the input sinusoid only up to half the sampling frequency
+在输入正弦信号只到采样频率的一半
+
+00:25:13,000 --> 00:25:17,000
+will see no aliasing but if we let its we passed that we're going to get
+会看到没有走样，但如果我们让了我们通过，我们会得到
+
+00:25:17,000 --> 00:25:19,000
+aliasing
+走样
+
+00:25:19,000 --> 00:25:22,000
+now in the demonstration the sampling rate
+现在在示范采样率
+
+00:25:22,000 --> 00:25:26,000
+its picked for this party the demonstration is a 20 kilohertz sampling
+其钦点为这个党的演示是一个20千赫的采样
+
+00:25:26,000 --> 00:25:28,000
+rate
+率
+
+00:25:28,000 --> 00:25:33,000
+that means based on the sampling theorem that as long as the input frequency
+这意味着根据抽样定理，只要将输入频率
+
+00:25:33,000 --> 00:25:39,000
+is below 10 killer hurts we get no aliasing
+低于10的杀手伤害我们得到没有走样
+
+00:25:39,000 --> 00:25:43,000
+when the input frequency goes beyond 10 killer hurts
+当输入频率超出10杀手伤害
+
+00:25:43,000 --> 00:25:46,000
+that higher frequency is going to get alias down
+较高的频率是会得到别名下来
+
+00:25:46,000 --> 00:25:50,000
+into a lower frequency a consequence is that then
+成较低频率的结果是，然后
+
+00:25:50,000 --> 00:25:53,000
+is that as we go through the process saying
+就是因为我们经历的过程说
+
+00:25:53,000 --> 00:25:57,000
+and we demonstrate the frequency response to the system
+我们证明了频率响应的系统
+
+00:25:57,000 --> 00:26:01,000
+what we'll see in the output is
+我们在输出会看到
+
+00:26:01,000 --> 00:26:04,000
+no alias saying when the input is below 10 killer hurts
+没有别名说，当输入低于10杀手伤害
+
+00:26:04,000 --> 00:26:07,000
+as the input sweeps past 10 killer hurts
+作为输入扫过10杀手伤害
+
+00:26:07,000 --> 00:26:11,000
+when when we let it which we will eventually in the demonstration
+时，当我们让它是我们最终将在示范
+
+00:26:11,000 --> 00:26:16,000
+dan in fact that frequency as it finally shows up here
+丹其实这个频率，因为它终于在这里显示
+
+00:26:16,000 --> 00:26:21,000
+will begin to be aliased down into a lower frequency
+将开始向下混叠到一个较低的频率
+
+00:26:21,000 --> 00:26:24,000
+another way thinking about that is dead
+另一种方式思考即死
+
+00:26:24,000 --> 00:26:28,000
+when we watch the frequency response
+当我们观看的频率响应
+
+00:26:28,000 --> 00:26:31,000
+love the system as
+爱系统
+
+00:26:31,000 --> 00:26:36,000
+we look at the digital filter frequency response
+我们来看一下数字滤波器的频率响应
+
+00:26:36,000 --> 00:26:41,000
+what we're sweeping and as we go from zero
+我们正在扫地，当我们从零
+
+00:26:41,000 --> 00:26:44,000
+up to 10 killer hurts
+高达10杀手伤害
+
+00:26:44,000 --> 00:26:49,000
+in the input frequency is this portion of the frequency response
+在输入频率为频率响应的该部分
+
+00:26:49,000 --> 00:26:53,000
+as we sweep from 10 killer hurts out to 20 kilohertz
+我们从10杀手横扫伤害到20千赫
+
+00:26:53,000 --> 00:26:57,000
+what we'll see is this portion the frequency response
+我们将看到的是这部分的频率响应
+
+00:26:57,000 --> 00:27:00,000
+in other words will see it periodically replicate
+换句话说，会看到它周期性地复制
+
+00:27:00,000 --> 00:27:04,000
+or if we look at the
+或者，如果我们看一下
+
+00:27:04,000 --> 00:27:08,000
+corresponding continuous-time frequency response
+相应的连续时间的频率响应
+
+00:27:08,000 --> 00:27:11,000
+what it means really is that sweeping
+这是什么意思真的就是这么笼统
+
+00:27:11,000 --> 00:27:14,000
+from 0 to 10 killer hurts
+从0到10的杀手伤害
+
+00:27:14,000 --> 00:27:18,000
+is moving up this way and then sweeping from 10 killer hurts
+是动起来这种方式，然后从10杀手席卷疼
+
+00:27:18,000 --> 00:27:22,000
+to 20 kilohertz on the input
+至20千赫的输入
+
+00:27:22,000 --> 00:27:25,000
+really because if the alias saying
+真的是因为如果说别名
+
+00:27:25,000 --> 00:27:28,000
+reflects itself in a digital filter by
+反映到由一个数字滤波器
+
+00:27:28,000 --> 00:27:32,000
+looking back down it toward lower frequencies and so the continuous-time
+回头向下移向更低的频率，因此在连续时间
+
+00:27:32,000 --> 00:27:33,000
+filter
+过滤器
+
+00:27:33,000 --> 00:27:37,000
+sweeps back down from 10 killer hurts
+从扫10杀手回落疼
+
+00:27:37,000 --> 00:27:41,000
+back 20 okay
+回20好
+
+00:27:41,000 --> 00:27:45,000
+so that so we'll see and we'll see it in several different ways as explained in
+让所以我们会看到，我们会看到它在几个不同的方式解释中
+
+00:27:45,000 --> 00:27:46,000
+the demonstration
+示范
+
+00:27:46,000 --> 00:27:49,000
+so now let's look and the frequency response
+所以现在让我们来看看和频率响应
+
+00:27:49,000 --> 00:27:53,000
+sold now we like to illustrate
+现在卖我们喜欢来说明
+
+00:27:53,000 --> 00:27:57,000
+is the frequency response love the acquittal in continuous-time
+在频率响应爱的连续时间无罪
+
+00:27:57,000 --> 00:28:02,000
+filter and we can do that by sweeping the filter with a sinusoidal input
+过滤，我们可以做到这一点的清扫过滤器，正弦输入
+
+00:28:02,000 --> 00:28:06,000
+so what we'll see in this demonstration is
+所以我们会在这个演示中看到的是
+
+00:28:06,000 --> 00:28:11,000
+on the upper trace the input sinusoid on the lower trace the output sinusoid
+在上部迹线在下部的输入正弦跟踪输出正弦
+
+00:28:11,000 --> 00:28:14,000
+using a 20 kilohertz sampling rate in a sweep
+使用20千赫兹的采样率在一个扫描
+
+00:28:14,000 --> 00:28:18,000
+from 0 to 10 killer hurts in other words a sweep from 0 to
+从0到10的杀手伤害换句话说从0扫描至
+
+00:28:18,000 --> 00:28:23,000
+effectively hi interns at the digital filter
+有效喜实习生在数字滤波器
+
+00:28:23,000 --> 00:28:28,000
+so work will observe as the input frequency increases
+这样的工作将遵守作为输入频率的增加
+
+00:28:28,000 --> 00:28:32,000
+is that the output sinusoid will have essentially constant amplitude
+是，输出正弦曲线将具有基本上恒定的幅度
+
+00:28:32,000 --> 00:28:37,000
+up to the cutoff frequency the filter and then approximately zero amplitude
+到截止频率的滤波器，然后约零振幅
+
+00:28:37,000 --> 00:28:40,000
+past so let's now sweet the filter
+过去，所以现在让我们甜蜜的过滤器
+
+00:28:40,000 --> 00:28:46,000
+frequency response
+频率响应
+
+00:28:46,000 --> 00:28:49,000
+and the area is the filter
+和面积的过滤器
+
+00:28:49,000 --> 00:28:55,000
+cutoff frequency
+截止频率
+
+00:28:55,000 --> 00:28:59,000
+now we can also observe the filter frequency response in
+现在我们也可以观察滤波器的频率响应
+
+00:28:59,000 --> 00:29:03,000
+several other ways one way in which we can observe it is by
+在此我们可以观察到它的几个其他的方法一种方法是通过
+
+00:29:03,000 --> 00:29:08,000
+looking also at the amplitude if the output sinusoid as
+也期待在幅度如果输出为正弦波
+
+00:29:08,000 --> 00:29:12,000
+a function of frequency rather than as a function of time
+频率的函数，而不是作为时间的函数
+
+00:29:12,000 --> 00:29:16,000
+and so will observe that on the left-hand SCO
+因此将观察到，在左手SCO
+
+00:29:16,000 --> 00:29:20,000
+while on the right-hand scope will have the same trace their we just saw
+而在右边的范围将具有相同的跟踪他们，我们只是看到了
+
+00:29:20,000 --> 00:29:23,000
+namely to traces the upper traces the input sinusoid
+即轨迹上的痕迹的输入正弦
+
+00:29:23,000 --> 00:29:28,000
+the lower traces the output sinusoid and in addition to observing
+较低的痕迹输出正弦曲线和除观察
+
+00:29:28,000 --> 00:29:33,000
+the frequency response let's also listen to the output sinusoid
+频率响应，让我们也听的输出正弦波
+
+00:29:33,000 --> 00:29:36,000
+and observe the attenuation
+并观察衰减
+
+00:29:36,000 --> 00:29:40,000
+in the output as we go from the field to pass band to the filter stopping again a
+在输出，因为我们去从外地来通带至过滤器再次停​​止
+
+00:29:40,000 --> 00:29:42,000
+20 kilohertz sampling rate
+20千赫的采样率
+
+00:29:42,000 --> 00:29:49,000
+and a sweep range from 0 to 10 killer now
+和扫描范围从0到10的杀手现在
+
+00:29:53,000 --> 00:29:57,000
+course when the filter stop
+当然，当过滤器停止
+
+00:29:57,000 --> 00:30:02,000
+now if we increase the sweep range
+现在，如果我们增加扫描范围
+
+00:30:02,000 --> 00:30:05,000
+from 10 killer hurts the 20 kilohertz
+从10杀手伤害了20千赫
+
+00:30:05,000 --> 00:30:08,000
+so that the sweep range is equal to the sampling frequency
+使扫描范围等于采样频率
+
+00:30:08,000 --> 00:30:12,000
+in essence that corresponds the sweeping at the digital filter
+在对应扫在数字滤波器本质
+
+00:30:12,000 --> 00:30:17,000
+from 0 to 2pi and in that case we'll begin to see
+从0到2PI，并在这种情况下，我们将开始看到
+
+00:30:17,000 --> 00:30:21,000
+some %uh the periodicity in the digital filter frequency response
+一些％呃在数字滤波器的频率响应的周期性
+
+00:30:21,000 --> 00:30:25,000
+so let's do that now with 20 kilohertz sampling rate
+所以让我们现在要做的，与20千赫的采样率
+
+00:30:25,000 --> 00:30:28,000
+and a sweep range is 0 to 20 kilohertz
+和一个扫描范围是0到20千赫
+
+00:30:28,000 --> 00:30:34,000
+now as we come near to Pine
+现在，当我们走近松
+
+00:30:34,000 --> 00:30:39,000
+we get back into the past
+我们重新回到过去
+
+00:30:39,000 --> 00:30:43,000
+an finally back to
+最后一回
+
+00:30:43,000 --> 00:30:46,000
+a0 to 10 killer hurts we so they were again sweeping
+a0到10杀手伤害我们，使他们再次席卷
+
+00:30:46,000 --> 00:30:53,000
+only from 0 to 2pi with regard to the digital filter
+只有从0到2PI对于数字滤波器
+
+00:31:05,000 --> 00:31:08,000
+now an important observation is that
+现在是一个重要的发现是，
+
+00:31:08,000 --> 00:31:11,000
+with the digital or discrete-time
+与数字或离散时间
+
+00:31:11,000 --> 00:31:16,000
+filter cutoff frequency fixed as i've indicated here
+滤波器的截止频率固定的，因为我已经在这里表示
+
+00:31:16,000 --> 00:31:20,000
+and I remind you that what the cutoff frequency is
+我提醒你，什么样的截止频率为
+
+00:31:20,000 --> 00:31:24,000
+is a 10 to hi with that cutoff frequency fixed
+是一个10来喜与截止频率固定
+
+00:31:24,000 --> 00:31:28,000
+because I love the normalization that we get
+因为我爱，我们得到正常化
+
+00:31:28,000 --> 00:31:31,000
+as we come back to a continuous-time
+当我们回过头来连续时间
+
+00:31:31,000 --> 00:31:34,000
+filter in fact what we have
+其实我们所拥有的筛选
+
+00:31:34,000 --> 00:31:38,000
+is a cutoff frequency dead is
+是一个截止频率为死
+
+00:31:38,000 --> 00:31:42,000
+dependent on the sampling frequency or on the sampling period
+依赖于采样频率或采样周期
+
+00:31:42,000 --> 00:31:46,000
+and more specifically since the discrete-time or digital
+更具体地，因为离散时间或数字
+
+00:31:46,000 --> 00:31:50,000
+filter has a cutoff frequency which is attentive to pie
+滤波器的截止频率是细心的馅饼
+
+00:31:50,000 --> 00:31:53,000
+the normalization as you recall
+你还记得正常化
+
+00:31:53,000 --> 00:31:58,000
+is dead to pie in discrete-time frequency
+是死馅饼离散时间频率
+
+00:31:58,000 --> 00:32:02,000
+corresponds to Omega sed s/ the sampling frequency
+对应于欧米茄SED秒/采样频率
+
+00:32:02,000 --> 00:32:06,000
+in terms of continuous-time frequency the consequence
+在连续时间频率方面的后果
+
+00:32:06,000 --> 00:32:10,000
+is dead this cutoff frequency in fact
+其实这死的截止频率
+
+00:32:10,000 --> 00:32:13,000
+is 110 all
+110是所有
+
+00:32:13,000 --> 00:32:17,000
+not to pine now because at the normalization its 110
+现在不以松，因为在它的正常化110
+
+00:32:17,000 --> 00:32:20,000
+I'll the sampling frequency so
+我将采样频率使
+
+00:32:20,000 --> 00:32:25,000
+consequently as we change the sampling frequency
+因此，我们改变采样频率
+
+00:32:25,000 --> 00:32:30,000
+what will happen is that even with the discrete-time filter cutoff fixed
+会发生什么事是，即使与离散时间滤波器的截止固定
+
+00:32:30,000 --> 00:32:34,000
+the cutoff frequency I'll the equivalent continuous-time
+截止频率，我将相当于连续时间
+
+00:32:34,000 --> 00:32:38,000
+filter will change now
+过滤器将改变现在
+
+00:32:38,000 --> 00:32:41,000
+that's what I want to demonstrate but let me
+这就是我要证明，但让我
+
+00:32:41,000 --> 00:32:44,000
+again stress and ask you to keep in mind dead
+再次强调并要求你记住死
+
+00:32:44,000 --> 00:32:48,000
+this demonstration is done without an anti-aliasing filter in
+这次示威是在没有一个抗混叠滤波器进行
+
+00:32:48,000 --> 00:32:54,000
+and we are going to be changing the sampling frequency
+而我们将要改变采样频率
+
+00:32:54,000 --> 00:32:58,000
+and so keep in mind dead as
+所以请记住死的，因为
+
+00:32:58,000 --> 00:33:02,000
+we look at this as the input frequency
+我们来看看本作的输入频率
+
+00:33:02,000 --> 00:33:07,000
+sweeps past half the sampling frequency whatever sampling frequency we happen to
+扫过采样频率的一半无论采样频率，我们碰巧
+
+00:33:07,000 --> 00:33:08,000
+be looking at
+在看
+
+00:33:08,000 --> 00:33:12,000
+then because the fact that there's no anti-aliasing filter
+然后，因为事实上，没有抗混叠滤波器
+
+00:33:12,000 --> 00:33:17,000
+will get daily as saying in other words the frequency in the digital filter
+每天将获得的话说，换句话说频率的数字滤波器
+
+00:33:17,000 --> 00:33:20,000
+discrete-time filter as we sweep the input frequency up
+离散时间滤波器为我们扫输入频率高达
+
+00:33:20,000 --> 00:33:24,000
+will move up in frequency until we get
+将在频率上移，直到我们得到
+
+00:33:24,000 --> 00:33:28,000
+past half the sampling frequency and then essentially will move back down
+过去采样频率的一半，然后基本上将移动回落
+
+00:33:28,000 --> 00:33:32,000
+frequency consequently what will get
+频率因此什么会
+
+00:33:32,000 --> 00:33:36,000
+then are or we'll see our periodic replications
+再有，否则我们将看到我们定期复制
+
+00:33:36,000 --> 00:33:41,000
+the frequency response when we swept past have see half the sampling alright
+频率响应，当我们横扫过去曾看到一半的采样好吗
+
+00:33:41,000 --> 00:33:42,000
+so now
+所以现在
+
+00:33:42,000 --> 00:33:45,000
+let's look at the same digital filter
+让我们来看看同样的数字滤波器
+
+00:33:45,000 --> 00:33:48,000
+but the frequency response as
+但是，频率响应为
+
+00:33:48,000 --> 00:33:53,000
+we change the sampling frequency now
+我们现在改变采样频率
+
+00:33:53,000 --> 00:33:57,000
+what we would like to demonstrate is the effective changing the same thing
+我们想证明是有效的改变同样的事情
+
+00:33:57,000 --> 00:34:00,000
+frequency and we know that
+频率和我们知道，
+
+00:34:00,000 --> 00:34:03,000
+the sampling that the effective filter cutoff frequency
+采样的有效滤波器的截止频率
+
+00:34:03,000 --> 00:34:07,000
+is tied to the sampling frequency
+是依赖于采样频率
+
+00:34:07,000 --> 00:34:10,000
+and for this particular filter corresponds to attend
+并为这个特殊的过滤器对应出席
+
+00:34:10,000 --> 00:34:15,000
+of the sampling frequency consequently if we double the sampling frequency we
+采样频率因而，如果我们的两倍的采样频率我们
+
+00:34:15,000 --> 00:34:16,000
+should double
+应该加倍
+
+00:34:16,000 --> 00:34:20,000
+the affective filter past and where war
+情感过滤过去，那里的战争
+
+00:34:20,000 --> 00:34:23,000
+double the filter cutoff frequency and
+加倍滤波器的截止频率和
+
+00:34:23,000 --> 00:34:27,000
+so let's do that now it again is 0-10 killer hurt sweep range
+所以让我们做，现在它再次为0-10杀手伤扫描范围
+
+00:34:27,000 --> 00:34:30,000
+but a forty kilohertz sampling frequency
+但一个40千赫的采样频率
+
+00:34:30,000 --> 00:34:35,000
+me and
+我和
+
+00:34:35,000 --> 00:34:39,000
+we should observe that the filter cutoff frequency has now doubled
+我们应该看到，滤波器的截止频率已经翻了一翻
+
+00:34:39,000 --> 00:34:44,000
+out 24 killer now
+出24现在杀手
+
+00:34:44,000 --> 00:34:47,000
+let's begin to decrease the filter sampling frequency
+让我们开始降低滤波器的采样频率
+
+00:34:47,000 --> 00:34:51,000
+so from forty let's change the sampling frequency to 20 kilohertz
+所以从40让我们的采样频率改为20赫兹
+
+00:34:51,000 --> 00:34:58,000
+we should see the cutoff frequency cut in half me
+我们应该看到的截止频率降低一半我
+
+00:35:05,000 --> 00:35:09,000
+now we can go even further we can cut the sampling frequency down
+现在我们可以再进一步，我们可以减少采样频率下降
+
+00:35:09,000 --> 00:35:13,000
+10 killer hurts and remember that the sweep range is 0 to 10 killer hurt so
+10杀手伤害，记住，扫描范围为0〜10的杀手伤得这么
+
+00:35:13,000 --> 00:35:16,000
+now will be sweeping from 0 to 2pi
+现在从0扫到2PI
+
+00:35:16,000 --> 00:35:23,000
+so as we get close to two pi will see the passband again
+所以随着我们接近两圆周率将再次看到通带
+
+00:35:27,000 --> 00:35:30,000
+and now
+现在
+
+00:35:30,000 --> 00:35:33,000
+let's cut down the sampling frequency even further
+让我们砍下采样频率进一步
+
+00:35:33,000 --> 00:35:37,000
+to by kilohertz my
+由千赫我
+
+00:35:37,000 --> 00:35:42,000
+here we are at 2pi
+在这里，我们是在二皮音乐
+
+00:35:42,000 --> 00:35:45,000
+and then
+进而
+
+00:35:45,000 --> 00:35:50,000
+at for pop alright so
+在对流行这么好吗
+
+00:35:50,000 --> 00:35:54,000
+that illustrates the effective changing the sampling frequency
+示出改变采样频率的有效
+
+00:35:54,000 --> 00:35:57,000
+now let's conclude this demonstration at the effect
+现在让我们来总结这次示范的作用
+
+00:35:57,000 --> 00:36:01,000
+on the sampling frequency on the filter cutoff frequency by carrying out some
+对滤波器的截止频率的采样频率通过进行一些
+
+00:36:01,000 --> 00:36:02,000
+filtering
+过滤
+
+00:36:02,000 --> 00:36:05,000
+on some live audio white will
+一些现场音频白色的意志
+
+00:36:05,000 --> 00:36:08,000
+watching this case is the output
+看着这种情况下是输出
+
+00:36:08,000 --> 00:36:12,000
+audio waveform as a function of time
+音频波形作为时间的函数
+
+00:36:12,000 --> 00:36:15,000
+on the single trace go and also
+在单一的跟踪去也
+
+00:36:15,000 --> 00:36:20,000
+will listen to the output will begin it with a forty killer hurts
+会听的输出将开始它与40杀手伤害
+
+00:36:20,000 --> 00:36:25,000
+sampling rate then reduce that to 20 kilohertz 10 killer hurts and then five
+采样率则减少至20千赫兹10杀手伤害再五
+
+00:36:25,000 --> 00:36:25,000
+alerts
+警报
+
+00:36:25,000 --> 00:36:29,000
+and in each of those cases the effective filter cutoff frequency
+并在每个这些案件的有效滤波器的截止频率
+
+00:36:29,000 --> 00:36:33,000
+then is cut in half from for keywords to kill hurts
+然后从关键字杀伤害减少一半
+
+00:36:33,000 --> 00:36:38,000
+21 kilohertz and then to 500 cycles so let's begin with the forty killer hurt
+21千赫兹，然后以500次让我们开始与40杀手的伤害
+
+00:36:38,000 --> 00:36:40,000
+sampling frequency
+采样频率
+
+00:36:40,000 --> 00:36:47,000
+or ineffective filter cutoff frequency of work killer
+或工作杀手无效滤波器的截止频率
+
+00:36:49,000 --> 00:36:53,000
+now let's reduce net 20 kilohertz am
+现在让我们减少净20千赫时
+
+00:36:53,000 --> 00:37:00,000
+frequency or to kill hurts filter
+频率或杀伤害过滤器
+
+00:37:00,000 --> 00:37:03,000
+and 10 kelleher sampling frequency
+和10凯莱赫采样频率
+
+00:37:03,000 --> 00:37:06,000
+the
+该
+
+00:37:06,000 --> 00:37:07,000
+the
+该
+
+00:37:07,000 --> 00:37:10,000
+then finally in my Google Earth family
+后来终于在我的谷歌地球的家人
+
+00:37:10,000 --> 00:37:14,000
+cigars running to me why minor in Psych grueling
+跑到我为什么未成年人精极度紧张严罚雪茄
+
+00:37:14,000 --> 00:37:20,000
+analog all the
+模拟所有
+
+00:37:20,000 --> 00:37:24,000
+I now let's finally include why returning to
+我现在让我们终于有为什么回国
+
+00:37:24,000 --> 00:37:28,000
+a little higher quality ragtime like me the same
+高一点的质量拉格泰姆像我一样
+
+00:37:28,000 --> 00:37:35,000
+theme
+主题
+
+00:37:37,000 --> 00:37:39,000
+right well hopefully
+右边还有希望
+
+00:37:39,000 --> 00:37:43,000
+what you've seen in the demonstration and in this lecture
+你所看到的演示和在此讲学
+
+00:37:43,000 --> 00:37:47,000
+is gives you a sense of feeling
+是给你的感觉感
+
+00:37:47,000 --> 00:37:50,000
+for the analysis and the use
+用于分析和使用
+
+00:37:50,000 --> 00:37:53,000
+I'll discrete-time filters
+我将离散时间滤波器
+
+00:37:53,000 --> 00:37:56,000
+for processing continuous-time signals and
+用于处理连续时间信号，并
+
+00:37:56,000 --> 00:38:00,000
+as you may be aware and as I've tried to indicate
+正如你可能知道，正如我一直试图表明
+
+00:38:00,000 --> 00:38:03,000
+previously in the past this in fact is
+以前在过去，这其实是
+
+00:38:03,000 --> 00:38:07,000
+one very important but not the only but one very important
+其中很重要的，但不是唯一的，但其中很重要的
+
+00:38:07,000 --> 00:38:10,000
+context in which discrete-time filtering
+上下文中，离散时间滤波
+
+00:38:10,000 --> 00:38:14,000
+issues and this in fact is
+的问题，这实际上是
+
+00:38:14,000 --> 00:38:18,000
+an area that is developing rapidly because at the fact dead
+这是因为在死亡的事实迅速发展的区域
+
+00:38:18,000 --> 00:38:22,000
+microprocessors digital technology computers et cetera
+微处理器数字技术的计算机等等
+
+00:38:22,000 --> 00:38:26,000
+afford considerable flexibility
+负担相当大的灵活性
+
+00:38:26,000 --> 00:38:30,000
+in carrying out digital processing of signals
+在开展信号数字处理
+
+00:38:30,000 --> 00:38:35,000
+and it is and went digital processing is used at
+它是走了数字处理是用在
+
+00:38:35,000 --> 00:38:38,000
+naturally corresponds
+自然对应
+
+00:38:38,000 --> 00:38:43,000
+to to implementing the processing
+以实施处理
+
+00:38:43,000 --> 00:38:48,000
+and analyzing it in discrete-time now
+现在分析它在离散时间
+
+00:38:48,000 --> 00:38:52,000
+in the next lecture will be continuing
+在下一讲将持续
+
+00:38:52,000 --> 00:38:56,000
+on another aspect developing another aspect
+在另一个方面发展另一个方面
+
+00:38:56,000 --> 00:38:59,000
+love sampling any particular
+爱取样任何特定
+
+00:38:59,000 --> 00:39:04,000
+what we'll be talking about is sampling of discrete-time signals
+我们将谈论的是离散时间信号的采样
+
+00:39:04,000 --> 00:39:08,000
+as all indicate there one of the contexts in which
+因为所有的表示存在于该上下文之一
+
+00:39:08,000 --> 00:39:12,000
+discrete-time sampling in fact plays an important role
+实际上离散时间采样起着重要的作用
+
+00:39:12,000 --> 00:39:15,000
+is in the context in which
+是在上下文中
+
+00:39:15,000 --> 00:39:18,000
+we are processing continuous-time signals
+我们正在处理连续时间信号
+
+00:39:18,000 --> 00:39:22,000
+using discrete time processing where in fact
+使用离散时间处理这里其实
+
+00:39:22,000 --> 00:39:25,000
+one step that we might want to take in addition to the steps that we've talked
+我们可能要考虑除了我们已经讨论过的步骤一步
+
+00:39:25,000 --> 00:39:26,000
+about here
+关于这里
+
+00:39:26,000 --> 00:39:30,000
+is an additional sampling process following
+下面是一个额外的采样过程
+
+00:39:30,000 --> 00:39:35,000
+whatever kinds of filtering that we that we do well that's a discussion and a
+任何类型的过滤，我们认为我们做的很好，这是一个讨论和
+
+00:39:35,000 --> 00:39:37,000
+topic that will be going into in the next lecture
+主题将进入在下一讲
+
+00:39:37,000 --> 00:39:38,000
+thank you
+谢谢
+

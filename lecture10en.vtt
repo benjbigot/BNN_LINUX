@@ -1,0 +1,2340 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU ha in
+
+00:00:28,000 --> 00:00:31,000
+in
+
+00:00:31,000 --> 00:00:33,000
+the
+
+00:00:33,000 --> 00:00:39,000
+the in
+
+00:00:39,000 --> 00:00:46,000
+the moon
+
+00:00:49,000 --> 00:00:52,000
+the
+
+00:00:52,000 --> 00:00:59,000
+over the last several lectures we developed the for a representation for
+
+00:01:00,000 --> 00:01:03,000
+and continuous-time signals what i'd
+
+00:01:03,000 --> 00:01:08,000
+now like to do is develop a similar representation for discrete-time
+
+00:01:08,000 --> 00:01:11,000
+and let me begin a discussion by
+
+00:01:11,000 --> 00:01:16,000
+reminding you up what are basic motivation was the idea
+
+00:01:16,000 --> 00:01:20,000
+is that what we wanted to do was exploit the properties
+
+00:01:20,000 --> 00:01:25,000
+love linearity in time and variance for linear time-invariant systems
+
+00:01:25,000 --> 00:01:28,000
+so and in the case love
+
+00:01:28,000 --> 00:01:31,000
+linear time-invariant systems the
+
+00:01:31,000 --> 00:01:35,000
+basic idea was to consider
+
+00:01:35,000 --> 00:01:40,000
+decomposing the input as a linear combination
+
+00:01:40,000 --> 00:01:43,000
+love basic inputs and then
+
+00:01:43,000 --> 00:01:47,000
+because I've Lenny arity the output could be expressed as
+
+00:01:47,000 --> 00:01:52,000
+a linear combination of corresponding outputs where
+
+00:01:52,000 --> 00:01:55,000
+saw I serve I is the output
+
+00:01:55,000 --> 00:02:00,000
+due to fee survive so
+
+00:02:00,000 --> 00:02:04,000
+basically what we attempted to do was decompose the input
+
+00:02:04,000 --> 00:02:07,000
+and then reconstruct the output through
+
+00:02:07,000 --> 00:02:11,000
+a linear combination all the outputs to those basic inputs
+
+00:02:11,000 --> 00:02:15,000
+we then focused on the notion
+
+00:02:15,000 --> 00:02:18,000
+love choosing the basic inputs
+
+00:02:18,000 --> 00:02:22,000
+with two criterion mine one was
+
+00:02:22,000 --> 00:02:25,000
+to choose them so that a broad class signals
+
+00:02:25,000 --> 00:02:29,000
+could be constructed out over those basic inputs
+
+00:02:29,000 --> 00:02:34,000
+and the second was to choose the basic inputs
+
+00:02:34,000 --> 00:02:37,000
+so that the response to those was easy to compute
+
+00:02:37,000 --> 00:02:42,000
+and as you recall one representation that we ended up with
+
+00:02:42,000 --> 00:02:46,000
+with those basic criteria in mind:
+
+00:02:46,000 --> 00:02:49,000
+was the representation through convolution
+
+00:02:49,000 --> 00:02:53,000
+and then in beginning the discussion love the for a representation of
+
+00:02:53,000 --> 00:02:55,000
+continuous-time signals
+
+00:02:55,000 --> 00:02:59,000
+we chose as another said a basic inputs
+
+00:02:59,000 --> 00:03:02,000
+complex exponentials so
+
+00:03:02,000 --> 00:03:05,000
+for continuous-time we chose
+
+00:03:05,000 --> 00:03:09,000
+a set love basic inputs which were complex exponential
+
+00:03:09,000 --> 00:03:14,000
+the motivation there was the fact that
+
+00:03:14,000 --> 00:03:18,000
+the complex exponentials have we referred to as
+
+00:03:18,000 --> 00:03:21,000
+the I can function property namely
+
+00:03:21,000 --> 00:03:25,000
+if we put complex exponentials into our continuous-time systems
+
+00:03:25,000 --> 00:03:30,000
+than the output is a complex exponential
+
+00:03:30,000 --> 00:03:34,000
+love the same form with
+
+00:03:34,000 --> 00:03:37,000
+only a change in complex amplitude
+
+00:03:37,000 --> 00:03:40,000
+and that change in complex amplitude is
+
+00:03:40,000 --> 00:03:44,000
+what we referred to as the
+
+00:03:44,000 --> 00:03:48,000
+frequency response %uh the system
+
+00:03:48,000 --> 00:03:51,000
+and also by the way as it developed later
+
+00:03:51,000 --> 00:03:56,000
+that frequency response as you should now recognize from this expression
+
+00:03:56,000 --> 00:04:01,000
+is in fact the 48 transform the continuous-time for EA transform
+
+00:04:01,000 --> 00:04:07,000
+all the system impulse response and
+
+00:04:07,000 --> 00:04:12,000
+the notion all decomposing a signal as a linear combination of both these complex
+
+00:04:12,000 --> 00:04:13,000
+exponentials
+
+00:04:13,000 --> 00:04:17,000
+is what the first the forty a series
+
+00:04:17,000 --> 00:04:21,000
+representation and then later the Fourier transform representation
+
+00:04:21,000 --> 00:04:22,000
+corresponded to
+
+00:04:22,000 --> 00:04:25,000
+and finally to remind you
+
+00:04:25,000 --> 00:04:31,000
+love one additional point the fact is that because the eigenfunction property
+
+00:04:31,000 --> 00:04:34,000
+the response
+
+00:04:34,000 --> 00:04:37,000
+once we decompose the input as a linear combination
+
+00:04:37,000 --> 00:04:41,000
+complex exponentials the response to that when your combination
+
+00:04:41,000 --> 00:04:46,000
+is straightforward to compute once we know the frequency response
+
+00:04:46,000 --> 00:04:50,000
+because if the eigenfunction property now
+
+00:04:50,000 --> 00:04:53,000
+basically the same strategy
+
+00:04:53,000 --> 00:04:57,000
+and many of the same ideas work in discrete-time
+
+00:04:57,000 --> 00:05:02,000
+paralleling almost exactly what happened in continuous-time
+
+00:05:02,000 --> 00:05:06,000
+so the similarities between discrete-time and continuous-time
+
+00:05:06,000 --> 00:05:10,000
+are very strong although as we'll see there are a number
+
+00:05:10,000 --> 00:05:13,000
+a differences and it's important
+
+00:05:13,000 --> 00:05:17,000
+as we go through the discussion to illuminate
+
+00:05:17,000 --> 00:05:22,000
+not only the similarities but obviously also the differences
+
+00:05:22,000 --> 00:05:26,000
+well let's begin with the I can function property
+
+00:05:26,000 --> 00:05:31,000
+and let me just say that just as in continuous-time
+
+00:05:31,000 --> 00:05:35,000
+if we consider said a basic signals
+
+00:05:35,000 --> 00:05:38,000
+which are complex exponentials
+
+00:05:38,000 --> 00:05:42,000
+then discrete-time linear time-invariant systems
+
+00:05:42,000 --> 00:05:46,000
+have the I can function property namely
+
+00:05:46,000 --> 00:05:50,000
+if we put a complex exponential into the system
+
+00:05:50,000 --> 00:05:53,000
+the response is a complex exponential
+
+00:05:53,000 --> 00:05:56,000
+at the same complex frequency and
+
+00:05:56,000 --> 00:06:00,000
+simply multiplied by inappropriate
+
+00:06:00,000 --> 00:06:03,000
+complex factor or constant
+
+00:06:03,000 --> 00:06:07,000
+and just as we did in
+
+00:06:07,000 --> 00:06:11,000
+continuous-time we will be
+
+00:06:11,000 --> 00:06:15,000
+referring to this complex constant which is a function
+
+00:06:15,000 --> 00:06:19,000
+of course the frequency other complex exponential input
+
+00:06:19,000 --> 00:06:24,000
+will be referring to this as the frequency response
+
+00:06:24,000 --> 00:06:29,000
+and although it's not particularly evident at this point
+
+00:06:29,000 --> 00:06:33,000
+as the discussion develops through this lecture what in fact will happen
+
+00:06:33,000 --> 00:06:36,000
+is very much paralleling
+
+00:06:36,000 --> 00:06:40,000
+continuous-time this particular expression
+
+00:06:40,000 --> 00:06:43,000
+in fact will correspond
+
+00:06:43,000 --> 00:06:46,000
+to what will refer to as the
+
+00:06:46,000 --> 00:06:50,000
+for EA transform the discrete-time Fourier transform
+
+00:06:50,000 --> 00:06:54,000
+up the system impulse response so there of course there's a very strong parallel
+
+00:06:54,000 --> 00:06:58,000
+between continuous-time and discrete-time
+
+00:06:58,000 --> 00:07:01,000
+now just as we did in continuous-time
+
+00:07:01,000 --> 00:07:04,000
+let's begin a discussion by
+
+00:07:04,000 --> 00:07:09,000
+first concentrating on periodic the representation through complex
+
+00:07:09,000 --> 00:07:10,000
+exponentials
+
+00:07:10,000 --> 00:07:14,000
+love periodic sequences and then
+
+00:07:14,000 --> 00:07:18,000
+will generalize that discussion to the representation
+
+00:07:18,000 --> 00:07:21,000
+Ave periodic signals so
+
+00:07:21,000 --> 00:07:25,000
+let's consider furs a periodic signal
+
+00:07:25,000 --> 00:07:28,000
+or in general signals which are periodic
+
+00:07:28,000 --> 00:07:32,000
+period to notify capital and and then
+
+00:07:32,000 --> 00:07:35,000
+course the fundamental frequency is
+
+00:07:35,000 --> 00:07:39,000
+to pie divided by capital
+
+00:07:39,000 --> 00:07:43,000
+now we can consider exponentials
+
+00:07:43,000 --> 00:07:47,000
+which have this as a fundamental frequency
+
+00:07:47,000 --> 00:07:50,000
+war which are harmonics that
+
+00:07:50,000 --> 00:07:54,000
+and that would correspond to the class of complex exponentials
+
+00:07:54,000 --> 00:07:59,000
+the form you to the JK Omega 0n
+
+00:07:59,000 --> 00:08:03,000
+so these complex exponentials then
+
+00:08:03,000 --> 00:08:07,000
+as k varies are complex exponentials
+
+00:08:07,000 --> 00:08:11,000
+that are harmonically related with
+
+00:08:11,000 --> 00:08:15,000
+all of which our periodic with the same period
+
+00:08:15,000 --> 00:08:19,000
+capital and although the fundamental period
+
+00:08:19,000 --> 00:08:22,000
+is different for each of these each of them being related by
+
+00:08:22,000 --> 00:08:26,000
+an integer amount
+
+00:08:26,000 --> 00:08:31,000
+now again just as we did in continuous time we can consider
+
+00:08:31,000 --> 00:08:35,000
+attempting to build our periodic signal I have a linear combination
+
+00:08:35,000 --> 00:08:38,000
+love these and so we consider
+
+00:08:38,000 --> 00:08:42,000
+a periodic signal which is
+
+00:08:42,000 --> 00:08:45,000
+a weighted sum all these
+
+00:08:45,000 --> 00:08:48,000
+me complex exponentials and
+
+00:08:48,000 --> 00:08:53,000
+of course this periodic signal this is a periodic signal as can be
+
+00:08:53,000 --> 00:08:58,000
+verified in more or less in a straightforward way by substitution
+
+00:08:58,000 --> 00:09:02,000
+and of course one of the things that will want to address shortly
+
+00:09:02,000 --> 00:09:06,000
+is how broad a classic signals again can be represented
+
+00:09:06,000 --> 00:09:09,000
+by this psalm and another question obviously will be
+
+00:09:09,000 --> 00:09:13,000
+how do we determine the coefficients a suitcase
+
+00:09:13,000 --> 00:09:17,000
+however in before we do that let me
+
+00:09:17,000 --> 00:09:20,000
+focus on an important distinction
+
+00:09:20,000 --> 00:09:24,000
+between continuous-time and discrete-time
+
+00:09:24,000 --> 00:09:30,000
+in the context of these complex exponentials and this representation
+
+00:09:30,000 --> 00:09:34,000
+when we talked about complex exponentials and sinusoids
+
+00:09:34,000 --> 00:09:39,000
+early in the cores one up the difference is that we saw between continuous-time
+
+00:09:39,000 --> 00:09:40,000
+and discrete-time
+
+00:09:40,000 --> 00:09:44,000
+is dead in continuous-time as we very
+
+00:09:44,000 --> 00:09:49,000
+in the frequency variable we see different complex exponentials
+
+00:09:49,000 --> 00:09:53,000
+as Omega berries whereas in discrete-time
+
+00:09:53,000 --> 00:09:57,000
+we saw in fact dead there was a period this city
+
+00:09:57,000 --> 00:10:02,000
+or said another way it's straightforward to verify
+
+00:10:02,000 --> 00:10:06,000
+that if we think I love this
+
+00:10:06,000 --> 00:10:09,000
+class a complex exponentials day
+
+00:10:09,000 --> 00:10:13,000
+in fact if we consider burying
+
+00:10:13,000 --> 00:10:17,000
+K by an ink to it
+
+00:10:17,000 --> 00:10:20,000
+capital and where capital and is the period
+
+00:10:20,000 --> 00:10:23,000
+all the fundamental
+
+00:10:23,000 --> 00:10:28,000
+complex exponential then in fact
+
+00:10:28,000 --> 00:10:32,000
+if we replace K by K plus capital and
+
+00:10:32,000 --> 00:10:38,000
+we'll see exactly the same complex exponentials over again
+
+00:10:38,000 --> 00:10:43,000
+now what does that say what it says is that if I consider this class of complex
+
+00:10:43,000 --> 00:10:44,000
+exponentials
+
+00:10:44,000 --> 00:10:48,000
+SK varies from zero
+
+00:10:48,000 --> 00:10:52,000
+through capital N -1 we've seen
+
+00:10:52,000 --> 00:10:56,000
+we will see all of the ones that there are two see
+
+00:10:56,000 --> 00:10:59,000
+there aren't any more and so in fact
+
+00:10:59,000 --> 00:11:02,000
+if we can build excessive and
+
+00:11:02,000 --> 00:11:06,000
+I have this linear combination then
+
+00:11:06,000 --> 00:11:09,000
+we better be able to do it as k varies
+
+00:11:09,000 --> 00:11:13,000
+from 0
+
+00:11:13,000 --> 00:11:17,000
+up to and -1 because
+
+00:11:17,000 --> 00:11:21,000
+beyond that will simply see the same complex s
+
+00:11:21,000 --> 00:11:24,000
+exponentials over again so for example
+
+00:11:24,000 --> 00:11:27,000
+if k takes on the value capital and
+
+00:11:27,000 --> 00:11:30,000
+that will be exactly the same complex exponential
+
+00:11:30,000 --> 00:11:34,000
+as if KZ 0
+
+00:11:34,000 --> 00:11:38,000
+so in fact this some ranges
+
+00:11:38,000 --> 00:11:43,000
+only over capital in above the distinct complex exponentials
+
+00:11:43,000 --> 00:11:47,000
+let's say for example from 0 to capital and -1
+
+00:11:47,000 --> 00:11:51,000
+although in fact since these complex exponentials repeat
+
+00:11:51,000 --> 00:11:56,000
+in K I could actually consider instead have
+
+00:11:56,000 --> 00:11:59,000
+from 0 to N -1 I could consider from one
+
+00:11:59,000 --> 00:12:03,000
+and or from to too and plus one or whatever
+
+00:12:03,000 --> 00:12:08,000
+or said another way in this representation
+
+00:12:08,000 --> 00:12:12,000
+I could alternatively shoes K
+
+00:12:12,000 --> 00:12:15,000
+outside this range thinking
+
+00:12:15,000 --> 00:12:20,000
+0 these coefficients simply as periodically repeating in K
+
+00:12:20,000 --> 00:12:24,000
+because if the fact that these complex exponentials
+
+00:12:24,000 --> 00:12:28,000
+periodically repeating K so in fact
+
+00:12:28,000 --> 00:12:32,000
+in place if this expression it will be comin in writing the forty a series
+
+00:12:32,000 --> 00:12:33,000
+expression
+
+00:12:33,000 --> 00:12:38,000
+to write it as i've indicated here where the implication is
+
+00:12:38,000 --> 00:12:41,000
+that these Fourier coefficients
+
+00:12:41,000 --> 00:12:45,000
+periodically repeated as K continues to rip
+
+00:12:45,000 --> 00:12:49,000
+to repeat outside the interval from 0 to N -1
+
+00:12:49,000 --> 00:12:53,000
+and so this notation in fact says
+
+00:12:53,000 --> 00:12:56,000
+at what we're going to use are
+
+00:12:56,000 --> 00:13:00,000
+is K ranging over one period
+
+00:13:00,000 --> 00:13:04,000
+love this periodic sequence which is the forty a series called
+
+00:13:04,000 --> 00:13:08,000
+visions okay so
+
+00:13:08,000 --> 00:13:13,000
+the expression that we have been for the forty a series
+
+00:13:13,000 --> 00:13:18,000
+I've repeated here and the implication now is that
+
+00:13:18,000 --> 00:13:22,000
+the AC K's are periodic they periodically repeat because of course
+
+00:13:22,000 --> 00:13:25,000
+these exponentials periodically repeated
+
+00:13:25,000 --> 00:13:29,000
+this indicates there we only use them over one period
+
+00:13:29,000 --> 00:13:32,000
+and now we can inquire as to how
+
+00:13:32,000 --> 00:13:36,000
+we determine the coefficients aces K
+
+00:13:36,000 --> 00:13:39,000
+well we can formally go through this much as we did in
+
+00:13:39,000 --> 00:13:42,000
+the continuous-time case in and 0
+
+00:13:42,000 --> 00:13:46,000
+we do in fact do that in the text which involves substituting some
+
+00:13:46,000 --> 00:13:49,000
+sums in a change in yours summation cetera
+
+00:13:49,000 --> 00:13:53,000
+but let me a draw your attention to the fact that
+
+00:13:53,000 --> 00:13:56,000
+this in fact can be thought I love
+
+00:13:56,000 --> 00:14:02,000
+as capital in equations in capital and unknowns
+
+00:14:02,000 --> 00:14:06,000
+in other words we know x7 over a period
+
+00:14:06,000 --> 00:14:12,000
+and so we know what the left hand side if this is for capital and bad news
+
+00:14:12,000 --> 00:14:16,000
+and we'd like to determine these constant sese K
+
+00:14:16,000 --> 00:14:20,000
+well it turns out that their is a nice convening in closed form expression for
+
+00:14:20,000 --> 00:14:21,000
+that
+
+00:14:21,000 --> 00:14:26,000
+and in fact if we evaluate the closed-form expression
+
+00:14:26,000 --> 00:14:29,000
+through any variety of algebraic manipulations
+
+00:14:29,000 --> 00:14:32,000
+we end up then with the
+
+00:14:32,000 --> 00:14:37,000
+analysis equation and the analysis equation
+
+00:14:37,000 --> 00:14:41,000
+which tells us how to get the coefficients AC K
+
+00:14:41,000 --> 00:14:44,000
+from excessive and is what I've
+
+00:14:44,000 --> 00:14:47,000
+indicated here and
+
+00:14:47,000 --> 00:14:50,000
+so this tells us how for Maxim and
+
+00:14:50,000 --> 00:14:55,000
+to get the AC K's and of course the first equation
+
+00:14:55,000 --> 00:14:59,000
+tells us how x7 is built up by the VA's
+
+00:14:59,000 --> 00:15:03,000
+K's notice incidently that
+
+00:15:03,000 --> 00:15:07,000
+there is a strong to our the between these two equations
+
+00:15:07,000 --> 00:15:11,000
+and that's a duality that will return to
+
+00:15:11,000 --> 00:15:14,000
+actually toward the end of the next lecture now
+
+00:15:14,000 --> 00:15:17,000
+there is a real difference between the way those equations look
+
+00:15:17,000 --> 00:15:21,000
+and the way the continuous-time forty a series look
+
+00:15:21,000 --> 00:15:25,000
+in a continuous-time case let me remind you
+
+00:15:25,000 --> 00:15:28,000
+that it required
+
+00:15:28,000 --> 00:15:32,000
+an infinite number of coefficients to build up this continuous-time
+
+00:15:32,000 --> 00:15:35,000
+function and so this was not simply a matter
+
+00:15:35,000 --> 00:15:39,000
+of identifying how to invert capital and
+
+00:15:39,000 --> 00:15:44,000
+were a finite number of equations in a finite number upon owns
+
+00:15:44,000 --> 00:15:47,000
+and the analysis equation was
+
+00:15:47,000 --> 00:15:53,000
+and integration as opposed to the synthesis equation
+
+00:15:53,000 --> 00:15:56,000
+which is a summation so
+
+00:15:56,000 --> 00:15:59,000
+their is a real difference there between
+
+00:15:59,000 --> 00:16:03,000
+the continuous-time and discrete-time cases and a difference
+
+00:16:03,000 --> 00:16:06,000
+arises to a large extent because
+
+00:16:06,000 --> 00:16:11,000
+all this notion that in discrete-time the complex exponentials
+
+00:16:11,000 --> 00:16:14,000
+are periodic in
+
+00:16:14,000 --> 00:16:18,000
+their frequency so we have been to summarize
+
+00:16:18,000 --> 00:16:22,000
+the synthesis equation and the analysis equation
+
+00:16:22,000 --> 00:16:27,000
+for the discrete-time for a series
+
+00:16:27,000 --> 00:16:32,000
+again x7 are original signals periodic
+
+00:16:32,000 --> 00:16:35,000
+and of course the complex exponentials
+
+00:16:35,000 --> 00:16:40,000
+involve the periodic their periodic obviously in an
+
+00:16:40,000 --> 00:16:45,000
+by it in contrast the continuous-time these repeat
+
+00:16:45,000 --> 00:16:48,000
+in K in other words as k Omega 0
+
+00:16:48,000 --> 00:16:53,000
+goes outside arrange that covers a 25 interval
+
+00:16:53,000 --> 00:16:56,000
+and because if that we're imposing
+
+00:16:56,000 --> 00:17:02,000
+in a sense the interpretation that the AC Kesar likewise the periodic sequence
+
+00:17:02,000 --> 00:17:05,000
+and in fact we look at the analysis equation
+
+00:17:05,000 --> 00:17:10,000
+as we let K very
+
+00:17:10,000 --> 00:17:13,000
+outside the range from 0 to N -1
+
+00:17:13,000 --> 00:17:17,000
+what you can easily verified by substitution in here
+
+00:17:17,000 --> 00:17:22,000
+is that this sequence will in fact periodically repeat
+
+00:17:22,000 --> 00:17:27,000
+so to underscore the difference between the continuous-time and discrete-time
+
+00:17:27,000 --> 00:17:29,000
+cases
+
+00:17:29,000 --> 00:17:33,000
+we have this periodicity in the time domain
+
+00:17:33,000 --> 00:17:38,000
+and that's a periodicity dad is of course true in discrete-time
+
+00:17:38,000 --> 00:17:41,000
+and it's also true in continuous-time
+
+00:17:41,000 --> 00:17:45,000
+if we replace the integer variable
+
+00:17:45,000 --> 00:17:48,000
+by the discrete-time time variable
+
+00:17:48,000 --> 00:17:52,000
+and we also indiscreet I'm have this periodicity
+
+00:17:52,000 --> 00:17:56,000
+in krak Omega 0 and correspondingly
+
+00:17:56,000 --> 00:17:59,000
+a periodicity in the four EA coefficients
+
+00:17:59,000 --> 00:18:04,000
+and bad is center properties
+
+00:18:04,000 --> 00:18:08,000
+dat does not happen
+
+00:18:08,000 --> 00:18:12,000
+in continuous-time and is bad
+
+00:18:12,000 --> 00:18:17,000
+there essentially leads to all of the important differences between
+
+00:18:17,000 --> 00:18:21,000
+discrete-time Fourier representations and in continuous-time
+
+00:18:21,000 --> 00:18:24,000
+Korea representation
+
+00:18:24,000 --> 00:18:28,000
+now just quickly let me draw your attention to the issue
+
+00:18:28,000 --> 00:18:35,000
+love convergence and when a sequence can and can't be represented at cetera
+
+00:18:35,000 --> 00:18:39,000
+a recall that in the continuous-time case
+
+00:18:39,000 --> 00:18:43,000
+we focused on convergence in the context either
+
+00:18:43,000 --> 00:18:46,000
+conditions which are referred to as where the group believe the
+
+00:18:46,000 --> 00:18:51,000
+or another set of conditions which were the the Ridgeway conditions
+
+00:18:51,000 --> 00:18:55,000
+and there was this issue about when the signal doesn't doesn't convergent
+
+00:18:55,000 --> 00:18:56,000
+discontinuities
+
+00:18:56,000 --> 00:19:01,000
+center let me just simply draw your attention to the fact
+
+00:19:01,000 --> 00:19:05,000
+there in the discrete-time case
+
+00:19:05,000 --> 00:19:09,000
+what we have is the representation of the periodic signal
+
+00:19:09,000 --> 00:19:13,000
+as Assam all a finite number
+
+00:19:13,000 --> 00:19:19,000
+turns this represents capital and equations in capital and unknowns
+
+00:19:19,000 --> 00:19:24,000
+if we consider the partial some namely taking
+
+00:19:24,000 --> 00:19:29,000
+a smaller number turns then simply what happens
+
+00:19:29,000 --> 00:19:33,000
+is as the number of turns increases
+
+00:19:33,000 --> 00:19:36,000
+to the finite number required to represent
+
+00:19:36,000 --> 00:19:40,000
+ex-dividend we simply end up with
+
+00:19:40,000 --> 00:19:43,000
+the partial some representing the fun and Lightsey
+
+00:19:43,000 --> 00:19:47,000
+were all that boils down to is the statement
+
+00:19:47,000 --> 00:19:51,000
+that in discrete-time there really are
+
+00:19:51,000 --> 00:19:55,000
+no convergence issues as they were in continues time
+
+00:19:55,000 --> 00:19:59,000
+okay well let's look at an example love the four EA
+
+00:19:59,000 --> 00:20:02,000
+series representation for a particular signal
+
+00:20:02,000 --> 00:20:06,000
+and the one that I think here is a simple one
+
+00:20:06,000 --> 00:20:10,000
+namely a constant a
+
+00:20:10,000 --> 00:20:14,000
+are signed term and a cosine term
+
+00:20:14,000 --> 00:20:18,000
+now for this particular example we can expand this out
+
+00:20:18,000 --> 00:20:21,000
+directly in terms of complex exponentials
+
+00:20:21,000 --> 00:20:26,000
+and essentially recognize this as a somewhat complex exponentials
+
+00:20:26,000 --> 00:20:29,000
+its examined in more detail
+
+00:20:29,000 --> 00:20:33,000
+in example 5.2 in attacks
+
+00:20:33,000 --> 00:20:38,000
+and if we looked at the for a series coefficients we can either look
+
+00:20:38,000 --> 00:20:44,000
+at it in terms of real and imaginary parts are magnitude and angle
+
+00:20:44,000 --> 00:20:50,000
+on the left side here I have the real part of the 48 coefficients
+
+00:20:50,000 --> 00:20:53,000
+and let me draw your attention to the fact
+
+00:20:53,000 --> 00:20:57,000
+their I've drawn yes
+
+00:20:57,000 --> 00:21:00,000
+to specifically illuminate the periodicity
+
+00:21:00,000 --> 00:21:06,000
+other for a series coefficients in with a period of capital and so here are the
+
+00:21:06,000 --> 00:21:08,000
+Fourier coefficients
+
+00:21:08,000 --> 00:21:14,000
+are and in fact its this line that represents the DCR constant term
+
+00:21:14,000 --> 00:21:17,000
+and these two lines represent the
+
+00:21:17,000 --> 00:21:21,000
+co-signed term and of course this
+
+00:21:21,000 --> 00:21:25,000
+these are the three turns that are required or equivalent leave this one
+
+00:21:25,000 --> 00:21:25,000
+this one
+
+00:21:25,000 --> 00:21:29,000
+and this one and then because the period this city
+
+00:21:29,000 --> 00:21:33,000
+the for a series coefficients this simply periodically repeats
+
+00:21:33,000 --> 00:21:38,000
+so here is the real part and below it I show
+
+00:21:38,000 --> 00:21:42,000
+the imaginary part and
+
+00:21:42,000 --> 00:21:45,000
+in the imaginary part incidently let me
+
+00:21:45,000 --> 00:21:48,000
+draw your attention to the fact dead its
+
+00:21:48,000 --> 00:21:51,000
+this term and this term
+
+00:21:51,000 --> 00:21:56,000
+there represent in the imaginary part that represent the sinusoid
+
+00:21:56,000 --> 00:22:00,000
+whereas its the symmetric turns the real part
+
+00:22:00,000 --> 00:22:04,000
+the represent the cosine okay let's
+
+00:22:04,000 --> 00:22:07,000
+in look at another example
+
+00:22:07,000 --> 00:22:11,000
+this is another example from the tax and one
+
+00:22:11,000 --> 00:22:14,000
+that will be making frequent reference to
+
+00:22:14,000 --> 00:22:17,000
+in this particular lecture
+
+00:22:17,000 --> 00:22:21,000
+and what it is is
+
+00:22:21,000 --> 00:22:24,000
+a square wave and
+
+00:22:24,000 --> 00:22:28,000
+I've express the for a series coefficients which are out algebraically
+
+00:22:28,000 --> 00:22:30,000
+developed in attacks
+
+00:22:30,000 --> 00:22:33,000
+I've expressed the for a series coefficients as
+
+00:22:33,000 --> 00:22:36,000
+samples all an envelope
+
+00:22:36,000 --> 00:22:42,000
+function and so I've expressed that as samples if this
+
+00:22:42,000 --> 00:22:46,000
+particular function which is referred to as a sign
+
+00:22:46,000 --> 00:22:50,000
+enacts over sin x function and let me just compare it
+
+00:22:50,000 --> 00:22:53,000
+to a continuous-time example which is the
+
+00:22:53,000 --> 00:22:56,000
+continuous-time square wave
+
+00:22:56,000 --> 00:23:00,000
+where with the continuous times square wave
+
+00:23:00,000 --> 00:23:03,000
+the form or the for a series coefficients
+
+00:23:03,000 --> 00:23:07,000
+was as samples love what we refer to
+
+00:23:07,000 --> 00:23:10,000
+as a sin x over expunge
+
+00:23:10,000 --> 00:23:13,000
+now the sin NX
+
+00:23:13,000 --> 00:23:17,000
+over sin x function which is the envelope for the for a series
+
+00:23:17,000 --> 00:23:18,000
+coefficients
+
+00:23:18,000 --> 00:23:22,000
+for the discrete-time periodic square wave
+
+00:23:22,000 --> 00:23:26,000
+plays the role and we'll see it very often in discrete-time
+
+00:23:26,000 --> 00:23:29,000
+that sin x over exercise in continuous-time
+
+00:23:29,000 --> 00:23:34,000
+and in fact we should understand right from the beginning
+
+00:23:34,000 --> 00:23:38,000
+that the sin x over extend below couldn't possibly be
+
+00:23:38,000 --> 00:23:42,000
+the envelope the discrete-time for a series coefficients
+
+00:23:42,000 --> 00:23:45,000
+and one obvious reason is dead
+
+00:23:45,000 --> 00:23:49,000
+it is not periodic what we require of course
+
+00:23:49,000 --> 00:23:53,000
+from the discussion I just going through is periodicity
+
+00:23:53,000 --> 00:23:58,000
+are the coefficients and consequently also periodicity of the envelope
+
+00:23:58,000 --> 00:24:01,000
+in the discrete-time case so once again if we look back
+
+00:24:01,000 --> 00:24:04,000
+at the algebraic expression that I have
+
+00:24:04,000 --> 00:24:08,000
+it samples about the sign an X over sin x
+
+00:24:08,000 --> 00:24:12,000
+function dead represent the for a series coefficients
+
+00:24:12,000 --> 00:24:16,000
+love this periodic square way
+
+00:24:16,000 --> 00:24:20,000
+now in the representation in
+
+00:24:20,000 --> 00:24:24,000
+the continuous-time case we
+
+00:24:24,000 --> 00:24:29,000
+essentially head use the concept of an envelope
+
+00:24:29,000 --> 00:24:32,000
+to represent the for a series coefficients
+
+00:24:32,000 --> 00:24:35,000
+and the notion that the for a series coefficients were samples
+
+00:24:35,000 --> 00:24:39,000
+up an envelope and that is said the same notion
+
+00:24:39,000 --> 00:24:43,000
+there will be using in discrete-time so
+
+00:24:43,000 --> 00:24:46,000
+again for this square wave example
+
+00:24:46,000 --> 00:24:50,000
+then what we have is an envelope
+
+00:24:50,000 --> 00:24:53,000
+function the sign acts
+
+00:24:53,000 --> 00:24:56,000
+over sin x envelope function for
+
+00:24:56,000 --> 00:25:01,000
+a particular value of the period here indicated with a period
+
+00:25:01,000 --> 00:25:04,000
+love 10 samples these
+
+00:25:04,000 --> 00:25:07,000
+samples at this envelope function with then
+
+00:25:07,000 --> 00:25:11,000
+represent the for a series coefficients
+
+00:25:11,000 --> 00:25:14,000
+if we increased
+
+00:25:14,000 --> 00:25:17,000
+the period then
+
+00:25:17,000 --> 00:25:20,000
+we would simply have a finer spacing
+
+00:25:20,000 --> 00:25:23,000
+on the samples are the envelope function
+
+00:25:23,000 --> 00:25:27,000
+to get the 40 a series coefficients and
+
+00:25:27,000 --> 00:25:31,000
+in likewise if we increase the period still further
+
+00:25:31,000 --> 00:25:37,000
+what we would have is an even finer space
+
+00:25:37,000 --> 00:25:41,000
+so actually as the period increases recall we use this in the in
+
+00:25:41,000 --> 00:25:43,000
+continuous-time also
+
+00:25:43,000 --> 00:25:48,000
+as the period increases we can view the for a series coefficients
+
+00:25:48,000 --> 00:25:53,000
+samples of an envelope and as the period increases
+
+00:25:53,000 --> 00:25:56,000
+the sample spacing gets finer and finer
+
+00:25:56,000 --> 00:25:59,000
+and in fact as the period goes
+
+00:25:59,000 --> 00:26:03,000
+of essentially to infinity the samples of the envelope
+
+00:26:03,000 --> 00:26:07,000
+in effect become the anvil and recall also
+
+00:26:07,000 --> 00:26:11,000
+that this was essentially the trip that we use
+
+00:26:11,000 --> 00:26:15,000
+in continuous-time to allow us
+
+00:26:15,000 --> 00:26:18,000
+to develop or utilize the 48 series
+
+00:26:18,000 --> 00:26:22,000
+to provide a representation %uh a periodic signals
+
+00:26:22,000 --> 00:26:26,000
+as a linear combination of complex exponentials
+
+00:26:26,000 --> 00:26:30,000
+in particular what we did in
+
+00:26:30,000 --> 00:26:34,000
+the continuous-time case
+
+00:26:34,000 --> 00:26:37,000
+when we head and a periodic signal
+
+00:26:37,000 --> 00:26:42,000
+was to consider constructing a periodic signal
+
+00:26:42,000 --> 00:26:47,000
+for which be a periodic signal was one period
+
+00:26:47,000 --> 00:26:50,000
+and then we developed the notion there since
+
+00:26:50,000 --> 00:26:55,000
+the periodic signal has a forty eight series
+
+00:26:55,000 --> 00:26:58,000
+and since as the period
+
+00:26:58,000 --> 00:27:01,000
+the periodic signal increases n goes to infinity
+
+00:27:01,000 --> 00:27:05,000
+the periodic signal represents the a periodic signal
+
+00:27:05,000 --> 00:27:09,000
+then essentially the 48 series
+
+00:27:09,000 --> 00:27:12,000
+provides us with the representation now
+
+00:27:12,000 --> 00:27:16,000
+we can do exactly the same thing in the discrete-time case
+
+00:27:16,000 --> 00:27:21,000
+the statement is exactly the same except dead in a discrete-time case
+
+00:27:21,000 --> 00:27:24,000
+instead of see as the independent variable
+
+00:27:24,000 --> 00:27:27,000
+we simply make exactly the same statement
+
+00:27:27,000 --> 00:27:31,000
+but with are discrete-time variable
+
+00:27:31,000 --> 00:27:35,000
+and so the basic notion then in representing
+
+00:27:35,000 --> 00:27:41,000
+a discrete-time a periodic signal
+
+00:27:41,000 --> 00:27:45,000
+is to first construct
+
+00:27:45,000 --> 00:27:48,000
+a periodic signal here we have the
+
+00:27:48,000 --> 00:27:53,000
+a periodic signal reconstruct a periodic signal
+
+00:27:53,000 --> 00:27:58,000
+by simply periodically replicating the a periodic signal
+
+00:27:58,000 --> 00:28:04,000
+the periodic signal in the a periodic signal are identical
+
+00:28:04,000 --> 00:28:08,000
+for one period and as
+
+00:28:08,000 --> 00:28:11,000
+the period goes off to infinity
+
+00:28:11,000 --> 00:28:15,000
+it's the forty a series representation of the periodic signal
+
+00:28:15,000 --> 00:28:18,000
+that provides a representation all
+
+00:28:18,000 --> 00:28:22,000
+the a periodic signal again
+
+00:28:22,000 --> 00:28:25,000
+to returned to the example
+
+00:28:25,000 --> 00:28:28,000
+that we
+
+00:28:28,000 --> 00:28:34,000
+have been kinda working through this lecture namely the periodic square wave
+
+00:28:34,000 --> 00:28:38,000
+if we have in a periodic signal which is a rectangle
+
+00:28:38,000 --> 00:28:42,000
+and reconstruct the periodic signal
+
+00:28:42,000 --> 00:28:46,000
+and now we consider letting this period increase to infinity
+
+00:28:46,000 --> 00:28:51,000
+we would first have this set of samples of the envelope
+
+00:28:51,000 --> 00:28:57,000
+as the period increases we would decrease the sample spacing to this set
+
+00:28:57,000 --> 00:28:58,000
+of samples
+
+00:28:58,000 --> 00:29:02,000
+as the period increases further it would be
+
+00:29:02,000 --> 00:29:07,000
+this set of samples and as the period goes off to infinity
+
+00:29:07,000 --> 00:29:10,000
+its every point on the envelope in fact
+
+00:29:10,000 --> 00:29:14,000
+what the representation up the a periodic signal
+
+00:29:14,000 --> 00:29:18,000
+is is the anvil
+
+00:29:18,000 --> 00:29:22,000
+okay well so that's the basic notion it's no different than what we did
+
+00:29:22,000 --> 00:29:26,000
+in the continuous-time case and
+
+00:29:26,000 --> 00:29:29,000
+mathematically it develops in
+
+00:29:29,000 --> 00:29:33,000
+very much the same way as in the continuous-time
+
+00:29:33,000 --> 00:29:37,000
+case specifically
+
+00:29:37,000 --> 00:29:41,000
+here is our representation
+
+00:29:41,000 --> 00:29:46,000
+through the forty a series all the
+
+00:29:46,000 --> 00:29:51,000
+here here's a representation through the envelope function
+
+00:29:51,000 --> 00:29:55,000
+and this is the 48 series synthesis equation where
+
+00:29:55,000 --> 00:29:59,000
+equation the equation below tells us
+
+00:29:59,000 --> 00:30:02,000
+how we'd get these for EA coefficients
+
+00:30:02,000 --> 00:30:06,000
+or the envelope from accident
+
+00:30:06,000 --> 00:30:10,000
+now extolled event is the periodic signal and we know that
+
+00:30:10,000 --> 00:30:14,000
+over one period which is the only interval over which we use it
+
+00:30:14,000 --> 00:30:18,000
+in fact this is identical to the a periodic signal
+
+00:30:18,000 --> 00:30:21,000
+its own fact we can rewrite this equation
+
+00:30:21,000 --> 00:30:27,000
+simply by substituting instead effect told The
+
+00:30:27,000 --> 00:30:30,000
+the original a periodic signal and now
+
+00:30:30,000 --> 00:30:34,000
+we can use infinite limits on this some and
+
+00:30:34,000 --> 00:30:38,000
+what we would want to examine mathematically is
+
+00:30:38,000 --> 00:30:42,000
+what happens to the top equation
+
+00:30:42,000 --> 00:30:47,000
+as to the top equation as we let the period
+
+00:30:47,000 --> 00:30:51,000
+go off to infinity and what happens is
+
+00:30:51,000 --> 00:30:54,000
+exactly identical mathematically to continuous-time
+
+00:30:54,000 --> 00:30:58,000
+I won't the labor the details essentially
+
+00:30:58,000 --> 00:31:01,000
+its this some that goes to an integral
+
+00:31:01,000 --> 00:31:06,000
+Omega 0 which is the fundamental frequency is going
+
+00:31:06,000 --> 00:31:09,000
+toward zero in fact becomes the differential in the integral
+
+00:31:09,000 --> 00:31:14,000
+and in the second equation of course this then becomes excessive Omega
+
+00:31:14,000 --> 00:31:18,000
+and as n goes to infinity then
+
+00:31:18,000 --> 00:31:22,000
+what the for a series becomes is the 48 transform
+
+00:31:22,000 --> 00:31:25,000
+as summarized by the bottom to
+
+00:31:25,000 --> 00:31:29,000
+equations so although
+
+00:31:29,000 --> 00:31:33,000
+there are is a little bit mathematical
+
+00:31:33,000 --> 00:31:36,000
+trickery year but I called trickery but subtlety
+
+00:31:36,000 --> 00:31:40,000
+to be tracked through in detail the important conceptual thing to think
+
+00:31:40,000 --> 00:31:41,000
+about
+
+00:31:41,000 --> 00:31:44,000
+is this notion dead
+
+00:31:44,000 --> 00:31:48,000
+we take the a periodic signal for periodic signal let the period go off to
+
+00:31:48,000 --> 00:31:49,000
+infinity
+
+00:31:49,000 --> 00:31:53,000
+which case the forty a series coefficients became these
+
+00:31:53,000 --> 00:31:56,000
+envelope function and incidently mathematically
+
+00:31:56,000 --> 00:31:59,000
+one of the sons ends up going to an integral
+
+00:31:59,000 --> 00:32:02,000
+so what we have then is
+
+00:32:02,000 --> 00:32:07,000
+the discrete-time for EA transform
+
+00:32:07,000 --> 00:32:11,000
+which is a representation all
+
+00:32:11,000 --> 00:32:14,000
+and a periodic signal and we have
+
+00:32:14,000 --> 00:32:19,000
+the synthesis equation which I show as the top equation honest
+
+00:32:19,000 --> 00:32:22,000
+transparency and this
+
+00:32:22,000 --> 00:32:27,000
+is the integral that the four East series
+
+00:32:27,000 --> 00:32:32,000
+synthesis equation went to as the period when off to infinity
+
+00:32:32,000 --> 00:32:36,000
+and we have the corresponding analysis equation
+
+00:32:36,000 --> 00:32:41,000
+which is shown below where this tells us the 48 transform
+
+00:32:41,000 --> 00:32:44,000
+in effect the envelope all the for a series coefficients
+
+00:32:44,000 --> 00:32:48,000
+love that periodic signal in and here
+
+00:32:48,000 --> 00:32:53,000
+represented interns love the a periodic signal
+
+00:32:53,000 --> 00:32:58,000
+okay so we have the analysis equation synthesis equation
+
+00:32:58,000 --> 00:33:02,000
+there are a number of things to focus
+
+00:33:02,000 --> 00:33:06,000
+on as you look at this and we'll talk about so its properties
+
+00:33:06,000 --> 00:33:09,000
+actually in the next lecture by it sold them the
+
+00:33:09,000 --> 00:33:12,000
+points the I'd like you to think about a focus on
+
+00:33:12,000 --> 00:33:15,000
+the fact that now there
+
+00:33:15,000 --> 00:33:20,000
+is somewhat have an imbalance or lack of duality between the time-domain and
+
+00:33:20,000 --> 00:33:21,000
+frequency-domain
+
+00:33:21,000 --> 00:33:25,000
+x seven witches are a periodic signal is a course
+
+00:33:25,000 --> 00:33:29,000
+discrete its Fourier transform
+
+00:33:29,000 --> 00:33:33,000
+Xserve Omega is a function love a continuous variable
+
+00:33:33,000 --> 00:33:36,000
+Omega is a continuous variable that that
+
+00:33:36,000 --> 00:33:41,000
+and that is essentially what represents the envelope
+
+00:33:41,000 --> 00:33:44,000
+also in the time domain x7 is
+
+00:33:44,000 --> 00:33:49,000
+a periodic its not a periodic function
+
+00:33:49,000 --> 00:33:54,000
+however in the frequency domain remember that the for a series coefficients were
+
+00:33:54,000 --> 00:33:55,000
+always periodic
+
+00:33:55,000 --> 00:33:59,000
+well this envelope function then is also periodic
+
+00:33:59,000 --> 00:34:03,000
+with a period in omega up to par i
+
+00:34:03,000 --> 00:34:08,000
+what's again the reason for the periodicity it all stems back to the
+
+00:34:08,000 --> 00:34:08,000
+fact
+
+00:34:08,000 --> 00:34:12,000
+there when we talk about complex exponentials
+
+00:34:12,000 --> 00:34:16,000
+and recall back to the early lectures in discrete-time
+
+00:34:16,000 --> 00:34:21,000
+as the frequency variable covers a range
+
+00:34:21,000 --> 00:34:25,000
+all to parlay when you proceed past that range
+
+00:34:25,000 --> 00:34:30,000
+you simply see the same complex exponentials over and over again
+
+00:34:30,000 --> 00:34:34,000
+and so obviously anything that we do with them would have to be periodic
+
+00:34:34,000 --> 00:34:39,000
+in that frequency variable alright notation Lee
+
+00:34:39,000 --> 00:34:42,000
+and will again represent the
+
+00:34:42,000 --> 00:34:46,000
+discrete-time Fourier transform here as i indicate here
+
+00:34:46,000 --> 00:34:49,000
+and sense is a complex function of frequency
+
+00:34:49,000 --> 00:34:53,000
+may on occasion want to either represented
+
+00:34:53,000 --> 00:34:57,000
+in rectangular form as i indicated this equation
+
+00:34:57,000 --> 00:35:02,000
+or in polar for as i indicate in this equation
+
+00:35:02,000 --> 00:35:05,000
+all right let's and look at an example
+
+00:35:05,000 --> 00:35:08,000
+and of course one example that
+
+00:35:08,000 --> 00:35:12,000
+we can look at is the one that has kind of been tracking this
+
+00:35:12,000 --> 00:35:15,000
+through this lecture which is the example
+
+00:35:15,000 --> 00:35:18,000
+love a rectangle now
+
+00:35:18,000 --> 00:35:22,000
+the rectangle if we refer back to our
+
+00:35:22,000 --> 00:35:28,000
+argument love how we get a for a representation for a periodic signal
+
+00:35:28,000 --> 00:35:31,000
+we would form a periodic signal where this is repeated
+
+00:35:31,000 --> 00:35:36,000
+and thats are square wave example as the period goes to infinity
+
+00:35:36,000 --> 00:35:40,000
+the forty a transformer this is represented by the envelope
+
+00:35:40,000 --> 00:35:43,000
+all those for a series coefficients and that was
+
+00:35:43,000 --> 00:35:46,000
+are sign an X over sin x function
+
+00:35:46,000 --> 00:35:50,000
+which in this particular case for these particular numbers
+
+00:35:50,000 --> 00:35:53,000
+is sin 5 Omega over to
+
+00:35:53,000 --> 00:35:58,000
+divided by sign Omega over to
+
+00:35:58,000 --> 00:36:01,000
+and notice of course as we would expect
+
+00:36:01,000 --> 00:36:05,000
+that notice that this is a
+
+00:36:05,000 --> 00:36:09,000
+periodic function all the frequency variable Omega
+
+00:36:09,000 --> 00:36:13,000
+repeating of course with a period up to par
+
+00:36:13,000 --> 00:36:17,000
+whereas in the time domain the function was not
+
+00:36:17,000 --> 00:36:22,000
+a periodic function it's a period
+
+00:36:22,000 --> 00:36:25,000
+now let's look at another example
+
+00:36:25,000 --> 00:36:28,000
+in let's look at example
+
+00:36:28,000 --> 00:36:32,000
+which is another signal that has
+
+00:36:32,000 --> 00:36:36,000
+kinda popped its head up from time to time as the lectures have gone along
+
+00:36:36,000 --> 00:36:42,000
+signal which is another a periodic signal which is a decaying exponential
+
+00:36:42,000 --> 00:36:45,000
+of this form with the
+
+00:36:45,000 --> 00:36:50,000
+factor a chosen between 0&1
+
+00:36:50,000 --> 00:36:53,000
+and you can workout the algebra
+
+00:36:53,000 --> 00:36:57,000
+at your leisure basically if we substituted to the four EA
+
+00:36:57,000 --> 00:37:00,000
+transform analysis equation its
+
+00:37:00,000 --> 00:37:05,000
+this summer we evaluate because we have a unit step here
+
+00:37:05,000 --> 00:37:09,000
+which shots this of for and less than zero
+
+00:37:09,000 --> 00:37:12,000
+we can change the limits on the some this then corresponds
+
+00:37:12,000 --> 00:37:17,000
+to the some over an infinite number turns
+
+00:37:17,000 --> 00:37:21,000
+geometric series and that as we've seen before
+
+00:37:21,000 --> 00:37:24,000
+is one divided by one minus a
+
+00:37:24,000 --> 00:37:28,000
+you to the minus jail make so
+
+00:37:28,000 --> 00:37:32,000
+let's look at what that looks like
+
+00:37:32,000 --> 00:37:36,000
+here him then we have again
+
+00:37:36,000 --> 00:37:40,000
+the expression in the time domain
+
+00:37:40,000 --> 00:37:43,000
+and the expression in the frequency domain
+
+00:37:43,000 --> 00:37:48,000
+and lets in particular focus I N what the magnitude of the Fourier transform
+
+00:37:48,000 --> 00:37:50,000
+looks like
+
+00:37:50,000 --> 00:37:54,000
+its as we show here
+
+00:37:54,000 --> 00:37:58,000
+and for the particular values
+
+00:37:58,000 --> 00:38:01,000
+Ave that I picked namely between 0&1
+
+00:38:01,000 --> 00:38:05,000
+its larger at the origin then it is upon I
+
+00:38:05,000 --> 00:38:09,000
+and then of course it is periodic
+
+00:38:09,000 --> 00:38:14,000
+and the periodicity is inherent in the Fourier transform in discrete-time
+
+00:38:14,000 --> 00:38:18,000
+so we really might only need to look at this either from minus
+
+00:38:18,000 --> 00:38:21,000
+fired upon by or from 0 to 2pi
+
+00:38:21,000 --> 00:38:25,000
+the periodicity of course would imply what the rest at this is for other
+
+00:38:25,000 --> 00:38:28,000
+values have or make it
+
+00:38:28,000 --> 00:38:31,000
+let me also draw your attention at war on it
+
+00:38:31,000 --> 00:38:35,000
+the fact dead observed at if
+
+00:38:35,000 --> 00:38:38,000
+a were in fact negative then
+
+00:38:38,000 --> 00:38:42,000
+this value would be less than this value
+
+00:38:42,000 --> 00:38:46,000
+and in fact for a negative
+
+00:38:46,000 --> 00:38:50,000
+the magnitude the frequency response would look like this except shifted
+
+00:38:50,000 --> 00:38:54,000
+by an amount in omega equal the pie
+
+00:38:54,000 --> 00:38:57,000
+and this example will come up
+
+00:38:57,000 --> 00:39:02,000
+and play an important role in our discussion next time
+
+00:39:02,000 --> 00:39:06,000
+so try to keep it in mind in fact work it out more carefully between
+
+00:39:06,000 --> 00:39:10,000
+now and next time and also if you have a chance
+
+00:39:10,000 --> 00:39:14,000
+focus on this issue love how it looks
+
+00:39:14,000 --> 00:39:18,000
+with a positive is compared with a negative
+
+00:39:18,000 --> 00:39:23,000
+okay now we developed the 48 transform
+
+00:39:23,000 --> 00:39:29,000
+by beginning with the forty a series we did that in continuous time also
+
+00:39:29,000 --> 00:39:33,000
+but I'd like to do now just as we did in continuous-time
+
+00:39:33,000 --> 00:39:37,000
+is now absorb the forty a series
+
+00:39:37,000 --> 00:39:41,000
+within the broader framework above the 40 a transport
+
+00:39:41,000 --> 00:39:47,000
+and there are two relationships between the forty a series the Fourier transform
+
+00:39:47,000 --> 00:39:50,000
+which are identical to relationships that we had
+
+00:39:50,000 --> 00:39:54,000
+in the continuous-time case
+
+00:39:54,000 --> 00:39:57,000
+let me remind you dead in
+
+00:39:57,000 --> 00:40:01,000
+continuous-time we head
+
+00:40:01,000 --> 00:40:08,000
+the statement there if we have a periodic signal
+
+00:40:08,000 --> 00:40:13,000
+that in fact the forty a series coefficients that periodic signal
+
+00:40:13,000 --> 00:40:16,000
+is proportional to
+
+00:40:16,000 --> 00:40:20,000
+the two samples of the Fourier transform
+
+00:40:20,000 --> 00:40:24,000
+all one period well
+
+00:40:24,000 --> 00:40:27,000
+in fact thats let me remind you flows
+
+00:40:27,000 --> 00:40:30,000
+easily from all other things that we've built up
+
+00:40:30,000 --> 00:40:35,000
+so far because of the fact that the for a transformer sexually
+
+00:40:35,000 --> 00:40:38,000
+by definition love the way we developed it
+
+00:40:38,000 --> 00:40:41,000
+is what we get as
+
+00:40:41,000 --> 00:40:46,000
+the forty-a series coefficients
+
+00:40:46,000 --> 00:40:51,000
+as we focus on one period and then let the period go off to infinity
+
+00:40:51,000 --> 00:40:56,000
+well thats looking at one period before a transformer that then
+
+00:40:56,000 --> 00:40:59,000
+is the envelope above the 40 a series coefficients
+
+00:40:59,000 --> 00:41:03,000
+and so in continuous-time we have
+
+00:41:03,000 --> 00:41:07,000
+this relationship and in discrete-time
+
+00:41:07,000 --> 00:41:12,000
+we have precisely the same relationship
+
+00:41:12,000 --> 00:41:15,000
+except that here we're talking about
+
+00:41:15,000 --> 00:41:20,000
+an integer variable and as opposed to the continuous variable and a period of
+
+00:41:20,000 --> 00:41:22,000
+capital and
+
+00:41:22,000 --> 00:41:25,000
+as opposed to a period
+
+00:41:25,000 --> 00:41:30,000
+love t0 okay so
+
+00:41:30,000 --> 00:41:33,000
+once again if we returned to
+
+00:41:33,000 --> 00:41:37,000
+our example
+
+00:41:37,000 --> 00:41:41,000
+if or Fri return to a periodic signal
+
+00:41:41,000 --> 00:41:45,000
+we have a periodic signal and we consider
+
+00:41:45,000 --> 00:41:48,000
+the for EA transform love
+
+00:41:48,000 --> 00:41:52,000
+one period the for a series coefficients
+
+00:41:52,000 --> 00:41:55,000
+this periodic signal are in fact
+
+00:41:55,000 --> 00:41:58,000
+samples as stated
+
+00:41:58,000 --> 00:42:02,000
+mathematically in the bottom equation samples
+
+00:42:02,000 --> 00:42:05,000
+love the four EA transform all
+
+00:42:05,000 --> 00:42:11,000
+one period so XO makers the for a transformer one period
+
+00:42:11,000 --> 00:42:15,000
+a suitcase at a4e series coefficients at the periodic signal
+
+00:42:15,000 --> 00:42:20,000
+and this relationship simply says their related except for a scale factor
+
+00:42:20,000 --> 00:42:26,000
+through samples along the frequency axis
+
+00:42:26,000 --> 00:42:31,000
+and and the chorus we saw this
+
+00:42:31,000 --> 00:42:34,000
+in the context all our
+
+00:42:34,000 --> 00:42:37,000
+square wave example in a square wave
+
+00:42:37,000 --> 00:42:42,000
+example we have a periodic signal
+
+00:42:42,000 --> 00:42:45,000
+which is a periodic square wave
+
+00:42:45,000 --> 00:42:49,000
+and the for EA transform
+
+00:42:49,000 --> 00:42:53,000
+a one period in fact represents
+
+00:42:53,000 --> 00:42:57,000
+the on below and here we have the envelope function
+
+00:42:57,000 --> 00:43:02,000
+represents the envelope or the forty a series coefficients
+
+00:43:02,000 --> 00:43:08,000
+and the for a series coefficients are samples
+
+00:43:08,000 --> 00:43:12,000
+so what we have been is
+
+00:43:12,000 --> 00:43:18,000
+a relationship back to before a series coefficients from the Fourier transform
+
+00:43:18,000 --> 00:43:21,000
+that tells us that for periodic signal now
+
+00:43:21,000 --> 00:43:25,000
+the periodic signal the for a series coefficients
+
+00:43:25,000 --> 00:43:29,000
+are related are samples of the Fourier transform
+
+00:43:29,000 --> 00:43:32,000
+one period now
+
+00:43:32,000 --> 00:43:36,000
+finally to kinda bring things back in a circle
+
+00:43:36,000 --> 00:43:40,000
+and exactly identical to what we did it in the continuous-time
+
+00:43:40,000 --> 00:43:43,000
+case we can finally absorber
+
+00:43:43,000 --> 00:43:47,000
+the 48 series indiscreet
+
+00:43:47,000 --> 00:43:50,000
+time we can absorb it into the framework
+
+00:43:50,000 --> 00:43:54,000
+all the four EA transport now
+
+00:43:54,000 --> 00:43:58,000
+remember or recall how we did at when
+
+00:43:58,000 --> 00:44:02,000
+re tried to do a similar sort of thing
+
+00:44:02,000 --> 00:44:07,000
+in continuous-time in continuous-time
+
+00:44:07,000 --> 00:44:10,000
+what we essentially did is
+
+00:44:10,000 --> 00:44:14,000
+to develop that more less by definition
+
+00:44:14,000 --> 00:44:18,000
+we have occurred we have a periodic signal
+
+00:44:18,000 --> 00:44:21,000
+the periodic signal is represented through 48 series
+
+00:44:21,000 --> 00:44:25,000
+in forty a series coefficients essentially
+
+00:44:25,000 --> 00:44:30,000
+when I pointed out at that time was that if we define
+
+00:44:30,000 --> 00:44:35,000
+and take it as a definition before a transformer the periodic signal
+
+00:44:35,000 --> 00:44:41,000
+as an impulse train where the amplitudes at the impulses are proportional
+
+00:44:41,000 --> 00:44:44,000
+to the forty a series coefficients
+
+00:44:44,000 --> 00:44:48,000
+if we take an impulse train representation
+
+00:44:48,000 --> 00:44:52,000
+and simply plug it in
+
+00:44:52,000 --> 00:44:55,000
+to the for EA
+
+00:44:55,000 --> 00:44:59,000
+transform synthesis equation what we end up with
+
+00:44:59,000 --> 00:45:05,000
+is the for you see recent this equation
+
+00:45:05,000 --> 00:45:08,000
+so in continuous-time
+
+00:45:08,000 --> 00:45:12,000
+we bad done
+
+00:45:12,000 --> 00:45:15,000
+we had used this definition I love
+
+00:45:15,000 --> 00:45:18,000
+the discrete-time up the continuous-time
+
+00:45:18,000 --> 00:45:22,000
+for EA transform other periodic signal
+
+00:45:22,000 --> 00:45:26,000
+and again in discrete-time it's simply a matter
+
+00:45:26,000 --> 00:45:30,000
+love using exactly the same expression
+
+00:45:30,000 --> 00:45:34,000
+and using instead the appropriate
+
+00:45:34,000 --> 00:45:38,000
+variables related to discrete-time rather than the variables related to
+
+00:45:38,000 --> 00:45:40,000
+continuous-time
+
+00:45:40,000 --> 00:45:43,000
+so in discrete-time if we have a periodic signal
+
+00:45:43,000 --> 00:45:46,000
+the Fourier transform that periodic signal
+
+00:45:46,000 --> 00:45:49,000
+is defined as an impulse train where the
+
+00:45:49,000 --> 00:45:52,000
+amplitudes up the impulses
+
+00:45:52,000 --> 00:45:57,000
+are proportional to the forty a series coefficients
+
+00:45:57,000 --> 00:46:02,000
+if this expression is substituted into the synthesis equation
+
+00:46:02,000 --> 00:46:06,000
+for the 48 transform we will simply that will simply then reduced to
+
+00:46:06,000 --> 00:46:11,000
+this synthesis equation for the forty a series
+
+00:46:11,000 --> 00:46:14,000
+so wants more returning to
+
+00:46:14,000 --> 00:46:19,000
+our example which is the square wave example that we carry through these
+
+00:46:19,000 --> 00:46:20,000
+lectures
+
+00:46:20,000 --> 00:46:24,000
+or through this lecture we can see that
+
+00:46:24,000 --> 00:46:28,000
+really what we're talking about really is a notational change
+
+00:46:28,000 --> 00:46:33,000
+here is the four EA here is the periodic signal
+
+00:46:33,000 --> 00:46:36,000
+and below it are the forty a series
+
+00:46:36,000 --> 00:46:41,000
+coefficients where I've removed the envelope function just indicate
+
+00:46:41,000 --> 00:46:46,000
+the airport to the coefficients index of course on the coefficient number
+
+00:46:46,000 --> 00:46:50,000
+and so this represents a bar graph and
+
+00:46:50,000 --> 00:46:54,000
+if instead of talking about the for a series coefficients
+
+00:46:54,000 --> 00:46:58,000
+what I want to talk about are the
+
+00:46:58,000 --> 00:47:02,000
+is the four EA transform the Fourier transform
+
+00:47:02,000 --> 00:47:06,000
+in essence corresponds to simply redrawing mad
+
+00:47:06,000 --> 00:47:10,000
+using impulses and using
+
+00:47:10,000 --> 00:47:13,000
+an axis that is essentially
+
+00:47:13,000 --> 00:47:17,000
+index on the fundamental frequency Omega
+
+00:47:17,000 --> 00:47:20,000
+rather than on the four EA series coefficient number
+
+00:47:20,000 --> 00:47:24,000
+K
+
+00:47:24,000 --> 00:47:27,000
+okay in so
+
+00:47:27,000 --> 00:47:30,000
+to summarize what we've done
+
+00:47:30,000 --> 00:47:34,000
+is to pretty much parallel
+
+00:47:34,000 --> 00:47:39,000
+are somewhat more quickly the kind of development that we went through
+
+00:47:39,000 --> 00:47:44,000
+for continuous-time representation through complex exponentials
+
+00:47:44,000 --> 00:47:47,000
+parallel that for the discrete-time case
+
+00:47:47,000 --> 00:47:52,000
+and pretty much the conceptual underpinnings that the development are
+
+00:47:52,000 --> 00:47:54,000
+identical
+
+00:47:54,000 --> 00:47:58,000
+in discrete-time and in continuous time
+
+00:47:58,000 --> 00:48:02,000
+we saw there'd their are
+
+00:48:02,000 --> 00:48:06,000
+some major differences are important differences between continuous-time and
+
+00:48:06,000 --> 00:48:08,000
+discrete-time
+
+00:48:08,000 --> 00:48:11,000
+I'm and the difference essentially
+
+00:48:11,000 --> 00:48:16,000
+relates to two aspect one aspect is the fact that
+
+00:48:16,000 --> 00:48:22,000
+in discrete-time we have a discrete representation in the time domain
+
+00:48:22,000 --> 00:48:25,000
+whereas the independent variable in the frequency domain
+
+00:48:25,000 --> 00:48:29,000
+is a continuous variable whereas in continuous-time
+
+00:48:29,000 --> 00:48:32,000
+for the Fourier transform we had duality between the time-domain and
+
+00:48:32,000 --> 00:48:35,000
+frequency-domain
+
+00:48:35,000 --> 00:48:39,000
+the other very important difference tied back to the difference between complex
+
+00:48:39,000 --> 00:48:43,000
+exponentials continuous-time and discrete-time
+
+00:48:43,000 --> 00:48:48,000
+in continuous-time complex exponentials as you very the frequency
+
+00:48:48,000 --> 00:48:51,000
+generate distinct
+
+00:48:51,000 --> 00:48:56,000
+time functions in discrete-time as you very the frequency
+
+00:48:56,000 --> 00:49:00,000
+once you've covered a frequency interval to pie
+
+00:49:00,000 --> 00:49:03,000
+then you've seen all the ones there are two see there are no more
+
+00:49:03,000 --> 00:49:08,000
+in this in a fact imposes a periodicity
+
+00:49:08,000 --> 00:49:13,000
+on the 48 domain representation of discrete-time signals
+
+00:49:13,000 --> 00:49:17,000
+and those so those differences and of course lots the similarities
+
+00:49:17,000 --> 00:49:22,000
+will surface both as we use this representation
+
+00:49:22,000 --> 00:49:26,000
+and as we develop for the property
+
+00:49:26,000 --> 00:49:29,000
+in the next lecture what will do is
+
+00:49:29,000 --> 00:49:33,000
+to focus and again on the Fourier transform the discrete-time Fourier
+
+00:49:33,000 --> 00:49:36,000
+transform
+
+00:49:36,000 --> 00:49:41,000
+develop or eliminate so love the property serv the trip or a transform
+
+00:49:41,000 --> 00:49:45,000
+and then see how these properties can be used
+
+00:49:45,000 --> 00:49:49,000
+for a number of things for example how the properties as they were in
+
+00:49:49,000 --> 00:49:50,000
+continuous-time
+
+00:49:50,000 --> 00:49:54,000
+can be used to efficiently
+
+00:49:54,000 --> 00:49:58,000
+generate the solution and analyze when your constant coefficient difference
+
+00:49:58,000 --> 00:50:00,000
+equations
+
+00:50:00,000 --> 00:50:03,000
+and then beyond that the concepts of
+
+00:50:03,000 --> 00:50:06,000
+filtering and modulation and
+
+00:50:06,000 --> 00:50:10,000
+the both the properties and interpretation which will very strongly
+
+00:50:10,000 --> 00:50:11,000
+parallel
+
+00:50:11,000 --> 00:50:14,000
+the kinds of developments along those lines that we did in the last night
+
+00:50:14,000 --> 00:50:15,000
+thank you
+

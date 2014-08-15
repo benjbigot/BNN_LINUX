@@ -1,0 +1,2394 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:15,000
+to make a donation or view additional materials from 100 to them IT courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:20,000
+that MIT ided you
+
+00:00:20,000 --> 00:00:27,000
+home
+
+00:00:30,000 --> 00:00:35,000
+the
+
+00:00:35,000 --> 00:00:38,000
+in
+
+00:00:38,000 --> 00:00:40,000
+in
+
+00:00:40,000 --> 00:00:45,000
+the new
+
+00:00:45,000 --> 00:00:51,000
+are
+
+00:00:51,000 --> 00:00:55,000
+for
+
+00:00:55,000 --> 00:00:59,000
+over the last several lectures we've dealt with the representation
+
+00:00:59,000 --> 00:01:02,000
+of linear time-invariant systems through convolution
+
+00:01:02,000 --> 00:01:06,000
+and just to remind you over basic strategy
+
+00:01:06,000 --> 00:01:09,000
+essentially the idea was to
+
+00:01:09,000 --> 00:01:13,000
+exploit the notion of when the arity by
+
+00:01:13,000 --> 00:01:16,000
+decomposing the input into summer basic inputs
+
+00:01:16,000 --> 00:01:21,000
+and then using when the arity to tell us that the output can be represented as
+
+00:01:21,000 --> 00:01:25,000
+the corresponding linear combination of the Associated outputs
+
+00:01:25,000 --> 00:01:29,000
+so if we have a linear system
+
+00:01:29,000 --> 00:01:33,000
+either continuous-time and discrete-time for example with continuous time
+
+00:01:33,000 --> 00:01:37,000
+if the input is decomposed as a linear combination
+
+00:01:37,000 --> 00:01:41,000
+a basic inputs with each of these basic inputs
+
+00:01:41,000 --> 00:01:45,000
+generating an Associated output and if the system is linear
+
+00:01:45,000 --> 00:01:49,000
+then the output love the system
+
+00:01:49,000 --> 00:01:53,000
+is the same linear combination love The Associated outputs
+
+00:01:53,000 --> 00:01:56,000
+and the same statement is identical
+
+00:01:56,000 --> 00:02:01,000
+both for continuous-time in discrete-time so
+
+00:02:01,000 --> 00:02:07,000
+the strategy is to decompose the input into these basic inputs
+
+00:02:07,000 --> 00:02:10,000
+and the imports
+
+00:02:10,000 --> 00:02:14,000
+were chosen also with some particular
+
+00:02:14,000 --> 00:02:18,000
+strategy in mind in particular for both continuous-time
+
+00:02:18,000 --> 00:02:23,000
+for discrete-time in this representation the
+
+00:02:23,000 --> 00:02:26,000
+basic inputs used in the decomposition
+
+00:02:26,000 --> 00:02:30,000
+are chosen first the ball so that
+
+00:02:30,000 --> 00:02:33,000
+a broad class signals can be represented
+
+00:02:33,000 --> 00:02:37,000
+interns are these basic inputs and second of all
+
+00:02:37,000 --> 00:02:41,000
+so that the response to these basic inputs
+
+00:02:41,000 --> 00:02:46,000
+is in some sense easy to compute now
+
+00:02:46,000 --> 00:02:50,000
+in the representation which latest
+
+00:02:50,000 --> 00:02:55,000
+to convolution the particular choice that we made
+
+00:02:55,000 --> 00:02:58,000
+in the discrete-time case for our basic inputs
+
+00:02:58,000 --> 00:03:03,000
+was a decomposition up the input interns
+
+00:03:03,000 --> 00:03:07,000
+or delayed impulses and
+
+00:03:07,000 --> 00:03:11,000
+The Associated outputs that that generated
+
+00:03:11,000 --> 00:03:15,000
+were delayed versions of the impulse response
+
+00:03:15,000 --> 00:03:18,000
+decomposing the input into a linear combination of these
+
+00:03:18,000 --> 00:03:22,000
+the output into the corresponding linear combination of these
+
+00:03:22,000 --> 00:03:26,000
+then led to the convolution some in
+
+00:03:26,000 --> 00:03:29,000
+the discrete-time case and
+
+00:03:29,000 --> 00:03:32,000
+in the continuous-time case a similar
+
+00:03:32,000 --> 00:03:37,000
+kinda decomposition in terms of impulses and Associated representation
+
+00:03:37,000 --> 00:03:40,000
+love the output in terms of the impulse response
+
+00:03:40,000 --> 00:03:44,000
+led to the convolution in ago now
+
+00:03:44,000 --> 00:03:49,000
+in this lecture and for number the succeeding lectures
+
+00:03:49,000 --> 00:03:53,000
+will want to turn our attention to a very different
+
+00:03:53,000 --> 00:03:56,000
+said the basic building blocks and
+
+00:03:56,000 --> 00:03:59,000
+in particular the signals there
+
+00:03:59,000 --> 00:04:03,000
+will be using as the building blocks for or more general signals
+
+00:04:03,000 --> 00:04:07,000
+rather than impulses as we've dealt with before
+
+00:04:07,000 --> 00:04:11,000
+will be in general complex exponentials
+
+00:04:11,000 --> 00:04:14,000
+so in a general sense
+
+00:04:14,000 --> 00:04:19,000
+in the continuous-time case and will be thinking in terms of a decomposition
+
+00:04:19,000 --> 00:04:23,000
+afar signals as a linear combination I'll
+
+00:04:23,000 --> 00:04:27,000
+complex exponentials continuous-time
+
+00:04:27,000 --> 00:04:31,000
+or in the discrete-time case
+
+00:04:31,000 --> 00:04:35,000
+complex exponentials where sees the case complex here
+
+00:04:35,000 --> 00:04:39,000
+in discrete-time and s2 K's complex here
+
+00:04:39,000 --> 00:04:43,000
+in continuous-time now
+
+00:04:43,000 --> 00:04:46,000
+the basic strategy of course requires
+
+00:04:46,000 --> 00:04:51,000
+dead we choose a settlement puts basic building blocks
+
+00:04:51,000 --> 00:04:54,000
+which have two properties one is that
+
+00:04:54,000 --> 00:04:59,000
+the system response be straightforward to compute were in some sense easy to
+
+00:04:59,000 --> 00:04:59,000
+compute
+
+00:04:59,000 --> 00:05:03,000
+and the second is that it be a fairly general said a building blocks
+
+00:05:03,000 --> 00:05:09,000
+so that we can build lots of signals I love them
+
+00:05:09,000 --> 00:05:14,000
+what will find with complex exponentials either continuous-time and discrete-time
+
+00:05:14,000 --> 00:05:17,000
+is that they very nicely have those two properties
+
+00:05:17,000 --> 00:05:21,000
+in particular the notion that the
+
+00:05:21,000 --> 00:05:26,000
+output over linear time-invariant system is easy to compute
+
+00:05:26,000 --> 00:05:30,000
+is tied to what's referred to as the eye can function property
+
+00:05:30,000 --> 00:05:33,000
+a complex exponentials which will focus on
+
+00:05:33,000 --> 00:05:36,000
+shortly in a little more detail
+
+00:05:36,000 --> 00:05:40,000
+and second of all the fact that
+
+00:05:40,000 --> 00:05:44,000
+weekend in fact represent very broad classes have signals as linear
+
+00:05:44,000 --> 00:05:45,000
+combinations
+
+00:05:45,000 --> 00:05:49,000
+these will be a topic an issue
+
+00:05:49,000 --> 00:05:53,000
+that will develop in detail over in fact are the next
+
+00:05:53,000 --> 00:05:57,000
+set of lectures this lecture and the next set of lectures
+
+00:05:57,000 --> 00:06:00,000
+now in in doing this although
+
+00:06:00,000 --> 00:06:05,000
+we could in fact begin with our attention focused
+
+00:06:05,000 --> 00:06:10,000
+on in general complex exponentials
+
+00:06:10,000 --> 00:06:15,000
+what will choose to do his first focus on the case in which
+
+00:06:15,000 --> 00:06:18,000
+the exponent in the continuous-time cases
+
+00:06:18,000 --> 00:06:22,000
+purely imaginary as i indicate here
+
+00:06:22,000 --> 00:06:25,000
+and in the discrete-time case where
+
+00:06:25,000 --> 00:06:28,000
+the magnitude of the complex number Z CK
+
+00:06:28,000 --> 00:06:34,000
+is equal to 1 so what that corresponds to in the continuous-time case
+
+00:06:34,000 --> 00:06:37,000
+is said building blocks
+
+00:06:37,000 --> 00:06:40,000
+the form you DJ Omega sed Katie
+
+00:06:40,000 --> 00:06:44,000
+and in the discrete-time case said a building blocks
+
+00:06:44,000 --> 00:06:47,000
+the for eat a DJ Omega KN
+
+00:06:47,000 --> 00:06:52,000
+well we'll see is a representation in these Terms
+
+00:06:52,000 --> 00:06:56,000
+leads to what's for two as for EA
+
+00:06:56,000 --> 00:07:00,000
+analysis and that's what we'll be dealing with over the next several
+
+00:07:00,000 --> 00:07:02,000
+lectures
+
+00:07:02,000 --> 00:07:06,000
+will then be exploiting this representation actually
+
+00:07:06,000 --> 00:07:09,000
+through most the course and then toward
+
+00:07:09,000 --> 00:07:13,000
+the end of the course will returned to generalizing
+
+00:07:13,000 --> 00:07:17,000
+the for a representation to the discussion over plus transforms the
+
+00:07:17,000 --> 00:07:19,000
+transforms
+
+00:07:19,000 --> 00:07:22,000
+so for now we want to restrict ourselves to
+
+00:07:22,000 --> 00:07:25,000
+complex exponentials a particular form in
+
+00:07:25,000 --> 00:07:29,000
+and in fact also initially to continuous-time
+
+00:07:29,000 --> 00:07:32,000
+signals and systems so let's begin
+
+00:07:32,000 --> 00:07:36,000
+with the continuous-time case the complex exponentials that we want to
+
+00:07:36,000 --> 00:07:36,000
+deal with
+
+00:07:36,000 --> 00:07:41,000
+in and focus first the ball on what I refer to as
+
+00:07:41,000 --> 00:07:46,000
+the eigenfunction property love this particular set a building blocks
+
+00:07:46,000 --> 00:07:49,000
+we're talking about
+
+00:07:49,000 --> 00:07:53,000
+basic signals the form either the J Omega some Katy
+
+00:07:53,000 --> 00:07:56,000
+and this statement is there
+
+00:07:56,000 --> 00:08:01,000
+for a linear time-invariant system the response to one of these
+
+00:08:01,000 --> 00:08:04,000
+is 0 exactly the same form
+
+00:08:04,000 --> 00:08:08,000
+just simply multiplied by a complex
+
+00:08:08,000 --> 00:08:11,000
+factor that complex factor depending on
+
+00:08:11,000 --> 00:08:14,000
+what the frequency Omega k is
+
+00:08:14,000 --> 00:08:20,000
+now more or less the justification for this is the proof follows by
+
+00:08:20,000 --> 00:08:25,000
+simply looking at the response to a complex exponential
+
+00:08:25,000 --> 00:08:28,000
+using the convolution integral so
+
+00:08:28,000 --> 00:08:31,000
+if we put a complex exponential
+
+00:08:31,000 --> 00:08:35,000
+into a linear time-invariant system
+
+00:08:35,000 --> 00:08:38,000
+with impulse response a gypsy then
+
+00:08:38,000 --> 00:08:42,000
+we can express the response as i've indicated here
+
+00:08:42,000 --> 00:08:46,000
+we can then recognize that this complex exponential
+
+00:08:46,000 --> 00:08:49,000
+can be factored into two terms and so
+
+00:08:49,000 --> 00:08:54,000
+we can rewrite this complex exponential
+
+00:08:54,000 --> 00:08:57,000
+as this product second recognize
+
+00:08:57,000 --> 00:09:01,000
+that this term can be taken
+
+00:09:01,000 --> 00:09:06,000
+outside the integral over here because of the fact that
+
+00:09:06,000 --> 00:09:09,000
+it depends only on tea and not on tap now
+
+00:09:09,000 --> 00:09:13,000
+and so what we're left with when we tracked this through
+
+00:09:13,000 --> 00:09:18,000
+is that with a complex exponential input we get
+
+00:09:18,000 --> 00:09:22,000
+an output which is the same complex exponential
+
+00:09:22,000 --> 00:09:25,000
+namely this factor times
+
+00:09:25,000 --> 00:09:29,000
+this integral and this integral is
+
+00:09:29,000 --> 00:09:32,000
+what I referred to above as
+
+00:09:32,000 --> 00:09:35,000
+H all omega-6 K
+
+00:09:35,000 --> 00:09:41,000
+and so in fact we put in a complex exponential
+
+00:09:41,000 --> 00:09:45,000
+we get out a complex exponential love the same frequency
+
+00:09:45,000 --> 00:09:49,000
+multiplied by a complex constant and
+
+00:09:49,000 --> 00:09:54,000
+that is what's referred to as the eigenfunction property I can function
+
+00:09:54,000 --> 00:09:55,000
+meaning
+
+00:09:55,000 --> 00:09:59,000
+that and I can function of a system or mathematical expression
+
+00:09:59,000 --> 00:10:02,000
+is a function which when you put it through the system
+
+00:10:02,000 --> 00:10:07,000
+comes out looking exactly the same except for a change in amplitude
+
+00:10:07,000 --> 00:10:11,000
+that change in amplitude being the eigen value so
+
+00:10:11,000 --> 00:10:14,000
+in fact this function is
+
+00:10:14,000 --> 00:10:17,000
+the eigenfunction
+
+00:10:17,000 --> 00:10:21,000
+and this bad you
+
+00:10:21,000 --> 00:10:27,000
+is the I can bag
+
+00:10:27,000 --> 00:10:30,000
+okay now it's because if the eigenfunction
+
+00:10:30,000 --> 00:10:35,000
+property that complex exponentials a particularly convenient as building
+
+00:10:35,000 --> 00:10:35,000
+blocks
+
+00:10:35,000 --> 00:10:39,000
+namely you put it through the system they come out with the same form
+
+00:10:39,000 --> 00:10:45,000
+and simply scale the other part to the question related
+
+00:10:45,000 --> 00:10:48,000
+to the strategy that we've been pursuing is
+
+00:10:48,000 --> 00:10:52,000
+to hope that the signals
+
+00:10:52,000 --> 00:10:57,000
+can be used as building blocks to represent a
+
+00:10:57,000 --> 00:11:00,000
+very broad classes signals through linear combination
+
+00:11:00,000 --> 00:11:05,000
+and in fact that turns out to be the case with complex exponentials
+
+00:11:05,000 --> 00:11:08,000
+as we worked our way through that
+
+00:11:08,000 --> 00:11:13,000
+will first consider the case love periodic signals
+
+00:11:13,000 --> 00:11:18,000
+and what that leads to is a representation a periodic signals
+
+00:11:18,000 --> 00:11:23,000
+through what's called the forty a series following that
+
+00:11:23,000 --> 00:11:28,000
+we will turn our attention to non periodic or as I refer to it a periodic
+
+00:11:28,000 --> 00:11:29,000
+signals
+
+00:11:29,000 --> 00:11:33,000
+and the representation that's developed
+
+00:11:33,000 --> 00:11:37,000
+interns love linear combinations a complex exponentials
+
+00:11:37,000 --> 00:11:41,000
+is what's referred to as the 48 transport so
+
+00:11:41,000 --> 00:11:45,000
+the first thing that we want to deal with our periodic signals
+
+00:11:45,000 --> 00:11:50,000
+and before you series okay so
+
+00:11:50,000 --> 00:11:54,000
+what we're talking about then is the continuous-time
+
+00:11:54,000 --> 00:11:57,000
+for a series and
+
+00:11:57,000 --> 00:12:01,000
+the for a series is a representation for
+
+00:12:01,000 --> 00:12:05,000
+periodic continuous-time signals we have
+
+00:12:05,000 --> 00:12:09,000
+a signal then which is periodic and
+
+00:12:09,000 --> 00:12:12,000
+were choosing t0 to denote the period
+
+00:12:12,000 --> 00:12:16,000
+so its t0
+
+00:12:16,000 --> 00:12:19,000
+then corresponds to the period
+
+00:12:19,000 --> 00:12:22,000
+our periodic signal Omega 0
+
+00:12:22,000 --> 00:12:26,000
+is to party over t0 as
+
+00:12:26,000 --> 00:12:29,000
+you recall from our discussion love
+
+00:12:29,000 --> 00:12:34,000
+periodic signals and sinusoids before and that's two pirates 0
+
+00:12:34,000 --> 00:12:40,000
+so this is the fundamental frequency now
+
+00:12:40,000 --> 00:12:43,000
+let's examine first the ball complex exponentials
+
+00:12:43,000 --> 00:12:47,000
+and recognize first the ball that
+
+00:12:47,000 --> 00:12:50,000
+there is a complex exponential that has
+
+00:12:50,000 --> 00:12:53,000
+exactly the same period and
+
+00:12:53,000 --> 00:12:57,000
+fundamental frequency as are more general periodic signal
+
+00:12:57,000 --> 00:13:02,000
+namely the complex exponential you to the jail maker 0t
+
+00:13:02,000 --> 00:13:07,000
+where Omega 0 is to Paul II over t0
+
+00:13:07,000 --> 00:13:13,000
+or equivalent Lee t0 is to pie over Omega 0 now
+
+00:13:13,000 --> 00:13:16,000
+that's the complex exponential which has
+
+00:13:16,000 --> 00:13:20,000
+t0 as the fundamental period but
+
+00:13:20,000 --> 00:13:24,000
+think there are harmonically related complex exponentials
+
+00:13:24,000 --> 00:13:29,000
+that also have t0 as a period
+
+00:13:29,000 --> 00:13:32,000
+although in fact their fundamental period shorter
+
+00:13:32,000 --> 00:13:36,000
+so we can also look at complex exponentials
+
+00:13:36,000 --> 00:13:39,000
+before either the JK Omega 0t
+
+00:13:39,000 --> 00:13:42,000
+these likewise are periodic
+
+00:13:42,000 --> 00:13:46,000
+with the period love t0
+
+00:13:46,000 --> 00:13:49,000
+although in fact their fundamental period
+
+00:13:49,000 --> 00:13:52,000
+is t0 divided by K or equivalently
+
+00:13:52,000 --> 00:13:56,000
+to par i divided by their fundamental frequency
+
+00:13:56,000 --> 00:14:00,000
+k Omega 0 so as K
+
+00:14:00,000 --> 00:14:03,000
+a richer varies these correspond to
+
+00:14:03,000 --> 00:14:07,000
+harmonically related complex exponentials
+
+00:14:07,000 --> 00:14:11,000
+now with the forty a series
+
+00:14:11,000 --> 00:14:16,000
+says and will justify this kinda bit by bit is the discussion goes I'm
+
+00:14:16,000 --> 00:14:20,000
+what the four-day series says that in fact what for EA
+
+00:14:20,000 --> 00:14:23,000
+said which was essentially the
+
+00:14:23,000 --> 00:14:27,000
+is brilliant insight is that if I have
+
+00:14:27,000 --> 00:14:32,000
+a very general periodic signal I can represented as a linear combination of
+
+00:14:32,000 --> 00:14:34,000
+these harmonically related
+
+00:14:34,000 --> 00:14:37,000
+complex exponentials so
+
+00:14:37,000 --> 00:14:41,000
+that representation is what i've indicated here
+
+00:14:41,000 --> 00:14:45,000
+and this summation is
+
+00:14:45,000 --> 00:14:48,000
+what will be referred to as
+
+00:14:48,000 --> 00:14:52,000
+the for EA
+
+00:14:52,000 --> 00:14:56,000
+series
+
+00:14:56,000 --> 00:14:59,000
+and as we proceed with the discussion there are two issues
+
+00:14:59,000 --> 00:15:04,000
+couldn't that will develop one is assuming
+
+00:15:04,000 --> 00:15:08,000
+that our periodic signal can be represented this way
+
+00:15:08,000 --> 00:15:12,000
+how do we determine the for a series coefficients
+
+00:15:12,000 --> 00:15:15,000
+as they refer to a suitcase that's one question
+
+00:15:15,000 --> 00:15:19,000
+and the second question will be
+
+00:15:19,000 --> 00:15:23,000
+how broad a class of signals in fact can be represented that
+
+00:15:23,000 --> 00:15:26,000
+this way and bats another question their
+
+00:15:26,000 --> 00:15:30,000
+will deal with separately
+
+00:15:30,000 --> 00:15:34,000
+now just focusing on this representation
+
+00:15:34,000 --> 00:15:37,000
+for a minute this representation
+
+00:15:37,000 --> 00:15:41,000
+love the four EA series which
+
+00:15:41,000 --> 00:15:44,000
+I repeated again
+
+00:15:44,000 --> 00:15:48,000
+here
+
+00:15:48,000 --> 00:15:52,000
+is what's referred to as the complex
+
+00:15:52,000 --> 00:15:55,000
+exponential form love for EA series
+
+00:15:55,000 --> 00:15:58,000
+and it's important to note incidently
+
+00:15:58,000 --> 00:16:04,000
+day this summation involves frequencies k Omega 0
+
+00:16:04,000 --> 00:16:07,000
+their are both positive and negative
+
+00:16:07,000 --> 00:16:10,000
+in other words this index K runs over
+
+00:16:10,000 --> 00:16:15,000
+limits that include both negative values and positive ads
+
+00:16:15,000 --> 00:16:19,000
+now that complex exponential form is one
+
+00:16:19,000 --> 00:16:22,000
+representation for before you a series
+
+00:16:22,000 --> 00:16:26,000
+and in fact it's the one that we will be principally
+
+00:16:26,000 --> 00:16:31,000
+relying on in this course there is another representation that
+
+00:16:31,000 --> 00:16:34,000
+perhaps you come across previously
+
+00:16:34,000 --> 00:16:38,000
+and that in a variety of other contacts is
+
+00:16:38,000 --> 00:16:41,000
+is typically used which is called the trigonometric form
+
+00:16:41,000 --> 00:16:46,000
+the forty a series without really tracking through the algebra
+
+00:16:46,000 --> 00:16:50,000
+essentially we can get to the trigonometric for
+
+00:16:50,000 --> 00:16:54,000
+from the complex exponential form by
+
+00:16:54,000 --> 00:16:58,000
+recognizing that if we express the complex coefficients
+
+00:16:58,000 --> 00:17:02,000
+in polar for or in rectangular for
+
+00:17:02,000 --> 00:17:06,000
+and expand the complex exponential
+
+00:17:06,000 --> 00:17:11,000
+term out in terms of cosine plus J sign
+
+00:17:11,000 --> 00:17:14,000
+using just simply Oilers relation then
+
+00:17:14,000 --> 00:17:18,000
+in we will end up with the representation
+
+00:17:18,000 --> 00:17:22,000
+for the periodic signal
+
+00:17:22,000 --> 00:17:26,000
+were a re expression love the for a series
+
+00:17:26,000 --> 00:17:32,000
+expression that we had previously either in the form that I indicate here
+
+00:17:32,000 --> 00:17:36,000
+we're now the periodic signal is expressed
+
+00:17:36,000 --> 00:17:40,000
+in terms of a summation love cosines
+
+00:17:40,000 --> 00:17:43,000
+with appropriate ample to in phase
+
+00:17:43,000 --> 00:17:48,000
+or another acquittal or triggered a metric for
+
+00:17:48,000 --> 00:17:51,000
+involves rearranging this
+
+00:17:51,000 --> 00:17:54,000
+in terms or a combination
+
+00:17:54,000 --> 00:17:58,000
+of cosines and signs now
+
+00:17:58,000 --> 00:18:03,000
+in this representation the frequencies of the sinusoids
+
+00:18:03,000 --> 00:18:07,000
+very only over positive frequencies
+
+00:18:07,000 --> 00:18:11,000
+and typically one thinks
+
+00:18:11,000 --> 00:18:15,000
+of periodic signals is having positive frequencies associated with them
+
+00:18:15,000 --> 00:18:18,000
+however let's look back
+
+00:18:18,000 --> 00:18:22,000
+at the complex exponential form
+
+00:18:22,000 --> 00:18:26,000
+for the forty a series at the top of the board
+
+00:18:26,000 --> 00:18:31,000
+and in that representation when we use this representation
+
+00:18:31,000 --> 00:18:34,000
+will find it convenient to refer to both
+
+00:18:34,000 --> 00:18:39,000
+positive frequencies and negative frequencies so
+
+00:18:39,000 --> 00:18:43,000
+the representation that we will most typically be using is the complex
+
+00:18:43,000 --> 00:18:44,000
+exponential form
+
+00:18:44,000 --> 00:18:51,000
+and in that form what will find as we think it decomposing a periodic signal
+
+00:18:51,000 --> 00:18:54,000
+in to its compliments
+
+00:18:54,000 --> 00:18:58,000
+at different frequencies it will involve both positive frequencies
+
+00:18:58,000 --> 00:19:02,000
+negative frequencies
+
+00:19:02,000 --> 00:19:06,000
+okay now we have the
+
+00:19:06,000 --> 00:19:10,000
+for EA series representation as i've indicated here
+
+00:19:10,000 --> 00:19:14,000
+again so far I sidestepped the issue as
+
+00:19:14,000 --> 00:19:19,000
+to whether this in fact represents all the signals that we'd like to represent
+
+00:19:19,000 --> 00:19:22,000
+let's first address the issue
+
+00:19:22,000 --> 00:19:25,000
+love how we determine these coefficients
+
+00:19:25,000 --> 00:19:29,000
+Acer K assuming that in fact this representation is Val
+
+00:19:29,000 --> 00:19:33,000
+and again all kinda move through the algebra
+
+00:19:33,000 --> 00:19:38,000
+fairly quickly its a the outbreak steps the ones that
+
+00:19:38,000 --> 00:19:41,000
+you can pursue more leisurely just the kinda
+
+00:19:41,000 --> 00:19:45,000
+verify them in step through them but
+
+00:19:45,000 --> 00:19:49,000
+essentially the algebra develops I did the recognition
+
+00:19:49,000 --> 00:19:54,000
+that if we integrate a complex exponential
+
+00:19:54,000 --> 00:19:58,000
+over one period t0
+
+00:19:58,000 --> 00:20:01,000
+and I mean by this notation that this is an integral
+
+00:20:01,000 --> 00:20:04,000
+over a period where I don't particularly care
+
+00:20:04,000 --> 00:20:09,000
+where the period starts and where the period stops in other words
+
+00:20:09,000 --> 00:20:13,000
+exactly what period I picked that this integral
+
+00:20:13,000 --> 00:20:16,000
+is equal to t0 when M is equal to 0
+
+00:20:16,000 --> 00:20:20,000
+and it's equal to 0 if am is not equal to 0
+
+00:20:20,000 --> 00:20:25,000
+that follow simply from the fact that if we substitute in
+
+00:20:25,000 --> 00:20:30,000
+for using Oilers relations so that we have the integral to cosign
+
+00:20:30,000 --> 00:20:33,000
+was J times assign if M
+
+00:20:33,000 --> 00:20:37,000
+is not equal to 0 than
+
+00:20:37,000 --> 00:20:40,000
+of these integrals over a period are
+
+00:20:40,000 --> 00:20:45,000
+0 the integral over sign it a periodic have a sinus or a cosigner sign
+
+00:20:45,000 --> 00:20:50,000
+over an integral number periods is zero whereas
+
+00:20:50,000 --> 00:20:54,000
+if M is equal to 0 this in a crawl
+
+00:20:54,000 --> 00:20:58,000
+will be equal to 20 the integral the cosine
+
+00:20:58,000 --> 00:21:01,000
+and the integral on the sign is equal to
+
+00:21:01,000 --> 00:21:05,000
+okay well the next step
+
+00:21:05,000 --> 00:21:09,000
+in developing the expression for the coefficients a Sat K
+
+00:21:09,000 --> 00:21:12,000
+is to refer back to
+
+00:21:12,000 --> 00:21:16,000
+before a series expression which was that except he
+
+00:21:16,000 --> 00:21:21,000
+is equal to the sum with basic K either the JK Omega 0t
+
+00:21:21,000 --> 00:21:25,000
+if we multiply both sides that by either minus
+
+00:21:25,000 --> 00:21:29,000
+jaan Omega 0t and
+
+00:21:29,000 --> 00:21:36,000
+integrate that over a period
+
+00:21:36,000 --> 00:21:40,000
+both sides of the equation integrated over a period
+
+00:21:40,000 --> 00:21:44,000
+so these two equations are equal and then
+
+00:21:44,000 --> 00:21:48,000
+in essence interchange the summation and the integration
+
+00:21:48,000 --> 00:21:53,000
+so that this pardon the expression cons outside the psalm
+
+00:21:53,000 --> 00:21:58,000
+and then we combine these two complex exponentials together
+
+00:21:58,000 --> 00:22:01,000
+where we come out is
+
+00:22:01,000 --> 00:22:04,000
+the expression that i've indicated here in
+
+00:22:04,000 --> 00:22:09,000
+and then essentially what happens at this point algebraically
+
+00:22:09,000 --> 00:22:12,000
+is that we use the result that we just developed
+
+00:22:12,000 --> 00:22:16,000
+to evaluate this cynical so
+
+00:22:16,000 --> 00:22:21,000
+multiplying both sides the forty a series in and doing the integration
+
+00:22:21,000 --> 00:22:24,000
+leads us after the appropriate manipulation
+
+00:22:24,000 --> 00:22:28,000
+to the expression that
+
+00:22:28,000 --> 00:22:31,000
+I have up here and
+
+00:22:31,000 --> 00:22:35,000
+this is equal to
+
+00:22:35,000 --> 00:22:39,000
+this integral is equal to t0
+
+00:22:39,000 --> 00:22:42,000
+if K is equal to an
+
+00:22:42,000 --> 00:22:45,000
+corresponding 20 up here and 80
+
+00:22:45,000 --> 00:22:50,000
+otherwise which is what we have demonstrated or are you previously
+
+00:22:50,000 --> 00:22:53,000
+and the upshot of all that then is that
+
+00:22:53,000 --> 00:22:56,000
+the right hand side if this expression disappears
+
+00:22:56,000 --> 00:23:00,000
+except for the term when K is equal to n
+
+00:23:00,000 --> 00:23:04,000
+and so finally we have what I indicate here
+
+00:23:04,000 --> 00:23:09,000
+taking t0 and moving it over to the other side of the equation
+
+00:23:09,000 --> 00:23:13,000
+we then that then tells us
+
+00:23:13,000 --> 00:23:17,000
+how we determine the forty a series coefficients
+
+00:23:17,000 --> 00:23:21,000
+a7 Auris K so
+
+00:23:21,000 --> 00:23:24,000
+that in effect and is the
+
+00:23:24,000 --> 00:23:28,000
+what we refer to as the analysis equation the equation that begins with
+
+00:23:28,000 --> 00:23:29,000
+excessive to me
+
+00:23:29,000 --> 00:23:33,000
+and tells us how to get the for a series coefficients
+
+00:23:33,000 --> 00:23:36,000
+what are referred to as
+
+00:23:36,000 --> 00:23:39,000
+the 48 series synthesis equation
+
+00:23:39,000 --> 00:23:42,000
+is the equation that tells us
+
+00:23:42,000 --> 00:23:45,000
+how to build exit see outta love
+
+00:23:45,000 --> 00:23:50,000
+these complex exponentials so we have the synthesis equation
+
+00:23:50,000 --> 00:23:53,000
+which is the one that we started from we have
+
+00:23:53,000 --> 00:23:57,000
+the analysis equation which is the equation
+
+00:23:57,000 --> 00:24:01,000
+that we just developed
+
+00:24:01,000 --> 00:24:04,000
+okay so we in effect have
+
+00:24:04,000 --> 00:24:09,000
+going through the issue love assuming there for a series representation
+
+00:24:09,000 --> 00:24:13,000
+is in fact valid how we get
+
+00:24:13,000 --> 00:24:16,000
+the coefficients we want to address
+
+00:24:16,000 --> 00:24:19,000
+somewhat the question love how broad a classic signals that we're talking
+
+00:24:19,000 --> 00:24:23,000
+are we talking about and what's in fact amazing
+
+00:24:23,000 --> 00:24:26,000
+and was for EA's amazing insight
+
+00:24:26,000 --> 00:24:29,000
+was that it's a very broad class say but
+
+00:24:29,000 --> 00:24:33,000
+let's first look at just some examples
+
+00:24:33,000 --> 00:24:39,000
+in which we take a signal assume that it has the Fourier series representation
+
+00:24:39,000 --> 00:24:44,000
+and see what the for a series coefficients look like so
+
+00:24:44,000 --> 00:24:49,000
+will begin with what I refer to as
+
+00:24:49,000 --> 00:24:54,000
+an antisymmetric periodic square wave periodic of course because we're talking
+
+00:24:54,000 --> 00:24:56,000
+about periodic signals
+
+00:24:56,000 --> 00:24:59,000
+square wave referring to its shape and
+
+00:24:59,000 --> 00:25:04,000
+antisymmetric referring to the fact that it is an odd
+
+00:25:04,000 --> 00:25:08,000
+time function in other words it is antisymmetric
+
+00:25:08,000 --> 00:25:12,000
+about the origin now
+
+00:25:12,000 --> 00:25:15,000
+the expression for the for a series coefficients
+
+00:25:15,000 --> 00:25:19,000
+tells us that we determine a sieve K
+
+00:25:19,000 --> 00:25:24,000
+by taking one over 20 times the integral over a period
+
+00:25:24,000 --> 00:25:28,000
+affects 50 either minus JK Omega 0t
+
+00:25:28,000 --> 00:25:32,000
+DT the most convenient thing in this case
+
+00:25:32,000 --> 00:25:36,000
+is to choose a period which
+
+00:25:36,000 --> 00:25:41,000
+let's say goes from minus 20 over to the plus 20 over to
+
+00:25:41,000 --> 00:25:44,000
+so here except he is -1 here
+
+00:25:44,000 --> 00:25:47,000
+expertise plus one and so
+
+00:25:47,000 --> 00:25:51,000
+I've expressed the for a series called efficiency as
+
+00:25:51,000 --> 00:25:55,000
+this integral that's from minus 20 over
+
+00:25:55,000 --> 00:25:59,000
+and then and it said that is the
+
+00:25:59,000 --> 00:26:03,000
+positive part of the cycle and so we have
+
+00:26:03,000 --> 00:26:07,000
+these two integrals now I don't want to
+
+00:26:07,000 --> 00:26:11,000
+tracked through the details both the algebra again I
+
+00:26:11,000 --> 00:26:14,000
+I guess I've decided that that's much more fun for you do on your own
+
+00:26:14,000 --> 00:26:18,000
+but the way it comes out when you go through it
+
+00:26:18,000 --> 00:26:22,000
+is the expression that I finally indicate after
+
+00:26:22,000 --> 00:26:26,000
+suggesting that there are a few more steps to follow
+
+00:26:26,000 --> 00:26:29,000
+and what develops is that
+
+00:26:29,000 --> 00:26:32,000
+those two integrals together for K
+
+00:26:32,000 --> 00:26:36,000
+not equal to 0 come out to this expression
+
+00:26:36,000 --> 00:26:42,000
+and that expression is not valid for k equal to 0
+
+00:26:42,000 --> 00:26:46,000
+per kg equal to 0 we can go back to
+
+00:26:46,000 --> 00:26:50,000
+the basic expression for the forty a series
+
+00:26:50,000 --> 00:26:54,000
+which is one over t0 the integral over a period
+
+00:26:54,000 --> 00:26:58,000
+exit see in the minus JK Omega 0 /td TD
+
+00:26:58,000 --> 00:27:01,000
+for cake 10 of course this term
+
+00:27:01,000 --> 00:27:04,000
+just simply becomes one and
+
+00:27:04,000 --> 00:27:10,000
+so the zeroth coefficient is one over 20 times the integral
+
+00:27:10,000 --> 00:27:14,000
+X 50 over a period now
+
+00:27:14,000 --> 00:27:18,000
+going back to the original function
+
+00:27:18,000 --> 00:27:21,000
+that we have what we're saying then is that
+
+00:27:21,000 --> 00:27:27,000
+0th coefficient is one over 20 times the integral over
+
+00:27:27,000 --> 00:27:31,000
+one period which is in effect the average value
+
+00:27:31,000 --> 00:27:36,000
+and it straight forward to verify the for this case that average value
+
+00:27:36,000 --> 00:27:40,000
+is equal to 0 okay
+
+00:27:40,000 --> 00:27:43,000
+now let's look at
+
+00:27:43,000 --> 00:27:46,000
+these for a series coefficients on a bar graph
+
+00:27:46,000 --> 00:27:51,000
+and i've indicated that here the
+
+00:27:51,000 --> 00:27:55,000
+expression for the for a series coefficients we just developed and
+
+00:27:55,000 --> 00:27:58,000
+a involves its
+
+00:27:58,000 --> 00:28:02,000
+0 for cake 0 it's a factor this form
+
+00:28:02,000 --> 00:28:06,000
+for canine equal to 0 plotted on a bar graph
+
+00:28:06,000 --> 00:28:10,000
+then we see values like this 0
+
+00:28:10,000 --> 00:28:13,000
+at cake 0 and and associated values
+
+00:28:13,000 --> 00:28:16,000
+and their number things to focus on
+
+00:28:16,000 --> 00:28:19,000
+when you look at this
+
+00:28:19,000 --> 00:28:25,000
+one is the fact that the forty a series coefficients for this example
+
+00:28:25,000 --> 00:28:29,000
+are surely imaginary
+
+00:28:29,000 --> 00:28:34,000
+a second is that the Fourier series coefficients for this example
+
+00:28:34,000 --> 00:28:39,000
+are odd sequence in other words if you look at this sequence which you see
+
+00:28:39,000 --> 00:28:43,000
+are these values for negative K
+
+00:28:43,000 --> 00:28:46,000
+flipped over so there their imaginary
+
+00:28:46,000 --> 00:28:49,000
+and odd and
+
+00:28:49,000 --> 00:28:52,000
+what that results in when
+
+00:28:52,000 --> 00:28:55,000
+you look at the
+
+00:28:55,000 --> 00:28:59,000
+the triggered a metric form the 4e a series
+
+00:28:59,000 --> 00:29:05,000
+is that in fact those conditions if you put the terms altogether
+
+00:29:05,000 --> 00:29:09,000
+lead you to a trigger a metric representation
+
+00:29:09,000 --> 00:29:13,000
+which involves only sign terms
+
+00:29:13,000 --> 00:29:16,000
+in other words no co-signed turns let me just draw your attention to the fact
+
+00:29:16,000 --> 00:29:18,000
+that
+
+00:29:18,000 --> 00:29:21,000
+since a suitcase the acer case or imaginary
+
+00:29:21,000 --> 00:29:25,000
+this jay takes care that fact so that these coefficients
+
+00:29:25,000 --> 00:29:28,000
+are in fact real so what this says
+
+00:29:28,000 --> 00:29:33,000
+is that for the antisymmetric square wave the
+
+00:29:33,000 --> 00:29:37,000
+it in effect the forty a series is a sign series
+
+00:29:37,000 --> 00:29:40,000
+the antisymmetric square wave is an odd function
+
+00:29:40,000 --> 00:29:45,000
+sinusoids are not are odd functions and so this is all kinda reasonable that
+
+00:29:45,000 --> 00:29:46,000
+we're building
+
+00:29:46,000 --> 00:29:50,000
+odd function ido odd functions
+
+00:29:50,000 --> 00:29:54,000
+as an additional aside which a I won't
+
+00:29:54,000 --> 00:29:57,000
+exploit or refer to any further here
+
+00:29:57,000 --> 00:30:01,000
+but just draw your attention to is that another aspect
+
+00:30:01,000 --> 00:30:06,000
+love this periodic square wave the particular one that we chose
+
+00:30:06,000 --> 00:30:09,000
+is dead it is what's referred to as a
+
+00:30:09,000 --> 00:30:13,000
+on harmonic function in other words
+
+00:30:13,000 --> 00:30:16,000
+for even values if K
+
+00:30:16,000 --> 00:30:20,000
+before a series coefficients 30 their only 90
+
+00:30:20,000 --> 00:30:25,000
+for iPad use K
+
+00:30:25,000 --> 00:30:29,000
+okay now let's look at another example another example
+
+00:30:29,000 --> 00:30:33,000
+is the symmetric periodic square wave
+
+00:30:33,000 --> 00:30:37,000
+and this is in fact example
+
+00:30:37,000 --> 00:30:41,000
+4.5 worked out in more detail in the tax then
+
+00:30:41,000 --> 00:30:45,000
+I won't bother to work work this out in detail here
+
+00:30:45,000 --> 00:30:49,000
+except to draw your attention to several
+
+00:30:49,000 --> 00:30:54,000
+points here is the symmetric periodic square wave
+
+00:30:54,000 --> 00:30:57,000
+and what I mean by symmetric
+
+00:30:57,000 --> 00:31:00,000
+is that it's an even time function
+
+00:31:00,000 --> 00:31:05,000
+now just kinda extrapolating your intuition
+
+00:31:05,000 --> 00:31:08,000
+what we you should expect is that if if it's a
+
+00:31:08,000 --> 00:31:12,000
+only even time function it should be built up
+
+00:31:12,000 --> 00:31:15,000
+or buildable if it's built up a little %ah to only
+
+00:31:15,000 --> 00:31:18,000
+even sinusoids and in fact
+
+00:31:18,000 --> 00:31:22,000
+that's the case so if we look at
+
+00:31:22,000 --> 00:31:25,000
+the four-day series coefficients for this
+
+00:31:25,000 --> 00:31:29,000
+the zeroth coefficient again as the average value
+
+00:31:29,000 --> 00:31:32,000
+which in this case is a half here I've plotted
+
+00:31:32,000 --> 00:31:36,000
+hi times the for a series coefficients so
+
+00:31:36,000 --> 00:31:39,000
+0 thank you as pie over to
+
+00:31:39,000 --> 00:31:42,000
+the coefficients are now and even sequence
+
+00:31:42,000 --> 00:31:45,000
+and in in other words symmetric
+
+00:31:45,000 --> 00:31:49,000
+about cake 0 and the consequences that
+
+00:31:49,000 --> 00:31:53,000
+is that when you take these coefficients
+
+00:31:53,000 --> 00:31:58,000
+and put together the equivalent triggered a metric form
+
+00:31:58,000 --> 00:32:01,000
+the triggered a metric for involves
+
+00:32:01,000 --> 00:32:05,000
+only cosines and no
+
+00:32:05,000 --> 00:32:09,000
+sign turns now
+
+00:32:09,000 --> 00:32:13,000
+you'll see this in and other examples not that will do in the lecture but
+
+00:32:13,000 --> 00:32:17,000
+examples in the text in the video manual if in fact
+
+00:32:17,000 --> 00:32:20,000
+the square way was neither symmetric or antisymmetric
+
+00:32:20,000 --> 00:32:23,000
+then the trigonometric form would involve both
+
+00:32:23,000 --> 00:32:27,000
+sines and cosines and
+
+00:32:27,000 --> 00:32:30,000
+that is of course the more general case
+
+00:32:30,000 --> 00:32:34,000
+furthermore in the two examples are shown here
+
+00:32:34,000 --> 00:32:37,000
+we we in both cases
+
+00:32:37,000 --> 00:32:40,000
+the signal is odd harmonic
+
+00:32:40,000 --> 00:32:43,000
+in other words for even bad news K
+
+00:32:43,000 --> 00:32:48,000
+the coefficients are equal to 0 although I won't justify that here that's a
+
+00:32:48,000 --> 00:32:50,000
+consequence that the fact that
+
+00:32:50,000 --> 00:32:54,000
+this symmetry is exactly about half a period
+
+00:32:54,000 --> 00:32:57,000
+and if you made the on time with a square wave
+
+00:32:57,000 --> 00:33:02,000
+different in relation to the of time then that property would also
+
+00:33:02,000 --> 00:33:06,000
+disappear
+
+00:33:06,000 --> 00:33:07,000
+now
+
+00:33:07,000 --> 00:33:10,000
+what's kind amazing actually in
+
+00:33:10,000 --> 00:33:14,000
+is that if we take a square wave like
+
+00:33:14,000 --> 00:33:19,000
+I have here or as I had in the antisymmetric case
+
+00:33:19,000 --> 00:33:22,000
+the implication is that I can bill
+
+00:33:22,000 --> 00:33:25,000
+that square wave by adding up
+
+00:33:25,000 --> 00:33:30,000
+on of signs were cosines and
+
+00:33:30,000 --> 00:33:34,000
+it really seems kinda amazing because the square wave after all
+
+00:33:34,000 --> 00:33:37,000
+is a very discontinuous functions
+
+00:33:37,000 --> 00:33:42,000
+sinusoids are very continuous and it seems puzzling that in fact
+
+00:33:42,000 --> 00:33:46,000
+you can do that well let's look in a little bit of detail
+
+00:33:46,000 --> 00:33:49,000
+how the sinusoidal
+
+00:33:49,000 --> 00:33:53,000
+turns and up to
+
+00:33:53,000 --> 00:33:56,000
+build a square wave and to do that
+
+00:33:56,000 --> 00:34:00,000
+let's first define what I refer to
+
+00:34:00,000 --> 00:34:04,000
+as a partial song so
+
+00:34:04,000 --> 00:34:07,000
+here we have the expression
+
+00:34:07,000 --> 00:34:10,000
+which is the synthesis
+
+00:34:10,000 --> 00:34:15,000
+equation telling us how accept T could be represented
+
+00:34:15,000 --> 00:34:18,000
+as complex exponentials if it can be and
+
+00:34:18,000 --> 00:34:22,000
+let's consider just a finite number of turns in this song
+
+00:34:22,000 --> 00:34:26,000
+and so X 7ft of course as n goes to infinity
+
+00:34:26,000 --> 00:34:31,000
+approaches the infinite sum that we're talking about and although we could do
+
+00:34:31,000 --> 00:34:35,000
+this more generally let's not let's focus on the symmetric square wave case
+
+00:34:35,000 --> 00:34:40,000
+where because it the symmetry of these coefficients namely that a suitcase
+
+00:34:40,000 --> 00:34:41,000
+equal to minus
+
+00:34:41,000 --> 00:34:45,000
+is equal to a serb minus K we can rewrite
+
+00:34:45,000 --> 00:34:50,000
+these turns as cosine turns and so this partial some
+
+00:34:50,000 --> 00:34:53,000
+can be express the way arm expressing it here
+
+00:34:53,000 --> 00:34:57,000
+well let's look at
+
+00:34:57,000 --> 00:35:01,000
+a few the Stearns on the graph I have
+
+00:35:01,000 --> 00:35:04,000
+first the ball exit tea which is our
+
+00:35:04,000 --> 00:35:07,000
+original square wave
+
+00:35:07,000 --> 00:35:11,000
+the turn that I indicate here
+
+00:35:11,000 --> 00:35:14,000
+is the factor over half which
+
+00:35:14,000 --> 00:35:19,000
+is this term
+
+00:35:19,000 --> 00:35:23,000
+with any calls one that would correspond to anyone co-signed term
+
+00:35:23,000 --> 00:35:26,000
+to that and so the sole those two would be yes
+
+00:35:26,000 --> 00:35:31,000
+which looks a little close to the square wave but
+
+00:35:31,000 --> 00:35:35,000
+certainly not very close to it at all and in fact
+
+00:35:35,000 --> 00:35:39,000
+in its somewhat hard to imagine without
+
+00:35:39,000 --> 00:35:44,000
+seeing the terms build-up how in fact by adding more and more turns we can
+
+00:35:44,000 --> 00:35:45,000
+generate something
+
+00:35:45,000 --> 00:35:49,000
+that is essentially flat except at the discontinuities
+
+00:35:49,000 --> 00:35:53,000
+so let's look at this example and what I'd like to show
+
+00:35:53,000 --> 00:35:58,000
+is this example but now as we add many
+
+00:35:58,000 --> 00:36:01,000
+more turns to it and let's see in fact
+
+00:36:01,000 --> 00:36:04,000
+how these individual turns add up
+
+00:36:04,000 --> 00:36:07,000
+to build up the square way so
+
+00:36:07,000 --> 00:36:11,000
+this is the square wave that we want to build up
+
+00:36:11,000 --> 00:36:14,000
+through the forty a series is this some of sinusoids
+
+00:36:14,000 --> 00:36:20,000
+and the term for cake 0 will be a constant which represents the DC value
+
+00:36:20,000 --> 00:36:21,000
+with this
+
+00:36:21,000 --> 00:36:25,000
+and so in the partial sum as we develop it
+
+00:36:25,000 --> 00:36:30,000
+the first thing they will show is just the term for cable 0
+
+00:36:30,000 --> 00:36:35,000
+now for cables one we would add to that
+
+00:36:35,000 --> 00:36:38,000
+one sinusoidal term and
+
+00:36:38,000 --> 00:36:43,000
+so some love the term for cake was one cake was 0
+
+00:36:43,000 --> 00:36:48,000
+is represented here now
+
+00:36:48,000 --> 00:36:53,000
+when we go to K calls to because of the fact that this is an odd harmonic
+
+00:36:53,000 --> 00:36:53,000
+function
+
+00:36:53,000 --> 00:36:57,000
+in fact the term for cake was it was too
+
+00:36:57,000 --> 00:37:01,000
+will be will have zero amplitude and so this won't change
+
+00:37:01,000 --> 00:37:06,000
+here we show the
+
+00:37:06,000 --> 00:37:09,000
+for a series would cake was to and there's no change
+
+00:37:09,000 --> 00:37:13,000
+and then we will go to cable 23
+
+00:37:13,000 --> 00:37:14,000
+and
+
+00:37:14,000 --> 00:37:19,000
+and we will be adding then one additional sinusoidal term here's cake
+
+00:37:19,000 --> 00:37:19,000
+was three
+
+00:37:19,000 --> 00:37:24,000
+when we go to cable 24 again there won't be any change
+
+00:37:24,000 --> 00:37:27,000
+but their will be another term that's
+
+00:37:27,000 --> 00:37:32,000
+added at cake was five here and cable 6
+
+00:37:32,000 --> 00:37:37,000
+again because it's odd harmonic no change and finally cable 7
+
+00:37:37,000 --> 00:37:43,000
+is shown here okay and we can begin to see that
+
+00:37:43,000 --> 00:37:47,000
+this starts to look somewhat like the square wave but
+
+00:37:47,000 --> 00:37:51,000
+now to really emphasize how this builds up let's
+
+00:37:51,000 --> 00:37:56,000
+more rapidly and Ed many more terms and in fact
+
+00:37:56,000 --> 00:38:00,000
+increase the number of turns up to about a hundred recognizing
+
+00:38:00,000 --> 00:38:03,000
+that the shape will only change on the inclusion
+
+00:38:03,000 --> 00:38:08,000
+all the odd number terms not the even-numbered turns because it's an odd
+
+00:38:08,000 --> 00:38:11,000
+harmonic function so now we're
+
+00:38:11,000 --> 00:38:15,000
+increasing and we're building up toward
+
+00:38:15,000 --> 00:38:19,000
+k equal to 100 200 turns an
+
+00:38:19,000 --> 00:38:22,000
+notice that it is the higher
+
+00:38:22,000 --> 00:38:25,000
+order turns dead tend to build up
+
+00:38:25,000 --> 00:38:30,000
+the discontinuity corresponding to the notion
+
+00:38:30,000 --> 00:38:34,000
+there'd the discontinuities or sharp edges in a signal
+
+00:38:34,000 --> 00:38:38,000
+in fact are represented through the higher
+
+00:38:38,000 --> 00:38:42,000
+frequencies in the forty a series and here we have
+
+00:38:42,000 --> 00:38:46,000
+a not too unreasonable approximation
+
+00:38:46,000 --> 00:38:50,000
+to the original square wave there is the artifact of the ripples at the
+
+00:38:50,000 --> 00:38:52,000
+discontinuity and in fact
+
+00:38:52,000 --> 00:38:56,000
+though that rippling behavior at the discontinuities
+
+00:38:56,000 --> 00:39:00,000
+is referred to as the Gibbs phenomenon
+
+00:39:00,000 --> 00:39:04,000
+and it's an inherent part love the forty a series representation at
+
+00:39:04,000 --> 00:39:05,000
+discontinuities
+
+00:39:05,000 --> 00:39:08,000
+now to emphasize this
+
+00:39:08,000 --> 00:39:12,000
+let's decrease the number of turns back down
+
+00:39:12,000 --> 00:39:16,000
+and we will carry this down
+
+00:39:16,000 --> 00:39:19,000
+to k equal to 1 again
+
+00:39:19,000 --> 00:39:23,000
+to emphasizes how the sinusoids are building up
+
+00:39:23,000 --> 00:39:28,000
+the square wave here we are back at Cape cools
+
+00:39:28,000 --> 00:39:31,000
+1 and then finally we
+
+00:39:31,000 --> 00:39:34,000
+will and back in the sinusoids that we took out
+
+00:39:34,000 --> 00:39:37,000
+and let's build this back up to 100 turns
+
+00:39:37,000 --> 00:39:41,000
+showing the approximation dead
+
+00:39:41,000 --> 00:39:48,000
+we generated with a hundred turns to the square way
+
+00:40:00,000 --> 00:40:03,000
+okay so so what you saw is that
+
+00:40:03,000 --> 00:40:06,000
+in fact we got awfully close to a square wave
+
+00:40:06,000 --> 00:40:10,000
+and the other thing think that was kind of interesting about it is that went
+
+00:40:10,000 --> 00:40:10,000
+along
+
+00:40:10,000 --> 00:40:15,000
+was the fact that with the low frequencies
+
+00:40:15,000 --> 00:40:19,000
+what we were tending to bill was the general behavior
+
+00:40:19,000 --> 00:40:22,000
+and as the higher frequencies came in
+
+00:40:22,000 --> 00:40:25,000
+that tended to contribute the discontinuities
+
+00:40:25,000 --> 00:40:29,000
+work contribute to the discontinuity and
+
+00:40:29,000 --> 00:40:32,000
+in fact something their will
+
+00:40:32,000 --> 00:40:35,000
+standout more and more as we go through our discussion
+
+00:40:35,000 --> 00:40:39,000
+love for a series of 48 transforms is
+
+00:40:39,000 --> 00:40:43,000
+that general statement that its the low-frequency
+
+00:40:43,000 --> 00:40:47,000
+terms bat represent
+
+00:40:47,000 --> 00:40:50,000
+the broad time behavior and
+
+00:40:50,000 --> 00:40:54,000
+its the high-frequency terms that are used to build up
+
+00:40:54,000 --> 00:40:59,000
+the sharp transitions in the time domain
+
+00:40:59,000 --> 00:41:02,000
+okay now we need to get a little more precise
+
+00:41:02,000 --> 00:41:06,000
+about the question of how in fact
+
+00:41:06,000 --> 00:41:09,000
+the 48 series
+
+00:41:09,000 --> 00:41:12,000
+or when before you a series represents
+
+00:41:12,000 --> 00:41:16,000
+the functions that we're talking about and in what sense they represent them
+
+00:41:16,000 --> 00:41:19,000
+in and so if we look
+
+00:41:19,000 --> 00:41:25,000
+again at the synthesis
+
+00:41:25,000 --> 00:41:28,000
+ok wage in were really wanna ask
+
+00:41:28,000 --> 00:41:31,000
+is if we add up enough for these terms
+
+00:41:31,000 --> 00:41:34,000
+in what sense does this some represent
+
+00:41:34,000 --> 00:41:38,000
+this time function well
+
+00:41:38,000 --> 00:41:42,000
+let's again use the notion love are partial some
+
+00:41:42,000 --> 00:41:46,000
+so we have the partial song down here
+
+00:41:46,000 --> 00:41:50,000
+in and we can think love the difference between
+
+00:41:50,000 --> 00:41:54,000
+this partial some and the
+
+00:41:54,000 --> 00:41:57,000
+original time function as
+
+00:41:57,000 --> 00:42:01,000
+the ever and I've defined the error here
+
+00:42:01,000 --> 00:42:06,000
+and what we would like to know is does this error
+
+00:42:06,000 --> 00:42:09,000
+decrease as we aired more and more turns
+
+00:42:09,000 --> 00:42:14,000
+and in fact in what sense if the air does decrease in what sense
+
+00:42:14,000 --> 00:42:18,000
+there's a decrease now in detail
+
+00:42:18,000 --> 00:42:22,000
+this is a fairly complicated an elaborate topic I don't mean to make
+
+00:42:22,000 --> 00:42:23,000
+that sound frightening
+
+00:42:23,000 --> 00:42:29,000
+its mainly a statement that I don't want to explore it and a lot of detail
+
+00:42:29,000 --> 00:42:33,000
+but it relates to what is referred to
+
+00:42:33,000 --> 00:42:36,000
+as the issue a convergence the forty a series
+
+00:42:36,000 --> 00:42:40,000
+and the convergence the 48 series
+
+00:42:40,000 --> 00:42:44,000
+the the bottom line on at the kinda and statement
+
+00:42:44,000 --> 00:42:48,000
+can be made in several ways one statement
+
+00:42:48,000 --> 00:42:53,000
+related to convergence the for a series is the following if
+
+00:42:53,000 --> 00:42:56,000
+I have a time function which
+
+00:42:56,000 --> 00:43:00,000
+is what is referred to as square integrable namely
+
+00:43:00,000 --> 00:43:05,000
+its integral over a period is finite then
+
+00:43:05,000 --> 00:43:08,000
+what you can show kinda amazingly
+
+00:43:08,000 --> 00:43:12,000
+is that the energy E in
+
+00:43:12,000 --> 00:43:15,000
+that error in other words the energy in the difference between the original
+
+00:43:15,000 --> 00:43:16,000
+function
+
+00:43:16,000 --> 00:43:20,000
+and the partial some the energy and that
+
+00:43:20,000 --> 00:43:25,000
+goes to zero as n goes to infinity
+
+00:43:25,000 --> 00:43:31,000
+a somewhat tighter condition is a condition referred to as it the racially
+
+00:43:31,000 --> 00:43:34,000
+conditions which says that
+
+00:43:34,000 --> 00:43:37,000
+if the time function
+
+00:43:37,000 --> 00:43:43,000
+is absolutely integral not square honorable but absolutely integral
+
+00:43:43,000 --> 00:43:48,000
+and I've kinda hedge the issue by just simply referred to accept T as being
+
+00:43:48,000 --> 00:43:49,000
+well behaved
+
+00:43:49,000 --> 00:43:55,000
+then the statement is dead the error in fact goes to zero
+
+00:43:55,000 --> 00:43:59,000
+as and increases except at the discontinuities
+
+00:43:59,000 --> 00:44:03,000
+and what well-behaved means in that statement
+
+00:44:03,000 --> 00:44:07,000
+is that as discussed in the book there are a finite number
+
+00:44:07,000 --> 00:44:12,000
+maxima and minima in any period and a finite number finite discontinuities
+
+00:44:12,000 --> 00:44:13,000
+which is essentially
+
+00:44:13,000 --> 00:44:18,000
+always the case so under square in Accra bility
+
+00:44:18,000 --> 00:44:22,000
+what we have is the statement not that the partial sum goes to the right value
+
+00:44:22,000 --> 00:44:23,000
+at every point
+
+00:44:23,000 --> 00:44:27,000
+but that the energy in the air goes to zero
+
+00:44:27,000 --> 00:44:32,000
+under the jewish way conditions it says that in fact the signal goes to the
+
+00:44:32,000 --> 00:44:33,000
+right back to you
+
+00:44:33,000 --> 00:44:37,000
+at every time instant except
+
+00:44:37,000 --> 00:44:41,000
+at the discontinuities so
+
+00:44:41,000 --> 00:44:46,000
+going back to the square wave
+
+00:44:46,000 --> 00:44:50,000
+the square wave satisfies either one of those conditions and so
+
+00:44:50,000 --> 00:44:55,000
+what the consequences is that with the square wave
+
+00:44:55,000 --> 00:44:58,000
+if we looked at the error then in fact
+
+00:44:58,000 --> 00:45:01,000
+what we would find is that the energy
+
+00:45:01,000 --> 00:45:05,000
+in the error would go to zero as we at
+
+00:45:05,000 --> 00:45:08,000
+more and more turns in the partial some and in fact
+
+00:45:08,000 --> 00:45:13,000
+if says the square wave also satisfies the dish les conditions
+
+00:45:13,000 --> 00:45:18,000
+the actual value with the air the difference between
+
+00:45:18,000 --> 00:45:21,000
+the partial some and the true value will will
+
+00:45:21,000 --> 00:45:25,000
+actually go to zero that difference will go to zero
+
+00:45:25,000 --> 00:45:29,000
+except at the discontinuities and
+
+00:45:29,000 --> 00:45:32,000
+that in fact is kinda evident as
+
+00:45:32,000 --> 00:45:35,000
+we watch the function build-up
+
+00:45:35,000 --> 00:45:39,000
+by adding up these terms and so in fact
+
+00:45:39,000 --> 00:45:43,000
+let's go back and see again
+
+00:45:43,000 --> 00:45:46,000
+the development the partial sons
+
+00:45:46,000 --> 00:45:50,000
+in relation to the original time function let's observe
+
+00:45:50,000 --> 00:45:54,000
+this time again basically what we saw before which is that it builds up
+
+00:45:54,000 --> 00:46:00,000
+to the right answer and furthermore what will plot this time also as a function
+
+00:46:00,000 --> 00:46:01,000
+of time
+
+00:46:01,000 --> 00:46:06,000
+is the energy in the air and what we'll see is that the energy in the air
+
+00:46:06,000 --> 00:46:09,000
+will be tending toward zero as the number
+
+00:46:09,000 --> 00:46:12,000
+turns increases so
+
+00:46:12,000 --> 00:46:15,000
+once again we have the square wave and
+
+00:46:15,000 --> 00:46:19,000
+we want to again show the buildup of the
+
+00:46:19,000 --> 00:46:23,000
+forty a series this time showing also
+
+00:46:23,000 --> 00:46:27,000
+how the energy in the air decreases as we had more and more turns
+
+00:46:27,000 --> 00:46:30,000
+well once again will begin
+
+00:46:30,000 --> 00:46:34,000
+with cake was 0 corresponding to the constant term
+
+00:46:34,000 --> 00:46:37,000
+and was shown on the bottom trace is
+
+00:46:37,000 --> 00:46:40,000
+the energy in the air between those two and
+
+00:46:40,000 --> 00:46:44,000
+will then and the term for cables 1
+
+00:46:44,000 --> 00:46:49,000
+to the DC term and will see that the energy will decrease
+
+00:46:49,000 --> 00:46:53,000
+when we do that here we have then the summer
+
+00:46:53,000 --> 00:46:56,000
+cake 10 cables 1 now
+
+00:46:56,000 --> 00:47:00,000
+with cables to the energy won't decrease
+
+00:47:00,000 --> 00:47:07,000
+any further because it's an odd harmonic function
+
+00:47:07,000 --> 00:47:12,000
+that's what we've just added in when we add in the term for cables 3
+
+00:47:12,000 --> 00:47:15,000
+again will see the energy in the air decrease
+
+00:47:15,000 --> 00:47:22,000
+as reflected in the bottom curve
+
+00:47:22,000 --> 00:47:26,000
+so there we are at cables 3 when
+
+00:47:26,000 --> 00:47:31,000
+we go to cable 24 there again is no change in the air
+
+00:47:31,000 --> 00:47:38,000
+at cables 5 again the air decreases
+
+00:47:39,000 --> 00:47:43,000
+k equal to 6% know there will be no change again
+
+00:47:43,000 --> 00:47:47,000
+an 8k course 7 the energy decreases
+
+00:47:47,000 --> 00:47:51,000
+and now let's show the how the air decreases by building up the number
+
+00:47:51,000 --> 00:47:56,000
+turns much more rapidly already the air has gotten somewhat small on the scale
+
+00:47:56,000 --> 00:47:58,000
+in which were showing it so let's expand out
+
+00:47:58,000 --> 00:48:02,000
+the ever scale the vertical axis
+
+00:48:02,000 --> 00:48:05,000
+displaying the energy in the error so that we could watch
+
+00:48:05,000 --> 00:48:08,000
+how the energy decreases as
+
+00:48:08,000 --> 00:48:12,000
+we had more and more terms so here we have
+
+00:48:12,000 --> 00:48:15,000
+the vertical scale expanded and
+
+00:48:15,000 --> 00:48:18,000
+now what we'll do is increase
+
+00:48:18,000 --> 00:48:23,000
+the number of turns in the forty a series and watch the energy in the air
+
+00:48:23,000 --> 00:48:24,000
+at decreasing
+
+00:48:24,000 --> 00:48:27,000
+always decreasing of course on the inclusion
+
+00:48:27,000 --> 00:48:31,000
+love the odd number turns and
+
+00:48:31,000 --> 00:48:35,000
+not on the inclusion of the even-numbered turns because the fact
+
+00:48:35,000 --> 00:48:39,000
+that it's an odd harmonic function now the energy in the air
+
+00:48:39,000 --> 00:48:43,000
+asymptotically will approach 0 although
+
+00:48:43,000 --> 00:48:48,000
+point by point the forty a series will never be equal to the square wave
+
+00:48:48,000 --> 00:48:52,000
+it will at every instant of time
+
+00:48:52,000 --> 00:48:56,000
+except at the discontinuities where there will always be
+
+00:48:56,000 --> 00:49:00,000
+some ripple corresponding to
+
+00:49:00,000 --> 00:49:04,000
+what's referred to as the Gibbs phenomenon
+
+00:49:04,000 --> 00:49:08,000
+okay well so what we've seen in is
+
+00:49:08,000 --> 00:49:12,000
+a and a quick look at the Fourier series
+
+00:49:12,000 --> 00:49:15,000
+representation love periodic signals
+
+00:49:15,000 --> 00:49:20,000
+we more broadly
+
+00:49:20,000 --> 00:49:23,000
+wanna have a more general representation
+
+00:49:23,000 --> 00:49:29,000
+love oath signals in terms of complex exponentials and so our next step
+
+00:49:29,000 --> 00:49:33,000
+will be to move toward a representation
+
+00:49:33,000 --> 00:49:36,000
+I'll not periodic or a periodic signals
+
+00:49:36,000 --> 00:49:40,000
+now the details if this I leave for the next lecture
+
+00:49:40,000 --> 00:49:43,000
+the only thought that I want introduced at this point
+
+00:49:43,000 --> 00:49:46,000
+is the basic strategy you which
+
+00:49:46,000 --> 00:49:51,000
+is somewhat amazing and kinda interesting to reflect on
+
+00:49:51,000 --> 00:49:54,000
+in the interim the basic strategy
+
+00:49:54,000 --> 00:49:57,000
+with in a periodic signal is
+
+00:49:57,000 --> 00:50:01,000
+to think love representing
+
+00:50:01,000 --> 00:50:07,000
+this a periodic signal as a linear combination of complex exponentials
+
+00:50:07,000 --> 00:50:11,000
+by this simple trick all
+
+00:50:11,000 --> 00:50:14,000
+periodically replicating this signal
+
+00:50:14,000 --> 00:50:17,000
+generating a periodic signal
+
+00:50:17,000 --> 00:50:21,000
+using a Fourier series representation
+
+00:50:21,000 --> 00:50:24,000
+for that periodic signal and then
+
+00:50:24,000 --> 00:50:28,000
+simply letting the period go to infinity
+
+00:50:28,000 --> 00:50:32,000
+as the period goes to infinity that periodic signal becomes the original
+
+00:50:32,000 --> 00:50:36,000
+a periodic one that we have before and a 40 a series
+
+00:50:36,000 --> 00:50:43,000
+representation then becomes what we refer to as the Fourier transform so
+
+00:50:44,000 --> 00:50:47,000
+that's just a quick look at kind of the basic idea
+
+00:50:47,000 --> 00:50:52,000
+and approach that will take in the next lecture will develop this
+
+00:50:52,000 --> 00:50:56,000
+a little more carefully more fully moving from the 40 a series which we've
+
+00:50:56,000 --> 00:50:58,000
+used for periodic signals
+
+00:50:58,000 --> 00:51:01,000
+to develop the for EA transform
+
+00:51:01,000 --> 00:51:04,000
+which will then be representation for a periodic see
+
+00:51:04,000 --> 00:51:05,000
+thank you
+

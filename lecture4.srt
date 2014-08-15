@@ -1,0 +1,3560 @@
+1
+00:00:00,040 --> 00:00:03,490 
+the following content is provided under
+a Creative Commons license
+
+2
+00:00:03,490 --> 00:00:07,129 
+your support will help MIT
+OpenCourseWare continue to offer
+
+3
+00:00:07,129 --> 00:00:10,580 
+high-quality educational resources for
+free
+
+4
+00:00:10,580 --> 00:00:14,360 
+to make a donation or view additional
+materials from hundreds of them IT
+
+5
+00:00:14,360 --> 00:00:15,030 
+courses
+
+6
+00:00:15,030 --> 00:00:18,110 
+visit MIT OpenCourseWare at 0 CW
+
+7
+00:00:18,110 --> 00:00:20,670 
+that MIT ided you
+
+8
+00:00:20,670 --> 00:00:27,670 
+home
+
+9
+00:00:35,700 --> 00:00:40,660 
+in
+
+10
+00:00:40,660 --> 00:00:45,060 
+the norm
+
+11
+00:00:45,060 --> 00:00:52,060 
+are
+
+12
+00:00:57,270 --> 00:00:59,780 
+the last lecture we discuss the number
+
+13
+00:00:59,780 --> 00:01:03,520 
+general properties for systems which
+
+14
+00:01:03,520 --> 00:01:07,320 
+as you recall applied both to
+continuous-time
+
+15
+00:01:07,320 --> 00:01:10,490 
+and to discrete-time systems
+
+16
+00:01:10,490 --> 00:01:14,400 
+and these properties were the properties
+
+17
+00:01:14,400 --> 00:01:18,640 
+associated with the system having memory
+the issue
+
+18
+00:01:18,640 --> 00:01:21,840 
+love whether a system is or isn't
+convertible
+
+19
+00:01:21,840 --> 00:01:25,409 
+we talked about causality instability
+
+20
+00:01:25,409 --> 00:01:28,810 
+and finally we talked about when the
+arity
+
+21
+00:01:28,810 --> 00:01:32,369 
+and time-invariant in today's lecture
+
+22
+00:01:32,369 --> 00:01:36,850 
+what I'd like to do is focused
+specifically on when the arity in time
+
+23
+00:01:36,850 --> 00:01:37,729 
+invariance
+
+24
+00:01:37,729 --> 00:01:41,539 
+and show how for systems that have those
+properties
+
+25
+00:01:41,539 --> 00:01:45,119 
+we can exploit them to generate
+
+26
+00:01:45,119 --> 00:01:48,890 
+a general representation well let me
+begin by
+
+27
+00:01:48,890 --> 00:01:52,149 
+just reviewing the two properties again
+quickly
+
+28
+00:01:52,149 --> 00:01:55,990 
+time invariance as you recall
+
+29
+00:01:55,990 --> 00:01:59,490 
+is a property that apply both to
+continuous-time and discrete-time
+
+30
+00:01:59,490 --> 00:02:00,960 
+systems
+
+31
+00:02:00,960 --> 00:02:05,930 
+and in essence stated bad for any given
+
+32
+00:02:05,930 --> 00:02:09,610 
+input and output relationship if we
+
+33
+00:02:09,610 --> 00:02:14,950 
+simply shift the input than the output
+shift by the same amount
+
+34
+00:02:14,950 --> 00:02:19,239 
+and of course exactly the same kind of
+statement
+
+35
+00:02:19,239 --> 00:02:24,670 
+applied in discrete-time so it i mean
+variance was a property
+
+36
+00:02:24,670 --> 00:02:28,940 
+it said that the system didn't care
+about what the time origin
+
+37
+00:02:28,940 --> 00:02:32,540 
+the signal is when the arity
+
+38
+00:02:32,540 --> 00:02:36,420 
+was a property related to the fact that
+if we have
+
+39
+00:02:36,420 --> 00:02:40,860 
+et cetera outputs associated with a
+given set of inputs
+
+40
+00:02:40,860 --> 00:02:44,769 
+as i've indicated here with the inputs
+
+41
+00:02:44,769 --> 00:02:48,720 
+as feasted K and the output decisive K
+
+42
+00:02:48,720 --> 00:02:52,180 
+then the property of when the arity
+
+43
+00:02:52,180 --> 00:02:55,690 
+States that if we have an input
+
+44
+00:02:55,690 --> 00:02:59,359 
+which is a linear combination up those
+inputs
+
+45
+00:02:59,359 --> 00:03:02,870 
+then the output is
+
+46
+00:03:02,870 --> 00:03:05,870 
+a linear combination of the Associated
+outputs
+
+47
+00:03:05,870 --> 00:03:09,720 
+so that linear combination of inputs
+
+48
+00:03:09,720 --> 00:03:15,000 
+generates for linear system at the end
+output which is
+
+49
+00:03:15,000 --> 00:03:20,200 
+a linear combination up the Associated
+outputs now
+
+50
+00:03:20,200 --> 00:03:24,810 
+the question is how can we exploit the
+properties have many arity
+
+51
+00:03:24,810 --> 00:03:29,110 
+and time-invariant and there's a basic
+strategy
+
+52
+00:03:29,110 --> 00:03:32,580 
+which will flow more or less through
+mostly this court's
+
+53
+00:03:32,580 --> 00:03:36,580 
+the strategy is to
+
+54
+00:03:36,580 --> 00:03:41,690 
+attempt to decompose the signal you the
+continuous-time and discrete-time
+
+55
+00:03:41,690 --> 00:03:44,959 
+into it said a basic signals
+
+56
+00:03:44,959 --> 00:03:48,280 
+and I've indicated that
+
+57
+00:03:48,280 --> 00:03:52,190 
+here and the question then
+
+58
+00:03:52,190 --> 00:03:56,610 
+is what basic signal should we pick well
+
+59
+00:03:56,610 --> 00:04:00,470 
+the answer kinda is we should pick said
+a basic signals
+
+60
+00:04:00,470 --> 00:04:04,000 
+they provide a certain degree have
+analytical convenience
+
+61
+00:04:04,000 --> 00:04:07,150 
+so we choose instead of inputs for the
+decomposition
+
+62
+00:04:07,150 --> 00:04:10,330 
+bad provide outputs
+
+63
+00:04:10,330 --> 00:04:14,989 
+that we can easily generate now and
+we'll see
+
+64
+00:04:14,989 --> 00:04:18,630 
+when we do this there are to
+
+65
+00:04:18,630 --> 00:04:22,840 
+classes love inputs that are
+particularly suited
+
+66
+00:04:22,840 --> 00:04:26,440 
+to that strategy one class is
+
+67
+00:04:26,440 --> 00:04:31,260 
+the set love the late impulses namely
+
+68
+00:04:31,260 --> 00:04:34,500 
+decomposing a signal into a linear
+combination if the
+
+69
+00:04:34,500 --> 00:04:38,740 
+is and as we'll see that leads to a
+representation
+
+70
+00:04:38,740 --> 00:04:42,479 
+for linear time-invariant systems which
+is referred to
+
+71
+00:04:42,479 --> 00:04:46,740 
+as convolution a second
+
+72
+00:04:46,740 --> 00:04:51,880 
+is a decomposition of inputs into
+complex exponentials
+
+73
+00:04:51,880 --> 00:04:55,080 
+a linear combination of complex
+exponentials
+
+74
+00:04:55,080 --> 00:04:58,970 
+and that leads to a representation
+
+75
+00:04:58,970 --> 00:05:03,070 
+love signals and systems through what
+will refer to as
+
+76
+00:05:03,070 --> 00:05:06,590 
+for your analysis now
+
+77
+00:05:06,590 --> 00:05:10,190 
+four-day analysis will be a topic for
+
+78
+00:05:10,190 --> 00:05:13,279 
+a setup later lectures but I'd like to
+begin with
+
+79
+00:05:13,279 --> 00:05:18,120 
+is the representation in terms of
+impulses and the associated description
+
+80
+00:05:18,120 --> 00:05:21,210 
+linear time-invariant systems using
+convolution
+
+81
+00:05:21,210 --> 00:05:24,690 
+so let's begin where
+
+82
+00:05:24,690 --> 00:05:28,200 
+a discussion are discrete-time signals
+
+83
+00:05:28,200 --> 00:05:32,560 
+and in particular the issue of how
+discrete-time signals
+
+84
+00:05:32,560 --> 00:05:35,770 
+can be decomposed as a linear
+combination
+
+85
+00:05:35,770 --> 00:05:39,760 
+love the lady impulses
+
+86
+00:05:39,760 --> 00:05:43,599 
+well in fact it's relatively
+straightforward
+
+87
+00:05:43,599 --> 00:05:47,080 
+what I've shown here is a general
+
+88
+00:05:47,080 --> 00:05:50,460 
+sequence with values which i've
+indicated
+
+89
+00:05:50,460 --> 00:05:54,260 
+at the top and more or less
+
+90
+00:05:54,260 --> 00:05:58,020 
+as we did when we talked about
+representing
+
+91
+00:05:58,020 --> 00:06:01,349 
+a unit step in terms of impulses
+
+92
+00:06:01,349 --> 00:06:05,320 
+we can think of this general sequence as
+a sequence
+
+93
+00:06:05,320 --> 00:06:08,919 
+I'll impulses delayed
+
+94
+00:06:08,919 --> 00:06:11,960 
+namely occurring at the appropriate
+
+95
+00:06:11,960 --> 00:06:16,979 
+prime instant and and with the
+appropriate ample to
+
+96
+00:06:16,979 --> 00:06:20,729 
+so we can think love this general
+sequence
+
+97
+00:06:20,729 --> 00:06:24,880 
+as and im polls occurring at an equal 0
+
+98
+00:06:24,880 --> 00:06:27,969 
+and and with the high dive exit 0
+
+99
+00:06:27,969 --> 00:06:31,940 
+plus and im polls all quite active one
+
+100
+00:06:31,940 --> 00:06:35,849 
+occurring at time n equals 1 and so
+that's active one time
+
+101
+00:06:35,849 --> 00:06:40,580 
+Delta than -1 and in polls at -1
+
+102
+00:06:40,580 --> 00:06:43,770 
+with an amplitude love exit -1
+
+103
+00:06:43,770 --> 00:06:48,010 
+et cetera so if we continue
+
+104
+00:06:48,010 --> 00:06:52,510 
+to generate a said Oh waited the late
+unit samples like that
+
+105
+00:06:52,510 --> 00:06:55,610 
+and if we had all these together
+
+106
+00:06:55,610 --> 00:07:00,120 
+then that will generate the total
+sequence
+
+107
+00:07:00,120 --> 00:07:03,770 
+algebraically then what that corresponds
+to
+
+108
+00:07:03,770 --> 00:07:07,010 
+is representing the sequence as
+
+109
+00:07:07,010 --> 00:07:11,020 
+some love individual turns over as i've
+indicated here
+
+110
+00:07:11,020 --> 00:07:14,430 
+or in terms over general thumb
+
+111
+00:07:14,430 --> 00:07:18,860 
+the song %uh exit K felt the then minus
+K
+
+112
+00:07:18,860 --> 00:07:23,529 
+so that's our strategy the strategy is
+to decompose
+
+113
+00:07:23,529 --> 00:07:26,640 
+an arbitrary sequence into a linear
+combination
+
+114
+00:07:26,640 --> 00:07:30,589 
+or waited too late impulses and here
+
+115
+00:07:30,589 --> 00:07:34,149 
+again is the representation which we
+just
+
+116
+00:07:34,149 --> 00:07:37,149 
+finish generating
+
+117
+00:07:37,149 --> 00:07:41,370 
+now why is this representation useful
+
+118
+00:07:41,370 --> 00:07:46,149 
+it's useful because we now have a
+decomposition at the sequence
+
+119
+00:07:46,149 --> 00:07:49,810 
+as a linear combination all basic
+
+120
+00:07:49,810 --> 00:07:53,089 
+sequences namely that the late impulses
+
+121
+00:07:53,089 --> 00:07:58,089 
+and if we are talking about a linear
+system
+
+122
+00:07:58,089 --> 00:08:04,330 
+the response to that linear combination
+is a linear combination of the responses
+
+123
+00:08:04,330 --> 00:08:08,370 
+so if we denote the response
+
+124
+00:08:08,370 --> 00:08:12,990 
+to with the late in paul's as H+ the
+cave and
+
+125
+00:08:12,990 --> 00:08:16,010 
+then the response to
+
+126
+00:08:16,010 --> 00:08:20,740 
+this general input is what i've
+indicated here
+
+127
+00:08:20,740 --> 00:08:24,669 
+where why event of course is the output
+
+128
+00:08:24,669 --> 00:08:27,890 
+due to the general in protective and
+
+129
+00:08:27,890 --> 00:08:31,000 
+H+ the cave and is the output do
+
+130
+00:08:31,000 --> 00:08:35,169 
+to the late in polls and these are
+simply
+
+131
+00:08:35,169 --> 00:08:40,200 
+the coefficients in the waiting
+
+132
+00:08:40,200 --> 00:08:43,229 
+so for linear system we have
+
+133
+00:08:43,229 --> 00:08:46,330 
+this representation and
+
+134
+00:08:46,330 --> 00:08:50,580 
+if now in addition the system is
+time-invariant
+
+135
+00:08:50,580 --> 00:08:54,080 
+we can in fact relate the outputs
+
+136
+00:08:54,080 --> 00:08:57,279 
+due to these individuals the late in
+polls
+
+137
+00:08:57,279 --> 00:09:00,360 
+specifically if the system is
+time-invariant
+
+138
+00:09:00,360 --> 00:09:04,540 
+then the response to an impulse at the
+time
+
+139
+00:09:04,540 --> 00:09:11,339 
+K is exactly the same as the response to
+an impulse at time 0
+
+140
+00:09:11,339 --> 00:09:15,050 
+shifted over two-time K said another way
+
+141
+00:09:15,050 --> 00:09:18,170 
+h2k a van it simply
+
+142
+00:09:18,170 --> 00:09:22,540 
+80 then minus K where 80
+
+143
+00:09:22,540 --> 00:09:27,140 
+is the response to the system to an
+impulse at an equal 0
+
+144
+00:09:27,140 --> 00:09:30,590 
+and it's generally useful to
+
+145
+00:09:30,590 --> 00:09:33,710 
+rather than carrying around 80 a band
+
+146
+00:09:33,710 --> 00:09:36,800 
+just simply define 80 then
+
+147
+00:09:36,800 --> 00:09:40,120 
+as a chip and which is
+
+148
+00:09:40,120 --> 00:09:45,060 
+the unit sample or unit impulse response
+to the system
+
+149
+00:09:45,060 --> 00:09:48,090 
+and so the consequent then is for
+
+150
+00:09:48,090 --> 00:09:51,340 
+a linear time-invariant system
+
+151
+00:09:51,340 --> 00:09:54,820 
+the output can be expressed as this
+
+152
+00:09:54,820 --> 00:09:58,530 
+some where a true then minus K
+
+153
+00:09:58,530 --> 00:10:03,590 
+is the response to an impulse occurring
+at time n equals K
+
+154
+00:10:03,590 --> 00:10:06,770 
+and this is referred to
+
+155
+00:10:06,770 --> 00:10:10,780 
+as the convolution saw
+
+156
+00:10:10,780 --> 00:10:14,720 
+now we can just to emphasize
+
+157
+00:10:14,720 --> 00:10:21,720 
+how we've going about this let me show
+it from another perspective
+
+158
+00:10:22,020 --> 00:10:26,980 
+we of course have taken the sequence X
+the van
+
+159
+00:10:26,980 --> 00:10:30,080 
+we have decomposed that as
+
+160
+00:10:30,080 --> 00:10:35,950 
+a linear combination out these waited
+the late impulses
+
+161
+00:10:35,950 --> 00:10:39,170 
+when these are added together those
+correspond
+
+162
+00:10:39,170 --> 00:10:42,810 
+to the original sequence active and
+
+163
+00:10:42,810 --> 00:10:46,290 
+if this in polls for example
+
+164
+00:10:46,290 --> 00:10:49,410 
+generates a response
+
+165
+00:10:49,410 --> 00:10:54,020 
+which is exit 0 times a chip and we're a
+tremendous the response
+
+166
+00:10:54,020 --> 00:10:57,680 
+to unit in polls at an equal 0
+
+167
+00:10:57,680 --> 00:11:01,590 
+and the second one the late generates
+the delayed
+
+168
+00:11:01,590 --> 00:11:05,690 
+waited response and the third one
+similarly
+
+169
+00:11:05,690 --> 00:11:09,000 
+and we generate these individual
+responses
+
+170
+00:11:09,000 --> 00:11:13,120 
+these are all added together and it that
+linear combination
+
+171
+00:11:13,120 --> 00:11:16,180 
+that forms the final output
+
+172
+00:11:16,180 --> 00:11:19,150 
+so that's really kind of the way we're
+thinking about it we have a general
+
+173
+00:11:19,150 --> 00:11:20,510 
+sequence
+
+174
+00:11:20,510 --> 00:11:24,170 
+we're thinking love each individual
+sample
+
+175
+00:11:24,170 --> 00:11:28,240 
+individually each one of those pops the
+system
+
+176
+00:11:28,240 --> 00:11:31,620 
+and because the linearity the response
+is the sum
+
+177
+00:11:31,620 --> 00:11:34,660 
+for those individual responses
+
+178
+00:11:34,660 --> 00:11:38,220 
+well thats what happens in discrete-time
+and
+
+179
+00:11:38,220 --> 00:11:43,060 
+pretty much the same strategy works in
+continuous-time
+
+180
+00:11:43,060 --> 00:11:46,310 
+a particular
+
+181
+00:11:46,310 --> 00:11:49,870 
+we can begin in continuous-time
+
+182
+00:11:49,870 --> 00:11:54,010 
+with the notion 0 decomposing
+
+183
+00:11:54,010 --> 00:11:57,570 
+a continuous-time signal into
+
+184
+00:11:57,570 --> 00:12:02,030 
+succession love are bitterly narrow
+rectangles
+
+185
+00:12:02,030 --> 00:12:05,630 
+and as these rectangles is the with the
+rectangles goes
+
+186
+00:12:05,630 --> 00:12:09,080 
+0 the approximation gets better and
+
+187
+00:12:09,080 --> 00:12:13,210 
+essentially what's going to happen is
+that you to those individual rectangles
+
+188
+00:12:13,210 --> 00:12:17,350 
+as they get narrower and narrower
+correspond more and more
+
+189
+00:12:17,350 --> 00:12:21,970 
+to an impulse well let me show you what
+I mean
+
+190
+00:12:21,970 --> 00:12:26,960 
+here we have a continue with time signal
+
+191
+00:12:26,960 --> 00:12:30,040 
+and I've approximated it
+
+192
+00:12:30,040 --> 00:12:33,550 
+by staircase
+
+193
+00:12:33,550 --> 00:12:36,680 
+so in Athens I can't think of this
+
+194
+00:12:36,680 --> 00:12:39,960 
+as individual rectangles
+
+195
+00:12:39,960 --> 00:12:43,750 
+a fight associated with the height the
+continuous curve
+
+196
+00:12:43,750 --> 00:12:47,460 
+and so i've indicated that down below
+here for example
+
+197
+00:12:47,460 --> 00:12:51,980 
+is the impulse corresponding to the
+rectangle between
+
+198
+00:12:51,980 --> 00:12:56,110 
+people's -2 dealt in people's minds
+felker
+
+199
+00:12:56,110 --> 00:12:59,370 
+here's the one from minus felt that 20
+
+200
+00:12:59,370 --> 00:13:03,190 
+and as we continue on down we get
+
+201
+00:13:03,190 --> 00:13:08,800 
+impulses or rather rectangles from
+success the park to the way for
+
+202
+00:13:08,800 --> 00:13:12,300 
+now let's look specifically at the
+
+203
+00:13:12,300 --> 00:13:17,720 
+rectangle for example starting at zero
+and ending at Delta
+
+204
+00:13:17,720 --> 00:13:22,220 
+and the amplitude of it is exit Delta
+
+205
+00:13:22,220 --> 00:13:25,310 
+and so
+
+206
+00:13:25,310 --> 00:13:29,570 
+what we have actually this should be
+exit 0
+
+207
+00:13:29,570 --> 00:13:32,970 
+and so not be just correct that
+
+208
+00:13:32,970 --> 00:13:36,160 
+here that sex is zero and so
+
+209
+00:13:36,160 --> 00:13:40,029 
+we have a rectangle a fight exit 0
+
+210
+00:13:40,029 --> 00:13:43,140 
+and recall the function that I defined
+last time
+
+211
+00:13:43,140 --> 00:13:46,360 
+as dealt this the capital Delta p
+
+212
+00:13:46,360 --> 00:13:50,120 
+which had height1 over Delta and with
+dealt
+
+213
+00:13:50,120 --> 00:13:54,110 
+so multiply finally by this last little
+Delta
+
+214
+00:13:54,110 --> 00:13:57,410 
+then this is a representation for
+
+215
+00:13:57,410 --> 00:14:00,529 
+the rectangle that i've shown there now
+
+216
+00:14:00,529 --> 00:14:04,320 
+there's a little bit about you were
+there too kinda track through
+
+217
+00:14:04,320 --> 00:14:08,630 
+but what we're really doing is just
+simply representing this
+
+218
+00:14:08,630 --> 00:14:13,820 
+in terms the rectangles what I want to
+do is describing each rectangle
+
+219
+00:14:13,820 --> 00:14:18,410 
+as in terms that function dealt with the
+bell 30
+
+220
+00:14:18,410 --> 00:14:22,500 
+which in the limit then becomes an
+impulse well so extract that
+
+221
+00:14:22,500 --> 00:14:25,779 
+through a little further
+
+222
+00:14:25,779 --> 00:14:28,800 
+when we have that linear combination
+
+223
+00:14:28,800 --> 00:14:32,670 
+then were saying that x50 can be
+represented
+
+224
+00:14:32,670 --> 00:14:36,130 
+by Osama's I indicate here
+
+225
+00:14:36,130 --> 00:14:39,310 
+which I can then
+
+226
+00:14:39,310 --> 00:14:46,310 
+right more generally in this form just
+indicating that this is an infinite sum
+
+227
+00:14:46,620 --> 00:14:50,760 
+we now want to take the limit as Delta
+goes to zero
+
+228
+00:14:50,760 --> 00:14:54,470 
+and his daughter goes to zero notice
+
+229
+00:14:54,470 --> 00:14:59,400 
+that this term becomes are bitterly
+narrow
+
+230
+00:14:59,400 --> 00:15:02,790 
+this goes to our impulse function and
+this of course
+
+231
+00:15:02,790 --> 00:15:06,360 
+goes to exit Towne and in fact
+
+232
+00:15:06,360 --> 00:15:09,440 
+in the limit some out this form
+
+233
+00:15:09,440 --> 00:15:13,279 
+is exactly the way an integral is the
+point
+
+234
+00:15:13,279 --> 00:15:16,580 
+so we have an expression for wire T
+
+235
+00:15:16,580 --> 00:15:20,370 
+in terms of an impulse function their I
+have to admit
+
+236
+00:15:20,370 --> 00:15:23,550 
+is a little bit have detailed the kinda
+focus on
+
+237
+00:15:23,550 --> 00:15:28,290 
+at your leisure but this is the general
+load the strategy
+
+238
+00:15:28,290 --> 00:15:31,830 
+so what we have now is and integral
+
+239
+00:15:31,830 --> 00:15:36,650 
+tell that tells us how except he can be
+described
+
+240
+00:15:36,650 --> 00:15:39,720 
+as a thong or linear combination
+
+241
+00:15:39,720 --> 00:15:43,089 
+involving in polls
+
+242
+00:15:43,089 --> 00:15:48,150 
+this bottom equation by the way is often
+referred to as the sifting integral
+
+243
+00:15:48,150 --> 00:15:53,160 
+in essence what it says is that if I
+take a time function exit tea and put it
+
+244
+00:15:53,160 --> 00:15:54,720 
+through that integral
+
+245
+00:15:54,720 --> 00:15:57,970 
+the impulse as did dipped by
+
+246
+00:15:57,970 --> 00:16:02,029 
+generates X-eighty all over again
+
+247
+00:16:02,029 --> 00:16:05,060 
+now at first glance what it could look
+like
+
+248
+00:16:05,060 --> 00:16:08,339 
+is that we've taken a time function X 50
+
+249
+00:16:08,339 --> 00:16:12,450 
+and proceeded to represented in a very
+complicated way
+
+250
+00:16:12,450 --> 00:16:16,730 
+interns have itself and one could ask
+her why bother doing that
+
+251
+00:16:16,730 --> 00:16:19,730 
+and the reason going back to what r
+
+252
+00:16:19,730 --> 00:16:23,070 
+strategy was is that
+
+253
+00:16:23,070 --> 00:16:26,690 
+what we want to do is exploit
+
+254
+00:16:26,690 --> 00:16:30,040 
+the property lovely area so
+
+255
+00:16:30,040 --> 00:16:34,000 
+by describing a time function
+
+256
+00:16:34,000 --> 00:16:37,910 
+as a linear combination have waited too
+late impulses
+
+257
+00:16:37,910 --> 00:16:41,310 
+as in effect we've done through
+
+258
+00:16:41,310 --> 00:16:47,190 
+this some Asian that corresponds to a
+decomposition in terms of impulses
+
+259
+00:16:47,190 --> 00:16:51,000 
+we can now exploit linearity
+
+260
+00:16:51,000 --> 00:16:54,250 
+specifically recognizing that the output
+
+261
+00:16:54,250 --> 00:16:57,980 
+have a linear system is this some
+
+262
+00:16:57,980 --> 00:17:02,149 
+or the responses to these individual
+inputs
+
+263
+00:17:02,149 --> 00:17:05,380 
+so with h2k
+
+264
+00:17:05,380 --> 00:17:09,799 
+Delta I love see corresponding to the
+response
+
+265
+00:17:09,799 --> 00:17:13,959 
+to built this adult the T-minus k Delta
+
+266
+00:17:13,959 --> 00:17:18,240 
+and arrested this stop the exit k Delta
+and there's little doubt the
+
+267
+00:17:18,240 --> 00:17:22,520 
+are basically scale factors for a linear
+system
+
+268
+00:17:22,520 --> 00:17:25,600 
+then if the input is expressed in this
+form
+
+269
+00:17:25,600 --> 00:17:28,799 
+the output is expressed in this form
+
+270
+00:17:28,799 --> 00:17:31,909 
+again taking the limit is Delta goes to
+zero
+
+271
+00:17:31,909 --> 00:17:35,429 
+by definition this corresponds to an
+integral
+
+272
+00:17:35,429 --> 00:17:38,870 
+and it the integral that we indicated
+that I indicate here
+
+273
+00:17:38,870 --> 00:17:42,399 
+with H+ the tower T corresponding to
+
+274
+00:17:42,399 --> 00:17:45,490 
+the impulse response
+
+275
+00:17:45,490 --> 00:17:48,590 
+due to an impulse occurring at
+
+276
+00:17:48,590 --> 00:17:52,730 
+time town now again we can do
+
+277
+00:17:52,730 --> 00:17:55,990 
+the same thing a in particular
+
+278
+00:17:55,990 --> 00:18:00,429 
+if the system is time-invariant then the
+response to each of these the late
+
+279
+00:18:00,429 --> 00:18:02,110 
+impulses
+
+280
+00:18:02,110 --> 00:18:05,980 
+is simply at the late version up the
+impulse response
+
+281
+00:18:05,980 --> 00:18:10,160 
+and so we can relate these individual
+terms
+
+282
+00:18:10,160 --> 00:18:15,170 
+and in particular than the response to
+an impulse occurring at time t cloth
+
+283
+00:18:15,170 --> 00:18:16,480 
+towel
+
+284
+00:18:16,480 --> 00:18:21,020 
+it's simply the response to an impulse
+occurring at time 0
+
+285
+00:18:21,020 --> 00:18:24,570 
+shifted over to the time origin town
+
+286
+00:18:24,570 --> 00:18:29,610 
+and again as we did before but dropped
+the subscript 80
+
+287
+00:18:29,610 --> 00:18:32,860 
+so 80 love the
+
+288
+00:18:32,860 --> 00:18:36,400 
+will simply defined as a trip to the
+
+289
+00:18:36,400 --> 00:18:39,750 
+and what we're left with when we do that
+
+290
+00:18:39,750 --> 00:18:44,390 
+is the description over linear
+time-invariant system
+
+291
+00:18:44,390 --> 00:18:47,880 
+through this integral which tells us
+
+292
+00:18:47,880 --> 00:18:51,120 
+how the output is related to
+
+293
+00:18:51,120 --> 00:18:54,990 
+the input and two the impulse response
+
+294
+00:18:54,990 --> 00:18:58,390 
+again let's just quickly look at this
+
+295
+00:18:58,390 --> 00:19:03,840 
+from another perspective as we did in
+discrete-time
+
+296
+00:19:03,840 --> 00:19:07,080 
+recall that what we've done is to take
+the
+
+297
+00:19:07,080 --> 00:19:11,240 
+continuous function decomposed it in
+terms
+
+298
+00:19:11,240 --> 00:19:14,340 
+%uh rectangles and then
+
+299
+00:19:14,340 --> 00:19:17,490 
+each of these rectangles generates
+
+300
+00:19:17,490 --> 00:19:22,000 
+its individual response
+
+301
+00:19:22,000 --> 00:19:27,020 
+and then these individual responses are
+added together
+
+302
+00:19:27,020 --> 00:19:30,150 
+and as we go through that process
+
+303
+00:19:30,150 --> 00:19:33,230 
+the chorus there's a process whereby
+
+304
+00:19:33,230 --> 00:19:36,670 
+we let the approximation go to the
+
+305
+00:19:36,670 --> 00:19:40,910 
+to the representation over smooth talker
+
+306
+00:19:40,910 --> 00:19:44,880 
+now again I stress that their is
+certainly
+
+307
+00:19:44,880 --> 00:19:48,760 
+paramount to kinda examined carefully
+there
+
+308
+00:19:48,760 --> 00:19:53,250 
+but it's important to also reflect on
+what we've done which
+
+309
+00:19:53,250 --> 00:19:57,120 
+is really pretty significant well we've
+managed to accomplish
+
+310
+00:19:57,120 --> 00:20:01,750 
+is to exploit the properties linear
+ready in time invariance
+
+311
+00:20:01,750 --> 00:20:06,270 
+so that the system could be represented
+
+312
+00:20:06,270 --> 00:20:09,850 
+interns only over its response to
+
+313
+00:20:09,850 --> 00:20:15,150 
+and in polls at time 0 so for a linear
+time-invariant system quite amazingly
+
+314
+00:20:15,150 --> 00:20:16,030 
+actually
+
+315
+00:20:16,030 --> 00:20:21,380 
+if you know its response to an impulse
+at equal 0 or 10 equal 0 depending on
+
+316
+00:20:21,380 --> 00:20:24,400 
+discrete or continuous time then in fact
+
+317
+00:20:24,400 --> 00:20:28,020 
+through the convolution some in
+discrete-time or the convolution
+
+318
+00:20:28,020 --> 00:20:29,760 
+integral in continuous-time
+
+319
+00:20:29,760 --> 00:20:36,130 
+you can generate the response to an
+arbitrary input
+
+320
+00:20:36,130 --> 00:20:39,820 
+let me just introduced a small amount
+have
+
+321
+00:20:39,820 --> 00:20:43,690 
+notation again reminding you
+
+322
+00:20:43,690 --> 00:20:48,429 
+all her the convolution some in the
+discrete-time case
+
+323
+00:20:48,429 --> 00:20:51,720 
+which looks as i've indicated here this
+summer
+
+324
+00:20:51,720 --> 00:20:54,980 
+exit Khon minus K
+
+325
+00:20:54,980 --> 00:20:59,910 
+will have the requirement to making such
+frequent reference
+
+326
+00:20:59,910 --> 00:21:03,140 
+to convolution dead it can be any and
+
+327
+00:21:03,140 --> 00:21:07,120 
+to notation we represented as I have
+here with an asterisk
+
+328
+00:21:07,120 --> 00:21:10,340 
+and so X a van with the asterisk
+
+329
+00:21:10,340 --> 00:21:15,520 
+a trip and means r denotes the
+convolution affects a van with a chip
+
+330
+00:21:15,520 --> 00:21:16,670 
+and
+
+331
+00:21:16,670 --> 00:21:21,240 
+and correspondingly in the
+continuous-time case
+
+332
+00:21:21,240 --> 00:21:24,980 
+we have the convolution integral in
+which
+
+333
+00:21:24,980 --> 00:21:29,230 
+here is the third thing in to grow as we
+talked about representing exit the
+
+334
+00:21:29,230 --> 00:21:34,630 
+interns or itself hour as a linear
+combination of the late impulses
+
+335
+00:21:34,630 --> 00:21:38,040 
+and here we have the convolution
+integral and again
+
+336
+00:21:38,040 --> 00:21:41,970 
+will use the asterisk to denote
+convolution
+
+337
+00:21:41,970 --> 00:21:46,370 
+now there's a lot about convolution
+
+338
+00:21:46,370 --> 00:21:50,190 
+that we want to talk about it their
+properties of convolution which tell us
+
+339
+00:21:50,190 --> 00:21:51,120 
+about properties
+
+340
+00:21:51,120 --> 00:21:54,410 
+linear time-invariant systems also
+
+341
+00:21:54,410 --> 00:21:57,520 
+it's important to focus on the mechanics
+
+342
+00:21:57,520 --> 00:22:02,049 
+or implementing accomplish in in other
+words understanding and generating some
+
+343
+00:22:02,049 --> 00:22:03,809 
+fluency and insight
+
+344
+00:22:03,809 --> 00:22:07,660 
+into what these particulars
+
+345
+00:22:07,660 --> 00:22:11,130 
+some an integral expressions me
+
+346
+00:22:11,130 --> 00:22:14,600 
+so let's first look at discrete-time
+convolution
+
+347
+00:22:14,600 --> 00:22:19,200 
+and examine more specifically what in
+essence
+
+348
+00:22:19,200 --> 00:22:26,010 
+some tells us to do in terms of
+manipulating the sequences
+
+349
+00:22:26,010 --> 00:22:29,299 
+so and returning to the
+
+350
+00:22:29,299 --> 00:22:32,510 
+expression for the
+
+351
+00:22:32,510 --> 00:22:36,809 
+convolutions Tom as I show here
+
+352
+00:22:36,809 --> 00:22:40,620 
+some love exit K a true then minus
+
+353
+00:22:40,620 --> 00:22:44,770 
+K let's focused in on an example
+
+354
+00:22:44,770 --> 00:22:47,770 
+where we choose active and as a unit
+
+355
+00:22:47,770 --> 00:22:51,960 
+step and a chip and as Arial exponential
+
+356
+00:22:51,960 --> 00:22:56,090 
+times the unit step so with the quick
+fix a van
+
+357
+00:22:56,090 --> 00:22:59,559 
+is as they indicate here
+
+358
+00:22:59,559 --> 00:23:04,500 
+sequence a true fan is an exponential
+for positive time in zero for negative
+
+359
+00:23:04,500 --> 00:23:08,830 
+time so we have active and in a tube and
+
+360
+00:23:08,830 --> 00:23:12,460 
+but now let's look back at the equation
+and
+
+361
+00:23:12,460 --> 00:23:15,929 
+let me stress that what we want is not
+
+362
+00:23:15,929 --> 00:23:20,340 
+excessive and nature then we want exit K
+
+363
+00:23:20,340 --> 00:23:24,660 
+because we're going to some over K and
+not a trip K
+
+364
+00:23:24,660 --> 00:23:27,980 
+but a chip and minus K
+
+365
+00:23:27,980 --> 00:23:31,640 
+so we have then from
+
+366
+00:23:31,640 --> 00:23:35,700 
+expand its straightforward to generate
+exit K at that
+
+367
+00:23:35,700 --> 00:23:39,570 
+simply changing the index it's a nation
+
+368
+00:23:39,570 --> 00:23:44,500 
+and what's a true then minus K well what
+they two-minus K
+
+369
+00:23:44,500 --> 00:23:49,150 
+H A minus K is huka flipped over
+
+370
+00:23:49,150 --> 00:23:52,850 
+so hip this is white
+
+371
+00:23:52,850 --> 00:23:57,150 
+8 UK looks like than
+
+372
+00:23:57,150 --> 00:24:00,809 
+this is what a2 n my SK looks like
+
+373
+00:24:00,809 --> 00:24:05,700 
+and in essence why it the operation of
+convolution
+
+374
+00:24:05,700 --> 00:24:09,700 
+or the mechanics of convolution tells us
+to do
+
+375
+00:24:09,700 --> 00:24:12,860 
+is to take the sequence HO
+
+376
+00:24:12,860 --> 00:24:19,049 
+and minus K which is a check minus k
+position with its origin and cake balls
+
+377
+00:24:19,049 --> 00:24:20,340 
+and
+
+378
+00:24:20,340 --> 00:24:24,090 
+and multiply this sequence by this
+sequence
+
+379
+00:24:24,090 --> 00:24:29,780 
+and some the product from K equals minus
+infinity plus infinity
+
+380
+00:24:29,780 --> 00:24:35,059 
+so if we were to compute for example
+
+381
+00:24:35,059 --> 00:24:38,100 
+the output at an equal 0
+
+382
+00:24:38,100 --> 00:24:42,620 
+as I positioned this sequence here this
+is that an equal 0
+
+383
+00:24:42,620 --> 00:24:46,030 
+I would take this and multiply it by
+this and some
+
+384
+00:24:46,030 --> 00:24:49,640 
+from minus infinity plus infinity or
+
+385
+00:24:49,640 --> 00:24:53,520 
+for an equal one I would position it
+here frank with two outs with position
+
+386
+00:24:53,520 --> 00:24:55,450 
+it here at center
+
+387
+00:24:55,450 --> 00:24:58,450 
+well you can kinda see what the idea is
+
+388
+00:24:58,450 --> 00:25:02,650 
+let's look at this a little more
+dynamically and see it
+
+389
+00:25:02,650 --> 00:25:05,780 
+in fact how one sequence fly past the
+other
+
+390
+00:25:05,780 --> 00:25:10,750 
+and how the output why I have an build
+up to
+
+391
+00:25:10,750 --> 00:25:14,960 
+the correct answer
+
+392
+00:25:14,960 --> 00:25:18,090 
+so the input they were considering is a
+step input
+
+393
+00:25:18,090 --> 00:25:23,740 
+which I show here and the impulse
+response that we welcome all this with
+
+394
+00:25:23,740 --> 00:25:27,250 
+is a decaying exponential now
+
+395
+00:25:27,250 --> 00:25:31,309 
+to form the convolution we want the
+product %uh exit K
+
+396
+00:25:31,309 --> 00:25:34,890 
+not with a chip K but with a chip and
+minus K
+
+397
+00:25:34,890 --> 00:25:37,890 
+corresponding to taking a chief K and
+
+398
+00:25:37,890 --> 00:25:41,850 
+reflecting at about the origin and then
+shifting it appropriately
+
+399
+00:25:41,850 --> 00:25:46,230 
+so here we see HR then minus K for an
+equal to 0
+
+400
+00:25:46,230 --> 00:25:50,400 
+namely H minus K and now a true
+
+401
+00:25:50,400 --> 00:25:53,520 
+one minus K which will show next is this
+
+402
+00:25:53,520 --> 00:25:57,669 
+shifted to the right by one point
+
+403
+00:25:57,669 --> 00:26:00,700 
+here we have a 2-1 minus K
+
+404
+00:26:00,700 --> 00:26:07,419 
+shifting to the right by one more point
+is a trip to minus K
+
+405
+00:26:07,419 --> 00:26:12,740 
+shifting again to the right will have
+ages 3 minus K
+
+406
+00:26:12,740 --> 00:26:16,700 
+and now let's shift back to the left
+
+407
+00:26:16,700 --> 00:26:20,380 
+until and is negative and
+
+408
+00:26:20,380 --> 00:26:25,460 
+then will begin the convolution so
+here's an equal 0
+
+409
+00:26:25,460 --> 00:26:30,250 
+any cause -1 any cause -2
+
+410
+00:26:30,250 --> 00:26:35,590 
+and and it was minus-3 now to form the
+convolution we want the product
+
+411
+00:26:35,590 --> 00:26:39,610 
+exit k with a true then minus K song
+from
+
+412
+00:26:39,610 --> 00:26:42,890 
+minus infinity plus infinity and
+
+413
+00:26:42,890 --> 00:26:48,140 
+for and negative that product is zero
+and therefore the result the convolution
+
+414
+00:26:48,140 --> 00:26:49,440 
+is zero
+
+415
+00:26:49,440 --> 00:26:53,020 
+as we shift to the right will build up
+the convolution
+
+416
+00:26:53,020 --> 00:26:57,070 
+and the result the convolution will be
+shown on the bottom trace
+
+417
+00:26:57,070 --> 00:27:00,100 
+so we begin the process
+
+418
+00:27:00,100 --> 00:27:03,679 
+with and negative and here we have any
+calls -1
+
+419
+00:27:03,679 --> 00:27:09,190 
+at n equals 0 we get our first 90
+contribution
+
+420
+00:27:09,190 --> 00:27:14,799 
+now as we ship further to the right
+corresponding to increasing N
+
+421
+00:27:14,799 --> 00:27:18,020 
+we will accumulate more and more
+
+422
+00:27:18,020 --> 00:27:21,360 
+turns in the psalm and the convolution
+
+423
+00:27:21,360 --> 00:27:25,020 
+will build up in particular for this
+example
+
+424
+00:27:25,020 --> 00:27:28,950 
+the result to the convolution increases
+monotonically
+
+425
+00:27:28,950 --> 00:27:33,860 
+asymptotically approaching a constant
+and that constant in fact
+
+426
+00:27:33,860 --> 00:27:37,090 
+is just simply the accumulation love
+
+427
+00:27:37,090 --> 00:27:44,090 
+the values under the exponential
+
+428
+00:27:48,779 --> 00:27:53,169 
+now let's carry out the convolution this
+time with an input which is a
+
+429
+00:27:53,169 --> 00:27:55,600 
+rectangular pulses that have a step
+input
+
+430
+00:27:55,600 --> 00:27:59,429 
+again the same impulse response namely
+the King exponential
+
+431
+00:27:59,429 --> 00:28:03,640 
+and so we want to begin with HR then
+minus K
+
+432
+00:28:03,640 --> 00:28:08,049 
+again with and negative shown here and
+again with any negative
+
+433
+00:28:08,049 --> 00:28:11,460 
+there are no 90 turns in the product
+
+434
+00:28:11,460 --> 00:28:16,539 
+and so the convolution for and negative
+will be zero as it was in the previous
+
+435
+00:28:16,539 --> 00:28:17,080 
+case
+
+436
+00:28:17,080 --> 00:28:22,789 
+again on the bottom trace will show the
+result of the convolution as the impulse
+
+437
+00:28:22,789 --> 00:28:23,520 
+response
+
+438
+00:28:23,520 --> 00:28:28,380 
+slides along at any cost 0 we get our
+first 90 term
+
+439
+00:28:28,380 --> 00:28:31,909 
+and as in increases passed
+
+440
+00:28:31,909 --> 00:28:35,490 
+0 we will begin to generate an output
+
+441
+00:28:35,490 --> 00:28:40,360 
+basically the same as the output that we
+generated with a step input
+
+442
+00:28:40,360 --> 00:28:44,620 
+until the impulse response
+
+443
+00:28:44,620 --> 00:28:48,950 
+reaches a point where as we slide
+further
+
+444
+00:28:48,950 --> 00:28:53,289 
+we slide outside the interval where the
+rectangle is non-zero
+
+445
+00:28:53,289 --> 00:28:58,330 
+so when we slide one point further from
+what shown here
+
+446
+00:28:58,330 --> 00:29:01,940 
+the output will now DK
+
+447
+00:29:01,940 --> 00:29:05,450 
+corresponding to the fact dead the
+
+448
+00:29:05,450 --> 00:29:08,740 
+impulse responses sliding outside
+
+449
+00:29:08,740 --> 00:29:12,419 
+the interval in which the input is
+non-zero
+
+450
+00:29:12,419 --> 00:29:19,419 
+and so on the bottom trace we now see
+the result that the convolution
+
+451
+00:29:20,470 --> 00:29:23,030 
+okay so what
+
+452
+00:29:23,030 --> 00:29:26,150 
+you've seen then is an example
+
+453
+00:29:26,150 --> 00:29:29,990 
+love discrete-time convolution let's now
+
+454
+00:29:29,990 --> 00:29:34,520 
+look at an example love continuous-time
+convolution
+
+455
+00:29:34,520 --> 00:29:39,220 
+and as you might expect continuous-time
+convolution operates in
+
+456
+00:29:39,220 --> 00:29:43,850 
+exactly the same way continuous-time
+convolution
+
+457
+00:29:43,850 --> 00:29:47,060 
+we have be expression again
+
+458
+00:29:47,060 --> 00:29:50,230 
+y'at is an integral with
+
+459
+00:29:50,230 --> 00:29:54,000 
+now except now NHL t minus
+
+460
+00:29:54,000 --> 00:29:58,140 
+now it had exactly the same kinda
+perform
+
+461
+00:29:58,140 --> 00:30:02,210 
+as we had previously for
+
+462
+00:30:02,210 --> 00:30:06,610 
+discrete-time convolution and and in
+fact the mechanics
+
+463
+00:30:06,610 --> 00:30:09,690 
+0 the continuous-time convolution are
+identical
+
+464
+00:30:09,690 --> 00:30:15,320 
+so here Misar example with X 50 equal to
+unity
+
+465
+00:30:15,320 --> 00:30:22,320 
+step and 850 now a real exponential time
+two units that I show
+
+466
+00:30:23,150 --> 00:30:27,350 
+here x50 which is the unit step function
+
+467
+00:30:27,350 --> 00:30:30,900 
+here we have a gypsy
+
+468
+00:30:30,900 --> 00:30:34,630 
+which is an exponential for positive
+time
+
+469
+00:30:34,630 --> 00:30:38,690 
+and 0 for negative time now
+
+470
+00:30:38,690 --> 00:30:42,000 
+again looking back at the expression
+
+471
+00:30:42,000 --> 00:30:46,210 
+work on pollution it's not accept either
+we want
+
+472
+00:30:46,210 --> 00:30:49,570 
+its except now that we want and it's not
+
+473
+00:30:49,570 --> 00:30:55,180 
+H all tea or a chip how that we want it
+850
+
+474
+00:30:55,180 --> 00:30:59,710 
+minus now we plan to multiply these
+together
+
+475
+00:30:59,710 --> 00:31:03,230 
+and integrate over the variable town
+
+476
+00:31:03,230 --> 00:31:07,080 
+and that gives us the output at any
+given time
+
+477
+00:31:07,080 --> 00:31:10,580 
+if we wanted at another time we change
+the value
+
+478
+00:31:10,580 --> 00:31:13,880 
+the as an argument inside this integral
+
+479
+00:31:13,880 --> 00:31:17,510 
+so here we have exit T
+
+480
+00:31:17,510 --> 00:31:22,460 
+here we have a trip to you which isn't
+quite what we wanted
+
+481
+00:31:22,460 --> 00:31:25,810 
+here we have except now and that's fine
+its just
+
+482
+00:31:25,810 --> 00:31:30,100 
+X-eighty with T relabel this panel and
+now
+
+483
+00:31:30,100 --> 00:31:33,800 
+what is 850 minus can now
+
+484
+00:31:33,800 --> 00:31:37,040 
+well here's a chip panel
+
+485
+00:31:37,040 --> 00:31:40,310 
+and if we simply turn that over
+
+486
+00:31:40,310 --> 00:31:46,080 
+here is 850 -10 and a trip T-minus now
+
+487
+00:31:46,080 --> 00:31:49,460 
+is position then at now
+
+488
+00:31:49,460 --> 00:31:54,430 
+equal to P and as we change the value to
+the
+
+489
+00:31:54,430 --> 00:32:01,130 
+to change the position this signal and
+now we multiply
+
+490
+00:32:01,130 --> 00:32:06,090 
+these two together and integrate from
+minus infinity Department Kennedy
+
+491
+00:32:06,090 --> 00:32:11,430 
+whip 850 minus now positioned at the
+appropriate value with T
+
+492
+00:32:11,430 --> 00:32:14,440 
+well
+
+493
+00:32:14,440 --> 00:32:19,390 
+again its best really to see this
+example and get the notion
+
+494
+00:32:19,390 --> 00:32:24,640 
+love seek signal being flipped and the
+to think not flying past each other
+
+495
+00:32:24,640 --> 00:32:27,920 
+multiplying in integrating by
+
+496
+00:32:27,920 --> 00:32:32,260 
+looking at it dynamically and observing
+how the answer build-up
+
+497
+00:32:32,260 --> 00:32:35,470 
+again the input that
+
+498
+00:32:35,470 --> 00:32:40,190 
+we consider is a step input and again we
+use an impulse response
+
+499
+00:32:40,190 --> 00:32:44,290 
+which is a decaying exponential and
+
+500
+00:32:44,290 --> 00:32:47,290 
+to form the convolution we want the
+product
+
+501
+00:32:47,290 --> 00:32:51,460 
+love accept an hour not with a chipped
+out but with a chip T-minus
+
+502
+00:32:51,460 --> 00:32:54,630 
+now so we want HFT time reversed
+
+503
+00:32:54,630 --> 00:32:58,550 
+and then shifted appropriately depending
+on the value with T
+
+504
+00:32:58,550 --> 00:33:02,510 
+let's first just look at age 50 -10 now
+
+505
+00:33:02,510 --> 00:33:06,120 
+for T positive corresponding to shifting
+
+506
+00:33:06,120 --> 00:33:10,540 
+a chip -10 now to the right and here we
+have
+
+507
+00:33:10,540 --> 00:33:16,210 
+TV increasing here
+
+508
+00:33:16,210 --> 00:33:19,570 
+is TV decreasing and we
+
+509
+00:33:19,570 --> 00:33:23,280 
+we want to begin the convolution with T
+negative
+
+510
+00:33:23,280 --> 00:33:26,890 
+corresponding to shifting H A minus
+towel
+
+511
+00:33:26,890 --> 00:33:32,030 
+to the left now to form the convolution
+we want the product if these two
+
+512
+00:33:32,030 --> 00:33:35,980 
+and pretty negative there are no 90
+
+513
+00:33:35,980 --> 00:33:39,600 
+contributions to the integral
+
+514
+00:33:39,600 --> 00:33:43,440 
+and so the convolution will be 0 party
+less than zero
+
+515
+00:33:43,440 --> 00:33:48,090 
+and the bottom trace we show the results
+of the convolution
+
+516
+00:33:48,090 --> 00:33:51,470 
+here for T negative
+
+517
+00:33:51,470 --> 00:33:58,470 
+and pretty less than zero we will
+continue to have zero in the convolution
+
+518
+00:33:58,500 --> 00:34:01,850 
+now as TV increases past
+
+519
+00:34:01,850 --> 00:34:05,920 
+0 we begin to get some 90 contribution
+
+520
+00:34:05,920 --> 00:34:10,030 
+in the product indicated by the fact
+that the convolution
+
+521
+00:34:10,030 --> 00:34:13,780 
+the result to the convolution starts to
+build-up
+
+522
+00:34:13,780 --> 00:34:17,730 
+and as see increases further
+
+523
+00:34:17,730 --> 00:34:21,370 
+we will get more and more 90
+contribution
+
+524
+00:34:21,370 --> 00:34:24,420 
+in the in a grand and so
+
+525
+00:34:24,420 --> 00:34:27,760 
+the resulted the convolution will be
+
+526
+00:34:27,760 --> 00:34:32,530 
+a monotonically increasing function for
+this particular example
+
+527
+00:34:32,530 --> 00:34:35,880 
+which asymptotically approaches a
+constant
+
+528
+00:34:35,880 --> 00:34:38,890 
+and that constant will be proportional
+
+529
+00:34:38,890 --> 00:34:43,300 
+to the area under the impulse response
+because that the fact that work
+
+530
+00:34:43,300 --> 00:34:44,180 
+involving
+
+531
+00:34:44,180 --> 00:34:51,180 
+with the step input
+
+532
+00:34:59,270 --> 00:35:02,839 
+now let's carry out the convolution with
+an input which is
+
+533
+00:35:02,839 --> 00:35:07,810 
+a rectangular Paul's again an impulse
+response which is an exponential
+
+534
+00:35:07,810 --> 00:35:11,970 
+and so to form the convolution we want
+except now with a2
+
+535
+00:35:11,970 --> 00:35:16,099 
+T-minus towel H A T minus now shown here
+for TE
+
+536
+00:35:16,099 --> 00:35:19,800 
+negative and again to form the
+convolution we take
+
+537
+00:35:19,800 --> 00:35:23,349 
+the integral all the product if these
+two
+
+538
+00:35:23,349 --> 00:35:26,710 
+which again will be 0 for
+
+539
+00:35:26,710 --> 00:35:31,099 
+T less than zero so the bottom trace
+shows the result of the convolution
+
+540
+00:35:31,099 --> 00:35:35,380 
+here shown is zero and it will continue
+to be 0
+
+541
+00:35:35,380 --> 00:35:40,010 
+until T becomes positive at which point
+we build up
+
+542
+00:35:40,010 --> 00:35:43,910 
+some 90 turn
+
+543
+00:35:43,910 --> 00:35:48,930 
+in the in a grant now as we slide
+further
+
+544
+00:35:48,930 --> 00:35:53,050 
+until the impulse response
+
+545
+00:35:53,050 --> 00:35:56,680 
+shifts outside the interval in which the
+polls
+
+546
+00:35:56,680 --> 00:36:00,520 
+is 90 the output will build up
+
+547
+00:36:00,520 --> 00:36:04,569 
+but here we've now begun to leave that
+interval
+
+548
+00:36:04,569 --> 00:36:08,430 
+and so the output will start to BK
+exponentially
+
+549
+00:36:08,430 --> 00:36:11,700 
+and as the impulse response
+
+550
+00:36:11,700 --> 00:36:15,000 
+slides further and further corresponding
+to
+
+551
+00:36:15,000 --> 00:36:19,099 
+increasing see then the output
+
+552
+00:36:19,099 --> 00:36:23,190 
+will DK exponentially representing the
+fact
+
+553
+00:36:23,190 --> 00:36:26,640 
+that their is less and less area
+
+554
+00:36:26,640 --> 00:36:30,470 
+in the product love except now
+
+555
+00:36:30,470 --> 00:36:35,109 
+and a chief T-minus now and
+asymptotically
+
+556
+00:36:35,109 --> 00:36:41,619 
+this output will then approach 0 okay so
+
+557
+00:36:41,619 --> 00:36:46,829 
+you've seen convolution a you see the
+derivation of convolution and kinda the
+
+558
+00:36:46,829 --> 00:36:47,859 
+graphical
+
+559
+00:36:47,859 --> 00:36:51,640 
+representation convolution finally
+
+560
+00:36:51,640 --> 00:36:55,630 
+let's work again with these two examples
+
+561
+00:36:55,630 --> 00:36:59,440 
+and let's go through those two examples
+analytically
+
+562
+00:36:59,440 --> 00:37:03,170 
+so that we finally see how analytically
+
+563
+00:37:03,170 --> 00:37:07,079 
+the result develops for those same
+examples
+
+564
+00:37:07,079 --> 00:37:11,089 
+well we have
+
+565
+00:37:11,089 --> 00:37:15,490 
+first the discrete-time case and let's
+take our discrete-time example
+
+566
+00:37:15,490 --> 00:37:19,839 
+and and in general the convolution some
+
+567
+00:37:19,839 --> 00:37:23,910 
+is as I indicated here so yes
+
+568
+00:37:23,910 --> 00:37:27,569 
+is just our expression from before which
+is
+
+569
+00:37:27,569 --> 00:37:32,990 
+the convolution some and if we take our
+two examples
+
+570
+00:37:32,990 --> 00:37:36,540 
+the example love and it put which is
+
+571
+00:37:36,540 --> 00:37:40,589 
+unit step and an impulse response
+
+572
+00:37:40,589 --> 00:37:45,200 
+which is a real exponential multiplied
+by a unit step
+
+573
+00:37:45,200 --> 00:37:48,310 
+we have then
+
+574
+00:37:48,310 --> 00:37:51,750 
+replacing exit K by
+
+575
+00:37:51,750 --> 00:37:55,980 
+what we know the input to be an HR then
+minus K
+
+576
+00:37:55,980 --> 00:38:00,770 
+by what we know the impulse response to
+be the output is
+
+577
+00:38:00,770 --> 00:38:05,660 
+the expression that we have here now
+
+578
+00:38:05,660 --> 00:38:08,970 
+in this expression and you'll see this
+
+579
+00:38:08,970 --> 00:38:13,150 
+of very generally and with the more
+complicated examples
+
+580
+00:38:13,150 --> 00:38:17,869 
+when you look at the tax as
+
+581
+00:38:17,869 --> 00:38:21,160 
+you go to evaluate these expressions
+
+582
+00:38:21,160 --> 00:38:26,190 
+generally what happens is that the
+signals have different analytical
+
+583
+00:38:26,190 --> 00:38:29,280 
+forms in different regions and that's a
+fact
+
+584
+00:38:29,280 --> 00:38:32,339 
+what we have here your particular let's
+
+585
+00:38:32,339 --> 00:38:37,890 
+look at the thumb and well we observed
+first the ball
+
+586
+00:38:37,890 --> 00:38:40,980 
+is that the
+
+587
+00:38:40,980 --> 00:38:44,050 
+limits on this song are going to be
+modified
+
+588
+00:38:44,050 --> 00:38:47,819 
+depending on where this unit step
+
+589
+00:38:47,819 --> 00:38:51,710 
+is zero and non-zero in particular
+
+590
+00:38:51,710 --> 00:38:56,030 
+if we first consider what will turn out
+to be the simple case
+
+591
+00:38:56,030 --> 00:39:00,730 
+namely and less than zero for and less
+than zero
+
+592
+00:39:00,730 --> 00:39:04,829 
+this unit step is
+
+593
+00:39:04,829 --> 00:39:08,800 
+0 for K
+
+594
+00:39:08,800 --> 00:39:12,430 
+greater than an and with an less than
+zero
+
+595
+00:39:12,430 --> 00:39:16,310 
+that means that this unit step never
+
+596
+00:39:16,310 --> 00:39:19,720 
+is 90 for K
+
+597
+00:39:19,720 --> 00:39:22,900 
+positive on the other hand
+
+598
+00:39:22,900 --> 00:39:27,040 
+this unit step is never 90
+
+599
+00:39:27,040 --> 00:39:31,400 
+or is always 0 for k negative
+
+600
+00:39:31,400 --> 00:39:35,619 
+let me just stressed that by looking at
+the particular grabs
+
+601
+00:39:35,619 --> 00:39:40,880 
+here is the unit step you FK
+
+602
+00:39:40,880 --> 00:39:45,080 
+here is the units that you then minus K
+
+603
+00:39:45,080 --> 00:39:51,349 
+and for and less than zero so that this
+point comes before this point
+
+604
+00:39:51,349 --> 00:39:55,030 
+the product these two is equal to 0
+
+605
+00:39:55,030 --> 00:39:58,530 
+that means there is no overlap between
+these two terms
+
+606
+00:39:58,530 --> 00:40:01,589 
+and so it says that why I have an
+
+607
+00:40:01,589 --> 00:40:05,960 
+the output is 0 for and less than 0
+
+608
+00:40:05,960 --> 00:40:09,089 
+well that was an easy one a her
+
+609
+00:40:09,089 --> 00:40:12,830 
+bring greater than 0 it's not quite a
+straightforward
+
+610
+00:40:12,830 --> 00:40:16,339 
+as coming out with the answers 0 so now
+
+611
+00:40:16,339 --> 00:40:21,220 
+let's look at what happens when the two
+units steps overlap
+
+612
+00:40:21,220 --> 00:40:25,089 
+and this would correspond to
+
+613
+00:40:25,089 --> 00:40:30,530 
+what i've labeled here as interval to
+namely for and greater than 0
+
+614
+00:40:30,530 --> 00:40:34,040 
+if we just look back at the
+
+615
+00:40:34,040 --> 00:40:39,160 
+summation that we had the summation now
+
+616
+00:40:39,160 --> 00:40:43,060 
+corresponds to this unit step
+
+617
+00:40:43,060 --> 00:40:48,319 
+and this unit step having some overlap
+
+618
+00:40:48,319 --> 00:40:52,520 
+so for interval to
+
+619
+00:40:52,520 --> 00:40:56,530 
+corresponding to an greater than 0 we
+have
+
+620
+00:40:56,530 --> 00:41:00,200 
+you have K the unit step
+
+621
+00:41:00,200 --> 00:41:03,580 
+we have you love and minus K
+
+622
+00:41:03,580 --> 00:41:07,240 
+which is a unit step going backward in
+time
+
+623
+00:41:07,240 --> 00:41:10,550 
+by which extends
+
+624
+00:41:10,550 --> 00:41:13,930 
+for positive values have an
+
+625
+00:41:13,930 --> 00:41:17,540 
+if we think about multiplying these two
+together
+
+626
+00:41:17,540 --> 00:41:21,810 
+we will get in the product unity
+
+627
+00:41:21,810 --> 00:41:24,839 
+for what values at K well
+
+628
+00:41:24,839 --> 00:41:29,109 
+for K starting at zero corresponding to
+one of the units steps
+
+629
+00:41:29,109 --> 00:41:33,349 
+ending at hand corresponding to the
+other units that
+
+630
+00:41:33,349 --> 00:41:36,970 
+so we have an overlap between these
+
+631
+00:41:36,970 --> 00:41:40,500 
+for k equal to 0 et cetera
+
+632
+00:41:40,500 --> 00:41:44,369 
+up through the value and
+
+633
+00:41:44,369 --> 00:41:49,680 
+right now that means that in terms of
+the original some
+
+634
+00:41:49,680 --> 00:41:53,680 
+we can get rid of the units steps
+involved by simply changing the limits
+
+635
+00:41:53,680 --> 00:41:55,190 
+on the some
+
+636
+00:41:55,190 --> 00:41:59,480 
+and the limits now are from zero
+
+637
+00:41:59,480 --> 00:42:02,490 
+to an the term
+
+638
+00:42:02,490 --> 00:42:05,730 
+out for to the end minus K
+
+639
+00:42:05,730 --> 00:42:10,640 
+we had before you with Cain you then
+minus K and that disappeared because
+
+640
+00:42:10,640 --> 00:42:14,770 
+because we don't with that simply by
+modifying the limits
+
+641
+00:42:14,770 --> 00:42:18,220 
+we now pull out the term output to the N
+
+642
+00:42:18,220 --> 00:42:22,130 
+because the summation is on canine and
+so we can
+
+643
+00:42:22,130 --> 00:42:25,160 
+simply poll that term
+
+644
+00:42:25,160 --> 00:42:28,540 
+out at the some
+
+645
+00:42:28,540 --> 00:42:31,670 
+and we now have out but the minus K
+
+646
+00:42:31,670 --> 00:42:36,339 
+which we can write rewrite as alpha to
+the minus 12 PK
+
+647
+00:42:36,339 --> 00:42:40,160 
+and the upshot of all of this is that
+why I have an
+
+648
+00:42:40,160 --> 00:42:44,040 
+now we can really express as output to
+the end
+
+649
+00:42:44,040 --> 00:42:47,349 
+its own from 0 to end up outfit to the
+-1
+
+650
+00:42:47,349 --> 00:42:51,900 
+to the K well question is how do we
+
+651
+00:42:51,900 --> 00:42:54,920 
+evaluate that and
+
+652
+00:42:54,920 --> 00:42:58,349 
+it's essentially corresponds to a finite
+number
+
+653
+00:42:58,349 --> 00:43:01,790 
+turns in a geometric series and that bio
+
+654
+00:43:01,790 --> 00:43:07,250 
+by the way is estimation that will recur
+over and over and over and over again
+
+655
+00:43:07,250 --> 00:43:11,930 
+and it's one that you should right down
+right on your back pocket right in the
+
+656
+00:43:11,930 --> 00:43:13,400 
+palm of your hand
+
+657
+00:43:13,400 --> 00:43:18,060 
+or whatever it takes to remember it what
+you'll see is that that will recur
+
+658
+00:43:18,060 --> 00:43:22,460 
+can more or less the throughout the
+course
+
+659
+00:43:22,460 --> 00:43:26,040 
+and so it's one worth remembering and in
+particular
+
+660
+00:43:26,040 --> 00:43:29,560 
+what the storm love a geometric
+
+661
+00:43:29,560 --> 00:43:33,010 
+series is is what i've indicated here
+
+662
+00:43:33,010 --> 00:43:38,400 
+we have this song from 0 to our they did
+to the K
+
+663
+00:43:38,400 --> 00:43:42,490 
+and it's one minus beta to the are plus
+one
+
+664
+00:43:42,490 --> 00:43:46,020 
+this is one more than the
+
+665
+00:43:46,020 --> 00:43:51,700 
+upper limit on the summation and in the
+denominator is one minus beta
+
+666
+00:43:51,700 --> 00:43:55,160 
+so this equation is important
+
+667
+00:43:55,160 --> 00:44:00,080 
+is no point in attempting to derive it
+however you get to it it's important
+
+668
+00:44:00,080 --> 00:44:03,540 
+to retain okay well
+
+669
+00:44:03,540 --> 00:44:07,540 
+we can now use that some Asian
+
+670
+00:44:07,540 --> 00:44:10,630 
+in the expression that we just the
+ballot
+
+671
+00:44:10,630 --> 00:44:15,080 
+and so let's proceed to a value a tax on
+clothes
+
+672
+00:44:15,080 --> 00:44:18,890 
+form so we now know go back
+
+673
+00:44:18,890 --> 00:44:22,380 
+to the expression that we just worked
+out
+
+674
+00:44:22,380 --> 00:44:26,859 
+why event is output to the end its own
+from 0 to N
+
+675
+00:44:26,859 --> 00:44:31,990 
+output to the -1 to the K
+
+676
+00:44:31,990 --> 00:44:35,339 
+this plays the role a beta in a turn
+that I just
+
+677
+00:44:35,339 --> 00:44:38,339 
+in the expression and I just presented
+
+678
+00:44:38,339 --> 00:44:41,630 
+and so using
+
+679
+00:44:41,630 --> 00:44:47,040 
+bat using that result we can rewrite
+this summation as i indicate here
+
+680
+00:44:47,040 --> 00:44:51,190 
+and the final result that we end up with
+
+681
+00:44:51,190 --> 00:44:54,299 
+after a certain amount of algebra is
+
+682
+00:44:54,299 --> 00:44:59,080 
+why I have an equal to one minus output
+to the end plus one
+
+683
+00:44:59,080 --> 00:45:02,089 
+divided by one minus out for
+
+684
+00:45:02,089 --> 00:45:07,650 
+and let me just kinda vindicate with a
+few dots here
+
+685
+00:45:07,650 --> 00:45:14,029 
+dead there is a certain amount of
+algebra required in going from
+
+686
+00:45:14,029 --> 00:45:16,150 
+this step to this step and
+
+687
+00:45:16,150 --> 00:45:20,319 
+and I I'd like to leave you with the
+phone an opportunity you doing at your
+
+688
+00:45:20,319 --> 00:45:20,859 
+leisure
+
+689
+00:45:20,859 --> 00:45:25,390 
+okay well so so the expression we have
+now
+
+690
+00:45:25,390 --> 00:45:28,819 
+for wired and is why I have an
+
+691
+00:45:28,819 --> 00:45:33,250 
+equal to one myself up to be enforced
+one divided by one minus now for
+
+692
+00:45:33,250 --> 00:45:38,599 
+that bring greater than 0 we found out
+previously that it was 0 for and less
+
+693
+00:45:38,599 --> 00:45:39,589 
+than 0
+
+694
+00:45:39,589 --> 00:45:43,670 
+and finally if we were to plot this what
+we would
+
+695
+00:45:43,670 --> 00:45:47,250 
+get is the graph that I indicate here
+
+696
+00:45:47,250 --> 00:45:52,130 
+the first non-zero value occurs at an
+equal 0
+
+697
+00:45:52,130 --> 00:45:56,490 
+and it has a height 1 and then
+
+698
+00:45:56,490 --> 00:46:00,520 
+the next 90 value at one and this has a
+height
+
+699
+00:46:00,520 --> 00:46:04,599 
+a one plus alpha and this is one place
+now for
+
+700
+00:46:04,599 --> 00:46:08,270 
+on South squared and and
+
+701
+00:46:08,270 --> 00:46:12,569 
+the sequence continues on like that
+
+702
+00:46:12,569 --> 00:46:16,470 
+an asymptotically approaches as n goes
+to infinity
+
+703
+00:46:16,470 --> 00:46:20,359 
+asymptotically approaches one over one
+minute South for
+
+704
+00:46:20,359 --> 00:46:24,240 
+which is consistent with the algebraic
+expression
+
+705
+00:46:24,240 --> 00:46:29,039 
+that we have that we develop and
+obviously of course
+
+706
+00:46:29,039 --> 00:46:33,450 
+is also consistent with the movie
+alright so that's our
+
+707
+00:46:33,450 --> 00:46:37,069 
+discrete-time example which we kinda
+went through graphically
+
+708
+00:46:37,069 --> 00:46:41,380 
+with the transparencies and we went
+through graphically with the movie you
+
+709
+00:46:41,380 --> 00:46:43,010 
+know we've gone through analytically
+
+710
+00:46:43,010 --> 00:46:46,690 
+now let's look analytically at
+
+711
+00:46:46,690 --> 00:46:50,010 
+the continuous-time example which pretty
+much
+
+712
+00:46:50,010 --> 00:46:53,140 
+close in the same way as we've just gone
+through
+
+713
+00:46:53,140 --> 00:46:56,569 
+so again we have
+
+714
+00:46:56,569 --> 00:46:59,700 
+the convolution integral which is
+
+715
+00:46:59,700 --> 00:47:04,329 
+the integral indicated at the top
+
+716
+00:47:04,329 --> 00:47:09,470 
+and our example you recall was with
+accepting as a unit step
+
+717
+00:47:09,470 --> 00:47:12,960 
+and a trip to the as
+
+718
+00:47:12,960 --> 00:47:16,630 
+an exponential times the units that so
+
+719
+00:47:16,630 --> 00:47:20,920 
+when we substitute those then this then
+corresponds to
+
+720
+00:47:20,920 --> 00:47:26,190 
+exit to the and this corresponds to 850
+-10 now
+
+721
+00:47:26,190 --> 00:47:30,710 
+and again we have the same
+
+722
+00:47:30,710 --> 00:47:34,789 
+issue more last which is that inside
+that integral
+
+723
+00:47:34,789 --> 00:47:38,890 
+there are two steps one of them going
+forward in time and one of them going
+
+724
+00:47:38,890 --> 00:47:42,670 
+backward in time and we need to examine
+
+725
+00:47:42,670 --> 00:47:46,589 
+when they overlap in when they don't
+when they don't overlap the product of
+
+726
+00:47:46,589 --> 00:47:47,849 
+course is zero
+
+727
+00:47:47,849 --> 00:47:51,980 
+and there's no point doing any
+integration because the anagram 20
+
+728
+00:47:51,980 --> 00:47:56,150 
+so if we track it through we have again
+
+729
+00:47:56,150 --> 00:47:59,710 
+interval one which is to us$10,000
+
+730
+00:47:59,710 --> 00:48:03,410 
+pretty less than zero this unit step
+
+731
+00:48:03,410 --> 00:48:06,539 
+which only begins at: equals 0
+
+732
+00:48:06,539 --> 00:48:09,799 
+a tally cool 0 and this unit step
+
+733
+00:48:09,799 --> 00:48:13,119 
+which is zero by the time
+
+734
+00:48:13,119 --> 00:48:17,940 
+how gets up to TN beyond party less than
+zero
+
+735
+00:48:17,940 --> 00:48:21,170 
+is no overlap between
+
+736
+00:48:21,170 --> 00:48:24,349 
+the unit step going forward in time
+
+737
+00:48:24,349 --> 00:48:28,420 
+and the units that going backward in
+time and consequently
+
+738
+00:48:28,420 --> 00:48:31,849 
+the in a grand is equal to 0 and
+consequently
+
+739
+00:48:31,849 --> 00:48:37,859 
+the output is equal to 0 okay
+
+740
+00:48:37,859 --> 00:48:41,099 
+now we can
+
+741
+00:48:41,099 --> 00:48:44,230 
+likewise looked at the interval where
+
+742
+00:48:44,230 --> 00:48:50,420 
+the to unit steps to overlap and in that
+case what happens again is that the
+
+743
+00:48:50,420 --> 00:48:51,240 
+overlap
+
+744
+00:48:51,240 --> 00:48:55,750 
+in essence the units that tells us gives
+us a range
+
+745
+00:48:55,750 --> 00:49:00,549 
+on the integration and in particular
+
+746
+00:49:00,549 --> 00:49:04,410 
+the two-step overlap 20 is greater than
+0
+
+747
+00:49:04,410 --> 00:49:07,950 
+from how equal 0
+
+748
+00:49:07,950 --> 00:49:10,990 
+two towers both T so
+
+749
+00:49:10,990 --> 00:49:14,920 
+critical to party greater than 0
+
+750
+00:49:14,920 --> 00:49:18,490 
+again of course we have in this
+expression
+
+751
+00:49:18,490 --> 00:49:22,559 
+this product love this unit step
+
+752
+00:49:22,559 --> 00:49:25,960 
+and this unit step is equal to 1
+
+753
+00:49:25,960 --> 00:49:29,539 
+in this rain
+
+754
+00:49:29,539 --> 00:49:32,900 
+and so that allows us then
+
+755
+00:49:32,900 --> 00:49:36,289 
+to change the limits on the integral
+
+756
+00:49:36,289 --> 00:49:39,509 
+mister from minus infinity two plus
+infinity
+
+757
+00:49:39,509 --> 00:49:45,650 
+we know that the in a grand is non-zero
+only over this range
+
+758
+00:49:45,650 --> 00:49:50,970 
+looking at this in to grow we can now
+pull out the term which corresponds to
+
+759
+00:49:50,970 --> 00:49:54,609 
+you need to the -80 just as we pulled
+out
+
+760
+00:49:54,609 --> 00:49:58,279 
+a term in the discrete-time case
+
+761
+00:49:58,279 --> 00:50:01,890 
+and we noticed in the integral we have
+eat to the
+
+762
+00:50:01,890 --> 00:50:08,690 
+-8 -10 now so that gives us the integral
+from 0 to TV to the eight-hour
+
+763
+00:50:08,690 --> 00:50:11,710 
+and if we perform at integration
+
+764
+00:50:11,710 --> 00:50:15,119 
+we end up with this expression
+
+765
+00:50:15,119 --> 00:50:19,940 
+and finally multiplying this by either
+the -80
+
+766
+00:50:19,940 --> 00:50:24,140 
+we have for y'at pretty greater than 0
+
+767
+00:50:24,140 --> 00:50:27,660 
+the algebraic expression that I
+
+768
+00:50:27,660 --> 00:50:31,890 
+indicated on the bottom
+
+769
+00:50:31,890 --> 00:50:35,089 
+so so we had worked out
+
+770
+00:50:35,089 --> 00:50:38,200 
+to less than zero and we come out 10
+
+771
+00:50:38,200 --> 00:50:41,740 
+we work out take greater than 0 and we
+come out
+
+772
+00:50:41,740 --> 00:50:46,640 
+with this algebraic expression
+
+773
+00:50:46,640 --> 00:50:51,520 
+and if we plot this out to rate
+expression as a function of time
+
+774
+00:50:51,520 --> 00:50:54,609 
+we find that what it corresponds to is
+
+775
+00:50:54,609 --> 00:50:58,069 
+an exponential behavior starting at zero
+
+776
+00:50:58,069 --> 00:51:02,539 
+and exponentially heading asymptotically
+
+777
+00:51:02,539 --> 00:51:08,779 
+forward the bad you one over it
+
+778
+00:51:08,779 --> 00:51:12,569 
+okay now we've gone through these
+examples several ways than one is
+
+779
+00:51:12,569 --> 00:51:14,520 
+analytically
+
+780
+00:51:14,520 --> 00:51:19,660 
+in order to develop a feel and fluency
+for convolution
+
+781
+00:51:19,660 --> 00:51:24,029 
+it's absolutely essential to work
+through a variety of examples
+
+782
+00:51:24,029 --> 00:51:29,049 
+both understanding them graphically and
+understanding them as we did hear
+
+783
+00:51:29,049 --> 00:51:34,109 
+analytically and you'll have an
+opportunity to do that
+
+784
+00:51:34,109 --> 00:51:39,029 
+through the problems that I suggested in
+the video course manual
+
+785
+00:51:39,029 --> 00:51:42,789 
+in the next lecture what will turn to
+
+786
+00:51:42,789 --> 00:51:46,119 
+are some general properties of
+convolution
+
+787
+00:51:46,119 --> 00:51:49,529 
+and show how this rather amazing
+representation
+
+788
+00:51:49,529 --> 00:51:53,890 
+when your time invariant systems in fact
+leads to a variety
+
+789
+00:51:53,890 --> 00:51:57,549 
+%uh properties linear time-invariant
+systems
+
+790
+00:51:57,549 --> 00:52:00,730 
+and will find that convolution its
+
+791
+00:52:00,730 --> 00:52:04,500 
+fairly rich in its properties and what
+this leads to
+
+792
+00:52:04,500 --> 00:52:07,579 
+are some very nice and
+
+793
+00:52:07,579 --> 00:52:10,859 
+desirable and exploitable properties
+
+794
+00:52:10,859 --> 00:52:12,990 
+linear time-invariant systems thank you
+

@@ -1,0 +1,2440 @@
+00:00:06,000 --> 00:00:13,000
+ha the
+ha la
+
+00:00:28,000 --> 00:00:31,000
+the norm
+la norme
+
+00:00:31,000 --> 00:00:38,000
+are
+sont
+
+00:00:42,000 --> 00:00:42,000
+last time
+dernière fois
+
+00:00:42,000 --> 00:00:47,000
+we began the discussion I'll discrete-time processing
+nous avons commencé la discussion, je vais de traitement en temps discret
+
+00:00:47,000 --> 00:00:51,000
+love continuous-time signals and
+amour signaux en temps continu et
+
+00:00:51,000 --> 00:00:54,000
+as a reminder let me review
+comme un rappel permettez-moi de passer en revue
+
+00:00:54,000 --> 00:00:57,000
+the basic notion the idea was
+la notion de base l'idée était
+
+00:00:57,000 --> 00:01:00,000
+dead we convert
+mort nous convertissons
+
+00:01:00,000 --> 00:01:05,000
+from a continuous-time signal to a sequence
+à partir d'un signal de temps continu à une séquence
+
+00:01:05,000 --> 00:01:08,000
+through an operation which I
+à travers une opération qui je
+
+00:01:08,000 --> 00:01:12,000
+represent as a continuous to discrete-time converter
+représenter comme un convertisseur continu à temps discret
+
+00:01:12,000 --> 00:01:17,000
+and then that sequence
+et puis cette séquence
+
+00:01:17,000 --> 00:01:20,000
+is used as the input to
+est utilisé comme entrée pour
+
+00:01:20,000 --> 00:01:24,000
+inappropriate discrete-time system
+inapproprié système à temps discret
+
+00:01:24,000 --> 00:01:28,000
+and after appropriate discrete-time processing
+et après le traitement à temps discret approprié
+
+00:01:28,000 --> 00:01:31,000
+that sequence is converted
+cette séquence est convertie
+
+00:01:31,000 --> 00:01:35,000
+back to a continuous-time signal
+en un signal en temps continu
+
+00:01:35,000 --> 00:01:38,000
+through an operation which i-label as
+par une opération qui i-étiquette
+
+00:01:38,000 --> 00:01:42,000
+a discrete to continuous-time converter
+un discret convertisseur en temps continu
+
+00:01:42,000 --> 00:01:45,000
+now in the lecture
+maintenant dans la conférence
+
+00:01:45,000 --> 00:01:49,000
+last time we carried out some analysis
+dernière fois que nous avons effectué une analyse
+
+00:01:49,000 --> 00:01:53,000
+which related 4s the spectra
+qui portait 4s spectres
+
+00:01:53,000 --> 00:01:56,000
+in the first step this operation namely
+dans la première étape de cette opération à savoir
+
+00:01:56,000 --> 00:02:00,000
+in the transformation from a continuous-time
+dans la transformation à partir d'un temps continu
+
+00:02:00,000 --> 00:02:04,000
+signal to sequence and
+signaler à la séquence et
+
+00:02:04,000 --> 00:02:07,000
+let me by the way draw your attention to the fact
+Permettez-moi d'ailleurs attirer votre attention sur le fait
+
+00:02:07,000 --> 00:02:10,000
+that in the real world this operation
+que dans le monde réel de cette opération
+
+00:02:10,000 --> 00:02:13,000
+is essentially implemented
+est essentiellement mis en œuvre
+
+00:02:13,000 --> 00:02:18,000
+by what you would typically label as an analog to digital converter
+par ce que vous voulez généralement étiqueter comme un convertisseur analogique-numérique
+
+00:02:18,000 --> 00:02:22,000
+if in fact the discrete-time processing
+si, en fait, le traitement en temps discret
+
+00:02:22,000 --> 00:02:26,000
+is being done digitally now it's important to emphasize that it's not
+qui se fait numériquement maintenant il est important de souligner que ce n'est pas
+
+00:02:26,000 --> 00:02:28,000
+exactly what an analog to digital converter
+exactement ce qu'est un convertisseur analogique-numérique
+
+00:02:28,000 --> 00:02:33,000
+does but in some sense at least you should think
+ne, mais dans un certain sens, à moins que vous devriez penser
+
+00:02:33,000 --> 00:02:36,000
+love this mapping from continuous time to discrete-time
+aimer cette cartographie de temps continu à temps discret
+
+00:02:36,000 --> 00:02:39,000
+in very much the same way there one would think an analog to digital
+dans beaucoup de la même manière il on pourrait penser un convertisseur analogique à numérique
+
+00:02:39,000 --> 00:02:40,000
+converter
+convertisseur
+
+00:02:40,000 --> 00:02:45,000
+and the mapping back and is corresponds
+et la cartographie de retour et correspond
+
+00:02:45,000 --> 00:02:48,000
+in some sense to a what would happen
+dans un certain sens à ce qui se passerait une
+
+00:02:48,000 --> 00:02:52,000
+with a digital to analog converter well
+avec un convertisseur numérique-analogique et le convertisseur
+
+00:02:52,000 --> 00:02:56,000
+let me review what is involved in the mapping from
+permettez-moi de passer en revue ce qui est impliqué dans la cartographie de
+
+00:02:56,000 --> 00:03:00,000
+the continuous-time signal to the sequence and
+le signal de temps continu pour la séquence et
+
+00:03:00,000 --> 00:03:03,000
+let me stress again that this operation
+permettez-moi de souligner une fois encore que cette opération
+
+00:03:03,000 --> 00:03:07,000
+is basically in the continues to discrete-time conversion
+est essentiellement dans la conversion continue à temps discret
+
+00:03:07,000 --> 00:03:10,000
+a two-step process in
+un processus en deux étapes
+
+00:03:10,000 --> 00:03:14,000
+the first part of the process the continuous-time signal
+la première partie du procédé, le signal de temps continu
+
+00:03:14,000 --> 00:03:18,000
+is modulated with an impulse train
+est modulé avec un train d'impulsions
+
+00:03:18,000 --> 00:03:23,000
+where the period of the imposed strain is capital T
+où la période de la déformation imposée est la capitale T
+
+00:03:23,000 --> 00:03:26,000
+and so we have a continuous-time
+et si nous avons un temps continu
+
+00:03:26,000 --> 00:03:30,000
+impose Train Signal which captures
+imposer train de signal qui capture
+
+00:03:30,000 --> 00:03:33,000
+the samples love the original continuous-time signals
+les échantillons aiment les signaux originaux en temps continu
+
+00:03:33,000 --> 00:03:37,000
+that in Paul strain
+que dans la souche Paul
+
+00:03:37,000 --> 00:03:40,000
+is then put through an operation
+est ensuite mis à travers une opération
+
+00:03:40,000 --> 00:03:44,000
+which essentially re labels
+qui re essentiellement étiquettes
+
+00:03:44,000 --> 00:03:48,000
+the samples so that the
+les échantillons de telle sorte que la
+
+00:03:48,000 --> 00:03:51,000
+sample values the impulse areas
+échantillon valorise les domaines d'impulsion
+
+00:03:51,000 --> 00:03:55,000
+are relabeled as sequence values
+sont rebaptisés comme valeurs de séquence
+
+00:03:55,000 --> 00:03:58,000
+and the result of that conversion is then
+et le résultat de cette conversion est alors
+
+00:03:58,000 --> 00:04:03,000
+the sequence X event so the overall process then
+X cas de séquence de sorte que le processus global alors
+
+00:04:03,000 --> 00:04:08,000
+is a sampling process followed by
+est un processus d'échantillonnage suivie
+
+00:04:08,000 --> 00:04:11,000
+what is simply in this box relabeling
+ce qui est simplement dans cette case réétiquetage
+
+00:04:11,000 --> 00:04:14,000
+process and although as I
+processus et, bien que je
+
+00:04:14,000 --> 00:04:19,000
+indicated just a minute ago that is essentially what an analog to digital
+indiqué il ya un instant que c'est essentiellement ce que l'analogique au numérique
+
+00:04:19,000 --> 00:04:20,000
+converter does
+convertisseur ne
+
+00:04:20,000 --> 00:04:25,000
+now like to digital converter doesn't necessarily carry it out
+maintenant comme convertisseur numérique ne signifie pas nécessairement porter pas sur
+
+00:04:25,000 --> 00:04:28,000
+in those two steps but particularly
+dans ces deux étapes, mais surtout
+
+00:04:28,000 --> 00:04:31,000
+in terms love carrying through an analysis
+en termes d'amour mener à bien une analyse
+
+00:04:31,000 --> 00:04:35,000
+thinking of it as a two-step process is particularly convenient
+penser qu'il s'agit d'un processus en deux étapes est particulièrement pratique
+
+00:04:35,000 --> 00:04:40,000
+now we talked last time
+maintenant nous avons parlé la dernière fois
+
+00:04:40,000 --> 00:04:45,000
+about what this mapping from continuous time to discrete-time
+sur ce que cette cartographie de temps continu à temps discret
+
+00:04:45,000 --> 00:04:49,000
+means both in the time domain in terms of the spectra
+des moyens à la fois dans le domaine temporel en termes de spectres
+
+00:04:49,000 --> 00:04:52,000
+and in particular in the time domain we
+et en particulier dans le domaine temporel nous
+
+00:04:52,000 --> 00:04:56,000
+begin with the continuous-time signal
+commencer avec le signal en temps continu
+
+00:04:56,000 --> 00:05:00,000
+which is then samples with an impulse train
+qui est ensuite des échantillons avec un train d'impulsions
+
+00:05:00,000 --> 00:05:03,000
+and converted to a sequence by
+et converti en une séquence par
+
+00:05:03,000 --> 00:05:07,000
+simply generating a sequence whose values
+simplement générer une séquence dont les valeurs
+
+00:05:07,000 --> 00:05:10,000
+are the area is love the impulses
+sont la région, c'est l'amour des impulsions
+
+00:05:10,000 --> 00:05:14,000
+and I stress the fact that what this corresponds to
+et j'insiste sur le fait que ce que cela correspond à
+
+00:05:14,000 --> 00:05:18,000
+essentially is and normalization of the time axis
+est essentiellement et de normalisation de l'axe des temps
+
+00:05:18,000 --> 00:05:23,000
+essentially by dividing the time axis by capital T
+essentiellement par division de l'axe des temps par T majuscule
+
+00:05:23,000 --> 00:05:27,000
+in the frequency-domain then
+dans le domaine fréquentiel puis
+
+00:05:27,000 --> 00:05:31,000
+we had the spectrum of the original signal
+nous avions le spectre du signal original
+
+00:05:31,000 --> 00:05:35,000
+which because that the sampling process is
+qui, du fait que le processus d'échantillonnage est
+
+00:05:35,000 --> 00:05:39,000
+replicated at multiples integer multiples
+répliqué à des multiples entiers multiples
+
+00:05:39,000 --> 00:05:42,000
+all the sampling frequency Omega so badass
+toutes les fréquences d'échantillonnage Omega afin de badass
+
+00:05:42,000 --> 00:05:45,000
+or to pile over capital T
+ou à empiler sur le capital T
+
+00:05:45,000 --> 00:05:49,000
+and then in converting the impulses
+puis en convertissant les impulsions
+
+00:05:49,000 --> 00:05:53,000
+to a sequence we are essentially
+à une séquence nous sommes essentiellement
+
+00:05:53,000 --> 00:05:57,000
+normalizing the frequency axis so that
+la normalisation de l'axe des fréquences de telle sorte que
+
+00:05:57,000 --> 00:06:02,000
+the frequency to pile over capital T gets relabeled is to pie
+la fréquence à empiler sur le capital T se relabeled est à tarte
+
+00:06:02,000 --> 00:06:05,000
+and the resulting discrete-time spectrum looks like
+et le spectre en temps discret résultant ressemble
+
+00:06:05,000 --> 00:06:08,000
+I indicate here which really is
+J'indique ici qui est vraiment
+
+00:06:08,000 --> 00:06:12,000
+nothing more and a frequency scaling
+rien de plus et une mise à l'échelle de fréquence
+
+00:06:12,000 --> 00:06:16,000
+corresponding to the Associated time scaling so the mapping
+correspondant à la mise à l'échelle de temps associée de sorte que la cartographie
+
+00:06:16,000 --> 00:06:20,000
+from the imposed strain spectrum to the discrete-time spectrum
+à partir du spectre de déformation imposée au spectre discret dans le temps
+
+00:06:20,000 --> 00:06:24,000
+corresponds to mapping specified
+correspond à la cartographie spécifiée
+
+00:06:24,000 --> 00:06:29,000
+by capital Omega equal to small make a times capital T
+par le capital Omega égal à petit faire une fois les fonds propres T
+
+00:06:29,000 --> 00:06:33,000
+an equivalent Lee it's the frequency
+un équivalent Lee c'est la fréquence
+
+00:06:33,000 --> 00:06:36,000
+to pile over capital T which is
+à empiler sur le capital T qui est
+
+00:06:36,000 --> 00:06:41,000
+of course the sampling frequency which gets normalized
+bien entendu la fréquence d'échantillonnage qui obtient normalisé
+
+00:06:41,000 --> 00:06:44,000
+to the frequency to pie
+à la fréquence de tarte
+
+00:06:44,000 --> 00:06:47,000
+and so in the frequency domain
+et ainsi dans le domaine des fréquences
+
+00:06:47,000 --> 00:06:51,000
+their is a frequency normalization Associated
+leur est une normalisation de fréquence associée
+
+00:06:51,000 --> 00:06:57,000
+with the fact dead corresponding to this spectrum
+avec le fait morte correspondant à ce spectre
+
+00:06:57,000 --> 00:07:02,000
+is a time sequence or discrete time sequence
+est une séquence de temps ou une séquence de temps discrète
+
+00:07:02,000 --> 00:07:06,000
+as I show previously and a discrete-time sequence
+comme je le montre précédemment et une séquence en temps discret
+
+00:07:06,000 --> 00:07:10,000
+is related to the
+est liée à la
+
+00:07:10,000 --> 00:07:14,000
+original continuous-time signal
+signal original en temps continu
+
+00:07:14,000 --> 00:07:19,000
+through a time normalization in other words
+par une normalisation de temps en d'autres termes
+
+00:07:19,000 --> 00:07:24,000
+these sequence values are simply samples at the continuous-time signal
+ces valeurs de séquence sont simplement des échantillons au signal de temps continu
+
+00:07:24,000 --> 00:07:30,000
+with the time axis we normalized
+avec l'axe de temps nous avons normalisé
+
+00:07:30,000 --> 00:07:34,000
+now what we want to consider this is the conversion from continuous time to
+maintenant ce que nous voulons considérer c'est la conversion de temps continue à
+
+00:07:34,000 --> 00:07:35,000
+discrete-time
+temps discret
+
+00:07:35,000 --> 00:07:39,000
+what we want to consider now is the overall system
+ce que nous voulons examiner maintenant est l'ensemble du système
+
+00:07:39,000 --> 00:07:42,000
+which implements not just the conversion but filtering
+qui met en œuvre non seulement la conversion, mais le filtrage
+
+00:07:42,000 --> 00:07:47,000
+and then coming back onto the conversion back to continuous-time
+et puis de revenir sur la reconversion en temps continu
+
+00:07:47,000 --> 00:07:51,000
+so let's look at the overall system
+nous allons donc regarder à l'ensemble du système
+
+00:07:51,000 --> 00:07:55,000
+and the overall system courses I've
+et les cours d'ensemble du système que j'ai
+
+00:07:55,000 --> 00:07:58,000
+stressed several times in the past consists
+souligné à plusieurs reprises dans le passé consiste
+
+00:07:58,000 --> 00:08:04,000
+love first the sampling process
+l'amour d'abord le processus d'échantillonnage
+
+00:08:04,000 --> 00:08:08,000
+conversion to an impulse train
+conversion à un train d'impulsions
+
+00:08:08,000 --> 00:08:13,000
+and the imposed strain converted to a sequence
+et la déformation imposée converti en une séquence
+
+00:08:13,000 --> 00:08:17,000
+that sequence is then processed
+cette séquence est ensuite traitée
+
+00:08:17,000 --> 00:08:21,000
+through are discrete-time filter
+par filtre sont à temps discret
+
+00:08:21,000 --> 00:08:25,000
+and after the discrete-time processing
+et après le traitement à temps discret
+
+00:08:25,000 --> 00:08:28,000
+the result of that is converted back
+le résultat de ce est reconverti
+
+00:08:28,000 --> 00:08:34,000
+to an impulse train so this resulting process sequence
+à un train d'impulsions si cette séquence de processus résultant
+
+00:08:34,000 --> 00:08:38,000
+is then converted back to an impulse train
+est ensuite reconverti en un train d'impulsions
+
+00:08:38,000 --> 00:08:41,000
+and then finally we carry out the the sampling
+et puis finalement nous nous chargeons de l'échantillonnage
+
+00:08:41,000 --> 00:08:45,000
+process by simply using a low-pass filter
+Procédé simplement en utilisant un filtre passe-bas
+
+00:08:45,000 --> 00:08:50,000
+Associated with the with the cutoff associated with the sampling frequency
+Associé à la coupure avec l'associée à la fréquence d'échantillonnage
+
+00:08:50,000 --> 00:08:53,000
+that we use
+que nous utilisons
+
+00:08:53,000 --> 00:08:57,000
+now typically in a system like that which implements
+maintenant généralement dans un système comme celui qui met en œuvre
+
+00:08:57,000 --> 00:09:00,000
+discrete-time processing continuous-time signals
+signaux à temps continu traitement en temps discret
+
+00:09:00,000 --> 00:09:04,000
+we either we need to ensure in one way or another
+soit nous nous devons nous assurer d'une manière ou d'une autre
+
+00:09:04,000 --> 00:09:08,000
+that the band with love the input is
+que la bande avec amour l'entrée est
+
+00:09:08,000 --> 00:09:12,000
+sufficiently limited so that we avoid aliasing
+suffisamment limité pour que nous évitons aliasing
+
+00:09:12,000 --> 00:09:16,000
+one way to do that is to force it in one way or another or
+une façon de le faire est de le forcer d'une manière ou d'une autre ou
+
+00:09:16,000 --> 00:09:20,000
+simply know that our signal satisfies the band with constrain
+sait tout simplement que notre signal de la bande satisfait avec contrainte
+
+00:09:20,000 --> 00:09:23,000
+although a fairly typical thing to do in addition
+mais une chose assez typique à faire en plus
+
+00:09:23,000 --> 00:09:26,000
+to this sampling process is
+à ce processus d'échantillonnage est
+
+00:09:26,000 --> 00:09:30,000
+to include what is referred to as
+à inclure ce que l'on appelle
+
+00:09:30,000 --> 00:09:35,000
+and anti aliasing filter in other words this is a filter
+et l'anti aliasing en d'autres termes il s'agit d'un filtre
+
+00:09:35,000 --> 00:09:38,000
+that would ban limit the input
+qui prévoyait l'interdiction de limiter l'apport
+
+00:09:38,000 --> 00:09:42,000
+and at least half the sampling frequency
+et au moins la moitié de la fréquence d'échantillonnage
+
+00:09:42,000 --> 00:09:45,000
+so that we r guaranteed and
+de sorte que nous r garanti et
+
+00:09:45,000 --> 00:09:48,000
+that their is no aliasing it's carried out
+que leur a pas aliasing il est effectué
+
+00:09:48,000 --> 00:09:52,000
+in this process and it's important
+dans ce processus et il est important
+
+00:09:52,000 --> 00:09:56,000
+to stress dead in this kinda processing discrete-time processing
+souligner morts dans ce traitement un peu le traitement en temps discret
+
+00:09:56,000 --> 00:10:00,000
+continuous-time signals except in certain
+signaux à temps continu, sauf dans certains
+
+00:10:00,000 --> 00:10:03,000
+special situations its very important
+situations particulières il est très important
+
+00:10:03,000 --> 00:10:06,000
+to avoid aliasing because we're going to want
+pour éviter l'aliasing parce que nous allons vouloir
+
+00:10:06,000 --> 00:10:13,000
+to do a reconstruction after we do the sampling and processing
+pour faire une reconstruction après nous faisons l'échantillonnage et le traitement
+
+00:10:13,000 --> 00:10:17,000
+okay now this is the sequence of steps in the time domain
+bien maintenant c'est la séquence d'étapes dans le domaine temporel
+
+00:10:17,000 --> 00:10:20,000
+let's examine what happens as a consequence is this
+Examinons ce qui se passe comme une conséquence de cette
+
+00:10:20,000 --> 00:10:24,000
+in the frequency domain well
+dans le domaine des fréquences bien
+
+00:10:24,000 --> 00:10:28,000
+let's choose some typeof simple representative spectrum
+nous allons choisir une partie du spectre représentant typeof simples
+
+00:10:28,000 --> 00:10:31,000
+and of course what's important about it is that
+et bien sûr ce qui est important, c'est que
+
+00:10:31,000 --> 00:10:36,000
+the specter that we choose is banned limited or that there's an anti-aliasing
+le spectre que nous choisissons est interdit limitée ou qu'il ya un anti-aliasing
+
+00:10:36,000 --> 00:10:37,000
+filter
+filtre
+
+00:10:37,000 --> 00:10:41,000
+and it's not the shape of course that is critical
+et ce n'est pas la forme de cours qui est essentiel
+
+00:10:41,000 --> 00:10:44,000
+and as we work our way through the system
+et que nous travaillons notre chemin à travers le système
+
+00:10:44,000 --> 00:10:47,000
+this is the continuous-time spectrum
+il s'agit du spectre en temps continu
+
+00:10:47,000 --> 00:10:52,000
+after sampling that spectrum is replicated at
+après l'échantillonnage de ce spectre est reproduit à
+
+00:10:52,000 --> 00:10:56,000
+multiples of the sampling frequency integer multiples the sampling frequency
+multiples de la fréquence d'échantillonnage des multiples entiers de la fréquence d'échantillonnage
+
+00:10:56,000 --> 00:10:57,000
+and so
+et ainsi
+
+00:10:57,000 --> 00:11:01,000
+there would be another one over here and another one over here at cetera
+il y aurait un autre ici et un autre ici à cetera
+
+00:11:01,000 --> 00:11:04,000
+and then in converting to a discrete-time sequence
+et ensuite la conversion en une séquence de temps discret
+
+00:11:04,000 --> 00:11:08,000
+their is The Associated
+leur est à l'Associated
+
+00:11:08,000 --> 00:11:12,000
+frequency normalization so that the sampling frequency
+fréquence de normalisation de sorte que la fréquence d'échantillonnage
+
+00:11:12,000 --> 00:11:15,000
+yes normalized to a frequency
+oui normalisée à une fréquence
+
+00:11:15,000 --> 00:11:20,000
+to pie okay now at that point
+à tarte bien maintenant à ce point
+
+00:11:20,000 --> 00:11:24,000
+where we are in the system
+où nous en sommes dans le système
+
+00:11:24,000 --> 00:11:27,000
+is at this point
+est à ce point
+
+00:11:27,000 --> 00:11:31,000
+so that we've converted to a sequence we now
+de sorte que nous avons converti en une séquence nous maintenant
+
+00:11:31,000 --> 00:11:35,000
+want to carry out some filtering and then after that filtering
+vouloir faire un certain filtrage et puis après que le filtrage
+
+00:11:35,000 --> 00:11:40,000
+convert back to a continuous-time signals
+reconvertir en un signal en temps continu
+
+00:11:40,000 --> 00:11:43,000
+alright so here we are at the
+bien nous voici donc à la
+
+00:11:43,000 --> 00:11:46,000
+spectrum Associated with the
+spectre associé avec le
+
+00:11:46,000 --> 00:11:49,000
+sequence and now
+séquence et maintenant
+
+00:11:49,000 --> 00:11:53,000
+the processing they were carrying out is
+le traitement qu'ils effectuaient est
+
+00:11:53,000 --> 00:11:57,000
+linear time-invariant filtering in the discrete time domain
+filtrage invariant dans le temps linéaire dans le domaine temporel discret
+
+00:11:57,000 --> 00:12:01,000
+and what that corresponds to then is multiplying
+et ce qui correspond à alors se multiplient
+
+00:12:01,000 --> 00:12:06,000
+this spectrum by the filter frequency response and I've chosen
+ce spectre par la réponse en fréquence du filtre et j'ai choisi
+
+00:12:06,000 --> 00:12:10,000
+a particular shape and again it's not the shape that's important to the
+une forme particulière et ce n'est pas la forme qui est important pour le nouveau
+
+00:12:10,000 --> 00:12:11,000
+discussion
+discussion
+
+00:12:11,000 --> 00:12:16,000
+but the fact for example that it has a particular cutoff frequency which will
+mais du fait par exemple qu'il a une fréquence de coupure particulier qui sera
+
+00:12:16,000 --> 00:12:17,000
+kinda track
+suivre un peu
+
+00:12:17,000 --> 00:12:21,000
+as we work through this and so now
+que nous travaillons à cela et maintenant
+
+00:12:21,000 --> 00:12:24,000
+the spectrum of why I have an the output
+le spectre de la raison pour laquelle j'ai une sortie
+
+00:12:24,000 --> 00:12:28,000
+the digital filter is the product this spectrum
+le filtre numérique est le produit de ce spectre
+
+00:12:28,000 --> 00:12:32,000
+and the 4e a transformer frequency response
+le 4e et une réponse en fréquence du transformateur
+
+00:12:32,000 --> 00:12:36,000
+I'll the digital filter
+Je vais le filtre numérique
+
+00:12:36,000 --> 00:12:41,000
+now in working our way through we're going to take the output at the filter
+maintenant à travailler notre chemin à travers nous allons prendre la sortie au niveau du filtre
+
+00:12:41,000 --> 00:12:46,000
+and undo the two-step process so we now want to take that sequence
+et annuler le processus en deux étapes que nous voulons maintenant prendre cette séquence
+
+00:12:46,000 --> 00:12:50,000
+converted to an impulse train and then take then imposed strain
+converti en un train d'impulsions et puis prendre ensuite imposée souche
+
+00:12:50,000 --> 00:12:53,000
+Andy sample through a low-pass filter
+Andy échantillon à travers un filtre passe-bas
+
+00:12:53,000 --> 00:12:59,000
+so here we are now at the output to the digital filter
+nous voici donc maintenant à la sortie du filtre numérique
+
+00:12:59,000 --> 00:13:03,000
+we then convert that to an impulse train well that's really on doing the original
+nous convertissons alors que pour un train et d'impulsion qui est vraiment à faire l'original
+
+00:13:03,000 --> 00:13:05,000
+time normalization
+normalisation de temps
+
+00:13:05,000 --> 00:13:08,000
+and so what that means is that we
+et donc ce que cela signifie, c'est que nous
+
+00:13:08,000 --> 00:13:13,000
+are on doing the frequency normalization in particular
+sont à faire à la normalisation de la fréquence en particulier
+
+00:13:13,000 --> 00:13:16,000
+we're dividing the frequency axis by
+nous divisant l'axe des fréquences par
+
+00:13:16,000 --> 00:13:20,000
+capital T whereas this point
+T majuscule alors que ce point
+
+00:13:20,000 --> 00:13:23,000
+in y Omega was to pie
+en y Omega était à tarte
+
+00:13:23,000 --> 00:13:26,000
+now it's to pile over capital T
+maintenant c'est à empiler sur le capital T
+
+00:13:26,000 --> 00:13:31,000
+what that means is that acquittal and Lee were multiplying this spectrum
+ce que cela signifie, c'est que l'acquittement et Lee multipliaient ce spectre
+
+00:13:31,000 --> 00:13:35,000
+by the frequency response the digital filter
+par la réponse en fréquence du filtre numérique
+
+00:13:35,000 --> 00:13:38,000
+but now linearly scaled in frequency
+mais maintenant linéairement à l'échelle de la fréquence
+
+00:13:38,000 --> 00:13:42,000
+so that will what was a cutoff frequency Omega subsea
+donc ce sera ce qui était un sous-marin de la fréquence de coupure Omega
+
+00:13:42,000 --> 00:13:45,000
+is now a cutoff frequency up Omega subsea
+est maintenant une fréquence de coupure jusqu'à Omega sous-marine
+
+00:13:45,000 --> 00:13:49,000
+divided by capital T so
+divisé par le capital T si
+
+00:13:49,000 --> 00:13:53,000
+now the next step in the process is the reconstructing
+maintenant l'étape suivante du processus est la reconstruction
+
+00:13:53,000 --> 00:13:58,000
+low-pass filter and what that extracts is simply the portion
+filtre passe-bas et ce qui extrait est tout simplement la partie
+
+00:13:58,000 --> 00:14:02,000
+I'll this periodic spectrum around the origin
+Je vais de ce spectre périodique autour de l'origine
+
+00:14:02,000 --> 00:14:06,000
+and so finally and spectrum of the output
+et donc finalement et le spectre de la sortie
+
+00:14:06,000 --> 00:14:10,000
+up the overall system will be the spectrum
+l'ensemble du système sera le spectre
+
+00:14:10,000 --> 00:14:13,000
+of the input multiplied
+de l'entrée multiplié
+
+00:14:13,000 --> 00:14:17,000
+by a frequency response
+par une réponse en fréquence
+
+00:14:17,000 --> 00:14:21,000
+which is the digital filter frequency response
+qui est la réponse en fréquence du filtre numérique
+
+00:14:21,000 --> 00:14:25,000
+frequency scaled by dividing
+fréquence mise à l'échelle en divisant
+
+00:14:25,000 --> 00:14:30,000
+that digital filter frequency axis by capital T
+cet axe numérique de fréquence du filtre par le capital T
+
+00:14:30,000 --> 00:14:34,000
+okay now what we can ask is
+bien maintenant ce que nous pouvons demander est
+
+00:14:34,000 --> 00:14:37,000
+we've got this processing we've converted to discrete-time we've gone
+nous avons ce traitement, nous avons converti à temps discret, nous sommes passés
+
+00:14:37,000 --> 00:14:39,000
+back to continuous-time
+retour à temps continu
+
+00:14:39,000 --> 00:14:42,000
+and one can ask now what acquittal and
+et on peut se demander maintenant ce que l'acquittement et
+
+00:14:42,000 --> 00:14:46,000
+overall continuous-time systems is that correspond to
+l'ensemble des systèmes en temps continu est qui correspondent à
+
+00:14:46,000 --> 00:14:51,000
+in other words if we that of course is a continuous-time system it's a continuous
+en d'autres termes, si nous qui bien sûr est un système en temps continu, il s'agit d'un continu
+
+00:14:51,000 --> 00:14:53,000
+time you put a continuous-time output
+fois que vous mettez une sortie en temps continu
+
+00:14:53,000 --> 00:14:57,000
+and the overall system dan
+et l'ensemble du système dan
+
+00:14:57,000 --> 00:15:01,000
+would be one that would give us exactly the same output spectrum
+serait celui qui nous donnerait exactement le même spectre de sortie
+
+00:15:01,000 --> 00:15:05,000
+as we're getting well what is that well we have
+que nous sommes bien obtenir ce que c'est que bien que nous avons
+
+00:15:05,000 --> 00:15:08,000
+is an output spectrum which is the product
+est un spectre de sortie qui est le produit
+
+00:15:08,000 --> 00:15:14,000
+all the input spectrum and digital filter frequency characteristic
+tout le spectre d'entrée numérique et la caractéristique de fréquence du filtre
+
+00:15:14,000 --> 00:15:18,000
+frequency scale and so in fact
+échelle de fréquence et donc en fait
+
+00:15:18,000 --> 00:15:22,000
+the resulting digital filter I'm sorry continuous-time
+le filtre numérique résultant Je suis désolé en temps continu
+
+00:15:22,000 --> 00:15:26,000
+filter is simply the digital filter
+filtre est tout simplement le filtre numérique
+
+00:15:26,000 --> 00:15:29,000
+with inappropriate frequency scaling
+avec inapproprié échelonnage de la fréquence
+
+00:15:29,000 --> 00:15:34,000
+in other words with the frequency axis divided by capital T
+en d'autres termes avec l'axe de fréquence, divisé par T majuscule
+
+00:15:34,000 --> 00:15:37,000
+so sent another way if
+ainsi envoyé une autre façon si
+
+00:15:37,000 --> 00:15:41,000
+we show here
+nous montrons ici
+
+00:15:41,000 --> 00:15:47,000
+the frequency response or the
+la réponse en fréquence ou l'
+
+00:15:47,000 --> 00:15:50,000
+original digital filter
+Filtre numérique originale
+
+00:15:50,000 --> 00:15:54,000
+then the corresponding continuous-time
+alors le temps continu correspondant
+
+00:15:54,000 --> 00:15:57,000
+filter would be this
+filtre ne serait-ce
+
+00:15:57,000 --> 00:16:00,000
+frequency scaled and then because love
+fréquence mise à l'échelle, puis parce que l'amour
+
+00:16:00,000 --> 00:16:04,000
+The Associated low-pass filtering in the reconstruction
+Le filtrage passe-bas associé à la reconstruction
+
+00:16:04,000 --> 00:16:08,000
+we would select out just one of these periods in particular the portion around
+nous sélectionner sur un seul de ces périodes, en particulier autour de la partie
+
+00:16:08,000 --> 00:16:10,000
+the origin
+l'origine
+
+00:16:10,000 --> 00:16:14,000
+and the essential consequences that is that the corresponding
+et les conséquences essentielles à savoir que le correspondant
+
+00:16:14,000 --> 00:16:17,000
+continuous-time filter then is
+filtre à temps continu est alors
+
+00:16:17,000 --> 00:16:21,000
+given by this and these two are related
+donnée par cette et ces deux sont liés
+
+00:16:21,000 --> 00:16:25,000
+simply by a linear scaling the frequency axis
+simplement par une mise à l'échelle linéaire de l'axe de fréquence
+
+00:16:25,000 --> 00:16:29,000
+and note dead where the digital filter has a cutoff frequency
+et la note morts où le filtre numérique a une fréquence de coupure
+
+00:16:29,000 --> 00:16:32,000
+Omega subsea the continuous-time filter
+Omega Subsea le filtre en temps continu
+
+00:16:32,000 --> 00:16:38,000
+has a cutoff frequency Omega subsea divided by capital T
+a un sous-marin de la fréquence de coupure Omega divisé par le capital T
+
+00:16:38,000 --> 00:16:42,000
+so that's the linear frequency scaling and
+de sorte que c'est la fréquence mise à l'échelle linéaire et
+
+00:16:42,000 --> 00:16:46,000
+by the way plant away for now and will return to this point later
+par la façon dont l'usine loin pour le moment et sera de retour à ce point plus tard
+
+00:16:46,000 --> 00:16:49,000
+plant the way for now the the observation
+planter le chemin pour le moment la l'observation
+
+00:16:49,000 --> 00:16:53,000
+dad even if the digital filter frequency response
+papa, même si la réponse en fréquence du filtre numérique
+
+00:16:53,000 --> 00:16:57,000
+is fixed which we would assume it is
+est fixé qui nous supposons qu'il est
+
+00:16:57,000 --> 00:17:00,000
+by changing the sampling frequency in fact
+en changeant la fréquence d'échantillonnage, en fait,
+
+00:17:00,000 --> 00:17:04,000
+what we're able to do is a fact a linear scaling
+ce que nous pouvons faire est un fait une mise à l'échelle linéaire
+
+00:17:04,000 --> 00:17:09,000
+or the acquittal in continuous-time
+ou l'acquittement en temps continu
+
+00:17:09,000 --> 00:17:12,000
+okay well this is pretty much the process in the analysis
+bien bien c'est à peu près le processus de l'analyse
+
+00:17:12,000 --> 00:17:18,000
+but to highlight a number the issues and emphasize these points
+mais de mettre en évidence un certain nombre des questions et de souligner ces points
+
+00:17:18,000 --> 00:17:22,000
+why I like to do is illustrate
+pourquoi je tiens à faire est d'illustrer
+
+00:17:22,000 --> 00:17:26,000
+somewhat this with a videotape demonstration
+peu ce avec une démonstration de vidéo
+
+00:17:26,000 --> 00:17:32,000
+that in fact was made originally as part of another course a course
+que, en fait, a été fait à l'origine dans le cadre d'un autre cours d'un cours
+
+00:17:32,000 --> 00:17:35,000
+devoted entirely to
+entièrement consacré à
+
+00:17:35,000 --> 00:17:39,000
+digital signal processing which essentially is discrete-time processing
+le traitement du signal numérique qui est essentiellement un traitement en temps discret
+
+00:17:39,000 --> 00:17:43,000
+whether or not it's related to continuous-time signals
+si oui ou non elle est liée à des signaux en temps continu
+
+00:17:43,000 --> 00:17:46,000
+and what I'd like to now focus on
+et ce que je voudrais maintenant me concentrer sur
+
+00:17:46,000 --> 00:17:51,000
+are summer the details of that demonstration
+sont été les détails de cette manifestation
+
+00:17:51,000 --> 00:17:54,000
+in the demonstration the
+dans la démonstration de la
+
+00:17:54,000 --> 00:17:57,000
+specific impulse response there
+réponse impulsion spécifique, il
+
+00:17:57,000 --> 00:18:00,000
+is used for the digital filter
+est utilisé pour le filtre numérique
+
+00:18:00,000 --> 00:18:06,000
+or discrete-time filter is the one that I show here
+ou filtre à temps discret est celui que je montre ici
+
+00:18:06,000 --> 00:18:09,000
+and the Associated
+et l'Associated
+
+00:18:09,000 --> 00:18:13,000
+frequency response is the frequency response
+la réponse en fréquence est la réponse en fréquence
+
+00:18:13,000 --> 00:18:18,000
+love a discrete-time low-pass filter as i indicate below
+aimer un temps discret filtre passe-bas comme je l'indique ci-dessous
+
+00:18:18,000 --> 00:18:24,000
+and the cutoff frequency that filter as i indicate the filter was designed as a
+et la fréquence de coupure de ce filtre qui i indiquent le filtre a été conçue comme un
+
+00:18:24,000 --> 00:18:28,000
+discreet I felt with the cutoff frequency hi over five
+discret je me suis senti à la fréquence de coupure du salut sur cinq
+
+00:18:28,000 --> 00:18:32,000
+and let me just draw your attention to the fact that
+et permettez-moi d'attirer votre attention sur le fait que
+
+00:18:32,000 --> 00:18:35,000
+pie over five is also
+tarte sur cinq est également
+
+00:18:35,000 --> 00:18:39,000
+10 love to pie
+10 amour à tarte
+
+00:18:39,000 --> 00:18:42,000
+and so in fact the digital
+et si, en fait, le numérique
+
+00:18:42,000 --> 00:18:46,000
+for discrete-time filter cutoff frequency is a tenth
+pour temps discret fréquence de coupure du filtre est d'un dixième
+
+00:18:46,000 --> 00:18:49,000
+to pie and as all stress again shortly
+à tarte et comme tout le stress encore peu
+
+00:18:49,000 --> 00:18:52,000
+remember that in the frequency normalization
+rappeler que dans la normalisation de la fréquence
+
+00:18:52,000 --> 00:18:56,000
+or a normalization to pie represents
+ou une normalisation de tarte représente
+
+00:18:56,000 --> 00:19:00,000
+in effect the sampling frequency and so
+en effet la fréquence d'échantillonnage et ainsi
+
+00:19:00,000 --> 00:19:04,000
+the consequence of that is that cutoff frequency really is going to be
+la conséquence en est que la fréquence de coupure très va être
+
+00:19:04,000 --> 00:19:05,000
+associated
+associé
+
+00:19:05,000 --> 00:19:09,000
+with the 10th all the sampling frequency but for now keep in mind that is just
+avec le 10e tout la fréquence d'échantillonnage mais pour l'instant garder à l'esprit qui est juste
+
+00:19:09,000 --> 00:19:10,000
+simply attentive to
+tout simplement attentif à
+
+00:19:10,000 --> 00:19:14,000
+on now the
+sur le maintenant
+
+00:19:14,000 --> 00:19:18,000
+equivalent continuous-time
+en temps continu équivalent
+
+00:19:18,000 --> 00:19:21,000
+system interns are the impulse response
+stagiaires du système sont la réponse impulsionnelle
+
+00:19:21,000 --> 00:19:24,000
+is of course a ban limited interpolation
+est bien sûr une interpolation limitée de l'interdiction
+
+00:19:24,000 --> 00:19:28,000
+love the up the
+l'amour de la la
+
+00:19:28,000 --> 00:19:32,000
+impose response associated with the discrete-time
+imposer réponse associée avec le temps discret
+
+00:19:32,000 --> 00:19:36,000
+filter and in the frequency domain the frequency response
+et un filtrage dans le domaine fréquentiel de la réponse en fréquence
+
+00:19:36,000 --> 00:19:39,000
+is correspondingly a timescale
+est en conséquence un délai
+
+00:19:39,000 --> 00:19:43,000
+and a timescale I'm sorry a frequency scale
+et une échelle de temps je suis désolé une échelle de fréquence
+
+00:19:43,000 --> 00:19:47,000
+version at the frequency response so in fact
+Version à la réponse en fréquence de manière, en fait,
+
+00:19:47,000 --> 00:19:50,000
+in the frequency domain and in the time domain
+dans le domaine des fréquences et dans le domaine temporel
+
+00:19:50,000 --> 00:19:55,000
+related to the continuous-time signal
+en rapport avec le signal de temps continu
+
+00:19:55,000 --> 00:19:58,000
+the Associated impulse response is
+la réponse impulsionnelle associée est
+
+00:19:58,000 --> 00:20:02,000
+what I indicate here a ban limited interpolation
+ce que j'indique ici une interpolation limitée de l'interdiction
+
+00:20:02,000 --> 00:20:05,000
+or the discrete-time impulse response
+ou la réponse impulsionnelle en temps discret
+
+00:20:05,000 --> 00:20:09,000
+and time scale than
+et l'échelle de temps de
+
+00:20:09,000 --> 00:20:13,000
+and the frequency response following the discussion that we've previously gone
+et la réponse en fréquence suite à la discussion que nous avons déjà passés
+
+00:20:13,000 --> 00:20:14,000
+through
+par
+
+00:20:14,000 --> 00:20:20,000
+is a frequency scale version all the one associated with the digital filter
+est une version de l'échelle de fréquence tout celui associé au filtre numérique
+
+00:20:20,000 --> 00:20:24,000
+well the first thing that all want to look at is
+bien la première chose que tous veulent regarder est
+
+00:20:24,000 --> 00:20:27,000
+the impulse response and when we do
+la réponse impulsionnelle et quand nous le faisons
+
+00:20:27,000 --> 00:20:31,000
+let me just indicate that
+laissez-moi juste indiquer que
+
+00:20:31,000 --> 00:20:35,000
+in the actual implementation things are slightly different
+dans la mise en œuvre réelle des choses sont légèrement différentes
+
+00:20:35,000 --> 00:20:39,000
+then they are associated with the ideal analysis
+puis elles sont associées à l'analyse idéale
+
+00:20:39,000 --> 00:20:43,000
+in particular in converting
+en particulier dans la conversion de
+
+00:20:43,000 --> 00:20:46,000
+from a discrete-time sequence
+à partir d'une séquence en temps discret
+
+00:20:46,000 --> 00:20:50,000
+to the continuous-time signal whereas
+au signal de temps continu tandis que
+
+00:20:50,000 --> 00:20:53,000
+this way of looking at it is convenient
+cette façon de voir les choses est pratique
+
+00:20:53,000 --> 00:20:57,000
+in the context that the analysis in fact the way it's done
+dans le contexte que l'analyse en fait la façon dont c'est fait
+
+00:20:57,000 --> 00:21:01,000
+is is using more or less
+est utilise plus ou moins
+
+00:21:01,000 --> 00:21:04,000
+standard digital to analog converter
+numérique standard convertisseur analogique
+
+00:21:04,000 --> 00:21:09,000
+one what a digital to analog converter does as i indicated in the previous
+un ce un convertisseur numérique-analogique fait comme je le disais dans le précédent
+
+00:21:09,000 --> 00:21:10,000
+lecture
+conférence
+
+00:21:10,000 --> 00:21:13,000
+is to convert the sequence
+est de convertir la séquence
+
+00:21:13,000 --> 00:21:17,000
+not to an impulse train but in fact to go directly through
+pas à un train d'impulsions, mais en fait pour aller directement à travers
+
+00:21:17,000 --> 00:21:21,000
+zero-order hold and so usually what comes onto
+maintien d'ordre zéro et donc en général ce qui arrive sur
+
+00:21:21,000 --> 00:21:25,000
+a digital to analog converter is a staircase
+un convertisseur numérique-analogique est un escalier
+
+00:21:25,000 --> 00:21:29,000
+tightness signal associated with the zero-order hold
+signal de l'étanchéité associé à l'ordre zéro attente
+
+00:21:29,000 --> 00:21:34,000
+and then the result of that is low-pass filter to do the reconstruction
+et le résultat de tout cela est le filtre passe-bas pour faire la reconstruction
+
+00:21:34,000 --> 00:21:37,000
+so what we want to look at and is
+si ce que nous voulons regarder et est
+
+00:21:37,000 --> 00:21:42,000
+that reconstruction first with just an impulse input
+que la reconstruction d'abord avec juste une entrée impulsion
+
+00:21:42,000 --> 00:21:46,000
+and so what we'll see after the low-pass filter
+et donc ce que nous allons voir après le filtre passe-bas
+
+00:21:46,000 --> 00:21:50,000
+for the impulse response is
+de la réponse impulsionnelle est
+
+00:21:50,000 --> 00:21:56,000
+a smooth curve like this but also as part of the demonstration
+une courbe lisse comme cela, mais aussi dans le cadre de la manifestation
+
+00:21:56,000 --> 00:21:59,000
+what all do just to show the zero-order hold
+ce que tout faire juste pour montrer le maintien d'ordre zéro
+
+00:21:59,000 --> 00:22:03,000
+is to take the low-pass filter out temporarily
+est de prendre le filtre passe-bas de manière temporaire
+
+00:22:03,000 --> 00:22:07,000
+and then put it back in so first let's just look at
+et puis le remettre dans la première Regardons simplement à
+
+00:22:07,000 --> 00:22:11,000
+the filter impulse response
+la réponse impulsionnelle de filtre
+
+00:22:11,000 --> 00:22:14,000
+what we see here is the impost response
+ce que nous voyons ici est la réponse impôt
+
+00:22:14,000 --> 00:22:18,000
+all the overall system and
+tout l'ensemble du système et
+
+00:22:18,000 --> 00:22:21,000
+we observe for one thing that it's a symmetrical impulse response in other
+on observe d'une part que c'est une réponse impulsionnelle symétrique dans d'autres
+
+00:22:21,000 --> 00:22:25,000
+words corresponds to a linear phase filter
+mots correspond à un filtre de phase linéaire
+
+00:22:25,000 --> 00:22:28,000
+we can also look at the impulse response before that the same playing
+nous pouvons aussi regarder la réponse impulsionnelle avant que le même jeu
+
+00:22:28,000 --> 00:22:32,000
+low-pass filter let's take out that the sampling low-pass filter
+filtre passe-bas prenons que le filtre passe-bas d'échantillonnage
+
+00:22:32,000 --> 00:22:35,000
+slowly and wide
+lentement et large
+
+00:22:35,000 --> 00:22:38,000
+we observe is basically the output I'll
+nous observons est essentiellement la sortie je vais
+
+00:22:38,000 --> 00:22:44,000
+the digital to analog converter which of course is a staircase a boxcar function
+le convertisseur numérique-analogique qui est bien sûr un escalier d'une fonction de wagon
+
+00:22:44,000 --> 00:22:47,000
+not an impulse train in the real world the
+pas un train d'impulsions dans le monde réel de la
+
+00:22:47,000 --> 00:22:51,000
+output over the day converted generally is a boxcar type function
+sortie sur la journée converti général est une fonction de type de wagon
+
+00:22:51,000 --> 00:22:54,000
+we can put the the sampling filter back in now
+nous pouvons mettre le filtre d'échantillonnage le retour dans l'entreprise
+
+00:22:54,000 --> 00:22:59,000
+and notice that the effectivity sampling filter is basically
+et notez que le filtre d'échantillonnage effectivité est essentiellement
+
+00:22:59,000 --> 00:23:02,000
+to smooth out the rough edges in
+pour lisser les aspérités dans
+
+00:23:02,000 --> 00:23:08,000
+the boxcar output from the DA converter
+la sortie du wagon à partir du convertisseur DA
+
+00:23:08,000 --> 00:23:12,000
+okay so that's the impulse response the system
+Bon alors c'est la réponse impulsionnelle du système
+
+00:23:12,000 --> 00:23:15,000
+now what I like to show is the frequency
+maintenant ce que je veux montrer, c'est la fréquence
+
+00:23:15,000 --> 00:23:20,000
+response the system and to measure the frequency response of course what we can
+réponse du système et de mesurer la réponse en fréquence bien sûr ce que nous pouvons
+
+00:23:20,000 --> 00:23:21,000
+do
+
+
+00:23:21,000 --> 00:23:24,000
+is put a sine wave
+est mis une onde sinusoïdale
+
+00:23:24,000 --> 00:23:27,000
+into the system and looked at
+dans le système et examiné
+
+00:23:27,000 --> 00:23:33,000
+the sinusoidal output so in particular now what will happen is that
+la sortie sinusoïdale en particulier si maintenant ce qui va arriver, c'est que
+
+00:23:33,000 --> 00:23:36,000
+with the system we will put in
+avec le système que nous allons mettre en
+
+00:23:36,000 --> 00:23:40,000
+a continuous-time sinusoid which is sampled
+une sinusoïde en temps continu qui est échantillonné
+
+00:23:40,000 --> 00:23:43,000
+converted to a sequence
+converti en une séquence
+
+00:23:43,000 --> 00:23:48,000
+the sample continues sigh sinus so it is a discrete-time sinusoid
+l'échantillon continue soupirer sinus de sorte qu'il est une sinusoïde à temps discret
+
+00:23:48,000 --> 00:23:52,000
+that goes through the digital filter and gets attenuated or
+qui passe par le filtre numérique et obtient atténué ou
+
+00:23:52,000 --> 00:23:55,000
+amplified appropriately and then
+amplifié de manière appropriée, puis
+
+00:23:55,000 --> 00:23:59,000
+the output if that is converted back and that's
+la sortie si cela est reconverti et c'est
+
+00:23:59,000 --> 00:24:03,000
+again a sinusoidal output that gets converted back
+encore une sortie sinusoïdale qui est converti en arrière
+
+00:24:03,000 --> 00:24:08,000
+to a continuous-time sinusoid
+à une sinusoïde en temps continu
+
+00:24:08,000 --> 00:24:11,000
+theoretically as i indicate here but again as we just saw
+théoriquement comme je l'indique ici, mais encore comme nous venons de le voir
+
+00:24:11,000 --> 00:24:15,000
+really represented by zero-order hold followed by
+vraiment représenté par maintien d'ordre zéro suivie par
+
+00:24:15,000 --> 00:24:18,000
+a low-pass filter so thats
+un filtre passe-bas donc c'est
+
+00:24:18,000 --> 00:24:22,000
+the overall operation with one
+le fonctionnement global d'un
+
+00:24:22,000 --> 00:24:25,000
+modification from the diagram that we have here
+modification du schéma que nous avons ici
+
+00:24:25,000 --> 00:24:29,000
+in this particular diagram I've included
+dans ce schéma particulier, j'ai inclus
+
+00:24:29,000 --> 00:24:32,000
+a and anti-aliasing filter
+et un filtre anti-repliement
+
+00:24:32,000 --> 00:24:35,000
+in fact in the demonstration there is no
+en fait, dans la démonstration il n'y a pas
+
+00:24:35,000 --> 00:24:38,000
+anti-aliasing filter and so
+filtre anti-aliasing et ainsi
+
+00:24:38,000 --> 00:24:43,000
+in fact the input is a sinusoidal input
+en fait, l'entrée est une entrée sinusoïdal
+
+00:24:43,000 --> 00:24:46,000
+which is not band limited
+qui n'est pas limité en bande
+
+00:24:46,000 --> 00:24:50,000
+by virtue of an anti-aliasing filter it's only
+en vertu d'un filtre anti-repliement ce n'est que
+
+00:24:50,000 --> 00:24:53,000
+course been limited appropriately
+Bien sûr été limité de manière appropriée
+
+00:24:53,000 --> 00:24:57,000
+if we choose the sinusoidal frequency that way
+si nous choisissons la fréquence sinusoïdale de cette façon
+
+00:24:57,000 --> 00:25:02,000
+so there is no anti-aliasing filter and this is the system
+il n'y a donc pas de filtre anti-repliement et ce système est l'
+
+00:25:02,000 --> 00:25:05,000
+and one consequence if that
+et une conséquence que si
+
+00:25:05,000 --> 00:25:08,000
+is dead in fact if we sweep
+elle est morte en fait, si nous balayons
+
+00:25:08,000 --> 00:25:13,000
+the input sinusoid only up to half the sampling frequency
+la sinusoïde d'entrée seulement jusqu'à la moitié de la fréquence d'échantillonnage
+
+00:25:13,000 --> 00:25:17,000
+will see no aliasing but if we let its we passed that we're going to get
+ne verront pas aliasing mais si nous laissons sa nous passions que nous allons obtenir
+
+00:25:17,000 --> 00:25:19,000
+aliasing
+aliasing
+
+00:25:19,000 --> 00:25:22,000
+now in the demonstration the sampling rate
+maintenant à la manifestation de la fréquence d'échantillonnage
+
+00:25:22,000 --> 00:25:26,000
+its picked for this party the demonstration is a 20 kilohertz sampling
+son choisi pour cette partie de la manifestation est un échantillonnage de 20 kHz
+
+00:25:26,000 --> 00:25:28,000
+rate
+taux
+
+00:25:28,000 --> 00:25:33,000
+that means based on the sampling theorem that as long as the input frequency
+cela signifie que sur la base du théorème d'échantillonnage aussi longtemps que la fréquence d'entrée
+
+00:25:33,000 --> 00:25:39,000
+is below 10 killer hurts we get no aliasing
+est inférieure à 10 tueur blessures nous ne recevons aucune aliasing
+
+00:25:39,000 --> 00:25:43,000
+when the input frequency goes beyond 10 killer hurts
+lorsque la fréquence d'entrée dépasse 10 tueur fait mal
+
+00:25:43,000 --> 00:25:46,000
+that higher frequency is going to get alias down
+fréquence plus élevée que va obtenir alias bas
+
+00:25:46,000 --> 00:25:50,000
+into a lower frequency a consequence is that then
+en une fréquence plus basse que la conséquence est alors
+
+00:25:50,000 --> 00:25:53,000
+is that as we go through the process saying
+est que nous passons par le processus en disant
+
+00:25:53,000 --> 00:25:57,000
+and we demonstrate the frequency response to the system
+et nous démontrons la réponse en fréquence du système
+
+00:25:57,000 --> 00:26:01,000
+what we'll see in the output is
+ce que nous allons voir dans la sortie est
+
+00:26:01,000 --> 00:26:04,000
+no alias saying when the input is below 10 killer hurts
+aucun alias dire lorsque l'entrée est en dessous de 10 tueur blesse
+
+00:26:04,000 --> 00:26:07,000
+as the input sweeps past 10 killer hurts
+que l'entrée balaie passé 10 tueur blesse
+
+00:26:07,000 --> 00:26:11,000
+when when we let it which we will eventually in the demonstration
+quand quand nous la laisserons qui nous finirons à la manifestation
+
+00:26:11,000 --> 00:26:16,000
+dan in fact that frequency as it finally shows up here
+dan, en fait, que la fréquence, car il montre enfin ici
+
+00:26:16,000 --> 00:26:21,000
+will begin to be aliased down into a lower frequency
+va commencer à être un alias vers le bas dans une fréquence inférieure
+
+00:26:21,000 --> 00:26:24,000
+another way thinking about that is dead
+penser à une autre façon est mort
+
+00:26:24,000 --> 00:26:28,000
+when we watch the frequency response
+lorsque nous regardons la réponse en fréquence
+
+00:26:28,000 --> 00:26:31,000
+love the system as
+aimer le système
+
+00:26:31,000 --> 00:26:36,000
+we look at the digital filter frequency response
+nous regardons la réponse en fréquence du filtre numérique
+
+00:26:36,000 --> 00:26:41,000
+what we're sweeping and as we go from zero
+ce que nous balayer et que nous allons de zéro
+
+00:26:41,000 --> 00:26:44,000
+up to 10 killer hurts
+jusqu'à 10 tueur fait mal
+
+00:26:44,000 --> 00:26:49,000
+in the input frequency is this portion of the frequency response
+à la fréquence d'entrée est cette partie de la réponse en fréquence
+
+00:26:49,000 --> 00:26:53,000
+as we sweep from 10 killer hurts out to 20 kilohertz
+que nous balayons de 10 tueur blesse à 20 kilohertz
+
+00:26:53,000 --> 00:26:57,000
+what we'll see is this portion the frequency response
+ce que nous allons voir est cette partie de la réponse en fréquence
+
+00:26:57,000 --> 00:27:00,000
+in other words will see it periodically replicate
+en d'autres termes le verra reproduire périodiquement
+
+00:27:00,000 --> 00:27:04,000
+or if we look at the
+ou si l'on regarde l'
+
+00:27:04,000 --> 00:27:08,000
+corresponding continuous-time frequency response
+la réponse en fréquence en temps continu correspondant
+
+00:27:08,000 --> 00:27:11,000
+what it means really is that sweeping
+ce que cela signifie vraiment, c'est que le balayage
+
+00:27:11,000 --> 00:27:14,000
+from 0 to 10 killer hurts
+de 0 à 10 tueur blesse
+
+00:27:14,000 --> 00:27:18,000
+is moving up this way and then sweeping from 10 killer hurts
+se déplace de cette façon, puis balayer de 10 tueur fait mal
+
+00:27:18,000 --> 00:27:22,000
+to 20 kilohertz on the input
+à 20 kilohertz sur l'entrée
+
+00:27:22,000 --> 00:27:25,000
+really because if the alias saying
+vraiment parce que si l'alias dire
+
+00:27:25,000 --> 00:27:28,000
+reflects itself in a digital filter by
+se réfléchit dans un filtre numérique par
+
+00:27:28,000 --> 00:27:32,000
+looking back down it toward lower frequencies and so the continuous-time
+regardant vers le bas il vers des fréquences plus basses et donc le temps continu
+
+00:27:32,000 --> 00:27:33,000
+filter
+filtre
+
+00:27:33,000 --> 00:27:37,000
+sweeps back down from 10 killer hurts
+balaie vers le bas à partir de 10 tueur fait mal
+
+00:27:37,000 --> 00:27:41,000
+back 20 okay
+retour 20 d'accord
+
+00:27:41,000 --> 00:27:45,000
+so that so we'll see and we'll see it in several different ways as explained in
+de sorte que si nous verrons et nous verrons de plusieurs manières différentes, comme expliqué dans
+
+00:27:45,000 --> 00:27:46,000
+the demonstration
+la démonstration
+
+00:27:46,000 --> 00:27:49,000
+so now let's look and the frequency response
+maintenant regardons et la réponse en fréquence
+
+00:27:49,000 --> 00:27:53,000
+sold now we like to illustrate
+vendu maintenant nous aimons illustrer
+
+00:27:53,000 --> 00:27:57,000
+is the frequency response love the acquittal in continuous-time
+est l'amour de la réponse en fréquence de l'acquittement en temps continu
+
+00:27:57,000 --> 00:28:02,000
+filter and we can do that by sweeping the filter with a sinusoidal input
+filtrer et nous pouvons le faire en balayant le filtre avec une entrée sinusoïdale
+
+00:28:02,000 --> 00:28:06,000
+so what we'll see in this demonstration is
+donc ce que nous allons voir dans cette démonstration est
+
+00:28:06,000 --> 00:28:11,000
+on the upper trace the input sinusoid on the lower trace the output sinusoid
+sur le tracé supérieur de la sinusoïde d'entrée en bas à tracer la sinusoïde de sortie
+
+00:28:11,000 --> 00:28:14,000
+using a 20 kilohertz sampling rate in a sweep
+en utilisant un taux d'échantillonnage de 20 kHz dans un balayage
+
+00:28:14,000 --> 00:28:18,000
+from 0 to 10 killer hurts in other words a sweep from 0 to
+de 0 à 10 tueur mal-à-dire un balayage de 0 à
+
+00:28:18,000 --> 00:28:23,000
+effectively hi interns at the digital filter
+stagiaires efficacement salut au filtre numérique
+
+00:28:23,000 --> 00:28:28,000
+so work will observe as the input frequency increases
+donc le travail va observer que la fréquence d'entrée augmente
+
+00:28:28,000 --> 00:28:32,000
+is that the output sinusoid will have essentially constant amplitude
+est que la sinusoïde de sortie aura une amplitude sensiblement constante
+
+00:28:32,000 --> 00:28:37,000
+up to the cutoff frequency the filter and then approximately zero amplitude
+jusqu'à la fréquence de coupure du filtre, puis approximativement égal à zéro amplitude
+
+00:28:37,000 --> 00:28:40,000
+past so let's now sweet the filter
+passé si nous allons maintenant doux le filtre
+
+00:28:40,000 --> 00:28:46,000
+frequency response
+la réponse en fréquence
+
+00:28:46,000 --> 00:28:49,000
+and the area is the filter
+et la région est le filtre
+
+00:28:49,000 --> 00:28:55,000
+cutoff frequency
+fréquence de coupure
+
+00:28:55,000 --> 00:28:59,000
+now we can also observe the filter frequency response in
+maintenant nous pouvons également observer la réponse en fréquence du filtre en
+
+00:28:59,000 --> 00:29:03,000
+several other ways one way in which we can observe it is by
+plusieurs autres façons un moyen par lequel nous pouvons observer qu'il est par
+
+00:29:03,000 --> 00:29:08,000
+looking also at the amplitude if the output sinusoid as
+en examinant notamment l'amplitude si la sinusoïde de sortie comme
+
+00:29:08,000 --> 00:29:12,000
+a function of frequency rather than as a function of time
+fonction de la fréquence, plutôt que comme une fonction du temps
+
+00:29:12,000 --> 00:29:16,000
+and so will observe that on the left-hand SCO
+et ne sera donc observer que le SCO gauche
+
+00:29:16,000 --> 00:29:20,000
+while on the right-hand scope will have the same trace their we just saw
+tandis que sur le champ de droite aura la même trace de leur nous venons de voir
+
+00:29:20,000 --> 00:29:23,000
+namely to traces the upper traces the input sinusoid
+à savoir les traces traces supérieures la sinusoïde d'entrée
+
+00:29:23,000 --> 00:29:28,000
+the lower traces the output sinusoid and in addition to observing
+les traces inférieures, la sinusoïde de sortie et en plus de respecter
+
+00:29:28,000 --> 00:29:33,000
+the frequency response let's also listen to the output sinusoid
+la réponse en fréquence écoutons aussi la sinusoïde de sortie
+
+00:29:33,000 --> 00:29:36,000
+and observe the attenuation
+et observer l'atténuation
+
+00:29:36,000 --> 00:29:40,000
+in the output as we go from the field to pass band to the filter stopping again a
+dans la sortie que nous allons sur le terrain pour passer à la bande filtre arrêter de nouveau une
+
+00:29:40,000 --> 00:29:42,000
+20 kilohertz sampling rate
+Taux d'échantillonnage de 20 kHz
+
+00:29:42,000 --> 00:29:49,000
+and a sweep range from 0 to 10 killer now
+et une plage de balayage de 0 à 10 tueur maintenant
+
+00:29:53,000 --> 00:29:57,000
+course when the filter stop
+Bien sûr, lorsque l'arrêt de filtre
+
+00:29:57,000 --> 00:30:02,000
+now if we increase the sweep range
+maintenant, si nous augmentons la plage de balayage
+
+00:30:02,000 --> 00:30:05,000
+from 10 killer hurts the 20 kilohertz
+de 10 tueur blesse les 20 kilohertz
+
+00:30:05,000 --> 00:30:08,000
+so that the sweep range is equal to the sampling frequency
+de sorte que la plage de balayage est égale à la fréquence d'échantillonnage
+
+00:30:08,000 --> 00:30:12,000
+in essence that corresponds the sweeping at the digital filter
+en substance, que le balayage correspond au filtre numérique
+
+00:30:12,000 --> 00:30:17,000
+from 0 to 2pi and in that case we'll begin to see
+de 0 à 2 pi et dans ce cas, nous allons commencer à voir
+
+00:30:17,000 --> 00:30:21,000
+some %uh the periodicity in the digital filter frequency response
+uh certain% de la périodicité de la réponse en fréquence du filtre numérique
+
+00:30:21,000 --> 00:30:25,000
+so let's do that now with 20 kilohertz sampling rate
+nous allons donc le faire maintenant avec 20 taux d'échantillonnage de kilohertz
+
+00:30:25,000 --> 00:30:28,000
+and a sweep range is 0 to 20 kilohertz
+et une plage de balayage est de 0 à 20 kilohertz
+
+00:30:28,000 --> 00:30:34,000
+now as we come near to Pine
+maintenant que nous arrivons à proximité de Pine
+
+00:30:34,000 --> 00:30:39,000
+we get back into the past
+nous serons de retour dans le passé
+
+00:30:39,000 --> 00:30:43,000
+an finally back to
+une enfin de retour à
+
+00:30:43,000 --> 00:30:46,000
+a0 to 10 killer hurts we so they were again sweeping
+a0 à 10 tueur fait mal nous si ils étaient de nouveau balayage
+
+00:30:46,000 --> 00:30:53,000
+only from 0 to 2pi with regard to the digital filter
+seulement de 0 à 2 pi par rapport au filtre numérique
+
+00:31:05,000 --> 00:31:08,000
+now an important observation is that
+maintenant une observation importante est que
+
+00:31:08,000 --> 00:31:11,000
+with the digital or discrete-time
+avec le numérique ou à temps discret
+
+00:31:11,000 --> 00:31:16,000
+filter cutoff frequency fixed as i've indicated here
+la fréquence de coupure du filtre fixé comme je l'ai dit ici
+
+00:31:16,000 --> 00:31:20,000
+and I remind you that what the cutoff frequency is
+et je vous rappelle que ce que la fréquence de coupure est
+
+00:31:20,000 --> 00:31:24,000
+is a 10 to hi with that cutoff frequency fixed
+est de 10 à salut avec cette fréquence de coupure fixe
+
+00:31:24,000 --> 00:31:28,000
+because I love the normalization that we get
+parce que j'aime la normalisation que nous obtenons
+
+00:31:28,000 --> 00:31:31,000
+as we come back to a continuous-time
+que nous revenons à un temps continu
+
+00:31:31,000 --> 00:31:34,000
+filter in fact what we have
+filtrage en fait ce que nous avons
+
+00:31:34,000 --> 00:31:38,000
+is a cutoff frequency dead is
+est une mort de la fréquence de coupure est
+
+00:31:38,000 --> 00:31:42,000
+dependent on the sampling frequency or on the sampling period
+dépendante de la fréquence d'échantillonnage ou sur la période d'échantillonnage
+
+00:31:42,000 --> 00:31:46,000
+and more specifically since the discrete-time or digital
+et, plus précisément, depuis le temps discret ou numérique
+
+00:31:46,000 --> 00:31:50,000
+filter has a cutoff frequency which is attentive to pie
+filtre a une fréquence de coupure qui est attentif à tarte
+
+00:31:50,000 --> 00:31:53,000
+the normalization as you recall
+la normalisation que vous vous rappellerez
+
+00:31:53,000 --> 00:31:58,000
+is dead to pie in discrete-time frequency
+est mort à tarte de la fréquence à temps discret
+
+00:31:58,000 --> 00:32:02,000
+corresponds to Omega sed s/ the sampling frequency
+correspond à Omega sed s / la fréquence d'échantillonnage
+
+00:32:02,000 --> 00:32:06,000
+in terms of continuous-time frequency the consequence
+en termes de fréquence en temps continu la conséquence
+
+00:32:06,000 --> 00:32:10,000
+is dead this cutoff frequency in fact
+est mort cette fréquence de coupure, en fait,
+
+00:32:10,000 --> 00:32:13,000
+is 110 all
+est 110 tous
+
+00:32:13,000 --> 00:32:17,000
+not to pine now because at the normalization its 110
+pas languir maintenant car à la normalisation de sa 110
+
+00:32:17,000 --> 00:32:20,000
+I'll the sampling frequency so
+Je vais la fréquence d'échantillonnage de sorte
+
+00:32:20,000 --> 00:32:25,000
+consequently as we change the sampling frequency
+par conséquent, que nous changeons la fréquence d'échantillonnage
+
+00:32:25,000 --> 00:32:30,000
+what will happen is that even with the discrete-time filter cutoff fixed
+ce qui va arriver, c'est que même avec la coupure du filtre discret de temps fixé
+
+00:32:30,000 --> 00:32:34,000
+the cutoff frequency I'll the equivalent continuous-time
+la fréquence de coupure je vais le temps continu équivalent
+
+00:32:34,000 --> 00:32:38,000
+filter will change now
+filtre va changer maintenant
+
+00:32:38,000 --> 00:32:41,000
+that's what I want to demonstrate but let me
+c'est ce que je veux démontrer, mais permettez-moi de
+
+00:32:41,000 --> 00:32:44,000
+again stress and ask you to keep in mind dead
+souligner à nouveau et vous demander de garder à l'esprit mort
+
+00:32:44,000 --> 00:32:48,000
+this demonstration is done without an anti-aliasing filter in
+cette manifestation se fait sans un filtre anti-aliasing dans
+
+00:32:48,000 --> 00:32:54,000
+and we are going to be changing the sampling frequency
+et nous allons changer la fréquence d'échantillonnage
+
+00:32:54,000 --> 00:32:58,000
+and so keep in mind dead as
+et ainsi de garder à l'esprit morts
+
+00:32:58,000 --> 00:33:02,000
+we look at this as the input frequency
+nous attendons à ce que la fréquence d'entrée
+
+00:33:02,000 --> 00:33:07,000
+sweeps past half the sampling frequency whatever sampling frequency we happen to
+balayages et demie la fréquence d'échantillonnage quel que soit la fréquence d'échantillonnage, nous arrive d'
+
+00:33:07,000 --> 00:33:08,000
+be looking at
+être à la recherche à
+
+00:33:08,000 --> 00:33:12,000
+then because the fact that there's no anti-aliasing filter
+ensuite parce que le fait qu'il n'y a pas de filtre anti-aliasing
+
+00:33:12,000 --> 00:33:17,000
+will get daily as saying in other words the frequency in the digital filter
+obtiendra quotidien comme disant en d'autres termes la fréquence du filtre numérique
+
+00:33:17,000 --> 00:33:20,000
+discrete-time filter as we sweep the input frequency up
+filtre à temps discret que nous balayons la fréquence d'entrée jusqu'à
+
+00:33:20,000 --> 00:33:24,000
+will move up in frequency until we get
+se déplacer en fréquence jusqu'à ce que nous obtenons
+
+00:33:24,000 --> 00:33:28,000
+past half the sampling frequency and then essentially will move back down
+demie la fréquence d'échantillonnage et sera essentiellement redescendre
+
+00:33:28,000 --> 00:33:32,000
+frequency consequently what will get
+fréquence par conséquent ce sera obtenir
+
+00:33:32,000 --> 00:33:36,000
+then are or we'll see our periodic replications
+puis sommes ou nous verrons nos répétitions périodiques
+
+00:33:36,000 --> 00:33:41,000
+the frequency response when we swept past have see half the sampling alright
+la réponse en fréquence quand nous avons balayé passé ont la moitié de la voir bien d'échantillonnage
+
+00:33:41,000 --> 00:33:42,000
+so now
+maintenant
+
+00:33:42,000 --> 00:33:45,000
+let's look at the same digital filter
+regardons le même filtre numérique
+
+00:33:45,000 --> 00:33:48,000
+but the frequency response as
+mais la réponse en fréquence en tant que
+
+00:33:48,000 --> 00:33:53,000
+we change the sampling frequency now
+nous changeons la fréquence d'échantillonnage maintenant
+
+00:33:53,000 --> 00:33:57,000
+what we would like to demonstrate is the effective changing the same thing
+ce que nous tenons à démontrer est l'effectif changeant la même chose
+
+00:33:57,000 --> 00:34:00,000
+frequency and we know that
+fréquence et nous savons que
+
+00:34:00,000 --> 00:34:03,000
+the sampling that the effective filter cutoff frequency
+l'échantillonnage que la fréquence de coupure effective
+
+00:34:03,000 --> 00:34:07,000
+is tied to the sampling frequency
+est lié à la fréquence d'échantillonnage
+
+00:34:07,000 --> 00:34:10,000
+and for this particular filter corresponds to attend
+et pour ce filtre particulier correspond à assister
+
+00:34:10,000 --> 00:34:15,000
+of the sampling frequency consequently if we double the sampling frequency we
+de la fréquence d'échantillonnage par conséquent, si on double la fréquence d'échantillonnage nous
+
+00:34:15,000 --> 00:34:16,000
+should double
+devrait doubler
+
+00:34:16,000 --> 00:34:20,000
+the affective filter past and where war
+le passé de filtre affectif et où la guerre
+
+00:34:20,000 --> 00:34:23,000
+double the filter cutoff frequency and
+doubler la fréquence de coupure du filtre et
+
+00:34:23,000 --> 00:34:27,000
+so let's do that now it again is 0-10 killer hurt sweep range
+nous allons donc le faire maintenant c'est encore 0-10 gamme tueur mal de balayage
+
+00:34:27,000 --> 00:34:30,000
+but a forty kilohertz sampling frequency
+mais une fréquence d'échantillonnage quarante kilohertz
+
+00:34:30,000 --> 00:34:35,000
+me and
+moi et
+
+00:34:35,000 --> 00:34:39,000
+we should observe that the filter cutoff frequency has now doubled
+nous devrions observer que la fréquence de coupure du filtre a doublé
+
+00:34:39,000 --> 00:34:44,000
+out 24 killer now
+à 24 tueur maintenant
+
+00:34:44,000 --> 00:34:47,000
+let's begin to decrease the filter sampling frequency
+nous allons commencer à diminuer la fréquence d'échantillonnage de filtre
+
+00:34:47,000 --> 00:34:51,000
+so from forty let's change the sampling frequency to 20 kilohertz
+afin de quarante nous allons changer la fréquence d'échantillonnage de 20 kHz
+
+00:34:51,000 --> 00:34:58,000
+we should see the cutoff frequency cut in half me
+nous devrions voir la fréquence de coupure de coupure dans la moitié de moi
+
+00:35:05,000 --> 00:35:09,000
+now we can go even further we can cut the sampling frequency down
+maintenant nous pouvons aller encore plus loin, nous pouvons réduire la fréquence d'échantillonnage en bas
+
+00:35:09,000 --> 00:35:13,000
+10 killer hurts and remember that the sweep range is 0 to 10 killer hurt so
+10 tueur fait mal et rappelez-vous que la plage de balayage est de 0 à 10 tueur faisait si
+
+00:35:13,000 --> 00:35:16,000
+now will be sweeping from 0 to 2pi
+maintenant sera balayage de 0 à 2 pi
+
+00:35:16,000 --> 00:35:23,000
+so as we get close to two pi will see the passband again
+afin que nous aurons près de deux pi verra la bande passante à nouveau
+
+00:35:27,000 --> 00:35:30,000
+and now
+et maintenant
+
+00:35:30,000 --> 00:35:33,000
+let's cut down the sampling frequency even further
+nous allons couper le bas de la fréquence d'échantillonnage encore plus loin
+
+00:35:33,000 --> 00:35:37,000
+to by kilohertz my
+à kilohertz par mon
+
+00:35:37,000 --> 00:35:42,000
+here we are at 2pi
+ici nous sommes à 2 pi
+
+00:35:42,000 --> 00:35:45,000
+and then
+et alors
+
+00:35:45,000 --> 00:35:50,000
+at for pop alright so
+à de pop bien si
+
+00:35:50,000 --> 00:35:54,000
+that illustrates the effective changing the sampling frequency
+qui illustre le changement de la fréquence effective d'échantillonnage
+
+00:35:54,000 --> 00:35:57,000
+now let's conclude this demonstration at the effect
+maintenant, nous allons conclure cette démonstration à l'effet
+
+00:35:57,000 --> 00:36:01,000
+on the sampling frequency on the filter cutoff frequency by carrying out some
+sur la fréquence d'échantillonnage sur la fréquence de coupure du filtre en effectuant un certain
+
+00:36:01,000 --> 00:36:02,000
+filtering
+filtrage
+
+00:36:02,000 --> 00:36:05,000
+on some live audio white will
+sur une volonté blanc audio en direct
+
+00:36:05,000 --> 00:36:08,000
+watching this case is the output
+regarder ce cas est la sortie
+
+00:36:08,000 --> 00:36:12,000
+audio waveform as a function of time
+forme d'onde sonore en fonction du temps
+
+00:36:12,000 --> 00:36:15,000
+on the single trace go and also
+sur la seule trace aller aussi
+
+00:36:15,000 --> 00:36:20,000
+will listen to the output will begin it with a forty killer hurts
+sera à l'écoute à la sortie commencera avec un tueur quarante blesse
+
+00:36:20,000 --> 00:36:25,000
+sampling rate then reduce that to 20 kilohertz 10 killer hurts and then five
+taux d'échantillonnage puis réduire que de 20 kilohertz 10 tueur fait mal et puis cinq
+
+00:36:25,000 --> 00:36:25,000
+alerts
+alertes
+
+00:36:25,000 --> 00:36:29,000
+and in each of those cases the effective filter cutoff frequency
+et dans chacun de ces cas, la fréquence de coupure du filtre efficace
+
+00:36:29,000 --> 00:36:33,000
+then is cut in half from for keywords to kill hurts
+puis est réduit de moitié à partir de mots-clés pour tuer blesse
+
+00:36:33,000 --> 00:36:38,000
+21 kilohertz and then to 500 cycles so let's begin with the forty killer hurt
+21 kilohertz et puis à 500 cycles Commençons donc avec le tueur quarante blessés
+
+00:36:38,000 --> 00:36:40,000
+sampling frequency
+fréquence d'échantillonnage
+
+00:36:40,000 --> 00:36:47,000
+or ineffective filter cutoff frequency of work killer
+ou inefficace fréquence de coupure du filtre de travail tueur
+
+00:36:49,000 --> 00:36:53,000
+now let's reduce net 20 kilohertz am
+maintenant, nous allons réduire net 20 kilohertz h
+
+00:36:53,000 --> 00:37:00,000
+frequency or to kill hurts filter
+fréquence ou de tuer blesse filtre
+
+00:37:00,000 --> 00:37:03,000
+and 10 kelleher sampling frequency
+et 10 kelleher fréquence d'échantillonnage
+
+00:37:03,000 --> 00:37:06,000
+the
+la
+
+00:37:06,000 --> 00:37:07,000
+the
+la
+
+00:37:07,000 --> 00:37:10,000
+then finally in my Google Earth family
+enfin dans ma famille Google Earth
+
+00:37:10,000 --> 00:37:14,000
+cigars running to me why minor in Psych grueling
+cigares fonctionnant moi pourquoi mineur dans Psych épuisante
+
+00:37:14,000 --> 00:37:20,000
+analog all the
+analogique d'autant
+
+00:37:20,000 --> 00:37:24,000
+I now let's finally include why returning to
+Je laisse maintenant de finalement comprennent pourquoi le retour à
+
+00:37:24,000 --> 00:37:28,000
+a little higher quality ragtime like me the same
+un peu plus haut ragtime comme moi de la même qualité
+
+00:37:28,000 --> 00:37:35,000
+theme
+thème
+
+00:37:37,000 --> 00:37:39,000
+right well hopefully
+droit et espérons
+
+00:37:39,000 --> 00:37:43,000
+what you've seen in the demonstration and in this lecture
+ce que vous avez vu dans la démonstration et dans cette conférence
+
+00:37:43,000 --> 00:37:47,000
+is gives you a sense of feeling
+qui vous donne un sentiment de sentiment
+
+00:37:47,000 --> 00:37:50,000
+for the analysis and the use
+pour l'analyse et l'utilisation
+
+00:37:50,000 --> 00:37:53,000
+I'll discrete-time filters
+Je vais à temps discret filtres
+
+00:37:53,000 --> 00:37:56,000
+for processing continuous-time signals and
+pour traiter des signaux à temps continu et
+
+00:37:56,000 --> 00:38:00,000
+as you may be aware and as I've tried to indicate
+comme vous le savez peut-être, et comme je l'ai essayé pour indiquer
+
+00:38:00,000 --> 00:38:03,000
+previously in the past this in fact is
+précédemment dans le passé, ce en fait
+
+00:38:03,000 --> 00:38:07,000
+one very important but not the only but one very important
+une très importante, mais non la seule, mais une très importante
+
+00:38:07,000 --> 00:38:10,000
+context in which discrete-time filtering
+contexte dans lequel le filtrage en temps discret
+
+00:38:10,000 --> 00:38:14,000
+issues and this in fact is
+questions et ce, en fait, est
+
+00:38:14,000 --> 00:38:18,000
+an area that is developing rapidly because at the fact dead
+un domaine qui se développe rapidement en raison du fait mort
+
+00:38:18,000 --> 00:38:22,000
+microprocessors digital technology computers et cetera
+ordinateurs microprocesseurs de la technologie numérique et cetera
+
+00:38:22,000 --> 00:38:26,000
+afford considerable flexibility
+permettre une flexibilité considérable
+
+00:38:26,000 --> 00:38:30,000
+in carrying out digital processing of signals
+à effectuer un traitement numérique de signaux
+
+00:38:30,000 --> 00:38:35,000
+and it is and went digital processing is used at
+et il est allé et traitement numérique est utilisé à
+
+00:38:35,000 --> 00:38:38,000
+naturally corresponds
+correspond naturellement
+
+00:38:38,000 --> 00:38:43,000
+to to implementing the processing
+à la mise en œuvre du traitement
+
+00:38:43,000 --> 00:38:48,000
+and analyzing it in discrete-time now
+et analyser en temps discret maintenant
+
+00:38:48,000 --> 00:38:52,000
+in the next lecture will be continuing
+dans la prochaine session sera continue
+
+00:38:52,000 --> 00:38:56,000
+on another aspect developing another aspect
+sur un autre aspect développer un autre aspect
+
+00:38:56,000 --> 00:38:59,000
+love sampling any particular
+amour échantillonnage tout particulier
+
+00:38:59,000 --> 00:39:04,000
+what we'll be talking about is sampling of discrete-time signals
+ce que nous allons parler est l'échantillonnage des signaux à temps discret
+
+00:39:04,000 --> 00:39:08,000
+as all indicate there one of the contexts in which
+que tout indique il l'un des contextes dans lesquels
+
+00:39:08,000 --> 00:39:12,000
+discrete-time sampling in fact plays an important role
+l'échantillonnage discret dans le temps, en fait, joue un rôle important
+
+00:39:12,000 --> 00:39:15,000
+is in the context in which
+est dans le contexte dans lequel
+
+00:39:15,000 --> 00:39:18,000
+we are processing continuous-time signals
+nous traitons des signaux en temps continu
+
+00:39:18,000 --> 00:39:22,000
+using discrete time processing where in fact
+en utilisant un traitement en temps discret où, en fait,
+
+00:39:22,000 --> 00:39:25,000
+one step that we might want to take in addition to the steps that we've talked
+une étape que nous pourrions prendre, en plus des mesures que nous avons parlé
+
+00:39:25,000 --> 00:39:26,000
+about here
+sur ici
+
+00:39:26,000 --> 00:39:30,000
+is an additional sampling process following
+est un processus d'échantillonnage supplémentaires suivantes
+
+00:39:30,000 --> 00:39:35,000
+whatever kinds of filtering that we that we do well that's a discussion and a
+tout ce genre de filtrage que nous que nous ne bien que c'est une discussion et une
+
+00:39:35,000 --> 00:39:37,000
+topic that will be going into in the next lecture
+sujet qui va se passer dans la prochaine leçon
+
+00:39:37,000 --> 00:39:38,000
+thank you
+merci
+

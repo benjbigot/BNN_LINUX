@@ -1,0 +1,1888 @@
+00:00:06,000 --> 00:00:13,000
+ha the the
+公顷的
+
+00:00:27,000 --> 00:00:30,000
+the norm
+规范
+
+00:00:30,000 --> 00:00:36,000
+well
+好
+
+00:00:36,000 --> 00:00:43,000
+the I'm out oppenheim
+在我出奥本海姆
+
+00:00:43,000 --> 00:00:48,000
+and I'd like to welcome you to this video tape course on signals and systems
+我想欢迎您到这个录像带课程，信号与系统
+
+00:00:48,000 --> 00:00:51,000
+signals at least
+信号中的至少
+
+00:00:51,000 --> 00:00:55,000
+as an informal definition are functions
+作为一个非正式的定义是函数
+
+00:00:55,000 --> 00:00:58,000
+one or more independent variables that
+一个或一个以上独立变量
+
+00:00:58,000 --> 00:01:03,000
+typically carry some type information systems in
+通常携带某种类型的信息系统
+
+00:01:03,000 --> 00:01:07,000
+are setting with typically be used the process signals
+正在设置与通常使用的过程信号
+
+00:01:07,000 --> 00:01:11,000
+one very common example of a signal
+一个信号的一个很常见的例子
+
+00:01:11,000 --> 00:01:15,000
+might be let's say speech signal and you might think
+可能是我们说的语音信号，你可能会认为
+
+00:01:15,000 --> 00:01:18,000
+love the air pressure as a function of time
+爱的空气压力作为时间的函数
+
+00:01:18,000 --> 00:01:22,000
+or perhaps the electrical signal effort goes through the microphone
+或者该电信号的努力去通过麦克风
+
+00:01:22,000 --> 00:01:26,000
+transducer is a function of time as representing the speech signal
+换能器的时间作为代表语音信号的一个函数
+
+00:01:26,000 --> 00:01:30,000
+and we might see a typical speech signal
+我们可能会看到一个典型的语音信号
+
+00:01:30,000 --> 00:01:33,000
+looking something like i've indicated here
+看着像我在这里表示
+
+00:01:33,000 --> 00:01:36,000
+its a function time
+其功能的时间
+
+00:01:36,000 --> 00:01:40,000
+in this particular case and the independent variable
+在这种特殊情况下，并自变量
+
+00:01:40,000 --> 00:01:44,000
+being time is in fact continuous
+即时间实际上是连续
+
+00:01:44,000 --> 00:01:47,000
+and so a signal like this we will typically be referring to
+所以像这样的信号，我们通常是指
+
+00:01:47,000 --> 00:01:52,000
+as a continuous-time signals now
+因为现在是一个连续时间信号
+
+00:01:52,000 --> 00:01:55,000
+it also for this particular example is a function
+它也为这个特定的例子是一个函数
+
+00:01:55,000 --> 00:01:59,000
+one independent variable and
+一个自变量和
+
+00:01:59,000 --> 00:02:02,000
+that will be referred to as
+这将被称为
+
+00:02:02,000 --> 00:02:06,000
+the one dimensional signal
+一维信号
+
+00:02:06,000 --> 00:02:09,000
+corresponding to the fact that there's only
+对应于该事实，即只有
+
+00:02:09,000 --> 00:02:13,000
+one independent variable several independent variables
+一个自变量几个独立变量
+
+00:02:13,000 --> 00:02:16,000
+so the speech signal is an example
+这样的语音信号是一个例子
+
+00:02:16,000 --> 00:02:20,000
+a continuous-time one-dimensional signal
+连续时间的一维信号
+
+00:02:20,000 --> 00:02:23,000
+now signals can of course
+现在信号当然可以
+
+00:02:23,000 --> 00:02:29,000
+be multi-dimensional and they may not have as their independent variables time
+是多维的，他们可能没有为自己的独立变量时间
+
+00:02:29,000 --> 00:02:29,000
+variables
+变量
+
+00:02:29,000 --> 00:02:32,000
+one very common example are
+一个非常常见的例子是
+
+00:02:32,000 --> 00:02:36,000
+the examples represented by images images
+通过图像图像表示的例子
+
+00:02:36,000 --> 00:02:40,000
+as signals we might think I'll as
+作为信号我们可能会认为我会为
+
+00:02:40,000 --> 00:02:44,000
+representing brightness as it varies
+代表亮度，因为它变化
+
+00:02:44,000 --> 00:02:47,000
+in a horizontal and vertical
+在水平和垂直
+
+00:02:47,000 --> 00:02:50,000
+direction and so the brightness as a function
+方向等的亮度作为函数
+
+00:02:50,000 --> 00:02:53,000
+these two spatial variables is then
+这两个空间变量，然后
+
+00:02:53,000 --> 00:03:00,000
+a two-dimensional signal and
+一个两维信号和
+
+00:03:01,000 --> 00:03:04,000
+it the independent variables
+它的自变量
+
+00:03:04,000 --> 00:03:09,000
+would typically be continuous but of course they're not time variables
+通常是连续的，但当然他们不是时间变量
+
+00:03:09,000 --> 00:03:12,000
+and incidently it's worth
+顺便说一句和它的价值
+
+00:03:12,000 --> 00:03:16,000
+just commenting very often simply for convenience
+只是注释，很多时候只是为了方便
+
+00:03:16,000 --> 00:03:20,000
+will have a tendency to refer to the independent variables when we talk about
+将有一种倾向，指的是自变量，当我们谈论
+
+00:03:20,000 --> 00:03:21,000
+signals
+信号
+
+00:03:21,000 --> 00:03:25,000
+as time variables whether or not the really represent time
+随着时间的变量是否真正代表时间
+
+00:03:25,000 --> 00:03:28,000
+well let me illustrate
+好让我举例说明
+
+00:03:28,000 --> 00:03:32,000
+one example all image and
+一个例子所有的图像和
+
+00:03:32,000 --> 00:03:35,000
+this is a picture jpg for EA
+这是一个JPG格式的图片为EA
+
+00:03:35,000 --> 00:03:39,000
+who perhaps more than anyone else
+也许谁比谁更
+
+00:03:39,000 --> 00:03:42,000
+is responsible for the elegance and beauty
+负责的优雅和美丽
+
+00:03:42,000 --> 00:03:47,000
+a lot of the concepts we'll be talking about throughout this course
+很多的概念我们将在本课程谈论
+
+00:03:47,000 --> 00:03:50,000
+and when you look at this in addition to
+当你看这除了
+
+00:03:50,000 --> 00:03:54,000
+c4a himself you should recognize that what you're looking at
+C4A自己，你应该明白，你在看什么
+
+00:03:54,000 --> 00:03:58,000
+is basically a signal which is brightness as a function
+基本上是一个信号，该信号是亮度的函数
+
+00:03:58,000 --> 00:04:01,000
+the horizontal and vertical spatial variables
+在水平和垂直空间变量
+
+00:04:01,000 --> 00:04:05,000
+as another example
+作为另一个例子
+
+00:04:05,000 --> 00:04:09,000
+an image as a signal let's look at an aerial photograph
+一个图像作为一个信号让我们来看看航拍照片
+
+00:04:09,000 --> 00:04:13,000
+this is an aerial photograph taken
+这是拍摄航空照片
+
+00:04:13,000 --> 00:04:16,000
+over a setter roads which
+在一个setter的道路
+
+00:04:16,000 --> 00:04:19,000
+you can more less recognized in the picture and
+你可以在画面更加减去已确认和
+
+00:04:19,000 --> 00:04:23,000
+wanted the difficulties with this signal is that it
+想与该信号的困难是，它
+
+00:04:23,000 --> 00:04:26,000
+the road system is somewhat obscured by cloud cover
+道路系统是由云层有点模糊
+
+00:04:26,000 --> 00:04:29,000
+and well wanna show later
+并且还有想告诉以后
+
+00:04:29,000 --> 00:04:32,000
+as an example what a system
+作为一个例子什么系统
+
+00:04:32,000 --> 00:04:38,000
+might do to such as signal in terms of processing is an attempt to
+可能会做诸如信号处理方面是企图
+
+00:04:38,000 --> 00:04:41,000
+at least compensate some way for the
+至少一些补偿方式为
+
+00:04:41,000 --> 00:04:46,000
+cloud cover represented in the photograph following terms a
+照片中的代表云层以下条款
+
+00:04:46,000 --> 00:04:49,000
+the detailed analysis we go through during the course are
+我们的过程中，都要经过详细的分析是
+
+00:04:49,000 --> 00:04:53,000
+focus of attention is pretty much restricted to
+关注的焦点是几乎仅限于
+
+00:04:53,000 --> 00:04:57,000
+one-dimensional signals in fact we will be using
+我们将使用实际上一维信号
+
+00:04:57,000 --> 00:05:00,000
+two-dimensional signals more specifically images
+二维信号的更具体的图像
+
+00:05:00,000 --> 00:05:03,000
+very often to illustrate a variety
+经常来说明各种
+
+00:05:03,000 --> 00:05:06,000
+concepts now
+现在概念
+
+00:05:06,000 --> 00:05:10,000
+speech in images are examples
+讲话图像的例子
+
+00:05:10,000 --> 00:05:13,000
+what we refer to as continuous-time signals
+我们称之为连续时间信号
+
+00:05:13,000 --> 00:05:16,000
+in that they are functions
+在它们的功能
+
+00:05:16,000 --> 00:05:19,000
+continuous variables equally
+连续变量同样
+
+00:05:19,000 --> 00:05:23,000
+important classes signals will be concentrating on
+重要的类信号将集中在
+
+00:05:23,000 --> 00:05:27,000
+in the cores are signals are
+在内核信号
+
+00:05:27,000 --> 00:05:30,000
+discrete-time signals
+离散时间信号
+
+00:05:30,000 --> 00:05:33,000
+where by discrete-time we mean
+其中由离散时间我们的意思
+
+00:05:33,000 --> 00:05:36,000
+is that the signal is
+是该信号是
+
+00:05:36,000 --> 00:05:40,000
+a function integer variable
+功能整型变量
+
+00:05:40,000 --> 00:05:43,000
+and so specifically only takes on values
+所以专门只对值
+
+00:05:43,000 --> 00:05:48,000
+at in nature values the argument
+在自然价值的说法
+
+00:05:48,000 --> 00:05:52,000
+so here is a graphical illustration
+所以这里是一个曲线示意图
+
+00:05:52,000 --> 00:05:57,000
+the discrete-time signal and discrete-time signals arise
+离散时间信号与离散时间信号出现
+
+00:05:57,000 --> 00:06:01,000
+in a variety of ways one very common example
+在各种不同的方式1非常常见的例子
+
+00:06:01,000 --> 00:06:07,000
+it seems fairly often is discrete-time signals in the context
+它似乎相当经常是离散时间信号中的上下文
+
+00:06:07,000 --> 00:06:13,000
+economic time series and for example stock market analysis
+经济时间序列和例如股票行情分析
+
+00:06:13,000 --> 00:06:16,000
+so what I show here is one
+所以我在这里展示的是
+
+00:06:16,000 --> 00:06:21,000
+very commonly occurring example the discrete-time signal
+非常普遍发生的示例的离散时间信号
+
+00:06:21,000 --> 00:06:25,000
+it represents the weekly stock market index
+它代表了每周股市指数
+
+00:06:25,000 --> 00:06:28,000
+the independent variable in this case is
+在这种情况下，自变量是
+
+00:06:28,000 --> 00:06:32,000
+the week number and we see what the
+的周数，我们看到了什么
+
+00:06:32,000 --> 00:06:36,000
+stock market is doing over this particular period
+做股票在这个特殊的时期
+
+00:06:36,000 --> 00:06:39,000
+as a function or the number of the week and
+作为一个功能或周数和
+
+00:06:39,000 --> 00:06:43,000
+course along the vertical axis is the
+当然沿着垂直轴是
+
+00:06:43,000 --> 00:06:46,000
+weekly index incidently
+每周顺便说一句指数
+
+00:06:46,000 --> 00:06:49,000
+this particular period was not chosen
+这个特殊的时期没有选择
+
+00:06:49,000 --> 00:06:53,000
+random in fact captures very interesting aspect
+随机事实上捕捉非常有趣的方面
+
+00:06:53,000 --> 00:06:57,000
+stock market history namely the
+股市历史即
+
+00:06:57,000 --> 00:07:00,000
+stock market crash in 1929
+股市崩盘，1929年
+
+00:07:00,000 --> 00:07:04,000
+which in fact is represented by behavior
+这实际上是由行为代表
+
+00:07:04,000 --> 00:07:08,000
+this discrete time signal or sequence
+这种离散时间信号或序列
+
+00:07:08,000 --> 00:07:12,000
+in this particular area so this dramatic dip in fact
+在这方面，其实这样这个戏剧性的浸
+
+00:07:12,000 --> 00:07:16,000
+is the stock market crash 1929
+是股市大跌1929
+
+00:07:16,000 --> 00:07:20,000
+well the dow jones weekly average is an example
+以及道琼斯周平均就是一个例子
+
+00:07:20,000 --> 00:07:24,000
+all a one-dimensional discrete-time signal
+所有一维离散时间信号
+
+00:07:24,000 --> 00:07:27,000
+and just as with continuous time
+而就像连续时间
+
+00:07:27,000 --> 00:07:31,000
+we had not just one-dimensional multi-dimensional signals
+我们有不只是一维的多维信号
+
+00:07:31,000 --> 00:07:35,000
+likewise we have multi-dimensional signals
+同样我们有多维信号
+
+00:07:35,000 --> 00:07:39,000
+in the discrete-time case where
+在离散时间情况下
+
+00:07:39,000 --> 00:07:43,000
+in that case then the discrete-time signal that we're talking about a
+在这种情况下，那么，我们谈论的是一个离散时间信号
+
+00:07:43,000 --> 00:07:44,000
+sequence
+序列
+
+00:07:44,000 --> 00:07:48,000
+is a function love to integer variables
+是一个函数爱整型变量
+
+00:07:48,000 --> 00:07:53,000
+and is one example this might let's say represent a spatial
+并且是一个例子，这可能让我们说代表了空间
+
+00:07:53,000 --> 00:07:56,000
+antenna array where this is
+天线阵列中，这是
+
+00:07:56,000 --> 00:07:59,000
+array number in let's say the horizontal
+在假设的水平阵列数
+
+00:07:59,000 --> 00:08:03,000
+direction and this is array number in the vertical direction
+方向和垂直方向这是序列号
+
+00:08:03,000 --> 00:08:07,000
+both classes signals continuous-time and discrete-time
+这两类信号的连续时间和离散时间
+
+00:08:07,000 --> 00:08:12,000
+as i've indicated are very important and it should be emphasized
+因为我已经表明是非常重要的，它应该强调
+
+00:08:12,000 --> 00:08:17,000
+dead the importance I'll discrete-time signals associated processing
+死者的重要性，我会离散时间信号相关的处理
+
+00:08:17,000 --> 00:08:21,000
+continues to grow in large part because
+持续增长在很大程度上是因为
+
+00:08:21,000 --> 00:08:24,000
+I'll the current and emerging technologies
+我将在当前和新兴技术
+
+00:08:24,000 --> 00:08:28,000
+that permit basically the processing
+该许可证的基本处理
+
+00:08:28,000 --> 00:08:31,000
+or continuous-time signals by
+通过或连续时间信号
+
+00:08:31,000 --> 00:08:34,000
+first converting to discrete-time signals
+第一转换为离散时间信号
+
+00:08:34,000 --> 00:08:38,000
+and processing them with discrete time systems
+并处理它们与离散时间系统
+
+00:08:38,000 --> 00:08:41,000
+and that in fact is a topic that we will
+那其实是一个话题，我们将
+
+00:08:41,000 --> 00:08:47,000
+discuss in a fair manner detail later on in the course
+以公平的方式详细后来在讨论过程
+
+00:08:47,000 --> 00:08:51,000
+let's now turn our attention to systems
+现在让我们把注意力转向系统
+
+00:08:51,000 --> 00:08:54,000
+and as they indicated a system
+当他们表示系统
+
+00:08:54,000 --> 00:08:58,000
+basically processes signals
+基本的信号处理
+
+00:08:58,000 --> 00:09:01,000
+and they have of course inputs
+他们有当然的投入
+
+00:09:01,000 --> 00:09:04,000
+and outputs and depending on
+和输出，这取决于
+
+00:09:04,000 --> 00:09:08,000
+whether we're talking about continuous-time for discrete-time
+无论我们谈论的连续时间的离散时间
+
+00:09:08,000 --> 00:09:12,000
+the system maybe a continuous-time system
+该系统可能是连续时间系统
+
+00:09:12,000 --> 00:09:16,000
+or a discrete-time system so in the continuous-time
+或离散时间系统，以便在连续时间
+
+00:09:16,000 --> 00:09:19,000
+case I indicate here in input: accept T
+情况下，我在此表明在输入：接受Ŧ
+
+00:09:19,000 --> 00:09:22,000
+and an output y ft if we were talking
+和一个输出y英尺，如果我们谈论
+
+00:09:22,000 --> 00:09:25,000
+about discrete-time system I would represent
+关于离散时间系统我会代表
+
+00:09:25,000 --> 00:09:29,000
+the the input in terms a discrete-time
+的输入条件中一个离散时间
+
+00:09:29,000 --> 00:09:32,000
+variable and of course the output interns a
+变量和过程的输出实习生
+
+00:09:32,000 --> 00:09:36,000
+discrete-time variable also
+离散时间变量也
+
+00:09:36,000 --> 00:09:40,000
+now in very general terms systems are hard to deal with
+现在非常笼统系统是很难对付
+
+00:09:40,000 --> 00:09:45,000
+because is they are defined very broadly a very generally
+因为被他们定义非常广泛非常普遍
+
+00:09:45,000 --> 00:09:49,000
+and in dealing with systems and analyzing
+和在处理系统和分析
+
+00:09:49,000 --> 00:09:52,000
+what we will do is attempt to exploit
+我们将要做的是尝试利用
+
+00:09:52,000 --> 00:09:56,000
+some very specific and as we'll see
+一些非常具体的，正如我们将看到
+
+00:09:56,000 --> 00:09:59,000
+very useful system properties
+非常有用的系统性能
+
+00:09:59,000 --> 00:10:04,000
+to indicate what I mean and how things might be split up
+以表明我的意思和事情如何可能被分拆
+
+00:10:04,000 --> 00:10:07,000
+we could talk about systems and we'll talk about systems
+我们可以谈论系统，我们将讨论系统
+
+00:10:07,000 --> 00:10:11,000
+that are linear and we could
+是线性的，我们可以
+
+00:10:11,000 --> 00:10:15,000
+divide systems basically into systems that are either linear
+分割系统基本上成，要么线性系统
+
+00:10:15,000 --> 00:10:19,000
+or nonlinear and we will
+或非线性的，我们将
+
+00:10:19,000 --> 00:10:24,000
+or and also devices turns into systems that are
+或者，也装置变成是系统
+
+00:10:24,000 --> 00:10:27,000
+what we refer to as time-invariant
+我们称之为时间不变
+
+00:10:27,000 --> 00:10:31,000
+or time-varying systems and these aren't turns that
+或时变系统和这些都不是原来的
+
+00:10:31,000 --> 00:10:35,000
+we've defined yet of course but we will be defining
+我们尚未定义，当然，但我们将定义
+
+00:10:35,000 --> 00:10:38,000
+in the course very shortly and while
+在使用过程很快，虽然
+
+00:10:38,000 --> 00:10:43,000
+in some sense this division represents all systems and this those two
+在某种意义上，这个师代表所有的系统，这这两个
+
+00:10:43,000 --> 00:10:47,000
+the focus of the course is really going to be principally
+本课程的重点是真的要成为主要
+
+00:10:47,000 --> 00:10:50,000
+on linear time-invariant systems
+线性时不变系统
+
+00:10:50,000 --> 00:10:54,000
+so in its basically the system's
+所以在其基本系统的
+
+00:10:54,000 --> 00:10:57,000
+that we will be focusing on and
+我们将专注于与
+
+00:10:57,000 --> 00:11:01,000
+will be referring to those systems as linear
+将参照这些系统为线性
+
+00:11:01,000 --> 00:11:04,000
+time-invariant systems
+时不变系统
+
+00:11:04,000 --> 00:11:09,000
+well as a free clip said some other kinds of things that systems can do
+以及免费的夹子说，一些其他种类的东西，系统可以做
+
+00:11:09,000 --> 00:11:13,000
+let me illustrate first in
+让我先说明
+
+00:11:13,000 --> 00:11:16,000
+I a one-dimensional continuous-time
+余的一维连续时间
+
+00:11:16,000 --> 00:11:21,000
+context and then later with a discrete-time example
+上下文，然后后用一个离散时间的例子
+
+00:11:21,000 --> 00:11:25,000
+one example I'll some processing
+一个例子，我将一些处理
+
+00:11:25,000 --> 00:11:28,000
+I'll signals with an appropriate system
+我将信号与一个合适的制度
+
+00:11:28,000 --> 00:11:31,000
+the particular example that I want to illustrate
+我想说明的特定示例中
+
+00:11:31,000 --> 00:11:35,000
+relates to the restoration or old recordings
+涉及恢复或老录音
+
+00:11:35,000 --> 00:11:40,000
+and missus some work that was done by Professor Thomas stocker who
+和太太，是由教授托马斯收容器做了一些工作，谁
+
+00:11:40,000 --> 00:11:45,000
+is at the University Utah and work that he had done a number of years ago
+是在犹他大学和工作，他已经做了若干年前
+
+00:11:45,000 --> 00:11:49,000
+relating to the fact day in all recordings
+有关事实在一天的所有记录
+
+00:11:49,000 --> 00:11:53,000
+for example in caruso recordings
+例如，在卡鲁索录音
+
+00:11:53,000 --> 00:11:57,000
+the recording was done through mechanical morning
+录音是通过机械上午完成
+
+00:11:57,000 --> 00:12:01,000
+and the characteristics love the horn tended to vary from day to day
+和特性爱喇叭倾向于改变每一天
+
+00:12:01,000 --> 00:12:04,000
+and because if the characteristics of the horn
+并且，因为如果喇叭的特征
+
+00:12:04,000 --> 00:12:08,000
+the recording tended to have a muffled quality something like
+录音往往有一个低沉的品质像
+
+00:12:08,000 --> 00:12:11,000
+yes sorta the sense that you would get
+是八九不离十的感觉，你会得到
+
+00:12:11,000 --> 00:12:15,000
+if you were speaking through a megaphone
+如果你是通过扩音器说
+
+00:12:15,000 --> 00:12:18,000
+what professor stock and it was developed a system
+教授什么股票和它开发了一个系统
+
+00:12:18,000 --> 00:12:22,000
+to process these old recordings
+处理这些老录音
+
+00:12:22,000 --> 00:12:25,000
+in such a way dead a lot or
+以这样的方式死了很多或
+
+00:12:25,000 --> 00:12:28,000
+the characteristics and distortion do
+的特性和失真做
+
+00:12:28,000 --> 00:12:31,000
+to that recording system was removed so I'd like to
+到被删除的记录系统，所以我想
+
+00:12:31,000 --> 00:12:36,000
+illustrate that as one example some signal processing with an appropriate
+说明，作为一个例子用适当的一些信号处理
+
+00:12:36,000 --> 00:12:40,000
+continuous-time system and what you'll hear
+连续时间系统和你会听到
+
+00:12:40,000 --> 00:12:43,000
+is a to track recording
+是跟踪记录
+
+00:12:43,000 --> 00:12:47,000
+on the first track is the original on restored
+在第一轨道是恢复了原来的
+
+00:12:47,000 --> 00:12:51,000
+caruso recording and on the second track
+卡鲁索记录和第二记录道
+
+00:12:51,000 --> 00:12:55,000
+is the result of the restoration and so as I switch back and forth
+是恢复的效果，因此，我来​​回切换
+
+00:12:55,000 --> 00:12:59,000
+from channel one to channel two will be switching from
+从通道一个通道两人将来自被切换
+
+00:12:59,000 --> 00:13:03,000
+the original to the restored will begin the tape
+原来的恢复将开始磁带
+
+00:13:03,000 --> 00:13:07,000
+by playing the original and
+玩原件及
+
+00:13:07,000 --> 00:13:10,000
+day and as it proceeds will switch
+一天，因为它的收益就会切换
+
+00:13:10,000 --> 00:13:15,000
+so we begin on channel one
+所以我们开始通道一
+
+00:13:15,000 --> 00:13:21,000
+low pS The Regent
+低PS丽晶酒店
+
+00:13:21,000 --> 00:13:27,000
+switch now process middle
+现在切换过程中间
+
+00:13:27,000 --> 00:13:31,000
+him home
+他回家
+
+00:13:31,000 --> 00:13:35,000
+his back 0 hit
+他回0命中
+
+00:13:35,000 --> 00:13:42,000
+back to the original p
+返回到原来的对
+
+00:13:42,000 --> 00:13:46,000
+I read
+我读
+
+00:13:46,000 --> 00:13:49,000
+back to the restoration
+回复
+
+00:13:49,000 --> 00:13:52,000
+mine yard
+矿堆场
+
+00:13:52,000 --> 00:13:55,000
+home
+家
+
+00:13:55,000 --> 00:13:59,000
+and once again back to the rigid
+并再次回到刚性
+
+00:13:59,000 --> 00:14:04,000
+mid
+中
+
+00:14:04,000 --> 00:14:07,000
+and presumably and hopefully what you heard
+想必，希望你听到
+
+00:14:07,000 --> 00:14:11,000
+was dead in the restoration in fact a lot of the muffled
+死在事实上恢复了很多的闷响
+
+00:14:11,000 --> 00:14:15,000
+characteristics the original recording
+特色的原始录音
+
+00:14:15,000 --> 00:14:19,000
+were compensated for or remove now
+对于被补偿或者现在删除
+
+00:14:19,000 --> 00:14:23,000
+one of the interesting things that happened in fact in the work that
+的发生，其实在工作中有趣的事情之一
+
+00:14:23,000 --> 00:14:28,000
+lesser Stockham did is that in the process of the restoration and perhaps
+小Stockham确实是在恢复的过程中，也许
+
+00:14:28,000 --> 00:14:29,000
+you've heard this
+你听说过这个
+
+00:14:29,000 --> 00:14:34,000
+in the process of the restoration in fact some other background noise on the
+在实际上恢复过程的一些其他背景噪音
+
+00:14:34,000 --> 00:14:35,000
+recording
+记录
+
+00:14:35,000 --> 00:14:39,000
+was emphasize and so he processed
+被强调，所以他处理
+
+00:14:39,000 --> 00:14:43,000
+this the signal further in an attempt to
+这在尝试将信号进一步
+
+00:14:43,000 --> 00:14:47,000
+remove that background noise and with that particular processing the
+去除背景噪声，并与特定的处理
+
+00:14:47,000 --> 00:14:48,000
+processing
+处理
+
+00:14:48,000 --> 00:14:52,000
+was very highly nonlinear a very interesting thing happened
+很是高度非线性的一个非常有趣的事情发生了
+
+00:14:52,000 --> 00:14:57,000
+which was that not only in at processing
+这是不仅在加工时
+
+00:14:57,000 --> 00:15:01,000
+was the background noise removal but somewhat surprisingly
+是背景噪声去除，但有些令人惊讶
+
+00:15:01,000 --> 00:15:05,000
+also the orchestra was and let me just plain bad
+还乐团是，让我只是普通的坏
+
+00:15:05,000 --> 00:15:10,000
+now as an example love some very sophisticated processing
+现在作为一个例子喜欢一些很复杂的处理
+
+00:15:10,000 --> 00:15:14,000
+with the nonlinear system what you'll hear on channel one
+与非线性系统，你会听到通道一什么
+
+00:15:14,000 --> 00:15:17,000
+0 is the restoration as
+0是恢复为
+
+00:15:17,000 --> 00:15:20,000
+we just plated when I switch to chat
+我们只是镀当我切换到聊天
+
+00:15:20,000 --> 00:15:23,000
+to will the Hampton
+以将在汉普顿
+
+00:15:23,000 --> 00:15:27,000
+processing him home
+处理他回家
+
+00:15:27,000 --> 00:15:31,000
+and acted one now
+并担任一个吧
+
+00:15:31,000 --> 00:15:36,000
+0 would im
+0会即时通讯
+
+00:15:36,000 --> 00:15:39,000
+hell
+地狱
+
+00:15:39,000 --> 00:15:41,000
+now inside
+现在里面
+
+00:15:41,000 --> 00:15:47,000
+back
+后面
+
+00:15:47,000 --> 00:15:50,000
+why did
+何必当初
+
+00:15:50,000 --> 00:15:56,000
+well
+好
+
+00:15:56,000 --> 00:15:59,000
+him
+他
+
+00:15:59,000 --> 00:16:02,000
+finally once again world
+终于又一次世界
+
+00:16:02,000 --> 00:16:09,000
+okay so
+好了，
+
+00:16:12,000 --> 00:16:15,000
+that's an example love processing Ave
+这是一个例子爱情加工大道
+
+00:16:15,000 --> 00:16:20,000
+continuous-time signal with a corresponding continuous-time
+与相应的连续时间的连续时间信号
+
+00:16:20,000 --> 00:16:24,000
+system now I'd like to illustrate an example
+系统现在我想说明一个例子
+
+00:16:24,000 --> 00:16:29,000
+some processing discrete-time signal and I'd like to do that in the context that
+一些处理离散时间信号，我想这样做的背景下，
+
+00:16:29,000 --> 00:16:30,000
+the example
+该示例
+
+00:16:30,000 --> 00:16:33,000
+ratio before a discrete-time signal which was
+这是一个离散时间信号之前比
+
+00:16:33,000 --> 00:16:38,000
+the dow jones industrial weekly stock market index
+道琼斯工业周刊股市指数
+
+00:16:38,000 --> 00:16:41,000
+I head shown it before as
+我以前作为顶头表明，它
+
+00:16:41,000 --> 00:16:45,000
+I've shown it here again over a period
+我已经过了一段显示在这里再次
+
+00:16:45,000 --> 00:16:48,000
+of slightly more than a year where this
+比去年略多，其中这
+
+00:16:48,000 --> 00:16:52,000
+is the number of weeks and this is the
+是的周数，这是
+
+00:16:52,000 --> 00:16:55,000
+weekly index and to illustrate
+每周指数和说明
+
+00:16:55,000 --> 00:16:59,000
+some of the processing what I'd like to do
+一些我想要做的处理
+
+00:16:59,000 --> 00:17:02,000
+is show the stock market index
+是显示股市指数
+
+00:17:02,000 --> 00:17:06,000
+weekly index over a much longer time period a particular
+每周指数在更长的时间内某一特定
+
+00:17:06,000 --> 00:17:09,000
+the weekly index over a ten year period
+每周指数在十年内
+
+00:17:09,000 --> 00:17:12,000
+and that's what I show here so
+这就是我在这里展示等等
+
+00:17:12,000 --> 00:17:16,000
+what this covers is roughly 1927
+这是什么占地面积大约是1927年
+
+00:17:16,000 --> 00:17:19,000
+to 1937 and
+到1937年，
+
+00:17:19,000 --> 00:17:23,000
+in this case although this is still a discrete-time signal
+在这种情况下，尽管这仍然是一个离散时间信号
+
+00:17:23,000 --> 00:17:27,000
+just simply for the purposes display what we've done
+只是单纯的目的，显示我们做了什么
+
+00:17:27,000 --> 00:17:30,000
+is to essentially connect the dots and
+为从根本上连接点和
+
+00:17:30,000 --> 00:17:35,000
+draw continuous curve through the points so that this picture isn't filled up
+通过点画出连续的曲线，使这幅画是不是充满了
+
+00:17:35,000 --> 00:17:36,000
+with a lot of vertical lines
+有很多的垂直线
+
+00:17:36,000 --> 00:17:40,000
+so this is the discrete-time sequence
+所以这是离散时间序列
+
+00:17:40,000 --> 00:17:43,000
+represents the weekly Dow Jones
+代表每周道琼斯
+
+00:17:43,000 --> 00:17:47,000
+Dow Jones index over a 10-year period and
+道琼斯指数在10年的时间和
+
+00:17:47,000 --> 00:17:52,000
+here by the way again is the crash of
+这里顺便说又是坠毁
+
+00:17:52,000 --> 00:17:56,000
+it's interesting to note by the way day
+这是有趣的一天的方式
+
+00:17:56,000 --> 00:18:01,000
+actually the disaster in the stock market wasn't so much the 1929 crash
+实际上在股市的灾难是没有这么多的1929年崩溃
+
+00:18:01,000 --> 00:18:06,000
+but the long downward trend that follow that and you can see that here
+但长期下降趋势遵循这一点，你可以看到，这里
+
+00:18:06,000 --> 00:18:10,000
+by kinda filtering through by I
+通过还挺通过我过滤
+
+00:18:10,000 --> 00:18:14,000
+the rapid variations in the index and what you see is this
+在索引中，你看到了什么变化迅速这是
+
+00:18:14,000 --> 00:18:17,000
+smooth downward trend followed
+平滑下降的趋势跟随
+
+00:18:17,000 --> 00:18:23,000
+eventually by upward trend now
+最终被上升的趋势现在
+
+00:18:23,000 --> 00:18:28,000
+this issue love looking at something like this looking at a sequence
+这个问题喜欢看这样的事情在看一个序列
+
+00:18:28,000 --> 00:18:33,000
+and following the smoother parts if it namely
+和以下的平滑的部分，如果它即
+
+00:18:33,000 --> 00:18:37,000
+the long-term trends is in fact something
+长期趋势其实东西
+
+00:18:37,000 --> 00:18:41,000
+that is done quite typically with economic time series like this
+这是与经济时间序列这样做得比较典型的
+
+00:18:41,000 --> 00:18:45,000
+and in particular what's done is to smooth it
+特别是什么做的是它光滑
+
+00:18:45,000 --> 00:18:49,000
+or average over some time period
+或平均超过一定时间段
+
+00:18:49,000 --> 00:18:56,000
+to emphasize the slow variations and de-emphasize the rapid variations
+要强调的缓慢变化和贬低的迅速变化
+
+00:18:56,000 --> 00:19:00,000
+and that in fact is processing that is done
+并且，实际上是加工完成
+
+00:19:00,000 --> 00:19:05,000
+with discrete-time system solos when you hear referred to let's say
+与当听到简称假设离散时间系统的独奏
+
+00:19:05,000 --> 00:19:09,000
+in stock market reports fifty one day moving average
+在股市报告51天均线
+
+00:19:09,000 --> 00:19:14,000
+that in fact is processing the stock market index
+这实际上是处理股市指数
+
+00:19:14,000 --> 00:19:18,000
+with a particular discrete-time system the result
+与一个特定的离散时间系统的结果
+
+00:19:18,000 --> 00:19:21,000
+up doing that on this particular example
+这样做了，在这个特殊的例子
+
+00:19:21,000 --> 00:19:26,000
+generates a smooth version the curve which I overly here
+产生一个平滑的版本的曲线，我在这里过度
+
+00:19:26,000 --> 00:19:30,000
+and the overlay
+和覆盖
+
+00:19:30,000 --> 00:19:33,000
+than is really attempting to track the
+不是真的试图追踪
+
+00:19:33,000 --> 00:19:37,000
+smoother variations and deemphasized
+平滑的变化和去加重
+
+00:19:37,000 --> 00:19:40,000
+more rapid variations let me just
+更快速的变化让我
+
+00:19:40,000 --> 00:19:44,000
+slightly offset that so that the different stands out a little more
+稍微偏移，使不同的突出一点
+
+00:19:44,000 --> 00:19:48,000
+and so here you see what is
+所以在这里你看到的是什么
+
+00:19:48,000 --> 00:19:51,000
+the original weekly index and
+原周指数和
+
+00:19:51,000 --> 00:19:55,000
+this is the result processing that sequence
+这是该序列的处理结果
+
+00:19:55,000 --> 00:19:58,000
+with inappropriate system
+用不恰当的系统
+
+00:19:58,000 --> 00:20:02,000
+to apply smoothing and in fact
+应用平滑和实际上
+
+00:20:02,000 --> 00:20:05,000
+what it is is a moving average and so here again
+它是什么是移动平均线，所以在这里再次
+
+00:20:05,000 --> 00:20:08,000
+you can see the in the smooth occurred
+你可以看到在光滑的发生
+
+00:20:08,000 --> 00:20:11,000
+this general downward trend
+这个一般呈下降趋势
+
+00:20:11,000 --> 00:20:15,000
+up until this time period followed by eventually
+直到这个时间段之后，最终
+
+00:20:15,000 --> 00:20:19,000
+recovery I well we've seen
+恢复我很好，我们已经看到
+
+00:20:19,000 --> 00:20:23,000
+example with a continuous-time signals
+例如用一个连续时间信号
+
+00:20:23,000 --> 00:20:27,000
+caruso recording an example with the discrete-time signal
+卡鲁索记录的例子与离散时间信号
+
+00:20:27,000 --> 00:20:30,000
+this stock market index and what I'd also like to show
+此股票大盘指数，什么我也想展示
+
+00:20:30,000 --> 00:20:34,000
+is 30 example which is
+是30的例子是
+
+00:20:34,000 --> 00:20:38,000
+the result some processing on an image in particular
+其结果，尤其在图像上的一些处理
+
+00:20:38,000 --> 00:20:41,000
+the image that we talked about before which was the aerial photographs
+我们之前谈到的图像是空中拍摄的照片
+
+00:20:41,000 --> 00:20:45,000
+that had the problem some cloud cover
+这有一些问题云层
+
+00:20:45,000 --> 00:20:48,000
+so once again what we see here
+所以再次我们在这里看到的
+
+00:20:48,000 --> 00:20:51,000
+is the original aerial photograph
+是原来的航空照片
+
+00:20:51,000 --> 00:20:55,000
+with the cloud cover and
+与云量和
+
+00:20:55,000 --> 00:20:58,000
+some processing was applied to this using a system
+一些加工被施加到该一个使用系统
+
+00:20:58,000 --> 00:21:01,000
+which in fact was both nonlinear
+这实际上是两个非线性
+
+00:21:01,000 --> 00:21:05,000
+and quote time-varying or in the case
+和报价时间变化或情况
+
+00:21:05,000 --> 00:21:10,000
+these independent variables would refer to it as spatially varying
+这些独立变量将引用它作为空间变化
+
+00:21:10,000 --> 00:21:14,000
+and the result applying that processing
+其结果应用该处理
+
+00:21:14,000 --> 00:21:17,000
+is shown in the joining
+所示的接合
+
+00:21:17,000 --> 00:21:21,000
+picture and what we see the air is
+图片和我们所看到的是空气
+
+00:21:21,000 --> 00:21:24,000
+hopefully a reasonable attempt
+希望在合理的尝试
+
+00:21:24,000 --> 00:21:27,000
+to compensate for the cloud cover and
+以补偿云层和
+
+00:21:27,000 --> 00:21:32,000
+this by the way was some work was done by Professor
+这样的方式被一些工作是由教授做
+
+00:21:32,000 --> 00:21:35,000
+them MIT and has been
+他们麻省理工学院和已
+
+00:21:35,000 --> 00:21:38,000
+very successful type processing were
+非常成功的类型分别处理
+
+00:21:38,000 --> 00:21:41,000
+aerial photographs I should say also
+空中拍摄的照片我也要说
+
+00:21:41,000 --> 00:21:46,000
+that this particular example is one where although the original signal
+这个特定的例子是其中虽然对原始信号
+
+00:21:46,000 --> 00:21:51,000
+was a signal dead is continuous time that is
+是一个信号，死是连续的时间是
+
+00:21:51,000 --> 00:21:55,000
+the independent variables are continuous as they are in a spatial
+独立变量是连续的，因为它们是在空间
+
+00:21:55,000 --> 00:21:59,000
+aerial photograph in fact for the processing
+航空照片实际上为加工
+
+00:21:59,000 --> 00:22:02,000
+that picture was first converted to a sequence
+该图象首先被转换为一个序列
+
+00:22:02,000 --> 00:22:06,000
+through a process called sampling which will be talking about later
+通过这个过程被称为采样稍后将谈论
+
+00:22:06,000 --> 00:22:12,000
+and then the processing in fact was done on a digital computer
+然后实际上该处理在数字计算机上被做
+
+00:22:12,000 --> 00:22:16,000
+okay well these then are some examples
+还好以及这些然后是一些例子
+
+00:22:16,000 --> 00:22:19,000
+all the use I'll some
+全部使用我会一些
+
+00:22:19,000 --> 00:22:22,000
+systems to process
+系统处理
+
+00:22:22,000 --> 00:22:26,000
+some signals both in continuous-time
+无论是在连续时间的一些信号
+
+00:22:26,000 --> 00:22:30,000
+in discrete-time for one-dimensional signals
+在离散时间为一维信号
+
+00:22:30,000 --> 00:22:34,000
+and for multi-dimensional signals
+和多维信号
+
+00:22:34,000 --> 00:22:38,000
+and as I kinda refer to systems we've
+和我还挺指我们已经系统
+
+00:22:38,000 --> 00:22:41,000
+thought of them as kinda one big block with appropriate
+认为他们会用适当的还挺一大块
+
+00:22:41,000 --> 00:22:44,000
+or associated input and output and
+或相关联的输入和输出，并
+
+00:22:44,000 --> 00:22:48,000
+as will be getting into in the first part of the course
+如将要进入的过程的第一部分
+
+00:22:48,000 --> 00:22:52,000
+very often systems are interconnected together
+很多时候系统相互连接在一起
+
+00:22:52,000 --> 00:22:56,000
+for a variety of reasons some other kinds of interconnections that will talk
+适用于各种原因，某些其他类型的互连，将谈
+
+00:22:56,000 --> 00:22:58,000
+about
+关于
+
+00:22:58,000 --> 00:23:01,000
+are connecting systems
+正在连接系统
+
+00:23:01,000 --> 00:23:05,000
+in what are called series are cascaded connections
+在所谓的一系列级联连接
+
+00:23:05,000 --> 00:23:08,000
+parallel interconnections feedback
+并行互连反馈
+
+00:23:08,000 --> 00:23:12,000
+interconnections and feedback interconnections
+互连和反馈互连
+
+00:23:12,000 --> 00:23:15,000
+in fact are very interesting very important
+其实是很有趣很重要
+
+00:23:15,000 --> 00:23:18,000
+for useful and will be major topic
+有用的，将是重大课题
+
+00:23:18,000 --> 00:23:22,000
+toward the end of the course feedback
+对课程的反馈月底
+
+00:23:22,000 --> 00:23:25,000
+as you may or may not know
+因为您可能会或可能不知道
+
+00:23:25,000 --> 00:23:29,000
+comes into play in a variety of situations
+进场时在各种情况下
+
+00:23:29,000 --> 00:23:32,000
+for example an amplifier design is we'll talk about
+例如一个放大器的设计是我们将讨论
+
+00:23:32,000 --> 00:23:36,000
+the black feedback plays an important role
+黑色的反馈中起着重要作用
+
+00:23:36,000 --> 00:23:40,000
+in a situation where you have
+在一个情况下，你有
+
+00:23:40,000 --> 00:23:45,000
+a basically unstable system feedback is often used to stabilize the system
+一个基本上是不稳定的系统反馈通常被用来使系统稳定
+
+00:23:45,000 --> 00:23:49,000
+and feedback interconnections systems in that sense
+和反馈互连的系统在这个意义上
+
+00:23:49,000 --> 00:23:52,000
+are very often used in high-performance aircraft
+很多时候在高性能飞机上使用
+
+00:23:52,000 --> 00:23:56,000
+which are inherently unstable and are stabilized
+这本质上是不稳定的，是稳定的
+
+00:23:56,000 --> 00:23:59,000
+this kind in action
+这种在行动
+
+00:23:59,000 --> 00:24:02,000
+just two give you a little sense this
+只是两个给你一点感觉这
+
+00:24:02,000 --> 00:24:05,000
+without going into any of the details
+无需进入任何细节
+
+00:24:05,000 --> 00:24:10,000
+what i'd like to show you is and excerpt
+我想告诉你的是，并摘录
+
+00:24:10,000 --> 00:24:14,000
+from a lecture day
+从当天的演讲
+
+00:24:14,000 --> 00:24:17,000
+we'll be seeing toward the end of the course relating to
+我们将看到对课程的有关结束
+
+00:24:17,000 --> 00:24:22,000
+feedback analysis a feedback systems and uses a feedback
+反馈分析反馈系统，并使用反馈
+
+00:24:22,000 --> 00:24:25,000
+and this is in the context what's referred to
+这是在上下文中发生了什么被称为
+
+00:24:25,000 --> 00:24:28,000
+as the inverted pendulum which is
+作为倒立摆是
+
+00:24:28,000 --> 00:24:31,000
+system that's basically unstable feedback
+系统基本上是不稳定的反馈
+
+00:24:31,000 --> 00:24:35,000
+interconnections are used to stabilize the idea
+互连用于稳定主意
+
+00:24:35,000 --> 00:24:39,000
+as you'll see in this brief clip is that
+您将在这个简短的片段看到的是，
+
+00:24:39,000 --> 00:24:42,000
+there is a cart that's moving on a track
+有一种车是在动的轨道上
+
+00:24:42,000 --> 00:24:45,000
+with a ride its pivoted at the base
+用它搭在旋转底座
+
+00:24:45,000 --> 00:24:49,000
+and so that system in the absence anything
+并且使系统在不存在任何
+
+00:24:49,000 --> 00:24:52,000
+is unstable in that the ride attend for
+是不稳定的，该搭出席
+
+00:24:52,000 --> 00:24:55,000
+and as we going to in detail in the lecture
+当我们要在详细的演讲
+
+00:24:55,000 --> 00:24:59,000
+later use feedback to
+以后使用反馈
+
+00:24:59,000 --> 00:25:03,000
+position the card under the pendulum to balance it
+定位摆下的卡来平衡它
+
+00:25:03,000 --> 00:25:06,000
+and in fact that balancing can be done even
+而事实上该平衡甚至可以做
+
+00:25:06,000 --> 00:25:10,000
+when we modify the system in a variety of ways
+当我们修改了系统在各种不同的方式
+
+00:25:10,000 --> 00:25:13,000
+as you'll see in this clip so let's take a look at that
+您将在这个剪辑看到让我们来看看这
+
+00:25:13,000 --> 00:25:17,000
+remembering that this is just a brief excerpt
+记住，这只是一个简短的摘录
+
+00:25:17,000 --> 00:25:21,000
+from a longer discussion I can change the
+从一个较长的讨论中，我可以改变
+
+00:25:21,000 --> 00:25:25,000
+overall system even further by
+整个系统甚至进一步
+
+00:25:25,000 --> 00:25:28,000
+let's say for example pouring a liquid
+比方说，例如浇液体
+
+00:25:28,000 --> 00:25:31,000
+and now let me also comment that
+现在让我也评论说，
+
+00:25:31,000 --> 00:25:35,000
+change the physics of a little bit because the
+改变一点点的物理，因为
+
+00:25:35,000 --> 00:25:38,000
+the liquid can slash around a little bit comes a little more complicated
+液体可绕一点点的斜线来有点复杂
+
+00:25:38,000 --> 00:25:42,000
+system but as you can see it still
+系统，但你仍然可以看到它
+
+00:25:42,000 --> 00:25:45,000
+remains balance
+保持平衡
+
+00:25:45,000 --> 00:25:49,000
+as you'll see when we get to it by the way that demonstration was a lot of fun
+你会看到，当我们得到它的方式，示范是一个很大的乐趣
+
+00:25:49,000 --> 00:25:51,000
+to do
+做
+
+00:25:51,000 --> 00:25:57,000
+now in talking about signals and systems as we go through the course
+现在谈论信号与系统，因为我们经历的过程
+
+00:25:57,000 --> 00:26:01,000
+their are several domains to in particular
+他们有几个域，特别是
+
+00:26:01,000 --> 00:26:04,000
+that we will find convenient for
+我们会找到方便
+
+00:26:04,000 --> 00:26:10,000
+the analysis and representation signals and systems
+分析和表示信号与系统
+
+00:26:10,000 --> 00:26:13,000
+one is the time-domain
+1是时域
+
+00:26:13,000 --> 00:26:17,000
+which is what we tend to think
+这就是我们倾向于认为
+
+00:26:17,000 --> 00:26:20,000
+and which we have kind of been focusing on
+样的，我们一直专注于这
+
+00:26:20,000 --> 00:26:23,000
+in the discussion so far in this lecture
+在本次讲座的讨论至今
+
+00:26:23,000 --> 00:26:27,000
+by equally important is what's referred to
+通过同样重要的是什么的简称
+
+00:26:27,000 --> 00:26:30,000
+as the frequency-domain
+作为频域
+
+00:26:30,000 --> 00:26:34,000
+as representation for signals
+作为代表性的信号
+
+00:26:34,000 --> 00:26:37,000
+and as a means for analysis for systems
+和作为分析系统的装置
+
+00:26:37,000 --> 00:26:42,000
+and in the context or the frequency-domain representation
+并在上下文或频域表示
+
+00:26:42,000 --> 00:26:46,000
+some old the kinds a ideas on topics that will be exploring
+一些老种一个想法主题，将探讨
+
+00:26:46,000 --> 00:26:49,000
+are the Fourier transform and
+被傅里叶变换和
+
+00:26:49,000 --> 00:26:53,000
+the le plus transform and
+乐加变换和
+
+00:26:53,000 --> 00:26:57,000
+a discrete-time counterpart the apostrophe is for which is the sea
+离散时间对应的撇号是它是海
+
+00:26:57,000 --> 00:26:59,000
+transport
+运输
+
+00:26:59,000 --> 00:27:04,000
+the Fourier transform discussion will get into fairly early in the course
+傅里叶变换的讨论将进入在使用过程中相当早
+
+00:27:04,000 --> 00:27:07,000
+and the La Paz transforming z transform
+和拉巴斯转化Z变换
+
+00:27:07,000 --> 00:27:12,000
+represent extensions the 48 transform and will be getting into
+代表分机48变换，将进入
+
+00:27:12,000 --> 00:27:15,000
+that later in the course just kinda initially
+后来在使用过程中只是有点初步
+
+00:27:15,000 --> 00:27:20,000
+to think about the time domain and frequency domain
+思考的时域和频域
+
+00:27:20,000 --> 00:27:23,000
+you might think for example over No being played
+你可能会认为，例如在没有播放
+
+00:27:23,000 --> 00:27:27,000
+and the time-domain representation would be
+和时域表示法。将
+
+00:27:27,000 --> 00:27:30,000
+how let's say the
+怎么让我们说，
+
+00:27:30,000 --> 00:27:34,000
+sound pressure as a function of time would change
+声压与时间的函数将改变
+
+00:27:34,000 --> 00:27:37,000
+and the frequency domain representation would
+和频域表示将
+
+00:27:37,000 --> 00:27:41,000
+correspond to representation the frequency content
+对应表示的频率成分
+
+00:27:41,000 --> 00:27:45,000
+the No and in fact what I'd like to do is
+否，事实上我想要做的是什么
+
+00:27:45,000 --> 00:27:49,000
+illustrate that and those two domain simultaneously
+同时表明，与这两个领域
+
+00:27:49,000 --> 00:27:52,000
+by playing a glockenspiel
+打一个钟琴
+
+00:27:52,000 --> 00:27:55,000
+no which'll here is the No
+没有which'll这里是无
+
+00:27:55,000 --> 00:27:59,000
+repeated several times over and at the same time
+过，并在同一时间重复数次
+
+00:27:59,000 --> 00:28:02,000
+you'll see to displays one on the left
+你会看到，以显示一个在左边
+
+00:28:02,000 --> 00:28:06,000
+representing the time domain display a representation
+表示时间域显示一个表示
+
+00:28:06,000 --> 00:28:10,000
+the signal and the one on the right representing the frequency
+在表示频率的右信号和所述一个
+
+00:28:10,000 --> 00:28:13,000
+me so let's look at that and
+我所以让我们来看看这一点，
+
+00:28:13,000 --> 00:28:20,000
+you'll hear the note and simultaneously see these two displays
+你会听到的音符，同时看到这两个显示器
+
+00:28:21,000 --> 00:28:24,000
+there's the No on the left time
+有否在左边时
+
+00:28:24,000 --> 00:28:28,000
+ways and on the right what we see
+方式和我们所看到的权利
+
+00:28:28,000 --> 00:28:32,000
+is frequency content in particular
+是在特定的频率内容
+
+00:28:32,000 --> 00:28:35,000
+indicating the fact dead there are several harmonics
+指示该事实死有多个谐波
+
+00:28:35,000 --> 00:28:42,000
+lines tell
+线条诉说
+
+00:28:54,000 --> 00:28:57,000
+okay well what I've gone thru
+还好还有什么我已经走通
+
+00:28:57,000 --> 00:29:01,000
+in this lecture represents a brief overview
+在此讲学代表简要介绍
+
+00:29:01,000 --> 00:29:07,000
+signals and systems and beginning with the next lecture we will be
+信号与系统，并开始与下一讲中我们将
+
+00:29:07,000 --> 00:29:11,000
+much more specific and precise first
+更加具体和精确的第一
+
+00:29:11,000 --> 00:29:14,000
+discussing some basic signals and then
+讨论了一些基本的信号，然后
+
+00:29:14,000 --> 00:29:18,000
+talking about systems and system properties and how to exploit
+谈到系统和系统属性，以及如何利用
+
+00:29:18,000 --> 00:29:23,000
+as one final comment that I'd
+因为，我会最后一个评论
+
+00:29:23,000 --> 00:29:27,000
+like to making this lecture I'd like to
+喜欢做这个演讲，我想
+
+00:29:27,000 --> 00:29:30,000
+emphasizes at the out said
+强调在说出来
+
+00:29:30,000 --> 00:29:34,000
+dead the taped lectures
+死者的讲课录音
+
+00:29:34,000 --> 00:29:37,000
+represent only one com- ponent the cores
+代表只有一个com-分量的核心
+
+00:29:37,000 --> 00:29:40,000
+and equally important will be
+而同样重要的将是
+
+00:29:40,000 --> 00:29:45,000
+both the textbook and the video course manual in particular
+无论是教科书，特别是视频课程手册
+
+00:29:45,000 --> 00:29:49,000
+it's important not only to reviewing the tapes
+它不仅要检讨磁带重要
+
+00:29:49,000 --> 00:29:55,000
+but simultaneously or in conjunction with that
+但同时或在与该结合
+
+00:29:55,000 --> 00:29:58,000
+doing the appropriate reading in the textbook and
+做适当的阅读课本和
+
+00:29:58,000 --> 00:30:02,000
+also working through the problems carefully
+通过问题也正在仔细
+
+00:30:02,000 --> 00:30:06,000
+in the video course manual in a course like this
+在这样的过程中，视频课程手册
+
+00:30:06,000 --> 00:30:10,000
+you basically only get out a bit as much as you put into it
+你基本上只得到了一点因为你把它尽可能多
+
+00:30:10,000 --> 00:30:13,000
+the hope is dead if you put the
+如果你把希望死的
+
+00:30:13,000 --> 00:30:18,000
+right amount of time and effort into it you'll find the course to be
+你会发现过程是正确的时间和精力进去
+
+00:30:18,000 --> 00:30:22,000
+educational and interesting and I certainly hope that will be the case
+教育和有趣，我当然希望会是这样
+
+00:30:22,000 --> 00:30:22,000
+thank you
+谢谢
+

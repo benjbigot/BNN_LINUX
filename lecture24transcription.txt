@@ -1,0 +1,697 @@
+000040~003450~the following content is provided under a Creative Commons license
+003490~003639~your support will help MIT OpenCourseWare continue to offer
+007129~003451~high-quality educational resources for free
+010580~003780~to make a donation or view additional materials from hundreds of them IT
+014360~000670~courses
+015030~003080~visit MIT OpenCourseWare at 0 CW
+018110~007000~that MIT that EDU home in
+029130~000730~the
+029860~001620~
+031480~002640~the
+034120~005720~the in
+039840~005510~the menu
+045350~003430~are
+048780~007000~for last time we
+057180~004010~introduce the notion that mapping continuous-time filters to discrete-time
+061190~004240~filters and we developed in Polson variance as
+065430~003939~one useful technique for carrying out that type mapping
+069369~003631~but I'd like to do in this lecture
+073000~004729~is illustrate in Polson variants as a design procedure
+077729~003461~in the context so one specific
+081190~003200~class all filters namely Butterworth filters
+084390~004580~and in then following that will proceed on to discuss
+088970~005120~another very important and useful mapping or design procedure referred to
+094090~001730~as the by linear transformation
+095820~003240~so to begin let me
+099060~003770~just discuss briefly what the class a Butterworth
+102830~004550~filters is and specifically
+107380~003239~the Butterworth filters are the fine
+110619~004421~through their frequency response a transfer function and I'm
+115040~003259~using capital be to denote a Butterworth filter
+118299~004460~and by definition the magnitude square to the frequency responsible Butterworth
+122759~000671~filter
+123430~003170~is given by this expression and for example
+126600~003859~if and more equal to 1 then this would simply
+130459~004271~correspond to the magnitude squared love the frequency response
+134730~004420~for a first order differential equation now if you
+139150~003640~look at the frequency response be a filmmaker
+142790~003130~for this class the filters
+145920~003520~I've illustrated that below and
+149440~003350~what we see is that
+152790~003250~the frequency response starts at Unity
+156040~003650~because that's that's the way that its normalized and it has
+159690~004329~a monatomic characteristic in the past band and the stop and
+164019~004840~at a frequency equal to the pram inner Omega subsea
+168859~003301~up here which is referred to as the cutoff frequency
+172160~003130~the Butterworth filter frequency response
+175290~003800~always goes through the same point namely point 707
+179090~005030~and as the order the Butterworth filter capital and
+184120~003339~increases the transition
+187459~003601~from the passband to the stop band
+191060~004329~becomes sharper and sharper so for higher-order filters then
+195389~003021~the frequency response is flattering the passband
+198410~003759~and drops of more quickly and attenuates more
+202169~003320~in this topic now
+205489~003271~in designing Butterworth filters what we
+208760~004080~we want to look at is the location at the polls
+212840~003859~all the system function and
+216699~003290~we can in for those from our definition
+219989~003331~I'll what the frequency response for the Butterworth filter is
+223320~003400~in particular we have this expression
+226720~004040~for the magnitude squared the frequency response
+230760~003729~and we recognize that of course as
+234489~004310~be love J Omega times be
+238799~004451~love minus J Omega that's what the magnitude squared
+243250~003910~will be equal to and in order to convert this
+247160~004979~to an expression describing the system function or in terms that the
+252139~003081~more general applause transform variable ass
+255220~003680~well we recognize is dead J Omega
+258900~004359~in the more general setting simply corresponds to
+263259~003341~the applause transform variable s so
+266600~003080~this product in fact
+269680~004140~is the applause transform for st. go to jail make a
+273820~004680~more generally then this is the result of evaluating
+278500~003949~be a vast eyes be a minus S&S equals J Omega
+282449~003981~consequently comparing this expression
+286430~003440~with this statement leads us to the conclusion
+289870~003240~dead the transfer function be a badass
+293110~004200~the Butterworth filter times be off minus s
+297310~003350~is given by the expression that I indicate here
+300660~004789~simply replacing J Omega by S
+305449~003851~now what we want to look at are the holes
+309300~004209~all be a vast that's what we'll want to get as we
+313509~003351~design a Butterworth filter and
+316860~003920~we can recognize the polls love this product
+320780~003669~simply by looking at the roots at the denominator polynomial
+324449~004761~and those roots are just taking a counter this factor 2n
+329210~004470~those routes are at J Omega subsea
+333680~003440~times the 2n roots I'll
+337120~005530~-1 those roots in fact all I on a circle
+342650~005009~an the consequences that is that
+347659~005470~the holes all this expression
+353129~003040~are on a circle the circle
+356169~004601~is radius omega-6 see and the polls are distributed
+360770~003850~around the circle so here I demonstrated
+364620~003740~the polls love be a vast size be at minus s
+368360~004500~for the specific case for capital and is equal to 3 so there are a total of six
+372860~001109~polls
+373969~003181~around the circle and
+377150~003660~then for this specific case the polls a space by
+380810~005220~sixty degrees now we have PSA's be at minus s
+386030~004180~to get the system function for the Butterworth filter we'd like to get
+390210~004889~BFS and the question now is how do we get that
+395099~003790~well the thing to recognize is dead wherever
+398889~003610~this factor has a route
+402499~003130~this factor has to have a root at
+405629~005970~the negative location so in fact when we look at these polls we compare them
+411599~003361~with this for example associated with be a badass
+414960~003259~this associated with the at minus s and
+418219~004801~likewise we compare these two together likewise we compare these two together
+423020~003440~and so we can extract the evas from this product
+426460~004880~simply by taking one poll at a beach those pairs
+431340~005129~now a question of course is I did each pair which one do we associate with BFS
+436469~003000~wish to associate with the minus says
+439469~003030~and the answer drops out fairly simply
+442499~003401~if we recognize dead if
+445900~004310~we want to design filters that are stable
+450210~003079~then be a vast the transfer function that we're designing
+453289~003150~must have all its polls in the left after the S play
+456439~004421~so in fact we would associate outta each of these pairs
+460860~004119~we would associate the left airplane poll with the evas
+464979~004291~and so the transfer function
+469270~005199~for the Butterworth filter for this particular case where the parameter
+474469~003241~where this designates the parameter Omega subsea
+477710~003679~capital and his three namely a third order Butterworth filter
+481389~003261~is this center pole locations given those
+484650~004599~of course we can figure out simply throughout your break means
+489249~004100~what the transfer function be a veces
+493349~003921~alright so that's what in Butterworth filters are in now
+497270~003160~what I'd like to do is talk about
+500430~004870~the design or additional Butterworth filter
+505300~004839~using the design technique that we introduced last time namely in polls and
+510139~001550~variance
+511689~003511~and the context in which I will
+515200~003190~phrase the design is the context
+518390~003029~love mapping a
+521419~003411~continuous-time signal to a discrete-time signal
+524830~003270~carrying out filtering using the discrete-time
+528100~003730~go to that we're designing and then mapping back so
+531830~004790~we're talking about now a discrete-time filter
+536620~003730~that we want to designed to impose severe in variance from
+540350~003460~Butterworth filters from continues time Butterworth filters
+543810~003610~and we're going to get our design specifications
+547420~003350~in the context loved having
+550770~004120~considered discrete-time processing of continuous-time signals
+554890~003020~where we will map from
+557910~004720~a continuous-time signal to a sequence
+562630~003620~carry out the filtering with the discrete-time filter
+566250~005030~that we're going to design and then
+571280~003920~we will take the resulting filtered output
+575200~004730~and map it back to the continuous-time signals
+579930~003580~but this discrete-time filter is
+583510~003470~the one that we're talking about designing and
+586980~003700~for choice a parameter there's a sampling frequency of course involved in
+590680~001230~this process
+591910~003550~and the value that I'll pick for the sampling frequency
+595460~003360~is 10 killers
+598820~003210~okay all fairly straightforward so far
+602030~003440~and so since we have a
+605470~003680~sampling rate of 10 killer hurts we
+609150~005270~want to first look at our specifications
+614420~003520~on the desired continuous type filter
+617940~003470~and then mapped those to appropriate
+621410~003140~specifications on the discrete I told
+624550~003120~and what I'll pick for the
+627670~004430~desired specifications on the continuous-time filter
+632100~003330~is that at
+635430~004040~one kilohertz I will ask
+639470~003790~that the continuous-time frequency response
+643260~004930~be down by no more then 1db
+648190~004940~in comparison with its value at Omega equal 0
+653130~004480~so that in effect specifies the behavior in the past band
+657610~003670~for the specifications on the passband and
+661280~003080~for the stop band specify dead
+664360~004430~the filter is down by 15 DB
+668790~004060~by the time we've gotten to one-and-a-half kilohertz
+672850~004430~so we have in essentially the beginning of the transition band the end of the
+677280~002000~past and it won't kill hurts
+679280~004580~and the beginning at the stop and at one point five killer hurts
+683860~003120~and since we're talking about designing
+686980~004120~a Butterworth filter we know that the Butterworth filter is
+691100~003660~monatomic in the past and stop and and so
+694760~003750~will have a filter specification
+698510~003180~something is a show here this represents
+701690~003230~the allowable passband tolerance
+704920~003260~this is the allowable stop and tolerance
+708180~003090~and if I can draw this without
+711270~004900~getting myself into trouble a sexually were looking for a filter then
+716170~004820~then always stays between
+720990~003200~the specified boundaries
+724190~003350~here
+727540~004920~now what we have to figure out is what the corresponding specifications
+732460~003780~are for the digital filter in the strategy let me emphasize
+736240~003330~is dead we have
+739570~003820~situation where we're doing continuous-time and discrete-time
+743390~003740~processing continuous-time signals
+747130~004720~and we have specifications associated with that
+751850~003300~that imposes specifications on our discrete-time
+755150~003130~filter and then we wanted design
+758280~003860~the discrete-time filter using impose invariance
+762140~005220~and that's the discrete I feel to their will use the overall system
+767360~003760~right now we want specifications
+771120~003380~on the discrete-time filter
+774500~005040~and we want the continuous overall equivalent system
+779540~003090~to have certain arm
+782630~003660~meet certain specifications a certain frequencies related to
+786290~003500~continuous-time frequencies recall
+789790~004780~that when we sample a continuous-time signal
+794570~003710~is a very specific mapping from the continuous-time
+798280~003310~frequency axis to the discrete-time frequency axis
+801590~003150~in particular the sampling frequency
+804740~004410~gets mapped to to Part II
+809150~004150~well that means there are other critical frequencies get mapped
+813300~004660~in proportion to that so one killer hurts which is a 10
+817960~003240~love the sampling frequency with then
+821200~004650~convert to a discrete-time frequency love point2 pie
+825850~003890~and one-and-a-half kilohertz will convert to
+829740~004880~a discreet I frequency love point three pie
+834620~003390~so what this says is that for the discrete-time
+838010~003120~filter we would like
+841130~003130~the same behavior
+844260~003610~but at frequencies are the same specifications
+847870~003110~but at frequencies normalize
+850980~003390~to the discrete-time frequency axis
+854370~003990~that means dead we want the discrete-time
+858360~003390~frequency Mac frequency response magnitude
+861750~003040~to be greater than or equal to -1 DB at
+864790~005280~two-tenths pie corresponding to the one killer hurts and continuous-time
+870070~003180~and four the beginning
+873250~004170~love this top band in that would occur at point three pie
+877420~004800~at which point we want this less than or equal to minus 15
+882220~003460~so those are our discreet I specifications
+885680~003620~and we now wanted design the
+889300~004950~discrete-time filter using impulse and parents
+894250~003870~now in the polls in variance as you recall
+898120~003510~it corresponds to
+901630~004020~sampling generating an impulse response which is a sampled
+905650~004140~version love the continuous-time impulse response
+909790~003830~and there is a temptation naturally
+913620~003590~to think love this parameter capital T
+917210~003440~as necessarily identical
+920650~003000~to the sampling
+923650~004060~in the system in which the filter is going to be use
+927710~004640~now this is a fairly subtle complicated tongue twisting issue
+932350~004130~but the bottom line on at the essential point
+936480~005390~is that the parameter capital T that we use in imposing variant
+941870~003920~design as a totally different unrelated
+945790~004490~and in fact as it turns out arbitrary parameter
+950280~003860~which is not necessarilly pegged
+954140~004550~to the sampling frequency and I think it would be difficult for me to totally
+958690~001650~clarify that
+960340~004220~during the lecture it's discussed more the book
+964560~004260~and certainly you should take plenty of time to reflect on
+968820~003200~for it but let's no look then
+972020~003690~at where we are in our design procedure
+975710~003820~and specifically what it is that we need to do
+979530~004050~in order to design the digital
+983580~004000~Butterworth filter now we have
+987580~003090~a set of specifications there we
+990670~003630~we've generated relating essentially to
+994300~003040~how we want the passband if the digital filter
+997340~003750~and the stop and above the digital filter to behave
+1001090~003580~course since this isn't an ideal filter
+1004670~004200~it has sound transitions from passband to stop and
+1008870~003920~and as we discussed last time there is
+1012790~004390~aliasing which we need to at least beware oath
+1017180~004400~we specified certain frequencies along this axis
+1021580~003670~which are easily converted by
+1025250~003909~relating the the two axes through this mapping
+1029159~004050~are you easily related back to
+1033209~003110~the continuous-time
+1036319~004730~frequency axis as we have here
+1041049~003510~and in particular now if we
+1044559~005250~word is simply pick that parameter in the imposing variant design capital T
+1049809~005211~as equal to unity and I indicated just a minute ago that we can pick it
+1055020~001899~arbitrarily
+1056919~005151~if I a pic is unity then the procedure which consists
+1062070~003530~about designing the continuous-time Butterworth filter
+1065600~004610~with meeting the pro or exceeding the appropriate specifications
+1070210~004870~and then going through the imposing variant procedure
+1075080~005990~alright so let's do that then
+1081070~005079~we want the discrete-time impulse response to be the continuous-time
+1086149~004931~paul's response sampled and for convenience I'm going to pick this
+1091080~003520~parameter capital T equal to 1
+1094600~004689~that means dead the frequency normalization between
+1099289~003490~the discrete-time frequency axis and the continuous-time
+1102779~003620~frequency axis in fact is
+1106399~003551~those axes are scaled identically because
+1109950~003660~capital T is equal to 1 and so now
+1113610~003949~we want the analog for continuous-time
+1117559~004250~specifications and so what we need to do then
+1121809~004580~is design a Butterworth filter I'm using capital be here again to denote
+1126389~004731~the frequency response the Butterworth filter the Butterworth filter
+1131120~004189~to have a magnitude which is greater than or equal to -1 DB
+1135309~004291~prior to the frequency 0.2 pie
+1139600~003750~and less than or equal to -15 at a frequency
+1143350~004429~beyond 0.3 part
+1147779~005010~and so now what we need to do is determine
+1152789~003311~capital and and Omega subsea
+1156100~005100~in order to meet or exceed the specifications
+1161200~004370~now if you go through The Associated algebra doing at let's say that
+1165570~003079~you decide that you want a pic capital and omega-6
+1168649~003701~see to exactly meet those inequalities at
+1172350~004449~the to frequencies point to point point three pie
+1176799~003021~what you'll find after going through the algebra
+1179820~003000~is that there exactly Matt
+1182820~003189~if capital and is 5.88
+1186009~003181~and omega-6 see is point 7047
+1189190~003380~and this obviously can't
+1192570~004120~is in satisfactory as parameters for the Butterworth filter
+1196690~003170~why is that the reason is
+1199860~003529~that capital and isn't an integer and in
+1203389~004110~the class a Butterworth filters to generate a rational transfer function
+1207499~003721~capital N this parameter must be an integer
+1211220~004589~so since it can't be 5.88
+1215809~003360~the natural thing to do is to move it up
+1219169~003110~to the next closest integer namely 6
+1222279~005140~and that means that will end up with a filter that goes even better
+1227419~003771~in the specifications on the other hand
+1231190~003059~there's something kinda underneath the surface
+1234249~004071~dead is inherent in the impulsive area design procedure
+1238320~004439~namely the fact dad there will always be some aliasing
+1242759~003650~so one strategy and a natural one often
+1246409~005081~imposing variant design is to
+1251490~004500~shoes and as the next highest integer as I've done
+1255990~003549~and then shoes the parameter omega-6 see
+1259539~004301~so that the passband specifications
+1263840~004390~are exactly met and the stop and specifications are then slightly
+1268230~000960~exceeded
+1269190~004660~and that will leave some margin for releasing
+1273850~003590~right now continuing this example then
+1277440~004469~how would we complete the design
+1281909~003600~well we know what are two parameters
+1285509~003981~capital and and omega-6
+1289490~004700~CR in that means that we can determine BFS
+1294190~003559~times be at minus s those polls are located
+1297749~004471~on a circle in the complex s plane
+1302220~004130~and the polls on that circle are paired
+1306350~004329~Sat some being associated with BFS and some would be a minus s
+1310679~004120~and in particular to determined be a badass
+1314799~003470~we would simply take the polls
+1318269~003711~on the portion of the circle it's in the left after the S
+1321980~003299~point now
+1325279~003561~with active service is a
+1328840~004939~butterworth continuous-time filter
+1333779~004000~which we're then mapping to impose invariance
+1337779~003081~with capital T equal to 1 to
+1340860~003870~a discrete-time filter that discrete-time filter
+1344730~003429~to be used in a system
+1348159~003201~which has disassociated sampling frequency
+1351360~003259~which is 10 killer hurts
+1354619~003130~so to get the discrete-time filter then
+1357749~004140~we first determine be a vast as we just did
+1361889~003451~or at least they indicated how to do it
+1365340~005380~we would then expand that out in a partial fraction expansion
+1370720~003679~and then apply the imposing variant procedure
+1374399~003671~which consists love mapping the polls
+1378070~005679~in the S plane to polls in the seaplane at locations either the s2k
+1383749~003571~capital T your capital T is equal to 1
+1387320~003900~and retaining the residue where the coefficients
+1391220~003079~in the expansion and this ban
+1394299~003480~will give us the transfer function for the discrete-time
+1397779~003291~filter so
+1401070~003290~if in fact we
+1404360~004639~did at than the resulting frequency response
+1408999~003060~that we would get is what i've indicated here
+1412059~004141~and I indicated first on a magnitude
+1416200~003780~scale linear magnitude scale and second
+1419980~003529~on a like a rhythmic scale and
+1423509~003290~as we had originally specified the digital filter
+1426799~004291~is supposed to be greater than a recall to
+1431090~005370~-1 dB at point to pie and less than or equal to -15
+1436460~003099~the be at point three pie
+1439559~004190~and in fact this slightly exceeds the specifications
+1443749~004201~since we had purposely allowed some margin
+1447950~006120~in this topic
+1454070~005079~now this is an illustration of the impulse invariant procedure
+1459149~004600~and it has a number very nice properties one of which is that
+1463749~004321~it takes a continuous-time filter frequency response
+1468070~005120~and it converts it to a discrete-time frequency response which
+1473190~004410~in the absence Bailey is saying looks identical except for linear frequency
+1477600~004850~scale change and in fact we pick capital T equal to one in there is no scale
+1482450~001079~change
+1483529~003510~it has the major disadvantage
+1487039~003950~dead there is always daily as saying and for some
+1490989~004810~design for some problems for example if the filter we're trying to design
+1495799~003320~is not ban limited or low pass
+1499119~005690~then the alias saying will actually become intolerable
+1504809~003850~well there's another design procedure which I now want to introduce
+1508659~004000~which totally avoids the problems have aliasing
+1512659~003710~but obviously then has its own costs associated with
+1516369~003420~and that procedure is referred to as
+1519789~004661~the by linear transformation
+1524450~003370~the by linear transformation which our own
+1527820~004020~try to drive here in any detail
+1531840~003819~is a mapping love continuous-time filters
+1535659~004531~to discrete-time filters corresponding
+1540190~003579~to taking the applause transform variable ass
+1543769~004181~in the continuous-time filter and replacing it
+1547950~005650~by what is referred to as a file in your function at z
+1553600~003370~and so if I substitute this in here
+1556970~005409~that will give me the discrete-time frequency response
+1562379~003331~again in this procedure there's a primer capital T
+1565710~003659~which again is totally irrelevant given the approach that we're taking
+1569369~003760~and which we will generally tend to normalize out to unity
+1573129~004481~and let me just say quickly and passing
+1577610~003319~dead although we all go through this the
+1580929~003310~notion of the by linear transformation
+1584239~003190~can be tied to the concept love
+1587429~004220~taking the differential equation for the continuous-time
+1591649~004541~filter converting it to an integral equation by integrating
+1596190~003000~enough times on both sides
+1599190~003429~and then converting Matt to
+1602619~004040~a difference equation by approximating
+1606659~003551~the integrals with the trapezoidal rule
+1610210~003089~and that in effect will correspond
+1613299~003740~to mapping the continuous-time filter to a discrete-time
+1617039~004411~filter with the by linear transformation well we'll just focus on
+1621450~004390~the properties love the mapping and in particular
+1625840~003209~if we were to substitute into
+1629049~007000~the expression see equal to you DJ Omega corresponding to the unit circle
+1636690~003219~we would find dead the unit circle
+1639909~004931~in discrete-time corresponds to mapping
+1644840~004439~DJ Omega axis in continuous-time which is exactly
+1649279~003120~what we want now the mapping
+1652399~003650~between the continuous-time frequency
+1656049~003141~and the discrete-time frequency
+1659190~003170~is a nonlinear mapping which
+1662360~004179~is given by the algebraic expression that I indicate here
+1666539~004811~and if we plot this mapping
+1671350~004579~but we have is this Kurt
+1675929~004130~and what this corresponds to then
+1680059~006430~is a mapping cause the J Omega axis or continuous time-frequency
+1686489~003810~to discrete-time frequency
+1690299~004580~and if we think more generally oath the mapping represented by the by a linear
+1694879~001851~transformation
+1696730~003069~in the context of the S plane in the seaplane
+1699799~003301~it corresponds to mapping
+1703100~003009~DJ Omega axis in the S plane
+1706109~003920~to what's around the unit circle in the seaplane
+1710029~003600~and you can also convince yourself
+1713629~003691~that the left after the S plane maps
+1717320~003140~to the inside the unit circle and
+1720460~003159~so that means dead stable
+1723619~003040~continuous-time filters will always map to stable
+1726659~004650~discrete-time filters which is exactly what we desire
+1731309~004791~now notice in this that there's no issue avail yes and what's happened is
+1736100~003590~that we've replaced espy function FZ corresponds to
+1739690~004849~mapping BS point too busy playing fact the whole J Omega axes
+1744539~005120~has mapped to once around the unit circle
+1749659~005600~which obviously requires some type of nonlinear mapping because
+1755259~003370~like the jamming axis is infinitely long
+1758629~003000~the unit circle has a fine I radius
+1761629~003341~and so essentially what has to happen is if you think
+1764970~003049~love walking along the continuous-time
+1768019~005250~frequency axis and simultaneously walking around the unit circle
+1773269~003260~if you walk at a constant rate around the unit circle
+1776529~003911~and your simultaneously walking up the jam a axis
+1780440~003770~if you want to get around the pie by the time
+1784210~003740~here you've gotten tune infinity along
+1787950~003219~the continuous-time frequency axis you better
+1791169~004690~wats kittens are walking faster faster faster because you've got
+1795859~005510~an infinite distance to cover while you just go over a finite distance here
+1801369~003520~well worldwide says really is that
+1804889~003870~that's why in fact we're taking
+1808759~003971~the entire or were able to take the entire
+1812730~003639~Omega axis and just map it into an interval
+1816369~006611~all above link pie
+1822980~003360~right now that means that their
+1826340~004010~is a nonlinear distortion of the frequency axis
+1830350~003370~if we were to take a continuous I filter and converted to
+1833720~004159~a discrete type filter with the by a linear transformation
+1837879~003441~how do we account for that were for that matter
+1841320~003849~when can we really use it and
+1845169~003401~we can see how to had a both take account of it
+1848570~003630~and what its limitations are by
+1852200~003510~recognizing the following suppose that
+1855710~003079~I wanted design a
+1858789~003870~discretized salter and
+1862659~004760~what is going to happen is that it will be mapped to a continuous-time filter
+1867419~001421~the relationship between
+1868840~005439~the two frequency axes will be given by this Kurt
+1874279~003191~so let's supposed dead the
+1877470~004399~continuous-time frequency response looks as I've shown here
+1881869~006030~with a passband cutoff frequency and its top and cut-off frequency
+1887899~003081~if this were mapped
+1890980~003299~through the by a linear transformation to
+1894279~003740~a discrete-time filter then this cutoff frequency
+1898019~003740~would fall over here
+1901759~003331~which is related through this curve and
+1905090~003079~this cutoff frequency to stop and age
+1908169~005771~would be here again reflected it's these frequencies reflected
+1913940~003000~through this skirt
+1916940~004959~so let's suppose now that what I'd like to do is design
+1921899~005811~a discrete-time filter where the discrete-time filter has
+1927710~003250~certain frequency specifications
+1930960~003069~which is what are previous example has
+1934029~003350~it has let's say a specified stop and age
+1937379~005701~as specified past bandage and assess specified stop and age
+1943080~003500~the design procedure within correspond to
+1946580~004490~mapping those frequencies
+1951070~005189~to the corresponding continuous-time frequencies
+1956259~003081~designing the continuous-time filter
+1959340~003289~to me this specification space
+1962629~003860~on those critical frequencies
+1966489~003611~then taking the continuous-time design
+1970100~003750~and mapping it back to a discrete I filter
+1973850~003709~through the by linear transformation
+1977559~003210~right now what we want to do is
+1980769~004350~again map a Butterworth filter continuous-time Butterworth filter to
+1985119~004640~to a digital filter in such a way that the digital filter approximately
+1989759~003961~meets the specifications that we had before
+1993720~003009~and let me just remind you love where we were
+1996729~005101~the critical frequencies were at 0.2 pie
+2001830~003370~and 0.3 pie and
+2005200~004620~what we had asked for is dead the frequency response
+2009820~003620~be down by no more than one dB
+2013440~003760~up 2.2 pie and down by
+2017200~004370~at least 15 TV at Point three-part
+2021570~003770~so we want to design the same
+2025340~004120~discrete-time filter as we did before with imposing variance
+2029460~003319~we now want to do it with the by linear transformation
+2032779~006580~applied to an appropriate butterworth design
+2039359~006611~okay well so let's see what kinda specifications we have
+2045970~004250~we know that the frequency the critical frequencies are mapped
+2050220~003320~through this curve for this equation
+2053540~004660~and I indicated again that this parameter capital T is
+2058200~003630~arbitrary in the design procedure
+2061830~003450~that may seem confusing initially but
+2065280~003980~this some further discussion of it in the book and it's true an important to
+2069260~001750~sort out
+2071010~004090~so we're going to pick capital T equal to unity
+2075100~003769~and that means then that the
+2078869~003010~corresponding critical frequencies
+2081879~003141~all the continuous-time filter
+2085020~003010~are at twice but ancient love
+2088030~003740~0.2 pie over to and twice the tangent
+2091770~003139~love 0.3 pie over to
+2094909~004011~so that means then there the specifications on
+2098920~003470~our continuous-time filter
+2102390~003380~are given by this sensually
+2105770~003589~past fans stop and edges warped through
+2109359~003210~that nonlinear curve this nonlinear curve
+2112569~003831~and I'm using capital G here to denote
+2116400~003530~the system function for the
+2119930~004369~resulting continuous-time salter
+2124299~004451~and so now we could think of designing a Butterworth filter
+2128750~005740~that lets say exactly meets the specifications
+2134490~003379~well if you do that what you'll find is dead
+2137869~003411~you get exact a quality
+2141280~004779~here if you pick capital N
+2146059~003711~equal to 5.3
+2149770~004010~and again we have the issue that
+2153780~004000~if we want to meet or exceed the specifications we can't make
+2157780~003509~the filter order lower we have to make it higher and so
+2161289~005750~we would make it is so to 5.3 with make the filter order equal to 6
+2167039~003231~and now again we have several
+2170270~003990~options and trade-offs before with imposing variance
+2174260~004500~we essentially decided to meet the
+2178760~004210~passband specifications and exceed the stop and specifications
+2182970~003889~to provide some margin for aliasing
+2186859~003291~here we don't have any a leasing
+2190150~003300~and we can't ratings of any way we'd like
+2193450~003250~the way that are chosen to do it is to
+2196700~003190~exactly me the
+2199890~004300~stop and cut off and exceed
+2204190~003639~the passband specifications and
+2207829~003520~the result to doing that is to choose
+2211349~003470~a filter order capital and equal to 6%
+2214819~004141~and though parameter Omega subsea in the Butterworth filter
+2218960~005359~is given by 0.7 6622
+2224319~003240~alright so now we have
+2227559~003631~the parameters for
+2231190~003580~the continuous-time Butterworth filter
+2234770~003319~which when mapped to
+2238089~004371~the discrete-time filter through the by linear transformation
+2242460~004200~will exceed our requirements in the past band and Justin
+2246660~003649~just me the stop and cut off and so
+2250309~003821~now we want to complete the design procedure and
+2254130~004110~given the parameters
+2258240~003660~up the Butterworth filter we can draw
+2261900~004439~are appropriate circle in the S plane which happens to be the same circle as
+2266339~000831~before
+2267170~003580~but with a different radius and
+2270750~004460~then associate polls on this circle
+2275210~004810~with be a bass and be a minus s in particular take the ones in the left
+2280020~002110~after the S plane
+2282130~004959~same ones we had before except we have a different value for Omega subsea
+2287089~003191~in and does then represent
+2290280~006549~BFS so we can now determine be a badass
+2296829~004561~and new ones we have the transfer function be a badass
+2301390~003199~we then map that to a
+2304589~003391~discrete-time filter by mapping through
+2307980~004069~the by linear transformation and that then
+2312049~003211~is the design procedure through
+2315260~005079~which we would follow for this example by well let's just see what
+2320339~003901~the result looks like when we're done
+2324240~003410~here I show again on both
+2327650~003290~a linear magnitude scale in on
+2330940~003869~a logarithmic good DB scale the frequency response
+2334809~005911~love the resulting filter and recall that the specifications were dead 8.2
+2340720~001200~pie
+2341920~004580~we should be down by no more than 1d being clearly we've exceeded that
+2346500~001619~considerably
+2348119~003281~and 8.3 pie we should be
+2351400~005090~are down by at least 15 DB and we chose the design so that we would exactly
+2356490~003700~meet that edge so we've met this point
+2360190~003849~and exceeded this point and this is our Design
+2364039~003471~now let's just compare this
+2367510~003480~with the impulse invariant design that we saw
+2370990~003819~a few minutes ago
+2374809~003391~and the impossibility and design is
+2378200~003210~what I indicate here be
+2381410~003030~by linear transformation design is
+2384440~003419~now overlaid on top of that
+2387859~003531~it's hard to see much difference on a linear
+2391390~003449~magnitude scale but let's look online horrific scale
+2394839~005941~and this one that I'm lifting is the by linear transformation
+2400780~003039~and this is imposing variance
+2403819~004091~and notice in fact something very interesting
+2407910~004280~which is dead the sold the
+2412190~003500~filter dead we obtained by
+2415690~004260~mapping the Butterworth filter to a digital filter through the by a linear
+2419950~001669~transformation
+2421619~003061~in fact falls off in frequency
+2424680~006990~much more rapidly then the one that we got through imposing variance
+2431670~005199~the question is why now one thought that might come to mind is well we possibly
+2436869~003861~Reince as a leasing by linear transformation doesn't have a leasing
+2440730~004270~that must be a consequence a daily as saying
+2445000~004520~in fact that's not the reason aliasing as it turns out in this particular
+2449520~001559~design is raw
+2451079~003371~was relatively minimal in the opossum variant design
+2454450~003190~the reason has to do with
+2457640~004389~is nonlinear mapping in the by a linear transformation
+2462029~004871~from the continuous-time frequency to the discrete-time frequency
+2466900~003949~keep in mind dead through then mapping
+2470849~004861~as you start walking around the unit circle and moving up the Chi Omega axis
+2475710~005730~as you move up the jam make access you have to move faster faster faster faster
+2481440~005950~and what's in continuous-time frequency and infinity
+2487390~004510~is what you get to in a discrete-time frequency by the time you get around the
+2491900~001000~park
+2492900~003990~so in fact what we're looking at is
+2496890~003659~as as we look out along this frequency axis
+2500549~003351~is we're seeing
+2503900~003740~higher and higher and higher frequencies in the continuous-time
+2507640~003689~filter by the time we get the pie
+2511329~004280~we should in fact be in the continuous-time goals are equivalent Lee
+2515609~007000~off to infinity which sounds like pretty uncomfortable place to be
+2524369~003321~okay now this was a a fairly
+2527690~004030~rapid trip through a number of issues
+2531720~002960~i in particular some the issues associated with the filing your
+2534680~001619~transformation
+2536299~003050~and and also this issue
+2539349~005121~love how you pick this parameter capital T and how it might be associated with
+2544470~000540~the
+2545010~003170~sampling frequency if you doing discrete-time processing
+2548180~004200~a continuous-time signals and we don't have time
+2552380~003399~to explore summer those issues more fully
+2555779~004491~in this lecture but in I'd like to conclude by making a
+2560270~003360~couple comments 1 comment is there the
+2563630~004159~two techniques that we've talked about impulse and Berrien center by linear
+2567789~001691~transformation
+2569480~003139~are the two techniques that are principally
+2572619~003291~used when one thinks mapping
+2575910~003060~continuous type filters to discrete-time
+2578970~003960~filters for whatever application and I stress again
+2582930~004450~that you may want to do that mapping whether or not
+2587380~004229~the discrete-time filter is eventually going to be used for processing
+2591609~004371~continuous-time signals
+2595980~003280~now imposing variants
+2599260~004359~have a characteristic dead it very nice characteristic that are
+2603619~005440~that it corresponds to a linear mapping between the two frequency axes
+2609059~003151~except for the issue with aliasing
+2612210~005020~and that's a problem with that and in particular limits its usefulness
+2617230~004119~to filter designs or for mapping continuous-time
+2621349~005240~filters their band limited
+2626589~004831~on the other hand we have the by linear transformation as a design procedure
+2631420~003929~which totally avoid daily as saying
+2635349~003871~but has the disadvantage or difficulty
+2639220~004010~better represents a nonlinear mapping from the continuous type filter
+2643230~004000~to the discrete-time filter now this nonlinear distortion
+2647230~003910~is perfectly acceptable if we're designing
+2651140~005270~or attempting to designed filters that have flack frequency characteristics
+2656410~004990~it's not acceptable if for example we had a linear frequency characteristic
+2661400~003780~that we wanted to map to discreet I filter and end up with a linear
+2665180~001629~frequency characteristic
+2666809~003730~it won't come out to be linear because all
+2670539~003721~this nonlinear mapping at the frequency axis
+2674260~003329~now in there are also
+2677589~003720~a number of other design procedures which we won't go into
+2681309~003800~for designing discrete-time filters and among them
+2685109~004861~are a variety of techniques including for example
+2689970~004260~computer-aided design procedures and I invite you
+2694230~003210~if you're interested and want to dig into that
+2697440~003139~in more detail and more deeply to
+2700579~004510~explore that topic by making reference to
+2705089~004121~various love the books listed in the bibliography
+2709210~001430~in the text thank you

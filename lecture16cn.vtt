@@ -1,0 +1,2840 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+以下内容是根据Creative Commons授权提供
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+您的支持将有助于麻省理工学院开放式课程继续报价
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+免费优质教育资源
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+进行捐赠或查看附加材料由数百人资讯
+
+00:00:14,000 --> 00:00:15,000
+courses
+课程
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+参观麻省理工学院开放式课程在0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU ha for the
+麻省理工学院的EDU公顷的
+
+00:00:29,000 --> 00:00:31,000
+the
+该
+
+00:00:31,000 --> 00:00:38,000
+the in
+在该
+
+00:00:38,000 --> 00:00:45,000
+the new the we concluded the last lecture
+我们得出的结论，最后讲座在新的
+
+00:00:57,000 --> 00:01:01,000
+with the statement above the sampling theorem and just as a quick reminder
+与上述采样定理，只是作为一个快速提醒的声明
+
+00:01:01,000 --> 00:01:05,000
+the sampling theorem said that
+采样定理说
+
+00:01:05,000 --> 00:01:08,000
+if we have a continuous-time signal
+如果我们有一个连续时间信号
+
+00:01:08,000 --> 00:01:11,000
+and we have equally spaced samples
+我们已经等距样本
+
+00:01:11,000 --> 00:01:17,000
+all that signal sampled at a sampling period which a indicators capital T
+在一个采样周期的一个指标大写字母T的所有信号采样
+
+00:01:17,000 --> 00:01:21,000
+and if except he is banned limited
+如果除了他是被禁止的限制
+
+00:01:21,000 --> 00:01:25,000
+in other words the forty a transformer 0
+换句话说，40的变压器0
+
+00:01:25,000 --> 00:01:28,000
+outside some band where Omega Sapan
+一些带以外的地方欧米茄萨班
+
+00:01:28,000 --> 00:01:32,000
+is the highest frequency then
+是最高的频率，然后
+
+00:01:32,000 --> 00:01:37,000
+under the condition that the sampling frequency which is two-part divided by
+采样频率是分为两个部分的情况下
+
+00:01:37,000 --> 00:01:38,000
+the period
+期间
+
+00:01:38,000 --> 00:01:42,000
+is greater than twice the highest frequency
+大于最高频率的两倍
+
+00:01:42,000 --> 00:01:46,000
+the original signal is uniquely
+原始信号是唯一
+
+00:01:46,000 --> 00:01:50,000
+recoverable from the set of samples and
+可收回的样本集与
+
+00:01:50,000 --> 00:01:54,000
+the sampling theorem essentially was derived by
+采样定理本质上推导出了
+
+00:01:54,000 --> 00:01:57,000
+observing or using the notion that
+观察或使用的概念，即
+
+00:01:57,000 --> 00:02:01,000
+sampling could be done by multiplication
+采样可以用乘法来完成
+
+00:02:01,000 --> 00:02:05,000
+or modulation with an impulse train and the sampling theorem develop
+或调制与脉冲串和采样定理发展
+
+00:02:05,000 --> 00:02:08,000
+by examining the consequence
+通过检查结果
+
+00:02:08,000 --> 00:02:13,000
+love the modulation property in the context of the Fourier transform
+爱的傅里叶变换的情况下的调制特性
+
+00:02:13,000 --> 00:02:18,000
+in particular if we have our signal accept T
+特别是如果我们有我们的信号接受Ŧ
+
+00:02:18,000 --> 00:02:21,000
+and it's multiplied by an impulse train
+而且它乘以一个脉冲串
+
+00:02:21,000 --> 00:02:25,000
+to give us a sampled signal
+给我们一个采样信号
+
+00:02:25,000 --> 00:02:31,000
+another impose train whose values or areas are samples of the original time
+另一处以串，其值或地区是原来的时间样本
+
+00:02:31,000 --> 00:02:32,000
+function
+功能
+
+00:02:32,000 --> 00:02:36,000
+as i indicate here then
+我在此说明，然后
+
+00:02:36,000 --> 00:02:39,000
+in fact if we examine this equation or equivalently
+事实上，如果我们研究这个方程或等价
+
+00:02:39,000 --> 00:02:42,000
+bringing accept T inside this some
+将接受Ŧ这里面的一些
+
+00:02:42,000 --> 00:02:48,000
+if we examine either if these equations in the frequency domain
+如果我们检查或者如果在频域中这些方程
+
+00:02:48,000 --> 00:02:51,000
+the four EA transform love
+四EA变换的爱
+
+00:02:51,000 --> 00:02:56,000
+exe PFT is the convolution
+exe文件PFT是卷积
+
+00:02:56,000 --> 00:03:01,000
+above the 40 a transformer the original signal and the Fourier transform
+40一个变压器的原信号和傅里叶变换上述
+
+00:03:01,000 --> 00:03:05,000
+up the impulse train now
+现在向上的冲动列车
+
+00:03:05,000 --> 00:03:08,000
+be imposed strain is a periodic signal its Fourier transform
+施加应变是周期信号的傅立叶变换
+
+00:03:08,000 --> 00:03:12,000
+therefore as we talked about with Fourier transforms itself an impulse
+因此，当我们谈到与傅里叶变换自己的冲动
+
+00:03:12,000 --> 00:03:13,000
+train
+火车
+
+00:03:13,000 --> 00:03:16,000
+and when we do this convolution n
+当我们这样做卷积Ñ
+
+00:03:16,000 --> 00:03:21,000
+using the fact that the 48 race for the imposed strain
+使用的事实，48族的施加应变
+
+00:03:21,000 --> 00:03:24,000
+is an impulse train the result
+是一个脉冲串的结果
+
+00:03:24,000 --> 00:03:28,000
+or this convolution then tells us
+或本卷积然后告诉我们
+
+00:03:28,000 --> 00:03:31,000
+that the 48 transform love
+该48变换的爱
+
+00:03:31,000 --> 00:03:34,000
+the sampled signal or the impulse train
+采样的信号或脉冲串
+
+00:03:34,000 --> 00:03:38,000
+which represents the samples is a some
+它代表了样品是一些
+
+00:03:38,000 --> 00:03:42,000
+love frequency shifted replications
+爱的频率偏移复制
+
+00:03:42,000 --> 00:03:45,000
+up the 48 transform of the original signal
+最多48个变换原信号的
+
+00:03:45,000 --> 00:03:48,000
+so mathematically
+所以数学
+
+00:03:48,000 --> 00:03:53,000
+that's the relationship it essentially says that after sampling or modulation
+这是它本质上说，关系是抽样或调制后
+
+00:03:53,000 --> 00:03:54,000
+with an impulse train
+用脉冲串
+
+00:03:54,000 --> 00:03:58,000
+the resulting spectrum is the original spectrum
+所得到的频谱是原来的频谱
+
+00:03:58,000 --> 00:04:01,000
+added to itself shifted by multiples
+添加到本身的倍数偏移
+
+00:04:01,000 --> 00:04:05,000
+integer multiples of the sampling frequency well
+的采样频率的整数倍以及
+
+00:04:05,000 --> 00:04:08,000
+let's see that as we did last time in terms of pictures
+让我们来看看，当我们在画面方面做了最后一次
+
+00:04:08,000 --> 00:04:12,000
+and again to remind you of the basic
+并再次提醒了基本的你
+
+00:04:12,000 --> 00:04:16,000
+picture involved if we have an original signal
+涉及的图片，如果我们有一个原始信号
+
+00:04:16,000 --> 00:04:19,000
+with the spectrum is a indicated here where
+与频谱是在此间表示，其中
+
+00:04:19,000 --> 00:04:22,000
+its ban limited with the highest frequency Omega Savannah M
+禁令限制最高频率欧米茄萨凡纳M
+
+00:04:22,000 --> 00:04:27,000
+and if the time function is sample
+如果时间函数是样本
+
+00:04:27,000 --> 00:04:31,000
+so that in the frequency domain week involved this spectrum
+以便在频域中周参与该频谱
+
+00:04:31,000 --> 00:04:35,000
+with the spectrum shown below which is the
+与图所示的频谱是
+
+00:04:35,000 --> 00:04:40,000
+spectrum love the impulse train
+谱爱的冲动列车
+
+00:04:40,000 --> 00:04:44,000
+the convolution if these true up these two
+卷积如果这些属实了这两个
+
+00:04:44,000 --> 00:04:47,000
+is then the Fourier transform or spectrum
+然后，在付里叶变换或频谱
+
+00:04:47,000 --> 00:04:51,000
+love the sampled time function
+爱的采样时间功能
+
+00:04:51,000 --> 00:04:55,000
+and so thats what we end up with here
+所以那是什么，我们结束了在这里
+
+00:04:55,000 --> 00:05:00,000
+and then as you recall to recover the original time function
+然后，你记得，以恢复原来的时间函数
+
+00:05:00,000 --> 00:05:05,000
+from this as long as these individual triangles don't overlap
+从此，只要这些个体三角形不重叠
+
+00:05:05,000 --> 00:05:08,000
+to recover it just simply involves
+恢复它只是简单地涉及
+
+00:05:08,000 --> 00:05:13,000
+passing the impulse train through a low-pass filter in effect
+通过脉冲列通过有效的低通滤波器
+
+00:05:13,000 --> 00:05:17,000
+extracting just one of these replications
+提取这些重复的只是一个
+
+00:05:17,000 --> 00:05:21,000
+love the original spectrum
+爱情原来频谱
+
+00:05:21,000 --> 00:05:25,000
+so the overall system
+所以在整个系统
+
+00:05:25,000 --> 00:05:29,000
+then for for doing the sampling and then
+然后做采样，然后
+
+00:05:29,000 --> 00:05:34,000
+the reconstruction of the original signal from the samples
+原始信号的从样品中的重建
+
+00:05:34,000 --> 00:05:38,000
+consists of multiplying the original time function
+由乘以原时间功能
+
+00:05:38,000 --> 00:05:42,000
+by an impulse train and that gives us
+由一个脉冲串并给我们
+
+00:05:42,000 --> 00:05:45,000
+then the sampled signal
+然后将采样信号
+
+00:05:45,000 --> 00:05:49,000
+the Fourier transform I show here love the
+傅立叶变换我在这里展示爱
+
+00:05:49,000 --> 00:05:54,000
+original signal and after modulation with the impulse train
+原始信号和调制的脉冲序列后
+
+00:05:54,000 --> 00:05:58,000
+the resulting spectrum that we have is
+由此产生的频谱，我们已经是
+
+00:05:58,000 --> 00:06:04,000
+that replicated around integer multiples of the sampling frequency
+周围的采样频率的整数倍复制
+
+00:06:04,000 --> 00:06:07,000
+and then finally to recover
+然后终于恢复
+
+00:06:07,000 --> 00:06:12,000
+the original signal or to generate a reconstructed signal
+原始信号或生成再生信号
+
+00:06:12,000 --> 00:06:16,000
+we then multiply this in the frequency domain
+我们再乘以在频域
+
+00:06:16,000 --> 00:06:20,000
+by the frequency response of an idea low-pass filter
+由一个想法的低通滤波器的频率响应
+
+00:06:20,000 --> 00:06:23,000
+and what that accomplishes forest and
+什么是完成森林和
+
+00:06:23,000 --> 00:06:28,000
+is recovering the original signal
+正在恢复的原始信号
+
+00:06:28,000 --> 00:06:32,000
+now in this picture an important point that I raise last time
+现在在这张图片中一个重要的一点，我提出最后一次
+
+00:06:32,000 --> 00:06:36,000
+relates to the fact dead in doing the reconstruction
+在这样做的重建涉及以下事实：死
+
+00:06:36,000 --> 00:06:40,000
+well we've assumed is dead in replicating
+以及我们已经假设是死在复制
+
+00:06:40,000 --> 00:06:43,000
+these individual versions
+这些个别版本
+
+00:06:43,000 --> 00:06:47,000
+0 the original signal
+0原始信号
+
+00:06:47,000 --> 00:06:50,000
+those replications don't overlap and sold by passing this through a low-pass
+那些重复不重叠并通过一个低通通过本售
+
+00:06:50,000 --> 00:06:52,000
+filter in fact
+事实上筛选
+
+00:06:52,000 --> 00:06:55,000
+we can recover the original signal well
+我们可以恢复原始信号以及
+
+00:06:55,000 --> 00:06:59,000
+what that requires is that
+什么，需要的是
+
+00:06:59,000 --> 00:07:03,000
+this frequency Omega Savannah M be less than
+这个频率欧米茄萨凡纳M是小于
+
+00:07:03,000 --> 00:07:07,000
+this frequency and this frequency
+这个频率和当前频率
+
+00:07:07,000 --> 00:07:12,000
+is Omega so fast minus Omega serve them
+欧米茄是如此之快减去欧米茄为他们服务
+
+00:07:12,000 --> 00:07:16,000
+and so what we require is dead the frequency Omega Sapan
+所以我们需要的是死者的频率欧米茄萨班
+
+00:07:16,000 --> 00:07:20,000
+be less than Omega cyb s minus Omega sed am
+小于欧米茄CYB零下欧米茄sed的正
+
+00:07:20,000 --> 00:07:25,000
+or equivalent Lee what we require is that the sampling frequency
+或等效李我们需要的是，采样频率
+
+00:07:25,000 --> 00:07:29,000
+be greater and twice the highest frequency
+更大和两倍的最高频率
+
+00:07:29,000 --> 00:07:33,000
+in the original signal now
+现在在原始信号
+
+00:07:33,000 --> 00:07:37,000
+if in fact that condition is violated
+如果事实上该条件被违反
+
+00:07:37,000 --> 00:07:40,000
+then we end up with a very important effect
+那么，我们结束了一个非常重要的作用
+
+00:07:40,000 --> 00:07:44,000
+and that effect is referred to as a leasing
+并且这种效果被称为一个租赁
+
+00:07:44,000 --> 00:07:49,000
+in particular if we look back at are
+特别是如果我们回头看是
+
+00:07:49,000 --> 00:07:52,000
+original example we're here
+原来例如我们在这里
+
+00:07:52,000 --> 00:07:57,000
+we were able to recover our original spectrum by
+我们能够通过恢复我们原有的频谱
+
+00:07:57,000 --> 00:08:01,000
+low-pass filtering if in fact
+低通滤波，如果实际上
+
+00:08:01,000 --> 00:08:04,000
+the sampling frequency is
+采样频率为
+
+00:08:04,000 --> 00:08:07,000
+not high enough to avoid aliasing
+没有高到足以避免混淆
+
+00:08:07,000 --> 00:08:12,000
+then what happens in that case is that the individual replications
+然后会发生什么在这种情况下是个人复制
+
+00:08:12,000 --> 00:08:18,000
+love the Fourier transform above the stove the original signal
+爱的傅里叶变换放在火炉上方原始信号
+
+00:08:18,000 --> 00:08:21,000
+overlap and what we end up with
+重叠，我们结束了
+
+00:08:21,000 --> 00:08:27,000
+is some distortion as you can see if we tried to pass this through a low-pass
+是有些失真，你可以看到，如果我们试图通过一个低通通过这
+
+00:08:27,000 --> 00:08:29,000
+filter
+过滤器
+
+00:08:29,000 --> 00:08:34,000
+to recover the original signal in fact we won't recover the original signal
+以恢复原始信号，事实上，我们将无法恢复原始信号
+
+00:08:34,000 --> 00:08:38,000
+since these individual replications have overlapped
+因为这些个别的重复发生交叠
+
+00:08:38,000 --> 00:08:43,000
+and this is the case where Omega service minus Omega Savannah is less than
+而这正是欧米茄服务减去欧米茄萨凡纳小于的情况下
+
+00:08:43,000 --> 00:08:47,000
+Omega so vast in other words the sampling frequency is not greater
+欧米茄换句话说，如此庞大的采样频率不大于
+
+00:08:47,000 --> 00:08:52,000
+in this case than twice the highest frequency
+在这种情况下，比最高频率的两倍
+
+00:08:52,000 --> 00:08:55,000
+so what happens here then is that in effect
+所以这里发生的事情则是，在效果
+
+00:08:55,000 --> 00:09:00,000
+higher frequencies get folded down into lower frequencies what would come out of
+更高的频率得到向下折叠成较低的频率有什么会出来的
+
+00:09:00,000 --> 00:09:02,000
+the low-pass filter
+低通滤波器
+
+00:09:02,000 --> 00:09:06,000
+is the reflection of some higher frequencies into lower frequencies
+是一些较高频率下的反射成较低频率
+
+00:09:06,000 --> 00:09:09,000
+as I suggested a minute ago that affect
+我建议在一分钟前，影响
+
+00:09:09,000 --> 00:09:13,000
+is referred to as alias saying and in order to
+被称为别名说，为了
+
+00:09:13,000 --> 00:09:19,000
+both understand that term better and two understand in fact the effect better
+双方都知道这个词好其实是两个认识的影响
+
+00:09:19,000 --> 00:09:23,000
+it's useful to examine this a little more closely
+要多一点仔细地检查这是非常有用
+
+00:09:23,000 --> 00:09:27,000
+for the specific example a sinusoidal signal
+对于特定的实施例的正弦信号
+
+00:09:27,000 --> 00:09:31,000
+so let's concentrate on that and what we want to look at
+所以让我们专注于这一点，我们想看看
+
+00:09:31,000 --> 00:09:35,000
+is the effect or alias saying
+该效果或别名说
+
+00:09:35,000 --> 00:09:39,000
+when our input signal is a sinusoidal signal
+当我们的输入信号是正弦信号
+
+00:09:39,000 --> 00:09:43,000
+now to do that what I wanna show shortly
+现在做什么我想不久秀
+
+00:09:43,000 --> 00:09:46,000
+is a computer-generated movie
+是一个计算机生成的电影
+
+00:09:46,000 --> 00:09:49,000
+that we've made and let's first walk-through
+我们所做的，让我们先步行通过
+
+00:09:49,000 --> 00:09:54,000
+a few frames a bit to give you our first of all
+几帧有点给你我们首先
+
+00:09:54,000 --> 00:09:58,000
+to to set up our notation and to suggest what it is that we're trying to
+要建立我们的符号，并提出它是什么，我们正在努力
+
+00:09:58,000 --> 00:10:00,000
+demonstrate
+演示
+
+00:10:00,000 --> 00:10:06,000
+well what we have is an input signal
+以及我们所拥有的是一个输入信号
+
+00:10:06,000 --> 00:10:09,000
+is a sinusoidal signal and
+是一个正弦信号，并
+
+00:10:09,000 --> 00:10:12,000
+the spectrum or for a transformer that
+频谱或变压器，其
+
+00:10:12,000 --> 00:10:15,000
+is an impulse in the frequency domain at
+是在频域中的脉冲在
+
+00:10:15,000 --> 00:10:18,000
+the frequency the sinusoid we then
+频率的正弦信号，我们再
+
+00:10:18,000 --> 00:10:23,000
+have samples love that and when we sample that in for this particular
+有样品爱，当我们品尝，在这个特殊的
+
+00:10:23,000 --> 00:10:26,000
+example its sample the 10 killer hurts
+例如它的样本的10杀手伤害
+
+00:10:26,000 --> 00:10:29,000
+this spectrum is then replicated
+这个频谱，然后复制
+
+00:10:29,000 --> 00:10:33,000
+at multiples all the sampling frequency
+在所有倍数采样频率
+
+00:10:33,000 --> 00:10:37,000
+and I haven't shown negative frequencies here but the contribution do
+我还没有在这里显示负频率，但做贡献
+
+00:10:37,000 --> 00:10:41,000
+to the negative frequency
+到负频率
+
+00:10:41,000 --> 00:10:46,000
+is at 10 killer hurts minus the input sinusoid
+是在10杀手伤害减去输入正弦
+
+00:10:46,000 --> 00:10:49,000
+we then carry out a reconstruction
+我们再进行重建
+
+00:10:49,000 --> 00:10:55,000
+with an idea low-pass filter and the ideal ok pass filter is set at
+一个想法的低通滤波器和理想确定通滤波器设置在
+
+00:10:55,000 --> 00:10:58,000
+half the sampling frequency or five kelleher its
+采样频率的一半或五凯莱赫其
+
+00:10:58,000 --> 00:11:01,000
+so what we have then is
+还等什么，我们则是
+
+00:11:01,000 --> 00:11:05,000
+the input signal accept T
+输入信号接受Ŧ
+
+00:11:05,000 --> 00:11:09,000
+and the impulse train exe PFT
+和脉冲串的exe PFT
+
+00:11:09,000 --> 00:11:13,000
+and then the reconstructed signal is
+然后将重构的信号是
+
+00:11:13,000 --> 00:11:16,000
+the output from the low-pass filter
+从低通滤波器的输出
+
+00:11:16,000 --> 00:11:21,000
+which I denote as X a party
+我记为X党
+
+00:11:21,000 --> 00:11:24,000
+now as the input frequency X 50
+现在随着输入频率×50
+
+00:11:24,000 --> 00:11:28,000
+increases this impulse moves up in frequency
+增加了这种冲动向上移动的频率
+
+00:11:28,000 --> 00:11:32,000
+but this impulse moves down in frequency
+但这种冲动的频率下移
+
+00:11:32,000 --> 00:11:37,000
+and so let's just look at a few frames as the input frequency increases
+所以就让我们看看几个帧作为输入频率的增加
+
+00:11:37,000 --> 00:11:40,000
+so we have here a case
+所以我们这里有一个案例
+
+00:11:40,000 --> 00:11:43,000
+where the input frequency has move up
+其中输入频率已经动起来
+
+00:11:43,000 --> 00:11:46,000
+close to five killer hurts
+接近5杀手伤害
+
+00:11:46,000 --> 00:11:50,000
+as we continue further these two impossible's
+当我们进一步继续这两个不可能的
+
+00:11:50,000 --> 00:11:54,000
+will cross and what we'll end up with as i indicated
+将交叉和我们将最终获得正如我
+
+00:11:54,000 --> 00:11:58,000
+is aliasing so here now is a case
+是走样所以现在这里的情况
+
+00:11:58,000 --> 00:12:01,000
+where we have alias saying the
+这里我们别名称
+
+00:12:01,000 --> 00:12:05,000
+replication of the negative frequency has crossed into the passband if the
+负频率的复制已经扩散到通带如果
+
+00:12:05,000 --> 00:12:07,000
+filter
+过滤器
+
+00:12:07,000 --> 00:12:10,000
+and the reconstructed sinusoid will now
+与重构正弦波现在将
+
+00:12:10,000 --> 00:12:14,000
+be the frequency associated with this impulse
+与这种冲动的频率有关
+
+00:12:14,000 --> 00:12:17,000
+rather than the frequency Associated
+而不是相关的频率
+
+00:12:17,000 --> 00:12:22,000
+with the original sinusoid and to dramatize that
+与原来的正弦波，并戏剧化了
+
+00:12:22,000 --> 00:12:25,000
+even further here is
+进一步这里是
+
+00:12:25,000 --> 00:12:29,000
+the example where now the input frequency
+这个例子现在所在的输入频率
+
+00:12:29,000 --> 00:12:33,000
+has moved up close to 10 killer hurts
+已经上升接近10杀手伤害
+
+00:12:33,000 --> 00:12:36,000
+but what comes out of the low-pass filter
+但出来的低通滤波器
+
+00:12:36,000 --> 00:12:39,000
+is a much lower frequency and in fact
+是一个低得多的频率，实际上
+
+00:12:39,000 --> 00:12:43,000
+you can see that here is the reconstructed sinusoid
+你可以看到，这里是重建的正弦曲线
+
+00:12:43,000 --> 00:12:48,000
+whereas here we have the input size
+而在这里，我们有输入大小
+
+00:12:48,000 --> 00:12:51,000
+okay well now what I'm gonna wanna do is
+还好现在好了我该怎么想要做的就是
+
+00:12:51,000 --> 00:12:56,000
+demonstrate this as i indicated with a computer-generated movie
+证明这一点正如我用计算机生成的电影
+
+00:12:56,000 --> 00:13:00,000
+and well we'll see is the effect
+而且还有我们将看到的是效果
+
+00:13:00,000 --> 00:13:05,000
+on the effect of reconstructing
+对重建的影响
+
+00:13:05,000 --> 00:13:08,000
+from the samples using a low-pass filter
+使用一个低通滤波器的采样
+
+00:13:08,000 --> 00:13:12,000
+for an input which changes in frequency
+对于一个输入而改变的频率
+
+00:13:12,000 --> 00:13:15,000
+and with the sampling rate of 10 killer hurts
+以及具有10杀手采样率疼
+
+00:13:15,000 --> 00:13:19,000
+and what we'll see in the first part of this movie is
+而我们会在这部电影的第一部分看到的是
+
+00:13:19,000 --> 00:13:22,000
+the input except the and the reconstructed signal
+输入以外的与重建的信号
+
+00:13:22,000 --> 00:13:27,000
+X a party without explicitly showing the samples
+没有明确显示的采样X派对
+
+00:13:27,000 --> 00:13:31,000
+and then at a later point will also show this and indicate
+然后在稍后的点也将显示这个和指示
+
+00:13:31,000 --> 00:13:34,000
+that in fact the samples are those two are equal even though
+这实际上将样品是那些两者相等，即使
+
+00:13:34,000 --> 00:13:37,000
+they themselves are not
+他们自己都没有
+
+00:13:37,000 --> 00:13:41,000
+so at the top will have the input sinusoid without
+所以在顶部将有输入正弦无
+
+00:13:41,000 --> 00:13:44,000
+showing the samples and its
+示出了示例和其
+
+00:13:44,000 --> 00:13:50,000
+for EA transform is an impulse in the frequency domain as we've indicated
+对EA变换是在频域中的脉冲，因为我们已经指出
+
+00:13:50,000 --> 00:13:55,000
+and if we sample it that imposed and gets replicated
+如果我们品尝它的征收，被复制
+
+00:13:55,000 --> 00:13:58,000
+and so samples in particular
+特别是这样的样品
+
+00:13:58,000 --> 00:14:02,000
+will have a Fourier transform not only with an impulse
+将有一个傅立叶与冲动，不仅变换
+
+00:14:02,000 --> 00:14:07,000
+at the input sinusoid sinusoidal frequency but also attend killer hurts
+在输入正弦正弦频率也顾不上疼杀手
+
+00:14:07,000 --> 00:14:09,000
+minus that frequency
+减去频率
+
+00:14:09,000 --> 00:14:14,000
+now for the reconstruction we pass the samples through an idea low-pass filter
+现在的重建，我们通过样本通过一个主意低通滤波器
+
+00:14:14,000 --> 00:14:15,000
+I picked
+我挑
+
+00:14:15,000 --> 00:14:19,000
+the cutoff frequency of the low-pass filter at half the sampling frequency
+低通滤波器的采样频率的一半的截止频率
+
+00:14:19,000 --> 00:14:21,000
+namely 5 killer hurts
+即5杀手伤害
+
+00:14:21,000 --> 00:14:24,000
+and here we see is that the output
+在这里，我们看到的是，输出
+
+00:14:24,000 --> 00:14:29,000
+reconstructed signal in fact matches in frequency the input signal
+事实上重构信号中频率的输入信号相匹配
+
+00:14:29,000 --> 00:14:33,000
+now as we change the input frequency
+现在我们改变输入频率
+
+00:14:33,000 --> 00:14:36,000
+the reconstructed sinus so it is identical
+重构的窦所以它是相同
+
+00:14:36,000 --> 00:14:41,000
+until we get to an input frequency
+直到我们得到一个输入频率
+
+00:14:41,000 --> 00:14:44,000
+which exceeds half the sampling frequency
+这超过采样频率的一半
+
+00:14:44,000 --> 00:14:50,000
+at that point we have aliasing and while the input frequency is increasing
+在这一点上我们已经走样，虽然输入频率的增加
+
+00:14:50,000 --> 00:14:54,000
+the output frequency in fact is decreasing
+事实上，输出频率降低
+
+00:14:54,000 --> 00:14:58,000
+because that's what's inside the passband the filter
+因为这是是在通带内的过滤器
+
+00:14:58,000 --> 00:15:05,000
+now let's sweep it back and as the input frequency decreases the output frequency
+现在让我们来扫回来和输入频率降低输出频率
+
+00:15:05,000 --> 00:15:06,000
+increases
+增加
+
+00:15:06,000 --> 00:15:09,000
+till there's no aliasing and now the output reconstructed
+直到有没有走样，现在重建的输出
+
+00:15:09,000 --> 00:15:14,000
+signal is equal to the input
+信号等于输入
+
+00:15:14,000 --> 00:15:18,000
+so we sample the signal and then reconstructed
+所以我们的采样信号，然后重建
+
+00:15:18,000 --> 00:15:21,000
+the signal from the samples and keep in mind
+从样品的信号和记住
+
+00:15:21,000 --> 00:15:26,000
+that given a set of samples there are lots of continuous curves that we can
+给定一个样本集有很多连续的曲线，我们可以
+
+00:15:26,000 --> 00:15:28,000
+thread through the set of samples
+通过该组样本的线程
+
+00:15:28,000 --> 00:15:32,000
+the one that we picked up cores is the one consistent
+我们拿起核心的一个是一个一致的
+
+00:15:32,000 --> 00:15:35,000
+with the assumption about the signal band with
+与有关与信号频带的假设
+
+00:15:35,000 --> 00:15:39,000
+in particular we've reconstructed the signal
+特别是，我们已经重建了信号
+
+00:15:39,000 --> 00:15:44,000
+that who spectrum falls within the pass band at the filter
+该谁光谱落在通频带内的过滤器
+
+00:15:44,000 --> 00:15:48,000
+now what I'd like to show is the same
+现在我想展示的是相同的
+
+00:15:48,000 --> 00:15:51,000
+reconstruction and input as I showed before
+重建和投入，我之前显示
+
+00:15:51,000 --> 00:15:55,000
+but now let's look at the samples and what we'll see is that
+但现在让我们来看看样品和我们将会看到的是，
+
+00:15:55,000 --> 00:15:58,000
+when there's alias saying even though
+当有别名的说法，即使
+
+00:15:58,000 --> 00:16:02,000
+the output the reconstructed signal
+输出的重构信号
+
+00:16:02,000 --> 00:16:05,000
+is not identical to the input in fact
+是不完全相同的输入实际上
+
+00:16:05,000 --> 00:16:09,000
+it's consistent with the input samples that is sampling the reconstructed
+它与输入采样是采样重构一致
+
+00:16:09,000 --> 00:16:11,000
+signal
+信号
+
+00:16:11,000 --> 00:16:15,000
+gives a set of samples identical to the samples at the input
+给出了一组样品的相同的输入样本
+
+00:16:15,000 --> 00:16:19,000
+and it's just that the interpolation in between those samples
+它只是在这些样品之间的插值
+
+00:16:19,000 --> 00:16:22,000
+is an interpolation consistent with you soon
+是插值与你很快一致
+
+00:16:22,000 --> 00:16:25,000
+fan with love the input based on the sampling there
+用爱风扇输入的基础上有采样
+
+00:16:25,000 --> 00:16:28,000
+so let's now look at that with
+让我们现在来看看与
+
+00:16:28,000 --> 00:16:33,000
+the samples also shown along with the sinusoid
+样品也伴随着正弦曲线所示
+
+00:16:33,000 --> 00:16:38,000
+so at the top we have the input sinusoid together with its samples
+所以在顶部，我们有输入正弦连同其样本
+
+00:16:38,000 --> 00:16:42,000
+the bottom traces the Fourier transform of the sampled waveform
+底部痕迹采样的波形的傅立叶变换
+
+00:16:42,000 --> 00:16:46,000
+the middle trace is the reconstructed
+中间的曲线是重建
+
+00:16:46,000 --> 00:16:51,000
+sinusoid together with its samples and notice of course that the samples are
+与它的样本，当然和通知，样品一起正弦
+
+00:16:51,000 --> 00:16:53,000
+the input a reconstructed signal
+输入一个重构信号
+
+00:16:53,000 --> 00:16:56,000
+are identical and also
+是相同的，也
+
+00:16:56,000 --> 00:17:00,000
+the input sinusoidal frequency
+输入正弦频率
+
+00:17:00,000 --> 00:17:04,000
+and the output sinus or frequency are identical
+和输出窦或频率是相同的
+
+00:17:04,000 --> 00:17:09,000
+we now increase the frequency at the input
+我们现在在输入频率增加
+
+00:17:09,000 --> 00:17:13,000
+the reconstructed sinusoid tracks the input frequency
+重建的正弦波与输入频率
+
+00:17:13,000 --> 00:17:16,000
+and of course the samples are the two are identical
+和当然的样品是两个完全相同
+
+00:17:16,000 --> 00:17:20,000
+the interpolation in between the samples is identical
+在样本之间的内插是相同
+
+00:17:20,000 --> 00:17:24,000
+because the fact dead the input frequency is still
+因为事实上死者的输入频率仍
+
+00:17:24,000 --> 00:17:31,000
+less than half the sampling frequency
+小于采样频率的一半
+
+00:17:31,000 --> 00:17:37,000
+and so as long as the input is frequency is less than half the sampling frequency
+因此，只要输入是频率小于采样频率的一半
+
+00:17:37,000 --> 00:17:40,000
+not only will the samples be identical but also
+不仅将样品是相同的，但也
+
+00:17:40,000 --> 00:17:44,000
+the reconstructed continuous waveform will match
+重建的连续波形匹配
+
+00:17:44,000 --> 00:17:51,000
+the input way for
+输入方式
+
+00:17:56,000 --> 00:17:59,000
+now when we get to hear the sampling frequency were just
+现在，当我们能听到的采样频率只是
+
+00:17:59,000 --> 00:18:02,000
+on the verge Bailey is saying this isn't alias saying
+濒临贝利是说这是不是说别名
+
+00:18:02,000 --> 00:18:06,000
+quite yet but any increase in the input frequency
+相当，但但在输入频率有所增加
+
+00:18:06,000 --> 00:18:11,000
+will now generate aliasing we now have a leasing
+现在会产生混淆，我们现在有一个租赁
+
+00:18:11,000 --> 00:18:15,000
+the output frequency is lower than the input frequency but notice
+输出频率比输入频率，但通知下
+
+00:18:15,000 --> 00:18:20,000
+that the samples are identical now
+该样品现已是相同的
+
+00:18:20,000 --> 00:18:24,000
+the low-pass filter is interpolating in between those samples
+低通滤波器是那些样本之间的内插中
+
+00:18:24,000 --> 00:18:28,000
+with a sinusoid that falls within the past Pandev the low-pass filter
+具有正弦曲线落在过去潘德夫内的低通滤波器
+
+00:18:28,000 --> 00:18:34,000
+which no longer matches the frequency of the input sinusoid but
+它不再匹配输入正弦波的频率，但
+
+00:18:34,000 --> 00:18:38,000
+the important point is that even when we have alias saying
+重要的一点是，即使我们有别名的说法
+
+00:18:38,000 --> 00:18:41,000
+the samples are the reconstructed waveform
+该样本是重建波形
+
+00:18:41,000 --> 00:18:44,000
+are identical to the samples
+是相同的样本
+
+00:18:44,000 --> 00:18:50,000
+of the original way for and notice that as the input frequency increases
+为原始的方式和通知，由于输入频率的增加
+
+00:18:50,000 --> 00:18:54,000
+in fact the interpolated output the reconstructed output
+事实上插值输出的再生输出
+
+00:18:54,000 --> 00:19:01,000
+has decreased in frequency now as the input frequency begins to get closer to
+减少频率现在随着输入频率开始变得更接近
+
+00:19:01,000 --> 00:19:05,000
+10 killer hurts in fact you're all I
+10杀手伤害，其实你是我的一切
+
+00:19:05,000 --> 00:19:08,000
+tends to also interpolate between the samples
+趋向于样品之间也插
+
+00:19:08,000 --> 00:19:12,000
+with a frequency that is lower
+用的频率是低
+
+00:19:12,000 --> 00:19:15,000
+day and the input frequency NS particularly evident
+天与输入频率纳秒特别明显
+
+00:19:15,000 --> 00:19:19,000
+here notice that the input samples in fact
+这里注意到，实际上输入样本
+
+00:19:19,000 --> 00:19:22,000
+look like they would be associated
+看起来他们将相关
+
+00:19:22,000 --> 00:19:26,000
+with a much lower frequency sinusoid then in fact
+以低得多的频率的正弦曲线，然后实际上
+
+00:19:26,000 --> 00:19:30,000
+was the sinusoid the generated a lower frequency sinusoid
+为正弦曲线的生成频率较低的正弦曲线
+
+00:19:30,000 --> 00:19:35,000
+in fact corresponds to the reconstructed one now as we sit back down
+其实相当于重建一个现在当我们坐在回落
+
+00:19:35,000 --> 00:19:40,000
+the aliasing eventually disappears and the output sinus or tracks the input
+混叠，最终消失，并且输出窦或跟踪输入
+
+00:19:40,000 --> 00:19:42,000
+sinusoid in frequency
+正弦波的频率
+
+00:19:42,000 --> 00:19:45,000
+so we've seen the
+因此，我们已经看到了
+
+00:19:45,000 --> 00:19:49,000
+effective aliasing for sinusoidal signals and turns away forms
+有效走样的正弦信号和转身离开的形式
+
+00:19:49,000 --> 00:19:53,000
+now let's hear how it sounds now
+现在让我们来听听它现在怎么听起来
+
+00:19:53,000 --> 00:19:57,000
+what we have for this demonstration is
+我们所拥有的这个演示是
+
+00:19:57,000 --> 00:20:00,000
+an oscillator and
+一个振荡器和
+
+00:20:00,000 --> 00:20:04,000
+a sampler and the output of the sampler
+一个取样器和采样器的输出
+
+00:20:04,000 --> 00:20:07,000
+goes into a low-pass filter so the
+进入一个低通滤波器，因此
+
+00:20:07,000 --> 00:20:13,000
+input for from the oscillator goes into the sampler
+输入用于从振荡器进入取样器
+
+00:20:13,000 --> 00:20:16,000
+and the output the sampler
+和输出端的取样
+
+00:20:16,000 --> 00:20:19,000
+goes into the low-pass filter the
+进入低通滤波器的
+
+00:20:19,000 --> 00:20:22,000
+sampler frequency is 10 killer hurts
+采样频率为10杀手伤害
+
+00:20:22,000 --> 00:20:26,000
+and so the low-pass filter
+和这样的低通滤波器
+
+00:20:26,000 --> 00:20:30,000
+has a cutoff frequency as i indicate here
+有一个截止频率，因为我在此说明
+
+00:20:30,000 --> 00:20:33,000
+all five killer hurts and
+所有五个杀手伤害和
+
+00:20:33,000 --> 00:20:36,000
+what will listened to is the
+什么会听取的是
+
+00:20:36,000 --> 00:20:40,000
+reconstructed output as the
+重构的输出作为
+
+00:20:40,000 --> 00:20:43,000
+oscillator input frequency berries
+振荡器输入频率浆果
+
+00:20:43,000 --> 00:20:48,000
+and recall there what should happen is that
+和召回有什么要发生的是，
+
+00:20:48,000 --> 00:20:53,000
+when the oscillator input frequency gets past half the sampling frequency
+当振荡器输入频率得到过去的采样频率的一半
+
+00:20:53,000 --> 00:20:59,000
+we should hear aliasing so we'll start the oscillator it to kill her ex
+我们应该听到走样所以我们将启动振荡器它杀死前夫
+
+00:20:59,000 --> 00:21:02,000
+and keep in mind that what you see on the dial
+并且记住，你在表盘上看到什么
+
+00:21:02,000 --> 00:21:06,000
+is the input frequency which you here is the output frequency
+是输入频率，你在这里是输出频率
+
+00:21:06,000 --> 00:21:10,000
+as long as the input frequency is less than half the sampling frequency in
+只要输入频率小于一半的采样频率
+
+00:21:10,000 --> 00:21:12,000
+other words 5 killer hurts
+换言之5杀手伤害
+
+00:21:12,000 --> 00:21:16,000
+the reconstructed signal sounds identical to the input
+重构的信号听起来与输入相同
+
+00:21:16,000 --> 00:21:19,000
+now at five still hurts were right
+现在五个还在疼是正确的
+
+00:21:19,000 --> 00:21:24,000
+on the verge of aliasing and when we increase the input frequency past five
+对混叠的边缘，当我们增加输入频率近五年
+
+00:21:24,000 --> 00:21:25,000
+killer hurts
+杀手伤害
+
+00:21:25,000 --> 00:21:29,000
+the reconstructed frequency in fact will decrease
+重建的频率实际上会降低
+
+00:21:29,000 --> 00:21:32,000
+so as we move for example from 5 killer hurts
+所以作为我们移动例如5杀手伤害
+
+00:21:32,000 --> 00:21:36,000
+up to let's say 6 killer hurts
+最多让我们说6伤凶手
+
+00:21:36,000 --> 00:21:39,000
+sick still hurts in fact yes alias
+生病还是会痛，其实是别名
+
+00:21:39,000 --> 00:21:43,000
+down to what gets alias down to
+下降到什么让别名下来
+
+00:21:43,000 --> 00:21:46,000
+4 killer us so
+4杀手我们这么
+
+00:21:46,000 --> 00:21:50,000
+6 go over to the input is for killer hurts
+6到对面的输入是杀手伤害
+
+00:21:50,000 --> 00:21:54,000
+at the output now if we move up even further
+在现在，如果我们移动了进一步的输出
+
+00:21:54,000 --> 00:21:58,000
+7 kilohertz at the end pushed its alias down
+7千赫在年底推它的别名下来
+
+00:21:58,000 --> 00:22:01,000
+to three killer hurts at the outpost
+三个凶手伤害的前哨
+
+00:22:01,000 --> 00:22:06,000
+so bad dan is a audio demonstration and aliasing
+如此糟糕丹是一种音频示范和走样
+
+00:22:06,000 --> 00:22:09,000
+so to summarize
+所以总结
+
+00:22:09,000 --> 00:22:12,000
+if we sample signal and then reconstruct
+如果我们采样信号，然后重构
+
+00:22:12,000 --> 00:22:17,000
+from the samples using a low-pass filter as long as the sampling frequency is
+使用一个低通滤波器，只要取样频率为样品
+
+00:22:17,000 --> 00:22:20,000
+greater than twice the highest frequency in the signal
+大于两倍的信号中的最高频率
+
+00:22:20,000 --> 00:22:23,000
+we reconstruct exactly if on the other hand
+我们确切地重建，如果在另一方面
+
+00:22:23,000 --> 00:22:28,000
+the sampling frequency is too low less than twice the highest frequency
+采样频率太低小于最高频率的两倍
+
+00:22:28,000 --> 00:22:31,000
+then we get alias saying in other words
+那么我们得到的别名说，换句话说
+
+00:22:31,000 --> 00:22:35,000
+higher frequencies get folded or reflected
+更高的频率得到折叠或反射
+
+00:22:35,000 --> 00:22:38,000
+down into lower frequencies as they come through the low-pass filter
+成较低的频率，因为它们都通过低通滤波器
+
+00:22:38,000 --> 00:22:42,000
+now wanted the
+现在想要的
+
+00:22:42,000 --> 00:22:46,000
+common applications love the whole concept of sampling
+常见的应用爱取样的整个概念
+
+00:22:46,000 --> 00:22:52,000
+is the use sampling to convert a continuous-time signal into a
+是利用采样转换成一个连续时间信号转换成
+
+00:22:52,000 --> 00:22:55,000
+discrete-time signal to carry out
+离散时间信号来进行
+
+00:22:55,000 --> 00:22:59,000
+what's often referred to as discreet I processing
+什么是通常被称为谨慎处理我
+
+00:22:59,000 --> 00:23:04,000
+of continuous-time signals and this in fact is something that will be talking
+连续时间信号，这其实是一些会说话
+
+00:23:04,000 --> 00:23:05,000
+about
+关于
+
+00:23:05,000 --> 00:23:08,000
+in a fair amount of detail beginning with the next lecture
+在细节与下一讲开始了相当数量的
+
+00:23:08,000 --> 00:23:12,000
+but and let me indicate that for
+但是，让我表明，对于
+
+00:23:12,000 --> 00:23:15,000
+that kinda processing essentially what happens
+这有点儿处理本质上发生了什么
+
+00:23:15,000 --> 00:23:19,000
+is dead we begin with a continuous-time signal
+死了，我们开始了连续时间信号
+
+00:23:19,000 --> 00:23:22,000
+and convert it to a discrete-time signal
+并将其转换为离散时间信号
+
+00:23:22,000 --> 00:23:26,000
+carry out the discrete-time processing and then
+进行离散时间处理，然后
+
+00:23:26,000 --> 00:23:29,000
+convert back to continuous-time and
+转换回连续时间和
+
+00:23:29,000 --> 00:23:34,000
+the conversion from a continuous-time signal to a discrete-time
+从连续时间信号以离散时间转换
+
+00:23:34,000 --> 00:23:37,000
+signal in fact is done
+事实上信号进行
+
+00:23:37,000 --> 00:23:41,000
+by exploiting sampling specifically
+通过利用专门的采样
+
+00:23:41,000 --> 00:23:44,000
+by sampling the continuous-time signal
+通过采样连续时间信号
+
+00:23:44,000 --> 00:23:48,000
+with an impulse train and then
+用脉冲串，然后
+
+00:23:48,000 --> 00:23:51,000
+converting the impulse train into
+转换脉冲串入
+
+00:23:51,000 --> 00:23:56,000
+a sequence in a manner that all talk about in more detail
+的方式，所有的更详细谈论的序列
+
+00:23:56,000 --> 00:23:59,000
+next time now in doing that
+现在在做下一次
+
+00:23:59,000 --> 00:24:03,000
+of course as you can imagine it's important since we want
+当然，你可以想像这一点很重要，因为我们希望
+
+00:24:03,000 --> 00:24:07,000
+an accurate representation of the original continuous-time signal
+原来的连续时间信号的准确表示
+
+00:24:07,000 --> 00:24:12,000
+to choose the sampling frequency to very carefully avoid aliasing
+选择采样频率非常小心地避免混淆
+
+00:24:12,000 --> 00:24:15,000
+and so in fact in that context
+所以其实在这方面
+
+00:24:15,000 --> 00:24:19,000
+and in many other contexts alias saying is something
+而且在许多其他情况下别名说法是什么
+
+00:24:19,000 --> 00:24:22,000
+that we're very eager to avoid however
+我们是非常渴望避免然而，
+
+00:24:22,000 --> 00:24:25,000
+it's also important to understand that alias saying
+但同样重要的是理解的别名说
+
+00:24:25,000 --> 00:24:30,000
+isn't all bad and there are some very specific contexts in which
+并不全是坏事，并有其中一些非常具体的语境
+
+00:24:30,000 --> 00:24:34,000
+alias saying is very useful and very heavily exploited
+别名的说法是非常有用的，非常沉重的剥削
+
+00:24:34,000 --> 00:24:38,000
+one example love
+一个例子爱
+
+00:24:38,000 --> 00:24:42,000
+a very useful context valia saying is when
+一个非常有用的上下文VALIA的说法是，当
+
+00:24:42,000 --> 00:24:45,000
+you want to look at things that happen at frequencies
+你想看看事情发生的频率
+
+00:24:45,000 --> 00:24:50,000
+that you can't look at for one reason or another and sampling in a leasing is
+你可以不看的一个原因或其他，并在租赁采样
+
+00:24:50,000 --> 00:24:52,000
+used to map those into lower frequencies
+用于映射到那些较低频率
+
+00:24:52,000 --> 00:24:57,000
+one very common example of that is the use of the stroboscopic
+中，一个很常见的例子是使用的频闪
+
+00:24:57,000 --> 00:25:01,000
+which was invented by doctor how their chechen
+它发明了医生的车臣如何
+
+00:25:01,000 --> 00:25:06,000
+at MIT and sometime earlier in fact we had
+在麻省理工学院和更早的某个时候，其实我们有
+
+00:25:06,000 --> 00:25:11,000
+the opportunity to visit doctor Richard ins laboratory at MIT
+有机会参观医生理查德INS实验室在麻省理工学院
+
+00:25:11,000 --> 00:25:15,000
+and see some examples of this so I'd like to
+和看一些这方面的例子，所以我想
+
+00:25:15,000 --> 00:25:19,000
+at as a conclusion to this lecture take you
+在作为一个结论，这个讲座带你
+
+00:25:19,000 --> 00:25:24,000
+on visit to the stroke where and MIT
+在访问行程的地方和麻省理工学院
+
+00:25:24,000 --> 00:25:28,000
+in the lecture in discussing aliasing we've stressed
+在讨论走样讲座，我们已经强调
+
+00:25:28,000 --> 00:25:33,000
+the fact that in most situations it's something that would like to avoid
+事实上，在大多数情况下，它的东西，想避免
+
+00:25:33,000 --> 00:25:37,000
+however right now we're at MIT and stroll Valley
+但是现在我们是在麻省理工学院和谷漫步
+
+00:25:37,000 --> 00:25:41,000
+as it's called on the way to visit the laboratory
+因为它叫途中参观实验室
+
+00:25:41,000 --> 00:25:45,000
+Mike MIT colleague Professor are alleged
+据称麦克麻省理工学院教授的同事
+
+00:25:45,000 --> 00:25:49,000
+where in fact a leasing is an everyday occurrence
+那里其实是一个租赁是家常便饭
+
+00:25:49,000 --> 00:25:53,000
+basically the idea is to follow dead
+基本思路是遵循死
+
+00:25:53,000 --> 00:25:56,000
+it in fact you wanna make measurements
+它其实是你想进行测量
+
+00:25:56,000 --> 00:26:00,000
+at frequencies that for one reason or another
+在频率的一个原因或其他
+
+00:26:00,000 --> 00:26:05,000
+you can't measure their sampling and consequently aliasing
+你无法衡量他们的取样，因此走样
+
+00:26:05,000 --> 00:26:10,000
+can be used to bring those frequencies down into a frequency range that you can
+可以用来将那些频率下降到一个频率范围，你可以
+
+00:26:10,000 --> 00:26:12,000
+measure
+测量
+
+00:26:12,000 --> 00:26:15,000
+well professor edgerton alias
+还有埃杰顿教​​授别名
+
+00:26:15,000 --> 00:26:19,000
+da kitchen invented the strokes call
+大厨房发明了招叫
+
+00:26:19,000 --> 00:26:23,000
+for exactly that reason and kinda the idea is the fall
+整整这个原因，有点想法是秋天
+
+00:26:23,000 --> 00:26:28,000
+the I essentially is a low pass filter and so there are things that happen
+在我本质上是一个低通滤波器，所以有事情发生
+
+00:26:28,000 --> 00:26:31,000
+at frequencies boat which
+在频率的船
+
+00:26:31,000 --> 00:26:34,000
+your I contract and by
+你的我的合同和
+
+00:26:34,000 --> 00:26:39,000
+sampling with light poles sampling in time
+随着时间灯杆取样抽检
+
+00:26:39,000 --> 00:26:44,000
+what in effect you're able to do is sample in such a way
+实际上你能够做什么样的是这样一种方式
+
+00:26:44,000 --> 00:26:47,000
+that higher frequencies get alias
+更高的频率得到别名
+
+00:26:47,000 --> 00:26:51,000
+down to lower frequencies then factor I contract
+下降到较低的频率，然后因子I合同
+
+00:26:51,000 --> 00:26:55,000
+so let's take the look inside the where
+因此，让我们的外观里面的地方
+
+00:26:55,000 --> 00:26:58,000
+and in fact see no aspiration or
+而事实上看没有诉求，或
+
+00:26:58,000 --> 00:27:05,000
+the scroll and some its effects
+滚动和一些其影响
+
+00:27:05,000 --> 00:27:10,000
+will be here introduce you to my mighty colleague I kitchen
+将在这里向你介绍我的同事浩浩荡荡我的厨房
+
+00:27:10,000 --> 00:27:14,000
+in also by the way he this is a great place for kids of all ages
+在也顺便说一下，他这是为所有年龄段的孩子的好地方
+
+00:27:14,000 --> 00:27:18,000
+and so my daughter just insisted on coming along to
+所以我的女儿刚执意跟着来
+
+00:27:18,000 --> 00:27:21,000
+also helped out stock need you we could begin with you
+还帮助缺货需要你，我们可以开始与你
+
+00:27:21,000 --> 00:27:26,000
+just saying a little bit about what the strobe is in with some history is
+只是说关于频闪是与历史上的一些东西一点点
+
+00:27:26,000 --> 00:27:30,000
+steroids ring resemble an increase in a min ly
+类固醇环类似于增加一个分LY
+
+00:27:30,000 --> 00:27:33,000
+misses them losing on Lampson
+想念他们失去蓝普
+
+00:27:33,000 --> 00:27:37,000
+prices litter control rate planning on
+价格产仔率控制在规划
+
+00:27:37,000 --> 00:27:41,000
+school is not a good strategy is going to turn and we're going to look at.
+学校不是一个好的策略是要转，我们要来看看。
+
+00:27:41,000 --> 00:27:44,000
+motor striving on balance weight
+电机努力平衡块
+
+00:27:44,000 --> 00:27:48,000
+to set up some rhinos lesions in the spring
+设置一些犀牛病变的春天
+
+00:27:48,000 --> 00:27:51,000
+want to know more bring on the throne
+想知道更多带来的宝座
+
+00:27:51,000 --> 00:27:58,000
+by
+
+
+00:27:59,000 --> 00:28:06,000
+by
+
+
+00:28:10,000 --> 00:28:11,000
+you writer and
+您作家和
+
+00:28:11,000 --> 00:28:18,000
+throbs but just in the frequency the way
+跳动，但只是在频率的方式
+
+00:28:20,000 --> 00:28:25,000
+but corresponds to North influencer little more elusive
+但对应于北影响者多一点难以捉摸
+
+00:28:25,000 --> 00:28:29,000
+for the facts thought maybe we could the turn the stroller
+对于认为事实也许我们可以在打开手推车
+
+00:28:29,000 --> 00:28:33,000
+for a minute noon the but let me
+一分钟，中午，但让我
+
+00:28:33,000 --> 00:28:37,000
+point out the by the way there the fact that
+指出了通过有方式的事实，即
+
+00:28:37,000 --> 00:28:41,000
+when looking at this without the strong mind always say essentially
+阅读本文时没有强烈的心灵总是说基本上
+
+00:28:41,000 --> 00:28:45,000
+our frequencies that are I can attract so you can see the motor
+我们的频率是多少能吸引所以你可以看到电机
+
+00:28:45,000 --> 00:28:47,000
+turning and
+车削和
+
+00:28:47,000 --> 00:28:51,000
+we can really see other than then with the were we can see the movie the spring
+我们真的能看到比当时其他的都可以看电影的春天
+
+00:28:51,000 --> 00:28:55,000
+and so I get your point is that when we put the strobe on
+所以我明白你的意思是，当我们把闸门上
+
+00:28:55,000 --> 00:28:59,000
+who were essentially sampling this and no
+谁是本质上取样本，并没有
+
+00:28:59,000 --> 00:29:03,000
+you brought this stand with a frequency that there the
+你的频率带来了这个立场，认为那里的
+
+00:29:03,000 --> 00:29:06,000
+Riza with the track in fact
+里扎与实际上的轨迹
+
+00:29:06,000 --> 00:29:09,000
+the I guess if we turn the
+我在想，如果我们把
+
+00:29:09,000 --> 00:29:14,000
+incandescent light of loon
+卢恩的白炽灯
+
+00:29:14,000 --> 00:29:17,000
+the able to really bring out
+将能真正带出
+
+00:29:17,000 --> 00:29:22,000
+are the alias frequency so now we're what we're looking at in fact are the
+是的别名频率所以现在我们我们正在寻找的东西实际上是
+
+00:29:22,000 --> 00:29:26,000
+the earliest frequencies the street courses moving a lot faster than we see
+最早的频率街道课程移动快了很多，比我们看到
+
+00:29:26,000 --> 00:29:27,000
+it in their ranks
+它在他们的行列
+
+00:29:27,000 --> 00:29:30,000
+you know that's going on arena
+你知道是怎么回事舞台
+
+00:29:30,000 --> 00:29:34,000
+30 times second Bruins are
+30第二次是熊
+
+00:29:34,000 --> 00:29:37,000
+thirties and second occurs through the survivors include
+三十年代，第二是通过幸存者包括
+
+00:29:37,000 --> 00:29:41,000
+next move Rohingya figure 8a. saying you don't see that
+未来移动罗兴亚图8a。说你看不到
+
+00:29:41,000 --> 00:29:47,000
+yeah friend
+是啊朋友
+
+00:29:47,000 --> 00:29:54,000
+well we'll be seeing now is essentially second harmonic that
+以及我们将现在看到的基本上是二次谐波的
+
+00:30:04,000 --> 00:30:08,000
+someone okay
+有人好吗
+
+00:30:08,000 --> 00:30:11,000
+and just do you think you can make this spring dance around a little bit
+，只是你认为你可以使周围一点点今年春天舞蹈
+
+00:30:11,000 --> 00:30:16,000
+find taking this slow frequency soon as all around
+发现服用这种缓慢的频率一声各地
+
+00:30:16,000 --> 00:30:19,000
+okay it's really neat let's turn the lights back on
+还好这真是整齐，让我们关灯回
+
+00:30:19,000 --> 00:30:23,000
+weekend this is Charles president with anything 3 I'm
+周末，这是总统查尔斯与任何3我
+
+00:30:23,000 --> 00:30:28,000
+yeah has the third what's interesting now if we look at this and
+是啊有第三有什么有趣的，如果现在我们来看看这个和
+
+00:30:28,000 --> 00:30:31,000
+seeking a fifth just rolled off again
+寻求第五刚刚推出再次起飞
+
+00:30:31,000 --> 00:30:37,000
+earth okay noticed just think we look at the spring man although we can see is a
+地球还好发现只是觉得我们来看看春天的人，虽然我们可以看到的是一个
+
+00:30:37,000 --> 00:30:37,000
+blur
+模糊
+
+00:30:37,000 --> 00:30:41,000
+and really can't see because you're right here tracking
+而且真的不能看，因为你在这里追踪
+
+00:30:41,000 --> 00:30:46,000
+can see things happening station but he said
+可以看到的事情发生站，但他说
+
+00:30:46,000 --> 00:30:49,000
+by the way this was written demonstrated at the World's Fair
+这个写的方式展示在世界博览会
+
+00:30:49,000 --> 00:30:52,000
+the thickness
+厚度
+
+00:30:52,000 --> 00:30:55,000
+world because glasses
+世界因为眼镜
+
+00:30:55,000 --> 00:30:59,000
+for their Wow a loses all dressed up
+他们哇失去所有打扮
+
+00:30:59,000 --> 00:31:02,000
+element using
+使用元素
+
+00:31:02,000 --> 00:31:06,000
+break bring bruises
+突破带来的瘀伤
+
+00:31:06,000 --> 00:31:10,000
+fine but failed I stick with the miners stresses
+不错，但失败了，我坚持与矿工讲
+
+00:31:10,000 --> 00:31:14,000
+runners or have break
+跑步者或有突破
+
+00:31:14,000 --> 00:31:17,000
+bum they work on automobiles
+流浪汉，他们对汽车的工作
+
+00:31:17,000 --> 00:31:24,000
+their own thoughts on the vibrate but let's
+自己的想法在震动，但让我们
+
+00:31:25,000 --> 00:31:28,000
+earth buy levitra run this for a lot more than half an hour or a liberal
+地球买艾力运行这个对于很多超过半小时或更宽松
+
+00:31:28,000 --> 00:31:33,000
+name is continues
+名字是继续
+
+00:31:33,000 --> 00:31:34,000
+terms
+条款
+
+00:31:34,000 --> 00:31:38,000
+thing me maybe we can look at the
+事情我也许我们可以看看
+
+00:31:38,000 --> 00:31:41,000
+a couple other things have a about the fam
+一对夫妇的其他事情有一个关于票价调整机制
+
+00:31:41,000 --> 00:31:45,000
+brand the classic buzzed
+品牌经典嗡嗡嗡
+
+00:31:45,000 --> 00:31:49,000
+that's a good idea makes too much noise
+这是一个好主意，使噪音太大
+
+00:31:49,000 --> 00:31:54,000
+ok is to remove that over here that's just an ordinary like the fam
+确定是要删除在这里，这只是一个普通的像FAM
+
+00:31:54,000 --> 00:31:58,000
+has a mark on one plate surgeon
+对一个板块外科医生的标志
+
+00:31:58,000 --> 00:32:05,000
+identify you can get up to speed
+找出你可以加快速度
+
+00:32:09,000 --> 00:32:12,000
+know that this looks like a phantom was also demonstrated in the
+知道这看起来像一个幽灵也证明在
+
+00:32:12,000 --> 00:32:15,000
+world's fair few years ago yeah kinda been
+世界博览会前几年是啊有点过
+
+00:32:15,000 --> 00:32:19,000
+been does a movie
+已经做了电影
+
+00:32:19,000 --> 00:32:23,000
+quicken awake practicing in to and it was very fan
+加快清醒执业中来，这是非常风扇
+
+00:32:23,000 --> 00:32:27,000
+well one like it happened if the reform do
+还有一个像它的发生，如果改革做
+
+00:32:27,000 --> 00:32:32,000
+MGM and the Peters B Smith
+米高梅和彼得斯乙史密斯
+
+00:32:32,000 --> 00:32:35,000
+wanted he said he won miss royale up
+希望他说他赢了皇家错过了
+
+00:32:35,000 --> 00:32:40,000
+custard pie into it not don't know I'm a serious scientists for
+蛋黄派进去又不是不知道我是一个严肃的科学家
+
+00:32:40,000 --> 00:32:44,000
+sizes compromise on a I
+尺寸妥协在我
+
+00:32:44,000 --> 00:32:48,000
+so we dropped an egg into it in the news UCI's B-movie
+所以我们在新闻UCI的B级电影降到一个鸡蛋进去
+
+00:32:48,000 --> 00:32:53,000
+dropping 0 not known struggle there there was with the
+下降0不知道有斗争有一个与
+
+00:32:53,000 --> 00:32:56,000
+high-speed great remove yeah it's okay so
+高速伟大删除是它没关系使
+
+00:32:56,000 --> 00:33:00,000
+so again I guess without this true when we look at its
+所以再次我想没有这个真实的，当我们来看看它的
+
+00:33:00,000 --> 00:33:04,000
+what we're looking at our frequencies it are
+我们正在寻找我们的频率是什么都
+
+00:33:04,000 --> 00:33:08,000
+much higher than the I think following now with the stroke blindness
+远远高于我觉得跟中风失明现在以下
+
+00:33:08,000 --> 00:33:12,000
+you can see both the alias frequency and you can also see the original frequency
+你可以看到这两个别名频率，你也可以看到原始频率
+
+00:33:12,000 --> 00:33:13,000
+because we have the
+因为我们有
+
+00:33:13,000 --> 00:33:16,000
+investment line sweats I'm let's
+投资行盗汗我让
+
+00:33:16,000 --> 00:33:19,000
+turned down the the background lighting and
+拒绝了背景照明和
+
+00:33:19,000 --> 00:33:23,000
+stand then really all that were able to see or the aliasing
+站在那么真的能看到所有或混淆
+
+00:33:23,000 --> 00:33:26,000
+frequencies stand I guess
+频率站在我猜
+
+00:33:26,000 --> 00:33:29,000
+I guess when we see more than one market means that the
+我想，当我们看到一个以上的市场意味着，
+
+00:33:29,000 --> 00:33:32,000
+stay were actually running its and
+逗留了实际运行的和
+
+00:33:32,000 --> 00:33:36,000
+or guns is more and more things the the using
+或枪是在使用的东西越来越多
+
+00:33:36,000 --> 00:33:41,000
+lower radiation steroids because the plans aren't exactly the same
+较低的辐射类固醇，因为计划是不完全一样
+
+00:33:41,000 --> 00:33:45,000
+actually this gives me a chance illustrating other important correlated
+实际上这给我说明的其他重要机会相关
+
+00:33:45,000 --> 00:33:46,000
+to the lecture
+在讲座
+
+00:33:46,000 --> 00:33:49,000
+I'll that they could bring them to frequency
+我会说，他们可以把他们的频率
+
+00:33:49,000 --> 00:33:56,000
+so that re only get one more scorched
+使再只得到一个更加焦灼
+
+00:33:56,000 --> 00:33:59,000
+missus begins to move this is just one way there now
+太太开始移动，这只是单向的，现在
+
+00:33:59,000 --> 00:34:04,000
+okay so so the way we have now we've essentially alias the fan speed and so
+好了，所以这样的方式，我们现在我们已经基本上别名风扇转速等
+
+00:34:04,000 --> 00:34:05,000
+the
+该
+
+00:34:05,000 --> 00:34:09,000
+is just a little higher than the seeds and now
+比更高的种子，现在只是一点点
+
+00:34:09,000 --> 00:34:14,000
+on right at the sea and now if I could and just a little further in fact that
+右边大海，现在如果我可以，只是稍微远一点的事实，
+
+00:34:14,000 --> 00:34:17,000
+looks like the fans turning back hurts
+貌似粉丝义无反顾疼
+
+00:34:17,000 --> 00:34:21,000
+and if you think that this into context the leasing
+如果你认为这为背景的租赁
+
+00:34:21,000 --> 00:34:25,000
+its it's like this to impulses in the frequency domain
+它是这样的冲动，以在频域
+
+00:34:25,000 --> 00:34:30,000
+crossover in with you get an effective you and was mathematically
+交叉与你得到一个有效的你，是数学
+
+00:34:30,000 --> 00:34:33,000
+you get a phase reversed in
+你得到扭转在相
+
+00:34:33,000 --> 00:34:37,000
+no wasn't so I E I first understood have a leasing
+没有没有那么威强刚开始理解有一个租赁
+
+00:34:37,000 --> 00:34:42,000
+with Doc understood why stand with the western movies
+与Doc明白了为什么站在与西方电影
+
+00:34:42,000 --> 00:34:46,000
+a everyone's Ryan see the wagon wheels through November go backwards train and
+一个人的Ryan看到货车车轮至十一月倒退培养和
+
+00:34:46,000 --> 00:34:47,000
+there's there the
+还有那里的
+
+00:34:47,000 --> 00:34:51,000
+wagon wheels in western movie going backwards yes stressed
+在西方电影货车车轮倒退是强调
+
+00:34:51,000 --> 00:34:56,000
+and just see what you see is %um too much weaker on straight up so you get to
+和刚才看到你所看到的是％庵太多弱上直线上升所以你能
+
+00:34:56,000 --> 00:34:59,000
+just see greater frequency of so that's
+刚刚看到的，这样的频率更高
+
+00:34:59,000 --> 00:35:03,000
+you get to marched
+你去游行
+
+00:35:03,000 --> 00:35:08,000
+u-turn and Justin's governor and you think tourist
+掉头和Justin的州长，你认为旅游
+
+00:35:08,000 --> 00:35:11,000
+you impressed
+你印象深刻
+
+00:35:11,000 --> 00:35:14,000
+schoolroom its regular spirits
+教室定期烈酒
+
+00:35:14,000 --> 00:35:18,000
+all rights pictures in your honor older adults
+在你的荣誉老年人所有权利图片
+
+00:35:18,000 --> 00:35:23,000
+and I rising price revolution I guess another thing is that this demonstrates
+而我的价格上涨革命我猜另一件事是，这表明
+
+00:35:23,000 --> 00:35:24,000
+something that is
+东西是
+
+00:35:24,000 --> 00:35:29,000
+and I heard a long time ago which is its should never use a power so with the
+我听说很久以前这是它永远不应该使用这样的电源与
+
+00:35:29,000 --> 00:35:34,000
+fluorescent lights the is arrest like is a little bit of a stroke affecting
+荧光灯的是逮捕状是影响中风的一点点
+
+00:35:34,000 --> 00:35:38,000
+you could actually can misuse of that standing still make mistakes a
+你可以真正可以滥用该地位的仍然犯错误一
+
+00:35:38,000 --> 00:35:42,000
+strength that you think everything we are doing is a good friend of
+你觉得一切我们正在做的实力是一个很好的朋友
+
+00:35:42,000 --> 00:35:46,000
+no I don't think I want to try it out how are you this do you think that's
+不，我不认为我想尝试一下，你怎么这样，你认为这是
+
+00:35:46,000 --> 00:35:49,000
+any sores and wounds she knows it's going
+任何溃疡和伤口，她知道这是怎么回事
+
+00:35:49,000 --> 00:35:52,000
+sproule undergoing closest friends okay let's
+斯普劳尔进行最亲密的朋友没关系，让我们
+
+00:35:52,000 --> 00:35:56,000
+I'm actually we turn the lights back on again what's
+我实际上我们把灯重新打开什么
+
+00:35:56,000 --> 00:36:00,000
+their latest see once again is that we can see both the alias frequencies going
+他们的最新再次看到的是，我们可以看到这两个别名频率会
+
+00:36:00,000 --> 00:36:01,000
+to you that's
+你这是
+
+00:36:01,000 --> 00:36:05,000
+and we we can also see the higher frequencies because the
+而我们，我们还可以看到更高的频率，因为
+
+00:36:05,000 --> 00:36:09,000
+incandescent lighting its okay maybe we can be no
+白炽灯它的好，也许我们不能
+
+00:36:09,000 --> 00:36:12,000
+is parents take a look at some other
+被父母看看其他一些
+
+00:36:12,000 --> 00:36:16,000
+on things and when I guess I'm curious about is the distance you have over
+对事，当我想我很好奇的是距离你有过
+
+00:36:16,000 --> 00:36:17,000
+their kids
+他们的孩子
+
+00:36:17,000 --> 00:36:21,000
+doc maybe you can tell us what we have here
+DOC也许你可以告诉我们什么，我们在这里
+
+00:36:21,000 --> 00:36:24,000
+churros the this to show
+油炸面包的这个展示
+
+00:36:24,000 --> 00:36:28,000
+how you can get motion pictures on a Susan still pictures
+你如何能得到电影的苏珊静态图片
+
+00:36:28,000 --> 00:36:32,000
+the circle is repeated 12 times
+圆圈重复12次
+
+00:36:32,000 --> 00:36:35,000
+why does outer part over mmm on this site
+为什么外部分在MMM本网站
+
+00:36:35,000 --> 00:36:40,000
+in part on the other quiet place one time for a revolution on this
+在另一方面安静的地方，一次为这个革命的一部分
+
+00:36:40,000 --> 00:36:44,000
+you see the exactly as it is if I skip one picture each time
+你看，正是因为它是，如果我跳过一个画面，每次
+
+00:36:44,000 --> 00:36:47,000
+when you get there relative motions
+当你到达那里的相对运动
+
+00:36:47,000 --> 00:36:51,000
+mall the object is to show the ball rotating
+商场的目的是要表明，球旋转
+
+00:36:51,000 --> 00:36:55,000
+is this where that one depending on mood straw was going faster or slower
+这其中，一个依赖于情绪稻草正想更快或更慢
+
+00:36:55,000 --> 00:37:00,000
+and the other Uzan this way motion pictures went well
+另Uzan这样电影顺利
+
+00:37:00,000 --> 00:37:04,000
+100 years school long for photography drew pictures of people
+百年学校长的摄影画人物照片
+
+00:37:04,000 --> 00:37:09,000
+different animated features like the run yes great
+不同的动画功能，如运行是很大的
+
+00:37:09,000 --> 00:37:16,000
+is actually the title kinda busy aliasing can be fun conservatism
+其实标题还挺忙别名可以很有趣保守主义
+
+00:37:16,000 --> 00:37:19,000
+sterling if the speeds
+英镑如果速度
+
+00:37:19,000 --> 00:37:23,000
+or away if you get a lot of different things sorted veterans
+或者路程，如果你得到了很多不同的东西整理老兵
+
+00:37:23,000 --> 00:37:26,000
+go through ruin currently reaches speeds
+经过废墟目前达到的速度
+
+00:37:26,000 --> 00:37:31,000
+reserve a room in the rules it sounds
+预订在它听起来规则
+
+00:37:31,000 --> 00:37:35,000
+ok and the background blur basically the high frequencies the I can't follow
+确定和背景虚化基本高频的，我不能跟随
+
+00:37:35,000 --> 00:37:39,000
+and and then we're going to propose and then again we can see
+和，然后我们要提出，然后再次，我们可以看到
+
+00:37:39,000 --> 00:37:43,000
+frequencies it really is down the nets
+频率果然是下网
+
+00:37:43,000 --> 00:37:47,000
+rookie I ends right now I am one place for revolution sleep
+我的菜鸟结束，现在我一个地方革命睡眠
+
+00:37:47,000 --> 00:37:50,000
+see the corner the move is consuming records
+见招消耗记录的角落
+
+00:37:50,000 --> 00:37:54,000
+exactly the reasons there are an increasing frequency
+正是理由有越来越频
+
+00:37:54,000 --> 00:38:00,000
+of risk if 100 one server or early get the illusion that diamonds
+风险，如果100一台服务器或提前得到的错觉，钻石
+
+00:38:00,000 --> 00:38:04,000
+room in fact let's a let's really enhanced solution
+房间其实是让我们一个让我们真正增强解决方案
+
+00:38:04,000 --> 00:38:09,000
+Western the incandescent lights off
+西方白炽灯的灯关
+
+00:38:09,000 --> 00:38:12,000
+and now now are we seeing really you're the alias frequencies
+现在现在，我们才看到你真正的别名频率
+
+00:38:12,000 --> 00:38:17,000
+or or do you think this just adds
+或者还是你觉得这只是增加了
+
+00:38:17,000 --> 00:38:22,000
+looks like reading recognized through was doing rejoining licensing
+看起来就像是经过重新加入做授权认可的读数
+
+00:38:22,000 --> 00:38:25,000
+of is the same rules now lower watching is something also
+的是同样的规则下现在观看的东西也
+
+00:38:25,000 --> 00:38:29,000
+might point out of a for the
+可能指向一个出来的
+
+00:38:29,000 --> 00:38:32,000
+I'm the lecture for the course is that actually there
+我在讲座的过程中是实际存在
+
+00:38:32,000 --> 00:38:35,000
+there really are two sampling frequencies receiving one is this road
+真的有接收一个两种取样频率是这条道路
+
+00:38:35,000 --> 00:38:36,000
+and
+和
+
+00:38:36,000 --> 00:38:40,000
+which is the stroke that you're running the other is the inherent
+这是，你正在运行的其他的行程的内在
+
+00:38:40,000 --> 00:38:44,000
+Creamery for the TV that's running at 30 frames a second
+克里默里该公司在30帧运行的第二个电视
+
+00:38:44,000 --> 00:38:47,000
+and that's won the reasons by the way in dead people watching this
+而这赢得了理由的方式死去的人看这个
+
+00:38:47,000 --> 00:38:51,000
+on the video worst are in fact seeing
+在最糟糕的视频，其实是看
+
+00:38:51,000 --> 00:38:55,000
+Flickr or a feeding or modulation between
+Flickr或之间的馈电或调制
+
+00:38:55,000 --> 00:39:00,000
+the two on synchronize frame rates runner grievances
+两对同步的帧速率委屈亚军
+
+00:39:00,000 --> 00:39:06,000
+grow up so we get to of to a room credits
+长大了，所以我们得到的一个房间学分
+
+00:39:06,000 --> 00:39:09,000
+of to
+对
+
+00:39:09,000 --> 00:39:16,000
+roaming two runs on each other of
+漫游在彼此的两个运行
+
+00:39:17,000 --> 00:39:19,000
+of
+
+
+00:39:19,000 --> 00:39:22,000
+you know it senator Reid's learning this
+你知道它的参议员里德的这个学习
+
+00:39:22,000 --> 00:39:26,000
+soon living room when all your friends
+很快客厅时，你所有的朋友
+
+00:39:26,000 --> 00:39:30,000
+I think would be a good terrific homered problem getting video Kors
+我觉得这是一个很好的了不起的本垒打问题，让视频Kors的
+
+00:39:30,000 --> 00:39:33,000
+they have them all sit down and analyze all the frequencies that they're seeing
+他们有他们都坐下，并分析了所有他们所看到的频率
+
+00:39:33,000 --> 00:39:36,000
+and what they're being alias through the evening event
+而且他们通过晚上的事件是什么别名
+
+00:39:36,000 --> 00:39:39,000
+it's a good view run the teacher I love you
+这是一个很好视图下执行我爱你老师
+
+00:39:39,000 --> 00:39:42,000
+who is great yeah remember these dudes list
+谁是伟大的耶记住这些帅哥列表
+
+00:39:42,000 --> 00:39:45,000
+I think that a chase a few people away from the courses good
+我认为，一个追几个人远离课程好
+
+00:39:45,000 --> 00:39:49,000
+cracks and you get you get involved in these offerings
+裂缝，你会得到你涉足这些产品
+
+00:39:49,000 --> 00:39:54,000
+rule ruler and what you can do for a KMS roots
+排除尺子和你能为一个KMS根吗
+
+00:39:54,000 --> 00:39:57,000
+let's bring you the incandescent lights back again
+让我们给您带来的白炽灯回来了
+
+00:39:57,000 --> 00:40:01,000
+just to remind everybody that in back row this or
+只是提醒大家，在后排这个或
+
+00:40:01,000 --> 00:40:04,000
+some some frequencies that are a lot higher than the ones that
+有的一些频率是比那些高了很多了
+
+00:40:04,000 --> 00:40:07,000
+we begin to get the impression that we're watching just the
+我们开始得到我们看刚才的印象
+
+00:40:07,000 --> 00:40:11,000
+motor running Frances Bean pattern on
+电机运行弗朗西丝豆模式
+
+00:40:11,000 --> 00:40:15,000
+long Dhaka have to
+长达卡有
+
+00:40:15,000 --> 00:40:18,000
+I have to say that there are many people I know they have as much fun in the work
+我不得不说，有很多人，我知道他们有尽可能多的乐趣在工作
+
+00:40:18,000 --> 00:40:19,000
+as you do
+当你做
+
+00:40:19,000 --> 00:40:23,000
+home like a man arm quote would but I'd like to
+家就像一个人的手臂报价会，但我想
+
+00:40:23,000 --> 00:40:27,000
+do now baby is take a look at one last experiment sure did
+现在要做的宝宝来看看最后一个实验中确实这样做了
+
+00:40:27,000 --> 00:40:31,000
+and what I'd like to do is a.m. is go take a look at the
+和我想要做的是通告去看看的
+
+00:40:31,000 --> 00:40:34,000
+I guess what sometimes is called the home
+我猜有时也被称为家庭
+
+00:40:34,000 --> 00:40:38,000
+well not the water graphics for men with thin air the minute dole pillar
+还有没有水的图形，男性与空气稀薄分钟施舍支柱
+
+00:40:38,000 --> 00:40:41,000
+hydraulic everything that's the 1i was thinking and let's take a look over
+液压一切是那样的1I的想法，让我们一起来看看在
+
+00:40:41,000 --> 00:40:42,000
+there
+那里
+
+00:40:42,000 --> 00:40:49,000
+okay one just in this Go internal war so
+好一个只在这个转至内部战争等等
+
+00:40:49,000 --> 00:40:52,000
+your doc this is the what did you got DP
+您的文档，这是你得到了什么，DP
+
+00:40:52,000 --> 00:40:56,000
+HHM bird double peddler hydraulic
+HHM鸟双液压行商
+
+00:40:56,000 --> 00:41:00,000
+happening machine Gary okay then it's a.m. so please
+发生机加里·还好那么它的上午，所以请
+
+00:41:00,000 --> 00:41:03,000
+it looks like continues dream up it is not its
+它看起来像继续梦想了它是不是它的
+
+00:41:03,000 --> 00:41:08,000
+pump over there something sixty post second so those owners
+泵那边的东西60秒后如此的业主
+
+00:41:08,000 --> 00:41:11,000
+coming out in spurts %uh so actually again it's
+即将在苗头％呃所以实际上这又是
+
+00:41:11,000 --> 00:41:14,000
+it's the the sixty boss is the second year I can follow
+它是六十老板是第二年我可以按照
+
+00:41:14,000 --> 00:41:18,000
+your eyes so is exactly basically looks like a blur
+你的眼睛那么究竟是基本上看起来像一个模糊
+
+00:41:18,000 --> 00:41:22,000
+ruseler it is a blur writers you learn output stroll on
+ruseler它是一个模糊的作家你学习上漫步输出
+
+00:41:22,000 --> 00:41:28,000
+okay grace start so again
+还好恩典所以重新开始
+
+00:41:28,000 --> 00:41:32,000
+I guess we have this a essentially alias then in
+我想我们有这样一个基本的别名，然后在
+
+00:41:32,000 --> 00:41:36,000
+and again with the incandescent light you can see both sky high frequency
+并再次与白炽灯可以同时看到天空中高频
+
+00:41:36,000 --> 00:41:40,000
+and the alias frequency its and
+和别名频率和其
+
+00:41:40,000 --> 00:41:44,000
+but see I guess that's with the frequency close to the sea and we can
+但看到我想这是与频率接近大海，我们可以
+
+00:41:44,000 --> 00:41:49,000
+adjusted so that is stop stop bothering me going to go out and then we can
+调整，所以这是罢罢烦我要出去，然后我们就可以
+
+00:41:49,000 --> 00:41:50,000
+actually make it go up
+真正让他走了
+
+00:41:50,000 --> 00:41:53,000
+scored anybody who is this South
+打进任何人谁是这个南
+
+00:41:53,000 --> 00:41:58,000
+yeah effect movie have just just again due to stress this point to the
+耶效果的电影刚刚只是由于再次强调这一点的
+
+00:41:58,000 --> 00:42:02,000
+class the the kind of the idea here the face reversal of course
+类中的那种想法在这里当然面对逆转
+
+00:42:02,000 --> 00:42:05,000
+you can see it in the time domain Chynoweth you just think about when the
+你可以看到它在时域查诺韦思你只是想想，当
+
+00:42:05,000 --> 00:42:06,000
+flashes of light
+光的闪烁
+
+00:42:06,000 --> 00:42:10,000
+come but if you think I love kind of these
+来了，但如果你觉得我爱那种这些
+
+00:42:10,000 --> 00:42:14,000
+impulses that we have in the frequency domain
+我们已经在频域中的脉冲
+
+00:42:14,000 --> 00:42:18,000
+and we're aliasing as we change the sampling frequency what happens is that
+我们正在走样，因为我们改变采样频率是发生什么事了
+
+00:42:18,000 --> 00:42:20,000
+these impulses crossover
+这些冲动交叉
+
+00:42:20,000 --> 00:42:24,000
+and what that means is that we get a phase reversal the pending
+而这是什么意思是，我们得到了一个倒相悬而未解
+
+00:42:24,000 --> 00:42:28,000
+on which faces are associated with
+其上面是相关联
+
+00:42:28,000 --> 00:42:32,000
+which side up the sea so that's kind of the idea the phase reversal
+哪边的海所以这是一种观念的相位反转
+
+00:42:32,000 --> 00:42:35,000
+okay let's the let's turn the
+好吧，让我们的，让我们把
+
+00:42:35,000 --> 00:42:39,000
+against because it is important thing in between those who got
+反对，因为它是重要的事情在那些谁得到的
+
+00:42:39,000 --> 00:42:42,000
+yeah let's let's turn the incandescent light of first and
+是啊，让我们让我们先看的白炽灯和
+
+00:42:42,000 --> 00:42:46,000
+think one thing your so 103 know through this thing you think you can do to get
+想一件事你这样103知道通过这件事情你觉得你能做得到
+
+00:42:46,000 --> 00:42:49,000
+on the other side you're on hand so we can see with
+在另一边你在手，我们可以看到
+
+00:42:49,000 --> 00:42:54,000
+when for the UN intervening sleuths
+当对联合国干预侦探
+
+00:42:54,000 --> 00:42:58,000
+water there all the time well on a nosedive it seems to me if we can't we
+水那里所有的时间和状况急转直下，在我看来，如果我们不能我们
+
+00:42:58,000 --> 00:42:59,000
+just the justices
+只是法官
+
+00:42:59,000 --> 00:43:04,000
+the that's just go through to next year staff the dots can do it just seeing how
+在这只是经过明年工作人员的点可以这样做只是看如何
+
+00:43:04,000 --> 00:43:06,000
+come you think your finger in the air
+来到你认为你的手指在空中
+
+00:43:06,000 --> 00:43:10,000
+fun to try once more its
+有趣的尝试一次其
+
+00:43:10,000 --> 00:43:14,000
+I get snyder et that's one thing we can do this
+我得到Snyder等了一件事我们可以做到这一点
+
+00:43:14,000 --> 00:43:17,000
+well as bring the lights back up and its
+以及把灯背起来，其
+
+00:43:17,000 --> 00:43:22,000
+again just to go stress the point scary RTC
+只是再次去强调的一点吓人的RTC
+
+00:43:22,000 --> 00:43:26,000
+there we are at a frequency that it's just a little above the sea
+那里我们正处在一个频率，它只是一个小海拔
+
+00:43:26,000 --> 00:43:31,000
+and we can go back there and in the sea and we can actually get a phase reversal
+我们可以回到那里，并在海中，我们实际上可以得到一个相位反转
+
+00:43:31,000 --> 00:43:35,000
+and I guess if we do this long enough we get at the at the whole ocean and put it
+我想，如果我们做到这一点足够长的时间，我们得到的在整个海洋，并把它
+
+00:43:35,000 --> 00:43:36,000
+back in
+早在
+
+00:43:36,000 --> 00:43:39,000
+we're ever comes from is there in cars in newsrooms gonna run is not running
+我们永远来自是有汽车在编辑部要去跑不跑
+
+00:43:39,000 --> 00:43:43,000
+too long by the Rev trailer get here yet to be careful as well as the Moody Blues
+过长的牧师拖车来到这里还没有要小心，以及穆迪布鲁斯
+
+00:43:43,000 --> 00:43:44,000
+V
+
+
+00:43:44,000 --> 00:43:49,000
+surface well I don't know about them but I guess I believe you back its
+表面好，我不知道他们，但我猜我相信你回来了
+
+00:43:49,000 --> 00:43:52,000
+up a little more pressure on three gods monarchy
+上三神君主多了几分压力
+
+00:43:52,000 --> 00:43:55,000
+Adams girlfriends or service teams
+亚当斯的女友或服务团队
+
+00:43:55,000 --> 00:44:01,000
+going things together Ste
+将东西放在一起科技教育
+
+00:44:01,000 --> 00:44:05,000
+we have these machines are all over the place lot of fun
+我们这些机器是所有的地方很多乐趣
+
+00:44:05,000 --> 00:44:08,000
+but that this this is really terrific I i think that
+但是，这是很了不起的我我认为
+
+00:44:08,000 --> 00:44:12,000
+the this whole idea of the
+的在这整个想法
+
+00:44:12,000 --> 00:44:15,000
+and abusing aliens saying in stroz and
+和滥用外星人说的stroz和
+
+00:44:15,000 --> 00:44:19,000
+the kinds of things that did you do with the murder just fantastic in that we
+这样的东西你做的谋杀真是太棒了，因为我们认为
+
+00:44:19,000 --> 00:44:21,000
+really appreciate the chance to
+真的很感谢有机会
+
+00:44:21,000 --> 00:44:25,000
+come in here and see the demonstration Rose Bowl game ruth's
+来这里，看到了示范​​玫瑰碗比赛露丝的
+
+00:44:25,000 --> 00:44:28,000
+hope you will use it for years the bar over many years to come
+希望你会使用它多年了吧多年来来
+
+00:44:28,000 --> 00:44:32,000
+so is I emphasized that the beginning
+那么，我强调的是，一开始
+
+00:44:32,000 --> 00:44:36,000
+in what situations aliasing can in fact be very useful
+在什么情况下走样，其实是非常有用的
+
+00:44:36,000 --> 00:44:40,000
+also with this demonstrates is that particularly when you have a colleague
+也与这表明的是，尤其是当你有一个同事
+
+00:44:40,000 --> 00:44:42,000
+like da kitchen
+像大厨房
+
+00:44:42,000 --> 00:44:46,000
+a leasing and for that matter science in general can be an awful lot of fun
+一般一个租赁及与此有关的科学可以是一个可怕的很多乐趣
+
+00:44:46,000 --> 00:44:53,000
+by gonna thanks a lot that again and thank you just the name
+通过会非常感谢一遍，感谢你刚才的名字
+
+00:44:54,000 --> 00:44:59,000
+well I have to say that that visit was an awful lot of fun for me and
+好，我不得不说，这次访问​​是非常多的乐趣，我和
+
+00:44:59,000 --> 00:45:04,000
+for Justin in fact to for the whole camera crew that was
+贾斯汀事实上，为整个摄制组，这是
+
+00:45:04,000 --> 00:45:09,000
+there and hopefully you all have used at some point will also have a chance to
+还有，希望大家都用在某些时候还会有机会
+
+00:45:09,000 --> 00:45:13,000
+visited stroll Valley well
+漫步参观以及谷
+
+00:45:13,000 --> 00:45:16,000
+hopefully what we've gone through today gives you
+希望我们已经通过了今天给你
+
+00:45:16,000 --> 00:45:20,000
+a good feeling for the concepts love sampling an alias saying
+一个很好的感觉的概念采样爱的别名说
+
+00:45:20,000 --> 00:45:25,000
+and both why it might be useful and why we might want to avoid
+无一不为什么它可能是有用的，我们为什么要避免
+
+00:45:25,000 --> 00:45:29,000
+in the next lecture will continue on
+在下一讲将继续
+
+00:45:29,000 --> 00:45:32,000
+the discussion of sampling any particular
+取样任何特定的讨论
+
+00:45:32,000 --> 00:45:35,000
+what all be talking about is the interpretation
+什么都可以说的是解释
+
+00:45:35,000 --> 00:45:40,000
+love the reconstruction process not in the frequency domain
+爱在频域重建过程中不
+
+00:45:40,000 --> 00:45:44,000
+but in a time-domain interpretation specifically associated
+但在时域的解释特别相关
+
+00:45:44,000 --> 00:45:48,000
+with the concept %uh interpolating between the samples
+这个概念％呃样本之间的插值
+
+00:45:48,000 --> 00:45:53,000
+well then proceed from there too a discussion as i've alluded to
+好然后再从那里过一个讨论，因为我已经提到
+
+00:45:53,000 --> 00:45:57,000
+in several lectures love what i've referred to as
+在几次讲座爱我所称为
+
+00:45:57,000 --> 00:46:00,000
+discrete-time processing of continuous-time signals
+连续时间信号的离散时间处理
+
+00:46:00,000 --> 00:46:06,000
+very heavily exploiting the concept and issues associated with sample
+非常严重剥削与样品相关的概念和问题
+
+00:46:06,000 --> 00:46:06,000
+thank you
+谢谢
+

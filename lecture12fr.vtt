@@ -1,0 +1,2592 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+le contenu suivant est fourni sous une licence Creative Commons
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+votre appui nous aidera MIT OpenCourseWare continuer à offrir
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+ressources éducatives de haute qualité gratuitement
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+faire un don ou voir des documents supplémentaires à partir de centaines d'entre eux IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+cours
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+visiter MIT OpenCourseWare à 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU home the
+que le MIT que la maison EDU l'
+
+00:00:29,000 --> 00:00:31,000
+the
+la
+
+00:00:31,000 --> 00:00:33,000
+the
+la
+
+00:00:33,000 --> 00:00:40,000
+the in
+dans le
+
+00:00:40,000 --> 00:00:45,000
+the norm
+la norme
+
+00:00:45,000 --> 00:00:52,000
+are the in discussing the
+sont les à discuter de la
+
+00:00:57,000 --> 00:01:00,000
+continuous-time and discrete-time Fourier transforms we
+en temps continu et à temps discret transformées de Fourier nous
+
+00:01:00,000 --> 00:01:03,000
+developed a number of important properties
+développé un certain nombre de propriétés importantes
+
+00:01:03,000 --> 00:01:06,000
+to particularly sitting significant ones as I mention
+à particulier ceux assis importants comme je le mentionne
+
+00:01:06,000 --> 00:01:11,000
+at the time are the modulation property and the convolution property
+au moment sont la propriété de modulation et la propriété de convolution
+
+00:01:11,000 --> 00:01:16,000
+starting with the next lecture the one after this one
+à commencer par la prochaine conférence d'une après celui-ci
+
+00:01:16,000 --> 00:01:20,000
+will be developing and exploiting some other consequences
+seront développement et l'exploitation d'autres conséquences
+
+00:01:20,000 --> 00:01:24,000
+the modulation property in today's lecture though I'd like to
+la propriété de modulation dans la conférence d'aujourd'hui que je voudrais
+
+00:01:24,000 --> 00:01:29,000
+review and expand on the notion of filtering
+revoir et d'élargir la notion de filtrage
+
+00:01:29,000 --> 00:01:33,000
+which as I had mentioned flows more less directly from
+qui, comme je l'avais mentionné flux plus ou moins directement à partir de
+
+00:01:33,000 --> 00:01:38,000
+the convolution property to begin let me just quickly review
+la propriété de convolution de commencer permettez-moi de passer rapidement en revue
+
+00:01:38,000 --> 00:01:43,000
+what the convolution property is both for continuous-time
+ce que la propriété de convolution est à la fois pour temps continu
+
+00:01:43,000 --> 00:01:47,000
+and for discrete-time the convolution property tells us
+et pour temps discret la propriété de convolution nous dit
+
+00:01:47,000 --> 00:01:50,000
+that the 48 transform
+que la 48 transformation
+
+00:01:50,000 --> 00:01:54,000
+all the convolution up to time functions
+toute la convolution des fonctions de temps de
+
+00:01:54,000 --> 00:01:57,000
+is the product up to 48 transforms
+est le produit des transformées jusqu'à 48
+
+00:01:57,000 --> 00:02:01,000
+now what this means
+maintenant ce que cela signifie
+
+00:02:01,000 --> 00:02:05,000
+in terms love linear time-invariant filters
+en termes aiment filtres linéaires invariants
+
+00:02:05,000 --> 00:02:09,000
+since we know that the in the time domain the output of a linear
+puisque l'on sait que dans le domaine temporel de la sortie d'un linéaire
+
+00:02:09,000 --> 00:02:12,000
+time-invariant filter is the convolution
+filtre invariant dans le temps est la convolution
+
+00:02:12,000 --> 00:02:15,000
+love the input and the impulse response
+aimer l'entrée et la réponse impulsionnelle
+
+00:02:15,000 --> 00:02:19,000
+it says essentially then in the frequency domain
+on dit alors essentiellement dans le domaine des fréquences
+
+00:02:19,000 --> 00:02:22,000
+that the forty a transformer the output is the product
+que la quarante un transformateur, la sortie est le produit
+
+00:02:22,000 --> 00:02:26,000
+of the 48 transform of the impulse response
+48 de la transformée de la réponse impulsionnelle
+
+00:02:26,000 --> 00:02:29,000
+namely the frequency response and the Fourier transform
+à savoir transformer la réponse en fréquence et de la transformée de Fourier
+
+00:02:29,000 --> 00:02:35,000
+love the input so the output is described through that product
+aimer l'entrée si la sortie est décrit par ce produit
+
+00:02:35,000 --> 00:02:38,000
+now recall also
+rappeler maintenant
+
+00:02:38,000 --> 00:02:43,000
+bad in developing the four EA transform I interpreted
+mauvais dans le développement de la transformation de quatre EA j'interprétais
+
+00:02:43,000 --> 00:02:46,000
+the Fourier transform as the complex amplitude
+la transformée de Fourier en tant que l'amplitude complexe
+
+00:02:46,000 --> 00:02:51,000
+over decomposition of the signal interns have a set of complex exponentials
+sur la décomposition des stagiaires de signaux ont un ensemble d'exponentielles complexes
+
+00:02:51,000 --> 00:02:55,000
+and the frequency response for the convolution property
+et la réponse en fréquence pour la propriété de convolution
+
+00:02:55,000 --> 00:03:00,000
+in effect tells us what the amplitudes how to modify the amplitudes
+en effet nous dit ce que les amplitudes comment modifier les amplitudes
+
+00:03:00,000 --> 00:03:04,000
+avi to those complex exponentials as they go through the system
+avi à ces exponentielles complexes car ils passent par le système
+
+00:03:04,000 --> 00:03:07,000
+now this led to the notion of filtering
+maintenant ce qui a conduit à la notion de filtrage
+
+00:03:07,000 --> 00:03:13,000
+where the basic concept was that since we can modify
+où le concept de base était que, puisque nous pouvons modifier
+
+00:03:13,000 --> 00:03:16,000
+the airport to %uh each of the exponential
+l'aéroport de% euh chacun des exponentielle
+
+00:03:16,000 --> 00:03:20,000
+complex exponential components separately weekend for example
+composantes exponentielles complexes, par exemple le week-end séparément
+
+00:03:20,000 --> 00:03:24,000
+retain some love them and totally eliminate others
+conserver un peu d'amour et les éliminer totalement les autres
+
+00:03:24,000 --> 00:03:28,000
+and this is the basic notion of filtering so
+et c'est la notion de base de filtrage de sorte
+
+00:03:28,000 --> 00:03:32,000
+we have as you recall first evolved the notion
+nous avons comme vous vous en souvenez abord évolué la notion
+
+00:03:32,000 --> 00:03:36,000
+in continuous-time all an ideal filter
+en temps continu tout un filtre idéal
+
+00:03:36,000 --> 00:03:40,000
+for example I L a straight year an ideal
+par exemple, je L un année consécutive un idéal
+
+00:03:40,000 --> 00:03:44,000
+low-pass filter where we pass exactly
+filtre passe-bas où nous passons exactement
+
+00:03:44,000 --> 00:03:47,000
+frequency comp phone it's in one band and reject
+fréquence échantillon téléphone, il est dans un groupe et de rejeter
+
+00:03:47,000 --> 00:03:51,000
+totally frequency comp ponents in another band
+totalement fréquence composants comp dans un autre groupe
+
+00:03:51,000 --> 00:03:55,000
+the van being passed of course referred to as the passband
+la van étant passé naturellement désigné comme la bande passante
+
+00:03:55,000 --> 00:04:00,000
+and the ban rejected as the stopping I
+et l'interdiction de rejeter comme le je arrêter
+
+00:04:00,000 --> 00:04:03,000
+illustrated here low pass filter we can of course
+filtre passe ici bas illustrée nous pouvons bien sûr
+
+00:04:03,000 --> 00:04:07,000
+reject the low frequencies and retain
+rejeter les basses fréquences et de conserver
+
+00:04:07,000 --> 00:04:11,000
+the high frequencies and that then corresponds to
+les hautes fréquences et qui correspond alors à
+
+00:04:11,000 --> 00:04:17,000
+ideal high pass filter or we can just retain frequencies within a band
+idéal filtre passe-haut ou nous ne pouvons maintenir des fréquences dans une bande
+
+00:04:17,000 --> 00:04:22,000
+and so I show below what is referred to commonly as
+et donc je montre ci-dessous ce qui est appelé communément comme
+
+00:04:22,000 --> 00:04:25,000
+a bandpass filter now
+un filtre passe-bande maintenant
+
+00:04:25,000 --> 00:04:29,000
+this is what the ideal filters look like
+c'est ce que les filtres idéales ressemblent
+
+00:04:29,000 --> 00:04:33,000
+for continuous-time for discrete-time we have exactly
+pour temps continu pour temps discret, nous avons exactement
+
+00:04:33,000 --> 00:04:36,000
+the same situation namely we have
+la même situation à savoir que nous avons
+
+00:04:36,000 --> 00:04:40,000
+an ideal discrete-time low-pass filter which
+discret dans le temps un filtre passe-bas idéal qui
+
+00:04:40,000 --> 00:04:44,000
+passes exactly frequencies which are the low frequencies
+passe exactement des fréquences qui sont les basses fréquences
+
+00:04:44,000 --> 00:04:49,000
+low frequencies of course being around zero and because the periodicity also
+basses fréquences étant bien sûr autour de zéro et que la périodicité aussi
+
+00:04:49,000 --> 00:04:50,000
+around 2pi
+autour de 2 pi
+
+00:04:50,000 --> 00:04:54,000
+we show also an ideal
+nous montrons aussi un idéal
+
+00:04:54,000 --> 00:04:58,000
+high pass filter and a high pass filter
+filtre passe-haut et un filtre passe-haut
+
+00:04:58,000 --> 00:05:02,000
+as i indicated last time passes frequencies around pie
+comme je l'ai dit la dernière fois laisse passer les fréquences autour de la tarte
+
+00:05:02,000 --> 00:05:06,000
+and finally below that I show an ideal
+et enfin ci-dessous que je montre un idéal
+
+00:05:06,000 --> 00:05:11,000
+bandpass filter a an ideal bandpass filter passing frequencies
+un filtre passe-bande d'un filtre passe-bande idéal passant fréquences
+
+00:05:11,000 --> 00:05:16,000
+someplace in the range between 0 and pie
+quelque part dans la gamme comprise entre 0 et tarte
+
+00:05:16,000 --> 00:05:20,000
+and recall also bat the basic difference between
+et rappeler également batte la différence fondamentale entre
+
+00:05:20,000 --> 00:05:24,000
+continuous-time and discrete-time for these filters is that
+en temps continu et à temps discret pour ces filtres est que
+
+00:05:24,000 --> 00:05:27,000
+the discrete-time versions are of course periodic
+les versions en temps discret sont bien sûr périodique
+
+00:05:27,000 --> 00:05:32,000
+in frequency now let's look at
+la fréquence maintenant regardons
+
+00:05:32,000 --> 00:05:36,000
+these ideal filters and in particular the idea low-pass filter
+ces filtres idéaux et en particulier l'idée filtre passe-bas
+
+00:05:36,000 --> 00:05:40,000
+in the time domain we have
+dans le domaine du temps, nous avons
+
+00:05:40,000 --> 00:05:45,000
+the frequency response 0 the idea low-pass filter
+la réponse en fréquence 0 l'idée filtre passe-bas
+
+00:05:45,000 --> 00:05:50,000
+and shown below it is the impulse response so here is the frequency
+et ci-dessous, il est la réponse impulsionnelle alors voici est la fréquence
+
+00:05:50,000 --> 00:05:52,000
+response
+réponse
+
+00:05:52,000 --> 00:05:55,000
+and below it the impulse response
+et au-dessous de la réponse impulsionnelle
+
+00:05:55,000 --> 00:05:59,000
+love the ideal low-pass filter
+aimer le filtre passe-bas idéal
+
+00:05:59,000 --> 00:06:02,000
+and this of course is a sin x over X
+et cela bien sûr est un péché x sur X
+
+00:06:02,000 --> 00:06:05,000
+for with impulse response and recognize also
+pour à réponse impulsionnelle et de reconnaître aussi
+
+00:06:05,000 --> 00:06:09,000
+or recall that since this frequency response
+ou rappeler que depuis cette réponse en fréquence
+
+00:06:09,000 --> 00:06:12,000
+is real value
+est la valeur réelle
+
+00:06:12,000 --> 00:06:16,000
+the impulse response in other words the inverse transform
+la réponse impulsionnelle à-dire la transformation inverse
+
+00:06:16,000 --> 00:06:19,000
+is an even function of time and
+est une fonction paire du temps et
+
+00:06:19,000 --> 00:06:24,000
+notice also since I want to refer back to this
+remarquerez également que je veux vous reporter à cette
+
+00:06:24,000 --> 00:06:28,000
+that the impulse response to an ideal Lopez filter
+que la réponse impulsionnelle d'un filtre idéal Lopez
+
+00:06:28,000 --> 00:06:33,000
+in fact is non causal that follows from Long other things from the fact that
+en fait non causale qui résulte de longues autres choses du fait que
+
+00:06:33,000 --> 00:06:35,000
+it's an even function
+c'est une fonction paire
+
+00:06:35,000 --> 00:06:39,000
+but keep in mind in fact that sin x over its function
+mais garder à l'esprit que sin x sur sa fonction
+
+00:06:39,000 --> 00:06:42,000
+goes off to infinity in both directions so
+s'éteint à l'infini dans les deux sens de sorte
+
+00:06:42,000 --> 00:06:45,000
+the impulse response to the idea low-pass filter
+la réponse impulsionnelle à l'idée filtre passe-bas
+
+00:06:45,000 --> 00:06:52,000
+is symmetric and continues to have tales of the plus and minus infinity
+est symétrique et continue d'avoir des histoires de plus et moins l'infini
+
+00:06:52,000 --> 00:06:55,000
+now the situation is basically the same
+maintenant la situation est fondamentalement la même
+
+00:06:55,000 --> 00:06:59,000
+in the discrete-time case
+dans le cas temps discret
+
+00:06:59,000 --> 00:07:04,000
+let's look at the frequency response and associated impulse response
+regardons la réponse en fréquence et associé réponse impulsionnelle
+
+00:07:04,000 --> 00:07:08,000
+for an ideal discrete-time low-pass filter
+pour un temps discret filtre passe-bas idéal
+
+00:07:08,000 --> 00:07:12,000
+so once again here is the
+donc une fois encore ici est l'
+
+00:07:12,000 --> 00:07:16,000
+frequency response love the idea low-pass filter
+réponse en fréquence aiment l'idée filtre passe-bas
+
+00:07:16,000 --> 00:07:19,000
+and below it I show the impulse response
+et au-dessous, je montre la réponse impulsionnelle
+
+00:07:19,000 --> 00:07:24,000
+again its a sin x over x-type impulse response
+nouveau son péché x sur x-type réponse impulsionnelle
+
+00:07:24,000 --> 00:07:27,000
+and again we recognize
+et encore, nous reconnaissons
+
+00:07:27,000 --> 00:07:31,000
+that sits in the frequency domain this frequency response
+qui se trouve dans le domaine de la fréquence présente une réponse en fréquence
+
+00:07:31,000 --> 00:07:36,000
+is real bad that means as a consequence
+est vraiment mauvais qui signifie en conséquence
+
+00:07:36,000 --> 00:07:42,000
+of the properties love the forty a transforming inverse Fourier transform
+des propriétés aiment la quarante transformée de Fourier transformation inverse
+
+00:07:42,000 --> 00:07:45,000
+that the impulse response is an even function
+que la réponse impulsionnelle est une fonction paire
+
+00:07:45,000 --> 00:07:49,000
+in the time domain and also incidently
+dans le domaine temporel et aussi incidemment
+
+00:07:49,000 --> 00:07:53,000
+the sin x over expulsion goes off to infinity
+le péché x sur expulsion va à l'infini
+
+00:07:53,000 --> 00:07:56,000
+again in both directions
+à nouveau dans les deux directions
+
+00:07:56,000 --> 00:08:00,000
+now we talked about i do. filters
+maintenant nous avons parlé que je fais. filtres
+
+00:08:00,000 --> 00:08:04,000
+in this discussion and ideal filters are
+dans cette discussion et filtres sont idéales
+
+00:08:04,000 --> 00:08:08,000
+in fact ideal in a certain sense what they do ideally
+en fait idéal dans un certain sens ce qu'ils font idéalement
+
+00:08:08,000 --> 00:08:12,000
+is they pass a certain band of frequencies exactly
+est qu'ils passent une certaine bande de fréquences exactement
+
+00:08:12,000 --> 00:08:19,000
+and they reject a band of frequencies exactly
+et ils rejettent une bande de fréquences exactement
+
+00:08:19,000 --> 00:08:23,000
+on the other hand there are many filtering problems in which
+d'autre part, il existe de nombreux problèmes de filtrage, dans lequel
+
+00:08:23,000 --> 00:08:27,000
+generally we don't have a sharp distinction between the frequencies we
+en général, nous n'avons pas de distinction nette entre les fréquences nous
+
+00:08:27,000 --> 00:08:28,000
+want to
+vouloir
+
+00:08:28,000 --> 00:08:31,000
+passed in the frequencies you wanna 12 reject
+passé dans les fréquences vous voulez rejeter 12
+
+00:08:31,000 --> 00:08:34,000
+one example if this that's elaborated on in the tax is
+un exemple, si ce qui est élaboré sur la taxe est
+
+00:08:34,000 --> 00:08:38,000
+the design of an automotive suspension system which in fact
+la conception d'un système de suspension automobile qui en fait
+
+00:08:38,000 --> 00:08:42,000
+is the design all a low-pass filter
+C'est la conception tout d'un filtre passe-bas
+
+00:08:42,000 --> 00:08:45,000
+and basically what you want to do in a case like that
+et essentiellement ce que vous voulez faire dans un cas comme celui
+
+00:08:45,000 --> 00:08:48,000
+is filter out or attenuate
+est de filtrer ou atténuer
+
+00:08:48,000 --> 00:08:51,000
+very rapid Road variations and keep
+variations de la route très rapide et garder
+
+00:08:51,000 --> 00:08:56,000
+the lower variations in of course elevation of the highway
+les variations inférieures à des cours d'élévation de la route
+
+00:08:56,000 --> 00:09:00,000
+or or road and what you can see
+ou ou par la route et ce que vous pouvez voir
+
+00:09:00,000 --> 00:09:03,000
+intuitively is dead and there isn't really a very sharp
+est intuitivement mort et il n'est pas vraiment une très forte
+
+00:09:03,000 --> 00:09:08,000
+distinction a sharp cutoff between what you would like to recall
+distinction une coupure nette entre ce que vous souhaitez rappeler
+
+00:09:08,000 --> 00:09:13,000
+the low frequencies and what you would call the high frequencies
+les basses fréquences et ce que vous appelez les hautes fréquences
+
+00:09:13,000 --> 00:09:17,000
+now also somewhat related to this is the fact dead
+maintenant aussi un peu liée à cela est le fait morts
+
+00:09:17,000 --> 00:09:21,000
+the as we've seen in the time domain is ideal filters have
+la comme nous l'avons vu dans le domaine temporel est idéal filtres ont
+
+00:09:21,000 --> 00:09:25,000
+very particular kind of character for example let's look back
+très particulier genre de personnage, par exemple, regardons en arrière
+
+00:09:25,000 --> 00:09:30,000
+at the ideal low-pass filter and
+au niveau du filtre passe-bas idéal et
+
+00:09:30,000 --> 00:09:34,000
+we saw this the impulse response
+nous avons vu ce la réponse impulsionnelle
+
+00:09:34,000 --> 00:09:37,000
+the impulse response is what we've shown here let's now look
+la réponse impulsionnelle est ce que nous avons montré ici regardons maintenant
+
+00:09:37,000 --> 00:09:41,000
+at the step response love the discrete-time
+à la réponse à un échelon aimer le temps discret
+
+00:09:41,000 --> 00:09:47,000
+ideal low-pass filter and noticed the fact that it has a tail that oscillates
+idéal filtre passe-bas et a remarqué le fait qu'il a une queue qui oscille
+
+00:09:47,000 --> 00:09:52,000
+and when this step its in fact it has oscillatory behavior
+et lorsque cette étape de son en fait, il a un comportement oscillatoire
+
+00:09:52,000 --> 00:09:57,000
+now exactly the same situation occurs
+maintenant exactement la même situation se produit
+
+00:09:57,000 --> 00:10:01,000
+in continuous-time let's look at the
+en temps continu regardons l'
+
+00:10:01,000 --> 00:10:04,000
+step response love the continuous-time
+réponse à un échelon aiment le temps continu
+
+00:10:04,000 --> 00:10:08,000
+ideal ok pass filter and
+filtre idéal de passe ok et
+
+00:10:08,000 --> 00:10:11,000
+what we see is that when a step its
+ce que nous voyons, c'est que quand une étape de sa
+
+00:10:11,000 --> 00:10:14,000
+then in fact we get and isolation
+alors qu'en fait, nous obtenons et l'isolement
+
+00:10:14,000 --> 00:10:17,000
+and very often that isolation
+et très souvent que l'isolement
+
+00:10:17,000 --> 00:10:21,000
+is something this undesirable for example if you're designing
+est quelque chose de cette indésirable par exemple, si vous concevez
+
+00:10:21,000 --> 00:10:26,000
+an automotive suspension system and you hit a curve which is
+un système de suspension automobile et vous frappez une courbe qui est
+
+00:10:26,000 --> 00:10:30,000
+step input in fact you probably would not like
+l'étape d'entrée, en fait, vous n'auriez probablement pas comme
+
+00:10:30,000 --> 00:10:34,000
+to have the automobile oscillating sort
+d'avoir de l'automobile sorte oscillant
+
+00:10:34,000 --> 00:10:38,000
+sort dying down in in isolation
+sorte de mourir dans l'isolement dans
+
+00:10:38,000 --> 00:10:41,000
+now is another very important point which again
+est maintenant un autre point très important qui encore une fois
+
+00:10:41,000 --> 00:10:45,000
+we can see there in continuous-time and discrete-time
+nous pouvons y voir en temps continu et à temps discret
+
+00:10:45,000 --> 00:10:48,000
+which is that even if we wanted to have
+qui est que même si nous voulions encore
+
+00:10:48,000 --> 00:10:53,000
+an ideal filter the ideal filter has another problem
+un filtre idéal le filtre idéal a un autre problème
+
+00:10:53,000 --> 00:10:57,000
+if we want to attempt to implemented in real time
+si nous voulons tenter de mises en œuvre en temps réel
+
+00:10:57,000 --> 00:11:01,000
+what's the problem the problem is
+quel est le problème, le problème est
+
+00:11:01,000 --> 00:11:05,000
+that since the impulse responses even and in fact
+que, puisque les réponses impulsionnelles même et, en fait,
+
+00:11:05,000 --> 00:11:08,000
+has details that go of the plus and minus infinity
+a des détails qui vont des plus et moins l'infini
+
+00:11:08,000 --> 00:11:12,000
+its non causal so if in fact
+sa non causal si, en fait,
+
+00:11:12,000 --> 00:11:18,000
+we want to build a filter and the filter is restricted operate in real time
+nous voulons construire un filtre et le filtre est limitée fonctionner en temps réel
+
+00:11:18,000 --> 00:11:21,000
+than in fact we can't build
+que, en fait, nous ne pouvons pas construire
+
+00:11:21,000 --> 00:11:24,000
+an ideal filter so
+un filtre idéal si
+
+00:11:24,000 --> 00:11:28,000
+what that says is that in practice although i do. filters
+ce que dit, c'est que dans la pratique, bien que je fais. filtres
+
+00:11:28,000 --> 00:11:34,000
+are nice to think about and perhaps relate to practical problems
+sont agréables à réfléchir et peut-être se rapporter à des problèmes pratiques
+
+00:11:34,000 --> 00:11:37,000
+more typically what we consider
+plus généralement ce que nous considérons
+
+00:11:37,000 --> 00:11:40,000
+are non-ideal filters and
+sont des filtres non idéaux et
+
+00:11:40,000 --> 00:11:44,000
+in the discrete-time case non-ideal filter
+dans le cas temps discret filtre non idéal
+
+00:11:44,000 --> 00:11:48,000
+then would have a characteristic somewhat
+puis aurait peu une caractéristique
+
+00:11:48,000 --> 00:11:51,000
+like i've indicated here where instead o
+comme je l'ai dit ici où, au lieu o
+
+00:11:51,000 --> 00:11:56,000
+a very rapid transition from passband to stop and
+une transition très rapide de la bande passante pour arrêter et
+
+00:11:56,000 --> 00:11:59,000
+there would be more gradual transition
+il n'y aurait plus transition graduelle
+
+00:11:59,000 --> 00:12:03,000
+with a passband cutoff frequency and
+avec une fréquence de coupure passe-bande et
+
+00:12:03,000 --> 00:12:06,000
+a stop and cutoff frequency
+une fréquence d'arrêt et de coupure
+
+00:12:06,000 --> 00:12:10,000
+and perhaps also instead of having exactly
+et peut-être aussi au lieu d'avoir exactement
+
+00:12:10,000 --> 00:12:14,000
+flat characteristic in the stop band and in the past and
+caractéristique plat dans la bande d'arrêt et dans le passé et
+
+00:12:14,000 --> 00:12:18,000
+we would allow a certain amount a ripple
+nous permettre une certaine quantité d'une ondulation
+
+00:12:18,000 --> 00:12:21,000
+we also have exactly the same situation
+nous avons aussi exactement la même situation
+
+00:12:21,000 --> 00:12:26,000
+in continuous-time we're here will just simply change your frequency axis
+en temps continu, nous sommes ici allons tout simplement changer vos axe des fréquences
+
+00:12:26,000 --> 00:12:31,000
+to a continuous frequency axis instead of the discrete frequency axes
+à une fréquence continue axe au lieu des axes de fréquences discrètes
+
+00:12:31,000 --> 00:12:36,000
+again we would think in terms of I'm allowable passband ripple
+Nous voudrions à nouveau penser en termes de bande passante que je suis admissible ondulation
+
+00:12:36,000 --> 00:12:40,000
+a transition from stop and from passband to stop and
+une transition de l'arrêt et de bande passante pour arrêter et
+
+00:12:40,000 --> 00:12:44,000
+with a passband cutoff frequency and a stop and
+avec une fréquence de coupure passe-bande et une butée et
+
+00:12:44,000 --> 00:12:47,000
+cutoff frequency so
+fréquence de coupure de sorte
+
+00:12:47,000 --> 00:12:53,000
+kind of the notion here is dead again i do. filters are ideal in some respects
+type de la notion ici est mort à nouveau que je fais. filtres sont idéales à certains égards,
+
+00:12:53,000 --> 00:12:56,000
+not ideal in other respects and for many
+pas idéal à d'autres égards et pour beaucoup
+
+00:12:56,000 --> 00:13:01,000
+practical problems we may not want them and even if we did want them
+problèmes pratiques que nous ne veulent pas eux et même si nous ne voulions les
+
+00:13:01,000 --> 00:13:06,000
+we may not be able to get them perhaps because at this issue of causality
+nous pourrions ne pas être en mesure de les obtenir peut-être parce que cette question de la causalité
+
+00:13:06,000 --> 00:13:10,000
+even if causality is not an issue what happens
+même si la causalité n'est pas un problème ce qui se passe
+
+00:13:10,000 --> 00:13:13,000
+in filter design and implementation in fact
+dans la conception et la mise en œuvre, en fait, filtre
+
+00:13:13,000 --> 00:13:19,000
+is dead the sharper you attempt to make the cut off
+est mort le plus nette vous essayez de faire la coupure
+
+00:13:19,000 --> 00:13:22,000
+the more expensive in some sense the filter becomes
+le plus cher dans un certain sens le filtre devient
+
+00:13:22,000 --> 00:13:25,000
+either in terms of comp phone-ins in continuous-time
+soit en termes de comp téléphone-ins en temps continu
+
+00:13:25,000 --> 00:13:29,000
+or in terms of computation in discrete-time
+ou en termes de calcul en temps discret
+
+00:13:29,000 --> 00:13:33,000
+and so their are these whole variety of issues
+et ainsi de leur sont ces toute la gamme des questions
+
+00:13:33,000 --> 00:13:36,000
+that really make it important to
+qui font vraiment important de
+
+00:13:36,000 --> 00:13:39,000
+understand the notion love non-ideal
+comprendre la notion d'amour non idéal
+
+00:13:39,000 --> 00:13:42,000
+filters now just two
+filtres maintenant que deux
+
+00:13:42,000 --> 00:13:46,000
+illustrate as an example let me remind you
+illustrer, par exemple, permettez-moi de vous rappeler
+
+00:13:46,000 --> 00:13:52,000
+love one kinda bad example love what in fact is a non-ideal
+aimer les uns un peu mauvais exemple aimer ce que, en fait, est un non-idéal
+
+00:13:52,000 --> 00:13:56,000
+low-pass filter and we have look previously
+filtre passe-bas et nous avons regarder auparavant
+
+00:13:56,000 --> 00:13:59,000
+at The Associated differential equation
+à L'équation différentielle associée
+
+00:13:59,000 --> 00:14:03,000
+let me now in fact related to a circuit
+Permettez-moi maintenant, en fait liés à un circuit
+
+00:14:03,000 --> 00:14:07,000
+and in particular an RC circuit
+et en particulier un circuit RC
+
+00:14:07,000 --> 00:14:10,000
+where the output could either be across the capacitor
+où la production pourrait être soit aux bornes du condensateur
+
+00:14:10,000 --> 00:14:14,000
+or the output can be across the resistor so
+ou la sortie peut être bornes de la résistance de manière
+
+00:14:14,000 --> 00:14:18,000
+effect we have two systems here we have a system
+effet nous avons deux systèmes nous avons ici un système
+
+00:14:18,000 --> 00:14:22,000
+which is the system function from the voltage source input to the capacitor
+qui est la fonction de système à partir de la source de tension d'entrée au condensateur
+
+00:14:22,000 --> 00:14:23,000
+output
+sortie
+
+00:14:23,000 --> 00:14:26,000
+the system from the both source input
+le système à partir de l'entrée de la source à la fois
+
+00:14:26,000 --> 00:14:30,000
+to the resistor output and in fact
+à la sortie de résistance et, en fait,
+
+00:14:30,000 --> 00:14:34,000
+just up like your cause both its law to this we can relate those in a very
+juste en haut comme votre cause à la fois de son droit à ce que nous pouvons rapporter ceux qui sont en très
+
+00:14:34,000 --> 00:14:35,000
+straightforward way
+de manière simple
+
+00:14:35,000 --> 00:14:39,000
+it's very straight forward to verify that
+c'est avant très simple pour vérifier que
+
+00:14:39,000 --> 00:14:43,000
+the system from input to resist their output
+le système de saisie de résister à leur sortie
+
+00:14:43,000 --> 00:14:47,000
+is simply the identity system with
+est tout simplement le système d'identité avec
+
+00:14:47,000 --> 00:14:51,000
+the capacitor output subtracted from
+la sortie du condensateur soustrait
+
+00:14:51,000 --> 00:14:54,000
+now we can write the differential equation
+maintenant nous pouvons écrire l'équation différentielle
+
+00:14:54,000 --> 00:14:59,000
+for either the system's and as we talked about last time
+soit pour le système et, alors que nous en avons parlé la dernière fois
+
+00:14:59,000 --> 00:15:03,000
+in the last several lectures solve that equation using
+dans les dernières conférences résoudre cette équation à l'aide
+
+00:15:03,000 --> 00:15:06,000
+the exploiting the properties at a4e a transform
+l'exploitation des propriétés à a4e une transformée
+
+00:15:06,000 --> 00:15:10,000
+and in fact we if we look at the differential equation
+et en fait, nous si nous regardons l'équation différentielle
+
+00:15:10,000 --> 00:15:14,000
+relating the capacitor output to
+concernant la sortie du condensateur d'
+
+00:15:14,000 --> 00:15:18,000
+the voltage source input we recognize that this is an example
+la source d'entrée de tension, nous reconnaissons qu'il s'agit d'un exemple
+
+00:15:18,000 --> 00:15:22,000
+that in effect we saw previously and so
+qui, en réalité, nous l'avons vu précédemment et ainsi
+
+00:15:22,000 --> 00:15:27,000
+just working our way down applying the 48 transport to the differential
+juste travailler notre chemin appliquer le transport 48 à l'écart
+
+00:15:27,000 --> 00:15:28,000
+equation
+équation
+
+00:15:28,000 --> 00:15:32,000
+and generating the system function by taking the ratio of the capacitor
+et génération de la fonction du système en effectuant le rapport entre le condensateur
+
+00:15:32,000 --> 00:15:34,000
+voltage
+tension
+
+00:15:34,000 --> 00:15:38,000
+or its Fourier transform to the Fourier transform the source
+ou sa transformée de Fourier de la transformée de Fourier de la source
+
+00:15:38,000 --> 00:15:42,000
+we then have the system function Associated
+nous avons alors la fonction du système associé
+
+00:15:42,000 --> 00:15:46,000
+with the system for which the output is the capacitor voltage
+avec le système pour lequel la sortie est la tension du condensateur
+
+00:15:46,000 --> 00:15:49,000
+or if we solve instead for the system function
+ou si nous réglons la place de la fonction du système
+
+00:15:49,000 --> 00:15:53,000
+associated with the resistor output
+associé à la sortie de résistance
+
+00:15:53,000 --> 00:15:57,000
+we can simply subtract h1 from unity
+nous ne pouvons tout simplement soustraire h1 de l'unité
+
+00:15:57,000 --> 00:16:01,000
+and the system function that we get in that case is the system function
+et la fonction du système que l'on obtient dans ce cas est la fonction de système
+
+00:16:01,000 --> 00:16:04,000
+that I show here so we have
+que je montre ici, donc nous avons
+
+00:16:04,000 --> 00:16:08,000
+now to system functions one for the capacitor output
+maintenant aux fonctions système pour une sortie de condensateur
+
+00:16:08,000 --> 00:16:12,000
+the other for the resistor output and
+l'autre pour la sortie de résistance et
+
+00:16:12,000 --> 00:16:16,000
+one the first corresponding to the capacitor output
+un premier correspondant à la sortie du condensateur
+
+00:16:16,000 --> 00:16:20,000
+in fact if we plotted on a linear ramp up to scale
+en fait, si nous avons tracé sur un linéaire montée en puissance à l'échelle
+
+00:16:20,000 --> 00:16:23,000
+looks like this and as you can see and as we saw last time
+ressemble à ceci et comme vous pouvez le voir et comme nous l'avons vu la dernière fois
+
+00:16:23,000 --> 00:16:27,000
+is an approximation to a low pass filter
+est une approximation d'un filtre passe-bas
+
+00:16:27,000 --> 00:16:30,000
+it is in fact and non-ideal ok pass filter
+il est en fait et filtre non idéal passe ok
+
+00:16:30,000 --> 00:16:35,000
+whereas the resistor output is
+tandis que la sortie de résistance est
+
+00:16:35,000 --> 00:16:38,000
+an approximation to a high pass filter
+une approximation d'un filtre passe-haut
+
+00:16:38,000 --> 00:16:42,000
+or in effect and non-ideal high pass filter
+ou en vigueur et filtre non idéal passe-haut
+
+00:16:42,000 --> 00:16:45,000
+so in one case just comparing the two we have
+si dans un cas seulement en comparant les deux, nous avons
+
+00:16:45,000 --> 00:16:50,000
+a low-pass filter as the capacitor output associate with the capacitor
+un filtre passe-bas que la sortie du condensateur associé avec le condensateur
+
+00:16:50,000 --> 00:16:51,000
+output
+sortie
+
+00:16:51,000 --> 00:16:54,000
+and a high pass filter Associated with the
+et un filtre passe-haut Associé à la
+
+00:16:54,000 --> 00:16:57,000
+resistor out let's just quickly
+résistance sur les let juste rapidement
+
+00:16:57,000 --> 00:17:01,000
+look at that example now looking on a boat reply
+regarder cet exemple maintenant à la recherche d'une réponse de bateau
+
+00:17:01,000 --> 00:17:06,000
+instead o on the linear scale that we showed before
+o au lieu de l'échelle linéaire que nous avons montré avant
+
+00:17:06,000 --> 00:17:09,000
+and recall incidently a and
+et rappeler incidemment un et
+
+00:17:09,000 --> 00:17:15,000
+be aware incident leave the fact that week and of course cascade
+être conscient incidents laisser le fait que la semaine et bien sûr cascade
+
+00:17:15,000 --> 00:17:18,000
+several filters if this type and approve the characteristics
+plusieurs filtres si ce type et d'approuver les caractéristiques
+
+00:17:18,000 --> 00:17:22,000
+so I have shown at the top
+donc je l'ai montré au sommet
+
+00:17:22,000 --> 00:17:26,000
+a bodie plot or the
+une parcelle de bodie ou l'
+
+00:17:26,000 --> 00:17:32,000
+capacitors system functions associated with the capacitor output it's flat out
+les fonctions du système de condensateurs associés à la sortie du condensateur il est à plat
+
+00:17:32,000 --> 00:17:34,000
+to a frequency corresponding 21
+à une fréquence correspondant 21
+
+00:17:34,000 --> 00:17:38,000
+over the time constant RC
+sur la constante de temps RC
+
+00:17:38,000 --> 00:17:41,000
+and then it falls off at 10 DB
+et puis il tombe à 10 DB
+
+00:17:41,000 --> 00:17:45,000
+per decade a decade being a factor 10
+par décennie LA DÉCENNIE Être le facteur 10
+
+00:17:45,000 --> 00:17:50,000
+or if instead we looked at the system function associated with the resistor
+ou si, au contraire, nous avons examiné la fonction système associée à la résistance
+
+00:17:50,000 --> 00:17:53,000
+output that corresponds to a
+sortie qui correspond à une
+
+00:17:53,000 --> 00:17:57,000
+10 dB per decade increase in frequency
+10 dB par augmentation de dix ans de la fréquence
+
+00:17:57,000 --> 00:18:01,000
+up to approximately the reciprocal at the time constant and
+jusqu'à environ l'inverse de la constante de temps et
+
+00:18:01,000 --> 00:18:05,000
+then approaching a flat characteristic after that
+alors approcher une caractéristique plat après que
+
+00:18:05,000 --> 00:18:09,000
+and if we consider either one of these
+et si l'on considère l'une de ces
+
+00:18:09,000 --> 00:18:12,000
+looking back again at the low-pass
+la recherche de retour à la passe-bas
+
+00:18:12,000 --> 00:18:17,000
+filter if we were to cascade several filters
+filtrer si nous étions en cascade de plusieurs filtres
+
+00:18:17,000 --> 00:18:21,000
+with this frequency response then because we have things plotted on a boat
+avec cette réponse en fréquence puis parce que nous avons des choses tracée sur un bateau
+
+00:18:21,000 --> 00:18:22,000
+reply
+répondre
+
+00:18:22,000 --> 00:18:26,000
+the body plot for the Cascade would simply be summing these and so
+la parcelle du corps de la Cascade serait simplement en additionnant les et ainsi de
+
+00:18:26,000 --> 00:18:29,000
+if we castigated for example two stages
+si nous fustigé par exemple deux étapes
+
+00:18:29,000 --> 00:18:33,000
+is that a role of at 10 dB per decade it would
+est-ce un rôle de à 10 dB par décennie il serait
+
+00:18:33,000 --> 00:18:37,000
+role of at 20 DB for decades
+rôle de à 20 DB depuis des décennies
+
+00:18:37,000 --> 00:18:40,000
+now filters that this type RC filters
+filtres maintenant que les filtres RC ce type
+
+00:18:40,000 --> 00:18:44,000
+perhaps several of them in cascade are
+peut-être plusieurs d'entre eux en cascade sont
+
+00:18:44,000 --> 00:18:47,000
+in fact very prevalent
+en fait très répandue
+
+00:18:47,000 --> 00:18:51,000
+and in fact in a in a an environment
+et en fait, dans un dans un milieu
+
+00:18:51,000 --> 00:18:55,000
+like this where where in fact doing recording
+comme celui-ci où où, en fait, faire l'enregistrement
+
+00:18:55,000 --> 00:18:58,000
+we see there there are
+nous voyons qu'il ya des
+
+00:18:58,000 --> 00:19:03,000
+filters a fact I there show up very commonly both in the audio
+filtre un fait, je n'y apparaissent très fréquemment à la fois dans l'audio
+
+00:19:03,000 --> 00:19:07,000
+and the video poker portion or the signal processing this Associated
+et la partie de poker vidéo ou le traitement de signaux associés ce
+
+00:19:07,000 --> 00:19:11,000
+with making this set of tapes in fact
+avec prise de ce jeu de bandes en fait
+
+00:19:11,000 --> 00:19:14,000
+are let's take a look in the control room
+sont jetons un coup d'oeil dans la salle de contrôle
+
+00:19:14,000 --> 00:19:17,000
+and what I'll be able to show you in the control room
+et ce que je serai en mesure de vous montrer dans la salle de contrôle
+
+00:19:17,000 --> 00:19:20,000
+is the audio portion love
+est la partie audio amour
+
+00:19:20,000 --> 00:19:25,000
+the processing that's done and the kinds of filters very much of the type we just
+le traitement qui est fait et les types de filtres très bien du type que nous venons de
+
+00:19:25,000 --> 00:19:26,000
+talked about
+parlé
+
+00:19:26,000 --> 00:19:30,000
+their associated with signal processing this stunning
+leur associé au traitement du signal de cette superbe
+
+00:19:30,000 --> 00:19:33,000
+in preparing the audio the tapes so
+dans la préparation de l'audio les bandes afin
+
+00:19:33,000 --> 00:19:39,000
+let's just take a walk into the control room and see what we see
+disons simplement faire une promenade dans la salle de contrôle et de voir ce que nous voyons
+
+00:19:39,000 --> 00:19:44,000
+well this is the control room issues for camera switching its
+bien c'est les questions de la salle de commande de commutation caméra son
+
+00:19:44,000 --> 00:19:48,000
+use for computer editing and also audio control
+utiliser pour l'édition de l'ordinateur et aussi le contrôle audio
+
+00:19:48,000 --> 00:19:51,000
+you can see the monitors and these are used for the
+vous pouvez voir les moniteurs et ceux-ci sont utilisés pour la
+
+00:19:51,000 --> 00:19:55,000
+camera switching and and this is the computer editing
+commutation de la caméra et ce qui est la mise en forme informatique
+
+00:19:55,000 --> 00:19:59,000
+console that use for online and offline computer editing
+console qui utilisent pour l'édition de données en ligne et hors ligne
+
+00:19:59,000 --> 00:20:04,000
+but I really want to demonstrate though in a context to the lecture is the audio
+mais je veux vraiment montrer que dans un contexte de la conférence est l'audio
+
+00:20:04,000 --> 00:20:06,000
+control panel
+panneau de commande
+
+00:20:06,000 --> 00:20:10,000
+which contains among other things a variety of filters for high frequency
+qui contient entre autres une variété de filtres pour la haute fréquence
+
+00:20:10,000 --> 00:20:14,000
+low frequencies cetera basically equalization
+basses fréquences égalisation cetera essentiellement
+
+00:20:14,000 --> 00:20:18,000
+filters and what we have in the way of filtering is
+filtres et ce que nous avons dans la voie de filtrage est
+
+00:20:18,000 --> 00:20:22,000
+first of all a was referred to as a graphic equalizer
+tout d'abord un a été désigné comme un égaliseur graphique
+
+00:20:22,000 --> 00:20:26,000
+which consists of a set a bandpass filters which are described
+qui se compose d'un ensemble d'un des filtres passe-bande qui sont décrits
+
+00:20:26,000 --> 00:20:29,000
+little more carefully in a minute and then also
+peu plus attentivement en une minute et puis aussi
+
+00:20:29,000 --> 00:20:33,000
+and audio Control Panel which is down here
+et Panneau de configuration audio qui est ici
+
+00:20:33,000 --> 00:20:36,000
+and which contains separate equalizer circuits for each
+et qui contient des circuits d'égalisation séparées pour chaque
+
+00:20:36,000 --> 00:20:41,000
+over a whole set of channels and also lotsa controls on them
+sur un ensemble de canaux et aussi lotsa contrôles sur les
+
+00:20:41,000 --> 00:20:45,000
+well let me begin in the demonstration by
+Eh bien, laissez-moi d'abord à la manifestation par
+
+00:20:45,000 --> 00:20:50,000
+demonstrating a little bit of what the graphic equalizer does
+démontrer un peu de ce que l'égaliseur graphique ne
+
+00:20:50,000 --> 00:20:55,000
+okay well what we have is a set a bandpass filters
+ok bien ce que nous avons est un ensemble d'un filtres passe-bande
+
+00:20:55,000 --> 00:21:00,000
+and what's indicated appear the center frequencies as the filters
+et ce qui semble indiqué les fréquences centrales que les filtres
+
+00:21:00,000 --> 00:21:04,000
+and then a slider switch reach 18 Lexus attenuator amplify
+puis d'un commutateur coulissant atteindre 18 Lexus atténuateur amplifier
+
+00:21:04,000 --> 00:21:08,000
+and this is a DP scale so essentially
+et il s'agit d'une échelle DP si essentiellement
+
+00:21:08,000 --> 00:21:12,000
+if you look across this banker filters
+si vous regardez à travers ce filtre banquier
+
+00:21:12,000 --> 00:21:16,000
+with the output olaf for the equalizer just being the summer the outputs from
+avec la olaf de sortie de l'égaliseur étant juste été, les sorties à partir de
+
+00:21:16,000 --> 00:21:21,000
+you to these filters interestingly the position the slider switches as you move
+vous à ces filtres intéressante la position des commutateurs coulissants que vous vous déplacez
+
+00:21:21,000 --> 00:21:23,000
+across here
+travers ici
+
+00:21:23,000 --> 00:21:26,000
+in effect shows you what the frequency response to the equalizer is
+en effet vous montre ce que la réponse en fréquence de l'égaliseur est
+
+00:21:26,000 --> 00:21:30,000
+so you can change the overall shaping I'll
+ainsi vous pouvez changer la mise en forme globale je vais
+
+00:21:30,000 --> 00:21:35,000
+the filter by moving the switches up and down all right now the equalizer is
+le filtre en déplaçant les commutateurs de haut en bas tout en ce moment l'égaliseur est
+
+00:21:35,000 --> 00:21:36,000
+outlets
+points de vente
+
+00:21:36,000 --> 00:21:40,000
+put the equaliser into the circuit and now I I put in this filtering
+mettre l'égaliseur dans le circuit et maintenant II mis en ce filtrage
+
+00:21:40,000 --> 00:21:41,000
+characteristic
+caractéristique
+
+00:21:41,000 --> 00:21:45,000
+and what I'd like to demonstrate is filtering
+et ce que je voudrais démontrer que le filtrage
+
+00:21:45,000 --> 00:21:49,000
+with this when we do things that are a little more dramatic than what would
+avec ce quand nous faisons des choses qui sont un peu plus dramatique que ce qui serait
+
+00:21:49,000 --> 00:21:52,000
+normally be done in a typical audio recordings setting
+normalement être fait dans un enregistrement audio typiques de réglage
+
+00:21:52,000 --> 00:21:57,000
+and to do this let's add to my voice to music too
+et pour ce faire, nous allons ajouter ma voix à la musique trop
+
+00:21:57,000 --> 00:22:02,000
+make it more interesting a not the my voice is an interesting as it is
+le rendre plus intéressant un pas ma voix est intéressante car elle est
+
+00:22:02,000 --> 00:22:05,000
+but in any case let's bring some music up
+mais en tout cas, nous allons faire de la musique jusqu'à
+
+00:22:05,000 --> 00:22:09,000
+and now what all do is
+et maintenant qu'est-ce que tout est
+
+00:22:09,000 --> 00:22:15,000
+set the low frequencies flat and let me take out the high frequencies
+définir les basses fréquences plat et laissez-moi prendre les hautes fréquences
+
+00:22:15,000 --> 00:22:19,000
+above eight hundred cycle and
+au-dessus de huit cent cycles et
+
+00:22:19,000 --> 00:22:23,000
+so now we have affectively is the low-pass filter it
+alors maintenant nous avons affectivement est le filtre passe-bas, il
+
+00:22:23,000 --> 00:22:27,000
+and now the low-pass filter let me know
+et maintenant le filtre passe-bas-le moi savoir
+
+00:22:27,000 --> 00:22:31,000
+bring the high is backup
+apporter le haut est de sauvegarde
+
+00:22:31,000 --> 00:22:35,000
+and so on bringing up those bandpass filters
+et ainsi de suite élever ces filtres passe-bande
+
+00:22:35,000 --> 00:22:39,000
+and now let me cut-out the lows
+et maintenant laissez-moi découpe les bas
+
+00:22:39,000 --> 00:22:43,000
+and you'll hear the lows disappearing and in effect
+et vous entendrez les bas et disparaissent en effet
+
+00:22:43,000 --> 00:22:46,000
+keeping the highest affectively Crispin's
+garder le plus affectivement Crépin
+
+00:22:46,000 --> 00:22:50,000
+the sound my voice music
+le son de ma musique voix
+
+00:22:50,000 --> 00:22:56,000
+and finally let me go back 20db equalization I need to the filters
+et enfin je reviens 20db péréquation je dois les filtres
+
+00:22:56,000 --> 00:23:00,000
+and what also to now is
+et ce qui est maintenant également à
+
+00:23:00,000 --> 00:23:05,000
+take the equalizer out at the circuit totally
+prendre l'égaliseur sur le circuit totalement
+
+00:23:05,000 --> 00:23:10,000
+now let's take a look at the audio Master Control Panel
+maintenant nous allons jeter un coup d'oeil à l'audio Master Control Panel
+
+00:23:10,000 --> 00:23:13,000
+and this panel has of course
+et ce groupe a bien sûr
+
+00:23:13,000 --> 00:23:17,000
+for each channel and for example channel that we're working on
+pour chaque canal et par exemple le canal que nous travaillons sur
+
+00:23:17,000 --> 00:23:20,000
+a volume control I can turn the volume down
+un contrôle de volume, je peux baisser le volume
+
+00:23:20,000 --> 00:23:24,000
+and I can turn the volume up and
+et je peux monter le volume et
+
+00:23:24,000 --> 00:23:28,000
+it also has a set for this particular equalizer circuit
+elle a également un ensemble de ce circuit égaliseur particulier
+
+00:23:28,000 --> 00:23:33,000
+it has a set love 3 bandpass filters
+il a un ensemble d'amour 3 filtres passe-bande
+
+00:23:33,000 --> 00:23:36,000
+and not switch lettuce either
+et pas passer laitue soit
+
+00:23:36,000 --> 00:23:39,000
+put in up to 12 the be gain
+mis en place à 12 le gain de soit
+
+00:23:39,000 --> 00:23:42,000
+or 12 DB attenuation in each of the bands
+ou 12 dB d'atténuation dans chacune des bandes
+
+00:23:42,000 --> 00:23:46,000
+and also a selector switch the lights is select the center the band
+et aussi un sélecteur allumer la lumière est de sélectionner le centre de la bande
+
+00:23:46,000 --> 00:23:51,000
+so let me Jess a again demonstrate a little bit with this and
+alors laissez-moi un Jess démontrer encore un peu avec cela et
+
+00:23:51,000 --> 00:23:56,000
+let's get a closeup of this panel so what we have is i indicated
+passons un gros plan de ce panneau si ce que nous avons est indiqué i
+
+00:23:56,000 --> 00:24:01,000
+is 3 bandpass filters and these knobs that I'm pointing to hear
+est de 3 filtres passe-bande et ces boutons que je pointant entendre
+
+00:24:01,000 --> 00:24:06,000
+are controls that allow us to reach the filters to put in
+sont les contrôles qui nous permettent d'atteindre les filtres à mettre en
+
+00:24:06,000 --> 00:24:09,000
+up to 12 dB gain or 12 dB attenuation
+jusqu'à 12 dB de gain ou 12 dB d'atténuation
+
+00:24:09,000 --> 00:24:14,000
+there are also with the to the filters a selector switch
+il existe également avec l'un sélecteur pour les filtres
+
+00:24:14,000 --> 00:24:19,000
+that lets us adjust the center frequency the filter basically it's a
+qui nous permet d'ajuster la fréquence centrale du filtre, essentiellement, c'est un
+
+00:24:19,000 --> 00:24:24,000
+to position switch they're also as you can see is
+pour positionner l'interrupteur ils sont aussi comme vous pouvez voir est
+
+00:24:24,000 --> 00:24:28,000
+a button dead Lexus either put the equalization in or out
+un bouton morts Lexus soit mis l'égalisation ou arrière
+
+00:24:28,000 --> 00:24:32,000
+currently the equalization is out but put the equalization in
+actuellement la péréquation est à mettre, mais l'égalisation dans
+
+00:24:32,000 --> 00:24:36,000
+we won't be here any effect from that because the game controls are all set at
+nous ne serons pas ici d'effet de ce parce que les contrôles du jeu sont tous mis à
+
+00:24:36,000 --> 00:24:38,000
+0db
+0 dB
+
+00:24:38,000 --> 00:24:43,000
+and I want to illustrate shortly the effective these but before I do let me
+et je tiens à illustrer le peu efficace ces derniers mais avant que je ne permettez-moi de
+
+00:24:43,000 --> 00:24:44,000
+draw your attention
+attirer votre attention
+
+00:24:44,000 --> 00:24:48,000
+to one other filter which is
+à un autre filtre qui est
+
+00:24:48,000 --> 00:24:51,000
+this white switch and this this which
+ce commutateur blanc et ce qui ce
+
+00:24:51,000 --> 00:24:55,000
+is a high pass filter that essentially
+est un filtre passe-haut que pour l'essentiel
+
+00:24:55,000 --> 00:25:00,000
+cuts out frequencies below about a hundred cycle so what it means is that
+coupe les fréquences inférieures à environ un cycle cent si ce que cela signifie, c'est que
+
+00:25:00,000 --> 00:25:04,000
+but put this which in everything is more or less flat above a hundred cycles
+mais mettre ce qui tout est plus ou moins plat au-dessus d'une centaine de cycles
+
+00:25:04,000 --> 00:25:09,000
+and what that's used for basically is to eliminate
+et ce qui est utilisé pour l'essentiel est d'éliminer
+
+00:25:09,000 --> 00:25:13,000
+perhaps 60 cycle noise if that's present or some
+peut-être le bruit du cycle 60 si qui est présent ou une
+
+00:25:13,000 --> 00:25:17,000
+low-frequency home or whatever well we won't
+basse fréquence la maison ou quoi que bien que nous ne seront pas
+
+00:25:17,000 --> 00:25:22,000
+really demonstrate anything with that let so now with the equalization and
+vraiment démontrer quoi que ce soit avec ce laisser maintenant avec l'égalisation et
+
+00:25:22,000 --> 00:25:25,000
+demonstrate the effect I'll
+démontrer l'effet je vais
+
+00:25:25,000 --> 00:25:29,000
+boosting or attenuating the low and high frequencies
+renforcer ou atténuer les basses et hautes fréquences
+
+00:25:29,000 --> 00:25:32,000
+and again I think for to demonstrate this it's
+et encore, je pense que pour démontrer cela, il est
+
+00:25:32,000 --> 00:25:37,000
+it illustrates the point the best if a if we have a little background music so
+il illustre le point le mieux si un si nous avons un peu de musique de fond de sorte
+
+00:25:37,000 --> 00:25:41,000
+maestro if you can bring that up
+maestro si vous pouvez soulever cette
+
+00:25:41,000 --> 00:25:44,000
+and so now I'm gonna do is first
+et maintenant je vais faire, c'est d'abord
+
+00:25:44,000 --> 00:25:47,000
+whose the low frequencies and that's what this
+dont les fréquences basses et c'est ce que ce
+
+00:25:47,000 --> 00:25:51,000
+potentiometer knob will do so now I'll
+bouton de potentiomètre fera maintenant je vais
+
+00:25:51,000 --> 00:25:54,000
+increasing the low-frequency game
+de plus en plus le jeu de basse fréquence
+
+00:25:54,000 --> 00:25:58,000
+and in fact all the way up to 12 the be when I have the novel
+et en fait tout le chemin jusqu'à 12 l'être quand j'ai le roman
+
+00:25:58,000 --> 00:26:02,000
+was liza going here and so that has a very basic
+a été liza va ici et si cela a un très basique
+
+00:26:02,000 --> 00:26:04,000
+sounding back
+sonde le dos
+
+00:26:04,000 --> 00:26:06,000
+make it even base you're fighting
+rendre la base, vous vous battez
+
+00:26:06,000 --> 00:26:08,000
+my sees and
+mon voit et
+
+00:26:08,000 --> 00:26:11,000
+attenuating knows by
+atténuante sait par
+
+00:26:11,000 --> 00:26:15,000
+well
+bien
+
+00:26:15,000 --> 00:26:19,000
+okay well leads words some the high-frequency
+bien conduit bien dire qu'une partie de la haute fréquence
+
+00:26:19,000 --> 00:26:21,000
+back in
+de retour en
+
+00:26:21,000 --> 00:26:24,000
+in now let's turn the low-frequency
+maintenant passons à basse fréquence
+
+00:26:24,000 --> 00:26:27,000
+game offers back down
+jeu offre vers le bas
+
+00:26:27,000 --> 00:26:32,000
+20 and now we're back to flat equalization
+20 et maintenant nous sommes de retour à la péréquation plat
+
+00:26:32,000 --> 00:26:35,000
+and now I can turn the low-frequency game down
+et maintenant je peux tourner le jeu de basse fréquence vers le bas
+
+00:26:35,000 --> 00:26:40,000
+so dead attenuate the low frequencies by as much as 12 the
+si morte atténuer les basses fréquences par autant que 12 l'
+
+00:26:40,000 --> 00:26:43,000
+that's where we are now in service
+Voilà où nous en sommes actuellement en service
+
+00:26:43,000 --> 00:26:48,000
+force much first
+forcer beaucoup premier
+
+00:26:48,000 --> 00:26:54,000
+to enhance the highs even more hike in addition coming out who's the highs
+pour améliorer les sommets encore plus de hausse en plus sortir qui sont les sommets
+
+00:26:54,000 --> 00:27:00,000
+by his
+par son
+
+00:27:00,000 --> 00:27:04,000
+okay well let's turn down the music now and
+bien bien, nous allons baisser la musique maintenant et
+
+00:27:04,000 --> 00:27:10,000
+and go back to no equalization by setting these knives 20 dB in fact we
+et revenir à pas de péréquation par la définition de ces couteaux 20 dB en fait, nous
+
+00:27:10,000 --> 00:27:12,000
+can take the equalizer out
+peut prendre l'égaliseur sur
+
+00:27:12,000 --> 00:27:17,000
+well thats a quick look at some real-world filters
+thats bien un coup d'oeil à certains filtres monde réel
+
+00:27:17,000 --> 00:27:20,000
+now let's the stop having so much fun and
+maintenant nous allons l'arrêt tellement de plaisir et
+
+00:27:20,000 --> 00:27:27,000
+let's go back to the lecture okay well
+Revenons à la conférence bien bien
+
+00:27:30,000 --> 00:27:33,000
+thats a little behind the scenes look but I'd
+thats un peu les coulisses mais je
+
+00:27:33,000 --> 00:27:37,000
+like to do now is turn our attention to
+voulez faire maintenant est tourner notre attention vers
+
+00:27:37,000 --> 00:27:40,000
+discrete-time filters and
+filtres à temps discret et
+
+00:27:40,000 --> 00:27:43,000
+as i've mentioned in previous lectures their are
+comme je l'ai mentionné dans les cours précédents leur sont
+
+00:27:43,000 --> 00:27:46,000
+basically two classes
+essentiellement deux catégories
+
+00:27:46,000 --> 00:27:51,000
+love discrete-time filters or discrete time difference equations
+amour filtres à temps discret ou équations de différence de temps discret
+
+00:27:51,000 --> 00:27:55,000
+one class is referred to
+une classe est appelée
+
+00:27:55,000 --> 00:27:59,000
+as a nonrecourse ive or moving average
+comme ive sans recours ou moyenne mobile
+
+00:27:59,000 --> 00:28:03,000
+filter and the basic idea
+filtre et l'idée de base
+
+00:28:03,000 --> 00:28:06,000
+with the moving average filter is something that perhaps your
+avec le filtre à moyenne mobile est quelque chose qui peut-être votre
+
+00:28:06,000 --> 00:28:10,000
+some what familiar with intuitively think I've the notion
+ce que certains connaissent intuitivement crois que j'ai la notion
+
+00:28:10,000 --> 00:28:14,000
+I love taking that data sequence and
+J'aime prendre cette séquence de données et
+
+00:28:14,000 --> 00:28:18,000
+let's suppose that what we wanted to do was apply a some smoothing to the data
+supposons que ce que nous voulions faire était d'appliquer un certain lissage de données
+
+00:28:18,000 --> 00:28:19,000
+sequence
+séquence
+
+00:28:19,000 --> 00:28:22,000
+we could for example think taking adjacent points
+nous pourrions par exemple penser à prendre des points adjacents
+
+00:28:22,000 --> 00:28:26,000
+averaging them together and then moving that average
+moyenne de toutes et puis de passer cette moyenne
+
+00:28:26,000 --> 00:28:30,000
+along the data sequence what you can kinda see intuitively
+le long de la séquence de données que vous pouvez voir un peu intuitivement
+
+00:28:30,000 --> 00:28:35,000
+is that that would have apply some smoothing so in fact
+est que cela aurait un certain lissage s'applique donc en fait
+
+00:28:35,000 --> 00:28:38,000
+the difference equation let's say for a three-point moving average
+l'équation de différence disons pour une moyenne mobile de trois points
+
+00:28:38,000 --> 00:28:41,000
+would be the difference equation that I indicate here
+serait l'équation aux différences que j'indique ici
+
+00:28:41,000 --> 00:28:44,000
+just simply taking a data point
+tout simplement en prenant un point de données
+
+00:28:44,000 --> 00:28:47,000
+and the two data points adjacent to it
+et les deux points de données qui lui est adjacente
+
+00:28:47,000 --> 00:28:51,000
+and forming an average over those three
+et la formation d'une moyenne sur les trois
+
+00:28:51,000 --> 00:28:54,000
+so if we thought if the kinda processing involved
+si nous pensions que si le traitement peu impliqués
+
+00:28:54,000 --> 00:28:58,000
+if performing an output sequence value
+si l'exécution d'une valeur de séquence de sortie
+
+00:28:58,000 --> 00:29:02,000
+we would take three adjacent points an average though
+nous prendre trois points adjacents en moyenne si
+
+00:29:02,000 --> 00:29:06,000
+that would give us the output at The Associated time
+cela nous donnerait la sortie au moment associé
+
+00:29:06,000 --> 00:29:10,000
+and then to compute the next output point we were just simply slide this
+puis à calculer le point de sortie prochaine, nous étions tout simplement glisser ce
+
+00:29:10,000 --> 00:29:16,000
+by a one-point average these together and that would give us the next output
+par une moyenne d'un point cela ensemble et que nous donnerait la sortie prochaine
+
+00:29:16,000 --> 00:29:18,000
+point and we would continue along
+rappelons et nous continuerons le long de
+
+00:29:18,000 --> 00:29:21,000
+just simply sliding in averaging
+tout simplement glisser dans la moyenne
+
+00:29:21,000 --> 00:29:25,000
+to form the output data sequence now
+pour former la séquence de données de sortie maintenant
+
+00:29:25,000 --> 00:29:30,000
+that's an example love what's commonly referred to as a three-point moving
+c'est un exemple aimer ce qui est communément appelé un à trois points de déplacement
+
+00:29:30,000 --> 00:29:31,000
+average
+moyenne
+
+00:29:31,000 --> 00:29:34,000
+in fact we can generalize that notion
+en fait, nous pouvons généraliser cette notion
+
+00:29:34,000 --> 00:29:38,000
+in a number of ways one-way generalizing
+dans un certain nombre de façons unidirectionnel généraliser
+
+00:29:38,000 --> 00:29:42,000
+the notion over moving average from the three-point moving average which I
+la notion sur la moyenne mobile de la moyenne mobile sur trois points que je
+
+00:29:42,000 --> 00:29:46,000
+summarize again here is to think or extending that
+résumer à nouveau ici est de penser ou de l'extension de cette
+
+00:29:46,000 --> 00:29:49,000
+to a larger number of points and in fact
+à un plus grand nombre de points et en fait
+
+00:29:49,000 --> 00:29:53,000
+applying waits to that as i indicate here
+l'application attend à ce que comme je l'indique ici
+
+00:29:53,000 --> 00:29:57,000
+so that in addition to just summing up the points and dividing by the number of
+de sorte que, en plus de tout additionnant les points, et en divisant par le nombre d'
+
+00:29:57,000 --> 00:29:58,000
+points on
+des points sur
+
+00:29:58,000 --> 00:30:03,000
+we can in fact apply individual weights to the points
+nous pouvons en effet appliquer des poids individuels aux points
+
+00:30:03,000 --> 00:30:06,000
+so that its what is often referred to as awaiting
+de telle sorte que son ce qui est souvent désigné comme en attente
+
+00:30:06,000 --> 00:30:09,000
+with moving average and I show
+avec la moyenne mobile et je montrer
+
+00:30:09,000 --> 00:30:13,000
+below one possible kind of curve
+ci-dessous un type possible de la courbe
+
+00:30:13,000 --> 00:30:16,000
+that might result where these would-be
+qui pourraient résulter où celles-ci seraient-être
+
+00:30:16,000 --> 00:30:20,000
+essentially the weights Associated with this waited
+essentiellement les poids associés à cette attendaient
+
+00:30:20,000 --> 00:30:24,000
+moving average and in fact its easy to verify
+moyenne mobile et en fait il est facile de vérifier
+
+00:30:24,000 --> 00:30:28,000
+that this indeed corresponds to the impulse response
+ce qui correspond en fait à la réponse impulsionnelle
+
+00:30:28,000 --> 00:30:31,000
+the filter well just two
+le bien de filtre que deux
+
+00:30:31,000 --> 00:30:36,000
+cement this notion let me show you an example or two
+cimenter cette notion permettez-moi de vous montrer un exemple ou deux
+
+00:30:36,000 --> 00:30:39,000
+here is an example all a
+voici un exemple tout un
+
+00:30:39,000 --> 00:30:42,000
+five-point moving average a five-point moving average
+cinq points la moyenne mobile d'une moyenne mobile sur cinq points
+
+00:30:42,000 --> 00:30:46,000
+would have an impulse response dead
+aurait un mort à réponse impulsionnelle
+
+00:30:46,000 --> 00:30:49,000
+just consists of a rectangle Lovelinks 5
+juste se compose d'un rectangle Lovelinks 5
+
+00:30:49,000 --> 00:30:54,000
+and if this is convolved with the data sequence that would corresponding
+et si cela est convoluée avec la séquence de données qui correspond
+
+00:30:54,000 --> 00:30:59,000
+correspond to taking five adjacent points and in effect averaging them
+correspondent à prendre cinq points adjacents et en effet en faire la moyenne
+
+00:30:59,000 --> 00:31:04,000
+we've looked previously at the quarry a transformer this rectangular sequence
+nous avons examiné précédemment à la carrière d'un transformateur de cette séquence rectangulaire
+
+00:31:04,000 --> 00:31:06,000
+and the forty a transformer that in fact
+et le quarante un transformateur qui, en fait,
+
+00:31:06,000 --> 00:31:10,000
+is all the form of a sign an axe over
+est tous la forme d'un signe d'une hache sur
+
+00:31:10,000 --> 00:31:14,000
+sin x kar and as you can see
+sin x kar et comme vous pouvez le voir
+
+00:31:14,000 --> 00:31:17,000
+that is so approximation to
+c'est le cas de rapprochement
+
+00:31:17,000 --> 00:31:20,000
+a low-pass filter and so this again is
+un filtre passe-bas et si ce message est
+
+00:31:20,000 --> 00:31:24,000
+a the impulse response and frequency response
+réponse un la réponse impulsionnelle et la fréquence
+
+00:31:24,000 --> 00:31:28,000
+all a non-ideal low-pass filter
+tout d'un filtre passe-bas non idéale
+
+00:31:28,000 --> 00:31:31,000
+now there are a variety of both
+maintenant il ya une variété de fois
+
+00:31:31,000 --> 00:31:35,000
+algorithms that in fact tell you how to choose the weights
+algorithmes qui en fait vous indiquent comment choisir les poids
+
+00:31:35,000 --> 00:31:39,000
+associated with the waiting weighted moving average
+associée à la moyenne mobile pondérée attente
+
+00:31:39,000 --> 00:31:42,000
+to in some sense design better approximations
+dans un certain sens, concevoir de meilleures approximations
+
+00:31:42,000 --> 00:31:46,000
+and without going into the details love any of those algorithms
+et sans entrer dans les détails aimer une de ces algorithmes
+
+00:31:46,000 --> 00:31:51,000
+let me just show the results of choosing the weights
+permettez-moi de montrer les résultats de choisir les poids
+
+00:31:51,000 --> 00:31:55,000
+for the design over 250 first 251 points
+pour la conception de plus de 250 251 premiers points
+
+00:31:55,000 --> 00:31:59,000
+moving average filter where the weights
+filtre à moyenne mobile où les poids
+
+00:31:59,000 --> 00:32:03,000
+are chosen using an optimum algorithm to generate a sharp a cut-off
+sont choisis à l'aide d'un algorithme optimal pour générer une nette coupure
+
+00:32:03,000 --> 00:32:07,000
+as can possibly be generated and so what I show here
+comme on peut être généré et donc ce que je montre ici
+
+00:32:07,000 --> 00:32:10,000
+is the frequency response
+est la réponse en fréquence
+
+00:32:10,000 --> 00:32:15,000
+that the resulting filter on a logarithmic ample to scale
+que le filtre résultant sur une échelle logarithmique amplement à l'échelle
+
+00:32:15,000 --> 00:32:20,000
+in a linear frequency scale noticed that on this scale the pass band is very flat
+dans une échelle de fréquence linéaire a remarqué que cette échelle la bande passante est très plat
+
+00:32:20,000 --> 00:32:24,000
+although here is an expanded you all that and in fact it
+mais ici est un vous avez développé tout cela et en fait, il
+
+00:32:24,000 --> 00:32:29,000
+has was referred to as an equal ripple characteristic
+a été mentionné comme une caractéristique ondulation égale
+
+00:32:29,000 --> 00:32:34,000
+and then here's the transition band and here we have to stop and
+puis voici la bande de transition et nous avons ici de s'arrêter et de
+
+00:32:34,000 --> 00:32:37,000
+which in fact is down somewhat more than 80 dB
+qui est en fait quelque peu plus de 80 dB
+
+00:32:37,000 --> 00:32:43,000
+and again has what's referred to as an equal ripple characterised
+et encore ce qui a appelé une ondulation égale caractérisé
+
+00:32:43,000 --> 00:32:47,000
+now the notion of a moving average
+maintenant la notion d'une moyenne mobile
+
+00:32:47,000 --> 00:32:51,000
+for filtering is something dead is very commonly
+pour le filtrage est quelque chose de mort est très souvent
+
+00:32:51,000 --> 00:32:55,000
+use I a head shown last time actually the result
+Je utiliser une tête montré la dernière fois en fait le résultat
+
+00:32:55,000 --> 00:33:00,000
+some filtering on a particular data sequence the Dow Jones Industrial
+un certain filtrage sur une séquence de données particulier le Dow Jones Industrial
+
+00:33:00,000 --> 00:33:01,000
+Average
+Moyenne
+
+00:33:01,000 --> 00:33:04,000
+and very often in
+et très souvent dans
+
+00:33:04,000 --> 00:33:09,000
+looking at various kinds a stock market publications
+regardant différents types un marché boursier publications
+
+00:33:09,000 --> 00:33:13,000
+what you will see is this the Dow Jones average
+ce que vous allez voir est-ce la moyenne Dow Jones
+
+00:33:13,000 --> 00:33:18,000
+shown in its raw form as a data sequence and then very typically
+montré dans sa forme brute comme une séquence de données, puis très généralement
+
+00:33:18,000 --> 00:33:21,000
+you you'll see also: the result all
+vous vous verrez aussi: le résultat tout
+
+00:33:21,000 --> 00:33:24,000
+moving average where the moving average might
+moyenne mobile où la puissance moyenne mobile
+
+00:33:24,000 --> 00:33:28,000
+be on the order love days or it might be on the order
+soit sur les jours afin d'amour ou il pourrait être de l'ordre
+
+00:33:28,000 --> 00:33:31,000
+months the whole notion being to take
+mois, la notion étant à prendre
+
+00:33:31,000 --> 00:33:34,000
+some other random high frequency fluctuations
+d'autres fluctuations haute fréquence aléatoires
+
+00:33:34,000 --> 00:33:37,000
+out at the average and show the low-frequency
+Départ à la moyenne et montrer la basse fréquence
+
+00:33:37,000 --> 00:33:41,000
+or trends over
+ou des tendances plus
+
+00:33:41,000 --> 00:33:44,000
+some period of time so let's
+une certaine période de temps nous allons donc
+
+00:33:44,000 --> 00:33:47,000
+in fact go back to the Dow Jones average and
+en fait revenir à la moyenne Dow Jones et
+
+00:33:47,000 --> 00:33:51,000
+let me now show you what the result of filtering
+permettez-moi de vous montrer maintenant ce que le résultat du filtrage
+
+00:33:51,000 --> 00:33:55,000
+with a moving average filter would look like
+avec un filtre à moyenne mobile ressemblerait
+
+00:33:55,000 --> 00:34:00,000
+on the Seder same Dow Jones Industrial Average sequence that I showed last time
+sur la même séquence Dow Jones Industrial Average Seder que je l'ai montré la dernière fois
+
+00:34:00,000 --> 00:34:07,000
+so once again we have the Dow Jones average from 1927 to roughly 1932
+donc une fois encore nous avons la moyenne Dow Jones de 1927 à environ 1932
+
+00:34:07,000 --> 00:34:12,000
+at the top we see the impulse response for the moving average
+au sommet, nous voyons la réponse impulsionnelle de la moyenne mobile
+
+00:34:12,000 --> 00:34:15,000
+again I remind you on an expanded time scale
+Je vous rappelle encore une fois sur une échelle de temps étendu
+
+00:34:15,000 --> 00:34:19,000
+and was shown here is the moving average with just one point
+et a été présentée ici est la moyenne mobile avec un seul point
+
+00:34:19,000 --> 00:34:23,000
+so the output on the bottom trace is
+si la sortie sur la trace du bas est
+
+00:34:23,000 --> 00:34:27,000
+just simply identical to the input now let's increase the link to the moving
+tout simplement identique à l'entrée maintenant, nous allons augmenter le lien vers le mobile
+
+00:34:27,000 --> 00:34:32,000
+average 22 points and we see that there's a small amount of smoothing
+moyenne 22 points et nous voyons qu'il ya une petite quantité de lissage
+
+00:34:32,000 --> 00:34:37,000
+three points and just a little more smoothing pickets inserted
+trois points et juste un peu plus de piquets de lissage insérées
+
+00:34:37,000 --> 00:34:41,000
+now a four-point moving average
+maintenant une moyenne mobile de quatre points
+
+00:34:41,000 --> 00:34:46,000
+and next the five-point moving average
+et à côté de la moyenne mobile de cinq points
+
+00:34:46,000 --> 00:34:51,000
+and a six-point moving average next we see that the smoothing increases
+et une moyenne mobile sur six point suivant, nous voyons que les augmentations lissage
+
+00:34:51,000 --> 00:34:56,000
+now let's increase the link to the moving average filter much more rapidly
+maintenant, nous allons augmenter le lien vers le filtre à moyenne mobile beaucoup plus rapidement
+
+00:34:56,000 --> 00:34:59,000
+and watch how the output is
+et montre comment la sortie est
+
+00:34:59,000 --> 00:35:03,000
+more and more smooth in relation to the input
+de plus en plus lisse par rapport à l'entrée
+
+00:35:03,000 --> 00:35:06,000
+again i emphasize that the timescale
+encore je souligne que le calendrier
+
+00:35:06,000 --> 00:35:11,000
+for the impulse response is significantly expanded in relationship
+pour la réponse impulsionnelle est considérablement élargi en relation
+
+00:35:11,000 --> 00:35:16,000
+to the timescale for both the input in the output
+à l'échelle de temps à la fois pour l'entrée dans la sortie
+
+00:35:16,000 --> 00:35:20,000
+and once again through the magic of filtering we've been able to eliminate
+et une fois de plus grâce à la magie de filtrage que nous avons été en mesure d'éliminer
+
+00:35:20,000 --> 00:35:26,000
+the 1929 stock market crash
+1929 krach boursier
+
+00:35:26,000 --> 00:35:29,000
+alright so we've seen moving average filters
+bien que nous avons vu filtres à moyenne mobile
+
+00:35:29,000 --> 00:35:32,000
+and or what are sometimes referred to as
+et ou ce sont parfois appelés
+
+00:35:32,000 --> 00:35:36,000
+non workers is filters and
+est non travailleurs filtres et
+
+00:35:36,000 --> 00:35:39,000
+they are as I stressed very important class
+ils sont comme je l'ai souligné classe très importante
+
+00:35:39,000 --> 00:35:42,000
+discreet I filters another
+discret je filtre les autre
+
+00:35:42,000 --> 00:35:45,000
+very important class of discrete-time filters are
+classe très importante de filtres en temps discret sont
+
+00:35:45,000 --> 00:35:49,000
+what are referred to as rehearses filters
+ce sont dénommés répète filtres
+
+00:35:49,000 --> 00:35:54,000
+workers the filters are filters that for which the difference equation
+travailleurs les filtres sont des filtres à celle pour laquelle l'équation de différence
+
+00:35:54,000 --> 00:35:57,000
+has feedback from the output back
+a réaction de la sortie de retour
+
+00:35:57,000 --> 00:36:01,000
+into the input in other words the output
+dans l'entrée en d'autres mots la sortie
+
+00:36:01,000 --> 00:36:06,000
+depends not only on the input but also on previous values if the output
+dépend non seulement de l'entrée, mais aussi sur les valeurs précédentes si la sortie
+
+00:36:06,000 --> 00:36:10,000
+so for example as i stress previously
+ainsi par exemple que je souligne auparavant
+
+00:36:10,000 --> 00:36:13,000
+a rikers a difference equation has
+un Rikers une équation de différence a
+
+00:36:13,000 --> 00:36:16,000
+the general form that I indicate year
+la forme générale que j'indique année
+
+00:36:16,000 --> 00:36:21,000
+a linear combination love waited outputs on the left hand side and linear
+un amour de combinaison linéaire attendu sorties sur le côté gauche et linéaire
+
+00:36:21,000 --> 00:36:21,000
+combination
+combinaison
+
+00:36:21,000 --> 00:36:26,000
+waited inputs on the right hand side and
+attendu entrées sur le côté droit et
+
+00:36:26,000 --> 00:36:29,000
+as we talked about we can solve this equation
+comme nous en avons parlé, nous pouvons résoudre cette équation
+
+00:36:29,000 --> 00:36:33,000
+for the current output why I have an interns a
+pour la sortie courant pourquoi j'ai un stagiaires un
+
+00:36:33,000 --> 00:36:36,000
+of current and past inputs and passed out
+des entrées et des évanoui actuelles et passées
+
+00:36:36,000 --> 00:36:40,000
+what's for example just two
+ce qui est par exemple que deux
+
+00:36:40,000 --> 00:36:44,000
+interpret this focus on the interpretation of this is a filter
+interpréter cette focalisation sur l'interprétation de ce filtre est
+
+00:36:44,000 --> 00:36:48,000
+let's looking at a first-order difference equation which
+nous allons regarder une équation de différence de premier ordre qui
+
+00:36:48,000 --> 00:36:52,000
+we've talked about and generated the solution to previously
+nous avons parlé et généré la solution précédemment
+
+00:36:52,000 --> 00:36:55,000
+so the first-order a first 30 difference equation
+de sorte que le premier ordre 30 première équation de différence
+
+00:36:55,000 --> 00:36:59,000
+would be as i indicated here
+serait comme je le disais ici
+
+00:36:59,000 --> 00:37:02,000
+and imposing causality on this
+et imposer la causalité de cette
+
+00:37:02,000 --> 00:37:07,000
+so that we assume that we are running this is a recursion forward in time
+de sorte que nous supposons que nous menons c'est une récursion avant dans le temps
+
+00:37:07,000 --> 00:37:11,000
+we can solve this for why I have an intern's affects it man
+nous pouvons résoudre ce la raison pour laquelle j'ai une stagiaire de elle affecte l'homme
+
+00:37:11,000 --> 00:37:14,000
+and why I have and -1 waited
+et pourquoi j'ai attendu et -1
+
+00:37:14,000 --> 00:37:18,000
+by the factor a and I simply indicate
+par le facteur a et j'indique simplement
+
+00:37:18,000 --> 00:37:23,000
+the block diagram for this but what we want to examine now
+le diagramme pour cela, mais ce que nous voulons examiner maintenant
+
+00:37:23,000 --> 00:37:28,000
+for this first order recursion is the frequency response and see its
+pour cette première commande récursivité est la réponse en fréquence et de voir son
+
+00:37:28,000 --> 00:37:29,000
+interpretation
+interprétation
+
+00:37:29,000 --> 00:37:32,000
+as a filter well in fact again
+comme un bien de filtre à fait nouveau
+
+00:37:32,000 --> 00:37:37,000
+the mathematics for this we've gone through in the last lecture
+les mathématiques pour ce que nous avons vécu lors de la dernière conférence
+
+00:37:37,000 --> 00:37:42,000
+and so interpreting the first-order difference equation as a system
+et interpréter si l'équation aux différences du premier ordre en tant que système
+
+00:37:42,000 --> 00:37:46,000
+we can what what we're attempting to
+nous pouvons ce que nous essayons de
+
+00:37:46,000 --> 00:37:49,000
+generate is the frequency response
+générer est la réponse en fréquence
+
+00:37:49,000 --> 00:37:52,000
+which is the forty a transformer the impulse response
+qui est le quarante un transformateur de la réponse impulsionnelle
+
+00:37:52,000 --> 00:37:56,000
+and from the difference equation we can of course all
+et de l'équation de différence que nous pouvons bien sûr tous
+
+00:37:56,000 --> 00:38:02,000
+for either one of those by using the properties exploiting the properties in
+pour l'une quelconque de celles en utilisant les propriétés en exploitant les propriétés
+
+00:38:02,000 --> 00:38:07,000
+for EA transform applying to 48 transport to the difference equation
+EA pour appliquer la transformée de 48 transport vers l'équation de différence
+
+00:38:07,000 --> 00:38:11,000
+we will end up with the forty a transformer the output
+nous allons nous retrouver avec la quarante un transformateur de la sortie
+
+00:38:11,000 --> 00:38:16,000
+equal to the Fourier transform the input times this factor which
+égale à la transformée de Fourier des temps d'entrée de ce facteur qui
+
+00:38:16,000 --> 00:38:19,000
+we know from the convolution property in fact
+nous savons de la propriété de convolution, en fait,
+
+00:38:19,000 --> 00:38:22,000
+is the frequency response
+est la réponse en fréquence
+
+00:38:22,000 --> 00:38:27,000
+of the system so this is the frequency response
+du système de sorte que c'est la réponse en fréquence
+
+00:38:27,000 --> 00:38:31,000
+and of course the inverse Fourier transform a bad
+et bien sûr de transformer une mauvaise Fourier inverse
+
+00:38:31,000 --> 00:38:34,000
+which I E indicate below
+que je E indiquer ci-dessous
+
+00:38:34,000 --> 00:38:37,000
+is the system impulse response
+est la réponse impulsionnelle de système
+
+00:38:37,000 --> 00:38:41,000
+so we have the frequency response obtained by
+ainsi nous avons la réponse en fréquence obtenue par
+
+00:38:41,000 --> 00:38:46,000
+applying to free a transformed to the difference equation the impulse response
+l'application d'une transformée de libérer de l'équation de la différence de la réponse impulsionnelle
+
+00:38:46,000 --> 00:38:50,000
+and as we did last time we can
+et comme nous l'avons fait la dernière fois que nous pouvons
+
+00:38:50,000 --> 00:38:53,000
+look at that interns love
+regarder que l'amour stagiaires
+
+00:38:53,000 --> 00:38:57,000
+a frequency response characteristic
+une caractéristique de réponse en fréquence
+
+00:38:57,000 --> 00:39:00,000
+and recall that depending on whether
+et rappelons que selon que
+
+00:39:00,000 --> 00:39:04,000
+the factor A is positive or negative we need to get
+le facteur A est positive ou négative, nous devons obtenir
+
+00:39:04,000 --> 00:39:07,000
+a low-pass filter or a high pass filter
+un filtre passe-bas ou un filtre passe-haut
+
+00:39:07,000 --> 00:39:12,000
+and if in fact we look at the frequency response
+et si, en fait, nous regardons la réponse en fréquence
+
+00:39:12,000 --> 00:39:17,000
+for the factor a being positive then we see that this is an approximation
+pour le facteur un être positif, nous voyons qu'il s'agit d'un rapprochement
+
+00:39:17,000 --> 00:39:24,000
+to a low-pass filter who wears below it I showed the frequency response
+à un filtre passe-bas qui porte en dessous j'ai montré la réponse en fréquence
+
+00:39:24,000 --> 00:39:29,000
+for a negative & mare the
+pour un négatif et la mare
+
+00:39:29,000 --> 00:39:33,000
+this corresponds to a way high pass filter because we're attenuating
+ce qui correspond à un filtre passe-haut ainsi parce que nous sommes d'atténuation
+
+00:39:33,000 --> 00:39:36,000
+low frequencies and retaining
+basses fréquences et retenue
+
+00:39:36,000 --> 00:39:39,000
+the high frequencies in and
+les hautes fréquences et
+
+00:39:39,000 --> 00:39:43,000
+recall also that we illustrated
+rappelons également que nous avons illustré
+
+00:39:43,000 --> 00:39:48,000
+this this characteristic as a low-pass high-pass filter for the recursion
+cette caractéristique présente comme un filtre passe-haut passe-bas pour la récursion
+
+00:39:48,000 --> 00:39:52,000
+for the first-order recursion by by looking at
+pour la récurrence du premier ordre par en consultant d'
+
+00:39:52,000 --> 00:39:56,000
+how it work as a filter in both cases
+la façon dont il fonctionne en tant que filtre dans les deux cas,
+
+00:39:56,000 --> 00:40:00,000
+when the input was the Dow Jones average and indeed we saw that
+lorsque l'entrée a la moyenne Dow Jones et en effet, nous avons vu que
+
+00:40:00,000 --> 00:40:03,000
+it generated both low-pass and high-pass filtering
+il a généré à la fois passe-bas et un filtre passe-haut
+
+00:40:03,000 --> 00:40:08,000
+in in the appropriate cases so for discrete-time
+dans les cas appropriés, de façon à temps discret
+
+00:40:08,000 --> 00:40:11,000
+we have the two classes moving average and
+nous avons les deux classes moyenne mobile et
+
+00:40:11,000 --> 00:40:14,000
+a cursive filters and
+un filtres cursives et
+
+00:40:14,000 --> 00:40:18,000
+and there are a variety of issues discussed in the text about why
+et il ya une variété de questions abordées dans le texte sur les raisons
+
+00:40:18,000 --> 00:40:22,000
+in certain contexts one might want to use one or the other basically what
+dans certains contextes on peut vouloir utiliser l'une ou l'autre essentiellement ce que
+
+00:40:22,000 --> 00:40:22,000
+happens
+qui se passe
+
+00:40:22,000 --> 00:40:26,000
+is dead for the moving average filter
+est mort pour le filtre à moyenne mobile
+
+00:40:26,000 --> 00:40:30,000
+for a given set a filter specifications there are many more multiplications
+pour une définir un filtre spécifications donné, il ya beaucoup plus de multiplications
+
+00:40:30,000 --> 00:40:33,000
+required in for a cursive filter by
+requis pour un filtre cursive
+
+00:40:33,000 --> 00:40:37,000
+there are in certain contexts some very important compensating benefits
+il ya dans certains contextes des avantages de compensation très importants
+
+00:40:37,000 --> 00:40:41,000
+the moving average filter
+le filtre à moyenne mobile
+
+00:40:41,000 --> 00:40:44,000
+now this concludes pretty much
+maintenant ce conclut à peu près
+
+00:40:44,000 --> 00:40:48,000
+what I A want to say in detail
+ce que je veux dire un en détail
+
+00:40:48,000 --> 00:40:52,000
+about filtering the concept filtering in this set of lectures
+sur le filtrage du filtrage concept dans cette série de conférences
+
+00:40:52,000 --> 00:40:56,000
+this is only a very quick glimpse into
+ce n'est qu'un aperçu très rapide dans
+
+00:40:56,000 --> 00:41:00,000
+a very important and very rich topic and one of course that
+un sujet très important et très riche et l'un des cours qui
+
+00:41:00,000 --> 00:41:05,000
+can be studied on its own in considerable amount of detail
+peut être étudié en monothérapie chez beaucoup de détail
+
+00:41:05,000 --> 00:41:08,000
+as the lectures go online what will find
+que les conférences vont en ligne ce sera trouver
+
+00:41:08,000 --> 00:41:11,000
+is that the basic concept to filtering both
+est que le concept de base de filtrer à la fois
+
+00:41:11,000 --> 00:41:15,000
+ideal and non-ideal filtering will will
+filtrage idéal et non-idéale vouloir
+
+00:41:15,000 --> 00:41:19,000
+be a very important part love what we do
+être un élément très important aiment ce que nous faisons
+
+00:41:19,000 --> 00:41:22,000
+and in in particular
+et en particulier dans
+
+00:41:22,000 --> 00:41:25,000
+beginning with the next lecture will turn to
+à commencer par la prochaine conférence se tournera vers
+
+00:41:25,000 --> 00:41:29,000
+a discussion of modulation exploiting
+une discussion de modulation exploitation
+
+00:41:29,000 --> 00:41:35,000
+the property modulation as it relates to some practical problems
+la modulation de la propriété en ce qui concerne certains problèmes pratiques
+
+00:41:35,000 --> 00:41:38,000
+and what will find when we do that is that
+et ce que vous trouverez lorsque nous faisons cela, c'est que
+
+00:41:38,000 --> 00:41:42,000
+a very important part of that discussion and in fact the very important part
+une partie très importante de cette discussion et en fait la partie la plus importante
+
+00:41:42,000 --> 00:41:45,000
+love the use of modulation also
+aimer l'utilisation de la modulation aussi
+
+00:41:45,000 --> 00:41:49,000
+just naturally incorporates the concept
+juste intègre naturellement le concept
+
+00:41:49,000 --> 00:41:51,000
+and properties filtering thank you
+et les propriétés de filtrage merci
+

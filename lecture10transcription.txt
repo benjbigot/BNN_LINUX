@@ -1,0 +1,780 @@
+000040~003450~the following content is provided under a Creative Commons license
+003490~003639~your support will help MIT OpenCourseWare continue to offer
+007129~003451~high-quality educational resources for free
+010580~003780~to make a donation or view additional materials from hundreds of them IT
+014360~000670~courses
+015030~003080~visit MIT OpenCourseWare at 0 CW
+018110~007000~that MIT that EDU ha in
+028830~002470~in
+031300~002640~the
+033940~005920~the in
+039860~007000~the moon
+049450~003500~the
+052950~007000~over the last several lectures we developed the for a representation for
+060280~003650~and continuous-time signals what i'd
+063930~004820~now like to do is develop a similar representation for discrete-time
+068750~003060~and let me begin a discussion by
+071810~004370~reminding you up what are basic motivation was the idea
+076180~004450~is that what we wanted to do was exploit the properties
+080630~004510~love linearity in time and variance for linear time-invariant systems
+085140~003190~so and in the case love
+088330~003539~linear time-invariant systems the
+091869~003561~basic idea was to consider
+095430~004700~decomposing the input as a linear combination
+100130~003269~love basic inputs and then
+103399~004571~because I've Lenny arity the output could be expressed as
+107970~004370~a linear combination of corresponding outputs where
+112340~003440~saw I serve I is the output
+115780~004500~due to fee survive so
+120280~003920~basically what we attempted to do was decompose the input
+124200~003529~and then reconstruct the output through
+127729~004101~a linear combination all the outputs to those basic inputs
+131830~003870~we then focused on the notion
+135700~003140~love choosing the basic inputs
+138840~003560~with two criterion mine one was
+142400~003360~to choose them so that a broad class signals
+145760~003880~could be constructed out over those basic inputs
+149640~004360~and the second was to choose the basic inputs
+154000~003660~so that the response to those was easy to compute
+157660~004490~and as you recall one representation that we ended up with
+162150~003910~with those basic criteria in mind:
+166060~003090~was the representation through convolution
+169150~004450~and then in beginning the discussion love the for a representation of
+173600~001680~continuous-time signals
+175280~003780~we chose as another said a basic inputs
+179060~003429~complex exponentials so
+182489~003091~for continuous-time we chose
+185580~004200~a set love basic inputs which were complex exponential
+189780~004560~the motivation there was the fact that
+194340~004080~the complex exponentials have we referred to as
+198420~003280~the I can function property namely
+201700~004170~if we put complex exponentials into our continuous-time systems
+205870~004740~than the output is a complex exponential
+210610~003420~love the same form with
+214030~003349~only a change in complex amplitude
+217379~003531~and that change in complex amplitude is
+220910~003760~what we referred to as the
+224670~003899~frequency response %uh the system
+228569~003051~and also by the way as it developed later
+231620~004710~that frequency response as you should now recognize from this expression
+236330~005329~is in fact the 48 transform the continuous-time for EA transform
+241659~005521~all the system impulse response and
+247180~005619~the notion all decomposing a signal as a linear combination of both these complex
+252799~001110~exponentials
+253909~003281~is what the first the forty a series
+257190~003909~representation and then later the Fourier transform representation
+261099~001081~corresponded to
+262180~003200~and finally to remind you
+265380~005820~love one additional point the fact is that because the eigenfunction property
+271200~003080~the response
+274280~003389~once we decompose the input as a linear combination
+277669~004211~complex exponentials the response to that when your combination
+281880~004320~is straightforward to compute once we know the frequency response
+286200~004430~because if the eigenfunction property now
+290630~003080~basically the same strategy
+293710~003930~and many of the same ideas work in discrete-time
+297640~004760~paralleling almost exactly what happened in continuous-time
+302400~003750~so the similarities between discrete-time and continuous-time
+306150~004100~are very strong although as we'll see there are a number
+310250~003650~a differences and it's important
+313900~003200~as we go through the discussion to illuminate
+317100~005050~not only the similarities but obviously also the differences
+322150~004519~well let's begin with the I can function property
+326669~004931~and let me just say that just as in continuous-time
+331600~003629~if we consider said a basic signals
+335229~003190~which are complex exponentials
+338419~003970~then discrete-time linear time-invariant systems
+342389~003691~have the I can function property namely
+346080~004130~if we put a complex exponential into the system
+350210~003150~the response is a complex exponential
+353360~003200~at the same complex frequency and
+356560~003720~simply multiplied by inappropriate
+360280~003380~complex factor or constant
+363660~003379~and just as we did in
+367039~004461~continuous-time we will be
+371500~004470~referring to this complex constant which is a function
+375970~003949~of course the frequency other complex exponential input
+379919~004511~will be referring to this as the frequency response
+384430~005019~and although it's not particularly evident at this point
+389449~004101~as the discussion develops through this lecture what in fact will happen
+393550~003119~is very much paralleling
+396669~003451~continuous-time this particular expression
+400120~003090~in fact will correspond
+403210~003250~to what will refer to as the
+406460~003650~for EA transform the discrete-time Fourier transform
+410110~004619~up the system impulse response so there of course there's a very strong parallel
+414729~003551~between continuous-time and discrete-time
+418280~003570~now just as we did in continuous-time
+421850~003099~let's begin a discussion by
+424949~004291~first concentrating on periodic the representation through complex
+429240~001149~exponentials
+430389~003741~love periodic sequences and then
+434130~004150~will generalize that discussion to the representation
+438280~003289~Ave periodic signals so
+441569~004070~let's consider furs a periodic signal
+445639~003280~or in general signals which are periodic
+448919~003500~period to notify capital and and then
+452419~003361~course the fundamental frequency is
+455780~003819~to pie divided by capital
+459599~004051~now we can consider exponentials
+463650~003720~which have this as a fundamental frequency
+467370~003040~war which are harmonics that
+470410~004450~and that would correspond to the class of complex exponentials
+474860~004450~the form you to the JK Omega 0n
+479310~004050~so these complex exponentials then
+483360~004619~as k varies are complex exponentials
+487979~003530~that are harmonically related with
+491509~003931~all of which our periodic with the same period
+495440~003680~capital and although the fundamental period
+499120~003729~is different for each of these each of them being related by
+502849~003271~an integer amount
+506120~005350~now again just as we did in continuous time we can consider
+511470~004220~attempting to build our periodic signal I have a linear combination
+515690~003149~love these and so we consider
+518839~003721~a periodic signal which is
+522560~003160~a weighted sum all these
+525720~003050~me complex exponentials and
+528770~004710~of course this periodic signal this is a periodic signal as can be
+533480~004690~verified in more or less in a straightforward way by substitution
+538170~003840~and of course one of the things that will want to address shortly
+542010~004079~is how broad a classic signals again can be represented
+546089~003411~by this psalm and another question obviously will be
+549500~004370~how do we determine the coefficients a suitcase
+553870~004060~however in before we do that let me
+557930~003000~focus on an important distinction
+560930~003529~between continuous-time and discrete-time
+564459~005951~in the context of these complex exponentials and this representation
+570410~003739~when we talked about complex exponentials and sinusoids
+574149~004891~early in the cores one up the difference is that we saw between continuous-time
+579040~001790~and discrete-time
+580830~003600~is dead in continuous-time as we very
+584430~004710~in the frequency variable we see different complex exponentials
+589140~004440~as Omega berries whereas in discrete-time
+593580~004180~we saw in fact dead there was a period this city
+597760~004960~or said another way it's straightforward to verify
+602720~003320~that if we think I love this
+606040~003090~class a complex exponentials day
+609130~004700~in fact if we consider burying
+613830~003650~K by an ink to it
+617480~003080~capital and where capital and is the period
+620560~003110~all the fundamental
+623670~005109~complex exponential then in fact
+628779~004141~if we replace K by K plus capital and
+632920~005859~we'll see exactly the same complex exponentials over again
+638779~004471~now what does that say what it says is that if I consider this class of complex
+643250~001690~exponentials
+644940~003889~SK varies from zero
+648829~003961~through capital N -1 we've seen
+652790~003270~we will see all of the ones that there are two see
+656060~003500~there aren't any more and so in fact
+659560~003089~if we can build excessive and
+662649~003491~I have this linear combination then
+666140~003580~we better be able to do it as k varies
+669720~003780~from 0
+673500~003959~up to and -1 because
+677459~003551~beyond that will simply see the same complex s
+681010~003030~exponentials over again so for example
+684040~003320~if k takes on the value capital and
+687360~003570~that will be exactly the same complex exponential
+690930~003399~as if KZ 0
+694329~003961~so in fact this some ranges
+698290~005150~only over capital in above the distinct complex exponentials
+703440~003630~let's say for example from 0 to capital and -1
+707070~004850~although in fact since these complex exponentials repeat
+711920~004289~in K I could actually consider instead have
+716209~003221~from 0 to N -1 I could consider from one
+719430~004370~and or from to too and plus one or whatever
+723800~005029~or said another way in this representation
+728829~003260~I could alternatively shoes K
+732089~003261~outside this range thinking
+735350~005090~0 these coefficients simply as periodically repeating in K
+740440~004230~because if the fact that these complex exponentials
+744670~003810~periodically repeating K so in fact
+748480~003970~in place if this expression it will be comin in writing the forty a series
+752450~001350~expression
+753800~004670~to write it as i've indicated here where the implication is
+758470~003150~that these Fourier coefficients
+761620~003690~periodically repeated as K continues to rip
+765310~004070~to repeat outside the interval from 0 to N -1
+769380~004000~and so this notation in fact says
+773380~003240~at what we're going to use are
+776620~004060~is K ranging over one period
+780680~003790~love this periodic sequence which is the forty a series called
+784470~003840~visions okay so
+788310~005019~the expression that we have been for the forty a series
+793329~004880~I've repeated here and the implication now is that
+798209~004391~the AC K's are periodic they periodically repeat because of course
+802600~002560~these exponentials periodically repeated
+805160~004330~this indicates there we only use them over one period
+809490~003420~and now we can inquire as to how
+812910~003190~we determine the coefficients aces K
+816100~003400~well we can formally go through this much as we did in
+819500~003209~the continuous-time case in and 0
+822709~003701~we do in fact do that in the text which involves substituting some
+826410~003390~sums in a change in yours summation cetera
+829800~003599~but let me a draw your attention to the fact that
+833399~003141~this in fact can be thought I love
+836540~005690~as capital in equations in capital and unknowns
+842230~003890~in other words we know x7 over a period
+846120~006149~and so we know what the left hand side if this is for capital and bad news
+852269~003810~and we'd like to determine these constant sese K
+856079~004070~well it turns out that their is a nice convening in closed form expression for
+860149~000880~that
+861029~005060~and in fact if we evaluate the closed-form expression
+866089~003571~through any variety of algebraic manipulations
+869660~003280~we end up then with the
+872940~004490~analysis equation and the analysis equation
+877430~003800~which tells us how to get the coefficients AC K
+881230~003099~from excessive and is what I've
+884329~003411~indicated here and
+887740~003070~so this tells us how for Maxim and
+890810~004370~to get the AC K's and of course the first equation
+895180~004409~tells us how x7 is built up by the VA's
+899589~003610~K's notice incidently that
+903199~003851~there is a strong to our the between these two equations
+907050~004110~and that's a duality that will return to
+911160~003229~actually toward the end of the next lecture now
+914389~003200~there is a real difference between the way those equations look
+917589~003961~and the way the continuous-time forty a series look
+921550~003510~in a continuous-time case let me remind you
+925060~003050~that it required
+928110~004510~an infinite number of coefficients to build up this continuous-time
+932620~003230~function and so this was not simply a matter
+935850~003599~of identifying how to invert capital and
+939449~004830~were a finite number of equations in a finite number upon owns
+944279~003430~and the analysis equation was
+947709~005331~and integration as opposed to the synthesis equation
+953040~003140~which is a summation so
+956180~003130~their is a real difference there between
+959310~003690~the continuous-time and discrete-time cases and a difference
+963000~003180~arises to a large extent because
+966180~004880~all this notion that in discrete-time the complex exponentials
+971060~003160~are periodic in
+974220~004590~their frequency so we have been to summarize
+978810~004019~the synthesis equation and the analysis equation
+982829~004380~for the discrete-time for a series
+987209~005060~again x7 are original signals periodic
+992269~003130~and of course the complex exponentials
+995399~005391~involve the periodic their periodic obviously in an
+1000790~004440~by it in contrast the continuous-time these repeat
+1005230~003690~in K in other words as k Omega 0
+1008920~004589~goes outside arrange that covers a 25 interval
+1013509~003390~and because if that we're imposing
+1016899~005930~in a sense the interpretation that the AC Kesar likewise the periodic sequence
+1022829~003151~and in fact we look at the analysis equation
+1025980~004419~as we let K very
+1030399~003141~outside the range from 0 to N -1
+1033540~003490~what you can easily verified by substitution in here
+1037030~005000~is that this sequence will in fact periodically repeat
+1042030~005190~so to underscore the difference between the continuous-time and discrete-time
+1047220~002290~cases
+1049510~003800~we have this periodicity in the time domain
+1053310~004910~and that's a periodicity dad is of course true in discrete-time
+1058220~003560~and it's also true in continuous-time
+1061780~003420~if we replace the integer variable
+1065200~003620~by the discrete-time time variable
+1068820~003989~and we also indiscreet I'm have this periodicity
+1072809~003870~in krak Omega 0 and correspondingly
+1076679~003141~a periodicity in the four EA coefficients
+1079820~004190~and bad is center properties
+1084010~004460~dat does not happen
+1088470~003690~in continuous-time and is bad
+1092160~005460~there essentially leads to all of the important differences between
+1097620~003429~discrete-time Fourier representations and in continuous-time
+1101049~003211~Korea representation
+1104260~004390~now just quickly let me draw your attention to the issue
+1108650~006810~love convergence and when a sequence can and can't be represented at cetera
+1115460~003800~a recall that in the continuous-time case
+1119260~004390~we focused on convergence in the context either
+1123650~003230~conditions which are referred to as where the group believe the
+1126880~004650~or another set of conditions which were the the Ridgeway conditions
+1131530~004350~and there was this issue about when the signal doesn't doesn't convergent
+1135880~000980~discontinuities
+1136860~004850~center let me just simply draw your attention to the fact
+1141710~003380~there in the discrete-time case
+1145090~004560~what we have is the representation of the periodic signal
+1149650~003880~as Assam all a finite number
+1153530~006300~turns this represents capital and equations in capital and unknowns
+1159830~004630~if we consider the partial some namely taking
+1164460~005459~a smaller number turns then simply what happens
+1169919~003811~is as the number of turns increases
+1173730~003260~to the finite number required to represent
+1176990~003260~ex-dividend we simply end up with
+1180250~003520~the partial some representing the fun and Lightsey
+1183770~003380~were all that boils down to is the statement
+1187150~004090~that in discrete-time there really are
+1191240~004410~no convergence issues as they were in continues time
+1195650~003899~okay well let's look at an example love the four EA
+1199549~003231~series representation for a particular signal
+1202780~003649~and the one that I think here is a simple one
+1206429~003870~namely a constant a
+1210299~004130~are signed term and a cosine term
+1214429~003841~now for this particular example we can expand this out
+1218270~003360~directly in terms of complex exponentials
+1221630~005179~and essentially recognize this as a somewhat complex exponentials
+1226809~003151~its examined in more detail
+1229960~003420~in example 5.2 in attacks
+1233380~005299~and if we looked at the for a series coefficients we can either look
+1238679~005481~at it in terms of real and imaginary parts are magnitude and angle
+1244160~005960~on the left side here I have the real part of the 48 coefficients
+1250120~003740~and let me draw your attention to the fact
+1253860~003240~their I've drawn yes
+1257100~003819~to specifically illuminate the periodicity
+1260919~005541~other for a series coefficients in with a period of capital and so here are the
+1266460~001780~Fourier coefficients
+1268240~005840~are and in fact its this line that represents the DCR constant term
+1274080~003440~and these two lines represent the
+1277520~003659~co-signed term and of course this
+1281179~004000~these are the three turns that are required or equivalent leave this one
+1285179~000681~this one
+1285860~003549~and this one and then because the period this city
+1289409~004471~the for a series coefficients this simply periodically repeats
+1293880~005070~so here is the real part and below it I show
+1298950~003140~the imaginary part and
+1302090~003060~in the imaginary part incidently let me
+1305150~003310~draw your attention to the fact dead its
+1308460~003349~this term and this term
+1311809~004551~there represent in the imaginary part that represent the sinusoid
+1316360~003790~whereas its the symmetric turns the real part
+1320150~003970~the represent the cosine okay let's
+1324120~003480~in look at another example
+1327600~003439~this is another example from the tax and one
+1331039~003380~that will be making frequent reference to
+1334419~003551~in this particular lecture
+1337970~003140~and what it is is
+1341110~003660~a square wave and
+1344770~003810~I've express the for a series coefficients which are out algebraically
+1348580~001729~developed in attacks
+1350309~003500~I've expressed the for a series coefficients as
+1353809~003151~samples all an envelope
+1356960~005620~function and so I've expressed that as samples if this
+1362580~003570~particular function which is referred to as a sign
+1366150~004399~enacts over sin x function and let me just compare it
+1370549~003311~to a continuous-time example which is the
+1373860~003049~continuous-time square wave
+1376909~003211~where with the continuous times square wave
+1380120~003600~the form or the for a series coefficients
+1383720~003310~was as samples love what we refer to
+1387030~003830~as a sin x over expunge
+1390860~003100~now the sin NX
+1393960~003260~over sin x function which is the envelope for the for a series
+1397220~001120~coefficients
+1398340~004400~for the discrete-time periodic square wave
+1402740~003740~plays the role and we'll see it very often in discrete-time
+1406480~003300~that sin x over exercise in continuous-time
+1409780~004450~and in fact we should understand right from the beginning
+1414230~003860~that the sin x over extend below couldn't possibly be
+1418090~004079~the envelope the discrete-time for a series coefficients
+1422169~003481~and one obvious reason is dead
+1425650~003710~it is not periodic what we require of course
+1429360~003890~from the discussion I just going through is periodicity
+1433250~004770~are the coefficients and consequently also periodicity of the envelope
+1438020~003230~in the discrete-time case so once again if we look back
+1441250~003429~at the algebraic expression that I have
+1444679~003750~it samples about the sign an X over sin x
+1448429~003701~function dead represent the for a series coefficients
+1452130~004029~love this periodic square way
+1456159~004451~now in the representation in
+1460610~003699~the continuous-time case we
+1464309~004771~essentially head use the concept of an envelope
+1469080~003050~to represent the for a series coefficients
+1472130~003710~and the notion that the for a series coefficients were samples
+1475840~004079~up an envelope and that is said the same notion
+1479919~003821~there will be using in discrete-time so
+1483740~003080~again for this square wave example
+1486820~003469~then what we have is an envelope
+1490289~003071~function the sign acts
+1493360~003390~over sin x envelope function for
+1496750~004970~a particular value of the period here indicated with a period
+1501720~003209~love 10 samples these
+1504929~003021~samples at this envelope function with then
+1507950~003339~represent the for a series coefficients
+1511289~003260~if we increased
+1514549~003130~the period then
+1517679~003011~we would simply have a finer spacing
+1520690~003099~on the samples are the envelope function
+1523789~003490~to get the 40 a series coefficients and
+1527279~004500~in likewise if we increase the period still further
+1531779~005500~what we would have is an even finer space
+1537279~004471~so actually as the period increases recall we use this in the in
+1541750~002029~continuous-time also
+1543779~004701~as the period increases we can view the for a series coefficients
+1548480~004559~samples of an envelope and as the period increases
+1553039~003390~the sample spacing gets finer and finer
+1556429~003071~and in fact as the period goes
+1559500~003830~of essentially to infinity the samples of the envelope
+1563330~004170~in effect become the anvil and recall also
+1567500~004370~that this was essentially the trip that we use
+1571870~003169~in continuous-time to allow us
+1575039~003620~to develop or utilize the 48 series
+1578659~003861~to provide a representation %uh a periodic signals
+1582520~003889~as a linear combination of complex exponentials
+1586409~003731~in particular what we did in
+1590140~004490~the continuous-time case
+1594630~003060~when we head and a periodic signal
+1597690~004969~was to consider constructing a periodic signal
+1602659~004461~for which be a periodic signal was one period
+1607120~003140~and then we developed the notion there since
+1610260~004909~the periodic signal has a forty eight series
+1615169~003000~and since as the period
+1618169~003681~the periodic signal increases n goes to infinity
+1621850~004130~the periodic signal represents the a periodic signal
+1625980~003059~then essentially the 48 series
+1629039~003581~provides us with the representation now
+1632620~003809~we can do exactly the same thing in the discrete-time case
+1636429~004571~the statement is exactly the same except dead in a discrete-time case
+1641000~003500~instead of see as the independent variable
+1644500~003100~we simply make exactly the same statement
+1647600~003610~but with are discrete-time variable
+1651210~003900~and so the basic notion then in representing
+1655110~006520~a discrete-time a periodic signal
+1661630~003630~is to first construct
+1665260~003120~a periodic signal here we have the
+1668380~004620~a periodic signal reconstruct a periodic signal
+1673000~005860~by simply periodically replicating the a periodic signal
+1678860~006049~the periodic signal in the a periodic signal are identical
+1684909~003490~for one period and as
+1688399~003010~the period goes off to infinity
+1691409~003961~it's the forty a series representation of the periodic signal
+1695370~003299~that provides a representation all
+1698669~003541~the a periodic signal again
+1702210~003069~to returned to the example
+1705279~003421~that we
+1708700~006180~have been kinda working through this lecture namely the periodic square wave
+1714880~003320~if we have in a periodic signal which is a rectangle
+1718200~004270~and reconstruct the periodic signal
+1722470~003850~and now we consider letting this period increase to infinity
+1726320~005120~we would first have this set of samples of the envelope
+1731440~005570~as the period increases we would decrease the sample spacing to this set
+1737010~001789~of samples
+1738799~003781~as the period increases further it would be
+1742580~004959~this set of samples and as the period goes off to infinity
+1747539~003311~its every point on the envelope in fact
+1750850~003929~what the representation up the a periodic signal
+1754779~003731~is is the anvil
+1758510~004269~okay well so that's the basic notion it's no different than what we did
+1762779~003530~in the continuous-time case and
+1766309~003051~mathematically it develops in
+1769360~004400~very much the same way as in the continuous-time
+1773760~003760~case specifically
+1777520~004430~here is our representation
+1781950~004209~through the forty a series all the
+1786159~005740~here here's a representation through the envelope function
+1791899~003880~and this is the 48 series synthesis equation where
+1795779~003591~equation the equation below tells us
+1799370~003400~how we'd get these for EA coefficients
+1802770~003320~or the envelope from accident
+1806090~004230~now extolled event is the periodic signal and we know that
+1810320~003810~over one period which is the only interval over which we use it
+1814130~003970~in fact this is identical to the a periodic signal
+1818100~003840~its own fact we can rewrite this equation
+1821940~005109~simply by substituting instead effect told The
+1827049~003250~the original a periodic signal and now
+1830299~004431~we can use infinite limits on this some and
+1834730~003419~what we would want to examine mathematically is
+1838149~004331~what happens to the top equation
+1842480~004600~as to the top equation as we let the period
+1847080~003930~go off to infinity and what happens is
+1851010~003440~exactly identical mathematically to continuous-time
+1854450~003750~I won't the labor the details essentially
+1858200~003650~its this some that goes to an integral
+1861850~004350~Omega 0 which is the fundamental frequency is going
+1866200~003430~toward zero in fact becomes the differential in the integral
+1869630~005340~and in the second equation of course this then becomes excessive Omega
+1874970~003480~and as n goes to infinity then
+1878450~004339~what the for a series becomes is the 48 transform
+1882789~003020~as summarized by the bottom to
+1885809~003941~equations so although
+1889750~003279~there are is a little bit mathematical
+1893029~003171~trickery year but I called trickery but subtlety
+1896200~004190~to be tracked through in detail the important conceptual thing to think
+1900390~000630~about
+1901020~003289~is this notion dead
+1904309~003951~we take the a periodic signal for periodic signal let the period go off to
+1908260~000840~infinity
+1909100~004230~which case the forty a series coefficients became these
+1913330~003360~envelope function and incidently mathematically
+1916690~003070~one of the sons ends up going to an integral
+1919760~003149~so what we have then is
+1922909~005031~the discrete-time for EA transform
+1927940~003070~which is a representation all
+1931010~003440~and a periodic signal and we have
+1934450~005060~the synthesis equation which I show as the top equation honest
+1939510~003200~transparency and this
+1942710~004730~is the integral that the four East series
+1947440~005489~synthesis equation went to as the period when off to infinity
+1952929~003431~and we have the corresponding analysis equation
+1956360~004939~which is shown below where this tells us the 48 transform
+1961299~003620~in effect the envelope all the for a series coefficients
+1964919~003421~love that periodic signal in and here
+1968340~004969~represented interns love the a periodic signal
+1973309~005551~okay so we have the analysis equation synthesis equation
+1978860~003740~there are a number of things to focus
+1982600~003480~on as you look at this and we'll talk about so its properties
+1986080~003099~actually in the next lecture by it sold them the
+1989179~003641~points the I'd like you to think about a focus on
+1992820~003060~the fact that now there
+1995880~004600~is somewhat have an imbalance or lack of duality between the time-domain and
+2000480~001449~frequency-domain
+2001929~003600~x seven witches are a periodic signal is a course
+2005529~003681~discrete its Fourier transform
+2009210~004260~Xserve Omega is a function love a continuous variable
+2013470~003069~Omega is a continuous variable that that
+2016539~004990~and that is essentially what represents the envelope
+2021529~003351~also in the time domain x7 is
+2024880~004529~a periodic its not a periodic function
+2029409~004831~however in the frequency domain remember that the for a series coefficients were
+2034240~001409~always periodic
+2035649~004101~well this envelope function then is also periodic
+2039750~004110~with a period in omega up to par i
+2043860~004269~what's again the reason for the periodicity it all stems back to the
+2048129~000741~fact
+2048870~003659~there when we talk about complex exponentials
+2052529~004380~and recall back to the early lectures in discrete-time
+2056909~004370~as the frequency variable covers a range
+2061279~004691~all to parlay when you proceed past that range
+2065970~004520~you simply see the same complex exponentials over and over again
+2070490~004130~and so obviously anything that we do with them would have to be periodic
+2074620~004440~in that frequency variable alright notation Lee
+2079060~003410~and will again represent the
+2082470~003840~discrete-time Fourier transform here as i indicate here
+2086310~003369~and sense is a complex function of frequency
+2089679~003671~may on occasion want to either represented
+2093350~004200~in rectangular form as i indicated this equation
+2097550~004450~or in polar for as i indicate in this equation
+2102000~003050~all right let's and look at an example
+2105050~003039~and of course one example that
+2108089~004621~we can look at is the one that has kind of been tracking this
+2112710~003010~through this lecture which is the example
+2115720~003119~love a rectangle now
+2118839~003671~the rectangle if we refer back to our
+2122510~005980~argument love how we get a for a representation for a periodic signal
+2128490~003260~we would form a periodic signal where this is repeated
+2131750~004560~and thats are square wave example as the period goes to infinity
+2136310~004049~the forty a transformer this is represented by the envelope
+2140359~003371~all those for a series coefficients and that was
+2143730~003109~are sign an X over sin x function
+2146839~003481~which in this particular case for these particular numbers
+2150320~003580~is sin 5 Omega over to
+2153900~004100~divided by sign Omega over to
+2158000~003890~and notice of course as we would expect
+2161890~003439~that notice that this is a
+2165329~004260~periodic function all the frequency variable Omega
+2169589~004391~repeating of course with a period up to par
+2173980~003730~whereas in the time domain the function was not
+2177710~005159~a periodic function it's a period
+2182869~003061~now let's look at another example
+2185930~003060~in let's look at example
+2188990~003050~which is another signal that has
+2192040~004819~kinda popped its head up from time to time as the lectures have gone along
+2196859~005301~signal which is another a periodic signal which is a decaying exponential
+2202160~003290~of this form with the
+2205450~004570~factor a chosen between 0&1
+2210020~003370~and you can workout the algebra
+2213390~004160~at your leisure basically if we substituted to the four EA
+2217550~003380~transform analysis equation its
+2220930~004470~this summer we evaluate because we have a unit step here
+2225400~003750~which shots this of for and less than zero
+2229150~003840~we can change the limits on the some this then corresponds
+2232990~004550~to the some over an infinite number turns
+2237540~004090~geometric series and that as we've seen before
+2241630~003070~is one divided by one minus a
+2244700~003580~you to the minus jail make so
+2248280~004490~let's look at what that looks like
+2252770~004040~here him then we have again
+2256810~003430~the expression in the time domain
+2260240~003220~and the expression in the frequency domain
+2263460~005310~and lets in particular focus I N what the magnitude of the Fourier transform
+2268770~001420~looks like
+2270190~004740~its as we show here
+2274930~003220~and for the particular values
+2278150~003380~Ave that I picked namely between 0&1
+2281530~004010~its larger at the origin then it is upon I
+2285540~003780~and then of course it is periodic
+2289320~005009~and the periodicity is inherent in the Fourier transform in discrete-time
+2294329~003711~so we really might only need to look at this either from minus
+2298040~003299~fired upon by or from 0 to 2pi
+2301339~004321~the periodicity of course would imply what the rest at this is for other
+2305660~002490~values have or make it
+2308150~003310~let me also draw your attention at war on it
+2311460~004129~the fact dead observed at if
+2315589~003260~a were in fact negative then
+2318849~004111~this value would be less than this value
+2322960~003170~and in fact for a negative
+2326130~004449~the magnitude the frequency response would look like this except shifted
+2330579~004051~by an amount in omega equal the pie
+2334630~003060~and this example will come up
+2337690~004590~and play an important role in our discussion next time
+2342280~004579~so try to keep it in mind in fact work it out more carefully between
+2346859~003980~now and next time and also if you have a chance
+2350839~003591~focus on this issue love how it looks
+2354430~003950~with a positive is compared with a negative
+2358380~004930~okay now we developed the 48 transform
+2363310~006279~by beginning with the forty a series we did that in continuous time also
+2369589~003571~but I'd like to do now just as we did in continuous-time
+2373160~004240~is now absorb the forty a series
+2377400~004270~within the broader framework above the 40 a transport
+2381670~005470~and there are two relationships between the forty a series the Fourier transform
+2387140~003250~which are identical to relationships that we had
+2390390~004120~in the continuous-time case
+2394510~003240~let me remind you dead in
+2397750~003260~continuous-time we head
+2401010~007000~the statement there if we have a periodic signal
+2408190~005399~that in fact the forty a series coefficients that periodic signal
+2413589~003161~is proportional to
+2416750~003750~the two samples of the Fourier transform
+2420500~003540~all one period well
+2424040~003610~in fact thats let me remind you flows
+2427650~003140~easily from all other things that we've built up
+2430790~004850~so far because of the fact that the for a transformer sexually
+2435640~003020~by definition love the way we developed it
+2438660~003300~is what we get as
+2441960~004950~the forty-a series coefficients
+2446910~004380~as we focus on one period and then let the period go off to infinity
+2451290~004850~well thats looking at one period before a transformer that then
+2456140~003570~is the envelope above the 40 a series coefficients
+2459710~003770~and so in continuous-time we have
+2463480~003970~this relationship and in discrete-time
+2467450~005270~we have precisely the same relationship
+2472720~003190~except that here we're talking about
+2475910~004880~an integer variable and as opposed to the continuous variable and a period of
+2480790~001850~capital and
+2482640~003070~as opposed to a period
+2485710~004379~love t0 okay so
+2490089~003551~once again if we returned to
+2493640~003830~our example
+2497470~004030~if or Fri return to a periodic signal
+2501500~003579~we have a periodic signal and we consider
+2505079~003270~the for EA transform love
+2508349~003881~one period the for a series coefficients
+2512230~003010~this periodic signal are in fact
+2515240~003390~samples as stated
+2518630~003439~mathematically in the bottom equation samples
+2522069~003921~love the four EA transform all
+2525990~005379~one period so XO makers the for a transformer one period
+2531369~004220~a suitcase at a4e series coefficients at the periodic signal
+2535589~005240~and this relationship simply says their related except for a scale factor
+2540829~005240~through samples along the frequency axis
+2546069~005081~and and the chorus we saw this
+2551150~003030~in the context all our
+2554180~003470~square wave example in a square wave
+2557650~004429~example we have a periodic signal
+2562079~003861~which is a periodic square wave
+2565940~003379~and the for EA transform
+2569319~004010~a one period in fact represents
+2573329~004061~the on below and here we have the envelope function
+2577390~005370~represents the envelope or the forty a series coefficients
+2582760~005880~and the for a series coefficients are samples
+2588640~003360~so what we have been is
+2592000~006359~a relationship back to before a series coefficients from the Fourier transform
+2598359~003541~that tells us that for periodic signal now
+2601900~004070~the periodic signal the for a series coefficients
+2605970~003670~are related are samples of the Fourier transform
+2609640~003120~one period now
+2612760~003290~finally to kinda bring things back in a circle
+2616050~004299~and exactly identical to what we did it in the continuous-time
+2620349~003331~case we can finally absorber
+2623680~003429~the 48 series indiscreet
+2627109~003521~time we can absorb it into the framework
+2630630~003850~all the four EA transport now
+2634480~004170~remember or recall how we did at when
+2638650~003630~re tried to do a similar sort of thing
+2642280~004740~in continuous-time in continuous-time
+2647020~003700~what we essentially did is
+2650720~003970~to develop that more less by definition
+2654690~003730~we have occurred we have a periodic signal
+2658420~003230~the periodic signal is represented through 48 series
+2661650~003840~in forty a series coefficients essentially
+2665490~004730~when I pointed out at that time was that if we define
+2670220~005399~and take it as a definition before a transformer the periodic signal
+2675619~006181~as an impulse train where the amplitudes at the impulses are proportional
+2681800~003120~to the forty a series coefficients
+2684920~003140~if we take an impulse train representation
+2688060~003990~and simply plug it in
+2692050~003549~to the for EA
+2695599~003990~transform synthesis equation what we end up with
+2699589~005510~is the for you see recent this equation
+2705099~003490~so in continuous-time
+2708589~003770~we bad done
+2712359~003041~we had used this definition I love
+2715400~003419~the discrete-time up the continuous-time
+2718819~004081~for EA transform other periodic signal
+2722900~003650~and again in discrete-time it's simply a matter
+2726550~003769~love using exactly the same expression
+2730319~004050~and using instead the appropriate
+2734369~004261~variables related to discrete-time rather than the variables related to
+2738630~001439~continuous-time
+2740069~003191~so in discrete-time if we have a periodic signal
+2743260~003300~the Fourier transform that periodic signal
+2746560~003100~is defined as an impulse train where the
+2749660~003060~amplitudes up the impulses
+2752720~004950~are proportional to the forty a series coefficients
+2757670~004429~if this expression is substituted into the synthesis equation
+2762099~004681~for the 48 transform we will simply that will simply then reduced to
+2766780~004660~this synthesis equation for the forty a series
+2771440~003520~so wants more returning to
+2774960~004389~our example which is the square wave example that we carry through these
+2779349~001061~lectures
+2780410~003640~or through this lecture we can see that
+2784050~004390~really what we're talking about really is a notational change
+2788440~005040~here is the four EA here is the periodic signal
+2793480~003080~and below it are the forty a series
+2796560~004759~coefficients where I've removed the envelope function just indicate
+2801319~005530~the airport to the coefficients index of course on the coefficient number
+2806849~003881~and so this represents a bar graph and
+2810730~003690~if instead of talking about the for a series coefficients
+2814420~003710~what I want to talk about are the
+2818130~004320~is the four EA transform the Fourier transform
+2822450~003850~in essence corresponds to simply redrawing mad
+2826300~004370~using impulses and using
+2830670~003080~an axis that is essentially
+2833750~003510~index on the fundamental frequency Omega
+2837260~003599~rather than on the four EA series coefficient number
+2840859~003311~K
+2844170~003300~okay in so
+2847470~003300~to summarize what we've done
+2850770~003329~is to pretty much parallel
+2854099~005831~are somewhat more quickly the kind of development that we went through
+2859930~004139~for continuous-time representation through complex exponentials
+2864069~003571~parallel that for the discrete-time case
+2867640~004840~and pretty much the conceptual underpinnings that the development are
+2872480~001530~identical
+2874010~004980~in discrete-time and in continuous time
+2878990~003430~we saw there'd their are
+2882420~004490~some major differences are important differences between continuous-time and
+2886910~001530~discrete-time
+2888440~003060~I'm and the difference essentially
+2891500~005319~relates to two aspect one aspect is the fact that
+2896819~005191~in discrete-time we have a discrete representation in the time domain
+2902010~003040~whereas the independent variable in the frequency domain
+2905050~004180~is a continuous variable whereas in continuous-time
+2909230~003660~for the Fourier transform we had duality between the time-domain and
+2912890~002449~frequency-domain
+2915339~004311~the other very important difference tied back to the difference between complex
+2919650~003640~exponentials continuous-time and discrete-time
+2923290~005059~in continuous-time complex exponentials as you very the frequency
+2928349~003010~generate distinct
+2931359~004931~time functions in discrete-time as you very the frequency
+2936290~003960~once you've covered a frequency interval to pie
+2940250~003680~then you've seen all the ones there are two see there are no more
+2943930~004590~in this in a fact imposes a periodicity
+2948520~004650~on the 48 domain representation of discrete-time signals
+2953170~004340~and those so those differences and of course lots the similarities
+2957510~004870~will surface both as we use this representation
+2962380~003979~and as we develop for the property
+2966359~003000~in the next lecture what will do is
+2969359~004441~to focus and again on the Fourier transform the discrete-time Fourier
+2973800~002799~transform
+2976599~005391~develop or eliminate so love the property serv the trip or a transform
+2981990~003520~and then see how these properties can be used
+2985510~004020~for a number of things for example how the properties as they were in
+2989530~001420~continuous-time
+2990950~003980~can be used to efficiently
+2994930~004040~generate the solution and analyze when your constant coefficient difference
+2998970~001220~equations
+3000190~003190~and then beyond that the concepts of
+3003380~003090~filtering and modulation and
+3006470~003670~the both the properties and interpretation which will very strongly
+3010140~001110~parallel
+3011250~003640~the kinds of developments along those lines that we did in the last night
+3014890~000260~thank you

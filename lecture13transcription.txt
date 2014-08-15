@@ -1,0 +1,841 @@
+000040~003450~the following content is provided under a Creative Commons license
+003490~003639~your support will help MIT OpenCourseWare continue to offer
+007129~003451~high-quality educational resources for free
+010580~003780~to make a donation or view additional materials from hundreds of them IT
+014360~000670~courses
+015030~003080~visit MIT OpenCourseWare at 0 CW
+018110~007000~that MIT that EDU home the
+029170~002200~the
+031370~001600~the
+032970~002890~the
+035860~003360~in
+039220~007000~the new the in this lecture we
+057409~003150~begin a discussion of the topic modulation
+060559~003911~which is among other things a very important
+064470~003399~topic in practical terms for example it
+067869~004021~forms the cornerstone for many communication systems
+071890~004320~and also as we'll see as these lectures go along
+076210~005110~a particular for modulation referred to as poss amplitude modulation and
+081320~000840~eventually
+082160~003489~impulse modulation or impose train modulation
+085649~003181~forms a very important bridge between
+088830~003179~continuous-time signals in discrete-time signals
+092009~004011~now in general terms
+096020~004010~what we mean when we refer to modulation is the notion
+100030~003170~%uh using one signal to very
+103200~003990~a parameter up another signal for example
+107190~004099~a sinusoidal signal has three parameters
+111289~005360~amplitude frequency and phase and we could think for example
+116649~003291~love using one signal
+119940~004519~to very let's say the airport to up a sinusoidal signal
+124459~004811~and what that leads to is an ocean which will develop in some detail
+129270~004079~referred to as sinusoidal amplitude modulation
+133349~003220~and would correspond to a
+136569~003500~sinusoidal signal refer to as the carrier
+140069~004591~and its amplitude being buried on the basis
+144660~003570~love another signal now
+148230~003660~alternatively we could think all burying either the
+151890~003080~frequency or the phase a sinusoidal signal
+154970~005970~again with another signal and with that leads to is another very important
+160940~000920~notion
+161860~003070~which is referred to as sinusoidal
+164930~003230~frequency modulation where essentially
+168160~004190~it's the frequency up a sinusoid that's changing
+172350~003240~depending on the signal that we're using
+175590~004460~to modulate this sinusoid now
+180050~004120~sign a soil amplitude frequency and phase modulation
+184170~003640~are extremely important topics and ideas
+187810~005890~in the context ok communication systems what are the reasons is dead if you want
+193700~003119~to transmit a signal let's say for example a voice signal
+196819~005031~the voice signal that you're listening to now if you try to transmit that over
+201850~003150~long distances because the frequencies involved
+205000~003720~the medium that you use to transmitted
+208720~003950~won't carry it long distances the idea then
+212670~003590~is to essentially take that signal like a voice signal
+216260~004110~use it to modulate a much higher frequency signal
+220370~003300~and then transmit that higher frequency signal
+223670~003590~over a medium dead essentially can support
+227260~004020~long-distance transmission at those frequencies then at the other end of
+231280~000539~course
+231819~003231~the voice information or whatever else the information is
+235050~003560~is taken off now also
+238610~003000~a notion that that leads to an will be developing in
+241610~004040~some detail is kind of the idea that in fact
+245650~004740~you can simultaneously transmit more than one signal
+250390~004370~by in essence taking several voice signals or other signals
+254760~004879~using them to modulate either the frequency or amplitude
+259639~003511~love sinusoidal signals at different frequencies
+263150~003930~ending all those together that's a process called multiplexing
+267080~003540~and then at the other end the transmission system
+270620~003660~taking those sinusoidal signals apart and then
+274280~004990~extracting the envelope or frequency modulation information
+279270~005340~to get back to the voice signal or other information carrying signal
+284610~003410~so that's one of the very important ways in which
+288020~006639~modulation is used sinusoidal modulation is used in communication systems
+294659~003010~and and white will see as
+297669~003240~in particular as we go through today's lecture
+300909~005551~is there'd amplitude modulation sinusoidal amplitude modulation
+306460~004209~in fact follows in a fairly straightforward way
+310669~003171~from the properties of the four EA transform
+313840~003069~that we've developed in summer the earlier lectures
+316909~003301~so our focus on in today's lecture
+320210~004620~will be on sinusoidal amplitude modulation
+324830~003709~in continuous-time in the next lecture will
+328539~003240~consider the same set of notions related to discrete-time
+331779~004260~and also a concept referred to as poss amplitude modulation
+336039~004430~and all of these follow very in a very straightforward way from the modulation
+340469~003021~property for the 48 transform
+343490~003500~issues of frequency and phase modulation are
+346990~003389~a little more difficult to analyze but in fact many have
+350379~003581~the techniques that we've developed in the previous lectures
+353960~005030~also provide important insights into frequency phase modulation
+358990~003319~summer this is develop in more detail
+362309~003431~in the book so what I'd like to do
+365740~003380~is focus for now on the concept
+369120~003419~love amplitude modulation
+372539~003111~and in as i indicated
+375650~003879~there are several kinds love carrier signals
+379529~003920~on which the modulation can be superimposed
+383449~003590~the basic structure for an amplitude modulation system
+387039~005580~is one in which there is the modulating signal let's say for example Voice
+392619~003901~and a carrier signal what's referred to as the carrier
+396520~005109~and then of course the resulting output is the modulated output
+401629~005701~now to analyze this since we have multiplication in the time domain
+407330~003049~we know from the property the 48 transform
+410379~003370~that we've developed previously the modulation property
+413749~004181~dead multiplication in the time domain corresponds to
+417930~005699~convolution in the frequency domain and it's this basic property or equation
+423629~003820~dead lets us analyzed in some detail in fact
+427449~004131~the notions of amplitude modulation
+431580~003359~as we go through this lecture and the next lecture
+434939~003950~we'll be talking as i indicated about several different types
+438889~003390~carrier signals one is
+442279~004220~what's referred to as poss carriers and that leads to
+446499~003730~among other things the concept the pulse amplitude modulation
+450229~003870~that will be deferred until the next lecture
+454099~003820~in today's lecture what I'll focus on is
+457919~004011~first the case of a complex exponential carrier
+461930~003280~second the case of a sinusoidal carrier
+465210~005039~and in fact in the complex exponential carrier a sinusoidal carrier
+470249~003320~are obviously very closely related since
+473569~004090~the complex exponential carrier is in effect
+477659~003490~to sinusoidal carriers one
+481149~003811~for the real part and one for the imaginary part
+484960~003209~so let's first begin a discussion love
+488169~004631~amplitude modulation by considering a complex exponential carrier
+492800~005679~and then moving on to a discussion of a sinusoidal carrier
+498479~003250~so the issue then is dead
+501729~003870~we have a signal
+505599~003451~x50 it's multiplied by a carrier
+509050~003940~and the carrier they were considering is a carrier signal
+512990~003080~see if the of the form
+516070~004130~e2 the J Omega CT
+520200~003050~plus status see thats the form
+523250~003220~love our carrier signal and
+526470~003040~what we can first analyze is what
+529510~004019~the result things signal or spectrum is
+533529~004661~at the output the modulator well we can do that by
+538190~003440~concentrating on the modulation property
+541630~003070~and let's consider just are as a
+544700~003629~serb general for respect from what i've indicated here
+548329~003620~for the 48 transform love
+551949~003611~the input signal
+555560~003449~or modulating signal exe phone maker and so
+559009~003421~this is intended to represent
+562430~003339~the spectrum affect safety
+565769~004661~and then the carrier signal since it's a single complex exponential
+570430~003829~has a $4 EA transform which is
+574259~003031~an impulse in the frequency domain
+577290~003560~and the airport to up the impulse is
+580850~003049~to partay to the J status subsea
+583899~003630~where we noticed that the complex amplitude incorporates
+587529~003161~the phase information so
+590690~005420~now if we multiply in the time domain week involving the frequency domain and
+596110~001180~as you know
+597290~004799~involving a signal with an impulse just shifts that signal to the location of
+602089~001331~the impulse
+603420~003960~and so as a consequence and taken care various
+607380~003910~factors what we end up with is spectrum
+611290~004390~then that is centered at the carrier frequency
+615680~003599~Omega subsea so
+619279~003511~what this says is dead if we have a signal
+622790~004150~x50 and we
+626940~003990~use it to modulate a complex exponential carrier
+630930~003649~in the frequency domain what we've simply done is to take
+634579~004380~the original spectrum and shifted in frequency
+638959~004721~to so that was originally at zero frequency is now centered around the
+643680~002620~carrier frequency
+646300~003920~now we've now modulated in effect to a higher frequency
+650220~003679~things are happening at a higher frequency band and
+653899~004021~the next question is how do we do much away or in other words
+657920~003779~how do we get the original signal back
+661699~003500~well of course one way that we can think of doing it
+665199~003010~particularly in the context love this
+668209~003901~specific carrier if we look back at the top equation
+672110~003440~we have as the result in the modulation
+675550~003899~X 50 time see if he were see if t is this
+679449~003301~and we could consider for example
+682750~003800~just simply dividing the modulator output by this
+686550~003079~or equivalently taking the modulated output
+689629~003221~and multiplying by the to the
+692850~004000~minus J Omega CT plus they to see
+696850~003940~well let's track that through in terms of the spectra
+700790~003560~we have again the spectrum or
+704350~004590~the output the modulator which is the original spectrum shifted
+708940~003370~up to the carrier frequency we have
+712310~004009~below that the spectrum love
+716319~004731~e2 the minus J Omega CT plus they to see
+721050~003959~and if we now convolved this with this
+725009~003950~that results in simply shifting this spectrum except for
+728959~003560~an issue the scale factor shifting this spectrum
+732519~003880~back down to the origin so can bombing these two together
+736399~004261~the spectrum that we end up with is that
+740660~004710~so weekend track this through in the frequency domain
+745370~003529~in the frequency domain that says ship the spectrum up
+748899~003511~when you want the modulate ship the spectrum back down
+752410~003150~and alternatively we can look at algebraically
+755560~004190~in the time domain what it says is if you multiply it by either the plush
+759750~001670~chair make a CT
+761420~005490~then when you want to get back multiply by in the minus chair make a CT
+766910~005489~now one question that I you could conceivably be asking is
+772399~003290~if we're talking about practical systems and not
+775689~003561~simply mathematics in fact
+779250~003899~doesn't make sense in the real world to consider
+783149~003351~using a complex exponential carrier
+786500~003779~and the answer to that in fact is
+790279~005461~yes dead very often in practical systems one considers
+795740~004909~using a carrier which in fact is a complex exponential
+800649~003060~well a complex exponentials complex there's a
+803709~003831~square root of -1 in the air and you can kinda basse-bolle how do we get a square
+807540~001630~root of -1
+809170~003260~and the answer is fairly simple let's
+812430~004589~look again at the modulator which we have here
+817019~003860~and in effect with that says is we want to multiply
+820879~004971~a real-valued signal by you the chair make a CT plus they to see
+825850~004400~now we can equivalent Lee use oil as relationship
+830250~004360~to break this down into a cosine and sine term
+834610~004459~and so what that means interns have an implementation equivalent Lee
+839069~004370~is modulating x50
+843439~003681~onto a cosine carrier
+847120~003469~and that then gives us the real part
+850589~004221~ald the complex output and modulating it onto
+854810~005490~a sinusoidal carrier these two being ninety degrees out of phase
+860300~003209~and that gives us the imaginary part
+863509~003510~and so in effect this is the complex signal
+867019~004211~if we just simply think both hanging attack on here that says square root of
+871230~001740~-1 RJ
+872970~003609~and we appropriately combined complex signals
+876579~004221~following the rules of complex arithmetic and indeed that's exactly the
+880800~002199~way things are done in the real world
+882999~003390~a complex signal is simply a set love
+886389~004651~to real signals and of course if we look at the spectra
+891040~006469~involved if we we have here the real part and the imaginary part pov
+897509~003731~the complex output if we
+901240~004099~again refer back to the original spectrum accessible maker
+905339~003490~and the modulated spectrum
+908829~003050~which I show down here the original spectrum
+911879~004161~shifted up to the carrier frequency
+916040~004580~in effect we're building nests I dove two lines
+920620~003430~one-line representing the real part
+924050~005930~love that and the real part in the time domain corresponds to the even part in
+929980~001320~the frequency domain
+931300~003570~and so with the output of one of the
+934870~003879~Cosi if the cosine modulator we have a spectrum
+938749~003140~that looks like this and
+941889~004880~the output love the along the imaginary branch
+946769~003500~has a spectrum that looks like this
+950269~003250~recalling the top branch that this
+953519~004480~for positive frequencies is positive and was positive here and so in effect when
+957999~001181~you add them
+959180~003310~this portion of the spectrum will cancel out
+962490~003940~so in effect what we're doing is building
+966430~003279~then the complex signal
+969709~004560~in effect outta to real signals or we're building this complex
+974269~004771~the spectrum the complex signal I dove separate lines the represent the
+979040~003909~even and the art parts
+982949~003610~okay now their
+986559~004361~are lots of applications love amplitude modulation
+990920~003510~and we'll be seeing a number of these as we go through the discussion
+994430~003430~what I'd like to do in is just indicate briefly
+997860~004029~one now which is an application that
+1001889~003670~are in fact surface is fairly often in the context
+1005559~003950~love a complex exponential carrier
+1009509~004520~and bad is the notion love using modulation
+1014029~003941~to permit
+1017970~003140~the application %uh love
+1021110~003849~a very well designed and implemented low-pass filter
+1024959~005350~to be used as a bandpass filter and in fact as a set a bandpass filters
+1030309~003461~account here's the idea the idea is
+1033770~003460~if we have a fixed filter
+1037230~003729~work we have let's say we have a signal and we want to thank
+1040959~004581~all a filter which we want to kinda move along the signal
+1045540~005430~one way to do it is to somehow have filters the move along the signal
+1050970~003760~the other possibility is to keep the filter fix and let
+1054730~004390~the signal move in frequency in front of the filter
+1059120~003430~let me that may be a little more specific
+1062550~005300~suppose that we have a signal accept T
+1067850~004720~and in we modulated with a complex exponential carrier
+1072570~003610~with the carrier frequency Omega see
+1076180~006680~and the output if that is then processed with a low pass filter
+1082860~004020~and then we d modulate the result
+1086880~004160~then in fact what we've done is to take the spectrum
+1091040~003260~or the input signal
+1094300~005470~shifted pullout what is now around low frequencies
+1099770~004370~and then shift that part of the spectrum back to where it belongs
+1104140~003550~so if we look at that interns
+1107690~003780~over actually tracking through the spectra we would have
+1111470~003880~initially a spectrum for the original signal
+1115350~004240~which I show at the top as excessive Omega
+1119590~003370~after modulating or shifting that spectrum
+1122960~004010~up to a center frequency Omega see
+1126970~005320~we then have what I indicate here and the dotted line corresponds to
+1132290~003100~the passband the low-caste filter
+1135390~004380~well the results have low pass filtering rejects
+1139770~005210~all the spectrum except the part around low frequencies
+1144980~003820~and the next step is then 2d modulate
+1148800~003890~this and so in effect the modulating
+1152690~004810~will shift this spectrum back to where it originally came from
+1157500~003240~and so that result will be what I
+1160740~003460~show in the final result
+1164200~003580~which is here and what we can say is that
+1167780~003200~this in fact is equivalent
+1170980~003570~if we can look back at the top spectrum
+1174550~003820~this is equivalent to having extracted
+1178370~005500~with a bandpass filter a section out of this part of the spectrum
+1183870~004850~so interns love tracking through the spectrum and looking at
+1188720~003670~the equivalent filtering operation
+1192390~003680~then what we accomplished was
+1196070~004400~to pull out this part of the spectrum
+1200470~003140~using a low-pass filter and modulation
+1203610~003400~but acquittal atlee what we implemented was
+1207010~003740~a bandpass filter as i indicate here
+1210750~003180~now of course a signal with this spectrum since
+1213930~003560~this spectrum is not kind you get symmetric we know that this signal does
+1217490~002800~not correspond to a real-valued signal
+1220290~004880~a quite lovely this filter doesn't correspond to a filter whose impulse
+1225170~001420~response Israel
+1226590~003800~if in fact we add another step to this
+1230390~004190~which is to take the real part of the output
+1234580~003640~then by taking the real part of the output we would be taking the
+1238220~004580~even part of the spectrum associated with that complex signal
+1242800~004300~and the acquittal with author that we would end up with then
+1247100~003170~is the filter that I indicated the bottom
+1250270~004680~which is a bandpass filter
+1254950~005810~now just two reiterate a point that I made earlier
+1260760~003910~a question of course is why would you go to this trouble why not just build a
+1264670~001890~bandpass filter
+1266560~003870~and one other reasons is that
+1270430~003670~its often much easier to build
+1274100~004870~affixed filter a filter with a fixed center frequency for example a low-pass
+1278970~000930~filter
+1279900~004430~than it is to build the filter that has variable compliments in it so that
+1284330~003910~when you bury them the filters center frequency shifts around
+1288240~004430~now if you want to look at at the energy and a signaling different frequency
+1292670~000930~bands
+1293600~004060~then you'd like to look at it through different filters
+1297660~004190~and so kind of the idea here which is really the basis for many spectrum
+1301850~001420~analyzers
+1303270~004060~is to build a really good quality low-pass filter
+1307330~005170~and then use modulation which is often easier to implement use modulation
+1312500~003460~to shift the signal essentially in front of the wind
+1315960~003410~in front of the filter
+1319370~004230~okay well so we've can work their way through
+1323600~003900~modulation with a complex exponential carrier
+1327500~003230~and what we saw
+1330730~004130~among other things with a complex exponential carrier
+1334860~004090~is that in fact what a car sponse to
+1338950~003030~is to
+1341980~003500~branches one being modulation
+1345480~004090~with a cosine and the other modulation with the sign
+1349570~004770~and so in fact in the real world weren't there in a practical system
+1354340~004530~modulation the complex exponential carrier really would be accomplished
+1358870~003990~with modulation with the sinusoidal carrier
+1362860~004060~and in particular with sinusoidal carriers
+1366920~003220~that are in quadrature as its referred to or
+1370140~003740~covertly ninety degrees out of phase
+1373880~003570~okay well you in fact
+1377450~005150~sinusoidal modulation in other words modulation using only a sinusoidal
+1382600~000950~carrier
+1383550~003900~very often is used in its own right
+1387450~004140~not only for for generating a complex exponential carrier
+1391590~004980~but in fact as a carrier by itself
+1396570~003110~well let's looking at what the consequences
+1399680~004930~love modulation with a sinus or to carry or R and a particular
+1404610~003220~work through again what the specter are
+1407830~004570~and how we get the original signal back again
+1412400~004640~soul in we are talking then about a carrier signal
+1417040~003880~which is simply a sinusoidal signal
+1420920~003900~with some phase and of course we can
+1424820~005340~right that as the some love too complex exponential
+1430160~003470~signals and so in effect now
+1433630~004340~when we apply the modulation property we have the original spectrum
+1437970~003220~which a show here accessible maker
+1441190~003860~and that's convolved with the spectrum love the carrier
+1445050~003170~and the spectrum of the carrier in this case
+1448220~003310~is two impulses one at
+1451530~004640~plus Omega see and one at minus Omega see
+1456170~003360~and the amplitudes if these incorporate the phase
+1459530~003400~and later on in the lectured and
+1462930~003430~and to and subsequent lectures all
+1466360~003370~have a tendency to drop that they deserve see just
+1469730~003480~to keep the notation an algebra little cleaner but
+1473210~003170~for now I've incorporated and so now
+1476380~003110~when we apply the modulation property what
+1479490~004900~we will do is convolved this spectrum
+1484390~003150~with this spectrum and the result of course
+1487540~003380~is that the spectrum of the original signal
+1490920~004120~gets replicated at both Omega since the
+1495040~003060~and at minus Omega subsea and
+1498100~003210~the resulting spectrum at the output to the modulator then
+1501310~004330~is the spectrum that I show here
+1505640~003970~okay well now the question of course is
+1509610~004580~see now what's happened is there with a sinus or carrier we've moved
+1514190~004120~the spectrum to both plus i'll make a CD and minus Omega see
+1518310~004450~and now if we want to get the original signal back again
+1522760~004770~well we would like to do somehow is move that spectrum back down
+1527530~004360~to the origin now in the case for complex exponential
+1531890~004040~that was easy to do which shifted one of which is shifted back down
+1535930~004510~let's see what happens if in fact we attempt 2d modulate
+1540440~005480~by again multiplying by the same sinusoidal carrier
+1545920~003040~so let's examine what happens if
+1548960~003770~we now take
+1552730~004730~are modulated signal
+1557460~003600~and again modulated
+1561060~003400~onto the same sinusoidal carrier
+1564460~005020~to generate the output WT if we look at the spectra
+1569480~003240~we have then the
+1572720~004230~modulated spectrum which we had initially
+1576950~004080~and we now want to convey all that again with the spectrum
+1581030~004100~or the carrier signal the specter the carrier signal
+1585130~005120~I indicate here and if you tracked through the convolution which is fairly
+1590250~001340~straightforward
+1591590~004010~then in fact what happens as you can follow this with this
+1595600~003020~is you end up with
+1598620~003990~a composite spectrum which
+1602610~004340~is what i've indicated on the bottom curve and has
+1606950~004400~in effect the spectrum of the original single exit see
+1611350~003470~replicated in three places one
+1614820~003790~is at -2 Omega subsea
+1618610~004610~one is around the origin and wanna shifted up to
+1623220~003240~twice the carrier frequency well
+1626460~004150~it's this piece that we want if we could eliminate everything else
+1630610~004900~and keep this then that would in fact correspond to the spectrum
+1635510~004520~love the signal dead the original signal exit T
+1640030~003130~how do we do that well we know how
+1643160~005040~to eliminate part of the spectrum and keep another part of the spectrum that's
+1648200~002930~called filtering so in fact what we would do
+1651130~003200~is put the result if this
+1654330~005090~through a low-pass filter low-pass filter route would retain the part of
+1659420~000750~the spectrum
+1660170~003720~around DC and eliminate the
+1663890~003310~remaining part of the spectrum so we would keep this part
+1667200~004230~and eliminate the part of the spectrum that we have over here
+1671430~004010~and let me just draw your attention to the fact that because of the way the
+1675440~001740~algebra works out
+1677180~005450~the amplitude love this replication the spectrum is half with the original
+1682630~004530~spectrum was and that means dead
+1687160~004350~ideally to keep scale factors correct we would choose the amplitude this
+1691510~003370~to be to to scale this
+1694880~003940~backup 21 okay so
+1698820~003920~what we have is the modulator and demodulator
+1702740~003300~and just to summarize
+1706040~003140~for the case Ave sinusoidal
+1709180~004270~carrier as opposed to a complex exponential carrier
+1713450~005350~the modulator is just as it is in the complex exponential case
+1718800~004150~its multiplication with the sinusoidal carrier
+1722950~003960~with frequency Omega see if a status
+1726910~004750~see in the d modulator
+1731660~006000~in the D modulator we would take the modulated signal
+1737660~004710~modulated again with the same carrier signal and as we'll see later
+1742370~003750~it's important to keep the same face relationship
+1746120~003730~this result is now not yet quite
+1749850~003640~that the modulated signal we need to process that
+1753490~005170~with a low-pass filter that extracts the part of the spectrum
+1758660~005830~around DC and throws away the upper part of the spectrum the case generated in
+1764490~004130~the second modulation process and the resulting output
+1768620~003060~is the original signal
+1771680~003310~accept T right now
+1774990~003510~what we've done is we've taken X 50 we've
+1778500~004850~modulated it onto a carrier and then we've taken a modulated signal and we
+1783350~002720~figured out how to get back except Ian of course
+1786070~005590~one Caswell if you start with exiting you want to get X thirty back again
+1791660~003820~white by the going through all that why not just use exit see the beginning at
+1795480~001760~the end and obviously
+1797240~004640~their are lots of reasons as i indicated before
+1801880~004190~and just two reiterate what they are
+1806070~003570~the notion of an is that what you'd like to do
+1809640~004340~is shift the signal into a different frequency band
+1813980~003230~for transmission over some medium day
+1817210~003340~is more match to that frequency band
+1820550~003560~then the frequency range the original signal also
+1824110~004240~as I alluded to there's the notion that you can take lotsa signals
+1828350~003570~and transmit them simultaneously over one
+1831920~003780~channel whether the channels a wire a mic wave like a satellite link or
+1835700~000970~whatever
+1836670~003400~again using the idea of modulation
+1840070~004220~and what that process is referred to
+1844290~004750~as is multiplexing and let me just quickly indicate what
+1849040~003400~that multiplexing process corresponds to
+1852440~003630~we could think for example love taking
+1856070~003700~the taking one signal
+1859770~005530~and modulating it on to one carrier
+1865300~003630~with one carrier frequency taking
+1868930~005180~a second signal modulating it onto a different carrier frequency
+1874110~003520~taking a third signal and modulating it
+1877630~003330~onto a third carrier frequency et cetera
+1880960~004150~and if we choose these carrier frequencies
+1885110~005280~appropriately then in fact weekend and all those together
+1890390~003170~and do it in such a way that the specter don't overlap
+1893560~003160~an end up with one broader band signal
+1896720~003400~that incorporates the information
+1900120~003430~simultaneously in all of those
+1903550~006280~signals so just to illustrate that in the frequency domain
+1909830~005050~what we have let's say RR three spectra xaxa
+1914880~003820~the Annex E and we would for example take
+1918700~003270~this spectrum and modulated
+1921970~003870~to a carrier frequency Omega sed est
+1925840~005210~we can take this spectrum and modulate it to a carrier frequency Omega sabi
+1931050~003430~where Omega sabi is chosen so that
+1934480~003210~when we and these two together they don't overlap
+1937690~004090~so that they can eventually be separated out and then of course we can do the
+1941780~000920~same thing
+1942700~004610~with the third signal and put that in a frequency range over here
+1947310~003040~be careful that none of those overlap
+1950350~003790~and lonely and all those together the composite spectrum
+1954140~003590~is what I show here and
+1957730~003890~as you can see essentially
+1961620~003920~by doing appropriate bandpass filtering
+1965540~004550~we can pull at whatever part of the spectrum we choose to
+1970090~003020~and then d modulate that in the appropriate way
+1973110~003900~of course we can do this not just with three signals but perhaps with
+1977010~004070~tens or hundreds of signals so that's a process
+1981080~005170~dead is typically referred to as multiplexing and as i've described here
+1986250~004150~it's referred to as frequency division multiplexing
+1990400~004530~that is dividing the frequency band into cells and plucking
+1994930~004650~different signals into each one of those
+1999580~004120~and in so if we want now to recover one of those channels
+2003700~003240~in a frequency division multiplexing system
+2006940~004110~as i indicated we would first d multiplex
+2011050~003570~the multiplexing corresponding to pulling out
+2014620~005410~the appropriate channel with a bandpass filter
+2020030~003710~and after D multiplexing we would then
+2023740~003720~d modulate and we would be modulated
+2027460~004900~with the carrier appropriate to the channel that we've pulled out
+2032360~003450~and the the modulation of course
+2035810~003690~involves multiplying by the carrier and doing appropriate
+2039500~004030~low-pass filtering to finally get the signal back
+2043530~003360~and frequency division multiplexing
+2046890~004029~is one of those things that is
+2050919~004881~are its it's a fact which uses the typeof multiplexing issues for example
+2055800~003720~in typical broadcast a.m.
+2059520~003690~radio systems where all the channels are superimposed
+2063210~004000~together and it's your home radio receiver that does the appropriate the
+2067210~002550~multiplexing in the modulating
+2069760~004059~and of course you can see that not only is modulation an important part
+2073819~004661~of that but as I alluded to in the last lecture filtering
+2078480~006990~also becomes an important part love these practical systems
+2085470~004730~okay now the kinda amplitude modulation
+2090200~003070~that i've talked about so far
+2093270~003080~is what's referred to as
+2096350~003490~synchronous modulation and
+2099840~003480~the reason for the term synchronous is dead in fact
+2103320~003110~what's implied in the system's
+2106430~003840~is a synchronization between
+2110270~004140~the transmitter and receiver in particular
+2114410~004250~in the system as we've talked about it
+2118660~003060~the modulator
+2121720~003340~and the D modulator
+2125060~003690~have a synchronization in
+2128750~004920~both frequency and phase the face here is indicated status if C
+2133670~004510~and if we take a look at the D modulator
+2138180~003300~the the modulator has a
+2141480~003430~phase love status subsea
+2144910~003450~and in general
+2148360~003970~there's the issue love whether we cannot maintain that synchronization between
+2152330~002520~the modulator and demodulator
+2154850~003200~and so what we want to examine now
+2158050~003830~more generally is what the consequences might be
+2161880~003070~and the solution to the resulting problems
+2164950~003390~if in fact we don't have synchronization
+2168340~003050~between the modulator and demodulator
+2171390~003410~synchronization in terms of phase and
+2174800~003290~they're also by the way is another problem which is the issue
+2178090~001920~synchronization
+2180010~003190~in frequency thats examine more in
+2183200~004280~the text and one of focus on here is just the issue synchronization it face
+2187480~001230~to give you some sense of
+2188710~003230~what the issue is okay well
+2191940~005860~so now what we want to look at is what happens if we have a modulator
+2197800~003300~with face status at sea
+2201100~004130~and it D modulator where the phase instead if a is
+2205230~003270~said being status if C is some other phase
+2208500~007000~the subsea and if you tracked through the details and the algebra
+2215730~006280~then what you'll find is dead in fact the output love the low-pass filter
+2222010~004460~rather than being XFT the signal that we want
+2226470~004200~is X if T multiplied by a scale factor
+2230670~004120~and the scale factor is the cosigner the phase difference
+2234790~004020~now one can ask okay well what's the big deal about
+2238810~003390~a scale factor if it's too small will make it bigger purse to be will make it
+2242200~001390~small
+2243590~004830~but there's several points 1 is notice for example that if the phase difference
+2248420~000940~between
+2249360~003400~much later and the modulator is 90 degrees
+2252760~004140~then in fact the output at the modulator
+2256900~004700~or if it isn't quite ninety degrees the amplitude might be small
+2261600~003290~and the implication would be a that if there's other noise that gets injected
+2264890~001240~in the system
+2266130~004110~the signal to noise ratio is very low now even worse
+2270240~003970~is the issue that if
+2274210~003960~in fact there's a phase difference but the exact phase differences and
+2278170~001230~maintained
+2279400~005140~so that the modulator and demodulator kinda fade in and out of phase
+2284540~003920~then in fact the output at the modulator
+2288460~004140~is x50 multiplied
+2292600~004900~by a time-varying fading term which is the cosigner the phase difference
+2297500~003270~well what that means essentially is dead
+2300770~004630~if you use this kind of system to do that the modulation
+2305400~003640~then in fact what you need to be careful about is
+2309040~006410~maintaining synchronization in phase and also is it turns out a frequency between
+2315450~003940~the modulator and demodulator
+2319390~004830~now there are alternatives to this
+2324220~003940~and the alternative is what's referred to as
+2328160~003100~a synchronous the modulation and
+2331260~003290~let me indicate what the idea behind a synchronous
+2334550~003200~the modulation is
+2337750~003450~now recall the what we've done in amplitude modulation
+2341200~004440~is to take the carrier signal and very its ample to
+2345640~003420~with the signal that eventually we want to get back
+2349060~004220~so if we look at the amplitude modulated waveform it might
+2353280~003600~typically look as i indicated here
+2356880~004370~and what we're trying to get back is we're trying to get back
+2361250~003420~the envelope well one could imagine
+2364670~004310~building a circuit or designing a device which in some sense will
+2368980~003250~tracked the envelope and in fact a
+2372230~004310~common circuit to do that is a fairly simple
+2376540~003180~circuit consisting love a diode
+2379720~003220~and a resistor and capacitor in parallel
+2382940~004540~kinda the idea being that the capacitor charges up
+2387480~003460~as this way for moves up to its p
+2390940~005030~and then as the way for drops down the capacitor discharges through the
+2395970~001530~resistor and
+2397500~004110~it kinda tracks the envelope in fact the kinda output
+2401610~003170~that we would get is the type of behavior that
+2404780~005050~i've indicated here and in fact than that is
+2409830~003270~a type all the modulation it
+2413100~004150~it's the modulation that doesn't require synchronization between
+2417250~003110~the modulator and demodulator and
+2420360~005020~it's fairly inexpensive to build
+2425380~003210~but it has obviously some
+2428590~003120~trade-offs associated with it well
+2431710~004850~to can indicate where the trade-off comes from or where the issue surfaces
+2436560~003570~notice the what we're doing is tracking
+2440130~003300~the envelope with the sinusoidal signal
+2443430~003720~and we're calling mad or we're suing the back is our regional
+2447150~003240~signal exit T
+2450390~003729~well suppose that XFT
+2454119~004931~the original signal is sometimes positive and sometimes negative
+2459050~003060~what might we see as we look
+2462110~005380~at the output out the modulator well the output at the modulator would've course
+2467490~003170~follow the envelope down and
+2470660~003280~then it would follow the envelope back up again
+2473940~003070~in other words what would tend to generate is
+2477010~004320~a full-wave rectified version all the signal that you were really trying to
+2481330~001280~get back
+2482610~003509~now there's a simple solution to this the simple solution
+2486119~003171~is to make sure that the signal
+2489290~003070~that is the modulating signal XFT
+2492360~003330~never goes negative so if it happens to
+2495690~004100~voice signal happens tends to go negative that happens to
+2499790~003180~we can simply at a constant to it and and a
+2502970~003740~watchin of constant so that it always stays positive
+2506710~003200~well let's look at that in the
+2509910~005660~what we want to do then if we're considering a synchronous the modulation
+2515570~006310~is to take our original signal x50
+2521880~004080~and and to it a constant
+2525960~004320~where the constant is made large enough so they were sure
+2530280~003030~that this is a positive signal
+2533310~002890~and it's a really let me just draw your attention to the fact that I'm now
+2536200~001520~suppressing
+2537720~003440~the phase on the carrier signal since
+2541160~003920~the phase is not important to the argument and it's just some additional
+2545080~002230~notation to carry around
+2547310~004730~now so the the idea then is an a constant exit see
+2552040~005950~notice that if we just take this term and expanded out into two terms
+2557990~005740~accept a cosigner Omega CT plus eight times cosine Omega CT
+2563730~006700~then in block diagram terms we can we can represent that as i've shown here
+2570430~004170~and so it would correspond to modulating the signal
+2574600~004140~accept T onto the carrier Omega some CT
+2578740~003680~and also injecting some carrier
+2582420~004850~with an amplitude a and the output at the modulator is then the summer those
+2587270~001650~two
+2588920~004140~and the tech depending on exactly what this value a is
+2593060~003590~will influence what the envelope a look like
+2596650~004480~and I indicate below to possibilities
+2601130~003780~one is where I'd made a fairly large
+2604910~004410~and one is where I've made a significantly smaller
+2609320~005670~and their are both positive and negative issues associated with whether a is too
+2614990~001860~large a raise too small
+2616850~003380~for example if a is small
+2620230~003840~in relation to the amplitude
+2624070~005330~love the signal then %uh rather pay is large in relation to the airport to the
+2629400~001110~signal
+2630510~005380~then this envelope tends to be very flat and it tends to be easy to track it with
+2635890~002610~that simple diode RC circuit
+2638500~004950~as compared with the case down here
+2643450~004560~on the other hand their is a price that you pay
+2648010~005320~for this kind event below and the price that you pay is perhaps best seen in the
+2653330~002400~frequency domain
+2655730~003400~if we look in the frequency domain here
+2659130~003460~is our original spectrum
+2662590~003140~here is the spectrum at the output
+2665730~004320~%uh the modulator and the impulse that occurs here
+2670050~003460~corresponds to the carrier this injected
+2673510~004010~the larger a is the more carrier is injected
+2677520~003050~the more carrier thats injected
+2680570~003200~the easier it is for the envelope detector
+2683770~003140~2d modulate so
+2686910~003130~one can ask well why not just put a lot in well
+2690040~003880~the obvious answer is dead
+2693920~004210~it's not and information carrying part but the signal
+2698130~004840~and so in some sense it represents inefficiency in transmission because
+2702970~003850~what you're transmitting is power energy
+2706820~003660~that doesn't have any information associated with it is simply the
+2710480~001930~injection of a carrier
+2712410~003440~to make d modulation for a
+2715850~003580~an AC Christie modulator the modulator to make
+2719430~004200~the the modulation easier
+2723630~003220~and so there's this trade off and in fact one
+2726850~004360~kinda represents the trade-off and the Pratt Associated primers very often
+2731210~002400~returns a percent modulation
+2733610~003410~where the percent modulation is
+2737020~005870~a the essentially the ratio the maximum signal level
+2742890~004479~to the amplitude love the injected carrier
+2747369~003631~and depending on whether
+2751000~003550~the modulations very high or very low the trade-off
+2754550~004920~is dead the transmission is more efficient and it takes more energy but
+2759470~001730~the modulator is simpler
+2761200~003620~or the modulators more complicated but
+2764820~004630~the transmission is simply now there are situations where you might very well
+2769450~003040~want to use one or the other for example
+2772490~003290~in home radio your
+2775780~003050~of unwilling to transmit a lot of power
+2778830~005250~so that you can have inexpensive consumer-oriented receivers
+2784080~003320~on the other hand in satellite communication you willing
+2787400~005030~to pay a very high price for the modulators and D modulators
+2792430~003050~but its the amount of power that's transmitted
+2795480~005610~that's at a premium and so in one case satellite communication you use
+2801090~004590~synchronous modulation and demodulation where isn't typical consumer-oriented
+2805680~001810~broadcasting
+2807490~003520~you would use a sink in a synchronous system and
+2811010~003100~Jenna and transmit more power even
+2814110~004009~transfer more power even if it's inefficient so that the D modulator
+2818119~005021~can be simply now
+2823140~004200~in a synchronous system then as we've indicated there's one source of
+2827340~001570~inefficiency which
+2828910~003880~is this injection at the Carrier there also
+2832790~003079~is a somewhat different issue
+2835869~005281~related to inefficiency in sinusoidal amplitude modulation
+2841150~003300~and its inefficiency that is
+2844450~004520~separate from the issue synchronous first is a synchronous systems in other
+2848970~002190~words it's not associated with
+2851160~004240~the injection of the carrier its a very different issue
+2855400~003790~let me indicate what that is let's look again
+2859190~003170~in at the spectrum love
+2862360~003610~X 50 which i've indicated here
+2865970~004380~and in a sinusoidal amplitude modulation system
+2870350~003940~we would shift this to
+2874290~004319~are centered around plus and minus the carrier frequency
+2878609~003000~now notice there in the original system we
+2881609~005311~occupier frequency spectrum thats two times Omega Savannah M
+2886920~003260~by the time we've shifted it we've used up
+2890180~003050~thinking a positive and negative frequencies we've used up
+2893230~004820~twice as much all the frequency spectrum
+2898050~004930~well you could say okay let's let's just shift this up this way and
+2902980~004879~get rid of this part that's of course what the complex exponential carrier did
+2907859~004031~and the issue there really is that now you've got to transmit both the real
+2911890~003200~part an imaginary part
+2915090~003240~so what you can think about and ask is
+2918330~003590~if you still want to transmit a real-valued signal
+2921920~004410~happen you somehow remove the inefficiency or redundancy in the
+2926330~001210~spectrum
+2927540~003170~well notice that what we have is
+2930710~004350~this spectrum moved here and moved here
+2935060~004059~and we could imagine building a
+2939119~003071~real-valued signal by
+2942190~004390~eliminating what I refer to here as the lower sideband
+2946580~003840~I have the positive frequencies and the lower sideband
+2950420~003290~otto's the negative frequencies
+2953710~003880~and in effect what we've done is taken
+2957590~004470~just the positive frequencies here shifted them there
+2962060~003000~the negative frequencies here and shifted them here and the resulting
+2965060~000799~spectrum
+2965859~003121~is what I indicate below
+2968980~003860~well this in fact is what is often done
+2972840~004180~and what is referred to as is single sideband
+2977020~003030~what we've done is we've kept the upper sideband
+2980050~004280~in this particular case we could alternatively by the way
+2984330~003150~think love putting this system together
+2987480~003520~where we retain the lower
+2991000~003250~sideband instead of the upper sideband
+2994250~003560~and in either case well we removed is
+2997810~003880~and inefficiency in transmission at the signal
+3001690~004260~namely we have a real value signal but it only requires as much
+3005950~003650~total band with the terms thereof the frequencies that I
+3009600~003350~that in which there's energy president as
+3012950~004980~the original sick well how do we do this there are a variety of ways
+3017930~003340~in and there's one procedure that is
+3021270~004250~discussed in more detail in the text which uses was referred to as a
+3025520~002110~90-degree face splitter
+3027630~004520~the simplest way at least conceptually is to think about doing it with
+3032150~003590~filtering and the idea simply
+3035740~004050~is dead if we have are modulated signal
+3039790~003770~here's the spektr on the modulated signal and if that modulated signal is
+3043560~001160~simply put through
+3044720~003639~a high pass filter than the result
+3048359~003381~will be to eliminate
+3051740~004400~the lower sideband if we choose the high-pass filter
+3056140~003410~to have a characteristic as I indicate here
+3059550~004250~so this course conceptually is a very sharp cutoff filter
+3063800~004580~and what it eliminates are the lower side bands and the resulting spectrum
+3068380~003420~is what we have below
+3071800~005200~and this in fact is really kind of the basic idea
+3077000~003100~behind single sideband transmission
+3080100~004190~again there's a trade-off it's clearly more efficient
+3084290~003920~then double sideband transmission
+3088210~003620~but also has the complication
+3091830~004300~or additional issue dead the modulator becomes a little more complicated
+3096130~001500~because you need
+3097630~004220~this filtering operation or some equivalent operation to get rid of the
+3101850~004330~unwanted side
+3106180~003340~okay well this is a fairly quick
+3109520~004500~tour through a variety of issues related to modulation
+3114020~004110~and it really is just the tip of the iceberg obviously
+3118130~003190~modulation in the context so sinusoidal
+3121320~003590~modulation as we talked about has
+3124910~004120~in fact the lotto detailed issues associated with it
+3129030~003670~it's important to recognize day at
+3132700~003140~and to be somewhat pleased by the fact dead
+3135840~004840~not only with the mathematical foundations that we've developed
+3140680~005160~can we understand the basics of sinusoidal amplitude modulation but in
+3145840~000769~fact
+3146609~003441~what you'll find issue if you
+3150050~004390~dig into this somewhat deeper that the basic background that we've built up so
+3154440~001480~far
+3155920~003400~the mathematical tools are really
+3159320~003820~pretty much what you need for a much deeper understanding
+3163140~004060~love all the issues involved
+3167200~006460~so from a what might have seemed like a fairly abstract mathematical property
+3173660~003580~associated with the Fourier transform we've begun
+3177240~004119~to develop what should give you the sense that some
+3181359~003641~important practical considerations
+3185000~003740~and as we'll see in the next lecture
+3188740~003780~very much the same kinds of notions apply a
+3192520~004240~for discrete-time sinus oil on complex exponential
+3196760~005020~amplitude modulation and also as i indicated at the beginning at the
+3201780~001160~lecture
+3202940~005190~in the next lecture will also talk about what's referred to as possible to
+3208130~002590~modulation it's a different kind of carrier
+3210720~004460~and what that will lead to among other things
+3215180~003460~is a very important bridge
+3218640~003860~between the notions of continuous-time
+3222500~002869~and the notions of discrete-time thank you

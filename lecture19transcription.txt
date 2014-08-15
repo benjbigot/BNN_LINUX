@@ -1,0 +1,770 @@
+000040~003450~the following content is provided under a Creative Commons license
+003490~003639~your support will help MIT OpenCourseWare continue to offer
+007129~003451~high-quality educational resources for free
+010580~003780~to make a donation or view additional materials from hundreds of them IT
+014360~000670~courses
+015030~003080~visit MIT OpenCourseWare at 0 CW
+018110~007000~that MIT that EDU ha the
+029040~004990~the
+034030~006650~the in
+040680~007000~the new the in the last lecture we discussed discrete-time processing of
+058960~001559~continuous-time signals
+060519~004360~and as you know the basis for that arises essentially out at the sampling
+064879~004571~there now in that context and also in its own right
+069450~003320~another important sampling issue is
+072770~005269~the sampling love discrete-time signals in other words the sampling a sequence
+078039~004201~one comic context in which this arises for example
+082240~003669~is if we've converted from a continuous-time signal
+085909~003531~to a sequence and we then
+089440~004489~carry out some additional filtering then there's the possibility
+093929~003411~day we can re sable that sequence and as we'll see as we go through the
+097340~000860~discussion
+098200~003250~save something in the way of storage or whatever
+101450~003599~so discrete-time sampling
+105049~003850~as a indicated has important application
+108899~003991~in a context referred to here namely re sampling
+112890~003509~after discrete-time filtering and
+116399~003710~closely related to that as well indicate in this lecture
+120109~003981~is the concept love using discrete time sampling
+124090~003309~for what's referred to as sampling rate
+127399~003530~conversion and also closely
+130929~004221~associated with both those ideas is a
+135150~004440~set of ideas that I'll bring up in today's lecture referred to as
+139590~004780~decimation and interpolation love discrete-time signals are sequences
+144370~003570~now the basic process for
+147940~005530~discrete-time sampling is the same as it is for continuous-time sampling
+153470~003889~namely we can analyze it and set it up
+157359~003350~on the basis love multiplying or modulating
+160709~003780~a discrete-time signal by an impulse train
+164489~004131~the impulse train essentially or pulse train pulling out
+168620~003320~sequence values at the times that we want to sample
+171940~004400~so the basic block diagram for the sampling process
+176340~003799~is to modulator multiply
+180139~003530~the sequence that we want to sample by
+183669~003350~an impulse train and here
+187019~003250~near Paul strain has imposed a space by
+190269~005201~integer multiples of capital N this then becomes the sampling period
+195470~003630~and the result is that modulation is then
+199100~004759~the sample sequence X appear vent so
+203859~005370~if we just look at what a sequence in a sample version of that sequence might
+209229~000660~look like
+209889~005641~well we have here is an original sequence exit Van
+215530~003229~and then we have the
+218759~003940~sampling imposed strain or sampling sequence
+222699~004010~and it's the modulation or product if these two
+226709~003870~that gives us the sample sequence X appear van
+230579~003671~and so as you can see multiplying this by this
+234250~004530~essentially pulls out love the original sequence
+238780~003660~sample values at the times that this post rain is on
+242440~004990~and of course here I've drawn as for the case where capital and
+247430~003059~the sampling period is equal to 3
+250489~003101~now the
+253590~003440~analysis love discrete-time sampling is
+257030~004310~very similar to the analysis of continuous-time sampling
+261340~006180~and let's just quickly look through the steps that are involved where
+267520~004700~modulating are multiplying in the time domain and what that corresponds to
+272220~003759~in the frequency domain is a convolution and
+275979~003371~so be spectrum
+279350~003039~love the sample sequence
+282389~003650~is the periodic convolution love the spectrum
+286039~003481~love the sampling sequence and
+289520~004690~the spectrum love the sequence that were sampling
+294210~005460~and since the sampling sequences in Nepal strain
+299670~003850~as we know the 48 transform over Nepal strain
+303520~005190~is itself an impulse train and so this is the Fourier transform
+308710~003280~love the sampling sequence
+311990~004230~and now finally the four EA transform
+316220~004590~love the resulting sample sequence being the convolution
+320810~005480~love this with the Fourier transform the sequence that were sampling
+326290~005360~gives us then spectrum which consists of a some
+331650~004430~love replicated versions of the Fourier transform above the sequence that were
+336080~001890~sampling
+337970~004430~in other words what we're doing very much as we did in continuous-time
+342400~004700~is through the sampling process when we look at it in the frequency domain
+347100~004370~taking the spectrum all the sequester were sampling
+351470~003060~and shifting it and then adding it in
+354530~004380~shifting it by editor multiples of the sampling frequency
+358910~003390~in particular looking back at this equation
+362300~003630~what we recognize is that this term
+365930~004020~k times to pile over capital and is in fact
+369950~004510~integer multiple love the sampling frequency
+374460~003110~and the same thing is true here this
+377570~003569~is K times Omega so badass
+381139~003651~where Omega so badass the sampling frequency
+384790~005770~is to pie divided by capital and
+390560~003630~alright so now let's look at what this means
+394190~003340~pictorially are graphically in the frequency domain
+397530~003130~and as you can imagine since the analysis
+400660~004770~and algebra is similar to what happens in continuous-time
+405430~003780~we would expect the pictures to more or less be identical to
+409210~003050~what we've seen previously for continuous-time and indeed that's the
+412260~001400~case
+413660~003259~so here we have the
+416919~003541~spectrum love the signal that were sampling
+420460~005740~this is for EA transform with an assumed highest frequency of Omega Savannah M
+426200~003240~highest frequency over to fire a range or over Ranger
+429440~004970~higher at their and now the spectrum of the
+434410~003479~sampling signal is
+437889~003201~what I show below which is an impulse train
+441090~004220~with impulses occurring at multiples integer multiples of the sampling
+445310~001950~frequency
+447260~003230~and fan finally the convolution
+450490~003000~up these two is simply this: one
+453490~004440~replicated at the locations if these impulses
+457930~003680~and so that's finally what I show below
+461610~004670~and here are chosen one I've made one particular choice
+466280~004430~for the sampling period this in particular corresponds to
+470710~004050~a sampling period which is
+474760~004159~capitol lawn equal to
+478919~004011~three and so the sampling frequency
+482930~003340~Omega so badass is to pie
+486270~003190~divided by three
+489460~004850~right now when we look at this what we recognize
+494310~003960~is dead we have basically the same issue here
+498270~003600~as we had in continuous time in the sense that
+501870~006620~when these individual replications of the 48 transform
+508490~003390~when a fit when the sampling frequency is chosen high enough so that they don't
+511880~001240~overlap
+513120~004419~than we see the potential for being able to get one of them back
+517539~003591~on the other hand when they do overlap then what will have
+521130~003079~is a daily as saying in particular discrete-time aliasing
+524209~003841~much as we had continuous time a leasing in the continuous-time case
+528050~003130~well notice in this picture dead
+531180~004420~what we have is we've chosen this pictures so that
+535600~003770~Omega sieve ass minus Omega 7 a.m.
+539370~005860~is greater than Omega Savannah am work with alertly so that Omega Sebastian is
+545230~001330~greater than
+546560~003660~to Omega to Omega
+550220~005940~so am and so with Omega serve as greater than 20 may get to them that corresponds
+556160~001560~to this picture
+557720~003729~whereas if that condition is violated
+561449~003271~than in fact the picture that we would have
+564720~004200~is a picture that looks like this and in this picture
+568920~004820~the individual replications of the four EA transform
+573740~004849~of the original signal overlap and we can no longer
+578589~004420~recover the for EA transform the original signal
+583009~003770~and this just as it was in continuous-time
+586779~004040~is referred to as alias
+590819~005740~now let's look more closely at the situation in which there is no aliasing
+596559~004020~and so in that case
+600579~004500~what we have is a Fourier transform
+605079~003310~for the sampled
+608389~004800~signal which is as i indicated here
+613189~003180~and the Fourier transform for the original signal
+616369~003400~as i indicated at the top and
+619769~003880~the question now is how do we recover this one from this one
+623649~004831~well the way that we do that just as we did in a continuous-time case
+628480~004039~is by low-pass filtering in particular
+632519~003760~processing in the time domain or in the frequency domain
+636279~003920~this where and idea low-pass filter
+640199~003140~has the effect of extracting that part
+643339~004440~the spectrum dead in fact we identify
+647779~003211~with the original signal that we
+650990~004089~began so
+655079~004000~what we see it again is that the process is very much the same as long as there's
+659079~001221~no aliasing
+660300~003240~we can recover the original signal by
+663540~003200~ideal low-pass filtering so
+666740~003120~the overall system is
+669860~003449~just to reiterate a system which
+673309~003351~consists love modulating
+676660~003250~the original sequence with
+679910~003049~appall strainer and Paul strain
+682959~004201~and then that is going to be processed
+687160~003229~with a low-pass filter
+690389~003771~the spectrum love the original signal X a van
+694160~005849~is what I show here the spectrum of the sampled signal where I'm drawing the
+700009~003630~picture on the assumption that the sampling period is 3
+703639~003351~is now what's indicated where these are replicated
+706990~003349~where the original spectrum is replicated
+710339~004120~this is now processed through a filter
+714459~003320~which for exact reconstruction
+717779~003400~is an ideal low-pass filter
+721179~003611~and so we would multiply this spectrum by this one
+724790~004039~and the result after doing that will generate
+728829~003920~a reconstructed spectrum which in fact is identical
+732749~003820~to the original so the time domain
+736569~004921~picture is the same I'm sorry the frequency domain pictures the same
+741490~003300~and what we would expect and is that the time to me
+744790~004579~picture would be the same well lets in fact look at the time domain
+749369~003431~and in the time domain what we have
+752800~005550~is an analysis more less identical to what we had in continuous-time
+758350~003000~we've course have the same system
+761350~003940~and in the time domain we r multiplying
+765290~003440~by an impulse train consequently
+768730~003909~the sample sequence is
+772639~003310~and impose train whose values are
+775949~005430~samples affects a van at integer multiples of capital and
+781379~003400~for the reconstruction this is
+784779~005430~now process through idea low-pass filter
+790209~003660~and that implements the convolution in the time domain
+793869~003520~and so the reconstructed signal is the convolution
+797389~003031~of the sample sequence and
+800420~003039~the filter impulse response and
+803459~003511~expressed another way namely writing at the convolution is
+806970~003989~some we have this expression and so it says then
+810959~003040~that the reconstruction is carried out
+813999~004960~by replacing the impulses here
+818959~003990~these impulses by versions of the
+822949~004341~filter impulse response
+827290~004769~well if the filter is an ideal 0 pass filter
+832059~004791~then that corresponds in the time domain to assign an ex
+836850~004419~over sin x kinda function and that is the interpolation
+841269~004461~in between the samples to do the reconstruction
+845730~004669~also as is discussed some white in the text we can
+850399~003170~consider other kinds of interpolation for example
+853569~005050~discrete-time zero-order hold or discreet I first-order whole just as we
+858619~001780~had in continuous-time
+860399~003850~and the issues and analysis for the discrete-time zero-order hold the
+864249~001380~first-order hold
+865629~005161~are very similar to what they were in continuous-time the zero-order hold
+870790~003419~just simply holding the value until the next sampling instant
+874209~003820~and the first-order hold carrying out linear interpolation
+878029~004360~in between the samples
+882389~004010~now in this sampling process
+886399~004680~if we look again at the way forms involved
+891079~003790~or sequences involved the process consisted
+894869~003060~love taking a sequence
+897929~003140~and extracting from it
+901069~005000~individual bad news and
+906069~004851~in between those values we have sequenced values equal to 0
+910920~003169~so what we're doing in this case
+914089~003511~is retaining
+917600~003429~the same number sequence values and simply setting
+921029~004160~some number of them equal to 0
+925189~004130~well let's say for example that we want to carry out
+929319~004250~sampling and what we're talking about is sequence and let's say the sequence
+933569~002601~stored in a computer memory
+936170~003440~as you can imagine the notion love sampling it
+939610~004159~and actually replacing some with the values by zero
+943769~003620~is somewhat inefficient namely it doesn't make sense to think of storing
+947389~001880~the memory a lot of zeros
+949269~003130~when in fact those zeros that we can always put back in
+952399~004170~we know exactly with the values are and if we know what the sampling
+956569~003310~rate was in discrete-time then we would know
+959879~003180~when and how to put the zeros back in
+963059~003950~so actually in discrete-time sampling
+967009~003070~what we've talked about so far is really only one
+970079~003680~part for one step in the process basically the other
+973759~003800~step is to take those zeros just throw them away because
+977559~004530~we can put them in any time we want to and really only retained for example
+982089~004710~in our computer memory or less than sequence values or whatever
+986799~004040~only retain the non-zero values
+990839~004680~so that process and the resulting sequence that we end up with
+995519~003480~is associated with a concept called estimation
+998999~003050~what I mean by destination is very simple
+1002049~003400~what we're doing is instead of working with
+1005449~004721~this sequence we're going to work with this sequence
+1010170~003219~namely well toss out zeros
+1013389~003591~in between here and collapse the sequence
+1016980~003279~down only to the sequence values
+1020259~003540~that are associated with the original X event
+1023799~003691~now in talking about a decimated sequence
+1027490~004930~we could of course do that directly from misstep down to hear
+1032420~003250~although again in the analysis it will be somewhat
+1035670~003370~more convenient to carry that out by
+1039040~004799~thinking at least analytically interns with two step process
+1043839~003161~one being a sampling process then the other being
+1047000~003290~the destination but basically this is
+1050290~003320~decimated version %uh that now
+1053610~003990~for the grammatical purists out there
+1057600~003850~the word estimation of course means taking every 10 won the implication is
+1061450~001390~not dead
+1062840~003719~were always sampling with a period of 10 the idea decimating
+1066559~006071~is to pick out every and sample and end up with a collapsed sequence
+1072630~004310~right now let's now look at a little bit in the analysis
+1076940~005760~and understand what the consequences in the frequency domain
+1082700~003160~in particular what we want to develop is
+1085860~004260~how the Fourier transform the decimated sequence
+1090120~003320~is related to the Fourier transform
+1093440~003030~of the original sequence or the sample sequence
+1096470~004400~so let's look at this in the frequency domain
+1100870~003000~and so what we have is a
+1103870~003610~decimated sequence which consists
+1107480~004780~love pulling out every capital and bad you affect the van
+1112260~004169~and of course that's in the same as we can either decimate x7
+1116429~004281~or we can decimate the sample sick
+1120710~004290~now in going through this analysis
+1125000~003549~all kinda go through it quickly because again
+1128549~003220~there's the issue with some slight mental gymnastics and if
+1131769~004951~you're anything like I am it's usually best to kinda try to absorb at
+1136720~003699~by yourself quietly rather than having somebody throw it at you
+1140419~003321~let let me say though that that the steps that are following here are
+1143740~001429~slightly different
+1145169~003461~and the steps that I use in the tax is slightly different wave
+1148630~004630~I'll going through the analysis I guess you could say for one thing that
+1153260~003730~if we go through it twice and it comes out the same well of course it has to be
+1156990~001890~right
+1158880~004039~well anyway a here we have
+1162919~003291~then the relationship between the decimated sequence
+1166210~003089~the original sequence and the
+1169299~003220~sample sequence and we know of course that
+1172519~003030~the Fourier transform love the sample sequence
+1175549~003691~is just simply this nation and now
+1179240~003370~the kinda the idea in the analysis is
+1182610~003090~that we can collapse this summation
+1185700~003469~by recognizing bat this
+1189169~003401~term is only non-zero
+1192570~004739~at every and value and so if we do that
+1197309~004480~essentially making a substitution variables with an equal to small and
+1201789~001480~times capital and
+1203269~003010~we can turn this into a summation on am
+1206279~003791~and that's what I've done here and
+1210070~003800~we've just simply use the fact that we can collapse the some
+1213870~006250~because the fact is dead that all but every and values equal to 0
+1220120~003870~so this then is the Fourier transform all the sample
+1223990~006000~signal and now if we look at the Fourier transform of the
+1229990~005590~decimated signal that for EA transform of course is this summation
+1235580~003050~on the decimated sequence
+1238630~003830~well what we want to look at is a correspondence between this equation and
+1242460~001339~the one above it
+1243799~003990~so we want to compare this equation to this one
+1247789~004651~and recognizing that this decimated sequences just simply
+1252440~005280~related to the sample sequence this way
+1257720~003630~these two become equal under
+1261350~003159~a substitution variables in particular notice
+1264509~003231~that if we replace in
+1267740~003439~this equation Omega by
+1271179~004980~Omega times capital and and these two equations become equal
+1276159~004980~so the consequences that then what it all boils down to and says
+1281139~004711~is that the relationship between the
+1285850~004120~decimated the Fourier transform the decimated sequence
+1289970~004049~and the Fourier transform the sample sequence is simply
+1294019~003111~a frequency scaling corresponding
+1297130~003480~to dividing the frequency axis by capital and
+1300610~004299~so thats essentially what happens that's really all
+1304909~003150~that's involved in the destination process and now
+1308059~004500~again let's look at that pictorially and see what it means
+1312559~004250~so what we want to look at now that we've looked in the time domain
+1316809~003291~in this particular you graph we
+1320100~004340~now wanna look in the frequency-domain
+1324440~003310~and in the frequency domain we have
+1327750~003320~again the
+1331070~004630~Fourier transform of the original sequence
+1335700~003319~and we have the Fourier transform
+1339019~004331~or the sample sequence
+1343350~003240~and now the 48 transform of the
+1346590~003000~decimated sequence is simply this
+1349590~005230~spectrum with a linear frequency scaling
+1354820~004630~and in particular it's simply car sponsor multiplying this frequency axis
+1359450~001609~by capital and
+1361059~004171~and notice noticed that this frequency now
+1365230~003260~to pry or capital and that frequency
+1368490~003360~ends up getting rescaled
+1371850~003929~to a frequency love to pie
+1375779~003980~so in fact now in the rescaling
+1379759~003250~its at this point in the decimation
+1383009~004201~gets rescaled to this point
+1387210~003230~and correspondingly of course the sole spectrum
+1390440~003099~broadens out now we can also look at that
+1393539~004691~in the context of the original spectrum and you can see that the relationship
+1398230~004770~between the original spectrum and the spectrum the decimated signal
+1403000~003710~corresponds to simply linearly scaling
+1406710~003170~yes but it's important also
+1409880~004649~to keep in mind dead that analysis
+1414529~004051~that particular relationship assumes that we've avoided aliasing
+1418580~004059~the relationship between the specter the decimated signal
+1422639~004890~and the spectra the sample signal is true whether or not we have a leasing
+1427529~003510~but being able to clearly associated with
+1431039~003370~just simply scaling love this spectrum
+1434409~003650~the original signal assumes that the spectrum
+1438059~003811~the original signal shape the shape of it is preserved
+1441870~004750~when we generate the sample sick
+1446620~006309~okay well when my eight discrete-time sampling and for that matter decimation
+1452929~005350~the use well i indicated one context in which it might be useful
+1458279~003600~at the beginning at this lecture and let me now focusing on that
+1461879~003871~a little more specifically
+1465750~003500~in particular suppose that we have
+1469250~004009~going through a process
+1473259~006920~in which the a continuous-time signal has been converted to a discrete-time
+1480179~001541~signal
+1481720~003179~and we then carry out some additional discrete-time
+1484899~004831~filtering so we have a situation where we've gone through a continuous to
+1489730~003010~discrete-time conversion
+1492740~004789~and after that conversion we carry out some discrete-time
+1497529~003610~filtering and so
+1501139~004000~and in particular and going through this part of the process
+1505139~003051~we choose the sampling rate for
+1508190~004040~going from the continuous-time signal to the sequence
+1512230~003480~so that we don't violate the sampling there
+1515710~003349~well let's suppose then that this is the spectrum
+1519059~003230~love the continuous time signal
+1522289~003600~below it we have the spectrum love
+1525889~005290~the output of the continuous and discrete-time conversion
+1531179~003210~and I've chosen the sampling frequency
+1534389~004481~to be just high end of so that I avoid aliasing
+1538870~003039~okay well
+1541909~004750~that then is the the lower sampling frequency I can pick
+1546659~005220~but now if we go through some additional ok pass filtering
+1551879~003910~then let's see what happens if I now
+1555789~003870~low-pass filter the sequence XFN then
+1559659~003711~in effect on multiplying the sequence
+1563370~003100~spectrum by this filter
+1566470~005240~and so the result of that the product though the filter frequency response
+1571710~004099~and the Fourier transform exit then would have a shape
+1575809~004311~somewhat like I indicate below
+1580120~003870~now notice that in this spectrum
+1583990~007000~although in this the input to the filter this entire band was filled up
+1591149~004061~in the output the filter there is a band
+1595210~004890~that is in fact up zero a that has zero energy and
+1600100~003150~so what I can consider doing is
+1603250~003049~taking the output sequence from the filter
+1606299~003330~and in fact we see a planet in other words
+1609629~004581~sampling it which would be more less associated with a different sampling
+1614210~000540~rate
+1614750~003769~in the for the continuous-time signals involved
+1618519~003160~so I could now go through a process
+1621679~003580~which is commonly referred to as down sampling that is
+1625259~004231~lowering the sampling rate when we do that of course what's going to happen
+1629490~003919~is that in fact this spectral energy will now
+1633409~003461~fill out more love the band and
+1636870~004100~for example if I if this was the third then
+1640970~003720~in fact if I down sampled by a factor of three then
+1644690~003650~I would fill up the entire band with this energy but since I've done some
+1648340~002949~additional 0 pass filtering as i indicate here
+1651289~004181~there's no problem with aliasing if
+1655470~004280~I had let's say down sample by a factor of three and I'm now taking that signal
+1659750~003529~and can bring it back to a continuous-time signal
+1663279~004600~then course the way I can't do that is by simply running
+1667879~004900~my output clock for the discrete to continuous-time converter
+1672779~003860~I can run my app but clock at a third the rate
+1676639~006931~love the input clock and that in effect takes care the bookkeeping for me
+1683570~003400~okay so here we have now
+1686970~003630~the notion love sampling a sequence
+1690600~004709~and very closely tied in with that the notion of decimating a sequence
+1695309~003431~and related to both of those the notion love
+1698740~003259~down sampling that is changing the sampling
+1701999~004630~rate so that if we were tying this in with continuous-time signals
+1706629~003530~we've essentially changed our clock grade
+1710159~003951~and we might also want to and it's important to
+1714110~003399~considered the opposite of that so
+1717509~004010~now a question is what's an opposite what's the opposite destination suppose
+1721519~001701~that we had a sequence
+1723220~004579~we decimated thinking about it as a two-step process
+1727799~004181~that would correspond to first multiplying by an impulse train where
+1731980~001350~there are bunches zeros
+1733330~004870~in the air and then choosing throwing away the zeros in keeping only the
+1738200~001069~values that
+1739269~004091~are 90 because the zeros we can always recreate
+1743360~003980~well in fact the inverse process is very specifically a process
+1747340~003130~love recreating the zeros and then
+1750470~003539~doing that the sampling so in
+1754009~005160~the opposite operation
+1759169~003321~what we would do is undue
+1762490~003130~the decimation step and
+1765620~003799~that would consist of converting the decimated sequence
+1769419~003980~back to an impulse train
+1773399~003730~and then processing that imposed strain
+1777129~004120~by ideal low-pass filter
+1781249~003971~to do the interpolation or reconstruction
+1785220~003959~filling in the values which in this imposed strain
+1789179~003051~are equal to 0 so
+1792230~003169~we now have the two steps we take the decimated sequence
+1795399~003490~we expanded out putting in 000's
+1798889~004081~and then we the sample that by processing it
+1802970~003100~through a low-pass filter so just
+1806070~005250~have looking at sequences again
+1811320~003949~what we have is an original
+1815269~003750~sequence the secret sex if an and
+1819019~004020~then the sample sequence is simply a sequence
+1823039~005260~which alternates in this particular case those sequence values 0
+1828299~003151~here what we're seeing is that the
+1831450~004189~sampling rate is that that the sampling period is 2
+1835639~004530~and so every other value here is equal to 0
+1840169~003890~the decimated sequence then is this sequence
+1844059~004120~collapsed as a show in the sequence above
+1848179~003460~and so it's in effect I'm compressing
+1851639~003201~the sample sequence or the original sequence
+1854840~003669~so that we throw out the sequence value Z
+1858509~003981~which were equal to 0 in the sample sequence
+1862490~004539~now in recovering the original sequence from the decimated sequence
+1867029~003071~we can think up a two-step process namely
+1870100~003029~we spread this out
+1873129~004831~alternating with zeros and again keeping in mind that this is drawn for the case
+1877960~001980~where capitalists to
+1879940~003390~and then finally we interpolate between
+1883330~003530~the non-zero values here by going through
+1886860~003669~a low-pass filter to reconstruct the
+1890529~003360~original sequence and that's what we show
+1893889~003301~finally on the bottom curve so
+1897190~003300~that's what we would see in the time domain let's
+1900490~003500~look at what we would see in the frequency domain
+1903990~004409~in the frequency domain we have to begin with
+1908399~003220~the sequence on the bottom or the spectrum on the bottom
+1911619~004790~which would correspond to the original spectrum
+1916409~004311~then through the sampling process that is periodically replicated
+1920720~003610~again this is drawn on the assumption that the
+1924330~005130~sampling frequency is pie or the sampling period is equal to 2
+1929460~003679~and so this is now replicated and
+1933139~003191~then in going from this to the
+1936330~004079~spectrum love the decimated sequence
+1940409~003020~we would rescale the frequency axis
+1943429~004411~so that the frequency hi now gets rescaled
+1947840~003600~in the spectrum for the decimated sequence
+1951440~005000~to a frequency which is to pie and so this now is the spectrum
+1956440~003410~love the decimated sequence if we now
+1959850~003620~want to re convert to the original
+1963470~005559~sequence we would first interspersed in the time domain with zeros
+1969029~005530~corresponding to compressing in the frequency domain
+1974559~003301~that this would then be low-pass filtered
+1977860~003769~and the low-pass filtering would consist
+1981629~003870~love throwing away this replication accounting for
+1985499~003351~a factor which is the factor capital and and
+1988850~004269~extracting the portion of the spectrum which is associated
+1993119~003310~with the spectrum love
+1996429~004261~the original signal which we began with so
+2000690~003750~once again you can we have decimation and interpolation
+2004440~004719~and the decimation can be thought I love
+2009159~003041~as a time compression corresponds to
+2012200~003650~frequency expansion and and the interpolation
+2015850~005240~process is then just the reverse
+2021090~005309~now there are lot to situations in which decimation and interpolation
+2026399~003220~and discrete-time sampling are useful and
+2029619~004091~one context that I just want to quickly draw your attention to
+2033710~003589~is the use the decimation and interpolation in
+2037299~004191~what is commonly referred to as sampling rate conversion
+2041490~005549~what the basic issue in sampling rate conversion is is that
+2047039~003120~in some situations in a very common one is
+2050159~005171~digital audio continuous-time signals sample
+2055330~003500~and those sample values are stored or whatever
+2058830~005039~and kinda the notion is that that perhaps when that is played back
+2063869~004691~its playback through a different system and a different system has
+2068560~004960~a different assumed sampling frequency your sampling period
+2073520~003119~so that's kind of the issue in the idea
+2076639~004201~we have but say a continuous-time signal
+2080840~004220~which we've converted to a sequence through a sampling process
+2085060~003800~using innocent sampling period if t1
+2088860~004390~and the sequence values made in for example
+2093250~003230~be put into digital storage in the case
+2096480~004880~have a digital audio system it may for example go on to a digital record
+2101360~003720~in and it might be the output of this that we want
+2105080~003560~to recreate or we might in fact
+2108640~003680~follow that with some additional processing
+2112320~003400~whatever that additional processing is an all kinda put a
+2115720~005330~question mark in there because we don't know exactly what that might be
+2121050~003740~and then in any case the result is that
+2124790~003370~is going to be converted back to
+2128160~003570~a continuous-time signal but
+2131730~003270~it might be converted through a system
+2135000~003350~that has a different assumed
+2138350~003630~sampling period and so
+2141980~005160~a very common issue and it comes up as i indicated particularly in digital audio
+2147140~004200~a very common issue is to be able to convert
+2151340~003590~from wanna soon sampling period
+2154930~003010~t1r sampling frequency to
+2157940~003340~another soon sampling period now
+2161280~004010~how would we do that well in fact we do that by using
+2165290~003820~the ideas of decimation and interpolation
+2169110~003540~in particular if we had for example
+2172650~003580~the situation where we wanted to convert from
+2176230~004390~sampling period t+1 to sampling period
+2180620~003490~which was twice as long as they're at then
+2184110~003460~essentially we got we're going to take the sequence
+2187570~003000~and process it in a way
+2190570~003940~that would in effect correspond to assuming that we had sample
+2194510~003750~at half the original frequency well how do we do that the way we do it
+2198260~005230~is we take the sequence we have we just throw away every other bad
+2203490~005070~so in that case we would then for this sampling rate conversion
+2208560~003790~down sample an decime or
+2212350~003520~actually we might not go through this step formally we might just simply
+2215870~001630~destiny
+2217500~004380~now we might have an alternative situation
+2221880~004660~where in fact the new sampling period sampling purity at put is
+2226540~003530~half the sampling period the input corresponding
+2230070~005440~to soon sampling frequency which is twice as high
+2235510~005680~and in that case then that we would go through a process of interpolation and
+2241190~001240~in particular we were
+2242430~005360~up sample and interpolate by a factor of two to one
+2247790~005290~so in one case were simply throwing away every other value in the other case what
+2253080~002060~we're going to do is take our sequence
+2255140~004320~putting zeros put it through a low-pass filter to interpolate
+2259460~004650~now like would be simple if everything happen in simple integer amounts like
+2264110~000920~that
+2265030~003880~more common situation is that we may have
+2268910~003490~and assumed output sampling period
+2272400~004860~which is three heads above the input sampling period
+2277260~003550~and now the question is what are we going to do to convert from this
+2280810~001250~sampling period
+2282060~003050~to this sampling period well
+2285110~004740~in fact the answer to that is to use a combination
+2289850~004420~all down sampling and up sampling or up sampling and down sampling
+2294270~003150~covertly interpolation decimation
+2297420~004080~and for this particular case in fact what we would do
+2301500~003200~is to first take the data
+2304700~003640~up sample by a factor of two
+2308340~003270~and then down sample the result of that
+2311610~003750~by a factor of three and what that would give us
+2315360~003210~is a sampling rate conversion overall
+2318570~004150~love three hands or sampling period conversion three here's
+2322720~004140~and more generally what you could think of is how you might do this
+2326860~004370~if in general the relationship between the
+2331230~003360~input and output sampling periods with some rational number:
+2334590~003770~P over Q and so in fact in many
+2338360~004090~systems and hardware systems related to digital audio
+2342450~003900~very often the sampling rate conversion most typically the same thing rate
+2346350~001270~conversion is done
+2347620~004760~through apostle process up sampling or interpolating
+2352380~005850~and then down sampling by some other now
+2358230~004470~right now what we've seen we've talked about in
+2362700~003380~in a set of lectures is
+2366080~003760~the concepts love sampling a signal
+2369840~003770~and what we've seen is that the signal can be represented by samples under
+2373610~001530~certain conditions
+2375140~003110~and the sampling that we've been talking about is sampling
+2378250~003370~in the time domain we've done that for continuous-time
+2381620~003510~we've done it for discrete-time
+2385130~004090~now we know that their is some type a duality
+2389220~003380~both continuous-time and discrete-time some type a duality
+2392600~003590~between the time-domain and frequency-domain and so is you can
+2396190~001420~imagine
+2397610~003630~we can also talk about sampling
+2401240~004140~in the frequency domain and expected
+2405380~004620~more or less the kinda properties and analysis
+2410000~005430~will be similar to those related to sampling in the time domain
+2415430~003480~well i wanna talk just briefly about that
+2418910~004060~and leave the more detailed discussion
+2422970~003590~to the text and video course manual
+2426560~003420~but let me indicate for example one context in which
+2429980~003570~frequency-domain sampling is important suppose that
+2433550~003600~you have signal and what you'd like to
+2437150~004620~measure is it's for a a transformer spectra
+2441770~004370~well course if you want to measure it are calculated
+2446140~003420~you can never do that exactly and every single frequency there too many
+2449560~002720~frequencies namely an infinite number of them
+2452280~004420~and so in fact all that you can really calculator measure
+2456700~003250~are is the 48 transform data set
+2459950~003490~love sample frequency so essentially
+2463440~003130~if you are going to look at a spectrum
+2466570~004510~continuous-time and discrete-time you can only really look at samples
+2471080~003150~and a reasonable question to ask Dan is
+2474230~003270~when does a set of samples in fact
+2477500~003410~tell you everything that there is to know about
+2480910~003170~the Fourier transform thats that
+2484080~003770~in the answer to that is very closely related to the concept
+2487850~003270~a frequency-domain sample
+2491120~003420~well frequency-domain sampling just to kinda introduce
+2494540~003000~the topic car spines
+2497540~003450~and can be analyzed interns love
+2500990~004700~doing modulation in the frequency domain
+2505690~003640~very much like the modulation that we carried out in the time domain for
+2509330~001790~time-domain sampling
+2511120~004520~and so we would multiply the Fourier transform
+2515640~003450~love the signal was for
+2519090~003000~spectrum is to be sampled by
+2522090~003850~an impulse train in frequency and so
+2525940~004570~shown below is what might be a representative
+2530510~003140~spectrum for the input signal
+2533650~003830~and the spectrum then for the
+2537480~004170~signal associated with the frequency-domain sampling
+2541650~003640~consists love multiplying the frequency-domain
+2545290~004510~by this impulse train or correspondingly
+2549800~003020~the for EA transform love
+2552820~003570~the resulting signal is an impulse train
+2556390~003960~in frequency with an envelope
+2560350~003500~which is the original spectrum that we were
+2563850~004390~sampling well this of course is what we would do
+2568240~004210~in the frequency domain its modulation by Nepal strain
+2572450~003250~what does this mean in the time domain
+2575700~003980~well let's see multiplication in the time domain is convolution in the
+2579680~001400~frequency domain
+2581080~003520~convolution the frequency domain is multiplication
+2584600~003060~I'm sorry multiplication the frequency domain and is
+2587660~004790~convolution the time to me and in fact the process in the time domain is a
+2592450~001660~convolution process
+2594110~003090~namely the time domain signal is
+2597200~003580~replicated and
+2600780~005210~time an integer amounts love a particular time associated with the
+2605990~002030~spacing in frequency
+2608020~003330~under which we doing the frequency-domain sampling
+2611350~003020~so in fact if we look at this
+2614370~004850~in the time domain
+2619220~004680~the resulting picture corresponds to
+2623900~006200~an original signal whose spectrum or Fourier transform we've sampled
+2630100~003750~and a consequence if the sampling is dead
+2633850~003050~The Associated time domain signal
+2636900~005510~is just like the original signal but periodically replicated in time now not
+2642410~002040~frequency but in time
+2644450~003980~at integer multiples up to par I divided by
+2648430~004330~the spectral sampling interval Omega 0
+2652760~005020~and so this then is the time function associated with
+2657780~003950~the sample frequency function now
+2661730~003820~that's not surprising because what we've done is generated
+2665550~004130~a and impose train and frequency with a certain on below
+2669680~004540~we know that the important post Raina frequencies the Fourier transform
+2674220~004990~love a periodic time function and so in fact we have a periodic time function
+2679210~004010~we also know that the envelope all those impulses we
+2683220~004460~we know this from way back with when we talked about for you transforms
+2687680~003390~the envelope in fact is the Fourier transform one period
+2691070~003730~and so all of this of course fits together as it should in a consistent
+2694800~001800~way
+2696600~003050~now given dead we have
+2699650~004540~is periodic time function whose Fourier transform is
+2704190~003620~the samples in the frequency domain how do we get back
+2707810~003600~the original time function well
+2711410~004020~with time-domain sampling what we did
+2715430~003900~was to multiplying the frequency-domain
+2719330~004690~by agape or window to extract that part of the spectrum
+2724020~003800~what we do here is exactly the same thing
+2727820~003650~namely multiply in the time domain by
+2731470~003880~a time window which extracts just one period
+2735350~003810~his periodic signal which with then give us back
+2739160~003740~the original signal that we started with
+2742900~003060~now also let's keep in mind going back
+2745960~003770~to this spectrum and the related sorry this time function in the relationship
+2749730~001370~between them
+2751100~005010~that again there is the potential if this time function is too long
+2756110~003820~in relation to 2pi divided by Omega 0
+2759930~003330~there's the potential for these two overlap and so
+2763260~005170~what this means is that in fact what we can end up with
+2768430~003720~if the sample spacing a frequency is not small enough
+2772150~003890~well we can end up with isn't overlap in the replication
+2776040~004500~in the time domain and what that corresponds to an what's called
+2780540~003160~is in fact time a lease so
+2783700~004570~we can apply merely saying with frequency-domain sampling just as we can
+2788270~000600~have
+2788870~004570~frequency alias saying with time to meet Sam
+2793440~003990~finally let me just indicate very quickly that
+2797430~003120~although we're not going through this in any detail
+2800550~004260~the same basic idea applies in discrete-time
+2804810~004190~namely if we have a discrete-time signal
+2809000~003220~and if the discrete-time signal
+2812220~003680~is a finite length if we sample
+2815900~003230~its forty-eight transform the
+2819130~003530~the type function associated with those samples
+2822660~003320~is a periodic replication
+2825980~003220~and we can now extract from
+2829200~003410~this periodic signal the original signal
+2832610~003450~by multiplying by an appropriate time window
+2836060~003560~the product if that giving us the reconstructed time
+2839620~005120~function as I indicate below
+2844740~005370~so we've now seen a little bit love the notion of frequency-domain sampling as
+2850110~000530~well as
+2850640~003010~time-domain sampling and let me stress that although
+2853650~004280~I haven't gone into this and a lot of detail its
+2857930~003060~important it's used very often its
+2860990~003360~naturally important to understand it but in fact
+2864350~003930~there is so much to ality between the time-domain and frequency-domain
+2868280~003230~that a thorough understanding of time-domain sampling just naturally
+2871510~001280~leads to
+2872790~005720~a thorough understanding a frequency-domain sample
+2878510~003210~all right now we talk a lot about sampling
+2881720~005090~and this now concludes our discussion sampling
+2886810~003830~I stress many times in the lectures associated with this
+2890640~007000~dead sampling is a very important topic in the context of our whole discussion
+2897670~003520~in part because the poor for such an important bridge between
+2901190~004400~continuous-time and discrete-time ideas and your picture now she can to be a
+2905590~001380~global one
+2906970~004080~that sees how continuous-time and discrete-time fit together
+2911050~005470~not just analytically but also practically
+2916520~003830~beginning in the next lecture what I will introduce
+2920350~003530~is the a-plus transform
+2923880~005390~and beyond that busy transform and what those will correspond to
+2929270~003670~are generalizations are the Fourier transform
+2932940~004260~so we now want to turn our attention back to some analytical tools
+2937200~003330~in particular developing some generalizations
+2940530~005150~love the Fourier transform in both continuous-time and discrete-time
+2945680~004960~and what we'll see is those that those generalizations
+2950640~004680~providers with considerably enhanced flexibility
+2955320~004560~in dealing with and analyzing both signals and linear time-invariant
+2959880~001320~systems
+2961200~000250~thank you

@@ -1,0 +1,2976 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+le contenu suivant est fourni sous une licence Creative Commons
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+votre appui nous aidera MIT OpenCourseWare continuer à offrir
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+ressources éducatives de haute qualité gratuitement
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+faire un don ou voir des documents supplémentaires à partir de centaines d'entre eux IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+cours
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+visiter MIT OpenCourseWare à 0 CW
+
+00:00:18,000 --> 00:00:23,000
+that MIT that EDU hard
+que le MIT qui EDU dur
+
+00:00:23,000 --> 00:00:29,000
+the
+la
+
+00:00:29,000 --> 00:00:31,000
+the
+la
+
+00:00:31,000 --> 00:00:34,000
+the
+la
+
+00:00:34,000 --> 00:00:39,000
+the in
+dans le
+
+00:00:39,000 --> 00:00:45,000
+the norm
+la norme
+
+00:00:45,000 --> 00:00:50,000
+are
+sont
+
+00:00:50,000 --> 00:00:56,000
+the in the last two lectures
+le cours des deux dernières conférences
+
+00:00:56,000 --> 00:01:01,000
+and we saw how periodic not periodic signals could be represented as linear
+et nous avons vu comment les signaux périodiques périodiques ne peuvent être représentés comme linéaire
+
+00:01:01,000 --> 00:01:03,000
+combinations a complex exponentials
+combinaisons un exponentielles complexes
+
+00:01:03,000 --> 00:01:08,000
+and this led to the Fourier series representation
+et cela a conduit à la représentation en série de Fourier
+
+00:01:08,000 --> 00:01:12,000
+in the periodic case and it led to the Fourier transform
+dans le cas périodique et elle a conduit à la transformation de Fourier
+
+00:01:12,000 --> 00:01:15,000
+representation in the a periodic case and and then in fact
+représentation dans le cas périodique et puis en fait
+
+00:01:15,000 --> 00:01:20,000
+what we did was to incorporate the 4e a series
+ce que nous avons fait était d'intégrer le 4e d'une série
+
+00:01:20,000 --> 00:01:26,000
+within the framework of the Fourier transform what I'd like to do in today's
+dans le cadre de la transformée de Fourier ce que je voudrais faire aujourd'hui de
+
+00:01:26,000 --> 00:01:28,000
+lecture is
+conférence est
+
+00:01:28,000 --> 00:01:31,000
+look at the 4-yard transform more closely
+regarder la 4-cour transformer de plus près
+
+00:01:31,000 --> 00:01:34,000
+in particular with regard to so this property's
+en particulier à l'égard de cette propriété afin de
+
+00:01:34,000 --> 00:01:37,000
+so let me begin by reminding you
+alors laissez-moi d'abord de vous rappeler
+
+00:01:37,000 --> 00:01:41,000
+love the analysis and synthesis equations for the four th
+l'amour de l'analyse et des équations de synthèse pour les quatre e
+
+00:01:41,000 --> 00:01:44,000
+transform and as I summarize them here
+transformer et que je résume ici les
+
+00:01:44,000 --> 00:01:47,000
+the synthesis equation being a
+l'équation de synthèse étant un
+
+00:01:47,000 --> 00:01:50,000
+an equation that tells us how to build the
+une équation qui nous dit comment construire l'
+
+00:01:50,000 --> 00:01:54,000
+time function outta in essence a linear combination
+temps la fonction outta essentiellement une combinaison linéaire
+
+00:01:54,000 --> 00:01:59,000
+a complex exponentials and the analysis equation
+un exponentielles complexes et l'équation d'analyse
+
+00:01:59,000 --> 00:02:04,000
+telling us how to get the amplitudes love those complex exponentials
+nous dire comment se les amplitudes aiment les exponentielles complexes
+
+00:02:04,000 --> 00:02:07,000
+from the Associated time function
+à partir de la fonction de temps associée
+
+00:02:07,000 --> 00:02:10,000
+so essentially in the decomposition
+donc essentiellement dans la décomposition
+
+00:02:10,000 --> 00:02:15,000
+affect safety as a linear combination of complex exponentials
+affecter la sécurité comme une combinaison linéaire d'exponentielles complexes
+
+00:02:15,000 --> 00:02:18,000
+the complex amplitudes if those are in effect
+les amplitudes complexes si ceux-ci sont en effet
+
+00:02:18,000 --> 00:02:21,000
+the 48 transform scaled by
+la mise à l'échelle par 48 transformée
+
+00:02:21,000 --> 00:02:24,000
+the differential and scaled by one over two-part
+l'écart et à l'échelle par un cours en deux parties
+
+00:02:24,000 --> 00:02:28,000
+now as
+maintenant que
+
+00:02:28,000 --> 00:02:32,000
+I indicated last time the 48 transform
+Je l'ai dit la dernière fois le 48 transformée
+
+00:02:32,000 --> 00:02:35,000
+is a complex function of frequency in
+est une fonction complexe de la fréquence à
+
+00:02:35,000 --> 00:02:39,000
+and in particular the complex function of frequency
+et en particulier la fonction complexe de la fréquence
+
+00:02:39,000 --> 00:02:43,000
+has an important and very useful cemetery property
+a une propriété importante et très utile cimetière
+
+00:02:43,000 --> 00:02:47,000
+the symmetry love the Fourier transform
+la symétrie aiment la transformée de Fourier
+
+00:02:47,000 --> 00:02:50,000
+when X if T is real is
+lorsque X si T est réel est
+
+00:02:50,000 --> 00:02:54,000
+what is referred to as conjugate symmetric in other words if we take the
+ce qui est appelé conjugué symétrique en d'autres termes, si nous prenons l'
+
+00:02:54,000 --> 00:02:55,000
+complex
+complexe
+
+00:02:55,000 --> 00:02:59,000
+function after Omega and and its complex conjugate
+fonction après Omega et et son conjugué complexe
+
+00:02:59,000 --> 00:03:02,000
+that's equivalent to replacing Omega
+c'est l'équivalent de remplacer Omega
+
+00:03:02,000 --> 00:03:06,000
+by minus Omega and a consequence if that
+par moins Omega et une conséquence si
+
+00:03:06,000 --> 00:03:12,000
+if we think interns love the real party the Fourier transform
+si nous pensons que les stagiaires aiment la véritable partie transformée de Fourier
+
+00:03:12,000 --> 00:03:16,000
+the real part is and even function of frequency
+la partie réelle est et même fonction de la fréquence
+
+00:03:16,000 --> 00:03:20,000
+and the magnet to is an even function of frequency
+et l'aimant est une fonction même de la fréquence
+
+00:03:20,000 --> 00:03:24,000
+whereas the imaginary part is an
+tandis que la partie imaginaire est un
+
+00:03:24,000 --> 00:03:28,000
+odd function of frequency and the phase angle
+fonction impaire de la fréquence et de l'angle de phase
+
+00:03:28,000 --> 00:03:31,000
+is an odd function of frequency so
+est une fonction impaire de fréquence de manière
+
+00:03:31,000 --> 00:03:36,000
+we have this symmetry relationship that for except the real
+nous avons cette relation de symétrie que pour l'exception du réel
+
+00:03:36,000 --> 00:03:40,000
+if we think I've either the real part or the magnitude of the Fourier transform
+si nous pensons j'ai la partie réelle ou l'ampleur de la transformée de Fourier
+
+00:03:40,000 --> 00:03:44,000
+its even symmetric and the imaginary part
+sa part même symétrique et l'imaginaire
+
+00:03:44,000 --> 00:03:48,000
+or the phase angle either one it is
+ou l'angle de phase soit une c'est
+
+00:03:48,000 --> 00:03:52,000
+fought symmetric in other words if we flip it we multiply by a minus sign
+symétrique combattu en d'autres termes, si l'on rabat il nous multiplions par un signe moins
+
+00:03:52,000 --> 00:03:55,000
+let's didn't look at an example
+nous allons n'ai pas regardé un exemple
+
+00:03:55,000 --> 00:03:59,000
+in the context love an example that we worked last time
+dans le contexte d'amour, par exemple, que nous avons travaillé la dernière fois
+
+00:03:59,000 --> 00:04:03,000
+for the Fourier transform we took
+pour la transformée de Fourier, nous avons pris
+
+00:04:03,000 --> 00:04:06,000
+the case both a real exponential
+le cas à la fois un réel exponentielle
+
+00:04:06,000 --> 00:04:10,000
+love the form eat to the -80 times this step
+l'amour de la forme manger aux temps -80 cette étape
+
+00:04:10,000 --> 00:04:14,000
+and the 48 transform as
+et le 48 transformée en
+
+00:04:14,000 --> 00:04:19,000
+we found was other algebraic form one over a plus J Omega
+nous avons trouvé était autre forme algébrique un plus un plus J Oméga
+
+00:04:19,000 --> 00:04:24,000
+and incidently the 48 transform into grow only converged
+et incidemment le 48 transformer en poussent uniquement convergé
+
+00:04:24,000 --> 00:04:27,000
+for a greater than 0 in other words
+pour un supérieure à 0 dans les autres mots
+
+00:04:27,000 --> 00:04:32,000
+for this exponential became and I illustrated
+pour cette exponentielle est devenu et je illustrée
+
+00:04:32,000 --> 00:04:36,000
+the magnitude and angle and what we see is that
+l'ampleur et de l'angle et de ce que nous voyons, c'est que
+
+00:04:36,000 --> 00:04:39,000
+you the minus 8c is a real
+vous 8c moins est un vrai
+
+00:04:39,000 --> 00:04:42,000
+time function therefore its magnitude
+fonction de temps donc l'ampleur
+
+00:04:42,000 --> 00:04:46,000
+should be an even function of frequency and indeed it is
+devrait être une fonction même de la fréquence et en effet il est
+
+00:04:46,000 --> 00:04:49,000
+and its phase angle shown below
+et son angle de phase disponible en dessous
+
+00:04:49,000 --> 00:04:54,000
+is and odd function of frequency
+est fonction impaire et de la fréquence
+
+00:04:54,000 --> 00:04:57,000
+so in fact in although
+donc en fait dans bien
+
+00:04:57,000 --> 00:05:00,000
+I stressed last time that
+J'ai souligné la dernière fois que
+
+00:05:00,000 --> 00:05:05,000
+the complex exponentials required to build the time function
+les exponentielles complexes nécessaires à la construction de la fonction de temps
+
+00:05:05,000 --> 00:05:10,000
+require exponentials both positive and negative frequencies
+exiger exponentielles deux fréquences positives et négatives
+
+00:05:10,000 --> 00:05:13,000
+for except the real what we see is that
+pour l'exception du réel ce que nous voyons est que
+
+00:05:13,000 --> 00:05:17,000
+because if the symmetry properties either for the real and imaginary or
+car si les propriétés de symétrie de l'une ou l'autre réelle et imaginaire ou
+
+00:05:17,000 --> 00:05:18,000
+magnitude and angle
+grandeur et l'angle
+
+00:05:18,000 --> 00:05:24,000
+we can specify a before you transform for let's say only positive frequencies
+nous pouvons spécifier un avant vous transformez pour disons seulement des fréquences positives
+
+00:05:24,000 --> 00:05:27,000
+and asymmetry then implies are tells us
+et l'asymétrie implique sont ensuite nous dit
+
+00:05:27,000 --> 00:05:34,000
+what the Fourier transform then will be for the negative frequencies
+ce la transformée de Fourier sera alors pour les fréquences négatives
+
+00:05:34,000 --> 00:05:37,000
+okay now this same example the cause
+bien maintenant ce même exemple de la cause
+
+00:05:37,000 --> 00:05:40,000
+the decaying exponential demonstrates
+l'exponentielle décroissante montre
+
+00:05:40,000 --> 00:05:43,000
+another important and often useful
+une autre importante et souvent utile
+
+00:05:43,000 --> 00:05:47,000
+property the Fourier transform
+propriété transformée de Fourier
+
+00:05:47,000 --> 00:05:51,000
+specifically let's rewrite algebraically this example
+nous allons réécrire spécifiquement algébrique cet exemple
+
+00:05:51,000 --> 00:05:55,000
+as I indicate here so we have
+comme je l'indiquer ici que nous avons
+
+00:05:55,000 --> 00:06:01,000
+again the exponential was 48 transformers one over a plus J Omega
+nouveau l'exponentielle était de 48 transformateurs un plus un plus J Oméga
+
+00:06:01,000 --> 00:06:06,000
+and if I A just simply divide numerator and denominator by a
+et si IA tout simplement diviser le numérateur et le dénominateur par un
+
+00:06:06,000 --> 00:06:10,000
+I can rewrite it in the form shown here
+Je peux réécrire sous la forme présentée ici
+
+00:06:10,000 --> 00:06:14,000
+and what we notice is dead in the time function
+et ce que nous remarquons est mort dans la fonction de temps
+
+00:06:14,000 --> 00:06:18,000
+we have a term of the form eight times TV
+nous avons un terme de la forme de huit fois la télévision
+
+00:06:18,000 --> 00:06:22,000
+and in the frequency function we have a term for the form Omega
+et en fonction de la fréquence, nous avons un terme de la forme oméga
+
+00:06:22,000 --> 00:06:25,000
+divided by a or
+divisé par un ou
+
+00:06:25,000 --> 00:06:28,000
+equivalent Lee we can't think all the
+équivalent Lee nous ne pouvons pas penser à tous les
+
+00:06:28,000 --> 00:06:32,000
+time function which I show here
+fonction de temps que je montre ici
+
+00:06:32,000 --> 00:06:36,000
+and as the pram enter a gets smaller
+et que la poussette entrer un obtient plus petit
+
+00:06:36,000 --> 00:06:41,000
+the exponential gets spread out in time
+l'exponentielle se s'étale dans le temps
+
+00:06:41,000 --> 00:06:44,000
+whereas s04e08 transform
+tandis que S04E08 transforment
+
+00:06:44,000 --> 00:06:49,000
+or the magnitude of its Fourier transform has the inverse property
+ou l'amplitude de sa transformée de Fourier inverse a la propriété
+
+00:06:49,000 --> 00:06:52,000
+that as a get smaller in fact
+que comme un devenir plus petit, en fait,
+
+00:06:52,000 --> 00:06:56,000
+this scales down in frequency
+ce échelles dans la fréquence
+
+00:06:56,000 --> 00:06:59,000
+well this is a general property love
+bien c'est un amour foncière générale
+
+00:06:59,000 --> 00:07:02,000
+the Fourier transform namely the fact
+la transformée de Fourier à savoir le fait
+
+00:07:02,000 --> 00:07:06,000
+that a a linear scaling a time
+qu'une mise à l'échelle linéaire un temps
+
+00:07:06,000 --> 00:07:10,000
+generates the infers linear scaling a frequency
+génère le déduit linéaire échelle une fréquence
+
+00:07:10,000 --> 00:07:14,000
+and the general statement love this time frequency scaling is what
+et l'amour général de déclaration cette fois la fréquence mise à l'échelle est ce
+
+00:07:14,000 --> 00:07:18,000
+I show at the top above the transparency namely the equation
+Je montre en haut au-dessus de la transparence à savoir l'équation
+
+00:07:18,000 --> 00:07:22,000
+that if we scale the time function in time
+que si nous escaladons la fonction de temps en temps
+
+00:07:22,000 --> 00:07:28,000
+then we apply and infers scaling a frequency
+puis nous appliquons et déduit l'échelle d'une fréquence
+
+00:07:28,000 --> 00:07:31,000
+now her this in fact is probably a result
+maintenant elle en fait ce n'est probablement un résultat
+
+00:07:31,000 --> 00:07:35,000
+that you're already possibly familiar with in
+que vous êtes déjà familier avec éventuellement en
+
+00:07:35,000 --> 00:07:39,000
+somewhat of a different context essentially you can think of this
+peu d'un contexte différent essentiellement que vous pouvez penser de cette
+
+00:07:39,000 --> 00:07:44,000
+as an example poor generalization rather
+par exemple, une mauvaise généralisation plutôt
+
+00:07:44,000 --> 00:07:47,000
+up the notion that if let's say I A
+la notion que si disons que je A
+
+00:07:47,000 --> 00:07:53,000
+had a signal that was recorded on a tape player
+eu un signal qui a été enregistré sur un lecteur de bande
+
+00:07:53,000 --> 00:07:57,000
+and if I play the tape back and let's say twice the speed which means that I'm
+et si je joue la bande arrière et disons deux fois la vitesse qui signifie que je suis
+
+00:07:57,000 --> 00:07:59,000
+compressing the time axis
+comprimer l'axe des temps
+
+00:07:59,000 --> 00:08:04,000
+linearly by a factor of two then in fact what happens is that
+linéairement par un facteur de deux, puis en fait ce qui se passe, c'est que
+
+00:08:04,000 --> 00:08:08,000
+the frequencies that we observe get pushed up by a factor of two
+les fréquences que nous observons sont poussés par un facteur de deux
+
+00:08:08,000 --> 00:08:12,000
+and effect let me illustrate that
+et permettez-moi d'illustrer l'effet que
+
+00:08:12,000 --> 00:08:15,000
+I have here a glockenspiel
+J'ai ici un glockenspiel
+
+00:08:15,000 --> 00:08:20,000
+and anyone who loves a parade certainly knows what I each
+et n'importe qui qui aime un défilé certainement sait ce que je l'
+
+00:08:20,000 --> 00:08:23,000
+blockage feel as and
+blocage sentir au fur et à
+
+00:08:23,000 --> 00:08:27,000
+this particular glockenspiel has
+ce glockenspiel particulier a
+
+00:08:27,000 --> 00:08:32,000
+3 eighties separated each by an active there's a middle way
+3 années quatre-vingt séparés chacun par un actif, il ya un juste milieu
+
+00:08:32,000 --> 00:08:38,000
+a high a us and a low a
+un nous une haute et une basse un
+
+00:08:38,000 --> 00:08:42,000
+and what I've done is to record
+et ce que j'ai fait est d'enregistrer
+
+00:08:42,000 --> 00:08:46,000
+the middle a on a tape
+au milieu, un sur une bande
+
+00:08:46,000 --> 00:08:51,000
+at seven and a half inches per second and
+à sept pouces et demi par seconde et
+
+00:08:51,000 --> 00:08:54,000
+what I'd like to demonstrate is that as
+ce que je voudrais démontrer, c'est que
+
+00:08:54,000 --> 00:08:58,000
+we play that back either a cloister half-speed
+nous jouons ce retour soit un cloître à demi-vitesse
+
+00:08:58,000 --> 00:09:03,000
+the effective note gets moved down or up by a doctor
+la note efficace est déplacé vers le bas ou vers le haut par un médecin
+
+00:09:03,000 --> 00:09:06,000
+so let me first play the note at
+alors permettez-moi tout d'abord de jouer la note à
+
+00:09:06,000 --> 00:09:09,000
+the speed at which was recorded and so what we'll hear
+la vitesse à laquelle a été enregistrée et donc ce que nous allons entendre
+
+00:09:09,000 --> 00:09:13,000
+is the middle a as i've recorded it and let me just start
+est un milieu que j'ai enregistré et permettez-moi de commencer
+
+00:09:13,000 --> 00:09:20,000
+the tape player
+le lecteur de bande
+
+00:09:26,000 --> 00:09:29,000
+okay let me stop it and hopefully what you heard is the
+bien permettez-moi de m'arrêter et nous espérons que vous avez entendu est le
+
+00:09:29,000 --> 00:09:32,000
+same note from the tape recorder as
+même note de l'enregistreur de bande
+
+00:09:32,000 --> 00:09:36,000
+the note that I played on the glockenspiel okay well now
+la note que j'ai joué sur le glockenspiel bien bien maintenant
+
+00:09:36,000 --> 00:09:40,000
+a rewind the tape and we go back to the beginning
+un rembobiner la bande et nous revenons au début
+
+00:09:40,000 --> 00:09:44,000
+love that portion and
+aimer cette partie et
+
+00:09:44,000 --> 00:09:48,000
+now if I change the tapes the to
+maintenant si je change les bandes à la
+
+00:09:48,000 --> 00:09:51,000
+half the speed so from seven and a half inches per second
+la moitié de la vitesse afin de sept pouces et demi par seconde
+
+00:09:51,000 --> 00:09:54,000
+a change the tape speed 233 quarter
+un changement de la vitesse de la bande 233 trimestre
+
+00:09:54,000 --> 00:09:58,000
+inches per second and now
+pouces par seconde et maintenant
+
+00:09:58,000 --> 00:10:02,000
+when I play the tape back because effect because
+quand je joue la bande arrière parce effet parce
+
+00:10:02,000 --> 00:10:07,000
+love the inverse relationship between time and frequency scaling we're now
+l'amour de la relation inverse entre le temps et la fréquence mise à l'échelle, nous sommes maintenant
+
+00:10:07,000 --> 00:10:11,000
+scaling in time by stretching out we would expect the frequencies to be
+mise à l'échelle dans le temps en étirant nous attendons les fréquences soient
+
+00:10:11,000 --> 00:10:12,000
+lowered
+réduit
+
+00:10:12,000 --> 00:10:15,000
+by a factor of two we should now expect the
+par un facteur de deux, nous devrions maintenant attendre la
+
+00:10:15,000 --> 00:10:19,000
+taped no to be an octave lower
+scotché pas d'être une octave plus bas
+
+00:10:19,000 --> 00:10:26,000
+matching the slower a so let's just play that okay let me stop it
+correspondant à la plus lente d'une manière disons simplement que jouent bien permettez-moi de l'arrêter
+
+00:10:40,000 --> 00:10:44,000
+and again will rewind the tape
+et encore se rembobiner la bande
+
+00:10:44,000 --> 00:10:47,000
+go back to
+revenir à
+
+00:10:47,000 --> 00:10:50,000
+the beginning and now will play this at
+le début et maintenant va jouer ce à
+
+00:10:50,000 --> 00:10:53,000
+twice the speed so I change from three and three-quarters
+deux fois la vitesse si je change de trois et trois quarts
+
+00:10:53,000 --> 00:10:59,000
+to 15 inches per second and now and I play it we would expect that
+à 15 pouces par seconde et maintenant et je joue nous attendons à ce que
+
+00:10:59,000 --> 00:11:06,000
+to match the upper no and let's just do that Ste
+faire correspondre les pas supérieure et nous allons faire tout ce que Ste
+
+00:11:08,000 --> 00:11:10,000
+us
+
+
+00:11:10,000 --> 00:11:14,000
+us okay well
+nous bien d'accord
+
+00:11:14,000 --> 00:11:18,000
+although thats a result that intuitively probably
+mais thats un résultat qui intuitivement probablement
+
+00:11:18,000 --> 00:11:22,000
+makes considerable sense in fact what that is
+logique considérable en fait ce qui est
+
+00:11:22,000 --> 00:11:26,000
+is an illustration love the inverse relationship between
+est une illustration aiment la relation inverse entre
+
+00:11:26,000 --> 00:11:31,000
+time scaling frequency scaling and also by the way it was finally my opportunity
+échelle de temps fréquence mise à l'échelle et aussi par la façon dont il a finalement été ma chance
+
+00:11:31,000 --> 00:11:37,000
+to play the glockenspiel on television okayed now
+à jouer le glockenspiel à la télévision okayed maintenant
+
+00:11:37,000 --> 00:11:40,000
+in in addition their is another
+en outre leur est un autre
+
+00:11:40,000 --> 00:11:44,000
+very important relationship between the time and frequency domains
+relation très importante entre le temps et en fréquence
+
+00:11:44,000 --> 00:11:47,000
+namely what is referred to as a
+à savoir ce que l'on appelle un
+
+00:11:47,000 --> 00:11:51,000
+duality relationship and
+relation de dualité et
+
+00:11:51,000 --> 00:11:54,000
+the duality relationship between time and frequency
+la relation de dualité entre le temps et la fréquence
+
+00:11:54,000 --> 00:12:00,000
+falls out more less directly from
+tombe plus moins directement de
+
+00:12:00,000 --> 00:12:05,000
+the equations the analysis and synthesis equations in particular if we look at
+les équations analyse et de synthèse équations en particulier si nous regardent
+
+00:12:05,000 --> 00:12:05,000
+the
+la
+
+00:12:05,000 --> 00:12:09,000
+synthesis equation which I repeat here
+équation de synthèse qui, je le répète ici
+
+00:12:09,000 --> 00:12:13,000
+and the analysis equation which I repeat below it
+et l'équation d'analyse qui, je le répète dessous
+
+00:12:13,000 --> 00:12:17,000
+what we observe is dead in fact
+ce que nous observons est mort en fait
+
+00:12:17,000 --> 00:12:21,000
+these equations are basically identical
+ces équations sont fondamentalement identiques
+
+00:12:21,000 --> 00:12:24,000
+except for the fact that in the top
+à l'exception du fait que dans la partie supérieure
+
+00:12:24,000 --> 00:12:28,000
+integral we have things as a function of Omega in the bottom integral as a
+intégrante nous avons des choses en fonction de Omega dans la partie inférieure en tant que partie intégrante
+
+00:12:28,000 --> 00:12:29,000
+function of T
+fonction de T
+
+00:12:29,000 --> 00:12:33,000
+and there's a factor of 10 ver tu Pai and by the way a minus sign
+et il ya un facteur de 10 ver tu Pai et par la voie d'un signe moins
+
+00:12:33,000 --> 00:12:38,000
+well you can look at the algebra
+ainsi vous pouvez regarder l'algèbre
+
+00:12:38,000 --> 00:12:42,000
+more carefully at your leisure but especially with this says
+davantage d'attention à votre guise, mais surtout avec ce dit
+
+00:12:42,000 --> 00:12:46,000
+is that if excessive Omega is
+est que si excessive Omega est
+
+00:12:46,000 --> 00:12:50,000
+the Fourier transform over type function exit see
+la transformée de Fourier sur la sortie de fonction de type voir
+
+00:12:50,000 --> 00:12:54,000
+then in fact except Amy
+alors, en fait, sauf Amy
+
+00:12:54,000 --> 00:13:00,000
+is very much like the Fourier transform affective Omega
+est très semblable à la transformée de Fourier Omega affective
+
+00:13:00,000 --> 00:13:03,000
+in fact it's the Fourier transform attacks have minus Omega
+en fait c'est la transformée de Fourier attaques ont moins Omega
+
+00:13:03,000 --> 00:13:07,000
+to account for this minus sign and by the way there's just an additional
+pour tenir compte de ce signe moins et par la façon dont il est juste un plus
+
+00:13:07,000 --> 00:13:08,000
+factor
+facteur
+
+00:13:08,000 --> 00:13:12,000
+one over 25 so the duality relationship which
+un sur 25 si la relation de dualité qui
+
+00:13:12,000 --> 00:13:16,000
+follows from these two equations in fact
+suit de ces deux équations en fait
+
+00:13:16,000 --> 00:13:19,000
+says that if x50
+dit que si x50
+
+00:13:19,000 --> 00:13:23,000
+an ex vivo maker are a4e a transformed pair
+un fabricant vivo ex sont A4E une paire transformé
+
+00:13:23,000 --> 00:13:26,000
+if little accent capital XR Fourier transform pair
+si transformer peu de capital d'accent XR Fourier paire
+
+00:13:26,000 --> 00:13:31,000
+then capital lacks in fact has a $4 EA transform
+alors capitale manque en fait a une transformée de $ 4 EA
+
+00:13:31,000 --> 00:13:36,000
+which is proportional a little lax turned around well
+qui est proportionnelle un peu laxiste tourné autour bien
+
+00:13:36,000 --> 00:13:41,000
+this to outdo ality in the continuous time Fourier transform
+ce à surpasser lité dans le temps continue à transformée de Fourier
+
+00:13:41,000 --> 00:13:45,000
+is very important it's very useful it by the way is not
+est très important, il est très utile par la voie n'est pas
+
+00:13:45,000 --> 00:13:52,000
+duality that surface in a forty a series because as you recall the 48 series
+la dualité de cette surface dans une quarantaine une série parce que vous vous souvenez de la série 48
+
+00:13:52,000 --> 00:13:55,000
+begins with a continuous-time function
+commence par une fonction à temps continu
+
+00:13:55,000 --> 00:13:59,000
+and in the frequency domain generates a sequence
+et dans le domaine des fréquences génère une séquence
+
+00:13:59,000 --> 00:14:03,000
+which with just naturally have the proper have
+qui avec seulement ont naturellement le bon ont
+
+00:14:03,000 --> 00:14:06,000
+problems associated with it if we attempted to
+problèmes associés avec elle si nous avons tenté de
+
+00:14:06,000 --> 00:14:09,000
+interpreted to ality and we'll see also:
+interprété à nalité et nous verrons aussi:
+
+00:14:09,000 --> 00:14:13,000
+that in a discrete-time case one of the important differences between
+que, dans un cas temps discret une des différences importantes entre les
+
+00:14:13,000 --> 00:14:16,000
+continuous-time and discrete-time Fourier transforms
+en temps continu et de transformées de Fourier discrets dans le temps
+
+00:14:16,000 --> 00:14:20,000
+is the fact that in continuous-time we have to our the
+est le fait que, en temps continu, nous devons nous l'
+
+00:14:20,000 --> 00:14:25,000
+in discrete-time for then the discrete-time Fourier transform we don't
+en temps discret pour ensuite transformer le temps discret Fourier nous ne faisons pas
+
+00:14:25,000 --> 00:14:27,000
+well
+bien
+
+00:14:27,000 --> 00:14:32,000
+let's indicate illustrate this with an example
+nous allons indiquer illustrer cela par un exemple
+
+00:14:32,000 --> 00:14:35,000
+in here are in fact two examples
+ici sont en fait deux exemples
+
+00:14:35,000 --> 00:14:39,000
+a Fourier transform pairs taken from examples in the text
+une transformée de Fourier paires prises à partir d'exemples dans le texte
+
+00:14:39,000 --> 00:14:43,000
+to the top one being example
+vers le haut étant par exemple
+
+00:14:43,000 --> 00:14:47,000
+four-point 11 from the tax and it's a time for action
+quatre point 11 de l'impôt et il est temps d'agir
+
+00:14:47,000 --> 00:14:51,000
+which is a sin 0 X over X type a function
+qui est un péché 0 X sur X taper une fonction
+
+00:14:51,000 --> 00:14:55,000
+and its Fourier transform
+et sa transformée de Fourier
+
+00:14:55,000 --> 00:14:58,000
+corresponds to a
+correspond à un
+
+00:14:58,000 --> 00:15:04,000
+rectangular shape in the frequency domain there's also
+forme rectangulaire dans le domaine de fréquence, il ya aussi
+
+00:15:04,000 --> 00:15:08,000
+another example in the text the example the preseason this one
+un autre exemple dans le texte l'exemple la pré-saison-ci
+
+00:15:08,000 --> 00:15:13,000
+which is example four-point 10 and an example four point 10
+qui est par exemple de quatre points 10 et un exemple quatre points 10
+
+00:15:13,000 --> 00:15:16,000
+we begin with a rectangle
+nous commençons par un rectangle
+
+00:15:16,000 --> 00:15:20,000
+and its Fourier transform is love the form
+et sa transformée de Fourier est l'amour de la forme
+
+00:15:20,000 --> 00:15:24,000
+all a sin x over X function
+tout un péché x sur la fonction X
+
+00:15:24,000 --> 00:15:27,000
+so in fact if we look at these to
+donc en fait, si on regarde les à
+
+00:15:27,000 --> 00:15:30,000
+examples together what we see is
+exemples ensemble ce que nous voyons est
+
+00:15:30,000 --> 00:15:34,000
+the duality very evident in other words
+la dualité très évident en d'autres termes
+
+00:15:34,000 --> 00:15:37,000
+if we take this time function and
+si nous prenons cette fonction de temps et
+
+00:15:37,000 --> 00:15:41,000
+instead think i've a frequency function that has the same form
+au lieu crois que j'ai une fonction de fréquence qui a la même forme
+
+00:15:41,000 --> 00:15:45,000
+then we simply interchange the rolls a time-frequency
+nous échangeons simplement les rouleaux un temps-fréquence
+
+00:15:45,000 --> 00:15:49,000
+in the other domains so the fact that these to correspond
+dans les autres domaines de sorte que le fait que ceux-ci correspondent à
+
+00:15:49,000 --> 00:15:52,000
+means that these two cars find
+signifie que ces deux voitures trouver
+
+00:15:52,000 --> 00:15:56,000
+course and in this particular example
+Bien entendu, et dans cet exemple particulier
+
+00:15:56,000 --> 00:16:01,000
+we because it the fact that we picked a symmetric function even function
+nous parce que le fait que nous avons choisi une fonction symétrique même fonction
+
+00:16:01,000 --> 00:16:06,000
+in fact the additional twist love the time axis being reversed didn't show up
+en fait, la torsion supplémentaire aiment le temps axe étant inversée ne s'est pas présenté
+
+00:16:06,000 --> 00:16:10,000
+in her in duality with this example
+dans sa dualité dans cet exemple
+
+00:16:10,000 --> 00:16:13,000
+now one thing he says of course is that essentially
+maintenant une chose qu'il dit est bien sûr que l'essentiel
+
+00:16:13,000 --> 00:16:17,000
+anytime you've calculated
+quand vous avez calculé
+
+00:16:17,000 --> 00:16:20,000
+the 48 transform a one-time function
+48 la transformation d'une fonction ponctuelle
+
+00:16:20,000 --> 00:16:24,000
+then you actually calculate the Fourier transform
+alors vous avez réellement calculer la transformée de Fourier
+
+00:16:24,000 --> 00:16:27,000
+to type functions another one being
+taper fonctions l'autre étant
+
+00:16:27,000 --> 00:16:32,000
+the dual example to the one that you just calculated
+le double exemple de celui que vous venez de calculer
+
+00:16:32,000 --> 00:16:35,000
+now also somewhat related to do our the
+maintenant aussi un peu lié à faire notre la
+
+00:16:35,000 --> 00:16:39,000
+is what is referred to as parce balls
+est ce que l'on appelle des boules de Parcé
+
+00:16:39,000 --> 00:16:43,000
+relation for the continuous-time Fourier transform
+rapport pour le temps continue à transformée de Fourier
+
+00:16:43,000 --> 00:16:47,000
+and essentially what parts are false relationship says
+et essentiellement ce que les pièces sont fausses relation dit
+
+00:16:47,000 --> 00:16:50,000
+is that as kind of a a summary other
+est que comme une sorte de résumé d'autres
+
+00:16:50,000 --> 00:16:54,000
+it says dead the energy
+il est dit mort l'énergie
+
+00:16:54,000 --> 00:16:57,000
+in a time function and the energy
+dans une fonction de temps et de l'énergie
+
+00:16:57,000 --> 00:17:01,000
+in its Fourier transform are proportional the proportionality factor
+dans sa transformée de Fourier est proportionnelle au facteur de proportionnalité
+
+00:17:01,000 --> 00:17:03,000
+being a factor of two pi
+étant un facteur de deux pi
+
+00:17:03,000 --> 00:17:08,000
+it well that summarized here what's meant by the energy
+bien que résumer ici ce qu'on entend par l'énergie
+
+00:17:08,000 --> 00:17:12,000
+is course the ago the magnitude squared effect City
+est bien sûr la il ya l'ampleur carré effet Ville
+
+00:17:12,000 --> 00:17:16,000
+and the statement apart the balls relation and is dead
+et la déclaration en dehors de la relation de balles et est mort
+
+00:17:16,000 --> 00:17:20,000
+that in a brawl the energy and accept T
+que dans une bagarre l'énergie et accepter T
+
+00:17:20,000 --> 00:17:23,000
+is proportional to this integral which is the energy
+est proportionnel à l'intégrale, qui est l'énergie
+
+00:17:23,000 --> 00:17:26,000
+indexable Megan now
+indexables Megan maintenant
+
+00:17:26,000 --> 00:17:31,000
+although we've incorporated the 4e a series
+même si nous avons intégré le 4e d'une série
+
+00:17:31,000 --> 00:17:36,000
+within a framework for the Fourier transform parcels relation
+dans un cadre pour la transformée de Fourier colis rapport
+
+00:17:36,000 --> 00:17:39,000
+needs to be modified slightly for
+doit être légèrement modifié pour
+
+00:17:39,000 --> 00:17:43,000
+for a series because the fact that periodic signal
+pour une série, car le fait que le signal périodique
+
+00:17:43,000 --> 00:17:46,000
+has an infinite amount of energy and its and essentially
+a une quantité infinie d'énergie et son et essentiellement
+
+00:17:46,000 --> 00:17:50,000
+that former parcels relationship for the periodic case would say
+que l'ancien rapport de colis pour le cas périodique dirait
+
+00:17:50,000 --> 00:17:53,000
+infinity equals infinity which isn't too useful
+l'infini est égal à l'infini qui n'est pas très utile
+
+00:17:53,000 --> 00:17:59,000
+however can be modified so that part's a false relationship for the periodic case
+peut cependant être modifiée de sorte que le cadre est une fausse relation pour le cas périodique
+
+00:17:59,000 --> 00:18:02,000
+says essentially that the energy E
+dit en substance que l'énergie E
+
+00:18:02,000 --> 00:18:07,000
+in one period other periodic time function
+dans une autre période de la fonction temporelle périodique
+
+00:18:07,000 --> 00:18:12,000
+in is proportional with this is the proportionality factor
+en est proportionnel à la présente est le facteur de proportionnalité
+
+00:18:12,000 --> 00:18:15,000
+proportional to the sum %uh the magnitude squared
+proportionnel à la somme du% uh amplitude élevée au carré
+
+00:18:15,000 --> 00:18:19,000
+up the coefficients in other words the energy in one period
+les coefficients en d'autres termes l'énergie dans une période
+
+00:18:19,000 --> 00:18:23,000
+is proportional to the energy in the sequence
+est proportionnelle à l'énergie dans la séquence
+
+00:18:23,000 --> 00:18:29,000
+that represents the four EA series coefficients
+qui représente les quatre coefficients de la série EA
+
+00:18:29,000 --> 00:18:32,000
+now okay there are lots of other properties
+maintenant bien il ya beaucoup d'autres propriétés
+
+00:18:32,000 --> 00:18:37,000
+and there developed in the text in the study guide
+et se développa dans le texte dans le guide d'étude
+
+00:18:37,000 --> 00:18:42,000
+a number a properties that we want to make particular you so
+un certain nombre de propriétés que nous voulons faire particulier que vous si
+
+00:18:42,000 --> 00:18:45,000
+during this lecture and in later lectures
+au cours de cette conférence et à des conférences ultérieures
+
+00:18:45,000 --> 00:18:49,000
+are ones that I summarize here and
+sont ceux que je résumerai ici et
+
+00:18:49,000 --> 00:18:52,000
+I won't demonstrate the proves but
+Je ne vais pas montrer le prouve, mais
+
+00:18:52,000 --> 00:18:58,000
+a principally focus on some with the interpretation is the lecture goes on
+un accent principalement sur certains de l'interprétation est la conférence qui se passe
+
+00:18:58,000 --> 00:19:02,000
+well in the first property that I have listed here's what's referred to as the
+bien dans la première propriété que je viens d'énumérer, voici ce qui est appelé le
+
+00:19:02,000 --> 00:19:04,000
+time shifting property
+décalage de temps bien
+
+00:19:04,000 --> 00:19:09,000
+and the time shifting property says if I have a time function
+et le temps de passage bien dit que si j'ai une fonction de temps
+
+00:19:09,000 --> 00:19:13,000
+with a Fourier transform mexico maker
+avec une transformée de Fourier mexique fabricant
+
+00:19:13,000 --> 00:19:17,000
+if I shift that time function in time
+si je déplace cette fonction de temps en temps
+
+00:19:17,000 --> 00:19:21,000
+dan that corresponds to multiplying
+dan qui correspond à multiplier
+
+00:19:21,000 --> 00:19:24,000
+the 48 transformed by this factor
+48 transformé par ce facteur
+
+00:19:24,000 --> 00:19:29,000
+now as you examine this factor what you can see is that
+maintenant que vous examinez ce facteur que vous pouvez voir est que
+
+00:19:29,000 --> 00:19:32,000
+this factor has magnitude unity
+ce facteur a une magnitude de l'unité
+
+00:19:32,000 --> 00:19:36,000
+and it has a phase which is linear with frequency
+et il a une phase qui est linéaire avec la fréquence
+
+00:19:36,000 --> 00:19:39,000
+and is slow %uh minus 20
+et est lent% euh moins 20
+
+00:19:39,000 --> 00:19:42,000
+so a statement to remember that will come up
+si une déclaration à rappeler que viendra
+
+00:19:42,000 --> 00:19:46,000
+many times throughout the cores
+à plusieurs reprises tout au long des noyaux
+
+00:19:46,000 --> 00:19:51,000
+is that a timeshare after a displacement in time
+est-ce une multipropriété après un déplacement dans le temps
+
+00:19:51,000 --> 00:19:55,000
+corresponds to linear phase
+correspond à phase linéaire
+
+00:19:55,000 --> 00:20:01,000
+or change in linear phase earlier change in phase and frequency
+ou changer de phase linéaire changement plus tôt dans la phase et la fréquence
+
+00:20:01,000 --> 00:20:05,000
+another property in and in fact a pair of properties
+une autre propriété dans et en fait une paire de propriétés
+
+00:20:05,000 --> 00:20:10,000
+that will make reference to as we turn our attention toward the end of this
+qui fera référence à que nous nous tournons notre attention vers la fin de cette
+
+00:20:10,000 --> 00:20:11,000
+lecture to
+conférences à
+
+00:20:11,000 --> 00:20:16,000
+solving differential equations using the Fourier transform
+résoudre des équations différentielles en utilisant la transformée de Fourier
+
+00:20:16,000 --> 00:20:21,000
+is hit was referred to as the differentiation property
+est frappé a été désigné comme la propriété de différenciation
+
+00:20:21,000 --> 00:20:26,000
+and its companion which is the integration property
+et son compagnon qui est la propriété d'intégration
+
+00:20:26,000 --> 00:20:30,000
+the differentiation property says again if we have
+la propriété de différenciation dit à nouveau si nous avons
+
+00:20:30,000 --> 00:20:34,000
+a time function whose with Fourier transform mexico maker
+une fonction du temps dont la transformée de Fourier mexique fabricant
+
+00:20:34,000 --> 00:20:39,000
+the Fourier transform up the time derivative that
+la transformée de Fourier jusqu'à la dérivée dans le temps que
+
+00:20:39,000 --> 00:20:44,000
+is in corresponds to multiplying the Fourier transform
+est en multipliant correspond à la transformée de Fourier
+
+00:20:44,000 --> 00:20:47,000
+by a linear function of frequency so
+par une fonction linéaire de la fréquence, de sorte
+
+00:20:47,000 --> 00:20:51,000
+here it's a linear able to change dead
+ici c'est une mesure linéaire à changer morts
+
+00:20:51,000 --> 00:20:55,000
+that corresponds to differentiation
+qui correspond à la différenciation
+
+00:20:55,000 --> 00:20:59,000
+now at first glance what you might think is that
+maintenant au premier coup d'œil ce que vous pourriez penser que
+
+00:20:59,000 --> 00:21:02,000
+the integration property is just the reverse if that if
+la propriété de l'intégration est tout le contraire si si
+
+00:21:02,000 --> 00:21:06,000
+for the differentiation property you multiply by J Omega then
+pour la propriété de différenciation vous multipliez par J Omega alors
+
+00:21:06,000 --> 00:21:10,000
+for integration you must abide by jail maker and thats almost correct
+pour l'intégration, vous devez respecter prison fabricant et c'est presque correct
+
+00:21:10,000 --> 00:21:14,000
+except not quite and the reason for the not quite
+sauf pas tout à fait et la raison du pas assez
+
+00:21:14,000 --> 00:21:18,000
+is that recall that if you differentiate
+c'est que, rappelons que si vous différenciez
+
+00:21:18,000 --> 00:21:22,000
+what happens of course is that you lose a constant
+ce qui se passe est bien sûr que vous perdez une constante
+
+00:21:22,000 --> 00:21:26,000
+and if we have a time function thats some fun and energy signal plus a
+et si nous avons une fonction du temps de l'amusement et des thats signal d'énergie en plus d'une
+
+00:21:26,000 --> 00:21:27,000
+constant
+constante
+
+00:21:27,000 --> 00:21:30,000
+differentiating will destroy the constant
+différenciation va détruire la constante
+
+00:21:30,000 --> 00:21:35,000
+and integration the immigration property in essence tries to bring that back
+et l'intégration de la propriété de l'immigration, en substance, tente de ramener ce
+
+00:21:35,000 --> 00:21:39,000
+so the integration property which is the inverse
+de sorte que la propriété d'intégration qui est l'inverse
+
+00:21:39,000 --> 00:21:43,000
+of the differentiation property says that we divide
+de la propriété de différenciation dit que nous divisons
+
+00:21:43,000 --> 00:21:47,000
+the transformed by J Omega and then
+la transformée par J Omega puis
+
+00:21:47,000 --> 00:21:52,000
+if in fact their was a constant added to accept T
+si en fait il y avait un constant ajouté à accepter T
+
+00:21:52,000 --> 00:21:55,000
+we have to account for that by inserting an impulse
+nous devons tenir compte de ce que par l'insertion d'une impulsion
+
+00:21:55,000 --> 00:21:59,000
+into the Fourier transform and
+dans la transformée de Fourier et la
+
+00:21:59,000 --> 00:22:03,000
+the file property that I want to draw your attention to
+la propriété de fichier que je veux attirer votre attention sur
+
+00:22:03,000 --> 00:22:06,000
+on this you graph is the linearity property
+sur ce que vous représentez graphiquement est la propriété de linéarité
+
+00:22:06,000 --> 00:22:10,000
+which is very straight forward to demonstrate from
+qui est en avant très simple de démontrer de
+
+00:22:10,000 --> 00:22:14,000
+the analysis and synthesis equations which simply said is
+l'analyse et les équations de synthèse qui a simplement dit est
+
+00:22:14,000 --> 00:22:19,000
+if X 100 maker is the Fourier transform X 1ft
+si X 100 fabricant est la transformée de Fourier X 1 pied
+
+00:22:19,000 --> 00:22:23,000
+and x2 Omega is the Fourier transform X 2ft
+et x2 Omega est la transformée de Fourier X 2 pieds
+
+00:22:23,000 --> 00:22:27,000
+then the Fourier transform a linear combination is
+alors la transformée de Fourier est une combinaison linéaire
+
+00:22:27,000 --> 00:22:32,000
+a linear combination love the Fourier transforms
+une combinaison linéaire aiment les transformées de Fourier
+
+00:22:32,000 --> 00:22:37,000
+now let me emphasize also that these properties for the most part
+maintenant laissez-moi aussi de souligner que ces propriétés pour la plupart
+
+00:22:37,000 --> 00:22:40,000
+apply both 240 a series and Fourier transforms
+appliquer les deux 240 une série et transformée de Fourier
+
+00:22:40,000 --> 00:22:44,000
+because in fact and what we've done is to incorporate
+car en fait, et ce que nous avons fait, c'est d'intégrer
+
+00:22:44,000 --> 00:22:47,000
+the forty a series within the
+la quarante une série dans le
+
+00:22:47,000 --> 00:22:51,000
+framework of the Fourier transform
+cadre de la transformation de Fourier
+
+00:22:51,000 --> 00:22:55,000
+okay now will be using a number of these properties shortly when we turn our
+bien maintenant seront en utilisant un certain nombre de ces propriétés peu lorsque nous tournons notre
+
+00:22:55,000 --> 00:22:56,000
+attention to
+attention à
+
+00:22:56,000 --> 00:23:01,000
+near-constant coefficient differential equations however before we do that I'd
+équations différentielles coefficient près constants mais avant cela je ferais
+
+00:23:01,000 --> 00:23:02,000
+like to
+comme à
+
+00:23:02,000 --> 00:23:05,000
+focus on two additional
+mettre l'accent sur deux autres
+
+00:23:05,000 --> 00:23:08,000
+major properties and
+propriétés principales et
+
+00:23:08,000 --> 00:23:12,000
+these are what are referred to as the convolution property and the modulation
+c'est ce qu'on appelle la propriété de convolution et la modulation
+
+00:23:12,000 --> 00:23:13,000
+property
+propriété
+
+00:23:13,000 --> 00:23:17,000
+and in fact the convolution property as I'm about
+et en fait la propriété de convolution comme je suis sur le
+
+00:23:17,000 --> 00:23:20,000
+to introduces forms the
+introduit formes de l'
+
+00:23:20,000 --> 00:23:24,000
+mathematical and conceptual basis for
+base mathématique et conceptuel pour
+
+00:23:24,000 --> 00:23:28,000
+the whole notion of filtering which in fact will be
+la notion de filtrage qui en fait seront
+
+00:23:28,000 --> 00:23:32,000
+a topic by itself in a set of lectures and
+un sujet par lui-même dans une série de conférences et
+
+00:23:32,000 --> 00:23:36,000
+and in fact is a chapter by itself in the textbook
+et est en fait un chapitre en soi dans le manuel
+
+00:23:36,000 --> 00:23:40,000
+similarly what i'll refer to as the modulation property
+de même ce que je vais j'appelle la propriété de modulation
+
+00:23:40,000 --> 00:23:43,000
+again well occupy its own set
+encore bien occuper son propre ensemble
+
+00:23:43,000 --> 00:23:48,000
+have lectures as we go through this scores and in fact has its own
+avoir des conférences que nous avançons dans ce scores et en fait a sa propre
+
+00:23:48,000 --> 00:23:52,000
+a chapter in the textbook
+un chapitre dans le manuel
+
+00:23:52,000 --> 00:23:58,000
+let me in just indicate what the convolution property is
+Permettez-moi en tout indique que la propriété de convolution est
+
+00:23:58,000 --> 00:24:02,000
+and and what the convolution property
+et et ce que la propriété de convolution
+
+00:24:02,000 --> 00:24:08,000
+tells us is that
+nous dit est que
+
+00:24:08,000 --> 00:24:12,000
+the 48 transform of the convolution
+la transformation de la 48 convolution
+
+00:24:12,000 --> 00:24:16,000
+a two-time functions is the product
+une des fonctions à deux temps est le produit
+
+00:24:16,000 --> 00:24:19,000
+all therefore yea transforms
+tous donc oui transformations
+
+00:24:19,000 --> 00:24:22,000
+so it says for example dead
+il dit par exemple mort
+
+00:24:22,000 --> 00:24:27,000
+if I have a linear time-invariant system
+si j'ai un système invariant dans le temps linéaire
+
+00:24:27,000 --> 00:24:32,000
+and in I have an input exits the an impulse response HFT
+et j'ai une entrée sort de l'un HFT de réponse impulsionnelle
+
+00:24:32,000 --> 00:24:35,000
+and the output of course being the convolution
+et la sortie étant bien sûr la convolution
+
+00:24:35,000 --> 00:24:41,000
+then in fact if I look at this in the frequency domain
+alors en fait, si je regarde cela dans le domaine fréquentiel
+
+00:24:41,000 --> 00:24:44,000
+the Fourier transform up the output
+la transformée de Fourier jusqu'à la sortie
+
+00:24:44,000 --> 00:24:47,000
+is the for EA transform the input
+est la pour EA transformer l'entrée
+
+00:24:47,000 --> 00:24:53,000
+times the Fourier transform the impulse response
+fois la transformée de Fourier de la réponse impulsionnelle
+
+00:24:53,000 --> 00:24:56,000
+now you can demonstrate this property
+maintenant vous pouvez montrer cette propriété
+
+00:24:56,000 --> 00:25:01,000
+algebraically by essentially taking the convolution integral
+algébriquement essentiellement par l'intégrale de convolution en prenant
+
+00:25:01,000 --> 00:25:04,000
+and applying to 48 transforming doing the appropriate
+et en appliquant à 48 transformation faisant l'approprié
+
+00:25:04,000 --> 00:25:08,000
+in a changing the order integration et cetera
+dans un changement de l'intégration de l'ordre et cetera
+
+00:25:08,000 --> 00:25:12,000
+but who what I'd like to draw your attention to is a
+mais qui ce que je voudrais attirer votre attention sur un
+
+00:25:12,000 --> 00:25:16,000
+somewhat more intuitive interpretation of the property
+interprétation un peu plus intuitive de la propriété
+
+00:25:16,000 --> 00:25:20,000
+and the intuitive interpretations stems from
+et les interprétations intuitives tiges de
+
+00:25:20,000 --> 00:25:25,000
+the relationship between the Fourier transform at the impulse response
+la relation entre la transformée de Fourier de la réponse impulsionnelle
+
+00:25:25,000 --> 00:25:29,000
+and what we refer to as the frequency response
+et ce que nous appelons la réponse en fréquence
+
+00:25:29,000 --> 00:25:32,000
+now recall dead wanna have
+maintenant rappeler veux morts ont
+
+00:25:32,000 --> 00:25:37,000
+the things that lettuce to use complex exponentials as building blocks
+les choses qui laitue à utiliser exponentielles complexes comme des blocs de construction
+
+00:25:37,000 --> 00:25:41,000
+was the fact that there I can functions linear time-invariant systems in other
+était le fait que je peux les fonctions des systèmes de linéaires invariants dans d'autres
+
+00:25:41,000 --> 00:25:42,000
+words
+paroles
+
+00:25:42,000 --> 00:25:45,000
+if we have linear time-invariant system
+si nous avons le système de temps linéaire invariant
+
+00:25:45,000 --> 00:25:49,000
+and I have an input which is a complex exponential
+et j'ai une entrée qui est une exponentielle complexe
+
+00:25:49,000 --> 00:25:53,000
+the output is a complex exponential the same frequency
+la sortie est une exponentielle de la même fréquence complexe
+
+00:25:53,000 --> 00:25:57,000
+multiplied by what we call the frequency response
+multiplié par ce que nous appelons la réponse en fréquence
+
+00:25:57,000 --> 00:26:02,000
+and in fact the expression for the frequency response
+et en fait l'expression de la réponse en fréquence
+
+00:26:02,000 --> 00:26:08,000
+is identical to the expression for the four EA transform the impulse response
+est identique à l'expression de la transformée de quatre EA de la réponse impulsionnelle
+
+00:26:08,000 --> 00:26:11,000
+in other words the frequency response is
+en d'autres termes la réponse en fréquence est
+
+00:26:11,000 --> 00:26:16,000
+the Fourier transform of the impulse response
+la transformée de Fourier de la réponse impulsionnelle
+
+00:26:16,000 --> 00:26:19,000
+now in that context how can we
+maintenant, dans ce contexte comment pouvons-nous
+
+00:26:19,000 --> 00:26:23,000
+interpret the convolution property well
+interpréter le bien immobilier de convolution
+
+00:26:23,000 --> 00:26:28,000
+remember what I said at the beginning the lecture 1 I've pointed
+rappelle ce que j'ai dit au début de la conférence 1 j'ai fait
+
+00:26:28,000 --> 00:26:31,000
+to the synthesis equation and I said in
+l'équation de synthèse et je l'ai dit dans
+
+00:26:31,000 --> 00:26:34,000
+in essence the synthesis equation tells us
+essentiellement l'équation de synthèse nous dit
+
+00:26:34,000 --> 00:26:41,000
+how to decompose x50 as a linear combination a complex exponentials
+comment décomposer x50 comme une combinaison linéaire d'un exponentielles complexes
+
+00:26:41,000 --> 00:26:45,000
+what are the complex amplitudes are those complex exponentials
+ce sont les amplitudes complexes sont les exponentielles complexes
+
+00:26:45,000 --> 00:26:48,000
+well interns love our notation year
+bien stagiaires aiment notre année de notation
+
+00:26:48,000 --> 00:26:52,000
+the complex amplitude of those complex exponentials
+l'amplitude complexe de ces exponentielles complexes
+
+00:26:52,000 --> 00:26:58,000
+is Xserve Omega or proportional taxable make in particular taxable make a deal
+est Xserve Omega ou marque imposable proportionnelle en particulier imposable conclure un accord
+
+00:26:58,000 --> 00:26:58,000
+maker
+fabricant
+
+00:26:58,000 --> 00:27:02,000
+and then a factor two-part well
+puis un facteur deux parties bien
+
+00:27:02,000 --> 00:27:07,000
+as this signal goes through this linear time-invariant system
+que ce signal passe par ce système invariant dans le temps linéaire
+
+00:27:07,000 --> 00:27:11,000
+what happens to each of those exponentials is
+ce qui se produit pour chacune de ces exponentielles est
+
+00:27:11,000 --> 00:27:15,000
+it each one gets multiplied by the frequency response
+il est multiplié chacun d'eux par la réponse en fréquence
+
+00:27:15,000 --> 00:27:18,000
+at The Associated frequency
+à la fréquence associée
+
+00:27:18,000 --> 00:27:21,000
+what comes out is the amplitude
+ce qui sort est l'amplitude
+
+00:27:21,000 --> 00:27:25,000
+all the complex exponentials that are used
+tous les exponentielles complexes qui sont utilisés
+
+00:27:25,000 --> 00:27:28,000
+to bill the output
+de facturer la sortie
+
+00:27:28,000 --> 00:27:33,000
+so in fact the convolution property
+donc en fait la propriété de convolution
+
+00:27:33,000 --> 00:27:36,000
+simply is telling us
+il suffit de nous est de dire
+
+00:27:36,000 --> 00:27:40,000
+that interns have a decomposition the signal
+que les stagiaires ont une décomposition du signal
+
+00:27:40,000 --> 00:27:44,000
+enters a complex exponentials as we push that signal through linear
+Entre un exponentielles complexes que nous poussons ce signal par linéaire
+
+00:27:44,000 --> 00:27:46,000
+time-invariant system
+système invariant dans le temps
+
+00:27:46,000 --> 00:27:50,000
+were separately modifying with the frequency response were multiplying
+la modification ont été séparément avec la réponse en fréquence se multipliaient
+
+00:27:50,000 --> 00:27:54,000
+by the frequency response the amplitudes
+par la réponse en fréquence des amplitudes
+
+00:27:54,000 --> 00:27:58,000
+love the exponential comp phones used to build the input
+aimer les téléphones comp exponentielles utilisées pour construire l'entrée
+
+00:27:58,000 --> 00:28:01,000
+and that song intern is
+et cette chanson est stagiaire
+
+00:28:01,000 --> 00:28:06,000
+the decomposition of the output in terms of complex exponentials
+la décomposition du signal de sortie en termes d'exponentielles complexes
+
+00:28:06,000 --> 00:28:12,000
+now and I I understand that kinda going through that involves
+maintenant et II comprendre ce que cela va un peu à travers qui consiste à
+
+00:28:12,000 --> 00:28:15,000
+a little bit of sorting out and I strongly encourage you
+un peu de tri et je vous encourage vivement
+
+00:28:15,000 --> 00:28:21,000
+to try to understand and interpret the convolution property
+pour essayer de comprendre et d'interpréter la propriété de convolution
+
+00:28:21,000 --> 00:28:24,000
+in knows conceptual terms rather than simply by
+en sait sur le plan conceptuel, plutôt que simplement en
+
+00:28:24,000 --> 00:28:28,000
+applying the mathematics to the convolution integral and seeing that
+l'application des mathématiques à l'intégrale de convolution et de voir que
+
+00:28:28,000 --> 00:28:33,000
+terms match up on both sides
+termes correspondent sur les deux côtés
+
+00:28:33,000 --> 00:28:37,000
+now as i indicated the convolution property
+maintenant que je disais la propriété de convolution
+
+00:28:37,000 --> 00:28:41,000
+forms the basis for what's referred to as filtering
+forme la base de ce qui est appelé le filtrage
+
+00:28:41,000 --> 00:28:46,000
+and this is a topic that will be treating a
+et c'est un sujet qui sera traite une
+
+00:28:46,000 --> 00:28:49,000
+considerable amount of detail and after
+quantité considérable de détail et après
+
+00:28:49,000 --> 00:28:54,000
+we've also gone through a discussion love the discrete-time Fourier transform
+nous avons aussi traversé une discussion aiment la transformée de Fourier à temps discret
+
+00:28:54,000 --> 00:28:57,000
+in the next several lectures however what I'd like to do is just
+au cours des prochaines conférences mais ce que je voudrais faire, c'est juste
+
+00:28:57,000 --> 00:29:00,000
+just indicate now a little bit love
+juste indiquer maintenant un peu d'amour de peu
+
+00:29:00,000 --> 00:29:04,000
+the conceptual ideas involve
+les idées conceptuelles impliquent
+
+00:29:04,000 --> 00:29:09,000
+essentially conceptually what filtering as its
+ce qui pour l'essentiel sur le plan conceptuel comme son filtrage
+
+00:29:09,000 --> 00:29:13,000
+typically referred to corresponds to
+généralement appelé correspond à
+
+00:29:13,000 --> 00:29:16,000
+is modifying separately
+est de modifier séparément
+
+00:29:16,000 --> 00:29:20,000
+the individual frequency components in a signal
+les composantes de fréquences individuels dans un signal
+
+00:29:20,000 --> 00:29:25,000
+the convolution property told us that if we
+la propriété de convolution nous a dit que si nous
+
+00:29:25,000 --> 00:29:29,000
+look at the individual frequency comp points they get multiplied by the
+examiner les différents points de fréquence de comp ils sont multipliés par le
+
+00:29:29,000 --> 00:29:34,000
+frequency response and so what that says is that we can amplify or it anyway
+réponse en fréquence et donc ce que dit est que nous pouvons amplifier ou de toute façon
+
+00:29:34,000 --> 00:29:39,000
+any of those comp own it separately using a linear time-invariant system
+l'un de ceux échantillon possèdent séparément en utilisant un système invariant dans le temps linéaire
+
+00:29:39,000 --> 00:29:43,000
+for example what I've illustrated here is
+par exemple ce que j'ai illustré ici est
+
+00:29:43,000 --> 00:29:46,000
+the frequency response what is commonly referred to
+la réponse en fréquence ce qui est communément appelé
+
+00:29:46,000 --> 00:29:52,000
+as and ideal Lopez filter what an ideal 0 pass filter does
+comme filtre et Lopez idéal quel 0 filtre passe idéal ne
+
+00:29:52,000 --> 00:29:55,000
+is to pass exactly
+est de passer exactement
+
+00:29:55,000 --> 00:29:59,000
+frequencies in one frequency range
+les fréquences dans une gamme de fréquences
+
+00:29:59,000 --> 00:30:04,000
+and eliminate totally frequencies outside that range
+et d'éliminer totalement les fréquences en dehors de cette plage
+
+00:30:04,000 --> 00:30:09,000
+another filter which is not so ideal might for example
+un autre filtre qui n'est pas la force de manière idéale par exemple
+
+00:30:09,000 --> 00:30:12,000
+attenuate sit com phone it's in this band but not
+atténuer sit com téléphone, il est dans cette bande, mais pas
+
+00:30:12,000 --> 00:30:19,000
+I rather attenuate conference in this band but not totally eliminate them
+Je atténuer plutôt conférence dans cette bande mais pas les éliminer complètement
+
+00:30:19,000 --> 00:30:22,000
+now interns a filtering we can think back
+stagiaires maintenant un filtrage nous pouvons penser en arrière
+
+00:30:22,000 --> 00:30:25,000
+to the differentiation property and in fact interpreter
+à la propriété de différenciation en fait interprète
+
+00:30:25,000 --> 00:30:29,000
+differentiation or differentiator as a filter
+la différenciation ou de différenciation en tant que filtre
+
+00:30:29,000 --> 00:30:33,000
+recall that the differentiation property said
+rappeler que la propriété de différenciation dit
+
+00:30:33,000 --> 00:30:39,000
+that the Fourier transform all the differentiated signal
+que la transformée de Fourier du signal différencié tout
+
+00:30:39,000 --> 00:30:43,000
+is the for a transformer the original signal multiplied by J Omega
+est l'un transformateur le signal original multiplié par J Oméga
+
+00:30:43,000 --> 00:30:46,000
+so what that says then
+si ce que dit alors
+
+00:30:46,000 --> 00:30:51,000
+is dead if we have a differentiator opened the frequency response to that
+est morte, si nous avons un différentiateur ouvert la réponse en fréquence pour que
+
+00:30:51,000 --> 00:30:56,000
+is J Omega in other words the Fourier transform of the output is Jay Omega
+J est oméga-à-dire transformée de Fourier de la sortie est Jay Omega
+
+00:30:56,000 --> 00:31:00,000
+times the Fourier transform the input
+fois la transformée de Fourier de l'entrée
+
+00:31:00,000 --> 00:31:04,000
+and so the frequency response a differentiator
+et si la réponse en fréquence d'un dérivateur
+
+00:31:04,000 --> 00:31:08,000
+looks like this and turns its magnitude and what it does
+ressemble à ceci et tourne son ampleur et ce qu'il fait
+
+00:31:08,000 --> 00:31:12,000
+of course is it amplifies high frequencies
+bien sûr est qu'il amplifie les hautes fréquences
+
+00:31:12,000 --> 00:31:17,000
+and attenuates low frequencies
+et atténue les basses fréquences
+
+00:31:17,000 --> 00:31:22,000
+well let me just to kinda cement summer these ideas
+bien permettez-moi de ciment peu été ces idées
+
+00:31:22,000 --> 00:31:26,000
+illustrate them in a context 0
+les illustrer dans un contexte 0
+
+00:31:26,000 --> 00:31:29,000
+one kind of signal namely signal which in fact
+un type de signal à savoir le signal qui en fait
+
+00:31:29,000 --> 00:31:34,000
+is the spatial signal rather than a time signal
+est le signal spatial, plutôt que d'un signal de temps
+
+00:31:34,000 --> 00:31:39,000
+and this also gives me an opportunity to introduce you
+et cela me donne aussi l'occasion de vous présenter
+
+00:31:39,000 --> 00:31:43,000
+to our colleague JBJ for EA's
+à notre collègue JBJ pour EA
+
+00:31:43,000 --> 00:31:47,000
+so if we could look at our colleague mister four EA
+alors si nous pouvions regarder notre collègue monsieur quatre EA
+
+00:31:47,000 --> 00:31:51,000
+who by the way is on
+qui soit dit en passant est sur
+
+00:31:51,000 --> 00:31:55,000
+not only person who had tremendously brilliant insights
+pas seule personne qui avait des idées extrêmement brillantes
+
+00:31:55,000 --> 00:31:58,000
+and his insights in fact have led to
+et ses idées ont en fait conduit à
+
+00:31:58,000 --> 00:32:02,000
+the developments really for the foundation the developments that
+les développements vraiment pour la fondation de l'évolution que
+
+00:32:02,000 --> 00:32:07,000
+is the basis for this course he was also a very interesting fascinating person
+est à la base de ce cours, il était aussi un personnage fascinant très intéressant
+
+00:32:07,000 --> 00:32:11,000
+and there's a certain amount of historical discussion
+et il ya une certaine quantité de discussion historique
+
+00:32:11,000 --> 00:32:17,000
+about for EA and his background which you might enjoy reading in the text
+sur pour EA et son fond que vous pourriez profiter de la lecture dans le texte
+
+00:32:17,000 --> 00:32:20,000
+in any case what you're looking at a course is a signal
+en tout cas ce que vous cherchez à un cours est un signal
+
+00:32:20,000 --> 00:32:24,000
+and the signal is a spatial signal and
+et le signal est un signal spatial, et
+
+00:32:24,000 --> 00:32:28,000
+it has high frequencies and low frequencies high frequencies
+il a des fréquences hautes et basses fréquences hautes fréquences
+
+00:32:28,000 --> 00:32:32,000
+corresponding to things that are varying rapidly
+correspondant à des choses qui sont rapidement variables
+
+00:32:32,000 --> 00:32:35,000
+spatially and low frequencies barings
+spatialement et basses fréquences barings
+
+00:32:35,000 --> 00:32:38,000
+very slowly spatially it so
+très lentement dans l'espace de sorte
+
+00:32:38,000 --> 00:32:42,000
+for example we could low-pass filter
+Par exemple, nous pourrions passe-bas filtre
+
+00:32:42,000 --> 00:32:45,000
+this picture simply by asking
+cette image simplement en demandant
+
+00:32:45,000 --> 00:32:49,000
+the video crew if they could slightly defocus
+l'équipage de vidéo s'ils pouvaient légèrement défocalisation
+
+00:32:49,000 --> 00:32:55,000
+and what you see as the picture is the focus if you can hold it there
+et ce que vous voyez que l'image est le point si vous pouvez y maintenir
+
+00:32:55,000 --> 00:32:58,000
+is dead we've lost edges which
+est mort, nous avons perdu bords qui
+
+00:32:58,000 --> 00:33:03,000
+is the rapid variation and what we've retained is the broader
+est la variation rapide et ce que nous avons retenu est le plus large
+
+00:33:03,000 --> 00:33:06,000
+slow variation and now let's take out
+variation lente et maintenant nous allons prendre sur
+
+00:33:06,000 --> 00:33:10,000
+the d focusing low-pass filter and go back
+la mise au point d filtre passe-bas et revenir
+
+00:33:10,000 --> 00:33:16,000
+to a focused image
+pour une image focalisée
+
+00:33:16,000 --> 00:33:20,000
+okay now what
+bien maintenant ce
+
+00:33:20,000 --> 00:33:23,000
+and we can also consider is what would happen if we look
+et nous pouvons aussi considérer ce qui se passerait si nous regardons
+
+00:33:23,000 --> 00:33:27,000
+at the differentiated image and their are several ways that we can think about
+à l'image différenciée et leur ya plusieurs façons que nous pouvons penser
+
+00:33:27,000 --> 00:33:28,000
+this
+ce
+
+00:33:28,000 --> 00:33:33,000
+one is that a differentiator of course the output of a differentiator
+l'un est un facteur de différenciation qui bien sûr la sortie d'un différenciateur
+
+00:33:33,000 --> 00:33:37,000
+is larger where the discontinuity
+est plus grand lorsque la discontinuité
+
+00:33:37,000 --> 00:33:40,000
+or where the variation is faster
+ou lorsque la variation est plus rapide
+
+00:33:40,000 --> 00:33:43,000
+and so we would expect the edges
+et si nous nous attendons les bords
+
+00:33:43,000 --> 00:33:47,000
+to be enhanced if in fact we differentiated the image
+être améliorée si, en fait, nous avons différencié l'image
+
+00:33:47,000 --> 00:33:51,000
+or if we interpret differentiation in the context
+ou si nous interprétons la différenciation dans le contexte
+
+00:33:51,000 --> 00:33:55,000
+love our filter then what we're saying
+aimer notre filtre ensuite ce que nous disons
+
+00:33:55,000 --> 00:33:59,000
+if hey what we're saying is that in effect
+si bon que nous disons, c'est que en vigueur
+
+00:33:59,000 --> 00:34:03,000
+what's happening is that the differentiator is
+ce qui se passe, c'est que la différenciation est
+
+00:34:03,000 --> 00:34:06,000
+accentuating the high frequencies
+accentuer les hautes fréquences
+
+00:34:06,000 --> 00:34:11,000
+because if the frequency shape the differentiator now recall that this all
+parce que si la fréquence façonner la différenciation rappeler maintenant que tout cela
+
+00:34:11,000 --> 00:34:14,000
+kinda fits together is a nice package
+s'inscrit un peu ensemble, c'est un joli paquet
+
+00:34:14,000 --> 00:34:18,000
+be expected to actively the differentiation will enhance ages
+devrait être activement la différenciation permettra d'améliorer les âges
+
+00:34:18,000 --> 00:34:23,000
+when we talked about square waves and we so I have a for a series built up a
+quand nous avons parlé des ondes carrées et nous j'ai donc pour une série construit un
+
+00:34:23,000 --> 00:34:24,000
+square wave
+onde carrée
+
+00:34:24,000 --> 00:34:27,000
+we saw that it was the high frequencies
+nous avons vu que ce sont les hautes fréquences
+
+00:34:27,000 --> 00:34:31,000
+that were required in order to build up the sharp
+qui ont été nécessaires pour construire la forte
+
+00:34:31,000 --> 00:34:36,000
+edges and so either viewed as a filter or viewed intuitively
+bords et donc soit considéré comme un filtre ou vu intuitivement
+
+00:34:36,000 --> 00:34:40,000
+we would expect that the differentiated image would in fact
+nous nous attendons à ce que l'image différenciée serait en fait
+
+00:34:40,000 --> 00:34:46,000
+get would in fact it anyway the slowly varying background and amplify
+obtenir serait en fait de toute façon le fond lentement variable et amplifier
+
+00:34:46,000 --> 00:34:50,000
+the rapidly varying ages so let's look again at
+les âges varient rapidement afin regardons à nouveau
+
+00:34:50,000 --> 00:34:54,000
+our original image just to remind you love the fact that there are edges of
+notre image originale juste pour rappeler que vous aimez le fait qu'il ya des bords de
+
+00:34:54,000 --> 00:34:56,000
+course and their
+cours et leur
+
+00:34:56,000 --> 00:34:59,000
+is more slowly varying backgrounds
+est plus lente différents horizons
+
+00:34:59,000 --> 00:35:03,000
+and now let's look at the
+et maintenant, regardons à la
+
+00:35:03,000 --> 00:35:06,000
+result love passing that through
+résultat amour passant que par
+
+00:35:06,000 --> 00:35:09,000
+a differentiator and as i think is
+un différenciateur et comme je pense que c'est
+
+00:35:09,000 --> 00:35:13,000
+very evident in that in the resulting image
+très évident en ce que dans l'image résultante
+
+00:35:13,000 --> 00:35:16,000
+clearly is the edges that a retained and
+est clairement les bords qu'un retenus et
+
+00:35:16,000 --> 00:35:19,000
+the slow back to slower background variations
+le retour lent à lent variations de fond
+
+00:35:19,000 --> 00:35:26,000
+are destroyed which is consistent with everything we've said
+sont détruits, ce qui est conforme à tout ce que nous avons dit
+
+00:35:26,000 --> 00:35:30,000
+okay now i've emphasized the her will be returning
+bon maintenant, j'ai souligné le son sera de retour
+
+00:35:30,000 --> 00:35:33,000
+to a much broader discussion a filtering at
+à un débat beaucoup plus large, un filtrage à
+
+00:35:33,000 --> 00:35:38,000
+a later point in the cores right now like to comment on another
+un point dans les noyaux plus tard comme en ce moment à commenter sur un autre
+
+00:35:38,000 --> 00:35:42,000
+property which here is also as i indicated a topic I've
+propriété qui est ici aussi comme je le disais un sujet que je n'ai
+
+00:35:42,000 --> 00:35:46,000
+in its own right and which really is the dual
+dans son propre droit et ce qui est vraiment le double
+
+00:35:46,000 --> 00:35:51,000
+property to the convolution property and in fact could be argued directly from
+propriété pour la propriété de convolution et en fait pourrait faire valoir directement à partir de
+
+00:35:51,000 --> 00:35:53,000
+duality
+dualité
+
+00:35:53,000 --> 00:35:59,000
+and that is what's referred to as the modulation property
+et c'est ce qui est appelé en tant que propriété de modulation
+
+00:35:59,000 --> 00:36:03,000
+now the convolution property told us that
+maintenant la propriété de convolution nous a dit que
+
+00:36:03,000 --> 00:36:09,000
+if we convolved in the time domain we multiply in the frequency domain
+si nous convolution dans le domaine temporel, nous multiplions dans le domaine fréquentiel
+
+00:36:09,000 --> 00:36:12,000
+and we know the time and frequency domains are interchangeable because it
+et nous savons que le temps et en fréquence sont interchangeables, car il
+
+00:36:12,000 --> 00:36:13,000
+to our the
+à notre l'
+
+00:36:13,000 --> 00:36:16,000
+so what that would suggest is dead
+donc ce que cela suggère est mort
+
+00:36:16,000 --> 00:36:19,000
+if we multiply in the time domain
+si l'on multiplie dans le domaine temporel
+
+00:36:19,000 --> 00:36:23,000
+that would correspond to convolution in the frequency domain
+qui correspondrait à convolution dans le domaine fréquentiel
+
+00:36:23,000 --> 00:36:27,000
+and in fact head that is exactly what the modulation property is
+et dans la tête de fait c'est exactement ce que la propriété de modulation est
+
+00:36:27,000 --> 00:36:31,000
+I have a summarized here that if we multiply
+J'ai un résumé ici que si nous multiplions
+
+00:36:31,000 --> 00:36:34,000
+a time function by another time function then
+une fonction du temps par une autre fonction de temps, puis
+
+00:36:34,000 --> 00:36:38,000
+in the frequency domain week involved
+dans la semaine du domaine de fréquence impliqué
+
+00:36:38,000 --> 00:36:41,000
+whereas the convolution property is just the duel at that
+tandis que la propriété de convolution est juste le duel à l'
+
+00:36:41,000 --> 00:36:46,000
+namely convolved being in the time domain corresponds to
+à savoir une convolution étant dans le domaine temporel correspond à
+
+00:36:46,000 --> 00:36:49,000
+multiplication in the frequency domain
+multiplication dans le domaine des fréquences
+
+00:36:49,000 --> 00:36:54,000
+the convolution property is the basis as i indicated for filtering
+la propriété de convolution est à la base comme je le disais pour le filtrage
+
+00:36:54,000 --> 00:36:58,000
+the modulation property as I've summarized it here
+la propriété de modulation J'ai résumé ici
+
+00:36:58,000 --> 00:37:03,000
+in fact is the entire basis
+est en fait l'ensemble de la base
+
+00:37:03,000 --> 00:37:07,000
+for amplitude modulation systems issues
+pour les questions relatives aux systèmes de modulation d'amplitude
+
+00:37:07,000 --> 00:37:10,000
+almost universally in communications and wait
+presque universellement dans les communications et attendre
+
+00:37:10,000 --> 00:37:15,000
+the modulation property is we'll see when we explored in more detail
+la propriété de modulation est que nous verrons quand nous avons exploré plus en détail
+
+00:37:15,000 --> 00:37:20,000
+tells us is that if we have a signal with a certain spectrum
+nous dit, c'est que si nous avons un signal avec un certain spectre
+
+00:37:20,000 --> 00:37:23,000
+and we multiply by a sinusoidal
+et on multiplie par un sinusoïdale
+
+00:37:23,000 --> 00:37:28,000
+signal whose for EA transformers said impulses
+signal dont des transformateurs EA dit impulsions
+
+00:37:28,000 --> 00:37:33,000
+then in a frequency-domain week involved and that corresponds
+puis dans une semaine fréquence domaine concerné et qui correspond
+
+00:37:33,000 --> 00:37:37,000
+to taking the original spectrum and translating it
+à prendre le spectre original et le traduisant
+
+00:37:37,000 --> 00:37:40,000
+shifting it in frequency up to
+en décalant la fréquence jusqu'à
+
+00:37:40,000 --> 00:37:43,000
+the frequency love the carrier namely
+la fréquence aiment le transporteur à savoir
+
+00:37:43,000 --> 00:37:46,000
+the sinusoidal signal and as I said will
+le signal sinusoïdal et comme je le disais volonté
+
+00:37:46,000 --> 00:37:52,000
+come to that in much more detail in a number of lectures
+venir que beaucoup plus en détail dans un certain nombre de conférences
+
+00:37:52,000 --> 00:37:55,000
+okay now we've seen a number of properties
+bien maintenant, nous avons vu un certain nombre de propriétés
+
+00:37:55,000 --> 00:37:59,000
+and I indicated sometime earlier when we talked about
+et je l'ai dit un peu plus tôt lorsque nous avons parlé
+
+00:37:59,000 --> 00:38:04,000
+and differential equations that in fact it's the properties are the 48 transform
+et équations différentielles qui en fait c'est les propriétés sont la transformation 48
+
+00:38:04,000 --> 00:38:08,000
+that providers with a very useful
+que les fournisseurs avec un très utile
+
+00:38:08,000 --> 00:38:14,000
+an important mechanism for solving linear constant coefficient differential
+un mécanisme important pour la résolution linéaire différentiel de coefficient constant
+
+00:38:14,000 --> 00:38:15,000
+equations
+équations
+
+00:38:15,000 --> 00:38:18,000
+and but I'd like to do now
+et mais je voudrais faire maintenant
+
+00:38:18,000 --> 00:38:23,000
+is illustrate the procedure the basis for that
+est d'illustrer la procédure de base pour que
+
+00:38:23,000 --> 00:38:26,000
+and I think what we'll do is illustrated simply in the context of several
+et je pense que nous allons faire est illustrée simplement dans le cadre de plusieurs
+
+00:38:26,000 --> 00:38:30,000
+examples
+exemples
+
+00:38:30,000 --> 00:38:33,000
+okay well in what i've indicated is
+bien bien dans ce que j'ai dit est
+
+00:38:33,000 --> 00:38:37,000
+a system
+un système
+
+00:38:37,000 --> 00:38:41,000
+with her a an impulse response HFT
+avec elle une DFT de réponse impulsionnelle
+
+00:38:41,000 --> 00:38:46,000
+or frequency response teachable nigga and of course we know that in the time
+ou la réponse en fréquence nigga enseignable et bien sûr, nous savons que dans le temps
+
+00:38:46,000 --> 00:38:48,000
+domain it's just right to convolution
+domaine c'est juste à convolution
+
+00:38:48,000 --> 00:38:54,000
+in the frequency domain its described through multiplication
+dans le domaine des fréquences par multiplication décrit son
+
+00:38:54,000 --> 00:38:57,000
+and I in essence
+et moi en essence
+
+00:38:57,000 --> 00:39:01,000
+am assuming that we're talking about a linear time-invariant system
+pars du principe que nous parlons d'un système invariant dans le temps linéaire
+
+00:39:01,000 --> 00:39:06,000
+and we're also going to assume that it's characterized by a win here comes the
+et nous allons également supposer qu'il est caractérisé par une victoire ici est la
+
+00:39:06,000 --> 00:39:09,000
+coefficient differential equation
+équation différentielle du coefficient
+
+00:39:09,000 --> 00:39:12,000
+where we're going to oppose the condition
+où nous allons pour s'opposer à la condition
+
+00:39:12,000 --> 00:39:15,000
+that its causal linear and time-invariant
+que son linéaire et invariant dans le temps causal
+
+00:39:15,000 --> 00:39:19,000
+or equivalent Lee that the initial condition conditions
+ou l'équivalent Lee que les conditions de conditions initiales
+
+00:39:19,000 --> 00:39:22,000
+are consistent with initial rest
+sont compatibles avec le repos initial
+
+00:39:22,000 --> 00:39:26,000
+and it's because it the fact that we're assuming
+et c'est parce que le fait que nous supposons
+
+00:39:26,000 --> 00:39:29,000
+that is a linear time-invariant system that
+c'est un système invariant dans le temps linéaire, qui
+
+00:39:29,000 --> 00:39:34,000
+we can describe it in the frequency domain through the convolution property
+on peut la décrire dans le domaine fréquentiel grâce à la propriété de convolution
+
+00:39:34,000 --> 00:39:39,000
+and we can use the properties love the forty a transfer
+et nous pouvons utiliser les propriétés aiment la quarante un transfert
+
+00:39:39,000 --> 00:39:44,000
+so let's take as our example a first-order differential equation
+prenons donc comme exemple une équation différentielle du premier ordre
+
+00:39:44,000 --> 00:39:49,000
+as I indicate here so the derivative the output plus eight times the output is
+comme je l'indique ici si le dérivé de la sortie, plus de huit fois la sortie est
+
+00:39:49,000 --> 00:39:51,000
+equal to the input
+égale à l'entrée
+
+00:39:51,000 --> 00:39:57,000
+and now we can use the differentiation property
+et maintenant nous pouvons utiliser la propriété de la différenciation
+
+00:39:57,000 --> 00:40:01,000
+if we for EA transform mystic entire expression
+si nous transformons pour EA mystique toute expression
+
+00:40:01,000 --> 00:40:05,000
+the differentiation property tells us that
+la propriété de différenciation nous dit que
+
+00:40:05,000 --> 00:40:08,000
+the forty a transformer the derivative of the output
+la quarante un transformateur la dérivée de la sortie
+
+00:40:08,000 --> 00:40:14,000
+is the for a transformer the output multiplied by J Omega
+est l'un transformateur la sortie multipliée par J Omega
+
+00:40:14,000 --> 00:40:18,000
+and Lenny arity well let us
+et Lenny arité bien nous laisser
+
+00:40:18,000 --> 00:40:23,000
+right the Fourier transform love this as eight times while Omega
+droit transformée de Fourier amour ce que huit fois en Omega
+
+00:40:23,000 --> 00:40:26,000
+and since these are added together and since we have the linear
+et puisque ceux-ci sont additionnés et puisque nous avons le linéaire
+
+00:40:26,000 --> 00:40:29,000
+linearity property these are added together
+propriété de linéarité ceux-ci sont additionnés
+
+00:40:29,000 --> 00:40:34,000
+and XOM Omega is and the Fourier transform affect safety
+et XOM Omega est et la transformée de Fourier incidence sur la sécurité
+
+00:40:34,000 --> 00:40:40,000
+so what we've used is the differentiation property
+donc ce que nous avons utilisé est la propriété de différenciation
+
+00:40:40,000 --> 00:40:47,000
+and reviews the when the arity property
+et examine le lorsque la propriété arité
+
+00:40:47,000 --> 00:40:51,000
+right now weekend solve this equation
+maintenant week-end résoudre cette équation
+
+00:40:51,000 --> 00:40:55,000
+for y Omega the forty a transformer the output
+pour y Omega quarante un transformateur de sortie
+
+00:40:55,000 --> 00:40:58,000
+in terms of Xserve Omega the Fourier transform
+en termes de Xserve Omega transformée de Fourier
+
+00:40:58,000 --> 00:41:02,000
+the input and a simple algebraic step
+l'entrée et une étape algébrique simple
+
+00:41:02,000 --> 00:41:08,000
+gets s to this expression so the for a chance for the output is one over
+obtient de cette expression si la pour avoir une chance pour la sortie est un plus
+
+00:41:08,000 --> 00:41:09,000
+Jamaica plus a
+Jamaica plus a
+
+00:41:09,000 --> 00:41:14,000
+ties the forty a transformer the input and I just simply repeated
+cravates quarante un transformateur d'entrée et je répétais tout simplement
+
+00:41:14,000 --> 00:41:18,000
+that equation appear
+cette équation apparaissent
+
+00:41:18,000 --> 00:41:22,000
+now so far this is algebra
+maintenant autant que cela soit l'algèbre
+
+00:41:22,000 --> 00:41:27,000
+and and question is now how do we interpret this
+et et question est maintenant comment pouvons-nous interpréter cette
+
+00:41:27,000 --> 00:41:32,000
+well we know that the for a transformer the output
+ainsi nous savons que l'un transformateur de la sortie
+
+00:41:32,000 --> 00:41:37,000
+is the forty a transformer the input times the Fourier transform
+est le quarante un transformateur les temps de saisie de la transformée de Fourier
+
+00:41:37,000 --> 00:41:42,000
+are the impulse response to the system namely the frequency response
+sont la réponse impulsionnelle de système à savoir la réponse en fréquence
+
+00:41:42,000 --> 00:41:45,000
+so in fact if we think love
+donc en fait, si nous pensons que l'amour
+
+00:41:45,000 --> 00:41:49,000
+a chip tanh Omega as a Fourier transform pair
+une Omega puce tanh comme une transformée de Fourier paire
+
+00:41:49,000 --> 00:41:53,000
+then is the convolution property that lets us
+alors est la propriété de convolution qui nous permet de
+
+00:41:53,000 --> 00:41:56,000
+quaid this term with
+Quaid ce terme avec
+
+00:41:56,000 --> 00:41:59,000
+H Omega so here
+H Omega alors voici
+
+00:41:59,000 --> 00:42:05,000
+were using the convolution property
+ont été en utilisant la propriété de convolution
+
+00:42:05,000 --> 00:42:09,000
+and so we know what the 48 transform
+et nous savons donc ce que la transformation 48
+
+00:42:09,000 --> 00:42:13,000
+or the impulse responses they only one over
+ou les réponses impulsionnelles ils un seul de plus de
+
+00:42:13,000 --> 00:42:16,000
+J Omega plus a now
+J Oméga plus un maintenant
+
+00:42:16,000 --> 00:42:20,000
+in we may have for example what is in our problem
+en nous avons par exemple ce qui est en notre problème
+
+00:42:20,000 --> 00:42:26,000
+instead of getting the frequency response to get the impulse response
+au lieu d'obtenir la réponse en fréquence pour obtenir la réponse impulsionnelle
+
+00:42:26,000 --> 00:42:30,000
+and there are a variety of ways that we can't do this we can attempt to go
+et il existe une variété de façons que nous ne pouvons pas faire ce que nous pouvons tenter d'aller
+
+00:42:30,000 --> 00:42:33,000
+through the inverse Fourier transform expression
+par la transformation inverse de Fourier de l'expression
+
+00:42:33,000 --> 00:42:38,000
+but in fact one of the most useful ways is their formally called
+mais en fait l'un des moyens les plus utiles est leur formellement appelé
+
+00:42:38,000 --> 00:42:41,000
+the inspection method informally
+le procédé d'inspection de manière informelle
+
+00:42:41,000 --> 00:42:46,000
+its called if you work that out going one way
+elle est appelée si vous travaillez que sur va dans un sens
+
+00:42:46,000 --> 00:42:49,000
+then you ought to remember the answer so that you know how to get back
+alors vous devez vous rappeler la réponse de sorte que vous savez comment revenir
+
+00:42:49,000 --> 00:42:52,000
+method so what that says is
+méthode si ce que dit est
+
+00:42:52,000 --> 00:42:58,000
+remember dead we worked an example and in fact I showed you the example
+n'oubliez pas morts, nous avons travaillé, par exemple, et en fait, je vous ai montré l'exemple
+
+00:42:58,000 --> 00:43:01,000
+earlier in the lecture that
+plus tôt dans la conférence que
+
+00:43:01,000 --> 00:43:04,000
+the Fourier transform a view to the minus eighty times a step
+la transformée de Fourier en vue de quatre-vingts fois moins une étape
+
+00:43:04,000 --> 00:43:07,000
+is one over J Omega plus a
+J est une oméga-dessus, plus une
+
+00:43:07,000 --> 00:43:13,000
+so what is the inverse Fourier transform a 1-over J Omega plus a
+alors quelle est la transformée de Fourier inverse à 1 sur J Oméga plus un
+
+00:43:13,000 --> 00:43:17,000
+well ants need to the minus eighty
+bien les fourmis doivent le quatre-vingt de moins
+
+00:43:17,000 --> 00:43:20,000
+times unit step
+l'étape de l'unité de temps
+
+00:43:20,000 --> 00:43:26,000
+and that's just simply remembering in essence this particular transformed pier
+et ce n'est tout simplement se rappeler, en substance, cette jetée transformé particulier
+
+00:43:26,000 --> 00:43:30,000
+well I've drawn graphically
+bien que j'ai dessiné graphique
+
+00:43:30,000 --> 00:43:36,000
+the magnitude of the Fourier transform here
+l'amplitude de la transformée de Fourier ici
+
+00:43:36,000 --> 00:43:41,000
+and below it we have the impulse response
+et au-dessous, nous avons la réponse impulsionnelle
+
+00:43:41,000 --> 00:43:46,000
+the apostle spines is as I just indicated either -80
+la épines apôtre est comme je viens de le dire, soit -80
+
+00:43:46,000 --> 00:43:51,000
+times you see now let's go back up and look at
+fois que vous voyez maintenant Revenons-vous et regardez
+
+00:43:51,000 --> 00:43:56,000
+the magnitude over the frequency response
+la grandeur par rapport à la réponse en fréquence
+
+00:43:56,000 --> 00:44:00,000
+and given just a little bit of discussion that we had
+et donné un peu de discussion que nous avions
+
+00:44:00,000 --> 00:44:04,000
+previously about filtering you should be able to
+déjà sur le filtrage, vous devriez être en mesure de
+
+00:44:04,000 --> 00:44:09,000
+in for something about the filtering characteristics
+dans quelque chose sur les caractéristiques de filtrage
+
+00:44:09,000 --> 00:44:14,000
+love this simple first-order differential equation
+aimer cette équation différentielle du premier ordre simple
+
+00:44:14,000 --> 00:44:17,000
+in particular if you look at that frequency response
+en particulier si vous regardez ce que la réponse en fréquence
+
+00:44:17,000 --> 00:44:22,000
+the frequency response falls off with frequency and so it tends to do
+la réponse en fréquence diminue avec la fréquence et de sorte qu'il a tendance à faire
+
+00:44:22,000 --> 00:44:26,000
+is attenuate high frequencies and
+est d'atténuer les hautes fréquences et
+
+00:44:26,000 --> 00:44:29,000
+retain low frequencies so in fact
+conserver les basses fréquences donc en fait
+
+00:44:29,000 --> 00:44:33,000
+you could think of the defocus saying that we did on
+vous pourriez penser de la défocalisation dire que nous avons fait sur
+
+00:44:33,000 --> 00:44:37,000
+the imager for EA you could think if that approximately as
+l'imageur pour EA vous pourriez penser si qu'environ comme
+
+00:44:37,000 --> 00:44:40,000
+similar to the kind of filtering action that you would get
+semblable à la nature de l'action de filtrage que vous souhaitez obtenir
+
+00:44:40,000 --> 00:44:46,000
+by passing a signal through a first-order differential equation
+en faisant passer un signal à travers une équation différentielle du premier ordre
+
+00:44:46,000 --> 00:44:50,000
+okay now just illustrate in one
+bien maintenant juste illustrer dans un
+
+00:44:50,000 --> 00:44:55,000
+additional step in both evaluating inverse transforms and using Fourier
+étape supplémentaire à la fois l'évaluation des transformations inverses et par transformation de Fourier
+
+00:44:55,000 --> 00:44:57,000
+transform properties
+propriétés de transformation
+
+00:44:57,000 --> 00:45:01,000
+to solve a near constant coefficient differential equations
+pour résoudre un près équations différentielles à coefficients constants
+
+00:45:01,000 --> 00:45:05,000
+let's take this same example and rather
+Prenons ce même exemple et non
+
+00:45:05,000 --> 00:45:09,000
+then finding the impulse response let's find the response
+puis de trouver la réponse impulsionnelle nous allons trouver la réponse
+
+00:45:09,000 --> 00:45:12,000
+to another exponential input
+à une autre entrée exponentielle
+
+00:45:12,000 --> 00:45:15,000
+now we could of course do that using the convolution integral we just got the
+maintenant, nous pourrions bien sûr le faire en utilisant l'intégrale de convolution, nous venons de le
+
+00:45:15,000 --> 00:45:18,000
+impulse response so we can put that
+réponse impulsionnelle afin que nous puissions mettre ce
+
+00:45:18,000 --> 00:45:22,000
+through the convolution integral to get the response to this input
+à travers l'intégrale de convolution pour obtenir la réponse à cette entrée
+
+00:45:22,000 --> 00:45:28,000
+but let's do it instead by going back to the differential equation
+mais faisons-le au lieu de revenir à l'équation différentielle
+
+00:45:28,000 --> 00:45:33,000
+and so here i'm taking a differential equation
+et donc ici je vais prendre une équation différentielle
+
+00:45:33,000 --> 00:45:36,000
+all choose just to have some numbers to work with
+tout choisir juste pour avoir quelques chiffres à travailler avec
+
+00:45:36,000 --> 00:45:39,000
+a equal to 2 and now
+une égal à 2 et maintenant
+
+00:45:39,000 --> 00:45:44,000
+I'll choose an exponential on the right hand side either minus tee times you
+Je vais choisir une exponentielle sur le côté droit, soit moins t vous fois
+
+00:45:44,000 --> 00:45:46,000
+have t
+Vous avez t
+
+00:45:46,000 --> 00:45:52,000
+and again we for EA transform the equation
+et encore, nous transformons pour EA l'équation
+
+00:45:52,000 --> 00:45:55,000
+and we can remember
+et nous pouvons nous souvenir
+
+00:45:55,000 --> 00:45:59,000
+this particular Fourier transform pair it's just the one who worked out
+transformer cette Fourier particulier paire c'est juste celui qui a travaillé sur
+
+00:45:59,000 --> 00:46:03,000
+previously now with a equal to 1 clearly we're getting a lot of mileage out of
+déjà maintenant avec un égal à 1 est clair que nous recevons beaucoup de kilométrage de
+
+00:46:03,000 --> 00:46:05,000
+that example
+exemple que
+
+00:46:05,000 --> 00:46:11,000
+and now if we wanted determine what the output why if he is
+et maintenant, si nous voulions déterminer ce que la sortie pour laquelle il est si
+
+00:46:11,000 --> 00:46:15,000
+we can't do that by solving for Y Omega
+nous ne pouvons pas le faire en résolvant Y Omega
+
+00:46:15,000 --> 00:46:18,000
+and then generating the inverse Fourier transform
+et générer ensuite la transformée de Fourier inverse
+
+00:46:18,000 --> 00:46:21,000
+well what's all this algebraically for y Omega
+bien ce que c'est que tout ça algébrique pour y Omega
+
+00:46:21,000 --> 00:46:25,000
+and and that gets us to this expression
+et ce qui nous arrive à cette expression
+
+00:46:25,000 --> 00:46:31,000
+and this is not a Fourier transform that we've worked out before
+et ce n'est pas une transformée de Fourier que nous avons travaillé avant
+
+00:46:31,000 --> 00:46:34,000
+and this is have the second part to the
+et c'est encore la deuxième partie de la
+
+00:46:34,000 --> 00:46:39,000
+inspection procedure what we have is a forty a transform which is a product
+la procédure de contrôle de ce que nous avons est un quarante une transformée qui est un produit
+
+00:46:39,000 --> 00:46:43,000
+of two turns each of which we can recognize
+de deux tours chacun, nous pouvons reconnaître
+
+00:46:43,000 --> 00:46:48,000
+and what we can consider doing is expanding that out
+et ce que nous pouvons envisager de le faire est en pleine expansion que sur
+
+00:46:48,000 --> 00:46:52,000
+in a partial fraction expansion namely as a summer turns
+dans un développement en fraction partielle à savoir comme un été à tour de rôle
+
+00:46:52,000 --> 00:46:56,000
+because the lady arity property associated with the 48 transform
+parce que la propriété dame arité associée à la transformation de 48
+
+00:46:56,000 --> 00:47:00,000
+the inverse transform is then the song the inverse transform movie to those
+la transformation inverse est alors la chanson la transformée inverse film à ceux
+
+00:47:00,000 --> 00:47:03,000
+terms
+termes
+
+00:47:03,000 --> 00:47:08,000
+okay so if we expand this out in a partial fraction expansion
+Bon alors si nous élargissons ce dans un développement en fraction partielle
+
+00:47:08,000 --> 00:47:11,000
+and you can just verify that
+et vous pouvez juste vérifier que
+
+00:47:11,000 --> 00:47:15,000
+if you add these two together you get back to where we started
+si vous ajoutez les deux ensemble vous revenez au point de départ
+
+00:47:15,000 --> 00:47:20,000
+we now have the sum of two terms
+nous avons maintenant la somme de deux termes
+
+00:47:20,000 --> 00:47:25,000
+and if we now recognized by inspection
+et si nous maintenant reconnus par l'inspection
+
+00:47:25,000 --> 00:47:30,000
+the inverse Fourier transform love this we see that it simply
+la transformée de Fourier inverse amour ce nous voyons que tout simplement
+
+00:47:30,000 --> 00:47:34,000
+minus either -2 TV times the unit step
+moins soit -2 TV fois l'étape de l'unité
+
+00:47:34,000 --> 00:47:38,000
+this one is plus either the minus the times a unit step
+celui-ci est le plus soit moins une fois les étapes de base
+
+00:47:38,000 --> 00:47:41,000
+and so in fact it's the summer these two terms
+et si, en fait, c'est l'été ces deux termes
+
+00:47:41,000 --> 00:47:46,000
+which are the inverse transforms up the
+qui sont l'inverse transforme l'
+
+00:47:46,000 --> 00:47:50,000
+individual turns in a partial fraction expansion
+spires dans un développement en fraction partielle
+
+00:47:50,000 --> 00:47:56,000
+that then give us the for EA transform
+qui nous donne alors le transformer pour EA
+
+00:47:56,000 --> 00:47:59,000
+all y ft
+tout y ft
+
+00:47:59,000 --> 00:48:03,000
+her I'm sorry for her rather the output
+lui que je suis désolé pour elle plutôt la sortie
+
+00:48:03,000 --> 00:48:07,000
+so this is a gypsy that this is why if the
+donc c'est un gitan qui c'est pourquoi si l'
+
+00:48:07,000 --> 00:48:10,000
+which is the summer these two exponentials and this
+qui est l'été, ces deux exponentielles et ce
+
+00:48:10,000 --> 00:48:13,000
+is the inverse Fourier transform
+est la transformée de Fourier inverse
+
+00:48:13,000 --> 00:48:20,000
+love y Omega as we calculated it previously
+amour et Omega comme nous avons calculé qu'il a précédemment
+
+00:48:20,000 --> 00:48:24,000
+okay well hopefully you're beginning to get some sense now
+ok bien j'espère que vous commencez à avoir une idée maintenant
+
+00:48:24,000 --> 00:48:27,000
+love how powerful and also beautiful
+aimer la puissance et aussi belle
+
+00:48:27,000 --> 00:48:31,000
+the 48 transform is we've seen already that
+la transformation est 48 que nous avons déjà vu que
+
+00:48:31,000 --> 00:48:34,000
+a glimpse or how it plays a role in
+Un coup d'œil ou comment il joue un rôle dans
+
+00:48:34,000 --> 00:48:38,000
+filtering modulation how its properties helpless with linear constant
+modulation de filtrage comment ses propriétés sans défense avec une constante linéaire
+
+00:48:38,000 --> 00:48:43,000
+coefficient differential equations et cetera
+coefficient differential equations et cetera
+
+00:48:43,000 --> 00:48:46,000
+what we will do
+ce que nous ferons
+
+00:48:46,000 --> 00:48:49,000
+beginning with the next lecture is develop
+à commencer par la prochaine conférence est de développer
+
+00:48:49,000 --> 00:48:53,000
+a similar set of tools for the discrete-time case and there are
+un ensemble similaire d'outils pour le cas temps discret et il ya
+
+00:48:53,000 --> 00:48:58,000
+some very strong similarities to what we've done a continuous-time also some
+certaines similitudes très fortes à ce que nous avons fait un temps continu aussi quelques
+
+00:48:58,000 --> 00:49:00,000
+very important differences
+différences très importantes
+
+00:49:00,000 --> 00:49:04,000
+and then after we have the continuous-time and discrete-time
+et puis après nous avons le temps continu et à temps discret
+
+00:49:04,000 --> 00:49:06,000
+Fourier transforms
+transformées de Fourier
+
+00:49:06,000 --> 00:49:10,000
+will then see how the concepts
+ensuite voir comment les concepts
+
+00:49:10,000 --> 00:49:13,000
+involved in the properties involved leads to
+impliqué dans les propriétés concernées conduit à
+
+00:49:13,000 --> 00:49:17,000
+very important powerful notions love filtering
+notions très importantes puissants aiment filtrage
+
+00:49:17,000 --> 00:49:20,000
+modulation sampling and other
+modulation échantillonnage et d'autres
+
+00:49:20,000 --> 00:49:22,000
+signal processing ideas thank you
+idées de traitement du signal merci
+

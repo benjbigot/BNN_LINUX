@@ -1,0 +1,1944 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU home the
+
+00:00:29,000 --> 00:00:31,000
+the
+
+00:00:31,000 --> 00:00:33,000
+the
+
+00:00:33,000 --> 00:00:40,000
+the in
+
+00:00:40,000 --> 00:00:45,000
+the norm
+
+00:00:45,000 --> 00:00:52,000
+are the in discussing the
+
+00:00:57,000 --> 00:01:00,000
+continuous-time and discrete-time Fourier transforms we
+
+00:01:00,000 --> 00:01:03,000
+developed a number of important properties
+
+00:01:03,000 --> 00:01:06,000
+to particularly sitting significant ones as I mention
+
+00:01:06,000 --> 00:01:11,000
+at the time are the modulation property and the convolution property
+
+00:01:11,000 --> 00:01:16,000
+starting with the next lecture the one after this one
+
+00:01:16,000 --> 00:01:20,000
+will be developing and exploiting some other consequences
+
+00:01:20,000 --> 00:01:24,000
+the modulation property in today's lecture though I'd like to
+
+00:01:24,000 --> 00:01:29,000
+review and expand on the notion of filtering
+
+00:01:29,000 --> 00:01:33,000
+which as I had mentioned flows more less directly from
+
+00:01:33,000 --> 00:01:38,000
+the convolution property to begin let me just quickly review
+
+00:01:38,000 --> 00:01:43,000
+what the convolution property is both for continuous-time
+
+00:01:43,000 --> 00:01:47,000
+and for discrete-time the convolution property tells us
+
+00:01:47,000 --> 00:01:50,000
+that the 48 transform
+
+00:01:50,000 --> 00:01:54,000
+all the convolution up to time functions
+
+00:01:54,000 --> 00:01:57,000
+is the product up to 48 transforms
+
+00:01:57,000 --> 00:02:01,000
+now what this means
+
+00:02:01,000 --> 00:02:05,000
+in terms love linear time-invariant filters
+
+00:02:05,000 --> 00:02:09,000
+since we know that the in the time domain the output of a linear
+
+00:02:09,000 --> 00:02:12,000
+time-invariant filter is the convolution
+
+00:02:12,000 --> 00:02:15,000
+love the input and the impulse response
+
+00:02:15,000 --> 00:02:19,000
+it says essentially then in the frequency domain
+
+00:02:19,000 --> 00:02:22,000
+that the forty a transformer the output is the product
+
+00:02:22,000 --> 00:02:26,000
+of the 48 transform of the impulse response
+
+00:02:26,000 --> 00:02:29,000
+namely the frequency response and the Fourier transform
+
+00:02:29,000 --> 00:02:35,000
+love the input so the output is described through that product
+
+00:02:35,000 --> 00:02:38,000
+now recall also
+
+00:02:38,000 --> 00:02:43,000
+bad in developing the four EA transform I interpreted
+
+00:02:43,000 --> 00:02:46,000
+the Fourier transform as the complex amplitude
+
+00:02:46,000 --> 00:02:51,000
+over decomposition of the signal interns have a set of complex exponentials
+
+00:02:51,000 --> 00:02:55,000
+and the frequency response for the convolution property
+
+00:02:55,000 --> 00:03:00,000
+in effect tells us what the amplitudes how to modify the amplitudes
+
+00:03:00,000 --> 00:03:04,000
+avi to those complex exponentials as they go through the system
+
+00:03:04,000 --> 00:03:07,000
+now this led to the notion of filtering
+
+00:03:07,000 --> 00:03:13,000
+where the basic concept was that since we can modify
+
+00:03:13,000 --> 00:03:16,000
+the airport to %uh each of the exponential
+
+00:03:16,000 --> 00:03:20,000
+complex exponential components separately weekend for example
+
+00:03:20,000 --> 00:03:24,000
+retain some love them and totally eliminate others
+
+00:03:24,000 --> 00:03:28,000
+and this is the basic notion of filtering so
+
+00:03:28,000 --> 00:03:32,000
+we have as you recall first evolved the notion
+
+00:03:32,000 --> 00:03:36,000
+in continuous-time all an ideal filter
+
+00:03:36,000 --> 00:03:40,000
+for example I L a straight year an ideal
+
+00:03:40,000 --> 00:03:44,000
+low-pass filter where we pass exactly
+
+00:03:44,000 --> 00:03:47,000
+frequency comp phone it's in one band and reject
+
+00:03:47,000 --> 00:03:51,000
+totally frequency comp ponents in another band
+
+00:03:51,000 --> 00:03:55,000
+the van being passed of course referred to as the passband
+
+00:03:55,000 --> 00:04:00,000
+and the ban rejected as the stopping I
+
+00:04:00,000 --> 00:04:03,000
+illustrated here low pass filter we can of course
+
+00:04:03,000 --> 00:04:07,000
+reject the low frequencies and retain
+
+00:04:07,000 --> 00:04:11,000
+the high frequencies and that then corresponds to
+
+00:04:11,000 --> 00:04:17,000
+ideal high pass filter or we can just retain frequencies within a band
+
+00:04:17,000 --> 00:04:22,000
+and so I show below what is referred to commonly as
+
+00:04:22,000 --> 00:04:25,000
+a bandpass filter now
+
+00:04:25,000 --> 00:04:29,000
+this is what the ideal filters look like
+
+00:04:29,000 --> 00:04:33,000
+for continuous-time for discrete-time we have exactly
+
+00:04:33,000 --> 00:04:36,000
+the same situation namely we have
+
+00:04:36,000 --> 00:04:40,000
+an ideal discrete-time low-pass filter which
+
+00:04:40,000 --> 00:04:44,000
+passes exactly frequencies which are the low frequencies
+
+00:04:44,000 --> 00:04:49,000
+low frequencies of course being around zero and because the periodicity also
+
+00:04:49,000 --> 00:04:50,000
+around 2pi
+
+00:04:50,000 --> 00:04:54,000
+we show also an ideal
+
+00:04:54,000 --> 00:04:58,000
+high pass filter and a high pass filter
+
+00:04:58,000 --> 00:05:02,000
+as i indicated last time passes frequencies around pie
+
+00:05:02,000 --> 00:05:06,000
+and finally below that I show an ideal
+
+00:05:06,000 --> 00:05:11,000
+bandpass filter a an ideal bandpass filter passing frequencies
+
+00:05:11,000 --> 00:05:16,000
+someplace in the range between 0 and pie
+
+00:05:16,000 --> 00:05:20,000
+and recall also bat the basic difference between
+
+00:05:20,000 --> 00:05:24,000
+continuous-time and discrete-time for these filters is that
+
+00:05:24,000 --> 00:05:27,000
+the discrete-time versions are of course periodic
+
+00:05:27,000 --> 00:05:32,000
+in frequency now let's look at
+
+00:05:32,000 --> 00:05:36,000
+these ideal filters and in particular the idea low-pass filter
+
+00:05:36,000 --> 00:05:40,000
+in the time domain we have
+
+00:05:40,000 --> 00:05:45,000
+the frequency response 0 the idea low-pass filter
+
+00:05:45,000 --> 00:05:50,000
+and shown below it is the impulse response so here is the frequency
+
+00:05:50,000 --> 00:05:52,000
+response
+
+00:05:52,000 --> 00:05:55,000
+and below it the impulse response
+
+00:05:55,000 --> 00:05:59,000
+love the ideal low-pass filter
+
+00:05:59,000 --> 00:06:02,000
+and this of course is a sin x over X
+
+00:06:02,000 --> 00:06:05,000
+for with impulse response and recognize also
+
+00:06:05,000 --> 00:06:09,000
+or recall that since this frequency response
+
+00:06:09,000 --> 00:06:12,000
+is real value
+
+00:06:12,000 --> 00:06:16,000
+the impulse response in other words the inverse transform
+
+00:06:16,000 --> 00:06:19,000
+is an even function of time and
+
+00:06:19,000 --> 00:06:24,000
+notice also since I want to refer back to this
+
+00:06:24,000 --> 00:06:28,000
+that the impulse response to an ideal Lopez filter
+
+00:06:28,000 --> 00:06:33,000
+in fact is non causal that follows from Long other things from the fact that
+
+00:06:33,000 --> 00:06:35,000
+it's an even function
+
+00:06:35,000 --> 00:06:39,000
+but keep in mind in fact that sin x over its function
+
+00:06:39,000 --> 00:06:42,000
+goes off to infinity in both directions so
+
+00:06:42,000 --> 00:06:45,000
+the impulse response to the idea low-pass filter
+
+00:06:45,000 --> 00:06:52,000
+is symmetric and continues to have tales of the plus and minus infinity
+
+00:06:52,000 --> 00:06:55,000
+now the situation is basically the same
+
+00:06:55,000 --> 00:06:59,000
+in the discrete-time case
+
+00:06:59,000 --> 00:07:04,000
+let's look at the frequency response and associated impulse response
+
+00:07:04,000 --> 00:07:08,000
+for an ideal discrete-time low-pass filter
+
+00:07:08,000 --> 00:07:12,000
+so once again here is the
+
+00:07:12,000 --> 00:07:16,000
+frequency response love the idea low-pass filter
+
+00:07:16,000 --> 00:07:19,000
+and below it I show the impulse response
+
+00:07:19,000 --> 00:07:24,000
+again its a sin x over x-type impulse response
+
+00:07:24,000 --> 00:07:27,000
+and again we recognize
+
+00:07:27,000 --> 00:07:31,000
+that sits in the frequency domain this frequency response
+
+00:07:31,000 --> 00:07:36,000
+is real bad that means as a consequence
+
+00:07:36,000 --> 00:07:42,000
+of the properties love the forty a transforming inverse Fourier transform
+
+00:07:42,000 --> 00:07:45,000
+that the impulse response is an even function
+
+00:07:45,000 --> 00:07:49,000
+in the time domain and also incidently
+
+00:07:49,000 --> 00:07:53,000
+the sin x over expulsion goes off to infinity
+
+00:07:53,000 --> 00:07:56,000
+again in both directions
+
+00:07:56,000 --> 00:08:00,000
+now we talked about i do. filters
+
+00:08:00,000 --> 00:08:04,000
+in this discussion and ideal filters are
+
+00:08:04,000 --> 00:08:08,000
+in fact ideal in a certain sense what they do ideally
+
+00:08:08,000 --> 00:08:12,000
+is they pass a certain band of frequencies exactly
+
+00:08:12,000 --> 00:08:19,000
+and they reject a band of frequencies exactly
+
+00:08:19,000 --> 00:08:23,000
+on the other hand there are many filtering problems in which
+
+00:08:23,000 --> 00:08:27,000
+generally we don't have a sharp distinction between the frequencies we
+
+00:08:27,000 --> 00:08:28,000
+want to
+
+00:08:28,000 --> 00:08:31,000
+passed in the frequencies you wanna 12 reject
+
+00:08:31,000 --> 00:08:34,000
+one example if this that's elaborated on in the tax is
+
+00:08:34,000 --> 00:08:38,000
+the design of an automotive suspension system which in fact
+
+00:08:38,000 --> 00:08:42,000
+is the design all a low-pass filter
+
+00:08:42,000 --> 00:08:45,000
+and basically what you want to do in a case like that
+
+00:08:45,000 --> 00:08:48,000
+is filter out or attenuate
+
+00:08:48,000 --> 00:08:51,000
+very rapid Road variations and keep
+
+00:08:51,000 --> 00:08:56,000
+the lower variations in of course elevation of the highway
+
+00:08:56,000 --> 00:09:00,000
+or or road and what you can see
+
+00:09:00,000 --> 00:09:03,000
+intuitively is dead and there isn't really a very sharp
+
+00:09:03,000 --> 00:09:08,000
+distinction a sharp cutoff between what you would like to recall
+
+00:09:08,000 --> 00:09:13,000
+the low frequencies and what you would call the high frequencies
+
+00:09:13,000 --> 00:09:17,000
+now also somewhat related to this is the fact dead
+
+00:09:17,000 --> 00:09:21,000
+the as we've seen in the time domain is ideal filters have
+
+00:09:21,000 --> 00:09:25,000
+very particular kind of character for example let's look back
+
+00:09:25,000 --> 00:09:30,000
+at the ideal low-pass filter and
+
+00:09:30,000 --> 00:09:34,000
+we saw this the impulse response
+
+00:09:34,000 --> 00:09:37,000
+the impulse response is what we've shown here let's now look
+
+00:09:37,000 --> 00:09:41,000
+at the step response love the discrete-time
+
+00:09:41,000 --> 00:09:47,000
+ideal low-pass filter and noticed the fact that it has a tail that oscillates
+
+00:09:47,000 --> 00:09:52,000
+and when this step its in fact it has oscillatory behavior
+
+00:09:52,000 --> 00:09:57,000
+now exactly the same situation occurs
+
+00:09:57,000 --> 00:10:01,000
+in continuous-time let's look at the
+
+00:10:01,000 --> 00:10:04,000
+step response love the continuous-time
+
+00:10:04,000 --> 00:10:08,000
+ideal ok pass filter and
+
+00:10:08,000 --> 00:10:11,000
+what we see is that when a step its
+
+00:10:11,000 --> 00:10:14,000
+then in fact we get and isolation
+
+00:10:14,000 --> 00:10:17,000
+and very often that isolation
+
+00:10:17,000 --> 00:10:21,000
+is something this undesirable for example if you're designing
+
+00:10:21,000 --> 00:10:26,000
+an automotive suspension system and you hit a curve which is
+
+00:10:26,000 --> 00:10:30,000
+step input in fact you probably would not like
+
+00:10:30,000 --> 00:10:34,000
+to have the automobile oscillating sort
+
+00:10:34,000 --> 00:10:38,000
+sort dying down in in isolation
+
+00:10:38,000 --> 00:10:41,000
+now is another very important point which again
+
+00:10:41,000 --> 00:10:45,000
+we can see there in continuous-time and discrete-time
+
+00:10:45,000 --> 00:10:48,000
+which is that even if we wanted to have
+
+00:10:48,000 --> 00:10:53,000
+an ideal filter the ideal filter has another problem
+
+00:10:53,000 --> 00:10:57,000
+if we want to attempt to implemented in real time
+
+00:10:57,000 --> 00:11:01,000
+what's the problem the problem is
+
+00:11:01,000 --> 00:11:05,000
+that since the impulse responses even and in fact
+
+00:11:05,000 --> 00:11:08,000
+has details that go of the plus and minus infinity
+
+00:11:08,000 --> 00:11:12,000
+its non causal so if in fact
+
+00:11:12,000 --> 00:11:18,000
+we want to build a filter and the filter is restricted operate in real time
+
+00:11:18,000 --> 00:11:21,000
+than in fact we can't build
+
+00:11:21,000 --> 00:11:24,000
+an ideal filter so
+
+00:11:24,000 --> 00:11:28,000
+what that says is that in practice although i do. filters
+
+00:11:28,000 --> 00:11:34,000
+are nice to think about and perhaps relate to practical problems
+
+00:11:34,000 --> 00:11:37,000
+more typically what we consider
+
+00:11:37,000 --> 00:11:40,000
+are non-ideal filters and
+
+00:11:40,000 --> 00:11:44,000
+in the discrete-time case non-ideal filter
+
+00:11:44,000 --> 00:11:48,000
+then would have a characteristic somewhat
+
+00:11:48,000 --> 00:11:51,000
+like i've indicated here where instead o
+
+00:11:51,000 --> 00:11:56,000
+a very rapid transition from passband to stop and
+
+00:11:56,000 --> 00:11:59,000
+there would be more gradual transition
+
+00:11:59,000 --> 00:12:03,000
+with a passband cutoff frequency and
+
+00:12:03,000 --> 00:12:06,000
+a stop and cutoff frequency
+
+00:12:06,000 --> 00:12:10,000
+and perhaps also instead of having exactly
+
+00:12:10,000 --> 00:12:14,000
+flat characteristic in the stop band and in the past and
+
+00:12:14,000 --> 00:12:18,000
+we would allow a certain amount a ripple
+
+00:12:18,000 --> 00:12:21,000
+we also have exactly the same situation
+
+00:12:21,000 --> 00:12:26,000
+in continuous-time we're here will just simply change your frequency axis
+
+00:12:26,000 --> 00:12:31,000
+to a continuous frequency axis instead of the discrete frequency axes
+
+00:12:31,000 --> 00:12:36,000
+again we would think in terms of I'm allowable passband ripple
+
+00:12:36,000 --> 00:12:40,000
+a transition from stop and from passband to stop and
+
+00:12:40,000 --> 00:12:44,000
+with a passband cutoff frequency and a stop and
+
+00:12:44,000 --> 00:12:47,000
+cutoff frequency so
+
+00:12:47,000 --> 00:12:53,000
+kind of the notion here is dead again i do. filters are ideal in some respects
+
+00:12:53,000 --> 00:12:56,000
+not ideal in other respects and for many
+
+00:12:56,000 --> 00:13:01,000
+practical problems we may not want them and even if we did want them
+
+00:13:01,000 --> 00:13:06,000
+we may not be able to get them perhaps because at this issue of causality
+
+00:13:06,000 --> 00:13:10,000
+even if causality is not an issue what happens
+
+00:13:10,000 --> 00:13:13,000
+in filter design and implementation in fact
+
+00:13:13,000 --> 00:13:19,000
+is dead the sharper you attempt to make the cut off
+
+00:13:19,000 --> 00:13:22,000
+the more expensive in some sense the filter becomes
+
+00:13:22,000 --> 00:13:25,000
+either in terms of comp phone-ins in continuous-time
+
+00:13:25,000 --> 00:13:29,000
+or in terms of computation in discrete-time
+
+00:13:29,000 --> 00:13:33,000
+and so their are these whole variety of issues
+
+00:13:33,000 --> 00:13:36,000
+that really make it important to
+
+00:13:36,000 --> 00:13:39,000
+understand the notion love non-ideal
+
+00:13:39,000 --> 00:13:42,000
+filters now just two
+
+00:13:42,000 --> 00:13:46,000
+illustrate as an example let me remind you
+
+00:13:46,000 --> 00:13:52,000
+love one kinda bad example love what in fact is a non-ideal
+
+00:13:52,000 --> 00:13:56,000
+low-pass filter and we have look previously
+
+00:13:56,000 --> 00:13:59,000
+at The Associated differential equation
+
+00:13:59,000 --> 00:14:03,000
+let me now in fact related to a circuit
+
+00:14:03,000 --> 00:14:07,000
+and in particular an RC circuit
+
+00:14:07,000 --> 00:14:10,000
+where the output could either be across the capacitor
+
+00:14:10,000 --> 00:14:14,000
+or the output can be across the resistor so
+
+00:14:14,000 --> 00:14:18,000
+effect we have two systems here we have a system
+
+00:14:18,000 --> 00:14:22,000
+which is the system function from the voltage source input to the capacitor
+
+00:14:22,000 --> 00:14:23,000
+output
+
+00:14:23,000 --> 00:14:26,000
+the system from the both source input
+
+00:14:26,000 --> 00:14:30,000
+to the resistor output and in fact
+
+00:14:30,000 --> 00:14:34,000
+just up like your cause both its law to this we can relate those in a very
+
+00:14:34,000 --> 00:14:35,000
+straightforward way
+
+00:14:35,000 --> 00:14:39,000
+it's very straight forward to verify that
+
+00:14:39,000 --> 00:14:43,000
+the system from input to resist their output
+
+00:14:43,000 --> 00:14:47,000
+is simply the identity system with
+
+00:14:47,000 --> 00:14:51,000
+the capacitor output subtracted from
+
+00:14:51,000 --> 00:14:54,000
+now we can write the differential equation
+
+00:14:54,000 --> 00:14:59,000
+for either the system's and as we talked about last time
+
+00:14:59,000 --> 00:15:03,000
+in the last several lectures solve that equation using
+
+00:15:03,000 --> 00:15:06,000
+the exploiting the properties at a4e a transform
+
+00:15:06,000 --> 00:15:10,000
+and in fact we if we look at the differential equation
+
+00:15:10,000 --> 00:15:14,000
+relating the capacitor output to
+
+00:15:14,000 --> 00:15:18,000
+the voltage source input we recognize that this is an example
+
+00:15:18,000 --> 00:15:22,000
+that in effect we saw previously and so
+
+00:15:22,000 --> 00:15:27,000
+just working our way down applying the 48 transport to the differential
+
+00:15:27,000 --> 00:15:28,000
+equation
+
+00:15:28,000 --> 00:15:32,000
+and generating the system function by taking the ratio of the capacitor
+
+00:15:32,000 --> 00:15:34,000
+voltage
+
+00:15:34,000 --> 00:15:38,000
+or its Fourier transform to the Fourier transform the source
+
+00:15:38,000 --> 00:15:42,000
+we then have the system function Associated
+
+00:15:42,000 --> 00:15:46,000
+with the system for which the output is the capacitor voltage
+
+00:15:46,000 --> 00:15:49,000
+or if we solve instead for the system function
+
+00:15:49,000 --> 00:15:53,000
+associated with the resistor output
+
+00:15:53,000 --> 00:15:57,000
+we can simply subtract h1 from unity
+
+00:15:57,000 --> 00:16:01,000
+and the system function that we get in that case is the system function
+
+00:16:01,000 --> 00:16:04,000
+that I show here so we have
+
+00:16:04,000 --> 00:16:08,000
+now to system functions one for the capacitor output
+
+00:16:08,000 --> 00:16:12,000
+the other for the resistor output and
+
+00:16:12,000 --> 00:16:16,000
+one the first corresponding to the capacitor output
+
+00:16:16,000 --> 00:16:20,000
+in fact if we plotted on a linear ramp up to scale
+
+00:16:20,000 --> 00:16:23,000
+looks like this and as you can see and as we saw last time
+
+00:16:23,000 --> 00:16:27,000
+is an approximation to a low pass filter
+
+00:16:27,000 --> 00:16:30,000
+it is in fact and non-ideal ok pass filter
+
+00:16:30,000 --> 00:16:35,000
+whereas the resistor output is
+
+00:16:35,000 --> 00:16:38,000
+an approximation to a high pass filter
+
+00:16:38,000 --> 00:16:42,000
+or in effect and non-ideal high pass filter
+
+00:16:42,000 --> 00:16:45,000
+so in one case just comparing the two we have
+
+00:16:45,000 --> 00:16:50,000
+a low-pass filter as the capacitor output associate with the capacitor
+
+00:16:50,000 --> 00:16:51,000
+output
+
+00:16:51,000 --> 00:16:54,000
+and a high pass filter Associated with the
+
+00:16:54,000 --> 00:16:57,000
+resistor out let's just quickly
+
+00:16:57,000 --> 00:17:01,000
+look at that example now looking on a boat reply
+
+00:17:01,000 --> 00:17:06,000
+instead o on the linear scale that we showed before
+
+00:17:06,000 --> 00:17:09,000
+and recall incidently a and
+
+00:17:09,000 --> 00:17:15,000
+be aware incident leave the fact that week and of course cascade
+
+00:17:15,000 --> 00:17:18,000
+several filters if this type and approve the characteristics
+
+00:17:18,000 --> 00:17:22,000
+so I have shown at the top
+
+00:17:22,000 --> 00:17:26,000
+a bodie plot or the
+
+00:17:26,000 --> 00:17:32,000
+capacitors system functions associated with the capacitor output it's flat out
+
+00:17:32,000 --> 00:17:34,000
+to a frequency corresponding 21
+
+00:17:34,000 --> 00:17:38,000
+over the time constant RC
+
+00:17:38,000 --> 00:17:41,000
+and then it falls off at 10 DB
+
+00:17:41,000 --> 00:17:45,000
+per decade a decade being a factor 10
+
+00:17:45,000 --> 00:17:50,000
+or if instead we looked at the system function associated with the resistor
+
+00:17:50,000 --> 00:17:53,000
+output that corresponds to a
+
+00:17:53,000 --> 00:17:57,000
+10 dB per decade increase in frequency
+
+00:17:57,000 --> 00:18:01,000
+up to approximately the reciprocal at the time constant and
+
+00:18:01,000 --> 00:18:05,000
+then approaching a flat characteristic after that
+
+00:18:05,000 --> 00:18:09,000
+and if we consider either one of these
+
+00:18:09,000 --> 00:18:12,000
+looking back again at the low-pass
+
+00:18:12,000 --> 00:18:17,000
+filter if we were to cascade several filters
+
+00:18:17,000 --> 00:18:21,000
+with this frequency response then because we have things plotted on a boat
+
+00:18:21,000 --> 00:18:22,000
+reply
+
+00:18:22,000 --> 00:18:26,000
+the body plot for the Cascade would simply be summing these and so
+
+00:18:26,000 --> 00:18:29,000
+if we castigated for example two stages
+
+00:18:29,000 --> 00:18:33,000
+is that a role of at 10 dB per decade it would
+
+00:18:33,000 --> 00:18:37,000
+role of at 20 DB for decades
+
+00:18:37,000 --> 00:18:40,000
+now filters that this type RC filters
+
+00:18:40,000 --> 00:18:44,000
+perhaps several of them in cascade are
+
+00:18:44,000 --> 00:18:47,000
+in fact very prevalent
+
+00:18:47,000 --> 00:18:51,000
+and in fact in a in a an environment
+
+00:18:51,000 --> 00:18:55,000
+like this where where in fact doing recording
+
+00:18:55,000 --> 00:18:58,000
+we see there there are
+
+00:18:58,000 --> 00:19:03,000
+filters a fact I there show up very commonly both in the audio
+
+00:19:03,000 --> 00:19:07,000
+and the video poker portion or the signal processing this Associated
+
+00:19:07,000 --> 00:19:11,000
+with making this set of tapes in fact
+
+00:19:11,000 --> 00:19:14,000
+are let's take a look in the control room
+
+00:19:14,000 --> 00:19:17,000
+and what I'll be able to show you in the control room
+
+00:19:17,000 --> 00:19:20,000
+is the audio portion love
+
+00:19:20,000 --> 00:19:25,000
+the processing that's done and the kinds of filters very much of the type we just
+
+00:19:25,000 --> 00:19:26,000
+talked about
+
+00:19:26,000 --> 00:19:30,000
+their associated with signal processing this stunning
+
+00:19:30,000 --> 00:19:33,000
+in preparing the audio the tapes so
+
+00:19:33,000 --> 00:19:39,000
+let's just take a walk into the control room and see what we see
+
+00:19:39,000 --> 00:19:44,000
+well this is the control room issues for camera switching its
+
+00:19:44,000 --> 00:19:48,000
+use for computer editing and also audio control
+
+00:19:48,000 --> 00:19:51,000
+you can see the monitors and these are used for the
+
+00:19:51,000 --> 00:19:55,000
+camera switching and and this is the computer editing
+
+00:19:55,000 --> 00:19:59,000
+console that use for online and offline computer editing
+
+00:19:59,000 --> 00:20:04,000
+but I really want to demonstrate though in a context to the lecture is the audio
+
+00:20:04,000 --> 00:20:06,000
+control panel
+
+00:20:06,000 --> 00:20:10,000
+which contains among other things a variety of filters for high frequency
+
+00:20:10,000 --> 00:20:14,000
+low frequencies cetera basically equalization
+
+00:20:14,000 --> 00:20:18,000
+filters and what we have in the way of filtering is
+
+00:20:18,000 --> 00:20:22,000
+first of all a was referred to as a graphic equalizer
+
+00:20:22,000 --> 00:20:26,000
+which consists of a set a bandpass filters which are described
+
+00:20:26,000 --> 00:20:29,000
+little more carefully in a minute and then also
+
+00:20:29,000 --> 00:20:33,000
+and audio Control Panel which is down here
+
+00:20:33,000 --> 00:20:36,000
+and which contains separate equalizer circuits for each
+
+00:20:36,000 --> 00:20:41,000
+over a whole set of channels and also lotsa controls on them
+
+00:20:41,000 --> 00:20:45,000
+well let me begin in the demonstration by
+
+00:20:45,000 --> 00:20:50,000
+demonstrating a little bit of what the graphic equalizer does
+
+00:20:50,000 --> 00:20:55,000
+okay well what we have is a set a bandpass filters
+
+00:20:55,000 --> 00:21:00,000
+and what's indicated appear the center frequencies as the filters
+
+00:21:00,000 --> 00:21:04,000
+and then a slider switch reach 18 Lexus attenuator amplify
+
+00:21:04,000 --> 00:21:08,000
+and this is a DP scale so essentially
+
+00:21:08,000 --> 00:21:12,000
+if you look across this banker filters
+
+00:21:12,000 --> 00:21:16,000
+with the output olaf for the equalizer just being the summer the outputs from
+
+00:21:16,000 --> 00:21:21,000
+you to these filters interestingly the position the slider switches as you move
+
+00:21:21,000 --> 00:21:23,000
+across here
+
+00:21:23,000 --> 00:21:26,000
+in effect shows you what the frequency response to the equalizer is
+
+00:21:26,000 --> 00:21:30,000
+so you can change the overall shaping I'll
+
+00:21:30,000 --> 00:21:35,000
+the filter by moving the switches up and down all right now the equalizer is
+
+00:21:35,000 --> 00:21:36,000
+outlets
+
+00:21:36,000 --> 00:21:40,000
+put the equaliser into the circuit and now I I put in this filtering
+
+00:21:40,000 --> 00:21:41,000
+characteristic
+
+00:21:41,000 --> 00:21:45,000
+and what I'd like to demonstrate is filtering
+
+00:21:45,000 --> 00:21:49,000
+with this when we do things that are a little more dramatic than what would
+
+00:21:49,000 --> 00:21:52,000
+normally be done in a typical audio recordings setting
+
+00:21:52,000 --> 00:21:57,000
+and to do this let's add to my voice to music too
+
+00:21:57,000 --> 00:22:02,000
+make it more interesting a not the my voice is an interesting as it is
+
+00:22:02,000 --> 00:22:05,000
+but in any case let's bring some music up
+
+00:22:05,000 --> 00:22:09,000
+and now what all do is
+
+00:22:09,000 --> 00:22:15,000
+set the low frequencies flat and let me take out the high frequencies
+
+00:22:15,000 --> 00:22:19,000
+above eight hundred cycle and
+
+00:22:19,000 --> 00:22:23,000
+so now we have affectively is the low-pass filter it
+
+00:22:23,000 --> 00:22:27,000
+and now the low-pass filter let me know
+
+00:22:27,000 --> 00:22:31,000
+bring the high is backup
+
+00:22:31,000 --> 00:22:35,000
+and so on bringing up those bandpass filters
+
+00:22:35,000 --> 00:22:39,000
+and now let me cut-out the lows
+
+00:22:39,000 --> 00:22:43,000
+and you'll hear the lows disappearing and in effect
+
+00:22:43,000 --> 00:22:46,000
+keeping the highest affectively Crispin's
+
+00:22:46,000 --> 00:22:50,000
+the sound my voice music
+
+00:22:50,000 --> 00:22:56,000
+and finally let me go back 20db equalization I need to the filters
+
+00:22:56,000 --> 00:23:00,000
+and what also to now is
+
+00:23:00,000 --> 00:23:05,000
+take the equalizer out at the circuit totally
+
+00:23:05,000 --> 00:23:10,000
+now let's take a look at the audio Master Control Panel
+
+00:23:10,000 --> 00:23:13,000
+and this panel has of course
+
+00:23:13,000 --> 00:23:17,000
+for each channel and for example channel that we're working on
+
+00:23:17,000 --> 00:23:20,000
+a volume control I can turn the volume down
+
+00:23:20,000 --> 00:23:24,000
+and I can turn the volume up and
+
+00:23:24,000 --> 00:23:28,000
+it also has a set for this particular equalizer circuit
+
+00:23:28,000 --> 00:23:33,000
+it has a set love 3 bandpass filters
+
+00:23:33,000 --> 00:23:36,000
+and not switch lettuce either
+
+00:23:36,000 --> 00:23:39,000
+put in up to 12 the be gain
+
+00:23:39,000 --> 00:23:42,000
+or 12 DB attenuation in each of the bands
+
+00:23:42,000 --> 00:23:46,000
+and also a selector switch the lights is select the center the band
+
+00:23:46,000 --> 00:23:51,000
+so let me Jess a again demonstrate a little bit with this and
+
+00:23:51,000 --> 00:23:56,000
+let's get a closeup of this panel so what we have is i indicated
+
+00:23:56,000 --> 00:24:01,000
+is 3 bandpass filters and these knobs that I'm pointing to hear
+
+00:24:01,000 --> 00:24:06,000
+are controls that allow us to reach the filters to put in
+
+00:24:06,000 --> 00:24:09,000
+up to 12 dB gain or 12 dB attenuation
+
+00:24:09,000 --> 00:24:14,000
+there are also with the to the filters a selector switch
+
+00:24:14,000 --> 00:24:19,000
+that lets us adjust the center frequency the filter basically it's a
+
+00:24:19,000 --> 00:24:24,000
+to position switch they're also as you can see is
+
+00:24:24,000 --> 00:24:28,000
+a button dead Lexus either put the equalization in or out
+
+00:24:28,000 --> 00:24:32,000
+currently the equalization is out but put the equalization in
+
+00:24:32,000 --> 00:24:36,000
+we won't be here any effect from that because the game controls are all set at
+
+00:24:36,000 --> 00:24:38,000
+0db
+
+00:24:38,000 --> 00:24:43,000
+and I want to illustrate shortly the effective these but before I do let me
+
+00:24:43,000 --> 00:24:44,000
+draw your attention
+
+00:24:44,000 --> 00:24:48,000
+to one other filter which is
+
+00:24:48,000 --> 00:24:51,000
+this white switch and this this which
+
+00:24:51,000 --> 00:24:55,000
+is a high pass filter that essentially
+
+00:24:55,000 --> 00:25:00,000
+cuts out frequencies below about a hundred cycle so what it means is that
+
+00:25:00,000 --> 00:25:04,000
+but put this which in everything is more or less flat above a hundred cycles
+
+00:25:04,000 --> 00:25:09,000
+and what that's used for basically is to eliminate
+
+00:25:09,000 --> 00:25:13,000
+perhaps 60 cycle noise if that's present or some
+
+00:25:13,000 --> 00:25:17,000
+low-frequency home or whatever well we won't
+
+00:25:17,000 --> 00:25:22,000
+really demonstrate anything with that let so now with the equalization and
+
+00:25:22,000 --> 00:25:25,000
+demonstrate the effect I'll
+
+00:25:25,000 --> 00:25:29,000
+boosting or attenuating the low and high frequencies
+
+00:25:29,000 --> 00:25:32,000
+and again I think for to demonstrate this it's
+
+00:25:32,000 --> 00:25:37,000
+it illustrates the point the best if a if we have a little background music so
+
+00:25:37,000 --> 00:25:41,000
+maestro if you can bring that up
+
+00:25:41,000 --> 00:25:44,000
+and so now I'm gonna do is first
+
+00:25:44,000 --> 00:25:47,000
+whose the low frequencies and that's what this
+
+00:25:47,000 --> 00:25:51,000
+potentiometer knob will do so now I'll
+
+00:25:51,000 --> 00:25:54,000
+increasing the low-frequency game
+
+00:25:54,000 --> 00:25:58,000
+and in fact all the way up to 12 the be when I have the novel
+
+00:25:58,000 --> 00:26:02,000
+was liza going here and so that has a very basic
+
+00:26:02,000 --> 00:26:04,000
+sounding back
+
+00:26:04,000 --> 00:26:06,000
+make it even base you're fighting
+
+00:26:06,000 --> 00:26:08,000
+my sees and
+
+00:26:08,000 --> 00:26:11,000
+attenuating knows by
+
+00:26:11,000 --> 00:26:15,000
+well
+
+00:26:15,000 --> 00:26:19,000
+okay well leads words some the high-frequency
+
+00:26:19,000 --> 00:26:21,000
+back in
+
+00:26:21,000 --> 00:26:24,000
+in now let's turn the low-frequency
+
+00:26:24,000 --> 00:26:27,000
+game offers back down
+
+00:26:27,000 --> 00:26:32,000
+20 and now we're back to flat equalization
+
+00:26:32,000 --> 00:26:35,000
+and now I can turn the low-frequency game down
+
+00:26:35,000 --> 00:26:40,000
+so dead attenuate the low frequencies by as much as 12 the
+
+00:26:40,000 --> 00:26:43,000
+that's where we are now in service
+
+00:26:43,000 --> 00:26:48,000
+force much first
+
+00:26:48,000 --> 00:26:54,000
+to enhance the highs even more hike in addition coming out who's the highs
+
+00:26:54,000 --> 00:27:00,000
+by his
+
+00:27:00,000 --> 00:27:04,000
+okay well let's turn down the music now and
+
+00:27:04,000 --> 00:27:10,000
+and go back to no equalization by setting these knives 20 dB in fact we
+
+00:27:10,000 --> 00:27:12,000
+can take the equalizer out
+
+00:27:12,000 --> 00:27:17,000
+well thats a quick look at some real-world filters
+
+00:27:17,000 --> 00:27:20,000
+now let's the stop having so much fun and
+
+00:27:20,000 --> 00:27:27,000
+let's go back to the lecture okay well
+
+00:27:30,000 --> 00:27:33,000
+thats a little behind the scenes look but I'd
+
+00:27:33,000 --> 00:27:37,000
+like to do now is turn our attention to
+
+00:27:37,000 --> 00:27:40,000
+discrete-time filters and
+
+00:27:40,000 --> 00:27:43,000
+as i've mentioned in previous lectures their are
+
+00:27:43,000 --> 00:27:46,000
+basically two classes
+
+00:27:46,000 --> 00:27:51,000
+love discrete-time filters or discrete time difference equations
+
+00:27:51,000 --> 00:27:55,000
+one class is referred to
+
+00:27:55,000 --> 00:27:59,000
+as a nonrecourse ive or moving average
+
+00:27:59,000 --> 00:28:03,000
+filter and the basic idea
+
+00:28:03,000 --> 00:28:06,000
+with the moving average filter is something that perhaps your
+
+00:28:06,000 --> 00:28:10,000
+some what familiar with intuitively think I've the notion
+
+00:28:10,000 --> 00:28:14,000
+I love taking that data sequence and
+
+00:28:14,000 --> 00:28:18,000
+let's suppose that what we wanted to do was apply a some smoothing to the data
+
+00:28:18,000 --> 00:28:19,000
+sequence
+
+00:28:19,000 --> 00:28:22,000
+we could for example think taking adjacent points
+
+00:28:22,000 --> 00:28:26,000
+averaging them together and then moving that average
+
+00:28:26,000 --> 00:28:30,000
+along the data sequence what you can kinda see intuitively
+
+00:28:30,000 --> 00:28:35,000
+is that that would have apply some smoothing so in fact
+
+00:28:35,000 --> 00:28:38,000
+the difference equation let's say for a three-point moving average
+
+00:28:38,000 --> 00:28:41,000
+would be the difference equation that I indicate here
+
+00:28:41,000 --> 00:28:44,000
+just simply taking a data point
+
+00:28:44,000 --> 00:28:47,000
+and the two data points adjacent to it
+
+00:28:47,000 --> 00:28:51,000
+and forming an average over those three
+
+00:28:51,000 --> 00:28:54,000
+so if we thought if the kinda processing involved
+
+00:28:54,000 --> 00:28:58,000
+if performing an output sequence value
+
+00:28:58,000 --> 00:29:02,000
+we would take three adjacent points an average though
+
+00:29:02,000 --> 00:29:06,000
+that would give us the output at The Associated time
+
+00:29:06,000 --> 00:29:10,000
+and then to compute the next output point we were just simply slide this
+
+00:29:10,000 --> 00:29:16,000
+by a one-point average these together and that would give us the next output
+
+00:29:16,000 --> 00:29:18,000
+point and we would continue along
+
+00:29:18,000 --> 00:29:21,000
+just simply sliding in averaging
+
+00:29:21,000 --> 00:29:25,000
+to form the output data sequence now
+
+00:29:25,000 --> 00:29:30,000
+that's an example love what's commonly referred to as a three-point moving
+
+00:29:30,000 --> 00:29:31,000
+average
+
+00:29:31,000 --> 00:29:34,000
+in fact we can generalize that notion
+
+00:29:34,000 --> 00:29:38,000
+in a number of ways one-way generalizing
+
+00:29:38,000 --> 00:29:42,000
+the notion over moving average from the three-point moving average which I
+
+00:29:42,000 --> 00:29:46,000
+summarize again here is to think or extending that
+
+00:29:46,000 --> 00:29:49,000
+to a larger number of points and in fact
+
+00:29:49,000 --> 00:29:53,000
+applying waits to that as i indicate here
+
+00:29:53,000 --> 00:29:57,000
+so that in addition to just summing up the points and dividing by the number of
+
+00:29:57,000 --> 00:29:58,000
+points on
+
+00:29:58,000 --> 00:30:03,000
+we can in fact apply individual weights to the points
+
+00:30:03,000 --> 00:30:06,000
+so that its what is often referred to as awaiting
+
+00:30:06,000 --> 00:30:09,000
+with moving average and I show
+
+00:30:09,000 --> 00:30:13,000
+below one possible kind of curve
+
+00:30:13,000 --> 00:30:16,000
+that might result where these would-be
+
+00:30:16,000 --> 00:30:20,000
+essentially the weights Associated with this waited
+
+00:30:20,000 --> 00:30:24,000
+moving average and in fact its easy to verify
+
+00:30:24,000 --> 00:30:28,000
+that this indeed corresponds to the impulse response
+
+00:30:28,000 --> 00:30:31,000
+the filter well just two
+
+00:30:31,000 --> 00:30:36,000
+cement this notion let me show you an example or two
+
+00:30:36,000 --> 00:30:39,000
+here is an example all a
+
+00:30:39,000 --> 00:30:42,000
+five-point moving average a five-point moving average
+
+00:30:42,000 --> 00:30:46,000
+would have an impulse response dead
+
+00:30:46,000 --> 00:30:49,000
+just consists of a rectangle Lovelinks 5
+
+00:30:49,000 --> 00:30:54,000
+and if this is convolved with the data sequence that would corresponding
+
+00:30:54,000 --> 00:30:59,000
+correspond to taking five adjacent points and in effect averaging them
+
+00:30:59,000 --> 00:31:04,000
+we've looked previously at the quarry a transformer this rectangular sequence
+
+00:31:04,000 --> 00:31:06,000
+and the forty a transformer that in fact
+
+00:31:06,000 --> 00:31:10,000
+is all the form of a sign an axe over
+
+00:31:10,000 --> 00:31:14,000
+sin x kar and as you can see
+
+00:31:14,000 --> 00:31:17,000
+that is so approximation to
+
+00:31:17,000 --> 00:31:20,000
+a low-pass filter and so this again is
+
+00:31:20,000 --> 00:31:24,000
+a the impulse response and frequency response
+
+00:31:24,000 --> 00:31:28,000
+all a non-ideal low-pass filter
+
+00:31:28,000 --> 00:31:31,000
+now there are a variety of both
+
+00:31:31,000 --> 00:31:35,000
+algorithms that in fact tell you how to choose the weights
+
+00:31:35,000 --> 00:31:39,000
+associated with the waiting weighted moving average
+
+00:31:39,000 --> 00:31:42,000
+to in some sense design better approximations
+
+00:31:42,000 --> 00:31:46,000
+and without going into the details love any of those algorithms
+
+00:31:46,000 --> 00:31:51,000
+let me just show the results of choosing the weights
+
+00:31:51,000 --> 00:31:55,000
+for the design over 250 first 251 points
+
+00:31:55,000 --> 00:31:59,000
+moving average filter where the weights
+
+00:31:59,000 --> 00:32:03,000
+are chosen using an optimum algorithm to generate a sharp a cut-off
+
+00:32:03,000 --> 00:32:07,000
+as can possibly be generated and so what I show here
+
+00:32:07,000 --> 00:32:10,000
+is the frequency response
+
+00:32:10,000 --> 00:32:15,000
+that the resulting filter on a logarithmic ample to scale
+
+00:32:15,000 --> 00:32:20,000
+in a linear frequency scale noticed that on this scale the pass band is very flat
+
+00:32:20,000 --> 00:32:24,000
+although here is an expanded you all that and in fact it
+
+00:32:24,000 --> 00:32:29,000
+has was referred to as an equal ripple characteristic
+
+00:32:29,000 --> 00:32:34,000
+and then here's the transition band and here we have to stop and
+
+00:32:34,000 --> 00:32:37,000
+which in fact is down somewhat more than 80 dB
+
+00:32:37,000 --> 00:32:43,000
+and again has what's referred to as an equal ripple characterised
+
+00:32:43,000 --> 00:32:47,000
+now the notion of a moving average
+
+00:32:47,000 --> 00:32:51,000
+for filtering is something dead is very commonly
+
+00:32:51,000 --> 00:32:55,000
+use I a head shown last time actually the result
+
+00:32:55,000 --> 00:33:00,000
+some filtering on a particular data sequence the Dow Jones Industrial
+
+00:33:00,000 --> 00:33:01,000
+Average
+
+00:33:01,000 --> 00:33:04,000
+and very often in
+
+00:33:04,000 --> 00:33:09,000
+looking at various kinds a stock market publications
+
+00:33:09,000 --> 00:33:13,000
+what you will see is this the Dow Jones average
+
+00:33:13,000 --> 00:33:18,000
+shown in its raw form as a data sequence and then very typically
+
+00:33:18,000 --> 00:33:21,000
+you you'll see also: the result all
+
+00:33:21,000 --> 00:33:24,000
+moving average where the moving average might
+
+00:33:24,000 --> 00:33:28,000
+be on the order love days or it might be on the order
+
+00:33:28,000 --> 00:33:31,000
+months the whole notion being to take
+
+00:33:31,000 --> 00:33:34,000
+some other random high frequency fluctuations
+
+00:33:34,000 --> 00:33:37,000
+out at the average and show the low-frequency
+
+00:33:37,000 --> 00:33:41,000
+or trends over
+
+00:33:41,000 --> 00:33:44,000
+some period of time so let's
+
+00:33:44,000 --> 00:33:47,000
+in fact go back to the Dow Jones average and
+
+00:33:47,000 --> 00:33:51,000
+let me now show you what the result of filtering
+
+00:33:51,000 --> 00:33:55,000
+with a moving average filter would look like
+
+00:33:55,000 --> 00:34:00,000
+on the Seder same Dow Jones Industrial Average sequence that I showed last time
+
+00:34:00,000 --> 00:34:07,000
+so once again we have the Dow Jones average from 1927 to roughly 1932
+
+00:34:07,000 --> 00:34:12,000
+at the top we see the impulse response for the moving average
+
+00:34:12,000 --> 00:34:15,000
+again I remind you on an expanded time scale
+
+00:34:15,000 --> 00:34:19,000
+and was shown here is the moving average with just one point
+
+00:34:19,000 --> 00:34:23,000
+so the output on the bottom trace is
+
+00:34:23,000 --> 00:34:27,000
+just simply identical to the input now let's increase the link to the moving
+
+00:34:27,000 --> 00:34:32,000
+average 22 points and we see that there's a small amount of smoothing
+
+00:34:32,000 --> 00:34:37,000
+three points and just a little more smoothing pickets inserted
+
+00:34:37,000 --> 00:34:41,000
+now a four-point moving average
+
+00:34:41,000 --> 00:34:46,000
+and next the five-point moving average
+
+00:34:46,000 --> 00:34:51,000
+and a six-point moving average next we see that the smoothing increases
+
+00:34:51,000 --> 00:34:56,000
+now let's increase the link to the moving average filter much more rapidly
+
+00:34:56,000 --> 00:34:59,000
+and watch how the output is
+
+00:34:59,000 --> 00:35:03,000
+more and more smooth in relation to the input
+
+00:35:03,000 --> 00:35:06,000
+again i emphasize that the timescale
+
+00:35:06,000 --> 00:35:11,000
+for the impulse response is significantly expanded in relationship
+
+00:35:11,000 --> 00:35:16,000
+to the timescale for both the input in the output
+
+00:35:16,000 --> 00:35:20,000
+and once again through the magic of filtering we've been able to eliminate
+
+00:35:20,000 --> 00:35:26,000
+the 1929 stock market crash
+
+00:35:26,000 --> 00:35:29,000
+alright so we've seen moving average filters
+
+00:35:29,000 --> 00:35:32,000
+and or what are sometimes referred to as
+
+00:35:32,000 --> 00:35:36,000
+non workers is filters and
+
+00:35:36,000 --> 00:35:39,000
+they are as I stressed very important class
+
+00:35:39,000 --> 00:35:42,000
+discreet I filters another
+
+00:35:42,000 --> 00:35:45,000
+very important class of discrete-time filters are
+
+00:35:45,000 --> 00:35:49,000
+what are referred to as rehearses filters
+
+00:35:49,000 --> 00:35:54,000
+workers the filters are filters that for which the difference equation
+
+00:35:54,000 --> 00:35:57,000
+has feedback from the output back
+
+00:35:57,000 --> 00:36:01,000
+into the input in other words the output
+
+00:36:01,000 --> 00:36:06,000
+depends not only on the input but also on previous values if the output
+
+00:36:06,000 --> 00:36:10,000
+so for example as i stress previously
+
+00:36:10,000 --> 00:36:13,000
+a rikers a difference equation has
+
+00:36:13,000 --> 00:36:16,000
+the general form that I indicate year
+
+00:36:16,000 --> 00:36:21,000
+a linear combination love waited outputs on the left hand side and linear
+
+00:36:21,000 --> 00:36:21,000
+combination
+
+00:36:21,000 --> 00:36:26,000
+waited inputs on the right hand side and
+
+00:36:26,000 --> 00:36:29,000
+as we talked about we can solve this equation
+
+00:36:29,000 --> 00:36:33,000
+for the current output why I have an interns a
+
+00:36:33,000 --> 00:36:36,000
+of current and past inputs and passed out
+
+00:36:36,000 --> 00:36:40,000
+what's for example just two
+
+00:36:40,000 --> 00:36:44,000
+interpret this focus on the interpretation of this is a filter
+
+00:36:44,000 --> 00:36:48,000
+let's looking at a first-order difference equation which
+
+00:36:48,000 --> 00:36:52,000
+we've talked about and generated the solution to previously
+
+00:36:52,000 --> 00:36:55,000
+so the first-order a first 30 difference equation
+
+00:36:55,000 --> 00:36:59,000
+would be as i indicated here
+
+00:36:59,000 --> 00:37:02,000
+and imposing causality on this
+
+00:37:02,000 --> 00:37:07,000
+so that we assume that we are running this is a recursion forward in time
+
+00:37:07,000 --> 00:37:11,000
+we can solve this for why I have an intern's affects it man
+
+00:37:11,000 --> 00:37:14,000
+and why I have and -1 waited
+
+00:37:14,000 --> 00:37:18,000
+by the factor a and I simply indicate
+
+00:37:18,000 --> 00:37:23,000
+the block diagram for this but what we want to examine now
+
+00:37:23,000 --> 00:37:28,000
+for this first order recursion is the frequency response and see its
+
+00:37:28,000 --> 00:37:29,000
+interpretation
+
+00:37:29,000 --> 00:37:32,000
+as a filter well in fact again
+
+00:37:32,000 --> 00:37:37,000
+the mathematics for this we've gone through in the last lecture
+
+00:37:37,000 --> 00:37:42,000
+and so interpreting the first-order difference equation as a system
+
+00:37:42,000 --> 00:37:46,000
+we can what what we're attempting to
+
+00:37:46,000 --> 00:37:49,000
+generate is the frequency response
+
+00:37:49,000 --> 00:37:52,000
+which is the forty a transformer the impulse response
+
+00:37:52,000 --> 00:37:56,000
+and from the difference equation we can of course all
+
+00:37:56,000 --> 00:38:02,000
+for either one of those by using the properties exploiting the properties in
+
+00:38:02,000 --> 00:38:07,000
+for EA transform applying to 48 transport to the difference equation
+
+00:38:07,000 --> 00:38:11,000
+we will end up with the forty a transformer the output
+
+00:38:11,000 --> 00:38:16,000
+equal to the Fourier transform the input times this factor which
+
+00:38:16,000 --> 00:38:19,000
+we know from the convolution property in fact
+
+00:38:19,000 --> 00:38:22,000
+is the frequency response
+
+00:38:22,000 --> 00:38:27,000
+of the system so this is the frequency response
+
+00:38:27,000 --> 00:38:31,000
+and of course the inverse Fourier transform a bad
+
+00:38:31,000 --> 00:38:34,000
+which I E indicate below
+
+00:38:34,000 --> 00:38:37,000
+is the system impulse response
+
+00:38:37,000 --> 00:38:41,000
+so we have the frequency response obtained by
+
+00:38:41,000 --> 00:38:46,000
+applying to free a transformed to the difference equation the impulse response
+
+00:38:46,000 --> 00:38:50,000
+and as we did last time we can
+
+00:38:50,000 --> 00:38:53,000
+look at that interns love
+
+00:38:53,000 --> 00:38:57,000
+a frequency response characteristic
+
+00:38:57,000 --> 00:39:00,000
+and recall that depending on whether
+
+00:39:00,000 --> 00:39:04,000
+the factor A is positive or negative we need to get
+
+00:39:04,000 --> 00:39:07,000
+a low-pass filter or a high pass filter
+
+00:39:07,000 --> 00:39:12,000
+and if in fact we look at the frequency response
+
+00:39:12,000 --> 00:39:17,000
+for the factor a being positive then we see that this is an approximation
+
+00:39:17,000 --> 00:39:24,000
+to a low-pass filter who wears below it I showed the frequency response
+
+00:39:24,000 --> 00:39:29,000
+for a negative & mare the
+
+00:39:29,000 --> 00:39:33,000
+this corresponds to a way high pass filter because we're attenuating
+
+00:39:33,000 --> 00:39:36,000
+low frequencies and retaining
+
+00:39:36,000 --> 00:39:39,000
+the high frequencies in and
+
+00:39:39,000 --> 00:39:43,000
+recall also that we illustrated
+
+00:39:43,000 --> 00:39:48,000
+this this characteristic as a low-pass high-pass filter for the recursion
+
+00:39:48,000 --> 00:39:52,000
+for the first-order recursion by by looking at
+
+00:39:52,000 --> 00:39:56,000
+how it work as a filter in both cases
+
+00:39:56,000 --> 00:40:00,000
+when the input was the Dow Jones average and indeed we saw that
+
+00:40:00,000 --> 00:40:03,000
+it generated both low-pass and high-pass filtering
+
+00:40:03,000 --> 00:40:08,000
+in in the appropriate cases so for discrete-time
+
+00:40:08,000 --> 00:40:11,000
+we have the two classes moving average and
+
+00:40:11,000 --> 00:40:14,000
+a cursive filters and
+
+00:40:14,000 --> 00:40:18,000
+and there are a variety of issues discussed in the text about why
+
+00:40:18,000 --> 00:40:22,000
+in certain contexts one might want to use one or the other basically what
+
+00:40:22,000 --> 00:40:22,000
+happens
+
+00:40:22,000 --> 00:40:26,000
+is dead for the moving average filter
+
+00:40:26,000 --> 00:40:30,000
+for a given set a filter specifications there are many more multiplications
+
+00:40:30,000 --> 00:40:33,000
+required in for a cursive filter by
+
+00:40:33,000 --> 00:40:37,000
+there are in certain contexts some very important compensating benefits
+
+00:40:37,000 --> 00:40:41,000
+the moving average filter
+
+00:40:41,000 --> 00:40:44,000
+now this concludes pretty much
+
+00:40:44,000 --> 00:40:48,000
+what I A want to say in detail
+
+00:40:48,000 --> 00:40:52,000
+about filtering the concept filtering in this set of lectures
+
+00:40:52,000 --> 00:40:56,000
+this is only a very quick glimpse into
+
+00:40:56,000 --> 00:41:00,000
+a very important and very rich topic and one of course that
+
+00:41:00,000 --> 00:41:05,000
+can be studied on its own in considerable amount of detail
+
+00:41:05,000 --> 00:41:08,000
+as the lectures go online what will find
+
+00:41:08,000 --> 00:41:11,000
+is that the basic concept to filtering both
+
+00:41:11,000 --> 00:41:15,000
+ideal and non-ideal filtering will will
+
+00:41:15,000 --> 00:41:19,000
+be a very important part love what we do
+
+00:41:19,000 --> 00:41:22,000
+and in in particular
+
+00:41:22,000 --> 00:41:25,000
+beginning with the next lecture will turn to
+
+00:41:25,000 --> 00:41:29,000
+a discussion of modulation exploiting
+
+00:41:29,000 --> 00:41:35,000
+the property modulation as it relates to some practical problems
+
+00:41:35,000 --> 00:41:38,000
+and what will find when we do that is that
+
+00:41:38,000 --> 00:41:42,000
+a very important part of that discussion and in fact the very important part
+
+00:41:42,000 --> 00:41:45,000
+love the use of modulation also
+
+00:41:45,000 --> 00:41:49,000
+just naturally incorporates the concept
+
+00:41:49,000 --> 00:41:51,000
+and properties filtering thank you
+

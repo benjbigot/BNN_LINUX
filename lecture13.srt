@@ -1,0 +1,3830 @@
+1
+00:00:00,040 --> 00:00:03,490 
+the following content is provided under
+a Creative Commons license
+
+2
+00:00:03,490 --> 00:00:07,129 
+your support will help MIT
+OpenCourseWare continue to offer
+
+3
+00:00:07,129 --> 00:00:10,580 
+high-quality educational resources for
+free
+
+4
+00:00:10,580 --> 00:00:14,360 
+to make a donation or view additional
+materials from hundreds of them IT
+
+5
+00:00:14,360 --> 00:00:15,030 
+courses
+
+6
+00:00:15,030 --> 00:00:18,110 
+visit MIT OpenCourseWare at 0 CW
+
+7
+00:00:18,110 --> 00:00:25,110 
+that MIT that EDU home the
+
+8
+00:00:29,170 --> 00:00:31,370 
+the
+
+9
+00:00:31,370 --> 00:00:32,970 
+the
+
+10
+00:00:32,970 --> 00:00:35,860 
+the
+
+11
+00:00:35,860 --> 00:00:39,220 
+in
+
+12
+00:00:39,220 --> 00:00:46,220 
+the new the in this lecture we
+
+13
+00:00:57,409 --> 00:00:60,559 
+begin a discussion of the topic
+modulation
+
+14
+00:00:60,559 --> 00:01:04,470 
+which is among other things a very
+important
+
+15
+00:01:04,470 --> 00:01:07,869 
+topic in practical terms for example it
+
+16
+00:01:07,869 --> 00:01:11,890 
+forms the cornerstone for many
+communication systems
+
+17
+00:01:11,890 --> 00:01:16,210 
+and also as we'll see as these lectures
+go along
+
+18
+00:01:16,210 --> 00:01:21,320 
+a particular for modulation referred to
+as poss amplitude modulation and
+
+19
+00:01:21,320 --> 00:01:22,160 
+eventually
+
+20
+00:01:22,160 --> 00:01:25,649 
+impulse modulation or impose train
+modulation
+
+21
+00:01:25,649 --> 00:01:28,830 
+forms a very important bridge between
+
+22
+00:01:28,830 --> 00:01:32,009 
+continuous-time signals in discrete-time
+signals
+
+23
+00:01:32,009 --> 00:01:36,020 
+now in general terms
+
+24
+00:01:36,020 --> 00:01:40,030 
+what we mean when we refer to modulation
+is the notion
+
+25
+00:01:40,030 --> 00:01:43,200 
+%uh using one signal to very
+
+26
+00:01:43,200 --> 00:01:47,190 
+a parameter up another signal for
+example
+
+27
+00:01:47,190 --> 00:01:51,289 
+a sinusoidal signal has three parameters
+
+28
+00:01:51,289 --> 00:01:56,649 
+amplitude frequency and phase and we
+could think for example
+
+29
+00:01:56,649 --> 00:01:59,940 
+love using one signal
+
+30
+00:01:59,940 --> 00:02:04,459 
+to very let's say the airport to up a
+sinusoidal signal
+
+31
+00:02:04,459 --> 00:02:09,270 
+and what that leads to is an ocean which
+will develop in some detail
+
+32
+00:02:09,270 --> 00:02:13,349 
+referred to as sinusoidal amplitude
+modulation
+
+33
+00:02:13,349 --> 00:02:16,569 
+and would correspond to a
+
+34
+00:02:16,569 --> 00:02:20,069 
+sinusoidal signal refer to as the
+carrier
+
+35
+00:02:20,069 --> 00:02:24,660 
+and its amplitude being buried on the
+basis
+
+36
+00:02:24,660 --> 00:02:28,230 
+love another signal now
+
+37
+00:02:28,230 --> 00:02:31,890 
+alternatively we could think all burying
+either the
+
+38
+00:02:31,890 --> 00:02:34,970 
+frequency or the phase a sinusoidal
+signal
+
+39
+00:02:34,970 --> 00:02:40,940 
+again with another signal and with that
+leads to is another very important
+
+40
+00:02:40,940 --> 00:02:41,860 
+notion
+
+41
+00:02:41,860 --> 00:02:44,930 
+which is referred to as sinusoidal
+
+42
+00:02:44,930 --> 00:02:48,160 
+frequency modulation where essentially
+
+43
+00:02:48,160 --> 00:02:52,350 
+it's the frequency up a sinusoid that's
+changing
+
+44
+00:02:52,350 --> 00:02:55,590 
+depending on the signal that we're using
+
+45
+00:02:55,590 --> 00:03:00,050 
+to modulate this sinusoid now
+
+46
+00:03:00,050 --> 00:03:04,170 
+sign a soil amplitude frequency and
+phase modulation
+
+47
+00:03:04,170 --> 00:03:07,810 
+are extremely important topics and ideas
+
+48
+00:03:07,810 --> 00:03:13,700 
+in the context ok communication systems
+what are the reasons is dead if you want
+
+49
+00:03:13,700 --> 00:03:16,819 
+to transmit a signal let's say for
+example a voice signal
+
+50
+00:03:16,819 --> 00:03:21,850 
+the voice signal that you're listening
+to now if you try to transmit that over
+
+51
+00:03:21,850 --> 00:03:25,000 
+long distances because the frequencies
+involved
+
+52
+00:03:25,000 --> 00:03:28,720 
+the medium that you use to transmitted
+
+53
+00:03:28,720 --> 00:03:32,670 
+won't carry it long distances the idea
+then
+
+54
+00:03:32,670 --> 00:03:36,260 
+is to essentially take that signal like
+a voice signal
+
+55
+00:03:36,260 --> 00:03:40,370 
+use it to modulate a much higher
+frequency signal
+
+56
+00:03:40,370 --> 00:03:43,670 
+and then transmit that higher frequency
+signal
+
+57
+00:03:43,670 --> 00:03:47,260 
+over a medium dead essentially can
+support
+
+58
+00:03:47,260 --> 00:03:51,280 
+long-distance transmission at those
+frequencies then at the other end of
+
+59
+00:03:51,280 --> 00:03:51,819 
+course
+
+60
+00:03:51,819 --> 00:03:55,050 
+the voice information or whatever else
+the information is
+
+61
+00:03:55,050 --> 00:03:58,610 
+is taken off now also
+
+62
+00:03:58,610 --> 00:04:01,610 
+a notion that that leads to an will be
+developing in
+
+63
+00:04:01,610 --> 00:04:05,650 
+some detail is kind of the idea that in
+fact
+
+64
+00:04:05,650 --> 00:04:10,390 
+you can simultaneously transmit more
+than one signal
+
+65
+00:04:10,390 --> 00:04:14,760 
+by in essence taking several voice
+signals or other signals
+
+66
+00:04:14,760 --> 00:04:19,639 
+using them to modulate either the
+frequency or amplitude
+
+67
+00:04:19,639 --> 00:04:23,150 
+love sinusoidal signals at different
+frequencies
+
+68
+00:04:23,150 --> 00:04:27,080 
+ending all those together that's a
+process called multiplexing
+
+69
+00:04:27,080 --> 00:04:30,620 
+and then at the other end the
+transmission system
+
+70
+00:04:30,620 --> 00:04:34,280 
+taking those sinusoidal signals apart
+and then
+
+71
+00:04:34,280 --> 00:04:39,270 
+extracting the envelope or frequency
+modulation information
+
+72
+00:04:39,270 --> 00:04:44,610 
+to get back to the voice signal or other
+information carrying signal
+
+73
+00:04:44,610 --> 00:04:48,020 
+so that's one of the very important ways
+in which
+
+74
+00:04:48,020 --> 00:04:54,659 
+modulation is used sinusoidal modulation
+is used in communication systems
+
+75
+00:04:54,659 --> 00:04:57,669 
+and and white will see as
+
+76
+00:04:57,669 --> 00:05:00,909 
+in particular as we go through today's
+lecture
+
+77
+00:05:00,909 --> 00:05:06,460 
+is there'd amplitude modulation
+sinusoidal amplitude modulation
+
+78
+00:05:06,460 --> 00:05:10,669 
+in fact follows in a fairly
+straightforward way
+
+79
+00:05:10,669 --> 00:05:13,840 
+from the properties of the four EA
+transform
+
+80
+00:05:13,840 --> 00:05:16,909 
+that we've developed in summer the
+earlier lectures
+
+81
+00:05:16,909 --> 00:05:20,210 
+so our focus on in today's lecture
+
+82
+00:05:20,210 --> 00:05:24,830 
+will be on sinusoidal amplitude
+modulation
+
+83
+00:05:24,830 --> 00:05:28,539 
+in continuous-time in the next lecture
+will
+
+84
+00:05:28,539 --> 00:05:31,779 
+consider the same set of notions related
+to discrete-time
+
+85
+00:05:31,779 --> 00:05:36,039 
+and also a concept referred to as poss
+amplitude modulation
+
+86
+00:05:36,039 --> 00:05:40,469 
+and all of these follow very in a very
+straightforward way from the modulation
+
+87
+00:05:40,469 --> 00:05:43,490 
+property for the 48 transform
+
+88
+00:05:43,490 --> 00:05:46,990 
+issues of frequency and phase modulation
+are
+
+89
+00:05:46,990 --> 00:05:50,379 
+a little more difficult to analyze but
+in fact many have
+
+90
+00:05:50,379 --> 00:05:53,960 
+the techniques that we've developed in
+the previous lectures
+
+91
+00:05:53,960 --> 00:05:58,990 
+also provide important insights into
+frequency phase modulation
+
+92
+00:05:58,990 --> 00:06:02,309 
+summer this is develop in more detail
+
+93
+00:06:02,309 --> 00:06:05,740 
+in the book so what I'd like to do
+
+94
+00:06:05,740 --> 00:06:09,120 
+is focus for now on the concept
+
+95
+00:06:09,120 --> 00:06:12,539 
+love amplitude modulation
+
+96
+00:06:12,539 --> 00:06:15,650 
+and in as i indicated
+
+97
+00:06:15,650 --> 00:06:19,529 
+there are several kinds love carrier
+signals
+
+98
+00:06:19,529 --> 00:06:23,449 
+on which the modulation can be
+superimposed
+
+99
+00:06:23,449 --> 00:06:27,039 
+the basic structure for an amplitude
+modulation system
+
+100
+00:06:27,039 --> 00:06:32,619 
+is one in which there is the modulating
+signal let's say for example Voice
+
+101
+00:06:32,619 --> 00:06:36,520 
+and a carrier signal what's referred to
+as the carrier
+
+102
+00:06:36,520 --> 00:06:41,629 
+and then of course the resulting output
+is the modulated output
+
+103
+00:06:41,629 --> 00:06:47,330 
+now to analyze this since we have
+multiplication in the time domain
+
+104
+00:06:47,330 --> 00:06:50,379 
+we know from the property the 48
+transform
+
+105
+00:06:50,379 --> 00:06:53,749 
+that we've developed previously the
+modulation property
+
+106
+00:06:53,749 --> 00:06:57,930 
+dead multiplication in the time domain
+corresponds to
+
+107
+00:06:57,930 --> 00:07:03,629 
+convolution in the frequency domain and
+it's this basic property or equation
+
+108
+00:07:03,629 --> 00:07:07,449 
+dead lets us analyzed in some detail in
+fact
+
+109
+00:07:07,449 --> 00:07:11,580 
+the notions of amplitude modulation
+
+110
+00:07:11,580 --> 00:07:14,939 
+as we go through this lecture and the
+next lecture
+
+111
+00:07:14,939 --> 00:07:18,889 
+we'll be talking as i indicated about
+several different types
+
+112
+00:07:18,889 --> 00:07:22,279 
+carrier signals one is
+
+113
+00:07:22,279 --> 00:07:26,499 
+what's referred to as poss carriers and
+that leads to
+
+114
+00:07:26,499 --> 00:07:30,229 
+among other things the concept the pulse
+amplitude modulation
+
+115
+00:07:30,229 --> 00:07:34,099 
+that will be deferred until the next
+lecture
+
+116
+00:07:34,099 --> 00:07:37,919 
+in today's lecture what I'll focus on is
+
+117
+00:07:37,919 --> 00:07:41,930 
+first the case of a complex exponential
+carrier
+
+118
+00:07:41,930 --> 00:07:45,210 
+second the case of a sinusoidal carrier
+
+119
+00:07:45,210 --> 00:07:50,249 
+and in fact in the complex exponential
+carrier a sinusoidal carrier
+
+120
+00:07:50,249 --> 00:07:53,569 
+are obviously very closely related since
+
+121
+00:07:53,569 --> 00:07:57,659 
+the complex exponential carrier is in
+effect
+
+122
+00:07:57,659 --> 00:08:01,149 
+to sinusoidal carriers one
+
+123
+00:08:01,149 --> 00:08:04,960 
+for the real part and one for the
+imaginary part
+
+124
+00:08:04,960 --> 00:08:08,169 
+so let's first begin a discussion love
+
+125
+00:08:08,169 --> 00:08:12,800 
+amplitude modulation by considering a
+complex exponential carrier
+
+126
+00:08:12,800 --> 00:08:18,479 
+and then moving on to a discussion of a
+sinusoidal carrier
+
+127
+00:08:18,479 --> 00:08:21,729 
+so the issue then is dead
+
+128
+00:08:21,729 --> 00:08:25,599 
+we have a signal
+
+129
+00:08:25,599 --> 00:08:29,050 
+x50 it's multiplied by a carrier
+
+130
+00:08:29,050 --> 00:08:32,990 
+and the carrier they were considering is
+a carrier signal
+
+131
+00:08:32,990 --> 00:08:36,070 
+see if the of the form
+
+132
+00:08:36,070 --> 00:08:40,200 
+e2 the J Omega CT
+
+133
+00:08:40,200 --> 00:08:43,250 
+plus status see thats the form
+
+134
+00:08:43,250 --> 00:08:46,470 
+love our carrier signal and
+
+135
+00:08:46,470 --> 00:08:49,510 
+what we can first analyze is what
+
+136
+00:08:49,510 --> 00:08:53,529 
+the result things signal or spectrum is
+
+137
+00:08:53,529 --> 00:08:58,190 
+at the output the modulator well we can
+do that by
+
+138
+00:08:58,190 --> 00:09:01,630 
+concentrating on the modulation property
+
+139
+00:09:01,630 --> 00:09:04,700 
+and let's consider just are as a
+
+140
+00:09:04,700 --> 00:09:08,329 
+serb general for respect from what i've
+indicated here
+
+141
+00:09:08,329 --> 00:09:11,949 
+for the 48 transform love
+
+142
+00:09:11,949 --> 00:09:15,560 
+the input signal
+
+143
+00:09:15,560 --> 00:09:19,009 
+or modulating signal exe phone maker and
+so
+
+144
+00:09:19,009 --> 00:09:22,430 
+this is intended to represent
+
+145
+00:09:22,430 --> 00:09:25,769 
+the spectrum affect safety
+
+146
+00:09:25,769 --> 00:09:30,430 
+and then the carrier signal since it's a
+single complex exponential
+
+147
+00:09:30,430 --> 00:09:34,259 
+has a $4 EA transform which is
+
+148
+00:09:34,259 --> 00:09:37,290 
+an impulse in the frequency domain
+
+149
+00:09:37,290 --> 00:09:40,850 
+and the airport to up the impulse is
+
+150
+00:09:40,850 --> 00:09:43,899 
+to partay to the J status subsea
+
+151
+00:09:43,899 --> 00:09:47,529 
+where we noticed that the complex
+amplitude incorporates
+
+152
+00:09:47,529 --> 00:09:50,690 
+the phase information so
+
+153
+00:09:50,690 --> 00:09:56,110 
+now if we multiply in the time domain
+week involving the frequency domain and
+
+154
+00:09:56,110 --> 00:09:57,290 
+as you know
+
+155
+00:09:57,290 --> 00:10:02,089 
+involving a signal with an impulse just
+shifts that signal to the location of
+
+156
+00:10:02,089 --> 00:10:03,420 
+the impulse
+
+157
+00:10:03,420 --> 00:10:07,380 
+and so as a consequence and taken care
+various
+
+158
+00:10:07,380 --> 00:10:11,290 
+factors what we end up with is spectrum
+
+159
+00:10:11,290 --> 00:10:15,680 
+then that is centered at the carrier
+frequency
+
+160
+00:10:15,680 --> 00:10:19,279 
+Omega subsea so
+
+161
+00:10:19,279 --> 00:10:22,790 
+what this says is dead if we have a
+signal
+
+162
+00:10:22,790 --> 00:10:26,940 
+x50 and we
+
+163
+00:10:26,940 --> 00:10:30,930 
+use it to modulate a complex exponential
+carrier
+
+164
+00:10:30,930 --> 00:10:34,579 
+in the frequency domain what we've
+simply done is to take
+
+165
+00:10:34,579 --> 00:10:38,959 
+the original spectrum and shifted in
+frequency
+
+166
+00:10:38,959 --> 00:10:43,680 
+to so that was originally at zero
+frequency is now centered around the
+
+167
+00:10:43,680 --> 00:10:46,300 
+carrier frequency
+
+168
+00:10:46,300 --> 00:10:50,220 
+now we've now modulated in effect to a
+higher frequency
+
+169
+00:10:50,220 --> 00:10:53,899 
+things are happening at a higher
+frequency band and
+
+170
+00:10:53,899 --> 00:10:57,920 
+the next question is how do we do much
+away or in other words
+
+171
+00:10:57,920 --> 00:11:01,699 
+how do we get the original signal back
+
+172
+00:11:01,699 --> 00:11:05,199 
+well of course one way that we can think
+of doing it
+
+173
+00:11:05,199 --> 00:11:08,209 
+particularly in the context love this
+
+174
+00:11:08,209 --> 00:11:12,110 
+specific carrier if we look back at the
+top equation
+
+175
+00:11:12,110 --> 00:11:15,550 
+we have as the result in the modulation
+
+176
+00:11:15,550 --> 00:11:19,449 
+X 50 time see if he were see if t is
+this
+
+177
+00:11:19,449 --> 00:11:22,750 
+and we could consider for example
+
+178
+00:11:22,750 --> 00:11:26,550 
+just simply dividing the modulator
+output by this
+
+179
+00:11:26,550 --> 00:11:29,629 
+or equivalently taking the modulated
+output
+
+180
+00:11:29,629 --> 00:11:32,850 
+and multiplying by the to the
+
+181
+00:11:32,850 --> 00:11:36,850 
+minus J Omega CT plus they to see
+
+182
+00:11:36,850 --> 00:11:40,790 
+well let's track that through in terms
+of the spectra
+
+183
+00:11:40,790 --> 00:11:44,350 
+we have again the spectrum or
+
+184
+00:11:44,350 --> 00:11:48,940 
+the output the modulator which is the
+original spectrum shifted
+
+185
+00:11:48,940 --> 00:11:52,310 
+up to the carrier frequency we have
+
+186
+00:11:52,310 --> 00:11:56,319 
+below that the spectrum love
+
+187
+00:11:56,319 --> 00:12:01,050 
+e2 the minus J Omega CT plus they to see
+
+188
+00:12:01,050 --> 00:12:05,009 
+and if we now convolved this with this
+
+189
+00:12:05,009 --> 00:12:08,959 
+that results in simply shifting this
+spectrum except for
+
+190
+00:12:08,959 --> 00:12:12,519 
+an issue the scale factor shifting this
+spectrum
+
+191
+00:12:12,519 --> 00:12:16,399 
+back down to the origin so can bombing
+these two together
+
+192
+00:12:16,399 --> 00:12:20,660 
+the spectrum that we end up with is that
+
+193
+00:12:20,660 --> 00:12:25,370 
+so weekend track this through in the
+frequency domain
+
+194
+00:12:25,370 --> 00:12:28,899 
+in the frequency domain that says ship
+the spectrum up
+
+195
+00:12:28,899 --> 00:12:32,410 
+when you want the modulate ship the
+spectrum back down
+
+196
+00:12:32,410 --> 00:12:35,560 
+and alternatively we can look at
+algebraically
+
+197
+00:12:35,560 --> 00:12:39,750 
+in the time domain what it says is if
+you multiply it by either the plush
+
+198
+00:12:39,750 --> 00:12:41,420 
+chair make a CT
+
+199
+00:12:41,420 --> 00:12:46,910 
+then when you want to get back multiply
+by in the minus chair make a CT
+
+200
+00:12:46,910 --> 00:12:52,399 
+now one question that I you could
+conceivably be asking is
+
+201
+00:12:52,399 --> 00:12:55,689 
+if we're talking about practical systems
+and not
+
+202
+00:12:55,689 --> 00:12:59,250 
+simply mathematics in fact
+
+203
+00:12:59,250 --> 00:13:03,149 
+doesn't make sense in the real world to
+consider
+
+204
+00:13:03,149 --> 00:13:06,500 
+using a complex exponential carrier
+
+205
+00:13:06,500 --> 00:13:10,279 
+and the answer to that in fact is
+
+206
+00:13:10,279 --> 00:13:15,740 
+yes dead very often in practical systems
+one considers
+
+207
+00:13:15,740 --> 00:13:20,649 
+using a carrier which in fact is a
+complex exponential
+
+208
+00:13:20,649 --> 00:13:23,709 
+well a complex exponentials complex
+there's a
+
+209
+00:13:23,709 --> 00:13:27,540 
+square root of -1 in the air and you can
+kinda basse-bolle how do we get a square
+
+210
+00:13:27,540 --> 00:13:29,170 
+root of -1
+
+211
+00:13:29,170 --> 00:13:32,430 
+and the answer is fairly simple let's
+
+212
+00:13:32,430 --> 00:13:37,019 
+look again at the modulator which we
+have here
+
+213
+00:13:37,019 --> 00:13:40,879 
+and in effect with that says is we want
+to multiply
+
+214
+00:13:40,879 --> 00:13:45,850 
+a real-valued signal by you the chair
+make a CT plus they to see
+
+215
+00:13:45,850 --> 00:13:50,250 
+now we can equivalent Lee use oil as
+relationship
+
+216
+00:13:50,250 --> 00:13:54,610 
+to break this down into a cosine and
+sine term
+
+217
+00:13:54,610 --> 00:13:59,069 
+and so what that means interns have an
+implementation equivalent Lee
+
+218
+00:13:59,069 --> 00:14:03,439 
+is modulating x50
+
+219
+00:14:03,439 --> 00:14:07,120 
+onto a cosine carrier
+
+220
+00:14:07,120 --> 00:14:10,589 
+and that then gives us the real part
+
+221
+00:14:10,589 --> 00:14:14,810 
+ald the complex output and modulating it
+onto
+
+222
+00:14:14,810 --> 00:14:20,300 
+a sinusoidal carrier these two being
+ninety degrees out of phase
+
+223
+00:14:20,300 --> 00:14:23,509 
+and that gives us the imaginary part
+
+224
+00:14:23,509 --> 00:14:27,019 
+and so in effect this is the complex
+signal
+
+225
+00:14:27,019 --> 00:14:31,230 
+if we just simply think both hanging
+attack on here that says square root of
+
+226
+00:14:31,230 --> 00:14:32,970 
+-1 RJ
+
+227
+00:14:32,970 --> 00:14:36,579 
+and we appropriately combined complex
+signals
+
+228
+00:14:36,579 --> 00:14:40,800 
+following the rules of complex
+arithmetic and indeed that's exactly the
+
+229
+00:14:40,800 --> 00:14:42,999 
+way things are done in the real world
+
+230
+00:14:42,999 --> 00:14:46,389 
+a complex signal is simply a set love
+
+231
+00:14:46,389 --> 00:14:51,040 
+to real signals and of course if we look
+at the spectra
+
+232
+00:14:51,040 --> 00:14:57,509 
+involved if we we have here the real
+part and the imaginary part pov
+
+233
+00:14:57,509 --> 00:15:01,240 
+the complex output if we
+
+234
+00:15:01,240 --> 00:15:05,339 
+again refer back to the original
+spectrum accessible maker
+
+235
+00:15:05,339 --> 00:15:08,829 
+and the modulated spectrum
+
+236
+00:15:08,829 --> 00:15:11,879 
+which I show down here the original
+spectrum
+
+237
+00:15:11,879 --> 00:15:16,040 
+shifted up to the carrier frequency
+
+238
+00:15:16,040 --> 00:15:20,620 
+in effect we're building nests I dove
+two lines
+
+239
+00:15:20,620 --> 00:15:24,050 
+one-line representing the real part
+
+240
+00:15:24,050 --> 00:15:29,980 
+love that and the real part in the time
+domain corresponds to the even part in
+
+241
+00:15:29,980 --> 00:15:31,300 
+the frequency domain
+
+242
+00:15:31,300 --> 00:15:34,870 
+and so with the output of one of the
+
+243
+00:15:34,870 --> 00:15:38,749 
+Cosi if the cosine modulator we have a
+spectrum
+
+244
+00:15:38,749 --> 00:15:41,889 
+that looks like this and
+
+245
+00:15:41,889 --> 00:15:46,769 
+the output love the along the imaginary
+branch
+
+246
+00:15:46,769 --> 00:15:50,269 
+has a spectrum that looks like this
+
+247
+00:15:50,269 --> 00:15:53,519 
+recalling the top branch that this
+
+248
+00:15:53,519 --> 00:15:57,999 
+for positive frequencies is positive and
+was positive here and so in effect when
+
+249
+00:15:57,999 --> 00:15:59,180 
+you add them
+
+250
+00:15:59,180 --> 00:16:02,490 
+this portion of the spectrum will cancel
+out
+
+251
+00:16:02,490 --> 00:16:06,430 
+so in effect what we're doing is
+building
+
+252
+00:16:06,430 --> 00:16:09,709 
+then the complex signal
+
+253
+00:16:09,709 --> 00:16:14,269 
+in effect outta to real signals or we're
+building this complex
+
+254
+00:16:14,269 --> 00:16:19,040 
+the spectrum the complex signal I dove
+separate lines the represent the
+
+255
+00:16:19,040 --> 00:16:22,949 
+even and the art parts
+
+256
+00:16:22,949 --> 00:16:26,559 
+okay now their
+
+257
+00:16:26,559 --> 00:16:30,920 
+are lots of applications love amplitude
+modulation
+
+258
+00:16:30,920 --> 00:16:34,430 
+and we'll be seeing a number of these as
+we go through the discussion
+
+259
+00:16:34,430 --> 00:16:37,860 
+what I'd like to do in is just indicate
+briefly
+
+260
+00:16:37,860 --> 00:16:41,889 
+one now which is an application that
+
+261
+00:16:41,889 --> 00:16:45,559 
+are in fact surface is fairly often in
+the context
+
+262
+00:16:45,559 --> 00:16:49,509 
+love a complex exponential carrier
+
+263
+00:16:49,509 --> 00:16:54,029 
+and bad is the notion love using
+modulation
+
+264
+00:16:54,029 --> 00:16:57,970 
+to permit
+
+265
+00:16:57,970 --> 00:17:01,110 
+the application %uh love
+
+266
+00:17:01,110 --> 00:17:04,959 
+a very well designed and implemented
+low-pass filter
+
+267
+00:17:04,959 --> 00:17:10,309 
+to be used as a bandpass filter and in
+fact as a set a bandpass filters
+
+268
+00:17:10,309 --> 00:17:13,770 
+account here's the idea the idea is
+
+269
+00:17:13,770 --> 00:17:17,230 
+if we have a fixed filter
+
+270
+00:17:17,230 --> 00:17:20,959 
+work we have let's say we have a signal
+and we want to thank
+
+271
+00:17:20,959 --> 00:17:25,540 
+all a filter which we want to kinda move
+along the signal
+
+272
+00:17:25,540 --> 00:17:30,970 
+one way to do it is to somehow have
+filters the move along the signal
+
+273
+00:17:30,970 --> 00:17:34,730 
+the other possibility is to keep the
+filter fix and let
+
+274
+00:17:34,730 --> 00:17:39,120 
+the signal move in frequency in front of
+the filter
+
+275
+00:17:39,120 --> 00:17:42,550 
+let me that may be a little more
+specific
+
+276
+00:17:42,550 --> 00:17:47,850 
+suppose that we have a signal accept T
+
+277
+00:17:47,850 --> 00:17:52,570 
+and in we modulated with a complex
+exponential carrier
+
+278
+00:17:52,570 --> 00:17:56,180 
+with the carrier frequency Omega see
+
+279
+00:17:56,180 --> 00:18:02,860 
+and the output if that is then processed
+with a low pass filter
+
+280
+00:18:02,860 --> 00:18:06,880 
+and then we d modulate the result
+
+281
+00:18:06,880 --> 00:18:11,040 
+then in fact what we've done is to take
+the spectrum
+
+282
+00:18:11,040 --> 00:18:14,300 
+or the input signal
+
+283
+00:18:14,300 --> 00:18:19,770 
+shifted pullout what is now around low
+frequencies
+
+284
+00:18:19,770 --> 00:18:24,140 
+and then shift that part of the spectrum
+back to where it belongs
+
+285
+00:18:24,140 --> 00:18:27,690 
+so if we look at that interns
+
+286
+00:18:27,690 --> 00:18:31,470 
+over actually tracking through the
+spectra we would have
+
+287
+00:18:31,470 --> 00:18:35,350 
+initially a spectrum for the original
+signal
+
+288
+00:18:35,350 --> 00:18:39,590 
+which I show at the top as excessive
+Omega
+
+289
+00:18:39,590 --> 00:18:42,960 
+after modulating or shifting that
+spectrum
+
+290
+00:18:42,960 --> 00:18:46,970 
+up to a center frequency Omega see
+
+291
+00:18:46,970 --> 00:18:52,290 
+we then have what I indicate here and
+the dotted line corresponds to
+
+292
+00:18:52,290 --> 00:18:55,390 
+the passband the low-caste filter
+
+293
+00:18:55,390 --> 00:18:59,770 
+well the results have low pass filtering
+rejects
+
+294
+00:18:59,770 --> 00:19:04,980 
+all the spectrum except the part around
+low frequencies
+
+295
+00:19:04,980 --> 00:19:08,800 
+and the next step is then 2d modulate
+
+296
+00:19:08,800 --> 00:19:12,690 
+this and so in effect the modulating
+
+297
+00:19:12,690 --> 00:19:17,500 
+will shift this spectrum back to where
+it originally came from
+
+298
+00:19:17,500 --> 00:19:20,740 
+and so that result will be what I
+
+299
+00:19:20,740 --> 00:19:24,200 
+show in the final result
+
+300
+00:19:24,200 --> 00:19:27,780 
+which is here and what we can say is
+that
+
+301
+00:19:27,780 --> 00:19:30,980 
+this in fact is equivalent
+
+302
+00:19:30,980 --> 00:19:34,550 
+if we can look back at the top spectrum
+
+303
+00:19:34,550 --> 00:19:38,370 
+this is equivalent to having extracted
+
+304
+00:19:38,370 --> 00:19:43,870 
+with a bandpass filter a section out of
+this part of the spectrum
+
+305
+00:19:43,870 --> 00:19:48,720 
+so interns love tracking through the
+spectrum and looking at
+
+306
+00:19:48,720 --> 00:19:52,390 
+the equivalent filtering operation
+
+307
+00:19:52,390 --> 00:19:56,070 
+then what we accomplished was
+
+308
+00:19:56,070 --> 00:20:00,470 
+to pull out this part of the spectrum
+
+309
+00:20:00,470 --> 00:20:03,610 
+using a low-pass filter and modulation
+
+310
+00:20:03,610 --> 00:20:07,010 
+but acquittal atlee what we implemented
+was
+
+311
+00:20:07,010 --> 00:20:10,750 
+a bandpass filter as i indicate here
+
+312
+00:20:10,750 --> 00:20:13,930 
+now of course a signal with this
+spectrum since
+
+313
+00:20:13,930 --> 00:20:17,490 
+this spectrum is not kind you get
+symmetric we know that this signal does
+
+314
+00:20:17,490 --> 00:20:20,290 
+not correspond to a real-valued signal
+
+315
+00:20:20,290 --> 00:20:25,170 
+a quite lovely this filter doesn't
+correspond to a filter whose impulse
+
+316
+00:20:25,170 --> 00:20:26,590 
+response Israel
+
+317
+00:20:26,590 --> 00:20:30,390 
+if in fact we add another step to this
+
+318
+00:20:30,390 --> 00:20:34,580 
+which is to take the real part of the
+output
+
+319
+00:20:34,580 --> 00:20:38,220 
+then by taking the real part of the
+output we would be taking the
+
+320
+00:20:38,220 --> 00:20:42,800 
+even part of the spectrum associated
+with that complex signal
+
+321
+00:20:42,800 --> 00:20:47,100 
+and the acquittal with author that we
+would end up with then
+
+322
+00:20:47,100 --> 00:20:50,270 
+is the filter that I indicated the
+bottom
+
+323
+00:20:50,270 --> 00:20:54,950 
+which is a bandpass filter
+
+324
+00:20:54,950 --> 00:21:00,760 
+now just two reiterate a point that I
+made earlier
+
+325
+00:21:00,760 --> 00:21:04,670 
+a question of course is why would you go
+to this trouble why not just build a
+
+326
+00:21:04,670 --> 00:21:06,560 
+bandpass filter
+
+327
+00:21:06,560 --> 00:21:10,430 
+and one other reasons is that
+
+328
+00:21:10,430 --> 00:21:14,100 
+its often much easier to build
+
+329
+00:21:14,100 --> 00:21:18,970 
+affixed filter a filter with a fixed
+center frequency for example a low-pass
+
+330
+00:21:18,970 --> 00:21:19,900 
+filter
+
+331
+00:21:19,900 --> 00:21:24,330 
+than it is to build the filter that has
+variable compliments in it so that
+
+332
+00:21:24,330 --> 00:21:28,240 
+when you bury them the filters center
+frequency shifts around
+
+333
+00:21:28,240 --> 00:21:32,670 
+now if you want to look at at the energy
+and a signaling different frequency
+
+334
+00:21:32,670 --> 00:21:33,600 
+bands
+
+335
+00:21:33,600 --> 00:21:37,660 
+then you'd like to look at it through
+different filters
+
+336
+00:21:37,660 --> 00:21:41,850 
+and so kind of the idea here which is
+really the basis for many spectrum
+
+337
+00:21:41,850 --> 00:21:43,270 
+analyzers
+
+338
+00:21:43,270 --> 00:21:47,330 
+is to build a really good quality
+low-pass filter
+
+339
+00:21:47,330 --> 00:21:52,500 
+and then use modulation which is often
+easier to implement use modulation
+
+340
+00:21:52,500 --> 00:21:55,960 
+to shift the signal essentially in front
+of the wind
+
+341
+00:21:55,960 --> 00:21:59,370 
+in front of the filter
+
+342
+00:21:59,370 --> 00:22:03,600 
+okay well so we've can work their way
+through
+
+343
+00:22:03,600 --> 00:22:07,500 
+modulation with a complex exponential
+carrier
+
+344
+00:22:07,500 --> 00:22:10,730 
+and what we saw
+
+345
+00:22:10,730 --> 00:22:14,860 
+among other things with a complex
+exponential carrier
+
+346
+00:22:14,860 --> 00:22:18,950 
+is that in fact what a car sponse to
+
+347
+00:22:18,950 --> 00:22:21,980 
+is to
+
+348
+00:22:21,980 --> 00:22:25,480 
+branches one being modulation
+
+349
+00:22:25,480 --> 00:22:29,570 
+with a cosine and the other modulation
+with the sign
+
+350
+00:22:29,570 --> 00:22:34,340 
+and so in fact in the real world weren't
+there in a practical system
+
+351
+00:22:34,340 --> 00:22:38,870 
+modulation the complex exponential
+carrier really would be accomplished
+
+352
+00:22:38,870 --> 00:22:42,860 
+with modulation with the sinusoidal
+carrier
+
+353
+00:22:42,860 --> 00:22:46,920 
+and in particular with sinusoidal
+carriers
+
+354
+00:22:46,920 --> 00:22:50,140 
+that are in quadrature as its referred
+to or
+
+355
+00:22:50,140 --> 00:22:53,880 
+covertly ninety degrees out of phase
+
+356
+00:22:53,880 --> 00:22:57,450 
+okay well you in fact
+
+357
+00:22:57,450 --> 00:23:02,600 
+sinusoidal modulation in other words
+modulation using only a sinusoidal
+
+358
+00:23:02,600 --> 00:23:03,550 
+carrier
+
+359
+00:23:03,550 --> 00:23:07,450 
+very often is used in its own right
+
+360
+00:23:07,450 --> 00:23:11,590 
+not only for for generating a complex
+exponential carrier
+
+361
+00:23:11,590 --> 00:23:16,570 
+but in fact as a carrier by itself
+
+362
+00:23:16,570 --> 00:23:19,680 
+well let's looking at what the
+consequences
+
+363
+00:23:19,680 --> 00:23:24,610 
+love modulation with a sinus or to carry
+or R and a particular
+
+364
+00:23:24,610 --> 00:23:27,830 
+work through again what the specter are
+
+365
+00:23:27,830 --> 00:23:32,400 
+and how we get the original signal back
+again
+
+366
+00:23:32,400 --> 00:23:37,040 
+soul in we are talking then about a
+carrier signal
+
+367
+00:23:37,040 --> 00:23:40,920 
+which is simply a sinusoidal signal
+
+368
+00:23:40,920 --> 00:23:44,820 
+with some phase and of course we can
+
+369
+00:23:44,820 --> 00:23:50,160 
+right that as the some love too complex
+exponential
+
+370
+00:23:50,160 --> 00:23:53,630 
+signals and so in effect now
+
+371
+00:23:53,630 --> 00:23:57,970 
+when we apply the modulation property we
+have the original spectrum
+
+372
+00:23:57,970 --> 00:24:01,190 
+which a show here accessible maker
+
+373
+00:24:01,190 --> 00:24:05,050 
+and that's convolved with the spectrum
+love the carrier
+
+374
+00:24:05,050 --> 00:24:08,220 
+and the spectrum of the carrier in this
+case
+
+375
+00:24:08,220 --> 00:24:11,530 
+is two impulses one at
+
+376
+00:24:11,530 --> 00:24:16,170 
+plus Omega see and one at minus Omega
+see
+
+377
+00:24:16,170 --> 00:24:19,530 
+and the amplitudes if these incorporate
+the phase
+
+378
+00:24:19,530 --> 00:24:22,930 
+and later on in the lectured and
+
+379
+00:24:22,930 --> 00:24:26,360 
+and to and subsequent lectures all
+
+380
+00:24:26,360 --> 00:24:29,730 
+have a tendency to drop that they
+deserve see just
+
+381
+00:24:29,730 --> 00:24:33,210 
+to keep the notation an algebra little
+cleaner but
+
+382
+00:24:33,210 --> 00:24:36,380 
+for now I've incorporated and so now
+
+383
+00:24:36,380 --> 00:24:39,490 
+when we apply the modulation property
+what
+
+384
+00:24:39,490 --> 00:24:44,390 
+we will do is convolved this spectrum
+
+385
+00:24:44,390 --> 00:24:47,540 
+with this spectrum and the result of
+course
+
+386
+00:24:47,540 --> 00:24:50,920 
+is that the spectrum of the original
+signal
+
+387
+00:24:50,920 --> 00:24:55,040 
+gets replicated at both Omega since the
+
+388
+00:24:55,040 --> 00:24:58,100 
+and at minus Omega subsea and
+
+389
+00:24:58,100 --> 00:25:01,310 
+the resulting spectrum at the output to
+the modulator then
+
+390
+00:25:01,310 --> 00:25:05,640 
+is the spectrum that I show here
+
+391
+00:25:05,640 --> 00:25:09,610 
+okay well now the question of course is
+
+392
+00:25:09,610 --> 00:25:14,190 
+see now what's happened is there with a
+sinus or carrier we've moved
+
+393
+00:25:14,190 --> 00:25:18,310 
+the spectrum to both plus i'll make a CD
+and minus Omega see
+
+394
+00:25:18,310 --> 00:25:22,760 
+and now if we want to get the original
+signal back again
+
+395
+00:25:22,760 --> 00:25:27,530 
+well we would like to do somehow is move
+that spectrum back down
+
+396
+00:25:27,530 --> 00:25:31,890 
+to the origin now in the case for
+complex exponential
+
+397
+00:25:31,890 --> 00:25:35,930 
+that was easy to do which shifted one of
+which is shifted back down
+
+398
+00:25:35,930 --> 00:25:40,440 
+let's see what happens if in fact we
+attempt 2d modulate
+
+399
+00:25:40,440 --> 00:25:45,920 
+by again multiplying by the same
+sinusoidal carrier
+
+400
+00:25:45,920 --> 00:25:48,960 
+so let's examine what happens if
+
+401
+00:25:48,960 --> 00:25:52,730 
+we now take
+
+402
+00:25:52,730 --> 00:25:57,460 
+are modulated signal
+
+403
+00:25:57,460 --> 00:26:01,060 
+and again modulated
+
+404
+00:26:01,060 --> 00:26:04,460 
+onto the same sinusoidal carrier
+
+405
+00:26:04,460 --> 00:26:09,480 
+to generate the output WT if we look at
+the spectra
+
+406
+00:26:09,480 --> 00:26:12,720 
+we have then the
+
+407
+00:26:12,720 --> 00:26:16,950 
+modulated spectrum which we had
+initially
+
+408
+00:26:16,950 --> 00:26:21,030 
+and we now want to convey all that again
+with the spectrum
+
+409
+00:26:21,030 --> 00:26:25,130 
+or the carrier signal the specter the
+carrier signal
+
+410
+00:26:25,130 --> 00:26:30,250 
+I indicate here and if you tracked
+through the convolution which is fairly
+
+411
+00:26:30,250 --> 00:26:31,590 
+straightforward
+
+412
+00:26:31,590 --> 00:26:35,600 
+then in fact what happens as you can
+follow this with this
+
+413
+00:26:35,600 --> 00:26:38,620 
+is you end up with
+
+414
+00:26:38,620 --> 00:26:42,610 
+a composite spectrum which
+
+415
+00:26:42,610 --> 00:26:46,950 
+is what i've indicated on the bottom
+curve and has
+
+416
+00:26:46,950 --> 00:26:51,350 
+in effect the spectrum of the original
+single exit see
+
+417
+00:26:51,350 --> 00:26:54,820 
+replicated in three places one
+
+418
+00:26:54,820 --> 00:26:58,610 
+is at -2 Omega subsea
+
+419
+00:26:58,610 --> 00:27:03,220 
+one is around the origin and wanna
+shifted up to
+
+420
+00:27:03,220 --> 00:27:06,460 
+twice the carrier frequency well
+
+421
+00:27:06,460 --> 00:27:10,610 
+it's this piece that we want if we could
+eliminate everything else
+
+422
+00:27:10,610 --> 00:27:15,510 
+and keep this then that would in fact
+correspond to the spectrum
+
+423
+00:27:15,510 --> 00:27:20,030 
+love the signal dead the original signal
+exit T
+
+424
+00:27:20,030 --> 00:27:23,160 
+how do we do that well we know how
+
+425
+00:27:23,160 --> 00:27:28,200 
+to eliminate part of the spectrum and
+keep another part of the spectrum that's
+
+426
+00:27:28,200 --> 00:27:31,130 
+called filtering so in fact what we
+would do
+
+427
+00:27:31,130 --> 00:27:34,330 
+is put the result if this
+
+428
+00:27:34,330 --> 00:27:39,420 
+through a low-pass filter low-pass
+filter route would retain the part of
+
+429
+00:27:39,420 --> 00:27:40,170 
+the spectrum
+
+430
+00:27:40,170 --> 00:27:43,890 
+around DC and eliminate the
+
+431
+00:27:43,890 --> 00:27:47,200 
+remaining part of the spectrum so we
+would keep this part
+
+432
+00:27:47,200 --> 00:27:51,430 
+and eliminate the part of the spectrum
+that we have over here
+
+433
+00:27:51,430 --> 00:27:55,440 
+and let me just draw your attention to
+the fact that because of the way the
+
+434
+00:27:55,440 --> 00:27:57,180 
+algebra works out
+
+435
+00:27:57,180 --> 00:28:02,630 
+the amplitude love this replication the
+spectrum is half with the original
+
+436
+00:28:02,630 --> 00:28:07,160 
+spectrum was and that means dead
+
+437
+00:28:07,160 --> 00:28:11,510 
+ideally to keep scale factors correct we
+would choose the amplitude this
+
+438
+00:28:11,510 --> 00:28:14,880 
+to be to to scale this
+
+439
+00:28:14,880 --> 00:28:18,820 
+backup 21 okay so
+
+440
+00:28:18,820 --> 00:28:22,740 
+what we have is the modulator and
+demodulator
+
+441
+00:28:22,740 --> 00:28:26,040 
+and just to summarize
+
+442
+00:28:26,040 --> 00:28:29,180 
+for the case Ave sinusoidal
+
+443
+00:28:29,180 --> 00:28:33,450 
+carrier as opposed to a complex
+exponential carrier
+
+444
+00:28:33,450 --> 00:28:38,800 
+the modulator is just as it is in the
+complex exponential case
+
+445
+00:28:38,800 --> 00:28:42,950 
+its multiplication with the sinusoidal
+carrier
+
+446
+00:28:42,950 --> 00:28:46,910 
+with frequency Omega see if a status
+
+447
+00:28:46,910 --> 00:28:51,660 
+see in the d modulator
+
+448
+00:28:51,660 --> 00:28:57,660 
+in the D modulator we would take the
+modulated signal
+
+449
+00:28:57,660 --> 00:29:02,370 
+modulated again with the same carrier
+signal and as we'll see later
+
+450
+00:29:02,370 --> 00:29:06,120 
+it's important to keep the same face
+relationship
+
+451
+00:29:06,120 --> 00:29:09,850 
+this result is now not yet quite
+
+452
+00:29:09,850 --> 00:29:13,490 
+that the modulated signal we need to
+process that
+
+453
+00:29:13,490 --> 00:29:18,660 
+with a low-pass filter that extracts the
+part of the spectrum
+
+454
+00:29:18,660 --> 00:29:24,490 
+around DC and throws away the upper part
+of the spectrum the case generated in
+
+455
+00:29:24,490 --> 00:29:28,620 
+the second modulation process and the
+resulting output
+
+456
+00:29:28,620 --> 00:29:31,680 
+is the original signal
+
+457
+00:29:31,680 --> 00:29:34,990 
+accept T right now
+
+458
+00:29:34,990 --> 00:29:38,500 
+what we've done is we've taken X 50
+we've
+
+459
+00:29:38,500 --> 00:29:43,350 
+modulated it onto a carrier and then
+we've taken a modulated signal and we
+
+460
+00:29:43,350 --> 00:29:46,070 
+figured out how to get back except Ian
+of course
+
+461
+00:29:46,070 --> 00:29:51,660 
+one Caswell if you start with exiting
+you want to get X thirty back again
+
+462
+00:29:51,660 --> 00:29:55,480 
+white by the going through all that why
+not just use exit see the beginning at
+
+463
+00:29:55,480 --> 00:29:57,240 
+the end and obviously
+
+464
+00:29:57,240 --> 00:30:01,880 
+their are lots of reasons as i indicated
+before
+
+465
+00:30:01,880 --> 00:30:06,070 
+and just two reiterate what they are
+
+466
+00:30:06,070 --> 00:30:09,640 
+the notion of an is that what you'd like
+to do
+
+467
+00:30:09,640 --> 00:30:13,980 
+is shift the signal into a different
+frequency band
+
+468
+00:30:13,980 --> 00:30:17,210 
+for transmission over some medium day
+
+469
+00:30:17,210 --> 00:30:20,550 
+is more match to that frequency band
+
+470
+00:30:20,550 --> 00:30:24,110 
+then the frequency range the original
+signal also
+
+471
+00:30:24,110 --> 00:30:28,350 
+as I alluded to there's the notion that
+you can take lotsa signals
+
+472
+00:30:28,350 --> 00:30:31,920 
+and transmit them simultaneously over
+one
+
+473
+00:30:31,920 --> 00:30:35,700 
+channel whether the channels a wire a
+mic wave like a satellite link or
+
+474
+00:30:35,700 --> 00:30:36,670 
+whatever
+
+475
+00:30:36,670 --> 00:30:40,070 
+again using the idea of modulation
+
+476
+00:30:40,070 --> 00:30:44,290 
+and what that process is referred to
+
+477
+00:30:44,290 --> 00:30:49,040 
+as is multiplexing and let me just
+quickly indicate what
+
+478
+00:30:49,040 --> 00:30:52,440 
+that multiplexing process corresponds to
+
+479
+00:30:52,440 --> 00:30:56,070 
+we could think for example love taking
+
+480
+00:30:56,070 --> 00:30:59,770 
+the taking one signal
+
+481
+00:30:59,770 --> 00:31:05,300 
+and modulating it on to one carrier
+
+482
+00:31:05,300 --> 00:31:08,930 
+with one carrier frequency taking
+
+483
+00:31:08,930 --> 00:31:14,110 
+a second signal modulating it onto a
+different carrier frequency
+
+484
+00:31:14,110 --> 00:31:17,630 
+taking a third signal and modulating it
+
+485
+00:31:17,630 --> 00:31:20,960 
+onto a third carrier frequency et cetera
+
+486
+00:31:20,960 --> 00:31:25,110 
+and if we choose these carrier
+frequencies
+
+487
+00:31:25,110 --> 00:31:30,390 
+appropriately then in fact weekend and
+all those together
+
+488
+00:31:30,390 --> 00:31:33,560 
+and do it in such a way that the specter
+don't overlap
+
+489
+00:31:33,560 --> 00:31:36,720 
+an end up with one broader band signal
+
+490
+00:31:36,720 --> 00:31:40,120 
+that incorporates the information
+
+491
+00:31:40,120 --> 00:31:43,550 
+simultaneously in all of those
+
+492
+00:31:43,550 --> 00:31:49,830 
+signals so just to illustrate that in
+the frequency domain
+
+493
+00:31:49,830 --> 00:31:54,880 
+what we have let's say RR three spectra
+xaxa
+
+494
+00:31:54,880 --> 00:31:58,700 
+the Annex E and we would for example
+take
+
+495
+00:31:58,700 --> 00:32:01,970 
+this spectrum and modulated
+
+496
+00:32:01,970 --> 00:32:05,840 
+to a carrier frequency Omega sed est
+
+497
+00:32:05,840 --> 00:32:11,050 
+we can take this spectrum and modulate
+it to a carrier frequency Omega sabi
+
+498
+00:32:11,050 --> 00:32:14,480 
+where Omega sabi is chosen so that
+
+499
+00:32:14,480 --> 00:32:17,690 
+when we and these two together they
+don't overlap
+
+500
+00:32:17,690 --> 00:32:21,780 
+so that they can eventually be separated
+out and then of course we can do the
+
+501
+00:32:21,780 --> 00:32:22,700 
+same thing
+
+502
+00:32:22,700 --> 00:32:27,310 
+with the third signal and put that in a
+frequency range over here
+
+503
+00:32:27,310 --> 00:32:30,350 
+be careful that none of those overlap
+
+504
+00:32:30,350 --> 00:32:34,140 
+and lonely and all those together the
+composite spectrum
+
+505
+00:32:34,140 --> 00:32:37,730 
+is what I show here and
+
+506
+00:32:37,730 --> 00:32:41,620 
+as you can see essentially
+
+507
+00:32:41,620 --> 00:32:45,540 
+by doing appropriate bandpass filtering
+
+508
+00:32:45,540 --> 00:32:50,090 
+we can pull at whatever part of the
+spectrum we choose to
+
+509
+00:32:50,090 --> 00:32:53,110 
+and then d modulate that in the
+appropriate way
+
+510
+00:32:53,110 --> 00:32:57,010 
+of course we can do this not just with
+three signals but perhaps with
+
+511
+00:32:57,010 --> 00:33:01,080 
+tens or hundreds of signals so that's a
+process
+
+512
+00:33:01,080 --> 00:33:06,250 
+dead is typically referred to as
+multiplexing and as i've described here
+
+513
+00:33:06,250 --> 00:33:10,400 
+it's referred to as frequency division
+multiplexing
+
+514
+00:33:10,400 --> 00:33:14,930 
+that is dividing the frequency band into
+cells and plucking
+
+515
+00:33:14,930 --> 00:33:19,580 
+different signals into each one of those
+
+516
+00:33:19,580 --> 00:33:23,700 
+and in so if we want now to recover one
+of those channels
+
+517
+00:33:23,700 --> 00:33:26,940 
+in a frequency division multiplexing
+system
+
+518
+00:33:26,940 --> 00:33:31,050 
+as i indicated we would first d
+multiplex
+
+519
+00:33:31,050 --> 00:33:34,620 
+the multiplexing corresponding to
+pulling out
+
+520
+00:33:34,620 --> 00:33:40,030 
+the appropriate channel with a bandpass
+filter
+
+521
+00:33:40,030 --> 00:33:43,740 
+and after D multiplexing we would then
+
+522
+00:33:43,740 --> 00:33:47,460 
+d modulate and we would be modulated
+
+523
+00:33:47,460 --> 00:33:52,360 
+with the carrier appropriate to the
+channel that we've pulled out
+
+524
+00:33:52,360 --> 00:33:55,810 
+and the the modulation of course
+
+525
+00:33:55,810 --> 00:33:59,500 
+involves multiplying by the carrier and
+doing appropriate
+
+526
+00:33:59,500 --> 00:34:03,530 
+low-pass filtering to finally get the
+signal back
+
+527
+00:34:03,530 --> 00:34:06,890 
+and frequency division multiplexing
+
+528
+00:34:06,890 --> 00:34:10,919 
+is one of those things that is
+
+529
+00:34:10,919 --> 00:34:15,800 
+are its it's a fact which uses the
+typeof multiplexing issues for example
+
+530
+00:34:15,800 --> 00:34:19,520 
+in typical broadcast a.m.
+
+531
+00:34:19,520 --> 00:34:23,210 
+radio systems where all the channels are
+superimposed
+
+532
+00:34:23,210 --> 00:34:27,210 
+together and it's your home radio
+receiver that does the appropriate the
+
+533
+00:34:27,210 --> 00:34:29,760 
+multiplexing in the modulating
+
+534
+00:34:29,760 --> 00:34:33,819 
+and of course you can see that not only
+is modulation an important part
+
+535
+00:34:33,819 --> 00:34:38,480 
+of that but as I alluded to in the last
+lecture filtering
+
+536
+00:34:38,480 --> 00:34:45,470 
+also becomes an important part love
+these practical systems
+
+537
+00:34:45,470 --> 00:34:50,200 
+okay now the kinda amplitude modulation
+
+538
+00:34:50,200 --> 00:34:53,270 
+that i've talked about so far
+
+539
+00:34:53,270 --> 00:34:56,350 
+is what's referred to as
+
+540
+00:34:56,350 --> 00:34:59,840 
+synchronous modulation and
+
+541
+00:34:59,840 --> 00:35:03,320 
+the reason for the term synchronous is
+dead in fact
+
+542
+00:35:03,320 --> 00:35:06,430 
+what's implied in the system's
+
+543
+00:35:06,430 --> 00:35:10,270 
+is a synchronization between
+
+544
+00:35:10,270 --> 00:35:14,410 
+the transmitter and receiver in
+particular
+
+545
+00:35:14,410 --> 00:35:18,660 
+in the system as we've talked about it
+
+546
+00:35:18,660 --> 00:35:21,720 
+the modulator
+
+547
+00:35:21,720 --> 00:35:25,060 
+and the D modulator
+
+548
+00:35:25,060 --> 00:35:28,750 
+have a synchronization in
+
+549
+00:35:28,750 --> 00:35:33,670 
+both frequency and phase the face here
+is indicated status if C
+
+550
+00:35:33,670 --> 00:35:38,180 
+and if we take a look at the D modulator
+
+551
+00:35:38,180 --> 00:35:41,480 
+the the modulator has a
+
+552
+00:35:41,480 --> 00:35:44,910 
+phase love status subsea
+
+553
+00:35:44,910 --> 00:35:48,360 
+and in general
+
+554
+00:35:48,360 --> 00:35:52,330 
+there's the issue love whether we cannot
+maintain that synchronization between
+
+555
+00:35:52,330 --> 00:35:54,850 
+the modulator and demodulator
+
+556
+00:35:54,850 --> 00:35:58,050 
+and so what we want to examine now
+
+557
+00:35:58,050 --> 00:36:01,880 
+more generally is what the consequences
+might be
+
+558
+00:36:01,880 --> 00:36:04,950 
+and the solution to the resulting
+problems
+
+559
+00:36:04,950 --> 00:36:08,340 
+if in fact we don't have synchronization
+
+560
+00:36:08,340 --> 00:36:11,390 
+between the modulator and demodulator
+
+561
+00:36:11,390 --> 00:36:14,800 
+synchronization in terms of phase and
+
+562
+00:36:14,800 --> 00:36:18,090 
+they're also by the way is another
+problem which is the issue
+
+563
+00:36:18,090 --> 00:36:20,010 
+synchronization
+
+564
+00:36:20,010 --> 00:36:23,200 
+in frequency thats examine more in
+
+565
+00:36:23,200 --> 00:36:27,480 
+the text and one of focus on here is
+just the issue synchronization it face
+
+566
+00:36:27,480 --> 00:36:28,710 
+to give you some sense of
+
+567
+00:36:28,710 --> 00:36:31,940 
+what the issue is okay well
+
+568
+00:36:31,940 --> 00:36:37,800 
+so now what we want to look at is what
+happens if we have a modulator
+
+569
+00:36:37,800 --> 00:36:41,100 
+with face status at sea
+
+570
+00:36:41,100 --> 00:36:45,230 
+and it D modulator where the phase
+instead if a is
+
+571
+00:36:45,230 --> 00:36:48,500 
+said being status if C is some other
+phase
+
+572
+00:36:48,500 --> 00:36:55,500 
+the subsea and if you tracked through
+the details and the algebra
+
+573
+00:36:55,730 --> 00:37:02,010 
+then what you'll find is dead in fact
+the output love the low-pass filter
+
+574
+00:37:02,010 --> 00:37:06,470 
+rather than being XFT the signal that we
+want
+
+575
+00:37:06,470 --> 00:37:10,670 
+is X if T multiplied by a scale factor
+
+576
+00:37:10,670 --> 00:37:14,790 
+and the scale factor is the cosigner the
+phase difference
+
+577
+00:37:14,790 --> 00:37:18,810 
+now one can ask okay well what's the big
+deal about
+
+578
+00:37:18,810 --> 00:37:22,200 
+a scale factor if it's too small will
+make it bigger purse to be will make it
+
+579
+00:37:22,200 --> 00:37:23,590 
+small
+
+580
+00:37:23,590 --> 00:37:28,420 
+but there's several points 1 is notice
+for example that if the phase difference
+
+581
+00:37:28,420 --> 00:37:29,360 
+between
+
+582
+00:37:29,360 --> 00:37:32,760 
+much later and the modulator is 90
+degrees
+
+583
+00:37:32,760 --> 00:37:36,900 
+then in fact the output at the modulator
+0
+
+584
+00:37:36,900 --> 00:37:41,600 
+or if it isn't quite ninety degrees the
+amplitude might be small
+
+585
+00:37:41,600 --> 00:37:44,890 
+and the implication would be a that if
+there's other noise that gets injected
+
+586
+00:37:44,890 --> 00:37:46,130 
+in the system
+
+587
+00:37:46,130 --> 00:37:50,240 
+the signal to noise ratio is very low
+now even worse
+
+588
+00:37:50,240 --> 00:37:54,210 
+is the issue that if
+
+589
+00:37:54,210 --> 00:37:58,170 
+in fact there's a phase difference but
+the exact phase differences and
+
+590
+00:37:58,170 --> 00:37:59,400 
+maintained
+
+591
+00:37:59,400 --> 00:38:04,540 
+so that the modulator and demodulator
+kinda fade in and out of phase
+
+592
+00:38:04,540 --> 00:38:08,460 
+then in fact the output at the modulator
+
+593
+00:38:08,460 --> 00:38:12,600 
+is x50 multiplied
+
+594
+00:38:12,600 --> 00:38:17,500 
+by a time-varying fading term which is
+the cosigner the phase difference
+
+595
+00:38:17,500 --> 00:38:20,770 
+well what that means essentially is dead
+
+596
+00:38:20,770 --> 00:38:25,400 
+if you use this kind of system to do
+that the modulation
+
+597
+00:38:25,400 --> 00:38:29,040 
+then in fact what you need to be careful
+about is
+
+598
+00:38:29,040 --> 00:38:35,450 
+maintaining synchronization in phase and
+also is it turns out a frequency between
+
+599
+00:38:35,450 --> 00:38:39,390 
+the modulator and demodulator
+
+600
+00:38:39,390 --> 00:38:44,220 
+now there are alternatives to this
+
+601
+00:38:44,220 --> 00:38:48,160 
+and the alternative is what's referred
+to as
+
+602
+00:38:48,160 --> 00:38:51,260 
+a synchronous the modulation and
+
+603
+00:38:51,260 --> 00:38:54,550 
+let me indicate what the idea behind a
+synchronous
+
+604
+00:38:54,550 --> 00:38:57,750 
+the modulation is
+
+605
+00:38:57,750 --> 00:39:01,200 
+now recall the what we've done in
+amplitude modulation
+
+606
+00:39:01,200 --> 00:39:05,640 
+is to take the carrier signal and very
+its ample to
+
+607
+00:39:05,640 --> 00:39:09,060 
+with the signal that eventually we want
+to get back
+
+608
+00:39:09,060 --> 00:39:13,280 
+so if we look at the amplitude modulated
+waveform it might
+
+609
+00:39:13,280 --> 00:39:16,880 
+typically look as i indicated here
+
+610
+00:39:16,880 --> 00:39:21,250 
+and what we're trying to get back is
+we're trying to get back
+
+611
+00:39:21,250 --> 00:39:24,670 
+the envelope well one could imagine
+
+612
+00:39:24,670 --> 00:39:28,980 
+building a circuit or designing a device
+which in some sense will
+
+613
+00:39:28,980 --> 00:39:32,230 
+tracked the envelope and in fact a
+
+614
+00:39:32,230 --> 00:39:36,540 
+common circuit to do that is a fairly
+simple
+
+615
+00:39:36,540 --> 00:39:39,720 
+circuit consisting love a diode
+
+616
+00:39:39,720 --> 00:39:42,940 
+and a resistor and capacitor in parallel
+
+617
+00:39:42,940 --> 00:39:47,480 
+kinda the idea being that the capacitor
+charges up
+
+618
+00:39:47,480 --> 00:39:50,940 
+as this way for moves up to its p
+
+619
+00:39:50,940 --> 00:39:55,970 
+and then as the way for drops down the
+capacitor discharges through the
+
+620
+00:39:55,970 --> 00:39:57,500 
+resistor and
+
+621
+00:39:57,500 --> 00:40:01,610 
+it kinda tracks the envelope in fact the
+kinda output
+
+622
+00:40:01,610 --> 00:40:04,780 
+that we would get is the type of
+behavior that
+
+623
+00:40:04,780 --> 00:40:09,830 
+i've indicated here and in fact than
+that is
+
+624
+00:40:09,830 --> 00:40:13,100 
+a type all the modulation it
+
+625
+00:40:13,100 --> 00:40:17,250 
+it's the modulation that doesn't require
+synchronization between
+
+626
+00:40:17,250 --> 00:40:20,360 
+the modulator and demodulator and
+
+627
+00:40:20,360 --> 00:40:25,380 
+it's fairly inexpensive to build
+
+628
+00:40:25,380 --> 00:40:28,590 
+but it has obviously some
+
+629
+00:40:28,590 --> 00:40:31,710 
+trade-offs associated with it well
+
+630
+00:40:31,710 --> 00:40:36,560 
+to can indicate where the trade-off
+comes from or where the issue surfaces
+
+631
+00:40:36,560 --> 00:40:40,130 
+notice the what we're doing is tracking
+
+632
+00:40:40,130 --> 00:40:43,430 
+the envelope with the sinusoidal signal
+
+633
+00:40:43,430 --> 00:40:47,150 
+and we're calling mad or we're suing the
+back is our regional
+
+634
+00:40:47,150 --> 00:40:50,390 
+signal exit T
+
+635
+00:40:50,390 --> 00:40:54,119 
+well suppose that XFT
+
+636
+00:40:54,119 --> 00:40:59,050 
+the original signal is sometimes
+positive and sometimes negative
+
+637
+00:40:59,050 --> 00:41:02,110 
+what might we see as we look
+
+638
+00:41:02,110 --> 00:41:07,490 
+at the output out the modulator well the
+output at the modulator would've course
+
+639
+00:41:07,490 --> 00:41:10,660 
+follow the envelope down and
+
+640
+00:41:10,660 --> 00:41:13,940 
+then it would follow the envelope back
+up again
+
+641
+00:41:13,940 --> 00:41:17,010 
+in other words what would tend to
+generate is
+
+642
+00:41:17,010 --> 00:41:21,330 
+a full-wave rectified version all the
+signal that you were really trying to
+
+643
+00:41:21,330 --> 00:41:22,610 
+get back
+
+644
+00:41:22,610 --> 00:41:26,119 
+now there's a simple solution to this
+the simple solution
+
+645
+00:41:26,119 --> 00:41:29,290 
+is to make sure that the signal
+
+646
+00:41:29,290 --> 00:41:32,360 
+that is the modulating signal XFT
+
+647
+00:41:32,360 --> 00:41:35,690 
+never goes negative so if it happens to
+
+648
+00:41:35,690 --> 00:41:39,790 
+voice signal happens tends to go
+negative that happens to
+
+649
+00:41:39,790 --> 00:41:42,970 
+we can simply at a constant to it and
+and a
+
+650
+00:41:42,970 --> 00:41:46,710 
+watchin of constant so that it always
+stays positive
+
+651
+00:41:46,710 --> 00:41:49,910 
+well let's look at that in the
+
+652
+00:41:49,910 --> 00:41:55,570 
+what we want to do then if we're
+considering a synchronous the modulation
+
+653
+00:41:55,570 --> 00:42:01,880 
+is to take our original signal x50
+
+654
+00:42:01,880 --> 00:42:05,960 
+and and to it a constant
+
+655
+00:42:05,960 --> 00:42:10,280 
+where the constant is made large enough
+so they were sure
+
+656
+00:42:10,280 --> 00:42:13,310 
+that this is a positive signal
+
+657
+00:42:13,310 --> 00:42:16,200 
+and it's a really let me just draw your
+attention to the fact that I'm now
+
+658
+00:42:16,200 --> 00:42:17,720 
+suppressing
+
+659
+00:42:17,720 --> 00:42:21,160 
+the phase on the carrier signal since
+
+660
+00:42:21,160 --> 00:42:25,080 
+the phase is not important to the
+argument and it's just some additional
+
+661
+00:42:25,080 --> 00:42:27,310 
+notation to carry around
+
+662
+00:42:27,310 --> 00:42:32,040 
+now so the the idea then is an a
+constant exit see
+
+663
+00:42:32,040 --> 00:42:37,990 
+notice that if we just take this term
+and expanded out into two terms
+
+664
+00:42:37,990 --> 00:42:43,730 
+accept a cosigner Omega CT plus eight
+times cosine Omega CT
+
+665
+00:42:43,730 --> 00:42:50,430 
+then in block diagram terms we can we
+can represent that as i've shown here
+
+666
+00:42:50,430 --> 00:42:54,600 
+and so it would correspond to modulating
+the signal
+
+667
+00:42:54,600 --> 00:42:58,740 
+accept T onto the carrier Omega some CT
+
+668
+00:42:58,740 --> 00:43:02,420 
+and also injecting some carrier
+
+669
+00:43:02,420 --> 00:43:07,270 
+with an amplitude a and the output at
+the modulator is then the summer those
+
+670
+00:43:07,270 --> 00:43:08,920 
+two
+
+671
+00:43:08,920 --> 00:43:13,060 
+and the tech depending on exactly what
+this value a is
+
+672
+00:43:13,060 --> 00:43:16,650 
+will influence what the envelope a look
+like
+
+673
+00:43:16,650 --> 00:43:21,130 
+and I indicate below to possibilities
+
+674
+00:43:21,130 --> 00:43:24,910 
+one is where I'd made a fairly large
+
+675
+00:43:24,910 --> 00:43:29,320 
+and one is where I've made a
+significantly smaller
+
+676
+00:43:29,320 --> 00:43:34,990 
+and their are both positive and negative
+issues associated with whether a is too
+
+677
+00:43:34,990 --> 00:43:36,850 
+large a raise too small
+
+678
+00:43:36,850 --> 00:43:40,230 
+for example if a is small
+
+679
+00:43:40,230 --> 00:43:44,070 
+in relation to the amplitude
+
+680
+00:43:44,070 --> 00:43:49,400 
+love the signal then %uh rather pay is
+large in relation to the airport to the
+
+681
+00:43:49,400 --> 00:43:50,510 
+signal
+
+682
+00:43:50,510 --> 00:43:55,890 
+then this envelope tends to be very flat
+and it tends to be easy to track it with
+
+683
+00:43:55,890 --> 00:43:58,500 
+that simple diode RC circuit
+
+684
+00:43:58,500 --> 00:44:03,450 
+as compared with the case down here
+
+685
+00:44:03,450 --> 00:44:08,010 
+on the other hand their is a price that
+you pay
+
+686
+00:44:08,010 --> 00:44:13,330 
+for this kind event below and the price
+that you pay is perhaps best seen in the
+
+687
+00:44:13,330 --> 00:44:15,730 
+frequency domain
+
+688
+00:44:15,730 --> 00:44:19,130 
+if we look in the frequency domain here
+
+689
+00:44:19,130 --> 00:44:22,590 
+is our original spectrum
+
+690
+00:44:22,590 --> 00:44:25,730 
+here is the spectrum at the output
+
+691
+00:44:25,730 --> 00:44:30,050 
+%uh the modulator and the impulse that
+occurs here
+
+692
+00:44:30,050 --> 00:44:33,510 
+corresponds to the carrier this injected
+
+693
+00:44:33,510 --> 00:44:37,520 
+the larger a is the more carrier is
+injected
+
+694
+00:44:37,520 --> 00:44:40,570 
+the more carrier thats injected
+
+695
+00:44:40,570 --> 00:44:43,770 
+the easier it is for the envelope
+detector
+
+696
+00:44:43,770 --> 00:44:46,910 
+2d modulate so
+
+697
+00:44:46,910 --> 00:44:50,040 
+one can ask well why not just put a lot
+in well
+
+698
+00:44:50,040 --> 00:44:53,920 
+the obvious answer is dead
+
+699
+00:44:53,920 --> 00:44:58,130 
+it's not and information carrying part
+but the signal
+
+700
+00:44:58,130 --> 00:45:02,970 
+and so in some sense it represents
+inefficiency in transmission because
+
+701
+00:45:02,970 --> 00:45:06,820 
+what you're transmitting is power energy
+
+702
+00:45:06,820 --> 00:45:10,480 
+that doesn't have any information
+associated with it is simply the
+
+703
+00:45:10,480 --> 00:45:12,410 
+injection of a carrier
+
+704
+00:45:12,410 --> 00:45:15,850 
+to make d modulation for a
+
+705
+00:45:15,850 --> 00:45:19,430 
+an AC Christie modulator the modulator
+to make
+
+706
+00:45:19,430 --> 00:45:23,630 
+the the modulation easier
+
+707
+00:45:23,630 --> 00:45:26,850 
+and so there's this trade off and in
+fact one
+
+708
+00:45:26,850 --> 00:45:31,210 
+kinda represents the trade-off and the
+Pratt Associated primers very often
+
+709
+00:45:31,210 --> 00:45:33,610 
+returns a percent modulation
+
+710
+00:45:33,610 --> 00:45:37,020 
+where the percent modulation is
+
+711
+00:45:37,020 --> 00:45:42,890 
+a the essentially the ratio the maximum
+signal level
+
+712
+00:45:42,890 --> 00:45:47,369 
+to the amplitude love the injected
+carrier
+
+713
+00:45:47,369 --> 00:45:51,000 
+and depending on whether
+
+714
+00:45:51,000 --> 00:45:54,550 
+the modulations very high or very low
+the trade-off
+
+715
+00:45:54,550 --> 00:45:59,470 
+is dead the transmission is more
+efficient and it takes more energy but
+
+716
+00:45:59,470 --> 00:46:01,200 
+the modulator is simpler
+
+717
+00:46:01,200 --> 00:46:04,820 
+or the modulators more complicated but
+
+718
+00:46:04,820 --> 00:46:09,450 
+the transmission is simply now there are
+situations where you might very well
+
+719
+00:46:09,450 --> 00:46:12,490 
+want to use one or the other for example
+
+720
+00:46:12,490 --> 00:46:15,780 
+in home radio your
+
+721
+00:46:15,780 --> 00:46:18,830 
+of unwilling to transmit a lot of power
+
+722
+00:46:18,830 --> 00:46:24,080 
+so that you can have inexpensive
+consumer-oriented receivers
+
+723
+00:46:24,080 --> 00:46:27,400 
+on the other hand in satellite
+communication you willing
+
+724
+00:46:27,400 --> 00:46:32,430 
+to pay a very high price for the
+modulators and D modulators
+
+725
+00:46:32,430 --> 00:46:35,480 
+but its the amount of power that's
+transmitted
+
+726
+00:46:35,480 --> 00:46:41,090 
+that's at a premium and so in one case
+satellite communication you use
+
+727
+00:46:41,090 --> 00:46:45,680 
+synchronous modulation and demodulation
+where isn't typical consumer-oriented
+
+728
+00:46:45,680 --> 00:46:47,490 
+broadcasting
+
+729
+00:46:47,490 --> 00:46:51,010 
+you would use a sink in a synchronous
+system and
+
+730
+00:46:51,010 --> 00:46:54,110 
+Jenna and transmit more power even
+
+731
+00:46:54,110 --> 00:46:58,119 
+transfer more power even if it's
+inefficient so that the D modulator
+
+732
+00:46:58,119 --> 00:47:03,140 
+can be simply now
+
+733
+00:47:03,140 --> 00:47:07,340 
+in a synchronous system then as we've
+indicated there's one source of
+
+734
+00:47:07,340 --> 00:47:08,910 
+inefficiency which
+
+735
+00:47:08,910 --> 00:47:12,790 
+is this injection at the Carrier there
+also
+
+736
+00:47:12,790 --> 00:47:15,869 
+is a somewhat different issue
+
+737
+00:47:15,869 --> 00:47:21,150 
+related to inefficiency in sinusoidal
+amplitude modulation
+
+738
+00:47:21,150 --> 00:47:24,450 
+and its inefficiency that is
+
+739
+00:47:24,450 --> 00:47:28,970 
+separate from the issue synchronous
+first is a synchronous systems in other
+
+740
+00:47:28,970 --> 00:47:31,160 
+words it's not associated with
+
+741
+00:47:31,160 --> 00:47:35,400 
+the injection of the carrier its a very
+different issue
+
+742
+00:47:35,400 --> 00:47:39,190 
+let me indicate what that is let's look
+again
+
+743
+00:47:39,190 --> 00:47:42,360 
+in at the spectrum love
+
+744
+00:47:42,360 --> 00:47:45,970 
+X 50 which i've indicated here
+
+745
+00:47:45,970 --> 00:47:50,350 
+and in a sinusoidal amplitude modulation
+system
+
+746
+00:47:50,350 --> 00:47:54,290 
+we would shift this to
+
+747
+00:47:54,290 --> 00:47:58,609 
+are centered around plus and minus the
+carrier frequency
+
+748
+00:47:58,609 --> 00:48:01,609 
+now notice there in the original system
+we
+
+749
+00:48:01,609 --> 00:48:06,920 
+occupier frequency spectrum thats two
+times Omega Savannah M
+
+750
+00:48:06,920 --> 00:48:10,180 
+by the time we've shifted it we've used
+up
+
+751
+00:48:10,180 --> 00:48:13,230 
+thinking a positive and negative
+frequencies we've used up
+
+752
+00:48:13,230 --> 00:48:18,050 
+twice as much all the frequency spectrum
+
+753
+00:48:18,050 --> 00:48:22,980 
+well you could say okay let's let's just
+shift this up this way and
+
+754
+00:48:22,980 --> 00:48:27,859 
+get rid of this part that's of course
+what the complex exponential carrier did
+
+755
+00:48:27,859 --> 00:48:31,890 
+and the issue there really is that now
+you've got to transmit both the real
+
+756
+00:48:31,890 --> 00:48:35,090 
+part an imaginary part
+
+757
+00:48:35,090 --> 00:48:38,330 
+so what you can think about and ask is
+
+758
+00:48:38,330 --> 00:48:41,920 
+if you still want to transmit a
+real-valued signal
+
+759
+00:48:41,920 --> 00:48:46,330 
+happen you somehow remove the
+inefficiency or redundancy in the
+
+760
+00:48:46,330 --> 00:48:47,540 
+spectrum
+
+761
+00:48:47,540 --> 00:48:50,710 
+well notice that what we have is
+
+762
+00:48:50,710 --> 00:48:55,060 
+this spectrum moved here and moved here
+
+763
+00:48:55,060 --> 00:48:59,119 
+and we could imagine building a
+
+764
+00:48:59,119 --> 00:49:02,190 
+real-valued signal by
+
+765
+00:49:02,190 --> 00:49:06,580 
+eliminating what I refer to here as the
+lower sideband
+
+766
+00:49:06,580 --> 00:49:10,420 
+I have the positive frequencies and the
+lower sideband
+
+767
+00:49:10,420 --> 00:49:13,710 
+otto's the negative frequencies
+
+768
+00:49:13,710 --> 00:49:17,590 
+and in effect what we've done is taken
+
+769
+00:49:17,590 --> 00:49:22,060 
+just the positive frequencies here
+shifted them there
+
+770
+00:49:22,060 --> 00:49:25,060 
+the negative frequencies here and
+shifted them here and the resulting
+
+771
+00:49:25,060 --> 00:49:25,859 
+spectrum
+
+772
+00:49:25,859 --> 00:49:28,980 
+is what I indicate below
+
+773
+00:49:28,980 --> 00:49:32,840 
+well this in fact is what is often done
+
+774
+00:49:32,840 --> 00:49:37,020 
+and what is referred to as is single
+sideband
+
+775
+00:49:37,020 --> 00:49:40,050 
+what we've done is we've kept the upper
+sideband
+
+776
+00:49:40,050 --> 00:49:44,330 
+in this particular case we could
+alternatively by the way
+
+777
+00:49:44,330 --> 00:49:47,480 
+think love putting this system together
+
+778
+00:49:47,480 --> 00:49:51,000 
+where we retain the lower
+
+779
+00:49:51,000 --> 00:49:54,250 
+sideband instead of the upper sideband
+
+780
+00:49:54,250 --> 00:49:57,810 
+and in either case well we removed is
+
+781
+00:49:57,810 --> 00:50:01,690 
+and inefficiency in transmission at the
+signal
+
+782
+00:50:01,690 --> 00:50:05,950 
+namely we have a real value signal but
+it only requires as much
+
+783
+00:50:05,950 --> 00:50:09,600 
+total band with the terms thereof the
+frequencies that I
+
+784
+00:50:09,600 --> 00:50:12,950 
+that in which there's energy president
+as
+
+785
+00:50:12,950 --> 00:50:17,930 
+the original sick well how do we do this
+there are a variety of ways
+
+786
+00:50:17,930 --> 00:50:21,270 
+in and there's one procedure that is
+
+787
+00:50:21,270 --> 00:50:25,520 
+discussed in more detail in the text
+which uses was referred to as a
+
+788
+00:50:25,520 --> 00:50:27,630 
+90-degree face splitter
+
+789
+00:50:27,630 --> 00:50:32,150 
+the simplest way at least conceptually
+is to think about doing it with
+
+790
+00:50:32,150 --> 00:50:35,740 
+filtering and the idea simply
+
+791
+00:50:35,740 --> 00:50:39,790 
+is dead if we have are modulated signal
+
+792
+00:50:39,790 --> 00:50:43,560 
+here's the spektr on the modulated
+signal and if that modulated signal is
+
+793
+00:50:43,560 --> 00:50:44,720 
+simply put through
+
+794
+00:50:44,720 --> 00:50:48,359 
+a high pass filter than the result
+
+795
+00:50:48,359 --> 00:50:51,740 
+will be to eliminate
+
+796
+00:50:51,740 --> 00:50:56,140 
+the lower sideband if we choose the
+high-pass filter
+
+797
+00:50:56,140 --> 00:50:59,550 
+to have a characteristic as I indicate
+here
+
+798
+00:50:59,550 --> 00:51:03,800 
+so this course conceptually is a very
+sharp cutoff filter
+
+799
+00:51:03,800 --> 00:51:08,380 
+and what it eliminates are the lower
+side bands and the resulting spectrum
+
+800
+00:51:08,380 --> 00:51:11,800 
+is what we have below
+
+801
+00:51:11,800 --> 00:51:17,000 
+and this in fact is really kind of the
+basic idea
+
+802
+00:51:17,000 --> 00:51:20,100 
+behind single sideband transmission
+
+803
+00:51:20,100 --> 00:51:24,290 
+again there's a trade-off it's clearly
+more efficient
+
+804
+00:51:24,290 --> 00:51:28,210 
+then double sideband transmission
+
+805
+00:51:28,210 --> 00:51:31,830 
+but also has the complication
+
+806
+00:51:31,830 --> 00:51:36,130 
+or additional issue dead the modulator
+becomes a little more complicated
+
+807
+00:51:36,130 --> 00:51:37,630 
+because you need
+
+808
+00:51:37,630 --> 00:51:41,850 
+this filtering operation or some
+equivalent operation to get rid of the
+
+809
+00:51:41,850 --> 00:51:46,180 
+unwanted side
+
+810
+00:51:46,180 --> 00:51:49,520 
+okay well this is a fairly quick
+
+811
+00:51:49,520 --> 00:51:54,020 
+tour through a variety of issues related
+to modulation
+
+812
+00:51:54,020 --> 00:51:58,130 
+and it really is just the tip of the
+iceberg obviously
+
+813
+00:51:58,130 --> 00:52:01,320 
+modulation in the context so sinusoidal
+
+814
+00:52:01,320 --> 00:52:04,910 
+modulation as we talked about has
+
+815
+00:52:04,910 --> 00:52:09,030 
+in fact the lotto detailed issues
+associated with it
+
+816
+00:52:09,030 --> 00:52:12,700 
+it's important to recognize day at
+
+817
+00:52:12,700 --> 00:52:15,840 
+and to be somewhat pleased by the fact
+dead
+
+818
+00:52:15,840 --> 00:52:20,680 
+not only with the mathematical
+foundations that we've developed
+
+819
+00:52:20,680 --> 00:52:25,840 
+can we understand the basics of
+sinusoidal amplitude modulation but in
+
+820
+00:52:25,840 --> 00:52:26,609 
+fact
+
+821
+00:52:26,609 --> 00:52:30,050 
+what you'll find issue if you
+
+822
+00:52:30,050 --> 00:52:34,440 
+dig into this somewhat deeper that the
+basic background that we've built up so
+
+823
+00:52:34,440 --> 00:52:35,920 
+far
+
+824
+00:52:35,920 --> 00:52:39,320 
+the mathematical tools are really
+
+825
+00:52:39,320 --> 00:52:43,140 
+pretty much what you need for a much
+deeper understanding
+
+826
+00:52:43,140 --> 00:52:47,200 
+love all the issues involved
+
+827
+00:52:47,200 --> 00:52:53,660 
+so from a what might have seemed like a
+fairly abstract mathematical property
+
+828
+00:52:53,660 --> 00:52:57,240 
+associated with the Fourier transform
+we've begun
+
+829
+00:52:57,240 --> 00:53:01,359 
+to develop what should give you the
+sense that some
+
+830
+00:53:01,359 --> 00:53:05,000 
+important practical considerations
+
+831
+00:53:05,000 --> 00:53:08,740 
+and as we'll see in the next lecture
+
+832
+00:53:08,740 --> 00:53:12,520 
+very much the same kinds of notions
+apply a
+
+833
+00:53:12,520 --> 00:53:16,760 
+for discrete-time sinus oil on complex
+exponential
+
+834
+00:53:16,760 --> 00:53:21,780 
+amplitude modulation and also as i
+indicated at the beginning at the
+
+835
+00:53:21,780 --> 00:53:22,940 
+lecture
+
+836
+00:53:22,940 --> 00:53:28,130 
+in the next lecture will also talk about
+what's referred to as possible to
+
+837
+00:53:28,130 --> 00:53:30,720 
+modulation it's a different kind of
+carrier
+
+838
+00:53:30,720 --> 00:53:35,180 
+and what that will lead to among other
+things
+
+839
+00:53:35,180 --> 00:53:38,640 
+is a very important bridge
+
+840
+00:53:38,640 --> 00:53:42,500 
+between the notions of continuous-time
+
+841
+00:53:42,500 --> 00:53:45,369 
+and the notions of discrete-time thank
+you
+

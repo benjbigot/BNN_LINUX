@@ -1,0 +1,2976 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+பின்வரும் உள்ளடக்கத்தை ஒரு கிரியேட்டிவ் காமன்ஸ் உரிமத்தின் கீழ் வழங்கப்படும்
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+உங்கள் ஆதரவு எம்ஐடி ஓபன்கோர்ஸ்வேர் வழங்க தொடர்ந்து உதவும்
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+இலவசமாக உயர்தர கல்வி வளங்கள்
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+நன்கொடை செய்ய அல்லது அவர்களை நூற்றுக்கணக்கான கூடுதல் பொருட்கள் காண
+
+00:00:14,000 --> 00:00:15,000
+courses
+படிப்புகள்
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+0 CW இல் எம்ஐடி ஓபன்கோர்ஸ்வேர் வருகை
+
+00:00:18,000 --> 00:00:23,000
+that MIT that EDU hard
+என்று எம்ஐடி என்று EDU கடின
+
+00:00:23,000 --> 00:00:29,000
+the
+உருக்கு
+
+00:00:29,000 --> 00:00:31,000
+the
+உருக்கு
+
+00:00:31,000 --> 00:00:34,000
+the
+உருக்கு
+
+00:00:34,000 --> 00:00:39,000
+the in
+இல்
+
+00:00:39,000 --> 00:00:45,000
+the norm
+விதிமுறை
+
+00:00:45,000 --> 00:00:50,000
+are
+இருக்கிகின்றன
+
+00:00:50,000 --> 00:00:56,000
+the in the last two lectures
+கடந்த இரண்டு விரிவுரைகள்
+
+00:00:56,000 --> 00:01:01,000
+and we saw how periodic not periodic signals could be represented as linear
+நாம் கால கால அடையாளம் நேரியல் குறிப்பிடப்படுகின்றன முடியும் என்பதை பார்த்தேன்
+
+00:01:01,000 --> 00:01:03,000
+combinations a complex exponentials
+ஒரு சிக்கலான நிகழ்வுஎண் சேர்க்கைகள்
+
+00:01:03,000 --> 00:01:08,000
+and this led to the Fourier series representation
+இந்த ஃபோரியர் பிரதிநிதித்துவம் வழிவகுத்தது
+
+00:01:08,000 --> 00:01:12,000
+in the periodic case and it led to the Fourier transform
+கால வழக்கில் அது மாற்றும் ஃபோரியர் வழிவகுத்தது
+
+00:01:12,000 --> 00:01:15,000
+representation in the a periodic case and and then in fact
+ஒரு கால வழக்கு மற்றும் பின்னர் உண்மையில் பிரதிநிதித்துவத்தை
+
+00:01:15,000 --> 00:01:20,000
+what we did was to incorporate the 4e a series
+என்ன நாங்கள் 4e ஒரு தொடர் இணைத்துக்கொள்ள இருந்தது
+
+00:01:20,000 --> 00:01:26,000
+within the framework of the Fourier transform what I'd like to do in today's
+ஃபோரியர் கட்டமைப்பிற்குள் நான் இன்று செய்ய விரும்புகிறேன் என்ன மாற்றும்
+
+00:01:26,000 --> 00:01:28,000
+lecture is
+விரிவுரை ஆகிறது
+
+00:01:28,000 --> 00:01:31,000
+look at the 4-yard transform more closely
+இன்னும் நெருக்கமாக மாற்றும் 4 புறத்தில் பார்க்க
+
+00:01:31,000 --> 00:01:34,000
+in particular with regard to so this property's
+எனவே இந்த சொத்து தொடர்பாக குறிப்பாக
+
+00:01:34,000 --> 00:01:37,000
+so let me begin by reminding you
+எனவே, என்னை நீங்கள் நினைவு படுத்தி ஆரம்பிக்கலாம்
+
+00:01:37,000 --> 00:01:41,000
+love the analysis and synthesis equations for the four th
+நான்கு வது பகுப்பாய்வு மற்றும் தொகுப்பு சமன்பாடுகள் பிடிக்கிறது
+
+00:01:41,000 --> 00:01:44,000
+transform and as I summarize them here
+நான் இங்கே சுருக்கமாக என மாற்றும் மற்றும்
+
+00:01:44,000 --> 00:01:47,000
+the synthesis equation being a
+தொகுப்பு சமன்பாடு ஒரு இருப்பது
+
+00:01:47,000 --> 00:01:50,000
+an equation that tells us how to build the
+எப்படி உருவாக்க நமக்கு சொல்கிறது என்று ஒரு சமன்பாடு
+
+00:01:50,000 --> 00:01:54,000
+time function outta in essence a linear combination
+சாராம்சத்தில் நேரம் செயல்பாடு உணர்வாளர்களுக்கு ஒரு நேர்கோட்டு சேர்க்கையை
+
+00:01:54,000 --> 00:01:59,000
+a complex exponentials and the analysis equation
+ஒரு சிக்கலான நிகழ்வுஎண் மற்றும் பகுப்பாய்வு சமன்பாடு
+
+00:01:59,000 --> 00:02:04,000
+telling us how to get the amplitudes love those complex exponentials
+எப்படி வீச்சுகள் அந்த சிக்கலான நிகழ்வுஎண் அன்பை பெற எங்களிடம்
+
+00:02:04,000 --> 00:02:07,000
+from the Associated time function
+தொடர்புடைய நேரம் செயல்பாடு இருந்து
+
+00:02:07,000 --> 00:02:10,000
+so essentially in the decomposition
+எனவே அடிப்படையில் பிரிப்பு
+
+00:02:10,000 --> 00:02:15,000
+affect safety as a linear combination of complex exponentials
+சிக்கலான நிகழ்வுஎண் ஒரு நேர்கோட்டு கலவையை என பாதுகாப்பு பாதிக்கும்
+
+00:02:15,000 --> 00:02:18,000
+the complex amplitudes if those are in effect
+அந்த நடைமுறையில் இருக்கும் சிக்கலான வீச்சுகள் என்றால்
+
+00:02:18,000 --> 00:02:21,000
+the 48 transform scaled by
+48 அளவிட உருமாற்றத்தைப்
+
+00:02:21,000 --> 00:02:24,000
+the differential and scaled by one over two-part
+வேற்றுமை மற்றும் ஒரு வழியாக இரண்டு பகுதியாக அளவிட
+
+00:02:24,000 --> 00:02:28,000
+now as
+இப்போது
+
+00:02:28,000 --> 00:02:32,000
+I indicated last time the 48 transform
+நான் 48 மாற்றும் கடந்த முறை குறிப்பிட்டார்
+
+00:02:32,000 --> 00:02:35,000
+is a complex function of frequency in
+அதிர்வெண் ஒரு சிக்கலான செயல்பாடு
+
+00:02:35,000 --> 00:02:39,000
+and in particular the complex function of frequency
+குறிப்பாக அதிர்வெண் சிக்கலான செயல்பாடு
+
+00:02:39,000 --> 00:02:43,000
+has an important and very useful cemetery property
+ஒரு முக்கியமான மற்றும் மிகவும் பயனுள்ளதாக கல்லறை சொத்து உள்ளது
+
+00:02:43,000 --> 00:02:47,000
+the symmetry love the Fourier transform
+சமச்சீர் ஃபோரியர் பிடிக்கிறது
+
+00:02:47,000 --> 00:02:50,000
+when X if T is real is
+போது X டி உண்மையான உள்ளது என்றால்
+
+00:02:50,000 --> 00:02:54,000
+what is referred to as conjugate symmetric in other words if we take the
+நாம் எடுத்து இருந்தால், வேறு வார்த்தைகளில் துணையிய சமச்சீரான என குறிப்பிடப்படுகிறது என்ன
+
+00:02:54,000 --> 00:02:55,000
+complex
+சிக்கலான
+
+00:02:55,000 --> 00:02:59,000
+function after Omega and and its complex conjugate
+செயல்பாடு பின்னர் ஒமேகா மற்றும் அதன் இணை சிக்கலெண்
+
+00:02:59,000 --> 00:03:02,000
+that's equivalent to replacing Omega
+ஒமேகா பதிலாக சமமான தான்
+
+00:03:02,000 --> 00:03:06,000
+by minus Omega and a consequence if that
+கழித்தல் ஒமேகா மற்றும் ஒரு விளைவு மூலம் அந்த
+
+00:03:06,000 --> 00:03:12,000
+if we think interns love the real party the Fourier transform
+நாம் பயிற்சியாளர்களுக்கு ஃபோரியர் உண்மையான கட்சி காதலிக்கிறேன் என்று நீங்கள் நினைத்தால்
+
+00:03:12,000 --> 00:03:16,000
+the real part is and even function of frequency
+உண்மையான பகுதியாக உள்ளது மற்றும் அதிர்வெண் கூட செயல்பாடு
+
+00:03:16,000 --> 00:03:20,000
+and the magnet to is an even function of frequency
+மற்றும் காந்தம் அதிர்வெண் ஒரு கூட செயல்பாடு
+
+00:03:20,000 --> 00:03:24,000
+whereas the imaginary part is an
+கற்பனை பகுதி ஒரு அதேசமயம்
+
+00:03:24,000 --> 00:03:28,000
+odd function of frequency and the phase angle
+ஒற்றைப்படை அதிர்வெண் செயல்பாடு மற்றும் கட்டம் கோணம்
+
+00:03:28,000 --> 00:03:31,000
+is an odd function of frequency so
+அதிர்வெண் ஒரு புதுமையான செயல்பாடு உள்ளது
+
+00:03:31,000 --> 00:03:36,000
+we have this symmetry relationship that for except the real
+நாம் இந்த சமச்சீர் உறவு வேண்டும் என்று உண்மையான தவிர ஐந்து
+
+00:03:36,000 --> 00:03:40,000
+if we think I've either the real part or the magnitude of the Fourier transform
+நான் உண்மையான பகுதியாக அல்லது ஃபோரியர் அளவில் அல்லது மாற்றும் நினைக்கிறேன் என்றால்
+
+00:03:40,000 --> 00:03:44,000
+its even symmetric and the imaginary part
+அதன் கூட சமச்சீரான மற்றும் கற்பனை பகுதி
+
+00:03:44,000 --> 00:03:48,000
+or the phase angle either one it is
+அல்லது கட்ட கோணத்தில் அது ஒன்று
+
+00:03:48,000 --> 00:03:52,000
+fought symmetric in other words if we flip it we multiply by a minus sign
+நாம் அதை கவிழ்த்து என்றால் வேறு வார்த்தைகளில் உள்ள போராடிய சமச்சீரான நாம் ஒரு கழித்தல் பெருக்கவும்
+
+00:03:52,000 --> 00:03:55,000
+let's didn't look at an example
+இது ஒரு உதாரணம் பார்க்க முடியவில்லை நாம்
+
+00:03:55,000 --> 00:03:59,000
+in the context love an example that we worked last time
+பின்னணியில் நாம் கடந்த காலத்தில் வேலை என்று ஒரு உதாரணம் பிடிக்கிறது
+
+00:03:59,000 --> 00:04:03,000
+for the Fourier transform we took
+ஃபோரியர் நாம் எடுத்து மாற்றும் ஒரு
+
+00:04:03,000 --> 00:04:06,000
+the case both a real exponential
+ஒரு உண்மையான அதிவேகமான இரு வழக்கு
+
+00:04:06,000 --> 00:04:10,000
+love the form eat to the -80 times this step
+படிவம் -80 முறை இந்த நடவடிக்கை சாப்பிட பிடிக்கும்
+
+00:04:10,000 --> 00:04:14,000
+and the 48 transform as
+மற்றும் 48 மாற்றும்
+
+00:04:14,000 --> 00:04:19,000
+we found was other algebraic form one over a plus J Omega
+நாம் ஒரு பிளஸ் ஜே ஒமேகா மீது மற்ற இயற்கணித வடிவில் இருந்தது கண்டுபிடிக்கப்பட்டது
+
+00:04:19,000 --> 00:04:24,000
+and incidently the 48 transform into grow only converged
+மற்றும் விசு 48 மட்டுமே ஒருமித்து வளர்க்கும் உருமாறுகிறது
+
+00:04:24,000 --> 00:04:27,000
+for a greater than 0 in other words
+வேறு வார்த்தைகளில் கூறுவதானால், ஒரு அதிகமான 0
+
+00:04:27,000 --> 00:04:32,000
+for this exponential became and I illustrated
+இந்த அதிவேகமான மாறியது மற்றும் நான் விளக்குகிறது ஐந்து
+
+00:04:32,000 --> 00:04:36,000
+the magnitude and angle and what we see is that
+ரிக்டர் அளவில் கோணம் மற்றும் நாம் பார்க்க என்று
+
+00:04:36,000 --> 00:04:39,000
+you the minus 8c is a real
+நீங்கள் கழித்து 8c ஒரு உண்மையான ஆகிறது
+
+00:04:39,000 --> 00:04:42,000
+time function therefore its magnitude
+நேரம் செயல்பாடு எனவே அதன் அளவு
+
+00:04:42,000 --> 00:04:46,000
+should be an even function of frequency and indeed it is
+அதிர்வெண் ஒரு கூட செயல்பாடு இருக்கும், உண்மையில் அது வேண்டும்
+
+00:04:46,000 --> 00:04:49,000
+and its phase angle shown below
+மற்றும் அதன் கட்ட கோணத்தில் கீழே
+
+00:04:49,000 --> 00:04:54,000
+is and odd function of frequency
+மற்றும் அதிர்வெண் ஒற்றைப்படை செயல்பாடு
+
+00:04:54,000 --> 00:04:57,000
+so in fact in although
+எனவே உண்மையில் என்றாலும்
+
+00:04:57,000 --> 00:05:00,000
+I stressed last time that
+நான் கடந்த முறை வலியுறுத்தினார்
+
+00:05:00,000 --> 00:05:05,000
+the complex exponentials required to build the time function
+நேரம் செயல்பாடு உருவாக்க தேவைப்படும் சிக்கலான நிகழ்வுஎண்
+
+00:05:05,000 --> 00:05:10,000
+require exponentials both positive and negative frequencies
+அதிர்வெண்கள் நேர்மறை மற்றும் எதிர்மறை இரண்டு நிகழ்வுஎண் தேவை
+
+00:05:10,000 --> 00:05:13,000
+for except the real what we see is that
+உண்மையான தவிர நாம் என்ன பார்க்க என்று
+
+00:05:13,000 --> 00:05:17,000
+because if the symmetry properties either for the real and imaginary or
+ஏனெனில் சமச்சீர் பண்புகள் அல்லது உண்மையான கற்பனைகள் அல்லது என்றால்
+
+00:05:17,000 --> 00:05:18,000
+magnitude and angle
+ரிக்டர் அளவில் கோணம்
+
+00:05:18,000 --> 00:05:24,000
+we can specify a before you transform for let's say only positive frequencies
+ஒரே நேர்மறை அதிர்வெண்கள் சொல்கிறேன் நீங்கள் மாற்றும் முன் நாம் ஒரு குறிப்பிட முடியும்
+
+00:05:24,000 --> 00:05:27,000
+and asymmetry then implies are tells us
+மற்றும் முறையற்ற பிறகு நமக்கு சொல்கிறது குறிக்கிறது
+
+00:05:27,000 --> 00:05:34,000
+what the Fourier transform then will be for the negative frequencies
+ஃபோரியர் பிறகு எதிர்மறை அலைவரிசைகளை இருக்கும்
+
+00:05:34,000 --> 00:05:37,000
+okay now this same example the cause
+காரணம் இப்போது இந்த அதே எடுத்துக்காட்டாக சரி
+
+00:05:37,000 --> 00:05:40,000
+the decaying exponential demonstrates
+அழிகிற அதிவேகமான நிரூபிக்கிறது
+
+00:05:40,000 --> 00:05:43,000
+another important and often useful
+மற்றொரு முக்கியமான மற்றும் பயனுள்ள
+
+00:05:43,000 --> 00:05:47,000
+property the Fourier transform
+ஃபோரியர் சொத்து
+
+00:05:47,000 --> 00:05:51,000
+specifically let's rewrite algebraically this example
+குறிப்பாக நாட்டின் அல்ஜிப்ரா இந்த உதாரணம் எழுத அனுமதிக்க
+
+00:05:51,000 --> 00:05:55,000
+as I indicate here so we have
+நான் நாம் இங்கே குறிப்பிட
+
+00:05:55,000 --> 00:06:01,000
+again the exponential was 48 transformers one over a plus J Omega
+மீண்டும் அதிவேகமான ஒரு பிளஸ் ஜே ஒமேகா மீது 48 மின்மாற்றிகள் ஒன்று
+
+00:06:01,000 --> 00:06:06,000
+and if I A just simply divide numerator and denominator by a
+மற்றும் IA வெறுமனே ஒரு மூலம் தொகுதி மற்றும் பகுதி பிரித்து
+
+00:06:06,000 --> 00:06:10,000
+I can rewrite it in the form shown here
+நான் இங்கு காட்டப்பட்டுள்ள வடிவில் அதை மீண்டும் எழுத முடியும்
+
+00:06:10,000 --> 00:06:14,000
+and what we notice is dead in the time function
+மற்றும் நாம் கவனிக்க நேரம் செயல்பாடு இறந்து ஆகிறது
+
+00:06:14,000 --> 00:06:18,000
+we have a term of the form eight times TV
+நாம் வடிவம் எட்டு முறை டிவி ஒரு கால வேண்டும்
+
+00:06:18,000 --> 00:06:22,000
+and in the frequency function we have a term for the form Omega
+மற்றும் அதிர்வெண் செயல்பாடு நாம் வடிவம் ஒமேகா ஒரு கால வேண்டும்
+
+00:06:22,000 --> 00:06:25,000
+divided by a or
+ஒரு அல்லது வகுக்க
+
+00:06:25,000 --> 00:06:28,000
+equivalent Lee we can't think all the
+சமமான லீ நாம் நினைக்க முடியாது அனைத்து
+
+00:06:28,000 --> 00:06:32,000
+time function which I show here
+நான் இங்கே காட்ட இது நேரம் செயல்பாடு
+
+00:06:32,000 --> 00:06:36,000
+and as the pram enter a gets smaller
+மற்றும் தள்ளுவண்டியில் ஒரு சிறிய பெறுகிறார் நுழைய
+
+00:06:36,000 --> 00:06:41,000
+the exponential gets spread out in time
+அதிவேகமான நேரம் வெளியே பரவியது
+
+00:06:41,000 --> 00:06:44,000
+whereas s04e08 transform
+S04E08 மாற்றும் அதேசமயம்
+
+00:06:44,000 --> 00:06:49,000
+or the magnitude of its Fourier transform has the inverse property
+அல்லது அதன் ஃபோரியர் அளவில் தலைகீழ் சொத்து மாற்றும்
+
+00:06:49,000 --> 00:06:52,000
+that as a get smaller in fact
+என்று ஒரு உண்மையில் சிறிய கிடைக்கும் என
+
+00:06:52,000 --> 00:06:56,000
+this scales down in frequency
+இந்த அதிர்வெண் உள்ள செதில்கள் கீழே
+
+00:06:56,000 --> 00:06:59,000
+well this is a general property love
+இந்த ஒரு பொது சொத்து காதல்
+
+00:06:59,000 --> 00:07:02,000
+the Fourier transform namely the fact
+ஃபோரியர் என்ற உண்மையை மாற்றும்
+
+00:07:02,000 --> 00:07:06,000
+that a a linear scaling a time
+என்று ஒரு முறை அளவிடுதல் ஒரு நேர்கோட்டு
+
+00:07:06,000 --> 00:07:10,000
+generates the infers linear scaling a frequency
+ஒரு அதிர்வெண் அளவிடுதல் கூறியுள்ளார் நேரியல் உருவாக்கிறது
+
+00:07:10,000 --> 00:07:14,000
+and the general statement love this time frequency scaling is what
+பொது அறிக்கை காதல் இந்த நேரத்தில் அலைவெண் என்ன ஆகிறது
+
+00:07:14,000 --> 00:07:18,000
+I show at the top above the transparency namely the equation
+நான் வெளிப்படைத்தன்மை, அதாவது சமன்பாடு மேலே மேலே காண்பிக்கிறேன்
+
+00:07:18,000 --> 00:07:22,000
+that if we scale the time function in time
+என்று நாம் நேரம் நேரம் செயல்பாடு அளவில் என்றால்
+
+00:07:22,000 --> 00:07:28,000
+then we apply and infers scaling a frequency
+நாம் விண்ணப்பிக்க மற்றும் கூறியுள்ளார் ஒரு அதிர்வெண் அளவிடுதல்
+
+00:07:28,000 --> 00:07:31,000
+now her this in fact is probably a result
+இப்போது அவள் இந்த உண்மையை அநேகமாக இதன் விளைவாக ஆகிறது
+
+00:07:31,000 --> 00:07:35,000
+that you're already possibly familiar with in
+நீங்கள் ஏற்கனவே உள்ள சாத்தியமான பழக்கமான
+
+00:07:35,000 --> 00:07:39,000
+somewhat of a different context essentially you can think of this
+சற்றே மாறுபட்ட சூழல் அடிப்படையில் நீங்கள் நினைக்கலாம்
+
+00:07:39,000 --> 00:07:44,000
+as an example poor generalization rather
+ஒரு உதாரணம் ஏழை பொதுமைப்படுத்தப்பட்ட பதிலாக போன்ற
+
+00:07:44,000 --> 00:07:47,000
+up the notion that if let's say I A
+கருத்து வரை என்று தான் நான் சொல்கிறேன் என்றால்
+
+00:07:47,000 --> 00:07:53,000
+had a signal that was recorded on a tape player
+ஒரு டேப் வீரர் அன்று பதிவு செய்யப்பட்டது என்று ஒரு சமிக்ஞை செய்தார்
+
+00:07:53,000 --> 00:07:57,000
+and if I play the tape back and let's say twice the speed which means that I'm
+நான் மீண்டும் டேப் விளையாட நான் இருக்கிறேன் என்று பொருள் இருமுறை வேகம் சொல்கிறேன் என்றால்
+
+00:07:57,000 --> 00:07:59,000
+compressing the time axis
+நேரம் அச்சு அடக்க
+
+00:07:59,000 --> 00:08:04,000
+linearly by a factor of two then in fact what happens is that
+நேர்க்கோட்டில் இரண்டு ஒரு காரணி பின்னர் உண்மையில் என்ன நடக்கிறது என்று ஆகிறது
+
+00:08:04,000 --> 00:08:08,000
+the frequencies that we observe get pushed up by a factor of two
+நாம் கண்காணிக்க அதிர்வெண்கள் இரண்டு ஒரு காரணி வரை தள்ளி
+
+00:08:08,000 --> 00:08:12,000
+and effect let me illustrate that
+மற்றும் விளைவு எனக்கு விளக்க அனுமதிக்க வேண்டும் என்று
+
+00:08:12,000 --> 00:08:15,000
+I have here a glockenspiel
+நான் இங்கே ஒரு வகை இசைக்கருவி வேண்டும்
+
+00:08:15,000 --> 00:08:20,000
+and anyone who loves a parade certainly knows what I each
+மற்றும் நிச்சயமாக ஒரு அணிவகுப்பு நேசிக்கும் எவரும் என்ன நான் ஒவ்வொரு தெரிகிறது
+
+00:08:20,000 --> 00:08:23,000
+blockage feel as and
+அடைப்பு மற்றும் என நினைக்கிறேன்
+
+00:08:23,000 --> 00:08:27,000
+this particular glockenspiel has
+இந்த குறிப்பிட்ட வகை இசைக்கருவி உள்ளது
+
+00:08:27,000 --> 00:08:32,000
+3 eighties separated each by an active there's a middle way
+3 எண்பதுகள் ஒரு நடுத்தர வழி இருக்கிறது ஒரு செயலில் ஒவ்வொரு பிரிக்கப்பட்ட
+
+00:08:32,000 --> 00:08:38,000
+a high a us and a low a
+ஒரு உயர் எங்களுக்கு ஒரு குறைந்த ஒரு
+
+00:08:38,000 --> 00:08:42,000
+and what I've done is to record
+என்ன நான் செய்துவிட்டேன் பதிவு செய்ய
+
+00:08:42,000 --> 00:08:46,000
+the middle a on a tape
+ஒரு டேப் நடுத்தர ஒரு
+
+00:08:46,000 --> 00:08:51,000
+at seven and a half inches per second and
+ஏழு மற்றும் ஒரு அரை விநாடிக்கு அங்குல மற்றும்
+
+00:08:51,000 --> 00:08:54,000
+what I'd like to demonstrate is that as
+என்ன நான் நிரூபிக்க விரும்புகிறேன் ஆகிறது என்று
+
+00:08:54,000 --> 00:08:58,000
+we play that back either a cloister half-speed
+நாம் ஒன்று ஒரு கோவிலை அரை வேகத்தில் மீண்டும் விளையாட
+
+00:08:58,000 --> 00:09:03,000
+the effective note gets moved down or up by a doctor
+பயனுள்ள குறிப்பு ஒரு மருத்துவர் வரை கீழே சென்று அல்லது
+
+00:09:03,000 --> 00:09:06,000
+so let me first play the note at
+என்னை முதலில் குறிப்பு விளையாட அனுமதிக்க
+
+00:09:06,000 --> 00:09:09,000
+the speed at which was recorded and so what we'll hear
+வேகத்தை பதிவு செய்யப்பட்டது எனவே நாம் கேட்க வேண்டும்
+
+00:09:09,000 --> 00:09:13,000
+is the middle a as i've recorded it and let me just start
+நான் அதை பதிவு மற்றும் என்னை ஆரம்பிப்போம் போல நடுத்தர ஒரு ஆகிறது
+
+00:09:13,000 --> 00:09:20,000
+the tape player
+டேப் வீரர்
+
+00:09:26,000 --> 00:09:29,000
+okay let me stop it and hopefully what you heard is the
+சரி எனக்கு அதை நிறுத்த மற்றும் வட்டம், நீங்கள் என்ன கேள்விப்பட்டேன்
+
+00:09:29,000 --> 00:09:32,000
+same note from the tape recorder as
+டேப் ரெக்கார்டர் போன்ற அதே குறிப்பு
+
+00:09:32,000 --> 00:09:36,000
+the note that I played on the glockenspiel okay well now
+இப்போது நான் நன்றாக நன்கு க்ளொக்கன்ஸ்பைல் நடித்தார் என்று குறிப்பு
+
+00:09:36,000 --> 00:09:40,000
+a rewind the tape and we go back to the beginning
+ஒரு டேப் முன்னாடி நாம் தொடக்கத்தில் மீண்டும் சென்றால்
+
+00:09:40,000 --> 00:09:44,000
+love that portion and
+அந்த பகுதியை அன்பு
+
+00:09:44,000 --> 00:09:48,000
+now if I change the tapes the to
+இப்போது நான் நாடாக்கள் மாற்ற
+
+00:09:48,000 --> 00:09:51,000
+half the speed so from seven and a half inches per second
+பாதி வேக அதனால் வினாடிக்கு ஏழு மற்றும் ஒரு அரை அங்குல இருந்து
+
+00:09:51,000 --> 00:09:54,000
+a change the tape speed 233 quarter
+ஒரு டேப் வேகம் 233 காலாண்டில் மாற்ற
+
+00:09:54,000 --> 00:09:58,000
+inches per second and now
+விநாடிக்கு இப்போது அங்குல
+
+00:09:58,000 --> 00:10:02,000
+when I play the tape back because effect because
+நான் மீண்டும் டேப் விளையாட போது விளைவு ஏனெனில்
+
+00:10:02,000 --> 00:10:07,000
+love the inverse relationship between time and frequency scaling we're now
+நேரம் மற்றும் அதிர்வெண் அளவிடுதல் இடையில் நேர்மாறு தொடர்பு அன்பு நாம் இப்போது இருக்கிறோம்
+
+00:10:07,000 --> 00:10:11,000
+scaling in time by stretching out we would expect the frequencies to be
+நாம் அதிர்வெண்கள் இருக்கும் எதிர்பார்ப்பதை வெளியே நீட்சி நேரத்தில் அளவிடுதல்
+
+00:10:11,000 --> 00:10:12,000
+lowered
+குறைத்தது
+
+00:10:12,000 --> 00:10:15,000
+by a factor of two we should now expect the
+இரண்டு ஒரு காரணி நாம் இப்போது எதிர்பார்க்க வேண்டும்
+
+00:10:15,000 --> 00:10:19,000
+taped no to be an octave lower
+எந்த குறைந்த ஒரு ஸ்வர இருக்கும் பதிவு
+
+00:10:19,000 --> 00:10:26,000
+matching the slower a so let's just play that okay let me stop it
+மெதுவாக பொருந்தும் ஒரு என்னை அது நிறுத்த தான் சரி என்று விளையாட அனுமதிக்க
+
+00:10:40,000 --> 00:10:44,000
+and again will rewind the tape
+மீண்டும் டேப் முன்னாடி
+
+00:10:44,000 --> 00:10:47,000
+go back to
+செல்ல
+
+00:10:47,000 --> 00:10:50,000
+the beginning and now will play this at
+இப்போது தொடக்கத்தில் மற்றும் இந்த விளையாடும்
+
+00:10:50,000 --> 00:10:53,000
+twice the speed so I change from three and three-quarters
+இரண்டு முறை வேகம் நான் மூன்று காலாண்டுகளில் இருந்து மாற்ற
+
+00:10:53,000 --> 00:10:59,000
+to 15 inches per second and now and I play it we would expect that
+15 இப்போது இரண்டாவது மற்றும் ஒன்றுக்கு அங்குல மற்றும் நான் அதை விளையாட நாங்கள் எதிர்பார்க்கவில்லை என்று
+
+00:10:59,000 --> 00:11:06,000
+to match the upper no and let's just do that Ste
+மேல் எந்த போட்டி மற்றும் தான் செய்வோம் என்று Ste
+
+00:11:08,000 --> 00:11:10,000
+us
+
+
+00:11:10,000 --> 00:11:14,000
+us okay well
+எங்களுக்கு சரி, சரி,
+
+00:11:14,000 --> 00:11:18,000
+although thats a result that intuitively probably
+அந்த உள்ளுணர்வாக ஒருவேளை இதன் விளைவாக ஸ்டைல் ​​என்றாலும்
+
+00:11:18,000 --> 00:11:22,000
+makes considerable sense in fact what that is
+அது என்ன என்று உண்மையில் கணிசமான அர்த்தமுள்ளதாக
+
+00:11:22,000 --> 00:11:26,000
+is an illustration love the inverse relationship between
+ஒரு விளக்கம் இடையில் நேர்மாறு தொடர்பு அன்பு
+
+00:11:26,000 --> 00:11:31,000
+time scaling frequency scaling and also by the way it was finally my opportunity
+நேரம் அலைவெண் அளவிடுதல் மற்றும் இறுதியாக என் வாய்ப்பு இருந்தது மூலம்
+
+00:11:31,000 --> 00:11:37,000
+to play the glockenspiel on television okayed now
+தொலைக்காட்சியில் ஒரு வகை இசைக்கருவி விளையாட இப்போது okayed
+
+00:11:37,000 --> 00:11:40,000
+in in addition their is another
+கூடுதலாக மற்றொரு தங்கள் ஆகிறது
+
+00:11:40,000 --> 00:11:44,000
+very important relationship between the time and frequency domains
+நேரம் மற்றும் அதிர்வெண் களங்கள் இடையே மிக முக்கியமான உறவு
+
+00:11:44,000 --> 00:11:47,000
+namely what is referred to as a
+அதாவது ஒரு குறிப்பிடப்படுகிறது
+
+00:11:47,000 --> 00:11:51,000
+duality relationship and
+இருமை உறவு மற்றும்
+
+00:11:51,000 --> 00:11:54,000
+the duality relationship between time and frequency
+நேரம் மற்றும் அதிர்வெண் இடையே இருமை உறவு
+
+00:11:54,000 --> 00:12:00,000
+falls out more less directly from
+மேலும் குறைவாக நேரடியாக வெளியே விழும்
+
+00:12:00,000 --> 00:12:05,000
+the equations the analysis and synthesis equations in particular if we look at
+சமன்பாடுகள் குறிப்பாக பகுப்பாய்வு மற்றும் தொகுப்பு சமன்பாடுகள் நாம் பார்க்கிறோம் என்றால்
+
+00:12:05,000 --> 00:12:05,000
+the
+உருக்கு
+
+00:12:05,000 --> 00:12:09,000
+synthesis equation which I repeat here
+நான் இங்கே திரும்ப தொகுப்பு சமன்பாடு
+
+00:12:09,000 --> 00:12:13,000
+and the analysis equation which I repeat below it
+நான் அதை கீழே திரும்ப பகுப்பாய்வு சமன்பாடு
+
+00:12:13,000 --> 00:12:17,000
+what we observe is dead in fact
+நாம் என்ன கண்காணிக்க உண்மையில் இறந்து ஆகிறது
+
+00:12:17,000 --> 00:12:21,000
+these equations are basically identical
+இந்த சமன்பாடுகளை அடிப்படையில் ஒரே மாதிரியாக இருக்கின்றன
+
+00:12:21,000 --> 00:12:24,000
+except for the fact that in the top
+உண்மையை தவிர என்று மேல்
+
+00:12:24,000 --> 00:12:28,000
+integral we have things as a function of Omega in the bottom integral as a
+ஒருங்கிணைந்த நாம் ஒரு கீழே ஒருங்கிணைந்த உள்ள ஒமேகா செயல்பாடாக விஷயங்கள்
+
+00:12:28,000 --> 00:12:29,000
+function of T
+டி செயல்பாடு
+
+00:12:29,000 --> 00:12:33,000
+and there's a factor of 10 ver tu Pai and by the way a minus sign
+மற்றும் ஒரு கழித்தல் நீங்கள் பய் Ver மற்றும் மூலம் 10 ஒரு காரணியாக இருக்கிறது
+
+00:12:33,000 --> 00:12:38,000
+well you can look at the algebra
+நீங்கள் இயற்கணிதம் பார்க்க முடியும்
+
+00:12:38,000 --> 00:12:42,000
+more carefully at your leisure but especially with this says
+இன்னும் கவனமாக உங்கள் ஓய்வு நேரத்தில் ஆனால் குறிப்பாக இந்த கூறுகிறார் கொண்டு
+
+00:12:42,000 --> 00:12:46,000
+is that if excessive Omega is
+என்று அதிக ஒமேகா என்றால்
+
+00:12:46,000 --> 00:12:50,000
+the Fourier transform over type function exit see
+ஃபோரியர் பார்க்க வகை செயல்பாடு வெளியேறவும் மீது மாற்றும்
+
+00:12:50,000 --> 00:12:54,000
+then in fact except Amy
+பின்னர் உண்மையில் ஆமி தவிர
+
+00:12:54,000 --> 00:13:00,000
+is very much like the Fourier transform affective Omega
+மிகவும் ஃபோரியர் போன்ற உணர்ச்சி ஒமேகா மாற்றும்
+
+00:13:00,000 --> 00:13:03,000
+in fact it's the Fourier transform attacks have minus Omega
+உண்மையில் அது தாக்குதல்கள் கழித்து ஒமேகா வேண்டும் மாற்றும் இவருடைய
+
+00:13:03,000 --> 00:13:07,000
+to account for this minus sign and by the way there's just an additional
+இந்த கழித்தல் மற்றும் வழி மூலம் கணக்கில் ஒரு கூடுதல் இருக்கிறது
+
+00:13:07,000 --> 00:13:08,000
+factor
+காரணி
+
+00:13:08,000 --> 00:13:12,000
+one over 25 so the duality relationship which
+ஒரு 25 ஓவர் இருமை உறவு இது
+
+00:13:12,000 --> 00:13:16,000
+follows from these two equations in fact
+உண்மையில் இந்த இரண்டு சமன்பாடுகள் இருந்து பின்வருமாறு
+
+00:13:16,000 --> 00:13:19,000
+says that if x50
+என்று நீங்கள் x50
+
+00:13:19,000 --> 00:13:23,000
+an ex vivo maker are a4e a transformed pair
+ஒரு முன்னாள் உயிரியல் தயாரிப்பு ஒரு மாற்றம் ஜோடி a4e
+
+00:13:23,000 --> 00:13:26,000
+if little accent capital XR Fourier transform pair
+சிறிய உச்சரிப்பு தலைநகர் XR ஃபோரியர் ஜோடி மாற்றும் என்றால்
+
+00:13:26,000 --> 00:13:31,000
+then capital lacks in fact has a $4 EA transform
+பின்னர் தலைநகர் உண்மையில் இல்லாத ஒரு $ 4 ஈ.ஏ. மாற்றும் உள்ளது
+
+00:13:31,000 --> 00:13:36,000
+which is proportional a little lax turned around well
+விகிதாசார இது நன்கு சுற்றி திரும்பி ஒரு சிறிய தளர்வாக
+
+00:13:36,000 --> 00:13:41,000
+this to outdo ality in the continuous time Fourier transform
+இந்த ஃபோரியர் தொடர்ச்சியான நேரத்தில் ality மிஞ்ச
+
+00:13:41,000 --> 00:13:45,000
+is very important it's very useful it by the way is not
+அது அல்ல மூலம் இது மிகவும் பயனுள்ளதாக இருக்கும் மிகவும் முக்கியமானது
+
+00:13:45,000 --> 00:13:52,000
+duality that surface in a forty a series because as you recall the 48 series
+ஒரு நாற்பது ஒரு தொடர் மேற்பரப்பு என்று இருமை ஏனெனில் நீங்கள் 48 தொடர் போட்டிகள்
+
+00:13:52,000 --> 00:13:55,000
+begins with a continuous-time function
+ஒரு தொடர்ச்சியான நேரம் செயல்பாடு தொடங்குகிறது
+
+00:13:55,000 --> 00:13:59,000
+and in the frequency domain generates a sequence
+மற்றும் அதிர்வெண் களத்தில் ஒரு காட்சியில் உருவாக்கிறது
+
+00:13:59,000 --> 00:14:03,000
+which with just naturally have the proper have
+இது இயற்கையாகவே சரியான வேண்டும் வேண்டும் உடன்
+
+00:14:03,000 --> 00:14:06,000
+problems associated with it if we attempted to
+நாம் முயற்சி செய்தால் அது தொடர்புடைய பிரச்சினைகள்
+
+00:14:06,000 --> 00:14:09,000
+interpreted to ality and we'll see also:
+ality விளக்கம் மற்றும் நாம் பார்க்கலாம்:
+
+00:14:09,000 --> 00:14:13,000
+that in a discrete-time case one of the important differences between
+என்று ஒரு தனி நேரம் வழக்கில் முக்கிய வேறுபாடுகள் ஒரு
+
+00:14:13,000 --> 00:14:16,000
+continuous-time and discrete-time Fourier transforms
+தொடர்ச்சியான நேர மற்றும் தனித்தியங்கும் நேர ஃபோரியர் நிலைமாற்றங்கள்
+
+00:14:16,000 --> 00:14:20,000
+is the fact that in continuous-time we have to our the
+தொடர்ச்சியான நேரத்தில் நாங்கள் எங்கள் செய்ய வேண்டும் என்று ஆகிறது
+
+00:14:20,000 --> 00:14:25,000
+in discrete-time for then the discrete-time Fourier transform we don't
+தனி நேரம் பின்னர் தனி நேரம் ஃபோரியர் நாம் செய்ய மாற்றும்
+
+00:14:25,000 --> 00:14:27,000
+well
+அதே
+
+00:14:27,000 --> 00:14:32,000
+let's indicate illustrate this with an example
+இது ஒரு உதாரணம் இந்த விளக்குகின்றன என்பதை நாம்
+
+00:14:32,000 --> 00:14:35,000
+in here are in fact two examples
+இங்கே உள்ள இரண்டு உதாரணங்கள் உண்மையில் இருக்கின்றன
+
+00:14:35,000 --> 00:14:39,000
+a Fourier transform pairs taken from examples in the text
+ஃபோரியர் உரை உதாரணங்கள் இருந்து எடுத்து ஜோடிகள் மாற்றும்
+
+00:14:39,000 --> 00:14:43,000
+to the top one being example
+மேல் ஒரு உதாரணம் இருப்பது
+
+00:14:43,000 --> 00:14:47,000
+four-point 11 from the tax and it's a time for action
+வரி நான்கு புள்ளி 11 மற்றும் நடவடிக்கை ஒரு நேரம்
+
+00:14:47,000 --> 00:14:51,000
+which is a sin 0 X over X type a function
+ஒரு பாவம் 0 எக்ஸ் மேல் எக்ஸ் ஒரு செயல்பாடு தட்டச்சு
+
+00:14:51,000 --> 00:14:55,000
+and its Fourier transform
+அதன் ஃபோரியர்
+
+00:14:55,000 --> 00:14:58,000
+corresponds to a
+ஒரு ஒத்துள்ளது
+
+00:14:58,000 --> 00:15:04,000
+rectangular shape in the frequency domain there's also
+அதிர்வெண் களத்தில் செவ்வக வடிவில் கூட இல்லை
+
+00:15:04,000 --> 00:15:08,000
+another example in the text the example the preseason this one
+உரை எடுத்துக்காட்டாக மகள் இந்த ஒரு மற்றொரு உதாரணம்
+
+00:15:08,000 --> 00:15:13,000
+which is example four-point 10 and an example four point 10
+நான்கு புள்ளி 10 மற்றும் ஒரு உதாரணம் நான்கு புள்ளி 10 எடுத்துக்காட்டாக இது
+
+00:15:13,000 --> 00:15:16,000
+we begin with a rectangle
+நாம் ஒரு செவ்வகம் தொடங்கும்
+
+00:15:16,000 --> 00:15:20,000
+and its Fourier transform is love the form
+அதன் ஃபோரியர் காதல் வடிவம் மாற்றும்
+
+00:15:20,000 --> 00:15:24,000
+all a sin x over X function
+எக்ஸ் செயல்பாடு மீது ஒரு sin x
+
+00:15:24,000 --> 00:15:27,000
+so in fact if we look at these to
+அதனால் உண்மையில் நாம் இந்த பார் என்றால்,
+
+00:15:27,000 --> 00:15:30,000
+examples together what we see is
+நாம் பார்க்க என்ன உதாரணங்கள் ஒன்றாக
+
+00:15:30,000 --> 00:15:34,000
+the duality very evident in other words
+வேறு வார்த்தைகளில் மிகவும் தெளிவாக இருமை
+
+00:15:34,000 --> 00:15:37,000
+if we take this time function and
+இந்த நேரத்தில், நாம் செயல்பாடு எடுக்கிறோம் என்றால்
+
+00:15:37,000 --> 00:15:41,000
+instead think i've a frequency function that has the same form
+அதற்கு பதிலாக நான் அதே வடிவத்தில் உள்ளது என்று ஒரு அதிர்வெண் செயல்பாடு நினைக்கிறேன்
+
+00:15:41,000 --> 00:15:45,000
+then we simply interchange the rolls a time-frequency
+நாம் வெறுமனே பட்டியலில் ஒரு நேர அதிர்வெண் இடை
+
+00:15:45,000 --> 00:15:49,000
+in the other domains so the fact that these to correspond
+மற்ற களங்களில் இந்த ஒத்திருக்கும் என்று உண்மையில்
+
+00:15:49,000 --> 00:15:52,000
+means that these two cars find
+இந்த இரண்டு கார்கள் கண்டுபிடிக்க என்று அர்த்தம்
+
+00:15:52,000 --> 00:15:56,000
+course and in this particular example
+நிச்சயமாக இந்த குறிப்பிட்ட எடுத்துக்காட்டாக
+
+00:15:56,000 --> 00:16:01,000
+we because it the fact that we picked a symmetric function even function
+நாம் அதை நாம் ஒரு சமச்சீரான செயல்பாடு கூட செயல்பாடு எடுத்தார்கள் என்று உண்மையில்
+
+00:16:01,000 --> 00:16:06,000
+in fact the additional twist love the time axis being reversed didn't show up
+உண்மையில் கூடுதல் திருப்பமாக தலைகீழாக அச்சு அன்பு வரவில்லை
+
+00:16:06,000 --> 00:16:10,000
+in her in duality with this example
+இந்த உதாரணம் மூலம் தனது இருமை உள்ள
+
+00:16:10,000 --> 00:16:13,000
+now one thing he says of course is that essentially
+இப்போது அவர் நிச்சயமாக கூறுகிறார் ஒன்று உள்ளது அடிப்படையில்
+
+00:16:13,000 --> 00:16:17,000
+anytime you've calculated
+நீங்கள் எப்போது கணக்கிடப்படும்
+
+00:16:17,000 --> 00:16:20,000
+the 48 transform a one-time function
+48 ஒரு முறை செயல்பாடு மாற்றும்
+
+00:16:20,000 --> 00:16:24,000
+then you actually calculate the Fourier transform
+நீங்கள் உண்மையில் ஃபோரியர் கணக்கிட
+
+00:16:24,000 --> 00:16:27,000
+to type functions another one being
+செயல்பாடுகளை மற்றொரு இருப்பது தட்டச்சு
+
+00:16:27,000 --> 00:16:32,000
+the dual example to the one that you just calculated
+நீங்கள் கணக்கிடப்படும் என்று ஒரு இரட்டை உதாரணமாக
+
+00:16:32,000 --> 00:16:35,000
+now also somewhat related to do our the
+இப்போது ஓரளவு எங்கள் The செய்ய தொடர்பான
+
+00:16:35,000 --> 00:16:39,000
+is what is referred to as parce balls
+என்ன parce பந்துகளில் என குறிப்பிடப்படுகிறது
+
+00:16:39,000 --> 00:16:43,000
+relation for the continuous-time Fourier transform
+தொடர்ச்சியான நேர ஃபோரியர் ஐந்து தொடர்பாக மாற்றும்
+
+00:16:43,000 --> 00:16:47,000
+and essentially what parts are false relationship says
+அடிப்படையில் பகுதிகளில் என்ன தவறான உறவு கூறுகிறார்
+
+00:16:47,000 --> 00:16:50,000
+is that as kind of a a summary other
+என்று வகையான ஒரு சுருக்கத்தை மற்ற
+
+00:16:50,000 --> 00:16:54,000
+it says dead the energy
+அது இறந்த ஆற்றல் கூறுகிறார்
+
+00:16:54,000 --> 00:16:57,000
+in a time function and the energy
+ஒரு நேரம் செயல்பாடு மற்றும் ஆற்றல்
+
+00:16:57,000 --> 00:17:01,000
+in its Fourier transform are proportional the proportionality factor
+அதன் ஃபோரியர் அமல்படுத்தும் காரணி விகிதாசார
+
+00:17:01,000 --> 00:17:03,000
+being a factor of two pi
+இரண்டு பை ஒரு காரணியாக
+
+00:17:03,000 --> 00:17:08,000
+it well that summarized here what's meant by the energy
+அது அந்த ஆற்றல் மூலம் பொருள் என்ன இங்கே சுருக்கி
+
+00:17:08,000 --> 00:17:12,000
+is course the ago the magnitude squared effect City
+நிச்சயமாக முன்பு அளவில் விளைவு சிட்டி ஸ்கொயர்
+
+00:17:12,000 --> 00:17:16,000
+and the statement apart the balls relation and is dead
+மற்றும் பந்துகளில் தொடர்பாக தவிர அறிக்கை மற்றும் இறந்த ஆகிறது
+
+00:17:16,000 --> 00:17:20,000
+that in a brawl the energy and accept T
+என்று ஒரு சகாக்கள் ஆற்றல் மற்றும் டி ஏற்க
+
+00:17:20,000 --> 00:17:23,000
+is proportional to this integral which is the energy
+ஆற்றல் இது ஒருங்கிணைந்த விகிதாசார
+
+00:17:23,000 --> 00:17:26,000
+indexable Megan now
+இப்போது அட்டவணைப்படுத்தப்படலாம் மேகன்
+
+00:17:26,000 --> 00:17:31,000
+although we've incorporated the 4e a series
+நாம் 4e ஒரு தொடர் சேர்த்து என்றாலும்
+
+00:17:31,000 --> 00:17:36,000
+within a framework for the Fourier transform parcels relation
+ஃபோரியர் ஒரு கட்டமைப்பிற்குள் பொட்டலங்கள் தொடர்பாக மாற்றும்
+
+00:17:36,000 --> 00:17:39,000
+needs to be modified slightly for
+சற்று மாற்றியமைக்க வேண்டும்
+
+00:17:39,000 --> 00:17:43,000
+for a series because the fact that periodic signal
+ஒரு தொடர் ஏனெனில் உண்மையில் அந்த கால சமிக்ஞை
+
+00:17:43,000 --> 00:17:46,000
+has an infinite amount of energy and its and essentially
+அடிப்படையில் ஒரு முடிவிலா ஆற்றல் மற்றும் அதன் அளவு மற்றும் உள்ளது
+
+00:17:46,000 --> 00:17:50,000
+that former parcels relationship for the periodic case would say
+கால வழக்கு அந்த முன்னாள் பொட்டலங்கள் உறவு கூறுவேன்
+
+00:17:50,000 --> 00:17:53,000
+infinity equals infinity which isn't too useful
+முடிவிலி மிக பயனுள்ளதாக இல்லை இது முடிவிலி சமம்
+
+00:17:53,000 --> 00:17:59,000
+however can be modified so that part's a false relationship for the periodic case
+எனினும் அந்த பகுதியில் கால வழக்கு ஒரு தவறான உறவு தான் மாற்ற முடியும்
+
+00:17:59,000 --> 00:18:02,000
+says essentially that the energy E
+அடிப்படையில் என்று எரிசக்தி
+
+00:18:02,000 --> 00:18:07,000
+in one period other periodic time function
+ஒரு காலத்தில் மற்ற கால நேரம் செயல்பாடு
+
+00:18:07,000 --> 00:18:12,000
+in is proportional with this is the proportionality factor
+இந்த விகிதாசார காரணியாக உள்ளது விகிதாசார ஆகிறது
+
+00:18:12,000 --> 00:18:15,000
+proportional to the sum %uh the magnitude squared
+தொகை% விகிதாசார இம் அளவில் ஸ்கொயர்
+
+00:18:15,000 --> 00:18:19,000
+up the coefficients in other words the energy in one period
+ஒரு காலத்தில் வேறுவிதமாக ஆற்றல் குணகங்களையும் வரை
+
+00:18:19,000 --> 00:18:23,000
+is proportional to the energy in the sequence
+காட்சியில் ஆற்றல் விகிதாசார
+
+00:18:23,000 --> 00:18:29,000
+that represents the four EA series coefficients
+என்று நான்கு ஈ.ஏ. தொடர் மதிப்பீடுகள் பிரதிபலிக்கிறது
+
+00:18:29,000 --> 00:18:32,000
+now okay there are lots of other properties
+இப்போது சரி மற்ற பண்புகள் நிறைய உள்ளன
+
+00:18:32,000 --> 00:18:37,000
+and there developed in the text in the study guide
+மற்றும் ஆய்வு வழிகாட்டி உரை ல் அங்கு
+
+00:18:37,000 --> 00:18:42,000
+a number a properties that we want to make particular you so
+பல நாம் குறிப்பிட்ட நீங்கள் செய்ய வேண்டும் என்று ஒரு பண்புகள்
+
+00:18:42,000 --> 00:18:45,000
+during this lecture and in later lectures
+இந்த பேருரையின் போது பின்னர் விரிவுரைகள்
+
+00:18:45,000 --> 00:18:49,000
+are ones that I summarize here and
+நான் இங்கே சுருக்கமாக என்று தான்
+
+00:18:49,000 --> 00:18:52,000
+I won't demonstrate the proves but
+நான் ஆனால் நிரூபிக்கிறது நிரூபிக்க முடியாது
+
+00:18:52,000 --> 00:18:58,000
+a principally focus on some with the interpretation is the lecture goes on
+ஒரு முக்கியமாக விளக்கம் சில கவனம் விரிவுரை செல்லும் ஆகிறது
+
+00:18:58,000 --> 00:19:02,000
+well in the first property that I have listed here's what's referred to as the
+நன்கு நான் இங்கே பட்டியலிடப்பட்டுள்ளது என்று முதல் சொத்து என குறிப்பிடப்படுகிறது என்ன தான்
+
+00:19:02,000 --> 00:19:04,000
+time shifting property
+நேரம் மாற்றுவதால் சொத்து
+
+00:19:04,000 --> 00:19:09,000
+and the time shifting property says if I have a time function
+நான் ஒரு நேரத்தில் செயல்பாடு இருந்தால் மற்றும் சொத்து மாற்றுவதால் நேரம் கூறுகிறார்
+
+00:19:09,000 --> 00:19:13,000
+with a Fourier transform mexico maker
+ஃபோரியர் மெக்ஸிக்கோ தயாரிப்பாளர் மாற்றும் கொண்டு
+
+00:19:13,000 --> 00:19:17,000
+if I shift that time function in time
+நான் நேரத்தில் அந்த நேரம் செயல்பாடு மாற்ற என்றால்
+
+00:19:17,000 --> 00:19:21,000
+dan that corresponds to multiplying
+டான் என்று பெருக்குவதன் ஒத்துள்ளது
+
+00:19:21,000 --> 00:19:24,000
+the 48 transformed by this factor
+இந்த காரணி மறுரூபப்படுத்தப்பட்டவராக 48
+
+00:19:24,000 --> 00:19:29,000
+now as you examine this factor what you can see is that
+இப்போது நீங்கள் இந்த காரணி ஆய்வு என்ன நீங்கள் பார்க்க முடியும் என்று ஆகிறது
+
+00:19:29,000 --> 00:19:32,000
+this factor has magnitude unity
+இந்த காரணி அளவில் ஒற்றுமை உள்ளது
+
+00:19:32,000 --> 00:19:36,000
+and it has a phase which is linear with frequency
+அது அதிர்வெண் நேரியல் இது ஒரு கட்டத்தில் உள்ளது
+
+00:19:36,000 --> 00:19:39,000
+and is slow %uh minus 20
+மற்றும் மெதுவாக% இம் மைனஸ் 20 ஆகிறது
+
+00:19:39,000 --> 00:19:42,000
+so a statement to remember that will come up
+என்று நினைவில் வைத்து ஒரு அறிக்கை வரும்
+
+00:19:42,000 --> 00:19:46,000
+many times throughout the cores
+கருக்கள் முழுவதும் பல முறை
+
+00:19:46,000 --> 00:19:51,000
+is that a timeshare after a displacement in time
+அந்த நேரத்தில் ஒரு இடப்பெயர்ச்சி பிறகு ஒரு நேரப்பகிர்வு
+
+00:19:51,000 --> 00:19:55,000
+corresponds to linear phase
+நேரியல் கட்ட ஒத்துள்ளது
+
+00:19:55,000 --> 00:20:01,000
+or change in linear phase earlier change in phase and frequency
+நேரியல் கட்ட கட்ட மற்றும் அதிர்வெண் முந்தைய மாற்றம் மாற்ற
+
+00:20:01,000 --> 00:20:05,000
+another property in and in fact a pair of properties
+பண்புகள் ஒரு ஜோடி மற்றும் உண்மையில் மற்றொரு சொத்து
+
+00:20:05,000 --> 00:20:10,000
+that will make reference to as we turn our attention toward the end of this
+நாம் இந்த முடிவை நோக்கி நம் கவனத்தை திருப்பினால் என்று குறிப்பு செய்யும்
+
+00:20:10,000 --> 00:20:11,000
+lecture to
+பாடம்
+
+00:20:11,000 --> 00:20:16,000
+solving differential equations using the Fourier transform
+ஃபோரியர் பயன்படுத்தி வகைக்கெழு சமன்பாடுகள் தீர்க்கும்
+
+00:20:16,000 --> 00:20:21,000
+is hit was referred to as the differentiation property
+வெற்றி வேறுபாடு சொத்து என குறிப்பிடப்படுகிறது
+
+00:20:21,000 --> 00:20:26,000
+and its companion which is the integration property
+மற்றும் ஒருங்கிணைப்பு சொத்து அதன் துணை
+
+00:20:26,000 --> 00:20:30,000
+the differentiation property says again if we have
+நாம் இருந்தால் வேறுபாடு சொத்து மீண்டும் கூறுகிறார்
+
+00:20:30,000 --> 00:20:34,000
+a time function whose with Fourier transform mexico maker
+அதன் ஃபோரியர் மாற்றும் மெக்ஸிக்கோ தயாரிப்பாளர் ஒரு நேரம் செயல்பாடு
+
+00:20:34,000 --> 00:20:39,000
+the Fourier transform up the time derivative that
+ஃபோரியர் காலவகையீடு வரை மாற்றும் என்று
+
+00:20:39,000 --> 00:20:44,000
+is in corresponds to multiplying the Fourier transform
+ஃபோரியர் பெருக்குவதன் தொடர்பு உள்ளது
+
+00:20:44,000 --> 00:20:47,000
+by a linear function of frequency so
+அதிர்வெண் ஒரு நேர்கோட்டு சார்பு மூலம்
+
+00:20:47,000 --> 00:20:51,000
+here it's a linear able to change dead
+இங்கே அது இறந்த மாற்ற ஒரு நேர்கோட்டு முடியும் தான்
+
+00:20:51,000 --> 00:20:55,000
+that corresponds to differentiation
+என்று வேறுபாடு ஒத்துள்ளது
+
+00:20:55,000 --> 00:20:59,000
+now at first glance what you might think is that
+இப்போது முதலில் நீங்கள் நினைக்கலாம் என்று
+
+00:20:59,000 --> 00:21:02,000
+the integration property is just the reverse if that if
+ஒருங்கிணைப்பு சொத்து தலைகீழ் தான் ஆகிறது என்று என்றால்
+
+00:21:02,000 --> 00:21:06,000
+for the differentiation property you multiply by J Omega then
+வகையீடு சொத்து நீங்கள் ஜே ஒமேகா பெருக்கவும்
+
+00:21:06,000 --> 00:21:10,000
+for integration you must abide by jail maker and thats almost correct
+ஒருங்கிணைப்பு நீங்கள் சிறையில் தயாரிப்பாளர் பின்பற்ற மற்றும் கிட்டத்தட்ட சரியான ஸ்டைல் ​​வேண்டும்
+
+00:21:10,000 --> 00:21:14,000
+except not quite and the reason for the not quite
+மிகவும் மற்றும் மிகவும் காரணம் தவிர
+
+00:21:14,000 --> 00:21:18,000
+is that recall that if you differentiate
+என்று நினைவு என்று நீங்கள் வேறுபடுத்தி என்றால்
+
+00:21:18,000 --> 00:21:22,000
+what happens of course is that you lose a constant
+என்ன நிச்சயமாக நடக்கும் நீங்கள் ஒரு நிலையான இழக்க வேண்டும்
+
+00:21:22,000 --> 00:21:26,000
+and if we have a time function thats some fun and energy signal plus a
+நாம் ஒரு முறை செயல்பாடு இருந்தால் மற்றும் சில வேடிக்கை மற்றும் ஆற்றல் சமிக்ஞை பிளஸ் ஸ்டைல் ​​ஒரு
+
+00:21:26,000 --> 00:21:27,000
+constant
+நிலையான
+
+00:21:27,000 --> 00:21:30,000
+differentiating will destroy the constant
+வேறுபடுத்தி நிலையான அழிக்கும்
+
+00:21:30,000 --> 00:21:35,000
+and integration the immigration property in essence tries to bring that back
+மற்றும் ஒருங்கிணைப்பு சாராம்சத்தில் குடியேற்றம் சொத்து அதை திரும்ப கொண்டுவர முயற்சிக்கிறது
+
+00:21:35,000 --> 00:21:39,000
+so the integration property which is the inverse
+தலைகீழ் இது மிகவும் ஒருங்கிணைப்பு சொத்து
+
+00:21:39,000 --> 00:21:43,000
+of the differentiation property says that we divide
+வகையீடு சொத்து நாம் பிரித்து கூறுகிறார்
+
+00:21:43,000 --> 00:21:47,000
+the transformed by J Omega and then
+பின்னர் ஜே ஒமேகா மறுரூபப்படுத்தப்பட்டவராக மற்றும்
+
+00:21:47,000 --> 00:21:52,000
+if in fact their was a constant added to accept T
+உண்மையில் தங்கள் இருந்தால் ஒரு நிலையான டி ஏற்க சேர்ந்தது
+
+00:21:52,000 --> 00:21:55,000
+we have to account for that by inserting an impulse
+நாம் ஒரு உந்துவிசை சேர்த்துக்கொள்வதன் மூலம் என்று கணக்கு வேண்டும்
+
+00:21:55,000 --> 00:21:59,000
+into the Fourier transform and
+ஃபோரியர் மற்றும் ஒரு
+
+00:21:59,000 --> 00:22:03,000
+the file property that I want to draw your attention to
+நான் உங்கள் கவனத்திற்கு வேண்டும் என்று கோப்பு சொத்து
+
+00:22:03,000 --> 00:22:06,000
+on this you graph is the linearity property
+நீங்கள் வரைபட இந்த நேரியல்மையின் சொத்து உள்ளது
+
+00:22:06,000 --> 00:22:10,000
+which is very straight forward to demonstrate from
+இருந்து நிரூபிக்க மிகவும் நேராக முன்னோக்கி இது
+
+00:22:10,000 --> 00:22:14,000
+the analysis and synthesis equations which simply said is
+வெறுமனே கூறினார் பகுப்பாய்வு மற்றும் தொகுப்பு சமன்பாடுகள்
+
+00:22:14,000 --> 00:22:19,000
+if X 100 maker is the Fourier transform X 1ft
+எக்ஸ் 100 தயாரிப்பாளர் என்றால் ஃபோரியர் எக்ஸ் 1ft மாற்றும்
+
+00:22:19,000 --> 00:22:23,000
+and x2 Omega is the Fourier transform X 2ft
+மற்றும் X2 ஒமேகா ஃபோரியர் எக்ஸ் 2ft மாற்றும் ஆகிறது
+
+00:22:23,000 --> 00:22:27,000
+then the Fourier transform a linear combination is
+பின்னர் ஃபோரியர் ஒரு நேர்கோட்டு இணைந்து மாற்றகிறது
+
+00:22:27,000 --> 00:22:32,000
+a linear combination love the Fourier transforms
+ஒரு நேர்கோட்டு இணைந்து ஃபோரியர் நிலைமாற்றங்கள் பிடிக்கிறது
+
+00:22:32,000 --> 00:22:37,000
+now let me emphasize also that these properties for the most part
+இப்போது என்னை வலியுறுத்த விரும்புகிறேன் என்று பெரும்பாலான இந்த பண்புகள்
+
+00:22:37,000 --> 00:22:40,000
+apply both 240 a series and Fourier transforms
+இருவரும் 240 ஒரு தொடர் மற்றும் ஃபோரியர் நிலைமாற்றங்கள் விண்ணப்பிக்க
+
+00:22:40,000 --> 00:22:44,000
+because in fact and what we've done is to incorporate
+உண்மையில் என்ன, நாம் செய்த இணைத்துக்கொள்ள ஏனெனில்
+
+00:22:44,000 --> 00:22:47,000
+the forty a series within the
+நாற்பது உள்ள ஒரு தொடர்
+
+00:22:47,000 --> 00:22:51,000
+framework of the Fourier transform
+ஃபோரியர் கட்டமைப்பை மாற்றும்
+
+00:22:51,000 --> 00:22:55,000
+okay now will be using a number of these properties shortly when we turn our
+நாங்கள் எங்கள் திரும்ப போது சரி இப்போது விரைவில் இந்த பண்புகள் ஒரு எண்ணை பயன்படுத்தி
+
+00:22:55,000 --> 00:22:56,000
+attention to
+கவனம்
+
+00:22:56,000 --> 00:23:01,000
+near-constant coefficient differential equations however before we do that I'd
+கிட்டத்தட்ட மாறா குணகம் வகைக்கெழு சமன்பாடுகள் எனினும் நான் வா என்று முன்
+
+00:23:01,000 --> 00:23:02,000
+like to
+போன்ற
+
+00:23:02,000 --> 00:23:05,000
+focus on two additional
+இரண்டு கூடுதல் கவனம்
+
+00:23:05,000 --> 00:23:08,000
+major properties and
+முக்கிய பண்புகள் மற்றும்
+
+00:23:08,000 --> 00:23:12,000
+these are what are referred to as the convolution property and the modulation
+இந்த சுழற்சி சொத்து மற்றும் பண்பேற்றம் என குறிப்பிடப்படுகிறது என்ன
+
+00:23:12,000 --> 00:23:13,000
+property
+சொத்து
+
+00:23:13,000 --> 00:23:17,000
+and in fact the convolution property as I'm about
+உண்மையில் ஆவி சொத்து நான் இருக்கிறேன் என
+
+00:23:17,000 --> 00:23:20,000
+to introduces forms the
+வடிவங்கள் அறிமுகப்படுத்துகிறது
+
+00:23:20,000 --> 00:23:24,000
+mathematical and conceptual basis for
+கணித மற்றும் கருத்தியல் அடிப்படையில்
+
+00:23:24,000 --> 00:23:28,000
+the whole notion of filtering which in fact will be
+உண்மையில் இருக்கும் வடிகட்டி முழு கருத்து
+
+00:23:28,000 --> 00:23:32,000
+a topic by itself in a set of lectures and
+ஒரு விரிவுரைகள் ஒரு கணம் தன்னை தலைப்பு மற்றும்
+
+00:23:32,000 --> 00:23:36,000
+and in fact is a chapter by itself in the textbook
+மற்றும் உண்மையில் பாடநூல் தன்னை ஒரு அத்தியாயம்
+
+00:23:36,000 --> 00:23:40,000
+similarly what i'll refer to as the modulation property
+நான் பண்பேற்றம் சொத்து பார்க்கவும் இதேபோல் என்ன
+
+00:23:40,000 --> 00:23:43,000
+again well occupy its own set
+மீண்டும் அதன் சொந்த செட் ஆக்கிரமிக்க
+
+00:23:43,000 --> 00:23:48,000
+have lectures as we go through this scores and in fact has its own
+நாம் இந்த மதிப்பெண்களை வழியாக சென்று உண்மையில் அதன் சொந்த உள்ளது என விரிவுரைகள் வேண்டும்
+
+00:23:48,000 --> 00:23:52,000
+a chapter in the textbook
+பாடநூல் ஒரு அத்தியாயம்
+
+00:23:52,000 --> 00:23:58,000
+let me in just indicate what the convolution property is
+என்னை சுழற்சி சொத்து என்ன என்பதை அனுமதிக்க
+
+00:23:58,000 --> 00:24:02,000
+and and what the convolution property
+மற்றும் என்ன ஆவி சொத்து
+
+00:24:02,000 --> 00:24:08,000
+tells us is that
+எங்களுக்கு தான் சொல்கிறது என்று
+
+00:24:08,000 --> 00:24:12,000
+the 48 transform of the convolution
+48 ஆவி மாற்றியமை
+
+00:24:12,000 --> 00:24:16,000
+a two-time functions is the product
+இரண்டு முறை செயல்பாடுகளை தயாரிப்பு
+
+00:24:16,000 --> 00:24:19,000
+all therefore yea transforms
+அனைத்து எனவே ஆம் மாற்றமானது
+
+00:24:19,000 --> 00:24:22,000
+so it says for example dead
+அது இறந்த எடுத்துக்காட்டாக கூறுகிறார்
+
+00:24:22,000 --> 00:24:27,000
+if I have a linear time-invariant system
+நான் ஒரு நேர்கோட்டு நேரம் மாற்றமில்லாத அமைப்பு இருந்தால்,
+
+00:24:27,000 --> 00:24:32,000
+and in I have an input exits the an impulse response HFT
+மற்றும் நான் ஒரு உள்ளீடு ஒரு உந்துவிசை பதில் HFT வெளியேறும் வேண்டும்
+
+00:24:32,000 --> 00:24:35,000
+and the output of course being the convolution
+நிச்சயமாக வெளியீடு சுழற்சி இருப்பது
+
+00:24:35,000 --> 00:24:41,000
+then in fact if I look at this in the frequency domain
+பின்னர் உண்மையில் நான் அதிர்வெண் களத்தில் இதை பார்
+
+00:24:41,000 --> 00:24:44,000
+the Fourier transform up the output
+ஃபோரியர் வெளியீடு வரை மாற்றும்
+
+00:24:44,000 --> 00:24:47,000
+is the for EA transform the input
+ஈ.ஏ. உள்ளீடு மாற்றும் உள்ளது
+
+00:24:47,000 --> 00:24:53,000
+times the Fourier transform the impulse response
+முறை ஃபோரியர் உந்துவிசை பதில் மாற்றும்
+
+00:24:53,000 --> 00:24:56,000
+now you can demonstrate this property
+இப்போது நீங்கள் இந்த சொத்து நிரூபிக்க முடியும்
+
+00:24:56,000 --> 00:25:01,000
+algebraically by essentially taking the convolution integral
+அல்ஜிப்ரா அடிப்படையில் ஒருங்கிணைந்த சுழற்சி எடுத்து
+
+00:25:01,000 --> 00:25:04,000
+and applying to 48 transforming doing the appropriate
+அதற்கான செய்து 48 மாற்றத்துக்குரிய விண்ணப்பிக்கும்
+
+00:25:04,000 --> 00:25:08,000
+in a changing the order integration et cetera
+ஒரு பொருட்டு ஒருங்கிணைப்பு மாறும் பயன்படுத்தப்படுகிறது உள்ள
+
+00:25:08,000 --> 00:25:12,000
+but who what I'd like to draw your attention to is a
+ஆனால் நான் உங்கள் கவனத்திற்கு விரும்புகிறேன் என்ன ஒரு ஆகிறது
+
+00:25:12,000 --> 00:25:16,000
+somewhat more intuitive interpretation of the property
+சொத்து சற்றே உள்ளுணர்வு விளக்கம்
+
+00:25:16,000 --> 00:25:20,000
+and the intuitive interpretations stems from
+மற்றும் உள்ளுணர்வு விளக்கங்கள் இருந்து எழுவதாகும்
+
+00:25:20,000 --> 00:25:25,000
+the relationship between the Fourier transform at the impulse response
+ஃபோரியர் இடையிலான உறவு உந்துவிசை பதில் மாற்றும்
+
+00:25:25,000 --> 00:25:29,000
+and what we refer to as the frequency response
+நாம் அதிர்வெண் மறுமொழி பார்க்கவும் என்ன
+
+00:25:29,000 --> 00:25:32,000
+now recall dead wanna have
+இப்போது இறந்த இனி நினைவு
+
+00:25:32,000 --> 00:25:37,000
+the things that lettuce to use complex exponentials as building blocks
+கட்டுமான தொகுதிகள் போன்ற சிக்கலான நிகழ்வுஎண் பயன்படுத்த கீரை விஷயங்களை
+
+00:25:37,000 --> 00:25:41,000
+was the fact that there I can functions linear time-invariant systems in other
+உண்மையில் அங்கு நான் செயல்பாடுகளை நேரியல் நேரம் மாற்றமில்லாத அமைப்புகள் மற்ற
+
+00:25:41,000 --> 00:25:42,000
+words
+வார்த்தைகள்
+
+00:25:42,000 --> 00:25:45,000
+if we have linear time-invariant system
+நாம் நேரியல் நேரம் மாற்றமில்லாத அமைப்பு இருந்தால்,
+
+00:25:45,000 --> 00:25:49,000
+and I have an input which is a complex exponential
+நான் ஒரு சிக்கலான அதிவேகமான இது ஒரு உள்ளீடு
+
+00:25:49,000 --> 00:25:53,000
+the output is a complex exponential the same frequency
+வெளியீடு ஒரு சிக்கலான அதிவேகமான அதே அதிர்வெண்
+
+00:25:53,000 --> 00:25:57,000
+multiplied by what we call the frequency response
+நாம் அதிர்வெண் மறுமொழி அழைக்க என்ன பெருக்கி
+
+00:25:57,000 --> 00:26:02,000
+and in fact the expression for the frequency response
+மற்றும் உண்மையில் அதிர்வெண் பதில் வெளிப்பாடு
+
+00:26:02,000 --> 00:26:08,000
+is identical to the expression for the four EA transform the impulse response
+நான்கு ஈ.ஏ. வெளிப்பாடு ஒத்ததாக உந்துவிசை பதில் மாற்றும்
+
+00:26:08,000 --> 00:26:11,000
+in other words the frequency response is
+வேறு வார்த்தைகளில் அதிர்வெண் மறுமொழி உள்ளது
+
+00:26:11,000 --> 00:26:16,000
+the Fourier transform of the impulse response
+ஃபோரியர் உந்துவிசை பதில் மாற்றும்
+
+00:26:16,000 --> 00:26:19,000
+now in that context how can we
+இப்போது அந்த சூழலில் எப்படி நாம்
+
+00:26:19,000 --> 00:26:23,000
+interpret the convolution property well
+சுழற்சி சொத்து நன்கு விளக்குவது
+
+00:26:23,000 --> 00:26:28,000
+remember what I said at the beginning the lecture 1 I've pointed
+நான் விரிவுரை 1 நான் சுட்டிக்காட்டினார் விட்டேன் ஆரம்பத்தில் கூறியது என்ன ஞாபகம்
+
+00:26:28,000 --> 00:26:31,000
+to the synthesis equation and I said in
+தொகுப்பு சமன்பாட்டில் நான் கூறினார்
+
+00:26:31,000 --> 00:26:34,000
+in essence the synthesis equation tells us
+சாராம்சத்தில் தொகுப்பு சமன்பாடு நமக்கு சொல்கிறது
+
+00:26:34,000 --> 00:26:41,000
+how to decompose x50 as a linear combination a complex exponentials
+ஒரு சிக்கலான நிகழ்வுஎண் ஒரு நேர்கோட்டு கலவையை x50 அழுகுதல் எப்படி
+
+00:26:41,000 --> 00:26:45,000
+what are the complex amplitudes are those complex exponentials
+சிக்கலான வீச்சுகள் அந்த சிக்கலான நிகழ்வுஎண் என்ன உள்ளன
+
+00:26:45,000 --> 00:26:48,000
+well interns love our notation year
+நன்கு பயிற்சியாளர்களுக்கு எங்கள் குறியீடு ஆண்டு அன்பு
+
+00:26:48,000 --> 00:26:52,000
+the complex amplitude of those complex exponentials
+அந்த சிக்கலான நிகழ்வுஎண் சிக்கலான வீச்சு
+
+00:26:52,000 --> 00:26:58,000
+is Xserve Omega or proportional taxable make in particular taxable make a deal
+Xserve ஒமேகா அல்லது குறிப்பாக விகிதாசார வரி அலங்காரம் வரி ஒரு ஒப்பந்தம் செய்கின்றன
+
+00:26:58,000 --> 00:26:58,000
+maker
+தயாரிப்பாளர்
+
+00:26:58,000 --> 00:27:02,000
+and then a factor two-part well
+பின்னர் ஒரு காரணி இரண்டு பகுதியாக நன்கு
+
+00:27:02,000 --> 00:27:07,000
+as this signal goes through this linear time-invariant system
+இந்த சமிக்ஞை இந்த நேரியல் நேரம் மாற்றமில்லாத அமைப்பு மூலம் சென்று
+
+00:27:07,000 --> 00:27:11,000
+what happens to each of those exponentials is
+என்ன அந்த நிகழ்வுஎண் ஒவ்வொரு நடக்கிறது
+
+00:27:11,000 --> 00:27:15,000
+it each one gets multiplied by the frequency response
+அது ஒவ்வொரு ஒரு அதிர்வெண் மறுமொழி பெருக்கி
+
+00:27:15,000 --> 00:27:18,000
+at The Associated frequency
+தொடர்புடைய அதிர்வெண்
+
+00:27:18,000 --> 00:27:21,000
+what comes out is the amplitude
+என்ன வெளியே வரும் அலைவீச்சு
+
+00:27:21,000 --> 00:27:25,000
+all the complex exponentials that are used
+பயன்படுத்தப்படுகின்றன என்று அனைத்து சிக்கலான நிகழ்வுஎண்
+
+00:27:25,000 --> 00:27:28,000
+to bill the output
+வெளியீடு பில்
+
+00:27:28,000 --> 00:27:33,000
+so in fact the convolution property
+எனவே உண்மையில் ஆவி சொத்து
+
+00:27:33,000 --> 00:27:36,000
+simply is telling us
+வெறுமனே சொல்கிறார்
+
+00:27:36,000 --> 00:27:40,000
+that interns have a decomposition the signal
+பயிற்சியாளர்களுக்கு ஒரு சிதைவு சமிக்ஞை வேண்டும் என்று
+
+00:27:40,000 --> 00:27:44,000
+enters a complex exponentials as we push that signal through linear
+நாம் நேரியல் மூலம் சமிக்ஞை தள்ள ஒரு சிக்கலான நிகழ்வுஎண் நுழைகிறது
+
+00:27:44,000 --> 00:27:46,000
+time-invariant system
+நேர மாற்றம் அமைப்பு
+
+00:27:46,000 --> 00:27:50,000
+were separately modifying with the frequency response were multiplying
+தனித்தனியாக அதிர்வெண் மறுமொழி பெருக்குவதன் இருந்த மாற்றும்
+
+00:27:50,000 --> 00:27:54,000
+by the frequency response the amplitudes
+அதிர்வெண் பதில் வீச்சுகள்
+
+00:27:54,000 --> 00:27:58,000
+love the exponential comp phones used to build the input
+உள்ளீடு கட்ட பயன்படுத்தப்படும் அதிவேகமான பெயர்த்தல் தொலைபேசிகள் பிடிக்கிறது
+
+00:27:58,000 --> 00:28:01,000
+and that song intern is
+அந்த பாடல் பயிற்சி ஆகிறது
+
+00:28:01,000 --> 00:28:06,000
+the decomposition of the output in terms of complex exponentials
+சிக்கலான நிகழ்வுஎண் அடிப்படையில் வெளியீடு சிதைவு
+
+00:28:06,000 --> 00:28:12,000
+now and I I understand that kinda going through that involves
+இப்போது இரண்டாம் கிரகமாக அந்த வழியாக சென்று அடங்கும் என்று புரிந்து கொள்ள
+
+00:28:12,000 --> 00:28:15,000
+a little bit of sorting out and I strongly encourage you
+ஒரு சிறிய வரிசையாக்க பிட் மற்றும் நான் உறுதியாக உங்களுக்கு ஊக்குவிக்கின்றன
+
+00:28:15,000 --> 00:28:21,000
+to try to understand and interpret the convolution property
+சுழற்சி சொத்து புரிந்து புரிந்து முயற்சி
+
+00:28:21,000 --> 00:28:24,000
+in knows conceptual terms rather than simply by
+கருத்து அடிப்படையில் அல்லாமல் மூலம் தெரிகிறது உள்ள
+
+00:28:24,000 --> 00:28:28,000
+applying the mathematics to the convolution integral and seeing that
+ஒருங்கிணைந்த சுழற்சி கணிதம் விண்ணப்பிக்கும் கண்டு,
+
+00:28:28,000 --> 00:28:33,000
+terms match up on both sides
+விதிமுறைகள் இருபுறமும் பொருந்தும்
+
+00:28:33,000 --> 00:28:37,000
+now as i indicated the convolution property
+நான் ஆவி சொத்து சுட்டிக்காட்டினார் இப்போது
+
+00:28:37,000 --> 00:28:41,000
+forms the basis for what's referred to as filtering
+வடிகட்டி குறிப்பிடப்படுகிறது என்ன அடிப்படையில் உருவாகும்
+
+00:28:41,000 --> 00:28:46,000
+and this is a topic that will be treating a
+இந்த சிகிச்சை வேண்டும் என்று ஒரு தலைப்பு உள்ளது
+
+00:28:46,000 --> 00:28:49,000
+considerable amount of detail and after
+கணிசமான அளவு விவரம் மற்றும் பிறகு
+
+00:28:49,000 --> 00:28:54,000
+we've also gone through a discussion love the discrete-time Fourier transform
+நாங்கள் தனி நேரம் ஃபோரியர் அன்பு ஒரு கலந்துரையாடல் கடந்துவந்திருக்கிறோம்
+
+00:28:54,000 --> 00:28:57,000
+in the next several lectures however what I'd like to do is just
+அடுத்த சில விரிவுரைகள் எனினும் நான் என்ன செய்ய விரும்புகிறேன் தான் ஆகிறது
+
+00:28:57,000 --> 00:29:00,000
+just indicate now a little bit love
+இப்போது கொஞ்சம் காதல் குறிக்கிறது
+
+00:29:00,000 --> 00:29:04,000
+the conceptual ideas involve
+கருத்து யோசனைகள் உள்ளடக்ககின்றன
+
+00:29:04,000 --> 00:29:09,000
+essentially conceptually what filtering as its
+அடிப்படையில் கருத்து என்ன வடிகட்டி அதன்
+
+00:29:09,000 --> 00:29:13,000
+typically referred to corresponds to
+பொதுவாக ஒத்துள்ளது குறிப்பிடப்படுகிறது
+
+00:29:13,000 --> 00:29:16,000
+is modifying separately
+தனித்தனியாக மாற்றும் உள்ளது
+
+00:29:16,000 --> 00:29:20,000
+the individual frequency components in a signal
+ஒரு சமிக்ஞை தனிப்பட்ட அதிர்வெண் கூறுகளை
+
+00:29:20,000 --> 00:29:25,000
+the convolution property told us that if we
+சுழற்சி சொத்து என்று கூறினார் என்றால் நாம்
+
+00:29:25,000 --> 00:29:29,000
+look at the individual frequency comp points they get multiplied by the
+அவர்கள் பெருக்கி தனிப்பட்ட அதிர்வெண் பெயர்த்தல் புள்ளிகள் பாருங்கள்
+
+00:29:29,000 --> 00:29:34,000
+frequency response and so what that says is that we can amplify or it anyway
+அதனால் என்ன என்று கூறுகிறார் அதை எப்படியும் அதிர்வெண் மறுமொழி மற்றும் நாம் பெருக்க முடியும் என்று ஆகிறது அல்லது
+
+00:29:34,000 --> 00:29:39,000
+any of those comp own it separately using a linear time-invariant system
+அந்த பெயர்த்தல் எந்த ஒரு நேர்கோட்டு நேரம் மாற்றமில்லாத அமைப்பு பயன்படுத்தி தனித்தனியாக சொந்தம்
+
+00:29:39,000 --> 00:29:43,000
+for example what I've illustrated here is
+என்ன நான் இங்கே விளக்கப்பட்டுள்ளது விட்டேன் என்று எடுத்துக்காட்டாக
+
+00:29:43,000 --> 00:29:46,000
+the frequency response what is commonly referred to
+அதிர்வெண் மறுமொழி என்ன பொதுவாக குறிப்பிடப்படுகிறது
+
+00:29:46,000 --> 00:29:52,000
+as and ideal Lopez filter what an ideal 0 pass filter does
+ஒரு சிறந்த 0 பாஸ் வடிகட்டி என்ன மற்றும் சிறந்த லோபஸ் வடிகட்டி
+
+00:29:52,000 --> 00:29:55,000
+is to pass exactly
+சரியாக அனுப்ப ஆகிறது
+
+00:29:55,000 --> 00:29:59,000
+frequencies in one frequency range
+ஒரு அதிர்வெண் வரம்பில் அதிர்வெண்கள்
+
+00:29:59,000 --> 00:30:04,000
+and eliminate totally frequencies outside that range
+மற்றும் அந்த வரையறைக்கு வெளியே முற்றிலும் அதிர்வெண்கள் அகற்ற
+
+00:30:04,000 --> 00:30:09,000
+another filter which is not so ideal might for example
+எனவே எடுத்துக்காட்டாக இலட்சிய வலிமை அல்ல இது மற்றொரு வடிகட்டி
+
+00:30:09,000 --> 00:30:12,000
+attenuate sit com phone it's in this band but not
+அது இந்த இசைக்குழு ஆனால் உள்ளிருப்பு காம் தொலைபேசி வீரியத்தை
+
+00:30:12,000 --> 00:30:19,000
+I rather attenuate conference in this band but not totally eliminate them
+நான் மாறாக இந்த இசைக்குழு மாநாட்டில் வீரியத்தை ஆனால் அவர்களை முற்றிலும் அகற்ற முடியாது
+
+00:30:19,000 --> 00:30:22,000
+now interns a filtering we can think back
+இப்போது நாம் யோசிக்க முடியும் ஒரு வடிகட்டி பயிற்சியாளர்களுக்கு
+
+00:30:22,000 --> 00:30:25,000
+to the differentiation property and in fact interpreter
+வகையீடு சொத்து மற்றும் உண்மையில் இண்டர்பிரிட்டரில்
+
+00:30:25,000 --> 00:30:29,000
+differentiation or differentiator as a filter
+ஒரு வடிகட்டி வேறுபாடு அல்லது வித்தியாசத்தை
+
+00:30:29,000 --> 00:30:33,000
+recall that the differentiation property said
+வகையீடு சொத்து என்று நினைவு
+
+00:30:33,000 --> 00:30:39,000
+that the Fourier transform all the differentiated signal
+ஃபோரியர் அனைத்து வேறுபட்ட சமிக்ஞை மாற்றும் என்று
+
+00:30:39,000 --> 00:30:43,000
+is the for a transformer the original signal multiplied by J Omega
+ஒரு மின்மாற்றி ஜே ஒமேகா பெருக்கி அசல் சமிக்ஞையை
+
+00:30:43,000 --> 00:30:46,000
+so what that says then
+அதனால் பின்னர் என்ன
+
+00:30:46,000 --> 00:30:51,000
+is dead if we have a differentiator opened the frequency response to that
+நாங்கள் ஒரு காலமும் அந்த அதிர்வெண் மறுமொழி திறந்து இருந்தால் இறந்த ஆகிறது
+
+00:30:51,000 --> 00:30:56,000
+is J Omega in other words the Fourier transform of the output is Jay Omega
+ஃபோரியர் வெளியீடு மாற்றும் ஜே ஒமேகா வேறுவிதமாக உள்ளது ஜே ஒமேகா ஆகிறது
+
+00:30:56,000 --> 00:31:00,000
+times the Fourier transform the input
+முறை ஃபோரியர் உள்ளீடு மாற்றும்
+
+00:31:00,000 --> 00:31:04,000
+and so the frequency response a differentiator
+எனவே அதிர்வெண் மறுமொழி ஒரு காலமும்
+
+00:31:04,000 --> 00:31:08,000
+looks like this and turns its magnitude and what it does
+இந்த மாதிரி மற்றும் அதன் அளவு மற்றும் என்ன அது மாறிவிடும்
+
+00:31:08,000 --> 00:31:12,000
+of course is it amplifies high frequencies
+நிச்சயமாக அது உயர் அலைவரிசைகளை அதிகரிக்கிறது
+
+00:31:12,000 --> 00:31:17,000
+and attenuates low frequencies
+மற்றும் குறைந்த அதிர்வெண்கள் தணிக்கிறது
+
+00:31:17,000 --> 00:31:22,000
+well let me just to kinda cement summer these ideas
+எனக்கு ஒரு கிரகமாக கோடை இந்த கருத்துக்கள் சிமெண்ட் நாம்
+
+00:31:22,000 --> 00:31:26,000
+illustrate them in a context 0
+ஒரு சூழல் 0 அவற்றை விளக்குவதற்கு
+
+00:31:26,000 --> 00:31:29,000
+one kind of signal namely signal which in fact
+சிக்னல் ஒரு வகையான, அதாவது அடையாளம் இது உண்மையில்
+
+00:31:29,000 --> 00:31:34,000
+is the spatial signal rather than a time signal
+மாறாக ஒரு நேர சமிக்ஞை விட வெளி சமிக்ஞை ஆகும்
+
+00:31:34,000 --> 00:31:39,000
+and this also gives me an opportunity to introduce you
+இந்த என்னை அறிமுகப்படுத்த ஒரு வாய்ப்பை அளிக்கிறது
+
+00:31:39,000 --> 00:31:43,000
+to our colleague JBJ for EA's
+ஈ.ஏ. எங்களது சக தாலி கட்டும் வரை
+
+00:31:43,000 --> 00:31:47,000
+so if we could look at our colleague mister four EA
+எனவே நாங்கள் எங்கள் சக மிஸ்டர் நான்கு ஈ.ஏ. பார்க்க முடியும்
+
+00:31:47,000 --> 00:31:51,000
+who by the way is on
+மூலம் யார்
+
+00:31:51,000 --> 00:31:55,000
+not only person who had tremendously brilliant insights
+வியக்கத்தக்க நல்ல கருத்துக்களையும் கொண்டிருந்த நபர் மட்டும்
+
+00:31:55,000 --> 00:31:58,000
+and his insights in fact have led to
+மற்றும் உண்மையில் அவரது நுண்ணறிவு வழிவகுத்தது
+
+00:31:58,000 --> 00:32:02,000
+the developments really for the foundation the developments that
+முன்னேற்றங்கள் உண்மையில் அறக்கட்டளை முன்னேற்றங்கள் என்று
+
+00:32:02,000 --> 00:32:07,000
+is the basis for this course he was also a very interesting fascinating person
+அடிப்படையில் இந்த பாடத்திட்டத்தில் அவர் ஒரு சுவாரசியமான கண்கவர் நபர்
+
+00:32:07,000 --> 00:32:11,000
+and there's a certain amount of historical discussion
+மற்றும் வரலாற்று ரீதியான விவாதம் ஒரு குறிப்பிட்ட அளவு இருக்கிறது
+
+00:32:11,000 --> 00:32:17,000
+about for EA and his background which you might enjoy reading in the text
+நீங்கள் உரை படித்து அனுபவிக்க கூடிய ஈ.ஏ. மற்றும் அவரது பின்னணி பற்றி
+
+00:32:17,000 --> 00:32:20,000
+in any case what you're looking at a course is a signal
+எந்த விஷயத்தில் நீங்கள் ஒரு நிச்சயமாக தேடும் ஒரு சமிக்ஞை ஆகும்
+
+00:32:20,000 --> 00:32:24,000
+and the signal is a spatial signal and
+மற்றும் சமிக்ஞை ஒரு வெளி சமிக்ஞை மற்றும்
+
+00:32:24,000 --> 00:32:28,000
+it has high frequencies and low frequencies high frequencies
+அது உயர் அதிர்வெண்கள் மற்றும் குறைந்த அதிர்வெண்கள் உயர் அதிர்வெண்கள்
+
+00:32:28,000 --> 00:32:32,000
+corresponding to things that are varying rapidly
+வேகமாக மாறுபடும் என்று விஷயங்கள் தொடர்புடைய
+
+00:32:32,000 --> 00:32:35,000
+spatially and low frequencies barings
+வான்வெளியில் மற்றும் குறைந்த அதிர்வெண்கள் Barings
+
+00:32:35,000 --> 00:32:38,000
+very slowly spatially it so
+மிகவும் மெதுவாக வான்வெளியில் அது
+
+00:32:38,000 --> 00:32:42,000
+for example we could low-pass filter
+உதாரணமாக நாம் வடிகட்டி குறைந்த அனுப்ப முடியும்
+
+00:32:42,000 --> 00:32:45,000
+this picture simply by asking
+வெறுமனே கேட்டு இந்த படம்
+
+00:32:45,000 --> 00:32:49,000
+the video crew if they could slightly defocus
+வீடியோ குழுவினர் அவர்கள் சற்று defocus முடியும் என்றால்
+
+00:32:49,000 --> 00:32:55,000
+and what you see as the picture is the focus if you can hold it there
+நீங்கள் அதை நடத்த முடியும் என்றால், நீங்கள் என்ன படம் பார்க்க கவனம் ஆகிறது
+
+00:32:55,000 --> 00:32:58,000
+is dead we've lost edges which
+நாம் முனைகளை இறந்த இழந்துவிட்டேன் இது
+
+00:32:58,000 --> 00:33:03,000
+is the rapid variation and what we've retained is the broader
+விரைவான மாறுபாடு இருக்கிறது மற்றும் நாம் தக்க வைத்து விட்டேன் பரந்த
+
+00:33:03,000 --> 00:33:06,000
+slow variation and now let's take out
+இப்போது மெதுவாக மாறுபாடு மற்றும் வெளியே எடுத்து விடுங்கள்
+
+00:33:06,000 --> 00:33:10,000
+the d focusing low-pass filter and go back
+ஈ குறைந்த பாஸ் வடிகட்டி கவனத்தை செல்ல
+
+00:33:10,000 --> 00:33:16,000
+to a focused image
+ஒரு கவனம் படத்தை
+
+00:33:16,000 --> 00:33:20,000
+okay now what
+சரி இப்போது என்ன
+
+00:33:20,000 --> 00:33:23,000
+and we can also consider is what would happen if we look
+மற்றும் நாம் பார்க்க என்றால் என்ன நடக்கும் என்று கருதுகின்றனர்
+
+00:33:23,000 --> 00:33:27,000
+at the differentiated image and their are several ways that we can think about
+வேறுபட்ட படத்தை நாம் யோசிக்க முடியும் என்று பல வழிகளில் தங்கள் இருக்கும்
+
+00:33:27,000 --> 00:33:28,000
+this
+இந்த
+
+00:33:28,000 --> 00:33:33,000
+one is that a differentiator of course the output of a differentiator
+ஒன்று என்று நிச்சயமாக ஒரு காலமும் ஒரு காலமும் வெளியீடு
+
+00:33:33,000 --> 00:33:37,000
+is larger where the discontinuity
+பெரிய இடத்தில் தொடர்பின்மை
+
+00:33:37,000 --> 00:33:40,000
+or where the variation is faster
+அல்லது மாறுபாடு வேகமாக எங்கே
+
+00:33:40,000 --> 00:33:43,000
+and so we would expect the edges
+எனவே நாம் முனைகளை எதிர்பார்ப்பதை
+
+00:33:43,000 --> 00:33:47,000
+to be enhanced if in fact we differentiated the image
+உண்மையில் நாம் படத்தை மாறுபடுகின்றன என்றால் மேம்பட்ட வேண்டும்
+
+00:33:47,000 --> 00:33:51,000
+or if we interpret differentiation in the context
+அல்லது நாம் சூழலில் வேறுபாடு விளக்குவது என்றால்
+
+00:33:51,000 --> 00:33:55,000
+love our filter then what we're saying
+நாம் என்ன சொல்கிறீர்கள் என்று பின்னர் எங்கள் வடிப்பான்
+
+00:33:55,000 --> 00:33:59,000
+if hey what we're saying is that in effect
+ஏய் நாம் என்ன சொல்கிறீர்கள் என்றால் அந்த விளைவு
+
+00:33:59,000 --> 00:34:03,000
+what's happening is that the differentiator is
+என்ன நடக்கிறது என்பதுதான் எனது கருத்து என்று ஆகிறது
+
+00:34:03,000 --> 00:34:06,000
+accentuating the high frequencies
+உயர் அலைவரிசைகளை மறுமுறை
+
+00:34:06,000 --> 00:34:11,000
+because if the frequency shape the differentiator now recall that this all
+ஏனெனில் அதிர்வெண் வித்தியாசத்தை வடிவமைக்கும் இப்போது இந்த அனைத்து நினைவுகூர வேண்டும்
+
+00:34:11,000 --> 00:34:14,000
+kinda fits together is a nice package
+கிரகமாக ஒரு நல்ல தொகுப்பு ஒன்றாக பொருந்துகிறது
+
+00:34:14,000 --> 00:34:18,000
+be expected to actively the differentiation will enhance ages
+தீவிரமாக வேறுபாடு வயது அதிகரிக்க செய்யும் என எதிர்பார்க்கப்படுகிறது
+
+00:34:18,000 --> 00:34:23,000
+when we talked about square waves and we so I have a for a series built up a
+நாம் சதுர அலைகள் பற்றி பேசினோம், நாம் நான் வேண்டும் போது ஒரு தொடர் கட்டியெழுப்பப்பட்ட ஒரு
+
+00:34:23,000 --> 00:34:24,000
+square wave
+சதுர அலை
+
+00:34:24,000 --> 00:34:27,000
+we saw that it was the high frequencies
+நாம் அது உயர் அலைவரிசைகளை என்று பார்த்தேன்
+
+00:34:27,000 --> 00:34:31,000
+that were required in order to build up the sharp
+கூர்மையான கட்டமைக்க தேவைப்படுகிறது என்று
+
+00:34:31,000 --> 00:34:36,000
+edges and so either viewed as a filter or viewed intuitively
+விளிம்புகள் மற்றும் அல்லது ஒரு வடிகட்டி பார்க்கப்படும் அல்லது உள்ளுணர்வாக பார்க்க
+
+00:34:36,000 --> 00:34:40,000
+we would expect that the differentiated image would in fact
+நாங்கள் எதிர்பார்க்கவில்லை என்று வேறுபட்ட படத்தை என்று உண்மையில்
+
+00:34:40,000 --> 00:34:46,000
+get would in fact it anyway the slowly varying background and amplify
+உண்மையில் அது எப்படியும் மெதுவாக பின்னணி பல்வேறு என்று இங்கு பெருக்க
+
+00:34:46,000 --> 00:34:50,000
+the rapidly varying ages so let's look again at
+வேகமாக மாறுபடும் வயது எனவே மீண்டும் பார்போம்
+
+00:34:50,000 --> 00:34:54,000
+our original image just to remind you love the fact that there are edges of
+எங்கள் அசல் படத்தை தான் நீங்கள் விளிம்புகள் உள்ளன என்று உண்மையில் அன்பு ஞாபகப்படுத்த
+
+00:34:54,000 --> 00:34:56,000
+course and their
+நிச்சயமாக அவர்கள்
+
+00:34:56,000 --> 00:34:59,000
+is more slowly varying backgrounds
+மிகவும் மெதுவாக பின்னணியில் பல்வேறு
+
+00:34:59,000 --> 00:35:03,000
+and now let's look at the
+இப்போது தான் பார்க்க வேண்டும்
+
+00:35:03,000 --> 00:35:06,000
+result love passing that through
+இதன் மூலம் அந்த வழியாக
+
+00:35:06,000 --> 00:35:09,000
+a differentiator and as i think is
+நான் நினைக்கிறேன் ஒரு காலமும் மற்றும் ஆகின்றன
+
+00:35:09,000 --> 00:35:13,000
+very evident in that in the resulting image
+இதன் விளைவாக படத்தை என்று மிகவும் தெளிவாக
+
+00:35:13,000 --> 00:35:16,000
+clearly is the edges that a retained and
+தெளிவாக ஒரு தக்கவைத்து அந்த முனைகளை
+
+00:35:16,000 --> 00:35:19,000
+the slow back to slower background variations
+மெதுவாக பின்னணி வேறுபாடுகள் மெதுவாக மீண்டும்
+
+00:35:19,000 --> 00:35:26,000
+are destroyed which is consistent with everything we've said
+நாங்கள் சொன்னதை எல்லாம் இசைவானதாக இது அழிக்கப்பட்ட
+
+00:35:26,000 --> 00:35:30,000
+okay now i've emphasized the her will be returning
+சரி இப்போது நான் வலியுறுத்தி நான் அவளை திரும்பி இருக்க வேண்டும்
+
+00:35:30,000 --> 00:35:33,000
+to a much broader discussion a filtering at
+ஒரு பரந்த விவாதம் ஒரு வடிகட்டி செய்ய
+
+00:35:33,000 --> 00:35:38,000
+a later point in the cores right now like to comment on another
+கருக்கள் ஒரு பின்னர் இப்போது மற்றொரு கருத்து விரும்பவில்லை
+
+00:35:38,000 --> 00:35:42,000
+property which here is also as i indicated a topic I've
+என்று நான் ஒரு தலைப்பை குறிப்பிட்ட இங்கே கூட இது சொத்து
+
+00:35:42,000 --> 00:35:46,000
+in its own right and which really is the dual
+உண்மையில் இரட்டை ஆகிறது அதன் சொந்த சரியான மற்றும்
+
+00:35:46,000 --> 00:35:51,000
+property to the convolution property and in fact could be argued directly from
+சுழற்சி சொத்து மற்றும் உண்மையில் சொத்து இருந்து நேரடியாக வாதிட்டார்
+
+00:35:51,000 --> 00:35:53,000
+duality
+இரட்டைத்தன்மை
+
+00:35:53,000 --> 00:35:59,000
+and that is what's referred to as the modulation property
+மற்றும் பண்பேற்றம் சொத்து என குறிப்பிடப்படுகிறது என்ன ஆகிறது
+
+00:35:59,000 --> 00:36:03,000
+now the convolution property told us that
+இப்போது சுழற்சி சொத்து எங்களுக்கு என்று கூறினார்
+
+00:36:03,000 --> 00:36:09,000
+if we convolved in the time domain we multiply in the frequency domain
+நாம் நேரம் டொமைன் convolved நாம் அதிர்வெண் களத்தில் பெருக்கி
+
+00:36:09,000 --> 00:36:12,000
+and we know the time and frequency domains are interchangeable because it
+நாம் நேரம் தெரியும் மற்றும் அதிர்வெண் களங்கள் பரிமாற்றம் ஏனெனில் இருக்கும்
+
+00:36:12,000 --> 00:36:13,000
+to our the
+எங்கள் The செய்ய
+
+00:36:13,000 --> 00:36:16,000
+so what that would suggest is dead
+அதனால் என்ன என்று, இறந்த ஆகிறது
+
+00:36:16,000 --> 00:36:19,000
+if we multiply in the time domain
+நாம் நேரம் டொமைன் பெருக்கி
+
+00:36:19,000 --> 00:36:23,000
+that would correspond to convolution in the frequency domain
+என்று அதிர்வெண் களத்தில் சுழற்சி ஒத்திருக்கும் என்று
+
+00:36:23,000 --> 00:36:27,000
+and in fact head that is exactly what the modulation property is
+உண்மையில் தலையில் பண்பேற்றம் சொத்து சரியாக என்ன ஆகிறது
+
+00:36:27,000 --> 00:36:31,000
+I have a summarized here that if we multiply
+நான் இங்கே ஒரு சுருக்கி என்று நாம் பெருக்கி
+
+00:36:31,000 --> 00:36:34,000
+a time function by another time function then
+மற்றொரு முறை செயல்பாடு மூலம் ஒரு நேரத்தில் விழாவில் பின்னர்
+
+00:36:34,000 --> 00:36:38,000
+in the frequency domain week involved
+தொடர்பு அதிர்வெண் களத்தில் வாரம்
+
+00:36:38,000 --> 00:36:41,000
+whereas the convolution property is just the duel at that
+சுழற்சி சொத்து என்று தான் சண்டை அதேசமயம்
+
+00:36:41,000 --> 00:36:46,000
+namely convolved being in the time domain corresponds to
+அதாவது நேரம் களத்தில் இருப்பது ஒத்துள்ளது convolved
+
+00:36:46,000 --> 00:36:49,000
+multiplication in the frequency domain
+அதிர்வெண் களத்தில் பெருக்கல்
+
+00:36:49,000 --> 00:36:54,000
+the convolution property is the basis as i indicated for filtering
+நான் வடிகட்டல் குறிப்பிட்ட ஆவி சொத்து அடிப்படையில் ஆகிறது
+
+00:36:54,000 --> 00:36:58,000
+the modulation property as I've summarized it here
+நான் இங்கே அதை சுருக்கி போல பண்பேற்றம் சொத்து
+
+00:36:58,000 --> 00:37:03,000
+in fact is the entire basis
+உண்மையில் முழு அடிப்படையில் ஆகிறது
+
+00:37:03,000 --> 00:37:07,000
+for amplitude modulation systems issues
+வீச்சு பண்பேற்றம் அமைப்புகள் சிக்கல்களுக்கு
+
+00:37:07,000 --> 00:37:10,000
+almost universally in communications and wait
+உலகளவில் தகவல் மற்றும் காத்திருக்க
+
+00:37:10,000 --> 00:37:15,000
+the modulation property is we'll see when we explored in more detail
+பண்பேற்றம் சொத்து நாம் இன்னும் விரிவாக ஆராயப்படுகிறது போது நாம் பார்க்க வேண்டும் ஆகிறது
+
+00:37:15,000 --> 00:37:20,000
+tells us is that if we have a signal with a certain spectrum
+இது நமக்கு சொல்கிறது என்று நாம் ஒரு குறிப்பிட்ட ஸ்பெக்ட்ரம் ஒரு சமிக்ஞை வேண்டும் என்றால்
+
+00:37:20,000 --> 00:37:23,000
+and we multiply by a sinusoidal
+நாம் ஒரு சைன் வளைவு பெருக்கவும்
+
+00:37:23,000 --> 00:37:28,000
+signal whose for EA transformers said impulses
+அதன் ஈ.ஏ. மின்மாற்றிகள் கூறினார் தூண்டுதலின் சமிக்ஞை
+
+00:37:28,000 --> 00:37:33,000
+then in a frequency-domain week involved and that corresponds
+பின்னர் சம்பந்தப்பட்ட ஒரு அதிர்வெண் டொமைன் வாரம் என்று ஒத்துள்ளது
+
+00:37:33,000 --> 00:37:37,000
+to taking the original spectrum and translating it
+அசல் ஸ்பெக்ட்ரம் எடுத்து அதை மொழிபெயர்ப்பது செய்ய
+
+00:37:37,000 --> 00:37:40,000
+shifting it in frequency up to
+வரை அதிர்வெண் அது மாற்றுவதால்
+
+00:37:40,000 --> 00:37:43,000
+the frequency love the carrier namely
+அதிர்வெண் அதாவது கேரியர் பிடிக்கிறது
+
+00:37:43,000 --> 00:37:46,000
+the sinusoidal signal and as I said will
+sinusoidal சிக்னல் மற்றும் நான் கூறியது போல்
+
+00:37:46,000 --> 00:37:52,000
+come to that in much more detail in a number of lectures
+விரிவுரைகள் பல மிகவும் விரிவாக என்று வந்து
+
+00:37:52,000 --> 00:37:55,000
+okay now we've seen a number of properties
+சரி இப்போது நாம் பண்புகள் பல பார்த்திருக்கிறேன்
+
+00:37:55,000 --> 00:37:59,000
+and I indicated sometime earlier when we talked about
+நாம் பற்றி பேசிய போது நான் சிறிது முன்னதாக சுட்டிக்காட்டினார்
+
+00:37:59,000 --> 00:38:04,000
+and differential equations that in fact it's the properties are the 48 transform
+மற்றும் வேறுபட்ட உண்மையில் அது பண்புகள் 48 மாற்றும் இருக்கும் என்று சமன்பாடுகள்
+
+00:38:04,000 --> 00:38:08,000
+that providers with a very useful
+என்று ஒரு மிகவும் பயனுள்ள கொண்டு வழங்குநர்கள்
+
+00:38:08,000 --> 00:38:14,000
+an important mechanism for solving linear constant coefficient differential
+நேரியல் நிலையான குணகம் மாறுபட்ட தீர்க்கும் ஒரு முக்கியமான கருவியாக
+
+00:38:14,000 --> 00:38:15,000
+equations
+சமன்பாடுகள்
+
+00:38:15,000 --> 00:38:18,000
+and but I'd like to do now
+ஆனால் நான் இப்போது என்ன செய்ய விரும்புகிறேன்
+
+00:38:18,000 --> 00:38:23,000
+is illustrate the procedure the basis for that
+நடைமுறை என்று அடிப்படையில் விளக்குகிறது
+
+00:38:23,000 --> 00:38:26,000
+and I think what we'll do is illustrated simply in the context of several
+நான், நாம் பல சூழலில் வெறுமனே விளக்கப்பட்டுள்ளது என்ன செய்வேன் என்று
+
+00:38:26,000 --> 00:38:30,000
+examples
+உதாரணங்கள்
+
+00:38:30,000 --> 00:38:33,000
+okay well in what i've indicated is
+சரி, சரி, நான் குறிப்பிட்டது என்ன உள்ளது
+
+00:38:33,000 --> 00:38:37,000
+a system
+ஒரு முறை
+
+00:38:37,000 --> 00:38:41,000
+with her a an impulse response HFT
+அவரது ஒரு உத்வேக பதில் HFT கொண்டு
+
+00:38:41,000 --> 00:38:46,000
+or frequency response teachable nigga and of course we know that in the time
+அல்லது அதிர்வெண் மறுமொழி கதையும் ஒட்டுக்குழு நிச்சயமாக நாம் என்று நேரம்
+
+00:38:46,000 --> 00:38:48,000
+domain it's just right to convolution
+டொமைன் அது சுழற்சி தான் சரி
+
+00:38:48,000 --> 00:38:54,000
+in the frequency domain its described through multiplication
+அதிர்வெண் களத்தில் அதன் பெருக்கல் மூலம் விவரித்தார்
+
+00:38:54,000 --> 00:38:57,000
+and I in essence
+மற்றும் சாராம்சத்தில் நான்
+
+00:38:57,000 --> 00:39:01,000
+am assuming that we're talking about a linear time-invariant system
+நாம் ஒரு நேர்கோட்டு நேரம் மாற்றமில்லாத அமைப்பு பற்றி பேசுகிறீர்கள் என்று கருதிக்கொண்டு
+
+00:39:01,000 --> 00:39:06,000
+and we're also going to assume that it's characterized by a win here comes the
+மற்றும் நாம் அதை இங்கே ஒரு வெற்றி வகைப்படுத்தப்படும் என்று நினைத்து போகிறோம் வருகிறது
+
+00:39:06,000 --> 00:39:09,000
+coefficient differential equation
+குணகம் வகையீட்டு சமன்பாடு
+
+00:39:09,000 --> 00:39:12,000
+where we're going to oppose the condition
+நாங்கள் நிலையில் எதிர்க்க போகிறோம்
+
+00:39:12,000 --> 00:39:15,000
+that its causal linear and time-invariant
+அதன் காரண நேர்கோட்டு மற்றும் நேர மாற்றம்
+
+00:39:15,000 --> 00:39:19,000
+or equivalent Lee that the initial condition conditions
+அல்லது அதற்கு சமமான லீ என்று ஆரம்ப நிலையில் நிலைமைகள்
+
+00:39:19,000 --> 00:39:22,000
+are consistent with initial rest
+ஆரம்ப மற்ற நிலையான இருக்கின்றன
+
+00:39:22,000 --> 00:39:26,000
+and it's because it the fact that we're assuming
+அது ஏனெனில் அது நாம் அனுமானித்து என்று உண்மையில்
+
+00:39:26,000 --> 00:39:29,000
+that is a linear time-invariant system that
+என்று ஒரு நேர்கோட்டு நேரம் மாற்றமில்லாத அமைப்பு என்று
+
+00:39:29,000 --> 00:39:34,000
+we can describe it in the frequency domain through the convolution property
+நாம் ஆவி சொத்து மூலம் அதிர்வெண் களத்தில் அதை விவரிக்க முடியாது
+
+00:39:34,000 --> 00:39:39,000
+and we can use the properties love the forty a transfer
+நாம் நாற்பது பண்புகள் அன்பு ஒரு பரிமாற்ற பயன்படுத்த முடியும்
+
+00:39:39,000 --> 00:39:44,000
+so let's take as our example a first-order differential equation
+எனவே, நமது உதாரணமாக ஒரு முதல் வரிசை வகையீட்டு சமன்பாடு என அழைத்து செல்லலாம்
+
+00:39:44,000 --> 00:39:49,000
+as I indicate here so the derivative the output plus eight times the output is
+வெளியீடு மற்றும் எட்டு முறை வெளியீடு வழித்தோன்றல் நான் இங்கே குறிப்பிட
+
+00:39:49,000 --> 00:39:51,000
+equal to the input
+உள்ளீடு சமமாக
+
+00:39:51,000 --> 00:39:57,000
+and now we can use the differentiation property
+இப்போது நாம் வேறுபாடு சொத்து பயன்படுத்தலாம்
+
+00:39:57,000 --> 00:40:01,000
+if we for EA transform mystic entire expression
+ஈ.ஏ. நாம் மறைபொருள் முழு வெளிப்பாடு மாற்றும் என்றால்
+
+00:40:01,000 --> 00:40:05,000
+the differentiation property tells us that
+வகையீடு சொத்து அந்த சொல்கிறது
+
+00:40:05,000 --> 00:40:08,000
+the forty a transformer the derivative of the output
+நாற்பது ஒரு மின்மாற்றி வெளியீடு வழித்தோன்றல்
+
+00:40:08,000 --> 00:40:14,000
+is the for a transformer the output multiplied by J Omega
+ஒரு மின்மாற்றி ஜே ஒமேகா பெருக்கி வெளியீடு
+
+00:40:14,000 --> 00:40:18,000
+and Lenny arity well let us
+மற்றும் லென்னி உறுப்பின் எண் நமக்கு நாம்
+
+00:40:18,000 --> 00:40:23,000
+right the Fourier transform love this as eight times while Omega
+வலது ஃபோரியர் எட்டு மடங்கு அன்பு இந்த மாற்றும் போது ஒமேகா
+
+00:40:23,000 --> 00:40:26,000
+and since these are added together and since we have the linear
+இந்த ஒன்றாக சேர்க்க மற்றும் இருந்து நாம் நேரியல் வேண்டும் என்பதால்
+
+00:40:26,000 --> 00:40:29,000
+linearity property these are added together
+நேரிலா சொத்து இந்த ஒன்றாக சேர்க்க
+
+00:40:29,000 --> 00:40:34,000
+and XOM Omega is and the Fourier transform affect safety
+மற்றும் XOM ஒமேகா மற்றும் ஃபோரியர் பாதுகாப்பு பாதிக்கும்
+
+00:40:34,000 --> 00:40:40,000
+so what we've used is the differentiation property
+அதனால் என்ன நாம் பயன்படுத்தி வேறுபாடு சொத்து ஆகிறது
+
+00:40:40,000 --> 00:40:47,000
+and reviews the when the arity property
+மற்றும் விமர்சனங்களை போது உறுப்பின் எண் சொத்து
+
+00:40:47,000 --> 00:40:51,000
+right now weekend solve this equation
+இப்போது வார இறுதியில் இந்த சமன்பாடு தீர்க்க
+
+00:40:51,000 --> 00:40:55,000
+for y Omega the forty a transformer the output
+நாற்பது ஒமேகா Y ஒரு மின்மாற்றி வெளியீடு
+
+00:40:55,000 --> 00:40:58,000
+in terms of Xserve Omega the Fourier transform
+Xserve ஒமேகா ஃபோரியர் அடிப்படையில்
+
+00:40:58,000 --> 00:41:02,000
+the input and a simple algebraic step
+உள்ளீடு மற்றும் ஒரு எளிமையான இயற்கணித படி
+
+00:41:02,000 --> 00:41:08,000
+gets s to this expression so the for a chance for the output is one over
+வெளியீடு ஒரு வாய்ப்பு மீது ஒன்று இந்த வெளிப்பாடு கள் கிடைக்கிறது
+
+00:41:08,000 --> 00:41:09,000
+Jamaica plus a
+ஜமைக்கா இனி
+
+00:41:09,000 --> 00:41:14,000
+ties the forty a transformer the input and I just simply repeated
+நாற்பது ஒரு மின்மாற்றி உள்ளீடு போடுகிறான் மற்றும் நான் வெறுமனே மீண்டும்
+
+00:41:14,000 --> 00:41:18,000
+that equation appear
+சமன்பாடு தோன்றும்
+
+00:41:18,000 --> 00:41:22,000
+now so far this is algebra
+இப்போது இதுவரை இந்த அல்ஜீப்ரா ஆகிறது
+
+00:41:22,000 --> 00:41:27,000
+and and question is now how do we interpret this
+மற்றும் கேள்வி இப்போது நாங்கள் எப்படி செய்வது ஆகிறது
+
+00:41:27,000 --> 00:41:32,000
+well we know that the for a transformer the output
+நன்றாக நாம் என்று ஒரு மின்மாற்றி வெளியீடு
+
+00:41:32,000 --> 00:41:37,000
+is the forty a transformer the input times the Fourier transform
+நாற்பது உள்ளீடு முறை ஃபோரியர் ஒரு மின்மாற்றி உள்ளது
+
+00:41:37,000 --> 00:41:42,000
+are the impulse response to the system namely the frequency response
+கணினி, அதாவது அதிர்வெண் மறுமொழி உந்துவிசை பதில்
+
+00:41:42,000 --> 00:41:45,000
+so in fact if we think love
+அதனால் உண்மையில் நாம் காதலிக்கிறேன் என்று நீங்கள் நினைத்தால்
+
+00:41:45,000 --> 00:41:49,000
+a chip tanh Omega as a Fourier transform pair
+ஃபோரியர் ஒரு சிப் TANH ஒமேகா ஜோடி மாற்றும்
+
+00:41:49,000 --> 00:41:53,000
+then is the convolution property that lets us
+பின்னர் எங்களுக்கு உதவும் என்று சுழற்சி சொத்து ஆகிறது
+
+00:41:53,000 --> 00:41:56,000
+quaid this term with
+இந்த கால க்யுட்
+
+00:41:56,000 --> 00:41:59,000
+H Omega so here
+அதனால் இங்கே எச் ஒமேகா
+
+00:41:59,000 --> 00:42:05,000
+were using the convolution property
+சுழற்சி சொத்து பயன்படுத்தி
+
+00:42:05,000 --> 00:42:09,000
+and so we know what the 48 transform
+எனவே நாம் 48 மாற்றும் என்ன
+
+00:42:09,000 --> 00:42:13,000
+or the impulse responses they only one over
+அல்லது அவர்கள் ஒரே ஒரு மேல் உந்துவிசை மறுமொழிகள்
+
+00:42:13,000 --> 00:42:16,000
+J Omega plus a now
+ஜே ஒமேகா மற்றும் ஒரு இப்போது
+
+00:42:16,000 --> 00:42:20,000
+in we may have for example what is in our problem
+நாங்கள் எங்கள் பிரச்சனை என்ன உதாரணமாக தோன்றியிருந்தாலும்
+
+00:42:20,000 --> 00:42:26,000
+instead of getting the frequency response to get the impulse response
+அதற்கு பதிலாக உந்துவிசை பதிலை பெற அதிர்வெண் மறுமொழி பெறுவதில்
+
+00:42:26,000 --> 00:42:30,000
+and there are a variety of ways that we can't do this we can attempt to go
+நாம் இதை செய்ய முடியாது என்று பல்வேறு வழிகளில் உள்ளன நாம் செல்ல முயற்சிக்க முடியும்
+
+00:42:30,000 --> 00:42:33,000
+through the inverse Fourier transform expression
+தலைகீழ் ஃபோரியர் மூலம் வெளிப்பாடு மாற்றும்
+
+00:42:33,000 --> 00:42:38,000
+but in fact one of the most useful ways is their formally called
+ஆனால் உண்மையில் மிகவும் பயனுள்ளதாக வழிகளில் ஒன்று தங்கள் முறையாக என்று ஆகிறது
+
+00:42:38,000 --> 00:42:41,000
+the inspection method informally
+ஆய்வு முறை அறிவிக்கப்படாத
+
+00:42:41,000 --> 00:42:46,000
+its called if you work that out going one way
+நீங்கள் வெளியே ஒரு வழி சென்று வேலை என்றால், அதன் என்று
+
+00:42:46,000 --> 00:42:49,000
+then you ought to remember the answer so that you know how to get back
+நீங்கள் மீண்டும் பெற எப்படி தெரியும் என்று பதில் நினைவில் கொள்ள வேண்டும்
+
+00:42:49,000 --> 00:42:52,000
+method so what that says is
+முறை என்று கூறுகிறார்
+
+00:42:52,000 --> 00:42:58,000
+remember dead we worked an example and in fact I showed you the example
+இறந்த நினைவில் நாம் ஒரு எடுத்துக்காட்டாக வேலை மற்றும் உண்மையில் நான் நீங்கள் எடுத்துக்காட்டாக காட்டியது
+
+00:42:58,000 --> 00:43:01,000
+earlier in the lecture that
+முந்தைய விரிவுரையில் என்று
+
+00:43:01,000 --> 00:43:04,000
+the Fourier transform a view to the minus eighty times a step
+ஃபோரியர் கழித்து எண்பது முறை ஒரு படி ஒரு பார்வை மாற்றும்
+
+00:43:04,000 --> 00:43:07,000
+is one over J Omega plus a
+ஜே ஒமேகா மீது ஒரு பிளஸ் ஆகிறது
+
+00:43:07,000 --> 00:43:13,000
+so what is the inverse Fourier transform a 1-over J Omega plus a
+அதனால் என்ன தலைகீழ் ஃபோரியர் ஆகிறது ஒரு ஜே ஒமேகா 1 வழங்கல் பிளஸ்
+
+00:43:13,000 --> 00:43:17,000
+well ants need to the minus eighty
+அதே எறும்புகள் கழித்து எண்பது வேண்டும்
+
+00:43:17,000 --> 00:43:20,000
+times unit step
+முறை அலகு படி
+
+00:43:20,000 --> 00:43:26,000
+and that's just simply remembering in essence this particular transformed pier
+என்று வெறுமனே சாராம்சத்தில் இந்த குறிப்பிட்ட மாற்றம் பையர் நினைவில்
+
+00:43:26,000 --> 00:43:30,000
+well I've drawn graphically
+நான் வரைபட வரையப்பட்ட
+
+00:43:30,000 --> 00:43:36,000
+the magnitude of the Fourier transform here
+ஃபோரியர் அளவில் இங்கே மாற்றும்
+
+00:43:36,000 --> 00:43:41,000
+and below it we have the impulse response
+அதை கீழே நாம் உந்துவிசை பதில் இல்லை
+
+00:43:41,000 --> 00:43:46,000
+the apostle spines is as I just indicated either -80
+நான் குறிப்பிட்டது ஒன்று -80 என இறைத்தூதர் தண்டை ஆகிறது
+
+00:43:46,000 --> 00:43:51,000
+times you see now let's go back up and look at
+நீங்கள் இப்போது பார்க்க முறை மீண்டும் சென்று பார்க்க வேண்டும்
+
+00:43:51,000 --> 00:43:56,000
+the magnitude over the frequency response
+அதிர்வெண் மறுமொழி மீது அளவு
+
+00:43:56,000 --> 00:44:00,000
+and given just a little bit of discussion that we had
+நாம் என்று விவாதம் சிறிது கொடுக்கப்பட்ட
+
+00:44:00,000 --> 00:44:04,000
+previously about filtering you should be able to
+முன்பு வடிகட்டி பற்றி நீங்கள் முடியும்
+
+00:44:04,000 --> 00:44:09,000
+in for something about the filtering characteristics
+வடிகட்டி பண்புகள் பற்றி ஏதாவது உள்ள
+
+00:44:09,000 --> 00:44:14,000
+love this simple first-order differential equation
+இந்த எளிய முதல் வரிசை வகையீட்டு சமன்பாடு பிடிக்கிறது
+
+00:44:14,000 --> 00:44:17,000
+in particular if you look at that frequency response
+குறிப்பாக நீங்கள் அதிர்வெண் மறுமொழி பாருங்கள்
+
+00:44:17,000 --> 00:44:22,000
+the frequency response falls off with frequency and so it tends to do
+அதிர்வெண் மறுமொழி அதிர்வெண் விழுந்தது அது செய்ய முனைகிறது
+
+00:44:22,000 --> 00:44:26,000
+is attenuate high frequencies and
+உயர் அலைவரிசைகளை வீரியத்தை மற்றும்
+
+00:44:26,000 --> 00:44:29,000
+retain low frequencies so in fact
+குறைந்த அதிர்வெண்கள் தக்கவைத்து அதனால் உண்மையில்
+
+00:44:29,000 --> 00:44:33,000
+you could think of the defocus saying that we did on
+நாம் அன்று செய்தது என்று defocus யோசிக்க முடிந்தது
+
+00:44:33,000 --> 00:44:37,000
+the imager for EA you could think if that approximately as
+ஈ.ஏ. பிம்பத்திற்கு நீங்கள் யோசிக்க முடியும் என்று தோராயமாக என்றால்
+
+00:44:37,000 --> 00:44:40,000
+similar to the kind of filtering action that you would get
+நீங்கள் கிடைக்கும் என்று வடிகட்டி நடவடிக்கை வகையான ஒத்த
+
+00:44:40,000 --> 00:44:46,000
+by passing a signal through a first-order differential equation
+முதல் வரிசை வகையீட்டு சமன்பாடு மூலம் ஒரு சமிக்ஞை கடந்து
+
+00:44:46,000 --> 00:44:50,000
+okay now just illustrate in one
+சரி, இப்போது ஒரு விளக்குவதற்கு
+
+00:44:50,000 --> 00:44:55,000
+additional step in both evaluating inverse transforms and using Fourier
+இரு தலைகீழ் மாற்றங்கள் மதிப்பீடு மற்றும் ஃபோரியர் பயன்படுத்தி கூடுதல் படி
+
+00:44:55,000 --> 00:44:57,000
+transform properties
+பண்புகள் மாற்றும்
+
+00:44:57,000 --> 00:45:01,000
+to solve a near constant coefficient differential equations
+ஒரு இடைவிடாத குணகம் வகைக்கெழு சமன்பாடுகள் தீர்க்க
+
+00:45:01,000 --> 00:45:05,000
+let's take this same example and rather
+மாறாக இந்த அதே எடுத்துக்காட்டாக எடுத்து கொள்வோம்
+
+00:45:05,000 --> 00:45:09,000
+then finding the impulse response let's find the response
+பின்னர் உந்துவிசை பதில் கண்டுபிடித்து பதில் தேடட்டும்
+
+00:45:09,000 --> 00:45:12,000
+to another exponential input
+மற்றொரு அதிவேகமான உள்ளீடு
+
+00:45:12,000 --> 00:45:15,000
+now we could of course do that using the convolution integral we just got the
+இப்போது நாம் நிச்சயமாக ஒருங்கிணைந்த சுழற்சி பயன்படுத்தி செய்ய முடியும் என்று நாம் தான் கிடைத்தது
+
+00:45:15,000 --> 00:45:18,000
+impulse response so we can put that
+உந்துவிசை பதில் நாம் அந்த வைக்க முடியாது
+
+00:45:18,000 --> 00:45:22,000
+through the convolution integral to get the response to this input
+இந்த உள்ளீடு பதிலை பெற ஒருங்கிணைந்த சுழற்சி மூலம்
+
+00:45:22,000 --> 00:45:28,000
+but let's do it instead by going back to the differential equation
+ஆனால் வகையீட்டு சமன்பாடு மீண்டும் செல்வதன் மூலம் அதற்கு பதிலாக அதை செய்வோம்
+
+00:45:28,000 --> 00:45:33,000
+and so here i'm taking a differential equation
+அதனால் இங்கே நான் ஒரு வகையீட்டு சமன்பாடு செல்கிறேன்
+
+00:45:33,000 --> 00:45:36,000
+all choose just to have some numbers to work with
+அனைத்து வேலை சில எண்கள் தேர்வு
+
+00:45:36,000 --> 00:45:39,000
+a equal to 2 and now
+இப்போது ஒரு 2 சமமாக மற்றும்
+
+00:45:39,000 --> 00:45:44,000
+I'll choose an exponential on the right hand side either minus tee times you
+நான் ஒன்று வலது புறத்தில் அதிவேகமான தேர்வு கழித்து டி முறை நீங்கள் வேண்டும்
+
+00:45:44,000 --> 00:45:46,000
+have t
+சிங்கள,
+
+00:45:46,000 --> 00:45:52,000
+and again we for EA transform the equation
+மீண்டும் ஈ.ஏ. நாம் சமன்பாடு மாற்றும்
+
+00:45:52,000 --> 00:45:55,000
+and we can remember
+நாம் நினைவில் கொள்ள முடியும்
+
+00:45:55,000 --> 00:45:59,000
+this particular Fourier transform pair it's just the one who worked out
+இந்த குறிப்பிட்ட ஃபோரியர் ஜோடி மாற்றும் அதை வெளியே வேலை என்று நான் ஒன்று தான்
+
+00:45:59,000 --> 00:46:03,000
+previously now with a equal to 1 clearly we're getting a lot of mileage out of
+முன்பு இப்போது 1 ஒரு சம தெளிவாக நாம் வெளியே மைலேஜ் நிறைய வருகிறோம்
+
+00:46:03,000 --> 00:46:05,000
+that example
+எடுத்துக்காட்டாக
+
+00:46:05,000 --> 00:46:11,000
+and now if we wanted determine what the output why if he is
+இப்போது நாம் வெளியீடு ஏன் என்றால் என்ன என்பதை தீர்மானிக்க வேண்டும் என்றால்
+
+00:46:11,000 --> 00:46:15,000
+we can't do that by solving for Y Omega
+நாம் ஒய் ஒமேகா தீர்க்கும் செய்ய முடியாது
+
+00:46:15,000 --> 00:46:18,000
+and then generating the inverse Fourier transform
+பின்னர் தலைகீழ் ஃபோரியர் உருவாக்கும்
+
+00:46:18,000 --> 00:46:21,000
+well what's all this algebraically for y Omega
+நன்றாக இந்த தான் அல்ஜிப்ரா Y ஒமேகா
+
+00:46:21,000 --> 00:46:25,000
+and and that gets us to this expression
+மற்றும் இந்த வெளிப்பாடு நமக்கு கிடைக்கிறது
+
+00:46:25,000 --> 00:46:31,000
+and this is not a Fourier transform that we've worked out before
+இந்த ஃபோரியர் நாம் முன் வேலை செய்த மாற்றும் அல்ல
+
+00:46:31,000 --> 00:46:34,000
+and this is have the second part to the
+இந்த இரண்டாவது பகுதியாக உள்ளது
+
+00:46:34,000 --> 00:46:39,000
+inspection procedure what we have is a forty a transform which is a product
+நாம் என்ன ஆய்வு செயல்முறை ஒரு தயாரிப்பு இது மாற்றும் ஒரு நாற்பது ஆகிறது
+
+00:46:39,000 --> 00:46:43,000
+of two turns each of which we can recognize
+நாம் அங்கீகரிக்க முடியும் ஒவ்வொன்றும் இரண்டு திருப்பங்களை
+
+00:46:43,000 --> 00:46:48,000
+and what we can consider doing is expanding that out
+மற்றும் நாம் என்ன செய்து கொள்ள முடியும் என்று விரிவடைந்து வருகிறது
+
+00:46:48,000 --> 00:46:52,000
+in a partial fraction expansion namely as a summer turns
+அதாவது ஒரு கோடை திருப்பங்களை ஒரு பகுதி பகுதியை விரிவாக்கம்
+
+00:46:52,000 --> 00:46:56,000
+because the lady arity property associated with the 48 transform
+48 தொடர்புடைய பெண் உறுப்பின் எண் மாற்றம் சொத்து ஏனெனில்
+
+00:46:56,000 --> 00:47:00,000
+the inverse transform is then the song the inverse transform movie to those
+தலைகீழ், பின்னர் தலைகீழ் அந்த படம் மாற்றும் பாடல்
+
+00:47:00,000 --> 00:47:03,000
+terms
+விதிமுறைகள்
+
+00:47:03,000 --> 00:47:08,000
+okay so if we expand this out in a partial fraction expansion
+சரி, அதனால் நாம் ஒரு பகுதி பகுதியை விரிவாக்கம் இந்த விஸ்தரிக்க
+
+00:47:08,000 --> 00:47:11,000
+and you can just verify that
+நீங்கள் தான் என்று சரிபார்க்க முடியும்
+
+00:47:11,000 --> 00:47:15,000
+if you add these two together you get back to where we started
+நீங்கள் இருவரும் இந்த இரண்டு சேர்க்க நீங்கள் மீண்டும் நாம் தொடங்கிய பெற
+
+00:47:15,000 --> 00:47:20,000
+we now have the sum of two terms
+நாம் இப்போது இரண்டு சொற்கள் தொகை வேண்டும்
+
+00:47:20,000 --> 00:47:25,000
+and if we now recognized by inspection
+நாம் இப்போது ஆய்வு அங்கீகரிக்கப்பட்ட என்றால்
+
+00:47:25,000 --> 00:47:30,000
+the inverse Fourier transform love this we see that it simply
+தலைகீழ் ஃபோரியர் காதல் மாற்றும் இந்த நாம் பார்க்கிறோம் என்று அது வெறுமனே
+
+00:47:30,000 --> 00:47:34,000
+minus either -2 TV times the unit step
+கழித்தல் ஒன்று -2 தொலைக்காட்சி முறை அலகு படி
+
+00:47:34,000 --> 00:47:38,000
+this one is plus either the minus the times a unit step
+இந்த ஒரு பிளஸ் ஆகும் அல்லது கழித்தல் முறை ஒரு அலகு படி
+
+00:47:38,000 --> 00:47:41,000
+and so in fact it's the summer these two terms
+அதனால் உண்மையில் இது கோடை இந்த இரண்டு சொற்களை தான்
+
+00:47:41,000 --> 00:47:46,000
+which are the inverse transforms up the
+தலைகீழ் வரை உருமாறும் இது
+
+00:47:46,000 --> 00:47:50,000
+individual turns in a partial fraction expansion
+ஒரு பகுதி பகுதியை விரிவாக்கம் தனிப்பட்ட திருப்பங்களை
+
+00:47:50,000 --> 00:47:56,000
+that then give us the for EA transform
+என்று பின்னர் எங்களுக்கு கொடுக்க ஈ.ஏ. மாற்றும் ஒரு
+
+00:47:56,000 --> 00:47:59,000
+all y ft
+அனைத்து Y அடி
+
+00:47:59,000 --> 00:48:03,000
+her I'm sorry for her rather the output
+அவளை நான் மாறாக வெளியீடு அவளை வருந்துகிறேன்
+
+00:48:03,000 --> 00:48:07,000
+so this is a gypsy that this is why if the
+இந்த ஏன் என்றால் இந்த என்று ஒரு ஜிப்சி ஆகிறது
+
+00:48:07,000 --> 00:48:10,000
+which is the summer these two exponentials and this
+இது கோடை இந்த இரண்டு நிகழ்வுஎண் மற்றும் இந்த
+
+00:48:10,000 --> 00:48:13,000
+is the inverse Fourier transform
+தலைகீழ் ஃபோரியர் ஆகிறது
+
+00:48:13,000 --> 00:48:20,000
+love y Omega as we calculated it previously
+நாம் முன்னர் அது கணக்கி ஒய் ஒமேகா பிடிக்கிறது
+
+00:48:20,000 --> 00:48:24,000
+okay well hopefully you're beginning to get some sense now
+சரி, சரி, வட்டம் நீங்கள் இப்போது சில உணர்வு பெற தொடங்கி
+
+00:48:24,000 --> 00:48:27,000
+love how powerful and also beautiful
+அன்பு எவ்வளவு சக்தி வாய்ந்த மற்றும் அழகான
+
+00:48:27,000 --> 00:48:31,000
+the 48 transform is we've seen already that
+48 மாற்றும் நாம் ஏற்கனவே பார்த்த
+
+00:48:31,000 --> 00:48:34,000
+a glimpse or how it plays a role in
+ஒரு பார்வை அல்லது அதை எப்படி ஒரு பங்கை
+
+00:48:34,000 --> 00:48:38,000
+filtering modulation how its properties helpless with linear constant
+வடிகட்டி பண்பேற்றம் எப்படி நேரியல் நிலையான ஆதரவற்று அதன் பண்புகள்
+
+00:48:38,000 --> 00:48:43,000
+coefficient differential equations et cetera
+குணகம் வகைக்கெழு சமன்பாடுகள் மற்றும்
+
+00:48:43,000 --> 00:48:46,000
+what we will do
+நாம் என்ன
+
+00:48:46,000 --> 00:48:49,000
+beginning with the next lecture is develop
+அடுத்த விரிவுரை தொடங்கி உருவாக்க ஆகிறது
+
+00:48:49,000 --> 00:48:53,000
+a similar set of tools for the discrete-time case and there are
+இதே போன்ற ஒரு தனி நேரம் வழக்கு கருவிகள் தொகுப்பில் உள்ளன
+
+00:48:53,000 --> 00:48:58,000
+some very strong similarities to what we've done a continuous-time also some
+நாங்கள் ஒரு தொடர்ச்சியான நேரம் என்ன செய்தேன் என்பதை சில மிகவும் வலுவான ஒற்றுமைகள் சில
+
+00:48:58,000 --> 00:49:00,000
+very important differences
+மிகவும் முக்கியமான வேறுபாடுகள்
+
+00:49:00,000 --> 00:49:04,000
+and then after we have the continuous-time and discrete-time
+மற்றும் நாம் தொடர்ச்சியான நேரம் மற்றும் தனி நேரம் கழித்து
+
+00:49:04,000 --> 00:49:06,000
+Fourier transforms
+ஃபோரியர் நிலைமாற்றங்கள்
+
+00:49:06,000 --> 00:49:10,000
+will then see how the concepts
+பின்னர் எப்படி கருத்துக்கள் பார்க்கும்
+
+00:49:10,000 --> 00:49:13,000
+involved in the properties involved leads to
+வழிவகுக்கிறது தொடர்பு பண்புகள் தொடர்பு
+
+00:49:13,000 --> 00:49:17,000
+very important powerful notions love filtering
+மிக முக்கியமான சக்திவாய்ந்த கருத்துக்களை வடிகட்டி அன்பு
+
+00:49:17,000 --> 00:49:20,000
+modulation sampling and other
+பண்பேற்றம் மாதிரி மற்றும் பிற
+
+00:49:20,000 --> 00:49:22,000
+signal processing ideas thank you
+சமிக்ஞை செயலாக்க கருத்துக்கள் நன்றி
+

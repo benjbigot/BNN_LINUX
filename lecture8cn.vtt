@@ -1,0 +1,2176 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+以下内容是根据Creative Commons授权提供
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+您的支持将有助于麻省理工学院开放式课程继续报价
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+免费优质教育资源
+
+00:00:10,000 --> 00:00:15,000
+to make a donation or view additional materials from 100 to them IT courses
+进行捐赠或查看其他材料从100到他们的IT课程
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+参观麻省理工学院开放式课程在0 CW
+
+00:00:18,000 --> 00:00:20,000
+that MIT ided you
+麻省理工学院被提供的你
+
+00:00:20,000 --> 00:00:27,000
+home for
+回家
+
+00:00:31,000 --> 00:00:35,000
+the
+该
+
+00:00:35,000 --> 00:00:38,000
+in
+
+
+00:00:38,000 --> 00:00:41,000
+in
+
+
+00:00:41,000 --> 00:00:48,000
+the No
+否
+
+00:00:49,000 --> 00:00:56,000
+for last time
+对于最后一次
+
+00:00:57,000 --> 00:01:02,000
+we began to address the issue a building continuous-time signals out a linear
+我们开始解决这一问题的建筑物连续时间信号输出的线性
+
+00:01:02,000 --> 00:01:04,000
+combination of complex exponentials
+复指数组合
+
+00:01:04,000 --> 00:01:08,000
+and for the class a periodic signals
+和该类的周期信号
+
+00:01:08,000 --> 00:01:13,000
+specifically what this led to was the Fourier series representation
+具体是什么，这导致了傅里叶级数表示
+
+00:01:13,000 --> 00:01:16,000
+for periodic signals let me just summarize
+对于周期信号让我总结
+
+00:01:16,000 --> 00:01:19,000
+the result that we develop last time for
+我们开发的最后一次结果
+
+00:01:19,000 --> 00:01:23,000
+periodic signals we had the continuous-time for you
+我们有连续时间为您周期信号
+
+00:01:23,000 --> 00:01:26,000
+for a series where we built
+对于一个系列赛里，我们建立
+
+00:01:26,000 --> 00:01:30,000
+the periodic signal I dove a linear combination
+周期信号我鸽子的线性组合
+
+00:01:30,000 --> 00:01:34,000
+love harmonically related complex exponentials
+爱谐波相关复指数
+
+00:01:34,000 --> 00:01:38,000
+and what that led to was what we refer to as
+什么导致了我们所说的
+
+00:01:38,000 --> 00:01:42,000
+the synthesis equation and we
+合成公式，我们
+
+00:01:42,000 --> 00:01:46,000
+briefly address the issue love when this in fact bills
+简单地处理这个问题时，爱情这其实票据
+
+00:01:46,000 --> 00:01:51,000
+when this in fact is a complete representation at the periodic signal
+这时候，其实是在周期信号的完整表示
+
+00:01:51,000 --> 00:01:55,000
+and in essence what we presented was
+而在本质上，我们提出了什么是
+
+00:01:55,000 --> 00:01:59,000
+conditions either Forex city being square integrable
+条件或者外汇的城市是平方可积
+
+00:01:59,000 --> 00:02:02,000
+or X-eighty being absolutely inevitable
+或X-80是绝对不可避免
+
+00:02:02,000 --> 00:02:05,000
+then the other cited the for a series
+然后将另一引为一系列
+
+00:02:05,000 --> 00:02:09,000
+is what I refer to as the analysis equation
+就是我称之为的分析方程
+
+00:02:09,000 --> 00:02:13,000
+and the analysis equation was the equation the told us how
+和分析方程是告诉我们怎样方程
+
+00:02:13,000 --> 00:02:17,000
+we yet the forty a series coefficients
+我们尚未四十一系列系数
+
+00:02:17,000 --> 00:02:20,000
+from x50 and so this equation
+从50倍，因此该方程
+
+00:02:20,000 --> 00:02:24,000
+together with the synthesis equation represent
+连同合成方程表示
+
+00:02:24,000 --> 00:02:27,000
+the forty a series description for periodic signals
+四十一系列描述周期信号
+
+00:02:27,000 --> 00:02:31,000
+now we'd like to do is
+现在我们想要做的是
+
+00:02:31,000 --> 00:02:35,000
+extend this idea to provide a mechanism
+扩展这一想法提供了一种机制
+
+00:02:35,000 --> 00:02:40,000
+for building not periodic signals also I have a linear combination
+为建设不是周期信号还我一个线性组合
+
+00:02:40,000 --> 00:02:43,000
+complex exponentials and the
+复指数和
+
+00:02:43,000 --> 00:02:47,000
+basic idea behind doing this is very simple
+这样做背后的基本想法很简单
+
+00:02:47,000 --> 00:02:51,000
+and also very clever as i indicated last time essentially
+也正如我最后一次基本上是很聪明
+
+00:02:51,000 --> 00:02:57,000
+the thought is the following if we have a non periodic signal or a periodic
+思想是下列如果我们有一个非周期信号或周期
+
+00:02:57,000 --> 00:02:57,000
+signal
+信号
+
+00:02:57,000 --> 00:03:01,000
+we can think love constructing a periodic signal
+我们可以认为爱情构建周期信号
+
+00:03:01,000 --> 00:03:05,000
+by simply periodically replicating
+通过简单的复制周期
+
+00:03:05,000 --> 00:03:08,000
+that a periodic signal so
+一个周期信号，以便
+
+00:03:08,000 --> 00:03:12,000
+for example if I have in a periodic signal
+举例来说，如果我有一个周期信号
+
+00:03:12,000 --> 00:03:16,000
+as i've indicated here I can consider
+因为我已经在这里表示我可以考虑
+
+00:03:16,000 --> 00:03:19,000
+building a periodic signal where
+构建一个周期信号，其中
+
+00:03:19,000 --> 00:03:22,000
+I simply take this original signal
+我只是借此原始信号
+
+00:03:22,000 --> 00:03:26,000
+and repeated at multiples love some period t0
+并重复倍数爱一段时间T0
+
+00:03:26,000 --> 00:03:30,000
+now two things to recognize about this one
+现在两件事情认识到这一个
+
+00:03:30,000 --> 00:03:34,000
+is that the periodic signal
+是周期信号
+
+00:03:34,000 --> 00:03:37,000
+is equal to the a periodic signal
+等于一个周期信号
+
+00:03:37,000 --> 00:03:42,000
+over one period and the second is that as the period
+在一个周期内，第二个是，随着时间
+
+00:03:42,000 --> 00:03:45,000
+goes to infinity then in fact
+趋于无穷那么实际上
+
+00:03:45,000 --> 00:03:50,000
+the periodic signal goes to
+周期信号变为
+
+00:03:50,000 --> 00:03:53,000
+the a periodic signal so
+的周期信号，以便
+
+00:03:53,000 --> 00:03:56,000
+the basic idea then is
+其基本思想是那么
+
+00:03:56,000 --> 00:04:00,000
+to use the free a series to represent
+使用游离的一系列代表
+
+00:04:00,000 --> 00:04:05,000
+the periodic signal and then examine the 4e a serious expression
+周期信号，然后检查4E严肃的表情
+
+00:04:05,000 --> 00:04:09,000
+as we let the period go to infinity well
+当我们让期间去无限好
+
+00:04:09,000 --> 00:04:13,000
+let's quickly see how this develops
+让我们赶紧看看这是如何发展
+
+00:04:13,000 --> 00:04:16,000
+interns up the Associated equations here
+实习生在这里的关联方程
+
+00:04:16,000 --> 00:04:19,000
+again we have the periodic
+再次，我们有定期
+
+00:04:19,000 --> 00:04:24,000
+signal and what we want to inquire
+信号和我们所希望来电咨询
+
+00:04:24,000 --> 00:04:29,000
+into is what happens to the forty a serious expression for this
+到是发生了40什么是严肃的表情对本
+
+00:04:29,000 --> 00:04:33,000
+as we let the period go to infinity as that happens
+当我们让期间去无穷大的情况发生
+
+00:04:33,000 --> 00:04:36,000
+whatever for a series representation we end up with
+任何一个系列的代表性，我们结束了
+
+00:04:36,000 --> 00:04:41,000
+will correspond also to a representation for this a periodic signal
+也将对于这一周期信号对应的表示
+
+00:04:41,000 --> 00:04:45,000
+well let's see the forty a series
+那么让我们来看看40系列
+
+00:04:45,000 --> 00:04:50,000
+synthesis expressions for the periodic signal expresses
+为周期信号表示的合成表达式
+
+00:04:50,000 --> 00:04:54,000
+extol dirty the periodic signal as a linear combination
+吹捧脏的周期信号为一个线性组合
+
+00:04:54,000 --> 00:04:58,000
+of harmonically related complex exponentials
+的谐波相关复指数
+
+00:04:58,000 --> 00:05:01,000
+with the fundamental frequency Omega 0
+与基本频率欧米茄0
+
+00:05:01,000 --> 00:05:05,000
+equal to 25 divided by the period and
+等于25的期间分割
+
+00:05:05,000 --> 00:05:08,000
+the analysis equation tells us
+分析方程告诉我们
+
+00:05:08,000 --> 00:05:13,000
+what the relationship is for the coefficients
+的关系是什么的系数
+
+00:05:13,000 --> 00:05:17,000
+interns are the periodic signal now I indicated
+实习生周期信号现在我表示
+
+00:05:17,000 --> 00:05:21,000
+that the periodic signal and the a periodic signal
+该周期信号和周期信号
+
+00:05:21,000 --> 00:05:24,000
+are equal over one period we recognize
+等于在我们认识一个周期
+
+00:05:24,000 --> 00:05:29,000
+that this integration in fact only occurs over one period
+这种融合实际上只发生在一个周期内
+
+00:05:29,000 --> 00:05:32,000
+and so we can really express this interns
+所以我们可以真正表达这个实习生
+
+00:05:32,000 --> 00:05:37,000
+all our original a periodic signal so this tells us the for a series
+我们所有的原始周期信号所以这告诉我们一个系列
+
+00:05:37,000 --> 00:05:38,000
+coefficients
+系数
+
+00:05:38,000 --> 00:05:42,000
+interns affect safety
+实习生影响安全
+
+00:05:42,000 --> 00:05:45,000
+okay now
+现在没事了
+
+00:05:45,000 --> 00:05:50,000
+if in we look at this expression which is the expression for the 4e
+如果我们看一下这个表达式是为4E的表达
+
+00:05:50,000 --> 00:05:55,000
+coefficients the a periodic signal one other things to recognize
+系数的周期信号一个其他的东西来识别
+
+00:05:55,000 --> 00:05:59,000
+is dead in effect what
+是死在什么效果
+
+00:05:59,000 --> 00:06:02,000
+this represents are samples
+这代表的样本
+
+00:06:02,000 --> 00:06:06,000
+all an integral where
+所有的组成，其中
+
+00:06:06,000 --> 00:06:09,000
+we can think all the variable Omega
+我们可以认为所有的变量欧米茄
+
+00:06:09,000 --> 00:06:13,000
+taking on values better integer multiples
+服用价值观更好的整数倍
+
+00:06:13,000 --> 00:06:19,000
+Omega 0 said another way let's define a function as i've indicated here
+欧米茄0表示另一种方式让我们定义一个函数，因为我已经在这里表示
+
+00:06:19,000 --> 00:06:22,000
+which is this in a brawl where
+这是本在争吵的地方
+
+00:06:22,000 --> 00:06:26,000
+and we may think it will make a as being a continuous variable
+我们可能会认为这将使作为一个连续变量
+
+00:06:26,000 --> 00:06:30,000
+and then the forty a series coefficients correspond
+然后在40的一系列系数对应
+
+00:06:30,000 --> 00:06:33,000
+to substituting Omega
+以取代欧米茄
+
+00:06:33,000 --> 00:06:37,000
+is for Omega K
+是欧米茄K表
+
+00:06:37,000 --> 00:06:43,000
+Omega 0 now one reason for doing that as we'll see is that in fact
+欧米茄0现在其中一个原因，这样做，因为我们将看到的是，其实
+
+00:06:43,000 --> 00:06:47,000
+this will turn out to provide us with the mechanism
+这将变成我们提供的机制
+
+00:06:47,000 --> 00:06:50,000
+for forty-a representation affect safety
+四十一表示影响安​​全
+
+00:06:50,000 --> 00:06:54,000
+and this in fact and is an on below
+这实际上，是一个在下面
+
+00:06:54,000 --> 00:06:57,000
+all the four EA series coefficients
+所有四个EA系列系数
+
+00:06:57,000 --> 00:07:02,000
+in other words t0 the period times the coefficients
+换句话说T0的周期乘以系数
+
+00:07:02,000 --> 00:07:06,000
+is equal so this integral at integer multiples
+等于使这个积分的整数倍
+
+00:07:06,000 --> 00:07:10,000
+Omega 0
+欧米茄0
+
+00:07:10,000 --> 00:07:15,000
+okay so this effect tells us how to get the for a series coefficients the
+好了，这个效应告诉我们如何获得的一系列系数
+
+00:07:15,000 --> 00:07:16,000
+periodic signal
+周期信号
+
+00:07:16,000 --> 00:07:22,000
+interns love samples of an envelope and that will become a very important notion
+实习生爱一个信封的样本，这将成为一个非常重要的概念
+
+00:07:22,000 --> 00:07:25,000
+shortly and in
+不久在
+
+00:07:25,000 --> 00:07:29,000
+that in effect will correspond to an analysis equation
+在效果将对应的分析方程
+
+00:07:29,000 --> 00:07:35,000
+to represent the a periodic signal now let's look at the synthesis equation
+现在来表示一个周期信号，让我们看看合成公式
+
+00:07:35,000 --> 00:07:39,000
+group call that in the synthesis our strategy is
+组呼，在合成我们的策略是
+
+00:07:39,000 --> 00:07:43,000
+to build a periodic signal and let the period go to infinite
+建立一个周期信号，让周期去无限
+
+00:07:43,000 --> 00:07:47,000
+well here is the expression
+那么这里是表达式
+
+00:07:47,000 --> 00:07:51,000
+for the synthesis the periodic signal
+用于合成的周期信号
+
+00:07:51,000 --> 00:07:54,000
+now expressed interns
+现在表达实习生
+
+00:07:54,000 --> 00:07:57,000
+I'll samples of this envelope function
+我将在包络函数的样本
+
+00:07:57,000 --> 00:08:03,000
+and where I've simply use the fact that the substitution
+而且在那里我已经简单地用事实替代
+
+00:08:03,000 --> 00:08:08,000
+that t0 is to pile for Omega 0 and so I have an Omega 0 here
+这t0为堆积的欧米茄0，所以我有一个欧米茄0这里
+
+00:08:08,000 --> 00:08:12,000
+and a 1-over to pie and the reason for doing that
+和一个1以上至馅饼和这样做的原因
+
+00:08:12,000 --> 00:08:16,000
+as we'll see in a minute is that this then turns into an integral
+我们将在一分钟内看到的是，这则变成一个整体
+
+00:08:16,000 --> 00:08:20,000
+specifically then the synthesis equation
+具体地说然后合成方程
+
+00:08:20,000 --> 00:08:23,000
+that we have is
+我们拥有的是
+
+00:08:23,000 --> 00:08:28,000
+what i've indicated here we would now want to examine this
+我在这里表示我们现在要研究这个
+
+00:08:28,000 --> 00:08:32,000
+as the period goes to infinity which means that
+作为周期为无穷大表示
+
+00:08:32,000 --> 00:08:35,000
+Omega 0 becomes infinitesimally small
+欧米茄0变为无穷小
+
+00:08:35,000 --> 00:08:38,000
+and without dwelling on the details
+并没有纠缠于细节
+
+00:08:38,000 --> 00:08:42,000
+and with my suggesting that you give this a fair amount of reflection
+和我建议你给这个反思相当数量的
+
+00:08:42,000 --> 00:08:47,000
+in fact what happens as the period goes to infinity
+实际上发生了什么的周期趋于无穷
+
+00:08:47,000 --> 00:08:51,000
+is that this some Asian approach is an integral
+是，这一些亚洲的做法是不可分割的
+
+00:08:51,000 --> 00:08:56,000
+over Omega where Omega 0 becomes the differential
+在欧米茄欧米茄的地方变成0差
+
+00:08:56,000 --> 00:08:59,000
+and Omega and the periodic signal of course
+和欧米茄，当然还有周期信号
+
+00:08:59,000 --> 00:09:03,000
+approaches the a periodic sick so
+接近周期性生病了，所以
+
+00:09:03,000 --> 00:09:07,000
+the resulting equation that we get outta
+由此产生的方程，我们得到失控
+
+00:09:07,000 --> 00:09:10,000
+the original for a series synthesis equation
+原为一系列合成公式
+
+00:09:10,000 --> 00:09:14,000
+is the equation
+是方程
+
+00:09:14,000 --> 00:09:17,000
+that I indicate down here X if T
+我指示下这里×如果T
+
+00:09:17,000 --> 00:09:21,000
+synthesized interns all this
+合成实习生这一切
+
+00:09:21,000 --> 00:09:25,000
+integral which is what the forty a series approaches
+积分是什么40了一系列的方法
+
+00:09:25,000 --> 00:09:29,000
+as Omega 0 goes to zero and
+欧米茄0变为零，
+
+00:09:29,000 --> 00:09:32,000
+we had previously that XO maker
+我们此前曾认为XO笔记本电脑制造商
+
+00:09:32,000 --> 00:09:36,000
+was in fact an envelope function
+实际上一个信封功能
+
+00:09:36,000 --> 00:09:41,000
+and we have then the corresponding for EA transform analysis equation
+对EA变换分析的公式，我们已经那么相应的
+
+00:09:41,000 --> 00:09:46,000
+which tells us how we arrive at that envelope
+它告诉我们如何在那个信封到达
+
+00:09:46,000 --> 00:09:50,000
+interns love accept T okay so
+实习生喜欢接受Ŧ这么好吗
+
+00:09:50,000 --> 00:09:53,000
+we now have and analysis equation and
+我们现在已经和分析方程和
+
+00:09:53,000 --> 00:09:57,000
+synthesis equation which in effect expresses 4s
+这实际上表达4S合成公式
+
+00:09:57,000 --> 00:10:01,000
+how to build XFT interns or
+如何建立XFT实习生或
+
+00:10:01,000 --> 00:10:05,000
+if into tears and we finally space complex exponentials
+如果哭了起来，我们终于空间复指数
+
+00:10:05,000 --> 00:10:09,000
+the strategy to review it
+战略进行检讨
+
+00:10:09,000 --> 00:10:12,000
+and which I'd like to illustrate with
+并且我想说明与
+
+00:10:12,000 --> 00:10:16,000
+a succession of overlays was
+覆盖继承了
+
+00:10:16,000 --> 00:10:20,000
+to begin up
+开始了
+
+00:10:20,000 --> 00:10:24,000
+with are a periodic signal as
+同是一个周期性的信号，作为
+
+00:10:24,000 --> 00:10:27,000
+I indicate here
+我在此说明
+
+00:10:27,000 --> 00:10:34,000
+and then reconstructed from that a periodic signal
+然后从该周期信号重构
+
+00:10:34,000 --> 00:10:38,000
+and in this periodic signal has a forty a series
+并且在这种周期性的信号具有40的一系列
+
+00:10:38,000 --> 00:10:42,000
+and we express the for a series coefficients if this
+我们表示为一系列系数，如果这
+
+00:10:42,000 --> 00:10:46,000
+as samples all an envelope function
+作为样本的所有包络函数
+
+00:10:46,000 --> 00:10:50,000
+the envelope function is what I indicate on the curve below
+包络函数是我在下面注明曲线上
+
+00:10:50,000 --> 00:10:54,000
+so this is the envelope above the 40 a series coefficients
+因此，这是上述的40一系列系数的包络
+
+00:10:54,000 --> 00:10:59,000
+for example if the period t0
+例如，如果在期间t0
+
+00:10:59,000 --> 00:11:04,000
+was four times t1 in the 4a series coefficients
+是四时间t1的4A系列系数
+
+00:11:04,000 --> 00:11:07,000
+that we would end up with is this set
+我们将结束与这一套
+
+00:11:07,000 --> 00:11:10,000
+samples of the and below if
+的及以下，如果样品
+
+00:11:10,000 --> 00:11:13,000
+instead we double that period
+相反，我们一倍期
+
+00:11:13,000 --> 00:11:18,000
+then the Fourier series coefficients that we end up with
+那么，我们最终用傅立叶级数的系数
+
+00:11:18,000 --> 00:11:21,000
+are more finally space
+更终于空间
+
+00:11:21,000 --> 00:11:24,000
+and as t0
+和T0
+
+00:11:24,000 --> 00:11:28,000
+continues to increase we get more and more
+不断提高我们得到越来越多的
+
+00:11:28,000 --> 00:11:32,000
+finally space samples love this envelope function
+最后空间的样本喜欢这个包络函数
+
+00:11:32,000 --> 00:11:35,000
+and as t0 goes to infinity in fact what we get
+和T0趋于无穷大，事实上我们得到了什么
+
+00:11:35,000 --> 00:11:40,000
+is every single point on the envelope and that provides is
+是信封上的每一个点，它提供的是
+
+00:11:40,000 --> 00:11:43,000
+with the representation for
+与表示方法
+
+00:11:43,000 --> 00:11:46,000
+the a periodic sick let me just to
+在一个周期生病让我来
+
+00:11:46,000 --> 00:11:49,000
+really emphasize the point
+真正强调的一点
+
+00:11:49,000 --> 00:11:53,000
+show this example once again but now
+再一次，但现在证明这个例子
+
+00:11:53,000 --> 00:11:56,000
+let's look at it dynamically on the computer display
+让我们来看看它动态地在计算机显示器上
+
+00:11:56,000 --> 00:12:00,000
+so here we have the square wave in below it
+所以在这里我们有方形波在其下方
+
+00:12:00,000 --> 00:12:04,000
+the for a series coefficients we now want to look at the for a series
+在为一系列系数，我们现在要看看了一系列
+
+00:12:04,000 --> 00:12:05,000
+coefficients
+系数
+
+00:12:05,000 --> 00:12:12,000
+as the period at the square wave starts to increase
+于方波的周期开始增加
+
+00:12:17,000 --> 00:12:20,000
+and what we see is that these look
+而我们看到的是，这些看起来
+
+00:12:20,000 --> 00:12:23,000
+like samples love an envelope
+像样品爱一个信封
+
+00:12:23,000 --> 00:12:27,000
+and in fact the envelope for the Fourier series coefficients
+而实际上在信封的傅里叶级数的系数
+
+00:12:27,000 --> 00:12:32,000
+is shown in the bottom trace and emphasize in fact that it is the
+显示在底部的痕迹，并强调事实上，它是
+
+00:12:32,000 --> 00:12:32,000
+envelope
+信封
+
+00:12:32,000 --> 00:12:37,000
+let's superimpose it on top of the Fourier series coefficients that we've
+让我们来塞给它，我们已经傅立叶级数系数​​的顶部
+
+00:12:37,000 --> 00:12:44,000
+generated so far
+到目前为止产生
+
+00:12:48,000 --> 00:12:51,000
+okay now let's increase the period
+好吧，现在让我们增加周期
+
+00:12:51,000 --> 00:12:55,000
+even further and we'll see the for a series
+再进一步，我们将看到一个系列
+
+00:12:55,000 --> 00:12:58,000
+coefficients billion under that
+系数十亿根据该
+
+00:12:58,000 --> 00:13:04,000
+envelope function even more and in fact
+包络函数甚至更多，实际上
+
+00:13:04,000 --> 00:13:07,000
+as the period gets large enough what we
+作为周期得到足够大的我们
+
+00:13:07,000 --> 00:13:10,000
+begin to get a sense love is
+开始得到一个感觉就是爱
+
+00:13:10,000 --> 00:13:14,000
+that we're sampling more and more finally
+我们正在取样越来越多的最终
+
+00:13:14,000 --> 00:13:19,000
+this and below and in fact in the limit as the period goes off to infinity
+这一点，下面，实际上在极限的时期熄灭到无限远
+
+00:13:19,000 --> 00:13:23,000
+the samples basically will represent every
+样品基本上将代表每
+
+00:13:23,000 --> 00:13:27,000
+single point on the envelope well this is about as far as you want to go
+信封上的单点嗯，这是你想要去的远
+
+00:13:27,000 --> 00:13:31,000
+let's once again plot the envelope function
+让我们再次绘制包络函数
+
+00:13:31,000 --> 00:13:35,000
+and again to emphasize that we've generated samples a bad
+并再次强调，我们已经生成的样本坏
+
+00:13:35,000 --> 00:13:42,000
+let superimpose that on the forty a series coefficients
+让叠加，关于40系列的系数
+
+00:13:45,000 --> 00:13:48,000
+okay so what we have then is
+好了，我们有什么，然后是
+
+00:13:48,000 --> 00:13:51,000
+now are forty-a transform
+现在四十变换
+
+00:13:51,000 --> 00:13:56,000
+representation the continuous time Fourier transform
+代表连续时间傅里叶变换
+
+00:13:56,000 --> 00:13:59,000
+with the synthesis equation
+与合成方程
+
+00:13:59,000 --> 00:14:03,000
+expressed as an integral as they've indicated here
+表示为一个整​​体，因为他们已经在这里表示
+
+00:14:03,000 --> 00:14:06,000
+and this integral is what
+而这个积分是什么
+
+00:14:06,000 --> 00:14:09,000
+the four th series some went to
+四TH系列有的去了
+
+00:14:09,000 --> 00:14:12,000
+as we let the period go to infinity
+当我们让期间去到无穷大
+
+00:14:12,000 --> 00:14:15,000
+where the frequency go to zero the corresponding
+其中频率变为零的相应
+
+00:14:15,000 --> 00:14:20,000
+analysis equation which we have here the analysis equation
+分析方程，我们这里的分析方程
+
+00:14:20,000 --> 00:14:24,000
+being the expression for the on below
+即用于下面的对表达
+
+00:14:24,000 --> 00:14:27,000
+up to 40 a series coefficients for the periodically
+多达40个的周期性一系列系数
+
+00:14:27,000 --> 00:14:32,000
+replicated signal and in shorthand notation
+复制信号和速记符号
+
+00:14:32,000 --> 00:14:34,000
+we would think affects if T
+我们认为影响如果T
+
+00:14:34,000 --> 00:14:38,000
+and its Fourier transform as a pair
+其傅立叶变换为一对
+
+00:14:38,000 --> 00:14:42,000
+as i've indicated here and the Fourier transform
+因为我已经在这里显示出来，而傅立叶变换
+
+00:14:42,000 --> 00:14:47,000
+as will emphasize in several examples and certainly
+如将着重于几个例子，当然
+
+00:14:47,000 --> 00:14:51,000
+as is consistent with the forty a series is
+为的是与40系列是一致的
+
+00:14:51,000 --> 00:14:56,000
+a complex value function even when accepting israel's so would accept the
+一个复杂的价值函数，即使接受以色列这样会接受
+
+00:14:56,000 --> 00:14:57,000
+real
+实
+
+00:14:57,000 --> 00:15:01,000
+we end up with the 48 transform which is a complex function
+我们最终的48转换这是一个复杂的函数
+
+00:15:01,000 --> 00:15:05,000
+just as the for you series coefficients were complex
+正如你级数的系数是复杂的
+
+00:15:05,000 --> 00:15:08,000
+for real value time function
+对于真正的价值时间函数
+
+00:15:08,000 --> 00:15:12,000
+so we could alternatively as with the 4e a series
+所以我们可以替换为与4E系列
+
+00:15:12,000 --> 00:15:15,000
+express the Fourier transform it turns
+表示傅里叶变换它变成
+
+00:15:15,000 --> 00:15:19,000
+love its real part an imaginary part
+喜欢它的实部虚部
+
+00:15:19,000 --> 00:15:22,000
+or alternatively interns
+或交替实习生
+
+00:15:22,000 --> 00:15:28,000
+love its magnet to and its angle
+喜欢它的磁铁和角度
+
+00:15:28,000 --> 00:15:31,000
+all right now let's look at an example
+好吧，现在让我们来看一个例子
+
+00:15:31,000 --> 00:15:35,000
+love a time function and its Fourier transform
+爱一个时间函数及其傅立叶变换
+
+00:15:35,000 --> 00:15:38,000
+and so let's consider
+所以让我们来考虑
+
+00:15:38,000 --> 00:15:41,000
+an example which in fact is an example worked out in the tax that's
+一个例子，它其实就是一个例子在税收这就是制定出
+
+00:15:41,000 --> 00:15:46,000
+example 4.7 tax and missus are all familiar friend
+例如4.7税务和太太都是熟悉的朋友
+
+00:15:46,000 --> 00:15:49,000
+the exponential
+指数
+
+00:15:49,000 --> 00:15:54,000
+its Fourier transform is the integral from minus infinity plus infinity X
+它的傅里叶变换是从负无穷正无穷X中的积分
+
+00:15:54,000 --> 00:15:54,000
+thirty
+三十
+
+00:15:54,000 --> 00:15:58,000
+either the minus J Omega TDT and
+无论是零下Ĵ欧米茄TDT和
+
+00:15:58,000 --> 00:16:02,000
+so if we substitute in exit to the and
+因此，如果我们退出在替换的和
+
+00:16:02,000 --> 00:16:07,000
+combine these two exponentials together these two exponentials
+结合这两个指数函数一起这两个指数函数
+
+00:16:07,000 --> 00:16:11,000
+combined are he to the minus the
+结合是他对减去
+
+00:16:11,000 --> 00:16:15,000
+times a-plus jail mega and
+次A-Plus和大型监狱
+
+00:16:15,000 --> 00:16:18,000
+if we carry out the integration
+如果我们进行了整合
+
+00:16:18,000 --> 00:16:22,000
+love this we end up with the expression
+喜欢这个，我们最终与表达
+
+00:16:22,000 --> 00:16:25,000
+indicated here and provided
+此处显示和提供
+
+00:16:25,000 --> 00:16:28,000
+now in this is important provided
+现在这是很重要的提供
+
+00:16:28,000 --> 00:16:32,000
+that a is greater than 0
+a是大于0的
+
+00:16:32,000 --> 00:16:36,000
+and at the upper limit this exponential become 0
+并且在上限这种指数变为0
+
+00:16:36,000 --> 00:16:39,000
+at the lower limit of course it's one and so
+在过程的下限是1，所以
+
+00:16:39,000 --> 00:16:43,000
+what we have finally is the for the
+我们所拥有的最后是对的
+
+00:16:43,000 --> 00:16:47,000
+Fourier transform expression one over a plus
+傅里叶变换表情一个比一个加号
+
+00:16:47,000 --> 00:16:52,000
+jail make
+监狱化妆
+
+00:16:52,000 --> 00:16:56,000
+okay now this Fourier transform as i indicated
+还好现在这个傅立叶变换正如我
+
+00:16:56,000 --> 00:16:59,000
+is a complex valued function let's just
+是一个复值函数让我们只
+
+00:16:59,000 --> 00:17:02,000
+take a look at what it looks like graphically
+来看看它是什么样子图形
+
+00:17:02,000 --> 00:17:06,000
+we have
+我们有
+
+00:17:06,000 --> 00:17:10,000
+the expression the Fourier transform pair
+表达式中的傅立叶变换对
+
+00:17:10,000 --> 00:17:15,000
+either the minus eighty times a step and its forty-eight transformers one over
+无论是零下80倍迈出的一步，其48变压器一结束
+
+00:17:15,000 --> 00:17:18,000
+a place J Omega and I indicated
+一个地点j欧米茄和我表示
+
+00:17:18,000 --> 00:17:21,000
+dead that's true for a greater than 0
+死了这是真的为大于0
+
+00:17:21,000 --> 00:17:25,000
+now in the expression that we just worked out
+现在，我们刚刚制定了表达
+
+00:17:25,000 --> 00:17:30,000
+if a is less than 0 in fact the
+如果a小于0实际上
+
+00:17:30,000 --> 00:17:33,000
+the expression doesn't converge the
+表达不收敛的
+
+00:17:33,000 --> 00:17:37,000
+to the -84 a negative
+到-84负
+
+00:17:37,000 --> 00:17:40,000
+as he goes to infinity blows up
+当他去到无穷远炸毁
+
+00:17:40,000 --> 00:17:45,000
+and so in fact the 48 transform doesn't converge
+所以实际上48变换不收敛
+
+00:17:45,000 --> 00:17:49,000
+in the case except for the case were a is greater than 0
+在除的情况下的情况下进行了一个大于0的
+
+00:17:49,000 --> 00:17:54,000
+and in fact there's a more detailed discussion of convergence issues in the
+而事实上有收敛问题的更详细的讨论
+
+00:17:54,000 --> 00:17:54,000
+tax
+税
+
+00:17:54,000 --> 00:17:57,000
+the convergence issues are very much the same
+收敛问题大同小异
+
+00:17:57,000 --> 00:18:01,000
+the Fourier transform as they are for the four th series in fact that's not
+傅里叶变换，因为它们是为4个系列实际上，这不是
+
+00:18:01,000 --> 00:18:03,000
+surprising because
+令人惊讶的，因为
+
+00:18:03,000 --> 00:18:06,000
+we develop the Fourier transform out of consideration
+我们开发的傅立叶变换出代价
+
+00:18:06,000 --> 00:18:10,000
+for you series so the convergence conditions as you'll see as you refer a
+你这么一系列的收敛条件，你会看到你引用一个
+
+00:18:10,000 --> 00:18:11,000
+detailed
+详细
+
+00:18:11,000 --> 00:18:15,000
+tax relate to whether the time function is
+税收涉及到时间的功能是否
+
+00:18:15,000 --> 00:18:18,000
+absolutely integral under one set of conditions
+在一组条件是绝对不可或缺的
+
+00:18:18,000 --> 00:18:22,000
+and square integrable under another set of conditions
+而根据另一组条件平方可积
+
+00:18:22,000 --> 00:18:27,000
+okay now if we plot the Fourier transform
+现在没事了，如果我们绘制傅里叶变换
+
+00:18:27,000 --> 00:18:30,000
+let's first consider the shape at the time function
+让我们首先考虑的形状在时间功能
+
+00:18:30,000 --> 00:18:34,000
+and as i indicated way restricting the time function
+正如我指出的方式限制时间功能
+
+00:18:34,000 --> 00:18:39,000
+so that the exponential factor is positive in other words you the -80
+从而使指数的因素是积极的，换句话说你的-80
+
+00:18:39,000 --> 00:18:44,000
+detainees as he goes to infinity the magnitude
+被拘留者，他去到无穷大的幅度
+
+00:18:44,000 --> 00:18:47,000
+or the for EA transform
+或者对EA变换
+
+00:18:47,000 --> 00:18:50,000
+is as i indicate here and
+是因为我在此说明，并
+
+00:18:50,000 --> 00:18:54,000
+the phase below it and
+它下面的相位和
+
+00:18:54,000 --> 00:18:57,000
+think there are a number of things that we can see about
+认为有一些事情，我们可以看到关于
+
+00:18:57,000 --> 00:19:01,000
+the magnitude and phase
+的幅度和相位
+
+00:19:01,000 --> 00:19:05,000
+the 48 transform for this example which in fact we'll see
+48变换为这个例子，其实我们会看到
+
+00:19:05,000 --> 00:19:10,000
+in the next lecture are properties that apply more generally
+在下一讲是应用更普遍特性
+
+00:19:10,000 --> 00:19:14,000
+for example the fact that the 48 transform magnitude is an even function
+例如一个事实，即48变换幅值是偶函数
+
+00:19:14,000 --> 00:19:19,000
+frequency and the phase is an odd function of frequency
+频率和相位是频率的奇函数
+
+00:19:19,000 --> 00:19:23,000
+now let me also draw your attention
+现在让我再请你注意
+
+00:19:23,000 --> 00:19:28,000
+so the fact there'd on this curve we have
+所以其实这条曲线上有倒是我们
+
+00:19:28,000 --> 00:19:32,000
+both positive frequencies and negative frequencies
+双方正频率和负频率
+
+00:19:32,000 --> 00:19:37,000
+in other words in our expression for the 48 transform
+在我们的表达式为48变换换句话说
+
+00:19:37,000 --> 00:19:41,000
+we've it requires both or make a positive
+我们它需要两个或作出积极的
+
+00:19:41,000 --> 00:19:46,000
+and Omega negative this of course was exactly the same in the case
+和欧米茄负，这当然是完全一样的情况下
+
+00:19:46,000 --> 00:19:50,000
+the for a series and the reason you should
+的一个系列，你应该的原因
+
+00:19:50,000 --> 00:19:56,000
+recalling keep in mind is related to the fact that we're building our signals
+回顾记住的是相关的事实，我们正在建设我们的信号
+
+00:19:56,000 --> 00:19:59,000
+out of complex exponentials which require both
+出复指数这既需要
+
+00:19:59,000 --> 00:20:05,000
+positive values have Omega and negative values Omega alternatively if we chose
+正值有欧米茄和负值欧米茄相反，如果我们选择了
+
+00:20:05,000 --> 00:20:09,000
+another representation which turns and occasionally to be much more difficult
+另一种表示果然偶尔要困难得多
+
+00:20:09,000 --> 00:20:12,000
+namely sines and cosines that we would in fact
+即正弦和余弦，我们会在事实上
+
+00:20:12,000 --> 00:20:16,000
+only consider positive frequencies so it's important to keep in mind
+只考虑正面的频率，所以要记住很重要
+
+00:20:16,000 --> 00:20:21,000
+that in our case both with the for a series in the 48 transform
+在我们的情况下都具有为一个系列中的48个变换
+
+00:20:21,000 --> 00:20:26,000
+we deal and require both positive and negative frequencies
+我们在处理和要求正，负频率
+
+00:20:26,000 --> 00:20:29,000
+in order to build their signals
+为了建立自己的信号
+
+00:20:29,000 --> 00:20:34,000
+now in the graphical representation that I shown here
+现在的图形表示，我这里显示
+
+00:20:34,000 --> 00:20:38,000
+I've chosen a linear amplitude scale
+我选择了一个线性幅度比例
+
+00:20:38,000 --> 00:20:41,000
+and a linear frequency scale and thats one
+和线性频率刻度和多数民众赞成1
+
+00:20:41,000 --> 00:20:45,000
+graphical representation the Fourier transform
+图形表示傅立叶变换
+
+00:20:45,000 --> 00:20:48,000
+that will typically use is another one
+将通常使用的是另一种
+
+00:20:48,000 --> 00:20:52,000
+that very commonly arises and
+这非常普遍，并出现
+
+00:20:52,000 --> 00:20:56,000
+which all just briefly indicate for this example
+这一切都只是简略说明这个例子
+
+00:20:56,000 --> 00:21:00,000
+and that is was referred to
+那就是被称为
+
+00:21:00,000 --> 00:21:03,000
+as a boat imply in which the
+作为船暗示在其中
+
+00:21:03,000 --> 00:21:08,000
+magnet to is displayed on a large amplitude in like frequency scale
+磁体被显示在一个大的振幅在像频率刻度来
+
+00:21:08,000 --> 00:21:11,000
+in the phase is displayed on a lock frequency scale
+在相位上显示一个锁定频率刻度
+
+00:21:11,000 --> 00:21:15,000
+let me show you what I me here is
+让我告诉你我我在这里是
+
+00:21:15,000 --> 00:21:18,000
+the general expression for the boat reply body plot
+的一般表达式作舟回复身体的情节
+
+00:21:18,000 --> 00:21:22,000
+expresses 4s the amp with two interns
+表达4S带有两个实习生放大器
+
+00:21:22,000 --> 00:21:25,000
+the longer them to the base 10 the magnitude
+较长它们在基座10的幅度
+
+00:21:25,000 --> 00:21:30,000
+and it also expresses the angle in both cases
+它也表达了角度在这两种情况下
+
+00:21:30,000 --> 00:21:34,000
+express as as a function
+表现为一个函数
+
+00:21:34,000 --> 00:21:38,000
+love a logarithmic speak with yes so
+爱一个对数说话是如此
+
+00:21:38,000 --> 00:21:41,000
+here is the amplitude
+这里是幅度
+
+00:21:41,000 --> 00:21:45,000
+as i've displayed at and
+因为我已经在显示和
+
+00:21:45,000 --> 00:21:49,000
+this is a log magnitude scale a logarithmic
+这是一个日志震级标度对数
+
+00:21:49,000 --> 00:21:53,000
+frequency scale as indicated by the fact that as we move
+由，在我们的事实所指示的频率刻度
+
+00:21:53,000 --> 00:21:57,000
+include equal increments along this axis we change
+包括沿着这条轴线，我们改变等额递增
+
+00:21:57,000 --> 00:22:00,000
+frequency by a factor 10 and
+频率由一个因子10和
+
+00:22:00,000 --> 00:22:03,000
+similarly what we
+同样我们
+
+00:22:03,000 --> 00:22:07,000
+have is a display for the phase again
+有一个显示器，用于相位再次
+
+00:22:07,000 --> 00:22:11,000
+on a light frequency scale and I indicated
+在光频标和I表示
+
+00:22:11,000 --> 00:22:15,000
+dead there is a symmetry to the Fourier transform
+死有一个对称的傅里叶变换
+
+00:22:15,000 --> 00:22:20,000
+and so in fact we can infer from this particular picture
+所以其实我们可以从这个特殊的图片推断
+
+00:22:20,000 --> 00:22:24,000
+what it looks like to the negative frequencies as well as for the positive
+它是什么样子的负频率，以及用于正
+
+00:22:24,000 --> 00:22:28,000
+returns
+回报
+
+00:22:28,000 --> 00:22:33,000
+okay now
+现在没事了
+
+00:22:33,000 --> 00:22:34,000
+what we've
+我们已经
+
+00:22:34,000 --> 00:22:37,000
+done so far is to develop
+迄今所做的是开发
+
+00:22:37,000 --> 00:22:42,000
+the for EA transform on the basis
+该对EA变换的基础上
+
+00:22:42,000 --> 00:22:46,000
+the Fourier transform it a periodic signal on the basis
+傅里叶变换它的周期信号的基础上
+
+00:22:46,000 --> 00:22:49,000
+periodically repeating it and recognizing
+周期性地重复它，并认识
+
+00:22:49,000 --> 00:22:53,000
+that the for a series coefficients are samples of an envelope
+该为一系列系数是一个信封的样品
+
+00:22:53,000 --> 00:22:57,000
+on an envelope and that these become more finally space
+在信封上，而这些越来越终于空间
+
+00:22:57,000 --> 00:23:00,000
+as frequency increases and in fact
+随着频率的增加而事实上
+
+00:23:00,000 --> 00:23:03,000
+we can go back to are
+我们可以回去的
+
+00:23:03,000 --> 00:23:07,000
+original equation
+原方程
+
+00:23:07,000 --> 00:23:10,000
+in which we developed an envelope function
+在此我们开发了一个包络函数
+
+00:23:10,000 --> 00:23:14,000
+and what we had indicated
+而我们曾指出
+
+00:23:14,000 --> 00:23:17,000
+is dead the 4e a series
+死了的4E系列
+
+00:23:17,000 --> 00:23:21,000
+coefficients where samples of this envelope
+系数在那里这个信封样品
+
+00:23:21,000 --> 00:23:25,000
+we then
+我们再
+
+00:23:25,000 --> 00:23:28,000
+to find this envelope as
+找到这个信封
+
+00:23:28,000 --> 00:23:34,000
+the Fourier transform all this a periodic signal so
+傅立叶变换这一切的周期性信号，
+
+00:23:34,000 --> 00:23:38,000
+that provided us with the way and it was a mechanism
+这为我们提供了方法，它是一种机制
+
+00:23:38,000 --> 00:23:43,000
+for getting a representation for a periodic sick
+获取一个表示为一个周期生病
+
+00:23:43,000 --> 00:23:48,000
+now suppose that we have instead
+现在假设我们有代替
+
+00:23:48,000 --> 00:23:51,000
+a periodic signal are there in fact
+一个周期信号的存在实际上
+
+00:23:51,000 --> 00:23:57,000
+some statements that we can make about how the Fourier series coefficients
+一些语句，我们可以就如何傅里叶级数的系数
+
+00:23:57,000 --> 00:24:02,000
+that are related to the Fourier transform of something well
+这是关系到傅里叶变换的好东西
+
+00:24:02,000 --> 00:24:05,000
+in fact this statement tells us
+其实这种说法告诉我们
+
+00:24:05,000 --> 00:24:08,000
+exactly how to do that what this statement says
+到底怎么做，今天本声明说，
+
+00:24:08,000 --> 00:24:12,000
+is that in fact the forty a series coefficients
+是，实际上在40一系列系数
+
+00:24:12,000 --> 00:24:17,000
+our samples all the four EA transform
+我们的样品全部四个EA变换
+
+00:24:17,000 --> 00:24:21,000
+up one period so if
+达一个周期，所以如果
+
+00:24:21,000 --> 00:24:24,000
+we now consider
+我们现在考虑
+
+00:24:24,000 --> 00:24:29,000
+a periodic signal weekend in fact
+实际上是一个周期性信号周末
+
+00:24:29,000 --> 00:24:33,000
+get before a series coefficients that periodic signal
+得到一系列系数之前的周期信号
+
+00:24:33,000 --> 00:24:37,000
+by considering the Fourier transform
+通过考虑傅立叶变换
+
+00:24:37,000 --> 00:24:42,000
+above one period said another way the 4e a series coefficients
+上面一个周期说，4E一系列系数的另一种方式
+
+00:24:42,000 --> 00:24:46,000
+are proportional samples on the Fourier transform
+是在傅立叶比例样本变换
+
+00:24:46,000 --> 00:24:49,000
+one period so if we consider this
+一个周期，所以如果我们认为这
+
+00:24:49,000 --> 00:24:54,000
+a periodic signal computer its Fourier transform
+周期信号的计算机及其傅立叶变换
+
+00:24:54,000 --> 00:24:57,000
+and selected these
+并选择了这些
+
+00:24:57,000 --> 00:25:01,000
+samples that I indicate here
+样，我在此说明
+
+00:25:01,000 --> 00:25:04,000
+namely samples equally spaced in omega
+即样本等距的omega
+
+00:25:04,000 --> 00:25:07,000
+in by multiples are integer multiples
+由倍数整数倍
+
+00:25:07,000 --> 00:25:11,000
+love Omega 0 then in fact
+爱欧米茄0，那么实际上
+
+00:25:11,000 --> 00:25:14,000
+those would be the story a series coefficients
+这些将是故事的一系列系数
+
+00:25:14,000 --> 00:25:17,000
+so we can go back to
+所以我们可以回去
+
+00:25:17,000 --> 00:25:20,000
+are example previously
+在以前的例子
+
+00:25:20,000 --> 00:25:24,000
+with that involved the
+用，所涉及的
+
+00:25:24,000 --> 00:25:27,000
+square wave and now
+方波和现在
+
+00:25:27,000 --> 00:25:31,000
+in this case we could argue that if in fact
+在这种情况下，我们可以认为，如果事实
+
+00:25:31,000 --> 00:25:35,000
+it was the periodic signal that we started with
+它是周期信号，我们开始与
+
+00:25:35,000 --> 00:25:38,000
+we could get the 40 series coefficients
+我们可以得到的40系列的系数
+
+00:25:38,000 --> 00:25:41,000
+that by thinking about
+通过思考
+
+00:25:41,000 --> 00:25:45,000
+the four EA transform above one period
+四EA变换上述一个周期
+
+00:25:45,000 --> 00:25:50,000
+which I indicate here and then
+我在此说明，然后
+
+00:25:50,000 --> 00:25:54,000
+the 48 series coefficients other periodic signal
+48级数系数等周期信号
+
+00:25:54,000 --> 00:25:57,000
+in fact are the appropriate set
+其实是一组合适的
+
+00:25:57,000 --> 00:26:04,000
+samples of this envelope
+这个信封的样本
+
+00:26:04,000 --> 00:26:08,000
+alright now we have away
+好吧，现在我们拥有了
+
+00:26:08,000 --> 00:26:12,000
+love getting the for a series coefficients
+爱得到了一系列的系数
+
+00:26:12,000 --> 00:26:16,000
+from the Fourier transform one period we originally derived
+从傅立叶变换，我们最初来源于一个周期
+
+00:26:16,000 --> 00:26:20,000
+the Fourier transform one period from the 48 series
+傅立叶变换一个周期从48系列
+
+00:26:20,000 --> 00:26:23,000
+what would in fact be nice
+什么会其实是很好
+
+00:26:23,000 --> 00:26:27,000
+is if we could incorporate before a series
+是，如果我们能系列结合前
+
+00:26:27,000 --> 00:26:30,000
+in the Fourier transform within a common framework
+在傅立叶一个共同的框架内变换
+
+00:26:30,000 --> 00:26:33,000
+and in fact it turns out dead there
+而事实上它原来死的有
+
+00:26:33,000 --> 00:26:36,000
+is a very convenient way of doing that almost by definition
+是这样做几乎被定义为一个非常方便的方式
+
+00:26:36,000 --> 00:26:40,000
+essentially
+本质上
+
+00:26:40,000 --> 00:26:44,000
+if we consider what the equation
+如果我们考虑一下方程
+
+00:26:44,000 --> 00:26:48,000
+for the synthesis looks like in both cases we
+用于合成看起来像在这两种情况下，我们
+
+00:26:48,000 --> 00:26:53,000
+can in effect define of four EA transform
+可实际上定义了四个EA变换
+
+00:26:53,000 --> 00:26:58,000
+for the periodic signal which we know is represented by its for a series
+为此我们知道是由它的一系列代表的周期信号
+
+00:26:58,000 --> 00:27:00,000
+coefficients we can define
+系数，我们可以定义
+
+00:27:00,000 --> 00:27:05,000
+48 transform and the definition of the Fourier transform
+48变换和傅立叶变换的定义
+
+00:27:05,000 --> 00:27:12,000
+is as an impulse train where the coefficients in the impulse train
+是作为一个脉冲串，其中在脉冲串的系数
+
+00:27:12,000 --> 00:27:15,000
+are proportional with the proportionality factor
+是成正比的比例系数
+
+00:27:15,000 --> 00:27:20,000
+25 for more less a bookkeeping reason proportional to the forty a series
+25多少簿记理由成正比的40系列
+
+00:27:20,000 --> 00:27:21,000
+coefficients
+系数
+
+00:27:21,000 --> 00:27:24,000
+and the validity of this is
+与此有效性是
+
+00:27:24,000 --> 00:27:28,000
+more or less can be seen
+或多或少可以看出
+
+00:27:28,000 --> 00:27:32,000
+essentially by substitution specifically
+基本上是由专门的替代
+
+00:27:32,000 --> 00:27:35,000
+here is then the
+这里是那么
+
+00:27:35,000 --> 00:27:38,000
+synthesis equation for the four EA transform
+为4 EA变换合成方程
+
+00:27:38,000 --> 00:27:44,000
+if we substitute this definition for the four th chance for the periodic signal
+如果我们替换了这个定义四个次机会的周期信号
+
+00:27:44,000 --> 00:27:49,000
+into this expression then when we do the appropriate bookkeeping
+这个表达式，那么，当我们做相应的簿记
+
+00:27:49,000 --> 00:27:54,000
+and interchange the order some Asian and integration
+和交换的顺序一些亚洲和整合
+
+00:27:54,000 --> 00:27:57,000
+the in polls integrates out to
+该民调集成到
+
+00:27:57,000 --> 00:28:03,000
+the exponential factor that we want so
+我们希望这样的指数因子
+
+00:28:03,000 --> 00:28:08,000
+we have the exponential factor we have the for a series coefficients
+我们有指数因子，我们有一个系列的系数
+
+00:28:08,000 --> 00:28:11,000
+the two pies take care of each other and what we're left with
+两个馅饼采取互相照顾，什么我们留下了
+
+00:28:11,000 --> 00:28:15,000
+is the synthesis equation for
+是用于合成式
+
+00:28:15,000 --> 00:28:19,000
+a periodic signal in terms of the Fourier transform foreign it interns
+一个周期信号的傅里叶变换的计算外来它实习生
+
+00:28:19,000 --> 00:28:24,000
+love it's for a series coefficients right now
+爱它是一个系列的系数，现在
+
+00:28:24,000 --> 00:28:27,000
+we can just see this interns
+我们只要看到这个实习生
+
+00:28:27,000 --> 00:28:30,000
+love a simple example if we
+爱一个简单的例子，如果我们
+
+00:28:30,000 --> 00:28:35,000
+consider the example love a symmetric square wave
+考虑例子爱一个对称的方波
+
+00:28:35,000 --> 00:28:38,000
+then in effect what we're saying is that
+那么实际上我们要说的是，
+
+00:28:38,000 --> 00:28:43,000
+for this symmetric square wave this has
+这种对称的方波这有
+
+00:28:43,000 --> 00:28:47,000
+set up for a series coefficients which we work that previously
+设置为我们工作的一系列系数以前
+
+00:28:47,000 --> 00:28:50,000
+and which I indicate on this figure
+和我上注明此图
+
+00:28:50,000 --> 00:28:54,000
+with a bar graph and really all that were saying
+用条形图和真的那么说了
+
+00:28:54,000 --> 00:28:58,000
+is there whereas these free a series coefficients our index
+在那里，而这些免费的一系列系数索引
+
+00:28:58,000 --> 00:29:04,000
+on an integer variable K and their bars not impulses
+上一个整型变量K和他们的酒吧不冲动
+
+00:29:04,000 --> 00:29:07,000
+if we simply redefine or define
+如果我们简单地重新定义或定义
+
+00:29:07,000 --> 00:29:11,000
+the Fourier transform love the periodic signal
+傅立叶变换爱情的周期信号
+
+00:29:11,000 --> 00:29:16,000
+as an impulse train where the weights at the impulses
+作为一个脉冲串，其中权重的冲动
+
+00:29:16,000 --> 00:29:20,000
+are to Paul II times the
+是保禄二世倍
+
+00:29:20,000 --> 00:29:23,000
+correspondent for a series coefficients and
+记者进行了一系列的系数和
+
+00:29:23,000 --> 00:29:27,000
+this in fact is what we would use as the four EA
+这其实是我们的四大EA​​用什么
+
+00:29:27,000 --> 00:29:33,000
+transform love the periodic sick
+变换爱情的周期性病
+
+00:29:33,000 --> 00:29:36,000
+okay now we've kind of gone back and forth
+现在没事了，我们已经走了样的来回
+
+00:29:36,000 --> 00:29:40,000
+on and maybe even it might seem
+上，甚至它似乎
+
+00:29:40,000 --> 00:29:43,000
+likely going around in circles so let me just
+可能兜兜转转，就让我把
+
+00:29:43,000 --> 00:29:46,000
+try to summarize the various relationships
+尝试总结的各种关系
+
+00:29:46,000 --> 00:29:50,000
+and steps that we've gone through keeping in mind that
+而我们通过牢记已经走的步骤，
+
+00:29:50,000 --> 00:29:53,000
+one of our objectives was first to develop
+我们的目标之一是首先开发
+
+00:29:53,000 --> 00:29:58,000
+representation for a periodic signals and then attempt to
+表示一个周期信号，然后尝试
+
+00:29:58,000 --> 00:30:01,000
+incorporate within one framework both periodic
+一个统一的框架两个周期内合并
+
+00:30:01,000 --> 00:30:05,000
+in a periodic signals
+在一个周期信号
+
+00:30:05,000 --> 00:30:08,000
+we began with
+我们开始与
+
+00:30:08,000 --> 00:30:11,000
+and a periodic signal
+和周期信号
+
+00:30:11,000 --> 00:30:14,000
+and the strategy was to develop
+而战略是发展
+
+00:30:14,000 --> 00:30:18,000
+for your representation by constructing
+通过构建你的代表
+
+00:30:18,000 --> 00:30:22,000
+periodic signal for which that was one period
+周期信号的，这是一个周期
+
+00:30:22,000 --> 00:30:25,000
+in and then we let the period go to infinity as
+在然后我们就让期间到无穷大
+
+00:30:25,000 --> 00:30:31,000
+I indicate here so we have and a periodic signal
+我在此说明，所以我们已经和一个周期信号
+
+00:30:31,000 --> 00:30:35,000
+we construct a periodic signal
+我们构造了一个周期信号
+
+00:30:35,000 --> 00:30:38,000
+extol dirty for which one period
+歌颂肮脏的哪一个时期
+
+00:30:38,000 --> 00:30:45,000
+is the a periodic signal X still dirty the periodic signal has a forty a series
+是一个周期性的信号X还是脏的周期信号具有40的一系列
+
+00:30:45,000 --> 00:30:48,000
+and as its period increases
+和作为其周期增加
+
+00:30:48,000 --> 00:30:52,000
+that approaches the a periodic signal and
+该方法的一个周期信号和
+
+00:30:52,000 --> 00:30:58,000
+the forty a series of that approaches the 48 transform
+在40的一系列接近48变换
+
+00:30:58,000 --> 00:31:01,000
+all the original a periodic sick so
+所有原始周期性生病了，所以
+
+00:31:01,000 --> 00:31:05,000
+that was the first step that we took
+这是我们迈出了第一步
+
+00:31:05,000 --> 00:31:08,000
+now the second thing that we recognize is dead
+现在我们认识到，第二件就是死
+
+00:31:08,000 --> 00:31:13,000
+once we have the concept to the 48 transform
+一旦我们有了这个概念到48变换
+
+00:31:13,000 --> 00:31:18,000
+we can in fact relate the Fourier series coefficients
+我们其实是可以与傅里叶级数的系数
+
+00:31:18,000 --> 00:31:21,000
+to the 48 transform one period
+到48变换一个周期
+
+00:31:21,000 --> 00:31:25,000
+so the second statement that we made was dead
+因此，我们提出第二个语句已经死了
+
+00:31:25,000 --> 00:31:32,000
+if in fact we're trying to represent a periodic signal
+如果事实上我们正在试图代表一个周期信号
+
+00:31:32,000 --> 00:31:35,000
+we can get the 40 series coefficients have that
+我们可以得到40个系列的系数有
+
+00:31:35,000 --> 00:31:38,000
+by computing the for EA transform
+通过计算对EA变换
+
+00:31:38,000 --> 00:31:42,000
+one period and then
+一个周期，然后
+
+00:31:42,000 --> 00:31:45,000
+samples that for EA transform are
+样，对于EA变换是
+
+00:31:45,000 --> 00:31:52,000
+in fact the 4e series coefficients for the periodic sick
+实际上，以便定期生病的4e的一系列系数
+
+00:31:52,000 --> 00:31:56,000
+okay then the third step that we took was
+好吧，那么，我们采取了第三步是
+
+00:31:56,000 --> 00:32:01,000
+to inquire as to whether they're is a Fourier transform
+询问他们是否是一个傅立叶变换
+
+00:32:01,000 --> 00:32:04,000
+that can appropriately be defined for
+即，可以适当地定义为
+
+00:32:04,000 --> 00:32:07,000
+the periodic signal in the mechanism for doing that
+的周期信号的机制，用于执行该
+
+00:32:07,000 --> 00:32:13,000
+was to recognize that if we simply to find the Fourier transform
+是要认识到，如果我们简单地找到傅立叶变换
+
+00:32:13,000 --> 00:32:17,000
+the periodic signal as an impulse train where the in polls
+周期信号作为脉冲串，其中在投票调查中
+
+00:32:17,000 --> 00:32:22,000
+fights or areas for proportional to the for a series coefficients
+打架或领域成正比的一系列系数
+
+00:32:22,000 --> 00:32:25,000
+then in fact the Fourier transform
+然后实际上傅立叶变换
+
+00:32:25,000 --> 00:32:29,000
+synthesis equation reduced to
+合成公式减少到
+
+00:32:29,000 --> 00:32:33,000
+before you see recent this equation so the third step
+之前看到最近这个方程，第三步
+
+00:32:33,000 --> 00:32:37,000
+then was with a periodic signal
+然后是一个周期信号
+
+00:32:37,000 --> 00:32:41,000
+the 48 transform that periodic signal
+48变换的周期信号
+
+00:32:41,000 --> 00:32:45,000
+defined as an impulse train with the heights or areas the impulses are
+定义为脉冲串的高度或地区的冲动
+
+00:32:45,000 --> 00:32:48,000
+proportional to the forty a series coefficients
+正比于40一系列系数
+
+00:32:48,000 --> 00:32:52,000
+provides us with the mechanism for
+为我们提供了机制
+
+00:32:52,000 --> 00:32:55,000
+combining together the concepts war
+结合起来的概念战
+
+00:32:55,000 --> 00:33:01,000
+notation love before you a series and Fourier transform so
+在你爱的符号系列和傅立叶变换，
+
+00:33:01,000 --> 00:33:05,000
+if we just took I E very simple example
+如果我们只是把I E很简单的例子
+
+00:33:05,000 --> 00:33:09,000
+here is an example in which
+这里是一个例子，其中
+
+00:33:09,000 --> 00:33:12,000
+we have and a periodic signal
+我们已经和一个周期信号
+
+00:33:12,000 --> 00:33:16,000
+which is just an impulse and its
+这只是一种冲动，其
+
+00:33:16,000 --> 00:33:19,000
+for EA transform is just a constant
+对EA变换仅仅是一个常数
+
+00:33:19,000 --> 00:33:22,000
+we can think other periodic signal
+我们可以想到其他的周期信号
+
+00:33:22,000 --> 00:33:26,000
+associated with this which is this signal
+这是该信号相关联的
+
+00:33:26,000 --> 00:33:31,000
+periodically replicated in with the spacing t0
+定期复制与间隔T0
+
+00:33:31,000 --> 00:33:35,000
+the Fourier transform love this is a constant
+傅立叶变换的爱，这是一个恒定的
+
+00:33:35,000 --> 00:33:38,000
+and this of course has a forty a series representation
+这当然有一个40一个级数表示
+
+00:33:38,000 --> 00:33:42,000
+so the Fourier transform or
+因此，傅立叶变换或
+
+00:33:42,000 --> 00:33:47,000
+the original in polls is just a constant the Fourier transform
+原来在民意调查只是一个恒定的傅立叶变换
+
+00:33:47,000 --> 00:33:51,000
+love the periodic signal is
+爱的周期信号是
+
+00:33:51,000 --> 00:33:54,000
+an impulse train where the heights at the impulses
+一个脉冲串，其中高度在冲动
+
+00:33:54,000 --> 00:33:58,000
+are proportional to the forty a series coefficients
+正比于40一系列系数
+
+00:33:58,000 --> 00:34:02,000
+and of course we could previously have computed
+当然，我们可以前面已经计算
+
+00:34:02,000 --> 00:34:06,000
+the forty a series coefficients to that imposed strain
+四十一系列系数所规定的应变
+
+00:34:06,000 --> 00:34:10,000
+and those for a series coefficients are as I've shown here
+和那些为一系列系数是因为我已经在这里显示
+
+00:34:10,000 --> 00:34:13,000
+so on both these cases these in effect
+这样就这两种情况下这些效应在
+
+00:34:13,000 --> 00:34:17,000
+represent just a change in notation we're here we have a bar graph in here
+代表符号只是改变我们在这里，我们有一个条形图在这里
+
+00:34:17,000 --> 00:34:18,000
+we have been imposed strain
+我们一直在施加应变
+
+00:34:18,000 --> 00:34:21,000
+and both at the is simply represent
+而无论是在简单地代表
+
+00:34:21,000 --> 00:34:25,000
+samples of what we have above
+我们有什么样以上
+
+00:34:25,000 --> 00:34:28,000
+which is the for EA transform
+这是对EA变换
+
+00:34:28,000 --> 00:34:34,000
+love the original a periodic sick
+爱情原来定期生病
+
+00:34:34,000 --> 00:34:37,000
+okay now once again I suspect that kinda
+还好现在我再次怀疑，还挺
+
+00:34:37,000 --> 00:34:42,000
+moving back and forth and and trying to straighten out when we're talking about
+来回移动，并与试图理顺，当我们在谈论
+
+00:34:42,000 --> 00:34:44,000
+periodic in a periodic signals
+周期性的周期信号
+
+00:34:44,000 --> 00:34:48,000
+may require a little mental gymnastics initially
+可能需要一点点的精神体操开始
+
+00:34:48,000 --> 00:34:51,000
+basically what we try to do is
+基本上我们尝试做的是什么
+
+00:34:51,000 --> 00:34:56,000
+incorporate within one framework representation for both
+在为一个统一的框架表示合并
+
+00:34:56,000 --> 00:35:00,000
+a periodic and and periodic signals in the Fourier transform
+在傅立叶周期性和与周期信号变换
+
+00:35:00,000 --> 00:35:04,000
+provides us with a mechanism to do that
+为我们提供了一种机制来做到这一点
+
+00:35:04,000 --> 00:35:07,000
+in the next lecture I'll continue with the discussion
+在接下来的演讲中，我将继续讨论
+
+00:35:07,000 --> 00:35:12,000
+or the continuous-time for EA transform in particular focusing
+或连续时间对EA变换特别侧重
+
+00:35:12,000 --> 00:35:16,000
+on a number of its properties summer which we've already seen namely the
+关于它的一些特性的夏天，我们已经看到即
+
+00:35:16,000 --> 00:35:17,000
+symmetry properties
+对称性质
+
+00:35:17,000 --> 00:35:21,000
+we'll see lots of other properties that relate
+我们会看到很多，涉及其他物业
+
+00:35:21,000 --> 00:35:24,000
+of course both to the 48 transform and to the for users
+当然同时向48转换和向用户
+
+00:35:24,000 --> 00:35:25,000
+thank you
+谢谢
+

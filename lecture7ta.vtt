@@ -1,0 +1,3192 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+பின்வரும் உள்ளடக்கத்தை ஒரு கிரியேட்டிவ் காமன்ஸ் உரிமத்தின் கீழ் வழங்கப்படும்
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+உங்கள் ஆதரவு எம்ஐடி ஓபன்கோர்ஸ்வேர் வழங்க தொடர்ந்து உதவும்
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+இலவசமாக உயர்தர கல்வி வளங்கள்
+
+00:00:10,000 --> 00:00:15,000
+to make a donation or view additional materials from 100 to them IT courses
+ஒரு நன்கொடை செய்ய அல்லது அதை படிப்புகள் அவர்களுக்கு 100 கூடுதல் பொருட்கள் பார்வையிட
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+0 CW இல் எம்ஐடி ஓபன்கோர்ஸ்வேர் வருகை
+
+00:00:18,000 --> 00:00:20,000
+that MIT ided you
+எம்ஐடி நீங்கள் ided என்று
+
+00:00:20,000 --> 00:00:27,000
+home
+முகப்பு
+
+00:00:30,000 --> 00:00:35,000
+the
+உருக்கு
+
+00:00:35,000 --> 00:00:38,000
+in
+
+
+00:00:38,000 --> 00:00:40,000
+in
+
+
+00:00:40,000 --> 00:00:45,000
+the new
+புதிய
+
+00:00:45,000 --> 00:00:51,000
+are
+இருக்கிகின்றன
+
+00:00:51,000 --> 00:00:55,000
+for
+ஐந்து
+
+00:00:55,000 --> 00:00:59,000
+over the last several lectures we've dealt with the representation
+கடந்த பல விரிவுரைகள் மீது நாம் பிரதிநிதித்துவம் தீர்க்கப்பட
+
+00:00:59,000 --> 00:01:02,000
+of linear time-invariant systems through convolution
+சுழற்சி மூலம் நேரியல் நேரம் மாற்றமில்லாத அமைப்புகள்
+
+00:01:02,000 --> 00:01:06,000
+and just to remind you over basic strategy
+மற்றும் அடிப்படை மூலோபாயம் மீது உங்களுக்கு ஞாபகப்படுத்த
+
+00:01:06,000 --> 00:01:09,000
+essentially the idea was to
+அடிப்படையில் யோசனை இருந்தது
+
+00:01:09,000 --> 00:01:13,000
+exploit the notion of when the arity by
+போது உறுப்பின் எண் மூலம் கருத்து சுரண்ட
+
+00:01:13,000 --> 00:01:16,000
+decomposing the input into summer basic inputs
+கோடை அடிப்படை உள்ளீடுகள் உள்ளீடு அழுக
+
+00:01:16,000 --> 00:01:21,000
+and then using when the arity to tell us that the output can be represented as
+பின்னர் உறுப்பின் எண் எங்களுக்கு சொல்ல போது பயன்படுத்தி வெளியீடு குறிப்பிடப்படுகின்றன முடியும் என்று
+
+00:01:21,000 --> 00:01:25,000
+the corresponding linear combination of the Associated outputs
+அசோசியேட்டட் வெளியீடுகளை தொடர்புடைய நேரியல் சேர்க்கையை
+
+00:01:25,000 --> 00:01:29,000
+so if we have a linear system
+எனவே நாம் ஒரு நேர்கோட்டு அமைப்பு இருந்தால்,
+
+00:01:29,000 --> 00:01:33,000
+either continuous-time and discrete-time for example with continuous time
+தொடர்ச்சியான நேர மற்றும் தொடர்ச்சியான நேரம் உதாரணமாக தனி நேரம் அல்லது
+
+00:01:33,000 --> 00:01:37,000
+if the input is decomposed as a linear combination
+உள்ளீடு ஒரு நேர்கோட்டு கலவையை சிதைந்த என்றால்
+
+00:01:37,000 --> 00:01:41,000
+a basic inputs with each of these basic inputs
+இந்த அடிப்படை உள்ளீடுகள் ஒவ்வொரு ஒரு அடிப்படை உள்ளீடுகள்
+
+00:01:41,000 --> 00:01:45,000
+generating an Associated output and if the system is linear
+ஒரு தொடர்புடைய வெளியீடு உருவாக்கும் மற்றும் கணினி நேரியல் என்றால்
+
+00:01:45,000 --> 00:01:49,000
+then the output love the system
+பின்னர் வெளியீடு கணினி காதல்
+
+00:01:49,000 --> 00:01:53,000
+is the same linear combination love The Associated outputs
+அதே நேரியல் இணைந்து அசோசியேட்டட் வெளியீடுகளை அன்பு
+
+00:01:53,000 --> 00:01:56,000
+and the same statement is identical
+அதே அறிக்கையில் ஒத்ததாக உள்ளது
+
+00:01:56,000 --> 00:02:01,000
+both for continuous-time in discrete-time so
+இரண்டு தனி நேர தொடர்ச்சியான நேர மிகவும்
+
+00:02:01,000 --> 00:02:07,000
+the strategy is to decompose the input into these basic inputs
+மூலோபாயம் இந்த அடிப்படை உள்ளீடுகள் உள்ளீடு அழுக ஆகிறது
+
+00:02:07,000 --> 00:02:10,000
+and the imports
+இறக்குமதி
+
+00:02:10,000 --> 00:02:14,000
+were chosen also with some particular
+சில குறிப்பிட்ட கூட தேர்வு
+
+00:02:14,000 --> 00:02:18,000
+strategy in mind in particular for both continuous-time
+தொடர்ச்சியான நேர குறிப்பாக மனதில் மூலோபாயம்
+
+00:02:18,000 --> 00:02:23,000
+for discrete-time in this representation the
+இந்த பிரதிநிதித்துவம் தனி நேரம்
+
+00:02:23,000 --> 00:02:26,000
+basic inputs used in the decomposition
+சிதைவு பயன்படுத்தப்படும் அடிப்படை உள்ளீடுகள்
+
+00:02:26,000 --> 00:02:30,000
+are chosen first the ball so that
+முதல் பந்தை தேர்வு என்று
+
+00:02:30,000 --> 00:02:33,000
+a broad class signals can be represented
+ஒரு பரந்த வர்க்க சமிக்ஞைகளை குறிப்பிடப்படுகின்றன
+
+00:02:33,000 --> 00:02:37,000
+interns are these basic inputs and second of all
+பயிற்சியாளர்களுக்கு இந்த அடிப்படை உள்ளீடுகள் மற்றும் அனைத்து இரண்டாவது இருக்கின்றன
+
+00:02:37,000 --> 00:02:41,000
+so that the response to these basic inputs
+அதனால் இந்த அடிப்படை உள்ளீடுகள் பதில்
+
+00:02:41,000 --> 00:02:46,000
+is in some sense easy to compute now
+இப்போது கணக்கிடுவதற்கு எளிதாக சில உணர்வு உள்ளது
+
+00:02:46,000 --> 00:02:50,000
+in the representation which latest
+பிரதிநிதித்துவம் சமீபத்திய
+
+00:02:50,000 --> 00:02:55,000
+to convolution the particular choice that we made
+நாங்கள் அந்த குறிப்பிட்ட தேர்வு சுழற்சி செய்ய
+
+00:02:55,000 --> 00:02:58,000
+in the discrete-time case for our basic inputs
+எங்கள் அடிப்படை உள்ளீடுகள் தனி நேர வழக்கில்
+
+00:02:58,000 --> 00:03:03,000
+was a decomposition up the input interns
+உள்ளீடு பயிற்சியாளர்களுக்கு ஒரு சிதைவு ஆகும்
+
+00:03:03,000 --> 00:03:07,000
+or delayed impulses and
+அல்லது தூண்டுதலின் தாமதமானது
+
+00:03:07,000 --> 00:03:11,000
+The Associated outputs that that generated
+என்று உருவாக்கப்படும் என்று அசோசியேட்டட் வெளியீடு
+
+00:03:11,000 --> 00:03:15,000
+were delayed versions of the impulse response
+உந்துவிசை பதில் பதிப்புகள் தாமதமானது
+
+00:03:15,000 --> 00:03:18,000
+decomposing the input into a linear combination of these
+இந்த ஒரு நேர்கோட்டு இணைந்து உள்ளீடு அழுக
+
+00:03:18,000 --> 00:03:22,000
+the output into the corresponding linear combination of these
+இந்த தொடர்புடைய நேரியல் இணைந்து வெளியீடு
+
+00:03:22,000 --> 00:03:26,000
+then led to the convolution some in
+பின்னர் சில சுழற்சி வழிவகுத்தது
+
+00:03:26,000 --> 00:03:29,000
+the discrete-time case and
+தனி நேரம் வழக்கு மற்றும்
+
+00:03:29,000 --> 00:03:32,000
+in the continuous-time case a similar
+தொடர்ச்சியான நேர விஷயத்தில் இதே
+
+00:03:32,000 --> 00:03:37,000
+kinda decomposition in terms of impulses and Associated representation
+கிரகமாக தூண்டுதலின் அடிப்படையில் சிதைவு மற்றும் தொடர்புடைய பிரதிநிதித்துவம்
+
+00:03:37,000 --> 00:03:40,000
+love the output in terms of the impulse response
+உந்துவிசை பதில் அடிப்படையில் வெளியீடு பிடிக்கிறது
+
+00:03:40,000 --> 00:03:44,000
+led to the convolution in ago now
+இப்போது முன்பு உள்ள சுழற்சி வழிவகுத்தது
+
+00:03:44,000 --> 00:03:49,000
+in this lecture and for number the succeeding lectures
+இந்த விரிவுரை மற்றும் எண் வெற்றி விரிவுரைகள்
+
+00:03:49,000 --> 00:03:53,000
+will want to turn our attention to a very different
+ஒரு வித்தியாசமான நமது கவனத்தை திருப்ப வேண்டும்
+
+00:03:53,000 --> 00:03:56,000
+said the basic building blocks and
+என்றார் அடிப்படை கட்டுமான தொகுதிகள் மற்றும்
+
+00:03:56,000 --> 00:03:59,000
+in particular the signals there
+குறிப்பாக அங்கு சமிக்ஞைகளை
+
+00:03:59,000 --> 00:04:03,000
+will be using as the building blocks for or more general signals
+கட்டிடம் தொகுதிகள் அல்லது அதற்கு மேற்பட்ட பொது சமிக்ஞைகளை பயன்படுத்தி
+
+00:04:03,000 --> 00:04:07,000
+rather than impulses as we've dealt with before
+மாறாக நாம் முன் தீர்க்கப்பட போல தூண்டுதலின் விட
+
+00:04:07,000 --> 00:04:11,000
+will be in general complex exponentials
+பொது சிக்கலான நிகழ்வுஎண் இருக்கும்
+
+00:04:11,000 --> 00:04:14,000
+so in a general sense
+அதனால் ஒரு பொது உணர்வு
+
+00:04:14,000 --> 00:04:19,000
+in the continuous-time case and will be thinking in terms of a decomposition
+தொடர்ச்சியான நேர விஷயத்தில் ஒரு சிதைவு அடிப்படையில் நினைத்தேன்
+
+00:04:19,000 --> 00:04:23,000
+afar signals as a linear combination I'll
+தூரத்திலிருந்து நான் செய்வேன் ஒரு நேர்கோட்டு சேர்க்கை போன்ற சமிக்ஞைகளை
+
+00:04:23,000 --> 00:04:27,000
+complex exponentials continuous-time
+சிக்கலான நிகழ்வுஎண் தொடர்ச்சியான நேரம்
+
+00:04:27,000 --> 00:04:31,000
+or in the discrete-time case
+அல்லது தனித்தியங்கும் நேர வழக்கில்
+
+00:04:31,000 --> 00:04:35,000
+complex exponentials where sees the case complex here
+இங்கே வழக்கு சிக்கலான பார்த்தால், அங்கு சிக்கலான நிகழ்வுஎண்
+
+00:04:35,000 --> 00:04:39,000
+in discrete-time and s2 K's complex here
+தனித்தியங்கும் நேர மற்றும் இங்கே S2 கே சிக்கலான
+
+00:04:39,000 --> 00:04:43,000
+in continuous-time now
+தொடர்ச்சியான நேரம் இப்போது
+
+00:04:43,000 --> 00:04:46,000
+the basic strategy of course requires
+நிச்சயமாக அடிப்படை மூலோபாயம் தேவை
+
+00:04:46,000 --> 00:04:51,000
+dead we choose a settlement puts basic building blocks
+இறந்த நாங்கள் ஒரு தீர்வை அடிப்படை கட்டுமான தொகுதிகள் வைக்கிறது தேர்வு
+
+00:04:51,000 --> 00:04:54,000
+which have two properties one is that
+இரண்டு பண்புகள் கொண்ட ஒரு என்று
+
+00:04:54,000 --> 00:04:59,000
+the system response be straightforward to compute were in some sense easy to
+கணினி பதில் கணக்கிட நேரடியான எளிதாக சில உணர்வு இருந்தது
+
+00:04:59,000 --> 00:04:59,000
+compute
+கணக்கிடு
+
+00:04:59,000 --> 00:05:03,000
+and the second is that it be a fairly general said a building blocks
+இரண்டாவது அது ஒரு கட்டுமான தொகுதிகள் என்றார் ஒரு மிகவும் பொதுவான இருக்க வேண்டும் என்று ஆகிறது
+
+00:05:03,000 --> 00:05:09,000
+so that we can build lots of signals I love them
+நாம் சமிக்ஞைகளை நிறைய உருவாக்க முடியும் என்று நான் அவர்களை நேசிக்கிறேன்
+
+00:05:09,000 --> 00:05:14,000
+what will find with complex exponentials either continuous-time and discrete-time
+சிக்கலான நிகழ்வுஎண் அல்லது தொடர்ச்சியான நேரம் மற்றும் தனி நேரம் கண்டுபிடிக்கும் என்ன
+
+00:05:14,000 --> 00:05:17,000
+is that they very nicely have those two properties
+அவர்கள் மிக நன்றாக அந்த இரண்டு பண்புகள் என்று ஆகிறது
+
+00:05:17,000 --> 00:05:21,000
+in particular the notion that the
+குறிப்பாக கருத்து என்று
+
+00:05:21,000 --> 00:05:26,000
+output over linear time-invariant system is easy to compute
+நேரியல் நேரம் மாற்றமில்லாத அமைப்பு மீது வெளியீடு கணக்கிடுவதற்கு எளிதாக இருக்கும்
+
+00:05:26,000 --> 00:05:30,000
+is tied to what's referred to as the eye can function property
+கண் சொத்து செயல்பட முடியும் என குறிப்பிடப்படுகிறது என்ன இணைக்கப்பட்டிருக்கிறது
+
+00:05:30,000 --> 00:05:33,000
+a complex exponentials which will focus on
+இது ஒரு சிக்கலான நிகழ்வுஎண் கவனம் செலுத்த வேண்டும்
+
+00:05:33,000 --> 00:05:36,000
+shortly in a little more detail
+விரைவில் இன்னும் கொஞ்சம் விரிவாக
+
+00:05:36,000 --> 00:05:40,000
+and second of all the fact that
+மற்றும் அனைத்து உண்மையில் இரண்டாவது என்று
+
+00:05:40,000 --> 00:05:44,000
+weekend in fact represent very broad classes have signals as linear
+உண்மையில் வார மிக பரந்த வகுப்புகள் நேரியல் போன்ற சமிக்ஞைகளை வேண்டும் பிரதிபலிக்கிறது
+
+00:05:44,000 --> 00:05:45,000
+combinations
+சேர்க்கைகள்
+
+00:05:45,000 --> 00:05:49,000
+these will be a topic an issue
+இந்த ஒரு பிரச்சினை, ஒரு தலைப்பு இருக்கும்
+
+00:05:49,000 --> 00:05:53,000
+that will develop in detail over in fact are the next
+உண்மையில் அடுத்த மேல் என்று விரிவாக உருவாக்கும்
+
+00:05:53,000 --> 00:05:57,000
+set of lectures this lecture and the next set of lectures
+விரிவுரைகள் தொகுப்பு இந்த விரிவுரை மற்றும் விரிவுரைகள் அடுத்த தொகுப்பு
+
+00:05:57,000 --> 00:06:00,000
+now in in doing this although
+இப்போது எனினும் இதை
+
+00:06:00,000 --> 00:06:05,000
+we could in fact begin with our attention focused
+நாம் உண்மையில் நம் கவனத்தை தொடங்கும் முடியும்
+
+00:06:05,000 --> 00:06:10,000
+on in general complex exponentials
+பொது சிக்கலான நிகழ்வுஎண் மீது
+
+00:06:10,000 --> 00:06:15,000
+what will choose to do his first focus on the case in which
+என்ன வழக்கு பற்றிய தன்னுடைய முதல் கவனம் செய்ய தேர்வு செய்யும்
+
+00:06:15,000 --> 00:06:18,000
+the exponent in the continuous-time cases
+தொடர்ச்சியான நேர சந்தர்ப்பங்களில் உள்ளீடு
+
+00:06:18,000 --> 00:06:22,000
+purely imaginary as i indicate here
+நான் இங்கே குறிப்பிட முற்றிலும் கற்பனை
+
+00:06:22,000 --> 00:06:25,000
+and in the discrete-time case where
+மற்றும் தனித்தியங்கும் நேர வழக்கில், அங்கு
+
+00:06:25,000 --> 00:06:28,000
+the magnitude of the complex number Z CK
+சிக்கலான எண் Z சிகே அளவில்
+
+00:06:28,000 --> 00:06:34,000
+is equal to 1 so what that corresponds to in the continuous-time case
+1 சமமாக இருக்கும் என்று தொடர்ச்சியான நேர வழக்கில் தொடர்பு என்ன
+
+00:06:34,000 --> 00:06:37,000
+is said building blocks
+என்றார் கட்டுமான தொகுதிகள் ஆகிறது
+
+00:06:37,000 --> 00:06:40,000
+the form you DJ Omega sed Katie
+நீங்கள் டி.ஜே. ஒமேகா கேட்டி sed படிவம்
+
+00:06:40,000 --> 00:06:44,000
+and in the discrete-time case said a building blocks
+மற்றும் தனித்தியங்கும் நேர விஷயத்தில் ஒரு கட்டுமான தொகுதிகள் கூறினார்
+
+00:06:44,000 --> 00:06:47,000
+the for eat a DJ Omega KN
+ஒரு டி.ஜே. ஒமேகா கே சாப்பிட
+
+00:06:47,000 --> 00:06:52,000
+well we'll see is a representation in these Terms
+நன்றாக நாம் பார்க்க வேண்டும் இந்த அடிப்படையில் ஒரு பிரதிநிதித்துவம் உள்ளது
+
+00:06:52,000 --> 00:06:56,000
+leads to what's for two as for EA
+ஈ.ஏ. என இரண்டு தான் என்ன வழிவகுக்கிறது
+
+00:06:56,000 --> 00:07:00,000
+analysis and that's what we'll be dealing with over the next several
+பகுப்பாய்வு மற்றும் நாம் அடுத்த சில மேல் கையாள்வதில் இருக்க வேண்டும் என்ன
+
+00:07:00,000 --> 00:07:02,000
+lectures
+விரிவுரைகள்
+
+00:07:02,000 --> 00:07:06,000
+will then be exploiting this representation actually
+பின்னர் உண்மையில் இந்த பிரதிநிதித்துவம் பயன்படுத்தி
+
+00:07:06,000 --> 00:07:09,000
+through most the course and then toward
+மிக நிச்சயமாக மூலம் பின்னர் நோக்கி
+
+00:07:09,000 --> 00:07:13,000
+the end of the course will returned to generalizing
+நிச்சயமாக இறுதியில் பொதுமைப்படுத்தாமலும் திரும்பினார்
+
+00:07:13,000 --> 00:07:17,000
+the for a representation to the discussion over plus transforms the
+பிளஸ் மீது விவாதம் ஒரு பிரதிநிதித்துவம் உருமாறகிறது
+
+00:07:17,000 --> 00:07:19,000
+transforms
+மாற்றமானது
+
+00:07:19,000 --> 00:07:22,000
+so for now we want to restrict ourselves to
+எனவே இப்போது நாம் நம்மை கட்டுப்படுத்தி கொள்ள வேண்டும்
+
+00:07:22,000 --> 00:07:25,000
+complex exponentials a particular form in
+சிக்கலான நிகழ்வுஎண் ஒரு குறிப்பிட்ட வடிவத்தில்
+
+00:07:25,000 --> 00:07:29,000
+and in fact also initially to continuous-time
+மற்றும் உண்மையில் கூட ஆரம்பத்தில் தொடர்ச்சியான நேரம்
+
+00:07:29,000 --> 00:07:32,000
+signals and systems so let's begin
+சமிக்ஞைகள் மற்றும் அமைப்புகள் ஆரம்பிக்கலாம்
+
+00:07:32,000 --> 00:07:36,000
+with the continuous-time case the complex exponentials that we want to
+தொடர்ச்சியான நேர விஷயத்தில் நாம் செய்ய வேண்டும் என்று சிக்கலான நிகழ்வுஎண்
+
+00:07:36,000 --> 00:07:36,000
+deal with
+சமாளிக்க
+
+00:07:36,000 --> 00:07:41,000
+in and focus first the ball on what I refer to as
+மற்றும் நான் என பார்க்கவும் என்ன முதல் பந்து கவனம்
+
+00:07:41,000 --> 00:07:46,000
+the eigenfunction property love this particular set a building blocks
+eigenfunction சொத்து இந்த குறிப்பிட்ட தொகுப்பை ஒரு கட்டுமான தொகுதிகள் பிடிக்கிறது
+
+00:07:46,000 --> 00:07:49,000
+we're talking about
+நாம் பற்றி பேசுகிறீர்கள்
+
+00:07:49,000 --> 00:07:53,000
+basic signals the form either the J Omega some Katy
+அடிப்படை சமிக்ஞைகளை ஒன்று ஜே ஒமேகா சில கேட்டி
+
+00:07:53,000 --> 00:07:56,000
+and this statement is there
+இந்த அறிக்கை உள்ளது
+
+00:07:56,000 --> 00:08:01,000
+for a linear time-invariant system the response to one of these
+ஒரு நேர்கோட்டு நேரம் மாற்றமில்லாத அமைப்பு இந்த ஒரு பதில்
+
+00:08:01,000 --> 00:08:04,000
+is 0 exactly the same form
+0 அதே வடிவம்
+
+00:08:04,000 --> 00:08:08,000
+just simply multiplied by a complex
+வெறுமனே ஒரு சிக்கலான பெருக்கி
+
+00:08:08,000 --> 00:08:11,000
+factor that complex factor depending on
+சிக்கலான காரணி பொறுத்து அந்த காரணி
+
+00:08:11,000 --> 00:08:14,000
+what the frequency Omega k is
+என்ன அதிர்வெண் ஒமேகா k உள்ளது
+
+00:08:14,000 --> 00:08:20,000
+now more or less the justification for this is the proof follows by
+இப்போது அதிகமாகவோ அல்லது குறைவாகவோ இந்த காரணங்களின் ஆதாரம் உள்ளது
+
+00:08:20,000 --> 00:08:25,000
+simply looking at the response to a complex exponential
+வெறுமனே ஒரு சிக்கலான அதிவேகமான பதில் பார்த்து
+
+00:08:25,000 --> 00:08:28,000
+using the convolution integral so
+சுழற்சி ஒருங்கிணைந்த அதனால் பயன்படுத்தி
+
+00:08:28,000 --> 00:08:31,000
+if we put a complex exponential
+நாங்கள் ஒரு சிக்கலான அதிவேகமான வைத்து இருந்தால்
+
+00:08:31,000 --> 00:08:35,000
+into a linear time-invariant system
+ஒரு நேர்கோட்டு நேரம் மாற்றமில்லாத அமைப்பு ஒரு
+
+00:08:35,000 --> 00:08:38,000
+with impulse response a gypsy then
+உந்துவிசை பதில் ஒரு ஜிப்சி பின்னர்
+
+00:08:38,000 --> 00:08:42,000
+we can express the response as i've indicated here
+நான் இங்கே சுட்டி போல நாம் பதில் வெளிப்படுத்த முடியும்
+
+00:08:42,000 --> 00:08:46,000
+we can then recognize that this complex exponential
+நாம் அடையாளம் காண முடியும் என்று இந்த சிக்கலான அதிவேகமான
+
+00:08:46,000 --> 00:08:49,000
+can be factored into two terms and so
+இரண்டு சொற்கள் மற்றும் ஒரு காரணியாக இருக்க முடியும்
+
+00:08:49,000 --> 00:08:54,000
+we can rewrite this complex exponential
+நாம் இந்த சிக்கலான அதிவேகமான மீண்டும் எழுத முடியும்
+
+00:08:54,000 --> 00:08:57,000
+as this product second recognize
+இந்த தயாரிப்பு இரண்டாவது அடையாளம்
+
+00:08:57,000 --> 00:09:01,000
+that this term can be taken
+இந்த கால எடுத்து கொள்ள முடியும் என்று
+
+00:09:01,000 --> 00:09:06,000
+outside the integral over here because of the fact that
+ஏனெனில் உண்மையில் இங்கு ஒருங்கிணைந்த வெளியே என்று
+
+00:09:06,000 --> 00:09:09,000
+it depends only on tea and not on tap now
+அது இப்போது மட்டும் தேயிலை மற்றும் குழாய் பொறுத்தது
+
+00:09:09,000 --> 00:09:13,000
+and so what we're left with when we tracked this through
+எனவே நாம் தான் இந்த கண்காணிக்கப்படும் போது விட்டு
+
+00:09:13,000 --> 00:09:18,000
+is that with a complex exponential input we get
+என்று நாம் ஒரு சிக்கலான அதிவேகமான உள்ளீடு உள்ளது
+
+00:09:18,000 --> 00:09:22,000
+an output which is the same complex exponential
+அதே சிக்கலான அதிவேகமான இது ஒரு வெளியீடு
+
+00:09:22,000 --> 00:09:25,000
+namely this factor times
+அதாவது இந்த காரணி முறை
+
+00:09:25,000 --> 00:09:29,000
+this integral and this integral is
+இந்த ஒருங்கிணைந்த இந்த ஒருங்கிணைந்த ஆகிறது
+
+00:09:29,000 --> 00:09:32,000
+what I referred to above as
+நான் மேலே குறிப்பிட்டது
+
+00:09:32,000 --> 00:09:35,000
+H all omega-6 K
+எச் அனைத்து ஒமேகா 6 கே
+
+00:09:35,000 --> 00:09:41,000
+and so in fact we put in a complex exponential
+அதனால் உண்மையில் நாம் ஒரு சிக்கலான அதிவேகமான வைத்து
+
+00:09:41,000 --> 00:09:45,000
+we get out a complex exponential love the same frequency
+நாங்கள் ஒரு சிக்கலான அதிவேகமான காதல் அதே அதிர்வெண் வெளியே
+
+00:09:45,000 --> 00:09:49,000
+multiplied by a complex constant and
+ஒரு சிக்கலான நிலையான மற்றும் பெருக்கி
+
+00:09:49,000 --> 00:09:54,000
+that is what's referred to as the eigenfunction property I can function
+என்று நான் செயல்பட முடியும் eigenfunction சொத்து என குறிப்பிடப்படுகிறது என்ன ஆகிறது
+
+00:09:54,000 --> 00:09:55,000
+meaning
+பொருள்
+
+00:09:55,000 --> 00:09:59,000
+that and I can function of a system or mathematical expression
+என்று நான் ஒரு முறை அல்லது கணித வெளிப்பாடு செயல்பட முடியும்
+
+00:09:59,000 --> 00:10:02,000
+is a function which when you put it through the system
+ஒரு செயல்பாடு இது நீங்கள் கணினி மூலம் அதை வைத்து போது
+
+00:10:02,000 --> 00:10:07,000
+comes out looking exactly the same except for a change in amplitude
+வெளியே வீச்சு ஒரு மாற்றம் தவிர போலவே பார்த்து வருகிறது
+
+00:10:07,000 --> 00:10:11,000
+that change in amplitude being the eigen value so
+வீச்சு ஐகன் மதிப்பு இருப்பது அந்த மாற்றத்தை மிகவும்
+
+00:10:11,000 --> 00:10:14,000
+in fact this function is
+உண்மையில் இந்த செயல்பாடு
+
+00:10:14,000 --> 00:10:17,000
+the eigenfunction
+eigenfunction
+
+00:10:17,000 --> 00:10:21,000
+and this bad you
+இந்த கெட்ட
+
+00:10:21,000 --> 00:10:27,000
+is the I can bag
+நான் பையை ஆகிறது
+
+00:10:27,000 --> 00:10:30,000
+okay now it's because if the eigenfunction
+சரி இப்போது அது தான் காரணம் என்றால் eigenfunction
+
+00:10:30,000 --> 00:10:35,000
+property that complex exponentials a particularly convenient as building
+சொத்து கட்டிட, குறிப்பாக வசதியான சிக்கலான நிகழ்வுஎண்
+
+00:10:35,000 --> 00:10:35,000
+blocks
+தொகுதிகள்
+
+00:10:35,000 --> 00:10:39,000
+namely you put it through the system they come out with the same form
+அதாவது நீங்கள் அவர்கள் அதே வடிவத்தில் வெளியே வந்து கணினி மூலம் அதை வைத்து
+
+00:10:39,000 --> 00:10:45,000
+and simply scale the other part to the question related
+வெறுமனே தொடர்புடைய கேள்விக்கு மற்ற பகுதி அளவிட
+
+00:10:45,000 --> 00:10:48,000
+to the strategy that we've been pursuing is
+நாம் தொடர்கிறது என்று மூலோபாயம்
+
+00:10:48,000 --> 00:10:52,000
+to hope that the signals
+நம்புகிறேன் என்று சமிக்ஞைகளை
+
+00:10:52,000 --> 00:10:57,000
+can be used as building blocks to represent a
+ஒரு பிரதிநிதித்துவம் கட்டுமான தொகுதிகள் பயன்படுத்த முடியும்
+
+00:10:57,000 --> 00:11:00,000
+very broad classes signals through linear combination
+மிக பரந்த வகுப்புகள் சமிக்ஞைகளை நேரியல் ஆகியவற்றின் மூலம்
+
+00:11:00,000 --> 00:11:05,000
+and in fact that turns out to be the case with complex exponentials
+உண்மையில் சிக்கலான நிகழ்வுஎண் வழக்கு மாறிவிடும்
+
+00:11:05,000 --> 00:11:08,000
+as we worked our way through that
+நாம் அந்த வழியாக நம் வழி வேலை என
+
+00:11:08,000 --> 00:11:13,000
+will first consider the case love periodic signals
+முதல் கால சமிக்ஞைகள் அன்பு வழக்கில் பரிசீலிக்கும்
+
+00:11:13,000 --> 00:11:18,000
+and what that leads to is a representation a periodic signals
+என்ன என்று வழிவகுக்கிறது ஒரு பிரதிநிதித்துவம் ஒரு கால சமிக்ஞைகள் ஆகிறது
+
+00:11:18,000 --> 00:11:23,000
+through what's called the forty a series following that
+பின்வரும் ஒரு தொடர் நாற்பது என்று என்ன மூலம்
+
+00:11:23,000 --> 00:11:28,000
+we will turn our attention to non periodic or as I refer to it a periodic
+நான் அதை ஒரு கால பார்க்கவும் நாம் அல்லாத கால நமது கவனத்தை திருப்ப அல்லது
+
+00:11:28,000 --> 00:11:29,000
+signals
+சிக்னல்களை
+
+00:11:29,000 --> 00:11:33,000
+and the representation that's developed
+மற்றும் அபிவிருத்தி என்று பிரதிநிதித்துவம்
+
+00:11:33,000 --> 00:11:37,000
+interns love linear combinations a complex exponentials
+பயிற்சியாளர்களுக்கு நேரியல் சேர்க்கைகள் ஒரு சிக்கலான நிகழ்வுஎண் அன்பு
+
+00:11:37,000 --> 00:11:41,000
+is what's referred to as the 48 transport so
+எனவே 48 போக்குவரத்து என குறிப்பிடப்படுகிறது என்ன ஆகிறது
+
+00:11:41,000 --> 00:11:45,000
+the first thing that we want to deal with our periodic signals
+நாங்கள் எங்கள் கால சமிக்ஞைகள் சமாளிக்க வேண்டும் என்று முதல் விஷயம்
+
+00:11:45,000 --> 00:11:50,000
+and before you series okay so
+நீங்கள் தொடரில் முன் சரி, அதனால்
+
+00:11:50,000 --> 00:11:54,000
+what we're talking about then is the continuous-time
+என்ன நாம் பற்றி பேசுகிறீர்கள் தொடர்ச்சியான நேரம்
+
+00:11:54,000 --> 00:11:57,000
+for a series and
+ஒரு தொடர் மற்றும்
+
+00:11:57,000 --> 00:12:01,000
+the for a series is a representation for
+ஒரு தொடர் ஒரு பிரதிநிதித்துவம் உள்ளது
+
+00:12:01,000 --> 00:12:05,000
+periodic continuous-time signals we have
+நாம் கால தொடர்ச்சியான நேர சிக்னல்களை
+
+00:12:05,000 --> 00:12:09,000
+a signal then which is periodic and
+ஒரு சமிக்ஞை பின்னர் கால மற்றும் இது
+
+00:12:09,000 --> 00:12:12,000
+were choosing t0 to denote the period
+காலம் குறிக்க t0 தேர்வு
+
+00:12:12,000 --> 00:12:16,000
+so its t0
+அதனால் அதன் t0
+
+00:12:16,000 --> 00:12:19,000
+then corresponds to the period
+காலம் ஒத்துள்ளது
+
+00:12:19,000 --> 00:12:22,000
+our periodic signal Omega 0
+எங்கள் கால சமிக்ஞை ஒமேகா 0
+
+00:12:22,000 --> 00:12:26,000
+is to party over t0 as
+என t0 கட்சி உள்ளது
+
+00:12:26,000 --> 00:12:29,000
+you recall from our discussion love
+நீங்கள் எங்கள் விவாதம் காதல் நினைவு
+
+00:12:29,000 --> 00:12:34,000
+periodic signals and sinusoids before and that's two pirates 0
+கால சமிக்ஞைகள் மற்றும் sinusoids முன் மற்றும் இரண்டு கடற் 0
+
+00:12:34,000 --> 00:12:40,000
+so this is the fundamental frequency now
+இந்த இப்போது அடிப்படை அதிர்வெண் ஆகிறது
+
+00:12:40,000 --> 00:12:43,000
+let's examine first the ball complex exponentials
+முதல் பந்து சிக்கலான நிகழ்வுஎண் ஆராய்வோம்
+
+00:12:43,000 --> 00:12:47,000
+and recognize first the ball that
+முதல் அங்கீகரிக்க பந்து என்று
+
+00:12:47,000 --> 00:12:50,000
+there is a complex exponential that has
+என்று ஒரு சிக்கலான அதிவேகமான உள்ளது
+
+00:12:50,000 --> 00:12:53,000
+exactly the same period and
+அதே காலத்தில்
+
+00:12:53,000 --> 00:12:57,000
+fundamental frequency as are more general periodic signal
+மேலும் பொது கால சமிக்ஞை என அடிப்படை அதிர்வெண்
+
+00:12:57,000 --> 00:13:02,000
+namely the complex exponential you to the jail maker 0t
+அதாவது சிக்கலான சிறையில் தயாரிப்பாளர் 0t நீங்கள் அதிவேகமான
+
+00:13:02,000 --> 00:13:07,000
+where Omega 0 is to Paul II over t0
+ஒமேகா 0 t0 மீது பால் II எங்கே
+
+00:13:07,000 --> 00:13:13,000
+or equivalent Lee t0 is to pie over Omega 0 now
+அல்லது அதற்கு சமமான லீ t0 இப்போது ஒமேகா 0 மீது பை ஆகிறது
+
+00:13:13,000 --> 00:13:16,000
+that's the complex exponential which has
+என்று இது சிக்கலான அதிவேகமான தான்
+
+00:13:16,000 --> 00:13:20,000
+t0 as the fundamental period but
+அடிப்படை காலத்தில் t0 ஆனால்
+
+00:13:20,000 --> 00:13:24,000
+think there are harmonically related complex exponentials
+இசையாக தொடர்பான சிக்கலான நிகழ்வுஎண் உள்ளன என்று
+
+00:13:24,000 --> 00:13:29,000
+that also have t0 as a period
+என்று ஒரு காலத்தில் t0 வேண்டும்
+
+00:13:29,000 --> 00:13:32,000
+although in fact their fundamental period shorter
+எனினும் உண்மையில் அவர்களின் அடிப்படை காலத்தில் குறுகிய
+
+00:13:32,000 --> 00:13:36,000
+so we can also look at complex exponentials
+அதனால் நாங்கள் சிக்கலான நிகழ்வுஎண் பார்க்க முடியும்
+
+00:13:36,000 --> 00:13:39,000
+before either the JK Omega 0t
+ஜே.கே. ஒமேகா 0t அல்லது முன்
+
+00:13:39,000 --> 00:13:42,000
+these likewise are periodic
+இந்த இதேபோல் கால இருக்கின்றன
+
+00:13:42,000 --> 00:13:46,000
+with the period love t0
+காலம் காதல் t0 கொண்டு
+
+00:13:46,000 --> 00:13:49,000
+although in fact their fundamental period
+எனினும் உண்மையில் அவர்களின் அடிப்படை காலம்
+
+00:13:49,000 --> 00:13:52,000
+is t0 divided by K or equivalently
+t0 சமமான கே வகுக்க அல்லது
+
+00:13:52,000 --> 00:13:56,000
+to par i divided by their fundamental frequency
+சம நான் அவர்களின் அடிப்படை அதிர்வெண் வகுக்க
+
+00:13:56,000 --> 00:14:00,000
+k Omega 0 so as K
+எனவே, k கே ஒமேகா 0
+
+00:14:00,000 --> 00:14:03,000
+a richer varies these correspond to
+ஒரு பணக்கார இந்த ஒத்திருக்கும் மாறுபடுகிறது
+
+00:14:03,000 --> 00:14:07,000
+harmonically related complex exponentials
+இசையாக தொடர்பான சிக்கலான நிகழ்வுஎண்
+
+00:14:07,000 --> 00:14:11,000
+now with the forty a series
+இப்போது நாற்பது தொடர்
+
+00:14:11,000 --> 00:14:16,000
+says and will justify this kinda bit by bit is the discussion goes I'm
+என்கிறார் கிரகமாக பிட் பிட் இந்த நியாயப்படுத்த முடியாது கலந்துரையாடல் நான் சென்று உள்ளது
+
+00:14:16,000 --> 00:14:20,000
+what the four-day series says that in fact what for EA
+நான்கு நாள் தொடர் சொல்வது என்ன என்பதை என்ன ஈ.ஏ.
+
+00:14:20,000 --> 00:14:23,000
+said which was essentially the
+அடிப்படையில் இது என்றார்
+
+00:14:23,000 --> 00:14:27,000
+is brilliant insight is that if I have
+சிறந்த உட்பார்வை ஆகும் என்று நான் இருந்தால்
+
+00:14:27,000 --> 00:14:32,000
+a very general periodic signal I can represented as a linear combination of
+நான் ஒரு நேர்கோட்டு இணைந்து குறிப்பிடப்படுகின்றன முடியும் ஒரு பொது கால சமிக்ஞை
+
+00:14:32,000 --> 00:14:34,000
+these harmonically related
+இந்த இசையாக தொடர்புடைய
+
+00:14:34,000 --> 00:14:37,000
+complex exponentials so
+சிக்கலான அதிவேகமான ஒலி
+
+00:14:37,000 --> 00:14:41,000
+that representation is what i've indicated here
+அந்த பிரதிநிதித்துவம் நான் இங்கே சுட்டி என்ன ஆகிறது
+
+00:14:41,000 --> 00:14:45,000
+and this summation is
+இந்த கூட்டுத்தொகை உள்ளது
+
+00:14:45,000 --> 00:14:48,000
+what will be referred to as
+என குறிப்பிடப்படுகிறது என்ன
+
+00:14:48,000 --> 00:14:52,000
+the for EA
+ஈ.ஏ.
+
+00:14:52,000 --> 00:14:56,000
+series
+தொடர்
+
+00:14:56,000 --> 00:14:59,000
+and as we proceed with the discussion there are two issues
+நாம் விவாதம் தொடரும்போது மற்றும் இரண்டு பிரச்சினைகள் உள்ளன
+
+00:14:59,000 --> 00:15:04,000
+couldn't that will develop one is assuming
+என்று ஒரு அனுமானித்து உருவாக்க முடியவில்லை
+
+00:15:04,000 --> 00:15:08,000
+that our periodic signal can be represented this way
+எங்கள் கால சமிக்ஞை இந்த வழியில் குறிப்பிடப்படுகின்றன முடியும் என்று
+
+00:15:08,000 --> 00:15:12,000
+how do we determine the for a series coefficients
+நாம் எப்படி ஒரு தொடர் குணகங்களுக்காக தீர்மானிக்க வேண்டும்
+
+00:15:12,000 --> 00:15:15,000
+as they refer to a suitcase that's one question
+அவர்கள் ஒரு கேள்வி என்று ஒரு பெட்டி பார்க்கவும் போன்ற
+
+00:15:15,000 --> 00:15:19,000
+and the second question will be
+இரண்டாவது கேள்வி இருக்கும்
+
+00:15:19,000 --> 00:15:23,000
+how broad a class of signals in fact can be represented that
+உண்மையில் சிக்னல்களை ஒரு வர்க்கம் என்று குறிப்பிடப்படுகின்றன பரந்த
+
+00:15:23,000 --> 00:15:26,000
+this way and bats another question their
+இந்த வழியில் வெளவால்கள் மற்றொரு கேள்விக்கு அவர்கள்
+
+00:15:26,000 --> 00:15:30,000
+will deal with separately
+தனியாக சமாளிக்க முடியும்
+
+00:15:30,000 --> 00:15:34,000
+now just focusing on this representation
+இப்போது இந்த பிரதிநிதித்துவம் கவனம்
+
+00:15:34,000 --> 00:15:37,000
+for a minute this representation
+ஒரு நிமிடம் இந்த பிரதிநிதித்துவத்தை
+
+00:15:37,000 --> 00:15:41,000
+love the four EA series which
+நான்கு ஈ.ஏ. தொடர் அன்பு இது
+
+00:15:41,000 --> 00:15:44,000
+I repeated again
+நான் மீண்டும் மீண்டும்
+
+00:15:44,000 --> 00:15:48,000
+here
+இங்கே
+
+00:15:48,000 --> 00:15:52,000
+is what's referred to as the complex
+சிக்கலான என குறிப்பிடப்படுகிறது என்ன ஆகிறது
+
+00:15:52,000 --> 00:15:55,000
+exponential form love for EA series
+ஈ.ஏ. தொடர் இயல் வடிவம் காதல்
+
+00:15:55,000 --> 00:15:58,000
+and it's important to note incidently
+அது பெரிதும் கவனத்தில் கொள்வது அவசியம்
+
+00:15:58,000 --> 00:16:04,000
+day this summation involves frequencies k Omega 0
+நாள் இந்த கூட்டுத்தொகை அதிர்வெண்கள் ஒமேகா 0 k ஈடுபட்டிருக்கிறது
+
+00:16:04,000 --> 00:16:07,000
+their are both positive and negative
+நேர்மறை மற்றும் எதிர்மறை இருவரும் தங்கள் இருக்கின்றன
+
+00:16:07,000 --> 00:16:10,000
+in other words this index K runs over
+வேறுவிதமாக கூறினால், இந்த குறியீட்டு கே மீது இயங்கும்
+
+00:16:10,000 --> 00:16:15,000
+limits that include both negative values and positive ads
+எதிர்மறை மதிப்புகளை மற்றும் நேர்மறை விளம்பரங்கள் சேர்த்தீர்கள் என்று வரம்புகளை
+
+00:16:15,000 --> 00:16:19,000
+now that complex exponential form is one
+இப்போது சிக்கலான அதிவேகமான வடிவம் ஒன்று இருக்கிறது
+
+00:16:19,000 --> 00:16:22,000
+representation for before you a series
+நீங்கள் முன்பு ஒரு தொடர் பிரதிநிதித்துவம்
+
+00:16:22,000 --> 00:16:26,000
+and in fact it's the one that we will be principally
+மற்றும் உண்மையில் அதை நாம் முக்கியமாக இருக்கும் என்று தான்
+
+00:16:26,000 --> 00:16:31,000
+relying on in this course there is another representation that
+இந்த போக்கில் நம்பியிருக்கிறது மற்றொரு பிரதிநிதித்துவம் இல்லை என்று
+
+00:16:31,000 --> 00:16:34,000
+perhaps you come across previously
+ஒருவேளை நீங்கள் முன்னர் முழுவதும் வரும்
+
+00:16:34,000 --> 00:16:38,000
+and that in a variety of other contacts is
+மற்றும் பிற தொடர்புகள் பல்வேறு என்று ஆகிறது
+
+00:16:38,000 --> 00:16:41,000
+is typically used which is called the trigonometric form
+பொதுவாக திரிகோண வடிவம் என்று அழைக்கப்படுகிறது இது பயன்படுத்தப்படுகிறது
+
+00:16:41,000 --> 00:16:46,000
+the forty a series without really tracking through the algebra
+உண்மையில், அல்ஜீப்ரா மூலம் கண்காணிப்பு இல்லாமல் நாற்பது தொடர்
+
+00:16:46,000 --> 00:16:50,000
+essentially we can get to the trigonometric for
+அடிப்படையில் நாம் முக்கோணவியல் பெற முடியும்
+
+00:16:50,000 --> 00:16:54,000
+from the complex exponential form by
+சிக்கலான இயல் வடிவம் மூலம் இருந்து
+
+00:16:54,000 --> 00:16:58,000
+recognizing that if we express the complex coefficients
+அங்கீகரித்து என்று நாம் சிக்கலான குணகங்களையும் வெளிப்படுத்த என்றால்
+
+00:16:58,000 --> 00:17:02,000
+in polar for or in rectangular for
+ஐந்து அல்லது செவ்வக துருவ உள்ள
+
+00:17:02,000 --> 00:17:06,000
+and expand the complex exponential
+மற்றும் சிக்கலான அதிவேகமான விரிவாக்க
+
+00:17:06,000 --> 00:17:11,000
+term out in terms of cosine plus J sign
+பிளஸ் ஜே அடையாளம் கோசைன் அடிப்படையில் கால அவுட்
+
+00:17:11,000 --> 00:17:14,000
+using just simply Oilers relation then
+பின்னர் வெறுமனே Oilers தொடர்பாக பயன்படுத்தி
+
+00:17:14,000 --> 00:17:18,000
+in we will end up with the representation
+நாம் பிரதிநிதித்துவம் முடிவடையும் உள்ள
+
+00:17:18,000 --> 00:17:22,000
+for the periodic signal
+கால சமிக்ஞை
+
+00:17:22,000 --> 00:17:26,000
+were a re expression love the for a series
+ஒரு மறு வெளிப்பாடு ஒரு தொடர் காதலி
+
+00:17:26,000 --> 00:17:32,000
+expression that we had previously either in the form that I indicate here
+நான் இங்கே சுட்டி காட்டுகின்றன என்று வடிவத்தில் அல்லது முன்னர் வெளிப்பாடு
+
+00:17:32,000 --> 00:17:36,000
+we're now the periodic signal is expressed
+நாம் கால சமிக்ஞை வெளிப்படுத்தப்படுகிறது இப்போது இருக்கிறோம்
+
+00:17:36,000 --> 00:17:40,000
+in terms of a summation love cosines
+ஒரு கூட்டுத்தொகை காதல் கோசைன் அடிப்படையில்
+
+00:17:40,000 --> 00:17:43,000
+with appropriate ample to in phase
+கட்ட பொருத்தமான உச்சபட்ச
+
+00:17:43,000 --> 00:17:48,000
+or another acquittal or triggered a metric for
+அல்லது மற்றொரு விடுவிக்க அல்லது ஒரு மெட்ரிக் தூண்டப்படலாம்
+
+00:17:48,000 --> 00:17:51,000
+involves rearranging this
+இந்த வரிசைப்படுத்தும் ஈடுபட்டிருக்கிறது
+
+00:17:51,000 --> 00:17:54,000
+in terms or a combination
+விதிமுறைகள் அல்லது ஒரு கலவையை
+
+00:17:54,000 --> 00:17:58,000
+of cosines and signs now
+கோசைன் மற்றும் இப்போது அறிகுறிகள்
+
+00:17:58,000 --> 00:18:03,000
+in this representation the frequencies of the sinusoids
+இந்த பிரதிநிதித்துவம் sinusoids அலைவரிசைகளை
+
+00:18:03,000 --> 00:18:07,000
+very only over positive frequencies
+மிகவும் சாதகமான ஒரே ஒரு அலைவெண்களிலும்
+
+00:18:07,000 --> 00:18:11,000
+and typically one thinks
+பொதுவாக ஒரு நினைக்கிறது
+
+00:18:11,000 --> 00:18:15,000
+of periodic signals is having positive frequencies associated with them
+கால சமிக்ஞைகள் அவர்கள் தொடர்புடைய நேர்மறையான அதிர்வெண்கள் கொண்ட
+
+00:18:15,000 --> 00:18:18,000
+however let's look back
+எனினும் மீண்டும் பார்போம்
+
+00:18:18,000 --> 00:18:22,000
+at the complex exponential form
+சிக்கலான இயல் வடிவம் மணிக்கு
+
+00:18:22,000 --> 00:18:26,000
+for the forty a series at the top of the board
+நாற்பது பலகை மேல் ஒரு தொடர்
+
+00:18:26,000 --> 00:18:31,000
+and in that representation when we use this representation
+மற்றும் அந்த பிரதிநிதித்துவம் நாம் இந்த பிரதிநிதித்துவம் பயன்படுத்த போது
+
+00:18:31,000 --> 00:18:34,000
+will find it convenient to refer to both
+அது வசதியான இரண்டு பார்க்கவும் கண்டுபிடிக்கும்
+
+00:18:34,000 --> 00:18:39,000
+positive frequencies and negative frequencies so
+நேர்மறை அதிர்வெண்கள் மற்றும் எதிர்மறை அதிர்வெண்கள் மிகவும்
+
+00:18:39,000 --> 00:18:43,000
+the representation that we will most typically be using is the complex
+நாம் மிகவும் பொதுவாக பயன்படுத்தி கொள்ள வேண்டும் பிரதிநிதித்துவம் சிக்கலாக உள்ளது
+
+00:18:43,000 --> 00:18:44,000
+exponential form
+இயல் வடிவம்
+
+00:18:44,000 --> 00:18:51,000
+and in that form what will find as we think it decomposing a periodic signal
+நாம் அது ஒரு கால சமிக்ஞை அழுக நினைப்பது போல் அந்த வடிவத்தில் என்ன கண்டுபிடிக்கும்
+
+00:18:51,000 --> 00:18:54,000
+in to its compliments
+அதன் பாராட்டுக்களை உள்ள
+
+00:18:54,000 --> 00:18:58,000
+at different frequencies it will involve both positive frequencies
+வெவ்வேறு அலைவரிசைகளில் இது நேர்மறை அதிர்வெண்கள் இருவரும் உள்ளடக்கம்
+
+00:18:58,000 --> 00:19:02,000
+negative frequencies
+எதிர்மறை அதிர்வெண்கள்
+
+00:19:02,000 --> 00:19:06,000
+okay now we have the
+சரி இப்போது நாம்
+
+00:19:06,000 --> 00:19:10,000
+for EA series representation as i've indicated here
+ஈ.ஏ. தொடர் பிரதிநிதித்துவம் நான் இங்கே சுட்டி போல
+
+00:19:10,000 --> 00:19:14,000
+again so far I sidestepped the issue as
+மீண்டும் நான் இதுவரை பிரச்சினை தவிர்த்தேன்
+
+00:19:14,000 --> 00:19:19,000
+to whether this in fact represents all the signals that we'd like to represent
+இந்த உண்மையை நாம் பிரதிநிதித்துவம் விரும்புகிறேன் என்று அனைத்து சமிக்ஞைகளை பிரதிபலிக்கிறது என்பதை
+
+00:19:19,000 --> 00:19:22,000
+let's first address the issue
+முதல் பிரச்சனைக்கு தீர்வு நாம்
+
+00:19:22,000 --> 00:19:25,000
+love how we determine these coefficients
+நாம் இந்த மதிப்பீடுகள் தீர்மானிக்க எப்படி அன்பு
+
+00:19:25,000 --> 00:19:29,000
+Acer K assuming that in fact this representation is Val
+ஏசர் கே உண்மையில் இந்த பிரதிநிதித்துவம் வால் என்று கருதிக்கொண்டு
+
+00:19:29,000 --> 00:19:33,000
+and again all kinda move through the algebra
+மீண்டும் அனைத்து கிரகமாக அல்ஜீப்ரா வழியாக செல்ல
+
+00:19:33,000 --> 00:19:38,000
+fairly quickly its a the outbreak steps the ones that
+மிகவும் விரைவாக அதன் ஒரு வெடிப்பு தான் ராஜினாமா என்று
+
+00:19:38,000 --> 00:19:41,000
+you can pursue more leisurely just the kinda
+நீங்கள் கிரகமாக இன்னும் நிதானமாக தொடர முடியும்
+
+00:19:41,000 --> 00:19:45,000
+verify them in step through them but
+அவர்கள் மூலம் நடவடிக்கை அவர்களை சரிபார்க்க ஆனால்
+
+00:19:45,000 --> 00:19:49,000
+essentially the algebra develops I did the recognition
+அடிப்படையில், அல்ஜீப்ரா நான் அங்கீகாரம் உருவாகிறது
+
+00:19:49,000 --> 00:19:54,000
+that if we integrate a complex exponential
+என்று நாம் ஒரு சிக்கலான அதிவேகமான ஒருங்கிணைக்கிறோம் என்றால்
+
+00:19:54,000 --> 00:19:58,000
+over one period t0
+ஒரு காலத்தில் t0 மீது
+
+00:19:58,000 --> 00:20:01,000
+and I mean by this notation that this is an integral
+நான் இந்த ஒரு அங்கம் என்று இந்த குறியீடு அர்த்தம்
+
+00:20:01,000 --> 00:20:04,000
+over a period where I don't particularly care
+நான் குறிப்பாக கவலை இல்லை, அங்கு ஒரு காலத்தில்
+
+00:20:04,000 --> 00:20:09,000
+where the period starts and where the period stops in other words
+அங்கு காலம் வேறு வார்த்தைகளில் நிறுத்தி அங்கு காலம் தொடங்கி
+
+00:20:09,000 --> 00:20:13,000
+exactly what period I picked that this integral
+சரியாக என்ன காலம் நான் எடுத்தார்கள் என்று இந்த ஒருங்கிணைந்த
+
+00:20:13,000 --> 00:20:16,000
+is equal to t0 when M is equal to 0
+எம் 0 சமமாக இருக்கும் போது t0 சமமாக இருக்கிறது
+
+00:20:16,000 --> 00:20:20,000
+and it's equal to 0 if am is not equal to 0
+0 சமமாக இல்லை என்றால் அது 0 சமமாக இருக்கிறது
+
+00:20:20,000 --> 00:20:25,000
+that follow simply from the fact that if we substitute in
+என்று உண்மையில் இருந்து வெறுமனே பின்பற்ற நாம் பதிலாக என்றால்
+
+00:20:25,000 --> 00:20:30,000
+for using Oilers relations so that we have the integral to cosign
+நாம் cosign ஒருங்கிணைந்த வேண்டும் என்று Oilers உறவுகளை பயன்படுத்தி
+
+00:20:30,000 --> 00:20:33,000
+was J times assign if M
+ஜே முறை ஒதுக்க என்றால் எம்
+
+00:20:33,000 --> 00:20:37,000
+is not equal to 0 than
+0 க்கும் மேற்பட்ட சமமாக இல்லை
+
+00:20:37,000 --> 00:20:40,000
+of these integrals over a period are
+ஒரு காலத்தில் இந்த தொகையீடுகளின் உள்ளன
+
+00:20:40,000 --> 00:20:45,000
+0 the integral over sign it a periodic have a sinus or a cosigner sign
+0 ஒருங்கிணைந்த அடையாளம் மீது அது ஒரு கால ஒரு சைனஸ் அல்லது ஒரு cosigner அடையாளம் வேண்டும்
+
+00:20:45,000 --> 00:20:50,000
+over an integral number periods is zero whereas
+ஒரு ஒருங்கிணைந்த எண் காலத்திற்கு மேலாக பூஜ்யம் அதேசமயம் ஆகிறது
+
+00:20:50,000 --> 00:20:54,000
+if M is equal to 0 this in a crawl
+எம் ஒரு வலம் 0 இந்த சமமாக இருந்தால்
+
+00:20:54,000 --> 00:20:58,000
+will be equal to 20 the integral the cosine
+கோசைன் 20 ஒருங்கிணைந்த சமமாக இருக்கும்
+
+00:20:58,000 --> 00:21:01,000
+and the integral on the sign is equal to
+மற்றும் அடையாளம் ஒருங்கிணைந்த சமமாக இருக்கிறது
+
+00:21:01,000 --> 00:21:05,000
+okay well the next step
+சரி, சரி, அடுத்த
+
+00:21:05,000 --> 00:21:09,000
+in developing the expression for the coefficients a Sat K
+குணகங்களையும் ஒரு சனி கே வெளிப்பாடு வளரும்
+
+00:21:09,000 --> 00:21:12,000
+is to refer back to
+திரும்பி பார்க்கவும் ஆகிறது
+
+00:21:12,000 --> 00:21:16,000
+before a series expression which was that except he
+இது ஒரு தொடர் வெளிப்பாடு அதற்கு முன்பு அவர் தவிர
+
+00:21:16,000 --> 00:21:21,000
+is equal to the sum with basic K either the JK Omega 0t
+அடிப்படை கே அல்லது ஜே.கே. ஒமேகா 0t கொண்டு சமம்
+
+00:21:21,000 --> 00:21:25,000
+if we multiply both sides that by either minus
+நாம் இருபுறமும் பெருக்கி என்றால் கழித்தல் ஒன்று
+
+00:21:25,000 --> 00:21:29,000
+jaan Omega 0t and
+ஜான் ஒமேகா 0t மற்றும்
+
+00:21:29,000 --> 00:21:36,000
+integrate that over a period
+ஒரு காலத்தில் அந்த ஒருங்கிணைக்க
+
+00:21:36,000 --> 00:21:40,000
+both sides of the equation integrated over a period
+சமன்பாடு இருபுறமும் ஒரு காலத்தில் ஒருங்கிணைந்த
+
+00:21:40,000 --> 00:21:44,000
+so these two equations are equal and then
+எனவே இந்த இரண்டு சமன்பாடுகள் பின்னர் சமமாக
+
+00:21:44,000 --> 00:21:48,000
+in essence interchange the summation and the integration
+சாராம்சத்தில் கூட்டுத்தொகை மற்றும் ஒருங்கிணைப்பு இடை
+
+00:21:48,000 --> 00:21:53,000
+so that this pardon the expression cons outside the psalm
+அதனால் இந்த மன்னிப்பு சங்கீதம் வெளிப்பாட்டை தீமைகள்
+
+00:21:53,000 --> 00:21:58,000
+and then we combine these two complex exponentials together
+மற்றும் நாம் ஒன்றாக இந்த இரண்டு சிக்கலான நிகழ்வுஎண் இணைக்கிறோம்
+
+00:21:58,000 --> 00:22:01,000
+where we come out is
+நாங்கள் வெளியே வந்து, அங்கு
+
+00:22:01,000 --> 00:22:04,000
+the expression that i've indicated here in
+நான் இங்கே சுட்டி என்று வெளிப்பாடு
+
+00:22:04,000 --> 00:22:09,000
+and then essentially what happens at this point algebraically
+பின்னர் அடிப்படையில் என்ன அல்ஜிப்ரா இந்த கட்டத்தில் நடக்கிறது
+
+00:22:09,000 --> 00:22:12,000
+is that we use the result that we just developed
+நாம் தான் உருவாக்கிய விளைவாக பயன்படுத்த உள்ளது
+
+00:22:12,000 --> 00:22:16,000
+to evaluate this cynical so
+இந்த நம்பிக்கையற்ற மதிப்பீடு செய்ய மிகவும்
+
+00:22:16,000 --> 00:22:21,000
+multiplying both sides the forty a series in and doing the integration
+நாற்பது ஒரு தொடர் இருபுறமும் பெருக்கி மற்றும் ஒருங்கிணைப்பு செய்து
+
+00:22:21,000 --> 00:22:24,000
+leads us after the appropriate manipulation
+அதற்கான கையாளுதல் பின்னர் நம்மை இட்டு செல்கிறது
+
+00:22:24,000 --> 00:22:28,000
+to the expression that
+வெளிப்பாடு என்று
+
+00:22:28,000 --> 00:22:31,000
+I have up here and
+நான் இங்கே இருக்கிறேன் மற்றும்
+
+00:22:31,000 --> 00:22:35,000
+this is equal to
+இந்த சமமாக இருக்கிறது
+
+00:22:35,000 --> 00:22:39,000
+this integral is equal to t0
+இந்த ஒருங்கிணைந்த t0 சமமாக இருக்கிறது
+
+00:22:39,000 --> 00:22:42,000
+if K is equal to an
+கே ஒரு சமமாக இருந்தால்
+
+00:22:42,000 --> 00:22:45,000
+corresponding 20 up here and 80
+இங்கே 80 20 தொடர்புடைய
+
+00:22:45,000 --> 00:22:50,000
+otherwise which is what we have demonstrated or are you previously
+இல்லையெனில் நாம் நிரூபித்துள்ளன என்ன அல்லது நீங்கள் முன்பு இருக்கும்
+
+00:22:50,000 --> 00:22:53,000
+and the upshot of all that then is that
+மற்றும் அனைத்து என்று இறுதி முடிவு பின்னர் அந்த ஆகிறது
+
+00:22:53,000 --> 00:22:56,000
+the right hand side if this expression disappears
+வலது பக்க இந்த வெளிப்பாடு மறைகிறது என்றால்
+
+00:22:56,000 --> 00:23:00,000
+except for the term when K is equal to n
+கே N சமமாக இருக்கும் கால தவிர
+
+00:23:00,000 --> 00:23:04,000
+and so finally we have what I indicate here
+எனவே இறுதியாக நான் இங்கே குறிப்பிட என்ன வேண்டும்
+
+00:23:04,000 --> 00:23:09,000
+taking t0 and moving it over to the other side of the equation
+t0 எடுத்து சமன்பாடு மற்ற பக்கத்தில் அதை நகரும்
+
+00:23:09,000 --> 00:23:13,000
+we then that then tells us
+நாம் அது பின்னர் நமக்கு சொல்கிறது
+
+00:23:13,000 --> 00:23:17,000
+how we determine the forty a series coefficients
+நாங்கள் நாற்பது ஒரு தொடர் மதிப்பீடுகள் தீர்மானிக்கிறோம் எப்படி
+
+00:23:17,000 --> 00:23:21,000
+a7 Auris K so
+A7 ஆரிஸ் கே எனவே
+
+00:23:21,000 --> 00:23:24,000
+that in effect and is the
+விளைவு மற்றும் ஆகிறது என்று
+
+00:23:24,000 --> 00:23:28,000
+what we refer to as the analysis equation the equation that begins with
+நாங்கள் ஆய்வு சமன்பாடு தொடங்குகிறது என்று சமன்பாடு என பார்க்கவும் என்ன
+
+00:23:28,000 --> 00:23:29,000
+excessive to me
+என்னை அதிகமாக
+
+00:23:29,000 --> 00:23:33,000
+and tells us how to get the for a series coefficients
+மற்றும் ஒரு தொடர் குணகங்களுக்காக பெற எப்படி நமக்கு சொல்கிறது
+
+00:23:33,000 --> 00:23:36,000
+what are referred to as
+என குறிப்பிடப்படுகிறது என்ன
+
+00:23:36,000 --> 00:23:39,000
+the 48 series synthesis equation
+48 தொடர் தொகுப்பு சமன்பாடு
+
+00:23:39,000 --> 00:23:42,000
+is the equation that tells us
+நமக்கு சொல்கிறது என்று சமன்பாடு
+
+00:23:42,000 --> 00:23:45,000
+how to build exit see outta love
+காதல் பைத்தியம் பார்க்க வெளியேறவும் உருவாக்க எப்படி
+
+00:23:45,000 --> 00:23:50,000
+these complex exponentials so we have the synthesis equation
+இந்த சிக்கலான நிகழ்வுஎண் நாம் தொகுப்பு சமன்பாடு வேண்டும்
+
+00:23:50,000 --> 00:23:53,000
+which is the one that we started from we have
+நாம் வேண்டும் இருந்து தொடங்கியது என்று ஒரு இது
+
+00:23:53,000 --> 00:23:57,000
+the analysis equation which is the equation
+சமன்பாடு இது பகுப்பாய்வு சமன்பாடு
+
+00:23:57,000 --> 00:24:01,000
+that we just developed
+நாம் தான் உருவாக்கப்பட்டது என்று
+
+00:24:01,000 --> 00:24:04,000
+okay so we in effect have
+சரி, அதனால் விளைவு நாம்
+
+00:24:04,000 --> 00:24:09,000
+going through the issue love assuming there for a series representation
+ஒரு தொடர் பிரதிநிதித்துவம் அங்கு அனுமானித்து பிரச்சினை காதல் நடக்கிறது
+
+00:24:09,000 --> 00:24:13,000
+is in fact valid how we get
+நாம் எப்படி செல்லுபடியாகும் உண்மையில் ஆகிறது
+
+00:24:13,000 --> 00:24:16,000
+the coefficients we want to address
+நாம் உரையாற்ற வேண்டும் குணகங்களையும்
+
+00:24:16,000 --> 00:24:19,000
+somewhat the question love how broad a classic signals that we're talking
+சற்றே கேள்வியை நாம் பேசுகிறோம் என்று எப்படி பரந்த ஒரு உன்னதமான சமிக்ஞைகளை பிடிக்கிறது
+
+00:24:19,000 --> 00:24:23,000
+are we talking about and what's in fact amazing
+நாங்கள் பற்றி பேசி மற்றும் அற்புதமான உண்மையில் என்ன
+
+00:24:23,000 --> 00:24:26,000
+and was for EA's amazing insight
+மற்றும் ஈ.ஏ. இன் அற்புத பார்வையை இருந்தது
+
+00:24:26,000 --> 00:24:29,000
+was that it's a very broad class say but
+அது ஒரு மிக பரந்த வர்க்கம் என்று ஆனால் என்று இருந்தது
+
+00:24:29,000 --> 00:24:33,000
+let's first look at just some examples
+சில உதாரணங்கள் உள்ள நாம் முதல் தோற்றம்
+
+00:24:33,000 --> 00:24:39,000
+in which we take a signal assume that it has the Fourier series representation
+இதில் நாம் அது ஃபோரியர் பிரதிநிதித்துவம் உள்ளது என்று கருதி ஒரு சமிக்ஞை எடுக்கிறோம்
+
+00:24:39,000 --> 00:24:44,000
+and see what the for a series coefficients look like so
+எனவே போன்ற ஒரு தொடர் குணகங்களுக்காக என்ன பார்க்க
+
+00:24:44,000 --> 00:24:49,000
+will begin with what I refer to as
+நான் என பார்க்கவும் என்ன தொடங்கும்
+
+00:24:49,000 --> 00:24:54,000
+an antisymmetric periodic square wave periodic of course because we're talking
+நிச்சயமாக ஒரு சம சீரற்ற கால சதுர அலை கால நாம் பேசுகிறோம், ஏனெனில்
+
+00:24:54,000 --> 00:24:56,000
+about periodic signals
+கால சமிக்ஞைகள் பற்றி
+
+00:24:56,000 --> 00:24:59,000
+square wave referring to its shape and
+சதுர அலை அதன் வடிவத்தை பற்றி மற்றும்
+
+00:24:59,000 --> 00:25:04,000
+antisymmetric referring to the fact that it is an odd
+சம சீரற்ற அது ஒரு வித்தியாசமாக இருக்கிறது என்று சுட்டிக்காட்டிய
+
+00:25:04,000 --> 00:25:08,000
+time function in other words it is antisymmetric
+வேறு வார்த்தைகளில் நேரம் செயல்பாடு அது சம சீரற்ற ஆகிறது
+
+00:25:08,000 --> 00:25:12,000
+about the origin now
+தோற்றம் பற்றி இப்போது
+
+00:25:12,000 --> 00:25:15,000
+the expression for the for a series coefficients
+கோவை தொடர் குணகங்களுக்காக
+
+00:25:15,000 --> 00:25:19,000
+tells us that we determine a sieve K
+நாம் ஒரு சல்லடை கே தீர்மானிக்க என்று நமக்கு சொல்கிறது
+
+00:25:19,000 --> 00:25:24,000
+by taking one over 20 times the integral over a period
+ஒரு காலத்தில் ஒரு 20 முறை ஒருங்கிணைந்த எடுத்து
+
+00:25:24,000 --> 00:25:28,000
+affects 50 either minus JK Omega 0t
+50 கழித்தல் அல்லது ஜே.கே. ஒமேகா 0t பாதிக்கிறது
+
+00:25:28,000 --> 00:25:32,000
+DT the most convenient thing in this case
+டிடி இந்த வழக்கில் மிகவும் வசதியான விஷயம்
+
+00:25:32,000 --> 00:25:36,000
+is to choose a period which
+ஒரு காலத்தில் தேர்வு இது
+
+00:25:36,000 --> 00:25:41,000
+let's say goes from minus 20 over to the plus 20 over to
+பிளஸ் 20 க்கு மேல் மைனஸ் 20 செல்கிறது சொல்கிறேன்
+
+00:25:41,000 --> 00:25:44,000
+so here except he is -1 here
+அதனால் இங்கே தவிர அவர் இருக்கிறார் -1 இங்கே
+
+00:25:44,000 --> 00:25:47,000
+expertise plus one and so
+நிபுணத்துவம் பிளஸ் ஒன் மற்றும்
+
+00:25:47,000 --> 00:25:51,000
+I've expressed the for a series called efficiency as
+நான் திறன் என்று ஒரு தொடர் வெளிப்படுத்திய
+
+00:25:51,000 --> 00:25:55,000
+this integral that's from minus 20 over
+மேல் கழித்து 20 ல் இருந்து தான் இந்த ஒருங்கிணைந்த
+
+00:25:55,000 --> 00:25:59,000
+and then and it said that is the
+பின்னர் அது என்று கூறினார்
+
+00:25:59,000 --> 00:26:03,000
+positive part of the cycle and so we have
+நாம் மிகவும் சாதகமான சுழற்சியின் ஒரு பகுதியாக மற்றும்
+
+00:26:03,000 --> 00:26:07,000
+these two integrals now I don't want to
+இந்த இரண்டு தொகையீடுகளின் இப்போது நான் விரும்பவில்லை
+
+00:26:07,000 --> 00:26:11,000
+tracked through the details both the algebra again I
+மீண்டும் இருவரும் இயற்கணிதம் நான் விவரங்கள் மூலம் கண்காணிக்கப்படும்
+
+00:26:11,000 --> 00:26:14,000
+I guess I've decided that that's much more fun for you do on your own
+நான் நீங்கள் உங்கள் சொந்த செய்ய வேண்டும் என்று மிகவும் வேடிக்கையாக உள்ளது என்று முடிவு செய்து விட்டேன் யூகிக்கிறேன்
+
+00:26:14,000 --> 00:26:18,000
+but the way it comes out when you go through it
+ஆனால் நீங்கள் அதை மூலம் செல்லும் போது அது வெளியே வரும் வழி
+
+00:26:18,000 --> 00:26:22,000
+is the expression that I finally indicate after
+நான் இறுதியாக பின்னர் குறிப்பிடுகின்றன வெளிப்பாடு ஆகும்
+
+00:26:22,000 --> 00:26:26,000
+suggesting that there are a few more steps to follow
+பின்பற்ற ஒரு சில படிகள் உள்ளன என்று
+
+00:26:26,000 --> 00:26:29,000
+and what develops is that
+என்ன உருவாகிறது என்று
+
+00:26:29,000 --> 00:26:32,000
+those two integrals together for K
+கே ஒன்றாக அந்த இரண்டு தொகையீடுகளின்
+
+00:26:32,000 --> 00:26:36,000
+not equal to 0 come out to this expression
+0 சமமாக இல்லை இந்த வெளிப்பாடு வெளியே வருகிறது
+
+00:26:36,000 --> 00:26:42,000
+and that expression is not valid for k equal to 0
+அந்த வெளிப்பாடு 0 சமமாக கே செல்லாதது
+
+00:26:42,000 --> 00:26:46,000
+per kg equal to 0 we can go back to
+0 சமமாக கிலோ ஒன்றுக்கு நாம் செல்ல முடியும்
+
+00:26:46,000 --> 00:26:50,000
+the basic expression for the forty a series
+நாற்பது ஒரு தொடர் அடிப்படை வெளிப்பாடு
+
+00:26:50,000 --> 00:26:54,000
+which is one over t0 the integral over a period
+t0 மீது ஒரு இது ஒரு காலத்தில் ஒருங்கிணைந்த
+
+00:26:54,000 --> 00:26:58,000
+exit see in the minus JK Omega 0 /td TD
+வெளியேறும் கழித்து ஜே.கே. ஒமேகா 0 / TD TD பார்க்க
+
+00:26:58,000 --> 00:27:01,000
+for cake 10 of course this term
+நிச்சயமாக கேக் 10 இந்த கால
+
+00:27:01,000 --> 00:27:04,000
+just simply becomes one and
+வெறுமனே ஒரு ஆகிறது மற்றும்
+
+00:27:04,000 --> 00:27:10,000
+so the zeroth coefficient is one over 20 times the integral
+எனவே ம.தி.மு.க. குணகம் ஒரு 20 முறை ஒருங்கிணைந்த ஆகிறது
+
+00:27:10,000 --> 00:27:14,000
+X 50 over a period now
+எக்ஸ் ஒரு காலத்தில் 50 இப்போது
+
+00:27:14,000 --> 00:27:18,000
+going back to the original function
+அசல் செயல்பாடு செல்கிறேன்
+
+00:27:18,000 --> 00:27:21,000
+that we have what we're saying then is that
+நாம் பின்னர் என்ன சொல்கிறீர்கள் என்று வேண்டும் என்று ஆகிறது
+
+00:27:21,000 --> 00:27:27,000
+0th coefficient is one over 20 times the integral over
+0th குணகம் மீது ஒரு 20 முறை ஒருங்கிணைந்த ஆகிறது
+
+00:27:27,000 --> 00:27:31,000
+one period which is in effect the average value
+விளைவு சராசரி மதிப்பு இது ஒரு காலம்
+
+00:27:31,000 --> 00:27:36,000
+and it straight forward to verify the for this case that average value
+அது நேராக முன்னோக்கி இந்த வழக்கில் சரிபார்க்க என்று சராசரி மதிப்பு
+
+00:27:36,000 --> 00:27:40,000
+is equal to 0 okay
+0 சரி சமமாக இருக்கிறது
+
+00:27:40,000 --> 00:27:43,000
+now let's look at
+இப்போது பார்ப்போம்
+
+00:27:43,000 --> 00:27:46,000
+these for a series coefficients on a bar graph
+இந்த ஒரு பொருட்டல்ல வரைபடத்தில் ஒரு தொடர் குணகங்களுக்காக
+
+00:27:46,000 --> 00:27:51,000
+and i've indicated that here the
+நான் சுட்டிக்காட்டினார் என்று இங்கே
+
+00:27:51,000 --> 00:27:55,000
+expression for the for a series coefficients we just developed and
+ஒரு தொடர் மதிப்பீடுகள் நாம் தான் வளர்ந்த மற்றும் வெளிப்பாடு
+
+00:27:55,000 --> 00:27:58,000
+a involves its
+ஒரு ஈடுபட்டிருக்கிறது அதன்
+
+00:27:58,000 --> 00:28:02,000
+0 for cake 0 it's a factor this form
+0 கேக் 0 அது ஒரு காரணி இந்த வடிவம் தான்
+
+00:28:02,000 --> 00:28:06,000
+for canine equal to 0 plotted on a bar graph
+காரை 0 சமமாக சட்டவரைப்படமாக தொகுக்கப்படும்
+
+00:28:06,000 --> 00:28:10,000
+then we see values like this 0
+நாம் இந்த 0 போன்ற மதிப்புகள் பார்க்கிறோம்
+
+00:28:10,000 --> 00:28:13,000
+at cake 0 and and associated values
+கேக் 0 மற்றும் தொடர்புடைய மதிப்புகள்
+
+00:28:13,000 --> 00:28:16,000
+and their number things to focus on
+அவர்களின் எண்ணிக்கை விஷயங்களை கவனம் செலுத்த வேண்டும்
+
+00:28:16,000 --> 00:28:19,000
+when you look at this
+நீங்கள் இதை பார் போது
+
+00:28:19,000 --> 00:28:25,000
+one is the fact that the forty a series coefficients for this example
+ஒரு உண்மை என்னவென்றால், இந்த உதாரணமாக நாற்பது ஒரு தொடர் குணகங்களையும்
+
+00:28:25,000 --> 00:28:29,000
+are surely imaginary
+நிச்சயமாக கற்பனை
+
+00:28:29,000 --> 00:28:34,000
+a second is that the Fourier series coefficients for this example
+இரண்டாவது என்று இந்த எடுத்துக்காட்டாக ஃபோரியர் குணகங்களையும்
+
+00:28:34,000 --> 00:28:39,000
+are odd sequence in other words if you look at this sequence which you see
+நீங்கள் பார்க்க, இந்த வரிசை இருக்கும் என்றால் வேறு வார்த்தைகளில் ஒற்றைப்படை வரிசை இருக்கும்
+
+00:28:39,000 --> 00:28:43,000
+are these values for negative K
+எதிர்மறை கே இந்த மதிப்புகள் இருக்கின்றன
+
+00:28:43,000 --> 00:28:46,000
+flipped over so there their imaginary
+அதனால் அங்கு சுண்டி அவர்களது கற்பனை
+
+00:28:46,000 --> 00:28:49,000
+and odd and
+ஒற்றைப்படை மற்றும்
+
+00:28:49,000 --> 00:28:52,000
+what that results in when
+என்று போது முடிவு என்ன
+
+00:28:52,000 --> 00:28:55,000
+you look at the
+நீங்கள் பார்க்க
+
+00:28:55,000 --> 00:28:59,000
+the triggered a metric form the 4e a series
+ஒரு மெட்ரிக் படிவம் 4e ஒரு தொடர் தூண்டப்படலாம்
+
+00:28:59,000 --> 00:29:05,000
+is that in fact those conditions if you put the terms altogether
+என்று உண்மையில் நீங்கள் முற்றிலும் அடிப்படையில் வைத்து அந்த நிலைமைகள் என்றால்
+
+00:29:05,000 --> 00:29:09,000
+lead you to a trigger a metric representation
+ஒரு தூண்டுதல் ஒரு மெட்ரிக் பிரதிநிதித்துவம் உங்களை இட்டு செல்லும்
+
+00:29:09,000 --> 00:29:13,000
+which involves only sign terms
+ஒரே அறிகுறி அடிப்படையில் இதில்
+
+00:29:13,000 --> 00:29:16,000
+in other words no co-signed turns let me just draw your attention to the fact
+வேறு வார்த்தைகளில் இல்லை கூட்டுறவு ஒப்பந்தம் திருப்பங்களை என்னை உண்மையில் உங்கள் கவனத்திற்கு நாம்
+
+00:29:16,000 --> 00:29:18,000
+that
+என்று
+
+00:29:18,000 --> 00:29:21,000
+since a suitcase the acer case or imaginary
+ஒரு பெட்டி என்பதால் ஏசர் வழக்கு அல்லது கற்பனை
+
+00:29:21,000 --> 00:29:25,000
+this jay takes care that fact so that these coefficients
+இந்த ஜே கவலை என்பதை எடுக்கிறது என்று இந்த மதிப்பீடுகள்
+
+00:29:25,000 --> 00:29:28,000
+are in fact real so what this says
+உண்மையில் உண்மையான எனவே இந்த சொல்வது என்ன இருக்கின்றன
+
+00:29:28,000 --> 00:29:33,000
+is that for the antisymmetric square wave the
+என்று சம சீரற்ற சதுர அலை
+
+00:29:33,000 --> 00:29:37,000
+it in effect the forty a series is a sign series
+இது நடைமுறையில் நாற்பது ஒரு தொடர் ஒரு அடையாளம் தொடர்
+
+00:29:37,000 --> 00:29:40,000
+the antisymmetric square wave is an odd function
+சம சீரற்ற சதுர அலை ஒரு புதுமையான செயல்பாடு
+
+00:29:40,000 --> 00:29:45,000
+sinusoids are not are odd functions and so this is all kinda reasonable that
+sinusoids ஒற்றைப்படை செயல்பாடுகளை உள்ளன இல்லை, எனவே இந்த அனைத்து கிரகமாக நியாயமான என்று
+
+00:29:45,000 --> 00:29:46,000
+we're building
+நாம் கட்டி
+
+00:29:46,000 --> 00:29:50,000
+odd function ido odd functions
+ஒற்றைப்படை செயல்பாடு இடோ ஒற்றைப்படை செயல்பாடுகளை
+
+00:29:50,000 --> 00:29:54,000
+as an additional aside which a I won't
+கூடுதல் ஒதுக்கி என ஒரு மாட்டேன்
+
+00:29:54,000 --> 00:29:57,000
+exploit or refer to any further here
+பயன்படுத்தி அல்லது எந்த மேலும் இங்கே பார்க்கவும்
+
+00:29:57,000 --> 00:30:01,000
+but just draw your attention to is that another aspect
+ஆனால் உங்கள் கவனத்திற்கு என்று மற்றொரு அம்சம்
+
+00:30:01,000 --> 00:30:06,000
+love this periodic square wave the particular one that we chose
+இந்த கால சதுர அலை நாம் தேர்வு என்று குறிப்பிட்ட ஒரு காதல்
+
+00:30:06,000 --> 00:30:09,000
+is dead it is what's referred to as a
+இறந்த ஒரு குறிப்பிடப்படுகிறது என்ன உள்ளது
+
+00:30:09,000 --> 00:30:13,000
+on harmonic function in other words
+வேறு வார்த்தைகளில் இசை செயல்பாடு
+
+00:30:13,000 --> 00:30:16,000
+for even values if K
+கூட மதிப்புகள், பேரூராட்சி
+
+00:30:16,000 --> 00:30:20,000
+before a series coefficients 30 their only 90
+ஒரு தொடர் 30 மட்டுமே 90 குணகங்களைகிறது முன்
+
+00:30:20,000 --> 00:30:25,000
+for iPad use K
+ஐபாட் பயன்படுத்தி புலம்
+
+00:30:25,000 --> 00:30:29,000
+okay now let's look at another example another example
+சரி இப்போது மற்றொரு உதாரணம் மற்றொரு உதாரணம் பார்ப்போம்
+
+00:30:29,000 --> 00:30:33,000
+is the symmetric periodic square wave
+சமச்சீரான கால சதுர அலையை
+
+00:30:33,000 --> 00:30:37,000
+and this is in fact example
+இந்த உண்மையை எடுத்துக்காட்டாக உள்ளது
+
+00:30:37,000 --> 00:30:41,000
+4.5 worked out in more detail in the tax then
+4.5 பின்னர் வரி இன்னும் விரிவாக வெளியே வேலை
+
+00:30:41,000 --> 00:30:45,000
+I won't bother to work work this out in detail here
+நான் இங்கே விரிவாக வேலை இந்த வேலை கவலைப்படவில்லை
+
+00:30:45,000 --> 00:30:49,000
+except to draw your attention to several
+பல உங்கள் கவனத்திற்கு மாட்டார்
+
+00:30:49,000 --> 00:30:54,000
+points here is the symmetric periodic square wave
+இங்கே சுட்டி சமச்சீரான கால சதுர அலையை
+
+00:30:54,000 --> 00:30:57,000
+and what I mean by symmetric
+நான் சமச்சீரான என்ன பொருள்
+
+00:30:57,000 --> 00:31:00,000
+is that it's an even time function
+அது ஒரு நேரம் செயல்பாடு என்று ஆகிறது
+
+00:31:00,000 --> 00:31:05,000
+now just kinda extrapolating your intuition
+இப்போது கிரகமாக உங்கள் உள்ளுணர்வு பொதுப்படுத்துவதிலோ
+
+00:31:05,000 --> 00:31:08,000
+what we you should expect is that if if it's a
+நாம் என்ன நீங்கள் எதிர்பார்க்க வேண்டும் என்று இருந்தால், அது ஒரு இருந்தால்
+
+00:31:08,000 --> 00:31:12,000
+only even time function it should be built up
+மட்டுமே கூட நேரம் செயல்பாடு அது கட்டியெழுப்பப்பட்ட
+
+00:31:12,000 --> 00:31:15,000
+or buildable if it's built up a little %ah to only
+அல்லது அதர்மம் அழிந்து அது மட்டுமே ஒரு சிறிய% ஹா கட்டியெழுப்பப்பட்ட என்றால்
+
+00:31:15,000 --> 00:31:18,000
+even sinusoids and in fact
+கூட sinusoids மற்றும் உண்மையில்
+
+00:31:18,000 --> 00:31:22,000
+that's the case so if we look at
+அந்த வழக்கில் தான் நாம் இருக்கிறோம் என்றால்
+
+00:31:22,000 --> 00:31:25,000
+the four-day series coefficients for this
+இந்த நான்கு நாள் தொடர் குணகங்களையும்
+
+00:31:25,000 --> 00:31:29,000
+the zeroth coefficient again as the average value
+சராசரி மதிப்பு மீண்டும் ம.தி.மு.க. குணகம்
+
+00:31:29,000 --> 00:31:32,000
+which in this case is a half here I've plotted
+இந்த வழக்கில் இங்கே ஒரு அரை இது நான் தொகுக்கப்படும்
+
+00:31:32,000 --> 00:31:36,000
+hi times the for a series coefficients so
+அதிக முறை தொடர் மதிப்பீடுகள் மிகவும்
+
+00:31:36,000 --> 00:31:39,000
+0 thank you as pie over to
+0 மீது பை நன்றி
+
+00:31:39,000 --> 00:31:42,000
+the coefficients are now and even sequence
+இடுப்புக்கு இப்போது கூட வரிசை இருக்கின்றன
+
+00:31:42,000 --> 00:31:45,000
+and in in other words symmetric
+மற்றும் வேறு வார்த்தைகளில் சமச்சீரான உள்ள
+
+00:31:45,000 --> 00:31:49,000
+about cake 0 and the consequences that
+கேக் 0 மற்றும் விளைவுகளை பற்றி என்று
+
+00:31:49,000 --> 00:31:53,000
+is that when you take these coefficients
+என்று நீங்கள் இந்த குணகங்களை எடுத்து போது
+
+00:31:53,000 --> 00:31:58,000
+and put together the equivalent triggered a metric form
+மற்றும் ஒன்றாக சமமான ஒரு மெட்ரிக் படிவம் தூண்டப்படலாம்
+
+00:31:58,000 --> 00:32:01,000
+the triggered a metric for involves
+தூண்டப்படலாம் ஒரு மெட்ரிக் ஈடுபட்டிருக்கிறது
+
+00:32:01,000 --> 00:32:05,000
+only cosines and no
+ஒரே கோசைன் மற்றும்
+
+00:32:05,000 --> 00:32:09,000
+sign turns now
+அடையாளம் இப்போது மாறிவிடும்
+
+00:32:09,000 --> 00:32:13,000
+you'll see this in and other examples not that will do in the lecture but
+நீங்கள் இந்த பார்க்க வேண்டும் மற்றும் பிற உதாரணங்கள் இல்லை என்று விரிவுரை செய்ய முடியாது ஆனால்
+
+00:32:13,000 --> 00:32:17,000
+examples in the text in the video manual if in fact
+வீடியோ கையேடு உரை உதாரணங்கள் என்றால் உண்மையில்
+
+00:32:17,000 --> 00:32:20,000
+the square way was neither symmetric or antisymmetric
+சதுர வழி சமச்சீர் அல்லது சம சீரற்ற அல்ல
+
+00:32:20,000 --> 00:32:23,000
+then the trigonometric form would involve both
+பின்னர் திரிகோண வடிவத்தில் இரண்டு சம்பந்தப்பட்டிருக்கலாம்
+
+00:32:23,000 --> 00:32:27,000
+sines and cosines and
+சின்ஸ் மற்றும் கோசைன் மற்றும்
+
+00:32:27,000 --> 00:32:30,000
+that is of course the more general case
+என்று நிச்சயமாக மேலும் பொது வழக்கு
+
+00:32:30,000 --> 00:32:34,000
+furthermore in the two examples are shown here
+மேலும் இரண்டு உதாரணங்கள் இங்கே காட்டப்படுகின்றன
+
+00:32:34,000 --> 00:32:37,000
+we we in both cases
+நாங்கள் இருவரும் நேரங்களில் நாம்
+
+00:32:37,000 --> 00:32:40,000
+the signal is odd harmonic
+சிக்னல் ஒற்றைப்படை சீரானது
+
+00:32:40,000 --> 00:32:43,000
+in other words for even bad news K
+கூட கெட்ட செய்தி கே வேறுவிதமாக கூறினால்
+
+00:32:43,000 --> 00:32:48,000
+the coefficients are equal to 0 although I won't justify that here that's a
+நான் இங்கே ஒரு என்று நியாயப்படுத்த முடியாது என்றாலும் குணகங்களையும் 0 சமமாக இருக்கின்றன
+
+00:32:48,000 --> 00:32:50,000
+consequence that the fact that
+விளைவு என்று உண்மையில்
+
+00:32:50,000 --> 00:32:54,000
+this symmetry is exactly about half a period
+இந்த சமச்சீர் சரியாக அரை காலம் ஆகிறது
+
+00:32:54,000 --> 00:32:57,000
+and if you made the on time with a square wave
+மற்றும் நீங்கள் ஒரு சதுர அலை நேரம் செய்தால்
+
+00:32:57,000 --> 00:33:02,000
+different in relation to the of time then that property would also
+நேரம் தொடர்பாக பல்வேறு அந்த சொத்து செல்வார்கள்
+
+00:33:02,000 --> 00:33:06,000
+disappear
+காணாமல்
+
+00:33:06,000 --> 00:33:07,000
+now
+இப்பொழுது
+
+00:33:07,000 --> 00:33:10,000
+what's kind amazing actually in
+என்ன உண்மையில் என்ன ஆச்சரியமாக இருக்கிறது
+
+00:33:10,000 --> 00:33:14,000
+is that if we take a square wave like
+என்று நாம் போன்ற ஒரு சதுர அலை எடுக்கிறோம் என்றால்
+
+00:33:14,000 --> 00:33:19,000
+I have here or as I had in the antisymmetric case
+நான் சம சீரற்ற வழக்கில் இருந்தது என நான் இங்கே இருக்கிறேன் அல்லது
+
+00:33:19,000 --> 00:33:22,000
+the implication is that I can bill
+இதன் உட்பொருள் நான் பில் முடியும் என்று ஆகிறது
+
+00:33:22,000 --> 00:33:25,000
+that square wave by adding up
+சேர்ப்பதன் மூலம் அந்த சதுர அலை
+
+00:33:25,000 --> 00:33:30,000
+on of signs were cosines and
+அறிகுறிகள் மீது கோசைன் மற்றும்
+
+00:33:30,000 --> 00:33:34,000
+it really seems kinda amazing because the square wave after all
+அது உண்மையில் ஒரு சதுர அலை காரணமாக அனைத்து பிறகு கிரகமாக ஆச்சரியமாக தெரிகிறது
+
+00:33:34,000 --> 00:33:37,000
+is a very discontinuous functions
+ஒரு தொடர்ச்சியற்ற செயல்பட்டு வருகிறது
+
+00:33:37,000 --> 00:33:42,000
+sinusoids are very continuous and it seems puzzling that in fact
+sinusoids மிகவும் தொடர்ச்சியான மற்றும் அது புதிராக தெரிகிறது என்று உண்மையில்
+
+00:33:42,000 --> 00:33:46,000
+you can do that well let's look in a little bit of detail
+நீங்கள் தான் விவரம் சிறிது பார்ப்போம் என்று நன்றாக செய்ய முடியும்
+
+00:33:46,000 --> 00:33:49,000
+how the sinusoidal
+எப்படி sinusoidal
+
+00:33:49,000 --> 00:33:53,000
+turns and up to
+திருப்பி வரை
+
+00:33:53,000 --> 00:33:56,000
+build a square wave and to do that
+ஒரு சதுர அலை உருவாக்க மற்றும் அதை செய்ய
+
+00:33:56,000 --> 00:34:00,000
+let's first define what I refer to
+முதல் நான் பார்க்கவும் என்ன வரையறை செய்யலாம்
+
+00:34:00,000 --> 00:34:04,000
+as a partial song so
+ஒரு பகுதி பாடல் என
+
+00:34:04,000 --> 00:34:07,000
+here we have the expression
+இங்கே நாம் வெளிப்பாடு வேண்டும்
+
+00:34:07,000 --> 00:34:10,000
+which is the synthesis
+தொகுப்பு இது
+
+00:34:10,000 --> 00:34:15,000
+equation telling us how accept T could be represented
+எப்படி டி குறிப்பிடப்படுகின்றன முடியும் ஏற்க எங்களிடம் சமன்பாடு
+
+00:34:15,000 --> 00:34:18,000
+as complex exponentials if it can be and
+சிக்கலான நிகழ்வுஎண் அது இருக்க முடியும் என்றால்,
+
+00:34:18,000 --> 00:34:22,000
+let's consider just a finite number of turns in this song
+இந்த பாடல் திருப்பங்களை ஒரு வரையறு எண் கருத்தில் கொள்வோம்
+
+00:34:22,000 --> 00:34:26,000
+and so X 7ft of course as n goes to infinity
+அதனால் N நிச்சயமாக எக்ஸ் 7ft முடிவிலியை செல்கிறது
+
+00:34:26,000 --> 00:34:31,000
+approaches the infinite sum that we're talking about and although we could do
+நாம் என்ன செய்ய முடியும் என்றாலும், நாம் பற்றி பேசுகிறீர்கள் என்று எல்லையற்ற தொகை நெருங்குகிறது
+
+00:34:31,000 --> 00:34:35,000
+this more generally let's not let's focus on the symmetric square wave case
+இந்த பொதுவாக தான் தான் சமச்சீர் சதுர அலை வழக்கு கவனம் வேண்டாம்
+
+00:34:35,000 --> 00:34:40,000
+where because it the symmetry of these coefficients namely that a suitcase
+அங்கு, ஏனெனில் அது இந்த குணகங்களை சமச்சீர் அதாவது ஒரு பெட்டி
+
+00:34:40,000 --> 00:34:41,000
+equal to minus
+கழித்தல் சமமாக
+
+00:34:41,000 --> 00:34:45,000
+is equal to a serb minus K we can rewrite
+நாங்கள் மீண்டும் எழுத முடியும் ஒரு சேர்பிய கழித்து கே சமமாக இருக்கும்
+
+00:34:45,000 --> 00:34:50,000
+these turns as cosine turns and so this partial some
+கோசைன் திருப்பங்களை எனவே இந்த பகுதி சில இந்த திருப்பங்களை
+
+00:34:50,000 --> 00:34:53,000
+can be express the way arm expressing it here
+இங்கே அதை வெளிப்படுத்தும் வழி கை வெளிப்படுத்த முடியும்
+
+00:34:53,000 --> 00:34:57,000
+well let's look at
+நன்றாக தான் பார்க்க வேண்டும்
+
+00:34:57,000 --> 00:35:01,000
+a few the Stearns on the graph I have
+நான் வரைபடத்தில் ஸ்டெர்ன்ஸுக்காக ஒரு சில
+
+00:35:01,000 --> 00:35:04,000
+first the ball exit tea which is our
+எங்கள் இது முதல் பந்தை வெளியேறவும் தேநீர்
+
+00:35:04,000 --> 00:35:07,000
+original square wave
+அசல் சதுர அலை
+
+00:35:07,000 --> 00:35:11,000
+the turn that I indicate here
+நான் இங்கே சுட்டி காட்டுகின்றன என்று இதையொட்டி
+
+00:35:11,000 --> 00:35:14,000
+is the factor over half which
+பாதி மீது காரணியாக இது
+
+00:35:14,000 --> 00:35:19,000
+is this term
+இந்த கால ஆகிறது
+
+00:35:19,000 --> 00:35:23,000
+with any calls one that would correspond to anyone co-signed term
+யாரையும் இணை கையெழுத்திட்ட கால ஒத்திருக்கும் என்று எந்த அழைப்புகள் ஒரு
+
+00:35:23,000 --> 00:35:26,000
+to that and so the sole those two would be yes
+என்று, அதனால் ஒரே அந்த இரண்டு இருக்கும் ஆம்
+
+00:35:26,000 --> 00:35:31,000
+which looks a little close to the square wave but
+ஒரு சிறிய சதுர அலை நெருங்கிய ஆனால் தோற்றமுள்ள
+
+00:35:31,000 --> 00:35:35,000
+certainly not very close to it at all and in fact
+நிச்சயமாக அது மிகவும் நெருக்கமான இல்லவே இல்லை உண்மையில்
+
+00:35:35,000 --> 00:35:39,000
+in its somewhat hard to imagine without
+அதன் கற்பனை சற்று கடினமாக இல்லாமல்
+
+00:35:39,000 --> 00:35:44,000
+seeing the terms build-up how in fact by adding more and more turns we can
+விதிமுறைகள் உருவாக்க அப் எப்படி உண்மையில் நாம் இன்னும் திருப்பங்களை சேர்ப்பதன் மூலம்
+
+00:35:44,000 --> 00:35:45,000
+generate something
+ஏதாவது உருவாக்க
+
+00:35:45,000 --> 00:35:49,000
+that is essentially flat except at the discontinuities
+என்று தொடர்ச்சியின்மைகளையும் தவிர அடிப்படையில் பிளாட் உள்ளது
+
+00:35:49,000 --> 00:35:53,000
+so let's look at this example and what I'd like to show
+எனவே இந்த உதாரணத்தை பார்போம் என்ன நான் காட்ட விரும்புகிறேன்
+
+00:35:53,000 --> 00:35:58,000
+is this example but now as we add many
+இந்த உதாரணம் ஆனால் இப்போது நாம் பல சேர்க்க
+
+00:35:58,000 --> 00:36:01,000
+more turns to it and let's see in fact
+மேலும் அது மாறிவிடும் மற்றும் உண்மை பார்ப்போம்
+
+00:36:01,000 --> 00:36:04,000
+how these individual turns add up
+இந்த தனிப்பட்ட திருப்பங்களை வரை சேர்க்க எப்படி
+
+00:36:04,000 --> 00:36:07,000
+to build up the square way so
+அதனால் சதுர வழி கட்டமைக்க
+
+00:36:07,000 --> 00:36:11,000
+this is the square wave that we want to build up
+இந்த நாம் உருவாக்க வேண்டும் என்று சதுர அலையை
+
+00:36:11,000 --> 00:36:14,000
+through the forty a series is this some of sinusoids
+நாற்பது மூலம் ஒரு தொடர் இந்த ஆகிறது sinusoids சில
+
+00:36:14,000 --> 00:36:20,000
+and the term for cake 0 will be a constant which represents the DC value
+மற்றும் கேக் 0 கால டிசி மதிப்பு பிரதிநிதித்துவப்படுத்தும் ஒரு நிலையான இருக்கும்
+
+00:36:20,000 --> 00:36:21,000
+with this
+இந்த
+
+00:36:21,000 --> 00:36:25,000
+and so in the partial sum as we develop it
+எனவே நாம் அதை உருவாக்க பகுதியளவு தொகை
+
+00:36:25,000 --> 00:36:30,000
+the first thing they will show is just the term for cable 0
+அவர்கள் காண்பிக்கும் முதல் விஷயம் கேபிள் 0 தான் கால ஆகிறது
+
+00:36:30,000 --> 00:36:35,000
+now for cables one we would add to that
+இப்போது கேபிள்கள் ஒரு நாம் சேர்க்க வேண்டும்
+
+00:36:35,000 --> 00:36:38,000
+one sinusoidal term and
+ஒரு sinusoidal கால மற்றும்
+
+00:36:38,000 --> 00:36:43,000
+so some love the term for cake was one cake was 0
+அதனால் சில கேக் கால ஒரு கேக் 0 இருந்தது பிடிக்கிறது
+
+00:36:43,000 --> 00:36:48,000
+is represented here now
+இப்போது இங்கே குறிப்பிடப்படும்
+
+00:36:48,000 --> 00:36:53,000
+when we go to K calls to because of the fact that this is an odd harmonic
+நாம் இந்த ஒரு புதுமையான இசை என்பதை அழைப்புகள் கே செல்லும் போது
+
+00:36:53,000 --> 00:36:53,000
+function
+செயல்பாடு
+
+00:36:53,000 --> 00:36:57,000
+in fact the term for cake was it was too
+உண்மையில் கேக் கால அது இருந்தது
+
+00:36:57,000 --> 00:37:01,000
+will be will have zero amplitude and so this won't change
+இருக்கும் பூஜ்யம் வீச்சு வேண்டும், எனவே இந்த மாற்ற முடியாது
+
+00:37:01,000 --> 00:37:06,000
+here we show the
+இங்கே நாம் காண்பிக்கிறோம்
+
+00:37:06,000 --> 00:37:09,000
+for a series would cake was to and there's no change
+ஒரு தொடர் கேக் மற்றும் எந்த மாற்றமும் இல்லை என்று
+
+00:37:09,000 --> 00:37:13,000
+and then we will go to cable 23
+மற்றும் நாம் கேபிள் 23 செல்வோம்
+
+00:37:13,000 --> 00:37:14,000
+and
+மற்றும்
+
+00:37:14,000 --> 00:37:19,000
+and we will be adding then one additional sinusoidal term here's cake
+நாம் ஒரு கூடுதல் sinusoidal கால இங்கே கேக் சேர்ப்பதன்
+
+00:37:19,000 --> 00:37:19,000
+was three
+மூன்று
+
+00:37:19,000 --> 00:37:24,000
+when we go to cable 24 again there won't be any change
+நாங்கள் கேபிள் 24 செல்லும் போது மீண்டும் எந்த மாற்றமும் இருக்காது
+
+00:37:24,000 --> 00:37:27,000
+but their will be another term that's
+ஆனால் என்று மற்றொரு கால தங்கள் இருக்கும்
+
+00:37:27,000 --> 00:37:32,000
+added at cake was five here and cable 6
+கேக் சேர்க்க ஐந்து இங்கே மற்றும் கேபிள் 6
+
+00:37:32,000 --> 00:37:37,000
+again because it's odd harmonic no change and finally cable 7
+அது இசை மாற்றம் மற்றும் இறுதியாக கேபிள் 7 ஒற்றைப்படை தான் ஏனெனில் மீண்டும்
+
+00:37:37,000 --> 00:37:43,000
+is shown here okay and we can begin to see that
+சரி இங்கே காட்டப்பட்டுள்ளது நாம் என்று பார்க்க தொடங்க முடியும்
+
+00:37:43,000 --> 00:37:47,000
+this starts to look somewhat like the square wave but
+இந்த ஓரளவு சதுர அலை போன்ற தொடங்கும் ஆனால்
+
+00:37:47,000 --> 00:37:51,000
+now to really emphasize how this builds up let's
+இப்போது உண்மையில் இந்த நாம் வளர்க்கும் எப்படி வலியுறுத்த
+
+00:37:51,000 --> 00:37:56,000
+more rapidly and Ed many more terms and in fact
+மிகவும் வேகமாக மற்றும் எட் இன்னும் பல விதிமுறைகள் மற்றும் உண்மையில்
+
+00:37:56,000 --> 00:38:00,000
+increase the number of turns up to about a hundred recognizing
+வரை நூறு அங்கீகரித்து திருப்பங்களை எண்ணிக்கை அதிகரிக்கும்
+
+00:38:00,000 --> 00:38:03,000
+that the shape will only change on the inclusion
+வடிவத்தை மட்டும் சேர்த்து மாறும் என்று
+
+00:38:03,000 --> 00:38:08,000
+all the odd number terms not the even-numbered turns because it's an odd
+அனைத்து ஒற்றைப்படை எண் அடிப்படையில் கூட எண் திருப்பங்களை இது ஒரு புதுமையான தான்
+
+00:38:08,000 --> 00:38:11,000
+harmonic function so now we're
+இசை செயல்பாடு இப்போது நாம் இருக்கிறோம்
+
+00:38:11,000 --> 00:38:15,000
+increasing and we're building up toward
+அதிகரித்து நாம் நோக்கி கட்டி
+
+00:38:15,000 --> 00:38:19,000
+k equal to 100 200 turns an
+100 200 சமமாக கே மாறும் ஒரு
+
+00:38:19,000 --> 00:38:22,000
+notice that it is the higher
+அது அதிகம் என்று கவனிக்க
+
+00:38:22,000 --> 00:38:25,000
+order turns dead tend to build up
+பொருட்டு இறந்த உருவாக்க முனைகின்றன மாறிவிடும்
+
+00:38:25,000 --> 00:38:30,000
+the discontinuity corresponding to the notion
+கருத்தை தொடர்புடைய தொடர்பின்மை
+
+00:38:30,000 --> 00:38:34,000
+there'd the discontinuities or sharp edges in a signal
+ஒரு சமிக்ஞை உள்ள தொடர்ச்சியற்ற அல்லது கூர்மையான முனைகள் உள்ளன விட்டோம்
+
+00:38:34,000 --> 00:38:38,000
+in fact are represented through the higher
+அதிக உண்மை மூலம் குறிப்பிடப்படுகின்றன
+
+00:38:38,000 --> 00:38:42,000
+frequencies in the forty a series and here we have
+நாற்பது தொடர் மற்றும் இங்கு நாம் அதிர்வெண்கள்
+
+00:38:42,000 --> 00:38:46,000
+a not too unreasonable approximation
+ஒரு மிக நியாயமற்ற இல்லை தோராய
+
+00:38:46,000 --> 00:38:50,000
+to the original square wave there is the artifact of the ripples at the
+அசல் சதுர அலை மணிக்கு இயல்பு உருவாக்கத்தின் உள்ளது
+
+00:38:50,000 --> 00:38:52,000
+discontinuity and in fact
+தொடர்பின்மை மற்றும் உண்மையில்
+
+00:38:52,000 --> 00:38:56,000
+though that rippling behavior at the discontinuities
+என்றாலும் தொடர்ச்சியின்மைகளையும் என்று rippling நடத்தை
+
+00:38:56,000 --> 00:39:00,000
+is referred to as the Gibbs phenomenon
+கிப்பினதுதோற்றப்பாடு என குறிப்பிடப்படுகிறது
+
+00:39:00,000 --> 00:39:04,000
+and it's an inherent part love the forty a series representation at
+அது ஒரு உள்ளார்ந்த பகுதியாக நாற்பது ஒரு தொடர் பிரதிநிதித்துவம் உள்ள அன்பையும்
+
+00:39:04,000 --> 00:39:05,000
+discontinuities
+தொடர்ச்சியின்மைகளையும்
+
+00:39:05,000 --> 00:39:08,000
+now to emphasize this
+இப்போது இந்த வலியுறுத்த
+
+00:39:08,000 --> 00:39:12,000
+let's decrease the number of turns back down
+மீண்டும் கீழே திருப்பங்களை எண்ணிக்கை குறைக்க அனுமதிக்க
+
+00:39:12,000 --> 00:39:16,000
+and we will carry this down
+நாம் இந்த கீழே முன்னெடுப்போம்
+
+00:39:16,000 --> 00:39:19,000
+to k equal to 1 again
+மீண்டும் 1 சமமாக முறுவல்
+
+00:39:19,000 --> 00:39:23,000
+to emphasizes how the sinusoids are building up
+இங்கு sinusoids கட்டி எப்படி வலியுறுத்துகிறது
+
+00:39:23,000 --> 00:39:28,000
+the square wave here we are back at Cape cools
+நாம் மீண்டும் கேப் இங்கே சதுர அலை குளிர்விக்கிகிறது
+
+00:39:28,000 --> 00:39:31,000
+1 and then finally we
+1 பின்னர் இறுதியாக நாம்
+
+00:39:31,000 --> 00:39:34,000
+will and back in the sinusoids that we took out
+மற்றும், நாம் வெளியே எடுத்து அந்த sinusoids உள்ள
+
+00:39:34,000 --> 00:39:37,000
+and let's build this back up to 100 turns
+மற்றும் வரை 100 திருப்பங்களை இந்த மீண்டும் உருவாக்க வேண்டும்
+
+00:39:37,000 --> 00:39:41,000
+showing the approximation dead
+தோராய இறந்த காட்டும்
+
+00:39:41,000 --> 00:39:48,000
+we generated with a hundred turns to the square way
+நாம் ஒரு நூறு உருவாக்கப்பட்டு சதுர வழி மாறும்
+
+00:40:00,000 --> 00:40:03,000
+okay so so what you saw is that
+சரி, அதனால் நீங்கள் கண்டது என்ன ஆகிறது என்று
+
+00:40:03,000 --> 00:40:06,000
+in fact we got awfully close to a square wave
+உண்மையில் நாம் ஒரு சதுர அலை முதல்வாதிகளுக்கு நெருங்கிய கிடைத்தது
+
+00:40:06,000 --> 00:40:10,000
+and the other thing think that was kind of interesting about it is that went
+மற்றும் மற்ற ஒன்று என்று சென்று அதை பற்றி சுவாரஸ்யமான என்று
+
+00:40:10,000 --> 00:40:10,000
+along
+கூட
+
+00:40:10,000 --> 00:40:15,000
+was the fact that with the low frequencies
+உண்மை என்று குறைந்த அதிர்வெண்கள்
+
+00:40:15,000 --> 00:40:19,000
+what we were tending to bill was the general behavior
+நாம் என்ன பில் தன்மை என்று பொது நடத்தை இருந்தது
+
+00:40:19,000 --> 00:40:22,000
+and as the higher frequencies came in
+மற்றும் அதிக அதிர்வெண்கள் வந்தது என
+
+00:40:22,000 --> 00:40:25,000
+that tended to contribute the discontinuities
+என்று தொடர்ச்சியின்மைகளையும் பங்களிக்க முனைந்தது
+
+00:40:25,000 --> 00:40:29,000
+work contribute to the discontinuity and
+வேலை தொடர்பின்மை பங்களிப்பு மற்றும்
+
+00:40:29,000 --> 00:40:32,000
+in fact something their will
+உண்மையில் ஏதாவது தங்கள் விருப்பத்திற்கு
+
+00:40:32,000 --> 00:40:35,000
+standout more and more as we go through our discussion
+நாங்கள் எங்கள் விவாதம் செல்ல என மேலும் என்பதனை
+
+00:40:35,000 --> 00:40:39,000
+love for a series of 48 transforms is
+48 மாற்றங்களின் ஒரு தொடர் காதல்
+
+00:40:39,000 --> 00:40:43,000
+that general statement that its the low-frequency
+என்று பொது அறிக்கை அதன் குறைந்த அதிர்வெண்
+
+00:40:43,000 --> 00:40:47,000
+terms bat represent
+விதிமுறைகள் பேட் பிரதிபலிக்கிறது
+
+00:40:47,000 --> 00:40:50,000
+the broad time behavior and
+பரந்த நேரம் நடத்தை மற்றும்
+
+00:40:50,000 --> 00:40:54,000
+its the high-frequency terms that are used to build up
+உருவாக்க பயன்படும் என்று தனது உயர் அதிர்வெண் விதிமுறைகள்
+
+00:40:54,000 --> 00:40:59,000
+the sharp transitions in the time domain
+நேரம் டொமைன் கூர்மையான மாற்றங்கள்
+
+00:40:59,000 --> 00:41:02,000
+okay now we need to get a little more precise
+சரி இப்போது நாம் ஒரு சிறிய மேலும் துல்லியமான பெற வேண்டும்
+
+00:41:02,000 --> 00:41:06,000
+about the question of how in fact
+எப்படி உண்மையில் கேள்வி பற்றி
+
+00:41:06,000 --> 00:41:09,000
+the 48 series
+48 தொடர்
+
+00:41:09,000 --> 00:41:12,000
+or when before you a series represents
+அல்லது நீங்கள் முன்பு ஒரு தொடர் பிரதிபலிக்கிறது போது
+
+00:41:12,000 --> 00:41:16,000
+the functions that we're talking about and in what sense they represent them
+நாம் அவர்கள் பிரதிநிதித்துவம் என்ன அர்த்தத்தில் பேசுகிறீர்கள் என்று செயல்பாடுகளை
+
+00:41:16,000 --> 00:41:19,000
+in and so if we look
+அதனால் நாம் பார்க்கிறோம் என்றால்
+
+00:41:19,000 --> 00:41:25,000
+again at the synthesis
+மீண்டும் தொகுப்பு மணிக்கு
+
+00:41:25,000 --> 00:41:28,000
+ok wage in were really wanna ask
+சரியா ஊதிய உண்மையில் இனி கேட்க
+
+00:41:28,000 --> 00:41:31,000
+is if we add up enough for these terms
+நாம் இந்த அடிப்படையில் போதுமான வரை சேர்க்க ஆகிறது
+
+00:41:31,000 --> 00:41:34,000
+in what sense does this some represent
+என்ன அர்த்தத்தில் இதை சில பிரதிநிதித்துவம் இல்லை
+
+00:41:34,000 --> 00:41:38,000
+this time function well
+இந்த நேரத்தில் செயல்பாடு நன்றாக
+
+00:41:38,000 --> 00:41:42,000
+let's again use the notion love are partial some
+மீண்டும் இருக்கும் பகுதி சில கருத்து காதல் பயன்படுத்த அனுமதிக்க
+
+00:41:42,000 --> 00:41:46,000
+so we have the partial song down here
+ஆகவே நாம் இங்கே பகுதி பாடல் வேண்டும்
+
+00:41:46,000 --> 00:41:50,000
+in and we can think love the difference between
+மற்றும் நாம் இடையே வேறுபாடு அன்பு யோசிக்க முடியும்
+
+00:41:50,000 --> 00:41:54,000
+this partial some and the
+இந்த சில பகுதி மற்றும்
+
+00:41:54,000 --> 00:41:57,000
+original time function as
+அசல் நேரம் செயல்பாடாக
+
+00:41:57,000 --> 00:42:01,000
+the ever and I've defined the error here
+எப்போதும் நான் இங்கே பிழை வரையறுக்கப்பட்ட நான்
+
+00:42:01,000 --> 00:42:06,000
+and what we would like to know is does this error
+மற்றும் நாம் என்ன தெரிந்து கொள்ள விரும்புகிறேன் இந்த பிழை உள்ளது
+
+00:42:06,000 --> 00:42:09,000
+decrease as we aired more and more turns
+நாம் மேலும் மேலும் திருப்பங்களை ஒளிபரப்பப்பட்டது என குறைக்க
+
+00:42:09,000 --> 00:42:14,000
+and in fact in what sense if the air does decrease in what sense
+மற்றும் உண்மையில் காற்று என்ன அர்த்தத்தில் குறைகிறது என்றால் என்ன அர்த்தத்தில்
+
+00:42:14,000 --> 00:42:18,000
+there's a decrease now in detail
+குறைவு விவரம் இப்போது இல்லை
+
+00:42:18,000 --> 00:42:22,000
+this is a fairly complicated an elaborate topic I don't mean to make
+இந்த நான் செய்ய வேண்டும் என்று இல்லை ஒரு மிகவும் சிக்கலான ஒரு விரிவான தலைப்பு
+
+00:42:22,000 --> 00:42:23,000
+that sound frightening
+என்று பயமுறுத்தும் ஒலி
+
+00:42:23,000 --> 00:42:29,000
+its mainly a statement that I don't want to explore it and a lot of detail
+நான் அதை விரிவாக நிறைய ஆராய விரும்பவில்லை என்று அதன் முக்கியமாக ஒரு அறிக்கை
+
+00:42:29,000 --> 00:42:33,000
+but it relates to what is referred to
+ஆனால் அது குறிப்பிடப்படுகிறது என்ன தொடர்பு
+
+00:42:33,000 --> 00:42:36,000
+as the issue a convergence the forty a series
+பிரச்சினை ஒரு குவிதல் நாற்பது ஒரு தொடர்
+
+00:42:36,000 --> 00:42:40,000
+and the convergence the 48 series
+மற்றும் குவிதல் 48 தொடர்
+
+00:42:40,000 --> 00:42:44,000
+the the bottom line on at the kinda and statement
+கிரகமாக மற்றும் அறிக்கையை கீழ் வரி
+
+00:42:44,000 --> 00:42:48,000
+can be made in several ways one statement
+பல வழிகளில் ஒரு அறிக்கையில் முடியும்
+
+00:42:48,000 --> 00:42:53,000
+related to convergence the for a series is the following if
+ஒரு தொடர் தொடர்ந்து ஒன்றிணைவு தொடர்பான என்றால்
+
+00:42:53,000 --> 00:42:56,000
+I have a time function which
+நான் ஒரு நேரத்தில் செயல்பாடு கொண்ட
+
+00:42:56,000 --> 00:43:00,000
+is what is referred to as square integrable namely
+அதாவது ஒரு சதுர integrable குறிப்பிடப்படுகிறது என்ன ஆகிறது
+
+00:43:00,000 --> 00:43:05,000
+its integral over a period is finite then
+ஒரு காலத்தில் அதன் ஒருங்கிணைந்த பின்னர் வரையறுக்கப்பட்ட
+
+00:43:05,000 --> 00:43:08,000
+what you can show kinda amazingly
+நீங்கள் கிரகமாக அதிசயமாக காட்ட முடியும்
+
+00:43:08,000 --> 00:43:12,000
+is that the energy E in
+என்று ஆற்றல் மின்
+
+00:43:12,000 --> 00:43:15,000
+that error in other words the energy in the difference between the original
+அசல் வித்தியாசம் வேறுவிதமாக ஆற்றல் அந்த பிழை
+
+00:43:15,000 --> 00:43:16,000
+function
+செயல்பாடு
+
+00:43:16,000 --> 00:43:20,000
+and the partial some the energy and that
+மற்றும் பகுதி ஆற்றல் மற்றும் சில
+
+00:43:20,000 --> 00:43:25,000
+goes to zero as n goes to infinity
+N முடிவிலி செல்லும் என சுழியமாகிவிடுகிறது
+
+00:43:25,000 --> 00:43:31,000
+a somewhat tighter condition is a condition referred to as it the racially
+சற்றே இறுக்கமான நிலையில் அது இன குறிப்பிடப்படுகிறது ஒரு நிபந்தனை
+
+00:43:31,000 --> 00:43:34,000
+conditions which says that
+என்று சொல்கிறது நிலைமைகள்
+
+00:43:34,000 --> 00:43:37,000
+if the time function
+என்றால் நேரம் செயல்பாடு
+
+00:43:37,000 --> 00:43:43,000
+is absolutely integral not square honorable but absolutely integral
+சதுர கீழ்த்தரமாக முற்றிலும் ஒருங்கிணைந்த ஆனால் முற்றிலும் ஒருங்கிணைந்த ஆகிறது
+
+00:43:43,000 --> 00:43:48,000
+and I've kinda hedge the issue by just simply referred to accept T as being
+நான் கிரகமாக வெறுமனே என டி ஏற்க குறிப்பிடப்படுகிறது பிரச்சினை ஹெட்ஜ்
+
+00:43:48,000 --> 00:43:49,000
+well behaved
+நன்றாக நடந்து
+
+00:43:49,000 --> 00:43:55,000
+then the statement is dead the error in fact goes to zero
+பின்னர் அறிக்கை இறந்த உண்மையில் பிழை சுழியமாகிவிடுகிறது
+
+00:43:55,000 --> 00:43:59,000
+as and increases except at the discontinuities
+தொடர்ச்சியின்மைகளையும் தவிர மற்றும் அதிகரிக்கும் என
+
+00:43:59,000 --> 00:44:03,000
+and what well-behaved means in that statement
+என்ன என்று அறிக்கையில் வழிமுறையாக நன்கு நடந்து
+
+00:44:03,000 --> 00:44:07,000
+is that as discussed in the book there are a finite number
+புத்தகத்தில் விவாதிக்கப்பட்டது ஒரு வரையறு எண் உள்ளன என்று ஆகிறது
+
+00:44:07,000 --> 00:44:12,000
+maxima and minima in any period and a finite number finite discontinuities
+பலதர குறைந்தபட்ச எந்த காலத்தில் மற்றும் ஒரு வரையறு எண் வரையறுக்கப்பட்ட தொடர்ச்சியின்மைகளையும்
+
+00:44:12,000 --> 00:44:13,000
+which is essentially
+அடிப்படையில் இது
+
+00:44:13,000 --> 00:44:18,000
+always the case so under square in Accra bility
+அதனால் அக்ர மாட்டேன் சதுர கீழ் எப்போதும் வழக்கு
+
+00:44:18,000 --> 00:44:22,000
+what we have is the statement not that the partial sum goes to the right value
+என்ன நாம் பகுதி தொகை வலது மதிப்பு செல்லும் என்று அறிக்கை அல்ல
+
+00:44:22,000 --> 00:44:23,000
+at every point
+ஒவ்வொரு கட்டத்திலும்
+
+00:44:23,000 --> 00:44:27,000
+but that the energy in the air goes to zero
+ஆனால் காற்று ஆற்றல் சுழியமாகிவிடுகிறது என்று
+
+00:44:27,000 --> 00:44:32,000
+under the jewish way conditions it says that in fact the signal goes to the
+யூத வழி நிலைமைகளின் கீழ் அது உண்மையில் சமிக்ஞை செல்கிறது என்று கூறுகிறார்
+
+00:44:32,000 --> 00:44:33,000
+right back to you
+வலது நீங்கள் மீண்டும்
+
+00:44:33,000 --> 00:44:37,000
+at every time instant except
+தவிர ஒவ்வொரு முறையும் உடனடி மணிக்கு
+
+00:44:37,000 --> 00:44:41,000
+at the discontinuities so
+தொடர்ச்சியின்மைகளையும் மிகவும்
+
+00:44:41,000 --> 00:44:46,000
+going back to the square wave
+ஒரு சதுர அலை போகிறது
+
+00:44:46,000 --> 00:44:50,000
+the square wave satisfies either one of those conditions and so
+சதுர அலை பூர்த்திசெய்யும் அந்த நிபந்தனைகளில் ஒன்று மற்றும் இரண்டில்
+
+00:44:50,000 --> 00:44:55,000
+what the consequences is that with the square wave
+விளைவுகள் என்ன என்று சதுர அலை
+
+00:44:55,000 --> 00:44:58,000
+if we looked at the error then in fact
+நாம் உண்மையில் பின்னர் பிழை பார்த்து இருந்தால்
+
+00:44:58,000 --> 00:45:01,000
+what we would find is that the energy
+நாம் என்ன கண்டுபிடிக்க வேண்டும் என்று ஆற்றல்
+
+00:45:01,000 --> 00:45:05,000
+in the error would go to zero as we at
+பிழை நாம் பூஜ்ஜியத்திற்கு போக வேண்டும்
+
+00:45:05,000 --> 00:45:08,000
+more and more turns in the partial some and in fact
+சில பகுதி மற்றும் உண்மையில் இன்னும் திருப்பங்களை
+
+00:45:08,000 --> 00:45:13,000
+if says the square wave also satisfies the dish les conditions
+சதுர அலை கூட Les நிலைமைகள் டிஷ் பூர்த்திசெய்யும் கூறுகிறார் என்றால்
+
+00:45:13,000 --> 00:45:18,000
+the actual value with the air the difference between
+விமான இடையே வேறுபாடு உண்மையான மதிப்பு
+
+00:45:18,000 --> 00:45:21,000
+the partial some and the true value will will
+பகுதி சில உண்மையான மதிப்பை உயிரோடிருக்கும்
+
+00:45:21,000 --> 00:45:25,000
+actually go to zero that difference will go to zero
+உண்மையில் அந்த பூஜ்ஜியமாக செல்ல பூஜ்யம் போகலாம்
+
+00:45:25,000 --> 00:45:29,000
+except at the discontinuities and
+தொடர்ச்சியின்மைகளையும் தவிர மற்றும்
+
+00:45:29,000 --> 00:45:32,000
+that in fact is kinda evident as
+என்று உண்மையில் போன்ற கிரகமாக தெளிவாக இருக்கிறது
+
+00:45:32,000 --> 00:45:35,000
+we watch the function build-up
+நாம் செயல்பாடு உருவாக்க அப் பார்க்கிறோம்
+
+00:45:35,000 --> 00:45:39,000
+by adding up these terms and so in fact
+உண்மையில் இந்த சொற்கள் மற்றும் அதனால் சேர்ப்பதன் மூலம்
+
+00:45:39,000 --> 00:45:43,000
+let's go back and see again
+தான் மீண்டும் சென்று மீண்டும் பார்க்கலாம்
+
+00:45:43,000 --> 00:45:46,000
+the development the partial sons
+அபிவிருத்தி பகுதி மகன்கள்
+
+00:45:46,000 --> 00:45:50,000
+in relation to the original time function let's observe
+அசல் நேரம் செயல்பாடு தொடர்பாக தான் நோக்குவதாக
+
+00:45:50,000 --> 00:45:54,000
+this time again basically what we saw before which is that it builds up
+நாம் எந்த முன் பார்த்தேன் மீண்டும் அடிப்படையில் என்ன இந்த நேரத்தில் அதை வளர்க்கும் என்று ஆகிறது
+
+00:45:54,000 --> 00:46:00,000
+to the right answer and furthermore what will plot this time also as a function
+சரியான பதில் மற்றும் மேலும் என்ன ஒரு செயல்பாடு இந்த நேரத்தில் சதி என்று
+
+00:46:00,000 --> 00:46:01,000
+of time
+நேரம்
+
+00:46:01,000 --> 00:46:06,000
+is the energy in the air and what we'll see is that the energy in the air
+காற்று ஆற்றல் என்ன நாம் பார்க்க வேண்டும் என்று காற்று ஆற்றல்
+
+00:46:06,000 --> 00:46:09,000
+will be tending toward zero as the number
+எண் பூஜ்யம் நோக்கி தன்மை
+
+00:46:09,000 --> 00:46:12,000
+turns increases so
+அதனால் அதிகரிக்கும் மாறிவிடும்
+
+00:46:12,000 --> 00:46:15,000
+once again we have the square wave and
+மீண்டும் நாம் சதுர அலை மற்றும்
+
+00:46:15,000 --> 00:46:19,000
+we want to again show the buildup of the
+நாம் மீண்டும் கட்டமைப்பை காட்ட வேண்டும்
+
+00:46:19,000 --> 00:46:23,000
+forty a series this time showing also
+இந்த நேரத்தில் கூட காட்டும் நாற்பது தொடர்
+
+00:46:23,000 --> 00:46:27,000
+how the energy in the air decreases as we had more and more turns
+நாம் மேலும் மேலும் திருப்பங்களை என காற்று ஆற்றல் குறைகிறது எப்படி
+
+00:46:27,000 --> 00:46:30,000
+well once again will begin
+நன்றாக மீண்டும் தொடங்கும்
+
+00:46:30,000 --> 00:46:34,000
+with cake was 0 corresponding to the constant term
+கேக் 0 மாறா தொடர்புடைய
+
+00:46:34,000 --> 00:46:37,000
+and was shown on the bottom trace is
+கீழே சுவடு உள்ளது காட்டப்பட்டது
+
+00:46:37,000 --> 00:46:40,000
+the energy in the air between those two and
+அந்த இரண்டு இடையே காற்று ஆற்றல்
+
+00:46:40,000 --> 00:46:44,000
+will then and the term for cables 1
+கேபிள்கள் 1 அப்படியில்ல கால
+
+00:46:44,000 --> 00:46:49,000
+to the DC term and will see that the energy will decrease
+டிசி கால மற்றும் ஆற்றல் குறையும் என்று பார்ப்பீர்கள்
+
+00:46:49,000 --> 00:46:53,000
+when we do that here we have then the summer
+நாங்கள் இங்கே செய்யும் போது நாம் கோடை பின்னர் வேண்டும்
+
+00:46:53,000 --> 00:46:56,000
+cake 10 cables 1 now
+கேக் 10 கேபிள்கள் 1 இப்போது
+
+00:46:56,000 --> 00:47:00,000
+with cables to the energy won't decrease
+ஆற்றல் கேபிள்கள் குறைக்க முடியாது,
+
+00:47:00,000 --> 00:47:07,000
+any further because it's an odd harmonic function
+இது ஒரு புதுமையான இசை விழா மேலும், ஏனெனில்
+
+00:47:07,000 --> 00:47:12,000
+that's what we've just added in when we add in the term for cables 3
+என்று நாம் கேபிள்கள் 3 கால சேர்க்கும் போது நாம் வெறும் சேர்த்துள்ளோம் என்ன
+
+00:47:12,000 --> 00:47:15,000
+again will see the energy in the air decrease
+மீண்டும் காற்று குறைந்து ஆற்றல் பார்க்கும்
+
+00:47:15,000 --> 00:47:22,000
+as reflected in the bottom curve
+கீழே வளைவு பிரதிபலிக்கிறது என
+
+00:47:22,000 --> 00:47:26,000
+so there we are at cables 3 when
+அதனால் அங்கு நாம் கேபிள்கள் 3 இருக்கும் போது
+
+00:47:26,000 --> 00:47:31,000
+we go to cable 24 there again is no change in the air
+நாம் மீண்டும் அங்கு கேபிள் 24 செல்ல விமான எந்த மாற்றமும் இல்லை
+
+00:47:31,000 --> 00:47:38,000
+at cables 5 again the air decreases
+கேபிள்கள் 5 மீண்டும் காற்று குறையும் மணிக்கு
+
+00:47:39,000 --> 00:47:43,000
+k equal to 6% know there will be no change again
+6% சமமாக k மீண்டும் எந்த மாற்றமும் இல்லை என்று எனக்கு தெரியும்
+
+00:47:43,000 --> 00:47:47,000
+an 8k course 7 the energy decreases
+ஒரு 8k நிச்சயமாக 7 ஆற்றல் குறையும்
+
+00:47:47,000 --> 00:47:51,000
+and now let's show the how the air decreases by building up the number
+இப்போது எண் உருவாக்கி எப்படி காற்று குறையும் காட்ட நாம்
+
+00:47:51,000 --> 00:47:56,000
+turns much more rapidly already the air has gotten somewhat small on the scale
+மிகவும் விரைவாக ஏற்கனவே காற்று அளவில் சற்றே சிறிய சென்றிருக்கிறது மாறிவிடும்
+
+00:47:56,000 --> 00:47:58,000
+in which were showing it so let's expand out
+அது காட்டும் இதில் எனவே விஸ்தரிக்க நாம்
+
+00:47:58,000 --> 00:48:02,000
+the ever scale the vertical axis
+எப்போதும் செங்குத்து அச்சு அளவிட
+
+00:48:02,000 --> 00:48:05,000
+displaying the energy in the error so that we could watch
+நாம் பார்க்க முடியும் என்று பிழை ஆற்றல் காட்டும்
+
+00:48:05,000 --> 00:48:08,000
+how the energy decreases as
+ஆற்றல் குறைகிறது எப்படி
+
+00:48:08,000 --> 00:48:12,000
+we had more and more terms so here we have
+நாம் வேண்டும் என்று இங்கே இன்னும் அடிப்படையில் இருந்தது
+
+00:48:12,000 --> 00:48:15,000
+the vertical scale expanded and
+செங்குத்து அளவில் விரிவாக்கம் மற்றும்
+
+00:48:15,000 --> 00:48:18,000
+now what we'll do is increase
+இப்போது நாம் என்ன செய்ய வேண்டும் அதிகரிப்பு ஆகிறது
+
+00:48:18,000 --> 00:48:23,000
+the number of turns in the forty a series and watch the energy in the air
+நாற்பது தொடர் திருப்பங்களை எண்ணிக்கை மற்றும் காற்று ஆற்றல் பார்க்க
+
+00:48:23,000 --> 00:48:24,000
+at decreasing
+குறைக்கும்
+
+00:48:24,000 --> 00:48:27,000
+always decreasing of course on the inclusion
+எப்போதும் சேர்ப்பதற்கு நிச்சயமாக குறைந்து
+
+00:48:27,000 --> 00:48:31,000
+love the odd number turns and
+ஒற்றைப்படை எண் திருப்பி பிடிக்கிறது
+
+00:48:31,000 --> 00:48:35,000
+not on the inclusion of the even-numbered turns because the fact
+இல்லை கூட, பல திருப்பங்களை, சேர்ப்பதற்கு உண்மையில் ஏனெனில்
+
+00:48:35,000 --> 00:48:39,000
+that it's an odd harmonic function now the energy in the air
+அது காற்று இப்போது ஆற்றல் ஒரு புதுமையான இசை விழா என்று
+
+00:48:39,000 --> 00:48:43,000
+asymptotically will approach 0 although
+தொலைத்தொடுகோட்டு 0 என்றாலும் அணுகலாம்
+
+00:48:43,000 --> 00:48:48,000
+point by point the forty a series will never be equal to the square wave
+புள்ளி புள்ளி நாற்பது ஒரு தொடர் சதுர அலை சமமாக இருக்க முடியாது
+
+00:48:48,000 --> 00:48:52,000
+it will at every instant of time
+அதை நேரம் ஒவ்வொரு நிகழ்விலும்
+
+00:48:52,000 --> 00:48:56,000
+except at the discontinuities where there will always be
+எப்போதும் இருக்கும் இடத்தில் தொடர்ச்சியின்மைகளையும் தவிர
+
+00:48:56,000 --> 00:49:00,000
+some ripple corresponding to
+தொடர்புடைய சில சிற்றலை
+
+00:49:00,000 --> 00:49:04,000
+what's referred to as the Gibbs phenomenon
+கிப்பினதுதோற்றப்பாடு என குறிப்பிடப்படுகிறது என்ன
+
+00:49:04,000 --> 00:49:08,000
+okay well so what we've seen in is
+சரி, சரி, அதனால் என்ன நாம் பார்த்த
+
+00:49:08,000 --> 00:49:12,000
+a and a quick look at the Fourier series
+ஒரு மற்றும் ஃபோரியர் ஒரு விரைவு பாருங்கள்
+
+00:49:12,000 --> 00:49:15,000
+representation love periodic signals
+பிரதிநிதித்துவம் கால சமிக்ஞைகள் பிடிக்கிறது
+
+00:49:15,000 --> 00:49:20,000
+we more broadly
+நாம் இன்னும் பரந்த அளவில்
+
+00:49:20,000 --> 00:49:23,000
+wanna have a more general representation
+இனி ஒரு பொதுவான பிரதிநிதித்துவம் வேண்டும்
+
+00:49:23,000 --> 00:49:29,000
+love oath signals in terms of complex exponentials and so our next step
+சிக்கலான நிகழ்வுஎண் அடிப்படையில் அதனால் காதல் உறுதிமொழி சிக்னல்களை நம் அடுத்த படியாக
+
+00:49:29,000 --> 00:49:33,000
+will be to move toward a representation
+ஒரு பிரதிநிதித்துவம் நோக்கி செல்ல இருக்கும்
+
+00:49:33,000 --> 00:49:36,000
+I'll not periodic or a periodic signals
+நான் கால மாட்டேன் அல்லது ஒரு கால சமிக்ஞைகள்
+
+00:49:36,000 --> 00:49:40,000
+now the details if this I leave for the next lecture
+நான் அடுத்த விரிவுரை விட்டு இப்போது விவரங்கள் இந்த என்றால்
+
+00:49:40,000 --> 00:49:43,000
+the only thought that I want introduced at this point
+நான் இந்த இடத்தில் அறிமுகப்படுத்தப்பட்டது வேண்டும் என்று மட்டுமே சிந்தனை
+
+00:49:43,000 --> 00:49:46,000
+is the basic strategy you which
+நீங்கள் எந்த அடிப்படை உத்தி ஆகும்
+
+00:49:46,000 --> 00:49:51,000
+is somewhat amazing and kinda interesting to reflect on
+பிரதிபலிக்கும் சற்றே ஆச்சரியமாக மற்றும் கிரகமாக சிறப்பாக உள்ளது
+
+00:49:51,000 --> 00:49:54,000
+in the interim the basic strategy
+அடிப்படை மூலோபாயத்தை இடைக்கால உள்ள
+
+00:49:54,000 --> 00:49:57,000
+with in a periodic signal is
+ஒரு கால சமிக்ஞை உடன்
+
+00:49:57,000 --> 00:50:01,000
+to think love representing
+என்று குறிக்கும் காதல்
+
+00:50:01,000 --> 00:50:07,000
+this a periodic signal as a linear combination of complex exponentials
+சிக்கலான நிகழ்வுஎண் ஒரு நேர்கோட்டு இணைந்து இந்த கால சமிக்ஞை
+
+00:50:07,000 --> 00:50:11,000
+by this simple trick all
+இந்த எளிய தந்திரம் அனைத்து
+
+00:50:11,000 --> 00:50:14,000
+periodically replicating this signal
+குறிப்பிட்ட கால இடைவெளியில் இந்த சமிக்ஞை மீள்வு
+
+00:50:14,000 --> 00:50:17,000
+generating a periodic signal
+ஒரு கால சமிக்ஞை உருவாக்கும்
+
+00:50:17,000 --> 00:50:21,000
+using a Fourier series representation
+ஒரு ஃபோரியர் பிரதிநிதித்துவத்தையும்
+
+00:50:21,000 --> 00:50:24,000
+for that periodic signal and then
+என்று அவ்வப்போது சமிக்ஞை மற்றும் பிறகு
+
+00:50:24,000 --> 00:50:28,000
+simply letting the period go to infinity
+வெறுமனே காலம் முடிவிலி செல்ல விடாமல்
+
+00:50:28,000 --> 00:50:32,000
+as the period goes to infinity that periodic signal becomes the original
+காலம் கால சமிக்ஞை அசல் என்று முடிவிலி செல்லும் என
+
+00:50:32,000 --> 00:50:36,000
+a periodic one that we have before and a 40 a series
+நாம் முன்பு ஒரு கால மற்றும் ஒரு 40 ஒரு தொடர்
+
+00:50:36,000 --> 00:50:43,000
+representation then becomes what we refer to as the Fourier transform so
+பிரதிநிதித்துவம் பின்னர் ஃபோரியர் அதனால் மாற்றும் நாம் பார்க்கவும் என்ன ஆகிறது
+
+00:50:44,000 --> 00:50:47,000
+that's just a quick look at kind of the basic idea
+அடிப்படை யோசனை வகையான நேரத்தில் ஒரு விரைவு
+
+00:50:47,000 --> 00:50:52,000
+and approach that will take in the next lecture will develop this
+அடுத்த விரிவுரை எடுக்க வேண்டும் என்று அணுகுமுறை இந்த உருவாக்கும்
+
+00:50:52,000 --> 00:50:56,000
+a little more carefully more fully moving from the 40 a series which we've
+இன்னும் கொஞ்சம் கவனமாக இன்னும் முழுமையாக நாங்கள் தான் இது 40 ஒரு தொடர் நகரும்
+
+00:50:56,000 --> 00:50:58,000
+used for periodic signals
+கால சமிக்ஞைகள் பயன்படுத்தப்படும்
+
+00:50:58,000 --> 00:51:01,000
+to develop the for EA transform
+ஈ.ஏ. மாற்றும் உருவாக்க வேண்டும்
+
+00:51:01,000 --> 00:51:04,000
+which will then be representation for a periodic see
+பின்னர் ஒரு கால இல்லையெனில் பிரதிநிதித்துவம் இருக்கும்
+
+00:51:04,000 --> 00:51:05,000
+thank you
+நன்றி
+

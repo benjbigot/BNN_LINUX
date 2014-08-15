@@ -1,0 +1,2757 @@
+1
+00:00:06,720 --> 00:00:13,720 
+ha the
+
+2
+00:00:28,150 --> 00:00:31,380 
+the norm
+
+3
+00:00:31,380 --> 00:00:38,380 
+are
+
+4
+00:00:42,100 --> 00:00:42,910 
+last time
+
+5
+00:00:42,910 --> 00:00:47,770 
+we began the discussion I'll
+discrete-time processing
+
+6
+00:00:47,770 --> 00:00:51,280 
+love continuous-time signals and
+
+7
+00:00:51,280 --> 00:00:54,420 
+as a reminder let me review
+
+8
+00:00:54,420 --> 00:00:57,670 
+the basic notion the idea was
+
+9
+00:00:57,670 --> 00:00:60,860 
+dead we convert
+
+10
+00:00:60,860 --> 00:01:05,100 
+from a continuous-time signal to a
+sequence
+
+11
+00:01:05,100 --> 00:01:08,229 
+through an operation which I
+
+12
+00:01:08,229 --> 00:01:12,300 
+represent as a continuous to
+discrete-time converter
+
+13
+00:01:12,300 --> 00:01:17,259 
+and then that sequence
+
+14
+00:01:17,259 --> 00:01:20,770 
+is used as the input to
+
+15
+00:01:20,770 --> 00:01:24,290 
+inappropriate discrete-time system
+
+16
+00:01:24,290 --> 00:01:28,630 
+and after appropriate discrete-time
+processing
+
+17
+00:01:28,630 --> 00:01:31,750 
+that sequence is converted
+
+18
+00:01:31,750 --> 00:01:35,640 
+back to a continuous-time signal
+
+19
+00:01:35,640 --> 00:01:38,970 
+through an operation which i-label as
+
+20
+00:01:38,970 --> 00:01:42,409 
+a discrete to continuous-time converter
+
+21
+00:01:42,409 --> 00:01:45,799 
+now in the lecture
+
+22
+00:01:45,799 --> 00:01:49,390 
+last time we carried out some analysis
+
+23
+00:01:49,390 --> 00:01:53,110 
+which related 4s the spectra
+
+24
+00:01:53,110 --> 00:01:56,880 
+in the first step this operation namely
+
+25
+00:01:56,880 --> 00:02:00,490 
+in the transformation from a
+continuous-time
+
+26
+00:02:00,490 --> 00:02:04,020 
+signal to sequence and
+
+27
+00:02:04,020 --> 00:02:07,060 
+let me by the way draw your attention to
+the fact
+
+28
+00:02:07,060 --> 00:02:10,429 
+that in the real world this operation
+
+29
+00:02:10,429 --> 00:02:13,830 
+is essentially implemented
+
+30
+00:02:13,830 --> 00:02:18,890 
+by what you would typically label as an
+analog to digital converter
+
+31
+00:02:18,890 --> 00:02:22,320 
+if in fact the discrete-time processing
+
+32
+00:02:22,320 --> 00:02:26,220 
+is being done digitally now it's
+important to emphasize that it's not
+
+33
+00:02:26,220 --> 00:02:28,989 
+exactly what an analog to digital
+converter
+
+34
+00:02:28,989 --> 00:02:33,180 
+does but in some sense at least you
+should think
+
+35
+00:02:33,180 --> 00:02:36,260 
+love this mapping from continuous time
+to discrete-time
+
+36
+00:02:36,260 --> 00:02:39,660 
+in very much the same way there one
+would think an analog to digital
+
+37
+00:02:39,660 --> 00:02:40,640 
+converter
+
+38
+00:02:40,640 --> 00:02:45,000 
+and the mapping back and is corresponds
+
+39
+00:02:45,000 --> 00:02:48,700 
+in some sense to a what would happen
+
+40
+00:02:48,700 --> 00:02:52,700 
+with a digital to analog converter well
+
+41
+00:02:52,700 --> 00:02:56,450 
+let me review what is involved in the
+mapping from
+
+42
+00:02:56,450 --> 00:03:00,160 
+the continuous-time signal to the
+sequence and
+
+43
+00:03:00,160 --> 00:03:03,260 
+let me stress again that this operation
+
+44
+00:03:03,260 --> 00:03:07,170 
+is basically in the continues to
+discrete-time conversion
+
+45
+00:03:07,170 --> 00:03:10,739 
+a two-step process in
+
+46
+00:03:10,739 --> 00:03:14,819 
+the first part of the process the
+continuous-time signal
+
+47
+00:03:14,819 --> 00:03:18,319 
+is modulated with an impulse train
+
+48
+00:03:18,319 --> 00:03:23,520 
+where the period of the imposed strain
+is capital T
+
+49
+00:03:23,520 --> 00:03:26,739 
+and so we have a continuous-time
+
+50
+00:03:26,739 --> 00:03:30,010 
+impose Train Signal which captures
+
+51
+00:03:30,010 --> 00:03:33,849 
+the samples love the original
+continuous-time signals
+
+52
+00:03:33,849 --> 00:03:37,489 
+that in Paul strain
+
+53
+00:03:37,489 --> 00:03:40,650 
+is then put through an operation
+
+54
+00:03:40,650 --> 00:03:44,700 
+which essentially re labels
+
+55
+00:03:44,700 --> 00:03:48,129 
+the samples so that the
+
+56
+00:03:48,129 --> 00:03:51,260 
+sample values the impulse areas
+
+57
+00:03:51,260 --> 00:03:55,220 
+are relabeled as sequence values
+
+58
+00:03:55,220 --> 00:03:58,860 
+and the result of that conversion is
+then
+
+59
+00:03:58,860 --> 00:04:03,970 
+the sequence X event so the overall
+process then
+
+60
+00:04:03,970 --> 00:04:08,180 
+is a sampling process followed by
+
+61
+00:04:08,180 --> 00:04:11,420 
+what is simply in this box relabeling
+
+62
+00:04:11,420 --> 00:04:14,830 
+process and although as I
+
+63
+00:04:14,830 --> 00:04:19,479 
+indicated just a minute ago that is
+essentially what an analog to digital
+
+64
+00:04:19,479 --> 00:04:20,950 
+converter does
+
+65
+00:04:20,950 --> 00:04:25,240 
+now like to digital converter doesn't
+necessarily carry it out
+
+66
+00:04:25,240 --> 00:04:28,610 
+in those two steps but particularly
+
+67
+00:04:28,610 --> 00:04:31,960 
+in terms love carrying through an
+analysis
+
+68
+00:04:31,960 --> 00:04:35,470 
+thinking of it as a two-step process is
+particularly convenient
+
+69
+00:04:35,470 --> 00:04:40,229 
+now we talked last time
+
+70
+00:04:40,229 --> 00:04:45,430 
+about what this mapping from continuous
+time to discrete-time
+
+71
+00:04:45,430 --> 00:04:49,240 
+means both in the time domain in terms
+of the spectra
+
+72
+00:04:49,240 --> 00:04:52,650 
+and in particular in the time domain we
+
+73
+00:04:52,650 --> 00:04:56,960 
+begin with the continuous-time signal
+
+74
+00:04:56,960 --> 00:05:00,000 
+which is then samples with an impulse
+train
+
+75
+00:05:00,000 --> 00:05:03,539 
+and converted to a sequence by
+
+76
+00:05:03,539 --> 00:05:07,240 
+simply generating a sequence whose
+values
+
+77
+00:05:07,240 --> 00:05:10,520 
+are the area is love the impulses
+
+78
+00:05:10,520 --> 00:05:14,419 
+and I stress the fact that what this
+corresponds to
+
+79
+00:05:14,419 --> 00:05:18,729 
+essentially is and normalization of the
+time axis
+
+80
+00:05:18,729 --> 00:05:23,979 
+essentially by dividing the time axis by
+capital T
+
+81
+00:05:23,979 --> 00:05:27,000 
+in the frequency-domain then
+
+82
+00:05:27,000 --> 00:05:31,390 
+we had the spectrum of the original
+signal
+
+83
+00:05:31,390 --> 00:05:35,080 
+which because that the sampling process
+is
+
+84
+00:05:35,080 --> 00:05:39,289 
+replicated at multiples integer
+multiples
+
+85
+00:05:39,289 --> 00:05:42,460 
+all the sampling frequency Omega so
+badass
+
+86
+00:05:42,460 --> 00:05:45,649 
+or to pile over capital T
+
+87
+00:05:45,649 --> 00:05:49,490 
+and then in converting the impulses
+
+88
+00:05:49,490 --> 00:05:53,099 
+to a sequence we are essentially
+
+89
+00:05:53,099 --> 00:05:57,080 
+normalizing the frequency axis so that
+
+90
+00:05:57,080 --> 00:06:02,000 
+the frequency to pile over capital T
+gets relabeled is to pie
+
+91
+00:06:02,000 --> 00:06:05,599 
+and the resulting discrete-time spectrum
+looks like
+
+92
+00:06:05,599 --> 00:06:08,870 
+I indicate here which really is
+
+93
+00:06:08,870 --> 00:06:12,330 
+nothing more and a frequency scaling
+
+94
+00:06:12,330 --> 00:06:16,580 
+corresponding to the Associated time
+scaling so the mapping
+
+95
+00:06:16,580 --> 00:06:20,930 
+from the imposed strain spectrum to the
+discrete-time spectrum
+
+96
+00:06:20,930 --> 00:06:24,419 
+corresponds to mapping specified
+
+97
+00:06:24,419 --> 00:06:29,839 
+by capital Omega equal to small make a
+times capital T
+
+98
+00:06:29,839 --> 00:06:33,440 
+an equivalent Lee it's the frequency
+
+99
+00:06:33,440 --> 00:06:36,719 
+to pile over capital T which is
+
+100
+00:06:36,719 --> 00:06:41,190 
+of course the sampling frequency which
+gets normalized
+
+101
+00:06:41,190 --> 00:06:44,760 
+to the frequency to pie
+
+102
+00:06:44,760 --> 00:06:47,930 
+and so in the frequency domain
+
+103
+00:06:47,930 --> 00:06:51,669 
+their is a frequency normalization
+Associated
+
+104
+00:06:51,669 --> 00:06:57,700 
+with the fact dead corresponding to this
+spectrum
+
+105
+00:06:57,700 --> 00:07:02,370 
+is a time sequence or discrete time
+sequence
+
+106
+00:07:02,370 --> 00:07:06,919 
+as I show previously and a discrete-time
+sequence
+
+107
+00:07:06,919 --> 00:07:10,380 
+is related to the
+
+108
+00:07:10,380 --> 00:07:14,520 
+original continuous-time signal
+
+109
+00:07:14,520 --> 00:07:19,010 
+through a time normalization in other
+words
+
+110
+00:07:19,010 --> 00:07:24,750 
+these sequence values are simply samples
+at the continuous-time signal
+
+111
+00:07:24,750 --> 00:07:30,110 
+with the time axis we normalized
+
+112
+00:07:30,110 --> 00:07:34,060 
+now what we want to consider this is the
+conversion from continuous time to
+
+113
+00:07:34,060 --> 00:07:35,300 
+discrete-time
+
+114
+00:07:35,300 --> 00:07:39,130 
+what we want to consider now is the
+overall system
+
+115
+00:07:39,130 --> 00:07:42,810 
+which implements not just the conversion
+but filtering
+
+116
+00:07:42,810 --> 00:07:47,649 
+and then coming back onto the conversion
+back to continuous-time
+
+117
+00:07:47,649 --> 00:07:51,430 
+so let's look at the overall system
+
+118
+00:07:51,430 --> 00:07:55,120 
+and the overall system courses I've
+
+119
+00:07:55,120 --> 00:07:58,849 
+stressed several times in the past
+consists
+
+120
+00:07:58,849 --> 00:08:04,409 
+love first the sampling process
+
+121
+00:08:04,409 --> 00:08:08,190 
+conversion to an impulse train
+
+122
+00:08:08,190 --> 00:08:13,560 
+and the imposed strain converted to a
+sequence
+
+123
+00:08:13,560 --> 00:08:17,080 
+that sequence is then processed
+
+124
+00:08:17,080 --> 00:08:21,209 
+through are discrete-time filter
+
+125
+00:08:21,209 --> 00:08:25,080 
+and after the discrete-time processing
+
+126
+00:08:25,080 --> 00:08:28,560 
+the result of that is converted back
+
+127
+00:08:28,560 --> 00:08:34,020 
+to an impulse train so this resulting
+process sequence
+
+128
+00:08:34,020 --> 00:08:38,020 
+is then converted back to an impulse
+train
+
+129
+00:08:38,020 --> 00:08:41,849 
+and then finally we carry out the the
+sampling
+
+130
+00:08:41,849 --> 00:08:45,980 
+process by simply using a low-pass
+filter
+
+131
+00:08:45,980 --> 00:08:50,620 
+Associated with the with the cutoff
+associated with the sampling frequency
+
+132
+00:08:50,620 --> 00:08:53,170 
+that we use
+
+133
+00:08:53,170 --> 00:08:57,640 
+now typically in a system like that
+which implements
+
+134
+00:08:57,640 --> 00:09:00,890 
+discrete-time processing continuous-time
+signals
+
+135
+00:09:00,890 --> 00:09:04,250 
+we either we need to ensure in one way
+or another
+
+136
+00:09:04,250 --> 00:09:08,459 
+that the band with love the input is
+
+137
+00:09:08,459 --> 00:09:12,019 
+sufficiently limited so that we avoid
+aliasing
+
+138
+00:09:12,019 --> 00:09:16,329 
+one way to do that is to force it in one
+way or another or
+
+139
+00:09:16,329 --> 00:09:20,199 
+simply know that our signal satisfies
+the band with constrain
+
+140
+00:09:20,199 --> 00:09:23,680 
+although a fairly typical thing to do in
+addition
+
+141
+00:09:23,680 --> 00:09:26,910 
+to this sampling process is
+
+142
+00:09:26,910 --> 00:09:30,550 
+to include what is referred to as
+
+143
+00:09:30,550 --> 00:09:35,529 
+and anti aliasing filter in other words
+this is a filter
+
+144
+00:09:35,529 --> 00:09:38,899 
+that would ban limit the input
+
+145
+00:09:38,899 --> 00:09:42,009 
+and at least half the sampling frequency
+
+146
+00:09:42,009 --> 00:09:45,190 
+so that we r guaranteed and
+
+147
+00:09:45,190 --> 00:09:48,620 
+that their is no aliasing it's carried
+out
+
+148
+00:09:48,620 --> 00:09:52,149 
+in this process and it's important
+
+149
+00:09:52,149 --> 00:09:56,990 
+to stress dead in this kinda processing
+discrete-time processing
+
+150
+00:09:56,990 --> 00:10:00,170 
+continuous-time signals except in
+certain
+
+151
+00:10:00,170 --> 00:10:03,399 
+special situations its very important
+
+152
+00:10:03,399 --> 00:10:06,649 
+to avoid aliasing because we're going to
+want
+
+153
+00:10:06,649 --> 00:10:13,269 
+to do a reconstruction after we do the
+sampling and processing
+
+154
+00:10:13,269 --> 00:10:17,069 
+okay now this is the sequence of steps
+in the time domain
+
+155
+00:10:17,069 --> 00:10:20,459 
+let's examine what happens as a
+consequence is this
+
+156
+00:10:20,459 --> 00:10:24,310 
+in the frequency domain well
+
+157
+00:10:24,310 --> 00:10:28,540 
+let's choose some typeof simple
+representative spectrum
+
+158
+00:10:28,540 --> 00:10:31,790 
+and of course what's important about it
+is that
+
+159
+00:10:31,790 --> 00:10:36,180 
+the specter that we choose is banned
+limited or that there's an anti-aliasing
+
+160
+00:10:36,180 --> 00:10:37,490 
+filter
+
+161
+00:10:37,490 --> 00:10:41,110 
+and it's not the shape of course that is
+critical
+
+162
+00:10:41,110 --> 00:10:44,220 
+and as we work our way through the
+system
+
+163
+00:10:44,220 --> 00:10:47,480 
+this is the continuous-time spectrum
+
+164
+00:10:47,480 --> 00:10:52,420 
+after sampling that spectrum is
+replicated at
+
+165
+00:10:52,420 --> 00:10:56,360 
+multiples of the sampling frequency
+integer multiples the sampling frequency
+
+166
+00:10:56,360 --> 00:10:57,689 
+and so
+
+167
+00:10:57,689 --> 00:11:01,370 
+there would be another one over here and
+another one over here at cetera
+
+168
+00:11:01,370 --> 00:11:04,970 
+and then in converting to a
+discrete-time sequence
+
+169
+00:11:04,970 --> 00:11:08,000 
+their is The Associated
+
+170
+00:11:08,000 --> 00:11:12,329 
+frequency normalization so that the
+sampling frequency
+
+171
+00:11:12,329 --> 00:11:15,389 
+yes normalized to a frequency
+
+172
+00:11:15,389 --> 00:11:20,410 
+to pie okay now at that point
+
+173
+00:11:20,410 --> 00:11:24,709 
+where we are in the system
+
+174
+00:11:24,709 --> 00:11:27,870 
+is at this point
+
+175
+00:11:27,870 --> 00:11:31,560 
+so that we've converted to a sequence we
+now
+
+176
+00:11:31,560 --> 00:11:35,560 
+want to carry out some filtering and
+then after that filtering
+
+177
+00:11:35,560 --> 00:11:40,079 
+convert back to a continuous-time
+signals
+
+178
+00:11:40,079 --> 00:11:43,160 
+alright so here we are at the
+
+179
+00:11:43,160 --> 00:11:46,829 
+spectrum Associated with the
+
+180
+00:11:46,829 --> 00:11:49,839 
+sequence and now
+
+181
+00:11:49,839 --> 00:11:53,069 
+the processing they were carrying out is
+
+182
+00:11:53,069 --> 00:11:57,410 
+linear time-invariant filtering in the
+discrete time domain
+
+183
+00:11:57,410 --> 00:12:01,329 
+and what that corresponds to then is
+multiplying
+
+184
+00:12:01,329 --> 00:12:06,470 
+this spectrum by the filter frequency
+response and I've chosen
+
+185
+00:12:06,470 --> 00:12:10,430 
+a particular shape and again it's not
+the shape that's important to the
+
+186
+00:12:10,430 --> 00:12:11,829 
+discussion
+
+187
+00:12:11,829 --> 00:12:16,149 
+but the fact for example that it has a
+particular cutoff frequency which will
+
+188
+00:12:16,149 --> 00:12:17,439 
+kinda track
+
+189
+00:12:17,439 --> 00:12:21,240 
+as we work through this and so now
+
+190
+00:12:21,240 --> 00:12:24,430 
+the spectrum of why I have an the output
+
+191
+00:12:24,430 --> 00:12:28,399 
+the digital filter is the product this
+spectrum
+
+192
+00:12:28,399 --> 00:12:32,560 
+and the 4e a transformer frequency
+response
+
+193
+00:12:32,560 --> 00:12:36,329 
+I'll the digital filter
+
+194
+00:12:36,329 --> 00:12:41,319 
+now in working our way through we're
+going to take the output at the filter
+
+195
+00:12:41,319 --> 00:12:46,100 
+and undo the two-step process so we now
+want to take that sequence
+
+196
+00:12:46,100 --> 00:12:50,439 
+converted to an impulse train and then
+take then imposed strain
+
+197
+00:12:50,439 --> 00:12:53,499 
+Andy sample through a low-pass filter
+
+198
+00:12:53,499 --> 00:12:59,240 
+so here we are now at the output to the
+digital filter
+
+199
+00:12:59,240 --> 00:13:03,999 
+we then convert that to an impulse train
+well that's really on doing the original
+
+200
+00:13:03,999 --> 00:13:05,749 
+time normalization
+
+201
+00:13:05,749 --> 00:13:08,939 
+and so what that means is that we
+
+202
+00:13:08,939 --> 00:13:13,430 
+are on doing the frequency normalization
+in particular
+
+203
+00:13:13,430 --> 00:13:16,850 
+we're dividing the frequency axis by
+
+204
+00:13:16,850 --> 00:13:20,149 
+capital T whereas this point
+
+205
+00:13:20,149 --> 00:13:23,499 
+in y Omega was to pie
+
+206
+00:13:23,499 --> 00:13:26,600 
+now it's to pile over capital T
+
+207
+00:13:26,600 --> 00:13:31,810 
+what that means is that acquittal and
+Lee were multiplying this spectrum
+
+208
+00:13:31,810 --> 00:13:35,860 
+by the frequency response the digital
+filter
+
+209
+00:13:35,860 --> 00:13:38,870 
+but now linearly scaled in frequency
+
+210
+00:13:38,870 --> 00:13:42,480 
+so that will what was a cutoff frequency
+Omega subsea
+
+211
+00:13:42,480 --> 00:13:45,769 
+is now a cutoff frequency up Omega
+subsea
+
+212
+00:13:45,769 --> 00:13:49,620 
+divided by capital T so
+
+213
+00:13:49,620 --> 00:13:53,779 
+now the next step in the process is the
+reconstructing
+
+214
+00:13:53,779 --> 00:13:58,300 
+low-pass filter and what that extracts
+is simply the portion
+
+215
+00:13:58,300 --> 00:14:02,050 
+I'll this periodic spectrum around the
+origin
+
+216
+00:14:02,050 --> 00:14:06,279 
+and so finally and spectrum of the
+output
+
+217
+00:14:06,279 --> 00:14:10,160 
+up the overall system will be the
+spectrum
+
+218
+00:14:10,160 --> 00:14:13,360 
+of the input multiplied
+
+219
+00:14:13,360 --> 00:14:17,110 
+by a frequency response
+
+220
+00:14:17,110 --> 00:14:21,939 
+which is the digital filter frequency
+response
+
+221
+00:14:21,939 --> 00:14:25,069 
+frequency scaled by dividing
+
+222
+00:14:25,069 --> 00:14:30,720 
+that digital filter frequency axis by
+capital T
+
+223
+00:14:30,720 --> 00:14:34,019 
+okay now what we can ask is
+
+224
+00:14:34,019 --> 00:14:37,379 
+we've got this processing we've
+converted to discrete-time we've gone
+
+225
+00:14:37,379 --> 00:14:39,079 
+back to continuous-time
+
+226
+00:14:39,079 --> 00:14:42,589 
+and one can ask now what acquittal and
+
+227
+00:14:42,589 --> 00:14:46,970 
+overall continuous-time systems is that
+correspond to
+
+228
+00:14:46,970 --> 00:14:51,209 
+in other words if we that of course is a
+continuous-time system it's a continuous
+
+229
+00:14:51,209 --> 00:14:53,819 
+time you put a continuous-time output
+
+230
+00:14:53,819 --> 00:14:57,610 
+and the overall system dan
+
+231
+00:14:57,610 --> 00:15:01,379 
+would be one that would give us exactly
+the same output spectrum
+
+232
+00:15:01,379 --> 00:15:05,040 
+as we're getting well what is that well
+we have
+
+233
+00:15:05,040 --> 00:15:08,499 
+is an output spectrum which is the
+product
+
+234
+00:15:08,499 --> 00:15:14,110 
+all the input spectrum and digital
+filter frequency characteristic
+
+235
+00:15:14,110 --> 00:15:18,040 
+frequency scale and so in fact
+
+236
+00:15:18,040 --> 00:15:22,459 
+the resulting digital filter I'm sorry
+continuous-time
+
+237
+00:15:22,459 --> 00:15:26,069 
+filter is simply the digital filter
+
+238
+00:15:26,069 --> 00:15:29,160 
+with inappropriate frequency scaling
+
+239
+00:15:29,160 --> 00:15:34,410 
+in other words with the frequency axis
+divided by capital T
+
+240
+00:15:34,410 --> 00:15:37,800 
+so sent another way if
+
+241
+00:15:37,800 --> 00:15:41,769 
+we show here
+
+242
+00:15:41,769 --> 00:15:47,160 
+the frequency response or the
+
+243
+00:15:47,160 --> 00:15:50,420 
+original digital filter
+
+244
+00:15:50,420 --> 00:15:54,220 
+then the corresponding continuous-time
+
+245
+00:15:54,220 --> 00:15:57,749 
+filter would be this
+
+246
+00:15:57,749 --> 00:16:00,970 
+frequency scaled and then because love
+
+247
+00:16:00,970 --> 00:16:04,540 
+The Associated low-pass filtering in the
+reconstruction
+
+248
+00:16:04,540 --> 00:16:08,860 
+we would select out just one of these
+periods in particular the portion around
+
+249
+00:16:08,860 --> 00:16:10,089 
+the origin
+
+250
+00:16:10,089 --> 00:16:14,529 
+and the essential consequences that is
+that the corresponding
+
+251
+00:16:14,529 --> 00:16:17,600 
+continuous-time filter then is
+
+252
+00:16:17,600 --> 00:16:21,160 
+given by this and these two are related
+
+253
+00:16:21,160 --> 00:16:25,869 
+simply by a linear scaling the frequency
+axis
+
+254
+00:16:25,869 --> 00:16:29,579 
+and note dead where the digital filter
+has a cutoff frequency
+
+255
+00:16:29,579 --> 00:16:32,899 
+Omega subsea the continuous-time filter
+
+256
+00:16:32,899 --> 00:16:38,589 
+has a cutoff frequency Omega subsea
+divided by capital T
+
+257
+00:16:38,589 --> 00:16:42,610 
+so that's the linear frequency scaling
+and
+
+258
+00:16:42,610 --> 00:16:46,939 
+by the way plant away for now and will
+return to this point later
+
+259
+00:16:46,939 --> 00:16:49,980 
+plant the way for now the the
+observation
+
+260
+00:16:49,980 --> 00:16:53,699 
+dad even if the digital filter frequency
+response
+
+261
+00:16:53,699 --> 00:16:57,040 
+is fixed which we would assume it is
+
+262
+00:16:57,040 --> 00:17:00,399 
+by changing the sampling frequency in
+fact
+
+263
+00:17:00,399 --> 00:17:04,189 
+what we're able to do is a fact a linear
+scaling
+
+264
+00:17:04,189 --> 00:17:09,160 
+or the acquittal in continuous-time
+
+265
+00:17:09,160 --> 00:17:12,990 
+okay well this is pretty much the
+process in the analysis
+
+266
+00:17:12,990 --> 00:17:18,350 
+but to highlight a number the issues and
+emphasize these points
+
+267
+00:17:18,350 --> 00:17:22,720 
+why I like to do is illustrate
+
+268
+00:17:22,720 --> 00:17:26,380 
+somewhat this with a videotape
+demonstration
+
+269
+00:17:26,380 --> 00:17:32,340 
+that in fact was made originally as part
+of another course a course
+
+270
+00:17:32,340 --> 00:17:35,400 
+devoted entirely to
+
+271
+00:17:35,400 --> 00:17:39,970 
+digital signal processing which
+essentially is discrete-time processing
+
+272
+00:17:39,970 --> 00:17:43,080 
+whether or not it's related to
+continuous-time signals
+
+273
+00:17:43,080 --> 00:17:46,690 
+and what I'd like to now focus on
+
+274
+00:17:46,690 --> 00:17:51,020 
+are summer the details of that
+demonstration
+
+275
+00:17:51,020 --> 00:17:54,360 
+in the demonstration the
+
+276
+00:17:54,360 --> 00:17:57,440 
+specific impulse response there
+
+277
+00:17:57,440 --> 00:18:00,750 
+is used for the digital filter
+
+278
+00:18:00,750 --> 00:18:06,190 
+or discrete-time filter is the one that
+I show here
+
+279
+00:18:06,190 --> 00:18:09,610 
+and the Associated
+
+280
+00:18:09,610 --> 00:18:13,149 
+frequency response is the frequency
+response
+
+281
+00:18:13,149 --> 00:18:18,830 
+love a discrete-time low-pass filter as
+i indicate below
+
+282
+00:18:18,830 --> 00:18:24,299 
+and the cutoff frequency that filter as
+i indicate the filter was designed as a
+
+283
+00:18:24,299 --> 00:18:28,710 
+discreet I felt with the cutoff
+frequency hi over five
+
+284
+00:18:28,710 --> 00:18:32,260 
+and let me just draw your attention to
+the fact that
+
+285
+00:18:32,260 --> 00:18:35,289 
+pie over five is also
+
+286
+00:18:35,289 --> 00:18:39,230 
+10 love to pie
+
+287
+00:18:39,230 --> 00:18:42,510 
+and so in fact the digital
+
+288
+00:18:42,510 --> 00:18:46,039 
+for discrete-time filter cutoff
+frequency is a tenth
+
+289
+00:18:46,039 --> 00:18:49,630 
+to pie and as all stress again shortly
+
+290
+00:18:49,630 --> 00:18:52,730 
+remember that in the frequency
+normalization
+
+291
+00:18:52,730 --> 00:18:56,620 
+or a normalization to pie represents
+
+292
+00:18:56,620 --> 00:19:00,000 
+in effect the sampling frequency and so
+
+293
+00:19:00,000 --> 00:19:04,220 
+the consequence of that is that cutoff
+frequency really is going to be
+
+294
+00:19:04,220 --> 00:19:05,399 
+associated
+
+295
+00:19:05,399 --> 00:19:09,750 
+with the 10th all the sampling frequency
+but for now keep in mind that is just
+
+296
+00:19:09,750 --> 00:19:10,840 
+simply attentive to
+
+297
+00:19:10,840 --> 00:19:14,279 
+on now the
+
+298
+00:19:14,279 --> 00:19:18,020 
+equivalent continuous-time
+
+299
+00:19:18,020 --> 00:19:21,370 
+system interns are the impulse response
+
+300
+00:19:21,370 --> 00:19:24,840 
+is of course a ban limited interpolation
+
+301
+00:19:24,840 --> 00:19:28,350 
+love the up the
+
+302
+00:19:28,350 --> 00:19:32,429 
+impose response associated with the
+discrete-time
+
+303
+00:19:32,429 --> 00:19:36,320 
+filter and in the frequency domain the
+frequency response
+
+304
+00:19:36,320 --> 00:19:39,740 
+is correspondingly a timescale
+
+305
+00:19:39,740 --> 00:19:43,940 
+and a timescale I'm sorry a frequency
+scale
+
+306
+00:19:43,940 --> 00:19:47,500 
+version at the frequency response so in
+fact
+
+307
+00:19:47,500 --> 00:19:50,919 
+in the frequency domain and in the time
+domain
+
+308
+00:19:50,919 --> 00:19:55,730 
+related to the continuous-time signal
+
+309
+00:19:55,730 --> 00:19:58,830 
+the Associated impulse response is
+
+310
+00:19:58,830 --> 00:20:02,750 
+what I indicate here a ban limited
+interpolation
+
+311
+00:20:02,750 --> 00:20:05,980 
+or the discrete-time impulse response
+
+312
+00:20:05,980 --> 00:20:09,380 
+and time scale than
+
+313
+00:20:09,380 --> 00:20:13,360 
+and the frequency response following the
+discussion that we've previously gone
+
+314
+00:20:13,360 --> 00:20:14,450 
+through
+
+315
+00:20:14,450 --> 00:20:20,659 
+is a frequency scale version all the one
+associated with the digital filter
+
+316
+00:20:20,659 --> 00:20:24,080 
+well the first thing that all want to
+look at is
+
+317
+00:20:24,080 --> 00:20:27,610 
+the impulse response and when we do
+
+318
+00:20:27,610 --> 00:20:31,220 
+let me just indicate that
+
+319
+00:20:31,220 --> 00:20:35,649 
+in the actual implementation things are
+slightly different
+
+320
+00:20:35,649 --> 00:20:39,750 
+then they are associated with the ideal
+analysis
+
+321
+00:20:39,750 --> 00:20:43,049 
+in particular in converting
+
+322
+00:20:43,049 --> 00:20:46,929 
+from a discrete-time sequence
+
+323
+00:20:46,929 --> 00:20:50,570 
+to the continuous-time signal whereas
+
+324
+00:20:50,570 --> 00:20:53,580 
+this way of looking at it is convenient
+
+325
+00:20:53,580 --> 00:20:57,909 
+in the context that the analysis in fact
+the way it's done
+
+326
+00:20:57,909 --> 00:21:01,090 
+is is using more or less
+
+327
+00:21:01,090 --> 00:21:04,870 
+standard digital to analog converter
+
+328
+00:21:04,870 --> 00:21:09,120 
+one what a digital to analog converter
+does as i indicated in the previous
+
+329
+00:21:09,120 --> 00:21:10,230 
+lecture
+
+330
+00:21:10,230 --> 00:21:13,380 
+is to convert the sequence
+
+331
+00:21:13,380 --> 00:21:17,399 
+not to an impulse train but in fact to
+go directly through
+
+332
+00:21:17,399 --> 00:21:21,039 
+zero-order hold and so usually what
+comes onto
+
+333
+00:21:21,039 --> 00:21:25,370 
+a digital to analog converter is a
+staircase
+
+334
+00:21:25,370 --> 00:21:29,179 
+tightness signal associated with the
+zero-order hold
+
+335
+00:21:29,179 --> 00:21:34,620 
+and then the result of that is low-pass
+filter to do the reconstruction
+
+336
+00:21:34,620 --> 00:21:37,980 
+so what we want to look at and is
+
+337
+00:21:37,980 --> 00:21:42,200 
+that reconstruction first with just an
+impulse input
+
+338
+00:21:42,200 --> 00:21:46,830 
+and so what we'll see after the low-pass
+filter
+
+339
+00:21:46,830 --> 00:21:50,750 
+for the impulse response is
+
+340
+00:21:50,750 --> 00:21:56,370 
+a smooth curve like this but also as
+part of the demonstration
+
+341
+00:21:56,370 --> 00:21:59,870 
+what all do just to show the zero-order
+hold
+
+342
+00:21:59,870 --> 00:22:03,490 
+is to take the low-pass filter out
+temporarily
+
+343
+00:22:03,490 --> 00:22:07,840 
+and then put it back in so first let's
+just look at
+
+344
+00:22:07,840 --> 00:22:11,019 
+the filter impulse response
+
+345
+00:22:11,019 --> 00:22:14,200 
+what we see here is the impost response
+
+346
+00:22:14,200 --> 00:22:18,080 
+all the overall system and
+
+347
+00:22:18,080 --> 00:22:21,909 
+we observe for one thing that it's a
+symmetrical impulse response in other
+
+348
+00:22:21,909 --> 00:22:25,149 
+words corresponds to a linear phase
+filter
+
+349
+00:22:25,149 --> 00:22:28,970 
+we can also look at the impulse response
+before that the same playing
+
+350
+00:22:28,970 --> 00:22:32,409 
+low-pass filter let's take out that the
+sampling low-pass filter
+
+351
+00:22:32,409 --> 00:22:35,460 
+slowly and wide
+
+352
+00:22:35,460 --> 00:22:38,500 
+we observe is basically the output I'll
+
+353
+00:22:38,500 --> 00:22:44,230 
+the digital to analog converter which of
+course is a staircase a boxcar function
+
+354
+00:22:44,230 --> 00:22:47,260 
+not an impulse train in the real world
+the
+
+355
+00:22:47,260 --> 00:22:51,600 
+output over the day converted generally
+is a boxcar type function
+
+356
+00:22:51,600 --> 00:22:54,610 
+we can put the the sampling filter back
+in now
+
+357
+00:22:54,610 --> 00:22:59,490 
+and notice that the effectivity sampling
+filter is basically
+
+358
+00:22:59,490 --> 00:23:02,809 
+to smooth out the rough edges in
+
+359
+00:23:02,809 --> 00:23:08,590 
+the boxcar output from the DA converter
+
+360
+00:23:08,590 --> 00:23:12,210 
+okay so that's the impulse response the
+system
+
+361
+00:23:12,210 --> 00:23:15,929 
+now what I like to show is the frequency
+
+362
+00:23:15,929 --> 00:23:20,559 
+response the system and to measure the
+frequency response of course what we can
+
+363
+00:23:20,559 --> 00:23:21,029 
+do
+
+364
+00:23:21,029 --> 00:23:24,070 
+is put a sine wave
+
+365
+00:23:24,070 --> 00:23:27,710 
+into the system and looked at
+
+366
+00:23:27,710 --> 00:23:33,230 
+the sinusoidal output so in particular
+now what will happen is that
+
+367
+00:23:33,230 --> 00:23:36,529 
+with the system we will put in
+
+368
+00:23:36,529 --> 00:23:40,179 
+a continuous-time sinusoid which is
+sampled
+
+369
+00:23:40,179 --> 00:23:43,380 
+converted to a sequence
+
+370
+00:23:43,380 --> 00:23:48,690 
+the sample continues sigh sinus so it is
+a discrete-time sinusoid
+
+371
+00:23:48,690 --> 00:23:52,700 
+that goes through the digital filter and
+gets attenuated or
+
+372
+00:23:52,700 --> 00:23:55,809 
+amplified appropriately and then
+
+373
+00:23:55,809 --> 00:23:59,440 
+the output if that is converted back and
+that's
+
+374
+00:23:59,440 --> 00:24:03,470 
+again a sinusoidal output that gets
+converted back
+
+375
+00:24:03,470 --> 00:24:08,049 
+to a continuous-time sinusoid
+
+376
+00:24:08,049 --> 00:24:11,500 
+theoretically as i indicate here but
+again as we just saw
+
+377
+00:24:11,500 --> 00:24:15,460 
+really represented by zero-order hold
+followed by
+
+378
+00:24:15,460 --> 00:24:18,909 
+a low-pass filter so thats
+
+379
+00:24:18,909 --> 00:24:22,149 
+the overall operation with one
+
+380
+00:24:22,149 --> 00:24:25,350 
+modification from the diagram that we
+have here
+
+381
+00:24:25,350 --> 00:24:29,350 
+in this particular diagram I've included
+
+382
+00:24:29,350 --> 00:24:32,570 
+a and anti-aliasing filter
+
+383
+00:24:32,570 --> 00:24:35,580 
+in fact in the demonstration there is no
+
+384
+00:24:35,580 --> 00:24:38,750 
+anti-aliasing filter and so
+
+385
+00:24:38,750 --> 00:24:43,330 
+in fact the input is a sinusoidal input
+
+386
+00:24:43,330 --> 00:24:46,760 
+which is not band limited
+
+387
+00:24:46,760 --> 00:24:50,159 
+by virtue of an anti-aliasing filter
+it's only
+
+388
+00:24:50,159 --> 00:24:53,200 
+course been limited appropriately
+
+389
+00:24:53,200 --> 00:24:57,559 
+if we choose the sinusoidal frequency
+that way
+
+390
+00:24:57,559 --> 00:25:02,100 
+so there is no anti-aliasing filter and
+this is the system
+
+391
+00:25:02,100 --> 00:25:05,139 
+and one consequence if that
+
+392
+00:25:05,139 --> 00:25:08,880 
+is dead in fact if we sweep
+
+393
+00:25:08,880 --> 00:25:13,779 
+the input sinusoid only up to half the
+sampling frequency
+
+394
+00:25:13,779 --> 00:25:17,919 
+will see no aliasing but if we let its
+we passed that we're going to get
+
+395
+00:25:17,919 --> 00:25:19,120 
+aliasing
+
+396
+00:25:19,120 --> 00:25:22,820 
+now in the demonstration the sampling
+rate
+
+397
+00:25:22,820 --> 00:25:26,940 
+its picked for this party the
+demonstration is a 20 kilohertz sampling
+
+398
+00:25:26,940 --> 00:25:28,820 
+rate
+
+399
+00:25:28,820 --> 00:25:33,529 
+that means based on the sampling theorem
+that as long as the input frequency
+
+400
+00:25:33,529 --> 00:25:39,309 
+is below 10 killer hurts we get no
+aliasing
+
+401
+00:25:39,309 --> 00:25:43,029 
+when the input frequency goes beyond 10
+killer hurts
+
+402
+00:25:43,029 --> 00:25:46,799 
+that higher frequency is going to get
+alias down
+
+403
+00:25:46,799 --> 00:25:50,279 
+into a lower frequency a consequence is
+that then
+
+404
+00:25:50,279 --> 00:25:53,330 
+is that as we go through the process
+saying
+
+405
+00:25:53,330 --> 00:25:57,429 
+and we demonstrate the frequency
+response to the system
+
+406
+00:25:57,429 --> 00:26:01,130 
+what we'll see in the output is
+
+407
+00:26:01,130 --> 00:26:04,690 
+no alias saying when the input is below
+10 killer hurts
+
+408
+00:26:04,690 --> 00:26:07,970 
+as the input sweeps past 10 killer hurts
+
+409
+00:26:07,970 --> 00:26:11,909 
+when when we let it which we will
+eventually in the demonstration
+
+410
+00:26:11,909 --> 00:26:16,510 
+dan in fact that frequency as it finally
+shows up here
+
+411
+00:26:16,510 --> 00:26:21,889 
+will begin to be aliased down into a
+lower frequency
+
+412
+00:26:21,889 --> 00:26:24,950 
+another way thinking about that is dead
+
+413
+00:26:24,950 --> 00:26:28,269 
+when we watch the frequency response
+
+414
+00:26:28,269 --> 00:26:31,809 
+love the system as
+
+415
+00:26:31,809 --> 00:26:36,510 
+we look at the digital filter frequency
+response
+
+416
+00:26:36,510 --> 00:26:41,320 
+what we're sweeping and as we go from
+zero
+
+417
+00:26:41,320 --> 00:26:44,630 
+up to 10 killer hurts
+
+418
+00:26:44,630 --> 00:26:49,019 
+in the input frequency is this portion
+of the frequency response
+
+419
+00:26:49,019 --> 00:26:53,019 
+as we sweep from 10 killer hurts out to
+20 kilohertz
+
+420
+00:26:53,019 --> 00:26:57,200 
+what we'll see is this portion the
+frequency response
+
+421
+00:26:57,200 --> 00:27:00,909 
+in other words will see it periodically
+replicate
+
+422
+00:27:00,909 --> 00:27:04,539 
+or if we look at the
+
+423
+00:27:04,539 --> 00:27:08,049 
+corresponding continuous-time frequency
+response
+
+424
+00:27:08,049 --> 00:27:11,080 
+what it means really is that sweeping
+
+425
+00:27:11,080 --> 00:27:14,370 
+from 0 to 10 killer hurts
+
+426
+00:27:14,370 --> 00:27:18,590 
+is moving up this way and then sweeping
+from 10 killer hurts
+
+427
+00:27:18,590 --> 00:27:22,100 
+to 20 kilohertz on the input
+
+428
+00:27:22,100 --> 00:27:25,350 
+really because if the alias saying
+
+429
+00:27:25,350 --> 00:27:28,850 
+reflects itself in a digital filter by
+
+430
+00:27:28,850 --> 00:27:32,630 
+looking back down it toward lower
+frequencies and so the continuous-time
+
+431
+00:27:32,630 --> 00:27:33,720 
+filter
+
+432
+00:27:33,720 --> 00:27:37,639 
+sweeps back down from 10 killer hurts
+
+433
+00:27:37,639 --> 00:27:41,039 
+back 20 okay
+
+434
+00:27:41,039 --> 00:27:45,370 
+so that so we'll see and we'll see it in
+several different ways as explained in
+
+435
+00:27:45,370 --> 00:27:46,600 
+the demonstration
+
+436
+00:27:46,600 --> 00:27:49,840 
+so now let's look and the frequency
+response
+
+437
+00:27:49,840 --> 00:27:53,399 
+sold now we like to illustrate
+
+438
+00:27:53,399 --> 00:27:57,720 
+is the frequency response love the
+acquittal in continuous-time
+
+439
+00:27:57,720 --> 00:28:02,860 
+filter and we can do that by sweeping
+the filter with a sinusoidal input
+
+440
+00:28:02,860 --> 00:28:06,360 
+so what we'll see in this demonstration
+is
+
+441
+00:28:06,360 --> 00:28:11,759 
+on the upper trace the input sinusoid on
+the lower trace the output sinusoid
+
+442
+00:28:11,759 --> 00:28:14,850 
+using a 20 kilohertz sampling rate in a
+sweep
+
+443
+00:28:14,850 --> 00:28:18,929 
+from 0 to 10 killer hurts in other words
+a sweep from 0 to
+
+444
+00:28:18,929 --> 00:28:23,350 
+effectively hi interns at the digital
+filter
+
+445
+00:28:23,350 --> 00:28:28,090 
+so work will observe as the input
+frequency increases
+
+446
+00:28:28,090 --> 00:28:32,779 
+is that the output sinusoid will have
+essentially constant amplitude
+
+447
+00:28:32,779 --> 00:28:37,419 
+up to the cutoff frequency the filter
+and then approximately zero amplitude
+
+448
+00:28:37,419 --> 00:28:40,600 
+past so let's now sweet the filter
+
+449
+00:28:40,600 --> 00:28:46,570 
+frequency response
+
+450
+00:28:46,570 --> 00:28:49,799 
+and the area is the filter
+
+451
+00:28:49,799 --> 00:28:55,330 
+cutoff frequency
+
+452
+00:28:55,330 --> 00:28:59,320 
+now we can also observe the filter
+frequency response in
+
+453
+00:28:59,320 --> 00:29:03,260 
+several other ways one way in which we
+can observe it is by
+
+454
+00:29:03,260 --> 00:29:08,650 
+looking also at the amplitude if the
+output sinusoid as
+
+455
+00:29:08,650 --> 00:29:12,640 
+a function of frequency rather than as a
+function of time
+
+456
+00:29:12,640 --> 00:29:16,270 
+and so will observe that on the
+left-hand SCO
+
+457
+00:29:16,270 --> 00:29:20,320 
+while on the right-hand scope will have
+the same trace their we just saw
+
+458
+00:29:20,320 --> 00:29:23,960 
+namely to traces the upper traces the
+input sinusoid
+
+459
+00:29:23,960 --> 00:29:28,870 
+the lower traces the output sinusoid and
+in addition to observing
+
+460
+00:29:28,870 --> 00:29:33,370 
+the frequency response let's also listen
+to the output sinusoid
+
+461
+00:29:33,370 --> 00:29:36,400 
+and observe the attenuation
+
+462
+00:29:36,400 --> 00:29:40,850 
+in the output as we go from the field to
+pass band to the filter stopping again a
+
+463
+00:29:40,850 --> 00:29:42,530 
+20 kilohertz sampling rate
+
+464
+00:29:42,530 --> 00:29:49,530 
+and a sweep range from 0 to 10 killer
+now
+
+465
+00:29:53,670 --> 00:29:57,400 
+course when the filter stop
+
+466
+00:29:57,400 --> 00:30:02,150 
+now if we increase the sweep range
+
+467
+00:30:02,150 --> 00:30:05,380 
+from 10 killer hurts the 20 kilohertz
+
+468
+00:30:05,380 --> 00:30:08,850 
+so that the sweep range is equal to the
+sampling frequency
+
+469
+00:30:08,850 --> 00:30:12,550 
+in essence that corresponds the sweeping
+at the digital filter
+
+470
+00:30:12,550 --> 00:30:17,250 
+from 0 to 2pi and in that case we'll
+begin to see
+
+471
+00:30:17,250 --> 00:30:21,030 
+some %uh the periodicity in the digital
+filter frequency response
+
+472
+00:30:21,030 --> 00:30:25,340 
+so let's do that now with 20 kilohertz
+sampling rate
+
+473
+00:30:25,340 --> 00:30:28,340 
+and a sweep range is 0 to 20 kilohertz
+
+474
+00:30:28,340 --> 00:30:34,750 
+now as we come near to Pine
+
+475
+00:30:34,750 --> 00:30:39,160 
+we get back into the past
+
+476
+00:30:39,160 --> 00:30:43,250 
+an finally back to
+
+477
+00:30:43,250 --> 00:30:46,920 
+a0 to 10 killer hurts we so they were
+again sweeping
+
+478
+00:30:46,920 --> 00:30:53,920 
+only from 0 to 2pi with regard to the
+digital filter
+
+479
+00:31:05,089 --> 00:31:08,099 
+now an important observation is that
+
+480
+00:31:08,099 --> 00:31:11,639 
+with the digital or discrete-time
+
+481
+00:31:11,639 --> 00:31:16,179 
+filter cutoff frequency fixed as i've
+indicated here
+
+482
+00:31:16,179 --> 00:31:20,139 
+and I remind you that what the cutoff
+frequency is
+
+483
+00:31:20,139 --> 00:31:24,799 
+is a 10 to hi with that cutoff frequency
+fixed
+
+484
+00:31:24,799 --> 00:31:28,009 
+because I love the normalization that we
+get
+
+485
+00:31:28,009 --> 00:31:31,479 
+as we come back to a continuous-time
+
+486
+00:31:31,479 --> 00:31:34,599 
+filter in fact what we have
+
+487
+00:31:34,599 --> 00:31:38,159 
+is a cutoff frequency dead is
+
+488
+00:31:38,159 --> 00:31:42,299 
+dependent on the sampling frequency or
+on the sampling period
+
+489
+00:31:42,299 --> 00:31:46,449 
+and more specifically since the
+discrete-time or digital
+
+490
+00:31:46,449 --> 00:31:50,819 
+filter has a cutoff frequency which is
+attentive to pie
+
+491
+00:31:50,819 --> 00:31:53,849 
+the normalization as you recall
+
+492
+00:31:53,849 --> 00:31:58,349 
+is dead to pie in discrete-time
+frequency
+
+493
+00:31:58,349 --> 00:32:02,219 
+corresponds to Omega sed s/ the sampling
+frequency
+
+494
+00:32:02,219 --> 00:32:06,289 
+in terms of continuous-time frequency
+the consequence
+
+495
+00:32:06,289 --> 00:32:10,169 
+is dead this cutoff frequency in fact
+
+496
+00:32:10,169 --> 00:32:13,819 
+is 110 all
+
+497
+00:32:13,819 --> 00:32:17,609 
+not to pine now because at the
+normalization its 110
+
+498
+00:32:17,609 --> 00:32:20,909 
+I'll the sampling frequency so
+
+499
+00:32:20,909 --> 00:32:25,519 
+consequently as we change the sampling
+frequency
+
+500
+00:32:25,519 --> 00:32:30,199 
+what will happen is that even with the
+discrete-time filter cutoff fixed
+
+501
+00:32:30,199 --> 00:32:34,759 
+the cutoff frequency I'll the equivalent
+continuous-time
+
+502
+00:32:34,759 --> 00:32:38,389 
+filter will change now
+
+503
+00:32:38,389 --> 00:32:41,669 
+that's what I want to demonstrate but
+let me
+
+504
+00:32:41,669 --> 00:32:44,789 
+again stress and ask you to keep in mind
+dead
+
+505
+00:32:44,789 --> 00:32:48,949 
+this demonstration is done without an
+anti-aliasing filter in
+
+506
+00:32:48,949 --> 00:32:54,599 
+and we are going to be changing the
+sampling frequency
+
+507
+00:32:54,599 --> 00:32:58,119 
+and so keep in mind dead as
+
+508
+00:32:58,119 --> 00:33:02,559 
+we look at this as the input frequency
+
+509
+00:33:02,559 --> 00:33:07,439 
+sweeps past half the sampling frequency
+whatever sampling frequency we happen to
+
+510
+00:33:07,439 --> 00:33:08,329 
+be looking at
+
+511
+00:33:08,329 --> 00:33:12,239 
+then because the fact that there's no
+anti-aliasing filter
+
+512
+00:33:12,239 --> 00:33:17,239 
+will get daily as saying in other words
+the frequency in the digital filter
+
+513
+00:33:17,239 --> 00:33:20,879 
+discrete-time filter as we sweep the
+input frequency up
+
+514
+00:33:20,879 --> 00:33:24,279 
+will move up in frequency until we get
+
+515
+00:33:24,279 --> 00:33:28,539 
+past half the sampling frequency and
+then essentially will move back down
+
+516
+00:33:28,539 --> 00:33:32,690 
+frequency consequently what will get
+
+517
+00:33:32,690 --> 00:33:36,169 
+then are or we'll see our periodic
+replications
+
+518
+00:33:36,169 --> 00:33:41,159 
+the frequency response when we swept
+past have see half the sampling alright
+
+519
+00:33:41,159 --> 00:33:42,119 
+so now
+
+520
+00:33:42,119 --> 00:33:45,299 
+let's look at the same digital filter
+
+521
+00:33:45,299 --> 00:33:48,539 
+but the frequency response as
+
+522
+00:33:48,539 --> 00:33:53,519 
+we change the sampling frequency now
+
+523
+00:33:53,519 --> 00:33:57,239 
+what we would like to demonstrate is the
+effective changing the same thing
+
+524
+00:33:57,239 --> 00:34:00,479 
+frequency and we know that
+
+525
+00:34:00,479 --> 00:34:03,779 
+the sampling that the effective filter
+cutoff frequency
+
+526
+00:34:03,779 --> 00:34:07,029 
+is tied to the sampling frequency
+
+527
+00:34:07,029 --> 00:34:10,529 
+and for this particular filter
+corresponds to attend
+
+528
+00:34:10,529 --> 00:34:15,450 
+of the sampling frequency consequently
+if we double the sampling frequency we
+
+529
+00:34:15,450 --> 00:34:16,149 
+should double
+
+530
+00:34:16,149 --> 00:34:20,119 
+the affective filter past and where war
+
+531
+00:34:20,119 --> 00:34:23,319 
+double the filter cutoff frequency and
+
+532
+00:34:23,319 --> 00:34:27,659 
+so let's do that now it again is 0-10
+killer hurt sweep range
+
+533
+00:34:27,659 --> 00:34:30,779 
+but a forty kilohertz sampling frequency
+
+534
+00:34:30,779 --> 00:34:35,089 
+me and
+
+535
+00:34:35,089 --> 00:34:39,450 
+we should observe that the filter cutoff
+frequency has now doubled
+
+536
+00:34:39,450 --> 00:34:44,119 
+out 24 killer now
+
+537
+00:34:44,119 --> 00:34:47,480 
+let's begin to decrease the filter
+sampling frequency
+
+538
+00:34:47,480 --> 00:34:51,960 
+so from forty let's change the sampling
+frequency to 20 kilohertz
+
+539
+00:34:51,960 --> 00:34:58,960 
+we should see the cutoff frequency cut
+in half me
+
+540
+00:35:05,989 --> 00:35:09,749 
+now we can go even further we can cut
+the sampling frequency down
+
+541
+00:35:09,749 --> 00:35:13,910 
+10 killer hurts and remember that the
+sweep range is 0 to 10 killer hurt so
+
+542
+00:35:13,910 --> 00:35:16,450 
+now will be sweeping from 0 to 2pi
+
+543
+00:35:16,450 --> 00:35:23,450 
+so as we get close to two pi will see
+the passband again
+
+544
+00:35:27,430 --> 00:35:30,700 
+and now
+
+545
+00:35:30,700 --> 00:35:33,769 
+let's cut down the sampling frequency
+even further
+
+546
+00:35:33,769 --> 00:35:37,999 
+to by kilohertz my
+
+547
+00:35:37,999 --> 00:35:42,519 
+here we are at 2pi
+
+548
+00:35:42,519 --> 00:35:45,859 
+and then
+
+549
+00:35:45,859 --> 00:35:50,369 
+at for pop alright so
+
+550
+00:35:50,369 --> 00:35:54,109 
+that illustrates the effective changing
+the sampling frequency
+
+551
+00:35:54,109 --> 00:35:57,799 
+now let's conclude this demonstration at
+the effect
+
+552
+00:35:57,799 --> 00:36:01,950 
+on the sampling frequency on the filter
+cutoff frequency by carrying out some
+
+553
+00:36:01,950 --> 00:36:02,680 
+filtering
+
+554
+00:36:02,680 --> 00:36:05,779 
+on some live audio white will
+
+555
+00:36:05,779 --> 00:36:08,869 
+watching this case is the output
+
+556
+00:36:08,869 --> 00:36:12,690 
+audio waveform as a function of time
+
+557
+00:36:12,690 --> 00:36:15,970 
+on the single trace go and also
+
+558
+00:36:15,970 --> 00:36:20,230 
+will listen to the output will begin it
+with a forty killer hurts
+
+559
+00:36:20,230 --> 00:36:25,069 
+sampling rate then reduce that to 20
+kilohertz 10 killer hurts and then five
+
+560
+00:36:25,069 --> 00:36:25,789 
+alerts
+
+561
+00:36:25,789 --> 00:36:29,970 
+and in each of those cases the effective
+filter cutoff frequency
+
+562
+00:36:29,970 --> 00:36:33,980 
+then is cut in half from for keywords to
+kill hurts
+
+563
+00:36:33,980 --> 00:36:38,880 
+21 kilohertz and then to 500 cycles so
+let's begin with the forty killer hurt
+
+564
+00:36:38,880 --> 00:36:40,160 
+sampling frequency
+
+565
+00:36:40,160 --> 00:36:47,160 
+or ineffective filter cutoff frequency
+of work killer
+
+566
+00:36:49,940 --> 00:36:53,040 
+now let's reduce net 20 kilohertz am
+
+567
+00:36:53,040 --> 00:37:00,040 
+frequency or to kill hurts filter
+
+568
+00:37:00,750 --> 00:37:03,130 
+and 10 kelleher sampling frequency
+
+569
+00:37:03,130 --> 00:37:06,319 
+the
+
+570
+00:37:06,319 --> 00:37:07,170 
+the
+
+571
+00:37:07,170 --> 00:37:10,799 
+then finally in my Google Earth family
+
+572
+00:37:10,799 --> 00:37:14,910 
+cigars running to me why minor in Psych
+grueling
+
+573
+00:37:14,910 --> 00:37:20,890 
+analog all the
+
+574
+00:37:20,890 --> 00:37:24,690 
+I now let's finally include why
+returning to
+
+575
+00:37:24,690 --> 00:37:28,470 
+a little higher quality ragtime like me
+the same
+
+576
+00:37:28,470 --> 00:37:35,470 
+theme
+
+577
+00:37:37,920 --> 00:37:39,590 
+right well hopefully
+
+578
+00:37:39,590 --> 00:37:43,720 
+what you've seen in the demonstration
+and in this lecture
+
+579
+00:37:43,720 --> 00:37:47,530 
+is gives you a sense of feeling
+
+580
+00:37:47,530 --> 00:37:50,580 
+for the analysis and the use
+
+581
+00:37:50,580 --> 00:37:53,740 
+I'll discrete-time filters
+
+582
+00:37:53,740 --> 00:37:56,800 
+for processing continuous-time signals
+and
+
+583
+00:37:56,800 --> 00:38:00,200 
+as you may be aware and as I've tried to
+indicate
+
+584
+00:38:00,200 --> 00:38:03,370 
+previously in the past this in fact is
+
+585
+00:38:03,370 --> 00:38:07,710 
+one very important but not the only but
+one very important
+
+586
+00:38:07,710 --> 00:38:10,930 
+context in which discrete-time filtering
+
+587
+00:38:10,930 --> 00:38:14,320 
+issues and this in fact is
+
+588
+00:38:14,320 --> 00:38:18,550 
+an area that is developing rapidly
+because at the fact dead
+
+589
+00:38:18,550 --> 00:38:22,900 
+microprocessors digital technology
+computers et cetera
+
+590
+00:38:22,900 --> 00:38:26,290 
+afford considerable flexibility
+
+591
+00:38:26,290 --> 00:38:30,090 
+in carrying out digital processing of
+signals
+
+592
+00:38:30,090 --> 00:38:35,510 
+and it is and went digital processing is
+used at
+
+593
+00:38:35,510 --> 00:38:38,800 
+naturally corresponds
+
+594
+00:38:38,800 --> 00:38:43,080 
+to to implementing the processing
+
+595
+00:38:43,080 --> 00:38:48,780 
+and analyzing it in discrete-time now
+
+596
+00:38:48,780 --> 00:38:52,940 
+in the next lecture will be continuing
+
+597
+00:38:52,940 --> 00:38:56,520 
+on another aspect developing another
+aspect
+
+598
+00:38:56,520 --> 00:38:59,560 
+love sampling any particular
+
+599
+00:38:59,560 --> 00:39:04,080 
+what we'll be talking about is sampling
+of discrete-time signals
+
+600
+00:39:04,080 --> 00:39:08,290 
+as all indicate there one of the
+contexts in which
+
+601
+00:39:08,290 --> 00:39:12,170 
+discrete-time sampling in fact plays an
+important role
+
+602
+00:39:12,170 --> 00:39:15,480 
+is in the context in which
+
+603
+00:39:15,480 --> 00:39:18,950 
+we are processing continuous-time
+signals
+
+604
+00:39:18,950 --> 00:39:22,320 
+using discrete time processing where in
+fact
+
+605
+00:39:22,320 --> 00:39:25,720 
+one step that we might want to take in
+addition to the steps that we've talked
+
+606
+00:39:25,720 --> 00:39:26,880 
+about here
+
+607
+00:39:26,880 --> 00:39:30,780 
+is an additional sampling process
+following
+
+608
+00:39:30,780 --> 00:39:35,330 
+whatever kinds of filtering that we that
+we do well that's a discussion and a
+
+609
+00:39:35,330 --> 00:39:37,850 
+topic that will be going into in the
+next lecture
+
+610
+00:39:37,850 --> 00:39:38,270 
+thank you
+

@@ -1,0 +1,776 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+以下内容是根据Creative Commons授权提供
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+您的支持将有助于麻省理工学院开放式课程继续报价
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+免费优质教育资源
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+进行捐赠或查看附加材料由数百人资讯
+
+00:00:14,000 --> 00:00:15,000
+courses
+课程
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+参观麻省理工学院开放式课程在0 CW
+
+00:00:18,000 --> 00:00:20,000
+that MIT ided you
+麻省理工学院被提供的你
+
+00:00:20,000 --> 00:00:27,000
+home
+家
+
+00:00:35,000 --> 00:00:38,000
+in
+
+
+00:00:38,000 --> 00:00:40,000
+in
+
+
+00:00:40,000 --> 00:00:47,000
+the No
+否
+
+00:00:51,000 --> 00:00:56,000
+for in the last lecture
+在上一讲
+
+00:00:56,000 --> 00:01:02,000
+I introduced an illustrated the kinds of signals and systems that will be dealing
+我介绍一本图文并茂的各种信号和系统，将处理
+
+00:01:02,000 --> 00:01:02,000
+with
+同
+
+00:01:02,000 --> 00:01:06,000
+throughout this course in today's lecture I'd like to
+整个过程在今天的演讲中，我想
+
+00:01:06,000 --> 00:01:10,000
+be a little more specific and in particular talk about
+是一个更具体一点，尤其是说说
+
+00:01:10,000 --> 00:01:15,000
+some the basic signals both continuous-time and discrete-time
+一些基本的信号都连续时间和离散时间
+
+00:01:15,000 --> 00:01:18,000
+that will form important building blocks as
+这将形成重要的组成部分为
+
+00:01:18,000 --> 00:01:21,000
+the course progresses let's begin
+课程的进展，让我们开始
+
+00:01:21,000 --> 00:01:26,000
+with one signal the continuous-time sinusoidal signal which perhaps you're
+同一个信号的连续时间正弦信号，也许你
+
+00:01:26,000 --> 00:01:27,000
+already
+已经
+
+00:01:27,000 --> 00:01:30,000
+somewhat familiar with mathematically
+稍微熟悉数学
+
+00:01:30,000 --> 00:01:35,000
+the continuous-time sinusoidal signal is expressed as i've indicated here
+连续时间正弦信号表示为我在这里表示
+
+00:01:35,000 --> 00:01:38,000
+there are three parameters
+有三个参数
+
+00:01:38,000 --> 00:01:44,000
+a Omega 0 and see the parameter a is referred to as
+一个欧米茄0，看到了一个参数被称为
+
+00:01:44,000 --> 00:01:48,000
+the ample to the parameter Omega 0
+充足的参数欧米茄0
+
+00:01:48,000 --> 00:01:51,000
+as the frequency and the parameter fee
+随着频率和参数费
+
+00:01:51,000 --> 00:01:55,000
+as the face and
+作为脸和
+
+00:01:55,000 --> 00:02:01,000
+graphically the continuous-time sinusoidal signal has the form
+图形的连续时间正弦信号的形式
+
+00:02:01,000 --> 00:02:05,000
+shown here now
+现在这里显示
+
+00:02:05,000 --> 00:02:08,000
+the sinusoidal signal has a number love
+的正弦信号具有许多爱
+
+00:02:08,000 --> 00:02:13,000
+important properties that will find it convenient to exploit as the
+这将是很方便的利用作为重要性质
+
+00:02:13,000 --> 00:02:16,000
+course goes along one of which is
+当然随之而来的是一
+
+00:02:16,000 --> 00:02:20,000
+the fact that the sinusoidal signal
+一个事实，即正弦信号
+
+00:02:20,000 --> 00:02:25,000
+is what is referred to as periodic what I mean by periodic
+是什么是周期性称为周期性我是什么意思
+
+00:02:25,000 --> 00:02:30,000
+is that under inappropriate time shift which I indicate here
+是，在不合适的时间偏移，我在此说明
+
+00:02:30,000 --> 00:02:34,000
+as t0 the signal replicates
+作为T0信号重复
+
+00:02:34,000 --> 00:02:37,000
+or repeats itself force it another way
+或重演强迫它的另一种方式
+
+00:02:37,000 --> 00:02:41,000
+if we shift the time origin by an appropriate amount
+如果我们用一个适当的量移位的时间原点
+
+00:02:41,000 --> 00:02:46,000
+t0 the smallest value t0 being referred to as the period
+T0最小的值T0被称为周期
+
+00:02:46,000 --> 00:02:52,000
+then X 50 is equal to itself shifted and
+然后X 50等于它本身转移及
+
+00:02:52,000 --> 00:02:55,000
+to demonstrate that we can demonstrated mathematically
+证明我们可以用数学证明
+
+00:02:55,000 --> 00:03:00,000
+by simply substituting into the mathematical expression for the
+通过简单的代入的数学表达式
+
+00:03:00,000 --> 00:03:02,000
+sinusoidal signal
+正弦信号
+
+00:03:02,000 --> 00:03:05,000
+see plus capital T zero
+见加上大写字母T为零
+
+00:03:05,000 --> 00:03:09,000
+in place if T when we carry out the expansion
+在地方，如果T当我们进行扩展
+
+00:03:09,000 --> 00:03:13,000
+we then have for the argument the sinusoid
+我们再对参数的正弦曲线
+
+00:03:13,000 --> 00:03:16,000
+Omega 0t plus Omega 0
+Omega欧米茄加0T 0
+
+00:03:16,000 --> 00:03:20,000
+capital T zero plus P now
+现在大写字母T零加p
+
+00:03:20,000 --> 00:03:24,000
+one of the things that we know about sinusoidal functions
+那我们知道正弦函数的一件事
+
+00:03:24,000 --> 00:03:28,000
+is dead if you change the argument by any integer multiple
+如果您通过任何整数倍改变参数是死的
+
+00:03:28,000 --> 00:03:32,000
+to pie and the function has the same value
+以饼和函数具有相同的值
+
+00:03:32,000 --> 00:03:35,000
+and so we can exploit that here in particular
+所以我们可以在这里特别利用
+
+00:03:35,000 --> 00:03:39,000
+with Omega 0t0 and integer multiple
+欧米茄0T0和整数倍
+
+00:03:39,000 --> 00:03:44,000
+up to par i then the right hand side of this equation
+达到标准这个方程i，那么在右手侧
+
+00:03:44,000 --> 00:03:47,000
+is equal to the left hand side of the equation so
+等于等式的左手侧，从而
+
+00:03:47,000 --> 00:03:52,000
+with Omega 0t0 equal to two part times an integer
+欧米茄0T0等于两个部分时间的整数
+
+00:03:52,000 --> 00:03:56,000
+or t0 equal to two part times an integer
+或T0等于2倍的部分的一个整数
+
+00:03:56,000 --> 00:04:02,000
+divided by Omega 0 the signal repeats the period is defined as the smallest
+由欧米茄0除以信号重复周期被定义为最小的
+
+00:04:02,000 --> 00:04:05,000
+value if t0 and so the period is to pie
+如果T0值，所以周期是馅饼
+
+00:04:05,000 --> 00:04:10,000
+divided by Omega 0 and going back to
+由欧米茄0分，并要回
+
+00:04:10,000 --> 00:04:13,000
+are sinusoidal signal we can
+是正弦信号，我们可以
+
+00:04:13,000 --> 00:04:16,000
+see that and
+看到这一点，
+
+00:04:16,000 --> 00:04:20,000
+i've indicated here then the period
+我在这里表示那么这个期限
+
+00:04:20,000 --> 00:04:24,000
+as to pie over Omega 0 and that's the bad you
+以饼图在欧米茄0，这就是你不好
+
+00:04:24,000 --> 00:04:30,000
+under which the signal repeats now
+根据该信号现在重复
+
+00:04:30,000 --> 00:04:34,000
+in addition a useful
+另外一个有用的
+
+00:04:34,000 --> 00:04:38,000
+property above the sinusoidal signal is the fact that
+属性的正弦信号以上的事实是
+
+00:04:38,000 --> 00:04:41,000
+a timeshare all a sinusoid
+分时所有的正弦曲线
+
+00:04:41,000 --> 00:04:45,000
+is equivalent to a phase change and we can demonstrate
+相当于一个相位变化，我们能够证明
+
+00:04:45,000 --> 00:04:49,000
+that again mathematically in particular
+一遍数学特别
+
+00:04:49,000 --> 00:04:53,000
+if we put the sinusoidal signal under
+如果我们把正弦信号下
+
+00:04:53,000 --> 00:04:57,000
+a timeshare i've indicated that the probe the time shift that i'm talking
+分时我已经指出，探针时的转变，我说的
+
+00:04:57,000 --> 00:05:00,000
+about. by small t0
+约。小T0
+
+00:05:00,000 --> 00:05:03,000
+and expand this out then
+并扩大了这一点，然后
+
+00:05:03,000 --> 00:05:06,000
+we see that that is equivalent to
+我们看到，它等效于
+
+00:05:06,000 --> 00:05:11,000
+a change in phase and important thing to recognize
+在第二阶段，并认识到重要的一点变化
+
+00:05:11,000 --> 00:05:17,000
+about this statement is that not only is a timeshare
+关于本声明的是，不仅是分时度假
+
+00:05:17,000 --> 00:05:20,000
+generating a phase change but in fact
+产生的相位变化，但是实际上
+
+00:05:20,000 --> 00:05:24,000
+if we inserted a phase change
+如果我们插入了一个相变
+
+00:05:24,000 --> 00:05:27,000
+there is always a value if t0
+总有一个值，如果T0
+
+00:05:27,000 --> 00:05:31,000
+which would correspond to
+这将对应于
+
+00:05:31,000 --> 00:05:34,000
+an equivalent I'm ship said another way
+等效的，我的船说另一种方式
+
+00:05:34,000 --> 00:05:38,000
+if retake Omega 0t0
+如果再拿欧米茄0T0
+
+00:05:38,000 --> 00:05:42,000
+and think of that as are change in phase
+并认为那是有变化的相
+
+00:05:42,000 --> 00:05:47,000
+for any change in phase we can solve this equation for timeshift
+在阶段的任何变化，我们可以解决这个方程时光平移
+
+00:05:47,000 --> 00:05:50,000
+or conversely for any value timeshare that
+或者相反，对于任何价值的分时度假
+
+00:05:50,000 --> 00:05:54,000
+represents an appropriate face
+代表适量涂于面部
+
+00:05:54,000 --> 00:05:58,000
+so a time shift corresponds to a phase change
+这样一个时间移位对应于相变
+
+00:05:58,000 --> 00:06:02,000
+and a phase change likewise corresponds to it I'm ship
+和一种相变同样对应于它我船
+
+00:06:02,000 --> 00:06:06,000
+and so for example if we
+因此，例如，如果我们
+
+00:06:06,000 --> 00:06:10,000
+look at the sinusoidal signal
+看看正弦信号
+
+00:06:10,000 --> 00:06:13,000
+the general sinusoidal signal that we
+一般的正弦信号，我们
+
+00:06:13,000 --> 00:06:17,000
+saw previously in effect changing the phase
+实际上之前看到的改变相
+
+00:06:17,000 --> 00:06:21,000
+corresponds to moving this signal in time
+对应于时间提出这个信号
+
+00:06:21,000 --> 00:06:26,000
+one way or the other for example if we look at the sinusoidal signal with
+一种方式或其他，例如，如果我们看一下正弦信号
+
+00:06:26,000 --> 00:06:30,000
+a phase equal to 0 that corresponds
+一个相位等于0，其对应
+
+00:06:30,000 --> 00:06:33,000
+to locating the time origin at this p
+到定位时间原点在这个P
+
+00:06:33,000 --> 00:06:37,000
+and i've indicated that on
+我已经表明，在
+
+00:06:37,000 --> 00:06:41,000
+the following grass
+下面的草
+
+00:06:41,000 --> 00:06:45,000
+so here we have illustrated a sinusoid
+所以在这里，我们已经说明了正弦曲线
+
+00:06:45,000 --> 00:06:49,000
+with zero phase or cosine with zero phase
+零相位或余弦零相位
+
+00:06:49,000 --> 00:06:52,000
+corresponding to taking a general picture and shifting it
+相应采取概貌和它转移
+
+00:06:52,000 --> 00:06:56,000
+shifting it appropriately as i've indicated here
+它适当地转移，因为我已经在这里表示
+
+00:06:56,000 --> 00:07:01,000
+this of course still has the property that it's a periodic function
+这当然还是有，这是一个周期函数的性质
+
+00:07:01,000 --> 00:07:05,000
+since we simply displaced in time
+因为我们只是在时间上移位
+
+00:07:05,000 --> 00:07:10,000
+and by looking at the graph what we see is that it has another very important
+并且通过观察该图我们看到的是，它有另外一个非常重要
+
+00:07:10,000 --> 00:07:11,000
+property
+属性
+
+00:07:11,000 --> 00:07:14,000
+a property referred to as even and
+一个属性称为均匀
+
+00:07:14,000 --> 00:07:18,000
+that's a property that will find it useful in general
+这是一个属性，会发现它在一般有用
+
+00:07:18,000 --> 00:07:22,000
+to refer to in relation to signals a signal is said to be even
+参考有关的信号的信号被认为是什
+
+00:07:22,000 --> 00:07:28,000
+if when we reflected about the origin it looks exactly the same so it's a metric
+如果当我们反映关于原点它看起来完全一样的，所以它是一个度量
+
+00:07:28,000 --> 00:07:32,000
+about the origin and looking at
+关于起源和看
+
+00:07:32,000 --> 00:07:37,000
+this sinusoid that in fact has that property
+此正弦波，其实有一个属性
+
+00:07:37,000 --> 00:07:43,000
+and mathematically this statement that it's even is equivalent to the statement
+和数学这条语句，它甚至相当于声明
+
+00:07:43,000 --> 00:07:46,000
+that if we replace the time argument
+如果我们更换时间参数
+
+00:07:46,000 --> 00:07:49,000
+by its negative the function itself
+其负函数本身
+
+00:07:49,000 --> 00:07:53,000
+doesn't change
+不改变
+
+00:07:53,000 --> 00:07:57,000
+now this corresponded to a phase shift 0 in our original
+现在这相当于在我们原来的相移0
+
+00:07:57,000 --> 00:08:00,000
+cosine expression if instead we had
+余弦表达式，如果不是我们有
+
+00:08:00,000 --> 00:08:04,000
+chosen a phase shift love let's say minus pie over to
+选择了一个相移的爱，让我们说减派过来
+
+00:08:04,000 --> 00:08:07,000
+then is that a a cosigner so it'll signal
+然后是一个一个联署所以它会发出信号
+
+00:08:07,000 --> 00:08:11,000
+well we would generate is a sinusoid
+好，我们会产生一个正弦
+
+00:08:11,000 --> 00:08:15,000
+with the appropriate phase or
+用适当的相位或
+
+00:08:15,000 --> 00:08:18,000
+said another way if we take are
+换个说法，如果我们采取有
+
+00:08:18,000 --> 00:08:22,000
+original cosine and
+原来余弦和
+
+00:08:22,000 --> 00:08:25,000
+substitute in for the phase minus pie over to
+在替换为相减派过来
+
+00:08:25,000 --> 00:08:28,000
+then of course we have this mathematical expression
+那么当然我们有这个数学表达式
+
+00:08:28,000 --> 00:08:32,000
+using just straight for trigonometric identities
+只使用直三角恒等式
+
+00:08:32,000 --> 00:08:37,000
+we can express that alternately as signed Omega 0t
+我们可以交替表达，作为签署欧米茄0吨
+
+00:08:37,000 --> 00:08:41,000
+the frequency and amplitude of course haven't changed and
+当然，频率和幅度没有改变，并
+
+00:08:41,000 --> 00:08:45,000
+that you can convince yourself also is equivalent
+你可以说服自己也就相当于
+
+00:08:45,000 --> 00:08:48,000
+to shifting the cosine by
+以通过移动余弦
+
+00:08:48,000 --> 00:08:52,000
+and a mountain time that I've indicated here namely
+而且我在这里表示，即山时间
+
+00:08:52,000 --> 00:08:56,000
+a quarter of the period so illustrated below
+一季度期间所以如下图所示
+
+00:08:56,000 --> 00:08:59,000
+is the graph now when
+是图现在时
+
+00:08:59,000 --> 00:09:02,000
+we have a phase of mine espy over to an arc cosine
+我们有我的一个阶段窥探了一个反余弦
+
+00:09:02,000 --> 00:09:08,000
+which is a sinusoidal signal of course it's still
+这当然是一个正弦波信号，它仍然
+
+00:09:08,000 --> 00:09:12,000
+periodic its periodic with a period of two pi
+定期的周期性，周期为2 PI
+
+00:09:12,000 --> 00:09:16,000
+over Omega 0 again because all that we've done
+在欧米茄0再次因为所有我们所做的
+
+00:09:16,000 --> 00:09:19,000
+by introducing a phase change is
+通过引入相变是
+
+00:09:19,000 --> 00:09:24,000
+introduce the timeshare now
+现在介绍分时度假
+
+00:09:24,000 --> 00:09:28,000
+when we look at the sinusoid in comparison with the Cosi namely with
+当我们看正弦曲线与COSI比较，即与
+
+00:09:28,000 --> 00:09:30,000
+this particular choice a phase
+这个特殊的选择相
+
+00:09:30,000 --> 00:09:34,000
+this has a different symmetry and
+此具有不同的对称性和
+
+00:09:34,000 --> 00:09:38,000
+that symmetry is referred to as odd what ought symmetry means
+该对称被称为奇数什么应该对称手段
+
+00:09:38,000 --> 00:09:42,000
+graphically is that when we flipped the signal
+图形化的是，当我们翻转的信号
+
+00:09:42,000 --> 00:09:46,000
+about the origin
+关于原点
+
+00:09:46,000 --> 00:09:51,000
+but I margin we also multiply it by a minus sign
+但我利润率，我们也通过一个减号乘以
+
+00:09:51,000 --> 00:09:54,000
+so thats in effect antisymmetric
+实际上反对称因此多数民众赞成
+
+00:09:54,000 --> 00:09:57,000
+it it's not the mirror image but it's the mirror image flipped over
+但它不是镜像，但它的镜像翻转
+
+00:09:57,000 --> 00:10:03,000
+and will find many occasions not only to refer to signals more general and
+并会发现许多场合，不仅指信号更一般和
+
+00:10:03,000 --> 00:10:04,000
+sinusoidal signals as
+正弦信号作为
+
+00:10:04,000 --> 00:10:08,000
+even in some cases and odd in other cases
+甚至在某些情况下，奇在其他情况下
+
+00:10:08,000 --> 00:10:12,000
+and in general mathematically
+和一般的数学
+
+00:10:12,000 --> 00:10:15,000
+on signal is one which
+上信号是其中之一
+
+00:10:15,000 --> 00:10:19,000
+has satisfy is the algebraic expression
+有满足的是代数式
+
+00:10:19,000 --> 00:10:22,000
+that exit see when you replace
+该出口看，当你更换
+
+00:10:22,000 --> 00:10:27,000
+TE by its negative is equal to
+TE通过其负面等于
+
+00:10:27,000 --> 00:10:31,000
+minus exit -2 so replacing the argument by its negative
+减去出口-2获其负面替换参数
+
+00:10:31,000 --> 00:10:35,000
+corresponds to time River I A
+对应于时间河I A
+
+00:10:35,000 --> 00:10:39,000
+an algebraic sign rivers
+一个代数符号河流
+
+00:10:39,000 --> 00:10:42,000
+okay so in this is the class of continuous-time
+行，以便在这个类的连续时间
+
+00:10:42,000 --> 00:10:46,000
+sinusoids will have a little more to say about it later
+血窦将有更多一点后来说一下吧
+
+00:10:46,000 --> 00:10:49,000
+but I've now like to turn to
+但我现在想谈谈
+
+00:10:49,000 --> 00:10:54,000
+discrete-time sinusoids what we'll see is that discrete-time sinusoids
+离散时间血窦就是我们要看到的是，离散时间正弦信号
+
+00:10:54,000 --> 00:10:58,000
+are very much like continuous-time ones but also
+非常像连续时间的，但也
+
+00:10:58,000 --> 00:11:02,000
+with some very important differences and we want to focus not only on the
+有一些非常重要的区别，我们希望不仅着眼于
+
+00:11:02,000 --> 00:11:03,000
+similarities
+相似之处
+
+00:11:03,000 --> 00:11:07,000
+but also on the differences well let's begin
+同时也对差异以及让我们开始吧
+
+00:11:07,000 --> 00:11:11,000
+with the mathematical expression a
+用数学表达式
+
+00:11:11,000 --> 00:11:15,000
+discrete-time sinusoidal signal mathematically
+离散时间正弦信号在数学上
+
+00:11:15,000 --> 00:11:19,000
+is as i've indicated here a cosine
+是因为我在这里表示一个余弦
+
+00:11:19,000 --> 00:11:22,000
+Omega 0 and plus the and just says
+欧米茄0加，只是说：
+
+00:11:22,000 --> 00:11:26,000
+in the continuous-time case the parameter
+在连续时间的情况下的参数
+
+00:11:26,000 --> 00:11:30,000
+a is what we refer to as the airport to
+一个就是我们所说的机场
+
+00:11:30,000 --> 00:11:34,000
+Omega 0 as the frequency and see
+ω-0的频率和看
+
+00:11:34,000 --> 00:11:38,000
+as the face
+作为脸
+
+00:11:38,000 --> 00:11:42,000
+and I've illustrated
+我已经说明
+
+00:11:42,000 --> 00:11:46,000
+here several discrete-time
+这里几个离散时间
+
+00:11:46,000 --> 00:11:49,000
+sinusoidal signals and they kinda
+正弦信号，他们还挺
+
+00:11:49,000 --> 00:11:53,000
+look similar in fact if you sort of track what you might think of is the
+看起来其实相类似的，如果你跟踪你可能会想到的是什么
+
+00:11:53,000 --> 00:11:54,000
+envelope
+信封
+
+00:11:54,000 --> 00:11:59,000
+it looks very much like what a continuous-time sign outside so it might
+它看起来非常像一个连续时间签署外，这样它可能
+
+00:11:59,000 --> 00:11:59,000
+look like
+像
+
+00:11:59,000 --> 00:12:04,000
+but keep in mind day at the independent variable in this case
+但要记住每天在这种情况下，自变量
+
+00:12:04,000 --> 00:12:07,000
+isn't integer variable and so
+是不是整型变量等
+
+00:12:07,000 --> 00:12:10,000
+the sequence in fact only takes on bag use
+其实序列只对包的使用
+
+00:12:10,000 --> 00:12:14,000
+at integer values up the argument and we'll see
+在整数值起来的说法，我们会看到
+
+00:12:14,000 --> 00:12:17,000
+that that has a a very important
+即，有一个很重要的
+
+00:12:17,000 --> 00:12:22,000
+implication and will see that shortly now
+言下之意，并会看到，现在很快
+
+00:12:22,000 --> 00:12:27,000
+one of the issues that we addressed in the continuous-time cases periodicity
+那我们在连续时间情况下，周期性解决的问题之一
+
+00:12:27,000 --> 00:12:30,000
+and I want to refer or return to that
+我想引用或返回到
+
+00:12:30,000 --> 00:12:34,000
+shortly because that is in fact one of the areas where there is an important
+不久，因为这是事实的地方有一个重要的
+

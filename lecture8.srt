@@ -1,0 +1,2453 @@
+1
+00:00:00,030 --> 00:00:03,470 
+the following content is provided under
+a Creative Commons license
+
+2
+00:00:03,470 --> 00:00:07,120 
+your support will help MIT
+OpenCourseWare continue to offer
+
+3
+00:00:07,120 --> 00:00:10,570 
+high-quality educational resources for
+free
+
+4
+00:00:10,570 --> 00:00:15,020 
+to make a donation or view additional
+materials from 100 to them IT courses
+
+5
+00:00:15,020 --> 00:00:18,100 
+visit MIT OpenCourseWare at 0 CW
+
+6
+00:00:18,100 --> 00:00:20,890 
+that MIT ided you
+
+7
+00:00:20,890 --> 00:00:27,890 
+home for
+
+8
+00:00:31,830 --> 00:00:35,910 
+the
+
+9
+00:00:35,910 --> 00:00:38,530 
+in
+
+10
+00:00:38,530 --> 00:00:41,180 
+in
+
+11
+00:00:41,180 --> 00:00:48,180 
+the No
+
+12
+00:00:49,900 --> 00:00:56,900 
+for last time
+
+13
+00:00:57,040 --> 00:01:02,480 
+we began to address the issue a building
+continuous-time signals out a linear
+
+14
+00:01:02,480 --> 00:01:04,920 
+combination of complex exponentials
+
+15
+00:01:04,920 --> 00:01:08,770 
+and for the class a periodic signals
+
+16
+00:01:08,770 --> 00:01:13,200 
+specifically what this led to was the
+Fourier series representation
+
+17
+00:01:13,200 --> 00:01:16,450 
+for periodic signals let me just
+summarize
+
+18
+00:01:16,450 --> 00:01:19,850 
+the result that we develop last time for
+
+19
+00:01:19,850 --> 00:01:23,259 
+periodic signals we had the
+continuous-time for you
+
+20
+00:01:23,259 --> 00:01:26,680 
+for a series where we built
+
+21
+00:01:26,680 --> 00:01:30,570 
+the periodic signal I dove a linear
+combination
+
+22
+00:01:30,570 --> 00:01:34,369 
+love harmonically related complex
+exponentials
+
+23
+00:01:34,369 --> 00:01:38,720 
+and what that led to was what we refer
+to as
+
+24
+00:01:38,720 --> 00:01:42,560 
+the synthesis equation and we
+
+25
+00:01:42,560 --> 00:01:46,619 
+briefly address the issue love when this
+in fact bills
+
+26
+00:01:46,619 --> 00:01:51,580 
+when this in fact is a complete
+representation at the periodic signal
+
+27
+00:01:51,580 --> 00:01:55,820 
+and in essence what we presented was
+
+28
+00:01:55,820 --> 00:01:59,369 
+conditions either Forex city being
+square integrable
+
+29
+00:01:59,369 --> 00:02:02,369 
+or X-eighty being absolutely inevitable
+
+30
+00:02:02,369 --> 00:02:05,939 
+then the other cited the for a series
+
+31
+00:02:05,939 --> 00:02:09,989 
+is what I refer to as the analysis
+equation
+
+32
+00:02:09,989 --> 00:02:13,930 
+and the analysis equation was the
+equation the told us how
+
+33
+00:02:13,930 --> 00:02:17,239 
+we yet the forty a series coefficients
+
+34
+00:02:17,239 --> 00:02:20,980 
+from x50 and so this equation
+
+35
+00:02:20,980 --> 00:02:24,269 
+together with the synthesis equation
+represent
+
+36
+00:02:24,269 --> 00:02:27,950 
+the forty a series description for
+periodic signals
+
+37
+00:02:27,950 --> 00:02:31,500 
+now we'd like to do is
+
+38
+00:02:31,500 --> 00:02:35,500 
+extend this idea to provide a mechanism
+
+39
+00:02:35,500 --> 00:02:40,570 
+for building not periodic signals also I
+have a linear combination
+
+40
+00:02:40,570 --> 00:02:43,720 
+complex exponentials and the
+
+41
+00:02:43,720 --> 00:02:47,209 
+basic idea behind doing this is very
+simple
+
+42
+00:02:47,209 --> 00:02:51,549 
+and also very clever as i indicated last
+time essentially
+
+43
+00:02:51,549 --> 00:02:57,150 
+the thought is the following if we have
+a non periodic signal or a periodic
+
+44
+00:02:57,150 --> 00:02:57,840 
+signal
+
+45
+00:02:57,840 --> 00:03:01,930 
+we can think love constructing a
+periodic signal
+
+46
+00:03:01,930 --> 00:03:05,889 
+by simply periodically replicating
+
+47
+00:03:05,889 --> 00:03:08,900 
+that a periodic signal so
+
+48
+00:03:08,900 --> 00:03:12,220 
+for example if I have in a periodic
+signal
+
+49
+00:03:12,220 --> 00:03:16,030 
+as i've indicated here I can consider
+
+50
+00:03:16,030 --> 00:03:19,359 
+building a periodic signal where
+
+51
+00:03:19,359 --> 00:03:22,570 
+I simply take this original signal
+
+52
+00:03:22,570 --> 00:03:26,669 
+and repeated at multiples love some
+period t0
+
+53
+00:03:26,669 --> 00:03:30,840 
+now two things to recognize about this
+one
+
+54
+00:03:30,840 --> 00:03:34,030 
+is that the periodic signal
+
+55
+00:03:34,030 --> 00:03:37,480 
+is equal to the a periodic signal
+
+56
+00:03:37,480 --> 00:03:42,519 
+over one period and the second is that
+as the period
+
+57
+00:03:42,519 --> 00:03:45,690 
+goes to infinity then in fact
+
+58
+00:03:45,690 --> 00:03:50,019 
+the periodic signal goes to
+
+59
+00:03:50,019 --> 00:03:53,190 
+the a periodic signal so
+
+60
+00:03:53,190 --> 00:03:56,760 
+the basic idea then is
+
+61
+00:03:56,760 --> 00:04:00,320 
+to use the free a series to represent
+
+62
+00:04:00,320 --> 00:04:05,190 
+the periodic signal and then examine the
+4e a serious expression
+
+63
+00:04:05,190 --> 00:04:09,370 
+as we let the period go to infinity well
+
+64
+00:04:09,370 --> 00:04:13,239 
+let's quickly see how this develops
+
+65
+00:04:13,239 --> 00:04:16,600 
+interns up the Associated equations here
+
+66
+00:04:16,600 --> 00:04:19,940 
+again we have the periodic
+
+67
+00:04:19,940 --> 00:04:24,850 
+signal and what we want to inquire
+
+68
+00:04:24,850 --> 00:04:29,150 
+into is what happens to the forty a
+serious expression for this
+
+69
+00:04:29,150 --> 00:04:33,000 
+as we let the period go to infinity as
+that happens
+
+70
+00:04:33,000 --> 00:04:36,100 
+whatever for a series representation we
+end up with
+
+71
+00:04:36,100 --> 00:04:41,630 
+will correspond also to a representation
+for this a periodic signal
+
+72
+00:04:41,630 --> 00:04:45,840 
+well let's see the forty a series
+
+73
+00:04:45,840 --> 00:04:50,220 
+synthesis expressions for the periodic
+signal expresses
+
+74
+00:04:50,220 --> 00:04:54,949 
+extol dirty the periodic signal as a
+linear combination
+
+75
+00:04:54,949 --> 00:04:58,389 
+of harmonically related complex
+exponentials
+
+76
+00:04:58,389 --> 00:05:01,479 
+with the fundamental frequency Omega 0
+
+77
+00:05:01,479 --> 00:05:05,240 
+equal to 25 divided by the period and
+
+78
+00:05:05,240 --> 00:05:08,740 
+the analysis equation tells us
+
+79
+00:05:08,740 --> 00:05:13,350 
+what the relationship is for the
+coefficients
+
+80
+00:05:13,350 --> 00:05:17,990 
+interns are the periodic signal now I
+indicated
+
+81
+00:05:17,990 --> 00:05:21,450 
+that the periodic signal and the a
+periodic signal
+
+82
+00:05:21,450 --> 00:05:24,600 
+are equal over one period we recognize
+
+83
+00:05:24,600 --> 00:05:29,460 
+that this integration in fact only
+occurs over one period
+
+84
+00:05:29,460 --> 00:05:32,580 
+and so we can really express this
+interns
+
+85
+00:05:32,580 --> 00:05:37,340 
+all our original a periodic signal so
+this tells us the for a series
+
+86
+00:05:37,340 --> 00:05:38,570 
+coefficients
+
+87
+00:05:38,570 --> 00:05:42,759 
+interns affect safety
+
+88
+00:05:42,759 --> 00:05:45,770 
+okay now
+
+89
+00:05:45,770 --> 00:05:50,880 
+if in we look at this expression which
+is the expression for the 4e
+
+90
+00:05:50,880 --> 00:05:55,980 
+coefficients the a periodic signal one
+other things to recognize
+
+91
+00:05:55,980 --> 00:05:59,240 
+is dead in effect what
+
+92
+00:05:59,240 --> 00:06:02,820 
+this represents are samples
+
+93
+00:06:02,820 --> 00:06:06,430 
+all an integral where
+
+94
+00:06:06,430 --> 00:06:09,450 
+we can think all the variable Omega
+
+95
+00:06:09,450 --> 00:06:13,660 
+taking on values better integer
+multiples
+
+96
+00:06:13,660 --> 00:06:19,240 
+Omega 0 said another way let's define a
+function as i've indicated here
+
+97
+00:06:19,240 --> 00:06:22,240 
+which is this in a brawl where
+
+98
+00:06:22,240 --> 00:06:26,410 
+and we may think it will make a as being
+a continuous variable
+
+99
+00:06:26,410 --> 00:06:30,190 
+and then the forty a series coefficients
+correspond
+
+100
+00:06:30,190 --> 00:06:33,770 
+to substituting Omega
+
+101
+00:06:33,770 --> 00:06:37,040 
+is for Omega K
+
+102
+00:06:37,040 --> 00:06:43,380 
+Omega 0 now one reason for doing that as
+we'll see is that in fact
+
+103
+00:06:43,380 --> 00:06:47,210 
+this will turn out to provide us with
+the mechanism
+
+104
+00:06:47,210 --> 00:06:50,870 
+for forty-a representation affect safety
+
+105
+00:06:50,870 --> 00:06:54,190 
+and this in fact and is an on below
+
+106
+00:06:54,190 --> 00:06:57,360 
+all the four EA series coefficients
+
+107
+00:06:57,360 --> 00:07:02,600 
+in other words t0 the period times the
+coefficients
+
+108
+00:07:02,600 --> 00:07:06,960 
+is equal so this integral at integer
+multiples
+
+109
+00:07:06,960 --> 00:07:10,010 
+Omega 0
+
+110
+00:07:10,010 --> 00:07:15,090 
+okay so this effect tells us how to get
+the for a series coefficients the
+
+111
+00:07:15,090 --> 00:07:16,380 
+periodic signal
+
+112
+00:07:16,380 --> 00:07:22,140 
+interns love samples of an envelope and
+that will become a very important notion
+
+113
+00:07:22,140 --> 00:07:25,150 
+shortly and in
+
+114
+00:07:25,150 --> 00:07:29,240 
+that in effect will correspond to an
+analysis equation
+
+115
+00:07:29,240 --> 00:07:35,759 
+to represent the a periodic signal now
+let's look at the synthesis equation
+
+116
+00:07:35,759 --> 00:07:39,649 
+group call that in the synthesis our
+strategy is
+
+117
+00:07:39,649 --> 00:07:43,209 
+to build a periodic signal and let the
+period go to infinite
+
+118
+00:07:43,209 --> 00:07:47,089 
+well here is the expression
+
+119
+00:07:47,089 --> 00:07:51,459 
+for the synthesis the periodic signal
+
+120
+00:07:51,459 --> 00:07:54,769 
+now expressed interns
+
+121
+00:07:54,769 --> 00:07:57,879 
+I'll samples of this envelope function
+
+122
+00:07:57,879 --> 00:08:03,059 
+and where I've simply use the fact that
+the substitution
+
+123
+00:08:03,059 --> 00:08:08,300 
+that t0 is to pile for Omega 0 and so I
+have an Omega 0 here
+
+124
+00:08:08,300 --> 00:08:12,619 
+and a 1-over to pie and the reason for
+doing that
+
+125
+00:08:12,619 --> 00:08:16,899 
+as we'll see in a minute is that this
+then turns into an integral
+
+126
+00:08:16,899 --> 00:08:20,529 
+specifically then the synthesis equation
+
+127
+00:08:20,529 --> 00:08:23,879 
+that we have is
+
+128
+00:08:23,879 --> 00:08:28,399 
+what i've indicated here we would now
+want to examine this
+
+129
+00:08:28,399 --> 00:08:32,569 
+as the period goes to infinity which
+means that
+
+130
+00:08:32,569 --> 00:08:35,599 
+Omega 0 becomes infinitesimally small
+
+131
+00:08:35,599 --> 00:08:38,889 
+and without dwelling on the details
+
+132
+00:08:38,889 --> 00:08:42,800 
+and with my suggesting that you give
+this a fair amount of reflection
+
+133
+00:08:42,800 --> 00:08:47,319 
+in fact what happens as the period goes
+to infinity
+
+134
+00:08:47,319 --> 00:08:51,720 
+is that this some Asian approach is an
+integral
+
+135
+00:08:51,720 --> 00:08:56,009 
+over Omega where Omega 0 becomes the
+differential
+
+136
+00:08:56,009 --> 00:08:59,309 
+and Omega and the periodic signal of
+course
+
+137
+00:08:59,309 --> 00:09:03,459 
+approaches the a periodic sick so
+
+138
+00:09:03,459 --> 00:09:07,170 
+the resulting equation that we get outta
+
+139
+00:09:07,170 --> 00:09:10,529 
+the original for a series synthesis
+equation
+
+140
+00:09:10,529 --> 00:09:14,350 
+is the equation
+
+141
+00:09:14,350 --> 00:09:17,879 
+that I indicate down here X if T
+
+142
+00:09:17,879 --> 00:09:21,730 
+synthesized interns all this
+
+143
+00:09:21,730 --> 00:09:25,339 
+integral which is what the forty a
+series approaches
+
+144
+00:09:25,339 --> 00:09:29,519 
+as Omega 0 goes to zero and
+
+145
+00:09:29,519 --> 00:09:32,629 
+we had previously that XO maker
+
+146
+00:09:32,629 --> 00:09:36,410 
+was in fact an envelope function
+
+147
+00:09:36,410 --> 00:09:41,769 
+and we have then the corresponding for
+EA transform analysis equation
+
+148
+00:09:41,769 --> 00:09:46,149 
+which tells us how we arrive at that
+envelope
+
+149
+00:09:46,149 --> 00:09:50,559 
+interns love accept T okay so
+
+150
+00:09:50,559 --> 00:09:53,779 
+we now have and analysis equation and
+
+151
+00:09:53,779 --> 00:09:57,870 
+synthesis equation which in effect
+expresses 4s
+
+152
+00:09:57,870 --> 00:10:01,120 
+how to build XFT interns or
+
+153
+00:10:01,120 --> 00:10:05,429 
+if into tears and we finally space
+complex exponentials
+
+154
+00:10:05,429 --> 00:10:09,040 
+the strategy to review it
+
+155
+00:10:09,040 --> 00:10:12,120 
+and which I'd like to illustrate with
+
+156
+00:10:12,120 --> 00:10:16,259 
+a succession of overlays was
+
+157
+00:10:16,259 --> 00:10:20,029 
+to begin up
+
+158
+00:10:20,029 --> 00:10:24,019 
+with are a periodic signal as
+
+159
+00:10:24,019 --> 00:10:27,440 
+I indicate here
+
+160
+00:10:27,440 --> 00:10:34,160 
+and then reconstructed from that a
+periodic signal
+
+161
+00:10:34,160 --> 00:10:38,230 
+and in this periodic signal has a forty
+a series
+
+162
+00:10:38,230 --> 00:10:42,710 
+and we express the for a series
+coefficients if this
+
+163
+00:10:42,710 --> 00:10:46,330 
+as samples all an envelope function
+
+164
+00:10:46,330 --> 00:10:50,680 
+the envelope function is what I indicate
+on the curve below
+
+165
+00:10:50,680 --> 00:10:54,930 
+so this is the envelope above the 40 a
+series coefficients
+
+166
+00:10:54,930 --> 00:10:59,870 
+for example if the period t0
+
+167
+00:10:59,870 --> 00:11:04,180 
+was four times t1 in the 4a series
+coefficients
+
+168
+00:11:04,180 --> 00:11:07,380 
+that we would end up with is this set
+
+169
+00:11:07,380 --> 00:11:10,810 
+samples of the and below if
+
+170
+00:11:10,810 --> 00:11:13,950 
+instead we double that period
+
+171
+00:11:13,950 --> 00:11:18,100 
+then the Fourier series coefficients
+that we end up with
+
+172
+00:11:18,100 --> 00:11:21,200 
+are more finally space
+
+173
+00:11:21,200 --> 00:11:24,940 
+and as t0
+
+174
+00:11:24,940 --> 00:11:28,310 
+continues to increase we get more and
+more
+
+175
+00:11:28,310 --> 00:11:32,260 
+finally space samples love this envelope
+function
+
+176
+00:11:32,260 --> 00:11:35,770 
+and as t0 goes to infinity in fact what
+we get
+
+177
+00:11:35,770 --> 00:11:40,070 
+is every single point on the envelope
+and that provides is
+
+178
+00:11:40,070 --> 00:11:43,090 
+with the representation for
+
+179
+00:11:43,090 --> 00:11:46,190 
+the a periodic sick let me just to
+
+180
+00:11:46,190 --> 00:11:49,700 
+really emphasize the point
+
+181
+00:11:49,700 --> 00:11:53,300 
+show this example once again but now
+
+182
+00:11:53,300 --> 00:11:56,840 
+let's look at it dynamically on the
+computer display
+
+183
+00:11:56,840 --> 00:12:00,770 
+so here we have the square wave in below
+it
+
+184
+00:12:00,770 --> 00:12:04,740 
+the for a series coefficients we now
+want to look at the for a series
+
+185
+00:12:04,740 --> 00:12:05,810 
+coefficients
+
+186
+00:12:05,810 --> 00:12:12,810 
+as the period at the square wave starts
+to increase
+
+187
+00:12:17,770 --> 00:12:20,690 
+and what we see is that these look
+
+188
+00:12:20,690 --> 00:12:23,780 
+like samples love an envelope
+
+189
+00:12:23,780 --> 00:12:27,920 
+and in fact the envelope for the Fourier
+series coefficients
+
+190
+00:12:27,920 --> 00:12:32,010 
+is shown in the bottom trace and
+emphasize in fact that it is the
+
+191
+00:12:32,010 --> 00:12:32,810 
+envelope
+
+192
+00:12:32,810 --> 00:12:37,660 
+let's superimpose it on top of the
+Fourier series coefficients that we've
+
+193
+00:12:37,660 --> 00:12:44,660 
+generated so far
+
+194
+00:12:48,360 --> 00:12:51,550 
+okay now let's increase the period
+
+195
+00:12:51,550 --> 00:12:55,360 
+even further and we'll see the for a
+series
+
+196
+00:12:55,360 --> 00:12:58,420 
+coefficients billion under that
+
+197
+00:12:58,420 --> 00:13:04,100 
+envelope function even more and in fact
+
+198
+00:13:04,100 --> 00:13:07,950 
+as the period gets large enough what we
+
+199
+00:13:07,950 --> 00:13:10,960 
+begin to get a sense love is
+
+200
+00:13:10,960 --> 00:13:14,680 
+that we're sampling more and more
+finally
+
+201
+00:13:14,680 --> 00:13:19,840 
+this and below and in fact in the limit
+as the period goes off to infinity
+
+202
+00:13:19,840 --> 00:13:23,160 
+the samples basically will represent
+every
+
+203
+00:13:23,160 --> 00:13:27,810 
+single point on the envelope well this
+is about as far as you want to go
+
+204
+00:13:27,810 --> 00:13:31,900 
+let's once again plot the envelope
+function
+
+205
+00:13:31,900 --> 00:13:35,920 
+and again to emphasize that we've
+generated samples a bad
+
+206
+00:13:35,920 --> 00:13:42,920 
+let superimpose that on the forty a
+series coefficients
+
+207
+00:13:45,940 --> 00:13:48,870 
+okay so what we have then is
+
+208
+00:13:48,870 --> 00:13:51,960 
+now are forty-a transform
+
+209
+00:13:51,960 --> 00:13:56,220 
+representation the continuous time
+Fourier transform
+
+210
+00:13:56,220 --> 00:13:59,760 
+with the synthesis equation
+
+211
+00:13:59,760 --> 00:14:03,110 
+expressed as an integral as they've
+indicated here
+
+212
+00:14:03,110 --> 00:14:06,200 
+and this integral is what
+
+213
+00:14:06,200 --> 00:14:09,300 
+the four th series some went to
+
+214
+00:14:09,300 --> 00:14:12,710 
+as we let the period go to infinity
+
+215
+00:14:12,710 --> 00:14:15,860 
+where the frequency go to zero the
+corresponding
+
+216
+00:14:15,860 --> 00:14:20,440 
+analysis equation which we have here the
+analysis equation
+
+217
+00:14:20,440 --> 00:14:24,490 
+being the expression for the on below
+
+218
+00:14:24,490 --> 00:14:27,950 
+up to 40 a series coefficients for the
+periodically
+
+219
+00:14:27,950 --> 00:14:32,630 
+replicated signal and in shorthand
+notation
+
+220
+00:14:32,630 --> 00:14:34,889 
+we would think affects if T
+
+221
+00:14:34,889 --> 00:14:38,029 
+and its Fourier transform as a pair
+
+222
+00:14:38,029 --> 00:14:42,970 
+as i've indicated here and the Fourier
+transform
+
+223
+00:14:42,970 --> 00:14:47,660 
+as will emphasize in several examples
+and certainly
+
+224
+00:14:47,660 --> 00:14:51,389 
+as is consistent with the forty a series
+is
+
+225
+00:14:51,389 --> 00:14:56,540 
+a complex value function even when
+accepting israel's so would accept the
+
+226
+00:14:56,540 --> 00:14:57,230 
+real
+
+227
+00:14:57,230 --> 00:15:01,410 
+we end up with the 48 transform which is
+a complex function
+
+228
+00:15:01,410 --> 00:15:05,309 
+just as the for you series coefficients
+were complex
+
+229
+00:15:05,309 --> 00:15:08,250 
+for real value time function
+
+230
+00:15:08,250 --> 00:15:12,040 
+so we could alternatively as with the 4e
+a series
+
+231
+00:15:12,040 --> 00:15:15,950 
+express the Fourier transform it turns
+
+232
+00:15:15,950 --> 00:15:19,350 
+love its real part an imaginary part
+
+233
+00:15:19,350 --> 00:15:22,610 
+or alternatively interns
+
+234
+00:15:22,610 --> 00:15:28,250 
+love its magnet to and its angle
+
+235
+00:15:28,250 --> 00:15:31,640 
+all right now let's look at an example
+
+236
+00:15:31,640 --> 00:15:35,080 
+love a time function and its Fourier
+transform
+
+237
+00:15:35,080 --> 00:15:38,149 
+and so let's consider
+
+238
+00:15:38,149 --> 00:15:41,630 
+an example which in fact is an example
+worked out in the tax that's
+
+239
+00:15:41,630 --> 00:15:46,540 
+example 4.7 tax and missus are all
+familiar friend
+
+240
+00:15:46,540 --> 00:15:49,509 
+the exponential
+
+241
+00:15:49,509 --> 00:15:54,279 
+its Fourier transform is the integral
+from minus infinity plus infinity X
+
+242
+00:15:54,279 --> 00:15:54,980 
+thirty
+
+243
+00:15:54,980 --> 00:15:58,619 
+either the minus J Omega TDT and
+
+244
+00:15:58,619 --> 00:16:02,540 
+so if we substitute in exit to the and
+
+245
+00:16:02,540 --> 00:16:07,720 
+combine these two exponentials together
+these two exponentials
+
+246
+00:16:07,720 --> 00:16:11,179 
+combined are he to the minus the
+
+247
+00:16:11,179 --> 00:16:15,629 
+times a-plus jail mega and
+
+248
+00:16:15,629 --> 00:16:18,899 
+if we carry out the integration
+
+249
+00:16:18,899 --> 00:16:22,069 
+love this we end up with the expression
+
+250
+00:16:22,069 --> 00:16:25,169 
+indicated here and provided
+
+251
+00:16:25,169 --> 00:16:28,600 
+now in this is important provided
+
+252
+00:16:28,600 --> 00:16:32,179 
+that a is greater than 0
+
+253
+00:16:32,179 --> 00:16:36,019 
+and at the upper limit this exponential
+become 0
+
+254
+00:16:36,019 --> 00:16:39,799 
+at the lower limit of course it's one
+and so
+
+255
+00:16:39,799 --> 00:16:43,269 
+what we have finally is the for the
+
+256
+00:16:43,269 --> 00:16:47,399 
+Fourier transform expression one over a
+plus
+
+257
+00:16:47,399 --> 00:16:52,020 
+jail make
+
+258
+00:16:52,020 --> 00:16:56,060 
+okay now this Fourier transform as i
+indicated
+
+259
+00:16:56,060 --> 00:16:59,350 
+is a complex valued function let's just
+
+260
+00:16:59,350 --> 00:17:02,690 
+take a look at what it looks like
+graphically
+
+261
+00:17:02,690 --> 00:17:06,259 
+we have
+
+262
+00:17:06,259 --> 00:17:10,429 
+the expression the Fourier transform
+pair
+
+263
+00:17:10,429 --> 00:17:15,009 
+either the minus eighty times a step and
+its forty-eight transformers one over
+
+264
+00:17:15,009 --> 00:17:18,139 
+a place J Omega and I indicated
+
+265
+00:17:18,139 --> 00:17:21,610 
+dead that's true for a greater than 0
+
+266
+00:17:21,610 --> 00:17:25,919 
+now in the expression that we just
+worked out
+
+267
+00:17:25,919 --> 00:17:30,090 
+if a is less than 0 in fact the
+
+268
+00:17:30,090 --> 00:17:33,379 
+the expression doesn't converge the
+
+269
+00:17:33,379 --> 00:17:37,450 
+to the -84 a negative
+
+270
+00:17:37,450 --> 00:17:40,940 
+as he goes to infinity blows up
+
+271
+00:17:40,940 --> 00:17:45,399 
+and so in fact the 48 transform doesn't
+converge
+
+272
+00:17:45,399 --> 00:17:49,580 
+in the case except for the case were a
+is greater than 0
+
+273
+00:17:49,580 --> 00:17:54,029 
+and in fact there's a more detailed
+discussion of convergence issues in the
+
+274
+00:17:54,029 --> 00:17:54,519 
+tax
+
+275
+00:17:54,519 --> 00:17:57,610 
+the convergence issues are very much the
+same
+
+276
+00:17:57,610 --> 00:18:01,679 
+the Fourier transform as they are for
+the four th series in fact that's not
+
+277
+00:18:01,679 --> 00:18:03,100 
+surprising because
+
+278
+00:18:03,100 --> 00:18:06,159 
+we develop the Fourier transform out of
+consideration
+
+279
+00:18:06,159 --> 00:18:10,929 
+for you series so the convergence
+conditions as you'll see as you refer a
+
+280
+00:18:10,929 --> 00:18:11,669 
+detailed
+
+281
+00:18:11,669 --> 00:18:15,059 
+tax relate to whether the time function
+is
+
+282
+00:18:15,059 --> 00:18:18,110 
+absolutely integral under one set of
+conditions
+
+283
+00:18:18,110 --> 00:18:22,290 
+and square integrable under another set
+of conditions
+
+284
+00:18:22,290 --> 00:18:27,379 
+okay now if we plot the Fourier
+transform
+
+285
+00:18:27,379 --> 00:18:30,879 
+let's first consider the shape at the
+time function
+
+286
+00:18:30,879 --> 00:18:34,360 
+and as i indicated way restricting the
+time function
+
+287
+00:18:34,360 --> 00:18:39,559 
+so that the exponential factor is
+positive in other words you the -80
+
+288
+00:18:39,559 --> 00:18:44,019 
+detainees as he goes to infinity the
+magnitude
+
+289
+00:18:44,019 --> 00:18:47,220 
+or the for EA transform
+
+290
+00:18:47,220 --> 00:18:50,509 
+is as i indicate here and
+
+291
+00:18:50,509 --> 00:18:54,590 
+the phase below it and
+
+292
+00:18:54,590 --> 00:18:57,919 
+think there are a number of things that
+we can see about
+
+293
+00:18:57,919 --> 00:19:01,029 
+the magnitude and phase
+
+294
+00:19:01,029 --> 00:19:05,190 
+the 48 transform for this example which
+in fact we'll see
+
+295
+00:19:05,190 --> 00:19:10,100 
+in the next lecture are properties that
+apply more generally
+
+296
+00:19:10,100 --> 00:19:14,799 
+for example the fact that the 48
+transform magnitude is an even function
+
+297
+00:19:14,799 --> 00:19:19,850 
+frequency and the phase is an odd
+function of frequency
+
+298
+00:19:19,850 --> 00:19:23,559 
+now let me also draw your attention
+
+299
+00:19:23,559 --> 00:19:28,590 
+so the fact there'd on this curve we
+have
+
+300
+00:19:28,590 --> 00:19:32,470 
+both positive frequencies and negative
+frequencies
+
+301
+00:19:32,470 --> 00:19:37,019 
+in other words in our expression for the
+48 transform
+
+302
+00:19:37,019 --> 00:19:41,019 
+we've it requires both or make a
+positive
+
+303
+00:19:41,019 --> 00:19:46,519 
+and Omega negative this of course was
+exactly the same in the case
+
+304
+00:19:46,519 --> 00:19:50,450 
+the for a series and the reason you
+should
+
+305
+00:19:50,450 --> 00:19:56,090 
+recalling keep in mind is related to the
+fact that we're building our signals
+
+306
+00:19:56,090 --> 00:19:59,880 
+out of complex exponentials which
+require both
+
+307
+00:19:59,880 --> 00:20:05,149 
+positive values have Omega and negative
+values Omega alternatively if we chose
+
+308
+00:20:05,149 --> 00:20:09,450 
+another representation which turns and
+occasionally to be much more difficult
+
+309
+00:20:09,450 --> 00:20:12,659 
+namely sines and cosines that we would
+in fact
+
+310
+00:20:12,659 --> 00:20:16,330 
+only consider positive frequencies so
+it's important to keep in mind
+
+311
+00:20:16,330 --> 00:20:21,649 
+that in our case both with the for a
+series in the 48 transform
+
+312
+00:20:21,649 --> 00:20:26,070 
+we deal and require both positive and
+negative frequencies
+
+313
+00:20:26,070 --> 00:20:29,900 
+in order to build their signals
+
+314
+00:20:29,900 --> 00:20:34,760 
+now in the graphical representation that
+I shown here
+
+315
+00:20:34,760 --> 00:20:38,460 
+I've chosen a linear amplitude scale
+
+316
+00:20:38,460 --> 00:20:41,540 
+and a linear frequency scale and thats
+one
+
+317
+00:20:41,540 --> 00:20:45,110 
+graphical representation the Fourier
+transform
+
+318
+00:20:45,110 --> 00:20:48,570 
+that will typically use is another one
+
+319
+00:20:48,570 --> 00:20:52,810 
+that very commonly arises and
+
+320
+00:20:52,810 --> 00:20:56,600 
+which all just briefly indicate for this
+example
+
+321
+00:20:56,600 --> 00:21:00,430 
+and that is was referred to
+
+322
+00:21:00,430 --> 00:21:03,710 
+as a boat imply in which the
+
+323
+00:21:03,710 --> 00:21:08,930 
+magnet to is displayed on a large
+amplitude in like frequency scale
+
+324
+00:21:08,930 --> 00:21:11,940 
+in the phase is displayed on a lock
+frequency scale
+
+325
+00:21:11,940 --> 00:21:15,370 
+let me show you what I me here is
+
+326
+00:21:15,370 --> 00:21:18,870 
+the general expression for the boat
+reply body plot
+
+327
+00:21:18,870 --> 00:21:22,900 
+expresses 4s the amp with two interns
+
+328
+00:21:22,900 --> 00:21:25,900 
+the longer them to the base 10 the
+magnitude
+
+329
+00:21:25,900 --> 00:21:30,310 
+and it also expresses the angle in both
+cases
+
+330
+00:21:30,310 --> 00:21:34,190 
+express as as a function
+
+331
+00:21:34,190 --> 00:21:38,550 
+love a logarithmic speak with yes so
+
+332
+00:21:38,550 --> 00:21:41,670 
+here is the amplitude
+
+333
+00:21:41,670 --> 00:21:45,910 
+as i've displayed at and
+
+334
+00:21:45,910 --> 00:21:49,580 
+this is a log magnitude scale a
+logarithmic
+
+335
+00:21:49,580 --> 00:21:53,500 
+frequency scale as indicated by the fact
+that as we move
+
+336
+00:21:53,500 --> 00:21:57,210 
+include equal increments along this axis
+we change
+
+337
+00:21:57,210 --> 00:22:00,730 
+frequency by a factor 10 and
+
+338
+00:22:00,730 --> 00:22:03,940 
+similarly what we
+
+339
+00:22:03,940 --> 00:22:07,430 
+have is a display for the phase again
+
+340
+00:22:07,430 --> 00:22:11,580 
+on a light frequency scale and I
+indicated
+
+341
+00:22:11,580 --> 00:22:15,960 
+dead there is a symmetry to the Fourier
+transform
+
+342
+00:22:15,960 --> 00:22:20,240 
+and so in fact we can infer from this
+particular picture
+
+343
+00:22:20,240 --> 00:22:24,310 
+what it looks like to the negative
+frequencies as well as for the positive
+
+344
+00:22:24,310 --> 00:22:28,960 
+returns
+
+345
+00:22:28,960 --> 00:22:33,030 
+okay now
+
+346
+00:22:33,030 --> 00:22:34,649 
+what we've
+
+347
+00:22:34,649 --> 00:22:37,870 
+done so far is to develop
+
+348
+00:22:37,870 --> 00:22:42,350 
+the for EA transform on the basis
+
+349
+00:22:42,350 --> 00:22:46,190 
+the Fourier transform it a periodic
+signal on the basis
+
+350
+00:22:46,190 --> 00:22:49,539 
+periodically repeating it and
+recognizing
+
+351
+00:22:49,539 --> 00:22:53,889 
+that the for a series coefficients are
+samples of an envelope
+
+352
+00:22:53,889 --> 00:22:57,759 
+on an envelope and that these become
+more finally space
+
+353
+00:22:57,759 --> 00:23:00,769 
+as frequency increases and in fact
+
+354
+00:23:00,769 --> 00:23:03,909 
+we can go back to are
+
+355
+00:23:03,909 --> 00:23:07,090 
+original equation
+
+356
+00:23:07,090 --> 00:23:10,909 
+in which we developed an envelope
+function
+
+357
+00:23:10,909 --> 00:23:14,600 
+and what we had indicated
+
+358
+00:23:14,600 --> 00:23:17,710 
+is dead the 4e a series
+
+359
+00:23:17,710 --> 00:23:21,039 
+coefficients where samples of this
+envelope
+
+360
+00:23:21,039 --> 00:23:25,620 
+we then
+
+361
+00:23:25,620 --> 00:23:28,870 
+to find this envelope as
+
+362
+00:23:28,870 --> 00:23:34,380 
+the Fourier transform all this a
+periodic signal so
+
+363
+00:23:34,380 --> 00:23:38,360 
+that provided us with the way and it was
+a mechanism
+
+364
+00:23:38,360 --> 00:23:43,630 
+for getting a representation for a
+periodic sick
+
+365
+00:23:43,630 --> 00:23:48,050 
+now suppose that we have instead
+
+366
+00:23:48,050 --> 00:23:51,670 
+a periodic signal are there in fact
+
+367
+00:23:51,670 --> 00:23:57,100 
+some statements that we can make about
+how the Fourier series coefficients
+
+368
+00:23:57,100 --> 00:24:02,640 
+that are related to the Fourier
+transform of something well
+
+369
+00:24:02,640 --> 00:24:05,770 
+in fact this statement tells us
+
+370
+00:24:05,770 --> 00:24:08,870 
+exactly how to do that what this
+statement says
+
+371
+00:24:08,870 --> 00:24:12,570 
+is that in fact the forty a series
+coefficients
+
+372
+00:24:12,570 --> 00:24:17,330 
+our samples all the four EA transform
+
+373
+00:24:17,330 --> 00:24:21,240 
+up one period so if
+
+374
+00:24:21,240 --> 00:24:24,570 
+we now consider
+
+375
+00:24:24,570 --> 00:24:29,160 
+a periodic signal weekend in fact
+
+376
+00:24:29,160 --> 00:24:33,830 
+get before a series coefficients that
+periodic signal
+
+377
+00:24:33,830 --> 00:24:37,020 
+by considering the Fourier transform
+
+378
+00:24:37,020 --> 00:24:42,160 
+above one period said another way the 4e
+a series coefficients
+
+379
+00:24:42,160 --> 00:24:46,440 
+are proportional samples on the Fourier
+transform
+
+380
+00:24:46,440 --> 00:24:49,710 
+one period so if we consider this
+
+381
+00:24:49,710 --> 00:24:54,570 
+a periodic signal computer its Fourier
+transform
+
+382
+00:24:54,570 --> 00:24:57,990 
+and selected these
+
+383
+00:24:57,990 --> 00:25:01,550 
+samples that I indicate here
+
+384
+00:25:01,550 --> 00:25:04,830 
+namely samples equally spaced in omega
+
+385
+00:25:04,830 --> 00:25:07,880 
+in by multiples are integer multiples
+
+386
+00:25:07,880 --> 00:25:11,020 
+love Omega 0 then in fact
+
+387
+00:25:11,020 --> 00:25:14,200 
+those would be the story a series
+coefficients
+
+388
+00:25:14,200 --> 00:25:17,370 
+so we can go back to
+
+389
+00:25:17,370 --> 00:25:20,840 
+are example previously
+
+390
+00:25:20,840 --> 00:25:24,270 
+with that involved the
+
+391
+00:25:24,270 --> 00:25:27,850 
+square wave and now
+
+392
+00:25:27,850 --> 00:25:31,470 
+in this case we could argue that if in
+fact
+
+393
+00:25:31,470 --> 00:25:35,190 
+it was the periodic signal that we
+started with
+
+394
+00:25:35,190 --> 00:25:38,240 
+we could get the 40 series coefficients
+
+395
+00:25:38,240 --> 00:25:41,710 
+that by thinking about
+
+396
+00:25:41,710 --> 00:25:45,400 
+the four EA transform above one period
+
+397
+00:25:45,400 --> 00:25:50,270 
+which I indicate here and then
+
+398
+00:25:50,270 --> 00:25:54,640 
+the 48 series coefficients other
+periodic signal
+
+399
+00:25:54,640 --> 00:25:57,970 
+in fact are the appropriate set
+
+400
+00:25:57,970 --> 00:26:04,690 
+samples of this envelope
+
+401
+00:26:04,690 --> 00:26:08,080 
+alright now we have away
+
+402
+00:26:08,080 --> 00:26:12,420 
+love getting the for a series
+coefficients
+
+403
+00:26:12,420 --> 00:26:16,200 
+from the Fourier transform one period we
+originally derived
+
+404
+00:26:16,200 --> 00:26:20,000 
+the Fourier transform one period from
+the 48 series
+
+405
+00:26:20,000 --> 00:26:23,059 
+what would in fact be nice
+
+406
+00:26:23,059 --> 00:26:27,000 
+is if we could incorporate before a
+series
+
+407
+00:26:27,000 --> 00:26:30,059 
+in the Fourier transform within a common
+framework
+
+408
+00:26:30,059 --> 00:26:33,080 
+and in fact it turns out dead there
+
+409
+00:26:33,080 --> 00:26:36,470 
+is a very convenient way of doing that
+almost by definition
+
+410
+00:26:36,470 --> 00:26:40,470 
+essentially
+
+411
+00:26:40,470 --> 00:26:44,059 
+if we consider what the equation
+
+412
+00:26:44,059 --> 00:26:48,759 
+for the synthesis looks like in both
+cases we
+
+413
+00:26:48,759 --> 00:26:53,409 
+can in effect define of four EA
+transform
+
+414
+00:26:53,409 --> 00:26:58,539 
+for the periodic signal which we know is
+represented by its for a series
+
+415
+00:26:58,539 --> 00:27:00,580 
+coefficients we can define
+
+416
+00:27:00,580 --> 00:27:05,649 
+48 transform and the definition of the
+Fourier transform
+
+417
+00:27:05,649 --> 00:27:12,059 
+is as an impulse train where the
+coefficients in the impulse train
+
+418
+00:27:12,059 --> 00:27:15,610 
+are proportional with the
+proportionality factor
+
+419
+00:27:15,610 --> 00:27:20,509 
+25 for more less a bookkeeping reason
+proportional to the forty a series
+
+420
+00:27:20,509 --> 00:27:21,500 
+coefficients
+
+421
+00:27:21,500 --> 00:27:24,909 
+and the validity of this is
+
+422
+00:27:24,909 --> 00:27:28,350 
+more or less can be seen
+
+423
+00:27:28,350 --> 00:27:32,039 
+essentially by substitution specifically
+
+424
+00:27:32,039 --> 00:27:35,259 
+here is then the
+
+425
+00:27:35,259 --> 00:27:38,730 
+synthesis equation for the four EA
+transform
+
+426
+00:27:38,730 --> 00:27:44,519 
+if we substitute this definition for the
+four th chance for the periodic signal
+
+427
+00:27:44,519 --> 00:27:49,899 
+into this expression then when we do the
+appropriate bookkeeping
+
+428
+00:27:49,899 --> 00:27:54,029 
+and interchange the order some Asian and
+integration
+
+429
+00:27:54,029 --> 00:27:57,779 
+the in polls integrates out to
+
+430
+00:27:57,779 --> 00:28:03,240 
+the exponential factor that we want so
+
+431
+00:28:03,240 --> 00:28:08,019 
+we have the exponential factor we have
+the for a series coefficients
+
+432
+00:28:08,019 --> 00:28:11,860 
+the two pies take care of each other and
+what we're left with
+
+433
+00:28:11,860 --> 00:28:15,000 
+is the synthesis equation for
+
+434
+00:28:15,000 --> 00:28:19,539 
+a periodic signal in terms of the
+Fourier transform foreign it interns
+
+435
+00:28:19,539 --> 00:28:24,090 
+love it's for a series coefficients
+right now
+
+436
+00:28:24,090 --> 00:28:27,519 
+we can just see this interns
+
+437
+00:28:27,519 --> 00:28:30,879 
+love a simple example if we
+
+438
+00:28:30,879 --> 00:28:35,190 
+consider the example love a symmetric
+square wave
+
+439
+00:28:35,190 --> 00:28:38,610 
+then in effect what we're saying is that
+
+440
+00:28:38,610 --> 00:28:43,070 
+for this symmetric square wave this has
+
+441
+00:28:43,070 --> 00:28:47,029 
+set up for a series coefficients which
+we work that previously
+
+442
+00:28:47,029 --> 00:28:50,649 
+and which I indicate on this figure
+
+443
+00:28:50,649 --> 00:28:54,149 
+with a bar graph and really all that
+were saying
+
+444
+00:28:54,149 --> 00:28:58,460 
+is there whereas these free a series
+coefficients our index
+
+445
+00:28:58,460 --> 00:29:04,500 
+on an integer variable K and their bars
+not impulses
+
+446
+00:29:04,500 --> 00:29:07,769 
+if we simply redefine or define
+
+447
+00:29:07,769 --> 00:29:11,929 
+the Fourier transform love the periodic
+signal
+
+448
+00:29:11,929 --> 00:29:16,970 
+as an impulse train where the weights at
+the impulses
+
+449
+00:29:16,970 --> 00:29:20,110 
+are to Paul II times the
+
+450
+00:29:20,110 --> 00:29:23,559 
+correspondent for a series coefficients
+and
+
+451
+00:29:23,559 --> 00:29:27,590 
+this in fact is what we would use as the
+four EA
+
+452
+00:29:27,590 --> 00:29:33,669 
+transform love the periodic sick
+
+453
+00:29:33,669 --> 00:29:36,950 
+okay now we've kind of gone back and
+forth
+
+454
+00:29:36,950 --> 00:29:40,049 
+on and maybe even it might seem
+
+455
+00:29:40,049 --> 00:29:43,580 
+likely going around in circles so let me
+just
+
+456
+00:29:43,580 --> 00:29:46,880 
+try to summarize the various
+relationships
+
+457
+00:29:46,880 --> 00:29:50,289 
+and steps that we've gone through
+keeping in mind that
+
+458
+00:29:50,289 --> 00:29:53,380 
+one of our objectives was first to
+develop
+
+459
+00:29:53,380 --> 00:29:58,059 
+representation for a periodic signals
+and then attempt to
+
+460
+00:29:58,059 --> 00:30:01,860 
+incorporate within one framework both
+periodic
+
+461
+00:30:01,860 --> 00:30:05,539 
+in a periodic signals
+
+462
+00:30:05,539 --> 00:30:08,950 
+we began with
+
+463
+00:30:08,950 --> 00:30:11,240 
+and a periodic signal
+
+464
+00:30:11,240 --> 00:30:14,779 
+and the strategy was to develop
+
+465
+00:30:14,779 --> 00:30:18,649 
+for your representation by constructing
+
+466
+00:30:18,649 --> 00:30:22,580 
+periodic signal for which that was one
+period
+
+467
+00:30:22,580 --> 00:30:25,980 
+in and then we let the period go to
+infinity as
+
+468
+00:30:25,980 --> 00:30:31,750 
+I indicate here so we have and a
+periodic signal
+
+469
+00:30:31,750 --> 00:30:35,630 
+we construct a periodic signal
+
+470
+00:30:35,630 --> 00:30:38,639 
+extol dirty for which one period
+
+471
+00:30:38,639 --> 00:30:45,179 
+is the a periodic signal X still dirty
+the periodic signal has a forty a series
+
+472
+00:30:45,179 --> 00:30:48,630 
+and as its period increases
+
+473
+00:30:48,630 --> 00:30:52,490 
+that approaches the a periodic signal
+and
+
+474
+00:30:52,490 --> 00:30:58,010 
+the forty a series of that approaches
+the 48 transform
+
+475
+00:30:58,010 --> 00:31:01,370 
+all the original a periodic sick so
+
+476
+00:31:01,370 --> 00:31:05,690 
+that was the first step that we took
+
+477
+00:31:05,690 --> 00:31:08,980 
+now the second thing that we recognize
+is dead
+
+478
+00:31:08,980 --> 00:31:13,309 
+once we have the concept to the 48
+transform
+
+479
+00:31:13,309 --> 00:31:18,080 
+we can in fact relate the Fourier series
+coefficients
+
+480
+00:31:18,080 --> 00:31:21,260 
+to the 48 transform one period
+
+481
+00:31:21,260 --> 00:31:25,910 
+so the second statement that we made was
+dead
+
+482
+00:31:25,910 --> 00:31:32,320 
+if in fact we're trying to represent a
+periodic signal
+
+483
+00:31:32,320 --> 00:31:35,350 
+we can get the 40 series coefficients
+have that
+
+484
+00:31:35,350 --> 00:31:38,790 
+by computing the for EA transform
+
+485
+00:31:38,790 --> 00:31:42,750 
+one period and then
+
+486
+00:31:42,750 --> 00:31:45,910 
+samples that for EA transform are
+
+487
+00:31:45,910 --> 00:31:52,850 
+in fact the 4e series coefficients for
+the periodic sick
+
+488
+00:31:52,850 --> 00:31:56,320 
+okay then the third step that we took
+was
+
+489
+00:31:56,320 --> 00:32:01,320 
+to inquire as to whether they're is a
+Fourier transform
+
+490
+00:32:01,320 --> 00:32:04,770 
+that can appropriately be defined for
+
+491
+00:32:04,770 --> 00:32:07,920 
+the periodic signal in the mechanism for
+doing that
+
+492
+00:32:07,920 --> 00:32:13,000 
+was to recognize that if we simply to
+find the Fourier transform
+
+493
+00:32:13,000 --> 00:32:17,720 
+the periodic signal as an impulse train
+where the in polls
+
+494
+00:32:17,720 --> 00:32:22,010 
+fights or areas for proportional to the
+for a series coefficients
+
+495
+00:32:22,010 --> 00:32:25,990 
+then in fact the Fourier transform
+
+496
+00:32:25,990 --> 00:32:29,530 
+synthesis equation reduced to
+
+497
+00:32:29,530 --> 00:32:33,410 
+before you see recent this equation so
+the third step
+
+498
+00:32:33,410 --> 00:32:37,610 
+then was with a periodic signal
+
+499
+00:32:37,610 --> 00:32:41,290 
+the 48 transform that periodic signal
+
+500
+00:32:41,290 --> 00:32:45,790 
+defined as an impulse train with the
+heights or areas the impulses are
+
+501
+00:32:45,790 --> 00:32:48,790 
+proportional to the forty a series
+coefficients
+
+502
+00:32:48,790 --> 00:32:52,380 
+provides us with the mechanism for
+
+503
+00:32:52,380 --> 00:32:55,480 
+combining together the concepts war
+
+504
+00:32:55,480 --> 00:33:01,340 
+notation love before you a series and
+Fourier transform so
+
+505
+00:33:01,340 --> 00:33:05,510 
+if we just took I E very simple example
+
+506
+00:33:05,510 --> 00:33:09,000 
+here is an example in which
+
+507
+00:33:09,000 --> 00:33:12,650 
+we have and a periodic signal
+
+508
+00:33:12,650 --> 00:33:16,070 
+which is just an impulse and its
+
+509
+00:33:16,070 --> 00:33:19,160 
+for EA transform is just a constant
+
+510
+00:33:19,160 --> 00:33:22,820 
+we can think other periodic signal
+
+511
+00:33:22,820 --> 00:33:26,540 
+associated with this which is this
+signal
+
+512
+00:33:26,540 --> 00:33:31,270 
+periodically replicated in with the
+spacing t0
+
+513
+00:33:31,270 --> 00:33:35,270 
+the Fourier transform love this is a
+constant
+
+514
+00:33:35,270 --> 00:33:38,600 
+and this of course has a forty a series
+representation
+
+515
+00:33:38,600 --> 00:33:42,080 
+so the Fourier transform or
+
+516
+00:33:42,080 --> 00:33:47,820 
+the original in polls is just a constant
+the Fourier transform
+
+517
+00:33:47,820 --> 00:33:51,010 
+love the periodic signal is
+
+518
+00:33:51,010 --> 00:33:54,250 
+an impulse train where the heights at
+the impulses
+
+519
+00:33:54,250 --> 00:33:58,320 
+are proportional to the forty a series
+coefficients
+
+520
+00:33:58,320 --> 00:34:02,580 
+and of course we could previously have
+computed
+
+521
+00:34:02,580 --> 00:34:06,190 
+the forty a series coefficients to that
+imposed strain
+
+522
+00:34:06,190 --> 00:34:10,090 
+and those for a series coefficients are
+as I've shown here
+
+523
+00:34:10,090 --> 00:34:13,139 
+so on both these cases these in effect
+
+524
+00:34:13,139 --> 00:34:17,040 
+represent just a change in notation
+we're here we have a bar graph in here
+
+525
+00:34:17,040 --> 00:34:18,560 
+we have been imposed strain
+
+526
+00:34:18,560 --> 00:34:21,929 
+and both at the is simply represent
+
+527
+00:34:21,929 --> 00:34:25,310 
+samples of what we have above
+
+528
+00:34:25,310 --> 00:34:28,520 
+which is the for EA transform
+
+529
+00:34:28,520 --> 00:34:34,220 
+love the original a periodic sick
+
+530
+00:34:34,220 --> 00:34:37,359 
+okay now once again I suspect that kinda
+
+531
+00:34:37,359 --> 00:34:42,169 
+moving back and forth and and trying to
+straighten out when we're talking about
+
+532
+00:34:42,169 --> 00:34:44,569 
+periodic in a periodic signals
+
+533
+00:34:44,569 --> 00:34:48,339 
+may require a little mental gymnastics
+initially
+
+534
+00:34:48,339 --> 00:34:51,659 
+basically what we try to do is
+
+535
+00:34:51,659 --> 00:34:56,159 
+incorporate within one framework
+representation for both
+
+536
+00:34:56,159 --> 00:35:00,589 
+a periodic and and periodic signals in
+the Fourier transform
+
+537
+00:35:00,589 --> 00:35:04,420 
+provides us with a mechanism to do that
+
+538
+00:35:04,420 --> 00:35:07,650 
+in the next lecture I'll continue with
+the discussion
+
+539
+00:35:07,650 --> 00:35:12,180 
+or the continuous-time for EA transform
+in particular focusing
+
+540
+00:35:12,180 --> 00:35:16,430 
+on a number of its properties summer
+which we've already seen namely the
+
+541
+00:35:16,430 --> 00:35:17,780 
+symmetry properties
+
+542
+00:35:17,780 --> 00:35:21,190 
+we'll see lots of other properties that
+relate
+
+543
+00:35:21,190 --> 00:35:24,910 
+of course both to the 48 transform and
+to the for users
+
+544
+00:35:24,910 --> 00:35:25,200 
+thank you
+

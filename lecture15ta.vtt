@@ -1,0 +1,2648 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+பின்வரும் உள்ளடக்கத்தை ஒரு கிரியேட்டிவ் காமன்ஸ் உரிமத்தின் கீழ் வழங்கப்படும்
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+உங்கள் ஆதரவு எம்ஐடி ஓபன்கோர்ஸ்வேர் வழங்க தொடர்ந்து உதவும்
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+இலவசமாக உயர்தர கல்வி வளங்கள்
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+நன்கொடை செய்ய அல்லது அவர்களை நூற்றுக்கணக்கான கூடுதல் பொருட்கள் காண
+
+00:00:14,000 --> 00:00:15,000
+courses
+படிப்புகள்
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+0 CW இல் எம்ஐடி ஓபன்கோர்ஸ்வேர் வருகை
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU home for the
+என்று எம்ஐடி என்று EDU முகப்பு
+
+00:00:28,000 --> 00:00:31,000
+in
+
+
+00:00:31,000 --> 00:00:32,000
+the
+உருக்கு
+
+00:00:32,000 --> 00:00:33,000
+the
+உருக்கு
+
+00:00:33,000 --> 00:00:38,000
+the in
+இல்
+
+00:00:38,000 --> 00:00:40,000
+in
+
+
+00:00:40,000 --> 00:00:44,000
+the
+உருக்கு
+
+00:00:44,000 --> 00:00:51,000
+are the
+இருக்கிற்கின்றன
+
+00:00:52,000 --> 00:00:57,000
+in the last lecture we begin
+நாம் தொடங்க கடந்த விரிவுரை
+
+00:00:57,000 --> 00:01:02,000
+the discussion love modulation and in particular what we focused on
+கலந்துரையாடல் காதல் பண்பேற்றம் மற்றும் குறிப்பாக நாம் கவனம் என்ன
+
+00:01:02,000 --> 00:01:08,000
+was the continuous-time case and in talking about continuous-time modulation
+தொடர்ச்சியான நேர வழக்கு மற்றும் தொடர்ச்சியான நேர பண்பேற்றம் பற்றி இருந்தது
+
+00:01:08,000 --> 00:01:11,000
+we covered a number of topics we talked about
+நாம் பற்றி பேசினார் தலைப்புகளில் பல மூடப்பட்டிருத்தோம்
+
+00:01:11,000 --> 00:01:14,000
+the properties and analysis love
+பண்புகள் மற்றும் பகுப்பாய்வு காதல்
+
+00:01:14,000 --> 00:01:18,000
+modulation when we had a complex exponential
+நாங்கள் ஒரு சிக்கலான அதிவேகமான இருந்தது பண்பேற்றம் போது
+
+00:01:18,000 --> 00:01:23,000
+carrier signal we talked about the properties and analysis in the case of a
+கேரியர் சிக்னல் நாம் ஒரு வழக்கில் பண்புகள் மற்றும் பகுப்பாய்வு பற்றி
+
+00:01:23,000 --> 00:01:25,000
+sinusoidal carrier
+sinusoidal கேரியர்
+
+00:01:25,000 --> 00:01:29,000
+and in that context and related to
+அந்த அடிப்படையில் மற்றும் தொடர்புடைய
+
+00:01:29,000 --> 00:01:33,000
+the application associated with communications
+தகவல் தொடர்புடைய பயன்பாடு
+
+00:01:33,000 --> 00:01:36,000
+we talked about synchronous modulation
+நாம் ஒத்தியங்கு பண்பேற்றம் பற்றி
+
+00:01:36,000 --> 00:01:39,000
+a synchronous modulation and
+ஒரு ஒத்தியங்கு பண்பேற்றம் மற்றும்
+
+00:01:39,000 --> 00:01:42,000
+also the notion love single sideband
+மேலும் கருத்து ஒற்றை பக்கப்பட்டை பிடிக்கிறது
+
+00:01:42,000 --> 00:01:45,000
+modulation in
+உள்ள பண்பேற்றம்
+
+00:01:45,000 --> 00:01:51,000
+the lecture today there are to issues that I'd like to address broad topics
+விரிவுரை இன்று நான் பரந்த தலைப்புகள் உரையாற்ற விரும்புகிறேன் என்று பிரச்சினைகள் உள்ளன
+
+00:01:51,000 --> 00:01:55,000
+one is Acer parallel discussion
+ஒரு ஏசர் இணை கலந்துரையாடல் ஆகிறது
+
+00:01:55,000 --> 00:02:00,000
+particularly is associated with complex exponential sinusoidal modulation
+குறிப்பாக சிக்கலான அதிவேகமான sinusoidal பண்பேற்றம் தொடர்புடைய
+
+00:02:00,000 --> 00:02:03,000
+for discrete-time signals and
+தனி நேர சிக்னல்களை மற்றும்
+
+00:02:03,000 --> 00:02:07,000
+the second is the introduction and analysis
+இரண்டாவது அறிமுகம் மற்றும் பகுப்பாய்வு
+
+00:02:07,000 --> 00:02:12,000
+love a another kind of carriers specifically a post kind of carrier
+கேரியர் குறிப்பாக ஒரு பதவியை வகையான ஊர்திகளின் ஒரு மற்றொரு வகையான காதல்
+
+00:02:12,000 --> 00:02:17,000
+in continuous time leading to the notions of pulse amplitude modulation
+தொடர்ச்சியான நேரத்தில் துடிப்பு வீச்சு பண்பேற்றம் கருத்துக்களை முன்னணி
+
+00:02:17,000 --> 00:02:22,000
+and eventually a very powerful theramin result called the sampling there
+இறுதியில் ஒரு மிக சக்தி வாய்ந்த theramin விளைவாக மாதிரி என்று
+
+00:02:22,000 --> 00:02:26,000
+well let me begin the lecture though focusing on
+எனக்கு விரிவுரை என்றாலும் கவனம் ஆரம்பிக்கலாம்
+
+00:02:26,000 --> 00:02:30,000
+the discrete-time modulation to essentially
+தனி நேரம் பண்பேற்றம் அடிப்படையில் செய்ய
+
+00:02:30,000 --> 00:02:35,000
+draw your attention to the fact dead the analysis and discrete-time
+உண்மையில் இறந்த உங்கள் கவனத்திற்கு பகுப்பாய்வு மற்றும் தனி நேரம்
+
+00:02:35,000 --> 00:02:39,000
+very much parallels the analysis in continuous-time
+மிகவும் சமாந்தரமான தொடர்ச்சியான நேரத்தில் பகுப்பாய்வு
+
+00:02:39,000 --> 00:02:43,000
+well let's consider in the discrete-time
+நன்கு இன் தனித்தியங்கும் நேர பரிசீலனை செய்வோம்
+
+00:02:43,000 --> 00:02:47,000
+case just as we had in continuous-time a
+நாங்கள் தொடர்ந்து நேர ஒரு இருந்தது போல் வழக்கு
+
+00:02:47,000 --> 00:02:50,000
+signal modulating a carrier signal
+சிக்னல் ஒரு கப்பல் சமிக்ஞை பண்படுத்தும்
+
+00:02:50,000 --> 00:02:54,000
+and the resulting modulated signal
+அதன் விளைவாக பண்படுத்தப்பட்ட சமிக்ஞையை
+
+00:02:54,000 --> 00:02:57,000
+is why event and it was
+ஏன் நிகழ்வு மற்றும் அது
+
+00:02:57,000 --> 00:03:01,000
+in continuous-time the modulation property
+தொடர்ச்சியான நேரத்தில் பண்பேற்றம் சொத்து
+
+00:03:01,000 --> 00:03:05,000
+Associated with the four EA transform dead
+நான்கு ஈ.ஏ. இறந்த மாற்றும் தொடர்புடைய
+
+00:03:05,000 --> 00:03:10,000
+provided the basis for the analysis and exactly the same thing is true in a
+பகுப்பாய்வு அடிப்படையில் வழங்கப்படும் மற்றும் அதே விஷயத்தை ஒரு உண்மை
+
+00:03:10,000 --> 00:03:11,000
+discrete-time
+தனி நேரம்
+
+00:03:11,000 --> 00:03:14,000
+case in particular what we have in discrete-time
+வழக்கு குறிப்பாக நாம் தனி நேரம் இல்லை
+
+00:03:14,000 --> 00:03:20,000
+is the modulation property as it relates to the Fourier transform
+அதை மாற்றும் ஃபோரியர் தொடர்புடைய பண்பேற்றம் சொத்து உள்ளது
+
+00:03:20,000 --> 00:03:25,000
+which tells us that the four EA transform of the modulated signal
+இது நான்கு ஈ.ஏ. பண்படுத்தப்பட்ட சமிக்ஞையின் மாற்றும் என்று நமக்கு சொல்கிறது
+
+00:03:25,000 --> 00:03:29,000
+is the convolution all the
+ஆகிறது சுழற்சி அனைத்து
+
+00:03:29,000 --> 00:03:34,000
+for a transformer the carrier and the 48 transform or
+ஒரு மின்மாற்றி கேரியர் மற்றும் 48 மாற்றும் அல்லது
+
+00:03:34,000 --> 00:03:39,000
+the modulating signal and the only real difference in issue here
+இறக்கை மற்றும் இங்கே பிரச்சினை மட்டுமே உண்மையான வேறுபாடு
+
+00:03:39,000 --> 00:03:42,000
+is that in the discrete-time case
+என்று தனி நேரம் வழக்கில்
+
+00:03:42,000 --> 00:03:45,000
+what we're talking about is a periodic
+நாம் என்ன பேசுகிறோம் என்பதை ஒரு கால ஆகிறது
+
+00:03:45,000 --> 00:03:49,000
+convolution because the specter of course a periodic
+சுழற்சி நிச்சயமாக ஒழிப்பதற்கு ஒரு கால ஏனெனில்
+
+00:03:49,000 --> 00:03:55,000
+whereas in a continuous-time case it was an a periodic convolution so let's
+ஒரு தொடர்ச்சியான நேர விஷயத்தில் அது ஒரு கால சுழற்சி இருந்தது, அதே சமயம் தெரிந்தன
+
+00:03:55,000 --> 00:04:00,000
+parallel the discussion and in particular what will focus on
+கலந்துரையாடல் இணையாக குறிப்பாக என்ன கவனம் செலுத்த வேண்டும்
+
+00:04:00,000 --> 00:04:03,000
+is first a complex exponential
+முதல் ஒரு சிக்கலான அதிவேகமான ஆகிறது
+
+00:04:03,000 --> 00:04:07,000
+carrier and second a
+கப்பல் மற்றும் இரண்டாவது ஒரு
+
+00:04:07,000 --> 00:04:11,000
+sinusoidal carrier and we'll see how this parallels our discussion in
+sinusoidal கேரியர் மற்றும் நாம் இந்த எங்கள் கலந்துரையாடல் இணை எப்படி என்று பார்ப்போம்
+
+00:04:11,000 --> 00:04:12,000
+continuous-time
+தொடர்ச்சியான நேரம்
+
+00:04:12,000 --> 00:04:17,000
+and will make fairly brief reference as we introduce
+நாம் அறிமுகப்படுத்த மற்றும் மிகவும் சுருக்கமாக செய்யும்
+
+00:04:17,000 --> 00:04:22,000
+the post carrier for continuous-time will bring make very brief reference to
+தொடர்ச்சியான நேர பதவியை கேரியருக்கு மிக சுருக்கமான குறிப்பு கொண்டுவரும்
+
+00:04:22,000 --> 00:04:24,000
+the post carrier for discrete-time
+தனி நேரம் பிந்தைய கேரியர்
+
+00:04:24,000 --> 00:04:28,000
+indicating that again the analysis and discrete-time and continuous-time
+மீண்டும் ஆய்வு மற்றும் தனித்தியங்கும் நேர மற்றும் தொடர்ச்சியான நேர என்று குறிப்பிடவும்
+
+00:04:28,000 --> 00:04:32,000
+is very parallel soul let's first consider
+மிகவும் இணை ஆன்மா முதலில் நாம் கருத்தில்
+
+00:04:32,000 --> 00:04:35,000
+complex exponential and sinus all carriers
+சிக்கலான அதிவேகமான மற்றும் சைனஸ் அனைத்து ஊர்திகளின்
+
+00:04:35,000 --> 00:04:38,000
+for the discrete-time case emphasizing
+வலியுறுத்தி தனித்தியங்கும் நேர வழக்கு
+
+00:04:38,000 --> 00:04:42,000
+the very strong parallel and similarity between
+இடையில் மிகவும் பலமான இணை மற்றும் ஒற்றுமை
+
+00:04:42,000 --> 00:04:46,000
+discrete-time and continuous-time well
+தனி நேரம் மற்றும் தொடர்ச்சியான நேரம்
+
+00:04:46,000 --> 00:04:50,000
+we have once again the modulation property
+நாம் மீண்டும் பண்பேற்றம் சொத்து
+
+00:04:50,000 --> 00:04:54,000
+and the modulation property tells us that the spectrum
+மற்றும் பண்பேற்றம் சொத்து நமக்கு சொல்கிறது என்று ஸ்பெக்ட்ரம்
+
+00:04:54,000 --> 00:04:58,000
+all the modulated signal is the periodic
+அனைத்து பண்படுத்தப்பட்ட சமிக்ஞையை கால ஆகிறது
+
+00:04:58,000 --> 00:05:02,000
+convolution love the two spectra
+சுழற்சி இரண்டு நிறமாலை பிடிக்கிறது
+
+00:05:02,000 --> 00:05:05,000
+and let's consider for example
+மற்றும் உதாரணமாக பார்ப்போம்
+
+00:05:05,000 --> 00:05:09,000
+an input for modulating spectrum as i've indicated here
+நான் இங்கே சுட்டி போல ஸ்பெக்ட்ரம் பண்படுத்தும் ஒரு உள்ளீடு
+
+00:05:09,000 --> 00:05:12,000
+and since we what to consider first the fall
+நாம் வீழ்ச்சி முதல் கருத்தில் கொள்ள என்ன இருந்து
+
+00:05:12,000 --> 00:05:16,000
+a complex exponential carrier
+ஒரு சிக்கலான அதிவேகமான கேரியர்
+
+00:05:16,000 --> 00:05:19,000
+will consider the case of CNN
+சிஎன்என் வழக்கில் பரிசீலிக்கும்
+
+00:05:19,000 --> 00:05:22,000
+equal to each to the J Omega subsea
+ஜே ஒமேகா Subsea ஒவ்வொரு சமமாக
+
+00:05:22,000 --> 00:05:26,000
+n and let me stress by the way as
+N மற்றும் மூலம் மன அழுத்தம் என்னை
+
+00:05:26,000 --> 00:05:30,000
+I did in the continuous-time case
+நான் தொடர்ந்து நேர செய்தது
+
+00:05:30,000 --> 00:05:35,000
+dead out 10 to suppress the phase angle which of course can be associated with
+இறந்த 10 தொடர்புடைய முடியும் நிச்சயமாக இது கட்டத்தில் கோணத்தில் ஒடுக்க
+
+00:05:35,000 --> 00:05:37,000
+the carrier also
+கேரியர் மேலும்
+
+00:05:37,000 --> 00:05:41,000
+alright so we have then the spectrum
+சரி நாம் பின்னர் ஸ்பெக்ட்ரம்
+
+00:05:41,000 --> 00:05:45,000
+%uh the modulating signal the spektr the carrier signal
+% இம் பண்படுத்தும் spektr கேரியர் சிக்னல்
+
+00:05:45,000 --> 00:05:49,000
+if this is the carrier then its spectrum is an impulse train
+இந்த கேரியர் என்றால் அதன் ஸ்பெக்ட்ரம் உந்துவிசை ரயில் ஆகிறது
+
+00:05:49,000 --> 00:05:52,000
+and then imposed strain I've indicated
+பின்னர் நான் நூலக அழுத்தம் விதித்தது
+
+00:05:52,000 --> 00:05:57,000
+here and let me stress also that in
+இங்கே உள்ள அந்த தேன்கூட்டில்
+
+00:05:57,000 --> 00:06:01,000
+the discrete-time case of course the spectra
+நிச்சயமாக தனி நேர வழக்கு நிறமாலை
+
+00:06:01,000 --> 00:06:06,000
+and all of the spektr involved are periodic with period of two pi
+தொடர்பு spektr அனைத்து இரண்டு பை காலம் கால இருக்கின்றன
+
+00:06:06,000 --> 00:06:10,000
+so this then is the spectrum of the carrier signal
+எனவே இந்த கப்பல் சமிக்ஞை ஸ்பெக்ட்ரம் ஆகிறது
+
+00:06:10,000 --> 00:06:14,000
+this is the spectrum the input signal the periodic convolution if these two
+இந்த உள்ளீடு கால சுழற்சி சிக்னல் ஸ்பெக்ட்ரமில் ஆகிறது என்றால் இந்த இரண்டு
+
+00:06:14,000 --> 00:06:18,000
+is the spektr on the modulated signal and the result
+பண்படுத்தப்பட்ட சமிக்ஞையை மீது spektr மற்றும் விளைவாக
+
+00:06:18,000 --> 00:06:22,000
+is then this spectrum shifted
+இந்த ஸ்பெக்ட்ரம் மாற்றப்படும்
+
+00:06:22,000 --> 00:06:25,000
+to center frequency which is the carrier frequency
+கேரியர் அதிர்வெண் சென்டர் அதிர்வெண்
+
+00:06:25,000 --> 00:06:29,000
+Omega subsea so
+ஒமேகா Subsea எனவே
+
+00:06:29,000 --> 00:06:33,000
+the result love modulation with a complex exponential
+ஒரு சிக்கலான அதிவேகமான விளைவாக காதல் பண்பேற்றம்
+
+00:06:33,000 --> 00:06:36,000
+is a straightforward shifted the spectrum
+ஒரு நேரடியான ஸ்பெக்ட்ரம் மாற்றப்படும்
+
+00:06:36,000 --> 00:06:40,000
+to a carrot to so that what occurred around
+ஒரு கேரட் அதனால் என்ன சுற்றி ஏற்பட்டது
+
+00:06:40,000 --> 00:06:46,000
+zero frequency now occurs around the frequency Omega subsea
+பூஜ்யம் அதிர்வெண் இப்போது அதிர்வெண் ஒமேகா Subsea சுற்றி ஏற்படும்
+
+00:06:46,000 --> 00:06:50,000
+now in the continuous-time k sweetie modulated
+இப்போது பண்படுத்தப்பட்ட தொடர்ச்சியான நேர கே செல்லம் உள்ள
+
+00:06:50,000 --> 00:06:54,000
+with the case when we had a complex exponential carrier weedy modulated
+நாம் பண்படுத்தப்பட்ட ஒரு சிக்கலான அதிவேகமான கேரியர் ஒல்லியான போது வழக்கு
+
+00:06:54,000 --> 00:06:57,000
+by essentially just shifting the spectrum back
+அடிப்படையில் தான் ஸ்பெக்ட்ரம் மீண்டும் மாற்றுவதால்
+
+00:06:57,000 --> 00:07:04,000
+and he in fact in the discrete-time case were able to do exactly the same thing
+அவர் தனி நேர விஷயத்தில் உண்மையில் அதே காரியத்தை செய்ய முடிந்தது
+
+00:07:04,000 --> 00:07:07,000
+so if we work to replace
+நாம் பதிலாக வேலை என்றால்
+
+00:07:07,000 --> 00:07:12,000
+see a van which is huge and make a subsidy and
+பெரிய இது ஒரு வேன் பார்க்க மற்றும் மானியம் செய்ய
+
+00:07:12,000 --> 00:07:16,000
+by see a very cozy the minus J Omega
+ஒரு மிக வசதியான கழித்து ஜே ஒமேகா பார்க்க மூலம்
+
+00:07:16,000 --> 00:07:19,000
+CN the resulting spectrum
+CN விளைவாக ஸ்பெக்ட்ரம்
+
+00:07:19,000 --> 00:07:22,000
+would be an impulse train
+ஒரு உந்துவிசை ரயில் இருக்கும்
+
+00:07:22,000 --> 00:07:26,000
+as i indicate here and
+நான் இங்கே குறிப்பிட மற்றும்
+
+00:07:26,000 --> 00:07:30,000
+the result all multiply why I have an
+நான் ஒரு வேண்டும் ஏன் இதன் விளைவாக, அனைத்து பெருக்கி
+
+00:07:30,000 --> 00:07:34,000
+by that new carrier
+புதிய கேரியர்
+
+00:07:34,000 --> 00:07:37,000
+in the frequency domain is a convolution if these two
+அதிர்வெண் களத்தில் ஒரு சுழற்சி என்றால், இந்த இரண்டு
+
+00:07:37,000 --> 00:07:40,000
+and its relatively straightforward to verify that
+அதன் நேரடியாக சரிபார்க்க
+
+00:07:40,000 --> 00:07:43,000
+if you can follow these for the periodic convolution
+நீங்கள் கால சுழற்சி இந்த பின்பற்ற முடியும் என்றால்
+
+00:07:43,000 --> 00:07:49,000
+then that will get us back to the original spectrum that we started with
+பின்னர் அந்த நாம் ஆரம்பித்த அசல் ஸ்பெக்ட்ரம் எங்களுக்கு திரும்ப கிடைக்கும்
+
+00:07:49,000 --> 00:07:53,000
+so what's happened in the discrete-time case for the complex exponential
+அதனால் சிக்கலான அதிவேகமான தனி நேர விஷயத்தில் என்ன நடந்தது
+
+00:07:53,000 --> 00:07:57,000
+is exactly the same as in continuous-time
+தொடர்ச்சியான நேரத்தில் அதே ஆகிறது
+
+00:07:57,000 --> 00:08:01,000
+namely we might too late that corresponds to shifting the spectrum
+அதாவது நாம் மிகவும் தாமதமாக வலதுசாரி ஒத்துள்ளது என்று வலிமை
+
+00:08:01,000 --> 00:08:05,000
+weedy modulate by multiplying by the complex conjugate
+சிக்கலான பரிமாற்ற பெருக்குவதன் மூலம் ஒல்லியான ஒழுங்குபடுத்தும்
+
+00:08:05,000 --> 00:08:09,000
+the original modulating care the original carrier
+அசல் பண்படுத்தும் அசல் கேரியர் கவலை
+
+00:08:09,000 --> 00:08:14,000
+and that shifts the spectrum back to where it was originally
+மற்றும் அது முதலில் அங்கு ஸ்பெக்ட்ரம் மீண்டும் மாற்றங்கள்
+
+00:08:14,000 --> 00:08:19,000
+okay now let's consider the case of a sinusoidal carrier in discrete-time
+சரி இப்போது தனி நேரம் ஒரு சைன் வளைவு தாங்கி வழக்கு கருத்தில் கொள்வோம்
+
+00:08:19,000 --> 00:08:23,000
+and again things very much parallel
+மீண்டும் விஷயங்கள் மிகவும் இணை
+
+00:08:23,000 --> 00:08:26,000
+what we saw in continuous-time
+நாங்கள் தொடர்ந்து நேர பார்த்தேன் என்ன
+
+00:08:26,000 --> 00:08:29,000
+and again as we look at the specter
+மீண்டும் நாம் ஒழிப்பதற்கு பார் போன்ற
+
+00:08:29,000 --> 00:08:33,000
+I will choose a phase angle 0
+நான் ஒரு கட்டத்தில் கோணத்தில் 0 தேர்ந்தெடுப்பேன்
+
+00:08:33,000 --> 00:08:37,000
+mainly for notational an analytical convenience
+முக்கியமாக குறிப்பீட்டாக்க ஒரு பகுப்பாய்வு வசதிக்காக
+
+00:08:37,000 --> 00:08:40,000
+so in this case now rather than
+அதனால், இந்த வழக்கில் இப்போது விட
+
+00:08:40,000 --> 00:08:44,000
+a carrier signal which is a single complex exponential
+ஒரு சிக்கலான அதிவேகமான இது ஒரு கப்பல் சமிக்ஞை
+
+00:08:44,000 --> 00:08:49,000
+it's now a sinusoidal carrier and the sinus or carrier is the summer too
+அது இப்போது ஒரு சைன் வளைவு கேரியரின் மற்றும் சைனஸ் அல்லது கேரியர் கூட கோடை
+
+00:08:49,000 --> 00:08:52,000
+complex exponentials
+சிக்கலான நிகழ்வுஎண்
+
+00:08:52,000 --> 00:08:57,000
+and so if we consider a modulating spectrum that is the specter affects a
+நாம் கருத்தில் மற்றும் ஒழிப்பதற்கு என்று ஒரு பண்படுத்தும் ஸ்பெக்ட்ரம் ஒரு பாதிக்கிறது
+
+00:08:57,000 --> 00:08:59,000
+van
+உள்ள
+
+00:08:59,000 --> 00:09:04,000
+as something are the type that I indicate here
+ஏதாவது நான் இங்கே சுட்டி காட்டுகின்றன என்று வகை இருக்கிறது என
+
+00:09:04,000 --> 00:09:08,000
+and the spectrum of the carrier
+மற்றும் கேரியர் ஸ்பெக்ட்ரம்
+
+00:09:08,000 --> 00:09:12,000
+now since the carrier is sign a soil rather than
+கேரியர் ஒரு மண் கையெழுத்திட ஆகிறது விட இப்போது முதல்
+
+00:09:12,000 --> 00:09:16,000
+a complex exponential consists of two impulses
+ஒரு சிக்கலான அதிவேகமான இரண்டு தூண்டுதலின் கொண்டுள்ளது
+
+00:09:16,000 --> 00:09:20,000
+wanted pasta makers see and one at minus Omega subsea
+பாஸ்தா தயாரிப்பாளர்கள் கழித்து ஒமேகா Subsea பார்க்க மற்றும் ஒரு வேண்டும்
+
+00:09:20,000 --> 00:09:24,000
+convolved ing this spectrum with this spectrum
+இந்த ஸ்பெக்ட்ரம் இந்த ஸ்பெக்ட்ரம் களை convolved
+
+00:09:24,000 --> 00:09:27,000
+gives us a replication affective Omega
+எங்களுக்கு ஒரு போலிகளை உணர்ச்சி ஒமேகா கொடுக்கிறது
+
+00:09:27,000 --> 00:09:32,000
+around plus and minus Omega subsea
+சுற்றி கூட்டல் மற்றும் கழித்தல் ஒமேகா Subsea
+
+00:09:32,000 --> 00:09:36,000
+and incidently with an ample to change a hair
+மற்றும் விசு ஒரு போதுமான ஒரு முடி மாற்ற
+
+00:09:36,000 --> 00:09:40,000
+so again things have
+எனவே மீண்டும் விஷயங்கள்
+
+00:09:40,000 --> 00:09:43,000
+worked as they did in continuous-time
+அவர்கள் தொடர்ச்சியான காலத்தில் செய்தது போல் வேலை
+
+00:09:43,000 --> 00:09:46,000
+in continuous time or in discrete-time
+தொடர்ச்சியான நேரம் அல்லது தனி நேரம்
+
+00:09:46,000 --> 00:09:49,000
+modulating with a sinusoidal carrier
+ஒரு சைன் வளைவு கேரியர் பண்படுத்தும்
+
+00:09:49,000 --> 00:09:53,000
+with then correspond to a replication of the spectrum
+பின்னர் ஸ்பெக்ட்ரம் ஒரு போலிகளை ஒத்திருக்கும் கொண்டு
+
+00:09:53,000 --> 00:09:58,000
+around plus the carrier frequency and replication the spectrum
+கேரியர் அதிர்வெண் மற்றும் போலிகளை ஸ்பெக்ட்ரம் பிளஸ் சுற்றி
+
+00:09:58,000 --> 00:10:02,000
+around minus the carrier frequency in both cases
+சுற்றி இரு வழக்குகளில் கேரியர் அதிர்வெண் கழித்து
+
+00:10:02,000 --> 00:10:07,000
+as long as the carrier frequency is large enough compared with the band with
+நீண்ட கேரியர் அதிர்வெண் அதிக அளவு உள்ளது, இசைக்குழு உடன் ஒப்பிடும்போது
+
+00:10:07,000 --> 00:10:08,000
+the signal
+சமிக்ஞை
+
+00:10:08,000 --> 00:10:12,000
+so that those two replications don't overlap
+அந்த இரண்டு விடைகள் சார்ந்தோ இல்லை என்று
+
+00:10:12,000 --> 00:10:15,000
+then its reasonable to suppose
+அதன் நியாயமான நினைக்கிறேன்
+
+00:10:15,000 --> 00:10:19,000
+that we should be able to recover the original signal
+நாம் அசல் சமிக்ஞையை மீட்க முடியும் என்று
+
+00:10:19,000 --> 00:10:23,000
+well in fact to d modulate
+நன்கு உண்மையில் ஈ மேம்படுத்த
+
+00:10:23,000 --> 00:10:26,000
+in the discrete-time case we would again
+தனி நேரம் விஷயத்தில் நாம் மீண்டும் என்று
+
+00:10:26,000 --> 00:10:32,000
+follow very much the strategy that we did in continuous-time
+நாங்கள் தொடர்ந்து நேர செய்தது என்று மிகவும் மூலோபாயம் பின்பற்ற
+
+00:10:32,000 --> 00:10:35,000
+in particular let's consider the modulating
+குறிப்பாக நாட்டின் பண்படுத்தும் கருத்தில் கொள்வோம்
+
+00:10:35,000 --> 00:10:38,000
+by taking the modulated signal
+பண்படுத்தப்பட்ட சமிக்ஞையை எடுத்து
+
+00:10:38,000 --> 00:10:41,000
+and again putting it through modulator again
+மீண்டும் மீண்டும் பண்பேற்றியில் மூலம் அதை வைத்து
+
+00:10:41,000 --> 00:10:45,000
+with a carrier which is co-signed Omega CN
+ஒமேகா CN இணை கையெழுத்திட்ட இது கேரியர்
+
+00:10:45,000 --> 00:10:49,000
+if we do that we have a the modulator
+நாம் பண்பேற்றியில் வேண்டும் என்று செய்தால்
+
+00:10:49,000 --> 00:10:54,000
+or what will turn out to be part of the modulator as i indicate here
+அல்லது என்ன நான் இங்கே குறிப்பிட பண்பேற்றியில் பகுதியாக மாறிவிடும்
+
+00:10:54,000 --> 00:10:58,000
+the spectrum or the import signal
+ஸ்பெக்ட்ரம் அல்லது இறக்குமதி சமிக்ஞை
+
+00:10:58,000 --> 00:11:02,000
+is as I had just developed a replication
+நான் ஒரு போலிகளை உருவாக்கப்பட்டது என ஆகிறது
+
+00:11:02,000 --> 00:11:06,000
+up the original spectrum around plus and minus Omega subsea
+அசல் மற்றும் சுற்றி ஸ்பெக்ட்ரம் கழித்து ஒமேகா Subsea வரை
+
+00:11:06,000 --> 00:11:10,000
+with an amplitude of the hair when this
+முடி ஒரு வீச்சு கொண்ட போது இந்த
+
+00:11:10,000 --> 00:11:13,000
+is again convolved with the spectrum
+மீண்டும் ஸ்பெக்ட்ரம் convolved
+
+00:11:13,000 --> 00:11:16,000
+love the carrier then
+பின்னர் கேரியர் அன்பு
+
+00:11:16,000 --> 00:11:21,000
+we get a replication of the original spectrum
+நாம் உண்மையான ஸ்பெக்ட்ரம் ஒரு போலிகளை பெற
+
+00:11:21,000 --> 00:11:25,000
+first around zero frequency as i indicate here
+முதல் பூஜ்யம் அலைவரிசை சுற்றி நான் இங்கே குறிப்பிட
+
+00:11:25,000 --> 00:11:29,000
+and then around twice the carrier frequency
+பின்னர் சுற்றி இரண்டு கேரியர் அதிர்வெண்
+
+00:11:29,000 --> 00:11:33,000
+and minus twice the carrier frequency
+மற்றும், கழித்தல் இருமுறை கேரியர் அதிர்வெண்
+
+00:11:33,000 --> 00:11:36,000
+and as long as the carrier frequency
+மற்றும் நீண்ட கேரியர் அதிர்வெண்
+
+00:11:36,000 --> 00:11:39,000
+is large enough compared with the
+ஒப்பிடுகையில் அதிக அளவு உள்ளது
+
+00:11:39,000 --> 00:11:43,000
+with of the original signal day and as you can see
+அசல் சமிக்ஞையை நாள் மற்றும் நீங்கள் பார்க்க முடியும் என
+
+00:11:43,000 --> 00:11:48,000
+by extracting this part of the spectrum
+நிறமாலை இந்த பகுதியில் பிரித்தெடுக்கும் மூலம்
+
+00:11:48,000 --> 00:11:51,000
+with the low-pass filter we can in principle
+நாம் கொள்கையளவில் முடியும் குறைந்த பாஸ் வடிகட்டி
+
+00:11:51,000 --> 00:11:54,000
+recover the spectrum associated with the original signal
+அசல் சமிக்ஞையை தொடர்புடைய ஸ்பெக்ட்ரம் மீட்க
+
+00:11:54,000 --> 00:11:59,000
+and again justice in continuous-time because this amplitude is a half
+மீண்டும் தொடர்ச்சியான நேர நீதி இந்த வீச்சு ஒரு அரை ஏனெனில்
+
+00:11:59,000 --> 00:12:03,000
+we would want to choose for scaling purposes
+நாம் நோக்கங்களுக்காக அளவிடுதல் தேர்வு செய்ய வேண்டும்
+
+00:12:03,000 --> 00:12:07,000
+a low-pass filter ample to which is
+ஒரு குறைந்த பாஸ் வடிகட்டி போதுமான இது வரை
+
+00:12:07,000 --> 00:12:12,000
+to to compensate for this factor in the hair
+முடி இந்த காரணி ஈடு செய்ய வேண்டும்
+
+00:12:12,000 --> 00:12:16,000
+so once again things work at basically
+அதனால் மீண்டும் ஒருமுறை விஷயங்களை அடிப்படையில் வேலை
+
+00:12:16,000 --> 00:12:20,000
+the same way as they had in continuous-time
+அவர்கள் தொடர்ச்சியான நேரம் இருந்தது அதே வழியில்
+
+00:12:20,000 --> 00:12:23,000
+we have sinusoidal modulation
+நாம் sinusoidal பண்பேற்றம் வேண்டும்
+
+00:12:23,000 --> 00:12:28,000
+which consists love using a sinusoidal carrier
+இது ஒரு சைன் வளைவு கேரியர் பயன்படுத்தி காதல் கொண்டுள்ளது
+
+00:12:28,000 --> 00:12:31,000
+and we have the the modulator
+நாம் பண்பேற்றியில் வேண்டும்
+
+00:12:31,000 --> 00:12:35,000
+which consists of taking the modulated signal
+பண்படுத்தப்பட்ட சமிக்ஞையை எடுத்து கொண்டது
+
+00:12:35,000 --> 00:12:38,000
+multiplying by the carrier and then
+பின்னர் கேரியர் பெருக்குவதன் மற்றும்
+
+00:12:38,000 --> 00:12:43,000
+processing Matt with a low-pass filter
+ஒரு குறைந்த பாஸ் வடிகட்டி மாட் செயல்படுத்தும்போது
+
+00:12:43,000 --> 00:12:46,000
+to extract the portion of the spectrum
+ஸ்பெக்ட்ரம் பகுதியை பெறுவதற்கு
+
+00:12:46,000 --> 00:12:53,000
+which is around zero frequency as i indicate in the spectra below
+நான் கீழே நிறமாலை உள்ள குறிப்பிட பூஜ்யம் அலைவரிசை சுற்றி இது
+
+00:12:53,000 --> 00:12:58,000
+and the result then with this low pass filter having a gain of two
+இதன் பின்னர் இந்த குறைந்த பாஸ் வடிகட்டி இரண்டு ஒரு ஆதாயம் கொண்ட
+
+00:12:58,000 --> 00:13:02,000
+is that we've recovered the original spectrum
+நாம் உண்மையான ஸ்பெக்ட்ரம் மீண்டு விட்டேன் என்று
+
+00:13:02,000 --> 00:13:06,000
+exit Omega which is the spectrum
+ஸ்பெக்ட்ரம் இது ஒமேகா வெளியேற
+
+00:13:06,000 --> 00:13:10,000
+that we started now
+நாம் இப்போது தொடங்கியது என்று
+
+00:13:10,000 --> 00:13:14,000
+several other things to stress this is a fairly quick
+இந்த மன அழுத்தம் பல விஷயங்களை ஒரு மிகவும் விரைவான ஆகின்றன
+
+00:13:14,000 --> 00:13:18,000
+to we're through sinusoidal modulation for discrete-time
+நாம் தனித்தியங்கும் நேர sinusoidal பண்பேற்றம் மூலம் இருக்கிறோம் செய்ய
+
+00:13:18,000 --> 00:13:22,000
+in there are very similar issues that arise in
+எழும் என்று மிகவும் போன்ற பிரச்சினைகள் உள்ளன
+
+00:13:22,000 --> 00:13:26,000
+the discrete-time case in terms of love having faced synchronization
+காதல் அடிப்படையில் தனி நேர விஷயத்தில் ஒருங்கிணைக்க எதிர்கொண்ட
+
+00:13:26,000 --> 00:13:31,000
+and frequency synchronization between the modulator and demodulator
+மற்றும் பண்பேற்றியில் மற்றும் மட்டிறக்கி இடையே அதிர்வெண் ஒத்திசைவு
+
+00:13:31,000 --> 00:13:34,000
+and we had discussed that in a fair amount of detail for the continuous-time
+நாம் தொடர்ந்து நேர விவரம் ஒரு நியாயமான அளவு என்று விவாதித்த
+
+00:13:34,000 --> 00:13:39,000
+case in some sense in practical terms
+நடைமுறை அடிப்படையில் சில உணர்வு வழக்கு
+
+00:13:39,000 --> 00:13:43,000
+that becomes much more than issue in continuous-time
+என்று தொடர்ச்சியான நேர பிரச்சினை விட அதிகமாக இருக்கிறது
+
+00:13:43,000 --> 00:13:48,000
+than it does in discrete-time in part because
+அது முக்கிய காரணம் தனி நேர காட்டிலும்
+
+00:13:48,000 --> 00:13:52,000
+synchronization between a modulator and demodulator
+பண்பேற்றியில் மற்றும் மட்டிறக்கி இடையே ஒத்திசைவு
+
+00:13:52,000 --> 00:13:56,000
+is often much harder in a continuous-time
+பெரும்பாலும் ஒரு தொடர்ச்சியான நேரம் மிகவும் கடினமாக உள்ளது
+
+00:13:56,000 --> 00:14:00,000
+system which is essentially an analog system
+அடிப்படையில் ஒரு அனலாக் அமைப்பு எந்த கணினி
+
+00:14:00,000 --> 00:14:04,000
+as compared with a digital system another
+ஒரு டிஜிட்டல் அமைப்பின் மற்றொரு ஒப்பிடுகையில்
+
+00:14:04,000 --> 00:14:08,000
+very important reason and it's important to stress this at the outset
+மிக முக்கியமான காரணம், அது ஆரம்பத்தில் இந்த மன அழுத்தம் முக்கியம்
+
+00:14:08,000 --> 00:14:11,000
+is that whereas the theory involving
+என்று அதேசமயம் சம்பந்தப்பட்ட கோட்பாடு
+
+00:14:11,000 --> 00:14:15,000
+the use of complex exponentials sinusoidal modulation
+சிக்கலான பயன்பாடு sinusoidal பண்பேற்றம் நிகழ்வுஎண்
+
+00:14:15,000 --> 00:14:19,000
+parallels very strongly in the continuous-time
+தொடர்ச்சியான நேர மிக கடுமையாக சமாந்தரமான
+
+00:14:19,000 --> 00:14:23,000
+and the discrete-time case in practical terms
+மற்றும் நடைமுறை அடிப்படையில் தனி நேர வழக்கு
+
+00:14:23,000 --> 00:14:26,000
+it has much more significance in continuous-time
+அதை தொடர்ந்து நேரத்தில் மிகவும் முக்கியத்துவம் உண்டு
+
+00:14:26,000 --> 00:14:30,000
+than it does in discrete-time that is the notion
+அது கருத்து என்று தனி நேரம் காட்டிலும்
+
+00:14:30,000 --> 00:14:35,000
+love sinusoidal modulation in the context of communication systems
+தகவல் தொடர்பு அமைப்புகள் சூழலில் sinusoidal பண்பேற்றம் பிடிக்கிறது
+
+00:14:35,000 --> 00:14:39,000
+is extremely important for continuous-time systems
+தொடர்ச்சியான நேர அமைப்புகள் மிகவும் முக்கியமானது ஆகும்
+
+00:14:39,000 --> 00:14:42,000
+and less so in discrete-time systems
+மற்றும் குறைவான தனித்தியங்கும் நேர அமைப்புகள்
+
+00:14:42,000 --> 00:14:47,000
+now kinda as a preview of a point to be raise later on
+கிரகமாக இப்போது ஒரு புள்ளி ஒரு முன்னோட்ட பின்னர் உயர்த்த வேண்டும்
+
+00:14:47,000 --> 00:14:50,000
+I should modify that slightly with the statement
+நான் அறிக்கை சற்று என்று மாற்ற வேண்டும்
+
+00:14:50,000 --> 00:14:54,000
+that one very important plays in which
+என்று ஒரு மிக முக்கியமான வகிக்கிறது இதில்
+
+00:14:54,000 --> 00:14:59,000
+sinusoidal modulation in a discrete-time context the rises
+ஒரு தனி நேரம் சூழலில் sinusoidal பண்பேற்றம் உயர்வு
+
+00:14:59,000 --> 00:15:06,000
+is in a class of systems called trance multiplexers or trans modulation systems
+டிரான்ஸ் multiplexers அல்லது டிரான்ஸ் பண்பேற்றம் அமைப்புகள் என அழைக்கப்படுகின்றன அமைப்புகள் ஒரு வர்க்கம் இருக்கிறது
+
+00:15:06,000 --> 00:15:09,000
+and this surface is basically because
+இந்த மேற்பரப்பில் அடிப்படையில் ஏனெனில்
+
+00:15:09,000 --> 00:15:13,000
+so many communication systems are now
+பல தகவல் தொடர்பு அமைப்புகள் இப்போது இருக்கின்றன
+
+00:15:13,000 --> 00:15:17,000
+becoming digital and specifically discrete-time although the actual
+வருகிறது டிஜிட்டல் மற்றும் குறிப்பாக தனி நேர உண்மையான என்றாலும்
+
+00:15:17,000 --> 00:15:20,000
+transmission is continuous time
+ஒலிபரப்பு தொடர்ச்சியான நேரம் ஆகிறது
+
+00:15:20,000 --> 00:15:23,000
+the signal processing manipulation switching
+சமிக்ஞை செயலாக்க கையாளுதல் மாறுவதற்கு
+
+00:15:23,000 --> 00:15:27,000
+is discrete-time it so in fact it turns out
+இருக்கிறது அது உண்மையில் அதை திருப்பி தனி நேரம்
+
+00:15:27,000 --> 00:15:30,000
+to be very important and useful to take
+எடுக்க மிகவும் முக்கியமானது மற்றும் பயனுள்ளதாக இருக்கும்
+
+00:15:30,000 --> 00:15:34,000
+a discrete-time representation I love
+நான் நேசிக்கிறேன் ஒரு தனி நேரம் பிரதிநிதித்துவம்
+
+00:15:34,000 --> 00:15:37,000
+the analog signals a continuous-time signals
+அனலாக் ஒரு தொடர்ச்சியான நேர சிக்னல்களை அடையாளம்
+
+00:15:37,000 --> 00:15:41,000
+and in a discrete-time or digital representation
+மற்றும் ஒரு தனி நேரம் அல்லது டிஜிட்டல் பிரதிநிதித்துவம்
+
+00:15:41,000 --> 00:15:45,000
+convert them from one modulation scheme
+ஒரு பண்பேற்ற திட்டத்தில் இருந்து அவற்றை மாற்ற
+
+00:15:45,000 --> 00:15:48,000
+41 multiplexing scheme to another and
+41 பலபடிதாக்கம் மற்றொரு திட்டம்
+
+00:15:48,000 --> 00:15:52,000
+although I said a lot there that
+நான் நிறைய கூறினார் எனினும் அந்த
+
+00:15:52,000 --> 00:15:56,000
+really requires much more detail to
+உண்மையில் மிகவும் விரிவாக தேவைப்படுகிறது
+
+00:15:56,000 --> 00:16:00,000
+to develop in any in any sense at all
+எந்த உணர்வு எந்த உருவாக்க
+
+00:16:00,000 --> 00:16:04,000
+you should come to get the notion that that discrete-time
+நீங்கள் கருத்து பெற வர வேண்டும் என்று தனி நேரம்
+
+00:16:04,000 --> 00:16:07,000
+modulation systems become very important
+பண்பேற்றம் அமைப்புகள் மிகவும் முக்கியமான ஒன்றாக
+
+00:16:07,000 --> 00:16:13,000
+in part because or implementation Elis use
+பகுதியாக அல்லது செயல்படுத்த Elis பயன்படுத்துவது
+
+00:16:13,000 --> 00:16:16,000
+okay now there is another application
+சரி இப்போது மற்றொரு பயன்பாடு உள்ளது
+
+00:16:16,000 --> 00:16:20,000
+dead we have discussed for both continuous time actually previously for
+இறந்த நாம் உண்மையில் முன்னர் இரண்டு தொடர்ச்சியான நேரம் பற்றி
+
+00:16:20,000 --> 00:16:22,000
+discrete-time
+தனி நேரம்
+
+00:16:22,000 --> 00:16:27,000
+amplitude modulation with sinusoidal or complex exponential carriers
+sinusoidal அல்லது சிக்கலான அதிவேகமான நிறுவனங்களில் வீச்சு பண்பேற்றம்
+
+00:16:27,000 --> 00:16:33,000
+and let me just remind you that because in fact it becomes a very important one
+என்னை தான் உண்மையில் இது ஒரு மிக முக்கியமான ஒன்று ஆகிறது என்று ஞாபகப்படுத்த வேண்டும்
+
+00:16:33,000 --> 00:16:36,000
+in the case love discrete-time systems
+வழக்கில் தனி நேர அமைப்புகள் அன்பு
+
+00:16:36,000 --> 00:16:40,000
+and that is the notion love using
+என்று பயன்படுத்தி கருத்தை காதல்
+
+00:16:40,000 --> 00:16:44,000
+modulation together with fixed filtering
+பண்பேற்றம் ஒன்றாக நிலையான வடித்தல்
+
+00:16:44,000 --> 00:16:47,000
+to implement a filter which is
+இது ஒரு வடிகட்டி செயல்படுத்த
+
+00:16:47,000 --> 00:16:50,000
+which either has a variable cut off or
+இது ஒரு மாறி துண்டித்து அல்லது ஒன்று மட்டும்
+
+00:16:50,000 --> 00:16:54,000
+converts let's say a low-pass filter to a high pass filter
+தொடர்ந்து ஒரு உயர் பாஸ் வடிகட்டி ஒரு குறைந்த பாஸ் வடிகட்டி சொல்கிறேன்
+
+00:16:54,000 --> 00:16:59,000
+we originally talked about this when we introduce the modulation property
+நாம் பண்பேற்றம் சொத்து அறிமுகப்படுத்த போது நாம் முதலில் இந்த பேசினார்
+
+00:16:59,000 --> 00:17:03,000
+in the context of converting a low-pass filter
+ஒரு குறைந்த பாஸ் வடிகட்டி மாற்றும் சூழலில்
+
+00:17:03,000 --> 00:17:07,000
+to a high pass filter and the notion was
+ஒரு உயர் பாஸ் வடிகட்டி மற்றும் கருத்து இருந்தது
+
+00:17:07,000 --> 00:17:11,000
+that if we modulate the signal
+என்று நாம் சமிக்ஞை மேம்படுத்த என்றால்
+
+00:17:11,000 --> 00:17:15,000
+with a carrier which is -1 to the end and that's just simply complex
+இறுதியில் -1 என்று தான் வெறுமனே சிக்கலான ஒரு கேரியர்
+
+00:17:15,000 --> 00:17:17,000
+exponential
+அடுக்குக்குறிக்குரிய
+
+00:17:17,000 --> 00:17:22,000
+or sinusoidal carrier with a carrier frequency of pie
+அல்லது பை ஒரு கேரியர் அதிர்வெண் sinusoidal கேரியர்
+
+00:17:22,000 --> 00:17:28,000
+than that in effect interchanges the low frequencies in the high frequencies
+விளைவு என்று உயர் அதிர்வெண்கள் குறைந்த அதிர்வெண்கள் பரிமாற்றுகின்ற விட
+
+00:17:28,000 --> 00:17:31,000
+and if and after modulation
+மற்றும் என்றால் பிறகு பண்பேற்றம்
+
+00:17:31,000 --> 00:17:36,000
+that is processed with a low pass filter
+என்று ஒரு குறைந்த பாஸ் வடிகட்டி பதப்படுத்தப்பட்ட
+
+00:17:36,000 --> 00:17:40,000
+and then the result is d modulated
+பின்னர் இதன் விளைவாக ஈ மட்டுப்படுத்தப்படுகிறது
+
+00:17:40,000 --> 00:17:44,000
+using exactly the same carrier namely a carrier which is
+இது, அதாவது ஒரு கேரியர் அதே மிகச்சரியான கேரியர் பயன்படுத்தி
+
+00:17:44,000 --> 00:17:47,000
+-1 to the end
+-1 முடிவுக்கு
+
+00:17:47,000 --> 00:17:51,000
+then the effective that is equivalent
+பின்னர் அந்த பயனுள்ளதாக சமமான ஆகிறது
+
+00:17:51,000 --> 00:17:56,000
+to high-pass filtering on the original signal
+அசல் சமிக்ஞையின் உயர் பாஸ் வடிகட்டல்
+
+00:17:56,000 --> 00:17:59,000
+and a generalization a bad would involve instead a
+மற்றும் ஒரு மோசமான ஒரு பொதுமைப்படுத்தப்பட்ட பதிலாக சம்பந்தப்பட்டிருக்கலாம் என
+
+00:17:59,000 --> 00:18:03,000
+this specific choice if -1 to the end
+இந்த குறிப்பிட்ட தேர்வு என்றால் இறுதியில் -1
+
+00:18:03,000 --> 00:18:08,000
+would involve a choice in general or the e to the J Omega sed CNN
+ஜே ஒமேகா sed சிஎன்என் பொதுவாக ஒரு தேர்வு அல்லது மின்னஞ்சல் சம்பந்தப்பட்டிருக்கலாம்
+
+00:18:08,000 --> 00:18:11,000
+that is a more general carrier frequency and
+என்று ஒரு பொதுவான கேரியர் அதிர்வெண் மற்றும்
+
+00:18:11,000 --> 00:18:14,000
+d modulator which is either the minus J
+கழித்தல் ஜே ஒன்று இது ஈ பண்பேற்றியில்
+
+00:18:14,000 --> 00:18:18,000
+Omega subsea and and as i've represented here
+ஒமேகா Subsea மற்றும் நான் இங்கே குறிப்பிடப்படுகின்றன போல
+
+00:18:18,000 --> 00:18:23,000
+and as we had talked about it when we talked about the modulation property for
+மற்றும் நாம் பண்பேற்றம் சொத்து பற்றி பேசிய போது, அதை நாம் பேசிக்கொண்டிருந்ததைப்போல்
+
+00:18:23,000 --> 00:18:25,000
+discrete-time signals
+தனி நேர சிக்னல்களை
+
+00:18:25,000 --> 00:18:28,000
+we had specifically chosen the conversion of a low pass to a high pass
+நாங்கள் குறிப்பாக உயர் கடந்து ஒரு குறைந்த பாஸ் மாற்ற தேர்வு
+
+00:18:28,000 --> 00:18:30,000
+filter
+வடிகட்டி
+
+00:18:30,000 --> 00:18:34,000
+well let me continue the review of that
+எனக்கு அந்த விமர்சனம் தொடர அனுமதிக்க
+
+00:18:34,000 --> 00:18:38,000
+just by reminding you of the details of what happens with the spectra
+வெறும் நிறமாலை என்ன நடக்கும் விவரங்கள் நினைவில்கொள்ளவேண்டும்
+
+00:18:38,000 --> 00:18:41,000
+and specifically the notion
+குறிப்பாக கருத்து
+
+00:18:41,000 --> 00:18:46,000
+if we take this particular case omega-6 equal
+நாம் ஒமேகா 6 சம இந்த குறிப்பிட்ட வழக்கில் எடுக்கிறோம் என்றால்
+
+00:18:46,000 --> 00:18:51,000
+to pie or covertly a carrier signal which is -1 to the end
+பை அல்லது இது -1 முடிவுக்கு இரகசியமாக ஒரு கேரியர் சிக்னல்
+
+00:18:51,000 --> 00:18:57,000
+then if we have the original spectra
+நாம் உண்மையான நிறமாலை இருந்தால்
+
+00:18:57,000 --> 00:19:00,000
+and the specter all
+மற்றும் ஒழிப்பதற்கு அனைத்து
+
+00:19:00,000 --> 00:19:05,000
+specter of the carrier signal the spectrum of the carrier signal
+கேரியர் ஒழிப்பதற்கு கேரியர் சிக்னல் ஸ்பெக்ட்ரம் சிக்னல்
+
+00:19:05,000 --> 00:19:08,000
+convolved with this spectrum
+இந்த ஸ்பெக்ட்ரம் convolved
+
+00:19:08,000 --> 00:19:12,000
+will then in effect shift this by
+பின்னர் விளைவு இந்த போய்விடும்
+
+00:19:12,000 --> 00:19:15,000
+pie and so after
+பை மற்றும் பிறகு
+
+00:19:15,000 --> 00:19:18,000
+modulating the result that we have is
+நாம் வேண்டும் என்று முடிவு பண்படுத்தும்
+
+00:19:18,000 --> 00:19:23,000
+shifted that spectrum so that what happened at low frequencies now happens
+என்ன குறைந்த அதிர்வெண்கள் நடந்தது இப்போது நடக்கும் என்று ஸ்பெக்ட்ரம் மாற்றப்பட்டிருந்தது
+
+00:19:23,000 --> 00:19:26,000
+at high frequencies namely around pie
+அதாவது பை சுற்றி உயர் அலைவரிசைகளில்
+
+00:19:26,000 --> 00:19:31,000
+and what happens at what happened at high frequencies now happens
+மற்றும் தற்போது என்ன நடக்கிறது உயர் அலைவரிசைகளில் என்ன நடந்தது நடக்கிறது
+
+00:19:31,000 --> 00:19:36,000
+at low frequencies well if thats process now
+குறைந்த அதிர்வெண்கள் நன்கு என்றால் இப்போது ஸ்டைல் ​​செயல்முறை
+
+00:19:36,000 --> 00:19:41,000
+with a low pass filter and this dashed line indicates the low-pass filter
+ஒரு குறைந்த பாஸ் வடிகட்டி மற்றும் இந்த கோடிட்ட வரி குறைந்த பாஸ் வடிகட்டி குறிக்கிறது
+
+00:19:41,000 --> 00:19:45,000
+then the result that we get is shown here
+நாம் இங்கு இதன் விளைவாக இங்கு காட்டப்பட்டுள்ளது
+
+00:19:45,000 --> 00:19:50,000
+where we've extracted the low-frequency portion of the modulated signal
+நாம் பண்படுத்தப்பட்ட சமிக்ஞையின் குறைந்த அதிர்வெண் பகுதியை பிரித்தெடுக்கப்படும் அங்கு
+
+00:19:50,000 --> 00:19:55,000
+and now when we modulate or D modulate back
+இப்போது நாம் மேம்படுத்த போது அல்லது டி மீண்டும் ஒழுங்குபடுத்தும்
+
+00:19:55,000 --> 00:20:00,000
+then this spectrum is shifted back to where it belongs
+இந்த ஸ்பெக்ட்ரம் அது எங்கிருந்து மீண்டும் மாற்றப்படும்
+
+00:20:00,000 --> 00:20:05,000
+namely its shifted back to be centered around
+அதாவது அதன் மையமாக மீண்டும் மாற்றம்
+
+00:20:05,000 --> 00:20:08,000
+minus pie and around plus Park
+பை மற்றும் சுற்றி பிளஸ் பார்க் கழித்து
+
+00:20:08,000 --> 00:20:12,000
+so if we just compare this spectrum
+எனவே தான், இந்த ஸ்பெக்ட்ரம் ஒப்பிட்டு
+
+00:20:12,000 --> 00:20:16,000
+with the original spectrum at the top
+மேலே அசல் ஸ்பெக்ட்ரம்
+
+00:20:16,000 --> 00:20:19,000
+what we can see is that in effect what we've done
+நாம் என்ன பார்க்க முடியும் விளைவு என்ன, நாம் செய்த அந்த ஆகிறது
+
+00:20:19,000 --> 00:20:23,000
+is to extract a portion of the spectrum
+ஸ்பெக்ட்ரம் ஒரு பகுதியை பெறுவதற்கு ஆகிறது
+
+00:20:23,000 --> 00:20:28,000
+acquittal and the processing with a high pass filter
+ஒரு உயர் பாஸ் வடிகட்டி விடுவிக்க மற்றும் செயலாக்க
+
+00:20:28,000 --> 00:20:33,000
+and again this is very similar to what we did in continuous-time
+மீண்டும் இந்த தொடர்ச்சியான நேரத்தில் என்ன மிகவும் ஒத்த
+
+00:20:33,000 --> 00:20:37,000
+and all of the kinda analytical processes and
+மற்றும் கிரகமாக பகுப்பாய்வு அனைத்து பணிகளையும் மற்றும்
+
+00:20:37,000 --> 00:20:41,000
+and convolutions involved are very much the same
+தொடர்பு மடிப்புக்கள் மிகவும் அதே இருக்கின்றன
+
+00:20:41,000 --> 00:20:44,000
+really the biggest difference between continuous-time and discrete-time
+தொடர்ச்சியான நேர மற்றும் தனித்தியங்கும் நேர இடையே உண்மையில் மிக பெரிய வேறுபாடு
+
+00:20:44,000 --> 00:20:48,000
+has to do not so much with the details of the analysis but
+எனவே பகுப்பாய்வு விவரங்கள் மிகவும் ஆனால் செய்ய வேண்டும்
+
+00:20:48,000 --> 00:20:52,000
+perhaps has more to do with issues
+ஒருவேளை பிரச்சினைகள் செய்ய இன்னும் உள்ளது
+
+00:20:52,000 --> 00:20:59,000
+love are practical applications
+அன்பு நடைமுறை பயன்பாடுகள் இருக்கின்றன
+
+00:20:59,000 --> 00:21:02,000
+okay well so what we've done
+சரி, சரி, அதனால் என்ன, நாம் செய்த
+
+00:21:02,000 --> 00:21:06,000
+so far for continuous-time and discrete-time
+தொடர்ச்சியான நேர மற்றும் தனித்தியங்கும் நேர இதுவரை
+
+00:21:06,000 --> 00:21:11,000
+is to talk about modulation amplitude modulation
+பண்பேற்றம் வீச்சு பண்பேற்றம் பற்றி பேச வேண்டும்
+
+00:21:11,000 --> 00:21:15,000
+with complex exponential and sinus or carriers
+சிக்கலான அதிவேகமான மற்றும் சைனஸ் அல்லது கேரியர்கள்
+
+00:21:15,000 --> 00:21:18,000
+we saw that the analysis is very similar although
+நாம் பகுப்பாய்வு எனினும் மிகவும் ஒத்த பார்த்தேன்
+
+00:21:18,000 --> 00:21:23,000
+applications are slightly different and now what I'd like to turn to
+பயன்பாடுகள் நான் திரும்ப விரும்புகிறேன் என்ன இப்போது சற்று வித்தியாசமாக உள்ளன
+
+00:21:23,000 --> 00:21:26,000
+is a different choice love
+ஒரு வித்தியாசமான தேர்வு காதல்
+
+00:21:26,000 --> 00:21:30,000
+carrier signal and the carrier signal in this particular case
+கேரியர் சிக்னல் மற்றும் இந்த குறிப்பிட்ட வழக்கில் கப்பல் சமிக்ஞை
+
+00:21:30,000 --> 00:21:33,000
+is a post rain rather than
+ஒரு பதவியை மழை விட ஆகிறது
+
+00:21:33,000 --> 00:21:37,000
+a sinusoidal signal now
+ஒரு சைன் வளைவு சமிக்ஞை இப்போது
+
+00:21:37,000 --> 00:21:42,000
+the idea is the following
+கருத்தை தொடர்ந்து ஆகிறது
+
+00:21:42,000 --> 00:21:45,000
+in general of course the modulator
+பண்பேற்றியில் நிச்சயமாக பொதுவாக
+
+00:21:45,000 --> 00:21:49,000
+it consists all multiplying x50
+அது அனைத்து பெருக்குவதன் x50 கொண்டிருக்கிறது
+
+00:21:49,000 --> 00:21:53,000
+by whatever the carrier signal is and
+கேரியர் சிக்னல் மற்றும் என்ன முடிவு
+
+00:21:53,000 --> 00:21:57,000
+previously we've talked about a carrier signal which is sinusoidal
+முன்பு நாம் sinusoidal இது ஒரு கப்பல் சமிக்ஞை பற்றி பேசிவிட்டேன்
+
+00:21:57,000 --> 00:22:00,000
+the carrier signal that we want to consider now
+நாம் இப்போது கருத்தில் கொள்ள வேண்டும் என்று கப்பல் சமிக்ஞை
+
+00:22:00,000 --> 00:22:03,000
+is a carrier signal which in fact is
+உண்மையில் இது ஒரு கப்பல் சமிக்ஞை ஆகிறது
+
+00:22:03,000 --> 00:22:07,000
+a pulse train and so in fact
+ஒரு துடிப்பு ரயில் மற்றும் உண்மையில்
+
+00:22:07,000 --> 00:22:11,000
+what we want to do is multiply the input signal
+நாம் என்ன செய்ய வேண்டும் உள்ளீட்டு சமிக்ஞையை பெருக்கி ஆகிறது
+
+00:22:11,000 --> 00:22:16,000
+by a Paul strain and in effect then
+ஒரு பால் அழுத்தம் மற்றும் விளைவு பின்னர்
+
+00:22:16,000 --> 00:22:19,000
+the modulated signal consists
+பண்படுத்தப்பட்ட சமிக்ஞையை கொண்டிருக்கிறது
+
+00:22:19,000 --> 00:22:24,000
+of the original signal simply with time slices pulled out a bit as i've
+நான் அசல் சமிக்ஞையின் வெறுமனே நேரம் துண்டுகள் ஒரு பிட் வெளியே இழுத்து
+
+00:22:24,000 --> 00:22:26,000
+indicated in the bottom Kurt
+கீழே கர்ட் சுட்டிக்காட்டப்படுகிறது
+
+00:22:26,000 --> 00:22:29,000
+so what we have now
+அதனால் என்ன நாம் இப்போது
+
+00:22:29,000 --> 00:22:32,000
+is a modulated signal
+ஒரு பண்படுத்தப்பட்ட சமிக்ஞையை ஆகிறது
+
+00:22:32,000 --> 00:22:36,000
+that is a chopped or sliced version
+என்று ஒரு பருப்பு அல்லது வெட்டப்பட்டது பதிப்பு
+
+00:22:36,000 --> 00:22:40,000
+love the original waveform and
+அசல் அலைவடிவம் மற்றும் அன்பு
+
+00:22:40,000 --> 00:22:46,000
+think that is what's referred to as pulse amplitude modulation
+என்று துடிப்பு வீச்சு பண்பேற்றம் என குறிப்பிடப்படுகிறது என்ன இருக்கிறது என்று
+
+00:22:46,000 --> 00:22:50,000
+now it seems like it's kinda crazy idea any ideas
+அது கிரகமாக பைத்தியம் யோசனை எந்த கருத்துக்கள் போல் இப்போது தெரிகிறது
+
+00:22:50,000 --> 00:22:54,000
+search opt-out slices away form and
+தேடல் விலக்குதல் துண்டுகள் விட்டு வடிவம் மற்றும்
+
+00:22:54,000 --> 00:22:57,000
+the hope that you can kinda put things back together again
+நீங்கள் கிரகமாக மீண்டும் மீண்டும் ஒன்றாக விஷயங்களை வைத்து முடியும் என்று நம்பிக்கை
+
+00:22:57,000 --> 00:23:02,000
+and the amazing thing about it is we'll see is that in fact
+அது பற்றி நல்ல விஷயம் நாம் பார்க்க வேண்டும் என்று உண்மையில்
+
+00:23:02,000 --> 00:23:06,000
+under fairly broad general and applicability
+மிகவும் பரந்த கீழ் பொது மற்றும் பயன்பாடு
+
+00:23:06,000 --> 00:23:11,000
+conditions you really can put the way for back together again
+நிலைமைகள் உண்மையில் நீங்கள் மீண்டும் மீண்டும் ஒன்றாக வழி வைக்க முடியாது
+
+00:23:11,000 --> 00:23:14,000
+if you just have these times places
+நீங்கள் தான் இந்த முறை இடங்களில் இருந்தால்
+
+00:23:14,000 --> 00:23:18,000
+not only that but that basic notion
+மட்டும் என்று ஆனால் அந்த அடிப்படை கருத்து
+
+00:23:18,000 --> 00:23:21,000
+as we'll see is independent in fact
+நாம் பார்க்க வேண்டும் என உண்மையில் சுதந்திரமான ஆகிறது
+
+00:23:21,000 --> 00:23:25,000
+up with the with the those time slices or effect the with can go to zero
+அந்த நேரம் துண்டுகள் அல்லது விளைவு வரை பூஜ்யம் செல்ல முடியும்
+
+00:23:25,000 --> 00:23:30,000
+and in fact we're going to make the with go to zero and really only dependent
+மற்றும் உண்மையில் நாம் பூஜ்யம் செல்ல மற்றும் உண்மையில் மட்டுமே சார்ந்து செய்ய போகிறோம்
+
+00:23:30,000 --> 00:23:35,000
+on what the frequency love the polls trainers
+அதிர்வெண் கணிப்பீடுகள் பயிற்சியாளர்கள் அன்பு என்ன
+
+00:23:35,000 --> 00:23:38,000
+so let's explore that in some detail
+எனவே சில விவரம் என்று ஆராய்ந்து பார்ப்போம்
+
+00:23:38,000 --> 00:23:44,000
+and what we want to look at is the analysis but let me
+மற்றும் நாம் பார்க்க வேண்டும் பகுப்பாய்வு ஆனால் என்னை
+
+00:23:44,000 --> 00:23:48,000
+let me first just comment very briefly there
+எனக்கு முதல் தான் மிகவும் சுருக்கமாக அங்கு கருத்து நாம்
+
+00:23:48,000 --> 00:23:52,000
+all the analysis we go through as has been true in the case a sinusoidal
+ஒரு சைன் வளைவு வழக்கில் உண்மை உள்ளது என நாம் செல்ல எல்லா பகுப்பாய்வு
+
+00:23:52,000 --> 00:23:56,000
+modulation all the analysis that we go through
+பண்பேற்றம் நாம் செல்ல வேண்டும் என்று அனைத்து பகுப்பாய்வு
+
+00:23:56,000 --> 00:23:59,000
+holes just as well with
+அதே ஓட்டைகள்
+
+00:23:59,000 --> 00:24:03,000
+especially minor analytical modifications to
+குறிப்பாக சிறிய பகுப்பாய்வு மாற்றங்கள்
+
+00:24:03,000 --> 00:24:07,000
+discrete-time pulse amplitude modulation as it does to
+தனி நேரம் துடிப்பு வீச்சு பண்பேற்றம் அது போலவே
+
+00:24:07,000 --> 00:24:10,000
+continuous-time pulse amplitude modulation
+தொடர்ச்சியான நேர துடிப்பு வீச்சு பண்பேற்றம்
+
+00:24:10,000 --> 00:24:13,000
+and so will really only go through this
+அதனால் உண்மையில் மட்டுமே இந்த வழியாக செல்ல வேண்டும்
+
+00:24:13,000 --> 00:24:17,000
+in terms of tracking the way for inspector for the continuous-time
+தொடர்ச்சியான நேரம் இன்ஸ்பெக்டர் வழி கண்காணிப்பு அடிப்படையில்
+
+00:24:17,000 --> 00:24:21,000
+case but bear in mind that the results are basically similar
+முடிவுகள் அடிப்படையில் ஒத்த மனதில் வழக்கு ஆனால் கரடி
+
+00:24:21,000 --> 00:24:27,000
+for discrete-time okay well
+தனி நேரம் சரியா நன்கு
+
+00:24:27,000 --> 00:24:30,000
+let's see how we get the basic result
+நாம் அடிப்படை விளைவாக பெற எப்படி பார்க்க
+
+00:24:30,000 --> 00:24:33,000
+that we want to get
+நாம் பெற வேண்டும் என்று
+
+00:24:33,000 --> 00:24:36,000
+what we have is a
+என்ன நாம் ஒரு
+
+00:24:36,000 --> 00:24:40,000
+modulating signal which is a pulse train basically a square wave
+அடிப்படையில் ஒரு சதுர அலை துடிப்பு ரயில் இது சமிக்ஞை பண்படுத்தும்
+
+00:24:40,000 --> 00:24:45,000
+and as we've seen in previous lectures the spectra
+நாம் முந்தைய விரிவுரைகள் நிறமாலை பார்த்தேனே
+
+00:24:45,000 --> 00:24:50,000
+or Fourier transform associated with that is an impulse train
+அல்லது ஃபோரியர் என்று தொடர்புடைய மாற்றும் ஒரு உந்துவிசை ரயில் ஆகிறது
+
+00:24:50,000 --> 00:24:53,000
+and the envelope that impulse train
+மற்றும் உறை என்று உந்துவிசை ரயில்
+
+00:24:53,000 --> 00:24:57,000
+is over for over sin x over X function
+எக்ஸ் செயல்பாடு மீது sin x மீது மேல் ஆகிறது
+
+00:24:57,000 --> 00:25:02,000
+the four th transform is impulses and the spacing of the impulses
+மாற்றும் நான்கு வது தூண்டுதல் மற்றும் தூண்டுதலின் இடைவெளி உள்ளது
+
+00:25:02,000 --> 00:25:07,000
+is Associated with the fundamental frequency
+அடிப்படை அதிர்வெண் தொடர்புடையதாக உள்ளது
+
+00:25:07,000 --> 00:25:12,000
+all the Paul strain and thats Omega Sappi so make it appears to pride
+பால் திரிபு மற்றும் ஸ்டைல் ​​ஒமேகா Sappi அனைத்து அது பெருமை தோன்றுகிறது செய்ய
+
+00:25:12,000 --> 00:25:13,000
+divided by the period
+காலம் வகுக்க
+
+00:25:13,000 --> 00:25:17,000
+the pulse train and at the
+துடிப்பு மற்றும்
+
+00:25:17,000 --> 00:25:21,000
+amplitude and shape but this envelope is dictated
+வீச்சு மற்றும் வடிவத்தை ஆனால் இந்த உறை ஆணையில்
+
+00:25:21,000 --> 00:25:24,000
+by that parameter Delta
+என்று அளவுரு டெல்டா மூலம்
+
+00:25:24,000 --> 00:25:28,000
+which has to do with how wide the pulses are
+பருப்பு வகைகள் எப்படி பரந்த செய்ய வேண்டும் இது
+
+00:25:28,000 --> 00:25:32,000
+okay so we have a time function
+சரி, நாம் ஒரு முறை செயல்பாடு
+
+00:25:32,000 --> 00:25:36,000
+it's multiplied by this post rain now we're talking continuous-time
+அது இப்போது நாம் தொடர்ந்து நேர பேசுகிறீர்கள் இந்த மழை பெருக்கி
+
+00:25:36,000 --> 00:25:39,000
+so in the frequency domain
+எனவே அதிர்வெண் களத்தில்
+
+00:25:39,000 --> 00:25:44,000
+we have the Fourier transform the time function convolved with
+நாம் ஃபோரியர் கொண்டு convolved நேரம் செயல்பாடு மாற்றும் வேண்டும்
+
+00:25:44,000 --> 00:25:48,000
+this Fourier transform for the pulse train and let's see what that looks like
+இந்த ஃபோரியர் துடிப்பு ரயில் மாற்றும் மற்றும் என்று தெரிகிறது என்ன என்று பார்ப்போம்
+
+00:25:48,000 --> 00:25:51,000
+if we were to consider let's say
+நாம் என்று நாம் நினைத்தால் அது
+
+00:25:51,000 --> 00:25:56,000
+a Fourier transform which I A kinda chosen is more or less a general one
+ஃபோரியர் கிரகமாக தேர்வு IA அதிகமாகவோ அல்லது குறைவாகவோ ஒரு பொது ஒன்றாகும் இது மாற்றும்
+
+00:25:56,000 --> 00:26:00,000
+then in fact when we can follow this
+பின்னர் உண்மையில் நாம் இந்த பின்பற்ற முடியும் போது
+
+00:26:00,000 --> 00:26:04,000
+with this simple strain what we end up with
+நாம் முடிவடையும் என்ன இந்த எளிய திரிபு
+
+00:26:04,000 --> 00:26:08,000
+is a replication all
+ஒரு போலிகளை அனைத்து ஆகிறது
+
+00:26:08,000 --> 00:26:11,000
+this spectrum at
+இந்த நிறமாலை,
+
+00:26:11,000 --> 00:26:15,000
+the places in the frequency domain
+அதிர்வெண் களத்தில் இடங்களில்
+
+00:26:15,000 --> 00:26:19,000
+where the individual impulses occurred
+அங்கு தனிப்பட்ட தூண்டுதலின் ஏற்பட்டது
+
+00:26:19,000 --> 00:26:23,000
+so we can see that this spectrum is replicated at each's
+எனவே நாம் இந்த ஸ்பெக்ட்ரம் ஒவ்வொரு மணிக்கு எதிரொலிக்கும் என்று பார்க்க முடியும்
+
+00:26:23,000 --> 00:26:27,000
+these locations and as long as
+இந்த இடங்கள் மற்றும் நீண்ட
+
+00:26:27,000 --> 00:26:30,000
+the frequency
+அதிர்வெண்
+
+00:26:30,000 --> 00:26:34,000
+above the post-training is large enough compared
+பிந்தைய பயிற்சி ஒப்பிடுகையில் அதிக அளவு மேலே
+
+00:26:34,000 --> 00:26:38,000
+with a maximum frequency in the
+ஒரு அதிகபட்ச அதிர்வெண்
+
+00:26:38,000 --> 00:26:44,000
+original single X if T so that there is no overlap between these triangles
+அசல் ஒற்றை எக்ஸ் இந்த முக்கோணங்கள் இடையே எந்த ஒன்றுடன் ஒன்று உள்ளது என்று டி என்றால்
+
+00:26:44,000 --> 00:26:48,000
+then what you can see in fact somewhat amazingly
+நீங்கள் சற்றே அதிசயமாக உண்மையில் பார்க்க முடியும் என்ன
+
+00:26:48,000 --> 00:26:53,000
+is dead simply by low-pass filtering the result
+வெறுமனே குறைந்த தேர்ச்சி வடிகட்டி மூலம் இறந்த ஆகிறது
+
+00:26:53,000 --> 00:26:57,000
+we can get back except for an amplitude factor
+நாம் ஒரு வீச்சு காரணி தவிர திரும்ப பெற முடியும்
+
+00:26:57,000 --> 00:27:00,000
+we can give get back to the original signal
+நாம் உண்மையான சமிக்ஞை மீண்டும் பெற கொடுக்க முடியும்
+
+00:27:00,000 --> 00:27:04,000
+now it's amazing it really is amazing
+இப்போது அது உண்மையில் ஆச்சரியமாக இருக்கிறது ஆச்சரியமாக இருக்கிறது
+
+00:27:04,000 --> 00:27:07,000
+dead all that this depends on
+இறந்த இந்த பொறுத்தது
+
+00:27:07,000 --> 00:27:11,000
+is the original signal being banned limited
+அசல் சமிக்ஞையை வரையறுக்கப்பட்ட தடை
+
+00:27:11,000 --> 00:27:15,000
+and the frequency the post-training be high enough
+மற்றும் அதிர்வெண் பிந்தைய பயிற்சி போதுமானதாக
+
+00:27:15,000 --> 00:27:19,000
+so that when you replicate the spectrum in the frequency domain
+என்று நீங்கள் அதிர்வெண் களத்தில் ஸ்பெக்ட்ரம் பெருக்கும் போது
+
+00:27:19,000 --> 00:27:23,000
+is no overlap between these individual replications and will
+இந்த தனிப்பட்ட விடைகள் மற்றும் விருப்பத்திற்கும் இடையே எந்த தூதரகம்
+
+00:27:23,000 --> 00:27:26,000
+have a dress that a little more in a few minutes
+என்று இன்னும் கொஞ்சம் ஒரு சில நிமிடங்களில் ஒரு ஆடை
+
+00:27:26,000 --> 00:27:29,000
+but let me first the ball point out that
+ஆனால் எனக்கு முதல் பந்தை சுட்டிக்காட்ட விரும்புகிறேன் என்று
+
+00:27:29,000 --> 00:27:33,000
+this has a whole variety a very important implications
+இந்த ஒரு முழு பல்வேறு ஒரு மிக முக்கியமான தாக்கங்கள்
+
+00:27:33,000 --> 00:27:36,000
+one is in the context of communications
+ஒரு தகவல் சூழலில் இருக்கிறது
+
+00:27:36,000 --> 00:27:39,000
+it leads to another very important
+அது மற்றொரு மிக முக்கியமான வழிவகுக்கிறது
+
+00:27:39,000 --> 00:27:44,000
+multiplexing scheme for communications we talked last time about
+நாம் கடந்த முறை பேசினார் தகவல் சத்துள்ள திட்டம்
+
+00:27:44,000 --> 00:27:48,000
+frequency division multiplexing where individual signals were put into
+தனிப்பட்ட சிக்னல்களை வைத்து அங்கு அதிர்வெண் மல்டிபிளக்ஸிங்
+
+00:27:48,000 --> 00:27:51,000
+individual frequency slots
+தனிப்பட்ட அதிர்வெண் இடங்கள்
+
+00:27:51,000 --> 00:27:55,000
+by choosing different carrier frequencies for sinusoidal modulated
+sinusoidal பண்படுத்தப்பட்ட வெவ்வேறு கேரியர் அலைவரிசைகளை தேர்ந்தெடுப்பதன் மூலம்
+
+00:27:55,000 --> 00:27:56,000
+signal
+சமிக்ஞை
+
+00:27:56,000 --> 00:28:00,000
+what this suggests is that what we can do
+என்ன இந்த தெரிவிக்கிறது நாம் என்ன செய்ய முடியும் என்று
+
+00:28:00,000 --> 00:28:03,000
+is put the
+வைத்து
+
+00:28:03,000 --> 00:28:07,000
+sons put different signals into
+மகன்கள் மாறுபட்ட சமிக்ஞைகள் வைக்கின்றன
+
+00:28:07,000 --> 00:28:10,000
+non-overlapping time slots
+அல்லாத ஒன்றுடன் ஒன்று நேரம் இடங்கள்
+
+00:28:10,000 --> 00:28:14,000
+and in fact be able to recover the original signals back again
+மற்றும் உண்மையில் மீண்டும் அசல் சமிக்ஞைகளை மீண்டும் மீட்க முடியும்
+
+00:28:14,000 --> 00:28:18,000
+so in particular suppose that
+அதனால் குறிப்பாக நினைக்கிறேன் என்று
+
+00:28:18,000 --> 00:28:22,000
+I had a signal which I modulated with a pulse train
+நான் ஒரு துடிப்பு பண்பேற்றம் ஒரு சமிக்ஞை செய்தார்
+
+00:28:22,000 --> 00:28:27,000
+and I i chose another signal modulated with another poll strain
+மற்றும் நான் மற்றொரு தேர்தல் திரிபு பண்படுத்தப்பட்ட மற்றொரு சமிக்ஞை தேர்வு
+
+00:28:27,000 --> 00:28:32,000
+where the time slot was different and I continue this process
+நேரம் ஸ்லாட் வித்தியாசமாக இருந்தது, நான் இந்த செயல்முறை தொடர்ந்து அங்கு
+
+00:28:32,000 --> 00:28:37,000
+and after the after i'd done this with some number of channels
+பின்னர் நான் சேனல்கள் சில பல இதை விரும்புகிறேன் பிறகு
+
+00:28:37,000 --> 00:28:41,000
+simply and it all those together
+வெறுமனே அது அந்த ஒன்றாக
+
+00:28:41,000 --> 00:28:47,000
+as i indicate here then as long as I knew what time slots to associate with
+நான் நீண்ட நான் என்ன நேரம் இடங்கள் உடன் தெரியும் என இங்கே குறிப்பிட
+
+00:28:47,000 --> 00:28:48,000
+what signal
+என்ன சமிக்ஞை
+
+00:28:48,000 --> 00:28:51,000
+I could get the original a
+நான் அசல் ஒரு பெற முடியும்
+
+00:28:51,000 --> 00:28:54,000
+modulated signals back again
+பண்படுத்தப்பட்ட மீண்டும் அடையாளம்
+
+00:28:54,000 --> 00:28:57,000
+and then as long as the frequency 0
+பின்னர் நீண்ட அதிர்வெண் 0
+
+00:28:57,000 --> 00:29:01,000
+the impulse train was such that
+உந்துவிசை ரயில் போன்ற என்று இருந்தது
+
+00:29:01,000 --> 00:29:04,000
+I was able to do this reconstruction
+நான் இந்த புனரமைப்பு செய்ய முடிந்தது
+
+00:29:04,000 --> 00:29:07,000
+by simply low-pass filtering then
+வெறுமனே குறைந்த பாஸ் வடிகட்டி பின்னர்
+
+00:29:07,000 --> 00:29:12,000
+I would be able to be my Julie so it's a very different very important modulation
+நான் அதை ஒரு வித்தியாசமான மிகவும் முக்கியமானது பண்பேற்றம் என் ஜூலி இருக்க முடியும்
+
+00:29:12,000 --> 00:29:14,000
+scheme call time division
+இத்திட்டத்தின் அழைப்பு நேரம் பிரிவு
+
+00:29:14,000 --> 00:29:19,000
+multiplexing in contrast to frequency division multiplexing as we talked about
+சத்துள்ள அதிர்வெண் மல்டிபிளக்ஸிங் மாறாக நாம் பற்றி பேசினார்
+
+00:29:19,000 --> 00:29:20,000
+last time
+கடந்த முறை
+
+00:29:20,000 --> 00:29:25,000
+I made reference earlier the concept of Trance multiplexing and in fact
+நான் குறிப்பு முந்தைய டிரான்ஸ் மல்டிபிளக்ஸிங்கை கருத்து மற்றும் உண்மையில்
+
+00:29:25,000 --> 00:29:29,000
+what happens in many communication systems
+என்ன பல தொடர்பு அமைப்புகளில் நடக்கிறது
+
+00:29:29,000 --> 00:29:33,000
+is dead the signals are represented in fact
+சிக்னல்களை உண்மையில் இறந்து குறிப்பிடப்படுகின்றன
+
+00:29:33,000 --> 00:29:37,000
+in discrete-time the analog continues time signals are represented in
+தனி நேரம் அனலாக் நேர சிக்னல்களை பிரதிநிதித்துவம் தொடர்கிறது
+
+00:29:37,000 --> 00:29:38,000
+discrete-time
+தனி நேரம்
+
+00:29:38,000 --> 00:29:41,000
+and very often the conversion from
+மற்றும் மிக பெரும்பாலும் இருந்து மாற்ற
+
+00:29:41,000 --> 00:29:45,000
+frequency division multiplexing to time division multiplexing and back
+அதிர்வெண் மல்டிபிளக்ஸிங் நேரம் மல்டிபிளக்ஸிங் திரும்ப
+
+00:29:45,000 --> 00:29:50,000
+is done in fact in the discrete-time to me
+எனக்கு தனி நேரம் உண்மையில் செய்யப்படுகிறது
+
+00:29:50,000 --> 00:29:54,000
+okay so what we have then
+சரி, அதனால் என்ன நாம் பின்னர்
+
+00:29:54,000 --> 00:29:57,000
+is the notion
+கருத்து
+
+00:29:57,000 --> 00:30:01,000
+dead we can
+நாம் இறந்த
+
+00:30:01,000 --> 00:30:06,000
+multiply a time function
+ஒரு நேரம் செயல்பாடு பெருக்கி
+
+00:30:06,000 --> 00:30:10,000
+by a poll strain as i indicated here
+ஒரு கருத்து கணிப்பு கஷ்டத்தை நான் இங்கே குறிப்பிட்டது போல்
+
+00:30:10,000 --> 00:30:15,000
+and from the output I can
+மற்றும் நான் வெளியீடு
+
+00:30:15,000 --> 00:30:19,000
+if the frequency this post rain is high enough in relation to this band with
+அதிர்வெண் இந்த மழை இந்த இசைக்குழு தொடர்பாக போதுமான அளவு அதிகமாக இருந்தால்
+
+00:30:19,000 --> 00:30:22,000
+from the output which consists of both
+ஆகிய இரண்டையும் கொண்டுள்ளது வெளியீடு
+
+00:30:22,000 --> 00:30:26,000
+time slices from those times places
+அந்த முறை இடங்களில் இருந்து நேரம் துண்டுகள்
+
+00:30:26,000 --> 00:30:31,000
+I can recover the original signal
+நான் அசல் சமிக்ஞையை மீட்க முடியும்
+
+00:30:31,000 --> 00:30:34,000
+stressing again the reason it relates
+மீண்டும் தொடர்புடையது காரணம் வலியுறுத்தி
+
+00:30:34,000 --> 00:30:37,000
+to the spectra and
+நிறமாலை மற்றும்
+
+00:30:37,000 --> 00:30:41,000
+the reason is dead the original spectra
+காரணம் இறந்த அசல் நிறமாலை ஆகிறது
+
+00:30:41,000 --> 00:30:44,000
+is simply replicated at
+வெறுமனே எதிரொலிக்கும்
+
+00:30:44,000 --> 00:30:47,000
+multiples all the fundamental frequency
+மடங்குகள் அனைத்து அடிப்படை அதிர்வெண்
+
+00:30:47,000 --> 00:30:51,000
+upholstery
+அமை
+
+00:30:51,000 --> 00:30:55,000
+now is a very important thing to observe here
+இப்போது இங்கே அவதானிக்க ஒரு மிக முக்கியமான விஷயம் இருக்கிறது
+
+00:30:55,000 --> 00:31:00,000
+which is dead the ability to do the reconstruction
+புனரமைப்பு செய்ய இறந்த திறனை இது
+
+00:31:00,000 --> 00:31:04,000
+is associated with the notion of whether we can extract that
+நாம் பிரித்தெடுக்க முடியும் என்பதை கருத்து தொடர்புடையதாக உள்ளது
+
+00:31:04,000 --> 00:31:07,000
+kinda central triangle light happened choose a triangular shape but
+கிரகமாக மத்திய முக்கோண ஒளி ஒரு முக்கோண வடிவத்தை தேர்வு நடந்தது ஆனால்
+
+00:31:07,000 --> 00:31:11,000
+obviously I could be talking about any shape as long as it's been limited
+வெளிப்படையாக நான் நீண்ட அது மட்டுப்படுத்தப்பட்டுள்ளது என எந்த வடிவம் பற்றி முடியும்
+
+00:31:11,000 --> 00:31:14,000
+the ability to extract at and notice
+அன்று பிரித்தெடுக்க திறனை அறிவிப்பு
+
+00:31:14,000 --> 00:31:19,000
+that in this modulated output spectrum
+இந்த பண்படுத்தப்பட்ட வெளியீடு ஸ்பெக்ட்ரம்
+
+00:31:19,000 --> 00:31:23,000
+the ability to recover this is totally independent
+இந்த மீட்க திறனை முற்றிலும் சுதந்திரமான ஆகிறது
+
+00:31:23,000 --> 00:31:27,000
+all what the value of Delta is in other words
+டெல்டா மதிப்பு வேறு வார்த்தைகளில் என்ன அனைத்து
+
+00:31:27,000 --> 00:31:31,000
+if we look back at
+நாம் மீண்டும் பார்க்க வேண்டும்
+
+00:31:31,000 --> 00:31:35,000
+the modulator then
+பண்பேற்றியில் பின்னர்
+
+00:31:35,000 --> 00:31:38,000
+in fact we can make Delta
+உண்மையில் நாம் டெல்டா செய்ய முடியும்
+
+00:31:38,000 --> 00:31:42,000
+the with these pulses arbitrarily small
+இந்த பருப்பு வகைகள் கொண்ட தன்னிச்சையாக சிறு
+
+00:31:42,000 --> 00:31:45,000
+and in theory that doesn't affect
+மற்றும் கோட்பாடு பாதிக்காது என்று
+
+00:31:45,000 --> 00:31:50,000
+our ability to do the reconstruction now in practical terms it might
+அது வலிமை நடைமுறை அடிப்படையில் இப்போது புனரமைப்பு செய்ய எங்கள் திறனை
+
+00:31:50,000 --> 00:31:54,000
+looking back once more at the specter of the output
+வெளியீடு ஒழிப்பதற்கு ஒரே நேரத்தில் மேலும் திரும்பி பார்க்க
+
+00:31:54,000 --> 00:31:58,000
+noticed that this sample to is proportional to Delta
+இந்த மாதிரி டெல்டா விகிதாசார கவனித்தனர்
+
+00:31:58,000 --> 00:32:02,000
+and what that suggests is that as we make
+என்ன என்று கூறுகிறார் நாம் செய்ய என்று ஆகிறது
+
+00:32:02,000 --> 00:32:05,000
+Delta smaller and smaller which we
+டெல்டா சிறிய மற்றும் சிறிய நாம்
+
+00:32:05,000 --> 00:32:08,000
+might in fact want to do if you want to time division multiplexed last two
+நீங்கள் கடந்த இரண்டு மல்டிபிளக்ஸ் நேரம் பிரிவு விரும்பினால் உண்மையில் செய்ய வேண்டும்
+
+00:32:08,000 --> 00:32:10,000
+channels
+தடங்கள்
+
+00:32:10,000 --> 00:32:13,000
+in principle in theory you could make it an infinite number channels just by
+கோட்பாடு, கொள்கை, நீங்கள் அதை எண்ணற்ற சேனல்களை மட்டும் செய்ய முடியும்
+
+00:32:13,000 --> 00:32:15,000
+making an infinitesimally small
+ஒரு சிறிதாக
+
+00:32:15,000 --> 00:32:21,000
+the smaller it is in some sense the less energy there is and again
+சிறிய அதை குறைந்த ஆற்றல் மீண்டும் உள்ளது மற்றும் சில உணர்வு இருக்கிறது
+
+00:32:21,000 --> 00:32:24,000
+in practical terms this one of those things if you push down here pops up
+நடைமுறை அடிப்படையில் அந்த விஷயங்களை இந்த ஒரு நீங்கள் இங்கே கீழே தள்ள வேண்டும் மேல்தோன்றும்
+
+00:32:24,000 --> 00:32:25,000
+there
+அங்கே
+
+00:32:25,000 --> 00:32:30,000
+namely you eventually run into issues such as noise problems
+அதாவது நீங்கள் இறுதியில் சத்தம் பிரச்சினைகள் பிரச்சினைகள் ரன்
+
+00:32:30,000 --> 00:32:33,000
+so more more typically what's done is
+அதனால் மேலும் மேலும் பொதுவாக நடந்தது என்ன ஆகிறது
+
+00:32:33,000 --> 00:32:38,000
+to in fact eliminate the scale factor a delta
+உண்மையில் அளவிலான காரணி ஒரு டெல்டா அகற்ற
+
+00:32:38,000 --> 00:32:42,000
+and the way that that's done is very simply
+என்று நடந்தது என்று வழி மிகவும் எளிமையாக இருக்கிறது
+
+00:32:42,000 --> 00:32:46,000
+it's done by choosing
+அதை தேர்வு செய்யப்படும்
+
+00:32:46,000 --> 00:32:50,000
+the with I love the pulses
+நான் பருப்பு வகைகள் காதல் கொண்டு
+
+00:32:50,000 --> 00:32:54,000
+and the height %uh the pulses in such a way
+மற்றும் இது போன்ற ஒரு வழியில் உயரம்% இம் பருப்பு வகைகள்
+
+00:32:54,000 --> 00:32:58,000
+dead the area is constant even as
+இறந்த பகுதியில் கூட மாறிலி
+
+00:32:58,000 --> 00:33:02,000
+we make Delta get arbitrarily small so
+நாம் டெல்டா தன்னிச்சையாக சிறு பெற செய்ய மிகவும்
+
+00:33:02,000 --> 00:33:06,000
+and we can just modify our argument
+மற்றும் நாம் நமது வாதம் மாற்ற முடியும்
+
+00:33:06,000 --> 00:33:11,000
+so that what we're referring to is a modulating post rain
+நாம் என்ன குறிப்பிடும் நீங்கள் ஒரு பண்படுத்தும் பிந்தைய மழை, அதனால்
+
+00:33:11,000 --> 00:33:15,000
+which is a pulse train with positive with Delta
+டெல்டா நேர்மறையான ஒரு துடிப்பு இது
+
+00:33:15,000 --> 00:33:20,000
+and height one over Delta in that case
+அந்த வழக்கில், டெல்டா மீது உயரம் ஒரு
+
+00:33:20,000 --> 00:33:23,000
+as Delta gets arbitrarily small
+டெல்டா தன்னிச்சையாக சிறு கிடைக்கிறது என
+
+00:33:23,000 --> 00:33:27,000
+then in fact what these rectangles become
+பின்னர் உண்மையில் என்ன இந்த செவ்வக ஆக
+
+00:33:27,000 --> 00:33:31,000
+are impulses in which case what we're talking about
+நாம் என்ன பேசுகிறோம் என்பதை இதில் தூண்டுதலின் இருக்கும்
+
+00:33:31,000 --> 00:33:35,000
+is a carrier signal
+ஒரு கப்பல் சமிக்ஞை ஆகிறது
+
+00:33:35,000 --> 00:33:39,000
+which in fact is an impulse train
+உண்மையில் ஒரு உந்துவிசை ரயில் இது
+
+00:33:39,000 --> 00:33:42,000
+and the resulting modulated signal
+அதன் விளைவாக பண்படுத்தப்பட்ட சமிக்ஞையை
+
+00:33:42,000 --> 00:33:46,000
+is and imposed strain for which the amplitudes
+மற்றும் அழுத்தம் விதித்தது எந்த வீச்சுகள்
+
+00:33:46,000 --> 00:33:50,000
+of the impulses are proportional to
+தூண்டுதலின் விகிதாசார இருக்கும் என்ற
+
+00:33:50,000 --> 00:33:54,000
+the original input waveform at
+அசல் உள்ளீடு அலைவடிவம் மணிக்கு
+
+00:33:54,000 --> 00:33:59,000
+the times at which these impulses occur
+இந்த தூண்டுதல் ஏற்படும் நேரங்களை
+
+00:33:59,000 --> 00:34:03,000
+okay well let's look at the analysis a bat
+சரி, சரி, பகுப்பாய்வு ஒரு பேட் பார்போம்
+
+00:34:03,000 --> 00:34:06,000
+and so now what we're talking about
+எனவே இப்போது நாம் என்ன பேசுகிறோம் என்பதை
+
+00:34:06,000 --> 00:34:10,000
+is a spectrum
+ஒரு நிறமாலை உள்ளது
+
+00:34:10,000 --> 00:34:15,000
+dead up
+வரை இறந்த
+
+00:34:15,000 --> 00:34:18,000
+consists all the result
+அனைத்து விளைவாக கொண்டிருக்கிறது
+
+00:34:18,000 --> 00:34:23,000
+love the spectrum we talked about before the sin x over X envelope except
+நாங்கள் தவிர எக்ஸ் உறை மீது பாவம் x முன்பு பற்றி பேசினார் ஸ்பெக்ட்ரம் பிடிக்கிறது
+
+00:34:23,000 --> 00:34:27,000
+that now is Delta goes to zero that becomes
+என்று இப்போது டெல்டா ஆகிறது என்று சுழியமாகிவிடுகிறது ஆகிறது
+
+00:34:27,000 --> 00:34:31,000
+flat in other words the modulating signal is an impulse train
+வேறு வார்த்தைகளில் பிளாட் இறக்கை ஒரு உந்துவிசை ரயில் ஆகிறது
+
+00:34:31,000 --> 00:34:35,000
+and so as we look at the spectrum
+எனவே நாம் ஸ்பெக்ட்ரம் பாருங்கள் என
+
+00:34:35,000 --> 00:34:38,000
+the modulating signal that is then
+பின்னர் அந்த இறக்கை
+
+00:34:38,000 --> 00:34:41,000
+and impose train in the frequency domain the high
+மற்றும் உயர் அதிர்வெண் களத்தில் ரயில் திணிக்க
+
+00:34:41,000 --> 00:34:45,000
+is proportional to the frequency
+அதிர்வெண் விகிதாசார
+
+00:34:45,000 --> 00:34:49,000
+up the impulse train and Omega the best now denotes
+சிறந்த இப்போது குறிக்கிறது உந்துவிசை ரயில் மற்றும் ஒமேகா வரை
+
+00:34:49,000 --> 00:34:53,000
+the frequency the impulse train and
+அதிர்வெண் உந்துவிசை ரயில் மற்றும்
+
+00:34:53,000 --> 00:34:57,000
+the resulting output the modulator
+இதன் விளைவாக உற்பத்தி பண்பேற்றியில்
+
+00:34:57,000 --> 00:35:00,000
+has a spectrum which is
+இது ஒரு நிறமாலை உள்ளது
+
+00:35:00,000 --> 00:35:05,000
+this original spectrum again replicated around
+இந்த அசல் ஸ்பெக்ட்ரம் மீண்டும் சுற்றி எதிரொலிக்கும்
+
+00:35:05,000 --> 00:35:09,000
+each love these impulses in other words replicated in multiples
+ஒவ்வொரு மடங்குகள் எதிரொலிக்கும் வேறு வார்த்தைகளில் இந்த தூண்டுதலின் பிடிக்கிறது
+
+00:35:09,000 --> 00:35:13,000
+or the sampling frequency now
+அல்லது மாதிரி அதிர்வெண் இப்போது
+
+00:35:13,000 --> 00:35:18,000
+this is very much identical to the more general case we have
+இந்த நாம் மேலும் பொது வழக்கில் மிகவும் ஒத்ததாக உள்ளது
+
+00:35:18,000 --> 00:35:21,000
+this replication the spectra
+இந்த நிறமாலை நகல்பெருக்கமாகிறது
+
+00:35:21,000 --> 00:35:25,000
+and as long as
+மற்றும் நீண்ட
+
+00:35:25,000 --> 00:35:29,000
+this sample the the frequency of the impulse train is
+இந்த மாதிரி உந்துவிசை ரயில் அதிர்வெண்
+
+00:35:29,000 --> 00:35:33,000
+large enough compared with the band with the signal
+சமிக்ஞை இசைக்குழு ஒப்பிடுகையில் அதிக அளவு
+
+00:35:33,000 --> 00:35:36,000
+so that these triangles don't overlap
+எனவே இந்த முக்கோணங்கள் சார்ந்தோ இல்லை என்று
+
+00:35:36,000 --> 00:35:40,000
+I can extract this
+நான் இந்த பிரித்தெடுக்க முடியும்
+
+00:35:40,000 --> 00:35:43,000
+portion of the spectrum by low-pass filtering
+குறைந்த பாஸ் வடிகட்டி ஸ்பெக்ட்ரம் பகுதி
+
+00:35:43,000 --> 00:35:47,000
+which in fact with then give us back
+உண்மையில் பின்னர் நமக்கு திரும்ப கொடுக்க இது
+
+00:35:47,000 --> 00:35:50,000
+the original signal now
+இப்போது அசல் சமிக்ஞையை
+
+00:35:50,000 --> 00:35:54,000
+if instead this frequency Omega sed am
+அதற்கு பதிலாக இந்த அதிர்வெண் ஒமேகா sed AM
+
+00:35:54,000 --> 00:35:58,000
+is greater than Omega best minus Omega sed am
+ஒமேகா சிறந்த கழித்து ஒமேகா sed AM விட அதிகமாக உள்ளது
+
+00:35:58,000 --> 00:36:02,000
+we would have a spectrum that looked
+நாம் பார்த்து ஒரு ஸ்பெக்ட்ரம் வேண்டும்
+
+00:36:02,000 --> 00:36:05,000
+something more like this and what's happened
+இந்த என்ன நடந்ததென்று போன்ற ஏதாவது
+
+00:36:05,000 --> 00:36:08,000
+in this case is that because
+இந்த வழக்கில் இருக்கிறது என்று காரணம்
+
+00:36:08,000 --> 00:36:12,000
+we have an overlap here we've destroyed the ability
+நாம் திறனை அழித்து இங்கே ஒன்றுடன் ஒன்று வேண்டும்
+
+00:36:12,000 --> 00:36:16,000
+to recover the original signal from the impulse train
+உந்துவிசை ரயில் இருந்து அசல் சமிக்ஞையை மீட்க
+
+00:36:16,000 --> 00:36:20,000
+and that would be true also in general in a more general case
+என்று ஒரு பொது வழக்கில் பொதுவாக உண்மை இருக்க வேண்டும்
+
+00:36:20,000 --> 00:36:23,000
+love pulse amplitude modulation with
+காதல் துடிப்பு வீச்சு பண்பேற்றம் கொண்டு
+
+00:36:23,000 --> 00:36:26,000
+pulses that up 90 with
+பருப்பு வகைகள் என்று 90 வரை
+
+00:36:26,000 --> 00:36:31,000
+this effect by the way is one that will be
+வழி மூலமாக இந்த விளைவு இருக்கும் என்று ஒன்று உள்ளது
+
+00:36:31,000 --> 00:36:35,000
+exploring in considerably more detail in the next lecture and
+அடுத்த விரிவுரை மற்றும் கணிசமாக இன்னும் விரிவாக ஆய்வு
+
+00:36:35,000 --> 00:36:39,000
+it's a phenomenon or distortion referred to as a leasing which
+அது ஒரு குத்தகை என குறிப்பிடப்படுகிறது ஒரு நிகழ்வு அல்லது விலகல் தான் இது
+
+00:36:39,000 --> 00:36:42,000
+in fact is important and interesting topic but
+உண்மையில் முக்கியமான மற்றும் சுவாரஸ்யமான தலைப்பு ஆனால்
+
+00:36:42,000 --> 00:36:46,000
+going back to the case in which we've chosen the frequency of the upholstery
+நாங்கள் அமை அதிர்வெண் தேர்வு செய்த எந்த வழக்கு மீண்டும் நடக்கிறது
+
+00:36:46,000 --> 00:36:49,000
+in high enough
+போதுமான உயர்
+
+00:36:49,000 --> 00:36:53,000
+then we would recover the original signal
+நாம் உண்மையான சமிக்ஞை மீட்க வேண்டும்
+
+00:36:53,000 --> 00:36:56,000
+by processing it through
+அது வழியாக செயல்படுத்துவதன் மூலம்
+
+00:36:56,000 --> 00:37:00,000
+a low-pass filter
+ஒரு குறைந்த பாஸ் வடிகட்டி
+
+00:37:00,000 --> 00:37:03,000
+and in in that case
+அந்த வழக்கில் உள்ள
+
+00:37:03,000 --> 00:37:08,000
+what this says is dead if we have a signal
+நாம் ஒரு சமிக்ஞை இருந்தால் என்ன சொல்கிறது இறந்த ஆகிறது
+
+00:37:08,000 --> 00:37:12,000
+and we modulated with an impulse train
+நாம் ஒரு உந்துவிசை ரயில் ஒழுங்குப்படுத்தப்படுத்தோம்
+
+00:37:12,000 --> 00:37:17,000
+if we then process that impulse train through an ideal ok pass filter
+ஒரு இலட்சிய சரி பாஸ் வடிகட்டி மூலம் நாம் செயல்முறை என்று உந்துவிசை ரயில்
+
+00:37:17,000 --> 00:37:22,000
+given the right conditions on Sat on the frequency the impulse train and the band
+அதிர்வெண் சனி வலது நிலைமைகள் கொடுக்கப்பட்ட உந்துவிசை ரயில் மற்றும் இசைக்குழு
+
+00:37:22,000 --> 00:37:23,000
+with the signal
+சமிக்ஞை
+
+00:37:23,000 --> 00:37:27,000
+we can recover the original signal back again
+நாம் மீண்டும் அசல் சமிக்ஞையை மீண்டும் மீட்க முடியும்
+
+00:37:27,000 --> 00:37:31,000
+now let me stress just going back to
+இப்போது என்னை திரும்பி சென்று வலியுறுத்தி நாம்
+
+00:37:31,000 --> 00:37:35,000
+the picture in which we have done this modulation
+நாம் இந்த பண்பேற்றம் செய்த படம்
+
+00:37:35,000 --> 00:37:38,000
+that this process where the modulation
+இந்த செயல்முறை அங்கு பண்பேற்றம்
+
+00:37:38,000 --> 00:37:42,000
+where the carrier signal involves an impulse train is
+கேரியர் சிக்னல் உந்துவிசை ரயில் ஆகும் அடங்கும் அங்கு
+
+00:37:42,000 --> 00:37:46,000
+often referred to as sampling and
+பெரும்பாலும் மாதிரி குறிப்பிடப்படுகிறது
+
+00:37:46,000 --> 00:37:49,000
+what that mean specifically is dead
+என்ன என்று சராசரி குறிப்பாக இறந்து
+
+00:37:49,000 --> 00:37:55,000
+if we notice this resulting in polls train
+நாம் கணிப்பீடுகள் ரயில் இந்த இறுதி அறிவிப்பு
+
+00:37:55,000 --> 00:37:58,000
+is in fact a sequence
+உண்மையில் ஒரு வரிசை ஆகும்
+
+00:37:58,000 --> 00:38:01,000
+all samples all
+அனைத்து மாதிரிகள் அனைத்து
+
+00:38:01,000 --> 00:38:05,000
+the original continuous-time signal in other words
+வேறு வார்த்தைகளில் அசல் தொடர்ச்சியான நேர சமிக்ஞை
+
+00:38:05,000 --> 00:38:10,000
+what we've done in effect is taken instantaneous samples at this way form
+நாம் என்ன விளைவு செய்த இந்த வழியில் வடிவத்தில் உள்ள உடனடியாக மாதிரிகள் எடுத்து
+
+00:38:10,000 --> 00:38:13,000
+and the implication is that if we do that
+மற்றும் இதன் உட்பொருள் நாம் செய்கிறோம் என்றால்
+
+00:38:13,000 --> 00:38:17,000
+at a rapid and afraid in relation
+ஒரு விரைவான மற்றும் பயம் இனத்தினரின்
+
+00:38:17,000 --> 00:38:21,000
+to the band with the signal then
+சமிக்ஞை இசைக்குழு பின்னர்
+
+00:38:21,000 --> 00:38:25,000
+we can in fact recover the original signal back again
+நாம் உண்மையில் மீண்டும் அசல் சமிக்ஞையை மீண்டும் மீட்க முடியும்
+
+00:38:25,000 --> 00:38:28,000
+and finally to remind you
+இறுதியாக உங்களுக்கு ஞாபகப்படுத்த
+
+00:38:28,000 --> 00:38:31,000
+I'll the argument once more
+நான் வாதம் முறை மேலும் வேண்டும்
+
+00:38:31,000 --> 00:38:34,000
+we have an original signal
+நாம் ஒரு அசல் சமிக்ஞையை வேண்டும்
+
+00:38:34,000 --> 00:38:40,000
+and we have its spectrum when we've sampled it and this is now the sampled
+நாம் அது மாதிரி நான் இந்த இப்போது சோதனை போது நாம் அதன் ஸ்பெக்ட்ரம்
+
+00:38:40,000 --> 00:38:44,000
+signal it's an impulse train whose instantaneous values
+அது யாருடைய உடனடியாக மதிப்புகள் ஒரு உந்துவிசை ரயில் சிக்னல்
+
+00:38:44,000 --> 00:38:49,000
+are samples at the original waveform the spectrum a bad
+அசல் அலைவடிவம் மாதிரிகளை ஸ்பெக்ட்ரம் ஒரு கெட்ட
+
+00:38:49,000 --> 00:38:53,000
+is the original one replicated
+எதிரொலிக்கும் அசல் ஒன்றாகும்
+
+00:38:53,000 --> 00:38:57,000
+and when that is processed through a
+என்று ஒரு வழியாக பதப்படுத்தப்பட்ட போது
+
+00:38:57,000 --> 00:39:01,000
+low-pass filter to extract this part of the spectrum
+நிறமாலை இந்த பகுதியில் பெறுவதற்கு குறைந்த பாஸ் வடிகட்டி
+
+00:39:01,000 --> 00:39:05,000
+then after the low-pass filter we can
+பின்னர் நாம் குறைந்த பாஸ் வடிகட்டி பின்னர்
+
+00:39:05,000 --> 00:39:11,000
+recover the original signal back again
+மீண்டும் மீண்டும் அசல் சமிக்ஞையை மீட்க
+
+00:39:11,000 --> 00:39:14,000
+okay well in fact me although
+சரி, சரி, எனக்கு என்றாலும் உண்மையில்
+
+00:39:14,000 --> 00:39:17,000
+a if you kinda follow through
+ஒரு நீங்கள் கிரகமாக மூலம் பின்பற்ற வேண்டும்
+
+00:39:17,000 --> 00:39:21,000
+the specter and the waveforms this all seems fairly
+இந்த அனைத்து மிகவும் தெரிகிறது ஒழிப்பதற்கு மற்றும் வடிவங்களை
+
+00:39:21,000 --> 00:39:24,000
+straightforward and perhaps
+ஒருவேளை நேரடியான மற்றும்
+
+00:39:24,000 --> 00:39:28,000
+or perhaps not obvious
+அல்லது ஒருவேளை தெளிவாக இல்லை
+
+00:39:28,000 --> 00:39:32,000
+it's really worth reflecting on how amazing
+அதை பிரதிபலிக்கும் உண்மையில் மதிப்புள்ள எவ்வளவு அற்புதமான
+
+00:39:32,000 --> 00:39:36,000
+the result really is what it says we begin this discussion
+இதன் விளைவாக உண்மையில் நாம் இந்த விவாதம் தொடங்க என்ன ஆகிறது
+
+00:39:36,000 --> 00:39:41,000
+by talking about modulation and in fact modulation and sinusoidal modulation is
+பண்பேற்றம் மற்றும் உண்மையில் பண்பேற்றம் மற்றும் sinusoidal பண்பேற்றம் பற்றி பேசி
+
+00:39:41,000 --> 00:39:44,000
+important in its own right
+அதன் சொந்த சரியான முக்கியம்
+
+00:39:44,000 --> 00:39:47,000
+we ended the discussion by talking
+நாம் பேசி கலந்துரையாடல் முடிந்தது
+
+00:39:47,000 --> 00:39:51,000
+about first pulse amplitude modulation
+முதல் துடிப்பு வீச்சு பண்பேற்றம் பற்றி
+
+00:39:51,000 --> 00:39:57,000
+and then showing how under the right set of conditions
+பின்னர் எப்படி நிலைமைகளை சரியான செட் கீழ் காட்டும்
+
+00:39:57,000 --> 00:40:01,000
+you can in fact take away form and
+நீங்கள் உண்மையில் வடிவத்தில் எடுத்து முடியும்
+
+00:40:01,000 --> 00:40:05,000
+sample it with a set of instantaneous samples
+உடனடியாக மாதிரிகள் ஒரு தொகுப்பு மாதிரிக்காக
+
+00:40:05,000 --> 00:40:08,000
+and that said instantaneous samples in fact
+என்றும் உண்மையில் உடனடியாக மாதிரிகள்
+
+00:40:08,000 --> 00:40:14,000
+are sufficient totally represent and reconstruct the signal
+போதுமான முற்றிலும் பிரதிநிதித்துவம் மற்றும் சமிக்ஞை மீள்
+
+00:40:14,000 --> 00:40:18,000
+what in fact the formal statement that is
+உண்மையில் என்ன என்று சாதாரண அறிக்கை
+
+00:40:18,000 --> 00:40:22,000
+is referred to as the sampling theorem
+மாதிரி தேற்றம் என குறிப்பிடப்படுகிறது
+
+00:40:22,000 --> 00:40:25,000
+very powerful their own that says
+மிகவும் சக்திவாய்ந்த தங்கள் சொந்த என்கிறார்
+
+00:40:25,000 --> 00:40:30,000
+if were given equally spaced samples over time function
+நேரம் செயல்பாடு மீது சமமாக இடைவெளி மாதிரிகள் வழங்கப்பட்டது
+
+00:40:30,000 --> 00:40:35,000
+and if that time function is band limited
+அந்த நேரத்தில் செயல்பாட்டு குழு குறைவாக இருந்தால்
+
+00:40:35,000 --> 00:40:39,000
+and if the band with
+என்றால் இசைக்குழு
+
+00:40:39,000 --> 00:40:44,000
+or is or if this if this sampling frequency is
+அல்லது அல்லது இந்த மாதிரி அதிர்வெண் இந்த என்றால்
+
+00:40:44,000 --> 00:40:48,000
+chosen in the right way in relation
+தொடர்பாக சரியான வழியில் தேர்வு
+
+00:40:48,000 --> 00:40:51,000
+to the
+செய்ய
+
+00:40:51,000 --> 00:40:55,000
+band with then in fact
+பின்னர் இந்த இசைக்குழுவின் உண்மையில்
+
+00:40:55,000 --> 00:40:58,000
+the original time function is
+அசல் நேரம் செயல்பாடு
+
+00:40:58,000 --> 00:41:05,000
+uniquely recoverable with a low-pass filter
+ஒரு குறைந்த பாஸ் வடிகட்டி தனிப்பட்ட திரும்ப
+
+00:41:05,000 --> 00:41:08,000
+now the sampling theorem is kinda
+இப்போது மாதிரி தேற்றம் கிரகமாக இருக்கிறது
+
+00:41:08,000 --> 00:41:12,000
+I would say a watershed a cornerstone
+நான் ஒரு கண்ணீர் மல்கிய ஒரு மைல்கல் என்று
+
+00:41:12,000 --> 00:41:15,000
+love a lot of the discussion we've been having
+நாம் கொண்டு வருகிறோம் கலந்துரையாடல் நிறைய அன்பு
+
+00:41:15,000 --> 00:41:20,000
+for a whole variety of reasons if first of all crops out almost as kind as
+ஒரு முழு காரணங்கள் என்றால் அனைத்து பயிர்கள் முதல் கிட்டத்தட்ட வகையான என
+
+00:41:20,000 --> 00:41:24,000
+straightforward obvious statement but more importantly
+நேரடியான தெளிவான அறிக்கையை ஆனால் இன்னும் முக்கியமாக
+
+00:41:24,000 --> 00:41:28,000
+what it says is dead
+என்ன இது என்கிறார் இறந்த ஆகிறது
+
+00:41:28,000 --> 00:41:33,000
+if I have a continuous-time signal which satisfies the right-center conditions
+நான் வலது மையத்தில் மிக எளிமையாக எந்த ஒரு தொடர்ச்சியான நேர சமிக்ஞை வேண்டும் என்றால்
+
+00:41:33,000 --> 00:41:36,000
+I can represent it by what it does
+நான் அது என்ன அது பிரதிநிதித்துவம் முடியும்
+
+00:41:36,000 --> 00:41:41,000
+at sampling instance or acquittal only at discrete
+மட்டும் தனி மணிக்கு மாதிரி உதாரணமாக அல்லது விடுவிக்க மணிக்கு
+
+00:41:41,000 --> 00:41:44,000
+is this a time
+இந்த ஒரு முறை
+
+00:41:44,000 --> 00:41:47,000
+now what that leads to
+இப்போது என்ன என்று வழிவகுக்கிறது
+
+00:41:47,000 --> 00:41:51,000
+is a whole host of things wanna which
+விஷயங்களை இனி ஒரு முழு ஹோஸ்ட் இது
+
+00:41:51,000 --> 00:41:55,000
+is the statement that says if we have a continuous-time signal
+நாம் ஒரு தொடர் நேர சமிக்ஞை வேண்டும் என்றால் என்று அறிக்கை
+
+00:41:55,000 --> 00:41:58,000
+I could in fact represented
+நான் உண்மையில் குறிப்பிடப்படுகின்றன
+
+00:41:58,000 --> 00:42:02,000
+as a discrete-time signal and I could even think
+ஒரு தனி நேர சமிக்ஞை மற்றும் நான் கூட நினைக்கலாம்
+
+00:42:02,000 --> 00:42:06,000
+love processing a continuous-time signal
+ஒரு தொடர்ச்சியான நேர சமிக்ஞை செயலாக்க பிடிக்கிறது
+
+00:42:06,000 --> 00:42:09,000
+using discrete time concepts
+தனி நேரம் கருத்துக்கள் பயன்படுத்தி
+
+00:42:09,000 --> 00:42:12,000
+and when I'm all done converting back through
+நான் மூலம் மீண்டும் மாற்றும் அனைத்து முடிச்சாச்சு போது
+
+00:42:12,000 --> 00:42:15,000
+the power the sampling theorem converting back to a continuous-time
+சக்தி மாதிரி தேற்றம் ஒரு தொடர்ச்சியான நேரம் மீண்டும் மாற்றும்
+
+00:42:15,000 --> 00:42:16,000
+sick
+உடம்பு
+
+00:42:16,000 --> 00:42:20,000
+so the sampling theorem provides this
+அதனால் மாதிரி தேற்றம் இந்த வழங்குகிறது
+
+00:42:20,000 --> 00:42:23,000
+with a very major important bridge between
+இடையே ஒரு மிக பெரிய முக்கியமான பாலம்
+
+00:42:23,000 --> 00:42:28,000
+continuous-time and discrete-time implementations and ideas
+தொடர்ச்சியான நேர மற்றும் தனித்தியங்கும் நேர செயலாக்கங்கள் மற்றும் கருத்துக்கள்
+
+00:42:28,000 --> 00:42:34,000
+in the next several lectures we will be exploring so this in considerable detail
+அடுத்த சில விரிவுரைகள் நாம் கணிசமான விரிவாக இந்த ஆய்வு
+
+00:42:34,000 --> 00:42:37,000
+first the focus in more next time
+மேலும் அடுத்த முறை முதல் கவனம்
+
+00:42:37,000 --> 00:42:42,000
+on some with the specific issues and distortions associated with sampling and
+மாதிரி தொடர்புடைய குறிப்பிட்ட பிரச்சினைகள் மற்றும் சிதைவுகள் சில மற்றும்
+
+00:42:42,000 --> 00:42:44,000
+following that
+பின்வரும் என்று
+
+00:42:44,000 --> 00:42:48,000
+a discussion are what is referred to as
+ஒரு விவாதம் என குறிப்பிடப்பட்டு
+
+00:42:48,000 --> 00:42:52,000
+discrete-time processing of continuous-time signals
+தொடர்ச்சியான நேர சிக்னல்களை தனி நேர செயலாக்க
+
+00:42:52,000 --> 00:42:52,000
+thank you
+நன்றி
+

@@ -1,0 +1,3424 @@
+1
+00:00:00,040 --> 00:00:03,480 
+the following content is provided under
+a Creative Commons license
+
+2
+00:00:03,480 --> 00:00:07,129 
+your support will help MIT
+OpenCourseWare continue to offer
+
+3
+00:00:07,129 --> 00:00:10,580 
+high-quality educational resources for
+free
+
+4
+00:00:10,580 --> 00:00:14,360 
+to make a donation or view additional
+materials from hundreds of them IT
+
+5
+00:00:14,360 --> 00:00:15,020 
+courses
+
+6
+00:00:15,020 --> 00:00:18,110 
+visit MIT OpenCourseWare at 0 CW
+
+7
+00:00:18,110 --> 00:00:20,590 
+that MIT ided you
+
+8
+00:00:20,590 --> 00:00:27,590 
+ha
+
+9
+00:00:42,000 --> 00:00:45,050 
+the norm
+
+10
+00:00:45,050 --> 00:00:52,050 
+are
+
+11
+00:00:55,810 --> 00:00:59,250 
+over the past several lectures we've
+developed the representation for linear
+
+12
+00:00:59,250 --> 00:00:60,800 
+time-invariant systems
+
+13
+00:00:60,800 --> 00:01:04,510 
+in a particularly important center
+systems
+
+14
+00:01:04,510 --> 00:01:08,770 
+which are linear and time-invariant are
+those that are represented by linear
+
+15
+00:01:08,770 --> 00:01:12,480 
+constant coefficient differential
+equations continuous-time
+
+16
+00:01:12,480 --> 00:01:16,100 
+or when your constant coefficient
+difference equations
+
+17
+00:01:16,100 --> 00:01:21,350 
+in discrete-time for example electrical
+circuits that are built let's say I dove
+
+18
+00:01:21,350 --> 00:01:24,590 
+resistors inductors and capacitors
+perhaps with %ah pants
+
+19
+00:01:24,590 --> 00:01:28,790 
+correspond to systems described by
+differential equations
+
+20
+00:01:28,790 --> 00:01:32,540 
+mechanical systems with springs and dash
+pots likewise
+
+21
+00:01:32,540 --> 00:01:36,160 
+are described by differential equations
+and in the discrete-time
+
+22
+00:01:36,160 --> 00:01:40,250 
+case things such as moving average
+filters
+
+23
+00:01:40,250 --> 00:01:45,280 
+digital filters and most simple kinda
+data smoothing
+
+24
+00:01:45,280 --> 00:01:48,930 
+are all linear constant coefficient
+difference equations
+
+25
+00:01:48,930 --> 00:01:52,050 
+now presumably
+
+26
+00:01:52,050 --> 00:01:56,750 
+in a previous course you've had some
+exposure to
+
+27
+00:01:56,750 --> 00:02:01,000 
+differential equations for
+continuous-time and
+
+28
+00:02:01,000 --> 00:02:05,030 
+their solution using notions like
+particular solution and homogeneous
+
+29
+00:02:05,030 --> 00:02:07,280 
+solution initial conditions center
+
+30
+00:02:07,280 --> 00:02:10,920 
+later on in the course
+
+31
+00:02:10,920 --> 00:02:15,610 
+when we've developed the concept to the
+48 transforming after that the
+
+32
+00:02:15,610 --> 00:02:17,030 
+apostrophe its form
+
+33
+00:02:17,030 --> 00:02:20,940 
+will see some very efficient and useful
+ways
+
+34
+00:02:20,940 --> 00:02:24,320 
+generating solutions both differential
+and difference equations
+
+35
+00:02:24,320 --> 00:02:27,680 
+at this point however I'd like to
+
+36
+00:02:27,680 --> 00:02:30,830 
+just introduce when your constant
+coefficient
+
+37
+00:02:30,830 --> 00:02:34,690 
+differential equations and the
+discrete-time counterpart
+
+38
+00:02:34,690 --> 00:02:37,860 
+and address among other things the issue
+
+39
+00:02:37,860 --> 00:02:42,220 
+love when they do and don't correspond
+to linear time-invariant systems
+
+40
+00:02:42,220 --> 00:02:45,730 
+well let's first consider
+
+41
+00:02:45,730 --> 00:02:49,010 
+what I refer to as an nth order
+
+42
+00:02:49,010 --> 00:02:52,590 
+linear constant coefficients
+differential equation as i've indicated
+
+43
+00:02:52,590 --> 00:02:53,630 
+here
+
+44
+00:02:53,630 --> 00:02:58,590 
+and what it consists of is a linear
+combination of derivatives up the system
+
+45
+00:02:58,590 --> 00:02:59,380 
+output
+
+46
+00:02:59,380 --> 00:03:02,800 
+y'at equal to a linear combination
+
+47
+00:03:02,800 --> 00:03:05,930 
+of derivatives above the system input
+accept T
+
+48
+00:03:05,930 --> 00:03:08,960 
+and is referred to
+
+49
+00:03:08,960 --> 00:03:13,500 
+as a constant coefficients equation of
+course because the
+
+50
+00:03:13,500 --> 00:03:18,220 
+coefficients are constant in other words
+not assume to be time-varying
+
+51
+00:03:18,220 --> 00:03:21,280 
+and its referred to
+
+52
+00:03:21,280 --> 00:03:26,550 
+as linear because it corresponds to a
+linear combination
+
+53
+00:03:26,550 --> 00:03:30,320 
+love these derivatives not because
+
+54
+00:03:30,320 --> 00:03:33,430 
+it corresponds to a linear system and in
+fact
+
+55
+00:03:33,430 --> 00:03:36,880 
+as we'll see or as all indicate this
+
+56
+00:03:36,880 --> 00:03:40,180 
+equation may or may not in fact
+correspond to
+
+57
+00:03:40,180 --> 00:03:44,650 
+when your system in the discrete-time
+case
+
+58
+00:03:44,650 --> 00:03:50,190 
+the corresponding equation is a linear
+constant coefficient difference equation
+
+59
+00:03:50,190 --> 00:03:53,610 
+and that corresponds to again
+
+60
+00:03:53,610 --> 00:03:58,800 
+a linear combination love the late
+versions of the output equal to
+
+61
+00:03:58,800 --> 00:04:02,240 
+a linear combination love the late
+versions at the input
+
+62
+00:04:02,240 --> 00:04:05,390 
+this equation is referred to as an nth
+order
+
+63
+00:04:05,390 --> 00:04:10,060 
+difference equation the N referring to
+the number of the ladies
+
+64
+00:04:10,060 --> 00:04:14,860 
+are the output involved just as an aunt
+order differential equation
+
+65
+00:04:14,860 --> 00:04:19,009 
+the N for the order the equation refers
+to the number of derivatives
+
+66
+00:04:19,009 --> 00:04:22,860 
+the output now let's first begin
+
+67
+00:04:22,860 --> 00:04:26,620 
+with the near constant coefficient
+differential equations
+
+68
+00:04:26,620 --> 00:04:30,590 
+and the basic
+
+69
+00:04:30,590 --> 00:04:33,630 
+point or the solution for
+
+70
+00:04:33,630 --> 00:04:37,080 
+the differential equations is the fact
+dead
+
+71
+00:04:37,080 --> 00:04:40,160 
+if we've generated some solution
+
+72
+00:04:40,160 --> 00:04:44,360 
+which I refer to here's why superiority
+some solution
+
+73
+00:04:44,360 --> 00:04:47,820 
+to the equation for a given input then
+
+74
+00:04:47,820 --> 00:04:50,960 
+in fact we can and to that solution
+
+75
+00:04:50,960 --> 00:04:54,090 
+any other solution which
+
+76
+00:04:54,090 --> 00:04:57,699 
+satisfies what's referred to as
+
+77
+00:04:57,699 --> 00:05:01,320 
+the homogeneous equation so in fact
+
+78
+00:05:01,320 --> 00:05:05,180 
+this differential equation by itself
+
+79
+00:05:05,180 --> 00:05:08,199 
+is not a unique specification
+
+80
+00:05:08,199 --> 00:05:10,329 
+the system
+
+81
+00:05:10,329 --> 00:05:13,429 
+if I have any solution then I can
+
+82
+00:05:13,429 --> 00:05:18,729 
+and to that solution any other solution
+which satisfies the homogeneous equation
+
+83
+00:05:18,729 --> 00:05:20,159 
+and thus all those two
+
+84
+00:05:20,159 --> 00:05:24,399 
+likewise be a solution and that's very
+straight forward to verify
+
+85
+00:05:24,399 --> 00:05:28,319 
+by simply substituting into the
+differential equation
+
+86
+00:05:28,319 --> 00:05:33,389 
+some love the particular a particular
+and the homogeneous solution
+
+87
+00:05:33,389 --> 00:05:37,869 
+and what you see is that the homogeneous
+contribution
+
+88
+00:05:37,869 --> 00:05:41,179 
+in fact goes to zero by definition
+
+89
+00:05:41,179 --> 00:05:45,189 
+what we mean by the homogeneous equation
+now
+
+90
+00:05:45,189 --> 00:05:50,839 
+the homogeneous solution for a when your
+constant coefficient differential
+
+91
+00:05:50,839 --> 00:05:51,659 
+equation
+
+92
+00:05:51,659 --> 00:05:55,169 
+is of the form that I
+
+93
+00:05:55,169 --> 00:05:58,739 
+indicate at the bottom and
+
+94
+00:05:58,739 --> 00:06:01,869 
+it typically consists love a
+
+95
+00:06:01,869 --> 00:06:06,679 
+song or capital and complex exponentials
+
+96
+00:06:06,679 --> 00:06:09,799 
+and the Constance
+
+97
+00:06:09,799 --> 00:06:12,859 
+are on determined by the equation itself
+
+98
+00:06:12,859 --> 00:06:17,089 
+and this form for the homogeneous
+solution
+
+99
+00:06:17,089 --> 00:06:22,209 
+in essence drops out love examining
+
+100
+00:06:22,209 --> 00:06:26,549 
+the homogeneous equation where
+
+101
+00:06:26,549 --> 00:06:30,429 
+if we assume that the former the
+homogeneous solution
+
+102
+00:06:30,429 --> 00:06:34,209 
+is a complex exponential with some
+
+103
+00:06:34,209 --> 00:06:38,229 
+on specified amplitude and unspecified
+exponent
+
+104
+00:06:38,229 --> 00:06:42,369 
+if we substitute this into are
+homogeneous equation
+
+105
+00:06:42,369 --> 00:06:45,619 
+we end up with the equation that i've
+indicated
+
+106
+00:06:45,619 --> 00:06:49,629 
+year the factor A&E the st. can in fact
+be
+
+107
+00:06:49,629 --> 00:06:53,610 
+cancelled out and we find there that
+equation
+
+108
+00:06:53,610 --> 00:06:56,180 
+is satisfied
+
+109
+00:06:56,180 --> 00:06:59,300 
+for capital N values
+
+110
+00:06:59,300 --> 00:07:02,860 
+love s and
+
+111
+00:07:02,860 --> 00:07:06,410 
+that's true no matter what choices made
+for these
+
+112
+00:07:06,410 --> 00:07:10,410 
+coefficients and the essential
+consequence
+
+113
+00:07:10,410 --> 00:07:13,880 
+have all of that is that the homogeneous
+solution
+
+114
+00:07:13,880 --> 00:07:17,650 
+is of the form that I indicated
+previously
+
+115
+00:07:17,650 --> 00:07:20,890 
+namely it consists love some
+
+116
+00:07:20,890 --> 00:07:24,820 
+love capital and complex exponentials
+
+117
+00:07:24,820 --> 00:07:28,650 
+where the coefficients the capital and
+coefficients
+
+118
+00:07:28,650 --> 00:07:31,770 
+attached to you to those complex
+exponentials
+
+119
+00:07:31,770 --> 00:07:34,969 
+is undetermined Iran specified
+
+120
+00:07:34,969 --> 00:07:38,209 
+so what this says is that in order to
+
+121
+00:07:38,209 --> 00:07:42,629 
+obtain the solution for a win here comes
+the coefficient differential equation
+
+122
+00:07:42,629 --> 00:07:45,719 
+we need some kind of auxiliary
+information
+
+123
+00:07:45,719 --> 00:07:49,779 
+tells us how to obtain these capital and
+
+124
+00:07:49,779 --> 00:07:53,719 
+undetermined Constance and there are a
+variety of ways
+
+125
+00:07:53,719 --> 00:07:57,669 
+specifying this auxiliary information or
+auxiliary conditions
+
+126
+00:07:57,669 --> 00:08:02,059 
+for example in addition to the
+differential equation
+
+127
+00:08:02,059 --> 00:08:05,769 
+what I can tell you is the value
+
+128
+00:08:05,769 --> 00:08:08,860 
+of the output and and -1 up there
+
+129
+00:08:08,860 --> 00:08:12,309 
+and -1 if its derivatives at some
+
+130
+00:08:12,309 --> 00:08:15,899 
+specified time t0 and
+
+131
+00:08:15,899 --> 00:08:19,860 
+so the differential equations together
+
+132
+00:08:19,860 --> 00:08:23,459 
+with the auxiliary information the
+initial conditions
+
+133
+00:08:23,459 --> 00:08:26,860 
+van lets you determine the total
+solution
+
+134
+00:08:26,860 --> 00:08:31,429 
+which namely lets you determine these
+previously unspecified
+
+135
+00:08:31,429 --> 00:08:35,130 
+coefficients in the homogeneous solution
+
+136
+00:08:35,130 --> 00:08:40,380 
+now depending on how the auxiliary
+information is stated or what auxiliary
+
+137
+00:08:40,380 --> 00:08:41,979 
+information is available
+
+138
+00:08:41,979 --> 00:08:45,750 
+the system a or may not correspond
+
+139
+00:08:45,750 --> 00:08:49,680 
+to a linear system and may or may not
+correspond to a linear time-invariant
+
+140
+00:08:49,680 --> 00:08:53,200 
+system one essential condition
+
+141
+00:08:53,200 --> 00:08:56,649 
+for it to correspond to a linear system
+is that
+
+142
+00:08:56,649 --> 00:09:00,339 
+the initial conditions must be zero
+
+143
+00:09:00,339 --> 00:09:04,020 
+and one can see the reason for that
+
+144
+00:09:04,020 --> 00:09:09,850 
+if we refer back to the previous lecture
+in which we saw that for a linear system
+
+145
+00:09:09,850 --> 00:09:12,850 
+if we put 0n we get zero out
+
+146
+00:09:12,850 --> 00:09:17,330 
+so if exit see the input is zero the
+output must be zero
+
+147
+00:09:17,330 --> 00:09:21,959 
+and so that in essence tells us that at
+least for the system to be linear
+
+148
+00:09:21,959 --> 00:09:24,959 
+these initial conditions must be zero
+
+149
+00:09:24,959 --> 00:09:28,410 
+now beyond that if
+
+150
+00:09:28,410 --> 00:09:31,510 
+we want the system to be
+
+151
+00:09:31,510 --> 00:09:35,630 
+causal and linear time in and
+time-invariant
+
+152
+00:09:35,630 --> 00:09:38,920 
+then what's required on the
+
+153
+00:09:38,920 --> 00:09:42,600 
+initial conditions is that they be
+consistent with
+
+154
+00:09:42,600 --> 00:09:47,959 
+what's referred to as initial rest
+initial arrest says
+
+155
+00:09:47,959 --> 00:09:51,200 
+that the output must be
+
+156
+00:09:51,200 --> 00:09:54,420 
+0 up until the time
+
+157
+00:09:54,420 --> 00:09:58,190 
+that the input becomes 90 and we can see
+
+158
+00:09:58,190 --> 00:10:01,540 
+of course that that's consistent with
+the notion of causality as
+
+159
+00:10:01,540 --> 00:10:05,350 
+we talked about in the previous lecture
+and
+
+160
+00:10:05,350 --> 00:10:09,589 
+its relatively straightforward to see
+
+161
+00:10:09,589 --> 00:10:14,390 
+that if the system is causal and linear
+and time-invariant
+
+162
+00:10:14,390 --> 00:10:17,550 
+that will require
+
+163
+00:10:17,550 --> 00:10:21,370 
+initial rest it's somewhat more
+difficult see
+
+164
+00:10:21,370 --> 00:10:27,420 
+that if we specify initial rest the NAT
+in fact is sufficient to
+
+165
+00:10:27,420 --> 00:10:30,870 
+determine that the system is both causal
+in linear
+
+166
+00:10:30,870 --> 00:10:34,420 
+and time very but the essential point
+then is that
+
+167
+00:10:34,420 --> 00:10:37,750 
+requires initial rest for both linearity
+
+168
+00:10:37,750 --> 00:10:41,270 
+and causality okay well
+
+169
+00:10:41,270 --> 00:10:44,800 
+let's look at an example and
+
+170
+00:10:44,800 --> 00:10:49,190 
+let's take the example love a
+first-order
+
+171
+00:10:49,190 --> 00:10:52,470 
+differential equation as I've
+
+172
+00:10:52,470 --> 00:10:55,510 
+indicated here so we have
+
+173
+00:10:55,510 --> 00:10:59,000 
+a first-order differential equation the
+wife TTT
+
+174
+00:10:59,000 --> 00:11:02,130 
+was a yote is the input exit
+
+175
+00:11:02,130 --> 00:11:05,160 
+T and let's first
+
+176
+00:11:05,160 --> 00:11:08,520 
+look at what the homogeneous solution
+this equation is
+
+177
+00:11:08,520 --> 00:11:12,170 
+and so we can consider the homogeneous
+equation
+
+178
+00:11:12,170 --> 00:11:17,010 
+namely the equation specify solutions
+
+179
+00:11:17,010 --> 00:11:21,320 
+which would correspond to zero input
+
+180
+00:11:21,320 --> 00:11:24,520 
+we in essence guess for impose
+
+181
+00:11:24,520 --> 00:11:28,690 
+a solution love the form the homogeneous
+solution
+
+182
+00:11:28,690 --> 00:11:33,100 
+is an amplitude factor times the complex
+exponential
+
+183
+00:11:33,100 --> 00:11:37,320 
+substituting this into the homogeneous
+equation
+
+184
+00:11:37,320 --> 00:11:40,590 
+we then get the equation that i've
+indicated here
+
+185
+00:11:40,590 --> 00:11:44,930 
+what you can see is that this equates in
+this equation
+
+186
+00:11:44,930 --> 00:11:49,840 
+I can cancel out the amplitude factor
+and this complex exponential
+
+187
+00:11:49,840 --> 00:11:56,160 
+so let's just cancel those out on both
+sides of the equation
+
+188
+00:11:56,160 --> 00:12:00,300 
+and what we're left with is an equation
+
+189
+00:12:00,300 --> 00:12:04,510 
+that specifies what the complex exponent
+must be
+
+190
+00:12:04,510 --> 00:12:09,620 
+in particular for the homogeneous
+solution s must be equal to minus a
+
+191
+00:12:09,620 --> 00:12:12,780 
+and so finally are homogeneous solution
+
+192
+00:12:12,780 --> 00:12:18,629 
+is as I've indicated year
+
+193
+00:12:18,629 --> 00:12:24,009 
+okay now let's look at the solution for
+specific input let's consider for
+
+194
+00:12:24,009 --> 00:12:25,229 
+example input
+
+195
+00:12:25,229 --> 00:12:28,639 
+which is a scale units step and
+
+196
+00:12:28,639 --> 00:12:32,209 
+although I won't work at the solution in
+detail and perhaps
+
+197
+00:12:32,209 --> 00:12:36,029 
+using what you've worked on previously
+
+198
+00:12:36,029 --> 00:12:39,579 
+you know how to carry out the solution
+for that the
+
+199
+00:12:39,579 --> 00:12:42,669 
+a solution with step input
+
+200
+00:12:42,669 --> 00:12:47,669 
+is what i've indicated here scaler one
+minus the next financial times unit
+
+201
+00:12:47,669 --> 00:12:51,949 
+staff and you can verify that simply by
+substituting into the differential
+
+202
+00:12:51,949 --> 00:12:53,809 
+equations now
+
+203
+00:12:53,809 --> 00:12:57,899 
+we know that there's a family of
+solutions in other words
+
+204
+00:12:57,899 --> 00:13:00,959 
+any solution with
+
+205
+00:13:00,959 --> 00:13:04,729 
+a homogeneous solution added to it is
+again a solution
+
+206
+00:13:04,729 --> 00:13:09,499 
+and so if we consider the solution I
+just indicated
+
+207
+00:13:09,499 --> 00:13:13,169 
+we generate the entire family of
+solutions by
+
+208
+00:13:13,169 --> 00:13:16,459 
+ending a homogeneous solution to it and
+so
+
+209
+00:13:16,459 --> 00:13:20,379 
+this then corresponds to the entire
+family of solutions
+
+210
+00:13:20,379 --> 00:13:24,659 
+where the constant a is unspecified
+
+211
+00:13:24,659 --> 00:13:31,470 
+so far and needs to be specified through
+some type avoids avery conditions
+
+212
+00:13:31,470 --> 00:13:34,549 
+now a class A auxiliary conditions
+
+213
+00:13:34,549 --> 00:13:37,779 
+is the Commissioner initial rest which
+
+214
+00:13:37,779 --> 00:13:43,749 
+as i indicated before is equivalent to
+the statement that the system
+
+215
+00:13:43,749 --> 00:13:47,489 
+is causal and linear and time-invariant
+and
+
+216
+00:13:47,489 --> 00:13:51,309 
+in that case for the initial rest
+condition
+
+217
+00:13:51,309 --> 00:13:55,139 
+we would then require in this equation
+above
+
+218
+00:13:55,139 --> 00:13:59,059 
+that this constant be equal to 0
+
+219
+00:13:59,059 --> 00:14:02,429 
+and so finally the response
+
+220
+00:14:02,429 --> 00:14:05,739 
+to scales step if the system
+
+221
+00:14:05,739 --> 00:14:09,289 
+is the correspond to cause a linear
+time-invariant system
+
+222
+00:14:09,289 --> 00:14:12,589 
+is then just this term namely
+
+223
+00:14:12,589 --> 00:14:15,799 
+constant times one minus an exponential
+
+224
+00:14:15,799 --> 00:14:18,620 
+times step
+
+225
+00:14:18,620 --> 00:14:22,260 
+okay now if the system is a linear
+time-invariant system
+
+226
+00:14:22,260 --> 00:14:25,810 
+it can as we know be described through
+its impulse response
+
+227
+00:14:25,810 --> 00:14:29,120 
+and as you've worked out previously
+
+228
+00:14:29,120 --> 00:14:32,399 
+in the video course manual for
+
+229
+00:14:32,399 --> 00:14:36,140 
+a linear time-invariant system the
+impulse response
+
+230
+00:14:36,140 --> 00:14:40,560 
+is the derivative love the step response
+adjusted quickly remind you
+
+231
+00:14:40,560 --> 00:14:44,829 
+love where that result comes from in
+essence
+
+232
+00:14:44,829 --> 00:14:49,470 
+we can consider to linear time-invariant
+systems and Cascade
+
+233
+00:14:49,470 --> 00:14:53,260 
+wanna differentiator the other the
+system that we're talking about
+
+234
+00:14:53,260 --> 00:14:54,620 
+described by
+
+235
+00:14:54,620 --> 00:14:58,980 
+the differential equation and step in
+here
+
+236
+00:14:58,980 --> 00:15:02,370 
+then generated in polls into our system
+
+237
+00:15:02,370 --> 00:15:06,190 
+and out comes the impulse response well
+just using the fact that
+
+238
+00:15:06,190 --> 00:15:10,540 
+these are both linear time-invariant
+systems and they can be cascaded in
+
+239
+00:15:10,540 --> 00:15:11,420 
+either order
+
+240
+00:15:11,420 --> 00:15:15,430 
+then means that if we have step response
+
+241
+00:15:15,430 --> 00:15:19,820 
+to our system and that goes through
+differentiator
+
+242
+00:15:19,820 --> 00:15:24,600 
+what must come out again is the impulse
+response
+
+243
+00:15:24,600 --> 00:15:28,940 
+so differentiating the step response we
+get the impulse response
+
+244
+00:15:28,940 --> 00:15:32,459 
+here again is the step response as we
+
+245
+00:15:32,459 --> 00:15:37,459 
+just worked it out this time for you
+next step if we differentiate
+
+246
+00:15:37,459 --> 00:15:40,769 
+we have then since the step response
+
+247
+00:15:40,769 --> 00:15:44,660 
+is the product of two terms the
+derivative a product is the sum
+
+248
+00:15:44,660 --> 00:15:48,490 
+the derivatives and carrying that
+algebra through
+
+249
+00:15:48,490 --> 00:15:51,860 
+and using the fact that the derivative
+the step
+
+250
+00:15:51,860 --> 00:15:55,170 
+is an impulse finally we come down
+
+251
+00:15:55,170 --> 00:15:58,750 
+to this statement for the impulse
+response
+
+252
+00:15:58,750 --> 00:16:01,899 
+and then recognizing that this is but
+I'm
+
+253
+00:16:01,899 --> 00:16:04,949 
+function times and in polls and we know
+
+254
+00:16:04,949 --> 00:16:08,660 
+that a time function times in polls
+takes on
+
+255
+00:16:08,660 --> 00:16:13,040 
+the value at the time that the impulse
+occurs
+
+256
+00:16:13,040 --> 00:16:17,360 
+then this term is simply 0
+
+257
+00:16:17,360 --> 00:16:20,610 
+and the impulse response then
+
+258
+00:16:20,610 --> 00:16:23,910 
+finally is an exponential this for
+
+259
+00:16:23,910 --> 00:16:28,000 
+and this is the peking exponential for a
+positive
+
+260
+00:16:28,000 --> 00:16:32,240 
+it's a growing exponentially for a
+negative and
+
+261
+00:16:32,240 --> 00:16:36,709 
+recall that as we talked about
+previously
+
+262
+00:16:36,709 --> 00:16:40,430 
+a system is a linear time-invariant
+system is stable
+
+263
+00:16:40,430 --> 00:16:44,310 
+if its impulse response is absolutely
+integral
+
+264
+00:16:44,310 --> 00:16:49,000 
+for this particular case this impulse
+response
+
+265
+00:16:49,000 --> 00:16:52,070 
+is absolutely integral provided that
+
+266
+00:16:52,070 --> 00:16:55,430 
+the exponential factor a
+
+267
+00:16:55,430 --> 00:16:58,960 
+is greater than 0
+
+268
+00:16:58,960 --> 00:17:02,130 
+okay so what we've seen then is the
+
+269
+00:17:02,130 --> 00:17:07,220 
+impulse response for system described by
+a linear constant coefficient
+
+270
+00:17:07,220 --> 00:17:08,600 
+differential equation
+
+271
+00:17:08,600 --> 00:17:11,810 
+where in addition we will impose
+causality
+
+272
+00:17:11,810 --> 00:17:15,760 
+when you're ready in time invariance
+essentially through the initial
+
+273
+00:17:15,760 --> 00:17:16,580 
+conditions
+
+274
+00:17:16,580 --> 00:17:19,539 
+love initial rest
+
+275
+00:17:19,539 --> 00:17:23,389 
+now pretty much the same kinds of things
+happen
+
+276
+00:17:23,389 --> 00:17:26,839 
+with difference equations as we've gone
+through
+
+277
+00:17:26,839 --> 00:17:30,730 
+with differential equations in
+particular
+
+278
+00:17:30,730 --> 00:17:33,850 
+again let me remind you love the form
+love
+
+279
+00:17:33,850 --> 00:17:37,320 
+and aunt order when your constant
+coefficient difference equation
+
+280
+00:17:37,320 --> 00:17:41,490 
+its as I indicate here and
+
+281
+00:17:41,490 --> 00:17:47,059 
+again a linear combination this time the
+late versions of the output equal to a
+
+282
+00:17:47,059 --> 00:17:48,230 
+linear combination
+
+283
+00:17:48,230 --> 00:17:52,559 
+up the late versions love the input once
+again
+
+284
+00:17:52,559 --> 00:17:56,770 
+the difference equation is not
+
+285
+00:17:56,770 --> 00:18:01,190 
+a complete specification the system
+because we can and to the response
+
+286
+00:18:01,190 --> 00:18:04,660 
+any homogeneous solution in other words
+
+287
+00:18:04,660 --> 00:18:08,340 
+any solution that satisfies the
+homogeneous equation
+
+288
+00:18:08,340 --> 00:18:12,000 
+in the summer those well also satisfy
+the original
+
+289
+00:18:12,000 --> 00:18:17,519 
+difference equation so if we have
+
+290
+00:18:17,519 --> 00:18:21,380 
+a particular response that satisfies
+
+291
+00:18:21,380 --> 00:18:25,289 
+the difference equation then ending to
+that
+
+292
+00:18:25,289 --> 00:18:31,039 
+any response there is a solution to the
+homogeneous equation
+
+293
+00:18:31,039 --> 00:18:36,630 
+will also be a solution to the total
+equation
+
+294
+00:18:36,630 --> 00:18:41,340 
+the homogeneous solution again is of the
+form
+
+295
+00:18:41,340 --> 00:18:45,190 
+of a linear combination of exponentials
+here
+
+296
+00:18:45,190 --> 00:18:49,190 
+we have the homogeneous equation as with
+
+297
+00:18:49,190 --> 00:18:52,649 
+differential equations we can
+
+298
+00:18:52,649 --> 00:18:55,820 
+guests or impose solutions for
+
+299
+00:18:55,820 --> 00:18:59,409 
+eight times an exponential when we
+substitute this
+
+300
+00:18:59,409 --> 00:19:02,710 
+into the homogeneous equation we then
+end up
+
+301
+00:19:02,710 --> 00:19:07,289 
+with equation that i've indicated here
+we recognize again
+
+302
+00:19:07,289 --> 00:19:11,799 
+there a the amplitude
+
+303
+00:19:11,799 --> 00:19:15,070 
+and seats at the end
+
+304
+00:19:15,070 --> 00:19:18,149 
+this exponential factor cancel out
+
+305
+00:19:18,149 --> 00:19:22,220 
+and so this equation is satisfied
+
+306
+00:19:22,220 --> 00:19:26,200 
+for any values love see
+
+307
+00:19:26,200 --> 00:19:31,000 
+that satisfy this equation and
+
+308
+00:19:31,000 --> 00:19:34,009 
+there are and roots C-one through Z and
+
+309
+00:19:34,009 --> 00:19:37,909 
+and so finally the form for the
+homogeneous solution
+
+310
+00:19:37,909 --> 00:19:42,440 
+is a linear combination love capital and
+
+311
+00:19:42,440 --> 00:19:46,120 
+exponentials capital and is the order
+the equation
+
+312
+00:19:46,120 --> 00:19:50,809 
+with each of those exponentials the
+ample to factor is undetermined
+
+313
+00:19:50,809 --> 00:19:54,480 
+and needs to be determined in some way
+through
+
+314
+00:19:54,480 --> 00:19:57,549 
+the imposition love appropriate
+
+315
+00:19:57,549 --> 00:20:02,010 
+initial conditions are boundary
+conditions
+
+316
+00:20:02,010 --> 00:20:05,050 
+so the general form then
+
+317
+00:20:05,050 --> 00:20:08,190 
+for the solution to the difference
+equation
+
+318
+00:20:08,190 --> 00:20:11,210 
+is
+
+319
+00:20:11,210 --> 00:20:14,899 
+some with the exponentials plus any
+particular solution
+
+320
+00:20:14,899 --> 00:20:20,580 
+its through auxiliary conditions that we
+determine
+
+321
+00:20:20,580 --> 00:20:23,610 
+these coefficients we have
+
+322
+00:20:23,610 --> 00:20:27,490 
+and undetermined coefficients and so
+
+323
+00:20:27,490 --> 00:20:31,909 
+we require capital and auxiliary
+conditions
+
+324
+00:20:31,909 --> 00:20:35,500 
+for example some set values
+
+325
+00:20:35,500 --> 00:20:38,639 
+of the output at and this thing instance
+
+326
+00:20:38,639 --> 00:20:41,220 
+time
+
+327
+00:20:41,220 --> 00:20:42,080 
+now this
+
+328
+00:20:42,080 --> 00:20:45,350 
+was the same as with differential
+equations in the case a differential
+
+329
+00:20:45,350 --> 00:20:47,590 
+equations we talked about specifying
+
+330
+00:20:47,590 --> 00:20:51,210 
+the value of the output and its
+derivatives and
+
+331
+00:20:51,210 --> 00:20:54,370 
+there we indicated dead for linearity
+
+332
+00:20:54,370 --> 00:20:58,670 
+what we required when the arity what we
+require
+
+333
+00:20:58,670 --> 00:21:02,080 
+is that the auxiliary conditions 30
+
+334
+00:21:02,080 --> 00:21:05,650 
+and the same thing applies here for the
+same reason
+
+335
+00:21:05,650 --> 00:21:10,910 
+namely if the system is to be linear and
+the response if there's no input must be
+
+336
+00:21:10,910 --> 00:21:13,460 
+equal to 0
+
+337
+00:21:13,460 --> 00:21:15,800 
+in addition what
+
+338
+00:21:15,800 --> 00:21:18,760 
+we may want to impose on the system is
+
+339
+00:21:18,760 --> 00:21:22,200 
+that it be causal and in addition to
+linear
+
+340
+00:21:22,200 --> 00:21:25,750 
+time-invariant and with that requires
+again
+
+341
+00:21:25,750 --> 00:21:30,700 
+is that it the auxiliary conditions be
+consistent with
+
+342
+00:21:30,700 --> 00:21:33,810 
+initial rest namely that if
+
+343
+00:21:33,810 --> 00:21:37,150 
+the input is zero prior to some time
+
+344
+00:21:37,150 --> 00:21:42,409 
+in the output is zero prior to the same
+time
+
+345
+00:21:42,409 --> 00:21:45,429 
+okay so we've seen a very direct
+parallel
+
+346
+00:21:45,429 --> 00:21:48,730 
+so far between differential equations
+
+347
+00:21:48,730 --> 00:21:52,230 
+and difference equations
+
+348
+00:21:52,230 --> 00:21:55,600 
+in fact one difference between them dead
+
+349
+00:21:55,600 --> 00:21:58,770 
+in some sense makes difference equations
+
+350
+00:21:58,770 --> 00:22:02,100 
+easier to deal with in some situations
+is dead
+
+351
+00:22:02,100 --> 00:22:06,030 
+in contrast to a differential equation a
+
+352
+00:22:06,030 --> 00:22:09,040 
+difference equation if we assume
+causality
+
+353
+00:22:09,040 --> 00:22:12,640 
+in fact is and explicit
+
+354
+00:22:12,640 --> 00:22:15,860 
+input-output relationship for the system
+now let me
+
+355
+00:22:15,860 --> 00:22:18,669 
+show you what I mean
+
+356
+00:22:18,669 --> 00:22:23,190 
+let's consider the n-th order difference
+equation as i've indicated here
+
+357
+00:22:23,190 --> 00:22:27,010 
+and let's assume that we're imposing
+causality
+
+358
+00:22:27,010 --> 00:22:30,679 
+so there'd the output can only depend
+
+359
+00:22:30,679 --> 00:22:35,000 
+on prior values at the input and
+therefore on fire values at the output
+
+360
+00:22:35,000 --> 00:22:39,020 
+well we can simply rearrange this
+equation
+
+361
+00:22:39,020 --> 00:22:43,640 
+solving for Y have an the leading term
+with cable 0
+
+362
+00:22:43,640 --> 00:22:48,500 
+taking all the other turns over to the
+right side of the equation
+
+363
+00:22:48,500 --> 00:22:52,659 
+and we then have a workers if equation
+
+364
+00:22:52,659 --> 00:22:58,030 
+namely that an equation expresses the
+output interns
+
+365
+00:22:58,030 --> 00:23:01,679 
+love prior values if the input which is
+this term
+
+366
+00:23:01,679 --> 00:23:05,660 
+and prior values at the output
+
+367
+00:23:05,660 --> 00:23:09,190 
+and so if in fact we have this equation
+running
+
+368
+00:23:09,190 --> 00:23:12,660 
+then once it started we know how to
+compute
+
+369
+00:23:12,660 --> 00:23:16,720 
+the output for the next time
+
+370
+00:23:16,720 --> 00:23:17,749 
+well
+
+371
+00:23:17,749 --> 00:23:21,059 
+how do we get started the way we get it
+started of course
+
+372
+00:23:21,059 --> 00:23:24,119 
+is through the appropriate said love
+
+373
+00:23:24,119 --> 00:23:28,549 
+initial conditions are boundary
+conditions and if for example
+
+374
+00:23:28,549 --> 00:23:32,129 
+we assume initial rest corresponding to
+a causal when you're time-invariant
+
+375
+00:23:32,129 --> 00:23:33,190 
+system
+
+376
+00:23:33,190 --> 00:23:36,579 
+then if the input is zero up until
+sometime
+
+377
+00:23:36,579 --> 00:23:40,909 
+the output must be zero up until that
+time and Matt in essence
+
+378
+00:23:40,909 --> 00:23:44,989 
+helps us get the equation started well
+let's look at this
+
+379
+00:23:44,989 --> 00:23:48,619 
+specifically in the context love a
+
+380
+00:23:48,619 --> 00:23:51,679 
+first-order difference equation so let's
+take
+
+381
+00:23:51,679 --> 00:23:54,799 
+a first-order difference equation
+
+382
+00:23:54,799 --> 00:23:57,580 
+as i've indicated here
+
+383
+00:23:57,580 --> 00:24:01,980 
+and so we have an equation that tells us
+that why I have and minus eight times
+
+384
+00:24:01,980 --> 00:24:03,500 
+wider than -1
+
+385
+00:24:03,500 --> 00:24:06,760 
+is equal to exit
+
+386
+00:24:06,760 --> 00:24:09,760 
+now if we want this to correspond to
+
+387
+00:24:09,760 --> 00:24:13,530 
+a causal linear time-invariant system we
+
+388
+00:24:13,530 --> 00:24:17,420 
+oppose initial impose initial rest on it
+we can
+
+389
+00:24:17,420 --> 00:24:21,160 
+rewrite the first-order difference
+equation by taking
+
+390
+00:24:21,160 --> 00:24:24,280 
+the term involving y ven -1
+
+391
+00:24:24,280 --> 00:24:28,230 
+over to the right hand side of the
+equation
+
+392
+00:24:28,230 --> 00:24:32,210 
+right now this gives us a workers if
+equation
+
+393
+00:24:32,210 --> 00:24:38,070 
+that expresses the output interns the
+input and past values at the output
+
+394
+00:24:38,070 --> 00:24:42,370 
+and since we've impose causality
+
+395
+00:24:42,370 --> 00:24:46,150 
+and if we're talking about a linear
+time-invariant system
+
+396
+00:24:46,150 --> 00:24:50,960 
+we can now inquire as to what the
+impulse responses and we know of course
+
+397
+00:24:50,960 --> 00:24:52,440 
+that the impulse response
+
+398
+00:24:52,440 --> 00:24:56,609 
+charles is everything that we need to
+know about the system
+
+399
+00:24:56,609 --> 00:25:01,309 
+okay so let's shoes and input which is
+
+400
+00:25:01,309 --> 00:25:04,709 
+an impulse so the impulse response
+
+401
+00:25:04,709 --> 00:25:08,099 
+is Beltre van corresponding
+
+402
+00:25:08,099 --> 00:25:11,789 
+to the exit and appear plus eighty Delta
+
+403
+00:25:11,789 --> 00:25:15,749 
+love this should be a chip N -1
+
+404
+00:25:15,749 --> 00:25:20,650 
+and let me just correct that this is a
+chip N -1
+
+405
+00:25:20,650 --> 00:25:24,050 
+so we have the impulse response as Delta
+van
+
+406
+00:25:24,050 --> 00:25:28,470 
+was eight times a Japan -1
+
+407
+00:25:28,470 --> 00:25:31,620 
+now from initial rest we know
+
+408
+00:25:31,620 --> 00:25:36,630 
+bad since the input namely an impulse is
+0 for and less than zero
+
+409
+00:25:36,630 --> 00:25:40,140 
+the impulse response is likewise 0
+
+410
+00:25:40,140 --> 00:25:43,180 
+for and less 0 and now
+
+411
+00:25:43,180 --> 00:25:47,350 
+let's work out what 80 its well
+
+412
+00:25:47,350 --> 00:25:50,860 
+80 with an equal 0 is
+
+413
+00:25:50,860 --> 00:25:54,290 
+delta up zero plus eight times
+
+414
+00:25:54,290 --> 00:25:57,740 
+a chip N -1 HRN minus 10
+
+415
+00:25:57,740 --> 00:26:04,740 
+and so h0 is equal to 1
+
+416
+00:26:05,000 --> 00:26:08,370 
+okay now that we have a chance 0 we can
+figure at H
+
+417
+00:26:08,370 --> 00:26:11,750 
+one by running this recursive equations
+
+418
+00:26:11,750 --> 00:26:15,510 
+so 8 you've won is
+
+419
+00:26:15,510 --> 00:26:18,720 
+Delta love one which is zero
+
+420
+00:26:18,720 --> 00:26:22,310 
+plus eight times h0 which we just
+figured out as one
+
+421
+00:26:22,310 --> 00:26:27,810 
+so HR one is equal to a and if we carry
+this through
+
+422
+00:26:27,810 --> 00:26:32,030 
+will have a chip to equal to a squared
+and
+
+423
+00:26:32,030 --> 00:26:36,530 
+this will continue on and in fact we can
+recognize
+
+424
+00:26:36,530 --> 00:26:40,370 
+by looking at this and how we would
+expect these terms to build
+
+425
+00:26:40,370 --> 00:26:44,100 
+we would see that the impulse response a
+Japan
+
+426
+00:26:44,100 --> 00:26:48,160 
+in fact -ism form a to the end times
+
+427
+00:26:48,160 --> 00:26:50,659 
+you have an
+
+428
+00:26:50,659 --> 00:26:54,019 
+and we also can recognize then dead
+
+429
+00:26:54,019 --> 00:26:58,720 
+this corresponds to stable system
+
+430
+00:26:58,720 --> 00:27:01,800 
+if and only if the impulse response
+
+431
+00:27:01,800 --> 00:27:06,300 
+which is what we just figured out if and
+only if the impulse response
+
+432
+00:27:06,300 --> 00:27:10,100 
+is absolutely so noble and what that
+will require
+
+433
+00:27:10,100 --> 00:27:17,039 
+is that the magnitude a the less
+
+434
+00:27:17,039 --> 00:27:21,899 
+okay now we impose causality linear
+ready in time invariance
+
+435
+00:27:21,899 --> 00:27:25,210 
+and generated a solution recur simply
+
+436
+00:27:25,210 --> 00:27:29,590 
+and now of course if we want to generate
+the more general
+
+437
+00:27:29,590 --> 00:27:32,610 
+center solutions to this difference
+equation
+
+438
+00:27:32,610 --> 00:27:36,500 
+we can't do that by adding all of the
+
+439
+00:27:36,500 --> 00:27:40,529 
+homogeneous solutions namely all the
+solutions to satisfy the homogeneous
+
+440
+00:27:40,529 --> 00:27:43,340 
+equation so
+
+441
+00:27:43,340 --> 00:27:47,270 
+here we have the causal linear
+time-invariant
+
+442
+00:27:47,270 --> 00:27:50,270 
+impulse response in fact
+
+443
+00:27:50,270 --> 00:27:56,120 
+with an impulse input all of the
+possible solutions
+
+444
+00:27:56,120 --> 00:27:59,480 
+are that impulse response plus
+
+445
+00:27:59,480 --> 00:28:05,000 
+the homogeneous solutions the
+homogeneous solution is the solution
+
+446
+00:28:05,000 --> 00:28:08,270 
+that satisfies the homogeneous equation
+
+447
+00:28:08,270 --> 00:28:11,289 
+that will in general
+
+448
+00:28:11,289 --> 00:28:14,890 
+believe the form an amplitude factor
+
+449
+00:28:14,890 --> 00:28:18,130 
+times an exponential factor and
+
+450
+00:28:18,130 --> 00:28:21,130 
+if we substitute this into this equation
+
+451
+00:28:21,130 --> 00:28:24,149 
+then we see that the homogeneous
+
+452
+00:28:24,149 --> 00:28:27,580 
+equation is satisfied for any values
+have a
+
+453
+00:28:27,580 --> 00:28:31,600 
+in any values see that satisfy
+
+454
+00:28:31,600 --> 00:28:36,130 
+this equation again as we did with
+differential equations
+
+455
+00:28:36,130 --> 00:28:43,130 
+the factor Amy cancels out and also in
+fact I can cancel out is either the N
+
+456
+00:28:43,640 --> 00:28:47,080 
+there and seat to the end here
+
+457
+00:28:47,080 --> 00:28:51,799 
+and so what we're left with is a
+statement that tells us
+
+458
+00:28:51,799 --> 00:28:54,990 
+then dead the homogeneous
+
+459
+00:28:54,990 --> 00:28:58,080 
+solution is over for AC to the end
+
+460
+00:28:58,080 --> 00:29:02,020 
+for any ban you capital A and any value
+
+461
+00:29:02,020 --> 00:29:05,720 
+see it satisfies this equation and
+
+462
+00:29:05,720 --> 00:29:08,840 
+that values the in particular is the
+
+463
+00:29:08,840 --> 00:29:12,159 
+people today so the homogeneous solution
+then
+
+464
+00:29:12,159 --> 00:29:16,779 
+is any exponential this form with any
+amplitude factor
+
+465
+00:29:16,779 --> 00:29:20,669 
+and so the family of solutions with an
+impulse
+
+466
+00:29:20,669 --> 00:29:24,120 
+input is the solution
+
+467
+00:29:24,120 --> 00:29:28,580 
+corresponding to the system being cause
+a linear and time-invariant
+
+468
+00:29:28,580 --> 00:29:32,040 
+plus the homogeneous sir
+
+469
+00:29:32,040 --> 00:29:33,000 
+if
+
+470
+00:29:33,000 --> 00:29:37,000 
+we impose causality Lenny a ready in
+time invariance
+
+471
+00:29:37,000 --> 00:29:40,820 
+on the system then of course that
+additional
+
+472
+00:29:40,820 --> 00:29:44,510 
+exponential factor will be 0 in other
+words capital A
+
+473
+00:29:44,510 --> 00:29:48,579 
+is 0
+
+474
+00:29:48,579 --> 00:29:53,289 
+okay now in we seen the
+
+475
+00:29:53,289 --> 00:29:56,250 
+differential equations and difference
+equations interns
+
+476
+00:29:56,250 --> 00:29:57,970 
+love
+
+477
+00:29:57,970 --> 00:30:01,460 
+the fact there there are families have
+solutions
+
+478
+00:30:01,460 --> 00:30:05,090 
+and in order to get causality Lenny a
+ready in time
+
+479
+00:30:05,090 --> 00:30:09,510 
+variance requires imposing a particular
+set initial conditions namely
+
+480
+00:30:09,510 --> 00:30:12,470 
+imposing initial rest on the system
+
+481
+00:30:12,470 --> 00:30:17,039 
+let's now look at the difference
+equation
+
+482
+00:30:17,039 --> 00:30:23,200 
+and then later the differential equation
+interpreted in block diagrams
+
+483
+00:30:23,200 --> 00:30:26,570 
+now p the difference equation at
+
+484
+00:30:26,570 --> 00:30:30,440 
+I just simply repeated here is why I
+have an
+
+485
+00:30:30,440 --> 00:30:33,700 
+is accident was a white van -1
+
+486
+00:30:33,700 --> 00:30:36,830 
+where I've taken that the late term
+
+487
+00:30:36,830 --> 00:30:40,640 
+over to the right hand side of the
+equation so in effect
+
+488
+00:30:40,640 --> 00:30:44,450 
+what on imposing on this system is
+causality
+
+489
+00:30:44,450 --> 00:30:47,450 
+I'm assuming that if I know the past
+history
+
+490
+00:30:47,450 --> 00:30:51,250 
+the input and the output I can determine
+
+491
+00:30:51,250 --> 00:30:53,960 
+the next value the out
+
+492
+00:30:53,960 --> 00:30:57,810 
+well we can in fact draw a block diagram
+
+493
+00:30:57,810 --> 00:31:01,500 
+represents that equation the equation
+says
+
+494
+00:31:01,500 --> 00:31:04,930 
+we take exit and for any given bad you
+
+495
+00:31:04,930 --> 00:31:09,390 
+a van say n0 whatever bad you were
+computing the output were
+
+496
+00:31:09,390 --> 00:31:12,870 
+we take the input at that time
+
+497
+00:31:12,870 --> 00:31:16,429 
+and and to it the factor a
+
+498
+00:31:16,429 --> 00:31:22,149 
+times the output value that we
+calculated last time so
+
+499
+00:31:22,149 --> 00:31:26,700 
+if we have excessive and which is our
+input
+
+500
+00:31:26,700 --> 00:31:29,680 
+and if we have why I have and which is
+our output
+
+501
+00:31:29,680 --> 00:31:33,640 
+we in fact can't get why I have an
+
+502
+00:31:33,640 --> 00:31:37,480 
+by taking the last value why event
+
+503
+00:31:37,480 --> 00:31:41,190 
+indicated here by putting why I have an
+
+504
+00:31:41,190 --> 00:31:45,450 
+threw it away multiplying Matt
+
+505
+00:31:45,450 --> 00:31:49,050 
+by the factor
+
+506
+00:31:49,050 --> 00:31:51,310 
+a
+
+507
+00:31:51,310 --> 00:31:56,080 
+and then Anning that result
+
+508
+00:31:56,080 --> 00:31:57,809 
+to
+
+509
+00:31:57,809 --> 00:31:59,960 
+the input
+
+510
+00:31:59,960 --> 00:32:03,200 
+and the result the doing that is
+
+511
+00:32:03,200 --> 00:32:05,460 
+why event
+
+512
+00:32:05,460 --> 00:32:08,500 
+so the way this block diagram
+
+513
+00:32:08,500 --> 00:32:13,059 
+might be interpreted for example as an
+algorithm is this a
+
+514
+00:32:13,059 --> 00:32:17,070 
+dead we take exit Van add to it
+
+515
+00:32:17,070 --> 00:32:22,030 
+eight times the previous value the
+output that some gives us
+
+516
+00:32:22,030 --> 00:32:26,380 
+the current value of the output which we
+then put out of the system
+
+517
+00:32:26,380 --> 00:32:30,440 
+and also put into a delay element or
+
+518
+00:32:30,440 --> 00:32:35,240 
+basically it was stored register to use
+on the next generation a recursion
+
+519
+00:32:35,240 --> 00:32:40,130 
+now how do we get this started well we
+know that the difference equation
+
+520
+00:32:40,130 --> 00:32:41,880 
+requires initial conditions
+
+521
+00:32:41,880 --> 00:32:44,929 
+and in fact the initial conditions
+
+522
+00:32:44,929 --> 00:32:48,480 
+correspond to what we store
+
+523
+00:32:48,480 --> 00:32:52,160 
+in that the late register when this
+block diagram
+
+524
+00:32:52,160 --> 00:32:55,320 
+equation initially starts up
+
+525
+00:32:55,320 --> 00:32:58,700 
+okay now let's look at
+
+526
+00:32:58,700 --> 00:33:02,320 
+this for the case %uh difference
+equations
+
+527
+00:33:02,320 --> 00:33:06,670 
+more generally
+
+528
+00:33:06,670 --> 00:33:13,280 
+so what we said is dead we can calculate
+the output by
+
+529
+00:33:13,280 --> 00:33:16,770 
+having previous values that the input
+
+530
+00:33:16,770 --> 00:33:20,440 
+previous values at the output and
+forming
+
+531
+00:33:20,440 --> 00:33:24,490 
+the appropriate linear combination so
+
+532
+00:33:24,490 --> 00:33:27,559 
+let's just build up the more general
+block diagram
+
+533
+00:33:27,559 --> 00:33:31,890 
+that would correspond to this
+
+534
+00:33:31,890 --> 00:33:35,730 
+and what it says is that we want to have
+a mechanism
+
+535
+00:33:35,730 --> 00:33:41,470 
+restoring past values the input in a
+mechanism for story past values at the
+
+536
+00:33:41,470 --> 00:33:41,990 
+output
+
+537
+00:33:41,990 --> 00:33:45,440 
+and i've indicated that on this figure
+
+538
+00:33:45,440 --> 00:33:48,630 
+so far by a chain love
+
+539
+00:33:48,630 --> 00:33:52,250 
+the layout its indicating
+
+540
+00:33:52,250 --> 00:33:55,390 
+that whatever what
+
+541
+00:33:55,390 --> 00:33:58,580 
+the output each delay is the input
+
+542
+00:33:58,580 --> 00:34:02,450 
+delayed by one time it's
+
+543
+00:34:02,450 --> 00:34:06,100 
+or or interval and so
+
+544
+00:34:06,100 --> 00:34:10,619 
+what we see down this chain of the
+ladies are the late replications
+
+545
+00:34:10,619 --> 00:34:14,200 
+love the input and what we see
+
+546
+00:34:14,200 --> 00:34:18,000 
+on the other chain is delayed
+
+547
+00:34:18,000 --> 00:34:22,940 
+replications love the output
+
+548
+00:34:22,940 --> 00:34:26,950 
+now the difference equation says that we
+want to take these
+
+549
+00:34:26,950 --> 00:34:31,169 
+and multiply them by the appropriate
+coefficients
+
+550
+00:34:31,169 --> 00:34:34,899 
+the coefficients in the difference
+equation and so we can do that
+
+551
+00:34:34,899 --> 00:34:38,470 
+as i've indicated here so
+
+552
+00:34:38,470 --> 00:34:42,010 
+now we have these delay elements each
+multiplied
+
+553
+00:34:42,010 --> 00:34:46,119 
+by the appropriate coefficients on the
+input and by
+
+554
+00:34:46,119 --> 00:34:51,089 
+appropriate coefficients on the output
+those are then
+
+555
+00:34:51,089 --> 00:34:54,579 
+songs together and
+
+556
+00:34:54,579 --> 00:34:59,150 
+so we now what's on these and what's on
+these
+
+557
+00:34:59,150 --> 00:35:02,760 
+after we've some these we want to add
+
+558
+00:35:02,760 --> 00:35:06,900 
+those together and there's a factor 1
+over 80 that comes in
+
+559
+00:35:06,900 --> 00:35:10,150 
+and that and generates are out
+
+560
+00:35:10,150 --> 00:35:13,440 
+and so this in fact and
+
+561
+00:35:13,440 --> 00:35:19,579 
+represents a block diagram which is a
+general block diagram for implementing
+
+562
+00:35:19,579 --> 00:35:23,099 
+war representing near constant
+coefficient difference
+
+563
+00:35:23,099 --> 00:35:25,069 
+wage
+
+564
+00:35:25,069 --> 00:35:29,420 
+now if you think about what it means in
+terms of what's a computer algorithm or
+
+565
+00:35:29,420 --> 00:35:30,589 
+a piece of hardware
+
+566
+00:35:30,589 --> 00:35:34,690 
+in fact this block diagram is a recipe
+or algorithm for doing the
+
+567
+00:35:34,690 --> 00:35:35,680 
+implementation
+
+568
+00:35:35,680 --> 00:35:39,500 
+by it's important to
+
+569
+00:35:39,500 --> 00:35:43,040 
+recognize even at this point dad it's
+only one
+
+570
+00:35:43,040 --> 00:35:47,520 
+many possible algorithms or
+implementations for this difference
+
+571
+00:35:47,520 --> 00:35:49,000 
+wage
+
+572
+00:35:49,000 --> 00:35:51,369 
+just for example
+
+573
+00:35:51,369 --> 00:35:57,080 
+I can consider that equation
+
+574
+00:35:57,080 --> 00:35:59,350 
+core that block diagram
+
+575
+00:35:59,350 --> 00:36:04,060 
+and here I've redrawn at so
+
+576
+00:36:04,060 --> 00:36:08,170 
+here once again I have the same block
+diagram that we just saw
+
+577
+00:36:08,170 --> 00:36:12,740 
+and I can recognize for example
+
+578
+00:36:12,740 --> 00:36:16,360 
+that this in essence corresponds to
+
+579
+00:36:16,360 --> 00:36:19,570 
+to linear time-invariant systems
+
+580
+00:36:19,570 --> 00:36:22,210 
+in cascade
+
+581
+00:36:22,210 --> 00:36:25,420 
+now that assumes of course that my
+
+582
+00:36:25,420 --> 00:36:29,550 
+initial conditions are such dad I that
+the system is in fact
+
+583
+00:36:29,550 --> 00:36:34,210 
+when you're and that in turn requires
+that we're assuming initial rest namely
+
+584
+00:36:34,210 --> 00:36:36,080 
+before the input does anything
+
+585
+00:36:36,080 --> 00:36:40,690 
+other than 0 there are just zero value
+stored in the registers
+
+586
+00:36:40,690 --> 00:36:45,220 
+but assuming that it corresponds to a
+linear time-invariant system
+
+587
+00:36:45,220 --> 00:36:50,220 
+this is a cascade to linear
+time-invariant systems
+
+588
+00:36:50,220 --> 00:36:53,850 
+we know that two linear time-invariant
+systems can be cascaded
+
+589
+00:36:53,850 --> 00:36:57,490 
+in either order so in particular I can
+consider
+
+590
+00:36:57,490 --> 00:37:01,320 
+breaking this cascade here and moving
+this block
+
+591
+00:37:01,320 --> 00:37:04,890 
+over to the other side and so let's just
+
+592
+00:37:04,890 --> 00:37:08,660 
+do that
+
+593
+00:37:08,660 --> 00:37:11,040 
+and when I do
+
+594
+00:37:11,040 --> 00:37:13,109 
+I then have
+
+595
+00:37:13,109 --> 00:37:16,200 
+this combination systems
+
+596
+00:37:16,200 --> 00:37:20,210 
+and of course you can ask what advantage
+there is to do in at
+
+597
+00:37:20,210 --> 00:37:23,750 
+and the advantage arises because it the
+fact
+
+598
+00:37:23,750 --> 00:37:27,540 
+there'd in this form
+
+599
+00:37:27,540 --> 00:37:31,570 
+exactly what is stored in these delays
+
+600
+00:37:31,570 --> 00:37:34,780 
+is also stored in the still air
+registers
+
+601
+00:37:34,780 --> 00:37:38,290 
+in other words it's this intermediate
+variable
+
+602
+00:37:38,290 --> 00:37:42,640 
+whatever it is down this chain of delays
+and down this chain of the ladies
+
+603
+00:37:42,640 --> 00:37:46,580 
+and so in fact I can collapse those
+delays
+
+604
+00:37:46,580 --> 00:37:49,650 
+into a single chain of delays and
+
+605
+00:37:49,650 --> 00:37:54,980 
+the network that I'm left with is the
+network that I indicate
+
+606
+00:37:54,980 --> 00:37:59,260 
+I missed you graph where what I've done
+is to simply collapse that
+
+607
+00:37:59,260 --> 00:38:02,380 
+double chain of the ladies into a single
+chain
+
+608
+00:38:02,380 --> 00:38:04,620 
+the waves
+
+609
+00:38:04,620 --> 00:38:08,700 
+now want to ask well what's the
+advantage to doing that and the
+
+610
+00:38:08,700 --> 00:38:09,490 
+advantage
+
+611
+00:38:09,490 --> 00:38:14,290 
+one advantage simply stated is that when
+you think in terms of an implementation
+
+612
+00:38:14,290 --> 00:38:15,550 
+of a difference equation
+
+613
+00:38:15,550 --> 00:38:18,680 
+the lady corresponds to
+
+614
+00:38:18,680 --> 00:38:22,220 
+storage register a memory location and
+by this
+
+615
+00:38:22,220 --> 00:38:26,050 
+by simply using the fact that we can
+interchange the order in which linear
+
+616
+00:38:26,050 --> 00:38:28,180 
+time-invariant systems are cascaded
+
+617
+00:38:28,180 --> 00:38:33,440 
+we can reduce the amount of memory by a
+factor to
+
+618
+00:38:33,440 --> 00:38:35,330 
+okay now
+
+619
+00:38:35,330 --> 00:38:40,440 
+and essentially similar procedure can
+also be used for
+
+620
+00:38:40,440 --> 00:38:44,540 
+differential equations in terms of
+implementation
+
+621
+00:38:44,540 --> 00:38:48,660 
+using block diagrams for the
+interpretation implementations
+
+622
+00:38:48,660 --> 00:38:52,270 
+using like diagrams and let me first do
+that
+
+623
+00:38:52,270 --> 00:38:55,420 
+rather than in general let me first do
+it in the in
+
+624
+00:38:55,420 --> 00:39:00,920 
+the context love a specific example
+
+625
+00:39:00,920 --> 00:39:02,640 
+so
+
+626
+00:39:02,640 --> 00:39:08,250 
+let's consider a when your constant
+coefficient differential equation as
+
+627
+00:39:08,250 --> 00:39:09,490 
+i've indicated here
+
+628
+00:39:09,490 --> 00:39:13,320 
+and I have terms on the left side in
+terms on the right side
+
+629
+00:39:13,320 --> 00:39:18,410 
+and with the differential equation
+
+630
+00:39:18,410 --> 00:39:21,530 
+let's consider taking overturns
+
+631
+00:39:21,530 --> 00:39:24,789 
+over to the right side of the equation
+except
+
+632
+00:39:24,789 --> 00:39:29,650 
+for the highest the residue in the
+output next we
+
+633
+00:39:29,650 --> 00:39:32,809 
+integrate both sides of the equation are
+so that
+
+634
+00:39:32,809 --> 00:39:36,359 
+when we're done we end up with the on
+the left side of the equation
+
+635
+00:39:36,359 --> 00:39:41,119 
+with y ft on the right side of the
+equation with the appropriate number
+
+636
+00:39:41,119 --> 00:39:44,829 
+%uh integrations and so the InterPro
+equation
+
+637
+00:39:44,829 --> 00:39:49,970 
+that will get is for this example y ft
+the output is except the
+
+638
+00:39:49,970 --> 00:39:53,510 
+plus be the scale factor times the
+integral
+
+639
+00:39:53,510 --> 00:39:57,950 
+the input and -8 at scale factor times
+the integral
+
+640
+00:39:57,950 --> 00:40:00,970 
+the output so to
+
+641
+00:40:00,970 --> 00:40:04,420 
+form the output in a block diagram turns
+
+642
+00:40:04,420 --> 00:40:07,490 
+we form a linear combination of the
+input
+
+643
+00:40:07,490 --> 00:40:11,020 
+scaled in to grow the input and a scale
+
+644
+00:40:11,020 --> 00:40:14,119 
+integral love the output all of that and
+it together
+
+645
+00:40:14,119 --> 00:40:17,710 
+so we need in addition to
+
+646
+00:40:17,710 --> 00:40:21,299 
+the input we need the integral
+
+647
+00:40:21,299 --> 00:40:24,619 
+love the input and so this box indicates
+an integrator
+
+648
+00:40:24,619 --> 00:40:28,029 
+in addition to the output we need
+
+649
+00:40:28,029 --> 00:40:31,390 
+the integral the output and now
+
+650
+00:40:31,390 --> 00:40:34,950 
+to for why ft we
+
+651
+00:40:34,950 --> 00:40:38,029 
+multiply the integrated in play
+
+652
+00:40:38,029 --> 00:40:42,359 
+by the scale factor B and
+
+653
+00:40:42,359 --> 00:40:46,800 
+and back to exit C
+
+654
+00:40:46,800 --> 00:40:51,750 
+and retake the integrated output
+multiplied by Minas de
+
+655
+00:40:51,750 --> 00:40:55,280 
+and and to that
+
+656
+00:40:55,280 --> 00:40:58,600 
+the result are the previous addition
+
+657
+00:40:58,600 --> 00:41:02,940 
+and according to the integral equation
+then that forms
+
+658
+00:41:02,940 --> 00:41:05,220 
+the output
+
+659
+00:41:05,220 --> 00:41:08,530 
+so just as we did with the difference
+equation
+
+660
+00:41:08,530 --> 00:41:11,880 
+we've converted the differential
+equation to
+
+661
+00:41:11,880 --> 00:41:16,240 
+an integral equation and we have a block
+diagram for very similar
+
+662
+00:41:16,240 --> 00:41:20,740 
+to what we had in the case the
+difference equation now the initial
+
+663
+00:41:20,740 --> 00:41:22,050 
+conditions of course
+
+664
+00:41:22,050 --> 00:41:25,960 
+are tied up and again how these
+integrators
+
+665
+00:41:25,960 --> 00:41:30,630 
+are initialized assuming that we impose
+initial rest on the system
+
+666
+00:41:30,630 --> 00:41:35,110 
+weekend thinkers the overall system is a
+linear time-invariant system
+
+667
+00:41:35,110 --> 00:41:39,670 
+and it's a cascade one linear
+time-invariant system with the second
+
+668
+00:41:39,670 --> 00:41:43,070 
+so we can in fact
+
+669
+00:41:43,070 --> 00:41:45,650 
+break this
+
+670
+00:41:45,650 --> 00:41:51,120 
+and consider interchanging the order in
+which these two systems a cascade
+
+671
+00:41:51,120 --> 00:41:55,110 
+and so i've indicated that down below
+here
+
+672
+00:41:55,110 --> 00:41:58,670 
+I've simply taken the top block diagram
+
+673
+00:41:58,670 --> 00:42:02,490 
+interchange the order in which the to
+
+674
+00:42:02,490 --> 00:42:06,160 
+systems are cascaded and
+
+675
+00:42:06,160 --> 00:42:09,540 
+here again we can ask what the
+advantages to this
+
+676
+00:42:09,540 --> 00:42:13,310 
+as opposed to the previous one and what
+you can see
+
+677
+00:42:13,310 --> 00:42:16,620 
+just as we saw with the difference
+equation is that
+
+678
+00:42:16,620 --> 00:42:19,830 
+now the integrators both integrators
+
+679
+00:42:19,830 --> 00:42:22,870 
+are integrating the same thing in
+particular
+
+680
+00:42:22,870 --> 00:42:27,140 
+the input to this integrator and the
+input
+
+681
+00:42:27,140 --> 00:42:31,420 
+to this integrator are identical so in
+fact
+
+682
+00:42:31,420 --> 00:42:35,120 
+rather than using this one we can simply
+tap of
+
+683
+00:42:35,120 --> 00:42:39,670 
+from here we can in fact remove this
+integrator
+
+684
+00:42:39,670 --> 00:42:42,540 
+break this connection
+
+685
+00:42:42,540 --> 00:42:46,490 
+and happy and at this point and so
+
+686
+00:42:46,490 --> 00:42:50,710 
+what we've done and by interchange in
+the order in which the systems are
+
+687
+00:42:50,710 --> 00:42:51,710 
+cascaded
+
+688
+00:42:51,710 --> 00:42:56,110 
+is reduced the implementation to the
+implementation
+
+689
+00:42:56,110 --> 00:42:59,620 
+with a single integrated very much
+similar to
+
+690
+00:42:59,620 --> 00:43:02,950 
+what we talked about in the case the
+difference wage
+
+691
+00:43:02,950 --> 00:43:06,400 
+now let's just again with the integral
+equation
+
+692
+00:43:06,400 --> 00:43:10,320 
+way the differential equation looked at
+
+693
+00:43:10,320 --> 00:43:13,850 
+this somewhat more generally again
+
+694
+00:43:13,850 --> 00:43:18,930 
+if we take the differential equation the
+general differential equation
+
+695
+00:43:18,930 --> 00:43:23,330 
+integrated a sufficient number of times
+to convert it to an integral equation
+
+696
+00:43:23,330 --> 00:43:27,570 
+we would then have this cascaded systems
+
+697
+00:43:27,570 --> 00:43:32,160 
+and again if we assume initial rest
+
+698
+00:43:32,160 --> 00:43:35,270 
+so that these are both linear
+time-invariant systems
+
+699
+00:43:35,270 --> 00:43:38,330 
+we can interchange the order in which
+they are cascaded
+
+700
+00:43:38,330 --> 00:43:42,310 
+namely take the second system and
+
+701
+00:43:42,310 --> 00:43:44,809 
+move it
+
+702
+00:43:44,809 --> 00:43:48,260 
+to proceed the first system
+
+703
+00:43:48,260 --> 00:43:51,980 
+and then we recognize is that the input
+to this change
+
+704
+00:43:51,980 --> 00:43:56,359 
+integrators and this change integrators
+is exactly the same
+
+705
+00:43:56,359 --> 00:43:59,880 
+and so in fact we can collapse these
+together
+
+706
+00:43:59,880 --> 00:44:03,680 
+using only one change integrators and
+the system
+
+707
+00:44:03,680 --> 00:44:07,410 
+there we're left with then is system
+
+708
+00:44:07,410 --> 00:44:10,710 
+that looks as i've indicated here so we
+have
+
+709
+00:44:10,710 --> 00:44:14,420 
+now just a single chain integrators
+
+710
+00:44:14,420 --> 00:44:18,490 
+is that a the two sets in
+
+711
+00:44:18,490 --> 00:44:23,060 
+so we've seen that the situation is very
+similar here as it was in the case the
+
+712
+00:44:23,060 --> 00:44:24,230 
+difference equation
+
+713
+00:44:24,230 --> 00:44:28,150 
+again why do we want to cut the number
+integrators in half
+
+714
+00:44:28,150 --> 00:44:33,540 
+well one reason is because integrators
+in effect represent hardware
+
+715
+00:44:33,540 --> 00:44:37,710 
+and if we use half as much if we have
+half as many integrators
+
+716
+00:44:37,710 --> 00:44:41,790 
+then using half as much hard
+
+717
+00:44:41,790 --> 00:44:45,690 
+okay well let me just conclude by
+summarizing
+
+718
+00:44:45,690 --> 00:44:49,250 
+a number of points I indicated at the
+beginning
+
+719
+00:44:49,250 --> 00:44:53,230 
+that linear constant coefficient
+differential equations a difference
+
+720
+00:44:53,230 --> 00:44:54,120 
+equations
+
+721
+00:44:54,120 --> 00:44:58,770 
+will play an important role as linear
+time-invariant systems
+
+722
+00:44:58,770 --> 00:45:03,060 
+throughout this coursing throughout the
+center lectures
+
+723
+00:45:03,060 --> 00:45:06,110 
+I also stress
+
+724
+00:45:06,110 --> 00:45:10,360 
+the fact that differential or difference
+equations
+
+725
+00:45:10,360 --> 00:45:14,250 
+by themselves are not a complete
+specification
+
+726
+00:45:14,250 --> 00:45:17,920 
+the system because of the fact that we
+can and
+
+727
+00:45:17,920 --> 00:45:22,150 
+to any solution a homogeneous
+
+728
+00:45:22,150 --> 00:45:25,600 
+I do we specify the appropriate initial
+conditions
+
+729
+00:45:25,600 --> 00:45:30,640 
+to ensure how do we specify the
+appropriate initial conditions to ensure
+
+730
+00:45:30,640 --> 00:45:31,970 
+that the system
+
+731
+00:45:31,970 --> 00:45:35,000 
+is linear and time-invariant well
+
+732
+00:45:35,000 --> 00:45:40,670 
+the auxiliary information namely the
+initial conditions
+
+733
+00:45:40,670 --> 00:45:43,690 
+dissociated with the system
+
+734
+00:45:43,690 --> 00:45:47,040 
+be causal linear and time-invariant
+
+735
+00:45:47,040 --> 00:45:50,050 
+are the conditions of initial rest
+
+736
+00:45:50,050 --> 00:45:53,280 
+and in fact for most of the cores
+
+737
+00:45:53,280 --> 00:45:57,370 
+what will be interested in systems that
+are in fact cause a linear and
+
+738
+00:45:57,370 --> 00:45:58,330 
+time-invariant
+
+739
+00:45:58,330 --> 00:46:03,810 
+and so we will in fact be assuming
+initial rest conditions
+
+740
+00:46:03,810 --> 00:46:06,050 
+now
+
+741
+00:46:06,050 --> 00:46:09,070 
+as I also indicated their are
+
+742
+00:46:09,070 --> 00:46:12,490 
+a variety of efficient procedures for
+solving differential
+
+743
+00:46:12,490 --> 00:46:16,900 
+and difference equations that we haven't
+yet address and
+
+744
+00:46:16,900 --> 00:46:20,359 
+beginning with the next set of lectures
+will be talking about
+
+745
+00:46:20,359 --> 00:46:23,440 
+for EA transform and much later in the
+course
+
+746
+00:46:23,440 --> 00:46:27,710 
+what's referred to as the apostrophe its
+form for continuous-time
+
+747
+00:46:27,710 --> 00:46:31,319 
+and sea transport for discrete-time and
+what we'll see
+
+748
+00:46:31,319 --> 00:46:36,380 
+is that with the Fourier transform in
+later with the apostasy transform
+
+749
+00:46:36,380 --> 00:46:40,670 
+will have a number love efficient and
+very useful ways
+
+750
+00:46:40,670 --> 00:46:44,970 
+%uh generating the solution for
+
+751
+00:46:44,970 --> 00:46:48,930 
+differential and difference equations
+this under the assumption that the
+
+752
+00:46:48,930 --> 00:46:50,279 
+system is causal
+
+753
+00:46:50,279 --> 00:46:52,660 
+when you're in time very
+
+754
+00:46:52,660 --> 00:46:57,320 
+also will see in addition to the block
+diagram implementations
+
+755
+00:46:57,320 --> 00:47:00,490 
+the systems that we talked about so far
+
+756
+00:47:00,490 --> 00:47:04,320 
+we'll see another a number of other
+useful
+
+757
+00:47:04,320 --> 00:47:09,040 
+implementations that exploit a variety
+of properties associated with
+
+758
+00:47:09,040 --> 00:47:11,300 
+Korean past thank you
+

@@ -1,0 +1,916 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+பின்வரும் உள்ளடக்கத்தை ஒரு கிரியேட்டிவ் காமன்ஸ் உரிமத்தின் கீழ் வழங்கப்படும்
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+உங்கள் ஆதரவு எம்ஐடி ஓபன்கோர்ஸ்வேர் வழங்க தொடர்ந்து உதவும்
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+இலவசமாக உயர்தர கல்வி வளங்கள்
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+நன்கொடை செய்ய அல்லது அவர்களை நூற்றுக்கணக்கான கூடுதல் பொருட்கள் காண
+
+00:00:14,000 --> 00:00:15,000
+courses
+படிப்புகள்
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+0 CW இல் எம்ஐடி ஓபன்கோர்ஸ்வேர் வருகை
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU home the
+என்று எம்ஐடி என்று EDU முகப்பு
+
+00:00:29,000 --> 00:00:31,000
+the
+உருக்கு
+
+00:00:31,000 --> 00:00:33,000
+the
+உருக்கு
+
+00:00:33,000 --> 00:00:40,000
+the in
+இல்
+
+00:00:40,000 --> 00:00:45,000
+the norm
+விதிமுறை
+
+00:00:45,000 --> 00:00:52,000
+are the in discussing the
+விவாதித்து உள்ளன
+
+00:00:57,000 --> 00:01:00,000
+continuous-time and discrete-time Fourier transforms we
+தொடர்ச்சியான நேர மற்றும் தனித்தியங்கும் நேர ஃபோரியர் நாம் உருமாறகிறது
+
+00:01:00,000 --> 00:01:03,000
+developed a number of important properties
+முக்கியமான பண்புகள் பல உருவாக்கப்பட்டுள்ளன
+
+00:01:03,000 --> 00:01:06,000
+to particularly sitting significant ones as I mention
+நான் குறிப்பிட குறிப்பாக குறிப்பிடத்தக்க ஒன்று உட்கார்ந்து
+
+00:01:06,000 --> 00:01:11,000
+at the time are the modulation property and the convolution property
+நேரத்தில் பண்பேற்றம் சொத்து மற்றும் சுழற்சி சொத்து
+
+00:01:11,000 --> 00:01:16,000
+starting with the next lecture the one after this one
+அடுத்த விரிவுரை தொடங்கும் இந்த ஒரு பின் ஒன்றாக
+
+00:01:16,000 --> 00:01:20,000
+will be developing and exploiting some other consequences
+வளரும் மற்றும் வேறு சில விளைவுகளை பயன்படுத்தி
+
+00:01:20,000 --> 00:01:24,000
+the modulation property in today's lecture though I'd like to
+இன்றைய விரிவுரை பண்பேற்றம் சொத்து என்று நான் விரும்புகிறேன்
+
+00:01:24,000 --> 00:01:29,000
+review and expand on the notion of filtering
+ஆய்வு மற்றும் வடிகட்டும் கருத்து விரிவு
+
+00:01:29,000 --> 00:01:33,000
+which as I had mentioned flows more less directly from
+நான் குறிப்பிட்டுள்ள அவர், அதில் இருந்து இன்னும் குறைவாக நேரடியாக பாய்கிறது
+
+00:01:33,000 --> 00:01:38,000
+the convolution property to begin let me just quickly review
+என்னை சீக்கிரம் காண்போம் தொடங்க சுழற்சி சொத்து
+
+00:01:38,000 --> 00:01:43,000
+what the convolution property is both for continuous-time
+சுழற்சி சொத்து இரண்டு தொடர்ச்சியான நேரம் என்ன
+
+00:01:43,000 --> 00:01:47,000
+and for discrete-time the convolution property tells us
+மற்றும் தனி நேரம் சுழற்சி சொத்து நமக்கு சொல்கிறது
+
+00:01:47,000 --> 00:01:50,000
+that the 48 transform
+48 மாற்றும் என்று
+
+00:01:50,000 --> 00:01:54,000
+all the convolution up to time functions
+நேரம் செயல்பாடுகள் வரை அனைத்து சுழற்சி
+
+00:01:54,000 --> 00:01:57,000
+is the product up to 48 transforms
+48 மாற்றமானது தயாரிப்பு வரை
+
+00:01:57,000 --> 00:02:01,000
+now what this means
+இப்போது இந்த என்றால் என்ன
+
+00:02:01,000 --> 00:02:05,000
+in terms love linear time-invariant filters
+அடிப்படையில் நேரியல் நேரம் மாற்றமில்லாத வடிகட்டிகள் அன்பு
+
+00:02:05,000 --> 00:02:09,000
+since we know that the in the time domain the output of a linear
+நாங்கள் தெரியும் என்று களத்தில் உள்ள ஒரு நேர்கோட்டு வெளியீடு
+
+00:02:09,000 --> 00:02:12,000
+time-invariant filter is the convolution
+நேர மாற்றம் வடிகட்டி சுழற்சி ஆகிறது
+
+00:02:12,000 --> 00:02:15,000
+love the input and the impulse response
+உள்ளீடு மற்றும் உந்துவிசை பதில் அன்பு
+
+00:02:15,000 --> 00:02:19,000
+it says essentially then in the frequency domain
+அது அதிர்வெண் களத்தில் அடிப்படையில் கூறுகிறார்
+
+00:02:19,000 --> 00:02:22,000
+that the forty a transformer the output is the product
+நாற்பது ஒரு மின்மாற்றி வெளியீடு தயாரிப்பு என்று
+
+00:02:22,000 --> 00:02:26,000
+of the 48 transform of the impulse response
+48 உந்துவிசை பதில் மாற்றும்
+
+00:02:26,000 --> 00:02:29,000
+namely the frequency response and the Fourier transform
+அதாவது அதிர்வெண் மறுமொழி மற்றும் ஃபோரியர்
+
+00:02:29,000 --> 00:02:35,000
+love the input so the output is described through that product
+அதனால் வெளியீடு என்று தயாரிப்பு மூலம் விவரிக்கப்படுகிறது உள்ளீடு பிடிக்கிறது
+
+00:02:35,000 --> 00:02:38,000
+now recall also
+இப்போது நினைவுகூர
+
+00:02:38,000 --> 00:02:43,000
+bad in developing the four EA transform I interpreted
+நான்கு ஈ.ஏ. மாற்றும் வளரும் மோசமான நான் விளக்கம்
+
+00:02:43,000 --> 00:02:46,000
+the Fourier transform as the complex amplitude
+ஃபோரியர் சிககல்வீச்சம் என மாற்றும்
+
+00:02:46,000 --> 00:02:51,000
+over decomposition of the signal interns have a set of complex exponentials
+சிக்னல் பயிற்சியாளர்களுக்கு சிதைவு சிக்கலான நிகழ்வுஎண் ஒரு கணம் மீது
+
+00:02:51,000 --> 00:02:55,000
+and the frequency response for the convolution property
+மற்றும் சுழற்சி சொத்து அதிர்வெண் மறுமொழி
+
+00:02:55,000 --> 00:03:00,000
+in effect tells us what the amplitudes how to modify the amplitudes
+விளைவு என்ன வீச்சுகள் எப்படி வீச்சுகள் மாற்ற நமக்கு சொல்கிறது
+
+00:03:00,000 --> 00:03:04,000
+avi to those complex exponentials as they go through the system
+அவர்கள் மூலம் சென்று அந்த சிக்கலான நிகழ்வுஎண், AVI,
+
+00:03:04,000 --> 00:03:07,000
+now this led to the notion of filtering
+இப்போது இந்த வடிகட்டல் கருத்து வழிவகுத்தது
+
+00:03:07,000 --> 00:03:13,000
+where the basic concept was that since we can modify
+அடிப்படை கருத்து இருந்தது என்று நாம் மாற்ற முடியாது, ஏனெனில்
+
+00:03:13,000 --> 00:03:16,000
+the airport to %uh each of the exponential
+விமான அதிவேகமான% of இம் ஒவ்வொரு
+
+00:03:16,000 --> 00:03:20,000
+complex exponential components separately weekend for example
+உதாரணமாக சிக்கலான அதிவேகமான பாகங்களை தனித்தனியாக வார
+
+00:03:20,000 --> 00:03:24,000
+retain some love them and totally eliminate others
+சில, அவர்களிடம் அன்பு மற்றும் முற்றிலும் மற்றவர்கள் அகற்ற
+
+00:03:24,000 --> 00:03:28,000
+and this is the basic notion of filtering so
+இந்த வடிகட்டி அடிப்படை கருத்து உள்ளது
+
+00:03:28,000 --> 00:03:32,000
+we have as you recall first evolved the notion
+நீங்கள் முதல் கருத்தை உருவானது நினைவுகூர என, நாம் வேண்டும்
+
+00:03:32,000 --> 00:03:36,000
+in continuous-time all an ideal filter
+தொடர்ச்சியான நேரத்தில் அனைத்து ஒரு சிறந்த வடிகட்டி
+
+00:03:36,000 --> 00:03:40,000
+for example I L a straight year an ideal
+உதாரணமாக நான் எல் ஒரு ஆண்டாக ஒரு இலட்சிய
+
+00:03:40,000 --> 00:03:44,000
+low-pass filter where we pass exactly
+நாம் சரியாக கடந்து அங்கு குறைந்த பாஸ் வடிகட்டி
+
+00:03:44,000 --> 00:03:47,000
+frequency comp phone it's in one band and reject
+அதிர்வெண் பெயர்த்தல் போன் ஒரு இசைக்குழு மற்றும் நிராகரிக்க
+
+00:03:47,000 --> 00:03:51,000
+totally frequency comp ponents in another band
+மற்றொரு இசைக்குழு முற்றிலும் அதிர்வெண் பெயர்த்தல் பேச்சாளர்கள்
+
+00:03:51,000 --> 00:03:55,000
+the van being passed of course referred to as the passband
+நிச்சயமாக கடந்து வேன் கடவுப்பட்டை என குறிப்பிடப்படுகிறது
+
+00:03:55,000 --> 00:04:00,000
+and the ban rejected as the stopping I
+மற்றும் தடை நிறுத்தாமல் நான் என நிராகரித்தார்
+
+00:04:00,000 --> 00:04:03,000
+illustrated here low pass filter we can of course
+நாம் நிச்சயமாக முடியும் விளக்குகிறது இங்கே குறைந்த பாஸ் வடிகட்டி
+
+00:04:03,000 --> 00:04:07,000
+reject the low frequencies and retain
+குறைந்த அதிர்வெண்கள் நிராகரித்து தக்கவைத்து
+
+00:04:07,000 --> 00:04:11,000
+the high frequencies and that then corresponds to
+உயர் அலைவரிசைகளை என்று பின்னர் ஒத்துள்ளது
+
+00:04:11,000 --> 00:04:17,000
+ideal high pass filter or we can just retain frequencies within a band
+சிறந்த உயர் பாஸ் வடிகட்டி அல்லது நாம் தான் ஒரு இசைக்குழு உள்ள அலைவரிசைகளை தக்க வைத்து கொள்ள முடியும்
+
+00:04:17,000 --> 00:04:22,000
+and so I show below what is referred to commonly as
+அதனால் நான் பொதுவாக குறிப்பிடப்படுகிறது என்ன கீழே காண்பிக்கிறேன்
+
+00:04:22,000 --> 00:04:25,000
+a bandpass filter now
+பட்டைகடப்பு வடிகட்டி இப்போது
+
+00:04:25,000 --> 00:04:29,000
+this is what the ideal filters look like
+இந்த சிறந்த வடிகட்டிகள் போன்ற என்ன ஆகிறது
+
+00:04:29,000 --> 00:04:33,000
+for continuous-time for discrete-time we have exactly
+தனி நேரம் தொடர்ச்சியான நேரம் நாம் சரியாக வேண்டும்
+
+00:04:33,000 --> 00:04:36,000
+the same situation namely we have
+அதாவது நாம் அதே நிலைமை
+
+00:04:36,000 --> 00:04:40,000
+an ideal discrete-time low-pass filter which
+ஒரு சிறந்த தனி நேரம் குறைந்த பாஸ் வடிகட்டி இது
+
+00:04:40,000 --> 00:04:44,000
+passes exactly frequencies which are the low frequencies
+குறைந்த அதிர்வெண்கள் சரியாக அதிர்வெண்கள் கடக்கிறது
+
+00:04:44,000 --> 00:04:49,000
+low frequencies of course being around zero and because the periodicity also
+நிச்சயமாக குறைந்த அதிர்வெண்கள் பூஜ்யம் சுற்றி வட்டம் கூட, ஏனெனில் இருப்பது
+
+00:04:49,000 --> 00:04:50,000
+around 2pi
+2pi சுற்றி
+
+00:04:50,000 --> 00:04:54,000
+we show also an ideal
+நாம் ஒரு இலட்சிய மேலும் காண்பிக்கிறோம்
+
+00:04:54,000 --> 00:04:58,000
+high pass filter and a high pass filter
+உயர் பாஸ் வடிகட்டி மற்றும் உயர் பாஸ் வடிகட்டி
+
+00:04:58,000 --> 00:05:02,000
+as i indicated last time passes frequencies around pie
+நான் குறிப்பிட்ட கடைசி நேரத்தில் பை சுற்றி அதிர்வெண்கள் கடக்கிறது
+
+00:05:02,000 --> 00:05:06,000
+and finally below that I show an ideal
+இறுதியாக கீழே நான் ஒரு சிறந்த காண்பிக்கிறேன்
+
+00:05:06,000 --> 00:05:11,000
+bandpass filter a an ideal bandpass filter passing frequencies
+பட்டைகடப்பு அதிர்வெண்கள் கடந்து ஒரு ஒரு சிறந்த பட்டைகடப்பு வடிகட்டி
+
+00:05:11,000 --> 00:05:16,000
+someplace in the range between 0 and pie
+0 மற்றும் பை இடையே எல்லை எங்கேயாவது
+
+00:05:16,000 --> 00:05:20,000
+and recall also bat the basic difference between
+மற்றும் இடையே அடிப்படை வேறுபாடு கூட நினைவு பேட்
+
+00:05:20,000 --> 00:05:24,000
+continuous-time and discrete-time for these filters is that
+தொடர்ச்சியான நேரம் மற்றும் இந்த வடிகட்டிகள் தனி நேரம் என்று
+
+00:05:24,000 --> 00:05:27,000
+the discrete-time versions are of course periodic
+தனி நேரம் பதிப்புகள் நிச்சயமாக கால இருக்கின்றன
+
+00:05:27,000 --> 00:05:32,000
+in frequency now let's look at
+அதிர்வெண் இப்போது பார்ப்போம்
+
+00:05:32,000 --> 00:05:36,000
+these ideal filters and in particular the idea low-pass filter
+இந்த சிறந்த வடிகட்டிகள் மற்றும் குறிப்பாக யோசனை குறைந்த பாஸ் வடிகட்டி
+
+00:05:36,000 --> 00:05:40,000
+in the time domain we have
+நாம் நேரம் டொமைன்
+
+00:05:40,000 --> 00:05:45,000
+the frequency response 0 the idea low-pass filter
+யோசனை குறைந்த பாஸ் வடிகட்டி 0 அதிர்வெண் மறுமொழி
+
+00:05:45,000 --> 00:05:50,000
+and shown below it is the impulse response so here is the frequency
+அது கீழே இங்கே அதிர்வெண் உந்துவிசை பதில் உள்ளது
+
+00:05:50,000 --> 00:05:52,000
+response
+பதில்
+
+00:05:52,000 --> 00:05:55,000
+and below it the impulse response
+அதை கீழே உந்துவிசை பதில்
+
+00:05:55,000 --> 00:05:59,000
+love the ideal low-pass filter
+சிறந்த குறைந்த பாஸ் வடிகட்டி அன்பு
+
+00:05:59,000 --> 00:06:02,000
+and this of course is a sin x over X
+நிச்சயமாக இந்த எக்ஸ் ஒரு sin x ஆகிறது
+
+00:06:02,000 --> 00:06:05,000
+for with impulse response and recognize also
+உந்துவிசை பதில் மேலும் அறிவர்
+
+00:06:05,000 --> 00:06:09,000
+or recall that since this frequency response
+அல்லது அந்த நினைவு இந்த அதிர்வெண் மறுமொழி
+
+00:06:09,000 --> 00:06:12,000
+is real value
+உண்மையான மதிப்பு
+
+00:06:12,000 --> 00:06:16,000
+the impulse response in other words the inverse transform
+வேறு வார்த்தைகளில் தலைகீழ் மாற்றும் உள்ள உந்துவிசை பதில்
+
+00:06:16,000 --> 00:06:19,000
+is an even function of time and
+ஒரு நேரத்தில் செயல்பாட்டு மற்றும் ஆகிறது
+
+00:06:19,000 --> 00:06:24,000
+notice also since I want to refer back to this
+நான் இந்த திரும்பி பார்க்கவும் வேண்டும் என்பதால் மேலும் கவனிக்க
+
+00:06:24,000 --> 00:06:28,000
+that the impulse response to an ideal Lopez filter
+என்று ஒரு சிறந்த லோபஸ் வடிகட்ட உந்துவிசை பதில்
+
+00:06:28,000 --> 00:06:33,000
+in fact is non causal that follows from Long other things from the fact that
+உண்மையில் உண்மையில் இருந்து மற்ற விஷயங்களை இருந்து பின்வருமாறு அல்லாத காரண ஆகிறது என்று
+
+00:06:33,000 --> 00:06:35,000
+it's an even function
+அது ஒரு விழா
+
+00:06:35,000 --> 00:06:39,000
+but keep in mind in fact that sin x over its function
+ஆனால் உண்மையில் மனதில் வைத்து அதன் செயல்பாடு மீது sin x
+
+00:06:39,000 --> 00:06:42,000
+goes off to infinity in both directions so
+அதனால் இரண்டு திசைகளில் முடிவிலியை அணைந்துவிட்டது
+
+00:06:42,000 --> 00:06:45,000
+the impulse response to the idea low-pass filter
+யோசனை குறைந்த பாஸ் வடிகட்டி உந்துவிசை பதில்
+
+00:06:45,000 --> 00:06:52,000
+is symmetric and continues to have tales of the plus and minus infinity
+சமச்சீரான மற்றும் கூட்டல் மற்றும் கழித்தல் முடிவிலி கதைகள் வேண்டும் தொடர்கிறது
+
+00:06:52,000 --> 00:06:55,000
+now the situation is basically the same
+இப்போது நிலைமை அடிப்படையில் அதே ஆகிறது
+
+00:06:55,000 --> 00:06:59,000
+in the discrete-time case
+தனி நேரம் வழக்கில்
+
+00:06:59,000 --> 00:07:04,000
+let's look at the frequency response and associated impulse response
+அதிர்வெண் பதில் பார்த்து தொடர்புடைய உந்துவிசை பதில்
+
+00:07:04,000 --> 00:07:08,000
+for an ideal discrete-time low-pass filter
+ஒரு சிறந்த தனி நேரம் குறைந்த பாஸ் வடிகட்டி
+
+00:07:08,000 --> 00:07:12,000
+so once again here is the
+அதனால் மீண்டும் ஒருமுறை இங்கே இருக்கிறது
+
+00:07:12,000 --> 00:07:16,000
+frequency response love the idea low-pass filter
+அதிர்வெண் மறுமொழி யோசனை குறைந்த பாஸ் வடிகட்டி பிடிக்கிறது
+
+00:07:16,000 --> 00:07:19,000
+and below it I show the impulse response
+அதை கீழே நான் உந்துவிசை பதில் காண்பிக்கிறேன்
+
+00:07:19,000 --> 00:07:24,000
+again its a sin x over x-type impulse response
+X-வகை உந்துவிசை பதில் மீண்டும் அதன் ஒரு பாவம் x
+
+00:07:24,000 --> 00:07:27,000
+and again we recognize
+மீண்டும் நாங்கள் அங்கீகரிக்கிறோம்
+
+00:07:27,000 --> 00:07:31,000
+that sits in the frequency domain this frequency response
+என்று அதிர்வெண் களத்தில் இந்த அதிர்வெண் மறுமொழி அமர்ந்திருக்கிறது
+
+00:07:31,000 --> 00:07:36,000
+is real bad that means as a consequence
+உண்மையான மோசமான விளைவாக அர்த்தம் என்று
+
+00:07:36,000 --> 00:07:42,000
+of the properties love the forty a transforming inverse Fourier transform
+பண்புகள் மாற்றும் தலைகீழ் ஃபோரியர் நாற்பது நேசிக்கிறேன்
+
+00:07:42,000 --> 00:07:45,000
+that the impulse response is an even function
+உந்துவிசை பதில் கூட செயல்பாடு என்று
+
+00:07:45,000 --> 00:07:49,000
+in the time domain and also incidently
+நேரம் டொமைன் மற்றும் விசு
+
+00:07:49,000 --> 00:07:53,000
+the sin x over expulsion goes off to infinity
+வெளியேற்றப்பட மீது sin x முடிவிலியை அணைந்துவிட்டது
+
+00:07:53,000 --> 00:07:56,000
+again in both directions
+மீண்டும் இரண்டு திசைகளில்
+
+00:07:56,000 --> 00:08:00,000
+now we talked about i do. filters
+இப்போது நான் என்ன செய்ய பற்றி பேசினார். வடிகட்டிகள்
+
+00:08:00,000 --> 00:08:04,000
+in this discussion and ideal filters are
+இந்த விவாதம் மற்றும் சிறந்த வடிகட்டிகள் உள்ளன
+
+00:08:04,000 --> 00:08:08,000
+in fact ideal in a certain sense what they do ideally
+அவர்கள் வெறுமனே என்ன ஒரு குறிப்பிட்ட அர்த்தத்தில் உண்மையில் இலட்சிய
+
+00:08:08,000 --> 00:08:12,000
+is they pass a certain band of frequencies exactly
+அவர்கள் சரியாக அதிர்வெண்கள் ஒரு குறிப்பிட்ட இசைக்குழு கடந்து உள்ளது
+
+00:08:12,000 --> 00:08:19,000
+and they reject a band of frequencies exactly
+மற்றும் அவர்கள் சரியாக அதிர்வெண்கள் ஒரு இசைக்குழு நிராகரிக்கிறார்கள்
+
+00:08:19,000 --> 00:08:23,000
+on the other hand there are many filtering problems in which
+மறுபுறம் பல வடிகட்டி பிரச்சினைகள் உள்ளன இதில்
+
+00:08:23,000 --> 00:08:27,000
+generally we don't have a sharp distinction between the frequencies we
+பொதுவாக நாம் அதிர்வெண்கள் இடையே ஒரு கூர்மையான வேறுபாட்டை இல்லை நாம்
+
+00:08:27,000 --> 00:08:28,000
+want to
+வேண்டும்
+
+00:08:28,000 --> 00:08:31,000
+passed in the frequencies you wanna 12 reject
+நீங்கள் நிராகரிக்க 12 இனி அதிர்வெண்கள் கடந்து
+
+00:08:31,000 --> 00:08:34,000
+one example if this that's elaborated on in the tax is
+இந்த வரியை விரிவாக என்றால் ஒரு உதாரணம் ஆகும்
+
+00:08:34,000 --> 00:08:38,000
+the design of an automotive suspension system which in fact
+ஒரு தானியங்கி சஸ்பென்சன் அமைப்பு வடிவமைப்பு இது உண்மையில்
+
+00:08:38,000 --> 00:08:42,000
+is the design all a low-pass filter
+வடிவமைப்பு ஒரு குறைந்த பாஸ் வடிகட்டி
+
+00:08:42,000 --> 00:08:45,000
+and basically what you want to do in a case like that
+மற்றும் அடிப்படையில் நீங்கள் அப்படி ஒரு வழக்கில் என்ன செய்ய வேண்டும்,
+
+00:08:45,000 --> 00:08:48,000
+is filter out or attenuate
+அவுட் வடிகட்ட அல்லது வீரியத்தை
+
+00:08:48,000 --> 00:08:51,000
+very rapid Road variations and keep
+மிகவும் விரைவான சாலை வேறுபாடுகள் வைத்து
+
+00:08:51,000 --> 00:08:56,000
+the lower variations in of course elevation of the highway
+நெடுஞ்சாலை நிச்சயமாக உயரத்தில் குறைந்த வேறுபாடுகள்
+
+00:08:56,000 --> 00:09:00,000
+or or road and what you can see
+அல்லது சாலை மற்றும் என்ன நீங்கள் பார்க்க முடியும்
+
+00:09:00,000 --> 00:09:03,000
+intuitively is dead and there isn't really a very sharp
+உள்ளுணர்வாக இறந்த மற்றும் ஒரு மிக கூர்மையான உண்மையில் இல்லை
+
+00:09:03,000 --> 00:09:08,000
+distinction a sharp cutoff between what you would like to recall
+நீங்கள் நினைவுபடுத்த விரும்புகிறேன் என்ன வேறுபாடு ஒரு கூர்மையான வெட்டு
+
+00:09:08,000 --> 00:09:13,000
+the low frequencies and what you would call the high frequencies
+குறைந்த அதிர்வெண்கள் மற்றும் என்ன நீங்கள் அதிக அதிர்வெண்கள் அழைக்க வேண்டும்
+
+00:09:13,000 --> 00:09:17,000
+now also somewhat related to this is the fact dead
+இப்போது ஓரளவு இது தொடர்பான உண்மையை இறந்த ஆகிறது
+
+00:09:17,000 --> 00:09:21,000
+the as we've seen in the time domain is ideal filters have
+நாம் நேரம் டொமைன் பார்த்த சிறந்த வடிகட்டிகள் வேண்டும் ஆகிறது
+
+00:09:21,000 --> 00:09:25,000
+very particular kind of character for example let's look back
+பாத்திரம் மிகவும் குறிப்பிட்ட வகையான எடுத்துக்காட்டாக மீண்டும் பார்போம்
+
+00:09:25,000 --> 00:09:30,000
+at the ideal low-pass filter and
+சிறந்த குறைந்த பாஸ் வடிகட்டி மற்றும்
+
+00:09:30,000 --> 00:09:34,000
+we saw this the impulse response
+நாம் இந்த உந்துவிசை பதில் பார்த்தேன்
+
+00:09:34,000 --> 00:09:37,000
+the impulse response is what we've shown here let's now look
+உந்துவிசை பதில் என்ன, நாம் இங்கே பார்க்க நான் இப்போது பார்ப்போம் ஆகிறது
+
+00:09:37,000 --> 00:09:41,000
+at the step response love the discrete-time
+படி மறுமொழி உள்ள தனி நேரம் காதல்
+
+00:09:41,000 --> 00:09:47,000
+ideal low-pass filter and noticed the fact that it has a tail that oscillates
+சிறந்த குறைந்த பாஸ் வடிகட்டி மற்றும் அது ஊசலாடும் ஒரு வால் என்று உண்மையில் அறிந்தது
+
+00:09:47,000 --> 00:09:52,000
+and when this step its in fact it has oscillatory behavior
+இந்த உண்மையை அதன் படி போது அது அலைவு நடத்தை உள்ளது
+
+00:09:52,000 --> 00:09:57,000
+now exactly the same situation occurs
+இப்போது அதே நிலைமை ஏற்படும்
+
+00:09:57,000 --> 00:10:01,000
+in continuous-time let's look at the
+தொடர்ச்சியான நேரத்தில் தான் பார்க்க வேண்டும்
+
+00:10:01,000 --> 00:10:04,000
+step response love the continuous-time
+படி மறுமொழி தொடர்ச்சியான நேர காதல்
+
+00:10:04,000 --> 00:10:08,000
+ideal ok pass filter and
+சிறந்த சரியா பாஸ் வடிகட்டி மற்றும்
+
+00:10:08,000 --> 00:10:11,000
+what we see is that when a step its
+நாம் என்ன பார்க்க ஒரு படி போது அதன்
+
+00:10:11,000 --> 00:10:14,000
+then in fact we get and isolation
+பின்னர் உண்மையில் நாம் பெற மற்றும் தனிமை
+
+00:10:14,000 --> 00:10:17,000
+and very often that isolation
+மற்றும் மிக பெரும்பாலும் அந்த தனிமை
+
+00:10:17,000 --> 00:10:21,000
+is something this undesirable for example if you're designing
+நீங்கள் வடிவமைத்தல் என்றால் உதாரணமாக இந்த விரும்பத்தகாத ஒன்று உள்ளது
+
+00:10:21,000 --> 00:10:26,000
+an automotive suspension system and you hit a curve which is
+ஒரு தானியங்கி சஸ்பென்சன் அமைப்பு மற்றும் நீங்கள் இது ஒரு வளைவு அடிக்கிறீர்கள்
+
+00:10:26,000 --> 00:10:30,000
+step input in fact you probably would not like
+உண்மையில் உள்ளீடு விலக ஒருவேளை நீங்கள் விரும்பவில்லை
+
+00:10:30,000 --> 00:10:34,000
+to have the automobile oscillating sort
+ஆட்டோமொபைல் ஊசலாட்ட வகையான வேண்டும்
+
+00:10:34,000 --> 00:10:38,000
+sort dying down in in isolation
+அப்படி தனியாக கீழே இறக்கும்
+
+00:10:38,000 --> 00:10:41,000
+now is another very important point which again
+இப்போது மற்றொரு முக்கியமான புள்ளி இது மீண்டும்
+
+00:10:41,000 --> 00:10:45,000
+we can see there in continuous-time and discrete-time
+நாங்கள் தொடர்ச்சியான நேரம் மற்றும் தனி நேரம் அங்கு பார்க்க முடியும்
+
+00:10:45,000 --> 00:10:48,000
+which is that even if we wanted to have
+நாம் விரும்பிய கூட வேண்டும் என்று இது
+
+00:10:48,000 --> 00:10:53,000
+an ideal filter the ideal filter has another problem
+ஒரு சிறந்த வடிகட்டி சிறந்த வடிகட்டி மற்றொரு சிக்கல் உள்ளது
+
+00:10:53,000 --> 00:10:57,000
+if we want to attempt to implemented in real time
+நாம் உண்மையான நேரத்தில் நடைமுறைப்படுத்தப்படும் முயற்சிக்கும் விரும்பினால்
+
+00:10:57,000 --> 00:11:01,000
+what's the problem the problem is
+பிரச்சனை என்ன பிரச்சனை
+
+00:11:01,000 --> 00:11:05,000
+that since the impulse responses even and in fact
+என்று உந்துவிசை மறுமொழிகள் கூட, உண்மையில்
+
+00:11:05,000 --> 00:11:08,000
+has details that go of the plus and minus infinity
+கூட்டல் மற்றும் கழித்தல் முடிவிலி போக, அந்த விவரங்கள் உள்ளது
+
+00:11:08,000 --> 00:11:12,000
+its non causal so if in fact
+அதன் அல்லாத காரண என்றால் உண்மையில்
+
+00:11:12,000 --> 00:11:18,000
+we want to build a filter and the filter is restricted operate in real time
+நாம் ஒரு வடிகட்டி உருவாக்க வேண்டும் மற்றும் வடிகட்டி உண்மையான நேரத்தில் செயல்பட கட்டுப்படுத்தப்பட்டுள்ளது
+
+00:11:18,000 --> 00:11:21,000
+than in fact we can't build
+உண்மையில் நாம் உருவாக்க முடியாது விட
+
+00:11:21,000 --> 00:11:24,000
+an ideal filter so
+ஒரு சிறந்த வடிகட்டி எனவே
+
+00:11:24,000 --> 00:11:28,000
+what that says is that in practice although i do. filters
+என்ன என்று கூறுகிறார் நடைமுறையில் நான் இல்லை என்றாலும், அந்த ஆகிறது. வடிகட்டிகள்
+
+00:11:28,000 --> 00:11:34,000
+are nice to think about and perhaps relate to practical problems
+என்று ஒருவேளை நடைமுறை சிக்கல்கள் தொடர்புபடுத்த நன்றாக இருக்கும்
+
+00:11:34,000 --> 00:11:37,000
+more typically what we consider
+மேலும் பொதுவாக நாம் கருத்தில் என்ன
+
+00:11:37,000 --> 00:11:40,000
+are non-ideal filters and
+அல்லாத சிறந்த வடிகட்டிகள் மற்றும்
+
+00:11:40,000 --> 00:11:44,000
+in the discrete-time case non-ideal filter
+தனி நேரம் வழக்கில் அல்லாத சிறந்த வடிகட்டி
+
+00:11:44,000 --> 00:11:48,000
+then would have a characteristic somewhat
+பின்னர் சற்றே ஒரு பண்பு வேண்டும்
+
+00:11:48,000 --> 00:11:51,000
+like i've indicated here where instead o
+நான் எங்கே பதிலாக ஓ இங்கே சுட்டிக்காட்டப்படுகிறது
+
+00:11:51,000 --> 00:11:56,000
+a very rapid transition from passband to stop and
+நிறுத்த மற்றும் கடவுப்பட்டை இருந்து மிக விரைவான மாற்றம்
+
+00:11:56,000 --> 00:11:59,000
+there would be more gradual transition
+மேலும் படிப்படியாக மாற்றம் இருக்கும் என்று
+
+00:11:59,000 --> 00:12:03,000
+with a passband cutoff frequency and
+ஒரு கடவுப்பட்டை வெட்டு அதிர்வெண் மற்றும்
+
+00:12:03,000 --> 00:12:06,000
+a stop and cutoff frequency
+ஒரு நிறுத்தத்தில் மற்றும் வெட்டு அதிர்வெண்
+
+00:12:06,000 --> 00:12:10,000
+and perhaps also instead of having exactly
+ஒருவேளை பதிலாக சரியாக கொண்ட
+
+00:12:10,000 --> 00:12:14,000
+flat characteristic in the stop band and in the past and
+நிறுத்தத்தில் இசைக்குழு மற்றும் கடந்த காலத்தில் பிளாட் பண்பு மற்றும்
+
+00:12:14,000 --> 00:12:18,000
+we would allow a certain amount a ripple
+நாம் ஒரு குறிப்பிட்ட அளவு ஒரு சிற்றலை அனுமதிக்க வேண்டும்
+
+00:12:18,000 --> 00:12:21,000
+we also have exactly the same situation
+நாங்கள் சரியாக அதே நிலைமை
+
+00:12:21,000 --> 00:12:26,000
+in continuous-time we're here will just simply change your frequency axis
+தொடர்ச்சியான நேரத்தில் நாம் இங்கு இருக்கிறோம் வெறுமனே உங்கள் அதிர்வெண் அச்சு மாறும்
+
+00:12:26,000 --> 00:12:31,000
+to a continuous frequency axis instead of the discrete frequency axes
+ஒரு தொடர்ச்சியான அதிர்வெண் அச்சு பதிலாக தனி அதிர்வெண் அச்சை
+
+00:12:31,000 --> 00:12:36,000
+again we would think in terms of I'm allowable passband ripple
+நான் அனுமதிக்கப்பட்ட கடவுப்பட்டை சிற்றலை இருக்கிறேன் மீண்டும் நாம் நினைக்க வேண்டும்
+
+00:12:36,000 --> 00:12:40,000
+a transition from stop and from passband to stop and
+நிறுத்த நிறுத்த இருந்து மற்றும் கடவுப்பட்டை இருந்து ஒரு மாற்றம்
+
+00:12:40,000 --> 00:12:44,000
+with a passband cutoff frequency and a stop and
+ஒரு கடவுப்பட்டை வெட்டு அதிர்வெண் மற்றும் ஒரு நிறுத்தத்தில் மற்றும்
+
+00:12:44,000 --> 00:12:47,000
+cutoff frequency so
+வெட்டு அதிர்வெண்
+
+00:12:47,000 --> 00:12:53,000
+kind of the notion here is dead again i do. filters are ideal in some respects
+இங்கே கருத்து வகையான மீண்டும் நான் செய்ய இறந்துவிட்டான். வடிகட்டிகள் சில விதங்களில் சிறந்த இருக்கின்றன
+
+00:12:53,000 --> 00:12:56,000
+not ideal in other respects and for many
+மற்ற விதங்களில் பல ஏற்றதாக இல்லை
+
+00:12:56,000 --> 00:13:01,000
+practical problems we may not want them and even if we did want them
+நடைமுறை சிக்கல்களை நாம் அவர்களை வேண்டும் கூட அவர்கள் விரும்பவில்லை மற்றும் இல்லை
+
+00:13:01,000 --> 00:13:06,000
+we may not be able to get them perhaps because at this issue of causality
+நாம் காரண இந்த பிரச்சினை ஒருவேளை அவர்கள் பெற முடியாது
+
+00:13:06,000 --> 00:13:10,000
+even if causality is not an issue what happens
+காரணகாரிய என்ன ஒரு பிரச்சினை இல்லை என்றாலும்
+
+00:13:10,000 --> 00:13:13,000
+in filter design and implementation in fact
+வடிகட்டி வடிவமைப்பு மற்றும் உண்மையில் செயல்படுத்த
+
+00:13:13,000 --> 00:13:19,000
+is dead the sharper you attempt to make the cut off
+இறந்த கூர்மையாக நீங்கள் துண்டித்து செய்ய முயற்சி
+
+00:13:19,000 --> 00:13:22,000
+the more expensive in some sense the filter becomes
+வடிகட்டி ஆகிறது சில பொருளில் அதிக விலை
+
+00:13:22,000 --> 00:13:25,000
+either in terms of comp phone-ins in continuous-time
+அல்லது தொடர்ச்சியான நேரத்தில் பெயர்த்தல் தொலைபேசி நிரல்களை அடிப்படையில்
+
+00:13:25,000 --> 00:13:29,000
+or in terms of computation in discrete-time
+அல்லது தனி நேரம் கணக்கீடு அடிப்படையில்
+
+00:13:29,000 --> 00:13:33,000
+and so their are these whole variety of issues
+அதனால் பிரச்சினைகள் இந்த முழு பல்வேறு அவர்களின் இருக்கின்றன
+
+00:13:33,000 --> 00:13:36,000
+that really make it important to
+உண்மையில் அது முக்கியமான செய்ய
+
+00:13:36,000 --> 00:13:39,000
+understand the notion love non-ideal
+புரிந்து கருத்தை அல்லாத சிறந்த காதல்
+
+00:13:39,000 --> 00:13:42,000
+filters now just two
+வடிகட்டிகள் இப்போது இரண்டு
+
+00:13:42,000 --> 00:13:46,000
+illustrate as an example let me remind you
+என்னை உனக்கு ஞாபகபடுத்திவிடு உதாரணமாக விளக்குவதற்கு
+
+00:13:46,000 --> 00:13:52,000
+love one kinda bad example love what in fact is a non-ideal
+உண்மையில் ஒரு அல்லாத ஏற்றதாக உள்ளது என்ன அன்பு ஒரு கிரகமாக மோசமான உதாரணமாக அன்பு
+
+00:13:52,000 --> 00:13:56,000
+low-pass filter and we have look previously
+குறைந்த பாஸ் வடிகட்டி மற்றும் நாம் முன்னர் இருக்கிறோம்
+
+00:13:56,000 --> 00:13:59,000
+at The Associated differential equation
+தொடர்புடைய வகையீட்டு சமன்பாடு மணிக்கு
+
+00:13:59,000 --> 00:14:03,000
+let me now in fact related to a circuit
+ஒரு சுற்று தொடர்பான உண்மையில் இப்போது என்னை
+
+00:14:03,000 --> 00:14:07,000
+and in particular an RC circuit
+குறிப்பாக ஒரு RC சுற்று
+
+00:14:07,000 --> 00:14:10,000
+where the output could either be across the capacitor
+வெளியீடு அல்லது மின்தேக்கிக்குள் இருக்க முடியும்
+
+00:14:10,000 --> 00:14:14,000
+or the output can be across the resistor so
+அல்லது வெளியீடு மின்தடையம் முழுவதும் முடியும்
+
+00:14:14,000 --> 00:14:18,000
+effect we have two systems here we have a system
+நாம் ஒரு முறை இங்கே இரண்டு அமைப்புகள்
+
+00:14:18,000 --> 00:14:22,000
+which is the system function from the voltage source input to the capacitor
+மின்தேக்கி மின்னழுத்தம் மூல உள்ளீடு கணினி செயல்பாடு இது
+
+00:14:22,000 --> 00:14:23,000
+output
+உற்பத்தி
+
+00:14:23,000 --> 00:14:26,000
+the system from the both source input
+இரண்டு மூல உள்ளீடு கணினி
+
+00:14:26,000 --> 00:14:30,000
+to the resistor output and in fact
+மின்தடை வெளியீடு மற்றும் உண்மையில்
+
+00:14:30,000 --> 00:14:34,000
+just up like your cause both its law to this we can relate those in a very
+இந்த உங்கள் காரணம் அதன் சட்டம் போல் நாம் ஒரு மிக அந்த தொடர்புபடுத்த முடியாது
+
+00:14:34,000 --> 00:14:35,000
+straightforward way
+நேரடியான வழி
+
+00:14:35,000 --> 00:14:39,000
+it's very straight forward to verify that
+அதை சரிபார்க்க மிகவும் நேராக முன்னோக்கி
+
+00:14:39,000 --> 00:14:43,000
+the system from input to resist their output
+தங்கள் வெளியீடு எதிர்க்க உள்ளீடு கணினி
+
+00:14:43,000 --> 00:14:47,000
+is simply the identity system with
+வெறுமனே அடையாள அமைப்பு
+
+00:14:47,000 --> 00:14:51,000
+the capacitor output subtracted from
+கழிக்கப்படுகிறது மின்தேக்கி வெளியீடு
+
+00:14:51,000 --> 00:14:54,000
+now we can write the differential equation
+இப்போது நாம் வகையீட்டு சமன்பாடு எழுத முடியும்
+
+00:14:54,000 --> 00:14:59,000
+for either the system's and as we talked about last time
+அல்லது கணினி மற்றும் நாம் கடந்த முறை பற்றி பேசினார் என
+
+00:14:59,000 --> 00:15:03,000
+in the last several lectures solve that equation using
+கடந்த பல விரிவுரைகள் பயன்படுத்தி அந்த சமன்பாடு தீர்க்க
+
+00:15:03,000 --> 00:15:06,000
+the exploiting the properties at a4e a transform
+a4e ஒரு பண்புகளை பயன்படுத்தி மாற்றும்
+

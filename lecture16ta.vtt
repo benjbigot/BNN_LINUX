@@ -1,0 +1,2840 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+பின்வரும் உள்ளடக்கத்தை ஒரு கிரியேட்டிவ் காமன்ஸ் உரிமத்தின் கீழ் வழங்கப்படும்
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+உங்கள் ஆதரவு எம்ஐடி ஓபன்கோர்ஸ்வேர் வழங்க தொடர்ந்து உதவும்
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+இலவசமாக உயர்தர கல்வி வளங்கள்
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+நன்கொடை செய்ய அல்லது அவர்களை நூற்றுக்கணக்கான கூடுதல் பொருட்கள் காண
+
+00:00:14,000 --> 00:00:15,000
+courses
+படிப்புகள்
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+0 CW இல் எம்ஐடி ஓபன்கோர்ஸ்வேர் வருகை
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU ha for the
+அந்த அவசர ஹெக்டேர் என்று எம்ஐடி
+
+00:00:29,000 --> 00:00:31,000
+the
+உருக்கு
+
+00:00:31,000 --> 00:00:38,000
+the in
+இல்
+
+00:00:38,000 --> 00:00:45,000
+the new the we concluded the last lecture
+நாங்கள் கடைசி விரிவுரை முடித்தார் புதிய The
+
+00:00:57,000 --> 00:01:01,000
+with the statement above the sampling theorem and just as a quick reminder
+மாதிரி தேற்றம் மேலே மற்றும் ஒரு விரைவு நினைவூட்டல் அறிக்கை
+
+00:01:01,000 --> 00:01:05,000
+the sampling theorem said that
+மாதிரி தேற்றம் என்று
+
+00:01:05,000 --> 00:01:08,000
+if we have a continuous-time signal
+நாம் ஒரு தொடர் நேர சமிக்ஞை வேண்டும் என்றால்
+
+00:01:08,000 --> 00:01:11,000
+and we have equally spaced samples
+நாம் சமமாக மாதிரிகள் இடைவெளி
+
+00:01:11,000 --> 00:01:17,000
+all that signal sampled at a sampling period which a indicators capital T
+அனைத்து என்று சமிக்ஞை ஒரு மாதிரி காலம் ஒரு குறிகாட்டிகள் மூலதன டி இல் சோதனை
+
+00:01:17,000 --> 00:01:21,000
+and if except he is banned limited
+அவர் வரையறுக்கப்பட்ட தடை தவிர என்றால்
+
+00:01:21,000 --> 00:01:25,000
+in other words the forty a transformer 0
+வேறு வார்த்தைகளில் நாற்பது ஒரு மின்மாற்றி 0
+
+00:01:25,000 --> 00:01:28,000
+outside some band where Omega Sapan
+சில இசைக்குழு வெளியே அங்கு ஒமேகா சபன்
+
+00:01:28,000 --> 00:01:32,000
+is the highest frequency then
+பின்னர் அதிக அதிர்வெண்
+
+00:01:32,000 --> 00:01:37,000
+under the condition that the sampling frequency which is two-part divided by
+இரண்டு பகுதியாக இது மாதிரி அதிர்வெண் வகுக்க என்று நிபந்தனையுடன்
+
+00:01:37,000 --> 00:01:38,000
+the period
+காலம்
+
+00:01:38,000 --> 00:01:42,000
+is greater than twice the highest frequency
+இரண்டு முறை அதிக அதிர்வெண் அதிகமாக இருக்கிறது
+
+00:01:42,000 --> 00:01:46,000
+the original signal is uniquely
+அசல் சமிக்ஞையை தனிப்பட்ட ஆகிறது
+
+00:01:46,000 --> 00:01:50,000
+recoverable from the set of samples and
+மாதிரிகள் தொகுப்பில் இருந்து திரும்ப மற்றும்
+
+00:01:50,000 --> 00:01:54,000
+the sampling theorem essentially was derived by
+மாதிரி தேற்றம் அடிப்படையில் மூலம் பெறப்பட்ட
+
+00:01:54,000 --> 00:01:57,000
+observing or using the notion that
+கருத்து கவனித்து அல்லது பயன்படுத்தி என்று
+
+00:01:57,000 --> 00:02:01,000
+sampling could be done by multiplication
+மாதிரி பெருக்கல் செய்ய முடியும்
+
+00:02:01,000 --> 00:02:05,000
+or modulation with an impulse train and the sampling theorem develop
+அல்லது ஒரு உந்துவிசை ரயில் மற்றும் மாதிரி தேற்றம் பண்பேற்றம் உருவாக்க
+
+00:02:05,000 --> 00:02:08,000
+by examining the consequence
+விளைவு ஆய்வு
+
+00:02:08,000 --> 00:02:13,000
+love the modulation property in the context of the Fourier transform
+ஃபோரியர் சூழலில் பண்பேற்றம் சொத்து பிடிக்கிறது
+
+00:02:13,000 --> 00:02:18,000
+in particular if we have our signal accept T
+குறிப்பாக நாம் நமது சமிக்ஞை டி ஏற்க
+
+00:02:18,000 --> 00:02:21,000
+and it's multiplied by an impulse train
+அது ஒரு உந்துவிசை ரயில் பெருக்கி
+
+00:02:21,000 --> 00:02:25,000
+to give us a sampled signal
+எங்களுக்கு ஒரு சோதனை சமிக்ஞை கொடுக்க
+
+00:02:25,000 --> 00:02:31,000
+another impose train whose values or areas are samples of the original time
+மற்றொரு யாருடைய மதிப்புகள் அல்லது பகுதிகளில் அசல் நேரம் மாதிரிகள் ரயில் திணிக்க
+
+00:02:31,000 --> 00:02:32,000
+function
+செயல்பாடு
+
+00:02:32,000 --> 00:02:36,000
+as i indicate here then
+நான் இங்கே குறிப்பிட
+
+00:02:36,000 --> 00:02:39,000
+in fact if we examine this equation or equivalently
+உண்மையில் நாம் சமமான இந்த சமன்பாடு ஆய்வு அல்லது
+
+00:02:39,000 --> 00:02:42,000
+bringing accept T inside this some
+இந்த சில உள்ளே டி ஏற்க கொண்டு
+
+00:02:42,000 --> 00:02:48,000
+if we examine either if these equations in the frequency domain
+நாம் ஆய்வு செய்தால் அல்லது என்றால் அதிர்வெண் களத்தில் இந்த சமன்பாடுகளை
+
+00:02:48,000 --> 00:02:51,000
+the four EA transform love
+நான்கு ஈ.ஏ. காதல் மாற்றும்
+
+00:02:51,000 --> 00:02:56,000
+exe PFT is the convolution
+exe நெனைக்க சுழற்சி ஆகிறது
+
+00:02:56,000 --> 00:03:01,000
+above the 40 a transformer the original signal and the Fourier transform
+40 அசல் சமிக்ஞையை மற்றும் ஃபோரியர் ஒரு மின்மாற்றி மேலே
+
+00:03:01,000 --> 00:03:05,000
+up the impulse train now
+இப்போது உந்துவிசை ரயில் வரை
+
+00:03:05,000 --> 00:03:08,000
+be imposed strain is a periodic signal its Fourier transform
+விதிக்கப்பட வேண்டும் திரிபு அதன் ஃபோரியர் ஒரு கால சமிக்ஞை ஆகும்
+
+00:03:08,000 --> 00:03:12,000
+therefore as we talked about with Fourier transforms itself an impulse
+நாம் பற்றி பேசினார் எனவே ஃபோரியர் தன்னை ஒரு உந்துவிசை உருமாறகிறது
+
+00:03:12,000 --> 00:03:13,000
+train
+ரயில்
+
+00:03:13,000 --> 00:03:16,000
+and when we do this convolution n
+நாம் இந்த சுழற்சி N செய்கிறோம் போது
+
+00:03:16,000 --> 00:03:21,000
+using the fact that the 48 race for the imposed strain
+உண்மையில் பயன்படுத்தி சுமத்தப்பட்டுள்ளன திரிபு 48 இனம்
+
+00:03:21,000 --> 00:03:24,000
+is an impulse train the result
+ஒரு உந்துவிசை ரயில் விளைவாக
+
+00:03:24,000 --> 00:03:28,000
+or this convolution then tells us
+அல்லது இந்த சுழற்சி பின்னர் நமக்கு சொல்கிறது
+
+00:03:28,000 --> 00:03:31,000
+that the 48 transform love
+48 காதல் மாற்றும் என்று
+
+00:03:31,000 --> 00:03:34,000
+the sampled signal or the impulse train
+சோதனை சமிக்ஞை அல்லது உந்துவிசை ரயில்
+
+00:03:34,000 --> 00:03:38,000
+which represents the samples is a some
+மாதிரிகள் பிரதிநிதித்துவப்படுத்தும் ஒரு சில ஆகிறது
+
+00:03:38,000 --> 00:03:42,000
+love frequency shifted replications
+காதல் அதிர்வெண் விடைகள் மாற்றப்பட்டிருந்தது
+
+00:03:42,000 --> 00:03:45,000
+up the 48 transform of the original signal
+48 வரை அசல் சமிக்ஞையின் மாற்றும்
+
+00:03:45,000 --> 00:03:48,000
+so mathematically
+எனவே கணித
+
+00:03:48,000 --> 00:03:53,000
+that's the relationship it essentially says that after sampling or modulation
+அது அடிப்படையில் கூறுகிறார் உறவு என்று மாதிரி அல்லது பண்பேற்ற பின்னர்
+
+00:03:53,000 --> 00:03:54,000
+with an impulse train
+ஒரு உந்துவிசை ரயில்
+
+00:03:54,000 --> 00:03:58,000
+the resulting spectrum is the original spectrum
+இதன் விளைவாக ஸ்பெக்ட்ரம் அசல் நிறமாலை உள்ளது
+
+00:03:58,000 --> 00:04:01,000
+added to itself shifted by multiples
+மடங்குகள் மாற்றப்படும் தன்னை சேர்க்க
+
+00:04:01,000 --> 00:04:05,000
+integer multiples of the sampling frequency well
+மாதிரி அதிர்வெண் முழு மடங்குகள் நன்கு
+
+00:04:05,000 --> 00:04:08,000
+let's see that as we did last time in terms of pictures
+நாம் படங்களை அடிப்படையில் கடந்த காலத்தில் செய்தது போல் தான் என்று பார்ப்போம்
+
+00:04:08,000 --> 00:04:12,000
+and again to remind you of the basic
+மீண்டும் அடிப்படை உங்களுக்கு ஞாபகப்படுத்த
+
+00:04:12,000 --> 00:04:16,000
+picture involved if we have an original signal
+நாம் ஒரு அசல் சமிக்ஞையை இருந்தால் சம்பந்தப்பட்ட படம்
+
+00:04:16,000 --> 00:04:19,000
+with the spectrum is a indicated here where
+ஸ்பெக்ட்ரம் இங்கே சுட்டிக்காட்டினார் எங்கே இருக்கிறது
+
+00:04:19,000 --> 00:04:22,000
+its ban limited with the highest frequency Omega Savannah M
+அதன் தடையை அதிக அதிர்வெண் ஒமேகா சவன்னாஹ் எம் மட்டுமே
+
+00:04:22,000 --> 00:04:27,000
+and if the time function is sample
+மற்றும் நேரம் செயல்பாடு மாதிரி இருக்கிறது என்றால்
+
+00:04:27,000 --> 00:04:31,000
+so that in the frequency domain week involved this spectrum
+எனவே அதிர்வெண் களத்தில் வாரம் இந்த ஸ்பெக்ட்ரம் தொடர்பு
+
+00:04:31,000 --> 00:04:35,000
+with the spectrum shown below which is the
+இது கீழே ஸ்பெக்ட்ரம் உள்ளது
+
+00:04:35,000 --> 00:04:40,000
+spectrum love the impulse train
+ஸ்பெக்ட்ரம் உந்துவிசை லவ் ரயில்
+
+00:04:40,000 --> 00:04:44,000
+the convolution if these true up these two
+ஆவி என்றால் இந்த உண்மை இந்த இரண்டு
+
+00:04:44,000 --> 00:04:47,000
+is then the Fourier transform or spectrum
+பின்னர் ஃபோரியர் அல்லது நிறமாலை உள்ளது
+
+00:04:47,000 --> 00:04:51,000
+love the sampled time function
+சோதனை நேரம் செயல்பாடு பிடிக்கிறது
+
+00:04:51,000 --> 00:04:55,000
+and so thats what we end up with here
+மற்றும் நாம் இங்கே முடிவடையும் என்ன ஸ்டைல்
+
+00:04:55,000 --> 00:05:00,000
+and then as you recall to recover the original time function
+பின்னர் நீங்கள் அசல் நேரம் செயல்பாடு மீட்க நினைவு என
+
+00:05:00,000 --> 00:05:05,000
+from this as long as these individual triangles don't overlap
+இந்த நீண்ட இந்த தனிப்பட்ட முக்கோணங்கள் சார்ந்தோ இல்லை
+
+00:05:05,000 --> 00:05:08,000
+to recover it just simply involves
+மீட்க வெறுமனே ஈடுபட்டிருக்கிறது
+
+00:05:08,000 --> 00:05:13,000
+passing the impulse train through a low-pass filter in effect
+விளைவு ஒரு குறைந்த பாஸ் வடிகட்டி மூலம் உந்துவிசை ரயில் கடந்து
+
+00:05:13,000 --> 00:05:17,000
+extracting just one of these replications
+இந்த விடைகள் ஒரே ஒரு பிரித்தெடுக்கும்
+
+00:05:17,000 --> 00:05:21,000
+love the original spectrum
+அசல் ஸ்பெக்ட்ரம் பிடிக்கிறது
+
+00:05:21,000 --> 00:05:25,000
+so the overall system
+எனவே ஒட்டுமொத்த அமைப்பின்
+
+00:05:25,000 --> 00:05:29,000
+then for for doing the sampling and then
+பின்னர் மாதிரி செய்து மற்றும்
+
+00:05:29,000 --> 00:05:34,000
+the reconstruction of the original signal from the samples
+மாதிரிகளில் இருந்து அசல் சமிக்ஞையை புனரமைப்பு
+
+00:05:34,000 --> 00:05:38,000
+consists of multiplying the original time function
+அசல் நேரம் செயல்பாடு பெருக்கி கொண்டுள்ளது
+
+00:05:38,000 --> 00:05:42,000
+by an impulse train and that gives us
+ஒரு உந்துவிசை ரயில் மற்றும் என்று நமக்கு கொடுக்கிறது மூலம்
+
+00:05:42,000 --> 00:05:45,000
+then the sampled signal
+மாதிரிகளை பின்னர் சமிக்ஞை
+
+00:05:45,000 --> 00:05:49,000
+the Fourier transform I show here love the
+ஃபோரியர் நான் நேசிக்கிறேன் இங்கே காட்ட மாற்றும்
+
+00:05:49,000 --> 00:05:54,000
+original signal and after modulation with the impulse train
+அசல் சமிக்ஞையை மற்றும் உந்துவிசை ரயில் பண்பேற்றம் பின்னர்
+
+00:05:54,000 --> 00:05:58,000
+the resulting spectrum that we have is
+நாம் என்று விளைவாக ஸ்பெக்ட்ரம் ஆகிறது
+
+00:05:58,000 --> 00:06:04,000
+that replicated around integer multiples of the sampling frequency
+என்று மாதிரி அதிர்வெண் முழு மடங்குகள் சுற்றி எதிரொலிக்கும்
+
+00:06:04,000 --> 00:06:07,000
+and then finally to recover
+பின்னர் இறுதியாக மீட்க
+
+00:06:07,000 --> 00:06:12,000
+the original signal or to generate a reconstructed signal
+அசல் சமிக்ஞையை அல்லது ஒரு மறுகட்டுமானம் சமிக்ஞை உருவாக்க
+
+00:06:12,000 --> 00:06:16,000
+we then multiply this in the frequency domain
+நாம் அதிர்வெண் களத்தில் இந்த பெருக்கி
+
+00:06:16,000 --> 00:06:20,000
+by the frequency response of an idea low-pass filter
+ஒரு யோசனை குறைந்த பாஸ் வடிகட்டி அதிர்வெண் பதில்
+
+00:06:20,000 --> 00:06:23,000
+and what that accomplishes forest and
+என்று என்ன காடு செயல்படுத்தப்பட்டது மற்றும்
+
+00:06:23,000 --> 00:06:28,000
+is recovering the original signal
+அசல் சமிக்ஞையை மீள்கிறது
+
+00:06:28,000 --> 00:06:32,000
+now in this picture an important point that I raise last time
+இப்போது இந்த படத்தில் நான் கடந்த முறை ஒரு முக்கிய புள்ளி உயர்த்த வேண்டும் என்று
+
+00:06:32,000 --> 00:06:36,000
+relates to the fact dead in doing the reconstruction
+புனரமைப்பு செய்து உண்மையில் இறந்த தொடர்புடையது
+
+00:06:36,000 --> 00:06:40,000
+well we've assumed is dead in replicating
+நாங்கள் கருதப்படுகிறது நான் நன்கு மீள்வு இறந்து ஆகிறது
+
+00:06:40,000 --> 00:06:43,000
+these individual versions
+இந்த தனிப்பட்ட பதிப்புகள்
+
+00:06:43,000 --> 00:06:47,000
+0 the original signal
+0 அசல் சமிக்ஞையை
+
+00:06:47,000 --> 00:06:50,000
+those replications don't overlap and sold by passing this through a low-pass
+அந்த விடைகள் சார்ந்தோ மற்றும் குறைந்த பாஸ் மூலம் இந்த கடந்து விற்பனை இல்லை
+
+00:06:50,000 --> 00:06:52,000
+filter in fact
+உண்மையில் வடிகட்ட
+
+00:06:52,000 --> 00:06:55,000
+we can recover the original signal well
+நாம் நன்றாக அசல் சமிக்ஞையை மீட்க முடியும்
+
+00:06:55,000 --> 00:06:59,000
+what that requires is that
+அந்த தேவை என்ன என்று ஆகிறது
+
+00:06:59,000 --> 00:07:03,000
+this frequency Omega Savannah M be less than
+இந்த அதிர்வெண் ஒமேகா சவன்னாஹ் எம் குறைவாக இருக்கும்
+
+00:07:03,000 --> 00:07:07,000
+this frequency and this frequency
+இந்த அதிர்வெண் மற்றும் இந்த அதிர்வெண்
+
+00:07:07,000 --> 00:07:12,000
+is Omega so fast minus Omega serve them
+ஒமேகா இவ்வளவு வேகமாக கழித்து ஒமேகா அவர்கள் பணியாற்ற
+
+00:07:12,000 --> 00:07:16,000
+and so what we require is dead the frequency Omega Sapan
+எனவே நாம் தேவைப்படும் இறந்த அதிர்வெண் ஒமேகா சபன் ஆகிறது
+
+00:07:16,000 --> 00:07:20,000
+be less than Omega cyb s minus Omega sed am
+ஒமேகா cyb கள் குறைவாக கழித்தல் ஒமேகா sed AM இருக்கும்
+
+00:07:20,000 --> 00:07:25,000
+or equivalent Lee what we require is that the sampling frequency
+அல்லது அதற்கு சமமான லீ நாம் என்ன தேவை இருக்கிறது என்று மாதிரி அதிர்வெண்
+
+00:07:25,000 --> 00:07:29,000
+be greater and twice the highest frequency
+இருக்கும் பெரிய மற்றும் இருமுறை அதிக அதிர்வெண்
+
+00:07:29,000 --> 00:07:33,000
+in the original signal now
+இப்போது அசல் சமிக்ஞை
+
+00:07:33,000 --> 00:07:37,000
+if in fact that condition is violated
+உண்மையில் அந்த நிலையில் மீறி இருந்தால்
+
+00:07:37,000 --> 00:07:40,000
+then we end up with a very important effect
+நாம் ஒரு மிக முக்கியமான விளைவு முடிவடையும்
+
+00:07:40,000 --> 00:07:44,000
+and that effect is referred to as a leasing
+மற்றும் விளைவு ஒரு குத்தகை என குறிப்பிடப்படுகிறது
+
+00:07:44,000 --> 00:07:49,000
+in particular if we look back at are
+குறிப்பாக நாம் வந்து பார் என்றால்
+
+00:07:49,000 --> 00:07:52,000
+original example we're here
+அசல் உதாரணமாக நாம் இங்கே இருக்கிறோம்
+
+00:07:52,000 --> 00:07:57,000
+we were able to recover our original spectrum by
+நாம் நமது உண்மையான ஸ்பெக்ட்ரம் மீட்க முடிந்தது
+
+00:07:57,000 --> 00:08:01,000
+low-pass filtering if in fact
+குறைந்த பாஸ் வடிகட்டி என்றால் உண்மையில்
+
+00:08:01,000 --> 00:08:04,000
+the sampling frequency is
+மாதிரி அதிர்வெண் ஆகிறது
+
+00:08:04,000 --> 00:08:07,000
+not high enough to avoid aliasing
+மாற்றுப்பெயரிடும் தவிர்க்க போதுமான உயர் இல்லை
+
+00:08:07,000 --> 00:08:12,000
+then what happens in that case is that the individual replications
+பிறகு என்ன என்று வழக்கு நடக்கிறது என்று தனிப்பட்ட விடைகள்
+
+00:08:12,000 --> 00:08:18,000
+love the Fourier transform above the stove the original signal
+ஃபோரியர் அடுப்பு மேலே மாற்றும் அன்பு அசல் சமிக்ஞையை
+
+00:08:18,000 --> 00:08:21,000
+overlap and what we end up with
+சார்ந்தோ நாம் முடிவடையும் என்ன
+
+00:08:21,000 --> 00:08:27,000
+is some distortion as you can see if we tried to pass this through a low-pass
+நாம் ஒரு குறைந்த பாஸ் மூலம் இந்த கடக்க முயற்சி செய்தால் நீங்கள் பார்க்க முடியும் என சில விலகல் உள்ளது
+
+00:08:27,000 --> 00:08:29,000
+filter
+வடிகட்டி
+
+00:08:29,000 --> 00:08:34,000
+to recover the original signal in fact we won't recover the original signal
+அசல் சமிக்ஞையை மீட்க உண்மையில் நாம் அசல் சமிக்ஞையை மீட்க முடியாது
+
+00:08:34,000 --> 00:08:38,000
+since these individual replications have overlapped
+இந்த தனிப்பட்ட விடைகள் ஒன்றன் இருந்து
+
+00:08:38,000 --> 00:08:43,000
+and this is the case where Omega service minus Omega Savannah is less than
+இந்த ஒமேகா சேவை கழித்து ஒமேகா சவன்னாஹ் குறைவாக அமைந்துள்ள வழக்கு
+
+00:08:43,000 --> 00:08:47,000
+Omega so vast in other words the sampling frequency is not greater
+வேறு வார்த்தைகளில் மிகவும் பரந்த ஒமேகா மாதிரி அதிர்வெண் அதிகமாக இல்லை
+
+00:08:47,000 --> 00:08:52,000
+in this case than twice the highest frequency
+இரண்டு முறை அதிக அதிர்வெண் விட இந்த வழக்கில்
+
+00:08:52,000 --> 00:08:55,000
+so what happens here then is that in effect
+அதனால் என்ன, இங்கே நடக்கும் என்று விளைவு
+
+00:08:55,000 --> 00:09:00,000
+higher frequencies get folded down into lower frequencies what would come out of
+அதிக அதிர்வெண்கள் வெளியே வந்து என்ன தாழ்வு அதிர்வெண்கள் கீழே மடிக்கப்பட்டு
+
+00:09:00,000 --> 00:09:02,000
+the low-pass filter
+குறைந்த பாஸ் வடிகட்டி
+
+00:09:02,000 --> 00:09:06,000
+is the reflection of some higher frequencies into lower frequencies
+குறைந்த அதிர்வெண்கள் ஒரு சில அதிக அதிர்வெண்கள் பிரதிபலிப்பு ஆகிறது
+
+00:09:06,000 --> 00:09:09,000
+as I suggested a minute ago that affect
+நான் பாதிக்கும் என்று ஒரு நிமிடம் முன்பு ஆலோசனை
+
+00:09:09,000 --> 00:09:13,000
+is referred to as alias saying and in order to
+என்று மாற்று மற்றும் பொருட்டு குறிப்பிடப்படுகிறது
+
+00:09:13,000 --> 00:09:19,000
+both understand that term better and two understand in fact the effect better
+சிறந்த அந்த கால புரிந்து மற்றும் இரண்டு சிறந்த உண்மையில் விளைவை புரிந்து கொள்ள இரண்டு
+
+00:09:19,000 --> 00:09:23,000
+it's useful to examine this a little more closely
+அது இன்னும் சிறிது நெருக்கமாக இந்த ஆய்வு பயனுள்ளதாக இருக்கிறது
+
+00:09:23,000 --> 00:09:27,000
+for the specific example a sinusoidal signal
+குறிப்பிட்ட உதாரணமாக ஒரு சைன் வளைவு சமிக்ஞை
+
+00:09:27,000 --> 00:09:31,000
+so let's concentrate on that and what we want to look at
+எனவே நாம் பார்க்க வேண்டும் என்ன என்று கவனம் செலுத்த வேண்டாம்
+
+00:09:31,000 --> 00:09:35,000
+is the effect or alias saying
+விளைவு அல்லது மாற்று என்று கூறி
+
+00:09:35,000 --> 00:09:39,000
+when our input signal is a sinusoidal signal
+எங்கள் உள்ளீட்டு சமிக்ஞையை ஒரு சைன் வளைவு சமிக்ஞை ஆகும் போது
+
+00:09:39,000 --> 00:09:43,000
+now to do that what I wanna show shortly
+இப்போது என்ன செய்ய வேண்டும் என்று நான் விரைவில் குறைகளையும்
+
+00:09:43,000 --> 00:09:46,000
+is a computer-generated movie
+ஒரு கணினி உருவாக்கப்பட்ட படம்
+
+00:09:46,000 --> 00:09:49,000
+that we've made and let's first walk-through
+நாங்கள் செய்த மற்றும் நாம் செய்த முதல் தேர்வு மூலம்
+
+00:09:49,000 --> 00:09:54,000
+a few frames a bit to give you our first of all
+ஒரு சில பிரேம்கள் ஒரு பிட் நீங்கள் அனைத்து எங்கள் முதல் கொடுக்க
+
+00:09:54,000 --> 00:09:58,000
+to to set up our notation and to suggest what it is that we're trying to
+எங்கள் குறியீடு அமைக்க மற்றும் அதை நாம் முயற்சிக்கும் என்ன பரிந்துரைக்கும் செய்ய
+
+00:09:58,000 --> 00:10:00,000
+demonstrate
+நிரூபிக்க
+
+00:10:00,000 --> 00:10:06,000
+well what we have is an input signal
+நன்றாக என்ன நாம் ஒரு உள்ளீட்டு சமிக்ஞையை ஆகிறது
+
+00:10:06,000 --> 00:10:09,000
+is a sinusoidal signal and
+ஒரு சைன் வளைவு சிக்னல் மற்றும் ஆகிறது
+
+00:10:09,000 --> 00:10:12,000
+the spectrum or for a transformer that
+ஸ்பெக்ட்ரம் அல்லது ஒரு மின்மாற்றி என்று
+
+00:10:12,000 --> 00:10:15,000
+is an impulse in the frequency domain at
+அதிர்வெண் களத்தில் ஒரு உந்துவிசை உள்ளது
+
+00:10:15,000 --> 00:10:18,000
+the frequency the sinusoid we then
+அதிர்வெண் sinusoid நாம்
+
+00:10:18,000 --> 00:10:23,000
+have samples love that and when we sample that in for this particular
+மாதிரிகள் என்று அன்பு மற்றும் இந்த குறிப்பிட்ட அந்த மாதிரி போது
+
+00:10:23,000 --> 00:10:26,000
+example its sample the 10 killer hurts
+எடுத்துக்காட்டாக அதன் மாதிரி 10 கொலையாளி வலிக்கிறது
+
+00:10:26,000 --> 00:10:29,000
+this spectrum is then replicated
+இந்த ஸ்பெக்ட்ரம் பின்னர் எதிரொலிக்கும்
+
+00:10:29,000 --> 00:10:33,000
+at multiples all the sampling frequency
+மடங்குகள் அனைத்து மாதிரி அதிர்வெண்
+
+00:10:33,000 --> 00:10:37,000
+and I haven't shown negative frequencies here but the contribution do
+நான் இங்கே எதிர்மறை அதிர்வெண்கள் காட்டப்பட்டுள்ளது இல்லை ஆனால் பங்களிப்பு செய்ய
+
+00:10:37,000 --> 00:10:41,000
+to the negative frequency
+எதிர்மறை அதிர்வெண்
+
+00:10:41,000 --> 00:10:46,000
+is at 10 killer hurts minus the input sinusoid
+10 கொலையாளி உள்ளது உள்ளீடு sinusoid கழித்து வலிக்கிறது
+
+00:10:46,000 --> 00:10:49,000
+we then carry out a reconstruction
+நாம் ஒரு புனரமைப்பு முன்னெடுக்க
+
+00:10:49,000 --> 00:10:55,000
+with an idea low-pass filter and the ideal ok pass filter is set at
+ஒரு யோசனை குறைந்த பாஸ் வடிகட்டி மற்றும் சிறந்த சரியா பாஸ் வடிகட்டி அமைக்கப்பட்டுள்ளது கொண்டு
+
+00:10:55,000 --> 00:10:58,000
+half the sampling frequency or five kelleher its
+மாதிரி அதிர்வெண் அல்லது ஐந்து அரை கெல்லஹர் அதன்
+
+00:10:58,000 --> 00:11:01,000
+so what we have then is
+எனவே நாம் என்ன வேண்டும்
+
+00:11:01,000 --> 00:11:05,000
+the input signal accept T
+உள்ளீட்டு சமிக்ஞையை டி ஏற்க
+
+00:11:05,000 --> 00:11:09,000
+and the impulse train exe PFT
+மற்றும் உந்துவிசை ரயில் exe நெனைக்க
+
+00:11:09,000 --> 00:11:13,000
+and then the reconstructed signal is
+பின்னர் மத்திய உள்துறை அமைச்சகம் அடையாளம் ஆகும்
+
+00:11:13,000 --> 00:11:16,000
+the output from the low-pass filter
+குறைந்த பாஸ் வடிகட்டி வெளியீடு
+
+00:11:16,000 --> 00:11:21,000
+which I denote as X a party
+நான் ஒரு கட்சி எக்ஸ் குறிக்கும்
+
+00:11:21,000 --> 00:11:24,000
+now as the input frequency X 50
+இப்போது உள்ளீடு அதிர்வெண் எக்ஸ் 50
+
+00:11:24,000 --> 00:11:28,000
+increases this impulse moves up in frequency
+இந்த உந்துவிசை அதிர்வெண் வரை நகரும் அதிகரிக்கிறது
+
+00:11:28,000 --> 00:11:32,000
+but this impulse moves down in frequency
+ஆனால் இந்த உந்துவிசை அதிர்வெண் கீழே நகரும்
+
+00:11:32,000 --> 00:11:37,000
+and so let's just look at a few frames as the input frequency increases
+அதனால் தான் உள்ளீடு அதிர்வெண் அதிகரிக்கும் என ஒரு சில பிரேம்கள் பார்க்கலாம்
+
+00:11:37,000 --> 00:11:40,000
+so we have here a case
+நாம் இங்கே ஒரு வழக்கு
+
+00:11:40,000 --> 00:11:43,000
+where the input frequency has move up
+உள்ளீடு அதிர்வெண் வரை செல்கிறது, அங்கு
+
+00:11:43,000 --> 00:11:46,000
+close to five killer hurts
+ஐந்து கொலையாளி நெருங்கிய வலிக்கிறது
+
+00:11:46,000 --> 00:11:50,000
+as we continue further these two impossible's
+நாம் இந்த இரண்டு சாத்தியமற்றது மேலும் தொடர்ந்து
+
+00:11:50,000 --> 00:11:54,000
+will cross and what we'll end up with as i indicated
+கடக்கும் நான் குறிப்பிட்டது போல் நாம் என்ன முடிவடையும் வேண்டும்
+
+00:11:54,000 --> 00:11:58,000
+is aliasing so here now is a case
+இப்போது இங்கே மாற்றுப்பெயரிடு ஒரு வழக்கு
+
+00:11:58,000 --> 00:12:01,000
+where we have alias saying the
+நாம் மாற்று என்று அங்கு
+
+00:12:01,000 --> 00:12:05,000
+replication of the negative frequency has crossed into the passband if the
+எதிர்மறை அதிர்வெண் போலிகளை கடவுப்பட்டை கடந்து விட்டது என்றால்
+
+00:12:05,000 --> 00:12:07,000
+filter
+வடிகட்டி
+
+00:12:07,000 --> 00:12:10,000
+and the reconstructed sinusoid will now
+மற்றும் மறுகட்டுமானம் sinusoid இப்போது நான்
+
+00:12:10,000 --> 00:12:14,000
+be the frequency associated with this impulse
+அதிர்வெண் இந்த உந்துவிசை தொடர்புடைய
+
+00:12:14,000 --> 00:12:17,000
+rather than the frequency Associated
+மாறாக தொடர்புடைய அதிர்வெண்
+
+00:12:17,000 --> 00:12:22,000
+with the original sinusoid and to dramatize that
+அசல் sinusoid மற்றும் அந்த நாடகப்படுத்த
+
+00:12:22,000 --> 00:12:25,000
+even further here is
+மேலும் இங்கே இருக்கிறது
+
+00:12:25,000 --> 00:12:29,000
+the example where now the input frequency
+உதாரணமாக இப்போது உள்ளீடு அதிர்வெண், அங்கு
+
+00:12:29,000 --> 00:12:33,000
+has moved up close to 10 killer hurts
+நெருக்கமான 10 கொலையாளி காயப்படுத்துகிறது வரை சென்றார்
+
+00:12:33,000 --> 00:12:36,000
+but what comes out of the low-pass filter
+ஆனால் என்ன குறைந்த பாஸ் வடிகட்டி வெளியே வருகிறது
+
+00:12:36,000 --> 00:12:39,000
+is a much lower frequency and in fact
+மிக குறைந்த அதிர்வெண் மற்றும் உண்மையில்
+
+00:12:39,000 --> 00:12:43,000
+you can see that here is the reconstructed sinusoid
+நீங்கள் இங்கே மறுகட்டுமானம் sinusoid உள்ளது என்று பார்க்க முடியும்
+
+00:12:43,000 --> 00:12:48,000
+whereas here we have the input size
+அதேசமயம் நாம் உள்ளீடு அளவு வேண்டும்
+
+00:12:48,000 --> 00:12:51,000
+okay well now what I'm gonna wanna do is
+சரி, சரி, இப்போது நான் என்ன போகிறேன் இனி செய்ய
+
+00:12:51,000 --> 00:12:56,000
+demonstrate this as i indicated with a computer-generated movie
+நான் ஒரு கணினி உருவாக்கப்பட்ட திரைப்படம் குறிப்பிட்ட இந்த ஆர்ப்பாட்டம்
+
+00:12:56,000 --> 00:13:00,000
+and well we'll see is the effect
+மற்றும் நாம் பார்க்க வேண்டும் அதே விளைவு
+
+00:13:00,000 --> 00:13:05,000
+on the effect of reconstructing
+மறுகட்டமைப்பு விளைவு
+
+00:13:05,000 --> 00:13:08,000
+from the samples using a low-pass filter
+ஒரு குறைந்த பாஸ் வடிகட்டி பயன்படுத்தி மாதிரிகளில் இருந்து
+
+00:13:08,000 --> 00:13:12,000
+for an input which changes in frequency
+அதிர்வெண் மாறும் ஒரு உள்ளீடு
+
+00:13:12,000 --> 00:13:15,000
+and with the sampling rate of 10 killer hurts
+மற்றும் 10 கொலைகாரன் மாதிரி விகிதம் வலிக்கிறது
+
+00:13:15,000 --> 00:13:19,000
+and what we'll see in the first part of this movie is
+மற்றும் நாம் இந்த படம் முதல் பகுதி பார்க்கலாம் ஆகிறது
+
+00:13:19,000 --> 00:13:22,000
+the input except the and the reconstructed signal
+தவிர உள்ளீடு மற்றும் மறுகட்டுமானம் சமிக்ஞை
+
+00:13:22,000 --> 00:13:27,000
+X a party without explicitly showing the samples
+வெளிப்படையாக மாதிரிகள் காட்டும் இல்லாமல் எக்ஸ் ஒரு கட்சி
+
+00:13:27,000 --> 00:13:31,000
+and then at a later point will also show this and indicate
+பின்னர் ஒரு பின்னர் கட்டத்தில் இந்த காண்பிக்கும் மற்றும் குறிப்பிடுகின்றன
+
+00:13:31,000 --> 00:13:34,000
+that in fact the samples are those two are equal even though
+உண்மையில் மாதிரிகள் அந்த என்று இரண்டு கூட சமமாக இருக்கின்றன
+
+00:13:34,000 --> 00:13:37,000
+they themselves are not
+அவர்கள் தங்களை இல்லை
+
+00:13:37,000 --> 00:13:41,000
+so at the top will have the input sinusoid without
+இல்லாமல் உள்ளீடு sinusoid வேண்டும் மேலே எனவே
+
+00:13:41,000 --> 00:13:44,000
+showing the samples and its
+மாதிரிகள் மற்றும் காட்டும் அதன்
+
+00:13:44,000 --> 00:13:50,000
+for EA transform is an impulse in the frequency domain as we've indicated
+நாம் சுட்டிக்காட்டினார் போல ஈ.ஏ. மாற்றும் அதிர்வெண் களத்தில் ஒரு உந்துவிசை ஆகிறது
+
+00:13:50,000 --> 00:13:55,000
+and if we sample it that imposed and gets replicated
+நாம் அது மாதிரிக்காக என்றால் சுமத்தப்பட்டுள்ளன எதிரொலிக்கும் விடும்
+
+00:13:55,000 --> 00:13:58,000
+and so samples in particular
+குறிப்பாக மிகவும் மாதிரிகள்
+
+00:13:58,000 --> 00:14:02,000
+will have a Fourier transform not only with an impulse
+ஃபோரியர் என்ற உந்துதல் மட்டும் மாற்றும் வேண்டும்
+
+00:14:02,000 --> 00:14:07,000
+at the input sinusoid sinusoidal frequency but also attend killer hurts
+உள்ளீடு sinusoid sinusoidal அதிர்வெண் ஆனால் கொலையாளி காயப்படுத்துகிறது கலந்து
+
+00:14:07,000 --> 00:14:09,000
+minus that frequency
+என்று அதிர்வெண் கழித்து
+
+00:14:09,000 --> 00:14:14,000
+now for the reconstruction we pass the samples through an idea low-pass filter
+இப்போது புனரமைப்பு நாம் ஒரு யோசனை குறைந்த பாஸ் வடிகட்டி மூலம் மாதிரிகள் அனுப்ப
+
+00:14:14,000 --> 00:14:15,000
+I picked
+நான் தேர்வு
+
+00:14:15,000 --> 00:14:19,000
+the cutoff frequency of the low-pass filter at half the sampling frequency
+அரை மாதிரி அதிர்வெண் குறைந்த பாஸ் வடிகட்டி வெட்டு அதிர்வெண்
+
+00:14:19,000 --> 00:14:21,000
+namely 5 killer hurts
+அதாவது 5 கொலையாளி வலிக்கிறது
+
+00:14:21,000 --> 00:14:24,000
+and here we see is that the output
+இங்கே நாம் பார்க்க என்று வெளியீடு
+
+00:14:24,000 --> 00:14:29,000
+reconstructed signal in fact matches in frequency the input signal
+உண்மையில் மறுகட்டுமானம் சமிக்ஞை அதிர்வெண் உள்ள உள்ளீட்டு சமிக்ஞையை பொருந்தும்
+
+00:14:29,000 --> 00:14:33,000
+now as we change the input frequency
+இப்போது நாம் உள்ளீடு அதிர்வெண் மாற்ற
+
+00:14:33,000 --> 00:14:36,000
+the reconstructed sinus so it is identical
+மறுகட்டுமானம் சைனஸ் அது ஒரே மாதிரியாக தான் இருக்கும்
+
+00:14:36,000 --> 00:14:41,000
+until we get to an input frequency
+நாம் ஒரு உள்ளீடு அதிர்வெண் கிடைக்கும் வரை
+
+00:14:41,000 --> 00:14:44,000
+which exceeds half the sampling frequency
+இது அரை மாதிரி அதிர்வெண் அதிகமாக
+
+00:14:44,000 --> 00:14:50,000
+at that point we have aliasing and while the input frequency is increasing
+உள்ளீடு அதிர்வெண் அதிகரித்து போது அந்த இடத்தில் நாம் மாற்றுப்பெயரிடும் மற்றும்
+
+00:14:50,000 --> 00:14:54,000
+the output frequency in fact is decreasing
+உண்மையில் வெளியீடு அதிர்வெண் குறைந்து வருகிறது
+
+00:14:54,000 --> 00:14:58,000
+because that's what's inside the passband the filter
+என்று கடவுப்பட்டை உள்ளே வடிகட்டி என்ன காரணம்
+
+00:14:58,000 --> 00:15:05,000
+now let's sweep it back and as the input frequency decreases the output frequency
+உள்ளீடு அதிர்வெண் வெளியீடு அதிர்வெண் குறைகிறது என இப்போது அது மீண்டும் ஒழுங்குபடுத்தும் நாம்
+
+00:15:05,000 --> 00:15:06,000
+increases
+அதிகரிக்கும்
+
+00:15:06,000 --> 00:15:09,000
+till there's no aliasing and now the output reconstructed
+எந்த மாற்றுப்பெயரிடும் மற்றும் மறுகட்டுமானம் இப்போது வெளியீடு உள்ளது வரை
+
+00:15:09,000 --> 00:15:14,000
+signal is equal to the input
+சிக்னல் உள்ளீடு சமமாக இருக்கிறது
+
+00:15:14,000 --> 00:15:18,000
+so we sample the signal and then reconstructed
+நாம் சமிக்ஞை மாதிரிக்காக பின்னர் மறுகட்டுமானம்
+
+00:15:18,000 --> 00:15:21,000
+the signal from the samples and keep in mind
+மாதிரிகளில் இருந்து சிக்னல் மற்றும் மனதில் வைத்து
+
+00:15:21,000 --> 00:15:26,000
+that given a set of samples there are lots of continuous curves that we can
+மாதிரிகள் கொடுக்கப்பட்ட தொடர்ச்சியான வளைவுகள் நிறைய உள்ளன என்று நாம்
+
+00:15:26,000 --> 00:15:28,000
+thread through the set of samples
+மாதிரிகள் தொகுப்பு மூலம் நூல்
+
+00:15:28,000 --> 00:15:32,000
+the one that we picked up cores is the one consistent
+நாம் கருக்கள் எடுத்தார்கள் என்று ஒன்று நிலையான ஆகிறது
+
+00:15:32,000 --> 00:15:35,000
+with the assumption about the signal band with
+சிக்னல் இசைக்குழு பற்றி ஊகத்தை
+
+00:15:35,000 --> 00:15:39,000
+in particular we've reconstructed the signal
+குறிப்பாக நாம் சமிக்ஞை மறுகட்டுமானம்
+
+00:15:39,000 --> 00:15:44,000
+that who spectrum falls within the pass band at the filter
+என்று யார் ஸ்பெக்ட்ரம் வடிகட்டி பாஸ் இசைக்குழு விழும்
+
+00:15:44,000 --> 00:15:48,000
+now what I'd like to show is the same
+இப்போது நான் என்ன காட்ட விரும்புகிறேன் அதே ஆகிறது
+
+00:15:48,000 --> 00:15:51,000
+reconstruction and input as I showed before
+புனரமைப்பு மற்றும் உள்ளீடு நான் முன் காட்டியது போல்
+
+00:15:51,000 --> 00:15:55,000
+but now let's look at the samples and what we'll see is that
+ஆனால் இப்போது மாதிரிகள் பார்க்கலாம் மற்றும் நாம் பார்க்க வேண்டும் என்று
+
+00:15:55,000 --> 00:15:58,000
+when there's alias saying even though
+என்றாலும் கூட கூறி மாற்று இருக்கும் போது
+
+00:15:58,000 --> 00:16:02,000
+the output the reconstructed signal
+வெளியீடு மறுகட்டுமானம் சமிக்ஞை
+
+00:16:02,000 --> 00:16:05,000
+is not identical to the input in fact
+உண்மையில் உள்ளீடு ஒத்ததாக இல்லை
+
+00:16:05,000 --> 00:16:09,000
+it's consistent with the input samples that is sampling the reconstructed
+அது மறுகட்டுமானம் மாதிரி என்று உள்ளீடு மாதிரிகள் இசைவானதாக இருக்கிறது
+
+00:16:09,000 --> 00:16:11,000
+signal
+சமிக்ஞை
+
+00:16:11,000 --> 00:16:15,000
+gives a set of samples identical to the samples at the input
+உள்ளீடு மாதிரிகள் ஒத்ததாக மாதிரிகள் ஒரு தொகுப்பு தருகிறது
+
+00:16:15,000 --> 00:16:19,000
+and it's just that the interpolation in between those samples
+அது தான் அந்த மாதிரிகள் இடையே உள்ள இடைச்செருகல்
+
+00:16:19,000 --> 00:16:22,000
+is an interpolation consistent with you soon
+நீங்கள் இசைவானதாக ஒரு இடைச்செருகல் விரைவில்
+
+00:16:22,000 --> 00:16:25,000
+fan with love the input based on the sampling there
+காதல் ரசிகர் அங்கு மாதிரி அடிப்படையில் உள்ளீடு
+
+00:16:25,000 --> 00:16:28,000
+so let's now look at that with
+எனவே இப்போது அந்த பார்போம்
+
+00:16:28,000 --> 00:16:33,000
+the samples also shown along with the sinusoid
+மாதிரிகள் sinusoid இணைந்து காட்டப்பட்டது
+
+00:16:33,000 --> 00:16:38,000
+so at the top we have the input sinusoid together with its samples
+எனவே மேலே நாம் அதன் மாதிரிகள் சேர்ந்து உள்ளீடு sinusoid வேண்டும்
+
+00:16:38,000 --> 00:16:42,000
+the bottom traces the Fourier transform of the sampled waveform
+கீழே ஃபோரியர் சோதனை அலை மாற்றும் தடயங்கள்
+
+00:16:42,000 --> 00:16:46,000
+the middle trace is the reconstructed
+மத்திய சுவடு மறுகட்டுமானம் ஆகிறது
+
+00:16:46,000 --> 00:16:51,000
+sinusoid together with its samples and notice of course that the samples are
+மாதிரிகள் என்று நிச்சயமாக அதன் மாதிரிகள் மற்றும் அறிவிப்பு சேர்ந்து sinusoid
+
+00:16:51,000 --> 00:16:53,000
+the input a reconstructed signal
+உள்ளீடு ஒரு மறுகட்டுமானம் சமிக்ஞை
+
+00:16:53,000 --> 00:16:56,000
+are identical and also
+மேலும் ஒத்த மற்றும் இருக்கின்றன
+
+00:16:56,000 --> 00:17:00,000
+the input sinusoidal frequency
+உள்ளீடு sinusoidal அதிர்வெண்
+
+00:17:00,000 --> 00:17:04,000
+and the output sinus or frequency are identical
+மற்றும் வெளியீடு சைனஸ் அல்லது அதிர்வெண் ஒரே மாதிரியானவை
+
+00:17:04,000 --> 00:17:09,000
+we now increase the frequency at the input
+நாம் இப்போது உள்ளீடு அதிர்வெண் அதிகரிக்க
+
+00:17:09,000 --> 00:17:13,000
+the reconstructed sinusoid tracks the input frequency
+மறுகட்டுமானம் sinusoid உள்ளீடு அதிர்வெண் கண்காணிக்கிறது
+
+00:17:13,000 --> 00:17:16,000
+and of course the samples are the two are identical
+மற்றும் நிச்சயமாக மாதிரிகள் இரண்டு ஒரே மாதிரியானவை இருக்கின்றன
+
+00:17:16,000 --> 00:17:20,000
+the interpolation in between the samples is identical
+மாதிரிகள் இடையே உள்ள இடைச்செருகல் ஒத்ததாக உள்ளது
+
+00:17:20,000 --> 00:17:24,000
+because the fact dead the input frequency is still
+உண்மையில் இறந்த காரணம் உள்ளீடு அதிர்வெண் இன்னும் இருக்கிறது
+
+00:17:24,000 --> 00:17:31,000
+less than half the sampling frequency
+பாதிக்கும் குறைவான மாதிரி அதிர்வெண்
+
+00:17:31,000 --> 00:17:37,000
+and so as long as the input is frequency is less than half the sampling frequency
+மற்றும் மிக நீண்ட உள்ளீடு அதிர்வெண் என பாதிக்கும் குறைவான மாதிரி அதிர்வெண் ஆகிறது
+
+00:17:37,000 --> 00:17:40,000
+not only will the samples be identical but also
+மாதிரிகள் ஒத்ததாக இருக்கும் ஆனால் மட்டும்
+
+00:17:40,000 --> 00:17:44,000
+the reconstructed continuous waveform will match
+மறுகட்டுமானம் தொடர்ச்சியான அலைவடிவம் பொருந்தும்
+
+00:17:44,000 --> 00:17:51,000
+the input way for
+உள்ளீடு வழி
+
+00:17:56,000 --> 00:17:59,000
+now when we get to hear the sampling frequency were just
+நாம் கேட்க கிடைக்கும் போது இப்போது மாதிரி அதிர்வெண் இருந்தது தான்
+
+00:17:59,000 --> 00:18:02,000
+on the verge Bailey is saying this isn't alias saying
+விளிம்பில் பெய்லி இந்த மாற்று சொல்லவில்லை கூறி உள்ளது
+
+00:18:02,000 --> 00:18:06,000
+quite yet but any increase in the input frequency
+மிகவும் இன்னும் ஆனால் உள்ளீடு அதிர்வெண் அதிகரிப்பு
+
+00:18:06,000 --> 00:18:11,000
+will now generate aliasing we now have a leasing
+இப்போது மாற்றுப்பெயரிடும் உருவாக்கும் நாம் இப்போது ஒரு குத்தகை வேண்டும்
+
+00:18:11,000 --> 00:18:15,000
+the output frequency is lower than the input frequency but notice
+வெளியீடு அதிர்வெண் உள்ளீடு அதிர்வெண் ஆனால் அறிவிப்பு விட குறைவாக உள்ளது
+
+00:18:15,000 --> 00:18:20,000
+that the samples are identical now
+மாதிரிகள் இப்போது ஒரே மாதிரியானவை என்று
+
+00:18:20,000 --> 00:18:24,000
+the low-pass filter is interpolating in between those samples
+குறைந்த பாஸ் வடிகட்டி அந்த மாதிரிகள் இடையே உள்ள இடைக்கணிப்பிடுதல்
+
+00:18:24,000 --> 00:18:28,000
+with a sinusoid that falls within the past Pandev the low-pass filter
+கடந்த Pandev உள்ள குறைந்த பாஸ் வடிகட்டி விழும் என்று ஒரு sinusoid கொண்டு
+
+00:18:28,000 --> 00:18:34,000
+which no longer matches the frequency of the input sinusoid but
+இது இனி உள்ளீடு sinusoid அதிர்வெண் பொருந்தும் ஆனால்
+
+00:18:34,000 --> 00:18:38,000
+the important point is that even when we have alias saying
+முக்கியமான புள்ளி என்று நாம் கூறி மாற்று கூட போது
+
+00:18:38,000 --> 00:18:41,000
+the samples are the reconstructed waveform
+மாதிரிகள் மறுகட்டுமானம் அலைவடிவம் இருக்கின்றன
+
+00:18:41,000 --> 00:18:44,000
+are identical to the samples
+மாதிரிகள் ஒரே மாதிரியானவை
+
+00:18:44,000 --> 00:18:50,000
+of the original way for and notice that as the input frequency increases
+அசல் வழி மற்றும் அறிவிப்பு என்று உள்ளீடு அதிர்வெண் அதிகரிக்கும் என
+
+00:18:50,000 --> 00:18:54,000
+in fact the interpolated output the reconstructed output
+உண்மையில் இடைச்செருகலாக வெளியீடு மறுகட்டுமானம் வெளியீடு
+
+00:18:54,000 --> 00:19:01,000
+has decreased in frequency now as the input frequency begins to get closer to
+உள்ளீடு அதிர்வெண் நெருக்கமாக பெற தொடங்கும் என இப்போது அதிர்வெண் குறைந்து வருகிறது
+
+00:19:01,000 --> 00:19:05,000
+10 killer hurts in fact you're all I
+10 கொலையாளி காயப்படுத்துகிறது உண்மையில் நீங்கள் அனைத்து நான் இருக்கிறீர்கள்
+
+00:19:05,000 --> 00:19:08,000
+tends to also interpolate between the samples
+மேலும் மாதிரிகள் இடையே இடைச்செருக முனைகிறது
+
+00:19:08,000 --> 00:19:12,000
+with a frequency that is lower
+குறைவாக உள்ளது என்று ஒரு அதிர்வெண்
+
+00:19:12,000 --> 00:19:15,000
+day and the input frequency NS particularly evident
+நாள் மற்றும் உள்ளீடு அதிர்வெண் NS குறிப்பாக தெளிவாகிறது
+
+00:19:15,000 --> 00:19:19,000
+here notice that the input samples in fact
+இங்கே கவனிக்க என்று உண்மையில் உள்ளீடு மாதிரிகள்
+
+00:19:19,000 --> 00:19:22,000
+look like they would be associated
+அவர்கள் தொடர்பு கொள்ளும் போன்ற
+
+00:19:22,000 --> 00:19:26,000
+with a much lower frequency sinusoid then in fact
+பின்னர் உண்மையில் ஒரு மிக குறைந்த அதிர்வெண் sinusoid கொண்டு
+
+00:19:26,000 --> 00:19:30,000
+was the sinusoid the generated a lower frequency sinusoid
+sinusoid குறைந்த அதிர்வெண் sinusoid உருவாக்கப்படும்
+
+00:19:30,000 --> 00:19:35,000
+in fact corresponds to the reconstructed one now as we sit back down
+நாம் மீண்டும் உட்கார்ந்து உண்மையில் இப்போது மறுகட்டுமானம் ஒரு ஒத்துள்ளது
+
+00:19:35,000 --> 00:19:40,000
+the aliasing eventually disappears and the output sinus or tracks the input
+மாற்றுப்பெயரிடும் இறுதியில் மறைந்து மற்றும் வெளியீடு சைனஸ் அல்லது உள்ளீடு கண்காணிக்க
+
+00:19:40,000 --> 00:19:42,000
+sinusoid in frequency
+அதிர்வெண் sinusoid
+
+00:19:42,000 --> 00:19:45,000
+so we've seen the
+அதனால் நாம் பார்த்த
+
+00:19:45,000 --> 00:19:49,000
+effective aliasing for sinusoidal signals and turns away forms
+sinusoidal சிக்னல்களை திறன் மாற்றுப்பெயரிடும் மற்றும் வடிவங்கள் திருப்பி
+
+00:19:49,000 --> 00:19:53,000
+now let's hear how it sounds now
+இப்போது அது இப்போது கேட்பதற்கே எப்படி கேட்க
+
+00:19:53,000 --> 00:19:57,000
+what we have for this demonstration is
+நாம் என்ன இந்த ஆர்ப்பாட்டத்திற்கு வேண்டும் ஆகிறது
+
+00:19:57,000 --> 00:20:00,000
+an oscillator and
+ஒரு அலையியற்றி மற்றும்
+
+00:20:00,000 --> 00:20:04,000
+a sampler and the output of the sampler
+ஒரு முன்மாதிரி மற்றும் மாதிரியாக வெளியீடு
+
+00:20:04,000 --> 00:20:07,000
+goes into a low-pass filter so the
+ஒரு குறைந்த பாஸ் வடிகட்டி செல்கிறது எனவே
+
+00:20:07,000 --> 00:20:13,000
+input for from the oscillator goes into the sampler
+அலைவியின் உள்ளீடு மாதிரியாக செல்கிறது
+
+00:20:13,000 --> 00:20:16,000
+and the output the sampler
+மற்றும் வெளியீடு மாதிரியாக
+
+00:20:16,000 --> 00:20:19,000
+goes into the low-pass filter the
+குறைந்த பாஸ் வடிகட்டி செல்கிறது
+
+00:20:19,000 --> 00:20:22,000
+sampler frequency is 10 killer hurts
+மாதிரியாக அதிர்வெண் 10 கொலையாளி காயப்படுத்துகிறது ஆகிறது
+
+00:20:22,000 --> 00:20:26,000
+and so the low-pass filter
+அதனால் குறைந்த பாஸ் வடிகட்டி
+
+00:20:26,000 --> 00:20:30,000
+has a cutoff frequency as i indicate here
+நான் இங்கே குறிப்பிட ஒரு வெட்டு அதிர்வெண்
+
+00:20:30,000 --> 00:20:33,000
+all five killer hurts and
+அனைத்து ஐந்து கொலையாளி வலிக்கிறது மற்றும்
+
+00:20:33,000 --> 00:20:36,000
+what will listened to is the
+என்ன கேட்டு வரும் ஆகிறது
+
+00:20:36,000 --> 00:20:40,000
+reconstructed output as the
+என மறுகட்டுமானம் வெளியீடு
+
+00:20:40,000 --> 00:20:43,000
+oscillator input frequency berries
+அலைப்பி உள்ளீடு அதிர்வெண் பெர்ரி
+
+00:20:43,000 --> 00:20:48,000
+and recall there what should happen is that
+அங்கு நினைவு என்ன நடக்க வேண்டும் என்று
+
+00:20:48,000 --> 00:20:53,000
+when the oscillator input frequency gets past half the sampling frequency
+அலைப்பி உள்ளீடு அதிர்வெண் கடந்த அரை மாதிரி அதிர்வெண் வரும்போது
+
+00:20:53,000 --> 00:20:59,000
+we should hear aliasing so we'll start the oscillator it to kill her ex
+நாம் அது தனது முன்னாள் கொல்ல அலையியற்றி தொடங்க வேண்டும் நாம் மாற்றுப்பெயரிடும் கேட்க வேண்டும்
+
+00:20:59,000 --> 00:21:02,000
+and keep in mind that what you see on the dial
+மற்றும் மனதில் வைத்து நீங்கள் என்ன டயல் பார்க்க
+
+00:21:02,000 --> 00:21:06,000
+is the input frequency which you here is the output frequency
+நீங்கள் இங்கே வெளியீடு அதிர்வெண் இது உள்ளீடு அதிர்வெண்
+
+00:21:06,000 --> 00:21:10,000
+as long as the input frequency is less than half the sampling frequency in
+நீண்ட உள்ளீடு அதிர்வெண் பாதிக்கும் குறைவான மாதிரி அதிர்வெண் உள்ளது
+
+00:21:10,000 --> 00:21:12,000
+other words 5 killer hurts
+வேறு வார்த்தைகளில் 5 கொலையாளி வலிக்கிறது
+
+00:21:12,000 --> 00:21:16,000
+the reconstructed signal sounds identical to the input
+மறுகட்டுமானம் சமிக்ஞை உள்ளீடு ஒத்ததாக ஒலிக்கிறது
+
+00:21:16,000 --> 00:21:19,000
+now at five still hurts were right
+இப்போது ஐந்து இன்னும் சரி
+
+00:21:19,000 --> 00:21:24,000
+on the verge of aliasing and when we increase the input frequency past five
+மாற்றுப்பெயரிடும் விளிம்பில் மற்றும் நாம் ஐந்து கடந்த உள்ளீடு அதிர்வெண் அதிகரிக்க போது
+
+00:21:24,000 --> 00:21:25,000
+killer hurts
+கொலையாளி வலிக்கிறது
+
+00:21:25,000 --> 00:21:29,000
+the reconstructed frequency in fact will decrease
+உண்மையில் மறுகட்டுமானம் அதிர்வெண் குறைக்கும்
+
+00:21:29,000 --> 00:21:32,000
+so as we move for example from 5 killer hurts
+நாம் காயப்படுத்துகிறது 5 கொலையாளி எடுத்துக்காட்டாக செல்கிறோம் அதனால்
+
+00:21:32,000 --> 00:21:36,000
+up to let's say 6 killer hurts
+6 கொலையாளி காயப்படுத்துகிறது சொல்கிறேன் வரை
+
+00:21:36,000 --> 00:21:39,000
+sick still hurts in fact yes alias
+உடம்பு இன்னும் உண்மையில் வலிக்கிறது மாற்று ஆம்
+
+00:21:39,000 --> 00:21:43,000
+down to what gets alias down to
+கீழே மாற்று பெறுகிறார் என்ன கீழே
+
+00:21:43,000 --> 00:21:46,000
+4 killer us so
+4 கொலையாளி எங்களுக்கு மிகவும்
+
+00:21:46,000 --> 00:21:50,000
+6 go over to the input is for killer hurts
+கொலையாளி காயப்படுத்துகிறது உள்ளீடு மீது செல்ல 6 ஆகிறது
+
+00:21:50,000 --> 00:21:54,000
+at the output now if we move up even further
+நாம் இன்னும் மேலே நகர்த்த என்றால் இப்போது வெளியீடு
+
+00:21:54,000 --> 00:21:58,000
+7 kilohertz at the end pushed its alias down
+இறுதியில் 7 கிலோஹெர்ட்ஸ்களுக்கு அதன் மாற்று தள்ளப்படுத்தது
+
+00:21:58,000 --> 00:22:01,000
+to three killer hurts at the outpost
+மூன்று கொலையாளி புறக்காவல் நிலையத்தில் வலிக்கிறது
+
+00:22:01,000 --> 00:22:06,000
+so bad dan is a audio demonstration and aliasing
+மிகவும் மோசமான டான் ஒரு ஆடியோ ஆர்ப்பாட்டம் மற்றும் அலையசிங் ஆகிறது
+
+00:22:06,000 --> 00:22:09,000
+so to summarize
+எனவே சுருக்கமாக
+
+00:22:09,000 --> 00:22:12,000
+if we sample signal and then reconstruct
+நாம் சமிக்ஞை மாதிரிக்காக பின்னர் மீள் என்றால்
+
+00:22:12,000 --> 00:22:17,000
+from the samples using a low-pass filter as long as the sampling frequency is
+நீண்ட மாதிரி அதிர்வெண் என ஒரு குறைந்த பாஸ் வடிகட்டி பயன்படுத்தி மாதிரிகளில் இருந்து
+
+00:22:17,000 --> 00:22:20,000
+greater than twice the highest frequency in the signal
+சிக்னல் இருமுறை அதிக அதிர்வெண் அதிகமாக
+
+00:22:20,000 --> 00:22:23,000
+we reconstruct exactly if on the other hand
+நாம் மறுபுறம் சரியாக இருந்தால், மீள்
+
+00:22:23,000 --> 00:22:28,000
+the sampling frequency is too low less than twice the highest frequency
+மாதிரி அதிர்வெண் இருமுறை அதிக அதிர்வெண் குறைவாக மிகவும் குறைவாக உள்ளது
+
+00:22:28,000 --> 00:22:31,000
+then we get alias saying in other words
+நாம் மாற்று வேறு வார்த்தைகளில் சொல்லி
+
+00:22:31,000 --> 00:22:35,000
+higher frequencies get folded or reflected
+அதிக அதிர்வெண்கள் மடிந்த அல்லது பிரதிபலித்தது
+
+00:22:35,000 --> 00:22:38,000
+down into lower frequencies as they come through the low-pass filter
+குறைந்த கீழே அலைவரிசைகளில் அவர்கள் குறைந்த பாஸ் வடிகட்டி மூலம் வந்து
+
+00:22:38,000 --> 00:22:42,000
+now wanted the
+இப்போது தேவை
+
+00:22:42,000 --> 00:22:46,000
+common applications love the whole concept of sampling
+பொதுவான பயன்பாடுகள் மாதிரி முழு கருத்து நேசிக்கிறேன்
+
+00:22:46,000 --> 00:22:52,000
+is the use sampling to convert a continuous-time signal into a
+பயன்படுத்தி ஒரு ஒரு தொடர்ச்சியான நேர சமிக்ஞை மாற்ற நல்லாவே
+
+00:22:52,000 --> 00:22:55,000
+discrete-time signal to carry out
+முன்னெடுக்க தனி நேர சமிக்ஞை
+
+00:22:55,000 --> 00:22:59,000
+what's often referred to as discreet I processing
+பெரும்பாலும் நளினமான நான் செயலாக்க குறிப்பிடப்படுகிறது என்ன
+
+00:22:59,000 --> 00:23:04,000
+of continuous-time signals and this in fact is something that will be talking
+தொடர்ச்சியான நேர சமிக்ஞைகள் மற்றும் இந்த உண்மையில் பேசி இருக்க வேண்டும் என்று ஏதாவது உள்ளது
+
+00:23:04,000 --> 00:23:05,000
+about
+பற்றி
+
+00:23:05,000 --> 00:23:08,000
+in a fair amount of detail beginning with the next lecture
+அடுத்த விரிவுரை தொடங்கி விரிவாக ஒரு நியாயமான அளவு உள்ள
+
+00:23:08,000 --> 00:23:12,000
+but and let me indicate that for
+ஆனால் எனக்கு என்று குறிப்பிடுகின்றன நாம்
+
+00:23:12,000 --> 00:23:15,000
+that kinda processing essentially what happens
+என்று கிரகமாக என்ன அடிப்படையில் செயல்படுத்தும்போது
+
+00:23:15,000 --> 00:23:19,000
+is dead we begin with a continuous-time signal
+இறந்த நாங்கள் ஒரு தொடர்ச்சியான நேர சமிக்ஞை தொடங்க உள்ளது
+
+00:23:19,000 --> 00:23:22,000
+and convert it to a discrete-time signal
+மற்றும் ஒரு தனி நேர சமிக்ஞை மாற்ற
+
+00:23:22,000 --> 00:23:26,000
+carry out the discrete-time processing and then
+பின்னர் தனி நேர செயலாக்க முன்னெடுக்க மற்றும்
+
+00:23:26,000 --> 00:23:29,000
+convert back to continuous-time and
+தொடர்ச்சியான நேர மீண்டும் மாற்ற
+
+00:23:29,000 --> 00:23:34,000
+the conversion from a continuous-time signal to a discrete-time
+ஒரு தனி நேரம், ஒரு தொடர் நேர சமிக்ஞை மாற்ற
+
+00:23:34,000 --> 00:23:37,000
+signal in fact is done
+உண்மையில் சமிக்ஞை செய்யப்படுகிறது
+
+00:23:37,000 --> 00:23:41,000
+by exploiting sampling specifically
+குறிப்பாக மாதிரி பயன்படுத்தி
+
+00:23:41,000 --> 00:23:44,000
+by sampling the continuous-time signal
+தொடர்ச்சியான நேர சமிக்ஞை மாதிரி மூலம்
+
+00:23:44,000 --> 00:23:48,000
+with an impulse train and then
+ஒரு உந்துவிசை ரயிலில் பின்னர்
+
+00:23:48,000 --> 00:23:51,000
+converting the impulse train into
+ஒரு உந்துவிசை ரயில் மாற்றும்
+
+00:23:51,000 --> 00:23:56,000
+a sequence in a manner that all talk about in more detail
+இன்னும் விரிவாக பற்றி பேச என்று ஒரு முறையில் ஒரு காட்சியில்
+
+00:23:56,000 --> 00:23:59,000
+next time now in doing that
+செய்து இப்போது அடுத்த முறை என்று
+
+00:23:59,000 --> 00:24:03,000
+of course as you can imagine it's important since we want
+நாம் வேண்டும் என்பதால் நிச்சயமாக நீங்கள் கற்பனை செய்யலாம் என அது முக்கியம்
+
+00:24:03,000 --> 00:24:07,000
+an accurate representation of the original continuous-time signal
+அசல் தொடர்ச்சியான நேர சமிக்ஞை ஒரு சரியான பிரதிநிதித்துவம்
+
+00:24:07,000 --> 00:24:12,000
+to choose the sampling frequency to very carefully avoid aliasing
+மிகவும் கவனமாக மாற்றுப்பெயரிடும் தவிர்க்க மாதிரி அதிர்வெண் தேர்வு
+
+00:24:12,000 --> 00:24:15,000
+and so in fact in that context
+அதனால் அந்த சூழலில் உண்மையில்
+
+00:24:15,000 --> 00:24:19,000
+and in many other contexts alias saying is something
+மற்றும் பல சூழல்களில் மாற்று சொல்வதை ஆகிறது
+
+00:24:19,000 --> 00:24:22,000
+that we're very eager to avoid however
+எனினும் தவிர்க்க மிகவும் ஆர்வமாக இருக்கிறோம் என்று
+
+00:24:22,000 --> 00:24:25,000
+it's also important to understand that alias saying
+அது கூறி மாற்று புரிந்து கொள்வது முக்கியம் தான்
+
+00:24:25,000 --> 00:24:30,000
+isn't all bad and there are some very specific contexts in which
+அனைத்து கெட்ட அல்ல இது சில குறிப்பிட்ட சூழல்களில் உள்ளன
+
+00:24:30,000 --> 00:24:34,000
+alias saying is very useful and very heavily exploited
+மாற்று பழமொழி மிகவும் பயனுள்ளதாக மிகவும் கடுமையாக சுரண்டப்படும் ஆகிறது
+
+00:24:34,000 --> 00:24:38,000
+one example love
+ஒரு உதாரணம் காதல்
+
+00:24:38,000 --> 00:24:42,000
+a very useful context valia saying is when
+போது மிகவும் பயனுள்ளதாக சூழல் Valia சொல்லிக்கொண்டே இருக்கிறது
+
+00:24:42,000 --> 00:24:45,000
+you want to look at things that happen at frequencies
+நீங்கள் அலைவரிசைகளில் நடக்கும் விஷயங்களை பார்க்க வேண்டும்
+
+00:24:45,000 --> 00:24:50,000
+that you can't look at for one reason or another and sampling in a leasing is
+நீங்கள் ஒரு காரணம் அல்லது மற்றொரு பார் மற்றும் ஒரு குத்தகை மாதிரி இருக்கிறது முடியாது என்று
+
+00:24:50,000 --> 00:24:52,000
+used to map those into lower frequencies
+குறைந்த அதிர்வெண்கள் அந்த கண்டறிவதில் பயன்படுத்தப்பட்டது
+
+00:24:52,000 --> 00:24:57,000
+one very common example of that is the use of the stroboscopic
+என்று ஒரு மிகவும் பொதுவான உதாரணம் stroboscopic பயன்பாடு ஆகும்
+
+00:24:57,000 --> 00:25:01,000
+which was invented by doctor how their chechen
+மருத்துவர் எப்படி தங்கள் செசென் கண்டுபிடிக்கப்பட்டது இது
+
+00:25:01,000 --> 00:25:06,000
+at MIT and sometime earlier in fact we had
+MIT மற்றும் சிறிது முன்னதாக உண்மையில் நாம்
+
+00:25:06,000 --> 00:25:11,000
+the opportunity to visit doctor Richard ins laboratory at MIT
+மருத்துவர் ரிச்சர்ட் பார்க்க வாய்ப்பு எம்ஐடி ஆய்வுக்கூட நிரல்களை
+
+00:25:11,000 --> 00:25:15,000
+and see some examples of this so I'd like to
+அதனால் நான் விரும்புகிறேன் இந்த சில உதாரணங்கள் பார்க்க
+
+00:25:15,000 --> 00:25:19,000
+at as a conclusion to this lecture take you
+இந்த விரிவுரை ஒரு முடிவுக்கு போல நீங்கள் எடுத்து
+
+00:25:19,000 --> 00:25:24,000
+on visit to the stroke where and MIT
+பக்கவாதம் பயணம் எங்கே, எம்ஐடி
+
+00:25:24,000 --> 00:25:28,000
+in the lecture in discussing aliasing we've stressed
+மாற்றுப்பெயரிடும் குறித்து விரிவுரை நாம் வலியுறுத்தினார்
+
+00:25:28,000 --> 00:25:33,000
+the fact that in most situations it's something that would like to avoid
+பெரும்பாலான சந்தர்ப்பங்களில் அதை தவிர்க்க விரும்புகிறேன் என்று ஒன்று இருக்கிறது என்பதை
+
+00:25:33,000 --> 00:25:37,000
+however right now we're at MIT and stroll Valley
+எனினும் இப்போது நாம் MIT இல் இருக்கிறோம் மற்றும் பள்ளத்தாக்கு உலா
+
+00:25:37,000 --> 00:25:41,000
+as it's called on the way to visit the laboratory
+அது ஆய்வக வருகை வழி என என
+
+00:25:41,000 --> 00:25:45,000
+Mike MIT colleague Professor are alleged
+மைக் எம்ஐடி சக பேராசிரியர் கூறப்படுகிறது
+
+00:25:45,000 --> 00:25:49,000
+where in fact a leasing is an everyday occurrence
+உண்மையில் ஒரு குத்தகை அன்றாட எங்கே
+
+00:25:49,000 --> 00:25:53,000
+basically the idea is to follow dead
+அடிப்படையில் யோசனை இறந்த பின்பற்ற வேண்டும்
+
+00:25:53,000 --> 00:25:56,000
+it in fact you wanna make measurements
+அது உண்மையில் நீங்கள் இனி அளவீடுகள் செய்ய
+
+00:25:56,000 --> 00:26:00,000
+at frequencies that for one reason or another
+அலைவரிசைகளில் என்று ஒரு காரணம் அல்லது மற்றொரு
+
+00:26:00,000 --> 00:26:05,000
+you can't measure their sampling and consequently aliasing
+நீங்கள் தங்கள் மாதிரி அளவிட மற்றும் அதன் விளைவாக மாற்றுப்பெயரிடு முடியாது
+
+00:26:05,000 --> 00:26:10,000
+can be used to bring those frequencies down into a frequency range that you can
+ஒரு அதிர்வெண் வரம்பை கீழே அந்த அதிர்வெண்கள் கொண்டு பயன்படுத்த முடியும் என்று நீங்கள்
+
+00:26:10,000 --> 00:26:12,000
+measure
+அளவு
+
+00:26:12,000 --> 00:26:15,000
+well professor edgerton alias
+நன்கு பேராசிரியர் எட்கர்டன் மாற்று
+
+00:26:15,000 --> 00:26:19,000
+da kitchen invented the strokes call
+டா சமையலறை பக்கவாதம் அழைப்பு கண்டுபிடிக்கப்பட்டது
+
+00:26:19,000 --> 00:26:23,000
+for exactly that reason and kinda the idea is the fall
+சரியாக என்று காரணம் மற்றும் கிரகமாக யோசனை வீழ்ச்சி
+
+00:26:23,000 --> 00:26:28,000
+the I essentially is a low pass filter and so there are things that happen
+நான் அடிப்படையில் ஒரு குறைந்த பாஸ் வடிகட்டி மற்றும் அதனால் நடக்கும் என்று விஷயங்கள் உள்ளன
+
+00:26:28,000 --> 00:26:31,000
+at frequencies boat which
+அதிர்வெண்கள் படகு இது
+
+00:26:31,000 --> 00:26:34,000
+your I contract and by
+உங்கள் நான் ஒப்பந்தம் மூலம்
+
+00:26:34,000 --> 00:26:39,000
+sampling with light poles sampling in time
+நேரம் ஒளி துருவ விண்ணப்பங்கள் மாதிரி
+
+00:26:39,000 --> 00:26:44,000
+what in effect you're able to do is sample in such a way
+என்ன விளைவு நீங்கள் செய்ய முடியும் போன்ற ஒரு வழியில் மாதிரி இருக்கிறது
+
+00:26:44,000 --> 00:26:47,000
+that higher frequencies get alias
+என்று அதிக அதிர்வெண்கள் மாற்று கிடைக்கின்றன
+
+00:26:47,000 --> 00:26:51,000
+down to lower frequencies then factor I contract
+குறைந்த அதிர்வெண்கள் கீழே பின்னர் காரணி நான் ஒப்பந்தம்
+
+00:26:51,000 --> 00:26:55,000
+so let's take the look inside the where
+எனவே, அங்கு உள்ளே பாருங்கள் நாம்
+
+00:26:55,000 --> 00:26:58,000
+and in fact see no aspiration or
+மற்றும் உண்மையில் எந்த ஆசையும் அல்லது பார்க்க
+
+00:26:58,000 --> 00:27:05,000
+the scroll and some its effects
+சுருள் மற்றும் சில அதன் விளைவுகள்
+
+00:27:05,000 --> 00:27:10,000
+will be here introduce you to my mighty colleague I kitchen
+இங்கே என் வலிமைமிக்க சக நான் சமையலறை அறிமுகப்படுத்த வேண்டும்
+
+00:27:10,000 --> 00:27:14,000
+in also by the way he this is a great place for kids of all ages
+மேலும் வழியில் அவர் இந்த அனைத்து வயது குழந்தைகள் ஒரு பெரிய இடத்தில் இருக்கிறது
+
+00:27:14,000 --> 00:27:18,000
+and so my daughter just insisted on coming along to
+அதனால் என் மகள் தான் சேர்த்து வருகிறது வலியுறுத்தினார்
+
+00:27:18,000 --> 00:27:21,000
+also helped out stock need you we could begin with you
+நீங்கள் நாங்கள் நீங்கள் தொடங்கும் பங்கு வெளியே உதவியது
+
+00:27:21,000 --> 00:27:26,000
+just saying a little bit about what the strobe is in with some history is
+தான் பிளாஷ் சில வரலாறு என்ன பற்றி சிறிது உள்ளது என்று
+
+00:27:26,000 --> 00:27:30,000
+steroids ring resemble an increase in a min ly
+ஊக்க மோதிரத்தை ஒரு நிமிடம் கண்ணாடி அதிகரிப்பு போல
+
+00:27:30,000 --> 00:27:33,000
+misses them losing on Lampson
+அவர்கள் LAMPSON இழந்துவிடுவோம் இழக்கிறான்
+
+00:27:33,000 --> 00:27:37,000
+prices litter control rate planning on
+விலை குப்பை கட்டுப்படுத்த விகிதம் திட்டம்
+
+00:27:37,000 --> 00:27:41,000
+school is not a good strategy is going to turn and we're going to look at.
+பள்ளி ஒரு நல்ல உத்தி திரும்ப போகிறது நாம் பார்க்க போகிறோம் அல்ல.
+
+00:27:41,000 --> 00:27:44,000
+motor striving on balance weight
+சமநிலை எடை முயற்சி மோட்டார்
+
+00:27:44,000 --> 00:27:48,000
+to set up some rhinos lesions in the spring
+வசந்த சில காண்டாமிருகங்கள் புண்கள் அமைக்க
+
+00:27:48,000 --> 00:27:51,000
+want to know more bring on the throne
+மேலும் சிம்மாசனத்தில் கொண்டு தெரிந்து கொள்ள வேண்டும்
+
+00:27:51,000 --> 00:27:58,000
+by
+
+
+00:27:59,000 --> 00:28:06,000
+by
+
+
+00:28:10,000 --> 00:28:11,000
+you writer and
+நீங்கள் எழுத்தாளர் மற்றும்
+
+00:28:11,000 --> 00:28:18,000
+throbs but just in the frequency the way
+throbs ஆனால் அதிர்வெண் வழி
+
+00:28:20,000 --> 00:28:25,000
+but corresponds to North influencer little more elusive
+ஆனால் மழுப்பலாக வடக்கு influencer ஒத்துள்ளது
+
+00:28:25,000 --> 00:28:29,000
+for the facts thought maybe we could the turn the stroller
+நினைத்தேன் உண்மைகளை நாம் இழுபெட்டி திரும்ப முடியும்
+
+00:28:29,000 --> 00:28:33,000
+for a minute noon the but let me
+ஒரு நிமிடம் நண்பகல் ஆனால் நாம் என்னை
+
+00:28:33,000 --> 00:28:37,000
+point out the by the way there the fact that
+அங்கு மூலம் உண்மையை சுட்டிக்காட்ட என்று
+
+00:28:37,000 --> 00:28:41,000
+when looking at this without the strong mind always say essentially
+அடிப்படையில் எப்போதும் வலுவான மனதில் இல்லாமல் இந்த தேடும் போது
+
+00:28:41,000 --> 00:28:45,000
+our frequencies that are I can attract so you can see the motor
+நான் ஈர்க்க முடியும் என்று எங்கள் அதிர்வெண்கள் அதனால் நீங்கள் மோட்டார் பார்க்க முடியும்
+
+00:28:45,000 --> 00:28:47,000
+turning and
+திருப்பு மற்றும்
+
+00:28:47,000 --> 00:28:51,000
+we can really see other than then with the were we can see the movie the spring
+நாம் உண்மையில் நாம் வசந்த திரைப்பட காண முடியும் என்று பிறகு வேறு பார்க்க முடியும்
+
+00:28:51,000 --> 00:28:55,000
+and so I get your point is that when we put the strobe on
+அதனால் நான் உங்கள் புள்ளி பெற முடியும் நாம் பிளாஷ் வைத்து போது
+
+00:28:55,000 --> 00:28:59,000
+who were essentially sampling this and no
+அடிப்படையில் இந்த மாதிரி எந்த யார்
+
+00:28:59,000 --> 00:29:03,000
+you brought this stand with a frequency that there the
+நீங்கள் ஒரு அதிர்வெண் கொண்ட இந்த நிலைப்பாட்டை கொண்டு அங்கு
+
+00:29:03,000 --> 00:29:06,000
+Riza with the track in fact
+உண்மையில் தடம் காரர்களுக்கு
+
+00:29:06,000 --> 00:29:09,000
+the I guess if we turn the
+நாங்கள் திரும்ப நான் நினைக்கிறேன்
+
+00:29:09,000 --> 00:29:14,000
+incandescent light of loon
+மடையன் ஒளிர்வு ஒளி
+
+00:29:14,000 --> 00:29:17,000
+the able to really bring out
+முடியும் உண்மையில் வெளியே கொண்டு வர
+
+00:29:17,000 --> 00:29:22,000
+are the alias frequency so now we're what we're looking at in fact are the
+மாற்று அதிர்வெண் எனவே இப்போது நாம் உண்மையில் தேடும் என்ன தான் உள்ளன
+
+00:29:22,000 --> 00:29:26,000
+the earliest frequencies the street courses moving a lot faster than we see
+முந்தைய அதிர்வெண்கள் வேகமாக நாம் பார்க்க விட நிறைய நகரும் தெரு படிப்புகள்
+
+00:29:26,000 --> 00:29:27,000
+it in their ranks
+அதை தங்கள் அணிகளில்
+
+00:29:27,000 --> 00:29:30,000
+you know that's going on arena
+நீங்கள் அந்த அரங்கில் நடக்கிறது என்று தெரியும்
+
+00:29:30,000 --> 00:29:34,000
+30 times second Bruins are
+30 முறை இரண்டாவது புரீன்ஸ் இருக்கின்றன
+
+00:29:34,000 --> 00:29:37,000
+thirties and second occurs through the survivors include
+முப்பதுகளில் மற்றும் இரண்டாவது பிழைத்தவர்கள் மூலம் ஏற்படுகிறது சேர்க்கின்றன
+
+00:29:37,000 --> 00:29:41,000
+next move Rohingya figure 8a. saying you don't see that
+அடுத்த Rohingya எண்ணிக்கை 8a நகர்த்த. நீங்கள் பார்க்க வேண்டாம் என்று கூறி
+
+00:29:41,000 --> 00:29:47,000
+yeah friend
+ஆமாம் நண்பர்
+
+00:29:47,000 --> 00:29:54,000
+well we'll be seeing now is essentially second harmonic that
+நன்றாக நாம் இப்போது பார்த்து இருக்க வேண்டும் அடிப்படையில் இரண்டாவது இசை என்று
+
+00:30:04,000 --> 00:30:08,000
+someone okay
+சரி யாரோ
+
+00:30:08,000 --> 00:30:11,000
+and just do you think you can make this spring dance around a little bit
+மற்றும் நீங்கள் சற்று சுற்றி இந்த வசந்த காலத்தில் ஆட வைக்க முடியும் என்று நினைக்கிறீர்கள்
+
+00:30:11,000 --> 00:30:16,000
+find taking this slow frequency soon as all around
+அனைத்து சுற்றி விரைவில் இந்த மெதுவான அதிர்வெண் எடுத்து கண்டறிய
+
+00:30:16,000 --> 00:30:19,000
+okay it's really neat let's turn the lights back on
+சரி அது மீண்டும் விளக்குகள் திரும்ப அனுமதிக்க மிகவும் சுத்தமாகவும் தான்
+
+00:30:19,000 --> 00:30:23,000
+weekend this is Charles president with anything 3 I'm
+வார இறுதியில் இந்த நான் எதையும் 3 சார்லஸ் ஜனாதிபதி ஆகிறது
+
+00:30:23,000 --> 00:30:28,000
+yeah has the third what's interesting now if we look at this and
+ஆமாம், நாம் இந்த பார்த்து இப்போது சுவாரஸ்யமான விஷயம், மூன்றாவது உள்ளது
+
+00:30:28,000 --> 00:30:31,000
+seeking a fifth just rolled off again
+ஐந்தில் ஒரு நாடும் மீண்டும் பரவியது
+
+00:30:31,000 --> 00:30:37,000
+earth okay noticed just think we look at the spring man although we can see is a
+பூமியில் சரி தான் நாம் பார்க்க முடியும் என்றாலும் நாம் வசந்த மனிதனை பார் என்று அறிந்தது ஒரு
+
+00:30:37,000 --> 00:30:37,000
+blur
+தெளிவற்றதாக செய்
+
+00:30:37,000 --> 00:30:41,000
+and really can't see because you're right here tracking
+நீங்கள் தேடும் இங்கே இருக்கிறோம் ஏனெனில் உண்மையில் பார்க்க முடியாது
+
+00:30:41,000 --> 00:30:46,000
+can see things happening station but he said
+விஷயங்களை நிலையம் நடக்கிறது பார்க்க ஆனால் அவர் கூறினார் முடியும்
+
+00:30:46,000 --> 00:30:49,000
+by the way this was written demonstrated at the World's Fair
+இது எழுதப்பட்ட மூலம் உலக கண்காட்சியில் ஆர்ப்பாட்டம்
+
+00:30:49,000 --> 00:30:52,000
+the thickness
+கனம்
+
+00:30:52,000 --> 00:30:55,000
+world because glasses
+உலக ஏனெனில் கண்ணாடிகள்
+
+00:30:55,000 --> 00:30:59,000
+for their Wow a loses all dressed up
+தங்கள் ஓ ஒரு அலங்காரம் இழக்கிறது
+
+00:30:59,000 --> 00:31:02,000
+element using
+பயன்படுத்தி உறுப்பு
+
+00:31:02,000 --> 00:31:06,000
+break bring bruises
+காயங்கள் கொண்டு உடைக்க
+
+00:31:06,000 --> 00:31:10,000
+fine but failed I stick with the miners stresses
+நன்றாக, ஆனால் அது தோல்வியடைந்தது நான் சுரங்க அழுத்தங்கள் இணைந்திருக்க
+
+00:31:10,000 --> 00:31:14,000
+runners or have break
+இரண்டாம் அல்லது முறித்து
+
+00:31:14,000 --> 00:31:17,000
+bum they work on automobiles
+பின்புறம் அவர்கள் மோட்டார் வாகனங்கள் வேலை
+
+00:31:17,000 --> 00:31:24,000
+their own thoughts on the vibrate but let's
+தங்கள் சொந்த அதிர்வு எண்ணங்கள் ஆனால் நாம் தான்
+
+00:31:25,000 --> 00:31:28,000
+earth buy levitra run this for a lot more than half an hour or a liberal
+பூமியில் பண்ணிட்டிருக்கேன் நிறைய அரை மணி நேரத்திற்கும் மேலாக அல்லது ஒரு தாராளவாத இந்த ரன்
+
+00:31:28,000 --> 00:31:33,000
+name is continues
+பெயர் தொடர்ந்து ஆகிறது
+
+00:31:33,000 --> 00:31:34,000
+terms
+விதிமுறைகள்
+
+00:31:34,000 --> 00:31:38,000
+thing me maybe we can look at the
+விஷயம் எனக்கு ஒருவேளை நாம் பார்க்க முடியும்
+
+00:31:38,000 --> 00:31:41,000
+a couple other things have a about the fam
+ஒரு ஜோடி மற்ற விஷயங்களை தனியார் பற்றி ஒரு வேண்டும்
+
+00:31:41,000 --> 00:31:45,000
+brand the classic buzzed
+உன்னதமான பறந்தது பிராண்ட்
+
+00:31:45,000 --> 00:31:49,000
+that's a good idea makes too much noise
+என்று ஒரு நல்ல யோசனை அதிக சத்தம் செய்கிறது
+
+00:31:49,000 --> 00:31:54,000
+ok is to remove that over here that's just an ordinary like the fam
+சரி இங்கே தான் தனியார் போன்ற ஒரு சாதாரண என்று நீக்க வேண்டும்
+
+00:31:54,000 --> 00:31:58,000
+has a mark on one plate surgeon
+ஒரு தட்டில் அறுவை சிகிச்சை ஒரு குறி
+
+00:31:58,000 --> 00:32:05,000
+identify you can get up to speed
+நீங்கள் வேகம் வரை பெற முடியும் அடையாளம்
+
+00:32:09,000 --> 00:32:12,000
+know that this looks like a phantom was also demonstrated in the
+இந்த ஒரு பாண்டம் போல் தெரிகிறது என்று எனக்கு தெரியும் நிரூபிக்கப்பட்டது
+
+00:32:12,000 --> 00:32:15,000
+world's fair few years ago yeah kinda been
+உலகின் நியாயமான சில ஆண்டுகளுக்கு முன்பு ஆமாம் கிரகமாக இருந்தது
+
+00:32:15,000 --> 00:32:19,000
+been does a movie
+ஒரு படம் இல்லை இருந்தது
+
+00:32:19,000 --> 00:32:23,000
+quicken awake practicing in to and it was very fan
+உள்ள விழித்து பயிற்சி, வேகமாக மற்றும் மிகவும் விசிறி
+
+00:32:23,000 --> 00:32:27,000
+well one like it happened if the reform do
+சீர்திருத்தம் என்றால் அதை போன்ற ஒரு நடந்தது
+
+00:32:27,000 --> 00:32:32,000
+MGM and the Peters B Smith
+MGM மற்றும் பீட்டர்ஸ் பி ஸ்மித்
+
+00:32:32,000 --> 00:32:35,000
+wanted he said he won miss royale up
+விரும்பிய அவர் மிஸ் ராயல் வரை வெற்றி என்றார்
+
+00:32:35,000 --> 00:32:40,000
+custard pie into it not don't know I'm a serious scientists for
+அது ஒரு கூழ் பை நான் ஒரு தீவிர விஞ்ஞானிகள் இருக்கிறேன் என்று எனக்கு தெரியாது இல்லை
+
+00:32:40,000 --> 00:32:44,000
+sizes compromise on a I
+அளவுகள் நான் சமரசம்
+
+00:32:44,000 --> 00:32:48,000
+so we dropped an egg into it in the news UCI's B-movie
+நாம் செய்தி பெறப்படும் பி திரைப்படம் அது ஒரு முட்டை கைவிடப்பட்டது
+
+00:32:48,000 --> 00:32:53,000
+dropping 0 not known struggle there there was with the
+அங்கு 0 தெரியவில்லை போராட்டத்தை கைவிடுவதாக கொண்டு இருந்தது
+
+00:32:53,000 --> 00:32:56,000
+high-speed great remove yeah it's okay so
+அதிவேக பெரிய நீக்க ஆமாம் அது சரி தான்
+
+00:32:56,000 --> 00:33:00,000
+so again I guess without this true when we look at its
+நாம் இருக்கும் போது, அதனால் மீண்டும் நான் இந்த உண்மை இல்லாமல் யூகிக்கிறேன் அதன்
+
+00:33:00,000 --> 00:33:04,000
+what we're looking at our frequencies it are
+நாம் அது நம் அலைவரிசைகளில் பார்த்து என்ன
+
+00:33:04,000 --> 00:33:08,000
+much higher than the I think following now with the stroke blindness
+அதிகமாக நான் பக்கவாதம், பாராமுகத்தின் இப்போது பின்வரும்
+
+00:33:08,000 --> 00:33:12,000
+you can see both the alias frequency and you can also see the original frequency
+நீங்கள் மாற்று அதிர்வெண் இருவரும் பார்க்க முடியும், நீங்கள் மேலும் அசல் அதிர்வெண் பார்க்க முடியும்
+
+00:33:12,000 --> 00:33:13,000
+because we have the
+நாங்கள் இல்லை, ஏனெனில்
+
+00:33:13,000 --> 00:33:16,000
+investment line sweats I'm let's
+நான் முதலீடு வரி வியர்த்தல் நாம்
+
+00:33:16,000 --> 00:33:19,000
+turned down the the background lighting and
+பின்னணி விளக்குகள் நிராகரித்தது மற்றும்
+
+00:33:19,000 --> 00:33:23,000
+stand then really all that were able to see or the aliasing
+பின்னர் உண்மையில் பார்க்க முடியும் என்று அனைத்து அல்லது மாற்றுப்பெயரிடும் நிற்க
+
+00:33:23,000 --> 00:33:26,000
+frequencies stand I guess
+அதிர்வெண்கள் நான் நினைக்கிறேன் நிற்க
+
+00:33:26,000 --> 00:33:29,000
+I guess when we see more than one market means that the
+நாம் ஒரு மேல் சந்தை பொருள் பார்க்கும் போது நான் யூகிக்கிறேன் என்று
+
+00:33:29,000 --> 00:33:32,000
+stay were actually running its and
+தங்க உண்மையில் அதன் இயங்கும்
+
+00:33:32,000 --> 00:33:36,000
+or guns is more and more things the the using
+அல்லது துப்பாக்கிகள் மேலும் விஷயங்களை பயன்படுத்தி ஆகின்றன
+
+00:33:36,000 --> 00:33:41,000
+lower radiation steroids because the plans aren't exactly the same
+குறைந்த கதிர்வீச்சு ஊக்க திட்டங்களை சரியாக அதே இல்லை, ஏனெனில்
+
+00:33:41,000 --> 00:33:45,000
+actually this gives me a chance illustrating other important correlated
+உண்மையில் இந்த என்னை தொடர்புடையதாக மற்ற முக்கிய விவரிக்கும் ஒரு வாய்ப்பு கொடுக்கிறது
+
+00:33:45,000 --> 00:33:46,000
+to the lecture
+விரிவுரை
+
+00:33:46,000 --> 00:33:49,000
+I'll that they could bring them to frequency
+நான் அவர்கள் அதிர்வெண் அவர்களை அழைத்து வர முடியும் என்று கேட்க,
+
+00:33:49,000 --> 00:33:56,000
+so that re only get one more scorched
+அதனால் மீண்டும் ஒரு மேலும் கருகிவிடுதல்
+
+00:33:56,000 --> 00:33:59,000
+missus begins to move this is just one way there now
+அத்தொகுதியில் இந்த இப்போது ஒரு வழி உள்ளது செல்ல தொடங்குகிறது
+
+00:33:59,000 --> 00:34:04,000
+okay so so the way we have now we've essentially alias the fan speed and so
+சரி, அதனால் வழி நாம் இப்போது நாம் அடிப்படையில் அதனால் ரசிகர் வேகம் மாற்று மற்றும்
+
+00:34:04,000 --> 00:34:05,000
+the
+உருக்கு
+
+00:34:05,000 --> 00:34:09,000
+is just a little higher than the seeds and now
+இப்போது ஒரு சிறிய விதைகள் விட அதிக ஆகிறது
+
+00:34:09,000 --> 00:34:14,000
+on right at the sea and now if I could and just a little further in fact that
+கடல் வலது மற்றும் இப்போது நான் உண்மையில் ஒரு சிறிய மேலும் முடியும் என்றால் அந்த
+
+00:34:14,000 --> 00:34:17,000
+looks like the fans turning back hurts
+ரசிகர்கள் காயப்படுத்துகிறது திரும்பி தெரிகிறது
+
+00:34:17,000 --> 00:34:21,000
+and if you think that this into context the leasing
+நீங்கள் என்ன நினைக்கிறீர்கள் என்று இந்த சூழலில் ஒரு குத்தகை
+
+00:34:21,000 --> 00:34:25,000
+its it's like this to impulses in the frequency domain
+அதன் அது அதிர்வெண் களத்தில் தூண்டுதலின் அப்படி தான்
+
+00:34:25,000 --> 00:34:30,000
+crossover in with you get an effective you and was mathematically
+நீங்கள் ஒரு பயனுள்ள மற்றும் கணித இருந்தது உடன் நாமே
+
+00:34:30,000 --> 00:34:33,000
+you get a phase reversed in
+நீங்கள் தலைகீழ் ஒரு கட்டத்தில் பெற
+
+00:34:33,000 --> 00:34:37,000
+no wasn't so I E I first understood have a leasing
+இல்லை, அதனால் IEI முதல் ஒரு குத்தகை புரியவில்லை
+
+00:34:37,000 --> 00:34:42,000
+with Doc understood why stand with the western movies
+மேற்கு திரைப்படங்கள் நிற்க ஏன் டாக் புரிந்து கொண்டு
+
+00:34:42,000 --> 00:34:46,000
+a everyone's Ryan see the wagon wheels through November go backwards train and
+ஒரு எல்லோர் ரியான் நவம்பர் மூலம் வேகன் சக்கரங்கள் பார்க்க பயிற்சி பின்னோக்கி சென்று
+
+00:34:46,000 --> 00:34:47,000
+there's there the
+அங்கு தான்
+
+00:34:47,000 --> 00:34:51,000
+wagon wheels in western movie going backwards yes stressed
+மேற்கு படத்தில் வேகன் சக்கரங்கள் ஆம் வலியுறுத்தினார் பின்னோக்கி சென்று
+
+00:34:51,000 --> 00:34:56,000
+and just see what you see is %um too much weaker on straight up so you get to
+மற்றும் என்ன நீங்கள் பார்க்க Um மிகவும் பலவீனமான நேராக நீங்கள் பெற ம்% ஆகும் பார்க்க
+
+00:34:56,000 --> 00:34:59,000
+just see greater frequency of so that's
+தான் தான் அதிக அதிர்வெண் பார்க்க
+
+00:34:59,000 --> 00:35:03,000
+you get to marched
+நீங்கள் அணிவகுத்து பெற
+
+00:35:03,000 --> 00:35:08,000
+u-turn and Justin's governor and you think tourist
+U-முறை மற்றும் ஜஸ்டின் கவர்னர் மற்றும் நீங்கள் சுற்றுலா நினைக்கிறீர்கள்
+
+00:35:08,000 --> 00:35:11,000
+you impressed
+நீங்கள் ஈர்க்கப்பட்டார்
+
+00:35:11,000 --> 00:35:14,000
+schoolroom its regular spirits
+அதன் வழக்கமான உற்சாகத்துடன் ஆசிரியரது
+
+00:35:14,000 --> 00:35:18,000
+all rights pictures in your honor older adults
+உங்கள் மரியாதை முதியவர்களில் அனைத்து உரிமைகள் படங்கள்
+
+00:35:18,000 --> 00:35:23,000
+and I rising price revolution I guess another thing is that this demonstrates
+நான் விலை உயர்ந்து புரட்சி நான் மற்றொரு விஷயம் இந்த நிரூபிக்கிறது என்று யூகிக்கிறேன்
+
+00:35:23,000 --> 00:35:24,000
+something that is
+என்று ஒன்று
+
+00:35:24,000 --> 00:35:29,000
+and I heard a long time ago which is its should never use a power so with the
+நான் அதன் ஒரு சக்தி மிகவும் பயன்படுத்த கூடாது இது ஒரு நீண்ட நேரம் முன்பு கேள்விப்பட்டிருந்தேன்
+
+00:35:29,000 --> 00:35:34,000
+fluorescent lights the is arrest like is a little bit of a stroke affecting
+ஒளிரும் விளக்குகள் கைது போன்ற ஆகிறது பாதிக்கும் ஒரு பக்கவாதம் சிறிது
+
+00:35:34,000 --> 00:35:38,000
+you could actually can misuse of that standing still make mistakes a
+நீங்கள் உண்மையில் தவறுகள் ஒரு என்று நின்று தவறாக
+
+00:35:38,000 --> 00:35:42,000
+strength that you think everything we are doing is a good friend of
+நீங்கள் எல்லாம் நாம் செய்கிறோம் என்று வலிமை ஒரு நல்ல நண்பர்
+
+00:35:42,000 --> 00:35:46,000
+no I don't think I want to try it out how are you this do you think that's
+எந்த நான் எப்படி இந்த நீங்கள் தான் செய்ய வேண்டும் அதை முயற்சி செய்ய வேண்டும் என்று நான் நினைக்கவில்லை
+
+00:35:46,000 --> 00:35:49,000
+any sores and wounds she knows it's going
+அவர் அதை நடக்கிறது தெரியும் எந்த புண்கள் மற்றும் காயங்கள்
+
+00:35:49,000 --> 00:35:52,000
+sproule undergoing closest friends okay let's
+sproule நெருங்கிய நண்பர்கள் அனுபவித்து சரி நாம் தான்
+
+00:35:52,000 --> 00:35:56,000
+I'm actually we turn the lights back on again what's
+நான் உண்மையில் நாம் என்ன மீண்டும் மீண்டும் விளக்குகள் திரும்ப நான்
+
+00:35:56,000 --> 00:36:00,000
+their latest see once again is that we can see both the alias frequencies going
+அவர்களின் சமீபத்திய பார்க்க மீண்டும் நாங்கள் போகிறோம் என்கிற அதிர்வெண்கள் இருவரும் பார்க்க முடியும் என்று ஆகிறது
+
+00:36:00,000 --> 00:36:01,000
+to you that's
+நீங்கள் தான்
+
+00:36:01,000 --> 00:36:05,000
+and we we can also see the higher frequencies because the
+மற்றும் நாம் மேலும் அதிக அதிர்வெண்கள் பார்க்க முடியும் என்பதால்,
+
+00:36:05,000 --> 00:36:09,000
+incandescent lighting its okay maybe we can be no
+ஒளிர்வு அதன் சரி ஏத்த ஒருவேளை நாம் எந்த இருக்க முடியும்
+
+00:36:09,000 --> 00:36:12,000
+is parents take a look at some other
+பெற்றோர்கள் வேறு சில பாருங்கள்
+
+00:36:12,000 --> 00:36:16,000
+on things and when I guess I'm curious about is the distance you have over
+விஷயங்களை நான் ஆர்வமாக உள்ளேன் என்று நினைக்கிறேன் தூரம் நீங்கள் வேண்டும் உள்ளது
+
+00:36:16,000 --> 00:36:17,000
+their kids
+தங்கள் குழந்தைகள்
+
+00:36:17,000 --> 00:36:21,000
+doc maybe you can tell us what we have here
+டாக் ஒருவேளை நீங்கள் நாம் இங்கே என்ன சொல்ல முடியும்
+
+00:36:21,000 --> 00:36:24,000
+churros the this to show
+churros இந்த காட்ட
+
+00:36:24,000 --> 00:36:28,000
+how you can get motion pictures on a Susan still pictures
+நீங்கள் ஒரு சூசன் இன்னும் படங்களின் மீது மோஷன் பெற முடியும் எப்படி
+
+00:36:28,000 --> 00:36:32,000
+the circle is repeated 12 times
+வட்டம் 12 முறை திரும்ப திரும்ப வருகிறது
+
+00:36:32,000 --> 00:36:35,000
+why does outer part over mmm on this site
+ஏன் வெளிப்புற பகுதி இந்த தளத்தில் பத்திகளுக்கு மேல் இல்லை
+
+00:36:35,000 --> 00:36:40,000
+in part on the other quiet place one time for a revolution on this
+மற்ற அமைதியான இடத்தில் இந்த ஒரு புரட்சி ஒரு நேரத்தில் ஒரு பகுதி
+
+00:36:40,000 --> 00:36:44,000
+you see the exactly as it is if I skip one picture each time
+நீங்கள் ஒவ்வொரு முறையும் நான் ஒரு படம் தவிர்க்க அதை சரியாக பார்க்க
+
+00:36:44,000 --> 00:36:47,000
+when you get there relative motions
+நீங்கள் அங்கு உறவினர் இயக்கங்கள் கிடைக்கும் போது
+
+00:36:47,000 --> 00:36:51,000
+mall the object is to show the ball rotating
+மால் பொருள் சுழலும் பந்து காட்ட ஆகிறது
+
+00:36:51,000 --> 00:36:55,000
+is this where that one depending on mood straw was going faster or slower
+மனநிலை வைக்கோல் பொறுத்து என்று ஒரு வேகமாக அல்லது மெதுவாக எங்கே போகிறேன் என்று இந்த
+
+00:36:55,000 --> 00:37:00,000
+and the other Uzan this way motion pictures went well
+மற்றும் பிற Uzan இந்த வழியில் மோஷன் நன்றாக சென்றது
+
+00:37:00,000 --> 00:37:04,000
+100 years school long for photography drew pictures of people
+புகைப்படம் எடுத்தல் நீண்ட 100 ஆண்டுகள் பள்ளி மக்கள் படங்களை வரைந்தார்
+
+00:37:04,000 --> 00:37:09,000
+different animated features like the run yes great
+ஆமாம் பெரிய ரன் போன்ற பல்வேறு அனிமேஷன் அம்சங்கள்
+
+00:37:09,000 --> 00:37:16,000
+is actually the title kinda busy aliasing can be fun conservatism
+உண்மையில் கிரகமாக பிஸியாக மாற்றுப்பெயரிடும் வேடிக்கை பழமைவாதம் இருக்க முடியும் தலைப்பு
+
+00:37:16,000 --> 00:37:19,000
+sterling if the speeds
+ஸ்டெர்லிங் என்றால் வேகம்
+
+00:37:19,000 --> 00:37:23,000
+or away if you get a lot of different things sorted veterans
+நீங்கள் அல்லது விட்டு பல்வேறு விஷயங்கள் நிறைய வீரர்கள் வரிசைப்படுத்தப்பட்ட
+
+00:37:23,000 --> 00:37:26,000
+go through ruin currently reaches speeds
+அழிவை செல்ல தற்போது வேகம் அடைகிறது
+
+00:37:26,000 --> 00:37:31,000
+reserve a room in the rules it sounds
+கேட்பதற்கே விதிகள் ஒரு அறை ஒதுக்கி
+
+00:37:31,000 --> 00:37:35,000
+ok and the background blur basically the high frequencies the I can't follow
+சரி, பின்னணி மங்கலான அடிப்படையில் உயர் அலைவரிசைகளை The நான் பின்பற்ற முடியாது
+
+00:37:35,000 --> 00:37:39,000
+and and then we're going to propose and then again we can see
+மற்றும் நாம் முன்மொழிய போகிறோம் பின்னர் மீண்டும் நாம் பார்க்க முடியும்
+
+00:37:39,000 --> 00:37:43,000
+frequencies it really is down the nets
+அது உண்மையில் வலைகளை கீழே அதிர்வெண்கள்
+
+00:37:43,000 --> 00:37:47,000
+rookie I ends right now I am one place for revolution sleep
+நான் இப்போது முடிவடைகிறது பந்துகளில் நான் புரட்சி தூக்கம் ஒரு இடத்தில் இருக்கிறேன்
+
+00:37:47,000 --> 00:37:50,000
+see the corner the move is consuming records
+நடவடிக்கை பதிவுகள் சாப்பிடும் மூலையில் பார்க்க
+
+00:37:50,000 --> 00:37:54,000
+exactly the reasons there are an increasing frequency
+சரியாக காரணங்களுக்காக அதிகரித்து அதிர்வெண் உள்ளன
+
+00:37:54,000 --> 00:38:00,000
+of risk if 100 one server or early get the illusion that diamonds
+ஆபத்து என்றால் 100 ஒரு சர்வர் அல்லது ஆரம்ப மாயையை கிடைக்கும் என்று வைரங்கள்
+
+00:38:00,000 --> 00:38:04,000
+room in fact let's a let's really enhanced solution
+உண்மையில் அறையில் நாம் ஒரு உண்மையில் மேம்படுத்தப்பட்ட நாம் தீர்வு
+
+00:38:04,000 --> 00:38:09,000
+Western the incandescent lights off
+மேற்கத்திய ஒளிர்வு விளக்கு
+
+00:38:09,000 --> 00:38:12,000
+and now now are we seeing really you're the alias frequencies
+மற்றும் இப்போது நாம் உண்மையில் நீங்கள் மாற்று அதிர்வெண்கள் தான் பார்த்து
+
+00:38:12,000 --> 00:38:17,000
+or or do you think this just adds
+அல்லது நீங்கள் இந்த சேர்க்கிறது நினைக்கிறீர்கள்
+
+00:38:17,000 --> 00:38:22,000
+looks like reading recognized through was doing rejoining licensing
+மீண்டும் இணைந்து உரிமம் செய்து அங்கீகாரம் வாசிப்பு போன்ற தெரிகிறது
+
+00:38:22,000 --> 00:38:25,000
+of is the same rules now lower watching is something also
+அதே விதிகள் இப்போது குறைந்த பார்த்து ஏதாவது உள்ளது
+
+00:38:25,000 --> 00:38:29,000
+might point out of a for the
+ஒரு என்ற சுட்டி இருக்கும்
+
+00:38:29,000 --> 00:38:32,000
+I'm the lecture for the course is that actually there
+நான் நிச்சயமாக விரிவுரை என்று உண்மையில் உள்ளது இருக்கிறேன்
+
+00:38:32,000 --> 00:38:35,000
+there really are two sampling frequencies receiving one is this road
+உண்மையில் ஒரு பெற்ற இரு மாதிரி அதிர்வெண்கள் உள்ளன, இந்த சாலை ஆகிறது
+
+00:38:35,000 --> 00:38:36,000
+and
+மற்றும்
+
+00:38:36,000 --> 00:38:40,000
+which is the stroke that you're running the other is the inherent
+நீங்கள் மற்ற இயங்கும் என்று பக்கவாதம் உள்ளார்ந்த இது உள்ளது
+
+00:38:40,000 --> 00:38:44,000
+Creamery for the TV that's running at 30 frames a second
+30 பிரேம்கள் இரண்டாவது இயங்கும் என்று தொலைக்காட்சி Creamery
+
+00:38:44,000 --> 00:38:47,000
+and that's won the reasons by the way in dead people watching this
+மற்றும் இந்த பார்த்து இறந்த மக்கள் மூலம் காரணங்களுக்காக வெற்றி பெற்றது
+
+00:38:47,000 --> 00:38:51,000
+on the video worst are in fact seeing
+வீடியோ மோசமான பார்த்து உண்மையில் இருக்கின்றன
+
+00:38:51,000 --> 00:38:55,000
+Flickr or a feeding or modulation between
+Flickr அல்லது இடையே ஒரு உணவு அல்லது பண்பேற்ற
+
+00:38:55,000 --> 00:39:00,000
+the two on synchronize frame rates runner grievances
+ஒத்திசை சட்டக விகிதங்கள் இரண்டு குறைகளை runner
+
+00:39:00,000 --> 00:39:06,000
+grow up so we get to of to a room credits
+எனவே நாம் ஒரு அறையில் வரவுகளை வரை பெற வளர
+
+00:39:06,000 --> 00:39:09,000
+of to
+என்ற
+
+00:39:09,000 --> 00:39:16,000
+roaming two runs on each other of
+ஒவ்வொரு மற்ற இரண்டு ரன்கள் ரோமிங்
+
+00:39:17,000 --> 00:39:19,000
+of
+
+
+00:39:19,000 --> 00:39:22,000
+you know it senator Reid's learning this
+நீங்கள் அதை செனட்டர் ரீட் இந்த கற்றல் தெரிகிறீர்கள்
+
+00:39:22,000 --> 00:39:26,000
+soon living room when all your friends
+விரைவில் அறை போது உங்கள் நண்பர்கள்
+
+00:39:26,000 --> 00:39:30,000
+I think would be a good terrific homered problem getting video Kors
+நான் வீடியோ கோர்ஸ் பெறுவது ஒரு நல்ல பயங்கர homered பிரச்சனை என்று நினைக்கிறேன்
+
+00:39:30,000 --> 00:39:33,000
+they have them all sit down and analyze all the frequencies that they're seeing
+அவர்கள் அனைத்து உட்கார்ந்து அவர்கள் காண்கிறீர்கள் என்று அனைத்து அதிர்வெண்கள் ஆய்வு வேண்டும்
+
+00:39:33,000 --> 00:39:36,000
+and what they're being alias through the evening event
+அவர்கள் மாலை நிகழ்வு மூலம் மாற்று இருப்பது என்ன
+
+00:39:36,000 --> 00:39:39,000
+it's a good view run the teacher I love you
+அது ஒரு நல்ல காட்சி நான் உன்னை நேசிக்கிறேன் ஆசிரியர் ரன் தான்
+
+00:39:39,000 --> 00:39:42,000
+who is great yeah remember these dudes list
+பெரிய யார் சரி இந்த புவனேந்திரன் பட்டியல் நினைவில்
+
+00:39:42,000 --> 00:39:45,000
+I think that a chase a few people away from the courses good
+நான் நினைக்கிறேன் என்று ஒரு சில மக்கள் நல்ல படிப்புகள் ஒரு துரத்தல்
+
+00:39:45,000 --> 00:39:49,000
+cracks and you get you get involved in these offerings
+பிளவுகள் மற்றும் நீங்கள் இந்த பிரசாதத்தை ஈடுபட செய்து
+
+00:39:49,000 --> 00:39:54,000
+rule ruler and what you can do for a KMS roots
+ஆட்சியாளர் ஆட்சி மற்றும் நீங்கள் ஒரு கி.மீ. வேர்கள் என்ன செய்ய முடியும்
+
+00:39:54,000 --> 00:39:57,000
+let's bring you the incandescent lights back again
+மீண்டும் நீங்கள் ஒளிர்வு விளக்குகள் மீண்டும் கொண்டு வர வேண்டும்
+
+00:39:57,000 --> 00:40:01,000
+just to remind everybody that in back row this or
+எல்லோருக்கும் நினைவூட்ட வேண்டும் என்று மீண்டும் வரிசையில் இந்த அல்லது
+
+00:40:01,000 --> 00:40:04,000
+some some frequencies that are a lot higher than the ones that
+ஒன்றை விட நிறைய அதிகமாக இருக்கும் என்று சில அதிர்வெண்கள் என்று
+
+00:40:04,000 --> 00:40:07,000
+we begin to get the impression that we're watching just the
+நாம் தான் பார்த்து வருகிறோம் என்று உணர்வை பெற தொடங்கும்
+
+00:40:07,000 --> 00:40:11,000
+motor running Frances Bean pattern on
+அன்று பிரான்செஸ் பீன் முறை இயங்கும் மோட்டார்
+
+00:40:11,000 --> 00:40:15,000
+long Dhaka have to
+நீண்ட டாக்கா வேண்டும்
+
+00:40:15,000 --> 00:40:18,000
+I have to say that there are many people I know they have as much fun in the work
+நான் அவர்கள் வேலை எவ்வளவு நன்றாக தெரியும் பல மக்கள் உள்ளன என்று சொல்ல வேண்டும்
+
+00:40:18,000 --> 00:40:19,000
+as you do
+நீங்கள் செய்ய
+
+00:40:19,000 --> 00:40:23,000
+home like a man arm quote would but I'd like to
+ஒரு மனிதன் கையில் மேற்கோள் போன்ற வீட்டில் ஆனால் நான் விரும்புகிறேன் என்று
+
+00:40:23,000 --> 00:40:27,000
+do now baby is take a look at one last experiment sure did
+இப்போது என்ன செய்ய குழந்தை ஒன்று கடந்த பரிசோதனை உறுதி செய்தது பாருங்கள் ஆகிறது
+
+00:40:27,000 --> 00:40:31,000
+and what I'd like to do is a.m. is go take a look at the
+மற்றும் நான் என்ன செய்ய விரும்புகிறேன் மணிக்கு பாருங்கள் செல்கிறது
+
+00:40:31,000 --> 00:40:34,000
+I guess what sometimes is called the home
+நான் சில நேரங்களில் வீட்டில் எனப்படும் யூகிக்கிறேன்
+
+00:40:34,000 --> 00:40:38,000
+well not the water graphics for men with thin air the minute dole pillar
+நன்றாக மெல்லிய காற்று ஆண்கள் நிமிடம் தண்ணீர் கிராபிக்ஸ் தூண் டோல்
+
+00:40:38,000 --> 00:40:41,000
+hydraulic everything that's the 1i was thinking and let's take a look over
+1 நான் தான் என்று நீரியல் எல்லாம் நினைத்து நாட்டின் மீது ஒரு பார்க்கலாம்
+
+00:40:41,000 --> 00:40:42,000
+there
+அங்கே
+
+00:40:42,000 --> 00:40:49,000
+okay one just in this Go internal war so
+சரி இந்த ஒரு உள் போர் Go எனவே
+
+00:40:49,000 --> 00:40:52,000
+your doc this is the what did you got DP
+உங்கள் துறை இந்த நீங்கள் என்ன கிடைத்தது டி.பி. ஆகிறது
+
+00:40:52,000 --> 00:40:56,000
+HHM bird double peddler hydraulic
+HHM பறவை இரட்டை உத்தரகாண்ட் நீரியல்
+
+00:40:56,000 --> 00:41:00,000
+happening machine Gary okay then it's a.m. so please
+இயந்திரம் கேரி நடக்கிறது சரி அதை நான் தான், தயவு செய்து
+
+00:41:00,000 --> 00:41:03,000
+it looks like continues dream up it is not its
+கனவு அல்ல வரை தொடர்கிறது போல் தெரிகிறது அதன்
+
+00:41:03,000 --> 00:41:08,000
+pump over there something sixty post second so those owners
+அங்கு பம்ப் ஏதாவது அறுபது பதவியை இரண்டாவது அதனால் அந்த உரிமையாளர்கள்
+
+00:41:08,000 --> 00:41:11,000
+coming out in spurts %uh so actually again it's
+கிட்டாத வெளியே வருவதை% இம் உண்மையில் மீண்டும் அதை தான்
+
+00:41:11,000 --> 00:41:14,000
+it's the the sixty boss is the second year I can follow
+அது அறுபது முதலாளி நான் பின்பற்ற முடியாது இரண்டாவது ஆண்டு தான்
+
+00:41:14,000 --> 00:41:18,000
+your eyes so is exactly basically looks like a blur
+உன் கண்கள் சரியாக அடிப்படையில் ஒரு மங்கலான போல தெரிகிறது
+
+00:41:18,000 --> 00:41:22,000
+ruseler it is a blur writers you learn output stroll on
+அதை நீங்கள் வெளியீடு வாக்கிங் அறிய ஒரு மங்கலான எழுத்தாளர்கள் ruseler
+
+00:41:22,000 --> 00:41:28,000
+okay grace start so again
+சரி கருணை எனவே மீண்டும் தொடங்க
+
+00:41:28,000 --> 00:41:32,000
+I guess we have this a essentially alias then in
+நான் நாம் இந்த ஒரு அடிப்படையில் மாற்று வேண்டும் யூகிக்கிறேன்
+
+00:41:32,000 --> 00:41:36,000
+and again with the incandescent light you can see both sky high frequency
+மீண்டும் வெப்பவெளியீட்டு நீங்கள் வானத்தில் உயர் அதிர்வெண் இருவரும் பார்க்க முடியும்
+
+00:41:36,000 --> 00:41:40,000
+and the alias frequency its and
+மற்றும் மாற்று அதிர்வெண் அதன் மற்றும்
+
+00:41:40,000 --> 00:41:44,000
+but see I guess that's with the frequency close to the sea and we can
+ஆனால் நான் அந்த கடல் அருகில் அதிர்வெண் நினைக்கிறேன் மற்றும் நாம் பார்க்க
+
+00:41:44,000 --> 00:41:49,000
+adjusted so that is stop stop bothering me going to go out and then we can
+உறுப்பினர் என்று வெளியே சென்று என்னை தொந்தரவு நிறுத்து பின்னர் நாம்
+
+00:41:49,000 --> 00:41:50,000
+actually make it go up
+உண்மையில் அது வரை போக செய்ய
+
+00:41:50,000 --> 00:41:53,000
+scored anybody who is this South
+இந்த தென் யார் அடித்தார் யாரையும்
+
+00:41:53,000 --> 00:41:58,000
+yeah effect movie have just just again due to stress this point to the
+ஆமாம் விளைவு திரைப்பட மன அழுத்தம் காரணமாக தான் மீண்டும் இந்த புள்ளி
+
+00:41:58,000 --> 00:42:02,000
+class the the kind of the idea here the face reversal of course
+வர்க்கம் இங்கே கருத்து வகையான நிச்சயமாக முகம் தலைகீழ்
+
+00:42:02,000 --> 00:42:05,000
+you can see it in the time domain Chynoweth you just think about when the
+நீங்கள் தான் யோசிக்க நேரம் டொமைன் Chynoweth அதை பார்க்க முடியும் போது
+
+00:42:05,000 --> 00:42:06,000
+flashes of light
+ஒளி ஃப்ளாஷ்
+
+00:42:06,000 --> 00:42:10,000
+come but if you think I love kind of these
+வரும் ஆனால் நீங்கள் நினைத்தால் நான் இந்த வகையான அன்பு
+
+00:42:10,000 --> 00:42:14,000
+impulses that we have in the frequency domain
+நாம் அதிர்வெண் களத்தில் வேண்டும் என்று தூண்டுதலின்
+
+00:42:14,000 --> 00:42:18,000
+and we're aliasing as we change the sampling frequency what happens is that
+நாம் என்ன நடக்கும் என்று மாதிரி அதிர்வெண் மாற்ற நாம் மாற்றுப்பெயரிடு
+
+00:42:18,000 --> 00:42:20,000
+these impulses crossover
+இந்த தூண்டுதலின் குறுக்கு
+
+00:42:20,000 --> 00:42:24,000
+and what that means is that we get a phase reversal the pending
+என்ன என்று அர்த்தம் நாம் ஒரு நிலை தலைகீழ் கிடைக்கும் என்று நிலுவையில் உள்ளது
+
+00:42:24,000 --> 00:42:28,000
+on which faces are associated with
+எந்த முகங்கள் தொடர்புடைய
+
+00:42:28,000 --> 00:42:32,000
+which side up the sea so that's kind of the idea the phase reversal
+இது பக்க கடல் என்று யோசனை வகையான தான் நிலை தலைகீழ்
+
+00:42:32,000 --> 00:42:35,000
+okay let's the let's turn the
+சரி நாம் திரும்ப அனுமதிக்க தான்
+
+00:42:35,000 --> 00:42:39,000
+against because it is important thing in between those who got
+அது யார் அந்த இடையே உள்ள முக்கியமான விஷயம், ஏனெனில் எதிராக
+
+00:42:39,000 --> 00:42:42,000
+yeah let's let's turn the incandescent light of first and
+சரி தான் முதல் ஒளிர்வு ஒளி திரும்ப அனுமதிக்க மற்றும்
+
+00:42:42,000 --> 00:42:46,000
+think one thing your so 103 know through this thing you think you can do to get
+ஒன்று உங்கள் எனவே 103 இந்த விஷயம் எங்களுக்கு தெரியும் நீங்கள் என்ன நினைக்கிறீர்கள் நீங்கள் பெற செய்ய முடியும் என்று நான் நினைக்கிறேன்
+
+00:42:46,000 --> 00:42:49,000
+on the other side you're on hand so we can see with
+மற்ற பக்கத்தில் நீங்கள் கையில் தான் நாம் பார்க்க முடியும்
+
+00:42:49,000 --> 00:42:54,000
+when for the UN intervening sleuths
+ஐ.நா. புலனாய்வு இடைப்பட்ட போது
+
+00:42:54,000 --> 00:42:58,000
+water there all the time well on a nosedive it seems to me if we can't we
+அங்கு தண்ணீர் அனைத்து நேரம் நன்றாக ஒரு nosedive அதை எனக்கு தெரிகிறது நாம் செய்ய முடியாது
+
+00:42:58,000 --> 00:42:59,000
+just the justices
+தான் நீதிபதிகள்
+
+00:42:59,000 --> 00:43:04,000
+the that's just go through to next year staff the dots can do it just seeing how
+அந்த புள்ளிகள் மட்டும் பார்த்து அதை செய்ய முடியும் அடுத்த ஆண்டு ஊழியர்கள் மூலம் செல்கிறது எப்படி
+
+00:43:04,000 --> 00:43:06,000
+come you think your finger in the air
+நீ காற்று உங்கள் விரல் என்று வந்து
+
+00:43:06,000 --> 00:43:10,000
+fun to try once more its
+மீண்டும் முயற்சி நன்றாக அதன்
+
+00:43:10,000 --> 00:43:14,000
+I get snyder et that's one thing we can do this
+நான் நாம் இதை செய்ய முடியும் ஒரு விஷயம் என்று ஸ்னைடர் மற்றும் பெற
+
+00:43:14,000 --> 00:43:17,000
+well as bring the lights back up and its
+அதே போல் மீண்டும் விளக்குகள் கொண்டு அதன்
+
+00:43:17,000 --> 00:43:22,000
+again just to go stress the point scary RTC
+மீண்டும் தான் பயமாக பிராந்திய போக்குவரத்து கம்பனி புள்ளி வலியுறுத்தி செல்ல
+
+00:43:22,000 --> 00:43:26,000
+there we are at a frequency that it's just a little above the sea
+நாம் அது ஒரு சிறிய கடல் மேலே என்று ஒரு அதிர்வெண் உள்ளன
+
+00:43:26,000 --> 00:43:31,000
+and we can go back there and in the sea and we can actually get a phase reversal
+நாம் அங்கு கடலில் செல்ல முடியும் மற்றும் நாம் உண்மையில் ஒரு நிலை தலைகீழ் பெற முடியும்
+
+00:43:31,000 --> 00:43:35,000
+and I guess if we do this long enough we get at the at the whole ocean and put it
+நான் நாம் நீண்ட போதும் இந்த செய்தால் நாம் முழு பெருங்கடல் பெற மற்றும் அதை வைத்து யூகிக்கிறேன்
+
+00:43:35,000 --> 00:43:36,000
+back in
+மீண்டும்
+
+00:43:36,000 --> 00:43:39,000
+we're ever comes from is there in cars in newsrooms gonna run is not running
+நாம் எப்போதும் newsrooms உள்ள கார்களில் உள்ளது போகிறேன் ரன் இயங்கவில்லை இருந்து வருகிறது
+
+00:43:39,000 --> 00:43:43,000
+too long by the Rev trailer get here yet to be careful as well as the Moody Blues
+நீண்ட ரெவ் டிரைலர் அத்துடன் கவனமாக இருக்க இன்னும் இங்கு மூடி ப்ளூஸ்
+
+00:43:43,000 --> 00:43:44,000
+V
+
+
+00:43:44,000 --> 00:43:49,000
+surface well I don't know about them but I guess I believe you back its
+நான் அவர்களை பற்றி எனக்கு தெரியாது, ஆனால் நான் நினைக்கிறேன் நன்கு மேற்பரப்பில் நான் மீண்டும் நம்பிக்கை அதன்
+
+00:43:49,000 --> 00:43:52,000
+up a little more pressure on three gods monarchy
+மூன்று தெய்வங்கள் மன்னர் இன்னும் கொஞ்சம் அழுத்தம்
+
+00:43:52,000 --> 00:43:55,000
+Adams girlfriends or service teams
+ஆடம்ஸ் ஆண் அல்லது சேவை அணிகள்
+
+00:43:55,000 --> 00:44:01,000
+going things together Ste
+விஷயங்களை ஒன்றாக போகிறது Ste
+
+00:44:01,000 --> 00:44:05,000
+we have these machines are all over the place lot of fun
+நாம் இந்த இயந்திரங்கள் அனைத்து வேடிக்கை இடத்தில் நிறைய உள்ளன
+
+00:44:05,000 --> 00:44:08,000
+but that this this is really terrific I i think that
+ஆனால் இந்த உண்மையில் பயங்கர நான் என்று நான் நினைக்கிறேன் என்று
+
+00:44:08,000 --> 00:44:12,000
+the this whole idea of the
+இந்த முழு யோசனை
+
+00:44:12,000 --> 00:44:15,000
+and abusing aliens saying in stroz and
+மற்றும் வெளிநாட்டினர் தவறாக Stroz கூறி மற்றும்
+
+00:44:15,000 --> 00:44:19,000
+the kinds of things that did you do with the murder just fantastic in that we
+நீங்கள் நாம் வெறும் அற்புதமான கொலை செய்ய வில்லை என்று வகையான விஷயங்களை
+
+00:44:19,000 --> 00:44:21,000
+really appreciate the chance to
+உண்மையில் வாய்ப்பு பாராட்டுகிறோம்
+
+00:44:21,000 --> 00:44:25,000
+come in here and see the demonstration Rose Bowl game ruth's
+இங்கே வந்து ஆர்ப்பாட்டம் ரோஸ் பவுல் விளையாட்டு ரூத் பார்க்க
+
+00:44:25,000 --> 00:44:28,000
+hope you will use it for years the bar over many years to come
+நீங்கள் வந்து பல ஆண்டுகள் ஆண்டுகளில் பட்டியில் அதை பயன்படுத்த முடியும் என்று நம்புகிறேன்
+
+00:44:28,000 --> 00:44:32,000
+so is I emphasized that the beginning
+அதனால் உள்ளது நான் வலியுறுத்தி ஆரம்பத்தில்
+
+00:44:32,000 --> 00:44:36,000
+in what situations aliasing can in fact be very useful
+என்ன மாற்றுப்பெயரிடு சூழ்நிலைகளில் உண்மையில் மிகவும் பயனுள்ளதாக இருக்கும்
+
+00:44:36,000 --> 00:44:40,000
+also with this demonstrates is that particularly when you have a colleague
+இந்த நிரூபிக்கிறது என்று நீங்கள் ஒரு சக வேண்டும் குறிப்பாக போது
+
+00:44:40,000 --> 00:44:42,000
+like da kitchen
+டா சமையலறை போல
+
+00:44:42,000 --> 00:44:46,000
+a leasing and for that matter science in general can be an awful lot of fun
+பொதுவாக ஒரு குத்தகை மற்றும் அந்த விஷயத்தில் அறிவியல் வேடிக்கை ஒரு பரிதாபம் நிறைய இருக்க முடியும்
+
+00:44:46,000 --> 00:44:53,000
+by gonna thanks a lot that again and thank you just the name
+போகிறேன் நன்றி மீண்டும் வெறும் பெயர் நன்றி என்று நிறைய
+
+00:44:54,000 --> 00:44:59,000
+well I have to say that that visit was an awful lot of fun for me and
+நான் அந்த பயணம் வேடிக்கை ஒரு பரிதாபம் நிறைய எனக்கு இருந்தது என்று சொல்ல வேண்டும் மற்றும்
+
+00:44:59,000 --> 00:45:04,000
+for Justin in fact to for the whole camera crew that was
+என்று முழு கேமரா குழுவினர் உண்மையில் ஜஸ்டின் ஐந்து
+
+00:45:04,000 --> 00:45:09,000
+there and hopefully you all have used at some point will also have a chance to
+அங்கு மற்றும் வட்டம் சில புள்ளி பயன்படுத்தப்படும் ஒரு வாய்ப்பு வேண்டும்
+
+00:45:09,000 --> 00:45:13,000
+visited stroll Valley well
+விஜயம் வாக்கிங் பள்ளத்தாக்கு நன்கு
+
+00:45:13,000 --> 00:45:16,000
+hopefully what we've gone through today gives you
+வட்டம் இன்று நாம் என்ன கடந்துவந்திருக்கிறோம் நீங்கள் கொடுக்கிறது
+
+00:45:16,000 --> 00:45:20,000
+a good feeling for the concepts love sampling an alias saying
+கருத்துக்கள் ஒரு நல்ல உணர்வு என்று ஒரு மாற்று மாதிரி
+
+00:45:20,000 --> 00:45:25,000
+and both why it might be useful and why we might want to avoid
+ஏன் அது பயனுள்ளதாக இருக்கும் மற்றும் நாம் ஏன் தவிர்க்க வேண்டும் இரண்டு
+
+00:45:25,000 --> 00:45:29,000
+in the next lecture will continue on
+அடுத்த விரிவுரை மீது தொடரும்
+
+00:45:29,000 --> 00:45:32,000
+the discussion of sampling any particular
+எந்த குறிப்பிட்ட மாதிரி விவாதம்
+
+00:45:32,000 --> 00:45:35,000
+what all be talking about is the interpretation
+என்ன பற்றி விளக்கம்
+
+00:45:35,000 --> 00:45:40,000
+love the reconstruction process not in the frequency domain
+அதிர்வெண் களத்தில் புனரமைப்பு பணியில் இல்லை அன்பு
+
+00:45:40,000 --> 00:45:44,000
+but in a time-domain interpretation specifically associated
+ஆனால் ஒரு நேரத்தில் டொமைன் விளக்கம் குறிப்பாக தொடர்புடைய
+
+00:45:44,000 --> 00:45:48,000
+with the concept %uh interpolating between the samples
+கருத்து% இம் மாதிரிகள் இடையே இடைக்கணிப்பிடுதல் கொண்டு
+
+00:45:48,000 --> 00:45:53,000
+well then proceed from there too a discussion as i've alluded to
+நான் மறைமுகமாக செய்த அதே பின்னர் அங்கு இருந்து ஒரு கலந்துரையாடல் தொடர
+
+00:45:53,000 --> 00:45:57,000
+in several lectures love what i've referred to as
+பல விரிவுரைகள் நான் என குறிப்பிடப்படுகிறது என்ன காதல்
+
+00:45:57,000 --> 00:46:00,000
+discrete-time processing of continuous-time signals
+தொடர்ச்சியான நேர சிக்னல்களை தனி நேர செயலாக்க
+
+00:46:00,000 --> 00:46:06,000
+very heavily exploiting the concept and issues associated with sample
+மிகவும் அதிகமாக மாதிரி தொடர்புடைய கருத்து மற்றும் பிரச்சினைகள் பயன்படுத்தி
+
+00:46:06,000 --> 00:46:06,000
+thank you
+நன்றி
+

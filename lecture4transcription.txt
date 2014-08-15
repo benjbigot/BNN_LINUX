@@ -1,0 +1,794 @@
+000040~003450~the following content is provided under a Creative Commons license
+003490~003639~your support will help MIT OpenCourseWare continue to offer
+007129~003451~high-quality educational resources for free
+010580~003780~to make a donation or view additional materials from hundreds of them IT
+014360~000670~courses
+015030~003080~visit MIT OpenCourseWare at 0 CW
+018110~002560~that MIT ided you
+020670~007000~home
+035700~004960~in
+040660~004400~the norm
+045060~007000~are
+057270~002510~the last lecture we discuss the number
+059780~003740~general properties for systems which
+063520~003800~as you recall applied both to continuous-time
+067320~003170~and to discrete-time systems
+070490~003910~and these properties were the properties
+074400~004240~associated with the system having memory the issue
+078640~003200~love whether a system is or isn't convertible
+081840~003569~we talked about causality instability
+085409~003401~and finally we talked about when the arity
+088810~003559~and time-invariant in today's lecture
+092369~004481~what I'd like to do is focused specifically on when the arity in time
+096850~000879~invariance
+097729~003810~and show how for systems that have those properties
+101539~003580~we can exploit them to generate
+105119~003771~a general representation well let me begin by
+108890~003259~just reviewing the two properties again quickly
+112149~003841~time invariance as you recall
+115990~003500~is a property that apply both to continuous-time and discrete-time
+119490~001470~systems
+120960~004970~and in essence stated bad for any given
+125930~003680~input and output relationship if we
+129610~005340~simply shift the input than the output shift by the same amount
+134950~004289~and of course exactly the same kind of statement
+139239~005431~applied in discrete-time so it i mean variance was a property
+144670~004270~it said that the system didn't care about what the time origin
+148940~003600~the signal is when the arity
+152540~003880~was a property related to the fact that if we have
+156420~004440~et cetera outputs associated with a given set of inputs
+160860~003909~as i've indicated here with the inputs
+164769~003951~as feasted K and the output decisive K
+168720~003460~then the property of when the arity
+172180~003510~States that if we have an input
+175690~003669~which is a linear combination up those inputs
+179359~003511~then the output is
+182870~003000~a linear combination of the Associated outputs
+185870~003850~so that linear combination of inputs
+189720~005280~generates for linear system at the end output which is
+195000~005200~a linear combination up the Associated outputs now
+200200~004610~the question is how can we exploit the properties have many arity
+204810~004300~and time-invariant and there's a basic strategy
+209110~003470~which will flow more or less through mostly this court's
+212580~004000~the strategy is to
+216580~005110~attempt to decompose the signal you the continuous-time and discrete-time
+221690~003269~into it said a basic signals
+224959~003321~and I've indicated that
+228280~003910~here and the question then
+232190~004420~is what basic signal should we pick well
+236610~003860~the answer kinda is we should pick said a basic signals
+240470~003530~they provide a certain degree have analytical convenience
+244000~003150~so we choose instead of inputs for the decomposition
+247150~003180~bad provide outputs
+250330~004659~that we can easily generate now and we'll see
+254989~003641~when we do this there are to
+258630~004210~classes love inputs that are particularly suited
+262840~003600~to that strategy one class is
+266440~004820~the set love the late impulses namely
+271260~003240~decomposing a signal into a linear combination if the
+274500~004240~is and as we'll see that leads to a representation
+278740~003739~for linear time-invariant systems which is referred to
+282479~004261~as convolution a second
+286740~005140~is a decomposition of inputs into complex exponentials
+291880~003200~a linear combination of complex exponentials
+295080~003890~and that leads to a representation
+298970~004100~love signals and systems through what will refer to as
+303070~003520~for your analysis now
+306590~003600~four-day analysis will be a topic for
+310190~003089~a setup later lectures but I'd like to begin with
+313279~004841~is the representation in terms of impulses and the associated description
+318120~003090~linear time-invariant systems using convolution
+321210~003480~so let's begin where
+324690~003510~a discussion are discrete-time signals
+328200~004360~and in particular the issue of how discrete-time signals
+332560~003210~can be decomposed as a linear combination
+335770~003990~love the lady impulses
+339760~003839~well in fact it's relatively straightforward
+343599~003481~what I've shown here is a general
+347080~003380~sequence with values which i've indicated
+350460~003800~at the top and more or less
+354260~003760~as we did when we talked about representing
+358020~003329~a unit step in terms of impulses
+361349~003971~we can think of this general sequence as a sequence
+365320~003599~I'll impulses delayed
+368919~003041~namely occurring at the appropriate
+371960~005019~prime instant and and with the appropriate ample to
+376979~003750~so we can think love this general sequence
+380729~004151~as and im polls occurring at an equal 0
+384880~003089~and and with the high dive exit 0
+387969~003971~plus and im polls all quite active one
+391940~003909~occurring at time n equals 1 and so that's active one time
+395849~004731~Delta than -1 and in polls at -1
+400580~003190~with an amplitude love exit -1
+403770~004240~et cetera so if we continue
+408010~004500~to generate a said Oh waited the late unit samples like that
+412510~003100~and if we had all these together
+415610~004510~then that will generate the total sequence
+420120~003650~algebraically then what that corresponds to
+423770~003240~is representing the sequence as
+427010~004010~some love individual turns over as i've indicated here
+431020~003410~or in terms over general thumb
+434430~004430~the song %uh exit K felt the then minus K
+438860~004669~so that's our strategy the strategy is to decompose
+443529~003111~an arbitrary sequence into a linear combination
+446640~003949~or waited too late impulses and here
+450589~003560~again is the representation which we just
+454149~003000~finish generating
+457149~004221~now why is this representation useful
+461370~004779~it's useful because we now have a decomposition at the sequence
+466149~003661~as a linear combination all basic
+469810~003279~sequences namely that the late impulses
+473089~005000~and if we are talking about a linear system
+478089~006241~the response to that linear combination is a linear combination of the responses
+484330~004040~so if we denote the response
+488370~004620~to with the late in paul's as H+ the cave and
+492990~003020~then the response to
+496010~004730~this general input is what i've indicated here
+500740~003929~where why event of course is the output
+504669~003221~due to the general in protective and
+507890~003110~H+ the cave and is the output do
+511000~004169~to the late in polls and these are simply
+515169~005031~the coefficients in the waiting
+520200~003029~so for linear system we have
+523229~003101~this representation and
+526330~004250~if now in addition the system is time-invariant
+530580~003500~we can in fact relate the outputs
+534080~003199~due to these individuals the late in polls
+537279~003081~specifically if the system is time-invariant
+540360~004180~then the response to an impulse at the time
+544540~006799~K is exactly the same as the response to an impulse at time 0
+551339~003711~shifted over two-time K said another way
+555050~003120~h2k a van it simply
+558170~004370~80 then minus K where 80
+562540~004600~is the response to the system to an impulse at an equal 0
+567140~003450~and it's generally useful to
+570590~003120~rather than carrying around 80 a band
+573710~003090~just simply define 80 then
+576800~003320~as a chip and which is
+580120~004940~the unit sample or unit impulse response to the system
+585060~003030~and so the consequent then is for
+588090~003250~a linear time-invariant system
+591340~003480~the output can be expressed as this
+594820~003710~some where a true then minus K
+598530~005060~is the response to an impulse occurring at time n equals K
+603590~003180~and this is referred to
+606770~004010~as the convolution saw
+610780~003940~now we can just to emphasize
+614720~007000~how we've going about this let me show it from another perspective
+622020~004960~we of course have taken the sequence X the van
+626980~003100~we have decomposed that as
+630080~005870~a linear combination out these waited the late impulses
+635950~003220~when these are added together those correspond
+639170~003640~to the original sequence active and
+642810~003480~if this in polls for example
+646290~003120~generates a response
+649410~004610~which is exit 0 times a chip and we're a tremendous the response
+654020~003660~to unit in polls at an equal 0
+657680~003910~and the second one the late generates the delayed
+661590~004100~waited response and the third one similarly
+665690~003310~and we generate these individual responses
+669000~004120~these are all added together and it that linear combination
+673120~003060~that forms the final output
+676180~002970~so that's really kind of the way we're thinking about it we have a general
+679150~001360~sequence
+680510~003660~we're thinking love each individual sample
+684170~004070~individually each one of those pops the system
+688240~003380~and because the linearity the response is the sum
+691620~003040~for those individual responses
+694660~003560~well thats what happens in discrete-time and
+698220~004840~pretty much the same strategy works in continuous-time
+703060~003250~a particular
+706310~003560~we can begin in continuous-time
+709870~004140~with the notion 0 decomposing
+714010~003560~a continuous-time signal into
+717570~004460~succession love are bitterly narrow rectangles
+722030~003600~and as these rectangles is the with the rectangles goes
+725630~003450~0 the approximation gets better and
+729080~004130~essentially what's going to happen is that you to those individual rectangles
+733210~004140~as they get narrower and narrower correspond more and more
+737350~004620~to an impulse well let me show you what I mean
+741970~004990~here we have a continue with time signal
+746960~003080~and I've approximated it
+750040~003510~by staircase
+753550~003130~so in Athens I can't think of this
+756680~003280~as individual rectangles
+759960~003790~a fight associated with the height the continuous curve
+763750~003710~and so i've indicated that down below here for example
+767460~004520~is the impulse corresponding to the rectangle between
+771980~004130~people's -2 dealt in people's minds felker
+776110~003260~here's the one from minus felt that 20
+779370~003820~and as we continue on down we get
+783190~005610~impulses or rather rectangles from success the park to the way for
+788800~003500~now let's look specifically at the
+792300~005420~rectangle for example starting at zero and ending at Delta
+797720~004500~and the amplitude of it is exit Delta
+802220~003090~and so
+805310~004260~what we have actually this should be exit 0
+809570~003400~and so not be just correct that
+812970~003190~here that sex is zero and so
+816160~003869~we have a rectangle a fight exit 0
+820029~003111~and recall the function that I defined last time
+823140~003220~as dealt this the capital Delta p
+826360~003760~which had height1 over Delta and with dealt
+830120~003990~so multiply finally by this last little Delta
+834110~003300~then this is a representation for
+837410~003119~the rectangle that i've shown there now
+840529~003791~there's a little bit about you were there too kinda track through
+844320~004310~but what we're really doing is just simply representing this
+848630~005190~in terms the rectangles what I want to do is describing each rectangle
+853820~004590~as in terms that function dealt with the bell 30
+858410~004090~which in the limit then becomes an impulse well so extract that
+862500~003279~through a little further
+865779~003021~when we have that linear combination
+868800~003870~then were saying that x50 can be represented
+872670~003460~by Osama's I indicate here
+876130~003180~which I can then
+879310~007000~right more generally in this form just indicating that this is an infinite sum
+886620~004140~we now want to take the limit as Delta goes to zero
+890760~003710~and his daughter goes to zero notice
+894470~004930~that this term becomes are bitterly narrow
+899400~003390~this goes to our impulse function and this of course
+902790~003570~goes to exit Towne and in fact
+906360~003080~in the limit some out this form
+909440~003839~is exactly the way an integral is the point
+913279~003301~so we have an expression for wire T
+916580~003790~in terms of an impulse function their I have to admit
+920370~003180~is a little bit have detailed the kinda focus on
+923550~004740~at your leisure but this is the general load the strategy
+928290~003540~so what we have now is and integral
+931830~004820~tell that tells us how except he can be described
+936650~003070~as a thong or linear combination
+939720~003369~involving in polls
+943089~005061~this bottom equation by the way is often referred to as the sifting integral
+948150~005010~in essence what it says is that if I take a time function exit tea and put it
+953160~001560~through that integral
+954720~003250~the impulse as did dipped by
+957970~004059~generates X-eighty all over again
+962029~003031~now at first glance what it could look like
+965060~003279~is that we've taken a time function X 50
+968339~004111~and proceeded to represented in a very complicated way
+972450~004280~interns have itself and one could ask her why bother doing that
+976730~003000~and the reason going back to what r
+979730~003340~strategy was is that
+983070~003620~what we want to do is exploit
+986690~003350~the property lovely area so
+990040~003960~by describing a time function
+994000~003910~as a linear combination have waited too late impulses
+997910~003400~as in effect we've done through
+1001310~005880~this some Asian that corresponds to a decomposition in terms of impulses
+1007190~003810~we can now exploit linearity
+1011000~003250~specifically recognizing that the output
+1014250~003730~have a linear system is this some
+1017980~004169~or the responses to these individual inputs
+1022149~003231~so with h2k
+1025380~004419~Delta I love see corresponding to the response
+1029799~004160~to built this adult the T-minus k Delta
+1033959~004281~and arrested this stop the exit k Delta and there's little doubt the
+1038240~004280~are basically scale factors for a linear system
+1042520~003080~then if the input is expressed in this form
+1045600~003199~the output is expressed in this form
+1048799~003110~again taking the limit is Delta goes to zero
+1051909~003520~by definition this corresponds to an integral
+1055429~003441~and it the integral that we indicated that I indicate here
+1058870~003529~with H+ the tower T corresponding to
+1062399~003091~the impulse response
+1065490~003100~due to an impulse occurring at
+1068590~004140~time town now again we can do
+1072730~003260~the same thing a in particular
+1075990~004439~if the system is time-invariant then the response to each of these the late
+1080429~001681~impulses
+1082110~003870~is simply at the late version up the impulse response
+1085980~004180~and so we can relate these individual terms
+1090160~005010~and in particular than the response to an impulse occurring at time t cloth
+1095170~001310~towel
+1096480~004540~it's simply the response to an impulse occurring at time 0
+1101020~003550~shifted over to the time origin town
+1104570~005040~and again as we did before but dropped the subscript 80
+1109610~003250~so 80 love the
+1112860~003540~will simply defined as a trip to the
+1116400~003350~and what we're left with when we do that
+1119750~004640~is the description over linear time-invariant system
+1124390~003490~through this integral which tells us
+1127880~003240~how the output is related to
+1131120~003870~the input and two the impulse response
+1134990~003400~again let's just quickly look at this
+1138390~005450~from another perspective as we did in discrete-time
+1143840~003240~recall that what we've done is to take the
+1147080~004160~continuous function decomposed it in terms
+1151240~003100~%uh rectangles and then
+1154340~003150~each of these rectangles generates
+1157490~004510~its individual response
+1162000~005020~and then these individual responses are added together
+1167020~003130~and as we go through that process
+1170150~003080~the chorus there's a process whereby
+1173230~003440~we let the approximation go to the
+1176670~004240~to the representation over smooth talker
+1180910~003970~now again I stress that their is certainly
+1184880~003880~paramount to kinda examined carefully there
+1188760~004490~but it's important to also reflect on what we've done which
+1193250~003870~is really pretty significant well we've managed to accomplish
+1197120~004630~is to exploit the properties linear ready in time invariance
+1201750~004520~so that the system could be represented
+1206270~003580~interns only over its response to
+1209850~005300~and in polls at time 0 so for a linear time-invariant system quite amazingly
+1215150~000880~actually
+1216030~005350~if you know its response to an impulse at equal 0 or 10 equal 0 depending on
+1221380~003020~discrete or continuous time then in fact
+1224400~003620~through the convolution some in discrete-time or the convolution
+1228020~001740~integral in continuous-time
+1229760~006370~you can generate the response to an arbitrary input
+1236130~003690~let me just introduced a small amount have
+1239820~003870~notation again reminding you
+1243690~004739~all her the convolution some in the discrete-time case
+1248429~003291~which looks as i've indicated here this summer
+1251720~003260~exit Khon minus K
+1254980~004930~will have the requirement to making such frequent reference
+1259910~003230~to convolution dead it can be any and
+1263140~003980~to notation we represented as I have here with an asterisk
+1267120~003220~and so X a van with the asterisk
+1270340~005180~a trip and means r denotes the convolution affects a van with a chip
+1275520~001150~and
+1276670~004570~and correspondingly in the continuous-time case
+1281240~003740~we have the convolution integral in which
+1284980~004250~here is the third thing in to grow as we talked about representing exit the
+1289230~005400~interns or itself hour as a linear combination of the late impulses
+1294630~003410~and here we have the convolution integral and again
+1298040~003930~will use the asterisk to denote convolution
+1301970~004400~now there's a lot about convolution
+1306370~003820~that we want to talk about it their properties of convolution which tell us
+1310190~000930~about properties
+1311120~003290~linear time-invariant systems also
+1314410~003110~it's important to focus on the mechanics
+1317520~004529~or implementing accomplish in in other words understanding and generating some
+1322049~001760~fluency and insight
+1323809~003851~into what these particulars
+1327660~003470~some an integral expressions me
+1331130~003470~so let's first look at discrete-time convolution
+1334600~004600~and examine more specifically what in essence
+1339200~006810~some tells us to do in terms of manipulating the sequences
+1346010~003289~so and returning to the
+1349299~003211~expression for the
+1352510~004299~convolutions Tom as I show here
+1356809~003811~some love exit K a true then minus
+1360620~004150~K let's focused in on an example
+1364770~003000~where we choose active and as a unit
+1367770~004190~step and a chip and as Arial exponential
+1371960~004130~times the unit step so with the quick fix a van
+1376090~003469~is as they indicate here
+1379559~004941~sequence a true fan is an exponential for positive time in zero for negative
+1384500~004330~time so we have active and in a tube and
+1388830~003630~but now let's look back at the equation and
+1392460~003469~let me stress that what we want is not
+1395929~004411~excessive and nature then we want exit K
+1400340~004320~because we're going to some over K and not a trip K
+1404660~003320~but a chip and minus K
+1407980~003660~so we have then from
+1411640~004060~expand its straightforward to generate exit K at that
+1415700~003870~simply changing the index it's a nation
+1419570~004930~and what's a true then minus K well what they two-minus K
+1424500~004650~H A minus K is huka flipped over
+1429150~003700~so hip this is white
+1432850~004300~8 UK looks like than
+1437150~003659~this is what a2 n my SK looks like
+1440809~004891~and in essence why it the operation of convolution
+1445700~004000~or the mechanics of convolution tells us to do
+1449700~003160~is to take the sequence HO
+1452860~006189~and minus K which is a check minus k position with its origin and cake balls
+1459049~001291~and
+1460340~003750~and multiply this sequence by this sequence
+1464090~005690~and some the product from K equals minus infinity plus infinity
+1469780~005279~so if we were to compute for example
+1475059~003041~the output at an equal 0
+1478100~004520~as I positioned this sequence here this is that an equal 0
+1482620~003410~I would take this and multiply it by this and some
+1486030~003610~from minus infinity plus infinity or
+1489640~003880~for an equal one I would position it here frank with two outs with position
+1493520~001930~it here at center
+1495450~003000~well you can kinda see what the idea is
+1498450~004200~let's look at this a little more dynamically and see it
+1502650~003130~in fact how one sequence fly past the other
+1505780~004970~and how the output why I have an build up to
+1510750~004210~the correct answer
+1514960~003130~so the input they were considering is a step input
+1518090~005650~which I show here and the impulse response that we welcome all this with
+1523740~003510~is a decaying exponential now
+1527250~004059~to form the convolution we want the product %uh exit K
+1531309~003581~not with a chip K but with a chip and minus K
+1534890~003000~corresponding to taking a chief K and
+1537890~003960~reflecting at about the origin and then shifting it appropriately
+1541850~004380~so here we see HR then minus K for an equal to 0
+1546230~004170~namely H minus K and now a true
+1550400~003120~one minus K which will show next is this
+1553520~004149~shifted to the right by one point
+1557669~003031~here we have a 2-1 minus K
+1560700~006719~shifting to the right by one more point is a trip to minus K
+1567419~005321~shifting again to the right will have ages 3 minus K
+1572740~003960~and now let's shift back to the left
+1576700~003680~until and is negative and
+1580380~005080~then will begin the convolution so here's an equal 0
+1585460~004790~any cause -1 any cause -2
+1590250~005340~and and it was minus-3 now to form the convolution we want the product
+1595590~004020~exit k with a true then minus K song from
+1599610~003280~minus infinity plus infinity and
+1602890~005250~for and negative that product is zero and therefore the result the convolution
+1608140~001300~is zero
+1609440~003580~as we shift to the right will build up the convolution
+1613020~004050~and the result the convolution will be shown on the bottom trace
+1617070~003030~so we begin the process
+1620100~003579~with and negative and here we have any calls -1
+1623679~005511~at n equals 0 we get our first 90 contribution
+1629190~005609~now as we ship further to the right corresponding to increasing N
+1634799~003221~we will accumulate more and more
+1638020~003340~turns in the psalm and the convolution
+1641360~003660~will build up in particular for this example
+1645020~003930~the result to the convolution increases monotonically
+1648950~004910~asymptotically approaching a constant and that constant in fact
+1653860~003230~is just simply the accumulation love
+1657090~007000~the values under the exponential
+1668779~004390~now let's carry out the convolution this time with an input which is a
+1673169~002431~rectangular pulses that have a step input
+1675600~003829~again the same impulse response namely the King exponential
+1679429~004211~and so we want to begin with HR then minus K
+1683640~004409~again with and negative shown here and again with any negative
+1688049~003411~there are no 90 turns in the product
+1691460~005079~and so the convolution for and negative will be zero as it was in the previous
+1696539~000541~case
+1697080~005709~again on the bottom trace will show the result of the convolution as the impulse
+1702789~000731~response
+1703520~004860~slides along at any cost 0 we get our first 90 term
+1708380~003529~and as in increases passed
+1711909~003581~0 we will begin to generate an output
+1715490~004870~basically the same as the output that we generated with a step input
+1720360~004260~until the impulse response
+1724620~004330~reaches a point where as we slide further
+1728950~004339~we slide outside the interval where the rectangle is non-zero
+1733289~005041~so when we slide one point further from what shown here
+1738330~003610~the output will now DK
+1741940~003510~corresponding to the fact dead the
+1745450~003290~impulse responses sliding outside
+1748740~003679~the interval in which the input is non-zero
+1752419~007000~and so on the bottom trace we now see the result that the convolution
+1760470~002560~okay so what
+1763030~003120~you've seen then is an example
+1766150~003840~love discrete-time convolution let's now
+1769990~004530~look at an example love continuous-time convolution
+1774520~004700~and as you might expect continuous-time convolution operates in
+1779220~004630~exactly the same way continuous-time convolution
+1783850~003210~we have be expression again
+1787060~003170~y'at is an integral with
+1790230~003770~now except now NHL t minus
+1794000~004140~now it had exactly the same kinda perform
+1798140~004070~as we had previously for
+1802210~004400~discrete-time convolution and and in fact the mechanics
+1806610~003080~0 the continuous-time convolution are identical
+1809690~005630~so here Misar example with X 50 equal to unity
+1815320~007000~step and 850 now a real exponential time two units that I show
+1823150~004200~here x50 which is the unit step function
+1827350~003550~here we have a gypsy
+1830900~003730~which is an exponential for positive time
+1834630~004060~and 0 for negative time now
+1838690~003310~again looking back at the expression
+1842000~004210~work on pollution it's not accept either we want
+1846210~003360~its except now that we want and it's not
+1849570~005610~H all tea or a chip how that we want it
+1855180~004530~minus now we plan to multiply these together
+1859710~003520~and integrate over the variable town
+1863230~003850~and that gives us the output at any given time
+1867080~003500~if we wanted at another time we change the value
+1870580~003300~the as an argument inside this integral
+1873880~003630~so here we have exit T
+1877510~004950~here we have a trip to you which isn't quite what we wanted
+1882460~003350~here we have except now and that's fine its just
+1885810~004290~X-eighty with T relabel this panel and now
+1890100~003700~what is 850 minus can now
+1893800~003240~well here's a chip panel
+1897040~003270~and if we simply turn that over
+1900310~005770~here is 850 -10 and a trip T-minus now
+1906080~003380~is position then at now
+1909460~004970~equal to P and as we change the value to the
+1914430~006700~to change the position this signal and now we multiply
+1921130~004960~these two together and integrate from minus infinity Department Kennedy
+1926090~005340~whip 850 minus now positioned at the appropriate value with T
+1931430~003010~well
+1934440~004950~again its best really to see this example and get the notion
+1939390~005250~love seek signal being flipped and the to think not flying past each other
+1944640~003280~multiplying in integrating by
+1947920~004340~looking at it dynamically and observing how the answer build-up
+1952260~003210~again the input that
+1955470~004720~we consider is a step input and again we use an impulse response
+1960190~004100~which is a decaying exponential and
+1964290~003000~to form the convolution we want the product
+1967290~004170~love accept an hour not with a chipped out but with a chip T-minus
+1971460~003170~now so we want HFT time reversed
+1974630~003920~and then shifted appropriately depending on the value with T
+1978550~003960~let's first just look at age 50 -10 now
+1982510~003610~for T positive corresponding to shifting
+1986120~004420~a chip -10 now to the right and here we have
+1990540~005670~TV increasing here
+1996210~003360~is TV decreasing and we
+1999570~003710~we want to begin the convolution with T negative
+2003280~003610~corresponding to shifting H A minus towel
+2006890~005140~to the left now to form the convolution we want the product if these two
+2012030~003950~and pretty negative there are no 90
+2015980~003620~contributions to the integral
+2019600~003840~and so the convolution will be 0 party less than zero
+2023440~004650~and the bottom trace we show the results of the convolution
+2028090~003380~here for T negative
+2031470~007000~and pretty less than zero we will continue to have zero in the convolution
+2038500~003350~now as TV increases past
+2041850~004070~0 we begin to get some 90 contribution
+2045920~004110~in the product indicated by the fact that the convolution
+2050030~003750~the result to the convolution starts to build-up
+2053780~003950~and as see increases further
+2057730~003640~we will get more and more 90 contribution
+2061370~003050~in the in a grand and so
+2064420~003340~the resulted the convolution will be
+2067760~004770~a monotonically increasing function for this particular example
+2072530~003350~which asymptotically approaches a constant
+2075880~003010~and that constant will be proportional
+2078890~004410~to the area under the impulse response because that the fact that work
+2083300~000880~involving
+2084180~007000~with the step input
+2099270~003569~now let's carry out the convolution with an input which is
+2102839~004971~a rectangular Paul's again an impulse response which is an exponential
+2107810~004160~and so to form the convolution we want except now with a2
+2111970~004129~T-minus towel H A T minus now shown here for TE
+2116099~003701~negative and again to form the convolution we take
+2119800~003549~the integral all the product if these two
+2123349~003361~which again will be 0 for
+2126710~004389~T less than zero so the bottom trace shows the result of the convolution
+2131099~004281~here shown is zero and it will continue to be 0
+2135380~004630~until T becomes positive at which point we build up
+2140010~003900~some 90 turn
+2143910~005020~in the in a grant now as we slide further
+2148930~004120~until the impulse response
+2153050~003630~shifts outside the interval in which the polls
+2156680~003840~is 90 the output will build up
+2160520~004049~but here we've now begun to leave that interval
+2164569~003861~and so the output will start to BK exponentially
+2168430~003270~and as the impulse response
+2171700~003300~slides further and further corresponding to
+2175000~004099~increasing see then the output
+2179099~004091~will DK exponentially representing the fact
+2183190~003450~that their is less and less area
+2186640~003830~in the product love except now
+2190470~004639~and a chief T-minus now and asymptotically
+2195109~006510~this output will then approach 0 okay so
+2201619~005210~you've seen convolution a you see the derivation of convolution and kinda the
+2206829~001030~graphical
+2207859~003781~representation convolution finally
+2211640~003990~let's work again with these two examples
+2215630~003810~and let's go through those two examples analytically
+2219440~003730~so that we finally see how analytically
+2223170~003909~the result develops for those same examples
+2227079~004010~well we have
+2231089~004401~first the discrete-time case and let's take our discrete-time example
+2235490~004349~and and in general the convolution some
+2239839~004071~is as I indicated here so yes
+2243910~003659~is just our expression from before which is
+2247569~005421~the convolution some and if we take our two examples
+2252990~003550~the example love and it put which is
+2256540~004049~unit step and an impulse response
+2260589~004611~which is a real exponential multiplied by a unit step
+2265200~003110~we have then
+2268310~003440~replacing exit K by
+2271750~004230~what we know the input to be an HR then minus K
+2275980~004790~by what we know the impulse response to be the output is
+2280770~004890~the expression that we have here now
+2285660~003310~in this expression and you'll see this
+2288970~004180~of very generally and with the more complicated examples
+2293150~004719~when you look at the tax as
+2297869~003291~you go to evaluate these expressions
+2301160~005030~generally what happens is that the signals have different analytical
+2306190~003090~forms in different regions and that's a fact
+2309280~003059~what we have here your particular let's
+2312339~005551~look at the thumb and well we observed first the ball
+2317890~003090~is that the
+2320980~003070~limits on this song are going to be modified
+2324050~003769~depending on where this unit step
+2327819~003891~is zero and non-zero in particular
+2331710~004320~if we first consider what will turn out to be the simple case
+2336030~004700~namely and less than zero for and less than zero
+2340730~004099~this unit step is
+2344829~003971~0 for K
+2348800~003630~greater than an and with an less than zero
+2352430~003880~that means that this unit step never
+2356310~003410~is 90 for K
+2359720~003180~positive on the other hand
+2362900~004140~this unit step is never 90
+2367040~004360~or is always 0 for k negative
+2371400~004219~let me just stressed that by looking at the particular grabs
+2375619~005261~here is the unit step you FK
+2380880~004200~here is the units that you then minus K
+2385080~006269~and for and less than zero so that this point comes before this point
+2391349~003681~the product these two is equal to 0
+2395030~003500~that means there is no overlap between these two terms
+2398530~003059~and so it says that why I have an
+2401589~004371~the output is 0 for and less than 0
+2405960~003129~well that was an easy one a her
+2409089~003741~bring greater than 0 it's not quite a straightforward
+2412830~003509~as coming out with the answers 0 so now
+2416339~004881~let's look at what happens when the two units steps overlap
+2421220~003869~and this would correspond to
+2425089~005441~what i've labeled here as interval to namely for and greater than 0
+2430530~003510~if we just look back at the
+2434040~005120~summation that we had the summation now
+2439160~003900~corresponds to this unit step
+2443060~005259~and this unit step having some overlap
+2448319~004201~so for interval to
+2452520~004010~corresponding to an greater than 0 we have
+2456530~003670~you have K the unit step
+2460200~003380~we have you love and minus K
+2463580~003660~which is a unit step going backward in time
+2467240~003310~by which extends
+2470550~003380~for positive values have an
+2473930~003610~if we think about multiplying these two together
+2477540~004270~we will get in the product unity
+2481810~003029~for what values at K well
+2484839~004270~for K starting at zero corresponding to one of the units steps
+2489109~004240~ending at hand corresponding to the other units that
+2493349~003621~so we have an overlap between these
+2496970~003530~for k equal to 0 et cetera
+2500500~003869~up through the value and
+2504369~005311~right now that means that in terms of the original some
+2509680~004000~we can get rid of the units steps involved by simply changing the limits
+2513680~001510~on the some
+2515190~004290~and the limits now are from zero
+2519480~003010~to an the term
+2522490~003240~out for to the end minus K
+2525730~004910~we had before you with Cain you then minus K and that disappeared because
+2530640~004130~because we don't with that simply by modifying the limits
+2534770~003450~we now pull out the term output to the N
+2538220~003910~because the summation is on canine and so we can
+2542130~003030~simply poll that term
+2545160~003380~out at the some
+2548540~003130~and we now have out but the minus K
+2551670~004669~which we can write rewrite as alpha to the minus 12 PK
+2556339~003821~and the upshot of all of this is that why I have an
+2560160~003880~now we can really express as output to the end
+2564040~003309~its own from 0 to end up outfit to the -1
+2567349~004551~to the K well question is how do we
+2571900~003020~evaluate that and
+2574920~003429~it's essentially corresponds to a finite number
+2578349~003441~turns in a geometric series and that bio
+2581790~005460~by the way is estimation that will recur over and over and over and over again
+2587250~004680~and it's one that you should right down right on your back pocket right in the
+2591930~001470~palm of your hand
+2593400~004660~or whatever it takes to remember it what you'll see is that that will recur
+2598060~004400~can more or less the throughout the course
+2602460~003580~and so it's one worth remembering and in particular
+2606040~003520~what the storm love a geometric
+2609560~003450~series is is what i've indicated here
+2613010~005390~we have this song from 0 to our they did to the K
+2618400~004090~and it's one minus beta to the are plus one
+2622490~003530~this is one more than the
+2626020~005680~upper limit on the summation and in the denominator is one minus beta
+2631700~003460~so this equation is important
+2635160~004920~is no point in attempting to derive it however you get to it it's important
+2640080~003460~to retain okay well
+2643540~004000~we can now use that some Asian
+2647540~003090~in the expression that we just the ballot
+2650630~004450~and so let's proceed to a value a tax on clothes
+2655080~003810~form so we now know go back
+2658890~003490~to the expression that we just worked out
+2662380~004479~why event is output to the end its own from 0 to N
+2666859~005131~output to the -1 to the K
+2671990~003349~this plays the role a beta in a turn that I just
+2675339~003000~in the expression and I just presented
+2678339~003291~and so using
+2681630~005410~bat using that result we can rewrite this summation as i indicate here
+2687040~004150~and the final result that we end up with
+2691190~003109~after a certain amount of algebra is
+2694299~004781~why I have an equal to one minus output to the end plus one
+2699080~003009~divided by one minus out for
+2702089~005561~and let me just kinda vindicate with a few dots here
+2707650~006379~dead there is a certain amount of algebra required in going from
+2714029~002121~this step to this step and
+2716150~004169~and I I'd like to leave you with the phone an opportunity you doing at your
+2720319~000540~leisure
+2720859~004531~okay well so so the expression we have now
+2725390~003429~for wired and is why I have an
+2728819~004431~equal to one myself up to be enforced one divided by one minus now for
+2733250~005349~that bring greater than 0 we found out previously that it was 0 for and less
+2738599~000990~than 0
+2739589~004081~and finally if we were to plot this what we would
+2743670~003580~get is the graph that I indicate here
+2747250~004880~the first non-zero value occurs at an equal 0
+2752130~004360~and it has a height 1 and then
+2756490~004030~the next 90 value at one and this has a height
+2760520~004079~a one plus alpha and this is one place now for
+2764599~003671~on South squared and and
+2768270~004299~the sequence continues on like that
+2772569~003901~an asymptotically approaches as n goes to infinity
+2776470~003889~asymptotically approaches one over one minute South for
+2780359~003881~which is consistent with the algebraic expression
+2784240~004799~that we have that we develop and obviously of course
+2789039~004411~is also consistent with the movie alright so that's our
+2793450~003619~discrete-time example which we kinda went through graphically
+2797069~004311~with the transparencies and we went through graphically with the movie you
+2801380~001630~know we've gone through analytically
+2803010~003680~now let's look analytically at
+2806690~003320~the continuous-time example which pretty much
+2810010~003130~close in the same way as we've just gone through
+2813140~003429~so again we have
+2816569~003131~the convolution integral which is
+2819700~004629~the integral indicated at the top
+2824329~005141~and our example you recall was with accepting as a unit step
+2829470~003490~and a trip to the as
+2832960~003670~an exponential times the units that so
+2836630~004290~when we substitute those then this then corresponds to
+2840920~005270~exit to the and this corresponds to 850 -10 now
+2846190~004520~and again we have the same
+2850710~004079~issue more last which is that inside that integral
+2854789~004101~there are two steps one of them going forward in time and one of them going
+2858890~003780~backward in time and we need to examine
+2862670~003919~when they overlap in when they don't when they don't overlap the product of
+2866589~001260~course is zero
+2867849~004131~and there's no point doing any integration because the anagram 20
+2871980~004170~so if we track it through we have again
+2876150~003560~interval one which is to us$10,000
+2879710~003700~pretty less than zero this unit step
+2883410~003129~which only begins at: equals 0
+2886539~003260~a tally cool 0 and this unit step
+2889799~003320~which is zero by the time
+2893119~004821~how gets up to TN beyond party less than zero
+2897940~003230~is no overlap between
+2901170~003179~the unit step going forward in time
+2904349~004071~and the units that going backward in time and consequently
+2908420~003429~the in a grand is equal to 0 and consequently
+2911849~006010~the output is equal to 0 okay
+2917859~003240~now we can
+2921099~003131~likewise looked at the interval where
+2924230~006190~the to unit steps to overlap and in that case what happens again is that the
+2930420~000820~overlap
+2931240~004510~in essence the units that tells us gives us a range
+2935750~004799~on the integration and in particular
+2940549~003861~the two-step overlap 20 is greater than
+2944410~003540~from how equal 0
+2947950~003040~two towers both T so
+2950990~003930~critical to party greater than 0
+2954920~003570~again of course we have in this expression
+2958490~004069~this product love this unit step
+2962559~003401~and this unit step is equal to 1
+2965960~003579~in this rain
+2969539~003361~and so that allows us then
+2972900~003389~to change the limits on the integral
+2976289~003220~mister from minus infinity two plus infinity
+2979509~006141~we know that the in a grand is non-zero only over this range
+2985650~005320~looking at this in to grow we can now pull out the term which corresponds to
+2990970~003639~you need to the -80 just as we pulled out
+2994609~003670~a term in the discrete-time case
+2998279~003611~and we noticed in the integral we have eat to the
+3001890~006800~-8 -10 now so that gives us the integral from 0 to TV to the eight-hour
+3008690~003020~and if we perform at integration
+3011710~003409~we end up with this expression
+3015119~004821~and finally multiplying this by either the -80
+3019940~004200~we have for y'at pretty greater than 0
+3024140~003520~the algebraic expression that I
+3027660~004230~indicated on the bottom
+3031890~003199~so so we had worked out
+3035089~003111~to less than zero and we come out 10
+3038200~003540~we work out take greater than 0 and we come out
+3041740~004900~with this algebraic expression
+3046640~004880~and if we plot this out to rate expression as a function of time
+3051520~003089~we find that what it corresponds to is
+3054609~003460~an exponential behavior starting at zero
+3058069~004470~and exponentially heading asymptotically
+3062539~006240~forward the bad you one over it
+3068779~003790~okay now we've gone through these examples several ways than one is
+3072569~001951~analytically
+3074520~005140~in order to develop a feel and fluency for convolution
+3079660~004369~it's absolutely essential to work through a variety of examples
+3084029~005020~both understanding them graphically and understanding them as we did hear
+3089049~005060~analytically and you'll have an opportunity to do that
+3094109~004920~through the problems that I suggested in the video course manual
+3099029~003760~in the next lecture what will turn to
+3102789~003330~are some general properties of convolution
+3106119~003410~and show how this rather amazing representation
+3109529~004361~when your time invariant systems in fact leads to a variety
+3113890~003659~%uh properties linear time-invariant systems
+3117549~003181~and will find that convolution its
+3120730~003770~fairly rich in its properties and what this leads to
+3124500~003079~are some very nice and
+3127579~003280~desirable and exploitable properties
+3130859~002131~linear time-invariant systems thank you

@@ -1,0 +1,744 @@
+000040~003450~the following content is provided under a Creative Commons license
+003490~003639~your support will help MIT OpenCourseWare continue to offer
+007129~003451~high-quality educational resources for free
+010580~003780~to make a donation or view additional materials from hundreds of them IT
+014360~000670~courses
+015030~003080~visit MIT OpenCourseWare at 0 CW
+018110~005640~that MIT that EDU hard
+023750~006140~the
+029890~001490~the
+031380~002860~the
+034240~004960~the in
+039200~006330~the norm
+045530~005150~are
+050680~006150~the in the last two lectures
+056830~004400~and we saw how periodic not periodic signals could be represented as linear
+061230~002400~combinations a complex exponentials
+063630~004760~and this led to the Fourier series representation
+068390~003900~in the periodic case and it led to the Fourier transform
+072290~003670~representation in the a periodic case and and then in fact
+075960~004290~what we did was to incorporate the 4e a series
+080250~006640~within the framework of the Fourier transform what I'd like to do in today's
+086890~001180~lecture is
+088070~003450~look at the 4-yard transform more closely
+091520~003160~in particular with regard to so this property's
+094680~003210~so let me begin by reminding you
+097890~003290~love the analysis and synthesis equations for the four th
+101180~003189~transform and as I summarize them here
+104369~003101~the synthesis equation being a
+107470~003410~an equation that tells us how to build the
+110880~003939~time function outta in essence a linear combination
+114819~004531~a complex exponentials and the analysis equation
+119350~004980~telling us how to get the amplitudes love those complex exponentials
+124330~003030~from the Associated time function
+127360~003350~so essentially in the decomposition
+130710~004380~affect safety as a linear combination of complex exponentials
+135090~003460~the complex amplitudes if those are in effect
+138550~003040~the 48 transform scaled by
+141590~003130~the differential and scaled by one over two-part
+144720~003480~now as
+148200~003920~I indicated last time the 48 transform
+152120~003710~is a complex function of frequency in
+155830~003330~and in particular the complex function of frequency
+159160~003980~has an important and very useful cemetery property
+163140~004230~the symmetry love the Fourier transform
+167370~003520~when X if T is real is
+170890~004010~what is referred to as conjugate symmetric in other words if we take the
+174900~000860~complex
+175760~003850~function after Omega and and its complex conjugate
+179610~003220~that's equivalent to replacing Omega
+182830~004140~by minus Omega and a consequence if that
+186970~005310~if we think interns love the real party the Fourier transform
+192280~004180~the real part is and even function of frequency
+196460~004320~and the magnet to is an even function of frequency
+200780~003600~whereas the imaginary part is an
+204380~003860~odd function of frequency and the phase angle
+208240~003500~is an odd function of frequency so
+211740~004370~we have this symmetry relationship that for except the real
+216110~004780~if we think I've either the real part or the magnitude of the Fourier transform
+220890~004040~its even symmetric and the imaginary part
+224930~003410~or the phase angle either one it is
+228340~003970~fought symmetric in other words if we flip it we multiply by a minus sign
+232310~003360~let's didn't look at an example
+235670~003900~in the context love an example that we worked last time
+239570~003830~for the Fourier transform we took
+243400~003220~the case both a real exponential
+246620~003950~love the form eat to the -80 times this step
+250570~003820~and the 48 transform as
+254390~005369~we found was other algebraic form one over a plus J Omega
+259759~004711~and incidently the 48 transform into grow only converged
+264470~003199~for a greater than 0 in other words
+267669~005081~for this exponential became and I illustrated
+272750~003490~the magnitude and angle and what we see is that
+276240~003019~you the minus 8c is a real
+279259~003101~time function therefore its magnitude
+282360~003750~should be an even function of frequency and indeed it is
+286110~003250~and its phase angle shown below
+289360~004709~is and odd function of frequency
+294069~003551~so in fact in although
+297620~003290~I stressed last time that
+300910~005060~the complex exponentials required to build the time function
+305970~004760~require exponentials both positive and negative frequencies
+310730~003050~for except the real what we see is that
+313780~003290~because if the symmetry properties either for the real and imaginary or
+317070~001750~magnitude and angle
+318820~005819~we can specify a before you transform for let's say only positive frequencies
+324639~003321~and asymmetry then implies are tells us
+327960~006160~what the Fourier transform then will be for the negative frequencies
+334120~003290~okay now this same example the cause
+337410~003010~the decaying exponential demonstrates
+340420~003200~another important and often useful
+343620~003730~property the Fourier transform
+347350~004510~specifically let's rewrite algebraically this example
+351860~003770~as I indicate here so we have
+355630~006180~again the exponential was 48 transformers one over a plus J Omega
+361810~005000~and if I A just simply divide numerator and denominator by a
+366810~003560~I can rewrite it in the form shown here
+370370~004310~and what we notice is dead in the time function
+374680~003570~we have a term of the form eight times TV
+378250~004139~and in the frequency function we have a term for the form Omega
+382389~003181~divided by a or
+385570~003160~equivalent Lee we can't think all the
+388730~003909~time function which I show here
+392639~004101~and as the pram enter a gets smaller
+396740~004570~the exponential gets spread out in time
+401310~003480~whereas s04e08 transform
+404790~004490~or the magnitude of its Fourier transform has the inverse property
+409280~003120~that as a get smaller in fact
+412400~004440~this scales down in frequency
+416840~003040~well this is a general property love
+419880~003039~the Fourier transform namely the fact
+422919~003441~that a a linear scaling a time
+426360~004240~generates the infers linear scaling a frequency
+430600~003910~and the general statement love this time frequency scaling is what
+434510~004470~I show at the top above the transparency namely the equation
+438980~003480~that if we scale the time function in time
+442460~006239~then we apply and infers scaling a frequency
+448699~003261~now her this in fact is probably a result
+451960~003250~that you're already possibly familiar with in
+455210~003870~somewhat of a different context essentially you can think of this
+459080~004960~as an example poor generalization rather
+464040~003659~up the notion that if let's say I A
+467699~005451~had a signal that was recorded on a tape player
+473150~004519~and if I play the tape back and let's say twice the speed which means that I'm
+477669~002091~compressing the time axis
+479760~004500~linearly by a factor of two then in fact what happens is that
+484260~004689~the frequencies that we observe get pushed up by a factor of two
+488949~003121~and effect let me illustrate that
+492070~003560~I have here a glockenspiel
+495630~004990~and anyone who loves a parade certainly knows what I each
+500620~003079~blockage feel as and
+503699~003351~this particular glockenspiel has
+507050~005570~3 eighties separated each by an active there's a middle way
+512620~006349~a high a us and a low a
+518969~003521~and what I've done is to record
+522490~003740~the middle a on a tape
+526230~004930~at seven and a half inches per second and
+531160~003010~what I'd like to demonstrate is that as
+534170~004380~we play that back either a cloister half-speed
+538550~005089~the effective note gets moved down or up by a doctor
+543639~003190~so let me first play the note at
+546829~003151~the speed at which was recorded and so what we'll hear
+549980~003750~is the middle a as i've recorded it and let me just start
+553730~007000~the tape player
+566009~003450~okay let me stop it and hopefully what you heard is the
+569459~003221~same note from the tape recorder as
+572680~003880~the note that I played on the glockenspiel okay well now
+576560~004209~a rewind the tape and we go back to the beginning
+580769~003990~love that portion and
+584759~003281~now if I change the tapes the to
+588040~003940~half the speed so from seven and a half inches per second
+591980~003000~a change the tape speed 233 quarter
+594980~003799~inches per second and now
+598779~004110~when I play the tape back because effect because
+602889~004971~love the inverse relationship between time and frequency scaling we're now
+607860~003729~scaling in time by stretching out we would expect the frequencies to be
+611589~000571~lowered
+612160~003440~by a factor of two we should now expect the
+615600~003570~taped no to be an octave lower
+619170~007000~matching the slower a so let's just play that okay let me stop it
+640290~003710~and again will rewind the tape
+644000~003430~go back to
+647430~003079~the beginning and now will play this at
+650509~003310~twice the speed so I change from three and three-quarters
+653819~005750~to 15 inches per second and now and I play it we would expect that
+659569~007000~to match the upper no and let's just do that Ste
+668300~001990~us
+670290~004200~us okay well
+674490~003960~although thats a result that intuitively probably
+678450~003660~makes considerable sense in fact what that is
+682110~004070~is an illustration love the inverse relationship between
+686180~005430~time scaling frequency scaling and also by the way it was finally my opportunity
+691610~005560~to play the glockenspiel on television okayed now
+697170~003470~in in addition their is another
+700640~003880~very important relationship between the time and frequency domains
+704520~003240~namely what is referred to as a
+707760~003240~duality relationship and
+711000~003990~the duality relationship between time and frequency
+714990~005270~falls out more less directly from
+720260~004960~the equations the analysis and synthesis equations in particular if we look at
+725220~000550~the
+725770~003880~synthesis equation which I repeat here
+729650~004250~and the analysis equation which I repeat below it
+733900~003560~what we observe is dead in fact
+737460~003740~these equations are basically identical
+741200~003690~except for the fact that in the top
+744890~003610~integral we have things as a function of Omega in the bottom integral as a
+748500~001250~function of T
+749750~004240~and there's a factor of 10 ver tu Pai and by the way a minus sign
+753990~004040~well you can look at the algebra
+758030~004080~more carefully at your leisure but especially with this says
+762110~004240~is that if excessive Omega is
+766350~003980~the Fourier transform over type function exit see
+770330~004450~then in fact except Amy
+774780~005360~is very much like the Fourier transform affective Omega
+780140~003680~in fact it's the Fourier transform attacks have minus Omega
+783820~003730~to account for this minus sign and by the way there's just an additional
+787550~000810~factor
+788360~004520~one over 25 so the duality relationship which
+792880~003390~follows from these two equations in fact
+796270~003240~says that if x50
+799510~003680~an ex vivo maker are a4e a transformed pair
+803190~003750~if little accent capital XR Fourier transform pair
+806940~004680~then capital lacks in fact has a $4 EA transform
+811620~004850~which is proportional a little lax turned around well
+816470~004600~this to outdo ality in the continuous time Fourier transform
+821070~004700~is very important it's very useful it by the way is not
+825770~006450~duality that surface in a forty a series because as you recall the 48 series
+832220~003650~begins with a continuous-time function
+835870~004080~and in the frequency domain generates a sequence
+839950~003710~which with just naturally have the proper have
+843660~003010~problems associated with it if we attempted to
+846670~003170~interpreted to ality and we'll see also:
+849840~003640~that in a discrete-time case one of the important differences between
+853480~003130~continuous-time and discrete-time Fourier transforms
+856610~004200~is the fact that in continuous-time we have to our the
+860810~004510~in discrete-time for then the discrete-time Fourier transform we don't
+865320~002420~well
+867740~004370~let's indicate illustrate this with an example
+872110~003760~in here are in fact two examples
+875870~003900~a Fourier transform pairs taken from examples in the text
+879770~003460~to the top one being example
+883230~004190~four-point 11 from the tax and it's a time for action
+887420~004040~which is a sin 0 X over X type a function
+891460~004090~and its Fourier transform
+895550~003030~corresponds to a
+898580~006080~rectangular shape in the frequency domain there's also
+904660~003920~another example in the text the example the preseason this one
+908580~004890~which is example four-point 10 and an example four point 10
+913470~003500~we begin with a rectangle
+916970~003280~and its Fourier transform is love the form
+920250~003860~all a sin x over X function
+924110~003080~so in fact if we look at these to
+927190~003740~examples together what we see is
+930930~003280~the duality very evident in other words
+934210~003450~if we take this time function and
+937660~003990~instead think i've a frequency function that has the same form
+941650~003610~then we simply interchange the rolls a time-frequency
+945260~004070~in the other domains so the fact that these to correspond
+949330~003030~means that these two cars find
+952360~004310~course and in this particular example
+956670~004490~we because it the fact that we picked a symmetric function even function
+961160~005290~in fact the additional twist love the time axis being reversed didn't show up
+966450~004370~in her in duality with this example
+970820~003120~now one thing he says of course is that essentially
+973940~003250~anytime you've calculated
+977190~003240~the 48 transform a one-time function
+980430~003720~then you actually calculate the Fourier transform
+984150~003150~to type functions another one being
+987300~005070~the dual example to the one that you just calculated
+992370~003170~now also somewhat related to do our the
+995540~003680~is what is referred to as parce balls
+999220~004400~relation for the continuous-time Fourier transform
+1003620~003510~and essentially what parts are false relationship says
+1007130~003440~is that as kind of a a summary other
+1010570~003490~it says dead the energy
+1014060~003350~in a time function and the energy
+1017410~003750~in its Fourier transform are proportional the proportionality factor
+1021160~002800~being a factor of two pi
+1023960~004320~it well that summarized here what's meant by the energy
+1028280~004690~is course the ago the magnitude squared effect City
+1032970~003989~and the statement apart the balls relation and is dead
+1036959~003231~that in a brawl the energy and accept T
+1040190~003530~is proportional to this integral which is the energy
+1043720~003200~indexable Megan now
+1046920~004570~although we've incorporated the 4e a series
+1051490~005120~within a framework for the Fourier transform parcels relation
+1056610~003060~needs to be modified slightly for
+1059670~003400~for a series because the fact that periodic signal
+1063070~003370~has an infinite amount of energy and its and essentially
+1066440~004090~that former parcels relationship for the periodic case would say
+1070530~003200~infinity equals infinity which isn't too useful
+1073730~005750~however can be modified so that part's a false relationship for the periodic case
+1079480~003430~says essentially that the energy E
+1082910~004100~in one period other periodic time function
+1087010~005350~in is proportional with this is the proportionality factor
+1092360~003410~proportional to the sum %uh the magnitude squared
+1095770~004180~up the coefficients in other words the energy in one period
+1099950~003650~is proportional to the energy in the sequence
+1103600~006200~that represents the four EA series coefficients
+1109800~003150~now okay there are lots of other properties
+1112950~004360~and there developed in the text in the study guide
+1117310~004990~a number a properties that we want to make particular you so
+1122300~003320~during this lecture and in later lectures
+1125620~003540~are ones that I summarize here and
+1129160~003240~I won't demonstrate the proves but
+1132400~006470~a principally focus on some with the interpretation is the lecture goes on
+1138870~003650~well in the first property that I have listed here's what's referred to as the
+1142520~002240~time shifting property
+1144760~004760~and the time shifting property says if I have a time function
+1149520~003750~with a Fourier transform mexico maker
+1153270~004280~if I shift that time function in time
+1157550~003910~dan that corresponds to multiplying
+1161460~003090~the 48 transformed by this factor
+1164550~004670~now as you examine this factor what you can see is that
+1169220~003240~this factor has magnitude unity
+1172460~003640~and it has a phase which is linear with frequency
+1176100~003170~and is slow %uh minus 20
+1179270~003340~so a statement to remember that will come up
+1182610~003520~many times throughout the cores
+1186130~005350~is that a timeshare after a displacement in time
+1191480~003820~corresponds to linear phase
+1195300~005950~or change in linear phase earlier change in phase and frequency
+1201250~004480~another property in and in fact a pair of properties
+1205730~004570~that will make reference to as we turn our attention toward the end of this
+1210300~001650~lecture to
+1211950~004840~solving differential equations using the Fourier transform
+1216790~004450~is hit was referred to as the differentiation property
+1221240~005480~and its companion which is the integration property
+1226720~003700~the differentiation property says again if we have
+1230420~004320~a time function whose with Fourier transform mexico maker
+1234740~004610~the Fourier transform up the time derivative that
+1239350~004990~is in corresponds to multiplying the Fourier transform
+1244340~003420~by a linear function of frequency so
+1247760~003610~here it's a linear able to change dead
+1251370~004220~that corresponds to differentiation
+1255590~003890~now at first glance what you might think is that
+1259480~003290~the integration property is just the reverse if that if
+1262770~003660~for the differentiation property you multiply by J Omega then
+1266430~004320~for integration you must abide by jail maker and thats almost correct
+1270750~003850~except not quite and the reason for the not quite
+1274600~003950~is that recall that if you differentiate
+1278550~003560~what happens of course is that you lose a constant
+1282110~004200~and if we have a time function thats some fun and energy signal plus a
+1286310~001000~constant
+1287310~003590~differentiating will destroy the constant
+1290900~004550~and integration the immigration property in essence tries to bring that back
+1295450~004180~so the integration property which is the inverse
+1299630~003910~of the differentiation property says that we divide
+1303540~003710~the transformed by J Omega and then
+1307250~005140~if in fact their was a constant added to accept T
+1312390~003070~we have to account for that by inserting an impulse
+1315460~003780~into the Fourier transform and
+1319240~004270~the file property that I want to draw your attention to
+1323510~003440~on this you graph is the linearity property
+1326950~003890~which is very straight forward to demonstrate from
+1330840~003950~the analysis and synthesis equations which simply said is
+1334790~004470~if X 100 maker is the Fourier transform X 1ft
+1339260~004050~and x2 Omega is the Fourier transform X 2ft
+1343310~003730~then the Fourier transform a linear combination is
+1347040~005820~a linear combination love the Fourier transforms
+1352860~004140~now let me emphasize also that these properties for the most part
+1357000~003490~apply both 240 a series and Fourier transforms
+1360490~003980~because in fact and what we've done is to incorporate
+1364470~003390~the forty a series within the
+1367860~003740~framework of the Fourier transform
+1371600~003940~okay now will be using a number of these properties shortly when we turn our
+1375540~001000~attention to
+1376540~004510~near-constant coefficient differential equations however before we do that I'd
+1381050~001200~like to
+1382250~003000~focus on two additional
+1385250~003310~major properties and
+1388560~004210~these are what are referred to as the convolution property and the modulation
+1392770~001160~property
+1393930~003250~and in fact the convolution property as I'm about
+1397180~003480~to introduces forms the
+1400660~003350~mathematical and conceptual basis for
+1404010~004500~the whole notion of filtering which in fact will be
+1408510~003840~a topic by itself in a set of lectures and
+1412350~004470~and in fact is a chapter by itself in the textbook
+1416820~003580~similarly what i'll refer to as the modulation property
+1420400~003080~again well occupy its own set
+1423480~005260~have lectures as we go through this scores and in fact has its own
+1428740~003720~a chapter in the textbook
+1432460~006290~let me in just indicate what the convolution property is
+1438750~003530~and and what the convolution property
+1442280~006380~tells us is that
+1448660~003980~the 48 transform of the convolution
+1452640~003830~a two-time functions is the product
+1456470~003480~all therefore yea transforms
+1459950~003000~so it says for example dead
+1462950~004630~if I have a linear time-invariant system
+1467580~004930~and in I have an input exits the an impulse response HFT
+1472510~003110~and the output of course being the convolution
+1475620~005500~then in fact if I look at this in the frequency domain
+1481120~003060~the Fourier transform up the output
+1484180~003730~is the for EA transform the input
+1487910~005550~times the Fourier transform the impulse response
+1493460~003450~now you can demonstrate this property
+1496910~004260~algebraically by essentially taking the convolution integral
+1501170~003410~and applying to 48 transforming doing the appropriate
+1504580~004120~in a changing the order integration et cetera
+1508700~003960~but who what I'd like to draw your attention to is a
+1512660~004210~somewhat more intuitive interpretation of the property
+1516870~003420~and the intuitive interpretations stems from
+1520290~005200~the relationship between the Fourier transform at the impulse response
+1525490~003650~and what we refer to as the frequency response
+1529140~003010~now recall dead wanna have
+1532150~005050~the things that lettuce to use complex exponentials as building blocks
+1537200~004240~was the fact that there I can functions linear time-invariant systems in other
+1541440~001070~words
+1542510~003380~if we have linear time-invariant system
+1545890~003230~and I have an input which is a complex exponential
+1549120~004230~the output is a complex exponential the same frequency
+1553350~004470~multiplied by what we call the frequency response
+1557820~004690~and in fact the expression for the frequency response
+1562510~005520~is identical to the expression for the four EA transform the impulse response
+1568030~003260~in other words the frequency response is
+1571290~004750~the Fourier transform of the impulse response
+1576040~003760~now in that context how can we
+1579800~003680~interpret the convolution property well
+1583480~004550~remember what I said at the beginning the lecture 1 I've pointed
+1588030~003140~to the synthesis equation and I said in
+1591170~003770~in essence the synthesis equation tells us
+1594940~006250~how to decompose x50 as a linear combination a complex exponentials
+1601190~004120~what are the complex amplitudes are those complex exponentials
+1605310~003680~well interns love our notation year
+1608990~003300~the complex amplitude of those complex exponentials
+1612290~005740~is Xserve Omega or proportional taxable make in particular taxable make a deal
+1618030~000620~maker
+1618650~003990~and then a factor two-part well
+1622640~005300~as this signal goes through this linear time-invariant system
+1627940~003450~what happens to each of those exponentials is
+1631390~004140~it each one gets multiplied by the frequency response
+1635530~003000~at The Associated frequency
+1638530~003240~what comes out is the amplitude
+1641770~003710~all the complex exponentials that are used
+1645480~003430~to bill the output
+1648910~004150~so in fact the convolution property
+1653060~003250~simply is telling us
+1656310~003740~that interns have a decomposition the signal
+1660050~004060~enters a complex exponentials as we push that signal through linear
+1664110~002260~time-invariant system
+1666370~004160~were separately modifying with the frequency response were multiplying
+1670530~003590~by the frequency response the amplitudes
+1674120~004059~love the exponential comp phones used to build the input
+1678179~003071~and that song intern is
+1681250~005550~the decomposition of the output in terms of complex exponentials
+1686800~005260~now and I I understand that kinda going through that involves
+1692060~003930~a little bit of sorting out and I strongly encourage you
+1695990~005060~to try to understand and interpret the convolution property
+1701050~003869~in knows conceptual terms rather than simply by
+1704919~003911~applying the mathematics to the convolution integral and seeing that
+1708830~004630~terms match up on both sides
+1713460~004140~now as i indicated the convolution property
+1717600~004250~forms the basis for what's referred to as filtering
+1721850~004530~and this is a topic that will be treating a
+1726380~003130~considerable amount of detail and after
+1729510~005000~we've also gone through a discussion love the discrete-time Fourier transform
+1734510~003360~in the next several lectures however what I'd like to do is just
+1737870~003080~just indicate now a little bit love
+1740950~003100~the conceptual ideas involve
+1744050~005270~essentially conceptually what filtering as its
+1749320~004240~typically referred to corresponds to
+1753560~003240~is modifying separately
+1756800~003540~the individual frequency components in a signal
+1760340~004800~the convolution property told us that if we
+1765140~004279~look at the individual frequency comp points they get multiplied by the
+1769419~005041~frequency response and so what that says is that we can amplify or it anyway
+1774460~005420~any of those comp own it separately using a linear time-invariant system
+1779880~003180~for example what I've illustrated here is
+1783060~003849~the frequency response what is commonly referred to
+1786909~005691~as and ideal Lopez filter what an ideal 0 pass filter does
+1792600~003319~is to pass exactly
+1795919~003431~frequencies in one frequency range
+1799350~005309~and eliminate totally frequencies outside that range
+1804659~004351~another filter which is not so ideal might for example
+1809010~003570~attenuate sit com phone it's in this band but not
+1812580~006599~I rather attenuate conference in this band but not totally eliminate them
+1819179~003021~now interns a filtering we can think back
+1822200~003670~to the differentiation property and in fact interpreter
+1825870~003700~differentiation or differentiator as a filter
+1829570~003460~recall that the differentiation property said
+1833030~006250~that the Fourier transform all the differentiated signal
+1839280~003869~is the for a transformer the original signal multiplied by J Omega
+1843149~003061~so what that says then
+1846210~005250~is dead if we have a differentiator opened the frequency response to that
+1851460~005240~is J Omega in other words the Fourier transform of the output is Jay Omega
+1856700~003729~times the Fourier transform the input
+1860429~003851~and so the frequency response a differentiator
+1864280~004070~looks like this and turns its magnitude and what it does
+1868350~004020~of course is it amplifies high frequencies
+1872370~004910~and attenuates low frequencies
+1877280~005129~well let me just to kinda cement summer these ideas
+1882409~004091~illustrate them in a context 0
+1886500~003480~one kind of signal namely signal which in fact
+1889980~004210~is the spatial signal rather than a time signal
+1894190~005360~and this also gives me an opportunity to introduce you
+1899550~003900~to our colleague JBJ for EA's
+1903450~004260~so if we could look at our colleague mister four EA
+1907710~003380~who by the way is on
+1911090~003930~not only person who had tremendously brilliant insights
+1915020~003190~and his insights in fact have led to
+1918210~004030~the developments really for the foundation the developments that
+1922240~005669~is the basis for this course he was also a very interesting fascinating person
+1927909~003270~and there's a certain amount of historical discussion
+1931179~006240~about for EA and his background which you might enjoy reading in the text
+1937419~003401~in any case what you're looking at a course is a signal
+1940820~003490~and the signal is a spatial signal and
+1944310~004060~it has high frequencies and low frequencies high frequencies
+1948370~003930~corresponding to things that are varying rapidly
+1952300~003170~spatially and low frequencies barings
+1955470~003199~very slowly spatially it so
+1958669~003451~for example we could low-pass filter
+1962120~003400~this picture simply by asking
+1965520~004220~the video crew if they could slightly defocus
+1969740~005700~and what you see as the picture is the focus if you can hold it there
+1975440~003110~is dead we've lost edges which
+1978550~005060~is the rapid variation and what we've retained is the broader
+1983610~003210~slow variation and now let's take out
+1986820~003410~the d focusing low-pass filter and go back
+1990230~006750~to a focused image
+1996980~003210~okay now what
+2000190~003350~and we can also consider is what would happen if we look
+2003540~003849~at the differentiated image and their are several ways that we can think about
+2007389~001141~this
+2008530~004490~one is that a differentiator of course the output of a differentiator
+2013020~004710~is larger where the discontinuity
+2017730~003010~or where the variation is faster
+2020740~003080~and so we would expect the edges
+2023820~004050~to be enhanced if in fact we differentiated the image
+2027870~003690~or if we interpret differentiation in the context
+2031560~004070~love our filter then what we're saying
+2035630~003880~if hey what we're saying is that in effect
+2039510~003940~what's happening is that the differentiator is
+2043450~003090~accentuating the high frequencies
+2046540~004680~because if the frequency shape the differentiator now recall that this all
+2051220~003030~kinda fits together is a nice package
+2054250~004090~be expected to actively the differentiation will enhance ages
+2058340~004690~when we talked about square waves and we so I have a for a series built up a
+2063030~001050~square wave
+2064080~003200~we saw that it was the high frequencies
+2067280~004310~that were required in order to build up the sharp
+2071590~004980~edges and so either viewed as a filter or viewed intuitively
+2076570~004380~we would expect that the differentiated image would in fact
+2080950~005699~get would in fact it anyway the slowly varying background and amplify
+2086649~004161~the rapidly varying ages so let's look again at
+2090810~004079~our original image just to remind you love the fact that there are edges of
+2094889~001131~course and their
+2096020~003750~is more slowly varying backgrounds
+2099770~003270~and now let's look at the
+2103040~003080~result love passing that through
+2106120~003360~a differentiator and as i think is
+2109480~003570~very evident in that in the resulting image
+2113050~003550~clearly is the edges that a retained and
+2116600~003170~the slow back to slower background variations
+2119770~007000~are destroyed which is consistent with everything we've said
+2126970~003670~okay now i've emphasized the her will be returning
+2130640~003210~to a much broader discussion a filtering at
+2133850~004630~a later point in the cores right now like to comment on another
+2138480~004350~property which here is also as i indicated a topic I've
+2142830~003240~in its own right and which really is the dual
+2146070~004970~property to the convolution property and in fact could be argued directly from
+2151040~002630~duality
+2153670~005410~and that is what's referred to as the modulation property
+2159080~003930~now the convolution property told us that
+2163010~006250~if we convolved in the time domain we multiply in the frequency domain
+2169260~003140~and we know the time and frequency domains are interchangeable because it
+2172400~000850~to our the
+2173250~003010~so what that would suggest is dead
+2176260~003560~if we multiply in the time domain
+2179820~003580~that would correspond to convolution in the frequency domain
+2183400~004360~and in fact head that is exactly what the modulation property is
+2187760~003480~I have a summarized here that if we multiply
+2191240~003210~a time function by another time function then
+2194450~003720~in the frequency domain week involved
+2198170~003730~whereas the convolution property is just the duel at that
+2201900~004110~namely convolved being in the time domain corresponds to
+2206010~003330~multiplication in the frequency domain
+2209340~005000~the convolution property is the basis as i indicated for filtering
+2214340~004440~the modulation property as I've summarized it here
+2218780~004380~in fact is the entire basis
+2223160~004050~for amplitude modulation systems issues
+2227210~003700~almost universally in communications and wait
+2230910~004740~the modulation property is we'll see when we explored in more detail
+2235650~005060~tells us is that if we have a signal with a certain spectrum
+2240710~003230~and we multiply by a sinusoidal
+2243940~004800~signal whose for EA transformers said impulses
+2248740~004580~then in a frequency-domain week involved and that corresponds
+2253320~003720~to taking the original spectrum and translating it
+2257040~003110~shifting it in frequency up to
+2260150~003400~the frequency love the carrier namely
+2263550~003140~the sinusoidal signal and as I said will
+2266690~005610~come to that in much more detail in a number of lectures
+2272300~003280~okay now we've seen a number of properties
+2275580~004040~and I indicated sometime earlier when we talked about
+2279620~005290~and differential equations that in fact it's the properties are the 48 transform
+2284910~003540~that providers with a very useful
+2288450~005780~an important mechanism for solving linear constant coefficient differential
+2294230~001480~equations
+2295710~003090~and but I'd like to do now
+2298800~004200~is illustrate the procedure the basis for that
+2303000~003850~and I think what we'll do is illustrated simply in the context of several
+2306850~003360~examples
+2310210~003690~okay well in what i've indicated is
+2313900~003220~a system
+2317120~004020~with her a an impulse response HFT
+2321140~005060~or frequency response teachable nigga and of course we know that in the time
+2326200~002410~domain it's just right to convolution
+2328610~005530~in the frequency domain its described through multiplication
+2334140~003020~and I in essence
+2337160~004550~am assuming that we're talking about a linear time-invariant system
+2341710~004830~and we're also going to assume that it's characterized by a win here comes the
+2346540~002530~coefficient differential equation
+2349070~003480~where we're going to oppose the condition
+2352550~003330~that its causal linear and time-invariant
+2355880~003230~or equivalent Lee that the initial condition conditions
+2359110~003570~are consistent with initial rest
+2362680~003510~and it's because it the fact that we're assuming
+2366190~003150~that is a linear time-invariant system that
+2369340~005050~we can describe it in the frequency domain through the convolution property
+2374390~004860~and we can use the properties love the forty a transfer
+2379250~004950~so let's take as our example a first-order differential equation
+2384200~005730~as I indicate here so the derivative the output plus eight times the output is
+2389930~001980~equal to the input
+2391910~005470~and now we can use the differentiation property
+2397380~003960~if we for EA transform mystic entire expression
+2401340~003990~the differentiation property tells us that
+2405330~003330~the forty a transformer the derivative of the output
+2408660~006060~is the for a transformer the output multiplied by J Omega
+2414720~004090~and Lenny arity well let us
+2418810~004320~right the Fourier transform love this as eight times while Omega
+2423130~003390~and since these are added together and since we have the linear
+2426520~003140~linearity property these are added together
+2429660~005240~and XOM Omega is and the Fourier transform affect safety
+2434900~005610~so what we've used is the differentiation property
+2440510~006680~and reviews the when the arity property
+2447190~004150~right now weekend solve this equation
+2451340~003890~for y Omega the forty a transformer the output
+2455230~003690~in terms of Xserve Omega the Fourier transform
+2458920~003880~the input and a simple algebraic step
+2462800~005420~gets s to this expression so the for a chance for the output is one over
+2468220~001430~Jamaica plus a
+2469650~004550~ties the forty a transformer the input and I just simply repeated
+2474200~004790~that equation appear
+2478990~003450~now so far this is algebra
+2482440~005400~and and question is now how do we interpret this
+2487840~004870~well we know that the for a transformer the output
+2492710~004970~is the forty a transformer the input times the Fourier transform
+2497680~004460~are the impulse response to the system namely the frequency response
+2502140~003130~so in fact if we think love
+2505270~004240~a chip tanh Omega as a Fourier transform pair
+2509510~003500~then is the convolution property that lets us
+2513010~003220~quaid this term with
+2516230~003720~H Omega so here
+2519950~005540~were using the convolution property
+2525490~004410~and so we know what the 48 transform
+2529900~003140~or the impulse responses they only one over
+2533040~003830~J Omega plus a now
+2536870~003890~in we may have for example what is in our problem
+2540760~005320~instead of getting the frequency response to get the impulse response
+2546080~004540~and there are a variety of ways that we can't do this we can attempt to go
+2550620~003360~through the inverse Fourier transform expression
+2553980~004630~but in fact one of the most useful ways is their formally called
+2558610~003300~the inspection method informally
+2561910~004600~its called if you work that out going one way
+2566510~003220~then you ought to remember the answer so that you know how to get back
+2569730~003100~method so what that says is
+2572830~005440~remember dead we worked an example and in fact I showed you the example
+2578270~003170~earlier in the lecture that
+2581440~003310~the Fourier transform a view to the minus eighty times a step
+2584750~003070~is one over J Omega plus a
+2587820~005430~so what is the inverse Fourier transform a 1-over J Omega plus a
+2593250~003840~well ants need to the minus eighty
+2597090~003100~times unit step
+2600190~006340~and that's just simply remembering in essence this particular transformed pier
+2606530~004370~well I've drawn graphically
+2610900~005290~the magnitude of the Fourier transform here
+2616190~005210~and below it we have the impulse response
+2621400~005320~the apostle spines is as I just indicated either -80
+2626720~004710~times you see now let's go back up and look at
+2631430~005130~the magnitude over the frequency response
+2636560~003770~and given just a little bit of discussion that we had
+2640330~004640~previously about filtering you should be able to
+2644970~004380~in for something about the filtering characteristics
+2649350~004650~love this simple first-order differential equation
+2654000~003950~in particular if you look at that frequency response
+2657950~004890~the frequency response falls off with frequency and so it tends to do
+2662840~003470~is attenuate high frequencies and
+2666310~003270~retain low frequencies so in fact
+2669580~003530~you could think of the defocus saying that we did on
+2673110~004610~the imager for EA you could think if that approximately as
+2677720~003210~similar to the kind of filtering action that you would get
+2680930~005970~by passing a signal through a first-order differential equation
+2686900~003240~okay now just illustrate in one
+2690140~005670~additional step in both evaluating inverse transforms and using Fourier
+2695810~001880~transform properties
+2697690~003990~to solve a near constant coefficient differential equations
+2701680~003600~let's take this same example and rather
+2705280~003740~then finding the impulse response let's find the response
+2709020~003010~to another exponential input
+2712030~003870~now we could of course do that using the convolution integral we just got the
+2715900~002199~impulse response so we can put that
+2718099~004141~through the convolution integral to get the response to this input
+2722240~005960~but let's do it instead by going back to the differential equation
+2728200~004879~and so here i'm taking a differential equation
+2733079~003510~all choose just to have some numbers to work with
+2736589~003391~a equal to 2 and now
+2739980~004270~I'll choose an exponential on the right hand side either minus tee times you
+2744250~002079~have t
+2746329~005681~and again we for EA transform the equation
+2752010~003010~and we can remember
+2755020~004420~this particular Fourier transform pair it's just the one who worked out
+2759440~004300~previously now with a equal to 1 clearly we're getting a lot of mileage out of
+2763740~002000~that example
+2765740~005819~and now if we wanted determine what the output why if he is
+2771559~003510~we can't do that by solving for Y Omega
+2775069~003351~and then generating the inverse Fourier transform
+2778420~003380~well what's all this algebraically for y Omega
+2781800~003970~and and that gets us to this expression
+2785770~005360~and this is not a Fourier transform that we've worked out before
+2791130~003000~and this is have the second part to the
+2794130~005590~inspection procedure what we have is a forty a transform which is a product
+2799720~003520~of two turns each of which we can recognize
+2803240~005170~and what we can consider doing is expanding that out
+2808410~003980~in a partial fraction expansion namely as a summer turns
+2812390~004120~because the lady arity property associated with the 48 transform
+2816510~004440~the inverse transform is then the song the inverse transform movie to those
+2820950~002700~terms
+2823650~004679~okay so if we expand this out in a partial fraction expansion
+2828329~003401~and you can just verify that
+2831730~004020~if you add these two together you get back to where we started
+2835750~004250~we now have the sum of two terms
+2840000~005190~and if we now recognized by inspection
+2845190~004889~the inverse Fourier transform love this we see that it simply
+2850079~003941~minus either -2 TV times the unit step
+2854020~004589~this one is plus either the minus the times a unit step
+2858609~003291~and so in fact it's the summer these two terms
+2861900~004510~which are the inverse transforms up the
+2866410~003899~individual turns in a partial fraction expansion
+2870309~006060~that then give us the for EA transform
+2876369~003391~all y ft
+2879760~003329~her I'm sorry for her rather the output
+2883089~004220~so this is a gypsy that this is why if the
+2887309~003211~which is the summer these two exponentials and this
+2890520~003470~is the inverse Fourier transform
+2893990~006329~love y Omega as we calculated it previously
+2900319~004151~okay well hopefully you're beginning to get some sense now
+2904470~003050~love how powerful and also beautiful
+2907520~003770~the 48 transform is we've seen already that
+2911290~003079~a glimpse or how it plays a role in
+2914369~004391~filtering modulation how its properties helpless with linear constant
+2918760~004440~coefficient differential equations et cetera
+2923200~003030~what we will do
+2926230~003270~beginning with the next lecture is develop
+2929500~004440~a similar set of tools for the discrete-time case and there are
+2933940~004590~some very strong similarities to what we've done a continuous-time also some
+2938530~001970~very important differences
+2940500~003530~and then after we have the continuous-time and discrete-time
+2944030~002569~Fourier transforms
+2946599~003980~will then see how the concepts
+2950579~003181~involved in the properties involved leads to
+2953760~003680~very important powerful notions love filtering
+2957440~003379~modulation sampling and other
+2960819~001981~signal processing ideas thank you

@@ -1,0 +1,3617 @@
+1
+00:00:00,040 --> 00:00:03,490 
+the following content is provided under
+a Creative Commons license
+
+2
+00:00:03,490 --> 00:00:07,129 
+your support will help MIT
+OpenCourseWare continue to offer
+
+3
+00:00:07,129 --> 00:00:10,580 
+high-quality educational resources for
+free
+
+4
+00:00:10,580 --> 00:00:14,360 
+to make a donation or view additional
+materials from hundreds of them IT
+
+5
+00:00:14,360 --> 00:00:15,030 
+courses
+
+6
+00:00:15,030 --> 00:00:18,110 
+visit MIT OpenCourseWare at 0 CW
+
+7
+00:00:18,110 --> 00:00:25,110 
+that MIT that EDU ha
+
+8
+00:00:35,420 --> 00:00:38,370 
+in
+
+9
+00:00:38,370 --> 00:00:40,370 
+in
+
+10
+00:00:40,370 --> 00:00:44,790 
+the norm
+
+11
+00:00:44,790 --> 00:00:51,140 
+are
+
+12
+00:00:51,140 --> 00:00:58,140 
+the
+
+13
+00:00:60,230 --> 00:01:03,360 
+in the last lecture we discussed
+sinusoidal
+
+14
+00:01:03,360 --> 00:01:06,830 
+and real in complex exponential signals
+both
+
+15
+00:01:06,830 --> 00:01:12,240 
+for continuous-time and discrete-time no
+signals will form very
+
+16
+00:01:12,240 --> 00:01:15,760 
+important building blocks when we
+
+17
+00:01:15,760 --> 00:01:20,740 
+return to the discussion love Fourier
+analysis and later lectured
+
+18
+00:01:20,740 --> 00:01:24,840 
+in today's lecture I'd like to introduce
+
+19
+00:01:24,840 --> 00:01:27,840 
+some additional basic signals
+specifically
+
+20
+00:01:27,840 --> 00:01:32,790 
+the unit step and unit impulse signal
+let's begin
+
+21
+00:01:32,790 --> 00:01:36,190 
+with discrete-time and the discrete-time
+units that
+
+22
+00:01:36,190 --> 00:01:40,479 
+in unit in polls the discrete-time unit
+step
+
+23
+00:01:40,479 --> 00:01:45,800 
+is a sequence is a indicated here
+specifically
+
+24
+00:01:45,800 --> 00:01:49,580 
+a sequence which is zero for
+
+25
+00:01:49,580 --> 00:01:53,920 
+negative values if its argument and
+equal to 1
+
+26
+00:01:53,920 --> 00:01:57,710 
+for positive values up its argument and
+0
+
+27
+00:01:57,710 --> 00:02:00,910 
+so mathematically
+
+28
+00:02:00,910 --> 00:02:04,630 
+the unit step sequence is one
+
+29
+00:02:04,630 --> 00:02:09,000 
+for in greater than or equal to 0 and 0
+
+30
+00:02:09,000 --> 00:02:15,239 
+for and less than zero the unit impulse
+sequence
+
+31
+00:02:15,239 --> 00:02:19,000 
+likewise is defined in a straightforward
+way
+
+32
+00:02:19,000 --> 00:02:22,430 
+the union Paul sequence is a sequence
+which
+
+33
+00:02:22,430 --> 00:02:27,230 
+is 0 for all values if its argument
+
+34
+00:02:27,230 --> 00:02:31,860 
+except for an equal 0 so
+
+35
+00:02:31,860 --> 00:02:36,790 
+the unit step in unit impulse sequence
+are defined in a straightforward way
+
+36
+00:02:36,790 --> 00:02:41,000 
+mathematically and in fact in they are
+also related
+
+37
+00:02:41,000 --> 00:02:44,200 
+to each other in a straightforward way
+mathematically
+
+38
+00:02:44,200 --> 00:02:47,480 
+specifically the unit in paul's
+
+39
+00:02:47,480 --> 00:02:50,660 
+can be related to the unit step
+
+40
+00:02:50,660 --> 00:02:54,160 
+through the relationship that i've
+indicated here
+
+41
+00:02:54,160 --> 00:02:57,870 
+Beltre van the unit impulse
+
+42
+00:02:57,870 --> 00:03:02,140 
+equal to units that minus the unit
+stepped away
+
+43
+00:03:02,140 --> 00:03:05,709 
+so mathematically the relationship
+
+44
+00:03:05,709 --> 00:03:09,760 
+is what is referred to as a first
+
+45
+00:03:09,760 --> 00:03:14,200 
+difference
+
+46
+00:03:14,200 --> 00:03:17,880 
+and to see the validity love this
+expression
+
+47
+00:03:17,880 --> 00:03:21,570 
+we can simply looking at the unit step
+
+48
+00:03:21,570 --> 00:03:24,990 
+and it's the late version so
+
+49
+00:03:24,990 --> 00:03:28,640 
+here we show the unit step you then
+
+50
+00:03:28,640 --> 00:03:32,230 
+here we show the unit step delayed
+
+51
+00:03:32,230 --> 00:03:37,330 
+by one so it 0 for and less than or
+equal to 0
+
+52
+00:03:37,330 --> 00:03:41,030 
+and clearly if we subtract that the late
+step
+
+53
+00:03:41,030 --> 00:03:47,200 
+from the original unit step everything
+subtract out except at
+
+54
+00:03:47,200 --> 00:03:51,700 
+an equal 0 which at which point the
+difference is equal to 1
+
+55
+00:03:51,700 --> 00:03:55,540 
+and so the difference between you have
+an
+
+56
+00:03:55,540 --> 00:03:59,260 
+and you then -1 is simply the unit
+
+57
+00:03:59,260 --> 00:04:04,000 
+impulse sometimes incidently also
+referred to as the unit sample
+
+58
+00:04:04,000 --> 00:04:07,090 
+now
+
+59
+00:04:07,090 --> 00:04:10,340 
+in a similar way we can
+
+60
+00:04:10,340 --> 00:04:14,710 
+express the unit step in terms of the
+unit impulse and there are several ways
+
+61
+00:04:14,710 --> 00:04:15,750 
+of doing this
+
+62
+00:04:15,750 --> 00:04:21,530 
+one-way is through a relationship
+referred to as a running start
+
+63
+00:04:21,530 --> 00:04:24,720 
+what I mean by that is
+
+64
+00:04:24,720 --> 00:04:29,130 
+the following expression: if we
+
+65
+00:04:29,130 --> 00:04:32,160 
+think love morning
+
+66
+00:04:32,160 --> 00:04:36,080 
+some from minus infinity
+
+67
+00:04:36,080 --> 00:04:39,100 
+up to some bad UN
+
+68
+00:04:39,100 --> 00:04:42,290 
+all a unit in paul's
+
+69
+00:04:42,290 --> 00:04:46,300 
+our unit sample then this running some
+
+70
+00:04:46,300 --> 00:04:49,780 
+in fact is equal to the unit step
+
+71
+00:04:49,780 --> 00:04:52,810 
+and we can see that in a
+
+72
+00:04:52,810 --> 00:04:56,670 
+fairly straightforward way by simply
+observing
+
+73
+00:04:56,670 --> 00:05:02,290 
+dead in this expression when and is less
+than 0
+
+74
+00:05:02,290 --> 00:05:05,730 
+is nothing accumulated in the some
+
+75
+00:05:05,730 --> 00:05:09,280 
+and we can see that graphically as
+they've shown here
+
+76
+00:05:09,280 --> 00:05:13,830 
+so for and less than zero we accumulate
+no turns into some
+
+77
+00:05:13,830 --> 00:05:16,870 
+whereas for an greater than
+
+78
+00:05:16,870 --> 00:05:21,560 
+0 we cumulate one non-zero value in the
+some
+
+79
+00:05:21,560 --> 00:05:25,300 
+namely the value of the unit sample at
+an equal 0
+
+80
+00:05:25,300 --> 00:05:28,680 
+so we have then
+
+81
+00:05:28,680 --> 00:05:33,760 
+one expression for the relationship
+between the unit step in the unit sample
+
+82
+00:05:33,760 --> 00:05:38,400 
+we can also develop another relationship
+
+83
+00:05:38,400 --> 00:05:41,640 
+by observing
+
+84
+00:05:41,640 --> 00:05:45,540 
+in essence there if we look at the unit
+step sequence
+
+85
+00:05:45,540 --> 00:05:49,190 
+as I've returned to hear weekend
+
+86
+00:05:49,190 --> 00:05:52,760 
+in effect think the unit step sequence
+
+87
+00:05:52,760 --> 00:05:56,160 
+as a six-session love unit
+
+88
+00:05:56,160 --> 00:06:01,080 
+impulses one following another so
+
+89
+00:06:01,080 --> 00:06:06,950 
+if we consider
+
+90
+00:06:06,950 --> 00:06:11,140 
+forming Assam
+
+91
+00:06:11,140 --> 00:06:16,390 
+all the lady impulses as i indicate
+mathematically here
+
+92
+00:06:16,390 --> 00:06:19,419 
+and as i indicate graphically down below
+
+93
+00:06:19,419 --> 00:06:23,160 
+we have an impulse here at an equal 0
+
+94
+00:06:23,160 --> 00:06:26,450 
+and an impulse here and any calls one
+
+95
+00:06:26,450 --> 00:06:29,560 
+and impose here at any cost to et cetera
+
+96
+00:06:29,560 --> 00:06:33,360 
+and when we continue to add these up
+
+97
+00:06:33,360 --> 00:06:36,970 
+then what they add up to is the
+
+98
+00:06:36,970 --> 00:06:41,570 
+unit step sequence and so mathematically
+then
+
+99
+00:06:41,570 --> 00:06:45,729 
+that would correspond to and im polls
+that an equal 0
+
+100
+00:06:45,729 --> 00:06:49,260 
+plus an impulse to 10 equals 1 was an
+impulse
+
+101
+00:06:49,260 --> 00:06:54,050 
+at any calls to et cetera now in this
+
+102
+00:06:54,050 --> 00:06:57,220 
+in continuous-time we have a very
+
+103
+00:06:57,220 --> 00:07:00,860 
+more or less similar situation we
+
+104
+00:07:00,860 --> 00:07:03,919 
+will find it equally useful to talk
+about a
+
+105
+00:07:03,919 --> 00:07:07,380 
+unit step continuous-time signal and
+
+106
+00:07:07,380 --> 00:07:11,440 
+the unit impulse continues time signal
+let's begin
+
+107
+00:07:11,440 --> 00:07:17,150 
+with the continuous-time unit step be
+
+108
+00:07:17,150 --> 00:07:21,190 
+continuous-time unit step function is
+graphically
+
+109
+00:07:21,190 --> 00:07:26,310 
+indicated as I've shown here it's a time
+function
+
+110
+00:07:26,310 --> 00:07:30,280 
+which is 0 party less than zero
+
+111
+00:07:30,280 --> 00:07:34,000 
+and it's one for T greater than 0
+
+112
+00:07:34,000 --> 00:07:37,540 
+and so mathematically what it
+corresponds to
+
+113
+00:07:37,540 --> 00:07:41,040 
+is you if he defined as
+
+114
+00:07:41,040 --> 00:07:44,690 
+a time function which is zero for T less
+than zero
+
+115
+00:07:44,690 --> 00:07:48,240 
+one pretty greater than 0
+
+116
+00:07:48,240 --> 00:07:51,640 
+now an obvious question is what happens
+
+117
+00:07:51,640 --> 00:07:57,520 
+at Evil zero and the difficulty here
+which is not a difficulty that arises in
+
+118
+00:07:57,520 --> 00:07:58,420 
+the discrete-time
+
+119
+00:07:58,420 --> 00:08:01,490 
+case is that act equal 0
+
+120
+00:08:01,490 --> 00:08:04,910 
+the unit step function is in fact
+discontinuous
+
+121
+00:08:04,910 --> 00:08:08,470 
+which generates a variety mathematical
+problems
+
+122
+00:08:08,470 --> 00:08:11,830 
+and one can define the units that
+
+123
+00:08:11,830 --> 00:08:15,400 
+at equal zero in a variety ways
+
+124
+00:08:15,400 --> 00:08:19,020 
+but the essential point is that the unit
+step function
+
+125
+00:08:19,020 --> 00:08:22,450 
+is discontinuous so in effect
+
+126
+00:08:22,450 --> 00:08:26,270 
+what we need to do is think if the unit
+step function
+
+127
+00:08:26,270 --> 00:08:29,960 
+as the limit all a continuous function
+
+128
+00:08:29,960 --> 00:08:34,579 
+and so we can define a function which I
+specify here
+
+129
+00:08:34,579 --> 00:08:38,490 
+as use a delta see
+
+130
+00:08:38,490 --> 00:08:42,030 
+and used to build the T is a time
+function
+
+131
+00:08:42,030 --> 00:08:45,780 
+which is 0:40 less than zero
+
+132
+00:08:45,780 --> 00:08:49,620 
+linearly increases to time Delta
+
+133
+00:08:49,620 --> 00:08:53,250 
+which would correspond to this
+breakpoint and then
+
+134
+00:08:53,250 --> 00:08:56,610 
+one following that and so
+
+135
+00:08:56,610 --> 00:09:00,870 
+we can think then love the discontinuous
+units step
+
+136
+00:09:00,870 --> 00:09:04,470 
+as the limiting form use a delta at:
+
+137
+00:09:04,470 --> 00:09:08,350 
+as Delta goes to zero
+
+138
+00:09:08,350 --> 00:09:11,760 
+now we also wanted to find a
+
+139
+00:09:11,760 --> 00:09:16,750 
+unit impulse function and it had a
+fairly straightforward definition
+
+140
+00:09:16,750 --> 00:09:20,000 
+in discrete-time in continuous time
+things get
+
+141
+00:09:20,000 --> 00:09:24,400 
+slightly more difficult and to motivate
+the definition
+
+142
+00:09:24,400 --> 00:09:28,520 
+let me return to the discrete-time
+definition
+
+143
+00:09:28,520 --> 00:09:32,270 
+all or the rather the discrete-time
+relationship between
+
+144
+00:09:32,270 --> 00:09:37,010 
+the unit step and the unit impulse
+function
+
+145
+00:09:37,010 --> 00:09:40,339 
+in discrete-time we saw
+
+146
+00:09:40,339 --> 00:09:43,890 
+dead the unit impulse function
+
+147
+00:09:43,890 --> 00:09:47,200 
+is the first difference all
+
+148
+00:09:47,200 --> 00:09:50,800 
+the unit step function
+
+149
+00:09:50,800 --> 00:09:54,690 
+well similarly in continuous-time
+
+150
+00:09:54,690 --> 00:09:58,060 
+we can talk about and impulse function
+
+151
+00:09:58,060 --> 00:10:01,650 
+which is the first derivative love
+
+152
+00:10:01,650 --> 00:10:05,030 
+a unit step function
+
+153
+00:10:05,030 --> 00:10:08,630 
+so the unit impulse as we wanted to find
+it
+
+154
+00:10:08,630 --> 00:10:11,890 
+is the derivative of the units that
+
+155
+00:10:11,890 --> 00:10:15,530 
+course we just finished discussing the
+fact that
+
+156
+00:10:15,530 --> 00:10:21,699 
+the unit step function is in fact
+discontinuous it equals 0
+
+157
+00:10:21,699 --> 00:10:25,970 
+but we can't think love its derivative
+as related
+
+158
+00:10:25,970 --> 00:10:29,839 
+to this approximation to the units there
+
+159
+00:10:29,839 --> 00:10:33,060 
+and specifically we will think love
+
+160
+00:10:33,060 --> 00:10:36,400 
+the continuous-time in polls as
+
+161
+00:10:36,400 --> 00:10:40,100 
+the derivative %uh use a belt 50
+
+162
+00:10:40,100 --> 00:10:43,250 
+as Delta goes to zero so
+
+163
+00:10:43,250 --> 00:10:47,240 
+to define the unit in polls we think
+I've the derivative
+
+164
+00:10:47,240 --> 00:10:50,579 
+love this approximation to the unit step
+
+165
+00:10:50,579 --> 00:10:55,390 
+and then observe what happens as Delta
+goes to zero
+
+166
+00:10:55,390 --> 00:10:59,040 
+we have then the definition love
+
+167
+00:10:59,040 --> 00:11:04,260 
+the unit impulse function
+
+168
+00:11:04,260 --> 00:11:07,449 
+more or less formally to find as
+
+169
+00:11:07,449 --> 00:11:11,030 
+the first derivative of the units step
+
+170
+00:11:11,030 --> 00:11:15,910 
+or thought I love as the limiting form
+
+171
+00:11:15,910 --> 00:11:19,120 
+love the derivative love
+
+172
+00:11:19,120 --> 00:11:22,370 
+the approximation to the unit step
+
+173
+00:11:22,370 --> 00:11:26,010 
+in the limit as Delta the
+
+174
+00:11:26,010 --> 00:11:32,510 
+the duration love the discontinuity goes
+to zero
+
+175
+00:11:32,510 --> 00:11:36,590 
+well let's look at that if we
+
+176
+00:11:36,590 --> 00:11:39,860 
+think about the derivative love
+
+177
+00:11:39,860 --> 00:11:46,250 
+used to build the T the derivative of
+course is 0 for T less than zero
+
+178
+00:11:46,250 --> 00:11:50,700 
+its equal to a constant during this
+linear slow
+
+179
+00:11:50,700 --> 00:11:55,980 
+and then it 0 pretty greater than Delta
+so
+
+180
+00:11:55,980 --> 00:12:00,450 
+the derivative abusive Delta 50 will
+then
+
+181
+00:12:00,450 --> 00:12:04,740 
+be as i've indicated here and
+
+182
+00:12:04,740 --> 00:12:08,300 
+is simply a rectangle with a height
+
+183
+00:12:08,300 --> 00:12:15,000 
+which is one over Delta and with which
+is equal to Delta and observed that no
+
+184
+00:12:15,000 --> 00:12:17,280 
+matter what the value of Delta is
+
+185
+00:12:17,280 --> 00:12:20,450 
+the area is always equal to 1
+
+186
+00:12:20,450 --> 00:12:25,190 
+now as we let Delta go to zero
+
+187
+00:12:25,190 --> 00:12:29,070 
+what happens is that the width of the
+rectangle get smaller
+
+188
+00:12:29,070 --> 00:12:33,590 
+the height of the rectangle gets bigger
+the area still remains one
+
+189
+00:12:33,590 --> 00:12:37,030 
+as Delta goes to zero of course the with
+goes to zero
+
+190
+00:12:37,030 --> 00:12:40,070 
+and the height goes to infinity
+
+191
+00:12:40,070 --> 00:12:44,070 
+and graphically we choose to depict that
+
+192
+00:12:44,070 --> 00:12:48,450 
+as an arrow where
+
+193
+00:12:48,450 --> 00:12:52,330 
+the arrow indicates the fact dead we
+have
+
+194
+00:12:52,330 --> 00:12:55,980 
+and im polls occurring at equal 0 and
+
+195
+00:12:55,980 --> 00:12:59,920 
+and the height of the in polls is used
+to represent
+
+196
+00:12:59,920 --> 00:13:04,350 
+what the area above the impulses and in
+this case
+
+197
+00:13:04,350 --> 00:13:07,850 
+since we took the derivative of the
+units that the
+
+198
+00:13:07,850 --> 00:13:13,320 
+quite is people to want
+
+199
+00:13:13,320 --> 00:13:16,230 
+so the impulse has 0 with
+
+200
+00:13:16,230 --> 00:13:20,000 
+infinite hi area one its
+
+201
+00:13:20,000 --> 00:13:23,700 
+mathematically not terribly comfortable
+because
+
+202
+00:13:23,700 --> 00:13:27,680 
+what we've done is taking the derivative
+of the unit step which has a
+
+203
+00:13:27,680 --> 00:13:29,550 
+discontinuity at the origin
+
+204
+00:13:29,550 --> 00:13:33,390 
+and there's a mathematical difficulties
+with doing that
+
+205
+00:13:33,390 --> 00:13:36,970 
+well in fact return to another
+interpretation
+
+206
+00:13:36,970 --> 00:13:40,140 
+%uh the in polls later up
+
+207
+00:13:40,140 --> 00:13:44,840 
+can't emphasize sum up the sir
+discomfort with the impulse
+
+208
+00:13:44,840 --> 00:13:48,910 
+I remember something that Sam Mason
+
+209
+00:13:48,910 --> 00:13:52,640 
+used to say that a student said about
+the unit impulse which was
+
+210
+00:13:52,640 --> 00:13:57,800 
+his definition was unit impulse is
+something that's so small everyplace I
+
+211
+00:13:57,800 --> 00:13:58,710 
+can't see it
+
+212
+00:13:58,710 --> 00:14:03,040 
+except that one point where it's so big
+I can see it in other words I can see it
+
+213
+00:14:03,040 --> 00:14:03,560 
+at all
+
+214
+00:14:03,560 --> 00:14:07,960 
+well except some informality
+
+215
+00:14:07,960 --> 00:14:11,670 
+with the unit impulse function in the
+continuous-time
+
+216
+00:14:11,670 --> 00:14:15,180 
+K's and generally we'll see
+
+217
+00:14:15,180 --> 00:14:20,870 
+that we won't get into particular
+difficulty okay now
+
+218
+00:14:20,870 --> 00:14:25,970 
+the impose is the derivative the step we
+saw
+
+219
+00:14:25,970 --> 00:14:29,150 
+in the discrete-time case that step
+
+220
+00:14:29,150 --> 00:14:32,150 
+could be recovered from the in polls
+through a running some
+
+221
+00:14:32,150 --> 00:14:37,160 
+in continuous time with the impulse is
+the derivative overstep we would
+
+222
+00:14:37,160 --> 00:14:40,370 
+moralist reasonably expect that this
+step
+
+223
+00:14:40,370 --> 00:14:44,850 
+would be like an integral the in polls
+and indeed that's true
+
+224
+00:14:44,850 --> 00:14:48,910 
+in fact mathematically the relationship
+is
+
+225
+00:14:48,910 --> 00:14:52,740 
+that the unit step
+
+226
+00:14:52,740 --> 00:14:56,200 
+function in continuous-time
+
+227
+00:14:56,200 --> 00:14:59,550 
+is the running integral although
+
+228
+00:14:59,550 --> 00:15:03,020 
+the unit impulse function and
+
+229
+00:15:03,020 --> 00:15:07,030 
+so is the integral from minus infinity
+up to time TV
+
+230
+00:15:07,030 --> 00:15:10,540 
+weighty is the argument at which
+
+231
+00:15:10,540 --> 00:15:14,750 
+were examining you ft and so
+
+232
+00:15:14,750 --> 00:15:18,570 
+just as with the discrete-time case if
+
+233
+00:15:18,570 --> 00:15:22,380 
+we are looking at T less than zero
+
+234
+00:15:22,380 --> 00:15:25,510 
+is no area accumulated in the integral
+
+235
+00:15:25,510 --> 00:15:30,270 
+if we're looking at T greater than 0
+then we accumulate the area
+
+236
+00:15:30,270 --> 00:15:35,750 
+under the impulse
+
+237
+00:15:35,750 --> 00:15:38,700 
+okay now will shortly
+
+238
+00:15:38,700 --> 00:15:41,730 
+be returning to a
+
+239
+00:15:41,730 --> 00:15:44,770 
+further discussion in use love
+
+240
+00:15:44,770 --> 00:15:48,060 
+impulses and step functions
+
+241
+00:15:48,060 --> 00:15:51,080 
+and in particular what we'll see is that
+
+242
+00:15:51,080 --> 00:15:55,530 
+they provide a very convenient and
+powerful mechanism
+
+243
+00:15:55,530 --> 00:16:00,710 
+for describing a particular class two
+systems referred to
+
+244
+00:16:00,710 --> 00:16:06,880 
+as linear time-invariant systems to lead
+up to that discussion which will
+
+245
+00:16:06,880 --> 00:16:09,990 
+be the principal focus of the next
+lecture
+
+246
+00:16:09,990 --> 00:16:15,330 
+let's for the remainder this lecture
+talk about systems in general
+
+247
+00:16:15,330 --> 00:16:18,500 
+and then some properties have systems
+and
+
+248
+00:16:18,500 --> 00:16:21,670 
+as the lecture proceeds the
+
+249
+00:16:21,670 --> 00:16:24,980 
+specific properties that I want to get
+to our properties
+
+250
+00:16:24,980 --> 00:16:29,680 
+when the arity and time very so let's
+first talk about
+
+251
+00:16:29,680 --> 00:16:33,150 
+systems in general and a system
+
+252
+00:16:33,150 --> 00:16:36,270 
+in general in its most general
+definition
+
+253
+00:16:36,270 --> 00:16:39,600 
+it simply a transformation
+
+254
+00:16:39,600 --> 00:16:45,850 
+from an input signal to an output say so
+in a continuous-time case
+
+255
+00:16:45,850 --> 00:16:50,120 
+we would have a continuous-time system
+
+256
+00:16:50,120 --> 00:16:53,490 
+the input exit the
+
+257
+00:16:53,490 --> 00:16:57,050 
+and the output why if the and the box
+
+258
+00:16:57,050 --> 00:17:01,760 
+in essence is used to denote a
+transformation from
+
+259
+00:17:01,760 --> 00:17:08,350 
+except the to white T and sometimes will
+also use a shorthand notation
+
+260
+00:17:08,350 --> 00:17:12,140 
+along the lines of indicating that the
+input except the
+
+261
+00:17:12,140 --> 00:17:15,720 
+is transformed to the output y'at
+
+262
+00:17:15,720 --> 00:17:20,160 
+now we have exactly the same
+
+263
+00:17:20,160 --> 00:17:25,070 
+kinda definition in the discrete-time
+case in the discrete-time case
+
+264
+00:17:25,070 --> 00:17:28,240 
+of course the inputs are sequences
+
+265
+00:17:28,240 --> 00:17:32,740 
+and the outputs are sequences and our
+shorthand notation
+
+266
+00:17:32,740 --> 00:17:38,120 
+is simple often we talk about systems
+
+267
+00:17:38,120 --> 00:17:41,420 
+will want to talk about interconnections
+systems
+
+268
+00:17:41,420 --> 00:17:45,570 
+and will see you again in later lectures
+that interconnections become very
+
+269
+00:17:45,570 --> 00:17:47,320 
+important and powerful
+
+270
+00:17:47,320 --> 00:17:50,370 
+and in in the way of introducing
+
+271
+00:17:50,370 --> 00:17:56,410 
+terminology let me introduce the
+terminology for a few basic important
+
+272
+00:17:56,410 --> 00:18:00,470 
+interconnections systems the first
+
+273
+00:18:00,470 --> 00:18:04,300 
+is what's referred to as a cascade
+
+274
+00:18:04,300 --> 00:18:08,690 
+systems or sometimes as the series
+
+275
+00:18:08,690 --> 00:18:11,790 
+interconnection systems and
+
+276
+00:18:11,790 --> 00:18:15,380 
+putting two systems in cascade as i've
+indicated here
+
+277
+00:18:15,380 --> 00:18:19,820 
+means taking the output have one system
+
+278
+00:18:19,820 --> 00:18:24,080 
+let's say system one and using Matt as
+the input
+
+279
+00:18:24,080 --> 00:18:27,290 
+to the second system which are denoted
+as system to
+
+280
+00:18:27,290 --> 00:18:30,550 
+so in this cascade with
+
+281
+00:18:30,550 --> 00:18:33,970 
+system one first and system to second
+
+282
+00:18:33,970 --> 00:18:38,220 
+we have the output system one going into
+the input
+
+283
+00:18:38,220 --> 00:18:41,340 
+system to now
+
+284
+00:18:41,340 --> 00:18:44,380 
+we could've course take those two
+systems
+
+285
+00:18:44,380 --> 00:18:48,330 
+and cascade them in the reverse order
+
+286
+00:18:48,330 --> 00:18:52,160 
+namely take the output system to and put
+it into
+
+287
+00:18:52,160 --> 00:18:55,160 
+the input of system one and
+
+288
+00:18:55,160 --> 00:19:00,080 
+i've indicated that here and we have
+system to first in the Cascade
+
+289
+00:19:00,080 --> 00:19:06,220 
+followed by system one it's important to
+keep in mind
+
+290
+00:19:06,220 --> 00:19:10,370 
+dead in general for general systems
+
+291
+00:19:10,370 --> 00:19:14,350 
+in the order in which you can SCADA
+systems is very important
+
+292
+00:19:14,350 --> 00:19:17,420 
+and in fact the
+
+293
+00:19:17,420 --> 00:19:22,000 
+overall system transformation will be
+different depending on which system came
+
+294
+00:19:22,000 --> 00:19:25,810 
+first and which system came second for
+example
+
+295
+00:19:25,810 --> 00:19:31,430 
+its system one was let's say in a system
+for which the output doubles the input
+
+296
+00:19:31,430 --> 00:19:34,580 
+is double the input and system to
+
+297
+00:19:34,580 --> 00:19:38,210 
+the output is the square root of the
+input clearly
+
+298
+00:19:38,210 --> 00:19:41,770 
+doubling first and then taking the
+square root is different
+
+299
+00:19:41,770 --> 00:19:44,820 
+then taking the square root first and
+then double
+
+300
+00:19:44,820 --> 00:19:49,140 
+now kinda amazingly
+
+301
+00:19:49,140 --> 00:19:52,390 
+what we'll see again when we get
+
+302
+00:19:52,390 --> 00:19:56,140 
+to this issue linearity and
+time-invariant switcher class of systems
+
+303
+00:19:56,140 --> 00:19:58,280 
+that will focus in on
+
+304
+00:19:58,280 --> 00:20:01,960 
+somewhat amazingly it turns out that for
+that
+
+305
+00:20:01,960 --> 00:20:05,520 
+specific classes systems the SIS
+
+306
+00:20:05,520 --> 00:20:09,660 
+overall system transformation is
+independent of the order in which
+
+307
+00:20:09,660 --> 00:20:16,250 
+the system's are cascade and we'll see
+that of course in more detail later on
+
+308
+00:20:16,250 --> 00:20:21,000 
+alright well that's a cascade or series
+interconnection
+
+309
+00:20:21,000 --> 00:20:25,120 
+let's look at another interconnection
+which is a parallel
+
+310
+00:20:25,120 --> 00:20:28,420 
+interconnection systems and
+
+311
+00:20:28,420 --> 00:20:31,680 
+here what's meant by the interconnection
+
+312
+00:20:31,680 --> 00:20:34,880 
+is that the input
+
+313
+00:20:34,880 --> 00:20:39,160 
+is fitted simultaneously into system one
+
+314
+00:20:39,160 --> 00:20:42,260 
+and into system to
+
+315
+00:20:42,260 --> 00:20:45,540 
+and then the outputs these two systems
+
+316
+00:20:45,540 --> 00:20:50,870 
+are added to give the overall system
+output
+
+317
+00:20:50,870 --> 00:20:54,760 
+now in this particular case
+
+318
+00:20:54,760 --> 00:20:58,340 
+in contrast to a cascade no matter
+
+319
+00:20:58,340 --> 00:21:01,970 
+what the systems are it turns out
+
+320
+00:21:01,970 --> 00:21:05,460 
+that a parallel combination the order in
+which
+
+321
+00:21:05,460 --> 00:21:08,540 
+their put in parallel
+
+322
+00:21:08,540 --> 00:21:13,670 
+is the out the overall transformation is
+independent up the order
+
+323
+00:21:13,670 --> 00:21:18,470 
+and of course that follows from the fact
+that we simply adding up outputs
+
+324
+00:21:18,470 --> 00:21:22,920 
+and the outputs can be added in any
+order because the fact that addition
+
+325
+00:21:22,920 --> 00:21:23,720 
+doesn't care
+
+326
+00:21:23,720 --> 00:21:27,830 
+in which order you're heading things up
+
+327
+00:21:27,830 --> 00:21:32,110 
+okay so that's the parallel
+interconnection and let's look at
+
+328
+00:21:32,110 --> 00:21:36,600 
+one more interconnection which is what's
+referred to
+
+329
+00:21:36,600 --> 00:21:39,960 
+as a feedback interconnection and
+
+330
+00:21:39,960 --> 00:21:43,480 
+this again is a interconnection that
+will
+
+331
+00:21:43,480 --> 00:21:47,350 
+become a very important topic much later
+in the course
+
+332
+00:21:47,350 --> 00:21:51,930 
+but let me just indicate at this point
+what I mean by it
+
+333
+00:21:51,930 --> 00:21:54,980 
+but a feedback interconnection means is
+that
+
+334
+00:21:54,980 --> 00:21:58,610 
+we have one system
+
+335
+00:21:58,610 --> 00:22:01,670 
+system one
+
+336
+00:22:01,670 --> 00:22:05,090 
+with an input in an output
+
+337
+00:22:05,090 --> 00:22:09,720 
+the output a system one is the output of
+the overall system
+
+338
+00:22:09,720 --> 00:22:12,880 
+and that output is fayed
+
+339
+00:22:12,880 --> 00:22:16,130 
+into system to
+
+340
+00:22:16,130 --> 00:22:19,710 
+the output of system to is then handed
+
+341
+00:22:19,710 --> 00:22:23,860 
+to the input to the overall system
+
+342
+00:22:23,860 --> 00:22:27,770 
+so in essence what happens in a feedback
+interconnection
+
+343
+00:22:27,770 --> 00:22:31,850 
+we have one system the output in that
+system
+
+344
+00:22:31,850 --> 00:22:35,160 
+is fed back through system to
+
+345
+00:22:35,160 --> 00:22:38,400 
+added to the overall input and then that
+some
+
+346
+00:22:38,400 --> 00:22:43,060 
+is what forms the input the system one
+and will see that there are
+
+347
+00:22:43,060 --> 00:22:48,110 
+lots of uses for feedback and of course
+also lots of ways the feedback getting
+
+348
+00:22:48,110 --> 00:22:49,810 
+the gets in the way
+
+349
+00:22:49,810 --> 00:22:54,360 
+in fact probably some love you are
+already familiar with all the issues &
+
+350
+00:22:54,360 --> 00:22:55,550 
+feedback
+
+351
+00:22:55,550 --> 00:22:59,070 
+for example in audio systems or whatever
+but this will be
+
+352
+00:22:59,070 --> 00:23:03,050 
+a topic that will devote considerable
+amount of time to
+
+353
+00:23:03,050 --> 00:23:06,330 
+later in the course and then
+
+354
+00:23:06,330 --> 00:23:10,140 
+of course there are lots of other
+interconnections
+
+355
+00:23:10,140 --> 00:23:15,130 
+love systems and as the course
+progresses we'll see
+
+356
+00:23:15,130 --> 00:23:19,450 
+lots of ways in which systems get
+interconnected both in series and
+
+357
+00:23:19,450 --> 00:23:22,700 
+parallel and feedback interconnections
+et cetera
+
+358
+00:23:22,700 --> 00:23:28,040 
+to achieve a wide variety of things
+
+359
+00:23:28,040 --> 00:23:31,820 
+now what I said so far relates to
+
+360
+00:23:31,820 --> 00:23:34,930 
+systems in general and you can't say
+much
+
+361
+00:23:34,930 --> 00:23:39,480 
+about systems when you try to treat them
+in the most general form
+
+362
+00:23:39,480 --> 00:23:42,670 
+so it's useful and important to focus in
+
+363
+00:23:42,670 --> 00:23:47,170 
+on properties that system may or may not
+have
+
+364
+00:23:47,170 --> 00:23:50,530 
+so what I'd like to do now is turn our
+attention
+
+365
+00:23:50,530 --> 00:23:54,440 
+to system properties and will define
+
+366
+00:23:54,440 --> 00:23:59,230 
+a number of them some of them will want
+to impose on a system
+
+367
+00:23:59,230 --> 00:24:02,480 
+some love the movie we may not want to
+impose on a system
+
+368
+00:24:02,480 --> 00:24:05,640 
+but as things progress will
+
+369
+00:24:05,640 --> 00:24:08,810 
+tend to find it useful to an ass
+
+370
+00:24:08,810 --> 00:24:13,200 
+weather is system does or doesn't have a
+certain property
+
+371
+00:24:13,200 --> 00:24:17,070 
+well let's begin with the property which
+I A
+
+372
+00:24:17,070 --> 00:24:18,690 
+refer to here and
+
+373
+00:24:18,690 --> 00:24:23,220 
+is memoryless and what I mean by
+
+374
+00:24:23,220 --> 00:24:26,220 
+system being memoryless is dead
+
+375
+00:24:26,220 --> 00:24:29,260 
+the output at any
+
+376
+00:24:29,260 --> 00:24:33,760 
+given time t0 depends
+
+377
+00:24:33,760 --> 00:24:37,330 
+only on the input at the same time and
+so
+
+378
+00:24:37,330 --> 00:24:41,120 
+know what I'm suggesting is that a
+memoryless system
+
+379
+00:24:41,120 --> 00:24:46,090 
+is one for which the output at a
+specific time
+
+380
+00:24:46,090 --> 00:24:50,050 
+depends only on the input at that time
+
+381
+00:24:50,050 --> 00:24:54,060 
+and that statement is true or that
+definition
+
+382
+00:24:54,060 --> 00:24:58,650 
+applies both for continuous-time
+
+383
+00:24:58,650 --> 00:25:02,760 
+as i've indicated it here and also
+
+384
+00:25:02,760 --> 00:25:06,090 
+for discrete-time as i've indicated here
+and so
+
+385
+00:25:06,090 --> 00:25:10,100 
+we have similar definition in
+discrete-time
+
+386
+00:25:10,100 --> 00:25:13,730 
+that the system is memoryless
+
+387
+00:25:13,730 --> 00:25:17,380 
+if the output at any given time
+
+388
+00:25:17,380 --> 00:25:24,130 
+depends only on the input at that time
+well
+
+389
+00:25:24,130 --> 00:25:28,000 
+in I have a number of examples here
+let's look at
+
+390
+00:25:28,000 --> 00:25:33,150 
+the first example which in which the
+output is the square if the input
+
+391
+00:25:33,150 --> 00:25:39,060 
+and that is a possible system either in
+continuous-time
+
+392
+00:25:39,060 --> 00:25:42,530 
+for discrete-time and that system as
+
+393
+00:25:42,530 --> 00:25:46,520 
+you would expect is commonly referred to
+as
+
+394
+00:25:46,520 --> 00:25:49,980 
+square insists the square
+
+395
+00:25:49,980 --> 00:25:54,560 
+up a signal and anytime depends only on
+
+396
+00:25:54,560 --> 00:25:58,170 
+the value the signal at that time
+clearly
+
+397
+00:25:58,170 --> 00:26:01,850 
+square is a memoryless system so
+
+398
+00:26:01,850 --> 00:26:05,820 
+in fact weekend indicate here and this
+system
+
+399
+00:26:05,820 --> 00:26:10,860 
+is members
+
+400
+00:26:10,860 --> 00:26:13,980 
+another important system is
+
+401
+00:26:13,980 --> 00:26:18,310 
+what is referred to as an integrator its
+
+402
+00:26:18,310 --> 00:26:21,390 
+the the output is equal to
+
+403
+00:26:21,390 --> 00:26:25,020 
+the integral love the input
+
+404
+00:26:25,020 --> 00:26:28,180 
+here as i've indicated it
+
+405
+00:26:28,180 --> 00:26:34,470 
+its a not just integrating except TV but
+its integrating the square affect safety
+
+406
+00:26:34,470 --> 00:26:37,770 
+and whether we square
+
+407
+00:26:37,770 --> 00:26:41,730 
+before we had a great or not the
+essential point
+
+408
+00:26:41,730 --> 00:26:45,120 
+is there since we're integrating the
+input
+
+409
+00:26:45,120 --> 00:26:48,940 
+the value of the output anytime
+
+410
+00:26:48,940 --> 00:26:53,340 
+is an accumulation a past history the
+input well
+
+411
+00:26:53,340 --> 00:26:57,120 
+accumulation a past history in essence
+implies memory
+
+412
+00:26:57,120 --> 00:27:00,330 
+to get the output at a given time
+
+413
+00:27:00,330 --> 00:27:03,580 
+requires the input
+
+414
+00:27:03,580 --> 00:27:09,080 
+over an interval specifically for longer
+than that time so
+
+415
+00:27:09,080 --> 00:27:16,080 
+this system in fact is not memory loss
+
+416
+00:27:16,360 --> 00:27:19,330 
+and now I have a
+
+417
+00:27:19,330 --> 00:27:23,090 
+third system the fine here the third
+system
+
+418
+00:27:23,090 --> 00:27:26,390 
+is a system the discrete-time system
+
+419
+00:27:26,390 --> 00:27:30,550 
+in which the output is equal to
+
+420
+00:27:30,550 --> 00:27:36,880 
+the input but not quite the output at
+some time let's say for example that an
+
+421
+00:27:36,880 --> 00:27:37,980 
+equal 0
+
+422
+00:27:37,980 --> 00:27:41,310 
+is equal to the input at one
+
+423
+00:27:41,310 --> 00:27:45,550 
+time sample or instant or value with the
+index
+
+424
+00:27:45,550 --> 00:27:49,630 
+before that and so this in fact
+
+425
+00:27:49,630 --> 00:27:56,340 
+is a system for which the output is
+simply the input the lady or shifted
+
+426
+00:27:56,340 --> 00:28:00,680 
+by one sample so this system is referred
+to as
+
+427
+00:28:00,680 --> 00:28:03,970 
+unit delay
+
+428
+00:28:03,970 --> 00:28:07,570 
+and now the question
+
+429
+00:28:07,570 --> 00:28:10,680 
+the question is is that system
+memoryless
+
+430
+00:28:10,680 --> 00:28:17,680 
+well the output depends only on the
+input the output at any instant depends
+
+431
+00:28:18,140 --> 00:28:18,670 
+only
+
+432
+00:28:18,670 --> 00:28:22,580 
+on the input at one instant but
+
+433
+00:28:22,580 --> 00:28:26,630 
+since it depends on an instant
+
+434
+00:28:26,630 --> 00:28:30,160 
+prior to the time in which were looking
+we're different than the time at which
+
+435
+00:28:30,160 --> 00:28:31,010 
+were looking
+
+436
+00:28:31,010 --> 00:28:34,160 
+it violates the definition a memoryless
+
+437
+00:28:34,160 --> 00:28:38,290 
+that we introduce and so in fact the
+unit the LEI
+
+438
+00:28:38,290 --> 00:28:42,160 
+is a system that has memory and so
+
+439
+00:28:42,160 --> 00:28:46,850 
+let's indicate that year so this is not
+a memoryless
+
+440
+00:28:46,850 --> 00:28:52,560 
+system because of the fact that there is
+one unit at the lay
+
+441
+00:28:52,560 --> 00:28:57,869 
+and in essence the lady requires memory
+
+442
+00:28:57,869 --> 00:29:01,469 
+okay so bats the issue memory and
+
+443
+00:29:01,469 --> 00:29:06,519 
+and a memoryless systems let's now turn
+to another
+
+444
+00:29:06,519 --> 00:29:09,629 
+property which a system
+
+445
+00:29:09,629 --> 00:29:13,749 
+may or may not have the property
+referred to as
+
+446
+00:29:13,749 --> 00:29:17,269 
+invertia billet now
+
+447
+00:29:17,269 --> 00:29:20,379 
+essentially would inverted bility means
+is dead
+
+448
+00:29:20,379 --> 00:29:23,769 
+given the output above the system
+
+449
+00:29:23,769 --> 00:29:26,859 
+you can figure out uniquely with the
+input was
+
+450
+00:29:26,859 --> 00:29:30,279 
+thats one definition for infertility
+
+451
+00:29:30,279 --> 00:29:34,139 
+said another way convertibility means
+that
+
+452
+00:29:34,139 --> 00:29:38,119 
+given the output there's only one input
+that could have caused it
+
+453
+00:29:38,119 --> 00:29:41,729 
+that's another common so definition for
+portability
+
+454
+00:29:41,729 --> 00:29:45,710 
+another way of looking at it is in fact
+
+455
+00:29:45,710 --> 00:29:49,619 
+to look at it in the context love a
+cascade
+
+456
+00:29:49,619 --> 00:29:53,529 
+love systems so
+
+457
+00:29:53,529 --> 00:29:56,729 
+let's consider a system and here
+
+458
+00:29:56,729 --> 00:30:00,950 
+is a system which are referred to as
+system a
+
+459
+00:30:00,950 --> 00:30:05,820 
+and this could be continuous-time and
+discrete-time
+
+460
+00:30:05,820 --> 00:30:08,869 
+it has an input x1
+
+461
+00:30:08,869 --> 00:30:13,080 
+TV or an depending on whether it's
+continuous-time and discrete-time that
+
+462
+00:30:13,080 --> 00:30:14,129 
+we're talking about
+
+463
+00:30:14,129 --> 00:30:17,799 
+and an associated output
+
+464
+00:30:17,799 --> 00:30:20,679 
+and here we had
+
+465
+00:30:20,679 --> 00:30:24,309 
+go system be with
+
+466
+00:30:24,309 --> 00:30:30,259 
+its associated input an output and
+
+467
+00:30:30,259 --> 00:30:34,119 
+now let's put these two systems in
+cascade
+
+468
+00:30:34,119 --> 00:30:38,779 
+so will take the output system one and
+feed it
+
+469
+00:30:38,779 --> 00:30:42,490 
+into the input love system
+
+470
+00:30:42,490 --> 00:30:45,600 
+to or system be so
+
+471
+00:30:45,600 --> 00:30:49,909 
+the output system a goes into the input
+a system be
+
+472
+00:30:49,909 --> 00:30:54,129 
+and if system is invertible
+
+473
+00:30:54,129 --> 00:30:58,119 
+and system be is its in burgers
+
+474
+00:30:58,119 --> 00:31:01,379 
+then the consequence
+
+475
+00:31:01,379 --> 00:31:05,419 
+is that the output subsystem be
+
+476
+00:31:05,419 --> 00:31:09,230 
+is equal to the input of system a
+
+477
+00:31:09,230 --> 00:31:12,950 
+now I know there there a lotta
+
+478
+00:31:12,950 --> 00:31:17,039 
+inputs and outputs and inverse is in the
+air
+
+479
+00:31:17,039 --> 00:31:20,179 
+by essentially what we mean by what I
+just said
+
+480
+00:31:20,179 --> 00:31:24,320 
+is that if we have system a
+
+481
+00:31:24,320 --> 00:31:28,710 
+and is invertible and if
+
+482
+00:31:28,710 --> 00:31:32,570 
+we cascaded with its infers
+
+483
+00:31:32,570 --> 00:31:35,580 
+system be then
+
+484
+00:31:35,580 --> 00:31:39,080 
+the overall cascade these two systems
+
+485
+00:31:39,080 --> 00:31:42,490 
+is simply what's referred to as
+
+486
+00:31:42,490 --> 00:31:48,200 
+the identity system
+
+487
+00:31:48,200 --> 00:31:51,640 
+and the identity system is simply a
+system
+
+488
+00:31:51,640 --> 00:31:55,710 
+which if you put a signal into it you
+get the same signal
+
+489
+00:31:55,710 --> 00:31:58,970 
+out a bit in other words the overall
+system is
+
+490
+00:31:58,970 --> 00:32:02,260 
+no transformation at all clearly course
+
+491
+00:32:02,260 --> 00:32:09,260 
+for a system to be able to be cascaded
+with another system
+
+492
+00:32:09,320 --> 00:32:12,800 
+to generate the identity system requires
+
+493
+00:32:12,800 --> 00:32:16,520 
+that the first system system a be
+invertible
+
+494
+00:32:16,520 --> 00:32:19,680 
+so let's a
+
+495
+00:32:19,680 --> 00:32:24,700 
+look at some examples if we had
+
+496
+00:32:24,700 --> 00:32:28,370 
+system a as i've indicated here
+
+497
+00:32:28,370 --> 00:32:31,610 
+where now the output is
+
+498
+00:32:31,610 --> 00:32:34,810 
+the running integral love
+
+499
+00:32:34,810 --> 00:32:39,850 
+the input and remember that we saw the
+running into role when we talked about
+
+500
+00:32:39,850 --> 00:32:41,310 
+the relationship between
+
+501
+00:32:41,310 --> 00:32:44,860 
+steps and impulses if this happened to
+be in in polls
+
+502
+00:32:44,860 --> 00:32:49,610 
+then the output would be a step this
+system
+
+503
+00:32:49,610 --> 00:32:53,330 
+is referred to of course as an
+integrator
+
+504
+00:32:53,330 --> 00:32:56,460 
+since the output is
+
+505
+00:32:56,460 --> 00:33:00,190 
+the running integral love the input
+
+506
+00:33:00,190 --> 00:33:03,970 
+and in the
+
+507
+00:33:03,970 --> 00:33:08,100 
+integrator in fact is an invertible
+system
+
+508
+00:33:08,100 --> 00:33:11,330 
+and its infers
+
+509
+00:33:11,330 --> 00:33:15,130 
+is system for which the output is the
+derivative
+
+510
+00:33:15,130 --> 00:33:18,160 
+%um so the inverse
+
+511
+00:33:18,160 --> 00:33:21,640 
+or system a if system a is an integrator
+
+512
+00:33:21,640 --> 00:33:25,410 
+is system for which the output
+
+513
+00:33:25,410 --> 00:33:30,660 
+is equal to the derivative the input
+which not surprisingly
+
+514
+00:33:30,660 --> 00:33:32,860 
+is referred to and
+
+515
+00:33:32,860 --> 00:33:39,860 
+is a differentiator
+
+516
+00:33:40,899 --> 00:33:46,470 
+so an integrator is invertible
+
+517
+00:33:46,470 --> 00:33:51,720 
+its inverse is a differentiator which
+you might want to think about
+
+518
+00:33:51,720 --> 00:33:54,820 
+is the question of whether a
+differentiator
+
+519
+00:33:54,820 --> 00:33:59,460 
+is invertible now to answer that what
+you would ask yourself is
+
+520
+00:33:59,460 --> 00:34:03,830 
+if you always knew with the derivative
+with the signal is would you necessarily
+
+521
+00:34:03,830 --> 00:34:08,470 
+know with the signal was in other words
+if you have a differentiator
+
+522
+00:34:08,470 --> 00:34:11,750 
+you have the output of the
+differentiator
+
+523
+00:34:11,750 --> 00:34:15,460 
+could you always figure out with the
+input words if you could
+
+524
+00:34:15,460 --> 00:34:19,210 
+the system would be invertible if you
+couldn't the system would not be
+
+525
+00:34:19,210 --> 00:34:19,839 
+invertible
+
+526
+00:34:19,839 --> 00:34:24,530 
+so you might just want to think about
+that I guess
+
+527
+00:34:24,530 --> 00:34:29,760 
+I won't tell you right now but I'm sure
+that
+
+528
+00:34:29,760 --> 00:34:33,010 
+dead you'll think about that more
+particularly with the
+
+529
+00:34:33,010 --> 00:34:36,750 
+guidance that the video manual
+
+530
+00:34:36,750 --> 00:34:39,799 
+okay well let's look at one
+
+531
+00:34:39,799 --> 00:34:43,000 
+last system in i've indicated here
+
+532
+00:34:43,000 --> 00:34:46,720 
+a system for which the output
+
+533
+00:34:46,720 --> 00:34:50,000 
+is related to the input through this
+
+534
+00:34:50,000 --> 00:34:53,500 
+heard and what I mean by this curve
+which
+
+535
+00:34:53,500 --> 00:34:57,349 
+wasn't done a quite as well
+
+536
+00:34:57,349 --> 00:35:01,299 
+as I might have is that
+
+537
+00:35:01,299 --> 00:35:05,140 
+the output is equal to the square
+
+538
+00:35:05,140 --> 00:35:08,619 
+the input so this system
+
+539
+00:35:08,619 --> 00:35:11,660 
+is our square as we talked about before
+
+540
+00:35:11,660 --> 00:35:15,089 
+we saw previously
+
+541
+00:35:15,089 --> 00:35:18,150 
+are discussed the fact previously bad
+
+542
+00:35:18,150 --> 00:35:21,619 
+the squarer is a memoryless
+
+543
+00:35:21,619 --> 00:35:25,520 
+system
+
+544
+00:35:25,520 --> 00:35:28,599 
+and now the question is is the square
+
+545
+00:35:28,599 --> 00:35:32,440 
+an invertible system well question then
+
+546
+00:35:32,440 --> 00:35:35,810 
+is if you given the square the signal
+
+547
+00:35:35,810 --> 00:35:38,840 
+can you figure out with the signal is
+and
+
+548
+00:35:38,840 --> 00:35:43,500 
+as I'm sure you've already suspected the
+answer to that is no
+
+549
+00:35:43,500 --> 00:35:48,000 
+because obviously if the signal was
+negative or positive you wouldn't be
+
+550
+00:35:48,000 --> 00:35:49,320 
+able to figure that out
+
+551
+00:35:49,320 --> 00:35:52,510 
+and you square so in fact
+
+552
+00:35:52,510 --> 00:35:58,310 
+the square is not invertible part so
+
+553
+00:35:58,310 --> 00:36:01,740 
+we've introduced several properties and
+by the way
+
+554
+00:36:01,740 --> 00:36:05,290 
+as we've gone through it also in
+introduce some systems that will turn
+
+555
+00:36:05,290 --> 00:36:06,290 
+out to be
+
+556
+00:36:06,290 --> 00:36:09,849 
+useful important systems and
+
+557
+00:36:09,849 --> 00:36:14,750 
+now it's continue with some other
+properties a property
+
+558
+00:36:14,750 --> 00:36:17,830 
+dead will find useful to make reference
+
+559
+00:36:17,830 --> 00:36:22,859 
+to from time to time and will in fact
+play fairly important role in a variety
+
+560
+00:36:22,859 --> 00:36:24,260 
+of discussions
+
+561
+00:36:24,260 --> 00:36:27,320 
+during the course is the property
+
+562
+00:36:27,320 --> 00:36:31,330 
+which is referred to as causality now
+
+563
+00:36:31,330 --> 00:36:34,349 
+in essence what causality beans
+
+564
+00:36:34,349 --> 00:36:38,230 
+is the following the system is said to
+be causal
+
+565
+00:36:38,230 --> 00:36:43,520 
+if as one way of saying it only responds
+
+566
+00:36:43,520 --> 00:36:46,780 
+when you kick it is another way of
+saying it
+
+567
+00:36:46,780 --> 00:36:51,750 
+its response that any time only depends
+on values at the input
+
+568
+00:36:51,750 --> 00:36:54,940 
+prior to that time so
+
+569
+00:36:54,940 --> 00:36:58,880 
+a causal system both continuous-time and
+discrete-time
+
+570
+00:36:58,880 --> 00:37:02,570 
+is to find sometimes
+
+571
+00:37:02,570 --> 00:37:06,320 
+as a system which has the property that
+
+572
+00:37:06,320 --> 00:37:10,460 
+the output and anytime depends only on
+
+573
+00:37:10,460 --> 00:37:13,510 
+the input prior or equal to that time
+
+574
+00:37:13,510 --> 00:37:17,150 
+essentially what we're saying
+
+575
+00:37:17,150 --> 00:37:20,390 
+is that the system can't anticipate
+
+576
+00:37:20,390 --> 00:37:24,560 
+future imports and so that in fact
+
+577
+00:37:24,560 --> 00:37:28,800 
+is another possible definition for
+causality
+
+578
+00:37:28,800 --> 00:37:32,450 
+that the system is causal
+
+579
+00:37:32,450 --> 00:37:37,290 
+if it can't anticipate future inputs
+finally at
+
+580
+00:37:37,290 --> 00:37:40,460 
+not an alternative way of saying it
+mathematically
+
+581
+00:37:40,460 --> 00:37:43,670 
+is as follows: if I have
+
+582
+00:37:43,670 --> 00:37:47,820 
+to signals X 1ft
+
+583
+00:37:47,820 --> 00:37:54,190 
+nx2 T with their associated outputs why
+150 and white 2
+
+584
+00:37:54,190 --> 00:37:57,859 
+T then a system
+
+585
+00:37:57,859 --> 00:38:03,400 
+is said to be causal if it only if it
+has the property
+
+586
+00:38:03,400 --> 00:38:07,520 
+that if those two inputs are identical
+up until sometime
+
+587
+00:38:07,520 --> 00:38:11,630 
+then the outputs are identical up until
+the same time
+
+588
+00:38:11,630 --> 00:38:15,960 
+so if we have two signals that
+
+589
+00:38:15,960 --> 00:38:20,420 
+are exactly the same up until sometime
+and perhaps do something different later
+
+590
+00:38:20,420 --> 00:38:21,190 
+on
+
+591
+00:38:21,190 --> 00:38:24,830 
+causality requires that
+
+592
+00:38:24,830 --> 00:38:28,619 
+the outputs not anticipate the fact that
+those inputs
+
+593
+00:38:28,619 --> 00:38:32,070 
+are at some future time going to do
+something different
+
+594
+00:38:32,070 --> 00:38:35,609 
+and that in fact is the most useful
+mathematical
+
+595
+00:38:35,609 --> 00:38:39,089 
+definition of causality and of course
+I've
+
+596
+00:38:39,089 --> 00:38:43,140 
+written that here for continuous-time
+
+597
+00:38:43,140 --> 00:38:46,400 
+and a the
+
+598
+00:38:46,400 --> 00:38:49,990 
+same definition of causality also
+
+599
+00:38:49,990 --> 00:38:55,670 
+applies for discrete-time
+
+600
+00:38:55,670 --> 00:38:59,289 
+okay well it's look at an example
+
+601
+00:38:59,289 --> 00:39:02,599 
+let's take an example
+
+602
+00:39:02,599 --> 00:39:05,849 
+which is a system which is
+
+603
+00:39:05,849 --> 00:39:12,400 
+the following discrete-time system the
+output at any given time
+
+604
+00:39:12,400 --> 00:39:15,529 
+is some love
+
+605
+00:39:15,529 --> 00:39:18,569 
+exit Van X event the way
+
+606
+00:39:18,569 --> 00:39:23,589 
+and active and anticipated and
+
+607
+00:39:23,589 --> 00:39:27,609 
+this is in fact a system is very useful
+
+608
+00:39:27,609 --> 00:39:34,369 
+and referred to as moving average
+
+609
+00:39:34,369 --> 00:39:37,749 
+and so if we think 0 moving average
+
+610
+00:39:37,749 --> 00:39:41,180 
+if we have here
+
+611
+00:39:41,180 --> 00:39:45,869 
+a sequence X the van annex the van
+
+612
+00:39:45,869 --> 00:39:48,930 
+with other values kinda going off
+
+613
+00:39:48,930 --> 00:39:53,339 
+in both directions and any value
+
+614
+00:39:53,339 --> 00:39:57,420 
+for any value n0 at which were computing
+the output
+
+615
+00:39:57,420 --> 00:40:01,930 
+and this is why I have in the output we
+take
+
+616
+00:40:01,930 --> 00:40:07,269 
+X 70 X 70 -1
+
+617
+00:40:07,269 --> 00:40:10,880 
+and X 70 plus one and so
+
+618
+00:40:10,880 --> 00:40:13,910 
+to format moving average we would take
+
+619
+00:40:13,910 --> 00:40:18,499 
+these three bad news and combine them
+together
+
+620
+00:40:18,499 --> 00:40:21,910 
+and a moment and dividing by 3 to get
+back
+
+621
+00:40:21,910 --> 00:40:25,589 
+well is the system causal
+
+622
+00:40:25,589 --> 00:40:28,939 
+one way to answer that is
+
+623
+00:40:28,939 --> 00:40:33,859 
+to determine whether the output at any
+given time depends on future values if
+
+624
+00:40:33,859 --> 00:40:34,599 
+the input
+
+625
+00:40:34,599 --> 00:40:40,509 
+and clearly if you look at this what you
+see is that the output at time n0
+
+626
+00:40:40,509 --> 00:40:44,799 
+depends both on past values and on
+future bad
+
+627
+00:40:44,799 --> 00:40:49,329 
+as opposed to another moving average
+
+628
+00:40:49,329 --> 00:40:55,229 
+which i've indicated here where I'd
+simply shifted the values
+
+629
+00:40:55,229 --> 00:40:58,660 
+that I combine together and in this case
+
+630
+00:40:58,660 --> 00:41:02,549 
+because love the way in which I picked
+the values
+
+631
+00:41:02,549 --> 00:41:05,630 
+the output depends on
+
+632
+00:41:05,630 --> 00:41:08,839 
+value in n0 value
+
+633
+00:41:08,839 --> 00:41:12,339 
+at and 0 -1 and the bad you
+
+634
+00:41:12,339 --> 00:41:17,199 
+at n0 -2 so why I've n0 would depend
+here
+
+635
+00:41:17,199 --> 00:41:20,609 
+on X 70 X 70 -1
+
+636
+00:41:20,609 --> 00:41:24,229 
+and X 70 -2 and
+
+637
+00:41:24,229 --> 00:41:28,789 
+so in this case the system
+
+638
+00:41:28,789 --> 00:41:32,219 
+is not causal and
+
+639
+00:41:32,219 --> 00:41:39,219 
+in this case the system is cause
+
+640
+00:41:39,410 --> 00:41:43,820 
+all right now let's turn to another
+system property the property
+
+641
+00:41:43,820 --> 00:41:49,540 
+referred to as stability now there lotsa
+
+642
+00:41:49,540 --> 00:41:52,700 
+definitions of stability a and
+
+643
+00:41:52,700 --> 00:41:55,930 
+there some of them get very mathematical
+
+644
+00:41:55,930 --> 00:41:59,490 
+and formal would we've chosen
+
+645
+00:41:59,490 --> 00:42:03,150 
+and what will use as our definition
+stability is what's called
+
+646
+00:42:03,150 --> 00:42:09,280 
+bounded input founded output stability
+essentially the definition is
+
+647
+00:42:09,280 --> 00:42:12,640 
+that a system is stable
+
+648
+00:42:12,640 --> 00:42:16,530 
+if in only a for every bounded input
+
+649
+00:42:16,530 --> 00:42:19,970 
+the output is found so the notion is
+
+650
+00:42:19,970 --> 00:42:24,230 
+if you have a system any input never
+gets above
+
+651
+00:42:24,230 --> 00:42:29,000 
+some finite value and stability requires
+
+652
+00:42:29,000 --> 00:42:32,970 
+that the output also stay within some
+bounded back
+
+653
+00:42:32,970 --> 00:42:36,540 
+and I'm sure the stability and
+instability your things that you're
+
+654
+00:42:36,540 --> 00:42:37,090 
+kinda
+
+655
+00:42:37,090 --> 00:42:40,800 
+arm informally familiar with let me
+
+656
+00:42:40,800 --> 00:42:44,120 
+just kinda are emphasize the point with
+
+657
+00:42:44,120 --> 00:42:47,120 
+the something that I borrowed the
+
+658
+00:42:47,120 --> 00:42:50,210 
+actually from my son
+
+659
+00:42:50,210 --> 00:42:54,080 
+with some reluctance on his part a if we
+
+660
+00:42:54,080 --> 00:42:58,550 
+for example take a system like this
+which is in essence a pendulum
+
+661
+00:42:58,550 --> 00:43:02,240 
+this system is a holding it here is
+stable
+
+662
+00:43:02,240 --> 00:43:06,030 
+because if I put in a bounded input
+which is the displacement
+
+663
+00:43:06,030 --> 00:43:09,040 
+the output which is the movement of it
+
+664
+00:43:09,040 --> 00:43:13,110 
+remains found now on the other hand
+
+665
+00:43:13,110 --> 00:43:16,300 
+if I put the system like this which is
+
+666
+00:43:16,300 --> 00:43:21,630 
+in fact what's referred to as an
+inverted pendulum although we could
+
+667
+00:43:21,630 --> 00:43:24,090 
+conceivably get this to balance
+
+668
+00:43:24,090 --> 00:43:29,480 
+just a slight displacement because the
+fact that the pendulum is inverted
+
+669
+00:43:29,480 --> 00:43:32,610 
+a slight displacement and the output
+
+670
+00:43:32,610 --> 00:43:35,690 
+becomes unbounded now
+
+671
+00:43:35,690 --> 00:43:38,960 
+an interesting thing with the inverted
+pendulum by the way which
+
+672
+00:43:38,960 --> 00:43:43,190 
+I'm sure all of you if you're anything
+like me
+
+673
+00:43:43,190 --> 00:43:47,140 
+was intrigued with as a kid was the
+notion that you could take an inverted
+
+674
+00:43:47,140 --> 00:43:47,950 
+pendulum
+
+675
+00:43:47,950 --> 00:43:53,010 
+and in effect turn it back into a stable
+system
+
+676
+00:43:53,010 --> 00:43:56,180 
+by using what I'm doing right now
+
+677
+00:43:56,180 --> 00:44:00,310 
+which is feedback but I've done in that
+case
+
+678
+00:44:00,310 --> 00:44:03,320 
+is I stabilize the system by
+
+679
+00:44:03,320 --> 00:44:07,390 
+using feedback visual feedback from my
+eye
+
+680
+00:44:07,390 --> 00:44:11,540 
+to my hand and in fact one of the very
+important things that we'll see about
+
+681
+00:44:11,540 --> 00:44:15,390 
+feedback when we talk about feedback
+systems much later in the course
+
+682
+00:44:15,390 --> 00:44:18,900 
+is that one of their very important
+applications is
+
+683
+00:44:18,900 --> 00:44:24,230 
+in stabilizing unstable systems by the
+way one of their problems
+
+684
+00:44:24,230 --> 00:44:28,180 
+is dead if not used correctly it can
+destabilize
+
+685
+00:44:28,180 --> 00:44:31,440 
+stable system okay well let's
+
+686
+00:44:31,440 --> 00:44:35,840 
+continue on with our a property of
+stability
+
+687
+00:44:35,840 --> 00:44:39,190 
+I have here again the example
+
+688
+00:44:39,190 --> 00:44:43,320 
+of an integrator and as
+
+689
+00:44:43,320 --> 00:44:47,170 
+I indicate here if we have an integrator
+and we put a step
+
+690
+00:44:47,170 --> 00:44:50,380 
+function into it or step signal into it
+
+691
+00:44:50,380 --> 00:44:54,680 
+the output is what's referred to as a
+ramp
+
+692
+00:44:54,680 --> 00:44:59,550 
+signal it linearly increases now
+question is
+
+693
+00:44:59,550 --> 00:45:02,740 
+is a ramp on bounded the input is
+
+694
+00:45:02,740 --> 00:45:07,220 
+is bounded step input is bounded the
+ramp is unbounded
+
+695
+00:45:07,220 --> 00:45:10,560 
+because if you try to establish
+
+696
+00:45:10,560 --> 00:45:14,990 
+any bound on it you can always go out
+far enough in time
+
+697
+00:45:14,990 --> 00:45:19,140 
+so that the output will exceed that ban
+so
+
+698
+00:45:19,140 --> 00:45:22,560 
+in fact the integrator is
+
+699
+00:45:22,560 --> 00:45:29,560 
+not stable
+
+700
+00:45:29,820 --> 00:45:33,300 
+okay now finally I'd like to turn
+
+701
+00:45:33,300 --> 00:45:36,440 
+to two properties that will make
+considerable
+
+702
+00:45:36,440 --> 00:45:40,090 
+you so there's the course goes on the
+properties
+
+703
+00:45:40,090 --> 00:45:43,170 
+love time invariance and when the arid
+
+704
+00:45:43,170 --> 00:45:46,680 
+time invariance
+
+705
+00:45:46,680 --> 00:45:50,350 
+in essence says
+
+706
+00:45:50,350 --> 00:45:53,810 
+bat the system doesn't really care
+
+707
+00:45:53,810 --> 00:45:57,390 
+what you call the origin in other words
+
+708
+00:45:57,390 --> 00:46:01,560 
+it says if you take the input and your
+shift in time
+
+709
+00:46:01,560 --> 00:46:06,300 
+all that you've done is taken the output
+and shifted in time by the same amount
+
+710
+00:46:06,300 --> 00:46:10,530 
+someone more formally as i've indicated
+here
+
+711
+00:46:10,530 --> 00:46:15,590 
+if in continuous time we have an input X
+50
+
+712
+00:46:15,590 --> 00:46:19,119 
+which generates an output y'at then
+
+713
+00:46:19,119 --> 00:46:22,850 
+time invariance requires that
+
+714
+00:46:22,850 --> 00:46:28,270 
+if the input is shifted by any amount of
+time the output is shifted by the same
+
+715
+00:46:28,270 --> 00:46:31,300 
+amount of time and exactly
+
+716
+00:46:31,300 --> 00:46:37,720 
+the same applies in discrete-time for
+example
+
+717
+00:46:37,720 --> 00:46:42,470 
+if we have a system which is the system
+I've shown here
+
+718
+00:46:42,470 --> 00:46:46,810 
+which by the way is the system that we
+talked about previously to go
+
+719
+00:46:46,810 --> 00:46:51,690 
+from step sequence upstart from an
+imposed sequence to step sequence
+
+720
+00:46:51,690 --> 00:46:55,500 
+we call that a running some and actually
+
+721
+00:46:55,500 --> 00:46:58,810 
+white it's also often called is an
+accumulator
+
+722
+00:46:58,810 --> 00:47:02,930 
+what it does is accumulate past values
+
+723
+00:47:02,930 --> 00:47:06,369 
+the input well is the
+
+724
+00:47:06,369 --> 00:47:12,330 
+accumulator time-invariant the best way
+to establish that
+
+725
+00:47:12,330 --> 00:47:15,530 
+is to work through the equations and
+verified that it either
+
+726
+00:47:15,530 --> 00:47:19,210 
+does or doesn't satisfy the formal
+definition
+
+727
+00:47:19,210 --> 00:47:23,600 
+time invariance informally if you think
+about it
+
+728
+00:47:23,600 --> 00:47:27,630 
+it makes intuitive sense that the
+accumulator
+
+729
+00:47:27,630 --> 00:47:32,690 
+is time-invariant because if you're
+accumulating values
+
+730
+00:47:32,690 --> 00:47:37,580 
+and a few the LEI the values that you're
+putting into the accumulator
+
+731
+00:47:37,580 --> 00:47:43,710 
+then the associated values that come out
+will be delayed by the same amount
+
+732
+00:47:43,710 --> 00:47:48,440 
+the accumulated it doesn't care really
+where if you shift the input is just
+
+733
+00:47:48,440 --> 00:47:52,190 
+simply shift the Associated output but
+
+734
+00:47:52,190 --> 00:47:57,740 
+more generally with your trying to test
+time-invariant it's important to return
+
+735
+00:47:57,740 --> 00:47:58,840 
+to the definition
+
+736
+00:47:58,840 --> 00:48:01,859 
+and that's what you're required to do in
+the samples
+
+737
+00:48:01,859 --> 00:48:07,210 
+in the videomail okay well
+
+738
+00:48:07,210 --> 00:48:10,700 
+I indicate another example
+
+739
+00:48:10,700 --> 00:48:16,070 
+we had the example become an accumulator
+here's another example which
+
+740
+00:48:16,070 --> 00:48:19,740 
+in fact as we'll see later is
+
+741
+00:48:19,740 --> 00:48:23,390 
+a system which is a modulator
+
+742
+00:48:23,390 --> 00:48:27,700 
+the output is the input modulated and
+
+743
+00:48:27,700 --> 00:48:32,290 
+although you might think it first that
+this system
+
+744
+00:48:32,290 --> 00:48:35,550 
+is time-invariant in fact
+
+745
+00:48:35,550 --> 00:48:39,990 
+it is not because the input shifted
+
+746
+00:48:39,990 --> 00:48:43,180 
+generates an output which is
+
+747
+00:48:43,180 --> 00:48:46,220 
+the input shifted times
+
+748
+00:48:46,220 --> 00:48:50,340 
+the same modulation function whereas
+
+749
+00:48:50,340 --> 00:48:54,250 
+if we were to take the output above the
+system
+
+750
+00:48:54,250 --> 00:48:58,480 
+we're X 50 is the input than
+
+751
+00:48:58,480 --> 00:49:02,380 
+what that would correspond to
+
+752
+00:49:02,380 --> 00:49:06,640 
+is sign T-minus t0
+
+753
+00:49:06,640 --> 00:49:09,890 
+times X love t-minus 20
+
+754
+00:49:09,890 --> 00:49:13,350 
+and since these two are not equal
+
+755
+00:49:13,350 --> 00:49:17,380 
+this system is not time and very
+
+756
+00:49:17,380 --> 00:49:20,640 
+and this is an example that often
+
+757
+00:49:20,640 --> 00:49:24,770 
+causes a slight amount of difficulty
+because
+
+758
+00:49:24,770 --> 00:49:28,600 
+it seems like when you look at it it
+ought to be
+
+759
+00:49:28,600 --> 00:49:32,940 
+and so I strongly encourage you in the
+context that using
+
+760
+00:49:32,940 --> 00:49:36,050 
+working problems in the manual
+
+761
+00:49:36,050 --> 00:49:39,970 
+that you think very carefully about this
+and on
+
+762
+00:49:39,970 --> 00:49:43,060 
+and at least believe that when I told
+you was the right answer
+
+763
+00:49:43,060 --> 00:49:46,460 
+okay now the final
+
+764
+00:49:46,460 --> 00:49:49,760 
+property that I want introduced today is
+the property
+
+765
+00:49:49,760 --> 00:49:53,859 
+love linearity and
+
+766
+00:49:53,859 --> 00:49:57,200 
+linearity is defined in manner
+
+767
+00:49:57,200 --> 00:50:00,900 
+similar for continuous-time in
+discrete-time
+
+768
+00:50:00,900 --> 00:50:04,280 
+and what it says is that
+
+769
+00:50:04,280 --> 00:50:08,850 
+if we have some inputs with associated
+outputs
+
+770
+00:50:08,850 --> 00:50:12,220 
+let's say X 150 X 2ft
+
+771
+00:50:12,220 --> 00:50:16,260 
+then a system is linear
+
+772
+00:50:16,260 --> 00:50:19,859 
+if it has the proper the that the output
+
+773
+00:50:19,859 --> 00:50:23,770 
+to a linear combination of those inputs
+is the same
+
+774
+00:50:23,770 --> 00:50:27,380 
+linear combination love The Associated
+outputs
+
+775
+00:50:27,380 --> 00:50:31,350 
+and so that's what I've indicated here
+dead
+
+776
+00:50:31,350 --> 00:50:36,440 
+if we now put into the system a linear
+combination of those inputs
+
+777
+00:50:36,440 --> 00:50:39,710 
+then for linearity we require that the
+output
+
+778
+00:50:39,710 --> 00:50:43,990 
+is the same linear combination and
+exactly the same
+
+779
+00:50:43,990 --> 00:50:47,310 
+apply is in discrete-time
+
+780
+00:50:47,310 --> 00:50:51,800 
+and you can show from this definition
+dead if a system is linear
+
+781
+00:50:51,800 --> 00:50:56,030 
+with two inputs and its linear in terms
+of an arbitrary number
+
+782
+00:50:56,030 --> 00:50:59,870 
+imports I have
+
+783
+00:50:59,870 --> 00:51:03,060 
+a number of examples and
+
+784
+00:51:03,060 --> 00:51:07,090 
+these are examples there'd again I ask
+you
+
+785
+00:51:07,090 --> 00:51:11,380 
+to think about as you look at the video
+manual
+
+786
+00:51:11,380 --> 00:51:16,400 
+just to suggest the answer as well at
+the suggest but to tell you the answer
+
+787
+00:51:16,400 --> 00:51:23,400 
+the integrator as we have here is linear
+
+788
+00:51:23,710 --> 00:51:29,350 
+this system in which the output is
+double the input plus a constant
+
+789
+00:51:29,350 --> 00:51:33,180 
+you would kinda think is linear because
+it's a straight line
+
+790
+00:51:33,180 --> 00:51:37,960 
+but one has to be careful and in fact as
+it turns out
+
+791
+00:51:37,960 --> 00:51:42,880 
+this is not linear are there is a
+qualifier attached to it
+
+792
+00:51:42,880 --> 00:51:47,140 
+because it has a property referred to is
+incrementally linear
+
+793
+00:51:47,140 --> 00:51:51,750 
+which is discussed somewhat more in
+attacks
+
+794
+00:51:51,750 --> 00:51:56,260 
+and finally we have a system which is
+the square
+
+795
+00:51:56,260 --> 00:52:00,140 
+that I've indicated again here
+
+796
+00:52:00,140 --> 00:52:03,170 
+and squaring is definitely not
+
+797
+00:52:03,170 --> 00:52:07,230 
+a linear operation
+
+798
+00:52:07,230 --> 00:52:11,049 
+okay so what we've done then is to
+
+799
+00:52:11,049 --> 00:52:14,210 
+introduce a number properties systems
+
+800
+00:52:14,210 --> 00:52:19,269 
+a and we've also by the way is a stress
+previously
+
+801
+00:52:19,269 --> 00:52:24,160 
+as we've gone along introduced also a
+number of important and useful systems
+
+802
+00:52:24,160 --> 00:52:27,099 
+like the accumulator the integrator the
+differentiator
+
+803
+00:52:27,099 --> 00:52:30,329 
+et cetera well we'll see
+
+804
+00:52:30,329 --> 00:52:34,529 
+is that the properties of when you're
+ready in time invariance
+
+805
+00:52:34,529 --> 00:52:38,160 
+in particular become central
+
+806
+00:52:38,160 --> 00:52:42,549 
+important properties and in the next
+lecture
+
+807
+00:52:42,549 --> 00:52:46,029 
+what will show is there with
+
+808
+00:52:46,029 --> 00:52:49,450 
+systems that are linear and
+time-invariant
+
+809
+00:52:49,450 --> 00:52:53,480 
+the use love the impulse function
+
+810
+00:52:53,480 --> 00:52:57,259 
+both in continuous-time and
+discrete-time provides an
+
+811
+00:52:57,259 --> 00:52:58,710 
+extraordinarily
+
+812
+00:52:58,710 --> 00:53:02,319 
+important and useful mechanism
+
+813
+00:53:02,319 --> 00:53:04,700 
+for characterizing systems thank you
+

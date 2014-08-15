@@ -1,0 +1,3171 @@
+1
+00:00:00,040 --> 00:00:03,490 
+the following content is provided under
+a Creative Commons license
+
+2
+00:00:03,490 --> 00:00:07,129 
+your support will help MIT
+OpenCourseWare continue to offer
+
+3
+00:00:07,129 --> 00:00:10,580 
+high-quality educational resources for
+free
+
+4
+00:00:10,580 --> 00:00:14,360 
+to make a donation or view additional
+materials from hundreds of them IT
+
+5
+00:00:14,360 --> 00:00:15,030 
+courses
+
+6
+00:00:15,030 --> 00:00:18,110 
+visit MIT OpenCourseWare at 0 CW
+
+7
+00:00:18,110 --> 00:00:25,110 
+that MIT that EDU Horan
+
+8
+00:00:28,980 --> 00:00:29,750 
+the
+
+9
+00:00:29,750 --> 00:00:31,330 
+0
+
+10
+00:00:31,330 --> 00:00:34,500 
+the
+
+11
+00:00:34,500 --> 00:00:40,030 
+the in
+
+12
+00:00:40,030 --> 00:00:47,030 
+the new
+
+13
+00:00:48,130 --> 00:00:53,010 
+the the
+
+14
+00:00:53,010 --> 00:00:58,120 
+during the course we've developed a
+number
+
+15
+00:00:58,120 --> 00:01:02,830 
+love very powerful and useful tools and
+we've seen how
+
+16
+00:01:02,830 --> 00:01:07,130 
+these can be used in designing and
+analyzing systems for example for
+
+17
+00:01:07,130 --> 00:01:09,260 
+filtering for modulation et cetera
+
+18
+00:01:09,260 --> 00:01:12,700 
+I'd like to conclude this
+
+19
+00:01:12,700 --> 00:01:16,130 
+series of lectures with an introduction
+to one more
+
+20
+00:01:16,130 --> 00:01:19,270 
+important topic namely the
+
+21
+00:01:19,270 --> 00:01:22,930 
+analysis love feedback systems and
+
+22
+00:01:22,930 --> 00:01:27,430 
+what are the principal reasons that we
+have left
+
+23
+00:01:27,430 --> 00:01:32,760 
+this discussion to the last part of the
+cores is so that we can exploit
+
+24
+00:01:32,760 --> 00:01:36,369 
+some of the ideas that we've just
+developed in
+
+25
+00:01:36,369 --> 00:01:41,310 
+summer the previous lectures namely the
+tools afforded us by
+
+26
+00:01:41,310 --> 00:01:46,119 
+applause NZ transforms now
+
+27
+00:01:46,119 --> 00:01:49,759 
+as I had indicated in one of the
+
+28
+00:01:49,759 --> 00:01:53,399 
+very first lectures a common example
+
+29
+00:01:53,399 --> 00:01:56,800 
+a feedback system is the problem love
+let's say
+
+30
+00:01:56,800 --> 00:02:00,649 
+balancing a broom or in the case if that
+lecture balancing
+
+31
+00:02:00,649 --> 00:02:04,229 
+my son's force on in the palm of your
+hand
+
+32
+00:02:04,229 --> 00:02:07,590 
+and kinda the idea there is dead
+
+33
+00:02:07,590 --> 00:02:11,020 
+what that relies on in order to
+
+34
+00:02:11,020 --> 00:02:16,380 
+make that a stable system is feedback in
+that particular case visual feedback
+
+35
+00:02:16,380 --> 00:02:22,050 
+that specific problem the one about
+saying something let's say in the palm
+
+36
+00:02:22,050 --> 00:02:22,940 
+of your hand
+
+37
+00:02:22,940 --> 00:02:28,319 
+is an example love a problem which is
+commonly referred to as
+
+38
+00:02:28,319 --> 00:02:33,069 
+inverted pendulum and it's one that we
+will actually be analyzing
+
+39
+00:02:33,069 --> 00:02:36,610 
+in a fair manner detailed not in this
+lecture but in the next lecture
+
+40
+00:02:36,610 --> 00:02:40,100 
+but let me just kinda vindicate what so
+the issues
+
+41
+00:02:40,100 --> 00:02:46,060 
+are let me describe this into context
+not over balancing a broom on your hand
+
+42
+00:02:46,060 --> 00:02:46,569 
+but
+
+43
+00:02:46,569 --> 00:02:50,209 
+let's say that we have a mechanical
+system which consists of a card
+
+44
+00:02:50,209 --> 00:02:54,190 
+and the card can move let's say in one
+dimension
+
+45
+00:02:54,190 --> 00:02:57,590 
+and it has mounted on it
+
+46
+00:02:57,590 --> 00:03:00,599 
+a bar a ride with the weight on the top
+
+47
+00:03:00,599 --> 00:03:05,299 
+and it pivots around the base so that
+essentially represents the
+
+48
+00:03:05,299 --> 00:03:08,709 
+inverted pendulum so that system can be
+
+49
+00:03:08,709 --> 00:03:13,610 
+more or less depicted as i've indicated
+here and this is the cart
+
+50
+00:03:13,610 --> 00:03:17,360 
+that can move along the x-axis and
+
+51
+00:03:17,360 --> 00:03:21,819 
+here we have a pivot point a ride await
+at the top
+
+52
+00:03:21,819 --> 00:03:24,930 
+and then of course there's several
+forces acting on this and
+
+53
+00:03:24,930 --> 00:03:28,489 
+their is an acceleration that can be
+applied to the cart:
+
+54
+00:03:28,489 --> 00:03:32,540 
+and that will be thought a as the
+external input
+
+55
+00:03:32,540 --> 00:03:36,519 
+and then on the pendulum itself on the
+wait
+
+56
+00:03:36,519 --> 00:03:39,670 
+there is the force of gravity and
+
+57
+00:03:39,670 --> 00:03:43,480 
+then typically said if external
+disturbances that might
+
+58
+00:03:43,480 --> 00:03:47,510 
+represent for example air currents or
+wind or whatever
+
+59
+00:03:47,510 --> 00:03:50,709 
+dead will attempt to
+
+60
+00:03:50,709 --> 00:03:54,670 
+Dez to destabilize the system
+specifically
+
+61
+00:03:54,670 --> 00:03:58,909 
+to have the pendulum fall down now
+
+62
+00:03:58,909 --> 00:04:02,180 
+if we look at this system in more or
+less
+
+63
+00:04:02,180 --> 00:04:05,689 
+a straightforward way what we have then
+
+64
+00:04:05,689 --> 00:04:10,519 
+are the system dynamics and
+
+65
+00:04:10,519 --> 00:04:15,409 
+several inputs one of which is the
+external disturbances
+
+66
+00:04:15,409 --> 00:04:19,299 
+and the second is the acceleration which
+is
+
+67
+00:04:19,299 --> 00:04:23,310 
+the external acceleration is supplied
+and the app for the system can be
+
+68
+00:04:23,310 --> 00:04:24,120 
+thought I love
+
+69
+00:04:24,120 --> 00:04:28,030 
+as the angular displacement love the
+pendulum which
+
+70
+00:04:28,030 --> 00:04:33,090 
+if we want a balanced we would like that
+angular displacement to be equal to 0
+
+71
+00:04:33,090 --> 00:04:38,830 
+now if we know exactly what the system
+dynamics are
+
+72
+00:04:38,830 --> 00:04:42,660 
+and if we knew exactly what the external
+disturbances are
+
+73
+00:04:42,660 --> 00:04:47,540 
+invented principal we could design and
+acceleration namely an input
+
+74
+00:04:47,540 --> 00:04:50,820 
+dead would exactly generate
+
+75
+00:04:50,820 --> 00:04:56,110 
+0 output in other words the angle would
+be equal to 0 but as you can imagine
+
+76
+00:04:56,110 --> 00:04:59,910 
+just is its basically impossible to
+balance a broom
+
+77
+00:04:59,910 --> 00:05:04,520 
+in the palm of your hand with your eyes
+close
+
+78
+00:05:04,520 --> 00:05:08,880 
+what is very hard to ascertain in
+advance or what the various
+
+79
+00:05:08,880 --> 00:05:12,530 
+dynamics and disturbances are and so
+more typically
+
+80
+00:05:12,530 --> 00:05:15,919 
+what you with a kid doing is measuring
+
+81
+00:05:15,919 --> 00:05:18,930 
+the output angle and
+
+82
+00:05:18,930 --> 00:05:22,000 
+then using that measurement to somehow
+
+83
+00:05:22,000 --> 00:05:25,940 
+influence the applied acceleration or
+fours
+
+84
+00:05:25,940 --> 00:05:29,669 
+and that then is an example other
+feedback system
+
+85
+00:05:29,669 --> 00:05:33,360 
+so we would major the output angle
+
+86
+00:05:33,360 --> 00:05:36,500 
+and generate
+
+87
+00:05:36,500 --> 00:05:40,090 
+an input acceleration which is
+
+88
+00:05:40,090 --> 00:05:44,300 
+some function love what that output
+angle is
+
+89
+00:05:44,300 --> 00:05:48,030 
+and if we choose the feedback dynamics
+correctly
+
+90
+00:05:48,030 --> 00:05:52,430 
+then in fact we can drive this output 20
+
+91
+00:05:52,430 --> 00:05:56,229 
+this is one example love a system
+
+92
+00:05:56,229 --> 00:06:00,910 
+which is inherently unstable because if
+we left it to its own
+
+93
+00:06:00,910 --> 00:06:05,410 
+devices the pendulum with simply fall
+down and essentially by applying
+
+94
+00:06:05,410 --> 00:06:06,440 
+feedback
+
+95
+00:06:06,440 --> 00:06:10,400 
+what we're trying to do is stabilize
+this inherently unstable system
+
+96
+00:06:10,400 --> 00:06:15,000 
+and we'll talk a little bit more about
+that specific application feedback
+
+97
+00:06:15,000 --> 00:06:19,710 
+shortly another common example a
+feedback
+
+98
+00:06:19,710 --> 00:06:22,949 
+is in positioning our tracking systems
+
+99
+00:06:22,949 --> 00:06:26,150 
+and I aid indicate one here
+
+100
+00:06:26,150 --> 00:06:30,069 
+which corresponds to the problem love
+positioning
+
+101
+00:06:30,069 --> 00:06:33,990 
+a telescope which is mounted on a
+rotating platform
+
+102
+00:06:33,990 --> 00:06:37,880 
+so in a system that tape for example
+
+103
+00:06:37,880 --> 00:06:41,979 
+I indicate here the rotating platform in
+the telescope
+
+104
+00:06:41,979 --> 00:06:45,539 
+it's driven by a motor and again
+
+105
+00:06:45,539 --> 00:06:48,729 
+we could imagine in principle the
+possibility love
+
+106
+00:06:48,729 --> 00:06:51,889 
+driving this to the desired angle
+
+107
+00:06:51,889 --> 00:06:56,379 
+by choosing an appropriate applied input
+voltage
+
+108
+00:06:56,379 --> 00:07:01,129 
+and as long as we know such things as
+what the disturbances are that influence
+
+109
+00:07:01,129 --> 00:07:05,240 
+the telescope mount and what the
+characteristics that the motor are
+
+110
+00:07:05,240 --> 00:07:08,410 
+in principle we could in fact
+
+111
+00:07:08,410 --> 00:07:11,870 
+carry this out in a form which is
+referred to as open loop
+
+112
+00:07:11,870 --> 00:07:16,139 
+namely we can choose an appropriate
+input voltage
+
+113
+00:07:16,139 --> 00:07:19,259 
+to drive a motor to set
+
+114
+00:07:19,259 --> 00:07:24,460 
+the platform ankle at the desired
+angular position
+
+115
+00:07:24,460 --> 00:07:29,250 
+however again there are enough unknowns
+in a problem like that
+
+116
+00:07:29,250 --> 00:07:32,830 
+so that one is motivated to employ
+
+117
+00:07:32,830 --> 00:07:36,050 
+feedback namely to make a measurement
+
+118
+00:07:36,050 --> 00:07:41,229 
+up the output angle and use that in a
+feedback loop
+
+119
+00:07:41,229 --> 00:07:45,190 
+to influence the press the drive for the
+motor
+
+120
+00:07:45,190 --> 00:07:50,629 
+so that the motor so that the telescope
+platform is positioned appropriately
+
+121
+00:07:50,629 --> 00:07:54,050 
+so if we look at this in a feedback
+
+122
+00:07:54,050 --> 00:07:57,650 
+context we would then
+
+123
+00:07:57,650 --> 00:08:01,780 
+take the measured output angle
+
+124
+00:08:01,780 --> 00:08:05,900 
+and the measured output angle
+
+125
+00:08:05,900 --> 00:08:09,909 
+would be fed back and compared
+
+126
+00:08:09,909 --> 00:08:13,460 
+with the desired angle and
+
+127
+00:08:13,460 --> 00:08:17,270 
+the difference between those which
+essentially is the error between the
+
+128
+00:08:17,270 --> 00:08:20,280 
+platform positioning and the desired
+position
+
+129
+00:08:20,280 --> 00:08:25,180 
+would be put perhaps through an
+appropriate gainer attenuation
+
+130
+00:08:25,180 --> 00:08:28,870 
+and used as the exhortation to the motor
+
+131
+00:08:28,870 --> 00:08:32,330 
+so in the mechanical or physical system
+
+132
+00:08:32,330 --> 00:08:37,150 
+that would correspond to measuring the
+angle let's say
+
+133
+00:08:37,150 --> 00:08:40,700 
+with the potentiometer so here we're
+measuring
+
+134
+00:08:40,700 --> 00:08:44,050 
+the angle and we have an output which is
+proportional
+
+135
+00:08:44,050 --> 00:08:47,920 
+to that measured angle and then we would
+use
+
+136
+00:08:47,920 --> 00:08:51,690 
+feedback comparing
+
+137
+00:08:51,690 --> 00:08:56,240 
+the measured angle to some
+
+138
+00:08:56,240 --> 00:09:00,540 
+proportionality factor multiplying the
+desired angle
+
+139
+00:09:00,540 --> 00:09:03,560 
+so here we have the desired angle
+
+140
+00:09:03,560 --> 00:09:06,670 
+again through some type a potentiometer
+
+141
+00:09:06,670 --> 00:09:09,990 
+the two are compared I do the comparator
+
+142
+00:09:09,990 --> 00:09:13,230 
+we basically have an indication of what
+the difference
+
+143
+00:09:13,230 --> 00:09:17,230 
+is and that represents an error between
+the desired in the true Engel
+
+144
+00:09:17,230 --> 00:09:21,760 
+and then that is used through perhaps an
+amplifier
+
+145
+00:09:21,760 --> 00:09:25,390 
+to control the motor and in that case
+
+146
+00:09:25,390 --> 00:09:29,940 
+of course when the air goes to zero that
+means that the actual angle on the
+
+147
+00:09:29,940 --> 00:09:31,050 
+desired angle
+
+148
+00:09:31,050 --> 00:09:35,130 
+are equal and in fact in that case also
+with this system
+
+149
+00:09:35,130 --> 00:09:40,190 
+the input to the motor is likewise equal
+to 0
+
+150
+00:09:40,190 --> 00:09:43,190 
+now and as i've illustrated here
+
+151
+00:09:43,190 --> 00:09:47,220 
+it tends to be in the context or a
+continuous-time
+
+152
+00:09:47,220 --> 00:09:51,089 
+or analog system and in fact another
+very common
+
+153
+00:09:51,089 --> 00:09:54,870 
+way of doing positioning or tracking is
+
+154
+00:09:54,870 --> 00:09:58,890 
+to instead implement the feedback
+
+155
+00:09:58,890 --> 00:10:02,300 
+using a discrete I'm a digital system
+
+156
+00:10:02,300 --> 00:10:06,120 
+and so in that case we would basically
+take the
+
+157
+00:10:06,120 --> 00:10:09,779 
+position output as its measures
+
+158
+00:10:09,779 --> 00:10:12,820 
+sample at a sexually
+
+159
+00:10:12,820 --> 00:10:16,709 
+convert that to additional discrete-time
+
+160
+00:10:16,709 --> 00:10:22,060 
+signal and then that is used in
+conjunction
+
+161
+00:10:22,060 --> 00:10:26,570 
+with the desired angle
+
+162
+00:10:26,570 --> 00:10:30,070 
+which both foreign ports to this
+processor
+
+163
+00:10:30,070 --> 00:10:34,570 
+and the output a bad is converted let's
+say back to
+
+164
+00:10:34,570 --> 00:10:40,089 
+and a an analog a continuous-time
+voltage and used to drive the motor
+
+165
+00:10:40,089 --> 00:10:43,790 
+now you could ask why would you go to
+
+166
+00:10:43,790 --> 00:10:47,310 
+a digital or discrete time measurement
+rather than doing it
+
+167
+00:10:47,310 --> 00:10:51,100 
+the way a I showed on the previous
+overlay which seemed relatively
+
+168
+00:10:51,100 --> 00:10:52,500 
+straightforward
+
+169
+00:10:52,500 --> 00:10:56,889 
+and the reason principally is dead in
+the context of a digital implementation
+
+170
+00:10:56,889 --> 00:11:00,200 
+the feedback process often
+
+171
+00:11:00,200 --> 00:11:03,459 
+you can implement a better controlled
+
+172
+00:11:03,459 --> 00:11:06,800 
+an offense also more sophisticated
+
+173
+00:11:06,800 --> 00:11:12,700 
+algorithm for the feedback dynamic so
+that you can take a cab perhaps not only
+
+174
+00:11:12,700 --> 00:11:17,660 
+the angle itself but also love the rate
+of change a bang going in fact
+
+175
+00:11:17,660 --> 00:11:21,240 
+the rate of change in the rate of change
+in angle and
+
+176
+00:11:21,240 --> 00:11:24,310 
+so the system Isis shown air then
+
+177
+00:11:24,310 --> 00:11:28,200 
+is basically has a discrete-time
+
+178
+00:11:28,200 --> 00:11:33,000 
+or digital feedback loop around a
+continuous-time system
+
+179
+00:11:33,000 --> 00:11:36,010 
+now open this is an example 0
+
+180
+00:11:36,010 --> 00:11:39,769 
+in fact the more general way in which
+
+181
+00:11:39,769 --> 00:11:43,200 
+discrete-time feedback is used with
+
+182
+00:11:43,200 --> 00:11:46,459 
+continuous systems and
+
+183
+00:11:46,459 --> 00:11:49,700 
+let me indicate in general what such
+
+184
+00:11:49,700 --> 00:11:53,510 
+what the character a block diagram such
+a system might be
+
+185
+00:11:53,510 --> 00:11:59,089 
+typically if we abstract away from the
+telescope Positioning System
+
+186
+00:11:59,089 --> 00:12:03,700 
+we might have a more general
+continuous-time system
+
+187
+00:12:03,700 --> 00:12:08,519 
+and around which we want to apply some
+feedback which we could do with a
+
+188
+00:12:08,519 --> 00:12:10,260 
+continuous-time system
+
+189
+00:12:10,260 --> 00:12:13,899 
+or with the discrete-time system by
+first
+
+190
+00:12:13,899 --> 00:12:20,310 
+converting the signals to discrete-time
+signals
+
+191
+00:12:20,310 --> 00:12:24,610 
+then processing that with a
+discrete-time system
+
+192
+00:12:24,610 --> 00:12:28,610 
+and then through inappropriate
+interpolation algorithm
+
+193
+00:12:28,610 --> 00:12:32,410 
+we would then convert that back to
+
+194
+00:12:32,410 --> 00:12:36,029 
+a continuous-time signal and
+
+195
+00:12:36,029 --> 00:12:40,240 
+the difference between the input signal
+and this continues to signal which is
+
+196
+00:12:40,240 --> 00:12:41,410 
+fed back
+
+197
+00:12:41,410 --> 00:12:44,730 
+then forms the exhortation to the system
+that
+
+198
+00:12:44,730 --> 00:12:47,949 
+essentially we're trying to control and
+in
+
+199
+00:12:47,949 --> 00:12:51,860 
+many systems that this type the
+advantage
+
+200
+00:12:51,860 --> 00:12:54,959 
+is that this system can be implemented
+
+201
+00:12:54,959 --> 00:12:58,769 
+in a very reproducible way either with a
+digital computer computer
+
+202
+00:12:58,769 --> 00:13:02,250 
+or with microprocessor and although
+
+203
+00:13:02,250 --> 00:13:06,120 
+we're not going to go into this in any
+detail
+
+204
+00:13:06,120 --> 00:13:10,579 
+in this lecture there is some discussion
+this in the text
+
+205
+00:13:10,579 --> 00:13:14,149 
+essentially if we make certain
+assumptions about
+
+206
+00:13:14,149 --> 00:13:18,079 
+this particular feedback system we can
+
+207
+00:13:18,079 --> 00:13:22,570 
+move the continues to discrete-time
+converter
+
+208
+00:13:22,570 --> 00:13:26,500 
+up to this point and to this point and
+we can move
+
+209
+00:13:26,500 --> 00:13:30,070 
+the interpolating system outside
+
+210
+00:13:30,070 --> 00:13:34,050 
+the summer and what happens in that case
+
+211
+00:13:34,050 --> 00:13:37,209 
+is that we end up with what
+
+212
+00:13:37,209 --> 00:13:41,399 
+looks like an inherently discrete-time
+
+213
+00:13:41,399 --> 00:13:45,310 
+feedback system so in fact we take those
+steps
+
+214
+00:13:45,310 --> 00:13:48,959 
+then what we'll end up with for a
+feedback system
+
+215
+00:13:48,959 --> 00:13:52,040 
+is a system that essentially
+
+216
+00:13:52,040 --> 00:13:55,800 
+can be analyzed as a discrete-time
+system
+
+217
+00:13:55,800 --> 00:13:59,240 
+here we have what is in the forward path
+
+218
+00:13:59,240 --> 00:14:02,370 
+and is basically the continuous-time
+system
+
+219
+00:14:02,370 --> 00:14:06,519 
+with the interpolator at one end and it
+continues to discrete-time converter at
+
+220
+00:14:06,519 --> 00:14:07,690 
+the other end
+
+221
+00:14:07,690 --> 00:14:11,889 
+and then we have whatever system it was
+in the feedback loop
+
+222
+00:14:11,889 --> 00:14:15,300 
+discrete-time that shows up in this
+
+223
+00:14:15,300 --> 00:14:18,529 
+feedback loop well show this
+
+224
+00:14:18,529 --> 00:14:22,680 
+mainly to emphasize the fact although
+there are some steps there that we
+
+225
+00:14:22,680 --> 00:14:24,459 
+obviously left out
+
+226
+00:14:24,459 --> 00:14:28,589 
+I show that mainly to emphasize the fact
+that feedback arises
+
+227
+00:14:28,589 --> 00:14:32,100 
+not just in the context of
+continuous-time systems
+
+228
+00:14:32,100 --> 00:14:35,660 
+but also the analysis love discrete-time
+
+229
+00:14:35,660 --> 00:14:39,910 
+feedback systems becomes important
+perhaps because
+
+230
+00:14:39,910 --> 00:14:44,639 
+we have used discrete-time feedback
+around a continuous-time system
+
+231
+00:14:44,639 --> 00:14:48,779 
+but also perhaps because the feedback
+system
+
+232
+00:14:48,779 --> 00:14:52,540 
+is inherently discrete-time in lobby and
+just illustrate
+
+233
+00:14:52,540 --> 00:14:55,600 
+one or indicate one example in which
+
+234
+00:14:55,600 --> 00:14:59,139 
+that might arise this is an example
+
+235
+00:14:59,139 --> 00:15:02,139 
+in which which is also
+
+236
+00:15:02,139 --> 00:15:05,269 
+discussed in so in more detail in the
+text
+
+237
+00:15:05,269 --> 00:15:09,970 
+but basically population studies for
+example
+
+238
+00:15:09,970 --> 00:15:14,880 
+represent examples all discrete-time
+feedback systems
+
+239
+00:15:14,880 --> 00:15:19,449 
+where let's say that we have some type
+of model
+
+240
+00:15:19,449 --> 00:15:23,009 
+for population growth and since people
+come
+
+241
+00:15:23,009 --> 00:15:27,300 
+in imager amounts that represents
+essentially
+
+242
+00:15:27,300 --> 00:15:31,870 
+the the I the output over any population
+model
+
+243
+00:15:31,870 --> 00:15:35,250 
+essentially are inherently represents a
+sequence namely its index
+
+244
+00:15:35,250 --> 00:15:38,600 
+on an integer variable
+
+245
+00:15:38,600 --> 00:15:42,820 
+and typically models for population
+growth
+
+246
+00:15:42,820 --> 00:15:47,350 
+are unstable systems you can kind
+imagine that because
+
+247
+00:15:47,350 --> 00:15:52,009 
+if you take simple models the population
+and what happens is that
+
+248
+00:15:52,009 --> 00:15:55,139 
+the in any generation the
+
+249
+00:15:55,139 --> 00:15:58,410 
+number all people or
+
+250
+00:15:58,410 --> 00:16:01,630 
+animals or whatever it is that this is
+modeling
+
+251
+00:16:01,630 --> 00:16:05,180 
+grows essentially exponentially I love
+with
+
+252
+00:16:05,180 --> 00:16:09,350 
+the size the previous generation now
+where does the feedback come in
+
+253
+00:16:09,350 --> 00:16:13,160 
+well the feedback typically comes in in
+in
+
+254
+00:16:13,160 --> 00:16:18,240 
+incorporating in the overall model
+various retarding factors for example
+
+255
+00:16:18,240 --> 00:16:22,290 
+as the population increases the food
+supply becomes more limited
+
+256
+00:16:22,290 --> 00:16:26,779 
+and that a sexually as a feedback
+process
+
+257
+00:16:26,779 --> 00:16:30,019 
+dead acts to
+
+258
+00:16:30,019 --> 00:16:33,420 
+retard the population growth and so
+
+259
+00:16:33,420 --> 00:16:37,000 
+an overall model are somewhat simplified
+
+260
+00:16:37,000 --> 00:16:41,199 
+for a for a population system
+
+261
+00:16:41,199 --> 00:16:46,269 
+is the open-loop model in the absence of
+retarding factors
+
+262
+00:16:46,269 --> 00:16:49,579 
+and then very often the retarding
+factors
+
+263
+00:16:49,579 --> 00:16:53,380 
+can be described as being related
+
+264
+00:16:53,380 --> 00:16:56,720 
+to the size of the population and those
+
+265
+00:16:56,720 --> 00:16:59,920 
+essentially act to reduce
+
+266
+00:16:59,920 --> 00:17:04,060 
+the overall input to the population
+model
+
+267
+00:17:04,060 --> 00:17:07,470 
+and so population studies are
+
+268
+00:17:07,470 --> 00:17:14,470 
+one very common example love
+discrete-time feedback systems
+
+269
+00:17:14,819 --> 00:17:17,940 
+well what would a look at and understand
+
+270
+00:17:17,940 --> 00:17:21,150 
+are the basic properties love
+
+271
+00:17:21,150 --> 00:17:24,600 
+feedback systems and to do that
+
+272
+00:17:24,600 --> 00:17:28,790 
+let's look at the basic block diagrams
+and equations
+
+273
+00:17:28,790 --> 00:17:32,220 
+for feedback systems either
+continuous-time and discrete-time
+
+274
+00:17:32,220 --> 00:17:35,280 
+let's begin with
+
+275
+00:17:35,280 --> 00:17:38,560 
+the continuous-time case
+
+276
+00:17:38,560 --> 00:17:44,200 
+and now what we've done is simply
+abstract out
+
+277
+00:17:44,200 --> 00:17:48,310 
+any of the applications to a fairly
+general system
+
+278
+00:17:48,310 --> 00:17:51,880 
+in which we have a system HVS
+
+279
+00:17:51,880 --> 00:17:56,730 
+in what's referred to as the forward
+path
+
+280
+00:17:56,730 --> 00:18:00,400 
+and a system GIS in the feedback path
+
+281
+00:18:00,400 --> 00:18:03,590 
+and the the
+
+282
+00:18:03,590 --> 00:18:08,200 
+input to the system HVS is the
+difference between the input to the
+
+283
+00:18:08,200 --> 00:18:09,720 
+overall system
+
+284
+00:18:09,720 --> 00:18:13,010 
+and the output out the feedback loop
+
+285
+00:18:13,010 --> 00:18:16,210 
+and I draw your attention to the fact
+that
+
+286
+00:18:16,210 --> 00:18:20,700 
+what we illustrate here and what we're
+analyzing is negative feedback
+
+287
+00:18:20,700 --> 00:18:23,730 
+namely this out this output is attracted
+
+288
+00:18:23,730 --> 00:18:26,830 
+from the input and thats done
+
+289
+00:18:26,830 --> 00:18:30,370 
+more for reasons have convention than
+for any other reasons
+
+290
+00:18:30,370 --> 00:18:34,110 
+its typical to do that an appropriate
+certainly
+
+291
+00:18:34,110 --> 00:18:37,580 
+in some feedback systems but not all and
+
+292
+00:18:37,580 --> 00:18:42,340 
+the output of the answer is commonly
+referred to as the error signal
+
+293
+00:18:42,340 --> 00:18:45,840 
+indicating that is the difference
+between the signal fed back
+
+294
+00:18:45,840 --> 00:18:49,250 
+and the input to the overall system
+
+295
+00:18:49,250 --> 00:18:52,940 
+now if we want to analyze the feedback
+system
+
+296
+00:18:52,940 --> 00:18:55,960 
+we would do that essentially by writing
+the appropriate equations
+
+297
+00:18:55,960 --> 00:18:59,640 
+and its best done and generating
+
+298
+00:18:59,640 --> 00:19:03,090 
+the equivalent system function for the
+overall system
+
+299
+00:19:03,090 --> 00:19:08,060 
+it's best on in the frequency or poss
+transform domain
+
+300
+00:19:08,060 --> 00:19:11,770 
+rather than a in the time domain and let
+me just indicate
+
+301
+00:19:11,770 --> 00:19:15,770 
+what the steps are that are involved in
+there are few steps have algebra that
+
+302
+00:19:15,770 --> 00:19:20,350 
+I that I'll leave in your hands but
+basically if we look at
+
+303
+00:19:20,350 --> 00:19:26,030 
+this feedback system we can label of
+course is the output is why ft
+
+304
+00:19:26,030 --> 00:19:30,450 
+we can label they look lost transform
+the output is why evas
+
+305
+00:19:30,450 --> 00:19:35,330 
+and we also have YS as the input here
+
+306
+00:19:35,330 --> 00:19:41,160 
+because this is the system function the
+apostrophe s former varsity is simply
+
+307
+00:19:41,160 --> 00:19:45,060 
+the applause transformer this and for
+which is why our best times Govs
+
+308
+00:19:45,060 --> 00:19:48,400 
+so here we have why evas times
+
+309
+00:19:48,400 --> 00:19:51,950 
+Govs at the air
+
+310
+00:19:51,950 --> 00:19:55,950 
+the input here is excessive ass
+
+311
+00:19:55,950 --> 00:19:59,980 
+and so the law applies transform of the
+error signal
+
+312
+00:19:59,980 --> 00:20:04,330 
+is simply exit ass
+
+313
+00:20:04,330 --> 00:20:09,690 
+minus our best which is why I've SG a
+vast so this is minus why evas
+
+314
+00:20:09,690 --> 00:20:13,050 
+GFS thats
+
+315
+00:20:13,050 --> 00:20:17,160 
+the love postures for the error signal
+the apostrophe its form
+
+316
+00:20:17,160 --> 00:20:21,330 
+all the output if this system is simply
+
+317
+00:20:21,330 --> 00:20:25,320 
+this expression times HFS
+
+318
+00:20:25,320 --> 00:20:30,610 
+so that's what we have here but what we
+have here we already called why evas
+
+319
+00:20:30,610 --> 00:20:34,050 
+so in fact we can simply say dead
+
+320
+00:20:34,050 --> 00:20:37,180 
+these two expressions have to be equal
+
+321
+00:20:37,180 --> 00:20:40,570 
+and so we've essentially done the
+analysis
+
+322
+00:20:40,570 --> 00:20:44,000 
+saying that those two expressions are
+equal lets us
+
+323
+00:20:44,000 --> 00:20:48,940 
+solve for y más over Xmas which is the
+overall system function
+
+324
+00:20:48,940 --> 00:20:53,750 
+and if we do that what we end up with
+for the overall system function
+
+325
+00:20:53,750 --> 00:20:56,910 
+is the algebraic expression that I
+indicate here
+
+326
+00:20:56,910 --> 00:21:00,400 
+its HFS divided by one-plus
+
+327
+00:21:00,400 --> 00:21:03,960 
+GFS HFS said another way
+
+328
+00:21:03,960 --> 00:21:10,050 
+its the system function in the open-loop
+forward path
+
+329
+00:21:10,050 --> 00:21:15,170 
+divided by one-plus what's referred to
+as the loop gain
+
+330
+00:21:15,170 --> 00:21:19,810 
+GFS times HFS let's just look back up at
+the block diagram
+
+331
+00:21:19,810 --> 00:21:23,050 
+GFS times HFS is
+
+332
+00:21:23,050 --> 00:21:27,180 
+simply the gain around the entire loop
+
+333
+00:21:27,180 --> 00:21:30,800 
+from this point around to this point
+
+334
+00:21:30,800 --> 00:21:35,390 
+so the overall system function is the
+gain in the forward path
+
+335
+00:21:35,390 --> 00:21:39,180 
+divided by one-plus the loop gain which
+is
+
+336
+00:21:39,180 --> 00:21:43,480 
+HFS times GFS now
+
+337
+00:21:43,480 --> 00:21:47,680 
+none of the equations that we wrote head
+relied specifically on this being
+
+338
+00:21:47,680 --> 00:21:49,910 
+continuous time we just did some algebra
+
+339
+00:21:49,910 --> 00:21:53,540 
+and we use the system function property
+of the system's
+
+340
+00:21:53,540 --> 00:21:57,690 
+at so pretty obviously the same kinda
+
+341
+00:21:57,690 --> 00:22:01,780 
+algebraic procedure would work in
+discrete-time
+
+342
+00:22:01,780 --> 00:22:07,250 
+and so in fact if we carried out a
+discrete-time analysis
+
+343
+00:22:07,250 --> 00:22:10,980 
+rather than a continuous-time analysis
+we would simply
+
+344
+00:22:10,980 --> 00:22:15,160 
+and up with exactly the same
+
+345
+00:22:15,160 --> 00:22:18,590 
+system and exactly the same
+
+346
+00:22:18,590 --> 00:22:22,170 
+a question for the
+
+347
+00:22:22,170 --> 00:22:26,490 
+overall system function the only
+difference being that
+
+348
+00:22:26,490 --> 00:22:31,440 
+here things are functional see whereas
+if I just flipped back
+
+349
+00:22:31,440 --> 00:22:34,780 
+the other overlay we simply have
+
+350
+00:22:34,780 --> 00:22:40,050 
+previously everything as a function of
+tea and a frequency-domain
+
+351
+00:22:40,050 --> 00:22:43,700 
+s in the discrete-time case
+
+352
+00:22:43,700 --> 00:22:48,160 
+we've simply replaced in the time domain
+the independent variable by
+
+353
+00:22:48,160 --> 00:22:51,780 
+and and in the frequency domain
+
+354
+00:22:51,780 --> 00:22:54,860 
+the independent variable by C
+
+355
+00:22:54,860 --> 00:22:58,360 
+so what we see is that
+
+356
+00:22:58,360 --> 00:23:01,790 
+the we have a basic feedback equation
+
+357
+00:23:01,790 --> 00:23:06,040 
+and that feedback equation is exactly
+the same for continuous-time and
+
+358
+00:23:06,040 --> 00:23:07,220 
+discrete-time
+
+359
+00:23:07,220 --> 00:23:11,560 
+although we have to be careful about
+what implications we draw
+
+360
+00:23:11,560 --> 00:23:15,260 
+depending on whether we're talking about
+continuous-time
+
+361
+00:23:15,260 --> 00:23:18,840 
+for discrete-time
+
+362
+00:23:18,840 --> 00:23:21,910 
+now to illustrate
+
+363
+00:23:21,910 --> 00:23:25,560 
+the importance a feedback let's look at
+
+364
+00:23:25,560 --> 00:23:28,750 
+a number love common applications
+
+365
+00:23:28,750 --> 00:23:32,530 
+and also as we talk about these
+applications will see
+
+366
+00:23:32,530 --> 00:23:35,860 
+is dead while these applications
+
+367
+00:23:35,860 --> 00:23:39,240 
+and context in which feedback is used
+are
+
+368
+00:23:39,240 --> 00:23:42,270 
+extremely useful and powerful they
+
+369
+00:23:42,270 --> 00:23:46,320 
+fallout in a an almost straightforward
+way
+
+370
+00:23:46,320 --> 00:23:49,440 
+from is very simple feedback equation
+
+371
+00:23:49,440 --> 00:23:52,780 
+that we've just arrived well
+
+372
+00:23:52,780 --> 00:23:55,990 
+the examples that I want to just talk
+about
+
+373
+00:23:55,990 --> 00:23:59,000 
+are for civil the
+
+374
+00:23:59,000 --> 00:24:03,040 
+use the feedback in amplifier design and
+we're not going to
+
+375
+00:24:03,040 --> 00:24:07,320 
+design ample fires in detail but what
+I'd like to illustrate
+
+376
+00:24:07,320 --> 00:24:12,100 
+is the basic principle behind why
+feedback
+
+377
+00:24:12,100 --> 00:24:16,130 
+is useful in designing amplifiers in
+particular
+
+378
+00:24:16,130 --> 00:24:19,170 
+how it plays a role in compensating
+
+379
+00:24:19,170 --> 00:24:22,310 
+for a9 constant frequency response
+
+380
+00:24:22,310 --> 00:24:25,440 
+that's so that's one context that will
+talk about
+
+381
+00:24:25,440 --> 00:24:30,210 
+a second that I'll indicate is the use
+the feedback
+
+382
+00:24:30,210 --> 00:24:33,890 
+for implementing infers systems
+
+383
+00:24:33,890 --> 00:24:37,690 
+and a third which we indicated it
+
+384
+00:24:37,690 --> 00:24:41,000 
+in the case the inverted pendulum is
+important
+
+385
+00:24:41,000 --> 00:24:45,860 
+context in which feedback is used is in
+stabilizing unstable systems
+
+386
+00:24:45,860 --> 00:24:50,420 
+and what we want to see is wire how
+
+387
+00:24:50,420 --> 00:24:54,880 
+the a feedback system where the basic
+feedback equation
+
+388
+00:24:54,880 --> 00:24:59,260 
+in fact letters to each of these various
+things
+
+389
+00:24:59,260 --> 00:25:02,770 
+well let's begin with amplifier design
+
+390
+00:25:02,770 --> 00:25:06,080 
+and let's suppose that we've
+
+391
+00:25:06,080 --> 00:25:09,180 
+built somehow without feedback
+
+392
+00:25:09,180 --> 00:25:13,380 
+and ample fire that is terrific in terms
+of its game
+
+393
+00:25:13,380 --> 00:25:18,820 
+but has the problem dead whereas we
+might like the ample fire to have
+
+394
+00:25:18,820 --> 00:25:23,320 
+a very flat frequency response in fact
+the frequency response to the sample
+
+395
+00:25:23,320 --> 00:25:24,190 
+fire
+
+396
+00:25:24,190 --> 00:25:27,490 
+is 9 constant and what we'd like to do
+
+397
+00:25:27,490 --> 00:25:31,650 
+is compensate for that well it turns out
+interestingly
+
+398
+00:25:31,650 --> 00:25:36,190 
+dead if we embed the amplifier in a
+feedback loop
+
+399
+00:25:36,190 --> 00:25:41,170 
+where in a feedback path we incorporate
+an attenuator
+
+400
+00:25:41,170 --> 00:25:46,500 
+then in fact we can compensate for that
+nine constant frequency response
+
+401
+00:25:46,500 --> 00:25:49,970 
+well let's see how that works out for
+the feedback equation
+
+402
+00:25:49,970 --> 00:25:54,310 
+we have the basic feedback equation we
+derive that we want to look at frequency
+
+403
+00:25:54,310 --> 00:25:55,340 
+response
+
+404
+00:25:55,340 --> 00:25:59,810 
+so we look specifically at the Fourier
+transform and of course
+
+405
+00:25:59,810 --> 00:26:03,050 
+the frequency response to be overall
+system is
+
+406
+00:26:03,050 --> 00:26:07,190 
+the frequency response to the out at the
+Fourier transform the output divided by
+
+407
+00:26:07,190 --> 00:26:11,490 
+the input using the feedback equation
+that we just arrived
+
+408
+00:26:11,490 --> 00:26:17,360 
+that has in the numerator the frequency
+response in the forward path divided by
+
+409
+00:26:17,360 --> 00:26:18,410 
+one plus
+
+410
+00:26:18,410 --> 00:26:23,420 
+the loop gain which is hijo may get
+times K
+
+411
+00:26:23,420 --> 00:26:27,080 
+and this is the key because here
+
+412
+00:26:27,080 --> 00:26:30,570 
+if we choose K times HJ Omega
+
+413
+00:26:30,570 --> 00:26:35,700 
+to be very large much larger than 1
+
+414
+00:26:35,700 --> 00:26:39,000 
+then what happens is that these two
+
+415
+00:26:39,000 --> 00:26:42,450 
+cancel out hijo may get times hijo
+
+416
+00:26:42,450 --> 00:26:46,240 
+Hojo Maki here and in the denominator
+will cancel out
+
+417
+00:26:46,240 --> 00:26:49,770 
+as long as this term dominates and in
+that case
+
+418
+00:26:49,770 --> 00:26:54,310 
+under that assumption the overall system
+function is approximately
+
+419
+00:26:54,310 --> 00:26:57,350 
+one over K
+
+420
+00:26:57,350 --> 00:27:01,560 
+well if K is constant
+
+421
+00:27:01,560 --> 00:27:06,130 
+as a function of frequency then we
+somehow magically have ended up
+
+422
+00:27:06,130 --> 00:27:11,250 
+with an amplifier that has a flat
+frequency response
+
+423
+00:27:11,250 --> 00:27:15,360 
+well it seems like we're getting
+something for nothing and actually
+
+424
+00:27:15,360 --> 00:27:19,060 
+were not there's a price that we pay for
+that because
+
+425
+00:27:19,060 --> 00:27:22,810 
+notice the fact dead in order to get
+
+426
+00:27:22,810 --> 00:27:26,740 
+gain out at the overall system
+
+427
+00:27:26,740 --> 00:27:32,510 
+K must be less than one so this has the
+correspond to an attenuator
+
+428
+00:27:32,510 --> 00:27:35,760 
+and we also require that
+
+429
+00:27:35,760 --> 00:27:39,890 
+K which is less than one times the game
+up the original amplifier
+
+430
+00:27:39,890 --> 00:27:44,270 
+that that product be greater than one
+and the implication of this without
+
+431
+00:27:44,270 --> 00:27:48,020 
+tracking it in detail right now the
+implication it in this
+
+432
+00:27:48,020 --> 00:27:52,090 
+is dead whereas we flattened the
+frequency response
+
+433
+00:27:52,090 --> 00:27:56,560 
+we have in fact been paid a price for
+that the price we paid is that
+
+434
+00:27:56,560 --> 00:27:59,750 
+the game is somewhat reduced from the
+gain
+
+435
+00:27:59,750 --> 00:28:04,240 
+that we had before the feedback because
+k times H
+
+436
+00:28:04,240 --> 00:28:07,550 
+must be much larger than 1 but the
+gayness
+
+437
+00:28:07,550 --> 00:28:10,830 
+is proportional to one over K now one
+last point to make
+
+438
+00:28:10,830 --> 00:28:15,690 
+related to that when Caswell why is it
+any easier
+
+439
+00:28:15,690 --> 00:28:18,820 
+to make a flat with frequency then
+
+440
+00:28:18,820 --> 00:28:23,340 
+to build a flat an amplifier with the
+flat frequency response
+
+441
+00:28:23,340 --> 00:28:27,030 
+the reason is that the gain in the
+feedback path
+
+442
+00:28:27,030 --> 00:28:31,080 
+is an attenuator not an amplifier and
+
+443
+00:28:31,080 --> 00:28:36,280 
+generally attenuation with a flat
+frequency response is much easier to get
+
+444
+00:28:36,280 --> 00:28:39,930 
+then gainers for example a resistor
+which
+
+445
+00:28:39,930 --> 00:28:46,170 
+attenuates with generally have a flatter
+frequency response at a very high gain
+
+446
+00:28:46,170 --> 00:28:48,180 
+amplifier
+
+447
+00:28:48,180 --> 00:28:51,470 
+part so p.m. that's one common example
+
+448
+00:28:51,470 --> 00:28:56,250 
+feedback that and feedback in fact is is
+very often used in
+
+449
+00:28:56,250 --> 00:29:01,110 
+high-quality ample fire systems another
+very common example
+
+450
+00:29:01,110 --> 00:29:04,550 
+in which feedback is used is in
+
+451
+00:29:04,550 --> 00:29:08,230 
+implementing inverse systems
+
+452
+00:29:08,230 --> 00:29:11,830 
+now what I mean by that is suppose that
+
+453
+00:29:11,830 --> 00:29:15,370 
+we have a system which indicate here P
+evas
+
+454
+00:29:15,370 --> 00:29:19,670 
+input and output and what we would like
+to do
+
+455
+00:29:19,670 --> 00:29:23,600 
+is implemented a system which is the
+infers that this system
+
+456
+00:29:23,600 --> 00:29:28,640 
+namely has a a-plus transformer system
+function
+
+457
+00:29:28,640 --> 00:29:33,030 
+which is one over pls in for example
+
+458
+00:29:33,030 --> 00:29:36,680 
+we may have measure a particular system
+
+459
+00:29:36,680 --> 00:29:40,150 
+and what we would like to design is a
+compensator for it
+
+460
+00:29:40,150 --> 00:29:43,440 
+and the question is by putting this in a
+feedback loop
+
+461
+00:29:43,440 --> 00:29:46,500 
+can we in fact implement
+
+462
+00:29:46,500 --> 00:29:50,590 
+the inverse that this system the answer
+to that is yes
+
+463
+00:29:50,590 --> 00:29:55,850 
+and the feedback system in that case is
+as i indicate here
+
+464
+00:29:55,850 --> 00:29:59,930 
+so here what we choose to do
+
+465
+00:29:59,930 --> 00:30:03,420 
+is to put the system whose inverse we're
+trying to generate
+
+466
+00:30:03,420 --> 00:30:06,770 
+in a feedback loop and
+
+467
+00:30:06,770 --> 00:30:10,940 
+in this case a high-gain in the forward
+path
+
+468
+00:30:10,940 --> 00:30:15,790 
+now for this situation k is again a
+constant but in fact that the high-gain
+
+469
+00:30:15,790 --> 00:30:16,540 
+constant
+
+470
+00:30:16,540 --> 00:30:20,290 
+and now if we look at the feedback
+equation then
+
+471
+00:30:20,290 --> 00:30:24,220 
+what we see is equation if this form
+
+472
+00:30:24,220 --> 00:30:28,210 
+and notice that if K ties PFS
+
+473
+00:30:28,210 --> 00:30:32,510 
+is large compared with one
+
+474
+00:30:32,510 --> 00:30:38,700 
+then this term dominates the gain in the
+forward path cancels out
+
+475
+00:30:38,700 --> 00:30:42,060 
+and what we're left with is a system
+function
+
+476
+00:30:42,060 --> 00:30:45,350 
+which is just one over
+
+477
+00:30:45,350 --> 00:30:50,070 
+PFS an a sister this type
+
+478
+00:30:50,070 --> 00:30:54,280 
+is used in a whole variety of contexts
+one very common one
+
+479
+00:30:54,280 --> 00:30:58,820 
+is in building what a call like a
+rhythmic devices are like rhythmic
+
+480
+00:30:58,820 --> 00:30:59,880 
+amplifiers
+
+481
+00:30:59,880 --> 00:31:04,510 
+ones in which the input output
+characteristic is like a rhythmic
+
+482
+00:31:04,510 --> 00:31:08,030 
+it's common to do that with a diode
+
+483
+00:31:08,030 --> 00:31:11,310 
+that has an exponential characteristic
+and
+
+484
+00:31:11,310 --> 00:31:15,430 
+using that with feedback as feedback
+
+485
+00:31:15,430 --> 00:31:19,730 
+around a high gain operational amplifier
+and by the way
+
+486
+00:31:19,730 --> 00:31:23,680 
+the logarithmic amplifier is nonlinear
+what I said here's linear
+
+487
+00:31:23,680 --> 00:31:28,120 
+or the analysis here was linear but that
+example in fact
+
+488
+00:31:28,120 --> 00:31:32,330 
+suggests something which is true which
+is that
+
+489
+00:31:32,330 --> 00:31:37,780 
+that same basic idea in fact can be used
+often in the context of nonlinear
+
+490
+00:31:37,780 --> 00:31:42,270 
+feedback and nonlinear feedback systems
+
+491
+00:31:42,270 --> 00:31:45,470 
+alright well as a final example
+
+492
+00:31:45,470 --> 00:31:50,210 
+what I'd like to analyze is the context
+in which
+
+493
+00:31:50,210 --> 00:31:53,710 
+we would consider stabilizing
+
+494
+00:31:53,710 --> 00:31:56,730 
+unstable systems and
+
+495
+00:31:56,730 --> 00:32:01,170 
+I had indicated that one context in
+which that arises and
+
+496
+00:32:01,170 --> 00:32:05,120 
+a which we will be analyzing the next
+lecture
+
+497
+00:32:05,120 --> 00:32:08,510 
+is the inverted pendulum and
+
+498
+00:32:08,510 --> 00:32:11,970 
+in that situation or in a situation
+where
+
+499
+00:32:11,970 --> 00:32:15,160 
+we're attempting to stabilize an
+unstable system
+
+500
+00:32:15,160 --> 00:32:18,750 
+we have now in the forward path
+
+501
+00:32:18,750 --> 00:32:22,110 
+a system which is unstable
+
+502
+00:32:22,110 --> 00:32:25,510 
+and in the feedback pair
+
+503
+00:32:25,510 --> 00:32:28,550 
+we put inappropriate system
+
+504
+00:32:28,550 --> 00:32:33,000 
+so that the overall system in fact is
+stable
+
+505
+00:32:33,000 --> 00:32:36,320 
+now how can stability at high rise
+
+506
+00:32:36,320 --> 00:32:40,010 
+outta having and initially unstable
+system
+
+507
+00:32:40,010 --> 00:32:44,980 
+well again if we look at the basic
+feedback equation
+
+508
+00:32:44,980 --> 00:32:49,690 
+the overall system function is the
+system function for the forward path
+
+509
+00:32:49,690 --> 00:32:54,340 
+divided by a one plus the loop gain GFS
+times HFS
+
+510
+00:32:54,340 --> 00:32:57,570 
+and for stability
+
+511
+00:32:57,570 --> 00:33:01,770 
+what we want to examine are the roots
+have one plus GFS times HFS
+
+512
+00:33:01,770 --> 00:33:05,360 
+and in particular the polls are
+
+513
+00:33:05,360 --> 00:33:08,910 
+zeros up that factor
+
+514
+00:33:08,910 --> 00:33:12,460 
+and as long as we choose GFS so that
+
+515
+00:33:12,460 --> 00:33:15,460 
+the polls love this term
+
+516
+00:33:15,460 --> 00:33:19,070 
+I'm sorry so that the zeros at this term
+
+517
+00:33:19,070 --> 00:33:23,010 
+are in the left after the S plane
+
+518
+00:33:23,010 --> 00:33:26,480 
+then what we'll end up with is stability
+so
+
+519
+00:33:26,480 --> 00:33:31,020 
+stability is dependent not just on HFS
+for the closed-loop system
+
+520
+00:33:31,020 --> 00:33:34,260 
+but on one plus GFS times hrs
+
+521
+00:33:34,260 --> 00:33:37,390 
+and in this kind of notion
+
+522
+00:33:37,390 --> 00:33:40,650 
+is used in lots of situations
+
+523
+00:33:40,650 --> 00:33:45,060 
+I indicated the inverted pendulum
+another very common example
+
+524
+00:33:45,060 --> 00:33:48,900 
+is in some very high performance
+aircraft
+
+525
+00:33:48,900 --> 00:33:52,920 
+where the basic aircraft system
+
+526
+00:33:52,920 --> 00:33:56,530 
+is an unstable system but in fact
+
+527
+00:33:56,530 --> 00:33:59,850 
+it's stabilized by putting the right
+kinda
+
+528
+00:33:59,850 --> 00:34:04,730 
+feedback dynamics around it and those
+feedback dynamics might in fact
+
+529
+00:34:04,730 --> 00:34:07,870 
+involve the pilot is well
+
+530
+00:34:07,870 --> 00:34:13,589 
+now 4
+
+531
+00:34:13,589 --> 00:34:16,780 
+the system that we just talked about in
+
+532
+00:34:16,780 --> 00:34:20,190 
+the stability was
+
+533
+00:34:20,190 --> 00:34:24,450 
+described in terms of a continuous-time
+system
+
+534
+00:34:24,450 --> 00:34:28,690 
+and the stability condition that we end
+up with of course relates
+
+535
+00:34:28,690 --> 00:34:32,730 
+to the zeros love this the nominator
+term
+
+536
+00:34:32,730 --> 00:34:36,320 
+and we require for stability dead the
+real parts
+
+537
+00:34:36,320 --> 00:34:41,609 
+love The Associated roots bien the left
+after the S point
+
+538
+00:34:41,609 --> 00:34:46,220 
+exactly the same kind analysis in terms
+of stability
+
+539
+00:34:46,220 --> 00:34:50,500 
+apply is in discrete-time that is
+
+540
+00:34:50,500 --> 00:34:54,089 
+in discrete-time as we saw previously
+
+541
+00:34:54,089 --> 00:34:58,850 
+the basic discreet I feedback system is
+exactly the same except that the
+
+542
+00:34:58,850 --> 00:35:00,160 
+independent variable
+
+543
+00:35:00,160 --> 00:35:04,330 
+is now an integer variable rather than a
+continuous variable
+
+544
+00:35:04,330 --> 00:35:07,400 
+the feedback equation is exactly the
+same
+
+545
+00:35:07,400 --> 00:35:11,210 
+so to analyze stability of the feedback
+system
+
+546
+00:35:11,210 --> 00:35:14,880 
+we would want to look at this zeros love
+one-plus
+
+547
+00:35:14,880 --> 00:35:19,170 
+GFZ times agency so again it's those
+zeros
+
+548
+00:35:19,170 --> 00:35:23,620 
+that affect stability and the principal
+difference
+
+549
+00:35:23,620 --> 00:35:27,430 
+between the continuous-time and
+discrete-time cases
+
+550
+00:35:27,430 --> 00:35:32,310 
+is the fact that the stability condition
+
+551
+00:35:32,310 --> 00:35:36,950 
+in discrete-time is different than it is
+in continuous time namely
+
+552
+00:35:36,950 --> 00:35:40,050 
+in continuous-time we care for stability
+
+553
+00:35:40,050 --> 00:35:43,730 
+about polls of the overall system
+
+554
+00:35:43,730 --> 00:35:48,720 
+being in the left and left after the
+espy to the right half vs plane
+
+555
+00:35:48,720 --> 00:35:51,760 
+in discrete-time what we care about is
+
+556
+00:35:51,760 --> 00:35:55,380 
+whether the polls are inside or outside
+the unit circle
+
+557
+00:35:55,380 --> 00:35:59,010 
+so in the discrete-time case
+
+558
+00:35:59,010 --> 00:36:02,720 
+what we wait impose for stability is
+that the zeros
+
+559
+00:36:02,720 --> 00:36:06,040 
+have a magnet to which is less than one
+
+560
+00:36:06,040 --> 00:36:09,700 
+so the basic analysis is the same but
+
+561
+00:36:09,700 --> 00:36:15,680 
+the details at the stability condition
+of course it different
+
+562
+00:36:15,680 --> 00:36:18,740 
+now wet just indicated
+
+563
+00:36:18,740 --> 00:36:22,630 
+is that feedback can be used
+
+564
+00:36:22,630 --> 00:36:27,190 
+to stabilize unstable system
+
+565
+00:36:27,190 --> 00:36:30,630 
+and as you can imagine is the other side
+of the coin
+
+566
+00:36:30,630 --> 00:36:33,890 
+namely if you start with
+
+567
+00:36:33,890 --> 00:36:37,930 
+a stable system and put feedback around
+it
+
+568
+00:36:37,930 --> 00:36:42,270 
+if you're not careful what can happen in
+fact is that you can destabilize the
+
+569
+00:36:42,270 --> 00:36:43,170 
+system
+
+570
+00:36:43,170 --> 00:36:48,160 
+so is always the potential hazard unless
+it's something you want to have happen
+
+571
+00:36:48,160 --> 00:36:52,720 
+dead feedback around what used to be a
+stable system
+
+572
+00:36:52,720 --> 00:36:56,430 
+now generates a system which is on
+stable and their
+
+573
+00:36:56,430 --> 00:36:59,780 
+are lots of examples at that one very
+common example
+
+574
+00:36:59,780 --> 00:37:04,380 
+is in audio systems and this is probably
+an example that your
+
+575
+00:37:04,380 --> 00:37:08,410 
+somewhat familiar with basically
+
+576
+00:37:08,410 --> 00:37:14,300 
+an audio system if you have the speaker
+and microphone in any kind of proximity
+
+577
+00:37:14,300 --> 00:37:15,510 
+to each other
+
+578
+00:37:15,510 --> 00:37:18,700 
+is in fact the feedback system well
+
+579
+00:37:18,700 --> 00:37:21,940 
+first of all the audio input
+
+580
+00:37:21,940 --> 00:37:25,870 
+to the microphone consists of
+
+581
+00:37:25,870 --> 00:37:29,250 
+the external audio inputs
+
+582
+00:37:29,250 --> 00:37:33,500 
+which and the external audio inputs
+might for example
+
+583
+00:37:33,500 --> 00:37:37,580 
+I be my voice that might be the room
+noise
+
+584
+00:37:37,580 --> 00:37:41,050 
+and in fact as well as trade shortly if
+I'm not careful
+
+585
+00:37:41,050 --> 00:37:46,370 
+might in fact be the output from speaker
+which represents feedback
+
+586
+00:37:46,370 --> 00:37:49,790 
+that audio of course drives
+
+587
+00:37:49,790 --> 00:37:53,820 
+after appropriate amplification drives
+
+588
+00:37:53,820 --> 00:37:57,390 
+a speaker and
+
+589
+00:37:57,390 --> 00:38:01,340 
+if in fact the speaker
+
+590
+00:38:01,340 --> 00:38:04,380 
+is let's say has any proximity to
+
+591
+00:38:04,380 --> 00:38:08,860 
+the microphone then there can be a
+certain amount of the output to the
+
+592
+00:38:08,860 --> 00:38:10,130 
+speaker
+
+593
+00:38:10,130 --> 00:38:13,200 
+that feeds back around
+
+594
+00:38:13,200 --> 00:38:16,410 
+and is fed back into
+
+595
+00:38:16,410 --> 00:38:19,480 
+the microphone now
+
+596
+00:38:19,480 --> 00:38:23,350 
+if the system function associated with
+the feedback to indicate here as a
+
+597
+00:38:23,350 --> 00:38:24,460 
+constant
+
+598
+00:38:24,460 --> 00:38:27,870 
+times into my SS times capital T
+
+599
+00:38:27,870 --> 00:38:31,950 
+the in the minus s times capital T
+represents the fact
+
+600
+00:38:31,950 --> 00:38:35,090 
+that their is in general some delay
+
+601
+00:38:35,090 --> 00:38:39,590 
+between the time delay between the
+speaker output
+
+602
+00:38:39,590 --> 00:38:43,820 
+and the input that it generates to the
+microphone
+
+603
+00:38:43,820 --> 00:38:47,150 
+the reason for that the lay of course
+being dead
+
+604
+00:38:47,150 --> 00:38:50,580 
+there may be some distance between the
+speaker and microphone
+
+605
+00:38:50,580 --> 00:38:54,850 
+and the constant k to that I have in the
+feedback path
+
+606
+00:38:54,850 --> 00:38:58,600 
+represents the fact that between the
+speaker in the microphone
+
+607
+00:38:58,600 --> 00:39:01,660 
+there may be some attenuation so
+
+608
+00:39:01,660 --> 00:39:05,980 
+if I have for example speakers I happen
+to have here
+
+609
+00:39:05,980 --> 00:39:09,530 
+and I were too
+
+610
+00:39:09,530 --> 00:39:13,280 
+have that speaker putting out
+
+611
+00:39:13,280 --> 00:39:17,260 
+what in fact I'm putting into the
+microphone or the app for the microphone
+
+612
+00:39:17,260 --> 00:39:22,700 
+than what we have is a feedback path and
+the feedback path is from the microphone
+
+613
+00:39:22,700 --> 00:39:26,950 
+through the speaker I did the speaker
+back into the microphone
+
+614
+00:39:26,950 --> 00:39:30,840 
+and the feedback path is from here
+
+615
+00:39:30,840 --> 00:39:35,770 
+to the microphone and the
+characteristics or frequency response
+
+616
+00:39:35,770 --> 00:39:37,020 
+our system function
+
+617
+00:39:37,020 --> 00:39:41,600 
+is associated with the characteristics a
+propagation a transmission
+
+618
+00:39:41,600 --> 00:39:45,770 
+if I we move closer to the speaker and I
+by the way don't have the speaker on
+
+619
+00:39:45,770 --> 00:39:49,980 
+right now and I'm sure you all
+understand why
+
+620
+00:39:49,980 --> 00:39:53,760 
+a in if I move closer then
+
+621
+00:39:53,760 --> 00:39:58,440 
+the constant k2 gets what
+
+622
+00:39:58,440 --> 00:40:03,740 
+gets larger and if I move further away
+the constant k to get small
+
+623
+00:40:03,740 --> 00:40:09,540 
+Bardwell let's look at and analysis if
+this and see what it is or why it is
+
+624
+00:40:09,540 --> 00:40:10,750 
+that in fact we
+
+625
+00:40:10,750 --> 00:40:15,400 
+getting instability in terms or that any
+stability is predicted by the basic
+
+626
+00:40:15,400 --> 00:40:17,540 
+feedback equation
+
+627
+00:40:17,540 --> 00:40:22,180 
+now notice first of all they were
+talking about positive feedback here
+
+628
+00:40:22,180 --> 00:40:26,680 
+and just simply substituting the
+appropriate
+
+629
+00:40:26,680 --> 00:40:31,310 
+system functions into our basic feedback
+equation
+
+630
+00:40:31,310 --> 00:40:34,380 
+we have an equation that says that the
+overall system function
+
+631
+00:40:34,380 --> 00:40:39,430 
+is given by the forward gain which is
+the gain of the amplifier
+
+632
+00:40:39,430 --> 00:40:43,630 
+between the microphone and speaker
+divided by
+
+633
+00:40:43,630 --> 00:40:48,110 
+one minus because in the minus because
+we have positive feedback
+
+634
+00:40:48,110 --> 00:40:51,380 
+the overall loop gain which is k1 k2
+
+635
+00:40:51,380 --> 00:40:55,990 
+either minus s capital T and these two
+games k1 and k2
+
+636
+00:40:55,990 --> 00:40:59,170 
+are are assumed to be positive and
+
+637
+00:40:59,170 --> 00:41:02,990 
+and generally are positive so in order
+
+638
+00:41:02,990 --> 00:41:06,300 
+for us to a
+
+639
+00:41:06,300 --> 00:41:09,460 
+well if if you want to look at the polls
+at the system
+
+640
+00:41:09,460 --> 00:41:12,750 
+then we want to look at this zeros this
+the nominator
+
+641
+00:41:12,750 --> 00:41:17,200 
+and the zeros is this the nominator
+occur at values %uh vests
+
+642
+00:41:17,200 --> 00:41:22,980 
+such that you to the minus s capital T
+is equal to 1 over K one times k2
+
+643
+00:41:22,980 --> 00:41:26,110 
+and acquittal early that says that
+
+644
+00:41:26,110 --> 00:41:31,150 
+the the polls love the closed-loop
+system
+
+645
+00:41:31,150 --> 00:41:35,060 
+occur at one over capital T in capital T
+
+646
+00:41:35,060 --> 00:41:38,850 
+is related to the time delay one over
+capital T
+
+647
+00:41:38,850 --> 00:41:43,360 
+times the lock to the basie fk1 times k2
+
+648
+00:41:43,360 --> 00:41:46,590 
+well for stability we want
+
+649
+00:41:46,590 --> 00:41:49,800 
+these polls to all be in the left after
+the S plane
+
+650
+00:41:49,800 --> 00:41:53,740 
+and what that means then is that for
+stability
+
+651
+00:41:53,740 --> 00:41:57,760 
+well we require is dead k1 times k2
+
+652
+00:41:57,760 --> 00:42:02,680 
+be less than 1 in other words we require
+that the overall loop gain
+
+653
+00:42:02,680 --> 00:42:06,110 
+the less the magnitude lou came P less
+than 1
+
+654
+00:42:06,110 --> 00:42:09,620 
+if it's not then what we generate is
+instability
+
+655
+00:42:09,620 --> 00:42:13,980 
+and just to illustrate that let's turn
+the speaker on
+
+656
+00:42:13,980 --> 00:42:18,100 
+and what will demonstrate is feedback
+
+657
+00:42:18,100 --> 00:42:21,840 
+right now the system is stable are and
+I'm being careful to keep my distance
+
+658
+00:42:21,840 --> 00:42:23,320 
+from the speaker
+
+659
+00:42:23,320 --> 00:42:27,100 
+as I get closer k2
+
+660
+00:42:27,100 --> 00:42:31,510 
+will increase and as k2 increases
+
+661
+00:42:31,510 --> 00:42:35,370 
+eventually the polls will move into the
+right here for the S plane
+
+662
+00:42:35,370 --> 00:42:39,120 
+or they'll try to what will happen is
+that the system will start oscillating
+
+663
+00:42:39,120 --> 00:42:41,170 
+going to nonlinear distortion
+
+664
+00:42:41,170 --> 00:42:45,060 
+so as I get closer you can hear that
+
+665
+00:42:45,060 --> 00:42:50,540 
+we get feedback we get isolation and you
+
+666
+00:42:50,540 --> 00:42:55,290 
+I guess neither you nor I can take too
+much bad food
+
+667
+00:42:55,290 --> 00:43:00,590 
+the unseeded what's happening if we can
+just turn the speaker of now
+
+668
+00:43:00,590 --> 00:43:04,240 
+and you can see that what's happening is
+that as
+
+669
+00:43:04,240 --> 00:43:08,690 
+k2 increases the polls are moving
+
+670
+00:43:08,690 --> 00:43:12,390 
+on to the jail make axis the system
+starts docile aid
+
+671
+00:43:12,390 --> 00:43:15,500 
+their own actually moving to the right
+half plane because
+
+672
+00:43:15,500 --> 00:43:22,500 
+there are nonlinear nonlinearities that
+inherently control system
+
+673
+00:43:22,780 --> 00:43:25,780 
+okay so what we've seen
+
+674
+00:43:25,780 --> 00:43:29,380 
+in the lecture at today's lecture
+
+675
+00:43:29,380 --> 00:43:33,060 
+is the basic analysis equation and
+
+676
+00:43:33,060 --> 00:43:36,700 
+a few of the applications and one
+application
+
+677
+00:43:36,700 --> 00:43:41,160 
+that or one both application hazard that
+we've talked about
+
+678
+00:43:41,160 --> 00:43:44,770 
+and is the application in which we
+
+679
+00:43:44,770 --> 00:43:48,720 
+may destabilize unstable systems or if
+we're not careful
+
+680
+00:43:48,720 --> 00:43:53,320 
+destabilize stable systems as i've
+indicated several
+
+681
+00:43:53,320 --> 00:43:57,200 
+times during the lecture one common
+example
+
+682
+00:43:57,200 --> 00:44:02,900 
+love unstable system which feedback can
+use be used to stabilize
+
+683
+00:44:02,900 --> 00:44:08,100 
+is the inverted pendulum which I refer
+to several times
+
+684
+00:44:08,100 --> 00:44:11,770 
+and in the next lecture what I'd like to
+do is
+
+685
+00:44:11,770 --> 00:44:15,380 
+focus in on a more detailed analysis at
+this
+
+686
+00:44:15,380 --> 00:44:19,410 
+and what we'll see in fact is dead
+
+687
+00:44:19,410 --> 00:44:22,630 
+the feedback dynamics the former the
+feedback dynamics
+
+688
+00:44:22,630 --> 00:44:27,750 
+are important with regard to whether you
+can it can stabilize the system
+
+689
+00:44:27,750 --> 00:44:32,210 
+interestingly enough for this particular
+system as we'll see in the next lecture
+
+690
+00:44:32,210 --> 00:44:35,900 
+if you simply try to measure the angle
+
+691
+00:44:35,900 --> 00:44:40,890 
+and feed that back that in fact you can
+stabilize the system
+
+692
+00:44:40,890 --> 00:44:44,240 
+water requires is not only the angle
+
+693
+00:44:44,240 --> 00:44:47,860 
+but some information about the rate of
+change angle
+
+694
+00:44:47,860 --> 00:44:51,040 
+but will see that in much more detail in
+the next lecture
+
+695
+00:44:51,040 --> 00:44:51,440 
+thank you
+

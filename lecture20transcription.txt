@@ -1,0 +1,850 @@
+000040~003450~the following content is provided under a Creative Commons license
+003490~003639~your support will help MIT OpenCourseWare continue to offer
+007129~003451~high-quality educational resources for free
+010580~003780~to make a donation or view additional materials from hundreds of them IT
+014360~000670~courses
+015030~003080~visit MIT OpenCourseWare at 0 CW
+018110~005820~that MIT that EDU home in
+023930~005019~the
+028949~002371~the
+031320~002550~the
+033870~006230~the in
+040100~007000~the moon
+049449~007000~the over the last series of lectures
+058110~004760~in discussing filtering modulation sampling we've seen how powerful
+062870~004160~and useful the four EA transform is beginning
+067030~003360~with this lecture and over the next several lectures I'd
+070390~004019~like to develop and exploit a generalization
+074409~005201~other 48 transform which will not only lead to some important new insights
+079610~002100~about signals and systems
+081710~003710~but also will remove some of the restrictions
+085420~006410~that we've had with the Fourier transform the generalization
+091830~005130~dead we'll be talking about in the continuous-time cases referred to
+096960~005320~as the apostrophe its form and in the discrete-time cases referred to as the z
+102280~000890~transform
+103170~004540~but I'd like to do in today's lecture is begin on the continuous-time
+107710~003049~case namely a discussion at the La Paz transform
+110759~003661~continued at it to the next lecture and following that
+114420~004069~develop the z transform for discrete-time
+118489~003621~and also as we go along exploit
+122110~003459~the two notions together now
+125569~003440~to introduce the notion of the law applies transform
+129009~006901~let me remind you again all what led us into the Fourier transform we
+135910~003170~develop the 48 transform by
+139080~003690~considering the idea love representing
+142770~004549~signals as linear combinations a basic signals
+147319~003041~and in the Fourier transform in the
+150360~003959~continuous-time case the basic signals
+154319~004111~that we picked in the representation were complex exponentials
+158430~003220~and in what we refer to as
+161650~004250~the synthesis equation the synthesis equation corresponded
+165900~004930~to in effect a dick opposition as a linear combination
+170830~005510~decomposition affects ft as a linear combination of complex exponentials
+176340~003110~and of course associated with this was
+179450~003310~the corresponding analysis equation dead
+182760~004679~in effect gave us the amplitudes associated with the complex exponentials
+187439~004121~now why did we pick complex exponentials
+191560~003069~well recall that the reason was
+194629~004110~that complex exponentials are I can functions of linear time-invariant
+198739~001260~systems
+199999~003140~and that was very convenient specifically
+203139~004451~if we have a linear time-invariant system
+207590~004269~with an impulse response 850 well we had shown
+211859~004821~is that that class a systems has the property
+216680~004259~that if we put in a complex exponential we get out
+220939~003840~a complex exponential at the same frequency
+224779~004180~and with the change in amplitude and this change in amplitude
+228959~004860~in fact corresponded as we showed as the discussion went along
+233819~003150~to 248 transform all
+236969~004170~the system impulse response so
+241139~003680~the notion love decomposing signals
+244819~005150~into complex exponentials was very intimately connected in the Fourier
+249969~002450~transforms very intimately connected
+252419~004681~with the eigenfunction property a complex exponentials for linear
+257100~001520~time-invariant systems
+258620~005019~well complex exponentials have that type are not
+263639~004471~the only I can functions for linear time-invariant systems
+268110~003820~in fact what you've seen previously
+271930~003090~is that if we took a more general exponential
+275020~003410~you to the st. where s
+278430~003800~is a more general complex number not just J Omega
+282230~005220~but in fact Sigma plus J Omega for any bad you have s
+287450~003930~a comp the complex exponential is an eigenfunction
+291380~004700~and we can justify that simply by substitution into the convolution
+296080~000940~integral
+297020~003520~in other words the response to this complex exponential
+300540~003309~is the convolution up the impulse response
+303849~003331~with the exhortation an notice
+307180~004480~there we can break this term into a product
+311660~003300~eat to the st. you need to the minus s
+314960~003160~now and BU the st. term
+318120~003160~become outside the integration
+321280~003859~and consequently just carrying through that algebra
+325139~003400~would reduce this integral
+328539~003621~to an integral with
+332160~005590~in the st. fact there outside so just simply carrying through the algebra
+337750~004210~what we would conclude is that a complex exponential
+341960~005030~with any complex number ass which generate as an output
+346990~003280~a complex exponential have the same form
+350270~003200~multiplied by whatever this integral is
+353470~004740~and this integral of course will depend on what the value a veces
+358210~004000~but that's all that it will depend on or said another way
+362210~003650~what this all can be denoted as
+365860~003260~is some function Hibs that
+369120~003490~depends on the value of s so finally
+372610~003279~then you the st. as an exhortation
+375889~003930~to linear time-invariant system generates a response
+379819~003771~which is a complex constant depending on S
+383590~003229~multiplying the same
+386819~003521~function that excited the system
+390340~003280~so what we have been is
+393620~004500~the I can function property more generally in terms of
+398120~003160~a more general complex exponential
+401280~005379~where the complex factor is given by this integral
+406659~004290~well in fact with that integral corresponds to
+410949~003631~is what we will the fine
+414580~004260~as the apostrophe its form of the impulse response
+418840~004130~and in fact we can apply this transformation
+422970~004669~to a more general time function that may or may not be
+427639~004701~the impulse response this ove a linear time-invariant system
+432340~004180~and so in general it is this transformation
+436520~003060~on a time function which is
+439580~003480~the a-plus transform that time function
+443060~003160~and it's a functional bests so
+446220~003800~the definition up the applause transform
+450020~004639~is that the applause transform overtime function X 50
+454659~003931~is the result love this transformation
+458590~003460~on exit to the it's the noted as excessive ass
+462050~005160~and as a shorthand notation as we had with the four EA transform
+467210~004389~then we have in the time domain the time function except the
+471599~003431~and in the apostrophe its form domain the
+475030~003069~function XFS and these then
+478099~003451~represent a transformed pair
+481550~003310~now let me remind you that
+484860~003149~that the the development of that mapping
+488009~004041~is exactly the process that we went through initially in developing
+492050~005190~a mapping that ended up giving the giving us the Fourier transform
+497240~003479~essentially what we've done is just broaden your horizon
+500719~003420~some white or our notation some white
+504139~004620~and rather than pushing just the complex exponential through the system
+508759~004030~we've pushed a more general time function either the st.
+512789~006331~where ass is a complex number with both a real part in an imaginary part
+519120~003669~well the discussion we going through so far course is
+522789~003521~very closely related to when what we went through
+526310~003280~for the Fourier transform the mapping and we've ended up with
+529590~004530~is called the applause transform and as you can well imagine and perhaps
+534120~004220~may have recognized already there's a very close connection
+538340~005190~between the applause transform and the Fourier transform
+543530~003690~well to see wanted the connections well we can observe
+547220~006190~is that if we look at the Fourier transform expression
+553410~004080~and if we look at the applause transform expression
+557490~005930~where ass is now a general complex number Sigma plus jail maker
+563420~004380~these two expressions in fact are identical
+567800~003960~if in fact Sigma is equal to 0
+571760~003889~if signatures equal to 0 so that ass is just jail maker
+575649~003310~then all that this transformation is
+578959~003870~is the same as that substitute in s equals jail maker
+582829~004711~and this is what we get so
+587540~005680~what this then tells us is dead if we have the apostrophe it's for
+593220~003730~and if we look at the applause transform at
+596950~004720~ass equals J Omega
+601670~003560~then that in fact corresponds to
+605230~004180~the Fourier transform affect safety
+609410~003830~now there's a slight notational issue
+613240~004310~that this raises and it's very straightforward to clean it up
+617550~003529~but it's something that its you have to just kinda
+621079~004351~focus on for second to understand what the issue is
+625430~004260~notice that on the left hand side of this equation
+629690~003850~X a vast representing the applause transform
+633540~004370~when we look at that would signal to 0 RS equal to jail maker
+637910~003150~are natural inclination is to write that
+641060~003040~as exit J Omega of course
+644100~003690~on the other hand the right hand side of the equation namely the Fourier
+647790~001870~transform exit T
+649660~003760~we've typically written as
+653420~003830~X all Omega focusing on the fact that
+657250~003350~it's a function love this variable Omega
+660600~003700~well there's a slight awkwardness here because here we're talking about
+664300~003620~an argument J Omega here we're talking about an argument Omega
+667920~003300~and a very straightforward way of dealing with that is
+671220~003040~to simply change our notation
+674260~004720~for the Fourier transform recognizing that the Fourier transform
+678980~003229~course is a function of Omega but it's also
+682209~004211~in fact the function J Omega and if we write it that way
+686420~005240~then the two notations come together in other words the applause transform
+691660~004630~at st. cause jail maker just simply were reduces both mathematically and
+696290~001000~rotationally
+697290~005440~to the Fourier transform so the notation that will now be adopting
+702730~003530~for the four th transform is the notation
+706260~005400~whereby we express the 48 transform no longer simply as active Omega
+711660~004109~but choosing as the argument jail make
+715769~003851~simple notational change
+719620~004760~now here we see one relationship between the Fourier transform and
+724380~003160~the the plots transform namely that
+727540~005220~the poss transform pressequals chair maker reduces to the Fourier transform
+732760~004600~we also have number another important relationship
+737360~003400~in particular the fact that the
+740760~003139~applause transform can be interpreted
+743899~004261~as the Fourier transform all a modified
+748160~004669~version affect safety let let me show you what I mean
+752829~003351~here of course we have the relationship that we just developed
+756180~006370~namely s equals jail maker plus transform reduces the Fourier transform
+762550~004899~but now let's look at the more general applause transform expression
+767449~004301~and if we substitute in s equals Sigma plus J Omega
+771750~005070~which is the general form for this complex variable ass
+776820~003699~and we carry through so the algebra
+780519~004291~breaking this into the product up to exponential
+784810~003170~the product the two exponential see the minus Sigma T
+787980~003650~time see the minus jail make it to the we now have
+791630~004560~this expression where of course in both these
+796190~003980~their is a DT
+800170~004310~and now when we look at this
+804480~003070~what we observe is that this in fact
+807550~003349~is the 48 transform of something
+810899~004521~what's the something it's not accept T anymore it's the Fourier transform up
+815420~001310~x50
+816730~003990~multiplied by e2 the minus Sigma T
+820720~003030~so if we think I've these two terms together
+823750~003190~this in a brawl is just the four EA transform
+826940~003569~it's the for a transformer Beck city multiplied
+830509~003871~by an exponential Sigma is greater than
+834380~003220~its a an exponential that
+837600~005549~the case with time Sigma is less than 0 it's an exponential the crows
+843149~003521~time so we have
+846670~005029~then this additional relationship which tells us that the apostrophe s for
+851699~003371~is the 48 transform love
+855070~004540~and exponentially weighted time function
+859610~003839~now this exponential weighting has
+863449~004500~some important significance in particular
+867949~003950~recall that there were issues have convergence with the 48 transform in
+871899~003680~particular the Fourier transform
+875579~003240~may or may not converge and for convergence in fact
+878819~003841~what's required is that but I'm fortunate we're transforming be
+882660~003169~absolutely integral now
+885829~005421~we can have a time function that isn't absolutely integral
+891250~003759~because let's say it grows exponentially as time
+895009~004250~increases but when we multiply it by this
+899259~004320~exponential factor that's embodied in a posh transform
+903579~004401~in fact that brings the function back down for positive time
+907980~003640~and will impose absolute integrability
+911620~003430~on the product %uh XFT times
+915050~003570~e2 the minus Sigma T and so
+918620~003350~the conclusion an important point is that
+921970~004609~the applause transformed the Fourier transform this product may converge
+926579~004060~even though the Fourier transform effective t doesn't in other words
+930639~004390~the apostrophe s form may converge even when the Fourier transform
+935029~003821~doesn't converge and will see that will see examples of it is the discussion
+938850~003070~goes along now let me also
+941920~003000~draw your attention to the fact although we won't be
+944920~003800~working through this in detail
+948720~003169~to the fact that this equation
+951889~003570~in effect provides the basis
+955459~004370~for us to figure out how to express accept T
+959829~003281~interns love the applause transform
+963110~004260~effect we can apply the inverse Fourier transform to this
+967370~004260~thereby to this account for the exponential factor by bring it over to
+971630~001350~the other side
+972980~003149~and if you go through this and in fact
+976129~004491~you'll have an opportunity to go through this both in the video course manual
+980620~004130~and also it's carried through in the text
+984750~003279~what you end up with is
+988029~003461~a synthesis equation X expression for exit T
+991490~004219~in terms of Xmas which corresponds to a synthesis equation
+995709~004990~and which now builds x50 I have a linear combination if not
+1000699~003880~necessarily functions the foreign to the Chi Omega TV
+1004579~003500~but interns love functions
+1008079~004260~or basic signals which are more general exponentials
+1012339~003490~you to the st.
+1015829~003351~okay well let's just look at
+1019180~004159~some examples love the apostrophe s form of some time functions
+1023339~003480~and these examples that I'll go through
+1026819~005151~are all examples that are worked out in attacks and so I don't want to focus on
+1031970~002650~the algebra what I'd like to focus on
+1034620~003820~are some with the issues and the interpretation
+1038440~003700~let's first the ball look at example
+1042140~003679~the example in the text which is example 9.1
+1045819~003551~if we take the Fourier transform
+1049370~004210~love this exponential then as you well know
+1053580~003470~the result that we have is one over J Omega plus a
+1057050~004020~and bekannt converge for any a
+1061070~003620~in particular it's only for a greater than 0
+1064690~004520~what that really means is that for convergence of the 48 transform this has
+1069210~001040~to be
+1070250~003450~a decaying exponential it can't be
+1073700~003589~in increasing exponentially if
+1077289~004681~instead we apply the applause transformed to this
+1081970~004490~applying to the the deal applies transform is the same as taking the 48
+1086460~001060~transform or
+1087520~003560~X 50 times an exponential in and
+1091080~004660~the exponential that we would multiply by is he to the minus Sigma T
+1095740~005049~so in effect taking the applause transform of this
+1100789~005221~is like taking the Fourier transform augie to the minus eighty
+1106010~003890~e2 the minus Sigma T
+1109900~003259~and if we carry that through just
+1113159~003091~working through the integral we end up
+1116250~005870~with applause transform which is one over est plus a
+1122120~005010~but just as in the Fourier transform
+1127130~003419~the Fourier transform all converge for any a
+1130549~003171~now what happens is that the
+1133720~003300~love pasta Rance form will only converge
+1137020~003399~when the forty a transformer this converges
+1140419~004630~said another way it's when the combination is a plus Sigma
+1145049~003880~is greater than 0 so we would require
+1148929~003620~that by right over here a plus Sigma
+1152549~003760~is greater than 0 warmer that Sigma
+1156309~004431~is greater than minus a so in fact
+1160740~003059~in the apostrophe s former this
+1163799~003791~we have an expression one over est plus a but
+1167590~003480~we also require in interpreting that
+1171070~003680~dead the real party bass be greater
+1174750~003650~then minus a so that
+1178400~003720~essentially the 48 transform up X 50
+1182120~003189~times you to the minus Sigma T converges
+1185309~003081~so it's important to recognize that the
+1188390~003510~algebraic expression that we get is
+1191900~004630~only valid for certain values love the real party vez
+1196530~003889~and so for this example we can summarize it as
+1200419~005671~this exponential as the apostrophe s form which is one over est plus a
+1206090~004620~where ass is restricted to the range the real party best greater than
+1210710~004540~minus a now
+1215250~004780~we haven't had this issue before love restrictions on what the value a veces
+1220030~003840~with the with 48 transform either recover Jordan converge
+1223870~004410~with a plot strands form there are certain values the best we now have more
+1228280~004019~flexibility and so they're certain values are the real party best for which
+1232299~004071~it converges in certain values for which it doesn't
+1236370~003610~the values Ave S for which the apostrophe s form
+1239980~003800~converges is the values
+1243780~003560~are referred to as the region of convergence
+1247340~003089~up the applause transform
+1250429~004521~and it's important to recognize that
+1254950~004380~in specifying the applause transform what's required is not only the
+1259330~001930~algebraic expression
+1261260~004600~but also the domain or set of values evas
+1265860~003460~for which that algebraic expression is
+1269320~003849~ballot just two
+1273169~004041~underscore that point let me draw your attention to another
+1277210~004680~example in the text which is example 9.2
+1281890~003740~example 9.2 we have an exponential
+1285630~004409~for negative time 0 for positive time
+1290039~003341~and if you carry through the algebra there you end up with
+1293380~005279~a low price transform expression which is again one over S plus a
+1298659~005750~exactly the same algebraic expression as we head for the previous example
+1304409~003571~the important distinction is that now
+1307980~003929~the real party bass is restricted to be less than minus a
+1311909~004471~it so in fact if you compare this example
+1316380~003220~with the one above it and let's just look back at
+1319600~003760~the answer that we had the air
+1323360~003260~if you compare that those two examples here
+1326620~004530~the algebraic expression is 100 breast but say with a certain
+1331150~003170~regional convergence here
+1334320~003849~the algebraic expression is one over est plus a
+1338169~003961~and the only difference between those two is the domain a region of
+1342130~000860~convergence
+1342990~004830~so there's another complication or twist now
+1347820~005349~not only do we need to generate the algebraic expression
+1353169~003311~but we also have to be careful to specify
+1356480~003100~the region of convergence
+1359580~004699~over which that algebraic expression is valid
+1364279~003851~now later on in this lecture and actually also
+1368130~004159~arm as the discussion a little past transform goes on
+1372289~003140~will begin to see and understand more about
+1375429~003451~how the region of convergence relates to
+1378880~004179~various properties of the time function
+1383059~005091~okay well let's finally look at one additional example from the tax
+1388150~004080~and this is example 9.3 and what it consists of
+1392230~003840~is the a type function which is the sum
+1396070~003219~love two exponentials and
+1399289~004681~although we haven't formally talked about properties a little fuss transform
+1403970~000670~yet
+1404640~003149~what are the properties that will see it is relatively easy to develop
+1407789~003221~is the fact that the apostrophe s form of Assam
+1411010~004630~is the summer the applause transform so in fact we can get
+1415640~004600~the applause transform love the solo these two terms
+1420240~003960~as some love the apostrophe its forms
+1424200~003560~and so for this one we know from the
+1427760~004010~example that we at looked at previously example 9.1
+1431770~003180~that this is a form one over est plus one
+1434950~005849~with a region of convergence which is the real party best greater than -1
+1440799~004961~for this one we have a poss transform which is one over est plus two
+1445760~003950~with a region of convergence which is the real party bass
+1449710~003219~greater than -2 so
+1452929~005221~for the two of them together we have to take the overlap with those two regions
+1458150~004529~in other words we have to take the region that encompasses both the real
+1462679~001841~party best greater than -1
+1464520~005379~in the real party best greater than -2 and if we put those together then
+1469899~004051~we have a combined regional convergence which is the real party best
+1473950~005190~greater than -1 so this is the expression
+1479140~003889~and for this particular example what we have
+1483029~003140~is a ratio of polynomials
+1486169~004421~the ratio polynomials is a numerator polynomial and at the nominator
+1490590~001100~polynomial
+1491690~003080~and it's convenient to
+1494770~003310~summarize these by
+1498080~003459~plotting the roots love the numerator polynomial
+1501539~004591~and the roots to the denominator polynomial in the complex plane
+1506130~003510~and the complex plane which they are plotted is referred to
+1509640~003710~as vs playing
+1513350~004740~so we can for example take the denominator polynomial
+1518090~004020~and summarize it in by specifying the fact
+1522110~003000~or by representing the fact
+1525110~004890~that it has roots at st. cause -1 and at a Sikh was minus-2
+1530000~003679~and I've done that in this picture by putting an X
+1533679~004191~where the roots have the denominator polynomial order
+1537870~003659~the numerator polynomial has a rude ass equals
+1541529~003291~-3 hands and i've represented that by a circle
+1544820~003430~so these are the roots to the denominator polynomial
+1548250~003640~and this is the route up the numerator polynomial for this example
+1551890~003960~and also for this example we can represent
+1555850~003170~the region of convergence which
+1559020~004159~is the real party best greater than -1 and so that's in fact
+1563179~003551~the region over here
+1566730~003679~there is also if I draw these just the router the numerator and denominator
+1570409~001941~plan of polynomials
+1572350~003090~I would need an additional piece of information
+1575440~003849~to specify the algebraic expression completely namely
+1579289~004911~multiply constant out in front of the whole thing
+1584200~003500~well this particular example has
+1587700~003479~the applause transform as a
+1591179~004750~rational function namely its one polynomial in the numerator and another
+1595929~002130~polynomial in the denominator
+1598059~004171~and in fact as we'll see applies transformers which are ratios are
+1602230~001250~polynomials
+1603480~003870~form a very important class they were in fact represent systems
+1607350~003299~better describe a ball by linear constant coefficient differential
+1610649~000890~equations
+1611539~004671~you shouldn't necessarily in fact for sure you shouldn't see why
+1616210~003310~that's true now will see that later but
+1619520~004000~that means that a-plus transforms
+1623520~004190~that are rational functions namely
+1627710~004870~the ratio love the numerator polynomial divided by the nominator polynomial
+1632580~006069~become very important in the discussion that follows
+1638649~005130~and in fact in we have some terminology for this the route so the numerator
+1643779~001161~polynomial
+1644940~003200~are referred to as zeros
+1648140~004960~up the applause transform because of course those are the values a bass
+1653100~003709~at which XFS become 0
+1656809~003321~and the roots to the denominator polynomial are
+1660130~004289~referred to as the polls up the applause transform
+1664419~003541~and those are the values vs
+1667960~004110~at which the applause transform blows up
+1672070~004020~namely becomes infinite if you think love setting s
+1676090~003839~equal to evaluate this denominator polynomial goes to zero
+1679929~003461~of course extra bass becomes infinite and
+1683390~003490~what we would expect in a course will see that
+1686880~003590~that this is true well we would expect
+1690470~003490~is that wherever that happens there must be some problem
+1693960~004170~with convergence oval poss transform and indeed the applause transformed doesn't
+1698130~000880~converge
+1699010~005350~at the polls namely at the roots the denominator polynomial
+1704360~003770~so in fact let's focus in on that a little further
+1708130~005060~let's examine and talk about the region of convergence
+1713190~003099~all the applause transform and
+1716289~004331~how its associated both with properties of the time function
+1720620~004039~and also with the location love the polls
+1724659~003281~all the applause transform and as we'll see
+1727940~003180~the air are some very specific and important
+1731120~003320~relationships and conclusions that we can draw
+1734440~003180~about how the region of convergence
+1737620~003750~is constrained an Associated with the
+1741370~004480~locations the polls in the ass point
+1745850~004049~well to begin with we can
+1749899~003390~of course make the statement as I just made
+1753289~003990~that the region of convergence contains no polls
+1757279~003030~in particular if I think
+1760309~003781~love this general rational function
+1764090~004600~the polls love XFS by the values evas
+1768690~003329~at which the denominator 0 or equivalent Lee
+1772019~003431~XFS blows up and of course
+1775450~005530~then that implies that the expression is no longer converged
+1780980~003890~okay well that's one statement that we can make now there
+1784870~004029~are some others and one for example
+1788899~003351~is the statement that if I have a point
+1792250~003330~in the S plane that corresponds the convergence
+1795580~003680~then in fact any line in the S plane
+1799260~003350~with that same real part will also
+1802610~004000~be said %uh values for which the apostrophes form converges
+1806610~003809~and what's the reason for that the reason for that
+1810419~004521~is dead s is Sigma plus J Omega
+1814940~005739~and convergence all the applause transform is associated with
+1820679~003870~convergence love the four EA transform all
+1824549~003630~it to the minus Sigma see times X 50
+1828179~003691~and so the convergence only depends on Sigma
+1831870~003159~if it only depends on Sigma than
+1835029~003221~for one if it converges for one value Sigma
+1838250~003700~I'm sorry for what for a value Sigma
+1841950~003709~for some valuable maker Danny will converge
+1845659~003841~for that same Sigma for any valuable make
+1849500~004740~the conclusion n is dead the region of convergence
+1854240~003870~if I have a law if I have a point that I also have a line
+1858110~003900~and so what that suggests is that as we look at the regional convergence
+1862010~007000~in fact corresponds to strips in the complex plane
+1869350~003059~now finally we can tie together
+1872409~003091~the region of convergence to the
+1875500~004789~convergence of the Fourier transform in particular since we know that
+1880289~003911~the applause transform reduces
+1884200~003199~to the 48 transform when
+1887399~005681~the complex variable yes is Sigma is equal to jail maker
+1893080~004349~the implication is that if we have the law applies transform
+1897429~005531~and if the a-plus transform reduces to the 48 transform
+1902960~003800~when sick make 10 in other words when s is equal to jail make a
+1906760~003720~then the 4e a transformative exit see
+1910480~003250~converging is equivalent to the statement
+1913730~003179~that the a-plus transform converges
+1916909~004221~for Sigma equal to 0 in other words that the region of convergence
+1921130~005049~includes what DJ Omega axis
+1926179~004250~in the ass point
+1930429~004951~alright so we have then some statements that kinda tied together the location of
+1935380~000850~the polls
+1936230~004600~and the region convergence let me make one other statement which is
+1940830~004430~much harder statement to justify and I won't try to I just simply stated
+1945260~004159~and that is that the regional convergence oval plus transform
+1949419~003201~is a connected region in other words
+1952620~003360~if the entire region
+1955980~003890~consists of a single strap in the S plane
+1959870~004539~it can consist of a strip over here for example in a strip over there
+1964409~006031~well let me let me I'm emphasize summer those points a little further
+1970440~004229~let's suppose that I A have
+1974669~003120~ale a-plus transform
+1977789~003250~and Google+ transform their
+1981039~003911~I am talking about is a rational function which is
+1984950~004660~one over S plus one times as plus two
+1989610~004539~then the poll 0 pattern as its referred to
+1994149~003421~in the S play in the location love the roots love the
+1997570~004180~numerator and denominator polynomial course there is no numerator polynomial
+2001750~005590~the denominator polynomial roots which have represented by these X's
+2007340~003020~are shown here and so this is
+2010360~003080~the poll 0 pattern
+2013440~003469~and from what I said the region of convergence
+2016909~003341~can't include any polls
+2020250~003159~and it must correspond to strips
+2023409~003740~in the ass plane and furthermore it must be
+2027149~004481~just want some one connected region rather than multiple regions
+2031630~003279~and so with this algebraic expression
+2034909~004510~then the possible choices for the region of convergence
+2039419~003110~consistent with those properties are the following:
+2042529~003030~one of them would be region of convergence
+2045559~003921~to the right love this poll
+2049480~004850~a second would be a region of convergence
+2054330~004470~which lies between the two poles
+2058800~003580~as a show here and
+2062380~003420~a third is region of convergence
+2065800~005400~which is to the left love this poll
+2071200~004689~and because it the fact dead I said without proof that
+2075889~005290~the region of convergence must be a single strip it can't be multiple strips
+2081179~004761~in fact we could not consider as a possible region convergence
+2085940~003430~what I show here in so in fact
+2089370~003370~this is not a valid region of convergence
+2092740~003760~there are only three possibilities Associated
+2096500~004440~with this poll 0 pattern namely to the writer this poll
+2100940~005570~between the two poles and to the left that this poll
+2106510~003080~now to carry the discussion further
+2109590~003890~we can in fact associate
+2113480~004180~the region of convergence above the law applies transform
+2117660~003280~with some very specific characteristics
+2120940~005090~of the time function and what this will do is to help us understand
+2126030~004020~how various for various choices
+2130050~003470~love the region of convergence the interpretation
+2133520~003800~that we can impose on the related time function
+2137320~003040~let me show you what I mean
+2140360~003900~suppose that we start with
+2144260~003930~a time function as i indicated here
+2148190~003710~which is a finite
+2151900~003480~duration time function in other words it's zero
+2155380~003320~except in some time interval now
+2158700~003790~recall that the Fourier transform converges
+2162490~003250~if the time for action has the property
+2165740~004620~that is absolutely integral and as long as everything stays finite and
+2170360~003430~interns have ample to in a finite duration signal
+2173790~004020~there's no difficulty that we're gonna run into here
+2177810~004250~now here the Fourier transform will converge and now
+2182060~004960~the question is what can we say about the reach of convergence
+2187020~003290~of the apostrophe it's for well
+2190310~004130~the applies transform is the Fourier transform
+2194440~003310~all the time function multiplied by an exponential
+2197750~004950~and so we can ask a pan out whether we can destroy the absolute integrability
+2202700~001450~of this
+2204150~003540~by multiplying by an exponential that the case
+2207690~005450~that grows too fast in the case too fast to whatever let's take a look at that
+2213140~003150~suppose that this time function
+2216290~004100~is absolutely integral and
+2220390~003260~let's multiply it by
+2223650~005180~a decaying exponential so this is now except eat I'm see the minus Sigma T
+2228830~003150~if I think multiplying these two together
+2231980~003930~and what you can see is that for negative for positive time
+2235910~003140~sort of thinking informally I'm helping
+2239050~004580~the integrability of the product because I'm pushing this part down
+2243630~004390~for negative time unfortunately I'm making things bro
+2248020~005220~but I don't let them grow indefinitely because there's some time before which
+2253240~003810~this is equal to 0 likewise
+2257050~006260~if I head a growing exponential
+2263310~003600~then for a growing exponential
+2266910~003240~for negative time or for this part perhaps
+2270150~004940~this part making things smaller for positive time eventually this expansion
+2275090~000870~was growing without
+2275960~005430~found but the time function stocks at some point
+2281390~003690~so the idea then kinda is dead
+2285080~003490~for a finite duration
+2288570~005730~time function no matter what kinda exponential I multiply by whether it's
+2294300~003890~going this way are going this way because of the fact that
+2298190~004090~essentially the limits on the integral are fine I'd I'm
+2302280~004070~guaranteed that'll always maintain absolute integrability
+2306350~004550~and so in fact then for a finite duration time function
+2310900~005870~the region of convergence is the entire s play
+2316770~003010~okay now in we can also
+2319780~003680~make statements about other kinds of time functions
+2323460~003130~and let's look
+2326590~003190~at a time function
+2329780~003440~which I a defined as a right-sided
+2333220~004190~time function and
+2337410~003040~a right-sided time function is one which
+2340450~003380~is 0 up until sometime and then
+2343830~004220~it goes on after that presumably off to infinity
+2348050~003110~now let me remind you that
+2351160~003220~the whole issue here with the region of convergence
+2354380~003700~has to do with exponentials
+2358080~003690~that we can multiply a time function by
+2361770~004740~and have the product end up being absolutely integral
+2366510~004730~well supposed dead when I multiply this time function
+2371240~004190~by an exponential which lets ATK's
+2375430~003980~but an exponentially to the minus Sigma 0t
+2379410~003330~what you can see me sort of intuitively is dead if
+2382740~003220~this product is absolutely integral
+2385960~005310~if I would increase Sigma 0 then I'm making things even better for positive
+2391270~002370~time because I'm pushing them down
+2393640~003660~and whereas they might be worse for negative time
+2397300~003750~that doesn't matter because before some time
+2401050~005720~the product is equal to 0 so if this product is absolutely an agreeable
+2406770~003140~then if are chosen exponential
+2409910~003370~it's a minus signal one teeny where signal one
+2413280~003340~is greater than 60 then that product
+2416620~004170~will also be absolutely integral ball and we can draw
+2420790~004640~important conclusion about that about the region of convergence from that
+2425430~003100~in particular we can make this statement
+2428530~005030~dead if the time function is right sided
+2433560~003020~and if convergence
+2436580~004530~occurs for some value segment 0
+2441110~004710~then in fact we will have convergence of the law applies transform
+2445820~003870~for all values all the real party bass
+2449690~003020~greater than Sigma 0 the reason
+2452710~003870~of course being dead if Sigma 0 increases
+2456580~006610~then the exponential DK's even faster for positive time
+2463190~004830~now what that says then thinking another way enters the region of convergence
+2468020~003320~as we might droid in the ass plane is that
+2471340~003310~if we have a point that's in the region of convergence corresponding to some
+2474650~001990~value Sigma 0
+2476640~003260~band all values evas to the right of that
+2479900~004460~in the S plane will also be in the region convergence
+2484360~003950~we can also combine that with the statement that for rational functions
+2488310~003150~we know dead there can't be any polls
+2491460~004020~in the region of convergence if you put those two statements together
+2495480~003600~then we end up with a statement dead if
+2499080~005740~x50 is right sided and if it's a plus transformers rational
+2504820~003770~then the region of convergence is to the right
+2508590~003160~up the rightmost poll so
+2511750~004360~we have here a very important insight which tells us
+2516110~003190~dead weekend im in for some property
+2519300~003380~about the time function from the region of convergence
+2522680~004330~or conversely if we know something about the time function namely being right
+2527010~000940~sided
+2527950~004590~then we can infer something about the regional convergence
+2532540~003500~well in addition to right-sided
+2536040~003470~signals we can also have left sided signals
+2539510~004390~Analects I did signal is essentially a right-sided signal turned around
+2543900~003090~in other words a left-sided signal is one
+2546990~003860~that is zero after some time
+2550850~003720~well we can carry out exactly the same kind of argument there
+2554570~004040~namely if the signal goes off to infinity in the negative time direction
+2558610~000860~and stops
+2559470~004870~someplace for positive time if I have an exponential
+2564340~004270~I can multiply it by and have that product be absolutely integral ball
+2568610~003740~but if I choose an exponential that decays even faster for negative times
+2572350~001690~that I'm pushing the stuff
+2574040~003160~way out there down even further then
+2577200~003640~II enhance the integrability even more
+2580840~004380~an you might have to think through that a little bit but it's exactly
+2585220~003670~the flip side of the argument for right-sided signals
+2588890~003520~and the conclusion and is dead
+2592410~004040~if we have a left-sided signal
+2596450~004400~and we have a point a value up the real party best which is in the region of
+2600850~001210~convergence
+2602060~003450~then in fact all values
+2605510~003020~to the left at that point in the S plane
+2608530~003960~will also be in the region of convergence
+2612490~003600~now solar to the statement that we made for right-sided signals
+2616090~004640~if expertise left-sided and in fact we're talking about a rational applies
+2620730~001540~transform which we most
+2622270~004400~typically well then in fact we can make the statement
+2626670~003400~there the region of convergence is to the left
+2630070~003010~of the leftmost poll because
+2633080~003570~we know it has if we find a point that's in the region of convergence
+2636650~003220~everything to the left then has to be in the region of convergence
+2639870~003690~we can have any polls in the region of convergence you put those two statements
+2643560~001120~together and it says
+2644680~003020~is to the left the leftmost poll
+2647700~004270~now the final situation is the situation where
+2651970~003460~we have a signal which is neither right side or left side it goes off to
+2655430~001990~infinity for positive time
+2657420~004300~and it goes off to infinity for negative time and their the thing to kinda
+2661720~001540~recognizes that
+2663260~004410~if you multiply by an exponential and its decaying
+2667670~004410~very fast for positive time it's gonna be growing very fast for negative time
+2672080~004030~conversely if it became very fast for negative time is growing very fast for
+2676110~001380~positive time
+2677490~004270~and this kind of this notion of trying to balance the value Sigma
+2681760~004170~and in effect with that says is that the region of convergence can't
+2685930~003260~extent too far to the left or too far to the right
+2689190~003640~said another way for a two-sided
+2692830~005500~signal and if we have a point which is in the region of convergence
+2698330~003410~than that point defines
+2701740~003600~strip in the ass plane dead takes
+2705340~004630~that point and extends it to the left until you bump into a pole
+2709970~005270~an extensive to the right until you bump into a pole
+2715240~003620~fight so he you begin today and see that
+2718860~003600~we can tie together some properties in the region of convergence
+2722460~004520~and the right-sided mister left-sided mister two-sided NIS
+2726980~004520~love the time function and you have a chance to examine that
+2731500~003520~in more detail in the video course manual
+2735020~003490~let's conclude this lecture by talking about
+2738510~004450~how we might get the time function
+2742960~003080~given the low class transformed
+2746040~003640~well if we have a plus transform we can
+2749680~003310~in principle get the time function back again by
+2752990~003280~recognizing this relationship between the applause transform
+2756270~004390~and the 48 transform and using the formal for EA transform expression
+2760660~003810~or quietly the formal inverse Laplace transform
+2764470~005460~expression which is in the tax but more typically what we would do is
+2769930~004390~what we've done also with the Fourier transform
+2774320~003290~which is to use simple
+2777610~003280~plus transform pairs together with the notion
+2780890~003300~all the partial fraction expansion and
+2784190~003840~let's just go through that with an example
+2788030~003530~let's suppose that I have
+2791560~003850~a a-plus transform as i indicated here
+2795410~004260~and its polls are applied and a region of convergence which
+2799670~004060~is to the right if this poll and what we can identify
+2803730~003270~from the region of convergence in fact is that we're talking
+2807000~003680~about a right-sided time function
+2810680~005220~so the rear richer convergence is the real party best greater than -1
+2815900~004280~and now looking down at the algebraic expression
+2820180~004410~we have the algebraic expression for this is i indicate here
+2824590~004730~acquittal on tlie expanded in a partial fraction expansion
+2829320~003920~as a show below so if you just simply combine these together
+2833240~003800~that's the same as this and the region of convergence
+2837040~004370~is the real party bass greater than -1
+2841410~003430~now the region of convergence or
+2844840~004320~this is a solid to turn so the the time function is this summer to time
+2849160~001170~functions
+2850330~003060~and the region of convergence
+2853390~004100~all love the combination must be
+2857490~004470~the intersection of the region of convergence associated with each one
+2861960~004790~recognizing that this is to the right of the polls
+2866750~003360~that tells us immediately that each of these two
+2870110~003540~then would correspond to bill plus transform
+2873650~003520~love a right-sided time function
+2877170~003720~well let's look at it term by term
+2880890~005040~the first term is the factor 1 over s plus one
+2885930~004690~with the region of convergence to the right if this poll
+2890620~003830~and this hat algebraically
+2894450~003270~corresponds to what i've indicated and this in fact
+2897720~003880~is similar to or special case if the
+2901600~004100~example that we pointed to at the beginning at the lecture namely example
+2905700~001280~9.1
+2906980~003650~and so we can just simply use that result if you think back
+2910630~003150~to that example or refer to your notes we know
+2913780~003260~dead time function of the form
+2917040~004690~eat to -80 gives us all a plus transform which is one over S Plus
+2921730~003820~a with the real party bass greater than
+2925550~004980~minus a and so this is the applause transformer the first
+2930530~004790~or sorry this is the inverse the poss transform the first term
+2935320~003160~if we now consider the poll add
+2938480~003790~s equals -2
+2942270~004520~and here is the region of convergence that we originally began with
+2946790~004870~in fact we can having removed the pole at -1
+2951660~003060~extend this region of convergence
+2954720~003660~to this poll and we now have
+2958380~004230~an algebraic expression which is -1 over s plus
+2962610~003740~to the real party best greater than -1
+2966350~003630~although in fact we can extend the region of convergence
+2969980~003640~up to the poll and the inverse
+2973620~003180~transformer this is now again
+2976800~004030~referring to the same example minus you to the -2 T
+2980830~003940~times a unit step and if we simply
+2984770~003880~put the two turns together then
+2988650~004690~adding the one that we have here to what we had before
+2993340~003770~we have a total inverse Laplace transform
+2997110~003750~which is that
+3000860~003280~so essentially what's happened is dead
+3004140~003690~each of the ex each over the polls has contributed
+3007830~004430~an exponential factor and because if the region of convergence
+3012260~003100~being to the right of all those polls that
+3015360~005250~is consistent with the notion that both of those terms correspond to right-sided
+3020610~002250~time functions
+3022860~003020~well it's just the focus for
+3025880~003360~for a second or two on the same
+3029240~005030~Posey role pattern but instead I love
+3034270~003680~a region of convergence which is to the right at the polls
+3037950~004080~as we had before well now take a region of convergence which is between the two
+3042030~001250~poles
+3043280~003700~and I'll let you work through this more leisurely
+3046980~005920~in the video course manual but when we carry out the partial fraction expansion
+3052900~003040~as I've done below
+3055940~004040~we would now associate with this poll
+3059980~003720~a regional convergence to the right with this poll
+3063700~003520~a region of convergence to the left
+3067220~003340~and so while what we would have
+3070560~004970~is the sum love a right-sided time function due to this poll
+3075530~003070~and in fact that serve the form you to the minus T
+3078600~004090~pretty positive and a left-sided
+3082690~003620~type function due to this poll
+3086310~003260~and in fact that serve the form in the minus two TV
+3089570~003390~pretty negative and so in fact
+3092960~003810~the answer that we will get when we decompose this
+3096770~003580~use the partial fraction expansion being very careful
+3100350~003340~about associating the region of convergence
+3103690~003550~this poll to the right and if this poll to the left
+3107240~003370~will have then when we're all done a time
+3110610~003660~function which will be of the form eats the minus
+3114270~004440~T times a unit step pretty positive
+3118710~003670~and then we'll have a term of the for me
+3122380~004800~to the I'm sorry this would-be to the minus 2 T's since this is at -2 in this
+3127180~000280~is
+3127460~004150~-1 this would be a plus sign in this would be minus
+3131610~003690~you to the minus the for TE negative
+3135300~003920~and you look at that a little more carefully when
+3139220~005720~I you sit down with the video course manual
+3144940~003750~okay well what we've gone through rather quickly is
+3148690~003780~an introduction to the applause transform
+3152470~003760~and a couple points to underscore again
+3156230~004710~is the fact that the applause transform is very closely associated
+3160940~004590~with the Fourier transform and in fact the applause transform
+3165530~004070~4s equals jail maker reduces to the 48 transform
+3169600~005050~but more generally the a-plus transform is the 48 transform
+3174650~003200~love x50 with
+3177850~006070~an exponential weighting and there are some exponentials for which that product
+3183920~003250~converges there are other exponentials for which
+3187170~003620~that product has a Fourier transform that doesn't converge
+3190790~004620~bad then imposes on the discussion above plus transform
+3195410~003430~what we refer to as the region of convergence
+3198840~005960~and it's very important to understand that in specifying a a-plus transform
+3204800~003880~it's important to identify not only
+3208680~004870~the algebraic expression but also the values the best namely
+3213550~003040~for which it it's valid namely
+3216590~005490~the region of convergence low class transformed finally what we did was to
+3222080~003470~tied together some properties over time function
+3225550~003910~with things that we can say about the regional convergence office supplies
+3229460~002560~transform
+3232020~004840~now just as with the Fourier transform the applause transformer has some very
+3236860~004320~important properties and I love these properties both
+3241180~005020~are some mechanisms for using a fast transforming
+3246200~004740~for such such systems as linear cut those described by a linear cut the
+3250940~001340~coefficient
+3252280~003340~differential equations but more importantly
+3255620~005070~the properties will help us as we understand the further
+3260690~003940~will help us in using exploiting
+3264630~004740~the appliance transform to study and understand
+3269370~003000~linear time-invariant systems and
+3272370~003700~thats what will go on to next time in particular
+3276070~003830~talking about properties and then associating
+3279900~003700~with linear time-invariant systems much of the discussion
+3283600~003020~dead we've had today relating
+3286620~001680~to the austrians 1 thank you

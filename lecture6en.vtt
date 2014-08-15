@@ -1,0 +1,2274 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:20,000
+that MIT ided you
+
+00:00:20,000 --> 00:00:27,000
+ha
+
+00:00:42,000 --> 00:00:45,000
+the norm
+
+00:00:45,000 --> 00:00:52,000
+are
+
+00:00:55,000 --> 00:00:59,000
+over the past several lectures we've developed the representation for linear
+
+00:00:59,000 --> 00:01:00,000
+time-invariant systems
+
+00:01:00,000 --> 00:01:04,000
+in a particularly important center systems
+
+00:01:04,000 --> 00:01:08,000
+which are linear and time-invariant are those that are represented by linear
+
+00:01:08,000 --> 00:01:12,000
+constant coefficient differential equations continuous-time
+
+00:01:12,000 --> 00:01:16,000
+or when your constant coefficient difference equations
+
+00:01:16,000 --> 00:01:21,000
+in discrete-time for example electrical circuits that are built let's say I dove
+
+00:01:21,000 --> 00:01:24,000
+resistors inductors and capacitors perhaps with %ah pants
+
+00:01:24,000 --> 00:01:28,000
+correspond to systems described by differential equations
+
+00:01:28,000 --> 00:01:32,000
+mechanical systems with springs and dash pots likewise
+
+00:01:32,000 --> 00:01:36,000
+are described by differential equations and in the discrete-time
+
+00:01:36,000 --> 00:01:40,000
+case things such as moving average filters
+
+00:01:40,000 --> 00:01:45,000
+digital filters and most simple kinda data smoothing
+
+00:01:45,000 --> 00:01:48,000
+are all linear constant coefficient difference equations
+
+00:01:48,000 --> 00:01:52,000
+now presumably
+
+00:01:52,000 --> 00:01:56,000
+in a previous course you've had some exposure to
+
+00:01:56,000 --> 00:02:01,000
+differential equations for continuous-time and
+
+00:02:01,000 --> 00:02:05,000
+their solution using notions like particular solution and homogeneous
+
+00:02:05,000 --> 00:02:07,000
+solution initial conditions center
+
+00:02:07,000 --> 00:02:10,000
+later on in the course
+
+00:02:10,000 --> 00:02:15,000
+when we've developed the concept to the 48 transforming after that the
+
+00:02:15,000 --> 00:02:17,000
+apostrophe its form
+
+00:02:17,000 --> 00:02:20,000
+will see some very efficient and useful ways
+
+00:02:20,000 --> 00:02:24,000
+generating solutions both differential and difference equations
+
+00:02:24,000 --> 00:02:27,000
+at this point however I'd like to
+
+00:02:27,000 --> 00:02:30,000
+just introduce when your constant coefficient
+
+00:02:30,000 --> 00:02:34,000
+differential equations and the discrete-time counterpart
+
+00:02:34,000 --> 00:02:37,000
+and address among other things the issue
+
+00:02:37,000 --> 00:02:42,000
+love when they do and don't correspond to linear time-invariant systems
+
+00:02:42,000 --> 00:02:45,000
+well let's first consider
+
+00:02:45,000 --> 00:02:49,000
+what I refer to as an nth order
+
+00:02:49,000 --> 00:02:52,000
+linear constant coefficients differential equation as i've indicated
+
+00:02:52,000 --> 00:02:53,000
+here
+
+00:02:53,000 --> 00:02:58,000
+and what it consists of is a linear combination of derivatives up the system
+
+00:02:58,000 --> 00:02:59,000
+output
+
+00:02:59,000 --> 00:03:02,000
+y'at equal to a linear combination
+
+00:03:02,000 --> 00:03:05,000
+of derivatives above the system input accept T
+
+00:03:05,000 --> 00:03:08,000
+and is referred to
+
+00:03:08,000 --> 00:03:13,000
+as a constant coefficients equation of course because the
+
+00:03:13,000 --> 00:03:18,000
+coefficients are constant in other words not assume to be time-varying
+
+00:03:18,000 --> 00:03:21,000
+and its referred to
+
+00:03:21,000 --> 00:03:26,000
+as linear because it corresponds to a linear combination
+
+00:03:26,000 --> 00:03:30,000
+love these derivatives not because
+
+00:03:30,000 --> 00:03:33,000
+it corresponds to a linear system and in fact
+
+00:03:33,000 --> 00:03:36,000
+as we'll see or as all indicate this
+
+00:03:36,000 --> 00:03:40,000
+equation may or may not in fact correspond to
+
+00:03:40,000 --> 00:03:44,000
+when your system in the discrete-time case
+
+00:03:44,000 --> 00:03:50,000
+the corresponding equation is a linear constant coefficient difference equation
+
+00:03:50,000 --> 00:03:53,000
+and that corresponds to again
+
+00:03:53,000 --> 00:03:58,000
+a linear combination love the late versions of the output equal to
+
+00:03:58,000 --> 00:04:02,000
+a linear combination love the late versions at the input
+
+00:04:02,000 --> 00:04:05,000
+this equation is referred to as an nth order
+
+00:04:05,000 --> 00:04:10,000
+difference equation the N referring to the number of the ladies
+
+00:04:10,000 --> 00:04:14,000
+are the output involved just as an aunt order differential equation
+
+00:04:14,000 --> 00:04:19,000
+the N for the order the equation refers to the number of derivatives
+
+00:04:19,000 --> 00:04:22,000
+the output now let's first begin
+
+00:04:22,000 --> 00:04:26,000
+with the near constant coefficient differential equations
+
+00:04:26,000 --> 00:04:30,000
+and the basic
+
+00:04:30,000 --> 00:04:33,000
+point or the solution for
+
+00:04:33,000 --> 00:04:37,000
+the differential equations is the fact dead
+
+00:04:37,000 --> 00:04:40,000
+if we've generated some solution
+
+00:04:40,000 --> 00:04:44,000
+which I refer to here's why superiority some solution
+
+00:04:44,000 --> 00:04:47,000
+to the equation for a given input then
+
+00:04:47,000 --> 00:04:50,000
+in fact we can and to that solution
+
+00:04:50,000 --> 00:04:54,000
+any other solution which
+
+00:04:54,000 --> 00:04:57,000
+satisfies what's referred to as
+
+00:04:57,000 --> 00:05:01,000
+the homogeneous equation so in fact
+
+00:05:01,000 --> 00:05:05,000
+this differential equation by itself
+
+00:05:05,000 --> 00:05:08,000
+is not a unique specification
+
+00:05:08,000 --> 00:05:10,000
+the system
+
+00:05:10,000 --> 00:05:13,000
+if I have any solution then I can
+
+00:05:13,000 --> 00:05:18,000
+and to that solution any other solution which satisfies the homogeneous equation
+
+00:05:18,000 --> 00:05:20,000
+and thus all those two
+
+00:05:20,000 --> 00:05:24,000
+likewise be a solution and that's very straight forward to verify
+
+00:05:24,000 --> 00:05:28,000
+by simply substituting into the differential equation
+
+00:05:28,000 --> 00:05:33,000
+some love the particular a particular and the homogeneous solution
+
+00:05:33,000 --> 00:05:37,000
+and what you see is that the homogeneous contribution
+
+00:05:37,000 --> 00:05:41,000
+in fact goes to zero by definition
+
+00:05:41,000 --> 00:05:45,000
+what we mean by the homogeneous equation now
+
+00:05:45,000 --> 00:05:50,000
+the homogeneous solution for a when your constant coefficient differential
+
+00:05:50,000 --> 00:05:51,000
+equation
+
+00:05:51,000 --> 00:05:55,000
+is of the form that I
+
+00:05:55,000 --> 00:05:58,000
+indicate at the bottom and
+
+00:05:58,000 --> 00:06:01,000
+it typically consists love a
+
+00:06:01,000 --> 00:06:06,000
+song or capital and complex exponentials
+
+00:06:06,000 --> 00:06:09,000
+and the Constance
+
+00:06:09,000 --> 00:06:12,000
+are on determined by the equation itself
+
+00:06:12,000 --> 00:06:17,000
+and this form for the homogeneous solution
+
+00:06:17,000 --> 00:06:22,000
+in essence drops out love examining
+
+00:06:22,000 --> 00:06:26,000
+the homogeneous equation where
+
+00:06:26,000 --> 00:06:30,000
+if we assume that the former the homogeneous solution
+
+00:06:30,000 --> 00:06:34,000
+is a complex exponential with some
+
+00:06:34,000 --> 00:06:38,000
+on specified amplitude and unspecified exponent
+
+00:06:38,000 --> 00:06:42,000
+if we substitute this into are homogeneous equation
+
+00:06:42,000 --> 00:06:45,000
+we end up with the equation that i've indicated
+
+00:06:45,000 --> 00:06:49,000
+year the factor A&E the st. can in fact be
+
+00:06:49,000 --> 00:06:53,000
+cancelled out and we find there that equation
+
+00:06:53,000 --> 00:06:56,000
+is satisfied
+
+00:06:56,000 --> 00:06:59,000
+for capital N values
+
+00:06:59,000 --> 00:07:02,000
+love s and
+
+00:07:02,000 --> 00:07:06,000
+that's true no matter what choices made for these
+
+00:07:06,000 --> 00:07:10,000
+coefficients and the essential consequence
+
+00:07:10,000 --> 00:07:13,000
+have all of that is that the homogeneous solution
+
+00:07:13,000 --> 00:07:17,000
+is of the form that I indicated previously
+
+00:07:17,000 --> 00:07:20,000
+namely it consists love some
+
+00:07:20,000 --> 00:07:24,000
+love capital and complex exponentials
+
+00:07:24,000 --> 00:07:28,000
+where the coefficients the capital and coefficients
+
+00:07:28,000 --> 00:07:31,000
+attached to you to those complex exponentials
+
+00:07:31,000 --> 00:07:34,000
+is undetermined Iran specified
+
+00:07:34,000 --> 00:07:38,000
+so what this says is that in order to
+
+00:07:38,000 --> 00:07:42,000
+obtain the solution for a win here comes the coefficient differential equation
+
+00:07:42,000 --> 00:07:45,000
+we need some kind of auxiliary information
+
+00:07:45,000 --> 00:07:49,000
+tells us how to obtain these capital and
+
+00:07:49,000 --> 00:07:53,000
+undetermined Constance and there are a variety of ways
+
+00:07:53,000 --> 00:07:57,000
+specifying this auxiliary information or auxiliary conditions
+
+00:07:57,000 --> 00:08:02,000
+for example in addition to the differential equation
+
+00:08:02,000 --> 00:08:05,000
+what I can tell you is the value
+
+00:08:05,000 --> 00:08:08,000
+of the output and and -1 up there
+
+00:08:08,000 --> 00:08:12,000
+and -1 if its derivatives at some
+
+00:08:12,000 --> 00:08:15,000
+specified time t0 and
+
+00:08:15,000 --> 00:08:19,000
+so the differential equations together
+
+00:08:19,000 --> 00:08:23,000
+with the auxiliary information the initial conditions
+
+00:08:23,000 --> 00:08:26,000
+van lets you determine the total solution
+
+00:08:26,000 --> 00:08:31,000
+which namely lets you determine these previously unspecified
+
+00:08:31,000 --> 00:08:35,000
+coefficients in the homogeneous solution
+
+00:08:35,000 --> 00:08:40,000
+now depending on how the auxiliary information is stated or what auxiliary
+
+00:08:40,000 --> 00:08:41,000
+information is available
+
+00:08:41,000 --> 00:08:45,000
+the system a or may not correspond
+
+00:08:45,000 --> 00:08:49,000
+to a linear system and may or may not correspond to a linear time-invariant
+
+00:08:49,000 --> 00:08:53,000
+system one essential condition
+
+00:08:53,000 --> 00:08:56,000
+for it to correspond to a linear system is that
+
+00:08:56,000 --> 00:09:00,000
+the initial conditions must be zero
+
+00:09:00,000 --> 00:09:04,000
+and one can see the reason for that
+
+00:09:04,000 --> 00:09:09,000
+if we refer back to the previous lecture in which we saw that for a linear system
+
+00:09:09,000 --> 00:09:12,000
+if we put 0n we get zero out
+
+00:09:12,000 --> 00:09:17,000
+so if exit see the input is zero the output must be zero
+
+00:09:17,000 --> 00:09:21,000
+and so that in essence tells us that at least for the system to be linear
+
+00:09:21,000 --> 00:09:24,000
+these initial conditions must be zero
+
+00:09:24,000 --> 00:09:28,000
+now beyond that if
+
+00:09:28,000 --> 00:09:31,000
+we want the system to be
+
+00:09:31,000 --> 00:09:35,000
+causal and linear time in and time-invariant
+
+00:09:35,000 --> 00:09:38,000
+then what's required on the
+
+00:09:38,000 --> 00:09:42,000
+initial conditions is that they be consistent with
+
+00:09:42,000 --> 00:09:47,000
+what's referred to as initial rest initial arrest says
+
+00:09:47,000 --> 00:09:51,000
+that the output must be
+
+00:09:51,000 --> 00:09:54,000
+0 up until the time
+
+00:09:54,000 --> 00:09:58,000
+that the input becomes 90 and we can see
+
+00:09:58,000 --> 00:10:01,000
+of course that that's consistent with the notion of causality as
+
+00:10:01,000 --> 00:10:05,000
+we talked about in the previous lecture and
+
+00:10:05,000 --> 00:10:09,000
+its relatively straightforward to see
+
+00:10:09,000 --> 00:10:14,000
+that if the system is causal and linear and time-invariant
+
+00:10:14,000 --> 00:10:17,000
+that will require
+
+00:10:17,000 --> 00:10:21,000
+initial rest it's somewhat more difficult see
+
+00:10:21,000 --> 00:10:27,000
+that if we specify initial rest the NAT in fact is sufficient to
+
+00:10:27,000 --> 00:10:30,000
+determine that the system is both causal in linear
+
+00:10:30,000 --> 00:10:34,000
+and time very but the essential point then is that
+
+00:10:34,000 --> 00:10:37,000
+requires initial rest for both linearity
+
+00:10:37,000 --> 00:10:41,000
+and causality okay well
+
+00:10:41,000 --> 00:10:44,000
+let's look at an example and
+
+00:10:44,000 --> 00:10:49,000
+let's take the example love a first-order
+
+00:10:49,000 --> 00:10:52,000
+differential equation as I've
+
+00:10:52,000 --> 00:10:55,000
+indicated here so we have
+
+00:10:55,000 --> 00:10:59,000
+a first-order differential equation the wife TTT
+
+00:10:59,000 --> 00:11:02,000
+was a yote is the input exit
+
+00:11:02,000 --> 00:11:05,000
+T and let's first
+
+00:11:05,000 --> 00:11:08,000
+look at what the homogeneous solution this equation is
+
+00:11:08,000 --> 00:11:12,000
+and so we can consider the homogeneous equation
+
+00:11:12,000 --> 00:11:17,000
+namely the equation specify solutions
+
+00:11:17,000 --> 00:11:21,000
+which would correspond to zero input
+
+00:11:21,000 --> 00:11:24,000
+we in essence guess for impose
+
+00:11:24,000 --> 00:11:28,000
+a solution love the form the homogeneous solution
+
+00:11:28,000 --> 00:11:33,000
+is an amplitude factor times the complex exponential
+
+00:11:33,000 --> 00:11:37,000
+substituting this into the homogeneous equation
+
+00:11:37,000 --> 00:11:40,000
+we then get the equation that i've indicated here
+
+00:11:40,000 --> 00:11:44,000
+what you can see is that this equates in this equation
+
+00:11:44,000 --> 00:11:49,000
+I can cancel out the amplitude factor and this complex exponential
+
+00:11:49,000 --> 00:11:56,000
+so let's just cancel those out on both sides of the equation
+
+00:11:56,000 --> 00:12:00,000
+and what we're left with is an equation
+
+00:12:00,000 --> 00:12:04,000
+that specifies what the complex exponent must be
+
+00:12:04,000 --> 00:12:09,000
+in particular for the homogeneous solution s must be equal to minus a
+
+00:12:09,000 --> 00:12:12,000
+and so finally are homogeneous solution
+
+00:12:12,000 --> 00:12:18,000
+is as I've indicated year
+
+00:12:18,000 --> 00:12:24,000
+okay now let's look at the solution for specific input let's consider for
+
+00:12:24,000 --> 00:12:25,000
+example input
+
+00:12:25,000 --> 00:12:28,000
+which is a scale units step and
+
+00:12:28,000 --> 00:12:32,000
+although I won't work at the solution in detail and perhaps
+
+00:12:32,000 --> 00:12:36,000
+using what you've worked on previously
+
+00:12:36,000 --> 00:12:39,000
+you know how to carry out the solution for that the
+
+00:12:39,000 --> 00:12:42,000
+a solution with step input
+
+00:12:42,000 --> 00:12:47,000
+is what i've indicated here scaler one minus the next financial times unit
+
+00:12:47,000 --> 00:12:51,000
+staff and you can verify that simply by substituting into the differential
+
+00:12:51,000 --> 00:12:53,000
+equations now
+
+00:12:53,000 --> 00:12:57,000
+we know that there's a family of solutions in other words
+
+00:12:57,000 --> 00:13:00,000
+any solution with
+
+00:13:00,000 --> 00:13:04,000
+a homogeneous solution added to it is again a solution
+
+00:13:04,000 --> 00:13:09,000
+and so if we consider the solution I just indicated
+
+00:13:09,000 --> 00:13:13,000
+we generate the entire family of solutions by
+
+00:13:13,000 --> 00:13:16,000
+ending a homogeneous solution to it and so
+
+00:13:16,000 --> 00:13:20,000
+this then corresponds to the entire family of solutions
+
+00:13:20,000 --> 00:13:24,000
+where the constant a is unspecified
+
+00:13:24,000 --> 00:13:31,000
+so far and needs to be specified through some type avoids avery conditions
+
+00:13:31,000 --> 00:13:34,000
+now a class A auxiliary conditions
+
+00:13:34,000 --> 00:13:37,000
+is the Commissioner initial rest which
+
+00:13:37,000 --> 00:13:43,000
+as i indicated before is equivalent to the statement that the system
+
+00:13:43,000 --> 00:13:47,000
+is causal and linear and time-invariant and
+
+00:13:47,000 --> 00:13:51,000
+in that case for the initial rest condition
+
+00:13:51,000 --> 00:13:55,000
+we would then require in this equation above
+
+00:13:55,000 --> 00:13:59,000
+that this constant be equal to 0
+
+00:13:59,000 --> 00:14:02,000
+and so finally the response
+
+00:14:02,000 --> 00:14:05,000
+to scales step if the system
+
+00:14:05,000 --> 00:14:09,000
+is the correspond to cause a linear time-invariant system
+
+00:14:09,000 --> 00:14:12,000
+is then just this term namely
+
+00:14:12,000 --> 00:14:15,000
+constant times one minus an exponential
+
+00:14:15,000 --> 00:14:18,000
+times step
+
+00:14:18,000 --> 00:14:22,000
+okay now if the system is a linear time-invariant system
+
+00:14:22,000 --> 00:14:25,000
+it can as we know be described through its impulse response
+
+00:14:25,000 --> 00:14:29,000
+and as you've worked out previously
+
+00:14:29,000 --> 00:14:32,000
+in the video course manual for
+
+00:14:32,000 --> 00:14:36,000
+a linear time-invariant system the impulse response
+
+00:14:36,000 --> 00:14:40,000
+is the derivative love the step response adjusted quickly remind you
+
+00:14:40,000 --> 00:14:44,000
+love where that result comes from in essence
+
+00:14:44,000 --> 00:14:49,000
+we can consider to linear time-invariant systems and Cascade
+
+00:14:49,000 --> 00:14:53,000
+wanna differentiator the other the system that we're talking about
+
+00:14:53,000 --> 00:14:54,000
+described by
+
+00:14:54,000 --> 00:14:58,000
+the differential equation and step in here
+
+00:14:58,000 --> 00:15:02,000
+then generated in polls into our system
+
+00:15:02,000 --> 00:15:06,000
+and out comes the impulse response well just using the fact that
+
+00:15:06,000 --> 00:15:10,000
+these are both linear time-invariant systems and they can be cascaded in
+
+00:15:10,000 --> 00:15:11,000
+either order
+
+00:15:11,000 --> 00:15:15,000
+then means that if we have step response
+
+00:15:15,000 --> 00:15:19,000
+to our system and that goes through differentiator
+
+00:15:19,000 --> 00:15:24,000
+what must come out again is the impulse response
+
+00:15:24,000 --> 00:15:28,000
+so differentiating the step response we get the impulse response
+
+00:15:28,000 --> 00:15:32,000
+here again is the step response as we
+
+00:15:32,000 --> 00:15:37,000
+just worked it out this time for you next step if we differentiate
+
+00:15:37,000 --> 00:15:40,000
+we have then since the step response
+
+00:15:40,000 --> 00:15:44,000
+is the product of two terms the derivative a product is the sum
+
+00:15:44,000 --> 00:15:48,000
+the derivatives and carrying that algebra through
+
+00:15:48,000 --> 00:15:51,000
+and using the fact that the derivative the step
+
+00:15:51,000 --> 00:15:55,000
+is an impulse finally we come down
+
+00:15:55,000 --> 00:15:58,000
+to this statement for the impulse response
+
+00:15:58,000 --> 00:16:01,000
+and then recognizing that this is but I'm
+
+00:16:01,000 --> 00:16:04,000
+function times and in polls and we know
+
+00:16:04,000 --> 00:16:08,000
+that a time function times in polls takes on
+
+00:16:08,000 --> 00:16:13,000
+the value at the time that the impulse occurs
+
+00:16:13,000 --> 00:16:17,000
+then this term is simply 0
+
+00:16:17,000 --> 00:16:20,000
+and the impulse response then
+
+00:16:20,000 --> 00:16:23,000
+finally is an exponential this for
+
+00:16:23,000 --> 00:16:28,000
+and this is the peking exponential for a positive
+
+00:16:28,000 --> 00:16:32,000
+it's a growing exponentially for a negative and
+
+00:16:32,000 --> 00:16:36,000
+recall that as we talked about previously
+
+00:16:36,000 --> 00:16:40,000
+a system is a linear time-invariant system is stable
+
+00:16:40,000 --> 00:16:44,000
+if its impulse response is absolutely integral
+
+00:16:44,000 --> 00:16:49,000
+for this particular case this impulse response
+
+00:16:49,000 --> 00:16:52,000
+is absolutely integral provided that
+
+00:16:52,000 --> 00:16:55,000
+the exponential factor a
+
+00:16:55,000 --> 00:16:58,000
+is greater than 0
+
+00:16:58,000 --> 00:17:02,000
+okay so what we've seen then is the
+
+00:17:02,000 --> 00:17:07,000
+impulse response for system described by a linear constant coefficient
+
+00:17:07,000 --> 00:17:08,000
+differential equation
+
+00:17:08,000 --> 00:17:11,000
+where in addition we will impose causality
+
+00:17:11,000 --> 00:17:15,000
+when you're ready in time invariance essentially through the initial
+
+00:17:15,000 --> 00:17:16,000
+conditions
+
+00:17:16,000 --> 00:17:19,000
+love initial rest
+
+00:17:19,000 --> 00:17:23,000
+now pretty much the same kinds of things happen
+
+00:17:23,000 --> 00:17:26,000
+with difference equations as we've gone through
+
+00:17:26,000 --> 00:17:30,000
+with differential equations in particular
+
+00:17:30,000 --> 00:17:33,000
+again let me remind you love the form love
+
+00:17:33,000 --> 00:17:37,000
+and aunt order when your constant coefficient difference equation
+
+00:17:37,000 --> 00:17:41,000
+its as I indicate here and
+
+00:17:41,000 --> 00:17:47,000
+again a linear combination this time the late versions of the output equal to a
+
+00:17:47,000 --> 00:17:48,000
+linear combination
+
+00:17:48,000 --> 00:17:52,000
+up the late versions love the input once again
+
+00:17:52,000 --> 00:17:56,000
+the difference equation is not
+
+00:17:56,000 --> 00:18:01,000
+a complete specification the system because we can and to the response
+
+00:18:01,000 --> 00:18:04,000
+any homogeneous solution in other words
+
+00:18:04,000 --> 00:18:08,000
+any solution that satisfies the homogeneous equation
+
+00:18:08,000 --> 00:18:12,000
+in the summer those well also satisfy the original
+
+00:18:12,000 --> 00:18:17,000
+difference equation so if we have
+
+00:18:17,000 --> 00:18:21,000
+a particular response that satisfies
+
+00:18:21,000 --> 00:18:25,000
+the difference equation then ending to that
+
+00:18:25,000 --> 00:18:31,000
+any response there is a solution to the homogeneous equation
+
+00:18:31,000 --> 00:18:36,000
+will also be a solution to the total equation
+
+00:18:36,000 --> 00:18:41,000
+the homogeneous solution again is of the form
+
+00:18:41,000 --> 00:18:45,000
+of a linear combination of exponentials here
+
+00:18:45,000 --> 00:18:49,000
+we have the homogeneous equation as with
+
+00:18:49,000 --> 00:18:52,000
+differential equations we can
+
+00:18:52,000 --> 00:18:55,000
+guests or impose solutions for
+
+00:18:55,000 --> 00:18:59,000
+eight times an exponential when we substitute this
+
+00:18:59,000 --> 00:19:02,000
+into the homogeneous equation we then end up
+
+00:19:02,000 --> 00:19:07,000
+with equation that i've indicated here we recognize again
+
+00:19:07,000 --> 00:19:11,000
+there a the amplitude
+
+00:19:11,000 --> 00:19:15,000
+and seats at the end
+
+00:19:15,000 --> 00:19:18,000
+this exponential factor cancel out
+
+00:19:18,000 --> 00:19:22,000
+and so this equation is satisfied
+
+00:19:22,000 --> 00:19:26,000
+for any values love see
+
+00:19:26,000 --> 00:19:31,000
+that satisfy this equation and
+
+00:19:31,000 --> 00:19:34,000
+there are and roots C-one through Z and
+
+00:19:34,000 --> 00:19:37,000
+and so finally the form for the homogeneous solution
+
+00:19:37,000 --> 00:19:42,000
+is a linear combination love capital and
+
+00:19:42,000 --> 00:19:46,000
+exponentials capital and is the order the equation
+
+00:19:46,000 --> 00:19:50,000
+with each of those exponentials the ample to factor is undetermined
+
+00:19:50,000 --> 00:19:54,000
+and needs to be determined in some way through
+
+00:19:54,000 --> 00:19:57,000
+the imposition love appropriate
+
+00:19:57,000 --> 00:20:02,000
+initial conditions are boundary conditions
+
+00:20:02,000 --> 00:20:05,000
+so the general form then
+
+00:20:05,000 --> 00:20:08,000
+for the solution to the difference equation
+
+00:20:08,000 --> 00:20:11,000
+is
+
+00:20:11,000 --> 00:20:14,000
+some with the exponentials plus any particular solution
+
+00:20:14,000 --> 00:20:20,000
+its through auxiliary conditions that we determine
+
+00:20:20,000 --> 00:20:23,000
+these coefficients we have
+
+00:20:23,000 --> 00:20:27,000
+and undetermined coefficients and so
+
+00:20:27,000 --> 00:20:31,000
+we require capital and auxiliary conditions
+
+00:20:31,000 --> 00:20:35,000
+for example some set values
+
+00:20:35,000 --> 00:20:38,000
+of the output at and this thing instance
+
+00:20:38,000 --> 00:20:41,000
+time
+
+00:20:41,000 --> 00:20:42,000
+now this
+
+00:20:42,000 --> 00:20:45,000
+was the same as with differential equations in the case a differential
+
+00:20:45,000 --> 00:20:47,000
+equations we talked about specifying
+
+00:20:47,000 --> 00:20:51,000
+the value of the output and its derivatives and
+
+00:20:51,000 --> 00:20:54,000
+there we indicated dead for linearity
+
+00:20:54,000 --> 00:20:58,000
+what we required when the arity what we require
+
+00:20:58,000 --> 00:21:02,000
+is that the auxiliary conditions 30
+
+00:21:02,000 --> 00:21:05,000
+and the same thing applies here for the same reason
+
+00:21:05,000 --> 00:21:10,000
+namely if the system is to be linear and the response if there's no input must be
+
+00:21:10,000 --> 00:21:13,000
+equal to 0
+
+00:21:13,000 --> 00:21:15,000
+in addition what
+
+00:21:15,000 --> 00:21:18,000
+we may want to impose on the system is
+
+00:21:18,000 --> 00:21:22,000
+that it be causal and in addition to linear
+
+00:21:22,000 --> 00:21:25,000
+time-invariant and with that requires again
+
+00:21:25,000 --> 00:21:30,000
+is that it the auxiliary conditions be consistent with
+
+00:21:30,000 --> 00:21:33,000
+initial rest namely that if
+
+00:21:33,000 --> 00:21:37,000
+the input is zero prior to some time
+
+00:21:37,000 --> 00:21:42,000
+in the output is zero prior to the same time
+
+00:21:42,000 --> 00:21:45,000
+okay so we've seen a very direct parallel
+
+00:21:45,000 --> 00:21:48,000
+so far between differential equations
+
+00:21:48,000 --> 00:21:52,000
+and difference equations
+
+00:21:52,000 --> 00:21:55,000
+in fact one difference between them dead
+
+00:21:55,000 --> 00:21:58,000
+in some sense makes difference equations
+
+00:21:58,000 --> 00:22:02,000
+easier to deal with in some situations is dead
+
+00:22:02,000 --> 00:22:06,000
+in contrast to a differential equation a
+
+00:22:06,000 --> 00:22:09,000
+difference equation if we assume causality
+
+00:22:09,000 --> 00:22:12,000
+in fact is and explicit
+
+00:22:12,000 --> 00:22:15,000
+input-output relationship for the system now let me
+
+00:22:15,000 --> 00:22:18,000
+show you what I mean
+
+00:22:18,000 --> 00:22:23,000
+let's consider the n-th order difference equation as i've indicated here
+
+00:22:23,000 --> 00:22:27,000
+and let's assume that we're imposing causality
+
+00:22:27,000 --> 00:22:30,000
+so there'd the output can only depend
+
+00:22:30,000 --> 00:22:35,000
+on prior values at the input and therefore on fire values at the output
+
+00:22:35,000 --> 00:22:39,000
+well we can simply rearrange this equation
+
+00:22:39,000 --> 00:22:43,000
+solving for Y have an the leading term with cable 0
+
+00:22:43,000 --> 00:22:48,000
+taking all the other turns over to the right side of the equation
+
+00:22:48,000 --> 00:22:52,000
+and we then have a workers if equation
+
+00:22:52,000 --> 00:22:58,000
+namely that an equation expresses the output interns
+
+00:22:58,000 --> 00:23:01,000
+love prior values if the input which is this term
+
+00:23:01,000 --> 00:23:05,000
+and prior values at the output
+
+00:23:05,000 --> 00:23:09,000
+and so if in fact we have this equation running
+
+00:23:09,000 --> 00:23:12,000
+then once it started we know how to compute
+
+00:23:12,000 --> 00:23:16,000
+the output for the next time
+
+00:23:16,000 --> 00:23:17,000
+well
+
+00:23:17,000 --> 00:23:21,000
+how do we get started the way we get it started of course
+
+00:23:21,000 --> 00:23:24,000
+is through the appropriate said love
+
+00:23:24,000 --> 00:23:28,000
+initial conditions are boundary conditions and if for example
+
+00:23:28,000 --> 00:23:32,000
+we assume initial rest corresponding to a causal when you're time-invariant
+
+00:23:32,000 --> 00:23:33,000
+system
+
+00:23:33,000 --> 00:23:36,000
+then if the input is zero up until sometime
+
+00:23:36,000 --> 00:23:40,000
+the output must be zero up until that time and Matt in essence
+
+00:23:40,000 --> 00:23:44,000
+helps us get the equation started well let's look at this
+
+00:23:44,000 --> 00:23:48,000
+specifically in the context love a
+
+00:23:48,000 --> 00:23:51,000
+first-order difference equation so let's take
+
+00:23:51,000 --> 00:23:54,000
+a first-order difference equation
+
+00:23:54,000 --> 00:23:57,000
+as i've indicated here
+
+00:23:57,000 --> 00:24:01,000
+and so we have an equation that tells us that why I have and minus eight times
+
+00:24:01,000 --> 00:24:03,000
+wider than -1
+
+00:24:03,000 --> 00:24:06,000
+is equal to exit
+
+00:24:06,000 --> 00:24:09,000
+now if we want this to correspond to
+
+00:24:09,000 --> 00:24:13,000
+a causal linear time-invariant system we
+
+00:24:13,000 --> 00:24:17,000
+oppose initial impose initial rest on it we can
+
+00:24:17,000 --> 00:24:21,000
+rewrite the first-order difference equation by taking
+
+00:24:21,000 --> 00:24:24,000
+the term involving y ven -1
+
+00:24:24,000 --> 00:24:28,000
+over to the right hand side of the equation
+
+00:24:28,000 --> 00:24:32,000
+right now this gives us a workers if equation
+
+00:24:32,000 --> 00:24:38,000
+that expresses the output interns the input and past values at the output
+
+00:24:38,000 --> 00:24:42,000
+and since we've impose causality
+
+00:24:42,000 --> 00:24:46,000
+and if we're talking about a linear time-invariant system
+
+00:24:46,000 --> 00:24:50,000
+we can now inquire as to what the impulse responses and we know of course
+
+00:24:50,000 --> 00:24:52,000
+that the impulse response
+
+00:24:52,000 --> 00:24:56,000
+charles is everything that we need to know about the system
+
+00:24:56,000 --> 00:25:01,000
+okay so let's shoes and input which is
+
+00:25:01,000 --> 00:25:04,000
+an impulse so the impulse response
+
+00:25:04,000 --> 00:25:08,000
+is Beltre van corresponding
+
+00:25:08,000 --> 00:25:11,000
+to the exit and appear plus eighty Delta
+
+00:25:11,000 --> 00:25:15,000
+love this should be a chip N -1
+
+00:25:15,000 --> 00:25:20,000
+and let me just correct that this is a chip N -1
+
+00:25:20,000 --> 00:25:24,000
+so we have the impulse response as Delta van
+
+00:25:24,000 --> 00:25:28,000
+was eight times a Japan -1
+
+00:25:28,000 --> 00:25:31,000
+now from initial rest we know
+
+00:25:31,000 --> 00:25:36,000
+bad since the input namely an impulse is 0 for and less than zero
+
+00:25:36,000 --> 00:25:40,000
+the impulse response is likewise 0
+
+00:25:40,000 --> 00:25:43,000
+for and less 0 and now
+
+00:25:43,000 --> 00:25:47,000
+let's work out what 80 its well
+
+00:25:47,000 --> 00:25:50,000
+80 with an equal 0 is
+
+00:25:50,000 --> 00:25:54,000
+delta up zero plus eight times
+
+00:25:54,000 --> 00:25:57,000
+a chip N -1 HRN minus 10
+
+00:25:57,000 --> 00:26:04,000
+and so h0 is equal to 1
+
+00:26:05,000 --> 00:26:08,000
+okay now that we have a chance 0 we can figure at H
+
+00:26:08,000 --> 00:26:11,000
+one by running this recursive equations
+
+00:26:11,000 --> 00:26:15,000
+so 8 you've won is
+
+00:26:15,000 --> 00:26:18,000
+Delta love one which is zero
+
+00:26:18,000 --> 00:26:22,000
+plus eight times h0 which we just figured out as one
+
+00:26:22,000 --> 00:26:27,000
+so HR one is equal to a and if we carry this through
+
+00:26:27,000 --> 00:26:32,000
+will have a chip to equal to a squared and
+
+00:26:32,000 --> 00:26:36,000
+this will continue on and in fact we can recognize
+
+00:26:36,000 --> 00:26:40,000
+by looking at this and how we would expect these terms to build
+
+00:26:40,000 --> 00:26:44,000
+we would see that the impulse response a Japan
+
+00:26:44,000 --> 00:26:48,000
+in fact -ism form a to the end times
+
+00:26:48,000 --> 00:26:50,000
+you have an
+
+00:26:50,000 --> 00:26:54,000
+and we also can recognize then dead
+
+00:26:54,000 --> 00:26:58,000
+this corresponds to stable system
+
+00:26:58,000 --> 00:27:01,000
+if and only if the impulse response
+
+00:27:01,000 --> 00:27:06,000
+which is what we just figured out if and only if the impulse response
+
+00:27:06,000 --> 00:27:10,000
+is absolutely so noble and what that will require
+
+00:27:10,000 --> 00:27:17,000
+is that the magnitude a the less
+
+00:27:17,000 --> 00:27:21,000
+okay now we impose causality linear ready in time invariance
+
+00:27:21,000 --> 00:27:25,000
+and generated a solution recur simply
+
+00:27:25,000 --> 00:27:29,000
+and now of course if we want to generate the more general
+
+00:27:29,000 --> 00:27:32,000
+center solutions to this difference equation
+
+00:27:32,000 --> 00:27:36,000
+we can't do that by adding all of the
+
+00:27:36,000 --> 00:27:40,000
+homogeneous solutions namely all the solutions to satisfy the homogeneous
+
+00:27:40,000 --> 00:27:43,000
+equation so
+
+00:27:43,000 --> 00:27:47,000
+here we have the causal linear time-invariant
+
+00:27:47,000 --> 00:27:50,000
+impulse response in fact
+
+00:27:50,000 --> 00:27:56,000
+with an impulse input all of the possible solutions
+
+00:27:56,000 --> 00:27:59,000
+are that impulse response plus
+
+00:27:59,000 --> 00:28:05,000
+the homogeneous solutions the homogeneous solution is the solution
+
+00:28:05,000 --> 00:28:08,000
+that satisfies the homogeneous equation
+
+00:28:08,000 --> 00:28:11,000
+that will in general
+
+00:28:11,000 --> 00:28:14,000
+believe the form an amplitude factor
+
+00:28:14,000 --> 00:28:18,000
+times an exponential factor and
+
+00:28:18,000 --> 00:28:21,000
+if we substitute this into this equation
+
+00:28:21,000 --> 00:28:24,000
+then we see that the homogeneous
+
+00:28:24,000 --> 00:28:27,000
+equation is satisfied for any values have a
+
+00:28:27,000 --> 00:28:31,000
+in any values see that satisfy
+
+00:28:31,000 --> 00:28:36,000
+this equation again as we did with differential equations
+
+00:28:36,000 --> 00:28:43,000
+the factor Amy cancels out and also in fact I can cancel out is either the N
+
+00:28:43,000 --> 00:28:47,000
+there and seat to the end here
+
+00:28:47,000 --> 00:28:51,000
+and so what we're left with is a statement that tells us
+
+00:28:51,000 --> 00:28:54,000
+then dead the homogeneous
+
+00:28:54,000 --> 00:28:58,000
+solution is over for AC to the end
+
+00:28:58,000 --> 00:29:02,000
+for any ban you capital A and any value
+
+00:29:02,000 --> 00:29:05,000
+see it satisfies this equation and
+
+00:29:05,000 --> 00:29:08,000
+that values the in particular is the
+
+00:29:08,000 --> 00:29:12,000
+people today so the homogeneous solution then
+
+00:29:12,000 --> 00:29:16,000
+is any exponential this form with any amplitude factor
+
+00:29:16,000 --> 00:29:20,000
+and so the family of solutions with an impulse
+
+00:29:20,000 --> 00:29:24,000
+input is the solution
+
+00:29:24,000 --> 00:29:28,000
+corresponding to the system being cause a linear and time-invariant
+
+00:29:28,000 --> 00:29:32,000
+plus the homogeneous sir
+
+00:29:32,000 --> 00:29:33,000
+if
+
+00:29:33,000 --> 00:29:37,000
+we impose causality Lenny a ready in time invariance
+
+00:29:37,000 --> 00:29:40,000
+on the system then of course that additional
+
+00:29:40,000 --> 00:29:44,000
+exponential factor will be 0 in other words capital A
+
+00:29:44,000 --> 00:29:48,000
+is 0
+
+00:29:48,000 --> 00:29:53,000
+okay now in we seen the
+
+00:29:53,000 --> 00:29:56,000
+differential equations and difference equations interns
+
+00:29:56,000 --> 00:29:57,000
+love
+
+00:29:57,000 --> 00:30:01,000
+the fact there there are families have solutions
+
+00:30:01,000 --> 00:30:05,000
+and in order to get causality Lenny a ready in time
+
+00:30:05,000 --> 00:30:09,000
+variance requires imposing a particular set initial conditions namely
+
+00:30:09,000 --> 00:30:12,000
+imposing initial rest on the system
+
+00:30:12,000 --> 00:30:17,000
+let's now look at the difference equation
+
+00:30:17,000 --> 00:30:23,000
+and then later the differential equation interpreted in block diagrams
+
+00:30:23,000 --> 00:30:26,000
+now p the difference equation at
+
+00:30:26,000 --> 00:30:30,000
+I just simply repeated here is why I have an
+
+00:30:30,000 --> 00:30:33,000
+is accident was a white van -1
+
+00:30:33,000 --> 00:30:36,000
+where I've taken that the late term
+
+00:30:36,000 --> 00:30:40,000
+over to the right hand side of the equation so in effect
+
+00:30:40,000 --> 00:30:44,000
+what on imposing on this system is causality
+
+00:30:44,000 --> 00:30:47,000
+I'm assuming that if I know the past history
+
+00:30:47,000 --> 00:30:51,000
+the input and the output I can determine
+
+00:30:51,000 --> 00:30:53,000
+the next value the out
+
+00:30:53,000 --> 00:30:57,000
+well we can in fact draw a block diagram
+
+00:30:57,000 --> 00:31:01,000
+represents that equation the equation says
+
+00:31:01,000 --> 00:31:04,000
+we take exit and for any given bad you
+
+00:31:04,000 --> 00:31:09,000
+a van say n0 whatever bad you were computing the output were
+
+00:31:09,000 --> 00:31:12,000
+we take the input at that time
+
+00:31:12,000 --> 00:31:16,000
+and and to it the factor a
+
+00:31:16,000 --> 00:31:22,000
+times the output value that we calculated last time so
+
+00:31:22,000 --> 00:31:26,000
+if we have excessive and which is our input
+
+00:31:26,000 --> 00:31:29,000
+and if we have why I have and which is our output
+
+00:31:29,000 --> 00:31:33,000
+we in fact can't get why I have an
+
+00:31:33,000 --> 00:31:37,000
+by taking the last value why event
+
+00:31:37,000 --> 00:31:41,000
+indicated here by putting why I have an
+
+00:31:41,000 --> 00:31:45,000
+threw it away multiplying Matt
+
+00:31:45,000 --> 00:31:49,000
+by the factor
+
+00:31:49,000 --> 00:31:51,000
+a
+
+00:31:51,000 --> 00:31:56,000
+and then Anning that result
+
+00:31:56,000 --> 00:31:57,000
+to
+
+00:31:57,000 --> 00:31:59,000
+the input
+
+00:31:59,000 --> 00:32:03,000
+and the result the doing that is
+
+00:32:03,000 --> 00:32:05,000
+why event
+
+00:32:05,000 --> 00:32:08,000
+so the way this block diagram
+
+00:32:08,000 --> 00:32:13,000
+might be interpreted for example as an algorithm is this a
+
+00:32:13,000 --> 00:32:17,000
+dead we take exit Van add to it
+
+00:32:17,000 --> 00:32:22,000
+eight times the previous value the output that some gives us
+
+00:32:22,000 --> 00:32:26,000
+the current value of the output which we then put out of the system
+
+00:32:26,000 --> 00:32:30,000
+and also put into a delay element or
+
+00:32:30,000 --> 00:32:35,000
+basically it was stored register to use on the next generation a recursion
+
+00:32:35,000 --> 00:32:40,000
+now how do we get this started well we know that the difference equation
+
+00:32:40,000 --> 00:32:41,000
+requires initial conditions
+
+00:32:41,000 --> 00:32:44,000
+and in fact the initial conditions
+
+00:32:44,000 --> 00:32:48,000
+correspond to what we store
+
+00:32:48,000 --> 00:32:52,000
+in that the late register when this block diagram
+
+00:32:52,000 --> 00:32:55,000
+equation initially starts up
+
+00:32:55,000 --> 00:32:58,000
+okay now let's look at
+
+00:32:58,000 --> 00:33:02,000
+this for the case %uh difference equations
+
+00:33:02,000 --> 00:33:06,000
+more generally
+
+00:33:06,000 --> 00:33:13,000
+so what we said is dead we can calculate the output by
+
+00:33:13,000 --> 00:33:16,000
+having previous values that the input
+
+00:33:16,000 --> 00:33:20,000
+previous values at the output and forming
+
+00:33:20,000 --> 00:33:24,000
+the appropriate linear combination so
+
+00:33:24,000 --> 00:33:27,000
+let's just build up the more general block diagram
+
+00:33:27,000 --> 00:33:31,000
+that would correspond to this
+
+00:33:31,000 --> 00:33:35,000
+and what it says is that we want to have a mechanism
+
+00:33:35,000 --> 00:33:41,000
+restoring past values the input in a mechanism for story past values at the
+
+00:33:41,000 --> 00:33:41,000
+output
+
+00:33:41,000 --> 00:33:45,000
+and i've indicated that on this figure
+
+00:33:45,000 --> 00:33:48,000
+so far by a chain love
+
+00:33:48,000 --> 00:33:52,000
+the layout its indicating
+
+00:33:52,000 --> 00:33:55,000
+that whatever what
+
+00:33:55,000 --> 00:33:58,000
+the output each delay is the input
+
+00:33:58,000 --> 00:34:02,000
+delayed by one time it's
+
+00:34:02,000 --> 00:34:06,000
+or or interval and so
+
+00:34:06,000 --> 00:34:10,000
+what we see down this chain of the ladies are the late replications
+
+00:34:10,000 --> 00:34:14,000
+love the input and what we see
+
+00:34:14,000 --> 00:34:18,000
+on the other chain is delayed
+
+00:34:18,000 --> 00:34:22,000
+replications love the output
+
+00:34:22,000 --> 00:34:26,000
+now the difference equation says that we want to take these
+
+00:34:26,000 --> 00:34:31,000
+and multiply them by the appropriate coefficients
+
+00:34:31,000 --> 00:34:34,000
+the coefficients in the difference equation and so we can do that
+
+00:34:34,000 --> 00:34:38,000
+as i've indicated here so
+
+00:34:38,000 --> 00:34:42,000
+now we have these delay elements each multiplied
+
+00:34:42,000 --> 00:34:46,000
+by the appropriate coefficients on the input and by
+
+00:34:46,000 --> 00:34:51,000
+appropriate coefficients on the output those are then
+
+00:34:51,000 --> 00:34:54,000
+songs together and
+
+00:34:54,000 --> 00:34:59,000
+so we now what's on these and what's on these
+
+00:34:59,000 --> 00:35:02,000
+after we've some these we want to add
+
+00:35:02,000 --> 00:35:06,000
+those together and there's a factor 1 over 80 that comes in
+
+00:35:06,000 --> 00:35:10,000
+and that and generates are out
+
+00:35:10,000 --> 00:35:13,000
+and so this in fact and
+
+00:35:13,000 --> 00:35:19,000
+represents a block diagram which is a general block diagram for implementing
+
+00:35:19,000 --> 00:35:23,000
+war representing near constant coefficient difference
+
+00:35:23,000 --> 00:35:25,000
+wage
+
+00:35:25,000 --> 00:35:29,000
+now if you think about what it means in terms of what's a computer algorithm or
+
+00:35:29,000 --> 00:35:30,000
+a piece of hardware
+
+00:35:30,000 --> 00:35:34,000
+in fact this block diagram is a recipe or algorithm for doing the
+
+00:35:34,000 --> 00:35:35,000
+implementation
+
+00:35:35,000 --> 00:35:39,000
+by it's important to
+
+00:35:39,000 --> 00:35:43,000
+recognize even at this point dad it's only one
+
+00:35:43,000 --> 00:35:47,000
+many possible algorithms or implementations for this difference
+
+00:35:47,000 --> 00:35:49,000
+wage
+
+00:35:49,000 --> 00:35:51,000
+just for example
+
+00:35:51,000 --> 00:35:57,000
+I can consider that equation
+
+00:35:57,000 --> 00:35:59,000
+core that block diagram
+
+00:35:59,000 --> 00:36:04,000
+and here I've redrawn at so
+
+00:36:04,000 --> 00:36:08,000
+here once again I have the same block diagram that we just saw
+
+00:36:08,000 --> 00:36:12,000
+and I can recognize for example
+
+00:36:12,000 --> 00:36:16,000
+that this in essence corresponds to
+
+00:36:16,000 --> 00:36:19,000
+to linear time-invariant systems
+
+00:36:19,000 --> 00:36:22,000
+in cascade
+
+00:36:22,000 --> 00:36:25,000
+now that assumes of course that my
+
+00:36:25,000 --> 00:36:29,000
+initial conditions are such dad I that the system is in fact
+
+00:36:29,000 --> 00:36:34,000
+when you're and that in turn requires that we're assuming initial rest namely
+
+00:36:34,000 --> 00:36:36,000
+before the input does anything
+
+00:36:36,000 --> 00:36:40,000
+other than 0 there are just zero value stored in the registers
+
+00:36:40,000 --> 00:36:45,000
+but assuming that it corresponds to a linear time-invariant system
+
+00:36:45,000 --> 00:36:50,000
+this is a cascade to linear time-invariant systems
+
+00:36:50,000 --> 00:36:53,000
+we know that two linear time-invariant systems can be cascaded
+
+00:36:53,000 --> 00:36:57,000
+in either order so in particular I can consider
+
+00:36:57,000 --> 00:37:01,000
+breaking this cascade here and moving this block
+
+00:37:01,000 --> 00:37:04,000
+over to the other side and so let's just
+
+00:37:04,000 --> 00:37:08,000
+do that
+
+00:37:08,000 --> 00:37:11,000
+and when I do
+
+00:37:11,000 --> 00:37:13,000
+I then have
+
+00:37:13,000 --> 00:37:16,000
+this combination systems
+
+00:37:16,000 --> 00:37:20,000
+and of course you can ask what advantage there is to do in at
+
+00:37:20,000 --> 00:37:23,000
+and the advantage arises because it the fact
+
+00:37:23,000 --> 00:37:27,000
+there'd in this form
+
+00:37:27,000 --> 00:37:31,000
+exactly what is stored in these delays
+
+00:37:31,000 --> 00:37:34,000
+is also stored in the still air registers
+
+00:37:34,000 --> 00:37:38,000
+in other words it's this intermediate variable
+
+00:37:38,000 --> 00:37:42,000
+whatever it is down this chain of delays and down this chain of the ladies
+
+00:37:42,000 --> 00:37:46,000
+and so in fact I can collapse those delays
+
+00:37:46,000 --> 00:37:49,000
+into a single chain of delays and
+
+00:37:49,000 --> 00:37:54,000
+the network that I'm left with is the network that I indicate
+
+00:37:54,000 --> 00:37:59,000
+I missed you graph where what I've done is to simply collapse that
+
+00:37:59,000 --> 00:38:02,000
+double chain of the ladies into a single chain
+
+00:38:02,000 --> 00:38:04,000
+the waves
+
+00:38:04,000 --> 00:38:08,000
+now want to ask well what's the advantage to doing that and the
+
+00:38:08,000 --> 00:38:09,000
+advantage
+
+00:38:09,000 --> 00:38:14,000
+one advantage simply stated is that when you think in terms of an implementation
+
+00:38:14,000 --> 00:38:15,000
+of a difference equation
+
+00:38:15,000 --> 00:38:18,000
+the lady corresponds to
+
+00:38:18,000 --> 00:38:22,000
+storage register a memory location and by this
+
+00:38:22,000 --> 00:38:26,000
+by simply using the fact that we can interchange the order in which linear
+
+00:38:26,000 --> 00:38:28,000
+time-invariant systems are cascaded
+
+00:38:28,000 --> 00:38:33,000
+we can reduce the amount of memory by a factor to
+
+00:38:33,000 --> 00:38:35,000
+okay now
+
+00:38:35,000 --> 00:38:40,000
+and essentially similar procedure can also be used for
+
+00:38:40,000 --> 00:38:44,000
+differential equations in terms of implementation
+
+00:38:44,000 --> 00:38:48,000
+using block diagrams for the interpretation implementations
+
+00:38:48,000 --> 00:38:52,000
+using like diagrams and let me first do that
+
+00:38:52,000 --> 00:38:55,000
+rather than in general let me first do it in the in
+
+00:38:55,000 --> 00:39:00,000
+the context love a specific example
+
+00:39:00,000 --> 00:39:02,000
+so
+
+00:39:02,000 --> 00:39:08,000
+let's consider a when your constant coefficient differential equation as
+
+00:39:08,000 --> 00:39:09,000
+i've indicated here
+
+00:39:09,000 --> 00:39:13,000
+and I have terms on the left side in terms on the right side
+
+00:39:13,000 --> 00:39:18,000
+and with the differential equation
+
+00:39:18,000 --> 00:39:21,000
+let's consider taking overturns
+
+00:39:21,000 --> 00:39:24,000
+over to the right side of the equation except
+
+00:39:24,000 --> 00:39:29,000
+for the highest the residue in the output next we
+
+00:39:29,000 --> 00:39:32,000
+integrate both sides of the equation are so that
+
+00:39:32,000 --> 00:39:36,000
+when we're done we end up with the on the left side of the equation
+
+00:39:36,000 --> 00:39:41,000
+with y ft on the right side of the equation with the appropriate number
+
+00:39:41,000 --> 00:39:44,000
+%uh integrations and so the InterPro equation
+
+00:39:44,000 --> 00:39:49,000
+that will get is for this example y ft the output is except the
+
+00:39:49,000 --> 00:39:53,000
+plus be the scale factor times the integral
+
+00:39:53,000 --> 00:39:57,000
+the input and -8 at scale factor times the integral
+
+00:39:57,000 --> 00:40:00,000
+the output so to
+
+00:40:00,000 --> 00:40:04,000
+form the output in a block diagram turns
+
+00:40:04,000 --> 00:40:07,000
+we form a linear combination of the input
+
+00:40:07,000 --> 00:40:11,000
+scaled in to grow the input and a scale
+
+00:40:11,000 --> 00:40:14,000
+integral love the output all of that and it together
+
+00:40:14,000 --> 00:40:17,000
+so we need in addition to
+
+00:40:17,000 --> 00:40:21,000
+the input we need the integral
+
+00:40:21,000 --> 00:40:24,000
+love the input and so this box indicates an integrator
+
+00:40:24,000 --> 00:40:28,000
+in addition to the output we need
+
+00:40:28,000 --> 00:40:31,000
+the integral the output and now
+
+00:40:31,000 --> 00:40:34,000
+to for why ft we
+
+00:40:34,000 --> 00:40:38,000
+multiply the integrated in play
+
+00:40:38,000 --> 00:40:42,000
+by the scale factor B and
+
+00:40:42,000 --> 00:40:46,000
+and back to exit C
+
+00:40:46,000 --> 00:40:51,000
+and retake the integrated output multiplied by Minas de
+
+00:40:51,000 --> 00:40:55,000
+and and to that
+
+00:40:55,000 --> 00:40:58,000
+the result are the previous addition
+
+00:40:58,000 --> 00:41:02,000
+and according to the integral equation then that forms
+
+00:41:02,000 --> 00:41:05,000
+the output
+
+00:41:05,000 --> 00:41:08,000
+so just as we did with the difference equation
+
+00:41:08,000 --> 00:41:11,000
+we've converted the differential equation to
+
+00:41:11,000 --> 00:41:16,000
+an integral equation and we have a block diagram for very similar
+
+00:41:16,000 --> 00:41:20,000
+to what we had in the case the difference equation now the initial
+
+00:41:20,000 --> 00:41:22,000
+conditions of course
+
+00:41:22,000 --> 00:41:25,000
+are tied up and again how these integrators
+
+00:41:25,000 --> 00:41:30,000
+are initialized assuming that we impose initial rest on the system
+
+00:41:30,000 --> 00:41:35,000
+weekend thinkers the overall system is a linear time-invariant system
+
+00:41:35,000 --> 00:41:39,000
+and it's a cascade one linear time-invariant system with the second
+
+00:41:39,000 --> 00:41:43,000
+so we can in fact
+
+00:41:43,000 --> 00:41:45,000
+break this
+
+00:41:45,000 --> 00:41:51,000
+and consider interchanging the order in which these two systems a cascade
+
+00:41:51,000 --> 00:41:55,000
+and so i've indicated that down below here
+
+00:41:55,000 --> 00:41:58,000
+I've simply taken the top block diagram
+
+00:41:58,000 --> 00:42:02,000
+interchange the order in which the to
+
+00:42:02,000 --> 00:42:06,000
+systems are cascaded and
+
+00:42:06,000 --> 00:42:09,000
+here again we can ask what the advantages to this
+
+00:42:09,000 --> 00:42:13,000
+as opposed to the previous one and what you can see
+
+00:42:13,000 --> 00:42:16,000
+just as we saw with the difference equation is that
+
+00:42:16,000 --> 00:42:19,000
+now the integrators both integrators
+
+00:42:19,000 --> 00:42:22,000
+are integrating the same thing in particular
+
+00:42:22,000 --> 00:42:27,000
+the input to this integrator and the input
+
+00:42:27,000 --> 00:42:31,000
+to this integrator are identical so in fact
+
+00:42:31,000 --> 00:42:35,000
+rather than using this one we can simply tap of
+
+00:42:35,000 --> 00:42:39,000
+from here we can in fact remove this integrator
+
+00:42:39,000 --> 00:42:42,000
+break this connection
+
+00:42:42,000 --> 00:42:46,000
+and happy and at this point and so
+
+00:42:46,000 --> 00:42:50,000
+what we've done and by interchange in the order in which the systems are
+
+00:42:50,000 --> 00:42:51,000
+cascaded
+
+00:42:51,000 --> 00:42:56,000
+is reduced the implementation to the implementation
+
+00:42:56,000 --> 00:42:59,000
+with a single integrated very much similar to
+
+00:42:59,000 --> 00:43:02,000
+what we talked about in the case the difference wage
+
+00:43:02,000 --> 00:43:06,000
+now let's just again with the integral equation
+
+00:43:06,000 --> 00:43:10,000
+way the differential equation looked at
+
+00:43:10,000 --> 00:43:13,000
+this somewhat more generally again
+
+00:43:13,000 --> 00:43:18,000
+if we take the differential equation the general differential equation
+
+00:43:18,000 --> 00:43:23,000
+integrated a sufficient number of times to convert it to an integral equation
+
+00:43:23,000 --> 00:43:27,000
+we would then have this cascaded systems
+
+00:43:27,000 --> 00:43:32,000
+and again if we assume initial rest
+
+00:43:32,000 --> 00:43:35,000
+so that these are both linear time-invariant systems
+
+00:43:35,000 --> 00:43:38,000
+we can interchange the order in which they are cascaded
+
+00:43:38,000 --> 00:43:42,000
+namely take the second system and
+
+00:43:42,000 --> 00:43:44,000
+move it
+
+00:43:44,000 --> 00:43:48,000
+to proceed the first system
+
+00:43:48,000 --> 00:43:51,000
+and then we recognize is that the input to this change
+
+00:43:51,000 --> 00:43:56,000
+integrators and this change integrators is exactly the same
+
+00:43:56,000 --> 00:43:59,000
+and so in fact we can collapse these together
+
+00:43:59,000 --> 00:44:03,000
+using only one change integrators and the system
+
+00:44:03,000 --> 00:44:07,000
+there we're left with then is system
+
+00:44:07,000 --> 00:44:10,000
+that looks as i've indicated here so we have
+
+00:44:10,000 --> 00:44:14,000
+now just a single chain integrators
+
+00:44:14,000 --> 00:44:18,000
+is that a the two sets in
+
+00:44:18,000 --> 00:44:23,000
+so we've seen that the situation is very similar here as it was in the case the
+
+00:44:23,000 --> 00:44:24,000
+difference equation
+
+00:44:24,000 --> 00:44:28,000
+again why do we want to cut the number integrators in half
+
+00:44:28,000 --> 00:44:33,000
+well one reason is because integrators in effect represent hardware
+
+00:44:33,000 --> 00:44:37,000
+and if we use half as much if we have half as many integrators
+
+00:44:37,000 --> 00:44:41,000
+then using half as much hard
+
+00:44:41,000 --> 00:44:45,000
+okay well let me just conclude by summarizing
+
+00:44:45,000 --> 00:44:49,000
+a number of points I indicated at the beginning
+
+00:44:49,000 --> 00:44:53,000
+that linear constant coefficient differential equations a difference
+
+00:44:53,000 --> 00:44:54,000
+equations
+
+00:44:54,000 --> 00:44:58,000
+will play an important role as linear time-invariant systems
+
+00:44:58,000 --> 00:45:03,000
+throughout this coursing throughout the center lectures
+
+00:45:03,000 --> 00:45:06,000
+I also stress
+
+00:45:06,000 --> 00:45:10,000
+the fact that differential or difference equations
+
+00:45:10,000 --> 00:45:14,000
+by themselves are not a complete specification
+
+00:45:14,000 --> 00:45:17,000
+the system because of the fact that we can and
+
+00:45:17,000 --> 00:45:22,000
+to any solution a homogeneous
+
+00:45:22,000 --> 00:45:25,000
+I do we specify the appropriate initial conditions
+
+00:45:25,000 --> 00:45:30,000
+to ensure how do we specify the appropriate initial conditions to ensure
+
+00:45:30,000 --> 00:45:31,000
+that the system
+
+00:45:31,000 --> 00:45:35,000
+is linear and time-invariant well
+
+00:45:35,000 --> 00:45:40,000
+the auxiliary information namely the initial conditions
+
+00:45:40,000 --> 00:45:43,000
+dissociated with the system
+
+00:45:43,000 --> 00:45:47,000
+be causal linear and time-invariant
+
+00:45:47,000 --> 00:45:50,000
+are the conditions of initial rest
+
+00:45:50,000 --> 00:45:53,000
+and in fact for most of the cores
+
+00:45:53,000 --> 00:45:57,000
+what will be interested in systems that are in fact cause a linear and
+
+00:45:57,000 --> 00:45:58,000
+time-invariant
+
+00:45:58,000 --> 00:46:03,000
+and so we will in fact be assuming initial rest conditions
+
+00:46:03,000 --> 00:46:06,000
+now
+
+00:46:06,000 --> 00:46:09,000
+as I also indicated their are
+
+00:46:09,000 --> 00:46:12,000
+a variety of efficient procedures for solving differential
+
+00:46:12,000 --> 00:46:16,000
+and difference equations that we haven't yet address and
+
+00:46:16,000 --> 00:46:20,000
+beginning with the next set of lectures will be talking about
+
+00:46:20,000 --> 00:46:23,000
+for EA transform and much later in the course
+
+00:46:23,000 --> 00:46:27,000
+what's referred to as the apostrophe its form for continuous-time
+
+00:46:27,000 --> 00:46:31,000
+and sea transport for discrete-time and what we'll see
+
+00:46:31,000 --> 00:46:36,000
+is that with the Fourier transform in later with the apostasy transform
+
+00:46:36,000 --> 00:46:40,000
+will have a number love efficient and very useful ways
+
+00:46:40,000 --> 00:46:44,000
+%uh generating the solution for
+
+00:46:44,000 --> 00:46:48,000
+differential and difference equations this under the assumption that the
+
+00:46:48,000 --> 00:46:50,000
+system is causal
+
+00:46:50,000 --> 00:46:52,000
+when you're in time very
+
+00:46:52,000 --> 00:46:57,000
+also will see in addition to the block diagram implementations
+
+00:46:57,000 --> 00:47:00,000
+the systems that we talked about so far
+
+00:47:00,000 --> 00:47:04,000
+we'll see another a number of other useful
+
+00:47:04,000 --> 00:47:09,000
+implementations that exploit a variety of properties associated with
+
+00:47:09,000 --> 00:47:11,000
+Korean past thank you
+

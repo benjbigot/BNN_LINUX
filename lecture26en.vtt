@@ -1,0 +1,1635 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU ha the
+
+00:00:28,000 --> 00:00:31,000
+the
+
+00:00:31,000 --> 00:00:33,000
+the
+
+00:00:33,000 --> 00:00:40,000
+the in
+
+00:00:40,000 --> 00:00:47,000
+the new the last time
+
+00:00:56,000 --> 00:00:59,000
+we began a discussion feedback
+
+00:00:59,000 --> 00:01:03,000
+and I briefly introduce the number applications for example
+
+00:01:03,000 --> 00:01:08,000
+the user feedback in compensating for non-ideal elements in a system
+
+00:01:08,000 --> 00:01:11,000
+and also is another example
+
+00:01:11,000 --> 00:01:14,000
+the user feedback in stabilizing unstable systems
+
+00:01:14,000 --> 00:01:18,000
+in this final lecture what I'd like to do
+
+00:01:18,000 --> 00:01:22,000
+is focus in more detail on the user feedback
+
+00:01:22,000 --> 00:01:28,000
+to stabilize unstable systems and the specific context in which I'd like to do
+
+00:01:28,000 --> 00:01:28,000
+that
+
+00:01:28,000 --> 00:01:33,000
+is in the context love the inverted pendulum now
+
+00:01:33,000 --> 00:01:36,000
+i've referred to the inverted pendulum in several
+
+00:01:36,000 --> 00:01:40,000
+past lectures and basically as everyone realizes
+
+00:01:40,000 --> 00:01:44,000
+a pendulum is essentially a ride with the weight on the bottom
+
+00:01:44,000 --> 00:01:49,000
+and naturally an inverted pendulum is just that upside down
+
+00:01:49,000 --> 00:01:53,000
+and so it's essentially a ride that's top-heavy
+
+00:01:53,000 --> 00:01:56,000
+and the idea with the inverted pendulum
+
+00:01:56,000 --> 00:01:59,000
+is although by itself
+
+00:01:59,000 --> 00:02:02,000
+its unstable around a pivot point at the bottom
+
+00:02:02,000 --> 00:02:07,000
+the idea is to applying external input an acceleration
+
+00:02:07,000 --> 00:02:11,000
+essentially to keep it balanced and we've all
+
+00:02:11,000 --> 00:02:15,000
+probably done this type of thing at some point in our lives
+
+00:02:15,000 --> 00:02:19,000
+either childhood or not and so that's
+
+00:02:19,000 --> 00:02:22,000
+the system that I'd like to analyze and then
+
+00:02:22,000 --> 00:02:26,000
+illustrate in this lecture now the context
+
+00:02:26,000 --> 00:02:30,000
+in which will do that is not with my son's
+
+00:02:30,000 --> 00:02:33,000
+course but actually with an inverted pendulum
+
+00:02:33,000 --> 00:02:39,000
+which is mounted on a card and first I'd like to go through an analysis of it and
+
+00:02:39,000 --> 00:02:39,000
+then
+
+00:02:39,000 --> 00:02:44,000
+will actually see how the system works well basically then
+
+00:02:44,000 --> 00:02:47,000
+the system that we're talking about is
+
+00:02:47,000 --> 00:02:50,000
+going to be a system which is a movable card
+
+00:02:50,000 --> 00:02:54,000
+mountains on the card is
+
+00:02:54,000 --> 00:02:58,000
+a ride with the weight on the top and this then becomes the inverted pendulum
+
+00:02:58,000 --> 00:03:02,000
+and the cart has
+
+00:03:02,000 --> 00:03:05,000
+and external acceleration apply to it which
+
+00:03:05,000 --> 00:03:09,000
+is the input that we can apply to the system
+
+00:03:09,000 --> 00:03:14,000
+and then in general we can expect some disturbances and I'm gonna represent the
+
+00:03:14,000 --> 00:03:15,000
+disturbances
+
+00:03:15,000 --> 00:03:19,000
+interns love and angular acceleration
+
+00:03:19,000 --> 00:03:23,000
+which shows up around the wait at the top of the rock
+
+00:03:23,000 --> 00:03:27,000
+so if we look at the system then
+
+00:03:27,000 --> 00:03:31,000
+as I've kinda indicated it here basically we have
+
+00:03:31,000 --> 00:03:34,000
+two inputs we have
+
+00:03:34,000 --> 00:03:37,000
+an input which are the external disturbances
+
+00:03:37,000 --> 00:03:41,000
+which we can assume that we have no control over
+
+00:03:41,000 --> 00:03:44,000
+and then their is the acceleration
+
+00:03:44,000 --> 00:03:48,000
+thats applied to the cart: externally or in the case so
+
+00:03:48,000 --> 00:03:52,000
+balancing my son's course it's the movement my hand
+
+00:03:52,000 --> 00:03:56,000
+and then through the system dynamics
+
+00:03:56,000 --> 00:03:59,000
+that ends up influencing the
+
+00:03:59,000 --> 00:04:03,000
+angle of the ride and will think
+
+00:04:03,000 --> 00:04:07,000
+love the anchor the angle of the ride as
+
+00:04:07,000 --> 00:04:11,000
+the system output and basically the idea then
+
+00:04:11,000 --> 00:04:15,000
+is to try to keep that angle at zero
+
+00:04:15,000 --> 00:04:20,000
+by applying the appropriate acceleration now
+
+00:04:20,000 --> 00:04:23,000
+as i've mentioned several times previously if
+
+00:04:23,000 --> 00:04:26,000
+we know exactly what the system dynamics are
+
+00:04:26,000 --> 00:04:31,000
+and if we know exactly what the external disturbances are
+
+00:04:31,000 --> 00:04:35,000
+then theoretically we can choose an acceleration
+
+00:04:35,000 --> 00:04:38,000
+for the card which will exactly balance the system
+
+00:04:38,000 --> 00:04:43,000
+or balance the ride however says the system is inherently unstable
+
+00:04:43,000 --> 00:04:47,000
+any deviation from that model in particular any
+
+00:04:47,000 --> 00:04:52,000
+unanticipated external disturbances will excite the instability
+
+00:04:52,000 --> 00:04:55,000
+and what that means is that the rival for
+
+00:04:55,000 --> 00:04:59,000
+so the idea then is
+
+00:04:59,000 --> 00:05:02,000
+as we'll see to stabilize the system
+
+00:05:02,000 --> 00:05:06,000
+by placing feedback a rounded in particular
+
+00:05:06,000 --> 00:05:11,000
+by through measurement the output angle
+
+00:05:11,000 --> 00:05:14,000
+process through some appropriate feedback dynamics
+
+00:05:14,000 --> 00:05:17,000
+using Matt to control deceleration
+
+00:05:17,000 --> 00:05:21,000
+the cart and if we choose the feedback dynamics correctly
+
+00:05:21,000 --> 00:05:24,000
+then in fact we can end up with
+
+00:05:24,000 --> 00:05:29,000
+a stable system even though the open-loop system is unstable
+
+00:05:29,000 --> 00:05:35,000
+well as a first step let's analyze the system in its open loop form
+
+00:05:35,000 --> 00:05:40,000
+their particular let's analyze the system without feedback
+
+00:05:40,000 --> 00:05:43,000
+demonstrate dead indeed it is unstable and then
+
+00:05:43,000 --> 00:05:47,000
+see how we can stabilize using feedback
+
+00:05:47,000 --> 00:05:50,000
+so the system then is
+
+00:05:50,000 --> 00:05:54,000
+as we've indicated the variables involved
+
+00:05:54,000 --> 00:05:58,000
+are the measured angle which represents the output
+
+00:05:58,000 --> 00:06:03,000
+the acceleration angular acceleration due to external disturbances
+
+00:06:03,000 --> 00:06:07,000
+and then there is the applied external
+
+00:06:07,000 --> 00:06:12,000
+acceleration on the card so these represent the variables with
+
+00:06:12,000 --> 00:06:15,000
+lol representing the link to the rod and
+
+00:06:15,000 --> 00:06:19,000
+SFT I indicate here which we won't really be paying attention to
+
+00:06:19,000 --> 00:06:22,000
+as the position of the card
+
+00:06:22,000 --> 00:06:25,000
+and without going into the details
+
+00:06:25,000 --> 00:06:29,000
+specifically what we'll do is
+
+00:06:29,000 --> 00:06:32,000
+set up the equation to write the equation in terms of balancing the
+
+00:06:32,000 --> 00:06:34,000
+accelerations
+
+00:06:34,000 --> 00:06:37,000
+and if you go through that process then
+
+00:06:37,000 --> 00:06:40,000
+the basic equation that you end up with is
+
+00:06:40,000 --> 00:06:44,000
+the equation that I indicate here and
+
+00:06:44,000 --> 00:06:50,000
+this equation then tells us how the basic forces are accelerations a balance
+
+00:06:50,000 --> 00:06:53,000
+where this is the second derivative or
+
+00:06:53,000 --> 00:06:57,000
+the angle and then we have
+
+00:06:57,000 --> 00:07:01,000
+deceleration due to gravity reflected through
+
+00:07:01,000 --> 00:07:04,000
+the angular acceleration times sign
+
+00:07:04,000 --> 00:07:08,000
+love the angle the angular acceleration
+
+00:07:08,000 --> 00:07:12,000
+due to the external disturbances and finally
+
+00:07:12,000 --> 00:07:16,000
+the angular acceleration due to the motion the cart
+
+00:07:16,000 --> 00:07:20,000
+now this equation is written here is a nonlinear equation
+
+00:07:20,000 --> 00:07:24,000
+in the angle say to T and
+
+00:07:24,000 --> 00:07:28,000
+what we'd like to do is linearized equation
+
+00:07:28,000 --> 00:07:32,000
+and really arise the equation by making the assumption
+
+00:07:32,000 --> 00:07:35,000
+dead the angle is very small close to zero
+
+00:07:35,000 --> 00:07:39,000
+no other words what will assume is that we're able to keep
+
+00:07:39,000 --> 00:07:42,000
+the rod relatively vertical and our analysis
+
+00:07:42,000 --> 00:07:46,000
+because we're winning a rise in the equations will obviously depend on that
+
+00:07:46,000 --> 00:07:51,000
+so making the assumption that the angle is small
+
+00:07:51,000 --> 00:07:56,000
+we then assuming that the sign up the angle is approximately equal to the
+
+00:07:56,000 --> 00:07:57,000
+angle
+
+00:07:57,000 --> 00:08:00,000
+and the cosine the angle is
+
+00:08:00,000 --> 00:08:04,000
+approximately equal to 1 that will then linearized this equation
+
+00:08:04,000 --> 00:08:08,000
+and the resulting equation then
+
+00:08:08,000 --> 00:08:13,000
+in its linearis form is the one that I indicate here
+
+00:08:13,000 --> 00:08:17,000
+so we have an equation emotion which
+
+00:08:17,000 --> 00:08:22,000
+which linearis is the balances the accelerations
+
+00:08:22,000 --> 00:08:25,000
+and what we see on the right hand side of the equation
+
+00:08:25,000 --> 00:08:29,000
+is the combined inputs
+
+00:08:29,000 --> 00:08:33,000
+due to the angular acceleration of the ride and the acceleration of the card
+
+00:08:33,000 --> 00:08:37,000
+and on the left hand side of the equation we have
+
+00:08:37,000 --> 00:08:42,000
+the other forces due to the changing the angle
+
+00:08:42,000 --> 00:08:46,000
+so this is Dan the differential equations Associated
+
+00:08:46,000 --> 00:08:50,000
+with the open-loop system the basic dynamics at the system
+
+00:08:50,000 --> 00:08:55,000
+and if we apply the law applies transform to this equation
+
+00:08:55,000 --> 00:08:58,000
+and solve for the system function than
+
+00:08:58,000 --> 00:09:02,000
+the basic equation that were left with expresses
+
+00:09:02,000 --> 00:09:05,000
+the applause transformer the angle
+
+00:09:05,000 --> 00:09:10,000
+equal to the system function the open-loop system function
+
+00:09:10,000 --> 00:09:14,000
+times the applies transform all the combined in points
+
+00:09:14,000 --> 00:09:19,000
+and I remind you again that are sumptin is that this is an input that we have
+
+00:09:19,000 --> 00:09:24,000
+no control over this is the input that we can control
+
+00:09:24,000 --> 00:09:27,000
+and the two together of course form the combined input
+
+00:09:27,000 --> 00:09:32,000
+now we can of course saw for the poles and zeros there are
+
+00:09:32,000 --> 00:09:36,000
+no zeros and their two polls since this is the second order denominator
+
+00:09:36,000 --> 00:09:39,000
+and looking at the polls in the S plane
+
+00:09:39,000 --> 00:09:43,000
+then we see that we have a pair of polls one
+
+00:09:43,000 --> 00:09:46,000
+at minus the square root of G over L and one
+
+00:09:46,000 --> 00:09:49,000
+at plus the square root G over L
+
+00:09:49,000 --> 00:09:53,000
+and the important observation and is dead while
+
+00:09:53,000 --> 00:09:57,000
+this poll represents a stable poll
+
+00:09:57,000 --> 00:10:01,000
+the right half plane poll represents unstable pole
+
+00:10:01,000 --> 00:10:04,000
+and so this system in fact is
+
+00:10:04,000 --> 00:10:08,000
+unstable system it's unstable because
+
+00:10:08,000 --> 00:10:12,000
+what we have is a poll in the right half plane
+
+00:10:12,000 --> 00:10:15,000
+for the open-loop system
+
+00:10:15,000 --> 00:10:20,000
+now before we see how to stabilize the system what's in fact
+
+00:10:20,000 --> 00:10:24,000
+look at the mechanical setup
+
+00:10:24,000 --> 00:10:27,000
+which we I won't turn on for now
+
+00:10:27,000 --> 00:10:32,000
+and just see essentially what this instability means and
+
+00:10:32,000 --> 00:10:36,000
+what the physical or irritation at the equipment is
+
+00:10:36,000 --> 00:10:39,000
+so what we have which you just saw a caricature of
+
+00:10:39,000 --> 00:10:45,000
+in a few graph is an inverted pendulum
+
+00:10:45,000 --> 00:10:49,000
+this represents the pendulum and
+
+00:10:49,000 --> 00:10:52,000
+it's mounted with a pivot point at the bottom
+
+00:10:52,000 --> 00:10:57,000
+it's mounted on a cart and here we have the card
+
+00:10:57,000 --> 00:11:00,000
+and this is a pivot point
+
+00:11:00,000 --> 00:11:04,000
+and as you can see the cart can move back and forth
+
+00:11:04,000 --> 00:11:09,000
+on a track and the external acceleration
+
+00:11:09,000 --> 00:11:14,000
+which is applied to the card is applied through this cable
+
+00:11:14,000 --> 00:11:17,000
+and that cable is controlled
+
+00:11:17,000 --> 00:11:20,000
+by motor and we have the motor
+
+00:11:20,000 --> 00:11:24,000
+at this ended the track and so
+
+00:11:24,000 --> 00:11:29,000
+as the motor turns than the cart will move back and forth
+
+00:11:29,000 --> 00:11:33,000
+okay now since the system
+
+00:11:33,000 --> 00:11:37,000
+is not turned on and has no Feedback in fact
+
+00:11:37,000 --> 00:11:41,000
+the system as we just saw in the transparency is
+
+00:11:41,000 --> 00:11:44,000
+unstable system and what then is the ability means
+
+00:11:44,000 --> 00:11:47,000
+is that for example if I
+
+00:11:47,000 --> 00:11:51,000
+set the angle 20 and then let it go
+
+00:11:51,000 --> 00:11:55,000
+then as soon as there's a slight external disturbance
+
+00:11:55,000 --> 00:11:59,000
+it will start to fall now you can imagine
+
+00:11:59,000 --> 00:12:03,000
+that not only is the system unstable as it is
+
+00:12:03,000 --> 00:12:08,000
+but certainly can't accommodate changes in the system dynamics for example if we
+
+00:12:08,000 --> 00:12:09,000
+change
+
+00:12:09,000 --> 00:12:12,000
+let's say the way to the pendulum so we thought for example
+
+00:12:12,000 --> 00:12:16,000
+love changing the wait by let's say
+
+00:12:16,000 --> 00:12:20,000
+putting something like a glass with something in it on
+
+00:12:20,000 --> 00:12:24,000
+top and I think about trying to balance it by itself obviously
+
+00:12:24,000 --> 00:12:28,000
+thats part in fact I would say without turning this system on
+
+00:12:28,000 --> 00:12:32,000
+guaranteed to be impossible so
+
+00:12:32,000 --> 00:12:36,000
+the basic system as we just analyzed it is
+
+00:12:36,000 --> 00:12:40,000
+inherently an unstable system the instability reflecting the fact
+
+00:12:40,000 --> 00:12:46,000
+that the pendulum are following its own natural forces will tend to fall
+
+00:12:46,000 --> 00:12:49,000
+and now what we want to look at is how
+
+00:12:49,000 --> 00:12:52,000
+through the use the feedback weekend in fact
+
+00:12:52,000 --> 00:12:55,000
+stabilize the system
+
+00:12:55,000 --> 00:12:59,000
+so let's first
+
+00:12:59,000 --> 00:13:02,000
+once again look at the
+
+00:13:02,000 --> 00:13:05,000
+open-loop system and
+
+00:13:05,000 --> 00:13:10,000
+the open-loop system function that we saw was the system function
+
+00:13:10,000 --> 00:13:13,000
+of this form one over LS squared minus G
+
+00:13:13,000 --> 00:13:17,000
+and that represents the system function
+
+00:13:17,000 --> 00:13:22,000
+Associated with the two inputs one being the external disturbances
+
+00:13:22,000 --> 00:13:25,000
+the other being the externally applied acceleration
+
+00:13:25,000 --> 00:13:28,000
+and the system function here
+
+00:13:28,000 --> 00:13:31,000
+is the represents the system dynamics and
+
+00:13:31,000 --> 00:13:35,000
+the resulting output is the angle
+
+00:13:35,000 --> 00:13:38,000
+now the feedback to basic strategy
+
+00:13:38,000 --> 00:13:42,000
+behind the feedback is to in some way
+
+00:13:42,000 --> 00:13:46,000
+use the measured angle make a measurement of the angle
+
+00:13:46,000 --> 00:13:51,000
+and use that through appropriate feedback dynamics to stabilize the
+
+00:13:51,000 --> 00:13:52,000
+system
+
+00:13:52,000 --> 00:13:56,000
+and so with feedback applied around the system then
+
+00:13:56,000 --> 00:14:00,000
+their would be some measurement up the angle
+
+00:14:00,000 --> 00:14:03,000
+through so appropriately chosen feedback dynamics
+
+00:14:03,000 --> 00:14:07,000
+and that dan would determine 4s
+
+00:14:07,000 --> 00:14:11,000
+the applied external acceleration corresponding
+
+00:14:11,000 --> 00:14:15,000
+to what the motor does by pulling the cable back and forth
+
+00:14:15,000 --> 00:14:21,000
+and we would like to choose she evas so that the overall system is stable
+
+00:14:21,000 --> 00:14:24,000
+now as you recall from the lecture last time
+
+00:14:24,000 --> 00:14:28,000
+with the feedback around the system expressed here
+
+00:14:28,000 --> 00:14:31,000
+interns have negative feedback the
+
+00:14:31,000 --> 00:14:35,000
+overall transfer function then is the transfer function
+
+00:14:35,000 --> 00:14:39,000
+associated with the basic feedback loop where HFS
+
+00:14:39,000 --> 00:14:46,000
+is the open-loop system and GFS corresponds to the feedback dynamics
+
+00:14:46,000 --> 00:14:50,000
+now that's the basic strategy we haven't decided yet
+
+00:14:50,000 --> 00:14:55,000
+how to choose the feedback dynamics and that becomes the next step and we want
+
+00:14:55,000 --> 00:14:57,000
+to choose the dynamics in such a way
+
+00:14:57,000 --> 00:15:01,000
+that the system ends up being stabilized
+
+00:15:01,000 --> 00:15:05,000
+well I think the thing to do is just simply begin
+
+00:15:05,000 --> 00:15:09,000
+with what would seem to be the most obvious which is
+
+00:15:09,000 --> 00:15:12,000
+a simple measurement of the angle let's take
+
+00:15:12,000 --> 00:15:16,000
+the angular measurement feat that back
+
+00:15:16,000 --> 00:15:20,000
+let's say through a potentiometer and perhaps an amplifier so that there's
+
+00:15:20,000 --> 00:15:21,000
+some gain
+
+00:15:21,000 --> 00:15:26,000
+and see if we can stabilize the system simply through
+
+00:15:26,000 --> 00:15:29,000
+feedback which is proportional to a measurement of the angle
+
+00:15:29,000 --> 00:15:35,000
+what is typically referred to as per for proportional feedback
+
+00:15:35,000 --> 00:15:39,000
+well let's analyze the results
+
+00:15:39,000 --> 00:15:42,000
+doing that once again we have
+
+00:15:42,000 --> 00:15:45,000
+the basic feedback equation where
+
+00:15:45,000 --> 00:15:50,000
+the open-loop transfer function is what we had
+
+00:15:50,000 --> 00:15:54,000
+developed previously given by the second-order expression
+
+00:15:54,000 --> 00:15:57,000
+now using proportional feedback
+
+00:15:57,000 --> 00:16:01,000
+we shoes the acceleration
+
+00:16:01,000 --> 00:16:04,000
+a hefty to be directly proportional
+
+00:16:04,000 --> 00:16:08,000
+through a game constant or attenuation constant k1
+
+00:16:08,000 --> 00:16:12,000
+directly proportional to the measured angle theta ft
+
+00:16:12,000 --> 00:16:16,000
+and consequently the system function in the feedback
+
+00:16:16,000 --> 00:16:20,000
+path is just simply a gainer for attenuation k1
+
+00:16:20,000 --> 00:16:25,000
+so this then is the system function for the feedback
+
+00:16:25,000 --> 00:16:28,000
+well substituting this into the
+
+00:16:28,000 --> 00:16:31,000
+closed-loop expression
+
+00:16:31,000 --> 00:16:34,000
+then the overall expression for
+
+00:16:34,000 --> 00:16:38,000
+the apostrophe its form of the output angle
+
+00:16:38,000 --> 00:16:41,000
+is as i indicated here
+
+00:16:41,000 --> 00:16:44,000
+namely that faded ass is
+
+00:16:44,000 --> 00:16:48,000
+proportional through this system function
+
+00:16:48,000 --> 00:16:51,000
+to the apostrophe its form love the
+
+00:16:51,000 --> 00:16:54,000
+input X 50 and let me remind you that
+
+00:16:54,000 --> 00:16:58,000
+X 50 the external disturbances now represent the only input
+
+00:16:58,000 --> 00:17:03,000
+since the other input corresponding to the applied acceleration so the card
+
+00:17:03,000 --> 00:17:06,000
+is now controlled only through the feedback
+
+00:17:06,000 --> 00:17:09,000
+luv so we have this system function then
+
+00:17:09,000 --> 00:17:13,000
+for the closed-loop system we recognize this once again
+
+00:17:13,000 --> 00:17:16,000
+as a second-order system and
+
+00:17:16,000 --> 00:17:20,000
+the polls both this second order system
+
+00:17:20,000 --> 00:17:23,000
+are then given by plus and minus the square root
+
+00:17:23,000 --> 00:17:27,000
+love G minus k1 divided by L
+
+00:17:27,000 --> 00:17:30,000
+so k1 the feedback constant
+
+00:17:30,000 --> 00:17:34,000
+clearly influences the position at the polls
+
+00:17:34,000 --> 00:17:37,000
+and let's look in fact at where
+
+00:17:37,000 --> 00:17:42,000
+the polls are in the S play
+
+00:17:42,000 --> 00:17:45,000
+well first of all with
+
+00:17:45,000 --> 00:17:49,000
+k1 equal to 0 which of course is no Feedback
+
+00:17:49,000 --> 00:17:53,000
+and corresponds to the open-loop system we have the polls
+
+00:17:53,000 --> 00:17:56,000
+where they were previously
+
+00:17:56,000 --> 00:18:01,000
+and if we now choose k1 let's say less than zero
+
+00:18:01,000 --> 00:18:05,000
+than what will happen as
+
+00:18:05,000 --> 00:18:09,000
+k1 becomes more and more negative
+
+00:18:09,000 --> 00:18:12,000
+so that this term is more and more positive is dead
+
+00:18:12,000 --> 00:18:17,000
+the left here plane poll will move further into the left airplane
+
+00:18:17,000 --> 00:18:22,000
+the right half plane poll will move further into the right half play
+
+00:18:22,000 --> 00:18:27,000
+so clearly with K one negative
+
+00:18:27,000 --> 00:18:31,000
+this poll which represents an instability because
+
+00:18:31,000 --> 00:18:34,000
+even more unstable well
+
+00:18:34,000 --> 00:18:39,000
+instead a K one negative let's try K one positive and see what happens
+
+00:18:39,000 --> 00:18:44,000
+and with k1 positive
+
+00:18:44,000 --> 00:18:47,000
+what happens in this case is dead
+
+00:18:47,000 --> 00:18:51,000
+the left hip plane poll moves
+
+00:18:51,000 --> 00:18:55,000
+closer to the origin the right half plane poll
+
+00:18:55,000 --> 00:18:59,000
+was closer to the origin what one would hope is that
+
+00:18:59,000 --> 00:19:03,000
+they both end up in the left airplane at some point but in fact they don't
+
+00:19:03,000 --> 00:19:07,000
+what happens is that eventually they both reach the origin
+
+00:19:07,000 --> 00:19:10,000
+split at that point and travel along
+
+00:19:10,000 --> 00:19:15,000
+the jail make axis now this movement of the polls
+
+00:19:15,000 --> 00:19:20,000
+as we very k1 either positive or negative
+
+00:19:20,000 --> 00:19:23,000
+we all we see is that the open with the open-loop system
+
+00:19:23,000 --> 00:19:26,000
+as we introduce feedback those basic polls
+
+00:19:26,000 --> 00:19:29,000
+move in the ass plane either this way
+
+00:19:29,000 --> 00:19:34,000
+as K one becomes more negative or for this particular case
+
+00:19:34,000 --> 00:19:38,000
+K one is positive they move in together split move along the jail make axes
+
+00:19:38,000 --> 00:19:44,000
+and that locus the polls in fact is referred to
+
+00:19:44,000 --> 00:19:49,000
+if the back terminology as the root locus and as is discussed in
+
+00:19:49,000 --> 00:19:53,000
+much more detail on the tax there are lots of ways
+
+00:19:53,000 --> 00:19:57,000
+love determining the root locus for feedback systems
+
+00:19:57,000 --> 00:20:01,000
+without explicitly solving for the roots for this
+
+00:20:01,000 --> 00:20:05,000
+particular example in fact we can determine the root locus
+
+00:20:05,000 --> 00:20:08,000
+the most straightforward way simply by song for the roots
+
+00:20:08,000 --> 00:20:11,000
+I'll that the nominator the system
+
+00:20:11,000 --> 00:20:15,000
+now notice that in this case these polls
+
+00:20:15,000 --> 00:20:18,000
+with K one positive have moved together
+
+00:20:18,000 --> 00:20:22,000
+they move along the jail make axes and
+
+00:20:22,000 --> 00:20:26,000
+before they come together the system is clearly unstable
+
+00:20:26,000 --> 00:20:29,000
+even when they come together and split
+
+00:20:29,000 --> 00:20:33,000
+the system is marginally stable
+
+00:20:33,000 --> 00:20:36,000
+because in fact the system with 10 docile E
+
+00:20:36,000 --> 00:20:41,000
+and what that isolation means is that with the measurement of the angle
+
+00:20:41,000 --> 00:20:45,000
+essentially if the polls are operating on the J Omega axes
+
+00:20:45,000 --> 00:20:48,000
+what will happen is that
+
+00:20:48,000 --> 00:20:51,000
+things will oscillate back and forth perhaps with
+
+00:20:51,000 --> 00:20:55,000
+the cart moving back and forth trying to compensate
+
+00:20:55,000 --> 00:20:58,000
+and the ride sorta moving in the opposite direction
+
+00:20:58,000 --> 00:21:04,000
+in any case what's happened is with just proportional feedback
+
+00:21:04,000 --> 00:21:10,000
+we apparently are unable to stabilize the system
+
+00:21:10,000 --> 00:21:13,000
+well you could think that the reason perhaps is that we're not responding
+
+00:21:13,000 --> 00:21:15,000
+fast enough for example
+
+00:21:15,000 --> 00:21:18,000
+if the angle starts to change
+
+00:21:18,000 --> 00:21:23,000
+perhaps in fact we should make the feedback proportional
+
+00:21:23,000 --> 00:21:27,000
+to the rate of change Bengal rather than to the angle itself
+
+00:21:27,000 --> 00:21:30,000
+and so we could examine the possibility using
+
+00:21:30,000 --> 00:21:34,000
+what's referred to as thrifty back
+
+00:21:34,000 --> 00:21:38,000
+and derivative feedback what we would do
+
+00:21:38,000 --> 00:21:42,000
+is to shoes
+
+00:21:42,000 --> 00:21:45,000
+for the feedback equation
+
+00:21:45,000 --> 00:21:49,000
+or for the feedback system function
+
+00:21:49,000 --> 00:21:53,000
+something reflecting a measurement love the derivative
+
+00:21:53,000 --> 00:21:58,000
+the angle and so here again once again we have the open-loop
+
+00:21:58,000 --> 00:22:02,000
+system function with the river to feedback will attempt
+
+00:22:02,000 --> 00:22:06,000
+to or we will use this feedback
+
+00:22:06,000 --> 00:22:10,000
+and acceleration which instead of being proportional to the angle as it was in
+
+00:22:10,000 --> 00:22:11,000
+the previous case
+
+00:22:11,000 --> 00:22:14,000
+and acceleration which is proportional to
+
+00:22:14,000 --> 00:22:20,000
+the river the ankle and so the basic feedback dynamics or feedback system
+
+00:22:20,000 --> 00:22:21,000
+function
+
+00:22:21,000 --> 00:22:24,000
+is their GFS is equal to k to times s
+
+00:22:24,000 --> 00:22:29,000
+the multiplication by ass reflecting the fact that in the time domain
+
+00:22:29,000 --> 00:22:33,000
+its measuring the derivative the angle
+
+00:22:33,000 --> 00:22:36,000
+The Associated system function is then
+
+00:22:36,000 --> 00:22:42,000
+indicated here and if we saw again this second order equation
+
+00:22:42,000 --> 00:22:45,000
+for its roots that tells us that
+
+00:22:45,000 --> 00:22:48,000
+the location the polls are given
+
+00:22:48,000 --> 00:22:51,000
+by this equation
+
+00:22:51,000 --> 00:22:55,000
+and so now what we would want to look at is
+
+00:22:55,000 --> 00:22:59,000
+how these polls mu as we very
+
+00:22:59,000 --> 00:23:03,000
+the derivative the back constant k2
+
+00:23:03,000 --> 00:23:08,000
+so let's look at the root locus for that case
+
+00:23:08,000 --> 00:23:14,000
+and first once again
+
+00:23:14,000 --> 00:23:17,000
+we have the basic open loopholes
+
+00:23:17,000 --> 00:23:22,000
+and the open loopholes consists of a poll on the left half plane and a pole
+
+00:23:22,000 --> 00:23:23,000
+in the right half plane
+
+00:23:23,000 --> 00:23:28,000
+corresponding in this equation 2k to equal to 0
+
+00:23:28,000 --> 00:23:32,000
+that is no feedback in the system
+
+00:23:32,000 --> 00:23:37,000
+if k2 is negative then what you can see is that
+
+00:23:37,000 --> 00:23:40,000
+this real part will become
+
+00:23:40,000 --> 00:23:43,000
+more negative since K two squared here
+
+00:23:43,000 --> 00:23:47,000
+this is still a positive quantity and in fact
+
+00:23:47,000 --> 00:23:51,000
+then with k2 less than zero the root locus that we get
+
+00:23:51,000 --> 00:23:55,000
+is indicated by this
+
+00:23:55,000 --> 00:23:59,000
+now notice then that this right half plane poll
+
+00:23:59,000 --> 00:24:02,000
+is becoming more unstable and
+
+00:24:02,000 --> 00:24:06,000
+the left airplane poll likewise is becoming more unstable
+
+00:24:06,000 --> 00:24:10,000
+and this point by the way corresponds to wear this poll ends up
+
+00:24:10,000 --> 00:24:15,000
+or where the root locus ends up went 8-2 eventually becomes infinite
+
+00:24:15,000 --> 00:24:20,000
+so clearly k to negative is not going to stabilize the system
+
+00:24:20,000 --> 00:24:24,000
+let's try k2 positive
+
+00:24:24,000 --> 00:24:28,000
+and the root locus dictated by this equation then
+
+00:24:28,000 --> 00:24:31,000
+is what I indicate here
+
+00:24:31,000 --> 00:24:36,000
+the left half plane poll moves further into left airplane that's good that's
+
+00:24:36,000 --> 00:24:37,000
+getting
+
+00:24:37,000 --> 00:24:40,000
+more stable the right half plain polo is moving
+
+00:24:40,000 --> 00:24:43,000
+closer to the left airplane
+
+00:24:43,000 --> 00:24:47,000
+but unfortunately never gets there and in fact
+
+00:24:47,000 --> 00:24:52,000
+its when k2 eventually becomes infinite that this poll
+
+00:24:52,000 --> 00:24:55,000
+just gets to the point where the system becomes
+
+00:24:55,000 --> 00:24:58,000
+marginally stable so
+
+00:24:58,000 --> 00:25:01,000
+what we found is dead with proportional feedback
+
+00:25:01,000 --> 00:25:05,000
+we can stabilize the system with the Riveter feedback
+
+00:25:05,000 --> 00:25:09,000
+we can stabilize the system by themselves
+
+00:25:09,000 --> 00:25:14,000
+and a logical next choice is to see if we can stabilize the system
+
+00:25:14,000 --> 00:25:19,000
+by both measuring the angle and at the same time
+
+00:25:19,000 --> 00:25:24,000
+being careful to be responsive to how fast that angle is changing so that if
+
+00:25:24,000 --> 00:25:26,000
+changing too fast
+
+00:25:26,000 --> 00:25:31,000
+we can move the cart are here are or are hand under the inverted pendulum were
+
+00:25:31,000 --> 00:25:32,000
+quickly
+
+00:25:32,000 --> 00:25:35,000
+well now then what we want to examine
+
+00:25:35,000 --> 00:25:40,000
+is the use love proportional plus the Riveter feedback
+
+00:25:40,000 --> 00:25:43,000
+and in that case we
+
+00:25:43,000 --> 00:25:46,000
+then have a
+
+00:25:46,000 --> 00:25:50,000
+choice for the acceleration which
+
+00:25:50,000 --> 00:25:53,000
+is proportional with one constant to the angle
+
+00:25:53,000 --> 00:25:57,000
+and proportional with another constant to
+
+00:25:57,000 --> 00:26:00,000
+the derivative up the angle and so
+
+00:26:00,000 --> 00:26:03,000
+the basic system function then
+
+00:26:03,000 --> 00:26:06,000
+with for for proportional plus the river to feedback
+
+00:26:06,000 --> 00:26:12,000
+is a system function which is K one-plus K two times s
+
+00:26:12,000 --> 00:26:17,000
+we then have an overall closed-loop system function
+
+00:26:17,000 --> 00:26:21,000
+say to the vastus which is given by
+
+00:26:21,000 --> 00:26:24,000
+this equation and
+
+00:26:24,000 --> 00:26:28,000
+so the roots at this equation then
+
+00:26:28,000 --> 00:26:32,000
+represent the polls love the closed-loop system
+
+00:26:32,000 --> 00:26:35,000
+and those polls involved
+
+00:26:35,000 --> 00:26:40,000
+to parameters they involve the primer k2
+
+00:26:40,000 --> 00:26:43,000
+which is proportional to the derivative the angle
+
+00:26:43,000 --> 00:26:47,000
+and the constant k1 which is proportional to the angle
+
+00:26:47,000 --> 00:26:50,000
+and will
+
+00:26:50,000 --> 00:26:54,000
+first have all examine this with just with
+
+00:26:54,000 --> 00:26:59,000
+k to positive because well we can see is that as we very k1
+
+00:26:59,000 --> 00:27:04,000
+k2 or negative that would more less immediately
+
+00:27:04,000 --> 00:27:08,000
+put polls into the right half plane and the more
+
+00:27:08,000 --> 00:27:11,000
+negative K two got the larger this term
+
+00:27:11,000 --> 00:27:16,000
+is going to get so in fact is it will turn out we can stabilize the system
+
+00:27:16,000 --> 00:27:20,000
+with provided that we to choose k2
+
+00:27:20,000 --> 00:27:23,000
+to be greater than 0
+
+00:27:23,000 --> 00:27:26,000
+all right now with k2 greater than 0
+
+00:27:26,000 --> 00:27:30,000
+what happens in the
+
+00:27:30,000 --> 00:27:33,000
+location at the polls is that
+
+00:27:33,000 --> 00:27:36,000
+if k2 is greater than 0
+
+00:27:36,000 --> 00:27:41,000
+every choose k1 greater than 0 I'm sorry choose k1 equal to 0
+
+00:27:41,000 --> 00:27:45,000
+then in effect the influence of k2
+
+00:27:45,000 --> 00:27:48,000
+is to shift the polls
+
+00:27:48,000 --> 00:27:51,000
+of the open-loop system slightly and so
+
+00:27:51,000 --> 00:27:55,000
+with k2 greater than 0
+
+00:27:55,000 --> 00:27:59,000
+and k1 equal to 0 we have a set of polls
+
+00:27:59,000 --> 00:28:03,000
+which are indicated here
+
+00:28:03,000 --> 00:28:08,000
+and so this is just a shift slight shift to the left
+
+00:28:08,000 --> 00:28:11,000
+depending on the values k2 shift to the left
+
+00:28:11,000 --> 00:28:15,000
+the open loop holes now as we very k1
+
+00:28:15,000 --> 00:28:18,000
+and in particular we're going to choose k1
+
+00:28:18,000 --> 00:28:22,000
+greater than 0 what happens is that
+
+00:28:22,000 --> 00:28:26,000
+the polls will begin to move together
+
+00:28:26,000 --> 00:28:30,000
+as they did previously when we had
+
+00:28:30,000 --> 00:28:33,000
+one we looked at the variation k1
+
+00:28:33,000 --> 00:28:38,000
+the polls will move together reach a point where we have a second-order poll
+
+00:28:38,000 --> 00:28:44,000
+and then those polls will split and move parallel to the Chi Omega axis so
+
+00:28:44,000 --> 00:28:47,000
+with syndicated here is the root locus
+
+00:28:47,000 --> 00:28:51,000
+and what this represents then
+
+00:28:51,000 --> 00:28:54,000
+as long as we make a one large enough so that
+
+00:28:54,000 --> 00:28:58,000
+this pole moves into the left airplane is
+
+00:28:58,000 --> 00:29:02,000
+that represents now stable system
+
+00:29:02,000 --> 00:29:05,000
+okay so what we've seen is that proportional feedback
+
+00:29:05,000 --> 00:29:09,000
+by itself or derivative feedback by itself
+
+00:29:09,000 --> 00:29:13,000
+won't stabilize the system whereas with the right choice
+
+00:29:13,000 --> 00:29:17,000
+a feedback Constance proportional plus the rivet if the back well and we saw
+
+00:29:17,000 --> 00:29:17,000
+that
+
+00:29:17,000 --> 00:29:22,000
+basically by examining the root locus in the ass play
+
+00:29:22,000 --> 00:29:25,000
+alright well let's actually watch the system
+
+00:29:25,000 --> 00:29:28,000
+in action and I described it to you
+
+00:29:28,000 --> 00:29:33,000
+previously basically an inverted pendulum on a card
+
+00:29:33,000 --> 00:29:38,000
+and so I still have it off and of course we have the pendulum
+
+00:29:38,000 --> 00:29:41,000
+and as i indicated its
+
+00:29:41,000 --> 00:29:45,000
+pivoted at the base and the
+
+00:29:45,000 --> 00:29:49,000
+angle is measured by a potentiometer
+
+00:29:49,000 --> 00:29:52,000
+that we have attached to the pivot point and
+
+00:29:52,000 --> 00:29:56,000
+the measurement of the angle is fed back
+
+00:29:56,000 --> 00:29:59,000
+through this wire to motor day
+
+00:29:59,000 --> 00:30:03,000
+we have at the other end of the table and
+
+00:30:03,000 --> 00:30:07,000
+then that motor basically is used to provide the acceleration
+
+00:30:07,000 --> 00:30:10,000
+to drive the cart okay well
+
+00:30:10,000 --> 00:30:14,000
+let's turn it on and when we turn it on it'll take
+
+00:30:14,000 --> 00:30:17,000
+just an instant to stabilize
+
+00:30:17,000 --> 00:30:20,000
+and
+
+00:30:20,000 --> 00:30:25,000
+fortunately we have the cast set right and there we have now
+
+00:30:25,000 --> 00:30:28,000
+the stabilization up an unstable system
+
+00:30:28,000 --> 00:30:32,000
+remember there with the feedback of the system is unstable because the pendulum
+
+00:30:32,000 --> 00:30:33,000
+will fall
+
+00:30:33,000 --> 00:30:37,000
+whereas now it's stabilized now also
+
+00:30:37,000 --> 00:30:40,000
+as you can see not only have we
+
+00:30:40,000 --> 00:30:44,000
+stabilized it but we're able to compensate for the feedback
+
+00:30:44,000 --> 00:30:49,000
+to changes in the external disturbances for example by tapping it
+
+00:30:49,000 --> 00:30:53,000
+because it the feedback and the measurement of the angle it will
+
+00:30:53,000 --> 00:30:56,000
+more or less automatically stabilize
+
+00:30:56,000 --> 00:31:02,000
+now in addition to being stable in the presence of external disturbances
+
+00:31:02,000 --> 00:31:05,000
+it also remain stable in remains balanced
+
+00:31:05,000 --> 00:31:08,000
+even if we were to change the system dynamics
+
+00:31:08,000 --> 00:31:13,000
+and let me just illustrate that with
+
+00:31:13,000 --> 00:31:16,000
+the class that we talked about before let's first
+
+00:31:16,000 --> 00:31:20,000
+not be too bold and will take the liquid out of the class
+
+00:31:20,000 --> 00:31:23,000
+and presumably if it can adjust
+
+00:31:23,000 --> 00:31:27,000
+to changes in the system dynamics that if I put the glass on
+
+00:31:27,000 --> 00:31:31,000
+in fact it will remain balanced and indeed it does
+
+00:31:31,000 --> 00:31:34,000
+and let me point out by the way that I don't have to be very careful about
+
+00:31:34,000 --> 00:31:35,000
+exactly where
+
+00:31:35,000 --> 00:31:39,000
+I position the class and furthermore I can change the
+
+00:31:39,000 --> 00:31:43,000
+overall system even further
+
+00:31:43,000 --> 00:31:47,000
+by let's say for example pouring a liquid and
+
+00:31:47,000 --> 00:31:50,000
+and now let me also comment that
+
+00:31:50,000 --> 00:31:53,000
+change the physics of a little bit because the
+
+00:31:53,000 --> 00:31:57,000
+the liquid can slash around a little bit it comes a little more complicated
+
+00:31:57,000 --> 00:31:58,000
+system
+
+00:31:58,000 --> 00:32:03,000
+but as you can see it still remains balance
+
+00:32:03,000 --> 00:32:08,000
+now if we really don't want to be too conservative that all we can wonder
+
+00:32:08,000 --> 00:32:09,000
+whether
+
+00:32:09,000 --> 00:32:13,000
+with the feedback Constance we have we could
+
+00:32:13,000 --> 00:32:16,000
+in fact balance the picture on the top and
+
+00:32:16,000 --> 00:32:21,000
+well I guess we may as well give that a try
+
+00:32:21,000 --> 00:32:24,000
+and so
+
+00:32:24,000 --> 00:32:28,000
+now we're changing the mass at the top to the the pendulum
+
+00:32:28,000 --> 00:32:31,000
+by a considerable amount
+
+00:32:31,000 --> 00:32:34,000
+and again the system basically can respond to it
+
+00:32:34,000 --> 00:32:38,000
+now this is a fairly complicated system
+
+00:32:38,000 --> 00:32:44,000
+the liquid sloshing around we in fact as you can see have instability right now
+
+00:32:44,000 --> 00:32:49,000
+although its control and that's because the physics at the dynamics is changed
+
+00:32:49,000 --> 00:32:52,000
+and we can put a little bit more mass into the system
+
+00:32:52,000 --> 00:32:59,000
+and maybe or maybe not that will cut down on the instability
+
+00:33:02,000 --> 00:33:05,000
+okay well in fact what happened there is that we
+
+00:33:05,000 --> 00:33:08,000
+increase the mass at the top the pendulum slightly
+
+00:33:08,000 --> 00:33:12,000
+and that provided just enough damn thing to do
+
+00:33:12,000 --> 00:33:16,000
+stabilize the system
+
+00:33:16,000 --> 00:33:19,000
+okay well with
+
+00:33:19,000 --> 00:33:22,000
+this lecture and this demonstration this
+
+00:33:22,000 --> 00:33:27,000
+concludes this entire set of lectures it concludes especially if the pitcher
+
+00:33:27,000 --> 00:33:28,000
+happens to fall
+
+00:33:28,000 --> 00:33:31,000
+but seriously this concludes the
+
+00:33:31,000 --> 00:33:36,000
+said lectures as we have put them together
+
+00:33:36,000 --> 00:33:39,000
+and let me just comment that
+
+00:33:39,000 --> 00:33:44,000
+as a professor of mine once said in which I've never forgotten
+
+00:33:44,000 --> 00:33:48,000
+the purpose all over said have lectures or a course or for that matter anything
+
+00:33:48,000 --> 00:33:49,000
+which is study
+
+00:33:49,000 --> 00:33:53,000
+is not really to cover a subject
+
+00:33:53,000 --> 00:33:57,000
+but to uncover the subject and I hope dead
+
+00:33:57,000 --> 00:34:00,000
+at least in to some degree
+
+00:34:00,000 --> 00:34:05,000
+we were able to uncovered the topic of signals and systems through the series
+
+00:34:05,000 --> 00:34:07,000
+of lectures
+
+00:34:07,000 --> 00:34:10,000
+there are a lot of topics that we
+
+00:34:10,000 --> 00:34:14,000
+got only a very brief glimpse into
+
+00:34:14,000 --> 00:34:17,000
+and I hope that at least four we've been able to do
+
+00:34:17,000 --> 00:34:20,000
+is get you interested nothin I'm so that
+
+00:34:20,000 --> 00:34:23,000
+you pursue some of these on your own and
+
+00:34:23,000 --> 00:34:29,000
+so I'd like to conclude by thanks to you both for your patience and your interest
+
+00:34:29,000 --> 00:34:32,000
+and I hope that you have enough interest to
+
+00:34:32,000 --> 00:34:34,000
+pursue some these topics for them thank you
+

@@ -1,0 +1,3417 @@
+1
+00:00:00,040 --> 00:00:03,490 
+the following content is provided under
+a Creative Commons license
+
+2
+00:00:03,490 --> 00:00:07,129 
+your support will help MIT
+OpenCourseWare continue to offer
+
+3
+00:00:07,129 --> 00:00:10,580 
+high-quality educational resources for
+free
+
+4
+00:00:10,580 --> 00:00:14,360 
+to make a donation or view additional
+materials from hundreds of them IT
+
+5
+00:00:14,360 --> 00:00:15,030 
+courses
+
+6
+00:00:15,030 --> 00:00:18,110 
+visit MIT OpenCourseWare at 0 CW
+
+7
+00:00:18,110 --> 00:00:23,750 
+that MIT that EDU hard
+
+8
+00:00:23,750 --> 00:00:29,890 
+the
+
+9
+00:00:29,890 --> 00:00:31,380 
+the
+
+10
+00:00:31,380 --> 00:00:34,240 
+the
+
+11
+00:00:34,240 --> 00:00:39,200 
+the in
+
+12
+00:00:39,200 --> 00:00:45,530 
+the norm
+
+13
+00:00:45,530 --> 00:00:50,680 
+are
+
+14
+00:00:50,680 --> 00:00:56,830 
+the in the last two lectures
+
+15
+00:00:56,830 --> 00:01:01,230 
+and we saw how periodic not periodic
+signals could be represented as linear
+
+16
+00:01:01,230 --> 00:01:03,630 
+combinations a complex exponentials
+
+17
+00:01:03,630 --> 00:01:08,390 
+and this led to the Fourier series
+representation
+
+18
+00:01:08,390 --> 00:01:12,290 
+in the periodic case and it led to the
+Fourier transform
+
+19
+00:01:12,290 --> 00:01:15,960 
+representation in the a periodic case
+and and then in fact
+
+20
+00:01:15,960 --> 00:01:20,250 
+what we did was to incorporate the 4e a
+series
+
+21
+00:01:20,250 --> 00:01:26,890 
+within the framework of the Fourier
+transform what I'd like to do in today's
+
+22
+00:01:26,890 --> 00:01:28,070 
+lecture is
+
+23
+00:01:28,070 --> 00:01:31,520 
+look at the 4-yard transform more
+closely
+
+24
+00:01:31,520 --> 00:01:34,680 
+in particular with regard to so this
+property's
+
+25
+00:01:34,680 --> 00:01:37,890 
+so let me begin by reminding you
+
+26
+00:01:37,890 --> 00:01:41,180 
+love the analysis and synthesis
+equations for the four th
+
+27
+00:01:41,180 --> 00:01:44,369 
+transform and as I summarize them here
+
+28
+00:01:44,369 --> 00:01:47,470 
+the synthesis equation being a
+
+29
+00:01:47,470 --> 00:01:50,880 
+an equation that tells us how to build
+the
+
+30
+00:01:50,880 --> 00:01:54,819 
+time function outta in essence a linear
+combination
+
+31
+00:01:54,819 --> 00:01:59,350 
+a complex exponentials and the analysis
+equation
+
+32
+00:01:59,350 --> 00:02:04,330 
+telling us how to get the amplitudes
+love those complex exponentials
+
+33
+00:02:04,330 --> 00:02:07,360 
+from the Associated time function
+
+34
+00:02:07,360 --> 00:02:10,710 
+so essentially in the decomposition
+
+35
+00:02:10,710 --> 00:02:15,090 
+affect safety as a linear combination of
+complex exponentials
+
+36
+00:02:15,090 --> 00:02:18,550 
+the complex amplitudes if those are in
+effect
+
+37
+00:02:18,550 --> 00:02:21,590 
+the 48 transform scaled by
+
+38
+00:02:21,590 --> 00:02:24,720 
+the differential and scaled by one over
+two-part
+
+39
+00:02:24,720 --> 00:02:28,200 
+now as
+
+40
+00:02:28,200 --> 00:02:32,120 
+I indicated last time the 48 transform
+
+41
+00:02:32,120 --> 00:02:35,830 
+is a complex function of frequency in
+
+42
+00:02:35,830 --> 00:02:39,160 
+and in particular the complex function
+of frequency
+
+43
+00:02:39,160 --> 00:02:43,140 
+has an important and very useful
+cemetery property
+
+44
+00:02:43,140 --> 00:02:47,370 
+the symmetry love the Fourier transform
+
+45
+00:02:47,370 --> 00:02:50,890 
+when X if T is real is
+
+46
+00:02:50,890 --> 00:02:54,900 
+what is referred to as conjugate
+symmetric in other words if we take the
+
+47
+00:02:54,900 --> 00:02:55,760 
+complex
+
+48
+00:02:55,760 --> 00:02:59,610 
+function after Omega and and its complex
+conjugate
+
+49
+00:02:59,610 --> 00:03:02,830 
+that's equivalent to replacing Omega
+
+50
+00:03:02,830 --> 00:03:06,970 
+by minus Omega and a consequence if that
+
+51
+00:03:06,970 --> 00:03:12,280 
+if we think interns love the real party
+the Fourier transform
+
+52
+00:03:12,280 --> 00:03:16,460 
+the real part is and even function of
+frequency
+
+53
+00:03:16,460 --> 00:03:20,780 
+and the magnet to is an even function of
+frequency
+
+54
+00:03:20,780 --> 00:03:24,380 
+whereas the imaginary part is an
+
+55
+00:03:24,380 --> 00:03:28,240 
+odd function of frequency and the phase
+angle
+
+56
+00:03:28,240 --> 00:03:31,740 
+is an odd function of frequency so
+
+57
+00:03:31,740 --> 00:03:36,110 
+we have this symmetry relationship that
+for except the real
+
+58
+00:03:36,110 --> 00:03:40,890 
+if we think I've either the real part or
+the magnitude of the Fourier transform
+
+59
+00:03:40,890 --> 00:03:44,930 
+its even symmetric and the imaginary
+part
+
+60
+00:03:44,930 --> 00:03:48,340 
+or the phase angle either one it is
+
+61
+00:03:48,340 --> 00:03:52,310 
+fought symmetric in other words if we
+flip it we multiply by a minus sign
+
+62
+00:03:52,310 --> 00:03:55,670 
+let's didn't look at an example
+
+63
+00:03:55,670 --> 00:03:59,570 
+in the context love an example that we
+worked last time
+
+64
+00:03:59,570 --> 00:04:03,400 
+for the Fourier transform we took
+
+65
+00:04:03,400 --> 00:04:06,620 
+the case both a real exponential
+
+66
+00:04:06,620 --> 00:04:10,570 
+love the form eat to the -80 times this
+step
+
+67
+00:04:10,570 --> 00:04:14,390 
+and the 48 transform as
+
+68
+00:04:14,390 --> 00:04:19,759 
+we found was other algebraic form one
+over a plus J Omega
+
+69
+00:04:19,759 --> 00:04:24,470 
+and incidently the 48 transform into
+grow only converged
+
+70
+00:04:24,470 --> 00:04:27,669 
+for a greater than 0 in other words
+
+71
+00:04:27,669 --> 00:04:32,750 
+for this exponential became and I
+illustrated
+
+72
+00:04:32,750 --> 00:04:36,240 
+the magnitude and angle and what we see
+is that
+
+73
+00:04:36,240 --> 00:04:39,259 
+you the minus 8c is a real
+
+74
+00:04:39,259 --> 00:04:42,360 
+time function therefore its magnitude
+
+75
+00:04:42,360 --> 00:04:46,110 
+should be an even function of frequency
+and indeed it is
+
+76
+00:04:46,110 --> 00:04:49,360 
+and its phase angle shown below
+
+77
+00:04:49,360 --> 00:04:54,069 
+is and odd function of frequency
+
+78
+00:04:54,069 --> 00:04:57,620 
+so in fact in although
+
+79
+00:04:57,620 --> 00:05:00,910 
+I stressed last time that
+
+80
+00:05:00,910 --> 00:05:05,970 
+the complex exponentials required to
+build the time function
+
+81
+00:05:05,970 --> 00:05:10,730 
+require exponentials both positive and
+negative frequencies
+
+82
+00:05:10,730 --> 00:05:13,780 
+for except the real what we see is that
+
+83
+00:05:13,780 --> 00:05:17,070 
+because if the symmetry properties
+either for the real and imaginary or
+
+84
+00:05:17,070 --> 00:05:18,820 
+magnitude and angle
+
+85
+00:05:18,820 --> 00:05:24,639 
+we can specify a before you transform
+for let's say only positive frequencies
+
+86
+00:05:24,639 --> 00:05:27,960 
+and asymmetry then implies are tells us
+
+87
+00:05:27,960 --> 00:05:34,120 
+what the Fourier transform then will be
+for the negative frequencies
+
+88
+00:05:34,120 --> 00:05:37,410 
+okay now this same example the cause
+
+89
+00:05:37,410 --> 00:05:40,420 
+the decaying exponential demonstrates
+
+90
+00:05:40,420 --> 00:05:43,620 
+another important and often useful
+
+91
+00:05:43,620 --> 00:05:47,350 
+property the Fourier transform
+
+92
+00:05:47,350 --> 00:05:51,860 
+specifically let's rewrite algebraically
+this example
+
+93
+00:05:51,860 --> 00:05:55,630 
+as I indicate here so we have
+
+94
+00:05:55,630 --> 00:06:01,810 
+again the exponential was 48
+transformers one over a plus J Omega
+
+95
+00:06:01,810 --> 00:06:06,810 
+and if I A just simply divide numerator
+and denominator by a
+
+96
+00:06:06,810 --> 00:06:10,370 
+I can rewrite it in the form shown here
+
+97
+00:06:10,370 --> 00:06:14,680 
+and what we notice is dead in the time
+function
+
+98
+00:06:14,680 --> 00:06:18,250 
+we have a term of the form eight times
+TV
+
+99
+00:06:18,250 --> 00:06:22,389 
+and in the frequency function we have a
+term for the form Omega
+
+100
+00:06:22,389 --> 00:06:25,570 
+divided by a or
+
+101
+00:06:25,570 --> 00:06:28,730 
+equivalent Lee we can't think all the
+
+102
+00:06:28,730 --> 00:06:32,639 
+time function which I show here
+
+103
+00:06:32,639 --> 00:06:36,740 
+and as the pram enter a gets smaller
+
+104
+00:06:36,740 --> 00:06:41,310 
+the exponential gets spread out in time
+
+105
+00:06:41,310 --> 00:06:44,790 
+whereas s04e08 transform
+
+106
+00:06:44,790 --> 00:06:49,280 
+or the magnitude of its Fourier
+transform has the inverse property
+
+107
+00:06:49,280 --> 00:06:52,400 
+that as a get smaller in fact
+
+108
+00:06:52,400 --> 00:06:56,840 
+this scales down in frequency
+
+109
+00:06:56,840 --> 00:06:59,880 
+well this is a general property love
+
+110
+00:06:59,880 --> 00:07:02,919 
+the Fourier transform namely the fact
+
+111
+00:07:02,919 --> 00:07:06,360 
+that a a linear scaling a time
+
+112
+00:07:06,360 --> 00:07:10,600 
+generates the infers linear scaling a
+frequency
+
+113
+00:07:10,600 --> 00:07:14,510 
+and the general statement love this time
+frequency scaling is what
+
+114
+00:07:14,510 --> 00:07:18,980 
+I show at the top above the transparency
+namely the equation
+
+115
+00:07:18,980 --> 00:07:22,460 
+that if we scale the time function in
+time
+
+116
+00:07:22,460 --> 00:07:28,699 
+then we apply and infers scaling a
+frequency
+
+117
+00:07:28,699 --> 00:07:31,960 
+now her this in fact is probably a
+result
+
+118
+00:07:31,960 --> 00:07:35,210 
+that you're already possibly familiar
+with in
+
+119
+00:07:35,210 --> 00:07:39,080 
+somewhat of a different context
+essentially you can think of this
+
+120
+00:07:39,080 --> 00:07:44,040 
+as an example poor generalization rather
+
+121
+00:07:44,040 --> 00:07:47,699 
+up the notion that if let's say I A
+
+122
+00:07:47,699 --> 00:07:53,150 
+had a signal that was recorded on a tape
+player
+
+123
+00:07:53,150 --> 00:07:57,669 
+and if I play the tape back and let's
+say twice the speed which means that I'm
+
+124
+00:07:57,669 --> 00:07:59,760 
+compressing the time axis
+
+125
+00:07:59,760 --> 00:08:04,260 
+linearly by a factor of two then in fact
+what happens is that
+
+126
+00:08:04,260 --> 00:08:08,949 
+the frequencies that we observe get
+pushed up by a factor of two
+
+127
+00:08:08,949 --> 00:08:12,070 
+and effect let me illustrate that
+
+128
+00:08:12,070 --> 00:08:15,630 
+I have here a glockenspiel
+
+129
+00:08:15,630 --> 00:08:20,620 
+and anyone who loves a parade certainly
+knows what I each
+
+130
+00:08:20,620 --> 00:08:23,699 
+blockage feel as and
+
+131
+00:08:23,699 --> 00:08:27,050 
+this particular glockenspiel has
+
+132
+00:08:27,050 --> 00:08:32,620 
+3 eighties separated each by an active
+there's a middle way
+
+133
+00:08:32,620 --> 00:08:38,969 
+a high a us and a low a
+
+134
+00:08:38,969 --> 00:08:42,490 
+and what I've done is to record
+
+135
+00:08:42,490 --> 00:08:46,230 
+the middle a on a tape
+
+136
+00:08:46,230 --> 00:08:51,160 
+at seven and a half inches per second
+and
+
+137
+00:08:51,160 --> 00:08:54,170 
+what I'd like to demonstrate is that as
+
+138
+00:08:54,170 --> 00:08:58,550 
+we play that back either a cloister
+half-speed
+
+139
+00:08:58,550 --> 00:09:03,639 
+the effective note gets moved down or up
+by a doctor
+
+140
+00:09:03,639 --> 00:09:06,829 
+so let me first play the note at
+
+141
+00:09:06,829 --> 00:09:09,980 
+the speed at which was recorded and so
+what we'll hear
+
+142
+00:09:09,980 --> 00:09:13,730 
+is the middle a as i've recorded it and
+let me just start
+
+143
+00:09:13,730 --> 00:09:20,730 
+the tape player
+
+144
+00:09:26,009 --> 00:09:29,459 
+okay let me stop it and hopefully what
+you heard is the
+
+145
+00:09:29,459 --> 00:09:32,680 
+same note from the tape recorder as
+
+146
+00:09:32,680 --> 00:09:36,560 
+the note that I played on the
+glockenspiel okay well now
+
+147
+00:09:36,560 --> 00:09:40,769 
+a rewind the tape and we go back to the
+beginning
+
+148
+00:09:40,769 --> 00:09:44,759 
+love that portion and
+
+149
+00:09:44,759 --> 00:09:48,040 
+now if I change the tapes the to
+
+150
+00:09:48,040 --> 00:09:51,980 
+half the speed so from seven and a half
+inches per second
+
+151
+00:09:51,980 --> 00:09:54,980 
+a change the tape speed 233 quarter
+
+152
+00:09:54,980 --> 00:09:58,779 
+inches per second and now
+
+153
+00:09:58,779 --> 00:10:02,889 
+when I play the tape back because effect
+because
+
+154
+00:10:02,889 --> 00:10:07,860 
+love the inverse relationship between
+time and frequency scaling we're now
+
+155
+00:10:07,860 --> 00:10:11,589 
+scaling in time by stretching out we
+would expect the frequencies to be
+
+156
+00:10:11,589 --> 00:10:12,160 
+lowered
+
+157
+00:10:12,160 --> 00:10:15,600 
+by a factor of two we should now expect
+the
+
+158
+00:10:15,600 --> 00:10:19,170 
+taped no to be an octave lower
+
+159
+00:10:19,170 --> 00:10:26,170 
+matching the slower a so let's just play
+that okay let me stop it
+
+160
+00:10:40,290 --> 00:10:44,000 
+and again will rewind the tape
+
+161
+00:10:44,000 --> 00:10:47,430 
+go back to
+
+162
+00:10:47,430 --> 00:10:50,509 
+the beginning and now will play this at
+
+163
+00:10:50,509 --> 00:10:53,819 
+twice the speed so I change from three
+and three-quarters
+
+164
+00:10:53,819 --> 00:10:59,569 
+to 15 inches per second and now and I
+play it we would expect that
+
+165
+00:10:59,569 --> 00:11:06,569 
+to match the upper no and let's just do
+that Ste
+
+166
+00:11:08,300 --> 00:11:10,290 
+us
+
+167
+00:11:10,290 --> 00:11:14,490 
+us okay well
+
+168
+00:11:14,490 --> 00:11:18,450 
+although thats a result that intuitively
+probably
+
+169
+00:11:18,450 --> 00:11:22,110 
+makes considerable sense in fact what
+that is
+
+170
+00:11:22,110 --> 00:11:26,180 
+is an illustration love the inverse
+relationship between
+
+171
+00:11:26,180 --> 00:11:31,610 
+time scaling frequency scaling and also
+by the way it was finally my opportunity
+
+172
+00:11:31,610 --> 00:11:37,170 
+to play the glockenspiel on television
+okayed now
+
+173
+00:11:37,170 --> 00:11:40,640 
+in in addition their is another
+
+174
+00:11:40,640 --> 00:11:44,520 
+very important relationship between the
+time and frequency domains
+
+175
+00:11:44,520 --> 00:11:47,760 
+namely what is referred to as a
+
+176
+00:11:47,760 --> 00:11:51,000 
+duality relationship and
+
+177
+00:11:51,000 --> 00:11:54,990 
+the duality relationship between time
+and frequency
+
+178
+00:11:54,990 --> 00:12:00,260 
+falls out more less directly from
+
+179
+00:12:00,260 --> 00:12:05,220 
+the equations the analysis and synthesis
+equations in particular if we look at
+
+180
+00:12:05,220 --> 00:12:05,770 
+the
+
+181
+00:12:05,770 --> 00:12:09,650 
+synthesis equation which I repeat here
+
+182
+00:12:09,650 --> 00:12:13,900 
+and the analysis equation which I repeat
+below it
+
+183
+00:12:13,900 --> 00:12:17,460 
+what we observe is dead in fact
+
+184
+00:12:17,460 --> 00:12:21,200 
+these equations are basically identical
+
+185
+00:12:21,200 --> 00:12:24,890 
+except for the fact that in the top
+
+186
+00:12:24,890 --> 00:12:28,500 
+integral we have things as a function of
+Omega in the bottom integral as a
+
+187
+00:12:28,500 --> 00:12:29,750 
+function of T
+
+188
+00:12:29,750 --> 00:12:33,990 
+and there's a factor of 10 ver tu Pai
+and by the way a minus sign
+
+189
+00:12:33,990 --> 00:12:38,030 
+well you can look at the algebra
+
+190
+00:12:38,030 --> 00:12:42,110 
+more carefully at your leisure but
+especially with this says
+
+191
+00:12:42,110 --> 00:12:46,350 
+is that if excessive Omega is
+
+192
+00:12:46,350 --> 00:12:50,330 
+the Fourier transform over type function
+exit see
+
+193
+00:12:50,330 --> 00:12:54,780 
+then in fact except Amy
+
+194
+00:12:54,780 --> 00:13:00,140 
+is very much like the Fourier transform
+affective Omega
+
+195
+00:13:00,140 --> 00:13:03,820 
+in fact it's the Fourier transform
+attacks have minus Omega
+
+196
+00:13:03,820 --> 00:13:07,550 
+to account for this minus sign and by
+the way there's just an additional
+
+197
+00:13:07,550 --> 00:13:08,360 
+factor
+
+198
+00:13:08,360 --> 00:13:12,880 
+one over 25 so the duality relationship
+which
+
+199
+00:13:12,880 --> 00:13:16,270 
+follows from these two equations in fact
+
+200
+00:13:16,270 --> 00:13:19,510 
+says that if x50
+
+201
+00:13:19,510 --> 00:13:23,190 
+an ex vivo maker are a4e a transformed
+pair
+
+202
+00:13:23,190 --> 00:13:26,940 
+if little accent capital XR Fourier
+transform pair
+
+203
+00:13:26,940 --> 00:13:31,620 
+then capital lacks in fact has a $4 EA
+transform
+
+204
+00:13:31,620 --> 00:13:36,470 
+which is proportional a little lax
+turned around well
+
+205
+00:13:36,470 --> 00:13:41,070 
+this to outdo ality in the continuous
+time Fourier transform
+
+206
+00:13:41,070 --> 00:13:45,770 
+is very important it's very useful it by
+the way is not
+
+207
+00:13:45,770 --> 00:13:52,220 
+duality that surface in a forty a series
+because as you recall the 48 series
+
+208
+00:13:52,220 --> 00:13:55,870 
+begins with a continuous-time function
+
+209
+00:13:55,870 --> 00:13:59,950 
+and in the frequency domain generates a
+sequence
+
+210
+00:13:59,950 --> 00:14:03,660 
+which with just naturally have the
+proper have
+
+211
+00:14:03,660 --> 00:14:06,670 
+problems associated with it if we
+attempted to
+
+212
+00:14:06,670 --> 00:14:09,840 
+interpreted to ality and we'll see also:
+
+213
+00:14:09,840 --> 00:14:13,480 
+that in a discrete-time case one of the
+important differences between
+
+214
+00:14:13,480 --> 00:14:16,610 
+continuous-time and discrete-time
+Fourier transforms
+
+215
+00:14:16,610 --> 00:14:20,810 
+is the fact that in continuous-time we
+have to our the
+
+216
+00:14:20,810 --> 00:14:25,320 
+in discrete-time for then the
+discrete-time Fourier transform we don't
+
+217
+00:14:25,320 --> 00:14:27,740 
+well
+
+218
+00:14:27,740 --> 00:14:32,110 
+let's indicate illustrate this with an
+example
+
+219
+00:14:32,110 --> 00:14:35,870 
+in here are in fact two examples
+
+220
+00:14:35,870 --> 00:14:39,770 
+a Fourier transform pairs taken from
+examples in the text
+
+221
+00:14:39,770 --> 00:14:43,230 
+to the top one being example
+
+222
+00:14:43,230 --> 00:14:47,420 
+four-point 11 from the tax and it's a
+time for action
+
+223
+00:14:47,420 --> 00:14:51,460 
+which is a sin 0 X over X type a
+function
+
+224
+00:14:51,460 --> 00:14:55,550 
+and its Fourier transform
+
+225
+00:14:55,550 --> 00:14:58,580 
+corresponds to a
+
+226
+00:14:58,580 --> 00:15:04,660 
+rectangular shape in the frequency
+domain there's also
+
+227
+00:15:04,660 --> 00:15:08,580 
+another example in the text the example
+the preseason this one
+
+228
+00:15:08,580 --> 00:15:13,470 
+which is example four-point 10 and an
+example four point 10
+
+229
+00:15:13,470 --> 00:15:16,970 
+we begin with a rectangle
+
+230
+00:15:16,970 --> 00:15:20,250 
+and its Fourier transform is love the
+form
+
+231
+00:15:20,250 --> 00:15:24,110 
+all a sin x over X function
+
+232
+00:15:24,110 --> 00:15:27,190 
+so in fact if we look at these to
+
+233
+00:15:27,190 --> 00:15:30,930 
+examples together what we see is
+
+234
+00:15:30,930 --> 00:15:34,210 
+the duality very evident in other words
+
+235
+00:15:34,210 --> 00:15:37,660 
+if we take this time function and
+
+236
+00:15:37,660 --> 00:15:41,650 
+instead think i've a frequency function
+that has the same form
+
+237
+00:15:41,650 --> 00:15:45,260 
+then we simply interchange the rolls a
+time-frequency
+
+238
+00:15:45,260 --> 00:15:49,330 
+in the other domains so the fact that
+these to correspond
+
+239
+00:15:49,330 --> 00:15:52,360 
+means that these two cars find
+
+240
+00:15:52,360 --> 00:15:56,670 
+course and in this particular example
+
+241
+00:15:56,670 --> 00:16:01,160 
+we because it the fact that we picked a
+symmetric function even function
+
+242
+00:16:01,160 --> 00:16:06,450 
+in fact the additional twist love the
+time axis being reversed didn't show up
+
+243
+00:16:06,450 --> 00:16:10,820 
+in her in duality with this example
+
+244
+00:16:10,820 --> 00:16:13,940 
+now one thing he says of course is that
+essentially
+
+245
+00:16:13,940 --> 00:16:17,190 
+anytime you've calculated
+
+246
+00:16:17,190 --> 00:16:20,430 
+the 48 transform a one-time function
+
+247
+00:16:20,430 --> 00:16:24,150 
+then you actually calculate the Fourier
+transform
+
+248
+00:16:24,150 --> 00:16:27,300 
+to type functions another one being
+
+249
+00:16:27,300 --> 00:16:32,370 
+the dual example to the one that you
+just calculated
+
+250
+00:16:32,370 --> 00:16:35,540 
+now also somewhat related to do our the
+
+251
+00:16:35,540 --> 00:16:39,220 
+is what is referred to as parce balls
+
+252
+00:16:39,220 --> 00:16:43,620 
+relation for the continuous-time Fourier
+transform
+
+253
+00:16:43,620 --> 00:16:47,130 
+and essentially what parts are false
+relationship says
+
+254
+00:16:47,130 --> 00:16:50,570 
+is that as kind of a a summary other
+
+255
+00:16:50,570 --> 00:16:54,060 
+it says dead the energy
+
+256
+00:16:54,060 --> 00:16:57,410 
+in a time function and the energy
+
+257
+00:16:57,410 --> 00:17:01,160 
+in its Fourier transform are
+proportional the proportionality factor
+
+258
+00:17:01,160 --> 00:17:03,960 
+being a factor of two pi
+
+259
+00:17:03,960 --> 00:17:08,280 
+it well that summarized here what's
+meant by the energy
+
+260
+00:17:08,280 --> 00:17:12,970 
+is course the ago the magnitude squared
+effect City
+
+261
+00:17:12,970 --> 00:17:16,959 
+and the statement apart the balls
+relation and is dead
+
+262
+00:17:16,959 --> 00:17:20,190 
+that in a brawl the energy and accept T
+
+263
+00:17:20,190 --> 00:17:23,720 
+is proportional to this integral which
+is the energy
+
+264
+00:17:23,720 --> 00:17:26,920 
+indexable Megan now
+
+265
+00:17:26,920 --> 00:17:31,490 
+although we've incorporated the 4e a
+series
+
+266
+00:17:31,490 --> 00:17:36,610 
+within a framework for the Fourier
+transform parcels relation
+
+267
+00:17:36,610 --> 00:17:39,670 
+needs to be modified slightly for
+
+268
+00:17:39,670 --> 00:17:43,070 
+for a series because the fact that
+periodic signal
+
+269
+00:17:43,070 --> 00:17:46,440 
+has an infinite amount of energy and its
+and essentially
+
+270
+00:17:46,440 --> 00:17:50,530 
+that former parcels relationship for the
+periodic case would say
+
+271
+00:17:50,530 --> 00:17:53,730 
+infinity equals infinity which isn't too
+useful
+
+272
+00:17:53,730 --> 00:17:59,480 
+however can be modified so that part's a
+false relationship for the periodic case
+
+273
+00:17:59,480 --> 00:18:02,910 
+says essentially that the energy E
+
+274
+00:18:02,910 --> 00:18:07,010 
+in one period other periodic time
+function
+
+275
+00:18:07,010 --> 00:18:12,360 
+in is proportional with this is the
+proportionality factor
+
+276
+00:18:12,360 --> 00:18:15,770 
+proportional to the sum %uh the
+magnitude squared
+
+277
+00:18:15,770 --> 00:18:19,950 
+up the coefficients in other words the
+energy in one period
+
+278
+00:18:19,950 --> 00:18:23,600 
+is proportional to the energy in the
+sequence
+
+279
+00:18:23,600 --> 00:18:29,800 
+that represents the four EA series
+coefficients
+
+280
+00:18:29,800 --> 00:18:32,950 
+now okay there are lots of other
+properties
+
+281
+00:18:32,950 --> 00:18:37,310 
+and there developed in the text in the
+study guide
+
+282
+00:18:37,310 --> 00:18:42,300 
+a number a properties that we want to
+make particular you so
+
+283
+00:18:42,300 --> 00:18:45,620 
+during this lecture and in later
+lectures
+
+284
+00:18:45,620 --> 00:18:49,160 
+are ones that I summarize here and
+
+285
+00:18:49,160 --> 00:18:52,400 
+I won't demonstrate the proves but
+
+286
+00:18:52,400 --> 00:18:58,870 
+a principally focus on some with the
+interpretation is the lecture goes on
+
+287
+00:18:58,870 --> 00:19:02,520 
+well in the first property that I have
+listed here's what's referred to as the
+
+288
+00:19:02,520 --> 00:19:04,760 
+time shifting property
+
+289
+00:19:04,760 --> 00:19:09,520 
+and the time shifting property says if I
+have a time function
+
+290
+00:19:09,520 --> 00:19:13,270 
+with a Fourier transform mexico maker
+
+291
+00:19:13,270 --> 00:19:17,550 
+if I shift that time function in time
+
+292
+00:19:17,550 --> 00:19:21,460 
+dan that corresponds to multiplying
+
+293
+00:19:21,460 --> 00:19:24,550 
+the 48 transformed by this factor
+
+294
+00:19:24,550 --> 00:19:29,220 
+now as you examine this factor what you
+can see is that
+
+295
+00:19:29,220 --> 00:19:32,460 
+this factor has magnitude unity
+
+296
+00:19:32,460 --> 00:19:36,100 
+and it has a phase which is linear with
+frequency
+
+297
+00:19:36,100 --> 00:19:39,270 
+and is slow %uh minus 20
+
+298
+00:19:39,270 --> 00:19:42,610 
+so a statement to remember that will
+come up
+
+299
+00:19:42,610 --> 00:19:46,130 
+many times throughout the cores
+
+300
+00:19:46,130 --> 00:19:51,480 
+is that a timeshare after a displacement
+in time
+
+301
+00:19:51,480 --> 00:19:55,300 
+corresponds to linear phase
+
+302
+00:19:55,300 --> 00:20:01,250 
+or change in linear phase earlier change
+in phase and frequency
+
+303
+00:20:01,250 --> 00:20:05,730 
+another property in and in fact a pair
+of properties
+
+304
+00:20:05,730 --> 00:20:10,300 
+that will make reference to as we turn
+our attention toward the end of this
+
+305
+00:20:10,300 --> 00:20:11,950 
+lecture to
+
+306
+00:20:11,950 --> 00:20:16,790 
+solving differential equations using the
+Fourier transform
+
+307
+00:20:16,790 --> 00:20:21,240 
+is hit was referred to as the
+differentiation property
+
+308
+00:20:21,240 --> 00:20:26,720 
+and its companion which is the
+integration property
+
+309
+00:20:26,720 --> 00:20:30,420 
+the differentiation property says again
+if we have
+
+310
+00:20:30,420 --> 00:20:34,740 
+a time function whose with Fourier
+transform mexico maker
+
+311
+00:20:34,740 --> 00:20:39,350 
+the Fourier transform up the time
+derivative that
+
+312
+00:20:39,350 --> 00:20:44,340 
+is in corresponds to multiplying the
+Fourier transform
+
+313
+00:20:44,340 --> 00:20:47,760 
+by a linear function of frequency so
+
+314
+00:20:47,760 --> 00:20:51,370 
+here it's a linear able to change dead
+
+315
+00:20:51,370 --> 00:20:55,590 
+that corresponds to differentiation
+
+316
+00:20:55,590 --> 00:20:59,480 
+now at first glance what you might think
+is that
+
+317
+00:20:59,480 --> 00:21:02,770 
+the integration property is just the
+reverse if that if
+
+318
+00:21:02,770 --> 00:21:06,430 
+for the differentiation property you
+multiply by J Omega then
+
+319
+00:21:06,430 --> 00:21:10,750 
+for integration you must abide by jail
+maker and thats almost correct
+
+320
+00:21:10,750 --> 00:21:14,600 
+except not quite and the reason for the
+not quite
+
+321
+00:21:14,600 --> 00:21:18,550 
+is that recall that if you differentiate
+
+322
+00:21:18,550 --> 00:21:22,110 
+what happens of course is that you lose
+a constant
+
+323
+00:21:22,110 --> 00:21:26,310 
+and if we have a time function thats
+some fun and energy signal plus a
+
+324
+00:21:26,310 --> 00:21:27,310 
+constant
+
+325
+00:21:27,310 --> 00:21:30,900 
+differentiating will destroy the
+constant
+
+326
+00:21:30,900 --> 00:21:35,450 
+and integration the immigration property
+in essence tries to bring that back
+
+327
+00:21:35,450 --> 00:21:39,630 
+so the integration property which is the
+inverse
+
+328
+00:21:39,630 --> 00:21:43,540 
+of the differentiation property says
+that we divide
+
+329
+00:21:43,540 --> 00:21:47,250 
+the transformed by J Omega and then
+
+330
+00:21:47,250 --> 00:21:52,390 
+if in fact their was a constant added to
+accept T
+
+331
+00:21:52,390 --> 00:21:55,460 
+we have to account for that by inserting
+an impulse
+
+332
+00:21:55,460 --> 00:21:59,240 
+into the Fourier transform and
+
+333
+00:21:59,240 --> 00:22:03,510 
+the file property that I want to draw
+your attention to
+
+334
+00:22:03,510 --> 00:22:06,950 
+on this you graph is the linearity
+property
+
+335
+00:22:06,950 --> 00:22:10,840 
+which is very straight forward to
+demonstrate from
+
+336
+00:22:10,840 --> 00:22:14,790 
+the analysis and synthesis equations
+which simply said is
+
+337
+00:22:14,790 --> 00:22:19,260 
+if X 100 maker is the Fourier transform
+X 1ft
+
+338
+00:22:19,260 --> 00:22:23,310 
+and x2 Omega is the Fourier transform X
+2ft
+
+339
+00:22:23,310 --> 00:22:27,040 
+then the Fourier transform a linear
+combination is
+
+340
+00:22:27,040 --> 00:22:32,860 
+a linear combination love the Fourier
+transforms
+
+341
+00:22:32,860 --> 00:22:37,000 
+now let me emphasize also that these
+properties for the most part
+
+342
+00:22:37,000 --> 00:22:40,490 
+apply both 240 a series and Fourier
+transforms
+
+343
+00:22:40,490 --> 00:22:44,470 
+because in fact and what we've done is
+to incorporate
+
+344
+00:22:44,470 --> 00:22:47,860 
+the forty a series within the
+
+345
+00:22:47,860 --> 00:22:51,600 
+framework of the Fourier transform
+
+346
+00:22:51,600 --> 00:22:55,540 
+okay now will be using a number of these
+properties shortly when we turn our
+
+347
+00:22:55,540 --> 00:22:56,540 
+attention to
+
+348
+00:22:56,540 --> 00:23:01,050 
+near-constant coefficient differential
+equations however before we do that I'd
+
+349
+00:23:01,050 --> 00:23:02,250 
+like to
+
+350
+00:23:02,250 --> 00:23:05,250 
+focus on two additional
+
+351
+00:23:05,250 --> 00:23:08,560 
+major properties and
+
+352
+00:23:08,560 --> 00:23:12,770 
+these are what are referred to as the
+convolution property and the modulation
+
+353
+00:23:12,770 --> 00:23:13,930 
+property
+
+354
+00:23:13,930 --> 00:23:17,180 
+and in fact the convolution property as
+I'm about
+
+355
+00:23:17,180 --> 00:23:20,660 
+to introduces forms the
+
+356
+00:23:20,660 --> 00:23:24,010 
+mathematical and conceptual basis for
+
+357
+00:23:24,010 --> 00:23:28,510 
+the whole notion of filtering which in
+fact will be
+
+358
+00:23:28,510 --> 00:23:32,350 
+a topic by itself in a set of lectures
+and
+
+359
+00:23:32,350 --> 00:23:36,820 
+and in fact is a chapter by itself in
+the textbook
+
+360
+00:23:36,820 --> 00:23:40,400 
+similarly what i'll refer to as the
+modulation property
+
+361
+00:23:40,400 --> 00:23:43,480 
+again well occupy its own set
+
+362
+00:23:43,480 --> 00:23:48,740 
+have lectures as we go through this
+scores and in fact has its own
+
+363
+00:23:48,740 --> 00:23:52,460 
+a chapter in the textbook
+
+364
+00:23:52,460 --> 00:23:58,750 
+let me in just indicate what the
+convolution property is
+
+365
+00:23:58,750 --> 00:24:02,280 
+and and what the convolution property
+
+366
+00:24:02,280 --> 00:24:08,660 
+tells us is that
+
+367
+00:24:08,660 --> 00:24:12,640 
+the 48 transform of the convolution
+
+368
+00:24:12,640 --> 00:24:16,470 
+a two-time functions is the product
+
+369
+00:24:16,470 --> 00:24:19,950 
+all therefore yea transforms
+
+370
+00:24:19,950 --> 00:24:22,950 
+so it says for example dead
+
+371
+00:24:22,950 --> 00:24:27,580 
+if I have a linear time-invariant system
+
+372
+00:24:27,580 --> 00:24:32,510 
+and in I have an input exits the an
+impulse response HFT
+
+373
+00:24:32,510 --> 00:24:35,620 
+and the output of course being the
+convolution
+
+374
+00:24:35,620 --> 00:24:41,120 
+then in fact if I look at this in the
+frequency domain
+
+375
+00:24:41,120 --> 00:24:44,180 
+the Fourier transform up the output
+
+376
+00:24:44,180 --> 00:24:47,910 
+is the for EA transform the input
+
+377
+00:24:47,910 --> 00:24:53,460 
+times the Fourier transform the impulse
+response
+
+378
+00:24:53,460 --> 00:24:56,910 
+now you can demonstrate this property
+
+379
+00:24:56,910 --> 00:25:01,170 
+algebraically by essentially taking the
+convolution integral
+
+380
+00:25:01,170 --> 00:25:04,580 
+and applying to 48 transforming doing
+the appropriate
+
+381
+00:25:04,580 --> 00:25:08,700 
+in a changing the order integration et
+cetera
+
+382
+00:25:08,700 --> 00:25:12,660 
+but who what I'd like to draw your
+attention to is a
+
+383
+00:25:12,660 --> 00:25:16,870 
+somewhat more intuitive interpretation
+of the property
+
+384
+00:25:16,870 --> 00:25:20,290 
+and the intuitive interpretations stems
+from
+
+385
+00:25:20,290 --> 00:25:25,490 
+the relationship between the Fourier
+transform at the impulse response
+
+386
+00:25:25,490 --> 00:25:29,140 
+and what we refer to as the frequency
+response
+
+387
+00:25:29,140 --> 00:25:32,150 
+now recall dead wanna have
+
+388
+00:25:32,150 --> 00:25:37,200 
+the things that lettuce to use complex
+exponentials as building blocks
+
+389
+00:25:37,200 --> 00:25:41,440 
+was the fact that there I can functions
+linear time-invariant systems in other
+
+390
+00:25:41,440 --> 00:25:42,510 
+words
+
+391
+00:25:42,510 --> 00:25:45,890 
+if we have linear time-invariant system
+
+392
+00:25:45,890 --> 00:25:49,120 
+and I have an input which is a complex
+exponential
+
+393
+00:25:49,120 --> 00:25:53,350 
+the output is a complex exponential the
+same frequency
+
+394
+00:25:53,350 --> 00:25:57,820 
+multiplied by what we call the frequency
+response
+
+395
+00:25:57,820 --> 00:26:02,510 
+and in fact the expression for the
+frequency response
+
+396
+00:26:02,510 --> 00:26:08,030 
+is identical to the expression for the
+four EA transform the impulse response
+
+397
+00:26:08,030 --> 00:26:11,290 
+in other words the frequency response is
+
+398
+00:26:11,290 --> 00:26:16,040 
+the Fourier transform of the impulse
+response
+
+399
+00:26:16,040 --> 00:26:19,800 
+now in that context how can we
+
+400
+00:26:19,800 --> 00:26:23,480 
+interpret the convolution property well
+
+401
+00:26:23,480 --> 00:26:28,030 
+remember what I said at the beginning
+the lecture 1 I've pointed
+
+402
+00:26:28,030 --> 00:26:31,170 
+to the synthesis equation and I said in
+
+403
+00:26:31,170 --> 00:26:34,940 
+in essence the synthesis equation tells
+us
+
+404
+00:26:34,940 --> 00:26:41,190 
+how to decompose x50 as a linear
+combination a complex exponentials
+
+405
+00:26:41,190 --> 00:26:45,310 
+what are the complex amplitudes are
+those complex exponentials
+
+406
+00:26:45,310 --> 00:26:48,990 
+well interns love our notation year
+
+407
+00:26:48,990 --> 00:26:52,290 
+the complex amplitude of those complex
+exponentials
+
+408
+00:26:52,290 --> 00:26:58,030 
+is Xserve Omega or proportional taxable
+make in particular taxable make a deal
+
+409
+00:26:58,030 --> 00:26:58,650 
+maker
+
+410
+00:26:58,650 --> 00:27:02,640 
+and then a factor two-part well
+
+411
+00:27:02,640 --> 00:27:07,940 
+as this signal goes through this linear
+time-invariant system
+
+412
+00:27:07,940 --> 00:27:11,390 
+what happens to each of those
+exponentials is
+
+413
+00:27:11,390 --> 00:27:15,530 
+it each one gets multiplied by the
+frequency response
+
+414
+00:27:15,530 --> 00:27:18,530 
+at The Associated frequency
+
+415
+00:27:18,530 --> 00:27:21,770 
+what comes out is the amplitude
+
+416
+00:27:21,770 --> 00:27:25,480 
+all the complex exponentials that are
+used
+
+417
+00:27:25,480 --> 00:27:28,910 
+to bill the output
+
+418
+00:27:28,910 --> 00:27:33,060 
+so in fact the convolution property
+
+419
+00:27:33,060 --> 00:27:36,310 
+simply is telling us
+
+420
+00:27:36,310 --> 00:27:40,050 
+that interns have a decomposition the
+signal
+
+421
+00:27:40,050 --> 00:27:44,110 
+enters a complex exponentials as we push
+that signal through linear
+
+422
+00:27:44,110 --> 00:27:46,370 
+time-invariant system
+
+423
+00:27:46,370 --> 00:27:50,530 
+were separately modifying with the
+frequency response were multiplying
+
+424
+00:27:50,530 --> 00:27:54,120 
+by the frequency response the amplitudes
+
+425
+00:27:54,120 --> 00:27:58,179 
+love the exponential comp phones used to
+build the input
+
+426
+00:27:58,179 --> 00:28:01,250 
+and that song intern is
+
+427
+00:28:01,250 --> 00:28:06,800 
+the decomposition of the output in terms
+of complex exponentials
+
+428
+00:28:06,800 --> 00:28:12,060 
+now and I I understand that kinda going
+through that involves
+
+429
+00:28:12,060 --> 00:28:15,990 
+a little bit of sorting out and I
+strongly encourage you
+
+430
+00:28:15,990 --> 00:28:21,050 
+to try to understand and interpret the
+convolution property
+
+431
+00:28:21,050 --> 00:28:24,919 
+in knows conceptual terms rather than
+simply by
+
+432
+00:28:24,919 --> 00:28:28,830 
+applying the mathematics to the
+convolution integral and seeing that
+
+433
+00:28:28,830 --> 00:28:33,460 
+terms match up on both sides
+
+434
+00:28:33,460 --> 00:28:37,600 
+now as i indicated the convolution
+property
+
+435
+00:28:37,600 --> 00:28:41,850 
+forms the basis for what's referred to
+as filtering
+
+436
+00:28:41,850 --> 00:28:46,380 
+and this is a topic that will be
+treating a
+
+437
+00:28:46,380 --> 00:28:49,510 
+considerable amount of detail and after
+
+438
+00:28:49,510 --> 00:28:54,510 
+we've also gone through a discussion
+love the discrete-time Fourier transform
+
+439
+00:28:54,510 --> 00:28:57,870 
+in the next several lectures however
+what I'd like to do is just
+
+440
+00:28:57,870 --> 00:29:00,950 
+just indicate now a little bit love
+
+441
+00:29:00,950 --> 00:29:04,050 
+the conceptual ideas involve
+
+442
+00:29:04,050 --> 00:29:09,320 
+essentially conceptually what filtering
+as its
+
+443
+00:29:09,320 --> 00:29:13,560 
+typically referred to corresponds to
+
+444
+00:29:13,560 --> 00:29:16,800 
+is modifying separately
+
+445
+00:29:16,800 --> 00:29:20,340 
+the individual frequency components in a
+signal
+
+446
+00:29:20,340 --> 00:29:25,140 
+the convolution property told us that if
+we
+
+447
+00:29:25,140 --> 00:29:29,419 
+look at the individual frequency comp
+points they get multiplied by the
+
+448
+00:29:29,419 --> 00:29:34,460 
+frequency response and so what that says
+is that we can amplify or it anyway
+
+449
+00:29:34,460 --> 00:29:39,880 
+any of those comp own it separately
+using a linear time-invariant system
+
+450
+00:29:39,880 --> 00:29:43,060 
+for example what I've illustrated here
+is
+
+451
+00:29:43,060 --> 00:29:46,909 
+the frequency response what is commonly
+referred to
+
+452
+00:29:46,909 --> 00:29:52,600 
+as and ideal Lopez filter what an ideal
+0 pass filter does
+
+453
+00:29:52,600 --> 00:29:55,919 
+is to pass exactly
+
+454
+00:29:55,919 --> 00:29:59,350 
+frequencies in one frequency range
+
+455
+00:29:59,350 --> 00:30:04,659 
+and eliminate totally frequencies
+outside that range
+
+456
+00:30:04,659 --> 00:30:09,010 
+another filter which is not so ideal
+might for example
+
+457
+00:30:09,010 --> 00:30:12,580 
+attenuate sit com phone it's in this
+band but not
+
+458
+00:30:12,580 --> 00:30:19,179 
+I rather attenuate conference in this
+band but not totally eliminate them
+
+459
+00:30:19,179 --> 00:30:22,200 
+now interns a filtering we can think
+back
+
+460
+00:30:22,200 --> 00:30:25,870 
+to the differentiation property and in
+fact interpreter
+
+461
+00:30:25,870 --> 00:30:29,570 
+differentiation or differentiator as a
+filter
+
+462
+00:30:29,570 --> 00:30:33,030 
+recall that the differentiation property
+said
+
+463
+00:30:33,030 --> 00:30:39,280 
+that the Fourier transform all the
+differentiated signal
+
+464
+00:30:39,280 --> 00:30:43,149 
+is the for a transformer the original
+signal multiplied by J Omega
+
+465
+00:30:43,149 --> 00:30:46,210 
+so what that says then
+
+466
+00:30:46,210 --> 00:30:51,460 
+is dead if we have a differentiator
+opened the frequency response to that
+
+467
+00:30:51,460 --> 00:30:56,700 
+is J Omega in other words the Fourier
+transform of the output is Jay Omega
+
+468
+00:30:56,700 --> 00:31:00,429 
+times the Fourier transform the input
+
+469
+00:31:00,429 --> 00:31:04,280 
+and so the frequency response a
+differentiator
+
+470
+00:31:04,280 --> 00:31:08,350 
+looks like this and turns its magnitude
+and what it does
+
+471
+00:31:08,350 --> 00:31:12,370 
+of course is it amplifies high
+frequencies
+
+472
+00:31:12,370 --> 00:31:17,280 
+and attenuates low frequencies
+
+473
+00:31:17,280 --> 00:31:22,409 
+well let me just to kinda cement summer
+these ideas
+
+474
+00:31:22,409 --> 00:31:26,500 
+illustrate them in a context 0
+
+475
+00:31:26,500 --> 00:31:29,980 
+one kind of signal namely signal which
+in fact
+
+476
+00:31:29,980 --> 00:31:34,190 
+is the spatial signal rather than a time
+signal
+
+477
+00:31:34,190 --> 00:31:39,550 
+and this also gives me an opportunity to
+introduce you
+
+478
+00:31:39,550 --> 00:31:43,450 
+to our colleague JBJ for EA's
+
+479
+00:31:43,450 --> 00:31:47,710 
+so if we could look at our colleague
+mister four EA
+
+480
+00:31:47,710 --> 00:31:51,090 
+who by the way is on
+
+481
+00:31:51,090 --> 00:31:55,020 
+not only person who had tremendously
+brilliant insights
+
+482
+00:31:55,020 --> 00:31:58,210 
+and his insights in fact have led to
+
+483
+00:31:58,210 --> 00:32:02,240 
+the developments really for the
+foundation the developments that
+
+484
+00:32:02,240 --> 00:32:07,909 
+is the basis for this course he was also
+a very interesting fascinating person
+
+485
+00:32:07,909 --> 00:32:11,179 
+and there's a certain amount of
+historical discussion
+
+486
+00:32:11,179 --> 00:32:17,419 
+about for EA and his background which
+you might enjoy reading in the text
+
+487
+00:32:17,419 --> 00:32:20,820 
+in any case what you're looking at a
+course is a signal
+
+488
+00:32:20,820 --> 00:32:24,310 
+and the signal is a spatial signal and
+
+489
+00:32:24,310 --> 00:32:28,370 
+it has high frequencies and low
+frequencies high frequencies
+
+490
+00:32:28,370 --> 00:32:32,300 
+corresponding to things that are varying
+rapidly
+
+491
+00:32:32,300 --> 00:32:35,470 
+spatially and low frequencies barings
+
+492
+00:32:35,470 --> 00:32:38,669 
+very slowly spatially it so
+
+493
+00:32:38,669 --> 00:32:42,120 
+for example we could low-pass filter
+
+494
+00:32:42,120 --> 00:32:45,520 
+this picture simply by asking
+
+495
+00:32:45,520 --> 00:32:49,740 
+the video crew if they could slightly
+defocus
+
+496
+00:32:49,740 --> 00:32:55,440 
+and what you see as the picture is the
+focus if you can hold it there
+
+497
+00:32:55,440 --> 00:32:58,550 
+is dead we've lost edges which
+
+498
+00:32:58,550 --> 00:33:03,610 
+is the rapid variation and what we've
+retained is the broader
+
+499
+00:33:03,610 --> 00:33:06,820 
+slow variation and now let's take out
+
+500
+00:33:06,820 --> 00:33:10,230 
+the d focusing low-pass filter and go
+back
+
+501
+00:33:10,230 --> 00:33:16,980 
+to a focused image
+
+502
+00:33:16,980 --> 00:33:20,190 
+okay now what
+
+503
+00:33:20,190 --> 00:33:23,540 
+and we can also consider is what would
+happen if we look
+
+504
+00:33:23,540 --> 00:33:27,389 
+at the differentiated image and their
+are several ways that we can think about
+
+505
+00:33:27,389 --> 00:33:28,530 
+this
+
+506
+00:33:28,530 --> 00:33:33,020 
+one is that a differentiator of course
+the output of a differentiator
+
+507
+00:33:33,020 --> 00:33:37,730 
+is larger where the discontinuity
+
+508
+00:33:37,730 --> 00:33:40,740 
+or where the variation is faster
+
+509
+00:33:40,740 --> 00:33:43,820 
+and so we would expect the edges
+
+510
+00:33:43,820 --> 00:33:47,870 
+to be enhanced if in fact we
+differentiated the image
+
+511
+00:33:47,870 --> 00:33:51,560 
+or if we interpret differentiation in
+the context
+
+512
+00:33:51,560 --> 00:33:55,630 
+love our filter then what we're saying
+
+513
+00:33:55,630 --> 00:33:59,510 
+if hey what we're saying is that in
+effect
+
+514
+00:33:59,510 --> 00:34:03,450 
+what's happening is that the
+differentiator is
+
+515
+00:34:03,450 --> 00:34:06,540 
+accentuating the high frequencies
+
+516
+00:34:06,540 --> 00:34:11,220 
+because if the frequency shape the
+differentiator now recall that this all
+
+517
+00:34:11,220 --> 00:34:14,250 
+kinda fits together is a nice package
+
+518
+00:34:14,250 --> 00:34:18,340 
+be expected to actively the
+differentiation will enhance ages
+
+519
+00:34:18,340 --> 00:34:23,030 
+when we talked about square waves and we
+so I have a for a series built up a
+
+520
+00:34:23,030 --> 00:34:24,080 
+square wave
+
+521
+00:34:24,080 --> 00:34:27,280 
+we saw that it was the high frequencies
+
+522
+00:34:27,280 --> 00:34:31,590 
+that were required in order to build up
+the sharp
+
+523
+00:34:31,590 --> 00:34:36,570 
+edges and so either viewed as a filter
+or viewed intuitively
+
+524
+00:34:36,570 --> 00:34:40,950 
+we would expect that the differentiated
+image would in fact
+
+525
+00:34:40,950 --> 00:34:46,649 
+get would in fact it anyway the slowly
+varying background and amplify
+
+526
+00:34:46,649 --> 00:34:50,810 
+the rapidly varying ages so let's look
+again at
+
+527
+00:34:50,810 --> 00:34:54,889 
+our original image just to remind you
+love the fact that there are edges of
+
+528
+00:34:54,889 --> 00:34:56,020 
+course and their
+
+529
+00:34:56,020 --> 00:34:59,770 
+is more slowly varying backgrounds
+
+530
+00:34:59,770 --> 00:35:03,040 
+and now let's look at the
+
+531
+00:35:03,040 --> 00:35:06,120 
+result love passing that through
+
+532
+00:35:06,120 --> 00:35:09,480 
+a differentiator and as i think is
+
+533
+00:35:09,480 --> 00:35:13,050 
+very evident in that in the resulting
+image
+
+534
+00:35:13,050 --> 00:35:16,600 
+clearly is the edges that a retained and
+
+535
+00:35:16,600 --> 00:35:19,770 
+the slow back to slower background
+variations
+
+536
+00:35:19,770 --> 00:35:26,770 
+are destroyed which is consistent with
+everything we've said
+
+537
+00:35:26,970 --> 00:35:30,640 
+okay now i've emphasized the her will be
+returning
+
+538
+00:35:30,640 --> 00:35:33,850 
+to a much broader discussion a filtering
+at
+
+539
+00:35:33,850 --> 00:35:38,480 
+a later point in the cores right now
+like to comment on another
+
+540
+00:35:38,480 --> 00:35:42,830 
+property which here is also as i
+indicated a topic I've
+
+541
+00:35:42,830 --> 00:35:46,070 
+in its own right and which really is the
+dual
+
+542
+00:35:46,070 --> 00:35:51,040 
+property to the convolution property and
+in fact could be argued directly from
+
+543
+00:35:51,040 --> 00:35:53,670 
+duality
+
+544
+00:35:53,670 --> 00:35:59,080 
+and that is what's referred to as the
+modulation property
+
+545
+00:35:59,080 --> 00:36:03,010 
+now the convolution property told us
+that
+
+546
+00:36:03,010 --> 00:36:09,260 
+if we convolved in the time domain we
+multiply in the frequency domain
+
+547
+00:36:09,260 --> 00:36:12,400 
+and we know the time and frequency
+domains are interchangeable because it
+
+548
+00:36:12,400 --> 00:36:13,250 
+to our the
+
+549
+00:36:13,250 --> 00:36:16,260 
+so what that would suggest is dead
+
+550
+00:36:16,260 --> 00:36:19,820 
+if we multiply in the time domain
+
+551
+00:36:19,820 --> 00:36:23,400 
+that would correspond to convolution in
+the frequency domain
+
+552
+00:36:23,400 --> 00:36:27,760 
+and in fact head that is exactly what
+the modulation property is
+
+553
+00:36:27,760 --> 00:36:31,240 
+I have a summarized here that if we
+multiply
+
+554
+00:36:31,240 --> 00:36:34,450 
+a time function by another time function
+then
+
+555
+00:36:34,450 --> 00:36:38,170 
+in the frequency domain week involved
+
+556
+00:36:38,170 --> 00:36:41,900 
+whereas the convolution property is just
+the duel at that
+
+557
+00:36:41,900 --> 00:36:46,010 
+namely convolved being in the time
+domain corresponds to
+
+558
+00:36:46,010 --> 00:36:49,340 
+multiplication in the frequency domain
+
+559
+00:36:49,340 --> 00:36:54,340 
+the convolution property is the basis as
+i indicated for filtering
+
+560
+00:36:54,340 --> 00:36:58,780 
+the modulation property as I've
+summarized it here
+
+561
+00:36:58,780 --> 00:37:03,160 
+in fact is the entire basis
+
+562
+00:37:03,160 --> 00:37:07,210 
+for amplitude modulation systems issues
+
+563
+00:37:07,210 --> 00:37:10,910 
+almost universally in communications and
+wait
+
+564
+00:37:10,910 --> 00:37:15,650 
+the modulation property is we'll see
+when we explored in more detail
+
+565
+00:37:15,650 --> 00:37:20,710 
+tells us is that if we have a signal
+with a certain spectrum
+
+566
+00:37:20,710 --> 00:37:23,940 
+and we multiply by a sinusoidal
+
+567
+00:37:23,940 --> 00:37:28,740 
+signal whose for EA transformers said
+impulses
+
+568
+00:37:28,740 --> 00:37:33,320 
+then in a frequency-domain week involved
+and that corresponds
+
+569
+00:37:33,320 --> 00:37:37,040 
+to taking the original spectrum and
+translating it
+
+570
+00:37:37,040 --> 00:37:40,150 
+shifting it in frequency up to
+
+571
+00:37:40,150 --> 00:37:43,550 
+the frequency love the carrier namely
+
+572
+00:37:43,550 --> 00:37:46,690 
+the sinusoidal signal and as I said will
+
+573
+00:37:46,690 --> 00:37:52,300 
+come to that in much more detail in a
+number of lectures
+
+574
+00:37:52,300 --> 00:37:55,580 
+okay now we've seen a number of
+properties
+
+575
+00:37:55,580 --> 00:37:59,620 
+and I indicated sometime earlier when we
+talked about
+
+576
+00:37:59,620 --> 00:38:04,910 
+and differential equations that in fact
+it's the properties are the 48 transform
+
+577
+00:38:04,910 --> 00:38:08,450 
+that providers with a very useful
+
+578
+00:38:08,450 --> 00:38:14,230 
+an important mechanism for solving
+linear constant coefficient differential
+
+579
+00:38:14,230 --> 00:38:15,710 
+equations
+
+580
+00:38:15,710 --> 00:38:18,800 
+and but I'd like to do now
+
+581
+00:38:18,800 --> 00:38:23,000 
+is illustrate the procedure the basis
+for that
+
+582
+00:38:23,000 --> 00:38:26,850 
+and I think what we'll do is illustrated
+simply in the context of several
+
+583
+00:38:26,850 --> 00:38:30,210 
+examples
+
+584
+00:38:30,210 --> 00:38:33,900 
+okay well in what i've indicated is
+
+585
+00:38:33,900 --> 00:38:37,120 
+a system
+
+586
+00:38:37,120 --> 00:38:41,140 
+with her a an impulse response HFT
+
+587
+00:38:41,140 --> 00:38:46,200 
+or frequency response teachable nigga
+and of course we know that in the time
+
+588
+00:38:46,200 --> 00:38:48,610 
+domain it's just right to convolution
+
+589
+00:38:48,610 --> 00:38:54,140 
+in the frequency domain its described
+through multiplication
+
+590
+00:38:54,140 --> 00:38:57,160 
+and I in essence
+
+591
+00:38:57,160 --> 00:39:01,710 
+am assuming that we're talking about a
+linear time-invariant system
+
+592
+00:39:01,710 --> 00:39:06,540 
+and we're also going to assume that it's
+characterized by a win here comes the
+
+593
+00:39:06,540 --> 00:39:09,070 
+coefficient differential equation
+
+594
+00:39:09,070 --> 00:39:12,550 
+where we're going to oppose the
+condition
+
+595
+00:39:12,550 --> 00:39:15,880 
+that its causal linear and
+time-invariant
+
+596
+00:39:15,880 --> 00:39:19,110 
+or equivalent Lee that the initial
+condition conditions
+
+597
+00:39:19,110 --> 00:39:22,680 
+are consistent with initial rest
+
+598
+00:39:22,680 --> 00:39:26,190 
+and it's because it the fact that we're
+assuming
+
+599
+00:39:26,190 --> 00:39:29,340 
+that is a linear time-invariant system
+that
+
+600
+00:39:29,340 --> 00:39:34,390 
+we can describe it in the frequency
+domain through the convolution property
+
+601
+00:39:34,390 --> 00:39:39,250 
+and we can use the properties love the
+forty a transfer
+
+602
+00:39:39,250 --> 00:39:44,200 
+so let's take as our example a
+first-order differential equation
+
+603
+00:39:44,200 --> 00:39:49,930 
+as I indicate here so the derivative the
+output plus eight times the output is
+
+604
+00:39:49,930 --> 00:39:51,910 
+equal to the input
+
+605
+00:39:51,910 --> 00:39:57,380 
+and now we can use the differentiation
+property
+
+606
+00:39:57,380 --> 00:40:01,340 
+if we for EA transform mystic entire
+expression
+
+607
+00:40:01,340 --> 00:40:05,330 
+the differentiation property tells us
+that
+
+608
+00:40:05,330 --> 00:40:08,660 
+the forty a transformer the derivative
+of the output
+
+609
+00:40:08,660 --> 00:40:14,720 
+is the for a transformer the output
+multiplied by J Omega
+
+610
+00:40:14,720 --> 00:40:18,810 
+and Lenny arity well let us
+
+611
+00:40:18,810 --> 00:40:23,130 
+right the Fourier transform love this as
+eight times while Omega
+
+612
+00:40:23,130 --> 00:40:26,520 
+and since these are added together and
+since we have the linear
+
+613
+00:40:26,520 --> 00:40:29,660 
+linearity property these are added
+together
+
+614
+00:40:29,660 --> 00:40:34,900 
+and XOM Omega is and the Fourier
+transform affect safety
+
+615
+00:40:34,900 --> 00:40:40,510 
+so what we've used is the
+differentiation property
+
+616
+00:40:40,510 --> 00:40:47,190 
+and reviews the when the arity property
+
+617
+00:40:47,190 --> 00:40:51,340 
+right now weekend solve this equation
+
+618
+00:40:51,340 --> 00:40:55,230 
+for y Omega the forty a transformer the
+output
+
+619
+00:40:55,230 --> 00:40:58,920 
+in terms of Xserve Omega the Fourier
+transform
+
+620
+00:40:58,920 --> 00:41:02,800 
+the input and a simple algebraic step
+
+621
+00:41:02,800 --> 00:41:08,220 
+gets s to this expression so the for a
+chance for the output is one over
+
+622
+00:41:08,220 --> 00:41:09,650 
+Jamaica plus a
+
+623
+00:41:09,650 --> 00:41:14,200 
+ties the forty a transformer the input
+and I just simply repeated
+
+624
+00:41:14,200 --> 00:41:18,990 
+that equation appear
+
+625
+00:41:18,990 --> 00:41:22,440 
+now so far this is algebra
+
+626
+00:41:22,440 --> 00:41:27,840 
+and and question is now how do we
+interpret this
+
+627
+00:41:27,840 --> 00:41:32,710 
+well we know that the for a transformer
+the output
+
+628
+00:41:32,710 --> 00:41:37,680 
+is the forty a transformer the input
+times the Fourier transform
+
+629
+00:41:37,680 --> 00:41:42,140 
+are the impulse response to the system
+namely the frequency response
+
+630
+00:41:42,140 --> 00:41:45,270 
+so in fact if we think love
+
+631
+00:41:45,270 --> 00:41:49,510 
+a chip tanh Omega as a Fourier transform
+pair
+
+632
+00:41:49,510 --> 00:41:53,010 
+then is the convolution property that
+lets us
+
+633
+00:41:53,010 --> 00:41:56,230 
+quaid this term with
+
+634
+00:41:56,230 --> 00:41:59,950 
+H Omega so here
+
+635
+00:41:59,950 --> 00:42:05,490 
+were using the convolution property
+
+636
+00:42:05,490 --> 00:42:09,900 
+and so we know what the 48 transform
+
+637
+00:42:09,900 --> 00:42:13,040 
+or the impulse responses they only one
+over
+
+638
+00:42:13,040 --> 00:42:16,870 
+J Omega plus a now
+
+639
+00:42:16,870 --> 00:42:20,760 
+in we may have for example what is in
+our problem
+
+640
+00:42:20,760 --> 00:42:26,080 
+instead of getting the frequency
+response to get the impulse response
+
+641
+00:42:26,080 --> 00:42:30,620 
+and there are a variety of ways that we
+can't do this we can attempt to go
+
+642
+00:42:30,620 --> 00:42:33,980 
+through the inverse Fourier transform
+expression
+
+643
+00:42:33,980 --> 00:42:38,610 
+but in fact one of the most useful ways
+is their formally called
+
+644
+00:42:38,610 --> 00:42:41,910 
+the inspection method informally
+
+645
+00:42:41,910 --> 00:42:46,510 
+its called if you work that out going
+one way
+
+646
+00:42:46,510 --> 00:42:49,730 
+then you ought to remember the answer so
+that you know how to get back
+
+647
+00:42:49,730 --> 00:42:52,830 
+method so what that says is
+
+648
+00:42:52,830 --> 00:42:58,270 
+remember dead we worked an example and
+in fact I showed you the example
+
+649
+00:42:58,270 --> 00:43:01,440 
+earlier in the lecture that
+
+650
+00:43:01,440 --> 00:43:04,750 
+the Fourier transform a view to the
+minus eighty times a step
+
+651
+00:43:04,750 --> 00:43:07,820 
+is one over J Omega plus a
+
+652
+00:43:07,820 --> 00:43:13,250 
+so what is the inverse Fourier transform
+a 1-over J Omega plus a
+
+653
+00:43:13,250 --> 00:43:17,090 
+well ants need to the minus eighty
+
+654
+00:43:17,090 --> 00:43:20,190 
+times unit step
+
+655
+00:43:20,190 --> 00:43:26,530 
+and that's just simply remembering in
+essence this particular transformed pier
+
+656
+00:43:26,530 --> 00:43:30,900 
+well I've drawn graphically
+
+657
+00:43:30,900 --> 00:43:36,190 
+the magnitude of the Fourier transform
+here
+
+658
+00:43:36,190 --> 00:43:41,400 
+and below it we have the impulse
+response
+
+659
+00:43:41,400 --> 00:43:46,720 
+the apostle spines is as I just
+indicated either -80
+
+660
+00:43:46,720 --> 00:43:51,430 
+times you see now let's go back up and
+look at
+
+661
+00:43:51,430 --> 00:43:56,560 
+the magnitude over the frequency
+response
+
+662
+00:43:56,560 --> 00:44:00,330 
+and given just a little bit of
+discussion that we had
+
+663
+00:44:00,330 --> 00:44:04,970 
+previously about filtering you should be
+able to
+
+664
+00:44:04,970 --> 00:44:09,350 
+in for something about the filtering
+characteristics
+
+665
+00:44:09,350 --> 00:44:14,000 
+love this simple first-order
+differential equation
+
+666
+00:44:14,000 --> 00:44:17,950 
+in particular if you look at that
+frequency response
+
+667
+00:44:17,950 --> 00:44:22,840 
+the frequency response falls off with
+frequency and so it tends to do
+
+668
+00:44:22,840 --> 00:44:26,310 
+is attenuate high frequencies and
+
+669
+00:44:26,310 --> 00:44:29,580 
+retain low frequencies so in fact
+
+670
+00:44:29,580 --> 00:44:33,110 
+you could think of the defocus saying
+that we did on
+
+671
+00:44:33,110 --> 00:44:37,720 
+the imager for EA you could think if
+that approximately as
+
+672
+00:44:37,720 --> 00:44:40,930 
+similar to the kind of filtering action
+that you would get
+
+673
+00:44:40,930 --> 00:44:46,900 
+by passing a signal through a
+first-order differential equation
+
+674
+00:44:46,900 --> 00:44:50,140 
+okay now just illustrate in one
+
+675
+00:44:50,140 --> 00:44:55,810 
+additional step in both evaluating
+inverse transforms and using Fourier
+
+676
+00:44:55,810 --> 00:44:57,690 
+transform properties
+
+677
+00:44:57,690 --> 00:45:01,680 
+to solve a near constant coefficient
+differential equations
+
+678
+00:45:01,680 --> 00:45:05,280 
+let's take this same example and rather
+
+679
+00:45:05,280 --> 00:45:09,020 
+then finding the impulse response let's
+find the response
+
+680
+00:45:09,020 --> 00:45:12,030 
+to another exponential input
+
+681
+00:45:12,030 --> 00:45:15,900 
+now we could of course do that using the
+convolution integral we just got the
+
+682
+00:45:15,900 --> 00:45:18,099 
+impulse response so we can put that
+
+683
+00:45:18,099 --> 00:45:22,240 
+through the convolution integral to get
+the response to this input
+
+684
+00:45:22,240 --> 00:45:28,200 
+but let's do it instead by going back to
+the differential equation
+
+685
+00:45:28,200 --> 00:45:33,079 
+and so here i'm taking a differential
+equation
+
+686
+00:45:33,079 --> 00:45:36,589 
+all choose just to have some numbers to
+work with
+
+687
+00:45:36,589 --> 00:45:39,980 
+a equal to 2 and now
+
+688
+00:45:39,980 --> 00:45:44,250 
+I'll choose an exponential on the right
+hand side either minus tee times you
+
+689
+00:45:44,250 --> 00:45:46,329 
+have t
+
+690
+00:45:46,329 --> 00:45:52,010 
+and again we for EA transform the
+equation
+
+691
+00:45:52,010 --> 00:45:55,020 
+and we can remember
+
+692
+00:45:55,020 --> 00:45:59,440 
+this particular Fourier transform pair
+it's just the one who worked out
+
+693
+00:45:59,440 --> 00:46:03,740 
+previously now with a equal to 1 clearly
+we're getting a lot of mileage out of
+
+694
+00:46:03,740 --> 00:46:05,740 
+that example
+
+695
+00:46:05,740 --> 00:46:11,559 
+and now if we wanted determine what the
+output why if he is
+
+696
+00:46:11,559 --> 00:46:15,069 
+we can't do that by solving for Y Omega
+
+697
+00:46:15,069 --> 00:46:18,420 
+and then generating the inverse Fourier
+transform
+
+698
+00:46:18,420 --> 00:46:21,800 
+well what's all this algebraically for y
+Omega
+
+699
+00:46:21,800 --> 00:46:25,770 
+and and that gets us to this expression
+
+700
+00:46:25,770 --> 00:46:31,130 
+and this is not a Fourier transform that
+we've worked out before
+
+701
+00:46:31,130 --> 00:46:34,130 
+and this is have the second part to the
+
+702
+00:46:34,130 --> 00:46:39,720 
+inspection procedure what we have is a
+forty a transform which is a product
+
+703
+00:46:39,720 --> 00:46:43,240 
+of two turns each of which we can
+recognize
+
+704
+00:46:43,240 --> 00:46:48,410 
+and what we can consider doing is
+expanding that out
+
+705
+00:46:48,410 --> 00:46:52,390 
+in a partial fraction expansion namely
+as a summer turns
+
+706
+00:46:52,390 --> 00:46:56,510 
+because the lady arity property
+associated with the 48 transform
+
+707
+00:46:56,510 --> 00:47:00,950 
+the inverse transform is then the song
+the inverse transform movie to those
+
+708
+00:47:00,950 --> 00:47:03,650 
+terms
+
+709
+00:47:03,650 --> 00:47:08,329 
+okay so if we expand this out in a
+partial fraction expansion
+
+710
+00:47:08,329 --> 00:47:11,730 
+and you can just verify that
+
+711
+00:47:11,730 --> 00:47:15,750 
+if you add these two together you get
+back to where we started
+
+712
+00:47:15,750 --> 00:47:20,000 
+we now have the sum of two terms
+
+713
+00:47:20,000 --> 00:47:25,190 
+and if we now recognized by inspection
+
+714
+00:47:25,190 --> 00:47:30,079 
+the inverse Fourier transform love this
+we see that it simply
+
+715
+00:47:30,079 --> 00:47:34,020 
+minus either -2 TV times the unit step
+
+716
+00:47:34,020 --> 00:47:38,609 
+this one is plus either the minus the
+times a unit step
+
+717
+00:47:38,609 --> 00:47:41,900 
+and so in fact it's the summer these two
+terms
+
+718
+00:47:41,900 --> 00:47:46,410 
+which are the inverse transforms up the
+
+719
+00:47:46,410 --> 00:47:50,309 
+individual turns in a partial fraction
+expansion
+
+720
+00:47:50,309 --> 00:47:56,369 
+that then give us the for EA transform
+
+721
+00:47:56,369 --> 00:47:59,760 
+all y ft
+
+722
+00:47:59,760 --> 00:48:03,089 
+her I'm sorry for her rather the output
+
+723
+00:48:03,089 --> 00:48:07,309 
+so this is a gypsy that this is why if
+the
+
+724
+00:48:07,309 --> 00:48:10,520 
+which is the summer these two
+exponentials and this
+
+725
+00:48:10,520 --> 00:48:13,990 
+is the inverse Fourier transform
+
+726
+00:48:13,990 --> 00:48:20,319 
+love y Omega as we calculated it
+previously
+
+727
+00:48:20,319 --> 00:48:24,470 
+okay well hopefully you're beginning to
+get some sense now
+
+728
+00:48:24,470 --> 00:48:27,520 
+love how powerful and also beautiful
+
+729
+00:48:27,520 --> 00:48:31,290 
+the 48 transform is we've seen already
+that
+
+730
+00:48:31,290 --> 00:48:34,369 
+a glimpse or how it plays a role in
+
+731
+00:48:34,369 --> 00:48:38,760 
+filtering modulation how its properties
+helpless with linear constant
+
+732
+00:48:38,760 --> 00:48:43,200 
+coefficient differential equations et
+cetera
+
+733
+00:48:43,200 --> 00:48:46,230 
+what we will do
+
+734
+00:48:46,230 --> 00:48:49,500 
+beginning with the next lecture is
+develop
+
+735
+00:48:49,500 --> 00:48:53,940 
+a similar set of tools for the
+discrete-time case and there are
+
+736
+00:48:53,940 --> 00:48:58,530 
+some very strong similarities to what
+we've done a continuous-time also some
+
+737
+00:48:58,530 --> 00:49:00,500 
+very important differences
+
+738
+00:49:00,500 --> 00:49:04,030 
+and then after we have the
+continuous-time and discrete-time
+
+739
+00:49:04,030 --> 00:49:06,599 
+Fourier transforms
+
+740
+00:49:06,599 --> 00:49:10,579 
+will then see how the concepts
+
+741
+00:49:10,579 --> 00:49:13,760 
+involved in the properties involved
+leads to
+
+742
+00:49:13,760 --> 00:49:17,440 
+very important powerful notions love
+filtering
+
+743
+00:49:17,440 --> 00:49:20,819 
+modulation sampling and other
+
+744
+00:49:20,819 --> 00:49:22,800 
+signal processing ideas thank you
+

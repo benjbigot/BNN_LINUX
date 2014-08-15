@@ -1,0 +1,3580 @@
+1
+00:00:00,030 --> 00:00:03,480 
+the following content is provided under
+a Creative Commons license
+
+2
+00:00:03,480 --> 00:00:07,120 
+your support will help MIT
+OpenCourseWare continue to offer
+
+3
+00:00:07,120 --> 00:00:10,560 
+high-quality educational resources for
+free
+
+4
+00:00:10,560 --> 00:00:15,020 
+to make a donation or view additional
+materials from 100 to them IT courses
+
+5
+00:00:15,020 --> 00:00:18,100 
+visit MIT OpenCourseWare at 0 CW
+
+6
+00:00:18,100 --> 00:00:20,530 
+that MIT ided you
+
+7
+00:00:20,530 --> 00:00:27,530 
+home
+
+8
+00:00:30,800 --> 00:00:35,570 
+the
+
+9
+00:00:35,570 --> 00:00:38,610 
+in
+
+10
+00:00:38,610 --> 00:00:40,150 
+in
+
+11
+00:00:40,150 --> 00:00:45,010 
+the new
+
+12
+00:00:45,010 --> 00:00:51,280 
+are
+
+13
+00:00:51,280 --> 00:00:55,600 
+for
+
+14
+00:00:55,600 --> 00:00:59,360 
+over the last several lectures we've
+dealt with the representation
+
+15
+00:00:59,360 --> 00:01:02,400 
+of linear time-invariant systems through
+convolution
+
+16
+00:01:02,400 --> 00:01:06,710 
+and just to remind you over basic
+strategy
+
+17
+00:01:06,710 --> 00:01:09,780 
+essentially the idea was to
+
+18
+00:01:09,780 --> 00:01:13,229 
+exploit the notion of when the arity by
+
+19
+00:01:13,229 --> 00:01:16,720 
+decomposing the input into summer basic
+inputs
+
+20
+00:01:16,720 --> 00:01:21,810 
+and then using when the arity to tell us
+that the output can be represented as
+
+21
+00:01:21,810 --> 00:01:25,400 
+the corresponding linear combination of
+the Associated outputs
+
+22
+00:01:25,400 --> 00:01:29,250 
+so if we have a linear system
+
+23
+00:01:29,250 --> 00:01:33,759 
+either continuous-time and discrete-time
+for example with continuous time
+
+24
+00:01:33,759 --> 00:01:37,720 
+if the input is decomposed as a linear
+combination
+
+25
+00:01:37,720 --> 00:01:41,410 
+a basic inputs with each of these basic
+inputs
+
+26
+00:01:41,410 --> 00:01:45,700 
+generating an Associated output and if
+the system is linear
+
+27
+00:01:45,700 --> 00:01:49,200 
+then the output love the system
+
+28
+00:01:49,200 --> 00:01:53,170 
+is the same linear combination love The
+Associated outputs
+
+29
+00:01:53,170 --> 00:01:56,240 
+and the same statement is identical
+
+30
+00:01:56,240 --> 00:02:01,720 
+both for continuous-time in
+discrete-time so
+
+31
+00:02:01,720 --> 00:02:07,720 
+the strategy is to decompose the input
+into these basic inputs
+
+32
+00:02:07,720 --> 00:02:10,819 
+and the imports
+
+33
+00:02:10,819 --> 00:02:14,120 
+were chosen also with some particular
+
+34
+00:02:14,120 --> 00:02:18,850 
+strategy in mind in particular for both
+continuous-time
+
+35
+00:02:18,850 --> 00:02:23,230 
+for discrete-time in this representation
+the
+
+36
+00:02:23,230 --> 00:02:26,340 
+basic inputs used in the decomposition
+
+37
+00:02:26,340 --> 00:02:30,120 
+are chosen first the ball so that
+
+38
+00:02:30,120 --> 00:02:33,670 
+a broad class signals can be represented
+
+39
+00:02:33,670 --> 00:02:37,610 
+interns are these basic inputs and
+second of all
+
+40
+00:02:37,610 --> 00:02:41,160 
+so that the response to these basic
+inputs
+
+41
+00:02:41,160 --> 00:02:46,140 
+is in some sense easy to compute now
+
+42
+00:02:46,140 --> 00:02:50,110 
+in the representation which latest
+
+43
+00:02:50,110 --> 00:02:55,010 
+to convolution the particular choice
+that we made
+
+44
+00:02:55,010 --> 00:02:58,500 
+in the discrete-time case for our basic
+inputs
+
+45
+00:02:58,500 --> 00:03:03,250 
+was a decomposition up the input interns
+
+46
+00:03:03,250 --> 00:03:07,740 
+or delayed impulses and
+
+47
+00:03:07,740 --> 00:03:11,340 
+The Associated outputs that that
+generated
+
+48
+00:03:11,340 --> 00:03:15,120 
+were delayed versions of the impulse
+response
+
+49
+00:03:15,120 --> 00:03:18,880 
+decomposing the input into a linear
+combination of these
+
+50
+00:03:18,880 --> 00:03:22,800 
+the output into the corresponding linear
+combination of these
+
+51
+00:03:22,800 --> 00:03:26,070 
+then led to the convolution some in
+
+52
+00:03:26,070 --> 00:03:29,160 
+the discrete-time case and
+
+53
+00:03:29,160 --> 00:03:32,720 
+in the continuous-time case a similar
+
+54
+00:03:32,720 --> 00:03:37,350 
+kinda decomposition in terms of impulses
+and Associated representation
+
+55
+00:03:37,350 --> 00:03:40,550 
+love the output in terms of the impulse
+response
+
+56
+00:03:40,550 --> 00:03:44,820 
+led to the convolution in ago now
+
+57
+00:03:44,820 --> 00:03:49,140 
+in this lecture and for number the
+succeeding lectures
+
+58
+00:03:49,140 --> 00:03:53,040 
+will want to turn our attention to a
+very different
+
+59
+00:03:53,040 --> 00:03:56,700 
+said the basic building blocks and
+
+60
+00:03:56,700 --> 00:03:59,820 
+in particular the signals there
+
+61
+00:03:59,820 --> 00:04:03,890 
+will be using as the building blocks for
+or more general signals
+
+62
+00:04:03,890 --> 00:04:07,000 
+rather than impulses as we've dealt with
+before
+
+63
+00:04:07,000 --> 00:04:11,440 
+will be in general complex exponentials
+
+64
+00:04:11,440 --> 00:04:14,530 
+so in a general sense
+
+65
+00:04:14,530 --> 00:04:19,989 
+in the continuous-time case and will be
+thinking in terms of a decomposition
+
+66
+00:04:19,989 --> 00:04:23,389 
+afar signals as a linear combination
+I'll
+
+67
+00:04:23,389 --> 00:04:27,440 
+complex exponentials continuous-time
+
+68
+00:04:27,440 --> 00:04:31,130 
+or in the discrete-time case
+
+69
+00:04:31,130 --> 00:04:35,840 
+complex exponentials where sees the case
+complex here
+
+70
+00:04:35,840 --> 00:04:39,270 
+in discrete-time and s2 K's complex here
+
+71
+00:04:39,270 --> 00:04:43,060 
+in continuous-time now
+
+72
+00:04:43,060 --> 00:04:46,960 
+the basic strategy of course requires
+
+73
+00:04:46,960 --> 00:04:51,190 
+dead we choose a settlement puts basic
+building blocks
+
+74
+00:04:51,190 --> 00:04:54,449 
+which have two properties one is that
+
+75
+00:04:54,449 --> 00:04:59,169 
+the system response be straightforward
+to compute were in some sense easy to
+
+76
+00:04:59,169 --> 00:04:59,759 
+compute
+
+77
+00:04:59,759 --> 00:05:03,880 
+and the second is that it be a fairly
+general said a building blocks
+
+78
+00:05:03,880 --> 00:05:09,300 
+so that we can build lots of signals I
+love them
+
+79
+00:05:09,300 --> 00:05:14,310 
+what will find with complex exponentials
+either continuous-time and discrete-time
+
+80
+00:05:14,310 --> 00:05:17,870 
+is that they very nicely have those two
+properties
+
+81
+00:05:17,870 --> 00:05:21,699 
+in particular the notion that the
+
+82
+00:05:21,699 --> 00:05:26,029 
+output over linear time-invariant system
+is easy to compute
+
+83
+00:05:26,029 --> 00:05:30,300 
+is tied to what's referred to as the eye
+can function property
+
+84
+00:05:30,300 --> 00:05:33,379 
+a complex exponentials which will focus
+on
+
+85
+00:05:33,379 --> 00:05:36,779 
+shortly in a little more detail
+
+86
+00:05:36,779 --> 00:05:40,199 
+and second of all the fact that
+
+87
+00:05:40,199 --> 00:05:44,819 
+weekend in fact represent very broad
+classes have signals as linear
+
+88
+00:05:44,819 --> 00:05:45,740 
+combinations
+
+89
+00:05:45,740 --> 00:05:49,699 
+these will be a topic an issue
+
+90
+00:05:49,699 --> 00:05:53,389 
+that will develop in detail over in fact
+are the next
+
+91
+00:05:53,389 --> 00:05:57,840 
+set of lectures this lecture and the
+next set of lectures
+
+92
+00:05:57,840 --> 00:06:00,860 
+now in in doing this although
+
+93
+00:06:00,860 --> 00:06:05,319 
+we could in fact begin with our
+attention focused
+
+94
+00:06:05,319 --> 00:06:10,009 
+on in general complex exponentials
+
+95
+00:06:10,009 --> 00:06:15,120 
+what will choose to do his first focus
+on the case in which
+
+96
+00:06:15,120 --> 00:06:18,759 
+the exponent in the continuous-time
+cases
+
+97
+00:06:18,759 --> 00:06:22,569 
+purely imaginary as i indicate here
+
+98
+00:06:22,569 --> 00:06:25,960 
+and in the discrete-time case where
+
+99
+00:06:25,960 --> 00:06:28,969 
+the magnitude of the complex number Z CK
+
+100
+00:06:28,969 --> 00:06:34,710 
+is equal to 1 so what that corresponds
+to in the continuous-time case
+
+101
+00:06:34,710 --> 00:06:37,719 
+is said building blocks
+
+102
+00:06:37,719 --> 00:06:40,900 
+the form you DJ Omega sed Katie
+
+103
+00:06:40,900 --> 00:06:44,240 
+and in the discrete-time case said a
+building blocks
+
+104
+00:06:44,240 --> 00:06:47,860 
+the for eat a DJ Omega KN
+
+105
+00:06:47,860 --> 00:06:52,689 
+well we'll see is a representation in
+these Terms
+
+106
+00:06:52,689 --> 00:06:56,569 
+leads to what's for two as for EA
+
+107
+00:06:56,569 --> 00:07:00,159 
+analysis and that's what we'll be
+dealing with over the next several
+
+108
+00:07:00,159 --> 00:07:02,860 
+lectures
+
+109
+00:07:02,860 --> 00:07:06,349 
+will then be exploiting this
+representation actually
+
+110
+00:07:06,349 --> 00:07:09,469 
+through most the course and then toward
+
+111
+00:07:09,469 --> 00:07:13,189 
+the end of the course will returned to
+generalizing
+
+112
+00:07:13,189 --> 00:07:17,229 
+the for a representation to the
+discussion over plus transforms the
+
+113
+00:07:17,229 --> 00:07:19,219 
+transforms
+
+114
+00:07:19,219 --> 00:07:22,430 
+so for now we want to restrict ourselves
+to
+
+115
+00:07:22,430 --> 00:07:25,680 
+complex exponentials a particular form
+in
+
+116
+00:07:25,680 --> 00:07:29,169 
+and in fact also initially to
+continuous-time
+
+117
+00:07:29,169 --> 00:07:32,319 
+signals and systems so let's begin
+
+118
+00:07:32,319 --> 00:07:36,150 
+with the continuous-time case the
+complex exponentials that we want to
+
+119
+00:07:36,150 --> 00:07:36,900 
+deal with
+
+120
+00:07:36,900 --> 00:07:41,569 
+in and focus first the ball on what I
+refer to as
+
+121
+00:07:41,569 --> 00:07:46,360 
+the eigenfunction property love this
+particular set a building blocks
+
+122
+00:07:46,360 --> 00:07:49,379 
+we're talking about
+
+123
+00:07:49,379 --> 00:07:53,219 
+basic signals the form either the J
+Omega some Katy
+
+124
+00:07:53,219 --> 00:07:56,770 
+and this statement is there
+
+125
+00:07:56,770 --> 00:08:01,229 
+for a linear time-invariant system the
+response to one of these
+
+126
+00:08:01,229 --> 00:08:04,439 
+is 0 exactly the same form
+
+127
+00:08:04,439 --> 00:08:08,020 
+just simply multiplied by a complex
+
+128
+00:08:08,020 --> 00:08:11,520 
+factor that complex factor depending on
+
+129
+00:08:11,520 --> 00:08:14,620 
+what the frequency Omega k is
+
+130
+00:08:14,620 --> 00:08:20,379 
+now more or less the justification for
+this is the proof follows by
+
+131
+00:08:20,379 --> 00:08:25,699 
+simply looking at the response to a
+complex exponential
+
+132
+00:08:25,699 --> 00:08:28,830 
+using the convolution integral so
+
+133
+00:08:28,830 --> 00:08:31,870 
+if we put a complex exponential
+
+134
+00:08:31,870 --> 00:08:35,310 
+into a linear time-invariant system
+
+135
+00:08:35,310 --> 00:08:38,930 
+with impulse response a gypsy then
+
+136
+00:08:38,930 --> 00:08:42,240 
+we can express the response as i've
+indicated here
+
+137
+00:08:42,240 --> 00:08:46,190 
+we can then recognize that this complex
+exponential
+
+138
+00:08:46,190 --> 00:08:49,730 
+can be factored into two terms and so
+
+139
+00:08:49,730 --> 00:08:54,160 
+we can rewrite this complex exponential
+
+140
+00:08:54,160 --> 00:08:57,930 
+as this product second recognize
+
+141
+00:08:57,930 --> 00:09:01,360 
+that this term can be taken
+
+142
+00:09:01,360 --> 00:09:06,170 
+outside the integral over here because
+of the fact that
+
+143
+00:09:06,170 --> 00:09:09,310 
+it depends only on tea and not on tap
+now
+
+144
+00:09:09,310 --> 00:09:13,560 
+and so what we're left with when we
+tracked this through
+
+145
+00:09:13,560 --> 00:09:18,920 
+is that with a complex exponential input
+we get
+
+146
+00:09:18,920 --> 00:09:22,250 
+an output which is the same complex
+exponential
+
+147
+00:09:22,250 --> 00:09:25,310 
+namely this factor times
+
+148
+00:09:25,310 --> 00:09:29,140 
+this integral and this integral is
+
+149
+00:09:29,140 --> 00:09:32,430 
+what I referred to above as
+
+150
+00:09:32,430 --> 00:09:35,769 
+H all omega-6 K
+
+151
+00:09:35,769 --> 00:09:41,579 
+and so in fact we put in a complex
+exponential
+
+152
+00:09:41,579 --> 00:09:45,390 
+we get out a complex exponential love
+the same frequency
+
+153
+00:09:45,390 --> 00:09:49,380 
+multiplied by a complex constant and
+
+154
+00:09:49,380 --> 00:09:54,569 
+that is what's referred to as the
+eigenfunction property I can function
+
+155
+00:09:54,569 --> 00:09:55,230 
+meaning
+
+156
+00:09:55,230 --> 00:09:59,319 
+that and I can function of a system or
+mathematical expression
+
+157
+00:09:59,319 --> 00:10:02,600 
+is a function which when you put it
+through the system
+
+158
+00:10:02,600 --> 00:10:07,079 
+comes out looking exactly the same
+except for a change in amplitude
+
+159
+00:10:07,079 --> 00:10:11,750 
+that change in amplitude being the eigen
+value so
+
+160
+00:10:11,750 --> 00:10:14,810 
+in fact this function is
+
+161
+00:10:14,810 --> 00:10:17,990 
+the eigenfunction
+
+162
+00:10:17,990 --> 00:10:21,139 
+and this bad you
+
+163
+00:10:21,139 --> 00:10:27,530 
+is the I can bag
+
+164
+00:10:27,530 --> 00:10:30,610 
+okay now it's because if the
+eigenfunction
+
+165
+00:10:30,610 --> 00:10:35,140 
+property that complex exponentials a
+particularly convenient as building
+
+166
+00:10:35,140 --> 00:10:35,700 
+blocks
+
+167
+00:10:35,700 --> 00:10:39,810 
+namely you put it through the system
+they come out with the same form
+
+168
+00:10:39,810 --> 00:10:45,040 
+and simply scale the other part to the
+question related
+
+169
+00:10:45,040 --> 00:10:48,990 
+to the strategy that we've been pursuing
+is
+
+170
+00:10:48,990 --> 00:10:52,580 
+to hope that the signals
+
+171
+00:10:52,580 --> 00:10:57,270 
+can be used as building blocks to
+represent a
+
+172
+00:10:57,270 --> 00:11:00,740 
+very broad classes signals through
+linear combination
+
+173
+00:11:00,740 --> 00:11:05,190 
+and in fact that turns out to be the
+case with complex exponentials
+
+174
+00:11:05,190 --> 00:11:08,570 
+as we worked our way through that
+
+175
+00:11:08,570 --> 00:11:13,390 
+will first consider the case love
+periodic signals
+
+176
+00:11:13,390 --> 00:11:18,450 
+and what that leads to is a
+representation a periodic signals
+
+177
+00:11:18,450 --> 00:11:23,430 
+through what's called the forty a series
+following that
+
+178
+00:11:23,430 --> 00:11:28,550 
+we will turn our attention to non
+periodic or as I refer to it a periodic
+
+179
+00:11:28,550 --> 00:11:29,360 
+signals
+
+180
+00:11:29,360 --> 00:11:33,020 
+and the representation that's developed
+
+181
+00:11:33,020 --> 00:11:37,220 
+interns love linear combinations a
+complex exponentials
+
+182
+00:11:37,220 --> 00:11:41,880 
+is what's referred to as the 48
+transport so
+
+183
+00:11:41,880 --> 00:11:45,560 
+the first thing that we want to deal
+with our periodic signals
+
+184
+00:11:45,560 --> 00:11:50,200 
+and before you series okay so
+
+185
+00:11:50,200 --> 00:11:54,110 
+what we're talking about then is the
+continuous-time
+
+186
+00:11:54,110 --> 00:11:57,660 
+for a series and
+
+187
+00:11:57,660 --> 00:12:01,110 
+the for a series is a representation for
+
+188
+00:12:01,110 --> 00:12:05,810 
+periodic continuous-time signals we have
+
+189
+00:12:05,810 --> 00:12:09,420 
+a signal then which is periodic and
+
+190
+00:12:09,420 --> 00:12:12,910 
+were choosing t0 to denote the period
+
+191
+00:12:12,910 --> 00:12:16,020 
+so its t0
+
+192
+00:12:16,020 --> 00:12:19,240 
+then corresponds to the period
+
+193
+00:12:19,240 --> 00:12:22,990 
+our periodic signal Omega 0
+
+194
+00:12:22,990 --> 00:12:26,250 
+is to party over t0 as
+
+195
+00:12:26,250 --> 00:12:29,410 
+you recall from our discussion love
+
+196
+00:12:29,410 --> 00:12:34,400 
+periodic signals and sinusoids before
+and that's two pirates 0
+
+197
+00:12:34,400 --> 00:12:40,230 
+so this is the fundamental frequency now
+
+198
+00:12:40,230 --> 00:12:43,960 
+let's examine first the ball complex
+exponentials
+
+199
+00:12:43,960 --> 00:12:47,330 
+and recognize first the ball that
+
+200
+00:12:47,330 --> 00:12:50,450 
+there is a complex exponential that has
+
+201
+00:12:50,450 --> 00:12:53,570 
+exactly the same period and
+
+202
+00:12:53,570 --> 00:12:57,350 
+fundamental frequency as are more
+general periodic signal
+
+203
+00:12:57,350 --> 00:13:02,260 
+namely the complex exponential you to
+the jail maker 0t
+
+204
+00:13:02,260 --> 00:13:07,270 
+where Omega 0 is to Paul II over t0
+
+205
+00:13:07,270 --> 00:13:13,170 
+or equivalent Lee t0 is to pie over
+Omega 0 now
+
+206
+00:13:13,170 --> 00:13:16,459 
+that's the complex exponential which has
+
+207
+00:13:16,459 --> 00:13:20,209 
+t0 as the fundamental period but
+
+208
+00:13:20,209 --> 00:13:24,600 
+think there are harmonically related
+complex exponentials
+
+209
+00:13:24,600 --> 00:13:29,070 
+that also have t0 as a period
+
+210
+00:13:29,070 --> 00:13:32,070 
+although in fact their fundamental
+period shorter
+
+211
+00:13:32,070 --> 00:13:36,240 
+so we can also look at complex
+exponentials
+
+212
+00:13:36,240 --> 00:13:39,280 
+before either the JK Omega 0t
+
+213
+00:13:39,280 --> 00:13:42,430 
+these likewise are periodic
+
+214
+00:13:42,430 --> 00:13:46,330 
+with the period love t0
+
+215
+00:13:46,330 --> 00:13:49,370 
+although in fact their fundamental
+period
+
+216
+00:13:49,370 --> 00:13:52,910 
+is t0 divided by K or equivalently
+
+217
+00:13:52,910 --> 00:13:56,360 
+to par i divided by their fundamental
+frequency
+
+218
+00:13:56,360 --> 00:14:00,280 
+k Omega 0 so as K
+
+219
+00:14:00,280 --> 00:14:03,890 
+a richer varies these correspond to
+
+220
+00:14:03,890 --> 00:14:07,600 
+harmonically related complex
+exponentials
+
+221
+00:14:07,600 --> 00:14:11,060 
+now with the forty a series
+
+222
+00:14:11,060 --> 00:14:16,230 
+says and will justify this kinda bit by
+bit is the discussion goes I'm
+
+223
+00:14:16,230 --> 00:14:20,560 
+what the four-day series says that in
+fact what for EA
+
+224
+00:14:20,560 --> 00:14:23,860 
+said which was essentially the
+
+225
+00:14:23,860 --> 00:14:27,040 
+is brilliant insight is that if I have
+
+226
+00:14:27,040 --> 00:14:32,690 
+a very general periodic signal I can
+represented as a linear combination of
+
+227
+00:14:32,690 --> 00:14:34,260 
+these harmonically related
+
+228
+00:14:34,260 --> 00:14:37,500 
+complex exponentials so
+
+229
+00:14:37,500 --> 00:14:41,950 
+that representation is what i've
+indicated here
+
+230
+00:14:41,950 --> 00:14:45,220 
+and this summation is
+
+231
+00:14:45,220 --> 00:14:48,770 
+what will be referred to as
+
+232
+00:14:48,770 --> 00:14:52,490 
+the for EA
+
+233
+00:14:52,490 --> 00:14:56,009 
+series
+
+234
+00:14:56,009 --> 00:14:59,899 
+and as we proceed with the discussion
+there are two issues
+
+235
+00:14:59,899 --> 00:15:04,100 
+couldn't that will develop one is
+assuming
+
+236
+00:15:04,100 --> 00:15:08,220 
+that our periodic signal can be
+represented this way
+
+237
+00:15:08,220 --> 00:15:12,490 
+how do we determine the for a series
+coefficients
+
+238
+00:15:12,490 --> 00:15:15,990 
+as they refer to a suitcase that's one
+question
+
+239
+00:15:15,990 --> 00:15:19,220 
+and the second question will be
+
+240
+00:15:19,220 --> 00:15:23,009 
+how broad a class of signals in fact can
+be represented that
+
+241
+00:15:23,009 --> 00:15:26,689 
+this way and bats another question their
+
+242
+00:15:26,689 --> 00:15:30,120 
+will deal with separately
+
+243
+00:15:30,120 --> 00:15:34,010 
+now just focusing on this representation
+
+244
+00:15:34,010 --> 00:15:37,380 
+for a minute this representation
+
+245
+00:15:37,380 --> 00:15:41,690 
+love the four EA series which
+
+246
+00:15:41,690 --> 00:15:44,870 
+I repeated again
+
+247
+00:15:44,870 --> 00:15:48,550 
+here
+
+248
+00:15:48,550 --> 00:15:52,020 
+is what's referred to as the complex
+
+249
+00:15:52,020 --> 00:15:55,460 
+exponential form love for EA series
+
+250
+00:15:55,460 --> 00:15:58,530 
+and it's important to note incidently
+
+251
+00:15:58,530 --> 00:16:04,400 
+day this summation involves frequencies
+k Omega 0
+
+252
+00:16:04,400 --> 00:16:07,750 
+their are both positive and negative
+
+253
+00:16:07,750 --> 00:16:10,920 
+in other words this index K runs over
+
+254
+00:16:10,920 --> 00:16:15,040 
+limits that include both negative values
+and positive ads
+
+255
+00:16:15,040 --> 00:16:19,710 
+now that complex exponential form is one
+
+256
+00:16:19,710 --> 00:16:22,980 
+representation for before you a series
+
+257
+00:16:22,980 --> 00:16:26,430 
+and in fact it's the one that we will be
+principally
+
+258
+00:16:26,430 --> 00:16:31,250 
+relying on in this course there is
+another representation that
+
+259
+00:16:31,250 --> 00:16:34,440 
+perhaps you come across previously
+
+260
+00:16:34,440 --> 00:16:38,110 
+and that in a variety of other contacts
+is
+
+261
+00:16:38,110 --> 00:16:41,860 
+is typically used which is called the
+trigonometric form
+
+262
+00:16:41,860 --> 00:16:46,400 
+the forty a series without really
+tracking through the algebra
+
+263
+00:16:46,400 --> 00:16:50,270 
+essentially we can get to the
+trigonometric for
+
+264
+00:16:50,270 --> 00:16:54,000 
+from the complex exponential form by
+
+265
+00:16:54,000 --> 00:16:58,490 
+recognizing that if we express the
+complex coefficients
+
+266
+00:16:58,490 --> 00:17:02,950 
+in polar for or in rectangular for
+
+267
+00:17:02,950 --> 00:17:06,949 
+and expand the complex exponential
+
+268
+00:17:06,949 --> 00:17:11,319 
+term out in terms of cosine plus J sign
+
+269
+00:17:11,319 --> 00:17:14,829 
+using just simply Oilers relation then
+
+270
+00:17:14,829 --> 00:17:18,510 
+in we will end up with the
+representation
+
+271
+00:17:18,510 --> 00:17:22,550 
+for the periodic signal
+
+272
+00:17:22,550 --> 00:17:26,970 
+were a re expression love the for a
+series
+
+273
+00:17:26,970 --> 00:17:32,530 
+expression that we had previously either
+in the form that I indicate here
+
+274
+00:17:32,530 --> 00:17:36,540 
+we're now the periodic signal is
+expressed
+
+275
+00:17:36,540 --> 00:17:40,500 
+in terms of a summation love cosines
+
+276
+00:17:40,500 --> 00:17:43,720 
+with appropriate ample to in phase
+
+277
+00:17:43,720 --> 00:17:48,280 
+or another acquittal or triggered a
+metric for
+
+278
+00:17:48,280 --> 00:17:51,420 
+involves rearranging this
+
+279
+00:17:51,420 --> 00:17:54,460 
+in terms or a combination
+
+280
+00:17:54,460 --> 00:17:58,470 
+of cosines and signs now
+
+281
+00:17:58,470 --> 00:18:03,400 
+in this representation the frequencies
+of the sinusoids
+
+282
+00:18:03,400 --> 00:18:07,790 
+very only over positive frequencies
+
+283
+00:18:07,790 --> 00:18:11,060 
+and typically one thinks
+
+284
+00:18:11,060 --> 00:18:15,260 
+of periodic signals is having positive
+frequencies associated with them
+
+285
+00:18:15,260 --> 00:18:18,610 
+however let's look back
+
+286
+00:18:18,610 --> 00:18:22,740 
+at the complex exponential form
+
+287
+00:18:22,740 --> 00:18:26,070 
+for the forty a series at the top of the
+board
+
+288
+00:18:26,070 --> 00:18:31,310 
+and in that representation when we use
+this representation
+
+289
+00:18:31,310 --> 00:18:34,990 
+will find it convenient to refer to both
+
+290
+00:18:34,990 --> 00:18:39,290 
+positive frequencies and negative
+frequencies so
+
+291
+00:18:39,290 --> 00:18:43,610 
+the representation that we will most
+typically be using is the complex
+
+292
+00:18:43,610 --> 00:18:44,980 
+exponential form
+
+293
+00:18:44,980 --> 00:18:51,510 
+and in that form what will find as we
+think it decomposing a periodic signal
+
+294
+00:18:51,510 --> 00:18:54,750 
+in to its compliments
+
+295
+00:18:54,750 --> 00:18:58,770 
+at different frequencies it will involve
+both positive frequencies
+
+296
+00:18:58,770 --> 00:19:02,799 
+negative frequencies
+
+297
+00:19:02,799 --> 00:19:06,320 
+okay now we have the
+
+298
+00:19:06,320 --> 00:19:10,940 
+for EA series representation as i've
+indicated here
+
+299
+00:19:10,940 --> 00:19:14,230 
+again so far I sidestepped the issue as
+
+300
+00:19:14,230 --> 00:19:19,220 
+to whether this in fact represents all
+the signals that we'd like to represent
+
+301
+00:19:19,220 --> 00:19:22,299 
+let's first address the issue
+
+302
+00:19:22,299 --> 00:19:25,500 
+love how we determine these coefficients
+
+303
+00:19:25,500 --> 00:19:29,720 
+Acer K assuming that in fact this
+representation is Val
+
+304
+00:19:29,720 --> 00:19:33,820 
+and again all kinda move through the
+algebra
+
+305
+00:19:33,820 --> 00:19:38,490 
+fairly quickly its a the outbreak steps
+the ones that
+
+306
+00:19:38,490 --> 00:19:41,780 
+you can pursue more leisurely just the
+kinda
+
+307
+00:19:41,780 --> 00:19:45,059 
+verify them in step through them but
+
+308
+00:19:45,059 --> 00:19:49,490 
+essentially the algebra develops I did
+the recognition
+
+309
+00:19:49,490 --> 00:19:54,679 
+that if we integrate a complex
+exponential
+
+310
+00:19:54,679 --> 00:19:58,150 
+over one period t0
+
+311
+00:19:58,150 --> 00:20:01,970 
+and I mean by this notation that this is
+an integral
+
+312
+00:20:01,970 --> 00:20:04,990 
+over a period where I don't particularly
+care
+
+313
+00:20:04,990 --> 00:20:09,049 
+where the period starts and where the
+period stops in other words
+
+314
+00:20:09,049 --> 00:20:13,070 
+exactly what period I picked that this
+integral
+
+315
+00:20:13,070 --> 00:20:16,840 
+is equal to t0 when M is equal to 0
+
+316
+00:20:16,840 --> 00:20:20,730 
+and it's equal to 0 if am is not equal
+to 0
+
+317
+00:20:20,730 --> 00:20:25,539 
+that follow simply from the fact that if
+we substitute in
+
+318
+00:20:25,539 --> 00:20:30,630 
+for using Oilers relations so that we
+have the integral to cosign
+
+319
+00:20:30,630 --> 00:20:33,650 
+was J times assign if M
+
+320
+00:20:33,650 --> 00:20:37,299 
+is not equal to 0 than
+
+321
+00:20:37,299 --> 00:20:40,940 
+of these integrals over a period are
+
+322
+00:20:40,940 --> 00:20:45,960 
+0 the integral over sign it a periodic
+have a sinus or a cosigner sign
+
+323
+00:20:45,960 --> 00:20:50,220 
+over an integral number periods is zero
+whereas
+
+324
+00:20:50,220 --> 00:20:54,799 
+if M is equal to 0 this in a crawl
+
+325
+00:20:54,799 --> 00:20:58,220 
+will be equal to 20 the integral the
+cosine
+
+326
+00:20:58,220 --> 00:21:01,950 
+and the integral on the sign is equal to
+0
+
+327
+00:21:01,950 --> 00:21:05,220 
+okay well the next step
+
+328
+00:21:05,220 --> 00:21:09,230 
+in developing the expression for the
+coefficients a Sat K
+
+329
+00:21:09,230 --> 00:21:12,590 
+is to refer back to
+
+330
+00:21:12,590 --> 00:21:16,380 
+before a series expression which was
+that except he
+
+331
+00:21:16,380 --> 00:21:21,120 
+is equal to the sum with basic K either
+the JK Omega 0t
+
+332
+00:21:21,120 --> 00:21:25,539 
+if we multiply both sides that by either
+minus
+
+333
+00:21:25,539 --> 00:21:29,090 
+jaan Omega 0t and
+
+334
+00:21:29,090 --> 00:21:36,090 
+integrate that over a period
+
+335
+00:21:36,840 --> 00:21:40,640 
+both sides of the equation integrated
+over a period
+
+336
+00:21:40,640 --> 00:21:44,750 
+so these two equations are equal and
+then
+
+337
+00:21:44,750 --> 00:21:48,650 
+in essence interchange the summation and
+the integration
+
+338
+00:21:48,650 --> 00:21:53,860 
+so that this pardon the expression cons
+outside the psalm
+
+339
+00:21:53,860 --> 00:21:58,580 
+and then we combine these two complex
+exponentials together
+
+340
+00:21:58,580 --> 00:22:01,660 
+where we come out is
+
+341
+00:22:01,660 --> 00:22:04,680 
+the expression that i've indicated here
+in
+
+342
+00:22:04,680 --> 00:22:09,100 
+and then essentially what happens at
+this point algebraically
+
+343
+00:22:09,100 --> 00:22:12,840 
+is that we use the result that we just
+developed
+
+344
+00:22:12,840 --> 00:22:16,780 
+to evaluate this cynical so
+
+345
+00:22:16,780 --> 00:22:21,170 
+multiplying both sides the forty a
+series in and doing the integration
+
+346
+00:22:21,170 --> 00:22:24,860 
+leads us after the appropriate
+manipulation
+
+347
+00:22:24,860 --> 00:22:28,080 
+to the expression that
+
+348
+00:22:28,080 --> 00:22:31,920 
+I have up here and
+
+349
+00:22:31,920 --> 00:22:35,020 
+this is equal to
+
+350
+00:22:35,020 --> 00:22:39,330 
+this integral is equal to t0
+
+351
+00:22:39,330 --> 00:22:42,540 
+if K is equal to an
+
+352
+00:22:42,540 --> 00:22:45,850 
+corresponding 20 up here and 80
+
+353
+00:22:45,850 --> 00:22:50,270 
+otherwise which is what we have
+demonstrated or are you previously
+
+354
+00:22:50,270 --> 00:22:53,290 
+and the upshot of all that then is that
+
+355
+00:22:53,290 --> 00:22:56,920 
+the right hand side if this expression
+disappears
+
+356
+00:22:56,920 --> 00:23:00,630 
+except for the term when K is equal to n
+
+357
+00:23:00,630 --> 00:23:04,540 
+and so finally we have what I indicate
+here
+
+358
+00:23:04,540 --> 00:23:09,880 
+taking t0 and moving it over to the
+other side of the equation
+
+359
+00:23:09,880 --> 00:23:13,120 
+we then that then tells us
+
+360
+00:23:13,120 --> 00:23:17,560 
+how we determine the forty a series
+coefficients
+
+361
+00:23:17,560 --> 00:23:21,180 
+a7 Auris K so
+
+362
+00:23:21,180 --> 00:23:24,450 
+that in effect and is the
+
+363
+00:23:24,450 --> 00:23:28,510 
+what we refer to as the analysis
+equation the equation that begins with
+
+364
+00:23:28,510 --> 00:23:29,530 
+excessive to me
+
+365
+00:23:29,530 --> 00:23:33,160 
+and tells us how to get the for a series
+coefficients
+
+366
+00:23:33,160 --> 00:23:36,400 
+what are referred to as
+
+367
+00:23:36,400 --> 00:23:39,480 
+the 48 series synthesis equation
+
+368
+00:23:39,480 --> 00:23:42,480 
+is the equation that tells us
+
+369
+00:23:42,480 --> 00:23:45,780 
+how to build exit see outta love
+
+370
+00:23:45,780 --> 00:23:50,450 
+these complex exponentials so we have
+the synthesis equation
+
+371
+00:23:50,450 --> 00:23:53,810 
+which is the one that we started from we
+have
+
+372
+00:23:53,810 --> 00:23:57,460 
+the analysis equation which is the
+equation
+
+373
+00:23:57,460 --> 00:24:01,860 
+that we just developed
+
+374
+00:24:01,860 --> 00:24:04,770 
+okay so we in effect have
+
+375
+00:24:04,770 --> 00:24:09,880 
+going through the issue love assuming
+there for a series representation
+
+376
+00:24:09,880 --> 00:24:13,040 
+is in fact valid how we get
+
+377
+00:24:13,040 --> 00:24:16,100 
+the coefficients we want to address
+
+378
+00:24:16,100 --> 00:24:19,990 
+somewhat the question love how broad a
+classic signals that we're talking
+
+379
+00:24:19,990 --> 00:24:23,490 
+are we talking about and what's in fact
+amazing
+
+380
+00:24:23,490 --> 00:24:26,630 
+and was for EA's amazing insight
+
+381
+00:24:26,630 --> 00:24:29,780 
+was that it's a very broad class say but
+
+382
+00:24:29,780 --> 00:24:33,300 
+let's first look at just some examples
+
+383
+00:24:33,300 --> 00:24:39,320 
+in which we take a signal assume that it
+has the Fourier series representation
+
+384
+00:24:39,320 --> 00:24:44,740 
+and see what the for a series
+coefficients look like so
+
+385
+00:24:44,740 --> 00:24:49,290 
+will begin with what I refer to as
+
+386
+00:24:49,290 --> 00:24:54,900 
+an antisymmetric periodic square wave
+periodic of course because we're talking
+
+387
+00:24:54,900 --> 00:24:56,810 
+about periodic signals
+
+388
+00:24:56,810 --> 00:24:59,920 
+square wave referring to its shape and
+
+389
+00:24:59,920 --> 00:25:04,700 
+antisymmetric referring to the fact that
+it is an odd
+
+390
+00:25:04,700 --> 00:25:08,630 
+time function in other words it is
+antisymmetric
+
+391
+00:25:08,630 --> 00:25:12,610 
+about the origin now
+
+392
+00:25:12,610 --> 00:25:15,610 
+the expression for the for a series
+coefficients
+
+393
+00:25:15,610 --> 00:25:19,880 
+tells us that we determine a sieve K
+
+394
+00:25:19,880 --> 00:25:24,920 
+by taking one over 20 times the integral
+over a period
+
+395
+00:25:24,920 --> 00:25:28,380 
+affects 50 either minus JK Omega 0t
+
+396
+00:25:28,380 --> 00:25:32,740 
+DT the most convenient thing in this
+case
+
+397
+00:25:32,740 --> 00:25:36,650 
+is to choose a period which
+
+398
+00:25:36,650 --> 00:25:41,170 
+let's say goes from minus 20 over to the
+plus 20 over to
+
+399
+00:25:41,170 --> 00:25:44,790 
+so here except he is -1 here
+
+400
+00:25:44,790 --> 00:25:47,820 
+expertise plus one and so
+
+401
+00:25:47,820 --> 00:25:51,760 
+I've expressed the for a series called
+efficiency as
+
+402
+00:25:51,760 --> 00:25:55,450 
+this integral that's from minus 20 over
+220
+
+403
+00:25:55,450 --> 00:25:59,410 
+and then and it said that is the
+
+404
+00:25:59,410 --> 00:26:03,380 
+positive part of the cycle and so we
+have
+
+405
+00:26:03,380 --> 00:26:07,720 
+these two integrals now I don't want to
+
+406
+00:26:07,720 --> 00:26:11,240 
+tracked through the details both the
+algebra again I
+
+407
+00:26:11,240 --> 00:26:14,920 
+I guess I've decided that that's much
+more fun for you do on your own
+
+408
+00:26:14,920 --> 00:26:18,440 
+but the way it comes out when you go
+through it
+
+409
+00:26:18,440 --> 00:26:22,460 
+is the expression that I finally
+indicate after
+
+410
+00:26:22,460 --> 00:26:26,100 
+suggesting that there are a few more
+steps to follow
+
+411
+00:26:26,100 --> 00:26:29,160 
+and what develops is that
+
+412
+00:26:29,160 --> 00:26:32,810 
+those two integrals together for K
+
+413
+00:26:32,810 --> 00:26:36,610 
+not equal to 0 come out to this
+expression
+
+414
+00:26:36,610 --> 00:26:42,440 
+and that expression is not valid for k
+equal to 0
+
+415
+00:26:42,440 --> 00:26:46,100 
+per kg equal to 0 we can go back to
+
+416
+00:26:46,100 --> 00:26:50,280 
+the basic expression for the forty a
+series
+
+417
+00:26:50,280 --> 00:26:54,110 
+which is one over t0 the integral over a
+period
+
+418
+00:26:54,110 --> 00:26:58,120 
+exit see in the minus JK Omega 0 /td TD
+
+419
+00:26:58,120 --> 00:27:01,310 
+for cake 10 of course this term
+
+420
+00:27:01,310 --> 00:27:04,860 
+just simply becomes one and
+
+421
+00:27:04,860 --> 00:27:10,580 
+so the zeroth coefficient is one over 20
+times the integral
+
+422
+00:27:10,580 --> 00:27:14,330 
+X 50 over a period now
+
+423
+00:27:14,330 --> 00:27:18,020 
+going back to the original function
+
+424
+00:27:18,020 --> 00:27:21,550 
+that we have what we're saying then is
+that
+
+425
+00:27:21,550 --> 00:27:27,100 
+0th coefficient is one over 20 times the
+integral over
+
+426
+00:27:27,100 --> 00:27:31,610 
+one period which is in effect the
+average value
+
+427
+00:27:31,610 --> 00:27:36,130 
+and it straight forward to verify the
+for this case that average value
+
+428
+00:27:36,130 --> 00:27:40,050 
+is equal to 0 okay
+
+429
+00:27:40,050 --> 00:27:43,320 
+now let's look at
+
+430
+00:27:43,320 --> 00:27:46,940 
+these for a series coefficients on a bar
+graph
+
+431
+00:27:46,940 --> 00:27:51,050 
+and i've indicated that here the
+
+432
+00:27:51,050 --> 00:27:55,450 
+expression for the for a series
+coefficients we just developed and
+
+433
+00:27:55,450 --> 00:27:58,460 
+a involves its
+
+434
+00:27:58,460 --> 00:28:02,900 
+0 for cake 0 it's a factor this form
+
+435
+00:28:02,900 --> 00:28:06,850 
+for canine equal to 0 plotted on a bar
+graph
+
+436
+00:28:06,850 --> 00:28:10,030 
+then we see values like this 0
+
+437
+00:28:10,030 --> 00:28:13,500 
+at cake 0 and and associated values
+
+438
+00:28:13,500 --> 00:28:16,550 
+and their number things to focus on
+
+439
+00:28:16,550 --> 00:28:19,840 
+when you look at this
+
+440
+00:28:19,840 --> 00:28:25,320 
+one is the fact that the forty a series
+coefficients for this example
+
+441
+00:28:25,320 --> 00:28:29,830 
+are surely imaginary
+
+442
+00:28:29,830 --> 00:28:34,320 
+a second is that the Fourier series
+coefficients for this example
+
+443
+00:28:34,320 --> 00:28:39,170 
+are odd sequence in other words if you
+look at this sequence which you see
+
+444
+00:28:39,170 --> 00:28:43,210 
+are these values for negative K
+
+445
+00:28:43,210 --> 00:28:46,310 
+flipped over so there their imaginary
+
+446
+00:28:46,310 --> 00:28:49,610 
+and odd and
+
+447
+00:28:49,610 --> 00:28:52,670 
+what that results in when
+
+448
+00:28:52,670 --> 00:28:55,680 
+you look at the
+
+449
+00:28:55,680 --> 00:28:59,820 
+the triggered a metric form the 4e a
+series
+
+450
+00:28:59,820 --> 00:29:05,220 
+is that in fact those conditions if you
+put the terms altogether
+
+451
+00:29:05,220 --> 00:29:09,580 
+lead you to a trigger a metric
+representation
+
+452
+00:29:09,580 --> 00:29:13,010 
+which involves only sign terms
+
+453
+00:29:13,010 --> 00:29:16,980 
+in other words no co-signed turns let me
+just draw your attention to the fact
+
+454
+00:29:16,980 --> 00:29:18,470 
+that
+
+455
+00:29:18,470 --> 00:29:21,910 
+since a suitcase the acer case or
+imaginary
+
+456
+00:29:21,910 --> 00:29:25,210 
+this jay takes care that fact so that
+these coefficients
+
+457
+00:29:25,210 --> 00:29:28,910 
+are in fact real so what this says
+
+458
+00:29:28,910 --> 00:29:33,130 
+is that for the antisymmetric square
+wave the
+
+459
+00:29:33,130 --> 00:29:37,130 
+it in effect the forty a series is a
+sign series
+
+460
+00:29:37,130 --> 00:29:40,900 
+the antisymmetric square wave is an odd
+function
+
+461
+00:29:40,900 --> 00:29:45,420 
+sinusoids are not are odd functions and
+so this is all kinda reasonable that
+
+462
+00:29:45,420 --> 00:29:46,610 
+we're building
+
+463
+00:29:46,610 --> 00:29:50,760 
+odd function ido odd functions
+
+464
+00:29:50,760 --> 00:29:54,820 
+as an additional aside which a I won't
+
+465
+00:29:54,820 --> 00:29:57,860 
+exploit or refer to any further here
+
+466
+00:29:57,860 --> 00:30:01,580 
+but just draw your attention to is that
+another aspect
+
+467
+00:30:01,580 --> 00:30:06,350 
+love this periodic square wave the
+particular one that we chose
+
+468
+00:30:06,350 --> 00:30:09,550 
+is dead it is what's referred to as a
+
+469
+00:30:09,550 --> 00:30:13,120 
+on harmonic function in other words
+
+470
+00:30:13,120 --> 00:30:16,980 
+for even values if K
+
+471
+00:30:16,980 --> 00:30:20,990 
+before a series coefficients 30 their
+only 90
+
+472
+00:30:20,990 --> 00:30:25,050 
+for iPad use K
+
+473
+00:30:25,050 --> 00:30:29,100 
+okay now let's look at another example
+another example
+
+474
+00:30:29,100 --> 00:30:33,840 
+is the symmetric periodic square wave
+
+475
+00:30:33,840 --> 00:30:37,320 
+and this is in fact example
+
+476
+00:30:37,320 --> 00:30:41,570 
+4.5 worked out in more detail in the tax
+then
+
+477
+00:30:41,570 --> 00:30:45,980 
+I won't bother to work work this out in
+detail here
+
+478
+00:30:45,980 --> 00:30:49,280 
+except to draw your attention to several
+
+479
+00:30:49,280 --> 00:30:54,310 
+points here is the symmetric periodic
+square wave
+
+480
+00:30:54,310 --> 00:30:57,670 
+and what I mean by symmetric
+
+481
+00:30:57,670 --> 00:31:00,730 
+is that it's an even time function
+
+482
+00:31:00,730 --> 00:31:05,490 
+now just kinda extrapolating your
+intuition
+
+483
+00:31:05,490 --> 00:31:08,510 
+what we you should expect is that if if
+it's a
+
+484
+00:31:08,510 --> 00:31:12,100 
+only even time function it should be
+built up
+
+485
+00:31:12,100 --> 00:31:15,670 
+or buildable if it's built up a little
+%ah to only
+
+486
+00:31:15,670 --> 00:31:18,990 
+even sinusoids and in fact
+
+487
+00:31:18,990 --> 00:31:22,360 
+that's the case so if we look at
+
+488
+00:31:22,360 --> 00:31:25,710 
+the four-day series coefficients for
+this
+
+489
+00:31:25,710 --> 00:31:29,000 
+the zeroth coefficient again as the
+average value
+
+490
+00:31:29,000 --> 00:31:32,610 
+which in this case is a half here I've
+plotted
+
+491
+00:31:32,610 --> 00:31:36,190 
+hi times the for a series coefficients
+so
+
+492
+00:31:36,190 --> 00:31:39,590 
+0 thank you as pie over to
+
+493
+00:31:39,590 --> 00:31:42,690 
+the coefficients are now and even
+sequence
+
+494
+00:31:42,690 --> 00:31:45,960 
+and in in other words symmetric
+
+495
+00:31:45,960 --> 00:31:49,840 
+about cake 0 and the consequences that
+
+496
+00:31:49,840 --> 00:31:53,090 
+is that when you take these coefficients
+
+497
+00:31:53,090 --> 00:31:58,740 
+and put together the equivalent
+triggered a metric form
+
+498
+00:31:58,740 --> 00:32:01,800 
+the triggered a metric for involves
+
+499
+00:32:01,800 --> 00:32:05,280 
+only cosines and no
+
+500
+00:32:05,280 --> 00:32:09,340 
+sign turns now
+
+501
+00:32:09,340 --> 00:32:13,400 
+you'll see this in and other examples
+not that will do in the lecture but
+
+502
+00:32:13,400 --> 00:32:17,230 
+examples in the text in the video manual
+if in fact
+
+503
+00:32:17,230 --> 00:32:20,520 
+the square way was neither symmetric or
+antisymmetric
+
+504
+00:32:20,520 --> 00:32:23,680 
+then the trigonometric form would
+involve both
+
+505
+00:32:23,680 --> 00:32:27,580 
+sines and cosines and
+
+506
+00:32:27,580 --> 00:32:30,640 
+that is of course the more general case
+
+507
+00:32:30,640 --> 00:32:34,179 
+furthermore in the two examples are
+shown here
+
+508
+00:32:34,179 --> 00:32:37,290 
+we we in both cases
+
+509
+00:32:37,290 --> 00:32:40,310 
+the signal is odd harmonic
+
+510
+00:32:40,310 --> 00:32:43,870 
+in other words for even bad news K
+
+511
+00:32:43,870 --> 00:32:48,470 
+the coefficients are equal to 0 although
+I won't justify that here that's a
+
+512
+00:32:48,470 --> 00:32:50,950 
+consequence that the fact that
+
+513
+00:32:50,950 --> 00:32:54,570 
+this symmetry is exactly about half a
+period
+
+514
+00:32:54,570 --> 00:32:57,960 
+and if you made the on time with a
+square wave
+
+515
+00:32:57,960 --> 00:33:02,250 
+different in relation to the of time
+then that property would also
+
+516
+00:33:02,250 --> 00:33:06,389 
+disappear
+
+517
+00:33:06,389 --> 00:33:07,670 
+now
+
+518
+00:33:07,670 --> 00:33:10,640 
+what's kind amazing actually in
+
+519
+00:33:10,640 --> 00:33:14,680 
+is that if we take a square wave like
+
+520
+00:33:14,680 --> 00:33:19,030 
+I have here or as I had in the
+antisymmetric case
+
+521
+00:33:19,030 --> 00:33:22,760 
+the implication is that I can bill
+
+522
+00:33:22,760 --> 00:33:25,990 
+that square wave by adding up
+
+523
+00:33:25,990 --> 00:33:30,700 
+on of signs were cosines and
+
+524
+00:33:30,700 --> 00:33:34,630 
+it really seems kinda amazing because
+the square wave after all
+
+525
+00:33:34,630 --> 00:33:37,750 
+is a very discontinuous functions
+
+526
+00:33:37,750 --> 00:33:42,240 
+sinusoids are very continuous and it
+seems puzzling that in fact
+
+527
+00:33:42,240 --> 00:33:46,679 
+you can do that well let's look in a
+little bit of detail
+
+528
+00:33:46,679 --> 00:33:49,980 
+how the sinusoidal
+
+529
+00:33:49,980 --> 00:33:53,240 
+turns and up to
+
+530
+00:33:53,240 --> 00:33:56,940 
+build a square wave and to do that
+
+531
+00:33:56,940 --> 00:34:00,660 
+let's first define what I refer to
+
+532
+00:34:00,660 --> 00:34:04,110 
+as a partial song so
+
+533
+00:34:04,110 --> 00:34:07,330 
+here we have the expression
+
+534
+00:34:07,330 --> 00:34:10,570 
+which is the synthesis
+
+535
+00:34:10,570 --> 00:34:15,010 
+equation telling us how accept T could
+be represented
+
+536
+00:34:15,010 --> 00:34:18,919 
+as complex exponentials if it can be and
+
+537
+00:34:18,919 --> 00:34:22,530 
+let's consider just a finite number of
+turns in this song
+
+538
+00:34:22,530 --> 00:34:26,850 
+and so X 7ft of course as n goes to
+infinity
+
+539
+00:34:26,850 --> 00:34:31,240 
+approaches the infinite sum that we're
+talking about and although we could do
+
+540
+00:34:31,240 --> 00:34:35,889 
+this more generally let's not let's
+focus on the symmetric square wave case
+
+541
+00:34:35,889 --> 00:34:40,510 
+where because it the symmetry of these
+coefficients namely that a suitcase
+
+542
+00:34:40,510 --> 00:34:41,950 
+equal to minus
+
+543
+00:34:41,950 --> 00:34:45,429 
+is equal to a serb minus K we can
+rewrite
+
+544
+00:34:45,429 --> 00:34:50,030 
+these turns as cosine turns and so this
+partial some
+
+545
+00:34:50,030 --> 00:34:53,870 
+can be express the way arm expressing it
+here
+
+546
+00:34:53,870 --> 00:34:57,170 
+well let's look at
+
+547
+00:34:57,170 --> 00:35:01,510 
+a few the Stearns on the graph I have
+
+548
+00:35:01,510 --> 00:35:04,700 
+first the ball exit tea which is our
+
+549
+00:35:04,700 --> 00:35:07,790 
+original square wave
+
+550
+00:35:07,790 --> 00:35:11,590 
+the turn that I indicate here
+
+551
+00:35:11,590 --> 00:35:14,920 
+is the factor over half which
+
+552
+00:35:14,920 --> 00:35:19,520 
+is this term
+
+553
+00:35:19,520 --> 00:35:23,330 
+with any calls one that would correspond
+to anyone co-signed term
+
+554
+00:35:23,330 --> 00:35:26,900 
+to that and so the sole those two would
+be yes
+
+555
+00:35:26,900 --> 00:35:31,349 
+which looks a little close to the square
+wave but
+
+556
+00:35:31,349 --> 00:35:35,920 
+certainly not very close to it at all
+and in fact
+
+557
+00:35:35,920 --> 00:35:39,130 
+in its somewhat hard to imagine without
+
+558
+00:35:39,130 --> 00:35:44,300 
+seeing the terms build-up how in fact by
+adding more and more turns we can
+
+559
+00:35:44,300 --> 00:35:45,750 
+generate something
+
+560
+00:35:45,750 --> 00:35:49,849 
+that is essentially flat except at the
+discontinuities
+
+561
+00:35:49,849 --> 00:35:53,619 
+so let's look at this example and what
+I'd like to show
+
+562
+00:35:53,619 --> 00:35:58,130 
+is this example but now as we add many
+
+563
+00:35:58,130 --> 00:36:01,450 
+more turns to it and let's see in fact
+
+564
+00:36:01,450 --> 00:36:04,510 
+how these individual turns add up
+
+565
+00:36:04,510 --> 00:36:07,660 
+to build up the square way so
+
+566
+00:36:07,660 --> 00:36:11,180 
+this is the square wave that we want to
+build up
+
+567
+00:36:11,180 --> 00:36:14,880 
+through the forty a series is this some
+of sinusoids
+
+568
+00:36:14,880 --> 00:36:20,460 
+and the term for cake 0 will be a
+constant which represents the DC value
+
+569
+00:36:20,460 --> 00:36:21,250 
+with this
+
+570
+00:36:21,250 --> 00:36:25,760 
+and so in the partial sum as we develop
+it
+
+571
+00:36:25,760 --> 00:36:30,150 
+the first thing they will show is just
+the term for cable 0
+
+572
+00:36:30,150 --> 00:36:35,170 
+now for cables one we would add to that
+
+573
+00:36:35,170 --> 00:36:38,540 
+one sinusoidal term and
+
+574
+00:36:38,540 --> 00:36:43,200 
+so some love the term for cake was one
+cake was 0
+
+575
+00:36:43,200 --> 00:36:48,940 
+is represented here now
+
+576
+00:36:48,940 --> 00:36:53,140 
+when we go to K calls to because of the
+fact that this is an odd harmonic
+
+577
+00:36:53,140 --> 00:36:53,980 
+function
+
+578
+00:36:53,980 --> 00:36:57,550 
+in fact the term for cake was it was too
+
+579
+00:36:57,550 --> 00:37:01,660 
+will be will have zero amplitude and so
+this won't change
+
+580
+00:37:01,660 --> 00:37:06,180 
+here we show the
+
+581
+00:37:06,180 --> 00:37:09,770 
+for a series would cake was to and
+there's no change
+
+582
+00:37:09,770 --> 00:37:13,820 
+and then we will go to cable 23
+
+583
+00:37:13,820 --> 00:37:14,580 
+and
+
+584
+00:37:14,580 --> 00:37:19,070 
+and we will be adding then one
+additional sinusoidal term here's cake
+
+585
+00:37:19,070 --> 00:37:19,910 
+was three
+
+586
+00:37:19,910 --> 00:37:24,390 
+when we go to cable 24 again there won't
+be any change
+
+587
+00:37:24,390 --> 00:37:27,940 
+but their will be another term that's
+
+588
+00:37:27,940 --> 00:37:32,500 
+added at cake was five here and cable 6
+
+589
+00:37:32,500 --> 00:37:37,480 
+again because it's odd harmonic no
+change and finally cable 7
+
+590
+00:37:37,480 --> 00:37:43,380 
+is shown here okay and we can begin to
+see that
+
+591
+00:37:43,380 --> 00:37:47,680 
+this starts to look somewhat like the
+square wave but
+
+592
+00:37:47,680 --> 00:37:51,470 
+now to really emphasize how this builds
+up let's
+
+593
+00:37:51,470 --> 00:37:56,110 
+more rapidly and Ed many more terms and
+in fact
+
+594
+00:37:56,110 --> 00:38:00,250 
+increase the number of turns up to about
+a hundred recognizing
+
+595
+00:38:00,250 --> 00:38:03,830 
+that the shape will only change on the
+inclusion
+
+596
+00:38:03,830 --> 00:38:08,370 
+all the odd number terms not the
+even-numbered turns because it's an odd
+
+597
+00:38:08,370 --> 00:38:11,900 
+harmonic function so now we're
+
+598
+00:38:11,900 --> 00:38:15,720 
+increasing and we're building up toward
+
+599
+00:38:15,720 --> 00:38:19,150 
+k equal to 100 200 turns an
+
+600
+00:38:19,150 --> 00:38:22,510 
+notice that it is the higher
+
+601
+00:38:22,510 --> 00:38:25,840 
+order turns dead tend to build up
+
+602
+00:38:25,840 --> 00:38:30,010 
+the discontinuity corresponding to the
+notion
+
+603
+00:38:30,010 --> 00:38:34,620 
+there'd the discontinuities or sharp
+edges in a signal
+
+604
+00:38:34,620 --> 00:38:38,280 
+in fact are represented through the
+higher
+
+605
+00:38:38,280 --> 00:38:42,770 
+frequencies in the forty a series and
+here we have
+
+606
+00:38:42,770 --> 00:38:46,050 
+a not too unreasonable approximation
+
+607
+00:38:46,050 --> 00:38:50,710 
+to the original square wave there is the
+artifact of the ripples at the
+
+608
+00:38:50,710 --> 00:38:52,750 
+discontinuity and in fact
+
+609
+00:38:52,750 --> 00:38:56,490 
+though that rippling behavior at the
+discontinuities
+
+610
+00:38:56,490 --> 00:39:00,180 
+is referred to as the Gibbs phenomenon
+
+611
+00:39:00,180 --> 00:39:04,710 
+and it's an inherent part love the forty
+a series representation at
+
+612
+00:39:04,710 --> 00:39:05,840 
+discontinuities
+
+613
+00:39:05,840 --> 00:39:08,960 
+now to emphasize this
+
+614
+00:39:08,960 --> 00:39:12,340 
+let's decrease the number of turns back
+down
+
+615
+00:39:12,340 --> 00:39:16,200 
+and we will carry this down
+
+616
+00:39:16,200 --> 00:39:19,290 
+to k equal to 1 again
+
+617
+00:39:19,290 --> 00:39:23,920 
+to emphasizes how the sinusoids are
+building up
+
+618
+00:39:23,920 --> 00:39:28,080 
+the square wave here we are back at Cape
+cools
+
+619
+00:39:28,080 --> 00:39:31,420 
+1 and then finally we
+
+620
+00:39:31,420 --> 00:39:34,480 
+will and back in the sinusoids that we
+took out
+
+621
+00:39:34,480 --> 00:39:37,940 
+and let's build this back up to 100
+turns
+
+622
+00:39:37,940 --> 00:39:41,180 
+showing the approximation dead
+
+623
+00:39:41,180 --> 00:39:48,180 
+we generated with a hundred turns to the
+square way
+
+624
+00:40:00,590 --> 00:40:03,690 
+okay so so what you saw is that
+
+625
+00:40:03,690 --> 00:40:06,720 
+in fact we got awfully close to a square
+wave
+
+626
+00:40:06,720 --> 00:40:10,180 
+and the other thing think that was kind
+of interesting about it is that went
+
+627
+00:40:10,180 --> 00:40:10,830 
+along
+
+628
+00:40:10,830 --> 00:40:15,720 
+was the fact that with the low
+frequencies
+
+629
+00:40:15,720 --> 00:40:19,150 
+what we were tending to bill was the
+general behavior
+
+630
+00:40:19,150 --> 00:40:22,280 
+and as the higher frequencies came in
+
+631
+00:40:22,280 --> 00:40:25,370 
+that tended to contribute the
+discontinuities
+
+632
+00:40:25,370 --> 00:40:29,090 
+work contribute to the discontinuity and
+
+633
+00:40:29,090 --> 00:40:32,400 
+in fact something their will
+
+634
+00:40:32,400 --> 00:40:35,730 
+standout more and more as we go through
+our discussion
+
+635
+00:40:35,730 --> 00:40:39,510 
+love for a series of 48 transforms is
+
+636
+00:40:39,510 --> 00:40:43,430 
+that general statement that its the
+low-frequency
+
+637
+00:40:43,430 --> 00:40:47,330 
+terms bat represent
+
+638
+00:40:47,330 --> 00:40:50,710 
+the broad time behavior and
+
+639
+00:40:50,710 --> 00:40:54,270 
+its the high-frequency terms that are
+used to build up
+
+640
+00:40:54,270 --> 00:40:59,760 
+the sharp transitions in the time domain
+
+641
+00:40:59,760 --> 00:41:02,839 
+okay now we need to get a little more
+precise
+
+642
+00:41:02,839 --> 00:41:06,040 
+about the question of how in fact
+
+643
+00:41:06,040 --> 00:41:09,260 
+the 48 series
+
+644
+00:41:09,260 --> 00:41:12,470 
+or when before you a series represents
+
+645
+00:41:12,470 --> 00:41:16,000 
+the functions that we're talking about
+and in what sense they represent them
+
+646
+00:41:16,000 --> 00:41:19,369 
+in and so if we look
+
+647
+00:41:19,369 --> 00:41:25,360 
+again at the synthesis
+
+648
+00:41:25,360 --> 00:41:28,360 
+ok wage in were really wanna ask
+
+649
+00:41:28,360 --> 00:41:31,620 
+is if we add up enough for these terms
+
+650
+00:41:31,620 --> 00:41:34,840 
+in what sense does this some represent
+
+651
+00:41:34,840 --> 00:41:38,320 
+this time function well
+
+652
+00:41:38,320 --> 00:41:42,310 
+let's again use the notion love are
+partial some
+
+653
+00:41:42,310 --> 00:41:46,320 
+so we have the partial song down here
+
+654
+00:41:46,320 --> 00:41:50,490 
+in and we can think love the difference
+between
+
+655
+00:41:50,490 --> 00:41:54,120 
+this partial some and the
+
+656
+00:41:54,120 --> 00:41:57,300 
+original time function as
+
+657
+00:41:57,300 --> 00:42:01,780 
+the ever and I've defined the error here
+
+658
+00:42:01,780 --> 00:42:06,040 
+and what we would like to know is does
+this error
+
+659
+00:42:06,040 --> 00:42:09,790 
+decrease as we aired more and more turns
+
+660
+00:42:09,790 --> 00:42:14,400 
+and in fact in what sense if the air
+does decrease in what sense
+
+661
+00:42:14,400 --> 00:42:18,700 
+there's a decrease now in detail
+
+662
+00:42:18,700 --> 00:42:22,630 
+this is a fairly complicated an
+elaborate topic I don't mean to make
+
+663
+00:42:22,630 --> 00:42:23,940 
+that sound frightening
+
+664
+00:42:23,940 --> 00:42:29,060 
+its mainly a statement that I don't want
+to explore it and a lot of detail
+
+665
+00:42:29,060 --> 00:42:33,000 
+but it relates to what is referred to
+
+666
+00:42:33,000 --> 00:42:36,230 
+as the issue a convergence the forty a
+series
+
+667
+00:42:36,230 --> 00:42:40,120 
+and the convergence the 48 series
+
+668
+00:42:40,120 --> 00:42:44,120 
+the the bottom line on at the kinda and
+statement
+
+669
+00:42:44,120 --> 00:42:48,560 
+can be made in several ways one
+statement
+
+670
+00:42:48,560 --> 00:42:53,050 
+related to convergence the for a series
+is the following if
+
+671
+00:42:53,050 --> 00:42:56,680 
+I have a time function which
+
+672
+00:42:56,680 --> 00:43:00,580 
+is what is referred to as square
+integrable namely
+
+673
+00:43:00,580 --> 00:43:05,040 
+its integral over a period is finite
+then
+
+674
+00:43:05,040 --> 00:43:08,400 
+what you can show kinda amazingly
+
+675
+00:43:08,400 --> 00:43:12,040 
+is that the energy E in
+
+676
+00:43:12,040 --> 00:43:15,500 
+that error in other words the energy in
+the difference between the original
+
+677
+00:43:15,500 --> 00:43:16,520 
+function
+
+678
+00:43:16,520 --> 00:43:20,330 
+and the partial some the energy and that
+
+679
+00:43:20,330 --> 00:43:25,420 
+goes to zero as n goes to infinity
+
+680
+00:43:25,420 --> 00:43:31,089 
+a somewhat tighter condition is a
+condition referred to as it the racially
+
+681
+00:43:31,089 --> 00:43:34,319 
+conditions which says that
+
+682
+00:43:34,319 --> 00:43:37,640 
+if the time function
+
+683
+00:43:37,640 --> 00:43:43,599 
+is absolutely integral not square
+honorable but absolutely integral
+
+684
+00:43:43,599 --> 00:43:48,940 
+and I've kinda hedge the issue by just
+simply referred to accept T as being
+
+685
+00:43:48,940 --> 00:43:49,969 
+well behaved
+
+686
+00:43:49,969 --> 00:43:55,529 
+then the statement is dead the error in
+fact goes to zero
+
+687
+00:43:55,529 --> 00:43:59,239 
+as and increases except at the
+discontinuities
+
+688
+00:43:59,239 --> 00:44:03,210 
+and what well-behaved means in that
+statement
+
+689
+00:44:03,210 --> 00:44:07,089 
+is that as discussed in the book there
+are a finite number
+
+690
+00:44:07,089 --> 00:44:12,180 
+maxima and minima in any period and a
+finite number finite discontinuities
+
+691
+00:44:12,180 --> 00:44:13,640 
+which is essentially
+
+692
+00:44:13,640 --> 00:44:18,170 
+always the case so under square in Accra
+bility
+
+693
+00:44:18,170 --> 00:44:22,839 
+what we have is the statement not that
+the partial sum goes to the right value
+
+694
+00:44:22,839 --> 00:44:23,769 
+at every point
+
+695
+00:44:23,769 --> 00:44:27,599 
+but that the energy in the air goes to
+zero
+
+696
+00:44:27,599 --> 00:44:32,700 
+under the jewish way conditions it says
+that in fact the signal goes to the
+
+697
+00:44:32,700 --> 00:44:33,759 
+right back to you
+
+698
+00:44:33,759 --> 00:44:37,749 
+at every time instant except
+
+699
+00:44:37,749 --> 00:44:41,210 
+at the discontinuities so
+
+700
+00:44:41,210 --> 00:44:46,800 
+going back to the square wave
+
+701
+00:44:46,800 --> 00:44:50,770 
+the square wave satisfies either one of
+those conditions and so
+
+702
+00:44:50,770 --> 00:44:55,180 
+what the consequences is that with the
+square wave
+
+703
+00:44:55,180 --> 00:44:58,800 
+if we looked at the error then in fact
+
+704
+00:44:58,800 --> 00:45:01,880 
+what we would find is that the energy
+
+705
+00:45:01,880 --> 00:45:05,150 
+in the error would go to zero as we at
+
+706
+00:45:05,150 --> 00:45:08,680 
+more and more turns in the partial some
+and in fact
+
+707
+00:45:08,680 --> 00:45:13,350 
+if says the square wave also satisfies
+the dish les conditions
+
+708
+00:45:13,350 --> 00:45:18,040 
+the actual value with the air the
+difference between
+
+709
+00:45:18,040 --> 00:45:21,670 
+the partial some and the true value will
+will
+
+710
+00:45:21,670 --> 00:45:25,450 
+actually go to zero that difference will
+go to zero
+
+711
+00:45:25,450 --> 00:45:29,050 
+except at the discontinuities and
+
+712
+00:45:29,050 --> 00:45:32,470 
+that in fact is kinda evident as
+
+713
+00:45:32,470 --> 00:45:35,940 
+we watch the function build-up
+
+714
+00:45:35,940 --> 00:45:39,390 
+by adding up these terms and so in fact
+
+715
+00:45:39,390 --> 00:45:43,060 
+let's go back and see again
+
+716
+00:45:43,060 --> 00:45:46,350 
+the development the partial sons
+
+717
+00:45:46,350 --> 00:45:50,750 
+in relation to the original time
+function let's observe
+
+718
+00:45:50,750 --> 00:45:54,990 
+this time again basically what we saw
+before which is that it builds up
+
+719
+00:45:54,990 --> 00:46:00,600 
+to the right answer and furthermore what
+will plot this time also as a function
+
+720
+00:46:00,600 --> 00:46:01,340 
+of time
+
+721
+00:46:01,340 --> 00:46:06,190 
+is the energy in the air and what we'll
+see is that the energy in the air
+
+722
+00:46:06,190 --> 00:46:09,570 
+will be tending toward zero as the
+number
+
+723
+00:46:09,570 --> 00:46:12,730 
+turns increases so
+
+724
+00:46:12,730 --> 00:46:15,910 
+once again we have the square wave and
+
+725
+00:46:15,910 --> 00:46:19,990 
+we want to again show the buildup of the
+
+726
+00:46:19,990 --> 00:46:23,230 
+forty a series this time showing also
+
+727
+00:46:23,230 --> 00:46:27,320 
+how the energy in the air decreases as
+we had more and more turns
+
+728
+00:46:27,320 --> 00:46:30,570 
+well once again will begin
+
+729
+00:46:30,570 --> 00:46:34,140 
+with cake was 0 corresponding to the
+constant term
+
+730
+00:46:34,140 --> 00:46:37,250 
+and was shown on the bottom trace is
+
+731
+00:46:37,250 --> 00:46:40,700 
+the energy in the air between those two
+and
+
+732
+00:46:40,700 --> 00:46:44,130 
+will then and the term for cables 1
+
+733
+00:46:44,130 --> 00:46:49,070 
+to the DC term and will see that the
+energy will decrease
+
+734
+00:46:49,070 --> 00:46:53,660 
+when we do that here we have then the
+summer
+
+735
+00:46:53,660 --> 00:46:56,790 
+cake 10 cables 1 now
+
+736
+00:46:56,790 --> 00:47:00,550 
+with cables to the energy won't decrease
+
+737
+00:47:00,550 --> 00:47:07,329 
+any further because it's an odd harmonic
+function
+
+738
+00:47:07,329 --> 00:47:12,510 
+that's what we've just added in when we
+add in the term for cables 3
+
+739
+00:47:12,510 --> 00:47:15,700 
+again will see the energy in the air
+decrease
+
+740
+00:47:15,700 --> 00:47:22,460 
+as reflected in the bottom curve
+
+741
+00:47:22,460 --> 00:47:26,460 
+so there we are at cables 3 when
+
+742
+00:47:26,460 --> 00:47:31,410 
+we go to cable 24 there again is no
+change in the air
+
+743
+00:47:31,410 --> 00:47:38,410 
+at cables 5 again the air decreases
+
+744
+00:47:39,880 --> 00:47:43,540 
+k equal to 6% know there will be no
+change again
+
+745
+00:47:43,540 --> 00:47:47,300 
+an 8k course 7 the energy decreases
+
+746
+00:47:47,300 --> 00:47:51,470 
+and now let's show the how the air
+decreases by building up the number
+
+747
+00:47:51,470 --> 00:47:56,440 
+turns much more rapidly already the air
+has gotten somewhat small on the scale
+
+748
+00:47:56,440 --> 00:47:58,990 
+in which were showing it so let's expand
+out
+
+749
+00:47:58,990 --> 00:48:02,130 
+the ever scale the vertical axis
+
+750
+00:48:02,130 --> 00:48:05,810 
+displaying the energy in the error so
+that we could watch
+
+751
+00:48:05,810 --> 00:48:08,980 
+how the energy decreases as
+
+752
+00:48:08,980 --> 00:48:12,550 
+we had more and more terms so here we
+have
+
+753
+00:48:12,550 --> 00:48:15,700 
+the vertical scale expanded and
+
+754
+00:48:15,700 --> 00:48:18,720 
+now what we'll do is increase
+
+755
+00:48:18,720 --> 00:48:23,250 
+the number of turns in the forty a
+series and watch the energy in the air
+
+756
+00:48:23,250 --> 00:48:24,450 
+at decreasing
+
+757
+00:48:24,450 --> 00:48:27,730 
+always decreasing of course on the
+inclusion
+
+758
+00:48:27,730 --> 00:48:31,580 
+love the odd number turns and
+
+759
+00:48:31,580 --> 00:48:35,310 
+not on the inclusion of the
+even-numbered turns because the fact
+
+760
+00:48:35,310 --> 00:48:39,450 
+that it's an odd harmonic function now
+the energy in the air
+
+761
+00:48:39,450 --> 00:48:43,100 
+asymptotically will approach 0 although
+
+762
+00:48:43,100 --> 00:48:48,230 
+point by point the forty a series will
+never be equal to the square wave
+
+763
+00:48:48,230 --> 00:48:52,520 
+it will at every instant of time
+
+764
+00:48:52,520 --> 00:48:56,560 
+except at the discontinuities where
+there will always be
+
+765
+00:48:56,560 --> 00:49:00,010 
+some ripple corresponding to
+
+766
+00:49:00,010 --> 00:49:04,870 
+what's referred to as the Gibbs
+phenomenon
+
+767
+00:49:04,870 --> 00:49:08,410 
+okay well so what we've seen in is
+
+768
+00:49:08,410 --> 00:49:12,620 
+a and a quick look at the Fourier series
+
+769
+00:49:12,620 --> 00:49:15,940 
+representation love periodic signals
+
+770
+00:49:15,940 --> 00:49:20,100 
+we more broadly
+
+771
+00:49:20,100 --> 00:49:23,670 
+wanna have a more general representation
+
+772
+00:49:23,670 --> 00:49:29,540 
+love oath signals in terms of complex
+exponentials and so our next step
+
+773
+00:49:29,540 --> 00:49:33,370 
+will be to move toward a representation
+
+774
+00:49:33,370 --> 00:49:36,600 
+I'll not periodic or a periodic signals
+
+775
+00:49:36,600 --> 00:49:40,660 
+now the details if this I leave for the
+next lecture
+
+776
+00:49:40,660 --> 00:49:43,800 
+the only thought that I want introduced
+at this point
+
+777
+00:49:43,800 --> 00:49:46,890 
+is the basic strategy you which
+
+778
+00:49:46,890 --> 00:49:51,040 
+is somewhat amazing and kinda
+interesting to reflect on
+
+779
+00:49:51,040 --> 00:49:54,310 
+in the interim the basic strategy
+
+780
+00:49:54,310 --> 00:49:57,840 
+with in a periodic signal is
+
+781
+00:49:57,840 --> 00:50:01,520 
+to think love representing
+
+782
+00:50:01,520 --> 00:50:07,350 
+this a periodic signal as a linear
+combination of complex exponentials
+
+783
+00:50:07,350 --> 00:50:11,380 
+by this simple trick all
+
+784
+00:50:11,380 --> 00:50:14,690 
+periodically replicating this signal
+
+785
+00:50:14,690 --> 00:50:17,770 
+generating a periodic signal
+
+786
+00:50:17,770 --> 00:50:21,020 
+using a Fourier series representation
+
+787
+00:50:21,020 --> 00:50:24,640 
+for that periodic signal and then
+
+788
+00:50:24,640 --> 00:50:28,000 
+simply letting the period go to infinity
+
+789
+00:50:28,000 --> 00:50:32,960 
+as the period goes to infinity that
+periodic signal becomes the original
+
+790
+00:50:32,960 --> 00:50:36,860 
+a periodic one that we have before and a
+40 a series
+
+791
+00:50:36,860 --> 00:50:43,860 
+representation then becomes what we
+refer to as the Fourier transform so
+
+792
+00:50:44,040 --> 00:50:47,900 
+that's just a quick look at kind of the
+basic idea
+
+793
+00:50:47,900 --> 00:50:52,130 
+and approach that will take in the next
+lecture will develop this
+
+794
+00:50:52,130 --> 00:50:56,500 
+a little more carefully more fully
+moving from the 40 a series which we've
+
+795
+00:50:56,500 --> 00:50:58,360 
+used for periodic signals
+
+796
+00:50:58,360 --> 00:51:01,560 
+to develop the for EA transform
+
+797
+00:51:01,560 --> 00:51:04,760 
+which will then be representation for a
+periodic see
+
+798
+00:51:04,760 --> 00:51:05,580 
+thank you
+

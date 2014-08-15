@@ -1,0 +1,3252 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+kandungan berikut adalah disediakan di bawah lesen Creative Commons
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+sokongan anda akan membantu MIT OpenCourseWare terus tawaran
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+sumber-sumber pendidikan yang berkualiti tinggi secara percuma
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+untuk membuat sumbangan atau melihat bahan-bahan tambahan dari beratus-ratus daripada mereka IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+kursus
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+melawat MIT OpenCourseWare pada 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU Horan
+MIT bahawa EDU Horan
+
+00:00:28,000 --> 00:00:29,000
+the
+yang
+
+00:00:29,000 --> 00:00:31,000
+
+
+
+00:00:31,000 --> 00:00:33,000
+the
+yang
+
+00:00:33,000 --> 00:00:38,000
+the in
+dalam
+
+00:00:38,000 --> 00:00:40,000
+in
+
+
+00:00:40,000 --> 00:00:44,000
+the
+yang
+
+00:00:44,000 --> 00:00:47,000
+are in
+berada dalam
+
+00:00:47,000 --> 00:00:54,000
+for in discussing the sampling theorem
+dalam membincangkan teorem pensampelan
+
+00:00:57,000 --> 00:01:00,000
+we saw date for a ban limited signal which is sampled
+kita melihat tarikh untuk isyarat terhad larangan yang disampel
+
+00:01:00,000 --> 00:01:05,000
+at a frequency that that is at least twice the highest frequency
+pada frekuensi yang yang sekurang-kurangnya dua kali kekerapan tertinggi
+
+00:01:05,000 --> 00:01:08,000
+we can implement exact reconstruction
+kita boleh melaksanakan pembinaan semula tepat
+
+00:01:08,000 --> 00:01:13,000
+of the original signal by low-pass filtering
+isyarat asal oleh penapisan laluan rendah
+
+00:01:13,000 --> 00:01:18,000
+an impulse train whose areas are identical to the sample values
+kereta api gerak hati yang kawasan adalah sama dengan nilai-nilai sampel
+
+00:01:18,000 --> 00:01:21,000
+well essentially this low pass filtering
+baik pada dasarnya ini penapisan laluan rendah
+
+00:01:21,000 --> 00:01:26,000
+operation provides for us and interpolation
+operasi menyediakan untuk kita dan interpolasi
+
+00:01:26,000 --> 00:01:30,000
+in between the sample values in other words the output to the low-pass filter
+di antara nilai-nilai sampel dalam erti kata lain output kepada penapis laluan rendah
+
+00:01:30,000 --> 00:01:31,000
+in fact
+sebenarnya
+
+00:01:31,000 --> 00:01:34,000
+is a continuous curve which
+keluk yang berterusan yang
+
+00:01:34,000 --> 00:01:38,000
+fits between a sample values some continuous function
+sesuai antara nilai-nilai sampel beberapa fungsi yang berterusan
+
+00:01:38,000 --> 00:01:44,000
+now I'm sure that many have you are familiar with other kinds of
+sekarang saya yakin bahawa ramai yang telah anda biasa dengan jenis lain
+
+00:01:44,000 --> 00:01:46,000
+interpolation that we could potentially provide
+interpolasi yang kita berpotensi menyediakan
+
+00:01:46,000 --> 00:01:50,000
+in between sample values and in fact in today's lecture
+di antara nilai-nilai sampel dan sebenarnya dalam syarahan hari ini
+
+00:01:50,000 --> 00:01:54,000
+why I would like to do is first the ball
+mengapa saya ingin lakukan adalah pertama bola
+
+00:01:54,000 --> 00:01:58,000
+develop the interpretation
+membangunkan tafsiran
+
+00:01:58,000 --> 00:02:02,000
+all the reconstruction as an interpolation process
+semua pembinaan semula sebagai proses interpolasi
+
+00:02:02,000 --> 00:02:05,000
+and then also see how this
+dan kemudian juga melihat bagaimana ini
+
+00:02:05,000 --> 00:02:08,000
+exact interpolation using a low-pass filter
+interpolasi tepat menggunakan penapis laluan rendah
+
+00:02:08,000 --> 00:02:11,000
+relates to other kinds of interpolation
+berkaitan dengan jenis lain interpolasi
+
+00:02:11,000 --> 00:02:15,000
+such as linear interpolation that you may already be familiar with
+seperti interpolasi linear yang anda mungkin biasa dengan
+
+00:02:15,000 --> 00:02:19,000
+well to begin let's again review
+baik untuk memulakan mari kita sekali lagi mengkaji semula
+
+00:02:19,000 --> 00:02:23,000
+what the overall system is for exact reconstruction
+apa yang sistem keseluruhan adalah untuk pembinaan semula tepat
+
+00:02:23,000 --> 00:02:27,000
+sampling and reconstruction and so let me remind you that
+pensampelan dan pembinaan semula dan jadi biarlah saya mengingatkan anda bahawa
+
+00:02:27,000 --> 00:02:31,000
+the overall system for sampling and D sampling a reconstruction is as i
+sistem keseluruhan bagi pensampelan dan D pensampelan pembinaan semula adalah seperti i
+
+00:02:31,000 --> 00:02:33,000
+indicate here
+menunjukkan di sini
+
+00:02:33,000 --> 00:02:36,000
+the sampling process consists love
+proses pensampelan terdiri cinta
+
+00:02:36,000 --> 00:02:41,000
+multiplying by an impulse train and then the reconstruction process
+mendarab dengan kereta api gerak hati dan kemudian proses pembinaan semula
+
+00:02:41,000 --> 00:02:44,000
+corresponds the processing that impulse train with
+sepadan pemprosesan yang gerak hati kereta api dengan
+
+00:02:44,000 --> 00:02:48,000
+a low-pass filter so if the
+penapis laluan rendah jadi jika
+
+00:02:48,000 --> 00:02:51,000
+spectrum of the original signal
+spektrum isyarat asal
+
+00:02:51,000 --> 00:02:55,000
+is what I indicate in this diagram
+adalah apa yang saya nyatakan dalam rajah ini
+
+00:02:55,000 --> 00:02:58,000
+then after sampling with an impulse train
+kemudian selepas pensampelan dengan kereta api gerak hati
+
+00:02:58,000 --> 00:03:02,000
+that spectrum is replicated and
+spektrum yang direplikasi dan
+
+00:03:02,000 --> 00:03:06,000
+this replicated spectrum for reconstruction
+spektrum ini dikembangkan kepada pembinaan semula
+
+00:03:06,000 --> 00:03:10,000
+is then processed through a low-pass filter
+kemudiannya diproses melalui penapis laluan rendah
+
+00:03:10,000 --> 00:03:13,000
+and so in fact if this frequency response
+dan sebagainya sebenarnya jika sambutan frekuensi ini
+
+00:03:13,000 --> 00:03:18,000
+is an idea low-pass filter as i indicated on the diagram below
+adalah satu idea penapis laluan rendah sebagai i ditunjukkan pada rajah di bawah
+
+00:03:18,000 --> 00:03:22,000
+then multiplying the
+kemudian mendarabkan
+
+00:03:22,000 --> 00:03:26,000
+spectrum of the sample signal by this extracts 4s
+spektrum isyarat sampel dengan ini ekstrak 4s
+
+00:03:26,000 --> 00:03:29,000
+just the portion all
+hanya bahagian semua
+
+00:03:29,000 --> 00:03:33,000
+the spectrum centered around the origin
+spektrum yang berpusat di sekitar asal-
+
+00:03:33,000 --> 00:03:36,000
+and what we're left with then is the
+dan apa yang kita ditinggalkan dengan maka adalah
+
+00:03:36,000 --> 00:03:39,000
+spectrum finally of the reconstructed signal
+spektrum akhirnya isyarat yang dibina semula
+
+00:03:39,000 --> 00:03:43,000
+which for the case of an idea low-pass filter
+yang bagi kes idea penapis laluan rendah
+
+00:03:43,000 --> 00:03:47,000
+is exactly equal to the spectrum of the original signal
+betul-betul sama dengan spektrum isyarat asal
+
+00:03:47,000 --> 00:03:50,000
+now that is the
+sekarang adalah
+
+00:03:50,000 --> 00:03:54,000
+frequency domain picture
+gambar domain frekuensi
+
+00:03:54,000 --> 00:03:58,000
+all the sampling and reconstruction let's also look at
+semua pensampelan dan pembinaan semula biar kita lihat di
+
+00:03:58,000 --> 00:04:02,000
+basically the same process but let's examine it now
+pada dasarnya proses yang sama tetapi kita kaji sekarang
+
+00:04:02,000 --> 00:04:06,000
+in the time domain well in the time domain
+dalam domain masa dan dalam domain masa
+
+00:04:06,000 --> 00:04:10,000
+what we have is are original signal
+apa yang kita ada adalah adalah isyarat asal
+
+00:04:10,000 --> 00:04:14,000
+multiply it by an impulse train and
+kalikan dengan kereta api gerak hati dan
+
+00:04:14,000 --> 00:04:17,000
+this then is the sampled
+ini maka adalah disampel
+
+00:04:17,000 --> 00:04:22,000
+signal or the impulse train whose areas are equal to the sample values
+isyarat atau kereta api gerak hati yang kawasan adalah sama dengan nilai-nilai sampel
+
+00:04:22,000 --> 00:04:27,000
+and because it the fact that this is an impulse train
+dan kerana ia hakikat bahawa ini adalah kereta api gerak hati
+
+00:04:27,000 --> 00:04:30,000
+in fact we can take this term
+sebenarnya kita boleh mengambil istilah ini
+
+00:04:30,000 --> 00:04:33,000
+inside the summation
+di dalam ringkasan
+
+00:04:33,000 --> 00:04:37,000
+and of course what counts about except Ian this expression
+dan sudah tentu apa yang diambil kira mengenai kecuali Ian ungkapan ini
+
+00:04:37,000 --> 00:04:41,000
+is just as bad use at the sampling instants
+adalah penggunaan hanya sebagai lapuk di Segera pensampelan
+
+00:04:41,000 --> 00:04:45,000
+which are displaced in time by capital T and so
+yang dipindahkan dalam masa dengan modal T dan sebagainya
+
+00:04:45,000 --> 00:04:49,000
+to what we can to quietly right is the
+dengan apa yang kita boleh untuk senyap-senyap betul adalah
+
+00:04:49,000 --> 00:04:53,000
+expression for the impulse train samples or
+ungkapan bagi sampel kereta api gerak hati atau
+
+00:04:53,000 --> 00:04:57,000
+imposed strain of samples as i've indicated here
+tekanan yang dikenakan sampel seperti yang telah saya dinyatakan di sini
+
+00:04:57,000 --> 00:05:03,000
+simply an imposed strain whose areas are the sample bad
+hanya satu bebanan yang dikenakan yang kawasan adalah sampel buruk
+
+00:05:03,000 --> 00:05:07,000
+now in the reconstruction we process
+kini dalam pembinaan semula kami memproses
+
+00:05:07,000 --> 00:05:12,000
+that impulse train with a low-pass filter that's the basic notion of the
+bahawa kereta api gerak hati dengan penapis laluan rendah itulah tanggapan asas yang
+
+00:05:12,000 --> 00:05:13,000
+reconstruction
+pembinaan semula
+
+00:05:13,000 --> 00:05:18,000
+and so in the time domain be reconstructed signal
+dan sebagainya dalam domain masa menjadi isyarat dibina semula
+
+00:05:18,000 --> 00:05:23,000
+is related to the imposed strain of samples
+adalah berkaitan dengan tekanan yang dikenakan sampel
+
+00:05:23,000 --> 00:05:28,000
+through a convolution with the filter impulse response
+melalui kekusutan dengan sambutan penapis gerak hati
+
+00:05:28,000 --> 00:05:31,000
+and carrying out this convolution since
+dan menjalankan kekusutan ini sejak
+
+00:05:31,000 --> 00:05:36,000
+this is just the train of pulses in effect what happens in this convolution
+ini hanya kereta api denyutan di kesan apa yang berlaku dalam kekusutan ini
+
+00:05:36,000 --> 00:05:40,000
+is dead this impulse response gets
+mati tindak balas impuls ini mendapat
+
+00:05:40,000 --> 00:05:44,000
+reproduced at each of the locations 0
+diterbitkan semula di setiap lokasi 0
+
+00:05:44,000 --> 00:05:48,000
+the impulses index a PFD with the appropriate area
+indeks impuls itu suatu PFD dengan kawasan yang sesuai
+
+00:05:48,000 --> 00:05:53,000
+and finally then in the time domain the reconstructed signal
+dan akhirnya maka dalam domain masa isyarat yang dibina semula
+
+00:05:53,000 --> 00:05:57,000
+is simply a linear combination
+adalah semata-mata gabungan linear
+
+00:05:57,000 --> 00:06:01,000
+love shifted versions of the impulse response
+cinta beralih versi sambutan dedenyut
+
+00:06:01,000 --> 00:06:05,000
+with amplitudes Witcher the sample values
+dengan amplitud Witcher nilai sampel
+
+00:06:05,000 --> 00:06:09,000
+and so this expression in fact and is our basic
+dan sebagainya ungkapan ini sebenarnya dan adalah asas kami
+
+00:06:09,000 --> 00:06:14,000
+reconstruction expression in the time domain
+ungkapan pembinaan semula di domain masa
+
+00:06:14,000 --> 00:06:18,000
+well in terms of a diagram
+baik dari segi gambarajah
+
+00:06:18,000 --> 00:06:21,000
+we can think of the original waveform
+kita boleh berfikir bentuk gelombang asal
+
+00:06:21,000 --> 00:06:24,000
+as I've shown here and
+seperti yang telah saya ditunjukkan di sini dan
+
+00:06:24,000 --> 00:06:27,000
+the red arrows denote be
+anak panah merah menunjukkan menjadi
+
+00:06:27,000 --> 00:06:30,000
+sampled waveform or the train
+bentuk gelombang disampel atau kereta api
+
+00:06:30,000 --> 00:06:33,000
+love impulses whose amplitude are
+impuls cinta yang amplitud adalah
+
+00:06:33,000 --> 00:06:37,000
+the sample values up the original
+sampel menghargai sehingga asal
+
+00:06:37,000 --> 00:06:41,000
+continuous-time signal and
+isyarat berterusan masa dan
+
+00:06:41,000 --> 00:06:46,000
+then I've shown here it what might be a typical impulse response
+maka saya telah menunjukkan di sini apa yang mungkin tindak balas impuls biasa
+
+00:06:46,000 --> 00:06:50,000
+particularly typical in the case where we're talking about reconstruction with
+terutamanya biasa dalam hal jika kita berbicara tentang pembinaan semula dengan
+
+00:06:50,000 --> 00:06:53,000
+an ideal 0 pass filter
+penapis 0 pas ideal
+
+00:06:53,000 --> 00:06:57,000
+now what happens in the reconstruction
+kini apa yang berlaku dalam pembinaan semula
+
+00:06:57,000 --> 00:07:00,000
+is that the convolution love these
+ialah kekusutan cinta ini
+
+00:07:00,000 --> 00:07:04,000
+impulses with this impulse response
+impuls dengan sambutan impuls ini
+
+00:07:04,000 --> 00:07:07,000
+means that in the reconstruction
+bermakna bahawa dalam pembinaan semula
+
+00:07:07,000 --> 00:07:11,000
+we superimpose wanted these impulse responses whatever the filter IPO's
+kita mahu menindih ini jawapan gerak hati apa sahaja penapis IPO
+
+00:07:11,000 --> 00:07:13,000
+response happens to be
+tindak balas yang berlaku kepada menjadi
+
+00:07:13,000 --> 00:07:18,000
+at each of these time instants and in doing that
+di setiap Segera masa dengan melakukan ini,
+
+00:07:18,000 --> 00:07:23,000
+then those are added up and that gives us the total reconstructed signal
+maka orang-orang ditambah dan yang memberikan kita jumlah isyarat yang dibina semula
+
+00:07:23,000 --> 00:07:28,000
+of course for the case in which the filter is an ideal
+sudah tentu untuk kes di mana penapis adalah ideal
+
+00:07:28,000 --> 00:07:33,000
+low-pass filter then what we know is that in that case
+penapis laluan rendah maka apa yang kita tahu adalah bahawa dalam kes
+
+00:07:33,000 --> 00:07:38,000
+the impulse response is on the form of a sync function
+sambutan dedenyut adalah kepada bentuk fungsi sync
+
+00:07:38,000 --> 00:07:43,000
+but generally we may want to consider other kinds of impulse responses and so
+tetapi secara umumnya kita mungkin mahu mempertimbangkan jenis lain jawapan gerak hati dan sebagainya
+
+00:07:43,000 --> 00:07:44,000
+in fact
+sebenarnya
+
+00:07:44,000 --> 00:07:47,000
+the interpolating impulse response
+sambutan dorongan interpolasi
+
+00:07:47,000 --> 00:07:50,000
+may have and will have is this discussion goes along some different
+ada dan akan ada ialah perbincangan ini pergi bersama-sama beberapa berbeza
+
+00:07:50,000 --> 00:07:52,000
+shapes
+bentuk
+
+00:07:52,000 --> 00:07:57,000
+now what I'd like to do is illustrator demonstrate this process
+kini apa yang saya ingin lakukan adalah ilustrator menunjukkan proses ini
+
+00:07:57,000 --> 00:08:02,000
+love all affectively doing the interpolation
+suka semua affectively melakukan penentudalaman
+
+00:08:02,000 --> 00:08:06,000
+by replacing each of the impulses
+dengan menggantikan setiap satu daripada impuls
+
+00:08:06,000 --> 00:08:10,000
+by an appropriate interpolating impulse response and adding the stop
+oleh sesuai interpolasi impuls respon dan menambah berhenti seorang yang
+
+00:08:10,000 --> 00:08:14,000
+and I'd like to do this with a computer movie that we generated
+dan saya ingin melakukan ini dengan filem komputer yang kita dihasilkan
+
+00:08:14,000 --> 00:08:17,000
+and what you're seeing the computer movie is
+dan apa yang anda lihat filem komputer
+
+00:08:17,000 --> 00:08:21,000
+essentially original way for which is a continuous curve
+cara dasarnya asal yang baginya keluk berterusan
+
+00:08:21,000 --> 00:08:25,000
+and then below that in the movie
+dan kemudian di bawah bahawa dalam filem
+
+00:08:25,000 --> 00:08:29,000
+is a train samples
+adalah sampel kereta api
+
+00:08:29,000 --> 00:08:33,000
+and then below that will be the reconstructed signal and the
+dan kemudian di bawah yang akan isyarat dan yang dibina semula itu
+
+00:08:33,000 --> 00:08:34,000
+reconstruction
+pembinaan semula
+
+00:08:34,000 --> 00:08:40,000
+will be carried out by showing the location of the impulse response as it
+akan dijalankan dengan menunjukkan lokasi sambutan dedenyut kerana ia
+
+00:08:40,000 --> 00:08:42,000
+moves along in the way form
+bergerak bersama-sama dalam bentuk cara
+
+00:08:42,000 --> 00:08:47,000
+and then the reconstructed kurt is simply the summation of those is that
+dan kemudian kurt yang dibina semula adalah semata-mata hasil tambah mereka ialah
+
+00:08:47,000 --> 00:08:49,000
+impulse response moves along
+tindak balas impuls bergerak bersama-sama
+
+00:08:49,000 --> 00:08:54,000
+so what you'll see then is an impulse response like this for the particular
+jadi apa yang anda akan melihat maka sambutan denyut seperti ini untuk tertentu
+
+00:08:54,000 --> 00:08:55,000
+case
+kes
+
+00:08:55,000 --> 00:08:59,000
+love and idea low-pass filter for the reconstruction
+cinta dan idea penapis laluan rendah untuk pembinaan semula
+
+00:08:59,000 --> 00:09:02,000
+an impulse response like this place
+sambutan denyut seperti tempat ini
+
+00:09:02,000 --> 00:09:05,000
+successively at the locations love
+berturut-turut di lokasi suka
+
+00:09:05,000 --> 00:09:10,000
+these impulses and that is the convolution process
+ini impuls dan itu adalah proses kekusutan yang
+
+00:09:10,000 --> 00:09:14,000
+and below that then will be the summation if these
+dan di bawah yang akan menjadi penjumlahan jika ini
+
+00:09:14,000 --> 00:09:18,000
+and the summation up those will then be the reconstructed signal
+dan penjumlahan sehingga mereka akan menjadi isyarat yang dibina semula
+
+00:09:18,000 --> 00:09:23,000
+so let's take a look at first of all that reconstruction
+jadi mari kita lihat pertama sekali bahawa pembangunan semula
+
+00:09:23,000 --> 00:09:26,000
+where the impulse response corresponds to the impulse response
+di mana sambutan dedenyut sepadan dengan sambutan dedenyut
+
+00:09:26,000 --> 00:09:30,000
+have an idea low-pass filter shown here first
+telah idea penapis laluan rendah yang ditunjukkan di sini pertama
+
+00:09:30,000 --> 00:09:34,000
+is the continuous-time signal which
+adalah isyarat berterusan masa yang
+
+00:09:34,000 --> 00:09:38,000
+we want to sample and then reconstruct using
+kita mahu untuk mencuba dan kemudian membina semula menggunakan
+
+00:09:38,000 --> 00:09:41,000
+fan limited interpolation or equivalently
+kipas interpolasi terhad atau setara
+
+00:09:41,000 --> 00:09:45,000
+idea low-pass filtering on the set of samples
+idea penapisan laluan rendah pada set sampel
+
+00:09:45,000 --> 00:09:49,000
+so the first step then is the sample this continuous time signal
+jadi langkah pertama maka adalah sampel isyarat masa ini berterusan
+
+00:09:49,000 --> 00:09:53,000
+and we see here now the set of samples
+dan kita lihat di sini sekarang set sampel
+
+00:09:53,000 --> 00:09:58,000
+and superimposed on the samples are the original continuous 5 signal
+dan melapiskan ke atas sampel adalah 5 isyarat berterusan asal
+
+00:09:58,000 --> 00:10:03,000
+to focus on the fact that those are samples are the top curve
+untuk memberi tumpuan kepada hakikat bahawa mereka adalah sampel lengkung atas
+
+00:10:03,000 --> 00:10:07,000
+let's now remove the continuous-time
+mari kita kini mengeluarkan masa berterusan
+
+00:10:07,000 --> 00:10:12,000
+envelope with the samples and it's this set of samples that we then want to use
+sampul surat dengan sampel dan ia set sampel yang kita kemudian mahu menggunakan
+
+00:10:12,000 --> 00:10:14,000
+for the reconstruction
+untuk pembinaan semula
+
+00:10:14,000 --> 00:10:17,000
+the reconstruction process interpreted as interpolation
+proses pembinaan semula ditafsirkan sebagai interpolasi
+
+00:10:17,000 --> 00:10:22,000
+consists of replacing each sample with a sin x over X function
+terdiri daripada menggantikan setiap sampel dengan sin x alih fungsi X
+
+00:10:22,000 --> 00:10:26,000
+and so let's first consider the sample
+dan jadi mari kita pertama mempertimbangkan sampel
+
+00:10:26,000 --> 00:10:30,000
+at equal 0 and here is the
+di yang sama 0 dan di sini adalah
+
+00:10:30,000 --> 00:10:33,000
+interpolating sin x over X function Associated
+interpolasi sin x alih fungsi X bersekutu
+
+00:10:33,000 --> 00:10:37,000
+with that sample now the more general
+dengan sampel yang kini yang lebih umum
+
+00:10:37,000 --> 00:10:40,000
+process then is to
+proses maka adalah untuk
+
+00:10:40,000 --> 00:10:45,000
+place a sin x over expulsion at the time location of each sample and superimpose
+meletakkan sin x lebih pengusiran di lokasi masa bagi setiap sampel dan menindih
+
+00:10:45,000 --> 00:10:48,000
+those
+mereka
+
+00:10:48,000 --> 00:10:52,000
+let's begin that process at the left-hand and
+mari kita memulakan proses yang di-tangan kiri dan
+
+00:10:52,000 --> 00:10:56,000
+the set of samples and in the bottom curve
+set sampel dan keluk bahagian bawah
+
+00:10:56,000 --> 00:11:00,000
+will build up the reconstruction as those sin x over X functions
+akan membina pembinaan semula itu kerana sin x lebih fungsi X
+
+00:11:00,000 --> 00:11:05,000
+are added together so we begin with the left hand sample and we see their the
+ditambah bersama-sama supaya kita bermula dengan sampel tangan kiri dan kita melihat mereka
+
+00:11:05,000 --> 00:11:06,000
+sin x over X function
+sin x alih fungsi X
+
+00:11:06,000 --> 00:11:11,000
+on the bottom curve then is the first step in the reconstruction
+pada lengkung bahagian bawah maka adalah langkah pertama dalam pembinaan semula
+
+00:11:11,000 --> 00:11:15,000
+we now have the sin x over X function associated with the second sample
+kita kini mempunyai x dosa alih fungsi X berkaitan dengan sampel yang kedua
+
+00:11:15,000 --> 00:11:19,000
+let's add that in now we move on
+mari kita menambah bahawa Sekarang kita beralih
+
+00:11:19,000 --> 00:11:24,000
+to the third sample and that sin x over X function
+kepada sampel ketiga dan bahawa dosa x alih fungsi X
+
+00:11:24,000 --> 00:11:27,000
+is added in
+ditambah dalam
+
+00:11:27,000 --> 00:11:31,000
+continuing on the next
+meneruskan seterusnya
+
+00:11:31,000 --> 00:11:34,000
+sample generates a sin x over X function
+sampel menjana x dosa alih fungsi X
+
+00:11:34,000 --> 00:11:38,000
+which is superimposed on the result that we've accumulated
+yang diletakkan di atas keputusan bahawa kami telah terkumpul
+
+00:11:38,000 --> 00:11:41,000
+so far and now let's just
+setakat ini dan sekarang mari kita hanya
+
+00:11:41,000 --> 00:11:45,000
+speed up the process will move on to the fifth sample
+mempercepatkan proses ini akan beralih kepada sampel kelima
+
+00:11:45,000 --> 00:11:48,000
+add that in the sect sample add that in
+menambah bahawa dalam sampel mazhab menambah bahawa dalam
+
+00:11:48,000 --> 00:11:52,000
+and continue on through the set of samples and
+dan meneruskan melalui set sampel dan
+
+00:11:52,000 --> 00:11:56,000
+keep in mind the fact that basically what we're doing explicitly here
+ingat hakikat bahawa pada dasarnya apa yang kami lakukan dengan jelas di sini
+
+00:11:56,000 --> 00:12:02,000
+is the convolution up the impulse train with a sin x over X function
+adalah kekusutan sehingga kereta api dedenyut dengan x dosa alih fungsi X
+
+00:12:02,000 --> 00:12:05,000
+and because the set of samples that we started with
+dan kerana set sampel yang kami bermula dengan
+
+00:12:05,000 --> 00:12:08,000
+where samples haven't exactly been limited function
+di mana sampel tidak betul-betul menjadi fungsi yang terhad
+
+00:12:08,000 --> 00:12:12,000
+what we are reconstructing exactly
+apa yang kita membina semula dengan tepat
+
+00:12:12,000 --> 00:12:15,000
+is the original continuous-time signal
+adalah isyarat berterusan masa asal
+
+00:12:15,000 --> 00:12:22,000
+that we have on the top trace
+yang kita ada di atas jejak
+
+00:12:24,000 --> 00:12:27,000
+okay so that then
+okay supaya kemudian
+
+00:12:27,000 --> 00:12:31,000
+kinda gives you the picture above doing
+agak memberikan anda gambar di atas melakukan
+
+00:12:31,000 --> 00:12:36,000
+interpolation by replacing the impulses by a continuous curve and that's the way
+interpolasi dengan menggantikan impuls dengan lengkung yang berterusan dan itulah cara yang
+
+00:12:36,000 --> 00:12:37,000
+we're fitting
+kami pemasangan
+
+00:12:37,000 --> 00:12:40,000
+a continuous curve to the original
+keluk berterusan dengan yang asal
+
+00:12:40,000 --> 00:12:44,000
+impulse train and let me stress
+gerak hati kereta api dan biarlah saya tekanan
+
+00:12:44,000 --> 00:12:47,000
+that this reconstruction process
+bahawa proses pembinaan semula ini
+
+00:12:47,000 --> 00:12:50,000
+by putting the impulses through
+dengan meletakkan impuls melalui
+
+00:12:50,000 --> 00:12:54,000
+a filter the reconstruction process
+yang menapis proses pembangunan semula di
+
+00:12:54,000 --> 00:12:58,000
+follows this relationship whether or not
+berikut hubungan ini sama ada atau tidak
+
+00:12:58,000 --> 00:13:03,000
+this impulse response in fact corresponds to an ideal ok pass filter
+sambutan ini gerak hati sebenarnya sepadan dengan penapis lulus ok ideal
+
+00:13:03,000 --> 00:13:08,000
+what this expression always says is dead reconstructing this way
+apa ungkapan ini selalu berkata adalah membina semula mati cara ini
+
+00:13:08,000 --> 00:13:11,000
+corresponds to replacing the impulses
+sepadan dengan menggantikan impuls
+
+00:13:11,000 --> 00:13:15,000
+by a shift in impulse response with an effort to
+oleh perubahan dalam tindak balas impuls dengan usaha untuk
+
+00:13:15,000 --> 00:13:22,000
+dead is an amplitude corresponding to the sample value now
+mati adalah amplitud yang bersamaan dengan nilai sampel kini
+
+00:13:22,000 --> 00:13:27,000
+be kinda reconstruction dead we've just talked about and the ideal
+menjadi agak pembinaan semula mati kita baru sahaja bercakap tentang dan ideal
+
+00:13:27,000 --> 00:13:28,000
+reconstruction
+pembinaan semula
+
+00:13:28,000 --> 00:13:33,000
+is often referred to as band limited
+sering dirujuk sebagai band terhad
+
+00:13:33,000 --> 00:13:37,000
+interpolation because for interpolating in between the samples
+interpolasi kerana bagi interpolasi di antara sampel
+
+00:13:37,000 --> 00:13:40,000
+by making the assumption that the signals ban limited
+dengan membuat andaian bahawa isyarat mengharamkan terhad
+
+00:13:40,000 --> 00:13:45,000
+and using the impulse response for an idea low-pass filter
+dan menggunakan sambutan dedenyut untuk idea penapis laluan rendah
+
+00:13:45,000 --> 00:13:49,000
+which has a cutoff frequency consistent with
+yang mempunyai frekuensi potong selaras dengan
+
+00:13:49,000 --> 00:13:53,000
+the soon band with for the signal so if we look
+band lama lagi dengan isyarat jadi jika kita melihat
+
+00:13:53,000 --> 00:13:57,000
+here for example at the impulse train
+di sini contohnya di kereta api gerak hati
+
+00:13:57,000 --> 00:14:00,000
+then in the demonstration that you just saw
+maka dalam demonstrasi yang anda hanya melihat
+
+00:14:00,000 --> 00:14:06,000
+we built up the reconstructed curve by replacing each of these impulses
+kita membina lengkung yang dibina semula dengan menggantikan setiap dorongan ini
+
+00:14:06,000 --> 00:14:09,000
+with the sync function and the some of those
+dengan fungsi penyegerakan dan beberapa orang-orang
+
+00:14:09,000 --> 00:14:14,000
+built up the reconstruct the curve well
+membina membina semula keluk baik
+
+00:14:14,000 --> 00:14:17,000
+there are lots of other kinds of interpolation
+terdapat banyak jenis lain interpolasi
+
+00:14:17,000 --> 00:14:20,000
+dead are perhaps maybe not as exact
+mati adalah mungkin mungkin tidak sebagai tepat
+
+00:14:20,000 --> 00:14:25,000
+by often easier to implement and what I'd like to do is focus our attention on
+oleh lebih mudah untuk melaksanakan dan apa yang saya ingin lakukan adalah menumpukan perhatian kami pada
+
+00:14:25,000 --> 00:14:26,000
+to appease
+untuk menyenangkan hati
+
+00:14:26,000 --> 00:14:31,000
+one of these the first that I want to mention is what's referred to as a
+salah satu daripada yang pertama yang saya mahu menyebut adalah apa yang disebut sebagai
+
+00:14:31,000 --> 00:14:32,000
+zero-order hold
+sifar-perintah memegang
+
+00:14:32,000 --> 00:14:36,000
+where in effect we do the interpolation in between these
+di mana kesan yang kami lakukan interpolasi di antara
+
+00:14:36,000 --> 00:14:40,000
+sample values by simply holding the sample value
+nilai-nilai sampel dengan hanya memegang nilai sampel
+
+00:14:40,000 --> 00:14:45,000
+until the next sampling instant and the reconstruction
+sehingga segera pensampelan seterusnya dan pembinaan semula
+
+00:14:45,000 --> 00:14:49,000
+that we end up with in that that case will look something like this:
+bahawa kita berakhir dengan dalam kes yang akan kelihatan seperti ini:
+
+00:14:49,000 --> 00:14:52,000
+it's a staircase or boxcar kinda function
+ia adalah satu tangga atau GerbonG fungsi kinda
+
+00:14:52,000 --> 00:14:56,000
+where we've simply held the sample value
+di mana kita hanya diadakan nilai sampel
+
+00:14:56,000 --> 00:15:01,000
+until the next sampling instant and then replaced by that value held until the
+sehingga segera pensampelan seterusnya dan kemudian digantikan dengan nilai yang diadakan sehingga
+
+00:15:01,000 --> 00:15:02,000
+next sampling instant et cetera
+pensampelan segera seterusnya dan sebagainya
+
+00:15:02,000 --> 00:15:07,000
+now that's one kinda interpolation
+kini itu satu kinda interpolasi
+
+00:15:07,000 --> 00:15:10,000
+another kinda very common interpolation is
+lain interpolasi agak sangat biasa adalah
+
+00:15:10,000 --> 00:15:13,000
+what's referred to as linear interpolation we simply fit
+apa yang disebut sebagai interpolasi linear kita hanya patut
+
+00:15:13,000 --> 00:15:18,000
+a straight line between the sample values and in that case
+garis lurus antara nilai-nilai sampel dan dalam hal yang
+
+00:15:18,000 --> 00:15:21,000
+the cut be type reconstruction that we would get
+dipotong menjadi pembinaan semula jenis yang kita akan mendapat
+
+00:15:21,000 --> 00:15:26,000
+would look something like I indicate here where we take a sample value
+akan kelihatan seperti yang saya nyatakan di sini di mana kita mengambil nilai sampel
+
+00:15:26,000 --> 00:15:32,000
+and the following sample value and simply fit interpolated curve between
+dan nilai sampel berikut dan hanya muat lengkung interpolasi antara
+
+00:15:32,000 --> 00:15:33,000
+them
+mereka
+
+00:15:33,000 --> 00:15:37,000
+which is a straight line now
+yang merupakan garis lurus sekarang
+
+00:15:37,000 --> 00:15:41,000
+interestingly in fact both the zero-order hold
+menarik sebenarnya kedua-dua memegang sifar pesanan
+
+00:15:41,000 --> 00:15:44,000
+and the linear interpolation which is
+dan interpolasi linear yang
+
+00:15:44,000 --> 00:15:48,000
+often referred to as a first-order hold can also
+sering dirujuk sebagai memegang pertama pesanan boleh juga
+
+00:15:48,000 --> 00:15:53,000
+be either implemented or interpreted both implemented interpreted
+sama ada dilaksanakan atau ditafsirkan kedua-dua dilaksanakan ditafsirkan
+
+00:15:53,000 --> 00:15:56,000
+in the context of the equation that we just develop
+dalam konteks persamaan yang kita membangunkan
+
+00:15:56,000 --> 00:15:59,000
+in particular the processing I'll the
+khususnya pemprosesan yang saya akan
+
+00:15:59,000 --> 00:16:03,000
+imposed strain of samples by
+tekanan yang dikenakan oleh sampel
+
+00:16:03,000 --> 00:16:06,000
+a linear time-invariant filter specifically
+masa tak berubah-penapis linear khusus
+
+00:16:06,000 --> 00:16:10,000
+if we consider a
+jika kita mempertimbangkan
+
+00:16:10,000 --> 00:16:13,000
+system where the impulse response
+sistem di mana sambutan dedenyut
+
+00:16:13,000 --> 00:16:17,000
+is a rectangular function
+adalah fungsi segi empat tepat
+
+00:16:17,000 --> 00:16:20,000
+then in fact if
+maka sebenarnya jika
+
+00:16:20,000 --> 00:16:24,000
+we processed the train if samples
+kita diproses kereta api jika sampel
+
+00:16:24,000 --> 00:16:28,000
+through a filter with this impulse response exactly
+melalui penapis dengan sambutan impuls ini betul-betul
+
+00:16:28,000 --> 00:16:32,000
+the reconstruction that we would get is what I've shown here
+pembinaan semula yang kita akan mendapat apa yang saya telah ditunjukkan di sini
+
+00:16:32,000 --> 00:16:36,000
+alternatively if we chose an impulse response
+sebagai alternatif jika kami memilih sambutan denyut
+
+00:16:36,000 --> 00:16:39,000
+which was a triangular
+yang segi tiga yang
+
+00:16:39,000 --> 00:16:43,000
+impulse response then
+impuls respon kemudian
+
+00:16:43,000 --> 00:16:46,000
+what in effect happens is that each of these impulses
+apa kesan yang berlaku ialah bahawa setiap dorongan ini
+
+00:16:46,000 --> 00:16:49,000
+activates this triangle
+mengaktifkan segitiga ini
+
+00:16:49,000 --> 00:16:55,000
+and when we add up those triangles at successive locations in fact
+dan apabila kita menambah sehingga mereka segitiga di lokasi yang berturutan sebenarnya
+
+00:16:55,000 --> 00:16:59,000
+what we generate is this linear interpolation
+apa yang kita menjana adalah interpolasi linear ini
+
+00:16:59,000 --> 00:17:03,000
+so what this says in fact is dead
+jadi apa ini mengatakan sebenarnya telah mati
+
+00:17:03,000 --> 00:17:06,000
+either a zero-order hold
+sama ada memegang sifar pesanan
+
+00:17:06,000 --> 00:17:09,000
+which holds the value or linear interpolation
+yang memegang nilai atau interpolasi linear
+
+00:17:09,000 --> 00:17:13,000
+can likewise be interpreted as a process
+begitu juga boleh ditafsirkan sebagai satu proses yang
+
+00:17:13,000 --> 00:17:17,000
+love convolved thing the impulse trainer samples
+suka perkara convolved sampel jurulatih gerak hati
+
+00:17:17,000 --> 00:17:21,000
+with inappropriate filter impulse response
+dengan tidak sesuai sambutan penapis gerak hati
+
+00:17:21,000 --> 00:17:24,000
+well what I'd like to do is demonstrate
+baik apa yang saya ingin lakukan adalah menunjukkan
+
+00:17:24,000 --> 00:17:27,000
+as we did with the ban limit interpolation or
+seperti yang kita lakukan dengan larangan had interpolasi atau
+
+00:17:27,000 --> 00:17:33,000
+these sink interpolation is sometimes called interplay with a sin x over axe
+ini interpolasi tenggelam kadang-kadang dipanggil interaksi dengan x dosa lebih kapak
+
+00:17:33,000 --> 00:17:36,000
+let me now show the process first the ball
+biarlah saya kini menunjukkan proses pertama bola
+
+00:17:36,000 --> 00:17:40,000
+where we have a zero-order hold
+di mana kita mempunyai memegang sifar pesanan
+
+00:17:40,000 --> 00:17:44,000
+as corresponding to this impulse response
+sebagai bersamaan dengan sambutan impuls ini
+
+00:17:44,000 --> 00:17:48,000
+in which case we'll see basically the same process as we saw your
+di mana kita akan melihat pada dasarnya proses yang sama seperti yang kita lihat anda
+
+00:17:48,000 --> 00:17:52,000
+in the computer-generated movie previously
+dalam filem janaan komputer yang sebelum ini
+
+00:17:52,000 --> 00:17:55,000
+but now rather than a sync function replacing
+tetapi sekarang dan bukan fungsi sync menggantikan
+
+00:17:55,000 --> 00:17:59,000
+each of these impulses will have a rectangular function
+setiap dorongan ini akan mempunyai fungsi segi empat tepat
+
+00:17:59,000 --> 00:18:06,000
+that will generate then are approximation which is a zero-order hold
+yang akan menjana maka adalah penganggaran yang memegang sifar pesanan
+
+00:18:06,000 --> 00:18:10,000
+and following that will do exactly the same thing with the same way form
+dan berikut yang akan melakukan perkara yang sama dengan bentuk cara yang sama
+
+00:18:10,000 --> 00:18:14,000
+using a first-order hold or a triangular impulse response
+menggunakan memegang pertama-perintah atau tindak balas impuls segi tiga
+
+00:18:14,000 --> 00:18:20,000
+in which case well we'll see again is that as the triangle moves along here
+di mana juga kita akan melihat lagi ialah sebagai segitiga bergerak bersama-sama di sini
+
+00:18:20,000 --> 00:18:24,000
+and we build up the running some or the convolution
+dan kami membina beberapa berjalan atau kekusutan yang
+
+00:18:24,000 --> 00:18:27,000
+then will in fact fit the original curve
+maka sebenarnya sesuai lengkung asal
+
+00:18:27,000 --> 00:18:31,000
+with a linear curve soul now let's
+dengan jiwa lengkung linear sekarang mari kita
+
+00:18:31,000 --> 00:18:34,000
+again look at that remembering that at the top will see
+sekali lagi melihat mengingat bahawa yang di atas akan melihat
+
+00:18:34,000 --> 00:18:38,000
+the original continuous curve exactly the one that we had before
+lengkung berterusan asal betul-betul salah satu yang kita ada sebelum ini
+
+00:18:38,000 --> 00:18:42,000
+below it the set of samples together with
+di bawahnya set sampel bersama-sama dengan
+
+00:18:42,000 --> 00:18:47,000
+the impulse response moving along and then finally below that
+sambutan dedenyut bergerak di sepanjang dan akhirnya di bawah yang
+
+00:18:47,000 --> 00:18:51,000
+the accumulation of those impulse responses work with only
+pengumpulan mereka jawapan gerak hati bekerja dengan hanya
+
+00:18:51,000 --> 00:18:56,000
+the convolution or equivalent Lee the reconstruction
+yang kekusutan atau setaraf Lee pembinaan semula
+
+00:18:56,000 --> 00:19:01,000
+so we have the same continuous-time signal that we use previously with
+jadi kami mempunyai isyarat berterusan masa yang sama yang kita gunakan sebelum ini dengan
+
+00:19:01,000 --> 00:19:04,000
+ban limited interpolation and in this case
+mengharamkan interpolasi terhad dan dalam kes ini
+
+00:19:04,000 --> 00:19:09,000
+now we want to sample and then interpolate first for the zero-order
+sekarang kita mahu untuk mencuba dan kemudian menyisipkan pertama bagi sifar pesanan
+
+00:19:09,000 --> 00:19:10,000
+hold
+memegang
+
+00:19:10,000 --> 00:19:13,000
+and then with the first-order whole so the first step then
+dan kemudian dengan seluruh tertib pertama jadi langkah pertama maka
+
+00:19:13,000 --> 00:19:17,000
+is the sample the continuous-time signal
+adalah sampel isyarat berterusan masa
+
+00:19:17,000 --> 00:19:21,000
+and we show here at the set of samples once again
+dan kami menunjukkan di sini pada set sampel sekali lagi
+
+00:19:21,000 --> 00:19:25,000
+superimposed on which we have the continuous-time signal
+melapisi yang kita mempunyai isyarat berterusan masa
+
+00:19:25,000 --> 00:19:28,000
+which of course is exactly the same curve as
+yang sudah tentu betul-betul lengkung yang sama seperti
+
+00:19:28,000 --> 00:19:31,000
+we have in the top well let's
+kita ada di atas dengan baik mari kita
+
+00:19:31,000 --> 00:19:34,000
+remove that envelope so that we focus attention
+mengeluarkan sampul surat yang supaya kita menumpukan perhatian
+
+00:19:34,000 --> 00:19:37,000
+on the samples that were using to interpolate
+ke atas sampel yang menggunakan untuk menyisipkan
+
+00:19:37,000 --> 00:19:42,000
+any interpolation process consists love replacing each sample
+apa-apa proses interpolasi terdiri cinta menggantikan setiap sampel
+
+00:19:42,000 --> 00:19:46,000
+by a rectangular signal
+dengan isyarat segi empat tepat
+
+00:19:46,000 --> 00:19:49,000
+whose amplitude is equal to the sample size
+yang amplitud adalah sama dengan saiz sampel
+
+00:19:49,000 --> 00:19:53,000
+so let's put one first of all at equal 0 Associated
+jadi mari kita meletakkan satu pertama sekali di sama 0 Associated
+
+00:19:53,000 --> 00:19:56,000
+with that sample
+dengan sampel yang
+
+00:19:56,000 --> 00:20:02,000
+and that then would be the interpolating rectangle associated with the sample at
+dan yang kemudiannya akan menjadi persegi panjang interpolasi yang berkaitan dengan sampel pada
+
+00:20:02,000 --> 00:20:04,000
+equal 0
+sama 0
+
+00:20:04,000 --> 00:20:08,000
+now to build up the interpolation what will have is one of those that each
+sekarang untuk membina interpolasi apa yang akan mempunyai adalah salah satu bahawa setiap
+
+00:20:08,000 --> 00:20:10,000
+sample time and those are
+masa sampel dan mereka adalah
+
+00:20:10,000 --> 00:20:14,000
+added together will start that process as we did before
+ditambah bersama-sama akan memulakan proses yang seperti yang kita lakukan sebelum
+
+00:20:14,000 --> 00:20:17,000
+at the left hand and that the set of samples
+di sebelah kiri dan bahawa set sampel
+
+00:20:17,000 --> 00:20:21,000
+and build the interpolating signal on the bottom so
+dan membina isyarat interpolasi di bahagian bawah supaya
+
+00:20:21,000 --> 00:20:24,000
+with the left hand sample we have first
+dengan sampel tangan kiri kita mempunyai pertama
+
+00:20:24,000 --> 00:20:28,000
+the rectangle associated with that that shown
+persegi panjang yang berkaitan dengan yang yang ditunjukkan
+
+00:20:28,000 --> 00:20:32,000
+now on the bottom curve we now
+kini pada lengkung bahagian bawah kita kini
+
+00:20:32,000 --> 00:20:35,000
+have a senator plating rectangle with the second
+mempunyai penyaduran persegi panjang senator dengan yang kedua
+
+00:20:35,000 --> 00:20:40,000
+sample that gets headed into the bottom curve
+sampel yang mendapat menuju ke lengkung bahagian bawah
+
+00:20:40,000 --> 00:20:44,000
+similarly and interpolating rectangle for the zero-order hold
+juga dan interpolasi persegi panjang untuk memegang sifar pesanan
+
+00:20:44,000 --> 00:20:49,000
+with the third sample we had bad in to the bottom curve
+dengan sampel ketiga kami tidak baik dalam kepada lengkung bahagian bawah
+
+00:20:49,000 --> 00:20:53,000
+and as we proceed we're building a staircase approximation
+dan seperti yang kita meneruskan kita membina anggaran tangga
+
+00:20:53,000 --> 00:20:57,000
+on to the next sample that gets added in
+ke sampel seterusnya yang mendapat ditambah
+
+00:20:57,000 --> 00:21:00,000
+as we see the air and now lets speed up the process
+seperti yang kita lihat udara dan kini membolehkan mempercepatkan proses
+
+00:21:00,000 --> 00:21:03,000
+and we'll see the staircase approximation
+dan kita akan melihat anggaran tangga
+
+00:21:03,000 --> 00:21:07,000
+building up and notice in this case
+membina dan notis dalam kes ini
+
+00:21:07,000 --> 00:21:11,000
+as in the previous case that what we're basically watching dynamically
+seperti dalam kes sebelum ini bahawa apa yang kita pada dasarnya menonton secara dinamik
+
+00:21:11,000 --> 00:21:16,000
+is the convolution love the imposed strain of samples
+adalah kekusutan yang suka ketegangan yang dikenakan sampel
+
+00:21:16,000 --> 00:21:19,000
+with the impulse response the interpolating filter
+dengan sambutan dedenyut penapis interpolasi
+
+00:21:19,000 --> 00:21:24,000
+which in this particular case is just a rectangular Paul's
+yang dalam kes ini hanya satu segi empat tepat Paul
+
+00:21:24,000 --> 00:21:28,000
+and so this staircase approximation that we're generating
+dan sebagainya ini anggaran tangga yang kita menjana
+
+00:21:28,000 --> 00:21:31,000
+is the zero-order hold interpolation
+adalah sifar pesanan memegang interpolasi
+
+00:21:31,000 --> 00:21:34,000
+between the samples I love the
+antara sampel Saya suka
+
+00:21:34,000 --> 00:21:41,000
+ban limited signal which is at the top
+mengharamkan isyarat terhad yang di bahagian atas
+
+00:21:41,000 --> 00:21:46,000
+now let's do the same thing with the first-order whole so in this case
+sekarang mari kita melakukan perkara yang sama dengan seluruh tertib pertama jadi dalam kes ini
+
+00:21:46,000 --> 00:21:51,000
+we want to interpolate using a triangular impulse response
+kita mahu menyisipkan menggunakan tindak balas impuls segi tiga
+
+00:21:51,000 --> 00:21:55,000
+rather than the sin x over X or rectangular impulse responses that we
+bukannya x dosa ke atas X ditaati segi empat tepat jawapan yang kita
+
+00:21:55,000 --> 00:21:56,000
+showed previously
+menunjukkan sebelum ini
+
+00:21:56,000 --> 00:22:01,000
+so first let's say with the sample it equals 0
+oleh itu mari kita mengatakan dengan sampel ia sama dengan 0
+
+00:22:01,000 --> 00:22:06,000
+we would replace that with a triangular
+kami akan menggantikan dengan segi tiga yang
+
+00:22:06,000 --> 00:22:09,000
+interpolating function and more generally
+interpolasi fungsi dan lebih umum
+
+00:22:09,000 --> 00:22:13,000
+each in polls or sample is replaced with a triangular
+setiap satu dalam pemilihan sampel atau digantikan dengan segi tiga yang
+
+00:22:13,000 --> 00:22:17,000
+interpolating function of the height equal to the sample height
+fungsi interpolasi ketinggian sama dengan ketinggian sampel
+
+00:22:17,000 --> 00:22:21,000
+and these are superposed to generate the linear interpolation
+dan ini bertindih untuk menjana interpolasi linear
+
+00:22:21,000 --> 00:22:24,000
+will begin this process with the leftmost
+akan memulakan proses ini dengan paling kiri yang
+
+00:22:24,000 --> 00:22:28,000
+sample and will build the superposition
+mencuba dan akan membina tindihan
+
+00:22:28,000 --> 00:22:32,000
+below and the bottom curve so here
+bawah dan lengkung bahagian bawah jadi di sini
+
+00:22:32,000 --> 00:22:35,000
+is the interpolating triangle for the
+adalah segi tiga interpolasi untuk
+
+00:22:35,000 --> 00:22:40,000
+leftmost sample and now it's reproduced below
+sampel paling kiri dan kini ia semula di bawah
+
+00:22:40,000 --> 00:22:45,000
+with the second sample we have an interpolating triangle which is added
+dengan sampel yang kedua kita mempunyai segitiga interpolasi yang ditambah
+
+00:22:45,000 --> 00:22:46,000
+into the bottom
+ke bahagian bawah
+
+00:22:46,000 --> 00:22:50,000
+curve and now on to the third sample
+lengkung dan sekarang kepada sampel ketiga
+
+00:22:50,000 --> 00:22:55,000
+and again that interpolating triangle will be added onto
+dan sekali lagi bahawa segitiga interpolasi akan ditambah ke
+
+00:22:55,000 --> 00:22:59,000
+the curve that we've developed so far
+keluk yang kami dibangunkan setakat ini
+
+00:22:59,000 --> 00:23:03,000
+and now on to the next sample
+dan sekarang untuk sampel seterusnya
+
+00:23:03,000 --> 00:23:07,000
+we had that in there will speed up the process
+kami bahawa di sana akan mempercepatkan proses
+
+00:23:07,000 --> 00:23:10,000
+and as we proceed through
+dan seperti yang kita meneruskan melalui
+
+00:23:10,000 --> 00:23:15,000
+we are building basically a linear interpolation
+kami sedang membina asasnya interpolasi linear
+
+00:23:15,000 --> 00:23:18,000
+in between the sample points
+di antara titik sampel
+
+00:23:18,000 --> 00:23:22,000
+a sexually corresponding to if one wants to think of it this way connecting the
+seksual yang bersamaan dengan jika seseorang mahu untuk memikirkan ia satu cara yang ini menghubungkan
+
+00:23:22,000 --> 00:23:23,000
+dots
+titik
+
+00:23:23,000 --> 00:23:28,000
+and what you're watching once again is essentially the convolution process
+dan apa yang anda menonton sekali lagi pada dasarnya proses kekusutan yang
+
+00:23:28,000 --> 00:23:32,000
+involving the impulse train with the impulse response
+yang melibatkan kereta api gerak hati dengan sambutan dedenyut
+
+00:23:32,000 --> 00:23:36,000
+the interpolating filter and what we're generating then
+penapis interpolasi dan apa yang kita menjana kemudian
+
+00:23:36,000 --> 00:23:40,000
+is a linear approximation
+adalah anggaran linear
+
+00:23:40,000 --> 00:23:47,000
+to the fam limited continuous-time curve at the top
+kepada terhad lengkung berterusan masa Fam di bahagian atas
+
+00:23:48,000 --> 00:23:52,000
+okay so what we have then is
+okay jadi apa yang kita ada maka adalah
+
+00:23:52,000 --> 00:23:56,000
+several other kinds of interpolation which
+beberapa jenis lain interpolasi yang
+
+00:23:56,000 --> 00:23:59,000
+fit within the same context as
+muat di dalam konteks yang sama seperti
+
+00:23:59,000 --> 00:24:03,000
+exact ban limit interpolation one being
+larangan tepat had interpolasi satu makhluk
+
+00:24:03,000 --> 00:24:08,000
+interpolation in the time domain with an impulse response which is a rectangle
+interpolasi dalam domain masa dengan sambutan denyut yang segi empat tepat
+
+00:24:08,000 --> 00:24:11,000
+the second being interpolation in the time domain
+interpolasi makhluk kedua dalam domain masa
+
+00:24:11,000 --> 00:24:15,000
+with an impulse response which is a triangle
+dengan sambutan denyut yang segi tiga
+
+00:24:15,000 --> 00:24:18,000
+and in fact its interesting to also
+dan sebenarnya yang menarik juga
+
+00:24:18,000 --> 00:24:22,000
+look at the relationship between at and ban limit interpolation
+melihat hubungan antara di dan larangan had interpolasi
+
+00:24:22,000 --> 00:24:27,000
+look at it specifically in the frequency domain
+melihat ia khusus dalam domain frekuensi
+
+00:24:27,000 --> 00:24:30,000
+well in the frequency-domain
+baik dalam frekuensi domain
+
+00:24:30,000 --> 00:24:35,000
+what we know of course is dead for exact interpolation
+apa yang kita tahu sudah tentu mati untuk interpolasi tepat
+
+00:24:35,000 --> 00:24:40,000
+what we want as our interpolating filter is an ideal Lopez filter
+apa yang kita mahu sebagai penapis interpolasi kami adalah penapis Lopez ideal
+
+00:24:40,000 --> 00:24:45,000
+now keep in mind by the way that an idea low-pass filter is an abstraction is a
+kini ingat dengan cara itu bahawa idea penapis laluan rendah adalah pengekstrakan adalah satu
+
+00:24:45,000 --> 00:24:49,000
+stress several times in the past an idea low-pass filter
+menekankan beberapa kali pada masa lalu idea penapis laluan rendah
+
+00:24:49,000 --> 00:24:54,000
+is a9 causal filter and in fact infinite extent which is
+adalah penapis A9 sebab-musabab dan sebenarnya tahap tak terhingga yang
+
+00:24:54,000 --> 00:24:58,000
+one of the reasons why in any case we would you some approximation to it
+salah satu sebab mengapa dalam mana-mana kita akan anda beberapa anggaran kepadanya
+
+00:24:58,000 --> 00:25:02,000
+but here what we have is the
+tetapi di sini apa yang kita ada adalah
+
+00:25:02,000 --> 00:25:05,000
+exact interpolating filter
+tepat interpolasi penapis
+
+00:25:05,000 --> 00:25:11,000
+and that corresponds to an ideal 0 pass filter
+dan yang sepadan dengan yang ideal penapis lulus 0
+
+00:25:11,000 --> 00:25:16,000
+if instead we carried out the interpolation
+jika sebaliknya kita dijalankan penentudalaman
+
+00:25:16,000 --> 00:25:20,000
+using the zero-order hold the zero-order hold has a
+menggunakan sifar pesanan memegang memegang sifar pesanan mempunyai suatu
+
+00:25:20,000 --> 00:25:25,000
+rectangular impulse response and that means in the frequency domain
+segiempat tepat tindak balas gerak hati dan itu bererti dalam domain frekuensi
+
+00:25:25,000 --> 00:25:28,000
+its frequency response is of the form love
+sambutan frekuensi adalah cinta borang yang
+
+00:25:28,000 --> 00:25:31,000
+a sync function or sin x over iraq's
+fungsi sync atau sin x lebih iraq ini
+
+00:25:31,000 --> 00:25:35,000
+and so this in fact when we're doing the reconstruction
+dan sebagainya ini sebenarnya ketika kita sedang melakukan pembinaan semula
+
+00:25:35,000 --> 00:25:40,000
+with a zero-order hold is The Associated frequency response
+dengan memegang sifar pesanan adalah kekerapan Sambutan yang bersekutu
+
+00:25:40,000 --> 00:25:46,000
+now notice that it does some approximate Lopez filtering but of course
+kini melihat bahawa ia beberapa anggaran Lopez penapisan tetapi sudah tentu
+
+00:25:46,000 --> 00:25:50,000
+it has significant it permits significant energy
+ia mempunyai signifikan ia membenarkan tenaga penting
+
+00:25:50,000 --> 00:25:53,000
+outside the pass band at the filter
+di luar band pas di penapis
+
+00:25:53,000 --> 00:25:58,000
+well instead the zero-order hold if we use the first-order hold corresponding
+juga sebaliknya memegang sifar pesanan jika kita menggunakan memegang tertib pertama yang sepadan
+
+00:25:58,000 --> 00:26:01,000
+to the triangular impulse response
+sambutan impuls segi tiga
+
+00:26:01,000 --> 00:26:05,000
+in that case then in the frequency domain The Associated
+dalam kes itu kemudian dalam domain frekuensi The Associated
+
+00:26:05,000 --> 00:26:09,000
+frequency response would be the forty a transformer the triangle
+sambutan frekuensi akan menjadi empat puluh pengubah segi tiga
+
+00:26:09,000 --> 00:26:13,000
+and the Fourier transform a triangle is a sin squared
+dan Fourier segitiga adalah satu dosa kuasa dua
+
+00:26:13,000 --> 00:26:16,000
+X over X where'd kinda function
+X lebih X mana asalnya agak fungsi
+
+00:26:16,000 --> 00:26:19,000
+and so in that case what we would have
+dan sebagainya dalam kes itu apa yang kita akan mempunyai
+
+00:26:19,000 --> 00:26:23,000
+for the frequency response associated with the first-order hold
+untuk sambutan frekuensi yang berkaitan dengan memegang pertama pesanan
+
+00:26:23,000 --> 00:26:27,000
+is a frequency response as I show here
+adalah sambutan frekuensi seperti yang saya menunjukkan di sini
+
+00:26:27,000 --> 00:26:33,000
+and the fact dead that there's somewhat more attenuation
+dan hakikat mati yang ada agak lebih pengecilan
+
+00:26:33,000 --> 00:26:36,000
+outside the pass band at the ideal filter
+di luar band pas pada penapis yang ideal
+
+00:26:36,000 --> 00:26:42,000
+is what suggests in fact dead the first-order hold or linear interpolation
+adalah apa yang mencadangkan sebenarnya mati memegang pertama-perintah atau interpolasi linear
+
+00:26:42,000 --> 00:26:46,000
+gives us a somewhat smoother approximation to the original
+memberikan kita anggaran yang agak licin dengan yang asal
+
+00:26:46,000 --> 00:26:49,000
+signal then the zero-order hold does
+isyarat maka memegang sifar perintah tidak
+
+00:26:49,000 --> 00:26:52,000
+and so in fact just to compare these two
+dan sebagainya sebenarnya hanya untuk membandingkan kedua-dua
+
+00:26:52,000 --> 00:26:56,000
+we can see that here is
+kita dapat melihat bahawa di sini adalah
+
+00:26:56,000 --> 00:26:59,000
+the ideal filter here is
+penapis yang sesuai di sini ialah
+
+00:26:59,000 --> 00:27:02,000
+the zero-order hold corresponding to
+memegang sifar pesanan yang bersamaan dengan
+
+00:27:02,000 --> 00:27:05,000
+generating a boxcar kinda reconstruction
+menjana GerbonG barang agak pembinaan semula
+
+00:27:05,000 --> 00:27:12,000
+and here is the first order hold corresponding to a linear interpolation
+dan di sini adalah memegang perintah pertama yang berpadanan dengan interpolasi linear
+
+00:27:12,000 --> 00:27:16,000
+now in fact in many sampling systems
+kini sebenarnya dalam sistem pensampelan banyak
+
+00:27:16,000 --> 00:27:20,000
+in any sampling system really we need to use some approximation
+dalam mana-mana sistem pensampelan benar-benar kita perlu menggunakan beberapa anggaran
+
+00:27:20,000 --> 00:27:25,000
+to the low-pass filter and very often in fact
+kepada penapis laluan rendah dan seringkali sebenarnya
+
+00:27:25,000 --> 00:27:29,000
+what is done in many sampling systems is the first to use
+apa yang dilakukan dalam sistem pensampelan banyak adalah yang pertama untuk menggunakan
+
+00:27:29,000 --> 00:27:33,000
+just a zero-order hold and then follow the zero-order hold
+hanya memegang sifar pesanan dan kemudian ikut memegang sifar pesanan
+
+00:27:33,000 --> 00:27:37,000
+with some additional 0 pass filtering
+dengan beberapa tambahan 0 pas penapisan
+
+00:27:37,000 --> 00:27:41,000
+well to illustrate some with these ideas
+baik untuk menggambarkan beberapa dengan idea-idea
+
+00:27:41,000 --> 00:27:44,000
+and the notion love doing reconstruction
+dan tanggapan suka melakukan pembinaan semula
+
+00:27:44,000 --> 00:27:48,000
+with a zero-order hold a first-order hold and then in fact
+dengan pesanan sifar memegang memegang pertama-perintah dan kemudian sebenarnya
+
+00:27:48,000 --> 00:27:53,000
+are ending to that some additional 0 pass filtering
+adalah berakhir dengan beberapa tambahan penapisan 0 pas
+
+00:27:53,000 --> 00:27:57,000
+what I'd like to do is is demonstrator illustrate
+apa yang saya ingin lakukan adalah adalah demonstrasi menggambarkan
+
+00:27:57,000 --> 00:28:01,000
+sampling and interpolation in the context love some images
+pensampelan dan interpolasi dalam konteks suka sesetengah imej
+
+00:28:01,000 --> 00:28:05,000
+image of course is a two-dimensional signal the
+imej sudah tentu adalah isyarat dua dimensi yang
+
+00:28:05,000 --> 00:28:09,000
+the independent variables are spatial variables not time variables
+pembolehubah bebas adalah pembolehubah spatial bukan masa pembolehubah
+
+00:28:09,000 --> 00:28:15,000
+and of course we can sample in both or the spatial dimensions both in X&Y
+dan sudah tentu kita boleh sampel dalam kedua-dua atau dimensi spatial dalam kedua-dua X & Y
+
+00:28:15,000 --> 00:28:19,000
+and were chosen as so
+dan dipilih sebagaimana yang
+
+00:28:19,000 --> 00:28:22,000
+a possibly appropriate choice for
+pilihan mungkin sesuai untuk
+
+00:28:22,000 --> 00:28:29,000
+an image is again our friend and colleague JBJ 48
+imej sekali lagi rakan dan rakan sekerja kami JBJ 48
+
+00:28:29,000 --> 00:28:33,000
+so let's begin with the original image which we then
+jadi mari kita bermula dengan imej asal yang kemudiannya kami
+
+00:28:33,000 --> 00:28:38,000
+want to sample and reconstruct and a sampling is done by
+ingin mencuba dan membina semula dan sampel yang dilakukan dengan
+
+00:28:38,000 --> 00:28:43,000
+effectively multiplying by appalls both horizontally and vertically
+berkesan mendarab oleh appalls mendatar dan menegak
+
+00:28:43,000 --> 00:28:46,000
+the sample picture is then the next one
+gambar sampel adalah kemudian yang seterusnya
+
+00:28:46,000 --> 00:28:51,000
+that I show and as you can see this corresponds in effect
+bahawa saya menunjukkan dan seperti yang anda lihat ini sepadan berkuat kuasa
+
+00:28:51,000 --> 00:28:55,000
+to extracting small brightness elements I did the original image in fact
+untuk mengekstrak elemen kecerahan kecil yang saya lakukan imej asal sebenarnya
+
+00:28:55,000 --> 00:29:01,000
+let's look in a little closer and what you can see essentially is that
+mari kita lihat dalam sedikit hampir dan apa yang anda boleh lihat pada dasarnya ialah
+
+00:29:01,000 --> 00:29:04,000
+well we have of course tonight impulses spatially but
+baik kita ada kursus impuls malam spatial tetapi
+
+00:29:04,000 --> 00:29:07,000
+small spatial pillars dead
+tiang ruang kecil mati
+
+00:29:07,000 --> 00:29:11,000
+implement the sampling for us okay now
+melaksanakan pensampelan bagi kita okay sekarang
+
+00:29:11,000 --> 00:29:15,000
+going back to the original sample picture
+akan kembali kepada sampel gambar asal
+
+00:29:15,000 --> 00:29:19,000
+we know that a picture can be reconstructed by low-pass filtering from
+kita tahu bahawa gambar boleh dibina semula oleh penapisan laluan rendah dari
+
+00:29:19,000 --> 00:29:21,000
+the samples and in fact
+sampel dan sebenarnya
+
+00:29:21,000 --> 00:29:26,000
+we can do that optically in this case by simply d focusing the camera
+yang boleh kita lakukan secara optik bahawa dalam kes ini dengan hanya memberi tumpuan d kamera
+
+00:29:26,000 --> 00:29:31,000
+and when we do that what happens is that we smear out the picture
+dan apabila kita bahawa apa yang berlaku ialah kami memburuk-burukkan keluar gambar
+
+00:29:31,000 --> 00:29:35,000
+or affectively convolved the impulses with the point spread function of the
+atau affectively convolved impuls dengan fungsi titik penyebaran
+
+00:29:35,000 --> 00:29:36,000
+optical system
+sistem optik
+
+00:29:36,000 --> 00:29:40,000
+an this then is not too bad a reconstruction
+satu ini maka tidak terlalu buruk pembinaan semula yang
+
+00:29:40,000 --> 00:29:46,000
+so thats a an approximate reconstruction and focusing back now
+jadi thats satu pembinaan semula anggaran dan memberi tumpuan kembali sekarang
+
+00:29:46,000 --> 00:29:53,000
+what we have again is the sample picture
+apa yang kita ada sekali lagi adalah gambar sampel
+
+00:29:53,000 --> 00:29:57,000
+now these images are in fact a can often of
+sekarang imej-imej ini adalah sebenarnya boleh sering daripada
+
+00:29:57,000 --> 00:30:01,000
+a computer display and a common procedure in
+paparan komputer dan prosedur biasa dalam
+
+00:30:01,000 --> 00:30:05,000
+computer-generated are displayed image is is in fact
+imej janaan komputer dipaparkan adalah sebenarnya
+
+00:30:05,000 --> 00:30:10,000
+the use of a zero-order hold and if the sampling rate is high enough
+penggunaan memegang sifar pesanan dan jika kadar pensampelan cukup tinggi
+
+00:30:10,000 --> 00:30:14,000
+then that actually works reasonably well so now
+maka yang sebenarnya berfungsi agak baik jadi sekarang
+
+00:30:14,000 --> 00:30:17,000
+let's look at the result of applying a zero-order hold
+mari kita lihat hasil daripada memohon memegang sifar pesanan
+
+00:30:17,000 --> 00:30:20,000
+to the sampled image that I
+kepada imej sampel yang saya
+
+00:30:20,000 --> 00:30:24,000
+just showed
+hanya menunjukkan
+
+00:30:24,000 --> 00:30:29,000
+the zero-order hold corresponds to replacing the impulses by
+memegang sifar pesanan sepadan dengan menggantikan impuls oleh
+
+00:30:29,000 --> 00:30:33,000
+rectangles and you can see that what that generates
+segiempat tepat dan anda dapat melihat bahawa apa yang menjana
+
+00:30:33,000 --> 00:30:36,000
+is a mosaic affect as you would
+adalah mozek menjejaskan seperti yang anda
+
+00:30:36,000 --> 00:30:40,000
+expect and in fact let's going a little closer and
+mengharapkan dan sebenarnya mari kita pergi sedikit hampir dan
+
+00:30:40,000 --> 00:30:44,000
+emphasize the mosaic affect you can see that essentially where they were
+menekankan mozek menjejaskan anda dapat melihat bahawa pada dasarnya di mana mereka
+
+00:30:44,000 --> 00:30:46,000
+impulses previously
+impuls sebelum ini
+
+00:30:46,000 --> 00:30:50,000
+there are now rectangles with those brightness values
+kini terdapat empat persegi panjang dengan nilai-nilai kecerahan
+
+00:30:50,000 --> 00:30:55,000
+a very common procedure with computer-generated images is the first
+prosedur yang sangat biasa dengan imej janaan komputer adalah yang pertama
+
+00:30:55,000 --> 00:30:58,000
+20 order holders we've done here
+20 pemegang perintah yang telah kami lakukan di sini
+
+00:30:58,000 --> 00:31:03,000
+and then follow that with some additional ok pass filtering and in fact
+dan kemudian ikuti bahawa dengan beberapa penapisan pas ok tambahan dan sebenarnya
+
+00:31:03,000 --> 00:31:07,000
+we can do that low pass filtering now again by D focusing the camera
+yang boleh kita lakukan penapisan laluan rendah kini sekali lagi oleh D memberi tumpuan kamera
+
+00:31:07,000 --> 00:31:11,000
+and you can't begin to see
+dan anda tidak boleh mula melihat
+
+00:31:11,000 --> 00:31:15,000
+dead with the zero-order all plus the low-pass filtering the reconstruction is
+mati dengan sifar untuk semua campur-pass rendah menapis pembinaan semula adalah
+
+00:31:15,000 --> 00:31:17,000
+not that bad
+tidak yang buruk
+
+00:31:17,000 --> 00:31:20,000
+well let's go back to the full
+baik mari kita kembali ke penuh
+
+00:31:20,000 --> 00:31:23,000
+image with the zero-order hold
+imej dengan memegang sifar pesanan
+
+00:31:23,000 --> 00:31:29,000
+and again now the effective low pass filter I will be
+dan sekali lagi kini penapis lulus rendah berkesan saya akan
+
+00:31:29,000 --> 00:31:33,000
+somewhat better and let's tee focus again year
+agak lebih baik dan mari kita tee tumpuan sekali lagi tahun
+
+00:31:33,000 --> 00:31:36,000
+and you can begin to see that this is
+dan anda boleh mula melihat bahawa ini adalah
+
+00:31:36,000 --> 00:31:40,000
+a reasonable reconstruction with the mosaic
+pembinaan semula yang berpatutan dengan mozek
+
+00:31:40,000 --> 00:31:44,000
+in fact with this back in focus you can
+sebenarnya dengan belakang ini fokus anda boleh
+
+00:31:44,000 --> 00:31:48,000
+apply your own low-pass filtering to it either by squinting
+menggunakan penapisan laluan rendah anda sendiri kepadanya sama ada oleh juling
+
+00:31:48,000 --> 00:31:52,000
+or if you have the right or wrong kind of my classes either taking them off for
+atau jika anda mempunyai hak atau jenis yang salah kelas saya sama ada mengambil mereka kira
+
+00:31:52,000 --> 00:31:55,000
+putting them on
+meletakkan mereka pada
+
+00:31:55,000 --> 00:32:00,000
+now in addition to the zero-order hold weekend of course apply a first-order
+sekarang sebagai tambahan kepada sifar pesanan memegang hujung minggu sudah tentu memohon satu pesanan pertama
+
+00:32:00,000 --> 00:32:02,000
+hold and that would
+memegang dan yang akan
+
+00:32:02,000 --> 00:32:07,000
+correspond to replacing the impulses instead of with rectangles as we have
+sesuai dengan menggantikan impuls bukan dengan segiempat tepat seperti yang kita mempunyai
+
+00:32:07,000 --> 00:32:08,000
+here
+di sini
+
+00:32:08,000 --> 00:32:11,000
+replacing them with triangles an
+menggantikannya dengan segitiga satu
+
+00:32:11,000 --> 00:32:15,000
+so now let's take a look at the result all a first-order hold applied to the
+jadi sekarang mari kita lihat hasilnya semua memegang tertib pertama digunakan untuk
+
+00:32:15,000 --> 00:32:18,000
+original samples
+sampel asal
+
+00:32:18,000 --> 00:32:22,000
+and you can see now that the reconstruction is somewhat smoother
+dan anda boleh lihat sekarang bahawa pembinaan semula ini agak licin
+
+00:32:22,000 --> 00:32:25,000
+because the fact that we're using an impulse response
+kerana hakikat bahawa kita menggunakan sambutan denyut
+
+00:32:25,000 --> 00:32:29,000
+that somewhat smoother or a corresponding frequency response that
+yang agak licin atau sambutan frekuensi sama yang
+
+00:32:29,000 --> 00:32:31,000
+has a sharper cut off
+telah lebih tajam memotong
+
+00:32:31,000 --> 00:32:35,000
+i emphasize again that this is a somewhat low pass filtered version of
+i menekankan sekali lagi bahawa ini adalah versi pas ditapis yang agak rendah
+
+00:32:35,000 --> 00:32:36,000
+the original because
+kerana asal
+
+00:32:36,000 --> 00:32:39,000
+we have under sampled some what spatially
+kami telah disampel di bawah beberapa apa spatial
+
+00:32:39,000 --> 00:32:46,000
+to bring out the point that I want to illustrate
+untuk membawa keluar titik yang saya mahu untuk menggambarkan
+
+00:32:46,000 --> 00:32:50,000
+okay to emphasize these effects
+okay untuk menekankan kesan-kesan ini
+
+00:32:50,000 --> 00:32:53,000
+even more what I'd like to do is go through
+lebih apa yang saya ingin lakukan adalah melalui
+
+00:32:53,000 --> 00:32:57,000
+basically the same sequence again but in this case what we'll do
+pada dasarnya urutan yang sama sekali lagi tetapi dalam kes ini apa yang kita akan lakukan
+
+00:32:57,000 --> 00:33:02,000
+is double the sample spacing both horizontal horizontally and vertically
+didwi sampel jarak kedua-dua mendatar mendatar dan menegak
+
+00:33:02,000 --> 00:33:07,000
+this of course means there will be even more highly under sampled been
+ini sudah tentu bermakna akan ada lebih sangat di bawah disampel menjadi
+
+00:33:07,000 --> 00:33:11,000
+in the ones that I preview show previously showed and so the result of
+dalam orang-orang yang saya pratonton menunjukkan sebelum ini menunjukkan dan sebagainya hasil daripada
+
+00:33:11,000 --> 00:33:14,000
+the reconstructions with some low pass filtering
+pembentukan-semula dengan beberapa penapisan laluan rendah
+
+00:33:14,000 --> 00:33:18,000
+will be a much more low-pass filtered image
+akan laluan rendah imej yang lebih ditapis
+
+00:33:18,000 --> 00:33:24,000
+so we now have the sample picture but I've now under sampled considerably
+jadi kami kini mempunyai gambar sampel tetapi saya kini di bawah disampel dengan ketara
+
+00:33:24,000 --> 00:33:28,000
+more and you can see the effect of the sampling
+lebih dan anda boleh melihat kesan persampelan
+
+00:33:28,000 --> 00:33:31,000
+and if we now apply is zero-order hold
+dan jika kita kini memohon adalah sifar-perintah memegang
+
+00:33:31,000 --> 00:33:35,000
+to this picture we will again get a mosaic and lets
+untuk gambar ini kita sekali lagi akan mendapat mozek dan membolehkan
+
+00:33:35,000 --> 00:33:40,000
+look at that and that mosaic of course looks
+melihat itu dan mozek sudah tentu kelihatan
+
+00:33:40,000 --> 00:33:44,000
+even block here than the original and again emphasizes the fact that the
+walaupun blok di sini daripada yang asal dan sekali lagi menekankan hakikat bahawa
+
+00:33:44,000 --> 00:33:46,000
+zero-order hold
+sifar-perintah memegang
+
+00:33:46,000 --> 00:33:51,000
+simply corresponds to filling in squares or replacing the impulses
+hanya sepadan dengan mengisi dua atau menggantikan impuls
+
+00:33:51,000 --> 00:33:54,000
+by squares with the corresponding brightness
+oleh kuasa dua dengan kecerahan yang sama
+
+00:33:54,000 --> 00:33:59,000
+values finally if we instead of a zero-order hold
+nilai akhirnya jika kita bukannya memegang sifar pesanan
+
+00:33:59,000 --> 00:34:04,000
+use a first-order hold corresponding to two-dimensional triangles in places
+menggunakan memegang pertama pesanan yang sepadan dengan segi tiga dua dimensi di tempat-tempat
+
+00:34:04,000 --> 00:34:08,000
+in place at these original blocks what we get is
+di tempat di blok-blok asal apa yang kita dapat adalah
+
+00:34:08,000 --> 00:34:13,000
+the next image and that again is a smoother reconstruction consistent with
+imej yang akan datang dan sekali lagi adalah pembinaan semula yang lebih lancar selaras dengan
+
+00:34:13,000 --> 00:34:17,000
+the fact that the triangles are smoother than the rectangles
+hakikat bahawa segi tiga adalah lebih licin berbanding segi empat tepat
+
+00:34:17,000 --> 00:34:21,000
+again i emphasize that this looks so highly low-pass filtered
+sekali lagi i menekankan bahawa ini kelihatan begitu sangat laluan rendah ditapis
+
+00:34:21,000 --> 00:34:25,000
+because of the fact that we've under sampled so severely
+kerana fakta bahawa kami telah disampel di bawah begitu teruk
+
+00:34:25,000 --> 00:34:31,000
+to essentially emphasize the effect
+pada dasarnya menekankan kesan
+
+00:34:31,000 --> 00:34:34,000
+as I mentioned the images that we
+seperti yang saya katakan imej yang kita
+
+00:34:34,000 --> 00:34:37,000
+just looked at were taken from a computer although
+hanya melihat telah diambil dari komputer walaupun
+
+00:34:37,000 --> 00:34:40,000
+because the original images were continuous-time
+kerana imej asal adalah berterusan masa
+
+00:34:40,000 --> 00:34:45,000
+images or more specifically continuous space that is the independent variable
+imej atau lebih khusus berterusan ruang yang pembolehubah bebas
+
+00:34:45,000 --> 00:34:46,000
+is a spatial variable
+adalah pembolehubah spatial
+
+00:34:46,000 --> 00:34:50,000
+now computer processing
+kini pemprosesan komputer
+
+00:34:50,000 --> 00:34:54,000
+love signals pictures speech or whatever the signals are
+isyarat cinta gambar ucapan atau apa sahaja isyarat adalah
+
+00:34:54,000 --> 00:34:57,000
+is very important and useful because
+adalah sangat penting dan berguna kerana
+
+00:34:57,000 --> 00:35:02,000
+it offers a lot of flexibility and in fact the kinds of things that I showed
+ia menawarkan banyak fleksibiliti dan sebenarnya yang jenis perkara yang saya menunjukkan
+
+00:35:02,000 --> 00:35:03,000
+these pictures
+gambar-gambar ini
+
+00:35:03,000 --> 00:35:06,000
+would have been very hard to do without
+akan menjadi sangat sukar untuk dilakukan tanpa
+
+00:35:06,000 --> 00:35:10,000
+in fact doing computer processing
+sebenarnya melakukan pemprosesan komputer
+
+00:35:10,000 --> 00:35:14,000
+well in computer processing %uh any kind of signal
+baik dalam pemprosesan komputer% uh apa-apa jenis isyarat
+
+00:35:14,000 --> 00:35:18,000
+basically what's required is dead
+pada dasarnya apa yang diperlukan telah mati
+
+00:35:18,000 --> 00:35:24,000
+we do the processing in the context of discrete-time signals and discrete-time
+kita melakukan pemprosesan dalam konteks isyarat diskret masa dan diskret masa
+
+00:35:24,000 --> 00:35:25,000
+processing
+pemprosesan
+
+00:35:25,000 --> 00:35:29,000
+because it the fact dead a computer is run off the clock
+kerana ia hakikat mati komputer dijalankan di luar waktu
+
+00:35:29,000 --> 00:35:32,000
+and essentially things happen in the computer
+dan pada dasarnya perkara yang berlaku di dalam komputer
+
+00:35:32,000 --> 00:35:39,000
+in a as a sequence of numbers and as a sequence of events
+dalam sebagai urutan nombor dan sebagai urutan peristiwa-peristiwa
+
+00:35:39,000 --> 00:35:43,000
+well it turns out dead the sampling theorem in fact as i've indicated
+dan ia ternyata mati teorem pensampelan sebenarnya seperti yang telah saya ditunjukkan
+
+00:35:43,000 --> 00:35:44,000
+previously
+sebelum
+
+00:35:44,000 --> 00:35:48,000
+provides us with a very nice mechanism
+memberikan kita satu mekanisme yang sangat bagus
+
+00:35:48,000 --> 00:35:52,000
+for converting are continuous-time signals
+untuk menukar adalah isyarat berterusan masa
+
+00:35:52,000 --> 00:35:57,000
+into discrete-time signals for example for computer processing
+menjadi isyarat diskret masa sebagai contoh untuk pemprosesan komputer
+
+00:35:57,000 --> 00:36:02,000
+or in fact if it's not a computer for some other kind of discrete-time or
+atau sebenarnya jika ia bukan komputer untuk beberapa jenis lain diskret masa atau
+
+00:36:02,000 --> 00:36:04,000
+perhaps digital processing
+pemprosesan mungkin digital
+
+00:36:04,000 --> 00:36:08,000
+well the basic idea as i've indicated previously
+juga idea asas seperti yang telah saya dinyatakan sebelum ini
+
+00:36:08,000 --> 00:36:14,000
+is to carry out discreet I processing
+adalah untuk menjalankan pemprosesan saya bijaksana
+
+00:36:14,000 --> 00:36:17,000
+of continuous-time signals by
+isyarat berterusan masa oleh
+
+00:36:17,000 --> 00:36:21,000
+first converting the continuous-time signal
+pertama menukar isyarat berterusan masa
+
+00:36:21,000 --> 00:36:25,000
+to a discrete-time signal carry out
+kepada isyarat diskret masa menjalankan
+
+00:36:25,000 --> 00:36:29,000
+the appropriate discrete-time processing
+pemprosesan diskret-masa yang sesuai
+
+00:36:29,000 --> 00:36:34,000
+love the discrete-time signal and then after we're done with that process
+suka isyarat diskret masa dan kemudian selepas kami selesai dengan proses yang
+
+00:36:34,000 --> 00:36:35,000
+saying
+berkata
+
+00:36:35,000 --> 00:36:39,000
+converting from the discrete-time sequence
+menukar dari urutan diskret masa
+
+00:36:39,000 --> 00:36:42,000
+back to a continuous-time signal
+kembali kepada isyarat berterusan masa
+
+00:36:42,000 --> 00:36:48,000
+corresponding to the output that we have here
+sepadan dengan output yang kami ada di sini
+
+00:36:48,000 --> 00:36:52,000
+well in the remainder this lecture what I'd like to analyze
+baik dalam bakinya kuliah ini apa yang saya ingin untuk menganalisis
+
+00:36:52,000 --> 00:36:56,000
+is the first step in that process namely the conversion
+adalah langkah pertama dalam proses itu iaitu penukaran
+
+00:36:56,000 --> 00:37:00,000
+from a continuous-time signal to a discrete-time signal
+daripada isyarat berterusan masa kepada isyarat diskret masa
+
+00:37:00,000 --> 00:37:03,000
+and understand how the
+dan memahami bagaimana
+
+00:37:03,000 --> 00:37:07,000
+to relate both in the time domain in the frequency domain
+untuk mengaitkan kedua-dua dalam domain masa dalam domain frekuensi
+
+00:37:07,000 --> 00:37:11,000
+and in the next lecture will be analyzing and demonstrating
+dan dalam kuliah seterusnya akan menganalisis dan menunjukkan
+
+00:37:11,000 --> 00:37:15,000
+the overall system including some intermediate processing
+sistem secara keseluruhan termasuk beberapa pemprosesan pertengahan
+
+00:37:15,000 --> 00:37:18,000
+so be first step in the process
+jadi langkah pertama dalam proses
+
+00:37:18,000 --> 00:37:22,000
+is the conversion from a continuous-time signal
+ialah penukaran dari isyarat berterusan masa
+
+00:37:22,000 --> 00:37:27,000
+to a discrete-time signal and that can be thought of as a process that involves
+kepada isyarat diskret masa dan yang boleh dianggap sebagai satu proses yang melibatkan
+
+00:37:27,000 --> 00:37:33,000
+two steps although in practical terms it may not be implemented specifically
+dua langkah walaupun dari segi praktikal ia tidak boleh dilaksanakan secara khusus
+
+00:37:33,000 --> 00:37:36,000
+as these two steps the two steps are
+kerana kedua-dua langkah-langkah yang kedua-dua langkah-langkah yang
+
+00:37:36,000 --> 00:37:40,000
+to first convert from the continuous-time
+untuk pertama menukar dari masa berterusan
+
+00:37:40,000 --> 00:37:44,000
+for continuous-time continuous signal
+untuk isyarat berterusan berterusan masa
+
+00:37:44,000 --> 00:37:49,000
+to an impulse train through a sampling process
+untuk kereta api gerak hati melalui proses persampelan
+
+00:37:49,000 --> 00:37:52,000
+and then to convert
+dan kemudian untuk menukar
+
+00:37:52,000 --> 00:37:56,000
+that impulse train to a discrete-time sequence
+bahawa kereta api gerak hati untuk urutan diskret masa
+
+00:37:56,000 --> 00:38:00,000
+and the discrete-time sequence exit then
+dan urutan keluar diskret-masa kemudian
+
+00:38:00,000 --> 00:38:04,000
+is simply then a sequence a bad news
+adalah semata-mata maka urutan berita yang tidak baik
+
+00:38:04,000 --> 00:38:09,000
+which are the samples all the continuous-time signal
+yang merupakan sampel semua isyarat berterusan masa
+
+00:38:09,000 --> 00:38:13,000
+and as we'll see as we walk through this basically this step
+dan seperti yang kita akan melihat seperti yang kita berjalan melalui ini pada dasarnya langkah ini
+
+00:38:13,000 --> 00:38:16,000
+going from the impulse train to the sequence
+pergi dari kereta api gerak hati urutan
+
+00:38:16,000 --> 00:38:21,000
+corresponds principally to worry labeling staff where
+sepadan terutamanya bimbang kakitangan pelabelan mana
+
+00:38:21,000 --> 00:38:25,000
+we pic of the impulse bad news
+kita Pic berita buruk impuls
+
+00:38:25,000 --> 00:38:28,000
+and use those as the sequence values
+dan menggunakan mereka sebagai nilai-nilai urutan
+
+00:38:28,000 --> 00:38:32,000
+up for the discrete-time signal so
+untuk isyarat diskret masa supaya
+
+00:38:32,000 --> 00:38:37,000
+what I'd like to do as a first step in understanding this process
+apa yang saya ingin lakukan sebagai langkah pertama dalam memahami proses ini
+
+00:38:37,000 --> 00:38:42,000
+is to analyze it in particular with our attention focused on trying to
+adalah untuk menganalisis khususnya dengan perhatian kita tertumpu kepada cuba untuk
+
+00:38:42,000 --> 00:38:43,000
+understand
+memahami
+
+00:38:43,000 --> 00:38:46,000
+what the relationship is in the frequency domain
+apa hubungan yang berada dalam domain frekuensi
+
+00:38:46,000 --> 00:38:50,000
+between the discrete-time Fourier transform
+antara Fourier diskret masa mengubah
+
+00:38:50,000 --> 00:38:53,000
+love the sequence discrete-time signal
+suka urutan isyarat diskret masa
+
+00:38:53,000 --> 00:38:57,000
+and the continuous-time 48 transform
+dan berterusan masa 48 mengubah
+
+00:38:57,000 --> 00:39:00,000
+love the original on sampled and then
+suka asal pada sampel dan kemudian
+
+00:39:00,000 --> 00:39:04,000
+the sampled signal so let's go through that
+isyarat yang disampel jadi mari kita melalui yang
+
+00:39:04,000 --> 00:39:07,000
+and in particular
+dan khususnya
+
+00:39:07,000 --> 00:39:12,000
+what we have is a process where the continuous-time signal
+apa yang kita ada adalah satu proses di mana isyarat berterusan masa
+
+00:39:12,000 --> 00:39:15,000
+is of course modulator multiplied
+sudah tentu modulator didarab
+
+00:39:15,000 --> 00:39:19,000
+by an impulse train and that gives us then
+oleh kereta api gerak hati dan yang memberikan kita maka
+
+00:39:19,000 --> 00:39:23,000
+another continuous-time signal we're still in the continuous time domain
+satu lagi isyarat berterusan masa kami masih dalam domain masa berterusan
+
+00:39:23,000 --> 00:39:28,000
+it gives us another continuous-time signal which is an impulse train
+ia memberikan kita satu lagi isyarat berterusan masa yang merupakan kereta api gerak hati
+
+00:39:28,000 --> 00:39:31,000
+and in fact we've gone through this analysis
+dan sebenarnya kita telah melalui analisis ini
+
+00:39:31,000 --> 00:39:34,000
+previously and what we have is
+sebelum ini dan apa yang kita ada adalah
+
+00:39:34,000 --> 00:39:39,000
+this multiplication or taking this term inside
+pendaraban ini atau mengambil istilah ini di dalam
+
+00:39:39,000 --> 00:39:43,000
+the summation and recognizing that the impulse train
+penjumlahan dan menyedari bahawa kereta api gerak hati
+
+00:39:43,000 --> 00:39:46,000
+is is simply an impulse train
+adalah hanya kereta api gerak hati
+
+00:39:46,000 --> 00:39:50,000
+with areas above the impulses which
+dengan kawasan di atas impuls yang
+
+00:39:50,000 --> 00:39:53,000
+are the samples above the continuous-time function
+adalah contoh tersebut di atas fungsi berterusan masa
+
+00:39:53,000 --> 00:39:59,000
+we can then carry out the analysis in the frequency domain
+kita boleh menjalankan analisis dalam domain frekuensi
+
+00:39:59,000 --> 00:40:03,000
+now in the time domain we have a multiplication process so in the
+kini dalam domain masa yang kita ada satu proses pendaraban demikian dalam
+
+00:40:03,000 --> 00:40:04,000
+frequency domain
+domain frekuensi
+
+00:40:04,000 --> 00:40:08,000
+we have a convolution above the Fourier transform
+kita mempunyai kekusutan di atas Fourier
+
+00:40:08,000 --> 00:40:13,000
+love the continuous-time signal the original signal
+suka masa berterusan isyarat isyarat asal
+
+00:40:13,000 --> 00:40:18,000
+and the Fourier transform of the impulse train which is itself an impulse train
+dan jelmaan Fourier kereta api gerak hati yang sendiri kereta api gerak hati
+
+00:40:18,000 --> 00:40:22,000
+so in the frequency domain then the 48 transform
+jadi dalam domain frekuensi maka 48 mengubah
+
+00:40:22,000 --> 00:40:26,000
+of the sampled signal which is an impulse train
+isyarat yang disampel yang merupakan kereta api gerak hati
+
+00:40:26,000 --> 00:40:30,000
+is the convolution %uh the Fourier transform up the sampling
+adalah kekusutan yang% uh Fourier sehingga pensampelan
+
+00:40:30,000 --> 00:40:36,000
+function PFT and the Fourier transform of the sampled signal
+fungsi PFT dan jelmaan Fourier isyarat yang disampel
+
+00:40:36,000 --> 00:40:41,000
+since the sampling signal is a periodic imposed strain
+sejak isyarat pensampelan ialah tekanan berkala yang dikenakan
+
+00:40:41,000 --> 00:40:44,000
+its Fourier transform is an impulse train
+Fourier adalah kereta api gerak hati
+
+00:40:44,000 --> 00:40:49,000
+and consequently carrying out this convolution
+dan seterusnya menjalankan kekusutan ini
+
+00:40:49,000 --> 00:40:52,000
+in effect says that this for EA transform
+berkuat kuasa mengatakan bahawa ini untuk EA mengubah
+
+00:40:52,000 --> 00:40:57,000
+simply gets replicated at each of the locations of these impulses
+hanya mendapat replika di setiap lokasi dorongan ini
+
+00:40:57,000 --> 00:41:00,000
+and finally what we end up with an
+dan akhirnya apa yang kita berakhir dengan
+
+00:41:00,000 --> 00:41:04,000
+is a 48 transform after
+adalah 48 mengubah selepas
+
+00:41:04,000 --> 00:41:07,000
+the sampling process which is
+proses persampelan yang
+
+00:41:07,000 --> 00:41:11,000
+the original for EA transform love the continuous
+asal EA mengubah cinta berterusan
+
+00:41:11,000 --> 00:41:14,000
+signal but and it to itself
+isyarat tetapi dan kepada dirinya
+
+00:41:14,000 --> 00:41:17,000
+shifted by integer multiples
+beralih oleh gandaan integer
+
+00:41:17,000 --> 00:41:21,000
+above the sampling frequency and so this is the basic equation then
+atas kekerapan pensampelan dan jadi ini adalah persamaan asas kemudian
+
+00:41:21,000 --> 00:41:26,000
+that tells us in the frequency domain what happens
+yang memberitahu kita dalam domain frekuensi apa yang berlaku
+
+00:41:26,000 --> 00:41:30,000
+through the first part all this two-step process
+melalui bahagian yang pertama semua proses dua langkah ini
+
+00:41:30,000 --> 00:41:35,000
+now I emphasize that is a two-step process the first process
+sekarang saya menekankan bahawa adalah satu proses dua langkah proses pertama
+
+00:41:35,000 --> 00:41:38,000
+is sampling where we're still essentially
+adalah pensampelan di mana kami masih dasarnya
+
+00:41:38,000 --> 00:41:42,000
+in the continuous-time world the next step
+dalam dunia yang berterusan masa langkah seterusnya
+
+00:41:42,000 --> 00:41:45,000
+is essentially a relabeling process
+asasnya adalah satu proses melabelkan semula
+
+00:41:45,000 --> 00:41:50,000
+where we convert that impulse train simply to a sequence
+di mana kita menukar bahawa kereta api gerak hati semata-mata untuk urutan
+
+00:41:50,000 --> 00:41:53,000
+so let's look at the next step
+jadi mari kita lihat langkah seterusnya
+
+00:41:53,000 --> 00:41:57,000
+the next step is to take the impulse train and converted
+langkah seterusnya adalah untuk mengambil kereta api gerak hati dan ditukar
+
+00:41:57,000 --> 00:42:01,000
+through a process to sequence
+melalui proses untuk urutan
+
+00:42:01,000 --> 00:42:04,000
+and the sequence values are simply then
+dan nilai-nilai urutan hanya kemudian
+
+00:42:04,000 --> 00:42:09,000
+samples 0 the original continuous signal
+sampel 0 isyarat berterusan asal
+
+00:42:09,000 --> 00:42:12,000
+and so now we
+dan jadi sekarang kita
+
+00:42:12,000 --> 00:42:16,000
+can analyze this and what we want to relate
+boleh menganalisis ini dan apa yang kita mahu untuk mengaitkan
+
+00:42:16,000 --> 00:42:19,000
+is the discrete-time Fourier transform
+adalah Fourier diskret masa mengubah
+
+00:42:19,000 --> 00:42:23,000
+love this and the continuous 540 a transformer
+suka ini dan berterusan 540 pengubah
+
+00:42:23,000 --> 00:42:27,000
+this or in fact that continues type for a transformer affects up to you
+ini atau sebenarnya yang terus jenis untuk pengubah menjejaskan sehingga anda
+
+00:42:27,000 --> 00:42:30,000
+safety okay
+keselamatan okay
+
+00:42:30,000 --> 00:42:34,000
+well we have the imposed strain
+baik kita mempunyai tekanan yang dikenakan
+
+00:42:34,000 --> 00:42:38,000
+and its Fourier transform we can
+dan Fourier mengubah kita boleh
+
+00:42:38,000 --> 00:42:42,000
+get by simply evaluating for EA transform
+mendapatkan dengan hanya menilai untuk EA mengubah
+
+00:42:42,000 --> 00:42:45,000
+and since the Fourier transform love this
+dan sejak Fourier mengubah cinta ini
+
+00:42:45,000 --> 00:42:50,000
+since this corresponds to an impulse train the 48 transformed by the time we
+kerana ini sepadan dengan kereta api gerak hati 48 berubah apabila kita
+
+00:42:50,000 --> 00:42:51,000
+change them something in it rolls
+menukar mereka sesuatu di dalamnya gulung
+
+00:42:51,000 --> 00:42:55,000
+will then have this in paul's replace
+akan mempunyai ini dalam paul menggantikan
+
+00:42:55,000 --> 00:42:58,000
+524 e a transformer the shift in polls
+524 e pengubah peralihan dalam pemilihan
+
+00:42:58,000 --> 00:43:02,000
+which is this exponential factor so this expression
+yang merupakan faktor eksponen ini supaya ungkapan ini
+
+00:43:02,000 --> 00:43:06,000
+is before a transformer the impulse train
+adalah sebelum pengubah kereta api gerak hati
+
+00:43:06,000 --> 00:43:10,000
+the continuous time Fourier transform and alternatively
+masa yang berterusan Fourier mengubah dan alternatif
+
+00:43:10,000 --> 00:43:13,000
+we can look at the Fourier transform all
+kita boleh melihat Fourier mengubah semua
+
+00:43:13,000 --> 00:43:16,000
+the sequence and this of course is
+urutan dan ini sudah tentu adalah
+
+00:43:16,000 --> 00:43:21,000
+a discrete-time Fourier transform
+Fourier diskret masa mengubah
+
+00:43:21,000 --> 00:43:27,000
+so we have the continuous time Fourier transform the imposed strain
+jadi kami mempunyai masa Fourier berterusan mengubah tekanan yang dikenakan
+
+00:43:27,000 --> 00:43:30,000
+we have the discrete-time Fourier transform the sequence
+kita mempunyai Fourier diskret masa mengubah urutan
+
+00:43:30,000 --> 00:43:34,000
+and now we want to look at how those to relate
+dan sekarang kita mahu melihat bagaimana orang-orang untuk mengaitkan
+
+00:43:34,000 --> 00:43:38,000
+well it pretty much falls out of just comparing these two summations
+dan ia cukup banyak jatuh daripada hanya membandingkan kedua-dua penjumlahan
+
+00:43:38,000 --> 00:43:42,000
+in particular this term and this term
+khususnya istilah ini dan istilah ini
+
+00:43:42,000 --> 00:43:46,000
+are identical that's just the relabeling
+serupa itu hanya melabelkan semula yang
+
+00:43:46,000 --> 00:43:52,000
+Nov all what the sequence values are
+November semua apa nilai urutan adalah
+
+00:43:52,000 --> 00:43:57,000
+and notice that when we compare these exponential factors
+dan notis bahawa apabila kita bandingkan faktor-faktor ini eksponen
+
+00:43:57,000 --> 00:44:02,000
+they're identical as long as we associate capital Omega
+mereka sama selagi kita kaitkan modal Omega
+
+00:44:02,000 --> 00:44:05,000
+with little or may get times capital T in other words
+dengan sedikit atau boleh mendapatkan masa modal T dalam erti kata lain
+
+00:44:05,000 --> 00:44:09,000
+if we were to replace here capital may go by a little Omega
+jika kita menggantikan sini modal boleh pergi oleh Omega sedikit
+
+00:44:09,000 --> 00:44:12,000
+times capital T and replace exhibition
+kali T modal dan menggantikan pameran
+
+00:44:12,000 --> 00:44:16,000
+by excessive see a venti in this expression
+oleh berlebihan melihat Venti dalam ungkapan ini
+
+00:44:16,000 --> 00:44:20,000
+would be identical to this expression
+akan sama dengan ungkapan ini
+
+00:44:20,000 --> 00:44:23,000
+so in fact these two are equal
+jadi sebenarnya kedua-dua adalah sama
+
+00:44:23,000 --> 00:44:28,000
+where a relabeling or with the transformation between small Megan
+mana melabelkan semula atau dengan transformasi antara Megan kecil
+
+00:44:28,000 --> 00:44:29,000
+capital make
+modal membuat
+
+00:44:29,000 --> 00:44:34,000
+and so in fact then the relationship that we have
+dan sebagainya sebenarnya maka hubungan yang kita ada
+
+00:44:34,000 --> 00:44:38,000
+is that the discrete-time Fourier transform are
+ialah diskret masa Fourier adalah
+
+00:44:38,000 --> 00:44:41,000
+the sequence of samples
+urutan sampel
+
+00:44:41,000 --> 00:44:45,000
+is equal to the continuous time Fourier transform
+adalah sama dengan masa yang berterusan Fourier mengubah
+
+00:44:45,000 --> 00:44:48,000
+all the impulse strain of samples
+semua ketegangan dorongan sampel
+
+00:44:48,000 --> 00:44:52,000
+where we associate the continuous-time frequency variable
+di mana kita mengaitkan frekuensi pembolehubah berterusan masa
+
+00:44:52,000 --> 00:44:56,000
+and the discrete-time pic script frequency variable through
+dan diskret-masa berubah-ubah kekerapan skrip pic melalui
+
+00:44:56,000 --> 00:45:01,000
+a frequency scaling as i indicate here or said another way
+yang bersisik kekerapan sebagai i menunjukkan di sini atau berkata cara yang lain
+
+00:45:01,000 --> 00:45:07,000
+the discrete-time spectrum is the continuous I spectrum of the samples
+spektrum diskret masa adalah spektrum saya berterusan sampel
+
+00:45:07,000 --> 00:45:11,000
+with capital mate with small Omega replaced by capital Omega
+dengan pasangan modal dengan kecil Omega digantikan dengan modal Omega
+
+00:45:11,000 --> 00:45:14,000
+divided by capital T
+dibahagikan dengan modal T
+
+00:45:14,000 --> 00:45:19,000
+fight so we have then this two-step process
+melawan jadi kita perlu maka ini proses dua langkah
+
+00:45:19,000 --> 00:45:22,000
+the first step is taking the continuous-time signal
+langkah pertama ialah mengambil isyarat berterusan masa
+
+00:45:22,000 --> 00:45:26,000
+sampling with it sampling it with an impulse train
+pensampelan dengannya pensampelan dengan kereta api gerak hati
+
+00:45:26,000 --> 00:45:29,000
+in the frequency domain that corresponds to
+dalam domain frekuensi yang sepadan dengan
+
+00:45:29,000 --> 00:45:32,000
+replicating the four EA transform
+mereplikasi empat EA mengubah
+
+00:45:32,000 --> 00:45:36,000
+all the original continuous-time signals
+semua asal isyarat berterusan masa
+
+00:45:36,000 --> 00:45:40,000
+the second step is relabeling Matt
+langkah kedua adalah melabelkan semula Matt
+
+00:45:40,000 --> 00:45:44,000
+in effect turning it into a sequence and what that does in the frequency domain
+berkuat kuasa memutarkannya ke dalam urutan dan apa yang tidak dalam domain frekuensi
+
+00:45:44,000 --> 00:45:46,000
+is provide us
+adalah memberikan kami
+
+00:45:46,000 --> 00:45:50,000
+with a rescaling if the frequency axis or as we'll see
+dengan rescaling jika paksi kekerapan atau seperti yang kita akan melihat
+
+00:45:50,000 --> 00:45:55,000
+a frequency normalization which is associated with the corresponding time
+a normal kekerapan yang dikaitkan dengan masa yang sama
+
+00:45:55,000 --> 00:45:57,000
+normalization
+normalisasi
+
+00:45:57,000 --> 00:46:00,000
+in the time domain well let's look at
+dalam domain masa dan mari kita lihat
+
+00:46:00,000 --> 00:46:04,000
+those statements a little more specifically
+pernyataan yang lebih khusus
+
+00:46:04,000 --> 00:46:09,000
+when I show here it is the original continuous-time signal
+apabila saya menunjukkan di sini adalah isyarat berterusan masa asal
+
+00:46:09,000 --> 00:46:12,000
+and then below it is
+dan kemudian di bawahnya adalah
+
+00:46:12,000 --> 00:46:16,000
+the sampled signal and these two
+isyarat yang disampel dan kedua-dua
+
+00:46:16,000 --> 00:46:20,000
+are signals in the continuous-time domain
+adalah isyarat dalam domain berterusan masa
+
+00:46:20,000 --> 00:46:24,000
+now what is the conversion from this impulse train
+sekarang apa ialah penukaran dari kereta api gerak hati ini
+
+00:46:24,000 --> 00:46:28,000
+to a sequence well it simply taking
+untuk yang baik urutan ia hanya mengambil
+
+00:46:28,000 --> 00:46:32,000
+these in polls areas are bad news the sample values
+ini di kawasan-kawasan pilihan raya adalah berita buruk nilai sampel
+
+00:46:32,000 --> 00:46:36,000
+and relabeling them in effect is a show below
+dan melabelkan semula mereka pada hakikatnya adalah menunjukkan di bawah
+
+00:46:36,000 --> 00:46:41,000
+relabeling them as sequence values
+melabelkan semula mereka sebagai nilai-nilai urutan
+
+00:46:41,000 --> 00:46:45,000
+and essentially I'm now replacing
+dan pada dasarnya saya kini menggantikan
+
+00:46:45,000 --> 00:46:50,000
+the impulse by the designation of a sequence value
+dorongan oleh penetapan sesuatu nilai urutan
+
+00:46:50,000 --> 00:46:54,000
+that's one step but the other important step to focus on
+itulah salah satu langkah tetapi langkah penting yang lain untuk memberi tumpuan kepada
+
+00:46:54,000 --> 00:46:59,000
+is dead whereas in the impulse trainees impulses are spaced
+mati sedangkan di pelatih impuls impuls adalah jarak
+
+00:46:59,000 --> 00:47:04,000
+by integer multiples of the sampling period capital T
+oleh gandaan integer tempoh persampelan modal T
+
+00:47:04,000 --> 00:47:08,000
+in the sequence of course because if the way that we
+dalam urutan yang sudah tentu kerana jika cara kita
+
+00:47:08,000 --> 00:47:11,000
+label sequences these are always space by
+label urutan ini sentiasa ruang dengan
+
+00:47:11,000 --> 00:47:14,000
+simply integer multiples of 1
+gandaan hanya integer 1
+
+00:47:14,000 --> 00:47:18,000
+so in effect you could say that the step in going from here
+demikian dalam kesan anda boleh mengatakan bahawa langkah di pergi dari sini
+
+00:47:18,000 --> 00:47:24,000
+to hear corresponds to normalizing out in the time domain
+mendengar sepadan dengan menormalkan dalam domain masa
+
+00:47:24,000 --> 00:47:27,000
+the sampling period capital T
+tempoh persampelan modal T
+
+00:47:27,000 --> 00:47:32,000
+to stress that another way if the sampling period were doubled
+menekankan bahawa cara yang lain jika tempoh persampelan yang telah dua kali ganda
+
+00:47:32,000 --> 00:47:38,000
+so there'd in this picture this spacing stretched out by a factor of two
+jadi akan dalam gambar ini jarak ini menghulurkan oleh faktor dua
+
+00:47:38,000 --> 00:47:42,000
+nevertheless in the discrete-time
+namun dalam masa diskret yang
+
+00:47:42,000 --> 00:47:46,000
+for the discrete-time signal the spacing would remain as one
+bagi isyarat diskret masa jarak akan kekal sebagai salah satu
+
+00:47:46,000 --> 00:47:50,000
+and essentially its the
+dan dasarnya yang
+
+00:47:50,000 --> 00:47:53,000
+envelope of those sequence values
+sampul nilai-nilai urutan
+
+00:47:53,000 --> 00:47:56,000
+that would then get contracts compressed in time
+yang akan kemudian mendapatkan kontrak dimampatkan dalam masa
+
+00:47:56,000 --> 00:48:01,000
+so you can think all the step in going from the impulse train to the samples
+supaya anda boleh berfikir semua langkah di pergi dari kereta api gerak hati dengan sampel
+
+00:48:01,000 --> 00:48:05,000
+as a sexually a time normalization
+sebagai seksual yang normal masa
+
+00:48:05,000 --> 00:48:10,000
+now let's look at this in the frequency domain in the frequency domain
+sekarang mari kita lihat ini dalam domain frekuensi dalam domain frekuensi
+
+00:48:10,000 --> 00:48:14,000
+what we have is the Fourier transform of our original continuous
+apa yang kita ada adalah jelmaan Fourier berterusan asal kami
+
+00:48:14,000 --> 00:48:18,000
+signal after sampling with an impulse train
+isyarat selepas pensampelan dengan kereta api gerak hati
+
+00:48:18,000 --> 00:48:22,000
+this spectrum retains its shape
+spektrum ini mengekalkan bentuknya
+
+00:48:22,000 --> 00:48:27,000
+him but is replicated at integer multiples of the sampling frequency to
+dia tetapi diikuti di setiap gandaan integer frekuensi pensampelan untuk
+
+00:48:27,000 --> 00:48:29,000
+pry over capital T
+mengungkit lebih modal T
+
+00:48:29,000 --> 00:48:32,000
+as i indicated here now
+sebagai i ditunjukkan di sini sekarang
+
+00:48:32,000 --> 00:48:36,000
+we know that a discrete-time spectrum
+kita tahu bahawa spektrum diskret masa
+
+00:48:36,000 --> 00:48:40,000
+must be periodic and frequency with a period of two pi
+mestilah berkala dan kekerapan dengan tempoh dua pi
+
+00:48:40,000 --> 00:48:45,000
+here we have the periodicity but it's not periodic with period have to pry
+di sini kita mempunyai jangka masa untuk itu tetapi ia bukan berkala dengan tempoh perlu mengungkit
+
+00:48:45,000 --> 00:48:50,000
+its periodic with period which is equal to the sampling frequency
+berkala dengan tempoh yang sama dengan frekuensi pensampelan
+
+00:48:50,000 --> 00:48:55,000
+however in converting from the samples
+bagaimanapun dalam menukar dari sampel
+
+00:48:55,000 --> 00:48:58,000
+to the sequence values and we go through another step
+kepada nilai-nilai urutan dan kami melalui satu lagi langkah
+
+00:48:58,000 --> 00:49:02,000
+what the other step the other step is a time normalization
+apa langkah lain langkah yang lain adalah normal masa
+
+00:49:02,000 --> 00:49:05,000
+where we take the impulses which your space by the sampling period
+di mana kita mengambil impuls yang ruang anda dengan tempoh persampelan yang
+
+00:49:05,000 --> 00:49:09,000
+and we rescale at essentially in the time domain
+dan kami pada dasarnya rescale dalam domain masa
+
+00:49:09,000 --> 00:49:13,000
+to a space in which is unity so we're dividing out
+untuk ruang yang di dalamnya adalah perpaduan jadi kita membahagikan keluar
+
+00:49:13,000 --> 00:49:17,000
+in the time domain by a
+dalam domain masa oleh
+
+00:49:17,000 --> 00:49:20,000
+by a factor which is
+dengan faktor yang
+
+00:49:20,000 --> 00:49:23,000
+equal to the sampling period well
+sama dengan tempoh persampelan juga
+
+00:49:23,000 --> 00:49:27,000
+dividing out in the time domain by
+membahagikan dalam domain masa oleh
+
+00:49:27,000 --> 00:49:31,000
+capital T would correspond to
+modal T akan sesuai dengan
+
+00:49:31,000 --> 00:49:36,000
+multiplying in the frequency domain the frequency axis by capital T and indeed
+membiak dalam domain frekuensi paksi frekuensi dengan modal T dan sesungguhnya
+
+00:49:36,000 --> 00:49:40,000
+what happens is dead in going from the imposed strain
+apa yang berlaku ialah mati di pergi dari tekanan yang dikenakan
+
+00:49:40,000 --> 00:49:44,000
+to the sequence values we now rescale
+kepada nilai-nilai urutan kita kini rescale
+
+00:49:44,000 --> 00:49:48,000
+this axis so that in fact
+paksi ini supaya sebenarnya
+
+00:49:48,000 --> 00:49:51,000
+the axis gets stretched by capital T
+paksi mendapat diregangkan oleh modal T
+
+00:49:51,000 --> 00:49:56,000
+and the frequency which corresponded to 2pi over capital T
+dan kekerapan yang sejajar 2pi atas modal T
+
+00:49:56,000 --> 00:50:00,000
+now gets re normalized 22 part
+kini mendapat semula normal 22 bahagian
+
+00:50:00,000 --> 00:50:05,000
+so just looking at this again and perhaps with the overall picture
+jadi hanya melihat ini lagi dan mungkin dengan gambar keseluruhan
+
+00:50:05,000 --> 00:50:09,000
+in the time domain we've gone from a continuous curve
+dalam domainnya masa yang kita pergi dari keluk berterusan
+
+00:50:09,000 --> 00:50:15,000
+two samples relabel those and in effect implemented a time normalization
+dua sampel melabel semula mereka dan berkuat kuasa melaksanakan normalisasi masa
+
+00:50:15,000 --> 00:50:19,000
+correspondingly in the frequency domain we
+sepadan dalam domain frekuensi kita
+
+00:50:19,000 --> 00:50:23,000
+have replicated the spectrum through the initial sampling process
+telah ditiru spektrum melalui proses persampelan awal
+
+00:50:23,000 --> 00:50:27,000
+and then rescale the frequency axis
+dan kemudian rescale paksi kekerapan
+
+00:50:27,000 --> 00:50:30,000
+so that in fact now this periodicity
+supaya sekarang sebenarnya jangka masa ini
+
+00:50:30,000 --> 00:50:34,000
+corresponds to a periodicity here which is to Popeye
+sepadan dengan jangka masa di sini iaitu untuk Popeye
+
+00:50:34,000 --> 00:50:37,000
+and here which is the sampling frequency
+dan di sini yang merupakan kekerapan pensampelan
+
+00:50:37,000 --> 00:50:43,000
+so very often in fact and will be doing this next time
+jadi seringkali sebenarnya dan akan melakukan masa ini seterusnya
+
+00:50:43,000 --> 00:50:46,000
+very often when you think
+seringkali apabila anda berfikir
+
+00:50:46,000 --> 00:50:51,000
+love continuous-time signals which have been converted to discrete-time signals
+suka isyarat berterusan masa yang telah ditukar kepada isyarat diskret masa
+
+00:50:51,000 --> 00:50:54,000
+when you look at the discrete-time frequency axis
+apabila anda melihat penggunaan di paksi kekerapan diskret masa
+
+00:50:54,000 --> 00:50:57,000
+the frequency to pie is Associated
+kekerapan untuk pai bersekutu
+
+00:50:57,000 --> 00:51:00,000
+with the sampling frequency
+dengan kekerapan pensampelan
+
+00:51:00,000 --> 00:51:06,000
+as it will it was applied to the original continuous-time signals
+kerana ia akan telah digunakan kepada asal isyarat berterusan masa
+
+00:51:06,000 --> 00:51:11,000
+now as i indicated what will want to go on to from here
+sekarang kerana i ditunjukkan apa yang akan mahu pergi ke daripada sini
+
+00:51:11,000 --> 00:51:14,000
+is understanding I'll
+adalah pemahaman saya akan
+
+00:51:14,000 --> 00:51:17,000
+what happens when we take a continuous-time signal
+apa yang berlaku apabila kita mengambil isyarat berterusan masa
+
+00:51:17,000 --> 00:51:21,000
+converted to a discrete-time signal as I just going through
+ditukar kepada isyarat diskret masa kerana saya hanya akan melalui
+
+00:51:21,000 --> 00:51:24,000
+do some discreet I processing with the linear time-invariant system
+melakukan pemprosesan saya bijaksana dengan sistem masa tak berubah linear
+
+00:51:24,000 --> 00:51:29,000
+and then carry that back into the continuous-time world
+dan kemudian menjalankan yang kembali ke dalam dunia yang berterusan masa
+
+00:51:29,000 --> 00:51:33,000
+that is a procedure that will go through and
+yang merupakan prosedur yang akan melalui dan
+
+00:51:33,000 --> 00:51:36,000
+analyze and in fact illustrate in some detail
+menganalisis dan sebenarnya menggambarkan dengan terperinci
+
+00:51:36,000 --> 00:51:40,000
+next time in preparation for that
+masa yang akan datang dalam persediaan bagi
+
+00:51:40,000 --> 00:51:44,000
+what I would be eager to encourage you to do
+apa yang saya akan bersemangat untuk menggalakkan anda untuk melakukan
+
+00:51:44,000 --> 00:51:47,000
+using the study guide and in reviewing this lecture
+menggunakan panduan kajian dan dalam mengkaji kuliah ini
+
+00:51:47,000 --> 00:51:51,000
+is to begin the next lecture
+adalah untuk memulakan kuliah seterusnya
+
+00:51:51,000 --> 00:51:55,000
+with a careful and thorough understanding love
+dengan kasih sayang pemahaman yang berhati-hati dan teliti
+
+00:51:55,000 --> 00:51:58,000
+the arguments that I just going through in particular
+hujah-hujah yang aku akan melalui khususnya
+
+00:51:58,000 --> 00:52:03,000
+understanding the process that's involved in going from a continuous-time
+memahami proses yang yang terlibat dalam pergi dari masa berterusan yang
+
+00:52:03,000 --> 00:52:05,000
+signal
+isyarat
+
+00:52:05,000 --> 00:52:08,000
+through sampling to a discrete-time signal
+melalui pensampelan kepada isyarat diskret masa
+
+00:52:08,000 --> 00:52:12,000
+and what that means in the frequency domain interns to taking the original
+dan apa yang bermakna dalam intern domain frekuensi untuk mengambil asal
+
+00:52:12,000 --> 00:52:13,000
+spectrum
+spektrum
+
+00:52:13,000 --> 00:52:17,000
+replicating it because if the sampling process
+mereplikasi kerana jika proses pensampelan
+
+00:52:17,000 --> 00:52:20,000
+and then sry scaling that so that
+dan kemudian SRY bersisik itu supaya
+
+00:52:20,000 --> 00:52:24,000
+the periodicity gets rescaled so that its periodic
+jangka masa untuk mendapat rescaled supaya yang berkala
+
+00:52:24,000 --> 00:52:28,000
+with a period of two part so will continue with that next time focusing
+dengan tempoh dua bahagian supaya akan terus dengan masa yang akan datang memberi tumpuan
+
+00:52:28,000 --> 00:52:29,000
+now
+kini
+
+00:52:29,000 --> 00:52:32,000
+on the subsequent steps
+mengenai langkah-langkah berikutnya
+
+00:52:32,000 --> 00:52:33,000
+in the process thank you
+dalam proses terima kasih
+

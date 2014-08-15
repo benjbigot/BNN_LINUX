@@ -1,0 +1,3120 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+le contenu suivant est fourni sous une licence Creative Commons
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+votre appui nous aidera MIT OpenCourseWare continuer à offrir
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+ressources éducatives de haute qualité gratuitement
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+faire un don ou voir des documents supplémentaires à partir de centaines d'entre eux IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+cours
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+visiter MIT OpenCourseWare à 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU ha in
+que le MIT qui EDU ha
+
+00:00:28,000 --> 00:00:31,000
+in
+
+
+00:00:31,000 --> 00:00:33,000
+the
+la
+
+00:00:33,000 --> 00:00:39,000
+the in
+dans le
+
+00:00:39,000 --> 00:00:46,000
+the moon
+la lune
+
+00:00:49,000 --> 00:00:52,000
+the
+la
+
+00:00:52,000 --> 00:00:59,000
+over the last several lectures we developed the for a representation for
+au cours des dernières conférences, nous avons développé le pour une représentation de
+
+00:01:00,000 --> 00:01:03,000
+and continuous-time signals what i'd
+et en temps continu signale ce que j'avais
+
+00:01:03,000 --> 00:01:08,000
+now like to do is develop a similar representation for discrete-time
+maintenant vous faire est de développer une représentation similaire à temps discret
+
+00:01:08,000 --> 00:01:11,000
+and let me begin a discussion by
+et permettez-moi de commencer par une discussion
+
+00:01:11,000 --> 00:01:16,000
+reminding you up what are basic motivation was the idea
+vous rappeler jusqu'à ce que sont la motivation de base était l'idée
+
+00:01:16,000 --> 00:01:20,000
+is that what we wanted to do was exploit the properties
+est que ce que nous voulions faire était d'exploiter les propriétés
+
+00:01:20,000 --> 00:01:25,000
+love linearity in time and variance for linear time-invariant systems
+amour linéarité dans le temps et de la variance pour les systèmes de linéaires invariants
+
+00:01:25,000 --> 00:01:28,000
+so and in the case love
+si dans le cas d'amour
+
+00:01:28,000 --> 00:01:31,000
+linear time-invariant systems the
+systèmes linéaires invariants l'
+
+00:01:31,000 --> 00:01:35,000
+basic idea was to consider
+idée de base était d'examiner
+
+00:01:35,000 --> 00:01:40,000
+decomposing the input as a linear combination
+décomposition de l'entrée en tant que combinaison linéaire
+
+00:01:40,000 --> 00:01:43,000
+love basic inputs and then
+amour intrants de base et puis
+
+00:01:43,000 --> 00:01:47,000
+because I've Lenny arity the output could be expressed as
+parce que je n'ai Lenny arité la sortie pourrait être exprimée en
+
+00:01:47,000 --> 00:01:52,000
+a linear combination of corresponding outputs where
+une combinaison linéaire des sorties correspondantes où
+
+00:01:52,000 --> 00:01:55,000
+saw I serve I is the output
+vu que je sers I est la sortie
+
+00:01:55,000 --> 00:02:00,000
+due to fee survive so
+en raison de frais de survivre si
+
+00:02:00,000 --> 00:02:04,000
+basically what we attempted to do was decompose the input
+essentiellement ce que nous avons essayé de faire, c'est de décomposer l'entrée
+
+00:02:04,000 --> 00:02:07,000
+and then reconstruct the output through
+et puis reconstruire la sortie par
+
+00:02:07,000 --> 00:02:11,000
+a linear combination all the outputs to those basic inputs
+une combinaison linéaire toutes les sorties à ces entrées de base
+
+00:02:11,000 --> 00:02:15,000
+we then focused on the notion
+nous avons ensuite mis l'accent sur la notion
+
+00:02:15,000 --> 00:02:18,000
+love choosing the basic inputs
+aimer le choix des intrants de base
+
+00:02:18,000 --> 00:02:22,000
+with two criterion mine one was
+avec deux d'une mine de critère était
+
+00:02:22,000 --> 00:02:25,000
+to choose them so that a broad class signals
+de les choisir de telle sorte qu'un des signaux de classe larges
+
+00:02:25,000 --> 00:02:29,000
+could be constructed out over those basic inputs
+pourrait être construit au-dessus de ces entrées de base
+
+00:02:29,000 --> 00:02:34,000
+and the second was to choose the basic inputs
+et la seconde était de choisir les intrants de base
+
+00:02:34,000 --> 00:02:37,000
+so that the response to those was easy to compute
+de sorte que la réponse à ceux était facile de calculer
+
+00:02:37,000 --> 00:02:42,000
+and as you recall one representation that we ended up with
+et que vous vous souvenez d'une représentation que nous nous sommes retrouvés avec
+
+00:02:42,000 --> 00:02:46,000
+with those basic criteria in mind:
+avec ces critères de base à l'esprit:
+
+00:02:46,000 --> 00:02:49,000
+was the representation through convolution
+était la représentation par convolution
+
+00:02:49,000 --> 00:02:53,000
+and then in beginning the discussion love the for a representation of
+puis en début de la discussion aiment le pour une représentation de
+
+00:02:53,000 --> 00:02:55,000
+continuous-time signals
+signaux en temps continu
+
+00:02:55,000 --> 00:02:59,000
+we chose as another said a basic inputs
+nous avons choisi comme autre dit un intrants de base
+
+00:02:59,000 --> 00:03:02,000
+complex exponentials so
+son exponentielle complexe
+
+00:03:02,000 --> 00:03:05,000
+for continuous-time we chose
+pour continu-temps, nous avons choisi
+
+00:03:05,000 --> 00:03:09,000
+a set love basic inputs which were complex exponential
+un ensemble d'amour intrants de base qui étaient exponentielle complexe
+
+00:03:09,000 --> 00:03:14,000
+the motivation there was the fact that
+la motivation il y avait le fait que
+
+00:03:14,000 --> 00:03:18,000
+the complex exponentials have we referred to as
+les exponentielles complexes ont nous dénommés
+
+00:03:18,000 --> 00:03:21,000
+the I can function property namely
+la je peux fonctionner bien savoir
+
+00:03:21,000 --> 00:03:25,000
+if we put complex exponentials into our continuous-time systems
+si nous mettons exponentielles complexes dans nos systèmes en temps continu
+
+00:03:25,000 --> 00:03:30,000
+than the output is a complex exponential
+que la sortie est une exponentielle complexe
+
+00:03:30,000 --> 00:03:34,000
+love the same form with
+l'amour de la même forme avec
+
+00:03:34,000 --> 00:03:37,000
+only a change in complex amplitude
+seulement un changement d'amplitude complexe
+
+00:03:37,000 --> 00:03:40,000
+and that change in complex amplitude is
+et que le changement de l'amplitude complexe est
+
+00:03:40,000 --> 00:03:44,000
+what we referred to as the
+ce que nous avons appelé la
+
+00:03:44,000 --> 00:03:48,000
+frequency response %uh the system
+réponse en fréquence% euh le système
+
+00:03:48,000 --> 00:03:51,000
+and also by the way as it developed later
+et aussi par la façon qu'il a développé plus tard
+
+00:03:51,000 --> 00:03:56,000
+that frequency response as you should now recognize from this expression
+que la réponse en fréquence que vous devriez maintenant reconnue à cette expression
+
+00:03:56,000 --> 00:04:01,000
+is in fact the 48 transform the continuous-time for EA transform
+est en fait le 48 transformer le temps continu pour transformer EA
+
+00:04:01,000 --> 00:04:07,000
+all the system impulse response and
+toute la réponse impulsionnelle de système et
+
+00:04:07,000 --> 00:04:12,000
+the notion all decomposing a signal as a linear combination of both these complex
+la notion toute décomposition d'un signal en tant que combinaison linéaire de ceux-ci à la fois complexe
+
+00:04:12,000 --> 00:04:13,000
+exponentials
+exponentielles
+
+00:04:13,000 --> 00:04:17,000
+is what the first the forty a series
+C'est ce que le premier de la quarante une série
+
+00:04:17,000 --> 00:04:21,000
+representation and then later the Fourier transform representation
+représentation et puis, plus tard transformée de Fourier représentation
+
+00:04:21,000 --> 00:04:22,000
+corresponded to
+correspondait à
+
+00:04:22,000 --> 00:04:25,000
+and finally to remind you
+et enfin de vous rappeler
+
+00:04:25,000 --> 00:04:31,000
+love one additional point the fact is that because the eigenfunction property
+l'amour d'un point supplémentaire, le fait est que, parce que la propriété de fonction propre
+
+00:04:31,000 --> 00:04:34,000
+the response
+la réaction
+
+00:04:34,000 --> 00:04:37,000
+once we decompose the input as a linear combination
+une fois que nous décomposons l'entrée comme une combinaison linéaire
+
+00:04:37,000 --> 00:04:41,000
+complex exponentials the response to that when your combination
+exponentielles complexes la réponse à cette lorsque votre combinaison
+
+00:04:41,000 --> 00:04:46,000
+is straightforward to compute once we know the frequency response
+est simple à calculer une fois que nous connaissons la réponse en fréquence
+
+00:04:46,000 --> 00:04:50,000
+because if the eigenfunction property now
+parce que si la propriété de fonction propre maintenant
+
+00:04:50,000 --> 00:04:53,000
+basically the same strategy
+essentiellement la même stratégie
+
+00:04:53,000 --> 00:04:57,000
+and many of the same ideas work in discrete-time
+et un grand nombre des mêmes idées fonctionnent en temps discret
+
+00:04:57,000 --> 00:05:02,000
+paralleling almost exactly what happened in continuous-time
+parallèle presque exactement ce qui s'est passé en temps continu
+
+00:05:02,000 --> 00:05:06,000
+so the similarities between discrete-time and continuous-time
+de sorte que les similitudes entre-temps discret et en temps continu
+
+00:05:06,000 --> 00:05:10,000
+are very strong although as we'll see there are a number
+sont très forts mais comme nous le verrons, il ya un certain nombre
+
+00:05:10,000 --> 00:05:13,000
+a differences and it's important
+une des différences et il est important
+
+00:05:13,000 --> 00:05:17,000
+as we go through the discussion to illuminate
+que nous avançons dans le débat pour éclairer
+
+00:05:17,000 --> 00:05:22,000
+not only the similarities but obviously also the differences
+non seulement les similitudes, mais évidemment aussi les différences
+
+00:05:22,000 --> 00:05:26,000
+well let's begin with the I can function property
+bien nous allons commencer avec le Je peut fonctionner bien
+
+00:05:26,000 --> 00:05:31,000
+and let me just say that just as in continuous-time
+et laissez-moi vous dire que, tout comme en temps continu
+
+00:05:31,000 --> 00:05:35,000
+if we consider said a basic signals
+si l'on considère dit un des signaux de base
+
+00:05:35,000 --> 00:05:38,000
+which are complex exponentials
+qui sont des exponentielles complexes
+
+00:05:38,000 --> 00:05:42,000
+then discrete-time linear time-invariant systems
+puis des systèmes invariants dans le temps linéaires à temps discret
+
+00:05:42,000 --> 00:05:46,000
+have the I can function property namely
+j'ai la je peux fonctionner bien savoir
+
+00:05:46,000 --> 00:05:50,000
+if we put a complex exponential into the system
+si nous mettons une exponentielle complexe dans le système
+
+00:05:50,000 --> 00:05:53,000
+the response is a complex exponential
+la réponse est une exponentielle complexe
+
+00:05:53,000 --> 00:05:56,000
+at the same complex frequency and
+à la même fréquence complexe et
+
+00:05:56,000 --> 00:06:00,000
+simply multiplied by inappropriate
+tout simplement multiplié par inapproprié
+
+00:06:00,000 --> 00:06:03,000
+complex factor or constant
+facteur complexe ou constante
+
+00:06:03,000 --> 00:06:07,000
+and just as we did in
+et comme nous l'avons fait dans
+
+00:06:07,000 --> 00:06:11,000
+continuous-time we will be
+en temps continu, nous serons
+
+00:06:11,000 --> 00:06:15,000
+referring to this complex constant which is a function
+se référant à cette constante complexe qui est une fonction
+
+00:06:15,000 --> 00:06:19,000
+of course the frequency other complex exponential input
+bien sûr, la fréquence autre entrée exponentielle complexe
+
+00:06:19,000 --> 00:06:24,000
+will be referring to this as the frequency response
+seront référant à ce que la réponse en fréquence
+
+00:06:24,000 --> 00:06:29,000
+and although it's not particularly evident at this point
+et même si elle n'est pas particulièrement évident en ce moment
+
+00:06:29,000 --> 00:06:33,000
+as the discussion develops through this lecture what in fact will happen
+que la discussion se développe à travers cette conférence ce qui va se passer en fait
+
+00:06:33,000 --> 00:06:36,000
+is very much paralleling
+est très bien en parallèle
+
+00:06:36,000 --> 00:06:40,000
+continuous-time this particular expression
+en temps continu cette expression particulière
+
+00:06:40,000 --> 00:06:43,000
+in fact will correspond
+en effet correspondra
+
+00:06:43,000 --> 00:06:46,000
+to what will refer to as the
+à ce qui va faire référence sous le nom de
+
+00:06:46,000 --> 00:06:50,000
+for EA transform the discrete-time Fourier transform
+pour EA transformer la transformée de Fourier à temps discret
+
+00:06:50,000 --> 00:06:54,000
+up the system impulse response so there of course there's a very strong parallel
+la réponse impulsionnelle du système donc il bien sûr il ya une très forte parallèle
+
+00:06:54,000 --> 00:06:58,000
+between continuous-time and discrete-time
+entre-temps continu et à temps discret
+
+00:06:58,000 --> 00:07:01,000
+now just as we did in continuous-time
+maintenant comme nous l'avons fait en temps continu
+
+00:07:01,000 --> 00:07:04,000
+let's begin a discussion by
+nous allons commencer par une discussion
+
+00:07:04,000 --> 00:07:09,000
+first concentrating on periodic the representation through complex
+concentrant d'abord sur la représentation périodique par complexe
+
+00:07:09,000 --> 00:07:10,000
+exponentials
+exponentielles
+
+00:07:10,000 --> 00:07:14,000
+love periodic sequences and then
+amour séquences périodiques et puis
+
+00:07:14,000 --> 00:07:18,000
+will generalize that discussion to the representation
+généralisera cette discussion à la représentation
+
+00:07:18,000 --> 00:07:21,000
+Ave periodic signals so
+Ave signaux périodiques donc
+
+00:07:21,000 --> 00:07:25,000
+let's consider furs a periodic signal
+prenons fourrures un signal périodique
+
+00:07:25,000 --> 00:07:28,000
+or in general signals which are periodic
+ou en signaux généraux qui sont périodiques
+
+00:07:28,000 --> 00:07:32,000
+period to notify capital and and then
+période de notifier capital et puis
+
+00:07:32,000 --> 00:07:35,000
+course the fundamental frequency is
+Bien sûr, la fréquence fondamentale est
+
+00:07:35,000 --> 00:07:39,000
+to pie divided by capital
+à tarte divisé par le capital
+
+00:07:39,000 --> 00:07:43,000
+now we can consider exponentials
+maintenant nous pouvons considérer exponentielles
+
+00:07:43,000 --> 00:07:47,000
+which have this as a fundamental frequency
+celles-ci, ceci comme fréquence fondamentale
+
+00:07:47,000 --> 00:07:50,000
+war which are harmonics that
+guerre qui sont harmoniques
+
+00:07:50,000 --> 00:07:54,000
+and that would correspond to the class of complex exponentials
+et qui correspondrait à la classe des exponentielles complexes
+
+00:07:54,000 --> 00:07:59,000
+the form you to the JK Omega 0n
+la forme que vous les 0n JK Omega
+
+00:07:59,000 --> 00:08:03,000
+so these complex exponentials then
+de sorte que ces exponentielles complexes alors
+
+00:08:03,000 --> 00:08:07,000
+as k varies are complex exponentials
+lorsque k varie sont exponentielles complexes
+
+00:08:07,000 --> 00:08:11,000
+that are harmonically related with
+qui sont en relation harmonique avec
+
+00:08:11,000 --> 00:08:15,000
+all of which our periodic with the same period
+qui toutes nos périodique avec la même période
+
+00:08:15,000 --> 00:08:19,000
+capital and although the fundamental period
+capital et bien que la période fondamentale
+
+00:08:19,000 --> 00:08:22,000
+is different for each of these each of them being related by
+est différent pour chacun de ceux-ci chacun d'entre eux étant liés par
+
+00:08:22,000 --> 00:08:26,000
+an integer amount
+une quantité entière
+
+00:08:26,000 --> 00:08:31,000
+now again just as we did in continuous time we can consider
+maintenant encore, tout comme nous n'avons en temps continu, nous pouvons considérer
+
+00:08:31,000 --> 00:08:35,000
+attempting to build our periodic signal I have a linear combination
+essayer de construire notre signal périodique J'ai une combinaison linéaire
+
+00:08:35,000 --> 00:08:38,000
+love these and so we consider
+aimer ces et si nous considérons
+
+00:08:38,000 --> 00:08:42,000
+a periodic signal which is
+un signal périodique qui est
+
+00:08:42,000 --> 00:08:45,000
+a weighted sum all these
+une somme pondérée toutes ces
+
+00:08:45,000 --> 00:08:48,000
+me complex exponentials and
+moi exponentielles complexes et
+
+00:08:48,000 --> 00:08:53,000
+of course this periodic signal this is a periodic signal as can be
+Bien entendu ce signal périodique s'agit d'un signal périodique peut être
+
+00:08:53,000 --> 00:08:58,000
+verified in more or less in a straightforward way by substitution
+vérifié en plus ou moins de manière directe par substitution
+
+00:08:58,000 --> 00:09:02,000
+and of course one of the things that will want to address shortly
+et bien sûr l'une des choses qui voudront répondre rapidement
+
+00:09:02,000 --> 00:09:06,000
+is how broad a classic signals again can be represented
+est de savoir comment un large signaux classiques encore peuvent être représentées
+
+00:09:06,000 --> 00:09:09,000
+by this psalm and another question obviously will be
+par ce psaume et une autre question sera évidemment
+
+00:09:09,000 --> 00:09:13,000
+how do we determine the coefficients a suitcase
+comment pouvons-nous déterminer les coefficients d'une valise
+
+00:09:13,000 --> 00:09:17,000
+however in before we do that let me
+Mais avant que nous ne permettez-moi de
+
+00:09:17,000 --> 00:09:20,000
+focus on an important distinction
+mettre l'accent sur une distinction importante
+
+00:09:20,000 --> 00:09:24,000
+between continuous-time and discrete-time
+entre-temps continu et à temps discret
+
+00:09:24,000 --> 00:09:30,000
+in the context of these complex exponentials and this representation
+dans le contexte de ces exponentielles complexes et cette représentation
+
+00:09:30,000 --> 00:09:34,000
+when we talked about complex exponentials and sinusoids
+lorsque nous avons parlé exponentielles et sinusoïdes complexes
+
+00:09:34,000 --> 00:09:39,000
+early in the cores one up the difference is that we saw between continuous-time
+tôt dans les noyaux un la différence, c'est que nous avons vu entre-temps continu
+
+00:09:39,000 --> 00:09:40,000
+and discrete-time
+et à temps discret
+
+00:09:40,000 --> 00:09:44,000
+is dead in continuous-time as we very
+est mort en temps continu que nous très
+
+00:09:44,000 --> 00:09:49,000
+in the frequency variable we see different complex exponentials
+dans la variable de fréquence, nous voyons différents exponentielles complexes
+
+00:09:49,000 --> 00:09:53,000
+as Omega berries whereas in discrete-time
+les baies Omega alors que dans temps discret
+
+00:09:53,000 --> 00:09:57,000
+we saw in fact dead there was a period this city
+nous avons vu en effet mort il y avait une période de cette ville
+
+00:09:57,000 --> 00:10:02,000
+or said another way it's straightforward to verify
+ou dit d'une autre manière, il est facile de vérifier
+
+00:10:02,000 --> 00:10:06,000
+that if we think I love this
+que si nous pensons J'aime cette
+
+00:10:06,000 --> 00:10:09,000
+class a complex exponentials day
+classe un exponentielles complexe jours
+
+00:10:09,000 --> 00:10:13,000
+in fact if we consider burying
+en fait, si l'on considère l'enfouissement
+
+00:10:13,000 --> 00:10:17,000
+K by an ink to it
+K par une encre à elle
+
+00:10:17,000 --> 00:10:20,000
+capital and where capital and is the period
+capital et où le capital et est la période
+
+00:10:20,000 --> 00:10:23,000
+all the fundamental
+tout le fondamental
+
+00:10:23,000 --> 00:10:28,000
+complex exponential then in fact
+exponentielle complexe alors en fait
+
+00:10:28,000 --> 00:10:32,000
+if we replace K by K plus capital and
+si nous remplaçons K par K plus capital et
+
+00:10:32,000 --> 00:10:38,000
+we'll see exactly the same complex exponentials over again
+nous verrons exactement les mêmes exponentielles complexes encore
+
+00:10:38,000 --> 00:10:43,000
+now what does that say what it says is that if I consider this class of complex
+maintenant qu'est-ce que cela veut dire ce qu'il dit, c'est que si je considère cette classe de complexe
+
+00:10:43,000 --> 00:10:44,000
+exponentials
+exponentielles
+
+00:10:44,000 --> 00:10:48,000
+SK varies from zero
+SK varie de zéro
+
+00:10:48,000 --> 00:10:52,000
+through capital N -1 we've seen
+par le capital N -1, nous avons vu
+
+00:10:52,000 --> 00:10:56,000
+we will see all of the ones that there are two see
+nous verrons tous ceux qui, il ya deux, voir
+
+00:10:56,000 --> 00:10:59,000
+there aren't any more and so in fact
+il n'y a pas plus et si, en fait,
+
+00:10:59,000 --> 00:11:02,000
+if we can build excessive and
+si nous pouvons construire excessive et
+
+00:11:02,000 --> 00:11:06,000
+I have this linear combination then
+J'ai cette combinaison linéaire alors
+
+00:11:06,000 --> 00:11:09,000
+we better be able to do it as k varies
+nous pourrons mieux faire que k varie
+
+00:11:09,000 --> 00:11:13,000
+from 0
+de 0
+
+00:11:13,000 --> 00:11:17,000
+up to and -1 because
+jusqu'à -1 parce
+
+00:11:17,000 --> 00:11:21,000
+beyond that will simply see the same complex s
+au-delà qui va simplement voir les mêmes s complexes
+
+00:11:21,000 --> 00:11:24,000
+exponentials over again so for example
+exponentielles plus encore si par exemple
+
+00:11:24,000 --> 00:11:27,000
+if k takes on the value capital and
+si k prend la capitale de la valeur et
+
+00:11:27,000 --> 00:11:30,000
+that will be exactly the same complex exponential
+ce sera exactement la même exponentielle complexe
+
+00:11:30,000 --> 00:11:34,000
+as if KZ 0
+comme si KZ 0
+
+00:11:34,000 --> 00:11:38,000
+so in fact this some ranges
+donc en fait ce certaines gammes
+
+00:11:38,000 --> 00:11:43,000
+only over capital in above the distinct complex exponentials
+seulement sur le capital dans au-dessus des exponentielles complexes distincts
+
+00:11:43,000 --> 00:11:47,000
+let's say for example from 0 to capital and -1
+disons par exemple de 0 à capital et -1
+
+00:11:47,000 --> 00:11:51,000
+although in fact since these complex exponentials repeat
+mais en fait, depuis ces exponentielles complexes répètent
+
+00:11:51,000 --> 00:11:56,000
+in K I could actually consider instead have
+en K je pouvais envisager plutôt avoir
+
+00:11:56,000 --> 00:11:59,000
+from 0 to N -1 I could consider from one
+de 0 à N-1, je pourrais considérer d'un
+
+00:11:59,000 --> 00:12:03,000
+and or from to too and plus one or whatever
+et ou de la trop et en plus un ou quelle que soit
+
+00:12:03,000 --> 00:12:08,000
+or said another way in this representation
+ou dit d'une autre manière dans cette représentation
+
+00:12:08,000 --> 00:12:12,000
+I could alternatively shoes K
+Je pouvais encore les chaussures K
+
+00:12:12,000 --> 00:12:15,000
+outside this range thinking
+dehors de cette plage pensée
+
+00:12:15,000 --> 00:12:20,000
+0 these coefficients simply as periodically repeating in K
+0 ces coefficients simplement comme se répétant périodiquement en K
+
+00:12:20,000 --> 00:12:24,000
+because if the fact that these complex exponentials
+parce que, si le fait que ces exponentielles complexes
+
+00:12:24,000 --> 00:12:28,000
+periodically repeating K so in fact
+répéter périodiquement K donc en fait
+
+00:12:28,000 --> 00:12:32,000
+in place if this expression it will be comin in writing the forty a series
+en place si cette expression sera Comin par écrit la quarante une série
+
+00:12:32,000 --> 00:12:33,000
+expression
+expression
+
+00:12:33,000 --> 00:12:38,000
+to write it as i've indicated here where the implication is
+de l'écrire comme je l'ai dit ici où l'implication est
+
+00:12:38,000 --> 00:12:41,000
+that these Fourier coefficients
+que ces coefficients de Fourier
+
+00:12:41,000 --> 00:12:45,000
+periodically repeated as K continues to rip
+périodiquement répété que K continue à déchirer
+
+00:12:45,000 --> 00:12:49,000
+to repeat outside the interval from 0 to N -1
+à répéter l'extérieur de l'intervalle de 0 à N -1
+
+00:12:49,000 --> 00:12:53,000
+and so this notation in fact says
+et si cette notation en effet dit
+
+00:12:53,000 --> 00:12:56,000
+at what we're going to use are
+à ce que nous allons utiliser sont
+
+00:12:56,000 --> 00:13:00,000
+is K ranging over one period
+est K allant sur une période
+
+00:13:00,000 --> 00:13:04,000
+love this periodic sequence which is the forty a series called
+aimer cette séquence périodique qui est la quarante une série appelée
+
+00:13:04,000 --> 00:13:08,000
+visions okay so
+visions d'accord si
+
+00:13:08,000 --> 00:13:13,000
+the expression that we have been for the forty a series
+l'expression que nous avons été pour la quarante une série
+
+00:13:13,000 --> 00:13:18,000
+I've repeated here and the implication now is that
+Je l'ai répété ici et l'implication est maintenant que
+
+00:13:18,000 --> 00:13:22,000
+the AC K's are periodic they periodically repeat because of course
+le secteur K du périodique sont ils répètent périodiquement en raison du cours
+
+00:13:22,000 --> 00:13:25,000
+these exponentials periodically repeated
+ces exponentielles répétées périodiquement
+
+00:13:25,000 --> 00:13:29,000
+this indicates there we only use them over one period
+ce qui indique là, nous les utilisons uniquement sur une période
+
+00:13:29,000 --> 00:13:32,000
+and now we can inquire as to how
+et maintenant nous pouvons en savoir davantage sur la manière dont
+
+00:13:32,000 --> 00:13:36,000
+we determine the coefficients aces K
+nous déterminons les coefficients as K
+
+00:13:36,000 --> 00:13:39,000
+well we can formally go through this much as we did in
+ainsi nous pouvons formellement aller vers autant que nous avons fait dans
+
+00:13:39,000 --> 00:13:42,000
+the continuous-time case in and 0
+le cas continu dans et 0
+
+00:13:42,000 --> 00:13:46,000
+we do in fact do that in the text which involves substituting some
+nous ne faisons en fait que dans le texte qui implique une certaine substitution
+
+00:13:46,000 --> 00:13:49,000
+sums in a change in yours summation cetera
+sommes dans un changement dans la vôtre sommation cetera
+
+00:13:49,000 --> 00:13:53,000
+but let me a draw your attention to the fact that
+mais permettez-moi une attirer votre attention sur le fait que
+
+00:13:53,000 --> 00:13:56,000
+this in fact can be thought I love
+ce en fait peut être considéré J'aime
+
+00:13:56,000 --> 00:14:02,000
+as capital in equations in capital and unknowns
+comme capital dans les équations du capital et inconnues
+
+00:14:02,000 --> 00:14:06,000
+in other words we know x7 over a period
+en d'autres termes, nous savons x7 sur une période
+
+00:14:06,000 --> 00:14:12,000
+and so we know what the left hand side if this is for capital and bad news
+et nous savons donc ce que le côté gauche si c'est pour le capital et de mauvaises nouvelles
+
+00:14:12,000 --> 00:14:16,000
+and we'd like to determine these constant sese K
+et nous aimerions déterminer les sese constante K
+
+00:14:16,000 --> 00:14:20,000
+well it turns out that their is a nice convening in closed form expression for
+bien il s'avère que leur est une belle tenue en forme fermée expression pour
+
+00:14:20,000 --> 00:14:21,000
+that
+que
+
+00:14:21,000 --> 00:14:26,000
+and in fact if we evaluate the closed-form expression
+et en fait, si nous évaluons l'expression de forme fermée
+
+00:14:26,000 --> 00:14:29,000
+through any variety of algebraic manipulations
+par une variété de manipulations algébriques
+
+00:14:29,000 --> 00:14:32,000
+we end up then with the
+nous nous retrouvons alors avec le
+
+00:14:32,000 --> 00:14:37,000
+analysis equation and the analysis equation
+analyse de l'équation et l'équation d'analyse
+
+00:14:37,000 --> 00:14:41,000
+which tells us how to get the coefficients AC K
+qui nous dit comment obtenir les coefficients AC K
+
+00:14:41,000 --> 00:14:44,000
+from excessive and is what I've
+de trop et c'est ce que j'ai
+
+00:14:44,000 --> 00:14:47,000
+indicated here and
+indiqué ici et
+
+00:14:47,000 --> 00:14:50,000
+so this tells us how for Maxim and
+si cela nous raconte comment pour Maxim et
+
+00:14:50,000 --> 00:14:55,000
+to get the AC K's and of course the first equation
+pour obtenir et bien sûr la première équation du secteur K
+
+00:14:55,000 --> 00:14:59,000
+tells us how x7 is built up by the VA's
+nous raconte comment x7 est construit par la VA
+
+00:14:59,000 --> 00:15:03,000
+K's notice incidently that
+Un préavis de K incidemment que
+
+00:15:03,000 --> 00:15:07,000
+there is a strong to our the between these two equations
+il existe une forte à la notre entre ces deux équations
+
+00:15:07,000 --> 00:15:11,000
+and that's a duality that will return to
+et c'est une dualité qui sera de retour à
+
+00:15:11,000 --> 00:15:14,000
+actually toward the end of the next lecture now
+effectivement vers la fin de la prochaine session maintenant
+
+00:15:14,000 --> 00:15:17,000
+there is a real difference between the way those equations look
+il existe une réelle différence entre la façon dont ces équations regardent
+
+00:15:17,000 --> 00:15:21,000
+and the way the continuous-time forty a series look
+et la façon dont le temps continu quarante une série oeil
+
+00:15:21,000 --> 00:15:25,000
+in a continuous-time case let me remind you
+dans un cas continu permettez-moi de vous rappeler
+
+00:15:25,000 --> 00:15:28,000
+that it required
+qu'il fallait
+
+00:15:28,000 --> 00:15:32,000
+an infinite number of coefficients to build up this continuous-time
+un nombre infini de coefficients pour constituer ce temps continu
+
+00:15:32,000 --> 00:15:35,000
+function and so this was not simply a matter
+fonctionne et si ce n'était pas simplement une question
+
+00:15:35,000 --> 00:15:39,000
+of identifying how to invert capital and
+d'identifier comment inverser capital et
+
+00:15:39,000 --> 00:15:44,000
+were a finite number of equations in a finite number upon owns
+sont un nombre fini d'équations à un nombre fini possède sur
+
+00:15:44,000 --> 00:15:47,000
+and the analysis equation was
+et l'équation de l'analyse était
+
+00:15:47,000 --> 00:15:53,000
+and integration as opposed to the synthesis equation
+et l'intégration, par opposition à l'équation de synthèse
+
+00:15:53,000 --> 00:15:56,000
+which is a summation so
+qui est une sommation de sorte
+
+00:15:56,000 --> 00:15:59,000
+their is a real difference there between
+leur est une réelle différence entre il
+
+00:15:59,000 --> 00:16:03,000
+the continuous-time and discrete-time cases and a difference
+les cas à temps continu et à temps discret et une différence
+
+00:16:03,000 --> 00:16:06,000
+arises to a large extent because
+se pose dans une large mesure, car
+
+00:16:06,000 --> 00:16:11,000
+all this notion that in discrete-time the complex exponentials
+tous cette notion que dans les temps discret exponentielles complexes
+
+00:16:11,000 --> 00:16:14,000
+are periodic in
+sont périodiques en
+
+00:16:14,000 --> 00:16:18,000
+their frequency so we have been to summarize
+leur fréquence ainsi que nous avons été à résumer
+
+00:16:18,000 --> 00:16:22,000
+the synthesis equation and the analysis equation
+l'équation de la synthèse et l'analyse de l'équation
+
+00:16:22,000 --> 00:16:27,000
+for the discrete-time for a series
+pour le temps discret pour une série
+
+00:16:27,000 --> 00:16:32,000
+again x7 are original signals periodic
+nouveau x7 sont des signaux originaux périodique
+
+00:16:32,000 --> 00:16:35,000
+and of course the complex exponentials
+et bien sûr les exponentielles complexes
+
+00:16:35,000 --> 00:16:40,000
+involve the periodic their periodic obviously in an
+impliquer le périodique de leur périodique évidemment dans un
+
+00:16:40,000 --> 00:16:45,000
+by it in contrast the continuous-time these repeat
+par contraste dans le temps continu ces répétez
+
+00:16:45,000 --> 00:16:48,000
+in K in other words as k Omega 0
+en K-à-dire que k Omega 0
+
+00:16:48,000 --> 00:16:53,000
+goes outside arrange that covers a 25 interval
+va à l'extérieur en sorte que couvre un intervalle de 25
+
+00:16:53,000 --> 00:16:56,000
+and because if that we're imposing
+et parce que si nous imposons
+
+00:16:56,000 --> 00:17:02,000
+in a sense the interpretation that the AC Kesar likewise the periodic sequence
+dans un sens l'interprétation que la Kesar AC également la séquence périodique
+
+00:17:02,000 --> 00:17:05,000
+and in fact we look at the analysis equation
+et en fait, nous sommes à l'équation de l'analyse
+
+00:17:05,000 --> 00:17:10,000
+as we let K very
+que nous laissons K très
+
+00:17:10,000 --> 00:17:13,000
+outside the range from 0 to N -1
+en dehors de la plage allant de 0 à N -1
+
+00:17:13,000 --> 00:17:17,000
+what you can easily verified by substitution in here
+ce que vous pouvez facilement vérifié par substitution ici
+
+00:17:17,000 --> 00:17:22,000
+is that this sequence will in fact periodically repeat
+est que cette séquence sera en fait répéter périodiquement
+
+00:17:22,000 --> 00:17:27,000
+so to underscore the difference between the continuous-time and discrete-time
+afin de souligner la différence entre le temps continu et à temps discret
+
+00:17:27,000 --> 00:17:29,000
+cases
+cas
+
+00:17:29,000 --> 00:17:33,000
+we have this periodicity in the time domain
+nous avons cette périodicité dans le domaine temporel
+
+00:17:33,000 --> 00:17:38,000
+and that's a periodicity dad is of course true in discrete-time
+et c'est un papa de périodicité est bien sûr vrai en temps discret
+
+00:17:38,000 --> 00:17:41,000
+and it's also true in continuous-time
+et il est également vrai en temps continu
+
+00:17:41,000 --> 00:17:45,000
+if we replace the integer variable
+si l'on remplace la variable de type entier
+
+00:17:45,000 --> 00:17:48,000
+by the discrete-time time variable
+par la variable de temps discret dans le temps
+
+00:17:48,000 --> 00:17:52,000
+and we also indiscreet I'm have this periodicity
+et nous avons aussi indiscret je suis avons cette périodicité
+
+00:17:52,000 --> 00:17:56,000
+in krak Omega 0 and correspondingly
+dans krak Omega 0 et en conséquence
+
+00:17:56,000 --> 00:17:59,000
+a periodicity in the four EA coefficients
+une périodicité dans les quatre coefficients EA
+
+00:17:59,000 --> 00:18:04,000
+and bad is center properties
+et mauvaise, c'est les propriétés de centre
+
+00:18:04,000 --> 00:18:08,000
+dat does not happen
+dat ne se produit pas
+
+00:18:08,000 --> 00:18:12,000
+in continuous-time and is bad
+en temps continu et qui est mauvais
+
+00:18:12,000 --> 00:18:17,000
+there essentially leads to all of the important differences between
+il conduit essentiellement à l'ensemble des différences importantes entre les
+
+00:18:17,000 --> 00:18:21,000
+discrete-time Fourier representations and in continuous-time
+représentations de Fourier en temps discret et en temps continu
+
+00:18:21,000 --> 00:18:24,000
+Korea representation
+Représentation Corée
+
+00:18:24,000 --> 00:18:28,000
+now just quickly let me draw your attention to the issue
+maintenant laissez juste rapidement moi d'attirer votre attention sur la question
+
+00:18:28,000 --> 00:18:35,000
+love convergence and when a sequence can and can't be represented at cetera
+amour convergence et quand une séquence peut et ne peut pas être représenté à cetera
+
+00:18:35,000 --> 00:18:39,000
+a recall that in the continuous-time case
+un rappel que dans le cas continu
+
+00:18:39,000 --> 00:18:43,000
+we focused on convergence in the context either
+nous nous sommes concentrés sur la convergence dans le contexte soit
+
+00:18:43,000 --> 00:18:46,000
+conditions which are referred to as where the group believe the
+conditions qui sont appelés, où le groupe pense que le
+
+00:18:46,000 --> 00:18:51,000
+or another set of conditions which were the the Ridgeway conditions
+ou un autre ensemble de conditions qui sont les conditions Ridgeway
+
+00:18:51,000 --> 00:18:55,000
+and there was this issue about when the signal doesn't doesn't convergent
+et il y avait ce problème quand le signal ne fait pas non convergente
+
+00:18:55,000 --> 00:18:56,000
+discontinuities
+discontinuités
+
+00:18:56,000 --> 00:19:01,000
+center let me just simply draw your attention to the fact
+centre permettez-moi tout simplement attirer votre attention sur le fait
+
+00:19:01,000 --> 00:19:05,000
+there in the discrete-time case
+il dans le cas temps discret
+
+00:19:05,000 --> 00:19:09,000
+what we have is the representation of the periodic signal
+ce que nous avons est la représentation du signal périodique
+
+00:19:09,000 --> 00:19:13,000
+as Assam all a finite number
+comme Assam tous un nombre fini
+
+00:19:13,000 --> 00:19:19,000
+turns this represents capital and equations in capital and unknowns
+transforme ce qui représente le capital et les équations du capital et inconnues
+
+00:19:19,000 --> 00:19:24,000
+if we consider the partial some namely taking
+si l'on considère les quelque partielle à savoir prendre
+
+00:19:24,000 --> 00:19:29,000
+a smaller number turns then simply what happens
+un petit nombre se tourne alors tout simplement ce qui se passe
+
+00:19:29,000 --> 00:19:33,000
+is as the number of turns increases
+est tel que le nombre de spires augmente
+
+00:19:33,000 --> 00:19:36,000
+to the finite number required to represent
+au nombre fini requis pour représenter
+
+00:19:36,000 --> 00:19:40,000
+ex-dividend we simply end up with
+ex-dividende nous nous retrouvons simplement avec
+
+00:19:40,000 --> 00:19:43,000
+the partial some representing the fun and Lightsey
+la certaine partielle représentant le plaisir et Lightsey
+
+00:19:43,000 --> 00:19:47,000
+were all that boils down to is the statement
+ont été tout ce qui se résume à la déclaration
+
+00:19:47,000 --> 00:19:51,000
+that in discrete-time there really are
+que temps discret il ya vraiment
+
+00:19:51,000 --> 00:19:55,000
+no convergence issues as they were in continues time
+pas de problèmes de convergence comme ils étaient en continue temps
+
+00:19:55,000 --> 00:19:59,000
+okay well let's look at an example love the four EA
+bien bien, regardons un exemple aimer le quatre EA
+
+00:19:59,000 --> 00:20:02,000
+series representation for a particular signal
+représentation en série pour un signal particulier
+
+00:20:02,000 --> 00:20:06,000
+and the one that I think here is a simple one
+et celui que je pense ici est simple
+
+00:20:06,000 --> 00:20:10,000
+namely a constant a
+à savoir une constante
+
+00:20:10,000 --> 00:20:14,000
+are signed term and a cosine term
+terme sont signés et un terme en cosinus
+
+00:20:14,000 --> 00:20:18,000
+now for this particular example we can expand this out
+maintenant pour cet exemple particulier, nous pouvons étendre cette rupture
+
+00:20:18,000 --> 00:20:21,000
+directly in terms of complex exponentials
+directement en termes de exponentielles complexes
+
+00:20:21,000 --> 00:20:26,000
+and essentially recognize this as a somewhat complex exponentials
+et reconnaître essentiellement ce que un peu exponentielles complexes
+
+00:20:26,000 --> 00:20:29,000
+its examined in more detail
+son examiné plus en détail
+
+00:20:29,000 --> 00:20:33,000
+in example 5.2 in attacks
+dans l'exemple 5.2 dans des attaques
+
+00:20:33,000 --> 00:20:38,000
+and if we looked at the for a series coefficients we can either look
+et si nous avons examiné le cas d'une série de coefficients, nous pouvons soit regarder
+
+00:20:38,000 --> 00:20:44,000
+at it in terms of real and imaginary parts are magnitude and angle
+à elle en termes de parties réelles et imaginaires sont grandeur et l'angle
+
+00:20:44,000 --> 00:20:50,000
+on the left side here I have the real part of the 48 coefficients
+sur le côté gauche ici, j'ai la partie réelle des coefficients 48
+
+00:20:50,000 --> 00:20:53,000
+and let me draw your attention to the fact
+et permettez-moi d'attirer votre attention sur le fait
+
+00:20:53,000 --> 00:20:57,000
+their I've drawn yes
+leur j'ai dessiné oui
+
+00:20:57,000 --> 00:21:00,000
+to specifically illuminate the periodicity
+spécifiquement pour illuminer la périodicité
+
+00:21:00,000 --> 00:21:06,000
+other for a series coefficients in with a period of capital and so here are the
+autre pour une série coefficients dans une période de capitaux et voici donc les
+
+00:21:06,000 --> 00:21:08,000
+Fourier coefficients
+Fourier coefficients
+
+00:21:08,000 --> 00:21:14,000
+are and in fact its this line that represents the DCR constant term
+sont en fait sa ligne ce qui représente le terme constant DCR
+
+00:21:14,000 --> 00:21:17,000
+and these two lines represent the
+et ces deux lignes représentent l'
+
+00:21:17,000 --> 00:21:21,000
+co-signed term and of course this
+terme co-signé et bien sûr ce
+
+00:21:21,000 --> 00:21:25,000
+these are the three turns that are required or equivalent leave this one
+ce sont les trois tours qui sont nécessaires ou équivalents quittent celui-ci
+
+00:21:25,000 --> 00:21:25,000
+this one
+celui-ci
+
+00:21:25,000 --> 00:21:29,000
+and this one and then because the period this city
+et celui-ci et ensuite parce que la période de cette ville
+
+00:21:29,000 --> 00:21:33,000
+the for a series coefficients this simply periodically repeats
+le pour une série coefficients ce répète simplement périodiquement
+
+00:21:33,000 --> 00:21:38,000
+so here is the real part and below it I show
+voici donc la partie réelle et en dessous je montre
+
+00:21:38,000 --> 00:21:42,000
+the imaginary part and
+la partie imaginaire et
+
+00:21:42,000 --> 00:21:45,000
+in the imaginary part incidently let me
+dans la partie imaginaire laisser incidemment moi
+
+00:21:45,000 --> 00:21:48,000
+draw your attention to the fact dead its
+attirer votre attention sur le fait mort son
+
+00:21:48,000 --> 00:21:51,000
+this term and this term
+ce terme et ce terme
+
+00:21:51,000 --> 00:21:56,000
+there represent in the imaginary part that represent the sinusoid
+il représente la partie imaginaire que représente la sinusoïde
+
+00:21:56,000 --> 00:22:00,000
+whereas its the symmetric turns the real part
+tandis que son symétrique tourne la partie réelle
+
+00:22:00,000 --> 00:22:04,000
+the represent the cosine okay let's
+l'représenter le cosinus bien let de
+
+00:22:04,000 --> 00:22:07,000
+in look at another example
+dans le regard d'un autre exemple
+
+00:22:07,000 --> 00:22:11,000
+this is another example from the tax and one
+ceci est un autre exemple de la taxe et un
+
+00:22:11,000 --> 00:22:14,000
+that will be making frequent reference to
+qui seront faisant référence fréquente à
+
+00:22:14,000 --> 00:22:17,000
+in this particular lecture
+dans cette conférence particulier
+
+00:22:17,000 --> 00:22:21,000
+and what it is is
+et ce qu'il est est
+
+00:22:21,000 --> 00:22:24,000
+a square wave and
+une onde carrée et
+
+00:22:24,000 --> 00:22:28,000
+I've express the for a series coefficients which are out algebraically
+J'ai exprimer la pour une série de coefficients qui sont hors algébrique
+
+00:22:28,000 --> 00:22:30,000
+developed in attacks
+développé dans des attaques
+
+00:22:30,000 --> 00:22:33,000
+I've expressed the for a series coefficients as
+J'ai exprimé l'd'une série de coefficients de
+
+00:22:33,000 --> 00:22:36,000
+samples all an envelope
+tous les échantillons d'une enveloppe
+
+00:22:36,000 --> 00:22:42,000
+function and so I've expressed that as samples if this
+fonction et donc je l'ai exprimé que les échantillons si ce
+
+00:22:42,000 --> 00:22:46,000
+particular function which is referred to as a sign
+fonction particulière qui est considéré comme un signe
+
+00:22:46,000 --> 00:22:50,000
+enacts over sin x function and let me just compare it
+édicte sur le péché et la fonction x permettez-moi de le compare
+
+00:22:50,000 --> 00:22:53,000
+to a continuous-time example which is the
+un exemple de temps continu qui est le
+
+00:22:53,000 --> 00:22:56,000
+continuous-time square wave
+en temps continu onde carrée
+
+00:22:56,000 --> 00:23:00,000
+where with the continuous times square wave
+où avec le temps continu onde carrée
+
+00:23:00,000 --> 00:23:03,000
+the form or the for a series coefficients
+la forme ou la pour une série coefficients
+
+00:23:03,000 --> 00:23:07,000
+was as samples love what we refer to
+était que les échantillons aiment ce que nous appelons
+
+00:23:07,000 --> 00:23:10,000
+as a sin x over expunge
+comme un péché x sur expunge
+
+00:23:10,000 --> 00:23:13,000
+now the sin NX
+maintenant le péché NX
+
+00:23:13,000 --> 00:23:17,000
+over sin x function which is the envelope for the for a series
+sur le péché x fonction qui est l'enveloppe pour la pour une série
+
+00:23:17,000 --> 00:23:18,000
+coefficients
+coefficients
+
+00:23:18,000 --> 00:23:22,000
+for the discrete-time periodic square wave
+pour le temps discret onde carrée périodique
+
+00:23:22,000 --> 00:23:26,000
+plays the role and we'll see it very often in discrete-time
+joue le rôle et nous voyons très souvent en temps discret
+
+00:23:26,000 --> 00:23:29,000
+that sin x over exercise in continuous-time
+que sin x sur l'exercice en temps continu
+
+00:23:29,000 --> 00:23:34,000
+and in fact we should understand right from the beginning
+et en fait, nous devrions comprendre dès le début
+
+00:23:34,000 --> 00:23:38,000
+that the sin x over extend below couldn't possibly be
+que le péché x sur s'étendent au-dessous ne pouvait peut-être
+
+00:23:38,000 --> 00:23:42,000
+the envelope the discrete-time for a series coefficients
+l'enveloppe du-temps discret pour une série coefficients
+
+00:23:42,000 --> 00:23:45,000
+and one obvious reason is dead
+et une raison évidente est mort
+
+00:23:45,000 --> 00:23:49,000
+it is not periodic what we require of course
+ce n'est pas ce que nous demandons périodique de cours
+
+00:23:49,000 --> 00:23:53,000
+from the discussion I just going through is periodicity
+de la discussion que je viens de passer par la périodicité est
+
+00:23:53,000 --> 00:23:58,000
+are the coefficients and consequently also periodicity of the envelope
+sont les coefficients et par conséquent également la périodicité de l'enveloppe
+
+00:23:58,000 --> 00:24:01,000
+in the discrete-time case so once again if we look back
+dans le cas temps discret donc encore une fois si nous regardons en arrière
+
+00:24:01,000 --> 00:24:04,000
+at the algebraic expression that I have
+à l'expression algébrique que j'ai
+
+00:24:04,000 --> 00:24:08,000
+it samples about the sign an X over sin x
+il échantillonne sur le signe d'un X sur le péché x
+
+00:24:08,000 --> 00:24:12,000
+function dead represent the for a series coefficients
+fonction morts représentent le pour une série coefficients
+
+00:24:12,000 --> 00:24:16,000
+love this periodic square way
+aimera de cette façon périodique carré
+
+00:24:16,000 --> 00:24:20,000
+now in the representation in
+maintenant à la représentation en
+
+00:24:20,000 --> 00:24:24,000
+the continuous-time case we
+le cas continu nous
+
+00:24:24,000 --> 00:24:29,000
+essentially head use the concept of an envelope
+essentiellement la tête utiliser le concept d'une enveloppe
+
+00:24:29,000 --> 00:24:32,000
+to represent the for a series coefficients
+pour représenter le pour une série coefficients
+
+00:24:32,000 --> 00:24:35,000
+and the notion that the for a series coefficients were samples
+et l'idée que l'd'une série coefficients étaient échantillons
+
+00:24:35,000 --> 00:24:39,000
+up an envelope and that is said the same notion
+une enveloppe et ce qui est dit la même notion
+
+00:24:39,000 --> 00:24:43,000
+there will be using in discrete-time so
+il y aura utilisent en temps discret si
+
+00:24:43,000 --> 00:24:46,000
+again for this square wave example
+nouveau pour cet exemple d'onde carrée
+
+00:24:46,000 --> 00:24:50,000
+then what we have is an envelope
+alors ce que nous avons est une enveloppe
+
+00:24:50,000 --> 00:24:53,000
+function the sign acts
+fonctionner les actes de signe
+
+00:24:53,000 --> 00:24:56,000
+over sin x envelope function for
+sur le péché fonction x enveloppe pour
+
+00:24:56,000 --> 00:25:01,000
+a particular value of the period here indicated with a period
+une valeur particulière de la période indiquée ici avec une période
+
+00:25:01,000 --> 00:25:04,000
+love 10 samples these
+aimer ces 10 échantillons
+
+00:25:04,000 --> 00:25:07,000
+samples at this envelope function with then
+échantillons à cette fonction d'enveloppe avec alors
+
+00:25:07,000 --> 00:25:11,000
+represent the for a series coefficients
+représenter la pour une série coefficients
+
+00:25:11,000 --> 00:25:14,000
+if we increased
+si nous avons augmenté
+
+00:25:14,000 --> 00:25:17,000
+the period then
+la période alors
+
+00:25:17,000 --> 00:25:20,000
+we would simply have a finer spacing
+nous ne serions tout simplement avoir un espacement plus fine
+
+00:25:20,000 --> 00:25:23,000
+on the samples are the envelope function
+sur les échantillons sont de la fonction d'enveloppe
+
+00:25:23,000 --> 00:25:27,000
+to get the 40 a series coefficients and
+pour obtenir les 40 une série coefficients et
+
+00:25:27,000 --> 00:25:31,000
+in likewise if we increase the period still further
+en même si nous augmentons la période encore
+
+00:25:31,000 --> 00:25:37,000
+what we would have is an even finer space
+ce que nous aurions un espace encore plus fine
+
+00:25:37,000 --> 00:25:41,000
+so actually as the period increases recall we use this in the in
+donc en fait que la période augmente rappellent que nous utilisons dans le présent en
+
+00:25:41,000 --> 00:25:43,000
+continuous-time also
+en temps continu aussi
+
+00:25:43,000 --> 00:25:48,000
+as the period increases we can view the for a series coefficients
+que la période augmente, nous pouvons voir le pour une série coefficients
+
+00:25:48,000 --> 00:25:53,000
+samples of an envelope and as the period increases
+des échantillons d'une enveloppe et que le délai augmente
+
+00:25:53,000 --> 00:25:56,000
+the sample spacing gets finer and finer
+l'espacement de l'échantillon devient plus en plus fines
+
+00:25:56,000 --> 00:25:59,000
+and in fact as the period goes
+et en fait que la période continue
+
+00:25:59,000 --> 00:26:03,000
+of essentially to infinity the samples of the envelope
+de pratiquement à l'infini les échantillons de l'enveloppe
+
+00:26:03,000 --> 00:26:07,000
+in effect become the anvil and recall also
+en effet devenu l'enclume et rappeler aussi
+
+00:26:07,000 --> 00:26:11,000
+that this was essentially the trip that we use
+que c'était essentiellement le voyage que nous utilisons
+
+00:26:11,000 --> 00:26:15,000
+in continuous-time to allow us
+en temps continu pour nous permettre
+
+00:26:15,000 --> 00:26:18,000
+to develop or utilize the 48 series
+de développer ou d'utiliser la série 48
+
+00:26:18,000 --> 00:26:22,000
+to provide a representation %uh a periodic signals
+pour fournir une représentation% euh un des signaux périodiques
+
+00:26:22,000 --> 00:26:26,000
+as a linear combination of complex exponentials
+comme une combinaison linéaire des exponentielles complexes
+
+00:26:26,000 --> 00:26:30,000
+in particular what we did in
+en particulier ce que nous avons fait dans
+
+00:26:30,000 --> 00:26:34,000
+the continuous-time case
+le cas continu
+
+00:26:34,000 --> 00:26:37,000
+when we head and a periodic signal
+quand nous nous dirigeons et un signal périodique
+
+00:26:37,000 --> 00:26:42,000
+was to consider constructing a periodic signal
+était d'envisager la construction d'un signal périodique
+
+00:26:42,000 --> 00:26:47,000
+for which be a periodic signal was one period
+pour qui soit un signal périodique était une période
+
+00:26:47,000 --> 00:26:50,000
+and then we developed the notion there since
+et puis nous avons développé la notion là depuis
+
+00:26:50,000 --> 00:26:55,000
+the periodic signal has a forty eight series
+le signal périodique comprend une série de quarante-huit
+
+00:26:55,000 --> 00:26:58,000
+and since as the period
+et étant donné que la période
+
+00:26:58,000 --> 00:27:01,000
+the periodic signal increases n goes to infinity
+le signal périodique augmente n tend vers l'infini
+
+00:27:01,000 --> 00:27:05,000
+the periodic signal represents the a periodic signal
+le signal périodique représente l'un signal périodique
+
+00:27:05,000 --> 00:27:09,000
+then essentially the 48 series
+alors essentiellement la série 48
+
+00:27:09,000 --> 00:27:12,000
+provides us with the representation now
+nous donne la représentation maintenant
+
+00:27:12,000 --> 00:27:16,000
+we can do exactly the same thing in the discrete-time case
+nous pouvons faire exactement la même chose dans le cas temps discret
+
+00:27:16,000 --> 00:27:21,000
+the statement is exactly the same except dead in a discrete-time case
+la déclaration est exactement le même, sauf mort dans un cas à temps discret
+
+00:27:21,000 --> 00:27:24,000
+instead of see as the independent variable
+au lieu de voir que la variable indépendante
+
+00:27:24,000 --> 00:27:27,000
+we simply make exactly the same statement
+nous faisons tout simplement exactement la même déclaration
+
+00:27:27,000 --> 00:27:31,000
+but with are discrete-time variable
+mais sont variables en temps discret
+
+00:27:31,000 --> 00:27:35,000
+and so the basic notion then in representing
+et ainsi de la notion de base alors dans la représentation
+
+00:27:35,000 --> 00:27:41,000
+a discrete-time a periodic signal
+un temps discret, un signal périodique
+
+00:27:41,000 --> 00:27:45,000
+is to first construct
+est d'abord de construire
+
+00:27:45,000 --> 00:27:48,000
+a periodic signal here we have the
+un signal périodique ici nous avons le
+
+00:27:48,000 --> 00:27:53,000
+a periodic signal reconstruct a periodic signal
+un signal périodique reconstruire un signal périodique
+
+00:27:53,000 --> 00:27:58,000
+by simply periodically replicating the a periodic signal
+simplement reproduire périodiquement le signal périodique
+
+00:27:58,000 --> 00:28:04,000
+the periodic signal in the a periodic signal are identical
+le signal périodique dans le signal périodique sont identiques
+
+00:28:04,000 --> 00:28:08,000
+for one period and as
+pour une période et que
+
+00:28:08,000 --> 00:28:11,000
+the period goes off to infinity
+la période va à l'infini
+
+00:28:11,000 --> 00:28:15,000
+it's the forty a series representation of the periodic signal
+c'est la quarante une représentation en série du signal périodique
+
+00:28:15,000 --> 00:28:18,000
+that provides a representation all
+qui fournit un ensemble de représentation
+
+00:28:18,000 --> 00:28:22,000
+the a periodic signal again
+l'un signal périodique à nouveau
+
+00:28:22,000 --> 00:28:25,000
+to returned to the example
+de retour à l'exemple
+
+00:28:25,000 --> 00:28:28,000
+that we
+que nous
+
+00:28:28,000 --> 00:28:34,000
+have been kinda working through this lecture namely the periodic square wave
+ont travaillé un peu à travers cette conférence à savoir l'onde carrée périodique
+
+00:28:34,000 --> 00:28:38,000
+if we have in a periodic signal which is a rectangle
+si nous avons un signal périodique qui est un rectangle
+
+00:28:38,000 --> 00:28:42,000
+and reconstruct the periodic signal
+et reconstruire le signal périodique
+
+00:28:42,000 --> 00:28:46,000
+and now we consider letting this period increase to infinity
+et nous considérons maintenant laisser cette majoration de la période à l'infini
+
+00:28:46,000 --> 00:28:51,000
+we would first have this set of samples of the envelope
+il faudrait d'abord cet ensemble d'échantillons de l'enveloppe
+
+00:28:51,000 --> 00:28:57,000
+as the period increases we would decrease the sample spacing to this set
+que la période augmente nous diminuer l'espacement de l'échantillon de cette série
+
+00:28:57,000 --> 00:28:58,000
+of samples
+d'échantillons
+
+00:28:58,000 --> 00:29:02,000
+as the period increases further it would be
+que la période augmente encore, il serait
+
+00:29:02,000 --> 00:29:07,000
+this set of samples and as the period goes off to infinity
+cet ensemble d'échantillons et que la période va à l'infini
+
+00:29:07,000 --> 00:29:10,000
+its every point on the envelope in fact
+son point chaque sur l'enveloppe, en fait,
+
+00:29:10,000 --> 00:29:14,000
+what the representation up the a periodic signal
+ce la représentation la un signal périodique
+
+00:29:14,000 --> 00:29:18,000
+is is the anvil
+est est l'enclume
+
+00:29:18,000 --> 00:29:22,000
+okay well so that's the basic notion it's no different than what we did
+ok, si bien que c'est la notion de base, il n'est pas différent de ce que nous avons fait
+
+00:29:22,000 --> 00:29:26,000
+in the continuous-time case and
+dans le cas continu et
+
+00:29:26,000 --> 00:29:29,000
+mathematically it develops in
+il se développe dans mathématiquement
+
+00:29:29,000 --> 00:29:33,000
+very much the same way as in the continuous-time
+beaucoup de la même manière que dans le temps continu
+
+00:29:33,000 --> 00:29:37,000
+case specifically
+cas particulier
+
+00:29:37,000 --> 00:29:41,000
+here is our representation
+voici notre représentation
+
+00:29:41,000 --> 00:29:46,000
+through the forty a series all the
+à travers la quarante une série d'autant
+
+00:29:46,000 --> 00:29:51,000
+here here's a representation through the envelope function
+ici, voici une représentation grâce à la fonction d'enveloppe
+
+00:29:51,000 --> 00:29:55,000
+and this is the 48 series synthesis equation where
+et ceci est l'équation de la synthèse 48 de la série où
+
+00:29:55,000 --> 00:29:59,000
+equation the equation below tells us
+l'équation de l'équation ci-dessous nous dit
+
+00:29:59,000 --> 00:30:02,000
+how we'd get these for EA coefficients
+comment nous pourrions obtenir ces coefficients pour EA
+
+00:30:02,000 --> 00:30:06,000
+or the envelope from accident
+ou l'enveloppe d'un accident
+
+00:30:06,000 --> 00:30:10,000
+now extolled event is the periodic signal and we know that
+Si maintenant exalté est le signal périodique et nous savons que
+
+00:30:10,000 --> 00:30:14,000
+over one period which is the only interval over which we use it
+sur une période qui est le seul intervalle sur lequel on l'utilise
+
+00:30:14,000 --> 00:30:18,000
+in fact this is identical to the a periodic signal
+en fait, elle est identique à l'un signal périodique
+
+00:30:18,000 --> 00:30:21,000
+its own fact we can rewrite this equation
+son propre fait, nous pouvons réécrire cette équation
+
+00:30:21,000 --> 00:30:27,000
+simply by substituting instead effect told The
+en remplaçant simplement la place effet déclaré à l'
+
+00:30:27,000 --> 00:30:30,000
+the original a periodic signal and now
+l'original d'un signal périodique et maintenant
+
+00:30:30,000 --> 00:30:34,000
+we can use infinite limits on this some and
+nous pouvons utiliser limites infinies sur cette uns et
+
+00:30:34,000 --> 00:30:38,000
+what we would want to examine mathematically is
+ce que nous voudrions examiner mathématiquement c'est
+
+00:30:38,000 --> 00:30:42,000
+what happens to the top equation
+ce qui arrive à l'équation haut
+
+00:30:42,000 --> 00:30:47,000
+as to the top equation as we let the period
+à l'équation haut que nous laissons la période
+
+00:30:47,000 --> 00:30:51,000
+go off to infinity and what happens is
+aller à l'infini et ce qui se passe est
+
+00:30:51,000 --> 00:30:54,000
+exactly identical mathematically to continuous-time
+exactement identique mathématiquement à temps continu
+
+00:30:54,000 --> 00:30:58,000
+I won't the labor the details essentially
+Je ne vais pas le travail des détails essentiellement
+
+00:30:58,000 --> 00:31:01,000
+its this some that goes to an integral
+sa ce qui va un peu à une intégrale
+
+00:31:01,000 --> 00:31:06,000
+Omega 0 which is the fundamental frequency is going
+Omega 0, qui est la fréquence fondamentale va
+
+00:31:06,000 --> 00:31:09,000
+toward zero in fact becomes the differential in the integral
+vers zéro, en fait, devient l'écart dans l'intégrale
+
+00:31:09,000 --> 00:31:14,000
+and in the second equation of course this then becomes excessive Omega
+et dans la seconde équation de ce cours devient alors Omega excessive
+
+00:31:14,000 --> 00:31:18,000
+and as n goes to infinity then
+et quand n tend vers l'infini alors
+
+00:31:18,000 --> 00:31:22,000
+what the for a series becomes is the 48 transform
+ce que le pour une série devient la 48 transformée
+
+00:31:22,000 --> 00:31:25,000
+as summarized by the bottom to
+telle que résumée par le fond de
+
+00:31:25,000 --> 00:31:29,000
+equations so although
+équations si bien que
+
+00:31:29,000 --> 00:31:33,000
+there are is a little bit mathematical
+il ya est un peu mathématique
+
+00:31:33,000 --> 00:31:36,000
+trickery year but I called trickery but subtlety
+année de la ruse mais j'ai appelé la ruse mais subtilité
+
+00:31:36,000 --> 00:31:40,000
+to be tracked through in detail the important conceptual thing to think
+être suivis par en détail la chose conceptuel important de penser
+
+00:31:40,000 --> 00:31:41,000
+about
+sur
+
+00:31:41,000 --> 00:31:44,000
+is this notion dead
+C'est cette notion morts
+
+00:31:44,000 --> 00:31:48,000
+we take the a periodic signal for periodic signal let the period go off to
+nous prenons le un signal périodique de signal périodique laissez la période s'éteint à
+
+00:31:48,000 --> 00:31:49,000
+infinity
+infini
+
+00:31:49,000 --> 00:31:53,000
+which case the forty a series coefficients became these
+auquel cas la quarante une série coefficients sont devenus les
+
+00:31:53,000 --> 00:31:56,000
+envelope function and incidently mathematically
+fonction d'enveloppe et incidemment mathématiquement
+
+00:31:56,000 --> 00:31:59,000
+one of the sons ends up going to an integral
+l'un des fils finit par aller à une intégrale
+
+00:31:59,000 --> 00:32:02,000
+so what we have then is
+donc ce que nous avons alors est
+
+00:32:02,000 --> 00:32:07,000
+the discrete-time for EA transform
+le temps discret pour EA transformer
+
+00:32:07,000 --> 00:32:11,000
+which is a representation all
+qui est une représentation toute
+
+00:32:11,000 --> 00:32:14,000
+and a periodic signal and we have
+et un signal périodique et que nous avons
+
+00:32:14,000 --> 00:32:19,000
+the synthesis equation which I show as the top equation honest
+l'équation de synthèse qui je montre que l'équation haut honnête
+
+00:32:19,000 --> 00:32:22,000
+transparency and this
+cette transparence et
+
+00:32:22,000 --> 00:32:27,000
+is the integral that the four East series
+est l'intégrale que la série quatre-Orient
+
+00:32:27,000 --> 00:32:32,000
+synthesis equation went to as the period when off to infinity
+équation de synthèse est allé à la période quand à l'infini
+
+00:32:32,000 --> 00:32:36,000
+and we have the corresponding analysis equation
+et nous avons l'équation d'analyse correspondant
+
+00:32:36,000 --> 00:32:41,000
+which is shown below where this tells us the 48 transform
+qui est indiqué ci-dessous où cela nous dit le 48 transformée
+
+00:32:41,000 --> 00:32:44,000
+in effect the envelope all the for a series coefficients
+en effet l'enveloppe à une série coefficients
+
+00:32:44,000 --> 00:32:48,000
+love that periodic signal in and here
+aimer ce signal périodique dans et ici
+
+00:32:48,000 --> 00:32:53,000
+represented interns love the a periodic signal
+stagiaires représentés aiment le un signal périodique
+
+00:32:53,000 --> 00:32:58,000
+okay so we have the analysis equation synthesis equation
+Bon alors nous avons l'équation équation de synthèse de l'analyse
+
+00:32:58,000 --> 00:33:02,000
+there are a number of things to focus
+il ya un certain nombre de choses à se concentrer
+
+00:33:02,000 --> 00:33:06,000
+on as you look at this and we'll talk about so its properties
+sur que vous regardez cela et nous allons parler de sorte que ses propriétés
+
+00:33:06,000 --> 00:33:09,000
+actually in the next lecture by it sold them the
+fait dans la prochaine session par elle leur a vendu le
+
+00:33:09,000 --> 00:33:12,000
+points the I'd like you to think about a focus on
+souligne l'j'aimerais que vous réfléchissiez à une mise au point sur
+
+00:33:12,000 --> 00:33:15,000
+the fact that now there
+le fait que maintenant il
+
+00:33:15,000 --> 00:33:20,000
+is somewhat have an imbalance or lack of duality between the time-domain and
+est quelque peu avoir un déséquilibre ou un manque de dualité entre le domaine temporel et
+
+00:33:20,000 --> 00:33:21,000
+frequency-domain
+dans le domaine fréquentiel
+
+00:33:21,000 --> 00:33:25,000
+x seven witches are a periodic signal is a course
+x sept sorcières sont un signal périodique est un cours
+
+00:33:25,000 --> 00:33:29,000
+discrete its Fourier transform
+transformée discrète de Fourier
+
+00:33:29,000 --> 00:33:33,000
+Xserve Omega is a function love a continuous variable
+Xserve Omega est un amour de fonction une variable continue
+
+00:33:33,000 --> 00:33:36,000
+Omega is a continuous variable that that
+Omega est une variable continue qui que
+
+00:33:36,000 --> 00:33:41,000
+and that is essentially what represents the envelope
+et c'est essentiellement ce que représente l'enveloppe
+
+00:33:41,000 --> 00:33:44,000
+also in the time domain x7 is
+également dans la x7 dans le domaine temporel est
+
+00:33:44,000 --> 00:33:49,000
+a periodic its not a periodic function
+un son pas une fonction périodique périodique
+
+00:33:49,000 --> 00:33:54,000
+however in the frequency domain remember that the for a series coefficients were
+Mais dans le domaine de fréquence se rappeler que la pour une série coefficients étaient
+
+00:33:54,000 --> 00:33:55,000
+always periodic
+toujours périodique
+
+00:33:55,000 --> 00:33:59,000
+well this envelope function then is also periodic
+bien cette fonction d'enveloppe est alors aussi périodique
+
+00:33:59,000 --> 00:34:03,000
+with a period in omega up to par i
+avec une période en oméga à la hauteur i
+
+00:34:03,000 --> 00:34:08,000
+what's again the reason for the periodicity it all stems back to the
+ce qui est encore la raison de la périodicité tout remonte à la
+
+00:34:08,000 --> 00:34:08,000
+fact
+fait
+
+00:34:08,000 --> 00:34:12,000
+there when we talk about complex exponentials
+il lorsque nous parlons de exponentielles complexes
+
+00:34:12,000 --> 00:34:16,000
+and recall back to the early lectures in discrete-time
+et rappeler remonte au début des conférences en temps discret
+
+00:34:16,000 --> 00:34:21,000
+as the frequency variable covers a range
+comme variable de fréquence couvre une gamme
+
+00:34:21,000 --> 00:34:25,000
+all to parlay when you proceed past that range
+tous de faire fructifier lorsque vous passez passé gamme
+
+00:34:25,000 --> 00:34:30,000
+you simply see the same complex exponentials over and over again
+vous voyez tout simplement les mêmes exponentielles complexes encore et encore
+
+00:34:30,000 --> 00:34:34,000
+and so obviously anything that we do with them would have to be periodic
+et si évidemment tout ce que nous faisons avec eux devrait être périodique
+
+00:34:34,000 --> 00:34:39,000
+in that frequency variable alright notation Lee
+dans cette variable de fréquence notation bien Lee
+
+00:34:39,000 --> 00:34:42,000
+and will again represent the
+et sera encore représenter l'
+
+00:34:42,000 --> 00:34:46,000
+discrete-time Fourier transform here as i indicate here
+temps discret transformée de Fourier ici comme je l'indique ici
+
+00:34:46,000 --> 00:34:49,000
+and sense is a complex function of frequency
+et sens est une fonction complexe de la fréquence
+
+00:34:49,000 --> 00:34:53,000
+may on occasion want to either represented
+peut parfois vouloir soit représenté
+
+00:34:53,000 --> 00:34:57,000
+in rectangular form as i indicated this equation
+de forme rectangulaire comme je le disais cette équation
+
+00:34:57,000 --> 00:35:02,000
+or in polar for as i indicate in this equation
+ou en polaire pour que je l'indique dans cette équation
+
+00:35:02,000 --> 00:35:05,000
+all right let's and look at an example
+tout laisser et droit de regarder un exemple
+
+00:35:05,000 --> 00:35:08,000
+and of course one example that
+et bien sûr un exemple qui
+
+00:35:08,000 --> 00:35:12,000
+we can look at is the one that has kind of been tracking this
+nous pouvons regarder est celui qui a en quelque sorte été suivi ce
+
+00:35:12,000 --> 00:35:15,000
+through this lecture which is the example
+à travers cette conférence, qui est l'exemple
+
+00:35:15,000 --> 00:35:18,000
+love a rectangle now
+aimer un rectangle maintenant
+
+00:35:18,000 --> 00:35:22,000
+the rectangle if we refer back to our
+le rectangle si nous nous référons à notre
+
+00:35:22,000 --> 00:35:28,000
+argument love how we get a for a representation for a periodic signal
+l'argument aiment la façon dont nous obtenons un pour une représentation d'un signal périodique
+
+00:35:28,000 --> 00:35:31,000
+we would form a periodic signal where this is repeated
+nous former un signal périodique où cela se répète
+
+00:35:31,000 --> 00:35:36,000
+and thats are square wave example as the period goes to infinity
+et c'est en sont l'exemple d'onde carrée comme la période tend vers l'infini
+
+00:35:36,000 --> 00:35:40,000
+the forty a transformer this is represented by the envelope
+la quarante un transformateur ceci est représenté par l'enveloppe
+
+00:35:40,000 --> 00:35:43,000
+all those for a series coefficients and that was
+tous ceux qui pour une série coefficients et que c'était
+
+00:35:43,000 --> 00:35:46,000
+are sign an X over sin x function
+sont signer un X sur le péché x fonction
+
+00:35:46,000 --> 00:35:50,000
+which in this particular case for these particular numbers
+qui, dans ce cas particulier pour ces numéros particuliers
+
+00:35:50,000 --> 00:35:53,000
+is sin 5 Omega over to
+est péché 5 Omega vers
+
+00:35:53,000 --> 00:35:58,000
+divided by sign Omega over to
+divisé par signe Omega vers
+
+00:35:58,000 --> 00:36:01,000
+and notice of course as we would expect
+et avis bien sûr, comme nous nous attendons
+
+00:36:01,000 --> 00:36:05,000
+that notice that this is a
+que l'avis qu'il s'agit d'une
+
+00:36:05,000 --> 00:36:09,000
+periodic function all the frequency variable Omega
+fonction périodique tous la fréquence Omega variables
+
+00:36:09,000 --> 00:36:13,000
+repeating of course with a period up to par
+répétition de cours avec une période à la hauteur
+
+00:36:13,000 --> 00:36:17,000
+whereas in the time domain the function was not
+alors que dans le domaine temporel de la fonction n'était pas
+
+00:36:17,000 --> 00:36:22,000
+a periodic function it's a period
+une fonction périodique, il s'agit d'une période
+
+00:36:22,000 --> 00:36:25,000
+now let's look at another example
+maintenant, regardons un autre exemple
+
+00:36:25,000 --> 00:36:28,000
+in let's look at example
+dans le regard de let au exemple
+
+00:36:28,000 --> 00:36:32,000
+which is another signal that has
+qui est un autre signal qui a
+
+00:36:32,000 --> 00:36:36,000
+kinda popped its head up from time to time as the lectures have gone along
+un peu sauté la tête de temps en temps que les conférences ont longé
+
+00:36:36,000 --> 00:36:42,000
+signal which is another a periodic signal which is a decaying exponential
+signal qui est l'autre d'un signal périodique qui est une exponentielle décroissante
+
+00:36:42,000 --> 00:36:45,000
+of this form with the
+de cette forme avec le
+
+00:36:45,000 --> 00:36:50,000
+factor a chosen between 0&1
+facteur a choisi entre 0 et 1
+
+00:36:50,000 --> 00:36:53,000
+and you can workout the algebra
+et vous pouvez vous dépenser l'algèbre
+
+00:36:53,000 --> 00:36:57,000
+at your leisure basically if we substituted to the four EA
+à votre guise, fondamentalement, si nous avons substitué aux quatre EA
+
+00:36:57,000 --> 00:37:00,000
+transform analysis equation its
+transformer l'équation de son analyse
+
+00:37:00,000 --> 00:37:05,000
+this summer we evaluate because we have a unit step here
+cet été nous évaluer parce que nous avons une étape de l'unité ici
+
+00:37:05,000 --> 00:37:09,000
+which shots this of for and less than zero
+duquel des coups de ce pour et inférieur à zéro
+
+00:37:09,000 --> 00:37:12,000
+we can change the limits on the some this then corresponds
+nous pouvons changer les limites de l'certains, cela correspond alors
+
+00:37:12,000 --> 00:37:17,000
+to the some over an infinite number turns
+à l'infini sur certains tours numériques
+
+00:37:17,000 --> 00:37:21,000
+geometric series and that as we've seen before
+série géométrique et que nous avons vu auparavant
+
+00:37:21,000 --> 00:37:24,000
+is one divided by one minus a
+est un divisé par un moins un
+
+00:37:24,000 --> 00:37:28,000
+you to the minus jail make so
+vous à la prison de moins faire en sorte
+
+00:37:28,000 --> 00:37:32,000
+let's look at what that looks like
+Voyons ce que cela ressemble à
+
+00:37:32,000 --> 00:37:36,000
+here him then we have again
+ici lui, puis nous avons à nouveau
+
+00:37:36,000 --> 00:37:40,000
+the expression in the time domain
+l'expression dans le domaine temporel
+
+00:37:40,000 --> 00:37:43,000
+and the expression in the frequency domain
+et l'expression dans le domaine des fréquences
+
+00:37:43,000 --> 00:37:48,000
+and lets in particular focus I N what the magnitude of the Fourier transform
+et permet de se concentrer en particulier dans ce que la transformée de Fourier de la grandeur
+
+00:37:48,000 --> 00:37:50,000
+looks like
+ressemble
+
+00:37:50,000 --> 00:37:54,000
+its as we show here
+son comme nous le montrons ici
+
+00:37:54,000 --> 00:37:58,000
+and for the particular values
+et pour des valeurs particulières
+
+00:37:58,000 --> 00:38:01,000
+Ave that I picked namely between 0&1
+Ave que j'ai choisi à savoir entre 0 et 1
+
+00:38:01,000 --> 00:38:05,000
+its larger at the origin then it is upon I
+sa plus grande à l'origine, alors il est sur I
+
+00:38:05,000 --> 00:38:09,000
+and then of course it is periodic
+et puis bien sûr il est périodique
+
+00:38:09,000 --> 00:38:14,000
+and the periodicity is inherent in the Fourier transform in discrete-time
+et la périodicité est inhérent à la transformation de Fourier en temps discret
+
+00:38:14,000 --> 00:38:18,000
+so we really might only need to look at this either from minus
+afin que nous puissions vraiment seulement besoin de regarder ce soit de moins
+
+00:38:18,000 --> 00:38:21,000
+fired upon by or from 0 to 2pi
+tiré sur par ou de 0 à 2 pi
+
+00:38:21,000 --> 00:38:25,000
+the periodicity of course would imply what the rest at this is for other
+la périodicité des cours impliquerait que le reste de ce est pour d'autres
+
+00:38:25,000 --> 00:38:28,000
+values have or make it
+valeurs ont ou font
+
+00:38:28,000 --> 00:38:31,000
+let me also draw your attention at war on it
+permettez-moi d'attirer votre attention sur elle en guerre
+
+00:38:31,000 --> 00:38:35,000
+the fact dead observed at if
+le fait morte observée à si
+
+00:38:35,000 --> 00:38:38,000
+a were in fact negative then
+un était en fait négatif,
+
+00:38:38,000 --> 00:38:42,000
+this value would be less than this value
+cette valeur serait inférieure à cette valeur
+
+00:38:42,000 --> 00:38:46,000
+and in fact for a negative
+et en fait, pour un négatif
+
+00:38:46,000 --> 00:38:50,000
+the magnitude the frequency response would look like this except shifted
+l'ampleur de la réponse en fréquence devrait ressembler à ceci sauf décalé
+
+00:38:50,000 --> 00:38:54,000
+by an amount in omega equal the pie
+d'un montant en oméga égale à la tarte
+
+00:38:54,000 --> 00:38:57,000
+and this example will come up
+et cet exemple viendra
+
+00:38:57,000 --> 00:39:02,000
+and play an important role in our discussion next time
+et jouer un rôle important dans notre discussion la prochaine fois
+
+00:39:02,000 --> 00:39:06,000
+so try to keep it in mind in fact work it out more carefully between
+alors essayez de garder à l'esprit en fait travailler plus étroitement entre
+
+00:39:06,000 --> 00:39:10,000
+now and next time and also if you have a chance
+et maintenant et la prochaine fois aussi si vous avez une chance
+
+00:39:10,000 --> 00:39:14,000
+focus on this issue love how it looks
+se concentrer sur cette question d'amour à quoi il ressemble
+
+00:39:14,000 --> 00:39:18,000
+with a positive is compared with a negative
+avec un positif est comparé à un négatif
+
+00:39:18,000 --> 00:39:23,000
+okay now we developed the 48 transform
+bien maintenant nous avons développé le 48 transformée
+
+00:39:23,000 --> 00:39:29,000
+by beginning with the forty a series we did that in continuous time also
+en commençant par la quarante une série que nous avons fait en temps continu aussi
+
+00:39:29,000 --> 00:39:33,000
+but I'd like to do now just as we did in continuous-time
+mais je voudrais faire maintenant comme nous l'avons fait en temps continu
+
+00:39:33,000 --> 00:39:37,000
+is now absorb the forty a series
+est maintenant absorber la quarante une série
+
+00:39:37,000 --> 00:39:41,000
+within the broader framework above the 40 a transport
+dans le cadre plus large au-dessus du 40 d'un transport
+
+00:39:41,000 --> 00:39:47,000
+and there are two relationships between the forty a series the Fourier transform
+et il existe deux relations entre une série de quarante la transformée de Fourier
+
+00:39:47,000 --> 00:39:50,000
+which are identical to relationships that we had
+qui sont identiques aux relations que nous avons eues
+
+00:39:50,000 --> 00:39:54,000
+in the continuous-time case
+dans le cas continu
+
+00:39:54,000 --> 00:39:57,000
+let me remind you dead in
+permettez-moi de vous rappeler morts dans
+
+00:39:57,000 --> 00:40:01,000
+continuous-time we head
+en temps continu, nous nous dirigeons
+
+00:40:01,000 --> 00:40:08,000
+the statement there if we have a periodic signal
+la déclaration il si nous avons un signal périodique
+
+00:40:08,000 --> 00:40:13,000
+that in fact the forty a series coefficients that periodic signal
+que, en fait, la quarante une série coefficients signal périodique
+
+00:40:13,000 --> 00:40:16,000
+is proportional to
+est proportionnelle à
+
+00:40:16,000 --> 00:40:20,000
+the two samples of the Fourier transform
+les deux échantillons de la transformée de Fourier
+
+00:40:20,000 --> 00:40:24,000
+all one period well
+tous une période bien
+
+00:40:24,000 --> 00:40:27,000
+in fact thats let me remind you flows
+en fait, permettez-moi de rappeler des thats vous flux
+
+00:40:27,000 --> 00:40:30,000
+easily from all other things that we've built up
+facilement de toutes les autres choses que nous avons construit
+
+00:40:30,000 --> 00:40:35,000
+so far because of the fact that the for a transformer sexually
+jusqu'à présent en raison du fait que l'un transformateur sexuellement
+
+00:40:35,000 --> 00:40:38,000
+by definition love the way we developed it
+par définition aimer la façon dont nous l'avons développé
+
+00:40:38,000 --> 00:40:41,000
+is what we get as
+ce que nous obtenons comme
+
+00:40:41,000 --> 00:40:46,000
+the forty-a series coefficients
+les coefficients d'une série de quarante-
+
+00:40:46,000 --> 00:40:51,000
+as we focus on one period and then let the period go off to infinity
+que nous nous concentrons sur une période et laissez la période aller à l'infini
+
+00:40:51,000 --> 00:40:56,000
+well thats looking at one period before a transformer that then
+bien regarder des thats à une période avant un transformateur alors
+
+00:40:56,000 --> 00:40:59,000
+is the envelope above the 40 a series coefficients
+est l'enveloppe au-dessus des coefficients 40, une série
+
+00:40:59,000 --> 00:41:03,000
+and so in continuous-time we have
+et donc en temps continu, nous avons
+
+00:41:03,000 --> 00:41:07,000
+this relationship and in discrete-time
+cette relation et en temps discret
+
+00:41:07,000 --> 00:41:12,000
+we have precisely the same relationship
+nous avons exactement la même relation
+
+00:41:12,000 --> 00:41:15,000
+except that here we're talking about
+sauf qu'ici nous parlons
+
+00:41:15,000 --> 00:41:20,000
+an integer variable and as opposed to the continuous variable and a period of
+une variable entière, et par opposition à la variable continue et une période d'
+
+00:41:20,000 --> 00:41:22,000
+capital and
+capital et
+
+00:41:22,000 --> 00:41:25,000
+as opposed to a period
+par opposition à une période
+
+00:41:25,000 --> 00:41:30,000
+love t0 okay so
+amour t0 bien si
+
+00:41:30,000 --> 00:41:33,000
+once again if we returned to
+une fois de plus si nous revenions à
+
+00:41:33,000 --> 00:41:37,000
+our example
+notre exemple
+
+00:41:37,000 --> 00:41:41,000
+if or Fri return to a periodic signal
+si ou ven revenir à un signal périodique
+
+00:41:41,000 --> 00:41:45,000
+we have a periodic signal and we consider
+nous avons un signal périodique et nous considérons
+
+00:41:45,000 --> 00:41:48,000
+the for EA transform love
+l'EA pour transformer l'amour
+
+00:41:48,000 --> 00:41:52,000
+one period the for a series coefficients
+une période pendant la série des coefficients
+
+00:41:52,000 --> 00:41:55,000
+this periodic signal are in fact
+ce signal périodique sont en fait
+
+00:41:55,000 --> 00:41:58,000
+samples as stated
+échantillons que déclaré
+
+00:41:58,000 --> 00:42:02,000
+mathematically in the bottom equation samples
+mathématiquement dans les échantillons de l'équation de fond
+
+00:42:02,000 --> 00:42:05,000
+love the four EA transform all
+amour quatre EA transformer tous
+
+00:42:05,000 --> 00:42:11,000
+one period so XO makers the for a transformer one period
+Une période donc responsables de la XO pour un transformateur d'une période
+
+00:42:11,000 --> 00:42:15,000
+a suitcase at a4e series coefficients at the periodic signal
+une valise à coefficients de la série de a4e au signal périodique
+
+00:42:15,000 --> 00:42:20,000
+and this relationship simply says their related except for a scale factor
+et cette relation indique simplement leur est associée à un facteur d'échelle
+
+00:42:20,000 --> 00:42:26,000
+through samples along the frequency axis
+à travers des échantillons le long de l'axe des fréquences
+
+00:42:26,000 --> 00:42:31,000
+and and the chorus we saw this
+et le chœur et nous avons vu ce
+
+00:42:31,000 --> 00:42:34,000
+in the context all our
+dans le contexte tout notre
+
+00:42:34,000 --> 00:42:37,000
+square wave example in a square wave
+carré exemple d'onde en une onde carrée
+
+00:42:37,000 --> 00:42:42,000
+example we have a periodic signal
+exemple, nous avons un signal périodique
+
+00:42:42,000 --> 00:42:45,000
+which is a periodic square wave
+qui est une onde carrée périodique
+
+00:42:45,000 --> 00:42:49,000
+and the for EA transform
+et la transformer pour EA
+
+00:42:49,000 --> 00:42:53,000
+a one period in fact represents
+une période représente en fait une
+
+00:42:53,000 --> 00:42:57,000
+the on below and here we have the envelope function
+le sur le dessous et ici nous avons la fonction d'enveloppe
+
+00:42:57,000 --> 00:43:02,000
+represents the envelope or the forty a series coefficients
+représente l'enveloppe ou le quarante une série coefficients
+
+00:43:02,000 --> 00:43:08,000
+and the for a series coefficients are samples
+et la pour une série coefficients sont des échantillons
+
+00:43:08,000 --> 00:43:12,000
+so what we have been is
+si ce que nous avons est
+
+00:43:12,000 --> 00:43:18,000
+a relationship back to before a series coefficients from the Fourier transform
+une relation d'avant une série de coefficients de la transformée de Fourier
+
+00:43:18,000 --> 00:43:21,000
+that tells us that for periodic signal now
+qui, nous apprend que pour le signal périodique maintenant
+
+00:43:21,000 --> 00:43:25,000
+the periodic signal the for a series coefficients
+le signal périodique pendant la série des coefficients
+
+00:43:25,000 --> 00:43:29,000
+are related are samples of the Fourier transform
+sont liées sont des échantillons de la transformée de Fourier
+
+00:43:29,000 --> 00:43:32,000
+one period now
+une période maintenant
+
+00:43:32,000 --> 00:43:36,000
+finally to kinda bring things back in a circle
+enfin, à mettre un peu les choses dans un cercle
+
+00:43:36,000 --> 00:43:40,000
+and exactly identical to what we did it in the continuous-time
+et exactement identique à ce que nous avons fait dans le temps continu
+
+00:43:40,000 --> 00:43:43,000
+case we can finally absorber
+cas, nous pouvons enfin absorbeur
+
+00:43:43,000 --> 00:43:47,000
+the 48 series indiscreet
+indiscrets 48 de la série
+
+00:43:47,000 --> 00:43:50,000
+time we can absorb it into the framework
+temps, nous pouvons l'absorber dans le cadre
+
+00:43:50,000 --> 00:43:54,000
+all the four EA transport now
+tous les transports de quatre EA maintenant
+
+00:43:54,000 --> 00:43:58,000
+remember or recall how we did at when
+Souvenons ou rappeler comment nous avons fait à quand
+
+00:43:58,000 --> 00:44:02,000
+re tried to do a similar sort of thing
+re essayé de faire une sorte semblable de chose
+
+00:44:02,000 --> 00:44:07,000
+in continuous-time in continuous-time
+en temps continu en temps continu
+
+00:44:07,000 --> 00:44:10,000
+what we essentially did is
+ce que nous avons fait est essentiellement
+
+00:44:10,000 --> 00:44:14,000
+to develop that more less by definition
+de développer plus que moins, par définition,
+
+00:44:14,000 --> 00:44:18,000
+we have occurred we have a periodic signal
+nous avons eu, nous avons un signal périodique
+
+00:44:18,000 --> 00:44:21,000
+the periodic signal is represented through 48 series
+le signal périodique est représentée par 48 série
+
+00:44:21,000 --> 00:44:25,000
+in forty a series coefficients essentially
+quarante un série coefficients essentiellement
+
+00:44:25,000 --> 00:44:30,000
+when I pointed out at that time was that if we define
+quand je l'ai souligné à l'époque était que si nous définissons
+
+00:44:30,000 --> 00:44:35,000
+and take it as a definition before a transformer the periodic signal
+et le prendre comme une définition avant un transformateur signal périodique
+
+00:44:35,000 --> 00:44:41,000
+as an impulse train where the amplitudes at the impulses are proportional
+comme un train d'impulsions où les amplitudes à impulsions sont proportionnels
+
+00:44:41,000 --> 00:44:44,000
+to the forty a series coefficients
+à la quarante coefficients une série
+
+00:44:44,000 --> 00:44:48,000
+if we take an impulse train representation
+si nous prenons une représentation de train d'impulsions
+
+00:44:48,000 --> 00:44:52,000
+and simply plug it in
+et branchez-le simplement dans
+
+00:44:52,000 --> 00:44:55,000
+to the for EA
+le pour EA
+
+00:44:55,000 --> 00:44:59,000
+transform synthesis equation what we end up with
+transformer l'équation de synthèse que nous nous retrouvons avec
+
+00:44:59,000 --> 00:45:05,000
+is the for you see recent this equation
+est le rendez-vous sur cette équation récente
+
+00:45:05,000 --> 00:45:08,000
+so in continuous-time
+si en temps continu
+
+00:45:08,000 --> 00:45:12,000
+we bad done
+nous mal fait
+
+00:45:12,000 --> 00:45:15,000
+we had used this definition I love
+nous avions utilisé cette définition J'aime
+
+00:45:15,000 --> 00:45:18,000
+the discrete-time up the continuous-time
+le temps discret le-temporel continu
+
+00:45:18,000 --> 00:45:22,000
+for EA transform other periodic signal
+pour EA transformer autre signal périodique
+
+00:45:22,000 --> 00:45:26,000
+and again in discrete-time it's simply a matter
+et de nouveau en temps discret c'est simplement une question
+
+00:45:26,000 --> 00:45:30,000
+love using exactly the same expression
+amour en utilisant exactement la même expression
+
+00:45:30,000 --> 00:45:34,000
+and using instead the appropriate
+et en utilisant à la place la appropriée
+
+00:45:34,000 --> 00:45:38,000
+variables related to discrete-time rather than the variables related to
+variables liées à temps discret plutôt que les variables liées à la
+
+00:45:38,000 --> 00:45:40,000
+continuous-time
+en temps continu
+
+00:45:40,000 --> 00:45:43,000
+so in discrete-time if we have a periodic signal
+si en temps discret si nous avons un signal périodique
+
+00:45:43,000 --> 00:45:46,000
+the Fourier transform that periodic signal
+la transformée de Fourier de ce signal périodique
+
+00:45:46,000 --> 00:45:49,000
+is defined as an impulse train where the
+est défini comme étant un train d'impulsions lorsque l'
+
+00:45:49,000 --> 00:45:52,000
+amplitudes up the impulses
+amplitudes des impulsions
+
+00:45:52,000 --> 00:45:57,000
+are proportional to the forty a series coefficients
+sont proportionnelles à la quarante des coefficients de la série de
+
+00:45:57,000 --> 00:46:02,000
+if this expression is substituted into the synthesis equation
+si cette expression est substituée dans l'équation de synthèse
+
+00:46:02,000 --> 00:46:06,000
+for the 48 transform we will simply that will simply then reduced to
+pour le 48 transformer nous allons tout simplement que nous contenterons alors réduit à
+
+00:46:06,000 --> 00:46:11,000
+this synthesis equation for the forty a series
+cette équation de synthèse de la quarante une série
+
+00:46:11,000 --> 00:46:14,000
+so wants more returning to
+si veut plus retourner à
+
+00:46:14,000 --> 00:46:19,000
+our example which is the square wave example that we carry through these
+notre exemple, qui est l'exemple d'onde carrée que nous réalisons grâce à ces
+
+00:46:19,000 --> 00:46:20,000
+lectures
+conférences
+
+00:46:20,000 --> 00:46:24,000
+or through this lecture we can see that
+ou à travers cette conférence, nous pouvons voir que
+
+00:46:24,000 --> 00:46:28,000
+really what we're talking about really is a notational change
+vraiment ce que nous parlons vraiment, c'est un changement de notation
+
+00:46:28,000 --> 00:46:33,000
+here is the four EA here is the periodic signal
+voici les quatre EA ici est le signal périodique
+
+00:46:33,000 --> 00:46:36,000
+and below it are the forty a series
+et au-dessous sont les quarante une série
+
+00:46:36,000 --> 00:46:41,000
+coefficients where I've removed the envelope function just indicate
+coefficients où j'ai enlevé la fonction d'enveloppe indiquent juste
+
+00:46:41,000 --> 00:46:46,000
+the airport to the coefficients index of course on the coefficient number
+l'aéroport à l'indice de coefficients de cours sur le nombre de coefficient
+
+00:46:46,000 --> 00:46:50,000
+and so this represents a bar graph and
+et si cela représente un graphique à barres et
+
+00:46:50,000 --> 00:46:54,000
+if instead of talking about the for a series coefficients
+si, au lieu de parler de la série pour une coefficients
+
+00:46:54,000 --> 00:46:58,000
+what I want to talk about are the
+ce que je veux parler sont les
+
+00:46:58,000 --> 00:47:02,000
+is the four EA transform the Fourier transform
+est quatre EA transformer la transformée de Fourier
+
+00:47:02,000 --> 00:47:06,000
+in essence corresponds to simply redrawing mad
+en substance correspond à redessiner tout simplement fou
+
+00:47:06,000 --> 00:47:10,000
+using impulses and using
+utilisant des impulsions et l'utilisation
+
+00:47:10,000 --> 00:47:13,000
+an axis that is essentially
+un axe qui est essentiellement
+
+00:47:13,000 --> 00:47:17,000
+index on the fundamental frequency Omega
+indice de la fréquence fondamentale Omega
+
+00:47:17,000 --> 00:47:20,000
+rather than on the four EA series coefficient number
+plutôt que sur le nombre de coefficients de la série de quatre EA
+
+00:47:20,000 --> 00:47:24,000
+K
+
+
+00:47:24,000 --> 00:47:27,000
+okay in so
+bien dans la
+
+00:47:27,000 --> 00:47:30,000
+to summarize what we've done
+pour résumer ce que nous avons fait
+
+00:47:30,000 --> 00:47:34,000
+is to pretty much parallel
+est à peu près parallèle
+
+00:47:34,000 --> 00:47:39,000
+are somewhat more quickly the kind of development that we went through
+sont un peu plus rapidement le type de développement que nous avons vécu
+
+00:47:39,000 --> 00:47:44,000
+for continuous-time representation through complex exponentials
+pour la représentation en temps continu par exponentielles complexes
+
+00:47:44,000 --> 00:47:47,000
+parallel that for the discrete-time case
+parallèles que pour le cas discret dans le temps
+
+00:47:47,000 --> 00:47:52,000
+and pretty much the conceptual underpinnings that the development are
+et à peu près les fondements conceptuels que sont le développement
+
+00:47:52,000 --> 00:47:54,000
+identical
+identique
+
+00:47:54,000 --> 00:47:58,000
+in discrete-time and in continuous time
+en temps discret et en temps continu
+
+00:47:58,000 --> 00:48:02,000
+we saw there'd their are
+nous avons vu qu'il y aurait leur sont
+
+00:48:02,000 --> 00:48:06,000
+some major differences are important differences between continuous-time and
+des différences majeures des différences importantes entre-temps continu et
+
+00:48:06,000 --> 00:48:08,000
+discrete-time
+temps discret
+
+00:48:08,000 --> 00:48:11,000
+I'm and the difference essentially
+Je suis et la différence essentiellement
+
+00:48:11,000 --> 00:48:16,000
+relates to two aspect one aspect is the fact that
+se rapporte à deux aspects d'un aspect réside dans le fait que
+
+00:48:16,000 --> 00:48:22,000
+in discrete-time we have a discrete representation in the time domain
+en temps discret, nous avons une représentation discrète dans le domaine temporel
+
+00:48:22,000 --> 00:48:25,000
+whereas the independent variable in the frequency domain
+tandis que la variable indépendante dans le domaine des fréquences
+
+00:48:25,000 --> 00:48:29,000
+is a continuous variable whereas in continuous-time
+est une variable continue alors à temps continu
+
+00:48:29,000 --> 00:48:32,000
+for the Fourier transform we had duality between the time-domain and
+pour la transformée de Fourier nous avons eu la dualité entre le domaine temporel et
+
+00:48:32,000 --> 00:48:35,000
+frequency-domain
+dans le domaine fréquentiel
+
+00:48:35,000 --> 00:48:39,000
+the other very important difference tied back to the difference between complex
+l'autre différence très importante noués à la différence entre complexe
+
+00:48:39,000 --> 00:48:43,000
+exponentials continuous-time and discrete-time
+exponentielles en temps continu et à temps discret
+
+00:48:43,000 --> 00:48:48,000
+in continuous-time complex exponentials as you very the frequency
+en temps continu exponentielles complexes que vous très la fréquence
+
+00:48:48,000 --> 00:48:51,000
+generate distinct
+générer distincte
+
+00:48:51,000 --> 00:48:56,000
+time functions in discrete-time as you very the frequency
+fonctions de temps en temps discret comme vous très la fréquence
+
+00:48:56,000 --> 00:49:00,000
+once you've covered a frequency interval to pie
+une fois que vous avez couvert un intervalle de fréquence à tarte
+
+00:49:00,000 --> 00:49:03,000
+then you've seen all the ones there are two see there are no more
+alors vous avez vu tous ceux là sont deux vois qu'il ya pas plus
+
+00:49:03,000 --> 00:49:08,000
+in this in a fact imposes a periodicity
+à cet effet dans un impose une périodicité
+
+00:49:08,000 --> 00:49:13,000
+on the 48 domain representation of discrete-time signals
+48 sur la représentation de domaine de signaux discrets dans le temps
+
+00:49:13,000 --> 00:49:17,000
+and those so those differences and of course lots the similarities
+et ces sorte que ces différences et bien sûr beaucoup les similitudes
+
+00:49:17,000 --> 00:49:22,000
+will surface both as we use this representation
+feront surface à la fois que nous utilisons cette représentation
+
+00:49:22,000 --> 00:49:26,000
+and as we develop for the property
+et que nous développons pour la propriété
+
+00:49:26,000 --> 00:49:29,000
+in the next lecture what will do is
+dans la prochaine session ce qui va faire est
+
+00:49:29,000 --> 00:49:33,000
+to focus and again on the Fourier transform the discrete-time Fourier
+à se concentrer et à nouveau sur la transformée de Fourier discrète le temps de Fourier
+
+00:49:33,000 --> 00:49:36,000
+transform
+transformer
+
+00:49:36,000 --> 00:49:41,000
+develop or eliminate so love the property serv the trip or a transform
+développer ou d'éliminer ainsi l'amour de la SERV de la propriété du voyage ou une transformation
+
+00:49:41,000 --> 00:49:45,000
+and then see how these properties can be used
+et puis voir comment ces propriétés peuvent être utilisées
+
+00:49:45,000 --> 00:49:49,000
+for a number of things for example how the properties as they were in
+pour un certain nombre de choses, par exemple comment les propriétés telles qu'elles étaient dans
+
+00:49:49,000 --> 00:49:50,000
+continuous-time
+en temps continu
+
+00:49:50,000 --> 00:49:54,000
+can be used to efficiently
+peut être utilisée de manière efficace pour
+
+00:49:54,000 --> 00:49:58,000
+generate the solution and analyze when your constant coefficient difference
+générer la solution et analyser lorsque votre différence de coefficient constant
+
+00:49:58,000 --> 00:50:00,000
+equations
+équations
+
+00:50:00,000 --> 00:50:03,000
+and then beyond that the concepts of
+et puis au-delà que les concepts de
+
+00:50:03,000 --> 00:50:06,000
+filtering and modulation and
+le filtrage et la modulation et
+
+00:50:06,000 --> 00:50:10,000
+the both the properties and interpretation which will very strongly
+la fois des propriétés et de l'interprétation qui sera très fortement
+
+00:50:10,000 --> 00:50:11,000
+parallel
+parallèle
+
+00:50:11,000 --> 00:50:14,000
+the kinds of developments along those lines that we did in the last night
+les types de développements le long de ces lignes que nous avons fait dans la dernière nuit
+
+00:50:14,000 --> 00:50:15,000
+thank you
+merci
+

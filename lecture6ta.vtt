@@ -1,0 +1,3032 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+பின்வரும் உள்ளடக்கத்தை ஒரு கிரியேட்டிவ் காமன்ஸ் உரிமத்தின் கீழ் வழங்கப்படும்
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+உங்கள் ஆதரவு எம்ஐடி ஓபன்கோர்ஸ்வேர் வழங்க தொடர்ந்து உதவும்
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+இலவசமாக உயர்தர கல்வி வளங்கள்
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+நன்கொடை செய்ய அல்லது அவர்களை நூற்றுக்கணக்கான கூடுதல் பொருட்கள் காண
+
+00:00:14,000 --> 00:00:15,000
+courses
+படிப்புகள்
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+0 CW இல் எம்ஐடி ஓபன்கோர்ஸ்வேர் வருகை
+
+00:00:18,000 --> 00:00:20,000
+that MIT ided you
+எம்ஐடி நீங்கள் ided என்று
+
+00:00:20,000 --> 00:00:27,000
+ha
+
+
+00:00:42,000 --> 00:00:45,000
+the norm
+விதிமுறை
+
+00:00:45,000 --> 00:00:52,000
+are
+இருக்கிகின்றன
+
+00:00:55,000 --> 00:00:59,000
+over the past several lectures we've developed the representation for linear
+கடந்த பல விரிவுரைகள் மீது நாம் நேரியல் ஐந்து பிரதிநிதித்துவம் வளர்ந்த
+
+00:00:59,000 --> 00:01:00,000
+time-invariant systems
+நேர மாற்றம் அமைப்புகள்
+
+00:01:00,000 --> 00:01:04,000
+in a particularly important center systems
+குறிப்பாக ஒரு முக்கிய மையமாக அமைப்புகள்
+
+00:01:04,000 --> 00:01:08,000
+which are linear and time-invariant are those that are represented by linear
+இது நேரியல் நேரம் மற்றும் மாற்றமில்லாத நேரியல் பிரதிநிதித்துவம் என்று அந்த உள்ளன
+
+00:01:08,000 --> 00:01:12,000
+constant coefficient differential equations continuous-time
+நிலையான குணகம் மாறுபட்ட தொடர்ச்சியான நேர சமன்பாடுகள்
+
+00:01:12,000 --> 00:01:16,000
+or when your constant coefficient difference equations
+அல்லது உங்கள் நிலையான குணகம் வேறுபாடு சமன்பாடுகள்
+
+00:01:16,000 --> 00:01:21,000
+in discrete-time for example electrical circuits that are built let's say I dove
+தனி நேரம் எடுத்துக்காட்டாக கட்டப்பட்டது என்று மின்சார சுற்றுகள் நான் புறா சொல்கிறேன்
+
+00:01:21,000 --> 00:01:24,000
+resistors inductors and capacitors perhaps with %ah pants
+ஒருவேளை% ஹா காலுறை எதிர்ப்பவர்களின் தூண்டிகள் மற்றும் மின்தேக்கிகளை
+
+00:01:24,000 --> 00:01:28,000
+correspond to systems described by differential equations
+வகைக்கெழு சமன்பாடுகள் மூலம் விவரித்தார் அமைப்புகள் ஒத்திருக்கும்
+
+00:01:28,000 --> 00:01:32,000
+mechanical systems with springs and dash pots likewise
+நீரூற்றுகள் மற்றும் கோடு தொட்டிகளில் இயந்திர அமைப்புகள் இதேபோல்
+
+00:01:32,000 --> 00:01:36,000
+are described by differential equations and in the discrete-time
+வகைக்கெழு சமன்பாடுகள் மூலம் மற்றும் தனித்தியங்கும் நேர விவரிக்கப்பட்டுள்ளன
+
+00:01:36,000 --> 00:01:40,000
+case things such as moving average filters
+போன்ற சராசரி வடிகட்டிகள் நகரும் என வழக்கு விஷயங்கள்
+
+00:01:40,000 --> 00:01:45,000
+digital filters and most simple kinda data smoothing
+டிஜிட்டல் வடிகட்டிகள் மற்றும் மிக எளிமையான கிரகமாக தரவு நேர்த்தியை
+
+00:01:45,000 --> 00:01:48,000
+are all linear constant coefficient difference equations
+அனைத்து நேரியல் நிலையான குணகம் வேறுபாடு சமன்பாடுகள்
+
+00:01:48,000 --> 00:01:52,000
+now presumably
+இப்போது மறைமுகமாக
+
+00:01:52,000 --> 00:01:56,000
+in a previous course you've had some exposure to
+முந்தைய நிச்சயமாக நீங்கள் சில வெளிப்பாடு இருந்தது
+
+00:01:56,000 --> 00:02:01,000
+differential equations for continuous-time and
+தொடர்ச்சியான நேர மற்றும் வகைக்கெழு சமன்பாடுகள்
+
+00:02:01,000 --> 00:02:05,000
+their solution using notions like particular solution and homogeneous
+குறிப்பாக தீர்வு மற்றும் ஒரேவிதமான போன்ற கருத்துக்களை பயன்படுத்தி தங்கள் தீர்வு
+
+00:02:05,000 --> 00:02:07,000
+solution initial conditions center
+தீர்வு ஆரம்ப நிலையில் சென்டர்
+
+00:02:07,000 --> 00:02:10,000
+later on in the course
+பின்னர் போக்கில்
+
+00:02:10,000 --> 00:02:15,000
+when we've developed the concept to the 48 transforming after that the
+நாம் பிறகு 48 மாற்றத்துக்குரிய கருத்தை வளர்ந்த போது
+
+00:02:15,000 --> 00:02:17,000
+apostrophe its form
+அதன் வடிவம் குறி
+
+00:02:17,000 --> 00:02:20,000
+will see some very efficient and useful ways
+சில மிகவும் திறமையான மற்றும் பயனுள்ள வழிகளில் பார்க்கும்
+
+00:02:20,000 --> 00:02:24,000
+generating solutions both differential and difference equations
+உருவாக்கும் தீர்வுகளை வேற்றுமை மற்றும் வேறுபாடு சமன்பாடுகள் இரண்டு
+
+00:02:24,000 --> 00:02:27,000
+at this point however I'd like to
+இந்த கட்டத்தில், எனினும் நான் விரும்புகிறேன்
+
+00:02:27,000 --> 00:02:30,000
+just introduce when your constant coefficient
+உங்கள் நிலையான குணகம் தான் அறிமுகப்படுத்த
+
+00:02:30,000 --> 00:02:34,000
+differential equations and the discrete-time counterpart
+வகைக்கெழு சமன்பாடுகள் மற்றும் தனித்தியங்கும் நேர எண்ணும்
+
+00:02:34,000 --> 00:02:37,000
+and address among other things the issue
+மற்றும் பிற விஷயங்களை உரையாற்ற பிரச்சினை
+
+00:02:37,000 --> 00:02:42,000
+love when they do and don't correspond to linear time-invariant systems
+அவர்கள் செய்யும் போது அன்பு மற்றும் நேரியல் நேரம் மாற்றமில்லாத அமைப்புகள் தொடர்புடைய இல்லை
+
+00:02:42,000 --> 00:02:45,000
+well let's first consider
+அதே முதல் கருத்தில் கொள்வோம்
+
+00:02:45,000 --> 00:02:49,000
+what I refer to as an nth order
+நான் ஒரு வானளாவிய பொருட்டு என பார்க்கவும் என்ன
+
+00:02:49,000 --> 00:02:52,000
+linear constant coefficients differential equation as i've indicated
+நான் குறிப்பிட்டது போல நேரியல் மாறிலி எண்கெழுக்கள் வகையீட்டு சமன்பாடு
+
+00:02:52,000 --> 00:02:53,000
+here
+இங்கே
+
+00:02:53,000 --> 00:02:58,000
+and what it consists of is a linear combination of derivatives up the system
+மற்றும் அது கொண்டுள்ளது என்ன அமைப்பு பங்குகள் ஒரு நேர்கோட்டு கலவையாக உள்ளது
+
+00:02:58,000 --> 00:02:59,000
+output
+உற்பத்தி
+
+00:02:59,000 --> 00:03:02,000
+y'at equal to a linear combination
+y'at ஒரு நேர்கோட்டு கலவையை சமமாக
+
+00:03:02,000 --> 00:03:05,000
+of derivatives above the system input accept T
+கணினி உள்ளீடு மேலே பங்குகள் டி ஏற்றுக்கொள்கின்றன என்ற
+
+00:03:05,000 --> 00:03:08,000
+and is referred to
+மற்றும் குறிப்பிடப்படுகிறது
+
+00:03:08,000 --> 00:03:13,000
+as a constant coefficients equation of course because the
+நிச்சயமாக ஒரு நிலையான மதிப்பீடுகள் சமன்பாடு, ஏனெனில்
+
+00:03:13,000 --> 00:03:18,000
+coefficients are constant in other words not assume to be time-varying
+இடுப்புக்கு நேரத்துடன் மாறுபாடு இருக்கும் நினைக்கவில்லை வேறு வார்த்தைகளில் தொடர்ந்து இருக்கின்றன
+
+00:03:18,000 --> 00:03:21,000
+and its referred to
+அதன் குறிப்பிடப்படுகிறது
+
+00:03:21,000 --> 00:03:26,000
+as linear because it corresponds to a linear combination
+அது ஒரு நேர்கோட்டு இணைந்து ஒத்துள்ளது என நேரியல் ஏனெனில்
+
+00:03:26,000 --> 00:03:30,000
+love these derivatives not because
+இந்த பங்குகள் இல்லை, ஏனெனில் அன்பு
+
+00:03:30,000 --> 00:03:33,000
+it corresponds to a linear system and in fact
+அது ஒரு நேர்கோட்டு அமைப்பு மற்றும் உண்மையில் ஒத்திருக்கிறது
+
+00:03:33,000 --> 00:03:36,000
+as we'll see or as all indicate this
+இந்த குறிப்பிடுகின்றன என நாம் பார்க்க அல்லது வேண்டும் என
+
+00:03:36,000 --> 00:03:40,000
+equation may or may not in fact correspond to
+சமன்பாடு அல்லது இல்லை ஆனால் உண்மையில் ஒத்திருக்கும் இருக்கும்
+
+00:03:40,000 --> 00:03:44,000
+when your system in the discrete-time case
+போது தனி நேர விஷயத்தில் உங்கள் கணினியில்
+
+00:03:44,000 --> 00:03:50,000
+the corresponding equation is a linear constant coefficient difference equation
+தொடர்புடைய சமன்பாடு நேர்கோட்டு நிலையான குணகம் வேறுபாடு சமன்பாடு
+
+00:03:50,000 --> 00:03:53,000
+and that corresponds to again
+என்று மீண்டும் ஒத்துள்ளது
+
+00:03:53,000 --> 00:03:58,000
+a linear combination love the late versions of the output equal to
+ஒரு நேர்கோட்டு கலவையை சமமாக வெளியீடு பிற்பகுதியில் பதிப்புகள் நேசிக்கிறேன்
+
+00:03:58,000 --> 00:04:02,000
+a linear combination love the late versions at the input
+ஒரு நேர்கோட்டு இணைந்து உள்ளீடு தாமதமாக பதிப்புகள் நேசிக்கிறேன்
+
+00:04:02,000 --> 00:04:05,000
+this equation is referred to as an nth order
+இந்த சமன்பாடு ஒரு வானளாவிய பொருட்டு என குறிப்பிடப்படுகிறது
+
+00:04:05,000 --> 00:04:10,000
+difference equation the N referring to the number of the ladies
+வேறுபாடு சமன்பாடு N பெண்கள் எண்ணிக்கை பற்றி
+
+00:04:10,000 --> 00:04:14,000
+are the output involved just as an aunt order differential equation
+ஒரு அத்தை வரிசை வகையீட்டு சமன்பாடாக தொடர்பு வெளியீடு இருக்கும்
+
+00:04:14,000 --> 00:04:19,000
+the N for the order the equation refers to the number of derivatives
+பொருட்டு சமன்பாட்டை N பங்குகள் எண்ணிக்கை குறிக்கிறது
+
+00:04:19,000 --> 00:04:22,000
+the output now let's first begin
+வெளியீடு இப்போது முதல் ஆரம்பிக்கலாம்
+
+00:04:22,000 --> 00:04:26,000
+with the near constant coefficient differential equations
+அருகில் நிலையான குணகம் வகைக்கெழு சமன்பாடுகள் மூலம்
+
+00:04:26,000 --> 00:04:30,000
+and the basic
+அடிப்படை
+
+00:04:30,000 --> 00:04:33,000
+point or the solution for
+புள்ளி அல்லது தீர்வு
+
+00:04:33,000 --> 00:04:37,000
+the differential equations is the fact dead
+வகையீட்டு சமன்பாடுகளை இறந்த உண்மை
+
+00:04:37,000 --> 00:04:40,000
+if we've generated some solution
+நாம் சில தீர்வு உருவாக்கப்படும் என்றால்
+
+00:04:40,000 --> 00:04:44,000
+which I refer to here's why superiority some solution
+நான் இங்கே பார்க்கவும் இது ஏன் மேன்மையை சில தீர்வு
+
+00:04:44,000 --> 00:04:47,000
+to the equation for a given input then
+ஒரு உள்ளீடு சமன்பாடு பின்னர்
+
+00:04:47,000 --> 00:04:50,000
+in fact we can and to that solution
+நாம் உண்மையில் அந்த தீர்வு
+
+00:04:50,000 --> 00:04:54,000
+any other solution which
+வேறு எந்த தீர்வும் இது
+
+00:04:54,000 --> 00:04:57,000
+satisfies what's referred to as
+என குறிப்பிடப்படுகிறது என்ன பூர்த்திசெய்யகிறது
+
+00:04:57,000 --> 00:05:01,000
+the homogeneous equation so in fact
+ஒரேவிதமான சமன்பாடு எனவே உண்மையில்
+
+00:05:01,000 --> 00:05:05,000
+this differential equation by itself
+தன்னை மூலமாக இந்த வகையீட்டு சமன்பாடு
+
+00:05:05,000 --> 00:05:08,000
+is not a unique specification
+ஒரு தனிப்பட்ட விவரக்குறிப்பு அல்ல
+
+00:05:08,000 --> 00:05:10,000
+the system
+முறை
+
+00:05:10,000 --> 00:05:13,000
+if I have any solution then I can
+என்னால் எந்த தீர்வு இருந்தால்
+
+00:05:13,000 --> 00:05:18,000
+and to that solution any other solution which satisfies the homogeneous equation
+அந்த தீர்வு ஒரேவிதமான சமன்பாட்டை நிறைவு மற்ற எந்த தீர்வு
+
+00:05:18,000 --> 00:05:20,000
+and thus all those two
+இதனால் அந்த இரண்டு
+
+00:05:20,000 --> 00:05:24,000
+likewise be a solution and that's very straight forward to verify
+இதேபோல் ஒரு தீர்வு இருக்கும் என்று சரிபார்க்க மிகவும் நேராக முன்னோக்கி
+
+00:05:24,000 --> 00:05:28,000
+by simply substituting into the differential equation
+வெறுமனே வகையீட்டு சமன்பாடு ஒரு பதிலாக
+
+00:05:28,000 --> 00:05:33,000
+some love the particular a particular and the homogeneous solution
+சில குறிப்பிட்ட ஒரு குறிப்பிட்ட மற்றும் ஒரேவிதமான தீர்வு பிடிக்கிறது
+
+00:05:33,000 --> 00:05:37,000
+and what you see is that the homogeneous contribution
+என்ன நீங்கள் பார்க்க என்று ஒரேவிதமான பங்களிப்பு
+
+00:05:37,000 --> 00:05:41,000
+in fact goes to zero by definition
+உண்மையில் வரையறை சுழியமாகிவிடுகிறது
+
+00:05:41,000 --> 00:05:45,000
+what we mean by the homogeneous equation now
+நாம் இப்போது ஓரின சமன்பாடு அர்த்தம் என்ன
+
+00:05:45,000 --> 00:05:50,000
+the homogeneous solution for a when your constant coefficient differential
+ஒரு போது உங்கள் நிலையான குணகம் மாறுபட்ட ஒரேவிதமான தீர்வு
+
+00:05:50,000 --> 00:05:51,000
+equation
+சமன்பாடு
+
+00:05:51,000 --> 00:05:55,000
+is of the form that I
+வடிவம் என்று நான்
+
+00:05:55,000 --> 00:05:58,000
+indicate at the bottom and
+கீழே குறிக்கிறது மற்றும்
+
+00:05:58,000 --> 00:06:01,000
+it typically consists love a
+அது பொதுவாக காதல் ஒரு கொண்டிருக்கிறது
+
+00:06:01,000 --> 00:06:06,000
+song or capital and complex exponentials
+பாடல் அல்லது மூலதன மற்றும் சிக்கலான நிகழ்வுஎண்
+
+00:06:06,000 --> 00:06:09,000
+and the Constance
+கான்ஸ்டன்ஸ்
+
+00:06:09,000 --> 00:06:12,000
+are on determined by the equation itself
+சமன்பாடு தன்னை நிர்ணயிக்கப்படுகின்றன
+
+00:06:12,000 --> 00:06:17,000
+and this form for the homogeneous solution
+மற்றும் ஓரின தீர்வு இந்த வடிவம்
+
+00:06:17,000 --> 00:06:22,000
+in essence drops out love examining
+சாராம்சத்தில் ஆய்வு காதல் வெளியே குறைகிறது
+
+00:06:22,000 --> 00:06:26,000
+the homogeneous equation where
+ஒரேவிதமான சமன்பாடு அங்கு
+
+00:06:26,000 --> 00:06:30,000
+if we assume that the former the homogeneous solution
+நாம் கருதி இருந்தால் அந்த முன்னாள் ஒரேவிதமான தீர்வு
+
+00:06:30,000 --> 00:06:34,000
+is a complex exponential with some
+சில ஒரு சிக்கலான அதிவேகமான ஆகிறது
+
+00:06:34,000 --> 00:06:38,000
+on specified amplitude and unspecified exponent
+குறிப்பிட்ட வீச்சு மற்றும் குறிப்பிடப்படாத உள்ளீடு மீது
+
+00:06:38,000 --> 00:06:42,000
+if we substitute this into are homogeneous equation
+இதை நாம் பதிலாக ஒரேவிதமான சமன்பாடு இருக்கின்றன
+
+00:06:42,000 --> 00:06:45,000
+we end up with the equation that i've indicated
+நான் குறிப்பிட்ட அந்த சமன்பாடு முடிவடையும்
+
+00:06:45,000 --> 00:06:49,000
+year the factor A&E the st. can in fact be
+ஆண்டு காரணி A & E ST. உண்மையில் இருக்க முடியும்
+
+00:06:49,000 --> 00:06:53,000
+cancelled out and we find there that equation
+அவுட் ரத்து நாம் அந்த சமன்பாடு அங்கு காணலாம்
+
+00:06:53,000 --> 00:06:56,000
+is satisfied
+திருப்தி
+
+00:06:56,000 --> 00:06:59,000
+for capital N values
+மூலதன N மதிப்புகள்
+
+00:06:59,000 --> 00:07:02,000
+love s and
+கள் அன்பு
+
+00:07:02,000 --> 00:07:06,000
+that's true no matter what choices made for these
+இந்த எந்த விஷயம் என்ன தேர்வுகள் உண்மை
+
+00:07:06,000 --> 00:07:10,000
+coefficients and the essential consequence
+இடுப்புக்கு மற்றும் அத்தியாவசிய விளைவு
+
+00:07:10,000 --> 00:07:13,000
+have all of that is that the homogeneous solution
+என்று அனைத்து உள்ளது என்று ஓரின தீர்வு
+
+00:07:13,000 --> 00:07:17,000
+is of the form that I indicated previously
+நான் முன்னர் குறிப்பிட்டது அந்த வடிவத்தில் இருக்கிறது
+
+00:07:17,000 --> 00:07:20,000
+namely it consists love some
+அதாவது அது காதல் சில கொண்டிருக்கிறது
+
+00:07:20,000 --> 00:07:24,000
+love capital and complex exponentials
+மூலதனம் மற்றும் சிக்கலான நிகழ்வுஎண் பிடிக்கிறது
+
+00:07:24,000 --> 00:07:28,000
+where the coefficients the capital and coefficients
+அங்கு மதிப்பீடுகள் மூலதனம் மற்றும் மதிப்பீடுகள்
+
+00:07:28,000 --> 00:07:31,000
+attached to you to those complex exponentials
+அந்த சிக்கலான நிகழ்வுஎண் நீங்கள் இணைக்கப்பட்ட
+
+00:07:31,000 --> 00:07:34,000
+is undetermined Iran specified
+இயலாத ஈரான் குறிப்பிடப்பட்டால்
+
+00:07:34,000 --> 00:07:38,000
+so what this says is that in order to
+அதனால் என்ன சொல்கிறது என்று பொருட்டு
+
+00:07:38,000 --> 00:07:42,000
+obtain the solution for a win here comes the coefficient differential equation
+இங்கே ஒரு வெற்றி தீர்வை பெற குணகம் வகையீட்டு சமன்பாடு வருகிறது
+
+00:07:42,000 --> 00:07:45,000
+we need some kind of auxiliary information
+நாங்கள் துணை தகவல் சில வகையான வேண்டும்
+
+00:07:45,000 --> 00:07:49,000
+tells us how to obtain these capital and
+எப்படி இந்த மூலதன பெற நமக்கு சொல்கிறது மற்றும்
+
+00:07:49,000 --> 00:07:53,000
+undetermined Constance and there are a variety of ways
+இயலாத கான்ஸ்டன்ஸ் மற்றும் பல்வேறு வழிகளில் உள்ளன
+
+00:07:53,000 --> 00:07:57,000
+specifying this auxiliary information or auxiliary conditions
+இந்த துணை தகவல் அல்லது துணை நிலைமைகள் குறிப்பிடாமல்
+
+00:07:57,000 --> 00:08:02,000
+for example in addition to the differential equation
+வகையீட்டு சமன்பாடு கூடுதலாக எடுத்துக்காட்டாக
+
+00:08:02,000 --> 00:08:05,000
+what I can tell you is the value
+நான் என்ன சொல்ல முடியும் மதிப்பு
+
+00:08:05,000 --> 00:08:08,000
+of the output and and -1 up there
+வெளியீடு மற்றும் அங்கு -1 வரை
+
+00:08:08,000 --> 00:08:12,000
+and -1 if its derivatives at some
+, -1 என்றால் சில அதன் பங்குகள்
+
+00:08:12,000 --> 00:08:15,000
+specified time t0 and
+குறிப்பிட்ட நேரத்தில் t0 மற்றும்
+
+00:08:15,000 --> 00:08:19,000
+so the differential equations together
+அதனால் வகைக்கெழு சமன்பாடுகள் ஒன்றாக
+
+00:08:19,000 --> 00:08:23,000
+with the auxiliary information the initial conditions
+துணை தகவல் ஆரம்ப நிலையில்
+
+00:08:23,000 --> 00:08:26,000
+van lets you determine the total solution
+வேன் நீங்கள் மொத்த தீர்வு தீர்மானிக்க முடிகிறது
+
+00:08:26,000 --> 00:08:31,000
+which namely lets you determine these previously unspecified
+, அதாவது இந்த முன்பு குறிப்பிடப்படாத தீர்மானிக்க முடிகிறது
+
+00:08:31,000 --> 00:08:35,000
+coefficients in the homogeneous solution
+ஒரேவிதமான தீர்வு குணகங்களையும்
+
+00:08:35,000 --> 00:08:40,000
+now depending on how the auxiliary information is stated or what auxiliary
+இப்போது துணை தகவல் தெரிவித்தார் என்பதை பொறுத்து அல்லது என்ன துணை
+
+00:08:40,000 --> 00:08:41,000
+information is available
+தகவல் கிடைக்கிறது
+
+00:08:41,000 --> 00:08:45,000
+the system a or may not correspond
+கணினி ஒரு அல்லது ஒத்திருக்கும் இல்லை
+
+00:08:45,000 --> 00:08:49,000
+to a linear system and may or may not correspond to a linear time-invariant
+ஒரு நேர்கோட்டு அமைப்பு மற்றும் அல்லது ஒரு நேர்கோட்டு நேர மாற்றம் ஒத்திருக்கும் இருக்கலாம்
+
+00:08:49,000 --> 00:08:53,000
+system one essential condition
+கணினி ஒரு அத்தியாவசிய நிபந்தனை
+
+00:08:53,000 --> 00:08:56,000
+for it to correspond to a linear system is that
+அது ஒரு நேர்கோட்டு அமைப்பு ஒத்திருக்கும் என்று ஆகிறது
+
+00:08:56,000 --> 00:09:00,000
+the initial conditions must be zero
+ஆரம்ப நிலையில் பூஜ்ஜியமாக இருக்க வேண்டும்
+
+00:09:00,000 --> 00:09:04,000
+and one can see the reason for that
+மற்றும் ஒரு என்று காரணம் பார்க்க முடியும்
+
+00:09:04,000 --> 00:09:09,000
+if we refer back to the previous lecture in which we saw that for a linear system
+நாங்கள் ஒரு நேர்கோட்டு அமைப்பு என்று பார்த்தேன் முந்தைய விரிவுரை பார்க்கவும் என்றால்
+
+00:09:09,000 --> 00:09:12,000
+if we put 0n we get zero out
+நாம் 0n வைத்து இருந்தால் நாம் பூஜ்யம் வெளியே
+
+00:09:12,000 --> 00:09:17,000
+so if exit see the input is zero the output must be zero
+வெளியேறும் உள்ளீடு பூஜ்யம் பார்க்க எனவே வெளியீடு பூஜ்ஜியமாக இருக்க வேண்டும்
+
+00:09:17,000 --> 00:09:21,000
+and so that in essence tells us that at least for the system to be linear
+எனவே சாராம்சத்தில் நமக்கு சொல்கிறது என்று குறைந்தது அமைப்பு நேர்கோட்டு இருக்க வேண்டும் என்று
+
+00:09:21,000 --> 00:09:24,000
+these initial conditions must be zero
+இந்த ஆரம்ப நிலையில் பூஜ்ஜியமாக இருக்க வேண்டும்
+
+00:09:24,000 --> 00:09:28,000
+now beyond that if
+இப்போது அந்த அப்பால்
+
+00:09:28,000 --> 00:09:31,000
+we want the system to be
+நாம் கணினி இருக்க வேண்டும்
+
+00:09:31,000 --> 00:09:35,000
+causal and linear time in and time-invariant
+மற்றும் காரண மற்றும் நேரியல் நேரம் நேர மாற்றம்
+
+00:09:35,000 --> 00:09:38,000
+then what's required on the
+பின்னர் என்ன தேவை
+
+00:09:38,000 --> 00:09:42,000
+initial conditions is that they be consistent with
+ஆரம்ப நிலையில் அவர்கள் இசைவானதாக இருக்க வேண்டும் என்பது தான்
+
+00:09:42,000 --> 00:09:47,000
+what's referred to as initial rest initial arrest says
+ஆரம்ப மற்ற ஆரம்ப கைது குறிப்பிடப்படுகிறது என்ன கூறுகிறார்
+
+00:09:47,000 --> 00:09:51,000
+that the output must be
+வெளியீடு இருக்க வேண்டும் என்று
+
+00:09:51,000 --> 00:09:54,000
+0 up until the time
+0 நேரம் வரை
+
+00:09:54,000 --> 00:09:58,000
+that the input becomes 90 and we can see
+உள்ளீடு 90 ஆகிறது மற்றும் நாம் பார்க்க முடியும் என்று
+
+00:09:58,000 --> 00:10:01,000
+of course that that's consistent with the notion of causality as
+நிச்சயமாக அந்த காரண கருத்து இசைவானதாக என்று
+
+00:10:01,000 --> 00:10:05,000
+we talked about in the previous lecture and
+நாம் முந்தைய விரிவுரையில் பற்றி பேசினோம்,
+
+00:10:05,000 --> 00:10:09,000
+its relatively straightforward to see
+பார்க்க ஒப்பீட்டளவில் அதன் நேரடியான
+
+00:10:09,000 --> 00:10:14,000
+that if the system is causal and linear and time-invariant
+அந்த அமைப்பு காரண மற்றும் நேரியல் நேரம் மற்றும் மாற்றமில்லாத என்றால்
+
+00:10:14,000 --> 00:10:17,000
+that will require
+என்று தேவைப்படும்
+
+00:10:17,000 --> 00:10:21,000
+initial rest it's somewhat more difficult see
+ஆரம்ப ஓய்வு அதை சற்றே கடினமான பார்க்கலாம்
+
+00:10:21,000 --> 00:10:27,000
+that if we specify initial rest the NAT in fact is sufficient to
+நாம் ஆரம்ப ஓய்வு குறிப்பிட என்றால் உண்மையில் இந்த NAT போதுமானது என்று
+
+00:10:27,000 --> 00:10:30,000
+determine that the system is both causal in linear
+முறைநேரியல் இரண்டு காரண என்று தீர்மானிக்க
+
+00:10:30,000 --> 00:10:34,000
+and time very but the essential point then is that
+நேரம் மிகவும் இன்றியமையாத புள்ளி பின்னர் அந்த ஆகிறது
+
+00:10:34,000 --> 00:10:37,000
+requires initial rest for both linearity
+நேரிலா இருவரும் ஆரம்ப ஓய்வு தேவை
+
+00:10:37,000 --> 00:10:41,000
+and causality okay well
+மற்றும் காரணகாரிய சரி, சரி,
+
+00:10:41,000 --> 00:10:44,000
+let's look at an example and
+இது ஒரு உதாரணம் பார்ப்போம் மற்றும்
+
+00:10:44,000 --> 00:10:49,000
+let's take the example love a first-order
+தான் உதாரணமாக எடுத்து கொள்வோம் முதல் வரிசையில் பிடிக்கிறது
+
+00:10:49,000 --> 00:10:52,000
+differential equation as I've
+நான் என சமன்பாடு கருணாநிதி
+
+00:10:52,000 --> 00:10:55,000
+indicated here so we have
+இங்கே சுட்டி எனவே நாம்
+
+00:10:55,000 --> 00:10:59,000
+a first-order differential equation the wife TTT
+முதல் வரிசை வகையீட்டு சமன்பாடு மனைவி TTT,
+
+00:10:59,000 --> 00:11:02,000
+was a yote is the input exit
+ஒரு yote உள்ளீடு வெளியேறவும் இருந்தது
+
+00:11:02,000 --> 00:11:05,000
+T and let's first
+டி மற்றும் முதல் நாம்
+
+00:11:05,000 --> 00:11:08,000
+look at what the homogeneous solution this equation is
+இந்த சமன்பாடு என்ன ஒரேவிதமான தீர்வு பார்க்க
+
+00:11:08,000 --> 00:11:12,000
+and so we can consider the homogeneous equation
+எனவே நாம் ஒரேவிதமான சமன்பாடு கொள்ள முடியும்
+
+00:11:12,000 --> 00:11:17,000
+namely the equation specify solutions
+அதாவது சமன்பாடு தீர்வுகளை குறிப்பிட
+
+00:11:17,000 --> 00:11:21,000
+which would correspond to zero input
+உள்ளீடு பூஜ்ஜியத்திற்கு ஒத்திருக்கும் என்று
+
+00:11:21,000 --> 00:11:24,000
+we in essence guess for impose
+சுமத்த சாரம் நாம் யூகிக்க
+
+00:11:24,000 --> 00:11:28,000
+a solution love the form the homogeneous solution
+ஒரு தீர்வு படிவம் ஒரேவிதமான தீர்வு பிடிக்கிறது
+
+00:11:28,000 --> 00:11:33,000
+is an amplitude factor times the complex exponential
+ஒரு வீச்சு காரணி முறை சிக்கலான அதிவேகமான ஆகிறது
+
+00:11:33,000 --> 00:11:37,000
+substituting this into the homogeneous equation
+ஒரேவிதமான சமன்பாடு இந்த பதிலாக
+
+00:11:37,000 --> 00:11:40,000
+we then get the equation that i've indicated here
+நாம் இங்கே சுட்டி என்று சமன்பாட்டை
+
+00:11:40,000 --> 00:11:44,000
+what you can see is that this equates in this equation
+நீங்கள் பார்க்க முடியும் இந்த சமன்பாட்டில் ஒப்பாகும் என்று ஆகிறது
+
+00:11:44,000 --> 00:11:49,000
+I can cancel out the amplitude factor and this complex exponential
+நான் வீச்சு காரணி மற்றும் இந்த சிக்கலான அதிவேகமான வெளியே ரத்து செய்ய முடியும்
+
+00:11:49,000 --> 00:11:56,000
+so let's just cancel those out on both sides of the equation
+அதனால் தான் சமன்பாடு இருபுறமும் அந்த அவுட் ரத்து செய்யலாம்
+
+00:11:56,000 --> 00:12:00,000
+and what we're left with is an equation
+மற்றும் நாம் விட்டு ஒரு சமன்பாடு ஆகிறது
+
+00:12:00,000 --> 00:12:04,000
+that specifies what the complex exponent must be
+சிக்கலான உள்ளீடு இருக்க வேண்டும் என்பதை குறிக்கிறது
+
+00:12:04,000 --> 00:12:09,000
+in particular for the homogeneous solution s must be equal to minus a
+குறிப்பாக ஒரேவிதமான தீர்வு கள் கழித்து ஒரு சமமாக இருக்க வேண்டும்
+
+00:12:09,000 --> 00:12:12,000
+and so finally are homogeneous solution
+எனவே இறுதியாக ஒரேவிதமான தீர்வு இருக்கிறது
+
+00:12:12,000 --> 00:12:18,000
+is as I've indicated year
+நான் ஆண்டு சுட்டிக்காட்டினார் போல இருக்கிறது
+
+00:12:18,000 --> 00:12:24,000
+okay now let's look at the solution for specific input let's consider for
+சரி இப்போது குறிப்பிட்ட உள்ளீடு தீர்வு காண்போம் என்று கருத்தில் அனுமதித்தது
+
+00:12:24,000 --> 00:12:25,000
+example input
+எடுத்துக்காட்டாக உள்ளீடு
+
+00:12:25,000 --> 00:12:28,000
+which is a scale units step and
+ஒரு பெரிய அளவில் நடவடிக்கை மற்றும் இது
+
+00:12:28,000 --> 00:12:32,000
+although I won't work at the solution in detail and perhaps
+நான் ஒருவேளை விவரம் தீர்வு வேலை மற்றும் முடியாது என்றாலும்
+
+00:12:32,000 --> 00:12:36,000
+using what you've worked on previously
+நீங்கள் முன்பு வேலை செய்த என்ன பயன்படுத்தி
+
+00:12:36,000 --> 00:12:39,000
+you know how to carry out the solution for that the
+நீங்கள் அந்த தீர்வு முன்னெடுக்க எப்படி தெரியும்
+
+00:12:39,000 --> 00:12:42,000
+a solution with step input
+படி உள்ளீடு ஒரு தீர்வு
+
+00:12:42,000 --> 00:12:47,000
+is what i've indicated here scaler one minus the next financial times unit
+என்ன நான் இங்கே scaler ஒரு கழித்தல் அடுத்த பைனான்சியல் டைம்ஸ் அலகு நூலக
+
+00:12:47,000 --> 00:12:51,000
+staff and you can verify that simply by substituting into the differential
+ஊழியர்கள் மற்றும் நீங்கள் வெறுமனே மாறுபட்ட ஒரு பதிலாக என்று சரிபார்க்க முடியும்
+
+00:12:51,000 --> 00:12:53,000
+equations now
+இப்போது சமன்பாடுகள்
+
+00:12:53,000 --> 00:12:57,000
+we know that there's a family of solutions in other words
+நாம் தீர்வுகள் ஒரு குடும்பம் வேறு வார்த்தைகளில் இருக்கிறது என்று எனக்கு தெரியும்
+
+00:12:57,000 --> 00:13:00,000
+any solution with
+எந்த தீர்வு
+
+00:13:00,000 --> 00:13:04,000
+a homogeneous solution added to it is again a solution
+அதை சேர்க்க ஒரு ஓரின தீர்வு மீண்டும் ஒரு தீர்வு இருக்கிறது
+
+00:13:04,000 --> 00:13:09,000
+and so if we consider the solution I just indicated
+நாம் தீர்வு கருத்தில் இருந்தால் அதனால் நான் சுட்டி
+
+00:13:09,000 --> 00:13:13,000
+we generate the entire family of solutions by
+நாம் தீர்வுகள் குடும்பத்தினர் உருவாக்க
+
+00:13:13,000 --> 00:13:16,000
+ending a homogeneous solution to it and so
+அது ஒரு ஒரேவிதமான தீர்வு முற்று
+
+00:13:16,000 --> 00:13:20,000
+this then corresponds to the entire family of solutions
+இந்த பிறகு தீர்வுகளை குடும்பத்தினர் ஒத்துள்ளது
+
+00:13:20,000 --> 00:13:24,000
+where the constant a is unspecified
+நிலையான ஒரு குறிப்பிடப்படாத எங்கே
+
+00:13:24,000 --> 00:13:31,000
+so far and needs to be specified through some type avoids avery conditions
+இதுவரை மற்றும் சில வகை மூலம் குறிப்பிட்ட வேண்டும் ஏவரி நிலைமைகள் தவிர்க்கிறது
+
+00:13:31,000 --> 00:13:34,000
+now a class A auxiliary conditions
+இப்போது ஒரு வர்க்கம் துணை நிலைமைகள்
+
+00:13:34,000 --> 00:13:37,000
+is the Commissioner initial rest which
+ஆகிறது ஆணையர் ஆரம்ப மற்ற எந்த
+
+00:13:37,000 --> 00:13:43,000
+as i indicated before is equivalent to the statement that the system
+நான் முன்பு அறிக்கை உள்ளது சமமான குறிப்பிட்ட அந்த அமைப்பு
+
+00:13:43,000 --> 00:13:47,000
+is causal and linear and time-invariant and
+காரண மற்றும் நேரியல் நேரம் மற்றும் மாற்றமில்லாத மற்றும் ஆகிறது
+
+00:13:47,000 --> 00:13:51,000
+in that case for the initial rest condition
+ஆரம்ப ஓய்வு நிலையில் அந்த வழக்கில்
+
+00:13:51,000 --> 00:13:55,000
+we would then require in this equation above
+நாம் மேலே இந்த சமன்பாட்டில் வேண்டும்
+
+00:13:55,000 --> 00:13:59,000
+that this constant be equal to 0
+இந்த நிலையான 0 சமமாக இருக்கும் என்று
+
+00:13:59,000 --> 00:14:02,000
+and so finally the response
+எனவே இறுதியாக பதில்
+
+00:14:02,000 --> 00:14:05,000
+to scales step if the system
+செதில்கள் வைக்கிறது என்றால் அமைப்பு
+
+00:14:05,000 --> 00:14:09,000
+is the correspond to cause a linear time-invariant system
+ஒரு நேர்கோட்டு நேரம் மாற்றமில்லாத அமைப்பு ஏற்படுத்தும் ஒத்திருக்கும் ஆகிறது
+
+00:14:09,000 --> 00:14:12,000
+is then just this term namely
+பின்னர் தான் இந்த கால ஆகிறது அதாவது
+
+00:14:12,000 --> 00:14:15,000
+constant times one minus an exponential
+நிலையான முறை ஒரு கழித்தல் அதிவேகமான
+
+00:14:15,000 --> 00:14:18,000
+times step
+முறை படி
+
+00:14:18,000 --> 00:14:22,000
+okay now if the system is a linear time-invariant system
+சரி இப்போது கணினி ஒரு நேர்கோட்டு நேரம் மாற்றமில்லாத அமைப்பு இருந்தால்
+
+00:14:22,000 --> 00:14:25,000
+it can as we know be described through its impulse response
+அது எங்களுக்கு தெரியும் என அதன் உந்துவிசை பதில் மூலம் விவரித்தார்
+
+00:14:25,000 --> 00:14:29,000
+and as you've worked out previously
+மற்றும் நீங்கள் முன்பு அவுட் செய்துள்ளேன் என
+
+00:14:29,000 --> 00:14:32,000
+in the video course manual for
+வீடியோ நிச்சயமாக கையேட்டில்
+
+00:14:32,000 --> 00:14:36,000
+a linear time-invariant system the impulse response
+ஒரு நேர்கோட்டு நேரம் மாற்றமில்லாத அமைப்பு உந்துவிசை பதில்
+
+00:14:36,000 --> 00:14:40,000
+is the derivative love the step response adjusted quickly remind you
+விரைவில் சரி படி மறுமொழி ஞாபகப்படுத்த வழித்தோன்றல் காதல்
+
+00:14:40,000 --> 00:14:44,000
+love where that result comes from in essence
+இதன் விளைவாக சாராம்சத்தில் எங்கிருந்து வருகிறது காதல்
+
+00:14:44,000 --> 00:14:49,000
+we can consider to linear time-invariant systems and Cascade
+நாம் நேரியல் நேரம் மாற்றமில்லாத அமைப்புகள் மற்றும் அடுக்கு கொள்ளுங்கள்
+
+00:14:49,000 --> 00:14:53,000
+wanna differentiator the other the system that we're talking about
+இனி நாம் பற்றி பேசுகிறீர்கள் என்று மற்ற முறையில் செலவழிக்கப்படுகிறது
+
+00:14:53,000 --> 00:14:54,000
+described by
+மூலம் விவரித்தார்
+
+00:14:54,000 --> 00:14:58,000
+the differential equation and step in here
+வகையீட்டு சமன்பாடு இங்கே படி
+
+00:14:58,000 --> 00:15:02,000
+then generated in polls into our system
+பின்னர் நமது கணினியில் தேர்தலில் உருவாக்கப்படும்
+
+00:15:02,000 --> 00:15:06,000
+and out comes the impulse response well just using the fact that
+வெளியே நன்றாக தான் உண்மையில் பயன்படுத்தி உந்துவிசை பதில் வருகிறது என்று
+
+00:15:06,000 --> 00:15:10,000
+these are both linear time-invariant systems and they can be cascaded in
+இந்த இரு நேரியல் நேரம் மாற்றமில்லாத அமைப்புகள் மற்றும் அவர்கள் தற்காத்து கொள்ள முடியும்
+
+00:15:10,000 --> 00:15:11,000
+either order
+பொருட்டு ஒன்று
+
+00:15:11,000 --> 00:15:15,000
+then means that if we have step response
+பின்னர் அதாவது நாம் படி மறுமொழி இருந்தால்
+
+00:15:15,000 --> 00:15:19,000
+to our system and that goes through differentiator
+எங்கள் அமைப்பு என்று வித்தியாசத்தை வழியாக செல்கிறது
+
+00:15:19,000 --> 00:15:24,000
+what must come out again is the impulse response
+என்ன மீண்டும் வர வேண்டும் உந்துவிசை பதில்
+
+00:15:24,000 --> 00:15:28,000
+so differentiating the step response we get the impulse response
+அதனால் படி மறுமொழி வேறுபடுத்தி நாம் உந்துவிசை பதில்
+
+00:15:28,000 --> 00:15:32,000
+here again is the step response as we
+இங்கே மீண்டும் நாம் படி மறுமொழி ஆகிறது
+
+00:15:32,000 --> 00:15:37,000
+just worked it out this time for you next step if we differentiate
+அதை நீங்கள் நாம் வேறுபடுத்தி என்றால் அடுத்த படி இந்த நேரத்தில் வெளியே வேலை
+
+00:15:37,000 --> 00:15:40,000
+we have then since the step response
+நாம் படி மறுமொழி பின் வேண்டும்
+
+00:15:40,000 --> 00:15:44,000
+is the product of two terms the derivative a product is the sum
+இரண்டு சொற்கள் வழித்தோன்றல் தயாரிப்பு தயாரிப்பு தொகை உள்ளது
+
+00:15:44,000 --> 00:15:48,000
+the derivatives and carrying that algebra through
+பங்குகள் மூலம் அந்த அல்ஜீப்ரா ஏந்தி
+
+00:15:48,000 --> 00:15:51,000
+and using the fact that the derivative the step
+உண்மையில் பயன்படுத்தி அந்த வழித்தோன்றல் படி
+
+00:15:51,000 --> 00:15:55,000
+is an impulse finally we come down
+ஒரு உந்துவிசை இறுதியாக நாம் கீழே வந்து
+
+00:15:55,000 --> 00:15:58,000
+to this statement for the impulse response
+உந்துவிசை பதில் இந்த அறிக்கை
+
+00:15:58,000 --> 00:16:01,000
+and then recognizing that this is but I'm
+பின்னர் இந்த ஆனால் நான் இருக்கிறேன் என்று அங்கீகரித்து
+
+00:16:01,000 --> 00:16:04,000
+function times and in polls and we know
+செயல்பாடு முறை மற்றும் தேர்தல் மற்றும் நாம் அறிவோம்
+
+00:16:04,000 --> 00:16:08,000
+that a time function times in polls takes on
+என்று தேர்தல் செயல்பாடு முறை எடுத்து ஒரு முறை
+
+00:16:08,000 --> 00:16:13,000
+the value at the time that the impulse occurs
+உந்துவிசை ஏற்படும் நேரத்தில் மதிப்பு
+
+00:16:13,000 --> 00:16:17,000
+then this term is simply 0
+இந்த கால வெறுமனே 0 ஆகிறது
+
+00:16:17,000 --> 00:16:20,000
+and the impulse response then
+மற்றும் உந்துவிசை பதில் பின்னர்
+
+00:16:20,000 --> 00:16:23,000
+finally is an exponential this for
+இறுதியாக இந்த அதிவேகமான ஆகிறது
+
+00:16:23,000 --> 00:16:28,000
+and this is the peking exponential for a positive
+இந்த ஒரு நேர்மறையான ஐந்து பீக்கிங் அதிவேகமான ஆகிறது
+
+00:16:28,000 --> 00:16:32,000
+it's a growing exponentially for a negative and
+அது ஒரு எதிர்மறை அபரிமித மற்றும் தான்
+
+00:16:32,000 --> 00:16:36,000
+recall that as we talked about previously
+நினைவு என்று நாம் முன்பு பற்றி பேசினார்
+
+00:16:36,000 --> 00:16:40,000
+a system is a linear time-invariant system is stable
+ஒரு முறை ஒரு நேர்கோட்டு நேரம் மாற்றமில்லாத அமைப்பு நிலையாக இருக்கிறது
+
+00:16:40,000 --> 00:16:44,000
+if its impulse response is absolutely integral
+அதன் உந்துவிசை பதில் முற்றிலும் ஒருங்கிணைந்த என்றால்
+
+00:16:44,000 --> 00:16:49,000
+for this particular case this impulse response
+இந்த குறிப்பிட்ட வழக்கில் இந்த உந்துவிசை பதில்
+
+00:16:49,000 --> 00:16:52,000
+is absolutely integral provided that
+என்று வழங்கப்படும் முற்றிலும் ஒருங்கிணைந்த ஆகிறது
+
+00:16:52,000 --> 00:16:55,000
+the exponential factor a
+அதிவேகமான காரணி
+
+00:16:55,000 --> 00:16:58,000
+is greater than 0
+0 க்கும் அதிகமாக இருக்கிறது
+
+00:16:58,000 --> 00:17:02,000
+okay so what we've seen then is the
+சரி, அதனால் என்ன நாம் பார்த்த ஆகிறது
+
+00:17:02,000 --> 00:17:07,000
+impulse response for system described by a linear constant coefficient
+ஒரு நேர்கோட்டு நிலையான குணகம் விவரித்தார் அமைப்பு உந்துவிசை பதில்
+
+00:17:07,000 --> 00:17:08,000
+differential equation
+வகையீட்டு சமன்பாடு
+
+00:17:08,000 --> 00:17:11,000
+where in addition we will impose causality
+கூடுதலாக நாம் காரண சுமத்த எங்கே
+
+00:17:11,000 --> 00:17:15,000
+when you're ready in time invariance essentially through the initial
+நீங்கள் அடிப்படையில் ஆரம்ப மூலம் நேரம் ஹேமா தயாராக இருக்கும் போது
+
+00:17:15,000 --> 00:17:16,000
+conditions
+நிலைமைகள்
+
+00:17:16,000 --> 00:17:19,000
+love initial rest
+ஆரம்ப ஓய்வு பிடிக்கிறது
+
+00:17:19,000 --> 00:17:23,000
+now pretty much the same kinds of things happen
+இப்போது விஷயங்களை அழகாக அதே வகையான நடக்கின்றன
+
+00:17:23,000 --> 00:17:26,000
+with difference equations as we've gone through
+நாங்கள் கடந்து வந்த வேறுபாட்டை சமன்பாடுகள்
+
+00:17:26,000 --> 00:17:30,000
+with differential equations in particular
+குறிப்பாக வகைக்கெழு சமன்பாடுகள் மூலம்
+
+00:17:30,000 --> 00:17:33,000
+again let me remind you love the form love
+மீண்டும் நீங்கள் வடிவம் காதல் காதல் என்னை ஞாபகப்படுத்த வேண்டும்
+
+00:17:33,000 --> 00:17:37,000
+and aunt order when your constant coefficient difference equation
+மற்றும் அத்தை பொருட்டு போது உங்கள் நிலையான குணகம் வேறுபாடு சமன்பாடு
+
+00:17:37,000 --> 00:17:41,000
+its as I indicate here and
+அதன் நான் இங்கே குறிப்பிட மற்றும்
+
+00:17:41,000 --> 00:17:47,000
+again a linear combination this time the late versions of the output equal to a
+ஒரு மீண்டும் ஒரு நேர்கோட்டு இணைந்து இந்த நேரத்தில் வெளியீடு பிற்பகுதியில் பதிப்புகள் சம
+
+00:17:47,000 --> 00:17:48,000
+linear combination
+நேரியல் சேர்க்கையை
+
+00:17:48,000 --> 00:17:52,000
+up the late versions love the input once again
+தாமதமாக பதிப்புகள் மீண்டும் உள்ளீடு அன்பு
+
+00:17:52,000 --> 00:17:56,000
+the difference equation is not
+வேறுபாடு சமன்பாடு அல்ல
+
+00:17:56,000 --> 00:18:01,000
+a complete specification the system because we can and to the response
+முழு விவரக்குறிப்பு முறை நாம் ஏனெனில் பதில்
+
+00:18:01,000 --> 00:18:04,000
+any homogeneous solution in other words
+வேறு வார்த்தைகளில் எந்த ஒரேவிதமான தீர்வு
+
+00:18:04,000 --> 00:18:08,000
+any solution that satisfies the homogeneous equation
+ஒரேவிதமான சமன்பாட்டை நிறைவு என்று எந்த தீர்வு
+
+00:18:08,000 --> 00:18:12,000
+in the summer those well also satisfy the original
+கோடை காலத்தில் அந்த நன்கு அசல் பூர்த்தி
+
+00:18:12,000 --> 00:18:17,000
+difference equation so if we have
+வேறுபாடு சமன்பாடு நாம் இருந்தால்
+
+00:18:17,000 --> 00:18:21,000
+a particular response that satisfies
+ஒரு குறிப்பிட்ட பதில் பூர்த்திசெய்யும்
+
+00:18:21,000 --> 00:18:25,000
+the difference equation then ending to that
+வேறுபாடு இதுதான் என்று முடிவுக்கு
+
+00:18:25,000 --> 00:18:31,000
+any response there is a solution to the homogeneous equation
+ஒரேவிதமான சமன்பாடு ஒரு தீர்வு உள்ளது எந்த பதிலும்
+
+00:18:31,000 --> 00:18:36,000
+will also be a solution to the total equation
+மேலும் மொத்த சமன்பாடு ஒரு தீர்வு இருக்கும்
+
+00:18:36,000 --> 00:18:41,000
+the homogeneous solution again is of the form
+ஒரேவிதமான தீர்வு மீண்டும் வடிவத்தில் உள்ளது
+
+00:18:41,000 --> 00:18:45,000
+of a linear combination of exponentials here
+இங்கே நிகழ்வுஎண் ஒரு நேர்கோட்டு கலவையை
+
+00:18:45,000 --> 00:18:49,000
+we have the homogeneous equation as with
+நாம் போன்ற ஒரேவிதமான சமன்பாடு வேண்டும்
+
+00:18:49,000 --> 00:18:52,000
+differential equations we can
+நாம் வகைக்கெழு சமன்பாடுகள்
+
+00:18:52,000 --> 00:18:55,000
+guests or impose solutions for
+விருந்தினர்கள் அல்லது தீர்வுகளை திணிக்க
+
+00:18:55,000 --> 00:18:59,000
+eight times an exponential when we substitute this
+நாம் இந்த பதிலாக எட்டு முறை அதிவேகமான போது
+
+00:18:59,000 --> 00:19:02,000
+into the homogeneous equation we then end up
+ஒரேவிதமான சமன்பாட்டில் நாம் முடிவடையும்
+
+00:19:02,000 --> 00:19:07,000
+with equation that i've indicated here we recognize again
+நான் இங்கே சுட்டி என்று சமன்பாடு நாம் மீண்டும் அங்கீகரிக்கிறோம்
+
+00:19:07,000 --> 00:19:11,000
+there a the amplitude
+அங்கு ஒரு வீச்சு
+
+00:19:11,000 --> 00:19:15,000
+and seats at the end
+இறுதியில் இடங்களை
+
+00:19:15,000 --> 00:19:18,000
+this exponential factor cancel out
+இந்த அதிவேகமான காரணி ரத்து
+
+00:19:18,000 --> 00:19:22,000
+and so this equation is satisfied
+அதனால் இந்த சமன்பாடு திருப்தி
+
+00:19:22,000 --> 00:19:26,000
+for any values love see
+எந்த மதிப்புகள் பார்க்க காதலிக்கிறேன்
+
+00:19:26,000 --> 00:19:31,000
+that satisfy this equation and
+இந்த சமன்பாடு திருப்தி மற்றும்
+
+00:19:31,000 --> 00:19:34,000
+there are and roots C-one through Z and
+உள்ளன மற்றும் வேர்கள் சி ஒரு Z மூலம் மற்றும்
+
+00:19:34,000 --> 00:19:37,000
+and so finally the form for the homogeneous solution
+எனவே இறுதியாக ஒரேவிதமான தீர்வு படிவம்
+
+00:19:37,000 --> 00:19:42,000
+is a linear combination love capital and
+ஒரு நேர்கோட்டு கலவையை காதல் மூலதனம் மற்றும் ஆகிறது
+
+00:19:42,000 --> 00:19:46,000
+exponentials capital and is the order the equation
+தலைநகர் நிகழ்வுஎண் ஒழுங்கு சமன்பாடு
+
+00:19:46,000 --> 00:19:50,000
+with each of those exponentials the ample to factor is undetermined
+அந்த நிகழ்வுஎண் ஒவ்வொரு காரணியாக போதிய அன்புமணி
+
+00:19:50,000 --> 00:19:54,000
+and needs to be determined in some way through
+மற்றும் மூலம் சில வழியில் உறுதியாக இருக்க வேண்டும்
+
+00:19:54,000 --> 00:19:57,000
+the imposition love appropriate
+சுமத்துவதற்கு பொருத்தமான பிடிக்கிறது
+
+00:19:57,000 --> 00:20:02,000
+initial conditions are boundary conditions
+ஆரம்ப நிலையில் எல்லை நிலைமைகள் இருக்கின்றன
+
+00:20:02,000 --> 00:20:05,000
+so the general form then
+அதனால் பொது வடிவம் பின்னர்
+
+00:20:05,000 --> 00:20:08,000
+for the solution to the difference equation
+வேறுபாடு சமன்பாடு தீர்வு
+
+00:20:08,000 --> 00:20:11,000
+is
+
+
+00:20:11,000 --> 00:20:14,000
+some with the exponentials plus any particular solution
+நிகழ்வுஎண் பிளஸ் எந்த குறிப்பிட்ட தீர்வு சில
+
+00:20:14,000 --> 00:20:20,000
+its through auxiliary conditions that we determine
+அதன் நாங்கள் தீர்மானிக்க துணை நிலைமைகள் மூலம்
+
+00:20:20,000 --> 00:20:23,000
+these coefficients we have
+நாம் இந்த குணகங்களை
+
+00:20:23,000 --> 00:20:27,000
+and undetermined coefficients and so
+அதனால் இயலாத மதிப்பீடுகள் மற்றும்
+
+00:20:27,000 --> 00:20:31,000
+we require capital and auxiliary conditions
+நாம் மூலதன மற்றும் துணை நிலைமைகள் தேவைப்படும்
+
+00:20:31,000 --> 00:20:35,000
+for example some set values
+எடுத்துக்காட்டாக சில தொகுப்பு மதிப்புகள்
+
+00:20:35,000 --> 00:20:38,000
+of the output at and this thing instance
+வெளியீடு மற்றும் இந்த விஷயம் உதாரணமாக
+
+00:20:38,000 --> 00:20:41,000
+time
+காலம்
+
+00:20:41,000 --> 00:20:42,000
+now this
+இப்போது இந்த
+
+00:20:42,000 --> 00:20:45,000
+was the same as with differential equations in the case a differential
+வழக்கில் வகைக்கெழு சமன்பாடுகள் கொண்ட அதே இருந்தது ஒரு மாறுபட்ட
+
+00:20:45,000 --> 00:20:47,000
+equations we talked about specifying
+நாம் குறிப்பிடாமல் பற்றி பேசினார் சமன்பாடுகள்
+
+00:20:47,000 --> 00:20:51,000
+the value of the output and its derivatives and
+வெளியீடு மற்றும் அதன் பங்குகள் மதிப்பு மற்றும்
+
+00:20:51,000 --> 00:20:54,000
+there we indicated dead for linearity
+அங்கு நாம் நேரியல்புக்கான இறந்த சுட்டிக்காட்டினார்
+
+00:20:54,000 --> 00:20:58,000
+what we required when the arity what we require
+நாம் தேவையான என்ன போது என்ன தேவை உறுப்பின் எண்
+
+00:20:58,000 --> 00:21:02,000
+is that the auxiliary conditions 30
+என்று துணை நிலைமைகள் 30
+
+00:21:02,000 --> 00:21:05,000
+and the same thing applies here for the same reason
+அதே விஷயத்தை அதே காரணத்திற்காக இங்கு பொருந்தும்
+
+00:21:05,000 --> 00:21:10,000
+namely if the system is to be linear and the response if there's no input must be
+முறைநேரியல் இருக்கும் மற்றும் பதில் இல்லை உள்ளீட்டு இருந்தால் இருக்க வேண்டும், அதாவது
+
+00:21:10,000 --> 00:21:13,000
+equal to 0
+0 சமமாக
+
+00:21:13,000 --> 00:21:15,000
+in addition what
+கூடுதலாக என்ன
+
+00:21:15,000 --> 00:21:18,000
+we may want to impose on the system is
+நாம் கணினியில் சுமத்த வேண்டும்
+
+00:21:18,000 --> 00:21:22,000
+that it be causal and in addition to linear
+அது காரண மற்றும் நேரியல் கூடுதலாக இருக்கும் என்று
+
+00:21:22,000 --> 00:21:25,000
+time-invariant and with that requires again
+நேர மாற்றம் என்று மீண்டும் தேவைப்படுகிறது
+
+00:21:25,000 --> 00:21:30,000
+is that it the auxiliary conditions be consistent with
+அதை துணை நிலைமைகள் இசைவானதாக இருக்க வேண்டும் என்று ஆகிறது
+
+00:21:30,000 --> 00:21:33,000
+initial rest namely that if
+ஆரம்ப ஓய்வு அதாவது என்றால்
+
+00:21:33,000 --> 00:21:37,000
+the input is zero prior to some time
+உள்ளீடு பூஜ்யம் முன் சில நேரம் ஆகிறது
+
+00:21:37,000 --> 00:21:42,000
+in the output is zero prior to the same time
+வெளியீடு ஆகிறது பூஜ்யம் முன் அதே நேரம்
+
+00:21:42,000 --> 00:21:45,000
+okay so we've seen a very direct parallel
+சரி, அதனால் நாம் ஒரு மிக நேரடி இணை பார்த்த
+
+00:21:45,000 --> 00:21:48,000
+so far between differential equations
+இதுவரை வகைக்கெழு சமன்பாடுகள் இடையே
+
+00:21:48,000 --> 00:21:52,000
+and difference equations
+மற்றும் வேறுபாடு சமன்பாடுகள்
+
+00:21:52,000 --> 00:21:55,000
+in fact one difference between them dead
+உண்மையில் அவர்களுக்கு இடையே ஒரு வேறுபாடு இறந்த
+
+00:21:55,000 --> 00:21:58,000
+in some sense makes difference equations
+சில அர்த்தத்தில் வேறுபாடு சமன்பாடுகள் செய்கிறது
+
+00:21:58,000 --> 00:22:02,000
+easier to deal with in some situations is dead
+சில சூழ்நிலைகளில் சமாளிக்க எளிதாக இறந்த ஆகிறது
+
+00:22:02,000 --> 00:22:06,000
+in contrast to a differential equation a
+ஒரு வகையீட்டு சமன்பாடு ஒரு மாறாக
+
+00:22:06,000 --> 00:22:09,000
+difference equation if we assume causality
+வேறுபாடு சமன்பாடு நாம் காரண கொள்கிறோம் என்றால்
+
+00:22:09,000 --> 00:22:12,000
+in fact is and explicit
+உண்மையில் ஆகிறது மற்றும் வெளிப்படையான
+
+00:22:12,000 --> 00:22:15,000
+input-output relationship for the system now let me
+கணினி உள்ளீடு வெளியீடு உறவு இப்போது என்னை அனுமதித்தது
+
+00:22:15,000 --> 00:22:18,000
+show you what I mean
+நான் என்ன நீங்கள் காட்ட
+
+00:22:18,000 --> 00:22:23,000
+let's consider the n-th order difference equation as i've indicated here
+நான் இங்கே சுட்டி போல தான் N வது வரிசையில் வேறுபாடு சமன்பாடு கருத்தில் கொள்வோம்
+
+00:22:23,000 --> 00:22:27,000
+and let's assume that we're imposing causality
+மற்றும் நாம் காரண சுமத்தும் என்று வைத்து கொள்வோம்
+
+00:22:27,000 --> 00:22:30,000
+so there'd the output can only depend
+அதனால் வெளியீடு மட்டுமே அங்கு சார்ந்தது
+
+00:22:30,000 --> 00:22:35,000
+on prior values at the input and therefore on fire values at the output
+உள்ளீடு முன் மதிப்புகள் எனவே வெளியீடு தீ மதிப்புகள்
+
+00:22:35,000 --> 00:22:39,000
+well we can simply rearrange this equation
+நாங்கள் வெறுமனே இந்த சமன்பாடு மறுசீரமைக்க முடியும்
+
+00:22:39,000 --> 00:22:43,000
+solving for Y have an the leading term with cable 0
+ஒய் தீர்க்கும் ஒரு கேபிள் 0 முன்னணி கால வேண்டும்
+
+00:22:43,000 --> 00:22:48,000
+taking all the other turns over to the right side of the equation
+சமன்பாடு வலது பக்க மற்ற அனைத்து திருப்பங்களை எடுத்து
+
+00:22:48,000 --> 00:22:52,000
+and we then have a workers if equation
+மற்றும் நாம் ஒரு தொழிலாளர் இருந்தால் சமன்பாடு
+
+00:22:52,000 --> 00:22:58,000
+namely that an equation expresses the output interns
+ஒரு சமன்பாடு வெளியீடு பயிற்சியாளர்களுக்கு வெளிப்படுத்துகிறது அதாவது
+
+00:22:58,000 --> 00:23:01,000
+love prior values if the input which is this term
+முன் மதிப்புகள் காதல் என்றால் இந்த கால இது உள்ளீடு
+
+00:23:01,000 --> 00:23:05,000
+and prior values at the output
+மற்றும் வெளியீடு முன் மதிப்புகள்
+
+00:23:05,000 --> 00:23:09,000
+and so if in fact we have this equation running
+அதனால் உண்மையில் நாம் இந்த சமன்பாடு இயங்கும் இருந்தால்
+
+00:23:09,000 --> 00:23:12,000
+then once it started we know how to compute
+அது தொடங்கியது நாம் கணக்கிட எப்படி தெரியும்
+
+00:23:12,000 --> 00:23:16,000
+the output for the next time
+அடுத்த முறை வெளியீடு
+
+00:23:16,000 --> 00:23:17,000
+well
+அதே
+
+00:23:17,000 --> 00:23:21,000
+how do we get started the way we get it started of course
+எப்படி நாம் அது நிச்சயமாக தொடங்க வழியில் தொடங்கியது
+
+00:23:21,000 --> 00:23:24,000
+is through the appropriate said love
+அதற்கான மூலம் காதல் கூறப்படுகிறது
+
+00:23:24,000 --> 00:23:28,000
+initial conditions are boundary conditions and if for example
+ஆரம்ப நிலையில் எல்லை நிலைமைகள் மற்றும் உதாரணமாக
+
+00:23:28,000 --> 00:23:32,000
+we assume initial rest corresponding to a causal when you're time-invariant
+நீங்கள் நேரம் மாற்றமில்லாத போது நாம் ஒரு காரண தொடர்பான ஆரம்ப ஓய்வு கொள்கிறோம்
+
+00:23:32,000 --> 00:23:33,000
+system
+முறை
+
+00:23:33,000 --> 00:23:36,000
+then if the input is zero up until sometime
+பின்னர் உள்ளீடு நேரம் வரை பூஜ்யம் வரை ஆகிறது என்றால்
+
+00:23:36,000 --> 00:23:40,000
+the output must be zero up until that time and Matt in essence
+வெளியீடு சாராம்சத்தில் அந்த நேரம் மற்றும் மாட் வரை பூஜ்யம் வரை இருக்க வேண்டும்
+
+00:23:40,000 --> 00:23:44,000
+helps us get the equation started well let's look at this
+சமன்பாடு இந்த நேரத்தில் நாம் நன்கு தொடங்குவதற்கு உதவியாக
+
+00:23:44,000 --> 00:23:48,000
+specifically in the context love a
+குறிப்பாக சூழல் காதல் ஒரு மாதம்
+
+00:23:48,000 --> 00:23:51,000
+first-order difference equation so let's take
+முதல் வரிசையில் வேறுபாடு சமன்பாடு எனவே அழைத்து செல்லலாம்
+
+00:23:51,000 --> 00:23:54,000
+a first-order difference equation
+முதல் வரிசையில் வேறுபாடு சமன்பாடு
+
+00:23:54,000 --> 00:23:57,000
+as i've indicated here
+நான் இங்கே சுட்டி போல
+
+00:23:57,000 --> 00:24:01,000
+and so we have an equation that tells us that why I have and minus eight times
+எனவே நாம் நமக்கு சொல்கிறது என்று ஒரு சமன்பாடு வேண்டும் என்று ஏன் நான் கழித்து எட்டு முறை
+
+00:24:01,000 --> 00:24:03,000
+wider than -1
+விட -1 பரந்த
+
+00:24:03,000 --> 00:24:06,000
+is equal to exit
+வெளியேறும் சமமாக இருக்கிறது
+
+00:24:06,000 --> 00:24:09,000
+now if we want this to correspond to
+இப்போது நாம் இந்த ஒத்திருக்கும் வேண்டும் என்றால்
+
+00:24:09,000 --> 00:24:13,000
+a causal linear time-invariant system we
+ஒரு சாதாரண நேரியல் நேரம் மாற்றமில்லாத அமைப்பு நாம்
+
+00:24:13,000 --> 00:24:17,000
+oppose initial impose initial rest on it we can
+ஆரம்ப நாம் அது ஆரம்ப ஓய்வு சுமத்த எதிர்க்க
+
+00:24:17,000 --> 00:24:21,000
+rewrite the first-order difference equation by taking
+எடுத்து முதல் வரிசையில் வேறுபாடு சமன்பாட்டினை
+
+00:24:21,000 --> 00:24:24,000
+the term involving y ven -1
+Y Ven -1 சம்பந்தப்பட்ட கால
+
+00:24:24,000 --> 00:24:28,000
+over to the right hand side of the equation
+சமன்பாட்டின் வலது பக்க மேல்
+
+00:24:28,000 --> 00:24:32,000
+right now this gives us a workers if equation
+இப்போது இது எங்களுக்கு ஒரு தொழிலாளர்கள் கொடுக்கிறது சமன்பாடு
+
+00:24:32,000 --> 00:24:38,000
+that expresses the output interns the input and past values at the output
+அந்த வெளியீடு பயிற்சியாளர்களுக்கு வெளியீடு உள்ளீடு மற்றும் கடந்த மதிப்புகள் வெளிப்படுத்துகிறது
+
+00:24:38,000 --> 00:24:42,000
+and since we've impose causality
+நாம் காரண திணிக்கிறோம் இருந்து
+
+00:24:42,000 --> 00:24:46,000
+and if we're talking about a linear time-invariant system
+நாம் ஒரு நேர்கோட்டு நேரம் மாற்றமில்லாத அமைப்பு பற்றி பேசுகிறீர்கள் என்றால்
+
+00:24:46,000 --> 00:24:50,000
+we can now inquire as to what the impulse responses and we know of course
+நாம் இப்போது என்ன உந்துவிசை மறுமொழிகள் என விசாரிக்க முடியும் மற்றும் நாம் நிச்சயமாக தெரியும்
+
+00:24:50,000 --> 00:24:52,000
+that the impulse response
+என்று உந்துவிசை பதில்
+
+00:24:52,000 --> 00:24:56,000
+charles is everything that we need to know about the system
+சார்லஸ் நாம் கணினி பற்றி அறிந்து கொள்ள வேண்டும் என்று எல்லாம் இருக்கிறது
+
+00:24:56,000 --> 00:25:01,000
+okay so let's shoes and input which is
+சரி, அதனால் நாம் காலணிகள் மற்றும் உள்ளீடு எது
+
+00:25:01,000 --> 00:25:04,000
+an impulse so the impulse response
+ஒரு உந்துவிசை அதனால் உந்துவிசை பதில்
+
+00:25:04,000 --> 00:25:08,000
+is Beltre van corresponding
+Beltre இதே விஷயம் இருக்கிறது
+
+00:25:08,000 --> 00:25:11,000
+to the exit and appear plus eighty Delta
+வெளியேறவும் மற்றும் பிளஸ் எண்பது டெல்டா தோன்றும்
+
+00:25:11,000 --> 00:25:15,000
+love this should be a chip N -1
+இந்த ஒரு chip n -1 இருக்க வேண்டும் அன்பு
+
+00:25:15,000 --> 00:25:20,000
+and let me just correct that this is a chip N -1
+இந்த ஒரு chip n என்று எனக்கு தான் சரி விடு -1
+
+00:25:20,000 --> 00:25:24,000
+so we have the impulse response as Delta van
+நாம் டெல்டா வேன் போன்ற உந்துவிசை பதில் இல்லை
+
+00:25:24,000 --> 00:25:28,000
+was eight times a Japan -1
+என்று எட்டு முறை ஒரு ஜப்பான் -1
+
+00:25:28,000 --> 00:25:31,000
+now from initial rest we know
+இப்போது ஆரம்ப பகுதிகளில் இருந்து நாம் அறிகிறோம்
+
+00:25:31,000 --> 00:25:36,000
+bad since the input namely an impulse is 0 for and less than zero
+மோசமான அதாவது ஒரு உந்துவிசை உள்ளீடு 0 மற்றும் பூஜ்யம் விட குறைவாக இருந்து
+
+00:25:36,000 --> 00:25:40,000
+the impulse response is likewise 0
+உந்துவிசை பதில் இதேபோல் 0 ஆகிறது
+
+00:25:40,000 --> 00:25:43,000
+for and less 0 and now
+இப்போது 0 குறைந்த மற்றும்
+
+00:25:43,000 --> 00:25:47,000
+let's work out what 80 its well
+தான் என்ன 80 அதன் நன்றாக வேலை செய்யலாம்
+
+00:25:47,000 --> 00:25:50,000
+80 with an equal 0 is
+ஒரு சம 0 80 ஆகிறது
+
+00:25:50,000 --> 00:25:54,000
+delta up zero plus eight times
+பூஜ்யம் வரை டெல்டா பிளஸ் எட்டு முறை
+
+00:25:54,000 --> 00:25:57,000
+a chip N -1 HRN minus 10
+ஒரு சில்லு n -1 hrn கழித்து 10
+
+00:25:57,000 --> 00:26:04,000
+and so h0 is equal to 1
+அதனால் H0 1 சமமாக இருக்கிறது
+
+00:26:05,000 --> 00:26:08,000
+okay now that we have a chance 0 we can figure at H
+சரி இப்போது நாம் ஒரு வாய்ப்பு 0 என்று நாம் எச் உள்ள கண்டுபிடிக்க முடியும்
+
+00:26:08,000 --> 00:26:11,000
+one by running this recursive equations
+இந்த சுழல்நிலை சமன்பாடுகள் இயங்கும் ஒரு
+
+00:26:11,000 --> 00:26:15,000
+so 8 you've won is
+அதனால் 8 நீங்கள் வெற்றி பெற்றுவிட்டீர்கள்
+
+00:26:15,000 --> 00:26:18,000
+Delta love one which is zero
+பூஜ்யம் இது டெல்டா காதல் ஒரு
+
+00:26:18,000 --> 00:26:22,000
+plus eight times h0 which we just figured out as one
+பிளஸ் எட்டு முறை H0 நாம் ஒன்றாக வெளியே வந்தார் இது
+
+00:26:22,000 --> 00:26:27,000
+so HR one is equal to a and if we carry this through
+எனவே அலுவலக ஒரு சமமாக நாம் இந்த எடுத்து இருந்தால் மூலம்
+
+00:26:27,000 --> 00:26:32,000
+will have a chip to equal to a squared and
+ஒரு ஸ்கொயர் சமமாக ஒரு சிப் மற்றும்
+
+00:26:32,000 --> 00:26:36,000
+this will continue on and in fact we can recognize
+இந்த தொடரும் உண்மையில் நாம் அடையாளம் காண முடியும்
+
+00:26:36,000 --> 00:26:40,000
+by looking at this and how we would expect these terms to build
+இந்த பார்த்து, எப்படி நாம் இந்த விதிமுறைகளை உருவாக்க எதிர்பார்ப்பதை
+
+00:26:40,000 --> 00:26:44,000
+we would see that the impulse response a Japan
+நாங்கள் பார்க்க வேண்டும் என்று உந்துவிசை பதில் ஜப்பான்
+
+00:26:44,000 --> 00:26:48,000
+in fact -ism form a to the end times
+இறுதியில் முறை உண்மையில் இதுவே படிவம் ஒரு மாதம்
+
+00:26:48,000 --> 00:26:50,000
+you have an
+நீங்கள் ஒரு வேண்டும்
+
+00:26:50,000 --> 00:26:54,000
+and we also can recognize then dead
+மற்றும் நாம் இறந்த பின்னர் அடையாளம் காண முடியும்
+
+00:26:54,000 --> 00:26:58,000
+this corresponds to stable system
+இந்த நிலையான கணினி ஒத்துள்ளது
+
+00:26:58,000 --> 00:27:01,000
+if and only if the impulse response
+என்றால் மட்டுமே உந்துவிசை பதில்
+
+00:27:01,000 --> 00:27:06,000
+which is what we just figured out if and only if the impulse response
+நாம் தான் வெளியே வந்தார் என்ன இது என்றால் மட்டுமே உந்துவிசை பதில்
+
+00:27:06,000 --> 00:27:10,000
+is absolutely so noble and what that will require
+முற்றிலும் எனவே உன்னத என்ன என்று தேவைப்படும்
+
+00:27:10,000 --> 00:27:17,000
+is that the magnitude a the less
+என்று குறைவான அளவில்
+
+00:27:17,000 --> 00:27:21,000
+okay now we impose causality linear ready in time invariance
+சரி இப்போது நாம், ஹேமா தயாராக காரணகாரிய நேரியல் திணிக்க
+
+00:27:21,000 --> 00:27:25,000
+and generated a solution recur simply
+மற்றும் ஒரு தீர்வு வெறுமனே இப்பிரச்சினை உருவாக்கப்படும்
+
+00:27:25,000 --> 00:27:29,000
+and now of course if we want to generate the more general
+இப்போது நிச்சயமாக நாம் மேலும் பொது உருவாக்க விரும்பினால்
+
+00:27:29,000 --> 00:27:32,000
+center solutions to this difference equation
+இந்த வேறுபாடு சமன்பாடு சென்டர் தீர்வுகளை
+
+00:27:32,000 --> 00:27:36,000
+we can't do that by adding all of the
+நாம் அனைத்து சேர்ப்பதன் மூலம் அதை செய்ய முடியாது
+
+00:27:36,000 --> 00:27:40,000
+homogeneous solutions namely all the solutions to satisfy the homogeneous
+ஒரேவிதமான தீர்வுகளை அதாவது அனைத்து தீர்வுகளை ஒரேவிதமான பூர்த்தி செய்ய
+
+00:27:40,000 --> 00:27:43,000
+equation so
+சமன்பாடு எனவே
+
+00:27:43,000 --> 00:27:47,000
+here we have the causal linear time-invariant
+இங்கே நாம் காரண நேரியல் நேரம் மாற்றமில்லாத வேண்டும்
+
+00:27:47,000 --> 00:27:50,000
+impulse response in fact
+உண்மையில் உந்துவிசை பதில்
+
+00:27:50,000 --> 00:27:56,000
+with an impulse input all of the possible solutions
+ஒரு உந்துவிசை உள்ளீடு சாத்தியமான தீர்வுகள் அனைத்து
+
+00:27:56,000 --> 00:27:59,000
+are that impulse response plus
+என்று உந்துவிசை பதில் பிளஸ்
+
+00:27:59,000 --> 00:28:05,000
+the homogeneous solutions the homogeneous solution is the solution
+ஒரேவிதமான தீர்வு தீர்வு ஒரேவிதமான தீர்வுகளை
+
+00:28:05,000 --> 00:28:08,000
+that satisfies the homogeneous equation
+என்று ஒரேவிதமான சமன்பாட்டை நிறைவு
+
+00:28:08,000 --> 00:28:11,000
+that will in general
+பொதுவாக அந்த உயில்
+
+00:28:11,000 --> 00:28:14,000
+believe the form an amplitude factor
+படிவம் ஒரு வீச்சு காரணி என்று
+
+00:28:14,000 --> 00:28:18,000
+times an exponential factor and
+முறை அதிவேகமான காரணி மற்றும்
+
+00:28:18,000 --> 00:28:21,000
+if we substitute this into this equation
+நாம் இந்த சமன்பாடு இந்த பதிலாக என்றால்
+
+00:28:21,000 --> 00:28:24,000
+then we see that the homogeneous
+நாம் பார்க்கின்றோம் என்று ஒரேவிதமான
+
+00:28:24,000 --> 00:28:27,000
+equation is satisfied for any values have a
+எந்த மதிப்புகள் சமன்பாடு திருப்தி ஒரு
+
+00:28:27,000 --> 00:28:31,000
+in any values see that satisfy
+எந்த மதிப்புகள் பார்க்கிறது என்று திருப்தி
+
+00:28:31,000 --> 00:28:36,000
+this equation again as we did with differential equations
+இந்த சமன்பாடு மீண்டும் நாம் வகைக்கெழு சமன்பாடுகள் செய்தார்
+
+00:28:36,000 --> 00:28:43,000
+the factor Amy cancels out and also in fact I can cancel out is either the N
+ஆமி அவுட் ரத்து மற்றும் உண்மையில் நான் ரத்து செய்ய முடியும் காரணி ஒன்று தெளிவு ஆகிறது
+
+00:28:43,000 --> 00:28:47,000
+there and seat to the end here
+அங்கு இங்கு முடிவுக்கு இருக்கை
+
+00:28:47,000 --> 00:28:51,000
+and so what we're left with is a statement that tells us
+எனவே நாம் விட்டு நமக்கு சொல்கிறது என்று ஒரு அறிக்கை
+
+00:28:51,000 --> 00:28:54,000
+then dead the homogeneous
+பின்னர் இறந்த ஒரேவிதமான
+
+00:28:54,000 --> 00:28:58,000
+solution is over for AC to the end
+தீர்வு இறுதியில் ஏசி மீது ஆகிறது
+
+00:28:58,000 --> 00:29:02,000
+for any ban you capital A and any value
+நீங்கள் மூலதன ஒரு எந்த தடையும், எந்த மதிப்பு
+
+00:29:02,000 --> 00:29:05,000
+see it satisfies this equation and
+இந்த சமன்பாட்டை நிறைவு பார்க்க
+
+00:29:05,000 --> 00:29:08,000
+that values the in particular is the
+அந்த குறிப்பிட்ட உள்ளது மதிக்கிறது
+
+00:29:08,000 --> 00:29:12,000
+people today so the homogeneous solution then
+மக்கள் இன்று மிகவும் ஒரேவிதமான தீர்வு பின்னர்
+
+00:29:12,000 --> 00:29:16,000
+is any exponential this form with any amplitude factor
+எந்த அதிவேகமான எந்த வீச்சு காரணி இந்த வடிவம்
+
+00:29:16,000 --> 00:29:20,000
+and so the family of solutions with an impulse
+அதனால் உந்துவிசை கொண்டு தீர்வுகளை குடும்பம்
+
+00:29:20,000 --> 00:29:24,000
+input is the solution
+உள்ளீடு தீர்வு
+
+00:29:24,000 --> 00:29:28,000
+corresponding to the system being cause a linear and time-invariant
+ஒரு நேர்கோட்டு மற்றும் நேர மாற்றம் காரணமாக இருப்பது அமைப்பு தொடர்புடைய
+
+00:29:28,000 --> 00:29:32,000
+plus the homogeneous sir
+பிளஸ் ஒரேவிதமான சர்
+
+00:29:32,000 --> 00:29:33,000
+if
+
+
+00:29:33,000 --> 00:29:37,000
+we impose causality Lenny a ready in time invariance
+நாம் நேரம் ஹேமா காரணகாரிய லென்னி ஒரு தயாராக திணிக்க
+
+00:29:37,000 --> 00:29:40,000
+on the system then of course that additional
+கணினியில் பின்னர் நிச்சயமாக கூடுதல்
+
+00:29:40,000 --> 00:29:44,000
+exponential factor will be 0 in other words capital A
+அதிவேகமான காரணி வேறுவிதமாக தலைநகரில் ஒரு 0 இருக்கும்
+
+00:29:44,000 --> 00:29:48,000
+is 0
+0
+
+00:29:48,000 --> 00:29:53,000
+okay now in we seen the
+சரி இப்போது நாம் பார்க்க
+
+00:29:53,000 --> 00:29:56,000
+differential equations and difference equations interns
+வகைக்கெழு சமன்பாடுகள் மற்றும் வேறுபாடு பயிற்சியாளர்களுக்கு சமன்பாடுகள்
+
+00:29:56,000 --> 00:29:57,000
+love
+காதல்
+
+00:29:57,000 --> 00:30:01,000
+the fact there there are families have solutions
+அங்கு குடும்பங்கள் உள்ளன உண்மையில் தீர்வுகளை
+
+00:30:01,000 --> 00:30:05,000
+and in order to get causality Lenny a ready in time
+ஒழுங்கு காரணகாரிய லென்னி நேரத்தில் ஒரு தயாராக
+
+00:30:05,000 --> 00:30:09,000
+variance requires imposing a particular set initial conditions namely
+மாறுபாடு அதாவது ஒரு குறிப்பிட்ட ஆரம்ப நிபந்தனைகளை விதிக்கவில்லை தேவைப்படுகிறது
+
+00:30:09,000 --> 00:30:12,000
+imposing initial rest on the system
+கணினியில் ஆரம்ப ஓய்வு சுமத்தும்
+
+00:30:12,000 --> 00:30:17,000
+let's now look at the difference equation
+இப்போது வேறுபாடு சமன்பாடு பார்போம்
+
+00:30:17,000 --> 00:30:23,000
+and then later the differential equation interpreted in block diagrams
+பின்னர் வகையீட்டு சமன்பாடு தொகுதி வரைபடங்கள் விளக்கம்
+
+00:30:23,000 --> 00:30:26,000
+now p the difference equation at
+இப்போது ப வேறுபாடு சமன்பாடு மணிக்கு
+
+00:30:26,000 --> 00:30:30,000
+I just simply repeated here is why I have an
+நான் ஒரு வேண்டும் ஏன் நான் வெறுமனே இங்கே மீண்டும் ஆகிறேன்
+
+00:30:30,000 --> 00:30:33,000
+is accident was a white van -1
+விபத்து ஒரு வெள்ளை வான் இருந்தது -1
+
+00:30:33,000 --> 00:30:36,000
+where I've taken that the late term
+நான் எடுத்தேன் என்று தாமதமாக கால
+
+00:30:36,000 --> 00:30:40,000
+over to the right hand side of the equation so in effect
+சமன்பாட்டின் வலது பக்க மேல் மிகவும் விளைவு
+
+00:30:40,000 --> 00:30:44,000
+what on imposing on this system is causality
+காரணகாரிய இந்த கணினியில் சுமத்தும் என்ன ஆகிறது
+
+00:30:44,000 --> 00:30:47,000
+I'm assuming that if I know the past history
+நான் அனுமானித்து என்று நான் கடந்த கால வரலாறு தெரிந்தால்
+
+00:30:47,000 --> 00:30:51,000
+the input and the output I can determine
+நான் தீர்மானிக்க முடியும் உள்ளீடு மற்றும் வெளியீடு
+
+00:30:51,000 --> 00:30:53,000
+the next value the out
+அடுத்த மதிப்பு அவுட்
+
+00:30:53,000 --> 00:30:57,000
+well we can in fact draw a block diagram
+நன்றாக நாம் உண்மையில் ஒரு வரைபடத்தில் வரைய முடியும்
+
+00:30:57,000 --> 00:31:01,000
+represents that equation the equation says
+சமன்பாடு சமன்பாடு கூறுகிறார் பிரதிபலிக்கிறது
+
+00:31:01,000 --> 00:31:04,000
+we take exit and for any given bad you
+நாங்கள் வெளியேறும் எடுத்து நீங்கள் எந்த கெட்ட
+
+00:31:04,000 --> 00:31:09,000
+a van say n0 whatever bad you were computing the output were
+ஒரு வேன், நீங்கள் வெளியீடு கணினி மோசமான என்ன N0 சொல்ல
+
+00:31:09,000 --> 00:31:12,000
+we take the input at that time
+நாம் அந்த நேரத்தில் உள்ளீடு எடுக்கிறோம்
+
+00:31:12,000 --> 00:31:16,000
+and and to it the factor a
+மற்றும் அது காரணி
+
+00:31:16,000 --> 00:31:22,000
+times the output value that we calculated last time so
+நாம் கடந்த காலத்தில் கணக்கிடப்படும் என்று முறை வெளியீடு மதிப்பு
+
+00:31:22,000 --> 00:31:26,000
+if we have excessive and which is our input
+நாம் அதிக மற்றும் எங்கள் உள்ளீடு இது என்றால்
+
+00:31:26,000 --> 00:31:29,000
+and if we have why I have and which is our output
+மற்றும் நான் மற்றும் நாம் ஏன் வேண்டும் என்றால் நம் வெளியீடு ஆகிறது
+
+00:31:29,000 --> 00:31:33,000
+we in fact can't get why I have an
+நான் ஒரு வேண்டும் நாம் ஏன் உண்மையில் பெற முடியாது
+
+00:31:33,000 --> 00:31:37,000
+by taking the last value why event
+கடந்த மதிப்பு ஏன் நிகழ்வு எடுத்து
+
+00:31:37,000 --> 00:31:41,000
+indicated here by putting why I have an
+நான் ஏன் செலுத்துவதன் மூலம், இங்கு குறிப்பிடப்பட்டால் ஒரு
+
+00:31:41,000 --> 00:31:45,000
+threw it away multiplying Matt
+மாட் பெருக்கி அதை கழற்றி எறிந்தார்
+
+00:31:45,000 --> 00:31:49,000
+by the factor
+காரணி
+
+00:31:49,000 --> 00:31:51,000
+a
+
+
+00:31:51,000 --> 00:31:56,000
+and then Anning that result
+பின்னர் அந்த முடிவை Anning
+
+00:31:56,000 --> 00:31:57,000
+to
+
+
+00:31:57,000 --> 00:31:59,000
+the input
+உள்ளீடு
+
+00:31:59,000 --> 00:32:03,000
+and the result the doing that is
+, முடிவு செய்து
+
+00:32:03,000 --> 00:32:05,000
+why event
+ஏன் நிகழ்வு
+
+00:32:05,000 --> 00:32:08,000
+so the way this block diagram
+இந்த வரைபடத்தில் அதனால் வழி
+
+00:32:08,000 --> 00:32:13,000
+might be interpreted for example as an algorithm is this a
+ஒரு படிமுறை இந்த ஒரு உதாரணமாக விளக்கம்
+
+00:32:13,000 --> 00:32:17,000
+dead we take exit Van add to it
+இறந்த நாங்கள் வெளியேறும் வான் அதை சேர்க்க எடுக்கிறோம்
+
+00:32:17,000 --> 00:32:22,000
+eight times the previous value the output that some gives us
+சில நமக்கு கொடுக்கிறது என்று எட்டு முறை முந்தைய மதிப்பு வெளியீடு
+
+00:32:22,000 --> 00:32:26,000
+the current value of the output which we then put out of the system
+நாம் அமைப்பின் அவுட் வைத்து, வெளியீடு தற்போதைய மதிப்பு
+
+00:32:26,000 --> 00:32:30,000
+and also put into a delay element or
+மேலும் ஒரு தாமதம் உறுப்பு செலுத்துவதாக அல்லது
+
+00:32:30,000 --> 00:32:35,000
+basically it was stored register to use on the next generation a recursion
+அடிப்படையில் அதை பதிவு அடுத்த தலைமுறை ஒரு மறுநிகழ்வு பயன்படுத்த சேமிக்கப்படும்
+
+00:32:35,000 --> 00:32:40,000
+now how do we get this started well we know that the difference equation
+இப்போது எப்படி நாம் இந்த தொடங்குவது நன்றாக நாம் என்று வேறுபாடு சமன்பாடு
+
+00:32:40,000 --> 00:32:41,000
+requires initial conditions
+ஆரம்ப நிலையில் தேவைப்படுகிறது
+
+00:32:41,000 --> 00:32:44,000
+and in fact the initial conditions
+மற்றும் உண்மையில் ஆரம்ப நிலையில்
+
+00:32:44,000 --> 00:32:48,000
+correspond to what we store
+நாம் சேமிக்க என்ன தொடர்பு
+
+00:32:48,000 --> 00:32:52,000
+in that the late register when this block diagram
+என்று தாமதமாக பதிவு செய்யும் போது இந்த வரைபடத்தில்
+
+00:32:52,000 --> 00:32:55,000
+equation initially starts up
+சமன்பாடு ஆரம்பத்தில் தொடங்குகிறது
+
+00:32:55,000 --> 00:32:58,000
+okay now let's look at
+சரி இப்போது நாம் பார்ப்போம்
+
+00:32:58,000 --> 00:33:02,000
+this for the case %uh difference equations
+இந்த வழக்கில்% இம் வேறுபாடு சமன்பாடுகள் ஐந்து
+
+00:33:02,000 --> 00:33:06,000
+more generally
+பொதுவாக
+
+00:33:06,000 --> 00:33:13,000
+so what we said is dead we can calculate the output by
+நாங்கள் என்ன கூறினார் நாம் வெளியீடு கணக்கிட முடியும் இறந்த ஆகிறது
+
+00:33:13,000 --> 00:33:16,000
+having previous values that the input
+முந்தைய மதிப்புகளை கொண்ட உள்ளீடு
+
+00:33:16,000 --> 00:33:20,000
+previous values at the output and forming
+முந்தைய வெளியீடு மதிப்புகள் மற்றும் உருவாக்கும்
+
+00:33:20,000 --> 00:33:24,000
+the appropriate linear combination so
+அதற்கான நேரியல் கலவை
+
+00:33:24,000 --> 00:33:27,000
+let's just build up the more general block diagram
+தான் மேலும் பொது வரைபடத்தில் கட்டமைக்க அனுமதிக்க
+
+00:33:27,000 --> 00:33:31,000
+that would correspond to this
+இந்த ஒத்திருக்கும் என்று
+
+00:33:31,000 --> 00:33:35,000
+and what it says is that we want to have a mechanism
+என்ன சொல்வது நாம் ஒரு கருவியாக இருக்க வேண்டும் என்று ஆகிறது
+
+00:33:35,000 --> 00:33:41,000
+restoring past values the input in a mechanism for story past values at the
+கடந்த மீட்சி கதை கடந்த மதிப்புகள் ஒரு பொறிமுறையை உள்ளீடு மதிப்புகள்
+
+00:33:41,000 --> 00:33:41,000
+output
+உற்பத்தி
+
+00:33:41,000 --> 00:33:45,000
+and i've indicated that on this figure
+நான் இந்த படத்தில் என்று குறிப்பிட்டார்
+
+00:33:45,000 --> 00:33:48,000
+so far by a chain love
+இதுவரை ஒரு சங்கிலி காதல்
+
+00:33:48,000 --> 00:33:52,000
+the layout its indicating
+அமைப்பை அதன் குறிப்பிடவும்
+
+00:33:52,000 --> 00:33:55,000
+that whatever what
+என்று என்ன என்ன
+
+00:33:55,000 --> 00:33:58,000
+the output each delay is the input
+ஒவ்வொரு தாமதம் உள்ளீடு வெளியீடு
+
+00:33:58,000 --> 00:34:02,000
+delayed by one time it's
+அது தான் ஒரு முறை தாமதமாக
+
+00:34:02,000 --> 00:34:06,000
+or or interval and so
+அல்லது இடைவெளி மற்றும்
+
+00:34:06,000 --> 00:34:10,000
+what we see down this chain of the ladies are the late replications
+நாம் என்ன பெண்கள் இந்த சங்கிலி கீழே பார்க்க தாமதமாக விடைகள் இருக்கின்றன
+
+00:34:10,000 --> 00:34:14,000
+love the input and what we see
+நாம் பார்க்க என்ன உள்ளீடு அன்பு
+
+00:34:14,000 --> 00:34:18,000
+on the other chain is delayed
+மற்ற சங்கிலி தாமதமாக வருகிறது
+
+00:34:18,000 --> 00:34:22,000
+replications love the output
+விடைகள் வெளியீடு நேசிக்கிறேன்
+
+00:34:22,000 --> 00:34:26,000
+now the difference equation says that we want to take these
+இப்போது வேறுபாடு சமன்பாடு நாம் எடுத்து கொள்ள வேண்டும் என்று கூறுகிறார்
+
+00:34:26,000 --> 00:34:31,000
+and multiply them by the appropriate coefficients
+அதற்கான சாவி மூலம் அவற்றை பெருக்கி
+
+00:34:31,000 --> 00:34:34,000
+the coefficients in the difference equation and so we can do that
+வேறுபாடு சமன்பாடு மற்றும் நாம் என்ன செய்ய முடியும் மதிப்பீடுகள் என்று
+
+00:34:34,000 --> 00:34:38,000
+as i've indicated here so
+நான் இங்கே சுட்டி போல
+
+00:34:38,000 --> 00:34:42,000
+now we have these delay elements each multiplied
+இப்போது நாம் ஒவ்வொரு பெருக்கி இந்த தாமதம் கூறுகள்
+
+00:34:42,000 --> 00:34:46,000
+by the appropriate coefficients on the input and by
+உள்ளீடு மீது உரிய பண்புகள் மற்றும் மூலம்
+
+00:34:46,000 --> 00:34:51,000
+appropriate coefficients on the output those are then
+அந்த பின்னர் உள்ளன வெளியீடு அதற்கான மதிப்பீடுகள்
+
+00:34:51,000 --> 00:34:54,000
+songs together and
+இசை ஒன்றாக
+
+00:34:54,000 --> 00:34:59,000
+so we now what's on these and what's on these
+நாம் இப்போது இந்த என்ன தான் இந்த மீது என்ன
+
+00:34:59,000 --> 00:35:02,000
+after we've some these we want to add
+நாம் சில செய்த பிறகு இந்த நாம் சேர்க்க வேண்டும்
+
+00:35:02,000 --> 00:35:06,000
+those together and there's a factor 1 over 80 that comes in
+ஒன்றாக அந்த மற்றும் வருகிறது என்று 80 ஒரு காரணி 1 இல்லை
+
+00:35:06,000 --> 00:35:10,000
+and that and generates are out
+அந்த மற்றும் உருவாக்குகிறது வெளியே இருக்கின்றன
+
+00:35:10,000 --> 00:35:13,000
+and so this in fact and
+அதனால் இந்த உண்மையை மற்றும்
+
+00:35:13,000 --> 00:35:19,000
+represents a block diagram which is a general block diagram for implementing
+செயல்படுத்தி ஒரு பொது வரைபடத்தில் இது ஒரு வரைபடத்தில் பிரதிபலிக்கிறது
+
+00:35:19,000 --> 00:35:23,000
+war representing near constant coefficient difference
+அருகில் நிலையான குணகம் வேறுபாடு குறிக்கும் போர்
+
+00:35:23,000 --> 00:35:25,000
+wage
+ஊதிய
+
+00:35:25,000 --> 00:35:29,000
+now if you think about what it means in terms of what's a computer algorithm or
+இப்போது நீங்கள் ஒரு கணினி வழிமுறை அல்லது என்ன அடிப்படையில் என்ன அர்த்தம் என்று யோசிக்க என்றால்
+
+00:35:29,000 --> 00:35:30,000
+a piece of hardware
+வன்பொருள் ஒரு துண்டு
+
+00:35:30,000 --> 00:35:34,000
+in fact this block diagram is a recipe or algorithm for doing the
+உண்மையில் இந்த வரைபடத்தில் செய்து ஒரு செய்முறையை அல்லது வழிமுறை
+
+00:35:34,000 --> 00:35:35,000
+implementation
+செயல்படுத்த
+
+00:35:35,000 --> 00:35:39,000
+by it's important to
+அது முக்கியம் மூலம்
+
+00:35:39,000 --> 00:35:43,000
+recognize even at this point dad it's only one
+இந்த கட்டத்தில் அப்பா கூட அங்கீகரிக்க அது மட்டும் தான்
+
+00:35:43,000 --> 00:35:47,000
+many possible algorithms or implementations for this difference
+இந்த வேறுபாடு பல வழிமுறைகளை அல்லது செயலாக்கங்கள்
+
+00:35:47,000 --> 00:35:49,000
+wage
+ஊதிய
+
+00:35:49,000 --> 00:35:51,000
+just for example
+எடுத்துக்காட்டாக
+
+00:35:51,000 --> 00:35:57,000
+I can consider that equation
+நான் சமன்பாடு கொள்ள முடியும்
+
+00:35:57,000 --> 00:35:59,000
+core that block diagram
+வரைபடம் தடுக்கும் கோர்
+
+00:35:59,000 --> 00:36:04,000
+and here I've redrawn at so
+இங்கே நான் அன்று redrawn
+
+00:36:04,000 --> 00:36:08,000
+here once again I have the same block diagram that we just saw
+இங்கே நான் மீண்டும் நாம் தான் பார்த்தேன் என்று அதே வரைபடத்தில் இல்லை
+
+00:36:08,000 --> 00:36:12,000
+and I can recognize for example
+நான் உதாரணமாக அடையாளம் காண முடியும்
+
+00:36:12,000 --> 00:36:16,000
+that this in essence corresponds to
+இந்த சாரம் ஒத்துள்ளது என்று
+
+00:36:16,000 --> 00:36:19,000
+to linear time-invariant systems
+நேர மாற்றம் அமைப்புகள் நேர்
+
+00:36:19,000 --> 00:36:22,000
+in cascade
+அடுக்கை
+
+00:36:22,000 --> 00:36:25,000
+now that assumes of course that my
+இப்போது நிச்சயமாக வகிக்கிறது என்று என்
+
+00:36:25,000 --> 00:36:29,000
+initial conditions are such dad I that the system is in fact
+ஆரம்ப நிலையில் அமைப்பு உண்மையில் அந்த அப்பா நான் இருக்கின்றன
+
+00:36:29,000 --> 00:36:34,000
+when you're and that in turn requires that we're assuming initial rest namely
+நீங்கள் போது அந்த முறை நாம் அதாவது ஆரம்ப ஓய்வு அனுமானித்து என்று தேவைப்படுகிறது
+
+00:36:34,000 --> 00:36:36,000
+before the input does anything
+உள்ளீடு எதுவும் செய்வதற்கு முன்
+
+00:36:36,000 --> 00:36:40,000
+other than 0 there are just zero value stored in the registers
+0 விட மற்ற பதிவுகளை சேமித்து வெறும் பூஜ்யம் மதிப்பு உள்ளன
+
+00:36:40,000 --> 00:36:45,000
+but assuming that it corresponds to a linear time-invariant system
+ஆனால் அது ஒரு நேர்கோட்டு நேரம் மாற்றமில்லாத அமைப்பு ஒத்துள்ளது என்று அனுமானித்து
+
+00:36:45,000 --> 00:36:50,000
+this is a cascade to linear time-invariant systems
+இந்த நேர மாற்றம் அமைப்புகள் ஒருபடி ஒரு அடுக்கை
+
+00:36:50,000 --> 00:36:53,000
+we know that two linear time-invariant systems can be cascaded
+நாம் இரண்டு நேரியல் நேரம் மாற்றமில்லாத அமைப்புகள் தற்காத்து கொள்ள முடியும் என்று எனக்கு தெரியும்
+
+00:36:53,000 --> 00:36:57,000
+in either order so in particular I can consider
+அதனால் குறிப்பாக நான் பரிசீலிக்க முடியும் பொருட்டு ஒன்று
+
+00:36:57,000 --> 00:37:01,000
+breaking this cascade here and moving this block
+இங்கே இந்த அடுக்கை உடைத்து இந்த தொகுதி நகரும்
+
+00:37:01,000 --> 00:37:04,000
+over to the other side and so let's just
+மற்ற பக்க அதனால் நாம் தான்
+
+00:37:04,000 --> 00:37:08,000
+do that
+என்று
+
+00:37:08,000 --> 00:37:11,000
+and when I do
+மற்றும் நான் செய்ய
+
+00:37:11,000 --> 00:37:13,000
+I then have
+நான் வேண்டும்
+
+00:37:13,000 --> 00:37:16,000
+this combination systems
+இந்த கலவையை அமைப்புகள்
+
+00:37:16,000 --> 00:37:20,000
+and of course you can ask what advantage there is to do in at
+நிச்சயமாக நீங்கள் செய்ய என்ன இருக்கிறது பயன்படுத்தி கேட்கலாம்
+
+00:37:20,000 --> 00:37:23,000
+and the advantage arises because it the fact
+மற்றும் பயன்படுத்தி எழுகிறது ஏனெனில் அது உண்மையில்
+
+00:37:23,000 --> 00:37:27,000
+there'd in this form
+இந்த வடிவத்தில் அங்கு விட்டோம்
+
+00:37:27,000 --> 00:37:31,000
+exactly what is stored in these delays
+இந்த தாமதங்கள் சேமிக்கப்படுகிறது சரியாக என்ன
+
+00:37:31,000 --> 00:37:34,000
+is also stored in the still air registers
+இன்னும் காற்று பதிவேடுகளை சேமிக்கப்படுகிறது
+
+00:37:34,000 --> 00:37:38,000
+in other words it's this intermediate variable
+வேறுவிதமாக கூறினால், இந்த இடைநிலை மாறி
+
+00:37:38,000 --> 00:37:42,000
+whatever it is down this chain of delays and down this chain of the ladies
+இது தாமதங்கள் இந்த சங்கிலி கீழே மற்றும் பெண்கள் இந்த சங்கிலி கீழே என்ன
+
+00:37:42,000 --> 00:37:46,000
+and so in fact I can collapse those delays
+எனவே உண்மையில் நான் அந்த தாமதங்கள் உடைந்து முடியும்
+
+00:37:46,000 --> 00:37:49,000
+into a single chain of delays and
+தாமதங்கள் ஒரு சங்கிலி மற்றும்
+
+00:37:49,000 --> 00:37:54,000
+the network that I'm left with is the network that I indicate
+நான் விட்டு பிணைய நான் என்பதை அந்த நெட்வொர்க்
+
+00:37:54,000 --> 00:37:59,000
+I missed you graph where what I've done is to simply collapse that
+நான் என்ன செய்துவிட்டேன் வெறுமனே உடைந்து எங்கே நீங்கள் வரைபட தவறவிட்டார்
+
+00:37:59,000 --> 00:38:02,000
+double chain of the ladies into a single chain
+ஒரு ஒற்றை சங்கிலி பெண்கள் இரட்டை சங்கிலி
+
+00:38:02,000 --> 00:38:04,000
+the waves
+அலைகள்
+
+00:38:04,000 --> 00:38:08,000
+now want to ask well what's the advantage to doing that and the
+இப்போது பயன்படுத்தி அந்த செய்து என்ன நன்றாக கேட்க விரும்புகிறேன்
+
+00:38:08,000 --> 00:38:09,000
+advantage
+நன்மை
+
+00:38:09,000 --> 00:38:14,000
+one advantage simply stated is that when you think in terms of an implementation
+வெறுமனே கூறினார் ஒரு நன்மை இருக்கிறது என்று நீங்கள் ஒரு செயல்படுத்தல் அடிப்படையில் நினைக்கும் போது
+
+00:38:14,000 --> 00:38:15,000
+of a difference equation
+ஒரு வித்தியாசம் சமன்பாடு
+
+00:38:15,000 --> 00:38:18,000
+the lady corresponds to
+லேடி ஒத்துள்ளது
+
+00:38:18,000 --> 00:38:22,000
+storage register a memory location and by this
+சேமிப்பு ஒரு நினைவக இடம் மற்றும் இந்த பதிவு
+
+00:38:22,000 --> 00:38:26,000
+by simply using the fact that we can interchange the order in which linear
+சாதாரணமாக நாம் எந்த நேர்கோட்டு வரிசையில் பரிமாற்றம் செய்ய முடியும் என்று உண்மையில் பயன்படுத்தி
+
+00:38:26,000 --> 00:38:28,000
+time-invariant systems are cascaded
+நேர மாற்றம் அமைப்புகள் தயார்படுத்தி
+
+00:38:28,000 --> 00:38:33,000
+we can reduce the amount of memory by a factor to
+நாம் ஒரு காரணி நினைவகத்தின் அளவை குறைக்க முடியும்
+
+00:38:33,000 --> 00:38:35,000
+okay now
+சரி இப்போது
+
+00:38:35,000 --> 00:38:40,000
+and essentially similar procedure can also be used for
+அடிப்படையில் இதே போன்ற நடைமுறை கூட பயன்படுத்த முடியும்
+
+00:38:40,000 --> 00:38:44,000
+differential equations in terms of implementation
+செயல்படுத்த அடிப்படையில் வகைக்கெழு சமன்பாடுகள்
+
+00:38:44,000 --> 00:38:48,000
+using block diagrams for the interpretation implementations
+விளக்கம் செயலாக்கங்கள் தொகுதி வரைபடங்கள் பயன்படுத்தி
+
+00:38:48,000 --> 00:38:52,000
+using like diagrams and let me first do that
+வரைபடங்கள் போன்ற பயன்படுத்தி, என்னை முதல் செய்வோம் என்று
+
+00:38:52,000 --> 00:38:55,000
+rather than in general let me first do it in the in
+மாறாக பொதுவாக விட எனக்கு முதல் அதை செய்வோம்
+
+00:38:55,000 --> 00:39:00,000
+the context love a specific example
+பின்னணியில் ஒரு குறிப்பிட்ட உதாரணமாக அன்பு
+
+00:39:00,000 --> 00:39:02,000
+so
+
+
+00:39:02,000 --> 00:39:08,000
+let's consider a when your constant coefficient differential equation as
+ஒரு போது உங்கள் நிலையான குணகம் வகையீட்டு சமன்பாடாக கருத்தில் கொள்வோம்
+
+00:39:08,000 --> 00:39:09,000
+i've indicated here
+நான் இங்கே சுட்டி
+
+00:39:09,000 --> 00:39:13,000
+and I have terms on the left side in terms on the right side
+நான் வலது பக்கத்தில் அடிப்படையில் இடது பக்கத்தில் விதிமுறைகள் வேண்டும்
+
+00:39:13,000 --> 00:39:18,000
+and with the differential equation
+மற்றும் வகையீட்டு சமன்பாடு ஒன்றை
+
+00:39:18,000 --> 00:39:21,000
+let's consider taking overturns
+தான் நசுங்கி எடுத்து கொள்ள அனுமதிக்க
+
+00:39:21,000 --> 00:39:24,000
+over to the right side of the equation except
+தவிர சமன்பாடு வலது பக்க
+
+00:39:24,000 --> 00:39:29,000
+for the highest the residue in the output next we
+வெளியீடு அடுத்த நாம் அதிக எச்சம்
+
+00:39:29,000 --> 00:39:32,000
+integrate both sides of the equation are so that
+இருக்கும் சமன்பாடு இருபுறமும் ஒருங்கிணைக்க என்று
+
+00:39:32,000 --> 00:39:36,000
+when we're done we end up with the on the left side of the equation
+நாம் செய்த போது நாம் முடிவடையும் சமன்பாட்டின் இடது பக்கத்தில்
+
+00:39:36,000 --> 00:39:41,000
+with y ft on the right side of the equation with the appropriate number
+சரியான எண்ணை சமன்பாட்டில் வலது பக்கத்தில் Y அடி கொண்ட
+
+00:39:41,000 --> 00:39:44,000
+%uh integrations and so the InterPro equation
+% இம் ஒருங்கிணைவுகளையும் மற்றும் InterPro சமன்பாடு
+
+00:39:44,000 --> 00:39:49,000
+that will get is for this example y ft the output is except the
+இந்த எடுத்துக்காட்டு: y அடி வெளியீடு தவிர உள்ளது கிடைக்கும்
+
+00:39:49,000 --> 00:39:53,000
+plus be the scale factor times the integral
+பிளஸ் காரணி முறை ஒருங்கிணைந்த அளவில் இருக்கும்
+
+00:39:53,000 --> 00:39:57,000
+the input and -8 at scale factor times the integral
+அளவில் உள்ளீடு மற்றும் -8 காரணி முறை ஒருங்கிணைந்த
+
+00:39:57,000 --> 00:40:00,000
+the output so to
+வெளியீடு மிகவும்
+
+00:40:00,000 --> 00:40:04,000
+form the output in a block diagram turns
+ஒரு வரைபடத்தில் திருப்பங்களை வெளியீடு அமைக்க
+
+00:40:04,000 --> 00:40:07,000
+we form a linear combination of the input
+நாம் உள்ளீடு ஒரு நேர்கோட்டு இணைந்து அமைக்க
+
+00:40:07,000 --> 00:40:11,000
+scaled in to grow the input and a scale
+உள்ளீடு மற்றும் அளவில் வளர உள்ள அளவிட
+
+00:40:11,000 --> 00:40:14,000
+integral love the output all of that and it together
+ஒருங்கிணைந்த வெளியீடு என்று அனைத்து அன்பு மற்றும் அது ஒன்றாக
+
+00:40:14,000 --> 00:40:17,000
+so we need in addition to
+நாம் கூடுதலாக வேண்டும்
+
+00:40:17,000 --> 00:40:21,000
+the input we need the integral
+நாங்கள் ஒருங்கிணைந்த வேண்டும் உள்ளீடு
+
+00:40:21,000 --> 00:40:24,000
+love the input and so this box indicates an integrator
+உள்ளீடு அன்பு மற்றும் இந்த பெட்டியில் ஒரு தொகையிடுபொருள் குறிக்கிறது
+
+00:40:24,000 --> 00:40:28,000
+in addition to the output we need
+நாம் வேண்டும் வெளியீடு கூடுதலாக
+
+00:40:28,000 --> 00:40:31,000
+the integral the output and now
+இப்போது வெளியீடு ஒருங்கிணைந்த மற்றும்
+
+00:40:31,000 --> 00:40:34,000
+to for why ft we
+ஏன் அடி நாம்
+
+00:40:34,000 --> 00:40:38,000
+multiply the integrated in play
+பெருக்கி நாடகம் ஒருங்கிணைந்த
+
+00:40:38,000 --> 00:40:42,000
+by the scale factor B and
+அளவு காரணி பி மற்றும்
+
+00:40:42,000 --> 00:40:46,000
+and back to exit C
+மற்றும் சி வெளியேற மீண்டும்
+
+00:40:46,000 --> 00:40:51,000
+and retake the integrated output multiplied by Minas de
+மற்றும் மினாஸ் டி பெருக்கி ஒருங்கிணைந்த வெளியீடு பலி
+
+00:40:51,000 --> 00:40:55,000
+and and to that
+மற்றும் அந்த
+
+00:40:55,000 --> 00:40:58,000
+the result are the previous addition
+இதன் விளைவாக முந்தைய கூடுதலாக இருக்கிறது
+
+00:40:58,000 --> 00:41:02,000
+and according to the integral equation then that forms
+பின்னர் தொகையீட்டுச்சமன்பாடு படி என்று வடிவங்கள்
+
+00:41:02,000 --> 00:41:05,000
+the output
+உற்பத்தி
+
+00:41:05,000 --> 00:41:08,000
+so just as we did with the difference equation
+நாங்கள் வேறுபாடு சமன்பாடு செய்ததை போல்
+
+00:41:08,000 --> 00:41:11,000
+we've converted the differential equation to
+நாம் வகையீட்டு சமன்பாடு மாற்றப்படுகிறது
+
+00:41:11,000 --> 00:41:16,000
+an integral equation and we have a block diagram for very similar
+ஒரு ஒருங்கிணைந்த சமன்பாடு மற்றும் நாம் மிகவும் ஒத்த ஒரு வரைபடத்தில் வேண்டும்
+
+00:41:16,000 --> 00:41:20,000
+to what we had in the case the difference equation now the initial
+நாங்கள் வழக்கு வேறுபாடு சமன்பாடு இப்போது ஆரம்ப இருந்தது என்ன
+
+00:41:20,000 --> 00:41:22,000
+conditions of course
+நிச்சயமாக நிலைமைகள்
+
+00:41:22,000 --> 00:41:25,000
+are tied up and again how these integrators
+கட்டி மற்றும் மீண்டும் எப்படி இந்த ஒருங்கிணைப்பாளர்களை
+
+00:41:25,000 --> 00:41:30,000
+are initialized assuming that we impose initial rest on the system
+நாம் கணினியில் ஆரம்ப ஓய்வு சுமத்த என்று அனுமானித்து துவக்கப்படுகின்றன
+
+00:41:30,000 --> 00:41:35,000
+weekend thinkers the overall system is a linear time-invariant system
+வார இறுதியில் ஒட்டுமொத்த அமைப்பின் ஒரு நேர்கோட்டு நேரம் மாற்றமில்லாத அமைப்பு சிந்தனையாளர்கள்
+
+00:41:35,000 --> 00:41:39,000
+and it's a cascade one linear time-invariant system with the second
+அது இரண்டாவது ஒரு அடுக்கை ஒரு நேர்கோட்டு நேரம் மாற்றமில்லாத அமைப்பு
+
+00:41:39,000 --> 00:41:43,000
+so we can in fact
+நாம் உண்மையில் முடியும்
+
+00:41:43,000 --> 00:41:45,000
+break this
+இந்த உடைக்க
+
+00:41:45,000 --> 00:41:51,000
+and consider interchanging the order in which these two systems a cascade
+மற்றும், இந்த இரண்டு அமைப்புகள் ஒரு அடுக்கை எந்த வரிசையில் உள்மாற்றத்தில் கருத்தில்
+
+00:41:51,000 --> 00:41:55,000
+and so i've indicated that down below here
+அதனால் நான் இங்கே கீழே கீழே என்று குறிப்பிட்டார்
+
+00:41:55,000 --> 00:41:58,000
+I've simply taken the top block diagram
+நான் வெறுமனே மேல் வரைபடத்தில் எடுத்து
+
+00:41:58,000 --> 00:42:02,000
+interchange the order in which the to
+இதில் பொருட்டு இடை
+
+00:42:02,000 --> 00:42:06,000
+systems are cascaded and
+அமைப்புகள் தயார்படுத்தி மற்றும்
+
+00:42:06,000 --> 00:42:09,000
+here again we can ask what the advantages to this
+இங்கே மீண்டும் நாம் இந்த என்ன நன்மைகள் கேட்கலாம்
+
+00:42:09,000 --> 00:42:13,000
+as opposed to the previous one and what you can see
+முந்தைய ஒரு எதிர்க்கும் என்ன நீங்கள் பார்க்க முடியும் என
+
+00:42:13,000 --> 00:42:16,000
+just as we saw with the difference equation is that
+நாங்கள் வேறுபாடு சமன்பாடு பார்த்தேன் என்று தான் என்று ஆகிறது
+
+00:42:16,000 --> 00:42:19,000
+now the integrators both integrators
+இப்போது ஒருங்கிணைப்பாளர்களை ஒருங்கிணைப்பாளர்களை இரண்டு
+
+00:42:19,000 --> 00:42:22,000
+are integrating the same thing in particular
+குறிப்பாக அதே விஷயம் ஒருங்கிணைத்து
+
+00:42:22,000 --> 00:42:27,000
+the input to this integrator and the input
+இந்த ஒருங்கிணைப்பாளருக்காக மற்றும் உள்ளீடு உள்ளீடு
+
+00:42:27,000 --> 00:42:31,000
+to this integrator are identical so in fact
+இந்த ஒருங்கிணைப்பாளருக்காக மிகவும் உண்மையில் ஒரே மாதிரியானவை
+
+00:42:31,000 --> 00:42:35,000
+rather than using this one we can simply tap of
+மாறாக நாம் வெறுமனே குழாய் முடியும் இந்த ஒரு பயன்படுத்தி விட
+
+00:42:35,000 --> 00:42:39,000
+from here we can in fact remove this integrator
+இங்கிருந்து நாம் உண்மையில் இந்த ஒருங்கிணைப்பாளருக்காக நீக்க முடியும்
+
+00:42:39,000 --> 00:42:42,000
+break this connection
+இந்த இணைப்பை உடைத்து
+
+00:42:42,000 --> 00:42:46,000
+and happy and at this point and so
+மற்றும் மகிழ்ச்சி மற்றும் இந்த கட்டத்தில், அதனால்
+
+00:42:46,000 --> 00:42:50,000
+what we've done and by interchange in the order in which the systems are
+நாம் என்ன அமைப்புகள் இதில் பொருட்டு செய்யப்படுகிறது மற்றும் பரிமாற்றம் மூலம் நான்
+
+00:42:50,000 --> 00:42:51,000
+cascaded
+தயார்படுத்தி
+
+00:42:51,000 --> 00:42:56,000
+is reduced the implementation to the implementation
+செயல்படுத்த செயல்படுத்த குறைகிறது
+
+00:42:56,000 --> 00:42:59,000
+with a single integrated very much similar to
+போன்ற மிகவும் ஒரு ஒருங்கிணைந்த உடன்
+
+00:42:59,000 --> 00:43:02,000
+what we talked about in the case the difference wage
+நாங்கள் வழக்கு பற்றி பேசினார் என்ன வித்தியாசம் ஊதிய
+
+00:43:02,000 --> 00:43:06,000
+now let's just again with the integral equation
+இப்போது ஒருங்கிணைந்த சமன்பாடு மீண்டும் நாம்
+
+00:43:06,000 --> 00:43:10,000
+way the differential equation looked at
+வழி வகையீட்டு சமன்பாடு பார்த்து
+
+00:43:10,000 --> 00:43:13,000
+this somewhat more generally again
+இந்த ஓரளவு பொதுவாக மீண்டும்
+
+00:43:13,000 --> 00:43:18,000
+if we take the differential equation the general differential equation
+நாம் வகையீட்டு சமன்பாடு பொது வகையீட்டு சமன்பாடு எடுக்கிறோம் என்றால்
+
+00:43:18,000 --> 00:43:23,000
+integrated a sufficient number of times to convert it to an integral equation
+ஒரு ஒருங்கிணைந்த சமன்பாடு மாற்ற முறை போதுமான ஒருங்கிணைந்த
+
+00:43:23,000 --> 00:43:27,000
+we would then have this cascaded systems
+நாம் இந்த அமைப்புகள் தயார்படுத்தி வேண்டும்
+
+00:43:27,000 --> 00:43:32,000
+and again if we assume initial rest
+மீண்டும் நாம் ஆரம்ப ஓய்வு கொள்கிறோம் என்றால்
+
+00:43:32,000 --> 00:43:35,000
+so that these are both linear time-invariant systems
+இந்த இரு நேரியல் நேரம் மாற்றமில்லாத அமைப்புகள் இருக்கின்றன என்று
+
+00:43:35,000 --> 00:43:38,000
+we can interchange the order in which they are cascaded
+நாம் அவர்கள் தயார்படுத்தி எந்த வரிசையில் பரிமாற்றம் செய்ய முடியும்
+
+00:43:38,000 --> 00:43:42,000
+namely take the second system and
+அதாவது இரண்டாவது முறை எடுத்து
+
+00:43:42,000 --> 00:43:44,000
+move it
+அதை நகர்த்த
+
+00:43:44,000 --> 00:43:48,000
+to proceed the first system
+முதல் முறை தொடர
+
+00:43:48,000 --> 00:43:51,000
+and then we recognize is that the input to this change
+பின்னர் நாம் அங்கீகரிக்கிறோம் என்று இந்த மாற்றம் உள்ளீடு
+
+00:43:51,000 --> 00:43:56,000
+integrators and this change integrators is exactly the same
+ஒருங்கிணைப்பாளர்களை இந்த மாற்றம் ஒருங்கிணைப்பாளர்களை போலவே இருக்கிறது
+
+00:43:56,000 --> 00:43:59,000
+and so in fact we can collapse these together
+அதனால் உண்மையில் நாம் ஒன்றாக இந்த உடைந்து முடியும்
+
+00:43:59,000 --> 00:44:03,000
+using only one change integrators and the system
+ஒரே ஒரு மாற்றம் ஒருங்கிணைப்பாளர்களை மற்றும் கணினி பயன்படுத்தி
+
+00:44:03,000 --> 00:44:07,000
+there we're left with then is system
+அங்கு நாம் அமைப்பு கொண்டு விட்டு
+
+00:44:07,000 --> 00:44:10,000
+that looks as i've indicated here so we have
+நான் இங்கே சுட்டி போல என்று தெரிகிறது நாம்
+
+00:44:10,000 --> 00:44:14,000
+now just a single chain integrators
+இப்போது ஒரு ஒற்றை சங்கிலி ஒருங்கிணைப்பாளர்களை
+
+00:44:14,000 --> 00:44:18,000
+is that a the two sets in
+என்று ஒரு இரண்டு பெட்டிகள்
+
+00:44:18,000 --> 00:44:23,000
+so we've seen that the situation is very similar here as it was in the case the
+நாம் அது வழக்கில் இருந்தது சூழ்நிலை மிகவும் ஒத்த பார்த்த
+
+00:44:23,000 --> 00:44:24,000
+difference equation
+வேறுபாடு சமன்பாடு
+
+00:44:24,000 --> 00:44:28,000
+again why do we want to cut the number integrators in half
+நாம் ஏன் பாதியில் எண் ஒருங்கிணைப்பாளர்களை குறைக்க வேண்டும்
+
+00:44:28,000 --> 00:44:33,000
+well one reason is because integrators in effect represent hardware
+விளைவு ஒருங்கிணைப்பாளர்களை வன்பொருள் பிரதிநிதித்துவம் ஏனெனில் ஒரு காரணம்
+
+00:44:33,000 --> 00:44:37,000
+and if we use half as much if we have half as many integrators
+நாம் அரை பல ஒருங்கிணைப்பாளர்களை வேண்டும் என்றால் நாம் எவ்வளவு பாதி பயன்படுத்தினால்
+
+00:44:37,000 --> 00:44:41,000
+then using half as much hard
+பின்னர் எவ்வளவு கடினமாக அரை பயன்படுத்தி
+
+00:44:41,000 --> 00:44:45,000
+okay well let me just conclude by summarizing
+சரி, சரி, என்னை சுருக்குதல் முடிக்கிறேன்
+
+00:44:45,000 --> 00:44:49,000
+a number of points I indicated at the beginning
+நான் ஆரம்பத்தில் குறிப்பிட்டது புள்ளிகள் ஒரு எண்
+
+00:44:49,000 --> 00:44:53,000
+that linear constant coefficient differential equations a difference
+நேர்கோட்டு நிலையான குணகம் மாறுபட்ட ஒரு வேறுபாடு சமன்பாடுகள்
+
+00:44:53,000 --> 00:44:54,000
+equations
+சமன்பாடுகள்
+
+00:44:54,000 --> 00:44:58,000
+will play an important role as linear time-invariant systems
+நேரியல் நேரம் மாற்றமில்லாத அமைப்புகள் முக்கிய பங்கு வகிக்கும்
+
+00:44:58,000 --> 00:45:03,000
+throughout this coursing throughout the center lectures
+இந்த மையத்தில் விரிவுரைகள் முழுவதும் பந்தயம் முழுவதும்
+
+00:45:03,000 --> 00:45:06,000
+I also stress
+நான் மன அழுத்தம்
+
+00:45:06,000 --> 00:45:10,000
+the fact that differential or difference equations
+உண்மையில் அந்த வேறுபாடு அல்லது வேறுபாடு சமன்பாடுகள்
+
+00:45:10,000 --> 00:45:14,000
+by themselves are not a complete specification
+தங்களை முழு விவரக்குறிப்பு இல்லை
+
+00:45:14,000 --> 00:45:17,000
+the system because of the fact that we can and
+ஏனெனில் உண்மையில் முறை நாம் முடியும் என்று
+
+00:45:17,000 --> 00:45:22,000
+to any solution a homogeneous
+எந்த தீர்வு ஒரேவிதமான
+
+00:45:22,000 --> 00:45:25,000
+I do we specify the appropriate initial conditions
+நான் நாம் சரியான ஆரம்ப நிலையில் குறிப்பிட வேண்டாம்
+
+00:45:25,000 --> 00:45:30,000
+to ensure how do we specify the appropriate initial conditions to ensure
+எப்படி நாம் உறுதிப்படுத்த பொருத்தமான ஆரம்ப நிலையில் குறிப்பிட என்பதை உறுதி செய்ய
+
+00:45:30,000 --> 00:45:31,000
+that the system
+அந்த அமைப்பு
+
+00:45:31,000 --> 00:45:35,000
+is linear and time-invariant well
+நேரியல் நேரம் மற்றும் மாற்றமில்லாத நன்கு
+
+00:45:35,000 --> 00:45:40,000
+the auxiliary information namely the initial conditions
+துணை தகவல் அதாவது ஆரம்ப நிலையில்
+
+00:45:40,000 --> 00:45:43,000
+dissociated with the system
+அமைப்பு வைலட்
+
+00:45:43,000 --> 00:45:47,000
+be causal linear and time-invariant
+காரண நேர்கோட்டு மற்றும் நேர மாற்றம் இருக்கும்
+
+00:45:47,000 --> 00:45:50,000
+are the conditions of initial rest
+ஆரம்ப ஓய்வு நிலைமைகள் உள்ளன
+
+00:45:50,000 --> 00:45:53,000
+and in fact for most of the cores
+மற்றும் உண்மையில் கருக்கள் பெரும்பாலான
+
+00:45:53,000 --> 00:45:57,000
+what will be interested in systems that are in fact cause a linear and
+என்ன ஒரு நேர்கோட்டு ஏற்படுத்தும் உண்மையில் என்று அமைப்புகளில் ஆர்வம் மற்றும் இருக்கும்
+
+00:45:57,000 --> 00:45:58,000
+time-invariant
+நேர மாற்றம்
+
+00:45:58,000 --> 00:46:03,000
+and so we will in fact be assuming initial rest conditions
+எனவே நாம் உண்மையில் ஆரம்ப மற்ற நிலைமைகள் அனுமானித்து
+
+00:46:03,000 --> 00:46:06,000
+now
+இப்பொழுது
+
+00:46:06,000 --> 00:46:09,000
+as I also indicated their are
+நான் கூட தங்கள் குறிப்பிட்டது போல்
+
+00:46:09,000 --> 00:46:12,000
+a variety of efficient procedures for solving differential
+மாறுபட்ட தீர்க்கும் திறமையான நடைமுறைகளை பல்வேறு
+
+00:46:12,000 --> 00:46:16,000
+and difference equations that we haven't yet address and
+மற்றும் வேறுபாடு சமன்பாடுகள் நாம் இன்னும் உரையாற்ற மற்றும் இல்லை என்று
+
+00:46:16,000 --> 00:46:20,000
+beginning with the next set of lectures will be talking about
+விரிவுரைகள் அடுத்த தொகுப்பை தொடங்கி பற்றி பேசி இருக்க வேண்டும்
+
+00:46:20,000 --> 00:46:23,000
+for EA transform and much later in the course
+ஈ.ஏ. மாற்றும் மிக பின்னர் நிச்சயமாக உள்ள
+
+00:46:23,000 --> 00:46:27,000
+what's referred to as the apostrophe its form for continuous-time
+தொடர்ச்சியான நேரம் குறி அதன் வடிவம் என குறிப்பிடப்படுகிறது என்ன
+
+00:46:27,000 --> 00:46:31,000
+and sea transport for discrete-time and what we'll see
+மற்றும் தனி நேரம் மற்றும் நாம் பார்க்க வேண்டும் கடல் போக்குவரத்து
+
+00:46:31,000 --> 00:46:36,000
+is that with the Fourier transform in later with the apostasy transform
+என்று ஃபோரியர் வெளியேற்றப்பட்ட பின்னர் மாற்றும் கொண்டு
+
+00:46:36,000 --> 00:46:40,000
+will have a number love efficient and very useful ways
+பல திறமையான காதல் மற்றும் மிகவும் பயனுள்ள வழிகளில் வேண்டும்
+
+00:46:40,000 --> 00:46:44,000
+%uh generating the solution for
+% இம் தீர்வு உருவாக்கும்
+
+00:46:44,000 --> 00:46:48,000
+differential and difference equations this under the assumption that the
+அனுமானத்தின் கீழ் வேற்றுமை மற்றும் வேறுபாடு சமன்பாடுகள் இந்த
+
+00:46:48,000 --> 00:46:50,000
+system is causal
+கணினி காரண ஆகிறது
+
+00:46:50,000 --> 00:46:52,000
+when you're in time very
+நீங்கள் மிகவும் நேரம் இருக்கும் போது
+
+00:46:52,000 --> 00:46:57,000
+also will see in addition to the block diagram implementations
+மேலும் வரைபடத்தில் செயலாக்கங்கள் கூடுதலாக பார்க்கும்
+
+00:46:57,000 --> 00:47:00,000
+the systems that we talked about so far
+நாம் இதுவரை பற்றி பேசினார் அமைப்புகள்
+
+00:47:00,000 --> 00:47:04,000
+we'll see another a number of other useful
+நாம் மற்ற பயனுள்ள மற்றொரு பல பார்க்கிறேன்
+
+00:47:04,000 --> 00:47:09,000
+implementations that exploit a variety of properties associated with
+பண்புகள் பல்வேறு பயன்படுத்தி செயலாக்கங்கள் தொடர்புடைய
+
+00:47:09,000 --> 00:47:11,000
+Korean past thank you
+கொரிய கடந்த நன்றி
+

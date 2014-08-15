@@ -1,0 +1,545 @@
+000040~003450~the following content is provided under a Creative Commons license
+003490~003639~your support will help MIT OpenCourseWare continue to offer
+007129~003451~high-quality educational resources for free
+010580~003780~to make a donation or view additional materials from hundreds of them IT
+014360~000670~courses
+015030~003080~visit MIT OpenCourseWare at 0 CW
+018110~007000~that MIT that EDU ha the
+028980~002390~the
+031370~001730~the
+033100~006920~the in
+040020~007000~the new the last time
+056580~003000~we began a discussion feedback
+059580~003640~and I briefly introduce the number applications for example
+063220~004880~the user feedback in compensating for non-ideal elements in a system
+068100~003269~and also is another example
+071369~003521~the user feedback in stabilizing unstable systems
+074890~003759~in this final lecture what I'd like to do
+078649~004051~is focus in more detail on the user feedback
+082700~005669~to stabilize unstable systems and the specific context in which I'd like to do
+088369~000491~that
+088860~004200~is in the context love the inverted pendulum now
+093060~003210~i've referred to the inverted pendulum in several
+096270~004239~past lectures and basically as everyone realizes
+100509~004331~a pendulum is essentially a ride with the weight on the bottom
+104840~004510~and naturally an inverted pendulum is just that upside down
+109350~003769~and so it's essentially a ride that's top-heavy
+113119~003500~and the idea with the inverted pendulum
+116619~003030~is although by itself
+119649~003181~its unstable around a pivot point at the bottom
+122830~004700~the idea is to applying external input an acceleration
+127530~003850~essentially to keep it balanced and we've all
+131380~004140~probably done this type of thing at some point in our lives
+135520~003540~either childhood or not and so that's
+139060~003880~the system that I'd like to analyze and then
+142940~003840~illustrate in this lecture now the context
+146780~003640~in which will do that is not with my son's
+150420~003399~course but actually with an inverted pendulum
+153819~005401~which is mounted on a card and first I'd like to go through an analysis of it and
+159220~000480~then
+159700~004630~will actually see how the system works well basically then
+164330~003080~the system that we're talking about is
+167410~003400~going to be a system which is a movable card
+170810~003280~mountains on the card is
+174090~004330~a ride with the weight on the top and this then becomes the inverted pendulum
+178420~003860~and the cart has
+182280~003320~and external acceleration apply to it which
+185600~003410~is the input that we can apply to the system
+189010~005510~and then in general we can expect some disturbances and I'm gonna represent the
+194520~001050~disturbances
+195570~003780~interns love and angular acceleration
+199350~004020~which shows up around the wait at the top of the rock
+203370~003630~so if we look at the system then
+207000~004250~as I've kinda indicated it here basically we have
+211250~003200~two inputs we have
+214450~003190~an input which are the external disturbances
+217640~003400~which we can assume that we have no control over
+221040~003710~and then their is the acceleration
+224750~004160~thats applied to the cart: externally or in the case so
+228910~003770~balancing my son's course it's the movement my hand
+232680~003760~and then through the system dynamics
+236440~003280~that ends up influencing the
+239720~003820~angle of the ride and will think
+243540~003720~love the anchor the angle of the ride as
+247260~004010~the system output and basically the idea then
+251270~003980~is to try to keep that angle at zero
+255250~005039~by applying the appropriate acceleration now
+260289~003071~as i've mentioned several times previously if
+263360~003290~we know exactly what the system dynamics are
+266650~004780~and if we know exactly what the external disturbances are
+271430~003650~then theoretically we can choose an acceleration
+275080~003239~for the card which will exactly balance the system
+278319~005500~or balance the ride however says the system is inherently unstable
+283819~003791~any deviation from that model in particular any
+287610~004660~unanticipated external disturbances will excite the instability
+292270~003160~and what that means is that the rival for
+295430~003669~so the idea then is
+299099~003650~as we'll see to stabilize the system
+302749~003410~by placing feedback a rounded in particular
+306159~004880~by through measurement the output angle
+311039~003451~process through some appropriate feedback dynamics
+314490~003220~using Matt to control deceleration
+317710~003929~the cart and if we choose the feedback dynamics correctly
+321639~003011~then in fact we can end up with
+324650~005069~a stable system even though the open-loop system is unstable
+329719~006181~well as a first step let's analyze the system in its open loop form
+335900~004169~their particular let's analyze the system without feedback
+340069~003801~demonstrate dead indeed it is unstable and then
+343870~003769~see how we can stabilize using feedback
+347639~003120~so the system then is
+350759~003410~as we've indicated the variables involved
+354169~004520~are the measured angle which represents the output
+358689~005250~the acceleration angular acceleration due to external disturbances
+363939~003310~and then there is the applied external
+367249~004810~acceleration on the card so these represent the variables with
+372059~003461~lol representing the link to the rod and
+375520~003630~SFT I indicate here which we won't really be paying attention to
+379150~003079~as the position of the card
+382229~003770~and without going into the details
+385999~003280~specifically what we'll do is
+389279~003470~set up the equation to write the equation in terms of balancing the
+392749~001551~accelerations
+394300~003320~and if you go through that process then
+397620~003359~the basic equation that you end up with is
+400979~003761~the equation that I indicate here and
+404740~005919~this equation then tells us how the basic forces are accelerations a balance
+410659~003220~where this is the second derivative or
+413879~003760~the angle and then we have
+417639~003680~deceleration due to gravity reflected through
+421319~003630~the angular acceleration times sign
+424949~003590~love the angle the angular acceleration
+428539~003611~due to the external disturbances and finally
+432150~003909~the angular acceleration due to the motion the cart
+436059~004880~now this equation is written here is a nonlinear equation
+440939~003570~in the angle say to T and
+444509~003580~what we'd like to do is linearized equation
+448089~004190~and really arise the equation by making the assumption
+452279~003360~dead the angle is very small close to zero
+455639~003420~no other words what will assume is that we're able to keep
+459059~003850~the rod relatively vertical and our analysis
+462909~003870~because we're winning a rise in the equations will obviously depend on that
+466779~004431~so making the assumption that the angle is small
+471210~005060~we then assuming that the sign up the angle is approximately equal to the
+476270~001009~angle
+477279~003030~and the cosine the angle is
+480309~004681~approximately equal to 1 that will then linearized this equation
+484990~003319~and the resulting equation then
+488309~005030~in its linearis form is the one that I indicate here
+493339~004061~so we have an equation emotion which
+497400~004870~which linearis is the balances the accelerations
+502270~003519~and what we see on the right hand side of the equation
+505789~003321~is the combined inputs
+509110~004570~due to the angular acceleration of the ride and the acceleration of the card
+513680~003570~and on the left hand side of the equation we have
+517250~005149~the other forces due to the changing the angle
+522399~003871~so this is Dan the differential equations Associated
+526270~004640~with the open-loop system the basic dynamics at the system
+530910~004210~and if we apply the law applies transform to this equation
+535120~003640~and solve for the system function than
+538760~003680~the basic equation that were left with expresses
+542440~003440~the applause transformer the angle
+545880~004300~equal to the system function the open-loop system function
+550180~004560~times the applies transform all the combined in points
+554740~004810~and I remind you again that are sumptin is that this is an input that we have
+559550~004630~no control over this is the input that we can control
+564180~003800~and the two together of course form the combined input
+567980~004300~now we can of course saw for the poles and zeros there are
+572280~004490~no zeros and their two polls since this is the second order denominator
+576770~003020~and looking at the polls in the S plane
+579790~003470~then we see that we have a pair of polls one
+583260~003130~at minus the square root of G over L and one
+586390~003490~at plus the square root G over L
+589880~003550~and the important observation and is dead while
+593430~003860~this poll represents a stable poll
+597290~004110~the right half plane poll represents unstable pole
+601400~003500~and so this system in fact is
+604900~003230~unstable system it's unstable because
+608130~004270~what we have is a poll in the right half plane
+612400~003190~for the open-loop system
+615590~004930~now before we see how to stabilize the system what's in fact
+620520~003740~look at the mechanical setup
+624260~003200~which we I won't turn on for now
+627460~004890~and just see essentially what this instability means and
+632350~004330~what the physical or irritation at the equipment is
+636680~003280~so what we have which you just saw a caricature of
+639960~005330~in a few graph is an inverted pendulum
+645290~003930~this represents the pendulum and
+649220~003340~it's mounted with a pivot point at the bottom
+652560~004440~it's mounted on a cart and here we have the card
+657000~003870~and this is a pivot point
+660870~003920~and as you can see the cart can move back and forth
+664790~004280~on a track and the external acceleration
+669070~005060~which is applied to the card is applied through this cable
+674130~003040~and that cable is controlled
+677170~003200~by motor and we have the motor
+680370~004140~at this ended the track and so
+684510~005210~as the motor turns than the cart will move back and forth
+689720~003470~okay now since the system
+693190~003970~is not turned on and has no Feedback in fact
+697160~003890~the system as we just saw in the transparency is
+701050~003480~unstable system and what then is the ability means
+704530~003140~is that for example if I
+707670~003640~set the angle 20 and then let it go
+711310~003930~then as soon as there's a slight external disturbance
+715240~003870~it will start to fall now you can imagine
+719110~004300~that not only is the system unstable as it is
+723410~005000~but certainly can't accommodate changes in the system dynamics for example if we
+728410~000760~change
+729170~003600~let's say the way to the pendulum so we thought for example
+732770~004020~love changing the wait by let's say
+736790~003240~putting something like a glass with something in it on
+740030~004710~top and I think about trying to balance it by itself obviously
+744740~004240~thats part in fact I would say without turning this system on
+748980~003580~guaranteed to be impossible so
+752560~003850~the basic system as we just analyzed it is
+756410~004300~inherently an unstable system the instability reflecting the fact
+760710~005390~that the pendulum are following its own natural forces will tend to fall
+766100~003430~and now what we want to look at is how
+769530~003250~through the use the feedback weekend in fact
+772780~003030~stabilize the system
+775810~003710~so let's first
+779520~003020~once again look at the
+782540~003350~open-loop system and
+785890~004590~the open-loop system function that we saw was the system function
+790480~003470~of this form one over LS squared minus G
+793950~003130~and that represents the system function
+797080~005180~Associated with the two inputs one being the external disturbances
+802260~003040~the other being the externally applied acceleration
+805300~003060~and the system function here
+808360~003560~is the represents the system dynamics and
+811920~003740~the resulting output is the angle
+815660~003030~now the feedback to basic strategy
+818690~003380~behind the feedback is to in some way
+822070~004510~use the measured angle make a measurement of the angle
+826580~004540~and use that through appropriate feedback dynamics to stabilize the
+831120~001040~system
+832160~004280~and so with feedback applied around the system then
+836440~003610~their would be some measurement up the angle
+840050~003510~through so appropriately chosen feedback dynamics
+843560~003750~and that dan would determine 4s
+847310~003880~the applied external acceleration corresponding
+851190~004010~to what the motor does by pulling the cable back and forth
+855200~006060~and we would like to choose she evas so that the overall system is stable
+861260~003070~now as you recall from the lecture last time
+864330~003900~with the feedback around the system expressed here
+868230~003190~interns have negative feedback the
+871420~004050~overall transfer function then is the transfer function
+875470~003600~associated with the basic feedback loop where HFS
+879070~007000~is the open-loop system and GFS corresponds to the feedback dynamics
+886120~004570~now that's the basic strategy we haven't decided yet
+890690~004470~how to choose the feedback dynamics and that becomes the next step and we want
+895160~002200~to choose the dynamics in such a way
+897360~004460~that the system ends up being stabilized
+901820~003830~well I think the thing to do is just simply begin
+905650~003970~with what would seem to be the most obvious which is
+909620~003250~a simple measurement of the angle let's take
+912870~004010~the angular measurement feat that back
+916880~004020~let's say through a potentiometer and perhaps an amplifier so that there's
+920900~001050~some gain
+921950~004090~and see if we can stabilize the system simply through
+926040~003920~feedback which is proportional to a measurement of the angle
+929960~005880~what is typically referred to as per for proportional feedback
+935840~003210~well let's analyze the results
+939050~003190~doing that once again we have
+942240~003700~the basic feedback equation where
+945940~004130~the open-loop transfer function is what we had
+950070~004570~developed previously given by the second-order expression
+954640~003160~now using proportional feedback
+957800~003500~we shoes the acceleration
+961300~003550~a hefty to be directly proportional
+964850~003990~through a game constant or attenuation constant k1
+968840~003850~directly proportional to the measured angle theta ft
+972690~003460~and consequently the system function in the feedback
+976150~004250~path is just simply a gainer for attenuation k1
+980400~004840~so this then is the system function for the feedback
+985240~003480~well substituting this into the
+988720~003020~closed-loop expression
+991740~003230~then the overall expression for
+994970~003730~the apostrophe its form of the output angle
+998700~003120~is as i indicated here
+1001820~003120~namely that faded ass is
+1004940~003160~proportional through this system function
+1008100~003090~to the apostrophe its form love the
+1011190~003089~input X 50 and let me remind you that
+1014279~004451~X 50 the external disturbances now represent the only input
+1018730~004380~since the other input corresponding to the applied acceleration so the card
+1023110~003010~is now controlled only through the feedback
+1026120~003650~luv so we have this system function then
+1029770~003569~for the closed-loop system we recognize this once again
+1033339~003561~as a second-order system and
+1036900~003240~the polls both this second order system
+1040140~003539~are then given by plus and minus the square root
+1043679~003750~love G minus k1 divided by L
+1047429~003380~so k1 the feedback constant
+1050809~003521~clearly influences the position at the polls
+1054330~003440~and let's look in fact at where
+1057770~004639~the polls are in the S play
+1062409~003281~well first of all with
+1065690~003869~k1 equal to 0 which of course is no Feedback
+1069559~003781~and corresponds to the open-loop system we have the polls
+1073340~003090~where they were previously
+1076430~005550~and if we now choose k1 let's say less than zero
+1081980~003150~than what will happen as
+1085130~004080~k1 becomes more and more negative
+1089210~003490~so that this term is more and more positive is dead
+1092700~005190~the left here plane poll will move further into the left airplane
+1097890~004130~the right half plane poll will move further into the right half play
+1102020~005080~so clearly with K one negative
+1107100~004050~this poll which represents an instability because
+1111150~003390~even more unstable well
+1114540~005200~instead a K one negative let's try K one positive and see what happens
+1119740~004870~and with k1 positive
+1124610~003290~what happens in this case is dead
+1127900~003800~the left hip plane poll moves
+1131700~003750~closer to the origin the right half plane poll
+1135450~003800~was closer to the origin what one would hope is that
+1139250~004170~they both end up in the left airplane at some point but in fact they don't
+1143420~003860~what happens is that eventually they both reach the origin
+1147280~003650~split at that point and travel along
+1150930~004940~the jail make axis now this movement of the polls
+1155870~004550~as we very k1 either positive or negative
+1160420~003160~we all we see is that the open with the open-loop system
+1163580~003170~as we introduce feedback those basic polls
+1166750~003030~move in the ass plane either this way
+1169780~004680~as K one becomes more negative or for this particular case
+1174460~004510~K one is positive they move in together split move along the jail make axes
+1178970~005620~and that locus the polls in fact is referred to
+1184590~004820~if the back terminology as the root locus and as is discussed in
+1189410~003890~much more detail on the tax there are lots of ways
+1193300~004300~love determining the root locus for feedback systems
+1197600~003650~without explicitly solving for the roots for this
+1201250~003850~particular example in fact we can determine the root locus
+1205100~003530~the most straightforward way simply by song for the roots
+1208630~003179~I'll that the nominator the system
+1211809~003931~now notice that in this case these polls
+1215740~003030~with K one positive have moved together
+1218770~004110~they move along the jail make axes and
+1222880~004000~before they come together the system is clearly unstable
+1226880~003090~even when they come together and split
+1229970~003500~the system is marginally stable
+1233470~003190~because in fact the system with 10 docile E
+1236660~004399~and what that isolation means is that with the measurement of the angle
+1241059~004101~essentially if the polls are operating on the J Omega axes
+1245160~003070~what will happen is that
+1248230~003710~things will oscillate back and forth perhaps with
+1251940~003100~the cart moving back and forth trying to compensate
+1255040~003840~and the ride sorta moving in the opposite direction
+1258880~005390~in any case what's happened is with just proportional feedback
+1264270~005980~we apparently are unable to stabilize the system
+1270250~003580~well you could think that the reason perhaps is that we're not responding
+1273830~001530~fast enough for example
+1275360~003190~if the angle starts to change
+1278550~004520~perhaps in fact we should make the feedback proportional
+1283070~004200~to the rate of change Bengal rather than to the angle itself
+1287270~003050~and so we could examine the possibility using
+1290320~004380~what's referred to as thrifty back
+1294700~003590~and derivative feedback what we would do
+1298290~003870~is to shoes
+1302160~003750~for the feedback equation
+1305910~003480~or for the feedback system function
+1309390~003710~something reflecting a measurement love the derivative
+1313100~005400~the angle and so here again once again we have the open-loop
+1318500~003780~system function with the river to feedback will attempt
+1322280~003760~to or we will use this feedback
+1326040~004040~and acceleration which instead of being proportional to the angle as it was in
+1330080~001420~the previous case
+1331500~003280~and acceleration which is proportional to
+1334780~005670~the river the ankle and so the basic feedback dynamics or feedback system
+1340450~000940~function
+1341390~003470~is their GFS is equal to k to times s
+1344860~004420~the multiplication by ass reflecting the fact that in the time domain
+1349280~003890~its measuring the derivative the angle
+1353170~003330~The Associated system function is then
+1356500~005679~indicated here and if we saw again this second order equation
+1362179~003091~for its roots that tells us that
+1365270~003120~the location the polls are given
+1368390~003430~by this equation
+1371820~003290~and so now what we would want to look at is
+1375110~004140~how these polls mu as we very
+1379250~004050~the derivative the back constant k2
+1383300~005530~so let's look at the root locus for that case
+1388830~005210~and first once again
+1394040~003840~we have the basic open loopholes
+1397880~004350~and the open loopholes consists of a poll on the left half plane and a pole
+1402230~001370~in the right half plane
+1403600~004810~corresponding in this equation 2k to equal to 0
+1408410~004300~that is no feedback in the system
+1412710~004480~if k2 is negative then what you can see is that
+1417190~003170~this real part will become
+1420360~003569~more negative since K two squared here
+1423929~003750~this is still a positive quantity and in fact
+1427679~004261~then with k2 less than zero the root locus that we get
+1431940~003100~is indicated by this
+1435040~004220~now notice then that this right half plane poll
+1439260~003370~is becoming more unstable and
+1442630~003410~the left airplane poll likewise is becoming more unstable
+1446040~004830~and this point by the way corresponds to wear this poll ends up
+1450870~004809~or where the root locus ends up went 8-2 eventually becomes infinite
+1455679~004781~so clearly k to negative is not going to stabilize the system
+1460460~004260~let's try k2 positive
+1464720~003780~and the root locus dictated by this equation then
+1468500~003309~is what I indicate here
+1471809~004731~the left half plane poll moves further into left airplane that's good that's
+1476540~000540~getting
+1477080~003630~more stable the right half plain polo is moving
+1480710~003230~closer to the left airplane
+1483940~003950~but unfortunately never gets there and in fact
+1487890~004110~its when k2 eventually becomes infinite that this poll
+1492000~003410~just gets to the point where the system becomes
+1495410~003010~marginally stable so
+1498420~003460~what we found is dead with proportional feedback
+1501880~003830~we can stabilize the system with the Riveter feedback
+1505710~004230~we can stabilize the system by themselves
+1509940~004890~and a logical next choice is to see if we can stabilize the system
+1514830~004940~by both measuring the angle and at the same time
+1519770~004510~being careful to be responsive to how fast that angle is changing so that if
+1524280~001769~changing too fast
+1526049~005161~we can move the cart are here are or are hand under the inverted pendulum were
+1531210~001740~quickly
+1532950~003000~well now then what we want to examine
+1535950~004349~is the use love proportional plus the Riveter feedback
+1540299~003291~and in that case we
+1543590~003390~then have a
+1546980~003329~choice for the acceleration which
+1550309~003321~is proportional with one constant to the angle
+1553630~003520~and proportional with another constant to
+1557150~003050~the derivative up the angle and so
+1560200~003560~the basic system function then
+1563760~003049~with for for proportional plus the river to feedback
+1566809~005521~is a system function which is K one-plus K two times s
+1572330~004920~we then have an overall closed-loop system function
+1577250~004490~say to the vastus which is given by
+1581740~003030~this equation and
+1584770~003300~so the roots at this equation then
+1588070~004390~represent the polls love the closed-loop system
+1592460~003170~and those polls involved
+1595630~004520~to parameters they involve the primer k2
+1600150~003350~which is proportional to the derivative the angle
+1603500~003760~and the constant k1 which is proportional to the angle
+1607260~003280~and will
+1610540~004120~first have all examine this with just with
+1614660~004460~k to positive because well we can see is that as we very k1
+1619120~005559~k2 or negative that would more less immediately
+1624679~003321~put polls into the right half plane and the more
+1628000~003770~negative K two got the larger this term
+1631770~005220~is going to get so in fact is it will turn out we can stabilize the system
+1636990~003110~with provided that we to choose k2
+1640100~003060~to be greater than 0
+1643160~003560~all right now with k2 greater than 0
+1646720~003640~what happens in the
+1650360~003120~location at the polls is that
+1653480~003319~if k2 is greater than 0
+1656799~005071~every choose k1 greater than 0 I'm sorry choose k1 equal to 0
+1661870~003660~then in effect the influence of k2
+1665530~003060~is to shift the polls
+1668590~003360~of the open-loop system slightly and so
+1671950~003820~with k2 greater than 0
+1675770~004010~and k1 equal to 0 we have a set of polls
+1679780~004029~which are indicated here
+1683809~004490~and so this is just a shift slight shift to the left
+1688299~003010~depending on the values k2 shift to the left
+1691309~004571~the open loop holes now as we very k1
+1695880~003039~and in particular we're going to choose k1
+1698919~003991~greater than 0 what happens is that
+1702910~003980~the polls will begin to move together
+1706890~003220~as they did previously when we had
+1710110~003040~one we looked at the variation k1
+1713150~005029~the polls will move together reach a point where we have a second-order poll
+1718179~006091~and then those polls will split and move parallel to the Chi Omega axis so
+1724270~003020~with syndicated here is the root locus
+1727290~003930~and what this represents then
+1731220~003540~as long as we make a one large enough so that
+1734760~003320~this pole moves into the left airplane is
+1738080~003960~that represents now stable system
+1742040~003590~okay so what we've seen is that proportional feedback
+1745630~003720~by itself or derivative feedback by itself
+1749350~003850~won't stabilize the system whereas with the right choice
+1753200~004060~a feedback Constance proportional plus the rivet if the back well and we saw
+1757260~000560~that
+1757820~004270~basically by examining the root locus in the ass play
+1762090~003320~alright well let's actually watch the system
+1765410~003470~in action and I described it to you
+1768880~004870~previously basically an inverted pendulum on a card
+1773750~004790~and so I still have it off and of course we have the pendulum
+1778540~003090~and as i indicated its
+1781630~003710~pivoted at the base and the
+1785340~004160~angle is measured by a potentiometer
+1789500~003400~that we have attached to the pivot point and
+1792900~003760~the measurement of the angle is fed back
+1796660~003280~through this wire to motor day
+1799940~003060~we have at the other end of the table and
+1803000~004380~then that motor basically is used to provide the acceleration
+1807380~003270~to drive the cart okay well
+1810650~004110~let's turn it on and when we turn it on it'll take
+1814760~003120~just an instant to stabilize
+1817880~003110~and
+1820990~004550~fortunately we have the cast set right and there we have now
+1825540~003160~the stabilization up an unstable system
+1828700~004160~remember there with the feedback of the system is unstable because the pendulum
+1832860~001069~will fall
+1833929~003111~whereas now it's stabilized now also
+1837040~003509~as you can see not only have we
+1840549~004271~stabilized it but we're able to compensate for the feedback
+1844820~005099~to changes in the external disturbances for example by tapping it
+1849919~003671~because it the feedback and the measurement of the angle it will
+1853590~003190~more or less automatically stabilize
+1856780~005410~now in addition to being stable in the presence of external disturbances
+1862190~003520~it also remain stable in remains balanced
+1865710~003130~even if we were to change the system dynamics
+1868840~004230~and let me just illustrate that with
+1873070~003330~the class that we talked about before let's first
+1876400~004029~not be too bold and will take the liquid out of the class
+1880429~003130~and presumably if it can adjust
+1883559~004331~to changes in the system dynamics that if I put the glass on
+1887890~003340~in fact it will remain balanced and indeed it does
+1891230~003310~and let me point out by the way that I don't have to be very careful about
+1894540~001210~exactly where
+1895750~004059~I position the class and furthermore I can change the
+1899809~003341~overall system even further
+1903150~004080~by let's say for example pouring a liquid and
+1907230~003270~and now let me also comment that
+1910500~003350~change the physics of a little bit because the
+1913850~003300~the liquid can slash around a little bit it comes a little more complicated
+1917150~001399~system
+1918549~005081~but as you can see it still remains balance
+1923630~005140~now if we really don't want to be too conservative that all we can wonder
+1928770~000720~whether
+1929490~003540~with the feedback Constance we have we could
+1933030~003560~in fact balance the picture on the top and
+1936590~004410~well I guess we may as well give that a try
+1941000~003179~and so
+1944179~003870~now we're changing the mass at the top to the the pendulum
+1948049~003161~by a considerable amount
+1951210~003680~and again the system basically can respond to it
+1954890~003200~now this is a fairly complicated system
+1958090~006120~the liquid sloshing around we in fact as you can see have instability right now
+1964210~004860~although its control and that's because the physics at the dynamics is changed
+1969070~003880~and we can put a little bit more mass into the system
+1972950~007000~and maybe or maybe not that will cut down on the instability
+1982049~003401~okay well in fact what happened there is that we
+1985450~003400~increase the mass at the top the pendulum slightly
+1988850~003150~and that provided just enough damn thing to do
+1992000~004470~stabilize the system
+1996470~003010~okay well with
+1999480~003410~this lecture and this demonstration this
+2002890~004110~concludes this entire set of lectures it concludes especially if the pitcher
+2007000~001330~happens to fall
+2008330~003070~but seriously this concludes the
+2011400~004779~said lectures as we have put them together
+2016179~003231~and let me just comment that
+2019410~004930~as a professor of mine once said in which I've never forgotten
+2024340~004310~the purpose all over said have lectures or a course or for that matter anything
+2028650~001170~which is study
+2029820~003440~is not really to cover a subject
+2033260~004070~but to uncover the subject and I hope dead
+2037330~003390~at least in to some degree
+2040720~004520~we were able to uncovered the topic of signals and systems through the series
+2045240~002010~of lectures
+2047250~003429~there are a lot of topics that we
+2050679~003331~got only a very brief glimpse into
+2054010~003159~and I hope that at least four we've been able to do
+2057169~003230~is get you interested nothin I'm so that
+2060399~003571~you pursue some of these on your own and
+2063970~005230~so I'd like to conclude by thanks to you both for your patience and your interest
+2069200~003339~and I hope that you have enough interest to
+2072539~002201~pursue some these topics for them thank you

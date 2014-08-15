@@ -1,0 +1,776 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+以下内容是根据Creative Commons授权提供
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+您的支持将有助于麻省理工学院开放式课程继续报价
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+免费优质教育资源
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+进行捐赠或查看附加材料由数百人资讯
+
+00:00:14,000 --> 00:00:15,000
+courses
+课程
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+参观麻省理工学院开放式课程在0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU ha
+麻省理工学院的EDU公顷
+
+00:00:35,000 --> 00:00:38,000
+in
+
+
+00:00:38,000 --> 00:00:40,000
+in
+
+
+00:00:40,000 --> 00:00:44,000
+the norm
+规范
+
+00:00:44,000 --> 00:00:51,000
+are
+有
+
+00:00:51,000 --> 00:00:58,000
+the
+该
+
+00:01:00,000 --> 00:01:03,000
+in the last lecture we discussed sinusoidal
+在上一讲中我们讨论了正弦
+
+00:01:03,000 --> 00:01:06,000
+and real in complex exponential signals both
+而真正的复指数信号既
+
+00:01:06,000 --> 00:01:12,000
+for continuous-time and discrete-time no signals will form very
+对于连续时间和离散时间没有信号会形成很
+
+00:01:12,000 --> 00:01:15,000
+important building blocks when we
+重要的组成部分，当我们
+
+00:01:15,000 --> 00:01:20,000
+return to the discussion love Fourier analysis and later lectured
+返回讨论爱的傅里叶分析和演讲后
+
+00:01:20,000 --> 00:01:24,000
+in today's lecture I'd like to introduce
+在今天的演讲中，我想介绍
+
+00:01:24,000 --> 00:01:27,000
+some additional basic signals specifically
+一些额外的基本信号明确
+
+00:01:27,000 --> 00:01:32,000
+the unit step and unit impulse signal let's begin
+单位阶跃和单位冲激信号让我们开始吧
+
+00:01:32,000 --> 00:01:36,000
+with discrete-time and the discrete-time units that
+用离散时间和离散时间单位
+
+00:01:36,000 --> 00:01:40,000
+in unit in polls the discrete-time unit step
+在单位调查的离散时间单位阶跃
+
+00:01:40,000 --> 00:01:45,000
+is a sequence is a indicated here specifically
+是一个序列是在这里明确表示，
+
+00:01:45,000 --> 00:01:49,000
+a sequence which is zero for
+一个序列，它是用于零
+
+00:01:49,000 --> 00:01:53,000
+negative values if its argument and equal to 1
+负的值，如果它的参数，并等于1
+
+00:01:53,000 --> 00:01:57,000
+for positive values up its argument and
+对于正值了它的参数和
+
+00:01:57,000 --> 00:02:00,000
+so mathematically
+所以数学
+
+00:02:00,000 --> 00:02:04,000
+the unit step sequence is one
+单位阶跃序列是
+
+00:02:04,000 --> 00:02:09,000
+for in greater than or equal to 0 and 0
+在大于或等于0且0
+
+00:02:09,000 --> 00:02:15,000
+for and less than zero the unit impulse sequence
+对于小于零的单位脉冲序列
+
+00:02:15,000 --> 00:02:19,000
+likewise is defined in a straightforward way
+同样是在一个简单的方法定义
+
+00:02:19,000 --> 00:02:22,000
+the union Paul sequence is a sequence which
+工会保罗序列是序列
+
+00:02:22,000 --> 00:02:27,000
+is 0 for all values if its argument
+是0对于所有的值，如果它的参数
+
+00:02:27,000 --> 00:02:31,000
+except for an equal 0 so
+除了平等0，这样
+
+00:02:31,000 --> 00:02:36,000
+the unit step in unit impulse sequence are defined in a straightforward way
+在单位脉冲序列的单位阶跃以简单的方式定义
+
+00:02:36,000 --> 00:02:41,000
+mathematically and in fact in they are also related
+在数学上和实际上在它们也是相关
+
+00:02:41,000 --> 00:02:44,000
+to each other in a straightforward way mathematically
+彼此以直接的方式在数学上
+
+00:02:44,000 --> 00:02:47,000
+specifically the unit in paul's
+特别是该单位在保罗的
+
+00:02:47,000 --> 00:02:50,000
+can be related to the unit step
+可以与该单元的步骤
+
+00:02:50,000 --> 00:02:54,000
+through the relationship that i've indicated here
+通过我在这里所表示的关系
+
+00:02:54,000 --> 00:02:57,000
+Beltre van the unit impulse
+Beltre面包车的单位脉冲
+
+00:02:57,000 --> 00:03:02,000
+equal to units that minus the unit stepped away
+等于单位减去单元走开
+
+00:03:02,000 --> 00:03:05,000
+so mathematically the relationship
+所以数学的关系
+
+00:03:05,000 --> 00:03:09,000
+is what is referred to as a first
+是什么被称为第一
+
+00:03:09,000 --> 00:03:14,000
+difference
+差异
+
+00:03:14,000 --> 00:03:17,000
+and to see the validity love this expression
+并查看有效期爱这个表达式
+
+00:03:17,000 --> 00:03:21,000
+we can simply looking at the unit step
+我们可以简单地着眼于单位阶跃
+
+00:03:21,000 --> 00:03:24,000
+and it's the late version so
+并且它的后期版本，以便
+
+00:03:24,000 --> 00:03:28,000
+here we show the unit step you then
+在这里我们将展示单位阶跃你再
+
+00:03:28,000 --> 00:03:32,000
+here we show the unit step delayed
+在这里，我们展示单元延迟步
+
+00:03:32,000 --> 00:03:37,000
+by one so it 0 for and less than or equal to 0
+由1因此它为0，且小于或等于0的
+
+00:03:37,000 --> 00:03:41,000
+and clearly if we subtract that the late step
+并明确，如果我们减去了晚一步
+
+00:03:41,000 --> 00:03:47,000
+from the original unit step everything subtract out except at
+从原来的单位阶跃一切都减去了，除了在
+
+00:03:47,000 --> 00:03:51,000
+an equal 0 which at which point the difference is equal to 1
+一个等于0的差值等于1在该点
+
+00:03:51,000 --> 00:03:55,000
+and so the difference between you have an
+所以你们之间的差异有
+
+00:03:55,000 --> 00:03:59,000
+and you then -1 is simply the unit
+然后您-1简直就是单元
+
+00:03:59,000 --> 00:04:04,000
+impulse sometimes incidently also referred to as the unit sample
+冲动有时顺便说一句也被称为单位样本
+
+00:04:04,000 --> 00:04:07,000
+now
+现在
+
+00:04:07,000 --> 00:04:10,000
+in a similar way we can
+以类似的方式，我们可以
+
+00:04:10,000 --> 00:04:14,000
+express the unit step in terms of the unit impulse and there are several ways
+表示在单位脉冲条件的单位工序和有几种方法
+
+00:04:14,000 --> 00:04:15,000
+of doing this
+这样做的
+
+00:04:15,000 --> 00:04:21,000
+one-way is through a relationship referred to as a running start
+单的方法是通过称为运行开始的关系
+
+00:04:21,000 --> 00:04:24,000
+what I mean by that is
+我的意思是
+
+00:04:24,000 --> 00:04:29,000
+the following expression: if we
+下面的表达式：如果我们
+
+00:04:29,000 --> 00:04:32,000
+think love morning
+觉得爱情上午
+
+00:04:32,000 --> 00:04:36,000
+some from minus infinity
+一些从负无穷
+
+00:04:36,000 --> 00:04:39,000
+up to some bad UN
+截至一些不好的联合国
+
+00:04:39,000 --> 00:04:42,000
+all a unit in paul's
+在保罗的所有单位
+
+00:04:42,000 --> 00:04:46,000
+our unit sample then this running some
+我们单位的样品那么这部分运行
+
+00:04:46,000 --> 00:04:49,000
+in fact is equal to the unit step
+实际上等于单位阶跃
+
+00:04:49,000 --> 00:04:52,000
+and we can see that in a
+我们可以看到，在一
+
+00:04:52,000 --> 00:04:56,000
+fairly straightforward way by simply observing
+通过简单的观察相当简单的方式
+
+00:04:56,000 --> 00:05:02,000
+dead in this expression when and is less than 0
+死在这个表达式中，当和小于0
+
+00:05:02,000 --> 00:05:05,000
+is nothing accumulated in the some
+什么是积累了一些
+
+00:05:05,000 --> 00:05:09,000
+and we can see that graphically as they've shown here
+而且我们可以看到，图形，因为他们已经在这里显示
+
+00:05:09,000 --> 00:05:13,000
+so for and less than zero we accumulate no turns into some
+所以对于小于零，我们积累没有轮流到一些
+
+00:05:13,000 --> 00:05:16,000
+whereas for an greater than
+而对于一个大于
+
+00:05:16,000 --> 00:05:21,000
+0 we cumulate one non-zero value in the some
+0我们在一些累积一个非零值
+
+00:05:21,000 --> 00:05:25,000
+namely the value of the unit sample at an equal 0
+单位样本，即在同等值0
+
+00:05:25,000 --> 00:05:28,000
+so we have then
+所以我们有那么
+
+00:05:28,000 --> 00:05:33,000
+one expression for the relationship between the unit step in the unit sample
+一个表达式为单位样品中的单位阶跃之间的关系
+
+00:05:33,000 --> 00:05:38,000
+we can also develop another relationship
+我们还可以发展其他关系
+
+00:05:38,000 --> 00:05:41,000
+by observing
+通过观察
+
+00:05:41,000 --> 00:05:45,000
+in essence there if we look at the unit step sequence
+在本质上有，如果我们看一下单位阶跃序列
+
+00:05:45,000 --> 00:05:49,000
+as I've returned to hear weekend
+因为我已经回到了周末听
+
+00:05:49,000 --> 00:05:52,000
+in effect think the unit step sequence
+实际上认为单位阶跃序列
+
+00:05:52,000 --> 00:05:56,000
+as a six-session love unit
+作为一个六节爱情单元
+
+00:05:56,000 --> 00:06:01,000
+impulses one following another so
+下面再这么冲动1
+
+00:06:01,000 --> 00:06:06,000
+if we consider
+如果我们考虑
+
+00:06:06,000 --> 00:06:11,000
+forming Assam
+形成阿萨姆
+
+00:06:11,000 --> 00:06:16,000
+all the lady impulses as i indicate mathematically here
+所有女士冲动，因为我表明这里的数学
+
+00:06:16,000 --> 00:06:19,000
+and as i indicate graphically down below
+和我表示图形楼下
+
+00:06:19,000 --> 00:06:23,000
+we have an impulse here at an equal 0
+我们有一种冲动在这里平等0
+
+00:06:23,000 --> 00:06:26,000
+and an impulse here and any calls one
+这里的冲动和任何调用之一
+
+00:06:26,000 --> 00:06:29,000
+and impose here at any cost to et cetera
+并处在这里不惜任何代价等等
+
+00:06:29,000 --> 00:06:33,000
+and when we continue to add these up
+而当我们将继续增加这些了
+
+00:06:33,000 --> 00:06:36,000
+then what they add up to is the
+然后他们加起来是什么
+
+00:06:36,000 --> 00:06:41,000
+unit step sequence and so mathematically then
+单位阶跃序列，所以当时的数学
+
+00:06:41,000 --> 00:06:45,000
+that would correspond to and im polls that an equal 0
+将对应于和IM民调是平等0
+
+00:06:45,000 --> 00:06:49,000
+plus an impulse to 10 equals 1 was an impulse
+再加上一个冲动10等于1是一种冲动
+
+00:06:49,000 --> 00:06:54,000
+at any calls to et cetera now in this
+在这等等任何电话现在
+
+00:06:54,000 --> 00:06:57,000
+in continuous-time we have a very
+在连续时间我们有一个非常
+
+00:06:57,000 --> 00:07:00,000
+more or less similar situation we
+或多或少类似的情况，我们
+
+00:07:00,000 --> 00:07:03,000
+will find it equally useful to talk about a
+会发现它同样有用谈
+
+00:07:03,000 --> 00:07:07,000
+unit step continuous-time signal and
+单位阶跃连续时间信号和
+
+00:07:07,000 --> 00:07:11,000
+the unit impulse continues time signal let's begin
+的单位脉冲持续时间的信号，让我们开始
+
+00:07:11,000 --> 00:07:17,000
+with the continuous-time unit step be
+与连续时间单位阶跃是
+
+00:07:17,000 --> 00:07:21,000
+continuous-time unit step function is graphically
+连续时间单位阶跃函数是图形
+
+00:07:21,000 --> 00:07:26,000
+indicated as I've shown here it's a time function
+表示为我在这里表明，它是一个时间函数
+
+00:07:26,000 --> 00:07:30,000
+which is 0 party less than zero
+这是0一方小于零
+
+00:07:30,000 --> 00:07:34,000
+and it's one for T greater than 0
+并且它是一个对于T大于0
+
+00:07:34,000 --> 00:07:37,000
+and so mathematically what it corresponds to
+所以数学上它对应于
+
+00:07:37,000 --> 00:07:41,000
+is you if he defined as
+是你，如果他定义为
+
+00:07:41,000 --> 00:07:44,000
+a time function which is zero for T less than zero
+一个时间函数，它是对于T小于零零
+
+00:07:44,000 --> 00:07:48,000
+one pretty greater than 0
+比0一个漂亮的更大
+
+00:07:48,000 --> 00:07:51,000
+now an obvious question is what happens
+现在一个明显的问题是什么情况
+
+00:07:51,000 --> 00:07:57,000
+at Evil zero and the difficulty here which is not a difficulty that arises in
+在恶零和这里的困难是不是一个困难是产生于
+
+00:07:57,000 --> 00:07:58,000
+the discrete-time
+离散时间
+
+00:07:58,000 --> 00:08:01,000
+case is that act equal 0
+情况是行为等于0
+
+00:08:01,000 --> 00:08:04,000
+the unit step function is in fact discontinuous
+单位阶跃函数实际上是不连续的
+
+00:08:04,000 --> 00:08:08,000
+which generates a variety mathematical problems
+它产生了各种数学问题
+
+00:08:08,000 --> 00:08:11,000
+and one can define the units that
+和一个可以定义单位
+
+00:08:11,000 --> 00:08:15,000
+at equal zero in a variety ways
+在以各种方式等于零
+
+00:08:15,000 --> 00:08:19,000
+but the essential point is that the unit step function
+但重要的一点是单位阶跃函数
+
+00:08:19,000 --> 00:08:22,000
+is discontinuous so in effect
+是不连续的，以便有效
+
+00:08:22,000 --> 00:08:26,000
+what we need to do is think if the unit step function
+我们需要做的是想，如果单位阶跃函数
+
+00:08:26,000 --> 00:08:29,000
+as the limit all a continuous function
+为限制所有的连续函数
+
+00:08:29,000 --> 00:08:34,000
+and so we can define a function which I specify here
+所以我们可以定义我在这里指定的函数
+
+00:08:34,000 --> 00:08:38,000
+as use a delta see
+作为使用增量看
+
+00:08:38,000 --> 00:08:42,000
+and used to build the T is a time function
+并用于构建T是时间的函数
+
+00:08:42,000 --> 00:08:45,000
+which is 0:40 less than zero
+这是0时40分小于零
+
+00:08:45,000 --> 00:08:49,000
+linearly increases to time Delta
+线性增加的时间达
+
+00:08:49,000 --> 00:08:53,000
+which would correspond to this breakpoint and then
+这将符合这个断点，然后
+
+00:08:53,000 --> 00:08:56,000
+one following that and so
+1以下的等
+
+00:08:56,000 --> 00:09:00,000
+we can think then love the discontinuous units step
+我们可以想到那么爱不连续单元的步骤
+
+00:09:00,000 --> 00:09:04,000
+as the limiting form use a delta at:
+作为极限形式使用增量在：
+
+00:09:04,000 --> 00:09:08,000
+as Delta goes to zero
+作为三角洲趋于零
+
+00:09:08,000 --> 00:09:11,000
+now we also wanted to find a
+现在我们也想找个
+
+00:09:11,000 --> 00:09:16,000
+unit impulse function and it had a fairly straightforward definition
+单位冲激函数，它有一个相当简单的定义
+
+00:09:16,000 --> 00:09:20,000
+in discrete-time in continuous time things get
+在离散时间的连续时间得到的东西
+
+00:09:20,000 --> 00:09:24,000
+slightly more difficult and to motivate the definition
+稍微困难和激励的定义
+
+00:09:24,000 --> 00:09:28,000
+let me return to the discrete-time definition
+让我回到了离散时间的定义
+
+00:09:28,000 --> 00:09:32,000
+all or the rather the discrete-time relationship between
+所有或之间的，而离散时间关系
+
+00:09:32,000 --> 00:09:37,000
+the unit step and the unit impulse function
+该单位工序和单位脉冲函数
+
+00:09:37,000 --> 00:09:40,000
+in discrete-time we saw
+在离散时间，我们看到
+
+00:09:40,000 --> 00:09:43,000
+dead the unit impulse function
+死者的单位冲激函数
+
+00:09:43,000 --> 00:09:47,000
+is the first difference all
+是第一个区别所有
+
+00:09:47,000 --> 00:09:50,000
+the unit step function
+单位阶跃函数
+
+00:09:50,000 --> 00:09:54,000
+well similarly in continuous-time
+以及类似地在连续时间
+
+00:09:54,000 --> 00:09:58,000
+we can talk about and impulse function
+我们可以谈论和冲激函数
+
+00:09:58,000 --> 00:10:01,000
+which is the first derivative love
+这是第一个衍生物的爱
+
+00:10:01,000 --> 00:10:05,000
+a unit step function
+一个单位阶跃函数
+
+00:10:05,000 --> 00:10:08,000
+so the unit impulse as we wanted to find it
+所以，我们希望能找到它的单位脉冲
+
+00:10:08,000 --> 00:10:11,000
+is the derivative of the units that
+是单位的衍生物
+
+00:10:11,000 --> 00:10:15,000
+course we just finished discussing the fact that
+当然，我们刚刚完成讨论的事实，
+
+00:10:15,000 --> 00:10:21,000
+the unit step function is in fact discontinuous it equals 0
+单位阶跃函数实际上是不连续的它等于0
+
+00:10:21,000 --> 00:10:25,000
+but we can't think love its derivative as related
+但我们不能认为爱其作为相关衍生工具
+
+00:10:25,000 --> 00:10:29,000
+to this approximation to the units there
+这个近似的单位有
+
+00:10:29,000 --> 00:10:33,000
+and specifically we will think love
+具体我们会觉得爱情
+
+00:10:33,000 --> 00:10:36,000
+the continuous-time in polls as
+连续时间在投票调查中作为
+
+00:10:36,000 --> 00:10:40,000
+the derivative %uh use a belt 50
+衍生％呃用皮带50
+
+00:10:40,000 --> 00:10:43,000
+as Delta goes to zero so
+作为三角洲趋于零，以便
+
+00:10:43,000 --> 00:10:47,000
+to define the unit in polls we think I've the derivative
+在民调中定义的单位，我们认为我已经衍生
+
+00:10:47,000 --> 00:10:50,000
+love this approximation to the unit step
+喜欢这个近似的单位阶跃
+
+00:10:50,000 --> 00:10:55,000
+and then observe what happens as Delta goes to zero
+然后观察会发生什么作为三角洲趋于零
+
+00:10:55,000 --> 00:10:59,000
+we have then the definition love
+我们有那么爱的定义
+
+00:10:59,000 --> 00:11:04,000
+the unit impulse function
+单位冲激函数
+
+00:11:04,000 --> 00:11:07,000
+more or less formally to find as
+或多或少正式地找到，因为
+
+00:11:07,000 --> 00:11:11,000
+the first derivative of the units step
+单位步骤的一阶导
+
+00:11:11,000 --> 00:11:15,000
+or thought I love as the limiting form
+或以为我爱的极限形式
+
+00:11:15,000 --> 00:11:19,000
+love the derivative love
+爱衍生的爱
+
+00:11:19,000 --> 00:11:22,000
+the approximation to the unit step
+近似​​的单位阶跃
+
+00:11:22,000 --> 00:11:26,000
+in the limit as Delta the
+在限额三角洲
+
+00:11:26,000 --> 00:11:32,000
+the duration love the discontinuity goes to zero
+期限爱的不连续性变为零
+
+00:11:32,000 --> 00:11:36,000
+well let's look at that if we
+也让我们来看看，如果我们
+
+00:11:36,000 --> 00:11:39,000
+think about the derivative love
+想想衍生的爱
+
+00:11:39,000 --> 00:11:46,000
+used to build the T the derivative of course is 0 for T less than zero
+用于构建T课程的导数是0对于T小于零
+
+00:11:46,000 --> 00:11:50,000
+its equal to a constant during this linear slow
+其等于一个常数这个线性期间缓慢
+
+00:11:50,000 --> 00:11:55,000
+and then it 0 pretty greater than Delta so
+然后0比三角洲相当大，从而
+
+00:11:55,000 --> 00:12:00,000
+the derivative abusive Delta 50 will then
+衍生辱骂三角洲50然后将
+
+00:12:00,000 --> 00:12:04,000
+be as i've indicated here and
+是因为我已经在这里表示和
+
+00:12:04,000 --> 00:12:08,000
+is simply a rectangle with a height
+简直是一个高度的矩形
+
+00:12:08,000 --> 00:12:15,000
+which is one over Delta and with which is equal to Delta and observed that no
+这是一个比三角洲和与它等于增量，并观察到不
+
+00:12:15,000 --> 00:12:17,000
+matter what the value of Delta is
+不管什么三角洲的值是
+
+00:12:17,000 --> 00:12:20,000
+the area is always equal to 1
+的面积总是等于1
+
+00:12:20,000 --> 00:12:25,000
+now as we let Delta go to zero
+现在我们就让三角洲变为零
+
+00:12:25,000 --> 00:12:29,000
+what happens is that the width of the rectangle get smaller
+什么情况是，该矩形的宽度变小
+
+00:12:29,000 --> 00:12:33,000
+the height of the rectangle gets bigger the area still remains one
+矩形的高度变大的区域仍剩一个
+
+00:12:33,000 --> 00:12:37,000
+as Delta goes to zero of course the with goes to zero
+作为三角洲云当然为零与趋于零
+
+00:12:37,000 --> 00:12:40,000
+and the height goes to infinity
+和高度趋于无穷
+
+00:12:40,000 --> 00:12:44,000
+and graphically we choose to depict that
+并以图形方式我们选择描绘了
+
+00:12:44,000 --> 00:12:48,000
+as an arrow where
+作为一个箭头的地方
+
+00:12:48,000 --> 00:12:52,000
+the arrow indicates the fact dead we have
+箭头指示的事实，死者身上有
+
+00:12:52,000 --> 00:12:55,000
+and im polls occurring at equal 0 and
+和IM民调发生在等于0和
+

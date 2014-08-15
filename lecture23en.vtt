@@ -1,0 +1,2295 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU home in
+
+00:00:28,000 --> 00:00:33,000
+in
+
+00:00:33,000 --> 00:00:40,000
+the in
+
+00:00:40,000 --> 00:00:47,000
+the new the
+
+00:00:52,000 --> 00:00:58,000
+last time we began the discussion
+
+00:00:58,000 --> 00:01:01,000
+love z transform and
+
+00:01:01,000 --> 00:01:04,000
+as with the La Paz transforming continuous time we developed it
+
+00:01:04,000 --> 00:01:09,000
+as a generalization of the Fourier transform the
+
+00:01:09,000 --> 00:01:12,000
+expression that we got to dizzy transform is
+
+00:01:12,000 --> 00:01:16,000
+the some that I indicate here and
+
+00:01:16,000 --> 00:01:20,000
+we also briefly talked about and in Bercy transform
+
+00:01:20,000 --> 00:01:24,000
+integral and some other informal methods
+
+00:01:24,000 --> 00:01:28,000
+love computing the inverse eat transform but
+
+00:01:28,000 --> 00:01:33,000
+we focused in particular on the relationship between busy transform
+
+00:01:33,000 --> 00:01:36,000
+and the Fourier transform pointing out
+
+00:01:36,000 --> 00:01:39,000
+first the ball dead busy transform
+
+00:01:39,000 --> 00:01:43,000
+when we choose the magnitude is the
+
+00:01:43,000 --> 00:01:46,000
+equal to 1 so the magnitude is the the for
+
+00:01:46,000 --> 00:01:50,000
+you to the jail maker just simply reduces
+
+00:01:50,000 --> 00:01:53,000
+to the 4e a transformer the sequence
+
+00:01:53,000 --> 00:01:57,000
+then in addition we
+
+00:01:57,000 --> 00:02:01,000
+explored busy transform foresee more general complex number
+
+00:02:01,000 --> 00:02:05,000
+and in a discrete-time z transform case
+
+00:02:05,000 --> 00:02:08,000
+we expressed that complex number in polar form
+
+00:02:08,000 --> 00:02:12,000
+as our you DJ Omega and
+
+00:02:12,000 --> 00:02:16,000
+recognized dead busy transform expression
+
+00:02:16,000 --> 00:02:21,000
+in fact corresponds to the four EA transform
+
+00:02:21,000 --> 00:02:25,000
+love the sequence exponentially weighted and
+
+00:02:25,000 --> 00:02:29,000
+because I love the exponential weighting the
+
+00:02:29,000 --> 00:02:32,000
+see transform converges for some
+
+00:02:32,000 --> 00:02:36,000
+values of our corresponding to some exponential weighting
+
+00:02:36,000 --> 00:02:39,000
+and perhaps not for others and that
+
+00:02:39,000 --> 00:02:43,000
+led to a notion which corresponded to
+
+00:02:43,000 --> 00:02:48,000
+the regional convergence associated with dizzy transform
+
+00:02:48,000 --> 00:02:52,000
+and we talked some about properties in the region of convergence
+
+00:02:52,000 --> 00:02:56,000
+particularly in relation to the poll 0
+
+00:02:56,000 --> 00:03:00,000
+banner now the sea transform has
+
+00:03:00,000 --> 00:03:05,000
+a number all important and useful properties just as the apostrophe s form
+
+00:03:05,000 --> 00:03:05,000
+does
+
+00:03:05,000 --> 00:03:10,000
+and as one part of this lecture what will want to do in fact
+
+00:03:10,000 --> 00:03:15,000
+is exploit some of these properties in the context of systems described by with
+
+00:03:15,000 --> 00:03:18,000
+your constant coefficient difference equations
+
+00:03:18,000 --> 00:03:21,000
+the spur ticular properties said
+
+00:03:21,000 --> 00:03:26,000
+play an important role in that context so the properties that I indicate year
+
+00:03:26,000 --> 00:03:30,000
+and in particular their is as
+
+00:03:30,000 --> 00:03:34,000
+with continuous time a linearity property that tells us
+
+00:03:34,000 --> 00:03:38,000
+dead the busy transform a linear combination of sequences
+
+00:03:38,000 --> 00:03:43,000
+in fact is the same linear combination of busy transforms
+
+00:03:43,000 --> 00:03:46,000
+a shifting property that
+
+00:03:46,000 --> 00:03:49,000
+indicates dead dizzy transform
+
+00:03:49,000 --> 00:03:53,000
+Aug exit then shifted is busy transform
+
+00:03:53,000 --> 00:03:58,000
+all exit then multiplied by a factor Z the -10 0
+
+00:03:58,000 --> 00:04:02,000
+and then the convolution property
+
+00:04:02,000 --> 00:04:05,000
+for which the z transform
+
+00:04:05,000 --> 00:04:08,000
+all a convolution sequences is
+
+00:04:08,000 --> 00:04:12,000
+the product all the associated see transforms
+
+00:04:12,000 --> 00:04:16,000
+and with all of these properties
+
+00:04:16,000 --> 00:04:20,000
+of course there is again the issue love what the Associated region of
+
+00:04:20,000 --> 00:04:21,000
+convergence is
+
+00:04:21,000 --> 00:04:25,000
+in comparison with the regional convergence the original sequences
+
+00:04:25,000 --> 00:04:28,000
+and that is an issue this address
+
+00:04:28,000 --> 00:04:31,000
+somewhat more in the text and let's not going to adhere
+
+00:04:31,000 --> 00:04:35,000
+with the
+
+00:04:35,000 --> 00:04:38,000
+convolution property the
+
+00:04:38,000 --> 00:04:42,000
+convolution property as in continuous-time
+
+00:04:42,000 --> 00:04:45,000
+course provides a mechanism for dealing
+
+00:04:45,000 --> 00:04:49,000
+with linear time-invariant systems in particular
+
+00:04:49,000 --> 00:04:53,000
+in the time domain a linear time-invariant system
+
+00:04:53,000 --> 00:04:56,000
+is described through convolution namely
+
+00:04:56,000 --> 00:05:00,000
+the output is the convolution love the input
+
+00:05:00,000 --> 00:05:04,000
+and the impulse response because of the
+
+00:05:04,000 --> 00:05:08,000
+convolution property associated with busy transform
+
+00:05:08,000 --> 00:05:13,000
+z transform up the output is busy transformer the input
+
+00:05:13,000 --> 00:05:17,000
+times the sea transform up the impulse response
+
+00:05:17,000 --> 00:05:20,000
+and again very much the same as
+
+00:05:20,000 --> 00:05:24,000
+what we had in continuous-time and also what we had
+
+00:05:24,000 --> 00:05:29,000
+in the context that the discussion with the Fourier transform
+
+00:05:29,000 --> 00:05:35,000
+in fact because if the relationship between busy transform the 48 transform
+
+00:05:35,000 --> 00:05:39,000
+busy transform all the impulse response
+
+00:05:39,000 --> 00:05:44,000
+evaluated on the unit circle in other words for the magnitude is equal to 1
+
+00:05:44,000 --> 00:05:50,000
+in fact corresponds to the frequency response of the system
+
+00:05:50,000 --> 00:05:53,000
+more generally when we talk about this the transform
+
+00:05:53,000 --> 00:05:57,000
+are the impulse response we will refer to it as
+
+00:05:57,000 --> 00:06:03,000
+the system function associated with the system
+
+00:06:03,000 --> 00:06:07,000
+now the convolution property in these other properties as i indicated
+
+00:06:07,000 --> 00:06:11,000
+we will find useful in talking about systems which are described
+
+00:06:11,000 --> 00:06:16,000
+by linear constant coefficient difference equations and in fact
+
+00:06:16,000 --> 00:06:20,000
+will do that shortly but first what I'd like to do
+
+00:06:20,000 --> 00:06:23,000
+is to continue
+
+00:06:23,000 --> 00:06:26,000
+to focus on the system function
+
+00:06:26,000 --> 00:06:30,000
+for linear time-invariant systems and make a couple comments
+
+00:06:30,000 --> 00:06:35,000
+that tie back to some things that we said in the last lecture
+
+00:06:35,000 --> 00:06:39,000
+relating to the relationship between
+
+00:06:39,000 --> 00:06:42,000
+the region of convergence a system or
+
+00:06:42,000 --> 00:06:47,000
+I'll I'm sorry the regional convergence a busy transform
+
+00:06:47,000 --> 00:06:51,000
+and the issue of how that
+
+00:06:51,000 --> 00:06:56,000
+where that is in relation to the holes a busy transport
+
+00:06:56,000 --> 00:06:59,000
+now in particular we can draw some conclusions
+
+00:06:59,000 --> 00:07:03,000
+flying back to that discussion about the
+
+00:07:03,000 --> 00:07:07,000
+polo cations 0 the system function
+
+00:07:07,000 --> 00:07:10,000
+in relation to weathered the system is
+
+00:07:10,000 --> 00:07:15,000
+stable and whether the system is causal
+
+00:07:15,000 --> 00:07:20,000
+in particular recall from one of the early lectures way back when
+
+00:07:20,000 --> 00:07:24,000
+dead stability for a system
+
+00:07:24,000 --> 00:07:28,000
+corresponded to the statement that the impulse response
+
+00:07:28,000 --> 00:07:32,000
+is absolutely some local furthermore
+
+00:07:32,000 --> 00:07:35,000
+when we talked about the Fourier transform
+
+00:07:35,000 --> 00:07:39,000
+the Fourier transform all a sequence
+
+00:07:39,000 --> 00:07:44,000
+converges if the sequence is absolutely some mobile
+
+00:07:44,000 --> 00:07:47,000
+so in fact the condition for stability
+
+00:07:47,000 --> 00:07:52,000
+and others I'll a system and the conditions for convergence in the
+
+00:07:52,000 --> 00:07:54,000
+Fourier transform ovitz impulse response
+
+00:07:54,000 --> 00:07:58,000
+in fact are the same condition namely
+
+00:07:58,000 --> 00:08:01,000
+absolute some ability now
+
+00:08:01,000 --> 00:08:04,000
+what does this mean what it means is dead
+
+00:08:04,000 --> 00:08:07,000
+if the Fourier transform converges
+
+00:08:07,000 --> 00:08:13,000
+that means that the z transform converges on the unit circle
+
+00:08:13,000 --> 00:08:16,000
+consequently if the system is stable
+
+00:08:16,000 --> 00:08:21,000
+then the system function z transform the impulse response
+
+00:08:21,000 --> 00:08:25,000
+Moss also converge on the unit circle
+
+00:08:25,000 --> 00:08:29,000
+in other words the impulse response must have a 48 transform
+
+00:08:29,000 --> 00:08:33,000
+that converges soul for stable system
+
+00:08:33,000 --> 00:08:38,000
+then the region of convergence the system function
+
+00:08:38,000 --> 00:08:42,000
+must include the unit circle in the seaplane
+
+00:08:42,000 --> 00:08:46,000
+so we see how stability relates
+
+00:08:46,000 --> 00:08:49,000
+to the location all
+
+00:08:49,000 --> 00:08:53,000
+the region of convergence and we can also relate causality
+
+00:08:53,000 --> 00:08:57,000
+to the region of convergence in particular we know
+
+00:08:57,000 --> 00:09:01,000
+dead if system is causal
+
+00:09:01,000 --> 00:09:06,000
+than the impulse response is right sided
+
+00:09:06,000 --> 00:09:09,000
+for sequences right-sided the regional convergence
+
+00:09:09,000 --> 00:09:15,000
+love it see transform must be outside the outermost poll
+
+00:09:15,000 --> 00:09:19,000
+so for causality the regional convergence services to function must be
+
+00:09:19,000 --> 00:09:21,000
+outside the outermost poll
+
+00:09:21,000 --> 00:09:26,000
+for stability the regional convergence must include the unit circle
+
+00:09:26,000 --> 00:09:31,000
+and in fact we can also then draw from at the conclusion
+
+00:09:31,000 --> 00:09:34,000
+dead if we have a system its causal unstable
+
+00:09:34,000 --> 00:09:38,000
+than all polls must be inside the unit circle
+
+00:09:38,000 --> 00:09:42,000
+because of the fact that the polls must because the fact that the region of
+
+00:09:42,000 --> 00:09:44,000
+convergence must be
+
+00:09:44,000 --> 00:09:49,000
+outside the outermost poll and has to also include the unit circle
+
+00:09:49,000 --> 00:09:53,000
+soul for example if we had
+
+00:09:53,000 --> 00:09:57,000
+let's say system with a system function
+
+00:09:57,000 --> 00:10:03,000
+as I indicate here
+
+00:10:03,000 --> 00:10:07,000
+with the algebraic expression for the system function
+
+00:10:07,000 --> 00:10:13,000
+being the expression that I indicate here with a pole at sequels a third
+
+00:10:13,000 --> 00:10:18,000
+and another poll as equals to an 8-0 at the origin
+
+00:10:18,000 --> 00:10:21,000
+if in fact the system
+
+00:10:21,000 --> 00:10:26,000
+was causal corresponding to an impulse response that's right sided
+
+00:10:26,000 --> 00:10:31,000
+this then would be the region of convergence
+
+00:10:31,000 --> 00:10:35,000
+the system function alternatively
+
+00:10:35,000 --> 00:10:39,000
+if I knew that the system was stable then I know that
+
+00:10:39,000 --> 00:10:42,000
+the region of convergence must include the unit circle and so
+
+00:10:42,000 --> 00:10:46,000
+this would be then the region of convergence
+
+00:10:46,000 --> 00:10:51,000
+and what you might now want to ask yourselves
+
+00:10:51,000 --> 00:10:55,000
+is if instead the region of convergence
+
+00:10:55,000 --> 00:10:58,000
+for the system function is this there and
+
+00:10:58,000 --> 00:11:02,000
+is the system causal first question
+
+00:11:02,000 --> 00:11:06,000
+second question is is the system stable
+
+00:11:06,000 --> 00:11:10,000
+remembering that for causality the regional convergence must be outside the
+
+00:11:10,000 --> 00:11:11,000
+outermost poll
+
+00:11:11,000 --> 00:11:16,000
+and for stability must include the unit circle
+
+00:11:16,000 --> 00:11:19,000
+all right now what I'd like to do is
+
+00:11:19,000 --> 00:11:23,000
+look at the properties
+
+00:11:23,000 --> 00:11:26,000
+love the z transform
+
+00:11:26,000 --> 00:11:31,000
+and in particular exploit these properties in the context systems
+
+00:11:31,000 --> 00:11:36,000
+that are described by linear constant coefficient difference equations
+
+00:11:36,000 --> 00:11:41,000
+and the three basic properties that play a key role in that discussion
+
+00:11:41,000 --> 00:11:44,000
+are the linearity property
+
+00:11:44,000 --> 00:11:48,000
+shifting property and the convolution property
+
+00:11:48,000 --> 00:11:52,000
+and and so the stand are the properties
+
+00:11:52,000 --> 00:11:55,000
+dead I want to exploit so
+
+00:11:55,000 --> 00:11:59,000
+let's do that by first looking at a
+
+00:11:59,000 --> 00:12:03,000
+first-order difference equation and in the case
+
+00:12:03,000 --> 00:12:06,000
+love a first-order difference equation which
+
+00:12:06,000 --> 00:12:11,000
+I've written as i indicate year no turns on the right hand side but we could have
+
+00:12:11,000 --> 00:12:13,000
+terms of course in general
+
+00:12:13,000 --> 00:12:17,000
+so why am i sayi van -1 equals x seven
+
+00:12:17,000 --> 00:12:22,000
+and we can use the linearity property
+
+00:12:22,000 --> 00:12:27,000
+so that if we take this the transformer both sides have this expression
+
+00:12:27,000 --> 00:12:33,000
+that will then be busy transformer this term plus the transformer this term
+
+00:12:33,000 --> 00:12:36,000
+and so using those properties
+
+00:12:36,000 --> 00:12:41,000
+and together with the shifting property
+
+00:12:41,000 --> 00:12:44,000
+the property that tells us that the Z transform I'll
+
+00:12:44,000 --> 00:12:50,000
+y ven -1 is see to the -1 times the transformer y ven
+
+00:12:50,000 --> 00:12:55,000
+we then convert the difference equation to an algebraic expression
+
+00:12:55,000 --> 00:12:58,000
+and we can solve this outbreak expression for
+
+00:12:58,000 --> 00:13:02,000
+busy transform up the output in terms of
+
+00:13:02,000 --> 00:13:06,000
+busy transformer the input
+
+00:13:06,000 --> 00:13:10,000
+now what we know from the convolution property
+
+00:13:10,000 --> 00:13:16,000
+is that for system the the chance for the output is the system function times
+
+00:13:16,000 --> 00:13:18,000
+the transformer the input
+
+00:13:18,000 --> 00:13:21,000
+so this factor that we have then
+
+00:13:21,000 --> 00:13:24,000
+must correspond to the
+
+00:13:24,000 --> 00:13:28,000
+system function or equivalent Lee
+
+00:13:28,000 --> 00:13:32,000
+busy transform of the impulse response the system
+
+00:13:32,000 --> 00:13:36,000
+and in fact then if we have this the transform we could figure out
+
+00:13:36,000 --> 00:13:39,000
+what the impulse response that the system is
+
+00:13:39,000 --> 00:13:45,000
+by computing or determining what the inverse the transformants
+
+00:13:45,000 --> 00:13:49,000
+except for the fact that that expression
+
+00:13:49,000 --> 00:13:52,000
+is an algebraic expression and
+
+00:13:52,000 --> 00:13:56,000
+doesn't yet totally specified dizzy transform because we don't yet know what
+
+00:13:56,000 --> 00:14:00,000
+the region of convergence is
+
+00:14:00,000 --> 00:14:04,000
+how do we get the regional convergence well we have the same issue here as we
+
+00:14:04,000 --> 00:14:06,000
+have with the apostrophe in swarm
+
+00:14:06,000 --> 00:14:11,000
+namely the point dead difference equation
+
+00:14:11,000 --> 00:14:16,000
+tells us in essence what the algebraic expression is
+
+00:14:16,000 --> 00:14:22,000
+for the system function but doesn't specify the region of convergence
+
+00:14:22,000 --> 00:14:25,000
+that is specified by either explicitly
+
+00:14:25,000 --> 00:14:30,000
+because it's one way or another we know with the impulse responses
+
+00:14:30,000 --> 00:14:34,000
+or implicitly because we know certain properties in the system
+
+00:14:34,000 --> 00:14:39,000
+such as causality and/or stability
+
+00:14:39,000 --> 00:14:42,000
+so if on a
+
+00:14:42,000 --> 00:14:47,000
+let's say a imposed on this system in addition to the difference equation
+
+00:14:47,000 --> 00:14:54,000
+the condition all causality
+
+00:14:54,000 --> 00:14:58,000
+then what that requires is dead the impulse
+
+00:14:58,000 --> 00:15:01,000
+response the right-sided or
+
+00:15:01,000 --> 00:15:05,000
+the region of convergence be outside the outermost poll
+
+00:15:05,000 --> 00:15:08,000
+and so for this example that would require then
+
+00:15:08,000 --> 00:15:12,000
+that the region of convergence correspond to
+
+00:15:12,000 --> 00:15:18,000
+the magnitude is Z greater than the magnitude a
+
+00:15:18,000 --> 00:15:22,000
+what you might think about is whether I would get the same condition
+
+00:15:22,000 --> 00:15:27,000
+if I required instead that the system
+
+00:15:27,000 --> 00:15:31,000
+be stable and furthermore you could think about the question of whether I
+
+00:15:31,000 --> 00:15:32,000
+could
+
+00:15:32,000 --> 00:15:37,000
+specify or impose on this system that if the boat stable in causal
+
+00:15:37,000 --> 00:15:40,000
+the real issue let me just kind of point to it is dead
+
+00:15:40,000 --> 00:15:43,000
+the answer to those questions relate to
+
+00:15:43,000 --> 00:15:48,000
+whether the magnitude a vase less than 1 with a magnitude is greater than one
+
+00:15:48,000 --> 00:15:52,000
+if the magnitude have a is less than one and I specify causality
+
+00:15:52,000 --> 00:15:55,000
+that will also mean
+
+00:15:55,000 --> 00:15:58,000
+that the system is stable in any case
+
+00:15:58,000 --> 00:16:02,000
+given this region of convergence then the
+
+00:16:02,000 --> 00:16:07,000
+impulse response is the inverse transformer that see transform which is
+
+00:16:07,000 --> 00:16:11,000
+a to the end times you there
+
+00:16:11,000 --> 00:16:17,000
+right now let's look at second order equation is a very similar strategy
+
+00:16:17,000 --> 00:16:20,000
+for the second-order equation the one that I picked is
+
+00:16:20,000 --> 00:16:23,000
+love this particular form and I've written
+
+00:16:23,000 --> 00:16:28,000
+the coefficients parametrically as i indicate here for a specific reason
+
+00:16:28,000 --> 00:16:32,000
+which will see shortly again I can apply this the transform
+
+00:16:32,000 --> 00:16:36,000
+to this expression and I've skipped
+
+00:16:36,000 --> 00:16:40,000
+an algebraic stepper to hear when I do this then
+
+00:16:40,000 --> 00:16:44,000
+again you I use the when you're ready property and a shifting property
+
+00:16:44,000 --> 00:16:47,000
+and I end up with this algebraic expression
+
+00:16:47,000 --> 00:16:52,000
+if I now solve that to express why if the
+
+00:16:52,000 --> 00:16:55,000
+in terms of exits the and a function of Z
+
+00:16:55,000 --> 00:17:01,000
+then this is what I get for the system function
+
+00:17:01,000 --> 00:17:04,000
+and in so this is now
+
+00:17:04,000 --> 00:17:09,000
+a second-order system function and will have 20 that the origin
+
+00:17:09,000 --> 00:17:12,000
+and it will have two poles
+
+00:17:12,000 --> 00:17:16,000
+again and there's the question 0
+
+00:17:16,000 --> 00:17:20,000
+what we assume about the regional convergence I haven't specified date yet
+
+00:17:20,000 --> 00:17:23,000
+but if we let's say assume that
+
+00:17:23,000 --> 00:17:27,000
+the reach dead the system is causal which I will tend to do
+
+00:17:27,000 --> 00:17:30,000
+then that means that the region of convergence is outside the outermost
+
+00:17:30,000 --> 00:17:32,000
+poll
+
+00:17:32,000 --> 00:17:36,000
+now where the polls well let me just kinda vindicate
+
+00:17:36,000 --> 00:17:41,000
+dad if and you can verify this algebraically
+
+00:17:41,000 --> 00:17:44,000
+I actually Jer dead
+
+00:17:44,000 --> 00:17:47,000
+if the cosine beta term
+
+00:17:47,000 --> 00:17:51,000
+is less than 1
+
+00:17:51,000 --> 00:17:54,000
+then the roots of this polynomial
+
+00:17:54,000 --> 00:17:57,000
+will be complex and in fact the polls
+
+00:17:57,000 --> 00:18:02,000
+are at are eat a plus or minus J theta
+
+00:18:02,000 --> 00:18:05,000
+soul for Cosi pay to less than 1% then
+
+00:18:05,000 --> 00:18:09,000
+the polls are complex and
+
+00:18:09,000 --> 00:18:13,000
+the complex polls at an angle theta and
+
+00:18:13,000 --> 00:18:17,000
+with a distance from the origin equal to the parameter are
+
+00:18:17,000 --> 00:18:20,000
+so in fact let's just look at that
+
+00:18:20,000 --> 00:18:23,000
+and what I show here is the
+
+00:18:23,000 --> 00:18:27,000
+poll 0 pattern
+
+00:18:27,000 --> 00:18:31,000
+assuming that are is less than one
+
+00:18:31,000 --> 00:18:35,000
+and that cosine data is less than one
+
+00:18:35,000 --> 00:18:39,000
+and we have a complex poll pair shown here
+
+00:18:39,000 --> 00:18:43,000
+and now if we we assume that the system was causal
+
+00:18:43,000 --> 00:18:47,000
+that means that the region of convergence is outside these polls
+
+00:18:47,000 --> 00:18:50,000
+and that would then include the unit circle
+
+00:18:50,000 --> 00:18:54,000
+which means that the system is also stable
+
+00:18:54,000 --> 00:18:58,000
+and in fact as long as the region of convergence includes the unit circle
+
+00:18:58,000 --> 00:19:01,000
+we can also talk about the
+
+00:19:01,000 --> 00:19:05,000
+frequency response of the system namely we can evaluate the system function
+
+00:19:05,000 --> 00:19:10,000
+on the unit circle and we in fact evaluated
+
+00:19:10,000 --> 00:19:13,000
+the forty a transform associated with this
+
+00:19:13,000 --> 00:19:18,000
+polls 0 pattern last time and recalled that
+
+00:19:18,000 --> 00:19:21,000
+the frequency response then is one that has
+
+00:19:21,000 --> 00:19:25,000
+a resident character with the resonant peak
+
+00:19:25,000 --> 00:19:29,000
+being roughly in the the sanity love
+
+00:19:29,000 --> 00:19:32,000
+the angle of the Polo cation
+
+00:19:32,000 --> 00:19:36,000
+and as the parameter are very slight Cesar get smaller
+
+00:19:36,000 --> 00:19:39,000
+this peak 10's to broaden as our
+
+00:19:39,000 --> 00:19:46,000
+gets closer to one the residence tends to get sharp
+
+00:19:47,000 --> 00:19:51,000
+alright well this is now
+
+00:19:51,000 --> 00:19:56,000
+can a job look at busy transform and we see very strong parallels to the
+
+00:19:56,000 --> 00:19:59,000
+low-cost rents form
+
+00:19:59,000 --> 00:20:02,000
+in fact throughout the course
+
+00:20:02,000 --> 00:20:05,000
+I tried to emphasize and it just naturally happens
+
+00:20:05,000 --> 00:20:08,000
+that there are very strong relationships
+
+00:20:08,000 --> 00:20:13,000
+and parallels between continuous-time and discrete-time
+
+00:20:13,000 --> 00:20:17,000
+and in fact at one point we
+
+00:20:17,000 --> 00:20:22,000
+specifically map from continuous I discrete time when we talked about
+
+00:20:22,000 --> 00:20:27,000
+discrete-time processing of continuous-time signals
+
+00:20:27,000 --> 00:20:30,000
+and what I'd like to do now is turn our attention
+
+00:20:30,000 --> 00:20:35,000
+to another very important reason
+
+00:20:35,000 --> 00:20:39,000
+for mapping from continuous-time to discrete-time
+
+00:20:39,000 --> 00:20:43,000
+and in the process of doing this what will need to do is exploit
+
+00:20:43,000 --> 00:20:47,000
+fairly heavily the insight into wishin
+
+00:20:47,000 --> 00:20:50,000
+and procedures that we've developed for
+
+00:20:50,000 --> 00:20:55,000
+the La Paz transform and easy transport
+
+00:20:55,000 --> 00:20:59,000
+specifically what I would like to begin is a discussion
+
+00:20:59,000 --> 00:21:03,000
+relating to mapping continuous-time
+
+00:21:03,000 --> 00:21:08,000
+filters to discrete-time filters
+
+00:21:08,000 --> 00:21:11,000
+or continuous-time system functions to
+
+00:21:11,000 --> 00:21:14,000
+discrete-time system functions now
+
+00:21:14,000 --> 00:21:18,000
+why would we want to do that well their
+
+00:21:18,000 --> 00:21:22,000
+are at least several reasons for wanting to Mac continuous-time
+
+00:21:22,000 --> 00:21:27,000
+filters to discrete-time filters one of course is the fact that
+
+00:21:27,000 --> 00:21:31,000
+in some situations what we're interested in
+
+00:21:31,000 --> 00:21:34,000
+doing is processing continuous-time signals
+
+00:21:34,000 --> 00:21:39,000
+with discrete-time systems or
+
+00:21:39,000 --> 00:21:43,000
+said another way simulate continuous-time
+
+00:21:43,000 --> 00:21:46,000
+systems with discrete-time systems
+
+00:21:46,000 --> 00:21:50,000
+and so would be natural in a setting like that to think a mapping the
+
+00:21:50,000 --> 00:21:54,000
+the desired continuous I filter to a discrete-time
+
+00:21:54,000 --> 00:21:58,000
+told so that's one very important context
+
+00:21:58,000 --> 00:22:01,000
+is another very important context in which
+
+00:22:01,000 --> 00:22:04,000
+this is done and then is in the con- it
+
+00:22:04,000 --> 00:22:08,000
+or in the in the context or
+
+00:22:08,000 --> 00:22:11,000
+for the purpose all exploiting
+
+00:22:11,000 --> 00:22:16,000
+establish design procedures for continuous five filters
+
+00:22:16,000 --> 00:22:19,000
+the point is the following: we may or may not
+
+00:22:19,000 --> 00:22:23,000
+be processing it a sample continuous-time signal with our
+
+00:22:23,000 --> 00:22:26,000
+discrete-time salter maybe just be discrete-time signals that we're working
+
+00:22:26,000 --> 00:22:27,000
+with
+
+00:22:27,000 --> 00:22:31,000
+but in that situation
+
+00:22:31,000 --> 00:22:38,000
+still we need to design the appropriate discreet I filter
+
+00:22:38,000 --> 00:22:42,000
+historically their is a very
+
+00:22:42,000 --> 00:22:45,000
+rich history
+
+00:22:45,000 --> 00:22:49,000
+associated with design a continuous-time filters
+
+00:22:49,000 --> 00:22:52,000
+and in many cases it's possible
+
+00:22:52,000 --> 00:22:56,000
+and very worthwhile and efficient to
+
+00:22:56,000 --> 00:22:59,000
+take those designs and map dome
+
+00:22:59,000 --> 00:23:04,000
+to discrete-time designs to use them as discrete time filters
+
+00:23:04,000 --> 00:23:09,000
+so another very important reason for talking about the kinds mappings there
+
+00:23:09,000 --> 00:23:11,000
+we will be going into
+
+00:23:11,000 --> 00:23:16,000
+is this simply take advantage I love what has been done historically
+
+00:23:16,000 --> 00:23:21,000
+in the continuous-time case
+
+00:23:21,000 --> 00:23:24,000
+all right now if we want to map
+
+00:23:24,000 --> 00:23:28,000
+continuous I filters to discrete-time filters
+
+00:23:28,000 --> 00:23:33,000
+then in continuous-time we're talking about a system function
+
+00:23:33,000 --> 00:23:37,000
+and an associated differential equation
+
+00:23:37,000 --> 00:23:41,000
+and indiscreet I'm there is the corresponding
+
+00:23:41,000 --> 00:23:45,000
+system function and the corresponding
+
+00:23:45,000 --> 00:23:48,000
+difference equation and
+
+00:23:48,000 --> 00:23:52,000
+basically what we want to do is generate
+
+00:23:52,000 --> 00:23:56,000
+from a continuous-time system
+
+00:23:56,000 --> 00:23:59,000
+in some way a discrete-time system that
+
+00:23:59,000 --> 00:24:05,000
+meets in dissociated set ok desired specifications
+
+00:24:05,000 --> 00:24:09,000
+now there's certain constraints that its
+
+00:24:09,000 --> 00:24:12,000
+reasonable an important to impose on
+
+00:24:12,000 --> 00:24:15,000
+whatever kinds mappings we use
+
+00:24:15,000 --> 00:24:20,000
+obviously wanna mapping that will take are continuous-time system function
+
+00:24:20,000 --> 00:24:25,000
+and map it to a discrete-time system function correspondingly in the time
+
+00:24:25,000 --> 00:24:26,000
+domain
+
+00:24:26,000 --> 00:24:30,000
+their is a continuous-time impulse response
+
+00:24:30,000 --> 00:24:35,000
+that maps to the Associated discrete-time impulse response
+
+00:24:35,000 --> 00:24:39,000
+these are more less natural the two that are important and
+
+00:24:39,000 --> 00:24:45,000
+sometimes easy to lose sight of are the two that I indicate here
+
+00:24:45,000 --> 00:24:50,000
+in particular if we r mapping
+
+00:24:50,000 --> 00:24:54,000
+a continuous-time filter with let's say a desire desirable
+
+00:24:54,000 --> 00:24:57,000
+frequency response to a discrete-time
+
+00:24:57,000 --> 00:25:03,000
+filter and we would like to preserve the good qualities that frequency response
+
+00:25:03,000 --> 00:25:08,000
+as we look at the discrete-time frequency response
+
+00:25:08,000 --> 00:25:11,000
+then it's important that
+
+00:25:11,000 --> 00:25:16,000
+what happens in the ass plane for the continues type filter along the jail
+
+00:25:16,000 --> 00:25:17,000
+make axis
+
+00:25:17,000 --> 00:25:20,000
+relate in a nice way to what happens
+
+00:25:20,000 --> 00:25:23,000
+in the seaplane around the unit circle
+
+00:25:23,000 --> 00:25:27,000
+because it's this over here
+
+00:25:27,000 --> 00:25:31,000
+that represents the frequency response in continuous-time
+
+00:25:31,000 --> 00:25:35,000
+and this contour over here that represents the frequency response
+
+00:25:35,000 --> 00:25:38,000
+in discrete-time so that's an important property we want
+
+00:25:38,000 --> 00:25:41,000
+have the J Omega axis to map
+
+00:25:41,000 --> 00:25:45,000
+to the unit circle another
+
+00:25:45,000 --> 00:25:48,000
+more less natural condition to impose
+
+00:25:48,000 --> 00:25:51,000
+is a condition that if we
+
+00:25:51,000 --> 00:25:56,000
+are assured in some way that our continuous type filter is stable
+
+00:25:56,000 --> 00:26:01,000
+then we would like to concentrate on design procedures that
+
+00:26:01,000 --> 00:26:07,000
+more or less preserved at and will give us stable digital filters
+
+00:26:07,000 --> 00:26:13,000
+so these are are reasonable conditions to impose on the procedure
+
+00:26:13,000 --> 00:26:17,000
+and what I'd like to do in the remainder this lecture is look at
+
+00:26:17,000 --> 00:26:23,000
+to common procedures for mapping continuous-time filters to discrete-time
+
+00:26:23,000 --> 00:26:26,000
+filters the first one that I
+
+00:26:26,000 --> 00:26:31,000
+want to talk about is one that in fact is very frequently use
+
+00:26:31,000 --> 00:26:34,000
+and also one
+
+00:26:34,000 --> 00:26:37,000
+that as we'll see for a variety of reasons is
+
+00:26:37,000 --> 00:26:41,000
+highly undesirable the second
+
+00:26:41,000 --> 00:26:45,000
+is one that is also frequently used and as we'll see
+
+00:26:45,000 --> 00:26:49,000
+is arm in certain situations very desirable
+
+00:26:49,000 --> 00:26:52,000
+the first one i wanna talk about is
+
+00:26:52,000 --> 00:26:55,000
+the more less intuitive simple
+
+00:26:55,000 --> 00:26:59,000
+procedure 0 mapping a difference equation at
+
+00:26:59,000 --> 00:27:03,000
+differential equation to a difference equation by
+
+00:27:03,000 --> 00:27:06,000
+simply replacing derivatives by
+
+00:27:06,000 --> 00:27:11,000
+differences and kinda the idea is that it
+
+00:27:11,000 --> 00:27:14,000
+a derivative is more or less a difference and there's some dummy
+
+00:27:14,000 --> 00:27:17,000
+parameter capital T that I've thrown in here which
+
+00:27:17,000 --> 00:27:22,000
+I won't focus too much on but in any case
+
+00:27:22,000 --> 00:27:27,000
+this seems to have some plausibility if we take the differential equation and do
+
+00:27:27,000 --> 00:27:28,000
+this with all the derivatives
+
+00:27:28,000 --> 00:27:32,000
+on both in terms of wife tnx ft
+
+00:27:32,000 --> 00:27:36,000
+what we'll end up with is a difference equation
+
+00:27:36,000 --> 00:27:40,000
+now what we can use are the properties
+
+00:27:40,000 --> 00:27:44,000
+love the boss transforming dizzy transform
+
+00:27:44,000 --> 00:27:48,000
+to see what this means in terms of a mapping a particular
+
+00:27:48,000 --> 00:27:52,000
+using a different ciation property from a plus transforms
+
+00:27:52,000 --> 00:27:56,000
+in the a-plus transform domain we would have this
+
+00:27:56,000 --> 00:28:00,000
+using the properties for
+
+00:28:00,000 --> 00:28:04,000
+busy transform busy transformer this expression would be this
+
+00:28:04,000 --> 00:28:07,000
+and so in effect what it says
+
+00:28:07,000 --> 00:28:10,000
+is dead every place in the system function
+
+00:28:10,000 --> 00:28:14,000
+or the differential equation that we would be multiplying by S
+
+00:28:14,000 --> 00:28:17,000
+when we'll pass transformed in the difference equation we would be
+
+00:28:17,000 --> 00:28:20,000
+multiplying by this factor
+
+00:28:20,000 --> 00:28:24,000
+so in fact what this means is that
+
+00:28:24,000 --> 00:28:28,000
+the mapping from continuous time to discrete-time
+
+00:28:28,000 --> 00:28:33,000
+corresponds to taking the system function
+
+00:28:33,000 --> 00:28:37,000
+and replacing s wherever we see it
+
+00:28:37,000 --> 00:28:41,000
+by one minus the to the -1 over capital T
+
+00:28:41,000 --> 00:28:46,000
+and so if we have a system function in continuous-time
+
+00:28:46,000 --> 00:28:49,000
+and we map it to a discrete-time system function
+
+00:28:49,000 --> 00:28:53,000
+this way by replacing derivatives by differences
+
+00:28:53,000 --> 00:28:57,000
+then that corresponds to replacing asked by
+
+00:28:57,000 --> 00:29:01,000
+$1 -2 -1 over capital T
+
+00:29:01,000 --> 00:29:05,000
+now we'll see shortly what this mapping
+
+00:29:05,000 --> 00:29:09,000
+actually means more specifically in relating yes plane to the seaplane
+
+00:29:09,000 --> 00:29:12,000
+let me just quickly because I want to refer to this
+
+00:29:12,000 --> 00:29:17,000
+also point to another procedure very much like backward differences
+
+00:29:17,000 --> 00:29:21,000
+which corresponds to replacing derivatives not by the backward
+
+00:29:21,000 --> 00:29:23,000
+difference is that I just showed
+
+00:29:23,000 --> 00:29:26,000
+but by former differences and in that case
+
+00:29:26,000 --> 00:29:31,000
+then the mapping corresponds replacing asked by
+
+00:29:31,000 --> 00:29:35,000
+Zeta minus one over capital T
+
+00:29:35,000 --> 00:29:39,000
+looks very similar to the previous case and
+
+00:29:39,000 --> 00:29:43,000
+so there the relationship between the system functions
+
+00:29:43,000 --> 00:29:46,000
+is what I indicate here
+
+00:29:46,000 --> 00:29:50,000
+alright well let's just take a look at
+
+00:29:50,000 --> 00:29:55,000
+what that those mappings correspond to when we look at this specifically
+
+00:29:55,000 --> 00:29:59,000
+in the S plane and in the seaplane brown
+
+00:29:59,000 --> 00:30:02,000
+what I show here is the s plane
+
+00:30:02,000 --> 00:30:08,000
+and chorus its things in the left after the S plane posing left after the s plan
+
+00:30:08,000 --> 00:30:09,000
+that would guarantee stability
+
+00:30:09,000 --> 00:30:16,000
+its the chair make axis that tells us about the frequency response
+
+00:30:16,000 --> 00:30:19,000
+and in the seaplane its
+
+00:30:19,000 --> 00:30:24,000
+the unit circle that tells us about the frequency response
+
+00:30:24,000 --> 00:30:27,000
+and things inside the unit circle or poles inside the unit circle to
+
+00:30:27,000 --> 00:30:30,000
+guarantee stability
+
+00:30:30,000 --> 00:30:35,000
+now the mapping from yes point to the sea plane corresponding
+
+00:30:35,000 --> 00:30:39,000
+to replacing derivatives by backward differences
+
+00:30:39,000 --> 00:30:43,000
+in fact can be shown to correspond
+
+00:30:43,000 --> 00:30:46,000
+to mapping DJ Omega axis
+
+00:30:46,000 --> 00:30:50,000
+not to the unit circle but
+
+00:30:50,000 --> 00:30:55,000
+to the little circle that I show here which is inside the unit circle
+
+00:30:55,000 --> 00:31:00,000
+the left half oath the S plane maps to the insider that circle
+
+00:31:00,000 --> 00:31:03,000
+what does that mean that means they had if we have
+
+00:31:03,000 --> 00:31:06,000
+a really good frequency response
+
+00:31:06,000 --> 00:31:09,000
+characteristic along this contour
+
+00:31:09,000 --> 00:31:13,000
+in the S plane will see that same frequency response
+
+00:31:13,000 --> 00:31:16,000
+along this little circle that's not the one we want though
+
+00:31:16,000 --> 00:31:21,000
+we would like to see that same frequency response around the unit circle
+
+00:31:21,000 --> 00:31:26,000
+to emphasize this point even more suppose for example
+
+00:31:26,000 --> 00:31:30,000
+that we had appear polls
+
+00:31:30,000 --> 00:31:36,000
+in our continuous-time system function that look like this
+
+00:31:36,000 --> 00:31:39,000
+then where they're likely to end up
+
+00:31:39,000 --> 00:31:42,000
+in busy plane is
+
+00:31:42,000 --> 00:31:46,000
+inside the unit circle of course by if
+
+00:31:46,000 --> 00:31:49,000
+the polls here are close to the jail make axis
+
+00:31:49,000 --> 00:31:53,000
+that means that these polls will be close to this circle
+
+00:31:53,000 --> 00:31:57,000
+but in fact might be very far away from the unit circle
+
+00:31:57,000 --> 00:32:00,000
+so what would happen then is dead
+
+00:32:00,000 --> 00:32:05,000
+if we saw in the continuous-time filter very sharp residence
+
+00:32:05,000 --> 00:32:09,000
+the discrete-time filter in fact might very well have that residents broadened
+
+00:32:09,000 --> 00:32:10,000
+considerably
+
+00:32:10,000 --> 00:32:14,000
+because the polls is so far away from the unit circle
+
+00:32:14,000 --> 00:32:17,000
+now 1 plus
+
+00:32:17,000 --> 00:32:20,000
+with this method and it's about the only one
+
+00:32:20,000 --> 00:32:24,000
+is the fact that the left after the S plane
+
+00:32:24,000 --> 00:32:30,000
+maps inside the unit circle in fact inside the circle inside the unit circle
+
+00:32:30,000 --> 00:32:33,000
+and so stability is always guarantee
+
+00:32:33,000 --> 00:32:36,000
+let me just quickly mention and you'll have a chance to look at this a little
+
+00:32:36,000 --> 00:32:38,000
+more carefully in the
+
+00:32:38,000 --> 00:32:41,000
+video course manual dead for
+
+00:32:41,000 --> 00:32:45,000
+forward difference is that a backward differences
+
+00:32:45,000 --> 00:32:49,000
+this contour and yes plane
+
+00:32:49,000 --> 00:32:53,000
+maps to a line in the seaplane
+
+00:32:53,000 --> 00:32:57,000
+which is online tangent to the unit circle
+
+00:32:57,000 --> 00:33:01,000
+and in fact is the line that I show their
+
+00:33:01,000 --> 00:33:04,000
+so not only are for differences
+
+00:33:04,000 --> 00:33:08,000
+equally bad and turns at the issue whether they mapped from the chair may
+
+00:33:08,000 --> 00:33:10,000
+get access to the unit circle
+
+00:33:10,000 --> 00:33:15,000
+but they have further difficulty associated with them
+
+00:33:15,000 --> 00:33:18,000
+which is the difficulty dead
+
+00:33:18,000 --> 00:33:24,000
+they may not and generally don't guarantee stability
+
+00:33:24,000 --> 00:33:28,000
+right now that's one method and
+
+00:33:28,000 --> 00:33:32,000
+I'll one as i indicated that so often use partly
+
+00:33:32,000 --> 00:33:37,000
+I am a because it seems so intuitively plausible
+
+00:33:37,000 --> 00:33:41,000
+and what you can see is that by understand it carefully the issues and
+
+00:33:41,000 --> 00:33:44,000
+the techniques of apostasy transforms
+
+00:33:44,000 --> 00:33:47,000
+you can begin to see what some of the difficulties with that method
+
+00:33:47,000 --> 00:33:51,000
+for those methods are the next method
+
+00:33:51,000 --> 00:33:55,000
+dad I'd like to talk about is a method that in fact is very
+
+00:33:55,000 --> 00:33:59,000
+commonly used and it's a very important useful method
+
+00:33:59,000 --> 00:34:04,000
+which Chynoweth can be motivated by thinking along the lines of both
+
+00:34:04,000 --> 00:34:08,000
+mapping the continuous-time filter to
+
+00:34:08,000 --> 00:34:12,000
+a discrete-time sold their in such a way
+
+00:34:12,000 --> 00:34:16,000
+dead the shape up the impulse response is preserved
+
+00:34:16,000 --> 00:34:20,000
+and in fact more specifically so that
+
+00:34:20,000 --> 00:34:24,000
+the discrete-time impulse response corresponds to
+
+00:34:24,000 --> 00:34:28,000
+samples love the continuous-time impulse response
+
+00:34:28,000 --> 00:34:32,000
+and this is a method that's referred to as
+
+00:34:32,000 --> 00:34:35,000
+in polls invariance
+
+00:34:35,000 --> 00:34:39,000
+so what imposing variance corresponds to
+
+00:34:39,000 --> 00:34:42,000
+is designing the filter in such a way
+
+00:34:42,000 --> 00:34:46,000
+that the discrete-time filter
+
+00:34:46,000 --> 00:34:49,000
+impulse response is simply
+
+00:34:49,000 --> 00:34:54,000
+sample version love the continuous type filter impulse response
+
+00:34:54,000 --> 00:35:00,000
+with a sampling period which I do know here's capital T
+
+00:35:00,000 --> 00:35:04,000
+and that will turn into a slightly confusing parameter
+
+00:35:04,000 --> 00:35:08,000
+shortly and perhaps carried over into the next lecture
+
+00:35:08,000 --> 00:35:11,000
+and hopefully we'll get that straightened out though
+
+00:35:11,000 --> 00:35:14,000
+within those two lectures now remembering
+
+00:35:14,000 --> 00:35:18,000
+the issues of sampling the discrete-time
+
+00:35:18,000 --> 00:35:23,000
+frequency response then since the frequency response is the forty a
+
+00:35:23,000 --> 00:35:25,000
+transformer the impulse response
+
+00:35:25,000 --> 00:35:31,000
+is related to the continuous-time impulse responses I indicate here
+
+00:35:31,000 --> 00:35:36,000
+and what this says is that it is
+
+00:35:36,000 --> 00:35:39,000
+the superposition
+
+00:35:39,000 --> 00:35:46,000
+all replications love the continuous high frequency response
+
+00:35:46,000 --> 00:35:50,000
+linearly scaled in frequency and
+
+00:35:50,000 --> 00:35:54,000
+shifted and added to each other it's the same old
+
+00:35:54,000 --> 00:35:58,000
+are so shifting ending a really is saying issued the same sampling issues
+
+00:35:58,000 --> 00:36:01,000
+that we've addressed before
+
+00:36:01,000 --> 00:36:05,000
+well this equation will help us understand what the frequency response
+
+00:36:05,000 --> 00:36:06,000
+looks like
+
+00:36:06,000 --> 00:36:09,000
+but in terms of an analytical procedure
+
+00:36:09,000 --> 00:36:13,000
+for mapping the continuous-time system function
+
+00:36:13,000 --> 00:36:16,000
+to a discrete-time system function we can see
+
+00:36:16,000 --> 00:36:22,000
+dat and develop it in the following way:
+
+00:36:22,000 --> 00:36:26,000
+let's consider the continuous-time system function
+
+00:36:26,000 --> 00:36:30,000
+expanded in a partial fraction expansion
+
+00:36:30,000 --> 00:36:34,000
+and just for convenience on picking first-order polls this can be
+
+00:36:34,000 --> 00:36:39,000
+general generalized or rather single polls this can be generalized
+
+00:36:39,000 --> 00:36:43,000
+to on multiple order polls
+
+00:36:43,000 --> 00:36:48,000
+and we won't do that here the same basic strategy applies
+
+00:36:48,000 --> 00:36:52,000
+if we expand this in a partial fraction expansion
+
+00:36:52,000 --> 00:36:56,000
+and we look at the impulse response associated with this
+
+00:36:56,000 --> 00:36:59,000
+we know how to take the inverse Laplace transform with this
+
+00:36:59,000 --> 00:37:05,000
+where I'm just naturally assume because our the throughout the discussion
+
+00:37:05,000 --> 00:37:08,000
+the continuous-time impulse response then is
+
+00:37:08,000 --> 00:37:12,000
+someone exponentials with these amplitudes
+
+00:37:12,000 --> 00:37:17,000
+and at these complex exponential frequencies
+
+00:37:17,000 --> 00:37:21,000
+now impulse in various corresponds to sampling this
+
+00:37:21,000 --> 00:37:25,000
+and so the discrete-time impulse response
+
+00:37:25,000 --> 00:37:28,000
+is simply a sample version of this and
+
+00:37:28,000 --> 00:37:32,000
+in the AC cave course carries down
+
+00:37:32,000 --> 00:37:39,000
+and we have the exponential were sampling at Eagles and capital T and so
+
+00:37:39,000 --> 00:37:42,000
+we've replaced that here and then the unit step
+
+00:37:42,000 --> 00:37:46,000
+to truncate things for negative time
+
+00:37:46,000 --> 00:37:49,000
+right well let's manipulate this further and
+
+00:37:49,000 --> 00:37:53,000
+eventually what we want to get is relationship mapping
+
+00:37:53,000 --> 00:37:57,000
+from the continuous-time to the discrete-time filter
+
+00:37:57,000 --> 00:38:01,000
+so we had this staff that we can rewrite that
+
+00:38:01,000 --> 00:38:05,000
+now as I show here just
+
+00:38:05,000 --> 00:38:09,000
+simply taking this and outside we have EDS
+
+00:38:09,000 --> 00:38:13,000
+k capital T so now this is %uh the for
+
+00:38:13,000 --> 00:38:16,000
+the summer terms like a suitcase me
+
+00:38:16,000 --> 00:38:22,000
+times fated to the N we can compute is a transformer this
+
+00:38:22,000 --> 00:38:25,000
+and busy transform the week at I show
+
+00:38:25,000 --> 00:38:29,000
+here it's simply a sieve K over one minus
+
+00:38:29,000 --> 00:38:32,000
+in the s2k capital T see the -1
+
+00:38:32,000 --> 00:38:36,000
+simply carrying this term or this
+
+00:38:36,000 --> 00:38:39,000
+this parameter down
+
+00:38:39,000 --> 00:38:44,000
+so we started with a continuous-time system function which was the sole turns
+
+00:38:44,000 --> 00:38:49,000
+like a sieve K over s minus SFK the polls were tested K
+
+00:38:49,000 --> 00:38:53,000
+we now have the day that discrete I filter in this form
+
+00:38:53,000 --> 00:38:58,000
+and consequently then this procedure in Polson variance
+
+00:38:58,000 --> 00:39:01,000
+corresponds to
+
+00:39:01,000 --> 00:39:05,000
+mapping the continuous I filter to discrete-time filter
+
+00:39:05,000 --> 00:39:10,000
+by mapping the polls in the continuous I filter
+
+00:39:10,000 --> 00:39:14,000
+according to this mapping
+
+00:39:14,000 --> 00:39:20,000
+the continuous part filter poll and SFK gets map topo edited the s2k capital T
+
+00:39:20,000 --> 00:39:23,000
+and the coefficients a suitcase
+
+00:39:23,000 --> 00:39:27,000
+a are preserve
+
+00:39:27,000 --> 00:39:31,000
+and that an algebraically is what the procedure of impulse and variance
+
+00:39:31,000 --> 00:39:33,000
+corresponds to
+
+00:39:33,000 --> 00:39:37,000
+okay well let's look at
+
+00:39:37,000 --> 00:39:41,000
+how we interpret summer this in the frequency domain
+
+00:39:41,000 --> 00:39:44,000
+and in particular
+
+00:39:44,000 --> 00:39:49,000
+we have the expression that tells us how the
+
+00:39:49,000 --> 00:39:53,000
+discrete-time frequency response
+
+00:39:53,000 --> 00:39:57,000
+is related to the continuous-time frequency response
+
+00:39:57,000 --> 00:40:01,000
+this is the expression that we had previously
+
+00:40:01,000 --> 00:40:05,000
+when we have talked about issues of sampling
+
+00:40:05,000 --> 00:40:09,000
+so that means that we would form the discrete I frequency response
+
+00:40:09,000 --> 00:40:12,000
+by taking the continuous-time one scaling it
+
+00:40:12,000 --> 00:40:16,000
+in frequency according to this parameter capital T
+
+00:40:16,000 --> 00:40:21,000
+and then Anne replications that together
+
+00:40:21,000 --> 00:40:25,000
+so if this is the continuous-time
+
+00:40:25,000 --> 00:40:29,000
+frequency response just simply an idea low-pass filter with the cutoff
+
+00:40:29,000 --> 00:40:31,000
+frequency of omega-6
+
+00:40:31,000 --> 00:40:34,000
+see van the its
+
+00:40:34,000 --> 00:40:39,000
+frequency scaling operation would keep the same basic shape
+
+00:40:39,000 --> 00:40:44,000
+but but linearly scale the frequency axis so that we now have Omega sexy
+
+00:40:44,000 --> 00:40:46,000
+times capital T
+
+00:40:46,000 --> 00:40:51,000
+and then the discrete-time frequency response
+
+00:40:51,000 --> 00:40:55,000
+would be a superposition at these and it together
+
+00:40:55,000 --> 00:40:59,000
+at multiples of 2 pie indiscreet time-frequency
+
+00:40:59,000 --> 00:41:03,000
+and so that's what we have here
+
+00:41:03,000 --> 00:41:08,000
+so this is the discreet I frequency response
+
+00:41:08,000 --> 00:41:12,000
+so this looks very nice it looks like in Polson variance will
+
+00:41:12,000 --> 00:41:16,000
+take the continuous I frequency response just simply
+
+00:41:16,000 --> 00:41:21,000
+linearly scale the frequency axis and incidently periodically repeated
+
+00:41:21,000 --> 00:41:26,000
+we know that for an idea low-pass filter that looks just fine and in fact
+
+00:41:26,000 --> 00:41:31,000
+for a ban limited frequency response that looks just fine
+
+00:41:31,000 --> 00:41:35,000
+but we know also that anytime that were sampling
+
+00:41:35,000 --> 00:41:39,000
+here with sampling the impulse response we have
+
+00:41:39,000 --> 00:41:43,000
+in effect in the frequency domain where the potential for a second effect
+
+00:41:43,000 --> 00:41:47,000
+dead we refer to as alias so in fact
+
+00:41:47,000 --> 00:41:51,000
+if instead of the ideal low-pass filter
+
+00:41:51,000 --> 00:41:57,000
+we had taken a filter that was an approximation to a low pass filter
+
+00:41:57,000 --> 00:42:01,000
+then the corresponding frequency scale version
+
+00:42:01,000 --> 00:42:07,000
+would look as I've shown here and now as we add these together
+
+00:42:07,000 --> 00:42:10,000
+then what we will have is some potential
+
+00:42:10,000 --> 00:42:14,000
+for distortion corresponding to the fact that
+
+00:42:14,000 --> 00:42:17,000
+these replications overlap and
+
+00:42:17,000 --> 00:42:22,000
+what that will lead to is aliasing
+
+00:42:22,000 --> 00:42:26,000
+so some things that we can say about imposing variance
+
+00:42:26,000 --> 00:42:29,000
+is there yet we have an algebraic procedure at all
+
+00:42:29,000 --> 00:42:34,000
+illustrate with another example shortly for taking a continuous I've system
+
+00:42:34,000 --> 00:42:36,000
+function mapping it to a discrete-time
+
+00:42:36,000 --> 00:42:41,000
+system function it has a very nice property in terms of both
+
+00:42:41,000 --> 00:42:45,000
+a %uh mapping the mapping from
+
+00:42:45,000 --> 00:42:48,000
+the frequency axis in continuous-time the to the
+
+00:42:48,000 --> 00:42:52,000
+unit circle namely
+
+00:42:52,000 --> 00:42:55,000
+to a first approximation as long as there's no aliasing
+
+00:42:55,000 --> 00:43:01,000
+the mapping is just simply a linear scaling the frequency axis although
+
+00:43:01,000 --> 00:43:05,000
+there may be some alias saying that means of course that this method can
+
+00:43:05,000 --> 00:43:06,000
+only be used
+
+00:43:06,000 --> 00:43:11,000
+if the frequency response that's being mapped work the system is being mad
+
+00:43:11,000 --> 00:43:15,000
+has a frequency response that's approximately low-pass had asked to be
+
+00:43:15,000 --> 00:43:18,000
+approximately ban limit
+
+00:43:18,000 --> 00:43:21,000
+and then what we have is some
+
+00:43:21,000 --> 00:43:26,000
+pop potential distortion which comes about because bailey's
+
+00:43:26,000 --> 00:43:30,000
+also because if the mapping the fact that polls at soka
+
+00:43:30,000 --> 00:43:35,000
+get map to polls at you to the s2k capital T
+
+00:43:35,000 --> 00:43:39,000
+if the analog a continuous-time filter is
+
+00:43:39,000 --> 00:43:43,000
+stable meaning that the real party Vesta case is negative
+
+00:43:43,000 --> 00:43:47,000
+then the discrete types author is guaranteed to be stable
+
+00:43:47,000 --> 00:43:50,000
+in other words the magnitude as the suitcase a
+
+00:43:50,000 --> 00:43:55,000
+will be guaranteed to be less than 1 I'm assuming of course that discussion
+
+00:43:55,000 --> 00:44:01,000
+we're are always imposing causality and systems
+
+00:44:01,000 --> 00:44:05,000
+Bardwell to just look at the algebraic mapping
+
+00:44:05,000 --> 00:44:09,000
+a little more carefully let's take a simple example
+
+00:44:09,000 --> 00:44:13,000
+here is an example all
+
+00:44:13,000 --> 00:44:16,000
+a system a continuous-time system where
+
+00:44:16,000 --> 00:44:20,000
+I simply have a resident poll pair
+
+00:44:20,000 --> 00:44:23,000
+with a real with an imaginary part along the
+
+00:44:23,000 --> 00:44:27,000
+Majuri accessible make it so far a real part of mine a South
+
+00:44:27,000 --> 00:44:32,000
+for and so The Associated system function and
+
+00:44:32,000 --> 00:44:37,000
+is just the expression which incorporates
+
+00:44:37,000 --> 00:44:42,000
+the two poles and I put in a scale factor to Omega so far
+
+00:44:42,000 --> 00:44:46,000
+and now to design the discrete-time
+
+00:44:46,000 --> 00:44:50,000
+filter using in Polson variance you carry out a partial fraction expansion
+
+00:44:50,000 --> 00:44:51,000
+of this
+
+00:44:51,000 --> 00:44:55,000
+and that partial fraction expansion is shown below
+
+00:44:55,000 --> 00:45:00,000
+we have a pole at minus South a-minus J Omega are and at minus alpha plus Chi
+
+00:45:00,000 --> 00:45:02,000
+Omega are
+
+00:45:02,000 --> 00:45:05,000
+and to determine the
+
+00:45:05,000 --> 00:45:08,000
+discrete-time filter based on imposing variance
+
+00:45:08,000 --> 00:45:12,000
+we would map the polls and preserves the coefficients a Sat K
+
+00:45:12,000 --> 00:45:16,000
+referred to as the residues and so the
+
+00:45:16,000 --> 00:45:20,000
+discrete-time filter that we would end up with
+
+00:45:20,000 --> 00:45:24,000
+as system function which I indicate
+
+00:45:24,000 --> 00:45:27,000
+here and we have is a
+
+00:45:27,000 --> 00:45:30,000
+said preserve the residue and
+
+00:45:30,000 --> 00:45:34,000
+the poll is now at either minus out the TE
+
+00:45:34,000 --> 00:45:38,000
+you the vice chair makes a party that's one term
+
+00:45:38,000 --> 00:45:43,000
+and the other term in Assam has a pole at the complex conjugate
+
+00:45:43,000 --> 00:45:47,000
+location if we were to add these to
+
+00:45:47,000 --> 00:45:50,000
+factors together then what we would get
+
+00:45:50,000 --> 00:45:53,000
+is both polls and
+
+00:45:53,000 --> 00:45:57,000
+0 at the origin and
+
+00:45:57,000 --> 00:46:02,000
+in fact then the poll is defined by
+
+00:46:02,000 --> 00:46:05,000
+its angle and this angle
+
+00:46:05,000 --> 00:46:08,000
+is is
+
+00:46:08,000 --> 00:46:11,000
+eat see the J Omega so far
+
+00:46:11,000 --> 00:46:16,000
+capital see and by its radius
+
+00:46:16,000 --> 00:46:19,000
+and this radius is eat to the minors
+
+00:46:19,000 --> 00:46:23,000
+alpha capital T
+
+00:46:23,000 --> 00:46:27,000
+all right now we can look at the frequency response
+
+00:46:27,000 --> 00:46:31,000
+associated with that and and let's just do that
+
+00:46:31,000 --> 00:46:34,000
+for the original
+
+00:46:34,000 --> 00:46:39,000
+continuous-time frequency response
+
+00:46:39,000 --> 00:46:44,000
+what we have is simply a resident character is a show
+
+00:46:44,000 --> 00:46:48,000
+as shown here and if we
+
+00:46:48,000 --> 00:46:51,000
+map this using your post in various which we just did
+
+00:46:51,000 --> 00:46:54,000
+the resulting frequency response
+
+00:46:54,000 --> 00:46:59,000
+that we get is the frequency response which I indicate
+
+00:46:59,000 --> 00:47:02,000
+we see that that's basically identical
+
+00:47:02,000 --> 00:47:06,000
+to the continuous-time frequency response
+
+00:47:06,000 --> 00:47:12,000
+except for by a linear scaling the frequency axis if you just compare
+
+00:47:12,000 --> 00:47:17,000
+the the dimensions along which the frequency axis is shown
+
+00:47:17,000 --> 00:47:21,000
+and for one except for one minor
+
+00:47:21,000 --> 00:47:24,000
+issue which we switch is particularly highlighted
+
+00:47:24,000 --> 00:47:30,000
+when we look at the frequency response at higher frequencies
+
+00:47:30,000 --> 00:47:33,000
+what's the reason why those two curves
+
+00:47:33,000 --> 00:47:38,000
+don't quite follow each other at higher frequencies
+
+00:47:38,000 --> 00:47:43,000
+well the reason is aliasing other words what's happened
+
+00:47:43,000 --> 00:47:46,000
+is dead the in the process I'll
+
+00:47:46,000 --> 00:47:49,000
+applying in polls and variance the
+
+00:47:49,000 --> 00:47:53,000
+frequency response the original continuous-time filter
+
+00:47:53,000 --> 00:47:57,000
+is approximately preserved except for some distortion
+
+00:47:57,000 --> 00:48:01,000
+thats ocean correspondent aliasing
+
+00:48:01,000 --> 00:48:05,000
+well just for comparison let's look at what
+
+00:48:05,000 --> 00:48:09,000
+would happen if we took the same example and when I can work it through here
+
+00:48:09,000 --> 00:48:10,000
+carefully
+
+00:48:10,000 --> 00:48:15,000
+waco work through it all not even accurately
+
+00:48:15,000 --> 00:48:18,000
+if we took the same example and mapped it
+
+00:48:18,000 --> 00:48:24,000
+to a discrete-time filter by replacing the rivet is by backward differences
+
+00:48:24,000 --> 00:48:28,000
+what happens in that case is dead we get
+
+00:48:28,000 --> 00:48:31,000
+frequency response that I indicate
+
+00:48:31,000 --> 00:48:35,000
+here and notice dat the resonance
+
+00:48:35,000 --> 00:48:38,000
+in the original continuous-time filter is
+
+00:48:38,000 --> 00:48:42,000
+totally lost in fact
+
+00:48:42,000 --> 00:48:45,000
+basically the character love the continuous-time
+
+00:48:45,000 --> 00:48:48,000
+frequency responses los what's the reason
+
+00:48:48,000 --> 00:48:51,000
+well the reason goes back to the picture that I drew before
+
+00:48:51,000 --> 00:48:55,000
+the continuous-time filter had a
+
+00:48:55,000 --> 00:49:00,000
+pair love resident polls close to the jail may axis
+
+00:49:00,000 --> 00:49:04,000
+when those get mapped using back with differences they end up close to this
+
+00:49:04,000 --> 00:49:07,000
+little circle that's inside the unit circle
+
+00:49:07,000 --> 00:49:14,000
+but in fact for this example are far away from the unit circle
+
+00:49:14,000 --> 00:49:18,000
+alright so so far we have
+
+00:49:18,000 --> 00:49:22,000
+one useful technique for mapping continuous I filters to discrete-time
+
+00:49:22,000 --> 00:49:28,000
+filters and apart to highlights are the issues I focused attention also
+
+00:49:28,000 --> 00:49:31,000
+on some not so useful methods
+
+00:49:31,000 --> 00:49:37,000
+namely mapping derivatives to forward or backward differences
+
+00:49:37,000 --> 00:49:41,000
+next time what I would like to do
+
+00:49:41,000 --> 00:49:44,000
+is look at impulse invariance
+
+00:49:44,000 --> 00:49:48,000
+for another example namely the design
+
+00:49:48,000 --> 00:49:51,000
+0 a Butterworth filter and all
+
+00:49:51,000 --> 00:49:54,000
+talk more specifically about what butterworth filters or
+
+00:49:54,000 --> 00:49:58,000
+at the beginning that lecture and then in addition
+
+00:49:58,000 --> 00:50:02,000
+what will introduce is another very useful technique
+
+00:50:02,000 --> 00:50:07,000
+which has some difficulties which imposed and variance doesn't have
+
+00:50:07,000 --> 00:50:11,000
+but avoids the principal
+
+00:50:11,000 --> 00:50:14,000
+difficulty that impulse in various does have namely aliasing
+
+00:50:14,000 --> 00:50:19,000
+admitted is referred to as the violin you transformation
+
+00:50:19,000 --> 00:50:22,000
+which we will to find and
+
+00:50:22,000 --> 00:50:24,000
+utilize next time thank you
+

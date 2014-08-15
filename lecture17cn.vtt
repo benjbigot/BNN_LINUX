@@ -1,0 +1,3252 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+以下内容是根据Creative Commons授权提供
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+您的支持将有助于麻省理工学院开放式课程继续报价
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+免费优质教育资源
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+进行捐赠或查看附加材料由数百人资讯
+
+00:00:14,000 --> 00:00:15,000
+courses
+课程
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+参观麻省理工学院开放式课程在0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU Horan
+麻省理工学院的EDU霍兰
+
+00:00:28,000 --> 00:00:29,000
+the
+该
+
+00:00:29,000 --> 00:00:31,000
+
+
+
+00:00:31,000 --> 00:00:33,000
+the
+该
+
+00:00:33,000 --> 00:00:38,000
+the in
+在该
+
+00:00:38,000 --> 00:00:40,000
+in
+
+
+00:00:40,000 --> 00:00:44,000
+the
+该
+
+00:00:44,000 --> 00:00:47,000
+are in
+在
+
+00:00:47,000 --> 00:00:54,000
+for in discussing the sampling theorem
+在讨论采样定理
+
+00:00:57,000 --> 00:01:00,000
+we saw date for a ban limited signal which is sampled
+我们看到日期为采样禁令限制信号
+
+00:01:00,000 --> 00:01:05,000
+at a frequency that that is at least twice the highest frequency
+其频率至少是两倍的最高频率
+
+00:01:05,000 --> 00:01:08,000
+we can implement exact reconstruction
+我们可以实现精确重建
+
+00:01:08,000 --> 00:01:13,000
+of the original signal by low-pass filtering
+通过低通滤波的原始信号的
+
+00:01:13,000 --> 00:01:18,000
+an impulse train whose areas are identical to the sample values
+一个脉冲串，其区域是相同的样本值
+
+00:01:18,000 --> 00:01:21,000
+well essentially this low pass filtering
+以及基本上这个低通滤波
+
+00:01:21,000 --> 00:01:26,000
+operation provides for us and interpolation
+操作为我们提供了和插值
+
+00:01:26,000 --> 00:01:30,000
+in between the sample values in other words the output to the low-pass filter
+在换句话说，样本值之间的输出到低通滤波器
+
+00:01:30,000 --> 00:01:31,000
+in fact
+其实
+
+00:01:31,000 --> 00:01:34,000
+is a continuous curve which
+是一个连续的曲线，该曲线
+
+00:01:34,000 --> 00:01:38,000
+fits between a sample values some continuous function
+一个采样值之间符合一些连续函数
+
+00:01:38,000 --> 00:01:44,000
+now I'm sure that many have you are familiar with other kinds of
+现在我敢肯定，很多你所熟悉的其他种类的
+
+00:01:44,000 --> 00:01:46,000
+interpolation that we could potentially provide
+插值，我们可能提供
+
+00:01:46,000 --> 00:01:50,000
+in between sample values and in fact in today's lecture
+在样本值，而事实上在今天的讲座之间
+
+00:01:50,000 --> 00:01:54,000
+why I would like to do is first the ball
+为什么我会想要做的是第一球
+
+00:01:54,000 --> 00:01:58,000
+develop the interpretation
+发展的解释
+
+00:01:58,000 --> 00:02:02,000
+all the reconstruction as an interpolation process
+所有重建作为插值过程
+
+00:02:02,000 --> 00:02:05,000
+and then also see how this
+然后还看不出这
+
+00:02:05,000 --> 00:02:08,000
+exact interpolation using a low-pass filter
+使用一个低通滤波器精确插值
+
+00:02:08,000 --> 00:02:11,000
+relates to other kinds of interpolation
+涉及到其他类型的插值
+
+00:02:11,000 --> 00:02:15,000
+such as linear interpolation that you may already be familiar with
+比如，你可能已经熟悉的线性插值
+
+00:02:15,000 --> 00:02:19,000
+well to begin let's again review
+好，开始让我们再次回顾
+
+00:02:19,000 --> 00:02:23,000
+what the overall system is for exact reconstruction
+整个系统是用于精确重建
+
+00:02:23,000 --> 00:02:27,000
+sampling and reconstruction and so let me remind you that
+采样和重构等等，让我提醒你，
+
+00:02:27,000 --> 00:02:31,000
+the overall system for sampling and D sampling a reconstruction is as i
+采样和D采样重建整个系统是为我
+
+00:02:31,000 --> 00:02:33,000
+indicate here
+在此说明
+
+00:02:33,000 --> 00:02:36,000
+the sampling process consists love
+采样过程由爱
+
+00:02:36,000 --> 00:02:41,000
+multiplying by an impulse train and then the reconstruction process
+由一个脉冲串，然后重建过程相乘
+
+00:02:41,000 --> 00:02:44,000
+corresponds the processing that impulse train with
+对应的脉冲串的处理
+
+00:02:44,000 --> 00:02:48,000
+a low-pass filter so if the
+一个低通滤波器，所以，如果
+
+00:02:48,000 --> 00:02:51,000
+spectrum of the original signal
+原始信号的频谱
+
+00:02:51,000 --> 00:02:55,000
+is what I indicate in this diagram
+是我指出此图
+
+00:02:55,000 --> 00:02:58,000
+then after sampling with an impulse train
+然后用脉冲序列采样后
+
+00:02:58,000 --> 00:03:02,000
+that spectrum is replicated and
+频谱被复制，
+
+00:03:02,000 --> 00:03:06,000
+this replicated spectrum for reconstruction
+这个复制的光谱重建
+
+00:03:06,000 --> 00:03:10,000
+is then processed through a low-pass filter
+然后，通过低通滤波器处理
+
+00:03:10,000 --> 00:03:13,000
+and so in fact if this frequency response
+因此，事实上，如果该频率响应
+
+00:03:13,000 --> 00:03:18,000
+is an idea low-pass filter as i indicated on the diagram below
+是一个想法的低通滤波器正如我下面的图上
+
+00:03:18,000 --> 00:03:22,000
+then multiplying the
+然后乘以
+
+00:03:22,000 --> 00:03:26,000
+spectrum of the sample signal by this extracts 4s
+该采样信号的频谱提取4S
+
+00:03:26,000 --> 00:03:29,000
+just the portion all
+只是部分全部
+
+00:03:29,000 --> 00:03:33,000
+the spectrum centered around the origin
+围绕原点为中心的频谱
+
+00:03:33,000 --> 00:03:36,000
+and what we're left with then is the
+而我们留下了那么什么是
+
+00:03:36,000 --> 00:03:39,000
+spectrum finally of the reconstructed signal
+重构信号的频谱终于
+
+00:03:39,000 --> 00:03:43,000
+which for the case of an idea low-pass filter
+这对于一个想法的低通滤波器的情况下
+
+00:03:43,000 --> 00:03:47,000
+is exactly equal to the spectrum of the original signal
+正好等于原始信号的频谱
+
+00:03:47,000 --> 00:03:50,000
+now that is the
+既然是
+
+00:03:50,000 --> 00:03:54,000
+frequency domain picture
+频域图片
+
+00:03:54,000 --> 00:03:58,000
+all the sampling and reconstruction let's also look at
+所有的采样和重建，让我们也看看
+
+00:03:58,000 --> 00:04:02,000
+basically the same process but let's examine it now
+基本上是相同的过程，但让我们来看看它现在
+
+00:04:02,000 --> 00:04:06,000
+in the time domain well in the time domain
+在时域以及在时域
+
+00:04:06,000 --> 00:04:10,000
+what we have is are original signal
+我们所拥有的是原始信号
+
+00:04:10,000 --> 00:04:14,000
+multiply it by an impulse train and
+由一个脉冲串乘以它和
+
+00:04:14,000 --> 00:04:17,000
+this then is the sampled
+这便是采样
+
+00:04:17,000 --> 00:04:22,000
+signal or the impulse train whose areas are equal to the sample values
+信号或脉冲串，其面积相等的采样值
+
+00:04:22,000 --> 00:04:27,000
+and because it the fact that this is an impulse train
+并且，因为它的事实，这是一个脉冲串
+
+00:04:27,000 --> 00:04:30,000
+in fact we can take this term
+其实我们可以把这个词
+
+00:04:30,000 --> 00:04:33,000
+inside the summation
+求和内
+
+00:04:33,000 --> 00:04:37,000
+and of course what counts about except Ian this expression
+当然，除了什么伊恩计算这个表达式
+
+00:04:37,000 --> 00:04:41,000
+is just as bad use at the sampling instants
+同样糟糕的使用在采样时刻
+
+00:04:41,000 --> 00:04:45,000
+which are displaced in time by capital T and so
+它由大写字母T是流离失所的时间等
+
+00:04:45,000 --> 00:04:49,000
+to what we can to quietly right is the
+要什么，我们可以静静地权是
+
+00:04:49,000 --> 00:04:53,000
+expression for the impulse train samples or
+对于脉冲串的样品或表达式
+
+00:04:53,000 --> 00:04:57,000
+imposed strain of samples as i've indicated here
+样品施加应变，因为我已经在这里表示
+
+00:04:57,000 --> 00:05:03,000
+simply an imposed strain whose areas are the sample bad
+简单地强加应变的领域是不好的范例
+
+00:05:03,000 --> 00:05:07,000
+now in the reconstruction we process
+现在我们处理的重建
+
+00:05:07,000 --> 00:05:12,000
+that impulse train with a low-pass filter that's the basic notion of the
+该脉冲串的低通滤波器，是的基本概念
+
+00:05:12,000 --> 00:05:13,000
+reconstruction
+重建
+
+00:05:13,000 --> 00:05:18,000
+and so in the time domain be reconstructed signal
+因此在时域中是重构信号
+
+00:05:18,000 --> 00:05:23,000
+is related to the imposed strain of samples
+是与样品所施加的应变
+
+00:05:23,000 --> 00:05:28,000
+through a convolution with the filter impulse response
+通过与滤波器的脉冲响应的卷积
+
+00:05:28,000 --> 00:05:31,000
+and carrying out this convolution since
+而开展这项自卷积
+
+00:05:31,000 --> 00:05:36,000
+this is just the train of pulses in effect what happens in this convolution
+这是脉冲刚刚生效的列车在此卷积发生了什么
+
+00:05:36,000 --> 00:05:40,000
+is dead this impulse response gets
+死了这个脉冲响应得到
+
+00:05:40,000 --> 00:05:44,000
+reproduced at each of the locations 0
+再生在每个位置0的
+
+00:05:44,000 --> 00:05:48,000
+the impulses index a PFD with the appropriate area
+冲动指数PFD与适当的区域
+
+00:05:48,000 --> 00:05:53,000
+and finally then in the time domain the reconstructed signal
+最后再在时域重构信号
+
+00:05:53,000 --> 00:05:57,000
+is simply a linear combination
+是一个简单的线性组合
+
+00:05:57,000 --> 00:06:01,000
+love shifted versions of the impulse response
+爱移位脉冲响应的版本
+
+00:06:01,000 --> 00:06:05,000
+with amplitudes Witcher the sample values
+与振幅巫师的样本值
+
+00:06:05,000 --> 00:06:09,000
+and so this expression in fact and is our basic
+所以实际上这表达的是我们的基本
+
+00:06:09,000 --> 00:06:14,000
+reconstruction expression in the time domain
+在时域重建表达
+
+00:06:14,000 --> 00:06:18,000
+well in terms of a diagram
+以及在图的形式
+
+00:06:18,000 --> 00:06:21,000
+we can think of the original waveform
+我们可以认为原来的波形
+
+00:06:21,000 --> 00:06:24,000
+as I've shown here and
+因为我已经在这里显示和
+
+00:06:24,000 --> 00:06:27,000
+the red arrows denote be
+红色箭头表示被
+
+00:06:27,000 --> 00:06:30,000
+sampled waveform or the train
+采样的波形或火车
+
+00:06:30,000 --> 00:06:33,000
+love impulses whose amplitude are
+爱冲动的幅度是
+
+00:06:33,000 --> 00:06:37,000
+the sample values up the original
+样本值高达原始
+
+00:06:37,000 --> 00:06:41,000
+continuous-time signal and
+连续时间信号和
+
+00:06:41,000 --> 00:06:46,000
+then I've shown here it what might be a typical impulse response
+那么我在这里表明，它可能是什么一个典型的脉冲响应
+
+00:06:46,000 --> 00:06:50,000
+particularly typical in the case where we're talking about reconstruction with
+在我们谈论重建的情况下特别典型
+
+00:06:50,000 --> 00:06:53,000
+an ideal 0 pass filter
+一个理想的0通滤波器
+
+00:06:53,000 --> 00:06:57,000
+now what happens in the reconstruction
+现在在重建会发生什么
+
+00:06:57,000 --> 00:07:00,000
+is that the convolution love these
+是卷积喜欢这些
+
+00:07:00,000 --> 00:07:04,000
+impulses with this impulse response
+冲动与此脉冲响应
+
+00:07:04,000 --> 00:07:07,000
+means that in the reconstruction
+也就是说，在重建
+
+00:07:07,000 --> 00:07:11,000
+we superimpose wanted these impulse responses whatever the filter IPO's
+我们想要叠加这些脉冲响应任何过滤器首次公开招股
+
+00:07:11,000 --> 00:07:13,000
+response happens to be
+响应恰好是
+
+00:07:13,000 --> 00:07:18,000
+at each of these time instants and in doing that
+在每个这些时间瞬间的和在这样做
+
+00:07:18,000 --> 00:07:23,000
+then those are added up and that gives us the total reconstructed signal
+那么这些被累加起来，这使我们的总重建信号
+
+00:07:23,000 --> 00:07:28,000
+of course for the case in which the filter is an ideal
+当然对的情况下，其中，过滤器是一种理想的
+
+00:07:28,000 --> 00:07:33,000
+low-pass filter then what we know is that in that case
+低通滤波器那么我们所知道的是，在这种情况下，
+
+00:07:33,000 --> 00:07:38,000
+the impulse response is on the form of a sync function
+的脉冲响应是一个同步函数的形式对
+
+00:07:38,000 --> 00:07:43,000
+but generally we may want to consider other kinds of impulse responses and so
+但是一般我们可能要考虑其他类型的脉冲响应等
+
+00:07:43,000 --> 00:07:44,000
+in fact
+其实
+
+00:07:44,000 --> 00:07:47,000
+the interpolating impulse response
+内插脉冲响应
+
+00:07:47,000 --> 00:07:50,000
+may have and will have is this discussion goes along some different
+可能有，将有是本次讨论随之而来的一些不同
+
+00:07:50,000 --> 00:07:52,000
+shapes
+形状
+
+00:07:52,000 --> 00:07:57,000
+now what I'd like to do is illustrator demonstrate this process
+现在我想要做的是插画演示这个过程
+
+00:07:57,000 --> 00:08:02,000
+love all affectively doing the interpolation
+爱所有的情感上做插值
+
+00:08:02,000 --> 00:08:06,000
+by replacing each of the impulses
+通过更换每个冲动
+
+00:08:06,000 --> 00:08:10,000
+by an appropriate interpolating impulse response and adding the stop
+通过适当的内插脉冲响应和添加的停止
+
+00:08:10,000 --> 00:08:14,000
+and I'd like to do this with a computer movie that we generated
+我想与大家产生了计算机的电影做到这一点
+
+00:08:14,000 --> 00:08:17,000
+and what you're seeing the computer movie is
+和你看到的计算机的电影是什么
+
+00:08:17,000 --> 00:08:21,000
+essentially original way for which is a continuous curve
+对于这实质上原始的方法是一连续的曲线
+
+00:08:21,000 --> 00:08:25,000
+and then below that in the movie
+然后下面，在电影
+
+00:08:25,000 --> 00:08:29,000
+is a train samples
+是一个训练样本
+
+00:08:29,000 --> 00:08:33,000
+and then below that will be the reconstructed signal and the
+然后下面，将重构信号与
+
+00:08:33,000 --> 00:08:34,000
+reconstruction
+重建
+
+00:08:34,000 --> 00:08:40,000
+will be carried out by showing the location of the impulse response as it
+将被进行了示出，因为它的脉冲响应的位置
+
+00:08:40,000 --> 00:08:42,000
+moves along in the way form
+在表格的方式一起移动
+
+00:08:42,000 --> 00:08:47,000
+and then the reconstructed kurt is simply the summation of those is that
+然后将重构的库尔特仅仅是那些的总和是
+
+00:08:47,000 --> 00:08:49,000
+impulse response moves along
+脉冲响应一起移动
+
+00:08:49,000 --> 00:08:54,000
+so what you'll see then is an impulse response like this for the particular
+所以你会看到那么就是这样的脉冲响应为特定的
+
+00:08:54,000 --> 00:08:55,000
+case
+案
+
+00:08:55,000 --> 00:08:59,000
+love and idea low-pass filter for the reconstruction
+爱情和想法的低通滤波器，用于灾后重建
+
+00:08:59,000 --> 00:09:02,000
+an impulse response like this place
+喜欢这个地方的脉冲响应
+
+00:09:02,000 --> 00:09:05,000
+successively at the locations love
+先后在爱的位置
+
+00:09:05,000 --> 00:09:10,000
+these impulses and that is the convolution process
+这些冲动，那就是卷积过程
+
+00:09:10,000 --> 00:09:14,000
+and below that then will be the summation if these
+而低于然后将总和，如果这些
+
+00:09:14,000 --> 00:09:18,000
+and the summation up those will then be the reconstructed signal
+和求和了那些随后将重构信号
+
+00:09:18,000 --> 00:09:23,000
+so let's take a look at first of all that reconstruction
+所以让我们来看看首先是重建
+
+00:09:23,000 --> 00:09:26,000
+where the impulse response corresponds to the impulse response
+其中的脉冲响应对应的脉冲响应
+
+00:09:26,000 --> 00:09:30,000
+have an idea low-pass filter shown here first
+在这里显示一个想法，低通滤波器第一
+
+00:09:30,000 --> 00:09:34,000
+is the continuous-time signal which
+是连续时间信号，该信号
+
+00:09:34,000 --> 00:09:38,000
+we want to sample and then reconstruct using
+我们要样品，然后利用重构
+
+00:09:38,000 --> 00:09:41,000
+fan limited interpolation or equivalently
+风机有限插值或等价
+
+00:09:41,000 --> 00:09:45,000
+idea low-pass filtering on the set of samples
+该组样品的构思的低通滤波
+
+00:09:45,000 --> 00:09:49,000
+so the first step then is the sample this continuous time signal
+所以第一步则是样本这种连续时间信号
+
+00:09:49,000 --> 00:09:53,000
+and we see here now the set of samples
+我们在这里看到现在的样本集
+
+00:09:53,000 --> 00:09:58,000
+and superimposed on the samples are the original continuous 5 signal
+和叠放在样品上是原始的连续5个信号
+
+00:09:58,000 --> 00:10:03,000
+to focus on the fact that those are samples are the top curve
+专注于一个事实，即这些是样品的顶部曲线
+
+00:10:03,000 --> 00:10:07,000
+let's now remove the continuous-time
+现在让我们去掉连续时间
+
+00:10:07,000 --> 00:10:12,000
+envelope with the samples and it's this set of samples that we then want to use
+信封的样本，它的这组样品的，我们当时想用
+
+00:10:12,000 --> 00:10:14,000
+for the reconstruction
+对于重建
+
+00:10:14,000 --> 00:10:17,000
+the reconstruction process interpreted as interpolation
+重建过程解释为插值
+
+00:10:17,000 --> 00:10:22,000
+consists of replacing each sample with a sin x over X function
+包括与赎罪x在X功能替换每个样品
+
+00:10:22,000 --> 00:10:26,000
+and so let's first consider the sample
+所以，让我们首先考虑样本
+
+00:10:26,000 --> 00:10:30,000
+at equal 0 and here is the
+在同等0这里是
+
+00:10:30,000 --> 00:10:33,000
+interpolating sin x over X function Associated
+插值罪倍过相关X功能
+
+00:10:33,000 --> 00:10:37,000
+with that sample now the more general
+与该样本现在更普遍的
+
+00:10:37,000 --> 00:10:40,000
+process then is to
+过程则是
+
+00:10:40,000 --> 00:10:45,000
+place a sin x over expulsion at the time location of each sample and superimpose
+放置一个罪恶x在驱逐在每个样本的时间位置和叠加
+
+00:10:45,000 --> 00:10:48,000
+those
+那些
+
+00:10:48,000 --> 00:10:52,000
+let's begin that process at the left-hand and
+让我们开始这一进程在左侧和
+
+00:10:52,000 --> 00:10:56,000
+the set of samples and in the bottom curve
+该组样品，并在底部曲线
+
+00:10:56,000 --> 00:11:00,000
+will build up the reconstruction as those sin x over X functions
+将建立重建那些罪恶倍过x形式的函数
+
+00:11:00,000 --> 00:11:05,000
+are added together so we begin with the left hand sample and we see their the
+合在一起，我们开始用左手样本，我们看到了他们的
+
+00:11:05,000 --> 00:11:06,000
+sin x over X function
+罪倍过X功能
+
+00:11:06,000 --> 00:11:11,000
+on the bottom curve then is the first step in the reconstruction
+底部曲线上则是在重建的第一步
+
+00:11:11,000 --> 00:11:15,000
+we now have the sin x over X function associated with the second sample
+我们现在有罪过x在与第二样本关联X功能
+
+00:11:15,000 --> 00:11:19,000
+let's add that in now we move on
+让我们补充一点，在现在我们继续前进
+
+00:11:19,000 --> 00:11:24,000
+to the third sample and that sin x over X function
+第三样品和罪x在X功能
+
+00:11:24,000 --> 00:11:27,000
+is added in
+在加
+
+00:11:27,000 --> 00:11:31,000
+continuing on the next
+继续对下一个
+
+00:11:31,000 --> 00:11:34,000
+sample generates a sin x over X function
+示例生成一种罪过x在X功能
+
+00:11:34,000 --> 00:11:38,000
+which is superimposed on the result that we've accumulated
+这是叠加在我们已经积累的结果
+
+00:11:38,000 --> 00:11:41,000
+so far and now let's just
+到目前为止，现在就让我们
+
+00:11:41,000 --> 00:11:45,000
+speed up the process will move on to the fifth sample
+加快这一进程将进入到第五个样品
+
+00:11:45,000 --> 00:11:48,000
+add that in the sect sample add that in
+补充说，该教派样品中添加的
+
+00:11:48,000 --> 00:11:52,000
+and continue on through the set of samples and
+并继续通过样本集与
+
+00:11:52,000 --> 00:11:56,000
+keep in mind the fact that basically what we're doing explicitly here
+记住，基本上我们在做什么，在这里明确的事实
+
+00:11:56,000 --> 00:12:02,000
+is the convolution up the impulse train with a sin x over X function
+是卷积起来的冲动列车赎罪x在X功能
+
+00:12:02,000 --> 00:12:05,000
+and because the set of samples that we started with
+并且，因为我们开始与样本集
+
+00:12:05,000 --> 00:12:08,000
+where samples haven't exactly been limited function
+其中样品已经不完全受到了限制功能
+
+00:12:08,000 --> 00:12:12,000
+what we are reconstructing exactly
+我们现在正是重建
+
+00:12:12,000 --> 00:12:15,000
+is the original continuous-time signal
+是原来的连续时间信号
+
+00:12:15,000 --> 00:12:22,000
+that we have on the top trace
+我们对顶部曲线
+
+00:12:24,000 --> 00:12:27,000
+okay so that then
+好吧，让当时
+
+00:12:27,000 --> 00:12:31,000
+kinda gives you the picture above doing
+还挺给你做上面的图片
+
+00:12:31,000 --> 00:12:36,000
+interpolation by replacing the impulses by a continuous curve and that's the way
+插值由一条连续的曲线取代了冲动，这就是方式
+
+00:12:36,000 --> 00:12:37,000
+we're fitting
+我们正在装修
+
+00:12:37,000 --> 00:12:40,000
+a continuous curve to the original
+一条连续的曲线为原始
+
+00:12:40,000 --> 00:12:44,000
+impulse train and let me stress
+脉冲串，让我压力
+
+00:12:44,000 --> 00:12:47,000
+that this reconstruction process
+这个重建过程
+
+00:12:47,000 --> 00:12:50,000
+by putting the impulses through
+通过把冲动通过
+
+00:12:50,000 --> 00:12:54,000
+a filter the reconstruction process
+一个过滤重建进程
+
+00:12:54,000 --> 00:12:58,000
+follows this relationship whether or not
+如下这种关系是否
+
+00:12:58,000 --> 00:13:03,000
+this impulse response in fact corresponds to an ideal ok pass filter
+其实这种脉冲响应对应于一个理想的确定通滤波器
+
+00:13:03,000 --> 00:13:08,000
+what this expression always says is dead reconstructing this way
+这是什么表情总是说死了重建这种方式
+
+00:13:08,000 --> 00:13:11,000
+corresponds to replacing the impulses
+对应更换冲动
+
+00:13:11,000 --> 00:13:15,000
+by a shift in impulse response with an effort to
+通过在脉冲响应的移位与努力
+
+00:13:15,000 --> 00:13:22,000
+dead is an amplitude corresponding to the sample value now
+死是对应于采样值现在的振幅
+
+00:13:22,000 --> 00:13:27,000
+be kinda reconstruction dead we've just talked about and the ideal
+是有点死重建我们刚才谈到的理想
+
+00:13:27,000 --> 00:13:28,000
+reconstruction
+重建
+
+00:13:28,000 --> 00:13:33,000
+is often referred to as band limited
+常被称为带限
+
+00:13:33,000 --> 00:13:37,000
+interpolation because for interpolating in between the samples
+内插，因为样品之间进行内插在
+
+00:13:37,000 --> 00:13:40,000
+by making the assumption that the signals ban limited
+通过使假定的信号禁止有限
+
+00:13:40,000 --> 00:13:45,000
+and using the impulse response for an idea low-pass filter
+以及使用脉冲响应为一个想法的低通滤波器
+
+00:13:45,000 --> 00:13:49,000
+which has a cutoff frequency consistent with
+其中有一个截止频率具有一致的
+
+00:13:49,000 --> 00:13:53,000
+the soon band with for the signal so if we look
+即将与乐队的信号，所以如果我们看
+
+00:13:53,000 --> 00:13:57,000
+here for example at the impulse train
+在这里，例如在列车冲动
+
+00:13:57,000 --> 00:14:00,000
+then in the demonstration that you just saw
+那么，你刚才看到的演示
+
+00:14:00,000 --> 00:14:06,000
+we built up the reconstructed curve by replacing each of these impulses
+我们建立了重建的曲线，通过更换这些冲动
+
+00:14:06,000 --> 00:14:09,000
+with the sync function and the some of those
+与同步功能和其中一些
+
+00:14:09,000 --> 00:14:14,000
+built up the reconstruct the curve well
+建立了重建曲线以及
+
+00:14:14,000 --> 00:14:17,000
+there are lots of other kinds of interpolation
+还有很多其他种插值的
+
+00:14:17,000 --> 00:14:20,000
+dead are perhaps maybe not as exact
+死也许，也许不是确切
+
+00:14:20,000 --> 00:14:25,000
+by often easier to implement and what I'd like to do is focus our attention on
+通过经常更容易实现，什么我想要做的就是集中我们的注意力放在
+
+00:14:25,000 --> 00:14:26,000
+to appease
+安抚
+
+00:14:26,000 --> 00:14:31,000
+one of these the first that I want to mention is what's referred to as a
+其中之一是我首先要提到的是什么被称为
+
+00:14:31,000 --> 00:14:32,000
+zero-order hold
+零阶保持
+
+00:14:32,000 --> 00:14:36,000
+where in effect we do the interpolation in between these
+那里实际上我们做的插值在这些之间
+
+00:14:36,000 --> 00:14:40,000
+sample values by simply holding the sample value
+简单地举行了样本值的样本值
+
+00:14:40,000 --> 00:14:45,000
+until the next sampling instant and the reconstruction
+直到下一个采样时刻和重建
+
+00:14:45,000 --> 00:14:49,000
+that we end up with in that that case will look something like this:
+我们结束了在这种情况下，将看起来像这样：
+
+00:14:49,000 --> 00:14:52,000
+it's a staircase or boxcar kinda function
+这是一个楼梯或棚车还挺功能
+
+00:14:52,000 --> 00:14:56,000
+where we've simply held the sample value
+在那里，我们已经简单地举行的样本值
+
+00:14:56,000 --> 00:15:01,000
+until the next sampling instant and then replaced by that value held until the
+直到下一个采样时刻，然后由该值取代一直保持到
+
+00:15:01,000 --> 00:15:02,000
+next sampling instant et cetera
+下一个采样时刻等等
+
+00:15:02,000 --> 00:15:07,000
+now that's one kinda interpolation
+现在这是1还挺插值
+
+00:15:07,000 --> 00:15:10,000
+another kinda very common interpolation is
+另一个有点很常见的插值
+
+00:15:10,000 --> 00:15:13,000
+what's referred to as linear interpolation we simply fit
+什么是称为线性插值，我们只是配合
+
+00:15:13,000 --> 00:15:18,000
+a straight line between the sample values and in that case
+样本值之间的和在这种情况下，一个直线
+
+00:15:18,000 --> 00:15:21,000
+the cut be type reconstruction that we would get
+切是类型重建，我们会得到
+
+00:15:21,000 --> 00:15:26,000
+would look something like I indicate here where we take a sample value
+看起来像我在此表明，我们采取的样本值
+
+00:15:26,000 --> 00:15:32,000
+and the following sample value and simply fit interpolated curve between
+而下面的示例值，简单地之间的拟合曲线插值
+
+00:15:32,000 --> 00:15:33,000
+them
+他们
+
+00:15:33,000 --> 00:15:37,000
+which is a straight line now
+这是一条直线现
+
+00:15:37,000 --> 00:15:41,000
+interestingly in fact both the zero-order hold
+有趣的是，事实上无论是零阶保持
+
+00:15:41,000 --> 00:15:44,000
+and the linear interpolation which is
+以及线性内插是
+
+00:15:44,000 --> 00:15:48,000
+often referred to as a first-order hold can also
+通常被称为一阶保持也可以
+
+00:15:48,000 --> 00:15:53,000
+be either implemented or interpreted both implemented interpreted
+被实施或解释执行两种解释
+
+00:15:53,000 --> 00:15:56,000
+in the context of the equation that we just develop
+在我们刚刚发展方程的背景下
+
+00:15:56,000 --> 00:15:59,000
+in particular the processing I'll the
+特别是处理我会的
+
+00:15:59,000 --> 00:16:03,000
+imposed strain of samples by
+样品施加应变由
+
+00:16:03,000 --> 00:16:06,000
+a linear time-invariant filter specifically
+一个线性时不变滤波器专
+
+00:16:06,000 --> 00:16:10,000
+if we consider a
+如果我们考虑一个
+
+00:16:10,000 --> 00:16:13,000
+system where the impulse response
+系统中的脉冲响应
+
+00:16:13,000 --> 00:16:17,000
+is a rectangular function
+是矩形函数
+
+00:16:17,000 --> 00:16:20,000
+then in fact if
+那么实际上，如果
+
+00:16:20,000 --> 00:16:24,000
+we processed the train if samples
+我们处理的列车，如果样本
+
+00:16:24,000 --> 00:16:28,000
+through a filter with this impulse response exactly
+通过与此脉冲响应的滤波器恰好
+
+00:16:28,000 --> 00:16:32,000
+the reconstruction that we would get is what I've shown here
+我们会得到的重建是我在这里显示
+
+00:16:32,000 --> 00:16:36,000
+alternatively if we chose an impulse response
+相反，如果我们选择的脉冲响应
+
+00:16:36,000 --> 00:16:39,000
+which was a triangular
+这是一个三角形的
+
+00:16:39,000 --> 00:16:43,000
+impulse response then
+脉冲响应则
+
+00:16:43,000 --> 00:16:46,000
+what in effect happens is that each of these impulses
+实际上发生的事情是这些冲动
+
+00:16:46,000 --> 00:16:49,000
+activates this triangle
+激活这个三角形
+
+00:16:49,000 --> 00:16:55,000
+and when we add up those triangles at successive locations in fact
+而当我们添加了这些三角形在实际上连续位置
+
+00:16:55,000 --> 00:16:59,000
+what we generate is this linear interpolation
+我们生成这是什么线性插值
+
+00:16:59,000 --> 00:17:03,000
+so what this says in fact is dead
+所以这行，其实是死的
+
+00:17:03,000 --> 00:17:06,000
+either a zero-order hold
+无论是零阶保持
+
+00:17:06,000 --> 00:17:09,000
+which holds the value or linear interpolation
+它保存的值或线性内插
+
+00:17:09,000 --> 00:17:13,000
+can likewise be interpreted as a process
+同样可以被理解为一个过程
+
+00:17:13,000 --> 00:17:17,000
+love convolved thing the impulse trainer samples
+爱卷积东西的冲动训练样本
+
+00:17:17,000 --> 00:17:21,000
+with inappropriate filter impulse response
+用不恰当的滤波器的脉冲响应
+
+00:17:21,000 --> 00:17:24,000
+well what I'd like to do is demonstrate
+还有就是我想要做的就是证明
+
+00:17:24,000 --> 00:17:27,000
+as we did with the ban limit interpolation or
+当我们与禁限插或做
+
+00:17:27,000 --> 00:17:33,000
+these sink interpolation is sometimes called interplay with a sin x over axe
+这些接收器插有时也被称为相互作用与赎罪倍过斧
+
+00:17:33,000 --> 00:17:36,000
+let me now show the process first the ball
+现在让我第一次显示进程球
+
+00:17:36,000 --> 00:17:40,000
+where we have a zero-order hold
+在这里我们有一个零阶保持
+
+00:17:40,000 --> 00:17:44,000
+as corresponding to this impulse response
+作为对应于该脉冲响应
+
+00:17:44,000 --> 00:17:48,000
+in which case we'll see basically the same process as we saw your
+在这种情况下，我们会看到基本上是相同的过程，因为我们看到了你的
+
+00:17:48,000 --> 00:17:52,000
+in the computer-generated movie previously
+在先前的计算机生成的电影
+
+00:17:52,000 --> 00:17:55,000
+but now rather than a sync function replacing
+但现在，而不是同步功能替换
+
+00:17:55,000 --> 00:17:59,000
+each of these impulses will have a rectangular function
+每个脉冲将具有矩形函数
+
+00:17:59,000 --> 00:18:06,000
+that will generate then are approximation which is a zero-order hold
+这将产生然后是逼近这是一个零阶保持
+
+00:18:06,000 --> 00:18:10,000
+and following that will do exactly the same thing with the same way form
+而下面会做同样的事情用同样的方式形式
+
+00:18:10,000 --> 00:18:14,000
+using a first-order hold or a triangular impulse response
+使用第一阶保持或三角形脉冲响应
+
+00:18:14,000 --> 00:18:20,000
+in which case well we'll see again is that as the triangle moves along here
+在这种情况下，以及我们将再次看到的是，作为三角形沿移动这里
+
+00:18:20,000 --> 00:18:24,000
+and we build up the running some or the convolution
+我们建立运行一些或卷积
+
+00:18:24,000 --> 00:18:27,000
+then will in fact fit the original curve
+那么，实际上是在配合原有的曲线
+
+00:18:27,000 --> 00:18:31,000
+with a linear curve soul now let's
+用线性曲线的灵魂现在让我们来
+
+00:18:31,000 --> 00:18:34,000
+again look at that remembering that at the top will see
+再看看那个回忆，在上方会看到
+
+00:18:34,000 --> 00:18:38,000
+the original continuous curve exactly the one that we had before
+原来连续的曲线正是一个我们以前有
+
+00:18:38,000 --> 00:18:42,000
+below it the set of samples together with
+它下面的样本集与
+
+00:18:42,000 --> 00:18:47,000
+the impulse response moving along and then finally below that
+脉冲响应沿，然后移动终于低于
+
+00:18:47,000 --> 00:18:51,000
+the accumulation of those impulse responses work with only
+这些脉冲响应的积累与只能工作
+
+00:18:51,000 --> 00:18:56,000
+the convolution or equivalent Lee the reconstruction
+卷积或同等利重建
+
+00:18:56,000 --> 00:19:01,000
+so we have the same continuous-time signal that we use previously with
+因此，我们有我们以前使用的相同的连续时间信号
+
+00:19:01,000 --> 00:19:04,000
+ban limited interpolation and in this case
+禁止有限插补并且在这种情况
+
+00:19:04,000 --> 00:19:09,000
+now we want to sample and then interpolate first for the zero-order
+现在我们要样品，然后先插的零阶
+
+00:19:09,000 --> 00:19:10,000
+hold
+持有
+
+00:19:10,000 --> 00:19:13,000
+and then with the first-order whole so the first step then
+然后用一阶全是这样，那么第一步
+
+00:19:13,000 --> 00:19:17,000
+is the sample the continuous-time signal
+是样品的连续时间信号
+
+00:19:17,000 --> 00:19:21,000
+and we show here at the set of samples once again
+我们在这里展示的样本集再次
+
+00:19:21,000 --> 00:19:25,000
+superimposed on which we have the continuous-time signal
+叠加在其上我们有连续时间信号
+
+00:19:25,000 --> 00:19:28,000
+which of course is exactly the same curve as
+这当然是完全一样的曲线作为
+
+00:19:28,000 --> 00:19:31,000
+we have in the top well let's
+我们在上面也让我们
+
+00:19:31,000 --> 00:19:34,000
+remove that envelope so that we focus attention
+删除信封，让我们把注意力集中
+
+00:19:34,000 --> 00:19:37,000
+on the samples that were using to interpolate
+上的是用内插样本
+
+00:19:37,000 --> 00:19:42,000
+any interpolation process consists love replacing each sample
+任何插值过程由爱替换每个样品
+
+00:19:42,000 --> 00:19:46,000
+by a rectangular signal
+由矩形信号
+
+00:19:46,000 --> 00:19:49,000
+whose amplitude is equal to the sample size
+其幅度等于样本大小
+
+00:19:49,000 --> 00:19:53,000
+so let's put one first of all at equal 0 Associated
+所以让我们把所有的一个首先在平等0美联社
+
+00:19:53,000 --> 00:19:56,000
+with that sample
+与样品
+
+00:19:56,000 --> 00:20:02,000
+and that then would be the interpolating rectangle associated with the sample at
+并且然后将与样品在相关联的内插矩形
+
+00:20:02,000 --> 00:20:04,000
+equal 0
+等于0
+
+00:20:04,000 --> 00:20:08,000
+now to build up the interpolation what will have is one of those that each
+现在建立起来的插值什么将是那些每一个
+
+00:20:08,000 --> 00:20:10,000
+sample time and those are
+采样时间和那些
+
+00:20:10,000 --> 00:20:14,000
+added together will start that process as we did before
+加在一起将开始这一进程，因为我们以前那样
+
+00:20:14,000 --> 00:20:17,000
+at the left hand and that the set of samples
+在左手和该组样品
+
+00:20:17,000 --> 00:20:21,000
+and build the interpolating signal on the bottom so
+并建立在底部的内插信号，使得
+
+00:20:21,000 --> 00:20:24,000
+with the left hand sample we have first
+用左手示例中，我们首先有
+
+00:20:24,000 --> 00:20:28,000
+the rectangle associated with that that shown
+这表明与该关联矩形
+
+00:20:28,000 --> 00:20:32,000
+now on the bottom curve we now
+现在底部的曲线上我们现在
+
+00:20:32,000 --> 00:20:35,000
+have a senator plating rectangle with the second
+与第二参议员电镀矩形
+
+00:20:35,000 --> 00:20:40,000
+sample that gets headed into the bottom curve
+样品会越走越一进入底部曲线
+
+00:20:40,000 --> 00:20:44,000
+similarly and interpolating rectangle for the zero-order hold
+类似地与内插矩形的零阶保持
+
+00:20:44,000 --> 00:20:49,000
+with the third sample we had bad in to the bottom curve
+与第三个示例中，我们在底部曲线有坏
+
+00:20:49,000 --> 00:20:53,000
+and as we proceed we're building a staircase approximation
+当我们继续我们正在构建一个阶梯近似
+
+00:20:53,000 --> 00:20:57,000
+on to the next sample that gets added in
+上会越走越中添加的下一个样本
+
+00:20:57,000 --> 00:21:00,000
+as we see the air and now lets speed up the process
+因为我们看到了空中，现在可以加快进程
+
+00:21:00,000 --> 00:21:03,000
+and we'll see the staircase approximation
+我们将看到楼梯逼近
+
+00:21:03,000 --> 00:21:07,000
+building up and notice in this case
+建立并通知在这种情况下，
+
+00:21:07,000 --> 00:21:11,000
+as in the previous case that what we're basically watching dynamically
+在什么我们基本上动态看前面的情况
+
+00:21:11,000 --> 00:21:16,000
+is the convolution love the imposed strain of samples
+被卷积爱样品所施加的应变
+
+00:21:16,000 --> 00:21:19,000
+with the impulse response the interpolating filter
+用脉冲响应内插滤波器
+
+00:21:19,000 --> 00:21:24,000
+which in this particular case is just a rectangular Paul's
+在这种特定的情况下，仅仅是一个长方形的保罗
+
+00:21:24,000 --> 00:21:28,000
+and so this staircase approximation that we're generating
+所以这个阶梯近似，我们正在生成
+
+00:21:28,000 --> 00:21:31,000
+is the zero-order hold interpolation
+是零阶保持插值
+
+00:21:31,000 --> 00:21:34,000
+between the samples I love the
+样本之间我爱
+
+00:21:34,000 --> 00:21:41,000
+ban limited signal which is at the top
+禁止有限信号，它是在顶部
+
+00:21:41,000 --> 00:21:46,000
+now let's do the same thing with the first-order whole so in this case
+现在让我们做同样的事情与一阶全所以在这种情况下，
+
+00:21:46,000 --> 00:21:51,000
+we want to interpolate using a triangular impulse response
+我们想用一个三角形的脉冲响应进行内插
+
+00:21:51,000 --> 00:21:55,000
+rather than the sin x over X or rectangular impulse responses that we
+而不是罪x在X或矩形脉冲响应我们
+
+00:21:55,000 --> 00:21:56,000
+showed previously
+以前发现
+
+00:21:56,000 --> 00:22:01,000
+so first let's say with the sample it equals 0
+所以首先让我们说与它等于0的样本
+
+00:22:01,000 --> 00:22:06,000
+we would replace that with a triangular
+我们将取代有一个三角形
+
+00:22:06,000 --> 00:22:09,000
+interpolating function and more generally
+内插函数和更一般地
+
+00:22:09,000 --> 00:22:13,000
+each in polls or sample is replaced with a triangular
+在每个轮询或样本被替换为一个三角
+
+00:22:13,000 --> 00:22:17,000
+interpolating function of the height equal to the sample height
+高度等于采样高度的插值函数
+
+00:22:17,000 --> 00:22:21,000
+and these are superposed to generate the linear interpolation
+和这些被叠加，以产生线性内插
+
+00:22:21,000 --> 00:22:24,000
+will begin this process with the leftmost
+将开始这个过程，最左边的
+
+00:22:24,000 --> 00:22:28,000
+sample and will build the superposition
+采样和将建成的叠加
+
+00:22:28,000 --> 00:22:32,000
+below and the bottom curve so here
+下方和底部的曲线所以在这里
+
+00:22:32,000 --> 00:22:35,000
+is the interpolating triangle for the
+是内插三角形的
+
+00:22:35,000 --> 00:22:40,000
+leftmost sample and now it's reproduced below
+最左边的样本，现在它的下面转载
+
+00:22:40,000 --> 00:22:45,000
+with the second sample we have an interpolating triangle which is added
+与第二示例中，我们有其中加入内插三角
+
+00:22:45,000 --> 00:22:46,000
+into the bottom
+进入底部
+
+00:22:46,000 --> 00:22:50,000
+curve and now on to the third sample
+曲线和现在第三样品
+
+00:22:50,000 --> 00:22:55,000
+and again that interpolating triangle will be added onto
+并再次强调插三角形将被添加到
+
+00:22:55,000 --> 00:22:59,000
+the curve that we've developed so far
+我们到目前为止已经开发了曲线
+
+00:22:59,000 --> 00:23:03,000
+and now on to the next sample
+现在到下一个样本
+
+00:23:03,000 --> 00:23:07,000
+we had that in there will speed up the process
+我们必须在那里将加快进程
+
+00:23:07,000 --> 00:23:10,000
+and as we proceed through
+而当我们通过
+
+00:23:10,000 --> 00:23:15,000
+we are building basically a linear interpolation
+我们正在建设基本上是一个线性插值
+
+00:23:15,000 --> 00:23:18,000
+in between the sample points
+在采样点之间
+
+00:23:18,000 --> 00:23:22,000
+a sexually corresponding to if one wants to think of it this way connecting the
+一种性对应，如果一个人想想起来这种方式连接
+
+00:23:22,000 --> 00:23:23,000
+dots
+点
+
+00:23:23,000 --> 00:23:28,000
+and what you're watching once again is essentially the convolution process
+和你看一次什么本质的卷积过程
+
+00:23:28,000 --> 00:23:32,000
+involving the impulse train with the impulse response
+涉及的脉冲列的脉冲响应
+
+00:23:32,000 --> 00:23:36,000
+the interpolating filter and what we're generating then
+插值滤波器和我们正在生成然后
+
+00:23:36,000 --> 00:23:40,000
+is a linear approximation
+是一个线性近似
+
+00:23:40,000 --> 00:23:47,000
+to the fam limited continuous-time curve at the top
+到顶部的FAM有限的连续时间曲线
+
+00:23:48,000 --> 00:23:52,000
+okay so what we have then is
+好了，我们有什么，然后是
+
+00:23:52,000 --> 00:23:56,000
+several other kinds of interpolation which
+其他几种插值的这
+
+00:23:56,000 --> 00:23:59,000
+fit within the same context as
+符合相同的上下文中
+
+00:23:59,000 --> 00:24:03,000
+exact ban limit interpolation one being
+确切的禁令限制插值的一个是
+
+00:24:03,000 --> 00:24:08,000
+interpolation in the time domain with an impulse response which is a rectangle
+插在其中是一个矩形脉冲响应的时域
+
+00:24:08,000 --> 00:24:11,000
+the second being interpolation in the time domain
+第二个是插在时域
+
+00:24:11,000 --> 00:24:15,000
+with an impulse response which is a triangle
+用这是一个三角形的脉冲响应
+
+00:24:15,000 --> 00:24:18,000
+and in fact its interesting to also
+而事实上它的有趣也
+
+00:24:18,000 --> 00:24:22,000
+look at the relationship between at and ban limit interpolation
+看在和禁限插值之间的关系
+
+00:24:22,000 --> 00:24:27,000
+look at it specifically in the frequency domain
+看它专门在频域
+
+00:24:27,000 --> 00:24:30,000
+well in the frequency-domain
+以及在所述频域
+
+00:24:30,000 --> 00:24:35,000
+what we know of course is dead for exact interpolation
+我们当然知道什么是死亡的确切插值
+
+00:24:35,000 --> 00:24:40,000
+what we want as our interpolating filter is an ideal Lopez filter
+我们要为我们的插值滤波器什么是理想的洛佩兹过滤器
+
+00:24:40,000 --> 00:24:45,000
+now keep in mind by the way that an idea low-pass filter is an abstraction is a
+现在牢记的方式，一个想法的低通滤波器是一种抽象为一个
+
+00:24:45,000 --> 00:24:49,000
+stress several times in the past an idea low-pass filter
+强调多次在过去一个想法的低通滤波器
+
+00:24:49,000 --> 00:24:54,000
+is a9 causal filter and in fact infinite extent which is
+是A9因果滤波器，实际上无限的程度是
+
+00:24:54,000 --> 00:24:58,000
+one of the reasons why in any case we would you some approximation to it
+的原因，在任何情况下，我们将您的一些逼近它的一个
+
+00:24:58,000 --> 00:25:02,000
+but here what we have is the
+但在这里我们所拥有的是
+
+00:25:02,000 --> 00:25:05,000
+exact interpolating filter
+确切的插值滤波器
+
+00:25:05,000 --> 00:25:11,000
+and that corresponds to an ideal 0 pass filter
+以及对应于理想的0通滤波器
+
+00:25:11,000 --> 00:25:16,000
+if instead we carried out the interpolation
+相反，如果我们进行了插值
+
+00:25:16,000 --> 00:25:20,000
+using the zero-order hold the zero-order hold has a
+使用零阶保持在零阶保持有
+
+00:25:20,000 --> 00:25:25,000
+rectangular impulse response and that means in the frequency domain
+矩形脉冲响应，这意味着在频域
+
+00:25:25,000 --> 00:25:28,000
+its frequency response is of the form love
+它的频率响应是形式的爱
+
+00:25:28,000 --> 00:25:31,000
+a sync function or sin x over iraq's
+同步功能或罪恶倍过伊拉克
+
+00:25:31,000 --> 00:25:35,000
+and so this in fact when we're doing the reconstruction
+所以这实际上当我们正在做的重建
+
+00:25:35,000 --> 00:25:40,000
+with a zero-order hold is The Associated frequency response
+用零阶保持是相关联的频率响应
+
+00:25:40,000 --> 00:25:46,000
+now notice that it does some approximate Lopez filtering but of course
+现在发现，它确实有些近似洛佩兹的过滤，但当然
+
+00:25:46,000 --> 00:25:50,000
+it has significant it permits significant energy
+它具有显著它允许显著能源
+
+00:25:50,000 --> 00:25:53,000
+outside the pass band at the filter
+在滤波器的通带外
+
+00:25:53,000 --> 00:25:58,000
+well instead the zero-order hold if we use the first-order hold corresponding
+以及代替零阶保持，如果我们使用相应的第一阶保持
+
+00:25:58,000 --> 00:26:01,000
+to the triangular impulse response
+于三角形脉冲响应
+
+00:26:01,000 --> 00:26:05,000
+in that case then in the frequency domain The Associated
+在这种情况下，然后在频域中的相关
+
+00:26:05,000 --> 00:26:09,000
+frequency response would be the forty a transformer the triangle
+频率响应将是40变压器的三角形
+
+00:26:09,000 --> 00:26:13,000
+and the Fourier transform a triangle is a sin squared
+和傅立叶变换的三角形是一个平方罪
+
+00:26:13,000 --> 00:26:16,000
+X over X where'd kinda function
+X的基于X哪儿还挺功能
+
+00:26:16,000 --> 00:26:19,000
+and so in that case what we would have
+所以在这种情况下，我们将有
+
+00:26:19,000 --> 00:26:23,000
+for the frequency response associated with the first-order hold
+用于与第一阶保持相关联的频率响应
+
+00:26:23,000 --> 00:26:27,000
+is a frequency response as I show here
+是的频率响应，因为我在这里展示
+
+00:26:27,000 --> 00:26:33,000
+and the fact dead that there's somewhat more attenuation
+而事实上死了还有较为衰减
+
+00:26:33,000 --> 00:26:36,000
+outside the pass band at the ideal filter
+在理想的滤波器的通带外
+
+00:26:36,000 --> 00:26:42,000
+is what suggests in fact dead the first-order hold or linear interpolation
+是什么建议，其实死一阶保持或线性插值
+
+00:26:42,000 --> 00:26:46,000
+gives us a somewhat smoother approximation to the original
+给了我们一个比较平滑的近似原
+
+00:26:46,000 --> 00:26:49,000
+signal then the zero-order hold does
+信号然后在零阶保持不
+
+00:26:49,000 --> 00:26:52,000
+and so in fact just to compare these two
+所以实际上只是为了比较这两个
+
+00:26:52,000 --> 00:26:56,000
+we can see that here is
+我们可以看到，这里是
+
+00:26:56,000 --> 00:26:59,000
+the ideal filter here is
+这里是一个理想滤波器
+
+00:26:59,000 --> 00:27:02,000
+the zero-order hold corresponding to
+的零阶保持对应于
+
+00:27:02,000 --> 00:27:05,000
+generating a boxcar kinda reconstruction
+产生棚车还挺重建
+
+00:27:05,000 --> 00:27:12,000
+and here is the first order hold corresponding to a linear interpolation
+这里是对应于线性插值的第一阶保持
+
+00:27:12,000 --> 00:27:16,000
+now in fact in many sampling systems
+现在其实很多采样系统
+
+00:27:16,000 --> 00:27:20,000
+in any sampling system really we need to use some approximation
+在任何采样系统真的，我们需要使用一些近似
+
+00:27:20,000 --> 00:27:25,000
+to the low-pass filter and very often in fact
+到低通滤波器，而且往往实际上
+
+00:27:25,000 --> 00:27:29,000
+what is done in many sampling systems is the first to use
+什么在许多采样系统做的是首先使用
+
+00:27:29,000 --> 00:27:33,000
+just a zero-order hold and then follow the zero-order hold
+只是一个零阶保持，然后按照零阶保持
+
+00:27:33,000 --> 00:27:37,000
+with some additional 0 pass filtering
+有一些额外的0通滤波
+
+00:27:37,000 --> 00:27:41,000
+well to illustrate some with these ideas
+很好地说明了一些与这些想法
+
+00:27:41,000 --> 00:27:44,000
+and the notion love doing reconstruction
+和概念爱做重建
+
+00:27:44,000 --> 00:27:48,000
+with a zero-order hold a first-order hold and then in fact
+与零阶保持一阶保持，实际上
+
+00:27:48,000 --> 00:27:53,000
+are ending to that some additional 0 pass filtering
+正在结束到一些额外的0通滤波
+
+00:27:53,000 --> 00:27:57,000
+what I'd like to do is is demonstrator illustrate
+我想要做的是为演示说明
+
+00:27:57,000 --> 00:28:01,000
+sampling and interpolation in the context love some images
+采样和插值的背景下，喜欢一些影像
+
+00:28:01,000 --> 00:28:05,000
+image of course is a two-dimensional signal the
+当然，图像是二维信号的
+
+00:28:05,000 --> 00:28:09,000
+the independent variables are spatial variables not time variables
+独立变量空间变量并不时变量
+
+00:28:09,000 --> 00:28:15,000
+and of course we can sample in both or the spatial dimensions both in X&Y
+当然，我们可以在两个或空间维度无论是在X和Y样
+
+00:28:15,000 --> 00:28:19,000
+and were chosen as so
+并同时获选为使
+
+00:28:19,000 --> 00:28:22,000
+a possibly appropriate choice for
+一个可能是合适的选择
+
+00:28:22,000 --> 00:28:29,000
+an image is again our friend and colleague JBJ 48
+图像又是我们的朋友和同事JBJ 48
+
+00:28:29,000 --> 00:28:33,000
+so let's begin with the original image which we then
+所以让我们开始与原始图像，我们再
+
+00:28:33,000 --> 00:28:38,000
+want to sample and reconstruct and a sampling is done by
+要采样和重建以及采样是通过完成
+
+00:28:38,000 --> 00:28:43,000
+effectively multiplying by appalls both horizontally and vertically
+由惊恐有效地相乘水平和垂直方向
+
+00:28:43,000 --> 00:28:46,000
+the sample picture is then the next one
+示例图片，然后下一个
+
+00:28:46,000 --> 00:28:51,000
+that I show and as you can see this corresponds in effect
+我和展示，你可以看到，这相当于生效
+
+00:28:51,000 --> 00:28:55,000
+to extracting small brightness elements I did the original image in fact
+以提取小分子的亮度我做其实原始图像
+
+00:28:55,000 --> 00:29:01,000
+let's look in a little closer and what you can see essentially is that
+让我们来看看在一点点接近，哪些是你可以看到基本上是
+
+00:29:01,000 --> 00:29:04,000
+well we have of course tonight impulses spatially but
+以及我们当然今晚的冲动，但空间
+
+00:29:04,000 --> 00:29:07,000
+small spatial pillars dead
+小空间的柱子死
+
+00:29:07,000 --> 00:29:11,000
+implement the sampling for us okay now
+实施抽样我们现在没事​​了
+
+00:29:11,000 --> 00:29:15,000
+going back to the original sample picture
+回到原来的样本图像
+
+00:29:15,000 --> 00:29:19,000
+we know that a picture can be reconstructed by low-pass filtering from
+我们知道，一个图象可以通过低通滤波从重构
+
+00:29:19,000 --> 00:29:21,000
+the samples and in fact
+样品和实际上
+
+00:29:21,000 --> 00:29:26,000
+we can do that optically in this case by simply d focusing the camera
+我们可以通过简单的Ð对焦相机做，光在这种情况下，
+
+00:29:26,000 --> 00:29:31,000
+and when we do that what happens is that we smear out the picture
+而当我们这样做会发生什么事是我们涂抹出来的图片
+
+00:29:31,000 --> 00:29:35,000
+or affectively convolved the impulses with the point spread function of the
+或情感上的卷积与冲动的点扩散函数
+
+00:29:35,000 --> 00:29:36,000
+optical system
+光学系统
+
+00:29:36,000 --> 00:29:40,000
+an this then is not too bad a reconstruction
+在这则不算太差重建
+
+00:29:40,000 --> 00:29:46,000
+so thats a an approximate reconstruction and focusing back now
+所以那是一个近似的重建和重点返现
+
+00:29:46,000 --> 00:29:53,000
+what we have again is the sample picture
+我们再有就是样品图片
+
+00:29:53,000 --> 00:29:57,000
+now these images are in fact a can often of
+现在这些图像实际上是一个可以经常的
+
+00:29:57,000 --> 00:30:01,000
+a computer display and a common procedure in
+计算机显示器和一个通用程序
+
+00:30:01,000 --> 00:30:05,000
+computer-generated are displayed image is is in fact
+计算机生成的显示图像，其实是
+
+00:30:05,000 --> 00:30:10,000
+the use of a zero-order hold and if the sampling rate is high enough
+使用零阶保持的，如果采样率是足够高的
+
+00:30:10,000 --> 00:30:14,000
+then that actually works reasonably well so now
+那么，实际工作得相当好现在这样
+
+00:30:14,000 --> 00:30:17,000
+let's look at the result of applying a zero-order hold
+让我们来看看应用零阶保持的结果
+
+00:30:17,000 --> 00:30:20,000
+to the sampled image that I
+到采样图像，我
+
+00:30:20,000 --> 00:30:24,000
+just showed
+只是表明
+
+00:30:24,000 --> 00:30:29,000
+the zero-order hold corresponds to replacing the impulses by
+的零阶保持对应于通过更换脉冲
+
+00:30:29,000 --> 00:30:33,000
+rectangles and you can see that what that generates
+矩形，你可以看到什么，产生
+
+00:30:33,000 --> 00:30:36,000
+is a mosaic affect as you would
+是你将一个镶嵌影响
+
+00:30:36,000 --> 00:30:40,000
+expect and in fact let's going a little closer and
+期望而事实上，让我们去一点点接近并
+
+00:30:40,000 --> 00:30:44,000
+emphasize the mosaic affect you can see that essentially where they were
+强调马赛克影响可以看到，基本上他们在那里
+
+00:30:44,000 --> 00:30:46,000
+impulses previously
+以前的冲动
+
+00:30:46,000 --> 00:30:50,000
+there are now rectangles with those brightness values
+现在有矩形与亮度值
+
+00:30:50,000 --> 00:30:55,000
+a very common procedure with computer-generated images is the first
+用计算机生成的图像非常常见的程序是第一
+
+00:30:55,000 --> 00:30:58,000
+20 order holders we've done here
+我们在这里所做的20阶持有人
+
+00:30:58,000 --> 00:31:03,000
+and then follow that with some additional ok pass filtering and in fact
+然后按照一些额外ok了通滤波，事实上
+
+00:31:03,000 --> 00:31:07,000
+we can do that low pass filtering now again by D focusing the camera
+我们可以用D现在再做一次低通滤波对焦相机
+
+00:31:07,000 --> 00:31:11,000
+and you can't begin to see
+你不能开始看
+
+00:31:11,000 --> 00:31:15,000
+dead with the zero-order all plus the low-pass filtering the reconstruction is
+死与零阶都加上低通滤波的重建
+
+00:31:15,000 --> 00:31:17,000
+not that bad
+没有那么糟糕
+
+00:31:17,000 --> 00:31:20,000
+well let's go back to the full
+好，让我们回到全
+
+00:31:20,000 --> 00:31:23,000
+image with the zero-order hold
+图像的零阶保持
+
+00:31:23,000 --> 00:31:29,000
+and again now the effective low pass filter I will be
+而现在又有效的低通滤波器，我会
+
+00:31:29,000 --> 00:31:33,000
+somewhat better and let's tee focus again year
+有些更好，让我们重点开球又一年
+
+00:31:33,000 --> 00:31:36,000
+and you can begin to see that this is
+你可以开始看到这是
+
+00:31:36,000 --> 00:31:40,000
+a reasonable reconstruction with the mosaic
+一个合理的重建与马赛克
+
+00:31:40,000 --> 00:31:44,000
+in fact with this back in focus you can
+其实这回的重点，你可以
+
+00:31:44,000 --> 00:31:48,000
+apply your own low-pass filtering to it either by squinting
+应用自己的低通滤波，以它要么眯眼
+
+00:31:48,000 --> 00:31:52,000
+or if you have the right or wrong kind of my classes either taking them off for
+或者如果你要么学他们的正确或错误的那种我班
+
+00:31:52,000 --> 00:31:55,000
+putting them on
+把它们放在
+
+00:31:55,000 --> 00:32:00,000
+now in addition to the zero-order hold weekend of course apply a first-order
+现在除了课程的零阶保持周末将第一阶
+
+00:32:00,000 --> 00:32:02,000
+hold and that would
+持有并会
+
+00:32:02,000 --> 00:32:07,000
+correspond to replacing the impulses instead of with rectangles as we have
+对应于与矩形取代的冲动，而不是因为我们有
+
+00:32:07,000 --> 00:32:08,000
+here
+这里
+
+00:32:08,000 --> 00:32:11,000
+replacing them with triangles an
+与三角形替换它们的
+
+00:32:11,000 --> 00:32:15,000
+so now let's take a look at the result all a first-order hold applied to the
+所以现在让我们来看看结果应用到所有一阶保持
+
+00:32:15,000 --> 00:32:18,000
+original samples
+原始样本
+
+00:32:18,000 --> 00:32:22,000
+and you can see now that the reconstruction is somewhat smoother
+你现在可以看到，重建是有点更顺畅
+
+00:32:22,000 --> 00:32:25,000
+because the fact that we're using an impulse response
+因为我们使用的脉冲响应的事实
+
+00:32:25,000 --> 00:32:29,000
+that somewhat smoother or a corresponding frequency response that
+该稍微平滑的或相应的频率响应
+
+00:32:29,000 --> 00:32:31,000
+has a sharper cut off
+有一个更清晰的切断
+
+00:32:31,000 --> 00:32:35,000
+i emphasize again that this is a somewhat low pass filtered version of
+我再次强调，这是一个有点低通滤波
+
+00:32:35,000 --> 00:32:36,000
+the original because
+原来是因为
+
+00:32:36,000 --> 00:32:39,000
+we have under sampled some what spatially
+我们已经在一些采样空间是什么
+
+00:32:39,000 --> 00:32:46,000
+to bring out the point that I want to illustrate
+带出，我想说明的一点
+
+00:32:46,000 --> 00:32:50,000
+okay to emphasize these effects
+还好强调这些影响
+
+00:32:50,000 --> 00:32:53,000
+even more what I'd like to do is go through
+更是我想要做的是通过
+
+00:32:53,000 --> 00:32:57,000
+basically the same sequence again but in this case what we'll do
+再次基本上相同的序列，但在这种情况下，我们会做
+
+00:32:57,000 --> 00:33:02,000
+is double the sample spacing both horizontal horizontally and vertically
+是双采样间距横向水平和垂直两个
+
+00:33:02,000 --> 00:33:07,000
+this of course means there will be even more highly under sampled been
+当然，这意味着将会有更多的高采样下了
+
+00:33:07,000 --> 00:33:11,000
+in the ones that I preview show previously showed and so the result of
+在那些我预览显示以前发现和这样的结果
+
+00:33:11,000 --> 00:33:14,000
+the reconstructions with some low pass filtering
+与某些低通滤波的重构
+
+00:33:14,000 --> 00:33:18,000
+will be a much more low-pass filtered image
+将是一个更低通滤波后的图像
+
+00:33:18,000 --> 00:33:24,000
+so we now have the sample picture but I've now under sampled considerably
+所以我们现在有样品图片，但现在下采样大大我已经
+
+00:33:24,000 --> 00:33:28,000
+more and you can see the effect of the sampling
+更多，你可以看到采样的效果
+
+00:33:28,000 --> 00:33:31,000
+and if we now apply is zero-order hold
+如果我们现在采用的是零阶保持
+
+00:33:31,000 --> 00:33:35,000
+to this picture we will again get a mosaic and lets
+这个图片，我们将再次获得一个镶嵌，让
+
+00:33:35,000 --> 00:33:40,000
+look at that and that mosaic of course looks
+看那个，当然容貌，马赛克
+
+00:33:40,000 --> 00:33:44,000
+even block here than the original and again emphasizes the fact that the
+甚至阻断这里比原来并再次强调一个事实，即
+
+00:33:44,000 --> 00:33:46,000
+zero-order hold
+零阶保持
+
+00:33:46,000 --> 00:33:51,000
+simply corresponds to filling in squares or replacing the impulses
+简单地对应于填充正方形或更换冲动
+
+00:33:51,000 --> 00:33:54,000
+by squares with the corresponding brightness
+由平方与相应的亮度
+
+00:33:54,000 --> 00:33:59,000
+values finally if we instead of a zero-order hold
+值最后，如果我们不是一个零阶保持
+
+00:33:59,000 --> 00:34:04,000
+use a first-order hold corresponding to two-dimensional triangles in places
+使用对应于二维三角形的地方的第一阶保持
+
+00:34:04,000 --> 00:34:08,000
+in place at these original blocks what we get is
+在参加这些原始块就是我们得到的是
+
+00:34:08,000 --> 00:34:13,000
+the next image and that again is a smoother reconstruction consistent with
+接下来的图像和又是一个平滑的重建与一致
+
+00:34:13,000 --> 00:34:17,000
+the fact that the triangles are smoother than the rectangles
+一个事实，即三角形比矩形更平滑的
+
+00:34:17,000 --> 00:34:21,000
+again i emphasize that this looks so highly low-pass filtered
+我再次强调，这看起来如此高的低通滤波
+
+00:34:21,000 --> 00:34:25,000
+because of the fact that we've under sampled so severely
+因为事实上，我们已经在采样如此严重
+
+00:34:25,000 --> 00:34:31,000
+to essentially emphasize the effect
+从根本上增强效果
+
+00:34:31,000 --> 00:34:34,000
+as I mentioned the images that we
+正如我所提到的图像，我们
+
+00:34:34,000 --> 00:34:37,000
+just looked at were taken from a computer although
+只是看着是从一台电脑，虽然
+
+00:34:37,000 --> 00:34:40,000
+because the original images were continuous-time
+因为原始图像是连续时间
+
+00:34:40,000 --> 00:34:45,000
+images or more specifically continuous space that is the independent variable
+图像或者更具体地连续的空间，它是独立变量
+
+00:34:45,000 --> 00:34:46,000
+is a spatial variable
+是空间变量
+
+00:34:46,000 --> 00:34:50,000
+now computer processing
+现在计算机处理
+
+00:34:50,000 --> 00:34:54,000
+love signals pictures speech or whatever the signals are
+恋爱讯号图片演说或其他的信号
+
+00:34:54,000 --> 00:34:57,000
+is very important and useful because
+是非常重要和有用的，因为
+
+00:34:57,000 --> 00:35:02,000
+it offers a lot of flexibility and in fact the kinds of things that I showed
+它提供了很大的灵活性，而事实上这样的东西，我表现
+
+00:35:02,000 --> 00:35:03,000
+these pictures
+这些图片
+
+00:35:03,000 --> 00:35:06,000
+would have been very hard to do without
+本来很难做到不
+
+00:35:06,000 --> 00:35:10,000
+in fact doing computer processing
+其实做计算机处理
+
+00:35:10,000 --> 00:35:14,000
+well in computer processing %uh any kind of signal
+以及计算机处理％呃任何一种信号
+
+00:35:14,000 --> 00:35:18,000
+basically what's required is dead
+基本上是什么需要的是死了
+
+00:35:18,000 --> 00:35:24,000
+we do the processing in the context of discrete-time signals and discrete-time
+我们所做的处理中的离散时间信号与离散时间的上下文
+
+00:35:24,000 --> 00:35:25,000
+processing
+处理
+
+00:35:25,000 --> 00:35:29,000
+because it the fact dead a computer is run off the clock
+因为它其实死一台计算机上运行关闭时钟
+
+00:35:29,000 --> 00:35:32,000
+and essentially things happen in the computer
+而且基本上事情发生在电脑
+
+00:35:32,000 --> 00:35:39,000
+in a as a sequence of numbers and as a sequence of events
+在作为数字序列，并作为事件顺序
+
+00:35:39,000 --> 00:35:43,000
+well it turns out dead the sampling theorem in fact as i've indicated
+还有原来死其实是采样定理，因为我已经指示
+
+00:35:43,000 --> 00:35:44,000
+previously
+先前
+
+00:35:44,000 --> 00:35:48,000
+provides us with a very nice mechanism
+为我们提供了一个非常好的机制
+
+00:35:48,000 --> 00:35:52,000
+for converting are continuous-time signals
+用于变换为连续时间信号
+
+00:35:52,000 --> 00:35:57,000
+into discrete-time signals for example for computer processing
+入计算机处理，例如离散时间信号
+
+00:35:57,000 --> 00:36:02,000
+or in fact if it's not a computer for some other kind of discrete-time or
+或者在事实上，如果它不是一台电脑供一些其他类型的离散时间或
+
+00:36:02,000 --> 00:36:04,000
+perhaps digital processing
+也许数字处理
+
+00:36:04,000 --> 00:36:08,000
+well the basic idea as i've indicated previously
+还有我以前指出的基本思路
+
+00:36:08,000 --> 00:36:14,000
+is to carry out discreet I processing
+是进行谨慎的处理工作
+
+00:36:14,000 --> 00:36:17,000
+of continuous-time signals by
+通过连续时间信号
+
+00:36:17,000 --> 00:36:21,000
+first converting the continuous-time signal
+首先将连续时间信号
+
+00:36:21,000 --> 00:36:25,000
+to a discrete-time signal carry out
+一个离散时间信号进行
+
+00:36:25,000 --> 00:36:29,000
+the appropriate discrete-time processing
+适当的离散时间处理
+
+00:36:29,000 --> 00:36:34,000
+love the discrete-time signal and then after we're done with that process
+爱的离散时间信号，然后经过我们与该进程完成
+
+00:36:34,000 --> 00:36:35,000
+saying
+话
+
+00:36:35,000 --> 00:36:39,000
+converting from the discrete-time sequence
+从离散时间序列变换
+
+00:36:39,000 --> 00:36:42,000
+back to a continuous-time signal
+返回到连续时间信号
+
+00:36:42,000 --> 00:36:48,000
+corresponding to the output that we have here
+对应于我们这里的输出
+
+00:36:48,000 --> 00:36:52,000
+well in the remainder this lecture what I'd like to analyze
+以及在其余本次讲座是什么，我想分析
+
+00:36:52,000 --> 00:36:56,000
+is the first step in that process namely the conversion
+在这个过程中的第一步，即转换
+
+00:36:56,000 --> 00:37:00,000
+from a continuous-time signal to a discrete-time signal
+从连续时间信号的离散时间信号
+
+00:37:00,000 --> 00:37:03,000
+and understand how the
+并了解
+
+00:37:03,000 --> 00:37:07,000
+to relate both in the time domain in the frequency domain
+以在频域时域涉及两
+
+00:37:07,000 --> 00:37:11,000
+and in the next lecture will be analyzing and demonstrating
+并在下一讲将分析和展示
+
+00:37:11,000 --> 00:37:15,000
+the overall system including some intermediate processing
+包括一些中间处理系统的整体
+
+00:37:15,000 --> 00:37:18,000
+so be first step in the process
+所以在这个过程中的第一步
+
+00:37:18,000 --> 00:37:22,000
+is the conversion from a continuous-time signal
+是从一个连续时间信号的转换
+
+00:37:22,000 --> 00:37:27,000
+to a discrete-time signal and that can be thought of as a process that involves
+到一个离散时间信号和可以被看作是一个过程，涉及
+
+00:37:27,000 --> 00:37:33,000
+two steps although in practical terms it may not be implemented specifically
+两个步骤虽然在实际上它可能并不是专门实施
+
+00:37:33,000 --> 00:37:36,000
+as these two steps the two steps are
+因为这两个步骤的两个步骤是
+
+00:37:36,000 --> 00:37:40,000
+to first convert from the continuous-time
+首先从连续时间转换
+
+00:37:40,000 --> 00:37:44,000
+for continuous-time continuous signal
+在连续时间连续信号
+
+00:37:44,000 --> 00:37:49,000
+to an impulse train through a sampling process
+通过一个采样过程的脉冲串
+
+00:37:49,000 --> 00:37:52,000
+and then to convert
+然后转换
+
+00:37:52,000 --> 00:37:56,000
+that impulse train to a discrete-time sequence
+冲动火车到离散时间序列
+
+00:37:56,000 --> 00:38:00,000
+and the discrete-time sequence exit then
+和离散时间序列退出然后
+
+00:38:00,000 --> 00:38:04,000
+is simply then a sequence a bad news
+只是那么一个序列的坏消息
+
+00:38:04,000 --> 00:38:09,000
+which are the samples all the continuous-time signal
+这是所有样本的连续时间信号
+
+00:38:09,000 --> 00:38:13,000
+and as we'll see as we walk through this basically this step
+正如我们将看到，我们通过这个基本上这一步走
+
+00:38:13,000 --> 00:38:16,000
+going from the impulse train to the sequence
+从脉冲串持续到序列
+
+00:38:16,000 --> 00:38:21,000
+corresponds principally to worry labeling staff where
+对应主要担心贴标工作人员在那里
+
+00:38:21,000 --> 00:38:25,000
+we pic of the impulse bad news
+我们PIC冲动坏消息
+
+00:38:25,000 --> 00:38:28,000
+and use those as the sequence values
+和使用它们作为序列值
+
+00:38:28,000 --> 00:38:32,000
+up for the discrete-time signal so
+向上的离散时间信号，以便
+
+00:38:32,000 --> 00:38:37,000
+what I'd like to do as a first step in understanding this process
+我想要做的是了解这个过程的第一步
+
+00:38:37,000 --> 00:38:42,000
+is to analyze it in particular with our attention focused on trying to
+是分析它特别是与我们的注意力集中在努力
+
+00:38:42,000 --> 00:38:43,000
+understand
+明白
+
+00:38:43,000 --> 00:38:46,000
+what the relationship is in the frequency domain
+的关系是在频域中什么
+
+00:38:46,000 --> 00:38:50,000
+between the discrete-time Fourier transform
+离散时间傅里叶变换之间
+
+00:38:50,000 --> 00:38:53,000
+love the sequence discrete-time signal
+爱序列离散时间信号
+
+00:38:53,000 --> 00:38:57,000
+and the continuous-time 48 transform
+和连续时间48变换
+
+00:38:57,000 --> 00:39:00,000
+love the original on sampled and then
+爱情原来的采样，然后
+
+00:39:00,000 --> 00:39:04,000
+the sampled signal so let's go through that
+采样信号让我们来研究研究
+
+00:39:04,000 --> 00:39:07,000
+and in particular
+尤其
+
+00:39:07,000 --> 00:39:12,000
+what we have is a process where the continuous-time signal
+我们所拥有的是一个过程，其中的连续时间信号
+
+00:39:12,000 --> 00:39:15,000
+is of course modulator multiplied
+当然是调制器的相乘
+
+00:39:15,000 --> 00:39:19,000
+by an impulse train and that gives us then
+由一个脉冲串并，让我们再
+
+00:39:19,000 --> 00:39:23,000
+another continuous-time signal we're still in the continuous time domain
+另一种连续时间信号我们仍然在连续时间域
+
+00:39:23,000 --> 00:39:28,000
+it gives us another continuous-time signal which is an impulse train
+它为我们提供了另一种连续时间信号是一个脉冲串
+
+00:39:28,000 --> 00:39:31,000
+and in fact we've gone through this analysis
+而事实上，我们通过这个分析已经走了
+
+00:39:31,000 --> 00:39:34,000
+previously and what we have is
+以前和我们所拥有的是
+
+00:39:34,000 --> 00:39:39,000
+this multiplication or taking this term inside
+这个乘法或服用此期限内
+
+00:39:39,000 --> 00:39:43,000
+the summation and recognizing that the impulse train
+求和并认识到脉冲串
+
+00:39:43,000 --> 00:39:46,000
+is is simply an impulse train
+是仅仅是一个脉冲串
+
+00:39:46,000 --> 00:39:50,000
+with areas above the impulses which
+与上面的冲动领域的
+
+00:39:50,000 --> 00:39:53,000
+are the samples above the continuous-time function
+是上面的连续时间函数的样本
+
+00:39:53,000 --> 00:39:59,000
+we can then carry out the analysis in the frequency domain
+然后就可以进行分析的频域
+
+00:39:59,000 --> 00:40:03,000
+now in the time domain we have a multiplication process so in the
+现在在时域中，我们有一个乘法处理，以便在
+
+00:40:03,000 --> 00:40:04,000
+frequency domain
+频域
+
+00:40:04,000 --> 00:40:08,000
+we have a convolution above the Fourier transform
+我们有上面的傅立叶变换卷积
+
+00:40:08,000 --> 00:40:13,000
+love the continuous-time signal the original signal
+爱的连续时间信号的原始信号
+
+00:40:13,000 --> 00:40:18,000
+and the Fourier transform of the impulse train which is itself an impulse train
+和傅立叶的冲动列车本身就是一个脉冲串变换
+
+00:40:18,000 --> 00:40:22,000
+so in the frequency domain then the 48 transform
+这样在频域，然后在48变换
+
+00:40:22,000 --> 00:40:26,000
+of the sampled signal which is an impulse train
+采样的信号是一个脉冲串的
+
+00:40:26,000 --> 00:40:30,000
+is the convolution %uh the Fourier transform up the sampling
+被卷积％呃傅里叶变换了取样
+
+00:40:30,000 --> 00:40:36,000
+function PFT and the Fourier transform of the sampled signal
+功能PFT和傅立叶变换的采样信号的
+
+00:40:36,000 --> 00:40:41,000
+since the sampling signal is a periodic imposed strain
+由于采样信号是一个周期所施加应变
+
+00:40:41,000 --> 00:40:44,000
+its Fourier transform is an impulse train
+它的傅里叶变换是一种冲动的火车
+
+00:40:44,000 --> 00:40:49,000
+and consequently carrying out this convolution
+因此开展这项卷积
+
+00:40:49,000 --> 00:40:52,000
+in effect says that this for EA transform
+实际上说，这对EA变换
+
+00:40:52,000 --> 00:40:57,000
+simply gets replicated at each of the locations of these impulses
+只需在每个这些冲动的位置被复制
+
+00:40:57,000 --> 00:41:00,000
+and finally what we end up with an
+最后我们结束了一个
+
+00:41:00,000 --> 00:41:04,000
+is a 48 transform after
+在经过48变换
+
+00:41:04,000 --> 00:41:07,000
+the sampling process which is
+采样过程是
+
+00:41:07,000 --> 00:41:11,000
+the original for EA transform love the continuous
+原为EA变换爱情的连续
+
+00:41:11,000 --> 00:41:14,000
+signal but and it to itself
+信号，但它本身
+
+00:41:14,000 --> 00:41:17,000
+shifted by integer multiples
+通过整数倍转移
+
+00:41:17,000 --> 00:41:21,000
+above the sampling frequency and so this is the basic equation then
+以上的采样频率，因此这是基本方程，然后
+
+00:41:21,000 --> 00:41:26,000
+that tells us in the frequency domain what happens
+这告诉我们在频域上发生了什么
+
+00:41:26,000 --> 00:41:30,000
+through the first part all this two-step process
+通过第一部分的所有这两个步骤的过程
+
+00:41:30,000 --> 00:41:35,000
+now I emphasize that is a two-step process the first process
+现在我强调的是一个两步过程的第一种方法
+
+00:41:35,000 --> 00:41:38,000
+is sampling where we're still essentially
+是采样的地方，我们仍然基本上
+
+00:41:38,000 --> 00:41:42,000
+in the continuous-time world the next step
+在连续时间世界下一步骤
+
+00:41:42,000 --> 00:41:45,000
+is essentially a relabeling process
+本质上是一个重新贴标签的过程
+
+00:41:45,000 --> 00:41:50,000
+where we convert that impulse train simply to a sequence
+在这里我们将其转换脉冲串干脆来个序列
+
+00:41:50,000 --> 00:41:53,000
+so let's look at the next step
+所以让我们来看看下一步
+
+00:41:53,000 --> 00:41:57,000
+the next step is to take the impulse train and converted
+下一步就是要把冲动火车和转换
+
+00:41:57,000 --> 00:42:01,000
+through a process to sequence
+通过一个过程来顺序
+
+00:42:01,000 --> 00:42:04,000
+and the sequence values are simply then
+与该序列的值是简单地再
+
+00:42:04,000 --> 00:42:09,000
+samples 0 the original continuous signal
+样品0原始连续信号
+
+00:42:09,000 --> 00:42:12,000
+and so now we
+所以现在我们
+
+00:42:12,000 --> 00:42:16,000
+can analyze this and what we want to relate
+可以分析这一点，我们要与
+
+00:42:16,000 --> 00:42:19,000
+is the discrete-time Fourier transform
+是离散时间傅立叶变换
+
+00:42:19,000 --> 00:42:23,000
+love this and the continuous 540 a transformer
+爱这和连续540变压器
+
+00:42:23,000 --> 00:42:27,000
+this or in fact that continues type for a transformer affects up to you
+这其实还是一直延续型变压器会影响到你
+
+00:42:27,000 --> 00:42:30,000
+safety okay
+安全性好
+
+00:42:30,000 --> 00:42:34,000
+well we have the imposed strain
+以及我们所施加的应变
+
+00:42:34,000 --> 00:42:38,000
+and its Fourier transform we can
+及其傅立叶变换，我们可以
+
+00:42:38,000 --> 00:42:42,000
+get by simply evaluating for EA transform
+通过简单地评价为EA变换得到
+
+00:42:42,000 --> 00:42:45,000
+and since the Fourier transform love this
+而且由于傅里叶变换爱这个
+
+00:42:45,000 --> 00:42:50,000
+since this corresponds to an impulse train the 48 transformed by the time we
+因为这相当于一个脉冲串的48转的时候，我们
+
+00:42:50,000 --> 00:42:51,000
+change them something in it rolls
+改变他们的东西在里面卷
+
+00:42:51,000 --> 00:42:55,000
+will then have this in paul's replace
+届时将有这个在保罗的更换
+
+00:42:55,000 --> 00:42:58,000
+524 e a transformer the shift in polls
+524邮箱变压器移位民调
+
+00:42:58,000 --> 00:43:02,000
+which is this exponential factor so this expression
+这是该指数因子使这个表达式
+
+00:43:02,000 --> 00:43:06,000
+is before a transformer the impulse train
+是变压器的冲动火车前
+
+00:43:06,000 --> 00:43:10,000
+the continuous time Fourier transform and alternatively
+连续时间傅里叶变换和替代地
+
+00:43:10,000 --> 00:43:13,000
+we can look at the Fourier transform all
+我们可以看看傅立叶变换所有
+
+00:43:13,000 --> 00:43:16,000
+the sequence and this of course is
+当然，该序列，这是
+
+00:43:16,000 --> 00:43:21,000
+a discrete-time Fourier transform
+离散时间傅立叶变换
+
+00:43:21,000 --> 00:43:27,000
+so we have the continuous time Fourier transform the imposed strain
+所以我们有连续时间傅里叶变换所施加的应变
+
+00:43:27,000 --> 00:43:30,000
+we have the discrete-time Fourier transform the sequence
+我们也离散时间傅里叶变换的顺序
+
+00:43:30,000 --> 00:43:34,000
+and now we want to look at how those to relate
+现在我们要看看如何对这些关系
+
+00:43:34,000 --> 00:43:38,000
+well it pretty much falls out of just comparing these two summations
+以及它几乎掉出来只是比较这两个求和
+
+00:43:38,000 --> 00:43:42,000
+in particular this term and this term
+特别是这个学期，这学期
+
+00:43:42,000 --> 00:43:46,000
+are identical that's just the relabeling
+是相同的，这仅仅是重新贴标签
+
+00:43:46,000 --> 00:43:52,000
+Nov all what the sequence values are
+十一月的所有序列值是什么
+
+00:43:52,000 --> 00:43:57,000
+and notice that when we compare these exponential factors
+并请注意，当我们比较这些指数的因素
+
+00:43:57,000 --> 00:44:02,000
+they're identical as long as we associate capital Omega
+他们是相同的，只要我们联想资本欧米茄
+
+00:44:02,000 --> 00:44:05,000
+with little or may get times capital T in other words
+很少或可能得到的时间大写字母T，换句话说
+
+00:44:05,000 --> 00:44:09,000
+if we were to replace here capital may go by a little Omega
+如果我们要在这里代替资金可能会受一点欧米茄
+
+00:44:09,000 --> 00:44:12,000
+times capital T and replace exhibition
+次大写字母T和替换展
+
+00:44:12,000 --> 00:44:16,000
+by excessive see a venti in this expression
+过多的看到在这个表达式中的通气
+
+00:44:16,000 --> 00:44:20,000
+would be identical to this expression
+将等同于该表达式
+
+00:44:20,000 --> 00:44:23,000
+so in fact these two are equal
+所以实际上这两个是相等的
+
+00:44:23,000 --> 00:44:28,000
+where a relabeling or with the transformation between small Megan
+其中一个重贴标签或小梅根之间的转​​换
+
+00:44:28,000 --> 00:44:29,000
+capital make
+资本化妆
+
+00:44:29,000 --> 00:44:34,000
+and so in fact then the relationship that we have
+所以其实当时我们有关系
+
+00:44:34,000 --> 00:44:38,000
+is that the discrete-time Fourier transform are
+是离散时间傅里叶变换是
+
+00:44:38,000 --> 00:44:41,000
+the sequence of samples
+样本序列
+
+00:44:41,000 --> 00:44:45,000
+is equal to the continuous time Fourier transform
+等于连续时间傅立叶变换
+
+00:44:45,000 --> 00:44:48,000
+all the impulse strain of samples
+全部样本的冲动应变
+
+00:44:48,000 --> 00:44:52,000
+where we associate the continuous-time frequency variable
+在这里我们将连续时间频率变量关联
+
+00:44:52,000 --> 00:44:56,000
+and the discrete-time pic script frequency variable through
+并通过离散时间图片脚本频率可变
+
+00:44:56,000 --> 00:45:01,000
+a frequency scaling as i indicate here or said another way
+一个频率调节，因为我在此说明或者说另一种方式
+
+00:45:01,000 --> 00:45:07,000
+the discrete-time spectrum is the continuous I spectrum of the samples
+离散时间谱对样品的连续余频谱
+
+00:45:07,000 --> 00:45:11,000
+with capital mate with small Omega replaced by capital Omega
+资本队友小欧米茄以资本代替欧米茄
+
+00:45:11,000 --> 00:45:14,000
+divided by capital T
+由大写字母T分
+
+00:45:14,000 --> 00:45:19,000
+fight so we have then this two-step process
+拼所以我们那么这两个步骤的过程
+
+00:45:19,000 --> 00:45:22,000
+the first step is taking the continuous-time signal
+第一步走的连续时间信号
+
+00:45:22,000 --> 00:45:26,000
+sampling with it sampling it with an impulse train
+它与脉冲串取样抽检它
+
+00:45:26,000 --> 00:45:29,000
+in the frequency domain that corresponds to
+在对应于频域中的
+
+00:45:29,000 --> 00:45:32,000
+replicating the four EA transform
+复制这四个EA变换
+
+00:45:32,000 --> 00:45:36,000
+all the original continuous-time signals
+所有原来的连续时间信号
+
+00:45:36,000 --> 00:45:40,000
+the second step is relabeling Matt
+第二个步骤是重新标记马特
+
+00:45:40,000 --> 00:45:44,000
+in effect turning it into a sequence and what that does in the frequency domain
+实际上把它变成一个序列和什么一样在频域
+
+00:45:44,000 --> 00:45:46,000
+is provide us
+是为我们提供
+
+00:45:46,000 --> 00:45:50,000
+with a rescaling if the frequency axis or as we'll see
+与重新调整，如果在频率轴上或正如我们将看到
+
+00:45:50,000 --> 00:45:55,000
+a frequency normalization which is associated with the corresponding time
+这是与相应的时间相关联的频率归一化
+
+00:45:55,000 --> 00:45:57,000
+normalization
+正常化
+
+00:45:57,000 --> 00:46:00,000
+in the time domain well let's look at
+在时域以及让我们来看看
+
+00:46:00,000 --> 00:46:04,000
+those statements a little more specifically
+这些陈述稍微更具体
+
+00:46:04,000 --> 00:46:09,000
+when I show here it is the original continuous-time signal
+当我告诉这里是原来的连续时间信号
+
+00:46:09,000 --> 00:46:12,000
+and then below it is
+然后它下面是
+
+00:46:12,000 --> 00:46:16,000
+the sampled signal and these two
+采样信号和这两个
+
+00:46:16,000 --> 00:46:20,000
+are signals in the continuous-time domain
+是信号在连续时间域
+
+00:46:20,000 --> 00:46:24,000
+now what is the conversion from this impulse train
+现在是什么从这个脉冲串转换
+
+00:46:24,000 --> 00:46:28,000
+to a sequence well it simply taking
+一个序列以及它简单地把
+
+00:46:28,000 --> 00:46:32,000
+these in polls areas are bad news the sample values
+这些民调领域是坏消息的样本值
+
+00:46:32,000 --> 00:46:36,000
+and relabeling them in effect is a show below
+和重新标记它们实际上是低于秀
+
+00:46:36,000 --> 00:46:41,000
+relabeling them as sequence values
+重新标记他们为序列值
+
+00:46:41,000 --> 00:46:45,000
+and essentially I'm now replacing
+而且基本上我现在更换
+
+00:46:45,000 --> 00:46:50,000
+the impulse by the designation of a sequence value
+的脉冲通过一序列的值的指定
+
+00:46:50,000 --> 00:46:54,000
+that's one step but the other important step to focus on
+这一步，​​但把重点放在其他重要一步
+
+00:46:54,000 --> 00:46:59,000
+is dead whereas in the impulse trainees impulses are spaced
+是死的，而在冲动学员冲动间隔
+
+00:46:59,000 --> 00:47:04,000
+by integer multiples of the sampling period capital T
+由采样周期大写字母T的整数倍
+
+00:47:04,000 --> 00:47:08,000
+in the sequence of course because if the way that we
+当然，该序列中，因为如果我们的方式
+
+00:47:08,000 --> 00:47:11,000
+label sequences these are always space by
+标签序列这些总是空间
+
+00:47:11,000 --> 00:47:14,000
+simply integer multiples of 1
+1简单的整数倍
+
+00:47:14,000 --> 00:47:18,000
+so in effect you could say that the step in going from here
+所以实际上你可以说，从这里走的步
+
+00:47:18,000 --> 00:47:24,000
+to hear corresponds to normalizing out in the time domain
+听到对应于时域中的归一化输出
+
+00:47:24,000 --> 00:47:27,000
+the sampling period capital T
+采样周期大写字母T
+
+00:47:27,000 --> 00:47:32,000
+to stress that another way if the sampling period were doubled
+要强调的是另一种方式，如果采样周期增加一倍
+
+00:47:32,000 --> 00:47:38,000
+so there'd in this picture this spacing stretched out by a factor of two
+所以想在这张图片中这个间距伸出了两个因素
+
+00:47:38,000 --> 00:47:42,000
+nevertheless in the discrete-time
+尽管如此，在离散时间
+
+00:47:42,000 --> 00:47:46,000
+for the discrete-time signal the spacing would remain as one
+对于离散时间信号的间隔将保持为一体
+
+00:47:46,000 --> 00:47:50,000
+and essentially its the
+而且基本上它的
+
+00:47:50,000 --> 00:47:53,000
+envelope of those sequence values
+包络的那些序列值的
+
+00:47:53,000 --> 00:47:56,000
+that would then get contracts compressed in time
+这将然后得到合同压缩时间
+
+00:47:56,000 --> 00:48:01,000
+so you can think all the step in going from the impulse train to the samples
+所以你可以把从脉冲串去的样品全部步骤
+
+00:48:01,000 --> 00:48:05,000
+as a sexually a time normalization
+作为一种性时间正常化
+
+00:48:05,000 --> 00:48:10,000
+now let's look at this in the frequency domain in the frequency domain
+现在让我们来看看这个在频域频域
+
+00:48:10,000 --> 00:48:14,000
+what we have is the Fourier transform of our original continuous
+我们所拥有的是我们​​原来的连续傅立叶变换
+
+00:48:14,000 --> 00:48:18,000
+signal after sampling with an impulse train
+用脉冲串采样后的信号
+
+00:48:18,000 --> 00:48:22,000
+this spectrum retains its shape
+这个频谱保持其形状
+
+00:48:22,000 --> 00:48:27,000
+him but is replicated at integer multiples of the sampling frequency to
+他，但被复制在采样频率的整数倍来
+
+00:48:27,000 --> 00:48:29,000
+pry over capital T
+撬过大写字母T
+
+00:48:29,000 --> 00:48:32,000
+as i indicated here now
+正如我现在在这里
+
+00:48:32,000 --> 00:48:36,000
+we know that a discrete-time spectrum
+我们知道，一个离散时间的频谱
+
+00:48:36,000 --> 00:48:40,000
+must be periodic and frequency with a period of two pi
+必须定期和频率为期PI
+
+00:48:40,000 --> 00:48:45,000
+here we have the periodicity but it's not periodic with period have to pry
+在这里我们有周期性，但它不是周期性的，周期要撬
+
+00:48:45,000 --> 00:48:50,000
+its periodic with period which is equal to the sampling frequency
+其周期性的，周期等于采样频率
+
+00:48:50,000 --> 00:48:55,000
+however in converting from the samples
+然而，在从样品转换
+
+00:48:55,000 --> 00:48:58,000
+to the sequence values and we go through another step
+到序列的价值观和我们经历的另一步
+
+00:48:58,000 --> 00:49:02,000
+what the other step the other step is a time normalization
+何其它步骤的其它步骤是一个时间归一化
+
+00:49:02,000 --> 00:49:05,000
+where we take the impulses which your space by the sampling period
+我们采取的冲动，你的空间采样周期
+
+00:49:05,000 --> 00:49:09,000
+and we rescale at essentially in the time domain
+我们在基本上重新定标在时域
+
+00:49:09,000 --> 00:49:13,000
+to a space in which is unity so we're dividing out
+一个空间中，是团结，我们划分出
+
+00:49:13,000 --> 00:49:17,000
+in the time domain by a
+在由时域
+
+00:49:17,000 --> 00:49:20,000
+by a factor which is
+通过一个因子是
+
+00:49:20,000 --> 00:49:23,000
+equal to the sampling period well
+等于采样周期以及
+
+00:49:23,000 --> 00:49:27,000
+dividing out in the time domain by
+在时域中划分出由
+
+00:49:27,000 --> 00:49:31,000
+capital T would correspond to
+大写字母T将对应
+
+00:49:31,000 --> 00:49:36,000
+multiplying in the frequency domain the frequency axis by capital T and indeed
+在频率轴上乘以在频域中由大写字母T和确
+
+00:49:36,000 --> 00:49:40,000
+what happens is dead in going from the imposed strain
+会发生什么是死在从所施加的应变准备
+
+00:49:40,000 --> 00:49:44,000
+to the sequence values we now rescale
+该序列值，我们现在重新调整
+
+00:49:44,000 --> 00:49:48,000
+this axis so that in fact
+该轴，使得实际上
+
+00:49:48,000 --> 00:49:51,000
+the axis gets stretched by capital T
+轴得到由大写字母T拉伸
+
+00:49:51,000 --> 00:49:56,000
+and the frequency which corresponded to 2pi over capital T
+它相当于2PI在大写字母T的频率
+
+00:49:56,000 --> 00:50:00,000
+now gets re normalized 22 part
+现在得到重新归一化的部分22
+
+00:50:00,000 --> 00:50:05,000
+so just looking at this again and perhaps with the overall picture
+所以只是看着这又或许与整体画面
+
+00:50:05,000 --> 00:50:09,000
+in the time domain we've gone from a continuous curve
+在时域，我们已经从一个连续的曲线消失了
+
+00:50:09,000 --> 00:50:15,000
+two samples relabel those and in effect implemented a time normalization
+两个样本重新标记那些和有效实施的时间正常化
+
+00:50:15,000 --> 00:50:19,000
+correspondingly in the frequency domain we
+相应地在频域中我们
+
+00:50:19,000 --> 00:50:23,000
+have replicated the spectrum through the initial sampling process
+已通过初步抽样过程复制的频谱
+
+00:50:23,000 --> 00:50:27,000
+and then rescale the frequency axis
+然后重新调整频率轴
+
+00:50:27,000 --> 00:50:30,000
+so that in fact now this periodicity
+所以，现在实际上这个周期
+
+00:50:30,000 --> 00:50:34,000
+corresponds to a periodicity here which is to Popeye
+对应于此处的周期也就是波比亚
+
+00:50:34,000 --> 00:50:37,000
+and here which is the sampling frequency
+并且这里它是采样频率
+
+00:50:37,000 --> 00:50:43,000
+so very often in fact and will be doing this next time
+所以很多时候其实并会做这种下一次
+
+00:50:43,000 --> 00:50:46,000
+very often when you think
+当你觉得很多时候
+
+00:50:46,000 --> 00:50:51,000
+love continuous-time signals which have been converted to discrete-time signals
+爱已转化为离散时间信号连续时间信号
+
+00:50:51,000 --> 00:50:54,000
+when you look at the discrete-time frequency axis
+当你在离散时间频率轴
+
+00:50:54,000 --> 00:50:57,000
+the frequency to pie is Associated
+频率来馅饼关联
+
+00:50:57,000 --> 00:51:00,000
+with the sampling frequency
+与采样频率
+
+00:51:00,000 --> 00:51:06,000
+as it will it was applied to the original continuous-time signals
+因为这将它应用到原始的连续时间信号
+
+00:51:06,000 --> 00:51:11,000
+now as i indicated what will want to go on to from here
+现在，正如我究竟会想要去从这里
+
+00:51:11,000 --> 00:51:14,000
+is understanding I'll
+为了解我会
+
+00:51:14,000 --> 00:51:17,000
+what happens when we take a continuous-time signal
+当我们把一个连续时间信号发生了什么
+
+00:51:17,000 --> 00:51:21,000
+converted to a discrete-time signal as I just going through
+转换为离散时间信号，因为我刚刚经历
+
+00:51:21,000 --> 00:51:24,000
+do some discreet I processing with the linear time-invariant system
+做一些谨慎的我处理的线性时不变系统
+
+00:51:24,000 --> 00:51:29,000
+and then carry that back into the continuous-time world
+然后携带回连续时间的世界
+
+00:51:29,000 --> 00:51:33,000
+that is a procedure that will go through and
+这是一个过程，将通过与
+
+00:51:33,000 --> 00:51:36,000
+analyze and in fact illustrate in some detail
+分析和实际上示出了某些细节
+
+00:51:36,000 --> 00:51:40,000
+next time in preparation for that
+在准备下一次
+
+00:51:40,000 --> 00:51:44,000
+what I would be eager to encourage you to do
+我会迫不及待地鼓励你这样做
+
+00:51:44,000 --> 00:51:47,000
+using the study guide and in reviewing this lecture
+用学习指导和审查本次讲座
+
+00:51:47,000 --> 00:51:51,000
+is to begin the next lecture
+是开始下一讲
+
+00:51:51,000 --> 00:51:55,000
+with a careful and thorough understanding love
+用细心和透彻的了解爱
+
+00:51:55,000 --> 00:51:58,000
+the arguments that I just going through in particular
+我只是通过特别的参数
+
+00:51:58,000 --> 00:52:03,000
+understanding the process that's involved in going from a continuous-time
+理解的涉及从连续时间持续的过程
+
+00:52:03,000 --> 00:52:05,000
+signal
+信号
+
+00:52:05,000 --> 00:52:08,000
+through sampling to a discrete-time signal
+通过采样到一个离散时间信号
+
+00:52:08,000 --> 00:52:12,000
+and what that means in the frequency domain interns to taking the original
+而这意味着什么在频域实习生服用原
+
+00:52:12,000 --> 00:52:13,000
+spectrum
+光谱
+
+00:52:13,000 --> 00:52:17,000
+replicating it because if the sampling process
+复制它，因为如果采样过程
+
+00:52:17,000 --> 00:52:20,000
+and then sry scaling that so that
+然后SRY标定，使
+
+00:52:20,000 --> 00:52:24,000
+the periodicity gets rescaled so that its periodic
+的周期被重新调整，使得其周期
+
+00:52:24,000 --> 00:52:28,000
+with a period of two part so will continue with that next time focusing
+用了一段两部分，以便将继续下一次聚焦
+
+00:52:28,000 --> 00:52:29,000
+now
+现在
+
+00:52:29,000 --> 00:52:32,000
+on the subsequent steps
+在随后的步骤
+
+00:52:32,000 --> 00:52:33,000
+in the process thank you
+在这个过程中谢谢
+

@@ -1,0 +1,695 @@
+000040~003450~the following content is provided under a Creative Commons license
+003490~003639~your support will help MIT OpenCourseWare continue to offer
+007129~003451~high-quality educational resources for free
+010580~003780~to make a donation or view additional materials from hundreds of them IT
+014360~000670~courses
+015030~003080~visit MIT OpenCourseWare at 0 CW
+018110~007000~that MIT that EDU Horan
+028980~000770~the
+029750~001580~
+031330~003170~the
+034500~005530~the in
+040030~007000~the new
+048130~004880~the the
+053010~005110~during the course we've developed a number
+058120~004710~love very powerful and useful tools and we've seen how
+062830~004300~these can be used in designing and analyzing systems for example for
+067130~002130~filtering for modulation et cetera
+069260~003440~I'd like to conclude this
+072700~003430~series of lectures with an introduction to one more
+076130~003140~important topic namely the
+079270~003660~analysis love feedback systems and
+082930~004500~what are the principal reasons that we have left
+087430~005330~this discussion to the last part of the cores is so that we can exploit
+092760~003609~some of the ideas that we've just developed in
+096369~004941~summer the previous lectures namely the tools afforded us by
+101310~004809~applause NZ transforms now
+106119~003640~as I had indicated in one of the
+109759~003640~very first lectures a common example
+113399~003401~a feedback system is the problem love let's say
+116800~003849~balancing a broom or in the case if that lecture balancing
+120649~003580~my son's force on in the palm of your hand
+124229~003361~and kinda the idea there is dead
+127590~003430~what that relies on in order to
+131020~005360~make that a stable system is feedback in that particular case visual feedback
+136380~005670~that specific problem the one about saying something let's say in the palm
+142050~000890~of your hand
+142940~005379~is an example love a problem which is commonly referred to as
+148319~004750~inverted pendulum and it's one that we will actually be analyzing
+153069~003541~in a fair manner detailed not in this lecture but in the next lecture
+156610~003490~but let me just kinda vindicate what so the issues
+160100~005960~are let me describe this into context not over balancing a broom on your hand
+166060~000509~but
+166569~003640~let's say that we have a mechanical system which consists of a card
+170209~003981~and the card can move let's say in one dimension
+174190~003400~and it has mounted on it
+177590~003009~a bar a ride with the weight on the top
+180599~004700~and it pivots around the base so that essentially represents the
+185299~003410~inverted pendulum so that system can be
+188709~004901~more or less depicted as i've indicated here and this is the cart
+193610~003750~that can move along the x-axis and
+197360~004459~here we have a pivot point a ride await at the top
+201819~003111~and then of course there's several forces acting on this and
+204930~003559~their is an acceleration that can be applied to the cart:
+208489~004051~and that will be thought a as the external input
+212540~003979~and then on the pendulum itself on the wait
+216519~003151~there is the force of gravity and
+219670~003810~then typically said if external disturbances that might
+223480~004030~represent for example air currents or wind or whatever
+227510~003199~dead will attempt to
+230709~003961~Dez to destabilize the system specifically
+234670~004239~to have the pendulum fall down now
+238909~003271~if we look at this system in more or less
+242180~003509~a straightforward way what we have then
+245689~004830~are the system dynamics and
+250519~004890~several inputs one of which is the external disturbances
+255409~003890~and the second is the acceleration which is
+259299~004011~the external acceleration is supplied and the app for the system can be
+263310~000810~thought I love
+264120~003910~as the angular displacement love the pendulum which
+268030~005060~if we want a balanced we would like that angular displacement to be equal to 0
+273090~005740~now if we know exactly what the system dynamics are
+278830~003830~and if we knew exactly what the external disturbances are
+282660~004880~invented principal we could design and acceleration namely an input
+287540~003280~dead would exactly generate
+290820~005290~0 output in other words the angle would be equal to 0 but as you can imagine
+296110~003800~just is its basically impossible to balance a broom
+299910~004610~in the palm of your hand with your eyes close
+304520~004360~what is very hard to ascertain in advance or what the various
+308880~003650~dynamics and disturbances are and so more typically
+312530~003389~what you with a kid doing is measuring
+315919~003011~the output angle and
+318930~003070~then using that measurement to somehow
+322000~003940~influence the applied acceleration or fours
+325940~003729~and that then is an example other feedback system
+329669~003691~so we would major the output angle
+333360~003140~and generate
+336500~003590~an input acceleration which is
+340090~004210~some function love what that output angle is
+344300~003730~and if we choose the feedback dynamics correctly
+348030~004400~then in fact we can drive this output 20
+352430~003799~this is one example love a system
+356229~004681~which is inherently unstable because if we left it to its own
+360910~004500~devices the pendulum with simply fall down and essentially by applying
+365410~001030~feedback
+366440~003960~what we're trying to do is stabilize this inherently unstable system
+370400~004600~and we'll talk a little bit more about that specific application feedback
+375000~004710~shortly another common example a feedback
+379710~003239~is in positioning our tracking systems
+382949~003201~and I aid indicate one here
+386150~003919~which corresponds to the problem love positioning
+390069~003921~a telescope which is mounted on a rotating platform
+393990~003890~so in a system that tape for example
+397880~004099~I indicate here the rotating platform in the telescope
+401979~003560~it's driven by a motor and again
+405539~003190~we could imagine in principle the possibility love
+408729~003160~driving this to the desired angle
+411889~004490~by choosing an appropriate applied input voltage
+416379~004750~and as long as we know such things as what the disturbances are that influence
+421129~004111~the telescope mount and what the characteristics that the motor are
+425240~003170~in principle we could in fact
+428410~003460~carry this out in a form which is referred to as open loop
+431870~004269~namely we can choose an appropriate input voltage
+436139~003120~to drive a motor to set
+439259~005201~the platform ankle at the desired angular position
+444460~004790~however again there are enough unknowns in a problem like that
+449250~003580~so that one is motivated to employ
+452830~003220~feedback namely to make a measurement
+456050~005179~up the output angle and use that in a feedback loop
+461229~003961~to influence the press the drive for the motor
+465190~005439~so that the motor so that the telescope platform is positioned appropriately
+470629~003421~so if we look at this in a feedback
+474050~003600~context we would then
+477650~004130~take the measured output angle
+481780~004120~and the measured output angle
+485900~004009~would be fed back and compared
+489909~003551~with the desired angle and
+493460~003810~the difference between those which essentially is the error between the
+497270~003010~platform positioning and the desired position
+500280~004900~would be put perhaps through an appropriate gainer attenuation
+505180~003690~and used as the exhortation to the motor
+508870~003460~so in the mechanical or physical system
+512330~004820~that would correspond to measuring the angle let's say
+517150~003550~with the potentiometer so here we're measuring
+520700~003350~the angle and we have an output which is proportional
+524050~003870~to that measured angle and then we would use
+527920~003770~feedback comparing
+531690~004550~the measured angle to some
+536240~004300~proportionality factor multiplying the desired angle
+540540~003020~so here we have the desired angle
+543560~003110~again through some type a potentiometer
+546670~003320~the two are compared I do the comparator
+549990~003240~we basically have an indication of what the difference
+553230~004000~is and that represents an error between the desired in the true Engel
+557230~004530~and then that is used through perhaps an amplifier
+561760~003630~to control the motor and in that case
+565390~004550~of course when the air goes to zero that means that the actual angle on the
+569940~001110~desired angle
+571050~004080~are equal and in fact in that case also with this system
+575130~005060~the input to the motor is likewise equal to 0
+580190~003000~now and as i've illustrated here
+583190~004030~it tends to be in the context or a continuous-time
+587220~003869~or analog system and in fact another very common
+591089~003781~way of doing positioning or tracking is
+594870~004020~to instead implement the feedback
+598890~003410~using a discrete I'm a digital system
+602300~003820~and so in that case we would basically take the
+606120~003659~position output as its measures
+609779~003041~sample at a sexually
+612820~003889~convert that to additional discrete-time
+616709~005351~signal and then that is used in conjunction
+622060~004510~with the desired angle
+626570~003500~which both foreign ports to this processor
+630070~004500~and the output a bad is converted let's say back to
+634570~005519~and a an analog a continuous-time voltage and used to drive the motor
+640089~003701~now you could ask why would you go to
+643790~003520~a digital or discrete time measurement rather than doing it
+647310~003790~the way a I showed on the previous overlay which seemed relatively
+651100~001400~straightforward
+652500~004389~and the reason principally is dead in the context of a digital implementation
+656889~003311~the feedback process often
+660200~003259~you can implement a better controlled
+663459~003341~an offense also more sophisticated
+666800~005900~algorithm for the feedback dynamic so that you can take a cab perhaps not only
+672700~004960~the angle itself but also love the rate of change a bang going in fact
+677660~003580~the rate of change in the rate of change in angle and
+681240~003070~so the system Isis shown air then
+684310~003890~is basically has a discrete-time
+688200~004800~or digital feedback loop around a continuous-time system
+693000~003010~now open this is an example 0
+696010~003759~in fact the more general way in which
+699769~003431~discrete-time feedback is used with
+703200~003259~continuous systems and
+706459~003241~let me indicate in general what such
+709700~003810~what the character a block diagram such a system might be
+713510~005579~typically if we abstract away from the telescope Positioning System
+719089~004611~we might have a more general continuous-time system
+723700~004819~and around which we want to apply some feedback which we could do with a
+728519~001741~continuous-time system
+730260~003639~or with the discrete-time system by first
+733899~006411~converting the signals to discrete-time signals
+740310~004300~then processing that with a discrete-time system
+744610~004000~and then through inappropriate interpolation algorithm
+748610~003800~we would then convert that back to
+752410~003619~a continuous-time signal and
+756029~004211~the difference between the input signal and this continues to signal which is
+760240~001170~fed back
+761410~003320~then forms the exhortation to the system that
+764730~003219~essentially we're trying to control and in
+767949~003911~many systems that this type the advantage
+771860~003099~is that this system can be implemented
+774959~003810~in a very reproducible way either with a digital computer computer
+778769~003481~or with microprocessor and although
+782250~003870~we're not going to go into this in any detail
+786120~004459~in this lecture there is some discussion this in the text
+790579~003570~essentially if we make certain assumptions about
+794149~003930~this particular feedback system we can
+798079~004491~move the continues to discrete-time converter
+802570~003930~up to this point and to this point and we can move
+806500~003570~the interpolating system outside
+810070~003980~the summer and what happens in that case
+814050~003159~is that we end up with what
+817209~004190~looks like an inherently discrete-time
+821399~003911~feedback system so in fact we take those steps
+825310~003649~then what we'll end up with for a feedback system
+828959~003081~is a system that essentially
+832040~003760~can be analyzed as a discrete-time system
+835800~003440~here we have what is in the forward path
+839240~003130~and is basically the continuous-time system
+842370~004149~with the interpolator at one end and it continues to discrete-time converter at
+846519~001171~the other end
+847690~004199~and then we have whatever system it was in the feedback loop
+851889~003411~discrete-time that shows up in this
+855300~003229~feedback loop well show this
+858529~004151~mainly to emphasize the fact although there are some steps there that we
+862680~001779~obviously left out
+864459~004130~I show that mainly to emphasize the fact that feedback arises
+868589~003511~not just in the context of continuous-time systems
+872100~003560~but also the analysis love discrete-time
+875660~004250~feedback systems becomes important perhaps because
+879910~004729~we have used discrete-time feedback around a continuous-time system
+884639~004140~but also perhaps because the feedback system
+888779~003761~is inherently discrete-time in lobby and just illustrate
+892540~003060~one or indicate one example in which
+895600~003539~that might arise this is an example
+899139~003000~in which which is also
+902139~003130~discussed in so in more detail in the text
+905269~004701~but basically population studies for example
+909970~004910~represent examples all discrete-time feedback systems
+914880~004569~where let's say that we have some type of model
+919449~003560~for population growth and since people come
+923009~004291~in imager amounts that represents essentially
+927300~004570~the the I the output over any population model
+931870~003380~essentially are inherently represents a sequence namely its index
+935250~003350~on an integer variable
+938600~004220~and typically models for population growth
+942820~004530~are unstable systems you can kind imagine that because
+947350~004659~if you take simple models the population and what happens is that
+952009~003130~the in any generation the
+955139~003271~number all people or
+958410~003220~animals or whatever it is that this is modeling
+961630~003550~grows essentially exponentially I love with
+965180~004170~the size the previous generation now where does the feedback come in
+969350~003810~well the feedback typically comes in in in
+973160~005080~incorporating in the overall model various retarding factors for example
+978240~004050~as the population increases the food supply becomes more limited
+982290~004489~and that a sexually as a feedback process
+986779~003240~dead acts to
+990019~003401~retard the population growth and so
+993420~003580~an overall model are somewhat simplified
+997000~004199~for a for a population system
+1001199~005070~is the open-loop model in the absence of retarding factors
+1006269~003310~and then very often the retarding factors
+1009579~003801~can be described as being related
+1013380~003340~to the size of the population and those
+1016720~003200~essentially act to reduce
+1019920~004140~the overall input to the population model
+1024060~003410~and so population studies are
+1027470~007000~one very common example love discrete-time feedback systems
+1034819~003121~well what would a look at and understand
+1037940~003210~are the basic properties love
+1041150~003450~feedback systems and to do that
+1044600~004190~let's look at the basic block diagrams and equations
+1048790~003430~for feedback systems either continuous-time and discrete-time
+1052220~003060~let's begin with
+1055280~003280~the continuous-time case
+1058560~005640~and now what we've done is simply abstract out
+1064200~004110~any of the applications to a fairly general system
+1068310~003570~in which we have a system HVS
+1071880~004850~in what's referred to as the forward path
+1076730~003670~and a system GIS in the feedback path
+1080400~003190~and the the
+1083590~004610~input to the system HVS is the difference between the input to the
+1088200~001520~overall system
+1089720~003290~and the output out the feedback loop
+1093010~003200~and I draw your attention to the fact that
+1096210~004490~what we illustrate here and what we're analyzing is negative feedback
+1100700~003030~namely this out this output is attracted
+1103730~003100~from the input and thats done
+1106830~003540~more for reasons have convention than for any other reasons
+1110370~003740~its typical to do that an appropriate certainly
+1114110~003470~in some feedback systems but not all and
+1117580~004760~the output of the answer is commonly referred to as the error signal
+1122340~003500~indicating that is the difference between the signal fed back
+1125840~003410~and the input to the overall system
+1129250~003690~now if we want to analyze the feedback system
+1132940~003020~we would do that essentially by writing the appropriate equations
+1135960~003680~and its best done and generating
+1139640~003450~the equivalent system function for the overall system
+1143090~004970~it's best on in the frequency or poss transform domain
+1148060~003710~rather than a in the time domain and let me just indicate
+1151770~004000~what the steps are that are involved in there are few steps have algebra that
+1155770~004580~I that I'll leave in your hands but basically if we look at
+1160350~005680~this feedback system we can label of course is the output is why ft
+1166030~004420~we can label they look lost transform the output is why evas
+1170450~004880~and we also have YS as the input here
+1175330~005830~because this is the system function the apostrophe s former varsity is simply
+1181160~003900~the applause transformer this and for which is why our best times Govs
+1185060~003340~so here we have why evas times
+1188400~003550~Govs at the air
+1191950~004000~the input here is excessive ass
+1195950~004030~and so the law applies transform of the error signal
+1199980~004350~is simply exit ass
+1204330~005360~minus our best which is why I've SG a vast so this is minus why evas
+1209690~003360~GFS thats
+1213050~004110~the love postures for the error signal the apostrophe its form
+1217160~004170~all the output if this system is simply
+1221330~003990~this expression times HFS
+1225320~005290~so that's what we have here but what we have here we already called why evas
+1230610~003440~so in fact we can simply say dead
+1234050~003130~these two expressions have to be equal
+1237180~003390~and so we've essentially done the analysis
+1240570~003430~saying that those two expressions are equal lets us
+1244000~004940~solve for y más over Xmas which is the overall system function
+1248940~004810~and if we do that what we end up with for the overall system function
+1253750~003160~is the algebraic expression that I indicate here
+1256910~003490~its HFS divided by one-plus
+1260400~003560~GFS HFS said another way
+1263960~006090~its the system function in the open-loop forward path
+1270050~005120~divided by one-plus what's referred to as the loop gain
+1275170~004640~GFS times HFS let's just look back up at the block diagram
+1279810~003240~GFS times HFS is
+1283050~004130~simply the gain around the entire loop
+1287180~003620~from this point around to this point
+1290800~004590~so the overall system function is the gain in the forward path
+1295390~003790~divided by one-plus the loop gain which is
+1299180~004300~HFS times GFS now
+1303480~004200~none of the equations that we wrote head relied specifically on this being
+1307680~002230~continuous time we just did some algebra
+1309910~003630~and we use the system function property of the system's
+1313540~004150~at so pretty obviously the same kinda
+1317690~004090~algebraic procedure would work in discrete-time
+1321780~005470~and so in fact if we carried out a discrete-time analysis
+1327250~003730~rather than a continuous-time analysis we would simply
+1330980~004180~and up with exactly the same
+1335160~003430~system and exactly the same
+1338590~003580~a question for the
+1342170~004320~overall system function the only difference being that
+1346490~004950~here things are functional see whereas if I just flipped back
+1351440~003340~the other overlay we simply have
+1354780~005270~previously everything as a function of tea and a frequency-domain
+1360050~003650~s in the discrete-time case
+1363700~004460~we've simply replaced in the time domain the independent variable by
+1368160~003620~and and in the frequency domain
+1371780~003080~the independent variable by C
+1374860~003500~so what we see is that
+1378360~003430~the we have a basic feedback equation
+1381790~004250~and that feedback equation is exactly the same for continuous-time and
+1386040~001180~discrete-time
+1387220~004340~although we have to be careful about what implications we draw
+1391560~003700~depending on whether we're talking about continuous-time
+1395260~003580~for discrete-time
+1398840~003070~now to illustrate
+1401910~003650~the importance a feedback let's look at
+1405560~003190~a number love common applications
+1408750~003780~and also as we talk about these applications will see
+1412530~003330~is dead while these applications
+1415860~003380~and context in which feedback is used are
+1419240~003030~extremely useful and powerful they
+1422270~004050~fallout in a an almost straightforward way
+1426320~003120~from is very simple feedback equation
+1429440~003340~that we've just arrived well
+1432780~003210~the examples that I want to just talk about
+1435990~003010~are for civil the
+1439000~004040~use the feedback in amplifier design and we're not going to
+1443040~004280~design ample fires in detail but what I'd like to illustrate
+1447320~004780~is the basic principle behind why feedback
+1452100~004030~is useful in designing amplifiers in particular
+1456130~003040~how it plays a role in compensating
+1459170~003140~for a9 constant frequency response
+1462310~003130~that's so that's one context that will talk about
+1465440~004770~a second that I'll indicate is the use the feedback
+1470210~003680~for implementing infers systems
+1473890~003800~and a third which we indicated it
+1477690~003310~in the case the inverted pendulum is important
+1481000~004860~context in which feedback is used is in stabilizing unstable systems
+1485860~004560~and what we want to see is wire how
+1490420~004460~the a feedback system where the basic feedback equation
+1494880~004380~in fact letters to each of these various things
+1499260~003510~well let's begin with amplifier design
+1502770~003310~and let's suppose that we've
+1506080~003100~built somehow without feedback
+1509180~004200~and ample fire that is terrific in terms of its game
+1513380~005440~but has the problem dead whereas we might like the ample fire to have
+1518820~004500~a very flat frequency response in fact the frequency response to the sample
+1523320~000870~fire
+1524190~003300~is 9 constant and what we'd like to do
+1527490~004160~is compensate for that well it turns out interestingly
+1531650~004540~dead if we embed the amplifier in a feedback loop
+1536190~004980~where in a feedback path we incorporate an attenuator
+1541170~005330~then in fact we can compensate for that nine constant frequency response
+1546500~003470~well let's see how that works out for the feedback equation
+1549970~004340~we have the basic feedback equation we derive that we want to look at frequency
+1554310~001030~response
+1555340~004470~so we look specifically at the Fourier transform and of course
+1559810~003240~the frequency response to be overall system is
+1563050~004140~the frequency response to the out at the Fourier transform the output divided by
+1567190~004300~the input using the feedback equation that we just arrived
+1571490~005870~that has in the numerator the frequency response in the forward path divided by
+1577360~001050~one plus
+1578410~005010~the loop gain which is hijo may get times K
+1583420~003660~and this is the key because here
+1587080~003490~if we choose K times HJ Omega
+1590570~005130~to be very large much larger than 1
+1595700~003300~then what happens is that these two
+1599000~003450~cancel out hijo may get times hijo
+1602450~003790~Hojo Maki here and in the denominator will cancel out
+1606240~003530~as long as this term dominates and in that case
+1609770~004540~under that assumption the overall system function is approximately
+1614310~003040~one over K
+1617350~004210~well if K is constant
+1621560~004570~as a function of frequency then we somehow magically have ended up
+1626130~005120~with an amplifier that has a flat frequency response
+1631250~004110~well it seems like we're getting something for nothing and actually
+1635360~003700~were not there's a price that we pay for that because
+1639060~003750~notice the fact dead in order to get
+1642810~003930~gain out at the overall system
+1646740~005770~K must be less than one so this has the correspond to an attenuator
+1652510~003250~and we also require that
+1655760~004130~K which is less than one times the game up the original amplifier
+1659890~004380~that that product be greater than one and the implication of this without
+1664270~003750~tracking it in detail right now the implication it in this
+1668020~004070~is dead whereas we flattened the frequency response
+1672090~004470~we have in fact been paid a price for that the price we paid is that
+1676560~003190~the game is somewhat reduced from the gain
+1679750~004490~that we had before the feedback because k times H
+1684240~003310~must be much larger than 1 but the gayness
+1687550~003280~is proportional to one over K now one last point to make
+1690830~004860~related to that when Caswell why is it any easier
+1695690~003130~to make a flat with frequency then
+1698820~004520~to build a flat an amplifier with the flat frequency response
+1703340~003690~the reason is that the gain in the feedback path
+1707030~004050~is an attenuator not an amplifier and
+1711080~005200~generally attenuation with a flat frequency response is much easier to get
+1716280~003650~then gainers for example a resistor which
+1719930~006240~attenuates with generally have a flatter frequency response at a very high gain
+1726170~002010~amplifier
+1728180~003290~part so p.m. that's one common example
+1731470~004780~feedback that and feedback in fact is is very often used in
+1736250~004860~high-quality ample fire systems another very common example
+1741110~003440~in which feedback is used is in
+1744550~003680~implementing inverse systems
+1748230~003600~now what I mean by that is suppose that
+1751830~003540~we have a system which indicate here P evas
+1755370~004300~input and output and what we would like to do
+1759670~003930~is implemented a system which is the infers that this system
+1763600~005040~namely has a a-plus transformer system function
+1768640~004390~which is one over pls in for example
+1773030~003650~we may have measure a particular system
+1776680~003470~and what we would like to design is a compensator for it
+1780150~003290~and the question is by putting this in a feedback loop
+1783440~003060~can we in fact implement
+1786500~004090~the inverse that this system the answer to that is yes
+1790590~005260~and the feedback system in that case is as i indicate here
+1795850~004080~so here what we choose to do
+1799930~003490~is to put the system whose inverse we're trying to generate
+1803420~003350~in a feedback loop and
+1806770~004170~in this case a high-gain in the forward path
+1810940~004850~now for this situation k is again a constant but in fact that the high-gain
+1815790~000750~constant
+1816540~003750~and now if we look at the feedback equation then
+1820290~003930~what we see is equation if this form
+1824220~003990~and notice that if K ties PFS
+1828210~004300~is large compared with one
+1832510~006190~then this term dominates the gain in the forward path cancels out
+1838700~003360~and what we're left with is a system function
+1842060~003290~which is just one over
+1845350~004720~PFS an a sister this type
+1850070~004210~is used in a whole variety of contexts one very common one
+1854280~004540~is in building what a call like a rhythmic devices are like rhythmic
+1858820~001060~amplifiers
+1859880~004630~ones in which the input output characteristic is like a rhythmic
+1864510~003520~it's common to do that with a diode
+1868030~003280~that has an exponential characteristic and
+1871310~004120~using that with feedback as feedback
+1875430~004300~around a high gain operational amplifier and by the way
+1879730~003950~the logarithmic amplifier is nonlinear what I said here's linear
+1883680~004440~or the analysis here was linear but that example in fact
+1888120~004210~suggests something which is true which is that
+1892330~005450~that same basic idea in fact can be used often in the context of nonlinear
+1897780~004490~feedback and nonlinear feedback systems
+1902270~003200~alright well as a final example
+1905470~004740~what I'd like to analyze is the context in which
+1910210~003500~we would consider stabilizing
+1913710~003020~unstable systems and
+1916730~004440~I had indicated that one context in which that arises and
+1921170~003950~a which we will be analyzing the next lecture
+1925120~003390~is the inverted pendulum and
+1928510~003460~in that situation or in a situation where
+1931970~003190~we're attempting to stabilize an unstable system
+1935160~003590~we have now in the forward path
+1938750~003360~a system which is unstable
+1942110~003400~and in the feedback pair
+1945510~003040~we put inappropriate system
+1948550~004450~so that the overall system in fact is stable
+1953000~003320~now how can stability at high rise
+1956320~003690~outta having and initially unstable system
+1960010~004970~well again if we look at the basic feedback equation
+1964980~004710~the overall system function is the system function for the forward path
+1969690~004650~divided by a one plus the loop gain GFS times HFS
+1974340~003230~and for stability
+1977570~004200~what we want to examine are the roots have one plus GFS times HFS
+1981770~003590~and in particular the polls are
+1985360~003550~zeros up that factor
+1988910~003550~and as long as we choose GFS so that
+1992460~003000~the polls love this term
+1995460~003610~I'm sorry so that the zeros at this term
+1999070~003940~are in the left after the S plane
+2003010~003470~then what we'll end up with is stability so
+2006480~004540~stability is dependent not just on HFS for the closed-loop system
+2011020~003240~but on one plus GFS times hrs
+2014260~003130~and in this kind of notion
+2017390~003260~is used in lots of situations
+2020650~004410~I indicated the inverted pendulum another very common example
+2025060~003840~is in some very high performance aircraft
+2028900~004020~where the basic aircraft system
+2032920~003610~is an unstable system but in fact
+2036530~003320~it's stabilized by putting the right kinda
+2039850~004880~feedback dynamics around it and those feedback dynamics might in fact
+2044730~003140~involve the pilot is well
+2047870~005719~now 4
+2053589~003191~the system that we just talked about in
+2056780~003410~the stability was
+2060190~004260~described in terms of a continuous-time system
+2064450~004240~and the stability condition that we end up with of course relates
+2068690~004040~to the zeros love this the nominator term
+2072730~003590~and we require for stability dead the real parts
+2076320~005289~love The Associated roots bien the left after the S point
+2081609~004611~exactly the same kind analysis in terms of stability
+2086220~004280~apply is in discrete-time that is
+2090500~003589~in discrete-time as we saw previously
+2094089~004761~the basic discreet I feedback system is exactly the same except that the
+2098850~001310~independent variable
+2100160~004170~is now an integer variable rather than a continuous variable
+2104330~003070~the feedback equation is exactly the same
+2107400~003810~so to analyze stability of the feedback system
+2111210~003670~we would want to look at this zeros love one-plus
+2114880~004290~GFZ times agency so again it's those zeros
+2119170~004450~that affect stability and the principal difference
+2123620~003810~between the continuous-time and discrete-time cases
+2127430~004880~is the fact that the stability condition
+2132310~004640~in discrete-time is different than it is in continuous time namely
+2136950~003100~in continuous-time we care for stability
+2140050~003680~about polls of the overall system
+2143730~004990~being in the left and left after the espy to the right half vs plane
+2148720~003040~in discrete-time what we care about is
+2151760~003620~whether the polls are inside or outside the unit circle
+2155380~003630~so in the discrete-time case
+2159010~003710~what we wait impose for stability is that the zeros
+2162720~003320~have a magnet to which is less than one
+2166040~003660~so the basic analysis is the same but
+2169700~005980~the details at the stability condition of course it different
+2175680~003060~now wet just indicated
+2178740~003890~is that feedback can be used
+2182630~004560~to stabilize unstable system
+2187190~003440~and as you can imagine is the other side of the coin
+2190630~003260~namely if you start with
+2193890~004040~a stable system and put feedback around it
+2197930~004340~if you're not careful what can happen in fact is that you can destabilize the
+2202270~000900~system
+2203170~004990~so is always the potential hazard unless it's something you want to have happen
+2208160~004560~dead feedback around what used to be a stable system
+2212720~003710~now generates a system which is on stable and their
+2216430~003350~are lots of examples at that one very common example
+2219780~004600~is in audio systems and this is probably an example that your
+2224380~004030~somewhat familiar with basically
+2228410~005890~an audio system if you have the speaker and microphone in any kind of proximity
+2234300~001210~to each other
+2235510~003190~is in fact the feedback system well
+2238700~003240~first of all the audio input
+2241940~003930~to the microphone consists of
+2245870~003380~the external audio inputs
+2249250~004250~which and the external audio inputs might for example
+2253500~004080~I be my voice that might be the room noise
+2257580~003470~and in fact as well as trade shortly if I'm not careful
+2261050~005320~might in fact be the output from speaker which represents feedback
+2266370~003420~that audio of course drives
+2269790~004030~after appropriate amplification drives
+2273820~003570~a speaker and
+2277390~003950~if in fact the speaker
+2281340~003040~is let's say has any proximity to
+2284380~004480~the microphone then there can be a certain amount of the output to the
+2288860~001270~speaker
+2290130~003070~that feeds back around
+2293200~003210~and is fed back into
+2296410~003070~the microphone now
+2299480~003870~if the system function associated with the feedback to indicate here as a
+2303350~001110~constant
+2304460~003410~times into my SS times capital T
+2307870~004080~the in the minus s times capital T represents the fact
+2311950~003140~that their is in general some delay
+2315090~004500~between the time delay between the speaker output
+2319590~004230~and the input that it generates to the microphone
+2323820~003330~the reason for that the lay of course being dead
+2327150~003430~there may be some distance between the speaker and microphone
+2330580~004270~and the constant k to that I have in the feedback path
+2334850~003750~represents the fact that between the speaker in the microphone
+2338600~003060~there may be some attenuation so
+2341660~004320~if I have for example speakers I happen to have here
+2345980~003550~and I were too
+2349530~003750~have that speaker putting out
+2353280~003980~what in fact I'm putting into the microphone or the app for the microphone
+2357260~005440~than what we have is a feedback path and the feedback path is from the microphone
+2362700~004250~through the speaker I did the speaker back into the microphone
+2366950~003890~and the feedback path is from here
+2370840~004930~to the microphone and the characteristics or frequency response
+2375770~001250~our system function
+2377020~004580~is associated with the characteristics a propagation a transmission
+2381600~004170~if I we move closer to the speaker and I by the way don't have the speaker on
+2385770~004210~right now and I'm sure you all understand why
+2389980~003780~a in if I move closer then
+2393760~004680~the constant k2 gets what
+2398440~005300~gets larger and if I move further away the constant k to get small
+2403740~005800~Bardwell let's look at and analysis if this and see what it is or why it is
+2409540~001210~that in fact we
+2410750~004650~getting instability in terms or that any stability is predicted by the basic
+2415400~002140~feedback equation
+2417540~004640~now notice first of all they were talking about positive feedback here
+2422180~004500~and just simply substituting the appropriate
+2426680~004630~system functions into our basic feedback equation
+2431310~003070~we have an equation that says that the overall system function
+2434380~005050~is given by the forward gain which is the gain of the amplifier
+2439430~004200~between the microphone and speaker divided by
+2443630~004480~one minus because in the minus because we have positive feedback
+2448110~003270~the overall loop gain which is k1 k2
+2451380~004610~either minus s capital T and these two games k1 and k2
+2455990~003180~are are assumed to be positive and
+2459170~003820~and generally are positive so in order
+2462990~003310~for us to a
+2466300~003160~well if if you want to look at the polls at the system
+2469460~003290~then we want to look at this zeros this the nominator
+2472750~004450~and the zeros is this the nominator occur at values %uh vests
+2477200~005780~such that you to the minus s capital T is equal to 1 over K one times k2
+2482980~003130~and acquittal early that says that
+2486110~005040~the the polls love the closed-loop system
+2491150~003910~occur at one over capital T in capital T
+2495060~003790~is related to the time delay one over capital T
+2498850~004510~times the lock to the basie fk1 times k2
+2503360~003230~well for stability we want
+2506590~003210~these polls to all be in the left after the S plane
+2509800~003940~and what that means then is that for stability
+2513740~004020~well we require is dead k1 times k2
+2517760~004920~be less than 1 in other words we require that the overall loop gain
+2522680~003430~the less the magnitude lou came P less than 1
+2526110~003510~if it's not then what we generate is instability
+2529620~004360~and just to illustrate that let's turn the speaker on
+2533980~004120~and what will demonstrate is feedback
+2538100~003740~right now the system is stable are and I'm being careful to keep my distance
+2541840~001480~from the speaker
+2543320~003780~as I get closer k2
+2547100~004410~will increase and as k2 increases
+2551510~003860~eventually the polls will move into the right here for the S plane
+2555370~003750~or they'll try to what will happen is that the system will start oscillating
+2559120~002050~going to nonlinear distortion
+2561170~003890~so as I get closer you can hear that
+2565060~005480~we get feedback we get isolation and you
+2570540~004750~I guess neither you nor I can take too much bad food
+2575290~005300~the unseeded what's happening if we can just turn the speaker of now
+2580590~003650~and you can see that what's happening is that as
+2584240~004450~k2 increases the polls are moving
+2588690~003700~on to the jail make axis the system starts docile aid
+2592390~003110~their own actually moving to the right half plane because
+2595500~007000~there are nonlinear nonlinearities that inherently control system
+2602780~003000~okay so what we've seen
+2605780~003600~in the lecture at today's lecture
+2609380~003680~is the basic analysis equation and
+2613060~003640~a few of the applications and one application
+2616700~004460~that or one both application hazard that we've talked about
+2621160~003610~and is the application in which we
+2624770~003950~may destabilize unstable systems or if we're not careful
+2628720~004600~destabilize stable systems as i've indicated several
+2633320~003880~times during the lecture one common example
+2637200~005700~love unstable system which feedback can use be used to stabilize
+2642900~005200~is the inverted pendulum which I refer to several times
+2648100~003670~and in the next lecture what I'd like to do is
+2651770~003610~focus in on a more detailed analysis at this
+2655380~004030~and what we'll see in fact is dead
+2659410~003220~the feedback dynamics the former the feedback dynamics
+2662630~005120~are important with regard to whether you can it can stabilize the system
+2667750~004460~interestingly enough for this particular system as we'll see in the next lecture
+2672210~003690~if you simply try to measure the angle
+2675900~004990~and feed that back that in fact you can stabilize the system
+2680890~003350~water requires is not only the angle
+2684240~003620~but some information about the rate of change angle
+2687860~003180~but will see that in much more detail in the next lecture
+2691040~000400~thank you

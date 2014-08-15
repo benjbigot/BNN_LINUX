@@ -1,0 +1,2439 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU ha
+
+00:00:35,000 --> 00:00:38,000
+in
+
+00:00:38,000 --> 00:00:40,000
+in
+
+00:00:40,000 --> 00:00:44,000
+the norm
+
+00:00:44,000 --> 00:00:51,000
+are
+
+00:00:51,000 --> 00:00:58,000
+the
+
+00:01:00,000 --> 00:01:03,000
+in the last lecture we discussed sinusoidal
+
+00:01:03,000 --> 00:01:06,000
+and real in complex exponential signals both
+
+00:01:06,000 --> 00:01:12,000
+for continuous-time and discrete-time no signals will form very
+
+00:01:12,000 --> 00:01:15,000
+important building blocks when we
+
+00:01:15,000 --> 00:01:20,000
+return to the discussion love Fourier analysis and later lectured
+
+00:01:20,000 --> 00:01:24,000
+in today's lecture I'd like to introduce
+
+00:01:24,000 --> 00:01:27,000
+some additional basic signals specifically
+
+00:01:27,000 --> 00:01:32,000
+the unit step and unit impulse signal let's begin
+
+00:01:32,000 --> 00:01:36,000
+with discrete-time and the discrete-time units that
+
+00:01:36,000 --> 00:01:40,000
+in unit in polls the discrete-time unit step
+
+00:01:40,000 --> 00:01:45,000
+is a sequence is a indicated here specifically
+
+00:01:45,000 --> 00:01:49,000
+a sequence which is zero for
+
+00:01:49,000 --> 00:01:53,000
+negative values if its argument and equal to 1
+
+00:01:53,000 --> 00:01:57,000
+for positive values up its argument and
+
+00:01:57,000 --> 00:02:00,000
+so mathematically
+
+00:02:00,000 --> 00:02:04,000
+the unit step sequence is one
+
+00:02:04,000 --> 00:02:09,000
+for in greater than or equal to 0 and 0
+
+00:02:09,000 --> 00:02:15,000
+for and less than zero the unit impulse sequence
+
+00:02:15,000 --> 00:02:19,000
+likewise is defined in a straightforward way
+
+00:02:19,000 --> 00:02:22,000
+the union Paul sequence is a sequence which
+
+00:02:22,000 --> 00:02:27,000
+is 0 for all values if its argument
+
+00:02:27,000 --> 00:02:31,000
+except for an equal 0 so
+
+00:02:31,000 --> 00:02:36,000
+the unit step in unit impulse sequence are defined in a straightforward way
+
+00:02:36,000 --> 00:02:41,000
+mathematically and in fact in they are also related
+
+00:02:41,000 --> 00:02:44,000
+to each other in a straightforward way mathematically
+
+00:02:44,000 --> 00:02:47,000
+specifically the unit in paul's
+
+00:02:47,000 --> 00:02:50,000
+can be related to the unit step
+
+00:02:50,000 --> 00:02:54,000
+through the relationship that i've indicated here
+
+00:02:54,000 --> 00:02:57,000
+Beltre van the unit impulse
+
+00:02:57,000 --> 00:03:02,000
+equal to units that minus the unit stepped away
+
+00:03:02,000 --> 00:03:05,000
+so mathematically the relationship
+
+00:03:05,000 --> 00:03:09,000
+is what is referred to as a first
+
+00:03:09,000 --> 00:03:14,000
+difference
+
+00:03:14,000 --> 00:03:17,000
+and to see the validity love this expression
+
+00:03:17,000 --> 00:03:21,000
+we can simply looking at the unit step
+
+00:03:21,000 --> 00:03:24,000
+and it's the late version so
+
+00:03:24,000 --> 00:03:28,000
+here we show the unit step you then
+
+00:03:28,000 --> 00:03:32,000
+here we show the unit step delayed
+
+00:03:32,000 --> 00:03:37,000
+by one so it 0 for and less than or equal to 0
+
+00:03:37,000 --> 00:03:41,000
+and clearly if we subtract that the late step
+
+00:03:41,000 --> 00:03:47,000
+from the original unit step everything subtract out except at
+
+00:03:47,000 --> 00:03:51,000
+an equal 0 which at which point the difference is equal to 1
+
+00:03:51,000 --> 00:03:55,000
+and so the difference between you have an
+
+00:03:55,000 --> 00:03:59,000
+and you then -1 is simply the unit
+
+00:03:59,000 --> 00:04:04,000
+impulse sometimes incidently also referred to as the unit sample
+
+00:04:04,000 --> 00:04:07,000
+now
+
+00:04:07,000 --> 00:04:10,000
+in a similar way we can
+
+00:04:10,000 --> 00:04:14,000
+express the unit step in terms of the unit impulse and there are several ways
+
+00:04:14,000 --> 00:04:15,000
+of doing this
+
+00:04:15,000 --> 00:04:21,000
+one-way is through a relationship referred to as a running start
+
+00:04:21,000 --> 00:04:24,000
+what I mean by that is
+
+00:04:24,000 --> 00:04:29,000
+the following expression: if we
+
+00:04:29,000 --> 00:04:32,000
+think love morning
+
+00:04:32,000 --> 00:04:36,000
+some from minus infinity
+
+00:04:36,000 --> 00:04:39,000
+up to some bad UN
+
+00:04:39,000 --> 00:04:42,000
+all a unit in paul's
+
+00:04:42,000 --> 00:04:46,000
+our unit sample then this running some
+
+00:04:46,000 --> 00:04:49,000
+in fact is equal to the unit step
+
+00:04:49,000 --> 00:04:52,000
+and we can see that in a
+
+00:04:52,000 --> 00:04:56,000
+fairly straightforward way by simply observing
+
+00:04:56,000 --> 00:05:02,000
+dead in this expression when and is less than 0
+
+00:05:02,000 --> 00:05:05,000
+is nothing accumulated in the some
+
+00:05:05,000 --> 00:05:09,000
+and we can see that graphically as they've shown here
+
+00:05:09,000 --> 00:05:13,000
+so for and less than zero we accumulate no turns into some
+
+00:05:13,000 --> 00:05:16,000
+whereas for an greater than
+
+00:05:16,000 --> 00:05:21,000
+0 we cumulate one non-zero value in the some
+
+00:05:21,000 --> 00:05:25,000
+namely the value of the unit sample at an equal 0
+
+00:05:25,000 --> 00:05:28,000
+so we have then
+
+00:05:28,000 --> 00:05:33,000
+one expression for the relationship between the unit step in the unit sample
+
+00:05:33,000 --> 00:05:38,000
+we can also develop another relationship
+
+00:05:38,000 --> 00:05:41,000
+by observing
+
+00:05:41,000 --> 00:05:45,000
+in essence there if we look at the unit step sequence
+
+00:05:45,000 --> 00:05:49,000
+as I've returned to hear weekend
+
+00:05:49,000 --> 00:05:52,000
+in effect think the unit step sequence
+
+00:05:52,000 --> 00:05:56,000
+as a six-session love unit
+
+00:05:56,000 --> 00:06:01,000
+impulses one following another so
+
+00:06:01,000 --> 00:06:06,000
+if we consider
+
+00:06:06,000 --> 00:06:11,000
+forming Assam
+
+00:06:11,000 --> 00:06:16,000
+all the lady impulses as i indicate mathematically here
+
+00:06:16,000 --> 00:06:19,000
+and as i indicate graphically down below
+
+00:06:19,000 --> 00:06:23,000
+we have an impulse here at an equal 0
+
+00:06:23,000 --> 00:06:26,000
+and an impulse here and any calls one
+
+00:06:26,000 --> 00:06:29,000
+and impose here at any cost to et cetera
+
+00:06:29,000 --> 00:06:33,000
+and when we continue to add these up
+
+00:06:33,000 --> 00:06:36,000
+then what they add up to is the
+
+00:06:36,000 --> 00:06:41,000
+unit step sequence and so mathematically then
+
+00:06:41,000 --> 00:06:45,000
+that would correspond to and im polls that an equal 0
+
+00:06:45,000 --> 00:06:49,000
+plus an impulse to 10 equals 1 was an impulse
+
+00:06:49,000 --> 00:06:54,000
+at any calls to et cetera now in this
+
+00:06:54,000 --> 00:06:57,000
+in continuous-time we have a very
+
+00:06:57,000 --> 00:07:00,000
+more or less similar situation we
+
+00:07:00,000 --> 00:07:03,000
+will find it equally useful to talk about a
+
+00:07:03,000 --> 00:07:07,000
+unit step continuous-time signal and
+
+00:07:07,000 --> 00:07:11,000
+the unit impulse continues time signal let's begin
+
+00:07:11,000 --> 00:07:17,000
+with the continuous-time unit step be
+
+00:07:17,000 --> 00:07:21,000
+continuous-time unit step function is graphically
+
+00:07:21,000 --> 00:07:26,000
+indicated as I've shown here it's a time function
+
+00:07:26,000 --> 00:07:30,000
+which is 0 party less than zero
+
+00:07:30,000 --> 00:07:34,000
+and it's one for T greater than 0
+
+00:07:34,000 --> 00:07:37,000
+and so mathematically what it corresponds to
+
+00:07:37,000 --> 00:07:41,000
+is you if he defined as
+
+00:07:41,000 --> 00:07:44,000
+a time function which is zero for T less than zero
+
+00:07:44,000 --> 00:07:48,000
+one pretty greater than 0
+
+00:07:48,000 --> 00:07:51,000
+now an obvious question is what happens
+
+00:07:51,000 --> 00:07:57,000
+at Evil zero and the difficulty here which is not a difficulty that arises in
+
+00:07:57,000 --> 00:07:58,000
+the discrete-time
+
+00:07:58,000 --> 00:08:01,000
+case is that act equal 0
+
+00:08:01,000 --> 00:08:04,000
+the unit step function is in fact discontinuous
+
+00:08:04,000 --> 00:08:08,000
+which generates a variety mathematical problems
+
+00:08:08,000 --> 00:08:11,000
+and one can define the units that
+
+00:08:11,000 --> 00:08:15,000
+at equal zero in a variety ways
+
+00:08:15,000 --> 00:08:19,000
+but the essential point is that the unit step function
+
+00:08:19,000 --> 00:08:22,000
+is discontinuous so in effect
+
+00:08:22,000 --> 00:08:26,000
+what we need to do is think if the unit step function
+
+00:08:26,000 --> 00:08:29,000
+as the limit all a continuous function
+
+00:08:29,000 --> 00:08:34,000
+and so we can define a function which I specify here
+
+00:08:34,000 --> 00:08:38,000
+as use a delta see
+
+00:08:38,000 --> 00:08:42,000
+and used to build the T is a time function
+
+00:08:42,000 --> 00:08:45,000
+which is 0:40 less than zero
+
+00:08:45,000 --> 00:08:49,000
+linearly increases to time Delta
+
+00:08:49,000 --> 00:08:53,000
+which would correspond to this breakpoint and then
+
+00:08:53,000 --> 00:08:56,000
+one following that and so
+
+00:08:56,000 --> 00:09:00,000
+we can think then love the discontinuous units step
+
+00:09:00,000 --> 00:09:04,000
+as the limiting form use a delta at:
+
+00:09:04,000 --> 00:09:08,000
+as Delta goes to zero
+
+00:09:08,000 --> 00:09:11,000
+now we also wanted to find a
+
+00:09:11,000 --> 00:09:16,000
+unit impulse function and it had a fairly straightforward definition
+
+00:09:16,000 --> 00:09:20,000
+in discrete-time in continuous time things get
+
+00:09:20,000 --> 00:09:24,000
+slightly more difficult and to motivate the definition
+
+00:09:24,000 --> 00:09:28,000
+let me return to the discrete-time definition
+
+00:09:28,000 --> 00:09:32,000
+all or the rather the discrete-time relationship between
+
+00:09:32,000 --> 00:09:37,000
+the unit step and the unit impulse function
+
+00:09:37,000 --> 00:09:40,000
+in discrete-time we saw
+
+00:09:40,000 --> 00:09:43,000
+dead the unit impulse function
+
+00:09:43,000 --> 00:09:47,000
+is the first difference all
+
+00:09:47,000 --> 00:09:50,000
+the unit step function
+
+00:09:50,000 --> 00:09:54,000
+well similarly in continuous-time
+
+00:09:54,000 --> 00:09:58,000
+we can talk about and impulse function
+
+00:09:58,000 --> 00:10:01,000
+which is the first derivative love
+
+00:10:01,000 --> 00:10:05,000
+a unit step function
+
+00:10:05,000 --> 00:10:08,000
+so the unit impulse as we wanted to find it
+
+00:10:08,000 --> 00:10:11,000
+is the derivative of the units that
+
+00:10:11,000 --> 00:10:15,000
+course we just finished discussing the fact that
+
+00:10:15,000 --> 00:10:21,000
+the unit step function is in fact discontinuous it equals 0
+
+00:10:21,000 --> 00:10:25,000
+but we can't think love its derivative as related
+
+00:10:25,000 --> 00:10:29,000
+to this approximation to the units there
+
+00:10:29,000 --> 00:10:33,000
+and specifically we will think love
+
+00:10:33,000 --> 00:10:36,000
+the continuous-time in polls as
+
+00:10:36,000 --> 00:10:40,000
+the derivative %uh use a belt 50
+
+00:10:40,000 --> 00:10:43,000
+as Delta goes to zero so
+
+00:10:43,000 --> 00:10:47,000
+to define the unit in polls we think I've the derivative
+
+00:10:47,000 --> 00:10:50,000
+love this approximation to the unit step
+
+00:10:50,000 --> 00:10:55,000
+and then observe what happens as Delta goes to zero
+
+00:10:55,000 --> 00:10:59,000
+we have then the definition love
+
+00:10:59,000 --> 00:11:04,000
+the unit impulse function
+
+00:11:04,000 --> 00:11:07,000
+more or less formally to find as
+
+00:11:07,000 --> 00:11:11,000
+the first derivative of the units step
+
+00:11:11,000 --> 00:11:15,000
+or thought I love as the limiting form
+
+00:11:15,000 --> 00:11:19,000
+love the derivative love
+
+00:11:19,000 --> 00:11:22,000
+the approximation to the unit step
+
+00:11:22,000 --> 00:11:26,000
+in the limit as Delta the
+
+00:11:26,000 --> 00:11:32,000
+the duration love the discontinuity goes to zero
+
+00:11:32,000 --> 00:11:36,000
+well let's look at that if we
+
+00:11:36,000 --> 00:11:39,000
+think about the derivative love
+
+00:11:39,000 --> 00:11:46,000
+used to build the T the derivative of course is 0 for T less than zero
+
+00:11:46,000 --> 00:11:50,000
+its equal to a constant during this linear slow
+
+00:11:50,000 --> 00:11:55,000
+and then it 0 pretty greater than Delta so
+
+00:11:55,000 --> 00:12:00,000
+the derivative abusive Delta 50 will then
+
+00:12:00,000 --> 00:12:04,000
+be as i've indicated here and
+
+00:12:04,000 --> 00:12:08,000
+is simply a rectangle with a height
+
+00:12:08,000 --> 00:12:15,000
+which is one over Delta and with which is equal to Delta and observed that no
+
+00:12:15,000 --> 00:12:17,000
+matter what the value of Delta is
+
+00:12:17,000 --> 00:12:20,000
+the area is always equal to 1
+
+00:12:20,000 --> 00:12:25,000
+now as we let Delta go to zero
+
+00:12:25,000 --> 00:12:29,000
+what happens is that the width of the rectangle get smaller
+
+00:12:29,000 --> 00:12:33,000
+the height of the rectangle gets bigger the area still remains one
+
+00:12:33,000 --> 00:12:37,000
+as Delta goes to zero of course the with goes to zero
+
+00:12:37,000 --> 00:12:40,000
+and the height goes to infinity
+
+00:12:40,000 --> 00:12:44,000
+and graphically we choose to depict that
+
+00:12:44,000 --> 00:12:48,000
+as an arrow where
+
+00:12:48,000 --> 00:12:52,000
+the arrow indicates the fact dead we have
+
+00:12:52,000 --> 00:12:55,000
+and im polls occurring at equal 0 and
+
+00:12:55,000 --> 00:12:59,000
+and the height of the in polls is used to represent
+
+00:12:59,000 --> 00:13:04,000
+what the area above the impulses and in this case
+
+00:13:04,000 --> 00:13:07,000
+since we took the derivative of the units that the
+
+00:13:07,000 --> 00:13:13,000
+quite is people to want
+
+00:13:13,000 --> 00:13:16,000
+so the impulse has 0 with
+
+00:13:16,000 --> 00:13:20,000
+infinite hi area one its
+
+00:13:20,000 --> 00:13:23,000
+mathematically not terribly comfortable because
+
+00:13:23,000 --> 00:13:27,000
+what we've done is taking the derivative of the unit step which has a
+
+00:13:27,000 --> 00:13:29,000
+discontinuity at the origin
+
+00:13:29,000 --> 00:13:33,000
+and there's a mathematical difficulties with doing that
+
+00:13:33,000 --> 00:13:36,000
+well in fact return to another interpretation
+
+00:13:36,000 --> 00:13:40,000
+%uh the in polls later up
+
+00:13:40,000 --> 00:13:44,000
+can't emphasize sum up the sir discomfort with the impulse
+
+00:13:44,000 --> 00:13:48,000
+I remember something that Sam Mason
+
+00:13:48,000 --> 00:13:52,000
+used to say that a student said about the unit impulse which was
+
+00:13:52,000 --> 00:13:57,000
+his definition was unit impulse is something that's so small everyplace I
+
+00:13:57,000 --> 00:13:58,000
+can't see it
+
+00:13:58,000 --> 00:14:03,000
+except that one point where it's so big I can see it in other words I can see it
+
+00:14:03,000 --> 00:14:03,000
+at all
+
+00:14:03,000 --> 00:14:07,000
+well except some informality
+
+00:14:07,000 --> 00:14:11,000
+with the unit impulse function in the continuous-time
+
+00:14:11,000 --> 00:14:15,000
+K's and generally we'll see
+
+00:14:15,000 --> 00:14:20,000
+that we won't get into particular difficulty okay now
+
+00:14:20,000 --> 00:14:25,000
+the impose is the derivative the step we saw
+
+00:14:25,000 --> 00:14:29,000
+in the discrete-time case that step
+
+00:14:29,000 --> 00:14:32,000
+could be recovered from the in polls through a running some
+
+00:14:32,000 --> 00:14:37,000
+in continuous time with the impulse is the derivative overstep we would
+
+00:14:37,000 --> 00:14:40,000
+moralist reasonably expect that this step
+
+00:14:40,000 --> 00:14:44,000
+would be like an integral the in polls and indeed that's true
+
+00:14:44,000 --> 00:14:48,000
+in fact mathematically the relationship is
+
+00:14:48,000 --> 00:14:52,000
+that the unit step
+
+00:14:52,000 --> 00:14:56,000
+function in continuous-time
+
+00:14:56,000 --> 00:14:59,000
+is the running integral although
+
+00:14:59,000 --> 00:15:03,000
+the unit impulse function and
+
+00:15:03,000 --> 00:15:07,000
+so is the integral from minus infinity up to time TV
+
+00:15:07,000 --> 00:15:10,000
+weighty is the argument at which
+
+00:15:10,000 --> 00:15:14,000
+were examining you ft and so
+
+00:15:14,000 --> 00:15:18,000
+just as with the discrete-time case if
+
+00:15:18,000 --> 00:15:22,000
+we are looking at T less than zero
+
+00:15:22,000 --> 00:15:25,000
+is no area accumulated in the integral
+
+00:15:25,000 --> 00:15:30,000
+if we're looking at T greater than 0 then we accumulate the area
+
+00:15:30,000 --> 00:15:35,000
+under the impulse
+
+00:15:35,000 --> 00:15:38,000
+okay now will shortly
+
+00:15:38,000 --> 00:15:41,000
+be returning to a
+
+00:15:41,000 --> 00:15:44,000
+further discussion in use love
+
+00:15:44,000 --> 00:15:48,000
+impulses and step functions
+
+00:15:48,000 --> 00:15:51,000
+and in particular what we'll see is that
+
+00:15:51,000 --> 00:15:55,000
+they provide a very convenient and powerful mechanism
+
+00:15:55,000 --> 00:16:00,000
+for describing a particular class two systems referred to
+
+00:16:00,000 --> 00:16:06,000
+as linear time-invariant systems to lead up to that discussion which will
+
+00:16:06,000 --> 00:16:09,000
+be the principal focus of the next lecture
+
+00:16:09,000 --> 00:16:15,000
+let's for the remainder this lecture talk about systems in general
+
+00:16:15,000 --> 00:16:18,000
+and then some properties have systems and
+
+00:16:18,000 --> 00:16:21,000
+as the lecture proceeds the
+
+00:16:21,000 --> 00:16:24,000
+specific properties that I want to get to our properties
+
+00:16:24,000 --> 00:16:29,000
+when the arity and time very so let's first talk about
+
+00:16:29,000 --> 00:16:33,000
+systems in general and a system
+
+00:16:33,000 --> 00:16:36,000
+in general in its most general definition
+
+00:16:36,000 --> 00:16:39,000
+it simply a transformation
+
+00:16:39,000 --> 00:16:45,000
+from an input signal to an output say so in a continuous-time case
+
+00:16:45,000 --> 00:16:50,000
+we would have a continuous-time system
+
+00:16:50,000 --> 00:16:53,000
+the input exit the
+
+00:16:53,000 --> 00:16:57,000
+and the output why if the and the box
+
+00:16:57,000 --> 00:17:01,000
+in essence is used to denote a transformation from
+
+00:17:01,000 --> 00:17:08,000
+except the to white T and sometimes will also use a shorthand notation
+
+00:17:08,000 --> 00:17:12,000
+along the lines of indicating that the input except the
+
+00:17:12,000 --> 00:17:15,000
+is transformed to the output y'at
+
+00:17:15,000 --> 00:17:20,000
+now we have exactly the same
+
+00:17:20,000 --> 00:17:25,000
+kinda definition in the discrete-time case in the discrete-time case
+
+00:17:25,000 --> 00:17:28,000
+of course the inputs are sequences
+
+00:17:28,000 --> 00:17:32,000
+and the outputs are sequences and our shorthand notation
+
+00:17:32,000 --> 00:17:38,000
+is simple often we talk about systems
+
+00:17:38,000 --> 00:17:41,000
+will want to talk about interconnections systems
+
+00:17:41,000 --> 00:17:45,000
+and will see you again in later lectures that interconnections become very
+
+00:17:45,000 --> 00:17:47,000
+important and powerful
+
+00:17:47,000 --> 00:17:50,000
+and in in the way of introducing
+
+00:17:50,000 --> 00:17:56,000
+terminology let me introduce the terminology for a few basic important
+
+00:17:56,000 --> 00:18:00,000
+interconnections systems the first
+
+00:18:00,000 --> 00:18:04,000
+is what's referred to as a cascade
+
+00:18:04,000 --> 00:18:08,000
+systems or sometimes as the series
+
+00:18:08,000 --> 00:18:11,000
+interconnection systems and
+
+00:18:11,000 --> 00:18:15,000
+putting two systems in cascade as i've indicated here
+
+00:18:15,000 --> 00:18:19,000
+means taking the output have one system
+
+00:18:19,000 --> 00:18:24,000
+let's say system one and using Matt as the input
+
+00:18:24,000 --> 00:18:27,000
+to the second system which are denoted as system to
+
+00:18:27,000 --> 00:18:30,000
+so in this cascade with
+
+00:18:30,000 --> 00:18:33,000
+system one first and system to second
+
+00:18:33,000 --> 00:18:38,000
+we have the output system one going into the input
+
+00:18:38,000 --> 00:18:41,000
+system to now
+
+00:18:41,000 --> 00:18:44,000
+we could've course take those two systems
+
+00:18:44,000 --> 00:18:48,000
+and cascade them in the reverse order
+
+00:18:48,000 --> 00:18:52,000
+namely take the output system to and put it into
+
+00:18:52,000 --> 00:18:55,000
+the input of system one and
+
+00:18:55,000 --> 00:19:00,000
+i've indicated that here and we have system to first in the Cascade
+
+00:19:00,000 --> 00:19:06,000
+followed by system one it's important to keep in mind
+
+00:19:06,000 --> 00:19:10,000
+dead in general for general systems
+
+00:19:10,000 --> 00:19:14,000
+in the order in which you can SCADA systems is very important
+
+00:19:14,000 --> 00:19:17,000
+and in fact the
+
+00:19:17,000 --> 00:19:22,000
+overall system transformation will be different depending on which system came
+
+00:19:22,000 --> 00:19:25,000
+first and which system came second for example
+
+00:19:25,000 --> 00:19:31,000
+its system one was let's say in a system for which the output doubles the input
+
+00:19:31,000 --> 00:19:34,000
+is double the input and system to
+
+00:19:34,000 --> 00:19:38,000
+the output is the square root of the input clearly
+
+00:19:38,000 --> 00:19:41,000
+doubling first and then taking the square root is different
+
+00:19:41,000 --> 00:19:44,000
+then taking the square root first and then double
+
+00:19:44,000 --> 00:19:49,000
+now kinda amazingly
+
+00:19:49,000 --> 00:19:52,000
+what we'll see again when we get
+
+00:19:52,000 --> 00:19:56,000
+to this issue linearity and time-invariant switcher class of systems
+
+00:19:56,000 --> 00:19:58,000
+that will focus in on
+
+00:19:58,000 --> 00:20:01,000
+somewhat amazingly it turns out that for that
+
+00:20:01,000 --> 00:20:05,000
+specific classes systems the SIS
+
+00:20:05,000 --> 00:20:09,000
+overall system transformation is independent of the order in which
+
+00:20:09,000 --> 00:20:16,000
+the system's are cascade and we'll see that of course in more detail later on
+
+00:20:16,000 --> 00:20:21,000
+alright well that's a cascade or series interconnection
+
+00:20:21,000 --> 00:20:25,000
+let's look at another interconnection which is a parallel
+
+00:20:25,000 --> 00:20:28,000
+interconnection systems and
+
+00:20:28,000 --> 00:20:31,000
+here what's meant by the interconnection
+
+00:20:31,000 --> 00:20:34,000
+is that the input
+
+00:20:34,000 --> 00:20:39,000
+is fitted simultaneously into system one
+
+00:20:39,000 --> 00:20:42,000
+and into system to
+
+00:20:42,000 --> 00:20:45,000
+and then the outputs these two systems
+
+00:20:45,000 --> 00:20:50,000
+are added to give the overall system output
+
+00:20:50,000 --> 00:20:54,000
+now in this particular case
+
+00:20:54,000 --> 00:20:58,000
+in contrast to a cascade no matter
+
+00:20:58,000 --> 00:21:01,000
+what the systems are it turns out
+
+00:21:01,000 --> 00:21:05,000
+that a parallel combination the order in which
+
+00:21:05,000 --> 00:21:08,000
+their put in parallel
+
+00:21:08,000 --> 00:21:13,000
+is the out the overall transformation is independent up the order
+
+00:21:13,000 --> 00:21:18,000
+and of course that follows from the fact that we simply adding up outputs
+
+00:21:18,000 --> 00:21:22,000
+and the outputs can be added in any order because the fact that addition
+
+00:21:22,000 --> 00:21:23,000
+doesn't care
+
+00:21:23,000 --> 00:21:27,000
+in which order you're heading things up
+
+00:21:27,000 --> 00:21:32,000
+okay so that's the parallel interconnection and let's look at
+
+00:21:32,000 --> 00:21:36,000
+one more interconnection which is what's referred to
+
+00:21:36,000 --> 00:21:39,000
+as a feedback interconnection and
+
+00:21:39,000 --> 00:21:43,000
+this again is a interconnection that will
+
+00:21:43,000 --> 00:21:47,000
+become a very important topic much later in the course
+
+00:21:47,000 --> 00:21:51,000
+but let me just indicate at this point what I mean by it
+
+00:21:51,000 --> 00:21:54,000
+but a feedback interconnection means is that
+
+00:21:54,000 --> 00:21:58,000
+we have one system
+
+00:21:58,000 --> 00:22:01,000
+system one
+
+00:22:01,000 --> 00:22:05,000
+with an input in an output
+
+00:22:05,000 --> 00:22:09,000
+the output a system one is the output of the overall system
+
+00:22:09,000 --> 00:22:12,000
+and that output is fayed
+
+00:22:12,000 --> 00:22:16,000
+into system to
+
+00:22:16,000 --> 00:22:19,000
+the output of system to is then handed
+
+00:22:19,000 --> 00:22:23,000
+to the input to the overall system
+
+00:22:23,000 --> 00:22:27,000
+so in essence what happens in a feedback interconnection
+
+00:22:27,000 --> 00:22:31,000
+we have one system the output in that system
+
+00:22:31,000 --> 00:22:35,000
+is fed back through system to
+
+00:22:35,000 --> 00:22:38,000
+added to the overall input and then that some
+
+00:22:38,000 --> 00:22:43,000
+is what forms the input the system one and will see that there are
+
+00:22:43,000 --> 00:22:48,000
+lots of uses for feedback and of course also lots of ways the feedback getting
+
+00:22:48,000 --> 00:22:49,000
+the gets in the way
+
+00:22:49,000 --> 00:22:54,000
+in fact probably some love you are already familiar with all the issues &
+
+00:22:54,000 --> 00:22:55,000
+feedback
+
+00:22:55,000 --> 00:22:59,000
+for example in audio systems or whatever but this will be
+
+00:22:59,000 --> 00:23:03,000
+a topic that will devote considerable amount of time to
+
+00:23:03,000 --> 00:23:06,000
+later in the course and then
+
+00:23:06,000 --> 00:23:10,000
+of course there are lots of other interconnections
+
+00:23:10,000 --> 00:23:15,000
+love systems and as the course progresses we'll see
+
+00:23:15,000 --> 00:23:19,000
+lots of ways in which systems get interconnected both in series and
+
+00:23:19,000 --> 00:23:22,000
+parallel and feedback interconnections et cetera
+
+00:23:22,000 --> 00:23:28,000
+to achieve a wide variety of things
+
+00:23:28,000 --> 00:23:31,000
+now what I said so far relates to
+
+00:23:31,000 --> 00:23:34,000
+systems in general and you can't say much
+
+00:23:34,000 --> 00:23:39,000
+about systems when you try to treat them in the most general form
+
+00:23:39,000 --> 00:23:42,000
+so it's useful and important to focus in
+
+00:23:42,000 --> 00:23:47,000
+on properties that system may or may not have
+
+00:23:47,000 --> 00:23:50,000
+so what I'd like to do now is turn our attention
+
+00:23:50,000 --> 00:23:54,000
+to system properties and will define
+
+00:23:54,000 --> 00:23:59,000
+a number of them some of them will want to impose on a system
+
+00:23:59,000 --> 00:24:02,000
+some love the movie we may not want to impose on a system
+
+00:24:02,000 --> 00:24:05,000
+but as things progress will
+
+00:24:05,000 --> 00:24:08,000
+tend to find it useful to an ass
+
+00:24:08,000 --> 00:24:13,000
+weather is system does or doesn't have a certain property
+
+00:24:13,000 --> 00:24:17,000
+well let's begin with the property which I A
+
+00:24:17,000 --> 00:24:18,000
+refer to here and
+
+00:24:18,000 --> 00:24:23,000
+is memoryless and what I mean by
+
+00:24:23,000 --> 00:24:26,000
+system being memoryless is dead
+
+00:24:26,000 --> 00:24:29,000
+the output at any
+
+00:24:29,000 --> 00:24:33,000
+given time t0 depends
+
+00:24:33,000 --> 00:24:37,000
+only on the input at the same time and so
+
+00:24:37,000 --> 00:24:41,000
+know what I'm suggesting is that a memoryless system
+
+00:24:41,000 --> 00:24:46,000
+is one for which the output at a specific time
+
+00:24:46,000 --> 00:24:50,000
+depends only on the input at that time
+
+00:24:50,000 --> 00:24:54,000
+and that statement is true or that definition
+
+00:24:54,000 --> 00:24:58,000
+applies both for continuous-time
+
+00:24:58,000 --> 00:25:02,000
+as i've indicated it here and also
+
+00:25:02,000 --> 00:25:06,000
+for discrete-time as i've indicated here and so
+
+00:25:06,000 --> 00:25:10,000
+we have similar definition in discrete-time
+
+00:25:10,000 --> 00:25:13,000
+that the system is memoryless
+
+00:25:13,000 --> 00:25:17,000
+if the output at any given time
+
+00:25:17,000 --> 00:25:24,000
+depends only on the input at that time well
+
+00:25:24,000 --> 00:25:28,000
+in I have a number of examples here let's look at
+
+00:25:28,000 --> 00:25:33,000
+the first example which in which the output is the square if the input
+
+00:25:33,000 --> 00:25:39,000
+and that is a possible system either in continuous-time
+
+00:25:39,000 --> 00:25:42,000
+for discrete-time and that system as
+
+00:25:42,000 --> 00:25:46,000
+you would expect is commonly referred to as
+
+00:25:46,000 --> 00:25:49,000
+square insists the square
+
+00:25:49,000 --> 00:25:54,000
+up a signal and anytime depends only on
+
+00:25:54,000 --> 00:25:58,000
+the value the signal at that time clearly
+
+00:25:58,000 --> 00:26:01,000
+square is a memoryless system so
+
+00:26:01,000 --> 00:26:05,000
+in fact weekend indicate here and this system
+
+00:26:05,000 --> 00:26:10,000
+is members
+
+00:26:10,000 --> 00:26:13,000
+another important system is
+
+00:26:13,000 --> 00:26:18,000
+what is referred to as an integrator its
+
+00:26:18,000 --> 00:26:21,000
+the the output is equal to
+
+00:26:21,000 --> 00:26:25,000
+the integral love the input
+
+00:26:25,000 --> 00:26:28,000
+here as i've indicated it
+
+00:26:28,000 --> 00:26:34,000
+its a not just integrating except TV but its integrating the square affect safety
+
+00:26:34,000 --> 00:26:37,000
+and whether we square
+
+00:26:37,000 --> 00:26:41,000
+before we had a great or not the essential point
+
+00:26:41,000 --> 00:26:45,000
+is there since we're integrating the input
+
+00:26:45,000 --> 00:26:48,000
+the value of the output anytime
+
+00:26:48,000 --> 00:26:53,000
+is an accumulation a past history the input well
+
+00:26:53,000 --> 00:26:57,000
+accumulation a past history in essence implies memory
+
+00:26:57,000 --> 00:27:00,000
+to get the output at a given time
+
+00:27:00,000 --> 00:27:03,000
+requires the input
+
+00:27:03,000 --> 00:27:09,000
+over an interval specifically for longer than that time so
+
+00:27:09,000 --> 00:27:16,000
+this system in fact is not memory loss
+
+00:27:16,000 --> 00:27:19,000
+and now I have a
+
+00:27:19,000 --> 00:27:23,000
+third system the fine here the third system
+
+00:27:23,000 --> 00:27:26,000
+is a system the discrete-time system
+
+00:27:26,000 --> 00:27:30,000
+in which the output is equal to
+
+00:27:30,000 --> 00:27:36,000
+the input but not quite the output at some time let's say for example that an
+
+00:27:36,000 --> 00:27:37,000
+equal 0
+
+00:27:37,000 --> 00:27:41,000
+is equal to the input at one
+
+00:27:41,000 --> 00:27:45,000
+time sample or instant or value with the index
+
+00:27:45,000 --> 00:27:49,000
+before that and so this in fact
+
+00:27:49,000 --> 00:27:56,000
+is a system for which the output is simply the input the lady or shifted
+
+00:27:56,000 --> 00:28:00,000
+by one sample so this system is referred to as
+
+00:28:00,000 --> 00:28:03,000
+unit delay
+
+00:28:03,000 --> 00:28:07,000
+and now the question
+
+00:28:07,000 --> 00:28:10,000
+the question is is that system memoryless
+
+00:28:10,000 --> 00:28:17,000
+well the output depends only on the input the output at any instant depends
+
+00:28:18,000 --> 00:28:18,000
+only
+
+00:28:18,000 --> 00:28:22,000
+on the input at one instant but
+
+00:28:22,000 --> 00:28:26,000
+since it depends on an instant
+
+00:28:26,000 --> 00:28:30,000
+prior to the time in which were looking we're different than the time at which
+
+00:28:30,000 --> 00:28:31,000
+were looking
+
+00:28:31,000 --> 00:28:34,000
+it violates the definition a memoryless
+
+00:28:34,000 --> 00:28:38,000
+that we introduce and so in fact the unit the LEI
+
+00:28:38,000 --> 00:28:42,000
+is a system that has memory and so
+
+00:28:42,000 --> 00:28:46,000
+let's indicate that year so this is not a memoryless
+
+00:28:46,000 --> 00:28:52,000
+system because of the fact that there is one unit at the lay
+
+00:28:52,000 --> 00:28:57,000
+and in essence the lady requires memory
+
+00:28:57,000 --> 00:29:01,000
+okay so bats the issue memory and
+
+00:29:01,000 --> 00:29:06,000
+and a memoryless systems let's now turn to another
+
+00:29:06,000 --> 00:29:09,000
+property which a system
+
+00:29:09,000 --> 00:29:13,000
+may or may not have the property referred to as
+
+00:29:13,000 --> 00:29:17,000
+invertia billet now
+
+00:29:17,000 --> 00:29:20,000
+essentially would inverted bility means is dead
+
+00:29:20,000 --> 00:29:23,000
+given the output above the system
+
+00:29:23,000 --> 00:29:26,000
+you can figure out uniquely with the input was
+
+00:29:26,000 --> 00:29:30,000
+thats one definition for infertility
+
+00:29:30,000 --> 00:29:34,000
+said another way convertibility means that
+
+00:29:34,000 --> 00:29:38,000
+given the output there's only one input that could have caused it
+
+00:29:38,000 --> 00:29:41,000
+that's another common so definition for portability
+
+00:29:41,000 --> 00:29:45,000
+another way of looking at it is in fact
+
+00:29:45,000 --> 00:29:49,000
+to look at it in the context love a cascade
+
+00:29:49,000 --> 00:29:53,000
+love systems so
+
+00:29:53,000 --> 00:29:56,000
+let's consider a system and here
+
+00:29:56,000 --> 00:30:00,000
+is a system which are referred to as system a
+
+00:30:00,000 --> 00:30:05,000
+and this could be continuous-time and discrete-time
+
+00:30:05,000 --> 00:30:08,000
+it has an input x1
+
+00:30:08,000 --> 00:30:13,000
+TV or an depending on whether it's continuous-time and discrete-time that
+
+00:30:13,000 --> 00:30:14,000
+we're talking about
+
+00:30:14,000 --> 00:30:17,000
+and an associated output
+
+00:30:17,000 --> 00:30:20,000
+and here we had
+
+00:30:20,000 --> 00:30:24,000
+go system be with
+
+00:30:24,000 --> 00:30:30,000
+its associated input an output and
+
+00:30:30,000 --> 00:30:34,000
+now let's put these two systems in cascade
+
+00:30:34,000 --> 00:30:38,000
+so will take the output system one and feed it
+
+00:30:38,000 --> 00:30:42,000
+into the input love system
+
+00:30:42,000 --> 00:30:45,000
+to or system be so
+
+00:30:45,000 --> 00:30:49,000
+the output system a goes into the input a system be
+
+00:30:49,000 --> 00:30:54,000
+and if system is invertible
+
+00:30:54,000 --> 00:30:58,000
+and system be is its in burgers
+
+00:30:58,000 --> 00:31:01,000
+then the consequence
+
+00:31:01,000 --> 00:31:05,000
+is that the output subsystem be
+
+00:31:05,000 --> 00:31:09,000
+is equal to the input of system a
+
+00:31:09,000 --> 00:31:12,000
+now I know there there a lotta
+
+00:31:12,000 --> 00:31:17,000
+inputs and outputs and inverse is in the air
+
+00:31:17,000 --> 00:31:20,000
+by essentially what we mean by what I just said
+
+00:31:20,000 --> 00:31:24,000
+is that if we have system a
+
+00:31:24,000 --> 00:31:28,000
+and is invertible and if
+
+00:31:28,000 --> 00:31:32,000
+we cascaded with its infers
+
+00:31:32,000 --> 00:31:35,000
+system be then
+
+00:31:35,000 --> 00:31:39,000
+the overall cascade these two systems
+
+00:31:39,000 --> 00:31:42,000
+is simply what's referred to as
+
+00:31:42,000 --> 00:31:48,000
+the identity system
+
+00:31:48,000 --> 00:31:51,000
+and the identity system is simply a system
+
+00:31:51,000 --> 00:31:55,000
+which if you put a signal into it you get the same signal
+
+00:31:55,000 --> 00:31:58,000
+out a bit in other words the overall system is
+
+00:31:58,000 --> 00:32:02,000
+no transformation at all clearly course
+
+00:32:02,000 --> 00:32:09,000
+for a system to be able to be cascaded with another system
+
+00:32:09,000 --> 00:32:12,000
+to generate the identity system requires
+
+00:32:12,000 --> 00:32:16,000
+that the first system system a be invertible
+
+00:32:16,000 --> 00:32:19,000
+so let's a
+
+00:32:19,000 --> 00:32:24,000
+look at some examples if we had
+
+00:32:24,000 --> 00:32:28,000
+system a as i've indicated here
+
+00:32:28,000 --> 00:32:31,000
+where now the output is
+
+00:32:31,000 --> 00:32:34,000
+the running integral love
+
+00:32:34,000 --> 00:32:39,000
+the input and remember that we saw the running into role when we talked about
+
+00:32:39,000 --> 00:32:41,000
+the relationship between
+
+00:32:41,000 --> 00:32:44,000
+steps and impulses if this happened to be in in polls
+
+00:32:44,000 --> 00:32:49,000
+then the output would be a step this system
+
+00:32:49,000 --> 00:32:53,000
+is referred to of course as an integrator
+
+00:32:53,000 --> 00:32:56,000
+since the output is
+
+00:32:56,000 --> 00:33:00,000
+the running integral love the input
+
+00:33:00,000 --> 00:33:03,000
+and in the
+
+00:33:03,000 --> 00:33:08,000
+integrator in fact is an invertible system
+
+00:33:08,000 --> 00:33:11,000
+and its infers
+
+00:33:11,000 --> 00:33:15,000
+is system for which the output is the derivative
+
+00:33:15,000 --> 00:33:18,000
+%um so the inverse
+
+00:33:18,000 --> 00:33:21,000
+or system a if system a is an integrator
+
+00:33:21,000 --> 00:33:25,000
+is system for which the output
+
+00:33:25,000 --> 00:33:30,000
+is equal to the derivative the input which not surprisingly
+
+00:33:30,000 --> 00:33:32,000
+is referred to and
+
+00:33:32,000 --> 00:33:39,000
+is a differentiator
+
+00:33:40,000 --> 00:33:46,000
+so an integrator is invertible
+
+00:33:46,000 --> 00:33:51,000
+its inverse is a differentiator which you might want to think about
+
+00:33:51,000 --> 00:33:54,000
+is the question of whether a differentiator
+
+00:33:54,000 --> 00:33:59,000
+is invertible now to answer that what you would ask yourself is
+
+00:33:59,000 --> 00:34:03,000
+if you always knew with the derivative with the signal is would you necessarily
+
+00:34:03,000 --> 00:34:08,000
+know with the signal was in other words if you have a differentiator
+
+00:34:08,000 --> 00:34:11,000
+you have the output of the differentiator
+
+00:34:11,000 --> 00:34:15,000
+could you always figure out with the input words if you could
+
+00:34:15,000 --> 00:34:19,000
+the system would be invertible if you couldn't the system would not be
+
+00:34:19,000 --> 00:34:19,000
+invertible
+
+00:34:19,000 --> 00:34:24,000
+so you might just want to think about that I guess
+
+00:34:24,000 --> 00:34:29,000
+I won't tell you right now but I'm sure that
+
+00:34:29,000 --> 00:34:33,000
+dead you'll think about that more particularly with the
+
+00:34:33,000 --> 00:34:36,000
+guidance that the video manual
+
+00:34:36,000 --> 00:34:39,000
+okay well let's look at one
+
+00:34:39,000 --> 00:34:43,000
+last system in i've indicated here
+
+00:34:43,000 --> 00:34:46,000
+a system for which the output
+
+00:34:46,000 --> 00:34:50,000
+is related to the input through this
+
+00:34:50,000 --> 00:34:53,000
+heard and what I mean by this curve which
+
+00:34:53,000 --> 00:34:57,000
+wasn't done a quite as well
+
+00:34:57,000 --> 00:35:01,000
+as I might have is that
+
+00:35:01,000 --> 00:35:05,000
+the output is equal to the square
+
+00:35:05,000 --> 00:35:08,000
+the input so this system
+
+00:35:08,000 --> 00:35:11,000
+is our square as we talked about before
+
+00:35:11,000 --> 00:35:15,000
+we saw previously
+
+00:35:15,000 --> 00:35:18,000
+are discussed the fact previously bad
+
+00:35:18,000 --> 00:35:21,000
+the squarer is a memoryless
+
+00:35:21,000 --> 00:35:25,000
+system
+
+00:35:25,000 --> 00:35:28,000
+and now the question is is the square
+
+00:35:28,000 --> 00:35:32,000
+an invertible system well question then
+
+00:35:32,000 --> 00:35:35,000
+is if you given the square the signal
+
+00:35:35,000 --> 00:35:38,000
+can you figure out with the signal is and
+
+00:35:38,000 --> 00:35:43,000
+as I'm sure you've already suspected the answer to that is no
+
+00:35:43,000 --> 00:35:48,000
+because obviously if the signal was negative or positive you wouldn't be
+
+00:35:48,000 --> 00:35:49,000
+able to figure that out
+
+00:35:49,000 --> 00:35:52,000
+and you square so in fact
+
+00:35:52,000 --> 00:35:58,000
+the square is not invertible part so
+
+00:35:58,000 --> 00:36:01,000
+we've introduced several properties and by the way
+
+00:36:01,000 --> 00:36:05,000
+as we've gone through it also in introduce some systems that will turn
+
+00:36:05,000 --> 00:36:06,000
+out to be
+
+00:36:06,000 --> 00:36:09,000
+useful important systems and
+
+00:36:09,000 --> 00:36:14,000
+now it's continue with some other properties a property
+
+00:36:14,000 --> 00:36:17,000
+dead will find useful to make reference
+
+00:36:17,000 --> 00:36:22,000
+to from time to time and will in fact play fairly important role in a variety
+
+00:36:22,000 --> 00:36:24,000
+of discussions
+
+00:36:24,000 --> 00:36:27,000
+during the course is the property
+
+00:36:27,000 --> 00:36:31,000
+which is referred to as causality now
+
+00:36:31,000 --> 00:36:34,000
+in essence what causality beans
+
+00:36:34,000 --> 00:36:38,000
+is the following the system is said to be causal
+
+00:36:38,000 --> 00:36:43,000
+if as one way of saying it only responds
+
+00:36:43,000 --> 00:36:46,000
+when you kick it is another way of saying it
+
+00:36:46,000 --> 00:36:51,000
+its response that any time only depends on values at the input
+
+00:36:51,000 --> 00:36:54,000
+prior to that time so
+
+00:36:54,000 --> 00:36:58,000
+a causal system both continuous-time and discrete-time
+
+00:36:58,000 --> 00:37:02,000
+is to find sometimes
+
+00:37:02,000 --> 00:37:06,000
+as a system which has the property that
+
+00:37:06,000 --> 00:37:10,000
+the output and anytime depends only on
+
+00:37:10,000 --> 00:37:13,000
+the input prior or equal to that time
+
+00:37:13,000 --> 00:37:17,000
+essentially what we're saying
+
+00:37:17,000 --> 00:37:20,000
+is that the system can't anticipate
+
+00:37:20,000 --> 00:37:24,000
+future imports and so that in fact
+
+00:37:24,000 --> 00:37:28,000
+is another possible definition for causality
+
+00:37:28,000 --> 00:37:32,000
+that the system is causal
+
+00:37:32,000 --> 00:37:37,000
+if it can't anticipate future inputs finally at
+
+00:37:37,000 --> 00:37:40,000
+not an alternative way of saying it mathematically
+
+00:37:40,000 --> 00:37:43,000
+is as follows: if I have
+
+00:37:43,000 --> 00:37:47,000
+to signals X 1ft
+
+00:37:47,000 --> 00:37:54,000
+nx2 T with their associated outputs why 150 and white 2
+
+00:37:54,000 --> 00:37:57,000
+T then a system
+
+00:37:57,000 --> 00:38:03,000
+is said to be causal if it only if it has the property
+
+00:38:03,000 --> 00:38:07,000
+that if those two inputs are identical up until sometime
+
+00:38:07,000 --> 00:38:11,000
+then the outputs are identical up until the same time
+
+00:38:11,000 --> 00:38:15,000
+so if we have two signals that
+
+00:38:15,000 --> 00:38:20,000
+are exactly the same up until sometime and perhaps do something different later
+
+00:38:20,000 --> 00:38:21,000
+on
+
+00:38:21,000 --> 00:38:24,000
+causality requires that
+
+00:38:24,000 --> 00:38:28,000
+the outputs not anticipate the fact that those inputs
+
+00:38:28,000 --> 00:38:32,000
+are at some future time going to do something different
+
+00:38:32,000 --> 00:38:35,000
+and that in fact is the most useful mathematical
+
+00:38:35,000 --> 00:38:39,000
+definition of causality and of course I've
+
+00:38:39,000 --> 00:38:43,000
+written that here for continuous-time
+
+00:38:43,000 --> 00:38:46,000
+and a the
+
+00:38:46,000 --> 00:38:49,000
+same definition of causality also
+
+00:38:49,000 --> 00:38:55,000
+applies for discrete-time
+
+00:38:55,000 --> 00:38:59,000
+okay well it's look at an example
+
+00:38:59,000 --> 00:39:02,000
+let's take an example
+
+00:39:02,000 --> 00:39:05,000
+which is a system which is
+
+00:39:05,000 --> 00:39:12,000
+the following discrete-time system the output at any given time
+
+00:39:12,000 --> 00:39:15,000
+is some love
+
+00:39:15,000 --> 00:39:18,000
+exit Van X event the way
+
+00:39:18,000 --> 00:39:23,000
+and active and anticipated and
+
+00:39:23,000 --> 00:39:27,000
+this is in fact a system is very useful
+
+00:39:27,000 --> 00:39:34,000
+and referred to as moving average
+
+00:39:34,000 --> 00:39:37,000
+and so if we think 0 moving average
+
+00:39:37,000 --> 00:39:41,000
+if we have here
+
+00:39:41,000 --> 00:39:45,000
+a sequence X the van annex the van
+
+00:39:45,000 --> 00:39:48,000
+with other values kinda going off
+
+00:39:48,000 --> 00:39:53,000
+in both directions and any value
+
+00:39:53,000 --> 00:39:57,000
+for any value n0 at which were computing the output
+
+00:39:57,000 --> 00:40:01,000
+and this is why I have in the output we take
+
+00:40:01,000 --> 00:40:07,000
+X 70 X 70 -1
+
+00:40:07,000 --> 00:40:10,000
+and X 70 plus one and so
+
+00:40:10,000 --> 00:40:13,000
+to format moving average we would take
+
+00:40:13,000 --> 00:40:18,000
+these three bad news and combine them together
+
+00:40:18,000 --> 00:40:21,000
+and a moment and dividing by 3 to get back
+
+00:40:21,000 --> 00:40:25,000
+well is the system causal
+
+00:40:25,000 --> 00:40:28,000
+one way to answer that is
+
+00:40:28,000 --> 00:40:33,000
+to determine whether the output at any given time depends on future values if
+
+00:40:33,000 --> 00:40:34,000
+the input
+
+00:40:34,000 --> 00:40:40,000
+and clearly if you look at this what you see is that the output at time n0
+
+00:40:40,000 --> 00:40:44,000
+depends both on past values and on future bad
+
+00:40:44,000 --> 00:40:49,000
+as opposed to another moving average
+
+00:40:49,000 --> 00:40:55,000
+which i've indicated here where I'd simply shifted the values
+
+00:40:55,000 --> 00:40:58,000
+that I combine together and in this case
+
+00:40:58,000 --> 00:41:02,000
+because love the way in which I picked the values
+
+00:41:02,000 --> 00:41:05,000
+the output depends on
+
+00:41:05,000 --> 00:41:08,000
+value in n0 value
+
+00:41:08,000 --> 00:41:12,000
+at and 0 -1 and the bad you
+
+00:41:12,000 --> 00:41:17,000
+at n0 -2 so why I've n0 would depend here
+
+00:41:17,000 --> 00:41:20,000
+on X 70 X 70 -1
+
+00:41:20,000 --> 00:41:24,000
+and X 70 -2 and
+
+00:41:24,000 --> 00:41:28,000
+so in this case the system
+
+00:41:28,000 --> 00:41:32,000
+is not causal and
+
+00:41:32,000 --> 00:41:39,000
+in this case the system is cause
+
+00:41:39,000 --> 00:41:43,000
+all right now let's turn to another system property the property
+
+00:41:43,000 --> 00:41:49,000
+referred to as stability now there lotsa
+
+00:41:49,000 --> 00:41:52,000
+definitions of stability a and
+
+00:41:52,000 --> 00:41:55,000
+there some of them get very mathematical
+
+00:41:55,000 --> 00:41:59,000
+and formal would we've chosen
+
+00:41:59,000 --> 00:42:03,000
+and what will use as our definition stability is what's called
+
+00:42:03,000 --> 00:42:09,000
+bounded input founded output stability essentially the definition is
+
+00:42:09,000 --> 00:42:12,000
+that a system is stable
+
+00:42:12,000 --> 00:42:16,000
+if in only a for every bounded input
+
+00:42:16,000 --> 00:42:19,000
+the output is found so the notion is
+
+00:42:19,000 --> 00:42:24,000
+if you have a system any input never gets above
+
+00:42:24,000 --> 00:42:29,000
+some finite value and stability requires
+
+00:42:29,000 --> 00:42:32,000
+that the output also stay within some bounded back
+
+00:42:32,000 --> 00:42:36,000
+and I'm sure the stability and instability your things that you're
+
+00:42:36,000 --> 00:42:37,000
+kinda
+
+00:42:37,000 --> 00:42:40,000
+arm informally familiar with let me
+
+00:42:40,000 --> 00:42:44,000
+just kinda are emphasize the point with
+
+00:42:44,000 --> 00:42:47,000
+the something that I borrowed the
+
+00:42:47,000 --> 00:42:50,000
+actually from my son
+
+00:42:50,000 --> 00:42:54,000
+with some reluctance on his part a if we
+
+00:42:54,000 --> 00:42:58,000
+for example take a system like this which is in essence a pendulum
+
+00:42:58,000 --> 00:43:02,000
+this system is a holding it here is stable
+
+00:43:02,000 --> 00:43:06,000
+because if I put in a bounded input which is the displacement
+
+00:43:06,000 --> 00:43:09,000
+the output which is the movement of it
+
+00:43:09,000 --> 00:43:13,000
+remains found now on the other hand
+
+00:43:13,000 --> 00:43:16,000
+if I put the system like this which is
+
+00:43:16,000 --> 00:43:21,000
+in fact what's referred to as an inverted pendulum although we could
+
+00:43:21,000 --> 00:43:24,000
+conceivably get this to balance
+
+00:43:24,000 --> 00:43:29,000
+just a slight displacement because the fact that the pendulum is inverted
+
+00:43:29,000 --> 00:43:32,000
+a slight displacement and the output
+
+00:43:32,000 --> 00:43:35,000
+becomes unbounded now
+
+00:43:35,000 --> 00:43:38,000
+an interesting thing with the inverted pendulum by the way which
+
+00:43:38,000 --> 00:43:43,000
+I'm sure all of you if you're anything like me
+
+00:43:43,000 --> 00:43:47,000
+was intrigued with as a kid was the notion that you could take an inverted
+
+00:43:47,000 --> 00:43:47,000
+pendulum
+
+00:43:47,000 --> 00:43:53,000
+and in effect turn it back into a stable system
+
+00:43:53,000 --> 00:43:56,000
+by using what I'm doing right now
+
+00:43:56,000 --> 00:44:00,000
+which is feedback but I've done in that case
+
+00:44:00,000 --> 00:44:03,000
+is I stabilize the system by
+
+00:44:03,000 --> 00:44:07,000
+using feedback visual feedback from my eye
+
+00:44:07,000 --> 00:44:11,000
+to my hand and in fact one of the very important things that we'll see about
+
+00:44:11,000 --> 00:44:15,000
+feedback when we talk about feedback systems much later in the course
+
+00:44:15,000 --> 00:44:18,000
+is that one of their very important applications is
+
+00:44:18,000 --> 00:44:24,000
+in stabilizing unstable systems by the way one of their problems
+
+00:44:24,000 --> 00:44:28,000
+is dead if not used correctly it can destabilize
+
+00:44:28,000 --> 00:44:31,000
+stable system okay well let's
+
+00:44:31,000 --> 00:44:35,000
+continue on with our a property of stability
+
+00:44:35,000 --> 00:44:39,000
+I have here again the example
+
+00:44:39,000 --> 00:44:43,000
+of an integrator and as
+
+00:44:43,000 --> 00:44:47,000
+I indicate here if we have an integrator and we put a step
+
+00:44:47,000 --> 00:44:50,000
+function into it or step signal into it
+
+00:44:50,000 --> 00:44:54,000
+the output is what's referred to as a ramp
+
+00:44:54,000 --> 00:44:59,000
+signal it linearly increases now question is
+
+00:44:59,000 --> 00:45:02,000
+is a ramp on bounded the input is
+
+00:45:02,000 --> 00:45:07,000
+is bounded step input is bounded the ramp is unbounded
+
+00:45:07,000 --> 00:45:10,000
+because if you try to establish
+
+00:45:10,000 --> 00:45:14,000
+any bound on it you can always go out far enough in time
+
+00:45:14,000 --> 00:45:19,000
+so that the output will exceed that ban so
+
+00:45:19,000 --> 00:45:22,000
+in fact the integrator is
+
+00:45:22,000 --> 00:45:29,000
+not stable
+
+00:45:29,000 --> 00:45:33,000
+okay now finally I'd like to turn
+
+00:45:33,000 --> 00:45:36,000
+to two properties that will make considerable
+
+00:45:36,000 --> 00:45:40,000
+you so there's the course goes on the properties
+
+00:45:40,000 --> 00:45:43,000
+love time invariance and when the arid
+
+00:45:43,000 --> 00:45:46,000
+time invariance
+
+00:45:46,000 --> 00:45:50,000
+in essence says
+
+00:45:50,000 --> 00:45:53,000
+bat the system doesn't really care
+
+00:45:53,000 --> 00:45:57,000
+what you call the origin in other words
+
+00:45:57,000 --> 00:46:01,000
+it says if you take the input and your shift in time
+
+00:46:01,000 --> 00:46:06,000
+all that you've done is taken the output and shifted in time by the same amount
+
+00:46:06,000 --> 00:46:10,000
+someone more formally as i've indicated here
+
+00:46:10,000 --> 00:46:15,000
+if in continuous time we have an input X
+
+00:46:15,000 --> 00:46:19,000
+which generates an output y'at then
+
+00:46:19,000 --> 00:46:22,000
+time invariance requires that
+
+00:46:22,000 --> 00:46:28,000
+if the input is shifted by any amount of time the output is shifted by the same
+
+00:46:28,000 --> 00:46:31,000
+amount of time and exactly
+
+00:46:31,000 --> 00:46:37,000
+the same applies in discrete-time for example
+
+00:46:37,000 --> 00:46:42,000
+if we have a system which is the system I've shown here
+
+00:46:42,000 --> 00:46:46,000
+which by the way is the system that we talked about previously to go
+
+00:46:46,000 --> 00:46:51,000
+from step sequence upstart from an imposed sequence to step sequence
+
+00:46:51,000 --> 00:46:55,000
+we call that a running some and actually
+
+00:46:55,000 --> 00:46:58,000
+white it's also often called is an accumulator
+
+00:46:58,000 --> 00:47:02,000
+what it does is accumulate past values
+
+00:47:02,000 --> 00:47:06,000
+the input well is the
+
+00:47:06,000 --> 00:47:12,000
+accumulator time-invariant the best way to establish that
+
+00:47:12,000 --> 00:47:15,000
+is to work through the equations and verified that it either
+
+00:47:15,000 --> 00:47:19,000
+does or doesn't satisfy the formal definition
+
+00:47:19,000 --> 00:47:23,000
+time invariance informally if you think about it
+
+00:47:23,000 --> 00:47:27,000
+it makes intuitive sense that the accumulator
+
+00:47:27,000 --> 00:47:32,000
+is time-invariant because if you're accumulating values
+
+00:47:32,000 --> 00:47:37,000
+and a few the LEI the values that you're putting into the accumulator
+
+00:47:37,000 --> 00:47:43,000
+then the associated values that come out will be delayed by the same amount
+
+00:47:43,000 --> 00:47:48,000
+the accumulated it doesn't care really where if you shift the input is just
+
+00:47:48,000 --> 00:47:52,000
+simply shift the Associated output but
+
+00:47:52,000 --> 00:47:57,000
+more generally with your trying to test time-invariant it's important to return
+
+00:47:57,000 --> 00:47:58,000
+to the definition
+
+00:47:58,000 --> 00:48:01,000
+and that's what you're required to do in the samples
+
+00:48:01,000 --> 00:48:07,000
+in the videomail okay well
+
+00:48:07,000 --> 00:48:10,000
+I indicate another example
+
+00:48:10,000 --> 00:48:16,000
+we had the example become an accumulator here's another example which
+
+00:48:16,000 --> 00:48:19,000
+in fact as we'll see later is
+
+00:48:19,000 --> 00:48:23,000
+a system which is a modulator
+
+00:48:23,000 --> 00:48:27,000
+the output is the input modulated and
+
+00:48:27,000 --> 00:48:32,000
+although you might think it first that this system
+
+00:48:32,000 --> 00:48:35,000
+is time-invariant in fact
+
+00:48:35,000 --> 00:48:39,000
+it is not because the input shifted
+
+00:48:39,000 --> 00:48:43,000
+generates an output which is
+
+00:48:43,000 --> 00:48:46,000
+the input shifted times
+
+00:48:46,000 --> 00:48:50,000
+the same modulation function whereas
+
+00:48:50,000 --> 00:48:54,000
+if we were to take the output above the system
+
+00:48:54,000 --> 00:48:58,000
+we're X 50 is the input than
+
+00:48:58,000 --> 00:49:02,000
+what that would correspond to
+
+00:49:02,000 --> 00:49:06,000
+is sign T-minus t0
+
+00:49:06,000 --> 00:49:09,000
+times X love t-minus 20
+
+00:49:09,000 --> 00:49:13,000
+and since these two are not equal
+
+00:49:13,000 --> 00:49:17,000
+this system is not time and very
+
+00:49:17,000 --> 00:49:20,000
+and this is an example that often
+
+00:49:20,000 --> 00:49:24,000
+causes a slight amount of difficulty because
+
+00:49:24,000 --> 00:49:28,000
+it seems like when you look at it it ought to be
+
+00:49:28,000 --> 00:49:32,000
+and so I strongly encourage you in the context that using
+
+00:49:32,000 --> 00:49:36,000
+working problems in the manual
+
+00:49:36,000 --> 00:49:39,000
+that you think very carefully about this and on
+
+00:49:39,000 --> 00:49:43,000
+and at least believe that when I told you was the right answer
+
+00:49:43,000 --> 00:49:46,000
+okay now the final
+
+00:49:46,000 --> 00:49:49,000
+property that I want introduced today is the property
+
+00:49:49,000 --> 00:49:53,000
+love linearity and
+
+00:49:53,000 --> 00:49:57,000
+linearity is defined in manner
+
+00:49:57,000 --> 00:50:00,000
+similar for continuous-time in discrete-time
+
+00:50:00,000 --> 00:50:04,000
+and what it says is that
+
+00:50:04,000 --> 00:50:08,000
+if we have some inputs with associated outputs
+
+00:50:08,000 --> 00:50:12,000
+let's say X 150 X 2ft
+
+00:50:12,000 --> 00:50:16,000
+then a system is linear
+
+00:50:16,000 --> 00:50:19,000
+if it has the proper the that the output
+
+00:50:19,000 --> 00:50:23,000
+to a linear combination of those inputs is the same
+
+00:50:23,000 --> 00:50:27,000
+linear combination love The Associated outputs
+
+00:50:27,000 --> 00:50:31,000
+and so that's what I've indicated here dead
+
+00:50:31,000 --> 00:50:36,000
+if we now put into the system a linear combination of those inputs
+
+00:50:36,000 --> 00:50:39,000
+then for linearity we require that the output
+
+00:50:39,000 --> 00:50:43,000
+is the same linear combination and exactly the same
+
+00:50:43,000 --> 00:50:47,000
+apply is in discrete-time
+
+00:50:47,000 --> 00:50:51,000
+and you can show from this definition dead if a system is linear
+
+00:50:51,000 --> 00:50:56,000
+with two inputs and its linear in terms of an arbitrary number
+
+00:50:56,000 --> 00:50:59,000
+imports I have
+
+00:50:59,000 --> 00:51:03,000
+a number of examples and
+
+00:51:03,000 --> 00:51:07,000
+these are examples there'd again I ask you
+
+00:51:07,000 --> 00:51:11,000
+to think about as you look at the video manual
+
+00:51:11,000 --> 00:51:16,000
+just to suggest the answer as well at the suggest but to tell you the answer
+
+00:51:16,000 --> 00:51:23,000
+the integrator as we have here is linear
+
+00:51:23,000 --> 00:51:29,000
+this system in which the output is double the input plus a constant
+
+00:51:29,000 --> 00:51:33,000
+you would kinda think is linear because it's a straight line
+
+00:51:33,000 --> 00:51:37,000
+but one has to be careful and in fact as it turns out
+
+00:51:37,000 --> 00:51:42,000
+this is not linear are there is a qualifier attached to it
+
+00:51:42,000 --> 00:51:47,000
+because it has a property referred to is incrementally linear
+
+00:51:47,000 --> 00:51:51,000
+which is discussed somewhat more in attacks
+
+00:51:51,000 --> 00:51:56,000
+and finally we have a system which is the square
+
+00:51:56,000 --> 00:52:00,000
+that I've indicated again here
+
+00:52:00,000 --> 00:52:03,000
+and squaring is definitely not
+
+00:52:03,000 --> 00:52:07,000
+a linear operation
+
+00:52:07,000 --> 00:52:11,000
+okay so what we've done then is to
+
+00:52:11,000 --> 00:52:14,000
+introduce a number properties systems
+
+00:52:14,000 --> 00:52:19,000
+a and we've also by the way is a stress previously
+
+00:52:19,000 --> 00:52:24,000
+as we've gone along introduced also a number of important and useful systems
+
+00:52:24,000 --> 00:52:27,000
+like the accumulator the integrator the differentiator
+
+00:52:27,000 --> 00:52:30,000
+et cetera well we'll see
+
+00:52:30,000 --> 00:52:34,000
+is that the properties of when you're ready in time invariance
+
+00:52:34,000 --> 00:52:38,000
+in particular become central
+
+00:52:38,000 --> 00:52:42,000
+important properties and in the next lecture
+
+00:52:42,000 --> 00:52:46,000
+what will show is there with
+
+00:52:46,000 --> 00:52:49,000
+systems that are linear and time-invariant
+
+00:52:49,000 --> 00:52:53,000
+the use love the impulse function
+
+00:52:53,000 --> 00:52:57,000
+both in continuous-time and discrete-time provides an
+
+00:52:57,000 --> 00:52:58,000
+extraordinarily
+
+00:52:58,000 --> 00:53:02,000
+important and useful mechanism
+
+00:53:02,000 --> 00:53:04,000
+for characterizing systems thank you
+

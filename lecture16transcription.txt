@@ -1,0 +1,710 @@
+000040~003450~the following content is provided under a Creative Commons license
+003490~003639~your support will help MIT OpenCourseWare continue to offer
+007129~003451~high-quality educational resources for free
+010580~003780~to make a donation or view additional materials from hundreds of them IT
+014360~000670~courses
+015030~003080~visit MIT OpenCourseWare at 0 CW
+018110~007000~that MIT that EDU ha for the
+029130~002370~the
+031500~007000~the in
+038790~007000~the new the we concluded the last lecture
+057580~004110~with the statement above the sampling theorem and just as a quick reminder
+061690~003399~the sampling theorem said that
+065089~003181~if we have a continuous-time signal
+068270~003430~and we have equally spaced samples
+071700~005760~all that signal sampled at a sampling period which a indicators capital T
+077460~004409~and if except he is banned limited
+081869~003681~in other words the forty a transformer 0
+085550~003280~outside some band where Omega Sapan
+088830~003280~is the highest frequency then
+092110~005480~under the condition that the sampling frequency which is two-part divided by
+097590~000949~the period
+098539~003631~is greater than twice the highest frequency
+102170~003910~the original signal is uniquely
+106080~004870~recoverable from the set of samples and
+110950~003599~the sampling theorem essentially was derived by
+114549~003271~observing or using the notion that
+117820~003299~sampling could be done by multiplication
+121119~004610~or modulation with an impulse train and the sampling theorem develop
+125729~003131~by examining the consequence
+128860~004420~love the modulation property in the context of the Fourier transform
+133280~004760~in particular if we have our signal accept T
+138040~003390~and it's multiplied by an impulse train
+141430~004130~to give us a sampled signal
+145560~005920~another impose train whose values or areas are samples of the original time
+151480~000690~function
+152170~003879~as i indicate here then
+156049~003881~in fact if we examine this equation or equivalently
+159930~003059~bringing accept T inside this some
+162989~005511~if we examine either if these equations in the frequency domain
+168500~003260~the four EA transform love
+171760~004760~exe PFT is the convolution
+176520~004770~above the 40 a transformer the original signal and the Fourier transform
+181290~003839~up the impulse train now
+185129~003761~be imposed strain is a periodic signal its Fourier transform
+188890~003980~therefore as we talked about with Fourier transforms itself an impulse
+192870~000710~train
+193580~003120~and when we do this convolution n
+196700~004330~using the fact that the 48 race for the imposed strain
+201030~003250~is an impulse train the result
+204280~003810~or this convolution then tells us
+208090~003280~that the 48 transform love
+211370~003180~the sampled signal or the impulse train
+214550~003909~which represents the samples is a some
+218459~003860~love frequency shifted replications
+222319~003071~up the 48 transform of the original signal
+225390~003450~so mathematically
+228840~004580~that's the relationship it essentially says that after sampling or modulation
+233420~001459~with an impulse train
+234879~003190~the resulting spectrum is the original spectrum
+238069~003351~added to itself shifted by multiples
+241420~003660~integer multiples of the sampling frequency well
+245080~003489~let's see that as we did last time in terms of pictures
+248569~003571~and again to remind you of the basic
+252140~004129~picture involved if we have an original signal
+256269~003171~with the spectrum is a indicated here where
+259440~003349~its ban limited with the highest frequency Omega Savannah M
+262789~004601~and if the time function is sample
+267390~004480~so that in the frequency domain week involved this spectrum
+271870~004000~with the spectrum shown below which is the
+275870~004430~spectrum love the impulse train
+280300~004020~the convolution if these true up these two
+284320~003550~is then the Fourier transform or spectrum
+287870~003720~love the sampled time function
+291590~004150~and so thats what we end up with here
+295740~004929~and then as you recall to recover the original time function
+300669~004731~from this as long as these individual triangles don't overlap
+305400~003400~to recover it just simply involves
+308800~005000~passing the impulse train through a low-pass filter in effect
+313800~004170~extracting just one of these replications
+317970~003470~love the original spectrum
+321440~003920~so the overall system
+325360~004570~then for for doing the sampling and then
+329930~004590~the reconstruction of the original signal from the samples
+334520~003880~consists of multiplying the original time function
+338400~003970~by an impulse train and that gives us
+342370~003620~then the sampled signal
+345990~003410~the Fourier transform I show here love the
+349400~005380~original signal and after modulation with the impulse train
+354780~003520~the resulting spectrum that we have is
+358300~006179~that replicated around integer multiples of the sampling frequency
+364479~003000~and then finally to recover
+367479~004621~the original signal or to generate a reconstructed signal
+372100~004610~we then multiply this in the frequency domain
+376710~003989~by the frequency response of an idea low-pass filter
+380699~003181~and what that accomplishes forest and
+383880~004379~is recovering the original signal
+388259~004561~now in this picture an important point that I raise last time
+392820~004060~relates to the fact dead in doing the reconstruction
+396880~003530~well we've assumed is dead in replicating
+400410~003250~these individual versions
+403660~003400~0 the original signal
+407060~003919~those replications don't overlap and sold by passing this through a low-pass
+410979~001211~filter in fact
+412190~003289~we can recover the original signal well
+415479~003530~what that requires is that
+419009~004421~this frequency Omega Savannah M be less than
+423430~003739~this frequency and this frequency
+427169~005141~is Omega so fast minus Omega serve them
+432310~004380~and so what we require is dead the frequency Omega Sapan
+436690~003900~be less than Omega cyb s minus Omega sed am
+440590~005329~or equivalent Lee what we require is that the sampling frequency
+445919~003411~be greater and twice the highest frequency
+449330~004360~in the original signal now
+453690~003340~if in fact that condition is violated
+457030~003930~then we end up with a very important effect
+460960~003859~and that effect is referred to as a leasing
+464819~004611~in particular if we look back at are
+469430~003459~original example we're here
+472889~004691~we were able to recover our original spectrum by
+477580~003500~low-pass filtering if in fact
+481080~003570~the sampling frequency is
+484650~003280~not high enough to avoid aliasing
+487930~004709~then what happens in that case is that the individual replications
+492639~006271~love the Fourier transform above the stove the original signal
+498910~003050~overlap and what we end up with
+501960~005840~is some distortion as you can see if we tried to pass this through a low-pass
+507800~001530~filter
+509330~005119~to recover the original signal in fact we won't recover the original signal
+514449~003911~since these individual replications have overlapped
+518360~005040~and this is the case where Omega service minus Omega Savannah is less than
+523400~004540~Omega so vast in other words the sampling frequency is not greater
+527940~004180~in this case than twice the highest frequency
+532120~003850~so what happens here then is that in effect
+535970~004530~higher frequencies get folded down into lower frequencies what would come out of
+540500~001630~the low-pass filter
+542130~004260~is the reflection of some higher frequencies into lower frequencies
+546390~003449~as I suggested a minute ago that affect
+549839~003951~is referred to as alias saying and in order to
+553790~005220~both understand that term better and two understand in fact the effect better
+559010~004269~it's useful to examine this a little more closely
+563279~004481~for the specific example a sinusoidal signal
+567760~003699~so let's concentrate on that and what we want to look at
+571459~004041~is the effect or alias saying
+575500~004390~when our input signal is a sinusoidal signal
+579890~003449~now to do that what I wanna show shortly
+583339~003141~is a computer-generated movie
+586480~003380~that we've made and let's first walk-through
+589860~005030~a few frames a bit to give you our first of all
+594890~003600~to to set up our notation and to suggest what it is that we're trying to
+598490~002060~demonstrate
+600550~005500~well what we have is an input signal
+606050~003030~is a sinusoidal signal and
+609080~003379~the spectrum or for a transformer that
+612459~003101~is an impulse in the frequency domain at
+615560~003219~the frequency the sinusoid we then
+618779~004421~have samples love that and when we sample that in for this particular
+623200~002880~example its sample the 10 killer hurts
+626080~003830~this spectrum is then replicated
+629910~003739~at multiples all the sampling frequency
+633649~004201~and I haven't shown negative frequencies here but the contribution do
+637850~003280~to the negative frequency
+641130~005540~is at 10 killer hurts minus the input sinusoid
+646670~003120~we then carry out a reconstruction
+649790~005359~with an idea low-pass filter and the ideal ok pass filter is set at
+655149~003301~half the sampling frequency or five kelleher its
+658450~003040~so what we have then is
+661490~004500~the input signal accept T
+665990~003860~and the impulse train exe PFT
+669850~003299~and then the reconstructed signal is
+673149~003250~the output from the low-pass filter
+676399~004701~which I denote as X a party
+681100~003049~now as the input frequency X 50
+684149~004130~increases this impulse moves up in frequency
+688279~003851~but this impulse moves down in frequency
+692130~005050~and so let's just look at a few frames as the input frequency increases
+697180~003399~so we have here a case
+700579~003101~where the input frequency has move up
+703680~003050~close to five killer hurts
+706730~004060~as we continue further these two impossible's
+710790~003840~will cross and what we'll end up with as i indicated
+714630~003680~is aliasing so here now is a case
+718310~003300~where we have alias saying the
+721610~004360~replication of the negative frequency has crossed into the passband if the
+725970~001130~filter
+727100~003890~and the reconstructed sinusoid will now
+730990~003839~be the frequency associated with this impulse
+734829~003161~rather than the frequency Associated
+737990~004630~with the original sinusoid and to dramatize that
+742620~003250~even further here is
+745870~003950~the example where now the input frequency
+749820~003209~has moved up close to 10 killer hurts
+753029~003081~but what comes out of the low-pass filter
+756110~003460~is a much lower frequency and in fact
+759570~003949~you can see that here is the reconstructed sinusoid
+763519~005320~whereas here we have the input size
+768839~003120~okay well now what I'm gonna wanna do is
+771959~004961~demonstrate this as i indicated with a computer-generated movie
+776920~003789~and well we'll see is the effect
+780709~004440~on the effect of reconstructing
+785149~003011~from the samples using a low-pass filter
+788160~004200~for an input which changes in frequency
+792360~003360~and with the sampling rate of 10 killer hurts
+795720~003340~and what we'll see in the first part of this movie is
+799060~003680~the input except the and the reconstructed signal
+802740~004500~X a party without explicitly showing the samples
+807240~003849~and then at a later point will also show this and indicate
+811089~003401~that in fact the samples are those two are equal even though
+814490~003070~they themselves are not
+817560~004339~so at the top will have the input sinusoid without
+821899~003031~showing the samples and its
+824930~005580~for EA transform is an impulse in the frequency domain as we've indicated
+830510~005170~and if we sample it that imposed and gets replicated
+835680~003180~and so samples in particular
+838860~003469~will have a Fourier transform not only with an impulse
+842329~004911~at the input sinusoid sinusoidal frequency but also attend killer hurts
+847240~001990~minus that frequency
+849230~005320~now for the reconstruction we pass the samples through an idea low-pass filter
+854550~000820~I picked
+855370~003990~the cutoff frequency of the low-pass filter at half the sampling frequency
+859360~002180~namely 5 killer hurts
+861540~003109~and here we see is that the output
+864649~004880~reconstructed signal in fact matches in frequency the input signal
+869529~003731~now as we change the input frequency
+873260~003699~the reconstructed sinus so it is identical
+876959~004051~until we get to an input frequency
+881010~003460~which exceeds half the sampling frequency
+884470~005669~at that point we have aliasing and while the input frequency is increasing
+890139~004591~the output frequency in fact is decreasing
+894730~004210~because that's what's inside the passband the filter
+898940~006110~now let's sweep it back and as the input frequency decreases the output frequency
+905050~001140~increases
+906190~003740~till there's no aliasing and now the output reconstructed
+909930~004390~signal is equal to the input
+914320~003870~so we sample the signal and then reconstructed
+918190~003759~the signal from the samples and keep in mind
+921949~004721~that given a set of samples there are lots of continuous curves that we can
+926670~001969~thread through the set of samples
+928639~004021~the one that we picked up cores is the one consistent
+932660~003239~with the assumption about the signal band with
+935899~003101~in particular we've reconstructed the signal
+939000~005420~that who spectrum falls within the pass band at the filter
+944420~003969~now what I'd like to show is the same
+948389~003181~reconstruction and input as I showed before
+951570~003540~but now let's look at the samples and what we'll see is that
+955110~003469~when there's alias saying even though
+958579~003450~the output the reconstructed signal
+962029~003651~is not identical to the input in fact
+965680~004140~it's consistent with the input samples that is sampling the reconstructed
+969820~001759~signal
+971579~003560~gives a set of samples identical to the samples at the input
+975139~004070~and it's just that the interpolation in between those samples
+979209~003091~is an interpolation consistent with you soon
+982300~003640~fan with love the input based on the sampling there
+985940~003009~so let's now look at that with
+988949~004760~the samples also shown along with the sinusoid
+993709~004761~so at the top we have the input sinusoid together with its samples
+998470~004380~the bottom traces the Fourier transform of the sampled waveform
+1002850~003580~the middle trace is the reconstructed
+1006430~005110~sinusoid together with its samples and notice of course that the samples are
+1011540~002099~the input a reconstructed signal
+1013639~003281~are identical and also
+1016920~003520~the input sinusoidal frequency
+1020440~004519~and the output sinus or frequency are identical
+1024959~004450~we now increase the frequency at the input
+1029409~003750~the reconstructed sinusoid tracks the input frequency
+1033159~003811~and of course the samples are the two are identical
+1036970~003830~the interpolation in between the samples is identical
+1040800~004029~because the fact dead the input frequency is still
+1044829~006681~less than half the sampling frequency
+1051510~005639~and so as long as the input is frequency is less than half the sampling frequency
+1057149~003541~not only will the samples be identical but also
+1060690~003530~the reconstructed continuous waveform will match
+1064220~007000~the input way for
+1076820~003120~now when we get to hear the sampling frequency were just
+1079940~003030~on the verge Bailey is saying this isn't alias saying
+1082970~003640~quite yet but any increase in the input frequency
+1086610~004640~will now generate aliasing we now have a leasing
+1091250~004179~the output frequency is lower than the input frequency but notice
+1095429~004771~that the samples are identical now
+1100200~004040~the low-pass filter is interpolating in between those samples
+1104240~004730~with a sinusoid that falls within the past Pandev the low-pass filter
+1108970~005580~which no longer matches the frequency of the input sinusoid but
+1114550~003860~the important point is that even when we have alias saying
+1118410~003330~the samples are the reconstructed waveform
+1121740~003100~are identical to the samples
+1124840~005700~of the original way for and notice that as the input frequency increases
+1130540~004230~in fact the interpolated output the reconstructed output
+1134770~007000~has decreased in frequency now as the input frequency begins to get closer to
+1141770~003480~10 killer hurts in fact you're all I
+1145250~003130~tends to also interpolate between the samples
+1148380~003870~with a frequency that is lower
+1152250~003090~day and the input frequency NS particularly evident
+1155340~003830~here notice that the input samples in fact
+1159170~003050~look like they would be associated
+1162220~003810~with a much lower frequency sinusoid then in fact
+1166030~004320~was the sinusoid the generated a lower frequency sinusoid
+1170350~005329~in fact corresponds to the reconstructed one now as we sit back down
+1175679~005081~the aliasing eventually disappears and the output sinus or tracks the input
+1180760~001310~sinusoid in frequency
+1182070~003730~so we've seen the
+1185800~004030~effective aliasing for sinusoidal signals and turns away forms
+1189830~003880~now let's hear how it sounds now
+1193710~003500~what we have for this demonstration is
+1197210~003320~an oscillator and
+1200530~003880~a sampler and the output of the sampler
+1204410~003440~goes into a low-pass filter so the
+1207850~005280~input for from the oscillator goes into the sampler
+1213130~003010~and the output the sampler
+1216140~003460~goes into the low-pass filter the
+1219600~003209~sampler frequency is 10 killer hurts
+1222809~003431~and so the low-pass filter
+1226240~003910~has a cutoff frequency as i indicate here
+1230150~003430~all five killer hurts and
+1233580~003020~what will listened to is the
+1236600~003680~reconstructed output as the
+1240280~003680~oscillator input frequency berries
+1243960~004170~and recall there what should happen is that
+1248130~005179~when the oscillator input frequency gets past half the sampling frequency
+1253309~005921~we should hear aliasing so we'll start the oscillator it to kill her ex
+1259230~003230~and keep in mind that what you see on the dial
+1262460~004400~is the input frequency which you here is the output frequency
+1266860~003670~as long as the input frequency is less than half the sampling frequency in
+1270530~001600~other words 5 killer hurts
+1272130~003870~the reconstructed signal sounds identical to the input
+1276000~003510~now at five still hurts were right
+1279510~005090~on the verge of aliasing and when we increase the input frequency past five
+1284600~000880~killer hurts
+1285480~003550~the reconstructed frequency in fact will decrease
+1289030~003850~so as we move for example from 5 killer hurts
+1292880~003190~up to let's say 6 killer hurts
+1296070~003040~sick still hurts in fact yes alias
+1299110~003960~down to what gets alias down to
+1303070~003260~4 killer us so
+1306330~003920~6 go over to the input is for killer hurts
+1310250~003930~at the output now if we move up even further
+1314180~003960~7 kilohertz at the end pushed its alias down
+1318140~003660~to three killer hurts at the outpost
+1321800~004420~so bad dan is a audio demonstration and aliasing
+1326220~003120~so to summarize
+1329340~003350~if we sample signal and then reconstruct
+1332690~004730~from the samples using a low-pass filter as long as the sampling frequency is
+1337420~002730~greater than twice the highest frequency in the signal
+1340150~003460~we reconstruct exactly if on the other hand
+1343610~004400~the sampling frequency is too low less than twice the highest frequency
+1348010~003250~then we get alias saying in other words
+1351260~003890~higher frequencies get folded or reflected
+1355150~003310~down into lower frequencies as they come through the low-pass filter
+1358460~003660~now wanted the
+1362120~004140~common applications love the whole concept of sampling
+1366260~006120~is the use sampling to convert a continuous-time signal into a
+1372380~003140~discrete-time signal to carry out
+1375520~003820~what's often referred to as discreet I processing
+1379340~005080~of continuous-time signals and this in fact is something that will be talking
+1384420~000660~about
+1385080~003480~in a fair amount of detail beginning with the next lecture
+1388560~003620~but and let me indicate that for
+1392180~003580~that kinda processing essentially what happens
+1395760~003610~is dead we begin with a continuous-time signal
+1399370~003340~and convert it to a discrete-time signal
+1402710~003640~carry out the discrete-time processing and then
+1406350~003560~convert back to continuous-time and
+1409910~004750~the conversion from a continuous-time signal to a discrete-time
+1414660~003010~signal in fact is done
+1417670~003990~by exploiting sampling specifically
+1421660~003250~by sampling the continuous-time signal
+1424910~003190~with an impulse train and then
+1428100~003490~converting the impulse train into
+1431590~004450~a sequence in a manner that all talk about in more detail
+1436040~003300~next time now in doing that
+1439340~004080~of course as you can imagine it's important since we want
+1443420~004040~an accurate representation of the original continuous-time signal
+1447460~004620~to choose the sampling frequency to very carefully avoid aliasing
+1452080~003560~and so in fact in that context
+1455640~003390~and in many other contexts alias saying is something
+1459030~003350~that we're very eager to avoid however
+1462380~003320~it's also important to understand that alias saying
+1465700~004870~isn't all bad and there are some very specific contexts in which
+1470570~004390~alias saying is very useful and very heavily exploited
+1474960~003170~one example love
+1478130~004150~a very useful context valia saying is when
+1482280~003310~you want to look at things that happen at frequencies
+1485590~004620~that you can't look at for one reason or another and sampling in a leasing is
+1490210~002440~used to map those into lower frequencies
+1492650~005230~one very common example of that is the use of the stroboscopic
+1497880~003870~which was invented by doctor how their chechen
+1501750~004530~at MIT and sometime earlier in fact we had
+1506280~004820~the opportunity to visit doctor Richard ins laboratory at MIT
+1511100~004210~and see some examples of this so I'd like to
+1515310~003710~at as a conclusion to this lecture take you
+1519020~005830~on visit to the stroke where and MIT
+1524850~003220~in the lecture in discussing aliasing we've stressed
+1528070~005870~the fact that in most situations it's something that would like to avoid
+1533940~004010~however right now we're at MIT and stroll Valley
+1537950~004010~as it's called on the way to visit the laboratory
+1541960~003070~Mike MIT colleague Professor are alleged
+1545030~004410~where in fact a leasing is an everyday occurrence
+1549440~003880~basically the idea is to follow dead
+1553320~003220~it in fact you wanna make measurements
+1556540~003460~at frequencies that for one reason or another
+1560000~005480~you can't measure their sampling and consequently aliasing
+1565480~004750~can be used to bring those frequencies down into a frequency range that you can
+1570230~001990~measure
+1572220~003170~well professor edgerton alias
+1575390~003920~da kitchen invented the strokes call
+1579310~004140~for exactly that reason and kinda the idea is the fall
+1583450~004600~the I essentially is a low pass filter and so there are things that happen
+1588050~003270~at frequencies boat which
+1591320~003470~your I contract and by
+1594790~004650~sampling with light poles sampling in time
+1599440~004610~what in effect you're able to do is sample in such a way
+1604050~003030~that higher frequencies get alias
+1607080~004570~down to lower frequencies then factor I contract
+1611650~003770~so let's take the look inside the where
+1615420~003530~and in fact see no aspiration or
+1618950~006310~the scroll and some its effects
+1625260~004750~will be here introduce you to my mighty colleague I kitchen
+1630010~004350~in also by the way he this is a great place for kids of all ages
+1634360~004020~and so my daughter just insisted on coming along to
+1638380~003340~also helped out stock need you we could begin with you
+1641720~004360~just saying a little bit about what the strobe is in with some history is
+1646080~004150~steroids ring resemble an increase in a min ly
+1650230~003740~misses them losing on Lampson
+1653970~003800~prices litter control rate planning on
+1657770~003650~school is not a good strategy is going to turn and we're going to look at.
+1661420~003230~motor striving on balance weight
+1664650~003470~to set up some rhinos lesions in the spring
+1668120~003760~want to know more bring on the throne
+1671880~007000~by
+1679960~007000~by
+1690580~001130~you writer and
+1691710~007000~throbs but just in the frequency the way
+1700019~005931~but corresponds to North influencer little more elusive
+1705950~004030~for the facts thought maybe we could the turn the stroller
+1709980~003809~for a minute noon the but let me
+1713789~003811~point out the by the way there the fact that
+1717600~003970~when looking at this without the strong mind always say essentially
+1721570~004030~our frequencies that are I can attract so you can see the motor
+1725600~001669~turning and
+1727269~004500~we can really see other than then with the were we can see the movie the spring
+1731769~003671~and so I get your point is that when we put the strobe on
+1735440~004339~who were essentially sampling this and no
+1739779~003551~you brought this stand with a frequency that there the
+1743330~003319~Riza with the track in fact
+1746649~003311~the I guess if we turn the
+1749960~004209~incandescent light of loon
+1754169~003110~the able to really bring out
+1757279~005120~are the alias frequency so now we're what we're looking at in fact are the
+1762399~004191~the earliest frequencies the street courses moving a lot faster than we see
+1766590~000769~it in their ranks
+1767359~003250~you know that's going on arena
+1770609~003461~30 times second Bruins are
+1774070~003859~thirties and second occurs through the survivors include
+1777929~003930~next move Rohingya figure 8a. saying you don't see that
+1781859~005540~yeah friend
+1787399~007000~well we'll be seeing now is essentially second harmonic that
+1804899~003160~someone okay
+1808059~003021~and just do you think you can make this spring dance around a little bit
+1811080~005319~find taking this slow frequency soon as all around
+1816399~003510~okay it's really neat let's turn the lights back on
+1819909~003281~weekend this is Charles president with anything 3 I'm
+1823190~004839~yeah has the third what's interesting now if we look at this and
+1828029~003150~seeking a fifth just rolled off again
+1831179~005860~earth okay noticed just think we look at the spring man although we can see is a
+1837039~000561~blur
+1837600~003600~and really can't see because you're right here tracking
+1841200~004919~can see things happening station but he said
+1846119~003711~by the way this was written demonstrated at the World's Fair
+1849830~002570~the thickness
+1852400~002999~world because glasses
+1855399~004190~for their Wow a loses all dressed up
+1859589~003090~element using
+1862679~004011~break bring bruises
+1866690~004199~fine but failed I stick with the miners stresses
+1870889~003330~runners or have break
+1874219~003710~bum they work on automobiles
+1877929~007000~their own thoughts on the vibrate but let's
+1885009~003650~earth buy levitra run this for a lot more than half an hour or a liberal
+1888659~004941~name is continues
+1893600~001380~terms
+1894980~003220~thing me maybe we can look at the
+1898200~003079~a couple other things have a about the fam
+1901279~004661~brand the classic buzzed
+1905940~003699~that's a good idea makes too much noise
+1909639~005350~ok is to remove that over here that's just an ordinary like the fam
+1914989~003621~has a mark on one plate surgeon
+1918610~007000~identify you can get up to speed
+1929180~003010~know that this looks like a phantom was also demonstrated in the
+1932190~003680~world's fair few years ago yeah kinda been
+1935870~003600~been does a movie
+1939470~004110~quicken awake practicing in to and it was very fan
+1943580~003490~well one like it happened if the reform do
+1947070~005050~MGM and the Peters B Smith
+1952120~003560~wanted he said he won miss royale up
+1955680~004820~custard pie into it not don't know I'm a serious scientists for
+1960500~003700~sizes compromise on a I
+1964200~004200~so we dropped an egg into it in the news UCI's B-movie
+1968400~004780~dropping 0 not known struggle there there was with the
+1973180~003700~high-speed great remove yeah it's okay so
+1976880~003850~so again I guess without this true when we look at its
+1980730~003530~what we're looking at our frequencies it are
+1984260~003940~much higher than the I think following now with the stroke blindness
+1988200~003970~you can see both the alias frequency and you can also see the original frequency
+1992170~000860~because we have the
+1993030~003500~investment line sweats I'm let's
+1996530~003120~turned down the the background lighting and
+1999650~003400~stand then really all that were able to see or the aliasing
+2003050~003410~frequencies stand I guess
+2006460~003050~I guess when we see more than one market means that the
+2009510~003450~stay were actually running its and
+2012960~003350~or guns is more and more things the the using
+2016310~004770~lower radiation steroids because the plans aren't exactly the same
+2021080~004060~actually this gives me a chance illustrating other important correlated
+2025140~000930~to the lecture
+2026070~003040~I'll that they could bring them to frequency
+2029110~007000~so that re only get one more scorched
+2036340~003210~missus begins to move this is just one way there now
+2039550~005030~okay so so the way we have now we've essentially alias the fan speed and so
+2044580~000480~the
+2045060~004050~is just a little higher than the seeds and now
+2049110~005710~on right at the sea and now if I could and just a little further in fact that
+2054820~003050~looks like the fans turning back hurts
+2057870~003170~and if you think that this into context the leasing
+2061040~004780~its it's like this to impulses in the frequency domain
+2065820~004320~crossover in with you get an effective you and was mathematically
+2070140~003280~you get a phase reversed in
+2073420~004320~no wasn't so I E I first understood have a leasing
+2077740~004570~with Doc understood why stand with the western movies
+2082310~004420~a everyone's Ryan see the wagon wheels through November go backwards train and
+2086730~001160~there's there the
+2087890~003710~wagon wheels in western movie going backwards yes stressed
+2091600~004910~and just see what you see is %um too much weaker on straight up so you get to
+2096510~003160~just see greater frequency of so that's
+2099670~003560~you get to marched
+2103230~004800~u-turn and Justin's governor and you think tourist
+2108030~003050~you impressed
+2111080~003790~schoolroom its regular spirits
+2114870~004110~all rights pictures in your honor older adults
+2118980~004620~and I rising price revolution I guess another thing is that this demonstrates
+2123600~001020~something that is
+2124620~005000~and I heard a long time ago which is its should never use a power so with the
+2129620~004790~fluorescent lights the is arrest like is a little bit of a stroke affecting
+2134410~004460~you could actually can misuse of that standing still make mistakes a
+2138870~003940~strength that you think everything we are doing is a good friend of
+2142810~003310~no I don't think I want to try it out how are you this do you think that's
+2146120~003430~any sores and wounds she knows it's going
+2149550~003250~sproule undergoing closest friends okay let's
+2152800~003770~I'm actually we turn the lights back on again what's
+2156570~004320~their latest see once again is that we can see both the alias frequencies going
+2160890~001070~to you that's
+2161960~003440~and we we can also see the higher frequencies because the
+2165400~004130~incandescent lighting its okay maybe we can be no
+2169530~003090~is parents take a look at some other
+2172620~003880~on things and when I guess I'm curious about is the distance you have over
+2176500~000910~their kids
+2177410~003770~doc maybe you can tell us what we have here
+2181180~003120~churros the this to show
+2184300~003940~how you can get motion pictures on a Susan still pictures
+2188240~003800~the circle is repeated 12 times
+2192040~003820~why does outer part over mmm on this site
+2195860~004530~in part on the other quiet place one time for a revolution on this
+2200390~004490~you see the exactly as it is if I skip one picture each time
+2204880~003000~when you get there relative motions
+2207880~003270~mall the object is to show the ball rotating
+2211150~004370~is this where that one depending on mood straw was going faster or slower
+2215520~005260~and the other Uzan this way motion pictures went well
+2220780~004190~100 years school long for photography drew pictures of people
+2224970~004880~different animated features like the run yes great
+2229850~006430~is actually the title kinda busy aliasing can be fun conservatism
+2236280~003180~sterling if the speeds
+2239460~003730~or away if you get a lot of different things sorted veterans
+2243190~003700~go through ruin currently reaches speeds
+2246890~004450~reserve a room in the rules it sounds
+2251340~004310~ok and the background blur basically the high frequencies the I can't follow
+2255650~004040~and and then we're going to propose and then again we can see
+2259690~003340~frequencies it really is down the nets
+2263030~004380~rookie I ends right now I am one place for revolution sleep
+2267410~003260~see the corner the move is consuming records
+2270670~004100~exactly the reasons there are an increasing frequency
+2274770~005960~of risk if 100 one server or early get the illusion that diamonds
+2280730~004250~room in fact let's a let's really enhanced solution
+2284980~004140~Western the incandescent lights off
+2289120~003710~and now now are we seeing really you're the alias frequencies
+2292830~004510~or or do you think this just adds
+2297340~004680~looks like reading recognized through was doing rejoining licensing
+2302020~003800~of is the same rules now lower watching is something also
+2305820~003230~might point out of a for the
+2309050~003530~I'm the lecture for the course is that actually there
+2312580~003240~there really are two sampling frequencies receiving one is this road
+2315820~000940~and
+2316760~003740~which is the stroke that you're running the other is the inherent
+2320500~003900~Creamery for the TV that's running at 30 frames a second
+2324400~003530~and that's won the reasons by the way in dead people watching this
+2327930~003740~on the video worst are in fact seeing
+2331670~004260~Flickr or a feeding or modulation between
+2335930~004270~the two on synchronize frame rates runner grievances
+2340200~006760~grow up so we get to of to a room credits
+2346960~003030~of to
+2349990~007000~roaming two runs on each other of
+2357980~001250~of
+2359230~003590~you know it senator Reid's learning this
+2362820~003650~soon living room when all your friends
+2366470~003870~I think would be a good terrific homered problem getting video Kors
+2370340~003470~they have them all sit down and analyze all the frequencies that they're seeing
+2373810~002299~and what they're being alias through the evening event
+2376109~003031~it's a good view run the teacher I love you
+2379140~003210~who is great yeah remember these dudes list
+2382350~003240~I think that a chase a few people away from the courses good
+2385590~004170~cracks and you get you get involved in these offerings
+2389760~004460~rule ruler and what you can do for a KMS roots
+2394220~003350~let's bring you the incandescent lights back again
+2397570~003690~just to remind everybody that in back row this or
+2401260~003470~some some frequencies that are a lot higher than the ones that
+2404730~003170~we begin to get the impression that we're watching just the
+2407900~003620~motor running Frances Bean pattern on
+2411520~003900~long Dhaka have to
+2415420~003060~I have to say that there are many people I know they have as much fun in the work
+2418480~000650~as you do
+2419130~004100~home like a man arm quote would but I'd like to
+2423230~004260~do now baby is take a look at one last experiment sure did
+2427490~004260~and what I'd like to do is a.m. is go take a look at the
+2431750~003020~I guess what sometimes is called the home
+2434770~003500~well not the water graphics for men with thin air the minute dole pillar
+2438270~003320~hydraulic everything that's the 1i was thinking and let's take a look over
+2441590~000440~there
+2442030~007000~okay one just in this Go internal war so
+2449500~003170~your doc this is the what did you got DP
+2452670~003890~HHM bird double peddler hydraulic
+2456560~003450~happening machine Gary okay then it's a.m. so please
+2460010~003020~it looks like continues dream up it is not its
+2463030~005150~pump over there something sixty post second so those owners
+2468180~003720~coming out in spurts %uh so actually again it's
+2471900~003090~it's the the sixty boss is the second year I can follow
+2474990~003540~your eyes so is exactly basically looks like a blur
+2478530~003640~ruseler it is a blur writers you learn output stroll on
+2482170~006820~okay grace start so again
+2488990~003420~I guess we have this a essentially alias then in
+2492410~004190~and again with the incandescent light you can see both sky high frequency
+2496600~003610~and the alias frequency its and
+2500210~004510~but see I guess that's with the frequency close to the sea and we can
+2504720~004370~adjusted so that is stop stop bothering me going to go out and then we can
+2509090~001110~actually make it go up
+2510200~003710~scored anybody who is this South
+2513910~004430~yeah effect movie have just just again due to stress this point to the
+2518340~004250~class the the kind of the idea here the face reversal of course
+2522590~003390~you can see it in the time domain Chynoweth you just think about when the
+2525980~001010~flashes of light
+2526990~003330~come but if you think I love kind of these
+2530320~003789~impulses that we have in the frequency domain
+2534109~004551~and we're aliasing as we change the sampling frequency what happens is that
+2538660~001920~these impulses crossover
+2540580~004200~and what that means is that we get a phase reversal the pending
+2544780~003500~on which faces are associated with
+2548280~003950~which side up the sea so that's kind of the idea the phase reversal
+2552230~003320~okay let's the let's turn the
+2555550~003540~against because it is important thing in between those who got
+2559090~003420~yeah let's let's turn the incandescent light of first and
+2562510~004020~think one thing your so 103 know through this thing you think you can do to get
+2566530~002680~on the other side you're on hand so we can see with
+2569210~005010~when for the UN intervening sleuths
+2574220~004010~water there all the time well on a nosedive it seems to me if we can't we
+2578230~001360~just the justices
+2579590~005260~the that's just go through to next year staff the dots can do it just seeing how
+2584850~001700~come you think your finger in the air
+2586550~004240~fun to try once more its
+2590790~003660~I get snyder et that's one thing we can do this
+2594450~003270~well as bring the lights back up and its
+2597720~004570~again just to go stress the point scary RTC
+2602290~004400~there we are at a frequency that it's just a little above the sea
+2606690~004890~and we can go back there and in the sea and we can actually get a phase reversal
+2611580~004240~and I guess if we do this long enough we get at the at the whole ocean and put it
+2615820~000769~back in
+2616589~003161~we're ever comes from is there in cars in newsrooms gonna run is not running
+2619750~003830~too long by the Rev trailer get here yet to be careful as well as the Moody Blues
+2623580~000660~V
+2624240~004980~surface well I don't know about them but I guess I believe you back its
+2629220~003180~up a little more pressure on three gods monarchy
+2632400~003350~Adams girlfriends or service teams
+2635750~005350~going things together Ste
+2641100~004489~we have these machines are all over the place lot of fun
+2645589~003051~but that this this is really terrific I i think that
+2648640~003370~the this whole idea of the
+2652010~003210~and abusing aliens saying in stroz and
+2655220~004380~the kinds of things that did you do with the murder just fantastic in that we
+2659600~001630~really appreciate the chance to
+2661230~004080~come in here and see the demonstration Rose Bowl game ruth's
+2665310~003520~hope you will use it for years the bar over many years to come
+2668830~003279~so is I emphasized that the beginning
+2672109~003921~in what situations aliasing can in fact be very useful
+2676030~004740~also with this demonstrates is that particularly when you have a colleague
+2680770~001380~like da kitchen
+2682150~004030~a leasing and for that matter science in general can be an awful lot of fun
+2686180~007000~by gonna thanks a lot that again and thank you just the name
+2694280~005640~well I have to say that that visit was an awful lot of fun for me and
+2699920~004410~for Justin in fact to for the whole camera crew that was
+2704330~004810~there and hopefully you all have used at some point will also have a chance to
+2709140~004060~visited stroll Valley well
+2713200~003180~hopefully what we've gone through today gives you
+2716380~004140~a good feeling for the concepts love sampling an alias saying
+2720520~005370~and both why it might be useful and why we might want to avoid
+2725890~003210~in the next lecture will continue on
+2729100~003180~the discussion of sampling any particular
+2732280~003650~what all be talking about is the interpretation
+2735930~004710~love the reconstruction process not in the frequency domain
+2740640~004140~but in a time-domain interpretation specifically associated
+2744780~003630~with the concept %uh interpolating between the samples
+2748410~004650~well then proceed from there too a discussion as i've alluded to
+2753060~004000~in several lectures love what i've referred to as
+2757060~003770~discrete-time processing of continuous-time signals
+2760830~005259~very heavily exploiting the concept and issues associated with sample
+2766089~000331~thank you

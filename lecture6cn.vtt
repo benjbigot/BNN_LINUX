@@ -1,0 +1,3032 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+以下内容是根据Creative Commons授权提供
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+您的支持将有助于麻省理工学院开放式课程继续报价
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+免费优质教育资源
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+进行捐赠或查看附加材料由数百人资讯
+
+00:00:14,000 --> 00:00:15,000
+courses
+课程
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+参观麻省理工学院开放式课程在0 CW
+
+00:00:18,000 --> 00:00:20,000
+that MIT ided you
+麻省理工学院被提供的你
+
+00:00:20,000 --> 00:00:27,000
+ha
+
+
+00:00:42,000 --> 00:00:45,000
+the norm
+规范
+
+00:00:45,000 --> 00:00:52,000
+are
+有
+
+00:00:55,000 --> 00:00:59,000
+over the past several lectures we've developed the representation for linear
+在过去的几次讲座，我们已经开发了代表的线性
+
+00:00:59,000 --> 00:01:00,000
+time-invariant systems
+时不变系统
+
+00:01:00,000 --> 00:01:04,000
+in a particularly important center systems
+在一个特别重要的中心系统
+
+00:01:04,000 --> 00:01:08,000
+which are linear and time-invariant are those that are represented by linear
+这是线性时不变的是那些由线性表示
+
+00:01:08,000 --> 00:01:12,000
+constant coefficient differential equations continuous-time
+连续时间常系数微分方程
+
+00:01:12,000 --> 00:01:16,000
+or when your constant coefficient difference equations
+或者当你常系数差分方程
+
+00:01:16,000 --> 00:01:21,000
+in discrete-time for example electrical circuits that are built let's say I dove
+在离散时间，例如内置的电路比方说，我的鸽子
+
+00:01:21,000 --> 00:01:24,000
+resistors inductors and capacitors perhaps with %ah pants
+电阻，电感和电容也许％啊裤子
+
+00:01:24,000 --> 00:01:28,000
+correspond to systems described by differential equations
+对应于由微分方程描述的系统
+
+00:01:28,000 --> 00:01:32,000
+mechanical systems with springs and dash pots likewise
+力学系统的弹簧和破折号同样盆
+
+00:01:32,000 --> 00:01:36,000
+are described by differential equations and in the discrete-time
+通过微分方程，并在离散时间中描述
+
+00:01:36,000 --> 00:01:40,000
+case things such as moving average filters
+万一事情，例如移动平均滤波器
+
+00:01:40,000 --> 00:01:45,000
+digital filters and most simple kinda data smoothing
+数字滤波器和最简单的还挺数据平滑
+
+00:01:45,000 --> 00:01:48,000
+are all linear constant coefficient difference equations
+都是线性常系数差分方程
+
+00:01:48,000 --> 00:01:52,000
+now presumably
+现在想必
+
+00:01:52,000 --> 00:01:56,000
+in a previous course you've had some exposure to
+在以前的你当然已经有一些接触
+
+00:01:56,000 --> 00:02:01,000
+differential equations for continuous-time and
+在连续时间和微分方程
+
+00:02:01,000 --> 00:02:05,000
+their solution using notions like particular solution and homogeneous
+像使用特定的解决方案，并均匀概念及其解决方案
+
+00:02:05,000 --> 00:02:07,000
+solution initial conditions center
+解决方案的初始条件中心
+
+00:02:07,000 --> 00:02:10,000
+later on in the course
+后来在使用过程中
+
+00:02:10,000 --> 00:02:15,000
+when we've developed the concept to the 48 transforming after that the
+当我们开发的理念，以48转化后的
+
+00:02:15,000 --> 00:02:17,000
+apostrophe its form
+撇号的形式
+
+00:02:17,000 --> 00:02:20,000
+will see some very efficient and useful ways
+会看到一些非常有效和有用的方式
+
+00:02:20,000 --> 00:02:24,000
+generating solutions both differential and difference equations
+生成解决方案的微分与差分方程
+
+00:02:24,000 --> 00:02:27,000
+at this point however I'd like to
+在这一点不过，我想
+
+00:02:27,000 --> 00:02:30,000
+just introduce when your constant coefficient
+刚引进时，你常系数
+
+00:02:30,000 --> 00:02:34,000
+differential equations and the discrete-time counterpart
+微分方程和离散时间对应
+
+00:02:34,000 --> 00:02:37,000
+and address among other things the issue
+及（其中包括）解决问题
+
+00:02:37,000 --> 00:02:42,000
+love when they do and don't correspond to linear time-invariant systems
+谈恋爱的时候，他们做的和不符合线性时不变系统
+
+00:02:42,000 --> 00:02:45,000
+well let's first consider
+那么让我们先考虑
+
+00:02:45,000 --> 00:02:49,000
+what I refer to as an nth order
+我指的是一个n阶
+
+00:02:49,000 --> 00:02:52,000
+linear constant coefficients differential equation as i've indicated
+正如我指出线性常系数微分方程
+
+00:02:52,000 --> 00:02:53,000
+here
+这里
+
+00:02:53,000 --> 00:02:58,000
+and what it consists of is a linear combination of derivatives up the system
+和它所包含的衍生物组成系统的线性组合
+
+00:02:58,000 --> 00:02:59,000
+output
+产量
+
+00:02:59,000 --> 00:03:02,000
+y'at equal to a linear combination
+y'at等于线性组合
+
+00:03:02,000 --> 00:03:05,000
+of derivatives above the system input accept T
+衍生品以上系统的输入接受Ŧ
+
+00:03:05,000 --> 00:03:08,000
+and is referred to
+并且被称为
+
+00:03:08,000 --> 00:03:13,000
+as a constant coefficients equation of course because the
+当然，作为一个常系数方程，因为
+
+00:03:13,000 --> 00:03:18,000
+coefficients are constant in other words not assume to be time-varying
+系数是常数，换句话说不假定为随时间变化的
+
+00:03:18,000 --> 00:03:21,000
+and its referred to
+及其简称
+
+00:03:21,000 --> 00:03:26,000
+as linear because it corresponds to a linear combination
+为线性的，因为它对应于一个线性组合
+
+00:03:26,000 --> 00:03:30,000
+love these derivatives not because
+喜欢这些衍生物不是因为
+
+00:03:30,000 --> 00:03:33,000
+it corresponds to a linear system and in fact
+它对应于一个线性系统，实际上
+
+00:03:33,000 --> 00:03:36,000
+as we'll see or as all indicate this
+正如我们将看到或都表明这
+
+00:03:36,000 --> 00:03:40,000
+equation may or may not in fact correspond to
+公式可能会或可能不会在实际上对应
+
+00:03:40,000 --> 00:03:44,000
+when your system in the discrete-time case
+当你的系统在离散时间情况
+
+00:03:44,000 --> 00:03:50,000
+the corresponding equation is a linear constant coefficient difference equation
+相应的方程是线性常系数差分方程
+
+00:03:50,000 --> 00:03:53,000
+and that corresponds to again
+和对应于再
+
+00:03:53,000 --> 00:03:58,000
+a linear combination love the late versions of the output equal to
+线性组合爱的输出等于后期版本
+
+00:03:58,000 --> 00:04:02,000
+a linear combination love the late versions at the input
+线性组合爱晚版本在输入
+
+00:04:02,000 --> 00:04:05,000
+this equation is referred to as an nth order
+这个方程被称为第n阶
+
+00:04:05,000 --> 00:04:10,000
+difference equation the N referring to the number of the ladies
+差分方程N个指的是女士们的数
+
+00:04:10,000 --> 00:04:14,000
+are the output involved just as an aunt order differential equation
+涉及就像一个阿姨阶微分方程的输出
+
+00:04:14,000 --> 00:04:19,000
+the N for the order the equation refers to the number of derivatives
+N个的订货公式是指衍生工具的数量
+
+00:04:19,000 --> 00:04:22,000
+the output now let's first begin
+输出现在让我们先开始
+
+00:04:22,000 --> 00:04:26,000
+with the near constant coefficient differential equations
+与附近常系数微分方程
+
+00:04:26,000 --> 00:04:30,000
+and the basic
+和基本
+
+00:04:30,000 --> 00:04:33,000
+point or the solution for
+点或为溶液
+
+00:04:33,000 --> 00:04:37,000
+the differential equations is the fact dead
+微分方程的是死了
+
+00:04:37,000 --> 00:04:40,000
+if we've generated some solution
+如果我们已经产生了一些解决方案
+
+00:04:40,000 --> 00:04:44,000
+which I refer to here's why superiority some solution
+而我指的是这里的原因优越性一些解决方案
+
+00:04:44,000 --> 00:04:47,000
+to the equation for a given input then
+等式对给定的输入，然后
+
+00:04:47,000 --> 00:04:50,000
+in fact we can and to that solution
+其实我们可以和该解决方案
+
+00:04:50,000 --> 00:04:54,000
+any other solution which
+任何其他的解决方案，
+
+00:04:54,000 --> 00:04:57,000
+satisfies what's referred to as
+满足什么的简称
+
+00:04:57,000 --> 00:05:01,000
+the homogeneous equation so in fact
+齐次方程，实际上
+
+00:05:01,000 --> 00:05:05,000
+this differential equation by itself
+本身这个微分方程
+
+00:05:05,000 --> 00:05:08,000
+is not a unique specification
+不是一个独特的规格
+
+00:05:08,000 --> 00:05:10,000
+the system
+系统
+
+00:05:10,000 --> 00:05:13,000
+if I have any solution then I can
+如果我有任何的解决方案，然后我可以
+
+00:05:13,000 --> 00:05:18,000
+and to that solution any other solution which satisfies the homogeneous equation
+并且该解决方案的任何其他解决方案，满足齐次方程
+
+00:05:18,000 --> 00:05:20,000
+and thus all those two
+因此，所有这两个
+
+00:05:20,000 --> 00:05:24,000
+likewise be a solution and that's very straight forward to verify
+同样是一个解决方案，这是非常简单的验证
+
+00:05:24,000 --> 00:05:28,000
+by simply substituting into the differential equation
+通过简单的代入微分方程
+
+00:05:28,000 --> 00:05:33,000
+some love the particular a particular and the homogeneous solution
+有些爱特别是特定和均相溶液
+
+00:05:33,000 --> 00:05:37,000
+and what you see is that the homogeneous contribution
+而你看到的是，均匀的贡献
+
+00:05:37,000 --> 00:05:41,000
+in fact goes to zero by definition
+实际上变为零的定义
+
+00:05:41,000 --> 00:05:45,000
+what we mean by the homogeneous equation now
+我们所说的齐次方程的意思是现在
+
+00:05:45,000 --> 00:05:50,000
+the homogeneous solution for a when your constant coefficient differential
+一，当你常系数微分方程的齐次解
+
+00:05:50,000 --> 00:05:51,000
+equation
+方程
+
+00:05:51,000 --> 00:05:55,000
+is of the form that I
+的形式为我
+
+00:05:55,000 --> 00:05:58,000
+indicate at the bottom and
+表明在底部和
+
+00:05:58,000 --> 00:06:01,000
+it typically consists love a
+它通常由一个爱
+
+00:06:01,000 --> 00:06:06,000
+song or capital and complex exponentials
+歌曲或资本和复指数
+
+00:06:06,000 --> 00:06:09,000
+and the Constance
+和康斯坦斯
+
+00:06:09,000 --> 00:06:12,000
+are on determined by the equation itself
+是由上述方程本身确定
+
+00:06:12,000 --> 00:06:17,000
+and this form for the homogeneous solution
+而这种形式的齐次解
+
+00:06:17,000 --> 00:06:22,000
+in essence drops out love examining
+在本质上滴出爱情审查
+
+00:06:22,000 --> 00:06:26,000
+the homogeneous equation where
+齐次方程，其中
+
+00:06:26,000 --> 00:06:30,000
+if we assume that the former the homogeneous solution
+如果我们假设前者的均匀溶液
+
+00:06:30,000 --> 00:06:34,000
+is a complex exponential with some
+是一个复指数的一​​些
+
+00:06:34,000 --> 00:06:38,000
+on specified amplitude and unspecified exponent
+在指定的幅度和不确定指数
+
+00:06:38,000 --> 00:06:42,000
+if we substitute this into are homogeneous equation
+如果我们这代成是齐次方程
+
+00:06:42,000 --> 00:06:45,000
+we end up with the equation that i've indicated
+我们最终的方程式，我已经指出
+
+00:06:45,000 --> 00:06:49,000
+year the factor A&E the st. can in fact be
+今年因子A＆E的ST。其实也可以
+
+00:06:49,000 --> 00:06:53,000
+cancelled out and we find there that equation
+取消了，我们发现那里的公式
+
+00:06:53,000 --> 00:06:56,000
+is satisfied
+纳
+
+00:06:56,000 --> 00:06:59,000
+for capital N values
+资本N个值
+
+00:06:59,000 --> 00:07:02,000
+love s and
+爱s和
+
+00:07:02,000 --> 00:07:06,000
+that's true no matter what choices made for these
+这是真的，不管选择什么为这些
+
+00:07:06,000 --> 00:07:10,000
+coefficients and the essential consequence
+系数和必不可少的后果
+
+00:07:10,000 --> 00:07:13,000
+have all of that is that the homogeneous solution
+有所有这一切是均匀的溶液
+
+00:07:13,000 --> 00:07:17,000
+is of the form that I indicated previously
+就是我前面所指出的表格
+
+00:07:17,000 --> 00:07:20,000
+namely it consists love some
+即它是由一些爱
+
+00:07:20,000 --> 00:07:24,000
+love capital and complex exponentials
+爱资本和复指数
+
+00:07:24,000 --> 00:07:28,000
+where the coefficients the capital and coefficients
+其中系数的资本和系数
+
+00:07:28,000 --> 00:07:31,000
+attached to you to those complex exponentials
+连接到您的复指数
+
+00:07:31,000 --> 00:07:34,000
+is undetermined Iran specified
+是不确定的伊朗指定
+
+00:07:34,000 --> 00:07:38,000
+so what this says is that in order to
+所以这是什么说的是，为了
+
+00:07:38,000 --> 00:07:42,000
+obtain the solution for a win here comes the coefficient differential equation
+获得一场胜利的解决方案来这里的系数微分方程
+
+00:07:42,000 --> 00:07:45,000
+we need some kind of auxiliary information
+我们需要某种形式的辅助信息
+
+00:07:45,000 --> 00:07:49,000
+tells us how to obtain these capital and
+告诉我们如何获得这些资金，
+
+00:07:49,000 --> 00:07:53,000
+undetermined Constance and there are a variety of ways
+未定博登和有各种不同的方式
+
+00:07:53,000 --> 00:07:57,000
+specifying this auxiliary information or auxiliary conditions
+指定该辅助信息或辅助条件
+
+00:07:57,000 --> 00:08:02,000
+for example in addition to the differential equation
+例如，除了微分方程
+
+00:08:02,000 --> 00:08:05,000
+what I can tell you is the value
+我可以告诉你的是价值
+
+00:08:05,000 --> 00:08:08,000
+of the output and and -1 up there
+输出和与-1那里的
+
+00:08:08,000 --> 00:08:12,000
+and -1 if its derivatives at some
+和-1，如果它的某些衍生物
+
+00:08:12,000 --> 00:08:15,000
+specified time t0 and
+指定的时间t0和
+
+00:08:15,000 --> 00:08:19,000
+so the differential equations together
+所以微分方程在一起
+
+00:08:19,000 --> 00:08:23,000
+with the auxiliary information the initial conditions
+与辅助信息的初始条件
+
+00:08:23,000 --> 00:08:26,000
+van lets you determine the total solution
+面包车让您决定整体解决方案
+
+00:08:26,000 --> 00:08:31,000
+which namely lets you determine these previously unspecified
+它即可以让你确定这些先前未指定
+
+00:08:31,000 --> 00:08:35,000
+coefficients in the homogeneous solution
+在均相溶液中的系数
+
+00:08:35,000 --> 00:08:40,000
+now depending on how the auxiliary information is stated or what auxiliary
+现在根据辅助信息是如何陈述或什么辅助
+
+00:08:40,000 --> 00:08:41,000
+information is available
+信息可用
+
+00:08:41,000 --> 00:08:45,000
+the system a or may not correspond
+该系统一个或可能不对应
+
+00:08:45,000 --> 00:08:49,000
+to a linear system and may or may not correspond to a linear time-invariant
+到一个线性系统，并且可能或可能不对应于一个线性时不变
+
+00:08:49,000 --> 00:08:53,000
+system one essential condition
+系统中的一个必要条件
+
+00:08:53,000 --> 00:08:56,000
+for it to correspond to a linear system is that
+它对应于一个线性系统是
+
+00:08:56,000 --> 00:09:00,000
+the initial conditions must be zero
+初始条件必须是零
+
+00:09:00,000 --> 00:09:04,000
+and one can see the reason for that
+人们可以看到，之所以
+
+00:09:04,000 --> 00:09:09,000
+if we refer back to the previous lecture in which we saw that for a linear system
+如果我们重提中，我们看到，对于一个线性系统前面的讲解
+
+00:09:09,000 --> 00:09:12,000
+if we put 0n we get zero out
+如果我们把0N我们得到了零
+
+00:09:12,000 --> 00:09:17,000
+so if exit see the input is zero the output must be zero
+因此，如果出口看的输入为零的输出必须是零
+
+00:09:17,000 --> 00:09:21,000
+and so that in essence tells us that at least for the system to be linear
+并使得在本质告诉我们，至少对于系统是线性的
+
+00:09:21,000 --> 00:09:24,000
+these initial conditions must be zero
+这些初始条件必须是零
+
+00:09:24,000 --> 00:09:28,000
+now beyond that if
+现在超越，如果
+
+00:09:28,000 --> 00:09:31,000
+we want the system to be
+我们希望该系统能
+
+00:09:31,000 --> 00:09:35,000
+causal and linear time in and time-invariant
+在和因果和线性时间时不变
+
+00:09:35,000 --> 00:09:38,000
+then what's required on the
+那么什么是需要的
+
+00:09:38,000 --> 00:09:42,000
+initial conditions is that they be consistent with
+初始条件是它们是一致
+
+00:09:42,000 --> 00:09:47,000
+what's referred to as initial rest initial arrest says
+什么是被称为初始静止初始逮捕称
+
+00:09:47,000 --> 00:09:51,000
+that the output must be
+该输出必须
+
+00:09:51,000 --> 00:09:54,000
+0 up until the time
+0直到时间
+
+00:09:54,000 --> 00:09:58,000
+that the input becomes 90 and we can see
+该输入变为90，我们可以看到
+
+00:09:58,000 --> 00:10:01,000
+of course that that's consistent with the notion of causality as
+当然了这是因果关系的概念是一致
+
+00:10:01,000 --> 00:10:05,000
+we talked about in the previous lecture and
+我们在前面的演讲谈到了和
+
+00:10:05,000 --> 00:10:09,000
+its relatively straightforward to see
+其相对简单的看
+
+00:10:09,000 --> 00:10:14,000
+that if the system is causal and linear and time-invariant
+如果系统是因果和线性和时间不变
+
+00:10:14,000 --> 00:10:17,000
+that will require
+这将需要
+
+00:10:17,000 --> 00:10:21,000
+initial rest it's somewhat more difficult see
+最初的休息是较为困难见
+
+00:10:21,000 --> 00:10:27,000
+that if we specify initial rest the NAT in fact is sufficient to
+如果我们指定初始静止实际上NAT是足以
+
+00:10:27,000 --> 00:10:30,000
+determine that the system is both causal in linear
+确定该系统既是因果的线性
+
+00:10:30,000 --> 00:10:34,000
+and time very but the essential point then is that
+和时间，但很重要的一点则是，
+
+00:10:34,000 --> 00:10:37,000
+requires initial rest for both linearity
+最初需要休息两个线性
+
+00:10:37,000 --> 00:10:41,000
+and causality okay well
+和因果关系也没关系
+
+00:10:41,000 --> 00:10:44,000
+let's look at an example and
+让我们来看一个例子，
+
+00:10:44,000 --> 00:10:49,000
+let's take the example love a first-order
+让我们的例子中爱一阶
+
+00:10:49,000 --> 00:10:52,000
+differential equation as I've
+差分方程，因为我已经
+
+00:10:52,000 --> 00:10:55,000
+indicated here so we have
+在这里表示，所以我们有
+
+00:10:55,000 --> 00:10:59,000
+a first-order differential equation the wife TTT
+一阶微分方程的妻子TTT
+
+00:10:59,000 --> 00:11:02,000
+was a yote is the input exit
+是一个yote是输入口
+
+00:11:02,000 --> 00:11:05,000
+T and let's first
+T和让我们先
+
+00:11:05,000 --> 00:11:08,000
+look at what the homogeneous solution this equation is
+看看这个公式是什么样的均相溶液
+
+00:11:08,000 --> 00:11:12,000
+and so we can consider the homogeneous equation
+所以我们可以考虑齐次方程
+
+00:11:12,000 --> 00:11:17,000
+namely the equation specify solutions
+即方程指定的解决方案
+
+00:11:17,000 --> 00:11:21,000
+which would correspond to zero input
+这将对应于零输入
+
+00:11:21,000 --> 00:11:24,000
+we in essence guess for impose
+我们在本质上猜测征收
+
+00:11:24,000 --> 00:11:28,000
+a solution love the form the homogeneous solution
+一个解决方案的爱的形式均匀的溶液
+
+00:11:28,000 --> 00:11:33,000
+is an amplitude factor times the complex exponential
+是振幅因子乘以复指数
+
+00:11:33,000 --> 00:11:37,000
+substituting this into the homogeneous equation
+代入的齐次方程
+
+00:11:37,000 --> 00:11:40,000
+we then get the equation that i've indicated here
+我们再拿到，我已经在这里指出的方程
+
+00:11:40,000 --> 00:11:44,000
+what you can see is that this equates in this equation
+你可以看到的是，这相当于在这个等式
+
+00:11:44,000 --> 00:11:49,000
+I can cancel out the amplitude factor and this complex exponential
+我可以取消的振幅因子和这个复杂的指数
+
+00:11:49,000 --> 00:11:56,000
+so let's just cancel those out on both sides of the equation
+所以我们只取消了那些对等式的两边
+
+00:11:56,000 --> 00:12:00,000
+and what we're left with is an equation
+而我们留下了什么是方程
+
+00:12:00,000 --> 00:12:04,000
+that specifies what the complex exponent must be
+用于指定复杂的指数必须是
+
+00:12:04,000 --> 00:12:09,000
+in particular for the homogeneous solution s must be equal to minus a
+特别是为均匀的溶液s必须等于减去一个
+
+00:12:09,000 --> 00:12:12,000
+and so finally are homogeneous solution
+所以最后是均相溶液
+
+00:12:12,000 --> 00:12:18,000
+is as I've indicated year
+是因为我已经表明今年
+
+00:12:18,000 --> 00:12:24,000
+okay now let's look at the solution for specific input let's consider for
+还好现在让我们来看看具体的输入解决方案，让我们考虑
+
+00:12:24,000 --> 00:12:25,000
+example input
+例如输入
+
+00:12:25,000 --> 00:12:28,000
+which is a scale units step and
+这是一个尺度单位工序和
+
+00:12:28,000 --> 00:12:32,000
+although I won't work at the solution in detail and perhaps
+虽然我不会在详细的解决方案的工作，也许
+
+00:12:32,000 --> 00:12:36,000
+using what you've worked on previously
+用你以前曾在
+
+00:12:36,000 --> 00:12:39,000
+you know how to carry out the solution for that the
+你知道如何进行该解决方案中的
+
+00:12:39,000 --> 00:12:42,000
+a solution with step input
+与阶跃输入的解决方案
+
+00:12:42,000 --> 00:12:47,000
+is what i've indicated here scaler one minus the next financial times unit
+就是我在这里表示分频器一减的未来金融时报单元
+
+00:12:47,000 --> 00:12:51,000
+staff and you can verify that simply by substituting into the differential
+工作人员和您可以验证通过简单的代入差分
+
+00:12:51,000 --> 00:12:53,000
+equations now
+现在方程
+
+00:12:53,000 --> 00:12:57,000
+we know that there's a family of solutions in other words
+我们知道，有一个系列解决方案，换句话说
+
+00:12:57,000 --> 00:13:00,000
+any solution with
+任何解决方案
+
+00:13:00,000 --> 00:13:04,000
+a homogeneous solution added to it is again a solution
+添加到它的均匀溶液再次是溶液
+
+00:13:04,000 --> 00:13:09,000
+and so if we consider the solution I just indicated
+所以，如果我们考虑解决方案，我只是指出
+
+00:13:09,000 --> 00:13:13,000
+we generate the entire family of solutions by
+我们通过生成解决方案的整个家庭
+
+00:13:13,000 --> 00:13:16,000
+ending a homogeneous solution to it and so
+结束了均匀的溶液，以它等
+
+00:13:16,000 --> 00:13:20,000
+this then corresponds to the entire family of solutions
+这则对应的解决方案的整个家庭
+
+00:13:20,000 --> 00:13:24,000
+where the constant a is unspecified
+其中常数a为未指定的
+
+00:13:24,000 --> 00:13:31,000
+so far and needs to be specified through some type avoids avery conditions
+到目前为止，需要通过某种类型的指定避免艾利条件
+
+00:13:31,000 --> 00:13:34,000
+now a class A auxiliary conditions
+现在是一个A类的辅助条件
+
+00:13:34,000 --> 00:13:37,000
+is the Commissioner initial rest which
+是初始专员其余的
+
+00:13:37,000 --> 00:13:43,000
+as i indicated before is equivalent to the statement that the system
+正如我之前等同于声明中指出，系统
+
+00:13:43,000 --> 00:13:47,000
+is causal and linear and time-invariant and
+是因果线性时不变和
+
+00:13:47,000 --> 00:13:51,000
+in that case for the initial rest condition
+在这种情况下，用于初始静止状态
+
+00:13:51,000 --> 00:13:55,000
+we would then require in this equation above
+那么我们就需要在这个等式以上
+
+00:13:55,000 --> 00:13:59,000
+that this constant be equal to 0
+这个常数等于0
+
+00:13:59,000 --> 00:14:02,000
+and so finally the response
+所以最后的响应
+
+00:14:02,000 --> 00:14:05,000
+to scales step if the system
+地磅秤步骤，如果系统
+
+00:14:05,000 --> 00:14:09,000
+is the correspond to cause a linear time-invariant system
+为对应于导致线性时不变系统
+
+00:14:09,000 --> 00:14:12,000
+is then just this term namely
+然后只是这个词即
+
+00:14:12,000 --> 00:14:15,000
+constant times one minus an exponential
+常数乘以一减指数
+
+00:14:15,000 --> 00:14:18,000
+times step
+次步
+
+00:14:18,000 --> 00:14:22,000
+okay now if the system is a linear time-invariant system
+现在没事了，如果系统是线性时不变系统
+
+00:14:22,000 --> 00:14:25,000
+it can as we know be described through its impulse response
+它可以，因为我们知道可以通过它的脉冲响应描述
+
+00:14:25,000 --> 00:14:29,000
+and as you've worked out previously
+和你以前曾出
+
+00:14:29,000 --> 00:14:32,000
+in the video course manual for
+在视频课程手册
+
+00:14:32,000 --> 00:14:36,000
+a linear time-invariant system the impulse response
+线性时不变系统的脉冲响应
+
+00:14:36,000 --> 00:14:40,000
+is the derivative love the step response adjusted quickly remind you
+是微分爱迅速调整了阶跃响应提醒你
+
+00:14:40,000 --> 00:14:44,000
+love where that result comes from in essence
+爱情里该结果来自于本质
+
+00:14:44,000 --> 00:14:49,000
+we can consider to linear time-invariant systems and Cascade
+我们可以考虑线性时不变系统和级联
+
+00:14:49,000 --> 00:14:53,000
+wanna differentiator the other the system that we're talking about
+想微分器的其他，我们正在谈论的系统
+
+00:14:53,000 --> 00:14:54,000
+described by
+通过描述
+
+00:14:54,000 --> 00:14:58,000
+the differential equation and step in here
+微分方程和步骤，在这里
+
+00:14:58,000 --> 00:15:02,000
+then generated in polls into our system
+然后在投票调查中生成到我们的系统中
+
+00:15:02,000 --> 00:15:06,000
+and out comes the impulse response well just using the fact that
+就出来也只是用事实冲激响应
+
+00:15:06,000 --> 00:15:10,000
+these are both linear time-invariant systems and they can be cascaded in
+这些都是线性时不变系统，他们可以在级联
+
+00:15:10,000 --> 00:15:11,000
+either order
+无论是为了
+
+00:15:11,000 --> 00:15:15,000
+then means that if we have step response
+那么就是说，如果我们有阶跃响应
+
+00:15:15,000 --> 00:15:19,000
+to our system and that goes through differentiator
+我们的系统和经过的区别
+
+00:15:19,000 --> 00:15:24,000
+what must come out again is the impulse response
+什么是必须走出来是脉冲响应
+
+00:15:24,000 --> 00:15:28,000
+so differentiating the step response we get the impulse response
+所以区分阶跃响应我们得到的脉冲响应
+
+00:15:28,000 --> 00:15:32,000
+here again is the step response as we
+这里又是阶跃响应，因为我们
+
+00:15:32,000 --> 00:15:37,000
+just worked it out this time for you next step if we differentiate
+刚做出来这个时候你如果我们区分下一步
+
+00:15:37,000 --> 00:15:40,000
+we have then since the step response
+我们有那么由于阶跃响应
+
+00:15:40,000 --> 00:15:44,000
+is the product of two terms the derivative a product is the sum
+是两个方面的衍生产品，该产品是总和
+
+00:15:44,000 --> 00:15:48,000
+the derivatives and carrying that algebra through
+该衍生工具及附带的代数通过
+
+00:15:48,000 --> 00:15:51,000
+and using the fact that the derivative the step
+和使用该事实衍生物的步骤
+
+00:15:51,000 --> 00:15:55,000
+is an impulse finally we come down
+是一种冲动，我们终于回落
+
+00:15:55,000 --> 00:15:58,000
+to this statement for the impulse response
+本声明的脉冲响应
+
+00:15:58,000 --> 00:16:01,000
+and then recognizing that this is but I'm
+然后认识到这是但我
+
+00:16:01,000 --> 00:16:04,000
+function times and in polls and we know
+函数时间和调查，我们知道
+
+00:16:04,000 --> 00:16:08,000
+that a time function times in polls takes on
+一个时间函数轮询时间发生在
+
+00:16:08,000 --> 00:16:13,000
+the value at the time that the impulse occurs
+在该脉冲发生的时间的值
+
+00:16:13,000 --> 00:16:17,000
+then this term is simply 0
+那么这个词简直是0
+
+00:16:17,000 --> 00:16:20,000
+and the impulse response then
+和脉冲响应，然后
+
+00:16:20,000 --> 00:16:23,000
+finally is an exponential this for
+最后是一个指数本
+
+00:16:23,000 --> 00:16:28,000
+and this is the peking exponential for a positive
+而且这是北京指数为一正
+
+00:16:28,000 --> 00:16:32,000
+it's a growing exponentially for a negative and
+它是一个呈几何级数增长的消极和
+
+00:16:32,000 --> 00:16:36,000
+recall that as we talked about previously
+记得，当我们谈到以前
+
+00:16:36,000 --> 00:16:40,000
+a system is a linear time-invariant system is stable
+一个系统是一个线性时不变系统稳定
+
+00:16:40,000 --> 00:16:44,000
+if its impulse response is absolutely integral
+如果它的冲激响应是绝对不可或缺的
+
+00:16:44,000 --> 00:16:49,000
+for this particular case this impulse response
+对于这个特殊的情况下，该脉冲响应
+
+00:16:49,000 --> 00:16:52,000
+is absolutely integral provided that
+绝对是不可或缺的前提是
+
+00:16:52,000 --> 00:16:55,000
+the exponential factor a
+该指数因子一
+
+00:16:55,000 --> 00:16:58,000
+is greater than 0
+是大于0的
+
+00:16:58,000 --> 00:17:02,000
+okay so what we've seen then is the
+好了，所以我们看到的又是什么
+
+00:17:02,000 --> 00:17:07,000
+impulse response for system described by a linear constant coefficient
+由线性常系数描述的系统冲激响应
+
+00:17:07,000 --> 00:17:08,000
+differential equation
+微分方程
+
+00:17:08,000 --> 00:17:11,000
+where in addition we will impose causality
+这里除了我们将对因果关系
+
+00:17:11,000 --> 00:17:15,000
+when you're ready in time invariance essentially through the initial
+当你准备在时间不变性基本上经历了最初的
+
+00:17:15,000 --> 00:17:16,000
+conditions
+条件
+
+00:17:16,000 --> 00:17:19,000
+love initial rest
+爱最初的休息
+
+00:17:19,000 --> 00:17:23,000
+now pretty much the same kinds of things happen
+现在几乎是同样的事情发生
+
+00:17:23,000 --> 00:17:26,000
+with difference equations as we've gone through
+与差分方程，因为我们通过已经走了
+
+00:17:26,000 --> 00:17:30,000
+with differential equations in particular
+在特定的微分方程
+
+00:17:30,000 --> 00:17:33,000
+again let me remind you love the form love
+让我再提醒你爱的爱的形式
+
+00:17:33,000 --> 00:17:37,000
+and aunt order when your constant coefficient difference equation
+和姑姑订单时，你常系数差分方程
+
+00:17:37,000 --> 00:17:41,000
+its as I indicate here and
+它作为我在此说明，并
+
+00:17:41,000 --> 00:17:47,000
+again a linear combination this time the late versions of the output equal to a
+再次线性组合这时输出的后期版本等于一个
+
+00:17:47,000 --> 00:17:48,000
+linear combination
+线性组合
+
+00:17:48,000 --> 00:17:52,000
+up the late versions love the input once again
+了后期版本热爱输入一次
+
+00:17:52,000 --> 00:17:56,000
+the difference equation is not
+差分方程不
+
+00:17:56,000 --> 00:18:01,000
+a complete specification the system because we can and to the response
+一个完整的规范体系，因为我们可以和响应
+
+00:18:01,000 --> 00:18:04,000
+any homogeneous solution in other words
+换句话说，任何均相溶液
+
+00:18:04,000 --> 00:18:08,000
+any solution that satisfies the homogeneous equation
+满足齐次方程的任何解决方案
+
+00:18:08,000 --> 00:18:12,000
+in the summer those well also satisfy the original
+在夏季的好也满足原
+
+00:18:12,000 --> 00:18:17,000
+difference equation so if we have
+差分方程，所以如果我们有
+
+00:18:17,000 --> 00:18:21,000
+a particular response that satisfies
+一个特定的反应，满足
+
+00:18:21,000 --> 00:18:25,000
+the difference equation then ending to that
+那么差分方程结束到
+
+00:18:25,000 --> 00:18:31,000
+any response there is a solution to the homogeneous equation
+任何回应有一个解决齐次方程
+
+00:18:31,000 --> 00:18:36,000
+will also be a solution to the total equation
+也将是一个溶液的总方程式
+
+00:18:36,000 --> 00:18:41,000
+the homogeneous solution again is of the form
+均相溶液再次的形式为
+
+00:18:41,000 --> 00:18:45,000
+of a linear combination of exponentials here
+指数函数这里的线性组合
+
+00:18:45,000 --> 00:18:49,000
+we have the homogeneous equation as with
+我们有齐次方程与
+
+00:18:49,000 --> 00:18:52,000
+differential equations we can
+微分方程，我们可以
+
+00:18:52,000 --> 00:18:55,000
+guests or impose solutions for
+客人或强加的解决方案
+
+00:18:55,000 --> 00:18:59,000
+eight times an exponential when we substitute this
+八倍的指数，当我们这代
+
+00:18:59,000 --> 00:19:02,000
+into the homogeneous equation we then end up
+入齐次方程，我们再结束
+
+00:19:02,000 --> 00:19:07,000
+with equation that i've indicated here we recognize again
+与我在这里表示式，我们重新认识
+
+00:19:07,000 --> 00:19:11,000
+there a the amplitude
+有一个幅度
+
+00:19:11,000 --> 00:19:15,000
+and seats at the end
+和座椅在年底
+
+00:19:15,000 --> 00:19:18,000
+this exponential factor cancel out
+该指数因子抵消
+
+00:19:18,000 --> 00:19:22,000
+and so this equation is satisfied
+因此该方程是满意
+
+00:19:22,000 --> 00:19:26,000
+for any values love see
+对于任何值热爱看
+
+00:19:26,000 --> 00:19:31,000
+that satisfy this equation and
+满足该方程，并
+
+00:19:31,000 --> 00:19:34,000
+there are and roots C-one through Z and
+有和根的C-1通过Z和
+
+00:19:34,000 --> 00:19:37,000
+and so finally the form for the homogeneous solution
+所以最终的形式为均相溶液
+
+00:19:37,000 --> 00:19:42,000
+is a linear combination love capital and
+是一个线性组合的爱情资本，
+
+00:19:42,000 --> 00:19:46,000
+exponentials capital and is the order the equation
+指数函数首府，也是为了方程式
+
+00:19:46,000 --> 00:19:50,000
+with each of those exponentials the ample to factor is undetermined
+每个这些指数函数的充足到的因素是不确定的
+
+00:19:50,000 --> 00:19:54,000
+and needs to be determined in some way through
+并且需要以某种方式通过确定
+
+00:19:54,000 --> 00:19:57,000
+the imposition love appropriate
+施加适当的爱
+
+00:19:57,000 --> 00:20:02,000
+initial conditions are boundary conditions
+初始条件边界条件
+
+00:20:02,000 --> 00:20:05,000
+so the general form then
+所以一般形式，然后
+
+00:20:05,000 --> 00:20:08,000
+for the solution to the difference equation
+为解决差分方程
+
+00:20:08,000 --> 00:20:11,000
+is
+
+
+00:20:11,000 --> 00:20:14,000
+some with the exponentials plus any particular solution
+一些与指数函数加上任何特定的解决方案
+
+00:20:14,000 --> 00:20:20,000
+its through auxiliary conditions that we determine
+通过它，我们确定的辅助条件
+
+00:20:20,000 --> 00:20:23,000
+these coefficients we have
+这些系数我们
+
+00:20:23,000 --> 00:20:27,000
+and undetermined coefficients and so
+和待定系数等等
+
+00:20:27,000 --> 00:20:31,000
+we require capital and auxiliary conditions
+我们需要资金和辅助条件
+
+00:20:31,000 --> 00:20:35,000
+for example some set values
+例如一些设定值
+
+00:20:35,000 --> 00:20:38,000
+of the output at and this thing instance
+在输出端，这件事实例
+
+00:20:38,000 --> 00:20:41,000
+time
+时间
+
+00:20:41,000 --> 00:20:42,000
+now this
+现在这个
+
+00:20:42,000 --> 00:20:45,000
+was the same as with differential equations in the case a differential
+是一样的，与的情况下微分方程的差分
+
+00:20:45,000 --> 00:20:47,000
+equations we talked about specifying
+我们谈到了指定方程
+
+00:20:47,000 --> 00:20:51,000
+the value of the output and its derivatives and
+输出及其衍生物的价值，
+
+00:20:51,000 --> 00:20:54,000
+there we indicated dead for linearity
+我们有死表示为线性
+
+00:20:54,000 --> 00:20:58,000
+what we required when the arity what we require
+我们什么时候需要什么，我们需要的元数
+
+00:20:58,000 --> 00:21:02,000
+is that the auxiliary conditions 30
+是，辅助条件30
+
+00:21:02,000 --> 00:21:05,000
+and the same thing applies here for the same reason
+而同样的道理也适用于这里出于同样的原因
+
+00:21:05,000 --> 00:21:10,000
+namely if the system is to be linear and the response if there's no input must be
+即，如果系统是为线性和响应，如果没有输入必须是
+
+00:21:10,000 --> 00:21:13,000
+equal to 0
+等于0的
+
+00:21:13,000 --> 00:21:15,000
+in addition what
+除了什么
+
+00:21:15,000 --> 00:21:18,000
+we may want to impose on the system is
+我们可能需要对系统性能是
+
+00:21:18,000 --> 00:21:22,000
+that it be causal and in addition to linear
+这是因果关系而除了线性
+
+00:21:22,000 --> 00:21:25,000
+time-invariant and with that requires again
+不随时间变化，并与同样需要
+
+00:21:25,000 --> 00:21:30,000
+is that it the auxiliary conditions be consistent with
+是它的辅助条件是一致
+
+00:21:30,000 --> 00:21:33,000
+initial rest namely that if
+最初的休息即如果
+
+00:21:33,000 --> 00:21:37,000
+the input is zero prior to some time
+输入是零之前一定时间
+
+00:21:37,000 --> 00:21:42,000
+in the output is zero prior to the same time
+在输出为零之前，同时
+
+00:21:42,000 --> 00:21:45,000
+okay so we've seen a very direct parallel
+好了，我们已经看到了非常直接的并行
+
+00:21:45,000 --> 00:21:48,000
+so far between differential equations
+到目前为止微分方程之间
+
+00:21:48,000 --> 00:21:52,000
+and difference equations
+与差分方程
+
+00:21:52,000 --> 00:21:55,000
+in fact one difference between them dead
+其实它们之间的一个区别死
+
+00:21:55,000 --> 00:21:58,000
+in some sense makes difference equations
+在某种意义上使得差分方程
+
+00:21:58,000 --> 00:22:02,000
+easier to deal with in some situations is dead
+更容易处理在某些情况下是死的
+
+00:22:02,000 --> 00:22:06,000
+in contrast to a differential equation a
+相反的差分方程
+
+00:22:06,000 --> 00:22:09,000
+difference equation if we assume causality
+差分方程，如果我们假设的因果关系
+
+00:22:09,000 --> 00:22:12,000
+in fact is and explicit
+其实是和明确的
+
+00:22:12,000 --> 00:22:15,000
+input-output relationship for the system now let me
+为系统的输入输出关系现在让我
+
+00:22:15,000 --> 00:22:18,000
+show you what I mean
+告诉你我是什么意思
+
+00:22:18,000 --> 00:22:23,000
+let's consider the n-th order difference equation as i've indicated here
+让我们考虑n阶差分方程，因为我已经在这里表示
+
+00:22:23,000 --> 00:22:27,000
+and let's assume that we're imposing causality
+让我们假设我们正在实施的因果关系
+
+00:22:27,000 --> 00:22:30,000
+so there'd the output can only depend
+所以会输出只能靠
+
+00:22:30,000 --> 00:22:35,000
+on prior values at the input and therefore on fire values at the output
+对在输入前值，因此起火值在输出
+
+00:22:35,000 --> 00:22:39,000
+well we can simply rearrange this equation
+好，我们可以简单地重新排列这个方程
+
+00:22:39,000 --> 00:22:43,000
+solving for Y have an the leading term with cable 0
+解y有带有线0领先的任期
+
+00:22:43,000 --> 00:22:48,000
+taking all the other turns over to the right side of the equation
+考虑到所有的其他匝转移到右侧的方程
+
+00:22:48,000 --> 00:22:52,000
+and we then have a workers if equation
+然后我们有一个工人，如果方程
+
+00:22:52,000 --> 00:22:58,000
+namely that an equation expresses the output interns
+即一个方程表示的输出实习生
+
+00:22:58,000 --> 00:23:01,000
+love prior values if the input which is this term
+爱前值如果输入的是这个词
+
+00:23:01,000 --> 00:23:05,000
+and prior values at the output
+并且在输出之前的值
+
+00:23:05,000 --> 00:23:09,000
+and so if in fact we have this equation running
+所以如果事实上我们有这个公式运行
+
+00:23:09,000 --> 00:23:12,000
+then once it started we know how to compute
+那么一旦它开始，我们知道如何计算
+
+00:23:12,000 --> 00:23:16,000
+the output for the next time
+接下来的时间，输出
+
+00:23:16,000 --> 00:23:17,000
+well
+好
+
+00:23:17,000 --> 00:23:21,000
+how do we get started the way we get it started of course
+我们如何开始我们得到它开始课程的方式
+
+00:23:21,000 --> 00:23:24,000
+is through the appropriate said love
+通过适当的说爱情
+
+00:23:24,000 --> 00:23:28,000
+initial conditions are boundary conditions and if for example
+初始条件为边界条件，如果例如
+
+00:23:28,000 --> 00:23:32,000
+we assume initial rest corresponding to a causal when you're time-invariant
+我们假设初始静止对应于因果，当你的时间不变
+
+00:23:32,000 --> 00:23:33,000
+system
+系统
+
+00:23:33,000 --> 00:23:36,000
+then if the input is zero up until sometime
+然后，如果输入是零，直至某时
+
+00:23:36,000 --> 00:23:40,000
+the output must be zero up until that time and Matt in essence
+输出必须为零，直到那个时候和马特在本质
+
+00:23:40,000 --> 00:23:44,000
+helps us get the equation started well let's look at this
+帮助我们得到方程开局不错，让我们看看这个
+
+00:23:44,000 --> 00:23:48,000
+specifically in the context love a
+特别是在上下文中的爱情
+
+00:23:48,000 --> 00:23:51,000
+first-order difference equation so let's take
+一阶差分方程所以让我们
+
+00:23:51,000 --> 00:23:54,000
+a first-order difference equation
+一阶差分方程
+
+00:23:54,000 --> 00:23:57,000
+as i've indicated here
+因为我已经在这里表示
+
+00:23:57,000 --> 00:24:01,000
+and so we have an equation that tells us that why I have and minus eight times
+所以我们有一个公式，它告诉我们，为什么我和减号八倍
+
+00:24:01,000 --> 00:24:03,000
+wider than -1
+比-1更宽
+
+00:24:03,000 --> 00:24:06,000
+is equal to exit
+等于退出
+
+00:24:06,000 --> 00:24:09,000
+now if we want this to correspond to
+现在，如果我们希望这对应
+
+00:24:09,000 --> 00:24:13,000
+a causal linear time-invariant system we
+因果线性时不变系统，我们
+
+00:24:13,000 --> 00:24:17,000
+oppose initial impose initial rest on it we can
+最初的反对强加给它，我们可以初步休息
+
+00:24:17,000 --> 00:24:21,000
+rewrite the first-order difference equation by taking
+通过采取重写一阶差分方程
+
+00:24:21,000 --> 00:24:24,000
+the term involving y ven -1
+涉及ŸVEN -1术语
+
+00:24:24,000 --> 00:24:28,000
+over to the right hand side of the equation
+以上等式的右边
+
+00:24:28,000 --> 00:24:32,000
+right now this gives us a workers if equation
+现在这给了我们一个工人，如果方程
+
+00:24:32,000 --> 00:24:38,000
+that expresses the output interns the input and past values at the output
+表示可输出实习生的输入值和过去值在输出
+
+00:24:38,000 --> 00:24:42,000
+and since we've impose causality
+既然我们已经强加因果关系
+
+00:24:42,000 --> 00:24:46,000
+and if we're talking about a linear time-invariant system
+如果我们谈论的是一个线性时不变系统
+
+00:24:46,000 --> 00:24:50,000
+we can now inquire as to what the impulse responses and we know of course
+我们现在可以问，什么的脉冲响应，我们当然知道
+
+00:24:50,000 --> 00:24:52,000
+that the impulse response
+该脉冲响应
+
+00:24:52,000 --> 00:24:56,000
+charles is everything that we need to know about the system
+查尔斯是我们需要了解的一切制度
+
+00:24:56,000 --> 00:25:01,000
+okay so let's shoes and input which is
+好吧让我们的鞋子和输入是
+
+00:25:01,000 --> 00:25:04,000
+an impulse so the impulse response
+一个脉冲，因此脉冲响应
+
+00:25:04,000 --> 00:25:08,000
+is Beltre van corresponding
+Beltre是对应的事
+
+00:25:08,000 --> 00:25:11,000
+to the exit and appear plus eighty Delta
+到出口，并出现加80三角洲
+
+00:25:11,000 --> 00:25:15,000
+love this should be a chip N -1
+爱这应该是一个芯片N-1
+
+00:25:15,000 --> 00:25:20,000
+and let me just correct that this is a chip N -1
+并让我正确的，这是一个芯片N-1
+
+00:25:20,000 --> 00:25:24,000
+so we have the impulse response as Delta van
+所以我们有脉冲响应三角洲面包车
+
+00:25:24,000 --> 00:25:28,000
+was eight times a Japan -1
+是八倍日-1
+
+00:25:28,000 --> 00:25:31,000
+now from initial rest we know
+现在，从最初的其余部分，我们知道
+
+00:25:31,000 --> 00:25:36,000
+bad since the input namely an impulse is 0 for and less than zero
+坏，因为输入即一个脉冲为0和小于零
+
+00:25:36,000 --> 00:25:40,000
+the impulse response is likewise 0
+的脉冲响应是同样0
+
+00:25:40,000 --> 00:25:43,000
+for and less 0 and now
+为少0，现在
+
+00:25:43,000 --> 00:25:47,000
+let's work out what 80 its well
+让我们制定出什么80的好
+
+00:25:47,000 --> 00:25:50,000
+80 with an equal 0 is
+80与平等是0
+
+00:25:50,000 --> 00:25:54,000
+delta up zero plus eight times
+三角洲高达零加八倍
+
+00:25:54,000 --> 00:25:57,000
+a chip N -1 HRN minus 10
+芯片N-1 HRN零下10
+
+00:25:57,000 --> 00:26:04,000
+and so h0 is equal to 1
+等h0为等于1
+
+00:26:05,000 --> 00:26:08,000
+okay now that we have a chance 0 we can figure at H
+现在没事了，我们有机会0我们可以计算为H
+
+00:26:08,000 --> 00:26:11,000
+one by running this recursive equations
+1通过运行这个递推方程
+
+00:26:11,000 --> 00:26:15,000
+so 8 you've won is
+所以8你赢的是
+
+00:26:15,000 --> 00:26:18,000
+Delta love one which is zero
+三角洲爱一个是零
+
+00:26:18,000 --> 00:26:22,000
+plus eight times h0 which we just figured out as one
+加上八次H0，我们只是想出了为一体
+
+00:26:22,000 --> 00:26:27,000
+so HR one is equal to a and if we carry this through
+所以HR 1等于一个，如果我们进行这个过
+
+00:26:27,000 --> 00:26:32,000
+will have a chip to equal to a squared and
+将有一个芯片，等于一个平方和
+
+00:26:32,000 --> 00:26:36,000
+this will continue on and in fact we can recognize
+这将继续，而事实上，我们可以识别
+
+00:26:36,000 --> 00:26:40,000
+by looking at this and how we would expect these terms to build
+通过观察这一点，我们如何期望这些条款来构建
+
+00:26:40,000 --> 00:26:44,000
+we would see that the impulse response a Japan
+我们会看到，脉冲响应日本
+
+00:26:44,000 --> 00:26:48,000
+in fact -ism form a to the end times
+事实上主义形式的结束时间
+
+00:26:48,000 --> 00:26:50,000
+you have an
+你有一个
+
+00:26:50,000 --> 00:26:54,000
+and we also can recognize then dead
+我们也可以识别，然后死了
+
+00:26:54,000 --> 00:26:58,000
+this corresponds to stable system
+这相当于稳定的系统
+
+00:26:58,000 --> 00:27:01,000
+if and only if the impulse response
+当且仅当脉冲响应
+
+00:27:01,000 --> 00:27:06,000
+which is what we just figured out if and only if the impulse response
+这就是我们只是想出了当且仅当脉冲响应
+
+00:27:06,000 --> 00:27:10,000
+is absolutely so noble and what that will require
+绝对是那么高贵，什么是需要
+
+00:27:10,000 --> 00:27:17,000
+is that the magnitude a the less
+是一个数量级的减
+
+00:27:17,000 --> 00:27:21,000
+okay now we impose causality linear ready in time invariance
+现在没事了，我们强加因果线性准备时间不变性
+
+00:27:21,000 --> 00:27:25,000
+and generated a solution recur simply
+并产生一个解决方案，简单地重演
+
+00:27:25,000 --> 00:27:29,000
+and now of course if we want to generate the more general
+现在当然如果我们要生成更一般的
+
+00:27:29,000 --> 00:27:32,000
+center solutions to this difference equation
+中心的解决方案，这个差分方程
+
+00:27:32,000 --> 00:27:36,000
+we can't do that by adding all of the
+我们不能这样做，通过将所有的
+
+00:27:36,000 --> 00:27:40,000
+homogeneous solutions namely all the solutions to satisfy the homogeneous
+齐次解，即所有的解决方案，以满足均匀
+
+00:27:40,000 --> 00:27:43,000
+equation so
+所以方程
+
+00:27:43,000 --> 00:27:47,000
+here we have the causal linear time-invariant
+在这里我们有因果线性时不变
+
+00:27:47,000 --> 00:27:50,000
+impulse response in fact
+事实上冲激响应
+
+00:27:50,000 --> 00:27:56,000
+with an impulse input all of the possible solutions
+带有脉冲输入的所有可能的解决方案
+
+00:27:56,000 --> 00:27:59,000
+are that impulse response plus
+是脉冲响应加
+
+00:27:59,000 --> 00:28:05,000
+the homogeneous solutions the homogeneous solution is the solution
+在均相溶液中的均相溶液是溶液
+
+00:28:05,000 --> 00:28:08,000
+that satisfies the homogeneous equation
+满足齐次方程
+
+00:28:08,000 --> 00:28:11,000
+that will in general
+在一般的意志
+
+00:28:11,000 --> 00:28:14,000
+believe the form an amplitude factor
+相信形式的振幅因子
+
+00:28:14,000 --> 00:28:18,000
+times an exponential factor and
+次指数因子，
+
+00:28:18,000 --> 00:28:21,000
+if we substitute this into this equation
+如果我们这代入这个方程
+
+00:28:21,000 --> 00:28:24,000
+then we see that the homogeneous
+那么我们看到，均匀
+
+00:28:24,000 --> 00:28:27,000
+equation is satisfied for any values have a
+等式成立的任何值有
+
+00:28:27,000 --> 00:28:31,000
+in any values see that satisfy
+在任何值看出，满足
+
+00:28:31,000 --> 00:28:36,000
+this equation again as we did with differential equations
+这个公式再次为我们与微分方程做
+
+00:28:36,000 --> 00:28:43,000
+the factor Amy cancels out and also in fact I can cancel out is either the N
+因素艾米取消了，也其实我可以取消或者是N个
+
+00:28:43,000 --> 00:28:47,000
+there and seat to the end here
+那里的座位到这里结束
+
+00:28:47,000 --> 00:28:51,000
+and so what we're left with is a statement that tells us
+所以我们留下了什么是一个声明，告诉我们
+
+00:28:51,000 --> 00:28:54,000
+then dead the homogeneous
+然后死齐
+
+00:28:54,000 --> 00:28:58,000
+solution is over for AC to the end
+解决方案是通过在AC到端
+
+00:28:58,000 --> 00:29:02,000
+for any ban you capital A and any value
+对于任何禁止你的资本A和任意值
+
+00:29:02,000 --> 00:29:05,000
+see it satisfies this equation and
+看到它满足这个方程，
+
+00:29:05,000 --> 00:29:08,000
+that values the in particular is the
+珍视的，尤其是
+
+00:29:08,000 --> 00:29:12,000
+people today so the homogeneous solution then
+现代人这样的均相溶液，然后
+
+00:29:12,000 --> 00:29:16,000
+is any exponential this form with any amplitude factor
+任何指数这种形式与任何幅度的因素
+
+00:29:16,000 --> 00:29:20,000
+and so the family of solutions with an impulse
+等解决方案与冲动的家庭
+
+00:29:20,000 --> 00:29:24,000
+input is the solution
+输入是解决
+
+00:29:24,000 --> 00:29:28,000
+corresponding to the system being cause a linear and time-invariant
+对应于该系统是造成线性和时间不变
+
+00:29:28,000 --> 00:29:32,000
+plus the homogeneous sir
+再加上齐先生
+
+00:29:32,000 --> 00:29:33,000
+if
+
+
+00:29:33,000 --> 00:29:37,000
+we impose causality Lenny a ready in time invariance
+我们强加因果关系莱尼一个现成的时间不变性
+
+00:29:37,000 --> 00:29:40,000
+on the system then of course that additional
+在系统上，然后当然该附加
+
+00:29:40,000 --> 00:29:44,000
+exponential factor will be 0 in other words capital A
+指数因素将是0，换句话说大写A
+
+00:29:44,000 --> 00:29:48,000
+is 0
+0
+
+00:29:48,000 --> 00:29:53,000
+okay now in we seen the
+还好现在我们看到的
+
+00:29:53,000 --> 00:29:56,000
+differential equations and difference equations interns
+微分方程和差分方程实习生
+
+00:29:56,000 --> 00:29:57,000
+love
+爱
+
+00:29:57,000 --> 00:30:01,000
+the fact there there are families have solutions
+其实有有家庭有解决方案
+
+00:30:01,000 --> 00:30:05,000
+and in order to get causality Lenny a ready in time
+而为了得到因果关系莱尼一个现成的时间
+
+00:30:05,000 --> 00:30:09,000
+variance requires imposing a particular set initial conditions namely
+方差需要施加一组特定的初始条件，即
+
+00:30:09,000 --> 00:30:12,000
+imposing initial rest on the system
+在系统上施加初始其余
+
+00:30:12,000 --> 00:30:17,000
+let's now look at the difference equation
+现在让我们看看差分方程
+
+00:30:17,000 --> 00:30:23,000
+and then later the differential equation interpreted in block diagrams
+再后来在框图差分方程解释
+
+00:30:23,000 --> 00:30:26,000
+now p the difference equation at
+现在P时的差分方程
+
+00:30:26,000 --> 00:30:30,000
+I just simply repeated here is why I have an
+我只是简单地重复在这里，所以我有一个
+
+00:30:30,000 --> 00:30:33,000
+is accident was a white van -1
+是事故是一辆白色面包车-1
+
+00:30:33,000 --> 00:30:36,000
+where I've taken that the late term
+在那里我已经采取的任期后期
+
+00:30:36,000 --> 00:30:40,000
+over to the right hand side of the equation so in effect
+以上等式的右边侧，从而有效
+
+00:30:40,000 --> 00:30:44,000
+what on imposing on this system is causality
+在实施此系统上有什么因果关系
+
+00:30:44,000 --> 00:30:47,000
+I'm assuming that if I know the past history
+我假设，如果我知道过去的历史
+
+00:30:47,000 --> 00:30:51,000
+the input and the output I can determine
+输入和输出能确定
+
+00:30:51,000 --> 00:30:53,000
+the next value the out
+下一个值的列
+
+00:30:53,000 --> 00:30:57,000
+well we can in fact draw a block diagram
+好，我们其实可以画一个框图
+
+00:30:57,000 --> 00:31:01,000
+represents that equation the equation says
+表示方程的方程表示
+
+00:31:01,000 --> 00:31:04,000
+we take exit and for any given bad you
+我们采取退出和任何给定的坏你
+
+00:31:04,000 --> 00:31:09,000
+a van say n0 whatever bad you were computing the output were
+一辆面包车说N0什么不好你计算输出被
+
+00:31:09,000 --> 00:31:12,000
+we take the input at that time
+我们把输入当时
+
+00:31:12,000 --> 00:31:16,000
+and and to it the factor a
+和与它的一个因素
+
+00:31:16,000 --> 00:31:22,000
+times the output value that we calculated last time so
+倍，我们计算出最后一次的输出值，以便
+
+00:31:22,000 --> 00:31:26,000
+if we have excessive and which is our input
+如果我们有过多的，哪些是我们的输入
+
+00:31:26,000 --> 00:31:29,000
+and if we have why I have and which is our output
+如果我们有，为什么我已经和这是我们的输出
+
+00:31:29,000 --> 00:31:33,000
+we in fact can't get why I have an
+我们其实不知道为什么我有一个
+
+00:31:33,000 --> 00:31:37,000
+by taking the last value why event
+通过采取最后的值为什么事件
+
+00:31:37,000 --> 00:31:41,000
+indicated here by putting why I have an
+这里表示通过把为什么我有一个
+
+00:31:41,000 --> 00:31:45,000
+threw it away multiplying Matt
+把它扔掉乘以马特
+
+00:31:45,000 --> 00:31:49,000
+by the factor
+由因子
+
+00:31:49,000 --> 00:31:51,000
+a
+
+
+00:31:51,000 --> 00:31:56,000
+and then Anning that result
+然后安宁市的结果
+
+00:31:56,000 --> 00:31:57,000
+to
+
+
+00:31:57,000 --> 00:31:59,000
+the input
+输入
+
+00:31:59,000 --> 00:32:03,000
+and the result the doing that is
+和结果的这样做是
+
+00:32:03,000 --> 00:32:05,000
+why event
+为什么事件
+
+00:32:05,000 --> 00:32:08,000
+so the way this block diagram
+这样的方式，这框图
+
+00:32:08,000 --> 00:32:13,000
+might be interpreted for example as an algorithm is this a
+可能被解释为示例作为一个算法是这样一
+
+00:32:13,000 --> 00:32:17,000
+dead we take exit Van add to it
+死者身上汲取凡出口给它添加
+
+00:32:17,000 --> 00:32:22,000
+eight times the previous value the output that some gives us
+8次以前的值的输出，一些给我们
+
+00:32:22,000 --> 00:32:26,000
+the current value of the output which we then put out of the system
+我们随后推出了系统的输出电流值
+
+00:32:26,000 --> 00:32:30,000
+and also put into a delay element or
+并且也放入一个延迟元件或
+
+00:32:30,000 --> 00:32:35,000
+basically it was stored register to use on the next generation a recursion
+基本上它是存储寄存器对下一代使用递归
+
+00:32:35,000 --> 00:32:40,000
+now how do we get this started well we know that the difference equation
+现在我们怎么得到这个开局不错，我们知道，差分方程
+
+00:32:40,000 --> 00:32:41,000
+requires initial conditions
+需要初始条件
+
+00:32:41,000 --> 00:32:44,000
+and in fact the initial conditions
+而事实上初始条件
+
+00:32:44,000 --> 00:32:48,000
+correspond to what we store
+对应于我们存储
+
+00:32:48,000 --> 00:32:52,000
+in that the late register when this block diagram
+在后期的寄存器当这个框图
+
+00:32:52,000 --> 00:32:55,000
+equation initially starts up
+方程最初启动
+
+00:32:55,000 --> 00:32:58,000
+okay now let's look at
+还好现在让我们来看看
+
+00:32:58,000 --> 00:33:02,000
+this for the case %uh difference equations
+本作的情况下，％呃差分方程
+
+00:33:02,000 --> 00:33:06,000
+more generally
+更普遍
+
+00:33:06,000 --> 00:33:13,000
+so what we said is dead we can calculate the output by
+所以我们说是死的，我们可以计算出输出
+
+00:33:13,000 --> 00:33:16,000
+having previous values that the input
+具有先前值的输入
+
+00:33:16,000 --> 00:33:20,000
+previous values at the output and forming
+在输出之前的值，并形成
+
+00:33:20,000 --> 00:33:24,000
+the appropriate linear combination so
+适当的线性组合使
+
+00:33:24,000 --> 00:33:27,000
+let's just build up the more general block diagram
+让我们只建立了更一般的框图
+
+00:33:27,000 --> 00:33:31,000
+that would correspond to this
+这将对应于这
+
+00:33:31,000 --> 00:33:35,000
+and what it says is that we want to have a mechanism
+和它说的是，我们希望有一个机制
+
+00:33:35,000 --> 00:33:41,000
+restoring past values the input in a mechanism for story past values at the
+恢复过去的值输入中的一个机制，故事过去的值
+
+00:33:41,000 --> 00:33:41,000
+output
+产量
+
+00:33:41,000 --> 00:33:45,000
+and i've indicated that on this figure
+我已经表明，在这个图
+
+00:33:45,000 --> 00:33:48,000
+so far by a chain love
+到目前为止由一个链的爱
+
+00:33:48,000 --> 00:33:52,000
+the layout its indicating
+其指示布局
+
+00:33:52,000 --> 00:33:55,000
+that whatever what
+，无论什么
+
+00:33:55,000 --> 00:33:58,000
+the output each delay is the input
+每个延迟是输入输出
+
+00:33:58,000 --> 00:34:02,000
+delayed by one time it's
+延迟一个时​​间很
+
+00:34:02,000 --> 00:34:06,000
+or or interval and so
+或或间隔等
+
+00:34:06,000 --> 00:34:10,000
+what we see down this chain of the ladies are the late replications
+我们看到沿着这条链中的女士们什么是已逝的复制
+
+00:34:10,000 --> 00:34:14,000
+love the input and what we see
+爱的输入和我们所看到的
+
+00:34:14,000 --> 00:34:18,000
+on the other chain is delayed
+在另一链被延迟
+
+00:34:18,000 --> 00:34:22,000
+replications love the output
+复制爱的输出
+
+00:34:22,000 --> 00:34:26,000
+now the difference equation says that we want to take these
+现在的差分方程说，我们要采取这些
+
+00:34:26,000 --> 00:34:31,000
+and multiply them by the appropriate coefficients
+并通过适当的系数相乘
+
+00:34:31,000 --> 00:34:34,000
+the coefficients in the difference equation and so we can do that
+在差分方程，所以我们能做到的系数是
+
+00:34:34,000 --> 00:34:38,000
+as i've indicated here so
+因为我已经在这里表示这样
+
+00:34:38,000 --> 00:34:42,000
+now we have these delay elements each multiplied
+现在我们有了这些延迟单元分别乘以
+
+00:34:42,000 --> 00:34:46,000
+by the appropriate coefficients on the input and by
+通过对输入的相应系数与
+
+00:34:46,000 --> 00:34:51,000
+appropriate coefficients on the output those are then
+这些是则输出相应的系数
+
+00:34:51,000 --> 00:34:54,000
+songs together and
+歌曲一起，
+
+00:34:54,000 --> 00:34:59,000
+so we now what's on these and what's on these
+所以我们现在有什么关于这些的，什么是对这些
+
+00:34:59,000 --> 00:35:02,000
+after we've some these we want to add
+之后我们已经有的这些，我们要添加
+
+00:35:02,000 --> 00:35:06,000
+those together and there's a factor 1 over 80 that comes in
+那些在一起，还有，在一个因子1 80
+
+00:35:06,000 --> 00:35:10,000
+and that and generates are out
+并且生成都出来了
+
+00:35:10,000 --> 00:35:13,000
+and so this in fact and
+所以这实际上与
+
+00:35:13,000 --> 00:35:19,000
+represents a block diagram which is a general block diagram for implementing
+表示一个方框图，它是用于实现总体方框图
+
+00:35:19,000 --> 00:35:23,000
+war representing near constant coefficient difference
+战争占近常系数差异
+
+00:35:23,000 --> 00:35:25,000
+wage
+工资
+
+00:35:25,000 --> 00:35:29,000
+now if you think about what it means in terms of what's a computer algorithm or
+现在，如果你想想这是什么意思在一个什么样的计算机算法或条款
+
+00:35:29,000 --> 00:35:30,000
+a piece of hardware
+一个硬件
+
+00:35:30,000 --> 00:35:34,000
+in fact this block diagram is a recipe or algorithm for doing the
+其实这个框图是一个配方或算法做
+
+00:35:34,000 --> 00:35:35,000
+implementation
+履行
+
+00:35:35,000 --> 00:35:39,000
+by it's important to
+由是很重要的
+
+00:35:39,000 --> 00:35:43,000
+recognize even at this point dad it's only one
+即使在这一点上爸爸承认它只有一个
+
+00:35:43,000 --> 00:35:47,000
+many possible algorithms or implementations for this difference
+许多可能的算法或实现这种差异
+
+00:35:47,000 --> 00:35:49,000
+wage
+工资
+
+00:35:49,000 --> 00:35:51,000
+just for example
+只是举例
+
+00:35:51,000 --> 00:35:57,000
+I can consider that equation
+我可以认为方程
+
+00:35:57,000 --> 00:35:59,000
+core that block diagram
+核心的框图
+
+00:35:59,000 --> 00:36:04,000
+and here I've redrawn at so
+在这里我已经在重新绘制等等
+
+00:36:04,000 --> 00:36:08,000
+here once again I have the same block diagram that we just saw
+在这里我要再次说，我们只是看到了同样的框图
+
+00:36:08,000 --> 00:36:12,000
+and I can recognize for example
+我可以承认，例如
+
+00:36:12,000 --> 00:36:16,000
+that this in essence corresponds to
+这在本质上对应于
+
+00:36:16,000 --> 00:36:19,000
+to linear time-invariant systems
+线性时不变系统
+
+00:36:19,000 --> 00:36:22,000
+in cascade
+在级联
+
+00:36:22,000 --> 00:36:25,000
+now that assumes of course that my
+现在假设，当然，我的
+
+00:36:25,000 --> 00:36:29,000
+initial conditions are such dad I that the system is in fact
+初始条件是这样的爸爸我，该系统是在实
+
+00:36:29,000 --> 00:36:34,000
+when you're and that in turn requires that we're assuming initial rest namely
+当你和这反过来要求我们假定初始即休息
+
+00:36:34,000 --> 00:36:36,000
+before the input does anything
+输入做任何事情
+
+00:36:36,000 --> 00:36:40,000
+other than 0 there are just zero value stored in the registers
+除0以外的有存储在寄存器中只是零值
+
+00:36:40,000 --> 00:36:45,000
+but assuming that it corresponds to a linear time-invariant system
+但假设它对应于一个线性时不变系统
+
+00:36:45,000 --> 00:36:50,000
+this is a cascade to linear time-invariant systems
+这是一个级联线性时不变系统
+
+00:36:50,000 --> 00:36:53,000
+we know that two linear time-invariant systems can be cascaded
+我们知道，两个线性时不变系统可以级联
+
+00:36:53,000 --> 00:36:57,000
+in either order so in particular I can consider
+无论是为了使我特别可以考虑
+
+00:36:57,000 --> 00:37:01,000
+breaking this cascade here and moving this block
+在这里打破这种级联和移动这个块
+
+00:37:01,000 --> 00:37:04,000
+over to the other side and so let's just
+转移到另一边，所以我们只
+
+00:37:04,000 --> 00:37:08,000
+do that
+这样做
+
+00:37:08,000 --> 00:37:11,000
+and when I do
+当我做
+
+00:37:11,000 --> 00:37:13,000
+I then have
+然后，我有
+
+00:37:13,000 --> 00:37:16,000
+this combination systems
+这个组合系统
+
+00:37:16,000 --> 00:37:20,000
+and of course you can ask what advantage there is to do in at
+当然你也可以知道哪些优势有做在中
+
+00:37:20,000 --> 00:37:23,000
+and the advantage arises because it the fact
+和优势的产生是因为它的事实
+
+00:37:23,000 --> 00:37:27,000
+there'd in this form
+有这种形式倒是
+
+00:37:27,000 --> 00:37:31,000
+exactly what is stored in these delays
+什么被存储在这些延迟
+
+00:37:31,000 --> 00:37:34,000
+is also stored in the still air registers
+也被存储在静止的空气中的寄存器
+
+00:37:34,000 --> 00:37:38,000
+in other words it's this intermediate variable
+换句话说，它的这个中间变量
+
+00:37:38,000 --> 00:37:42,000
+whatever it is down this chain of delays and down this chain of the ladies
+不管它是沿着这条链中的延迟和沿着这条链上的淑女
+
+00:37:42,000 --> 00:37:46,000
+and so in fact I can collapse those delays
+所以其实我可以折叠这些延迟
+
+00:37:46,000 --> 00:37:49,000
+into a single chain of delays and
+成一个单一的延迟链和
+
+00:37:49,000 --> 00:37:54,000
+the network that I'm left with is the network that I indicate
+那我留下了网络是我指示网络
+
+00:37:54,000 --> 00:37:59,000
+I missed you graph where what I've done is to simply collapse that
+我错过了你图什么地方我所做的就是简单地崩溃了
+
+00:37:59,000 --> 00:38:02,000
+double chain of the ladies into a single chain
+女士们的双链成单链
+
+00:38:02,000 --> 00:38:04,000
+the waves
+浪
+
+00:38:04,000 --> 00:38:08,000
+now want to ask well what's the advantage to doing that and the
+现在要问还有什么优势，这样做和
+
+00:38:08,000 --> 00:38:09,000
+advantage
+优点
+
+00:38:09,000 --> 00:38:14,000
+one advantage simply stated is that when you think in terms of an implementation
+一个优势简单地说就是当你想在执行方面
+
+00:38:14,000 --> 00:38:15,000
+of a difference equation
+一个差分方程
+
+00:38:15,000 --> 00:38:18,000
+the lady corresponds to
+淑女对应
+
+00:38:18,000 --> 00:38:22,000
+storage register a memory location and by this
+存储寄存器的存储位置，并通过这
+
+00:38:22,000 --> 00:38:26,000
+by simply using the fact that we can interchange the order in which linear
+通过简单地使用这一事实，我们可以交换顺序的线性关系
+
+00:38:26,000 --> 00:38:28,000
+time-invariant systems are cascaded
+时不变系统级联
+
+00:38:28,000 --> 00:38:33,000
+we can reduce the amount of memory by a factor to
+我们可以通过一个因子减少内存量，以
+
+00:38:33,000 --> 00:38:35,000
+okay now
+现在没事了
+
+00:38:35,000 --> 00:38:40,000
+and essentially similar procedure can also be used for
+和基本上相似的过程也可以被用于
+
+00:38:40,000 --> 00:38:44,000
+differential equations in terms of implementation
+在执行方面微分方程
+
+00:38:44,000 --> 00:38:48,000
+using block diagrams for the interpretation implementations
+用框图进行了解读的实现
+
+00:38:48,000 --> 00:38:52,000
+using like diagrams and let me first do that
+使用像图，让我第一次做
+
+00:38:52,000 --> 00:38:55,000
+rather than in general let me first do it in the in
+而不是一般的让我先做到这一点在中
+
+00:38:55,000 --> 00:39:00,000
+the context love a specific example
+上下文爱一个具体的例子
+
+00:39:00,000 --> 00:39:02,000
+so
+
+
+00:39:02,000 --> 00:39:08,000
+let's consider a when your constant coefficient differential equation as
+让我们考虑当你常系数微分方程为
+
+00:39:08,000 --> 00:39:09,000
+i've indicated here
+我已经在这里表示
+
+00:39:09,000 --> 00:39:13,000
+and I have terms on the left side in terms on the right side
+我有条款左侧来讲右侧
+
+00:39:13,000 --> 00:39:18,000
+and with the differential equation
+和与差分方程
+
+00:39:18,000 --> 00:39:21,000
+let's consider taking overturns
+让我们来考虑侧翻
+
+00:39:21,000 --> 00:39:24,000
+over to the right side of the equation except
+切换到右侧的方程的除外
+
+00:39:24,000 --> 00:39:29,000
+for the highest the residue in the output next we
+在输出下一个我们的残渣最高
+
+00:39:29,000 --> 00:39:32,000
+integrate both sides of the equation are so that
+结合等式的两侧，使
+
+00:39:32,000 --> 00:39:36,000
+when we're done we end up with the on the left side of the equation
+当我们完成我们最终与在等式的左边
+
+00:39:36,000 --> 00:39:41,000
+with y ft on the right side of the equation with the appropriate number
+与右侧用适当数目的方程y的尺
+
+00:39:41,000 --> 00:39:44,000
+%uh integrations and so the InterPro equation
+％呃集成等的InterPro的方程
+
+00:39:44,000 --> 00:39:49,000
+that will get is for this example y ft the output is except the
+将得到的是这个例子Ÿ英尺的输出是除
+
+00:39:49,000 --> 00:39:53,000
+plus be the scale factor times the integral
+再加上是规模的积分系数乘以
+
+00:39:53,000 --> 00:39:57,000
+the input and -8 at scale factor times the integral
+积分在规模的输入和-8因子倍
+
+00:39:57,000 --> 00:40:00,000
+the output so to
+输出，以便向
+
+00:40:00,000 --> 00:40:04,000
+form the output in a block diagram turns
+形成以框图匝数的输出
+
+00:40:04,000 --> 00:40:07,000
+we form a linear combination of the input
+我们形成输入的线性组合
+
+00:40:07,000 --> 00:40:11,000
+scaled in to grow the input and a scale
+缩放生长的输入和一个标度
+
+00:40:11,000 --> 00:40:14,000
+integral love the output all of that and it together
+积分爱情输出所有这一切和它在一起
+
+00:40:14,000 --> 00:40:17,000
+so we need in addition to
+所以我们需要在除了
+
+00:40:17,000 --> 00:40:21,000
+the input we need the integral
+我们需要的积分输入
+
+00:40:21,000 --> 00:40:24,000
+love the input and so this box indicates an integrator
+爱的输入，所以此框表示一个积分
+
+00:40:24,000 --> 00:40:28,000
+in addition to the output we need
+除了我们所需要的输出
+
+00:40:28,000 --> 00:40:31,000
+the integral the output and now
+积分的输出与现在
+
+00:40:31,000 --> 00:40:34,000
+to for why ft we
+以为什么英尺我们
+
+00:40:34,000 --> 00:40:38,000
+multiply the integrated in play
+乘集成在玩
+
+00:40:38,000 --> 00:40:42,000
+by the scale factor B and
+由比例因子B和
+
+00:40:42,000 --> 00:40:46,000
+and back to exit C
+再回到C出口
+
+00:40:46,000 --> 00:40:51,000
+and retake the integrated output multiplied by Minas de
+并夺回集成输出乘以米纳斯日
+
+00:40:51,000 --> 00:40:55,000
+and and to that
+并与该
+
+00:40:55,000 --> 00:40:58,000
+the result are the previous addition
+其结果是除了以前
+
+00:40:58,000 --> 00:41:02,000
+and according to the integral equation then that forms
+并根据该积分方程则该表格
+
+00:41:02,000 --> 00:41:05,000
+the output
+输出
+
+00:41:05,000 --> 00:41:08,000
+so just as we did with the difference equation
+所以就像我们与差分方程做
+
+00:41:08,000 --> 00:41:11,000
+we've converted the differential equation to
+我们已经转换的差分方程
+
+00:41:11,000 --> 00:41:16,000
+an integral equation and we have a block diagram for very similar
+一个积分方程，我们有非常相似的框图
+
+00:41:16,000 --> 00:41:20,000
+to what we had in the case the difference equation now the initial
+我们曾经拥有的情况下，差分方程现在初步
+
+00:41:20,000 --> 00:41:22,000
+conditions of course
+当然条件
+
+00:41:22,000 --> 00:41:25,000
+are tied up and again how these integrators
+绑起来，再怎么这些集成商
+
+00:41:25,000 --> 00:41:30,000
+are initialized assuming that we impose initial rest on the system
+初始化假设我们在系统上施加初始休息
+
+00:41:30,000 --> 00:41:35,000
+weekend thinkers the overall system is a linear time-invariant system
+周末思想家整个系统是一个线性时不变系统
+
+00:41:35,000 --> 00:41:39,000
+and it's a cascade one linear time-invariant system with the second
+这是一个级联一个线性时不变系统与第二
+
+00:41:39,000 --> 00:41:43,000
+so we can in fact
+所以我们其实是可以
+
+00:41:43,000 --> 00:41:45,000
+break this
+打破这种
+
+00:41:45,000 --> 00:41:51,000
+and consider interchanging the order in which these two systems a cascade
+并考虑互换的顺序这两个系统的级联
+
+00:41:51,000 --> 00:41:55,000
+and so i've indicated that down below here
+所以我已经指出，向下跌破这里
+
+00:41:55,000 --> 00:41:58,000
+I've simply taken the top block diagram
+我简直到了顶部框图
+
+00:41:58,000 --> 00:42:02,000
+interchange the order in which the to
+交换的顺序来的
+
+00:42:02,000 --> 00:42:06,000
+systems are cascaded and
+系统级联和
+
+00:42:06,000 --> 00:42:09,000
+here again we can ask what the advantages to this
+在这里，我们再次可以问什么优势，这
+
+00:42:09,000 --> 00:42:13,000
+as opposed to the previous one and what you can see
+相对于前一个，你可以看到什么
+
+00:42:13,000 --> 00:42:16,000
+just as we saw with the difference equation is that
+正如我们看到的差分方程是
+
+00:42:16,000 --> 00:42:19,000
+now the integrators both integrators
+现在集成两个集成
+
+00:42:19,000 --> 00:42:22,000
+are integrating the same thing in particular
+正在将同样的事情，尤其
+
+00:42:22,000 --> 00:42:27,000
+the input to this integrator and the input
+输入至该积分器和该输入
+
+00:42:27,000 --> 00:42:31,000
+to this integrator are identical so in fact
+这个积分是相同的所以其实
+
+00:42:31,000 --> 00:42:35,000
+rather than using this one we can simply tap of
+而不是使用这一块，我们可以简单地挖掘
+
+00:42:35,000 --> 00:42:39,000
+from here we can in fact remove this integrator
+从这里我们其实可以消除这种集成
+
+00:42:39,000 --> 00:42:42,000
+break this connection
+打破这种连接
+
+00:42:42,000 --> 00:42:46,000
+and happy and at this point and so
+和快乐，在这一点上，所以
+
+00:42:46,000 --> 00:42:50,000
+what we've done and by interchange in the order in which the systems are
+我们已经在该系统是为了完成和交流
+
+00:42:50,000 --> 00:42:51,000
+cascaded
+级联
+
+00:42:51,000 --> 00:42:56,000
+is reduced the implementation to the implementation
+被减少的实施，实施
+
+00:42:56,000 --> 00:42:59,000
+with a single integrated very much similar to
+用一个单一的集成非常相似的
+
+00:42:59,000 --> 00:43:02,000
+what we talked about in the case the difference wage
+我们的情况下谈到了工资差异
+
+00:43:02,000 --> 00:43:06,000
+now let's just again with the integral equation
+现在就让我们再次与积分方程
+
+00:43:06,000 --> 00:43:10,000
+way the differential equation looked at
+这样的微分方程看着
+
+00:43:10,000 --> 00:43:13,000
+this somewhat more generally again
+这个较为普遍再次
+
+00:43:13,000 --> 00:43:18,000
+if we take the differential equation the general differential equation
+如果我们把微分方程的一般微分方程
+
+00:43:18,000 --> 00:43:23,000
+integrated a sufficient number of times to convert it to an integral equation
+集成的足够次数，将它转换为一个积分方程
+
+00:43:23,000 --> 00:43:27,000
+we would then have this cascaded systems
+那么我们将有这个级联系统
+
+00:43:27,000 --> 00:43:32,000
+and again if we assume initial rest
+并再次，如果我们假设初始休息
+
+00:43:32,000 --> 00:43:35,000
+so that these are both linear time-invariant systems
+所以，这些都是线性时不变系统
+
+00:43:35,000 --> 00:43:38,000
+we can interchange the order in which they are cascaded
+我们可以交换它们被级联的顺序
+
+00:43:38,000 --> 00:43:42,000
+namely take the second system and
+即以第二个系统和
+
+00:43:42,000 --> 00:43:44,000
+move it
+移动
+
+00:43:44,000 --> 00:43:48,000
+to proceed the first system
+进行第一系统
+
+00:43:48,000 --> 00:43:51,000
+and then we recognize is that the input to this change
+然后我们承认的是，输入到该变化
+
+00:43:51,000 --> 00:43:56,000
+integrators and this change integrators is exactly the same
+集成商和这种变化集成是完全一样的
+
+00:43:56,000 --> 00:43:59,000
+and so in fact we can collapse these together
+所以实际上我们可以一起折叠这些
+
+00:43:59,000 --> 00:44:03,000
+using only one change integrators and the system
+只使用一个变化集成商和系统
+
+00:44:03,000 --> 00:44:07,000
+there we're left with then is system
+有我们留下了然后就是系统
+
+00:44:07,000 --> 00:44:10,000
+that looks as i've indicated here so we have
+看起来就像我在这里表示，所以我们有
+
+00:44:10,000 --> 00:44:14,000
+now just a single chain integrators
+现在只是一个单链整合
+
+00:44:14,000 --> 00:44:18,000
+is that a the two sets in
+是，两组中
+
+00:44:18,000 --> 00:44:23,000
+so we've seen that the situation is very similar here as it was in the case the
+因此，我们已经看到，这种情况是非常相似的在这里，因为它是在情况下，
+
+00:44:23,000 --> 00:44:24,000
+difference equation
+差分方程
+
+00:44:24,000 --> 00:44:28,000
+again why do we want to cut the number integrators in half
+又为什么我们要削减的数量集成了一半
+
+00:44:28,000 --> 00:44:33,000
+well one reason is because integrators in effect represent hardware
+还有一个原因是因为在效果整合代表的硬件
+
+00:44:33,000 --> 00:44:37,000
+and if we use half as much if we have half as many integrators
+如果我们用一半多，如果我们有一半多的集成商
+
+00:44:37,000 --> 00:44:41,000
+then using half as much hard
+然后用一半的硬
+
+00:44:41,000 --> 00:44:45,000
+okay well let me just conclude by summarizing
+还好还有让我通过总结得出结论
+
+00:44:45,000 --> 00:44:49,000
+a number of points I indicated at the beginning
+数点我显示在开头
+
+00:44:49,000 --> 00:44:53,000
+that linear constant coefficient differential equations a difference
+该线性常系数微分方程的差别
+
+00:44:53,000 --> 00:44:54,000
+equations
+方程
+
+00:44:54,000 --> 00:44:58,000
+will play an important role as linear time-invariant systems
+将扮演线性时不变系统的重要作用
+
+00:44:58,000 --> 00:45:03,000
+throughout this coursing throughout the center lectures
+贯穿整个中心的讲座这个窃喜
+
+00:45:03,000 --> 00:45:06,000
+I also stress
+我也紧张
+
+00:45:06,000 --> 00:45:10,000
+the fact that differential or difference equations
+事实上，差分或差分方程
+
+00:45:10,000 --> 00:45:14,000
+by themselves are not a complete specification
+本身并不是一个完整的规范
+
+00:45:14,000 --> 00:45:17,000
+the system because of the fact that we can and
+因为事实上的系统，我们可以和
+
+00:45:17,000 --> 00:45:22,000
+to any solution a homogeneous
+任何解决方案均匀
+
+00:45:22,000 --> 00:45:25,000
+I do we specify the appropriate initial conditions
+我我们指定适当的初始条件
+
+00:45:25,000 --> 00:45:30,000
+to ensure how do we specify the appropriate initial conditions to ensure
+以确保我们如何指定适当的初始条件，以确保
+
+00:45:30,000 --> 00:45:31,000
+that the system
+该系统
+
+00:45:31,000 --> 00:45:35,000
+is linear and time-invariant well
+是线性时不变以及
+
+00:45:35,000 --> 00:45:40,000
+the auxiliary information namely the initial conditions
+的辅助信息，即初始条件
+
+00:45:40,000 --> 00:45:43,000
+dissociated with the system
+离解与系统
+
+00:45:43,000 --> 00:45:47,000
+be causal linear and time-invariant
+是因果线性时不变
+
+00:45:47,000 --> 00:45:50,000
+are the conditions of initial rest
+是的初始静止的条件
+
+00:45:50,000 --> 00:45:53,000
+and in fact for most of the cores
+而实际上大多数的芯
+
+00:45:53,000 --> 00:45:57,000
+what will be interested in systems that are in fact cause a linear and
+这将是感兴趣的是，事实上造成线性系统和
+
+00:45:57,000 --> 00:45:58,000
+time-invariant
+时不变
+
+00:45:58,000 --> 00:46:03,000
+and so we will in fact be assuming initial rest conditions
+所以我们实际上将在假定初始条件休息
+
+00:46:03,000 --> 00:46:06,000
+now
+现在
+
+00:46:06,000 --> 00:46:09,000
+as I also indicated their are
+我也表示，他们顷
+
+00:46:09,000 --> 00:46:12,000
+a variety of efficient procedures for solving differential
+各种有效的程序求解微分
+
+00:46:12,000 --> 00:46:16,000
+and difference equations that we haven't yet address and
+与差分方程，我们还没有解决和
+
+00:46:16,000 --> 00:46:20,000
+beginning with the next set of lectures will be talking about
+与下一组讲座开始将谈论
+
+00:46:20,000 --> 00:46:23,000
+for EA transform and much later in the course
+对EA变换和多后面的课程
+
+00:46:23,000 --> 00:46:27,000
+what's referred to as the apostrophe its form for continuous-time
+什么被称为单引号其形式为连续时间
+
+00:46:27,000 --> 00:46:31,000
+and sea transport for discrete-time and what we'll see
+和海上运输为离散时间，我们会看到
+
+00:46:31,000 --> 00:46:36,000
+is that with the Fourier transform in later with the apostasy transform
+是与傅里叶变换后与叛教变换
+
+00:46:36,000 --> 00:46:40,000
+will have a number love efficient and very useful ways
+将有一批热爱高效和非常有用的方法
+
+00:46:40,000 --> 00:46:44,000
+%uh generating the solution for
+％嗯产生用于解
+
+00:46:44,000 --> 00:46:48,000
+differential and difference equations this under the assumption that the
+的假设下微分和差分方程这使
+
+00:46:48,000 --> 00:46:50,000
+system is causal
+系统是因果
+
+00:46:50,000 --> 00:46:52,000
+when you're in time very
+当你在非常时刻
+
+00:46:52,000 --> 00:46:57,000
+also will see in addition to the block diagram implementations
+也将除了方框图实现见
+
+00:46:57,000 --> 00:47:00,000
+the systems that we talked about so far
+我们说了这么远的系统
+
+00:47:00,000 --> 00:47:04,000
+we'll see another a number of other useful
+我们会看到另一个一些其他有用的
+
+00:47:04,000 --> 00:47:09,000
+implementations that exploit a variety of properties associated with
+即利用各种性能的实现相关联
+
+00:47:09,000 --> 00:47:11,000
+Korean past thank you
+韩国过去谢谢
+

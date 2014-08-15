@@ -1,0 +1,1148 @@
+00:00:05,000 --> 00:00:12,000
+ha the the
+公顷的
+
+00:00:27,000 --> 00:00:34,000
+the more
+更
+
+00:00:35,000 --> 00:00:42,000
+the last time
+最后一次
+
+00:00:43,000 --> 00:00:46,000
+we talked about the you the representation
+我们谈到了你的陈述
+
+00:00:46,000 --> 00:00:50,000
+%uh linear time-invariant systems through the convolution song
+通过卷积首歌％呃线性时不变系统
+
+00:00:50,000 --> 00:00:53,000
+in the discrete-time case and the convolution integral in the
+在离散时间情况下，该卷积积分
+
+00:00:53,000 --> 00:00:54,000
+continuous-time
+连续时间
+
+00:00:54,000 --> 00:00:59,000
+case now although the derivation was relatively straightforward
+现在情况虽然推导相对简单
+
+00:00:59,000 --> 00:01:03,000
+in fact the result is really kind of amazing because
+其实结果是有点惊人真的是因为
+
+00:01:03,000 --> 00:01:07,000
+what it tells us is that for linear time-invariant systems
+它告诉我们的是，对于线性时不变系统
+
+00:01:07,000 --> 00:01:12,000
+if we know the response to the system to a single in polls
+如果我们知道响应于该系统，以在调查单
+
+00:01:12,000 --> 00:01:15,000
+at equal 0 or in fact that any other time
+于等于0或实际上任何其他时间
+
+00:01:15,000 --> 00:01:19,000
+then we can determine from that its response
+那么我们可以从确定其响应
+
+00:01:19,000 --> 00:01:25,000
+to an arbitrary input through the use of convolution furthermore
+通过使用卷积此外任意输入
+
+00:01:25,000 --> 00:01:29,000
+what we'll see as the course develops is that in fact
+我们会看到随着课程的发展是，在事实
+
+00:01:29,000 --> 00:01:32,000
+the class a linear time-invariant systems is a very rich class
+类线性时不变系统是一个非常丰富的类
+
+00:01:32,000 --> 00:01:36,000
+there are lots of systems that have that property
+有很多的系统，具有该属性
+
+00:01:36,000 --> 00:01:40,000
+and in addition there are lots a very interesting things that you can do with
+而除了有很多很有趣的东西，你可以用做
+
+00:01:40,000 --> 00:01:42,000
+linear time-invariant systems
+线性时不变系统
+
+00:01:42,000 --> 00:01:46,000
+in today's lecture
+在今天的讲座
+
+00:01:46,000 --> 00:01:49,000
+what I'd like to begin with is focusing
+我想首先是重点
+
+00:01:49,000 --> 00:01:53,000
+on convolution as an algebraic operation
+卷积为代数运算
+
+00:01:53,000 --> 00:01:58,000
+and will see that it has a number of algebraic properties then in turn
+以及将看到它具有许多代数性质的再依次
+
+00:01:58,000 --> 00:02:01,000
+have important implications for
+有重要意义
+
+00:02:01,000 --> 00:02:05,000
+linear time-invariant systems then we'll turn
+线性时不变系统然后我们会转
+
+00:02:05,000 --> 00:02:08,000
+to a discussion or what the
+以讨论或什么
+
+00:02:08,000 --> 00:02:11,000
+characterization %uh linear time-invariant systems
+表征％呃线性时不变系统
+
+00:02:11,000 --> 00:02:14,000
+through convolution implies
+通过卷积暗示
+
+00:02:14,000 --> 00:02:18,000
+in terms of the relationship various other system properties
+关系中的其他各种系统性能方面
+
+00:02:18,000 --> 00:02:22,000
+to the impulse response let me begin by
+脉冲响应首先，我要
+
+00:02:22,000 --> 00:02:26,000
+reminding you love the basic result that we
+提醒你爱的基本结果，我们
+
+00:02:26,000 --> 00:02:30,000
+develop last time which is the convolution some
+制定最后一次这是一些卷积
+
+00:02:30,000 --> 00:02:33,000
+in discrete-time as
+在离散时间作为
+
+00:02:33,000 --> 00:02:36,000
+I indicate here and
+我在此说明，并
+
+00:02:36,000 --> 00:02:39,000
+the convolution integral in continuous-time
+在连续时间卷积积分
+
+00:02:39,000 --> 00:02:45,000
+in and what the convolution some more the convolution integral tells us
+在什么卷积一些卷积积分告诉我们
+
+00:02:45,000 --> 00:02:48,000
+is how to relate the output
+是如何与输出
+
+00:02:48,000 --> 00:02:53,000
+to the input and to the system impulse response
+到输入和系统的脉冲响应
+
+00:02:53,000 --> 00:02:57,000
+and the expression looks
+和表达式看起来
+
+00:02:57,000 --> 00:03:00,000
+basically the same in continuous-time and discrete-time
+基本上在连续时间和离散时间相同
+
+00:03:00,000 --> 00:03:05,000
+and I remind you also that we talked about a graphical interpretation
+我提醒你也是我们谈到了一个图形化的解释
+
+00:03:05,000 --> 00:03:09,000
+where essentially to graphically
+其中基本上以图形
+
+00:03:09,000 --> 00:03:13,000
+interpret convolution required for
+需要解释的卷积
+
+00:03:13,000 --> 00:03:16,000
+was developed in terms
+在计算开发
+
+00:03:16,000 --> 00:03:19,000
+or taking the system impulse response
+或采取系统的脉冲响应
+
+00:03:19,000 --> 00:03:23,000
+flipping it sliding it past the input
+它翻转滑动过去的输入
+
+00:03:23,000 --> 00:03:26,000
+and with positioned appropriately depending on the
+并与定位的适当取决于
+
+00:03:26,000 --> 00:03:30,000
+value of the independent variable for which were computing
+方法乃计算自变量的值
+
+00:03:30,000 --> 00:03:33,000
+the convolution and then multiplying and
+卷积，然后乘以与
+
+00:03:33,000 --> 00:03:37,000
+summing in the discrete-time case or integrating
+总结在离散时间情况下或整合
+
+00:03:37,000 --> 00:03:41,000
+in the continuous-time case now
+在连续时间的情况下，现在
+
+00:03:41,000 --> 00:03:45,000
+convolution as an algebraic operation
+卷积为代数运算
+
+00:03:45,000 --> 00:03:49,000
+has a number or important properties
+有一些或重要性质
+
+00:03:49,000 --> 00:03:53,000
+one of the properties of convolution
+卷积的特性之一
+
+00:03:53,000 --> 00:03:57,000
+is that it is what is referred to as commuted
+是，它是被称为减
+
+00:03:57,000 --> 00:04:01,000
+community here means that
+社区在这里意味着
+
+00:04:01,000 --> 00:04:04,000
+we can think either a convo loving
+我们可以认为无论是康沃爱
+
+00:04:04,000 --> 00:04:08,000
+X with age or H with axe
+X而年龄或H与斧头
+
+00:04:08,000 --> 00:04:11,000
+and the order in which that's done
+和顺序这样做了
+
+00:04:11,000 --> 00:04:16,000
+doesn't affect the output result so summarized here
+不影响输出结果这里如此概括
+
+00:04:16,000 --> 00:04:19,000
+is what the community operation is
+是社会运行的是什么
+
+00:04:19,000 --> 00:04:23,000
+in discrete-time or in continuous-time
+在离散时间或连续时间
+
+00:04:23,000 --> 00:04:26,000
+and it says as I just indicated that
+它说，正如我刚才指出，
+
+00:04:26,000 --> 00:04:29,000
+x7 convolved with a chip and
+X7为卷积芯片和
+
+00:04:29,000 --> 00:04:33,000
+is equal to a chip and convolved
+等于一个芯片和卷积
+
+00:04:33,000 --> 00:04:36,000
+with exit or the same course
+用exit或同一门课程
+
+00:04:36,000 --> 00:04:40,000
+in continuous-time and in fact
+在连续时间与实际上
+
+00:04:40,000 --> 00:04:43,000
+in the lecture last time
+在讲座最后一次
+
+00:04:43,000 --> 00:04:48,000
+we worked an example where we had indiscreet I'm an impulse response which
+我们的工作的例子，我们不得不指手画脚，我是一个脉冲响应的
+
+00:04:48,000 --> 00:04:50,000
+was an exponential
+是一个指数
+
+00:04:50,000 --> 00:04:54,000
+and an input which is a unit step
+和一个输入是单位阶跃
+
+00:04:54,000 --> 00:04:58,000
+and in the text what you'll find is
+并在文中你会发现什么是
+
+00:04:58,000 --> 00:05:01,000
+the same example work except in that case
+除了在这种情况下，同样的例子工作
+
+00:05:01,000 --> 00:05:07,000
+the input is the exponential and the system impulse response is the step
+输入是指数和系统的脉冲响应是步
+
+00:05:07,000 --> 00:05:10,000
+and that corresponds to the example in the text
+和对应于该实施例中的文本
+
+00:05:10,000 --> 00:05:15,000
+which is example 3.1
+这是例如3.1
+
+00:05:15,000 --> 00:05:19,000
+and what happens in an example is that in fact
+以及发生了什么的一个例子是，在实际上
+
+00:05:19,000 --> 00:05:22,000
+what you'll see is that the same result
+什么，你会看到的是，同样的结果
+
+00:05:22,000 --> 00:05:26,000
+occurs an example 3.1 as we generated
+的发生是由于我们生成的示例3.1
+
+00:05:26,000 --> 00:05:29,000
+in the lecture and there's a similar comparison
+在讲座中，有一个类似的比较
+
+00:05:29,000 --> 00:05:33,000
+in continuous-time this example was worked in
+在连续时间这个例子是在工作
+
+00:05:33,000 --> 00:05:36,000
+lecture and this example
+讲座和这个例子
+
+00:05:36,000 --> 00:05:40,000
+is work in the text in other words
+在工作​​中，换句话说文
+
+00:05:40,000 --> 00:05:43,000
+the text works the example where the system
+文字作品的例子，该系统
+
+00:05:43,000 --> 00:05:46,000
+impulse response is
+脉冲响应是
+
+00:05:46,000 --> 00:05:52,000
+unit step and the input is an exponential
+单位工序和输入是一个指数
+
+00:05:52,000 --> 00:05:55,000
+right now the community property as I said tells us
+现在我说，小区物业告诉我们
+
+00:05:55,000 --> 00:05:58,000
+that the order in which we do convolution
+在我们做卷积的顺序
+
+00:05:58,000 --> 00:06:01,000
+doesn't affect the result to the convolution
+不影响结果的卷积
+
+00:06:01,000 --> 00:06:04,000
+the same is true for continuous-time and discrete-time
+在连续时间和离散时间也是如此
+
+00:06:04,000 --> 00:06:09,000
+and in fact for the other algebraic properties that I'll talk about
+而事实上对于其它的代数性质，我将谈谈
+
+00:06:09,000 --> 00:06:15,000
+the results are exactly the same for continuous-time and discrete-time
+结果是完全相同的连续时间和离散时间
+
+00:06:15,000 --> 00:06:18,000
+so in fact what we can do is
+所以其实我们可以做的是
+
+00:06:18,000 --> 00:06:23,000
+drop the independent variable as an argument
+掉落自变量作为参数
+
+00:06:23,000 --> 00:06:29,000
+so that we suppress any kinda difference between continuous and discrete-time
+让我们压抑连续和离散时间之间的任何差别还挺
+
+00:06:29,000 --> 00:06:33,000
+and suppressing be independent variable
+和抑制是独立变量
+
+00:06:33,000 --> 00:06:37,000
+within state the community property as I've
+州内，因为我已经在小区物业
+
+00:06:37,000 --> 00:06:41,000
+rewritten it here just X convulsed with age because
+改写在这里仅售X忍俊不禁随着年龄的增长，因为
+
+00:06:41,000 --> 00:06:44,000
+H involved with the ex the same in continuous-time
+ħ涉及与前相同的连续时间
+
+00:06:44,000 --> 00:06:49,000
+and discrete-time now
+和离散时间现在
+
+00:06:49,000 --> 00:06:52,000
+the derivation to the community property is
+推导到社区物业
+
+00:06:52,000 --> 00:06:57,000
+more less amount you bro which you can follow through in the book it involves
+你的兄弟，你可以在它涉及的书跟进更量少
+
+00:06:57,000 --> 00:07:01,000
+soem changes variables and
+SOEM改变变量和
+
+00:07:01,000 --> 00:07:04,000
+in some things that sort
+在一些事情的排序
+
+00:07:04,000 --> 00:07:07,000
+what I'd like to focus on with that and other properties
+我想专注于与和其他属性
+
+00:07:07,000 --> 00:07:11,000
+is not the derivation which you can see in the tax
+是不是推导，您可以在税收看
+
+00:07:11,000 --> 00:07:14,000
+by rather the interpretation
+由宁解释
+
+00:07:14,000 --> 00:07:18,000
+so we have the community property and now there are two other
+所以我们有小区物业，现在有两个
+
+00:07:18,000 --> 00:07:22,000
+important algebraic properties one being
+重要的代数性质的一个是
+
+00:07:22,000 --> 00:07:26,000
+what is referred to as the associative property
+什么被称为缔合特性
+
+00:07:26,000 --> 00:07:31,000
+which tells us that if we have X convulsed with
+它告诉我们，如果我们有X个笑得
+
+00:07:31,000 --> 00:07:35,000
+the result ok involving h1 with h2
+结果确定涉及H1与H2
+
+00:07:35,000 --> 00:07:39,000
+that's exactly the same as X convolved with h1
+这是完全一样的为X卷积H1
+
+00:07:39,000 --> 00:07:42,000
+and that result involved with h2
+并参与了H2的结果
+
+00:07:42,000 --> 00:07:46,000
+and what this permits is
+以及这是允许
+
+00:07:46,000 --> 00:07:51,000
+for us to write for example ex-convict alt with h1
+让我们来写，例如刑满释放中高音与H1
+
+00:07:51,000 --> 00:07:56,000
+involved with h2 without any ambiguity
+参与H2毫不含糊
+
+00:07:56,000 --> 00:08:00,000
+because it doesn't matter from the associative property
+因为它没有从相关属性重要
+
+00:08:00,000 --> 00:08:04,000
+how we grew the terms together
+我们如何长大的条款一起
+
+00:08:04,000 --> 00:08:09,000
+the third important property is what is referred to as the distributive property
+第三个重要的属性是什么被称为分配律
+
+00:08:09,000 --> 00:08:13,000
+namely the fact the convolution distributes over addition
+即事实上的卷积分布在除
+
+00:08:13,000 --> 00:08:16,000
+and what I mean by that is what i've indicated
+什么我的意思是，我所指出
+
+00:08:16,000 --> 00:08:20,000
+here on the slide dead if
+这里在幻灯片上死了，如果
+
+00:08:20,000 --> 00:08:23,000
+I think or X convo with the psalm
+我认为或X康沃的诗篇
+
+00:08:23,000 --> 00:08:27,000
+of h1n h2 that's identical
+H1N H2那是相同的
+
+00:08:27,000 --> 00:08:31,000
+to first involving X with h1
+首先涉及到X而H1
+
+00:08:31,000 --> 00:08:34,000
+also can bombing X with h2 and then
+也可以轰炸X而H2，然后
+
+00:08:34,000 --> 00:08:38,000
+adding the two together and that result
+添加两个在一起，那结果
+
+00:08:38,000 --> 00:08:42,000
+will be the same as this result
+将是相同的，因此这个结果
+
+00:08:42,000 --> 00:08:46,000
+so convolution is community
+因此卷积社区
+
+00:08:46,000 --> 00:08:49,000
+associative and it distributes over addition
+联想并将其分发给了另外
+
+00:08:49,000 --> 00:08:52,000
+three very important algebraic properties and
+三个非常重要的代数性质和
+
+00:08:52,000 --> 00:08:57,000
+by the way there are other algebraic operations that have
+顺便说存在具有其它代数运算
+
+00:08:57,000 --> 00:09:01,000
+that same property for example multiplication
+同样的属性，例如乘法
+
+00:09:01,000 --> 00:09:04,000
+numbers is likewise commuted to associative
+数字同样改判为关联
+
+00:09:04,000 --> 00:09:07,000
+and distributed now
+而现在分布
+
+00:09:07,000 --> 00:09:11,000
+let's look at what these three properties
+让我们来看看什么是这三个属性
+
+00:09:11,000 --> 00:09:15,000
+imply a specifically for linear time-invariant systems
+意味着一个专门针对线性时不变系统
+
+00:09:15,000 --> 00:09:18,000
+and as we'll see the the implications
+正如我们将看到的影响
+
+00:09:18,000 --> 00:09:22,000
+are both very interesting and very important
+都是非常有趣和非常重要的
+
+00:09:22,000 --> 00:09:26,000
+let's begin with the community property
+让我们开始与小区物业
+
+00:09:26,000 --> 00:09:30,000
+and consider in particular
+并特别考虑
+
+00:09:30,000 --> 00:09:34,000
+a system with an impulse response age
+带有脉冲响应年龄的系统
+
+00:09:34,000 --> 00:09:39,000
+and I represent that by simply writing the H inside the box
+我代表通过简单地写在H盒内
+
+00:09:39,000 --> 00:09:42,000
+an input tax and an output then
+进项税和输出，然后
+
+00:09:42,000 --> 00:09:46,000
+which is X convulsed with age
+这为X忍俊不禁随着年龄的增长
+
+00:09:46,000 --> 00:09:49,000
+now since this operation is commuted to
+现在因为这个操作是改判
+
+00:09:49,000 --> 00:09:53,000
+I can right is that affects convolved with a I can write
+我可以用鼠标右键是影响卷积与我可以写
+
+00:09:53,000 --> 00:09:56,000
+H convolved with ex and that would correspond
+ħ卷积前，而将对应
+
+00:09:56,000 --> 00:10:00,000
+to a system with impulse response
+用脉冲响应系统
+
+00:10:00,000 --> 00:10:04,000
+X and input H and output then
+X和输入H和输出，然后
+
+00:10:04,000 --> 00:10:07,000
+age involved with ex
+涉及年龄与前
+
+00:10:07,000 --> 00:10:11,000
+so the community property
+所以小区物业
+
+00:10:11,000 --> 00:10:16,000
+tells us therefore a linear time-invariant system
+告诉我们，因此一个线性时不变系统
+
+00:10:16,000 --> 00:10:20,000
+the system output is independent
+系统的输出是独立
+
+00:10:20,000 --> 00:10:23,000
+all which function we call the input
+所有这些功能，我们称之为输入
+
+00:10:23,000 --> 00:10:27,000
+and which function we call the impulse response kind amazing actually
+以及功能我们称之为脉冲响应那种惊人的实际
+
+00:10:27,000 --> 00:10:31,000
+we can interchange the role input and impulse response
+我们可以互换角色的输入和脉冲响应
+
+00:10:31,000 --> 00:10:35,000
+and from input or permit output point of view
+而且从输入或许可证输出点
+
+00:10:35,000 --> 00:10:38,000
+the output for the system doesn't care
+该系统的输出不关心
+
+00:10:38,000 --> 00:10:43,000
+now furthermore if we combine the community property
+而且现在如果我们结合社区物业
+
+00:10:43,000 --> 00:10:48,000
+with the associative property we get another very interesting result
+与关联属性，我们得到另一个非常有趣的结果
+
+00:10:48,000 --> 00:10:53,000
+namely that if we have two linear time-invariant systems in cascade
+即，如果我们有两个线性时不变系统的级联
+
+00:10:53,000 --> 00:10:58,000
+the overall system is independent of the order in which they are cascaded
+整个系统是独立于它们所级联的顺序
+
+00:10:58,000 --> 00:11:02,000
+and in fact in either case the Cascade can be
+而事实上在两种情况下，梯级可以是
+
+00:11:02,000 --> 00:11:05,000
+collapsed into a single system
+折叠成一个单一的系统
+
+00:11:05,000 --> 00:11:11,000
+to see this let's first consider
+看到这个我们先考虑
+
+00:11:11,000 --> 00:11:15,000
+the Cascade or two systems one with impulse response h1
+级联或两个系统之一，脉冲响应H1
+
+00:11:15,000 --> 00:11:19,000
+the other with impulse response h2 and
+另用脉冲响应H2和
+
+00:11:19,000 --> 00:11:22,000
+the outputted the first system is then
+的输出的第一系统是​​再
+
+00:11:22,000 --> 00:11:25,000
+X convulsed with h1
+X笑得H1
+
+00:11:25,000 --> 00:11:29,000
+and then that is the input to the second system
+然后是输入到所述第二系统
+
+00:11:29,000 --> 00:11:33,000
+and so the output a bad is that result
+所以输出一个糟糕的是，结果
+
+00:11:33,000 --> 00:11:36,000
+convolved with h2
+卷积H2
+
+00:11:36,000 --> 00:11:40,000
+so this is the result of cascading the two
+因此，这是层叠的2的结果
+
+00:11:40,000 --> 00:11:45,000
+and now we can use the associative property
+现在我们可以使用关联属性
+
+00:11:45,000 --> 00:11:49,000
+to rewrite this and as
+重写这个和
+
+00:11:49,000 --> 00:11:52,000
+X involved with h1
+X涉及H1
+
+00:11:52,000 --> 00:11:58,000
+involved with h2 where we grew these two terms together
+涉及H2，我们长大这两个名词在一起
+
+00:11:58,000 --> 00:12:01,000
+and so using the associative property
+所以使用关联属性
+
+00:12:01,000 --> 00:12:05,000
+we now can collapse that into a single system
+我们现在可以说垮到一个单一的系统
+
+00:12:05,000 --> 00:12:11,000
+with an input which is ax an impulse response which is h1 convolved with h2
+一个输入是斧子是H1卷积H2的脉冲响应
+
+00:12:11,000 --> 00:12:14,000
+and the output is then ex-convict all with
+和输出，然后刑满释放全部用
+
+00:12:14,000 --> 00:12:17,000
+the result that those two can borrow
+结果，这两个可以借
+
+00:12:17,000 --> 00:12:20,000
+next we can apply the community property
+接下来我们可以将小区物业
+
+00:12:20,000 --> 00:12:24,000
+and the commuter property says we could write
+和通勤物业说，我们可以这样写
+
+00:12:24,000 --> 00:12:28,000
+this impulse response that way or we can write it this way
+这种冲激响应的方式，或者我们可以这样写
+
+00:12:28,000 --> 00:12:33,000
+and since convolutions community the resulting output will be exactly the
+而且由于回旋社区的输出结果将是完全
+
+00:12:33,000 --> 00:12:34,000
+same
+同
+
+00:12:34,000 --> 00:12:39,000
+and so these resulting output will be exactly the same
+因此这些输出结果将是完全相同的
+
+00:12:39,000 --> 00:12:44,000
+and now once again we can use the associative property
+而现在我们再次可以使用关联属性
+
+00:12:44,000 --> 00:12:48,000
+to group these two terms together
+以组这两个名词在一起
+
+00:12:48,000 --> 00:12:52,000
+and X convulsed with h2
+和X笑得H2
+
+00:12:52,000 --> 00:12:56,000
+corresponds to putting X first through the system h2
+相当于把X表示先通过系统H2
+
+00:12:56,000 --> 00:13:00,000
+and then an output through the system h1 and so
+然后通过系统h1和这样一个输出
+
+00:13:00,000 --> 00:13:04,000
+finally applying the associative property again as I just outlined
+最后应用结合性事，是我刚刚概述
+
+00:13:04,000 --> 00:13:08,000
+we can expand that system back into
+我们可以扩展该系统回
+
+00:13:08,000 --> 00:13:12,000
+two systems in cascade with h2 first
+两个系统级联用H2第一
+
+00:13:12,000 --> 00:13:17,000
+NH one second
+NH1秒
+
+00:13:17,000 --> 00:13:22,000
+okay well that involves a certain amount love algebraic manipulation
+还好以及涉及一定数额的爱代数运算
+
+00:13:22,000 --> 00:13:26,000
+and that it's not the algebraic manipulation that's important is the
+而且它不是代数运算这是重要的是
+
+00:13:26,000 --> 00:13:28,000
+result that it's important
+导致它的重要
+
+00:13:28,000 --> 00:13:31,000
+and what the result says to reiterate this if I have to
+和什么样的结果，说要重申这一点，如果我有
+
+00:13:31,000 --> 00:13:34,000
+linear time-invariant systems in cascade
+线性时不变系统的级联
+
+00:13:34,000 --> 00:13:39,000
+I can cascade them in any order and the result is the same
+我可以级联以任何顺序和结果是一样的
+
+00:13:39,000 --> 00:13:46,000
+now you might think well G maybe that actually applies the systems in general
+现在你可能会认为G井也许这实际上是应用系统一般
+
+00:13:46,000 --> 00:13:50,000
+whether you put them this way or that way but in fact as we talked about last
+无论你把它们这样或那样的方式，但事实上，我们谈到最后
+
+00:13:50,000 --> 00:13:51,000
+time
+时间
+
+00:13:51,000 --> 00:13:54,000
+and I illustrated with an example
+我用一个例子说明
+
+00:13:54,000 --> 00:13:58,000
+in general if the system is not linear
+一般来说，如果系统不是线性
+
+00:13:58,000 --> 00:14:01,000
+the systems are not linear and time-invariant then
+该系统不是线性时不变则
+
+00:14:01,000 --> 00:14:05,000
+the order in which they are cascaded is important to the interpretation of the
+它们被级联的顺序是很重要的的解释
+
+00:14:05,000 --> 00:14:06,000
+overall system
+整个系统
+
+00:14:06,000 --> 00:14:10,000
+for example one system took the square root
+例如，一个系统作为平方根
+
+00:14:10,000 --> 00:14:14,000
+any other system double the input
+任何其他系统两倍的输入
+
+00:14:14,000 --> 00:14:18,000
+taking the square root and then doubling
+求平方根，然后再加倍
+
+00:14:18,000 --> 00:14:22,000
+gives us a different answer doubling first and then taking the square root
+给了我们一个不同的答案加倍，然后再取平方根
+
+00:14:22,000 --> 00:14:26,000
+and of course one can construct much more elaborate example
+当然可以构建更复杂的例子
+
+00:14:26,000 --> 00:14:31,000
+net so it's a property very particular to linear time-invariant systems and
+净所以这是一个属性非常特殊的线性时不变系统和
+
+00:14:31,000 --> 00:14:32,000
+also
+还
+
+00:14:32,000 --> 00:14:39,000
+one that we will exploit many many times as we go through this material
+一个我们会利用很多很多次，因为我们通过这个材料
+
+00:14:40,000 --> 00:14:44,000
+the final property related to
+相关的最终属性
+
+00:14:44,000 --> 00:14:47,000
+interconnection systems that I want to just indicate
+我想只显示互连系统
+
+00:14:47,000 --> 00:14:51,000
+develops ida the distributive property
+开发IDA分配律
+
+00:14:51,000 --> 00:14:54,000
+and what it applies to is an interpretation
+它适用于什么是解释
+
+00:14:54,000 --> 00:14:59,000
+%uh the interconnection of systems in parallel
+系统并行％呃联网
+
+00:14:59,000 --> 00:15:02,000
+recall there the parallel combination
+记得有并联组合
+
+00:15:02,000 --> 00:15:06,000
+systems corresponds is a indicate here
+系统对应的是一个显示在这里
+
+00:15:06,000 --> 00:15:12,000
+to a system in which we simultaneously feed the input into
+到一个系统中，我们同时喂输入到
+
+00:15:12,000 --> 00:15:16,000
+h1 nh2 these representing the impulse responses
+H1 NH2这些代表的脉冲响应
+
+00:15:16,000 --> 00:15:20,000
+and then the outputs our song and to form
+然后输出我们的歌，并形成
+
+00:15:20,000 --> 00:15:23,000
+the overall output and
+整体输出和
+
+00:15:23,000 --> 00:15:27,000
+using the fact their convolution distributes
+使用事实上，他们的卷积所分销
+
+00:15:27,000 --> 00:15:30,000
+over addition we can rewrite yes
+除了以上我们可以重写是
+
+00:15:30,000 --> 00:15:34,000
+as X involved with h1
+为X涉及H1
+
+00:15:34,000 --> 00:15:37,000
+plus h2
+更多H2
+
+00:15:37,000 --> 00:15:41,000
+and when we do that then we can recognize this
+而当我们这样做，那么我们就可以识别这个
+
+00:15:41,000 --> 00:15:45,000
+as the output the system with input acts
+作为输出的系统具有输入行为
+
+00:15:45,000 --> 00:15:50,000
+and impulse response which is the sum of these two impulse responses
+并且这两个脉冲响应的总和脉冲响应
+
+00:15:50,000 --> 00:15:54,000
+so for linear time-invariant systems in parallel
+所以对于线性时不变系统并行
+
+00:15:54,000 --> 00:15:57,000
+we can if we choose
+我们可以，如果我们选择
+
+00:15:57,000 --> 00:16:01,000
+replace that interconnection by a single system
+更换由一个单一的系统互连
+
+00:16:01,000 --> 00:16:04,000
+whose impulse response is simply some
+其脉冲响应仅仅是一些
+
+00:16:04,000 --> 00:16:10,000
+those impulse response
+这些脉冲响应
+
+00:16:10,000 --> 00:16:13,000
+okay now we have this very
+还好现在我们有了这个非常
+
+00:16:13,000 --> 00:16:18,000
+powerful representation for linear time-invariant systems
+强大的表示线性时不变系统
+
+00:16:18,000 --> 00:16:23,000
+terms 0 convolution and we've seen so far in this lecture
+术语0卷积，我们已经在此讲学迄今为止看到
+
+00:16:23,000 --> 00:16:27,000
+how convolution and the representation through the impulse response
+如何通过脉冲响应卷积和表示
+
+00:16:27,000 --> 00:16:34,000
+leads to some but important implications for system interconnections
+导致了一些，但对于系统互连重要意义
+
+00:16:34,000 --> 00:16:39,000
+what I like to turn to now are other system properties
+我想谈谈现在有其他的系统属性
+
+00:16:39,000 --> 00:16:45,000
+and see how for linear time-invariant systems in particular
+看看如何为线性时不变系统，特别是
+
+00:16:45,000 --> 00:16:49,000
+other system properties can be Associated
+其他的系统属性可以关联
+
+00:16:49,000 --> 00:16:52,000
+with particular properties or characteristics
+与特定的属性或特征
+
+00:16:52,000 --> 00:16:56,000
+love the system impulse response and what will talk about
+喜欢该系统的脉冲响应，什么说说
+
+00:16:56,000 --> 00:17:00,000
+are a variety of properties will talk about the issue memory will talk about
+是各种属性将讨论这个问题的内存将谈论
+
+00:17:00,000 --> 00:17:01,000
+the issue
+问题
+
+00:17:01,000 --> 00:17:04,000
+portability and will talk about the issue
+便携性和会讨论这个问题
+
+00:17:04,000 --> 00:17:10,000
+causality and also stability
+因果性和稳定性也
+
+00:17:10,000 --> 00:17:14,000
+well let's begin with the issue of memory and the question
+好，让我们开始与内存的问题，这个问题
+
+00:17:14,000 --> 00:17:18,000
+now is what are the implications
+现在什么样的影响
+
+00:17:18,000 --> 00:17:22,000
+for the system impulse response for a linear time-invariant system remember
+为一个线性时不变系统的系统脉冲响应记
+
+00:17:22,000 --> 00:17:25,000
+that we're always imposing that on the system
+我们总是施加在系统上
+
+00:17:25,000 --> 00:17:29,000
+what are the implications on the impulse response if the system
+什么是对脉冲响应的影响，如果系统
+
+00:17:29,000 --> 00:17:32,000
+does or does not have memory
+或不具备内存
+
+00:17:32,000 --> 00:17:36,000
+well we can answer that by looking at
+好，我们可以回答这个问题通过查看
+
+00:17:36,000 --> 00:17:39,000
+the convolution property
+卷积财产
+
+00:17:39,000 --> 00:17:46,000
+and we have here as a reminder the convolution integral
+我们这里有一个提醒的卷积积分
+
+00:17:46,000 --> 00:17:50,000
+which tells us how accept an hour in a chip T-minus
+它告诉我们如何在一个芯片上的T减去接受一小时
+
+00:17:50,000 --> 00:17:56,000
+now are combined to give us y'at
+现在相结合，给我们y'at
+
+00:17:56,000 --> 00:17:59,000
+and what I've illustrated above is
+和我上面已经说明是
+
+00:17:59,000 --> 00:18:02,000
+only general kind of example
+只是一般的类的实例
+
+00:18:02,000 --> 00:18:05,000
+here is except al here is
+这里是除了人这里
+
+00:18:05,000 --> 00:18:09,000
+a chip T-minus now an
+芯片现在是一个T型减
+
+00:18:09,000 --> 00:18:12,000
+to compute the output at any time T
+来计算输出在任何时刻T
+
+00:18:12,000 --> 00:18:16,000
+we would take these two multiply them together
+我们将采取这两种它们相乘
+
+00:18:16,000 --> 00:18:22,000
+and integrate from minus infinity the plus infinity
+并从负无穷整合正无穷大
+
+00:18:22,000 --> 00:18:25,000
+so the question then is what can we say about
+所以接下来的问题是我们能说一下
+
+00:18:25,000 --> 00:18:29,000
+H T the impulse response
+H T的脉冲响应
+
+00:18:29,000 --> 00:18:32,000
+in order to guarantee let's say
+为了保证让我们说
+
+00:18:32,000 --> 00:18:37,000
+that the output depends only on the input at time t
+该输出在时刻t只对输入的依赖
+
+00:18:37,000 --> 00:18:40,000
+well its pretty much obvious from looking
+以及其看去几乎明显
+
+00:18:40,000 --> 00:18:43,000
+at the grabs
+在争夺
+
+00:18:43,000 --> 00:18:47,000
+if we only want the output to depend
+如果我们只希望输出依赖
+
+00:18:47,000 --> 00:18:51,000
+on XO how at Tower equals T
+在XO如何在塔等于Ŧ
+
+00:18:51,000 --> 00:18:54,000
+then a chip T-minus have 0 better
+那么芯片的T-减去有0更好
+
+00:18:54,000 --> 00:18:59,000
+be non-zero only at Tower equals T
+是非零仅在塔等于Ŧ
+
+00:18:59,000 --> 00:19:03,000
+and so the implication is that
+所以其含义是，
+

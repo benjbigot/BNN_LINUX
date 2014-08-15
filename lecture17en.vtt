@@ -1,0 +1,2439 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU Horan
+
+00:00:28,000 --> 00:00:29,000
+the
+
+00:00:29,000 --> 00:00:31,000
+
+
+00:00:31,000 --> 00:00:33,000
+the
+
+00:00:33,000 --> 00:00:38,000
+the in
+
+00:00:38,000 --> 00:00:40,000
+in
+
+00:00:40,000 --> 00:00:44,000
+the
+
+00:00:44,000 --> 00:00:47,000
+are in
+
+00:00:47,000 --> 00:00:54,000
+for in discussing the sampling theorem
+
+00:00:57,000 --> 00:01:00,000
+we saw date for a ban limited signal which is sampled
+
+00:01:00,000 --> 00:01:05,000
+at a frequency that that is at least twice the highest frequency
+
+00:01:05,000 --> 00:01:08,000
+we can implement exact reconstruction
+
+00:01:08,000 --> 00:01:13,000
+of the original signal by low-pass filtering
+
+00:01:13,000 --> 00:01:18,000
+an impulse train whose areas are identical to the sample values
+
+00:01:18,000 --> 00:01:21,000
+well essentially this low pass filtering
+
+00:01:21,000 --> 00:01:26,000
+operation provides for us and interpolation
+
+00:01:26,000 --> 00:01:30,000
+in between the sample values in other words the output to the low-pass filter
+
+00:01:30,000 --> 00:01:31,000
+in fact
+
+00:01:31,000 --> 00:01:34,000
+is a continuous curve which
+
+00:01:34,000 --> 00:01:38,000
+fits between a sample values some continuous function
+
+00:01:38,000 --> 00:01:44,000
+now I'm sure that many have you are familiar with other kinds of
+
+00:01:44,000 --> 00:01:46,000
+interpolation that we could potentially provide
+
+00:01:46,000 --> 00:01:50,000
+in between sample values and in fact in today's lecture
+
+00:01:50,000 --> 00:01:54,000
+why I would like to do is first the ball
+
+00:01:54,000 --> 00:01:58,000
+develop the interpretation
+
+00:01:58,000 --> 00:02:02,000
+all the reconstruction as an interpolation process
+
+00:02:02,000 --> 00:02:05,000
+and then also see how this
+
+00:02:05,000 --> 00:02:08,000
+exact interpolation using a low-pass filter
+
+00:02:08,000 --> 00:02:11,000
+relates to other kinds of interpolation
+
+00:02:11,000 --> 00:02:15,000
+such as linear interpolation that you may already be familiar with
+
+00:02:15,000 --> 00:02:19,000
+well to begin let's again review
+
+00:02:19,000 --> 00:02:23,000
+what the overall system is for exact reconstruction
+
+00:02:23,000 --> 00:02:27,000
+sampling and reconstruction and so let me remind you that
+
+00:02:27,000 --> 00:02:31,000
+the overall system for sampling and D sampling a reconstruction is as i
+
+00:02:31,000 --> 00:02:33,000
+indicate here
+
+00:02:33,000 --> 00:02:36,000
+the sampling process consists love
+
+00:02:36,000 --> 00:02:41,000
+multiplying by an impulse train and then the reconstruction process
+
+00:02:41,000 --> 00:02:44,000
+corresponds the processing that impulse train with
+
+00:02:44,000 --> 00:02:48,000
+a low-pass filter so if the
+
+00:02:48,000 --> 00:02:51,000
+spectrum of the original signal
+
+00:02:51,000 --> 00:02:55,000
+is what I indicate in this diagram
+
+00:02:55,000 --> 00:02:58,000
+then after sampling with an impulse train
+
+00:02:58,000 --> 00:03:02,000
+that spectrum is replicated and
+
+00:03:02,000 --> 00:03:06,000
+this replicated spectrum for reconstruction
+
+00:03:06,000 --> 00:03:10,000
+is then processed through a low-pass filter
+
+00:03:10,000 --> 00:03:13,000
+and so in fact if this frequency response
+
+00:03:13,000 --> 00:03:18,000
+is an idea low-pass filter as i indicated on the diagram below
+
+00:03:18,000 --> 00:03:22,000
+then multiplying the
+
+00:03:22,000 --> 00:03:26,000
+spectrum of the sample signal by this extracts 4s
+
+00:03:26,000 --> 00:03:29,000
+just the portion all
+
+00:03:29,000 --> 00:03:33,000
+the spectrum centered around the origin
+
+00:03:33,000 --> 00:03:36,000
+and what we're left with then is the
+
+00:03:36,000 --> 00:03:39,000
+spectrum finally of the reconstructed signal
+
+00:03:39,000 --> 00:03:43,000
+which for the case of an idea low-pass filter
+
+00:03:43,000 --> 00:03:47,000
+is exactly equal to the spectrum of the original signal
+
+00:03:47,000 --> 00:03:50,000
+now that is the
+
+00:03:50,000 --> 00:03:54,000
+frequency domain picture
+
+00:03:54,000 --> 00:03:58,000
+all the sampling and reconstruction let's also look at
+
+00:03:58,000 --> 00:04:02,000
+basically the same process but let's examine it now
+
+00:04:02,000 --> 00:04:06,000
+in the time domain well in the time domain
+
+00:04:06,000 --> 00:04:10,000
+what we have is are original signal
+
+00:04:10,000 --> 00:04:14,000
+multiply it by an impulse train and
+
+00:04:14,000 --> 00:04:17,000
+this then is the sampled
+
+00:04:17,000 --> 00:04:22,000
+signal or the impulse train whose areas are equal to the sample values
+
+00:04:22,000 --> 00:04:27,000
+and because it the fact that this is an impulse train
+
+00:04:27,000 --> 00:04:30,000
+in fact we can take this term
+
+00:04:30,000 --> 00:04:33,000
+inside the summation
+
+00:04:33,000 --> 00:04:37,000
+and of course what counts about except Ian this expression
+
+00:04:37,000 --> 00:04:41,000
+is just as bad use at the sampling instants
+
+00:04:41,000 --> 00:04:45,000
+which are displaced in time by capital T and so
+
+00:04:45,000 --> 00:04:49,000
+to what we can to quietly right is the
+
+00:04:49,000 --> 00:04:53,000
+expression for the impulse train samples or
+
+00:04:53,000 --> 00:04:57,000
+imposed strain of samples as i've indicated here
+
+00:04:57,000 --> 00:05:03,000
+simply an imposed strain whose areas are the sample bad
+
+00:05:03,000 --> 00:05:07,000
+now in the reconstruction we process
+
+00:05:07,000 --> 00:05:12,000
+that impulse train with a low-pass filter that's the basic notion of the
+
+00:05:12,000 --> 00:05:13,000
+reconstruction
+
+00:05:13,000 --> 00:05:18,000
+and so in the time domain be reconstructed signal
+
+00:05:18,000 --> 00:05:23,000
+is related to the imposed strain of samples
+
+00:05:23,000 --> 00:05:28,000
+through a convolution with the filter impulse response
+
+00:05:28,000 --> 00:05:31,000
+and carrying out this convolution since
+
+00:05:31,000 --> 00:05:36,000
+this is just the train of pulses in effect what happens in this convolution
+
+00:05:36,000 --> 00:05:40,000
+is dead this impulse response gets
+
+00:05:40,000 --> 00:05:44,000
+reproduced at each of the locations 0
+
+00:05:44,000 --> 00:05:48,000
+the impulses index a PFD with the appropriate area
+
+00:05:48,000 --> 00:05:53,000
+and finally then in the time domain the reconstructed signal
+
+00:05:53,000 --> 00:05:57,000
+is simply a linear combination
+
+00:05:57,000 --> 00:06:01,000
+love shifted versions of the impulse response
+
+00:06:01,000 --> 00:06:05,000
+with amplitudes Witcher the sample values
+
+00:06:05,000 --> 00:06:09,000
+and so this expression in fact and is our basic
+
+00:06:09,000 --> 00:06:14,000
+reconstruction expression in the time domain
+
+00:06:14,000 --> 00:06:18,000
+well in terms of a diagram
+
+00:06:18,000 --> 00:06:21,000
+we can think of the original waveform
+
+00:06:21,000 --> 00:06:24,000
+as I've shown here and
+
+00:06:24,000 --> 00:06:27,000
+the red arrows denote be
+
+00:06:27,000 --> 00:06:30,000
+sampled waveform or the train
+
+00:06:30,000 --> 00:06:33,000
+love impulses whose amplitude are
+
+00:06:33,000 --> 00:06:37,000
+the sample values up the original
+
+00:06:37,000 --> 00:06:41,000
+continuous-time signal and
+
+00:06:41,000 --> 00:06:46,000
+then I've shown here it what might be a typical impulse response
+
+00:06:46,000 --> 00:06:50,000
+particularly typical in the case where we're talking about reconstruction with
+
+00:06:50,000 --> 00:06:53,000
+an ideal 0 pass filter
+
+00:06:53,000 --> 00:06:57,000
+now what happens in the reconstruction
+
+00:06:57,000 --> 00:07:00,000
+is that the convolution love these
+
+00:07:00,000 --> 00:07:04,000
+impulses with this impulse response
+
+00:07:04,000 --> 00:07:07,000
+means that in the reconstruction
+
+00:07:07,000 --> 00:07:11,000
+we superimpose wanted these impulse responses whatever the filter IPO's
+
+00:07:11,000 --> 00:07:13,000
+response happens to be
+
+00:07:13,000 --> 00:07:18,000
+at each of these time instants and in doing that
+
+00:07:18,000 --> 00:07:23,000
+then those are added up and that gives us the total reconstructed signal
+
+00:07:23,000 --> 00:07:28,000
+of course for the case in which the filter is an ideal
+
+00:07:28,000 --> 00:07:33,000
+low-pass filter then what we know is that in that case
+
+00:07:33,000 --> 00:07:38,000
+the impulse response is on the form of a sync function
+
+00:07:38,000 --> 00:07:43,000
+but generally we may want to consider other kinds of impulse responses and so
+
+00:07:43,000 --> 00:07:44,000
+in fact
+
+00:07:44,000 --> 00:07:47,000
+the interpolating impulse response
+
+00:07:47,000 --> 00:07:50,000
+may have and will have is this discussion goes along some different
+
+00:07:50,000 --> 00:07:52,000
+shapes
+
+00:07:52,000 --> 00:07:57,000
+now what I'd like to do is illustrator demonstrate this process
+
+00:07:57,000 --> 00:08:02,000
+love all affectively doing the interpolation
+
+00:08:02,000 --> 00:08:06,000
+by replacing each of the impulses
+
+00:08:06,000 --> 00:08:10,000
+by an appropriate interpolating impulse response and adding the stop
+
+00:08:10,000 --> 00:08:14,000
+and I'd like to do this with a computer movie that we generated
+
+00:08:14,000 --> 00:08:17,000
+and what you're seeing the computer movie is
+
+00:08:17,000 --> 00:08:21,000
+essentially original way for which is a continuous curve
+
+00:08:21,000 --> 00:08:25,000
+and then below that in the movie
+
+00:08:25,000 --> 00:08:29,000
+is a train samples
+
+00:08:29,000 --> 00:08:33,000
+and then below that will be the reconstructed signal and the
+
+00:08:33,000 --> 00:08:34,000
+reconstruction
+
+00:08:34,000 --> 00:08:40,000
+will be carried out by showing the location of the impulse response as it
+
+00:08:40,000 --> 00:08:42,000
+moves along in the way form
+
+00:08:42,000 --> 00:08:47,000
+and then the reconstructed kurt is simply the summation of those is that
+
+00:08:47,000 --> 00:08:49,000
+impulse response moves along
+
+00:08:49,000 --> 00:08:54,000
+so what you'll see then is an impulse response like this for the particular
+
+00:08:54,000 --> 00:08:55,000
+case
+
+00:08:55,000 --> 00:08:59,000
+love and idea low-pass filter for the reconstruction
+
+00:08:59,000 --> 00:09:02,000
+an impulse response like this place
+
+00:09:02,000 --> 00:09:05,000
+successively at the locations love
+
+00:09:05,000 --> 00:09:10,000
+these impulses and that is the convolution process
+
+00:09:10,000 --> 00:09:14,000
+and below that then will be the summation if these
+
+00:09:14,000 --> 00:09:18,000
+and the summation up those will then be the reconstructed signal
+
+00:09:18,000 --> 00:09:23,000
+so let's take a look at first of all that reconstruction
+
+00:09:23,000 --> 00:09:26,000
+where the impulse response corresponds to the impulse response
+
+00:09:26,000 --> 00:09:30,000
+have an idea low-pass filter shown here first
+
+00:09:30,000 --> 00:09:34,000
+is the continuous-time signal which
+
+00:09:34,000 --> 00:09:38,000
+we want to sample and then reconstruct using
+
+00:09:38,000 --> 00:09:41,000
+fan limited interpolation or equivalently
+
+00:09:41,000 --> 00:09:45,000
+idea low-pass filtering on the set of samples
+
+00:09:45,000 --> 00:09:49,000
+so the first step then is the sample this continuous time signal
+
+00:09:49,000 --> 00:09:53,000
+and we see here now the set of samples
+
+00:09:53,000 --> 00:09:58,000
+and superimposed on the samples are the original continuous 5 signal
+
+00:09:58,000 --> 00:10:03,000
+to focus on the fact that those are samples are the top curve
+
+00:10:03,000 --> 00:10:07,000
+let's now remove the continuous-time
+
+00:10:07,000 --> 00:10:12,000
+envelope with the samples and it's this set of samples that we then want to use
+
+00:10:12,000 --> 00:10:14,000
+for the reconstruction
+
+00:10:14,000 --> 00:10:17,000
+the reconstruction process interpreted as interpolation
+
+00:10:17,000 --> 00:10:22,000
+consists of replacing each sample with a sin x over X function
+
+00:10:22,000 --> 00:10:26,000
+and so let's first consider the sample
+
+00:10:26,000 --> 00:10:30,000
+at equal 0 and here is the
+
+00:10:30,000 --> 00:10:33,000
+interpolating sin x over X function Associated
+
+00:10:33,000 --> 00:10:37,000
+with that sample now the more general
+
+00:10:37,000 --> 00:10:40,000
+process then is to
+
+00:10:40,000 --> 00:10:45,000
+place a sin x over expulsion at the time location of each sample and superimpose
+
+00:10:45,000 --> 00:10:48,000
+those
+
+00:10:48,000 --> 00:10:52,000
+let's begin that process at the left-hand and
+
+00:10:52,000 --> 00:10:56,000
+the set of samples and in the bottom curve
+
+00:10:56,000 --> 00:11:00,000
+will build up the reconstruction as those sin x over X functions
+
+00:11:00,000 --> 00:11:05,000
+are added together so we begin with the left hand sample and we see their the
+
+00:11:05,000 --> 00:11:06,000
+sin x over X function
+
+00:11:06,000 --> 00:11:11,000
+on the bottom curve then is the first step in the reconstruction
+
+00:11:11,000 --> 00:11:15,000
+we now have the sin x over X function associated with the second sample
+
+00:11:15,000 --> 00:11:19,000
+let's add that in now we move on
+
+00:11:19,000 --> 00:11:24,000
+to the third sample and that sin x over X function
+
+00:11:24,000 --> 00:11:27,000
+is added in
+
+00:11:27,000 --> 00:11:31,000
+continuing on the next
+
+00:11:31,000 --> 00:11:34,000
+sample generates a sin x over X function
+
+00:11:34,000 --> 00:11:38,000
+which is superimposed on the result that we've accumulated
+
+00:11:38,000 --> 00:11:41,000
+so far and now let's just
+
+00:11:41,000 --> 00:11:45,000
+speed up the process will move on to the fifth sample
+
+00:11:45,000 --> 00:11:48,000
+add that in the sect sample add that in
+
+00:11:48,000 --> 00:11:52,000
+and continue on through the set of samples and
+
+00:11:52,000 --> 00:11:56,000
+keep in mind the fact that basically what we're doing explicitly here
+
+00:11:56,000 --> 00:12:02,000
+is the convolution up the impulse train with a sin x over X function
+
+00:12:02,000 --> 00:12:05,000
+and because the set of samples that we started with
+
+00:12:05,000 --> 00:12:08,000
+where samples haven't exactly been limited function
+
+00:12:08,000 --> 00:12:12,000
+what we are reconstructing exactly
+
+00:12:12,000 --> 00:12:15,000
+is the original continuous-time signal
+
+00:12:15,000 --> 00:12:22,000
+that we have on the top trace
+
+00:12:24,000 --> 00:12:27,000
+okay so that then
+
+00:12:27,000 --> 00:12:31,000
+kinda gives you the picture above doing
+
+00:12:31,000 --> 00:12:36,000
+interpolation by replacing the impulses by a continuous curve and that's the way
+
+00:12:36,000 --> 00:12:37,000
+we're fitting
+
+00:12:37,000 --> 00:12:40,000
+a continuous curve to the original
+
+00:12:40,000 --> 00:12:44,000
+impulse train and let me stress
+
+00:12:44,000 --> 00:12:47,000
+that this reconstruction process
+
+00:12:47,000 --> 00:12:50,000
+by putting the impulses through
+
+00:12:50,000 --> 00:12:54,000
+a filter the reconstruction process
+
+00:12:54,000 --> 00:12:58,000
+follows this relationship whether or not
+
+00:12:58,000 --> 00:13:03,000
+this impulse response in fact corresponds to an ideal ok pass filter
+
+00:13:03,000 --> 00:13:08,000
+what this expression always says is dead reconstructing this way
+
+00:13:08,000 --> 00:13:11,000
+corresponds to replacing the impulses
+
+00:13:11,000 --> 00:13:15,000
+by a shift in impulse response with an effort to
+
+00:13:15,000 --> 00:13:22,000
+dead is an amplitude corresponding to the sample value now
+
+00:13:22,000 --> 00:13:27,000
+be kinda reconstruction dead we've just talked about and the ideal
+
+00:13:27,000 --> 00:13:28,000
+reconstruction
+
+00:13:28,000 --> 00:13:33,000
+is often referred to as band limited
+
+00:13:33,000 --> 00:13:37,000
+interpolation because for interpolating in between the samples
+
+00:13:37,000 --> 00:13:40,000
+by making the assumption that the signals ban limited
+
+00:13:40,000 --> 00:13:45,000
+and using the impulse response for an idea low-pass filter
+
+00:13:45,000 --> 00:13:49,000
+which has a cutoff frequency consistent with
+
+00:13:49,000 --> 00:13:53,000
+the soon band with for the signal so if we look
+
+00:13:53,000 --> 00:13:57,000
+here for example at the impulse train
+
+00:13:57,000 --> 00:14:00,000
+then in the demonstration that you just saw
+
+00:14:00,000 --> 00:14:06,000
+we built up the reconstructed curve by replacing each of these impulses
+
+00:14:06,000 --> 00:14:09,000
+with the sync function and the some of those
+
+00:14:09,000 --> 00:14:14,000
+built up the reconstruct the curve well
+
+00:14:14,000 --> 00:14:17,000
+there are lots of other kinds of interpolation
+
+00:14:17,000 --> 00:14:20,000
+dead are perhaps maybe not as exact
+
+00:14:20,000 --> 00:14:25,000
+by often easier to implement and what I'd like to do is focus our attention on
+
+00:14:25,000 --> 00:14:26,000
+to appease
+
+00:14:26,000 --> 00:14:31,000
+one of these the first that I want to mention is what's referred to as a
+
+00:14:31,000 --> 00:14:32,000
+zero-order hold
+
+00:14:32,000 --> 00:14:36,000
+where in effect we do the interpolation in between these
+
+00:14:36,000 --> 00:14:40,000
+sample values by simply holding the sample value
+
+00:14:40,000 --> 00:14:45,000
+until the next sampling instant and the reconstruction
+
+00:14:45,000 --> 00:14:49,000
+that we end up with in that that case will look something like this:
+
+00:14:49,000 --> 00:14:52,000
+it's a staircase or boxcar kinda function
+
+00:14:52,000 --> 00:14:56,000
+where we've simply held the sample value
+
+00:14:56,000 --> 00:15:01,000
+until the next sampling instant and then replaced by that value held until the
+
+00:15:01,000 --> 00:15:02,000
+next sampling instant et cetera
+
+00:15:02,000 --> 00:15:07,000
+now that's one kinda interpolation
+
+00:15:07,000 --> 00:15:10,000
+another kinda very common interpolation is
+
+00:15:10,000 --> 00:15:13,000
+what's referred to as linear interpolation we simply fit
+
+00:15:13,000 --> 00:15:18,000
+a straight line between the sample values and in that case
+
+00:15:18,000 --> 00:15:21,000
+the cut be type reconstruction that we would get
+
+00:15:21,000 --> 00:15:26,000
+would look something like I indicate here where we take a sample value
+
+00:15:26,000 --> 00:15:32,000
+and the following sample value and simply fit interpolated curve between
+
+00:15:32,000 --> 00:15:33,000
+them
+
+00:15:33,000 --> 00:15:37,000
+which is a straight line now
+
+00:15:37,000 --> 00:15:41,000
+interestingly in fact both the zero-order hold
+
+00:15:41,000 --> 00:15:44,000
+and the linear interpolation which is
+
+00:15:44,000 --> 00:15:48,000
+often referred to as a first-order hold can also
+
+00:15:48,000 --> 00:15:53,000
+be either implemented or interpreted both implemented interpreted
+
+00:15:53,000 --> 00:15:56,000
+in the context of the equation that we just develop
+
+00:15:56,000 --> 00:15:59,000
+in particular the processing I'll the
+
+00:15:59,000 --> 00:16:03,000
+imposed strain of samples by
+
+00:16:03,000 --> 00:16:06,000
+a linear time-invariant filter specifically
+
+00:16:06,000 --> 00:16:10,000
+if we consider a
+
+00:16:10,000 --> 00:16:13,000
+system where the impulse response
+
+00:16:13,000 --> 00:16:17,000
+is a rectangular function
+
+00:16:17,000 --> 00:16:20,000
+then in fact if
+
+00:16:20,000 --> 00:16:24,000
+we processed the train if samples
+
+00:16:24,000 --> 00:16:28,000
+through a filter with this impulse response exactly
+
+00:16:28,000 --> 00:16:32,000
+the reconstruction that we would get is what I've shown here
+
+00:16:32,000 --> 00:16:36,000
+alternatively if we chose an impulse response
+
+00:16:36,000 --> 00:16:39,000
+which was a triangular
+
+00:16:39,000 --> 00:16:43,000
+impulse response then
+
+00:16:43,000 --> 00:16:46,000
+what in effect happens is that each of these impulses
+
+00:16:46,000 --> 00:16:49,000
+activates this triangle
+
+00:16:49,000 --> 00:16:55,000
+and when we add up those triangles at successive locations in fact
+
+00:16:55,000 --> 00:16:59,000
+what we generate is this linear interpolation
+
+00:16:59,000 --> 00:17:03,000
+so what this says in fact is dead
+
+00:17:03,000 --> 00:17:06,000
+either a zero-order hold
+
+00:17:06,000 --> 00:17:09,000
+which holds the value or linear interpolation
+
+00:17:09,000 --> 00:17:13,000
+can likewise be interpreted as a process
+
+00:17:13,000 --> 00:17:17,000
+love convolved thing the impulse trainer samples
+
+00:17:17,000 --> 00:17:21,000
+with inappropriate filter impulse response
+
+00:17:21,000 --> 00:17:24,000
+well what I'd like to do is demonstrate
+
+00:17:24,000 --> 00:17:27,000
+as we did with the ban limit interpolation or
+
+00:17:27,000 --> 00:17:33,000
+these sink interpolation is sometimes called interplay with a sin x over axe
+
+00:17:33,000 --> 00:17:36,000
+let me now show the process first the ball
+
+00:17:36,000 --> 00:17:40,000
+where we have a zero-order hold
+
+00:17:40,000 --> 00:17:44,000
+as corresponding to this impulse response
+
+00:17:44,000 --> 00:17:48,000
+in which case we'll see basically the same process as we saw your
+
+00:17:48,000 --> 00:17:52,000
+in the computer-generated movie previously
+
+00:17:52,000 --> 00:17:55,000
+but now rather than a sync function replacing
+
+00:17:55,000 --> 00:17:59,000
+each of these impulses will have a rectangular function
+
+00:17:59,000 --> 00:18:06,000
+that will generate then are approximation which is a zero-order hold
+
+00:18:06,000 --> 00:18:10,000
+and following that will do exactly the same thing with the same way form
+
+00:18:10,000 --> 00:18:14,000
+using a first-order hold or a triangular impulse response
+
+00:18:14,000 --> 00:18:20,000
+in which case well we'll see again is that as the triangle moves along here
+
+00:18:20,000 --> 00:18:24,000
+and we build up the running some or the convolution
+
+00:18:24,000 --> 00:18:27,000
+then will in fact fit the original curve
+
+00:18:27,000 --> 00:18:31,000
+with a linear curve soul now let's
+
+00:18:31,000 --> 00:18:34,000
+again look at that remembering that at the top will see
+
+00:18:34,000 --> 00:18:38,000
+the original continuous curve exactly the one that we had before
+
+00:18:38,000 --> 00:18:42,000
+below it the set of samples together with
+
+00:18:42,000 --> 00:18:47,000
+the impulse response moving along and then finally below that
+
+00:18:47,000 --> 00:18:51,000
+the accumulation of those impulse responses work with only
+
+00:18:51,000 --> 00:18:56,000
+the convolution or equivalent Lee the reconstruction
+
+00:18:56,000 --> 00:19:01,000
+so we have the same continuous-time signal that we use previously with
+
+00:19:01,000 --> 00:19:04,000
+ban limited interpolation and in this case
+
+00:19:04,000 --> 00:19:09,000
+now we want to sample and then interpolate first for the zero-order
+
+00:19:09,000 --> 00:19:10,000
+hold
+
+00:19:10,000 --> 00:19:13,000
+and then with the first-order whole so the first step then
+
+00:19:13,000 --> 00:19:17,000
+is the sample the continuous-time signal
+
+00:19:17,000 --> 00:19:21,000
+and we show here at the set of samples once again
+
+00:19:21,000 --> 00:19:25,000
+superimposed on which we have the continuous-time signal
+
+00:19:25,000 --> 00:19:28,000
+which of course is exactly the same curve as
+
+00:19:28,000 --> 00:19:31,000
+we have in the top well let's
+
+00:19:31,000 --> 00:19:34,000
+remove that envelope so that we focus attention
+
+00:19:34,000 --> 00:19:37,000
+on the samples that were using to interpolate
+
+00:19:37,000 --> 00:19:42,000
+any interpolation process consists love replacing each sample
+
+00:19:42,000 --> 00:19:46,000
+by a rectangular signal
+
+00:19:46,000 --> 00:19:49,000
+whose amplitude is equal to the sample size
+
+00:19:49,000 --> 00:19:53,000
+so let's put one first of all at equal 0 Associated
+
+00:19:53,000 --> 00:19:56,000
+with that sample
+
+00:19:56,000 --> 00:20:02,000
+and that then would be the interpolating rectangle associated with the sample at
+
+00:20:02,000 --> 00:20:04,000
+equal 0
+
+00:20:04,000 --> 00:20:08,000
+now to build up the interpolation what will have is one of those that each
+
+00:20:08,000 --> 00:20:10,000
+sample time and those are
+
+00:20:10,000 --> 00:20:14,000
+added together will start that process as we did before
+
+00:20:14,000 --> 00:20:17,000
+at the left hand and that the set of samples
+
+00:20:17,000 --> 00:20:21,000
+and build the interpolating signal on the bottom so
+
+00:20:21,000 --> 00:20:24,000
+with the left hand sample we have first
+
+00:20:24,000 --> 00:20:28,000
+the rectangle associated with that that shown
+
+00:20:28,000 --> 00:20:32,000
+now on the bottom curve we now
+
+00:20:32,000 --> 00:20:35,000
+have a senator plating rectangle with the second
+
+00:20:35,000 --> 00:20:40,000
+sample that gets headed into the bottom curve
+
+00:20:40,000 --> 00:20:44,000
+similarly and interpolating rectangle for the zero-order hold
+
+00:20:44,000 --> 00:20:49,000
+with the third sample we had bad in to the bottom curve
+
+00:20:49,000 --> 00:20:53,000
+and as we proceed we're building a staircase approximation
+
+00:20:53,000 --> 00:20:57,000
+on to the next sample that gets added in
+
+00:20:57,000 --> 00:21:00,000
+as we see the air and now lets speed up the process
+
+00:21:00,000 --> 00:21:03,000
+and we'll see the staircase approximation
+
+00:21:03,000 --> 00:21:07,000
+building up and notice in this case
+
+00:21:07,000 --> 00:21:11,000
+as in the previous case that what we're basically watching dynamically
+
+00:21:11,000 --> 00:21:16,000
+is the convolution love the imposed strain of samples
+
+00:21:16,000 --> 00:21:19,000
+with the impulse response the interpolating filter
+
+00:21:19,000 --> 00:21:24,000
+which in this particular case is just a rectangular Paul's
+
+00:21:24,000 --> 00:21:28,000
+and so this staircase approximation that we're generating
+
+00:21:28,000 --> 00:21:31,000
+is the zero-order hold interpolation
+
+00:21:31,000 --> 00:21:34,000
+between the samples I love the
+
+00:21:34,000 --> 00:21:41,000
+ban limited signal which is at the top
+
+00:21:41,000 --> 00:21:46,000
+now let's do the same thing with the first-order whole so in this case
+
+00:21:46,000 --> 00:21:51,000
+we want to interpolate using a triangular impulse response
+
+00:21:51,000 --> 00:21:55,000
+rather than the sin x over X or rectangular impulse responses that we
+
+00:21:55,000 --> 00:21:56,000
+showed previously
+
+00:21:56,000 --> 00:22:01,000
+so first let's say with the sample it equals 0
+
+00:22:01,000 --> 00:22:06,000
+we would replace that with a triangular
+
+00:22:06,000 --> 00:22:09,000
+interpolating function and more generally
+
+00:22:09,000 --> 00:22:13,000
+each in polls or sample is replaced with a triangular
+
+00:22:13,000 --> 00:22:17,000
+interpolating function of the height equal to the sample height
+
+00:22:17,000 --> 00:22:21,000
+and these are superposed to generate the linear interpolation
+
+00:22:21,000 --> 00:22:24,000
+will begin this process with the leftmost
+
+00:22:24,000 --> 00:22:28,000
+sample and will build the superposition
+
+00:22:28,000 --> 00:22:32,000
+below and the bottom curve so here
+
+00:22:32,000 --> 00:22:35,000
+is the interpolating triangle for the
+
+00:22:35,000 --> 00:22:40,000
+leftmost sample and now it's reproduced below
+
+00:22:40,000 --> 00:22:45,000
+with the second sample we have an interpolating triangle which is added
+
+00:22:45,000 --> 00:22:46,000
+into the bottom
+
+00:22:46,000 --> 00:22:50,000
+curve and now on to the third sample
+
+00:22:50,000 --> 00:22:55,000
+and again that interpolating triangle will be added onto
+
+00:22:55,000 --> 00:22:59,000
+the curve that we've developed so far
+
+00:22:59,000 --> 00:23:03,000
+and now on to the next sample
+
+00:23:03,000 --> 00:23:07,000
+we had that in there will speed up the process
+
+00:23:07,000 --> 00:23:10,000
+and as we proceed through
+
+00:23:10,000 --> 00:23:15,000
+we are building basically a linear interpolation
+
+00:23:15,000 --> 00:23:18,000
+in between the sample points
+
+00:23:18,000 --> 00:23:22,000
+a sexually corresponding to if one wants to think of it this way connecting the
+
+00:23:22,000 --> 00:23:23,000
+dots
+
+00:23:23,000 --> 00:23:28,000
+and what you're watching once again is essentially the convolution process
+
+00:23:28,000 --> 00:23:32,000
+involving the impulse train with the impulse response
+
+00:23:32,000 --> 00:23:36,000
+the interpolating filter and what we're generating then
+
+00:23:36,000 --> 00:23:40,000
+is a linear approximation
+
+00:23:40,000 --> 00:23:47,000
+to the fam limited continuous-time curve at the top
+
+00:23:48,000 --> 00:23:52,000
+okay so what we have then is
+
+00:23:52,000 --> 00:23:56,000
+several other kinds of interpolation which
+
+00:23:56,000 --> 00:23:59,000
+fit within the same context as
+
+00:23:59,000 --> 00:24:03,000
+exact ban limit interpolation one being
+
+00:24:03,000 --> 00:24:08,000
+interpolation in the time domain with an impulse response which is a rectangle
+
+00:24:08,000 --> 00:24:11,000
+the second being interpolation in the time domain
+
+00:24:11,000 --> 00:24:15,000
+with an impulse response which is a triangle
+
+00:24:15,000 --> 00:24:18,000
+and in fact its interesting to also
+
+00:24:18,000 --> 00:24:22,000
+look at the relationship between at and ban limit interpolation
+
+00:24:22,000 --> 00:24:27,000
+look at it specifically in the frequency domain
+
+00:24:27,000 --> 00:24:30,000
+well in the frequency-domain
+
+00:24:30,000 --> 00:24:35,000
+what we know of course is dead for exact interpolation
+
+00:24:35,000 --> 00:24:40,000
+what we want as our interpolating filter is an ideal Lopez filter
+
+00:24:40,000 --> 00:24:45,000
+now keep in mind by the way that an idea low-pass filter is an abstraction is a
+
+00:24:45,000 --> 00:24:49,000
+stress several times in the past an idea low-pass filter
+
+00:24:49,000 --> 00:24:54,000
+is a9 causal filter and in fact infinite extent which is
+
+00:24:54,000 --> 00:24:58,000
+one of the reasons why in any case we would you some approximation to it
+
+00:24:58,000 --> 00:25:02,000
+but here what we have is the
+
+00:25:02,000 --> 00:25:05,000
+exact interpolating filter
+
+00:25:05,000 --> 00:25:11,000
+and that corresponds to an ideal 0 pass filter
+
+00:25:11,000 --> 00:25:16,000
+if instead we carried out the interpolation
+
+00:25:16,000 --> 00:25:20,000
+using the zero-order hold the zero-order hold has a
+
+00:25:20,000 --> 00:25:25,000
+rectangular impulse response and that means in the frequency domain
+
+00:25:25,000 --> 00:25:28,000
+its frequency response is of the form love
+
+00:25:28,000 --> 00:25:31,000
+a sync function or sin x over iraq's
+
+00:25:31,000 --> 00:25:35,000
+and so this in fact when we're doing the reconstruction
+
+00:25:35,000 --> 00:25:40,000
+with a zero-order hold is The Associated frequency response
+
+00:25:40,000 --> 00:25:46,000
+now notice that it does some approximate Lopez filtering but of course
+
+00:25:46,000 --> 00:25:50,000
+it has significant it permits significant energy
+
+00:25:50,000 --> 00:25:53,000
+outside the pass band at the filter
+
+00:25:53,000 --> 00:25:58,000
+well instead the zero-order hold if we use the first-order hold corresponding
+
+00:25:58,000 --> 00:26:01,000
+to the triangular impulse response
+
+00:26:01,000 --> 00:26:05,000
+in that case then in the frequency domain The Associated
+
+00:26:05,000 --> 00:26:09,000
+frequency response would be the forty a transformer the triangle
+
+00:26:09,000 --> 00:26:13,000
+and the Fourier transform a triangle is a sin squared
+
+00:26:13,000 --> 00:26:16,000
+X over X where'd kinda function
+
+00:26:16,000 --> 00:26:19,000
+and so in that case what we would have
+
+00:26:19,000 --> 00:26:23,000
+for the frequency response associated with the first-order hold
+
+00:26:23,000 --> 00:26:27,000
+is a frequency response as I show here
+
+00:26:27,000 --> 00:26:33,000
+and the fact dead that there's somewhat more attenuation
+
+00:26:33,000 --> 00:26:36,000
+outside the pass band at the ideal filter
+
+00:26:36,000 --> 00:26:42,000
+is what suggests in fact dead the first-order hold or linear interpolation
+
+00:26:42,000 --> 00:26:46,000
+gives us a somewhat smoother approximation to the original
+
+00:26:46,000 --> 00:26:49,000
+signal then the zero-order hold does
+
+00:26:49,000 --> 00:26:52,000
+and so in fact just to compare these two
+
+00:26:52,000 --> 00:26:56,000
+we can see that here is
+
+00:26:56,000 --> 00:26:59,000
+the ideal filter here is
+
+00:26:59,000 --> 00:27:02,000
+the zero-order hold corresponding to
+
+00:27:02,000 --> 00:27:05,000
+generating a boxcar kinda reconstruction
+
+00:27:05,000 --> 00:27:12,000
+and here is the first order hold corresponding to a linear interpolation
+
+00:27:12,000 --> 00:27:16,000
+now in fact in many sampling systems
+
+00:27:16,000 --> 00:27:20,000
+in any sampling system really we need to use some approximation
+
+00:27:20,000 --> 00:27:25,000
+to the low-pass filter and very often in fact
+
+00:27:25,000 --> 00:27:29,000
+what is done in many sampling systems is the first to use
+
+00:27:29,000 --> 00:27:33,000
+just a zero-order hold and then follow the zero-order hold
+
+00:27:33,000 --> 00:27:37,000
+with some additional 0 pass filtering
+
+00:27:37,000 --> 00:27:41,000
+well to illustrate some with these ideas
+
+00:27:41,000 --> 00:27:44,000
+and the notion love doing reconstruction
+
+00:27:44,000 --> 00:27:48,000
+with a zero-order hold a first-order hold and then in fact
+
+00:27:48,000 --> 00:27:53,000
+are ending to that some additional 0 pass filtering
+
+00:27:53,000 --> 00:27:57,000
+what I'd like to do is is demonstrator illustrate
+
+00:27:57,000 --> 00:28:01,000
+sampling and interpolation in the context love some images
+
+00:28:01,000 --> 00:28:05,000
+image of course is a two-dimensional signal the
+
+00:28:05,000 --> 00:28:09,000
+the independent variables are spatial variables not time variables
+
+00:28:09,000 --> 00:28:15,000
+and of course we can sample in both or the spatial dimensions both in X&Y
+
+00:28:15,000 --> 00:28:19,000
+and were chosen as so
+
+00:28:19,000 --> 00:28:22,000
+a possibly appropriate choice for
+
+00:28:22,000 --> 00:28:29,000
+an image is again our friend and colleague JBJ 48
+
+00:28:29,000 --> 00:28:33,000
+so let's begin with the original image which we then
+
+00:28:33,000 --> 00:28:38,000
+want to sample and reconstruct and a sampling is done by
+
+00:28:38,000 --> 00:28:43,000
+effectively multiplying by appalls both horizontally and vertically
+
+00:28:43,000 --> 00:28:46,000
+the sample picture is then the next one
+
+00:28:46,000 --> 00:28:51,000
+that I show and as you can see this corresponds in effect
+
+00:28:51,000 --> 00:28:55,000
+to extracting small brightness elements I did the original image in fact
+
+00:28:55,000 --> 00:29:01,000
+let's look in a little closer and what you can see essentially is that
+
+00:29:01,000 --> 00:29:04,000
+well we have of course tonight impulses spatially but
+
+00:29:04,000 --> 00:29:07,000
+small spatial pillars dead
+
+00:29:07,000 --> 00:29:11,000
+implement the sampling for us okay now
+
+00:29:11,000 --> 00:29:15,000
+going back to the original sample picture
+
+00:29:15,000 --> 00:29:19,000
+we know that a picture can be reconstructed by low-pass filtering from
+
+00:29:19,000 --> 00:29:21,000
+the samples and in fact
+
+00:29:21,000 --> 00:29:26,000
+we can do that optically in this case by simply d focusing the camera
+
+00:29:26,000 --> 00:29:31,000
+and when we do that what happens is that we smear out the picture
+
+00:29:31,000 --> 00:29:35,000
+or affectively convolved the impulses with the point spread function of the
+
+00:29:35,000 --> 00:29:36,000
+optical system
+
+00:29:36,000 --> 00:29:40,000
+an this then is not too bad a reconstruction
+
+00:29:40,000 --> 00:29:46,000
+so thats a an approximate reconstruction and focusing back now
+
+00:29:46,000 --> 00:29:53,000
+what we have again is the sample picture
+
+00:29:53,000 --> 00:29:57,000
+now these images are in fact a can often of
+
+00:29:57,000 --> 00:30:01,000
+a computer display and a common procedure in
+
+00:30:01,000 --> 00:30:05,000
+computer-generated are displayed image is is in fact
+
+00:30:05,000 --> 00:30:10,000
+the use of a zero-order hold and if the sampling rate is high enough
+
+00:30:10,000 --> 00:30:14,000
+then that actually works reasonably well so now
+
+00:30:14,000 --> 00:30:17,000
+let's look at the result of applying a zero-order hold
+
+00:30:17,000 --> 00:30:20,000
+to the sampled image that I
+
+00:30:20,000 --> 00:30:24,000
+just showed
+
+00:30:24,000 --> 00:30:29,000
+the zero-order hold corresponds to replacing the impulses by
+
+00:30:29,000 --> 00:30:33,000
+rectangles and you can see that what that generates
+
+00:30:33,000 --> 00:30:36,000
+is a mosaic affect as you would
+
+00:30:36,000 --> 00:30:40,000
+expect and in fact let's going a little closer and
+
+00:30:40,000 --> 00:30:44,000
+emphasize the mosaic affect you can see that essentially where they were
+
+00:30:44,000 --> 00:30:46,000
+impulses previously
+
+00:30:46,000 --> 00:30:50,000
+there are now rectangles with those brightness values
+
+00:30:50,000 --> 00:30:55,000
+a very common procedure with computer-generated images is the first
+
+00:30:55,000 --> 00:30:58,000
+20 order holders we've done here
+
+00:30:58,000 --> 00:31:03,000
+and then follow that with some additional ok pass filtering and in fact
+
+00:31:03,000 --> 00:31:07,000
+we can do that low pass filtering now again by D focusing the camera
+
+00:31:07,000 --> 00:31:11,000
+and you can't begin to see
+
+00:31:11,000 --> 00:31:15,000
+dead with the zero-order all plus the low-pass filtering the reconstruction is
+
+00:31:15,000 --> 00:31:17,000
+not that bad
+
+00:31:17,000 --> 00:31:20,000
+well let's go back to the full
+
+00:31:20,000 --> 00:31:23,000
+image with the zero-order hold
+
+00:31:23,000 --> 00:31:29,000
+and again now the effective low pass filter I will be
+
+00:31:29,000 --> 00:31:33,000
+somewhat better and let's tee focus again year
+
+00:31:33,000 --> 00:31:36,000
+and you can begin to see that this is
+
+00:31:36,000 --> 00:31:40,000
+a reasonable reconstruction with the mosaic
+
+00:31:40,000 --> 00:31:44,000
+in fact with this back in focus you can
+
+00:31:44,000 --> 00:31:48,000
+apply your own low-pass filtering to it either by squinting
+
+00:31:48,000 --> 00:31:52,000
+or if you have the right or wrong kind of my classes either taking them off for
+
+00:31:52,000 --> 00:31:55,000
+putting them on
+
+00:31:55,000 --> 00:32:00,000
+now in addition to the zero-order hold weekend of course apply a first-order
+
+00:32:00,000 --> 00:32:02,000
+hold and that would
+
+00:32:02,000 --> 00:32:07,000
+correspond to replacing the impulses instead of with rectangles as we have
+
+00:32:07,000 --> 00:32:08,000
+here
+
+00:32:08,000 --> 00:32:11,000
+replacing them with triangles an
+
+00:32:11,000 --> 00:32:15,000
+so now let's take a look at the result all a first-order hold applied to the
+
+00:32:15,000 --> 00:32:18,000
+original samples
+
+00:32:18,000 --> 00:32:22,000
+and you can see now that the reconstruction is somewhat smoother
+
+00:32:22,000 --> 00:32:25,000
+because the fact that we're using an impulse response
+
+00:32:25,000 --> 00:32:29,000
+that somewhat smoother or a corresponding frequency response that
+
+00:32:29,000 --> 00:32:31,000
+has a sharper cut off
+
+00:32:31,000 --> 00:32:35,000
+i emphasize again that this is a somewhat low pass filtered version of
+
+00:32:35,000 --> 00:32:36,000
+the original because
+
+00:32:36,000 --> 00:32:39,000
+we have under sampled some what spatially
+
+00:32:39,000 --> 00:32:46,000
+to bring out the point that I want to illustrate
+
+00:32:46,000 --> 00:32:50,000
+okay to emphasize these effects
+
+00:32:50,000 --> 00:32:53,000
+even more what I'd like to do is go through
+
+00:32:53,000 --> 00:32:57,000
+basically the same sequence again but in this case what we'll do
+
+00:32:57,000 --> 00:33:02,000
+is double the sample spacing both horizontal horizontally and vertically
+
+00:33:02,000 --> 00:33:07,000
+this of course means there will be even more highly under sampled been
+
+00:33:07,000 --> 00:33:11,000
+in the ones that I preview show previously showed and so the result of
+
+00:33:11,000 --> 00:33:14,000
+the reconstructions with some low pass filtering
+
+00:33:14,000 --> 00:33:18,000
+will be a much more low-pass filtered image
+
+00:33:18,000 --> 00:33:24,000
+so we now have the sample picture but I've now under sampled considerably
+
+00:33:24,000 --> 00:33:28,000
+more and you can see the effect of the sampling
+
+00:33:28,000 --> 00:33:31,000
+and if we now apply is zero-order hold
+
+00:33:31,000 --> 00:33:35,000
+to this picture we will again get a mosaic and lets
+
+00:33:35,000 --> 00:33:40,000
+look at that and that mosaic of course looks
+
+00:33:40,000 --> 00:33:44,000
+even block here than the original and again emphasizes the fact that the
+
+00:33:44,000 --> 00:33:46,000
+zero-order hold
+
+00:33:46,000 --> 00:33:51,000
+simply corresponds to filling in squares or replacing the impulses
+
+00:33:51,000 --> 00:33:54,000
+by squares with the corresponding brightness
+
+00:33:54,000 --> 00:33:59,000
+values finally if we instead of a zero-order hold
+
+00:33:59,000 --> 00:34:04,000
+use a first-order hold corresponding to two-dimensional triangles in places
+
+00:34:04,000 --> 00:34:08,000
+in place at these original blocks what we get is
+
+00:34:08,000 --> 00:34:13,000
+the next image and that again is a smoother reconstruction consistent with
+
+00:34:13,000 --> 00:34:17,000
+the fact that the triangles are smoother than the rectangles
+
+00:34:17,000 --> 00:34:21,000
+again i emphasize that this looks so highly low-pass filtered
+
+00:34:21,000 --> 00:34:25,000
+because of the fact that we've under sampled so severely
+
+00:34:25,000 --> 00:34:31,000
+to essentially emphasize the effect
+
+00:34:31,000 --> 00:34:34,000
+as I mentioned the images that we
+
+00:34:34,000 --> 00:34:37,000
+just looked at were taken from a computer although
+
+00:34:37,000 --> 00:34:40,000
+because the original images were continuous-time
+
+00:34:40,000 --> 00:34:45,000
+images or more specifically continuous space that is the independent variable
+
+00:34:45,000 --> 00:34:46,000
+is a spatial variable
+
+00:34:46,000 --> 00:34:50,000
+now computer processing
+
+00:34:50,000 --> 00:34:54,000
+love signals pictures speech or whatever the signals are
+
+00:34:54,000 --> 00:34:57,000
+is very important and useful because
+
+00:34:57,000 --> 00:35:02,000
+it offers a lot of flexibility and in fact the kinds of things that I showed
+
+00:35:02,000 --> 00:35:03,000
+these pictures
+
+00:35:03,000 --> 00:35:06,000
+would have been very hard to do without
+
+00:35:06,000 --> 00:35:10,000
+in fact doing computer processing
+
+00:35:10,000 --> 00:35:14,000
+well in computer processing %uh any kind of signal
+
+00:35:14,000 --> 00:35:18,000
+basically what's required is dead
+
+00:35:18,000 --> 00:35:24,000
+we do the processing in the context of discrete-time signals and discrete-time
+
+00:35:24,000 --> 00:35:25,000
+processing
+
+00:35:25,000 --> 00:35:29,000
+because it the fact dead a computer is run off the clock
+
+00:35:29,000 --> 00:35:32,000
+and essentially things happen in the computer
+
+00:35:32,000 --> 00:35:39,000
+in a as a sequence of numbers and as a sequence of events
+
+00:35:39,000 --> 00:35:43,000
+well it turns out dead the sampling theorem in fact as i've indicated
+
+00:35:43,000 --> 00:35:44,000
+previously
+
+00:35:44,000 --> 00:35:48,000
+provides us with a very nice mechanism
+
+00:35:48,000 --> 00:35:52,000
+for converting are continuous-time signals
+
+00:35:52,000 --> 00:35:57,000
+into discrete-time signals for example for computer processing
+
+00:35:57,000 --> 00:36:02,000
+or in fact if it's not a computer for some other kind of discrete-time or
+
+00:36:02,000 --> 00:36:04,000
+perhaps digital processing
+
+00:36:04,000 --> 00:36:08,000
+well the basic idea as i've indicated previously
+
+00:36:08,000 --> 00:36:14,000
+is to carry out discreet I processing
+
+00:36:14,000 --> 00:36:17,000
+of continuous-time signals by
+
+00:36:17,000 --> 00:36:21,000
+first converting the continuous-time signal
+
+00:36:21,000 --> 00:36:25,000
+to a discrete-time signal carry out
+
+00:36:25,000 --> 00:36:29,000
+the appropriate discrete-time processing
+
+00:36:29,000 --> 00:36:34,000
+love the discrete-time signal and then after we're done with that process
+
+00:36:34,000 --> 00:36:35,000
+saying
+
+00:36:35,000 --> 00:36:39,000
+converting from the discrete-time sequence
+
+00:36:39,000 --> 00:36:42,000
+back to a continuous-time signal
+
+00:36:42,000 --> 00:36:48,000
+corresponding to the output that we have here
+
+00:36:48,000 --> 00:36:52,000
+well in the remainder this lecture what I'd like to analyze
+
+00:36:52,000 --> 00:36:56,000
+is the first step in that process namely the conversion
+
+00:36:56,000 --> 00:37:00,000
+from a continuous-time signal to a discrete-time signal
+
+00:37:00,000 --> 00:37:03,000
+and understand how the
+
+00:37:03,000 --> 00:37:07,000
+to relate both in the time domain in the frequency domain
+
+00:37:07,000 --> 00:37:11,000
+and in the next lecture will be analyzing and demonstrating
+
+00:37:11,000 --> 00:37:15,000
+the overall system including some intermediate processing
+
+00:37:15,000 --> 00:37:18,000
+so be first step in the process
+
+00:37:18,000 --> 00:37:22,000
+is the conversion from a continuous-time signal
+
+00:37:22,000 --> 00:37:27,000
+to a discrete-time signal and that can be thought of as a process that involves
+
+00:37:27,000 --> 00:37:33,000
+two steps although in practical terms it may not be implemented specifically
+
+00:37:33,000 --> 00:37:36,000
+as these two steps the two steps are
+
+00:37:36,000 --> 00:37:40,000
+to first convert from the continuous-time
+
+00:37:40,000 --> 00:37:44,000
+for continuous-time continuous signal
+
+00:37:44,000 --> 00:37:49,000
+to an impulse train through a sampling process
+
+00:37:49,000 --> 00:37:52,000
+and then to convert
+
+00:37:52,000 --> 00:37:56,000
+that impulse train to a discrete-time sequence
+
+00:37:56,000 --> 00:38:00,000
+and the discrete-time sequence exit then
+
+00:38:00,000 --> 00:38:04,000
+is simply then a sequence a bad news
+
+00:38:04,000 --> 00:38:09,000
+which are the samples all the continuous-time signal
+
+00:38:09,000 --> 00:38:13,000
+and as we'll see as we walk through this basically this step
+
+00:38:13,000 --> 00:38:16,000
+going from the impulse train to the sequence
+
+00:38:16,000 --> 00:38:21,000
+corresponds principally to worry labeling staff where
+
+00:38:21,000 --> 00:38:25,000
+we pic of the impulse bad news
+
+00:38:25,000 --> 00:38:28,000
+and use those as the sequence values
+
+00:38:28,000 --> 00:38:32,000
+up for the discrete-time signal so
+
+00:38:32,000 --> 00:38:37,000
+what I'd like to do as a first step in understanding this process
+
+00:38:37,000 --> 00:38:42,000
+is to analyze it in particular with our attention focused on trying to
+
+00:38:42,000 --> 00:38:43,000
+understand
+
+00:38:43,000 --> 00:38:46,000
+what the relationship is in the frequency domain
+
+00:38:46,000 --> 00:38:50,000
+between the discrete-time Fourier transform
+
+00:38:50,000 --> 00:38:53,000
+love the sequence discrete-time signal
+
+00:38:53,000 --> 00:38:57,000
+and the continuous-time 48 transform
+
+00:38:57,000 --> 00:39:00,000
+love the original on sampled and then
+
+00:39:00,000 --> 00:39:04,000
+the sampled signal so let's go through that
+
+00:39:04,000 --> 00:39:07,000
+and in particular
+
+00:39:07,000 --> 00:39:12,000
+what we have is a process where the continuous-time signal
+
+00:39:12,000 --> 00:39:15,000
+is of course modulator multiplied
+
+00:39:15,000 --> 00:39:19,000
+by an impulse train and that gives us then
+
+00:39:19,000 --> 00:39:23,000
+another continuous-time signal we're still in the continuous time domain
+
+00:39:23,000 --> 00:39:28,000
+it gives us another continuous-time signal which is an impulse train
+
+00:39:28,000 --> 00:39:31,000
+and in fact we've gone through this analysis
+
+00:39:31,000 --> 00:39:34,000
+previously and what we have is
+
+00:39:34,000 --> 00:39:39,000
+this multiplication or taking this term inside
+
+00:39:39,000 --> 00:39:43,000
+the summation and recognizing that the impulse train
+
+00:39:43,000 --> 00:39:46,000
+is is simply an impulse train
+
+00:39:46,000 --> 00:39:50,000
+with areas above the impulses which
+
+00:39:50,000 --> 00:39:53,000
+are the samples above the continuous-time function
+
+00:39:53,000 --> 00:39:59,000
+we can then carry out the analysis in the frequency domain
+
+00:39:59,000 --> 00:40:03,000
+now in the time domain we have a multiplication process so in the
+
+00:40:03,000 --> 00:40:04,000
+frequency domain
+
+00:40:04,000 --> 00:40:08,000
+we have a convolution above the Fourier transform
+
+00:40:08,000 --> 00:40:13,000
+love the continuous-time signal the original signal
+
+00:40:13,000 --> 00:40:18,000
+and the Fourier transform of the impulse train which is itself an impulse train
+
+00:40:18,000 --> 00:40:22,000
+so in the frequency domain then the 48 transform
+
+00:40:22,000 --> 00:40:26,000
+of the sampled signal which is an impulse train
+
+00:40:26,000 --> 00:40:30,000
+is the convolution %uh the Fourier transform up the sampling
+
+00:40:30,000 --> 00:40:36,000
+function PFT and the Fourier transform of the sampled signal
+
+00:40:36,000 --> 00:40:41,000
+since the sampling signal is a periodic imposed strain
+
+00:40:41,000 --> 00:40:44,000
+its Fourier transform is an impulse train
+
+00:40:44,000 --> 00:40:49,000
+and consequently carrying out this convolution
+
+00:40:49,000 --> 00:40:52,000
+in effect says that this for EA transform
+
+00:40:52,000 --> 00:40:57,000
+simply gets replicated at each of the locations of these impulses
+
+00:40:57,000 --> 00:41:00,000
+and finally what we end up with an
+
+00:41:00,000 --> 00:41:04,000
+is a 48 transform after
+
+00:41:04,000 --> 00:41:07,000
+the sampling process which is
+
+00:41:07,000 --> 00:41:11,000
+the original for EA transform love the continuous
+
+00:41:11,000 --> 00:41:14,000
+signal but and it to itself
+
+00:41:14,000 --> 00:41:17,000
+shifted by integer multiples
+
+00:41:17,000 --> 00:41:21,000
+above the sampling frequency and so this is the basic equation then
+
+00:41:21,000 --> 00:41:26,000
+that tells us in the frequency domain what happens
+
+00:41:26,000 --> 00:41:30,000
+through the first part all this two-step process
+
+00:41:30,000 --> 00:41:35,000
+now I emphasize that is a two-step process the first process
+
+00:41:35,000 --> 00:41:38,000
+is sampling where we're still essentially
+
+00:41:38,000 --> 00:41:42,000
+in the continuous-time world the next step
+
+00:41:42,000 --> 00:41:45,000
+is essentially a relabeling process
+
+00:41:45,000 --> 00:41:50,000
+where we convert that impulse train simply to a sequence
+
+00:41:50,000 --> 00:41:53,000
+so let's look at the next step
+
+00:41:53,000 --> 00:41:57,000
+the next step is to take the impulse train and converted
+
+00:41:57,000 --> 00:42:01,000
+through a process to sequence
+
+00:42:01,000 --> 00:42:04,000
+and the sequence values are simply then
+
+00:42:04,000 --> 00:42:09,000
+samples 0 the original continuous signal
+
+00:42:09,000 --> 00:42:12,000
+and so now we
+
+00:42:12,000 --> 00:42:16,000
+can analyze this and what we want to relate
+
+00:42:16,000 --> 00:42:19,000
+is the discrete-time Fourier transform
+
+00:42:19,000 --> 00:42:23,000
+love this and the continuous 540 a transformer
+
+00:42:23,000 --> 00:42:27,000
+this or in fact that continues type for a transformer affects up to you
+
+00:42:27,000 --> 00:42:30,000
+safety okay
+
+00:42:30,000 --> 00:42:34,000
+well we have the imposed strain
+
+00:42:34,000 --> 00:42:38,000
+and its Fourier transform we can
+
+00:42:38,000 --> 00:42:42,000
+get by simply evaluating for EA transform
+
+00:42:42,000 --> 00:42:45,000
+and since the Fourier transform love this
+
+00:42:45,000 --> 00:42:50,000
+since this corresponds to an impulse train the 48 transformed by the time we
+
+00:42:50,000 --> 00:42:51,000
+change them something in it rolls
+
+00:42:51,000 --> 00:42:55,000
+will then have this in paul's replace
+
+00:42:55,000 --> 00:42:58,000
+524 e a transformer the shift in polls
+
+00:42:58,000 --> 00:43:02,000
+which is this exponential factor so this expression
+
+00:43:02,000 --> 00:43:06,000
+is before a transformer the impulse train
+
+00:43:06,000 --> 00:43:10,000
+the continuous time Fourier transform and alternatively
+
+00:43:10,000 --> 00:43:13,000
+we can look at the Fourier transform all
+
+00:43:13,000 --> 00:43:16,000
+the sequence and this of course is
+
+00:43:16,000 --> 00:43:21,000
+a discrete-time Fourier transform
+
+00:43:21,000 --> 00:43:27,000
+so we have the continuous time Fourier transform the imposed strain
+
+00:43:27,000 --> 00:43:30,000
+we have the discrete-time Fourier transform the sequence
+
+00:43:30,000 --> 00:43:34,000
+and now we want to look at how those to relate
+
+00:43:34,000 --> 00:43:38,000
+well it pretty much falls out of just comparing these two summations
+
+00:43:38,000 --> 00:43:42,000
+in particular this term and this term
+
+00:43:42,000 --> 00:43:46,000
+are identical that's just the relabeling
+
+00:43:46,000 --> 00:43:52,000
+Nov all what the sequence values are
+
+00:43:52,000 --> 00:43:57,000
+and notice that when we compare these exponential factors
+
+00:43:57,000 --> 00:44:02,000
+they're identical as long as we associate capital Omega
+
+00:44:02,000 --> 00:44:05,000
+with little or may get times capital T in other words
+
+00:44:05,000 --> 00:44:09,000
+if we were to replace here capital may go by a little Omega
+
+00:44:09,000 --> 00:44:12,000
+times capital T and replace exhibition
+
+00:44:12,000 --> 00:44:16,000
+by excessive see a venti in this expression
+
+00:44:16,000 --> 00:44:20,000
+would be identical to this expression
+
+00:44:20,000 --> 00:44:23,000
+so in fact these two are equal
+
+00:44:23,000 --> 00:44:28,000
+where a relabeling or with the transformation between small Megan
+
+00:44:28,000 --> 00:44:29,000
+capital make
+
+00:44:29,000 --> 00:44:34,000
+and so in fact then the relationship that we have
+
+00:44:34,000 --> 00:44:38,000
+is that the discrete-time Fourier transform are
+
+00:44:38,000 --> 00:44:41,000
+the sequence of samples
+
+00:44:41,000 --> 00:44:45,000
+is equal to the continuous time Fourier transform
+
+00:44:45,000 --> 00:44:48,000
+all the impulse strain of samples
+
+00:44:48,000 --> 00:44:52,000
+where we associate the continuous-time frequency variable
+
+00:44:52,000 --> 00:44:56,000
+and the discrete-time pic script frequency variable through
+
+00:44:56,000 --> 00:45:01,000
+a frequency scaling as i indicate here or said another way
+
+00:45:01,000 --> 00:45:07,000
+the discrete-time spectrum is the continuous I spectrum of the samples
+
+00:45:07,000 --> 00:45:11,000
+with capital mate with small Omega replaced by capital Omega
+
+00:45:11,000 --> 00:45:14,000
+divided by capital T
+
+00:45:14,000 --> 00:45:19,000
+fight so we have then this two-step process
+
+00:45:19,000 --> 00:45:22,000
+the first step is taking the continuous-time signal
+
+00:45:22,000 --> 00:45:26,000
+sampling with it sampling it with an impulse train
+
+00:45:26,000 --> 00:45:29,000
+in the frequency domain that corresponds to
+
+00:45:29,000 --> 00:45:32,000
+replicating the four EA transform
+
+00:45:32,000 --> 00:45:36,000
+all the original continuous-time signals
+
+00:45:36,000 --> 00:45:40,000
+the second step is relabeling Matt
+
+00:45:40,000 --> 00:45:44,000
+in effect turning it into a sequence and what that does in the frequency domain
+
+00:45:44,000 --> 00:45:46,000
+is provide us
+
+00:45:46,000 --> 00:45:50,000
+with a rescaling if the frequency axis or as we'll see
+
+00:45:50,000 --> 00:45:55,000
+a frequency normalization which is associated with the corresponding time
+
+00:45:55,000 --> 00:45:57,000
+normalization
+
+00:45:57,000 --> 00:46:00,000
+in the time domain well let's look at
+
+00:46:00,000 --> 00:46:04,000
+those statements a little more specifically
+
+00:46:04,000 --> 00:46:09,000
+when I show here it is the original continuous-time signal
+
+00:46:09,000 --> 00:46:12,000
+and then below it is
+
+00:46:12,000 --> 00:46:16,000
+the sampled signal and these two
+
+00:46:16,000 --> 00:46:20,000
+are signals in the continuous-time domain
+
+00:46:20,000 --> 00:46:24,000
+now what is the conversion from this impulse train
+
+00:46:24,000 --> 00:46:28,000
+to a sequence well it simply taking
+
+00:46:28,000 --> 00:46:32,000
+these in polls areas are bad news the sample values
+
+00:46:32,000 --> 00:46:36,000
+and relabeling them in effect is a show below
+
+00:46:36,000 --> 00:46:41,000
+relabeling them as sequence values
+
+00:46:41,000 --> 00:46:45,000
+and essentially I'm now replacing
+
+00:46:45,000 --> 00:46:50,000
+the impulse by the designation of a sequence value
+
+00:46:50,000 --> 00:46:54,000
+that's one step but the other important step to focus on
+
+00:46:54,000 --> 00:46:59,000
+is dead whereas in the impulse trainees impulses are spaced
+
+00:46:59,000 --> 00:47:04,000
+by integer multiples of the sampling period capital T
+
+00:47:04,000 --> 00:47:08,000
+in the sequence of course because if the way that we
+
+00:47:08,000 --> 00:47:11,000
+label sequences these are always space by
+
+00:47:11,000 --> 00:47:14,000
+simply integer multiples of 1
+
+00:47:14,000 --> 00:47:18,000
+so in effect you could say that the step in going from here
+
+00:47:18,000 --> 00:47:24,000
+to hear corresponds to normalizing out in the time domain
+
+00:47:24,000 --> 00:47:27,000
+the sampling period capital T
+
+00:47:27,000 --> 00:47:32,000
+to stress that another way if the sampling period were doubled
+
+00:47:32,000 --> 00:47:38,000
+so there'd in this picture this spacing stretched out by a factor of two
+
+00:47:38,000 --> 00:47:42,000
+nevertheless in the discrete-time
+
+00:47:42,000 --> 00:47:46,000
+for the discrete-time signal the spacing would remain as one
+
+00:47:46,000 --> 00:47:50,000
+and essentially its the
+
+00:47:50,000 --> 00:47:53,000
+envelope of those sequence values
+
+00:47:53,000 --> 00:47:56,000
+that would then get contracts compressed in time
+
+00:47:56,000 --> 00:48:01,000
+so you can think all the step in going from the impulse train to the samples
+
+00:48:01,000 --> 00:48:05,000
+as a sexually a time normalization
+
+00:48:05,000 --> 00:48:10,000
+now let's look at this in the frequency domain in the frequency domain
+
+00:48:10,000 --> 00:48:14,000
+what we have is the Fourier transform of our original continuous
+
+00:48:14,000 --> 00:48:18,000
+signal after sampling with an impulse train
+
+00:48:18,000 --> 00:48:22,000
+this spectrum retains its shape
+
+00:48:22,000 --> 00:48:27,000
+him but is replicated at integer multiples of the sampling frequency to
+
+00:48:27,000 --> 00:48:29,000
+pry over capital T
+
+00:48:29,000 --> 00:48:32,000
+as i indicated here now
+
+00:48:32,000 --> 00:48:36,000
+we know that a discrete-time spectrum
+
+00:48:36,000 --> 00:48:40,000
+must be periodic and frequency with a period of two pi
+
+00:48:40,000 --> 00:48:45,000
+here we have the periodicity but it's not periodic with period have to pry
+
+00:48:45,000 --> 00:48:50,000
+its periodic with period which is equal to the sampling frequency
+
+00:48:50,000 --> 00:48:55,000
+however in converting from the samples
+
+00:48:55,000 --> 00:48:58,000
+to the sequence values and we go through another step
+
+00:48:58,000 --> 00:49:02,000
+what the other step the other step is a time normalization
+
+00:49:02,000 --> 00:49:05,000
+where we take the impulses which your space by the sampling period
+
+00:49:05,000 --> 00:49:09,000
+and we rescale at essentially in the time domain
+
+00:49:09,000 --> 00:49:13,000
+to a space in which is unity so we're dividing out
+
+00:49:13,000 --> 00:49:17,000
+in the time domain by a
+
+00:49:17,000 --> 00:49:20,000
+by a factor which is
+
+00:49:20,000 --> 00:49:23,000
+equal to the sampling period well
+
+00:49:23,000 --> 00:49:27,000
+dividing out in the time domain by
+
+00:49:27,000 --> 00:49:31,000
+capital T would correspond to
+
+00:49:31,000 --> 00:49:36,000
+multiplying in the frequency domain the frequency axis by capital T and indeed
+
+00:49:36,000 --> 00:49:40,000
+what happens is dead in going from the imposed strain
+
+00:49:40,000 --> 00:49:44,000
+to the sequence values we now rescale
+
+00:49:44,000 --> 00:49:48,000
+this axis so that in fact
+
+00:49:48,000 --> 00:49:51,000
+the axis gets stretched by capital T
+
+00:49:51,000 --> 00:49:56,000
+and the frequency which corresponded to 2pi over capital T
+
+00:49:56,000 --> 00:50:00,000
+now gets re normalized 22 part
+
+00:50:00,000 --> 00:50:05,000
+so just looking at this again and perhaps with the overall picture
+
+00:50:05,000 --> 00:50:09,000
+in the time domain we've gone from a continuous curve
+
+00:50:09,000 --> 00:50:15,000
+two samples relabel those and in effect implemented a time normalization
+
+00:50:15,000 --> 00:50:19,000
+correspondingly in the frequency domain we
+
+00:50:19,000 --> 00:50:23,000
+have replicated the spectrum through the initial sampling process
+
+00:50:23,000 --> 00:50:27,000
+and then rescale the frequency axis
+
+00:50:27,000 --> 00:50:30,000
+so that in fact now this periodicity
+
+00:50:30,000 --> 00:50:34,000
+corresponds to a periodicity here which is to Popeye
+
+00:50:34,000 --> 00:50:37,000
+and here which is the sampling frequency
+
+00:50:37,000 --> 00:50:43,000
+so very often in fact and will be doing this next time
+
+00:50:43,000 --> 00:50:46,000
+very often when you think
+
+00:50:46,000 --> 00:50:51,000
+love continuous-time signals which have been converted to discrete-time signals
+
+00:50:51,000 --> 00:50:54,000
+when you look at the discrete-time frequency axis
+
+00:50:54,000 --> 00:50:57,000
+the frequency to pie is Associated
+
+00:50:57,000 --> 00:51:00,000
+with the sampling frequency
+
+00:51:00,000 --> 00:51:06,000
+as it will it was applied to the original continuous-time signals
+
+00:51:06,000 --> 00:51:11,000
+now as i indicated what will want to go on to from here
+
+00:51:11,000 --> 00:51:14,000
+is understanding I'll
+
+00:51:14,000 --> 00:51:17,000
+what happens when we take a continuous-time signal
+
+00:51:17,000 --> 00:51:21,000
+converted to a discrete-time signal as I just going through
+
+00:51:21,000 --> 00:51:24,000
+do some discreet I processing with the linear time-invariant system
+
+00:51:24,000 --> 00:51:29,000
+and then carry that back into the continuous-time world
+
+00:51:29,000 --> 00:51:33,000
+that is a procedure that will go through and
+
+00:51:33,000 --> 00:51:36,000
+analyze and in fact illustrate in some detail
+
+00:51:36,000 --> 00:51:40,000
+next time in preparation for that
+
+00:51:40,000 --> 00:51:44,000
+what I would be eager to encourage you to do
+
+00:51:44,000 --> 00:51:47,000
+using the study guide and in reviewing this lecture
+
+00:51:47,000 --> 00:51:51,000
+is to begin the next lecture
+
+00:51:51,000 --> 00:51:55,000
+with a careful and thorough understanding love
+
+00:51:55,000 --> 00:51:58,000
+the arguments that I just going through in particular
+
+00:51:58,000 --> 00:52:03,000
+understanding the process that's involved in going from a continuous-time
+
+00:52:03,000 --> 00:52:05,000
+signal
+
+00:52:05,000 --> 00:52:08,000
+through sampling to a discrete-time signal
+
+00:52:08,000 --> 00:52:12,000
+and what that means in the frequency domain interns to taking the original
+
+00:52:12,000 --> 00:52:13,000
+spectrum
+
+00:52:13,000 --> 00:52:17,000
+replicating it because if the sampling process
+
+00:52:17,000 --> 00:52:20,000
+and then sry scaling that so that
+
+00:52:20,000 --> 00:52:24,000
+the periodicity gets rescaled so that its periodic
+
+00:52:24,000 --> 00:52:28,000
+with a period of two part so will continue with that next time focusing
+
+00:52:28,000 --> 00:52:29,000
+now
+
+00:52:29,000 --> 00:52:32,000
+on the subsequent steps
+
+00:52:32,000 --> 00:52:33,000
+in the process thank you
+

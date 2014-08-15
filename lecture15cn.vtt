@@ -1,0 +1,2648 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+以下内容是根据Creative Commons授权提供
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+您的支持将有助于麻省理工学院开放式课程继续报价
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+免费优质教育资源
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+进行捐赠或查看附加材料由数百人资讯
+
+00:00:14,000 --> 00:00:15,000
+courses
+课程
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+参观麻省理工学院开放式课程在0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU home for the
+麻省理工学院的EDU回家
+
+00:00:28,000 --> 00:00:31,000
+in
+
+
+00:00:31,000 --> 00:00:32,000
+the
+该
+
+00:00:32,000 --> 00:00:33,000
+the
+该
+
+00:00:33,000 --> 00:00:38,000
+the in
+在该
+
+00:00:38,000 --> 00:00:40,000
+in
+
+
+00:00:40,000 --> 00:00:44,000
+the
+该
+
+00:00:44,000 --> 00:00:51,000
+are the
+是
+
+00:00:52,000 --> 00:00:57,000
+in the last lecture we begin
+在我们开始最后的演讲
+
+00:00:57,000 --> 00:01:02,000
+the discussion love modulation and in particular what we focused on
+讨论爱情的调制，特别是我们的重点是什么
+
+00:01:02,000 --> 00:01:08,000
+was the continuous-time case and in talking about continuous-time modulation
+是连续时间的情况下，并在谈到连续时间调制
+
+00:01:08,000 --> 00:01:11,000
+we covered a number of topics we talked about
+我们讨论了一些话题我们谈论
+
+00:01:11,000 --> 00:01:14,000
+the properties and analysis love
+的属性，并分析爱情
+
+00:01:14,000 --> 00:01:18,000
+modulation when we had a complex exponential
+调制时，我​​们有一个复杂的指数
+
+00:01:18,000 --> 00:01:23,000
+carrier signal we talked about the properties and analysis in the case of a
+载波信号，我们谈到了在一个案件的性质和分析
+
+00:01:23,000 --> 00:01:25,000
+sinusoidal carrier
+正弦载波
+
+00:01:25,000 --> 00:01:29,000
+and in that context and related to
+在这方面，并与
+
+00:01:29,000 --> 00:01:33,000
+the application associated with communications
+与通信相关联的应用程序
+
+00:01:33,000 --> 00:01:36,000
+we talked about synchronous modulation
+我们谈到了同步调制
+
+00:01:36,000 --> 00:01:39,000
+a synchronous modulation and
+同步调制和
+
+00:01:39,000 --> 00:01:42,000
+also the notion love single sideband
+也是概念爱单边带
+
+00:01:42,000 --> 00:01:45,000
+modulation in
+调制
+
+00:01:45,000 --> 00:01:51,000
+the lecture today there are to issues that I'd like to address broad topics
+今天的讲座有到，我想，以解决广泛的主题问题
+
+00:01:51,000 --> 00:01:55,000
+one is Acer parallel discussion
+一个是宏碁平行讨论
+
+00:01:55,000 --> 00:02:00,000
+particularly is associated with complex exponential sinusoidal modulation
+特别是与复指数正弦调制相关
+
+00:02:00,000 --> 00:02:03,000
+for discrete-time signals and
+对于离散时间信号和
+
+00:02:03,000 --> 00:02:07,000
+the second is the introduction and analysis
+二是介绍和分析
+
+00:02:07,000 --> 00:02:12,000
+love a another kind of carriers specifically a post kind of carrier
+爱一个另一种运营商的具体职位一种载体
+
+00:02:12,000 --> 00:02:17,000
+in continuous time leading to the notions of pulse amplitude modulation
+在连续时间导致脉冲幅度调制的概念
+
+00:02:17,000 --> 00:02:22,000
+and eventually a very powerful theramin result called the sampling there
+最终一个非常强大的theramin结果称为采样有
+
+00:02:22,000 --> 00:02:26,000
+well let me begin the lecture though focusing on
+也让我开始讲课，虽然重点
+
+00:02:26,000 --> 00:02:30,000
+the discrete-time modulation to essentially
+离散时间调制，以基本上
+
+00:02:30,000 --> 00:02:35,000
+draw your attention to the fact dead the analysis and discrete-time
+提请您注意以下事实：死者的分析和离散时间
+
+00:02:35,000 --> 00:02:39,000
+very much parallels the analysis in continuous-time
+非常多的相似之处分析在连续时间
+
+00:02:39,000 --> 00:02:43,000
+well let's consider in the discrete-time
+好让我们考虑在离散时间
+
+00:02:43,000 --> 00:02:47,000
+case just as we had in continuous-time a
+情况正如我们在连续时间
+
+00:02:47,000 --> 00:02:50,000
+signal modulating a carrier signal
+信号调制载波信号
+
+00:02:50,000 --> 00:02:54,000
+and the resulting modulated signal
+和由此产生的调制信号
+
+00:02:54,000 --> 00:02:57,000
+is why event and it was
+是为什么事件，这是
+
+00:02:57,000 --> 00:03:01,000
+in continuous-time the modulation property
+在连续时间的调制特性
+
+00:03:01,000 --> 00:03:05,000
+Associated with the four EA transform dead
+相关的四个EA变换死
+
+00:03:05,000 --> 00:03:10,000
+provided the basis for the analysis and exactly the same thing is true in a
+提供了基础的分析和完全一样的东西是真实的
+
+00:03:10,000 --> 00:03:11,000
+discrete-time
+离散时间
+
+00:03:11,000 --> 00:03:14,000
+case in particular what we have in discrete-time
+情况特别是我们所拥有的离散时间
+
+00:03:14,000 --> 00:03:20,000
+is the modulation property as it relates to the Fourier transform
+是调制特性，因为它涉及到傅立叶变换
+
+00:03:20,000 --> 00:03:25,000
+which tells us that the four EA transform of the modulated signal
+这告诉我们，4 EA变换的调制信号的
+
+00:03:25,000 --> 00:03:29,000
+is the convolution all the
+是卷积所有
+
+00:03:29,000 --> 00:03:34,000
+for a transformer the carrier and the 48 transform or
+用于变压器的载体和48变换或
+
+00:03:34,000 --> 00:03:39,000
+the modulating signal and the only real difference in issue here
+调制信号，并在这里问题的唯一真正的区别
+
+00:03:39,000 --> 00:03:42,000
+is that in the discrete-time case
+是，在离散时间情况
+
+00:03:42,000 --> 00:03:45,000
+what we're talking about is a periodic
+我们正在谈论的是一个周期
+
+00:03:45,000 --> 00:03:49,000
+convolution because the specter of course a periodic
+卷积因为课程的幽灵周期性
+
+00:03:49,000 --> 00:03:55,000
+whereas in a continuous-time case it was an a periodic convolution so let's
+而在一个连续时间情况下，它是一个周期性卷积让我们
+
+00:03:55,000 --> 00:04:00,000
+parallel the discussion and in particular what will focus on
+平行的讨论，特别是如何将专注于
+
+00:04:00,000 --> 00:04:03,000
+is first a complex exponential
+首先是一个复杂的指数
+
+00:04:03,000 --> 00:04:07,000
+carrier and second a
+载体和第二一
+
+00:04:07,000 --> 00:04:11,000
+sinusoidal carrier and we'll see how this parallels our discussion in
+正弦载波，我们将看到如何这相当于我们在讨论
+
+00:04:11,000 --> 00:04:12,000
+continuous-time
+连续时间
+
+00:04:12,000 --> 00:04:17,000
+and will make fairly brief reference as we introduce
+并会相当简短的参考为我们介绍
+
+00:04:17,000 --> 00:04:22,000
+the post carrier for continuous-time will bring make very brief reference to
+后载体连续时间会带来做出非常简短地提到
+
+00:04:22,000 --> 00:04:24,000
+the post carrier for discrete-time
+后载体离散时间
+
+00:04:24,000 --> 00:04:28,000
+indicating that again the analysis and discrete-time and continuous-time
+指示再次进行分析和离散时间和连续时间
+
+00:04:28,000 --> 00:04:32,000
+is very parallel soul let's first consider
+很平行的灵魂让我们首先考虑
+
+00:04:32,000 --> 00:04:35,000
+complex exponential and sinus all carriers
+复指数和鼻窦所有运营商
+
+00:04:35,000 --> 00:04:38,000
+for the discrete-time case emphasizing
+对于离散时间情况下，强调
+
+00:04:38,000 --> 00:04:42,000
+the very strong parallel and similarity between
+之间很强的并行性和相似性
+
+00:04:42,000 --> 00:04:46,000
+discrete-time and continuous-time well
+离散时间和连续时间以及
+
+00:04:46,000 --> 00:04:50,000
+we have once again the modulation property
+我们再次调制特性
+
+00:04:50,000 --> 00:04:54,000
+and the modulation property tells us that the spectrum
+和调制属性告诉我们，频谱
+
+00:04:54,000 --> 00:04:58,000
+all the modulated signal is the periodic
+所有的调制信号是周期性
+
+00:04:58,000 --> 00:05:02,000
+convolution love the two spectra
+卷积爱两个光谱
+
+00:05:02,000 --> 00:05:05,000
+and let's consider for example
+让我们考虑例如
+
+00:05:05,000 --> 00:05:09,000
+an input for modulating spectrum as i've indicated here
+一个输入，用于调制频谱，因为我已经在这里表示
+
+00:05:09,000 --> 00:05:12,000
+and since we what to consider first the fall
+因为我们什么首先考虑的秋天
+
+00:05:12,000 --> 00:05:16,000
+a complex exponential carrier
+复指数载波
+
+00:05:16,000 --> 00:05:19,000
+will consider the case of CNN
+将考虑美国有线电视新闻网的情况下，
+
+00:05:19,000 --> 00:05:22,000
+equal to each to the J Omega subsea
+等于每到歼欧米茄海底
+
+00:05:22,000 --> 00:05:26,000
+n and let me stress by the way as
+n和我想强调的方式
+
+00:05:26,000 --> 00:05:30,000
+I did in the continuous-time case
+我在连续时间的情况下做
+
+00:05:30,000 --> 00:05:35,000
+dead out 10 to suppress the phase angle which of course can be associated with
+死了10来抑制这当然可以与相关的相位角
+
+00:05:35,000 --> 00:05:37,000
+the carrier also
+承运人也
+
+00:05:37,000 --> 00:05:41,000
+alright so we have then the spectrum
+好吧，所以我们有那么谱
+
+00:05:41,000 --> 00:05:45,000
+%uh the modulating signal the spektr the carrier signal
+％呃调制信号的SPEKTR载波信号
+
+00:05:45,000 --> 00:05:49,000
+if this is the carrier then its spectrum is an impulse train
+如果是这样的载体，然后它的频谱是一个脉冲串
+
+00:05:49,000 --> 00:05:52,000
+and then imposed strain I've indicated
+然后施加应变，我表示
+
+00:05:52,000 --> 00:05:57,000
+here and let me stress also that in
+在这里，让我也强调，在
+
+00:05:57,000 --> 00:06:01,000
+the discrete-time case of course the spectra
+当然，在离散时间情况下的频谱
+
+00:06:01,000 --> 00:06:06,000
+and all of the spektr involved are periodic with period of two pi
+和所有涉及的SPEKTR是周期性的，两个PI期
+
+00:06:06,000 --> 00:06:10,000
+so this then is the spectrum of the carrier signal
+所以这则是载波信号的频谱
+
+00:06:10,000 --> 00:06:14,000
+this is the spectrum the input signal the periodic convolution if these two
+这是频谱的输入信号的周期性卷积如果这两个
+
+00:06:14,000 --> 00:06:18,000
+is the spektr on the modulated signal and the result
+是对调制信号的SPEKTR和结果
+
+00:06:18,000 --> 00:06:22,000
+is then this spectrum shifted
+然后这个频谱转移
+
+00:06:22,000 --> 00:06:25,000
+to center frequency which is the carrier frequency
+到中心频率的载波频率
+
+00:06:25,000 --> 00:06:29,000
+Omega subsea so
+欧米茄海底所以
+
+00:06:29,000 --> 00:06:33,000
+the result love modulation with a complex exponential
+结果爱调制与复指数
+
+00:06:33,000 --> 00:06:36,000
+is a straightforward shifted the spectrum
+是一个简单的转移频谱
+
+00:06:36,000 --> 00:06:40,000
+to a carrot to so that what occurred around
+以胡萝卜，以使发生什么左右
+
+00:06:40,000 --> 00:06:46,000
+zero frequency now occurs around the frequency Omega subsea
+零频率现在周围发生的频率欧米茄海底
+
+00:06:46,000 --> 00:06:50,000
+now in the continuous-time k sweetie modulated
+现在在连续时刻k亲爱的调制
+
+00:06:50,000 --> 00:06:54,000
+with the case when we had a complex exponential carrier weedy modulated
+用时，我们有一个复指数载波调制杂草丛生的情况下
+
+00:06:54,000 --> 00:06:57,000
+by essentially just shifting the spectrum back
+由本质上只是转移频谱背
+
+00:06:57,000 --> 00:07:04,000
+and he in fact in the discrete-time case were able to do exactly the same thing
+他其实在离散时间情况下能够做同样的事情
+
+00:07:04,000 --> 00:07:07,000
+so if we work to replace
+因此，如果我们的工作，以取代
+
+00:07:07,000 --> 00:07:12,000
+see a van which is huge and make a subsidy and
+看到一辆面包车这是巨大的，并作出补贴，
+
+00:07:12,000 --> 00:07:16,000
+by see a very cozy the minus J Omega
+通过看一个非常舒适的零下Ĵ欧米茄
+
+00:07:16,000 --> 00:07:19,000
+CN the resulting spectrum
+CN由此产生的频谱
+
+00:07:19,000 --> 00:07:22,000
+would be an impulse train
+将是一个脉冲串
+
+00:07:22,000 --> 00:07:26,000
+as i indicate here and
+我在此说明，并
+
+00:07:26,000 --> 00:07:30,000
+the result all multiply why I have an
+结果所有的繁殖，为什么我有一个
+
+00:07:30,000 --> 00:07:34,000
+by that new carrier
+由新运营商
+
+00:07:34,000 --> 00:07:37,000
+in the frequency domain is a convolution if these two
+在频域中是一个卷积如果这两个
+
+00:07:37,000 --> 00:07:40,000
+and its relatively straightforward to verify that
+和它相对简单，以验证
+
+00:07:40,000 --> 00:07:43,000
+if you can follow these for the periodic convolution
+如果你能遵循这些为周期卷积
+
+00:07:43,000 --> 00:07:49,000
+then that will get us back to the original spectrum that we started with
+然后，将让我们回到我们开始与原始光谱
+
+00:07:49,000 --> 00:07:53,000
+so what's happened in the discrete-time case for the complex exponential
+所以发生了什么事在离散时间情况下的复指数
+
+00:07:53,000 --> 00:07:57,000
+is exactly the same as in continuous-time
+是完全一样的连续时间
+
+00:07:57,000 --> 00:08:01,000
+namely we might too late that corresponds to shifting the spectrum
+即我们可能为时已晚，对应于移动频谱
+
+00:08:01,000 --> 00:08:05,000
+weedy modulate by multiplying by the complex conjugate
+杂草调制由复共轭相乘
+
+00:08:05,000 --> 00:08:09,000
+the original modulating care the original carrier
+原调制关心的原始载体
+
+00:08:09,000 --> 00:08:14,000
+and that shifts the spectrum back to where it was originally
+并转移频谱回到它最初是
+
+00:08:14,000 --> 00:08:19,000
+okay now let's consider the case of a sinusoidal carrier in discrete-time
+好吧，现在让我们考虑一个正弦载波的离散时间的情况下，
+
+00:08:19,000 --> 00:08:23,000
+and again things very much parallel
+又一次的东西非常多并行
+
+00:08:23,000 --> 00:08:26,000
+what we saw in continuous-time
+我们在连续时间看到
+
+00:08:26,000 --> 00:08:29,000
+and again as we look at the specter
+并再次，我们看看幽灵
+
+00:08:29,000 --> 00:08:33,000
+I will choose a phase angle 0
+我会选择一个相位角0
+
+00:08:33,000 --> 00:08:37,000
+mainly for notational an analytical convenience
+主要表现为符号上的便利性分析
+
+00:08:37,000 --> 00:08:40,000
+so in this case now rather than
+所以在这种情况下，现在，而不是
+
+00:08:40,000 --> 00:08:44,000
+a carrier signal which is a single complex exponential
+这是一个单一的复指数载波信号
+
+00:08:44,000 --> 00:08:49,000
+it's now a sinusoidal carrier and the sinus or carrier is the summer too
+它现在是一个正弦载波和窦或载体是夏天太
+
+00:08:49,000 --> 00:08:52,000
+complex exponentials
+复指数
+
+00:08:52,000 --> 00:08:57,000
+and so if we consider a modulating spectrum that is the specter affects a
+所以，如果我们考虑一个调制频谱是幽灵会影响
+
+00:08:57,000 --> 00:08:59,000
+van
+的
+
+00:08:59,000 --> 00:09:04,000
+as something are the type that I indicate here
+因为东西都是我在此说明的类型
+
+00:09:04,000 --> 00:09:08,000
+and the spectrum of the carrier
+和载波的频谱
+
+00:09:08,000 --> 00:09:12,000
+now since the carrier is sign a soil rather than
+现在由于承运人签订的土壤，而不是
+
+00:09:12,000 --> 00:09:16,000
+a complex exponential consists of two impulses
+复指数由两个脉冲
+
+00:09:16,000 --> 00:09:20,000
+wanted pasta makers see and one at minus Omega subsea
+想面食制造商看到，一个在零下欧米茄海底
+
+00:09:20,000 --> 00:09:24,000
+convolved ing this spectrum with this spectrum
+卷积ing这个频谱与此谱
+
+00:09:24,000 --> 00:09:27,000
+gives us a replication affective Omega
+给了我们一个复制情感欧米茄
+
+00:09:27,000 --> 00:09:32,000
+around plus and minus Omega subsea
+周围加号和减号欧米茄海底
+
+00:09:32,000 --> 00:09:36,000
+and incidently with an ample to change a hair
+顺便说一句，并具有充足的改变发型
+
+00:09:36,000 --> 00:09:40,000
+so again things have
+如此反复的事情有
+
+00:09:40,000 --> 00:09:43,000
+worked as they did in continuous-time
+工作，因为他们在连续时间做
+
+00:09:43,000 --> 00:09:46,000
+in continuous time or in discrete-time
+在连续的时间或在离散时间
+
+00:09:46,000 --> 00:09:49,000
+modulating with a sinusoidal carrier
+用正弦载波调制
+
+00:09:49,000 --> 00:09:53,000
+with then correspond to a replication of the spectrum
+然后用对应于频谱的复制
+
+00:09:53,000 --> 00:09:58,000
+around plus the carrier frequency and replication the spectrum
+周围加上载波频率和复制的频谱
+
+00:09:58,000 --> 00:10:02,000
+around minus the carrier frequency in both cases
+围绕减去在这两种情况下，载波频率
+
+00:10:02,000 --> 00:10:07,000
+as long as the carrier frequency is large enough compared with the band with
+只要载波频率足够大，以与带相比
+
+00:10:07,000 --> 00:10:08,000
+the signal
+信号
+
+00:10:08,000 --> 00:10:12,000
+so that those two replications don't overlap
+使那些重复两次不重叠
+
+00:10:12,000 --> 00:10:15,000
+then its reasonable to suppose
+那么它的合理的假设
+
+00:10:15,000 --> 00:10:19,000
+that we should be able to recover the original signal
+我们应该能够恢复原始信号
+
+00:10:19,000 --> 00:10:23,000
+well in fact to d modulate
+还有其实到D调制
+
+00:10:23,000 --> 00:10:26,000
+in the discrete-time case we would again
+在离散时间情况下，我们会再次
+
+00:10:26,000 --> 00:10:32,000
+follow very much the strategy that we did in continuous-time
+遵循非常多，我们在连续时间做了策略
+
+00:10:32,000 --> 00:10:35,000
+in particular let's consider the modulating
+特别是我们考虑的调制
+
+00:10:35,000 --> 00:10:38,000
+by taking the modulated signal
+通过利用调制后的信号
+
+00:10:38,000 --> 00:10:41,000
+and again putting it through modulator again
+并再次重新把它通过调制器
+
+00:10:41,000 --> 00:10:45,000
+with a carrier which is co-signed Omega CN
+用载体，其是共同署名欧米茄CN
+
+00:10:45,000 --> 00:10:49,000
+if we do that we have a the modulator
+如果我们这样做，我们有一个调制器
+
+00:10:49,000 --> 00:10:54,000
+or what will turn out to be part of the modulator as i indicate here
+还是什么会变成是调制器的一部分，我在此说明
+
+00:10:54,000 --> 00:10:58,000
+the spectrum or the import signal
+频谱或进口信号
+
+00:10:58,000 --> 00:11:02,000
+is as I had just developed a replication
+是因为我刚刚研制出的复制
+
+00:11:02,000 --> 00:11:06,000
+up the original spectrum around plus and minus Omega subsea
+周围加上原有的频谱和减号欧米茄海底
+
+00:11:06,000 --> 00:11:10,000
+with an amplitude of the hair when this
+与头发的振幅时这
+
+00:11:10,000 --> 00:11:13,000
+is again convolved with the spectrum
+再次卷积谱
+
+00:11:13,000 --> 00:11:16,000
+love the carrier then
+爱的载体，然后
+
+00:11:16,000 --> 00:11:21,000
+we get a replication of the original spectrum
+我们得到的原始光谱的复制
+
+00:11:21,000 --> 00:11:25,000
+first around zero frequency as i indicate here
+第一零频率附近，因为我在此说明
+
+00:11:25,000 --> 00:11:29,000
+and then around twice the carrier frequency
+然后围绕两倍的载波频率
+
+00:11:29,000 --> 00:11:33,000
+and minus twice the carrier frequency
+和减去两倍的载波频率
+
+00:11:33,000 --> 00:11:36,000
+and as long as the carrier frequency
+只要载波频率
+
+00:11:36,000 --> 00:11:39,000
+is large enough compared with the
+与相比足够大
+
+00:11:39,000 --> 00:11:43,000
+with of the original signal day and as you can see
+与原始信号日子，正如你可以看到
+
+00:11:43,000 --> 00:11:48,000
+by extracting this part of the spectrum
+通过提取该部分的频谱
+
+00:11:48,000 --> 00:11:51,000
+with the low-pass filter we can in principle
+与低通滤波器，我们可以在原则上
+
+00:11:51,000 --> 00:11:54,000
+recover the spectrum associated with the original signal
+恢复与原来的信号相关联的频谱
+
+00:11:54,000 --> 00:11:59,000
+and again justice in continuous-time because this amplitude is a half
+又在连续时间正义因为这个幅度是一个半
+
+00:11:59,000 --> 00:12:03,000
+we would want to choose for scaling purposes
+我们会想选择缩放的目的
+
+00:12:03,000 --> 00:12:07,000
+a low-pass filter ample to which is
+一个低通滤波器，以充足这是
+
+00:12:07,000 --> 00:12:12,000
+to to compensate for this factor in the hair
+在头发来弥补这个因子
+
+00:12:12,000 --> 00:12:16,000
+so once again things work at basically
+所以再次的东西在工作基本上
+
+00:12:16,000 --> 00:12:20,000
+the same way as they had in continuous-time
+因为他们在连续时间以同样的方式
+
+00:12:20,000 --> 00:12:23,000
+we have sinusoidal modulation
+我们有正弦调制
+
+00:12:23,000 --> 00:12:28,000
+which consists love using a sinusoidal carrier
+其中使用一个正弦载波组成的爱
+
+00:12:28,000 --> 00:12:31,000
+and we have the the modulator
+而我们也有调制器
+
+00:12:31,000 --> 00:12:35,000
+which consists of taking the modulated signal
+其中包括服用的调制信号
+
+00:12:35,000 --> 00:12:38,000
+multiplying by the carrier and then
+由承运人相乘，然后
+
+00:12:38,000 --> 00:12:43,000
+processing Matt with a low-pass filter
+用低通滤波器处理马特
+
+00:12:43,000 --> 00:12:46,000
+to extract the portion of the spectrum
+以提取频谱的一部分
+
+00:12:46,000 --> 00:12:53,000
+which is around zero frequency as i indicate in the spectra below
+这是零频率附近当i表示在下面的光谱
+
+00:12:53,000 --> 00:12:58,000
+and the result then with this low pass filter having a gain of two
+其结果再与该低通滤波器具有两个增益
+
+00:12:58,000 --> 00:13:02,000
+is that we've recovered the original spectrum
+是，我们已经恢复了原来的频谱
+
+00:13:02,000 --> 00:13:06,000
+exit Omega which is the spectrum
+退出欧米茄这是频谱
+
+00:13:06,000 --> 00:13:10,000
+that we started now
+我们现在开始
+
+00:13:10,000 --> 00:13:14,000
+several other things to stress this is a fairly quick
+其他的几件事情要强调这是一个相当快的
+
+00:13:14,000 --> 00:13:18,000
+to we're through sinusoidal modulation for discrete-time
+以我们正在通过正弦调制的离散时间
+
+00:13:18,000 --> 00:13:22,000
+in there are very similar issues that arise in
+在那里是出现非常相似的问题
+
+00:13:22,000 --> 00:13:26,000
+the discrete-time case in terms of love having faced synchronization
+离散时间情况下，在爱情方面已经面临着同步
+
+00:13:26,000 --> 00:13:31,000
+and frequency synchronization between the modulator and demodulator
+和调制器和解调器之间的频率同步
+
+00:13:31,000 --> 00:13:34,000
+and we had discussed that in a fair amount of detail for the continuous-time
+我们已经讨论过，在细节相当数量的连续时间
+
+00:13:34,000 --> 00:13:39,000
+case in some sense in practical terms
+案件在实践中的一些感
+
+00:13:39,000 --> 00:13:43,000
+that becomes much more than issue in continuous-time
+这变得比问题连续时间多
+
+00:13:43,000 --> 00:13:48,000
+than it does in discrete-time in part because
+它比在离散时间中的一部分，因为
+
+00:13:48,000 --> 00:13:52,000
+synchronization between a modulator and demodulator
+调制器和解调器之间的同步
+
+00:13:52,000 --> 00:13:56,000
+is often much harder in a continuous-time
+常常是在一个连续时间更难
+
+00:13:56,000 --> 00:14:00,000
+system which is essentially an analog system
+系统，它本质上是一种模拟系统
+
+00:14:00,000 --> 00:14:04,000
+as compared with a digital system another
+与数字系统中的另一个比较
+
+00:14:04,000 --> 00:14:08,000
+very important reason and it's important to stress this at the outset
+很重要的原因，并在一开始就强调这是很重要的
+
+00:14:08,000 --> 00:14:11,000
+is that whereas the theory involving
+是，而涉及的理论
+
+00:14:11,000 --> 00:14:15,000
+the use of complex exponentials sinusoidal modulation
+使用复杂的指数函数正弦调制
+
+00:14:15,000 --> 00:14:19,000
+parallels very strongly in the continuous-time
+相似之处很强烈的连续时间
+
+00:14:19,000 --> 00:14:23,000
+and the discrete-time case in practical terms
+和离散时间情况下，在实用方面
+
+00:14:23,000 --> 00:14:26,000
+it has much more significance in continuous-time
+它具有在连续时间更重要
+
+00:14:26,000 --> 00:14:30,000
+than it does in discrete-time that is the notion
+它比在离散时间即是概念
+
+00:14:30,000 --> 00:14:35,000
+love sinusoidal modulation in the context of communication systems
+爱正弦调制的通信系统的上下文中
+
+00:14:35,000 --> 00:14:39,000
+is extremely important for continuous-time systems
+对于连续时间系统极其重要的
+
+00:14:39,000 --> 00:14:42,000
+and less so in discrete-time systems
+而较少的离散时间系统
+
+00:14:42,000 --> 00:14:47,000
+now kinda as a preview of a point to be raise later on
+现在还挺作为一个点的预览待提高以后
+
+00:14:47,000 --> 00:14:50,000
+I should modify that slightly with the statement
+我要修改略有声明
+
+00:14:50,000 --> 00:14:54,000
+that one very important plays in which
+，一个很重要的戏剧中，
+
+00:14:54,000 --> 00:14:59,000
+sinusoidal modulation in a discrete-time context the rises
+正弦调制在离散时间情况下的上升
+
+00:14:59,000 --> 00:15:06,000
+is in a class of systems called trance multiplexers or trans modulation systems
+是一类系统称为恍惚多路复用器或反调制系统
+
+00:15:06,000 --> 00:15:09,000
+and this surface is basically because
+而这面基本上是因为
+
+00:15:09,000 --> 00:15:13,000
+so many communication systems are now
+这么多的通信系统现在
+
+00:15:13,000 --> 00:15:17,000
+becoming digital and specifically discrete-time although the actual
+成为数字和具体的离散时间虽然实际
+
+00:15:17,000 --> 00:15:20,000
+transmission is continuous time
+传输是连续的时间
+
+00:15:20,000 --> 00:15:23,000
+the signal processing manipulation switching
+信号处理操作切换
+
+00:15:23,000 --> 00:15:27,000
+is discrete-time it so in fact it turns out
+是离散时间了所以其实它原来
+
+00:15:27,000 --> 00:15:30,000
+to be very important and useful to take
+取是非常重要和有用的
+
+00:15:30,000 --> 00:15:34,000
+a discrete-time representation I love
+离散时间表示我爱
+
+00:15:34,000 --> 00:15:37,000
+the analog signals a continuous-time signals
+该模拟信号的连续时间信号
+
+00:15:37,000 --> 00:15:41,000
+and in a discrete-time or digital representation
+并在离散时间或数字表示
+
+00:15:41,000 --> 00:15:45,000
+convert them from one modulation scheme
+从一个调制方案，将它们转换
+
+00:15:45,000 --> 00:15:48,000
+41 multiplexing scheme to another and
+41复用方案到另一个
+
+00:15:48,000 --> 00:15:52,000
+although I said a lot there that
+虽然我说了很多那里，
+
+00:15:52,000 --> 00:15:56,000
+really requires much more detail to
+真的需要更多的细节
+
+00:15:56,000 --> 00:16:00,000
+to develop in any in any sense at all
+以发展任何在任何意义
+
+00:16:00,000 --> 00:16:04,000
+you should come to get the notion that that discrete-time
+你应该得到的概念，即离散时间
+
+00:16:04,000 --> 00:16:07,000
+modulation systems become very important
+调制系统就变得非常重要
+
+00:16:07,000 --> 00:16:13,000
+in part because or implementation Elis use
+部分原因是因为实施或使用伊利斯
+
+00:16:13,000 --> 00:16:16,000
+okay now there is another application
+还好现在有另一个应用程序
+
+00:16:16,000 --> 00:16:20,000
+dead we have discussed for both continuous time actually previously for
+死了，我们两个连续的时间实际上前面所讨论
+
+00:16:20,000 --> 00:16:22,000
+discrete-time
+离散时间
+
+00:16:22,000 --> 00:16:27,000
+amplitude modulation with sinusoidal or complex exponential carriers
+振幅调制正弦或复指数携带者
+
+00:16:27,000 --> 00:16:33,000
+and let me just remind you that because in fact it becomes a very important one
+让我提醒你，因为事实上它成为一个非常重要的一个
+
+00:16:33,000 --> 00:16:36,000
+in the case love discrete-time systems
+在爱的情况下离散时间系统
+
+00:16:36,000 --> 00:16:40,000
+and that is the notion love using
+就是用这一概念的爱
+
+00:16:40,000 --> 00:16:44,000
+modulation together with fixed filtering
+调制连同固定过滤
+
+00:16:44,000 --> 00:16:47,000
+to implement a filter which is
+实现一个过滤器，它是
+
+00:16:47,000 --> 00:16:50,000
+which either has a variable cut off or
+这已经不是一个变量切断或
+
+00:16:50,000 --> 00:16:54,000
+converts let's say a low-pass filter to a high pass filter
+皈依假设一个低通滤波器到高通滤波器
+
+00:16:54,000 --> 00:16:59,000
+we originally talked about this when we introduce the modulation property
+我们原来谈过这个时候我们引入调制特性
+
+00:16:59,000 --> 00:17:03,000
+in the context of converting a low-pass filter
+在转换的低通滤波器的情况下
+
+00:17:03,000 --> 00:17:07,000
+to a high pass filter and the notion was
+到一个高通滤波器和所述概念是
+
+00:17:07,000 --> 00:17:11,000
+that if we modulate the signal
+如果我们调制信号
+
+00:17:11,000 --> 00:17:15,000
+with a carrier which is -1 to the end and that's just simply complex
+与运营商是-1到结束，这只是简单的复杂
+
+00:17:15,000 --> 00:17:17,000
+exponential
+指数
+
+00:17:17,000 --> 00:17:22,000
+or sinusoidal carrier with a carrier frequency of pie
+或正弦载波与馅饼的载波频率
+
+00:17:22,000 --> 00:17:28,000
+than that in effect interchanges the low frequencies in the high frequencies
+比作用互换的高频率的低频率
+
+00:17:28,000 --> 00:17:31,000
+and if and after modulation
+而如果和后调制
+
+00:17:31,000 --> 00:17:36,000
+that is processed with a low pass filter
+一个与低通滤波器处理
+
+00:17:36,000 --> 00:17:40,000
+and then the result is d modulated
+然后将结果为d的调制
+
+00:17:40,000 --> 00:17:44,000
+using exactly the same carrier namely a carrier which is
+使用完全相同的载体即一种载体，它是
+
+00:17:44,000 --> 00:17:47,000
+-1 to the end
+-1至结束
+
+00:17:47,000 --> 00:17:51,000
+then the effective that is equivalent
+那么有效，它等效
+
+00:17:51,000 --> 00:17:56,000
+to high-pass filtering on the original signal
+对原始信号的高通滤波
+
+00:17:56,000 --> 00:17:59,000
+and a generalization a bad would involve instead a
+和泛化不好会牵扯而不是
+
+00:17:59,000 --> 00:18:03,000
+this specific choice if -1 to the end
+这个特定的选择，如果-1到年底
+
+00:18:03,000 --> 00:18:08,000
+would involve a choice in general or the e to the J Omega sed CNN
+将涉及在一般的选择或e来歼欧米茄sed的美国有线电视新闻网
+
+00:18:08,000 --> 00:18:11,000
+that is a more general carrier frequency and
+这是一种更一般的载波频率和
+
+00:18:11,000 --> 00:18:14,000
+d modulator which is either the minus J
+ð调制器，要么是负Ĵ
+
+00:18:14,000 --> 00:18:18,000
+Omega subsea and and as i've represented here
+欧米茄海底和和我在这里代表
+
+00:18:18,000 --> 00:18:23,000
+and as we had talked about it when we talked about the modulation property for
+当我们谈论了它，当我们谈到调制属性
+
+00:18:23,000 --> 00:18:25,000
+discrete-time signals
+离散时间信号
+
+00:18:25,000 --> 00:18:28,000
+we had specifically chosen the conversion of a low pass to a high pass
+我们曾专门选择了一个低通转换到高通
+
+00:18:28,000 --> 00:18:30,000
+filter
+过滤器
+
+00:18:30,000 --> 00:18:34,000
+well let me continue the review of that
+好让我继续的，审查
+
+00:18:34,000 --> 00:18:38,000
+just by reminding you of the details of what happens with the spectra
+只是提醒与光谱发生了什么细节你
+
+00:18:38,000 --> 00:18:41,000
+and specifically the notion
+和具体的概念
+
+00:18:41,000 --> 00:18:46,000
+if we take this particular case omega-6 equal
+如果我们把这种特殊情况下ω-6等于
+
+00:18:46,000 --> 00:18:51,000
+to pie or covertly a carrier signal which is -1 to the end
+以饼图或变相是-1到最后一个载波信号
+
+00:18:51,000 --> 00:18:57,000
+then if we have the original spectra
+然后，如果我们有原始光谱
+
+00:18:57,000 --> 00:19:00,000
+and the specter all
+和所有的幽灵
+
+00:19:00,000 --> 00:19:05,000
+specter of the carrier signal the spectrum of the carrier signal
+载体的幽灵信号中的载波信号的频谱
+
+00:19:05,000 --> 00:19:08,000
+convolved with this spectrum
+卷积与此谱
+
+00:19:08,000 --> 00:19:12,000
+will then in effect shift this by
+然后在效果由该转移
+
+00:19:12,000 --> 00:19:15,000
+pie and so after
+馅饼等后
+
+00:19:15,000 --> 00:19:18,000
+modulating the result that we have is
+调节的结果，我们已经是
+
+00:19:18,000 --> 00:19:23,000
+shifted that spectrum so that what happened at low frequencies now happens
+转移频谱，以便发生了什么事在低频现在发生
+
+00:19:23,000 --> 00:19:26,000
+at high frequencies namely around pie
+在高频段，即围绕馅饼
+
+00:19:26,000 --> 00:19:31,000
+and what happens at what happened at high frequencies now happens
+什么发生了什么在高频情况现在发生
+
+00:19:31,000 --> 00:19:36,000
+at low frequencies well if thats process now
+在低频好，如果现在那过程
+
+00:19:36,000 --> 00:19:41,000
+with a low pass filter and this dashed line indicates the low-pass filter
+用一个低通滤波器，该虚线表示的低通滤波器
+
+00:19:41,000 --> 00:19:45,000
+then the result that we get is shown here
+那么我们得到的结果如下所示
+
+00:19:45,000 --> 00:19:50,000
+where we've extracted the low-frequency portion of the modulated signal
+其中，我们已经提取的调制信号的低频部分
+
+00:19:50,000 --> 00:19:55,000
+and now when we modulate or D modulate back
+而现在，当我们调节或D调节回
+
+00:19:55,000 --> 00:20:00,000
+then this spectrum is shifted back to where it belongs
+然后该频谱偏移回到它属于
+
+00:20:00,000 --> 00:20:05,000
+namely its shifted back to be centered around
+即其移回要围绕中心
+
+00:20:05,000 --> 00:20:08,000
+minus pie and around plus Park
+减去馅饼和周围加上公园
+
+00:20:08,000 --> 00:20:12,000
+so if we just compare this spectrum
+所以，如果我们只是比较这谱
+
+00:20:12,000 --> 00:20:16,000
+with the original spectrum at the top
+在顶部的原始光谱
+
+00:20:16,000 --> 00:20:19,000
+what we can see is that in effect what we've done
+我们可以看到的是，实际上我们做了什么
+
+00:20:19,000 --> 00:20:23,000
+is to extract a portion of the spectrum
+是提取频谱的一部分
+
+00:20:23,000 --> 00:20:28,000
+acquittal and the processing with a high pass filter
+无罪释放和加工用的高通滤波器
+
+00:20:28,000 --> 00:20:33,000
+and again this is very similar to what we did in continuous-time
+并且再次，这是非常类似于我们在连续时间做
+
+00:20:33,000 --> 00:20:37,000
+and all of the kinda analytical processes and
+和所有的还挺分析过程和
+
+00:20:37,000 --> 00:20:41,000
+and convolutions involved are very much the same
+并参与卷积是大同小异
+
+00:20:41,000 --> 00:20:44,000
+really the biggest difference between continuous-time and discrete-time
+真正连续时间和离散时间的最大区别
+
+00:20:44,000 --> 00:20:48,000
+has to do not so much with the details of the analysis but
+已经做了详细的分析结果没有这么多，但
+
+00:20:48,000 --> 00:20:52,000
+perhaps has more to do with issues
+也许有更多的是与问题
+
+00:20:52,000 --> 00:20:59,000
+love are practical applications
+爱是实际应用
+
+00:20:59,000 --> 00:21:02,000
+okay well so what we've done
+好舒服，所以我们做了什么
+
+00:21:02,000 --> 00:21:06,000
+so far for continuous-time and discrete-time
+迄今为连续时间和离散时间
+
+00:21:06,000 --> 00:21:11,000
+is to talk about modulation amplitude modulation
+就是谈调制调幅
+
+00:21:11,000 --> 00:21:15,000
+with complex exponential and sinus or carriers
+与复指数及鼻窦或带菌者
+
+00:21:15,000 --> 00:21:18,000
+we saw that the analysis is very similar although
+我们看到的分析是非常相似的，虽然
+
+00:21:18,000 --> 00:21:23,000
+applications are slightly different and now what I'd like to turn to
+应用程序略有不同，现在我想谈谈
+
+00:21:23,000 --> 00:21:26,000
+is a different choice love
+是一种不同的选择爱
+
+00:21:26,000 --> 00:21:30,000
+carrier signal and the carrier signal in this particular case
+载波信号，并在此特定情况下的载波信号
+
+00:21:30,000 --> 00:21:33,000
+is a post rain rather than
+是一个后雨，而不是
+
+00:21:33,000 --> 00:21:37,000
+a sinusoidal signal now
+现在的正弦信号
+
+00:21:37,000 --> 00:21:42,000
+the idea is the following
+这个想法是以下
+
+00:21:42,000 --> 00:21:45,000
+in general of course the modulator
+在一般的过程中的调制器
+
+00:21:45,000 --> 00:21:49,000
+it consists all multiplying x50
+它包含了所有X50乘以
+
+00:21:49,000 --> 00:21:53,000
+by whatever the carrier signal is and
+由任何上述载波信号是与
+
+00:21:53,000 --> 00:21:57,000
+previously we've talked about a carrier signal which is sinusoidal
+之前我们已经谈过它是一个正弦载波信号
+
+00:21:57,000 --> 00:22:00,000
+the carrier signal that we want to consider now
+我们现在要考虑的载波信号
+
+00:22:00,000 --> 00:22:03,000
+is a carrier signal which in fact is
+是这实际上是一个载波信号
+
+00:22:03,000 --> 00:22:07,000
+a pulse train and so in fact
+一个脉冲串，所以实际上
+
+00:22:07,000 --> 00:22:11,000
+what we want to do is multiply the input signal
+我们想要做的是什么乘以输入信号
+
+00:22:11,000 --> 00:22:16,000
+by a Paul strain and in effect then
+由保罗应变和效果则
+
+00:22:16,000 --> 00:22:19,000
+the modulated signal consists
+经调制的信号由
+
+00:22:19,000 --> 00:22:24,000
+of the original signal simply with time slices pulled out a bit as i've
+原始信号简单地用时间片拉出了一下，因为我已经
+
+00:22:24,000 --> 00:22:26,000
+indicated in the bottom Kurt
+在底部库尔特表示
+
+00:22:26,000 --> 00:22:29,000
+so what we have now
+所以我们现在
+
+00:22:29,000 --> 00:22:32,000
+is a modulated signal
+是一个调制信号
+
+00:22:32,000 --> 00:22:36,000
+that is a chopped or sliced version
+这是一个切碎或切片版本
+
+00:22:36,000 --> 00:22:40,000
+love the original waveform and
+爱情原来的波形和
+
+00:22:40,000 --> 00:22:46,000
+think that is what's referred to as pulse amplitude modulation
+认为是什么被称为脉冲幅度调制
+
+00:22:46,000 --> 00:22:50,000
+now it seems like it's kinda crazy idea any ideas
+现在好像它有点疯狂的想法任何想法
+
+00:22:50,000 --> 00:22:54,000
+search opt-out slices away form and
+搜索退出切片离开的形式和
+
+00:22:54,000 --> 00:22:57,000
+the hope that you can kinda put things back together again
+希望你能有点把东西重新结合在一起
+
+00:22:57,000 --> 00:23:02,000
+and the amazing thing about it is we'll see is that in fact
+而令人惊奇的是，我们将看到的是，其实
+
+00:23:02,000 --> 00:23:06,000
+under fairly broad general and applicability
+在相当广泛的通用性和适用性
+
+00:23:06,000 --> 00:23:11,000
+conditions you really can put the way for back together again
+你的条件真的可以把这样的再聚首
+
+00:23:11,000 --> 00:23:14,000
+if you just have these times places
+如果你只是有这些时间地点
+
+00:23:14,000 --> 00:23:18,000
+not only that but that basic notion
+不仅如此，但这一基本概念
+
+00:23:18,000 --> 00:23:21,000
+as we'll see is independent in fact
+正如我们将看到的事实是独立的
+
+00:23:21,000 --> 00:23:25,000
+up with the with the those time slices or effect the with can go to zero
+与该用那些时间片或起可以到零
+
+00:23:25,000 --> 00:23:30,000
+and in fact we're going to make the with go to zero and really only dependent
+而事实上，我们要做出与去零，真的只有依赖
+
+00:23:30,000 --> 00:23:35,000
+on what the frequency love the polls trainers
+在什么样的频率热爱教练投票
+
+00:23:35,000 --> 00:23:38,000
+so let's explore that in some detail
+所以让我们来探讨一些细节
+
+00:23:38,000 --> 00:23:44,000
+and what we want to look at is the analysis but let me
+我们想了解一下什么是分析，但让我
+
+00:23:44,000 --> 00:23:48,000
+let me first just comment very briefly there
+让我先回应只是很简单的有
+
+00:23:48,000 --> 00:23:52,000
+all the analysis we go through as has been true in the case a sinusoidal
+所有我们经历的一直是在真实的情况下正弦分析
+
+00:23:52,000 --> 00:23:56,000
+modulation all the analysis that we go through
+调制一切，我们经过分析
+
+00:23:56,000 --> 00:23:59,000
+holes just as well with
+孔一样好
+
+00:23:59,000 --> 00:24:03,000
+especially minor analytical modifications to
+特别是轻微的分析修改
+
+00:24:03,000 --> 00:24:07,000
+discrete-time pulse amplitude modulation as it does to
+离散时间脉冲幅度调制，因为它不
+
+00:24:07,000 --> 00:24:10,000
+continuous-time pulse amplitude modulation
+连续时间脉冲幅度调制
+
+00:24:10,000 --> 00:24:13,000
+and so will really only go through this
+等会真的只有通过这个
+
+00:24:13,000 --> 00:24:17,000
+in terms of tracking the way for inspector for the continuous-time
+在对连续时间跟踪的方式对检测器的条件
+
+00:24:17,000 --> 00:24:21,000
+case but bear in mind that the results are basically similar
+如此，但要记住，结果基本相似
+
+00:24:21,000 --> 00:24:27,000
+for discrete-time okay well
+对于离散时间也没关系
+
+00:24:27,000 --> 00:24:30,000
+let's see how we get the basic result
+让我们来看看如何得到基本的结果
+
+00:24:30,000 --> 00:24:33,000
+that we want to get
+我们希望得到
+
+00:24:33,000 --> 00:24:36,000
+what we have is a
+我们所拥有的是一个
+
+00:24:36,000 --> 00:24:40,000
+modulating signal which is a pulse train basically a square wave
+调制信号，该信号是一个脉冲序列基本上是一个方波
+
+00:24:40,000 --> 00:24:45,000
+and as we've seen in previous lectures the spectra
+正如我们在以前的讲座见过的光谱
+
+00:24:45,000 --> 00:24:50,000
+or Fourier transform associated with that is an impulse train
+或傅立叶变换与该关联是一个脉冲串
+
+00:24:50,000 --> 00:24:53,000
+and the envelope that impulse train
+并在信封冲动列车
+
+00:24:53,000 --> 00:24:57,000
+is over for over sin x over X function
+已经结束了罪x在X功能
+
+00:24:57,000 --> 00:25:02,000
+the four th transform is impulses and the spacing of the impulses
+四个次变换是冲动和冲动的间距
+
+00:25:02,000 --> 00:25:07,000
+is Associated with the fundamental frequency
+相关联的基频
+
+00:25:07,000 --> 00:25:12,000
+all the Paul strain and thats Omega Sappi so make it appears to pride
+所有的保罗应变和多数民众赞成欧米茄塞佩因此使它显得骄傲
+
+00:25:12,000 --> 00:25:13,000
+divided by the period
+由周期划分
+
+00:25:13,000 --> 00:25:17,000
+the pulse train and at the
+脉冲序列，并在
+
+00:25:17,000 --> 00:25:21,000
+amplitude and shape but this envelope is dictated
+振幅和形状，但这种包络决定
+
+00:25:21,000 --> 00:25:24,000
+by that parameter Delta
+通过该参数三角洲
+
+00:25:24,000 --> 00:25:28,000
+which has to do with how wide the pulses are
+这是因为有脉冲的宽度是
+
+00:25:28,000 --> 00:25:32,000
+okay so we have a time function
+好了，我们有一个时间函数
+
+00:25:32,000 --> 00:25:36,000
+it's multiplied by this post rain now we're talking continuous-time
+它乘以这个帖子雨现在我们谈论的连续时间
+
+00:25:36,000 --> 00:25:39,000
+so in the frequency domain
+这样在频域
+
+00:25:39,000 --> 00:25:44,000
+we have the Fourier transform the time function convolved with
+我们有傅里叶变换进行卷积以时间函数
+
+00:25:44,000 --> 00:25:48,000
+this Fourier transform for the pulse train and let's see what that looks like
+这傅立叶变换的脉冲串，让我们看看是什么样子
+
+00:25:48,000 --> 00:25:51,000
+if we were to consider let's say
+如果我们考虑让我们说
+
+00:25:51,000 --> 00:25:56,000
+a Fourier transform which I A kinda chosen is more or less a general one
+一傅里叶变换IA有​​点儿选择是或多或少一般1
+
+00:25:56,000 --> 00:26:00,000
+then in fact when we can follow this
+那么实际上，当我们可以按照这个
+
+00:26:00,000 --> 00:26:04,000
+with this simple strain what we end up with
+这个简单的应变是我们结束了
+
+00:26:04,000 --> 00:26:08,000
+is a replication all
+是复制所有
+
+00:26:08,000 --> 00:26:11,000
+this spectrum at
+此谱
+
+00:26:11,000 --> 00:26:15,000
+the places in the frequency domain
+在频域中的地方
+
+00:26:15,000 --> 00:26:19,000
+where the individual impulses occurred
+在那里发生的个人冲动
+
+00:26:19,000 --> 00:26:23,000
+so we can see that this spectrum is replicated at each's
+所以我们可以看到，这个频谱被复制在每个的
+
+00:26:23,000 --> 00:26:27,000
+these locations and as long as
+这些位置并且只要
+
+00:26:27,000 --> 00:26:30,000
+the frequency
+频率
+
+00:26:30,000 --> 00:26:34,000
+above the post-training is large enough compared
+上面比较了培训后的足够大
+
+00:26:34,000 --> 00:26:38,000
+with a maximum frequency in the
+用在最高频率
+
+00:26:38,000 --> 00:26:44,000
+original single X if T so that there is no overlap between these triangles
+如果T原单个X，以便有这些三角形之间没有重叠
+
+00:26:44,000 --> 00:26:48,000
+then what you can see in fact somewhat amazingly
+那么你其实可以看到有些令人惊讶
+
+00:26:48,000 --> 00:26:53,000
+is dead simply by low-pass filtering the result
+是死简单地通过低通滤波的结果
+
+00:26:53,000 --> 00:26:57,000
+we can get back except for an amplitude factor
+我们可以回去，除了振幅因数
+
+00:26:57,000 --> 00:27:00,000
+we can give get back to the original signal
+我们可以给返回到原始信号
+
+00:27:00,000 --> 00:27:04,000
+now it's amazing it really is amazing
+现在它是惊人的它确实是惊人的
+
+00:27:04,000 --> 00:27:07,000
+dead all that this depends on
+死了都，这取决于
+
+00:27:07,000 --> 00:27:11,000
+is the original signal being banned limited
+是原始信号被取缔有限
+
+00:27:11,000 --> 00:27:15,000
+and the frequency the post-training be high enough
+和频率的培训后有足够高
+
+00:27:15,000 --> 00:27:19,000
+so that when you replicate the spectrum in the frequency domain
+这样，当你复制的频谱在频域
+
+00:27:19,000 --> 00:27:23,000
+is no overlap between these individual replications and will
+正是这些个体的复制和意志之间没有重叠
+
+00:27:23,000 --> 00:27:26,000
+have a dress that a little more in a few minutes
+有一件衣服在几分钟内，一个多一点
+
+00:27:26,000 --> 00:27:29,000
+but let me first the ball point out that
+但让我先球指出，
+
+00:27:29,000 --> 00:27:33,000
+this has a whole variety a very important implications
+这有一个整体多种非常重要的意义
+
+00:27:33,000 --> 00:27:36,000
+one is in the context of communications
+一个是在通信的上下文中
+
+00:27:36,000 --> 00:27:39,000
+it leads to another very important
+这引出了另一个非常重要的
+
+00:27:39,000 --> 00:27:44,000
+multiplexing scheme for communications we talked last time about
+我们谈到最后一次关于复用方案的通信
+
+00:27:44,000 --> 00:27:48,000
+frequency division multiplexing where individual signals were put into
+频分复用，其中个别的信号被放进
+
+00:27:48,000 --> 00:27:51,000
+individual frequency slots
+单独的频率槽
+
+00:27:51,000 --> 00:27:55,000
+by choosing different carrier frequencies for sinusoidal modulated
+由正弦调制选择不同的载波频率
+
+00:27:55,000 --> 00:27:56,000
+signal
+信号
+
+00:27:56,000 --> 00:28:00,000
+what this suggests is that what we can do
+这是什么提示的是，我们能做些什么
+
+00:28:00,000 --> 00:28:03,000
+is put the
+被放置在
+
+00:28:03,000 --> 00:28:07,000
+sons put different signals into
+儿子把不同的信号转换成
+
+00:28:07,000 --> 00:28:10,000
+non-overlapping time slots
+非重叠的时隙
+
+00:28:10,000 --> 00:28:14,000
+and in fact be able to recover the original signals back again
+而实际上能够恢复原来的信号回来了
+
+00:28:14,000 --> 00:28:18,000
+so in particular suppose that
+所以特别是假设
+
+00:28:18,000 --> 00:28:22,000
+I had a signal which I modulated with a pulse train
+我有我调制的脉冲串信号
+
+00:28:22,000 --> 00:28:27,000
+and I i chose another signal modulated with another poll strain
+我我选择调制与另一民调应变另一个信号
+
+00:28:27,000 --> 00:28:32,000
+where the time slot was different and I continue this process
+其中时隙是不同的，我继续这一进程
+
+00:28:32,000 --> 00:28:37,000
+and after the after i'd done this with some number of channels
+和之后的之后我会与渠道一定数量做到了这一点
+
+00:28:37,000 --> 00:28:41,000
+simply and it all those together
+只是，这一切的在一起
+
+00:28:41,000 --> 00:28:47,000
+as i indicate here then as long as I knew what time slots to associate with
+我在此说明，然后只要我知道什么时段与结社
+
+00:28:47,000 --> 00:28:48,000
+what signal
+什么信号
+
+00:28:48,000 --> 00:28:51,000
+I could get the original a
+我能得到一个原
+
+00:28:51,000 --> 00:28:54,000
+modulated signals back again
+调制信号回来了
+
+00:28:54,000 --> 00:28:57,000
+and then as long as the frequency 0
+然后只要在频率0
+
+00:28:57,000 --> 00:29:01,000
+the impulse train was such that
+脉冲序列是这样的，
+
+00:29:01,000 --> 00:29:04,000
+I was able to do this reconstruction
+我能做到这一点重建
+
+00:29:04,000 --> 00:29:07,000
+by simply low-pass filtering then
+通过简单的低通滤波，然后
+
+00:29:07,000 --> 00:29:12,000
+I would be able to be my Julie so it's a very different very important modulation
+我将能够成为我的朱莉所以这是一个非常不同的非常重要的调制
+
+00:29:12,000 --> 00:29:14,000
+scheme call time division
+计划通话时间分割
+
+00:29:14,000 --> 00:29:19,000
+multiplexing in contrast to frequency division multiplexing as we talked about
+复而相比之下，频分复用，因为我们谈论
+
+00:29:19,000 --> 00:29:20,000
+last time
+上次
+
+00:29:20,000 --> 00:29:25,000
+I made reference earlier the concept of Trance multiplexing and in fact
+我参考了前面恍惚复用的概念，实际上
+
+00:29:25,000 --> 00:29:29,000
+what happens in many communication systems
+在许多通信系统发生了什么
+
+00:29:29,000 --> 00:29:33,000
+is dead the signals are represented in fact
+死了的信号表示，事实上
+
+00:29:33,000 --> 00:29:37,000
+in discrete-time the analog continues time signals are represented in
+在离散时间模拟持续时间信号表示为
+
+00:29:37,000 --> 00:29:38,000
+discrete-time
+离散时间
+
+00:29:38,000 --> 00:29:41,000
+and very often the conversion from
+而且往往从转换
+
+00:29:41,000 --> 00:29:45,000
+frequency division multiplexing to time division multiplexing and back
+频分复用时分多路复用及回
+
+00:29:45,000 --> 00:29:50,000
+is done in fact in the discrete-time to me
+做实际上在离散时间到我
+
+00:29:50,000 --> 00:29:54,000
+okay so what we have then
+好了，我们有什么，然后
+
+00:29:54,000 --> 00:29:57,000
+is the notion
+是概念
+
+00:29:57,000 --> 00:30:01,000
+dead we can
+死了，我们可以
+
+00:30:01,000 --> 00:30:06,000
+multiply a time function
+乘以一个时间函数
+
+00:30:06,000 --> 00:30:10,000
+by a poll strain as i indicated here
+以投票应变正如我在这里
+
+00:30:10,000 --> 00:30:15,000
+and from the output I can
+并从输出我可以
+
+00:30:15,000 --> 00:30:19,000
+if the frequency this post rain is high enough in relation to this band with
+如果频率这个帖子雨足够高有关此与乐队
+
+00:30:19,000 --> 00:30:22,000
+from the output which consists of both
+从它包括两个输出
+
+00:30:22,000 --> 00:30:26,000
+time slices from those times places
+从这些时间地点时间片
+
+00:30:26,000 --> 00:30:31,000
+I can recover the original signal
+我可以恢复原始信号
+
+00:30:31,000 --> 00:30:34,000
+stressing again the reason it relates
+再次强调它涉及的原因
+
+00:30:34,000 --> 00:30:37,000
+to the spectra and
+在光谱和
+
+00:30:37,000 --> 00:30:41,000
+the reason is dead the original spectra
+其原因是死者的原始光谱
+
+00:30:41,000 --> 00:30:44,000
+is simply replicated at
+简直是在复制
+
+00:30:44,000 --> 00:30:47,000
+multiples all the fundamental frequency
+倍数的所有基频
+
+00:30:47,000 --> 00:30:51,000
+upholstery
+内饰
+
+00:30:51,000 --> 00:30:55,000
+now is a very important thing to observe here
+现在是时候在这里看到一个非常重要的事情
+
+00:30:55,000 --> 00:31:00,000
+which is dead the ability to do the reconstruction
+这是死做灾后重建的能力
+
+00:31:00,000 --> 00:31:04,000
+is associated with the notion of whether we can extract that
+与我们是否可以提取概念相联系
+
+00:31:04,000 --> 00:31:07,000
+kinda central triangle light happened choose a triangular shape but
+事还挺中央三角形光选择一个三角形状，但
+
+00:31:07,000 --> 00:31:11,000
+obviously I could be talking about any shape as long as it's been limited
+很明显，我可以，只要它被限制在谈论任何形状
+
+00:31:11,000 --> 00:31:14,000
+the ability to extract at and notice
+提取能力，在与通知
+
+00:31:14,000 --> 00:31:19,000
+that in this modulated output spectrum
+在这种调制的输出频谱
+
+00:31:19,000 --> 00:31:23,000
+the ability to recover this is totally independent
+恢复这个能力是完全独立
+
+00:31:23,000 --> 00:31:27,000
+all what the value of Delta is in other words
+什么都三角洲的值是在换句话说
+
+00:31:27,000 --> 00:31:31,000
+if we look back at
+如果我们回头看
+
+00:31:31,000 --> 00:31:35,000
+the modulator then
+调制器则
+
+00:31:35,000 --> 00:31:38,000
+in fact we can make Delta
+其实我们可以把三角洲
+
+00:31:38,000 --> 00:31:42,000
+the with these pulses arbitrarily small
+在与这些脉冲任意小
+
+00:31:42,000 --> 00:31:45,000
+and in theory that doesn't affect
+而在理论上不影响
+
+00:31:45,000 --> 00:31:50,000
+our ability to do the reconstruction now in practical terms it might
+我们现在要做的重建工作实际上它可能能力
+
+00:31:50,000 --> 00:31:54,000
+looking back once more at the specter of the output
+回首输出的幽灵再次
+
+00:31:54,000 --> 00:31:58,000
+noticed that this sample to is proportional to Delta
+注意到，这个样品是成正比的三角洲
+
+00:31:58,000 --> 00:32:02,000
+and what that suggests is that as we make
+什么暗示是，当我们使
+
+00:32:02,000 --> 00:32:05,000
+Delta smaller and smaller which we
+增量小，我们
+
+00:32:05,000 --> 00:32:08,000
+might in fact want to do if you want to time division multiplexed last two
+实际上可能想要做的，如果你想时分复用最后两个
+
+00:32:08,000 --> 00:32:10,000
+channels
+渠道
+
+00:32:10,000 --> 00:32:13,000
+in principle in theory you could make it an infinite number channels just by
+在理论原则上你可以把它无限多渠道仅仅通过
+
+00:32:13,000 --> 00:32:15,000
+making an infinitesimally small
+做一个无穷小
+
+00:32:15,000 --> 00:32:21,000
+the smaller it is in some sense the less energy there is and again
+越小它在某种意义上是在较少的能量有和再次
+
+00:32:21,000 --> 00:32:24,000
+in practical terms this one of those things if you push down here pops up
+在实践中这一块的那些东西，如果你推下来这里弹出
+
+00:32:24,000 --> 00:32:25,000
+there
+那里
+
+00:32:25,000 --> 00:32:30,000
+namely you eventually run into issues such as noise problems
+也就是你最终遇到的问题，如噪音问题
+
+00:32:30,000 --> 00:32:33,000
+so more more typically what's done is
+所以更多更典型的是怎么做的
+
+00:32:33,000 --> 00:32:38,000
+to in fact eliminate the scale factor a delta
+到实际上消除了比例因子增量
+
+00:32:38,000 --> 00:32:42,000
+and the way that that's done is very simply
+和方式，这样做了很简单的
+
+00:32:42,000 --> 00:32:46,000
+it's done by choosing
+它通过选择完成
+
+00:32:46,000 --> 00:32:50,000
+the with I love the pulses
+在与我爱的脉冲
+
+00:32:50,000 --> 00:32:54,000
+and the height %uh the pulses in such a way
+和高度％呵以这样的方式中的脉冲
+
+00:32:54,000 --> 00:32:58,000
+dead the area is constant even as
+死者的面积更是为常量
+
+00:32:58,000 --> 00:33:02,000
+we make Delta get arbitrarily small so
+我们做出三角洲获得任意小，所以
+
+00:33:02,000 --> 00:33:06,000
+and we can just modify our argument
+我们可以只修改我们的观点
+
+00:33:06,000 --> 00:33:11,000
+so that what we're referring to is a modulating post rain
+让我们指的是什么调制后雨
+
+00:33:11,000 --> 00:33:15,000
+which is a pulse train with positive with Delta
+这是一个脉冲序列与台达积极
+
+00:33:15,000 --> 00:33:20,000
+and height one over Delta in that case
+在这种情况下，高一结束三角洲
+
+00:33:20,000 --> 00:33:23,000
+as Delta gets arbitrarily small
+作为台达得到任意小
+
+00:33:23,000 --> 00:33:27,000
+then in fact what these rectangles become
+那么其实这些东西变成矩形
+
+00:33:27,000 --> 00:33:31,000
+are impulses in which case what we're talking about
+是冲动在这种情况下我们在谈论
+
+00:33:31,000 --> 00:33:35,000
+is a carrier signal
+是载波信号
+
+00:33:35,000 --> 00:33:39,000
+which in fact is an impulse train
+这实际上是一个脉冲串
+
+00:33:39,000 --> 00:33:42,000
+and the resulting modulated signal
+和由此产生的调制信号
+
+00:33:42,000 --> 00:33:46,000
+is and imposed strain for which the amplitudes
+被征收和应变的振幅
+
+00:33:46,000 --> 00:33:50,000
+of the impulses are proportional to
+的冲动是成正比的
+
+00:33:50,000 --> 00:33:54,000
+the original input waveform at
+在原来的输入波形
+
+00:33:54,000 --> 00:33:59,000
+the times at which these impulses occur
+在这些冲动发生次
+
+00:33:59,000 --> 00:34:03,000
+okay well let's look at the analysis a bat
+还好还有让我们来看看分析的蝙蝠
+
+00:34:03,000 --> 00:34:06,000
+and so now what we're talking about
+所以现在我们正在谈论什么
+
+00:34:06,000 --> 00:34:10,000
+is a spectrum
+是一个光谱
+
+00:34:10,000 --> 00:34:15,000
+dead up
+死了
+
+00:34:15,000 --> 00:34:18,000
+consists all the result
+由所有的结果
+
+00:34:18,000 --> 00:34:23,000
+love the spectrum we talked about before the sin x over X envelope except
+爱我们谈到了罪x的基于X信封前，除了频谱
+
+00:34:23,000 --> 00:34:27,000
+that now is Delta goes to zero that becomes
+现在是三角洲趋于零的变
+
+00:34:27,000 --> 00:34:31,000
+flat in other words the modulating signal is an impulse train
+平换句话说，调制信号是一个脉冲串
+
+00:34:31,000 --> 00:34:35,000
+and so as we look at the spectrum
+因此当我们看谱
+
+00:34:35,000 --> 00:34:38,000
+the modulating signal that is then
+调制信号，然后将其
+
+00:34:38,000 --> 00:34:41,000
+and impose train in the frequency domain the high
+并处在频域火车高
+
+00:34:41,000 --> 00:34:45,000
+is proportional to the frequency
+正比于频率
+
+00:34:45,000 --> 00:34:49,000
+up the impulse train and Omega the best now denotes
+了脉冲串和欧米茄最好现在表示
+
+00:34:49,000 --> 00:34:53,000
+the frequency the impulse train and
+频率的脉冲序列，并
+
+00:34:53,000 --> 00:34:57,000
+the resulting output the modulator
+所得到的输出的调制器
+
+00:34:57,000 --> 00:35:00,000
+has a spectrum which is
+有一个频谱是
+
+00:35:00,000 --> 00:35:05,000
+this original spectrum again replicated around
+这种原始的频谱重新复制身边
+
+00:35:05,000 --> 00:35:09,000
+each love these impulses in other words replicated in multiples
+每个喜欢这些冲动的倍数复制换句话说
+
+00:35:09,000 --> 00:35:13,000
+or the sampling frequency now
+或现在的采样频率
+
+00:35:13,000 --> 00:35:18,000
+this is very much identical to the more general case we have
+这是非常相同的更一般的情况下，我们有
+
+00:35:18,000 --> 00:35:21,000
+this replication the spectra
+这个复制的光谱
+
+00:35:21,000 --> 00:35:25,000
+and as long as
+只要
+
+00:35:25,000 --> 00:35:29,000
+this sample the the frequency of the impulse train is
+这样的脉冲序列的频率是
+
+00:35:29,000 --> 00:35:33,000
+large enough compared with the band with the signal
+足够大，以与信号的频带相比
+
+00:35:33,000 --> 00:35:36,000
+so that these triangles don't overlap
+使这些三角形不重叠
+
+00:35:36,000 --> 00:35:40,000
+I can extract this
+我可以提取这个
+
+00:35:40,000 --> 00:35:43,000
+portion of the spectrum by low-pass filtering
+频谱由低通滤波部分
+
+00:35:43,000 --> 00:35:47,000
+which in fact with then give us back
+这实际上与当时还给我们
+
+00:35:47,000 --> 00:35:50,000
+the original signal now
+现在将原始信号
+
+00:35:50,000 --> 00:35:54,000
+if instead this frequency Omega sed am
+相反，如果这个频率欧米茄sed的正
+
+00:35:54,000 --> 00:35:58,000
+is greater than Omega best minus Omega sed am
+大于欧米茄最负欧米茄sed的正
+
+00:35:58,000 --> 00:36:02,000
+we would have a spectrum that looked
+我们将有一个谱，看上去
+
+00:36:02,000 --> 00:36:05,000
+something more like this and what's happened
+更多的东西像这样和发生了什么
+
+00:36:05,000 --> 00:36:08,000
+in this case is that because
+在这种情况下，由于
+
+00:36:08,000 --> 00:36:12,000
+we have an overlap here we've destroyed the ability
+我们有一个重叠在这里，我们已经摧毁的能力
+
+00:36:12,000 --> 00:36:16,000
+to recover the original signal from the impulse train
+从脉冲序列中恢复原始信号
+
+00:36:16,000 --> 00:36:20,000
+and that would be true also in general in a more general case
+这将是真也一般在一个更一般的情况
+
+00:36:20,000 --> 00:36:23,000
+love pulse amplitude modulation with
+爱情脉冲幅度调制
+
+00:36:23,000 --> 00:36:26,000
+pulses that up 90 with
+脉冲高达90与
+
+00:36:26,000 --> 00:36:31,000
+this effect by the way is one that will be
+这种效果的方式是1，这将是
+
+00:36:31,000 --> 00:36:35,000
+exploring in considerably more detail in the next lecture and
+探索更多的细节在下一讲及
+
+00:36:35,000 --> 00:36:39,000
+it's a phenomenon or distortion referred to as a leasing which
+它被称为租赁的现象或扭曲的
+
+00:36:39,000 --> 00:36:42,000
+in fact is important and interesting topic but
+其实是很重要的，有趣的话题，但
+
+00:36:42,000 --> 00:36:46,000
+going back to the case in which we've chosen the frequency of the upholstery
+回去在我们所选择的内饰频率的情况下，
+
+00:36:46,000 --> 00:36:49,000
+in high enough
+在足够高
+
+00:36:49,000 --> 00:36:53,000
+then we would recover the original signal
+那么我们就恢复原始信号
+
+00:36:53,000 --> 00:36:56,000
+by processing it through
+通过处理它
+
+00:36:56,000 --> 00:37:00,000
+a low-pass filter
+一个低通滤波器
+
+00:37:00,000 --> 00:37:03,000
+and in in that case
+并且在这种情况下
+
+00:37:03,000 --> 00:37:08,000
+what this says is dead if we have a signal
+这是什么说是死的，如果我们有一个信号
+
+00:37:08,000 --> 00:37:12,000
+and we modulated with an impulse train
+我们调制的脉冲串
+
+00:37:12,000 --> 00:37:17,000
+if we then process that impulse train through an ideal ok pass filter
+如果我们当时的过程，通过一个理想的确定通滤波器的脉冲串
+
+00:37:17,000 --> 00:37:22,000
+given the right conditions on Sat on the frequency the impulse train and the band
+给定的频率上周六在适当的条件的脉冲串和乐队
+
+00:37:22,000 --> 00:37:23,000
+with the signal
+与信号
+
+00:37:23,000 --> 00:37:27,000
+we can recover the original signal back again
+我们可以对原始信号中恢复回来
+
+00:37:27,000 --> 00:37:31,000
+now let me stress just going back to
+现在让我强调只是要回
+
+00:37:31,000 --> 00:37:35,000
+the picture in which we have done this modulation
+在我们做这种调制的图片
+
+00:37:35,000 --> 00:37:38,000
+that this process where the modulation
+这个过程在调制
+
+00:37:38,000 --> 00:37:42,000
+where the carrier signal involves an impulse train is
+其中载波信号涉及一种冲动火车
+
+00:37:42,000 --> 00:37:46,000
+often referred to as sampling and
+通常被称为采样和
+
+00:37:46,000 --> 00:37:49,000
+what that mean specifically is dead
+那是什么意思特别是死的
+
+00:37:49,000 --> 00:37:55,000
+if we notice this resulting in polls train
+如果我们注意到由此产生的民调列车
+
+00:37:55,000 --> 00:37:58,000
+is in fact a sequence
+实际上是在一个序列
+
+00:37:58,000 --> 00:38:01,000
+all samples all
+所有样品全部
+
+00:38:01,000 --> 00:38:05,000
+the original continuous-time signal in other words
+换句话说原来的连续时间信号
+
+00:38:05,000 --> 00:38:10,000
+what we've done in effect is taken instantaneous samples at this way form
+我们已经在做的效果是采取瞬时样品在这样的形式
+
+00:38:10,000 --> 00:38:13,000
+and the implication is that if we do that
+而其含意是，如果我们做到这一点
+
+00:38:13,000 --> 00:38:17,000
+at a rapid and afraid in relation
+在一个快速，恐怕就
+
+00:38:17,000 --> 00:38:21,000
+to the band with the signal then
+与信号的频带然后
+
+00:38:21,000 --> 00:38:25,000
+we can in fact recover the original signal back again
+我们其实是可以恢复原始信号回来了
+
+00:38:25,000 --> 00:38:28,000
+and finally to remind you
+最后提醒你
+
+00:38:28,000 --> 00:38:31,000
+I'll the argument once more
+我会的说法再一次
+
+00:38:31,000 --> 00:38:34,000
+we have an original signal
+我们有一个原始信号
+
+00:38:34,000 --> 00:38:40,000
+and we have its spectrum when we've sampled it and this is now the sampled
+我们有它的频谱时，我们已经采样了，这就是现在的采样
+
+00:38:40,000 --> 00:38:44,000
+signal it's an impulse train whose instantaneous values
+信号是一个脉冲串，其瞬时值
+
+00:38:44,000 --> 00:38:49,000
+are samples at the original waveform the spectrum a bad
+是频谱样本在原始波形坏
+
+00:38:49,000 --> 00:38:53,000
+is the original one replicated
+是原来的复制
+
+00:38:53,000 --> 00:38:57,000
+and when that is processed through a
+并且当一个通过一个处理
+
+00:38:57,000 --> 00:39:01,000
+low-pass filter to extract this part of the spectrum
+低通滤波器来提取该部分的频谱
+
+00:39:01,000 --> 00:39:05,000
+then after the low-pass filter we can
+那么低通滤波器，我们可以后
+
+00:39:05,000 --> 00:39:11,000
+recover the original signal back again
+回来恢复原始信号
+
+00:39:11,000 --> 00:39:14,000
+okay well in fact me although
+还好还有其实我虽然
+
+00:39:14,000 --> 00:39:17,000
+a if you kinda follow through
+一，如果你还挺循
+
+00:39:17,000 --> 00:39:21,000
+the specter and the waveforms this all seems fairly
+幽灵和波形这一切似乎相当
+
+00:39:21,000 --> 00:39:24,000
+straightforward and perhaps
+简单，也许
+
+00:39:24,000 --> 00:39:28,000
+or perhaps not obvious
+或者不明显
+
+00:39:28,000 --> 00:39:32,000
+it's really worth reflecting on how amazing
+它的真正价值体现在如何惊人
+
+00:39:32,000 --> 00:39:36,000
+the result really is what it says we begin this discussion
+结果真的是说话算数，我们开始这一讨论
+
+00:39:36,000 --> 00:39:41,000
+by talking about modulation and in fact modulation and sinusoidal modulation is
+通过谈论调制而事实上调制和正弦调制
+
+00:39:41,000 --> 00:39:44,000
+important in its own right
+在自己的权利重要
+
+00:39:44,000 --> 00:39:47,000
+we ended the discussion by talking
+我们通过谈话结束讨论
+
+00:39:47,000 --> 00:39:51,000
+about first pulse amplitude modulation
+关于第一个脉冲幅度调制
+
+00:39:51,000 --> 00:39:57,000
+and then showing how under the right set of conditions
+然后示出如何正确的一组条件下
+
+00:39:57,000 --> 00:40:01,000
+you can in fact take away form and
+其实你可以带走的形式和
+
+00:40:01,000 --> 00:40:05,000
+sample it with a set of instantaneous samples
+一组瞬时样品抽样它
+
+00:40:05,000 --> 00:40:08,000
+and that said instantaneous samples in fact
+并且，所述实际上瞬时样本
+
+00:40:08,000 --> 00:40:14,000
+are sufficient totally represent and reconstruct the signal
+是完全足够的代表和重构信号
+
+00:40:14,000 --> 00:40:18,000
+what in fact the formal statement that is
+什么实际上的正式声明是
+
+00:40:18,000 --> 00:40:22,000
+is referred to as the sampling theorem
+被称为采样定理
+
+00:40:22,000 --> 00:40:25,000
+very powerful their own that says
+非常强大的自己，说
+
+00:40:25,000 --> 00:40:30,000
+if were given equally spaced samples over time function
+如果给予等距样本随着时间的推移功能
+
+00:40:30,000 --> 00:40:35,000
+and if that time function is band limited
+如果那个时候的功能是频带有限
+
+00:40:35,000 --> 00:40:39,000
+and if the band with
+并且如果与带
+
+00:40:39,000 --> 00:40:44,000
+or is or if this if this sampling frequency is
+或者是，或者这一点，如果这个采样频率为
+
+00:40:44,000 --> 00:40:48,000
+chosen in the right way in relation
+在选择有关的正确方法
+
+00:40:48,000 --> 00:40:51,000
+to the
+到
+
+00:40:51,000 --> 00:40:55,000
+band with then in fact
+与当时乐队其实
+
+00:40:55,000 --> 00:40:58,000
+the original time function is
+原来时间功能
+
+00:40:58,000 --> 00:41:05,000
+uniquely recoverable with a low-pass filter
+唯一地收回与一个低通滤波器
+
+00:41:05,000 --> 00:41:08,000
+now the sampling theorem is kinda
+现在的采样定理是有点
+
+00:41:08,000 --> 00:41:12,000
+I would say a watershed a cornerstone
+我想说一个分水岭的基石
+
+00:41:12,000 --> 00:41:15,000
+love a lot of the discussion we've been having
+爱有很多，我们一直有讨论
+
+00:41:15,000 --> 00:41:20,000
+for a whole variety of reasons if first of all crops out almost as kind as
+整整各种各样的原因，如果首先作物出几乎一样样的
+
+00:41:20,000 --> 00:41:24,000
+straightforward obvious statement but more importantly
+直接的明显的语句，但更重要的是
+
+00:41:24,000 --> 00:41:28,000
+what it says is dead
+它说什么是死
+
+00:41:28,000 --> 00:41:33,000
+if I have a continuous-time signal which satisfies the right-center conditions
+如果我有满足的权利中心的条件下连续时间信号
+
+00:41:33,000 --> 00:41:36,000
+I can represent it by what it does
+我可以用它做什么它代表
+
+00:41:36,000 --> 00:41:41,000
+at sampling instance or acquittal only at discrete
+仅在离散采样实例或无罪释放
+
+00:41:41,000 --> 00:41:44,000
+is this a time
+这是一个时间
+
+00:41:44,000 --> 00:41:47,000
+now what that leads to
+现在是什么导致
+
+00:41:47,000 --> 00:41:51,000
+is a whole host of things wanna which
+是想要的东西一大堆的
+
+00:41:51,000 --> 00:41:55,000
+is the statement that says if we have a continuous-time signal
+是说，如果我们有一个连续时间信号的声明
+
+00:41:55,000 --> 00:41:58,000
+I could in fact represented
+我其实可以代表
+
+00:41:58,000 --> 00:42:02,000
+as a discrete-time signal and I could even think
+作为一个离散时间信号，我什至能想到
+
+00:42:02,000 --> 00:42:06,000
+love processing a continuous-time signal
+爱处理连续时间信号
+
+00:42:06,000 --> 00:42:09,000
+using discrete time concepts
+使用离散时间概念
+
+00:42:09,000 --> 00:42:12,000
+and when I'm all done converting back through
+而当我完成所有转换回通过
+
+00:42:12,000 --> 00:42:15,000
+the power the sampling theorem converting back to a continuous-time
+电源采样定理转换回一个连续时间
+
+00:42:15,000 --> 00:42:16,000
+sick
+生病
+
+00:42:16,000 --> 00:42:20,000
+so the sampling theorem provides this
+所以采样定理提供了这种
+
+00:42:20,000 --> 00:42:23,000
+with a very major important bridge between
+之间有一个非常重大的重要桥梁
+
+00:42:23,000 --> 00:42:28,000
+continuous-time and discrete-time implementations and ideas
+连续时间和离散时间实现方式和想法
+
+00:42:28,000 --> 00:42:34,000
+in the next several lectures we will be exploring so this in considerable detail
+在接下来的几次讲座，我们将探索所以这个相当详细
+
+00:42:34,000 --> 00:42:37,000
+first the focus in more next time
+首先在更多的下一次焦点
+
+00:42:37,000 --> 00:42:42,000
+on some with the specific issues and distortions associated with sampling and
+对一些与采样相关的具体问题和扭曲，
+
+00:42:42,000 --> 00:42:44,000
+following that
+以下是
+
+00:42:44,000 --> 00:42:48,000
+a discussion are what is referred to as
+讨论什么是被称为
+
+00:42:48,000 --> 00:42:52,000
+discrete-time processing of continuous-time signals
+连续时间信号的离散时间处理
+
+00:42:52,000 --> 00:42:52,000
+thank you
+谢谢
+

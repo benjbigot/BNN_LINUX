@@ -1,0 +1,2523 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU home the
+
+00:00:29,000 --> 00:00:31,000
+the
+
+00:00:31,000 --> 00:00:32,000
+the
+
+00:00:32,000 --> 00:00:35,000
+the
+
+00:00:35,000 --> 00:00:39,000
+in
+
+00:00:39,000 --> 00:00:46,000
+the new the in this lecture we
+
+00:00:57,000 --> 00:01:00,000
+begin a discussion of the topic modulation
+
+00:01:00,000 --> 00:01:04,000
+which is among other things a very important
+
+00:01:04,000 --> 00:01:07,000
+topic in practical terms for example it
+
+00:01:07,000 --> 00:01:11,000
+forms the cornerstone for many communication systems
+
+00:01:11,000 --> 00:01:16,000
+and also as we'll see as these lectures go along
+
+00:01:16,000 --> 00:01:21,000
+a particular for modulation referred to as poss amplitude modulation and
+
+00:01:21,000 --> 00:01:22,000
+eventually
+
+00:01:22,000 --> 00:01:25,000
+impulse modulation or impose train modulation
+
+00:01:25,000 --> 00:01:28,000
+forms a very important bridge between
+
+00:01:28,000 --> 00:01:32,000
+continuous-time signals in discrete-time signals
+
+00:01:32,000 --> 00:01:36,000
+now in general terms
+
+00:01:36,000 --> 00:01:40,000
+what we mean when we refer to modulation is the notion
+
+00:01:40,000 --> 00:01:43,000
+%uh using one signal to very
+
+00:01:43,000 --> 00:01:47,000
+a parameter up another signal for example
+
+00:01:47,000 --> 00:01:51,000
+a sinusoidal signal has three parameters
+
+00:01:51,000 --> 00:01:56,000
+amplitude frequency and phase and we could think for example
+
+00:01:56,000 --> 00:01:59,000
+love using one signal
+
+00:01:59,000 --> 00:02:04,000
+to very let's say the airport to up a sinusoidal signal
+
+00:02:04,000 --> 00:02:09,000
+and what that leads to is an ocean which will develop in some detail
+
+00:02:09,000 --> 00:02:13,000
+referred to as sinusoidal amplitude modulation
+
+00:02:13,000 --> 00:02:16,000
+and would correspond to a
+
+00:02:16,000 --> 00:02:20,000
+sinusoidal signal refer to as the carrier
+
+00:02:20,000 --> 00:02:24,000
+and its amplitude being buried on the basis
+
+00:02:24,000 --> 00:02:28,000
+love another signal now
+
+00:02:28,000 --> 00:02:31,000
+alternatively we could think all burying either the
+
+00:02:31,000 --> 00:02:34,000
+frequency or the phase a sinusoidal signal
+
+00:02:34,000 --> 00:02:40,000
+again with another signal and with that leads to is another very important
+
+00:02:40,000 --> 00:02:41,000
+notion
+
+00:02:41,000 --> 00:02:44,000
+which is referred to as sinusoidal
+
+00:02:44,000 --> 00:02:48,000
+frequency modulation where essentially
+
+00:02:48,000 --> 00:02:52,000
+it's the frequency up a sinusoid that's changing
+
+00:02:52,000 --> 00:02:55,000
+depending on the signal that we're using
+
+00:02:55,000 --> 00:03:00,000
+to modulate this sinusoid now
+
+00:03:00,000 --> 00:03:04,000
+sign a soil amplitude frequency and phase modulation
+
+00:03:04,000 --> 00:03:07,000
+are extremely important topics and ideas
+
+00:03:07,000 --> 00:03:13,000
+in the context ok communication systems what are the reasons is dead if you want
+
+00:03:13,000 --> 00:03:16,000
+to transmit a signal let's say for example a voice signal
+
+00:03:16,000 --> 00:03:21,000
+the voice signal that you're listening to now if you try to transmit that over
+
+00:03:21,000 --> 00:03:25,000
+long distances because the frequencies involved
+
+00:03:25,000 --> 00:03:28,000
+the medium that you use to transmitted
+
+00:03:28,000 --> 00:03:32,000
+won't carry it long distances the idea then
+
+00:03:32,000 --> 00:03:36,000
+is to essentially take that signal like a voice signal
+
+00:03:36,000 --> 00:03:40,000
+use it to modulate a much higher frequency signal
+
+00:03:40,000 --> 00:03:43,000
+and then transmit that higher frequency signal
+
+00:03:43,000 --> 00:03:47,000
+over a medium dead essentially can support
+
+00:03:47,000 --> 00:03:51,000
+long-distance transmission at those frequencies then at the other end of
+
+00:03:51,000 --> 00:03:51,000
+course
+
+00:03:51,000 --> 00:03:55,000
+the voice information or whatever else the information is
+
+00:03:55,000 --> 00:03:58,000
+is taken off now also
+
+00:03:58,000 --> 00:04:01,000
+a notion that that leads to an will be developing in
+
+00:04:01,000 --> 00:04:05,000
+some detail is kind of the idea that in fact
+
+00:04:05,000 --> 00:04:10,000
+you can simultaneously transmit more than one signal
+
+00:04:10,000 --> 00:04:14,000
+by in essence taking several voice signals or other signals
+
+00:04:14,000 --> 00:04:19,000
+using them to modulate either the frequency or amplitude
+
+00:04:19,000 --> 00:04:23,000
+love sinusoidal signals at different frequencies
+
+00:04:23,000 --> 00:04:27,000
+ending all those together that's a process called multiplexing
+
+00:04:27,000 --> 00:04:30,000
+and then at the other end the transmission system
+
+00:04:30,000 --> 00:04:34,000
+taking those sinusoidal signals apart and then
+
+00:04:34,000 --> 00:04:39,000
+extracting the envelope or frequency modulation information
+
+00:04:39,000 --> 00:04:44,000
+to get back to the voice signal or other information carrying signal
+
+00:04:44,000 --> 00:04:48,000
+so that's one of the very important ways in which
+
+00:04:48,000 --> 00:04:54,000
+modulation is used sinusoidal modulation is used in communication systems
+
+00:04:54,000 --> 00:04:57,000
+and and white will see as
+
+00:04:57,000 --> 00:05:00,000
+in particular as we go through today's lecture
+
+00:05:00,000 --> 00:05:06,000
+is there'd amplitude modulation sinusoidal amplitude modulation
+
+00:05:06,000 --> 00:05:10,000
+in fact follows in a fairly straightforward way
+
+00:05:10,000 --> 00:05:13,000
+from the properties of the four EA transform
+
+00:05:13,000 --> 00:05:16,000
+that we've developed in summer the earlier lectures
+
+00:05:16,000 --> 00:05:20,000
+so our focus on in today's lecture
+
+00:05:20,000 --> 00:05:24,000
+will be on sinusoidal amplitude modulation
+
+00:05:24,000 --> 00:05:28,000
+in continuous-time in the next lecture will
+
+00:05:28,000 --> 00:05:31,000
+consider the same set of notions related to discrete-time
+
+00:05:31,000 --> 00:05:36,000
+and also a concept referred to as poss amplitude modulation
+
+00:05:36,000 --> 00:05:40,000
+and all of these follow very in a very straightforward way from the modulation
+
+00:05:40,000 --> 00:05:43,000
+property for the 48 transform
+
+00:05:43,000 --> 00:05:46,000
+issues of frequency and phase modulation are
+
+00:05:46,000 --> 00:05:50,000
+a little more difficult to analyze but in fact many have
+
+00:05:50,000 --> 00:05:53,000
+the techniques that we've developed in the previous lectures
+
+00:05:53,000 --> 00:05:58,000
+also provide important insights into frequency phase modulation
+
+00:05:58,000 --> 00:06:02,000
+summer this is develop in more detail
+
+00:06:02,000 --> 00:06:05,000
+in the book so what I'd like to do
+
+00:06:05,000 --> 00:06:09,000
+is focus for now on the concept
+
+00:06:09,000 --> 00:06:12,000
+love amplitude modulation
+
+00:06:12,000 --> 00:06:15,000
+and in as i indicated
+
+00:06:15,000 --> 00:06:19,000
+there are several kinds love carrier signals
+
+00:06:19,000 --> 00:06:23,000
+on which the modulation can be superimposed
+
+00:06:23,000 --> 00:06:27,000
+the basic structure for an amplitude modulation system
+
+00:06:27,000 --> 00:06:32,000
+is one in which there is the modulating signal let's say for example Voice
+
+00:06:32,000 --> 00:06:36,000
+and a carrier signal what's referred to as the carrier
+
+00:06:36,000 --> 00:06:41,000
+and then of course the resulting output is the modulated output
+
+00:06:41,000 --> 00:06:47,000
+now to analyze this since we have multiplication in the time domain
+
+00:06:47,000 --> 00:06:50,000
+we know from the property the 48 transform
+
+00:06:50,000 --> 00:06:53,000
+that we've developed previously the modulation property
+
+00:06:53,000 --> 00:06:57,000
+dead multiplication in the time domain corresponds to
+
+00:06:57,000 --> 00:07:03,000
+convolution in the frequency domain and it's this basic property or equation
+
+00:07:03,000 --> 00:07:07,000
+dead lets us analyzed in some detail in fact
+
+00:07:07,000 --> 00:07:11,000
+the notions of amplitude modulation
+
+00:07:11,000 --> 00:07:14,000
+as we go through this lecture and the next lecture
+
+00:07:14,000 --> 00:07:18,000
+we'll be talking as i indicated about several different types
+
+00:07:18,000 --> 00:07:22,000
+carrier signals one is
+
+00:07:22,000 --> 00:07:26,000
+what's referred to as poss carriers and that leads to
+
+00:07:26,000 --> 00:07:30,000
+among other things the concept the pulse amplitude modulation
+
+00:07:30,000 --> 00:07:34,000
+that will be deferred until the next lecture
+
+00:07:34,000 --> 00:07:37,000
+in today's lecture what I'll focus on is
+
+00:07:37,000 --> 00:07:41,000
+first the case of a complex exponential carrier
+
+00:07:41,000 --> 00:07:45,000
+second the case of a sinusoidal carrier
+
+00:07:45,000 --> 00:07:50,000
+and in fact in the complex exponential carrier a sinusoidal carrier
+
+00:07:50,000 --> 00:07:53,000
+are obviously very closely related since
+
+00:07:53,000 --> 00:07:57,000
+the complex exponential carrier is in effect
+
+00:07:57,000 --> 00:08:01,000
+to sinusoidal carriers one
+
+00:08:01,000 --> 00:08:04,000
+for the real part and one for the imaginary part
+
+00:08:04,000 --> 00:08:08,000
+so let's first begin a discussion love
+
+00:08:08,000 --> 00:08:12,000
+amplitude modulation by considering a complex exponential carrier
+
+00:08:12,000 --> 00:08:18,000
+and then moving on to a discussion of a sinusoidal carrier
+
+00:08:18,000 --> 00:08:21,000
+so the issue then is dead
+
+00:08:21,000 --> 00:08:25,000
+we have a signal
+
+00:08:25,000 --> 00:08:29,000
+x50 it's multiplied by a carrier
+
+00:08:29,000 --> 00:08:32,000
+and the carrier they were considering is a carrier signal
+
+00:08:32,000 --> 00:08:36,000
+see if the of the form
+
+00:08:36,000 --> 00:08:40,000
+e2 the J Omega CT
+
+00:08:40,000 --> 00:08:43,000
+plus status see thats the form
+
+00:08:43,000 --> 00:08:46,000
+love our carrier signal and
+
+00:08:46,000 --> 00:08:49,000
+what we can first analyze is what
+
+00:08:49,000 --> 00:08:53,000
+the result things signal or spectrum is
+
+00:08:53,000 --> 00:08:58,000
+at the output the modulator well we can do that by
+
+00:08:58,000 --> 00:09:01,000
+concentrating on the modulation property
+
+00:09:01,000 --> 00:09:04,000
+and let's consider just are as a
+
+00:09:04,000 --> 00:09:08,000
+serb general for respect from what i've indicated here
+
+00:09:08,000 --> 00:09:11,000
+for the 48 transform love
+
+00:09:11,000 --> 00:09:15,000
+the input signal
+
+00:09:15,000 --> 00:09:19,000
+or modulating signal exe phone maker and so
+
+00:09:19,000 --> 00:09:22,000
+this is intended to represent
+
+00:09:22,000 --> 00:09:25,000
+the spectrum affect safety
+
+00:09:25,000 --> 00:09:30,000
+and then the carrier signal since it's a single complex exponential
+
+00:09:30,000 --> 00:09:34,000
+has a $4 EA transform which is
+
+00:09:34,000 --> 00:09:37,000
+an impulse in the frequency domain
+
+00:09:37,000 --> 00:09:40,000
+and the airport to up the impulse is
+
+00:09:40,000 --> 00:09:43,000
+to partay to the J status subsea
+
+00:09:43,000 --> 00:09:47,000
+where we noticed that the complex amplitude incorporates
+
+00:09:47,000 --> 00:09:50,000
+the phase information so
+
+00:09:50,000 --> 00:09:56,000
+now if we multiply in the time domain week involving the frequency domain and
+
+00:09:56,000 --> 00:09:57,000
+as you know
+
+00:09:57,000 --> 00:10:02,000
+involving a signal with an impulse just shifts that signal to the location of
+
+00:10:02,000 --> 00:10:03,000
+the impulse
+
+00:10:03,000 --> 00:10:07,000
+and so as a consequence and taken care various
+
+00:10:07,000 --> 00:10:11,000
+factors what we end up with is spectrum
+
+00:10:11,000 --> 00:10:15,000
+then that is centered at the carrier frequency
+
+00:10:15,000 --> 00:10:19,000
+Omega subsea so
+
+00:10:19,000 --> 00:10:22,000
+what this says is dead if we have a signal
+
+00:10:22,000 --> 00:10:26,000
+x50 and we
+
+00:10:26,000 --> 00:10:30,000
+use it to modulate a complex exponential carrier
+
+00:10:30,000 --> 00:10:34,000
+in the frequency domain what we've simply done is to take
+
+00:10:34,000 --> 00:10:38,000
+the original spectrum and shifted in frequency
+
+00:10:38,000 --> 00:10:43,000
+to so that was originally at zero frequency is now centered around the
+
+00:10:43,000 --> 00:10:46,000
+carrier frequency
+
+00:10:46,000 --> 00:10:50,000
+now we've now modulated in effect to a higher frequency
+
+00:10:50,000 --> 00:10:53,000
+things are happening at a higher frequency band and
+
+00:10:53,000 --> 00:10:57,000
+the next question is how do we do much away or in other words
+
+00:10:57,000 --> 00:11:01,000
+how do we get the original signal back
+
+00:11:01,000 --> 00:11:05,000
+well of course one way that we can think of doing it
+
+00:11:05,000 --> 00:11:08,000
+particularly in the context love this
+
+00:11:08,000 --> 00:11:12,000
+specific carrier if we look back at the top equation
+
+00:11:12,000 --> 00:11:15,000
+we have as the result in the modulation
+
+00:11:15,000 --> 00:11:19,000
+X 50 time see if he were see if t is this
+
+00:11:19,000 --> 00:11:22,000
+and we could consider for example
+
+00:11:22,000 --> 00:11:26,000
+just simply dividing the modulator output by this
+
+00:11:26,000 --> 00:11:29,000
+or equivalently taking the modulated output
+
+00:11:29,000 --> 00:11:32,000
+and multiplying by the to the
+
+00:11:32,000 --> 00:11:36,000
+minus J Omega CT plus they to see
+
+00:11:36,000 --> 00:11:40,000
+well let's track that through in terms of the spectra
+
+00:11:40,000 --> 00:11:44,000
+we have again the spectrum or
+
+00:11:44,000 --> 00:11:48,000
+the output the modulator which is the original spectrum shifted
+
+00:11:48,000 --> 00:11:52,000
+up to the carrier frequency we have
+
+00:11:52,000 --> 00:11:56,000
+below that the spectrum love
+
+00:11:56,000 --> 00:12:01,000
+e2 the minus J Omega CT plus they to see
+
+00:12:01,000 --> 00:12:05,000
+and if we now convolved this with this
+
+00:12:05,000 --> 00:12:08,000
+that results in simply shifting this spectrum except for
+
+00:12:08,000 --> 00:12:12,000
+an issue the scale factor shifting this spectrum
+
+00:12:12,000 --> 00:12:16,000
+back down to the origin so can bombing these two together
+
+00:12:16,000 --> 00:12:20,000
+the spectrum that we end up with is that
+
+00:12:20,000 --> 00:12:25,000
+so weekend track this through in the frequency domain
+
+00:12:25,000 --> 00:12:28,000
+in the frequency domain that says ship the spectrum up
+
+00:12:28,000 --> 00:12:32,000
+when you want the modulate ship the spectrum back down
+
+00:12:32,000 --> 00:12:35,000
+and alternatively we can look at algebraically
+
+00:12:35,000 --> 00:12:39,000
+in the time domain what it says is if you multiply it by either the plush
+
+00:12:39,000 --> 00:12:41,000
+chair make a CT
+
+00:12:41,000 --> 00:12:46,000
+then when you want to get back multiply by in the minus chair make a CT
+
+00:12:46,000 --> 00:12:52,000
+now one question that I you could conceivably be asking is
+
+00:12:52,000 --> 00:12:55,000
+if we're talking about practical systems and not
+
+00:12:55,000 --> 00:12:59,000
+simply mathematics in fact
+
+00:12:59,000 --> 00:13:03,000
+doesn't make sense in the real world to consider
+
+00:13:03,000 --> 00:13:06,000
+using a complex exponential carrier
+
+00:13:06,000 --> 00:13:10,000
+and the answer to that in fact is
+
+00:13:10,000 --> 00:13:15,000
+yes dead very often in practical systems one considers
+
+00:13:15,000 --> 00:13:20,000
+using a carrier which in fact is a complex exponential
+
+00:13:20,000 --> 00:13:23,000
+well a complex exponentials complex there's a
+
+00:13:23,000 --> 00:13:27,000
+square root of -1 in the air and you can kinda basse-bolle how do we get a square
+
+00:13:27,000 --> 00:13:29,000
+root of -1
+
+00:13:29,000 --> 00:13:32,000
+and the answer is fairly simple let's
+
+00:13:32,000 --> 00:13:37,000
+look again at the modulator which we have here
+
+00:13:37,000 --> 00:13:40,000
+and in effect with that says is we want to multiply
+
+00:13:40,000 --> 00:13:45,000
+a real-valued signal by you the chair make a CT plus they to see
+
+00:13:45,000 --> 00:13:50,000
+now we can equivalent Lee use oil as relationship
+
+00:13:50,000 --> 00:13:54,000
+to break this down into a cosine and sine term
+
+00:13:54,000 --> 00:13:59,000
+and so what that means interns have an implementation equivalent Lee
+
+00:13:59,000 --> 00:14:03,000
+is modulating x50
+
+00:14:03,000 --> 00:14:07,000
+onto a cosine carrier
+
+00:14:07,000 --> 00:14:10,000
+and that then gives us the real part
+
+00:14:10,000 --> 00:14:14,000
+ald the complex output and modulating it onto
+
+00:14:14,000 --> 00:14:20,000
+a sinusoidal carrier these two being ninety degrees out of phase
+
+00:14:20,000 --> 00:14:23,000
+and that gives us the imaginary part
+
+00:14:23,000 --> 00:14:27,000
+and so in effect this is the complex signal
+
+00:14:27,000 --> 00:14:31,000
+if we just simply think both hanging attack on here that says square root of
+
+00:14:31,000 --> 00:14:32,000
+-1 RJ
+
+00:14:32,000 --> 00:14:36,000
+and we appropriately combined complex signals
+
+00:14:36,000 --> 00:14:40,000
+following the rules of complex arithmetic and indeed that's exactly the
+
+00:14:40,000 --> 00:14:42,000
+way things are done in the real world
+
+00:14:42,000 --> 00:14:46,000
+a complex signal is simply a set love
+
+00:14:46,000 --> 00:14:51,000
+to real signals and of course if we look at the spectra
+
+00:14:51,000 --> 00:14:57,000
+involved if we we have here the real part and the imaginary part pov
+
+00:14:57,000 --> 00:15:01,000
+the complex output if we
+
+00:15:01,000 --> 00:15:05,000
+again refer back to the original spectrum accessible maker
+
+00:15:05,000 --> 00:15:08,000
+and the modulated spectrum
+
+00:15:08,000 --> 00:15:11,000
+which I show down here the original spectrum
+
+00:15:11,000 --> 00:15:16,000
+shifted up to the carrier frequency
+
+00:15:16,000 --> 00:15:20,000
+in effect we're building nests I dove two lines
+
+00:15:20,000 --> 00:15:24,000
+one-line representing the real part
+
+00:15:24,000 --> 00:15:29,000
+love that and the real part in the time domain corresponds to the even part in
+
+00:15:29,000 --> 00:15:31,000
+the frequency domain
+
+00:15:31,000 --> 00:15:34,000
+and so with the output of one of the
+
+00:15:34,000 --> 00:15:38,000
+Cosi if the cosine modulator we have a spectrum
+
+00:15:38,000 --> 00:15:41,000
+that looks like this and
+
+00:15:41,000 --> 00:15:46,000
+the output love the along the imaginary branch
+
+00:15:46,000 --> 00:15:50,000
+has a spectrum that looks like this
+
+00:15:50,000 --> 00:15:53,000
+recalling the top branch that this
+
+00:15:53,000 --> 00:15:57,000
+for positive frequencies is positive and was positive here and so in effect when
+
+00:15:57,000 --> 00:15:59,000
+you add them
+
+00:15:59,000 --> 00:16:02,000
+this portion of the spectrum will cancel out
+
+00:16:02,000 --> 00:16:06,000
+so in effect what we're doing is building
+
+00:16:06,000 --> 00:16:09,000
+then the complex signal
+
+00:16:09,000 --> 00:16:14,000
+in effect outta to real signals or we're building this complex
+
+00:16:14,000 --> 00:16:19,000
+the spectrum the complex signal I dove separate lines the represent the
+
+00:16:19,000 --> 00:16:22,000
+even and the art parts
+
+00:16:22,000 --> 00:16:26,000
+okay now their
+
+00:16:26,000 --> 00:16:30,000
+are lots of applications love amplitude modulation
+
+00:16:30,000 --> 00:16:34,000
+and we'll be seeing a number of these as we go through the discussion
+
+00:16:34,000 --> 00:16:37,000
+what I'd like to do in is just indicate briefly
+
+00:16:37,000 --> 00:16:41,000
+one now which is an application that
+
+00:16:41,000 --> 00:16:45,000
+are in fact surface is fairly often in the context
+
+00:16:45,000 --> 00:16:49,000
+love a complex exponential carrier
+
+00:16:49,000 --> 00:16:54,000
+and bad is the notion love using modulation
+
+00:16:54,000 --> 00:16:57,000
+to permit
+
+00:16:57,000 --> 00:17:01,000
+the application %uh love
+
+00:17:01,000 --> 00:17:04,000
+a very well designed and implemented low-pass filter
+
+00:17:04,000 --> 00:17:10,000
+to be used as a bandpass filter and in fact as a set a bandpass filters
+
+00:17:10,000 --> 00:17:13,000
+account here's the idea the idea is
+
+00:17:13,000 --> 00:17:17,000
+if we have a fixed filter
+
+00:17:17,000 --> 00:17:20,000
+work we have let's say we have a signal and we want to thank
+
+00:17:20,000 --> 00:17:25,000
+all a filter which we want to kinda move along the signal
+
+00:17:25,000 --> 00:17:30,000
+one way to do it is to somehow have filters the move along the signal
+
+00:17:30,000 --> 00:17:34,000
+the other possibility is to keep the filter fix and let
+
+00:17:34,000 --> 00:17:39,000
+the signal move in frequency in front of the filter
+
+00:17:39,000 --> 00:17:42,000
+let me that may be a little more specific
+
+00:17:42,000 --> 00:17:47,000
+suppose that we have a signal accept T
+
+00:17:47,000 --> 00:17:52,000
+and in we modulated with a complex exponential carrier
+
+00:17:52,000 --> 00:17:56,000
+with the carrier frequency Omega see
+
+00:17:56,000 --> 00:18:02,000
+and the output if that is then processed with a low pass filter
+
+00:18:02,000 --> 00:18:06,000
+and then we d modulate the result
+
+00:18:06,000 --> 00:18:11,000
+then in fact what we've done is to take the spectrum
+
+00:18:11,000 --> 00:18:14,000
+or the input signal
+
+00:18:14,000 --> 00:18:19,000
+shifted pullout what is now around low frequencies
+
+00:18:19,000 --> 00:18:24,000
+and then shift that part of the spectrum back to where it belongs
+
+00:18:24,000 --> 00:18:27,000
+so if we look at that interns
+
+00:18:27,000 --> 00:18:31,000
+over actually tracking through the spectra we would have
+
+00:18:31,000 --> 00:18:35,000
+initially a spectrum for the original signal
+
+00:18:35,000 --> 00:18:39,000
+which I show at the top as excessive Omega
+
+00:18:39,000 --> 00:18:42,000
+after modulating or shifting that spectrum
+
+00:18:42,000 --> 00:18:46,000
+up to a center frequency Omega see
+
+00:18:46,000 --> 00:18:52,000
+we then have what I indicate here and the dotted line corresponds to
+
+00:18:52,000 --> 00:18:55,000
+the passband the low-caste filter
+
+00:18:55,000 --> 00:18:59,000
+well the results have low pass filtering rejects
+
+00:18:59,000 --> 00:19:04,000
+all the spectrum except the part around low frequencies
+
+00:19:04,000 --> 00:19:08,000
+and the next step is then 2d modulate
+
+00:19:08,000 --> 00:19:12,000
+this and so in effect the modulating
+
+00:19:12,000 --> 00:19:17,000
+will shift this spectrum back to where it originally came from
+
+00:19:17,000 --> 00:19:20,000
+and so that result will be what I
+
+00:19:20,000 --> 00:19:24,000
+show in the final result
+
+00:19:24,000 --> 00:19:27,000
+which is here and what we can say is that
+
+00:19:27,000 --> 00:19:30,000
+this in fact is equivalent
+
+00:19:30,000 --> 00:19:34,000
+if we can look back at the top spectrum
+
+00:19:34,000 --> 00:19:38,000
+this is equivalent to having extracted
+
+00:19:38,000 --> 00:19:43,000
+with a bandpass filter a section out of this part of the spectrum
+
+00:19:43,000 --> 00:19:48,000
+so interns love tracking through the spectrum and looking at
+
+00:19:48,000 --> 00:19:52,000
+the equivalent filtering operation
+
+00:19:52,000 --> 00:19:56,000
+then what we accomplished was
+
+00:19:56,000 --> 00:20:00,000
+to pull out this part of the spectrum
+
+00:20:00,000 --> 00:20:03,000
+using a low-pass filter and modulation
+
+00:20:03,000 --> 00:20:07,000
+but acquittal atlee what we implemented was
+
+00:20:07,000 --> 00:20:10,000
+a bandpass filter as i indicate here
+
+00:20:10,000 --> 00:20:13,000
+now of course a signal with this spectrum since
+
+00:20:13,000 --> 00:20:17,000
+this spectrum is not kind you get symmetric we know that this signal does
+
+00:20:17,000 --> 00:20:20,000
+not correspond to a real-valued signal
+
+00:20:20,000 --> 00:20:25,000
+a quite lovely this filter doesn't correspond to a filter whose impulse
+
+00:20:25,000 --> 00:20:26,000
+response Israel
+
+00:20:26,000 --> 00:20:30,000
+if in fact we add another step to this
+
+00:20:30,000 --> 00:20:34,000
+which is to take the real part of the output
+
+00:20:34,000 --> 00:20:38,000
+then by taking the real part of the output we would be taking the
+
+00:20:38,000 --> 00:20:42,000
+even part of the spectrum associated with that complex signal
+
+00:20:42,000 --> 00:20:47,000
+and the acquittal with author that we would end up with then
+
+00:20:47,000 --> 00:20:50,000
+is the filter that I indicated the bottom
+
+00:20:50,000 --> 00:20:54,000
+which is a bandpass filter
+
+00:20:54,000 --> 00:21:00,000
+now just two reiterate a point that I made earlier
+
+00:21:00,000 --> 00:21:04,000
+a question of course is why would you go to this trouble why not just build a
+
+00:21:04,000 --> 00:21:06,000
+bandpass filter
+
+00:21:06,000 --> 00:21:10,000
+and one other reasons is that
+
+00:21:10,000 --> 00:21:14,000
+its often much easier to build
+
+00:21:14,000 --> 00:21:18,000
+affixed filter a filter with a fixed center frequency for example a low-pass
+
+00:21:18,000 --> 00:21:19,000
+filter
+
+00:21:19,000 --> 00:21:24,000
+than it is to build the filter that has variable compliments in it so that
+
+00:21:24,000 --> 00:21:28,000
+when you bury them the filters center frequency shifts around
+
+00:21:28,000 --> 00:21:32,000
+now if you want to look at at the energy and a signaling different frequency
+
+00:21:32,000 --> 00:21:33,000
+bands
+
+00:21:33,000 --> 00:21:37,000
+then you'd like to look at it through different filters
+
+00:21:37,000 --> 00:21:41,000
+and so kind of the idea here which is really the basis for many spectrum
+
+00:21:41,000 --> 00:21:43,000
+analyzers
+
+00:21:43,000 --> 00:21:47,000
+is to build a really good quality low-pass filter
+
+00:21:47,000 --> 00:21:52,000
+and then use modulation which is often easier to implement use modulation
+
+00:21:52,000 --> 00:21:55,000
+to shift the signal essentially in front of the wind
+
+00:21:55,000 --> 00:21:59,000
+in front of the filter
+
+00:21:59,000 --> 00:22:03,000
+okay well so we've can work their way through
+
+00:22:03,000 --> 00:22:07,000
+modulation with a complex exponential carrier
+
+00:22:07,000 --> 00:22:10,000
+and what we saw
+
+00:22:10,000 --> 00:22:14,000
+among other things with a complex exponential carrier
+
+00:22:14,000 --> 00:22:18,000
+is that in fact what a car sponse to
+
+00:22:18,000 --> 00:22:21,000
+is to
+
+00:22:21,000 --> 00:22:25,000
+branches one being modulation
+
+00:22:25,000 --> 00:22:29,000
+with a cosine and the other modulation with the sign
+
+00:22:29,000 --> 00:22:34,000
+and so in fact in the real world weren't there in a practical system
+
+00:22:34,000 --> 00:22:38,000
+modulation the complex exponential carrier really would be accomplished
+
+00:22:38,000 --> 00:22:42,000
+with modulation with the sinusoidal carrier
+
+00:22:42,000 --> 00:22:46,000
+and in particular with sinusoidal carriers
+
+00:22:46,000 --> 00:22:50,000
+that are in quadrature as its referred to or
+
+00:22:50,000 --> 00:22:53,000
+covertly ninety degrees out of phase
+
+00:22:53,000 --> 00:22:57,000
+okay well you in fact
+
+00:22:57,000 --> 00:23:02,000
+sinusoidal modulation in other words modulation using only a sinusoidal
+
+00:23:02,000 --> 00:23:03,000
+carrier
+
+00:23:03,000 --> 00:23:07,000
+very often is used in its own right
+
+00:23:07,000 --> 00:23:11,000
+not only for for generating a complex exponential carrier
+
+00:23:11,000 --> 00:23:16,000
+but in fact as a carrier by itself
+
+00:23:16,000 --> 00:23:19,000
+well let's looking at what the consequences
+
+00:23:19,000 --> 00:23:24,000
+love modulation with a sinus or to carry or R and a particular
+
+00:23:24,000 --> 00:23:27,000
+work through again what the specter are
+
+00:23:27,000 --> 00:23:32,000
+and how we get the original signal back again
+
+00:23:32,000 --> 00:23:37,000
+soul in we are talking then about a carrier signal
+
+00:23:37,000 --> 00:23:40,000
+which is simply a sinusoidal signal
+
+00:23:40,000 --> 00:23:44,000
+with some phase and of course we can
+
+00:23:44,000 --> 00:23:50,000
+right that as the some love too complex exponential
+
+00:23:50,000 --> 00:23:53,000
+signals and so in effect now
+
+00:23:53,000 --> 00:23:57,000
+when we apply the modulation property we have the original spectrum
+
+00:23:57,000 --> 00:24:01,000
+which a show here accessible maker
+
+00:24:01,000 --> 00:24:05,000
+and that's convolved with the spectrum love the carrier
+
+00:24:05,000 --> 00:24:08,000
+and the spectrum of the carrier in this case
+
+00:24:08,000 --> 00:24:11,000
+is two impulses one at
+
+00:24:11,000 --> 00:24:16,000
+plus Omega see and one at minus Omega see
+
+00:24:16,000 --> 00:24:19,000
+and the amplitudes if these incorporate the phase
+
+00:24:19,000 --> 00:24:22,000
+and later on in the lectured and
+
+00:24:22,000 --> 00:24:26,000
+and to and subsequent lectures all
+
+00:24:26,000 --> 00:24:29,000
+have a tendency to drop that they deserve see just
+
+00:24:29,000 --> 00:24:33,000
+to keep the notation an algebra little cleaner but
+
+00:24:33,000 --> 00:24:36,000
+for now I've incorporated and so now
+
+00:24:36,000 --> 00:24:39,000
+when we apply the modulation property what
+
+00:24:39,000 --> 00:24:44,000
+we will do is convolved this spectrum
+
+00:24:44,000 --> 00:24:47,000
+with this spectrum and the result of course
+
+00:24:47,000 --> 00:24:50,000
+is that the spectrum of the original signal
+
+00:24:50,000 --> 00:24:55,000
+gets replicated at both Omega since the
+
+00:24:55,000 --> 00:24:58,000
+and at minus Omega subsea and
+
+00:24:58,000 --> 00:25:01,000
+the resulting spectrum at the output to the modulator then
+
+00:25:01,000 --> 00:25:05,000
+is the spectrum that I show here
+
+00:25:05,000 --> 00:25:09,000
+okay well now the question of course is
+
+00:25:09,000 --> 00:25:14,000
+see now what's happened is there with a sinus or carrier we've moved
+
+00:25:14,000 --> 00:25:18,000
+the spectrum to both plus i'll make a CD and minus Omega see
+
+00:25:18,000 --> 00:25:22,000
+and now if we want to get the original signal back again
+
+00:25:22,000 --> 00:25:27,000
+well we would like to do somehow is move that spectrum back down
+
+00:25:27,000 --> 00:25:31,000
+to the origin now in the case for complex exponential
+
+00:25:31,000 --> 00:25:35,000
+that was easy to do which shifted one of which is shifted back down
+
+00:25:35,000 --> 00:25:40,000
+let's see what happens if in fact we attempt 2d modulate
+
+00:25:40,000 --> 00:25:45,000
+by again multiplying by the same sinusoidal carrier
+
+00:25:45,000 --> 00:25:48,000
+so let's examine what happens if
+
+00:25:48,000 --> 00:25:52,000
+we now take
+
+00:25:52,000 --> 00:25:57,000
+are modulated signal
+
+00:25:57,000 --> 00:26:01,000
+and again modulated
+
+00:26:01,000 --> 00:26:04,000
+onto the same sinusoidal carrier
+
+00:26:04,000 --> 00:26:09,000
+to generate the output WT if we look at the spectra
+
+00:26:09,000 --> 00:26:12,000
+we have then the
+
+00:26:12,000 --> 00:26:16,000
+modulated spectrum which we had initially
+
+00:26:16,000 --> 00:26:21,000
+and we now want to convey all that again with the spectrum
+
+00:26:21,000 --> 00:26:25,000
+or the carrier signal the specter the carrier signal
+
+00:26:25,000 --> 00:26:30,000
+I indicate here and if you tracked through the convolution which is fairly
+
+00:26:30,000 --> 00:26:31,000
+straightforward
+
+00:26:31,000 --> 00:26:35,000
+then in fact what happens as you can follow this with this
+
+00:26:35,000 --> 00:26:38,000
+is you end up with
+
+00:26:38,000 --> 00:26:42,000
+a composite spectrum which
+
+00:26:42,000 --> 00:26:46,000
+is what i've indicated on the bottom curve and has
+
+00:26:46,000 --> 00:26:51,000
+in effect the spectrum of the original single exit see
+
+00:26:51,000 --> 00:26:54,000
+replicated in three places one
+
+00:26:54,000 --> 00:26:58,000
+is at -2 Omega subsea
+
+00:26:58,000 --> 00:27:03,000
+one is around the origin and wanna shifted up to
+
+00:27:03,000 --> 00:27:06,000
+twice the carrier frequency well
+
+00:27:06,000 --> 00:27:10,000
+it's this piece that we want if we could eliminate everything else
+
+00:27:10,000 --> 00:27:15,000
+and keep this then that would in fact correspond to the spectrum
+
+00:27:15,000 --> 00:27:20,000
+love the signal dead the original signal exit T
+
+00:27:20,000 --> 00:27:23,000
+how do we do that well we know how
+
+00:27:23,000 --> 00:27:28,000
+to eliminate part of the spectrum and keep another part of the spectrum that's
+
+00:27:28,000 --> 00:27:31,000
+called filtering so in fact what we would do
+
+00:27:31,000 --> 00:27:34,000
+is put the result if this
+
+00:27:34,000 --> 00:27:39,000
+through a low-pass filter low-pass filter route would retain the part of
+
+00:27:39,000 --> 00:27:40,000
+the spectrum
+
+00:27:40,000 --> 00:27:43,000
+around DC and eliminate the
+
+00:27:43,000 --> 00:27:47,000
+remaining part of the spectrum so we would keep this part
+
+00:27:47,000 --> 00:27:51,000
+and eliminate the part of the spectrum that we have over here
+
+00:27:51,000 --> 00:27:55,000
+and let me just draw your attention to the fact that because of the way the
+
+00:27:55,000 --> 00:27:57,000
+algebra works out
+
+00:27:57,000 --> 00:28:02,000
+the amplitude love this replication the spectrum is half with the original
+
+00:28:02,000 --> 00:28:07,000
+spectrum was and that means dead
+
+00:28:07,000 --> 00:28:11,000
+ideally to keep scale factors correct we would choose the amplitude this
+
+00:28:11,000 --> 00:28:14,000
+to be to to scale this
+
+00:28:14,000 --> 00:28:18,000
+backup 21 okay so
+
+00:28:18,000 --> 00:28:22,000
+what we have is the modulator and demodulator
+
+00:28:22,000 --> 00:28:26,000
+and just to summarize
+
+00:28:26,000 --> 00:28:29,000
+for the case Ave sinusoidal
+
+00:28:29,000 --> 00:28:33,000
+carrier as opposed to a complex exponential carrier
+
+00:28:33,000 --> 00:28:38,000
+the modulator is just as it is in the complex exponential case
+
+00:28:38,000 --> 00:28:42,000
+its multiplication with the sinusoidal carrier
+
+00:28:42,000 --> 00:28:46,000
+with frequency Omega see if a status
+
+00:28:46,000 --> 00:28:51,000
+see in the d modulator
+
+00:28:51,000 --> 00:28:57,000
+in the D modulator we would take the modulated signal
+
+00:28:57,000 --> 00:29:02,000
+modulated again with the same carrier signal and as we'll see later
+
+00:29:02,000 --> 00:29:06,000
+it's important to keep the same face relationship
+
+00:29:06,000 --> 00:29:09,000
+this result is now not yet quite
+
+00:29:09,000 --> 00:29:13,000
+that the modulated signal we need to process that
+
+00:29:13,000 --> 00:29:18,000
+with a low-pass filter that extracts the part of the spectrum
+
+00:29:18,000 --> 00:29:24,000
+around DC and throws away the upper part of the spectrum the case generated in
+
+00:29:24,000 --> 00:29:28,000
+the second modulation process and the resulting output
+
+00:29:28,000 --> 00:29:31,000
+is the original signal
+
+00:29:31,000 --> 00:29:34,000
+accept T right now
+
+00:29:34,000 --> 00:29:38,000
+what we've done is we've taken X 50 we've
+
+00:29:38,000 --> 00:29:43,000
+modulated it onto a carrier and then we've taken a modulated signal and we
+
+00:29:43,000 --> 00:29:46,000
+figured out how to get back except Ian of course
+
+00:29:46,000 --> 00:29:51,000
+one Caswell if you start with exiting you want to get X thirty back again
+
+00:29:51,000 --> 00:29:55,000
+white by the going through all that why not just use exit see the beginning at
+
+00:29:55,000 --> 00:29:57,000
+the end and obviously
+
+00:29:57,000 --> 00:30:01,000
+their are lots of reasons as i indicated before
+
+00:30:01,000 --> 00:30:06,000
+and just two reiterate what they are
+
+00:30:06,000 --> 00:30:09,000
+the notion of an is that what you'd like to do
+
+00:30:09,000 --> 00:30:13,000
+is shift the signal into a different frequency band
+
+00:30:13,000 --> 00:30:17,000
+for transmission over some medium day
+
+00:30:17,000 --> 00:30:20,000
+is more match to that frequency band
+
+00:30:20,000 --> 00:30:24,000
+then the frequency range the original signal also
+
+00:30:24,000 --> 00:30:28,000
+as I alluded to there's the notion that you can take lotsa signals
+
+00:30:28,000 --> 00:30:31,000
+and transmit them simultaneously over one
+
+00:30:31,000 --> 00:30:35,000
+channel whether the channels a wire a mic wave like a satellite link or
+
+00:30:35,000 --> 00:30:36,000
+whatever
+
+00:30:36,000 --> 00:30:40,000
+again using the idea of modulation
+
+00:30:40,000 --> 00:30:44,000
+and what that process is referred to
+
+00:30:44,000 --> 00:30:49,000
+as is multiplexing and let me just quickly indicate what
+
+00:30:49,000 --> 00:30:52,000
+that multiplexing process corresponds to
+
+00:30:52,000 --> 00:30:56,000
+we could think for example love taking
+
+00:30:56,000 --> 00:30:59,000
+the taking one signal
+
+00:30:59,000 --> 00:31:05,000
+and modulating it on to one carrier
+
+00:31:05,000 --> 00:31:08,000
+with one carrier frequency taking
+
+00:31:08,000 --> 00:31:14,000
+a second signal modulating it onto a different carrier frequency
+
+00:31:14,000 --> 00:31:17,000
+taking a third signal and modulating it
+
+00:31:17,000 --> 00:31:20,000
+onto a third carrier frequency et cetera
+
+00:31:20,000 --> 00:31:25,000
+and if we choose these carrier frequencies
+
+00:31:25,000 --> 00:31:30,000
+appropriately then in fact weekend and all those together
+
+00:31:30,000 --> 00:31:33,000
+and do it in such a way that the specter don't overlap
+
+00:31:33,000 --> 00:31:36,000
+an end up with one broader band signal
+
+00:31:36,000 --> 00:31:40,000
+that incorporates the information
+
+00:31:40,000 --> 00:31:43,000
+simultaneously in all of those
+
+00:31:43,000 --> 00:31:49,000
+signals so just to illustrate that in the frequency domain
+
+00:31:49,000 --> 00:31:54,000
+what we have let's say RR three spectra xaxa
+
+00:31:54,000 --> 00:31:58,000
+the Annex E and we would for example take
+
+00:31:58,000 --> 00:32:01,000
+this spectrum and modulated
+
+00:32:01,000 --> 00:32:05,000
+to a carrier frequency Omega sed est
+
+00:32:05,000 --> 00:32:11,000
+we can take this spectrum and modulate it to a carrier frequency Omega sabi
+
+00:32:11,000 --> 00:32:14,000
+where Omega sabi is chosen so that
+
+00:32:14,000 --> 00:32:17,000
+when we and these two together they don't overlap
+
+00:32:17,000 --> 00:32:21,000
+so that they can eventually be separated out and then of course we can do the
+
+00:32:21,000 --> 00:32:22,000
+same thing
+
+00:32:22,000 --> 00:32:27,000
+with the third signal and put that in a frequency range over here
+
+00:32:27,000 --> 00:32:30,000
+be careful that none of those overlap
+
+00:32:30,000 --> 00:32:34,000
+and lonely and all those together the composite spectrum
+
+00:32:34,000 --> 00:32:37,000
+is what I show here and
+
+00:32:37,000 --> 00:32:41,000
+as you can see essentially
+
+00:32:41,000 --> 00:32:45,000
+by doing appropriate bandpass filtering
+
+00:32:45,000 --> 00:32:50,000
+we can pull at whatever part of the spectrum we choose to
+
+00:32:50,000 --> 00:32:53,000
+and then d modulate that in the appropriate way
+
+00:32:53,000 --> 00:32:57,000
+of course we can do this not just with three signals but perhaps with
+
+00:32:57,000 --> 00:33:01,000
+tens or hundreds of signals so that's a process
+
+00:33:01,000 --> 00:33:06,000
+dead is typically referred to as multiplexing and as i've described here
+
+00:33:06,000 --> 00:33:10,000
+it's referred to as frequency division multiplexing
+
+00:33:10,000 --> 00:33:14,000
+that is dividing the frequency band into cells and plucking
+
+00:33:14,000 --> 00:33:19,000
+different signals into each one of those
+
+00:33:19,000 --> 00:33:23,000
+and in so if we want now to recover one of those channels
+
+00:33:23,000 --> 00:33:26,000
+in a frequency division multiplexing system
+
+00:33:26,000 --> 00:33:31,000
+as i indicated we would first d multiplex
+
+00:33:31,000 --> 00:33:34,000
+the multiplexing corresponding to pulling out
+
+00:33:34,000 --> 00:33:40,000
+the appropriate channel with a bandpass filter
+
+00:33:40,000 --> 00:33:43,000
+and after D multiplexing we would then
+
+00:33:43,000 --> 00:33:47,000
+d modulate and we would be modulated
+
+00:33:47,000 --> 00:33:52,000
+with the carrier appropriate to the channel that we've pulled out
+
+00:33:52,000 --> 00:33:55,000
+and the the modulation of course
+
+00:33:55,000 --> 00:33:59,000
+involves multiplying by the carrier and doing appropriate
+
+00:33:59,000 --> 00:34:03,000
+low-pass filtering to finally get the signal back
+
+00:34:03,000 --> 00:34:06,000
+and frequency division multiplexing
+
+00:34:06,000 --> 00:34:10,000
+is one of those things that is
+
+00:34:10,000 --> 00:34:15,000
+are its it's a fact which uses the typeof multiplexing issues for example
+
+00:34:15,000 --> 00:34:19,000
+in typical broadcast a.m.
+
+00:34:19,000 --> 00:34:23,000
+radio systems where all the channels are superimposed
+
+00:34:23,000 --> 00:34:27,000
+together and it's your home radio receiver that does the appropriate the
+
+00:34:27,000 --> 00:34:29,000
+multiplexing in the modulating
+
+00:34:29,000 --> 00:34:33,000
+and of course you can see that not only is modulation an important part
+
+00:34:33,000 --> 00:34:38,000
+of that but as I alluded to in the last lecture filtering
+
+00:34:38,000 --> 00:34:45,000
+also becomes an important part love these practical systems
+
+00:34:45,000 --> 00:34:50,000
+okay now the kinda amplitude modulation
+
+00:34:50,000 --> 00:34:53,000
+that i've talked about so far
+
+00:34:53,000 --> 00:34:56,000
+is what's referred to as
+
+00:34:56,000 --> 00:34:59,000
+synchronous modulation and
+
+00:34:59,000 --> 00:35:03,000
+the reason for the term synchronous is dead in fact
+
+00:35:03,000 --> 00:35:06,000
+what's implied in the system's
+
+00:35:06,000 --> 00:35:10,000
+is a synchronization between
+
+00:35:10,000 --> 00:35:14,000
+the transmitter and receiver in particular
+
+00:35:14,000 --> 00:35:18,000
+in the system as we've talked about it
+
+00:35:18,000 --> 00:35:21,000
+the modulator
+
+00:35:21,000 --> 00:35:25,000
+and the D modulator
+
+00:35:25,000 --> 00:35:28,000
+have a synchronization in
+
+00:35:28,000 --> 00:35:33,000
+both frequency and phase the face here is indicated status if C
+
+00:35:33,000 --> 00:35:38,000
+and if we take a look at the D modulator
+
+00:35:38,000 --> 00:35:41,000
+the the modulator has a
+
+00:35:41,000 --> 00:35:44,000
+phase love status subsea
+
+00:35:44,000 --> 00:35:48,000
+and in general
+
+00:35:48,000 --> 00:35:52,000
+there's the issue love whether we cannot maintain that synchronization between
+
+00:35:52,000 --> 00:35:54,000
+the modulator and demodulator
+
+00:35:54,000 --> 00:35:58,000
+and so what we want to examine now
+
+00:35:58,000 --> 00:36:01,000
+more generally is what the consequences might be
+
+00:36:01,000 --> 00:36:04,000
+and the solution to the resulting problems
+
+00:36:04,000 --> 00:36:08,000
+if in fact we don't have synchronization
+
+00:36:08,000 --> 00:36:11,000
+between the modulator and demodulator
+
+00:36:11,000 --> 00:36:14,000
+synchronization in terms of phase and
+
+00:36:14,000 --> 00:36:18,000
+they're also by the way is another problem which is the issue
+
+00:36:18,000 --> 00:36:20,000
+synchronization
+
+00:36:20,000 --> 00:36:23,000
+in frequency thats examine more in
+
+00:36:23,000 --> 00:36:27,000
+the text and one of focus on here is just the issue synchronization it face
+
+00:36:27,000 --> 00:36:28,000
+to give you some sense of
+
+00:36:28,000 --> 00:36:31,000
+what the issue is okay well
+
+00:36:31,000 --> 00:36:37,000
+so now what we want to look at is what happens if we have a modulator
+
+00:36:37,000 --> 00:36:41,000
+with face status at sea
+
+00:36:41,000 --> 00:36:45,000
+and it D modulator where the phase instead if a is
+
+00:36:45,000 --> 00:36:48,000
+said being status if C is some other phase
+
+00:36:48,000 --> 00:36:55,000
+the subsea and if you tracked through the details and the algebra
+
+00:36:55,000 --> 00:37:02,000
+then what you'll find is dead in fact the output love the low-pass filter
+
+00:37:02,000 --> 00:37:06,000
+rather than being XFT the signal that we want
+
+00:37:06,000 --> 00:37:10,000
+is X if T multiplied by a scale factor
+
+00:37:10,000 --> 00:37:14,000
+and the scale factor is the cosigner the phase difference
+
+00:37:14,000 --> 00:37:18,000
+now one can ask okay well what's the big deal about
+
+00:37:18,000 --> 00:37:22,000
+a scale factor if it's too small will make it bigger purse to be will make it
+
+00:37:22,000 --> 00:37:23,000
+small
+
+00:37:23,000 --> 00:37:28,000
+but there's several points 1 is notice for example that if the phase difference
+
+00:37:28,000 --> 00:37:29,000
+between
+
+00:37:29,000 --> 00:37:32,000
+much later and the modulator is 90 degrees
+
+00:37:32,000 --> 00:37:36,000
+then in fact the output at the modulator
+
+00:37:36,000 --> 00:37:41,000
+or if it isn't quite ninety degrees the amplitude might be small
+
+00:37:41,000 --> 00:37:44,000
+and the implication would be a that if there's other noise that gets injected
+
+00:37:44,000 --> 00:37:46,000
+in the system
+
+00:37:46,000 --> 00:37:50,000
+the signal to noise ratio is very low now even worse
+
+00:37:50,000 --> 00:37:54,000
+is the issue that if
+
+00:37:54,000 --> 00:37:58,000
+in fact there's a phase difference but the exact phase differences and
+
+00:37:58,000 --> 00:37:59,000
+maintained
+
+00:37:59,000 --> 00:38:04,000
+so that the modulator and demodulator kinda fade in and out of phase
+
+00:38:04,000 --> 00:38:08,000
+then in fact the output at the modulator
+
+00:38:08,000 --> 00:38:12,000
+is x50 multiplied
+
+00:38:12,000 --> 00:38:17,000
+by a time-varying fading term which is the cosigner the phase difference
+
+00:38:17,000 --> 00:38:20,000
+well what that means essentially is dead
+
+00:38:20,000 --> 00:38:25,000
+if you use this kind of system to do that the modulation
+
+00:38:25,000 --> 00:38:29,000
+then in fact what you need to be careful about is
+
+00:38:29,000 --> 00:38:35,000
+maintaining synchronization in phase and also is it turns out a frequency between
+
+00:38:35,000 --> 00:38:39,000
+the modulator and demodulator
+
+00:38:39,000 --> 00:38:44,000
+now there are alternatives to this
+
+00:38:44,000 --> 00:38:48,000
+and the alternative is what's referred to as
+
+00:38:48,000 --> 00:38:51,000
+a synchronous the modulation and
+
+00:38:51,000 --> 00:38:54,000
+let me indicate what the idea behind a synchronous
+
+00:38:54,000 --> 00:38:57,000
+the modulation is
+
+00:38:57,000 --> 00:39:01,000
+now recall the what we've done in amplitude modulation
+
+00:39:01,000 --> 00:39:05,000
+is to take the carrier signal and very its ample to
+
+00:39:05,000 --> 00:39:09,000
+with the signal that eventually we want to get back
+
+00:39:09,000 --> 00:39:13,000
+so if we look at the amplitude modulated waveform it might
+
+00:39:13,000 --> 00:39:16,000
+typically look as i indicated here
+
+00:39:16,000 --> 00:39:21,000
+and what we're trying to get back is we're trying to get back
+
+00:39:21,000 --> 00:39:24,000
+the envelope well one could imagine
+
+00:39:24,000 --> 00:39:28,000
+building a circuit or designing a device which in some sense will
+
+00:39:28,000 --> 00:39:32,000
+tracked the envelope and in fact a
+
+00:39:32,000 --> 00:39:36,000
+common circuit to do that is a fairly simple
+
+00:39:36,000 --> 00:39:39,000
+circuit consisting love a diode
+
+00:39:39,000 --> 00:39:42,000
+and a resistor and capacitor in parallel
+
+00:39:42,000 --> 00:39:47,000
+kinda the idea being that the capacitor charges up
+
+00:39:47,000 --> 00:39:50,000
+as this way for moves up to its p
+
+00:39:50,000 --> 00:39:55,000
+and then as the way for drops down the capacitor discharges through the
+
+00:39:55,000 --> 00:39:57,000
+resistor and
+
+00:39:57,000 --> 00:40:01,000
+it kinda tracks the envelope in fact the kinda output
+
+00:40:01,000 --> 00:40:04,000
+that we would get is the type of behavior that
+
+00:40:04,000 --> 00:40:09,000
+i've indicated here and in fact than that is
+
+00:40:09,000 --> 00:40:13,000
+a type all the modulation it
+
+00:40:13,000 --> 00:40:17,000
+it's the modulation that doesn't require synchronization between
+
+00:40:17,000 --> 00:40:20,000
+the modulator and demodulator and
+
+00:40:20,000 --> 00:40:25,000
+it's fairly inexpensive to build
+
+00:40:25,000 --> 00:40:28,000
+but it has obviously some
+
+00:40:28,000 --> 00:40:31,000
+trade-offs associated with it well
+
+00:40:31,000 --> 00:40:36,000
+to can indicate where the trade-off comes from or where the issue surfaces
+
+00:40:36,000 --> 00:40:40,000
+notice the what we're doing is tracking
+
+00:40:40,000 --> 00:40:43,000
+the envelope with the sinusoidal signal
+
+00:40:43,000 --> 00:40:47,000
+and we're calling mad or we're suing the back is our regional
+
+00:40:47,000 --> 00:40:50,000
+signal exit T
+
+00:40:50,000 --> 00:40:54,000
+well suppose that XFT
+
+00:40:54,000 --> 00:40:59,000
+the original signal is sometimes positive and sometimes negative
+
+00:40:59,000 --> 00:41:02,000
+what might we see as we look
+
+00:41:02,000 --> 00:41:07,000
+at the output out the modulator well the output at the modulator would've course
+
+00:41:07,000 --> 00:41:10,000
+follow the envelope down and
+
+00:41:10,000 --> 00:41:13,000
+then it would follow the envelope back up again
+
+00:41:13,000 --> 00:41:17,000
+in other words what would tend to generate is
+
+00:41:17,000 --> 00:41:21,000
+a full-wave rectified version all the signal that you were really trying to
+
+00:41:21,000 --> 00:41:22,000
+get back
+
+00:41:22,000 --> 00:41:26,000
+now there's a simple solution to this the simple solution
+
+00:41:26,000 --> 00:41:29,000
+is to make sure that the signal
+
+00:41:29,000 --> 00:41:32,000
+that is the modulating signal XFT
+
+00:41:32,000 --> 00:41:35,000
+never goes negative so if it happens to
+
+00:41:35,000 --> 00:41:39,000
+voice signal happens tends to go negative that happens to
+
+00:41:39,000 --> 00:41:42,000
+we can simply at a constant to it and and a
+
+00:41:42,000 --> 00:41:46,000
+watchin of constant so that it always stays positive
+
+00:41:46,000 --> 00:41:49,000
+well let's look at that in the
+
+00:41:49,000 --> 00:41:55,000
+what we want to do then if we're considering a synchronous the modulation
+
+00:41:55,000 --> 00:42:01,000
+is to take our original signal x50
+
+00:42:01,000 --> 00:42:05,000
+and and to it a constant
+
+00:42:05,000 --> 00:42:10,000
+where the constant is made large enough so they were sure
+
+00:42:10,000 --> 00:42:13,000
+that this is a positive signal
+
+00:42:13,000 --> 00:42:16,000
+and it's a really let me just draw your attention to the fact that I'm now
+
+00:42:16,000 --> 00:42:17,000
+suppressing
+
+00:42:17,000 --> 00:42:21,000
+the phase on the carrier signal since
+
+00:42:21,000 --> 00:42:25,000
+the phase is not important to the argument and it's just some additional
+
+00:42:25,000 --> 00:42:27,000
+notation to carry around
+
+00:42:27,000 --> 00:42:32,000
+now so the the idea then is an a constant exit see
+
+00:42:32,000 --> 00:42:37,000
+notice that if we just take this term and expanded out into two terms
+
+00:42:37,000 --> 00:42:43,000
+accept a cosigner Omega CT plus eight times cosine Omega CT
+
+00:42:43,000 --> 00:42:50,000
+then in block diagram terms we can we can represent that as i've shown here
+
+00:42:50,000 --> 00:42:54,000
+and so it would correspond to modulating the signal
+
+00:42:54,000 --> 00:42:58,000
+accept T onto the carrier Omega some CT
+
+00:42:58,000 --> 00:43:02,000
+and also injecting some carrier
+
+00:43:02,000 --> 00:43:07,000
+with an amplitude a and the output at the modulator is then the summer those
+
+00:43:07,000 --> 00:43:08,000
+two
+
+00:43:08,000 --> 00:43:13,000
+and the tech depending on exactly what this value a is
+
+00:43:13,000 --> 00:43:16,000
+will influence what the envelope a look like
+
+00:43:16,000 --> 00:43:21,000
+and I indicate below to possibilities
+
+00:43:21,000 --> 00:43:24,000
+one is where I'd made a fairly large
+
+00:43:24,000 --> 00:43:29,000
+and one is where I've made a significantly smaller
+
+00:43:29,000 --> 00:43:34,000
+and their are both positive and negative issues associated with whether a is too
+
+00:43:34,000 --> 00:43:36,000
+large a raise too small
+
+00:43:36,000 --> 00:43:40,000
+for example if a is small
+
+00:43:40,000 --> 00:43:44,000
+in relation to the amplitude
+
+00:43:44,000 --> 00:43:49,000
+love the signal then %uh rather pay is large in relation to the airport to the
+
+00:43:49,000 --> 00:43:50,000
+signal
+
+00:43:50,000 --> 00:43:55,000
+then this envelope tends to be very flat and it tends to be easy to track it with
+
+00:43:55,000 --> 00:43:58,000
+that simple diode RC circuit
+
+00:43:58,000 --> 00:44:03,000
+as compared with the case down here
+
+00:44:03,000 --> 00:44:08,000
+on the other hand their is a price that you pay
+
+00:44:08,000 --> 00:44:13,000
+for this kind event below and the price that you pay is perhaps best seen in the
+
+00:44:13,000 --> 00:44:15,000
+frequency domain
+
+00:44:15,000 --> 00:44:19,000
+if we look in the frequency domain here
+
+00:44:19,000 --> 00:44:22,000
+is our original spectrum
+
+00:44:22,000 --> 00:44:25,000
+here is the spectrum at the output
+
+00:44:25,000 --> 00:44:30,000
+%uh the modulator and the impulse that occurs here
+
+00:44:30,000 --> 00:44:33,000
+corresponds to the carrier this injected
+
+00:44:33,000 --> 00:44:37,000
+the larger a is the more carrier is injected
+
+00:44:37,000 --> 00:44:40,000
+the more carrier thats injected
+
+00:44:40,000 --> 00:44:43,000
+the easier it is for the envelope detector
+
+00:44:43,000 --> 00:44:46,000
+2d modulate so
+
+00:44:46,000 --> 00:44:50,000
+one can ask well why not just put a lot in well
+
+00:44:50,000 --> 00:44:53,000
+the obvious answer is dead
+
+00:44:53,000 --> 00:44:58,000
+it's not and information carrying part but the signal
+
+00:44:58,000 --> 00:45:02,000
+and so in some sense it represents inefficiency in transmission because
+
+00:45:02,000 --> 00:45:06,000
+what you're transmitting is power energy
+
+00:45:06,000 --> 00:45:10,000
+that doesn't have any information associated with it is simply the
+
+00:45:10,000 --> 00:45:12,000
+injection of a carrier
+
+00:45:12,000 --> 00:45:15,000
+to make d modulation for a
+
+00:45:15,000 --> 00:45:19,000
+an AC Christie modulator the modulator to make
+
+00:45:19,000 --> 00:45:23,000
+the the modulation easier
+
+00:45:23,000 --> 00:45:26,000
+and so there's this trade off and in fact one
+
+00:45:26,000 --> 00:45:31,000
+kinda represents the trade-off and the Pratt Associated primers very often
+
+00:45:31,000 --> 00:45:33,000
+returns a percent modulation
+
+00:45:33,000 --> 00:45:37,000
+where the percent modulation is
+
+00:45:37,000 --> 00:45:42,000
+a the essentially the ratio the maximum signal level
+
+00:45:42,000 --> 00:45:47,000
+to the amplitude love the injected carrier
+
+00:45:47,000 --> 00:45:51,000
+and depending on whether
+
+00:45:51,000 --> 00:45:54,000
+the modulations very high or very low the trade-off
+
+00:45:54,000 --> 00:45:59,000
+is dead the transmission is more efficient and it takes more energy but
+
+00:45:59,000 --> 00:46:01,000
+the modulator is simpler
+
+00:46:01,000 --> 00:46:04,000
+or the modulators more complicated but
+
+00:46:04,000 --> 00:46:09,000
+the transmission is simply now there are situations where you might very well
+
+00:46:09,000 --> 00:46:12,000
+want to use one or the other for example
+
+00:46:12,000 --> 00:46:15,000
+in home radio your
+
+00:46:15,000 --> 00:46:18,000
+of unwilling to transmit a lot of power
+
+00:46:18,000 --> 00:46:24,000
+so that you can have inexpensive consumer-oriented receivers
+
+00:46:24,000 --> 00:46:27,000
+on the other hand in satellite communication you willing
+
+00:46:27,000 --> 00:46:32,000
+to pay a very high price for the modulators and D modulators
+
+00:46:32,000 --> 00:46:35,000
+but its the amount of power that's transmitted
+
+00:46:35,000 --> 00:46:41,000
+that's at a premium and so in one case satellite communication you use
+
+00:46:41,000 --> 00:46:45,000
+synchronous modulation and demodulation where isn't typical consumer-oriented
+
+00:46:45,000 --> 00:46:47,000
+broadcasting
+
+00:46:47,000 --> 00:46:51,000
+you would use a sink in a synchronous system and
+
+00:46:51,000 --> 00:46:54,000
+Jenna and transmit more power even
+
+00:46:54,000 --> 00:46:58,000
+transfer more power even if it's inefficient so that the D modulator
+
+00:46:58,000 --> 00:47:03,000
+can be simply now
+
+00:47:03,000 --> 00:47:07,000
+in a synchronous system then as we've indicated there's one source of
+
+00:47:07,000 --> 00:47:08,000
+inefficiency which
+
+00:47:08,000 --> 00:47:12,000
+is this injection at the Carrier there also
+
+00:47:12,000 --> 00:47:15,000
+is a somewhat different issue
+
+00:47:15,000 --> 00:47:21,000
+related to inefficiency in sinusoidal amplitude modulation
+
+00:47:21,000 --> 00:47:24,000
+and its inefficiency that is
+
+00:47:24,000 --> 00:47:28,000
+separate from the issue synchronous first is a synchronous systems in other
+
+00:47:28,000 --> 00:47:31,000
+words it's not associated with
+
+00:47:31,000 --> 00:47:35,000
+the injection of the carrier its a very different issue
+
+00:47:35,000 --> 00:47:39,000
+let me indicate what that is let's look again
+
+00:47:39,000 --> 00:47:42,000
+in at the spectrum love
+
+00:47:42,000 --> 00:47:45,000
+X 50 which i've indicated here
+
+00:47:45,000 --> 00:47:50,000
+and in a sinusoidal amplitude modulation system
+
+00:47:50,000 --> 00:47:54,000
+we would shift this to
+
+00:47:54,000 --> 00:47:58,000
+are centered around plus and minus the carrier frequency
+
+00:47:58,000 --> 00:48:01,000
+now notice there in the original system we
+
+00:48:01,000 --> 00:48:06,000
+occupier frequency spectrum thats two times Omega Savannah M
+
+00:48:06,000 --> 00:48:10,000
+by the time we've shifted it we've used up
+
+00:48:10,000 --> 00:48:13,000
+thinking a positive and negative frequencies we've used up
+
+00:48:13,000 --> 00:48:18,000
+twice as much all the frequency spectrum
+
+00:48:18,000 --> 00:48:22,000
+well you could say okay let's let's just shift this up this way and
+
+00:48:22,000 --> 00:48:27,000
+get rid of this part that's of course what the complex exponential carrier did
+
+00:48:27,000 --> 00:48:31,000
+and the issue there really is that now you've got to transmit both the real
+
+00:48:31,000 --> 00:48:35,000
+part an imaginary part
+
+00:48:35,000 --> 00:48:38,000
+so what you can think about and ask is
+
+00:48:38,000 --> 00:48:41,000
+if you still want to transmit a real-valued signal
+
+00:48:41,000 --> 00:48:46,000
+happen you somehow remove the inefficiency or redundancy in the
+
+00:48:46,000 --> 00:48:47,000
+spectrum
+
+00:48:47,000 --> 00:48:50,000
+well notice that what we have is
+
+00:48:50,000 --> 00:48:55,000
+this spectrum moved here and moved here
+
+00:48:55,000 --> 00:48:59,000
+and we could imagine building a
+
+00:48:59,000 --> 00:49:02,000
+real-valued signal by
+
+00:49:02,000 --> 00:49:06,000
+eliminating what I refer to here as the lower sideband
+
+00:49:06,000 --> 00:49:10,000
+I have the positive frequencies and the lower sideband
+
+00:49:10,000 --> 00:49:13,000
+otto's the negative frequencies
+
+00:49:13,000 --> 00:49:17,000
+and in effect what we've done is taken
+
+00:49:17,000 --> 00:49:22,000
+just the positive frequencies here shifted them there
+
+00:49:22,000 --> 00:49:25,000
+the negative frequencies here and shifted them here and the resulting
+
+00:49:25,000 --> 00:49:25,000
+spectrum
+
+00:49:25,000 --> 00:49:28,000
+is what I indicate below
+
+00:49:28,000 --> 00:49:32,000
+well this in fact is what is often done
+
+00:49:32,000 --> 00:49:37,000
+and what is referred to as is single sideband
+
+00:49:37,000 --> 00:49:40,000
+what we've done is we've kept the upper sideband
+
+00:49:40,000 --> 00:49:44,000
+in this particular case we could alternatively by the way
+
+00:49:44,000 --> 00:49:47,000
+think love putting this system together
+
+00:49:47,000 --> 00:49:51,000
+where we retain the lower
+
+00:49:51,000 --> 00:49:54,000
+sideband instead of the upper sideband
+
+00:49:54,000 --> 00:49:57,000
+and in either case well we removed is
+
+00:49:57,000 --> 00:50:01,000
+and inefficiency in transmission at the signal
+
+00:50:01,000 --> 00:50:05,000
+namely we have a real value signal but it only requires as much
+
+00:50:05,000 --> 00:50:09,000
+total band with the terms thereof the frequencies that I
+
+00:50:09,000 --> 00:50:12,000
+that in which there's energy president as
+
+00:50:12,000 --> 00:50:17,000
+the original sick well how do we do this there are a variety of ways
+
+00:50:17,000 --> 00:50:21,000
+in and there's one procedure that is
+
+00:50:21,000 --> 00:50:25,000
+discussed in more detail in the text which uses was referred to as a
+
+00:50:25,000 --> 00:50:27,000
+90-degree face splitter
+
+00:50:27,000 --> 00:50:32,000
+the simplest way at least conceptually is to think about doing it with
+
+00:50:32,000 --> 00:50:35,000
+filtering and the idea simply
+
+00:50:35,000 --> 00:50:39,000
+is dead if we have are modulated signal
+
+00:50:39,000 --> 00:50:43,000
+here's the spektr on the modulated signal and if that modulated signal is
+
+00:50:43,000 --> 00:50:44,000
+simply put through
+
+00:50:44,000 --> 00:50:48,000
+a high pass filter than the result
+
+00:50:48,000 --> 00:50:51,000
+will be to eliminate
+
+00:50:51,000 --> 00:50:56,000
+the lower sideband if we choose the high-pass filter
+
+00:50:56,000 --> 00:50:59,000
+to have a characteristic as I indicate here
+
+00:50:59,000 --> 00:51:03,000
+so this course conceptually is a very sharp cutoff filter
+
+00:51:03,000 --> 00:51:08,000
+and what it eliminates are the lower side bands and the resulting spectrum
+
+00:51:08,000 --> 00:51:11,000
+is what we have below
+
+00:51:11,000 --> 00:51:17,000
+and this in fact is really kind of the basic idea
+
+00:51:17,000 --> 00:51:20,000
+behind single sideband transmission
+
+00:51:20,000 --> 00:51:24,000
+again there's a trade-off it's clearly more efficient
+
+00:51:24,000 --> 00:51:28,000
+then double sideband transmission
+
+00:51:28,000 --> 00:51:31,000
+but also has the complication
+
+00:51:31,000 --> 00:51:36,000
+or additional issue dead the modulator becomes a little more complicated
+
+00:51:36,000 --> 00:51:37,000
+because you need
+
+00:51:37,000 --> 00:51:41,000
+this filtering operation or some equivalent operation to get rid of the
+
+00:51:41,000 --> 00:51:46,000
+unwanted side
+
+00:51:46,000 --> 00:51:49,000
+okay well this is a fairly quick
+
+00:51:49,000 --> 00:51:54,000
+tour through a variety of issues related to modulation
+
+00:51:54,000 --> 00:51:58,000
+and it really is just the tip of the iceberg obviously
+
+00:51:58,000 --> 00:52:01,000
+modulation in the context so sinusoidal
+
+00:52:01,000 --> 00:52:04,000
+modulation as we talked about has
+
+00:52:04,000 --> 00:52:09,000
+in fact the lotto detailed issues associated with it
+
+00:52:09,000 --> 00:52:12,000
+it's important to recognize day at
+
+00:52:12,000 --> 00:52:15,000
+and to be somewhat pleased by the fact dead
+
+00:52:15,000 --> 00:52:20,000
+not only with the mathematical foundations that we've developed
+
+00:52:20,000 --> 00:52:25,000
+can we understand the basics of sinusoidal amplitude modulation but in
+
+00:52:25,000 --> 00:52:26,000
+fact
+
+00:52:26,000 --> 00:52:30,000
+what you'll find issue if you
+
+00:52:30,000 --> 00:52:34,000
+dig into this somewhat deeper that the basic background that we've built up so
+
+00:52:34,000 --> 00:52:35,000
+far
+
+00:52:35,000 --> 00:52:39,000
+the mathematical tools are really
+
+00:52:39,000 --> 00:52:43,000
+pretty much what you need for a much deeper understanding
+
+00:52:43,000 --> 00:52:47,000
+love all the issues involved
+
+00:52:47,000 --> 00:52:53,000
+so from a what might have seemed like a fairly abstract mathematical property
+
+00:52:53,000 --> 00:52:57,000
+associated with the Fourier transform we've begun
+
+00:52:57,000 --> 00:53:01,000
+to develop what should give you the sense that some
+
+00:53:01,000 --> 00:53:05,000
+important practical considerations
+
+00:53:05,000 --> 00:53:08,000
+and as we'll see in the next lecture
+
+00:53:08,000 --> 00:53:12,000
+very much the same kinds of notions apply a
+
+00:53:12,000 --> 00:53:16,000
+for discrete-time sinus oil on complex exponential
+
+00:53:16,000 --> 00:53:21,000
+amplitude modulation and also as i indicated at the beginning at the
+
+00:53:21,000 --> 00:53:22,000
+lecture
+
+00:53:22,000 --> 00:53:28,000
+in the next lecture will also talk about what's referred to as possible to
+
+00:53:28,000 --> 00:53:30,000
+modulation it's a different kind of carrier
+
+00:53:30,000 --> 00:53:35,000
+and what that will lead to among other things
+
+00:53:35,000 --> 00:53:38,000
+is a very important bridge
+
+00:53:38,000 --> 00:53:42,000
+between the notions of continuous-time
+
+00:53:42,000 --> 00:53:45,000
+and the notions of discrete-time thank you
+

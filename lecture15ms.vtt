@@ -1,0 +1,2648 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+kandungan berikut adalah disediakan di bawah lesen Creative Commons
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+sokongan anda akan membantu MIT OpenCourseWare terus tawaran
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+sumber-sumber pendidikan yang berkualiti tinggi secara percuma
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+untuk membuat sumbangan atau melihat bahan-bahan tambahan dari beratus-ratus daripada mereka IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+kursus
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+melawat MIT OpenCourseWare pada 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU home for the
+bahawa MIT bahawa rumah EDU untuk
+
+00:00:28,000 --> 00:00:31,000
+in
+
+
+00:00:31,000 --> 00:00:32,000
+the
+yang
+
+00:00:32,000 --> 00:00:33,000
+the
+yang
+
+00:00:33,000 --> 00:00:38,000
+the in
+dalam
+
+00:00:38,000 --> 00:00:40,000
+in
+
+
+00:00:40,000 --> 00:00:44,000
+the
+yang
+
+00:00:44,000 --> 00:00:51,000
+are the
+adalah
+
+00:00:52,000 --> 00:00:57,000
+in the last lecture we begin
+dalam syarahan lalu kita mula
+
+00:00:57,000 --> 00:01:02,000
+the discussion love modulation and in particular what we focused on
+modulasi cinta perbincangan dan khususnya apa yang kita memberi tumpuan kepada
+
+00:01:02,000 --> 00:01:08,000
+was the continuous-time case and in talking about continuous-time modulation
+adalah kes yang berterusan dan tempoh masa yang bercakap tentang modulasi berterusan masa
+
+00:01:08,000 --> 00:01:11,000
+we covered a number of topics we talked about
+kami meliputi beberapa topik yang kita bercakap tentang
+
+00:01:11,000 --> 00:01:14,000
+the properties and analysis love
+sifat-sifat dan analisis cinta
+
+00:01:14,000 --> 00:01:18,000
+modulation when we had a complex exponential
+modulasi apabila kita mempunyai eksponen kompleks
+
+00:01:18,000 --> 00:01:23,000
+carrier signal we talked about the properties and analysis in the case of a
+isyarat pembawa kita bercakap tentang sifat-sifat dan analisis dalam kes yang
+
+00:01:23,000 --> 00:01:25,000
+sinusoidal carrier
+pembawa sinusoidal
+
+00:01:25,000 --> 00:01:29,000
+and in that context and related to
+dan dalam konteks itu dan yang berkaitan dengan
+
+00:01:29,000 --> 00:01:33,000
+the application associated with communications
+aplikasi yang berkaitan dengan komunikasi
+
+00:01:33,000 --> 00:01:36,000
+we talked about synchronous modulation
+kita berbincang mengenai modulasi segerak
+
+00:01:36,000 --> 00:01:39,000
+a synchronous modulation and
+pemodulatan segerak dan
+
+00:01:39,000 --> 00:01:42,000
+also the notion love single sideband
+juga tanggapan suka jalur sisi tunggal
+
+00:01:42,000 --> 00:01:45,000
+modulation in
+modulasi dalam
+
+00:01:45,000 --> 00:01:51,000
+the lecture today there are to issues that I'd like to address broad topics
+kuliah hari ini terdapat isu-isu yang saya ingin menangani topik yang luas
+
+00:01:51,000 --> 00:01:55,000
+one is Acer parallel discussion
+satu adalah Acer perbincangan selari
+
+00:01:55,000 --> 00:02:00,000
+particularly is associated with complex exponential sinusoidal modulation
+terutamanya dikaitkan dengan kompleks modulasi sinusoidal eksponen
+
+00:02:00,000 --> 00:02:03,000
+for discrete-time signals and
+untuk isyarat diskret masa dan
+
+00:02:03,000 --> 00:02:07,000
+the second is the introduction and analysis
+yang kedua ialah pengenalan dan analisis
+
+00:02:07,000 --> 00:02:12,000
+love a another kind of carriers specifically a post kind of carrier
+suka lagi jenis pembawa khusus sejenis jawatan pembawa
+
+00:02:12,000 --> 00:02:17,000
+in continuous time leading to the notions of pulse amplitude modulation
+dalam masa yang berterusan yang membawa kepada tanggapan nadi amplitud modulasi
+
+00:02:17,000 --> 00:02:22,000
+and eventually a very powerful theramin result called the sampling there
+dan akhirnya hasil theramin sangat kuat dipanggil pensampelan terdapat
+
+00:02:22,000 --> 00:02:26,000
+well let me begin the lecture though focusing on
+baik mari saya mulakan kuliah walaupun memberi tumpuan kepada
+
+00:02:26,000 --> 00:02:30,000
+the discrete-time modulation to essentially
+modulasi diskret masa dasarnya
+
+00:02:30,000 --> 00:02:35,000
+draw your attention to the fact dead the analysis and discrete-time
+menarik perhatian anda kepada mati fakta analisis dan diskret masa
+
+00:02:35,000 --> 00:02:39,000
+very much parallels the analysis in continuous-time
+persamaan banyak analisis dalam masa yang berterusan
+
+00:02:39,000 --> 00:02:43,000
+well let's consider in the discrete-time
+baik mari kita pertimbangkan di masa diskret yang
+
+00:02:43,000 --> 00:02:47,000
+case just as we had in continuous-time a
+kes seperti kita telah di berterusan-masa yang
+
+00:02:47,000 --> 00:02:50,000
+signal modulating a carrier signal
+isyarat modulasi isyarat pembawa
+
+00:02:50,000 --> 00:02:54,000
+and the resulting modulated signal
+dan isyarat termodulat yang terhasil
+
+00:02:54,000 --> 00:02:57,000
+is why event and it was
+sebabnya acara dan ia adalah
+
+00:02:57,000 --> 00:03:01,000
+in continuous-time the modulation property
+dalam masa yang berterusan harta modulasi
+
+00:03:01,000 --> 00:03:05,000
+Associated with the four EA transform dead
+Berkaitan dengan empat EA mengubah mati
+
+00:03:05,000 --> 00:03:10,000
+provided the basis for the analysis and exactly the same thing is true in a
+disediakan untuk analisis dasar dan perkara yang sama adalah benar dalam
+
+00:03:10,000 --> 00:03:11,000
+discrete-time
+diskret masa
+
+00:03:11,000 --> 00:03:14,000
+case in particular what we have in discrete-time
+kes khususnya apa yang kita ada dalam diskret masa
+
+00:03:14,000 --> 00:03:20,000
+is the modulation property as it relates to the Fourier transform
+adalah harta modulasi kerana ia berkaitan dengan Fourier mengubah
+
+00:03:20,000 --> 00:03:25,000
+which tells us that the four EA transform of the modulated signal
+yang memberitahu kita bahawa empat EA mengubah isyarat termodulat
+
+00:03:25,000 --> 00:03:29,000
+is the convolution all the
+adalah kekusutan yang semua
+
+00:03:29,000 --> 00:03:34,000
+for a transformer the carrier and the 48 transform or
+untuk pengubah syarikat penerbangan dan 48 mengubah atau
+
+00:03:34,000 --> 00:03:39,000
+the modulating signal and the only real difference in issue here
+isyarat modulasi dan satu-satunya perbezaan sebenar dalam isu di sini
+
+00:03:39,000 --> 00:03:42,000
+is that in the discrete-time case
+adalah bahawa dalam kes diskret masa
+
+00:03:42,000 --> 00:03:45,000
+what we're talking about is a periodic
+apa yang kita bercakap tentang adalah berkala
+
+00:03:45,000 --> 00:03:49,000
+convolution because the specter of course a periodic
+kekusutan kerana hantu kursus berkala
+
+00:03:49,000 --> 00:03:55,000
+whereas in a continuous-time case it was an a periodic convolution so let's
+manakala dalam kes berterusan masa ia adalah satu kekusutan berkala jadi mari kita
+
+00:03:55,000 --> 00:04:00,000
+parallel the discussion and in particular what will focus on
+selari perbincangan dan khususnya apa yang akan memberi tumpuan kepada
+
+00:04:00,000 --> 00:04:03,000
+is first a complex exponential
+adalah pertama yang eksponen kompleks
+
+00:04:03,000 --> 00:04:07,000
+carrier and second a
+pembawa dan kedua
+
+00:04:07,000 --> 00:04:11,000
+sinusoidal carrier and we'll see how this parallels our discussion in
+pembawa sinusoidal dan kami akan melihat bagaimana ini selari perbincangan kita dalam
+
+00:04:11,000 --> 00:04:12,000
+continuous-time
+berterusan masa
+
+00:04:12,000 --> 00:04:17,000
+and will make fairly brief reference as we introduce
+dan akan membuat rujukan agak ringkas kerana kami memperkenalkan
+
+00:04:17,000 --> 00:04:22,000
+the post carrier for continuous-time will bring make very brief reference to
+pembawa jawatan itu selama berterusan masa akan membawa membuat rujukan sangat ringkas kepada
+
+00:04:22,000 --> 00:04:24,000
+the post carrier for discrete-time
+pembawa jawatan itu selama diskret masa
+
+00:04:24,000 --> 00:04:28,000
+indicating that again the analysis and discrete-time and continuous-time
+yang menunjukkan bahawa sekali lagi analisis dan diskret masa dan berterusan masa
+
+00:04:28,000 --> 00:04:32,000
+is very parallel soul let's first consider
+sangat selari jiwa Mari pertama mempertimbangkan
+
+00:04:32,000 --> 00:04:35,000
+complex exponential and sinus all carriers
+kompleks eksponen dan sinus semua pembawa
+
+00:04:35,000 --> 00:04:38,000
+for the discrete-time case emphasizing
+untuk kes diskret masa menekankan
+
+00:04:38,000 --> 00:04:42,000
+the very strong parallel and similarity between
+selari yang sangat kuat dan persamaan antara
+
+00:04:42,000 --> 00:04:46,000
+discrete-time and continuous-time well
+diskret masa dan berterusan masa dengan baik
+
+00:04:46,000 --> 00:04:50,000
+we have once again the modulation property
+kita sekali lagi harta modulasi
+
+00:04:50,000 --> 00:04:54,000
+and the modulation property tells us that the spectrum
+dan harta modulasi yang memberitahu kita bahawa spektrum
+
+00:04:54,000 --> 00:04:58,000
+all the modulated signal is the periodic
+semua isyarat termodulat adalah berkala
+
+00:04:58,000 --> 00:05:02,000
+convolution love the two spectra
+kekusutan cinta spektra dua
+
+00:05:02,000 --> 00:05:05,000
+and let's consider for example
+dan mari kita pertimbangkan sebagai contoh
+
+00:05:05,000 --> 00:05:09,000
+an input for modulating spectrum as i've indicated here
+input untuk modulasi spektrum seperti yang telah saya dinyatakan di sini
+
+00:05:09,000 --> 00:05:12,000
+and since we what to consider first the fall
+dan kerana kita apa yang perlu dipertimbangkan pertama kejatuhan
+
+00:05:12,000 --> 00:05:16,000
+a complex exponential carrier
+pembawa eksponen kompleks
+
+00:05:16,000 --> 00:05:19,000
+will consider the case of CNN
+akan menganggap kes ini daripada CNN
+
+00:05:19,000 --> 00:05:22,000
+equal to each to the J Omega subsea
+yang sama kepada setiap ke dasar laut J Omega
+
+00:05:22,000 --> 00:05:26,000
+n and let me stress by the way as
+n dan biarlah saya tekanan dengan cara itu sebagai
+
+00:05:26,000 --> 00:05:30,000
+I did in the continuous-time case
+Saya dalam kes berterusan masa
+
+00:05:30,000 --> 00:05:35,000
+dead out 10 to suppress the phase angle which of course can be associated with
+mati daripada 10 untuk menindas sudut fasa yang sudah tentu boleh dikaitkan dengan
+
+00:05:35,000 --> 00:05:37,000
+the carrier also
+syarikat tersebut juga
+
+00:05:37,000 --> 00:05:41,000
+alright so we have then the spectrum
+mengapa jadi kita perlu maka spektrum
+
+00:05:41,000 --> 00:05:45,000
+%uh the modulating signal the spektr the carrier signal
+% Uh modulasi isyarat spektr isyarat pengangkut
+
+00:05:45,000 --> 00:05:49,000
+if this is the carrier then its spectrum is an impulse train
+jika ini adalah pengangkut maka spektrum adalah kereta api gerak hati
+
+00:05:49,000 --> 00:05:52,000
+and then imposed strain I've indicated
+dan kemudian dikenakan tekanan saya ditunjukkan
+
+00:05:52,000 --> 00:05:57,000
+here and let me stress also that in
+di sini dan biarlah saya tekanan juga bahawa dalam
+
+00:05:57,000 --> 00:06:01,000
+the discrete-time case of course the spectra
+kes diskret masa sudah tentu spektra
+
+00:06:01,000 --> 00:06:06,000
+and all of the spektr involved are periodic with period of two pi
+dan semua spektr yang terlibat adalah berkala dengan tempoh dua pi
+
+00:06:06,000 --> 00:06:10,000
+so this then is the spectrum of the carrier signal
+jadi ini maka adalah spektrum isyarat pengangkut
+
+00:06:10,000 --> 00:06:14,000
+this is the spectrum the input signal the periodic convolution if these two
+ini adalah spektrum input isyarat kekusutan berkala jika kedua-dua
+
+00:06:14,000 --> 00:06:18,000
+is the spektr on the modulated signal and the result
+adalah spektr pada isyarat termodulat dan hasilnya
+
+00:06:18,000 --> 00:06:22,000
+is then this spectrum shifted
+kemudiannya spektrum ini beralih
+
+00:06:22,000 --> 00:06:25,000
+to center frequency which is the carrier frequency
+kepada frekuensi pusat yang frekuensi pembawa
+
+00:06:25,000 --> 00:06:29,000
+Omega subsea so
+Dasar laut Omega jadi
+
+00:06:29,000 --> 00:06:33,000
+the result love modulation with a complex exponential
+modulasi cinta hasil dengan eksponen kompleks
+
+00:06:33,000 --> 00:06:36,000
+is a straightforward shifted the spectrum
+adalah mudah yang beralih spektrum
+
+00:06:36,000 --> 00:06:40,000
+to a carrot to so that what occurred around
+kepada lobak merah untuk agar apa yang berlaku di sekitar
+
+00:06:40,000 --> 00:06:46,000
+zero frequency now occurs around the frequency Omega subsea
+frekuensi sifar kini berlaku di sekitar dasar laut kekerapan Omega
+
+00:06:46,000 --> 00:06:50,000
+now in the continuous-time k sweetie modulated
+kini dalam berterusan masa k Kekasih termodulat
+
+00:06:50,000 --> 00:06:54,000
+with the case when we had a complex exponential carrier weedy modulated
+dengan kes apabila kami mempunyai penerbangan eksponen kompleks rumpai termodulat
+
+00:06:54,000 --> 00:06:57,000
+by essentially just shifting the spectrum back
+oleh dasarnya hanya beralih spektrum belakang
+
+00:06:57,000 --> 00:07:04,000
+and he in fact in the discrete-time case were able to do exactly the same thing
+dan dia sebenarnya dalam kes diskret masa dapat melakukan perkara yang sama
+
+00:07:04,000 --> 00:07:07,000
+so if we work to replace
+jadi jika kita bekerja untuk menggantikan
+
+00:07:07,000 --> 00:07:12,000
+see a van which is huge and make a subsidy and
+melihat sebuah van yang besar dan membuat subsidi dan
+
+00:07:12,000 --> 00:07:16,000
+by see a very cozy the minus J Omega
+oleh melihat yang sangat selesa tolak J Omega
+
+00:07:16,000 --> 00:07:19,000
+CN the resulting spectrum
+CN spektrum yang terhasil
+
+00:07:19,000 --> 00:07:22,000
+would be an impulse train
+akan menjadi satu kereta api gerak hati
+
+00:07:22,000 --> 00:07:26,000
+as i indicate here and
+sebagai i menunjukkan di sini dan
+
+00:07:26,000 --> 00:07:30,000
+the result all multiply why I have an
+keputusan semua membiak mengapa saya mempunyai
+
+00:07:30,000 --> 00:07:34,000
+by that new carrier
+oleh syarikat penerbangan baru
+
+00:07:34,000 --> 00:07:37,000
+in the frequency domain is a convolution if these two
+dalam domain frekuensi adalah kekusutan jika kedua-dua
+
+00:07:37,000 --> 00:07:40,000
+and its relatively straightforward to verify that
+dan yang agak mudah untuk mengesahkan bahawa
+
+00:07:40,000 --> 00:07:43,000
+if you can follow these for the periodic convolution
+jika anda boleh ikuti untuk kekusutan berkala
+
+00:07:43,000 --> 00:07:49,000
+then that will get us back to the original spectrum that we started with
+maka yang akan membawa kita kembali kepada spektrum asal yang kami bermula dengan
+
+00:07:49,000 --> 00:07:53,000
+so what's happened in the discrete-time case for the complex exponential
+jadi apa yang berlaku dalam kes diskret masa untuk eksponen kompleks
+
+00:07:53,000 --> 00:07:57,000
+is exactly the same as in continuous-time
+adalah sama seperti dalam berterusan masa
+
+00:07:57,000 --> 00:08:01,000
+namely we might too late that corresponds to shifting the spectrum
+iaitu kita mungkin terlambat yang sepadan dengan beralih spektrum
+
+00:08:01,000 --> 00:08:05,000
+weedy modulate by multiplying by the complex conjugate
+Menggubah rumpai dengan mendarabkannya dengan konjugat kompleks
+
+00:08:05,000 --> 00:08:09,000
+the original modulating care the original carrier
+modulasi asal menjaga pengangkut asal
+
+00:08:09,000 --> 00:08:14,000
+and that shifts the spectrum back to where it was originally
+dan bahawa peralihan spektrum kembali di mana ia pada asalnya
+
+00:08:14,000 --> 00:08:19,000
+okay now let's consider the case of a sinusoidal carrier in discrete-time
+okay sekarang mari kita mempertimbangkan hal seorang pembawa sinusoidal dalam diskret masa
+
+00:08:19,000 --> 00:08:23,000
+and again things very much parallel
+dan sekali lagi perkara yang amat selari
+
+00:08:23,000 --> 00:08:26,000
+what we saw in continuous-time
+apa yang kita lihat dalam masa yang berterusan
+
+00:08:26,000 --> 00:08:29,000
+and again as we look at the specter
+dan sekali lagi seperti yang kita melihat hantu yang
+
+00:08:29,000 --> 00:08:33,000
+I will choose a phase angle 0
+Saya akan memilih sudut fasa 0
+
+00:08:33,000 --> 00:08:37,000
+mainly for notational an analytical convenience
+terutamanya untuk notasi satu kemudahan analisis
+
+00:08:37,000 --> 00:08:40,000
+so in this case now rather than
+jadi dalam kes ini sekarang dan bukan
+
+00:08:40,000 --> 00:08:44,000
+a carrier signal which is a single complex exponential
+isyarat pembawa yang merupakan eksponen kompleks tunggal
+
+00:08:44,000 --> 00:08:49,000
+it's now a sinusoidal carrier and the sinus or carrier is the summer too
+kini ia pembawa sinusoidal dan sinus atau pembawa adalah musim panas terlalu
+
+00:08:49,000 --> 00:08:52,000
+complex exponentials
+exponentials kompleks
+
+00:08:52,000 --> 00:08:57,000
+and so if we consider a modulating spectrum that is the specter affects a
+dan jadi jika kami mengambil kira spektrum modulasi yang hantu yang menjejaskan
+
+00:08:57,000 --> 00:08:59,000
+van
+daripada
+
+00:08:59,000 --> 00:09:04,000
+as something are the type that I indicate here
+sebagai sesuatu yang adalah jenis yang saya nyatakan di sini
+
+00:09:04,000 --> 00:09:08,000
+and the spectrum of the carrier
+dan spektrum pengangkut
+
+00:09:08,000 --> 00:09:12,000
+now since the carrier is sign a soil rather than
+sekarang kerana pengangkut itu menandatangani tanah dan bukannya
+
+00:09:12,000 --> 00:09:16,000
+a complex exponential consists of two impulses
+a eksponen kompleks terdiri daripada dua impuls
+
+00:09:16,000 --> 00:09:20,000
+wanted pasta makers see and one at minus Omega subsea
+mahu pembuat pasta melihat dan satu di tolak Omega dasar laut
+
+00:09:20,000 --> 00:09:24,000
+convolved ing this spectrum with this spectrum
+convolved ing spektrum ini dengan spektrum ini
+
+00:09:24,000 --> 00:09:27,000
+gives us a replication affective Omega
+memberi kita replikasi afektif Omega
+
+00:09:27,000 --> 00:09:32,000
+around plus and minus Omega subsea
+sekitar campur dan tolak Omega dasar laut
+
+00:09:32,000 --> 00:09:36,000
+and incidently with an ample to change a hair
+dan kebetulan dengan yang mencukupi untuk menukar rambut yang
+
+00:09:36,000 --> 00:09:40,000
+so again things have
+sekali lagi perkara yang mempunyai
+
+00:09:40,000 --> 00:09:43,000
+worked as they did in continuous-time
+bekerja seperti yang mereka lakukan dalam masa yang berterusan
+
+00:09:43,000 --> 00:09:46,000
+in continuous time or in discrete-time
+dalam masa yang berterusan atau diskret masa
+
+00:09:46,000 --> 00:09:49,000
+modulating with a sinusoidal carrier
+modulasi dengan pembawa sinusoidal
+
+00:09:49,000 --> 00:09:53,000
+with then correspond to a replication of the spectrum
+dengan maka sesuai dengan replikasi spektrum
+
+00:09:53,000 --> 00:09:58,000
+around plus the carrier frequency and replication the spectrum
+sekitar ditambah frekuensi pembawa dan replikasi spektrum
+
+00:09:58,000 --> 00:10:02,000
+around minus the carrier frequency in both cases
+sekitar tolak frekuensi pembawa dalam kedua-dua kes
+
+00:10:02,000 --> 00:10:07,000
+as long as the carrier frequency is large enough compared with the band with
+selagi frekuensi pembawa cukup besar berbanding dengan band ini dengan
+
+00:10:07,000 --> 00:10:08,000
+the signal
+isyarat
+
+00:10:08,000 --> 00:10:12,000
+so that those two replications don't overlap
+supaya kedua-dua replikasi tidak bertindih
+
+00:10:12,000 --> 00:10:15,000
+then its reasonable to suppose
+maka yang munasabah untuk mengandaikan
+
+00:10:15,000 --> 00:10:19,000
+that we should be able to recover the original signal
+bahawa kita harus dapat memulihkan isyarat asal
+
+00:10:19,000 --> 00:10:23,000
+well in fact to d modulate
+juga sebenarnya untuk d Menggubah
+
+00:10:23,000 --> 00:10:26,000
+in the discrete-time case we would again
+dalam kes diskret-kali kita akan sekali lagi
+
+00:10:26,000 --> 00:10:32,000
+follow very much the strategy that we did in continuous-time
+ikuti amat strategi yang kami lakukan pada masa yang berterusan
+
+00:10:32,000 --> 00:10:35,000
+in particular let's consider the modulating
+khususnya mari kita pertimbangkan modulasi
+
+00:10:35,000 --> 00:10:38,000
+by taking the modulated signal
+dengan mengambil isyarat termodulat
+
+00:10:38,000 --> 00:10:41,000
+and again putting it through modulator again
+dan sekali lagi meletakkan ia melalui modulator lagi
+
+00:10:41,000 --> 00:10:45,000
+with a carrier which is co-signed Omega CN
+dengan pembawa yang bersama yang ditandatangani Omega CN
+
+00:10:45,000 --> 00:10:49,000
+if we do that we have a the modulator
+jika kita berbuat demikian kita mempunyai peninggirendahan
+
+00:10:49,000 --> 00:10:54,000
+or what will turn out to be part of the modulator as i indicate here
+atau apa yang akan berubah menjadi sebahagian daripada modulator sebagai i menunjukkan di sini
+
+00:10:54,000 --> 00:10:58,000
+the spectrum or the import signal
+spektrum atau isyarat import
+
+00:10:58,000 --> 00:11:02,000
+is as I had just developed a replication
+adalah kerana saya baru sahaja dibangunkan replikasi yang
+
+00:11:02,000 --> 00:11:06,000
+up the original spectrum around plus and minus Omega subsea
+sehingga spektrum asli di seluruh campur dan tolak Omega dasar laut
+
+00:11:06,000 --> 00:11:10,000
+with an amplitude of the hair when this
+dengan amplitud rambut apabila ini
+
+00:11:10,000 --> 00:11:13,000
+is again convolved with the spectrum
+sekali lagi convolved dengan spektrum
+
+00:11:13,000 --> 00:11:16,000
+love the carrier then
+suka pengangkut maka
+
+00:11:16,000 --> 00:11:21,000
+we get a replication of the original spectrum
+kita akan mendapat replikasi spektrum asal
+
+00:11:21,000 --> 00:11:25,000
+first around zero frequency as i indicate here
+pertama sekitar frekuensi sifar sebagai i menunjukkan di sini
+
+00:11:25,000 --> 00:11:29,000
+and then around twice the carrier frequency
+dan kemudian sekitar dua kali ganda frekuensi pembawa
+
+00:11:29,000 --> 00:11:33,000
+and minus twice the carrier frequency
+dan tolak dua kali frekuensi pembawa
+
+00:11:33,000 --> 00:11:36,000
+and as long as the carrier frequency
+dan selagi frekuensi pembawa
+
+00:11:36,000 --> 00:11:39,000
+is large enough compared with the
+cukup besar berbanding dengan
+
+00:11:39,000 --> 00:11:43,000
+with of the original signal day and as you can see
+dengan hari isyarat asal dan seperti yang anda lihat
+
+00:11:43,000 --> 00:11:48,000
+by extracting this part of the spectrum
+dengan mengekstrak bahagian spektrum
+
+00:11:48,000 --> 00:11:51,000
+with the low-pass filter we can in principle
+dengan penapis laluan rendah kita boleh pada dasarnya
+
+00:11:51,000 --> 00:11:54,000
+recover the spectrum associated with the original signal
+pulih spektrum yang berkaitan dengan isyarat asal
+
+00:11:54,000 --> 00:11:59,000
+and again justice in continuous-time because this amplitude is a half
+dan sekali lagi keadilan dalam masa yang berterusan kerana amplitud ini adalah setengah
+
+00:11:59,000 --> 00:12:03,000
+we would want to choose for scaling purposes
+kita akan mahu memilih untuk tujuan mendaki
+
+00:12:03,000 --> 00:12:07,000
+a low-pass filter ample to which is
+penapis laluan rendah yang mencukupi untuk yang
+
+00:12:07,000 --> 00:12:12,000
+to to compensate for this factor in the hair
+untuk untuk mengimbangi faktor ini pada rambut
+
+00:12:12,000 --> 00:12:16,000
+so once again things work at basically
+jadi sekali lagi perkara yang bekerja di dasarnya
+
+00:12:16,000 --> 00:12:20,000
+the same way as they had in continuous-time
+cara yang sama seperti mereka dalam masa yang berterusan
+
+00:12:20,000 --> 00:12:23,000
+we have sinusoidal modulation
+kita mempunyai modulasi sinusoidal
+
+00:12:23,000 --> 00:12:28,000
+which consists love using a sinusoidal carrier
+yang terdiri cinta menggunakan pembawa sinusoidal
+
+00:12:28,000 --> 00:12:31,000
+and we have the the modulator
+dan kami mempunyai peninggirendahan yang
+
+00:12:31,000 --> 00:12:35,000
+which consists of taking the modulated signal
+yang terdiri daripada mengambil isyarat termodulat
+
+00:12:35,000 --> 00:12:38,000
+multiplying by the carrier and then
+mendarabkan oleh pengangkut dan kemudian
+
+00:12:38,000 --> 00:12:43,000
+processing Matt with a low-pass filter
+memproses Matt dengan penapis laluan rendah
+
+00:12:43,000 --> 00:12:46,000
+to extract the portion of the spectrum
+untuk mengeluarkan bahagian spektrum
+
+00:12:46,000 --> 00:12:53,000
+which is around zero frequency as i indicate in the spectra below
+iaitu kira-kira frekuensi sifar sebagai i menunjukkan dalam spektrum di bawah
+
+00:12:53,000 --> 00:12:58,000
+and the result then with this low pass filter having a gain of two
+dan hasilnya kemudian dengan penapis lulus rendah ini mempunyai keuntungan sebanyak dua
+
+00:12:58,000 --> 00:13:02,000
+is that we've recovered the original spectrum
+ialah kita telah pulih spektrum asal
+
+00:13:02,000 --> 00:13:06,000
+exit Omega which is the spectrum
+keluar Omega yang merupakan spektrum
+
+00:13:06,000 --> 00:13:10,000
+that we started now
+itu barulah kita mulakan sekarang
+
+00:13:10,000 --> 00:13:14,000
+several other things to stress this is a fairly quick
+beberapa perkara lain untuk menekankan ini adalah yang agak cepat
+
+00:13:14,000 --> 00:13:18,000
+to we're through sinusoidal modulation for discrete-time
+kepada kami melalui modulasi sinusoidal untuk diskret masa
+
+00:13:18,000 --> 00:13:22,000
+in there are very similar issues that arise in
+dalam terdapat isu-isu yang serupa yang timbul dalam
+
+00:13:22,000 --> 00:13:26,000
+the discrete-time case in terms of love having faced synchronization
+kes diskret masa dari segi kasih sayang haribulan tanpa penyegerakan
+
+00:13:26,000 --> 00:13:31,000
+and frequency synchronization between the modulator and demodulator
+dan penyegerakan kekerapan antara pemodulat dan penyahmodulat
+
+00:13:31,000 --> 00:13:34,000
+and we had discussed that in a fair amount of detail for the continuous-time
+dan kami telah membincangkan bahawa dalam jumlah yang saksama terperinci untuk masa berterusan
+
+00:13:34,000 --> 00:13:39,000
+case in some sense in practical terms
+kes dalam erti kata dari segi praktikal
+
+00:13:39,000 --> 00:13:43,000
+that becomes much more than issue in continuous-time
+yang menjadi lebih daripada isu di berterusan masa
+
+00:13:43,000 --> 00:13:48,000
+than it does in discrete-time in part because
+daripada ia dalam diskret masa sebahagiannya kerana
+
+00:13:48,000 --> 00:13:52,000
+synchronization between a modulator and demodulator
+penyegerakan antara pemodulat dan penyahmodulat
+
+00:13:52,000 --> 00:13:56,000
+is often much harder in a continuous-time
+sering jauh lebih sukar dalam masa yang berterusan
+
+00:13:56,000 --> 00:14:00,000
+system which is essentially an analog system
+sistem yang pada asasnya satu sistem analog
+
+00:14:00,000 --> 00:14:04,000
+as compared with a digital system another
+berbanding dengan sistem digital lain
+
+00:14:04,000 --> 00:14:08,000
+very important reason and it's important to stress this at the outset
+sebab yang sangat penting dan ia penting untuk menekankan ini pada peringkat awal
+
+00:14:08,000 --> 00:14:11,000
+is that whereas the theory involving
+ialah manakala teori yang melibatkan
+
+00:14:11,000 --> 00:14:15,000
+the use of complex exponentials sinusoidal modulation
+penggunaan kompleks exponentials modulasi sinusoidal
+
+00:14:15,000 --> 00:14:19,000
+parallels very strongly in the continuous-time
+persamaan dengan kuat dalam masa berterusan
+
+00:14:19,000 --> 00:14:23,000
+and the discrete-time case in practical terms
+dan kes diskret masa dari segi praktikal
+
+00:14:23,000 --> 00:14:26,000
+it has much more significance in continuous-time
+ia mempunyai lebih penting dalam berterusan masa
+
+00:14:26,000 --> 00:14:30,000
+than it does in discrete-time that is the notion
+daripada ia dalam diskret-masa itu adalah tanggapan
+
+00:14:30,000 --> 00:14:35,000
+love sinusoidal modulation in the context of communication systems
+suka modulasi bentuk sinus dalam konteks sistem komunikasi
+
+00:14:35,000 --> 00:14:39,000
+is extremely important for continuous-time systems
+adalah sangat penting untuk sistem berterusan masa
+
+00:14:39,000 --> 00:14:42,000
+and less so in discrete-time systems
+dan kurang jadi dalam sistem diskret masa
+
+00:14:42,000 --> 00:14:47,000
+now kinda as a preview of a point to be raise later on
+kini agak sebagai preview mata untuk meningkatkan kemudian
+
+00:14:47,000 --> 00:14:50,000
+I should modify that slightly with the statement
+Saya perlu mengubah suai yang sedikit dengan kenyataan
+
+00:14:50,000 --> 00:14:54,000
+that one very important plays in which
+bahawa salah satu memainkan yang penting di mana
+
+00:14:54,000 --> 00:14:59,000
+sinusoidal modulation in a discrete-time context the rises
+modulasi bentuk sinus dalam konteks diskret masa naik
+
+00:14:59,000 --> 00:15:06,000
+is in a class of systems called trance multiplexers or trans modulation systems
+adalah di dalam kelas yang dipanggil sistem pemultipleks berkhayal atau sistem modulasi trans
+
+00:15:06,000 --> 00:15:09,000
+and this surface is basically because
+dan permukaan ini adalah pada dasarnya kerana
+
+00:15:09,000 --> 00:15:13,000
+so many communication systems are now
+sistem komunikasi supaya ramai kini
+
+00:15:13,000 --> 00:15:17,000
+becoming digital and specifically discrete-time although the actual
+menjadi digital dan khusus diskret masa walaupun sebenar
+
+00:15:17,000 --> 00:15:20,000
+transmission is continuous time
+penghantaran adalah masa yang berterusan
+
+00:15:20,000 --> 00:15:23,000
+the signal processing manipulation switching
+manipulasi pemprosesan isyarat bertukar
+
+00:15:23,000 --> 00:15:27,000
+is discrete-time it so in fact it turns out
+diskret-masa ia jadi sebenarnya ia ternyata
+
+00:15:27,000 --> 00:15:30,000
+to be very important and useful to take
+sangat penting dan berguna untuk mengambil
+
+00:15:30,000 --> 00:15:34,000
+a discrete-time representation I love
+perwakilan diskret-kali saya suka
+
+00:15:34,000 --> 00:15:37,000
+the analog signals a continuous-time signals
+analog isyarat isyarat berterusan masa
+
+00:15:37,000 --> 00:15:41,000
+and in a discrete-time or digital representation
+dan dalam diskret masa atau perwakilan digital
+
+00:15:41,000 --> 00:15:45,000
+convert them from one modulation scheme
+menukar mereka dari satu skim modulasi
+
+00:15:45,000 --> 00:15:48,000
+41 multiplexing scheme to another and
+41 skim pemultipleksan yang lain dan
+
+00:15:48,000 --> 00:15:52,000
+although I said a lot there that
+walaupun saya berkata banyak sana yang
+
+00:15:52,000 --> 00:15:56,000
+really requires much more detail to
+benar-benar memerlukan lebih terperinci
+
+00:15:56,000 --> 00:16:00,000
+to develop in any in any sense at all
+untuk membangunkan dalam mana-mana dalam mana-mana masuk akal langsung
+
+00:16:00,000 --> 00:16:04,000
+you should come to get the notion that that discrete-time
+anda perlu datang untuk mendapatkan tanggapan bahawa yang diskret masa
+
+00:16:04,000 --> 00:16:07,000
+modulation systems become very important
+sistem modulasi menjadi sangat penting
+
+00:16:07,000 --> 00:16:13,000
+in part because or implementation Elis use
+sebahagiannya kerana atau pelaksanaan Elis penggunaan
+
+00:16:13,000 --> 00:16:16,000
+okay now there is another application
+okay sekarang terdapat satu lagi
+
+00:16:16,000 --> 00:16:20,000
+dead we have discussed for both continuous time actually previously for
+mati kita telah membincangkan untuk masa kedua-dua berterusan sebenarnya sebelum ini untuk
+
+00:16:20,000 --> 00:16:22,000
+discrete-time
+diskret masa
+
+00:16:22,000 --> 00:16:27,000
+amplitude modulation with sinusoidal or complex exponential carriers
+modulasi amplitud dengan pembawa sinusoidal eksponen atau kompleks
+
+00:16:27,000 --> 00:16:33,000
+and let me just remind you that because in fact it becomes a very important one
+dan biarlah saya mengingatkan anda bahawa kerana sebenarnya ia menjadi satu yang sangat penting
+
+00:16:33,000 --> 00:16:36,000
+in the case love discrete-time systems
+dalam kes suka sistem diskret masa
+
+00:16:36,000 --> 00:16:40,000
+and that is the notion love using
+dan itu adalah cinta tanggapan menggunakan
+
+00:16:40,000 --> 00:16:44,000
+modulation together with fixed filtering
+modulasi bersama-sama dengan penapisan tetap
+
+00:16:44,000 --> 00:16:47,000
+to implement a filter which is
+untuk melaksanakan penapis yang
+
+00:16:47,000 --> 00:16:50,000
+which either has a variable cut off or
+yang sama ada telah berubah-ubah yang terputus atau
+
+00:16:50,000 --> 00:16:54,000
+converts let's say a low-pass filter to a high pass filter
+saudara katakan penapis laluan rendah penapis lulus tinggi
+
+00:16:54,000 --> 00:16:59,000
+we originally talked about this when we introduce the modulation property
+kita asalnya bercakap tentang ini apabila kita memperkenalkan harta modulasi
+
+00:16:59,000 --> 00:17:03,000
+in the context of converting a low-pass filter
+dalam konteks menukar penapis laluan rendah
+
+00:17:03,000 --> 00:17:07,000
+to a high pass filter and the notion was
+untuk penapis lulus tinggi dan tanggapan adalah
+
+00:17:07,000 --> 00:17:11,000
+that if we modulate the signal
+bahawa jika kita memodulasi isyarat
+
+00:17:11,000 --> 00:17:15,000
+with a carrier which is -1 to the end and that's just simply complex
+dengan pembawa yang -1 ke akhir dan itu hanya semata-mata kompleks
+
+00:17:15,000 --> 00:17:17,000
+exponential
+eksponen
+
+00:17:17,000 --> 00:17:22,000
+or sinusoidal carrier with a carrier frequency of pie
+atau pembawa sinusoidal dengan frekuensi pembawa pai
+
+00:17:22,000 --> 00:17:28,000
+than that in effect interchanges the low frequencies in the high frequencies
+daripada itu yang berkuat kuasa persimpangan frekuensi rendah di frekuensi tinggi
+
+00:17:28,000 --> 00:17:31,000
+and if and after modulation
+dan jika dan selepas modulasi
+
+00:17:31,000 --> 00:17:36,000
+that is processed with a low pass filter
+yang diproses dengan penapis lulus rendah
+
+00:17:36,000 --> 00:17:40,000
+and then the result is d modulated
+dan kemudian hasilnya adalah d termodulat
+
+00:17:40,000 --> 00:17:44,000
+using exactly the same carrier namely a carrier which is
+menggunakan tepat pembawa yang sama iaitu pembawa yang
+
+00:17:44,000 --> 00:17:47,000
+-1 to the end
+-1 Ke akhir
+
+00:17:47,000 --> 00:17:51,000
+then the effective that is equivalent
+maka yang berkesan yang bersamaan
+
+00:17:51,000 --> 00:17:56,000
+to high-pass filtering on the original signal
+untuk penapisan tinggi pas pada isyarat asal
+
+00:17:56,000 --> 00:17:59,000
+and a generalization a bad would involve instead a
+dan generalisasi yang tidak baik akan melibatkan sebaliknya sebuah
+
+00:17:59,000 --> 00:18:03,000
+this specific choice if -1 to the end
+pilihan ini khusus jika -1 ke akhir
+
+00:18:03,000 --> 00:18:08,000
+would involve a choice in general or the e to the J Omega sed CNN
+akan melibatkan pilihan secara umum atau e kepada J Omega sed CNN
+
+00:18:08,000 --> 00:18:11,000
+that is a more general carrier frequency and
+yang frekuensi pembawa yang lebih umum dan
+
+00:18:11,000 --> 00:18:14,000
+d modulator which is either the minus J
+d modulator yang sama ada J tolak
+
+00:18:14,000 --> 00:18:18,000
+Omega subsea and and as i've represented here
+Dasar laut dan Omega dan seperti yang saya telah diwakili di sini
+
+00:18:18,000 --> 00:18:23,000
+and as we had talked about it when we talked about the modulation property for
+dan seperti yang kita telah bercakap tentang apabila kita bercakap tentang harta modulasi untuk
+
+00:18:23,000 --> 00:18:25,000
+discrete-time signals
+isyarat diskret masa
+
+00:18:25,000 --> 00:18:28,000
+we had specifically chosen the conversion of a low pass to a high pass
+kita telah memilih khusus penukaran pas yang rendah untuk lulus tinggi
+
+00:18:28,000 --> 00:18:30,000
+filter
+penapis
+
+00:18:30,000 --> 00:18:34,000
+well let me continue the review of that
+baik biar saya sambung kajian semula yang
+
+00:18:34,000 --> 00:18:38,000
+just by reminding you of the details of what happens with the spectra
+hanya dengan mengingatkan anda tentang butir-butir apa yang berlaku dengan spektra
+
+00:18:38,000 --> 00:18:41,000
+and specifically the notion
+dan khususnya tanggapan
+
+00:18:41,000 --> 00:18:46,000
+if we take this particular case omega-6 equal
+jika kita mengambil kes ini omega-6 yang sama
+
+00:18:46,000 --> 00:18:51,000
+to pie or covertly a carrier signal which is -1 to the end
+untuk pai atau secara terselindung isyarat pembawa yang -1 ke akhir
+
+00:18:51,000 --> 00:18:57,000
+then if we have the original spectra
+maka jika kita mempunyai spektrum asal
+
+00:18:57,000 --> 00:19:00,000
+and the specter all
+dan hantu semua
+
+00:19:00,000 --> 00:19:05,000
+specter of the carrier signal the spectrum of the carrier signal
+hantu pengangkut isyarat spektrum isyarat pengangkut
+
+00:19:05,000 --> 00:19:08,000
+convolved with this spectrum
+convolved dengan spektrum ini
+
+00:19:08,000 --> 00:19:12,000
+will then in effect shift this by
+kemudiannya berkuat kuasa beralih ini dengan
+
+00:19:12,000 --> 00:19:15,000
+pie and so after
+pai dan sebagainya selepas
+
+00:19:15,000 --> 00:19:18,000
+modulating the result that we have is
+modulasi hasil yang kita ada adalah
+
+00:19:18,000 --> 00:19:23,000
+shifted that spectrum so that what happened at low frequencies now happens
+beralih spektrum itu supaya apa yang berlaku pada frekuensi rendah sekarang berlaku
+
+00:19:23,000 --> 00:19:26,000
+at high frequencies namely around pie
+pada frekuensi tinggi iaitu sekitar pai
+
+00:19:26,000 --> 00:19:31,000
+and what happens at what happened at high frequencies now happens
+dan apa yang berlaku pada apa yang berlaku pada frekuensi tinggi kini berlaku
+
+00:19:31,000 --> 00:19:36,000
+at low frequencies well if thats process now
+pada frekuensi rendah dengan baik jika proses thats kini
+
+00:19:36,000 --> 00:19:41,000
+with a low pass filter and this dashed line indicates the low-pass filter
+dengan penapis lulus rendah dan garis ini putus-putus menunjukkan penapis laluan rendah
+
+00:19:41,000 --> 00:19:45,000
+then the result that we get is shown here
+maka keputusan yang kita perolehi adalah yang ditunjukkan di sini
+
+00:19:45,000 --> 00:19:50,000
+where we've extracted the low-frequency portion of the modulated signal
+di mana kami telah diekstrak bahagian frekuensi rendah isyarat termodulat
+
+00:19:50,000 --> 00:19:55,000
+and now when we modulate or D modulate back
+dan sekarang apabila kita memodulasi atau D memodulasi kembali
+
+00:19:55,000 --> 00:20:00,000
+then this spectrum is shifted back to where it belongs
+maka spektrum ini dianjakkan kembali ke mana ia tergolong
+
+00:20:00,000 --> 00:20:05,000
+namely its shifted back to be centered around
+iaitu yang beralih kembali ke tertumpu di sekitar
+
+00:20:05,000 --> 00:20:08,000
+minus pie and around plus Park
+tolak pai dan sekitar ditambah Park
+
+00:20:08,000 --> 00:20:12,000
+so if we just compare this spectrum
+jadi jika kita hanya membandingkan spektrum ini
+
+00:20:12,000 --> 00:20:16,000
+with the original spectrum at the top
+dengan spektrum asal di bahagian atas
+
+00:20:16,000 --> 00:20:19,000
+what we can see is that in effect what we've done
+apa yang kita boleh lihat ialah bahawa dalam kesan apa yang kita lakukan
+
+00:20:19,000 --> 00:20:23,000
+is to extract a portion of the spectrum
+adalah untuk mengeluarkan sebahagian daripada spektrum
+
+00:20:23,000 --> 00:20:28,000
+acquittal and the processing with a high pass filter
+pembebasan dan pemprosesan dengan penapis lulus tinggi
+
+00:20:28,000 --> 00:20:33,000
+and again this is very similar to what we did in continuous-time
+dan sekali lagi ini adalah hampir sama dengan apa yang kita lakukan pada masa yang berterusan
+
+00:20:33,000 --> 00:20:37,000
+and all of the kinda analytical processes and
+dan semua proses agak analitikal dan
+
+00:20:37,000 --> 00:20:41,000
+and convolutions involved are very much the same
+dan convolutions yang terlibat adalah lebih kurang sama
+
+00:20:41,000 --> 00:20:44,000
+really the biggest difference between continuous-time and discrete-time
+benar-benar perbezaan yang paling besar antara berterusan masa dan diskret masa
+
+00:20:44,000 --> 00:20:48,000
+has to do not so much with the details of the analysis but
+mempunyai kaitan tidak begitu banyak dengan butir-butir analisis tetapi
+
+00:20:48,000 --> 00:20:52,000
+perhaps has more to do with issues
+mungkin lebih berkaitan dengan isu-isu
+
+00:20:52,000 --> 00:20:59,000
+love are practical applications
+suka adalah aplikasi praktikal
+
+00:20:59,000 --> 00:21:02,000
+okay well so what we've done
+okay baik supaya apa yang kita lakukan
+
+00:21:02,000 --> 00:21:06,000
+so far for continuous-time and discrete-time
+setakat ini untuk berterusan masa dan diskret masa
+
+00:21:06,000 --> 00:21:11,000
+is to talk about modulation amplitude modulation
+adalah untuk bercakap mengenai modulasi amplitud modulasi
+
+00:21:11,000 --> 00:21:15,000
+with complex exponential and sinus or carriers
+dengan kompleks eksponen dan sinus atau pembawa
+
+00:21:15,000 --> 00:21:18,000
+we saw that the analysis is very similar although
+kita melihat bahawa analisis adalah hampir sama walaupun
+
+00:21:18,000 --> 00:21:23,000
+applications are slightly different and now what I'd like to turn to
+permohonan adalah sedikit berbeza dan sekarang apa yang saya ingin beralih kepada
+
+00:21:23,000 --> 00:21:26,000
+is a different choice love
+adalah pilihan cinta yang berbeza
+
+00:21:26,000 --> 00:21:30,000
+carrier signal and the carrier signal in this particular case
+isyarat pembawa dan isyarat pengangkut dalam kes ini
+
+00:21:30,000 --> 00:21:33,000
+is a post rain rather than
+adalah jawatan hujan bukannya
+
+00:21:33,000 --> 00:21:37,000
+a sinusoidal signal now
+isyarat sinus kini
+
+00:21:37,000 --> 00:21:42,000
+the idea is the following
+idea ini adalah berikut
+
+00:21:42,000 --> 00:21:45,000
+in general of course the modulator
+secara umum sudah tentu peninggirendahan
+
+00:21:45,000 --> 00:21:49,000
+it consists all multiplying x50
+ia terdiri semua X50 mendarabkan
+
+00:21:49,000 --> 00:21:53,000
+by whatever the carrier signal is and
+dengan apa jua isyarat pengangkut itu dan
+
+00:21:53,000 --> 00:21:57,000
+previously we've talked about a carrier signal which is sinusoidal
+sebelum ini kita telah berbincang mengenai isyarat pembawa yang sinusoidal
+
+00:21:57,000 --> 00:22:00,000
+the carrier signal that we want to consider now
+isyarat pembawa yang kita mahu mempertimbangkan kini
+
+00:22:00,000 --> 00:22:03,000
+is a carrier signal which in fact is
+adalah isyarat pembawa yang sebenarnya adalah
+
+00:22:03,000 --> 00:22:07,000
+a pulse train and so in fact
+deretan denyut dan sebagainya sebenarnya
+
+00:22:07,000 --> 00:22:11,000
+what we want to do is multiply the input signal
+apa yang kita mahu lakukan adalah membiak isyarat input
+
+00:22:11,000 --> 00:22:16,000
+by a Paul strain and in effect then
+oleh strain Paul dan kesan kemudian
+
+00:22:16,000 --> 00:22:19,000
+the modulated signal consists
+isyarat termodulat terdiri
+
+00:22:19,000 --> 00:22:24,000
+of the original signal simply with time slices pulled out a bit as i've
+isyarat asal hanya dengan masa keping ditarik keluar sedikit kerana saya telah
+
+00:22:24,000 --> 00:22:26,000
+indicated in the bottom Kurt
+ditunjukkan di bahagian bawah Kurt
+
+00:22:26,000 --> 00:22:29,000
+so what we have now
+jadi apa yang kita ada sekarang
+
+00:22:29,000 --> 00:22:32,000
+is a modulated signal
+adalah isyarat termodulat
+
+00:22:32,000 --> 00:22:36,000
+that is a chopped or sliced version
+yang versi yang dicincang atau dihiris
+
+00:22:36,000 --> 00:22:40,000
+love the original waveform and
+suka bentuk gelombang dan asal
+
+00:22:40,000 --> 00:22:46,000
+think that is what's referred to as pulse amplitude modulation
+berfikir bahawa adalah apa yang disebut sebagai nadi amplitud modulasi
+
+00:22:46,000 --> 00:22:50,000
+now it seems like it's kinda crazy idea any ideas
+kini ia seolah-olah seperti ia adalah idea agak gila mana-mana idea-idea
+
+00:22:50,000 --> 00:22:54,000
+search opt-out slices away form and
+bentuk keping carian opt keluar jauh dan
+
+00:22:54,000 --> 00:22:57,000
+the hope that you can kinda put things back together again
+harapan bahawa anda agak boleh meletakkan perkara kembali bersama-sama sekali lagi
+
+00:22:57,000 --> 00:23:02,000
+and the amazing thing about it is we'll see is that in fact
+dan perkara yang menakjubkan mengenai ia adalah kita akan melihat adalah bahawa sebenarnya
+
+00:23:02,000 --> 00:23:06,000
+under fairly broad general and applicability
+di bawah yang agak luas umum dan kebolehgunaan
+
+00:23:06,000 --> 00:23:11,000
+conditions you really can put the way for back together again
+syarat anda benar-benar boleh meletakkan jalan bagi kembali bersama-sama sekali lagi
+
+00:23:11,000 --> 00:23:14,000
+if you just have these times places
+jika anda hanya mempunyai masa-masa tempat
+
+00:23:14,000 --> 00:23:18,000
+not only that but that basic notion
+bukan sahaja itu tetapi bahawa tanggapan asas
+
+00:23:18,000 --> 00:23:21,000
+as we'll see is independent in fact
+seperti yang kita akan lihat adalah bebas sebenarnya
+
+00:23:21,000 --> 00:23:25,000
+up with the with the those time slices or effect the with can go to zero
+dengan dengan orang-orang keping masa atau melaksanakan dengan boleh pergi ke sifar
+
+00:23:25,000 --> 00:23:30,000
+and in fact we're going to make the with go to zero and really only dependent
+dan sebenarnya kita akan membuat dengan pergi ke sifar dan benar-benar hanya bergantung
+
+00:23:30,000 --> 00:23:35,000
+on what the frequency love the polls trainers
+kepada apa kekerapan suka pemilihan jurulatih
+
+00:23:35,000 --> 00:23:38,000
+so let's explore that in some detail
+jadi mari kita meneroka yang dengan terperinci
+
+00:23:38,000 --> 00:23:44,000
+and what we want to look at is the analysis but let me
+dan apa yang kita mahu melihat adalah analisis tetapi biarlah saya
+
+00:23:44,000 --> 00:23:48,000
+let me first just comment very briefly there
+biarlah saya terlebih dahulu hanya mengulas secara ringkas terdapat
+
+00:23:48,000 --> 00:23:52,000
+all the analysis we go through as has been true in the case a sinusoidal
+semua analisis yang kita lalui seperti yang telah benar dalam kes sinus
+
+00:23:52,000 --> 00:23:56,000
+modulation all the analysis that we go through
+modulasi semua analisis yang kita melalui
+
+00:23:56,000 --> 00:23:59,000
+holes just as well with
+lubang sama dengan baik dengan
+
+00:23:59,000 --> 00:24:03,000
+especially minor analytical modifications to
+pengubahsuaian analisis terutamanya kecil kepada
+
+00:24:03,000 --> 00:24:07,000
+discrete-time pulse amplitude modulation as it does to
+diskret masa nadi modulasi amplitud seperti yang berlaku kepada
+
+00:24:07,000 --> 00:24:10,000
+continuous-time pulse amplitude modulation
+berterusan masa nadi amplitud modulasi
+
+00:24:10,000 --> 00:24:13,000
+and so will really only go through this
+dan sebagainya akan benar-benar hanya melalui ini
+
+00:24:13,000 --> 00:24:17,000
+in terms of tracking the way for inspector for the continuous-time
+dari segi mengesan jalan bagi inspektor bagi masa berterusan
+
+00:24:17,000 --> 00:24:21,000
+case but bear in mind that the results are basically similar
+kes tetapi ingat bahawa keputusan pada dasarnya adalah sama
+
+00:24:21,000 --> 00:24:27,000
+for discrete-time okay well
+untuk diskret masa dengan baik okay
+
+00:24:27,000 --> 00:24:30,000
+let's see how we get the basic result
+mari kita lihat bagaimana kita mendapatkan hasil yang asas
+
+00:24:30,000 --> 00:24:33,000
+that we want to get
+yang kita mahu
+
+00:24:33,000 --> 00:24:36,000
+what we have is a
+apa yang kita ada adalah
+
+00:24:36,000 --> 00:24:40,000
+modulating signal which is a pulse train basically a square wave
+modulasi isyarat yang merupakan denyut pada dasarnya gelombang persegi
+
+00:24:40,000 --> 00:24:45,000
+and as we've seen in previous lectures the spectra
+dan seperti yang kita lihat dalam syarahannya sebelum spektra
+
+00:24:45,000 --> 00:24:50,000
+or Fourier transform associated with that is an impulse train
+atau Fourier mengubah dikaitkan dengan yang merupakan kereta api gerak hati
+
+00:24:50,000 --> 00:24:53,000
+and the envelope that impulse train
+dan sampul surat yang kereta api gerak hati
+
+00:24:53,000 --> 00:24:57,000
+is over for over sin x over X function
+adalah lebih untuk lebih sin x alih fungsi X
+
+00:24:57,000 --> 00:25:02,000
+the four th transform is impulses and the spacing of the impulses
+yang ke-empat adalah mengubah impuls dan jarak impuls
+
+00:25:02,000 --> 00:25:07,000
+is Associated with the fundamental frequency
+adalah bersekutu dengan frekuensi asas
+
+00:25:07,000 --> 00:25:12,000
+all the Paul strain and thats Omega Sappi so make it appears to pride
+semua strain Paul dan thats Omega Sappi jadi membuat ia kelihatan bangga
+
+00:25:12,000 --> 00:25:13,000
+divided by the period
+dibahagikan dengan tempoh yang
+
+00:25:13,000 --> 00:25:17,000
+the pulse train and at the
+denyut dan pada
+
+00:25:17,000 --> 00:25:21,000
+amplitude and shape but this envelope is dictated
+amplitud dan bentuk tetapi sampul surat ini ditentukan
+
+00:25:21,000 --> 00:25:24,000
+by that parameter Delta
+oleh yang parameter Delta
+
+00:25:24,000 --> 00:25:28,000
+which has to do with how wide the pulses are
+yang mempunyai kaitan dengan bagaimana luas denyut adalah
+
+00:25:28,000 --> 00:25:32,000
+okay so we have a time function
+okay jadi kami mempunyai fungsi masa
+
+00:25:32,000 --> 00:25:36,000
+it's multiplied by this post rain now we're talking continuous-time
+ia didarab melalui pos hujan ini sekarang kita bercakap berterusan masa
+
+00:25:36,000 --> 00:25:39,000
+so in the frequency domain
+jadi dalam domain frekuensi
+
+00:25:39,000 --> 00:25:44,000
+we have the Fourier transform the time function convolved with
+kita mempunyai Fourier mengubah fungsi masa yang convolved dengan
+
+00:25:44,000 --> 00:25:48,000
+this Fourier transform for the pulse train and let's see what that looks like
+Fourier ini mengubah kereta api nadi dan mari kita lihat apa yang kelihatan seperti
+
+00:25:48,000 --> 00:25:51,000
+if we were to consider let's say
+jika kita mempertimbangkan katakan
+
+00:25:51,000 --> 00:25:56,000
+a Fourier transform which I A kinda chosen is more or less a general one
+Fourier mengubah yang IA agak dipilih adalah lebih kurang satu umum
+
+00:25:56,000 --> 00:26:00,000
+then in fact when we can follow this
+maka sebenarnya apabila kita boleh mengikuti
+
+00:26:00,000 --> 00:26:04,000
+with this simple strain what we end up with
+dengan ketegangan ini mudah apa yang kita berakhir dengan
+
+00:26:04,000 --> 00:26:08,000
+is a replication all
+adalah semua replikasi
+
+00:26:08,000 --> 00:26:11,000
+this spectrum at
+spektrum ini di
+
+00:26:11,000 --> 00:26:15,000
+the places in the frequency domain
+tempat di domain frekuensi
+
+00:26:15,000 --> 00:26:19,000
+where the individual impulses occurred
+mana impuls individu berlaku
+
+00:26:19,000 --> 00:26:23,000
+so we can see that this spectrum is replicated at each's
+jadi kita dapat melihat bahawa spektrum ini ia direplika pada setiap itu
+
+00:26:23,000 --> 00:26:27,000
+these locations and as long as
+lokasi ini dan selagi
+
+00:26:27,000 --> 00:26:30,000
+the frequency
+kekerapan
+
+00:26:30,000 --> 00:26:34,000
+above the post-training is large enough compared
+di atas selepas latihan itu adalah cukup besar berbanding
+
+00:26:34,000 --> 00:26:38,000
+with a maximum frequency in the
+dengan kekerapan maksimum dalam
+
+00:26:38,000 --> 00:26:44,000
+original single X if T so that there is no overlap between these triangles
+X tunggal asal jika T supaya tidak ada pertindihan antara segi tiga ini
+
+00:26:44,000 --> 00:26:48,000
+then what you can see in fact somewhat amazingly
+maka apa yang anda boleh lihat sebenarnya agak menakjubkan
+
+00:26:48,000 --> 00:26:53,000
+is dead simply by low-pass filtering the result
+mati hanya dengan laluan rendah menapis keputusan
+
+00:26:53,000 --> 00:26:57,000
+we can get back except for an amplitude factor
+kita boleh kembali kecuali faktor amplitud
+
+00:26:57,000 --> 00:27:00,000
+we can give get back to the original signal
+yang boleh kita berikan kembali kepada isyarat asal
+
+00:27:00,000 --> 00:27:04,000
+now it's amazing it really is amazing
+kini ia menakjubkan ia benar-benar menakjubkan
+
+00:27:04,000 --> 00:27:07,000
+dead all that this depends on
+mati semua ini bergantung kepada
+
+00:27:07,000 --> 00:27:11,000
+is the original signal being banned limited
+adalah isyarat asal yang diharamkan terhad
+
+00:27:11,000 --> 00:27:15,000
+and the frequency the post-training be high enough
+dan kekerapan selepas latihan cukup tinggi
+
+00:27:15,000 --> 00:27:19,000
+so that when you replicate the spectrum in the frequency domain
+supaya apabila anda meniru spektrum dalam domain frekuensi
+
+00:27:19,000 --> 00:27:23,000
+is no overlap between these individual replications and will
+tidak bertindih antara replikasi individu dan kehendak
+
+00:27:23,000 --> 00:27:26,000
+have a dress that a little more in a few minutes
+mempunyai pakaian yang lebih sedikit dalam beberapa minit
+
+00:27:26,000 --> 00:27:29,000
+but let me first the ball point out that
+tetapi biarlah saya terlebih dahulu menunjukkan bola bahawa
+
+00:27:29,000 --> 00:27:33,000
+this has a whole variety a very important implications
+ini mempunyai pelbagai keseluruhan implikasi yang sangat penting
+
+00:27:33,000 --> 00:27:36,000
+one is in the context of communications
+satu adalah dalam konteks komunikasi
+
+00:27:36,000 --> 00:27:39,000
+it leads to another very important
+ia membawa kepada yang lain sangat penting
+
+00:27:39,000 --> 00:27:44,000
+multiplexing scheme for communications we talked last time about
+skim pemultipleksan untuk komunikasi kita bercakap masa akhir mengenai
+
+00:27:44,000 --> 00:27:48,000
+frequency division multiplexing where individual signals were put into
+frekuensi bahagian pemultipleksan di mana isyarat individu telah dimasukkan ke dalam
+
+00:27:48,000 --> 00:27:51,000
+individual frequency slots
+slot kekerapan individu
+
+00:27:51,000 --> 00:27:55,000
+by choosing different carrier frequencies for sinusoidal modulated
+dengan memilih frekuensi pembawa yang berbeza untuk sinus termodulat
+
+00:27:55,000 --> 00:27:56,000
+signal
+isyarat
+
+00:27:56,000 --> 00:28:00,000
+what this suggests is that what we can do
+apa ini menunjukkan bahawa apa yang boleh kita lakukan
+
+00:28:00,000 --> 00:28:03,000
+is put the
+adalah meletakkan
+
+00:28:03,000 --> 00:28:07,000
+sons put different signals into
+anak meletakkan isyarat yang berbeza ke dalam
+
+00:28:07,000 --> 00:28:10,000
+non-overlapping time slots
+slot masa yang tidak bertindih
+
+00:28:10,000 --> 00:28:14,000
+and in fact be able to recover the original signals back again
+dan sebenarnya dapat memulihkan isyarat asal kembali lagi
+
+00:28:14,000 --> 00:28:18,000
+so in particular suppose that
+jadi khususnya menganggap bahawa
+
+00:28:18,000 --> 00:28:22,000
+I had a signal which I modulated with a pulse train
+Saya mempunyai isyarat yang saya termodulat dengan denyut
+
+00:28:22,000 --> 00:28:27,000
+and I i chose another signal modulated with another poll strain
+dan saya saya memilih satu lagi isyarat termodulat dengan ketegangan pengundian lain
+
+00:28:27,000 --> 00:28:32,000
+where the time slot was different and I continue this process
+di mana slot masa yang berbeza dan saya meneruskan proses ini
+
+00:28:32,000 --> 00:28:37,000
+and after the after i'd done this with some number of channels
+dan selepas selepas saya melakukan ini dengan beberapa beberapa saluran
+
+00:28:37,000 --> 00:28:41,000
+simply and it all those together
+semata-mata dan ia semua bersama-sama
+
+00:28:41,000 --> 00:28:47,000
+as i indicate here then as long as I knew what time slots to associate with
+sebagai i menunjukkan di sini maka selagi saya tahu apa slot masa untuk bersekutu dengan
+
+00:28:47,000 --> 00:28:48,000
+what signal
+apa isyarat
+
+00:28:48,000 --> 00:28:51,000
+I could get the original a
+Saya boleh mendapatkan asal
+
+00:28:51,000 --> 00:28:54,000
+modulated signals back again
+termodulat isyarat kembali lagi
+
+00:28:54,000 --> 00:28:57,000
+and then as long as the frequency 0
+dan kemudian selagi kekerapan 0
+
+00:28:57,000 --> 00:29:01,000
+the impulse train was such that
+kereta api gerak hati adalah seperti yang
+
+00:29:01,000 --> 00:29:04,000
+I was able to do this reconstruction
+Saya dapat melakukan pembinaan semula ini
+
+00:29:04,000 --> 00:29:07,000
+by simply low-pass filtering then
+dengan hanya laluan rendah penapisan kemudian
+
+00:29:07,000 --> 00:29:12,000
+I would be able to be my Julie so it's a very different very important modulation
+Saya akan dapat menjadi Julie saya jadi ia satu modulasi sangat berbeza sangat penting
+
+00:29:12,000 --> 00:29:14,000
+scheme call time division
+skim panggilan pembahagian masa
+
+00:29:14,000 --> 00:29:19,000
+multiplexing in contrast to frequency division multiplexing as we talked about
+pemultipleksan berbeza dengan frekuensi bahagian pemultipleksan sebagaimana kita berbincang mengenai
+
+00:29:19,000 --> 00:29:20,000
+last time
+masa lalu
+
+00:29:20,000 --> 00:29:25,000
+I made reference earlier the concept of Trance multiplexing and in fact
+Saya membuat rujukan sebelum konsep Trance pemultipleksan dan sebenarnya
+
+00:29:25,000 --> 00:29:29,000
+what happens in many communication systems
+apa yang berlaku dalam sistem komunikasi yang pelbagai
+
+00:29:29,000 --> 00:29:33,000
+is dead the signals are represented in fact
+adalah mati isyarat diwakili sebenarnya
+
+00:29:33,000 --> 00:29:37,000
+in discrete-time the analog continues time signals are represented in
+dalam diskret-masa analog terus isyarat masa diwakili dalam
+
+00:29:37,000 --> 00:29:38,000
+discrete-time
+diskret masa
+
+00:29:38,000 --> 00:29:41,000
+and very often the conversion from
+dan seringkali penukaran dari
+
+00:29:41,000 --> 00:29:45,000
+frequency division multiplexing to time division multiplexing and back
+pembahagian frekuensi pemultipleksan ke semasa bahagian pemultipleksan dan belakang
+
+00:29:45,000 --> 00:29:50,000
+is done in fact in the discrete-time to me
+dilakukan sebenarnya dalam masa diskret kepada saya
+
+00:29:50,000 --> 00:29:54,000
+okay so what we have then
+okay jadi apa yang kita ada maka
+
+00:29:54,000 --> 00:29:57,000
+is the notion
+adalah tanggapan
+
+00:29:57,000 --> 00:30:01,000
+dead we can
+mati kita boleh
+
+00:30:01,000 --> 00:30:06,000
+multiply a time function
+membiak fungsi masa
+
+00:30:06,000 --> 00:30:10,000
+by a poll strain as i indicated here
+oleh strain pengundian sebagai i ditunjukkan di sini
+
+00:30:10,000 --> 00:30:15,000
+and from the output I can
+dan dari output yang saya boleh
+
+00:30:15,000 --> 00:30:19,000
+if the frequency this post rain is high enough in relation to this band with
+jika kekerapan jawatan hujan ini cukup tinggi berhubung dengan band ini dengan
+
+00:30:19,000 --> 00:30:22,000
+from the output which consists of both
+dari output yang terdiri daripada kedua-dua
+
+00:30:22,000 --> 00:30:26,000
+time slices from those times places
+keping masa dari masa-masa tempat
+
+00:30:26,000 --> 00:30:31,000
+I can recover the original signal
+Saya boleh mendapatkan semula isyarat asal
+
+00:30:31,000 --> 00:30:34,000
+stressing again the reason it relates
+menekankan lagi sebab ia berkaitan
+
+00:30:34,000 --> 00:30:37,000
+to the spectra and
+untuk spektra dan
+
+00:30:37,000 --> 00:30:41,000
+the reason is dead the original spectra
+sebab itu telah mati spektra asal
+
+00:30:41,000 --> 00:30:44,000
+is simply replicated at
+hanya diikuti di setiap
+
+00:30:44,000 --> 00:30:47,000
+multiples all the fundamental frequency
+gandaan semua frekuensi asas
+
+00:30:47,000 --> 00:30:51,000
+upholstery
+upholsteri
+
+00:30:51,000 --> 00:30:55,000
+now is a very important thing to observe here
+kini adalah satu perkara yang sangat penting untuk memerhatikan di sini
+
+00:30:55,000 --> 00:31:00,000
+which is dead the ability to do the reconstruction
+yang telah mati keupayaan untuk melakukan pembinaan semula
+
+00:31:00,000 --> 00:31:04,000
+is associated with the notion of whether we can extract that
+dikaitkan dengan tanggapan sama ada kita boleh mengekstrak yang
+
+00:31:04,000 --> 00:31:07,000
+kinda central triangle light happened choose a triangular shape but
+kinda pusat cahaya segitiga berlaku memilih bentuk segi tiga tetapi
+
+00:31:07,000 --> 00:31:11,000
+obviously I could be talking about any shape as long as it's been limited
+jelas saya boleh bercakap tentang apa-apa bentuk selagi ia terhad
+
+00:31:11,000 --> 00:31:14,000
+the ability to extract at and notice
+keupayaan untuk mengeluarkan dan notis di
+
+00:31:14,000 --> 00:31:19,000
+that in this modulated output spectrum
+yang dalam spektrum keluaran termodulat ini
+
+00:31:19,000 --> 00:31:23,000
+the ability to recover this is totally independent
+keupayaan untuk mendapatkan semula ini adalah benar-benar bebas
+
+00:31:23,000 --> 00:31:27,000
+all what the value of Delta is in other words
+semua apa nilai Delta adalah dalam erti kata lain
+
+00:31:27,000 --> 00:31:31,000
+if we look back at
+jika kita melihat kembali
+
+00:31:31,000 --> 00:31:35,000
+the modulator then
+modulator kemudian
+
+00:31:35,000 --> 00:31:38,000
+in fact we can make Delta
+sebenarnya kita boleh membuat Delta
+
+00:31:38,000 --> 00:31:42,000
+the with these pulses arbitrarily small
+dengan denyutan sewenang-wenangnya kecil
+
+00:31:42,000 --> 00:31:45,000
+and in theory that doesn't affect
+dan dalam teori yang tidak menjejaskan
+
+00:31:45,000 --> 00:31:50,000
+our ability to do the reconstruction now in practical terms it might
+keupayaan kami untuk melakukan pembinaan semula kini dari segi praktikal ia mungkin
+
+00:31:50,000 --> 00:31:54,000
+looking back once more at the specter of the output
+mencari kembali sekali lagi pada hantu output
+
+00:31:54,000 --> 00:31:58,000
+noticed that this sample to is proportional to Delta
+perasan bahawa sampel ini untuk adalah berkadar dengan Delta
+
+00:31:58,000 --> 00:32:02,000
+and what that suggests is that as we make
+dan apa yang mencadangkan ialah seperti yang kita membuat
+
+00:32:02,000 --> 00:32:05,000
+Delta smaller and smaller which we
+Delta yang lebih kecil dan lebih kecil yang kita
+
+00:32:05,000 --> 00:32:08,000
+might in fact want to do if you want to time division multiplexed last two
+mungkin sebenarnya mahu lakukan jika anda ingin bahagian masa multipleks dua lepas
+
+00:32:08,000 --> 00:32:10,000
+channels
+saluran
+
+00:32:10,000 --> 00:32:13,000
+in principle in theory you could make it an infinite number channels just by
+pada dasarnya dalam teori anda boleh menjadikannya satu saluran bilangan tak terhingga hanya dengan
+
+00:32:13,000 --> 00:32:15,000
+making an infinitesimally small
+membuat yang amat kecil
+
+00:32:15,000 --> 00:32:21,000
+the smaller it is in some sense the less energy there is and again
+yang lebih kecil itu adalah dalam erti kata lain tenaga kurang ada dan sekali lagi
+
+00:32:21,000 --> 00:32:24,000
+in practical terms this one of those things if you push down here pops up
+dari segi praktikal ini salah satu perkara jika anda tolak ke bawah di sini timbul
+
+00:32:24,000 --> 00:32:25,000
+there
+ada
+
+00:32:25,000 --> 00:32:30,000
+namely you eventually run into issues such as noise problems
+iaitu anda akhirnya menghadapi isu-isu seperti masalah bunyi
+
+00:32:30,000 --> 00:32:33,000
+so more more typically what's done is
+jadi lebih lebih biasanya apa yang dilakukan adalah
+
+00:32:33,000 --> 00:32:38,000
+to in fact eliminate the scale factor a delta
+untuk sebenarnya menghapuskan faktor skala delta
+
+00:32:38,000 --> 00:32:42,000
+and the way that that's done is very simply
+dan cara yang dilakukan adalah sangat semata-mata
+
+00:32:42,000 --> 00:32:46,000
+it's done by choosing
+ia dilakukan dengan memilih
+
+00:32:46,000 --> 00:32:50,000
+the with I love the pulses
+dengan Saya suka denyutan
+
+00:32:50,000 --> 00:32:54,000
+and the height %uh the pulses in such a way
+dan ketinggian% uh denyut dalam apa-apa cara yang
+
+00:32:54,000 --> 00:32:58,000
+dead the area is constant even as
+mati kawasan ini berterusan walaupun
+
+00:32:58,000 --> 00:33:02,000
+we make Delta get arbitrarily small so
+kita membuat Delta mendapatkan sewenang-wenangnya kecil supaya
+
+00:33:02,000 --> 00:33:06,000
+and we can just modify our argument
+dan kita hanya boleh mengubah suai hujah kita
+
+00:33:06,000 --> 00:33:11,000
+so that what we're referring to is a modulating post rain
+agar apa yang kita merujuk kepada adalah jawatan modulasi hujan
+
+00:33:11,000 --> 00:33:15,000
+which is a pulse train with positive with Delta
+yang merupakan denyut dengan positif dengan Delta
+
+00:33:15,000 --> 00:33:20,000
+and height one over Delta in that case
+dan ketinggian seseorang lebih Delta dalam kes itu
+
+00:33:20,000 --> 00:33:23,000
+as Delta gets arbitrarily small
+sebagai Delta mendapat sewenang-wenangnya kecil
+
+00:33:23,000 --> 00:33:27,000
+then in fact what these rectangles become
+maka sebenarnya apa yang segi empat tepat ini menjadi
+
+00:33:27,000 --> 00:33:31,000
+are impulses in which case what we're talking about
+adalah impuls di mana apa yang kita bercakap tentang
+
+00:33:31,000 --> 00:33:35,000
+is a carrier signal
+adalah isyarat pembawa
+
+00:33:35,000 --> 00:33:39,000
+which in fact is an impulse train
+yang sebenarnya adalah kereta api gerak hati
+
+00:33:39,000 --> 00:33:42,000
+and the resulting modulated signal
+dan isyarat termodulat yang terhasil
+
+00:33:42,000 --> 00:33:46,000
+is and imposed strain for which the amplitudes
+adalah dan ketegangan yang dikenakan yang mana amplitud
+
+00:33:46,000 --> 00:33:50,000
+of the impulses are proportional to
+daripada impuls adalah berkadar dengan
+
+00:33:50,000 --> 00:33:54,000
+the original input waveform at
+bentuk gelombang input asal di
+
+00:33:54,000 --> 00:33:59,000
+the times at which these impulses occur
+masa apabila impuls ini berlaku
+
+00:33:59,000 --> 00:34:03,000
+okay well let's look at the analysis a bat
+okay juga mari kita lihat analisis kelawar
+
+00:34:03,000 --> 00:34:06,000
+and so now what we're talking about
+dan jadi sekarang apa yang kita bercakap tentang
+
+00:34:06,000 --> 00:34:10,000
+is a spectrum
+satu spektrum
+
+00:34:10,000 --> 00:34:15,000
+dead up
+mati sehingga
+
+00:34:15,000 --> 00:34:18,000
+consists all the result
+terdiri semua keputusan
+
+00:34:18,000 --> 00:34:23,000
+love the spectrum we talked about before the sin x over X envelope except
+suka spektrum kita bercakap tentang sebelum dosa x lebih sampul surat X kecuali
+
+00:34:23,000 --> 00:34:27,000
+that now is Delta goes to zero that becomes
+bahawa kini adalah Delta pergi ke sifar yang menjadi
+
+00:34:27,000 --> 00:34:31,000
+flat in other words the modulating signal is an impulse train
+rata dalam erti kata lain isyarat modulasi adalah kereta api gerak hati
+
+00:34:31,000 --> 00:34:35,000
+and so as we look at the spectrum
+dan supaya kita melihat spektrum
+
+00:34:35,000 --> 00:34:38,000
+the modulating signal that is then
+isyarat modulasi yang kemudian
+
+00:34:38,000 --> 00:34:41,000
+and impose train in the frequency domain the high
+dan mengenakan kereta api di domain frekuensi yang tinggi
+
+00:34:41,000 --> 00:34:45,000
+is proportional to the frequency
+adalah berkadar dengan yang
+
+00:34:45,000 --> 00:34:49,000
+up the impulse train and Omega the best now denotes
+sehingga kereta api gerak hati dan Omega terbaik kini menandakan
+
+00:34:49,000 --> 00:34:53,000
+the frequency the impulse train and
+kekerapan kereta api dan dorongan
+
+00:34:53,000 --> 00:34:57,000
+the resulting output the modulator
+output yang terhasil peninggirendahan
+
+00:34:57,000 --> 00:35:00,000
+has a spectrum which is
+mempunyai spektrum yang
+
+00:35:00,000 --> 00:35:05,000
+this original spectrum again replicated around
+spektrum asal ini lagi ditiru di seluruh
+
+00:35:05,000 --> 00:35:09,000
+each love these impulses in other words replicated in multiples
+setiap suka dorongan ini dalam erti kata lain ditiru dalam gandaan
+
+00:35:09,000 --> 00:35:13,000
+or the sampling frequency now
+atau kekerapan pensampelan kini
+
+00:35:13,000 --> 00:35:18,000
+this is very much identical to the more general case we have
+ini sangat serupa dengan kes yang lebih umum kita mempunyai
+
+00:35:18,000 --> 00:35:21,000
+this replication the spectra
+ini Replikasi spektra
+
+00:35:21,000 --> 00:35:25,000
+and as long as
+dan selagi
+
+00:35:25,000 --> 00:35:29,000
+this sample the the frequency of the impulse train is
+sampel yang kekerapan kereta api gerak hati adalah
+
+00:35:29,000 --> 00:35:33,000
+large enough compared with the band with the signal
+cukup besar berbanding dengan band ini dengan isyarat
+
+00:35:33,000 --> 00:35:36,000
+so that these triangles don't overlap
+supaya segi tiga ini tidak bertindih
+
+00:35:36,000 --> 00:35:40,000
+I can extract this
+Saya boleh mengekstrak ini
+
+00:35:40,000 --> 00:35:43,000
+portion of the spectrum by low-pass filtering
+bahagian spektrum oleh penapisan laluan rendah
+
+00:35:43,000 --> 00:35:47,000
+which in fact with then give us back
+yang sebenarnya dengan kemudian memberikan kita kembali
+
+00:35:47,000 --> 00:35:50,000
+the original signal now
+isyarat asal kini
+
+00:35:50,000 --> 00:35:54,000
+if instead this frequency Omega sed am
+jika sebaliknya kekerapan Omega sed ini pagi
+
+00:35:54,000 --> 00:35:58,000
+is greater than Omega best minus Omega sed am
+adalah lebih besar daripada Omega terbaik tolak Omega sed am
+
+00:35:58,000 --> 00:36:02,000
+we would have a spectrum that looked
+kita akan mempunyai spektrum yang kelihatan
+
+00:36:02,000 --> 00:36:05,000
+something more like this and what's happened
+sesuatu yang lebih seperti ini dan apa yang berlaku
+
+00:36:05,000 --> 00:36:08,000
+in this case is that because
+dalam kes ini ialah kerana
+
+00:36:08,000 --> 00:36:12,000
+we have an overlap here we've destroyed the ability
+kita mempunyai pertindihan di sini kita telah musnah keupayaan
+
+00:36:12,000 --> 00:36:16,000
+to recover the original signal from the impulse train
+untuk mendapatkan semula isyarat asal dari kereta api gerak hati
+
+00:36:16,000 --> 00:36:20,000
+and that would be true also in general in a more general case
+dan yang akan menjadi benar juga pada umumnya dalam kes yang lebih umum
+
+00:36:20,000 --> 00:36:23,000
+love pulse amplitude modulation with
+cinta nadi amplitud modulasi dengan
+
+00:36:23,000 --> 00:36:26,000
+pulses that up 90 with
+denyutan bahawa sehingga 90 dengan
+
+00:36:26,000 --> 00:36:31,000
+this effect by the way is one that will be
+kesan ini dengan cara itu adalah salah satu yang akan menjadi
+
+00:36:31,000 --> 00:36:35,000
+exploring in considerably more detail in the next lecture and
+meneroka dalam jauh lebih terperinci dalam kuliah akan datang dan
+
+00:36:35,000 --> 00:36:39,000
+it's a phenomenon or distortion referred to as a leasing which
+ia adalah satu fenomena atau penyelewengan dirujuk sebagai pajakan yang yang
+
+00:36:39,000 --> 00:36:42,000
+in fact is important and interesting topic but
+sebenarnya adalah topik yang penting dan menarik tetapi
+
+00:36:42,000 --> 00:36:46,000
+going back to the case in which we've chosen the frequency of the upholstery
+akan kembali kepada kes di mana kita telah memilih kekerapan upholsteri
+
+00:36:46,000 --> 00:36:49,000
+in high enough
+dalam cukup tinggi
+
+00:36:49,000 --> 00:36:53,000
+then we would recover the original signal
+maka kita akan pulih isyarat asal
+
+00:36:53,000 --> 00:36:56,000
+by processing it through
+dengan memproses melalui
+
+00:36:56,000 --> 00:37:00,000
+a low-pass filter
+penapis laluan rendah
+
+00:37:00,000 --> 00:37:03,000
+and in in that case
+dan di dalam kes
+
+00:37:03,000 --> 00:37:08,000
+what this says is dead if we have a signal
+apa ini mengatakan adalah mati jika kita mempunyai isyarat yang
+
+00:37:08,000 --> 00:37:12,000
+and we modulated with an impulse train
+dan kami termodulat dengan kereta api gerak hati
+
+00:37:12,000 --> 00:37:17,000
+if we then process that impulse train through an ideal ok pass filter
+jika kita maka proses bahawa kereta api gerak hati melalui penapis lulus ok ideal
+
+00:37:17,000 --> 00:37:22,000
+given the right conditions on Sat on the frequency the impulse train and the band
+diberikan keadaan yang sesuai pada Sabtu atas permintaan yang kereta api gerak hati dan band ini
+
+00:37:22,000 --> 00:37:23,000
+with the signal
+dengan isyarat
+
+00:37:23,000 --> 00:37:27,000
+we can recover the original signal back again
+kita boleh memulihkan isyarat asal kembali lagi
+
+00:37:27,000 --> 00:37:31,000
+now let me stress just going back to
+sekarang mari saya menekankan hanya akan kembali ke
+
+00:37:31,000 --> 00:37:35,000
+the picture in which we have done this modulation
+gambar di mana kita telah lakukan modulasi ini
+
+00:37:35,000 --> 00:37:38,000
+that this process where the modulation
+bahawa proses ini di mana modulasi
+
+00:37:38,000 --> 00:37:42,000
+where the carrier signal involves an impulse train is
+di mana isyarat pembawa yang melibatkan kereta api gerak hati adalah
+
+00:37:42,000 --> 00:37:46,000
+often referred to as sampling and
+sering dirujuk sebagai persampelan dan
+
+00:37:46,000 --> 00:37:49,000
+what that mean specifically is dead
+apa itu bermakna khusus mati
+
+00:37:49,000 --> 00:37:55,000
+if we notice this resulting in polls train
+jika kita lihat Hasilnya, Syarikat ini dalam pemilihan kereta api
+
+00:37:55,000 --> 00:37:58,000
+is in fact a sequence
+sebenarnya urutan
+
+00:37:58,000 --> 00:38:01,000
+all samples all
+semua sampel semua
+
+00:38:01,000 --> 00:38:05,000
+the original continuous-time signal in other words
+isyarat berterusan masa asal dalam erti kata lain
+
+00:38:05,000 --> 00:38:10,000
+what we've done in effect is taken instantaneous samples at this way form
+apa yang kita lakukan pada kesan diambil sampel pemulaan pada bentuk cara ini
+
+00:38:10,000 --> 00:38:13,000
+and the implication is that if we do that
+dan Implikasinya adalah bahawa jika kita berbuat demikian
+
+00:38:13,000 --> 00:38:17,000
+at a rapid and afraid in relation
+pada hubungan yang pesat dan takut dalam
+
+00:38:17,000 --> 00:38:21,000
+to the band with the signal then
+untuk band ini dengan isyarat maka
+
+00:38:21,000 --> 00:38:25,000
+we can in fact recover the original signal back again
+kita sebenarnya boleh mendapatkan semula isyarat asal kembali lagi
+
+00:38:25,000 --> 00:38:28,000
+and finally to remind you
+dan akhirnya untuk mengingatkan anda
+
+00:38:28,000 --> 00:38:31,000
+I'll the argument once more
+Saya akan hujah sekali lagi
+
+00:38:31,000 --> 00:38:34,000
+we have an original signal
+kita mempunyai isyarat asal
+
+00:38:34,000 --> 00:38:40,000
+and we have its spectrum when we've sampled it and this is now the sampled
+dan kami mempunyai spektrum apabila kami telah disampel dan ini kini disampel
+
+00:38:40,000 --> 00:38:44,000
+signal it's an impulse train whose instantaneous values
+isyarat itu kereta api gerak hati yang nilai ketika
+
+00:38:44,000 --> 00:38:49,000
+are samples at the original waveform the spectrum a bad
+adalah sampel pada bentuk gelombang asal spektrum yang tidak baik
+
+00:38:49,000 --> 00:38:53,000
+is the original one replicated
+adalah yang asal ditiru
+
+00:38:53,000 --> 00:38:57,000
+and when that is processed through a
+dan apabila itu diproses melalui
+
+00:38:57,000 --> 00:39:01,000
+low-pass filter to extract this part of the spectrum
+penapis laluan rendah untuk mengeluarkan bahagian spektrum
+
+00:39:01,000 --> 00:39:05,000
+then after the low-pass filter we can
+kemudian selepas penapis laluan rendah kita boleh
+
+00:39:05,000 --> 00:39:11,000
+recover the original signal back again
+pulih isyarat asal kembali lagi
+
+00:39:11,000 --> 00:39:14,000
+okay well in fact me although
+okay juga sebenarnya saya walaupun
+
+00:39:14,000 --> 00:39:17,000
+a if you kinda follow through
+jika anda agak susulan
+
+00:39:17,000 --> 00:39:21,000
+the specter and the waveforms this all seems fairly
+hantu dan bentuk gelombang ini semua kelihatan agak
+
+00:39:21,000 --> 00:39:24,000
+straightforward and perhaps
+terus-terang dan mungkin
+
+00:39:24,000 --> 00:39:28,000
+or perhaps not obvious
+atau mungkin tidak jelas
+
+00:39:28,000 --> 00:39:32,000
+it's really worth reflecting on how amazing
+ia benar-benar bernilai mencerminkan bagaimana menakjubkan
+
+00:39:32,000 --> 00:39:36,000
+the result really is what it says we begin this discussion
+hasilnya benar-benar adalah apa yang dikatakannya kita mula perbincangan ini
+
+00:39:36,000 --> 00:39:41,000
+by talking about modulation and in fact modulation and sinusoidal modulation is
+dengan bercakap tentang modulasi dan sebenarnya modulasi dan modulasi bentuk sinus adalah
+
+00:39:41,000 --> 00:39:44,000
+important in its own right
+penting yang tersendiri
+
+00:39:44,000 --> 00:39:47,000
+we ended the discussion by talking
+kita berakhir perbincangan dengan bercakap
+
+00:39:47,000 --> 00:39:51,000
+about first pulse amplitude modulation
+kira-kira pertama nadi amplitud modulasi
+
+00:39:51,000 --> 00:39:57,000
+and then showing how under the right set of conditions
+dan kemudian menunjukkan bagaimana di bawah menetapkan hak keadaan
+
+00:39:57,000 --> 00:40:01,000
+you can in fact take away form and
+anda sebenarnya boleh mengambil bentuk dan
+
+00:40:01,000 --> 00:40:05,000
+sample it with a set of instantaneous samples
+mencuba dengan satu set sampel merta
+
+00:40:05,000 --> 00:40:08,000
+and that said instantaneous samples in fact
+dan yang berkata sampel merta sebenarnya
+
+00:40:08,000 --> 00:40:14,000
+are sufficient totally represent and reconstruct the signal
+adalah mencukupi sama sekali mewakili dan membina semula isyarat
+
+00:40:14,000 --> 00:40:18,000
+what in fact the formal statement that is
+apa sebenarnya kenyataan rasmi yang
+
+00:40:18,000 --> 00:40:22,000
+is referred to as the sampling theorem
+disebut teorem pensampelan
+
+00:40:22,000 --> 00:40:25,000
+very powerful their own that says
+yang sangat kuat mereka sendiri yang mengatakan
+
+00:40:25,000 --> 00:40:30,000
+if were given equally spaced samples over time function
+jika diberi sampel sama jarak alih fungsi masa
+
+00:40:30,000 --> 00:40:35,000
+and if that time function is band limited
+dan jika fungsi masa adalah band terhad
+
+00:40:35,000 --> 00:40:39,000
+and if the band with
+dan jika band ini dengan
+
+00:40:39,000 --> 00:40:44,000
+or is or if this if this sampling frequency is
+atau adalah atau jika ini jika kekerapan persampelan ini adalah
+
+00:40:44,000 --> 00:40:48,000
+chosen in the right way in relation
+dipilih dengan cara yang betul berhubung
+
+00:40:48,000 --> 00:40:51,000
+to the
+kepada
+
+00:40:51,000 --> 00:40:55,000
+band with then in fact
+band dengan maka sebenarnya
+
+00:40:55,000 --> 00:40:58,000
+the original time function is
+fungsi masa yang asal
+
+00:40:58,000 --> 00:41:05,000
+uniquely recoverable with a low-pass filter
+unik diperolehi dengan penapis laluan rendah
+
+00:41:05,000 --> 00:41:08,000
+now the sampling theorem is kinda
+kini teorem pensampelan adalah agak
+
+00:41:08,000 --> 00:41:12,000
+I would say a watershed a cornerstone
+Saya akan mengatakan titik asas yang
+
+00:41:12,000 --> 00:41:15,000
+love a lot of the discussion we've been having
+suka banyak perbincangan yang kami telah mempunyai
+
+00:41:15,000 --> 00:41:20,000
+for a whole variety of reasons if first of all crops out almost as kind as
+untuk pelbagai keseluruhan sebab-sebab jika pertama sekali tanaman keluar hampir jenis seperti
+
+00:41:20,000 --> 00:41:24,000
+straightforward obvious statement but more importantly
+Penyataan jelas mudah tetapi yang lebih penting
+
+00:41:24,000 --> 00:41:28,000
+what it says is dead
+apa yang dikatakannya telah mati
+
+00:41:28,000 --> 00:41:33,000
+if I have a continuous-time signal which satisfies the right-center conditions
+jika saya mempunyai isyarat berterusan masa yang memenuhi syarat-syarat hak-pusat
+
+00:41:33,000 --> 00:41:36,000
+I can represent it by what it does
+Saya boleh mewakilinya dengan apa yang ia
+
+00:41:36,000 --> 00:41:41,000
+at sampling instance or acquittal only at discrete
+atas kehendak pensampelan atau dibebaskan hanya pada diskret
+
+00:41:41,000 --> 00:41:44,000
+is this a time
+adalah ini masa yang
+
+00:41:44,000 --> 00:41:47,000
+now what that leads to
+sekarang apa yang membawa kepada
+
+00:41:47,000 --> 00:41:51,000
+is a whole host of things wanna which
+adalah tuan rumah seluruh perkara yang mahu
+
+00:41:51,000 --> 00:41:55,000
+is the statement that says if we have a continuous-time signal
+adalah kenyataan yang mengatakan jika kita mempunyai isyarat berterusan masa
+
+00:41:55,000 --> 00:41:58,000
+I could in fact represented
+Saya sebenarnya boleh diwakili
+
+00:41:58,000 --> 00:42:02,000
+as a discrete-time signal and I could even think
+sebagai isyarat diskret masa dan saya juga boleh berfikir
+
+00:42:02,000 --> 00:42:06,000
+love processing a continuous-time signal
+suka memproses isyarat berterusan masa
+
+00:42:06,000 --> 00:42:09,000
+using discrete time concepts
+menggunakan konsep masa diskret
+
+00:42:09,000 --> 00:42:12,000
+and when I'm all done converting back through
+dan apabila saya semua dilakukan menukar kembali melalui
+
+00:42:12,000 --> 00:42:15,000
+the power the sampling theorem converting back to a continuous-time
+kuasa teorem pensampelan menukar kembali ke masa yang berterusan
+
+00:42:15,000 --> 00:42:16,000
+sick
+sakit
+
+00:42:16,000 --> 00:42:20,000
+so the sampling theorem provides this
+jadi teorem pensampelan menyediakan ini
+
+00:42:20,000 --> 00:42:23,000
+with a very major important bridge between
+dengan jambatan penting yang sangat besar antara
+
+00:42:23,000 --> 00:42:28,000
+continuous-time and discrete-time implementations and ideas
+berterusan masa dan diskret masa pelaksanaan dan idea
+
+00:42:28,000 --> 00:42:34,000
+in the next several lectures we will be exploring so this in considerable detail
+dalam beberapa kuliah seterusnya kita akan meneroka jadi ini secara terperinci
+
+00:42:34,000 --> 00:42:37,000
+first the focus in more next time
+pertama fokus dalam lebih banyak masa depan
+
+00:42:37,000 --> 00:42:42,000
+on some with the specific issues and distortions associated with sampling and
+pada beberapa isu-isu tertentu dan putar belit yang berkaitan dengan persampelan dan
+
+00:42:42,000 --> 00:42:44,000
+following that
+berikut yang
+
+00:42:44,000 --> 00:42:48,000
+a discussion are what is referred to as
+perbincangan adalah apa yang disebut sebagai
+
+00:42:48,000 --> 00:42:52,000
+discrete-time processing of continuous-time signals
+pemprosesan diskret masa isyarat berterusan masa
+
+00:42:52,000 --> 00:42:52,000
+thank you
+terima kasih
+

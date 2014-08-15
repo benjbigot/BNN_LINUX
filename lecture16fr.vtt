@@ -1,0 +1,2840 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+le contenu suivant est fourni sous une licence Creative Commons
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+votre appui nous aidera MIT OpenCourseWare continuer à offrir
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+ressources éducatives de haute qualité gratuitement
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+faire un don ou voir des documents supplémentaires à partir de centaines d'entre eux IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+cours
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+visiter MIT OpenCourseWare à 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU ha for the
+que le MIT qui EDU ha pour la
+
+00:00:29,000 --> 00:00:31,000
+the
+la
+
+00:00:31,000 --> 00:00:38,000
+the in
+dans le
+
+00:00:38,000 --> 00:00:45,000
+the new the we concluded the last lecture
+la nouvelle, nous avons conclu la dernière conférence
+
+00:00:57,000 --> 00:01:01,000
+with the statement above the sampling theorem and just as a quick reminder
+avec la déclaration ci-dessus le théorème d'échantillonnage et comme un rappel rapide
+
+00:01:01,000 --> 00:01:05,000
+the sampling theorem said that
+le théorème d'échantillonnage dit que
+
+00:01:05,000 --> 00:01:08,000
+if we have a continuous-time signal
+si nous avons un signal en temps continu
+
+00:01:08,000 --> 00:01:11,000
+and we have equally spaced samples
+et nous avons également espacés échantillons
+
+00:01:11,000 --> 00:01:17,000
+all that signal sampled at a sampling period which a indicators capital T
+tout ce signal échantillonné à une période d'échantillonnage qui a des indicateurs capital T
+
+00:01:17,000 --> 00:01:21,000
+and if except he is banned limited
+et si, sauf qu'il est interdit limitée
+
+00:01:21,000 --> 00:01:25,000
+in other words the forty a transformer 0
+en d'autres termes la quarante un transformateur 0
+
+00:01:25,000 --> 00:01:28,000
+outside some band where Omega Sapan
+en dehors d'un groupe où Omega Sapan
+
+00:01:28,000 --> 00:01:32,000
+is the highest frequency then
+est la fréquence la plus élevée alors
+
+00:01:32,000 --> 00:01:37,000
+under the condition that the sampling frequency which is two-part divided by
+sous la condition que la fréquence d'échantillonnage qui est divisé en deux parties par
+
+00:01:37,000 --> 00:01:38,000
+the period
+la période
+
+00:01:38,000 --> 00:01:42,000
+is greater than twice the highest frequency
+est supérieure à deux fois la plus haute fréquence
+
+00:01:42,000 --> 00:01:46,000
+the original signal is uniquely
+le signal d'origine est uniquement
+
+00:01:46,000 --> 00:01:50,000
+recoverable from the set of samples and
+recouvrable de l'ensemble des échantillons et
+
+00:01:50,000 --> 00:01:54,000
+the sampling theorem essentially was derived by
+le théorème d'échantillonnage essentiellement été tirée par
+
+00:01:54,000 --> 00:01:57,000
+observing or using the notion that
+observation ou en utilisant la notion que
+
+00:01:57,000 --> 00:02:01,000
+sampling could be done by multiplication
+l'échantillonnage peut être effectué par multiplication
+
+00:02:01,000 --> 00:02:05,000
+or modulation with an impulse train and the sampling theorem develop
+ou la modulation avec un train d'impulsions et le théorème d'échantillonnage développer
+
+00:02:05,000 --> 00:02:08,000
+by examining the consequence
+en examinant la suite
+
+00:02:08,000 --> 00:02:13,000
+love the modulation property in the context of the Fourier transform
+aimer la propriété de modulation dans le contexte de la transformation de Fourier
+
+00:02:13,000 --> 00:02:18,000
+in particular if we have our signal accept T
+en particulier si nous avons notre signal d'acceptation T
+
+00:02:18,000 --> 00:02:21,000
+and it's multiplied by an impulse train
+et il est multiplié par un train d'impulsions
+
+00:02:21,000 --> 00:02:25,000
+to give us a sampled signal
+de nous donner un signal échantillonné
+
+00:02:25,000 --> 00:02:31,000
+another impose train whose values or areas are samples of the original time
+autre imposer le train dont les valeurs ou les zones sont des échantillons de l'heure d'origine
+
+00:02:31,000 --> 00:02:32,000
+function
+fonction
+
+00:02:32,000 --> 00:02:36,000
+as i indicate here then
+Comme je l'indique ici, alors
+
+00:02:36,000 --> 00:02:39,000
+in fact if we examine this equation or equivalently
+en fait, si nous examinons cette équation ou équivalente
+
+00:02:39,000 --> 00:02:42,000
+bringing accept T inside this some
+apportant accepter T à l'intérieur ce une
+
+00:02:42,000 --> 00:02:48,000
+if we examine either if these equations in the frequency domain
+si nous examinons soit si ces équations dans le domaine fréquentiel
+
+00:02:48,000 --> 00:02:51,000
+the four EA transform love
+les quatre EA transformer l'amour
+
+00:02:51,000 --> 00:02:56,000
+exe PFT is the convolution
+exe PFT est la convolution
+
+00:02:56,000 --> 00:03:01,000
+above the 40 a transformer the original signal and the Fourier transform
+au-dessus du transformateur 40 au signal d'origine et la transformée de Fourier
+
+00:03:01,000 --> 00:03:05,000
+up the impulse train now
+le train d'impulsions maintenant
+
+00:03:05,000 --> 00:03:08,000
+be imposed strain is a periodic signal its Fourier transform
+souche être imposée est un signal périodique sa transformée de Fourier
+
+00:03:08,000 --> 00:03:12,000
+therefore as we talked about with Fourier transforms itself an impulse
+donc que nous avons parlé avec lui-même transformée de Fourier d'une impulsion
+
+00:03:12,000 --> 00:03:13,000
+train
+train
+
+00:03:13,000 --> 00:03:16,000
+and when we do this convolution n
+et quand nous faisons cette convolution n
+
+00:03:16,000 --> 00:03:21,000
+using the fact that the 48 race for the imposed strain
+en utilisant le fait que la course 48 de la déformation imposée
+
+00:03:21,000 --> 00:03:24,000
+is an impulse train the result
+est un train d'impulsions, le résultat
+
+00:03:24,000 --> 00:03:28,000
+or this convolution then tells us
+ou cette convolution nous dit alors
+
+00:03:28,000 --> 00:03:31,000
+that the 48 transform love
+que la 48 transformation amour
+
+00:03:31,000 --> 00:03:34,000
+the sampled signal or the impulse train
+le signal échantillonné ou le train d'impulsions
+
+00:03:34,000 --> 00:03:38,000
+which represents the samples is a some
+qui représente les échantillons est une certaine
+
+00:03:38,000 --> 00:03:42,000
+love frequency shifted replications
+fréquence de l'amour décalé réplications
+
+00:03:42,000 --> 00:03:45,000
+up the 48 transform of the original signal
+le 48 transformer du signal original
+
+00:03:45,000 --> 00:03:48,000
+so mathematically
+si mathématiquement
+
+00:03:48,000 --> 00:03:53,000
+that's the relationship it essentially says that after sampling or modulation
+c'est la relation, il dit essentiellement que après le prélèvement ou la modulation
+
+00:03:53,000 --> 00:03:54,000
+with an impulse train
+avec un train d'impulsions
+
+00:03:54,000 --> 00:03:58,000
+the resulting spectrum is the original spectrum
+le spectre obtenu est le spectre d'origine
+
+00:03:58,000 --> 00:04:01,000
+added to itself shifted by multiples
+ajouté à lui-même décalé d'un multiple
+
+00:04:01,000 --> 00:04:05,000
+integer multiples of the sampling frequency well
+des multiples entiers de la fréquence d'échantillonnage et
+
+00:04:05,000 --> 00:04:08,000
+let's see that as we did last time in terms of pictures
+Voyons ce que nous avons fait la dernière fois en termes de photos
+
+00:04:08,000 --> 00:04:12,000
+and again to remind you of the basic
+et encore pour vous rappeler de la base
+
+00:04:12,000 --> 00:04:16,000
+picture involved if we have an original signal
+photo impliqué si nous avons un signal original
+
+00:04:16,000 --> 00:04:19,000
+with the spectrum is a indicated here where
+avec le spectre est une indication ici
+
+00:04:19,000 --> 00:04:22,000
+its ban limited with the highest frequency Omega Savannah M
+son interdiction limitée à la fréquence la plus élevée Omega Savannah M
+
+00:04:22,000 --> 00:04:27,000
+and if the time function is sample
+et si la fonction est échantillon
+
+00:04:27,000 --> 00:04:31,000
+so that in the frequency domain week involved this spectrum
+de sorte que dans la semaine du domaine des fréquences de ce spectre impliqués
+
+00:04:31,000 --> 00:04:35,000
+with the spectrum shown below which is the
+avec le spectre représenté ci-dessous, qui est le
+
+00:04:35,000 --> 00:04:40,000
+spectrum love the impulse train
+spectre aiment le train d'impulsions
+
+00:04:40,000 --> 00:04:44,000
+the convolution if these true up these two
+la convolution si ces vrai jusqu'à ces deux
+
+00:04:44,000 --> 00:04:47,000
+is then the Fourier transform or spectrum
+est alors la transformée de Fourier ou spectre
+
+00:04:47,000 --> 00:04:51,000
+love the sampled time function
+l'amour de la fonction de temps échantillonné
+
+00:04:51,000 --> 00:04:55,000
+and so thats what we end up with here
+Et c'est ainsi que nous nous retrouvons avec ici
+
+00:04:55,000 --> 00:05:00,000
+and then as you recall to recover the original time function
+et alors que vous vous souvenez de récupérer la fonction d'origine de temps
+
+00:05:00,000 --> 00:05:05,000
+from this as long as these individual triangles don't overlap
+à partir de ce aussi longtemps que ces triangles individuels ne se chevauchent pas
+
+00:05:05,000 --> 00:05:08,000
+to recover it just simply involves
+à récupérer implique tout simplement
+
+00:05:08,000 --> 00:05:13,000
+passing the impulse train through a low-pass filter in effect
+passer le train d'impulsions à travers un filtre passe-bas en effet
+
+00:05:13,000 --> 00:05:17,000
+extracting just one of these replications
+extraire un seul de ces répliques
+
+00:05:17,000 --> 00:05:21,000
+love the original spectrum
+aimer le spectre d'origine
+
+00:05:21,000 --> 00:05:25,000
+so the overall system
+de sorte que le système global
+
+00:05:25,000 --> 00:05:29,000
+then for for doing the sampling and then
+alors pour pour faire l'échantillonnage et
+
+00:05:29,000 --> 00:05:34,000
+the reconstruction of the original signal from the samples
+la reconstruction du signal d'origine à partir des échantillons
+
+00:05:34,000 --> 00:05:38,000
+consists of multiplying the original time function
+consiste à multiplier la fonction d'origine de temps
+
+00:05:38,000 --> 00:05:42,000
+by an impulse train and that gives us
+par un train d'impulsions et qui nous donne
+
+00:05:42,000 --> 00:05:45,000
+then the sampled signal
+alors le signal échantillonné
+
+00:05:45,000 --> 00:05:49,000
+the Fourier transform I show here love the
+la transformée de Fourier que je montre ici l'amour de la
+
+00:05:49,000 --> 00:05:54,000
+original signal and after modulation with the impulse train
+signal original et après modulation avec le train d'impulsions
+
+00:05:54,000 --> 00:05:58,000
+the resulting spectrum that we have is
+le spectre résultant que nous avons est
+
+00:05:58,000 --> 00:06:04,000
+that replicated around integer multiples of the sampling frequency
+qui reproduit autour des multiples entiers de la fréquence d'échantillonnage
+
+00:06:04,000 --> 00:06:07,000
+and then finally to recover
+et puis finalement à récupérer
+
+00:06:07,000 --> 00:06:12,000
+the original signal or to generate a reconstructed signal
+le signal d'origine ou pour générer un signal reconstruit
+
+00:06:12,000 --> 00:06:16,000
+we then multiply this in the frequency domain
+on multiplie ensuite ce dans le domaine des fréquences
+
+00:06:16,000 --> 00:06:20,000
+by the frequency response of an idea low-pass filter
+par la réponse en fréquence d'un filtre passe-bas idée
+
+00:06:20,000 --> 00:06:23,000
+and what that accomplishes forest and
+et ce qui accomplit la forêt et
+
+00:06:23,000 --> 00:06:28,000
+is recovering the original signal
+est la récupération du signal original
+
+00:06:28,000 --> 00:06:32,000
+now in this picture an important point that I raise last time
+maintenant dans cette image un point important que je soulève une dernière fois
+
+00:06:32,000 --> 00:06:36,000
+relates to the fact dead in doing the reconstruction
+tient au fait mort en faisant la reconstruction
+
+00:06:36,000 --> 00:06:40,000
+well we've assumed is dead in replicating
+ainsi nous avons supposé est mort dans la reproduction
+
+00:06:40,000 --> 00:06:43,000
+these individual versions
+ces versions individuelles
+
+00:06:43,000 --> 00:06:47,000
+0 the original signal
+0 le signal d'origine
+
+00:06:47,000 --> 00:06:50,000
+those replications don't overlap and sold by passing this through a low-pass
+ces répétitions ne se chevauchent pas et vendus par l'adoption de ce à travers un passe-bas
+
+00:06:50,000 --> 00:06:52,000
+filter in fact
+filtrage en fait
+
+00:06:52,000 --> 00:06:55,000
+we can recover the original signal well
+nous pouvons bien récupérer le signal original
+
+00:06:55,000 --> 00:06:59,000
+what that requires is that
+ce qui exige, c'est que
+
+00:06:59,000 --> 00:07:03,000
+this frequency Omega Savannah M be less than
+cette fréquence Omega Savannah M moins
+
+00:07:03,000 --> 00:07:07,000
+this frequency and this frequency
+cette fréquence et cette fréquence
+
+00:07:07,000 --> 00:07:12,000
+is Omega so fast minus Omega serve them
+Omega est moins si vite Omega servir les
+
+00:07:12,000 --> 00:07:16,000
+and so what we require is dead the frequency Omega Sapan
+et donc ce que nous demandons est mort la fréquence Omega Sapan
+
+00:07:16,000 --> 00:07:20,000
+be less than Omega cyb s minus Omega sed am
+être inférieur à Omega CYB s moins am Omega sed
+
+00:07:20,000 --> 00:07:25,000
+or equivalent Lee what we require is that the sampling frequency
+ou l'équivalent Lee ce qu'il nous faut, c'est que la fréquence d'échantillonnage
+
+00:07:25,000 --> 00:07:29,000
+be greater and twice the highest frequency
+être plus grand et deux fois la plus haute fréquence
+
+00:07:29,000 --> 00:07:33,000
+in the original signal now
+dans le signal original maintenant
+
+00:07:33,000 --> 00:07:37,000
+if in fact that condition is violated
+si, en fait, cette condition n'est pas respectée
+
+00:07:37,000 --> 00:07:40,000
+then we end up with a very important effect
+puis nous nous retrouvons avec un effet très important
+
+00:07:40,000 --> 00:07:44,000
+and that effect is referred to as a leasing
+et cet effet est appelé un crédit-bail
+
+00:07:44,000 --> 00:07:49,000
+in particular if we look back at are
+en particulier si nous regardons en arrière sont
+
+00:07:49,000 --> 00:07:52,000
+original example we're here
+exemple original nous sommes ici
+
+00:07:52,000 --> 00:07:57,000
+we were able to recover our original spectrum by
+nous avons pu retrouver notre spectre d'origine par
+
+00:07:57,000 --> 00:08:01,000
+low-pass filtering if in fact
+filtrage passe-bas si, en fait,
+
+00:08:01,000 --> 00:08:04,000
+the sampling frequency is
+la fréquence d'échantillonnage est
+
+00:08:04,000 --> 00:08:07,000
+not high enough to avoid aliasing
+pas suffisamment élevé pour éviter l'aliasing
+
+00:08:07,000 --> 00:08:12,000
+then what happens in that case is that the individual replications
+alors qu'est-ce qui se passe dans ce cas est que les répétitions individuelles
+
+00:08:12,000 --> 00:08:18,000
+love the Fourier transform above the stove the original signal
+aiment la transformée de Fourier-dessus du poêle le signal original
+
+00:08:18,000 --> 00:08:21,000
+overlap and what we end up with
+chevauchement et ce que nous retrouvons avec
+
+00:08:21,000 --> 00:08:27,000
+is some distortion as you can see if we tried to pass this through a low-pass
+un peu de distorsion que vous pouvez voir si nous avons essayé de transmettre ce à travers un passe-bas
+
+00:08:27,000 --> 00:08:29,000
+filter
+filtre
+
+00:08:29,000 --> 00:08:34,000
+to recover the original signal in fact we won't recover the original signal
+pour récupérer le signal original en fait, nous ne serons pas récupérer le signal original
+
+00:08:34,000 --> 00:08:38,000
+since these individual replications have overlapped
+étant donné que ces répétitions individuelles sont chevauchés
+
+00:08:38,000 --> 00:08:43,000
+and this is the case where Omega service minus Omega Savannah is less than
+et c'est le cas où le service Omega Omega moins Savannah est inférieure à
+
+00:08:43,000 --> 00:08:47,000
+Omega so vast in other words the sampling frequency is not greater
+Omega si vaste à-dire la fréquence d'échantillonnage n'est pas supérieure
+
+00:08:47,000 --> 00:08:52,000
+in this case than twice the highest frequency
+dans ce cas, de deux fois la plus haute fréquence
+
+00:08:52,000 --> 00:08:55,000
+so what happens here then is that in effect
+si ce qui se passe ici est alors celui en vigueur
+
+00:08:55,000 --> 00:09:00,000
+higher frequencies get folded down into lower frequencies what would come out of
+des fréquences plus élevées se rabattre en basses fréquences ce qui sortiront de
+
+00:09:00,000 --> 00:09:02,000
+the low-pass filter
+le filtre passe-bas
+
+00:09:02,000 --> 00:09:06,000
+is the reflection of some higher frequencies into lower frequencies
+est le reflet de certaines fréquences supérieures à des fréquences plus basses
+
+00:09:06,000 --> 00:09:09,000
+as I suggested a minute ago that affect
+comme je l'ai suggéré tout à l'heure qui touchent
+
+00:09:09,000 --> 00:09:13,000
+is referred to as alias saying and in order to
+est appelé alias dire et pour
+
+00:09:13,000 --> 00:09:19,000
+both understand that term better and two understand in fact the effect better
+à la fois comprendre ce terme et mieux comprendre deux en fait le meilleur effet
+
+00:09:19,000 --> 00:09:23,000
+it's useful to examine this a little more closely
+il est utile d'examiner ce un peu plus près
+
+00:09:23,000 --> 00:09:27,000
+for the specific example a sinusoidal signal
+pour l'exemple spécifique d'un signal sinusoïdal
+
+00:09:27,000 --> 00:09:31,000
+so let's concentrate on that and what we want to look at
+nous allons donc concentrer là-dessus et ce que nous voulons examiner
+
+00:09:31,000 --> 00:09:35,000
+is the effect or alias saying
+est l'effet ou alias disent
+
+00:09:35,000 --> 00:09:39,000
+when our input signal is a sinusoidal signal
+lorsque notre signal d'entrée est un signal sinusoïdal
+
+00:09:39,000 --> 00:09:43,000
+now to do that what I wanna show shortly
+maintenant à faire ce que je veux montrer peu
+
+00:09:43,000 --> 00:09:46,000
+is a computer-generated movie
+est un film généré par ordinateur
+
+00:09:46,000 --> 00:09:49,000
+that we've made and let's first walk-through
+premier rendez-vous par le biais de ce que nous avons fait et laissez-
+
+00:09:49,000 --> 00:09:54,000
+a few frames a bit to give you our first of all
+quelques images un peu pour vous offrir notre tout d'abord
+
+00:09:54,000 --> 00:09:58,000
+to to set up our notation and to suggest what it is that we're trying to
+à mettre en place notre notation et de suggérer ce que c'est que nous essayons de
+
+00:09:58,000 --> 00:10:00,000
+demonstrate
+démontrer
+
+00:10:00,000 --> 00:10:06,000
+well what we have is an input signal
+ainsi que nous avons est un signal d'entrée
+
+00:10:06,000 --> 00:10:09,000
+is a sinusoidal signal and
+est un signal sinusoïdal, et
+
+00:10:09,000 --> 00:10:12,000
+the spectrum or for a transformer that
+le spectre ou pour un transformateur qui
+
+00:10:12,000 --> 00:10:15,000
+is an impulse in the frequency domain at
+est une impulsion dans le domaine des fréquences à
+
+00:10:15,000 --> 00:10:18,000
+the frequency the sinusoid we then
+la fréquence de la sinusoïde nous alors
+
+00:10:18,000 --> 00:10:23,000
+have samples love that and when we sample that in for this particular
+ont échantillons amour qui et quand nous goûter que pour ce particulier
+
+00:10:23,000 --> 00:10:26,000
+example its sample the 10 killer hurts
+exemple son échantillon le 10 tueur fait mal
+
+00:10:26,000 --> 00:10:29,000
+this spectrum is then replicated
+ce spectre est ensuite répliquée
+
+00:10:29,000 --> 00:10:33,000
+at multiples all the sampling frequency
+tous à des multiples de la fréquence d'échantillonnage
+
+00:10:33,000 --> 00:10:37,000
+and I haven't shown negative frequencies here but the contribution do
+et je n'ai pas montré fréquences négatives ici, mais la contribution faire
+
+00:10:37,000 --> 00:10:41,000
+to the negative frequency
+à la fréquence négative
+
+00:10:41,000 --> 00:10:46,000
+is at 10 killer hurts minus the input sinusoid
+est à 10 tueur blessures moins la sinusoïde d'entrée
+
+00:10:46,000 --> 00:10:49,000
+we then carry out a reconstruction
+nous appliquons ensuite la reconstruction
+
+00:10:49,000 --> 00:10:55,000
+with an idea low-pass filter and the ideal ok pass filter is set at
+avec un filtre passe-bas idée et le filtre idéal de passe ok est fixé à
+
+00:10:55,000 --> 00:10:58,000
+half the sampling frequency or five kelleher its
+la moitié de la fréquence d'échantillonnage ou cinq kelleher son
+
+00:10:58,000 --> 00:11:01,000
+so what we have then is
+donc ce que nous avons alors est
+
+00:11:01,000 --> 00:11:05,000
+the input signal accept T
+le signal d'entrée acceptent T
+
+00:11:05,000 --> 00:11:09,000
+and the impulse train exe PFT
+et le train d'impulsions exe PFT
+
+00:11:09,000 --> 00:11:13,000
+and then the reconstructed signal is
+puis le signal reconstruit est
+
+00:11:13,000 --> 00:11:16,000
+the output from the low-pass filter
+la sortie du filtre passe-bas
+
+00:11:16,000 --> 00:11:21,000
+which I denote as X a party
+qui je note que X une partie
+
+00:11:21,000 --> 00:11:24,000
+now as the input frequency X 50
+maintenant que la fréquence d'entrée X 50
+
+00:11:24,000 --> 00:11:28,000
+increases this impulse moves up in frequency
+augmente cette impulsion se déplace de haut en fréquence
+
+00:11:28,000 --> 00:11:32,000
+but this impulse moves down in frequency
+mais cette impulsion se déplace vers le bas de la fréquence
+
+00:11:32,000 --> 00:11:37,000
+and so let's just look at a few frames as the input frequency increases
+et donc on va plutôt regarder quelques images que la fréquence d'entrée augmente
+
+00:11:37,000 --> 00:11:40,000
+so we have here a case
+nous avons donc ici un cas
+
+00:11:40,000 --> 00:11:43,000
+where the input frequency has move up
+où la fréquence d'entrée a déplacer vers le haut
+
+00:11:43,000 --> 00:11:46,000
+close to five killer hurts
+près de cinq tueur blessures
+
+00:11:46,000 --> 00:11:50,000
+as we continue further these two impossible's
+que nous continuons encore ces deux est impossible
+
+00:11:50,000 --> 00:11:54,000
+will cross and what we'll end up with as i indicated
+va traverser et ce que nous allons retrouver avec comme je l'ai
+
+00:11:54,000 --> 00:11:58,000
+is aliasing so here now is a case
+est aliasing alors voici maintenant est un cas
+
+00:11:58,000 --> 00:12:01,000
+where we have alias saying the
+où nous avons alias dire la
+
+00:12:01,000 --> 00:12:05,000
+replication of the negative frequency has crossed into the passband if the
+la réplication de la fréquence négative a pénétré dans la bande passante si l'
+
+00:12:05,000 --> 00:12:07,000
+filter
+filtre
+
+00:12:07,000 --> 00:12:10,000
+and the reconstructed sinusoid will now
+et la sinusoïde reconstruite va maintenant
+
+00:12:10,000 --> 00:12:14,000
+be the frequency associated with this impulse
+soit la fréquence associée à cette impulsion
+
+00:12:14,000 --> 00:12:17,000
+rather than the frequency Associated
+plutôt que de la fréquence associée
+
+00:12:17,000 --> 00:12:22,000
+with the original sinusoid and to dramatize that
+avec la sinusoïde d'origine et de dramatiser que
+
+00:12:22,000 --> 00:12:25,000
+even further here is
+encore ici est
+
+00:12:25,000 --> 00:12:29,000
+the example where now the input frequency
+l'exemple où maintenant la fréquence d'entrée
+
+00:12:29,000 --> 00:12:33,000
+has moved up close to 10 killer hurts
+s'est déplacé jusqu'à près de 10 tueur fait mal
+
+00:12:33,000 --> 00:12:36,000
+but what comes out of the low-pass filter
+mais ce qui sort du filtre passe-bas
+
+00:12:36,000 --> 00:12:39,000
+is a much lower frequency and in fact
+est une fréquence beaucoup plus faible et en fait
+
+00:12:39,000 --> 00:12:43,000
+you can see that here is the reconstructed sinusoid
+vous pouvez voir que ici est la sinusoïde reconstruit
+
+00:12:43,000 --> 00:12:48,000
+whereas here we have the input size
+alors qu'ici nous avons la taille d'entrée
+
+00:12:48,000 --> 00:12:51,000
+okay well now what I'm gonna wanna do is
+bon et bien maintenant ce que je vais veux faire est
+
+00:12:51,000 --> 00:12:56,000
+demonstrate this as i indicated with a computer-generated movie
+démontrer ce que je dit avec un film généré par ordinateur
+
+00:12:56,000 --> 00:13:00,000
+and well we'll see is the effect
+et bien nous allons voir est l'effet
+
+00:13:00,000 --> 00:13:05,000
+on the effect of reconstructing
+à l'effet de la reconstruction
+
+00:13:05,000 --> 00:13:08,000
+from the samples using a low-pass filter
+à partir des échantillons en utilisant un filtre passe-bas
+
+00:13:08,000 --> 00:13:12,000
+for an input which changes in frequency
+une entrée pour laquelle les variations de fréquence
+
+00:13:12,000 --> 00:13:15,000
+and with the sampling rate of 10 killer hurts
+et avec le taux de 10 tueur d'échantillonnage fait mal
+
+00:13:15,000 --> 00:13:19,000
+and what we'll see in the first part of this movie is
+et ce que nous allons voir dans la première partie de ce film est
+
+00:13:19,000 --> 00:13:22,000
+the input except the and the reconstructed signal
+à l'exception de l'entrée et le signal reconstruit
+
+00:13:22,000 --> 00:13:27,000
+X a party without explicitly showing the samples
+X une partie sans montrer explicitement les échantillons
+
+00:13:27,000 --> 00:13:31,000
+and then at a later point will also show this and indicate
+et puis à un moment plus tard aussi montrer, et indiquer
+
+00:13:31,000 --> 00:13:34,000
+that in fact the samples are those two are equal even though
+que, en fait, les échantillons sont ces deux sont égaux, même si
+
+00:13:34,000 --> 00:13:37,000
+they themselves are not
+ils ne sont pas
+
+00:13:37,000 --> 00:13:41,000
+so at the top will have the input sinusoid without
+donc au sommet aura la sinusoïde d'entrée sans
+
+00:13:41,000 --> 00:13:44,000
+showing the samples and its
+montrant les échantillons et son
+
+00:13:44,000 --> 00:13:50,000
+for EA transform is an impulse in the frequency domain as we've indicated
+pour transformer EA est une impulsion dans le domaine de fréquence comme nous l'avons indiqué
+
+00:13:50,000 --> 00:13:55,000
+and if we sample it that imposed and gets replicated
+et si nous prélevons il qui frappent et se reproduit
+
+00:13:55,000 --> 00:13:58,000
+and so samples in particular
+de sorte que les échantillons et, en particulier,
+
+00:13:58,000 --> 00:14:02,000
+will have a Fourier transform not only with an impulse
+aura une transformée de Fourier non seulement avec une impulsion
+
+00:14:02,000 --> 00:14:07,000
+at the input sinusoid sinusoidal frequency but also attend killer hurts
+à l'entrée sinusoïde fréquence sinusoïdale mais aussi assister tueur fait mal
+
+00:14:07,000 --> 00:14:09,000
+minus that frequency
+moins que la fréquence
+
+00:14:09,000 --> 00:14:14,000
+now for the reconstruction we pass the samples through an idea low-pass filter
+maintenant pour la reconstruction, nous passons les échantillons à travers un filtre passe-bas idée
+
+00:14:14,000 --> 00:14:15,000
+I picked
+J'ai choisi
+
+00:14:15,000 --> 00:14:19,000
+the cutoff frequency of the low-pass filter at half the sampling frequency
+la fréquence de coupure du filtre passe-bas à la moitié de la fréquence d'échantillonnage
+
+00:14:19,000 --> 00:14:21,000
+namely 5 killer hurts
+à savoir 5 tueur fait mal
+
+00:14:21,000 --> 00:14:24,000
+and here we see is that the output
+et nous voyons ici est que la sortie
+
+00:14:24,000 --> 00:14:29,000
+reconstructed signal in fact matches in frequency the input signal
+signal reconstruit en fait correspond à la fréquence du signal d'entrée
+
+00:14:29,000 --> 00:14:33,000
+now as we change the input frequency
+maintenant que nous changeons la fréquence d'entrée
+
+00:14:33,000 --> 00:14:36,000
+the reconstructed sinus so it is identical
+sinus reconstruite il est donc identique
+
+00:14:36,000 --> 00:14:41,000
+until we get to an input frequency
+jusqu'à ce que nous arrivons à une fréquence d'entrée
+
+00:14:41,000 --> 00:14:44,000
+which exceeds half the sampling frequency
+est supérieure à la moitié de la fréquence d'échantillonnage
+
+00:14:44,000 --> 00:14:50,000
+at that point we have aliasing and while the input frequency is increasing
+à ce moment nous avons aliasing et tandis que la fréquence d'entrée est en augmentation
+
+00:14:50,000 --> 00:14:54,000
+the output frequency in fact is decreasing
+la fréquence de sortie, en fait, diminue
+
+00:14:54,000 --> 00:14:58,000
+because that's what's inside the passband the filter
+parce que c'est ce qui est à l'intérieur de la bande passante du filtre
+
+00:14:58,000 --> 00:15:05,000
+now let's sweep it back and as the input frequency decreases the output frequency
+Maintenant, nous allons balayer en arrière et que la fréquence d'entrée diminue la fréquence de sortie
+
+00:15:05,000 --> 00:15:06,000
+increases
+augmente
+
+00:15:06,000 --> 00:15:09,000
+till there's no aliasing and now the output reconstructed
+jusqu'à ce qu'il n'y a pas de crénelage et maintenant la sortie reconstruite
+
+00:15:09,000 --> 00:15:14,000
+signal is equal to the input
+signal est égale à l'entrée
+
+00:15:14,000 --> 00:15:18,000
+so we sample the signal and then reconstructed
+si on échantillonne le signal puis reconstruit
+
+00:15:18,000 --> 00:15:21,000
+the signal from the samples and keep in mind
+le signal à partir des échantillons et garder à l'esprit
+
+00:15:21,000 --> 00:15:26,000
+that given a set of samples there are lots of continuous curves that we can
+que, compte tenu d'un ensemble d'échantillons, il ya beaucoup de courbes continues que nous pouvons
+
+00:15:26,000 --> 00:15:28,000
+thread through the set of samples
+le fil à travers l'ensemble d'échantillons
+
+00:15:28,000 --> 00:15:32,000
+the one that we picked up cores is the one consistent
+celui que nous avons ramassé des carottes est celui conforme
+
+00:15:32,000 --> 00:15:35,000
+with the assumption about the signal band with
+avec l'hypothèse sur la bande du signal avec
+
+00:15:35,000 --> 00:15:39,000
+in particular we've reconstructed the signal
+en particulier, nous avons reconstruit le signal
+
+00:15:39,000 --> 00:15:44,000
+that who spectrum falls within the pass band at the filter
+que qui spectre relève de la bande passante au niveau du filtre
+
+00:15:44,000 --> 00:15:48,000
+now what I'd like to show is the same
+maintenant ce que je voudrais montrer, c'est la même
+
+00:15:48,000 --> 00:15:51,000
+reconstruction and input as I showed before
+reconstruction et entrée comme je l'ai montré avant
+
+00:15:51,000 --> 00:15:55,000
+but now let's look at the samples and what we'll see is that
+mais maintenant, regardons les échantillons et ce que nous allons voir, c'est que
+
+00:15:55,000 --> 00:15:58,000
+when there's alias saying even though
+quand il ya alias dire même si
+
+00:15:58,000 --> 00:16:02,000
+the output the reconstructed signal
+la sortie du signal reconstruit
+
+00:16:02,000 --> 00:16:05,000
+is not identical to the input in fact
+n'est pas identique à l'entrée, en fait,
+
+00:16:05,000 --> 00:16:09,000
+it's consistent with the input samples that is sampling the reconstructed
+il est compatible avec les échantillons d'entrée qui échantillonne les reconstruit
+
+00:16:09,000 --> 00:16:11,000
+signal
+signal
+
+00:16:11,000 --> 00:16:15,000
+gives a set of samples identical to the samples at the input
+donne un ensemble d'échantillons identiques aux échantillons à l'entrée
+
+00:16:15,000 --> 00:16:19,000
+and it's just that the interpolation in between those samples
+et c'est juste que l'interpolation entre les échantillons
+
+00:16:19,000 --> 00:16:22,000
+is an interpolation consistent with you soon
+est une interpolation conforme à bientôt
+
+00:16:22,000 --> 00:16:25,000
+fan with love the input based on the sampling there
+ventilateur avec amour l'entrée en fonction de l'échantillonnage, il
+
+00:16:25,000 --> 00:16:28,000
+so let's now look at that with
+nous allons maintenant regarder cela avec
+
+00:16:28,000 --> 00:16:33,000
+the samples also shown along with the sinusoid
+les échantillons également présentés avec la sinusoïde
+
+00:16:33,000 --> 00:16:38,000
+so at the top we have the input sinusoid together with its samples
+donc au sommet, nous avons la sinusoïde d'entrée avec ses échantillons
+
+00:16:38,000 --> 00:16:42,000
+the bottom traces the Fourier transform of the sampled waveform
+le fond retrace la transformée de Fourier de la forme d'onde échantillonnée
+
+00:16:42,000 --> 00:16:46,000
+the middle trace is the reconstructed
+la trace du milieu est le reconstruit
+
+00:16:46,000 --> 00:16:51,000
+sinusoid together with its samples and notice of course that the samples are
+sinusoïde avec ses échantillons et avis bien sûr que les échantillons sont
+
+00:16:51,000 --> 00:16:53,000
+the input a reconstructed signal
+l'entrée d'un signal reconstruit
+
+00:16:53,000 --> 00:16:56,000
+are identical and also
+sont identiques et également
+
+00:16:56,000 --> 00:17:00,000
+the input sinusoidal frequency
+la fréquence d'entrée sinusoïdal
+
+00:17:00,000 --> 00:17:04,000
+and the output sinus or frequency are identical
+et le sinus ou la fréquence de sortie sont identiques
+
+00:17:04,000 --> 00:17:09,000
+we now increase the frequency at the input
+on augmente maintenant la fréquence à l'entrée
+
+00:17:09,000 --> 00:17:13,000
+the reconstructed sinusoid tracks the input frequency
+la sinusoïde reconstruit suit la fréquence d'entrée
+
+00:17:13,000 --> 00:17:16,000
+and of course the samples are the two are identical
+et bien sûr les échantillons sont les deux sont identiques
+
+00:17:16,000 --> 00:17:20,000
+the interpolation in between the samples is identical
+l'interpolation entre les échantillons est identique
+
+00:17:20,000 --> 00:17:24,000
+because the fact dead the input frequency is still
+parce que le fait morte la fréquence d'entrée est toujours
+
+00:17:24,000 --> 00:17:31,000
+less than half the sampling frequency
+moins de la moitié de la fréquence d'échantillonnage
+
+00:17:31,000 --> 00:17:37,000
+and so as long as the input is frequency is less than half the sampling frequency
+et ainsi aussi longtemps que l'entrée est la fréquence est inférieure à la moitié de la fréquence d'échantillonnage
+
+00:17:37,000 --> 00:17:40,000
+not only will the samples be identical but also
+non seulement les échantillons identiques mais aussi
+
+00:17:40,000 --> 00:17:44,000
+the reconstructed continuous waveform will match
+la forme d'onde continue reconstruite correspondra
+
+00:17:44,000 --> 00:17:51,000
+the input way for
+la voie d'entrée pour
+
+00:17:56,000 --> 00:17:59,000
+now when we get to hear the sampling frequency were just
+maintenant quand nous arrivons à entendre la fréquence d'échantillonnage étaient tout simplement
+
+00:17:59,000 --> 00:18:02,000
+on the verge Bailey is saying this isn't alias saying
+sur le point Bailey dit ce n'est pas alias dire
+
+00:18:02,000 --> 00:18:06,000
+quite yet but any increase in the input frequency
+mais encore tout à fait toute augmentation de la fréquence d'entrée
+
+00:18:06,000 --> 00:18:11,000
+will now generate aliasing we now have a leasing
+va maintenant générer aliasing nous avons maintenant un crédit-bail
+
+00:18:11,000 --> 00:18:15,000
+the output frequency is lower than the input frequency but notice
+la fréquence de sortie est inférieure à la fréquence d'entrée mais un avis
+
+00:18:15,000 --> 00:18:20,000
+that the samples are identical now
+que les échantillons sont identiques à présent
+
+00:18:20,000 --> 00:18:24,000
+the low-pass filter is interpolating in between those samples
+le filtre passe-bas est d'interpolation entre les échantillons
+
+00:18:24,000 --> 00:18:28,000
+with a sinusoid that falls within the past Pandev the low-pass filter
+avec une sinusoïde qui se situe dans le passé Pandev le filtre passe-bas
+
+00:18:28,000 --> 00:18:34,000
+which no longer matches the frequency of the input sinusoid but
+qui ne correspond plus la fréquence de la sinusoïde d'entrée mais
+
+00:18:34,000 --> 00:18:38,000
+the important point is that even when we have alias saying
+le point important est que, même lorsque nous avons alias dire
+
+00:18:38,000 --> 00:18:41,000
+the samples are the reconstructed waveform
+les échantillons sont la forme d'onde reconstruite
+
+00:18:41,000 --> 00:18:44,000
+are identical to the samples
+sont identiques aux échantillons
+
+00:18:44,000 --> 00:18:50,000
+of the original way for and notice that as the input frequency increases
+de la façon originale de préavis et que lorsque la fréquence d'entrée augmente
+
+00:18:50,000 --> 00:18:54,000
+in fact the interpolated output the reconstructed output
+en fait la sortie interpolée la sortie reconstruit
+
+00:18:54,000 --> 00:19:01,000
+has decreased in frequency now as the input frequency begins to get closer to
+a diminué la fréquence maintenant que la fréquence d'entrée commence à se rapprocher de
+
+00:19:01,000 --> 00:19:05,000
+10 killer hurts in fact you're all I
+10 tueur fait mal en fait, vous êtes tout ce que je
+
+00:19:05,000 --> 00:19:08,000
+tends to also interpolate between the samples
+tend à interpoler entre les échantillons aussi
+
+00:19:08,000 --> 00:19:12,000
+with a frequency that is lower
+avec une fréquence qui est inférieure
+
+00:19:12,000 --> 00:19:15,000
+day and the input frequency NS particularly evident
+jour et la fréquence d'entrée NS particulièrement évident
+
+00:19:15,000 --> 00:19:19,000
+here notice that the input samples in fact
+ici remarquer que les échantillons d'entrée, en fait,
+
+00:19:19,000 --> 00:19:22,000
+look like they would be associated
+regardez comme ils seraient associés
+
+00:19:22,000 --> 00:19:26,000
+with a much lower frequency sinusoid then in fact
+avec une sinusoïde de fréquence beaucoup plus bas, en fait,
+
+00:19:26,000 --> 00:19:30,000
+was the sinusoid the generated a lower frequency sinusoid
+a été la sinusoïde du généré une sinusoïde de fréquence inférieure
+
+00:19:30,000 --> 00:19:35,000
+in fact corresponds to the reconstructed one now as we sit back down
+correspond en fait à celle reconstruite maintenant que nous sommes assis vers le bas
+
+00:19:35,000 --> 00:19:40,000
+the aliasing eventually disappears and the output sinus or tracks the input
+l'aliasing disparaît par la suite et le sinus de sortie ou le suivi de la saisie
+
+00:19:40,000 --> 00:19:42,000
+sinusoid in frequency
+sinusoïde à fréquence
+
+00:19:42,000 --> 00:19:45,000
+so we've seen the
+de sorte que nous avons vu la
+
+00:19:45,000 --> 00:19:49,000
+effective aliasing for sinusoidal signals and turns away forms
+aliasing pour les signaux sinusoïdaux et se détourne formes
+
+00:19:49,000 --> 00:19:53,000
+now let's hear how it sounds now
+maintenant nous allons entendre comment ça sonne maintenant
+
+00:19:53,000 --> 00:19:57,000
+what we have for this demonstration is
+ce que nous avons pour cette démonstration est
+
+00:19:57,000 --> 00:20:00,000
+an oscillator and
+un oscillateur et
+
+00:20:00,000 --> 00:20:04,000
+a sampler and the output of the sampler
+un échantillonneur, et la sortie de l'échantillonneur
+
+00:20:04,000 --> 00:20:07,000
+goes into a low-pass filter so the
+passe dans un filtre passe-bas de sorte que le
+
+00:20:07,000 --> 00:20:13,000
+input for from the oscillator goes into the sampler
+entrée pour de l'oscillateur va dans l'échantillonneur
+
+00:20:13,000 --> 00:20:16,000
+and the output the sampler
+et la sortie de l'échantillonneur
+
+00:20:16,000 --> 00:20:19,000
+goes into the low-pass filter the
+qui entre dans le filtre passe-bas du
+
+00:20:19,000 --> 00:20:22,000
+sampler frequency is 10 killer hurts
+la fréquence d'échantillonnage est de 10 tueur fait mal
+
+00:20:22,000 --> 00:20:26,000
+and so the low-pass filter
+et de sorte que le filtre passe-bas
+
+00:20:26,000 --> 00:20:30,000
+has a cutoff frequency as i indicate here
+a une fréquence de coupure comme je l'indique ici
+
+00:20:30,000 --> 00:20:33,000
+all five killer hurts and
+tous les cinq tueur fait mal et
+
+00:20:33,000 --> 00:20:36,000
+what will listened to is the
+ce qui est écouté l'
+
+00:20:36,000 --> 00:20:40,000
+reconstructed output as the
+sortie reconstruit comme le
+
+00:20:40,000 --> 00:20:43,000
+oscillator input frequency berries
+entrée de l'oscillateur baies de fréquence
+
+00:20:43,000 --> 00:20:48,000
+and recall there what should happen is that
+et de rappeler ce qui devrait y arriver, c'est que
+
+00:20:48,000 --> 00:20:53,000
+when the oscillator input frequency gets past half the sampling frequency
+lorsque la fréquence d'entrée de l'oscillateur reçoit et demie la fréquence d'échantillonnage
+
+00:20:53,000 --> 00:20:59,000
+we should hear aliasing so we'll start the oscillator it to kill her ex
+nous devrions entendre aliasing nous allons donc commencer l'oscillateur pour tuer son ex
+
+00:20:59,000 --> 00:21:02,000
+and keep in mind that what you see on the dial
+et garder à l'esprit que ce que vous voyez sur le cadran
+
+00:21:02,000 --> 00:21:06,000
+is the input frequency which you here is the output frequency
+est la fréquence d'entrée qui vous est ici la fréquence de sortie
+
+00:21:06,000 --> 00:21:10,000
+as long as the input frequency is less than half the sampling frequency in
+aussi longtemps que la fréquence d'entrée est inférieure à la moitié de la fréquence d'échantillonnage en
+
+00:21:10,000 --> 00:21:12,000
+other words 5 killer hurts
+Autrement dit 5 tueur fait mal
+
+00:21:12,000 --> 00:21:16,000
+the reconstructed signal sounds identical to the input
+le signal reconstruit de sons identique à l'entrée
+
+00:21:16,000 --> 00:21:19,000
+now at five still hurts were right
+maintenant à cinq encore Hurts avaient raison
+
+00:21:19,000 --> 00:21:24,000
+on the verge of aliasing and when we increase the input frequency past five
+sur le point d'aliasing et quand on augmente la fréquence d'entrée passé cinq
+
+00:21:24,000 --> 00:21:25,000
+killer hurts
+tueur fait mal
+
+00:21:25,000 --> 00:21:29,000
+the reconstructed frequency in fact will decrease
+la fréquence reconstruite en fait va diminuer
+
+00:21:29,000 --> 00:21:32,000
+so as we move for example from 5 killer hurts
+afin que nous passons par exemple de 5 tueur fait mal
+
+00:21:32,000 --> 00:21:36,000
+up to let's say 6 killer hurts
+jusqu'à disons 6 tueur fait mal
+
+00:21:36,000 --> 00:21:39,000
+sick still hurts in fact yes alias
+malade fait encore mal, en fait, oui alias
+
+00:21:39,000 --> 00:21:43,000
+down to what gets alias down to
+jusqu'à ce que reçoit alias vers le bas pour
+
+00:21:43,000 --> 00:21:46,000
+4 killer us so
+4 tueur si nous
+
+00:21:46,000 --> 00:21:50,000
+6 go over to the input is for killer hurts
+6 passer à l'entrée est de tueur fait mal
+
+00:21:50,000 --> 00:21:54,000
+at the output now if we move up even further
+à la sortie maintenant si nous allons encore plus loin
+
+00:21:54,000 --> 00:21:58,000
+7 kilohertz at the end pushed its alias down
+7 kilohertz à la fin poussé ses alias bas
+
+00:21:58,000 --> 00:22:01,000
+to three killer hurts at the outpost
+à trois tueur blesse à l'avant-poste
+
+00:22:01,000 --> 00:22:06,000
+so bad dan is a audio demonstration and aliasing
+si mal dan est une démonstration audio et aliasing
+
+00:22:06,000 --> 00:22:09,000
+so to summarize
+Donc, pour résumer
+
+00:22:09,000 --> 00:22:12,000
+if we sample signal and then reconstruct
+si on échantillonne le signal et ensuite reconstruire
+
+00:22:12,000 --> 00:22:17,000
+from the samples using a low-pass filter as long as the sampling frequency is
+à partir des échantillons en utilisant un filtre passe-bas aussi longtemps que la fréquence d'échantillonnage est
+
+00:22:17,000 --> 00:22:20,000
+greater than twice the highest frequency in the signal
+supérieure à deux fois la plus haute fréquence dans le signal
+
+00:22:20,000 --> 00:22:23,000
+we reconstruct exactly if on the other hand
+nous reconstruisons exactement si d'autre part
+
+00:22:23,000 --> 00:22:28,000
+the sampling frequency is too low less than twice the highest frequency
+la fréquence d'échantillonnage est trop faible inférieur à deux fois la plus haute fréquence
+
+00:22:28,000 --> 00:22:31,000
+then we get alias saying in other words
+alors nous sommes alias dire en d'autres termes
+
+00:22:31,000 --> 00:22:35,000
+higher frequencies get folded or reflected
+des fréquences plus élevées plissement ou reflétées
+
+00:22:35,000 --> 00:22:38,000
+down into lower frequencies as they come through the low-pass filter
+vers le bas dans les basses fréquences car elles passent par le filtre passe-bas
+
+00:22:38,000 --> 00:22:42,000
+now wanted the
+voulait maintenant la
+
+00:22:42,000 --> 00:22:46,000
+common applications love the whole concept of sampling
+applications courantes aiment le concept de l'échantillonnage
+
+00:22:46,000 --> 00:22:52,000
+is the use sampling to convert a continuous-time signal into a
+est l'utilisation échantillonnage pour convertir un signal en temps continu dans un
+
+00:22:52,000 --> 00:22:55,000
+discrete-time signal to carry out
+signal discret à temps pour mener à bien
+
+00:22:55,000 --> 00:22:59,000
+what's often referred to as discreet I processing
+ce qui est souvent appelé le traitement le plus discret I
+
+00:22:59,000 --> 00:23:04,000
+of continuous-time signals and this in fact is something that will be talking
+des signaux en temps continu et ce, en fait, c'est quelque chose qui va parler
+
+00:23:04,000 --> 00:23:05,000
+about
+sur
+
+00:23:05,000 --> 00:23:08,000
+in a fair amount of detail beginning with the next lecture
+dans une bonne quantité de détail à partir de la prochaine conférence
+
+00:23:08,000 --> 00:23:12,000
+but and let me indicate that for
+mais permettez-moi et indiquent que pour
+
+00:23:12,000 --> 00:23:15,000
+that kinda processing essentially what happens
+traitement que peu essentiellement ce qui se passe
+
+00:23:15,000 --> 00:23:19,000
+is dead we begin with a continuous-time signal
+est mort, nous commençons avec un signal en temps continu
+
+00:23:19,000 --> 00:23:22,000
+and convert it to a discrete-time signal
+et le convertir en un signal discret dans le temps
+
+00:23:22,000 --> 00:23:26,000
+carry out the discrete-time processing and then
+effectuer le traitement en temps discret et
+
+00:23:26,000 --> 00:23:29,000
+convert back to continuous-time and
+reconvertir à temps continu et
+
+00:23:29,000 --> 00:23:34,000
+the conversion from a continuous-time signal to a discrete-time
+la conversion d'un signal de temps continu à un temps discret
+
+00:23:34,000 --> 00:23:37,000
+signal in fact is done
+signal fait est fait
+
+00:23:37,000 --> 00:23:41,000
+by exploiting sampling specifically
+en exploitant échantillonnage spécifique
+
+00:23:41,000 --> 00:23:44,000
+by sampling the continuous-time signal
+en échantillonnant le signal de temps continu
+
+00:23:44,000 --> 00:23:48,000
+with an impulse train and then
+avec un train d'impulsions et
+
+00:23:48,000 --> 00:23:51,000
+converting the impulse train into
+convertir le train d'impulsions en
+
+00:23:51,000 --> 00:23:56,000
+a sequence in a manner that all talk about in more detail
+une séquence d'une manière qui tous parlent plus en détail
+
+00:23:56,000 --> 00:23:59,000
+next time now in doing that
+la prochaine fois maintenant à le faire
+
+00:23:59,000 --> 00:24:03,000
+of course as you can imagine it's important since we want
+bien sûr, comme vous pouvez l'imaginer, il est important car nous voulons
+
+00:24:03,000 --> 00:24:07,000
+an accurate representation of the original continuous-time signal
+une représentation fidèle du signal original à temps continu
+
+00:24:07,000 --> 00:24:12,000
+to choose the sampling frequency to very carefully avoid aliasing
+de choisir la fréquence d'échantillonnage pour éviter très soigneusement aliasing
+
+00:24:12,000 --> 00:24:15,000
+and so in fact in that context
+et si, en fait, dans ce contexte,
+
+00:24:15,000 --> 00:24:19,000
+and in many other contexts alias saying is something
+et dans de nombreux autres contextes alias dit quelque chose
+
+00:24:19,000 --> 00:24:22,000
+that we're very eager to avoid however
+que nous sommes très désireux d'éviter cependant
+
+00:24:22,000 --> 00:24:25,000
+it's also important to understand that alias saying
+il est aussi important de comprendre que alias dire
+
+00:24:25,000 --> 00:24:30,000
+isn't all bad and there are some very specific contexts in which
+est pas mal du tout et il ya des contextes très spécifiques qui
+
+00:24:30,000 --> 00:24:34,000
+alias saying is very useful and very heavily exploited
+alias dicton est très utile et très fortement exploité
+
+00:24:34,000 --> 00:24:38,000
+one example love
+un exemple d'amour
+
+00:24:38,000 --> 00:24:42,000
+a very useful context valia saying is when
+un contexte très utile valia dit, c'est quand
+
+00:24:42,000 --> 00:24:45,000
+you want to look at things that happen at frequencies
+vous voulez regarder les choses qui se produisent à des fréquences
+
+00:24:45,000 --> 00:24:50,000
+that you can't look at for one reason or another and sampling in a leasing is
+que vous ne pouvez pas regarder pour une raison ou une autre et d'échantillonnage dans un bail est
+
+00:24:50,000 --> 00:24:52,000
+used to map those into lower frequencies
+utilisée pour cartographier les en basses fréquences
+
+00:24:52,000 --> 00:24:57,000
+one very common example of that is the use of the stroboscopic
+un exemple très commun qui est de l'utilisation de l'stroboscopique
+
+00:24:57,000 --> 00:25:01,000
+which was invented by doctor how their chechen
+qui a été inventé par le docteur comment leur tchétchène
+
+00:25:01,000 --> 00:25:06,000
+at MIT and sometime earlier in fact we had
+au MIT et un peu plus tôt, en fait, nous avons eu
+
+00:25:06,000 --> 00:25:11,000
+the opportunity to visit doctor Richard ins laboratory at MIT
+l'occasion de visiter le médecin Richard ins laboratoire au MIT
+
+00:25:11,000 --> 00:25:15,000
+and see some examples of this so I'd like to
+et voir quelques exemples de ce que je voudrais
+
+00:25:15,000 --> 00:25:19,000
+at as a conclusion to this lecture take you
+à en conclusion de cette conférence vous propose
+
+00:25:19,000 --> 00:25:24,000
+on visit to the stroke where and MIT
+en visite à la course où et MIT
+
+00:25:24,000 --> 00:25:28,000
+in the lecture in discussing aliasing we've stressed
+dans la conférence pour discuter aliasing nous avons souligné
+
+00:25:28,000 --> 00:25:33,000
+the fact that in most situations it's something that would like to avoid
+le fait que dans la plupart des situations, il ya quelque chose que vous aimeriez éviter
+
+00:25:33,000 --> 00:25:37,000
+however right now we're at MIT and stroll Valley
+mais maintenant nous sommes au MIT et promenons Valley
+
+00:25:37,000 --> 00:25:41,000
+as it's called on the way to visit the laboratory
+comme on l'appelle sur le chemin pour visiter le laboratoire
+
+00:25:41,000 --> 00:25:45,000
+Mike MIT colleague Professor are alleged
+Mike MIT collègue, le professeur est allégué
+
+00:25:45,000 --> 00:25:49,000
+where in fact a leasing is an everyday occurrence
+où en fait un crédit-bail est un événement quotidien
+
+00:25:49,000 --> 00:25:53,000
+basically the idea is to follow dead
+fondamentalement l'idée est de suivre morts
+
+00:25:53,000 --> 00:25:56,000
+it in fact you wanna make measurements
+en fait, vous voulez faire des mesures
+
+00:25:56,000 --> 00:26:00,000
+at frequencies that for one reason or another
+à des fréquences qui pour une raison ou une autre
+
+00:26:00,000 --> 00:26:05,000
+you can't measure their sampling and consequently aliasing
+vous ne pouvez pas mesurer leur échantillonnage et par conséquent aliasing
+
+00:26:05,000 --> 00:26:10,000
+can be used to bring those frequencies down into a frequency range that you can
+peut être utilisé pour amener ces fréquences vers le bas dans une gamme de fréquences que vous pouvez
+
+00:26:10,000 --> 00:26:12,000
+measure
+mesurer
+
+00:26:12,000 --> 00:26:15,000
+well professor edgerton alias
+ainsi alias professeur de edgerton
+
+00:26:15,000 --> 00:26:19,000
+da kitchen invented the strokes call
+da cuisine inventé les coups appellent
+
+00:26:19,000 --> 00:26:23,000
+for exactly that reason and kinda the idea is the fall
+précisément pour cette raison et un peu l'idée est la chute
+
+00:26:23,000 --> 00:26:28,000
+the I essentially is a low pass filter and so there are things that happen
+le I est essentiellement un filtre passe-bas et si il ya des choses qui se produisent
+
+00:26:28,000 --> 00:26:31,000
+at frequencies boat which
+à des fréquences bateau qui
+
+00:26:31,000 --> 00:26:34,000
+your I contract and by
+votre contrat de I et par
+
+00:26:34,000 --> 00:26:39,000
+sampling with light poles sampling in time
+échantillonnage avec les lampadaires échantillonnage dans le temps
+
+00:26:39,000 --> 00:26:44,000
+what in effect you're able to do is sample in such a way
+ce en effet que vous êtes en mesure de faire est de l'échantillon de manière
+
+00:26:44,000 --> 00:26:47,000
+that higher frequencies get alias
+que les fréquences les plus élevées se alias
+
+00:26:47,000 --> 00:26:51,000
+down to lower frequencies then factor I contract
+vers des fréquences plus basses, puis contrat facteur I
+
+00:26:51,000 --> 00:26:55,000
+so let's take the look inside the where
+prenons donc le regard à l'intérieur du cas
+
+00:26:55,000 --> 00:26:58,000
+and in fact see no aspiration or
+et en fait voir aucune aspiration ou
+
+00:26:58,000 --> 00:27:05,000
+the scroll and some its effects
+le livre, et certains de ses effets
+
+00:27:05,000 --> 00:27:10,000
+will be here introduce you to my mighty colleague I kitchen
+seront ici vous présenter mon collègue puissante cuisine I
+
+00:27:10,000 --> 00:27:14,000
+in also by the way he this is a great place for kids of all ages
+en aussi par la façon dont il s'agit d'un endroit idéal pour les enfants de tous âges
+
+00:27:14,000 --> 00:27:18,000
+and so my daughter just insisted on coming along to
+et si ma fille juste insisté pour venir le long de
+
+00:27:18,000 --> 00:27:21,000
+also helped out stock need you we could begin with you
+également aidé à stock besoin de vous, nous pourrions commencer avec vous
+
+00:27:21,000 --> 00:27:26,000
+just saying a little bit about what the strobe is in with some history is
+vient de le dire un peu plus sur ce que le flash est avec un peu d'histoire est
+
+00:27:26,000 --> 00:27:30,000
+steroids ring resemble an increase in a min ly
+stéroïdes anneau ressemble une augmentation d'un min ly
+
+00:27:30,000 --> 00:27:33,000
+misses them losing on Lampson
+manque de perdre eux sur Lampson
+
+00:27:33,000 --> 00:27:37,000
+prices litter control rate planning on
+prix planification taux de contrôle de la litière sur
+
+00:27:37,000 --> 00:27:41,000
+school is not a good strategy is going to turn and we're going to look at.
+l'école n'est pas une bonne stratégie va tourner et nous allons regarder.
+
+00:27:41,000 --> 00:27:44,000
+motor striving on balance weight
+moteur effort sur le poids de la balance
+
+00:27:44,000 --> 00:27:48,000
+to set up some rhinos lesions in the spring
+de mettre en place certaines lésions rhinocéros au printemps
+
+00:27:48,000 --> 00:27:51,000
+want to know more bring on the throne
+veulent en savoir plus mettre sur le trône
+
+00:27:51,000 --> 00:27:58,000
+by
+
+
+00:27:59,000 --> 00:28:06,000
+by
+
+
+00:28:10,000 --> 00:28:11,000
+you writer and
+vous écrivain et
+
+00:28:11,000 --> 00:28:18,000
+throbs but just in the frequency the way
+palpite, mais seulement dans la fréquence de la manière
+
+00:28:20,000 --> 00:28:25,000
+but corresponds to North influencer little more elusive
+mais correspond à influenceur du Nord peu plus insaisissable
+
+00:28:25,000 --> 00:28:29,000
+for the facts thought maybe we could the turn the stroller
+pour les faits pensais que nous pourrions le tourner la poussette
+
+00:28:29,000 --> 00:28:33,000
+for a minute noon the but let me
+pour un midi de la minute mais laissez-moi
+
+00:28:33,000 --> 00:28:37,000
+point out the by the way there the fact that
+signaler le par le chemin le fait que
+
+00:28:37,000 --> 00:28:41,000
+when looking at this without the strong mind always say essentially
+quand on regarde ce sans l'esprit fort toujours dire essentiellement
+
+00:28:41,000 --> 00:28:45,000
+our frequencies that are I can attract so you can see the motor
+nos fréquences qui sont je peux attirer afin que vous puissiez voir le moteur
+
+00:28:45,000 --> 00:28:47,000
+turning and
+tournant et
+
+00:28:47,000 --> 00:28:51,000
+we can really see other than then with the were we can see the movie the spring
+nous pouvons vraiment voir autre chose que puis avec l'Être, nous pouvons voir le film au printemps
+
+00:28:51,000 --> 00:28:55,000
+and so I get your point is that when we put the strobe on
+et si je suis votre point, c'est que lorsque nous avons mis le flash sur
+
+00:28:55,000 --> 00:28:59,000
+who were essentially sampling this and no
+qui ont été essentiellement d'échantillonnage et ce sans
+
+00:28:59,000 --> 00:29:03,000
+you brought this stand with a frequency that there the
+vous avez apporté ce stand avec une fréquence que l'
+
+00:29:03,000 --> 00:29:06,000
+Riza with the track in fact
+Riza avec la piste, en fait,
+
+00:29:06,000 --> 00:29:09,000
+the I guess if we turn the
+Je suppose que si l'on tourne le
+
+00:29:09,000 --> 00:29:14,000
+incandescent light of loon
+la lumière incandescente de plongeon
+
+00:29:14,000 --> 00:29:17,000
+the able to really bring out
+la mesure de vraiment faire ressortir
+
+00:29:17,000 --> 00:29:22,000
+are the alias frequency so now we're what we're looking at in fact are the
+sont la fréquence d'alias et maintenant nous sommes ce que nous cherchons à en effet sont les
+
+00:29:22,000 --> 00:29:26,000
+the earliest frequencies the street courses moving a lot faster than we see
+les premières fréquences les cours de la rue se déplacent beaucoup plus vite que nous voyons
+
+00:29:26,000 --> 00:29:27,000
+it in their ranks
+dans leurs rangs
+
+00:29:27,000 --> 00:29:30,000
+you know that's going on arena
+vous savez que ça va sur scène
+
+00:29:30,000 --> 00:29:34,000
+30 times second Bruins are
+30 fois deuxième Bruins sont
+
+00:29:34,000 --> 00:29:37,000
+thirties and second occurs through the survivors include
+la trentaine et la deuxième se fait par les survivants comprennent
+
+00:29:37,000 --> 00:29:41,000
+next move Rohingya figure 8a. saying you don't see that
+déplacer prochaine Rohingya chiffre 8a. dire que vous ne voyez pas que
+
+00:29:41,000 --> 00:29:47,000
+yeah friend
+ouais ami
+
+00:29:47,000 --> 00:29:54,000
+well we'll be seeing now is essentially second harmonic that
+bien nous allons voir maintenant est essentiellement harmonique que
+
+00:30:04,000 --> 00:30:08,000
+someone okay
+quelqu'un correct
+
+00:30:08,000 --> 00:30:11,000
+and just do you think you can make this spring dance around a little bit
+et juste pensez-vous que vous pouvez faire cette danse du printemps autour d'un peu
+
+00:30:11,000 --> 00:30:16,000
+find taking this slow frequency soon as all around
+trouver en prenant cette fréquence lente dès que tout autour de
+
+00:30:16,000 --> 00:30:19,000
+okay it's really neat let's turn the lights back on
+bon c'est vraiment bien, passons les lumières de retour sur
+
+00:30:19,000 --> 00:30:23,000
+weekend this is Charles president with anything 3 I'm
+week-end c'est le président Charles de rien 3 je suis
+
+00:30:23,000 --> 00:30:28,000
+yeah has the third what's interesting now if we look at this and
+oui a la troisième qui est intéressant maintenant, si on regarde cela et
+
+00:30:28,000 --> 00:30:31,000
+seeking a fifth just rolled off again
+la recherche d'un cinquième seulement est sorti à nouveau
+
+00:30:31,000 --> 00:30:37,000
+earth okay noticed just think we look at the spring man although we can see is a
+terre bien remarqué juste pensons que nous sommes à l'homme de printemps, bien que nous pouvons voir est un
+
+00:30:37,000 --> 00:30:37,000
+blur
+tache
+
+00:30:37,000 --> 00:30:41,000
+and really can't see because you're right here tracking
+et peut vraiment pas voir parce que vous êtes ici, suivi
+
+00:30:41,000 --> 00:30:46,000
+can see things happening station but he said
+peut voir les choses passe la station mais il a dit
+
+00:30:46,000 --> 00:30:49,000
+by the way this was written demonstrated at the World's Fair
+par la façon dont cela a été écrit démontré à l'Exposition universelle
+
+00:30:49,000 --> 00:30:52,000
+the thickness
+l'épaisseur
+
+00:30:52,000 --> 00:30:55,000
+world because glasses
+monde car les lunettes
+
+00:30:55,000 --> 00:30:59,000
+for their Wow a loses all dressed up
+pour leur Wow perd un tout habillé
+
+00:30:59,000 --> 00:31:02,000
+element using
+élément à l'aide
+
+00:31:02,000 --> 00:31:06,000
+break bring bruises
+briser apporter des contusions
+
+00:31:06,000 --> 00:31:10,000
+fine but failed I stick with the miners stresses
+bien mais pas je m'en tiens à des contraintes de mineurs
+
+00:31:10,000 --> 00:31:14,000
+runners or have break
+coureurs ou avoir pause
+
+00:31:14,000 --> 00:31:17,000
+bum they work on automobiles
+bum ils travaillent sur les voitures
+
+00:31:17,000 --> 00:31:24,000
+their own thoughts on the vibrate but let's
+leurs propres réflexions sur la vibration mais nous allons
+
+00:31:25,000 --> 00:31:28,000
+earth buy levitra run this for a lot more than half an hour or a liberal
+terre buy levitra exécuter ce pour beaucoup plus d'une demi-heure ou une libérale
+
+00:31:28,000 --> 00:31:33,000
+name is continues
+nom est continue
+
+00:31:33,000 --> 00:31:34,000
+terms
+termes
+
+00:31:34,000 --> 00:31:38,000
+thing me maybe we can look at the
+chose m'a peut-être nous pouvons regarder l'
+
+00:31:38,000 --> 00:31:41,000
+a couple other things have a about the fam
+quelques autres ont un sur la fam
+
+00:31:41,000 --> 00:31:45,000
+brand the classic buzzed
+La marque Buzzed classique
+
+00:31:45,000 --> 00:31:49,000
+that's a good idea makes too much noise
+c'est une bonne idée fait trop de bruit
+
+00:31:49,000 --> 00:31:54,000
+ok is to remove that over here that's just an ordinary like the fam
+ok est à retirer que ici c'est juste un ordinaire comme la fam
+
+00:31:54,000 --> 00:31:58,000
+has a mark on one plate surgeon
+a une marque sur un chirurgien de la plaque
+
+00:31:58,000 --> 00:32:05,000
+identify you can get up to speed
+identifiez vous pouvez obtenir jusqu'à la vitesse
+
+00:32:09,000 --> 00:32:12,000
+know that this looks like a phantom was also demonstrated in the
+sais que cela ressemble à un fantôme a également été démontré dans le
+
+00:32:12,000 --> 00:32:15,000
+world's fair few years ago yeah kinda been
+Il ya quelques années, juste du monde ouais un peu été
+
+00:32:15,000 --> 00:32:19,000
+been does a movie
+été fait un film
+
+00:32:19,000 --> 00:32:23,000
+quicken awake practicing in to and it was very fan
+accélérer pratiquant éveillé pour et il était très fan
+
+00:32:23,000 --> 00:32:27,000
+well one like it happened if the reform do
+bien un comme c'est arrivé si la réforme do
+
+00:32:27,000 --> 00:32:32,000
+MGM and the Peters B Smith
+MGM et Peters B Smith
+
+00:32:32,000 --> 00:32:35,000
+wanted he said he won miss royale up
+voulait-il dit, il a remporté Miss royale jusqu'à
+
+00:32:35,000 --> 00:32:40,000
+custard pie into it not don't know I'm a serious scientists for
+tarte à la crème en elle ne sait pas que je ne suis un sérieux scientifiques pour
+
+00:32:40,000 --> 00:32:44,000
+sizes compromise on a I
+tailles compromis sur un I
+
+00:32:44,000 --> 00:32:48,000
+so we dropped an egg into it in the news UCI's B-movie
+si nous avons laissé tomber un oeuf dans dans les nouvelles B-Movie de l'UCI
+
+00:32:48,000 --> 00:32:53,000
+dropping 0 not known struggle there there was with the
+tomber 0 lutte pas connu il y avait avec le
+
+00:32:53,000 --> 00:32:56,000
+high-speed great remove yeah it's okay so
+haute vitesse grand supprimer ouais c'est bien ainsi
+
+00:32:56,000 --> 00:33:00,000
+so again I guess without this true when we look at its
+à nouveau je suppose sans ce vrai quand on regarde son
+
+00:33:00,000 --> 00:33:04,000
+what we're looking at our frequencies it are
+ce que nous cherchons à nos fréquences, il est
+
+00:33:04,000 --> 00:33:08,000
+much higher than the I think following now with the stroke blindness
+beaucoup plus élevé que la je pense que suit maintenant avec l'aveuglement de course
+
+00:33:08,000 --> 00:33:12,000
+you can see both the alias frequency and you can also see the original frequency
+vous pouvez voir à la fois la fréquence d'alias et vous pouvez également voir la fréquence d'origine
+
+00:33:12,000 --> 00:33:13,000
+because we have the
+parce que nous avons la
+
+00:33:13,000 --> 00:33:16,000
+investment line sweats I'm let's
+sueurs ligne d'investissement, je suis nous allons
+
+00:33:16,000 --> 00:33:19,000
+turned down the the background lighting and
+refusé le rétro-éclairage et
+
+00:33:19,000 --> 00:33:23,000
+stand then really all that were able to see or the aliasing
+tenir alors vraiment tous ceux qui étaient en mesure de voir ou l'aliasing
+
+00:33:23,000 --> 00:33:26,000
+frequencies stand I guess
+fréquences se je suppose
+
+00:33:26,000 --> 00:33:29,000
+I guess when we see more than one market means that the
+Je suppose que quand nous voyons signifie plus d'un marché que la
+
+00:33:29,000 --> 00:33:32,000
+stay were actually running its and
+séjour ont été effectivement sa marche et
+
+00:33:32,000 --> 00:33:36,000
+or guns is more and more things the the using
+ou des armes à feu est de plus en plus de choses l'aide de la
+
+00:33:36,000 --> 00:33:41,000
+lower radiation steroids because the plans aren't exactly the same
+stéroïdes de rayonnement plus faibles parce que les plans ne sont pas exactement de la même
+
+00:33:41,000 --> 00:33:45,000
+actually this gives me a chance illustrating other important correlated
+effectivement cela me donne une chance illustrant autre importante corrélation
+
+00:33:45,000 --> 00:33:46,000
+to the lecture
+à la conférence
+
+00:33:46,000 --> 00:33:49,000
+I'll that they could bring them to frequency
+Je vais qu'elles pourraient les amener à la fréquence
+
+00:33:49,000 --> 00:33:56,000
+so that re only get one more scorched
+de sorte que re obtenez seulement un plus brûlée
+
+00:33:56,000 --> 00:33:59,000
+missus begins to move this is just one way there now
+bourgeoise commence à se déplacer ce n'est qu'une façon il maintenant
+
+00:33:59,000 --> 00:34:04,000
+okay so so the way we have now we've essentially alias the fan speed and so
+Bon alors si la façon dont nous avons maintenant, nous avons essentiellement un alias à la vitesse du ventilateur et donc
+
+00:34:04,000 --> 00:34:05,000
+the
+la
+
+00:34:05,000 --> 00:34:09,000
+is just a little higher than the seeds and now
+est un peu plus élevé que les graines et maintenant
+
+00:34:09,000 --> 00:34:14,000
+on right at the sea and now if I could and just a little further in fact that
+sur la droite à la mer et maintenant si je le pouvais et juste un peu plus loin en fait que
+
+00:34:14,000 --> 00:34:17,000
+looks like the fans turning back hurts
+ressemble les fans tourner mal au dos
+
+00:34:17,000 --> 00:34:21,000
+and if you think that this into context the leasing
+et si vous pensez que cela dans le contexte de la location
+
+00:34:21,000 --> 00:34:25,000
+its it's like this to impulses in the frequency domain
+sa c'est comme ça à des impulsions dans le domaine fréquentiel
+
+00:34:25,000 --> 00:34:30,000
+crossover in with you get an effective you and was mathematically
+croisé avec vous obtenez un vous efficace et était mathématiquement
+
+00:34:30,000 --> 00:34:33,000
+you get a phase reversed in
+vous obtenez une phase inversée en
+
+00:34:33,000 --> 00:34:37,000
+no wasn't so I E I first understood have a leasing
+aucune n'était pas si IEI premier compris ont un bail
+
+00:34:37,000 --> 00:34:42,000
+with Doc understood why stand with the western movies
+avec Doc compris pourquoi tenir avec les films occidentaux
+
+00:34:42,000 --> 00:34:46,000
+a everyone's Ryan see the wagon wheels through November go backwards train and
+Ryan a tout le monde voit les roues de wagons à Novembre revenir en arrière et former
+
+00:34:46,000 --> 00:34:47,000
+there's there the
+il ya là l'
+
+00:34:47,000 --> 00:34:51,000
+wagon wheels in western movie going backwards yes stressed
+roues de charrette en western reculons oui souligné
+
+00:34:51,000 --> 00:34:56,000
+and just see what you see is %um too much weaker on straight up so you get to
+et il suffit de voir ce que vous voyez est um% trop faible sur vers le haut de sorte que vous obtenez à
+
+00:34:56,000 --> 00:34:59,000
+just see greater frequency of so that's
+juste voir une plus grande fréquence de sorte que c'est
+
+00:34:59,000 --> 00:35:03,000
+you get to marched
+vous arrivez à marcha
+
+00:35:03,000 --> 00:35:08,000
+u-turn and Justin's governor and you think tourist
+demi-tour et le gouverneur de Justin et vous pensez touristique
+
+00:35:08,000 --> 00:35:11,000
+you impressed
+vous impressionné
+
+00:35:11,000 --> 00:35:14,000
+schoolroom its regular spirits
+Schoolroom ses esprits réguliers
+
+00:35:14,000 --> 00:35:18,000
+all rights pictures in your honor older adults
+toutes les images de l'homme en votre honneur des personnes âgées
+
+00:35:18,000 --> 00:35:23,000
+and I rising price revolution I guess another thing is that this demonstrates
+et je hausse révolution des prix je suppose autre chose est que cela démontre
+
+00:35:23,000 --> 00:35:24,000
+something that is
+quelque chose qui est
+
+00:35:24,000 --> 00:35:29,000
+and I heard a long time ago which is its should never use a power so with the
+et j'ai entendu il ya longtemps qui est sa ne devrait jamais utiliser un pouvoir si le
+
+00:35:29,000 --> 00:35:34,000
+fluorescent lights the is arrest like is a little bit of a stroke affecting
+lampes fluorescentes est le arrestation comme est un peu d'un accident vasculaire cérébral qui affecte
+
+00:35:34,000 --> 00:35:38,000
+you could actually can misuse of that standing still make mistakes a
+vous pouvez réellement pouvez abuser de cette position encore faire des erreurs une
+
+00:35:38,000 --> 00:35:42,000
+strength that you think everything we are doing is a good friend of
+force que vous pensez tout ce que nous faisons est un bon ami de
+
+00:35:42,000 --> 00:35:46,000
+no I don't think I want to try it out how are you this do you think that's
+non je ne pense pas que je veux essayer comment allez-vous ce que vous pensez que c'est
+
+00:35:46,000 --> 00:35:49,000
+any sores and wounds she knows it's going
+des plaies et des blessures, elle sait qu'elle va
+
+00:35:49,000 --> 00:35:52,000
+sproule undergoing closest friends okay let's
+sproule subissant les plus proches amis de location bon
+
+00:35:52,000 --> 00:35:56,000
+I'm actually we turn the lights back on again what's
+Je suis en train de nous allumer les lumières de nouveau sous tension ce qui est
+
+00:35:56,000 --> 00:36:00,000
+their latest see once again is that we can see both the alias frequencies going
+leur dernière voir une fois de plus, c'est que nous pouvons voir à la fois les fréquences allant alias
+
+00:36:00,000 --> 00:36:01,000
+to you that's
+vous que c'est
+
+00:36:01,000 --> 00:36:05,000
+and we we can also see the higher frequencies because the
+et nous, nous pouvons également voir les fréquences plus élevées parce que le
+
+00:36:05,000 --> 00:36:09,000
+incandescent lighting its okay maybe we can be no
+éclairage à incandescence son accord peut-être nous ne peut être
+
+00:36:09,000 --> 00:36:12,000
+is parents take a look at some other
+est les parents prennent un coup d'oeil à un autre
+
+00:36:12,000 --> 00:36:16,000
+on things and when I guess I'm curious about is the distance you have over
+sur les choses et quand je pense que je suis curieux de savoir est la distance que vous avez sur
+
+00:36:16,000 --> 00:36:17,000
+their kids
+leurs enfants
+
+00:36:17,000 --> 00:36:21,000
+doc maybe you can tell us what we have here
+doc peut-être vous pouvez nous dire ce que nous avons ici
+
+00:36:21,000 --> 00:36:24,000
+churros the this to show
+churros la présente à montrer
+
+00:36:24,000 --> 00:36:28,000
+how you can get motion pictures on a Susan still pictures
+comment vous pouvez obtenir des images animées sur un Susan images fixes
+
+00:36:28,000 --> 00:36:32,000
+the circle is repeated 12 times
+le cercle est répété 12 fois
+
+00:36:32,000 --> 00:36:35,000
+why does outer part over mmm on this site
+Pourquoi partie extérieure sur mmm sur ce site
+
+00:36:35,000 --> 00:36:40,000
+in part on the other quiet place one time for a revolution on this
+en partie sur l'autre endroit tranquille une fois pour une révolution sur ce
+
+00:36:40,000 --> 00:36:44,000
+you see the exactly as it is if I skip one picture each time
+vous voyez la exactement comme il est si je saute une image à chaque fois
+
+00:36:44,000 --> 00:36:47,000
+when you get there relative motions
+quand vous arrivez là-bas mouvements relatifs
+
+00:36:47,000 --> 00:36:51,000
+mall the object is to show the ball rotating
+centre commercial l'objet est de montrer la balle en rotation
+
+00:36:51,000 --> 00:36:55,000
+is this where that one depending on mood straw was going faster or slower
+est ce que l'on où en fonction de l'humeur de la paille allait plus vite ou plus lentement
+
+00:36:55,000 --> 00:37:00,000
+and the other Uzan this way motion pictures went well
+et les autres de cette façon Uzan images animées se sont bien
+
+00:37:00,000 --> 00:37:04,000
+100 years school long for photography drew pictures of people
+100 années l'école longtemps pour la photographie a attiré des photos de personnes
+
+00:37:04,000 --> 00:37:09,000
+different animated features like the run yes great
+différents films d'animation comme le terme oui grand
+
+00:37:09,000 --> 00:37:16,000
+is actually the title kinda busy aliasing can be fun conservatism
+est en fait le titre aliasing un peu occupé peut être conservatisme plaisir
+
+00:37:16,000 --> 00:37:19,000
+sterling if the speeds
+sterling si les vitesses
+
+00:37:19,000 --> 00:37:23,000
+or away if you get a lot of different things sorted veterans
+ou à l'extérieur si vous obtenez beaucoup de choses différentes triés anciens combattants
+
+00:37:23,000 --> 00:37:26,000
+go through ruin currently reaches speeds
+passer par la ruine atteint actuellement des vitesses
+
+00:37:26,000 --> 00:37:31,000
+reserve a room in the rules it sounds
+réserver une chambre dans les règles, il les sons
+
+00:37:31,000 --> 00:37:35,000
+ok and the background blur basically the high frequencies the I can't follow
+ok et le flou d'arrière-plan essentiellement les hautes fréquences la je ne peux pas suivre
+
+00:37:35,000 --> 00:37:39,000
+and and then we're going to propose and then again we can see
+et puis nous allons proposer, puis de nouveau, nous pouvons voir
+
+00:37:39,000 --> 00:37:43,000
+frequencies it really is down the nets
+fréquences, il est vraiment les filets
+
+00:37:43,000 --> 00:37:47,000
+rookie I ends right now I am one place for revolution sleep
+Je recrue finit en ce moment je suis un endroit pour la révolution sommeil
+
+00:37:47,000 --> 00:37:50,000
+see the corner the move is consuming records
+voir le coin le mouvement consomme dossiers
+
+00:37:50,000 --> 00:37:54,000
+exactly the reasons there are an increasing frequency
+exactement les raisons, il ya une augmentation de la fréquence
+
+00:37:54,000 --> 00:38:00,000
+of risk if 100 one server or early get the illusion that diamonds
+de risque si un serveur 100 ou au début de faire l'illusion que les diamants
+
+00:38:00,000 --> 00:38:04,000
+room in fact let's a let's really enhanced solution
+chambre en fait c'est let une solution, nous allons vraiment renforcée
+
+00:38:04,000 --> 00:38:09,000
+Western the incandescent lights off
+Western incandescence s'éteint
+
+00:38:09,000 --> 00:38:12,000
+and now now are we seeing really you're the alias frequencies
+et maintenant maintenant voyons-nous vraiment que vous êtes les fréquences d'alias
+
+00:38:12,000 --> 00:38:17,000
+or or do you think this just adds
+ou ou pensez-vous que cela ajoute juste
+
+00:38:17,000 --> 00:38:22,000
+looks like reading recognized through was doing rejoining licensing
+ressemble à la lecture reconnue par l'octroi de licences a été fait rattachement
+
+00:38:22,000 --> 00:38:25,000
+of is the same rules now lower watching is something also
+de sont les mêmes règles observons inférieure est aussi quelque chose
+
+00:38:25,000 --> 00:38:29,000
+might point out of a for the
+pourrait signaler un pour l'
+
+00:38:29,000 --> 00:38:32,000
+I'm the lecture for the course is that actually there
+Je suis la conférence pour le cours est que effectivement il
+
+00:38:32,000 --> 00:38:35,000
+there really are two sampling frequencies receiving one is this road
+il ya vraiment deux fréquences d'échantillonnage recevant un est cette route
+
+00:38:35,000 --> 00:38:36,000
+and
+et
+
+00:38:36,000 --> 00:38:40,000
+which is the stroke that you're running the other is the inherent
+qui est la course que vous utilisez l'autre est le inhérente
+
+00:38:40,000 --> 00:38:44,000
+Creamery for the TV that's running at 30 frames a second
+Creamery pour la télévision qui est en cours d'exécution à 30 images par seconde
+
+00:38:44,000 --> 00:38:47,000
+and that's won the reasons by the way in dead people watching this
+et qui a remporté les raisons par la façon morts nous regardent
+
+00:38:47,000 --> 00:38:51,000
+on the video worst are in fact seeing
+sur la vidéo pire sont en fait voir
+
+00:38:51,000 --> 00:38:55,000
+Flickr or a feeding or modulation between
+Flickr ou une alimentation ou modulation entre
+
+00:38:55,000 --> 00:39:00,000
+the two on synchronize frame rates runner grievances
+les deux sur des taux de trame de synchronisent un coureur griefs
+
+00:39:00,000 --> 00:39:06,000
+grow up so we get to of to a room credits
+grandissent si nous arrivons à des crédits à une chambre
+
+00:39:06,000 --> 00:39:09,000
+of to
+de à
+
+00:39:09,000 --> 00:39:16,000
+roaming two runs on each other of
+itinérance deux points sur l'autre de
+
+00:39:17,000 --> 00:39:19,000
+of
+
+
+00:39:19,000 --> 00:39:22,000
+you know it senator Reid's learning this
+vous le savez sénateur Reid apprentissage de cette
+
+00:39:22,000 --> 00:39:26,000
+soon living room when all your friends
+vivre bientôt manger quand tous vos amis
+
+00:39:26,000 --> 00:39:30,000
+I think would be a good terrific homered problem getting video Kors
+Je pense que ce serait une bonne problème homered formidable obtenir vidéo Kors
+
+00:39:30,000 --> 00:39:33,000
+they have them all sit down and analyze all the frequencies that they're seeing
+ils ont tous asseoir et d'analyser toutes les fréquences que qu'ils voient
+
+00:39:33,000 --> 00:39:36,000
+and what they're being alias through the evening event
+et ce qu'ils étant alias par la soirée
+
+00:39:36,000 --> 00:39:39,000
+it's a good view run the teacher I love you
+c'est une bonne vue exécuter le professeur Je t'aime
+
+00:39:39,000 --> 00:39:42,000
+who is great yeah remember these dudes list
+qui est grand ouais rappeler ces liste de mecs
+
+00:39:42,000 --> 00:39:45,000
+I think that a chase a few people away from the courses good
+Je pense que d'une poursuite de quelques personnes à l'écart des cours de bonnes
+
+00:39:45,000 --> 00:39:49,000
+cracks and you get you get involved in these offerings
+fissures et vous vous vous êtes impliqué dans ces offres
+
+00:39:49,000 --> 00:39:54,000
+rule ruler and what you can do for a KMS roots
+exclure la règle et ce que vous pouvez faire pour un racines KMS
+
+00:39:54,000 --> 00:39:57,000
+let's bring you the incandescent lights back again
+nous allons vous apporter les lampes à incandescence de retour
+
+00:39:57,000 --> 00:40:01,000
+just to remind everybody that in back row this or
+juste pour rappeler à tous que la ligne de retour cette ou
+
+00:40:01,000 --> 00:40:04,000
+some some frequencies that are a lot higher than the ones that
+certaines des fréquences qui sont beaucoup plus élevés que ceux que
+
+00:40:04,000 --> 00:40:07,000
+we begin to get the impression that we're watching just the
+nous commençons à avoir l'impression que nous observons simplement la
+
+00:40:07,000 --> 00:40:11,000
+motor running Frances Bean pattern on
+moteur en marche modèle Frances Bean sur
+
+00:40:11,000 --> 00:40:15,000
+long Dhaka have to
+longue Dhaka doivent
+
+00:40:15,000 --> 00:40:18,000
+I have to say that there are many people I know they have as much fun in the work
+Je dois dire qu'il ya beaucoup de gens que je connais, ils ont autant de plaisir dans le travail
+
+00:40:18,000 --> 00:40:19,000
+as you do
+comme vous le faites
+
+00:40:19,000 --> 00:40:23,000
+home like a man arm quote would but I'd like to
+maison comme une citation de bras de l'homme serait, mais j'aimerais
+
+00:40:23,000 --> 00:40:27,000
+do now baby is take a look at one last experiment sure did
+faire maintenant bébé est de jeter un oeil à une dernière expérience vous a fait
+
+00:40:27,000 --> 00:40:31,000
+and what I'd like to do is a.m. is go take a look at the
+et ce que je voudrais faire est que am aller jeter un oeil à la
+
+00:40:31,000 --> 00:40:34,000
+I guess what sometimes is called the home
+Je suppose que ce que l'on appelle parfois la maison
+
+00:40:34,000 --> 00:40:38,000
+well not the water graphics for men with thin air the minute dole pillar
+bien pas les graphismes de l'eau pour les hommes avec de l'air mince la minute dole pilier
+
+00:40:38,000 --> 00:40:41,000
+hydraulic everything that's the 1i was thinking and let's take a look over
+tout hydraulique qui est la 1i pensait et nous allons jeter un coup d'oeil sur
+
+00:40:41,000 --> 00:40:42,000
+there
+là
+
+00:40:42,000 --> 00:40:49,000
+okay one just in this Go internal war so
+okay seulement dans cette guerre interne afin Go
+
+00:40:49,000 --> 00:40:52,000
+your doc this is the what did you got DP
+votre doc c'est la qu'est-ce que vous avez DP
+
+00:40:52,000 --> 00:40:56,000
+HHM bird double peddler hydraulic
+HHM oiseau à double colporteur hydraulique
+
+00:40:56,000 --> 00:41:00,000
+happening machine Gary okay then it's a.m. so please
+passe la machine Gary bon alors il est am donc s'il vous plaît
+
+00:41:00,000 --> 00:41:03,000
+it looks like continues dream up it is not its
+il ressemble continue rêve jusqu'à ce n'est pas son
+
+00:41:03,000 --> 00:41:08,000
+pump over there something sixty post second so those owners
+Pomper-il quelque chose après soixante secondes de sorte que ces propriétaires
+
+00:41:08,000 --> 00:41:11,000
+coming out in spurts %uh so actually again it's
+sortir dans les jaillissements% euh donc en fait encore, il est
+
+00:41:11,000 --> 00:41:14,000
+it's the the sixty boss is the second year I can follow
+c'est le patron de la soixante C'est la deuxième année que je peux suivre
+
+00:41:14,000 --> 00:41:18,000
+your eyes so is exactly basically looks like a blur
+vos yeux si est exactement ressemble fondamentalement à un flou
+
+00:41:18,000 --> 00:41:22,000
+ruseler it is a blur writers you learn output stroll on
+RUSELER c'est un flou écrivains que vous apprenez sortie promenade sur
+
+00:41:22,000 --> 00:41:28,000
+okay grace start so again
+grâce bien démarrer à nouveau
+
+00:41:28,000 --> 00:41:32,000
+I guess we have this a essentially alias then in
+Je crois que nous avons ce un alias essentiellement puis dans
+
+00:41:32,000 --> 00:41:36,000
+and again with the incandescent light you can see both sky high frequency
+et encore avec la lumière incandescente, vous pouvez voir à la fois le ciel à haute fréquence
+
+00:41:36,000 --> 00:41:40,000
+and the alias frequency its and
+et les sa Frequency alias et
+
+00:41:40,000 --> 00:41:44,000
+but see I guess that's with the frequency close to the sea and we can
+mais vois, je suppose que c'est la fréquence à proximité de la mer et nous pouvons
+
+00:41:44,000 --> 00:41:49,000
+adjusted so that is stop stop bothering me going to go out and then we can
+est ajustée de sorte que STOP STOP me tracasse va sortir et alors nous pouvons
+
+00:41:49,000 --> 00:41:50,000
+actually make it go up
+effectivement faire remonter
+
+00:41:50,000 --> 00:41:53,000
+scored anybody who is this South
+personne qui a reçu ce Sud
+
+00:41:53,000 --> 00:41:58,000
+yeah effect movie have just just again due to stress this point to the
+ouais film effet ont juste juste de nouveau à cause du stress ce point à l'
+
+00:41:58,000 --> 00:42:02,000
+class the the kind of the idea here the face reversal of course
+classe le type de l'idée ici l'inversion de visage de cours
+
+00:42:02,000 --> 00:42:05,000
+you can see it in the time domain Chynoweth you just think about when the
+vous pouvez le voir dans le domaine temporel Chynoweth vous pensez juste quand la
+
+00:42:05,000 --> 00:42:06,000
+flashes of light
+des éclairs de lumière
+
+00:42:06,000 --> 00:42:10,000
+come but if you think I love kind of these
+viens, mais si vous pensez que je t'aime genre de ces
+
+00:42:10,000 --> 00:42:14,000
+impulses that we have in the frequency domain
+impulsions que nous avons dans le domaine fréquentiel
+
+00:42:14,000 --> 00:42:18,000
+and we're aliasing as we change the sampling frequency what happens is that
+et nous aliasing que nous changeons la fréquence d'échantillonnage ce qui se passe, c'est que
+
+00:42:18,000 --> 00:42:20,000
+these impulses crossover
+Ces impulsions croisé
+
+00:42:20,000 --> 00:42:24,000
+and what that means is that we get a phase reversal the pending
+et ce que cela signifie est que nous obtenons une inversion de phase laissées en suspens
+
+00:42:24,000 --> 00:42:28,000
+on which faces are associated with
+sur lequel les faces sont associés à
+
+00:42:28,000 --> 00:42:32,000
+which side up the sea so that's kind of the idea the phase reversal
+de quel côté la mer si c'est le genre de l'idée l'inversion de phase
+
+00:42:32,000 --> 00:42:35,000
+okay let's the let's turn the
+C'est bien la let passons la
+
+00:42:35,000 --> 00:42:39,000
+against because it is important thing in between those who got
+contre, car il est important entre ceux qui ont obtenu
+
+00:42:39,000 --> 00:42:42,000
+yeah let's let's turn the incandescent light of first and
+oui nous allons passons la lumière incandescente de la première et
+
+00:42:42,000 --> 00:42:46,000
+think one thing your so 103 know through this thing you think you can do to get
+pense une chose si votre 103 connaissent à travers ce que vous pensez que vous pouvez faire pour obtenir
+
+00:42:46,000 --> 00:42:49,000
+on the other side you're on hand so we can see with
+de l'autre côté vous êtes à portée de main afin que nous puissions voir avec
+
+00:42:49,000 --> 00:42:54,000
+when for the UN intervening sleuths
+quand à l'ONU d'intervenir détectives
+
+00:42:54,000 --> 00:42:58,000
+water there all the time well on a nosedive it seems to me if we can't we
+l'eau tout le temps bien sur un plongeon, il me semble que si nous ne pouvons pas nous
+
+00:42:58,000 --> 00:42:59,000
+just the justices
+seulement les juges
+
+00:42:59,000 --> 00:43:04,000
+the that's just go through to next year staff the dots can do it just seeing how
+la c'est juste passer par le personnel de l'année prochaine les points peuvent faire juste voir comment
+
+00:43:04,000 --> 00:43:06,000
+come you think your finger in the air
+venez vous pensez que votre doigt en l'air
+
+00:43:06,000 --> 00:43:10,000
+fun to try once more its
+amusant d'essayer une fois de plus son
+
+00:43:10,000 --> 00:43:14,000
+I get snyder et that's one thing we can do this
+Je reçois Snyder et c'est une chose que nous pouvons faire
+
+00:43:14,000 --> 00:43:17,000
+well as bring the lights back up and its
+ainsi que mettre les feux arrière et son
+
+00:43:17,000 --> 00:43:22,000
+again just to go stress the point scary RTC
+encore juste pour aller souligner le fait effrayant RTC
+
+00:43:22,000 --> 00:43:26,000
+there we are at a frequency that it's just a little above the sea
+nous sommes là à une fréquence que c'est juste un peu au-dessus de la mer
+
+00:43:26,000 --> 00:43:31,000
+and we can go back there and in the sea and we can actually get a phase reversal
+et nous pouvons y retourner et dans la mer et nous pouvons obtenir une inversion de phase
+
+00:43:31,000 --> 00:43:35,000
+and I guess if we do this long enough we get at the at the whole ocean and put it
+et je suppose que si nous faisons cela assez longtemps que nous obtenons à la à tout l'océan et le mettre
+
+00:43:35,000 --> 00:43:36,000
+back in
+de retour en
+
+00:43:36,000 --> 00:43:39,000
+we're ever comes from is there in cars in newsrooms gonna run is not running
+nous vient jamais à partir de là dans les voitures dans les rédactions Hors de course ne fonctionne pas
+
+00:43:39,000 --> 00:43:43,000
+too long by the Rev trailer get here yet to be careful as well as the Moody Blues
+trop longtemps par la remorque Rev obtenir ici encore faire attention ainsi que les Moody Blues
+
+00:43:43,000 --> 00:43:44,000
+V
+
+
+00:43:44,000 --> 00:43:49,000
+surface well I don't know about them but I guess I believe you back its
+surface bien je ne sais pas pour eux, mais je suppose que je vous crois dos son
+
+00:43:49,000 --> 00:43:52,000
+up a little more pressure on three gods monarchy
+un peu plus de pression sur trois dieux monarchie
+
+00:43:52,000 --> 00:43:55,000
+Adams girlfriends or service teams
+Adams amies ou des équipes de services
+
+00:43:55,000 --> 00:44:01,000
+going things together Ste
+aller les choses ensemble Ste
+
+00:44:01,000 --> 00:44:05,000
+we have these machines are all over the place lot of fun
+nous avons ces machines sont partout beaucoup de plaisir
+
+00:44:05,000 --> 00:44:08,000
+but that this this is really terrific I i think that
+mais que ce c'est vraiment formidable je je pense que
+
+00:44:08,000 --> 00:44:12,000
+the this whole idea of the
+toute cette idée de la
+
+00:44:12,000 --> 00:44:15,000
+and abusing aliens saying in stroz and
+et abusant étrangers en disant Stroz et
+
+00:44:15,000 --> 00:44:19,000
+the kinds of things that did you do with the murder just fantastic in that we
+le genre de choses que vous avez faites avec le assassiner tout simplement fantastique en ce que nous
+
+00:44:19,000 --> 00:44:21,000
+really appreciate the chance to
+vraiment apprécier la chance de
+
+00:44:21,000 --> 00:44:25,000
+come in here and see the demonstration Rose Bowl game ruth's
+venir ici et voir la démonstration jeu Ruth Rose Bowl
+
+00:44:25,000 --> 00:44:28,000
+hope you will use it for years the bar over many years to come
+j'espère que vous allez l'utiliser pendant des années la barre pendant de nombreuses années à venir
+
+00:44:28,000 --> 00:44:32,000
+so is I emphasized that the beginning
+si c'est j'ai souligné que le début
+
+00:44:32,000 --> 00:44:36,000
+in what situations aliasing can in fact be very useful
+dans quelles situations aliasing peuvent en effet être très utile
+
+00:44:36,000 --> 00:44:40,000
+also with this demonstrates is that particularly when you have a colleague
+également avec cette montre, c'est que en particulier lorsque vous avez un collègue
+
+00:44:40,000 --> 00:44:42,000
+like da kitchen
+comme d'une cuisine
+
+00:44:42,000 --> 00:44:46,000
+a leasing and for that matter science in general can be an awful lot of fun
+un crédit-bail et d'ailleurs la science en général peuvent être énormément de plaisir
+
+00:44:46,000 --> 00:44:53,000
+by gonna thanks a lot that again and thank you just the name
+par gonna merci beaucoup que de nouveau et je vous remercie juste le nom
+
+00:44:54,000 --> 00:44:59,000
+well I have to say that that visit was an awful lot of fun for me and
+bien je dois dire que cette visite avait énormément de plaisir pour moi et
+
+00:44:59,000 --> 00:45:04,000
+for Justin in fact to for the whole camera crew that was
+Justin en fait pour l'ensemble de l'équipage de l'appareil qui a été
+
+00:45:04,000 --> 00:45:09,000
+there and hopefully you all have used at some point will also have a chance to
+là et j'espère que vous avez tous utilisé à un moment donné auront également la chance de
+
+00:45:09,000 --> 00:45:13,000
+visited stroll Valley well
+promenade visité la vallée bien
+
+00:45:13,000 --> 00:45:16,000
+hopefully what we've gone through today gives you
+nous espérons ce que nous avons vécu aujourd'hui vous donne
+
+00:45:16,000 --> 00:45:20,000
+a good feeling for the concepts love sampling an alias saying
+un bon sentiment pour les concepts amour échantillonner un alias dire
+
+00:45:20,000 --> 00:45:25,000
+and both why it might be useful and why we might want to avoid
+et à la fois pourquoi il peut être utile et pourquoi nous pourrions vouloir éviter
+
+00:45:25,000 --> 00:45:29,000
+in the next lecture will continue on
+dans la prochaine session se poursuivra sur
+
+00:45:29,000 --> 00:45:32,000
+the discussion of sampling any particular
+la discussion de l'échantillonnage tout particulier
+
+00:45:32,000 --> 00:45:35,000
+what all be talking about is the interpretation
+ce que tout parler de l'interprétation
+
+00:45:35,000 --> 00:45:40,000
+love the reconstruction process not in the frequency domain
+aimer le processus de reconstruction ne dans le domaine de fréquence
+
+00:45:40,000 --> 00:45:44,000
+but in a time-domain interpretation specifically associated
+mais dans une interprétation temps-domaine spécifiquement associés
+
+00:45:44,000 --> 00:45:48,000
+with the concept %uh interpolating between the samples
+avec la notion% uh interpolation entre les échantillons
+
+00:45:48,000 --> 00:45:53,000
+well then proceed from there too a discussion as i've alluded to
+eh bien à partir de là aussi une discussion que j'ai fait allusion à
+
+00:45:53,000 --> 00:45:57,000
+in several lectures love what i've referred to as
+dans plusieurs conférences aiment ce que je fais référence comme
+
+00:45:57,000 --> 00:46:00,000
+discrete-time processing of continuous-time signals
+traitement en temps discret des signaux en temps continu
+
+00:46:00,000 --> 00:46:06,000
+very heavily exploiting the concept and issues associated with sample
+très fortement exploitant le concept et les questions associées à l'échantillon
+
+00:46:06,000 --> 00:46:06,000
+thank you
+merci
+

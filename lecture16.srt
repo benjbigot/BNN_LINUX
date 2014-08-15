@@ -1,0 +1,3251 @@
+1
+00:00:00,040 --> 00:00:03,490 
+the following content is provided under
+a Creative Commons license
+
+2
+00:00:03,490 --> 00:00:07,129 
+your support will help MIT
+OpenCourseWare continue to offer
+
+3
+00:00:07,129 --> 00:00:10,580 
+high-quality educational resources for
+free
+
+4
+00:00:10,580 --> 00:00:14,360 
+to make a donation or view additional
+materials from hundreds of them IT
+
+5
+00:00:14,360 --> 00:00:15,030 
+courses
+
+6
+00:00:15,030 --> 00:00:18,110 
+visit MIT OpenCourseWare at 0 CW
+
+7
+00:00:18,110 --> 00:00:25,110 
+that MIT that EDU ha for the
+
+8
+00:00:29,130 --> 00:00:31,500 
+the
+
+9
+00:00:31,500 --> 00:00:38,500 
+the in
+
+10
+00:00:38,790 --> 00:00:45,790 
+the new the we concluded the last
+lecture
+
+11
+00:00:57,580 --> 00:01:01,690 
+with the statement above the sampling
+theorem and just as a quick reminder
+
+12
+00:01:01,690 --> 00:01:05,089 
+the sampling theorem said that
+
+13
+00:01:05,089 --> 00:01:08,270 
+if we have a continuous-time signal
+
+14
+00:01:08,270 --> 00:01:11,700 
+and we have equally spaced samples
+
+15
+00:01:11,700 --> 00:01:17,460 
+all that signal sampled at a sampling
+period which a indicators capital T
+
+16
+00:01:17,460 --> 00:01:21,869 
+and if except he is banned limited
+
+17
+00:01:21,869 --> 00:01:25,550 
+in other words the forty a transformer 0
+
+18
+00:01:25,550 --> 00:01:28,830 
+outside some band where Omega Sapan
+
+19
+00:01:28,830 --> 00:01:32,110 
+is the highest frequency then
+
+20
+00:01:32,110 --> 00:01:37,590 
+under the condition that the sampling
+frequency which is two-part divided by
+
+21
+00:01:37,590 --> 00:01:38,539 
+the period
+
+22
+00:01:38,539 --> 00:01:42,170 
+is greater than twice the highest
+frequency
+
+23
+00:01:42,170 --> 00:01:46,080 
+the original signal is uniquely
+
+24
+00:01:46,080 --> 00:01:50,950 
+recoverable from the set of samples and
+
+25
+00:01:50,950 --> 00:01:54,549 
+the sampling theorem essentially was
+derived by
+
+26
+00:01:54,549 --> 00:01:57,820 
+observing or using the notion that
+
+27
+00:01:57,820 --> 00:02:01,119 
+sampling could be done by multiplication
+
+28
+00:02:01,119 --> 00:02:05,729 
+or modulation with an impulse train and
+the sampling theorem develop
+
+29
+00:02:05,729 --> 00:02:08,860 
+by examining the consequence
+
+30
+00:02:08,860 --> 00:02:13,280 
+love the modulation property in the
+context of the Fourier transform
+
+31
+00:02:13,280 --> 00:02:18,040 
+in particular if we have our signal
+accept T
+
+32
+00:02:18,040 --> 00:02:21,430 
+and it's multiplied by an impulse train
+
+33
+00:02:21,430 --> 00:02:25,560 
+to give us a sampled signal
+
+34
+00:02:25,560 --> 00:02:31,480 
+another impose train whose values or
+areas are samples of the original time
+
+35
+00:02:31,480 --> 00:02:32,170 
+function
+
+36
+00:02:32,170 --> 00:02:36,049 
+as i indicate here then
+
+37
+00:02:36,049 --> 00:02:39,930 
+in fact if we examine this equation or
+equivalently
+
+38
+00:02:39,930 --> 00:02:42,989 
+bringing accept T inside this some
+
+39
+00:02:42,989 --> 00:02:48,500 
+if we examine either if these equations
+in the frequency domain
+
+40
+00:02:48,500 --> 00:02:51,760 
+the four EA transform love
+
+41
+00:02:51,760 --> 00:02:56,520 
+exe PFT is the convolution
+
+42
+00:02:56,520 --> 00:03:01,290 
+above the 40 a transformer the original
+signal and the Fourier transform
+
+43
+00:03:01,290 --> 00:03:05,129 
+up the impulse train now
+
+44
+00:03:05,129 --> 00:03:08,890 
+be imposed strain is a periodic signal
+its Fourier transform
+
+45
+00:03:08,890 --> 00:03:12,870 
+therefore as we talked about with
+Fourier transforms itself an impulse
+
+46
+00:03:12,870 --> 00:03:13,580 
+train
+
+47
+00:03:13,580 --> 00:03:16,700 
+and when we do this convolution n
+
+48
+00:03:16,700 --> 00:03:21,030 
+using the fact that the 48 race for the
+imposed strain
+
+49
+00:03:21,030 --> 00:03:24,280 
+is an impulse train the result
+
+50
+00:03:24,280 --> 00:03:28,090 
+or this convolution then tells us
+
+51
+00:03:28,090 --> 00:03:31,370 
+that the 48 transform love
+
+52
+00:03:31,370 --> 00:03:34,550 
+the sampled signal or the impulse train
+
+53
+00:03:34,550 --> 00:03:38,459 
+which represents the samples is a some
+
+54
+00:03:38,459 --> 00:03:42,319 
+love frequency shifted replications
+
+55
+00:03:42,319 --> 00:03:45,390 
+up the 48 transform of the original
+signal
+
+56
+00:03:45,390 --> 00:03:48,840 
+so mathematically
+
+57
+00:03:48,840 --> 00:03:53,420 
+that's the relationship it essentially
+says that after sampling or modulation
+
+58
+00:03:53,420 --> 00:03:54,879 
+with an impulse train
+
+59
+00:03:54,879 --> 00:03:58,069 
+the resulting spectrum is the original
+spectrum
+
+60
+00:03:58,069 --> 00:04:01,420 
+added to itself shifted by multiples
+
+61
+00:04:01,420 --> 00:04:05,080 
+integer multiples of the sampling
+frequency well
+
+62
+00:04:05,080 --> 00:04:08,569 
+let's see that as we did last time in
+terms of pictures
+
+63
+00:04:08,569 --> 00:04:12,140 
+and again to remind you of the basic
+
+64
+00:04:12,140 --> 00:04:16,269 
+picture involved if we have an original
+signal
+
+65
+00:04:16,269 --> 00:04:19,440 
+with the spectrum is a indicated here
+where
+
+66
+00:04:19,440 --> 00:04:22,789 
+its ban limited with the highest
+frequency Omega Savannah M
+
+67
+00:04:22,789 --> 00:04:27,390 
+and if the time function is sample
+
+68
+00:04:27,390 --> 00:04:31,870 
+so that in the frequency domain week
+involved this spectrum
+
+69
+00:04:31,870 --> 00:04:35,870 
+with the spectrum shown below which is
+the
+
+70
+00:04:35,870 --> 00:04:40,300 
+spectrum love the impulse train
+
+71
+00:04:40,300 --> 00:04:44,320 
+the convolution if these true up these
+two
+
+72
+00:04:44,320 --> 00:04:47,870 
+is then the Fourier transform or
+spectrum
+
+73
+00:04:47,870 --> 00:04:51,590 
+love the sampled time function
+
+74
+00:04:51,590 --> 00:04:55,740 
+and so thats what we end up with here
+
+75
+00:04:55,740 --> 00:05:00,669 
+and then as you recall to recover the
+original time function
+
+76
+00:05:00,669 --> 00:05:05,400 
+from this as long as these individual
+triangles don't overlap
+
+77
+00:05:05,400 --> 00:05:08,800 
+to recover it just simply involves
+
+78
+00:05:08,800 --> 00:05:13,800 
+passing the impulse train through a
+low-pass filter in effect
+
+79
+00:05:13,800 --> 00:05:17,970 
+extracting just one of these
+replications
+
+80
+00:05:17,970 --> 00:05:21,440 
+love the original spectrum
+
+81
+00:05:21,440 --> 00:05:25,360 
+so the overall system
+
+82
+00:05:25,360 --> 00:05:29,930 
+then for for doing the sampling and then
+
+83
+00:05:29,930 --> 00:05:34,520 
+the reconstruction of the original
+signal from the samples
+
+84
+00:05:34,520 --> 00:05:38,400 
+consists of multiplying the original
+time function
+
+85
+00:05:38,400 --> 00:05:42,370 
+by an impulse train and that gives us
+
+86
+00:05:42,370 --> 00:05:45,990 
+then the sampled signal
+
+87
+00:05:45,990 --> 00:05:49,400 
+the Fourier transform I show here love
+the
+
+88
+00:05:49,400 --> 00:05:54,780 
+original signal and after modulation
+with the impulse train
+
+89
+00:05:54,780 --> 00:05:58,300 
+the resulting spectrum that we have is
+
+90
+00:05:58,300 --> 00:06:04,479 
+that replicated around integer multiples
+of the sampling frequency
+
+91
+00:06:04,479 --> 00:06:07,479 
+and then finally to recover
+
+92
+00:06:07,479 --> 00:06:12,100 
+the original signal or to generate a
+reconstructed signal
+
+93
+00:06:12,100 --> 00:06:16,710 
+we then multiply this in the frequency
+domain
+
+94
+00:06:16,710 --> 00:06:20,699 
+by the frequency response of an idea
+low-pass filter
+
+95
+00:06:20,699 --> 00:06:23,880 
+and what that accomplishes forest and
+
+96
+00:06:23,880 --> 00:06:28,259 
+is recovering the original signal
+
+97
+00:06:28,259 --> 00:06:32,820 
+now in this picture an important point
+that I raise last time
+
+98
+00:06:32,820 --> 00:06:36,880 
+relates to the fact dead in doing the
+reconstruction
+
+99
+00:06:36,880 --> 00:06:40,410 
+well we've assumed is dead in
+replicating
+
+100
+00:06:40,410 --> 00:06:43,660 
+these individual versions
+
+101
+00:06:43,660 --> 00:06:47,060 
+0 the original signal
+
+102
+00:06:47,060 --> 00:06:50,979 
+those replications don't overlap and
+sold by passing this through a low-pass
+
+103
+00:06:50,979 --> 00:06:52,190 
+filter in fact
+
+104
+00:06:52,190 --> 00:06:55,479 
+we can recover the original signal well
+
+105
+00:06:55,479 --> 00:06:59,009 
+what that requires is that
+
+106
+00:06:59,009 --> 00:07:03,430 
+this frequency Omega Savannah M be less
+than
+
+107
+00:07:03,430 --> 00:07:07,169 
+this frequency and this frequency
+
+108
+00:07:07,169 --> 00:07:12,310 
+is Omega so fast minus Omega serve them
+
+109
+00:07:12,310 --> 00:07:16,690 
+and so what we require is dead the
+frequency Omega Sapan
+
+110
+00:07:16,690 --> 00:07:20,590 
+be less than Omega cyb s minus Omega sed
+am
+
+111
+00:07:20,590 --> 00:07:25,919 
+or equivalent Lee what we require is
+that the sampling frequency
+
+112
+00:07:25,919 --> 00:07:29,330 
+be greater and twice the highest
+frequency
+
+113
+00:07:29,330 --> 00:07:33,690 
+in the original signal now
+
+114
+00:07:33,690 --> 00:07:37,030 
+if in fact that condition is violated
+
+115
+00:07:37,030 --> 00:07:40,960 
+then we end up with a very important
+effect
+
+116
+00:07:40,960 --> 00:07:44,819 
+and that effect is referred to as a
+leasing
+
+117
+00:07:44,819 --> 00:07:49,430 
+in particular if we look back at are
+
+118
+00:07:49,430 --> 00:07:52,889 
+original example we're here
+
+119
+00:07:52,889 --> 00:07:57,580 
+we were able to recover our original
+spectrum by
+
+120
+00:07:57,580 --> 00:08:01,080 
+low-pass filtering if in fact
+
+121
+00:08:01,080 --> 00:08:04,650 
+the sampling frequency is
+
+122
+00:08:04,650 --> 00:08:07,930 
+not high enough to avoid aliasing
+
+123
+00:08:07,930 --> 00:08:12,639 
+then what happens in that case is that
+the individual replications
+
+124
+00:08:12,639 --> 00:08:18,910 
+love the Fourier transform above the
+stove the original signal
+
+125
+00:08:18,910 --> 00:08:21,960 
+overlap and what we end up with
+
+126
+00:08:21,960 --> 00:08:27,800 
+is some distortion as you can see if we
+tried to pass this through a low-pass
+
+127
+00:08:27,800 --> 00:08:29,330 
+filter
+
+128
+00:08:29,330 --> 00:08:34,449 
+to recover the original signal in fact
+we won't recover the original signal
+
+129
+00:08:34,449 --> 00:08:38,360 
+since these individual replications have
+overlapped
+
+130
+00:08:38,360 --> 00:08:43,400 
+and this is the case where Omega service
+minus Omega Savannah is less than
+
+131
+00:08:43,400 --> 00:08:47,940 
+Omega so vast in other words the
+sampling frequency is not greater
+
+132
+00:08:47,940 --> 00:08:52,120 
+in this case than twice the highest
+frequency
+
+133
+00:08:52,120 --> 00:08:55,970 
+so what happens here then is that in
+effect
+
+134
+00:08:55,970 --> 00:09:00,500 
+higher frequencies get folded down into
+lower frequencies what would come out of
+
+135
+00:09:00,500 --> 00:09:02,130 
+the low-pass filter
+
+136
+00:09:02,130 --> 00:09:06,390 
+is the reflection of some higher
+frequencies into lower frequencies
+
+137
+00:09:06,390 --> 00:09:09,839 
+as I suggested a minute ago that affect
+
+138
+00:09:09,839 --> 00:09:13,790 
+is referred to as alias saying and in
+order to
+
+139
+00:09:13,790 --> 00:09:19,010 
+both understand that term better and two
+understand in fact the effect better
+
+140
+00:09:19,010 --> 00:09:23,279 
+it's useful to examine this a little
+more closely
+
+141
+00:09:23,279 --> 00:09:27,760 
+for the specific example a sinusoidal
+signal
+
+142
+00:09:27,760 --> 00:09:31,459 
+so let's concentrate on that and what we
+want to look at
+
+143
+00:09:31,459 --> 00:09:35,500 
+is the effect or alias saying
+
+144
+00:09:35,500 --> 00:09:39,890 
+when our input signal is a sinusoidal
+signal
+
+145
+00:09:39,890 --> 00:09:43,339 
+now to do that what I wanna show shortly
+
+146
+00:09:43,339 --> 00:09:46,480 
+is a computer-generated movie
+
+147
+00:09:46,480 --> 00:09:49,860 
+that we've made and let's first
+walk-through
+
+148
+00:09:49,860 --> 00:09:54,890 
+a few frames a bit to give you our first
+of all
+
+149
+00:09:54,890 --> 00:09:58,490 
+to to set up our notation and to suggest
+what it is that we're trying to
+
+150
+00:09:58,490 --> 00:10:00,550 
+demonstrate
+
+151
+00:10:00,550 --> 00:10:06,050 
+well what we have is an input signal
+
+152
+00:10:06,050 --> 00:10:09,080 
+is a sinusoidal signal and
+
+153
+00:10:09,080 --> 00:10:12,459 
+the spectrum or for a transformer that
+
+154
+00:10:12,459 --> 00:10:15,560 
+is an impulse in the frequency domain at
+
+155
+00:10:15,560 --> 00:10:18,779 
+the frequency the sinusoid we then
+
+156
+00:10:18,779 --> 00:10:23,200 
+have samples love that and when we
+sample that in for this particular
+
+157
+00:10:23,200 --> 00:10:26,080 
+example its sample the 10 killer hurts
+
+158
+00:10:26,080 --> 00:10:29,910 
+this spectrum is then replicated
+
+159
+00:10:29,910 --> 00:10:33,649 
+at multiples all the sampling frequency
+
+160
+00:10:33,649 --> 00:10:37,850 
+and I haven't shown negative frequencies
+here but the contribution do
+
+161
+00:10:37,850 --> 00:10:41,130 
+to the negative frequency
+
+162
+00:10:41,130 --> 00:10:46,670 
+is at 10 killer hurts minus the input
+sinusoid
+
+163
+00:10:46,670 --> 00:10:49,790 
+we then carry out a reconstruction
+
+164
+00:10:49,790 --> 00:10:55,149 
+with an idea low-pass filter and the
+ideal ok pass filter is set at
+
+165
+00:10:55,149 --> 00:10:58,450 
+half the sampling frequency or five
+kelleher its
+
+166
+00:10:58,450 --> 00:11:01,490 
+so what we have then is
+
+167
+00:11:01,490 --> 00:11:05,990 
+the input signal accept T
+
+168
+00:11:05,990 --> 00:11:09,850 
+and the impulse train exe PFT
+
+169
+00:11:09,850 --> 00:11:13,149 
+and then the reconstructed signal is
+
+170
+00:11:13,149 --> 00:11:16,399 
+the output from the low-pass filter
+
+171
+00:11:16,399 --> 00:11:21,100 
+which I denote as X a party
+
+172
+00:11:21,100 --> 00:11:24,149 
+now as the input frequency X 50
+
+173
+00:11:24,149 --> 00:11:28,279 
+increases this impulse moves up in
+frequency
+
+174
+00:11:28,279 --> 00:11:32,130 
+but this impulse moves down in frequency
+
+175
+00:11:32,130 --> 00:11:37,180 
+and so let's just look at a few frames
+as the input frequency increases
+
+176
+00:11:37,180 --> 00:11:40,579 
+so we have here a case
+
+177
+00:11:40,579 --> 00:11:43,680 
+where the input frequency has move up
+
+178
+00:11:43,680 --> 00:11:46,730 
+close to five killer hurts
+
+179
+00:11:46,730 --> 00:11:50,790 
+as we continue further these two
+impossible's
+
+180
+00:11:50,790 --> 00:11:54,630 
+will cross and what we'll end up with as
+i indicated
+
+181
+00:11:54,630 --> 00:11:58,310 
+is aliasing so here now is a case
+
+182
+00:11:58,310 --> 00:12:01,610 
+where we have alias saying the
+
+183
+00:12:01,610 --> 00:12:05,970 
+replication of the negative frequency
+has crossed into the passband if the
+
+184
+00:12:05,970 --> 00:12:07,100 
+filter
+
+185
+00:12:07,100 --> 00:12:10,990 
+and the reconstructed sinusoid will now
+
+186
+00:12:10,990 --> 00:12:14,829 
+be the frequency associated with this
+impulse
+
+187
+00:12:14,829 --> 00:12:17,990 
+rather than the frequency Associated
+
+188
+00:12:17,990 --> 00:12:22,620 
+with the original sinusoid and to
+dramatize that
+
+189
+00:12:22,620 --> 00:12:25,870 
+even further here is
+
+190
+00:12:25,870 --> 00:12:29,820 
+the example where now the input
+frequency
+
+191
+00:12:29,820 --> 00:12:33,029 
+has moved up close to 10 killer hurts
+
+192
+00:12:33,029 --> 00:12:36,110 
+but what comes out of the low-pass
+filter
+
+193
+00:12:36,110 --> 00:12:39,570 
+is a much lower frequency and in fact
+
+194
+00:12:39,570 --> 00:12:43,519 
+you can see that here is the
+reconstructed sinusoid
+
+195
+00:12:43,519 --> 00:12:48,839 
+whereas here we have the input size
+
+196
+00:12:48,839 --> 00:12:51,959 
+okay well now what I'm gonna wanna do is
+
+197
+00:12:51,959 --> 00:12:56,920 
+demonstrate this as i indicated with a
+computer-generated movie
+
+198
+00:12:56,920 --> 00:13:00,709 
+and well we'll see is the effect
+
+199
+00:13:00,709 --> 00:13:05,149 
+on the effect of reconstructing
+
+200
+00:13:05,149 --> 00:13:08,160 
+from the samples using a low-pass filter
+
+201
+00:13:08,160 --> 00:13:12,360 
+for an input which changes in frequency
+
+202
+00:13:12,360 --> 00:13:15,720 
+and with the sampling rate of 10 killer
+hurts
+
+203
+00:13:15,720 --> 00:13:19,060 
+and what we'll see in the first part of
+this movie is
+
+204
+00:13:19,060 --> 00:13:22,740 
+the input except the and the
+reconstructed signal
+
+205
+00:13:22,740 --> 00:13:27,240 
+X a party without explicitly showing the
+samples
+
+206
+00:13:27,240 --> 00:13:31,089 
+and then at a later point will also show
+this and indicate
+
+207
+00:13:31,089 --> 00:13:34,490 
+that in fact the samples are those two
+are equal even though
+
+208
+00:13:34,490 --> 00:13:37,560 
+they themselves are not
+
+209
+00:13:37,560 --> 00:13:41,899 
+so at the top will have the input
+sinusoid without
+
+210
+00:13:41,899 --> 00:13:44,930 
+showing the samples and its
+
+211
+00:13:44,930 --> 00:13:50,510 
+for EA transform is an impulse in the
+frequency domain as we've indicated
+
+212
+00:13:50,510 --> 00:13:55,680 
+and if we sample it that imposed and
+gets replicated
+
+213
+00:13:55,680 --> 00:13:58,860 
+and so samples in particular
+
+214
+00:13:58,860 --> 00:14:02,329 
+will have a Fourier transform not only
+with an impulse
+
+215
+00:14:02,329 --> 00:14:07,240 
+at the input sinusoid sinusoidal
+frequency but also attend killer hurts
+
+216
+00:14:07,240 --> 00:14:09,230 
+minus that frequency
+
+217
+00:14:09,230 --> 00:14:14,550 
+now for the reconstruction we pass the
+samples through an idea low-pass filter
+
+218
+00:14:14,550 --> 00:14:15,370 
+I picked
+
+219
+00:14:15,370 --> 00:14:19,360 
+the cutoff frequency of the low-pass
+filter at half the sampling frequency
+
+220
+00:14:19,360 --> 00:14:21,540 
+namely 5 killer hurts
+
+221
+00:14:21,540 --> 00:14:24,649 
+and here we see is that the output
+
+222
+00:14:24,649 --> 00:14:29,529 
+reconstructed signal in fact matches in
+frequency the input signal
+
+223
+00:14:29,529 --> 00:14:33,260 
+now as we change the input frequency
+
+224
+00:14:33,260 --> 00:14:36,959 
+the reconstructed sinus so it is
+identical
+
+225
+00:14:36,959 --> 00:14:41,010 
+until we get to an input frequency
+
+226
+00:14:41,010 --> 00:14:44,470 
+which exceeds half the sampling
+frequency
+
+227
+00:14:44,470 --> 00:14:50,139 
+at that point we have aliasing and while
+the input frequency is increasing
+
+228
+00:14:50,139 --> 00:14:54,730 
+the output frequency in fact is
+decreasing
+
+229
+00:14:54,730 --> 00:14:58,940 
+because that's what's inside the
+passband the filter
+
+230
+00:14:58,940 --> 00:15:05,050 
+now let's sweep it back and as the input
+frequency decreases the output frequency
+
+231
+00:15:05,050 --> 00:15:06,190 
+increases
+
+232
+00:15:06,190 --> 00:15:09,930 
+till there's no aliasing and now the
+output reconstructed
+
+233
+00:15:09,930 --> 00:15:14,320 
+signal is equal to the input
+
+234
+00:15:14,320 --> 00:15:18,190 
+so we sample the signal and then
+reconstructed
+
+235
+00:15:18,190 --> 00:15:21,949 
+the signal from the samples and keep in
+mind
+
+236
+00:15:21,949 --> 00:15:26,670 
+that given a set of samples there are
+lots of continuous curves that we can
+
+237
+00:15:26,670 --> 00:15:28,639 
+thread through the set of samples
+
+238
+00:15:28,639 --> 00:15:32,660 
+the one that we picked up cores is the
+one consistent
+
+239
+00:15:32,660 --> 00:15:35,899 
+with the assumption about the signal
+band with
+
+240
+00:15:35,899 --> 00:15:39,000 
+in particular we've reconstructed the
+signal
+
+241
+00:15:39,000 --> 00:15:44,420 
+that who spectrum falls within the pass
+band at the filter
+
+242
+00:15:44,420 --> 00:15:48,389 
+now what I'd like to show is the same
+
+243
+00:15:48,389 --> 00:15:51,570 
+reconstruction and input as I showed
+before
+
+244
+00:15:51,570 --> 00:15:55,110 
+but now let's look at the samples and
+what we'll see is that
+
+245
+00:15:55,110 --> 00:15:58,579 
+when there's alias saying even though
+
+246
+00:15:58,579 --> 00:16:02,029 
+the output the reconstructed signal
+
+247
+00:16:02,029 --> 00:16:05,680 
+is not identical to the input in fact
+
+248
+00:16:05,680 --> 00:16:09,820 
+it's consistent with the input samples
+that is sampling the reconstructed
+
+249
+00:16:09,820 --> 00:16:11,579 
+signal
+
+250
+00:16:11,579 --> 00:16:15,139 
+gives a set of samples identical to the
+samples at the input
+
+251
+00:16:15,139 --> 00:16:19,209 
+and it's just that the interpolation in
+between those samples
+
+252
+00:16:19,209 --> 00:16:22,300 
+is an interpolation consistent with you
+soon
+
+253
+00:16:22,300 --> 00:16:25,940 
+fan with love the input based on the
+sampling there
+
+254
+00:16:25,940 --> 00:16:28,949 
+so let's now look at that with
+
+255
+00:16:28,949 --> 00:16:33,709 
+the samples also shown along with the
+sinusoid
+
+256
+00:16:33,709 --> 00:16:38,470 
+so at the top we have the input sinusoid
+together with its samples
+
+257
+00:16:38,470 --> 00:16:42,850 
+the bottom traces the Fourier transform
+of the sampled waveform
+
+258
+00:16:42,850 --> 00:16:46,430 
+the middle trace is the reconstructed
+
+259
+00:16:46,430 --> 00:16:51,540 
+sinusoid together with its samples and
+notice of course that the samples are
+
+260
+00:16:51,540 --> 00:16:53,639 
+the input a reconstructed signal
+
+261
+00:16:53,639 --> 00:16:56,920 
+are identical and also
+
+262
+00:16:56,920 --> 00:17:00,440 
+the input sinusoidal frequency
+
+263
+00:17:00,440 --> 00:17:04,959 
+and the output sinus or frequency are
+identical
+
+264
+00:17:04,959 --> 00:17:09,409 
+we now increase the frequency at the
+input
+
+265
+00:17:09,409 --> 00:17:13,159 
+the reconstructed sinusoid tracks the
+input frequency
+
+266
+00:17:13,159 --> 00:17:16,970 
+and of course the samples are the two
+are identical
+
+267
+00:17:16,970 --> 00:17:20,800 
+the interpolation in between the samples
+is identical
+
+268
+00:17:20,800 --> 00:17:24,829 
+because the fact dead the input
+frequency is still
+
+269
+00:17:24,829 --> 00:17:31,510 
+less than half the sampling frequency
+
+270
+00:17:31,510 --> 00:17:37,149 
+and so as long as the input is frequency
+is less than half the sampling frequency
+
+271
+00:17:37,149 --> 00:17:40,690 
+not only will the samples be identical
+but also
+
+272
+00:17:40,690 --> 00:17:44,220 
+the reconstructed continuous waveform
+will match
+
+273
+00:17:44,220 --> 00:17:51,220 
+the input way for
+
+274
+00:17:56,820 --> 00:17:59,940 
+now when we get to hear the sampling
+frequency were just
+
+275
+00:17:59,940 --> 00:18:02,970 
+on the verge Bailey is saying this isn't
+alias saying
+
+276
+00:18:02,970 --> 00:18:06,610 
+quite yet but any increase in the input
+frequency
+
+277
+00:18:06,610 --> 00:18:11,250 
+will now generate aliasing we now have a
+leasing
+
+278
+00:18:11,250 --> 00:18:15,429 
+the output frequency is lower than the
+input frequency but notice
+
+279
+00:18:15,429 --> 00:18:20,200 
+that the samples are identical now
+
+280
+00:18:20,200 --> 00:18:24,240 
+the low-pass filter is interpolating in
+between those samples
+
+281
+00:18:24,240 --> 00:18:28,970 
+with a sinusoid that falls within the
+past Pandev the low-pass filter
+
+282
+00:18:28,970 --> 00:18:34,550 
+which no longer matches the frequency of
+the input sinusoid but
+
+283
+00:18:34,550 --> 00:18:38,410 
+the important point is that even when we
+have alias saying
+
+284
+00:18:38,410 --> 00:18:41,740 
+the samples are the reconstructed
+waveform
+
+285
+00:18:41,740 --> 00:18:44,840 
+are identical to the samples
+
+286
+00:18:44,840 --> 00:18:50,540 
+of the original way for and notice that
+as the input frequency increases
+
+287
+00:18:50,540 --> 00:18:54,770 
+in fact the interpolated output the
+reconstructed output
+
+288
+00:18:54,770 --> 00:19:01,770 
+has decreased in frequency now as the
+input frequency begins to get closer to
+
+289
+00:19:01,770 --> 00:19:05,250 
+10 killer hurts in fact you're all I
+
+290
+00:19:05,250 --> 00:19:08,380 
+tends to also interpolate between the
+samples
+
+291
+00:19:08,380 --> 00:19:12,250 
+with a frequency that is lower
+
+292
+00:19:12,250 --> 00:19:15,340 
+day and the input frequency NS
+particularly evident
+
+293
+00:19:15,340 --> 00:19:19,170 
+here notice that the input samples in
+fact
+
+294
+00:19:19,170 --> 00:19:22,220 
+look like they would be associated
+
+295
+00:19:22,220 --> 00:19:26,030 
+with a much lower frequency sinusoid
+then in fact
+
+296
+00:19:26,030 --> 00:19:30,350 
+was the sinusoid the generated a lower
+frequency sinusoid
+
+297
+00:19:30,350 --> 00:19:35,679 
+in fact corresponds to the reconstructed
+one now as we sit back down
+
+298
+00:19:35,679 --> 00:19:40,760 
+the aliasing eventually disappears and
+the output sinus or tracks the input
+
+299
+00:19:40,760 --> 00:19:42,070 
+sinusoid in frequency
+
+300
+00:19:42,070 --> 00:19:45,800 
+so we've seen the
+
+301
+00:19:45,800 --> 00:19:49,830 
+effective aliasing for sinusoidal
+signals and turns away forms
+
+302
+00:19:49,830 --> 00:19:53,710 
+now let's hear how it sounds now
+
+303
+00:19:53,710 --> 00:19:57,210 
+what we have for this demonstration is
+
+304
+00:19:57,210 --> 00:20:00,530 
+an oscillator and
+
+305
+00:20:00,530 --> 00:20:04,410 
+a sampler and the output of the sampler
+
+306
+00:20:04,410 --> 00:20:07,850 
+goes into a low-pass filter so the
+
+307
+00:20:07,850 --> 00:20:13,130 
+input for from the oscillator goes into
+the sampler
+
+308
+00:20:13,130 --> 00:20:16,140 
+and the output the sampler
+
+309
+00:20:16,140 --> 00:20:19,600 
+goes into the low-pass filter the
+
+310
+00:20:19,600 --> 00:20:22,809 
+sampler frequency is 10 killer hurts
+
+311
+00:20:22,809 --> 00:20:26,240 
+and so the low-pass filter
+
+312
+00:20:26,240 --> 00:20:30,150 
+has a cutoff frequency as i indicate
+here
+
+313
+00:20:30,150 --> 00:20:33,580 
+all five killer hurts and
+
+314
+00:20:33,580 --> 00:20:36,600 
+what will listened to is the
+
+315
+00:20:36,600 --> 00:20:40,280 
+reconstructed output as the
+
+316
+00:20:40,280 --> 00:20:43,960 
+oscillator input frequency berries
+
+317
+00:20:43,960 --> 00:20:48,130 
+and recall there what should happen is
+that
+
+318
+00:20:48,130 --> 00:20:53,309 
+when the oscillator input frequency gets
+past half the sampling frequency
+
+319
+00:20:53,309 --> 00:20:59,230 
+we should hear aliasing so we'll start
+the oscillator it to kill her ex
+
+320
+00:20:59,230 --> 00:21:02,460 
+and keep in mind that what you see on
+the dial
+
+321
+00:21:02,460 --> 00:21:06,860 
+is the input frequency which you here is
+the output frequency
+
+322
+00:21:06,860 --> 00:21:10,530 
+as long as the input frequency is less
+than half the sampling frequency in
+
+323
+00:21:10,530 --> 00:21:12,130 
+other words 5 killer hurts
+
+324
+00:21:12,130 --> 00:21:16,000 
+the reconstructed signal sounds
+identical to the input
+
+325
+00:21:16,000 --> 00:21:19,510 
+now at five still hurts were right
+
+326
+00:21:19,510 --> 00:21:24,600 
+on the verge of aliasing and when we
+increase the input frequency past five
+
+327
+00:21:24,600 --> 00:21:25,480 
+killer hurts
+
+328
+00:21:25,480 --> 00:21:29,030 
+the reconstructed frequency in fact will
+decrease
+
+329
+00:21:29,030 --> 00:21:32,880 
+so as we move for example from 5 killer
+hurts
+
+330
+00:21:32,880 --> 00:21:36,070 
+up to let's say 6 killer hurts
+
+331
+00:21:36,070 --> 00:21:39,110 
+sick still hurts in fact yes alias
+
+332
+00:21:39,110 --> 00:21:43,070 
+down to what gets alias down to
+
+333
+00:21:43,070 --> 00:21:46,330 
+4 killer us so
+
+334
+00:21:46,330 --> 00:21:50,250 
+6 go over to the input is for killer
+hurts
+
+335
+00:21:50,250 --> 00:21:54,180 
+at the output now if we move up even
+further
+
+336
+00:21:54,180 --> 00:21:58,140 
+7 kilohertz at the end pushed its alias
+down
+
+337
+00:21:58,140 --> 00:22:01,800 
+to three killer hurts at the outpost
+
+338
+00:22:01,800 --> 00:22:06,220 
+so bad dan is a audio demonstration and
+aliasing
+
+339
+00:22:06,220 --> 00:22:09,340 
+so to summarize
+
+340
+00:22:09,340 --> 00:22:12,690 
+if we sample signal and then reconstruct
+
+341
+00:22:12,690 --> 00:22:17,420 
+from the samples using a low-pass filter
+as long as the sampling frequency is
+
+342
+00:22:17,420 --> 00:22:20,150 
+greater than twice the highest frequency
+in the signal
+
+343
+00:22:20,150 --> 00:22:23,610 
+we reconstruct exactly if on the other
+hand
+
+344
+00:22:23,610 --> 00:22:28,010 
+the sampling frequency is too low less
+than twice the highest frequency
+
+345
+00:22:28,010 --> 00:22:31,260 
+then we get alias saying in other words
+
+346
+00:22:31,260 --> 00:22:35,150 
+higher frequencies get folded or
+reflected
+
+347
+00:22:35,150 --> 00:22:38,460 
+down into lower frequencies as they come
+through the low-pass filter
+
+348
+00:22:38,460 --> 00:22:42,120 
+now wanted the
+
+349
+00:22:42,120 --> 00:22:46,260 
+common applications love the whole
+concept of sampling
+
+350
+00:22:46,260 --> 00:22:52,380 
+is the use sampling to convert a
+continuous-time signal into a
+
+351
+00:22:52,380 --> 00:22:55,520 
+discrete-time signal to carry out
+
+352
+00:22:55,520 --> 00:22:59,340 
+what's often referred to as discreet I
+processing
+
+353
+00:22:59,340 --> 00:23:04,420 
+of continuous-time signals and this in
+fact is something that will be talking
+
+354
+00:23:04,420 --> 00:23:05,080 
+about
+
+355
+00:23:05,080 --> 00:23:08,560 
+in a fair amount of detail beginning
+with the next lecture
+
+356
+00:23:08,560 --> 00:23:12,180 
+but and let me indicate that for
+
+357
+00:23:12,180 --> 00:23:15,760 
+that kinda processing essentially what
+happens
+
+358
+00:23:15,760 --> 00:23:19,370 
+is dead we begin with a continuous-time
+signal
+
+359
+00:23:19,370 --> 00:23:22,710 
+and convert it to a discrete-time signal
+
+360
+00:23:22,710 --> 00:23:26,350 
+carry out the discrete-time processing
+and then
+
+361
+00:23:26,350 --> 00:23:29,910 
+convert back to continuous-time and
+
+362
+00:23:29,910 --> 00:23:34,660 
+the conversion from a continuous-time
+signal to a discrete-time
+
+363
+00:23:34,660 --> 00:23:37,670 
+signal in fact is done
+
+364
+00:23:37,670 --> 00:23:41,660 
+by exploiting sampling specifically
+
+365
+00:23:41,660 --> 00:23:44,910 
+by sampling the continuous-time signal
+
+366
+00:23:44,910 --> 00:23:48,100 
+with an impulse train and then
+
+367
+00:23:48,100 --> 00:23:51,590 
+converting the impulse train into
+
+368
+00:23:51,590 --> 00:23:56,040 
+a sequence in a manner that all talk
+about in more detail
+
+369
+00:23:56,040 --> 00:23:59,340 
+next time now in doing that
+
+370
+00:23:59,340 --> 00:24:03,420 
+of course as you can imagine it's
+important since we want
+
+371
+00:24:03,420 --> 00:24:07,460 
+an accurate representation of the
+original continuous-time signal
+
+372
+00:24:07,460 --> 00:24:12,080 
+to choose the sampling frequency to very
+carefully avoid aliasing
+
+373
+00:24:12,080 --> 00:24:15,640 
+and so in fact in that context
+
+374
+00:24:15,640 --> 00:24:19,030 
+and in many other contexts alias saying
+is something
+
+375
+00:24:19,030 --> 00:24:22,380 
+that we're very eager to avoid however
+
+376
+00:24:22,380 --> 00:24:25,700 
+it's also important to understand that
+alias saying
+
+377
+00:24:25,700 --> 00:24:30,570 
+isn't all bad and there are some very
+specific contexts in which
+
+378
+00:24:30,570 --> 00:24:34,960 
+alias saying is very useful and very
+heavily exploited
+
+379
+00:24:34,960 --> 00:24:38,130 
+one example love
+
+380
+00:24:38,130 --> 00:24:42,280 
+a very useful context valia saying is
+when
+
+381
+00:24:42,280 --> 00:24:45,590 
+you want to look at things that happen
+at frequencies
+
+382
+00:24:45,590 --> 00:24:50,210 
+that you can't look at for one reason or
+another and sampling in a leasing is
+
+383
+00:24:50,210 --> 00:24:52,650 
+used to map those into lower frequencies
+
+384
+00:24:52,650 --> 00:24:57,880 
+one very common example of that is the
+use of the stroboscopic
+
+385
+00:24:57,880 --> 00:25:01,750 
+which was invented by doctor how their
+chechen
+
+386
+00:25:01,750 --> 00:25:06,280 
+at MIT and sometime earlier in fact we
+had
+
+387
+00:25:06,280 --> 00:25:11,100 
+the opportunity to visit doctor Richard
+ins laboratory at MIT
+
+388
+00:25:11,100 --> 00:25:15,310 
+and see some examples of this so I'd
+like to
+
+389
+00:25:15,310 --> 00:25:19,020 
+at as a conclusion to this lecture take
+you
+
+390
+00:25:19,020 --> 00:25:24,850 
+on visit to the stroke where and MIT
+
+391
+00:25:24,850 --> 00:25:28,070 
+in the lecture in discussing aliasing
+we've stressed
+
+392
+00:25:28,070 --> 00:25:33,940 
+the fact that in most situations it's
+something that would like to avoid
+
+393
+00:25:33,940 --> 00:25:37,950 
+however right now we're at MIT and
+stroll Valley
+
+394
+00:25:37,950 --> 00:25:41,960 
+as it's called on the way to visit the
+laboratory
+
+395
+00:25:41,960 --> 00:25:45,030 
+Mike MIT colleague Professor are alleged
+
+396
+00:25:45,030 --> 00:25:49,440 
+where in fact a leasing is an everyday
+occurrence
+
+397
+00:25:49,440 --> 00:25:53,320 
+basically the idea is to follow dead
+
+398
+00:25:53,320 --> 00:25:56,540 
+it in fact you wanna make measurements
+
+399
+00:25:56,540 --> 00:26:00,000 
+at frequencies that for one reason or
+another
+
+400
+00:26:00,000 --> 00:26:05,480 
+you can't measure their sampling and
+consequently aliasing
+
+401
+00:26:05,480 --> 00:26:10,230 
+can be used to bring those frequencies
+down into a frequency range that you can
+
+402
+00:26:10,230 --> 00:26:12,220 
+measure
+
+403
+00:26:12,220 --> 00:26:15,390 
+well professor edgerton alias
+
+404
+00:26:15,390 --> 00:26:19,310 
+da kitchen invented the strokes call
+
+405
+00:26:19,310 --> 00:26:23,450 
+for exactly that reason and kinda the
+idea is the fall
+
+406
+00:26:23,450 --> 00:26:28,050 
+the I essentially is a low pass filter
+and so there are things that happen
+
+407
+00:26:28,050 --> 00:26:31,320 
+at frequencies boat which
+
+408
+00:26:31,320 --> 00:26:34,790 
+your I contract and by
+
+409
+00:26:34,790 --> 00:26:39,440 
+sampling with light poles sampling in
+time
+
+410
+00:26:39,440 --> 00:26:44,050 
+what in effect you're able to do is
+sample in such a way
+
+411
+00:26:44,050 --> 00:26:47,080 
+that higher frequencies get alias
+
+412
+00:26:47,080 --> 00:26:51,650 
+down to lower frequencies then factor I
+contract
+
+413
+00:26:51,650 --> 00:26:55,420 
+so let's take the look inside the where
+
+414
+00:26:55,420 --> 00:26:58,950 
+and in fact see no aspiration or
+
+415
+00:26:58,950 --> 00:27:05,260 
+the scroll and some its effects
+
+416
+00:27:05,260 --> 00:27:10,010 
+will be here introduce you to my mighty
+colleague I kitchen
+
+417
+00:27:10,010 --> 00:27:14,360 
+in also by the way he this is a great
+place for kids of all ages
+
+418
+00:27:14,360 --> 00:27:18,380 
+and so my daughter just insisted on
+coming along to
+
+419
+00:27:18,380 --> 00:27:21,720 
+also helped out stock need you we could
+begin with you
+
+420
+00:27:21,720 --> 00:27:26,080 
+just saying a little bit about what the
+strobe is in with some history is
+
+421
+00:27:26,080 --> 00:27:30,230 
+steroids ring resemble an increase in a
+min ly
+
+422
+00:27:30,230 --> 00:27:33,970 
+misses them losing on Lampson
+
+423
+00:27:33,970 --> 00:27:37,770 
+prices litter control rate planning on
+
+424
+00:27:37,770 --> 00:27:41,420 
+school is not a good strategy is going
+to turn and we're going to look at.
+
+425
+00:27:41,420 --> 00:27:44,650 
+motor striving on balance weight
+
+426
+00:27:44,650 --> 00:27:48,120 
+to set up some rhinos lesions in the
+spring
+
+427
+00:27:48,120 --> 00:27:51,880 
+want to know more bring on the throne
+
+428
+00:27:51,880 --> 00:27:58,880 
+by
+
+429
+00:27:59,960 --> 00:28:06,960 
+by
+
+430
+00:28:10,580 --> 00:28:11,710 
+you writer and
+
+431
+00:28:11,710 --> 00:28:18,710 
+throbs but just in the frequency the way
+
+432
+00:28:20,019 --> 00:28:25,950 
+but corresponds to North influencer
+little more elusive
+
+433
+00:28:25,950 --> 00:28:29,980 
+for the facts thought maybe we could the
+turn the stroller
+
+434
+00:28:29,980 --> 00:28:33,789 
+for a minute noon the but let me
+
+435
+00:28:33,789 --> 00:28:37,600 
+point out the by the way there the fact
+that
+
+436
+00:28:37,600 --> 00:28:41,570 
+when looking at this without the strong
+mind always say essentially
+
+437
+00:28:41,570 --> 00:28:45,600 
+our frequencies that are I can attract
+so you can see the motor
+
+438
+00:28:45,600 --> 00:28:47,269 
+turning and
+
+439
+00:28:47,269 --> 00:28:51,769 
+we can really see other than then with
+the were we can see the movie the spring
+
+440
+00:28:51,769 --> 00:28:55,440 
+and so I get your point is that when we
+put the strobe on
+
+441
+00:28:55,440 --> 00:28:59,779 
+who were essentially sampling this and
+no
+
+442
+00:28:59,779 --> 00:29:03,330 
+you brought this stand with a frequency
+that there the
+
+443
+00:29:03,330 --> 00:29:06,649 
+Riza with the track in fact
+
+444
+00:29:06,649 --> 00:29:09,960 
+the I guess if we turn the
+
+445
+00:29:09,960 --> 00:29:14,169 
+incandescent light of loon
+
+446
+00:29:14,169 --> 00:29:17,279 
+the able to really bring out
+
+447
+00:29:17,279 --> 00:29:22,399 
+are the alias frequency so now we're
+what we're looking at in fact are the
+
+448
+00:29:22,399 --> 00:29:26,590 
+the earliest frequencies the street
+courses moving a lot faster than we see
+
+449
+00:29:26,590 --> 00:29:27,359 
+it in their ranks
+
+450
+00:29:27,359 --> 00:29:30,609 
+you know that's going on arena
+
+451
+00:29:30,609 --> 00:29:34,070 
+30 times second Bruins are
+
+452
+00:29:34,070 --> 00:29:37,929 
+thirties and second occurs through the
+survivors include
+
+453
+00:29:37,929 --> 00:29:41,859 
+next move Rohingya figure 8a. saying you
+don't see that
+
+454
+00:29:41,859 --> 00:29:47,399 
+yeah friend
+
+455
+00:29:47,399 --> 00:29:54,399 
+well we'll be seeing now is essentially
+second harmonic that
+
+456
+00:30:04,899 --> 00:30:08,059 
+someone okay
+
+457
+00:30:08,059 --> 00:30:11,080 
+and just do you think you can make this
+spring dance around a little bit
+
+458
+00:30:11,080 --> 00:30:16,399 
+find taking this slow frequency soon as
+all around
+
+459
+00:30:16,399 --> 00:30:19,909 
+okay it's really neat let's turn the
+lights back on
+
+460
+00:30:19,909 --> 00:30:23,190 
+weekend this is Charles president with
+anything 3 I'm
+
+461
+00:30:23,190 --> 00:30:28,029 
+yeah has the third what's interesting
+now if we look at this and
+
+462
+00:30:28,029 --> 00:30:31,179 
+seeking a fifth just rolled off again
+
+463
+00:30:31,179 --> 00:30:37,039 
+earth okay noticed just think we look at
+the spring man although we can see is a
+
+464
+00:30:37,039 --> 00:30:37,600 
+blur
+
+465
+00:30:37,600 --> 00:30:41,200 
+and really can't see because you're
+right here tracking
+
+466
+00:30:41,200 --> 00:30:46,119 
+can see things happening station but he
+said
+
+467
+00:30:46,119 --> 00:30:49,830 
+by the way this was written demonstrated
+at the World's Fair
+
+468
+00:30:49,830 --> 00:30:52,400 
+the thickness
+
+469
+00:30:52,400 --> 00:30:55,399 
+world because glasses
+
+470
+00:30:55,399 --> 00:30:59,589 
+for their Wow a loses all dressed up
+
+471
+00:30:59,589 --> 00:31:02,679 
+element using
+
+472
+00:31:02,679 --> 00:31:06,690 
+break bring bruises
+
+473
+00:31:06,690 --> 00:31:10,889 
+fine but failed I stick with the miners
+stresses
+
+474
+00:31:10,889 --> 00:31:14,219 
+runners or have break
+
+475
+00:31:14,219 --> 00:31:17,929 
+bum they work on automobiles
+
+476
+00:31:17,929 --> 00:31:24,929 
+their own thoughts on the vibrate but
+let's
+
+477
+00:31:25,009 --> 00:31:28,659 
+earth buy levitra run this for a lot
+more than half an hour or a liberal
+
+478
+00:31:28,659 --> 00:31:33,600 
+name is continues
+
+479
+00:31:33,600 --> 00:31:34,980 
+terms
+
+480
+00:31:34,980 --> 00:31:38,200 
+thing me maybe we can look at the
+
+481
+00:31:38,200 --> 00:31:41,279 
+a couple other things have a about the
+fam
+
+482
+00:31:41,279 --> 00:31:45,940 
+brand the classic buzzed
+
+483
+00:31:45,940 --> 00:31:49,639 
+that's a good idea makes too much noise
+
+484
+00:31:49,639 --> 00:31:54,989 
+ok is to remove that over here that's
+just an ordinary like the fam
+
+485
+00:31:54,989 --> 00:31:58,610 
+has a mark on one plate surgeon
+
+486
+00:31:58,610 --> 00:32:05,610 
+identify you can get up to speed
+
+487
+00:32:09,180 --> 00:32:12,190 
+know that this looks like a phantom was
+also demonstrated in the
+
+488
+00:32:12,190 --> 00:32:15,870 
+world's fair few years ago yeah kinda
+been
+
+489
+00:32:15,870 --> 00:32:19,470 
+been does a movie
+
+490
+00:32:19,470 --> 00:32:23,580 
+quicken awake practicing in to and it
+was very fan
+
+491
+00:32:23,580 --> 00:32:27,070 
+well one like it happened if the reform
+do
+
+492
+00:32:27,070 --> 00:32:32,120 
+MGM and the Peters B Smith
+
+493
+00:32:32,120 --> 00:32:35,680 
+wanted he said he won miss royale up
+
+494
+00:32:35,680 --> 00:32:40,500 
+custard pie into it not don't know I'm a
+serious scientists for
+
+495
+00:32:40,500 --> 00:32:44,200 
+sizes compromise on a I
+
+496
+00:32:44,200 --> 00:32:48,400 
+so we dropped an egg into it in the news
+UCI's B-movie
+
+497
+00:32:48,400 --> 00:32:53,180 
+dropping 0 not known struggle there
+there was with the
+
+498
+00:32:53,180 --> 00:32:56,880 
+high-speed great remove yeah it's okay
+so
+
+499
+00:32:56,880 --> 00:33:00,730 
+so again I guess without this true when
+we look at its
+
+500
+00:33:00,730 --> 00:33:04,260 
+what we're looking at our frequencies it
+are
+
+501
+00:33:04,260 --> 00:33:08,200 
+much higher than the I think following
+now with the stroke blindness
+
+502
+00:33:08,200 --> 00:33:12,170 
+you can see both the alias frequency and
+you can also see the original frequency
+
+503
+00:33:12,170 --> 00:33:13,030 
+because we have the
+
+504
+00:33:13,030 --> 00:33:16,530 
+investment line sweats I'm let's
+
+505
+00:33:16,530 --> 00:33:19,650 
+turned down the the background lighting
+and
+
+506
+00:33:19,650 --> 00:33:23,050 
+stand then really all that were able to
+see or the aliasing
+
+507
+00:33:23,050 --> 00:33:26,460 
+frequencies stand I guess
+
+508
+00:33:26,460 --> 00:33:29,510 
+I guess when we see more than one market
+means that the
+
+509
+00:33:29,510 --> 00:33:32,960 
+stay were actually running its and
+
+510
+00:33:32,960 --> 00:33:36,310 
+or guns is more and more things the the
+using
+
+511
+00:33:36,310 --> 00:33:41,080 
+lower radiation steroids because the
+plans aren't exactly the same
+
+512
+00:33:41,080 --> 00:33:45,140 
+actually this gives me a chance
+illustrating other important correlated
+
+513
+00:33:45,140 --> 00:33:46,070 
+to the lecture
+
+514
+00:33:46,070 --> 00:33:49,110 
+I'll that they could bring them to
+frequency
+
+515
+00:33:49,110 --> 00:33:56,110 
+so that re only get one more scorched
+
+516
+00:33:56,340 --> 00:33:59,550 
+missus begins to move this is just one
+way there now
+
+517
+00:33:59,550 --> 00:34:04,580 
+okay so so the way we have now we've
+essentially alias the fan speed and so
+
+518
+00:34:04,580 --> 00:34:05,060 
+the
+
+519
+00:34:05,060 --> 00:34:09,110 
+is just a little higher than the seeds
+and now
+
+520
+00:34:09,110 --> 00:34:14,820 
+on right at the sea and now if I could
+and just a little further in fact that
+
+521
+00:34:14,820 --> 00:34:17,870 
+looks like the fans turning back hurts
+
+522
+00:34:17,870 --> 00:34:21,040 
+and if you think that this into context
+the leasing
+
+523
+00:34:21,040 --> 00:34:25,820 
+its it's like this to impulses in the
+frequency domain
+
+524
+00:34:25,820 --> 00:34:30,140 
+crossover in with you get an effective
+you and was mathematically
+
+525
+00:34:30,140 --> 00:34:33,420 
+you get a phase reversed in
+
+526
+00:34:33,420 --> 00:34:37,740 
+no wasn't so I E I first understood have
+a leasing
+
+527
+00:34:37,740 --> 00:34:42,310 
+with Doc understood why stand with the
+western movies
+
+528
+00:34:42,310 --> 00:34:46,730 
+a everyone's Ryan see the wagon wheels
+through November go backwards train and
+
+529
+00:34:46,730 --> 00:34:47,890 
+there's there the
+
+530
+00:34:47,890 --> 00:34:51,600 
+wagon wheels in western movie going
+backwards yes stressed
+
+531
+00:34:51,600 --> 00:34:56,510 
+and just see what you see is %um too
+much weaker on straight up so you get to
+
+532
+00:34:56,510 --> 00:34:59,670 
+just see greater frequency of so that's
+
+533
+00:34:59,670 --> 00:35:03,230 
+you get to marched
+
+534
+00:35:03,230 --> 00:35:08,030 
+u-turn and Justin's governor and you
+think tourist
+
+535
+00:35:08,030 --> 00:35:11,080 
+you impressed
+
+536
+00:35:11,080 --> 00:35:14,870 
+schoolroom its regular spirits
+
+537
+00:35:14,870 --> 00:35:18,980 
+all rights pictures in your honor older
+adults
+
+538
+00:35:18,980 --> 00:35:23,600 
+and I rising price revolution I guess
+another thing is that this demonstrates
+
+539
+00:35:23,600 --> 00:35:24,620 
+something that is
+
+540
+00:35:24,620 --> 00:35:29,620 
+and I heard a long time ago which is its
+should never use a power so with the
+
+541
+00:35:29,620 --> 00:35:34,410 
+fluorescent lights the is arrest like is
+a little bit of a stroke affecting
+
+542
+00:35:34,410 --> 00:35:38,870 
+you could actually can misuse of that
+standing still make mistakes a
+
+543
+00:35:38,870 --> 00:35:42,810 
+strength that you think everything we
+are doing is a good friend of
+
+544
+00:35:42,810 --> 00:35:46,120 
+no I don't think I want to try it out
+how are you this do you think that's
+
+545
+00:35:46,120 --> 00:35:49,550 
+any sores and wounds she knows it's
+going
+
+546
+00:35:49,550 --> 00:35:52,800 
+sproule undergoing closest friends okay
+let's
+
+547
+00:35:52,800 --> 00:35:56,570 
+I'm actually we turn the lights back on
+again what's
+
+548
+00:35:56,570 --> 00:36:00,890 
+their latest see once again is that we
+can see both the alias frequencies going
+
+549
+00:36:00,890 --> 00:36:01,960 
+to you that's
+
+550
+00:36:01,960 --> 00:36:05,400 
+and we we can also see the higher
+frequencies because the
+
+551
+00:36:05,400 --> 00:36:09,530 
+incandescent lighting its okay maybe we
+can be no
+
+552
+00:36:09,530 --> 00:36:12,620 
+is parents take a look at some other
+
+553
+00:36:12,620 --> 00:36:16,500 
+on things and when I guess I'm curious
+about is the distance you have over
+
+554
+00:36:16,500 --> 00:36:17,410 
+their kids
+
+555
+00:36:17,410 --> 00:36:21,180 
+doc maybe you can tell us what we have
+here
+
+556
+00:36:21,180 --> 00:36:24,300 
+churros the this to show
+
+557
+00:36:24,300 --> 00:36:28,240 
+how you can get motion pictures on a
+Susan still pictures
+
+558
+00:36:28,240 --> 00:36:32,040 
+the circle is repeated 12 times
+
+559
+00:36:32,040 --> 00:36:35,860 
+why does outer part over mmm on this
+site
+
+560
+00:36:35,860 --> 00:36:40,390 
+in part on the other quiet place one
+time for a revolution on this
+
+561
+00:36:40,390 --> 00:36:44,880 
+you see the exactly as it is if I skip
+one picture each time
+
+562
+00:36:44,880 --> 00:36:47,880 
+when you get there relative motions
+
+563
+00:36:47,880 --> 00:36:51,150 
+mall the object is to show the ball
+rotating
+
+564
+00:36:51,150 --> 00:36:55,520 
+is this where that one depending on mood
+straw was going faster or slower
+
+565
+00:36:55,520 --> 00:37:00,780 
+and the other Uzan this way motion
+pictures went well
+
+566
+00:37:00,780 --> 00:37:04,970 
+100 years school long for photography
+drew pictures of people
+
+567
+00:37:04,970 --> 00:37:09,850 
+different animated features like the run
+yes great
+
+568
+00:37:09,850 --> 00:37:16,280 
+is actually the title kinda busy
+aliasing can be fun conservatism
+
+569
+00:37:16,280 --> 00:37:19,460 
+sterling if the speeds
+
+570
+00:37:19,460 --> 00:37:23,190 
+or away if you get a lot of different
+things sorted veterans
+
+571
+00:37:23,190 --> 00:37:26,890 
+go through ruin currently reaches speeds
+
+572
+00:37:26,890 --> 00:37:31,340 
+reserve a room in the rules it sounds
+
+573
+00:37:31,340 --> 00:37:35,650 
+ok and the background blur basically the
+high frequencies the I can't follow
+
+574
+00:37:35,650 --> 00:37:39,690 
+and and then we're going to propose and
+then again we can see
+
+575
+00:37:39,690 --> 00:37:43,030 
+frequencies it really is down the nets
+
+576
+00:37:43,030 --> 00:37:47,410 
+rookie I ends right now I am one place
+for revolution sleep
+
+577
+00:37:47,410 --> 00:37:50,670 
+see the corner the move is consuming
+records
+
+578
+00:37:50,670 --> 00:37:54,770 
+exactly the reasons there are an
+increasing frequency
+
+579
+00:37:54,770 --> 00:38:00,730 
+of risk if 100 one server or early get
+the illusion that diamonds
+
+580
+00:38:00,730 --> 00:38:04,980 
+room in fact let's a let's really
+enhanced solution
+
+581
+00:38:04,980 --> 00:38:09,120 
+Western the incandescent lights off
+
+582
+00:38:09,120 --> 00:38:12,830 
+and now now are we seeing really you're
+the alias frequencies
+
+583
+00:38:12,830 --> 00:38:17,340 
+or or do you think this just adds
+
+584
+00:38:17,340 --> 00:38:22,020 
+looks like reading recognized through
+was doing rejoining licensing
+
+585
+00:38:22,020 --> 00:38:25,820 
+of is the same rules now lower watching
+is something also
+
+586
+00:38:25,820 --> 00:38:29,050 
+might point out of a for the
+
+587
+00:38:29,050 --> 00:38:32,580 
+I'm the lecture for the course is that
+actually there
+
+588
+00:38:32,580 --> 00:38:35,820 
+there really are two sampling
+frequencies receiving one is this road
+
+589
+00:38:35,820 --> 00:38:36,760 
+and
+
+590
+00:38:36,760 --> 00:38:40,500 
+which is the stroke that you're running
+the other is the inherent
+
+591
+00:38:40,500 --> 00:38:44,400 
+Creamery for the TV that's running at 30
+frames a second
+
+592
+00:38:44,400 --> 00:38:47,930 
+and that's won the reasons by the way in
+dead people watching this
+
+593
+00:38:47,930 --> 00:38:51,670 
+on the video worst are in fact seeing
+
+594
+00:38:51,670 --> 00:38:55,930 
+Flickr or a feeding or modulation
+between
+
+595
+00:38:55,930 --> 00:39:00,200 
+the two on synchronize frame rates
+runner grievances
+
+596
+00:39:00,200 --> 00:39:06,960 
+grow up so we get to of to a room
+credits
+
+597
+00:39:06,960 --> 00:39:09,990 
+of to
+
+598
+00:39:09,990 --> 00:39:16,990 
+roaming two runs on each other of
+
+599
+00:39:17,980 --> 00:39:19,230 
+of
+
+600
+00:39:19,230 --> 00:39:22,820 
+you know it senator Reid's learning this
+
+601
+00:39:22,820 --> 00:39:26,470 
+soon living room when all your friends
+
+602
+00:39:26,470 --> 00:39:30,340 
+I think would be a good terrific homered
+problem getting video Kors
+
+603
+00:39:30,340 --> 00:39:33,810 
+they have them all sit down and analyze
+all the frequencies that they're seeing
+
+604
+00:39:33,810 --> 00:39:36,109 
+and what they're being alias through the
+evening event
+
+605
+00:39:36,109 --> 00:39:39,140 
+it's a good view run the teacher I love
+you
+
+606
+00:39:39,140 --> 00:39:42,350 
+who is great yeah remember these dudes
+list
+
+607
+00:39:42,350 --> 00:39:45,590 
+I think that a chase a few people away
+from the courses good
+
+608
+00:39:45,590 --> 00:39:49,760 
+cracks and you get you get involved in
+these offerings
+
+609
+00:39:49,760 --> 00:39:54,220 
+rule ruler and what you can do for a KMS
+roots
+
+610
+00:39:54,220 --> 00:39:57,570 
+let's bring you the incandescent lights
+back again
+
+611
+00:39:57,570 --> 00:40:01,260 
+just to remind everybody that in back
+row this or
+
+612
+00:40:01,260 --> 00:40:04,730 
+some some frequencies that are a lot
+higher than the ones that
+
+613
+00:40:04,730 --> 00:40:07,900 
+we begin to get the impression that
+we're watching just the
+
+614
+00:40:07,900 --> 00:40:11,520 
+motor running Frances Bean pattern on
+
+615
+00:40:11,520 --> 00:40:15,420 
+long Dhaka have to
+
+616
+00:40:15,420 --> 00:40:18,480 
+I have to say that there are many people
+I know they have as much fun in the work
+
+617
+00:40:18,480 --> 00:40:19,130 
+as you do
+
+618
+00:40:19,130 --> 00:40:23,230 
+home like a man arm quote would but I'd
+like to
+
+619
+00:40:23,230 --> 00:40:27,490 
+do now baby is take a look at one last
+experiment sure did
+
+620
+00:40:27,490 --> 00:40:31,750 
+and what I'd like to do is a.m. is go
+take a look at the
+
+621
+00:40:31,750 --> 00:40:34,770 
+I guess what sometimes is called the
+home
+
+622
+00:40:34,770 --> 00:40:38,270 
+well not the water graphics for men with
+thin air the minute dole pillar
+
+623
+00:40:38,270 --> 00:40:41,590 
+hydraulic everything that's the 1i was
+thinking and let's take a look over
+
+624
+00:40:41,590 --> 00:40:42,030 
+there
+
+625
+00:40:42,030 --> 00:40:49,030 
+okay one just in this Go internal war so
+
+626
+00:40:49,500 --> 00:40:52,670 
+your doc this is the what did you got DP
+
+627
+00:40:52,670 --> 00:40:56,560 
+HHM bird double peddler hydraulic
+
+628
+00:40:56,560 --> 00:41:00,010 
+happening machine Gary okay then it's
+a.m. so please
+
+629
+00:41:00,010 --> 00:41:03,030 
+it looks like continues dream up it is
+not its
+
+630
+00:41:03,030 --> 00:41:08,180 
+pump over there something sixty post
+second so those owners
+
+631
+00:41:08,180 --> 00:41:11,900 
+coming out in spurts %uh so actually
+again it's
+
+632
+00:41:11,900 --> 00:41:14,990 
+it's the the sixty boss is the second
+year I can follow
+
+633
+00:41:14,990 --> 00:41:18,530 
+your eyes so is exactly basically looks
+like a blur
+
+634
+00:41:18,530 --> 00:41:22,170 
+ruseler it is a blur writers you learn
+output stroll on
+
+635
+00:41:22,170 --> 00:41:28,990 
+okay grace start so again
+
+636
+00:41:28,990 --> 00:41:32,410 
+I guess we have this a essentially alias
+then in
+
+637
+00:41:32,410 --> 00:41:36,600 
+and again with the incandescent light
+you can see both sky high frequency
+
+638
+00:41:36,600 --> 00:41:40,210 
+and the alias frequency its and
+
+639
+00:41:40,210 --> 00:41:44,720 
+but see I guess that's with the
+frequency close to the sea and we can
+
+640
+00:41:44,720 --> 00:41:49,090 
+adjusted so that is stop stop bothering
+me going to go out and then we can
+
+641
+00:41:49,090 --> 00:41:50,200 
+actually make it go up
+
+642
+00:41:50,200 --> 00:41:53,910 
+scored anybody who is this South
+
+643
+00:41:53,910 --> 00:41:58,340 
+yeah effect movie have just just again
+due to stress this point to the
+
+644
+00:41:58,340 --> 00:42:02,590 
+class the the kind of the idea here the
+face reversal of course
+
+645
+00:42:02,590 --> 00:42:05,980 
+you can see it in the time domain
+Chynoweth you just think about when the
+
+646
+00:42:05,980 --> 00:42:06,990 
+flashes of light
+
+647
+00:42:06,990 --> 00:42:10,320 
+come but if you think I love kind of
+these
+
+648
+00:42:10,320 --> 00:42:14,109 
+impulses that we have in the frequency
+domain
+
+649
+00:42:14,109 --> 00:42:18,660 
+and we're aliasing as we change the
+sampling frequency what happens is that
+
+650
+00:42:18,660 --> 00:42:20,580 
+these impulses crossover
+
+651
+00:42:20,580 --> 00:42:24,780 
+and what that means is that we get a
+phase reversal the pending
+
+652
+00:42:24,780 --> 00:42:28,280 
+on which faces are associated with
+
+653
+00:42:28,280 --> 00:42:32,230 
+which side up the sea so that's kind of
+the idea the phase reversal
+
+654
+00:42:32,230 --> 00:42:35,550 
+okay let's the let's turn the
+
+655
+00:42:35,550 --> 00:42:39,090 
+against because it is important thing in
+between those who got
+
+656
+00:42:39,090 --> 00:42:42,510 
+yeah let's let's turn the incandescent
+light of first and
+
+657
+00:42:42,510 --> 00:42:46,530 
+think one thing your so 103 know through
+this thing you think you can do to get
+
+658
+00:42:46,530 --> 00:42:49,210 
+on the other side you're on hand so we
+can see with
+
+659
+00:42:49,210 --> 00:42:54,220 
+when for the UN intervening sleuths
+
+660
+00:42:54,220 --> 00:42:58,230 
+water there all the time well on a
+nosedive it seems to me if we can't we
+
+661
+00:42:58,230 --> 00:42:59,590 
+just the justices
+
+662
+00:42:59,590 --> 00:43:04,850 
+the that's just go through to next year
+staff the dots can do it just seeing how
+
+663
+00:43:04,850 --> 00:43:06,550 
+come you think your finger in the air
+
+664
+00:43:06,550 --> 00:43:10,790 
+fun to try once more its
+
+665
+00:43:10,790 --> 00:43:14,450 
+I get snyder et that's one thing we can
+do this
+
+666
+00:43:14,450 --> 00:43:17,720 
+well as bring the lights back up and its
+
+667
+00:43:17,720 --> 00:43:22,290 
+again just to go stress the point scary
+RTC
+
+668
+00:43:22,290 --> 00:43:26,690 
+there we are at a frequency that it's
+just a little above the sea
+
+669
+00:43:26,690 --> 00:43:31,580 
+and we can go back there and in the sea
+and we can actually get a phase reversal
+
+670
+00:43:31,580 --> 00:43:35,820 
+and I guess if we do this long enough we
+get at the at the whole ocean and put it
+
+671
+00:43:35,820 --> 00:43:36,589 
+back in
+
+672
+00:43:36,589 --> 00:43:39,750 
+we're ever comes from is there in cars
+in newsrooms gonna run is not running
+
+673
+00:43:39,750 --> 00:43:43,580 
+too long by the Rev trailer get here yet
+to be careful as well as the Moody Blues
+
+674
+00:43:43,580 --> 00:43:44,240 
+V
+
+675
+00:43:44,240 --> 00:43:49,220 
+surface well I don't know about them but
+I guess I believe you back its
+
+676
+00:43:49,220 --> 00:43:52,400 
+up a little more pressure on three gods
+monarchy
+
+677
+00:43:52,400 --> 00:43:55,750 
+Adams girlfriends or service teams
+
+678
+00:43:55,750 --> 00:44:01,100 
+going things together Ste
+
+679
+00:44:01,100 --> 00:44:05,589 
+we have these machines are all over the
+place lot of fun
+
+680
+00:44:05,589 --> 00:44:08,640 
+but that this this is really terrific I
+i think that
+
+681
+00:44:08,640 --> 00:44:12,010 
+the this whole idea of the
+
+682
+00:44:12,010 --> 00:44:15,220 
+and abusing aliens saying in stroz and
+
+683
+00:44:15,220 --> 00:44:19,600 
+the kinds of things that did you do with
+the murder just fantastic in that we
+
+684
+00:44:19,600 --> 00:44:21,230 
+really appreciate the chance to
+
+685
+00:44:21,230 --> 00:44:25,310 
+come in here and see the demonstration
+Rose Bowl game ruth's
+
+686
+00:44:25,310 --> 00:44:28,830 
+hope you will use it for years the bar
+over many years to come
+
+687
+00:44:28,830 --> 00:44:32,109 
+so is I emphasized that the beginning
+
+688
+00:44:32,109 --> 00:44:36,030 
+in what situations aliasing can in fact
+be very useful
+
+689
+00:44:36,030 --> 00:44:40,770 
+also with this demonstrates is that
+particularly when you have a colleague
+
+690
+00:44:40,770 --> 00:44:42,150 
+like da kitchen
+
+691
+00:44:42,150 --> 00:44:46,180 
+a leasing and for that matter science in
+general can be an awful lot of fun
+
+692
+00:44:46,180 --> 00:44:53,180 
+by gonna thanks a lot that again and
+thank you just the name
+
+693
+00:44:54,280 --> 00:44:59,920 
+well I have to say that that visit was
+an awful lot of fun for me and
+
+694
+00:44:59,920 --> 00:45:04,330 
+for Justin in fact to for the whole
+camera crew that was
+
+695
+00:45:04,330 --> 00:45:09,140 
+there and hopefully you all have used at
+some point will also have a chance to
+
+696
+00:45:09,140 --> 00:45:13,200 
+visited stroll Valley well
+
+697
+00:45:13,200 --> 00:45:16,380 
+hopefully what we've gone through today
+gives you
+
+698
+00:45:16,380 --> 00:45:20,520 
+a good feeling for the concepts love
+sampling an alias saying
+
+699
+00:45:20,520 --> 00:45:25,890 
+and both why it might be useful and why
+we might want to avoid
+
+700
+00:45:25,890 --> 00:45:29,100 
+in the next lecture will continue on
+
+701
+00:45:29,100 --> 00:45:32,280 
+the discussion of sampling any
+particular
+
+702
+00:45:32,280 --> 00:45:35,930 
+what all be talking about is the
+interpretation
+
+703
+00:45:35,930 --> 00:45:40,640 
+love the reconstruction process not in
+the frequency domain
+
+704
+00:45:40,640 --> 00:45:44,780 
+but in a time-domain interpretation
+specifically associated
+
+705
+00:45:44,780 --> 00:45:48,410 
+with the concept %uh interpolating
+between the samples
+
+706
+00:45:48,410 --> 00:45:53,060 
+well then proceed from there too a
+discussion as i've alluded to
+
+707
+00:45:53,060 --> 00:45:57,060 
+in several lectures love what i've
+referred to as
+
+708
+00:45:57,060 --> 00:46:00,830 
+discrete-time processing of
+continuous-time signals
+
+709
+00:46:00,830 --> 00:46:06,089 
+very heavily exploiting the concept and
+issues associated with sample
+
+710
+00:46:06,089 --> 00:46:06,420 
+thank you
+

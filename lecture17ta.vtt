@@ -1,0 +1,3252 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+பின்வரும் உள்ளடக்கத்தை ஒரு கிரியேட்டிவ் காமன்ஸ் உரிமத்தின் கீழ் வழங்கப்படும்
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+உங்கள் ஆதரவு எம்ஐடி ஓபன்கோர்ஸ்வேர் வழங்க தொடர்ந்து உதவும்
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+இலவசமாக உயர்தர கல்வி வளங்கள்
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+நன்கொடை செய்ய அல்லது அவர்களை நூற்றுக்கணக்கான கூடுதல் பொருட்கள் காண
+
+00:00:14,000 --> 00:00:15,000
+courses
+படிப்புகள்
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+0 CW இல் எம்ஐடி ஓபன்கோர்ஸ்வேர் வருகை
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU Horan
+என்று எம்ஐடி என்று EDU இட்லி வடை
+
+00:00:28,000 --> 00:00:29,000
+the
+உருக்கு
+
+00:00:29,000 --> 00:00:31,000
+
+
+
+00:00:31,000 --> 00:00:33,000
+the
+உருக்கு
+
+00:00:33,000 --> 00:00:38,000
+the in
+இல்
+
+00:00:38,000 --> 00:00:40,000
+in
+
+
+00:00:40,000 --> 00:00:44,000
+the
+உருக்கு
+
+00:00:44,000 --> 00:00:47,000
+are in
+உள்ளன
+
+00:00:47,000 --> 00:00:54,000
+for in discussing the sampling theorem
+முன்மாதிரி தேற்றம் விவாதிப்பதில்
+
+00:00:57,000 --> 00:01:00,000
+we saw date for a ban limited signal which is sampled
+நாங்கள் சோதனை இது தடை வரையறுக்கப்பட்ட சமிக்ஞை தேதி பார்த்தேன்
+
+00:01:00,000 --> 00:01:05,000
+at a frequency that that is at least twice the highest frequency
+என்று குறைந்தது இரண்டு முறை அதிக அதிர்வெண் என்று ஒரு அலைவரிசை
+
+00:01:05,000 --> 00:01:08,000
+we can implement exact reconstruction
+நாம் சரியான புனரமைப்பு செயல்படுத்த முடியும்
+
+00:01:08,000 --> 00:01:13,000
+of the original signal by low-pass filtering
+குறைந்த பாஸ் வடிகட்டி மூலம் அசல் சமிக்ஞையின்
+
+00:01:13,000 --> 00:01:18,000
+an impulse train whose areas are identical to the sample values
+அதன் பகுதிகளில் மாதிரி மதிப்புக்கள் ஒரே மாதிரியானவை ஒரு உந்துவிசை ரயில்
+
+00:01:18,000 --> 00:01:21,000
+well essentially this low pass filtering
+அதே அடிப்படையில் இந்த குறைந்த பாஸ் வடிகட்டி
+
+00:01:21,000 --> 00:01:26,000
+operation provides for us and interpolation
+அறுவை எங்களுக்கு மற்றும் இடைச்செருகல் வழங்குகிறது
+
+00:01:26,000 --> 00:01:30,000
+in between the sample values in other words the output to the low-pass filter
+வேறு வார்த்தைகளில் மாதிரி மதிப்புகள் இடையே உள்ள குறைந்த பாஸ் வடிகட்டி வெளியீடு
+
+00:01:30,000 --> 00:01:31,000
+in fact
+உண்மையில்
+
+00:01:31,000 --> 00:01:34,000
+is a continuous curve which
+ஒரு தொடர்ச்சியான வளைவு உள்ளது
+
+00:01:34,000 --> 00:01:38,000
+fits between a sample values some continuous function
+ஒரு மாதிரி மதிப்புகள் இடையே சில தொடர்ச்சியான செயல்பாடு பொருந்துகிறது
+
+00:01:38,000 --> 00:01:44,000
+now I'm sure that many have you are familiar with other kinds of
+இப்போது நான் பல நீங்கள் மற்ற வகையான தெரிந்திருந்தால் என்று நான் உறுதியாக இருக்கிறேன்
+
+00:01:44,000 --> 00:01:46,000
+interpolation that we could potentially provide
+நாம் சாத்தியமான வழங்க முடியும் என்று இடைச்செருகல்
+
+00:01:46,000 --> 00:01:50,000
+in between sample values and in fact in today's lecture
+மாதிரி மதிப்புக்கள் மற்றும் உண்மையில் இன்றைய விரிவுரை இடையே உள்ள
+
+00:01:50,000 --> 00:01:54,000
+why I would like to do is first the ball
+நான் ஏன் செய்ய விரும்புகிறேன் முதல் பந்தை ஆகிறது
+
+00:01:54,000 --> 00:01:58,000
+develop the interpretation
+விளக்கம் உருவாக்க
+
+00:01:58,000 --> 00:02:02,000
+all the reconstruction as an interpolation process
+ஒரு இடைச்செருகல் செயல்முறை அனைத்து புனரமைப்பு
+
+00:02:02,000 --> 00:02:05,000
+and then also see how this
+பின்னர் மேலும் பார்க்க எப்படி இந்த
+
+00:02:05,000 --> 00:02:08,000
+exact interpolation using a low-pass filter
+ஒரு குறைந்த பாஸ் வடிகட்டி பயன்படுத்தி சரியான இடைச்செருகல்
+
+00:02:08,000 --> 00:02:11,000
+relates to other kinds of interpolation
+இடைச்செருகல் மற்ற வகையான தொடர்புடையது
+
+00:02:11,000 --> 00:02:15,000
+such as linear interpolation that you may already be familiar with
+அத்தகைய நீங்கள் ஏற்கனவே தெரிந்திருந்தால் இருக்கலாம் என்று நேர்கோட்டு இடைக்கணிப்பு என
+
+00:02:15,000 --> 00:02:19,000
+well to begin let's again review
+நன்றாக தொடங்க மீண்டும் காண்போம்
+
+00:02:19,000 --> 00:02:23,000
+what the overall system is for exact reconstruction
+ஒட்டுமொத்த அமைப்பின் சரியான புனரமைப்பு என்ன
+
+00:02:23,000 --> 00:02:27,000
+sampling and reconstruction and so let me remind you that
+மாதிரி சீரமைப்பு மற்றும் என்னை ஞாபகப்படுத்த விரும்புகிறேன் என்று
+
+00:02:27,000 --> 00:02:31,000
+the overall system for sampling and D sampling a reconstruction is as i
+மாதிரி மற்றும் டி மறு மாதிரி ஒட்டுமொத்த அமைப்பு இருக்கிறது என நான்
+
+00:02:31,000 --> 00:02:33,000
+indicate here
+இங்கே குறிக்கிறது
+
+00:02:33,000 --> 00:02:36,000
+the sampling process consists love
+மாதிரி செயல்முறை காதல் கொண்டிருக்கிறது
+
+00:02:36,000 --> 00:02:41,000
+multiplying by an impulse train and then the reconstruction process
+ஒரு உந்துவிசை ரயில் மற்றும் புனரமைப்பு பணியில் பெருக்குவதன்
+
+00:02:41,000 --> 00:02:44,000
+corresponds the processing that impulse train with
+இரயில் தூண்டுதலும் செயலாக்க ஒத்திருக்கிறது
+
+00:02:44,000 --> 00:02:48,000
+a low-pass filter so if the
+ஒரு குறைந்த பாஸ் வடிகட்டி என்றால்
+
+00:02:48,000 --> 00:02:51,000
+spectrum of the original signal
+அசல் சமிக்ஞையின் ஸ்பெக்ட்ரம்
+
+00:02:51,000 --> 00:02:55,000
+is what I indicate in this diagram
+நான் இந்த படத்தில் காட்டுவது என்ன ஆகிறது
+
+00:02:55,000 --> 00:02:58,000
+then after sampling with an impulse train
+பின்னர் ஒரு உந்துவிசை ரயில் மாதிரி பின்னர்
+
+00:02:58,000 --> 00:03:02,000
+that spectrum is replicated and
+ஸ்பெக்ட்ரம் முடுக்குகளில்
+
+00:03:02,000 --> 00:03:06,000
+this replicated spectrum for reconstruction
+புனரமைப்பு இந்த எதிரொலிக்கும் ஸ்பெக்ட்ரம்
+
+00:03:06,000 --> 00:03:10,000
+is then processed through a low-pass filter
+பின்னர் ஒரு குறைந்த பாஸ் வடிகட்டி மூலம் பதப்படுத்தப்பட்ட
+
+00:03:10,000 --> 00:03:13,000
+and so in fact if this frequency response
+எனவே உண்மையில் இந்த அதிர்வெண் மறுமொழி
+
+00:03:13,000 --> 00:03:18,000
+is an idea low-pass filter as i indicated on the diagram below
+நான் கீழே வரைபடம் குறிப்பிட்ட ஒரு யோசனை குறைந்த பாஸ் வடிகட்டி ஆகிறது
+
+00:03:18,000 --> 00:03:22,000
+then multiplying the
+பின்னர் பெருக்குவதன்
+
+00:03:22,000 --> 00:03:26,000
+spectrum of the sample signal by this extracts 4s
+இந்த மாதிரி சிக்னல் ஸ்பெக்ட்ரம் 4s உறிஞ்சி
+
+00:03:26,000 --> 00:03:29,000
+just the portion all
+வெறும் பகுதியை அனைத்து
+
+00:03:29,000 --> 00:03:33,000
+the spectrum centered around the origin
+பிறப்பிடம் மையமாக ஸ்பெக்ட்ரம்
+
+00:03:33,000 --> 00:03:36,000
+and what we're left with then is the
+என்ன நாம் விட்டு ஆகிறது
+
+00:03:36,000 --> 00:03:39,000
+spectrum finally of the reconstructed signal
+மறுகட்டுமானம் சமிக்ஞை இறுதியாக ஸ்பெக்ட்ரம்
+
+00:03:39,000 --> 00:03:43,000
+which for the case of an idea low-pass filter
+இது ஒரு யோசனை குறைந்த பாஸ் வடிகட்டி வழக்கு
+
+00:03:43,000 --> 00:03:47,000
+is exactly equal to the spectrum of the original signal
+அசல் சமிக்ஞையின் ஸ்பெக்ட்ரம் சரியாக சமமாக உள்ளது
+
+00:03:47,000 --> 00:03:50,000
+now that is the
+இப்போது அந்த ஆகிறது
+
+00:03:50,000 --> 00:03:54,000
+frequency domain picture
+அதிர்வெண் களத்தில் படம்
+
+00:03:54,000 --> 00:03:58,000
+all the sampling and reconstruction let's also look at
+அனைத்து மாதிரி மற்றும் புனரமைப்பு மேலும் பார்க்க
+
+00:03:58,000 --> 00:04:02,000
+basically the same process but let's examine it now
+அடிப்படையில் அதே செயல்முறை ஆனால் இப்போது அதை ஆராய்வோம்
+
+00:04:02,000 --> 00:04:06,000
+in the time domain well in the time domain
+நேரம் டொமைன் நன்கு நேரத்தில் டொமைன்
+
+00:04:06,000 --> 00:04:10,000
+what we have is are original signal
+நாம் என்ன உள்ளது அசல் சமிக்ஞையை இருக்கின்றன
+
+00:04:10,000 --> 00:04:14,000
+multiply it by an impulse train and
+ஒரு உந்துவிசை ரயில் மூலம் அதை பெருக்கி மற்றும்
+
+00:04:14,000 --> 00:04:17,000
+this then is the sampled
+இந்த மாதிரிகளை பின்னர் ஆகிறது
+
+00:04:17,000 --> 00:04:22,000
+signal or the impulse train whose areas are equal to the sample values
+சிக்னல் அல்லது அதன் பகுதிகளில் மாதிரி மதிப்புக்கள் சமமாக உந்துவிசை ரயில்
+
+00:04:22,000 --> 00:04:27,000
+and because it the fact that this is an impulse train
+ஏனெனில், இது ஒரு உந்துவிசை ரயில் என்ற உண்மையை
+
+00:04:27,000 --> 00:04:30,000
+in fact we can take this term
+உண்மையில் நாம் இந்த கால எடுக்க முடியும்
+
+00:04:30,000 --> 00:04:33,000
+inside the summation
+கூட்டுத்தொகை உள்ளே
+
+00:04:33,000 --> 00:04:37,000
+and of course what counts about except Ian this expression
+நிச்சயமாக இந்த வெளிப்பாடு இயன் தவிர பற்றி கணக்கில்
+
+00:04:37,000 --> 00:04:41,000
+is just as bad use at the sampling instants
+மாதிரி பாதிக்கப்பட்டுள்ளது நேரத்தில் மட்டும் மோசமான பயன்பாடு
+
+00:04:41,000 --> 00:04:45,000
+which are displaced in time by capital T and so
+எனவே மூலதன டி நேரம் இடம்பெயர்ந்த அவை
+
+00:04:45,000 --> 00:04:49,000
+to what we can to quietly right is the
+நாம் என்ன செய்ய அமைதியாக வலது முடியாது உள்ளது
+
+00:04:49,000 --> 00:04:53,000
+expression for the impulse train samples or
+உந்துவிசை ரயில் மாதிரிகள் அல்லது வெளிப்பாடு
+
+00:04:53,000 --> 00:04:57,000
+imposed strain of samples as i've indicated here
+நான் இங்கே சுட்டி போல மாதிரிகள் திணிக்கப்பட்ட திரிபு
+
+00:04:57,000 --> 00:05:03,000
+simply an imposed strain whose areas are the sample bad
+அதன் பகுதிகளில் மாதிரி மோசமாக வெறுமனே ஒரு திணிக்கப்பட்ட திரிபு
+
+00:05:03,000 --> 00:05:07,000
+now in the reconstruction we process
+இப்போது நாம் செயல்படுத்த புனரமைப்பு
+
+00:05:07,000 --> 00:05:12,000
+that impulse train with a low-pass filter that's the basic notion of the
+அடிப்படை கருத்தை தான் என்று ஒரு குறைந்த பாஸ் வடிகட்டி அந்த உந்துவிசை ரயில்
+
+00:05:12,000 --> 00:05:13,000
+reconstruction
+புனரமைப்பு
+
+00:05:13,000 --> 00:05:18,000
+and so in the time domain be reconstructed signal
+அதனால் நேரம் டொமைன் மறுகட்டுமானம் சமிக்ஞை
+
+00:05:18,000 --> 00:05:23,000
+is related to the imposed strain of samples
+மாதிரிகள் திணிக்கப்பட்ட திரிபு தொடர்பான
+
+00:05:23,000 --> 00:05:28,000
+through a convolution with the filter impulse response
+வடிகட்டி உந்துவிசை பதில் ஒரு சுழற்சி மூலம்
+
+00:05:28,000 --> 00:05:31,000
+and carrying out this convolution since
+அது முதல் இந்த சுழற்சி நடத்தி
+
+00:05:31,000 --> 00:05:36,000
+this is just the train of pulses in effect what happens in this convolution
+இந்த சுழற்சி என்ன விளைவு பருப்பு வகைகள் தான் ரயில் ஆகிறது
+
+00:05:36,000 --> 00:05:40,000
+is dead this impulse response gets
+இந்த உந்துவிசை பதில் பெறுகிறார் இறந்த ஆகிறது
+
+00:05:40,000 --> 00:05:44,000
+reproduced at each of the locations 0
+இடங்களில் 0 ஒவ்வொரு இனப்பெருக்கம்
+
+00:05:44,000 --> 00:05:48,000
+the impulses index a PFD with the appropriate area
+சரியான பகுதியில், உடன் தூண்டுதலின் குறியீட்டு ஒரு PFD
+
+00:05:48,000 --> 00:05:53,000
+and finally then in the time domain the reconstructed signal
+இறுதியாக பின்னர் நேரம் டொமைன் மறுகட்டுமானம் சமிக்ஞை
+
+00:05:53,000 --> 00:05:57,000
+is simply a linear combination
+வெறுமனே ஒரு நேர்கோட்டு கலவையாக உள்ளது
+
+00:05:57,000 --> 00:06:01,000
+love shifted versions of the impulse response
+காதல் உந்துவிசை பதில் பதிப்புகள் மாற்றப்பட்டிருந்தது
+
+00:06:01,000 --> 00:06:05,000
+with amplitudes Witcher the sample values
+வீச்சுகள் மாதிரி மதிப்புக்கள் Witcher கொண்டு
+
+00:06:05,000 --> 00:06:09,000
+and so this expression in fact and is our basic
+எனவே இந்த உண்மையில் வெளிப்பாடு மற்றும் எங்கள் அடிப்படை ஆகின்றன
+
+00:06:09,000 --> 00:06:14,000
+reconstruction expression in the time domain
+நேரம் டொமைன் புனரமைப்பு வெளிப்பாடு
+
+00:06:14,000 --> 00:06:18,000
+well in terms of a diagram
+ஒரு வரைபடம் அடிப்படையில்
+
+00:06:18,000 --> 00:06:21,000
+we can think of the original waveform
+நாம் உண்மையான அலைவடிவம் யோசிக்க முடியும்
+
+00:06:21,000 --> 00:06:24,000
+as I've shown here and
+நான் இங்கே காணலாம் மற்றும் போல
+
+00:06:24,000 --> 00:06:27,000
+the red arrows denote be
+சிவப்பு அம்புகள் இருக்கும் குறிக்கின்றன
+
+00:06:27,000 --> 00:06:30,000
+sampled waveform or the train
+சோதனை அலைவடிவம் அல்லது ரயில்
+
+00:06:30,000 --> 00:06:33,000
+love impulses whose amplitude are
+அதன் அலைவீச்சு காதல் தூண்டுதலின்
+
+00:06:33,000 --> 00:06:37,000
+the sample values up the original
+மாதிரி அசல் கலாச்சாரம் வரை
+
+00:06:37,000 --> 00:06:41,000
+continuous-time signal and
+தொடர்ச்சியான நேர சமிக்ஞை மற்றும்
+
+00:06:41,000 --> 00:06:46,000
+then I've shown here it what might be a typical impulse response
+நான் அது என்ன ஒரு பொதுவான உந்துவிசை பதில் இருக்கலாம் இங்கு காட்டப்பட்டுள்ள
+
+00:06:46,000 --> 00:06:50,000
+particularly typical in the case where we're talking about reconstruction with
+நாம் புனரமைப்பு பற்றி பேசுகிறீர்கள் அங்கு விஷயத்தில் குறிப்பாக பொதுவான
+
+00:06:50,000 --> 00:06:53,000
+an ideal 0 pass filter
+ஒரு சிறந்த 0 பாஸ் வடிகட்டி
+
+00:06:53,000 --> 00:06:57,000
+now what happens in the reconstruction
+இப்போது என்ன புனரமைப்பு நடக்கிறது
+
+00:06:57,000 --> 00:07:00,000
+is that the convolution love these
+இது சுழற்சி இந்த காதலிக்கிறேன் என்று
+
+00:07:00,000 --> 00:07:04,000
+impulses with this impulse response
+இந்த உந்துவிசை பதில் தூண்டுதலின்
+
+00:07:04,000 --> 00:07:07,000
+means that in the reconstruction
+என்று புனரமைப்பு
+
+00:07:07,000 --> 00:07:11,000
+we superimpose wanted these impulse responses whatever the filter IPO's
+நாம் இந்த உந்துவிசை மறுமொழிகள் என்ன வடிகட்டி ஐபிஓ வேண்டும்
+
+00:07:11,000 --> 00:07:13,000
+response happens to be
+பதில் இருக்கும் நடக்கிறது
+
+00:07:13,000 --> 00:07:18,000
+at each of these time instants and in doing that
+இந்த நேரத்தில் பாதிக்கப்பட்டுள்ளது ஒவ்வொரு என்று செய்து
+
+00:07:18,000 --> 00:07:23,000
+then those are added up and that gives us the total reconstructed signal
+பின்னர் அந்த சேர்க்கப்படும் என்று எங்களுக்கு மொத்த மறுகட்டுமானம் சமிக்ஞை அளிக்கிறது
+
+00:07:23,000 --> 00:07:28,000
+of course for the case in which the filter is an ideal
+நிச்சயமாக வழக்கு இதில் வடிகட்டி ஒரு சிறந்த ஆகிறது
+
+00:07:28,000 --> 00:07:33,000
+low-pass filter then what we know is that in that case
+குறைந்த பாஸ் வடிகட்டி நாம் என்ன ஆகிறது என்று அந்த வழக்கு
+
+00:07:33,000 --> 00:07:38,000
+the impulse response is on the form of a sync function
+உந்துவிசை பதில் ஒத்திசைவு செயல்பாடு வடிவத்தில் உள்ளது
+
+00:07:38,000 --> 00:07:43,000
+but generally we may want to consider other kinds of impulse responses and so
+ஆனால் பொதுவாக நாம் மற்ற உந்துவிசை மறுமொழிகள் வகையான மற்றும் கருத்தில் கொள்ள வேண்டும்
+
+00:07:43,000 --> 00:07:44,000
+in fact
+உண்மையில்
+
+00:07:44,000 --> 00:07:47,000
+the interpolating impulse response
+இடைக்கணிப்பிடுதல் உந்துவிசை பதில்
+
+00:07:47,000 --> 00:07:50,000
+may have and will have is this discussion goes along some different
+இருக்கலாம் மற்றும், இந்த விவாதத்தை சில வெவ்வேறு செல்கிறார்
+
+00:07:50,000 --> 00:07:52,000
+shapes
+வடிவங்கள்
+
+00:07:52,000 --> 00:07:57,000
+now what I'd like to do is illustrator demonstrate this process
+இப்போது நான் என்ன செய்ய விரும்புகிறேன் Illustrator இந்த செயல்முறை நிரூபிக்க ஆகிறது
+
+00:07:57,000 --> 00:08:02,000
+love all affectively doing the interpolation
+அனைத்து திரியும் இடைச்செருகல் செய்து
+
+00:08:02,000 --> 00:08:06,000
+by replacing each of the impulses
+தூண்டுதலின் ஒவ்வொரு இடமாற்றம்
+
+00:08:06,000 --> 00:08:10,000
+by an appropriate interpolating impulse response and adding the stop
+ஒரு பொருத்தமான உந்துவிசை பதில் இடைக்கணிப்பிடுதல் சேர்த்து நிறுத்தம்
+
+00:08:10,000 --> 00:08:14,000
+and I'd like to do this with a computer movie that we generated
+நான், நாம் உருவாக்கிய ஒரு கணினி திரைப்பட இதை செய்ய விரும்புகிறேன்
+
+00:08:14,000 --> 00:08:17,000
+and what you're seeing the computer movie is
+என்ன நீங்கள் கணினி திரைப்பட பார்க்கிறோம் ஆகிறது
+
+00:08:17,000 --> 00:08:21,000
+essentially original way for which is a continuous curve
+எந்த அடிப்படையில் அசல் வழி ஒரு தொடர்ச்சியான வளைவு ஆகிறது
+
+00:08:21,000 --> 00:08:25,000
+and then below that in the movie
+பின்னர் படத்தில் கீழே
+
+00:08:25,000 --> 00:08:29,000
+is a train samples
+ஒரு ரயில் மாதிரிகள் ஆகிறது
+
+00:08:29,000 --> 00:08:33,000
+and then below that will be the reconstructed signal and the
+பின்னர் கீழே மறுகட்டுமானம் சிக்னல் மற்றும் இருக்கும்
+
+00:08:33,000 --> 00:08:34,000
+reconstruction
+புனரமைப்பு
+
+00:08:34,000 --> 00:08:40,000
+will be carried out by showing the location of the impulse response as it
+அது உந்துவிசை பதில் இடம் காண்பித்து மேற்கொள்ளப்படும்
+
+00:08:40,000 --> 00:08:42,000
+moves along in the way form
+வழி வடிவில் நகரும்
+
+00:08:42,000 --> 00:08:47,000
+and then the reconstructed kurt is simply the summation of those is that
+பின்னர் மறுகட்டுமானம் கர்ட் அந்த கூட்டுத்தொகை என்று வெறுமனே உள்ளது
+
+00:08:47,000 --> 00:08:49,000
+impulse response moves along
+உந்துவிசை பதில் நகரும்
+
+00:08:49,000 --> 00:08:54,000
+so what you'll see then is an impulse response like this for the particular
+அதனால் என்ன நீங்கள் காண்பீர்கள் குறிப்பாக இந்த போன்ற ஒரு உந்துவிசை பதில்
+
+00:08:54,000 --> 00:08:55,000
+case
+வழக்கு
+
+00:08:55,000 --> 00:08:59,000
+love and idea low-pass filter for the reconstruction
+புனரமைப்பு காதல் மற்றும் யோசனை குறைந்த பாஸ் வடிகட்டி
+
+00:08:59,000 --> 00:09:02,000
+an impulse response like this place
+இந்த இடத்தில் ஒரு உந்துவிசை பதில்
+
+00:09:02,000 --> 00:09:05,000
+successively at the locations love
+இடங்களில் காதல் வெற்றிகரமாக மணிக்கு
+
+00:09:05,000 --> 00:09:10,000
+these impulses and that is the convolution process
+இந்த தூண்டுதல் மற்றும் அந்த சுழற்சி செயல்பாடு
+
+00:09:10,000 --> 00:09:14,000
+and below that then will be the summation if these
+மற்றும் பின்னர் அந்த கீழே கூட்டுத்தொகை இருக்கும் இந்த என்றால்
+
+00:09:14,000 --> 00:09:18,000
+and the summation up those will then be the reconstructed signal
+கூட்டுத்தொகை வரை அந்த பின்னர் மறுகட்டுமானம் சிக்னல் இருக்கும்
+
+00:09:18,000 --> 00:09:23,000
+so let's take a look at first of all that reconstruction
+அதனால் தான், அந்த புனரமைப்பு முதலில் பாருங்கள் நாம்
+
+00:09:23,000 --> 00:09:26,000
+where the impulse response corresponds to the impulse response
+உந்துவிசை பதில் உந்துவிசை பதில் ஒத்துள்ளது அங்கு
+
+00:09:26,000 --> 00:09:30,000
+have an idea low-pass filter shown here first
+ஒரு யோசனை குறைந்த பாஸ் வடிகட்டி முதலில் இங்கே காட்டியுள்ளன
+
+00:09:30,000 --> 00:09:34,000
+is the continuous-time signal which
+தொடர்ச்சியான நேர சமிக்ஞை இது
+
+00:09:34,000 --> 00:09:38,000
+we want to sample and then reconstruct using
+நாம் மாதிரி பின்னர் பயன்படுத்தி மீள் வேண்டும்
+
+00:09:38,000 --> 00:09:41,000
+fan limited interpolation or equivalently
+சமமான ரசிகர் குறைந்த இடைச்செருகல் அல்லது
+
+00:09:41,000 --> 00:09:45,000
+idea low-pass filtering on the set of samples
+மாதிரிகள் தொகுப்பில் யோசனை குறைந்த பாஸ் வடிகட்டி
+
+00:09:45,000 --> 00:09:49,000
+so the first step then is the sample this continuous time signal
+எனவே முதல் படி மாதிரி இந்த தொடர்ச்சியான நேர சமிக்ஞை ஆகிறது
+
+00:09:49,000 --> 00:09:53,000
+and we see here now the set of samples
+மற்றும் நாம் இப்போது இங்கே மாதிரிகள் தொகுப்பு பார்க்கிறோம்
+
+00:09:53,000 --> 00:09:58,000
+and superimposed on the samples are the original continuous 5 signal
+மற்றும் மாதிரிகள் மீது விதிக்கப்பட்ட அசல் தொடர்ந்து 5 சமிக்ஞை இருக்கின்றன
+
+00:09:58,000 --> 00:10:03,000
+to focus on the fact that those are samples are the top curve
+அந்த மாதிரிகள் மேல் வளைவு இருக்கும் என்ற உண்மையை கவனம் செலுத்த
+
+00:10:03,000 --> 00:10:07,000
+let's now remove the continuous-time
+இப்போது தொடர்ச்சியான நேர நீக்க வேண்டும்
+
+00:10:07,000 --> 00:10:12,000
+envelope with the samples and it's this set of samples that we then want to use
+மாதிரிகள் உறை மற்றும் அதை நாம் பயன்படுத்த வேண்டும் என்று மாதிரிகள் இந்த ஜோடி
+
+00:10:12,000 --> 00:10:14,000
+for the reconstruction
+புனரமைப்பு
+
+00:10:14,000 --> 00:10:17,000
+the reconstruction process interpreted as interpolation
+புனரமைப்பு பணியில் இடைச்செருகல் என விளக்கம்
+
+00:10:17,000 --> 00:10:22,000
+consists of replacing each sample with a sin x over X function
+எக்ஸ் செயல்பாடு மீது ஒரு பாவம் x ஒவ்வொரு மாதிரி பதிலாக கொண்டிருக்கிறது
+
+00:10:22,000 --> 00:10:26,000
+and so let's first consider the sample
+அதனால் முதல் மாதிரி கருத்தில் கொள்வோம்
+
+00:10:26,000 --> 00:10:30,000
+at equal 0 and here is the
+இங்கே சம 0 மற்றும் ஆகிறது
+
+00:10:30,000 --> 00:10:33,000
+interpolating sin x over X function Associated
+தொடர்புடைய எக்ஸ் செயல்பாடு மீது இடைக்கணிப்பிடுதல் sin x
+
+00:10:33,000 --> 00:10:37,000
+with that sample now the more general
+இப்போது மேலும் பொது என்று மாதிரி
+
+00:10:37,000 --> 00:10:40,000
+process then is to
+செயல்முறை பின்னர் ஆகிறது
+
+00:10:40,000 --> 00:10:45,000
+place a sin x over expulsion at the time location of each sample and superimpose
+ஒவ்வொரு மாதிரி நேரத்தில் இடத்தில் வெளியேற்றப்பட ஒரு sin x வைக்க ஒன்றின்
+
+00:10:45,000 --> 00:10:48,000
+those
+அவர்கள்
+
+00:10:48,000 --> 00:10:52,000
+let's begin that process at the left-hand and
+இடது கையில் என்று செயல்முறை ஆரம்பிக்கலாம் மற்றும்
+
+00:10:52,000 --> 00:10:56,000
+the set of samples and in the bottom curve
+மாதிரிகள் தொகுப்பு கீழே வளைவு
+
+00:10:56,000 --> 00:11:00,000
+will build up the reconstruction as those sin x over X functions
+எக்ஸ் செயல்பாடுகளை அந்த sin x சீரமைப்பு வரை உருவாக்கும்
+
+00:11:00,000 --> 00:11:05,000
+are added together so we begin with the left hand sample and we see their the
+நாம் இடது கை மாதிரி தொடங்கும் மற்றும் நாம் அவர்களின் The பார்க்க ஒன்றாக சேர்க்கப்படும்
+
+00:11:05,000 --> 00:11:06,000
+sin x over X function
+எக்ஸ் செயல்பாடு மீது sin x
+
+00:11:06,000 --> 00:11:11,000
+on the bottom curve then is the first step in the reconstruction
+கீழே வளைவு பின்னர் புனரமைப்பு முதல் படியாகும்
+
+00:11:11,000 --> 00:11:15,000
+we now have the sin x over X function associated with the second sample
+நாம் இப்போது இரண்டாவது மாதிரி தொடர்புடைய எக்ஸ் செயல்பாடு மீது sin x வேண்டும்
+
+00:11:15,000 --> 00:11:19,000
+let's add that in now we move on
+இப்போது நாம் செல்ல அந்த சேர்க்க வேண்டும்
+
+00:11:19,000 --> 00:11:24,000
+to the third sample and that sin x over X function
+எக்ஸ் செயல்பாடு மீது மூன்றாவது மாதிரி அந்த பாவத்தின் x க்கு
+
+00:11:24,000 --> 00:11:27,000
+is added in
+சேர்க்கப்படுகிறது
+
+00:11:27,000 --> 00:11:31,000
+continuing on the next
+அடுத்த தொடர்ந்து
+
+00:11:31,000 --> 00:11:34,000
+sample generates a sin x over X function
+மாதிரி எக்ஸ் செயல்பாடு மீது ஒரு பாவம் x உருவாக்கிறது
+
+00:11:34,000 --> 00:11:38,000
+which is superimposed on the result that we've accumulated
+நாம் திரட்டப்பட்ட என்று இதன் மீது விதிக்கப்பட்ட இது
+
+00:11:38,000 --> 00:11:41,000
+so far and now let's just
+இதுவரை மற்றும் இப்போது நாம் தான்
+
+00:11:41,000 --> 00:11:45,000
+speed up the process will move on to the fifth sample
+வழிமுறைகளை வேகப்படுத்த ஐந்தாவது மாதிரி செல்ல வேண்டும்
+
+00:11:45,000 --> 00:11:48,000
+add that in the sect sample add that in
+என்று சேர்க்க பிரிவை மாதிரி என்று சேர்க்க
+
+00:11:48,000 --> 00:11:52,000
+and continue on through the set of samples and
+மற்றும் மாதிரிகள் தொகுப்பு மூலம் தொடர்ந்து
+
+00:11:52,000 --> 00:11:56,000
+keep in mind the fact that basically what we're doing explicitly here
+மனதில் அடிப்படையில் நாம் வெளிப்படையாக இங்கே என்ன என்பதை வைத்து
+
+00:11:56,000 --> 00:12:02,000
+is the convolution up the impulse train with a sin x over X function
+சுழற்சி வரை எக்ஸ் செயல்பாடு மீது ஒரு பாவம் எக்ஸ் உந்துவிசை ரயில் ஆகும்
+
+00:12:02,000 --> 00:12:05,000
+and because the set of samples that we started with
+ஏனெனில் நாம் ஆரம்பித்த மாதிரிகள் தொகுப்பு
+
+00:12:05,000 --> 00:12:08,000
+where samples haven't exactly been limited function
+மாதிரிகள் சரியாக வரையறுக்கப்பட்ட செயல்பாடு இல்லை அங்கு
+
+00:12:08,000 --> 00:12:12,000
+what we are reconstructing exactly
+நாம் சரியாக மறுகட்டமைப்பு என்ன
+
+00:12:12,000 --> 00:12:15,000
+is the original continuous-time signal
+அசல் தொடர்ச்சியான நேர சமிக்ஞை ஆகும்
+
+00:12:15,000 --> 00:12:22,000
+that we have on the top trace
+நாம் மேலே சுவடு வேண்டும் என்று
+
+00:12:24,000 --> 00:12:27,000
+okay so that then
+சரி என்று பின்னர்
+
+00:12:27,000 --> 00:12:31,000
+kinda gives you the picture above doing
+கிரகமாக நீங்கள் செய்து மேலே உள்ள படம் கொடுக்கிறது
+
+00:12:31,000 --> 00:12:36,000
+interpolation by replacing the impulses by a continuous curve and that's the way
+ஒரு தொடர்ச்சியான வளைவு மூலம் தூண்டுதலின் பதிலாக, அந்த வழியில் தான் இடைக்கணிப்பு
+
+00:12:36,000 --> 00:12:37,000
+we're fitting
+நாம் பொருத்தினார்
+
+00:12:37,000 --> 00:12:40,000
+a continuous curve to the original
+அசல் ஒரு தொடர்ச்சியான வளைவு
+
+00:12:40,000 --> 00:12:44,000
+impulse train and let me stress
+ரயில் உந்துவிசை மற்றும் தேன்கூட்டில்
+
+00:12:44,000 --> 00:12:47,000
+that this reconstruction process
+இந்த புனரமைப்பு செயல்முறை
+
+00:12:47,000 --> 00:12:50,000
+by putting the impulses through
+மூலம் தூண்டுதலின் செலுத்துவதன் மூலம்
+
+00:12:50,000 --> 00:12:54,000
+a filter the reconstruction process
+மறு செயல்முறை வடிகட்ட
+
+00:12:54,000 --> 00:12:58,000
+follows this relationship whether or not
+இந்த உறவு பின்வருமாறு இல்லையா
+
+00:12:58,000 --> 00:13:03,000
+this impulse response in fact corresponds to an ideal ok pass filter
+உண்மையில் இந்த உந்துவிசை பதில் ஒரு சிறந்த சரியா பாஸ் வடிகட்டி ஒத்துள்ளது
+
+00:13:03,000 --> 00:13:08,000
+what this expression always says is dead reconstructing this way
+இந்த வெளிப்பாடு எப்போதும் கூறுகிறார் இறந்த மறுகட்டமைப்பு இந்த வழி
+
+00:13:08,000 --> 00:13:11,000
+corresponds to replacing the impulses
+தூண்டுதலின் பதிலாக ஒத்துள்ளது
+
+00:13:11,000 --> 00:13:15,000
+by a shift in impulse response with an effort to
+ஒரு முயற்சியாக கொண்டு உந்துவிசை பதில் ஒரு மாற்றம்
+
+00:13:15,000 --> 00:13:22,000
+dead is an amplitude corresponding to the sample value now
+இறந்த இப்போது மாதிரி மதிப்பு தொடர்புடைய ஒரு வீச்சு ஆகிறது
+
+00:13:22,000 --> 00:13:27,000
+be kinda reconstruction dead we've just talked about and the ideal
+கிரகமாக புனரமைப்பு நாம் பற்றி பேசிவிட்டேன், இறந்த மற்றும் சிறந்த இருக்கும்
+
+00:13:27,000 --> 00:13:28,000
+reconstruction
+புனரமைப்பு
+
+00:13:28,000 --> 00:13:33,000
+is often referred to as band limited
+பெரும்பாலும் இசைக்குழு மட்டுமே என குறிப்பிடப்படுகிறது
+
+00:13:33,000 --> 00:13:37,000
+interpolation because for interpolating in between the samples
+இடைச்செருகல் ஏனெனில் மாதிரிகள் இடையே உள்ள இடைக்கணிப்பிடுதல் ஐந்து
+
+00:13:37,000 --> 00:13:40,000
+by making the assumption that the signals ban limited
+சிக்னல்களை குறைந்த தடை அனுமானத்தின் மூலம்
+
+00:13:40,000 --> 00:13:45,000
+and using the impulse response for an idea low-pass filter
+மற்றும் ஒரு யோசனை குறைந்த பாஸ் வடிகட்டி உந்துதலை பதில் பயன்படுத்தி
+
+00:13:45,000 --> 00:13:49,000
+which has a cutoff frequency consistent with
+இசைவானதாக ஒரு வெட்டு அதிர்வெண் கொண்ட
+
+00:13:49,000 --> 00:13:53,000
+the soon band with for the signal so if we look
+சிக்னல் விரைவில் இசைக்குழு நாம் பார்க்கிறோம் என்றால்
+
+00:13:53,000 --> 00:13:57,000
+here for example at the impulse train
+இங்கே உந்துவிசை ரயில் எடுத்துக்காட்டாக
+
+00:13:57,000 --> 00:14:00,000
+then in the demonstration that you just saw
+நீங்கள் தான் பார்த்தேன் என்று ஆர்ப்பாட்டத்தில்
+
+00:14:00,000 --> 00:14:06,000
+we built up the reconstructed curve by replacing each of these impulses
+நாம் இந்த தூண்டுதலின் ஒவ்வொரு மாற்றியமைப்பதன் மூலம் மறுகட்டுமானம் வளைவு கட்டியெழுப்பப்பட்ட
+
+00:14:06,000 --> 00:14:09,000
+with the sync function and the some of those
+ஒருங்கிணைப்பு செயல்பாடு மற்றும் அந்த சில
+
+00:14:09,000 --> 00:14:14,000
+built up the reconstruct the curve well
+மீள் நன்கு வளைவு கட்டியெழுப்பப்பட்ட
+
+00:14:14,000 --> 00:14:17,000
+there are lots of other kinds of interpolation
+இடைச்செருகல் மற்ற வகையான நிறைய உள்ளன
+
+00:14:17,000 --> 00:14:20,000
+dead are perhaps maybe not as exact
+இறந்த ஒருவேளை இல்லை என சரியான இருக்கின்றன
+
+00:14:20,000 --> 00:14:25,000
+by often easier to implement and what I'd like to do is focus our attention on
+செயல்படுத்த மற்றும் நான் என்ன செய்ய விரும்புகிறேன் எளிதாக நம் கவனத்தை கவனம் உள்ளது
+
+00:14:25,000 --> 00:14:26,000
+to appease
+சமாதானப்படுத்தும்
+
+00:14:26,000 --> 00:14:31,000
+one of these the first that I want to mention is what's referred to as a
+இந்த ஒரு நான் குறிப்பிட வேண்டும் என்று முதல் ஒரு குறிப்பிடப்படுகிறது என்ன ஆகிறது
+
+00:14:31,000 --> 00:14:32,000
+zero-order hold
+பூஜ்யம் ஒழுங்கு நிறுத்தி
+
+00:14:32,000 --> 00:14:36,000
+where in effect we do the interpolation in between these
+விளைவு நாம் இந்த இடையில் இடைச்செருகல் செய்கிறோம் அங்கு
+
+00:14:36,000 --> 00:14:40,000
+sample values by simply holding the sample value
+வெறுமனே மாதிரி மதிப்பு வைத்திருக்கும் மாதிரி மதிப்புக்கள்
+
+00:14:40,000 --> 00:14:45,000
+until the next sampling instant and the reconstruction
+அடுத்த மாதிரி உடனடி மற்றும் புனரமைப்பு வரை
+
+00:14:45,000 --> 00:14:49,000
+that we end up with in that that case will look something like this:
+நாம் அந்த வழக்கில் இந்த மாதிரி ஏதாவது இருக்கும் என்று முடிவடையும் என்று:
+
+00:14:49,000 --> 00:14:52,000
+it's a staircase or boxcar kinda function
+அது ஒரு மாடி படிக்கட்டு அல்லது பாக்ஸ்கார் கிரகமாக விழா
+
+00:14:52,000 --> 00:14:56,000
+where we've simply held the sample value
+நாங்கள் வெறுமனே மாதிரி மதிப்பு நடைபெற்றது நான் அங்கு
+
+00:14:56,000 --> 00:15:01,000
+until the next sampling instant and then replaced by that value held until the
+அந்த மதிப்பு பதிலாக அடுத்த மாதிரி உடனடி மற்றும் வரை வரை
+
+00:15:01,000 --> 00:15:02,000
+next sampling instant et cetera
+அடுத்த மாதிரி உடனடி பயன்படுத்தப்படுகிறது
+
+00:15:02,000 --> 00:15:07,000
+now that's one kinda interpolation
+இப்போது ஒரு கிரகமாக இடைச்செருகல் தான்
+
+00:15:07,000 --> 00:15:10,000
+another kinda very common interpolation is
+மற்றொரு கிரகமாக மிகவும் பொதுவான இடைக்கணிப்பு ஆகும்
+
+00:15:10,000 --> 00:15:13,000
+what's referred to as linear interpolation we simply fit
+என நேர்கோட்டு இடைக்கணிப்பு குறிப்பிடப்படுகிறது என்ன, நாம் வெறுமனே பொருந்தும்
+
+00:15:13,000 --> 00:15:18,000
+a straight line between the sample values and in that case
+மாதிரி மதிப்புகள் இடையே மற்றும் அந்த வழக்கில் ஒரு நேர் கோட்டில்
+
+00:15:18,000 --> 00:15:21,000
+the cut be type reconstruction that we would get
+வெட்டு நாம் கிடைக்கும் என்று வகை புனரமைப்பு இருக்கும்
+
+00:15:21,000 --> 00:15:26,000
+would look something like I indicate here where we take a sample value
+நாம் ஒரு மாதிரி மதிப்பை எடுத்து அங்கு நான் இங்கே குறிப்பிட போல இருக்கும்
+
+00:15:26,000 --> 00:15:32,000
+and the following sample value and simply fit interpolated curve between
+பின்வரும் மாதிரி மதிப்பு மற்றும் வெறுமனே இடையே இடைச்செருகலாக வளைவு பொருந்தும்
+
+00:15:32,000 --> 00:15:33,000
+them
+அவர்களை
+
+00:15:33,000 --> 00:15:37,000
+which is a straight line now
+ஒரு வரிசையில் இப்போது இது
+
+00:15:37,000 --> 00:15:41,000
+interestingly in fact both the zero-order hold
+சுவாரஸ்யமாக உண்மையில் இரண்டு பூஜ்யம் ஒழுங்கு நிறுத்தி
+
+00:15:41,000 --> 00:15:44,000
+and the linear interpolation which is
+மற்றும் இது நேர்கோட்டு இடைக்கணிப்பு
+
+00:15:44,000 --> 00:15:48,000
+often referred to as a first-order hold can also
+பெரும்பாலும் முதல் வரிசையில் நிறுத்தி குறிப்பிடப்படுகிறது முடியும்
+
+00:15:48,000 --> 00:15:53,000
+be either implemented or interpreted both implemented interpreted
+செயல்படுத்தப்படும் அல்லது விளக்கம் ஒன்று இரண்டு செயல்படுத்தப்படும் விளக்கம்
+
+00:15:53,000 --> 00:15:56,000
+in the context of the equation that we just develop
+நாம் தான் உருவாக்க சமன்பாடு பின்னணியில்
+
+00:15:56,000 --> 00:15:59,000
+in particular the processing I'll the
+குறிப்பாக செயலாக்க நான் செய்வேன்
+
+00:15:59,000 --> 00:16:03,000
+imposed strain of samples by
+மூலம் மாதிரிகள் திணிக்கப்பட்ட திரிபு
+
+00:16:03,000 --> 00:16:06,000
+a linear time-invariant filter specifically
+குறிப்பாக ஒரு நேர்கோட்டு நேர மாற்றம் வடிகட்டி
+
+00:16:06,000 --> 00:16:10,000
+if we consider a
+நாம் ஒரு கருத்தில்
+
+00:16:10,000 --> 00:16:13,000
+system where the impulse response
+கணினி, அங்கு உந்துவிசை பதில்
+
+00:16:13,000 --> 00:16:17,000
+is a rectangular function
+ஒரு செவ்வக செயல்பாடு
+
+00:16:17,000 --> 00:16:20,000
+then in fact if
+பின்னர் உண்மையில் என்றால்
+
+00:16:20,000 --> 00:16:24,000
+we processed the train if samples
+நாம் ரயில் பதப்படுத்தப்பட்ட மாதிரிகள் என்றால்
+
+00:16:24,000 --> 00:16:28,000
+through a filter with this impulse response exactly
+இந்த உந்துவிசை பதில் ஒரு வடிகட்டி மூலம் சரியாக
+
+00:16:28,000 --> 00:16:32,000
+the reconstruction that we would get is what I've shown here
+நாம் கிடைக்கும் என்று புனரமைப்பு நான் இங்கே பார்க்க நான் என்ன ஆகிறது
+
+00:16:32,000 --> 00:16:36,000
+alternatively if we chose an impulse response
+நாம் ஒரு உந்துவிசை பதிலை தேர்வு மாற்றாக என்றால்
+
+00:16:36,000 --> 00:16:39,000
+which was a triangular
+ஒரு முக்கோண இருந்தது
+
+00:16:39,000 --> 00:16:43,000
+impulse response then
+உந்துவிசை பதில் பின்னர்
+
+00:16:43,000 --> 00:16:46,000
+what in effect happens is that each of these impulses
+விளைவு என்ன நடக்கிறது என்று இந்த தூண்டுதலின் ஒவ்வொரு
+
+00:16:46,000 --> 00:16:49,000
+activates this triangle
+இந்த முக்கோண செயல்படுத்துகிறது
+
+00:16:49,000 --> 00:16:55,000
+and when we add up those triangles at successive locations in fact
+நாம் உண்மையில் அடுத்தடுத்த இடங்களில் அந்த முக்கோணங்கள் வரை சேர்க்க போது
+
+00:16:55,000 --> 00:16:59,000
+what we generate is this linear interpolation
+நாம் என்ன உருவாக்க இந்த நேர்கோட்டு இடைக்கணிப்பு ஆகும்
+
+00:16:59,000 --> 00:17:03,000
+so what this says in fact is dead
+அதனால் என்ன இது உண்மையில் கூறுகிறார் இறந்த ஆகிறது
+
+00:17:03,000 --> 00:17:06,000
+either a zero-order hold
+அல்லது ஒரு பூஜ்யம் ஒழுங்கு நிறுத்தி
+
+00:17:06,000 --> 00:17:09,000
+which holds the value or linear interpolation
+மதிப்பு அல்லது நேர்கோட்டு இடைக்கணிப்பு வைத்திருக்கும்
+
+00:17:09,000 --> 00:17:13,000
+can likewise be interpreted as a process
+இதேபோல் ஒரு செயல்முறை விளக்கம்
+
+00:17:13,000 --> 00:17:17,000
+love convolved thing the impulse trainer samples
+convolved அன்பு உந்துவிசை பயிற்சியாளர் மாதிரிகள்
+
+00:17:17,000 --> 00:17:21,000
+with inappropriate filter impulse response
+பொருத்தமற்ற வடிகட்டி உந்துவிசை பதில்
+
+00:17:21,000 --> 00:17:24,000
+well what I'd like to do is demonstrate
+நன்றாக நான் என்ன செய்ய விரும்புகிறேன் நிரூபிக்க ஆகிறது
+
+00:17:24,000 --> 00:17:27,000
+as we did with the ban limit interpolation or
+நாங்கள் தடை எல்லை இடைச்செருகல் அல்லது செய்ததை போல
+
+00:17:27,000 --> 00:17:33,000
+these sink interpolation is sometimes called interplay with a sin x over axe
+இந்த மடு இடைச்செருகல் சில நேரங்களில் கோடாரி ஒரு பாவத்தை எக்ஸ் விளக்க அழைக்கப்படுகிறது
+
+00:17:33,000 --> 00:17:36,000
+let me now show the process first the ball
+எனக்கு இப்போது முதல் பந்தை செயல்முறை காட்ட நாம்
+
+00:17:36,000 --> 00:17:40,000
+where we have a zero-order hold
+நாம் ஒரு பூஜ்யம் ஒழுங்கு நடத்த வேண்டும், அங்கு
+
+00:17:40,000 --> 00:17:44,000
+as corresponding to this impulse response
+இந்த உந்துவிசை பதில் தொடர்புடைய போன்ற
+
+00:17:44,000 --> 00:17:48,000
+in which case we'll see basically the same process as we saw your
+நாம் கண்டது போல, இதில் நாம் அடிப்படையில் அதே செயல்முறை பார்க்கிறேன் உங்கள்
+
+00:17:48,000 --> 00:17:52,000
+in the computer-generated movie previously
+முன்பு கணினி உருவாக்கப்பட்ட படம்
+
+00:17:52,000 --> 00:17:55,000
+but now rather than a sync function replacing
+ஆனால் இப்போது மாறாக பதிலாக ஒரு ஒத்திசைவு செயல்பாடு விட
+
+00:17:55,000 --> 00:17:59,000
+each of these impulses will have a rectangular function
+இந்த தூண்டுதலின் ஒவ்வொரு ஒரு செவ்வக செயல்பாடு வேண்டும்
+
+00:17:59,000 --> 00:18:06,000
+that will generate then are approximation which is a zero-order hold
+என்று ஒரு பூஜ்யம் ஒழுங்கு நிறுத்தி இது பின்னர் இருக்கும் தோராய உருவாக்கும்
+
+00:18:06,000 --> 00:18:10,000
+and following that will do exactly the same thing with the same way form
+என்று தொடர்ந்து அதே வழியில் வடிவம் சரியாக தான் செய்யும்
+
+00:18:10,000 --> 00:18:14,000
+using a first-order hold or a triangular impulse response
+முதல் வரிசையில் வைத்து அல்லது ஒரு முக்கோண உந்துவிசை பதில் பயன்படுத்தி
+
+00:18:14,000 --> 00:18:20,000
+in which case well we'll see again is that as the triangle moves along here
+இது நன்றாக நாம் மீண்டும் பார்க்க வேண்டும் வழக்கில் என்று முக்கோண இங்கே செல்கையில்
+
+00:18:20,000 --> 00:18:24,000
+and we build up the running some or the convolution
+நாம் இயங்கும் சில அல்லது சுழற்சி கட்டமைக்க
+
+00:18:24,000 --> 00:18:27,000
+then will in fact fit the original curve
+பின்னர் உண்மையில் அசல் வளைவு பொருந்தும்
+
+00:18:27,000 --> 00:18:31,000
+with a linear curve soul now let's
+ஒரு நேர்கோட்டு வளைவு ஆன்மா இப்போது அனுமதிக்கிறது தான்
+
+00:18:31,000 --> 00:18:34,000
+again look at that remembering that at the top will see
+மீண்டும் மேலே பார்க்க வேண்டும் என்று என்று நினைத்து பாருங்கள்
+
+00:18:34,000 --> 00:18:38,000
+the original continuous curve exactly the one that we had before
+அசல் தொடர்ச்சியான வளைவு நாம் முன்னர் இருந்தது என்று சரியாக ஒரு
+
+00:18:38,000 --> 00:18:42,000
+below it the set of samples together with
+அதை கீழே ஒன்றாக மாதிரிகள் தொகுப்பு
+
+00:18:42,000 --> 00:18:47,000
+the impulse response moving along and then finally below that
+உந்துவிசை பதில் இறுதியாக கீழே சேர்த்து பின்னர் நகரும்
+
+00:18:47,000 --> 00:18:51,000
+the accumulation of those impulse responses work with only
+அந்த உந்துவிசை மறுமொழிகள் குவிப்பு மட்டுமே வேலை
+
+00:18:51,000 --> 00:18:56,000
+the convolution or equivalent Lee the reconstruction
+ஆவி அல்லது அதற்கு சமமான லீ புனரமைப்பு
+
+00:18:56,000 --> 00:19:01,000
+so we have the same continuous-time signal that we use previously with
+அதனால் நாம் முன்னர் பயன்படுத்தும் அதே தொடர்ச்சியான நேர சமிக்ஞை வேண்டும்
+
+00:19:01,000 --> 00:19:04,000
+ban limited interpolation and in this case
+வரையறுக்கப்பட்ட இடைக்கணிப்பு மற்றும் இந்த வழக்கில் தடை
+
+00:19:04,000 --> 00:19:09,000
+now we want to sample and then interpolate first for the zero-order
+இப்போது நாம் மாதிரிக்காக விரும்பினால் பின்னர் பூஜ்யம் ஒழுங்கு முதல் இடைச்செருக
+
+00:19:09,000 --> 00:19:10,000
+hold
+பிடி
+
+00:19:10,000 --> 00:19:13,000
+and then with the first-order whole so the first step then
+பின்னர் முதல் வரிசையில் முழு முதல் படி பின்னர்
+
+00:19:13,000 --> 00:19:17,000
+is the sample the continuous-time signal
+மாதிரி தொடர்ச்சியான நேர சமிக்ஞை ஆகும்
+
+00:19:17,000 --> 00:19:21,000
+and we show here at the set of samples once again
+மீண்டும் ஒரு முறை நாம் மாதிரிகள் தொகுப்பு இங்கே காண்பிக்கிறோம்
+
+00:19:21,000 --> 00:19:25,000
+superimposed on which we have the continuous-time signal
+நாங்கள் தொடர்ந்து நேர சமிக்ஞை வேண்டும் இது விதிக்கப்பட்ட
+
+00:19:25,000 --> 00:19:28,000
+which of course is exactly the same curve as
+நிச்சயமாக இது போலவே வளைவு
+
+00:19:28,000 --> 00:19:31,000
+we have in the top well let's
+நாங்கள் அனுமதிக்க நன்கு மேல் வேண்டும்
+
+00:19:31,000 --> 00:19:34,000
+remove that envelope so that we focus attention
+நாம் கவனத்தை செலுத்த அதனால் உறை நீக்க
+
+00:19:34,000 --> 00:19:37,000
+on the samples that were using to interpolate
+இடைச்செருக பயன்படுத்தி என்று மாதிரிகள்
+
+00:19:37,000 --> 00:19:42,000
+any interpolation process consists love replacing each sample
+எந்த இடைச்செருகல் செயல்முறை ஒவ்வொரு மாதிரி பதிலாக காதல் கொண்டிருக்கிறது
+
+00:19:42,000 --> 00:19:46,000
+by a rectangular signal
+ஒரு செவ்வக சமிக்ஞை மூலம்
+
+00:19:46,000 --> 00:19:49,000
+whose amplitude is equal to the sample size
+அதன் வீச்சு மாதிரி அளவு சமமாக
+
+00:19:49,000 --> 00:19:53,000
+so let's put one first of all at equal 0 Associated
+எனவே சம 0 அசோசியேட்டட் அனைத்து ஒன்று முதல் வைத்து விடுங்கள்
+
+00:19:53,000 --> 00:19:56,000
+with that sample
+என்று மாதிரி
+
+00:19:56,000 --> 00:20:02,000
+and that then would be the interpolating rectangle associated with the sample at
+அந்த மாதிரி நேரத்தில் தொடர்புடைய இடைக்கணிப்பிடுதல் செவ்வகம் இருக்கும்
+
+00:20:02,000 --> 00:20:04,000
+equal 0
+சம 0
+
+00:20:04,000 --> 00:20:08,000
+now to build up the interpolation what will have is one of those that each
+இப்போது என்ன இடைச்செருகல் கட்டியெழுப்ப ஒவ்வொரு அந்த ஒன்றாகும்
+
+00:20:08,000 --> 00:20:10,000
+sample time and those are
+மாதிரி நேரத்தில் அந்த இருக்கின்றன
+
+00:20:10,000 --> 00:20:14,000
+added together will start that process as we did before
+நாம் முன்பு செய்தது போல் ஒன்றாக சேர்க்க என்று துவங்கும்
+
+00:20:14,000 --> 00:20:17,000
+at the left hand and that the set of samples
+இடது கை மற்றும் மாதிரிகள் தொகுப்பு
+
+00:20:17,000 --> 00:20:21,000
+and build the interpolating signal on the bottom so
+கீழே இடைக்கணிப்பிடுதல் சமிக்ஞை உருவாக்க எனவே
+
+00:20:21,000 --> 00:20:24,000
+with the left hand sample we have first
+இடது கை மாதிரி நாம் முதலில் வேண்டும்
+
+00:20:24,000 --> 00:20:28,000
+the rectangle associated with that that shown
+காட்டப்பட்டது என்று தொடர்புடைய செவ்வகம்
+
+00:20:28,000 --> 00:20:32,000
+now on the bottom curve we now
+இப்போது கீழே வளைவு நாம் இப்போது
+
+00:20:32,000 --> 00:20:35,000
+have a senator plating rectangle with the second
+இரண்டாவது ஒரு செனட்டர் முலாம் செவ்வகம் வேண்டும்
+
+00:20:35,000 --> 00:20:40,000
+sample that gets headed into the bottom curve
+கீழே வளைவு தலைமையில் விடும் என்று மாதிரி
+
+00:20:40,000 --> 00:20:44,000
+similarly and interpolating rectangle for the zero-order hold
+இதேபோல் மற்றும் பூஜ்யம் ஒழுங்கு வைத்திருப்பதற்கு செவ்வகம் இடைக்கணிப்பிடுதல்
+
+00:20:44,000 --> 00:20:49,000
+with the third sample we had bad in to the bottom curve
+மூன்றாவது மாதிரி நாம் கீழே வளைவு மோசமான இருந்தது
+
+00:20:49,000 --> 00:20:53,000
+and as we proceed we're building a staircase approximation
+நாம் தொடர நாம் ஒரு மாடி படிக்கட்டு தோராய கட்டி
+
+00:20:53,000 --> 00:20:57,000
+on to the next sample that gets added in
+சேர்க்கப்படும் விடும் என்று அடுத்த மாதிரி மீது
+
+00:20:57,000 --> 00:21:00,000
+as we see the air and now lets speed up the process
+நாம் காற்றில் பார்க்க இப்போது வழிமுறைகளை வேகப்படுத்த முடியும் என
+
+00:21:00,000 --> 00:21:03,000
+and we'll see the staircase approximation
+நாம் மாடி படிக்கட்டு தோராய பார்க்க வேண்டும்
+
+00:21:03,000 --> 00:21:07,000
+building up and notice in this case
+இந்த வழக்கில் அறிவிப்பு கட்டி
+
+00:21:07,000 --> 00:21:11,000
+as in the previous case that what we're basically watching dynamically
+நாம் அடிப்படையில் மாறும் பார்த்து என்ன என்று முந்தைய வழக்கில்
+
+00:21:11,000 --> 00:21:16,000
+is the convolution love the imposed strain of samples
+சுழற்சி மாதிரிகள் திணிக்கப்பட்ட திரிபு அன்பு
+
+00:21:16,000 --> 00:21:19,000
+with the impulse response the interpolating filter
+உந்துவிசை பதில் இடைக்கணிப்பிடுதல் வடிகட்டி
+
+00:21:19,000 --> 00:21:24,000
+which in this particular case is just a rectangular Paul's
+இந்த குறிப்பிட்ட வழக்கில் ஒரு செவ்வக பால் இது
+
+00:21:24,000 --> 00:21:28,000
+and so this staircase approximation that we're generating
+நாம் உருவாக்கும் என்று இந்த மாடி படிக்கட்டு தோராய
+
+00:21:28,000 --> 00:21:31,000
+is the zero-order hold interpolation
+பூஜ்யம் ஒழுங்கு நிறுத்தி இடைக்கணிப்பு ஆகும்
+
+00:21:31,000 --> 00:21:34,000
+between the samples I love the
+மாதிரிகள் இடையே நான் நேசிக்கிறேன்
+
+00:21:34,000 --> 00:21:41,000
+ban limited signal which is at the top
+மேலே இது குறைந்த சமிக்ஞை தடை
+
+00:21:41,000 --> 00:21:46,000
+now let's do the same thing with the first-order whole so in this case
+இப்போது முதல் வரிசையில் முழு அதே விஷயம் செய்வோம் அதனால், இந்த வழக்கில்
+
+00:21:46,000 --> 00:21:51,000
+we want to interpolate using a triangular impulse response
+நாம் ஒரு முக்கோண உந்துவிசை பதில் பயன்படுத்தி இடைக்கணிப்பு செய்யவேண்டிய
+
+00:21:51,000 --> 00:21:55,000
+rather than the sin x over X or rectangular impulse responses that we
+மாறாக எக்ஸ் அல்லது செவ்வக உந்துவிசை மறுமொழிகள் மீது sin x விட நாம்
+
+00:21:55,000 --> 00:21:56,000
+showed previously
+முன்பு காட்டியது
+
+00:21:56,000 --> 00:22:01,000
+so first let's say with the sample it equals 0
+எனவே முதலில் அதை 0 சமமாக மாதிரி சொல்கிறேன்
+
+00:22:01,000 --> 00:22:06,000
+we would replace that with a triangular
+நாம் ஒரு முக்கோண என்று பதிலாக என்று
+
+00:22:06,000 --> 00:22:09,000
+interpolating function and more generally
+பொதுவாக செயல்பாடு இடைக்கணிப்பிடுதல் மற்றும்
+
+00:22:09,000 --> 00:22:13,000
+each in polls or sample is replaced with a triangular
+தேர்தல் அல்லது மாதிரி ஒவ்வொரு ஒரு முக்கோண மாற்றப்படும்
+
+00:22:13,000 --> 00:22:17,000
+interpolating function of the height equal to the sample height
+மாதிரி உயரம் சம உயரம் இடைக்கணிப்பிடுதல் செயல்பாடு
+
+00:22:17,000 --> 00:22:21,000
+and these are superposed to generate the linear interpolation
+இந்த நேர்கோட்டு இடைக்கணிப்பு உருவாக்க கணக்கிட்டு
+
+00:22:21,000 --> 00:22:24,000
+will begin this process with the leftmost
+இடப்புறம் உள்ள ஒன்றே இந்த செயல்பாடு தொடங்கும்
+
+00:22:24,000 --> 00:22:28,000
+sample and will build the superposition
+மாதிரிக்காக மற்றும் மேற்பொருந்துதல் உருவாக்க வேண்டும்
+
+00:22:28,000 --> 00:22:32,000
+below and the bottom curve so here
+கீழே கீழே வளைவு அதனால் இங்கே
+
+00:22:32,000 --> 00:22:35,000
+is the interpolating triangle for the
+ஐந்து இடைக்கணிப்பிடுதல் முக்கோண
+
+00:22:35,000 --> 00:22:40,000
+leftmost sample and now it's reproduced below
+இடப்புறம் உள்ள ஒன்றே மாதிரி, இப்போது அதை மீண்டும் பிரசுரிக்கப்பட்டுள்ளது தான்
+
+00:22:40,000 --> 00:22:45,000
+with the second sample we have an interpolating triangle which is added
+இரண்டாவது மாதிரி நாம் சேர்க்க இது ஒரு இடைக்கணிப்பிடுதல் முக்கோண வேண்டும்
+
+00:22:45,000 --> 00:22:46,000
+into the bottom
+கீழே
+
+00:22:46,000 --> 00:22:50,000
+curve and now on to the third sample
+வளைவு மற்றும் இப்போது மூன்றாவது மாதிரி மீது
+
+00:22:50,000 --> 00:22:55,000
+and again that interpolating triangle will be added onto
+மீண்டும் அந்த இடைக்கணிப்பிடுதல் முக்கோண மீது சேர்க்க வேண்டும்
+
+00:22:55,000 --> 00:22:59,000
+the curve that we've developed so far
+நாம் இதுவரை வளர்ந்த வளைவு
+
+00:22:59,000 --> 00:23:03,000
+and now on to the next sample
+இப்போது அடுத்த மாதிரி மீது
+
+00:23:03,000 --> 00:23:07,000
+we had that in there will speed up the process
+நாங்கள் அங்கு வழிமுறைகளை வேகப்படுத்த வேண்டும் என்று இருந்தது
+
+00:23:07,000 --> 00:23:10,000
+and as we proceed through
+நாம் தொடரும்போது
+
+00:23:10,000 --> 00:23:15,000
+we are building basically a linear interpolation
+நாம் அடிப்படையில் ஒரு நேர்கோட்டு இடைக்கணிப்பு கட்டி
+
+00:23:15,000 --> 00:23:18,000
+in between the sample points
+மாதிரி புள்ளிகள் இடையே உள்ள
+
+00:23:18,000 --> 00:23:22,000
+a sexually corresponding to if one wants to think of it this way connecting the
+இணைக்கும் ஒரு இது என்று விரும்பினால் பாலியல் தொடர்பான இந்த வழியில்
+
+00:23:22,000 --> 00:23:23,000
+dots
+புள்ளிகள்
+
+00:23:23,000 --> 00:23:28,000
+and what you're watching once again is essentially the convolution process
+என்ன நீங்கள் மீண்டும் பார்த்து வருகிறோம் அடிப்படையில் சுழற்சி செயல்பாடு
+
+00:23:28,000 --> 00:23:32,000
+involving the impulse train with the impulse response
+உந்துவிசை பதில் உந்துவிசை ரயில் சம்பந்தப்பட்ட
+
+00:23:32,000 --> 00:23:36,000
+the interpolating filter and what we're generating then
+வடிகட்டி இடைக்கணிப்பிடுதல் மற்றும் நாம் உருவாக்கும் என்ன
+
+00:23:36,000 --> 00:23:40,000
+is a linear approximation
+ஒரு நேர்கோட்டு தோராய
+
+00:23:40,000 --> 00:23:47,000
+to the fam limited continuous-time curve at the top
+மேல் தனியார் வரையறுக்கப்பட்ட தொடர்ச்சியான நேர வளைவு
+
+00:23:48,000 --> 00:23:52,000
+okay so what we have then is
+சரி, அதனால் என்ன நாம் வேண்டும் ஆகிறது
+
+00:23:52,000 --> 00:23:56,000
+several other kinds of interpolation which
+இடைச்செருகல் பல வகையான இது
+
+00:23:56,000 --> 00:23:59,000
+fit within the same context as
+அதே சூழலில் பொருந்தும்
+
+00:23:59,000 --> 00:24:03,000
+exact ban limit interpolation one being
+சரியான தடையை எல்லை இடைச்செருகல் ஒரு இருப்பு
+
+00:24:03,000 --> 00:24:08,000
+interpolation in the time domain with an impulse response which is a rectangle
+ஒரு செவ்வக இது ஒரு உந்துவிசை பதில் நேரம் டொமைன் இடைச்செருகல்
+
+00:24:08,000 --> 00:24:11,000
+the second being interpolation in the time domain
+நேரம் களத்தில் இரண்டாவது இடைச்செருகல்
+
+00:24:11,000 --> 00:24:15,000
+with an impulse response which is a triangle
+ஒரு முக்கோண இது ஒரு உந்துவிசை பதில்
+
+00:24:15,000 --> 00:24:18,000
+and in fact its interesting to also
+மற்றும் உண்மையில் அதன் சுவாரஸ்யமான கூட
+
+00:24:18,000 --> 00:24:22,000
+look at the relationship between at and ban limit interpolation
+மற்றும் தடை எல்லை இடைச்செருகல் இடையிலான உறவை பார்க்க
+
+00:24:22,000 --> 00:24:27,000
+look at it specifically in the frequency domain
+அதிர்வெண் களத்தில் குறிப்பாக அதை பார்க்க
+
+00:24:27,000 --> 00:24:30,000
+well in the frequency-domain
+அதே அதிர்வெண் களத்தில்
+
+00:24:30,000 --> 00:24:35,000
+what we know of course is dead for exact interpolation
+நாம் நிச்சயமாக தெரியும் சரியான இடைச்செருகல் இறந்த ஆகிறது
+
+00:24:35,000 --> 00:24:40,000
+what we want as our interpolating filter is an ideal Lopez filter
+என்ன எங்கள் இடைக்கணிப்பிடுதல் வடிகட்டி வேண்டும் ஒரு சிறந்த லோபஸ் வடிகட்டி ஆகிறது
+
+00:24:40,000 --> 00:24:45,000
+now keep in mind by the way that an idea low-pass filter is an abstraction is a
+இப்போது ஒரு யோசனை குறைந்த பாஸ் வடிகட்டி ஒரு சுருக்க என்று மூலம் மனதில் வைத்து ஒரு
+
+00:24:45,000 --> 00:24:49,000
+stress several times in the past an idea low-pass filter
+கடந்த காலத்தில் பல முறை வலியுறுத்தி ஒரு யோசனை குறைந்த பாஸ் வடிகட்டி
+
+00:24:49,000 --> 00:24:54,000
+is a9 causal filter and in fact infinite extent which is
+A9 காரண வடிகட்டி மற்றும் இது உண்மையில் முடிவிலா அளவிற்கு உள்ளது
+
+00:24:54,000 --> 00:24:58,000
+one of the reasons why in any case we would you some approximation to it
+நாம் அது நீங்கள் சில தோராய என்று ஏன் எந்த வழக்கு காரணங்களில் ஒன்றாகும்
+
+00:24:58,000 --> 00:25:02,000
+but here what we have is the
+ஆனால் இங்கே என்ன நாம் ஆகிறது
+
+00:25:02,000 --> 00:25:05,000
+exact interpolating filter
+சரியான வடிகட்டி இடைக்கணிப்பிடுதல்
+
+00:25:05,000 --> 00:25:11,000
+and that corresponds to an ideal 0 pass filter
+என்று ஒரு சிறந்த 0 பாஸ் வடிகட்டி ஒத்துள்ளது
+
+00:25:11,000 --> 00:25:16,000
+if instead we carried out the interpolation
+அதற்கு பதிலாக நாம் இடைச்செருகல் செயல்படுத்தப்பட்டால்
+
+00:25:16,000 --> 00:25:20,000
+using the zero-order hold the zero-order hold has a
+பூஜ்யம் ஒழுங்கு நிறுத்தி நடத்த பூஜ்யம் ஒழுங்கு பயன்படுத்தி ஒரு
+
+00:25:20,000 --> 00:25:25,000
+rectangular impulse response and that means in the frequency domain
+உந்துவிசை பதில் செவ்வக மற்றும் அதிர்வெண் களத்தில் பொருள்
+
+00:25:25,000 --> 00:25:28,000
+its frequency response is of the form love
+அதன் அதிர்வெண் மறுமொழி படிவம் காதல் இருக்கிறது
+
+00:25:28,000 --> 00:25:31,000
+a sync function or sin x over iraq's
+ஈராக்கின் மீது ஒத்திசைவு செயல்பாடு அல்லது sin x
+
+00:25:31,000 --> 00:25:35,000
+and so this in fact when we're doing the reconstruction
+அதனால் இந்த உண்மையை நாம் புனரமைப்பு செய்யும் போது
+
+00:25:35,000 --> 00:25:40,000
+with a zero-order hold is The Associated frequency response
+ஒரு பூஜ்யம் ஒழுங்கு நிறுத்தி தொடர்புடைய அதிர்வெண் மறுமொழி ஆகிறது
+
+00:25:40,000 --> 00:25:46,000
+now notice that it does some approximate Lopez filtering but of course
+இப்போது அது சில தோராயமான லோபஸ் வடித்தல் என்று கவனிக்கிறது ஆனால் நிச்சயமாக
+
+00:25:46,000 --> 00:25:50,000
+it has significant it permits significant energy
+அது குறிப்பிடத்தக்க ஆற்றல் அனுமதிக்கிறது குறிப்பிடத்தக்க உள்ளது
+
+00:25:50,000 --> 00:25:53,000
+outside the pass band at the filter
+வடிகட்டி பாஸ் இசைக்குழு வெளியே
+
+00:25:53,000 --> 00:25:58,000
+well instead the zero-order hold if we use the first-order hold corresponding
+நன்கு பதிலாக பூஜ்யம் ஒழுங்கு நிறுத்தி நாங்கள் தொடர்புடைய முதல் வரிசையில் நிறுத்தி பயன்படுத்தினால்
+
+00:25:58,000 --> 00:26:01,000
+to the triangular impulse response
+முக்கோண உந்துவிசை பதில்
+
+00:26:01,000 --> 00:26:05,000
+in that case then in the frequency domain The Associated
+அந்த வழக்கில் அதிர்வெண் களத்தில் அசோசியேட்டட் உள்ள
+
+00:26:05,000 --> 00:26:09,000
+frequency response would be the forty a transformer the triangle
+அதிர்வெண் மறுமொழி ஒரு மின்மாற்றி முக்கோண நாற்பது இருக்கும்
+
+00:26:09,000 --> 00:26:13,000
+and the Fourier transform a triangle is a sin squared
+மற்றும் ஃபோரியர் ஒரு முக்கோணம் ஸ்கொயர் ஒரு பாவம் மாற்றும்
+
+00:26:13,000 --> 00:26:16,000
+X over X where'd kinda function
+எக்ஸ் மேல் எக்ஸ் போயின கிரகமாக செயல்பாடு
+
+00:26:16,000 --> 00:26:19,000
+and so in that case what we would have
+அதனால் அந்த வழக்கில் நாம் என்ன வேண்டும்
+
+00:26:19,000 --> 00:26:23,000
+for the frequency response associated with the first-order hold
+முதல் வரிசையில் நிறுத்தி தொடர்புடைய அதிர்வெண் பதில்
+
+00:26:23,000 --> 00:26:27,000
+is a frequency response as I show here
+நான் இங்கே காட்ட ஒரு அதிர்வெண் மறுமொழி ஆகிறது
+
+00:26:27,000 --> 00:26:33,000
+and the fact dead that there's somewhat more attenuation
+சற்றே மற்றும் தேய்வு இல்லை என்று இறந்த உண்மையில்
+
+00:26:33,000 --> 00:26:36,000
+outside the pass band at the ideal filter
+சிறந்த வடிகட்டி பாஸ் இசைக்குழு வெளியே
+
+00:26:36,000 --> 00:26:42,000
+is what suggests in fact dead the first-order hold or linear interpolation
+உண்மையில் இறந்த முதல் வரிசையில் நிறுத்தி அல்லது நேர்கோட்டு இடைக்கணிப்பு அறிவுறுத்துகிறது என்ன ஆகிறது
+
+00:26:42,000 --> 00:26:46,000
+gives us a somewhat smoother approximation to the original
+அசல் எங்களை சற்று மென்மையான தோராய கொடுக்கிறது
+
+00:26:46,000 --> 00:26:49,000
+signal then the zero-order hold does
+பின்னர் பூஜ்யம் ஒழுங்கு நிறுத்தி இல்லை சமிக்ஞை
+
+00:26:49,000 --> 00:26:52,000
+and so in fact just to compare these two
+எனவே உண்மையில் இந்த இரண்டு ஒப்பிட்டு
+
+00:26:52,000 --> 00:26:56,000
+we can see that here is
+நாம் இங்கே உள்ளது என்று பார்க்க முடியும்
+
+00:26:56,000 --> 00:26:59,000
+the ideal filter here is
+இங்கே சிறந்த வடிகட்டி ஆகிறது
+
+00:26:59,000 --> 00:27:02,000
+the zero-order hold corresponding to
+பூஜ்யம் ஒழுங்கு நிறுத்தி தொடர்புடைய
+
+00:27:02,000 --> 00:27:05,000
+generating a boxcar kinda reconstruction
+ஒரு பாக்ஸ்கார் கிரகமாக புனரமைப்பு உருவாக்கும்
+
+00:27:05,000 --> 00:27:12,000
+and here is the first order hold corresponding to a linear interpolation
+இங்கே முதல் வரிசையில் நிறுத்தி ஒரு நேர்கோட்டு இடைக்கணிப்பு தொடர்புடைய
+
+00:27:12,000 --> 00:27:16,000
+now in fact in many sampling systems
+இப்போது உண்மையில் பல மாதிரி அமைப்புகள்
+
+00:27:16,000 --> 00:27:20,000
+in any sampling system really we need to use some approximation
+எந்த மாதிரி அமைப்பு உண்மையில் நாம் சில தோராய பயன்படுத்த வேண்டும்
+
+00:27:20,000 --> 00:27:25,000
+to the low-pass filter and very often in fact
+குறைந்த பாஸ் வடிகட்டி மற்றும் மிக பெரும்பாலும் உண்மையில்
+
+00:27:25,000 --> 00:27:29,000
+what is done in many sampling systems is the first to use
+என்ன பல மாதிரி அமைப்புகள் செய்யப்படுகிறது பயன்படுத்த முதல் ஆகிறது
+
+00:27:29,000 --> 00:27:33,000
+just a zero-order hold and then follow the zero-order hold
+ஒரு பூஜ்யம் ஒழுங்கு பிடித்து பின்னர் பூஜ்யம் ஒழுங்கு நிறுத்தி பின்பற்ற
+
+00:27:33,000 --> 00:27:37,000
+with some additional 0 pass filtering
+சில கூடுதல் 0 பாஸ் வடிகட்டி
+
+00:27:37,000 --> 00:27:41,000
+well to illustrate some with these ideas
+இந்த கருத்துக்கள் சில விளக்குவதற்கு
+
+00:27:41,000 --> 00:27:44,000
+and the notion love doing reconstruction
+மற்றும் கருத்து புனரமைப்பு செய்து
+
+00:27:44,000 --> 00:27:48,000
+with a zero-order hold a first-order hold and then in fact
+ஒரு பூச்சிய வரிசை உண்மையில் பின்னர் முதல் வரிசையில் நிறுத்தி வைத்து
+
+00:27:48,000 --> 00:27:53,000
+are ending to that some additional 0 pass filtering
+என்று சில கூடுதல் 0 பாஸ் வடிகட்டி முடிவுக்கு
+
+00:27:53,000 --> 00:27:57,000
+what I'd like to do is is demonstrator illustrate
+நான் செய்ய விரும்புகிறேன் என்ன ஆர்ப்பாட்டக்காரர் விளக்குவதற்கு உள்ளது
+
+00:27:57,000 --> 00:28:01,000
+sampling and interpolation in the context love some images
+பின்னணியில் மாதிரி மற்றும் இடைச்செருகல் சில படங்களை நேசிக்கிறேன்
+
+00:28:01,000 --> 00:28:05,000
+image of course is a two-dimensional signal the
+நிச்சயமாக படத்தை ஒரு இரு பரிமாண சமிக்ஞை ஆகும்
+
+00:28:05,000 --> 00:28:09,000
+the independent variables are spatial variables not time variables
+மாற்றளவுகள் வெளி மாறிகள் மாறிகள் நேரத்தில் இல்லை
+
+00:28:09,000 --> 00:28:15,000
+and of course we can sample in both or the spatial dimensions both in X&Y
+மற்றும் நிச்சயமாக நாம் எக்ஸ் & ஒய் இரண்டு இரண்டு அல்லது வெளி சார்ந்த பரிமாணங்களில் உள்ள மாதிரிக்காக முடியும்
+
+00:28:15,000 --> 00:28:19,000
+and were chosen as so
+அதனால் தேர்வு செய்யப்பட்டனர்
+
+00:28:19,000 --> 00:28:22,000
+a possibly appropriate choice for
+ஒரு சாத்தியமான சரியான தேர்வு
+
+00:28:22,000 --> 00:28:29,000
+an image is again our friend and colleague JBJ 48
+ஒரு படத்தை மீண்டும் எங்கள் நண்பர் மற்றும் சக தாலி கட்டும் 48 ஆகிறது
+
+00:28:29,000 --> 00:28:33,000
+so let's begin with the original image which we then
+எனவே அசல் படத்தை ஆரம்பிக்கலாம் நாம் பிறகு
+
+00:28:33,000 --> 00:28:38,000
+want to sample and reconstruct and a sampling is done by
+மாதிரிக்காக மற்றும் மீள் வேண்டும் மற்றும் ஒரு மாதிரி செய்யப்படுகிறது
+
+00:28:38,000 --> 00:28:43,000
+effectively multiplying by appalls both horizontally and vertically
+திறம்பட இரண்டு கிடைமட்டமாக மற்றும் செங்குத்தாக appalls பெருக்குவதன்
+
+00:28:43,000 --> 00:28:46,000
+the sample picture is then the next one
+மாதிரி படம் பின்னர் அடுத்த ஒரு ஆகிறது
+
+00:28:46,000 --> 00:28:51,000
+that I show and as you can see this corresponds in effect
+நான் காண்பிக்கிறேன் நீங்கள் பார்க்க முடியும் என இந்த விளைவு ஒத்துள்ளது என்று
+
+00:28:51,000 --> 00:28:55,000
+to extracting small brightness elements I did the original image in fact
+சிறிய பிரகாசம் உறுப்புகள் பிரித்தெடுக்கும் நான் உண்மையில் அசல் படத்தை செய்தார்
+
+00:28:55,000 --> 00:29:01,000
+let's look in a little closer and what you can see essentially is that
+ஒரு சிறிய நெருக்கமாக பாருங்கள் நாம் என்ன அடிப்படையில் பார்க்க முடியும் என்று
+
+00:29:01,000 --> 00:29:04,000
+well we have of course tonight impulses spatially but
+நன்றாக நாம் வான்வெளியில் நிச்சயமாக இன்றிரவு தூண்டுதலின் வேண்டும் ஆனால்
+
+00:29:04,000 --> 00:29:07,000
+small spatial pillars dead
+சிறிய வெளி தூண்கள் இறந்த
+
+00:29:07,000 --> 00:29:11,000
+implement the sampling for us okay now
+சரி இப்போது நமக்கு மாதிரி செயல்படுத்த
+
+00:29:11,000 --> 00:29:15,000
+going back to the original sample picture
+அசல் மாதிரி படம் செல்கிறேன்
+
+00:29:15,000 --> 00:29:19,000
+we know that a picture can be reconstructed by low-pass filtering from
+நாம் ஒரு படத்தை குறைந்த பாஸ் வடிகட்டி மூலம் மறுகட்டுமானம் முடியும் என்று எனக்கு தெரியும்
+
+00:29:19,000 --> 00:29:21,000
+the samples and in fact
+மாதிரிகள் மற்றும் உண்மையில்
+
+00:29:21,000 --> 00:29:26,000
+we can do that optically in this case by simply d focusing the camera
+நாங்கள் வெறுமனே கேமரா கவனம் டி இந்த வழக்கில் அந்த ஒளிவழி செய்ய முடியும்
+
+00:29:26,000 --> 00:29:31,000
+and when we do that what happens is that we smear out the picture
+மற்றும் போது நாம் என்ன நடக்கும் நாம் படம் பூசும் என்று என்று
+
+00:29:31,000 --> 00:29:35,000
+or affectively convolved the impulses with the point spread function of the
+அல்லது திரியும் புள்ளி பரவல் செயல்பாடு தூண்டுதலின் convolved
+
+00:29:35,000 --> 00:29:36,000
+optical system
+ஆப்டிகல் அமைப்பு
+
+00:29:36,000 --> 00:29:40,000
+an this then is not too bad a reconstruction
+ஒரு பின்னர் இது மிக மோசமான ஒரு புனரமைப்பு அல்ல
+
+00:29:40,000 --> 00:29:46,000
+so thats a an approximate reconstruction and focusing back now
+அதனால் ஒரு ஒரு தோராயமான புனரமைப்பு மற்றும் இப்போது மீண்டும் கவனம் ஸ்டைல்
+
+00:29:46,000 --> 00:29:53,000
+what we have again is the sample picture
+என்ன நாம் மீண்டும் மாதிரி படம் ஆகிறது
+
+00:29:53,000 --> 00:29:57,000
+now these images are in fact a can often of
+இப்போது இந்த படங்களை உண்மையில் ஒரு முடியும் அடிக்கடி
+
+00:29:57,000 --> 00:30:01,000
+a computer display and a common procedure in
+ஒரு கணினி காட்சி மற்றும் ஒரு பொதுவான நடைமுறை
+
+00:30:01,000 --> 00:30:05,000
+computer-generated are displayed image is is in fact
+கணினி உருவாக்கப்பட்ட காட்டப்படும் படத்தை உண்மையில் ஆகிறது
+
+00:30:05,000 --> 00:30:10,000
+the use of a zero-order hold and if the sampling rate is high enough
+ஒரு பூஜ்யம் ஒழுங்கு பிடியை மற்றும் பயன்பாட்டிற்கு மாதிரி விகிதம் போதுமான அளவு அதிகமாக உள்ளது
+
+00:30:10,000 --> 00:30:14,000
+then that actually works reasonably well so now
+பின்னர் அந்த உண்மையில் இப்போது நியாயமான நன்றாக வேலை
+
+00:30:14,000 --> 00:30:17,000
+let's look at the result of applying a zero-order hold
+ஒரு பூஜ்யம் ஒழுங்கு நிறுத்தி விண்ணப்பிக்கும் விளைவாக பார்போம்
+
+00:30:17,000 --> 00:30:20,000
+to the sampled image that I
+சோதனை படம் என்று நான்
+
+00:30:20,000 --> 00:30:24,000
+just showed
+தான் காட்டியது
+
+00:30:24,000 --> 00:30:29,000
+the zero-order hold corresponds to replacing the impulses by
+பூஜ்யம் ஒழுங்கு நிறுத்தி மூலம் தூண்டுதலின் பதிலாக ஒத்துள்ளது
+
+00:30:29,000 --> 00:30:33,000
+rectangles and you can see that what that generates
+செவ்வக மற்றும் நீங்கள் அந்த உருவாக்கும் என்று பார்க்க முடியும்
+
+00:30:33,000 --> 00:30:36,000
+is a mosaic affect as you would
+நீங்கள் ஒரு மொசைக் பாதிக்கிறது
+
+00:30:36,000 --> 00:30:40,000
+expect and in fact let's going a little closer and
+எதிர்பார்க்க மற்றும் உண்மையில் ஒரு சிறிய நெருக்கமாக சென்று நாம்
+
+00:30:40,000 --> 00:30:44,000
+emphasize the mosaic affect you can see that essentially where they were
+மொசைக் நீங்கள் அந்த அடிப்படையில், அவர்கள் அங்கு பார்க்க முடியும் பாதிக்கும் வலியுறுத்த
+
+00:30:44,000 --> 00:30:46,000
+impulses previously
+தூண்டுதலின் முன்பு
+
+00:30:46,000 --> 00:30:50,000
+there are now rectangles with those brightness values
+அந்த பிரகாசம் மதிப்புகள் செவ்வகங்கள் இப்போது உள்ளன
+
+00:30:50,000 --> 00:30:55,000
+a very common procedure with computer-generated images is the first
+கணினியால் உருவாக்கப்பட்ட உருவங்களை கொண்ட ஒரு மிக பொதுவான நடைமுறை முதல் ஆகிறது
+
+00:30:55,000 --> 00:30:58,000
+20 order holders we've done here
+நாம் இங்கே செய்துவிட்டேன் 20 பொருட்டு வைத்திருப்பவர்கள்
+
+00:30:58,000 --> 00:31:03,000
+and then follow that with some additional ok pass filtering and in fact
+பின்னர் சில கூடுதல் சரியா பாஸ் வடிகட்டி மற்றும் உண்மையில் அந்த பின்பற்ற
+
+00:31:03,000 --> 00:31:07,000
+we can do that low pass filtering now again by D focusing the camera
+நாம் கேமரா கவனம் டி இப்போது மீண்டும் அந்த குறைந்த பாஸ் வடிகட்டி செய்ய முடியும்
+
+00:31:07,000 --> 00:31:11,000
+and you can't begin to see
+நீங்கள் பார்க்க தொடங்க முடியாது
+
+00:31:11,000 --> 00:31:15,000
+dead with the zero-order all plus the low-pass filtering the reconstruction is
+பூஜ்யம் ஒழுங்கு அனைத்து பிளஸ் குறைந்த பாஸ் புனரமைப்பு வடிகட்டி இறந்து
+
+00:31:15,000 --> 00:31:17,000
+not that bad
+அந்த கெட்ட இல்லை
+
+00:31:17,000 --> 00:31:20,000
+well let's go back to the full
+நன்றாக முழு திரும்பி செல்லலாம்
+
+00:31:20,000 --> 00:31:23,000
+image with the zero-order hold
+பூஜ்யம் ஒழுங்கு நிறுத்தி படத்தை
+
+00:31:23,000 --> 00:31:29,000
+and again now the effective low pass filter I will be
+மீண்டும் இப்போது பயனுள்ள குறைந்த பாஸ் வடிகட்டி நான் இருப்பேன்
+
+00:31:29,000 --> 00:31:33,000
+somewhat better and let's tee focus again year
+ஓரளவு சிறப்பாக மற்றும் நாம் டி கவனம் மீண்டும் ஆண்டு
+
+00:31:33,000 --> 00:31:36,000
+and you can begin to see that this is
+நீங்கள் இந்த என்று பார்க்க தொடங்க முடியும்
+
+00:31:36,000 --> 00:31:40,000
+a reasonable reconstruction with the mosaic
+மொசைக் ஒரு நியாயமான புனரமைப்பு
+
+00:31:40,000 --> 00:31:44,000
+in fact with this back in focus you can
+நீங்கள் கவனம் இந்த மீண்டும் உண்மையில்
+
+00:31:44,000 --> 00:31:48,000
+apply your own low-pass filtering to it either by squinting
+squinting மூலம் அல்லது அது உங்கள் சொந்த குறைந்த பாஸ் வடிகட்டி விண்ணப்பிக்க
+
+00:31:48,000 --> 00:31:52,000
+or if you have the right or wrong kind of my classes either taking them off for
+அல்லது நீங்கள் சரியான அல்லது என் வகுப்புகள் தவறு வகையான அவற்றை எடுத்து அல்லது இருந்தால்
+
+00:31:52,000 --> 00:31:55,000
+putting them on
+அவர்கள் மீது போடுவதற்கு
+
+00:31:55,000 --> 00:32:00,000
+now in addition to the zero-order hold weekend of course apply a first-order
+இப்போது நிச்சயமாக பூஜ்யம் ஒழுங்கு நிறுத்தி வார கூடுதலாக ஒரு முதல் வரிசையில் விண்ணப்பிக்க
+
+00:32:00,000 --> 00:32:02,000
+hold and that would
+பிடித்து இருக்கும் என்று
+
+00:32:02,000 --> 00:32:07,000
+correspond to replacing the impulses instead of with rectangles as we have
+நாம் வேண்டும் என செவ்வகங்கள் தூண்டுதலின் பதிலாக பதிலாக ஒத்திருக்கும்
+
+00:32:07,000 --> 00:32:08,000
+here
+இங்கே
+
+00:32:08,000 --> 00:32:11,000
+replacing them with triangles an
+முக்கோணங்கள் அவர்களுக்கு பதிலாக ஒரு
+
+00:32:11,000 --> 00:32:15,000
+so now let's take a look at the result all a first-order hold applied to the
+எனவே இப்போது விளைவாக பாருங்கள் நாம் பயன்படுத்தப்படும் அனைத்து முதல் வரிசையில் நிறுத்தி
+
+00:32:15,000 --> 00:32:18,000
+original samples
+அசல் மாதிரிகள்
+
+00:32:18,000 --> 00:32:22,000
+and you can see now that the reconstruction is somewhat smoother
+நீங்கள் புனரமைப்பு சற்றே மென்மையான என்று இப்போது பார்க்க முடியும்
+
+00:32:22,000 --> 00:32:25,000
+because the fact that we're using an impulse response
+ஏனெனில் நாம் ஒரு உந்துவிசை பதில் பயன்படுத்தி வருகிறோம் என்பதை
+
+00:32:25,000 --> 00:32:29,000
+that somewhat smoother or a corresponding frequency response that
+என்று சற்றே மென்மையான அல்லது ஒரு தொடர்புடைய அதிர்வெண் பதில்
+
+00:32:29,000 --> 00:32:31,000
+has a sharper cut off
+ஒரு கூர்மையான துண்டித்து விட்டது
+
+00:32:31,000 --> 00:32:35,000
+i emphasize again that this is a somewhat low pass filtered version of
+நான் இந்த ஒரு சற்றே குறைந்த பாஸ் வடிகட்டி பதிப்பு என்று மீண்டும் வலியுறுத்த
+
+00:32:35,000 --> 00:32:36,000
+the original because
+அசல், ஏனெனில்
+
+00:32:36,000 --> 00:32:39,000
+we have under sampled some what spatially
+நாம் கீழ் சில என்ன வான்வெளியில் சோதனை
+
+00:32:39,000 --> 00:32:46,000
+to bring out the point that I want to illustrate
+நான் விளக்க வேண்டும் என்று புள்ளி வெளியே கொண்டு வர
+
+00:32:46,000 --> 00:32:50,000
+okay to emphasize these effects
+சரி இந்த விளைவுகள் வலியுறுத்த
+
+00:32:50,000 --> 00:32:53,000
+even more what I'd like to do is go through
+இன்னும் நான் செய்ய விரும்புகிறேன் என்ன வழியாக செல்ல உள்ளது
+
+00:32:53,000 --> 00:32:57,000
+basically the same sequence again but in this case what we'll do
+அடிப்படையில் அதே காட்சியில் மீண்டும் ஆனால் நாம் என்ன செய்வேன் இந்த வழக்கில்
+
+00:32:57,000 --> 00:33:02,000
+is double the sample spacing both horizontal horizontally and vertically
+இரட்டை மாதிரி இரண்டு கிடைமட்ட கிடைமட்டமாக மற்றும் செங்குத்தாக இடைவெளி உள்ளது
+
+00:33:02,000 --> 00:33:07,000
+this of course means there will be even more highly under sampled been
+இந்த நிச்சயமாக இன்னும் மிகவும் சோதனை கீழ் இருக்கும் பொருள்
+
+00:33:07,000 --> 00:33:11,000
+in the ones that I preview show previously showed and so the result of
+நான் முன்னோட்டத்தை என்று தான் நிகழ்ச்சி முன்பு காட்டியது மற்றும் விளைவாக
+
+00:33:11,000 --> 00:33:14,000
+the reconstructions with some low pass filtering
+சில குறைந்த பாஸ் வடிகட்டி மறுகட்டுமானங்களை
+
+00:33:14,000 --> 00:33:18,000
+will be a much more low-pass filtered image
+மிகவும் குறைந்த பாஸ் வடிகட்டி பட வேண்டும்
+
+00:33:18,000 --> 00:33:24,000
+so we now have the sample picture but I've now under sampled considerably
+நாம் இப்போது மாதிரி படம் வேண்டும் ஆனால் நான் கணிசமாக சோதனை கீழ் இப்போது தான்
+
+00:33:24,000 --> 00:33:28,000
+more and you can see the effect of the sampling
+மேலும், நீங்கள் மாதிரி விளைவு பார்க்க முடியும்
+
+00:33:28,000 --> 00:33:31,000
+and if we now apply is zero-order hold
+நாம் இப்போது விண்ணப்பிக்க பூஜ்யம் ஒழுங்கு நடத்த உள்ளது
+
+00:33:31,000 --> 00:33:35,000
+to this picture we will again get a mosaic and lets
+இந்த படத்தை நாம் மீண்டும் ஒரு மொசைக் பெற உதவுகிறது
+
+00:33:35,000 --> 00:33:40,000
+look at that and that mosaic of course looks
+என்று பார்த்து நிச்சயமாக தோற்றம் என்று மொசைக்
+
+00:33:40,000 --> 00:33:44,000
+even block here than the original and again emphasizes the fact that the
+இங்கே கூட அசல் விட தடுக்க மீண்டும் உண்மையில் வலியுறுத்துகிறது
+
+00:33:44,000 --> 00:33:46,000
+zero-order hold
+பூஜ்யம் ஒழுங்கு நிறுத்தி
+
+00:33:46,000 --> 00:33:51,000
+simply corresponds to filling in squares or replacing the impulses
+வெறுமனே சதுரங்கள் பூர்த்தி அல்லது தூண்டுதலின் பதிலாக ஒத்துள்ளது
+
+00:33:51,000 --> 00:33:54,000
+by squares with the corresponding brightness
+தொடர்புடைய பிரகாசம் சதுரங்கள் மூலம்
+
+00:33:54,000 --> 00:33:59,000
+values finally if we instead of a zero-order hold
+மதிப்புகள் இறுதியாக என்றால் நாம் அதற்கு பதிலாக ஒரு பூஜ்யம் ஒழுங்கு நிறுத்தி
+
+00:33:59,000 --> 00:34:04,000
+use a first-order hold corresponding to two-dimensional triangles in places
+இடங்களில் இரு பரிமாண முக்கோணங்கள் தொடர்புடைய முதல் வரிசையில் நிறுத்தி பயன்படுத்த
+
+00:34:04,000 --> 00:34:08,000
+in place at these original blocks what we get is
+நாம் என்ன இந்த அசல் தொகுதிகள் இடத்தில்
+
+00:34:08,000 --> 00:34:13,000
+the next image and that again is a smoother reconstruction consistent with
+அடுத்த படத்தை என்று மீண்டும் இசைவானதாக ஒரு மென்மையான புனரமைப்பு உள்ளது
+
+00:34:13,000 --> 00:34:17,000
+the fact that the triangles are smoother than the rectangles
+முக்கோணங்கள் செவ்வக விட மென்மையான என்ற உண்மையை
+
+00:34:17,000 --> 00:34:21,000
+again i emphasize that this looks so highly low-pass filtered
+மீண்டும் நான் இந்த மிகவும் குறைந்த பாஸ் வடிகட்டி தெரிகிறது என்று வலியுறுத்த
+
+00:34:21,000 --> 00:34:25,000
+because of the fact that we've under sampled so severely
+ஏனெனில் நாம் கீழ் மிக கடுமையாக சோதனை செய்த உண்மையை
+
+00:34:25,000 --> 00:34:31,000
+to essentially emphasize the effect
+அடிப்படையில் விளைவு வலியுறுத்த
+
+00:34:31,000 --> 00:34:34,000
+as I mentioned the images that we
+நான் படங்களை குறிப்பிட்டுள்ள என்று நாம்
+
+00:34:34,000 --> 00:34:37,000
+just looked at were taken from a computer although
+ஒரு கணினி என்றாலும் இருந்து எடுத்து பார்த்து
+
+00:34:37,000 --> 00:34:40,000
+because the original images were continuous-time
+அசல் படங்களை தொடர்ந்து நேர ஏனெனில்
+
+00:34:40,000 --> 00:34:45,000
+images or more specifically continuous space that is the independent variable
+படங்களை அல்லது சுயாதீன மாறி இருக்கிறது என்று இன்னும் குறிப்பாக தொடர்ச்சியான விண்வெளி
+
+00:34:45,000 --> 00:34:46,000
+is a spatial variable
+ஒரு வெளி மாறி இருக்கிறது
+
+00:34:46,000 --> 00:34:50,000
+now computer processing
+இப்போது கணினி செயலாக்க
+
+00:34:50,000 --> 00:34:54,000
+love signals pictures speech or whatever the signals are
+காதல் சமிக்ஞைகளை படங்களை பேச்சு அல்லது என்ன சமிக்ஞைகள்
+
+00:34:54,000 --> 00:34:57,000
+is very important and useful because
+மிக முக்கியமான மற்றும் பயனுள்ளதாக இருக்கும், ஏனெனில்
+
+00:34:57,000 --> 00:35:02,000
+it offers a lot of flexibility and in fact the kinds of things that I showed
+அது வளைந்து நிறைய வழங்குகிறது மற்றும் நான் காட்டியது என்று விஷயங்கள் உண்மையில் வகையான
+
+00:35:02,000 --> 00:35:03,000
+these pictures
+இந்த படங்கள்
+
+00:35:03,000 --> 00:35:06,000
+would have been very hard to do without
+இல்லாமல் செய்ய மிகவும் கடினமாக இருந்திருக்கும்
+
+00:35:06,000 --> 00:35:10,000
+in fact doing computer processing
+உண்மையில் கணினி செயலாக்க செய்து
+
+00:35:10,000 --> 00:35:14,000
+well in computer processing %uh any kind of signal
+நன்கு கணினி செயலாக்க% உள்ள இம் சமிக்ஞை எந்த வகையான
+
+00:35:14,000 --> 00:35:18,000
+basically what's required is dead
+அடிப்படையில் என்ன தேவை இறந்த ஆகிறது
+
+00:35:18,000 --> 00:35:24,000
+we do the processing in the context of discrete-time signals and discrete-time
+நாம் தனித்தியங்கும் நேர சிக்னல்களை மற்றும் தனித்தியங்கும் நேர சூழலில் செயலாக்க செய்கிறோம்
+
+00:35:24,000 --> 00:35:25,000
+processing
+செயலாக்க
+
+00:35:25,000 --> 00:35:29,000
+because it the fact dead a computer is run off the clock
+அது உண்மையில் இறந்த ஒரு கணினி கடிகாரம் ஓடி ஏனெனில்
+
+00:35:29,000 --> 00:35:32,000
+and essentially things happen in the computer
+அடிப்படையில் விஷயங்களை கணினி நடக்கின்றன
+
+00:35:32,000 --> 00:35:39,000
+in a as a sequence of numbers and as a sequence of events
+வரிசை எண்கள் ஒரு மற்றும் நிகழ்வுகளை தொடர்ச்சியாக
+
+00:35:39,000 --> 00:35:43,000
+well it turns out dead the sampling theorem in fact as i've indicated
+நான் குறிப்பிட்டது போல நன்றாக உண்மையில் இறந்து மாதிரி தேற்றம் மாறிவிடும்
+
+00:35:43,000 --> 00:35:44,000
+previously
+முன்பு
+
+00:35:44,000 --> 00:35:48,000
+provides us with a very nice mechanism
+ஒரு நல்ல கருவியாக நமக்கு வழங்குகிறது
+
+00:35:48,000 --> 00:35:52,000
+for converting are continuous-time signals
+மாற்றும் தொடர்ச்சியான நேர சிக்னல்களை இருக்கின்றன
+
+00:35:52,000 --> 00:35:57,000
+into discrete-time signals for example for computer processing
+கணினி செயலாக்க உதாரணமாக தனி நேர சிக்னல்களை
+
+00:35:57,000 --> 00:36:02,000
+or in fact if it's not a computer for some other kind of discrete-time or
+அல்லது உண்மையில் இது தனி நேரம் அல்லது வேறு வகையான ஒரு கணினி இல்லை என்றால்
+
+00:36:02,000 --> 00:36:04,000
+perhaps digital processing
+ஒருவேளை டிஜிட்டல் செயலாக்க
+
+00:36:04,000 --> 00:36:08,000
+well the basic idea as i've indicated previously
+நான் முன்னர் குறிப்பிட்டது போல நன்றாக அடிப்படை யோசனை
+
+00:36:08,000 --> 00:36:14,000
+is to carry out discreet I processing
+நளினமான நான் செயலாக்க முன்னெடுக்க வேண்டும்
+
+00:36:14,000 --> 00:36:17,000
+of continuous-time signals by
+தொடர்ந்து நேர சிக்னல்களை
+
+00:36:17,000 --> 00:36:21,000
+first converting the continuous-time signal
+முதல் தொடர்ச்சியான நேர சமிக்ஞை மாற்றும்
+
+00:36:21,000 --> 00:36:25,000
+to a discrete-time signal carry out
+ஒரு தனி நேர சமிக்ஞை முன்னெடுக்க
+
+00:36:25,000 --> 00:36:29,000
+the appropriate discrete-time processing
+அதற்கான தனி நேர செயலாக்க
+
+00:36:29,000 --> 00:36:34,000
+love the discrete-time signal and then after we're done with that process
+நாம் அந்த பணியை செய்து வருகிறோம் பின்னர் தனி நேர சமிக்ஞை அன்பு
+
+00:36:34,000 --> 00:36:35,000
+saying
+என்று
+
+00:36:35,000 --> 00:36:39,000
+converting from the discrete-time sequence
+தனி நேரம் வரிசையில் இருந்து மாற்றும்
+
+00:36:39,000 --> 00:36:42,000
+back to a continuous-time signal
+மீண்டும் ஒரு தொடர்ச்சியான நேர சமிக்ஞை
+
+00:36:42,000 --> 00:36:48,000
+corresponding to the output that we have here
+நாம் இங்கே இருக்கிறது என்று வெளியீடு தொடர்புடைய
+
+00:36:48,000 --> 00:36:52,000
+well in the remainder this lecture what I'd like to analyze
+நன்கு எஞ்சிய இந்த விரிவுரை என்ன நான் ஆய்வு செய்ய விரும்புகிறேன்
+
+00:36:52,000 --> 00:36:56,000
+is the first step in that process namely the conversion
+என்று செயல்முறை முதல் படி அதாவது மாற்றம் இல்லை
+
+00:36:56,000 --> 00:37:00,000
+from a continuous-time signal to a discrete-time signal
+ஒரு தொடர்ச்சியான நேர சமிக்ஞை இருந்து ஒரு தனி நேர சமிக்ஞை
+
+00:37:00,000 --> 00:37:03,000
+and understand how the
+புரிந்து எப்படி
+
+00:37:03,000 --> 00:37:07,000
+to relate both in the time domain in the frequency domain
+அதிர்வெண் களத்தில் நேரம் டொமைன் இரண்டு தொடர்புபடுத்த
+
+00:37:07,000 --> 00:37:11,000
+and in the next lecture will be analyzing and demonstrating
+அடுத்த விரிவுரை பகுப்பாய்வு மற்றும் ஆர்ப்பாட்டம்
+
+00:37:11,000 --> 00:37:15,000
+the overall system including some intermediate processing
+சில இடைநிலை செயலாக்க உட்பட ஒட்டுமொத்த அமைப்பின்
+
+00:37:15,000 --> 00:37:18,000
+so be first step in the process
+அதனால் செயல்முறை முதல் படி என்று
+
+00:37:18,000 --> 00:37:22,000
+is the conversion from a continuous-time signal
+ஒரு தொடர்ச்சியான நேர சமிக்ஞை இருந்து மாற்ற வேண்டும்
+
+00:37:22,000 --> 00:37:27,000
+to a discrete-time signal and that can be thought of as a process that involves
+ஒரு தனி நேர சமிக்ஞை என்று அடங்கும் என்று ஒரு செயல்முறை என நினைத்தேன் முடியும்
+
+00:37:27,000 --> 00:37:33,000
+two steps although in practical terms it may not be implemented specifically
+நடைமுறை அடிப்படையில் இது குறிப்பாக செயல்படுத்தப்படும் இருக்கலாம் இரண்டு படிகள் என்றாலும்
+
+00:37:33,000 --> 00:37:36,000
+as these two steps the two steps are
+இந்த இரண்டு படிகள் இரண்டு படிகள் இருக்கின்றன
+
+00:37:36,000 --> 00:37:40,000
+to first convert from the continuous-time
+முதல் தொடர்ச்சியான நேர இருந்து மாற்ற
+
+00:37:40,000 --> 00:37:44,000
+for continuous-time continuous signal
+தொடர்ச்சியான நேரம் தொடர்ந்து சிக்னல்
+
+00:37:44,000 --> 00:37:49,000
+to an impulse train through a sampling process
+ஒரு மாதிரி செயல்முறை மூலம் ஒரு உந்துவிசை ரயில்
+
+00:37:49,000 --> 00:37:52,000
+and then to convert
+பின்னர் மாற்ற
+
+00:37:52,000 --> 00:37:56,000
+that impulse train to a discrete-time sequence
+ஒரு தனி நேரம் வரிசையை என்று உந்துவிசை ரயில்
+
+00:37:56,000 --> 00:38:00,000
+and the discrete-time sequence exit then
+மற்றும் தனித்தியங்கும் நேர வரிசை வெளியேறவும் பின்னர்
+
+00:38:00,000 --> 00:38:04,000
+is simply then a sequence a bad news
+வெறுமனே ஒரு காட்சியில் ஒரு கெட்ட செய்தி
+
+00:38:04,000 --> 00:38:09,000
+which are the samples all the continuous-time signal
+மாதிரிகள் அனைத்து தொடர்ச்சியான நேர சமிக்ஞை இது
+
+00:38:09,000 --> 00:38:13,000
+and as we'll see as we walk through this basically this step
+நாம் இந்த வழியாக அடிப்படையில் இந்த நடவடிக்கை நடக்க நாம் பார்க்க வேண்டும் போல்
+
+00:38:13,000 --> 00:38:16,000
+going from the impulse train to the sequence
+வரிசை உந்துவிசை ரயில் போகிறது
+
+00:38:16,000 --> 00:38:21,000
+corresponds principally to worry labeling staff where
+பெயரிடல் ஊழியர்கள் கவலைப்பட முக்கியமாக ஒத்துள்ளது அங்கு
+
+00:38:21,000 --> 00:38:25,000
+we pic of the impulse bad news
+நாம் உந்துவிசை கெட்ட செய்தி வருகிறோம்
+
+00:38:25,000 --> 00:38:28,000
+and use those as the sequence values
+மற்றும் வரிசை மதிப்புகள் அந்த பயன்படுத்த
+
+00:38:28,000 --> 00:38:32,000
+up for the discrete-time signal so
+தனி நேரம் சிக்னல் வரை மிகவும்
+
+00:38:32,000 --> 00:38:37,000
+what I'd like to do as a first step in understanding this process
+நான் இந்த செயல்பாடு புரிந்து ஒரு முதல் படியாக செய்ய விரும்புகிறேன் என்ன
+
+00:38:37,000 --> 00:38:42,000
+is to analyze it in particular with our attention focused on trying to
+முயற்சி கவனம் எங்கள் கவனத்திற்கு கொண்டு குறிப்பாக ஆய்வு செய்ய உள்ளது
+
+00:38:42,000 --> 00:38:43,000
+understand
+புரிந்து
+
+00:38:43,000 --> 00:38:46,000
+what the relationship is in the frequency domain
+உறவு அதிர்வெண் களத்தில் என்ன
+
+00:38:46,000 --> 00:38:50,000
+between the discrete-time Fourier transform
+தனி நேரம் ஃபோரியர் இடையே மாற்றும்
+
+00:38:50,000 --> 00:38:53,000
+love the sequence discrete-time signal
+வரிசை தனித்தியங்கும் நேர சமிக்ஞை பிடிக்கிறது
+
+00:38:53,000 --> 00:38:57,000
+and the continuous-time 48 transform
+48 மாற்றும் தொடர்ச்சியான நேரம்
+
+00:38:57,000 --> 00:39:00,000
+love the original on sampled and then
+மாதிரிகளை பின்னர் அசல் மற்றும் அன்பு
+
+00:39:00,000 --> 00:39:04,000
+the sampled signal so let's go through that
+சோதனை சமிக்ஞை எனவே அந்த வழியாக செல்லலாம்
+
+00:39:04,000 --> 00:39:07,000
+and in particular
+குறிப்பாக
+
+00:39:07,000 --> 00:39:12,000
+what we have is a process where the continuous-time signal
+என்ன நாம் ஒரு செயல்முறை அங்கு தொடர்ச்சியான நேர சமிக்ஞை ஆகும்
+
+00:39:12,000 --> 00:39:15,000
+is of course modulator multiplied
+பெருக்கப்படும் நிச்சயமாக பண்பேற்றியில் உள்ளது
+
+00:39:15,000 --> 00:39:19,000
+by an impulse train and that gives us then
+ஒரு உந்துவிசை ரயில், அது எங்களுக்கு பின்னர் கொடுக்கிறது மூலம்
+
+00:39:19,000 --> 00:39:23,000
+another continuous-time signal we're still in the continuous time domain
+நாம் தொடர்ச்சியாக களத்தில் இன்னும் இருக்கிறோம் மற்றொரு தொடர்ச்சியான நேர சமிக்ஞை
+
+00:39:23,000 --> 00:39:28,000
+it gives us another continuous-time signal which is an impulse train
+அது எங்களுக்கு ஒரு உந்துவிசை ரயில் இது மற்றொரு தொடர்ச்சியான நேர சமிக்ஞை கொடுக்கிறது
+
+00:39:28,000 --> 00:39:31,000
+and in fact we've gone through this analysis
+மற்றும் உண்மையில் நாம் இந்த ஆய்வின் மூலம் போயிருந்தேன்
+
+00:39:31,000 --> 00:39:34,000
+previously and what we have is
+முன்பு என்ன நாம் ஆகிறது
+
+00:39:34,000 --> 00:39:39,000
+this multiplication or taking this term inside
+இந்த பெருக்கல் அல்லது உள்ளே இந்த கால எடுத்து
+
+00:39:39,000 --> 00:39:43,000
+the summation and recognizing that the impulse train
+கூட்டுத்தொகை மற்றும் அங்கீகரித்து என்று உந்துவிசை ரயில்
+
+00:39:43,000 --> 00:39:46,000
+is is simply an impulse train
+வெறுமனே ஒரு உந்துவிசை ரயில் ஆகிறது
+
+00:39:46,000 --> 00:39:50,000
+with areas above the impulses which
+தூண்டுதலின் மேலே பகுதிகளில் இது
+
+00:39:50,000 --> 00:39:53,000
+are the samples above the continuous-time function
+இருக்கின்றன தொடர்ச்சியான நேர செயல்பாடு மேலே மாதிரிகள்
+
+00:39:53,000 --> 00:39:59,000
+we can then carry out the analysis in the frequency domain
+நாம் அதிர்வெண் களத்தில் பகுப்பாய்வு முன்னெடுக்க முடியும்
+
+00:39:59,000 --> 00:40:03,000
+now in the time domain we have a multiplication process so in the
+இப்போது நேரம் களத்தில் நாம் ஒரு பெருக்கல் செயல்முறையை வேண்டும் மிகவும்
+
+00:40:03,000 --> 00:40:04,000
+frequency domain
+அதிர்வெண் களத்தில்
+
+00:40:04,000 --> 00:40:08,000
+we have a convolution above the Fourier transform
+நாம் ஃபோரியர் மேலே ஒரு சுழற்சி மாற்றும் வேண்டும்
+
+00:40:08,000 --> 00:40:13,000
+love the continuous-time signal the original signal
+தொடர்ச்சியான நேர அசல் சிக்னல் பிடிக்கிறது
+
+00:40:13,000 --> 00:40:18,000
+and the Fourier transform of the impulse train which is itself an impulse train
+மற்றும் ஃபோரியர் ஒரு உந்துவிசை ரயில் தன்னை இது உந்துவிசை ரயில் மாற்றும்
+
+00:40:18,000 --> 00:40:22,000
+so in the frequency domain then the 48 transform
+எனவே அதிர்வெண் களத்தில் பின்னர் 48 மாற்றும்
+
+00:40:22,000 --> 00:40:26,000
+of the sampled signal which is an impulse train
+ஒரு உந்துவிசை ரயில் இது சோதனை சமிக்ஞை
+
+00:40:26,000 --> 00:40:30,000
+is the convolution %uh the Fourier transform up the sampling
+சுழற்சி% இம் ஃபோரியர் மாதிரி வரை மாற்றும்
+
+00:40:30,000 --> 00:40:36,000
+function PFT and the Fourier transform of the sampled signal
+செயல்பாடு நெனைக்க மற்றும் ஃபோரியர் சோதனை சமிக்ஞை மாற்றும்
+
+00:40:36,000 --> 00:40:41,000
+since the sampling signal is a periodic imposed strain
+மாதிரி சிக்னல் ஒரு கால திணிக்கப்பட்ட திரிபு என்பதால்
+
+00:40:41,000 --> 00:40:44,000
+its Fourier transform is an impulse train
+அதன் ஃபோரியர் ஒரு உந்துவிசை ரயில் ஆகிறது
+
+00:40:44,000 --> 00:40:49,000
+and consequently carrying out this convolution
+மற்றும் அதன் விளைவாக இந்த சுழற்சி நடத்தி
+
+00:40:49,000 --> 00:40:52,000
+in effect says that this for EA transform
+விளைவு ஈ.ஏ. இந்த மாற்றும் என்று கூறுகிறார்
+
+00:40:52,000 --> 00:40:57,000
+simply gets replicated at each of the locations of these impulses
+வெறுமனே இந்த தூண்டுதலின் இடங்களில் ஒவ்வொரு அமல்
+
+00:40:57,000 --> 00:41:00,000
+and finally what we end up with an
+இறுதியாக நாம் ஒரு முடிவடையும்
+
+00:41:00,000 --> 00:41:04,000
+is a 48 transform after
+48 பின்னர் மாற்றும்
+
+00:41:04,000 --> 00:41:07,000
+the sampling process which is
+இது மாதிரி செயல்முறை
+
+00:41:07,000 --> 00:41:11,000
+the original for EA transform love the continuous
+ஈ.ஏ. அசல் காதல் தொடர்ச்சியான மாற்றும்
+
+00:41:11,000 --> 00:41:14,000
+signal but and it to itself
+சிக்னல் ஆனால் அது தன்னை
+
+00:41:14,000 --> 00:41:17,000
+shifted by integer multiples
+முழு மடங்குகள் மூலம் மாற்றம்
+
+00:41:17,000 --> 00:41:21,000
+above the sampling frequency and so this is the basic equation then
+மாதிரி அதிர்வெண் மேலே எனவே இந்த அடிப்படை சமன்பாடு பின்னர்
+
+00:41:21,000 --> 00:41:26,000
+that tells us in the frequency domain what happens
+என்று என்ன அதிர்வெண் களத்தில் நமக்கு சொல்கிறது
+
+00:41:26,000 --> 00:41:30,000
+through the first part all this two-step process
+முதல் பகுதி மூலம் இந்த இரண்டு படி செயல்முறை
+
+00:41:30,000 --> 00:41:35,000
+now I emphasize that is a two-step process the first process
+இப்போது நான் ஒரு இரண்டு படி செயல்முறை வலியுறுத்த முதல் செயல்முறை
+
+00:41:35,000 --> 00:41:38,000
+is sampling where we're still essentially
+நாம் அடிப்படையில் இன்னும் இருக்கிறது, அங்கு மாதிரி இருக்கிறது
+
+00:41:38,000 --> 00:41:42,000
+in the continuous-time world the next step
+தொடர்ச்சியான நேர உலகின் அடுத்த
+
+00:41:42,000 --> 00:41:45,000
+is essentially a relabeling process
+அடிப்படையில் ஒரு relabeling செயல்முறை
+
+00:41:45,000 --> 00:41:50,000
+where we convert that impulse train simply to a sequence
+நாம் மாற்ற எங்கே என்று வெறுமனே ஒரு வரிசையை உந்துவிசை ரயில்
+
+00:41:50,000 --> 00:41:53,000
+so let's look at the next step
+எனவே அடுத்த பார்போம்
+
+00:41:53,000 --> 00:41:57,000
+the next step is to take the impulse train and converted
+அடுத்த படி உந்துவிசை ரயில் எடுக்க மற்றும் மாற்றப்படுகிறது
+
+00:41:57,000 --> 00:42:01,000
+through a process to sequence
+வரிசை ஒரு செயல்முறை மூலம்
+
+00:42:01,000 --> 00:42:04,000
+and the sequence values are simply then
+மற்றும் வரிசை மதிப்புகள் வெறுமனே பின்னர் இருக்கின்றன
+
+00:42:04,000 --> 00:42:09,000
+samples 0 the original continuous signal
+மாதிரிகள், அசல் தொடர்ந்து சிக்னல் 0
+
+00:42:09,000 --> 00:42:12,000
+and so now we
+எனவே இப்போது நாம்
+
+00:42:12,000 --> 00:42:16,000
+can analyze this and what we want to relate
+நாம் தொடர்புபடுத்த வேண்டும் என்பதை இந்த ஆய்வு மற்றும் முடியும்
+
+00:42:16,000 --> 00:42:19,000
+is the discrete-time Fourier transform
+தனி நேரம் ஃபோரியர்
+
+00:42:19,000 --> 00:42:23,000
+love this and the continuous 540 a transformer
+இந்த தொடர்ச்சியான 540 ஒரு மின்மாற்றி பிடிக்கிறது
+
+00:42:23,000 --> 00:42:27,000
+this or in fact that continues type for a transformer affects up to you
+ஒரு மின்மாற்றி வகை தொடர்கிறது என்று இந்த அல்லது உண்மையில் நீங்கள் வரை பாதிக்கிறது
+
+00:42:27,000 --> 00:42:30,000
+safety okay
+பாதுகாப்பு சரியா
+
+00:42:30,000 --> 00:42:34,000
+well we have the imposed strain
+நாங்கள் விதித்த திரிபு வேண்டும்
+
+00:42:34,000 --> 00:42:38,000
+and its Fourier transform we can
+அதன் ஃபோரியர் நாம் மாற்றும்
+
+00:42:38,000 --> 00:42:42,000
+get by simply evaluating for EA transform
+வெறுமனே ஈ.ஏ. மாற்றும் ஒரு மதிப்பீடு மூலம் பெற
+
+00:42:42,000 --> 00:42:45,000
+and since the Fourier transform love this
+மற்றும் ஃபோரியர் காதல் மாற்றியமைக்க இருந்து
+
+00:42:45,000 --> 00:42:50,000
+since this corresponds to an impulse train the 48 transformed by the time we
+இந்த 48 முறை மாற்றப்பட்டு ஒரு உந்துவிசை ரயில் ஒத்துள்ளது இருந்து நாம்
+
+00:42:50,000 --> 00:42:51,000
+change them something in it rolls
+அவர்களுக்கு அது ரோல்ஸ் ஏதாவது மாற்ற
+
+00:42:51,000 --> 00:42:55,000
+will then have this in paul's replace
+பின்னர் பால் பதிலாக இந்த வேண்டும்
+
+00:42:55,000 --> 00:42:58,000
+524 e a transformer the shift in polls
+524 E ஒரு மின்மாற்றி கணிப்பீடுகள் மாற்றம்
+
+00:42:58,000 --> 00:43:02,000
+which is this exponential factor so this expression
+இந்த அதிவேகமான காரணி இந்த வெளிப்பாடு இது
+
+00:43:02,000 --> 00:43:06,000
+is before a transformer the impulse train
+ஒரு மின்மாற்றி உந்துவிசை ரயில் முன் ஆகிறது
+
+00:43:06,000 --> 00:43:10,000
+the continuous time Fourier transform and alternatively
+ஃபோரியர் மாற்றாக மாற்றும் மற்றும் தொடர்ச்சியான நேரம்
+
+00:43:10,000 --> 00:43:13,000
+we can look at the Fourier transform all
+நாம் அனைத்து Fourier மாற்றியமை பார்க்க முடியும்
+
+00:43:13,000 --> 00:43:16,000
+the sequence and this of course is
+நிச்சயமாக வரிசை மற்றும் இந்த
+
+00:43:16,000 --> 00:43:21,000
+a discrete-time Fourier transform
+ஒரு தனி நேரம் ஃபோரியர்
+
+00:43:21,000 --> 00:43:27,000
+so we have the continuous time Fourier transform the imposed strain
+நாம் தொடர்ச்சியாக ஃபோரியர் திணிக்கப்பட்ட திரிபு மாற்றும் வேண்டும்
+
+00:43:27,000 --> 00:43:30,000
+we have the discrete-time Fourier transform the sequence
+நாம் தனித்தியங்கும் நேர ஃபோரியர் வரிசை மாற்றும் வேண்டும்
+
+00:43:30,000 --> 00:43:34,000
+and now we want to look at how those to relate
+இப்போது நாம் அந்த தொடர்புபடுத்த எப்படி பார்க்க வேண்டும்
+
+00:43:34,000 --> 00:43:38,000
+well it pretty much falls out of just comparing these two summations
+அது மிகவும் அதிகமாக தான் இந்த இரண்டு அளவுகள் ஒப்பிட்டு வெளியே விழும்
+
+00:43:38,000 --> 00:43:42,000
+in particular this term and this term
+குறிப்பிட்ட இந்த கால மற்றும் இந்த கால
+
+00:43:42,000 --> 00:43:46,000
+are identical that's just the relabeling
+என்று மட்டும் relabeling தான் ஒரே மாதிரியானவை
+
+00:43:46,000 --> 00:43:52,000
+Nov all what the sequence values are
+வரிசை மதிப்புகள் என்ன நவ அனைத்து
+
+00:43:52,000 --> 00:43:57,000
+and notice that when we compare these exponential factors
+மற்றும் கவனிக்க என்று நாம் இந்த அதிவேகமான காரணிகள் ஒப்பிடும் போது
+
+00:43:57,000 --> 00:44:02,000
+they're identical as long as we associate capital Omega
+அவர்கள் நீண்ட காலமாக நாம் மூலதன ஒமேகா கூட்டாளி என ஒரே இருக்கிறார்கள்
+
+00:44:02,000 --> 00:44:05,000
+with little or may get times capital T in other words
+சிறிய அல்லது வேறு வார்த்தைகளில் முறை மூலதன டி பெறலாம் கொண்டு
+
+00:44:05,000 --> 00:44:09,000
+if we were to replace here capital may go by a little Omega
+நாம் இங்கே பதிலாக இருந்தது மூலதன ஒரு சிறிய ஒமேகா மூலம் போகலாம்
+
+00:44:09,000 --> 00:44:12,000
+times capital T and replace exhibition
+முறை மூலதன டி மற்றும் கண்காட்சி பதிலாக
+
+00:44:12,000 --> 00:44:16,000
+by excessive see a venti in this expression
+அதிகப்படியான இந்த வெளிப்பாடு ஒரு Venti பார்க்க
+
+00:44:16,000 --> 00:44:20,000
+would be identical to this expression
+இந்த வெளிப்பாடு ஒத்ததாக இருக்கும்
+
+00:44:20,000 --> 00:44:23,000
+so in fact these two are equal
+எனவே உண்மையில் இந்த இரண்டு சம
+
+00:44:23,000 --> 00:44:28,000
+where a relabeling or with the transformation between small Megan
+அங்கு ஒரு relabeling அல்லது சிறிய மேகன் இடையே மாற்றம் கொண்டு
+
+00:44:28,000 --> 00:44:29,000
+capital make
+தலைநகரை
+
+00:44:29,000 --> 00:44:34,000
+and so in fact then the relationship that we have
+அதனால் உண்மையில் நாம் என்று உறவு
+
+00:44:34,000 --> 00:44:38,000
+is that the discrete-time Fourier transform are
+ஃபோரியர் தனி நேரம் என்று ஆகிறது
+
+00:44:38,000 --> 00:44:41,000
+the sequence of samples
+மாதிரிகள் வரிசை
+
+00:44:41,000 --> 00:44:45,000
+is equal to the continuous time Fourier transform
+ஃபோரியர் தொடர்ச்சியான நேரம் சமமாக இருக்கிறது
+
+00:44:45,000 --> 00:44:48,000
+all the impulse strain of samples
+மாதிரிகள் அனைத்து உந்துவிசை திரிபு
+
+00:44:48,000 --> 00:44:52,000
+where we associate the continuous-time frequency variable
+நாங்கள் தொடர்ந்து நேர அதிர்வெண் மாறி இணைந்திருக்கிறோம் அங்கு
+
+00:44:52,000 --> 00:44:56,000
+and the discrete-time pic script frequency variable through
+மூலம் தனி நேர வேலைகள் ஸ்கிரிப்ட் அதிர்வெண் மாறி
+
+00:44:56,000 --> 00:45:01,000
+a frequency scaling as i indicate here or said another way
+ஒரு அலைவெண் நான் வேறு வழி இங்கே குறிக்கிறேன் அல்லது என
+
+00:45:01,000 --> 00:45:07,000
+the discrete-time spectrum is the continuous I spectrum of the samples
+தனி நேரம் ஸ்பெக்ட்ரம் மாதிரிகள் தொடர்ச்சியான அலைக்கற்றை ஆகிறது
+
+00:45:07,000 --> 00:45:11,000
+with capital mate with small Omega replaced by capital Omega
+சிறிய ஒமேகா மூலதனத்தின் துணையை மூலதன ஒமேகா மாற்றப்பட்டன
+
+00:45:11,000 --> 00:45:14,000
+divided by capital T
+மூலதன டி வகுக்க
+
+00:45:14,000 --> 00:45:19,000
+fight so we have then this two-step process
+எனவே நாம் இந்த இரண்டு படி செயல்முறை வேண்டும் போராட
+
+00:45:19,000 --> 00:45:22,000
+the first step is taking the continuous-time signal
+முதல் படி தொடர்ச்சியான நேர சமிக்ஞை வருகிறது
+
+00:45:22,000 --> 00:45:26,000
+sampling with it sampling it with an impulse train
+அது ஒரு உந்துவிசை ரயில் அதை மாதிரி கொண்டு மாதிரி
+
+00:45:26,000 --> 00:45:29,000
+in the frequency domain that corresponds to
+ஒத்துள்ளது என்று அதிர்வெண் களத்தில்
+
+00:45:29,000 --> 00:45:32,000
+replicating the four EA transform
+நான்கு ஈ.ஏ. மாற்றும் மீள்வு
+
+00:45:32,000 --> 00:45:36,000
+all the original continuous-time signals
+அனைத்து அசல் தொடர்ச்சியான நேர சிக்னல்களை
+
+00:45:36,000 --> 00:45:40,000
+the second step is relabeling Matt
+இரண்டாவது படி மாட் relabeling
+
+00:45:40,000 --> 00:45:44,000
+in effect turning it into a sequence and what that does in the frequency domain
+விளைவு ஒரு காட்சியில் மாற்றியது என்று அதிர்வெண் களத்தில் என்ன
+
+00:45:44,000 --> 00:45:46,000
+is provide us
+எங்களுக்கு வழங்க உள்ளது
+
+00:45:46,000 --> 00:45:50,000
+with a rescaling if the frequency axis or as we'll see
+ஒரு rescaling கொண்டு இருந்தால், அதிர்வெண் அச்சு அல்லது நாம் பார்க்க வேண்டும் போல்
+
+00:45:50,000 --> 00:45:55,000
+a frequency normalization which is associated with the corresponding time
+இதே நேரம் தொடர்புடைய ஒரு அதிர்வெண் இயல்புநிலைக்கு
+
+00:45:55,000 --> 00:45:57,000
+normalization
+சாதாரண
+
+00:45:57,000 --> 00:46:00,000
+in the time domain well let's look at
+நேரம் களத்தில் நன்றாக தான் பார்க்க வேண்டும்
+
+00:46:00,000 --> 00:46:04,000
+those statements a little more specifically
+ஒரு சிறிய இன்னும் குறிப்பாக அந்த அறிக்கைகளை
+
+00:46:04,000 --> 00:46:09,000
+when I show here it is the original continuous-time signal
+நான் இங்கே காட்ட போது அது அசல் தொடர்ச்சியான நேர சமிக்ஞை ஆகும்
+
+00:46:09,000 --> 00:46:12,000
+and then below it is
+மற்றும் அது பின்னர் கீழே
+
+00:46:12,000 --> 00:46:16,000
+the sampled signal and these two
+சோதனை சமிக்ஞை மற்றும் இந்த இரண்டு
+
+00:46:16,000 --> 00:46:20,000
+are signals in the continuous-time domain
+சிக்னல்களை தொடர் நேர களத்தில்
+
+00:46:20,000 --> 00:46:24,000
+now what is the conversion from this impulse train
+இப்போது இந்த உந்துவிசை ரயில் இருந்து மாற்ற என்ன ஆகிறது
+
+00:46:24,000 --> 00:46:28,000
+to a sequence well it simply taking
+ஒரு காட்சியில் நன்றாக அதை வெறுமனே எடுத்து
+
+00:46:28,000 --> 00:46:32,000
+these in polls areas are bad news the sample values
+இந்த கணிப்பீடுகள் பகுதிகளில் மாதிரி மதிப்புக்கள் கெட்ட செய்தி
+
+00:46:32,000 --> 00:46:36,000
+and relabeling them in effect is a show below
+மற்றும் விளைவு அவர்களை relabeling கீழே ஒரு நிகழ்ச்சி
+
+00:46:36,000 --> 00:46:41,000
+relabeling them as sequence values
+வரிசை மதிப்புகள் அவற்றை relabeling
+
+00:46:41,000 --> 00:46:45,000
+and essentially I'm now replacing
+அடிப்படையில் நான் இப்போது பதிலாக
+
+00:46:45,000 --> 00:46:50,000
+the impulse by the designation of a sequence value
+ஒரு காட்சியில் மதிப்பு பதவி மூலம் உந்துவிசை
+
+00:46:50,000 --> 00:46:54,000
+that's one step but the other important step to focus on
+என்று ஒரு படி ஆனால் கவனம் செலுத்த மற்ற முக்கியமான படி தான்
+
+00:46:54,000 --> 00:46:59,000
+is dead whereas in the impulse trainees impulses are spaced
+உந்துவிசை பயிற்சியாளர்களுக்கு உள்ள தூண்டுதலின் இடைவெளி அதேசமயம் இறந்த ஆகிறது
+
+00:46:59,000 --> 00:47:04,000
+by integer multiples of the sampling period capital T
+மாதிரி காலம் மூலதன டி முழு மடங்குகள் மூலம்
+
+00:47:04,000 --> 00:47:08,000
+in the sequence of course because if the way that we
+காட்சியில் நிச்சயமாக ஏனெனில் நாம் வழி
+
+00:47:08,000 --> 00:47:11,000
+label sequences these are always space by
+இந்த லேபிள் எப்போதும் இடைவெளி வரிசை
+
+00:47:11,000 --> 00:47:14,000
+simply integer multiples of 1
+1 வெறுமனே முழு மடங்குகள்
+
+00:47:14,000 --> 00:47:18,000
+so in effect you could say that the step in going from here
+அதனால் விளைவு நீங்கள் சொல்ல முடியும் என்று நான் இங்கிருந்து படி
+
+00:47:18,000 --> 00:47:24,000
+to hear corresponds to normalizing out in the time domain
+நேரம் டொமைன் வெளியே இயல்புநிலை தொடர்பு கேட்க
+
+00:47:24,000 --> 00:47:27,000
+the sampling period capital T
+மாதிரி காலம் மூலதன டி
+
+00:47:27,000 --> 00:47:32,000
+to stress that another way if the sampling period were doubled
+மாதிரி காலம் இரண்டு மடங்காக இருந்தால் என்று மற்றொரு வழி வலியுறுத்தி
+
+00:47:32,000 --> 00:47:38,000
+so there'd in this picture this spacing stretched out by a factor of two
+அதனால் இந்த படத்தில் இந்த இடைவெளி இரண்டு ஒரு காரணி அங்கு வெளியே நீட்டி
+
+00:47:38,000 --> 00:47:42,000
+nevertheless in the discrete-time
+இருப்பினும் தனி நேரம்
+
+00:47:42,000 --> 00:47:46,000
+for the discrete-time signal the spacing would remain as one
+தனி நேரம் சிக்னல் இடைவெளி ஒரு இருக்கும்
+
+00:47:46,000 --> 00:47:50,000
+and essentially its the
+அடிப்படையில் அதன் The
+
+00:47:50,000 --> 00:47:53,000
+envelope of those sequence values
+அந்த காட்சியில் மதிப்புகள் உறை
+
+00:47:53,000 --> 00:47:56,000
+that would then get contracts compressed in time
+என்று பின்னர் ஒப்பந்தங்கள் நேரம் அழுத்தப்பட்ட
+
+00:47:56,000 --> 00:48:01,000
+so you can think all the step in going from the impulse train to the samples
+எனவே நீங்கள் மாதிரிகள் உந்துவிசை ரயில் இருந்து அனைத்து படி யோசிக்க முடியும்
+
+00:48:01,000 --> 00:48:05,000
+as a sexually a time normalization
+ஒரு பாலியல் ஒரு நேரத்தில் இயல்பாக்கம் என
+
+00:48:05,000 --> 00:48:10,000
+now let's look at this in the frequency domain in the frequency domain
+இப்போது அதிர்வெண் களத்தில் அதிர்வெண் களத்தில் இந்த நேரத்தில் நாம்
+
+00:48:10,000 --> 00:48:14,000
+what we have is the Fourier transform of our original continuous
+என்ன நாம் ஃபோரியர் எங்கள் அசல் தொடர்ந்து மாற்றியமை ஆகிறது
+
+00:48:14,000 --> 00:48:18,000
+signal after sampling with an impulse train
+ஒரு உந்துவிசை ரயில் மாதிரி பின்னர் சமிக்ஞை
+
+00:48:18,000 --> 00:48:22,000
+this spectrum retains its shape
+இந்த ஸ்பெக்ட்ரம் வடிவம் சிதையாமல்
+
+00:48:22,000 --> 00:48:27,000
+him but is replicated at integer multiples of the sampling frequency to
+அவரை ஆனால் மாதிரி அதிர்வெண் முழு மடங்குகள் அமல்
+
+00:48:27,000 --> 00:48:29,000
+pry over capital T
+மூலதன டி மீது விடுவதற்கான
+
+00:48:29,000 --> 00:48:32,000
+as i indicated here now
+நான் இப்போது இங்கே சுட்டிக்காட்டப்படுகிறது
+
+00:48:32,000 --> 00:48:36,000
+we know that a discrete-time spectrum
+நாம் என்று ஒரு தனி நேரம் ஸ்பெக்ட்ரம்
+
+00:48:36,000 --> 00:48:40,000
+must be periodic and frequency with a period of two pi
+இரண்டு பை ஒரு காலத்தில் கால மற்றும் அதிர்வெண் இருக்க வேண்டும்
+
+00:48:40,000 --> 00:48:45,000
+here we have the periodicity but it's not periodic with period have to pry
+இங்கே நாம் ஒரு காலகட்டம் உண்டு ஆனால் அதை விடுவதற்கான வேண்டும் காலம் கால இல்லை
+
+00:48:45,000 --> 00:48:50,000
+its periodic with period which is equal to the sampling frequency
+மாதிரி அதிர்வெண் சமமாக இது காலம் அதன் கால
+
+00:48:50,000 --> 00:48:55,000
+however in converting from the samples
+எனினும் மாதிரிகளில் இருந்து மாற்றுவதிலும்
+
+00:48:55,000 --> 00:48:58,000
+to the sequence values and we go through another step
+வரிசை மதிப்புகள் மற்றும் நாம் ஒரு படி மேலே செல்ல
+
+00:48:58,000 --> 00:49:02,000
+what the other step the other step is a time normalization
+மற்ற படி ஒரு நேரத்தில் சாதாரண என்ன மற்ற படி
+
+00:49:02,000 --> 00:49:05,000
+where we take the impulses which your space by the sampling period
+நாம் தூண்டுதலின் எடுத்து அங்கு மாதிரி காலம் இது உங்கள் இடம்
+
+00:49:05,000 --> 00:49:09,000
+and we rescale at essentially in the time domain
+நாம் நேரம் டொமைன் அடிப்படையில் உள்ள rescale
+
+00:49:09,000 --> 00:49:13,000
+to a space in which is unity so we're dividing out
+ஒற்றுமை என்பது ஒரு இடத்தில் நாம் வெளியே பிளவு
+
+00:49:13,000 --> 00:49:17,000
+in the time domain by a
+ஒரு நேரம் களத்தில்
+
+00:49:17,000 --> 00:49:20,000
+by a factor which is
+இது ஒரு காரணி
+
+00:49:20,000 --> 00:49:23,000
+equal to the sampling period well
+அதே மாதிரி காலம் சமமாக
+
+00:49:23,000 --> 00:49:27,000
+dividing out in the time domain by
+நேரம் களத்தில் வெளியே பிளவு
+
+00:49:27,000 --> 00:49:31,000
+capital T would correspond to
+மூலதன டி ஒத்திருக்கும் என்று
+
+00:49:31,000 --> 00:49:36,000
+multiplying in the frequency domain the frequency axis by capital T and indeed
+உண்மையில் மூலதன டி மூலம் அதிர்வெண் களத்தில் அதிர்வெண் அச்சு பெருக்கம்
+
+00:49:36,000 --> 00:49:40,000
+what happens is dead in going from the imposed strain
+என்ன நடக்கும் திணிக்கப்பட்ட திரிபு இருந்து இறந்த ஆகிறது
+
+00:49:40,000 --> 00:49:44,000
+to the sequence values we now rescale
+வரிசை மதிப்புகள் நாம் இப்போது rescale
+
+00:49:44,000 --> 00:49:48,000
+this axis so that in fact
+இந்த அச்சு, அதனால்
+
+00:49:48,000 --> 00:49:51,000
+the axis gets stretched by capital T
+அச்சு மூலதன டி நீட்டி
+
+00:49:51,000 --> 00:49:56,000
+and the frequency which corresponded to 2pi over capital T
+மற்றும் மூலதன டி மீது 2pi இயைந்தவாறு அதிர்வெண்
+
+00:49:56,000 --> 00:50:00,000
+now gets re normalized 22 part
+இப்போது சாதாரணமான 22 பகுதி மீண்டும் வருகிறது
+
+00:50:00,000 --> 00:50:05,000
+so just looking at this again and perhaps with the overall picture
+அதனால் தான் ஒட்டுமொத்த படத்தை மீண்டும் மற்றும் ஒருவேளை இந்த பார்த்து
+
+00:50:05,000 --> 00:50:09,000
+in the time domain we've gone from a continuous curve
+நேரம் களத்தில் நாம் ஒரு தொடர் வளைவு இருந்து போயிருந்தேன்
+
+00:50:09,000 --> 00:50:15,000
+two samples relabel those and in effect implemented a time normalization
+இரண்டு மாதிரிகள் அந்த relabel மற்றும் விளைவு ஒரு முறை சாதாரண செயல்படுத்தப்படும்
+
+00:50:15,000 --> 00:50:19,000
+correspondingly in the frequency domain we
+அதற்கேற்ப அதிர்வெண் களத்தில் நாம்
+
+00:50:19,000 --> 00:50:23,000
+have replicated the spectrum through the initial sampling process
+ஆரம்ப மாதிரி செயல்முறை மூலம் ஸ்பெக்ட்ரம் எதிரொலிக்கும்
+
+00:50:23,000 --> 00:50:27,000
+and then rescale the frequency axis
+மற்றும் அதன் அதிர்வெண் அச்சு rescale
+
+00:50:27,000 --> 00:50:30,000
+so that in fact now this periodicity
+அதனால் இப்போது உண்மையில் இந்த காலகட்டம்
+
+00:50:30,000 --> 00:50:34,000
+corresponds to a periodicity here which is to Popeye
+போபியே இது இங்கே ஒரு காலகட்டம் ஒத்துள்ளது
+
+00:50:34,000 --> 00:50:37,000
+and here which is the sampling frequency
+இங்கே மாதிரி அதிர்வெண் இது
+
+00:50:37,000 --> 00:50:43,000
+so very often in fact and will be doing this next time
+எனவே மிக பெரும்பாலும் உண்மையில் இந்த அடுத்த முறை செய்யும்
+
+00:50:43,000 --> 00:50:46,000
+very often when you think
+மிக பெரும்பாலும் நீங்கள் நினைக்கும் போது
+
+00:50:46,000 --> 00:50:51,000
+love continuous-time signals which have been converted to discrete-time signals
+தனி நேர சமிக்ஞைகளை மாற்றப்பட்டது இது தொடர்ச்சியான நேர சிக்னல்களை பிடிக்கிறது
+
+00:50:51,000 --> 00:50:54,000
+when you look at the discrete-time frequency axis
+நீங்கள் தனி நேரம் அதிர்வெண் அச்சில் இருக்கும் போது
+
+00:50:54,000 --> 00:50:57,000
+the frequency to pie is Associated
+பை அதிர்வெண் தொடர்புடையதாக உள்ளது
+
+00:50:57,000 --> 00:51:00,000
+with the sampling frequency
+மாதிரி அதிர்வெண்
+
+00:51:00,000 --> 00:51:06,000
+as it will it was applied to the original continuous-time signals
+அது அசல் தொடர்ச்சியான நேர சிக்னல்களை பயன்படுத்தப்படும் என
+
+00:51:06,000 --> 00:51:11,000
+now as i indicated what will want to go on to from here
+நான் இங்கே இருந்து போக வேண்டும் என்பதை கோடிட்டு இப்போது
+
+00:51:11,000 --> 00:51:14,000
+is understanding I'll
+புரிந்து நான் வேண்டும் என்பது
+
+00:51:14,000 --> 00:51:17,000
+what happens when we take a continuous-time signal
+நாம் ஒரு தொடர் நேர சமிக்ஞை எடுத்து போது என்ன நடக்கிறது
+
+00:51:17,000 --> 00:51:21,000
+converted to a discrete-time signal as I just going through
+நான் கடந்து ஒரு தனி நேர சமிக்ஞை மாற்றப்படுகிறது
+
+00:51:21,000 --> 00:51:24,000
+do some discreet I processing with the linear time-invariant system
+நேரியல் நேரம் மாற்றமில்லாத அமைப்பு சில நளினமான நான் செயலாக்க செய்ய
+
+00:51:24,000 --> 00:51:29,000
+and then carry that back into the continuous-time world
+பின்னர் தொடர்ச்சியான நேர உலகத்திற்கு மீண்டும் செயல்படுத்த
+
+00:51:29,000 --> 00:51:33,000
+that is a procedure that will go through and
+அந்த வழியாக சென்று என்று ஒரு செயல்முறை
+
+00:51:33,000 --> 00:51:36,000
+analyze and in fact illustrate in some detail
+ஆய்வு மற்றும் உண்மையில் சில விவரம் விளக்குவதற்கு
+
+00:51:36,000 --> 00:51:40,000
+next time in preparation for that
+என்று தயாரிப்பு அடுத்த முறை
+
+00:51:40,000 --> 00:51:44,000
+what I would be eager to encourage you to do
+நான் செய்ய ஊக்குவிக்க ஆர்வமாக இருக்கும் என்று
+
+00:51:44,000 --> 00:51:47,000
+using the study guide and in reviewing this lecture
+ஆய்வு வழிகாட்டி பயன்படுத்தி இந்த விரிவுரையில் மீளாய்வு
+
+00:51:47,000 --> 00:51:51,000
+is to begin the next lecture
+அடுத்த விரிவுரை தொடங்க உள்ளது
+
+00:51:51,000 --> 00:51:55,000
+with a careful and thorough understanding love
+கவனமாக மற்றும் முழுமையான புரிதல் காதல்
+
+00:51:55,000 --> 00:51:58,000
+the arguments that I just going through in particular
+நான் குறிப்பாக நடக்கிறது என்று வாதங்கள்
+
+00:51:58,000 --> 00:52:03,000
+understanding the process that's involved in going from a continuous-time
+ஒரு தொடர்ச்சியான நேரம் போய் தொடர்பு அது செயலில் புரிந்து
+
+00:52:03,000 --> 00:52:05,000
+signal
+சமிக்ஞை
+
+00:52:05,000 --> 00:52:08,000
+through sampling to a discrete-time signal
+ஒரு தனி நேர சமிக்ஞை மாதிரி மூலம்
+
+00:52:08,000 --> 00:52:12,000
+and what that means in the frequency domain interns to taking the original
+என்று அசல் எடுத்து அதிர்வெண் களத்தில் பயிற்சியாளர்களுக்கு என்றால் என்ன
+
+00:52:12,000 --> 00:52:13,000
+spectrum
+ஸ்பெக்ட்ரம்
+
+00:52:13,000 --> 00:52:17,000
+replicating it because if the sampling process
+அது மீள்வு ஏனெனில் மாதிரி செயல்முறை
+
+00:52:17,000 --> 00:52:20,000
+and then sry scaling that so that
+பின்னர் SRY அளவிடுதல் என்று என்று
+
+00:52:20,000 --> 00:52:24,000
+the periodicity gets rescaled so that its periodic
+ஒரு காலகட்டம் மறுஅளவீடு என்று அதன் கால
+
+00:52:24,000 --> 00:52:28,000
+with a period of two part so will continue with that next time focusing
+இரண்டு பகுதியாக ஒரு காலத்தில் மிகவும் கவனம் அடுத்த முறை தொடர வேண்டும்
+
+00:52:28,000 --> 00:52:29,000
+now
+இப்பொழுது
+
+00:52:29,000 --> 00:52:32,000
+on the subsequent steps
+அடுத்தடுத்த படிகள் மீது
+
+00:52:32,000 --> 00:52:33,000
+in the process thank you
+செயல்முறை நன்றி
+

@@ -1,0 +1,2025 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:20,000
+that MIT ided you
+
+00:00:20,000 --> 00:00:27,000
+home
+
+00:00:35,000 --> 00:00:38,000
+in
+
+00:00:38,000 --> 00:00:40,000
+in
+
+00:00:40,000 --> 00:00:47,000
+the No
+
+00:00:51,000 --> 00:00:56,000
+for in the last lecture
+
+00:00:56,000 --> 00:01:02,000
+I introduced an illustrated the kinds of signals and systems that will be dealing
+
+00:01:02,000 --> 00:01:02,000
+with
+
+00:01:02,000 --> 00:01:06,000
+throughout this course in today's lecture I'd like to
+
+00:01:06,000 --> 00:01:10,000
+be a little more specific and in particular talk about
+
+00:01:10,000 --> 00:01:15,000
+some the basic signals both continuous-time and discrete-time
+
+00:01:15,000 --> 00:01:18,000
+that will form important building blocks as
+
+00:01:18,000 --> 00:01:21,000
+the course progresses let's begin
+
+00:01:21,000 --> 00:01:26,000
+with one signal the continuous-time sinusoidal signal which perhaps you're
+
+00:01:26,000 --> 00:01:27,000
+already
+
+00:01:27,000 --> 00:01:30,000
+somewhat familiar with mathematically
+
+00:01:30,000 --> 00:01:35,000
+the continuous-time sinusoidal signal is expressed as i've indicated here
+
+00:01:35,000 --> 00:01:38,000
+there are three parameters
+
+00:01:38,000 --> 00:01:44,000
+a Omega 0 and see the parameter a is referred to as
+
+00:01:44,000 --> 00:01:48,000
+the ample to the parameter Omega 0
+
+00:01:48,000 --> 00:01:51,000
+as the frequency and the parameter fee
+
+00:01:51,000 --> 00:01:55,000
+as the face and
+
+00:01:55,000 --> 00:02:01,000
+graphically the continuous-time sinusoidal signal has the form
+
+00:02:01,000 --> 00:02:05,000
+shown here now
+
+00:02:05,000 --> 00:02:08,000
+the sinusoidal signal has a number love
+
+00:02:08,000 --> 00:02:13,000
+important properties that will find it convenient to exploit as the
+
+00:02:13,000 --> 00:02:16,000
+course goes along one of which is
+
+00:02:16,000 --> 00:02:20,000
+the fact that the sinusoidal signal
+
+00:02:20,000 --> 00:02:25,000
+is what is referred to as periodic what I mean by periodic
+
+00:02:25,000 --> 00:02:30,000
+is that under inappropriate time shift which I indicate here
+
+00:02:30,000 --> 00:02:34,000
+as t0 the signal replicates
+
+00:02:34,000 --> 00:02:37,000
+or repeats itself force it another way
+
+00:02:37,000 --> 00:02:41,000
+if we shift the time origin by an appropriate amount
+
+00:02:41,000 --> 00:02:46,000
+t0 the smallest value t0 being referred to as the period
+
+00:02:46,000 --> 00:02:52,000
+then X 50 is equal to itself shifted and
+
+00:02:52,000 --> 00:02:55,000
+to demonstrate that we can demonstrated mathematically
+
+00:02:55,000 --> 00:03:00,000
+by simply substituting into the mathematical expression for the
+
+00:03:00,000 --> 00:03:02,000
+sinusoidal signal
+
+00:03:02,000 --> 00:03:05,000
+see plus capital T zero
+
+00:03:05,000 --> 00:03:09,000
+in place if T when we carry out the expansion
+
+00:03:09,000 --> 00:03:13,000
+we then have for the argument the sinusoid
+
+00:03:13,000 --> 00:03:16,000
+Omega 0t plus Omega 0
+
+00:03:16,000 --> 00:03:20,000
+capital T zero plus P now
+
+00:03:20,000 --> 00:03:24,000
+one of the things that we know about sinusoidal functions
+
+00:03:24,000 --> 00:03:28,000
+is dead if you change the argument by any integer multiple
+
+00:03:28,000 --> 00:03:32,000
+to pie and the function has the same value
+
+00:03:32,000 --> 00:03:35,000
+and so we can exploit that here in particular
+
+00:03:35,000 --> 00:03:39,000
+with Omega 0t0 and integer multiple
+
+00:03:39,000 --> 00:03:44,000
+up to par i then the right hand side of this equation
+
+00:03:44,000 --> 00:03:47,000
+is equal to the left hand side of the equation so
+
+00:03:47,000 --> 00:03:52,000
+with Omega 0t0 equal to two part times an integer
+
+00:03:52,000 --> 00:03:56,000
+or t0 equal to two part times an integer
+
+00:03:56,000 --> 00:04:02,000
+divided by Omega 0 the signal repeats the period is defined as the smallest
+
+00:04:02,000 --> 00:04:05,000
+value if t0 and so the period is to pie
+
+00:04:05,000 --> 00:04:10,000
+divided by Omega 0 and going back to
+
+00:04:10,000 --> 00:04:13,000
+are sinusoidal signal we can
+
+00:04:13,000 --> 00:04:16,000
+see that and
+
+00:04:16,000 --> 00:04:20,000
+i've indicated here then the period
+
+00:04:20,000 --> 00:04:24,000
+as to pie over Omega 0 and that's the bad you
+
+00:04:24,000 --> 00:04:30,000
+under which the signal repeats now
+
+00:04:30,000 --> 00:04:34,000
+in addition a useful
+
+00:04:34,000 --> 00:04:38,000
+property above the sinusoidal signal is the fact that
+
+00:04:38,000 --> 00:04:41,000
+a timeshare all a sinusoid
+
+00:04:41,000 --> 00:04:45,000
+is equivalent to a phase change and we can demonstrate
+
+00:04:45,000 --> 00:04:49,000
+that again mathematically in particular
+
+00:04:49,000 --> 00:04:53,000
+if we put the sinusoidal signal under
+
+00:04:53,000 --> 00:04:57,000
+a timeshare i've indicated that the probe the time shift that i'm talking
+
+00:04:57,000 --> 00:05:00,000
+about. by small t0
+
+00:05:00,000 --> 00:05:03,000
+and expand this out then
+
+00:05:03,000 --> 00:05:06,000
+we see that that is equivalent to
+
+00:05:06,000 --> 00:05:11,000
+a change in phase and important thing to recognize
+
+00:05:11,000 --> 00:05:17,000
+about this statement is that not only is a timeshare
+
+00:05:17,000 --> 00:05:20,000
+generating a phase change but in fact
+
+00:05:20,000 --> 00:05:24,000
+if we inserted a phase change
+
+00:05:24,000 --> 00:05:27,000
+there is always a value if t0
+
+00:05:27,000 --> 00:05:31,000
+which would correspond to
+
+00:05:31,000 --> 00:05:34,000
+an equivalent I'm ship said another way
+
+00:05:34,000 --> 00:05:38,000
+if retake Omega 0t0
+
+00:05:38,000 --> 00:05:42,000
+and think of that as are change in phase
+
+00:05:42,000 --> 00:05:47,000
+for any change in phase we can solve this equation for timeshift
+
+00:05:47,000 --> 00:05:50,000
+or conversely for any value timeshare that
+
+00:05:50,000 --> 00:05:54,000
+represents an appropriate face
+
+00:05:54,000 --> 00:05:58,000
+so a time shift corresponds to a phase change
+
+00:05:58,000 --> 00:06:02,000
+and a phase change likewise corresponds to it I'm ship
+
+00:06:02,000 --> 00:06:06,000
+and so for example if we
+
+00:06:06,000 --> 00:06:10,000
+look at the sinusoidal signal
+
+00:06:10,000 --> 00:06:13,000
+the general sinusoidal signal that we
+
+00:06:13,000 --> 00:06:17,000
+saw previously in effect changing the phase
+
+00:06:17,000 --> 00:06:21,000
+corresponds to moving this signal in time
+
+00:06:21,000 --> 00:06:26,000
+one way or the other for example if we look at the sinusoidal signal with
+
+00:06:26,000 --> 00:06:30,000
+a phase equal to 0 that corresponds
+
+00:06:30,000 --> 00:06:33,000
+to locating the time origin at this p
+
+00:06:33,000 --> 00:06:37,000
+and i've indicated that on
+
+00:06:37,000 --> 00:06:41,000
+the following grass
+
+00:06:41,000 --> 00:06:45,000
+so here we have illustrated a sinusoid
+
+00:06:45,000 --> 00:06:49,000
+with zero phase or cosine with zero phase
+
+00:06:49,000 --> 00:06:52,000
+corresponding to taking a general picture and shifting it
+
+00:06:52,000 --> 00:06:56,000
+shifting it appropriately as i've indicated here
+
+00:06:56,000 --> 00:07:01,000
+this of course still has the property that it's a periodic function
+
+00:07:01,000 --> 00:07:05,000
+since we simply displaced in time
+
+00:07:05,000 --> 00:07:10,000
+and by looking at the graph what we see is that it has another very important
+
+00:07:10,000 --> 00:07:11,000
+property
+
+00:07:11,000 --> 00:07:14,000
+a property referred to as even and
+
+00:07:14,000 --> 00:07:18,000
+that's a property that will find it useful in general
+
+00:07:18,000 --> 00:07:22,000
+to refer to in relation to signals a signal is said to be even
+
+00:07:22,000 --> 00:07:28,000
+if when we reflected about the origin it looks exactly the same so it's a metric
+
+00:07:28,000 --> 00:07:32,000
+about the origin and looking at
+
+00:07:32,000 --> 00:07:37,000
+this sinusoid that in fact has that property
+
+00:07:37,000 --> 00:07:43,000
+and mathematically this statement that it's even is equivalent to the statement
+
+00:07:43,000 --> 00:07:46,000
+that if we replace the time argument
+
+00:07:46,000 --> 00:07:49,000
+by its negative the function itself
+
+00:07:49,000 --> 00:07:53,000
+doesn't change
+
+00:07:53,000 --> 00:07:57,000
+now this corresponded to a phase shift 0 in our original
+
+00:07:57,000 --> 00:08:00,000
+cosine expression if instead we had
+
+00:08:00,000 --> 00:08:04,000
+chosen a phase shift love let's say minus pie over to
+
+00:08:04,000 --> 00:08:07,000
+then is that a a cosigner so it'll signal
+
+00:08:07,000 --> 00:08:11,000
+well we would generate is a sinusoid
+
+00:08:11,000 --> 00:08:15,000
+with the appropriate phase or
+
+00:08:15,000 --> 00:08:18,000
+said another way if we take are
+
+00:08:18,000 --> 00:08:22,000
+original cosine and
+
+00:08:22,000 --> 00:08:25,000
+substitute in for the phase minus pie over to
+
+00:08:25,000 --> 00:08:28,000
+then of course we have this mathematical expression
+
+00:08:28,000 --> 00:08:32,000
+using just straight for trigonometric identities
+
+00:08:32,000 --> 00:08:37,000
+we can express that alternately as signed Omega 0t
+
+00:08:37,000 --> 00:08:41,000
+the frequency and amplitude of course haven't changed and
+
+00:08:41,000 --> 00:08:45,000
+that you can convince yourself also is equivalent
+
+00:08:45,000 --> 00:08:48,000
+to shifting the cosine by
+
+00:08:48,000 --> 00:08:52,000
+and a mountain time that I've indicated here namely
+
+00:08:52,000 --> 00:08:56,000
+a quarter of the period so illustrated below
+
+00:08:56,000 --> 00:08:59,000
+is the graph now when
+
+00:08:59,000 --> 00:09:02,000
+we have a phase of mine espy over to an arc cosine
+
+00:09:02,000 --> 00:09:08,000
+which is a sinusoidal signal of course it's still
+
+00:09:08,000 --> 00:09:12,000
+periodic its periodic with a period of two pi
+
+00:09:12,000 --> 00:09:16,000
+over Omega 0 again because all that we've done
+
+00:09:16,000 --> 00:09:19,000
+by introducing a phase change is
+
+00:09:19,000 --> 00:09:24,000
+introduce the timeshare now
+
+00:09:24,000 --> 00:09:28,000
+when we look at the sinusoid in comparison with the Cosi namely with
+
+00:09:28,000 --> 00:09:30,000
+this particular choice a phase
+
+00:09:30,000 --> 00:09:34,000
+this has a different symmetry and
+
+00:09:34,000 --> 00:09:38,000
+that symmetry is referred to as odd what ought symmetry means
+
+00:09:38,000 --> 00:09:42,000
+graphically is that when we flipped the signal
+
+00:09:42,000 --> 00:09:46,000
+about the origin
+
+00:09:46,000 --> 00:09:51,000
+but I margin we also multiply it by a minus sign
+
+00:09:51,000 --> 00:09:54,000
+so thats in effect antisymmetric
+
+00:09:54,000 --> 00:09:57,000
+it it's not the mirror image but it's the mirror image flipped over
+
+00:09:57,000 --> 00:10:03,000
+and will find many occasions not only to refer to signals more general and
+
+00:10:03,000 --> 00:10:04,000
+sinusoidal signals as
+
+00:10:04,000 --> 00:10:08,000
+even in some cases and odd in other cases
+
+00:10:08,000 --> 00:10:12,000
+and in general mathematically
+
+00:10:12,000 --> 00:10:15,000
+on signal is one which
+
+00:10:15,000 --> 00:10:19,000
+has satisfy is the algebraic expression
+
+00:10:19,000 --> 00:10:22,000
+that exit see when you replace
+
+00:10:22,000 --> 00:10:27,000
+TE by its negative is equal to
+
+00:10:27,000 --> 00:10:31,000
+minus exit -2 so replacing the argument by its negative
+
+00:10:31,000 --> 00:10:35,000
+corresponds to time River I A
+
+00:10:35,000 --> 00:10:39,000
+an algebraic sign rivers
+
+00:10:39,000 --> 00:10:42,000
+okay so in this is the class of continuous-time
+
+00:10:42,000 --> 00:10:46,000
+sinusoids will have a little more to say about it later
+
+00:10:46,000 --> 00:10:49,000
+but I've now like to turn to
+
+00:10:49,000 --> 00:10:54,000
+discrete-time sinusoids what we'll see is that discrete-time sinusoids
+
+00:10:54,000 --> 00:10:58,000
+are very much like continuous-time ones but also
+
+00:10:58,000 --> 00:11:02,000
+with some very important differences and we want to focus not only on the
+
+00:11:02,000 --> 00:11:03,000
+similarities
+
+00:11:03,000 --> 00:11:07,000
+but also on the differences well let's begin
+
+00:11:07,000 --> 00:11:11,000
+with the mathematical expression a
+
+00:11:11,000 --> 00:11:15,000
+discrete-time sinusoidal signal mathematically
+
+00:11:15,000 --> 00:11:19,000
+is as i've indicated here a cosine
+
+00:11:19,000 --> 00:11:22,000
+Omega 0 and plus the and just says
+
+00:11:22,000 --> 00:11:26,000
+in the continuous-time case the parameter
+
+00:11:26,000 --> 00:11:30,000
+a is what we refer to as the airport to
+
+00:11:30,000 --> 00:11:34,000
+Omega 0 as the frequency and see
+
+00:11:34,000 --> 00:11:38,000
+as the face
+
+00:11:38,000 --> 00:11:42,000
+and I've illustrated
+
+00:11:42,000 --> 00:11:46,000
+here several discrete-time
+
+00:11:46,000 --> 00:11:49,000
+sinusoidal signals and they kinda
+
+00:11:49,000 --> 00:11:53,000
+look similar in fact if you sort of track what you might think of is the
+
+00:11:53,000 --> 00:11:54,000
+envelope
+
+00:11:54,000 --> 00:11:59,000
+it looks very much like what a continuous-time sign outside so it might
+
+00:11:59,000 --> 00:11:59,000
+look like
+
+00:11:59,000 --> 00:12:04,000
+but keep in mind day at the independent variable in this case
+
+00:12:04,000 --> 00:12:07,000
+isn't integer variable and so
+
+00:12:07,000 --> 00:12:10,000
+the sequence in fact only takes on bag use
+
+00:12:10,000 --> 00:12:14,000
+at integer values up the argument and we'll see
+
+00:12:14,000 --> 00:12:17,000
+that that has a a very important
+
+00:12:17,000 --> 00:12:22,000
+implication and will see that shortly now
+
+00:12:22,000 --> 00:12:27,000
+one of the issues that we addressed in the continuous-time cases periodicity
+
+00:12:27,000 --> 00:12:30,000
+and I want to refer or return to that
+
+00:12:30,000 --> 00:12:34,000
+shortly because that is in fact one of the areas where there is an important
+
+00:12:34,000 --> 00:12:35,000
+distinction
+
+00:12:35,000 --> 00:12:39,000
+let's first
+
+00:12:39,000 --> 00:12:43,000
+though examine the statement similar to the one
+
+00:12:43,000 --> 00:12:47,000
+the week salmon for continuous-time namely the relationship between the time
+
+00:12:47,000 --> 00:12:49,000
+shift in a phase change
+
+00:12:49,000 --> 00:12:53,000
+now in continuous-time
+
+00:12:53,000 --> 00:12:58,000
+course we saw that a timeshare corresponds to a phase change in
+
+00:12:58,000 --> 00:13:02,000
+vice versa let's first look at
+
+00:13:02,000 --> 00:13:07,000
+the relationship between shifting time and generating a change in phase
+
+00:13:07,000 --> 00:13:10,000
+in particular for discrete-time if
+
+00:13:10,000 --> 00:13:14,000
+in fact I implement a timeshare that
+
+00:13:14,000 --> 00:13:17,000
+generates a phase change and we can see that
+
+00:13:17,000 --> 00:13:21,000
+easily by simply inserting a timeshare
+
+00:13:21,000 --> 00:13:27,000
+employs an 0 and if we expand at this argument we have
+
+00:13:27,000 --> 00:13:31,000
+Omega 0 and plus Omega 0n0
+
+00:13:31,000 --> 00:13:35,000
+and so I've done that on the right hand side of the equation
+
+00:13:35,000 --> 00:13:38,000
+year and the
+
+00:13:38,000 --> 00:13:41,000
+Omega 0n0 then simply corresponds to
+
+00:13:41,000 --> 00:13:45,000
+a change in phase so clearly
+
+00:13:45,000 --> 00:13:48,000
+a shift in time generates
+
+00:13:48,000 --> 00:13:52,000
+a change in phase and
+
+00:13:52,000 --> 00:13:56,000
+for example if we take a particular
+
+00:13:56,000 --> 00:14:00,000
+sinusoidal signal let's say we take the cosine signal
+
+00:14:00,000 --> 00:14:04,000
+at a particular frequency and with a phase equal to 0
+
+00:14:04,000 --> 00:14:08,000
+a sequence that we might generate is
+
+00:14:08,000 --> 00:14:13,000
+one that I've illustrated here so
+
+00:14:13,000 --> 00:14:16,000
+when I'm illustrating here is the cosine
+
+00:14:16,000 --> 00:14:19,000
+signal with 0 theta is
+
+00:14:19,000 --> 00:14:22,000
+and it has a particular
+
+00:14:22,000 --> 00:14:26,000
+behavior to it which will depend someone on the frequency
+
+00:14:26,000 --> 00:14:31,000
+if I now take this same sequence
+
+00:14:31,000 --> 00:14:35,000
+and shifted so that the time origin
+
+00:14:35,000 --> 00:14:39,000
+shifted a quarter of a period away then
+
+00:14:39,000 --> 00:14:42,000
+you can convince yourself and it's straightforward
+
+00:14:42,000 --> 00:14:46,000
+to work out that that timeshare corresponds to a phase shift
+
+00:14:46,000 --> 00:14:49,000
+of pie over to so
+
+00:14:49,000 --> 00:14:53,000
+in that case with the cosine
+
+00:14:53,000 --> 00:14:57,000
+with a phase minus pie over to
+
+00:14:57,000 --> 00:15:01,000
+that will correspond to the expression
+
+00:15:01,000 --> 00:15:05,000
+that I have here
+
+00:15:05,000 --> 00:15:10,000
+we can alternately right that using a get a trigonometric identity as sin
+
+00:15:10,000 --> 00:15:13,000
+as a sign function and that I've stated
+
+00:15:13,000 --> 00:15:17,000
+is equivalent to a timeshare
+
+00:15:17,000 --> 00:15:21,000
+namely this shift the pirate to is equal to an
+
+00:15:21,000 --> 00:15:26,000
+a certain time share and the timeshare for this particular example
+
+00:15:26,000 --> 00:15:29,000
+is in fact the quarter the period
+
+00:15:29,000 --> 00:15:32,000
+so here we have
+
+00:15:32,000 --> 00:15:37,000
+the sinusoid previously we had the cosine
+
+00:15:37,000 --> 00:15:42,000
+the cosine was exactly the same sequence but with the Argent located here
+
+00:15:42,000 --> 00:15:45,000
+and in fact that's exactly the way we drew this graph namely
+
+00:15:45,000 --> 00:15:51,000
+we just simply took the same values and change the time origin
+
+00:15:51,000 --> 00:15:54,000
+now looking at this sequence which is the
+
+00:15:54,000 --> 00:15:58,000
+sinusoidal sequence the phase
+
+00:15:58,000 --> 00:16:03,000
+-5 over to that has a certain symmetry and in fact what we see is that
+
+00:16:03,000 --> 00:16:07,000
+it has an oximetry just as in the continuous-time case
+
+00:16:07,000 --> 00:16:12,000
+namely if we take that sequence flip it about the axis
+
+00:16:12,000 --> 00:16:17,000
+and flip it over and sign then we get the same sequence back
+
+00:16:17,000 --> 00:16:21,000
+whereas with zero phase corresponding
+
+00:16:21,000 --> 00:16:26,000
+to the cosine that I show previously that hasn't even symmetry
+
+00:16:26,000 --> 00:16:30,000
+namely if I flipped about the time margin
+
+00:16:30,000 --> 00:16:34,000
+and don't do it sign reversal then the sequences maintain
+
+00:16:34,000 --> 00:16:37,000
+so here we have
+
+00:16:37,000 --> 00:16:41,000
+and on symmetry expressed mathematically
+
+00:16:41,000 --> 00:16:44,000
+as i've indicated namely
+
+00:16:44,000 --> 00:16:48,000
+replacing the independent variable by its negative
+
+00:16:48,000 --> 00:16:52,000
+attach is a negative sign to the whole sequence
+
+00:16:52,000 --> 00:16:55,000
+whereas in a previous case
+
+00:16:55,000 --> 00:16:58,000
+what we have is 0 phase
+
+00:16:58,000 --> 00:17:02,000
+and and even symmetry
+
+00:17:02,000 --> 00:17:06,000
+and that's expressed Mac mathematically as exit and
+
+00:17:06,000 --> 00:17:11,000
+equals X -8
+
+00:17:11,000 --> 00:17:17,000
+okay now one of the things I said so far about discrete-time sinusoids is dead
+
+00:17:17,000 --> 00:17:21,000
+a timeshare corresponds to a phase change
+
+00:17:21,000 --> 00:17:25,000
+and weekend then ask whether
+
+00:17:25,000 --> 00:17:29,000
+the river statement is also true and we knew that the river statement was true
+
+00:17:29,000 --> 00:17:31,000
+in continuous-time
+
+00:17:31,000 --> 00:17:34,000
+specifically is a true
+
+00:17:34,000 --> 00:17:37,000
+that a phase change
+
+00:17:37,000 --> 00:17:40,000
+always corresponds with time shift
+
+00:17:40,000 --> 00:17:44,000
+now we know that that is true namely that this statement works both ways
+
+00:17:44,000 --> 00:17:48,000
+in continuous-time does it in discrete-time
+
+00:17:48,000 --> 00:17:52,000
+well the answer somewhat
+
+00:17:52,000 --> 00:17:55,000
+interestingly are surprisingly into you sit down and think about it
+
+00:17:55,000 --> 00:17:59,000
+is no dead it is not
+
+00:17:59,000 --> 00:18:03,000
+necessarily true and discrete-time that any phase change
+
+00:18:03,000 --> 00:18:08,000
+can be interpreted as a simple time-shifted the sequence
+
+00:18:08,000 --> 00:18:11,000
+and let me just indicate what the problem is
+
+00:18:11,000 --> 00:18:14,000
+if we look
+
+00:18:14,000 --> 00:18:19,000
+at the relationship between the left side on the right side of this equation
+
+00:18:19,000 --> 00:18:24,000
+expanding this out as we did previously we have that Omega 0n
+
+00:18:24,000 --> 00:18:30,000
+plus Omega 0n0 must correspond to Omega 0n plus
+
+00:18:30,000 --> 00:18:33,000
+p and so on make 0n0
+
+00:18:33,000 --> 00:18:38,000
+must correspond to the phase-change now
+
+00:18:38,000 --> 00:18:42,000
+which you can see pretty clearly is there'd depending
+
+00:18:42,000 --> 00:18:46,000
+on the relationship between see an Omega
+
+00:18:46,000 --> 00:18:50,000
+n0 may or may not come out to be an integer
+
+00:18:50,000 --> 00:18:53,000
+now in continuous-time
+
+00:18:53,000 --> 00:18:58,000
+the amount of time shift did not have to be an integer a map
+
+00:18:58,000 --> 00:19:02,000
+indiscreet time when we talk about a timeshare the amount of time shift
+
+00:19:02,000 --> 00:19:05,000
+obviously because the nature discrete-time signals
+
+00:19:05,000 --> 00:19:10,000
+must be an integer so the face changes related to time shifts
+
+00:19:10,000 --> 00:19:14,000
+must satisfy this particular relationship
+
+00:19:14,000 --> 00:19:17,000
+namely that Omega 0n0
+
+00:19:17,000 --> 00:19:24,000
+were n0 is an integer is equal to the changing face
+
+00:19:24,000 --> 00:19:30,000
+okay now that's one distinction between continuous-time and discrete-time
+
+00:19:30,000 --> 00:19:33,000
+let's now focus on another one namely the
+
+00:19:33,000 --> 00:19:37,000
+issue of periodicity and what we'll see
+
+00:19:37,000 --> 00:19:40,000
+is that again whereas in continuous-time
+
+00:19:40,000 --> 00:19:44,000
+all continuous-time sinusoids our periodic
+
+00:19:44,000 --> 00:19:48,000
+in the discrete-time case that is not necessarily true
+
+00:19:48,000 --> 00:19:51,000
+to
+
+00:19:51,000 --> 00:19:55,000
+explore that little more carefully let's
+
+00:19:55,000 --> 00:20:00,000
+looked at the expression again for a general sinusoidal signal with
+
+00:20:00,000 --> 00:20:04,000
+an arbitrary effort to frequency and phase
+
+00:20:04,000 --> 00:20:08,000
+and for this to be periodic
+
+00:20:08,000 --> 00:20:12,000
+what we require is that there be some value capital and
+
+00:20:12,000 --> 00:20:16,000
+under which one we shift the sequence by that amount
+
+00:20:16,000 --> 00:20:21,000
+we get the same sequence back again and the smallest value capital and
+
+00:20:21,000 --> 00:20:24,000
+is what we've defined as the period now
+
+00:20:24,000 --> 00:20:28,000
+when we try that on a sinusoid we've core substitute in
+
+00:20:28,000 --> 00:20:31,000
+for and little and little and plus capital and
+
+00:20:31,000 --> 00:20:36,000
+and when we expand out the argument
+
+00:20:36,000 --> 00:20:39,000
+here we'll get
+
+00:20:39,000 --> 00:20:43,000
+the argument that I have on the right hand side
+
+00:20:43,000 --> 00:20:46,000
+and in order for
+
+00:20:46,000 --> 00:20:50,000
+this to repeat in other words in order for a press in effect
+
+00:20:50,000 --> 00:20:56,000
+to discard this term Omega 0 times capital and where capital is the period
+
+00:20:56,000 --> 00:21:00,000
+must be an integer multiple a two-part and
+
+00:21:00,000 --> 00:21:04,000
+in that case its periodic as long as
+
+00:21:04,000 --> 00:21:08,000
+Omega 0 times capital and capital in being the period
+
+00:21:08,000 --> 00:21:13,000
+is to provide times an integer just simply dividing this out
+
+00:21:13,000 --> 00:21:16,000
+we have capital in the period is to pie am
+
+00:21:16,000 --> 00:21:21,000
+divided by Omega 0 well
+
+00:21:21,000 --> 00:21:25,000
+you can say okay what's the big deal a whatever capital and happens to come out
+
+00:21:25,000 --> 00:21:28,000
+to be when we do that a little bit about your bro that's the period
+
+00:21:28,000 --> 00:21:34,000
+but in fact capital and or 2 p.m. divided by Omega 0
+
+00:21:34,000 --> 00:21:38,000
+may not ever come out to be an integer or may not come out to be the one that
+
+00:21:38,000 --> 00:21:39,000
+you thought it might
+
+00:21:39,000 --> 00:21:42,000
+for example let's look at
+
+00:21:42,000 --> 00:21:49,000
+some particular sinusoidal signals
+
+00:21:49,000 --> 00:21:52,000
+but say we have the first one here
+
+00:21:52,000 --> 00:21:55,000
+which is a sinusoid as I've shown
+
+00:21:55,000 --> 00:21:59,000
+and it has a frequency what i've referred to as the frequency
+
+00:21:59,000 --> 00:22:03,000
+Omega 0 equal to two pi divided by 12
+
+00:22:03,000 --> 00:22:07,000
+and what we'd like to look at
+
+00:22:07,000 --> 00:22:10,000
+is to pry divided by Omega 0
+
+00:22:10,000 --> 00:22:13,000
+in effect then find an integer to multiply that by
+
+00:22:13,000 --> 00:22:17,000
+in order to get another manager let's just try that here
+
+00:22:17,000 --> 00:22:21,000
+if we look at to prioritize make a zero
+
+00:22:21,000 --> 00:22:26,000
+to pry over Omega 0 for this case is equal to 12
+
+00:22:26,000 --> 00:22:29,000
+well that's fine 12 is an integer
+
+00:22:29,000 --> 00:22:33,000
+so what that says in fact is that this sinusoidal
+
+00:22:33,000 --> 00:22:37,000
+signal is periodic and in fact this period periodic with period of 12
+
+00:22:37,000 --> 00:22:41,000
+all right let's look at the next one
+
+00:22:41,000 --> 00:22:45,000
+the next one we would have to pile for Omega 0
+
+00:22:45,000 --> 00:22:49,000
+again and that's equal to 31 fourths
+
+00:22:49,000 --> 00:22:52,000
+so with that says
+
+00:22:52,000 --> 00:22:57,000
+is that the period is 31 forts wait a minute
+
+00:22:57,000 --> 00:23:02,000
+30 1/4 isn't an integer we have to multiply that by an injured
+
+00:23:02,000 --> 00:23:06,000
+to get another integer well we multiply that by four
+
+00:23:06,000 --> 00:23:11,000
+so to pile from a guys there are ties for is 3131 is an integer
+
+00:23:11,000 --> 00:23:16,000
+and so what that says is this is periodic not with the period up to par
+
+00:23:16,000 --> 00:23:18,000
+over make a zero
+
+00:23:18,000 --> 00:23:21,000
+by with a period love to pie
+
+00:23:21,000 --> 00:23:25,000
+over Omega 0 times for namely with the period
+
+00:23:25,000 --> 00:23:30,000
+I'll 31 finally
+
+00:23:30,000 --> 00:23:35,000
+let's take an exam the example where Omega 0z call to a6
+
+00:23:35,000 --> 00:23:41,000
+as shown here that actually looks if you track it with a ride like its periodic
+
+00:23:41,000 --> 00:23:44,000
+to pile over Omega 0 in that case
+
+00:23:44,000 --> 00:23:48,000
+is equal to 12 pie well
+
+00:23:48,000 --> 00:23:51,000
+what integer can I multiplied 12 pie
+
+00:23:51,000 --> 00:23:55,000
+by and get another integer the answer is none
+
+00:23:55,000 --> 00:23:59,000
+because pi is an irrational number so in fact
+
+00:23:59,000 --> 00:24:03,000
+what that says is that if you look at
+
+00:24:03,000 --> 00:24:07,000
+this sinusoidal signal it's not periodic at all
+
+00:24:07,000 --> 00:24:12,000
+even though you might for yourself into thinking it is
+
+00:24:12,000 --> 00:24:16,000
+simply because the envelope looks periodic namely the
+
+00:24:16,000 --> 00:24:20,000
+continuous-time acquittal with this is periodic
+
+00:24:20,000 --> 00:24:26,000
+the discrete-time sequence is not
+
+00:24:26,000 --> 00:24:29,000
+okay well we've seen then some
+
+00:24:29,000 --> 00:24:34,000
+important distinctions between continuous-time sinusoidal signals
+
+00:24:34,000 --> 00:24:37,000
+and discrete-time sinusoidal signals the first one
+
+00:24:37,000 --> 00:24:41,000
+is the fact that in the continuous-time case
+
+00:24:41,000 --> 00:24:45,000
+a time-shifted phase change are always equivalent
+
+00:24:45,000 --> 00:24:49,000
+where's the discrete-time case in effect that works one way
+
+00:24:49,000 --> 00:24:53,000
+but not the other way we've also
+
+00:24:53,000 --> 00:24:57,000
+seen that for a continuous-time signal
+
+00:24:57,000 --> 00:25:00,000
+the continuous-time signal is always periodic
+
+00:25:00,000 --> 00:25:04,000
+whereas the discrete-time signal is not necessarily
+
+00:25:04,000 --> 00:25:07,000
+in particular for the continuous-time case
+
+00:25:07,000 --> 00:25:11,000
+if we have a general expression for the sinusoidal signal
+
+00:25:11,000 --> 00:25:15,000
+that i've indicated here that's periodic
+
+00:25:15,000 --> 00:25:19,000
+for any choice Omega 0 whereas
+
+00:25:19,000 --> 00:25:22,000
+in a discrete-time case its periodic
+
+00:25:22,000 --> 00:25:26,000
+only air Omega 0 is to Poway
+
+00:25:26,000 --> 00:25:30,000
+well the only if
+
+00:25:30,000 --> 00:25:34,000
+to pie over Omega 0 can be multiplied by integer
+
+00:25:34,000 --> 00:25:38,000
+to get another injured now another
+
+00:25:38,000 --> 00:25:42,000
+important and as it turns out useful distinction
+
+00:25:42,000 --> 00:25:46,000
+between the continuous-time and discrete-time case
+
+00:25:46,000 --> 00:25:49,000
+is the fact that in the discrete-time
+
+00:25:49,000 --> 00:25:54,000
+case as we very what I've called the frequency Omega 0
+
+00:25:54,000 --> 00:25:58,000
+we only see
+
+00:25:58,000 --> 00:26:02,000
+distinct signals as omega 0
+
+00:26:02,000 --> 00:26:06,000
+varies over a two-party interval and if we let Omega 0
+
+00:26:06,000 --> 00:26:12,000
+very outside the Rangers let's say mine despite a pirate 0 to 2pi
+
+00:26:12,000 --> 00:26:16,000
+will see the same sequences all over again
+
+00:26:16,000 --> 00:26:19,000
+even though at first glance the mathematical expression might look
+
+00:26:19,000 --> 00:26:20,000
+different
+
+00:26:20,000 --> 00:26:23,000
+so in the discrete-time case
+
+00:26:23,000 --> 00:26:26,000
+this classes signals
+
+00:26:26,000 --> 00:26:30,000
+is identical for values Omega 0
+
+00:26:30,000 --> 00:26:34,000
+separated by two pi whereas
+
+00:26:34,000 --> 00:26:37,000
+in a continuous-time case that is not true
+
+00:26:37,000 --> 00:26:42,000
+in particular if I consider the sinusoidal continuous-time signals
+
+00:26:42,000 --> 00:26:46,000
+as I very Omega 0
+
+00:26:46,000 --> 00:26:50,000
+what will happen is that I will always see
+
+00:26:50,000 --> 00:26:54,000
+different sinusoidal signals namely these won't be
+
+00:26:54,000 --> 00:26:58,000
+and in in effect we can justify
+
+00:26:58,000 --> 00:27:01,000
+that statement algebraically and
+
+00:27:01,000 --> 00:27:04,000
+I will take the time to do it carefully but
+
+00:27:04,000 --> 00:27:08,000
+let's look first the mall at the discrete-time
+
+00:27:08,000 --> 00:27:11,000
+case and a statement that I'm making is that
+
+00:27:11,000 --> 00:27:17,000
+if I have to discrete-time sinusoidal signals
+
+00:27:17,000 --> 00:27:22,000
+at two different frequencies and if these frequencies
+
+00:27:22,000 --> 00:27:27,000
+are separated by an integer multiple to Pine namely
+
+00:27:27,000 --> 00:27:31,000
+if Omega to is equal to Omega one-plus
+
+00:27:31,000 --> 00:27:36,000
+to pie times in integer when
+
+00:27:36,000 --> 00:27:39,000
+I substitute this into this expression
+
+00:27:39,000 --> 00:27:42,000
+because it the fact that n is also an integer
+
+00:27:42,000 --> 00:27:48,000
+all have am times and as an integer multiple a two-part
+
+00:27:48,000 --> 00:27:51,000
+and that term of course will disappear because the periodicity
+
+00:27:51,000 --> 00:27:54,000
+the sinusoid and these two sequences will be equal
+
+00:27:54,000 --> 00:27:59,000
+on the other hand in the continuous-time case
+
+00:27:59,000 --> 00:28:02,000
+since this is not restricted to be an integer variable
+
+00:28:02,000 --> 00:28:05,000
+since T is not restricted to be an integer variable
+
+00:28:05,000 --> 00:28:09,000
+for different values I'll Omega wanna make it to
+
+00:28:09,000 --> 00:28:16,000
+the sinusoidal signals will always be different
+
+00:28:17,000 --> 00:28:20,000
+okay now many of the issues that I praise
+
+00:28:20,000 --> 00:28:24,000
+so far in relation to sinusoidal signals are elaborated on
+
+00:28:24,000 --> 00:28:27,000
+in more detail in the text and of course you'll have an opportunity
+
+00:28:27,000 --> 00:28:31,000
+to exercise so this
+
+00:28:31,000 --> 00:28:34,000
+as you worked through the video course manual
+
+00:28:34,000 --> 00:28:37,000
+let me stress that
+
+00:28:37,000 --> 00:28:41,000
+sinusoidal signals will play an extremely important role
+
+00:28:41,000 --> 00:28:45,000
+for us as building blocks for general signals
+
+00:28:45,000 --> 00:28:48,000
+and descriptions systems and leaves the whole concept
+
+00:28:48,000 --> 00:28:52,000
+all four EA an ala Cys which is very heavily exploited
+
+00:28:52,000 --> 00:28:56,000
+throughout the course
+
+00:28:56,000 --> 00:29:00,000
+what i'd now like to turn to in is
+
+00:29:00,000 --> 00:29:03,000
+another class love important building blocks
+
+00:29:03,000 --> 00:29:08,000
+and in fact will see that under certain conditions these relate strongly to
+
+00:29:08,000 --> 00:29:09,000
+sinusoidal signals
+
+00:29:09,000 --> 00:29:13,000
+namely the Class A real in complex exponentials
+
+00:29:13,000 --> 00:29:16,000
+let me begin first the ball with
+
+00:29:16,000 --> 00:29:19,000
+the real exponential and
+
+00:29:19,000 --> 00:29:25,000
+in particular in the continuous-time case a real continuous-time exponential
+
+00:29:25,000 --> 00:29:28,000
+is mathematically expressed as I
+
+00:29:28,000 --> 00:29:32,000
+indicate year X if T all to see
+
+00:29:32,000 --> 00:29:35,000
+you to the eighty where for
+
+00:29:35,000 --> 00:29:39,000
+the real exponential C&A
+
+00:29:39,000 --> 00:29:42,000
+are real numbers and that's what we mean by the real exponential
+
+00:29:42,000 --> 00:29:47,000
+up shortly will also consider complex exponentials where these numbers can
+
+00:29:47,000 --> 00:29:48,000
+then
+
+00:29:48,000 --> 00:29:52,000
+become complex so this is an exponential
+
+00:29:52,000 --> 00:29:55,000
+function and for example
+
+00:29:55,000 --> 00:29:58,000
+if the parameter a is positive
+
+00:29:58,000 --> 00:30:02,000
+that means that we have growing exponential function
+
+00:30:02,000 --> 00:30:06,000
+if the parameter a is negative than
+
+00:30:06,000 --> 00:30:10,000
+that means dead we have a decaying
+
+00:30:10,000 --> 00:30:14,000
+exponential function now
+
+00:30:14,000 --> 00:30:18,000
+some weight as an aside its kinda interesting to note
+
+00:30:18,000 --> 00:30:21,000
+that for exponentials a timeshare
+
+00:30:21,000 --> 00:30:25,000
+corresponds to a scale change which
+
+00:30:25,000 --> 00:30:28,000
+is somewhat different than what happens with sinusoids
+
+00:30:28,000 --> 00:30:32,000
+in the sinusoidal case we saw that a timeshare
+
+00:30:32,000 --> 00:30:36,000
+corresponded to a phase change the real exponential a timeshare
+
+00:30:36,000 --> 00:30:40,000
+as it turns out corresponds to simply changing the scale
+
+00:30:40,000 --> 00:30:44,000
+there's nothing particularly a
+
+00:30:44,000 --> 00:30:48,000
+crucial or exciting about that and in fact
+
+00:30:48,000 --> 00:30:52,000
+perhaps stressing it is a little misleading for general functions of
+
+00:30:52,000 --> 00:30:52,000
+course
+
+00:30:52,000 --> 00:30:56,000
+about all that you can say about what happens when you
+
+00:30:56,000 --> 00:31:00,000
+implement a timeshare is that implements a time ship
+
+00:31:00,000 --> 00:31:05,000
+okay so here's the real exponential
+
+00:31:05,000 --> 00:31:09,000
+just CE to the eighty let's
+
+00:31:09,000 --> 00:31:12,000
+look at the real exponential now in the discrete-time
+
+00:31:12,000 --> 00:31:16,000
+case and in the discrete-time case
+
+00:31:16,000 --> 00:31:21,000
+we have several alternate ways
+
+00:31:21,000 --> 00:31:24,000
+love expressing it we can
+
+00:31:24,000 --> 00:31:27,000
+express the real exponential in the four
+
+00:31:27,000 --> 00:31:31,000
+see be to the beta N or
+
+00:31:31,000 --> 00:31:36,000
+as will find more convenient in part for reason at all indicate shortly
+
+00:31:36,000 --> 00:31:41,000
+we can rewrite this as see time's alpha to the end where course
+
+00:31:41,000 --> 00:31:44,000
+alpha is equal to me to the beta
+
+00:31:44,000 --> 00:31:48,000
+more typically in a discrete-time case will express
+
+00:31:48,000 --> 00:31:51,000
+the exponential as see times
+
+00:31:51,000 --> 00:31:56,000
+alpha to the end so for example this becomes
+
+00:31:56,000 --> 00:31:59,000
+essentially a geometric series a progression
+
+00:31:59,000 --> 00:32:03,000
+as an continues for certain values about
+
+00:32:03,000 --> 00:32:06,000
+for here for example we have
+
+00:32:06,000 --> 00:32:10,000
+for alpha greater than 0
+
+00:32:10,000 --> 00:32:14,000
+first the ball on the top the case where the magnitude about the
+
+00:32:14,000 --> 00:32:17,000
+is greater than one so that
+
+00:32:17,000 --> 00:32:21,000
+this the sequence is exponentially
+
+00:32:21,000 --> 00:32:26,000
+geometrically growing on the bottom again without the positive
+
+00:32:26,000 --> 00:32:29,000
+but now with its magnitude less than 1
+
+00:32:29,000 --> 00:32:33,000
+we have a geometric progression
+
+00:32:33,000 --> 00:32:36,000
+that is exponentially or geometrically
+
+00:32:36,000 --> 00:32:39,000
+became okay so this
+
+00:32:39,000 --> 00:32:43,000
+in both these cases is with alpha greater than 0
+
+00:32:43,000 --> 00:32:48,000
+now the functional were talking about is alpha to the N
+
+00:32:48,000 --> 00:32:53,000
+and of course which you can see is that if al Phys negative is that a positive
+
+00:32:53,000 --> 00:32:56,000
+then when in is even
+
+00:32:56,000 --> 00:33:00,000
+that minus sign is gonna disappear when is Eid
+
+00:33:00,000 --> 00:33:04,000
+there will be a minus sign it so for alpha negative
+
+00:33:04,000 --> 00:33:08,000
+the sequences good alternate positive and negative ads
+
+00:33:08,000 --> 00:33:11,000
+so for example here we have
+
+00:33:11,000 --> 00:33:14,000
+alpha negative
+
+00:33:14,000 --> 00:33:18,000
+and with this magnitude less than one and you can see that
+
+00:33:18,000 --> 00:33:22,000
+again its envelope the case geometrically
+
+00:33:22,000 --> 00:33:25,000
+and the values alternate in sin
+
+00:33:25,000 --> 00:33:29,000
+and here we have the magnitude about the greater than one
+
+00:33:29,000 --> 00:33:32,000
+without the negative again they alternate in signing of course
+
+00:33:32,000 --> 00:33:35,000
+its growing geometrically
+
+00:33:35,000 --> 00:33:40,000
+now if you think about alpha positive
+
+00:33:40,000 --> 00:33:45,000
+and go back to the expression that I have at the top
+
+00:33:45,000 --> 00:33:48,000
+namely see times alpha to the end
+
+00:33:48,000 --> 00:33:52,000
+with alpha positive
+
+00:33:52,000 --> 00:33:56,000
+you can see a straightforward relationship between
+
+00:33:56,000 --> 00:33:59,000
+alpha and beta family beta is
+
+00:33:59,000 --> 00:34:04,000
+the logarithm natural logarithm a valve
+
+00:34:04,000 --> 00:34:07,000
+something to think about is what happens
+
+00:34:07,000 --> 00:34:10,000
+if alpha is negative which is of course a very
+
+00:34:10,000 --> 00:34:16,000
+important and useful class love real discreet I'm exponentials also
+
+00:34:16,000 --> 00:34:21,000
+well it turns out that without the negative if you try to express it as see
+
+00:34:21,000 --> 00:34:26,000
+me to the beta and then fag beta comes out to be an imaginary number
+
+00:34:26,000 --> 00:34:29,000
+and bad is one but not the only reason
+
+00:34:29,000 --> 00:34:34,000
+why in the discrete-time case its of the most convenient
+
+00:34:34,000 --> 00:34:37,000
+to phrase real exponentials
+
+00:34:37,000 --> 00:34:41,000
+in the for alpha to the end rather than
+
+00:34:41,000 --> 00:34:44,000
+you to the beta and in other words to express them
+
+00:34:44,000 --> 00:34:51,000
+in this form rather than in this for
+
+00:34:52,000 --> 00:34:56,000
+okay now let's those are real exponentials continuous-time and
+
+00:34:56,000 --> 00:34:57,000
+discrete-time
+
+00:34:57,000 --> 00:35:01,000
+now let's look at the continuous-time
+
+00:35:01,000 --> 00:35:04,000
+complex exponential and
+
+00:35:04,000 --> 00:35:08,000
+what I mean by a complex exponential
+
+00:35:08,000 --> 00:35:11,000
+again is an exponential the for
+
+00:35:11,000 --> 00:35:17,000
+see you to the eighty him but in this case
+
+00:35:17,000 --> 00:35:21,000
+we allow the parameters C&A to be
+
+00:35:21,000 --> 00:35:25,000
+complex numbers and let's just track this throughout your break Lee
+
+00:35:25,000 --> 00:35:30,000
+CNA a complex numbers let's write see in polar form so it has
+
+00:35:30,000 --> 00:35:36,000
+a magnet to an angle let's write a and rectangular form so it has a real part
+
+00:35:36,000 --> 00:35:41,000
+in an imaginary part and when we substitute these two
+
+00:35:41,000 --> 00:35:44,000
+in here combined some things together
+
+00:35:44,000 --> 00:35:47,000
+I'll actually having combined yet I have this
+
+00:35:47,000 --> 00:35:51,000
+for the amplitude for the effort to factor
+
+00:35:51,000 --> 00:35:55,000
+and this for the exponential factor I can now put a lot of this
+
+00:35:55,000 --> 00:35:59,000
+the term corresponding to eat to the RT
+
+00:35:59,000 --> 00:36:04,000
+and combine the imaginary parts together and I come down to the expression that I
+
+00:36:04,000 --> 00:36:05,000
+have here
+
+00:36:05,000 --> 00:36:09,000
+so following this for their
+
+00:36:09,000 --> 00:36:13,000
+a an exponential this form you to the J
+
+00:36:13,000 --> 00:36:16,000
+Omega were either the JC
+
+00:36:16,000 --> 00:36:20,000
+using Oilers relation can be expressed
+
+00:36:20,000 --> 00:36:23,000
+as the some Ave cosine
+
+00:36:23,000 --> 00:36:26,000
+was GA times assign
+
+00:36:26,000 --> 00:36:31,000
+and so that corresponds to this factor
+
+00:36:31,000 --> 00:36:36,000
+and then their is this time varying amplitude factor on top of that
+
+00:36:36,000 --> 00:36:40,000
+finally putting those together we end up with the expression
+
+00:36:40,000 --> 00:36:44,000
+that I show on the bottom and what this corresponds to
+
+00:36:44,000 --> 00:36:48,000
+are to sinusoidal signals
+
+00:36:48,000 --> 00:36:53,000
+ninety degrees out of phase as indicated by the fact is a cosine and sine
+
+00:36:53,000 --> 00:36:56,000
+so there's a real part in an imaginary part
+
+00:36:56,000 --> 00:37:01,000
+with sinus or does comp on its ninety degrees out of phase
+
+00:37:01,000 --> 00:37:05,000
+and a time varying amplitude factor
+
+00:37:05,000 --> 00:37:08,000
+which is a real exponential so it's a sinusoid
+
+00:37:08,000 --> 00:37:13,000
+multiplied by real exponential in both the real part in the imaginary part
+
+00:37:13,000 --> 00:37:18,000
+and let's just see what one of those terms might look like
+
+00:37:18,000 --> 00:37:22,000
+but i've indicated at the top
+
+00:37:22,000 --> 00:37:26,000
+is a sinusoidal signal
+
+00:37:26,000 --> 00:37:30,000
+with and exponential time very exponential
+
+00:37:30,000 --> 00:37:33,000
+on below or an envelope which is a real
+
+00:37:33,000 --> 00:37:39,000
+exponential and in particular which is growing namely with are greater than 0
+
+00:37:39,000 --> 00:37:43,000
+and on the bottom i've indicated
+
+00:37:43,000 --> 00:37:46,000
+the same thing with are less than zero and
+
+00:37:46,000 --> 00:37:51,000
+this kinda sinusoidal signal by the way
+
+00:37:51,000 --> 00:37:54,000
+is typically referred to as a damped sinusoids in
+
+00:37:54,000 --> 00:37:58,000
+so what are negative what we have in the real and imaginary parts
+
+00:37:58,000 --> 00:38:02,000
+are damped sinusoids and
+
+00:38:02,000 --> 00:38:07,000
+the sinusoidal compliments at that are ninety degrees out of phase
+
+00:38:07,000 --> 00:38:13,000
+in the real part and in the imaginary part okay now
+
+00:38:13,000 --> 00:38:17,000
+in the discrete-time case we have more or less
+
+00:38:17,000 --> 00:38:20,000
+the same kinda outcome in particular
+
+00:38:20,000 --> 00:38:24,000
+what will make reference to
+
+00:38:24,000 --> 00:38:27,000
+are complex exponentials in a discrete-time
+
+00:38:27,000 --> 00:38:31,000
+case the expression for the complex exponential
+
+00:38:31,000 --> 00:38:35,000
+looks very much like the expression for the real exponential
+
+00:38:35,000 --> 00:38:39,000
+except that now we have complex
+
+00:38:39,000 --> 00:38:42,000
+factors so see an alpha
+
+00:38:42,000 --> 00:38:46,000
+are complex numbers and again
+
+00:38:46,000 --> 00:38:50,000
+if we tracked through the algebra
+
+00:38:50,000 --> 00:38:54,000
+and get to a point where we have
+
+00:38:54,000 --> 00:38:58,000
+a real exponential multiplied by a factor
+
+00:38:58,000 --> 00:39:02,000
+which is a purely imaginary exponential
+
+00:39:02,000 --> 00:39:07,000
+apply Oilers relationship so this
+
+00:39:07,000 --> 00:39:10,000
+we then finally come down to a
+
+00:39:10,000 --> 00:39:15,000
+sequence which has a real exponential
+
+00:39:15,000 --> 00:39:18,000
+ample to multiplying
+
+00:39:18,000 --> 00:39:23,000
+once I saw it in the real part and in the imaginary part
+
+00:39:23,000 --> 00:39:26,000
+exit exactly the same kind of exponential
+
+00:39:26,000 --> 00:39:29,000
+multiplying a sinusoid thats
+
+00:39:29,000 --> 00:39:33,000
+ninety degrees out of phase from that
+
+00:39:33,000 --> 00:39:38,000
+and so if we look at what why these factors might look like
+
+00:39:38,000 --> 00:39:41,000
+its what we would expect given
+
+00:39:41,000 --> 00:39:44,000
+kind of the analogy with the continuous-time case
+
+00:39:44,000 --> 00:39:48,000
+namely its an exponential or rather a sinusoidal
+
+00:39:48,000 --> 00:39:52,000
+sequence with the a
+
+00:39:52,000 --> 00:39:56,000
+real exponential on below in the case were alpha
+
+00:39:56,000 --> 00:40:00,000
+is positive then is a growing on below
+
+00:40:00,000 --> 00:40:04,000
+in the case were out there is negative I'm sorry
+
+00:40:04,000 --> 00:40:08,000
+where the magnitude of alpha mang to ralph is greater than one
+
+00:40:08,000 --> 00:40:11,000
+is a growing exponential are below with a magnitude about the
+
+00:40:11,000 --> 00:40:15,000
+is less than 1 its a decaying
+
+00:40:15,000 --> 00:40:20,000
+exponential are below and so I demonstrated that here
+
+00:40:20,000 --> 00:40:24,000
+here we have the magnitude about the greater than one
+
+00:40:24,000 --> 00:40:27,000
+and here we have the magnitude about the less than 1
+
+00:40:27,000 --> 00:40:31,000
+in both cases sinusoidal sequences underneath the envelope
+
+00:40:31,000 --> 00:40:35,000
+and then an envelope and is dictated
+
+00:40:35,000 --> 00:40:39,000
+by what the magnitude about its
+
+00:40:39,000 --> 00:40:42,000
+okay now in the discrete-time
+
+00:40:42,000 --> 00:40:47,000
+case then we have results similar to the continuous-time case
+
+00:40:47,000 --> 00:40:51,000
+namely comp own it's a real or imaginary part
+
+00:40:51,000 --> 00:40:54,000
+that have a real exponential factor times
+
+00:40:54,000 --> 00:40:58,000
+a sinusoid of course
+
+00:40:58,000 --> 00:41:01,000
+if the magnitude of alpha is
+
+00:41:01,000 --> 00:41:06,000
+less than 1 I'm sorry the main to mouth is equal to 1
+
+00:41:06,000 --> 00:41:09,000
+then this factor disappears
+
+00:41:09,000 --> 00:41:12,000
+always equal to one in this factor is equal to 1
+
+00:41:12,000 --> 00:41:17,000
+and so we have sinusoids in both the real and imaginary parts
+
+00:41:17,000 --> 00:41:21,000
+now one can ask whether
+
+00:41:21,000 --> 00:41:24,000
+in general the complex exponential
+
+00:41:24,000 --> 00:41:28,000
+with the magnitude about the equal to one is periodically not periodic
+
+00:41:28,000 --> 00:41:31,000
+and a clue to that can be inferred
+
+00:41:31,000 --> 00:41:36,000
+by examining this expression
+
+00:41:36,000 --> 00:41:42,000
+in particular in the discrete-time case with the magnitude about equal to 1
+
+00:41:42,000 --> 00:41:45,000
+we have pure sinusoids in the real
+
+00:41:45,000 --> 00:41:48,000
+part in an imaginary part
+
+00:41:48,000 --> 00:41:53,000
+and in fact in a continuous-time case with are equal to 0
+
+00:41:53,000 --> 00:41:59,000
+we have sinusoids in the real party imaginary part
+
+00:41:59,000 --> 00:42:03,000
+in a continuous-time case we have a pure complex exponential
+
+00:42:03,000 --> 00:42:08,000
+in fact so that so the terms are exponentially growing your DK
+
+00:42:08,000 --> 00:42:14,000
+back those exponentials are always periodic because
+
+00:42:14,000 --> 00:42:18,000
+the course the real and imaginary sinusoidal Cup on its superior
+
+00:42:18,000 --> 00:42:24,000
+in the discrete-time case we know that the sinusoids may or may not be periodic
+
+00:42:24,000 --> 00:42:29,000
+depending on the bad you love Omega 0 and so in fact
+
+00:42:29,000 --> 00:42:32,000
+in the discrete-time case the exponential
+
+00:42:32,000 --> 00:42:35,000
+eat to the J Omega 0n
+
+00:42:35,000 --> 00:42:40,000
+that i've indicated here may or may not be periodic
+
+00:42:40,000 --> 00:42:47,000
+depending on what the value Omega zeros
+
+00:42:47,000 --> 00:42:50,000
+okay now to summarize
+
+00:42:50,000 --> 00:42:54,000
+in this lecture I introduced and discussed
+
+00:42:54,000 --> 00:42:58,000
+a number of important basic signals
+
+00:42:58,000 --> 00:43:01,000
+in particular sinusoids an real
+
+00:43:01,000 --> 00:43:06,000
+and complex exponentials one of the important outcomes
+
+00:43:06,000 --> 00:43:09,000
+the discussion emphasize further in the text is that
+
+00:43:09,000 --> 00:43:12,000
+there are some very important similarities between them
+
+00:43:12,000 --> 00:43:16,000
+but there are also some very important differences
+
+00:43:16,000 --> 00:43:20,000
+and these differences will surface when we exploit
+
+00:43:20,000 --> 00:43:24,000
+sinusoids and complex exponentials
+
+00:43:24,000 --> 00:43:29,000
+as basic building blocks for more general continuous-time
+
+00:43:29,000 --> 00:43:33,000
+in discrete-time signals in the next lecture
+
+00:43:33,000 --> 00:43:37,000
+what I'll discuss are some other very important building blocks
+
+00:43:37,000 --> 00:43:40,000
+namely what are referred to as
+
+00:43:40,000 --> 00:43:43,000
+step signals an impulse signals and
+
+00:43:43,000 --> 00:43:47,000
+does together with the sinusoidal
+
+00:43:47,000 --> 00:43:50,000
+signals and exponentials as we've talked about today
+
+00:43:50,000 --> 00:43:53,000
+will really form the cornerstone
+
+00:43:53,000 --> 00:43:58,000
+for essentially all love the signal and system analysis
+
+00:43:58,000 --> 00:44:02,000
+there will be dealing with for the remainder the course thank you
+

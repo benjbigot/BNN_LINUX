@@ -1,0 +1,1986 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU home for the
+
+00:00:28,000 --> 00:00:31,000
+in
+
+00:00:31,000 --> 00:00:32,000
+the
+
+00:00:32,000 --> 00:00:33,000
+the
+
+00:00:33,000 --> 00:00:38,000
+the in
+
+00:00:38,000 --> 00:00:40,000
+in
+
+00:00:40,000 --> 00:00:44,000
+the
+
+00:00:44,000 --> 00:00:51,000
+are the
+
+00:00:52,000 --> 00:00:57,000
+in the last lecture we begin
+
+00:00:57,000 --> 00:01:02,000
+the discussion love modulation and in particular what we focused on
+
+00:01:02,000 --> 00:01:08,000
+was the continuous-time case and in talking about continuous-time modulation
+
+00:01:08,000 --> 00:01:11,000
+we covered a number of topics we talked about
+
+00:01:11,000 --> 00:01:14,000
+the properties and analysis love
+
+00:01:14,000 --> 00:01:18,000
+modulation when we had a complex exponential
+
+00:01:18,000 --> 00:01:23,000
+carrier signal we talked about the properties and analysis in the case of a
+
+00:01:23,000 --> 00:01:25,000
+sinusoidal carrier
+
+00:01:25,000 --> 00:01:29,000
+and in that context and related to
+
+00:01:29,000 --> 00:01:33,000
+the application associated with communications
+
+00:01:33,000 --> 00:01:36,000
+we talked about synchronous modulation
+
+00:01:36,000 --> 00:01:39,000
+a synchronous modulation and
+
+00:01:39,000 --> 00:01:42,000
+also the notion love single sideband
+
+00:01:42,000 --> 00:01:45,000
+modulation in
+
+00:01:45,000 --> 00:01:51,000
+the lecture today there are to issues that I'd like to address broad topics
+
+00:01:51,000 --> 00:01:55,000
+one is Acer parallel discussion
+
+00:01:55,000 --> 00:02:00,000
+particularly is associated with complex exponential sinusoidal modulation
+
+00:02:00,000 --> 00:02:03,000
+for discrete-time signals and
+
+00:02:03,000 --> 00:02:07,000
+the second is the introduction and analysis
+
+00:02:07,000 --> 00:02:12,000
+love a another kind of carriers specifically a post kind of carrier
+
+00:02:12,000 --> 00:02:17,000
+in continuous time leading to the notions of pulse amplitude modulation
+
+00:02:17,000 --> 00:02:22,000
+and eventually a very powerful theramin result called the sampling there
+
+00:02:22,000 --> 00:02:26,000
+well let me begin the lecture though focusing on
+
+00:02:26,000 --> 00:02:30,000
+the discrete-time modulation to essentially
+
+00:02:30,000 --> 00:02:35,000
+draw your attention to the fact dead the analysis and discrete-time
+
+00:02:35,000 --> 00:02:39,000
+very much parallels the analysis in continuous-time
+
+00:02:39,000 --> 00:02:43,000
+well let's consider in the discrete-time
+
+00:02:43,000 --> 00:02:47,000
+case just as we had in continuous-time a
+
+00:02:47,000 --> 00:02:50,000
+signal modulating a carrier signal
+
+00:02:50,000 --> 00:02:54,000
+and the resulting modulated signal
+
+00:02:54,000 --> 00:02:57,000
+is why event and it was
+
+00:02:57,000 --> 00:03:01,000
+in continuous-time the modulation property
+
+00:03:01,000 --> 00:03:05,000
+Associated with the four EA transform dead
+
+00:03:05,000 --> 00:03:10,000
+provided the basis for the analysis and exactly the same thing is true in a
+
+00:03:10,000 --> 00:03:11,000
+discrete-time
+
+00:03:11,000 --> 00:03:14,000
+case in particular what we have in discrete-time
+
+00:03:14,000 --> 00:03:20,000
+is the modulation property as it relates to the Fourier transform
+
+00:03:20,000 --> 00:03:25,000
+which tells us that the four EA transform of the modulated signal
+
+00:03:25,000 --> 00:03:29,000
+is the convolution all the
+
+00:03:29,000 --> 00:03:34,000
+for a transformer the carrier and the 48 transform or
+
+00:03:34,000 --> 00:03:39,000
+the modulating signal and the only real difference in issue here
+
+00:03:39,000 --> 00:03:42,000
+is that in the discrete-time case
+
+00:03:42,000 --> 00:03:45,000
+what we're talking about is a periodic
+
+00:03:45,000 --> 00:03:49,000
+convolution because the specter of course a periodic
+
+00:03:49,000 --> 00:03:55,000
+whereas in a continuous-time case it was an a periodic convolution so let's
+
+00:03:55,000 --> 00:04:00,000
+parallel the discussion and in particular what will focus on
+
+00:04:00,000 --> 00:04:03,000
+is first a complex exponential
+
+00:04:03,000 --> 00:04:07,000
+carrier and second a
+
+00:04:07,000 --> 00:04:11,000
+sinusoidal carrier and we'll see how this parallels our discussion in
+
+00:04:11,000 --> 00:04:12,000
+continuous-time
+
+00:04:12,000 --> 00:04:17,000
+and will make fairly brief reference as we introduce
+
+00:04:17,000 --> 00:04:22,000
+the post carrier for continuous-time will bring make very brief reference to
+
+00:04:22,000 --> 00:04:24,000
+the post carrier for discrete-time
+
+00:04:24,000 --> 00:04:28,000
+indicating that again the analysis and discrete-time and continuous-time
+
+00:04:28,000 --> 00:04:32,000
+is very parallel soul let's first consider
+
+00:04:32,000 --> 00:04:35,000
+complex exponential and sinus all carriers
+
+00:04:35,000 --> 00:04:38,000
+for the discrete-time case emphasizing
+
+00:04:38,000 --> 00:04:42,000
+the very strong parallel and similarity between
+
+00:04:42,000 --> 00:04:46,000
+discrete-time and continuous-time well
+
+00:04:46,000 --> 00:04:50,000
+we have once again the modulation property
+
+00:04:50,000 --> 00:04:54,000
+and the modulation property tells us that the spectrum
+
+00:04:54,000 --> 00:04:58,000
+all the modulated signal is the periodic
+
+00:04:58,000 --> 00:05:02,000
+convolution love the two spectra
+
+00:05:02,000 --> 00:05:05,000
+and let's consider for example
+
+00:05:05,000 --> 00:05:09,000
+an input for modulating spectrum as i've indicated here
+
+00:05:09,000 --> 00:05:12,000
+and since we what to consider first the fall
+
+00:05:12,000 --> 00:05:16,000
+a complex exponential carrier
+
+00:05:16,000 --> 00:05:19,000
+will consider the case of CNN
+
+00:05:19,000 --> 00:05:22,000
+equal to each to the J Omega subsea
+
+00:05:22,000 --> 00:05:26,000
+n and let me stress by the way as
+
+00:05:26,000 --> 00:05:30,000
+I did in the continuous-time case
+
+00:05:30,000 --> 00:05:35,000
+dead out 10 to suppress the phase angle which of course can be associated with
+
+00:05:35,000 --> 00:05:37,000
+the carrier also
+
+00:05:37,000 --> 00:05:41,000
+alright so we have then the spectrum
+
+00:05:41,000 --> 00:05:45,000
+%uh the modulating signal the spektr the carrier signal
+
+00:05:45,000 --> 00:05:49,000
+if this is the carrier then its spectrum is an impulse train
+
+00:05:49,000 --> 00:05:52,000
+and then imposed strain I've indicated
+
+00:05:52,000 --> 00:05:57,000
+here and let me stress also that in
+
+00:05:57,000 --> 00:06:01,000
+the discrete-time case of course the spectra
+
+00:06:01,000 --> 00:06:06,000
+and all of the spektr involved are periodic with period of two pi
+
+00:06:06,000 --> 00:06:10,000
+so this then is the spectrum of the carrier signal
+
+00:06:10,000 --> 00:06:14,000
+this is the spectrum the input signal the periodic convolution if these two
+
+00:06:14,000 --> 00:06:18,000
+is the spektr on the modulated signal and the result
+
+00:06:18,000 --> 00:06:22,000
+is then this spectrum shifted
+
+00:06:22,000 --> 00:06:25,000
+to center frequency which is the carrier frequency
+
+00:06:25,000 --> 00:06:29,000
+Omega subsea so
+
+00:06:29,000 --> 00:06:33,000
+the result love modulation with a complex exponential
+
+00:06:33,000 --> 00:06:36,000
+is a straightforward shifted the spectrum
+
+00:06:36,000 --> 00:06:40,000
+to a carrot to so that what occurred around
+
+00:06:40,000 --> 00:06:46,000
+zero frequency now occurs around the frequency Omega subsea
+
+00:06:46,000 --> 00:06:50,000
+now in the continuous-time k sweetie modulated
+
+00:06:50,000 --> 00:06:54,000
+with the case when we had a complex exponential carrier weedy modulated
+
+00:06:54,000 --> 00:06:57,000
+by essentially just shifting the spectrum back
+
+00:06:57,000 --> 00:07:04,000
+and he in fact in the discrete-time case were able to do exactly the same thing
+
+00:07:04,000 --> 00:07:07,000
+so if we work to replace
+
+00:07:07,000 --> 00:07:12,000
+see a van which is huge and make a subsidy and
+
+00:07:12,000 --> 00:07:16,000
+by see a very cozy the minus J Omega
+
+00:07:16,000 --> 00:07:19,000
+CN the resulting spectrum
+
+00:07:19,000 --> 00:07:22,000
+would be an impulse train
+
+00:07:22,000 --> 00:07:26,000
+as i indicate here and
+
+00:07:26,000 --> 00:07:30,000
+the result all multiply why I have an
+
+00:07:30,000 --> 00:07:34,000
+by that new carrier
+
+00:07:34,000 --> 00:07:37,000
+in the frequency domain is a convolution if these two
+
+00:07:37,000 --> 00:07:40,000
+and its relatively straightforward to verify that
+
+00:07:40,000 --> 00:07:43,000
+if you can follow these for the periodic convolution
+
+00:07:43,000 --> 00:07:49,000
+then that will get us back to the original spectrum that we started with
+
+00:07:49,000 --> 00:07:53,000
+so what's happened in the discrete-time case for the complex exponential
+
+00:07:53,000 --> 00:07:57,000
+is exactly the same as in continuous-time
+
+00:07:57,000 --> 00:08:01,000
+namely we might too late that corresponds to shifting the spectrum
+
+00:08:01,000 --> 00:08:05,000
+weedy modulate by multiplying by the complex conjugate
+
+00:08:05,000 --> 00:08:09,000
+the original modulating care the original carrier
+
+00:08:09,000 --> 00:08:14,000
+and that shifts the spectrum back to where it was originally
+
+00:08:14,000 --> 00:08:19,000
+okay now let's consider the case of a sinusoidal carrier in discrete-time
+
+00:08:19,000 --> 00:08:23,000
+and again things very much parallel
+
+00:08:23,000 --> 00:08:26,000
+what we saw in continuous-time
+
+00:08:26,000 --> 00:08:29,000
+and again as we look at the specter
+
+00:08:29,000 --> 00:08:33,000
+I will choose a phase angle 0
+
+00:08:33,000 --> 00:08:37,000
+mainly for notational an analytical convenience
+
+00:08:37,000 --> 00:08:40,000
+so in this case now rather than
+
+00:08:40,000 --> 00:08:44,000
+a carrier signal which is a single complex exponential
+
+00:08:44,000 --> 00:08:49,000
+it's now a sinusoidal carrier and the sinus or carrier is the summer too
+
+00:08:49,000 --> 00:08:52,000
+complex exponentials
+
+00:08:52,000 --> 00:08:57,000
+and so if we consider a modulating spectrum that is the specter affects a
+
+00:08:57,000 --> 00:08:59,000
+van
+
+00:08:59,000 --> 00:09:04,000
+as something are the type that I indicate here
+
+00:09:04,000 --> 00:09:08,000
+and the spectrum of the carrier
+
+00:09:08,000 --> 00:09:12,000
+now since the carrier is sign a soil rather than
+
+00:09:12,000 --> 00:09:16,000
+a complex exponential consists of two impulses
+
+00:09:16,000 --> 00:09:20,000
+wanted pasta makers see and one at minus Omega subsea
+
+00:09:20,000 --> 00:09:24,000
+convolved ing this spectrum with this spectrum
+
+00:09:24,000 --> 00:09:27,000
+gives us a replication affective Omega
+
+00:09:27,000 --> 00:09:32,000
+around plus and minus Omega subsea
+
+00:09:32,000 --> 00:09:36,000
+and incidently with an ample to change a hair
+
+00:09:36,000 --> 00:09:40,000
+so again things have
+
+00:09:40,000 --> 00:09:43,000
+worked as they did in continuous-time
+
+00:09:43,000 --> 00:09:46,000
+in continuous time or in discrete-time
+
+00:09:46,000 --> 00:09:49,000
+modulating with a sinusoidal carrier
+
+00:09:49,000 --> 00:09:53,000
+with then correspond to a replication of the spectrum
+
+00:09:53,000 --> 00:09:58,000
+around plus the carrier frequency and replication the spectrum
+
+00:09:58,000 --> 00:10:02,000
+around minus the carrier frequency in both cases
+
+00:10:02,000 --> 00:10:07,000
+as long as the carrier frequency is large enough compared with the band with
+
+00:10:07,000 --> 00:10:08,000
+the signal
+
+00:10:08,000 --> 00:10:12,000
+so that those two replications don't overlap
+
+00:10:12,000 --> 00:10:15,000
+then its reasonable to suppose
+
+00:10:15,000 --> 00:10:19,000
+that we should be able to recover the original signal
+
+00:10:19,000 --> 00:10:23,000
+well in fact to d modulate
+
+00:10:23,000 --> 00:10:26,000
+in the discrete-time case we would again
+
+00:10:26,000 --> 00:10:32,000
+follow very much the strategy that we did in continuous-time
+
+00:10:32,000 --> 00:10:35,000
+in particular let's consider the modulating
+
+00:10:35,000 --> 00:10:38,000
+by taking the modulated signal
+
+00:10:38,000 --> 00:10:41,000
+and again putting it through modulator again
+
+00:10:41,000 --> 00:10:45,000
+with a carrier which is co-signed Omega CN
+
+00:10:45,000 --> 00:10:49,000
+if we do that we have a the modulator
+
+00:10:49,000 --> 00:10:54,000
+or what will turn out to be part of the modulator as i indicate here
+
+00:10:54,000 --> 00:10:58,000
+the spectrum or the import signal
+
+00:10:58,000 --> 00:11:02,000
+is as I had just developed a replication
+
+00:11:02,000 --> 00:11:06,000
+up the original spectrum around plus and minus Omega subsea
+
+00:11:06,000 --> 00:11:10,000
+with an amplitude of the hair when this
+
+00:11:10,000 --> 00:11:13,000
+is again convolved with the spectrum
+
+00:11:13,000 --> 00:11:16,000
+love the carrier then
+
+00:11:16,000 --> 00:11:21,000
+we get a replication of the original spectrum
+
+00:11:21,000 --> 00:11:25,000
+first around zero frequency as i indicate here
+
+00:11:25,000 --> 00:11:29,000
+and then around twice the carrier frequency
+
+00:11:29,000 --> 00:11:33,000
+and minus twice the carrier frequency
+
+00:11:33,000 --> 00:11:36,000
+and as long as the carrier frequency
+
+00:11:36,000 --> 00:11:39,000
+is large enough compared with the
+
+00:11:39,000 --> 00:11:43,000
+with of the original signal day and as you can see
+
+00:11:43,000 --> 00:11:48,000
+by extracting this part of the spectrum
+
+00:11:48,000 --> 00:11:51,000
+with the low-pass filter we can in principle
+
+00:11:51,000 --> 00:11:54,000
+recover the spectrum associated with the original signal
+
+00:11:54,000 --> 00:11:59,000
+and again justice in continuous-time because this amplitude is a half
+
+00:11:59,000 --> 00:12:03,000
+we would want to choose for scaling purposes
+
+00:12:03,000 --> 00:12:07,000
+a low-pass filter ample to which is
+
+00:12:07,000 --> 00:12:12,000
+to to compensate for this factor in the hair
+
+00:12:12,000 --> 00:12:16,000
+so once again things work at basically
+
+00:12:16,000 --> 00:12:20,000
+the same way as they had in continuous-time
+
+00:12:20,000 --> 00:12:23,000
+we have sinusoidal modulation
+
+00:12:23,000 --> 00:12:28,000
+which consists love using a sinusoidal carrier
+
+00:12:28,000 --> 00:12:31,000
+and we have the the modulator
+
+00:12:31,000 --> 00:12:35,000
+which consists of taking the modulated signal
+
+00:12:35,000 --> 00:12:38,000
+multiplying by the carrier and then
+
+00:12:38,000 --> 00:12:43,000
+processing Matt with a low-pass filter
+
+00:12:43,000 --> 00:12:46,000
+to extract the portion of the spectrum
+
+00:12:46,000 --> 00:12:53,000
+which is around zero frequency as i indicate in the spectra below
+
+00:12:53,000 --> 00:12:58,000
+and the result then with this low pass filter having a gain of two
+
+00:12:58,000 --> 00:13:02,000
+is that we've recovered the original spectrum
+
+00:13:02,000 --> 00:13:06,000
+exit Omega which is the spectrum
+
+00:13:06,000 --> 00:13:10,000
+that we started now
+
+00:13:10,000 --> 00:13:14,000
+several other things to stress this is a fairly quick
+
+00:13:14,000 --> 00:13:18,000
+to we're through sinusoidal modulation for discrete-time
+
+00:13:18,000 --> 00:13:22,000
+in there are very similar issues that arise in
+
+00:13:22,000 --> 00:13:26,000
+the discrete-time case in terms of love having faced synchronization
+
+00:13:26,000 --> 00:13:31,000
+and frequency synchronization between the modulator and demodulator
+
+00:13:31,000 --> 00:13:34,000
+and we had discussed that in a fair amount of detail for the continuous-time
+
+00:13:34,000 --> 00:13:39,000
+case in some sense in practical terms
+
+00:13:39,000 --> 00:13:43,000
+that becomes much more than issue in continuous-time
+
+00:13:43,000 --> 00:13:48,000
+than it does in discrete-time in part because
+
+00:13:48,000 --> 00:13:52,000
+synchronization between a modulator and demodulator
+
+00:13:52,000 --> 00:13:56,000
+is often much harder in a continuous-time
+
+00:13:56,000 --> 00:14:00,000
+system which is essentially an analog system
+
+00:14:00,000 --> 00:14:04,000
+as compared with a digital system another
+
+00:14:04,000 --> 00:14:08,000
+very important reason and it's important to stress this at the outset
+
+00:14:08,000 --> 00:14:11,000
+is that whereas the theory involving
+
+00:14:11,000 --> 00:14:15,000
+the use of complex exponentials sinusoidal modulation
+
+00:14:15,000 --> 00:14:19,000
+parallels very strongly in the continuous-time
+
+00:14:19,000 --> 00:14:23,000
+and the discrete-time case in practical terms
+
+00:14:23,000 --> 00:14:26,000
+it has much more significance in continuous-time
+
+00:14:26,000 --> 00:14:30,000
+than it does in discrete-time that is the notion
+
+00:14:30,000 --> 00:14:35,000
+love sinusoidal modulation in the context of communication systems
+
+00:14:35,000 --> 00:14:39,000
+is extremely important for continuous-time systems
+
+00:14:39,000 --> 00:14:42,000
+and less so in discrete-time systems
+
+00:14:42,000 --> 00:14:47,000
+now kinda as a preview of a point to be raise later on
+
+00:14:47,000 --> 00:14:50,000
+I should modify that slightly with the statement
+
+00:14:50,000 --> 00:14:54,000
+that one very important plays in which
+
+00:14:54,000 --> 00:14:59,000
+sinusoidal modulation in a discrete-time context the rises
+
+00:14:59,000 --> 00:15:06,000
+is in a class of systems called trance multiplexers or trans modulation systems
+
+00:15:06,000 --> 00:15:09,000
+and this surface is basically because
+
+00:15:09,000 --> 00:15:13,000
+so many communication systems are now
+
+00:15:13,000 --> 00:15:17,000
+becoming digital and specifically discrete-time although the actual
+
+00:15:17,000 --> 00:15:20,000
+transmission is continuous time
+
+00:15:20,000 --> 00:15:23,000
+the signal processing manipulation switching
+
+00:15:23,000 --> 00:15:27,000
+is discrete-time it so in fact it turns out
+
+00:15:27,000 --> 00:15:30,000
+to be very important and useful to take
+
+00:15:30,000 --> 00:15:34,000
+a discrete-time representation I love
+
+00:15:34,000 --> 00:15:37,000
+the analog signals a continuous-time signals
+
+00:15:37,000 --> 00:15:41,000
+and in a discrete-time or digital representation
+
+00:15:41,000 --> 00:15:45,000
+convert them from one modulation scheme
+
+00:15:45,000 --> 00:15:48,000
+41 multiplexing scheme to another and
+
+00:15:48,000 --> 00:15:52,000
+although I said a lot there that
+
+00:15:52,000 --> 00:15:56,000
+really requires much more detail to
+
+00:15:56,000 --> 00:16:00,000
+to develop in any in any sense at all
+
+00:16:00,000 --> 00:16:04,000
+you should come to get the notion that that discrete-time
+
+00:16:04,000 --> 00:16:07,000
+modulation systems become very important
+
+00:16:07,000 --> 00:16:13,000
+in part because or implementation Elis use
+
+00:16:13,000 --> 00:16:16,000
+okay now there is another application
+
+00:16:16,000 --> 00:16:20,000
+dead we have discussed for both continuous time actually previously for
+
+00:16:20,000 --> 00:16:22,000
+discrete-time
+
+00:16:22,000 --> 00:16:27,000
+amplitude modulation with sinusoidal or complex exponential carriers
+
+00:16:27,000 --> 00:16:33,000
+and let me just remind you that because in fact it becomes a very important one
+
+00:16:33,000 --> 00:16:36,000
+in the case love discrete-time systems
+
+00:16:36,000 --> 00:16:40,000
+and that is the notion love using
+
+00:16:40,000 --> 00:16:44,000
+modulation together with fixed filtering
+
+00:16:44,000 --> 00:16:47,000
+to implement a filter which is
+
+00:16:47,000 --> 00:16:50,000
+which either has a variable cut off or
+
+00:16:50,000 --> 00:16:54,000
+converts let's say a low-pass filter to a high pass filter
+
+00:16:54,000 --> 00:16:59,000
+we originally talked about this when we introduce the modulation property
+
+00:16:59,000 --> 00:17:03,000
+in the context of converting a low-pass filter
+
+00:17:03,000 --> 00:17:07,000
+to a high pass filter and the notion was
+
+00:17:07,000 --> 00:17:11,000
+that if we modulate the signal
+
+00:17:11,000 --> 00:17:15,000
+with a carrier which is -1 to the end and that's just simply complex
+
+00:17:15,000 --> 00:17:17,000
+exponential
+
+00:17:17,000 --> 00:17:22,000
+or sinusoidal carrier with a carrier frequency of pie
+
+00:17:22,000 --> 00:17:28,000
+than that in effect interchanges the low frequencies in the high frequencies
+
+00:17:28,000 --> 00:17:31,000
+and if and after modulation
+
+00:17:31,000 --> 00:17:36,000
+that is processed with a low pass filter
+
+00:17:36,000 --> 00:17:40,000
+and then the result is d modulated
+
+00:17:40,000 --> 00:17:44,000
+using exactly the same carrier namely a carrier which is
+
+00:17:44,000 --> 00:17:47,000
+-1 to the end
+
+00:17:47,000 --> 00:17:51,000
+then the effective that is equivalent
+
+00:17:51,000 --> 00:17:56,000
+to high-pass filtering on the original signal
+
+00:17:56,000 --> 00:17:59,000
+and a generalization a bad would involve instead a
+
+00:17:59,000 --> 00:18:03,000
+this specific choice if -1 to the end
+
+00:18:03,000 --> 00:18:08,000
+would involve a choice in general or the e to the J Omega sed CNN
+
+00:18:08,000 --> 00:18:11,000
+that is a more general carrier frequency and
+
+00:18:11,000 --> 00:18:14,000
+d modulator which is either the minus J
+
+00:18:14,000 --> 00:18:18,000
+Omega subsea and and as i've represented here
+
+00:18:18,000 --> 00:18:23,000
+and as we had talked about it when we talked about the modulation property for
+
+00:18:23,000 --> 00:18:25,000
+discrete-time signals
+
+00:18:25,000 --> 00:18:28,000
+we had specifically chosen the conversion of a low pass to a high pass
+
+00:18:28,000 --> 00:18:30,000
+filter
+
+00:18:30,000 --> 00:18:34,000
+well let me continue the review of that
+
+00:18:34,000 --> 00:18:38,000
+just by reminding you of the details of what happens with the spectra
+
+00:18:38,000 --> 00:18:41,000
+and specifically the notion
+
+00:18:41,000 --> 00:18:46,000
+if we take this particular case omega-6 equal
+
+00:18:46,000 --> 00:18:51,000
+to pie or covertly a carrier signal which is -1 to the end
+
+00:18:51,000 --> 00:18:57,000
+then if we have the original spectra
+
+00:18:57,000 --> 00:19:00,000
+and the specter all
+
+00:19:00,000 --> 00:19:05,000
+specter of the carrier signal the spectrum of the carrier signal
+
+00:19:05,000 --> 00:19:08,000
+convolved with this spectrum
+
+00:19:08,000 --> 00:19:12,000
+will then in effect shift this by
+
+00:19:12,000 --> 00:19:15,000
+pie and so after
+
+00:19:15,000 --> 00:19:18,000
+modulating the result that we have is
+
+00:19:18,000 --> 00:19:23,000
+shifted that spectrum so that what happened at low frequencies now happens
+
+00:19:23,000 --> 00:19:26,000
+at high frequencies namely around pie
+
+00:19:26,000 --> 00:19:31,000
+and what happens at what happened at high frequencies now happens
+
+00:19:31,000 --> 00:19:36,000
+at low frequencies well if thats process now
+
+00:19:36,000 --> 00:19:41,000
+with a low pass filter and this dashed line indicates the low-pass filter
+
+00:19:41,000 --> 00:19:45,000
+then the result that we get is shown here
+
+00:19:45,000 --> 00:19:50,000
+where we've extracted the low-frequency portion of the modulated signal
+
+00:19:50,000 --> 00:19:55,000
+and now when we modulate or D modulate back
+
+00:19:55,000 --> 00:20:00,000
+then this spectrum is shifted back to where it belongs
+
+00:20:00,000 --> 00:20:05,000
+namely its shifted back to be centered around
+
+00:20:05,000 --> 00:20:08,000
+minus pie and around plus Park
+
+00:20:08,000 --> 00:20:12,000
+so if we just compare this spectrum
+
+00:20:12,000 --> 00:20:16,000
+with the original spectrum at the top
+
+00:20:16,000 --> 00:20:19,000
+what we can see is that in effect what we've done
+
+00:20:19,000 --> 00:20:23,000
+is to extract a portion of the spectrum
+
+00:20:23,000 --> 00:20:28,000
+acquittal and the processing with a high pass filter
+
+00:20:28,000 --> 00:20:33,000
+and again this is very similar to what we did in continuous-time
+
+00:20:33,000 --> 00:20:37,000
+and all of the kinda analytical processes and
+
+00:20:37,000 --> 00:20:41,000
+and convolutions involved are very much the same
+
+00:20:41,000 --> 00:20:44,000
+really the biggest difference between continuous-time and discrete-time
+
+00:20:44,000 --> 00:20:48,000
+has to do not so much with the details of the analysis but
+
+00:20:48,000 --> 00:20:52,000
+perhaps has more to do with issues
+
+00:20:52,000 --> 00:20:59,000
+love are practical applications
+
+00:20:59,000 --> 00:21:02,000
+okay well so what we've done
+
+00:21:02,000 --> 00:21:06,000
+so far for continuous-time and discrete-time
+
+00:21:06,000 --> 00:21:11,000
+is to talk about modulation amplitude modulation
+
+00:21:11,000 --> 00:21:15,000
+with complex exponential and sinus or carriers
+
+00:21:15,000 --> 00:21:18,000
+we saw that the analysis is very similar although
+
+00:21:18,000 --> 00:21:23,000
+applications are slightly different and now what I'd like to turn to
+
+00:21:23,000 --> 00:21:26,000
+is a different choice love
+
+00:21:26,000 --> 00:21:30,000
+carrier signal and the carrier signal in this particular case
+
+00:21:30,000 --> 00:21:33,000
+is a post rain rather than
+
+00:21:33,000 --> 00:21:37,000
+a sinusoidal signal now
+
+00:21:37,000 --> 00:21:42,000
+the idea is the following
+
+00:21:42,000 --> 00:21:45,000
+in general of course the modulator
+
+00:21:45,000 --> 00:21:49,000
+it consists all multiplying x50
+
+00:21:49,000 --> 00:21:53,000
+by whatever the carrier signal is and
+
+00:21:53,000 --> 00:21:57,000
+previously we've talked about a carrier signal which is sinusoidal
+
+00:21:57,000 --> 00:22:00,000
+the carrier signal that we want to consider now
+
+00:22:00,000 --> 00:22:03,000
+is a carrier signal which in fact is
+
+00:22:03,000 --> 00:22:07,000
+a pulse train and so in fact
+
+00:22:07,000 --> 00:22:11,000
+what we want to do is multiply the input signal
+
+00:22:11,000 --> 00:22:16,000
+by a Paul strain and in effect then
+
+00:22:16,000 --> 00:22:19,000
+the modulated signal consists
+
+00:22:19,000 --> 00:22:24,000
+of the original signal simply with time slices pulled out a bit as i've
+
+00:22:24,000 --> 00:22:26,000
+indicated in the bottom Kurt
+
+00:22:26,000 --> 00:22:29,000
+so what we have now
+
+00:22:29,000 --> 00:22:32,000
+is a modulated signal
+
+00:22:32,000 --> 00:22:36,000
+that is a chopped or sliced version
+
+00:22:36,000 --> 00:22:40,000
+love the original waveform and
+
+00:22:40,000 --> 00:22:46,000
+think that is what's referred to as pulse amplitude modulation
+
+00:22:46,000 --> 00:22:50,000
+now it seems like it's kinda crazy idea any ideas
+
+00:22:50,000 --> 00:22:54,000
+search opt-out slices away form and
+
+00:22:54,000 --> 00:22:57,000
+the hope that you can kinda put things back together again
+
+00:22:57,000 --> 00:23:02,000
+and the amazing thing about it is we'll see is that in fact
+
+00:23:02,000 --> 00:23:06,000
+under fairly broad general and applicability
+
+00:23:06,000 --> 00:23:11,000
+conditions you really can put the way for back together again
+
+00:23:11,000 --> 00:23:14,000
+if you just have these times places
+
+00:23:14,000 --> 00:23:18,000
+not only that but that basic notion
+
+00:23:18,000 --> 00:23:21,000
+as we'll see is independent in fact
+
+00:23:21,000 --> 00:23:25,000
+up with the with the those time slices or effect the with can go to zero
+
+00:23:25,000 --> 00:23:30,000
+and in fact we're going to make the with go to zero and really only dependent
+
+00:23:30,000 --> 00:23:35,000
+on what the frequency love the polls trainers
+
+00:23:35,000 --> 00:23:38,000
+so let's explore that in some detail
+
+00:23:38,000 --> 00:23:44,000
+and what we want to look at is the analysis but let me
+
+00:23:44,000 --> 00:23:48,000
+let me first just comment very briefly there
+
+00:23:48,000 --> 00:23:52,000
+all the analysis we go through as has been true in the case a sinusoidal
+
+00:23:52,000 --> 00:23:56,000
+modulation all the analysis that we go through
+
+00:23:56,000 --> 00:23:59,000
+holes just as well with
+
+00:23:59,000 --> 00:24:03,000
+especially minor analytical modifications to
+
+00:24:03,000 --> 00:24:07,000
+discrete-time pulse amplitude modulation as it does to
+
+00:24:07,000 --> 00:24:10,000
+continuous-time pulse amplitude modulation
+
+00:24:10,000 --> 00:24:13,000
+and so will really only go through this
+
+00:24:13,000 --> 00:24:17,000
+in terms of tracking the way for inspector for the continuous-time
+
+00:24:17,000 --> 00:24:21,000
+case but bear in mind that the results are basically similar
+
+00:24:21,000 --> 00:24:27,000
+for discrete-time okay well
+
+00:24:27,000 --> 00:24:30,000
+let's see how we get the basic result
+
+00:24:30,000 --> 00:24:33,000
+that we want to get
+
+00:24:33,000 --> 00:24:36,000
+what we have is a
+
+00:24:36,000 --> 00:24:40,000
+modulating signal which is a pulse train basically a square wave
+
+00:24:40,000 --> 00:24:45,000
+and as we've seen in previous lectures the spectra
+
+00:24:45,000 --> 00:24:50,000
+or Fourier transform associated with that is an impulse train
+
+00:24:50,000 --> 00:24:53,000
+and the envelope that impulse train
+
+00:24:53,000 --> 00:24:57,000
+is over for over sin x over X function
+
+00:24:57,000 --> 00:25:02,000
+the four th transform is impulses and the spacing of the impulses
+
+00:25:02,000 --> 00:25:07,000
+is Associated with the fundamental frequency
+
+00:25:07,000 --> 00:25:12,000
+all the Paul strain and thats Omega Sappi so make it appears to pride
+
+00:25:12,000 --> 00:25:13,000
+divided by the period
+
+00:25:13,000 --> 00:25:17,000
+the pulse train and at the
+
+00:25:17,000 --> 00:25:21,000
+amplitude and shape but this envelope is dictated
+
+00:25:21,000 --> 00:25:24,000
+by that parameter Delta
+
+00:25:24,000 --> 00:25:28,000
+which has to do with how wide the pulses are
+
+00:25:28,000 --> 00:25:32,000
+okay so we have a time function
+
+00:25:32,000 --> 00:25:36,000
+it's multiplied by this post rain now we're talking continuous-time
+
+00:25:36,000 --> 00:25:39,000
+so in the frequency domain
+
+00:25:39,000 --> 00:25:44,000
+we have the Fourier transform the time function convolved with
+
+00:25:44,000 --> 00:25:48,000
+this Fourier transform for the pulse train and let's see what that looks like
+
+00:25:48,000 --> 00:25:51,000
+if we were to consider let's say
+
+00:25:51,000 --> 00:25:56,000
+a Fourier transform which I A kinda chosen is more or less a general one
+
+00:25:56,000 --> 00:26:00,000
+then in fact when we can follow this
+
+00:26:00,000 --> 00:26:04,000
+with this simple strain what we end up with
+
+00:26:04,000 --> 00:26:08,000
+is a replication all
+
+00:26:08,000 --> 00:26:11,000
+this spectrum at
+
+00:26:11,000 --> 00:26:15,000
+the places in the frequency domain
+
+00:26:15,000 --> 00:26:19,000
+where the individual impulses occurred
+
+00:26:19,000 --> 00:26:23,000
+so we can see that this spectrum is replicated at each's
+
+00:26:23,000 --> 00:26:27,000
+these locations and as long as
+
+00:26:27,000 --> 00:26:30,000
+the frequency
+
+00:26:30,000 --> 00:26:34,000
+above the post-training is large enough compared
+
+00:26:34,000 --> 00:26:38,000
+with a maximum frequency in the
+
+00:26:38,000 --> 00:26:44,000
+original single X if T so that there is no overlap between these triangles
+
+00:26:44,000 --> 00:26:48,000
+then what you can see in fact somewhat amazingly
+
+00:26:48,000 --> 00:26:53,000
+is dead simply by low-pass filtering the result
+
+00:26:53,000 --> 00:26:57,000
+we can get back except for an amplitude factor
+
+00:26:57,000 --> 00:27:00,000
+we can give get back to the original signal
+
+00:27:00,000 --> 00:27:04,000
+now it's amazing it really is amazing
+
+00:27:04,000 --> 00:27:07,000
+dead all that this depends on
+
+00:27:07,000 --> 00:27:11,000
+is the original signal being banned limited
+
+00:27:11,000 --> 00:27:15,000
+and the frequency the post-training be high enough
+
+00:27:15,000 --> 00:27:19,000
+so that when you replicate the spectrum in the frequency domain
+
+00:27:19,000 --> 00:27:23,000
+is no overlap between these individual replications and will
+
+00:27:23,000 --> 00:27:26,000
+have a dress that a little more in a few minutes
+
+00:27:26,000 --> 00:27:29,000
+but let me first the ball point out that
+
+00:27:29,000 --> 00:27:33,000
+this has a whole variety a very important implications
+
+00:27:33,000 --> 00:27:36,000
+one is in the context of communications
+
+00:27:36,000 --> 00:27:39,000
+it leads to another very important
+
+00:27:39,000 --> 00:27:44,000
+multiplexing scheme for communications we talked last time about
+
+00:27:44,000 --> 00:27:48,000
+frequency division multiplexing where individual signals were put into
+
+00:27:48,000 --> 00:27:51,000
+individual frequency slots
+
+00:27:51,000 --> 00:27:55,000
+by choosing different carrier frequencies for sinusoidal modulated
+
+00:27:55,000 --> 00:27:56,000
+signal
+
+00:27:56,000 --> 00:28:00,000
+what this suggests is that what we can do
+
+00:28:00,000 --> 00:28:03,000
+is put the
+
+00:28:03,000 --> 00:28:07,000
+sons put different signals into
+
+00:28:07,000 --> 00:28:10,000
+non-overlapping time slots
+
+00:28:10,000 --> 00:28:14,000
+and in fact be able to recover the original signals back again
+
+00:28:14,000 --> 00:28:18,000
+so in particular suppose that
+
+00:28:18,000 --> 00:28:22,000
+I had a signal which I modulated with a pulse train
+
+00:28:22,000 --> 00:28:27,000
+and I i chose another signal modulated with another poll strain
+
+00:28:27,000 --> 00:28:32,000
+where the time slot was different and I continue this process
+
+00:28:32,000 --> 00:28:37,000
+and after the after i'd done this with some number of channels
+
+00:28:37,000 --> 00:28:41,000
+simply and it all those together
+
+00:28:41,000 --> 00:28:47,000
+as i indicate here then as long as I knew what time slots to associate with
+
+00:28:47,000 --> 00:28:48,000
+what signal
+
+00:28:48,000 --> 00:28:51,000
+I could get the original a
+
+00:28:51,000 --> 00:28:54,000
+modulated signals back again
+
+00:28:54,000 --> 00:28:57,000
+and then as long as the frequency 0
+
+00:28:57,000 --> 00:29:01,000
+the impulse train was such that
+
+00:29:01,000 --> 00:29:04,000
+I was able to do this reconstruction
+
+00:29:04,000 --> 00:29:07,000
+by simply low-pass filtering then
+
+00:29:07,000 --> 00:29:12,000
+I would be able to be my Julie so it's a very different very important modulation
+
+00:29:12,000 --> 00:29:14,000
+scheme call time division
+
+00:29:14,000 --> 00:29:19,000
+multiplexing in contrast to frequency division multiplexing as we talked about
+
+00:29:19,000 --> 00:29:20,000
+last time
+
+00:29:20,000 --> 00:29:25,000
+I made reference earlier the concept of Trance multiplexing and in fact
+
+00:29:25,000 --> 00:29:29,000
+what happens in many communication systems
+
+00:29:29,000 --> 00:29:33,000
+is dead the signals are represented in fact
+
+00:29:33,000 --> 00:29:37,000
+in discrete-time the analog continues time signals are represented in
+
+00:29:37,000 --> 00:29:38,000
+discrete-time
+
+00:29:38,000 --> 00:29:41,000
+and very often the conversion from
+
+00:29:41,000 --> 00:29:45,000
+frequency division multiplexing to time division multiplexing and back
+
+00:29:45,000 --> 00:29:50,000
+is done in fact in the discrete-time to me
+
+00:29:50,000 --> 00:29:54,000
+okay so what we have then
+
+00:29:54,000 --> 00:29:57,000
+is the notion
+
+00:29:57,000 --> 00:30:01,000
+dead we can
+
+00:30:01,000 --> 00:30:06,000
+multiply a time function
+
+00:30:06,000 --> 00:30:10,000
+by a poll strain as i indicated here
+
+00:30:10,000 --> 00:30:15,000
+and from the output I can
+
+00:30:15,000 --> 00:30:19,000
+if the frequency this post rain is high enough in relation to this band with
+
+00:30:19,000 --> 00:30:22,000
+from the output which consists of both
+
+00:30:22,000 --> 00:30:26,000
+time slices from those times places
+
+00:30:26,000 --> 00:30:31,000
+I can recover the original signal
+
+00:30:31,000 --> 00:30:34,000
+stressing again the reason it relates
+
+00:30:34,000 --> 00:30:37,000
+to the spectra and
+
+00:30:37,000 --> 00:30:41,000
+the reason is dead the original spectra
+
+00:30:41,000 --> 00:30:44,000
+is simply replicated at
+
+00:30:44,000 --> 00:30:47,000
+multiples all the fundamental frequency
+
+00:30:47,000 --> 00:30:51,000
+upholstery
+
+00:30:51,000 --> 00:30:55,000
+now is a very important thing to observe here
+
+00:30:55,000 --> 00:31:00,000
+which is dead the ability to do the reconstruction
+
+00:31:00,000 --> 00:31:04,000
+is associated with the notion of whether we can extract that
+
+00:31:04,000 --> 00:31:07,000
+kinda central triangle light happened choose a triangular shape but
+
+00:31:07,000 --> 00:31:11,000
+obviously I could be talking about any shape as long as it's been limited
+
+00:31:11,000 --> 00:31:14,000
+the ability to extract at and notice
+
+00:31:14,000 --> 00:31:19,000
+that in this modulated output spectrum
+
+00:31:19,000 --> 00:31:23,000
+the ability to recover this is totally independent
+
+00:31:23,000 --> 00:31:27,000
+all what the value of Delta is in other words
+
+00:31:27,000 --> 00:31:31,000
+if we look back at
+
+00:31:31,000 --> 00:31:35,000
+the modulator then
+
+00:31:35,000 --> 00:31:38,000
+in fact we can make Delta
+
+00:31:38,000 --> 00:31:42,000
+the with these pulses arbitrarily small
+
+00:31:42,000 --> 00:31:45,000
+and in theory that doesn't affect
+
+00:31:45,000 --> 00:31:50,000
+our ability to do the reconstruction now in practical terms it might
+
+00:31:50,000 --> 00:31:54,000
+looking back once more at the specter of the output
+
+00:31:54,000 --> 00:31:58,000
+noticed that this sample to is proportional to Delta
+
+00:31:58,000 --> 00:32:02,000
+and what that suggests is that as we make
+
+00:32:02,000 --> 00:32:05,000
+Delta smaller and smaller which we
+
+00:32:05,000 --> 00:32:08,000
+might in fact want to do if you want to time division multiplexed last two
+
+00:32:08,000 --> 00:32:10,000
+channels
+
+00:32:10,000 --> 00:32:13,000
+in principle in theory you could make it an infinite number channels just by
+
+00:32:13,000 --> 00:32:15,000
+making an infinitesimally small
+
+00:32:15,000 --> 00:32:21,000
+the smaller it is in some sense the less energy there is and again
+
+00:32:21,000 --> 00:32:24,000
+in practical terms this one of those things if you push down here pops up
+
+00:32:24,000 --> 00:32:25,000
+there
+
+00:32:25,000 --> 00:32:30,000
+namely you eventually run into issues such as noise problems
+
+00:32:30,000 --> 00:32:33,000
+so more more typically what's done is
+
+00:32:33,000 --> 00:32:38,000
+to in fact eliminate the scale factor a delta
+
+00:32:38,000 --> 00:32:42,000
+and the way that that's done is very simply
+
+00:32:42,000 --> 00:32:46,000
+it's done by choosing
+
+00:32:46,000 --> 00:32:50,000
+the with I love the pulses
+
+00:32:50,000 --> 00:32:54,000
+and the height %uh the pulses in such a way
+
+00:32:54,000 --> 00:32:58,000
+dead the area is constant even as
+
+00:32:58,000 --> 00:33:02,000
+we make Delta get arbitrarily small so
+
+00:33:02,000 --> 00:33:06,000
+and we can just modify our argument
+
+00:33:06,000 --> 00:33:11,000
+so that what we're referring to is a modulating post rain
+
+00:33:11,000 --> 00:33:15,000
+which is a pulse train with positive with Delta
+
+00:33:15,000 --> 00:33:20,000
+and height one over Delta in that case
+
+00:33:20,000 --> 00:33:23,000
+as Delta gets arbitrarily small
+
+00:33:23,000 --> 00:33:27,000
+then in fact what these rectangles become
+
+00:33:27,000 --> 00:33:31,000
+are impulses in which case what we're talking about
+
+00:33:31,000 --> 00:33:35,000
+is a carrier signal
+
+00:33:35,000 --> 00:33:39,000
+which in fact is an impulse train
+
+00:33:39,000 --> 00:33:42,000
+and the resulting modulated signal
+
+00:33:42,000 --> 00:33:46,000
+is and imposed strain for which the amplitudes
+
+00:33:46,000 --> 00:33:50,000
+of the impulses are proportional to
+
+00:33:50,000 --> 00:33:54,000
+the original input waveform at
+
+00:33:54,000 --> 00:33:59,000
+the times at which these impulses occur
+
+00:33:59,000 --> 00:34:03,000
+okay well let's look at the analysis a bat
+
+00:34:03,000 --> 00:34:06,000
+and so now what we're talking about
+
+00:34:06,000 --> 00:34:10,000
+is a spectrum
+
+00:34:10,000 --> 00:34:15,000
+dead up
+
+00:34:15,000 --> 00:34:18,000
+consists all the result
+
+00:34:18,000 --> 00:34:23,000
+love the spectrum we talked about before the sin x over X envelope except
+
+00:34:23,000 --> 00:34:27,000
+that now is Delta goes to zero that becomes
+
+00:34:27,000 --> 00:34:31,000
+flat in other words the modulating signal is an impulse train
+
+00:34:31,000 --> 00:34:35,000
+and so as we look at the spectrum
+
+00:34:35,000 --> 00:34:38,000
+the modulating signal that is then
+
+00:34:38,000 --> 00:34:41,000
+and impose train in the frequency domain the high
+
+00:34:41,000 --> 00:34:45,000
+is proportional to the frequency
+
+00:34:45,000 --> 00:34:49,000
+up the impulse train and Omega the best now denotes
+
+00:34:49,000 --> 00:34:53,000
+the frequency the impulse train and
+
+00:34:53,000 --> 00:34:57,000
+the resulting output the modulator
+
+00:34:57,000 --> 00:35:00,000
+has a spectrum which is
+
+00:35:00,000 --> 00:35:05,000
+this original spectrum again replicated around
+
+00:35:05,000 --> 00:35:09,000
+each love these impulses in other words replicated in multiples
+
+00:35:09,000 --> 00:35:13,000
+or the sampling frequency now
+
+00:35:13,000 --> 00:35:18,000
+this is very much identical to the more general case we have
+
+00:35:18,000 --> 00:35:21,000
+this replication the spectra
+
+00:35:21,000 --> 00:35:25,000
+and as long as
+
+00:35:25,000 --> 00:35:29,000
+this sample the the frequency of the impulse train is
+
+00:35:29,000 --> 00:35:33,000
+large enough compared with the band with the signal
+
+00:35:33,000 --> 00:35:36,000
+so that these triangles don't overlap
+
+00:35:36,000 --> 00:35:40,000
+I can extract this
+
+00:35:40,000 --> 00:35:43,000
+portion of the spectrum by low-pass filtering
+
+00:35:43,000 --> 00:35:47,000
+which in fact with then give us back
+
+00:35:47,000 --> 00:35:50,000
+the original signal now
+
+00:35:50,000 --> 00:35:54,000
+if instead this frequency Omega sed am
+
+00:35:54,000 --> 00:35:58,000
+is greater than Omega best minus Omega sed am
+
+00:35:58,000 --> 00:36:02,000
+we would have a spectrum that looked
+
+00:36:02,000 --> 00:36:05,000
+something more like this and what's happened
+
+00:36:05,000 --> 00:36:08,000
+in this case is that because
+
+00:36:08,000 --> 00:36:12,000
+we have an overlap here we've destroyed the ability
+
+00:36:12,000 --> 00:36:16,000
+to recover the original signal from the impulse train
+
+00:36:16,000 --> 00:36:20,000
+and that would be true also in general in a more general case
+
+00:36:20,000 --> 00:36:23,000
+love pulse amplitude modulation with
+
+00:36:23,000 --> 00:36:26,000
+pulses that up 90 with
+
+00:36:26,000 --> 00:36:31,000
+this effect by the way is one that will be
+
+00:36:31,000 --> 00:36:35,000
+exploring in considerably more detail in the next lecture and
+
+00:36:35,000 --> 00:36:39,000
+it's a phenomenon or distortion referred to as a leasing which
+
+00:36:39,000 --> 00:36:42,000
+in fact is important and interesting topic but
+
+00:36:42,000 --> 00:36:46,000
+going back to the case in which we've chosen the frequency of the upholstery
+
+00:36:46,000 --> 00:36:49,000
+in high enough
+
+00:36:49,000 --> 00:36:53,000
+then we would recover the original signal
+
+00:36:53,000 --> 00:36:56,000
+by processing it through
+
+00:36:56,000 --> 00:37:00,000
+a low-pass filter
+
+00:37:00,000 --> 00:37:03,000
+and in in that case
+
+00:37:03,000 --> 00:37:08,000
+what this says is dead if we have a signal
+
+00:37:08,000 --> 00:37:12,000
+and we modulated with an impulse train
+
+00:37:12,000 --> 00:37:17,000
+if we then process that impulse train through an ideal ok pass filter
+
+00:37:17,000 --> 00:37:22,000
+given the right conditions on Sat on the frequency the impulse train and the band
+
+00:37:22,000 --> 00:37:23,000
+with the signal
+
+00:37:23,000 --> 00:37:27,000
+we can recover the original signal back again
+
+00:37:27,000 --> 00:37:31,000
+now let me stress just going back to
+
+00:37:31,000 --> 00:37:35,000
+the picture in which we have done this modulation
+
+00:37:35,000 --> 00:37:38,000
+that this process where the modulation
+
+00:37:38,000 --> 00:37:42,000
+where the carrier signal involves an impulse train is
+
+00:37:42,000 --> 00:37:46,000
+often referred to as sampling and
+
+00:37:46,000 --> 00:37:49,000
+what that mean specifically is dead
+
+00:37:49,000 --> 00:37:55,000
+if we notice this resulting in polls train
+
+00:37:55,000 --> 00:37:58,000
+is in fact a sequence
+
+00:37:58,000 --> 00:38:01,000
+all samples all
+
+00:38:01,000 --> 00:38:05,000
+the original continuous-time signal in other words
+
+00:38:05,000 --> 00:38:10,000
+what we've done in effect is taken instantaneous samples at this way form
+
+00:38:10,000 --> 00:38:13,000
+and the implication is that if we do that
+
+00:38:13,000 --> 00:38:17,000
+at a rapid and afraid in relation
+
+00:38:17,000 --> 00:38:21,000
+to the band with the signal then
+
+00:38:21,000 --> 00:38:25,000
+we can in fact recover the original signal back again
+
+00:38:25,000 --> 00:38:28,000
+and finally to remind you
+
+00:38:28,000 --> 00:38:31,000
+I'll the argument once more
+
+00:38:31,000 --> 00:38:34,000
+we have an original signal
+
+00:38:34,000 --> 00:38:40,000
+and we have its spectrum when we've sampled it and this is now the sampled
+
+00:38:40,000 --> 00:38:44,000
+signal it's an impulse train whose instantaneous values
+
+00:38:44,000 --> 00:38:49,000
+are samples at the original waveform the spectrum a bad
+
+00:38:49,000 --> 00:38:53,000
+is the original one replicated
+
+00:38:53,000 --> 00:38:57,000
+and when that is processed through a
+
+00:38:57,000 --> 00:39:01,000
+low-pass filter to extract this part of the spectrum
+
+00:39:01,000 --> 00:39:05,000
+then after the low-pass filter we can
+
+00:39:05,000 --> 00:39:11,000
+recover the original signal back again
+
+00:39:11,000 --> 00:39:14,000
+okay well in fact me although
+
+00:39:14,000 --> 00:39:17,000
+a if you kinda follow through
+
+00:39:17,000 --> 00:39:21,000
+the specter and the waveforms this all seems fairly
+
+00:39:21,000 --> 00:39:24,000
+straightforward and perhaps
+
+00:39:24,000 --> 00:39:28,000
+or perhaps not obvious
+
+00:39:28,000 --> 00:39:32,000
+it's really worth reflecting on how amazing
+
+00:39:32,000 --> 00:39:36,000
+the result really is what it says we begin this discussion
+
+00:39:36,000 --> 00:39:41,000
+by talking about modulation and in fact modulation and sinusoidal modulation is
+
+00:39:41,000 --> 00:39:44,000
+important in its own right
+
+00:39:44,000 --> 00:39:47,000
+we ended the discussion by talking
+
+00:39:47,000 --> 00:39:51,000
+about first pulse amplitude modulation
+
+00:39:51,000 --> 00:39:57,000
+and then showing how under the right set of conditions
+
+00:39:57,000 --> 00:40:01,000
+you can in fact take away form and
+
+00:40:01,000 --> 00:40:05,000
+sample it with a set of instantaneous samples
+
+00:40:05,000 --> 00:40:08,000
+and that said instantaneous samples in fact
+
+00:40:08,000 --> 00:40:14,000
+are sufficient totally represent and reconstruct the signal
+
+00:40:14,000 --> 00:40:18,000
+what in fact the formal statement that is
+
+00:40:18,000 --> 00:40:22,000
+is referred to as the sampling theorem
+
+00:40:22,000 --> 00:40:25,000
+very powerful their own that says
+
+00:40:25,000 --> 00:40:30,000
+if were given equally spaced samples over time function
+
+00:40:30,000 --> 00:40:35,000
+and if that time function is band limited
+
+00:40:35,000 --> 00:40:39,000
+and if the band with
+
+00:40:39,000 --> 00:40:44,000
+or is or if this if this sampling frequency is
+
+00:40:44,000 --> 00:40:48,000
+chosen in the right way in relation
+
+00:40:48,000 --> 00:40:51,000
+to the
+
+00:40:51,000 --> 00:40:55,000
+band with then in fact
+
+00:40:55,000 --> 00:40:58,000
+the original time function is
+
+00:40:58,000 --> 00:41:05,000
+uniquely recoverable with a low-pass filter
+
+00:41:05,000 --> 00:41:08,000
+now the sampling theorem is kinda
+
+00:41:08,000 --> 00:41:12,000
+I would say a watershed a cornerstone
+
+00:41:12,000 --> 00:41:15,000
+love a lot of the discussion we've been having
+
+00:41:15,000 --> 00:41:20,000
+for a whole variety of reasons if first of all crops out almost as kind as
+
+00:41:20,000 --> 00:41:24,000
+straightforward obvious statement but more importantly
+
+00:41:24,000 --> 00:41:28,000
+what it says is dead
+
+00:41:28,000 --> 00:41:33,000
+if I have a continuous-time signal which satisfies the right-center conditions
+
+00:41:33,000 --> 00:41:36,000
+I can represent it by what it does
+
+00:41:36,000 --> 00:41:41,000
+at sampling instance or acquittal only at discrete
+
+00:41:41,000 --> 00:41:44,000
+is this a time
+
+00:41:44,000 --> 00:41:47,000
+now what that leads to
+
+00:41:47,000 --> 00:41:51,000
+is a whole host of things wanna which
+
+00:41:51,000 --> 00:41:55,000
+is the statement that says if we have a continuous-time signal
+
+00:41:55,000 --> 00:41:58,000
+I could in fact represented
+
+00:41:58,000 --> 00:42:02,000
+as a discrete-time signal and I could even think
+
+00:42:02,000 --> 00:42:06,000
+love processing a continuous-time signal
+
+00:42:06,000 --> 00:42:09,000
+using discrete time concepts
+
+00:42:09,000 --> 00:42:12,000
+and when I'm all done converting back through
+
+00:42:12,000 --> 00:42:15,000
+the power the sampling theorem converting back to a continuous-time
+
+00:42:15,000 --> 00:42:16,000
+sick
+
+00:42:16,000 --> 00:42:20,000
+so the sampling theorem provides this
+
+00:42:20,000 --> 00:42:23,000
+with a very major important bridge between
+
+00:42:23,000 --> 00:42:28,000
+continuous-time and discrete-time implementations and ideas
+
+00:42:28,000 --> 00:42:34,000
+in the next several lectures we will be exploring so this in considerable detail
+
+00:42:34,000 --> 00:42:37,000
+first the focus in more next time
+
+00:42:37,000 --> 00:42:42,000
+on some with the specific issues and distortions associated with sampling and
+
+00:42:42,000 --> 00:42:44,000
+following that
+
+00:42:44,000 --> 00:42:48,000
+a discussion are what is referred to as
+
+00:42:48,000 --> 00:42:52,000
+discrete-time processing of continuous-time signals
+
+00:42:52,000 --> 00:42:52,000
+thank you
+

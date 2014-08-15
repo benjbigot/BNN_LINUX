@@ -1,0 +1,758 @@
+000040~003440~the following content is provided under a Creative Commons license
+003480~003649~your support will help MIT OpenCourseWare continue to offer
+007129~003451~high-quality educational resources for free
+010580~003780~to make a donation or view additional materials from hundreds of them IT
+014360~000660~courses
+015020~003090~visit MIT OpenCourseWare at 0 CW
+018110~002480~that MIT ided you
+020590~007000~ha
+042000~003050~the norm
+045050~007000~are
+055810~003440~over the past several lectures we've developed the representation for linear
+059250~001550~time-invariant systems
+060800~003710~in a particularly important center systems
+064510~004260~which are linear and time-invariant are those that are represented by linear
+068770~003710~constant coefficient differential equations continuous-time
+072480~003620~or when your constant coefficient difference equations
+076100~005250~in discrete-time for example electrical circuits that are built let's say I dove
+081350~003240~resistors inductors and capacitors perhaps with %ah pants
+084590~004200~correspond to systems described by differential equations
+088790~003750~mechanical systems with springs and dash pots likewise
+092540~003620~are described by differential equations and in the discrete-time
+096160~004090~case things such as moving average filters
+100250~005030~digital filters and most simple kinda data smoothing
+105280~003650~are all linear constant coefficient difference equations
+108930~003120~now presumably
+112050~004700~in a previous course you've had some exposure to
+116750~004250~differential equations for continuous-time and
+121000~004030~their solution using notions like particular solution and homogeneous
+125030~002250~solution initial conditions center
+127280~003640~later on in the course
+130920~004690~when we've developed the concept to the 48 transforming after that the
+135610~001420~apostrophe its form
+137030~003910~will see some very efficient and useful ways
+140940~003380~generating solutions both differential and difference equations
+144320~003360~at this point however I'd like to
+147680~003150~just introduce when your constant coefficient
+150830~003860~differential equations and the discrete-time counterpart
+154690~003170~and address among other things the issue
+157860~004360~love when they do and don't correspond to linear time-invariant systems
+162220~003510~well let's first consider
+165730~003280~what I refer to as an nth order
+169010~003580~linear constant coefficients differential equation as i've indicated
+172590~001040~here
+173630~004960~and what it consists of is a linear combination of derivatives up the system
+178590~000790~output
+179380~003420~y'at equal to a linear combination
+182800~003130~of derivatives above the system input accept T
+185930~003030~and is referred to
+188960~004540~as a constant coefficients equation of course because the
+193500~004720~coefficients are constant in other words not assume to be time-varying
+198220~003060~and its referred to
+201280~005270~as linear because it corresponds to a linear combination
+206550~003770~love these derivatives not because
+210320~003110~it corresponds to a linear system and in fact
+213430~003450~as we'll see or as all indicate this
+216880~003300~equation may or may not in fact correspond to
+220180~004470~when your system in the discrete-time case
+224650~005540~the corresponding equation is a linear constant coefficient difference equation
+230190~003420~and that corresponds to again
+233610~005190~a linear combination love the late versions of the output equal to
+238800~003440~a linear combination love the late versions at the input
+242240~003150~this equation is referred to as an nth order
+245390~004670~difference equation the N referring to the number of the ladies
+250060~004800~are the output involved just as an aunt order differential equation
+254860~004149~the N for the order the equation refers to the number of derivatives
+259009~003851~the output now let's first begin
+262860~003760~with the near constant coefficient differential equations
+266620~003970~and the basic
+270590~003040~point or the solution for
+273630~003450~the differential equations is the fact dead
+277080~003080~if we've generated some solution
+280160~004200~which I refer to here's why superiority some solution
+284360~003460~to the equation for a given input then
+287820~003140~in fact we can and to that solution
+290960~003130~any other solution which
+294090~003609~satisfies what's referred to as
+297699~003621~the homogeneous equation so in fact
+301320~003860~this differential equation by itself
+305180~003019~is not a unique specification
+308199~002130~the system
+310329~003100~if I have any solution then I can
+313429~005300~and to that solution any other solution which satisfies the homogeneous equation
+318729~001430~and thus all those two
+320159~004240~likewise be a solution and that's very straight forward to verify
+324399~003920~by simply substituting into the differential equation
+328319~005070~some love the particular a particular and the homogeneous solution
+333389~004480~and what you see is that the homogeneous contribution
+337869~003310~in fact goes to zero by definition
+341179~004010~what we mean by the homogeneous equation now
+345189~005650~the homogeneous solution for a when your constant coefficient differential
+350839~000820~equation
+351659~003510~is of the form that I
+355169~003570~indicate at the bottom and
+358739~003130~it typically consists love a
+361869~004810~song or capital and complex exponentials
+366679~003120~and the Constance
+369799~003060~are on determined by the equation itself
+372859~004230~and this form for the homogeneous solution
+377089~005120~in essence drops out love examining
+382209~004340~the homogeneous equation where
+386549~003880~if we assume that the former the homogeneous solution
+390429~003780~is a complex exponential with some
+394209~004020~on specified amplitude and unspecified exponent
+398229~004140~if we substitute this into are homogeneous equation
+402369~003250~we end up with the equation that i've indicated
+405619~004010~year the factor A&E the st. can in fact be
+409629~003981~cancelled out and we find there that equation
+413610~002570~is satisfied
+416180~003120~for capital N values
+419300~003560~love s and
+422860~003550~that's true no matter what choices made for these
+426410~004000~coefficients and the essential consequence
+430410~003470~have all of that is that the homogeneous solution
+433880~003770~is of the form that I indicated previously
+437650~003240~namely it consists love some
+440890~003930~love capital and complex exponentials
+444820~003830~where the coefficients the capital and coefficients
+448650~003120~attached to you to those complex exponentials
+451770~003199~is undetermined Iran specified
+454969~003240~so what this says is that in order to
+458209~004420~obtain the solution for a win here comes the coefficient differential equation
+462629~003090~we need some kind of auxiliary information
+465719~004060~tells us how to obtain these capital and
+469779~003940~undetermined Constance and there are a variety of ways
+473719~003950~specifying this auxiliary information or auxiliary conditions
+477669~004390~for example in addition to the differential equation
+482059~003710~what I can tell you is the value
+485769~003091~of the output and and -1 up there
+488860~003449~and -1 if its derivatives at some
+492309~003590~specified time t0 and
+495899~003961~so the differential equations together
+499860~003599~with the auxiliary information the initial conditions
+503459~003401~van lets you determine the total solution
+506860~004569~which namely lets you determine these previously unspecified
+511429~003701~coefficients in the homogeneous solution
+515130~005250~now depending on how the auxiliary information is stated or what auxiliary
+520380~001599~information is available
+521979~003771~the system a or may not correspond
+525750~003930~to a linear system and may or may not correspond to a linear time-invariant
+529680~003520~system one essential condition
+533200~003449~for it to correspond to a linear system is that
+536649~003690~the initial conditions must be zero
+540339~003681~and one can see the reason for that
+544020~005830~if we refer back to the previous lecture in which we saw that for a linear system
+549850~003000~if we put 0n we get zero out
+552850~004480~so if exit see the input is zero the output must be zero
+557330~004629~and so that in essence tells us that at least for the system to be linear
+561959~003000~these initial conditions must be zero
+564959~003451~now beyond that if
+568410~003100~we want the system to be
+571510~004120~causal and linear time in and time-invariant
+575630~003290~then what's required on the
+578920~003680~initial conditions is that they be consistent with
+582600~005359~what's referred to as initial rest initial arrest says
+587959~003241~that the output must be
+591200~003220~0 up until the time
+594420~003770~that the input becomes 90 and we can see
+598190~003350~of course that that's consistent with the notion of causality as
+601540~003810~we talked about in the previous lecture and
+605350~004239~its relatively straightforward to see
+609589~004801~that if the system is causal and linear and time-invariant
+614390~003160~that will require
+617550~003820~initial rest it's somewhat more difficult see
+621370~006050~that if we specify initial rest the NAT in fact is sufficient to
+627420~003450~determine that the system is both causal in linear
+630870~003550~and time very but the essential point then is that
+634420~003330~requires initial rest for both linearity
+637750~003520~and causality okay well
+641270~003530~let's look at an example and
+644800~004390~let's take the example love a first-order
+649190~003280~differential equation as I've
+652470~003040~indicated here so we have
+655510~003490~a first-order differential equation the wife TTT
+659000~003130~was a yote is the input exit
+662130~003030~T and let's first
+665160~003360~look at what the homogeneous solution this equation is
+668520~003650~and so we can consider the homogeneous equation
+672170~004840~namely the equation specify solutions
+677010~004310~which would correspond to zero input
+681320~003200~we in essence guess for impose
+684520~004170~a solution love the form the homogeneous solution
+688690~004410~is an amplitude factor times the complex exponential
+693100~004220~substituting this into the homogeneous equation
+697320~003270~we then get the equation that i've indicated here
+700590~004340~what you can see is that this equates in this equation
+704930~004910~I can cancel out the amplitude factor and this complex exponential
+709840~006320~so let's just cancel those out on both sides of the equation
+716160~004140~and what we're left with is an equation
+720300~004210~that specifies what the complex exponent must be
+724510~005110~in particular for the homogeneous solution s must be equal to minus a
+729620~003160~and so finally are homogeneous solution
+732780~005849~is as I've indicated year
+738629~005380~okay now let's look at the solution for specific input let's consider for
+744009~001220~example input
+745229~003410~which is a scale units step and
+748639~003570~although I won't work at the solution in detail and perhaps
+752209~003820~using what you've worked on previously
+756029~003550~you know how to carry out the solution for that the
+759579~003090~a solution with step input
+762669~005000~is what i've indicated here scaler one minus the next financial times unit
+767669~004280~staff and you can verify that simply by substituting into the differential
+771949~001860~equations now
+773809~004090~we know that there's a family of solutions in other words
+777899~003060~any solution with
+780959~003770~a homogeneous solution added to it is again a solution
+784729~004770~and so if we consider the solution I just indicated
+789499~003670~we generate the entire family of solutions by
+793169~003290~ending a homogeneous solution to it and so
+796459~003920~this then corresponds to the entire family of solutions
+800379~004280~where the constant a is unspecified
+804659~006811~so far and needs to be specified through some type avoids avery conditions
+811470~003079~now a class A auxiliary conditions
+814549~003230~is the Commissioner initial rest which
+817779~005970~as i indicated before is equivalent to the statement that the system
+823749~003740~is causal and linear and time-invariant and
+827489~003820~in that case for the initial rest condition
+831309~003830~we would then require in this equation above
+835139~003920~that this constant be equal to 0
+839059~003370~and so finally the response
+842429~003310~to scales step if the system
+845739~003550~is the correspond to cause a linear time-invariant system
+849289~003300~is then just this term namely
+852589~003210~constant times one minus an exponential
+855799~002821~times step
+858620~003640~okay now if the system is a linear time-invariant system
+862260~003550~it can as we know be described through its impulse response
+865810~003310~and as you've worked out previously
+869120~003279~in the video course manual for
+872399~003741~a linear time-invariant system the impulse response
+876140~004420~is the derivative love the step response adjusted quickly remind you
+880560~004269~love where that result comes from in essence
+884829~004641~we can consider to linear time-invariant systems and Cascade
+889470~003790~wanna differentiator the other the system that we're talking about
+893260~001360~described by
+894620~004360~the differential equation and step in here
+898980~003390~then generated in polls into our system
+902370~003820~and out comes the impulse response well just using the fact that
+906190~004350~these are both linear time-invariant systems and they can be cascaded in
+910540~000880~either order
+911420~004010~then means that if we have step response
+915430~004390~to our system and that goes through differentiator
+919820~004780~what must come out again is the impulse response
+924600~004340~so differentiating the step response we get the impulse response
+928940~003519~here again is the step response as we
+932459~005000~just worked it out this time for you next step if we differentiate
+937459~003310~we have then since the step response
+940769~003891~is the product of two terms the derivative a product is the sum
+944660~003830~the derivatives and carrying that algebra through
+948490~003370~and using the fact that the derivative the step
+951860~003310~is an impulse finally we come down
+955170~003580~to this statement for the impulse response
+958750~003149~and then recognizing that this is but I'm
+961899~003050~function times and in polls and we know
+964949~003711~that a time function times in polls takes on
+968660~004380~the value at the time that the impulse occurs
+973040~004320~then this term is simply 0
+977360~003250~and the impulse response then
+980610~003300~finally is an exponential this for
+983910~004090~and this is the peking exponential for a positive
+988000~004240~it's a growing exponentially for a negative and
+992240~004469~recall that as we talked about previously
+996709~003721~a system is a linear time-invariant system is stable
+1000430~003880~if its impulse response is absolutely integral
+1004310~004690~for this particular case this impulse response
+1009000~003070~is absolutely integral provided that
+1012070~003360~the exponential factor a
+1015430~003530~is greater than 0
+1018960~003170~okay so what we've seen then is the
+1022130~005090~impulse response for system described by a linear constant coefficient
+1027220~001380~differential equation
+1028600~003210~where in addition we will impose causality
+1031810~003950~when you're ready in time invariance essentially through the initial
+1035760~000820~conditions
+1036580~002959~love initial rest
+1039539~003850~now pretty much the same kinds of things happen
+1043389~003450~with difference equations as we've gone through
+1046839~003891~with differential equations in particular
+1050730~003120~again let me remind you love the form love
+1053850~003470~and aunt order when your constant coefficient difference equation
+1057320~004170~its as I indicate here and
+1061490~005569~again a linear combination this time the late versions of the output equal to a
+1067059~001171~linear combination
+1068230~004329~up the late versions love the input once again
+1072559~004211~the difference equation is not
+1076770~004420~a complete specification the system because we can and to the response
+1081190~003470~any homogeneous solution in other words
+1084660~003680~any solution that satisfies the homogeneous equation
+1088340~003660~in the summer those well also satisfy the original
+1092000~005519~difference equation so if we have
+1097519~003861~a particular response that satisfies
+1101380~003909~the difference equation then ending to that
+1105289~005750~any response there is a solution to the homogeneous equation
+1111039~005591~will also be a solution to the total equation
+1116630~004710~the homogeneous solution again is of the form
+1121340~003850~of a linear combination of exponentials here
+1125190~004000~we have the homogeneous equation as with
+1129190~003459~differential equations we can
+1132649~003171~guests or impose solutions for
+1135820~003589~eight times an exponential when we substitute this
+1139409~003301~into the homogeneous equation we then end up
+1142710~004579~with equation that i've indicated here we recognize again
+1147289~004510~there a the amplitude
+1151799~003271~and seats at the end
+1155070~003079~this exponential factor cancel out
+1158149~004071~and so this equation is satisfied
+1162220~003980~for any values love see
+1166200~004800~that satisfy this equation and
+1171000~003009~there are and roots C-one through Z and
+1174009~003900~and so finally the form for the homogeneous solution
+1177909~004531~is a linear combination love capital and
+1182440~003680~exponentials capital and is the order the equation
+1186120~004689~with each of those exponentials the ample to factor is undetermined
+1190809~003671~and needs to be determined in some way through
+1194480~003069~the imposition love appropriate
+1197549~004461~initial conditions are boundary conditions
+1202010~003040~so the general form then
+1205050~003140~for the solution to the difference equation
+1208190~003020~is
+1211210~003689~some with the exponentials plus any particular solution
+1214899~005681~its through auxiliary conditions that we determine
+1220580~003030~these coefficients we have
+1223610~003880~and undetermined coefficients and so
+1227490~004419~we require capital and auxiliary conditions
+1231909~003591~for example some set values
+1235500~003139~of the output at and this thing instance
+1238639~002581~time
+1241220~000860~now this
+1242080~003270~was the same as with differential equations in the case a differential
+1245350~002240~equations we talked about specifying
+1247590~003620~the value of the output and its derivatives and
+1251210~003160~there we indicated dead for linearity
+1254370~004300~what we required when the arity what we require
+1258670~003410~is that the auxiliary conditions 30
+1262080~003570~and the same thing applies here for the same reason
+1265650~005260~namely if the system is to be linear and the response if there's no input must be
+1270910~002550~equal to 0
+1273460~002340~in addition what
+1275800~002960~we may want to impose on the system is
+1278760~003440~that it be causal and in addition to linear
+1282200~003550~time-invariant and with that requires again
+1285750~004950~is that it the auxiliary conditions be consistent with
+1290700~003110~initial rest namely that if
+1293810~003340~the input is zero prior to some time
+1297150~005259~in the output is zero prior to the same time
+1302409~003020~okay so we've seen a very direct parallel
+1305429~003301~so far between differential equations
+1308730~003500~and difference equations
+1312230~003370~in fact one difference between them dead
+1315600~003170~in some sense makes difference equations
+1318770~003330~easier to deal with in some situations is dead
+1322100~003930~in contrast to a differential equation a
+1326030~003010~difference equation if we assume causality
+1329040~003600~in fact is and explicit
+1332640~003220~input-output relationship for the system now let me
+1335860~002809~show you what I mean
+1338669~004521~let's consider the n-th order difference equation as i've indicated here
+1343190~003820~and let's assume that we're imposing causality
+1347010~003669~so there'd the output can only depend
+1350679~004321~on prior values at the input and therefore on fire values at the output
+1355000~004020~well we can simply rearrange this equation
+1359020~004620~solving for Y have an the leading term with cable 0
+1363640~004860~taking all the other turns over to the right side of the equation
+1368500~004159~and we then have a workers if equation
+1372659~005371~namely that an equation expresses the output interns
+1378030~003649~love prior values if the input which is this term
+1381679~003981~and prior values at the output
+1385660~003530~and so if in fact we have this equation running
+1389190~003470~then once it started we know how to compute
+1392660~004060~the output for the next time
+1396720~001029~well
+1397749~003310~how do we get started the way we get it started of course
+1401059~003060~is through the appropriate said love
+1404119~004430~initial conditions are boundary conditions and if for example
+1408549~003580~we assume initial rest corresponding to a causal when you're time-invariant
+1412129~001061~system
+1413190~003389~then if the input is zero up until sometime
+1416579~004330~the output must be zero up until that time and Matt in essence
+1420909~004080~helps us get the equation started well let's look at this
+1424989~003630~specifically in the context love a
+1428619~003060~first-order difference equation so let's take
+1431679~003120~a first-order difference equation
+1434799~002781~as i've indicated here
+1437580~004400~and so we have an equation that tells us that why I have and minus eight times
+1441980~001520~wider than -1
+1443500~003260~is equal to exit
+1446760~003000~now if we want this to correspond to
+1449760~003770~a causal linear time-invariant system we
+1453530~003890~oppose initial impose initial rest on it we can
+1457420~003740~rewrite the first-order difference equation by taking
+1461160~003120~the term involving y ven -1
+1464280~003950~over to the right hand side of the equation
+1468230~003980~right now this gives us a workers if equation
+1472210~005860~that expresses the output interns the input and past values at the output
+1478070~004300~and since we've impose causality
+1482370~003780~and if we're talking about a linear time-invariant system
+1486150~004810~we can now inquire as to what the impulse responses and we know of course
+1490960~001480~that the impulse response
+1492440~004169~charles is everything that we need to know about the system
+1496609~004700~okay so let's shoes and input which is
+1501309~003400~an impulse so the impulse response
+1504709~003390~is Beltre van corresponding
+1508099~003690~to the exit and appear plus eighty Delta
+1511789~003960~love this should be a chip N -1
+1515749~004901~and let me just correct that this is a chip N -1
+1520650~003400~so we have the impulse response as Delta van
+1524050~004420~was eight times a Japan -1
+1528470~003150~now from initial rest we know
+1531620~005010~bad since the input namely an impulse is 0 for and less than zero
+1536630~003510~the impulse response is likewise 0
+1540140~003040~for and less 0 and now
+1543180~004170~let's work out what 80 its well
+1547350~003510~80 with an equal 0 is
+1550860~003430~delta up zero plus eight times
+1554290~003450~a chip N -1 HRN minus 10
+1557740~007000~and so h0 is equal to 1
+1565000~003370~okay now that we have a chance 0 we can figure at H
+1568370~003380~one by running this recursive equations
+1571750~003760~so 8 you've won is
+1575510~003210~Delta love one which is zero
+1578720~003590~plus eight times h0 which we just figured out as one
+1582310~005500~so HR one is equal to a and if we carry this through
+1587810~004220~will have a chip to equal to a squared and
+1592030~004500~this will continue on and in fact we can recognize
+1596530~003840~by looking at this and how we would expect these terms to build
+1600370~003730~we would see that the impulse response a Japan
+1604100~004060~in fact -ism form a to the end times
+1608160~002499~you have an
+1610659~003360~and we also can recognize then dead
+1614019~004701~this corresponds to stable system
+1618720~003080~if and only if the impulse response
+1621800~004500~which is what we just figured out if and only if the impulse response
+1626300~003800~is absolutely so noble and what that will require
+1630100~006939~is that the magnitude a the less
+1637039~004860~okay now we impose causality linear ready in time invariance
+1641899~003311~and generated a solution recur simply
+1645210~004380~and now of course if we want to generate the more general
+1649590~003020~center solutions to this difference equation
+1652610~003890~we can't do that by adding all of the
+1656500~004029~homogeneous solutions namely all the solutions to satisfy the homogeneous
+1660529~002811~equation so
+1663340~003930~here we have the causal linear time-invariant
+1667270~003000~impulse response in fact
+1670270~005850~with an impulse input all of the possible solutions
+1676120~003360~are that impulse response plus
+1679480~005520~the homogeneous solutions the homogeneous solution is the solution
+1685000~003270~that satisfies the homogeneous equation
+1688270~003019~that will in general
+1691289~003601~believe the form an amplitude factor
+1694890~003240~times an exponential factor and
+1698130~003000~if we substitute this into this equation
+1701130~003019~then we see that the homogeneous
+1704149~003431~equation is satisfied for any values have a
+1707580~004020~in any values see that satisfy
+1711600~004530~this equation again as we did with differential equations
+1716130~007000~the factor Amy cancels out and also in fact I can cancel out is either the N
+1723640~003440~there and seat to the end here
+1727080~004719~and so what we're left with is a statement that tells us
+1731799~003191~then dead the homogeneous
+1734990~003090~solution is over for AC to the end
+1738080~003940~for any ban you capital A and any value
+1742020~003700~see it satisfies this equation and
+1745720~003120~that values the in particular is the
+1748840~003319~people today so the homogeneous solution then
+1752159~004620~is any exponential this form with any amplitude factor
+1756779~003890~and so the family of solutions with an impulse
+1760669~003451~input is the solution
+1764120~004460~corresponding to the system being cause a linear and time-invariant
+1768580~003460~plus the homogeneous sir
+1772040~000960~if
+1773000~004000~we impose causality Lenny a ready in time invariance
+1777000~003820~on the system then of course that additional
+1780820~003690~exponential factor will be 0 in other words capital A
+1784510~004069~is 0
+1788579~004710~okay now in we seen the
+1793289~002961~differential equations and difference equations interns
+1796250~001720~love
+1797970~003490~the fact there there are families have solutions
+1801460~003630~and in order to get causality Lenny a ready in time
+1805090~004420~variance requires imposing a particular set initial conditions namely
+1809510~002960~imposing initial rest on the system
+1812470~004569~let's now look at the difference equation
+1817039~006161~and then later the differential equation interpreted in block diagrams
+1823200~003370~now p the difference equation at
+1826570~003870~I just simply repeated here is why I have an
+1830440~003260~is accident was a white van -1
+1833700~003130~where I've taken that the late term
+1836830~003810~over to the right hand side of the equation so in effect
+1840640~003810~what on imposing on this system is causality
+1844450~003000~I'm assuming that if I know the past history
+1847450~003800~the input and the output I can determine
+1851250~002710~the next value the out
+1853960~003850~well we can in fact draw a block diagram
+1857810~003690~represents that equation the equation says
+1861500~003430~we take exit and for any given bad you
+1864930~004460~a van say n0 whatever bad you were computing the output were
+1869390~003480~we take the input at that time
+1872870~003559~and and to it the factor a
+1876429~005720~times the output value that we calculated last time so
+1882149~004551~if we have excessive and which is our input
+1886700~002980~and if we have why I have and which is our output
+1889680~003960~we in fact can't get why I have an
+1893640~003840~by taking the last value why event
+1897480~003710~indicated here by putting why I have an
+1901190~004260~threw it away multiplying Matt
+1905450~003600~by the factor
+1909050~002260~a
+1911310~004770~and then Anning that result
+1916080~001729~to
+1917809~002151~the input
+1919960~003240~and the result the doing that is
+1923200~002260~why event
+1925460~003040~so the way this block diagram
+1928500~004559~might be interpreted for example as an algorithm is this a
+1933059~004011~dead we take exit Van add to it
+1937070~004960~eight times the previous value the output that some gives us
+1942030~004350~the current value of the output which we then put out of the system
+1946380~004060~and also put into a delay element or
+1950440~004800~basically it was stored register to use on the next generation a recursion
+1955240~004890~now how do we get this started well we know that the difference equation
+1960130~001750~requires initial conditions
+1961880~003049~and in fact the initial conditions
+1964929~003551~correspond to what we store
+1968480~003680~in that the late register when this block diagram
+1972160~003160~equation initially starts up
+1975320~003380~okay now let's look at
+1978700~003620~this for the case %uh difference equations
+1982320~004350~more generally
+1986670~006610~so what we said is dead we can calculate the output by
+1993280~003490~having previous values that the input
+1996770~003670~previous values at the output and forming
+2000440~004050~the appropriate linear combination so
+2004490~003069~let's just build up the more general block diagram
+2007559~004331~that would correspond to this
+2011890~003840~and what it says is that we want to have a mechanism
+2015730~005740~restoring past values the input in a mechanism for story past values at the
+2021470~000520~output
+2021990~003450~and i've indicated that on this figure
+2025440~003190~so far by a chain love
+2028630~003620~the layout its indicating
+2032250~003140~that whatever what
+2035390~003190~the output each delay is the input
+2038580~003870~delayed by one time it's
+2042450~003650~or or interval and so
+2046100~004519~what we see down this chain of the ladies are the late replications
+2050619~003581~love the input and what we see
+2054200~003800~on the other chain is delayed
+2058000~004940~replications love the output
+2062940~004010~now the difference equation says that we want to take these
+2066950~004219~and multiply them by the appropriate coefficients
+2071169~003730~the coefficients in the difference equation and so we can do that
+2074899~003571~as i've indicated here so
+2078470~003540~now we have these delay elements each multiplied
+2082010~004109~by the appropriate coefficients on the input and by
+2086119~004970~appropriate coefficients on the output those are then
+2091089~003490~songs together and
+2094579~004571~so we now what's on these and what's on these
+2099150~003610~after we've some these we want to add
+2102760~004140~those together and there's a factor 1 over 80 that comes in
+2106900~003250~and that and generates are out
+2110150~003290~and so this in fact and
+2113440~006139~represents a block diagram which is a general block diagram for implementing
+2119579~003520~war representing near constant coefficient difference
+2123099~001970~wage
+2125069~004351~now if you think about what it means in terms of what's a computer algorithm or
+2129420~001169~a piece of hardware
+2130589~004101~in fact this block diagram is a recipe or algorithm for doing the
+2134690~000990~implementation
+2135680~003820~by it's important to
+2139500~003540~recognize even at this point dad it's only one
+2143040~004480~many possible algorithms or implementations for this difference
+2147520~001480~wage
+2149000~002369~just for example
+2151369~005711~I can consider that equation
+2157080~002270~core that block diagram
+2159350~004710~and here I've redrawn at so
+2164060~004110~here once again I have the same block diagram that we just saw
+2168170~004570~and I can recognize for example
+2172740~003620~that this in essence corresponds to
+2176360~003210~to linear time-invariant systems
+2179570~002640~in cascade
+2182210~003210~now that assumes of course that my
+2185420~004130~initial conditions are such dad I that the system is in fact
+2189550~004660~when you're and that in turn requires that we're assuming initial rest namely
+2194210~001870~before the input does anything
+2196080~004610~other than 0 there are just zero value stored in the registers
+2200690~004530~but assuming that it corresponds to a linear time-invariant system
+2205220~005000~this is a cascade to linear time-invariant systems
+2210220~003630~we know that two linear time-invariant systems can be cascaded
+2213850~003640~in either order so in particular I can consider
+2217490~003830~breaking this cascade here and moving this block
+2221320~003570~over to the other side and so let's just
+2224890~003770~do that
+2228660~002380~and when I do
+2231040~002069~I then have
+2233109~003091~this combination systems
+2236200~004010~and of course you can ask what advantage there is to do in at
+2240210~003540~and the advantage arises because it the fact
+2243750~003790~there'd in this form
+2247540~004030~exactly what is stored in these delays
+2251570~003210~is also stored in the still air registers
+2254780~003510~in other words it's this intermediate variable
+2258290~004350~whatever it is down this chain of delays and down this chain of the ladies
+2262640~003940~and so in fact I can collapse those delays
+2266580~003070~into a single chain of delays and
+2269650~005330~the network that I'm left with is the network that I indicate
+2274980~004280~I missed you graph where what I've done is to simply collapse that
+2279260~003120~double chain of the ladies into a single chain
+2282380~002240~the waves
+2284620~004080~now want to ask well what's the advantage to doing that and the
+2288700~000790~advantage
+2289490~004800~one advantage simply stated is that when you think in terms of an implementation
+2294290~001260~of a difference equation
+2295550~003130~the lady corresponds to
+2298680~003540~storage register a memory location and by this
+2302220~003830~by simply using the fact that we can interchange the order in which linear
+2306050~002130~time-invariant systems are cascaded
+2308180~005260~we can reduce the amount of memory by a factor to
+2313440~001890~okay now
+2315330~005110~and essentially similar procedure can also be used for
+2320440~004100~differential equations in terms of implementation
+2324540~004120~using block diagrams for the interpretation implementations
+2328660~003610~using like diagrams and let me first do that
+2332270~003150~rather than in general let me first do it in the in
+2335420~005500~the context love a specific example
+2340920~001720~so
+2342640~005610~let's consider a when your constant coefficient differential equation as
+2348250~001240~i've indicated here
+2349490~003830~and I have terms on the left side in terms on the right side
+2353320~005090~and with the differential equation
+2358410~003120~let's consider taking overturns
+2361530~003259~over to the right side of the equation except
+2364789~004861~for the highest the residue in the output next we
+2369650~003159~integrate both sides of the equation are so that
+2372809~003550~when we're done we end up with the on the left side of the equation
+2376359~004760~with y ft on the right side of the equation with the appropriate number
+2381119~003710~%uh integrations and so the InterPro equation
+2384829~005141~that will get is for this example y ft the output is except the
+2389970~003540~plus be the scale factor times the integral
+2393510~004440~the input and -8 at scale factor times the integral
+2397950~003020~the output so to
+2400970~003450~form the output in a block diagram turns
+2404420~003070~we form a linear combination of the input
+2407490~003530~scaled in to grow the input and a scale
+2411020~003099~integral love the output all of that and it together
+2414119~003591~so we need in addition to
+2417710~003589~the input we need the integral
+2421299~003320~love the input and so this box indicates an integrator
+2424619~003410~in addition to the output we need
+2428029~003361~the integral the output and now
+2431390~003560~to for why ft we
+2434950~003079~multiply the integrated in play
+2438029~004330~by the scale factor B and
+2442359~004441~and back to exit C
+2446800~004950~and retake the integrated output multiplied by Minas de
+2451750~003530~and and to that
+2455280~003320~the result are the previous addition
+2458600~004340~and according to the integral equation then that forms
+2462940~002280~the output
+2465220~003310~so just as we did with the difference equation
+2468530~003350~we've converted the differential equation to
+2471880~004360~an integral equation and we have a block diagram for very similar
+2476240~004500~to what we had in the case the difference equation now the initial
+2480740~001310~conditions of course
+2482050~003910~are tied up and again how these integrators
+2485960~004670~are initialized assuming that we impose initial rest on the system
+2490630~004480~weekend thinkers the overall system is a linear time-invariant system
+2495110~004560~and it's a cascade one linear time-invariant system with the second
+2499670~003400~so we can in fact
+2503070~002580~break this
+2505650~005470~and consider interchanging the order in which these two systems a cascade
+2511120~003990~and so i've indicated that down below here
+2515110~003560~I've simply taken the top block diagram
+2518670~003820~interchange the order in which the to
+2522490~003670~systems are cascaded and
+2526160~003380~here again we can ask what the advantages to this
+2529540~003770~as opposed to the previous one and what you can see
+2533310~003310~just as we saw with the difference equation is that
+2536620~003210~now the integrators both integrators
+2539830~003040~are integrating the same thing in particular
+2542870~004270~the input to this integrator and the input
+2547140~004280~to this integrator are identical so in fact
+2551420~003700~rather than using this one we can simply tap of
+2555120~004550~from here we can in fact remove this integrator
+2559670~002870~break this connection
+2562540~003950~and happy and at this point and so
+2566490~004220~what we've done and by interchange in the order in which the systems are
+2570710~001000~cascaded
+2571710~004400~is reduced the implementation to the implementation
+2576110~003510~with a single integrated very much similar to
+2579620~003330~what we talked about in the case the difference wage
+2582950~003450~now let's just again with the integral equation
+2586400~003920~way the differential equation looked at
+2590320~003530~this somewhat more generally again
+2593850~005080~if we take the differential equation the general differential equation
+2598930~004400~integrated a sufficient number of times to convert it to an integral equation
+2603330~004240~we would then have this cascaded systems
+2607570~004590~and again if we assume initial rest
+2612160~003110~so that these are both linear time-invariant systems
+2615270~003060~we can interchange the order in which they are cascaded
+2618330~003980~namely take the second system and
+2622310~002499~move it
+2624809~003451~to proceed the first system
+2628260~003720~and then we recognize is that the input to this change
+2631980~004379~integrators and this change integrators is exactly the same
+2636359~003521~and so in fact we can collapse these together
+2639880~003800~using only one change integrators and the system
+2643680~003730~there we're left with then is system
+2647410~003300~that looks as i've indicated here so we have
+2650710~003710~now just a single chain integrators
+2654420~004070~is that a the two sets in
+2658490~004570~so we've seen that the situation is very similar here as it was in the case the
+2663060~001170~difference equation
+2664230~003920~again why do we want to cut the number integrators in half
+2668150~005390~well one reason is because integrators in effect represent hardware
+2673540~004170~and if we use half as much if we have half as many integrators
+2677710~004080~then using half as much hard
+2681790~003900~okay well let me just conclude by summarizing
+2685690~003560~a number of points I indicated at the beginning
+2689250~003980~that linear constant coefficient differential equations a difference
+2693230~000890~equations
+2694120~004650~will play an important role as linear time-invariant systems
+2698770~004290~throughout this coursing throughout the center lectures
+2703060~003050~I also stress
+2706110~004250~the fact that differential or difference equations
+2710360~003890~by themselves are not a complete specification
+2714250~003670~the system because of the fact that we can and
+2717920~004230~to any solution a homogeneous
+2722150~003450~I do we specify the appropriate initial conditions
+2725600~005040~to ensure how do we specify the appropriate initial conditions to ensure
+2730640~001330~that the system
+2731970~003030~is linear and time-invariant well
+2735000~005670~the auxiliary information namely the initial conditions
+2740670~003020~dissociated with the system
+2743690~003350~be causal linear and time-invariant
+2747040~003010~are the conditions of initial rest
+2750050~003230~and in fact for most of the cores
+2753280~004090~what will be interested in systems that are in fact cause a linear and
+2757370~000960~time-invariant
+2758330~005480~and so we will in fact be assuming initial rest conditions
+2763810~002240~now
+2766050~003020~as I also indicated their are
+2769070~003420~a variety of efficient procedures for solving differential
+2772490~004410~and difference equations that we haven't yet address and
+2776900~003459~beginning with the next set of lectures will be talking about
+2780359~003081~for EA transform and much later in the course
+2783440~004270~what's referred to as the apostrophe its form for continuous-time
+2787710~003609~and sea transport for discrete-time and what we'll see
+2791319~005061~is that with the Fourier transform in later with the apostasy transform
+2796380~004290~will have a number love efficient and very useful ways
+2800670~004300~%uh generating the solution for
+2804970~003960~differential and difference equations this under the assumption that the
+2808930~001349~system is causal
+2810279~002381~when you're in time very
+2812660~004660~also will see in addition to the block diagram implementations
+2817320~003170~the systems that we talked about so far
+2820490~003830~we'll see another a number of other useful
+2824320~004720~implementations that exploit a variety of properties associated with
+2829040~002260~Korean past thank you

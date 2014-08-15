@@ -1,0 +1,3823 @@
+1
+00:00:05,790 --> 00:00:12,790 
+ha the the
+
+2
+00:00:27,410 --> 00:00:34,410 
+the more
+
+3
+00:00:35,719 --> 00:00:42,719 
+the last time
+
+4
+00:00:43,409 --> 00:00:46,620 
+we talked about the you the
+representation
+
+5
+00:00:46,620 --> 00:00:50,909 
+%uh linear time-invariant systems
+through the convolution song
+
+6
+00:00:50,909 --> 00:00:53,670 
+in the discrete-time case and the
+convolution integral in the
+
+7
+00:00:53,670 --> 00:00:54,579 
+continuous-time
+
+8
+00:00:54,579 --> 00:00:59,559 
+case now although the derivation was
+relatively straightforward
+
+9
+00:00:59,559 --> 00:01:03,149 
+in fact the result is really kind of
+amazing because
+
+10
+00:01:03,149 --> 00:01:07,979 
+what it tells us is that for linear
+time-invariant systems
+
+11
+00:01:07,979 --> 00:01:12,039 
+if we know the response to the system to
+a single in polls
+
+12
+00:01:12,039 --> 00:01:15,360 
+at equal 0 or in fact that any other
+time
+
+13
+00:01:15,360 --> 00:01:19,590 
+then we can determine from that its
+response
+
+14
+00:01:19,590 --> 00:01:25,770 
+to an arbitrary input through the use of
+convolution furthermore
+
+15
+00:01:25,770 --> 00:01:29,350 
+what we'll see as the course develops is
+that in fact
+
+16
+00:01:29,350 --> 00:01:32,940 
+the class a linear time-invariant
+systems is a very rich class
+
+17
+00:01:32,940 --> 00:01:36,539 
+there are lots of systems that have that
+property
+
+18
+00:01:36,539 --> 00:01:40,849 
+and in addition there are lots a very
+interesting things that you can do with
+
+19
+00:01:40,849 --> 00:01:42,619 
+linear time-invariant systems
+
+20
+00:01:42,619 --> 00:01:46,310 
+in today's lecture
+
+21
+00:01:46,310 --> 00:01:49,550 
+what I'd like to begin with is focusing
+
+22
+00:01:49,550 --> 00:01:53,280 
+on convolution as an algebraic operation
+
+23
+00:01:53,280 --> 00:01:58,429 
+and will see that it has a number of
+algebraic properties then in turn
+
+24
+00:01:58,429 --> 00:02:01,849 
+have important implications for
+
+25
+00:02:01,849 --> 00:02:05,009 
+linear time-invariant systems then we'll
+turn
+
+26
+00:02:05,009 --> 00:02:08,030 
+to a discussion or what the
+
+27
+00:02:08,030 --> 00:02:11,300 
+characterization %uh linear
+time-invariant systems
+
+28
+00:02:11,300 --> 00:02:14,430 
+through convolution implies
+
+29
+00:02:14,430 --> 00:02:18,950 
+in terms of the relationship various
+other system properties
+
+30
+00:02:18,950 --> 00:02:22,620 
+to the impulse response let me begin by
+
+31
+00:02:22,620 --> 00:02:26,250 
+reminding you love the basic result that
+we
+
+32
+00:02:26,250 --> 00:02:30,209 
+develop last time which is the
+convolution some
+
+33
+00:02:30,209 --> 00:02:33,230 
+in discrete-time as
+
+34
+00:02:33,230 --> 00:02:36,670 
+I indicate here and
+
+35
+00:02:36,670 --> 00:02:39,790 
+the convolution integral in
+continuous-time
+
+36
+00:02:39,790 --> 00:02:45,700 
+in and what the convolution some more
+the convolution integral tells us
+
+37
+00:02:45,700 --> 00:02:48,850 
+is how to relate the output
+
+38
+00:02:48,850 --> 00:02:53,500 
+to the input and to the system impulse
+response
+
+39
+00:02:53,500 --> 00:02:57,010 
+and the expression looks
+
+40
+00:02:57,010 --> 00:03:00,660 
+basically the same in continuous-time
+and discrete-time
+
+41
+00:03:00,660 --> 00:03:05,800 
+and I remind you also that we talked
+about a graphical interpretation
+
+42
+00:03:05,800 --> 00:03:09,950 
+where essentially to graphically
+
+43
+00:03:09,950 --> 00:03:13,360 
+interpret convolution required for
+
+44
+00:03:13,360 --> 00:03:16,390 
+was developed in terms
+
+45
+00:03:16,390 --> 00:03:19,840 
+or taking the system impulse response
+
+46
+00:03:19,840 --> 00:03:23,020 
+flipping it sliding it past the input
+
+47
+00:03:23,020 --> 00:03:26,640 
+and with positioned appropriately
+depending on the
+
+48
+00:03:26,640 --> 00:03:30,470 
+value of the independent variable for
+which were computing
+
+49
+00:03:30,470 --> 00:03:33,760 
+the convolution and then multiplying and
+
+50
+00:03:33,760 --> 00:03:37,030 
+summing in the discrete-time case or
+integrating
+
+51
+00:03:37,030 --> 00:03:41,840 
+in the continuous-time case now
+
+52
+00:03:41,840 --> 00:03:45,900 
+convolution as an algebraic operation
+
+53
+00:03:45,900 --> 00:03:49,340 
+has a number or important properties
+
+54
+00:03:49,340 --> 00:03:53,349 
+one of the properties of convolution
+
+55
+00:03:53,349 --> 00:03:57,200 
+is that it is what is referred to as
+commuted
+
+56
+00:03:57,200 --> 00:04:01,120 
+community here means that
+
+57
+00:04:01,120 --> 00:04:04,310 
+we can think either a convo loving
+
+58
+00:04:04,310 --> 00:04:08,209 
+X with age or H with axe
+
+59
+00:04:08,209 --> 00:04:11,500 
+and the order in which that's done
+
+60
+00:04:11,500 --> 00:04:16,049 
+doesn't affect the output result so
+summarized here
+
+61
+00:04:16,049 --> 00:04:19,519 
+is what the community operation is
+
+62
+00:04:19,519 --> 00:04:23,330 
+in discrete-time or in continuous-time
+
+63
+00:04:23,330 --> 00:04:26,729 
+and it says as I just indicated that
+
+64
+00:04:26,729 --> 00:04:29,949 
+x7 convolved with a chip and
+
+65
+00:04:29,949 --> 00:04:33,300 
+is equal to a chip and convolved
+
+66
+00:04:33,300 --> 00:04:36,520 
+with exit or the same course
+
+67
+00:04:36,520 --> 00:04:40,180 
+in continuous-time and in fact
+
+68
+00:04:40,180 --> 00:04:43,669 
+in the lecture last time
+
+69
+00:04:43,669 --> 00:04:48,730 
+we worked an example where we had
+indiscreet I'm an impulse response which
+
+70
+00:04:48,730 --> 00:04:50,560 
+was an exponential
+
+71
+00:04:50,560 --> 00:04:54,790 
+and an input which is a unit step
+
+72
+00:04:54,790 --> 00:04:58,470 
+and in the text what you'll find is
+
+73
+00:04:58,470 --> 00:05:01,710 
+the same example work except in that
+case
+
+74
+00:05:01,710 --> 00:05:07,410 
+the input is the exponential and the
+system impulse response is the step
+
+75
+00:05:07,410 --> 00:05:10,660 
+and that corresponds to the example in
+the text
+
+76
+00:05:10,660 --> 00:05:15,750 
+which is example 3.1
+
+77
+00:05:15,750 --> 00:05:19,800 
+and what happens in an example is that
+in fact
+
+78
+00:05:19,800 --> 00:05:22,880 
+what you'll see is that the same result
+
+79
+00:05:22,880 --> 00:05:26,310 
+occurs an example 3.1 as we generated
+
+80
+00:05:26,310 --> 00:05:29,560 
+in the lecture and there's a similar
+comparison
+
+81
+00:05:29,560 --> 00:05:33,680 
+in continuous-time this example was
+worked in
+
+82
+00:05:33,680 --> 00:05:36,830 
+lecture and this example
+
+83
+00:05:36,830 --> 00:05:40,270 
+is work in the text in other words
+
+84
+00:05:40,270 --> 00:05:43,380 
+the text works the example where the
+system
+
+85
+00:05:43,380 --> 00:05:46,729 
+impulse response is
+
+86
+00:05:46,729 --> 00:05:52,130 
+unit step and the input is an
+exponential
+
+87
+00:05:52,130 --> 00:05:55,260 
+right now the community property as I
+said tells us
+
+88
+00:05:55,260 --> 00:05:58,590 
+that the order in which we do
+convolution
+
+89
+00:05:58,590 --> 00:06:01,740 
+doesn't affect the result to the
+convolution
+
+90
+00:06:01,740 --> 00:06:04,970 
+the same is true for continuous-time and
+discrete-time
+
+91
+00:06:04,970 --> 00:06:09,479 
+and in fact for the other algebraic
+properties that I'll talk about
+
+92
+00:06:09,479 --> 00:06:15,080 
+the results are exactly the same for
+continuous-time and discrete-time
+
+93
+00:06:15,080 --> 00:06:18,260 
+so in fact what we can do is
+
+94
+00:06:18,260 --> 00:06:23,750 
+drop the independent variable as an
+argument
+
+95
+00:06:23,750 --> 00:06:29,850 
+so that we suppress any kinda difference
+between continuous and discrete-time
+
+96
+00:06:29,850 --> 00:06:33,919 
+and suppressing be independent variable
+
+97
+00:06:33,919 --> 00:06:37,970 
+within state the community property as
+I've
+
+98
+00:06:37,970 --> 00:06:41,120 
+rewritten it here just X convulsed with
+age because
+
+99
+00:06:41,120 --> 00:06:44,540 
+H involved with the ex the same in
+continuous-time
+
+100
+00:06:44,540 --> 00:06:49,139 
+and discrete-time now
+
+101
+00:06:49,139 --> 00:06:52,759 
+the derivation to the community property
+is
+
+102
+00:06:52,759 --> 00:06:57,160 
+more less amount you bro which you can
+follow through in the book it involves
+
+103
+00:06:57,160 --> 00:07:01,020 
+soem changes variables and
+
+104
+00:07:01,020 --> 00:07:04,340 
+in some things that sort
+
+105
+00:07:04,340 --> 00:07:07,650 
+what I'd like to focus on with that and
+other properties
+
+106
+00:07:07,650 --> 00:07:11,740 
+is not the derivation which you can see
+in the tax
+
+107
+00:07:11,740 --> 00:07:14,790 
+by rather the interpretation
+
+108
+00:07:14,790 --> 00:07:18,850 
+so we have the community property and
+now there are two other
+
+109
+00:07:18,850 --> 00:07:22,430 
+important algebraic properties one being
+
+110
+00:07:22,430 --> 00:07:26,120 
+what is referred to as the associative
+property
+
+111
+00:07:26,120 --> 00:07:31,500 
+which tells us that if we have X
+convulsed with
+
+112
+00:07:31,500 --> 00:07:35,020 
+the result ok involving h1 with h2
+
+113
+00:07:35,020 --> 00:07:39,289 
+that's exactly the same as X convolved
+with h1
+
+114
+00:07:39,289 --> 00:07:42,919 
+and that result involved with h2
+
+115
+00:07:42,919 --> 00:07:46,520 
+and what this permits is
+
+116
+00:07:46,520 --> 00:07:51,539 
+for us to write for example ex-convict
+alt with h1
+
+117
+00:07:51,539 --> 00:07:56,500 
+involved with h2 without any ambiguity
+
+118
+00:07:56,500 --> 00:08:00,210 
+because it doesn't matter from the
+associative property
+
+119
+00:08:00,210 --> 00:08:04,500 
+how we grew the terms together
+
+120
+00:08:04,500 --> 00:08:09,289 
+the third important property is what is
+referred to as the distributive property
+
+121
+00:08:09,289 --> 00:08:13,550 
+namely the fact the convolution
+distributes over addition
+
+122
+00:08:13,550 --> 00:08:16,940 
+and what I mean by that is what i've
+indicated
+
+123
+00:08:16,940 --> 00:08:20,009 
+here on the slide dead if
+
+124
+00:08:20,009 --> 00:08:23,990 
+I think or X convo with the psalm
+
+125
+00:08:23,990 --> 00:08:27,729 
+of h1n h2 that's identical
+
+126
+00:08:27,729 --> 00:08:31,389 
+to first involving X with h1
+
+127
+00:08:31,389 --> 00:08:34,589 
+also can bombing X with h2 and then
+
+128
+00:08:34,589 --> 00:08:38,199 
+adding the two together and that result
+
+129
+00:08:38,199 --> 00:08:42,800 
+will be the same as this result
+
+130
+00:08:42,800 --> 00:08:46,069 
+so convolution is community
+
+131
+00:08:46,069 --> 00:08:49,120 
+associative and it distributes over
+addition
+
+132
+00:08:49,120 --> 00:08:52,529 
+three very important algebraic
+properties and
+
+133
+00:08:52,529 --> 00:08:57,420 
+by the way there are other algebraic
+operations that have
+
+134
+00:08:57,420 --> 00:09:01,100 
+that same property for example
+multiplication
+
+135
+00:09:01,100 --> 00:09:04,480 
+numbers is likewise commuted to
+associative
+
+136
+00:09:04,480 --> 00:09:07,680 
+and distributed now
+
+137
+00:09:07,680 --> 00:09:11,240 
+let's look at what these three
+properties
+
+138
+00:09:11,240 --> 00:09:15,200 
+imply a specifically for linear
+time-invariant systems
+
+139
+00:09:15,200 --> 00:09:18,640 
+and as we'll see the the implications
+
+140
+00:09:18,640 --> 00:09:22,290 
+are both very interesting and very
+important
+
+141
+00:09:22,290 --> 00:09:26,940 
+let's begin with the community property
+
+142
+00:09:26,940 --> 00:09:30,470 
+and consider in particular
+
+143
+00:09:30,470 --> 00:09:34,649 
+a system with an impulse response age
+
+144
+00:09:34,649 --> 00:09:39,470 
+and I represent that by simply writing
+the H inside the box
+
+145
+00:09:39,470 --> 00:09:42,620 
+an input tax and an output then
+
+146
+00:09:42,620 --> 00:09:46,130 
+which is X convulsed with age
+
+147
+00:09:46,130 --> 00:09:49,200 
+now since this operation is commuted to
+
+148
+00:09:49,200 --> 00:09:53,060 
+I can right is that affects convolved
+with a I can write
+
+149
+00:09:53,060 --> 00:09:56,950 
+H convolved with ex and that would
+correspond
+
+150
+00:09:56,950 --> 00:10:00,250 
+to a system with impulse response
+
+151
+00:10:00,250 --> 00:10:04,149 
+X and input H and output then
+
+152
+00:10:04,149 --> 00:10:07,910 
+age involved with ex
+
+153
+00:10:07,910 --> 00:10:11,459 
+so the community property
+
+154
+00:10:11,459 --> 00:10:16,620 
+tells us therefore a linear
+time-invariant system
+
+155
+00:10:16,620 --> 00:10:20,180 
+the system output is independent
+
+156
+00:10:20,180 --> 00:10:23,370 
+all which function we call the input
+
+157
+00:10:23,370 --> 00:10:27,480 
+and which function we call the impulse
+response kind amazing actually
+
+158
+00:10:27,480 --> 00:10:31,120 
+we can interchange the role input and
+impulse response
+
+159
+00:10:31,120 --> 00:10:35,160 
+and from input or permit output point of
+view
+
+160
+00:10:35,160 --> 00:10:38,670 
+the output for the system doesn't care
+
+161
+00:10:38,670 --> 00:10:43,610 
+now furthermore if we combine the
+community property
+
+162
+00:10:43,610 --> 00:10:48,140 
+with the associative property we get
+another very interesting result
+
+163
+00:10:48,140 --> 00:10:53,870 
+namely that if we have two linear
+time-invariant systems in cascade
+
+164
+00:10:53,870 --> 00:10:58,930 
+the overall system is independent of the
+order in which they are cascaded
+
+165
+00:10:58,930 --> 00:11:02,240 
+and in fact in either case the Cascade
+can be
+
+166
+00:11:02,240 --> 00:11:05,690 
+collapsed into a single system
+
+167
+00:11:05,690 --> 00:11:11,089 
+to see this let's first consider
+
+168
+00:11:11,089 --> 00:11:15,750 
+the Cascade or two systems one with
+impulse response h1
+
+169
+00:11:15,750 --> 00:11:19,519 
+the other with impulse response h2 and
+
+170
+00:11:19,519 --> 00:11:22,640 
+the outputted the first system is then
+
+171
+00:11:22,640 --> 00:11:25,810 
+X convulsed with h1
+
+172
+00:11:25,810 --> 00:11:29,500 
+and then that is the input to the second
+system
+
+173
+00:11:29,500 --> 00:11:33,260 
+and so the output a bad is that result
+
+174
+00:11:33,260 --> 00:11:36,950 
+convolved with h2
+
+175
+00:11:36,950 --> 00:11:40,529 
+so this is the result of cascading the
+two
+
+176
+00:11:40,529 --> 00:11:45,050 
+and now we can use the associative
+property
+
+177
+00:11:45,050 --> 00:11:49,300 
+to rewrite this and as
+
+178
+00:11:49,300 --> 00:11:52,860 
+X involved with h1
+
+179
+00:11:52,860 --> 00:11:58,190 
+involved with h2 where we grew these two
+terms together
+
+180
+00:11:58,190 --> 00:12:01,640 
+and so using the associative property
+
+181
+00:12:01,640 --> 00:12:05,540 
+we now can collapse that into a single
+system
+
+182
+00:12:05,540 --> 00:12:11,390 
+with an input which is ax an impulse
+response which is h1 convolved with h2
+
+183
+00:12:11,390 --> 00:12:14,470 
+and the output is then ex-convict all
+with
+
+184
+00:12:14,470 --> 00:12:17,880 
+the result that those two can borrow
+
+185
+00:12:17,880 --> 00:12:20,930 
+next we can apply the community property
+
+186
+00:12:20,930 --> 00:12:24,430 
+and the commuter property says we could
+write
+
+187
+00:12:24,430 --> 00:12:28,970 
+this impulse response that way or we can
+write it this way
+
+188
+00:12:28,970 --> 00:12:33,510 
+and since convolutions community the
+resulting output will be exactly the
+
+189
+00:12:33,510 --> 00:12:34,130 
+same
+
+190
+00:12:34,130 --> 00:12:39,230 
+and so these resulting output will be
+exactly the same
+
+191
+00:12:39,230 --> 00:12:44,420 
+and now once again we can use the
+associative property
+
+192
+00:12:44,420 --> 00:12:48,700 
+to group these two terms together
+
+193
+00:12:48,700 --> 00:12:52,570 
+and X convulsed with h2
+
+194
+00:12:52,570 --> 00:12:56,399 
+corresponds to putting X first through
+the system h2
+
+195
+00:12:56,399 --> 00:13:00,000 
+and then an output through the system h1
+and so
+
+196
+00:13:00,000 --> 00:13:04,730 
+finally applying the associative
+property again as I just outlined
+
+197
+00:13:04,730 --> 00:13:08,160 
+we can expand that system back into
+
+198
+00:13:08,160 --> 00:13:12,360 
+two systems in cascade with h2 first
+
+199
+00:13:12,360 --> 00:13:17,620 
+NH one second
+
+200
+00:13:17,620 --> 00:13:22,519 
+okay well that involves a certain amount
+love algebraic manipulation
+
+201
+00:13:22,519 --> 00:13:26,410 
+and that it's not the algebraic
+manipulation that's important is the
+
+202
+00:13:26,410 --> 00:13:28,279 
+result that it's important
+
+203
+00:13:28,279 --> 00:13:31,360 
+and what the result says to reiterate
+this if I have to
+
+204
+00:13:31,360 --> 00:13:34,740 
+linear time-invariant systems in cascade
+
+205
+00:13:34,740 --> 00:13:39,760 
+I can cascade them in any order and the
+result is the same
+
+206
+00:13:39,760 --> 00:13:46,110 
+now you might think well G maybe that
+actually applies the systems in general
+
+207
+00:13:46,110 --> 00:13:50,120 
+whether you put them this way or that
+way but in fact as we talked about last
+
+208
+00:13:50,120 --> 00:13:51,209 
+time
+
+209
+00:13:51,209 --> 00:13:54,550 
+and I illustrated with an example
+
+210
+00:13:54,550 --> 00:13:58,089 
+in general if the system is not linear
+
+211
+00:13:58,089 --> 00:14:01,320 
+the systems are not linear and
+time-invariant then
+
+212
+00:14:01,320 --> 00:14:05,459 
+the order in which they are cascaded is
+important to the interpretation of the
+
+213
+00:14:05,459 --> 00:14:06,720 
+overall system
+
+214
+00:14:06,720 --> 00:14:10,850 
+for example one system took the square
+root
+
+215
+00:14:10,850 --> 00:14:14,990 
+any other system double the input
+
+216
+00:14:14,990 --> 00:14:18,029 
+taking the square root and then doubling
+
+217
+00:14:18,029 --> 00:14:22,160 
+gives us a different answer doubling
+first and then taking the square root
+
+218
+00:14:22,160 --> 00:14:26,209 
+and of course one can construct much
+more elaborate example
+
+219
+00:14:26,209 --> 00:14:31,730 
+net so it's a property very particular
+to linear time-invariant systems and
+
+220
+00:14:31,730 --> 00:14:32,670 
+also
+
+221
+00:14:32,670 --> 00:14:39,670 
+one that we will exploit many many times
+as we go through this material
+
+222
+00:14:40,920 --> 00:14:44,019 
+the final property related to
+
+223
+00:14:44,019 --> 00:14:47,889 
+interconnection systems that I want to
+just indicate
+
+224
+00:14:47,889 --> 00:14:51,300 
+develops ida the distributive property
+
+225
+00:14:51,300 --> 00:14:54,880 
+and what it applies to is an
+interpretation
+
+226
+00:14:54,880 --> 00:14:59,040 
+%uh the interconnection of systems in
+parallel
+
+227
+00:14:59,040 --> 00:15:02,240 
+recall there the parallel combination
+
+228
+00:15:02,240 --> 00:15:06,200 
+systems corresponds is a indicate here
+
+229
+00:15:06,200 --> 00:15:12,180 
+to a system in which we simultaneously
+feed the input into
+
+230
+00:15:12,180 --> 00:15:16,700 
+h1 nh2 these representing the impulse
+responses
+
+231
+00:15:16,700 --> 00:15:20,200 
+and then the outputs our song and to
+form
+
+232
+00:15:20,200 --> 00:15:23,920 
+the overall output and
+
+233
+00:15:23,920 --> 00:15:27,720 
+using the fact their convolution
+distributes
+
+234
+00:15:27,720 --> 00:15:30,769 
+over addition we can rewrite yes
+
+235
+00:15:30,769 --> 00:15:34,380 
+as X involved with h1
+
+236
+00:15:34,380 --> 00:15:37,779 
+plus h2
+
+237
+00:15:37,779 --> 00:15:41,639 
+and when we do that then we can
+recognize this
+
+238
+00:15:41,639 --> 00:15:45,450 
+as the output the system with input acts
+
+239
+00:15:45,450 --> 00:15:50,329 
+and impulse response which is the sum of
+these two impulse responses
+
+240
+00:15:50,329 --> 00:15:54,649 
+so for linear time-invariant systems in
+parallel
+
+241
+00:15:54,649 --> 00:15:57,930 
+we can if we choose
+
+242
+00:15:57,930 --> 00:16:01,630 
+replace that interconnection by a single
+system
+
+243
+00:16:01,630 --> 00:16:04,639 
+whose impulse response is simply some
+
+244
+00:16:04,639 --> 00:16:10,050 
+those impulse response
+
+245
+00:16:10,050 --> 00:16:13,649 
+okay now we have this very
+
+246
+00:16:13,649 --> 00:16:18,110 
+powerful representation for linear
+time-invariant systems
+
+247
+00:16:18,110 --> 00:16:23,070 
+terms 0 convolution and we've seen so
+far in this lecture
+
+248
+00:16:23,070 --> 00:16:27,990 
+how convolution and the representation
+through the impulse response
+
+249
+00:16:27,990 --> 00:16:34,110 
+leads to some but important implications
+for system interconnections
+
+250
+00:16:34,110 --> 00:16:39,110 
+what I like to turn to now are other
+system properties
+
+251
+00:16:39,110 --> 00:16:45,670 
+and see how for linear time-invariant
+systems in particular
+
+252
+00:16:45,670 --> 00:16:49,510 
+other system properties can be
+Associated
+
+253
+00:16:49,510 --> 00:16:52,610 
+with particular properties or
+characteristics
+
+254
+00:16:52,610 --> 00:16:56,660 
+love the system impulse response and
+what will talk about
+
+255
+00:16:56,660 --> 00:17:00,920 
+are a variety of properties will talk
+about the issue memory will talk about
+
+256
+00:17:00,920 --> 00:17:01,589 
+the issue
+
+257
+00:17:01,589 --> 00:17:04,809 
+portability and will talk about the
+issue
+
+258
+00:17:04,809 --> 00:17:10,240 
+causality and also stability
+
+259
+00:17:10,240 --> 00:17:14,169 
+well let's begin with the issue of
+memory and the question
+
+260
+00:17:14,169 --> 00:17:18,299 
+now is what are the implications
+
+261
+00:17:18,299 --> 00:17:22,870 
+for the system impulse response for a
+linear time-invariant system remember
+
+262
+00:17:22,870 --> 00:17:25,459 
+that we're always imposing that on the
+system
+
+263
+00:17:25,459 --> 00:17:29,330 
+what are the implications on the impulse
+response if the system
+
+264
+00:17:29,330 --> 00:17:32,380 
+does or does not have memory
+
+265
+00:17:32,380 --> 00:17:36,470 
+well we can answer that by looking at
+
+266
+00:17:36,470 --> 00:17:39,889 
+the convolution property
+
+267
+00:17:39,889 --> 00:17:46,710 
+and we have here as a reminder the
+convolution integral
+
+268
+00:17:46,710 --> 00:17:50,320 
+which tells us how accept an hour in a
+chip T-minus
+
+269
+00:17:50,320 --> 00:17:56,049 
+now are combined to give us y'at
+
+270
+00:17:56,049 --> 00:17:59,369 
+and what I've illustrated above is
+
+271
+00:17:59,369 --> 00:18:02,749 
+only general kind of example
+
+272
+00:18:02,749 --> 00:18:05,859 
+here is except al here is
+
+273
+00:18:05,859 --> 00:18:09,489 
+a chip T-minus now an
+
+274
+00:18:09,489 --> 00:18:12,850 
+to compute the output at any time T
+
+275
+00:18:12,850 --> 00:18:16,440 
+we would take these two multiply them
+together
+
+276
+00:18:16,440 --> 00:18:22,779 
+and integrate from minus infinity the
+plus infinity
+
+277
+00:18:22,779 --> 00:18:25,879 
+so the question then is what can we say
+about
+
+278
+00:18:25,879 --> 00:18:29,009 
+H T the impulse response
+
+279
+00:18:29,009 --> 00:18:32,340 
+in order to guarantee let's say
+
+280
+00:18:32,340 --> 00:18:37,109 
+that the output depends only on the
+input at time t
+
+281
+00:18:37,109 --> 00:18:40,269 
+well its pretty much obvious from
+looking
+
+282
+00:18:40,269 --> 00:18:43,929 
+at the grabs
+
+283
+00:18:43,929 --> 00:18:47,309 
+if we only want the output to depend
+
+284
+00:18:47,309 --> 00:18:51,769 
+on XO how at Tower equals T
+
+285
+00:18:51,769 --> 00:18:54,820 
+then a chip T-minus have 0 better
+
+286
+00:18:54,820 --> 00:18:59,389 
+be non-zero only at Tower equals T
+
+287
+00:18:59,389 --> 00:19:03,059 
+and so the implication is that
+
+288
+00:19:03,059 --> 00:19:06,749 
+for the system to be memory less
+
+289
+00:19:06,749 --> 00:19:10,619 
+what we require is that HFT -10 now
+
+290
+00:19:10,619 --> 00:19:14,019 
+be 90 only at outcalls
+
+291
+00:19:14,019 --> 00:19:17,309 
+T so
+
+292
+00:19:17,309 --> 00:19:22,259 
+we want the impulse response to be 90
+and only one point
+
+293
+00:19:22,259 --> 00:19:26,519 
+we wanted to contribute something after
+we multiply and go through an integral
+
+294
+00:19:26,519 --> 00:19:29,960 
+an effect with that says is the only
+thing they can be
+
+295
+00:19:29,960 --> 00:19:33,440 
+and meet all those conditions is a scale
+dimples
+
+296
+00:19:33,440 --> 00:19:38,229 
+so if the system is to be memoryless
+
+297
+00:19:38,229 --> 00:19:43,039 
+then that requires that the impulse
+response you scale them poles
+
+298
+00:19:43,039 --> 00:19:46,049 
+any other impulse response
+
+299
+00:19:46,049 --> 00:19:49,249 
+then in essence requires
+
+300
+00:19:49,249 --> 00:19:54,239 
+that the system has memory or implies
+that the system member
+
+301
+00:19:54,239 --> 00:19:58,590 
+so for the continuous-time case then
+
+302
+00:19:58,590 --> 00:20:03,779 
+memoryless would correspond only to the
+impulse response being proportional to
+
+303
+00:20:03,779 --> 00:20:07,389 
+an impulse and in the discrete-time case
+
+304
+00:20:07,389 --> 00:20:10,460 
+a similar statement in which case
+
+305
+00:20:10,460 --> 00:20:13,809 
+the output is just proportional
+
+306
+00:20:13,809 --> 00:20:17,119 
+to the input again either in the
+continuous-time
+
+307
+00:20:17,119 --> 00:20:22,440 
+war in the discrete-time case
+
+308
+00:20:22,440 --> 00:20:26,679 
+right now we can turn our attention to
+the issue
+
+309
+00:20:26,679 --> 00:20:30,629 
+love system inverter ability and
+
+310
+00:20:30,629 --> 00:20:34,099 
+room recall that what is meant by
+
+311
+00:20:34,099 --> 00:20:37,729 
+inverted bility of a system or the
+inverse of a system
+
+312
+00:20:37,729 --> 00:20:41,799 
+the inverse nervous system is a system
+which one week cascaded
+
+313
+00:20:41,799 --> 00:20:46,289 
+with the one that were requiring about
+the overall cascade
+
+314
+00:20:46,289 --> 00:20:49,359 
+is the identity system in other words
+
+315
+00:20:49,359 --> 00:20:53,419 
+the output is equal to the in
+
+316
+00:20:53,419 --> 00:20:56,529 
+so let's consider a system with
+
+317
+00:20:56,529 --> 00:21:00,470 
+impulse response age input is ax
+
+318
+00:21:00,470 --> 00:21:04,929 
+and let's say that the impulse response
+that the inverse system is a
+
+319
+00:21:04,929 --> 00:21:07,970 
+by and the output is why
+
+320
+00:21:07,970 --> 00:21:11,320 
+then the output of this system is
+
+321
+00:21:11,320 --> 00:21:16,879 
+X convolved with age convolved with a
+stir by
+
+322
+00:21:16,879 --> 00:21:20,059 
+and we want this to
+
+323
+00:21:20,059 --> 00:21:24,419 
+come out equal X and what that requires
+then
+
+324
+00:21:24,419 --> 00:21:28,539 
+is that this convolution
+
+325
+00:21:28,539 --> 00:21:31,979 
+just simply be equal to an impulse
+
+326
+00:21:31,979 --> 00:21:35,129 
+either in the discrete-time case
+
+327
+00:21:35,129 --> 00:21:38,299 
+or in the continuous-time
+
+328
+00:21:38,299 --> 00:21:41,619 
+and under those conditions then HD by
+
+329
+00:21:41,619 --> 00:21:44,649 
+is equal to the University
+
+330
+00:21:44,649 --> 00:21:48,749 
+rotationally by the way its of
+inconvenient
+
+331
+00:21:48,749 --> 00:21:52,409 
+to right instead of eight supply as the
+impulse response
+
+332
+00:21:52,409 --> 00:21:57,220 
+the embers will find it convenient of
+any more typical
+
+333
+00:21:57,220 --> 00:22:01,519 
+to write as the in burners instead of
+age to buy
+
+334
+00:22:01,519 --> 00:22:05,529 
+age to the -1
+
+335
+00:22:05,529 --> 00:22:08,669 
+and we mean by that the inverse
+
+336
+00:22:08,669 --> 00:22:13,669 
+impulse response and one has to be
+careful not to misinterpret this
+
+337
+00:22:13,669 --> 00:22:16,720 
+as the reciprocal have a chip to your
+YouTube and
+
+338
+00:22:16,720 --> 00:22:23,720 
+which meant in this notation is the
+inverse system
+
+339
+00:22:24,249 --> 00:22:28,109 
+now if age to buy
+
+340
+00:22:28,109 --> 00:22:33,950 
+is the inverse of age is H the inverse
+have a supply
+
+341
+00:22:33,950 --> 00:22:38,359 
+well it seems like that or be plausible
+or
+
+342
+00:22:38,359 --> 00:22:41,419 
+perhaps make sense the question if
+
+343
+00:22:41,419 --> 00:22:44,909 
+you believe that the answer is yes is
+howdy how in fact
+
+344
+00:22:44,909 --> 00:22:48,229 
+you verified that and
+
+345
+00:22:48,229 --> 00:22:52,070 
+I'll leave that to you think about it
+the answer is yes that
+
+346
+00:22:52,070 --> 00:22:56,159 
+if a surprise the inverse of age than H
+is the inverse a pizza by
+
+347
+00:22:56,159 --> 00:23:00,210 
+and the key to showing that is to
+exploit the fact
+
+348
+00:23:00,210 --> 00:23:03,849 
+that when we take the systems and
+Cascade them we can cascade
+
+349
+00:23:03,849 --> 00:23:07,909 
+them in your order
+
+350
+00:23:07,909 --> 00:23:11,940 
+all right now let's turn to another
+system property
+
+351
+00:23:11,940 --> 00:23:15,590 
+the property love stability and again
+
+352
+00:23:15,590 --> 00:23:19,229 
+we can't I that property directly
+
+353
+00:23:19,229 --> 00:23:22,359 
+to issues related
+
+354
+00:23:22,359 --> 00:23:27,019 
+in particular to the system impulse
+response
+
+355
+00:23:27,019 --> 00:23:31,379 
+now stability is defined as we've chosen
+to define it as I
+
+356
+00:23:31,379 --> 00:23:36,629 
+I by the previously as bounded input
+bounded out but stability in other words
+
+357
+00:23:36,629 --> 00:23:38,179 
+for every bounded input
+
+358
+00:23:38,179 --> 00:23:41,919 
+is a bounded out what you can show
+
+359
+00:23:41,919 --> 00:23:45,509 
+and I won't go through the algebra here
+it's
+
+360
+00:23:45,509 --> 00:23:49,590 
+going through in the book is the
+
+361
+00:23:49,590 --> 00:23:53,070 
+a necessary and sufficient condition for
+
+362
+00:23:53,070 --> 00:23:56,950 
+a linear time-invariant system to be
+stable
+
+363
+00:23:56,950 --> 00:24:00,149 
+it in the bounded input bounded output
+sense
+
+364
+00:24:00,149 --> 00:24:03,289 
+is that the
+
+365
+00:24:03,289 --> 00:24:06,879 
+impulse response be what is referred to
+as
+
+366
+00:24:06,879 --> 00:24:11,929 
+absolutely so mobile in other words if
+you take the absolute values
+
+367
+00:24:11,929 --> 00:24:16,330 
+and some over infinite limits that's
+fine I
+
+368
+00:24:16,330 --> 00:24:19,469 
+or in the continuous-time
+
+369
+00:24:19,469 --> 00:24:23,559 
+case that the impulse response is
+absolutely integral
+
+370
+00:24:23,559 --> 00:24:27,479 
+in other words if you take the absolute
+bad news have a chip T
+
+371
+00:24:27,479 --> 00:24:31,429 
+integrate that's fine I'd and under
+those conditions
+
+372
+00:24:31,429 --> 00:24:34,879 
+the system is stable if
+
+373
+00:24:34,879 --> 00:24:38,080 
+those conditions are violated then
+
+374
+00:24:38,080 --> 00:24:41,519 
+for sure as you'll see in the text the
+system
+
+375
+00:24:41,519 --> 00:24:44,619 
+is on stable so stability can also
+
+376
+00:24:44,619 --> 00:24:50,489 
+be tied to the system impulse response
+
+377
+00:24:50,489 --> 00:24:53,629 
+now the next property that I wanna talk
+about
+
+378
+00:24:53,629 --> 00:24:56,690 
+is the property of causality
+
+379
+00:24:56,690 --> 00:24:59,729 
+and before I do what I'd like to do
+
+380
+00:24:59,729 --> 00:25:03,869 
+is introduce peripheral result that will
+then
+
+381
+00:25:03,869 --> 00:25:06,889 
+use when we talk about causality
+
+382
+00:25:06,889 --> 00:25:10,599 
+namely what's referred to as the zero
+input response
+
+383
+00:25:10,599 --> 00:25:14,840 
+when your system
+
+384
+00:25:14,840 --> 00:25:19,070 
+the basic result which is a very
+interesting and useful one
+
+385
+00:25:19,070 --> 00:25:22,309 
+is that for a linear system and in fact
+
+386
+00:25:22,309 --> 00:25:26,629 
+it's whether it's time invariant or not
+this applies
+
+387
+00:25:26,629 --> 00:25:31,669 
+if you put nothing into it you get
+nothing out
+
+388
+00:25:31,669 --> 00:25:34,690 
+so if we have an input
+
+389
+00:25:34,690 --> 00:25:39,769 
+accept T which is zero for all T
+
+390
+00:25:39,769 --> 00:25:43,330 
+and if the output that system
+
+391
+00:25:43,330 --> 00:25:47,009 
+is y'at
+
+392
+00:25:47,009 --> 00:25:50,190 
+if the input is zero for all time
+
+393
+00:25:50,190 --> 00:25:54,479 
+then the output likewise is 0 for all
+time
+
+394
+00:25:54,479 --> 00:25:57,539 
+that's true for continuous-time and
+
+395
+00:25:57,539 --> 00:26:04,539 
+it's also true for discrete-time
+
+396
+00:26:04,779 --> 00:26:07,809 
+and in fact to show that result
+
+397
+00:26:07,809 --> 00:26:14,749 
+is pretty much straightforward we could
+do it either by using convolution which
+
+398
+00:26:14,749 --> 00:26:18,820 
+would of course be associated with many
+a ready in time invariance
+
+399
+00:26:18,820 --> 00:26:22,840 
+but in fact we can show their property
+relatively easily
+
+400
+00:26:22,840 --> 00:26:27,039 
+by simply using the fact that for a
+linear system
+
+401
+00:26:27,039 --> 00:26:30,269 
+what we know is that if
+
+402
+00:26:30,269 --> 00:26:34,330 
+we have an input exit T
+
+403
+00:26:34,330 --> 00:26:37,409 
+with an output y'at
+
+404
+00:26:37,409 --> 00:26:40,619 
+then if we scale the input
+
+405
+00:26:40,619 --> 00:26:43,979 
+then the output scales accordingly
+
+406
+00:26:43,979 --> 00:26:47,019 
+well we can simply shoes
+
+407
+00:26:47,019 --> 00:26:51,320 
+as the scale factor eight equal 0
+
+408
+00:26:51,320 --> 00:26:54,969 
+and if we do that it says put nothing in
+
+409
+00:26:54,969 --> 00:26:58,320 
+you get nothing out and
+
+410
+00:26:58,320 --> 00:27:02,299 
+what will see is that that has some
+important implications
+
+411
+00:27:02,299 --> 00:27:05,450 
+interns love causality
+
+412
+00:27:05,450 --> 00:27:09,409 
+it's important though wall or on it to
+stress that
+
+413
+00:27:09,409 --> 00:27:12,729 
+not every system obviously has that
+property did nothing
+
+414
+00:27:12,729 --> 00:27:16,099 
+you get nothing out a simple example
+
+415
+00:27:16,099 --> 00:27:19,409 
+is let's say a battery
+
+416
+00:27:19,409 --> 00:27:24,049 
+let's say not connected to anything the
+output is six bolts no matter what the
+
+417
+00:27:24,049 --> 00:27:25,279 
+input is
+
+418
+00:27:25,279 --> 00:27:28,919 
+and it of course then doesn't have this
+
+419
+00:27:28,919 --> 00:27:32,570 
+0 response to zero input very particular
+
+420
+00:27:32,570 --> 00:27:36,070 
+the linear systems or I will now
+
+421
+00:27:36,070 --> 00:27:41,070 
+let's see what this means for causality
+
+422
+00:27:41,070 --> 00:27:44,269 
+to remind you causality says in effect
+
+423
+00:27:44,269 --> 00:27:47,909 
+that the system can't anticipate the
+input that's what
+
+424
+00:27:47,909 --> 00:27:51,639 
+basically causality means when we
+
+425
+00:27:51,639 --> 00:27:55,690 
+talked about it previously we defined it
+in a variety of ways
+
+426
+00:27:55,690 --> 00:27:58,690 
+one of which was the statement that
+
+427
+00:27:58,690 --> 00:28:03,499 
+if two inputs are identical up until
+sometime
+
+428
+00:28:03,499 --> 00:28:08,159 
+than the outputs must be identical up
+until the same time
+
+429
+00:28:08,159 --> 00:28:11,679 
+the reason kinda to Italy is that
+
+430
+00:28:11,679 --> 00:28:15,359 
+if the system is causal so it can
+anticipate the future
+
+431
+00:28:15,359 --> 00:28:19,019 
+can anticipate whether these two
+identical imports are
+
+432
+00:28:19,019 --> 00:28:22,149 
+sometime later going to change from each
+other
+
+433
+00:28:22,149 --> 00:28:25,710 
+or not
+
+434
+00:28:25,710 --> 00:28:30,029 
+so causality in general is simply this
+statement
+
+435
+00:28:30,029 --> 00:28:34,059 
+either continuous-time and discrete-time
+
+436
+00:28:34,059 --> 00:28:37,239 
+and now let's look at what that means
+
+437
+00:28:37,239 --> 00:28:41,149 
+for a linear system for a linear system
+
+438
+00:28:41,149 --> 00:28:45,749 
+what that corresponds to or can be
+translated to
+
+439
+00:28:45,749 --> 00:28:49,129 
+is a statement it says that
+
+440
+00:28:49,129 --> 00:28:53,909 
+if x50 is 0 party less than $30,000
+
+441
+00:28:53,909 --> 00:28:57,450 
+then y'at is the must be zero
+
+442
+00:28:57,450 --> 00:29:00,619 
+party less than $30,000 also
+
+443
+00:29:00,619 --> 00:29:04,669 
+and so what that in effect
+
+444
+00:29:04,669 --> 00:29:07,809 
+says is that the system
+
+445
+00:29:07,809 --> 00:29:12,320 
+for a linear system to be causal
+
+446
+00:29:12,320 --> 00:29:15,909 
+in mice have the property sometimes
+referred to
+
+447
+00:29:15,909 --> 00:29:19,080 
+as initial rest meaning
+
+448
+00:29:19,080 --> 00:29:23,879 
+it doesn't respond until there's some
+input that happen
+
+449
+00:29:23,879 --> 00:29:27,489 
+that it initially at rest until the
+input becomes
+
+450
+00:29:27,489 --> 00:29:31,609 
+90 now why is this true why
+
+451
+00:29:31,609 --> 00:29:35,599 
+is this a consequence of causality for
+
+452
+00:29:35,599 --> 00:29:39,469 
+Lee year systems well the reason is
+
+453
+00:29:39,469 --> 00:29:43,659 
+we know that if we put nothing in we get
+nothing out
+
+454
+00:29:43,659 --> 00:29:47,830 
+if we have an input that 0 perty less
+than t0
+
+455
+00:29:47,830 --> 00:29:53,200 
+and the system can't anticipate whether
+that input is going to change from zero
+
+456
+00:29:53,200 --> 00:29:57,739 
+or not then yes it must also the system
+must generate
+
+457
+00:29:57,739 --> 00:30:02,690 
+and output that 0 up until that time
+
+458
+00:30:02,690 --> 00:30:06,809 
+following the principle that if two
+inputs are identical up until sometime
+
+459
+00:30:06,809 --> 00:30:10,700 
+the outputs must be identical up same
+time
+
+460
+00:30:10,700 --> 00:30:14,679 
+so this basic result
+
+461
+00:30:14,679 --> 00:30:18,759 
+for when here systems is essentially
+
+462
+00:30:18,759 --> 00:30:22,019 
+a consequence all the statement there
+
+463
+00:30:22,019 --> 00:30:25,879 
+for a linear system 0n
+
+464
+00:30:25,879 --> 00:30:32,879 
+gives us 0 out
+
+465
+00:30:33,509 --> 00:30:37,259 
+now bad tells us
+
+466
+00:30:37,259 --> 00:30:41,669 
+how to interpret or hi I don't tupac was
+ality
+
+467
+00:30:41,669 --> 00:30:46,389 
+for linear systems now let's proceed to
+linear time-invariant systems
+
+468
+00:30:46,389 --> 00:30:50,919 
+and in fact we can carry the point one
+step further
+
+469
+00:30:50,919 --> 00:30:55,259 
+in particular necessary and sufficient
+condition
+
+470
+00:30:55,259 --> 00:30:59,869 
+for causality in the case linear
+time-invariant systems
+
+471
+00:30:59,869 --> 00:31:03,499 
+is there the impulse response
+
+472
+00:31:03,499 --> 00:31:07,950 
+be 0 party less than zero
+
+473
+00:31:07,950 --> 00:31:11,450 
+in the continuous-time case or
+
+474
+00:31:11,450 --> 00:31:14,669 
+for and less than zero in the
+discrete-time case
+
+475
+00:31:14,669 --> 00:31:18,519 
+so for linear time-invariant systems
+causality
+
+476
+00:31:18,519 --> 00:31:22,129 
+is equivalent to the impulse response
+
+477
+00:31:22,129 --> 00:31:27,109 
+being 0 up until to your and equal to 0
+
+478
+00:31:27,109 --> 00:31:31,690 
+now to show this it essentially follows
+
+479
+00:31:31,690 --> 00:31:35,369 
+by first considering
+
+480
+00:31:35,369 --> 00:31:38,399 
+why causality
+
+481
+00:31:38,399 --> 00:31:42,739 
+would imply that this is true
+
+482
+00:31:42,739 --> 00:31:46,679 
+and that follows because if the
+straightforward fact
+
+483
+00:31:46,679 --> 00:31:53,639 
+that the impulse itself is 0 perty less
+than zero
+
+484
+00:31:53,639 --> 00:31:57,320 
+and what we saw is there before is that
+
+485
+00:31:57,320 --> 00:32:01,399 
+for any linear system causality requires
+that if the input is your office or
+
+486
+00:32:01,399 --> 00:32:02,299 
+sometime
+
+487
+00:32:02,299 --> 00:32:06,209 
+the output must be zero up until the
+same time
+
+488
+00:32:06,209 --> 00:32:09,279 
+and so thats showing
+
+489
+00:32:09,279 --> 00:32:13,099 
+the result in one direction to show the
+result
+
+490
+00:32:13,099 --> 00:32:17,119 
+in the other direction namely to show
+you that
+
+491
+00:32:17,119 --> 00:32:20,179 
+yeah in fact the impulse response
+
+492
+00:32:20,179 --> 00:32:23,889 
+satisfied that condition then the system
+is causal
+
+493
+00:32:23,889 --> 00:32:26,940 
+while I won't work through it in detail
+
+494
+00:32:26,940 --> 00:32:30,849 
+it essentially boils down to recognizing
+
+495
+00:32:30,849 --> 00:32:35,729 
+that in the convolutions some
+
+496
+00:32:35,729 --> 00:32:39,999 
+or in the convolution integral
+
+497
+00:32:39,999 --> 00:32:45,119 
+if in fact that condition is satisfied
+on the impulse response
+
+498
+00:32:45,119 --> 00:32:48,919 
+then the upper limit on the song the
+discrete-time
+
+499
+00:32:48,919 --> 00:32:52,209 
+case changes an and in the
+continuous-time
+
+500
+00:32:52,209 --> 00:32:55,969 
+case changes to see and that in effect
+
+501
+00:32:55,969 --> 00:32:59,159 
+says that bad news or
+
+502
+00:32:59,159 --> 00:33:03,029 
+the input only from minus unity up the
+time n
+
+503
+00:33:03,029 --> 00:33:07,839 
+are used in computing y van and a
+similar kind of result
+
+504
+00:33:07,839 --> 00:33:11,309 
+for the continuous-time case why
+
+505
+00:33:11,309 --> 00:33:15,029 
+T
+
+506
+00:33:15,029 --> 00:33:19,589 
+okay so we've seen how the impulse
+response
+
+507
+00:33:19,589 --> 00:33:23,200 
+or rather how certain system properties
+in the linear time-invariant
+
+508
+00:33:23,200 --> 00:33:26,509 
+case can be converted into
+
+509
+00:33:26,509 --> 00:33:30,830 
+various requirements on the imports
+responsible when your time
+
+510
+00:33:30,830 --> 00:33:35,479 
+very insist on the impulse response
+being complete characterization
+
+511
+00:33:35,479 --> 00:33:38,679 
+let's looked at some particular examples
+just
+
+512
+00:33:38,679 --> 00:33:42,169 
+to and a cement the ideas further
+
+513
+00:33:42,169 --> 00:33:46,929 
+and let's begin with a system that
+you've seen previously which is
+
+514
+00:33:46,929 --> 00:33:50,749 
+accumulator accumulator as you recall
+
+515
+00:33:50,749 --> 00:33:53,969 
+has an output why I have an
+
+516
+00:33:53,969 --> 00:33:57,989 
+which is the accumulated value
+
+517
+00:33:57,989 --> 00:34:03,089 
+up the input from minus infinity up to n
+
+518
+00:34:03,089 --> 00:34:06,580 
+now you've seen in the impose in in
+
+519
+00:34:06,580 --> 00:34:10,240 
+a previous lecture or rather in the
+video course manual for previous
+
+520
+00:34:10,240 --> 00:34:15,460 
+lecture that an accumulator is a linear
+time-invariant system
+
+521
+00:34:15,460 --> 00:34:19,750 
+and in fact it's impossible sponsor is
+the accumulated
+
+522
+00:34:19,750 --> 00:34:23,629 
+bad news opinion polls namely the
+impulse response
+
+523
+00:34:23,629 --> 00:34:27,690 
+is equal to a step
+
+524
+00:34:27,690 --> 00:34:31,700 
+so what we want to answer is
+
+525
+00:34:31,700 --> 00:34:35,060 
+what knowing what that impulse responses
+what
+
+526
+00:34:35,060 --> 00:34:38,310 
+some properties are the accumulator
+
+527
+00:34:38,310 --> 00:34:41,429 
+and let's first ask about memory
+
+528
+00:34:41,429 --> 00:34:45,599 
+well we recognize that the impulse
+response
+
+529
+00:34:45,599 --> 00:34:48,869 
+is not simply an impulse in fact it's a
+step
+
+530
+00:34:48,869 --> 00:34:52,039 
+and so this implies what well
+
+531
+00:34:52,039 --> 00:34:55,159 
+it implies that the system has
+
+532
+00:34:55,159 --> 00:35:00,089 
+memory
+
+533
+00:35:00,089 --> 00:35:03,250 
+second the impulse response
+
+534
+00:35:03,250 --> 00:35:06,809 
+is zero more and less than zero
+
+535
+00:35:06,809 --> 00:35:10,750 
+that implies that the system is
+
+536
+00:35:10,750 --> 00:35:15,220 
+causal
+
+537
+00:35:15,220 --> 00:35:18,599 
+and finally if we look at
+
+538
+00:35:18,599 --> 00:35:24,299 
+the some the absolute values at the
+impulse response from minus infinity
+
+539
+00:35:24,299 --> 00:35:25,990 
+plus infinity
+
+540
+00:35:25,990 --> 00:35:30,490 
+this is a step we accumulate those
+values over infinite limits
+
+541
+00:35:30,490 --> 00:35:35,240 
+then at in fact comes out to be infinite
+
+542
+00:35:35,240 --> 00:35:39,250 
+and so what that implies then is that
+
+543
+00:35:39,250 --> 00:35:42,460 
+the accumulator is not stable in
+
+544
+00:35:42,460 --> 00:35:48,250 
+the bounded input found that out what
+sets
+
+545
+00:35:48,250 --> 00:35:52,180 
+now I want to turn to some other systems
+but while we're on the accumulator I
+
+546
+00:35:52,180 --> 00:35:54,299 
+just want to draw your attention to the
+fact
+
+547
+00:35:54,299 --> 00:35:58,619 
+which will kinda come up in a variety of
+ways again later
+
+548
+00:35:58,619 --> 00:36:04,710 
+that we can rewrite the equation for an
+accumulator the difference equation
+
+549
+00:36:04,710 --> 00:36:07,890 
+by recognizing that we could in fact
+
+550
+00:36:07,890 --> 00:36:11,930 
+write the output as the accumulated
+values
+
+551
+00:36:11,930 --> 00:36:17,160 
+up the time n -1 and then and on the
+last value
+
+552
+00:36:17,160 --> 00:36:21,539 
+and in fact if we do that this
+corresponds to why
+
+553
+00:36:21,539 --> 00:36:24,660 
+van -1 and so
+
+554
+00:36:24,660 --> 00:36:28,359 
+we could rewrite this difference
+equation as why I have an
+
+555
+00:36:28,359 --> 00:36:31,380 
+is why event -1 a sexy
+
+556
+00:36:31,380 --> 00:36:34,930 
+so the output is the previously computed
+output
+
+557
+00:36:34,930 --> 00:36:38,160 
+plus the input expressed that way
+
+558
+00:36:38,160 --> 00:36:42,200 
+what that corresponds to is what is
+
+559
+00:36:42,200 --> 00:36:46,750 
+collar workers a difference equation and
+difference equations will be a topic
+
+560
+00:36:46,750 --> 00:36:51,309 
+I'll considerable emphasis in the next
+lecture
+
+561
+00:36:51,309 --> 00:36:54,390 
+now does an accumulator have an inverse
+well
+
+562
+00:36:54,390 --> 00:36:58,339 
+the answer is in fact yes and let's look
+at what
+
+563
+00:36:58,339 --> 00:37:02,220 
+the inverse that the accumulator is
+
+564
+00:37:02,220 --> 00:37:06,319 
+the impulse response the accumulator is
+a step
+
+565
+00:37:06,319 --> 00:37:09,769 
+to inquire about its inverse in we
+inquire
+
+566
+00:37:09,769 --> 00:37:14,339 
+about whether there's a system which one
+we cascade
+
+567
+00:37:14,339 --> 00:37:19,269 
+the accumulator with that system which
+i'm calling its in burrs
+
+568
+00:37:19,269 --> 00:37:22,400 
+we get an impulse out
+
+569
+00:37:22,400 --> 00:37:25,980 
+well let's see the impulse response
+
+570
+00:37:25,980 --> 00:37:29,880 
+the accumulators staff we want to put
+the step into something
+
+571
+00:37:29,880 --> 00:37:33,579 
+and get out in polls and in fact
+
+572
+00:37:33,579 --> 00:37:36,599 
+what you recall from the
+
+573
+00:37:36,599 --> 00:37:39,950 
+lecture in which we introduce steps and
+impulses
+
+574
+00:37:39,950 --> 00:37:44,670 
+the impulse is in fact the first
+difference of the units that
+
+575
+00:37:44,670 --> 00:37:47,829 
+so we have a difference equation
+
+576
+00:37:47,829 --> 00:37:51,710 
+that describes 4s how the impulse
+
+577
+00:37:51,710 --> 00:37:55,490 
+is related to the step and so
+
+578
+00:37:55,490 --> 00:37:59,440 
+if this system does this the output will
+be
+
+579
+00:37:59,440 --> 00:38:03,000 
+that an impulse and so if we think
+
+580
+00:38:03,000 --> 00:38:06,829 
+or x2 a van
+
+581
+00:38:06,829 --> 00:38:10,849 
+and as the input and y2 event is the
+output
+
+582
+00:38:10,849 --> 00:38:14,279 
+then difference equation for
+
+583
+00:38:14,279 --> 00:38:18,369 
+the inverse system is what i've
+indicated here
+
+584
+00:38:18,369 --> 00:38:21,480 
+and if we want to look at the impulse
+response to that
+
+585
+00:38:21,480 --> 00:38:26,910 
+we can then inquire as to what the
+responses with an impulse in
+
+586
+00:38:26,910 --> 00:38:30,710 
+and white develops in a straightforward
+way
+
+587
+00:38:30,710 --> 00:38:34,500 
+and is Delta van which is are important
+point
+
+588
+00:38:34,500 --> 00:38:37,609 
+minus Delta again -1
+
+589
+00:38:37,609 --> 00:38:40,700 
+is equal to the impulse response
+
+590
+00:38:40,700 --> 00:38:43,910 
+in burrs system so alright that
+
+591
+00:38:43,910 --> 00:38:47,420 
+as age in person
+
+592
+00:38:47,420 --> 00:38:50,930 
+now we have been that the accumulator
+
+593
+00:38:50,930 --> 00:38:54,470 
+as it infers and this is the embers
+
+594
+00:38:54,470 --> 00:38:59,480 
+and you can examine issues a memory
+stability causality et cetera
+
+595
+00:38:59,480 --> 00:39:04,579 
+what you find is that the system has
+memory
+
+596
+00:39:04,579 --> 00:39:07,619 
+the University later it's stable
+
+597
+00:39:07,619 --> 00:39:11,250 
+and its causal and it's interesting to
+note by the way
+
+598
+00:39:11,250 --> 00:39:15,849 
+that although the accumulator with an
+unstable system
+
+599
+00:39:15,849 --> 00:39:19,960 
+the embers are the king later is a
+stable system
+
+600
+00:39:19,960 --> 00:39:23,769 
+in general if a system is stable its
+inverse
+
+601
+00:39:23,769 --> 00:39:26,970 
+does not have to be stable or vice versa
+
+602
+00:39:26,970 --> 00:39:32,220 
+and the same thing with causality
+
+603
+00:39:32,220 --> 00:39:36,420 
+okay now there are
+
+604
+00:39:36,420 --> 00:39:40,240 
+a number of other examples which course
+we could discuss
+
+605
+00:39:40,240 --> 00:39:45,059 
+and let me just quickly point to
+
+606
+00:39:45,059 --> 00:39:48,950 
+in one example which is a difference
+equation as i've indicated
+
+607
+00:39:48,950 --> 00:39:54,339 
+here and as will talk about it more
+detail
+
+608
+00:39:54,339 --> 00:39:58,059 
+in our next lecture will will
+
+609
+00:39:58,059 --> 00:40:01,380 
+get involved in a fairly detailed
+discussion linear cut coefficient
+
+610
+00:40:01,380 --> 00:40:02,210 
+difference
+
+611
+00:40:02,210 --> 00:40:06,319 
+and differential equations this falls
+into that category
+
+612
+00:40:06,319 --> 00:40:09,510 
+and under the imposition
+
+613
+00:40:09,510 --> 00:40:12,960 
+what's referred to as initial rest
+
+614
+00:40:12,960 --> 00:40:17,369 
+which corresponds to response being 0
+
+615
+00:40:17,369 --> 00:40:20,760 
+up until the time that the input becomes
+non-zero
+
+616
+00:40:20,760 --> 00:40:23,779 
+the impulse response is a to the N
+
+617
+00:40:23,779 --> 00:40:27,200 
+times you have an and something that
+
+618
+00:40:27,200 --> 00:40:31,220 
+you'll be asked to think about in the
+video course manual
+
+619
+00:40:31,220 --> 00:40:34,720 
+is whether that system has memory
+whether its causal
+
+620
+00:40:34,720 --> 00:40:38,250 
+and whether it's stable and likewise
+
+621
+00:40:38,250 --> 00:40:41,730 
+for a linear constant coefficient
+
+622
+00:40:41,730 --> 00:40:45,140 
+differential equation the specific one
+
+623
+00:40:45,140 --> 00:40:48,430 
+that I've indicated here under
+
+624
+00:40:48,430 --> 00:40:51,619 
+the assumption of initial rest the
+impulse response
+
+625
+00:40:51,619 --> 00:40:54,740 
+is into the minus two tee times you the
+
+626
+00:40:54,740 --> 00:40:58,440 
+and in the video course manual again
+you'll be asked
+
+627
+00:40:58,440 --> 00:41:01,559 
+to examined whether the system has
+memory
+
+628
+00:41:01,559 --> 00:41:06,410 
+whether its causal and whether it's
+stable
+
+629
+00:41:06,410 --> 00:41:10,059 
+okay well as i've indicated in the next
+lecture will
+
+630
+00:41:10,059 --> 00:41:14,509 
+return to much more detailed discussion
+when your constant coefficient
+
+631
+00:41:14,509 --> 00:41:15,660 
+differential and difference
+
+632
+00:41:15,660 --> 00:41:20,059 
+equations now what I'd like to finally
+
+633
+00:41:20,059 --> 00:41:25,599 
+doing this lecture is use the notion of
+convolution in a much different way
+
+634
+00:41:25,599 --> 00:41:30,069 
+to help us with a problem that I alluded
+to earlier
+
+635
+00:41:30,069 --> 00:41:34,230 
+in particular the issue love how to deal
+with some other mathematical
+
+636
+00:41:34,230 --> 00:41:36,470 
+difficulties associated
+
+637
+00:41:36,470 --> 00:41:39,630 
+with impulses and steps
+
+638
+00:41:39,630 --> 00:41:42,980 
+now let me begin by illustrating
+
+639
+00:41:42,980 --> 00:41:46,890 
+kinda what the problem is and the
+
+640
+00:41:46,890 --> 00:41:50,720 
+an example of the kinda paradox that
+sore right to
+
+641
+00:41:50,720 --> 00:41:53,920 
+when dealing with impose functions and
+step
+
+642
+00:41:53,920 --> 00:41:57,019 
+options
+
+643
+00:41:57,019 --> 00:42:00,420 
+let's consider first the ball a system
+
+644
+00:42:00,420 --> 00:42:04,750 
+which is the identity system and so the
+output is
+
+645
+00:42:04,750 --> 00:42:08,259 
+course equal to the input and
+
+646
+00:42:08,259 --> 00:42:14,849 
+again we can talk about that either in
+continuous-time and discrete-time
+
+647
+00:42:14,849 --> 00:42:18,210 
+well we know that the function that you
+
+648
+00:42:18,210 --> 00:42:22,299 
+convolved with a signal to retain a
+signal
+
+649
+00:42:22,299 --> 00:42:26,059 
+is an impulse and so that means that the
+impulse response
+
+650
+00:42:26,059 --> 00:42:32,269 
+love and identity system is an impulse
+makes logical sense
+
+651
+00:42:32,269 --> 00:42:37,450 
+furthermore if I take to identity
+systems and Cascade them
+
+652
+00:42:37,450 --> 00:42:41,470 
+I put in an input get the same thing and
+the first system that goes into the
+
+653
+00:42:41,470 --> 00:42:44,299 
+second system get the same thing at the
+second
+
+654
+00:42:44,299 --> 00:42:47,880 
+in other words if I have to
+
+655
+00:42:47,880 --> 00:42:51,569 
+identity systems in cascade
+
+656
+00:42:51,569 --> 00:42:55,849 
+the cascade likewise is an identity
+system
+
+657
+00:42:55,849 --> 00:42:59,069 
+in other words this overall system is
+
+658
+00:42:59,069 --> 00:43:03,319 
+also and identity system
+
+659
+00:43:03,319 --> 00:43:07,460 
+and the implication there is that the
+impulse response
+
+660
+00:43:07,460 --> 00:43:11,779 
+up this is an impulse the impulse
+response if this is an impulse
+
+661
+00:43:11,779 --> 00:43:16,599 
+and the convolution of those two is also
+an impulse
+
+662
+00:43:16,599 --> 00:43:21,339 
+so for continuous time we require than
+that
+
+663
+00:43:21,339 --> 00:43:24,579 
+interpose convolved with itself was an
+impulse
+
+664
+00:43:24,579 --> 00:43:28,859 
+and the same thing for discrete-time
+
+665
+00:43:28,859 --> 00:43:31,869 
+now in discrete-time
+
+666
+00:43:31,869 --> 00:43:35,539 
+we don't have any particular problem
+with that if you think about convolved
+
+667
+00:43:35,539 --> 00:43:36,849 
+in these together
+
+668
+00:43:36,849 --> 00:43:40,279 
+it's a straightforward mathematical
+operation
+
+669
+00:43:40,279 --> 00:43:43,779 
+since the impulse in continue in
+discrete-time
+
+670
+00:43:43,779 --> 00:43:47,329 
+is very nicely defined
+
+671
+00:43:47,329 --> 00:43:51,089 
+however in continuous-time we have to be
+somewhat careful
+
+672
+00:43:51,089 --> 00:43:54,309 
+about the definition at the impulse
+because
+
+673
+00:43:54,309 --> 00:43:57,950 
+it was the derivative a step-by-step has
+a discontinuity
+
+674
+00:43:57,950 --> 00:44:01,230 
+you can't really differentiate at a
+discontinuity
+
+675
+00:44:01,230 --> 00:44:04,250 
+in the way that we dealt with that was
+
+676
+00:44:04,250 --> 00:44:07,930 
+to expand out the discontinuity so that
+
+677
+00:44:07,930 --> 00:44:11,119 
+it had some finite time region in which
+it happen
+
+678
+00:44:11,119 --> 00:44:15,170 
+when we did that we ended up with a
+definition for the impulse
+
+679
+00:44:15,170 --> 00:44:19,240 
+which was the limiting or up this
+function
+
+680
+00:44:19,240 --> 00:44:22,480 
+which is a rectangle with Delta
+
+681
+00:44:22,480 --> 00:44:27,130 
+and height one over Delta and an area
+equal to 1
+
+682
+00:44:27,130 --> 00:44:31,279 
+now if we think I'll convolved being
+
+683
+00:44:31,279 --> 00:44:34,880 
+this signal with itself the impose being
+a limiting
+
+684
+00:44:34,880 --> 00:44:38,529 
+former this then the convolution
+
+685
+00:44:38,529 --> 00:44:42,049 
+up this with itself is a triangle
+
+686
+00:44:42,049 --> 00:44:45,390 
+with to Delta height1 over Delta
+
+687
+00:44:45,390 --> 00:44:48,430 
+in area 1 in other words
+
+688
+00:44:48,430 --> 00:44:51,579 
+this triangular function is this
+
+689
+00:44:51,579 --> 00:44:54,930 
+approximation delta sig Delta T
+
+690
+00:44:54,930 --> 00:44:59,059 
+can't fault with dealt this adult T
+
+691
+00:44:59,059 --> 00:45:02,250 
+and since this would then
+
+692
+00:45:02,250 --> 00:45:07,509 
+the limited this would correspond to the
+impulse response
+
+693
+00:45:07,509 --> 00:45:10,759 
+all the identity system
+
+694
+00:45:10,759 --> 00:45:14,460 
+convolved with itself the implication is
+
+695
+00:45:14,460 --> 00:45:17,509 
+that not only should the top
+
+696
+00:45:17,509 --> 00:45:21,349 
+function this one
+
+697
+00:45:21,349 --> 00:45:24,700 
+correspond in its limiting form to an
+impulse
+
+698
+00:45:24,700 --> 00:45:28,240 
+but also this should correspond it is
+limiting
+
+699
+00:45:28,240 --> 00:45:33,339 
+form to an impulse so one could wonder
+well what is an impulse is it
+
+700
+00:45:33,339 --> 00:45:39,589 
+this one in the limit or is that this
+one in the limit
+
+701
+00:45:39,589 --> 00:45:42,819 
+now beyond that there
+
+702
+00:45:42,819 --> 00:45:46,019 
+so kinda what this suggests is that in
+the limiting
+
+703
+00:45:46,019 --> 00:45:49,289 
+for me kinda run into a contradiction
+unless you don't
+
+704
+00:45:49,289 --> 00:45:53,190 
+try to distinguish between this
+rectangle in the Triangle
+
+705
+00:45:53,190 --> 00:45:56,289 
+things get even worse when you think
+about
+
+706
+00:45:56,289 --> 00:45:59,269 
+what happens when you put an impulse
+into a differentiator in a
+
+707
+00:45:59,269 --> 00:46:03,670 
+differentiator is a very commonly
+occurring system
+
+708
+00:46:03,670 --> 00:46:06,970 
+in particular suppose we had a system
+for which
+
+709
+00:46:06,970 --> 00:46:11,049 
+the output was the derivative of the
+input
+
+710
+00:46:11,049 --> 00:46:14,619 
+so if we put in extra T we got out the
+exit
+
+711
+00:46:14,619 --> 00:46:21,109 
+the DT if I put in an impulse or if I
+talked about the impulse response what
+
+712
+00:46:21,109 --> 00:46:23,160 
+is that
+
+713
+00:46:23,160 --> 00:46:26,500 
+and of course the problem is that if
+
+714
+00:46:26,500 --> 00:46:30,569 
+you think that the impossible self is
+very badly behaved
+
+715
+00:46:30,569 --> 00:46:34,809 
+then what about its derivative which is
+not only
+
+716
+00:46:34,809 --> 00:46:38,349 
+infinitely big but there's a positive
+going on in negative going one in the
+
+717
+00:46:38,349 --> 00:46:40,529 
+difference between a handsome area
+
+718
+00:46:40,529 --> 00:46:45,970 
+and you your end up in a lot of
+difficult
+
+719
+00:46:45,970 --> 00:46:50,900 
+well the way around this formally is
+through
+
+720
+00:46:50,900 --> 00:46:56,210 
+a set of mathematics refer to as
+generalized functions
+
+721
+00:46:56,210 --> 00:47:00,029 
+we won't be quite that formal but I'd
+like to at least
+
+722
+00:47:00,029 --> 00:47:03,890 
+suggest with the essence that formality
+is and it really
+
+723
+00:47:03,890 --> 00:47:09,650 
+helps us in interpreting the impulses
+and steps and functions at that time
+
+724
+00:47:09,650 --> 00:47:13,170 
+and what it is is operational definition
+
+725
+00:47:13,170 --> 00:47:16,480 
+love steps impulses and their
+derivatives
+
+726
+00:47:16,480 --> 00:47:20,589 
+in the following sense: usually when we
+talk about a function
+
+727
+00:47:20,589 --> 00:47:24,990 
+we talk about what the bag with the
+function is at any instant of time
+
+728
+00:47:24,990 --> 00:47:28,809 
+course the trouble with an impulse is
+it's infinitely bigan 0 within has some
+
+729
+00:47:28,809 --> 00:47:31,049 
+areas center
+
+730
+00:47:31,049 --> 00:47:34,390 
+well we can turn to is what is referred
+to as
+
+731
+00:47:34,390 --> 00:47:37,569 
+and operational definition where
+
+732
+00:47:37,569 --> 00:47:41,390 
+the operational definition
+
+733
+00:47:41,390 --> 00:47:44,920 
+is related not to what the impulses
+
+734
+00:47:44,920 --> 00:47:47,950 
+but to what the impulse does under
+
+735
+00:47:47,950 --> 00:47:51,309 
+the operation convolution so
+
+736
+00:47:51,309 --> 00:47:54,509 
+what is an impulse and impose is
+
+737
+00:47:54,509 --> 00:47:59,490 
+something which under convolution
+retains the function
+
+738
+00:47:59,490 --> 00:48:04,230 
+and net then conserve as a definition of
+the imports
+
+739
+00:48:04,230 --> 00:48:08,279 
+well let's see where that gets us
+suppose that we now
+
+740
+00:48:08,279 --> 00:48:13,390 
+want to talk about the derivative up the
+in polls
+
+741
+00:48:13,390 --> 00:48:16,470 
+well what we ask about is
+
+742
+00:48:16,470 --> 00:48:21,220 
+what it is operationally and so if we
+have a system
+
+743
+00:48:21,220 --> 00:48:25,539 
+which is a differentiator an
+
+744
+00:48:25,539 --> 00:48:29,220 
+we inquire about it's impossible
+response which let's say we define
+
+745
+00:48:29,220 --> 00:48:32,900 
+rotationally as you serve 180
+
+746
+00:48:32,900 --> 00:48:36,720 
+what's important about this function you
+serve one ft
+
+747
+00:48:36,720 --> 00:48:40,130 
+is not what it is at each value time
+
+748
+00:48:40,130 --> 00:48:43,890 
+but what it does under convolution
+
+749
+00:48:43,890 --> 00:48:47,269 
+what is it doing a convolution well the
+
+750
+00:48:47,269 --> 00:48:50,539 
+output the differentiator is the
+convolution
+
+751
+00:48:50,539 --> 00:48:55,359 
+up the input with the impulse response
+and so what you serve 180 does on the
+
+752
+00:48:55,359 --> 00:48:56,289 
+convolution
+
+753
+00:48:56,289 --> 00:48:59,829 
+is to differentiate
+
+754
+00:48:59,829 --> 00:49:03,809 
+and Nat is the operational definition
+
+755
+00:49:03,809 --> 00:49:07,450 
+and now of course we can think extending
+net
+
+756
+00:49:07,450 --> 00:49:11,440 
+not only would we want to think about
+differentiating
+
+757
+00:49:11,440 --> 00:49:15,130 
+an impulse but we would also what about
+
+758
+00:49:15,130 --> 00:49:18,769 
+want to think about differentiating the
+derivative opinion polls
+
+759
+00:49:18,769 --> 00:49:23,009 
+will define that as a function use up to
+eighty
+
+760
+00:49:23,009 --> 00:49:26,039 
+use up to 50 because we have
+
+761
+00:49:26,039 --> 00:49:30,220 
+this impulse response convolved with
+this one is you wanna T convolved you
+
+762
+00:49:30,220 --> 00:49:31,730 
+wanna T
+
+763
+00:49:31,730 --> 00:49:34,880 
+and what is you 280
+
+764
+00:49:34,880 --> 00:49:38,259 
+operationally it is
+
+765
+00:49:38,259 --> 00:49:41,660 
+the operation such that when you can
+ball
+
+766
+00:49:41,660 --> 00:49:44,819 
+that with except he what you get
+
+767
+00:49:44,819 --> 00:49:48,559 
+is the second derivative
+
+768
+00:49:48,559 --> 00:49:51,829 
+okay now we can carry this further and
+in fact
+
+769
+00:49:51,829 --> 00:49:55,049 
+talk about the result I'll involving
+
+770
+00:49:55,049 --> 00:49:58,619 
+you wanna TE with itself
+
+771
+00:49:58,619 --> 00:50:01,890 
+more times in fact if we think that the
+convolution
+
+772
+00:50:01,890 --> 00:50:06,099 
+or you want it T with it so k times
+
+773
+00:50:06,099 --> 00:50:11,349 
+then logically we define that as use a
+Kft
+
+774
+00:50:11,349 --> 00:50:14,849 
+again we would interpret that
+operationally
+
+775
+00:50:14,849 --> 00:50:17,920 
+and the operational definition is
+through
+
+776
+00:50:17,920 --> 00:50:23,089 
+convolution where this corresponds to
+
+777
+00:50:23,089 --> 00:50:26,180 
+use a cave T in the impulse response
+
+778
+00:50:26,180 --> 00:50:29,650 
+love k differentiators in cascade
+
+779
+00:50:29,650 --> 00:50:33,799 
+so what is the operational definition
+well it simply
+
+780
+00:50:33,799 --> 00:50:38,180 
+that except the convolved with you sir
+kute
+
+781
+00:50:38,180 --> 00:50:42,190 
+is the K derivative
+
+782
+00:50:42,190 --> 00:50:45,670 
+accept T and
+
+783
+00:50:45,670 --> 00:50:50,289 
+this now gives us a set 0 what are
+referred to as singularity functions
+
+784
+00:50:50,289 --> 00:50:51,609 
+very well
+
+785
+00:50:51,609 --> 00:50:55,369 
+badly behaved mathematically in a sense
+but
+
+786
+00:50:55,369 --> 00:51:00,789 
+as we've seen reasonably well defined
+under an operational definition
+
+787
+00:51:00,789 --> 00:51:04,220 
+the cake was 0 incidently that's the
+same as
+
+788
+00:51:04,220 --> 00:51:09,390 
+what we have referred to previously as
+the impulse so
+
+789
+00:51:09,390 --> 00:51:13,269 
+cake 0 that's just dealt T
+
+790
+00:51:13,269 --> 00:51:18,079 
+now to be completely can also go the
+other way and talk about
+
+791
+00:51:18,079 --> 00:51:21,779 
+the impulse response a string 'em
+integrators instead of a string it
+
+792
+00:51:21,779 --> 00:51:23,529 
+differentiators
+
+793
+00:51:23,529 --> 00:51:27,579 
+course the impulse response a single
+integrator is a unit step
+
+794
+00:51:27,579 --> 00:51:30,910 
+to integrators together is the integral
+the units that
+
+795
+00:51:30,910 --> 00:51:34,079 
+et cetera an that
+
+796
+00:51:34,079 --> 00:51:37,180 
+likewise corresponds to
+
+797
+00:51:37,180 --> 00:51:40,329 
+a Sat Nav what are called singularity
+functions
+
+798
+00:51:40,329 --> 00:51:43,819 
+in particular if I take string or
+
+799
+00:51:43,819 --> 00:51:48,140 
+am integrators in cascade
+
+800
+00:51:48,140 --> 00:51:51,890 
+then the impulse response that is
+
+801
+00:51:51,890 --> 00:51:56,029 
+denoted as use up minus MFT
+
+802
+00:51:56,029 --> 00:52:00,349 
+and for example with a single in a
+greater use up minus 150
+
+803
+00:52:00,349 --> 00:52:04,109 
+corresponds to are unit step
+
+804
+00:52:04,109 --> 00:52:08,970 
+as we've talked about previously use a
+-2 ft
+
+805
+00:52:08,970 --> 00:52:12,869 
+our spines to unit ramp
+
+806
+00:52:12,869 --> 00:52:18,740 
+et cetera and there is in fact a reason
+for choosing negative values have the
+
+807
+00:52:18,740 --> 00:52:20,920 
+argument
+
+808
+00:52:20,920 --> 00:52:24,839 
+when going in one direction here
+integration as compared with positive
+
+809
+00:52:24,839 --> 00:52:26,390 
+values the argument we going
+
+810
+00:52:26,390 --> 00:52:29,900 
+in the other direction namely
+differentiation
+
+811
+00:52:29,900 --> 00:52:34,019 
+in in particular we know bad
+
+812
+00:52:34,019 --> 00:52:38,009 
+with uses my sms to the
+
+813
+00:52:38,009 --> 00:52:41,569 
+the operational definition is the AM
+
+814
+00:52:41,569 --> 00:52:45,380 
+running into kroll and
+
+815
+00:52:45,380 --> 00:52:48,420 
+like why is use a Kft
+
+816
+00:52:48,420 --> 00:52:53,420 
+so with a positive subscript has an
+operational definition
+
+817
+00:52:53,420 --> 00:52:56,759 
+which is the derivative so
+
+818
+00:52:56,759 --> 00:53:01,329 
+if the Cape derivative exit T
+
+819
+00:53:01,329 --> 00:53:04,599 
+and in partly as a consequence if that
+
+820
+00:53:04,599 --> 00:53:07,940 
+if we take use it Kft
+
+821
+00:53:07,940 --> 00:53:11,559 
+and convolved it with use ability the
+result
+
+822
+00:53:11,559 --> 00:53:16,059 
+is this the singularity function with
+the subscript which is the sum
+
+823
+00:53:16,059 --> 00:53:19,069 
+K&L and that holds whether
+
+824
+00:53:19,069 --> 00:53:23,279 
+this is positive values that the
+subscript or negative values at the
+
+825
+00:53:23,279 --> 00:53:24,749 
+subscript
+
+826
+00:53:24,749 --> 00:53:28,009 
+so just to summarize this last
+discussion
+
+827
+00:53:28,009 --> 00:53:31,039 
+we've used an operational definition to
+
+828
+00:53:31,039 --> 00:53:35,549 
+talk about derivatives love impulses
+
+829
+00:53:35,549 --> 00:53:38,789 
+and integrals impulses this led
+
+830
+00:53:38,789 --> 00:53:42,980 
+to said a singularity functions work all
+singularity functions of which
+
+831
+00:53:42,980 --> 00:53:46,130 
+the impulse in the stepper two examples
+by
+
+832
+00:53:46,130 --> 00:53:49,710 
+using an operational definition through
+convolution
+
+833
+00:53:49,710 --> 00:53:53,369 
+allows us to to find
+
+834
+00:53:53,369 --> 00:53:57,640 
+at least an operational sense these
+functions that otherwise a very badly
+
+835
+00:53:57,640 --> 00:54:01,130 
+a
+
+836
+00:54:01,130 --> 00:54:05,069 
+okay now in in this lecture in
+
+837
+00:54:05,069 --> 00:54:09,210 
+previous lectures for the most part our
+discussion has
+
+838
+00:54:09,210 --> 00:54:13,170 
+been about linear time-invariant systems
+
+839
+00:54:13,170 --> 00:54:16,440 
+fairly general terms and we've seen a
+variety
+
+840
+00:54:16,440 --> 00:54:20,069 
+properties representation through
+convolution
+
+841
+00:54:20,069 --> 00:54:25,759 
+and properties as they can be associated
+with the impulse response
+
+842
+00:54:25,759 --> 00:54:30,249 
+next lecture will turn our attention to
+a very important
+
+843
+00:54:30,249 --> 00:54:35,890 
+subclass those systems namely systems
+that are described below beilin your
+
+844
+00:54:35,890 --> 00:54:37,420 
+constant coefficient
+
+845
+00:54:37,420 --> 00:54:40,839 
+difference equations in the
+discrete-time case and when your car is
+
+846
+00:54:40,839 --> 00:54:42,009 
+the coefficient
+
+847
+00:54:42,009 --> 00:54:45,410 
+differential equations in the
+continuous-time case
+
+848
+00:54:45,410 --> 00:54:48,829 
+those classes while not
+
+849
+00:54:48,829 --> 00:54:52,650 
+forming all the classic linear
+time-invariant systems
+
+850
+00:54:52,650 --> 00:54:57,480 
+are very important subclass and will
+focus in on those specifically next
+
+851
+00:54:57,480 --> 00:54:57,779 
+thank you
+

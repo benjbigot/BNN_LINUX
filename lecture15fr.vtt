@@ -1,0 +1,2648 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+le contenu suivant est fourni sous une licence Creative Commons
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+votre appui nous aidera MIT OpenCourseWare continuer à offrir
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+ressources éducatives de haute qualité gratuitement
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+faire un don ou voir des documents supplémentaires à partir de centaines d'entre eux IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+cours
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+visiter MIT OpenCourseWare à 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU home for the
+que le MIT que la maison EDU pour la
+
+00:00:28,000 --> 00:00:31,000
+in
+
+
+00:00:31,000 --> 00:00:32,000
+the
+la
+
+00:00:32,000 --> 00:00:33,000
+the
+la
+
+00:00:33,000 --> 00:00:38,000
+the in
+dans le
+
+00:00:38,000 --> 00:00:40,000
+in
+
+
+00:00:40,000 --> 00:00:44,000
+the
+la
+
+00:00:44,000 --> 00:00:51,000
+are the
+sont l'
+
+00:00:52,000 --> 00:00:57,000
+in the last lecture we begin
+dans la dernière leçon, nous commençons
+
+00:00:57,000 --> 00:01:02,000
+the discussion love modulation and in particular what we focused on
+la modulation discussion de l'amour et en particulier ce que nous nous sommes concentrés sur
+
+00:01:02,000 --> 00:01:08,000
+was the continuous-time case and in talking about continuous-time modulation
+ce fut le cas en temps continu et en parlant de la modulation en temps continu
+
+00:01:08,000 --> 00:01:11,000
+we covered a number of topics we talked about
+nous avons couvert un certain nombre de sujets dont nous avons parlé
+
+00:01:11,000 --> 00:01:14,000
+the properties and analysis love
+les propriétés et analyse amour
+
+00:01:14,000 --> 00:01:18,000
+modulation when we had a complex exponential
+modulation lorsque nous avons eu une exponentielle complexe
+
+00:01:18,000 --> 00:01:23,000
+carrier signal we talked about the properties and analysis in the case of a
+signal porteur, nous avons parlé sur les propriétés et l'analyse dans le cas d'un
+
+00:01:23,000 --> 00:01:25,000
+sinusoidal carrier
+porteuse sinusoïdale
+
+00:01:25,000 --> 00:01:29,000
+and in that context and related to
+et dans ce contexte, et liés à
+
+00:01:29,000 --> 00:01:33,000
+the application associated with communications
+l'application associée à la communication
+
+00:01:33,000 --> 00:01:36,000
+we talked about synchronous modulation
+nous avons parlé de modulation synchrone
+
+00:01:36,000 --> 00:01:39,000
+a synchronous modulation and
+une modulation synchrone et
+
+00:01:39,000 --> 00:01:42,000
+also the notion love single sideband
+également la notion d'amour à bande latérale unique
+
+00:01:42,000 --> 00:01:45,000
+modulation in
+modulation en
+
+00:01:45,000 --> 00:01:51,000
+the lecture today there are to issues that I'd like to address broad topics
+la conférence d'aujourd'hui, il ya des questions que je voudrais aborder de grands sujets
+
+00:01:51,000 --> 00:01:55,000
+one is Acer parallel discussion
+on est Acer discussion parallèle
+
+00:01:55,000 --> 00:02:00,000
+particularly is associated with complex exponential sinusoidal modulation
+en particulier est associé à une modulation sinusoïdale exponentielle complexe
+
+00:02:00,000 --> 00:02:03,000
+for discrete-time signals and
+pour des signaux discrets dans le temps et
+
+00:02:03,000 --> 00:02:07,000
+the second is the introduction and analysis
+la deuxième est l'introduction et l'analyse
+
+00:02:07,000 --> 00:02:12,000
+love a another kind of carriers specifically a post kind of carrier
+l'amour d'un autre type de supports spécifiquement un poste type de support
+
+00:02:12,000 --> 00:02:17,000
+in continuous time leading to the notions of pulse amplitude modulation
+en temps continu menant aux notions de modulation d'amplitude d'impulsion
+
+00:02:17,000 --> 00:02:22,000
+and eventually a very powerful theramin result called the sampling there
+et finalement un résultat de theremin très puissant appelé l'échantillonnage, il
+
+00:02:22,000 --> 00:02:26,000
+well let me begin the lecture though focusing on
+Eh bien, laissez-moi d'abord de la conférence en se concentrant bien sur
+
+00:02:26,000 --> 00:02:30,000
+the discrete-time modulation to essentially
+la modulation en temps discret à l'essentiel
+
+00:02:30,000 --> 00:02:35,000
+draw your attention to the fact dead the analysis and discrete-time
+attirer votre attention sur le fait mort et l'analyse en temps discret
+
+00:02:35,000 --> 00:02:39,000
+very much parallels the analysis in continuous-time
+très beaucoup parallèles l'analyse en temps continu
+
+00:02:39,000 --> 00:02:43,000
+well let's consider in the discrete-time
+bien nous allons examiner dans le temps discret
+
+00:02:43,000 --> 00:02:47,000
+case just as we had in continuous-time a
+cas comme nous avions en temps continu d'un
+
+00:02:47,000 --> 00:02:50,000
+signal modulating a carrier signal
+signal de modulation d'un signal porteur
+
+00:02:50,000 --> 00:02:54,000
+and the resulting modulated signal
+et le signal modulé résultant
+
+00:02:54,000 --> 00:02:57,000
+is why event and it was
+C'est pourquoi l'événement et qu'il était
+
+00:02:57,000 --> 00:03:01,000
+in continuous-time the modulation property
+en temps continu la propriété de modulation
+
+00:03:01,000 --> 00:03:05,000
+Associated with the four EA transform dead
+Associé avec les quatre EA transformer morts
+
+00:03:05,000 --> 00:03:10,000
+provided the basis for the analysis and exactly the same thing is true in a
+a servi de base pour l'analyse et la même chose est vraie dans un
+
+00:03:10,000 --> 00:03:11,000
+discrete-time
+temps discret
+
+00:03:11,000 --> 00:03:14,000
+case in particular what we have in discrete-time
+cas en particulier ce que nous avons en temps discret
+
+00:03:14,000 --> 00:03:20,000
+is the modulation property as it relates to the Fourier transform
+est la propriété de modulation telle qu'elle se rapporte à la transformation de Fourier
+
+00:03:20,000 --> 00:03:25,000
+which tells us that the four EA transform of the modulated signal
+qui nous dit que les quatre EA transformée du signal modulé
+
+00:03:25,000 --> 00:03:29,000
+is the convolution all the
+est la convolution d'autant
+
+00:03:29,000 --> 00:03:34,000
+for a transformer the carrier and the 48 transform or
+un transformateur pour le support et le 48 transformer ou
+
+00:03:34,000 --> 00:03:39,000
+the modulating signal and the only real difference in issue here
+le signal de modulation et la seule vraie différence ici en cause
+
+00:03:39,000 --> 00:03:42,000
+is that in the discrete-time case
+est que dans le cas discret dans le temps
+
+00:03:42,000 --> 00:03:45,000
+what we're talking about is a periodic
+ce dont nous parlons est un périodique
+
+00:03:45,000 --> 00:03:49,000
+convolution because the specter of course a periodic
+convolution, car le spectre de cours un périodique
+
+00:03:49,000 --> 00:03:55,000
+whereas in a continuous-time case it was an a periodic convolution so let's
+alors que dans un cas continu c'était une convolution périodique Donc, nous allons
+
+00:03:55,000 --> 00:04:00,000
+parallel the discussion and in particular what will focus on
+parallèle à la discussion et en particulier ce que mettra l'accent sur
+
+00:04:00,000 --> 00:04:03,000
+is first a complex exponential
+est d'abord une exponentielle complexe
+
+00:04:03,000 --> 00:04:07,000
+carrier and second a
+support et la deuxième une
+
+00:04:07,000 --> 00:04:11,000
+sinusoidal carrier and we'll see how this parallels our discussion in
+porteuse sinusoïdale et nous allons voir comment ce parallèle notre discussion dans
+
+00:04:11,000 --> 00:04:12,000
+continuous-time
+en temps continu
+
+00:04:12,000 --> 00:04:17,000
+and will make fairly brief reference as we introduce
+et fera assez brève référence que nous introduisons
+
+00:04:17,000 --> 00:04:22,000
+the post carrier for continuous-time will bring make very brief reference to
+le support de poste à temps continu apportera faire très brève référence à
+
+00:04:22,000 --> 00:04:24,000
+the post carrier for discrete-time
+le support de poste à temps discret
+
+00:04:24,000 --> 00:04:28,000
+indicating that again the analysis and discrete-time and continuous-time
+indiquant que de nouveau l'analyse et à temps discret et en temps continu
+
+00:04:28,000 --> 00:04:32,000
+is very parallel soul let's first consider
+est d'abord examiner de très parallèle âme let
+
+00:04:32,000 --> 00:04:35,000
+complex exponential and sinus all carriers
+complexes exponentielles et des sinus tous les transporteurs
+
+00:04:35,000 --> 00:04:38,000
+for the discrete-time case emphasizing
+pour le cas temps discret soulignant
+
+00:04:38,000 --> 00:04:42,000
+the very strong parallel and similarity between
+la très forte similitude entre parallèle et
+
+00:04:42,000 --> 00:04:46,000
+discrete-time and continuous-time well
+temps discret et en temps continu et
+
+00:04:46,000 --> 00:04:50,000
+we have once again the modulation property
+nous avons une fois de plus la propriété de modulation
+
+00:04:50,000 --> 00:04:54,000
+and the modulation property tells us that the spectrum
+et la propriété de modulation nous dit que le spectre
+
+00:04:54,000 --> 00:04:58,000
+all the modulated signal is the periodic
+tout le signal modulé est le périodique
+
+00:04:58,000 --> 00:05:02,000
+convolution love the two spectra
+convolution aiment les deux spectres
+
+00:05:02,000 --> 00:05:05,000
+and let's consider for example
+et prenons pour exemple
+
+00:05:05,000 --> 00:05:09,000
+an input for modulating spectrum as i've indicated here
+une entrée de modulation de spectre comme je l'ai dit ici
+
+00:05:09,000 --> 00:05:12,000
+and since we what to consider first the fall
+et depuis que nous avons ce qu'il faut Considérons d'abord la chute
+
+00:05:12,000 --> 00:05:16,000
+a complex exponential carrier
+un support exponentielle complexe
+
+00:05:16,000 --> 00:05:19,000
+will consider the case of CNN
+examinera le cas de CNN
+
+00:05:19,000 --> 00:05:22,000
+equal to each to the J Omega subsea
+égale à chaque sous-marin à la J Omega
+
+00:05:22,000 --> 00:05:26,000
+n and let me stress by the way as
+n et je tiens à souligner la manière
+
+00:05:26,000 --> 00:05:30,000
+I did in the continuous-time case
+Je l'ai fait dans le cas continu
+
+00:05:30,000 --> 00:05:35,000
+dead out 10 to suppress the phase angle which of course can be associated with
+mort à 10 pour supprimer l'angle de phase qui bien sûr peut être associée à
+
+00:05:35,000 --> 00:05:37,000
+the carrier also
+le transporteur a également
+
+00:05:37,000 --> 00:05:41,000
+alright so we have then the spectrum
+bien que nous avons alors le spectre
+
+00:05:41,000 --> 00:05:45,000
+%uh the modulating signal the spektr the carrier signal
+% Euh le signal de modulation de la spektr le signal porteur
+
+00:05:45,000 --> 00:05:49,000
+if this is the carrier then its spectrum is an impulse train
+si tel est le support puis son spectre est un train d'impulsions
+
+00:05:49,000 --> 00:05:52,000
+and then imposed strain I've indicated
+puis imposée souche je l'ai dit
+
+00:05:52,000 --> 00:05:57,000
+here and let me stress also that in
+ici et je tiens à souligner aussi que dans
+
+00:05:57,000 --> 00:06:01,000
+the discrete-time case of course the spectra
+le cas temps discret bien sûr les spectres
+
+00:06:01,000 --> 00:06:06,000
+and all of the spektr involved are periodic with period of two pi
+et tous les acteurs sont spektr périodique de période de deux pi
+
+00:06:06,000 --> 00:06:10,000
+so this then is the spectrum of the carrier signal
+puis si cela est le spectre du signal de porteuse
+
+00:06:10,000 --> 00:06:14,000
+this is the spectrum the input signal the periodic convolution if these two
+tel est le spectre du signal d'entrée de la convolution périodique si ces deux
+
+00:06:14,000 --> 00:06:18,000
+is the spektr on the modulated signal and the result
+est le spektr sur le signal modulé et le résultat
+
+00:06:18,000 --> 00:06:22,000
+is then this spectrum shifted
+est alors ce spectre décalé
+
+00:06:22,000 --> 00:06:25,000
+to center frequency which is the carrier frequency
+à la fréquence centrale, qui est la fréquence de la porteuse
+
+00:06:25,000 --> 00:06:29,000
+Omega subsea so
+Sous-marin Omega si
+
+00:06:29,000 --> 00:06:33,000
+the result love modulation with a complex exponential
+le résultat amour avec une modulation exponentielle complexe
+
+00:06:33,000 --> 00:06:36,000
+is a straightforward shifted the spectrum
+est un simple déplacé le spectre
+
+00:06:36,000 --> 00:06:40,000
+to a carrot to so that what occurred around
+à une carotte de sorte que ce qui s'est passé autour de
+
+00:06:40,000 --> 00:06:46,000
+zero frequency now occurs around the frequency Omega subsea
+fréquence zéro se produit maintenant dans le sous-marin fréquence de Omega
+
+00:06:46,000 --> 00:06:50,000
+now in the continuous-time k sweetie modulated
+maintenant dans le temps continu k bonbon modulé
+
+00:06:50,000 --> 00:06:54,000
+with the case when we had a complex exponential carrier weedy modulated
+avec le cas lorsque nous avons eu un support exponentielle complexe mauvaises herbes modulée
+
+00:06:54,000 --> 00:06:57,000
+by essentially just shifting the spectrum back
+essentiellement par simple déplacement du spectre de retour
+
+00:06:57,000 --> 00:07:04,000
+and he in fact in the discrete-time case were able to do exactly the same thing
+et il en fait dans le cas temps discret ont pu faire exactement la même chose
+
+00:07:04,000 --> 00:07:07,000
+so if we work to replace
+si nous travaillons à remplacer
+
+00:07:07,000 --> 00:07:12,000
+see a van which is huge and make a subsidy and
+voir un van qui est énorme et faire une subvention et
+
+00:07:12,000 --> 00:07:16,000
+by see a very cozy the minus J Omega
+par voir un très agréable le moins J Oméga
+
+00:07:16,000 --> 00:07:19,000
+CN the resulting spectrum
+CN spectre résultant
+
+00:07:19,000 --> 00:07:22,000
+would be an impulse train
+serait un train d'impulsions
+
+00:07:22,000 --> 00:07:26,000
+as i indicate here and
+Comme je l'indique ici et
+
+00:07:26,000 --> 00:07:30,000
+the result all multiply why I have an
+le résultat tout multiplier pourquoi j'ai un
+
+00:07:30,000 --> 00:07:34,000
+by that new carrier
+par ce nouveau support
+
+00:07:34,000 --> 00:07:37,000
+in the frequency domain is a convolution if these two
+dans le domaine fréquentiel est une convolution si ces deux
+
+00:07:37,000 --> 00:07:40,000
+and its relatively straightforward to verify that
+et sa relativement simple pour vérifier que
+
+00:07:40,000 --> 00:07:43,000
+if you can follow these for the periodic convolution
+si vous pouvez suivre ces pour la convolution périodique
+
+00:07:43,000 --> 00:07:49,000
+then that will get us back to the original spectrum that we started with
+alors que cela va nous revenir au spectre d'origine que nous avons commencé avec
+
+00:07:49,000 --> 00:07:53,000
+so what's happened in the discrete-time case for the complex exponential
+si ce qui s'est passé dans le cas temps discret pour l'exponentielle complexe
+
+00:07:53,000 --> 00:07:57,000
+is exactly the same as in continuous-time
+est exactement la même que dans le temps continu
+
+00:07:57,000 --> 00:08:01,000
+namely we might too late that corresponds to shifting the spectrum
+à savoir que nous pourrions trop tard qui correspond à l'évolution du spectre
+
+00:08:01,000 --> 00:08:05,000
+weedy modulate by multiplying by the complex conjugate
+moduler mauvaises herbes en les multipliant par le conjugué complexe
+
+00:08:05,000 --> 00:08:09,000
+the original modulating care the original carrier
+la modulation d'origine soin le support original
+
+00:08:09,000 --> 00:08:14,000
+and that shifts the spectrum back to where it was originally
+et qui décale le spectre au niveau où il était à l'origine
+
+00:08:14,000 --> 00:08:19,000
+okay now let's consider the case of a sinusoidal carrier in discrete-time
+bien maintenant nous allons examiner le cas d'une porteuse sinusoïdale en temps discret
+
+00:08:19,000 --> 00:08:23,000
+and again things very much parallel
+et encore des choses très bien parallèles
+
+00:08:23,000 --> 00:08:26,000
+what we saw in continuous-time
+ce que nous avons vu en temps continu
+
+00:08:26,000 --> 00:08:29,000
+and again as we look at the specter
+et encore que nous regardons le spectre
+
+00:08:29,000 --> 00:08:33,000
+I will choose a phase angle 0
+Je vais choisir un angle de phase 0
+
+00:08:33,000 --> 00:08:37,000
+mainly for notational an analytical convenience
+principalement pour un confort d'analyse de notation
+
+00:08:37,000 --> 00:08:40,000
+so in this case now rather than
+dans ce cas maintenant plutôt que
+
+00:08:40,000 --> 00:08:44,000
+a carrier signal which is a single complex exponential
+un signal de porteuse qui est d'une seule exponentielle complexe
+
+00:08:44,000 --> 00:08:49,000
+it's now a sinusoidal carrier and the sinus or carrier is the summer too
+c'est maintenant une porteuse sinusoïdale et le sinus ou le transporteur est l'été trop
+
+00:08:49,000 --> 00:08:52,000
+complex exponentials
+exponentielles complexes
+
+00:08:52,000 --> 00:08:57,000
+and so if we consider a modulating spectrum that is the specter affects a
+et si l'on considère un spectre de modulation qui est le spectre affecte un
+
+00:08:57,000 --> 00:08:59,000
+van
+de
+
+00:08:59,000 --> 00:09:04,000
+as something are the type that I indicate here
+comme quelque chose sont le type que j'indique ici
+
+00:09:04,000 --> 00:09:08,000
+and the spectrum of the carrier
+et le spectre de la porteuse
+
+00:09:08,000 --> 00:09:12,000
+now since the carrier is sign a soil rather than
+maintenant depuis que la compagnie est de signer un sol plutôt que
+
+00:09:12,000 --> 00:09:16,000
+a complex exponential consists of two impulses
+une exponentielle complexe se compose de deux impulsions
+
+00:09:16,000 --> 00:09:20,000
+wanted pasta makers see and one at minus Omega subsea
+voulaient fabricants de pâtes et voir un au moins Omega sous-marin
+
+00:09:20,000 --> 00:09:24,000
+convolved ing this spectrum with this spectrum
+convolution ment ce spectre avec ce spectre
+
+00:09:24,000 --> 00:09:27,000
+gives us a replication affective Omega
+nous donne une Omega réplication affective
+
+00:09:27,000 --> 00:09:32,000
+around plus and minus Omega subsea
+autour de plus et moins Omega sous-marin
+
+00:09:32,000 --> 00:09:36,000
+and incidently with an ample to change a hair
+et accessoirement avec une ample pour changer un cheveu
+
+00:09:36,000 --> 00:09:40,000
+so again things have
+à nouveau les choses ont
+
+00:09:40,000 --> 00:09:43,000
+worked as they did in continuous-time
+travaillé comme ils l'ont fait en temps continu
+
+00:09:43,000 --> 00:09:46,000
+in continuous time or in discrete-time
+en temps continu ou en temps discret
+
+00:09:46,000 --> 00:09:49,000
+modulating with a sinusoidal carrier
+moduler une porteuse sinusoïdale avec
+
+00:09:49,000 --> 00:09:53,000
+with then correspond to a replication of the spectrum
+avec correspondrait alors à une réplication du spectre
+
+00:09:53,000 --> 00:09:58,000
+around plus the carrier frequency and replication the spectrum
+ainsi autour de la fréquence porteuse et la reproduction du spectre
+
+00:09:58,000 --> 00:10:02,000
+around minus the carrier frequency in both cases
+environ moins de la fréquence porteuse dans les deux cas,
+
+00:10:02,000 --> 00:10:07,000
+as long as the carrier frequency is large enough compared with the band with
+aussi longtemps que la fréquence porteuse est suffisamment grande par rapport à la bande avec
+
+00:10:07,000 --> 00:10:08,000
+the signal
+le signal
+
+00:10:08,000 --> 00:10:12,000
+so that those two replications don't overlap
+de sorte que ces deux répétitions ne se chevauchent pas
+
+00:10:12,000 --> 00:10:15,000
+then its reasonable to suppose
+alors sa raisonnable de supposer
+
+00:10:15,000 --> 00:10:19,000
+that we should be able to recover the original signal
+que nous devrions être en mesure de récupérer le signal original
+
+00:10:19,000 --> 00:10:23,000
+well in fact to d modulate
+bien en fait d moduler
+
+00:10:23,000 --> 00:10:26,000
+in the discrete-time case we would again
+dans le cas temps discret nous le ferions à nouveau
+
+00:10:26,000 --> 00:10:32,000
+follow very much the strategy that we did in continuous-time
+suivre de très près la stratégie que nous avons fait en temps continu
+
+00:10:32,000 --> 00:10:35,000
+in particular let's consider the modulating
+en particulier nous allons examiner la modulation
+
+00:10:35,000 --> 00:10:38,000
+by taking the modulated signal
+en prenant le signal modulé
+
+00:10:38,000 --> 00:10:41,000
+and again putting it through modulator again
+et mettre à nouveau à travers le modulateur à nouveau
+
+00:10:41,000 --> 00:10:45,000
+with a carrier which is co-signed Omega CN
+avec un véhicule qui est co-signé Omega CN
+
+00:10:45,000 --> 00:10:49,000
+if we do that we have a the modulator
+Si nous faisons cela, nous avons un modulateur
+
+00:10:49,000 --> 00:10:54,000
+or what will turn out to be part of the modulator as i indicate here
+ou ce qui se révélera être une partie du modulateur comme je l'indique ici
+
+00:10:54,000 --> 00:10:58,000
+the spectrum or the import signal
+ou le spectre du signal d'importation
+
+00:10:58,000 --> 00:11:02,000
+is as I had just developed a replication
+est que je venais développé une réplication
+
+00:11:02,000 --> 00:11:06,000
+up the original spectrum around plus and minus Omega subsea
+le spectre original autour de plus et moins Omega sous-marin
+
+00:11:06,000 --> 00:11:10,000
+with an amplitude of the hair when this
+avec une amplitude de la chevelure lors de cette
+
+00:11:10,000 --> 00:11:13,000
+is again convolved with the spectrum
+est de nouveau une convolution avec le spectre
+
+00:11:13,000 --> 00:11:16,000
+love the carrier then
+aimer le transporteur alors
+
+00:11:16,000 --> 00:11:21,000
+we get a replication of the original spectrum
+nous obtenons une réplication du spectre d'origine
+
+00:11:21,000 --> 00:11:25,000
+first around zero frequency as i indicate here
+d'abord autour de la fréquence zéro comme je l'indique ici
+
+00:11:25,000 --> 00:11:29,000
+and then around twice the carrier frequency
+et ensuite deux fois autour de la fréquence porteuse
+
+00:11:29,000 --> 00:11:33,000
+and minus twice the carrier frequency
+et moins de deux fois la fréquence de la porteuse
+
+00:11:33,000 --> 00:11:36,000
+and as long as the carrier frequency
+et aussi longtemps que la fréquence porteuse
+
+00:11:36,000 --> 00:11:39,000
+is large enough compared with the
+est assez grande par rapport à la
+
+00:11:39,000 --> 00:11:43,000
+with of the original signal day and as you can see
+avec de la journée de signal original et comme vous pouvez le voir
+
+00:11:43,000 --> 00:11:48,000
+by extracting this part of the spectrum
+par l'extraction de cette partie du spectre,
+
+00:11:48,000 --> 00:11:51,000
+with the low-pass filter we can in principle
+avec le filtre passe-bas que nous pouvons en principe
+
+00:11:51,000 --> 00:11:54,000
+recover the spectrum associated with the original signal
+récupérer le spectre associé au signal original
+
+00:11:54,000 --> 00:11:59,000
+and again justice in continuous-time because this amplitude is a half
+et encore la justice en temps continu parce que cette amplitude est un demi-
+
+00:11:59,000 --> 00:12:03,000
+we would want to choose for scaling purposes
+nous voulons choisir des fins échelle
+
+00:12:03,000 --> 00:12:07,000
+a low-pass filter ample to which is
+un filtre passe-bas qui est suffisant pour
+
+00:12:07,000 --> 00:12:12,000
+to to compensate for this factor in the hair
+pour compenser ce facteur dans les cheveux
+
+00:12:12,000 --> 00:12:16,000
+so once again things work at basically
+donc une fois encore les choses fonctionnent à l'essentiel
+
+00:12:16,000 --> 00:12:20,000
+the same way as they had in continuous-time
+la même manière que qu'ils avaient en temps continu
+
+00:12:20,000 --> 00:12:23,000
+we have sinusoidal modulation
+nous avons modulation sinusoïdale
+
+00:12:23,000 --> 00:12:28,000
+which consists love using a sinusoidal carrier
+qui consiste amour en utilisant une porteuse sinusoïdale
+
+00:12:28,000 --> 00:12:31,000
+and we have the the modulator
+et nous avons le modulateur
+
+00:12:31,000 --> 00:12:35,000
+which consists of taking the modulated signal
+qui consiste à prendre le signal modulé
+
+00:12:35,000 --> 00:12:38,000
+multiplying by the carrier and then
+multipliant par le transporteur, puis
+
+00:12:38,000 --> 00:12:43,000
+processing Matt with a low-pass filter
+Matt traitement avec un filtre passe-bas
+
+00:12:43,000 --> 00:12:46,000
+to extract the portion of the spectrum
+à extraire la partie du spectre
+
+00:12:46,000 --> 00:12:53,000
+which is around zero frequency as i indicate in the spectra below
+qui est autour de la fréquence zéro comme je l'indique dans le spectre ci-dessous
+
+00:12:53,000 --> 00:12:58,000
+and the result then with this low pass filter having a gain of two
+et ensuite le résultat avec ce filtre passe-bas ayant un gain de deux
+
+00:12:58,000 --> 00:13:02,000
+is that we've recovered the original spectrum
+c'est que nous avons récupéré le spectre d'origine
+
+00:13:02,000 --> 00:13:06,000
+exit Omega which is the spectrum
+quitter Omega qui est le spectre
+
+00:13:06,000 --> 00:13:10,000
+that we started now
+que nous avons commencé maintenant
+
+00:13:10,000 --> 00:13:14,000
+several other things to stress this is a fairly quick
+plusieurs autres choses pour souligner c'est assez rapide
+
+00:13:14,000 --> 00:13:18,000
+to we're through sinusoidal modulation for discrete-time
+nous sommes à travers la modulation sinusoïdale à temps discret
+
+00:13:18,000 --> 00:13:22,000
+in there are very similar issues that arise in
+là sont des questions très similaires qui se posent dans
+
+00:13:22,000 --> 00:13:26,000
+the discrete-time case in terms of love having faced synchronization
+le cas temps discret en termes d'amour ayant fait face à la synchronisation
+
+00:13:26,000 --> 00:13:31,000
+and frequency synchronization between the modulator and demodulator
+et la synchronisation de fréquence entre le modulateur et le démodulateur
+
+00:13:31,000 --> 00:13:34,000
+and we had discussed that in a fair amount of detail for the continuous-time
+et nous avions discuté que dans une bonne quantité de détails pour le temps continu
+
+00:13:34,000 --> 00:13:39,000
+case in some sense in practical terms
+cas dans un certain sens dans la pratique
+
+00:13:39,000 --> 00:13:43,000
+that becomes much more than issue in continuous-time
+cela devient beaucoup plus question en temps continu
+
+00:13:43,000 --> 00:13:48,000
+than it does in discrete-time in part because
+qu'elle ne le fait en temps discret en partie parce que
+
+00:13:48,000 --> 00:13:52,000
+synchronization between a modulator and demodulator
+synchronisation entre un modulateur et démodulateur
+
+00:13:52,000 --> 00:13:56,000
+is often much harder in a continuous-time
+est souvent beaucoup plus difficile dans un temps continu
+
+00:13:56,000 --> 00:14:00,000
+system which is essentially an analog system
+système qui est essentiellement un système analogique
+
+00:14:00,000 --> 00:14:04,000
+as compared with a digital system another
+par rapport à un autre système numérique
+
+00:14:04,000 --> 00:14:08,000
+very important reason and it's important to stress this at the outset
+raison très importante et il est important de le souligner dès le départ
+
+00:14:08,000 --> 00:14:11,000
+is that whereas the theory involving
+est que, alors que la théorie impliquant
+
+00:14:11,000 --> 00:14:15,000
+the use of complex exponentials sinusoidal modulation
+l'utilisation de complexes exponentielles modulation sinusoïdale
+
+00:14:15,000 --> 00:14:19,000
+parallels very strongly in the continuous-time
+parallèles très fortement dans le temps continu
+
+00:14:19,000 --> 00:14:23,000
+and the discrete-time case in practical terms
+et le cas temps discret en termes pratiques
+
+00:14:23,000 --> 00:14:26,000
+it has much more significance in continuous-time
+il a beaucoup plus d'importance en temps continu
+
+00:14:26,000 --> 00:14:30,000
+than it does in discrete-time that is the notion
+qu'elle ne le fait en temps discret qui est la notion
+
+00:14:30,000 --> 00:14:35,000
+love sinusoidal modulation in the context of communication systems
+aimer modulation sinusoïdale dans le contexte de systèmes de communication
+
+00:14:35,000 --> 00:14:39,000
+is extremely important for continuous-time systems
+est extrêmement important pour les systèmes en temps continu
+
+00:14:39,000 --> 00:14:42,000
+and less so in discrete-time systems
+et moins dans les systèmes en temps discret
+
+00:14:42,000 --> 00:14:47,000
+now kinda as a preview of a point to be raise later on
+maintenant un peu comme un aperçu d'un point à soulever plus tard
+
+00:14:47,000 --> 00:14:50,000
+I should modify that slightly with the statement
+Je dois modifier que légèrement avec la déclaration
+
+00:14:50,000 --> 00:14:54,000
+that one very important plays in which
+que l'on joue très importants dans lesquels
+
+00:14:54,000 --> 00:14:59,000
+sinusoidal modulation in a discrete-time context the rises
+modulation sinusoïdale dans un contexte temps discret les hausses
+
+00:14:59,000 --> 00:15:06,000
+is in a class of systems called trance multiplexers or trans modulation systems
+est dans une classe de systèmes appelée multiplexeurs de transe ou de systèmes de modulation trans
+
+00:15:06,000 --> 00:15:09,000
+and this surface is basically because
+et cette surface est essentiellement parce que
+
+00:15:09,000 --> 00:15:13,000
+so many communication systems are now
+de nombreux systèmes de communication sont maintenant
+
+00:15:13,000 --> 00:15:17,000
+becoming digital and specifically discrete-time although the actual
+devenir numérique et plus particulièrement en temps discret bien que le réel
+
+00:15:17,000 --> 00:15:20,000
+transmission is continuous time
+transmission est à temps continu
+
+00:15:20,000 --> 00:15:23,000
+the signal processing manipulation switching
+la manipulation de traitement de signal de commutation
+
+00:15:23,000 --> 00:15:27,000
+is discrete-time it so in fact it turns out
+est à temps discret il donc en fait il s'avère
+
+00:15:27,000 --> 00:15:30,000
+to be very important and useful to take
+être très important et utile pour prendre
+
+00:15:30,000 --> 00:15:34,000
+a discrete-time representation I love
+une représentation en temps discret J'aime
+
+00:15:34,000 --> 00:15:37,000
+the analog signals a continuous-time signals
+l'analogique signale un des signaux en temps continu
+
+00:15:37,000 --> 00:15:41,000
+and in a discrete-time or digital representation
+et dans une représentation numérique en temps discret ou
+
+00:15:41,000 --> 00:15:45,000
+convert them from one modulation scheme
+les convertir d'un schéma de modulation
+
+00:15:45,000 --> 00:15:48,000
+41 multiplexing scheme to another and
+41 schéma de multiplexage à l'autre et
+
+00:15:48,000 --> 00:15:52,000
+although I said a lot there that
+bien que je l'ai dit beaucoup là que
+
+00:15:52,000 --> 00:15:56,000
+really requires much more detail to
+exige vraiment beaucoup plus de détails à
+
+00:15:56,000 --> 00:16:00,000
+to develop in any in any sense at all
+à développer dans n'importe quelle dans tous les sens du tout
+
+00:16:00,000 --> 00:16:04,000
+you should come to get the notion that that discrete-time
+vous devriez venir à obtenir l'idée que ce temps discret
+
+00:16:04,000 --> 00:16:07,000
+modulation systems become very important
+Les systèmes de modulation deviennent très importantes
+
+00:16:07,000 --> 00:16:13,000
+in part because or implementation Elis use
+en partie parce que la mise en œuvre ou l'utilisation Elis
+
+00:16:13,000 --> 00:16:16,000
+okay now there is another application
+bien maintenant il ya une autre application
+
+00:16:16,000 --> 00:16:20,000
+dead we have discussed for both continuous time actually previously for
+morts, nous avons discuté à la fois en temps continu fait précédemment pour
+
+00:16:20,000 --> 00:16:22,000
+discrete-time
+temps discret
+
+00:16:22,000 --> 00:16:27,000
+amplitude modulation with sinusoidal or complex exponential carriers
+la modulation d'amplitude avec des supports exponentielles complexes ou sinusoïdales
+
+00:16:27,000 --> 00:16:33,000
+and let me just remind you that because in fact it becomes a very important one
+et permettez-moi de vous rappeler que, parce que, en fait, il devient très important
+
+00:16:33,000 --> 00:16:36,000
+in the case love discrete-time systems
+dans le cas aiment systèmes en temps discret
+
+00:16:36,000 --> 00:16:40,000
+and that is the notion love using
+et c'est l'amour de notion à l'aide
+
+00:16:40,000 --> 00:16:44,000
+modulation together with fixed filtering
+modulation avec filtrage fixe
+
+00:16:44,000 --> 00:16:47,000
+to implement a filter which is
+à mettre en oeuvre un filtre qui est
+
+00:16:47,000 --> 00:16:50,000
+which either has a variable cut off or
+qui soit a une variable couper ou
+
+00:16:50,000 --> 00:16:54,000
+converts let's say a low-pass filter to a high pass filter
+convertis disons un filtre passe-bas à un filtre passe-haut
+
+00:16:54,000 --> 00:16:59,000
+we originally talked about this when we introduce the modulation property
+nous avons parlé de l'origine lorsque nous introduisons la propriété de modulation
+
+00:16:59,000 --> 00:17:03,000
+in the context of converting a low-pass filter
+dans le contexte de la conversion d'un filtre passe-bas
+
+00:17:03,000 --> 00:17:07,000
+to a high pass filter and the notion was
+à un filtre passe-haut et la notion était
+
+00:17:07,000 --> 00:17:11,000
+that if we modulate the signal
+que si on module le signal
+
+00:17:11,000 --> 00:17:15,000
+with a carrier which is -1 to the end and that's just simply complex
+avec un véhicule qui est -1 à la fin et c'est tout simplement complexe
+
+00:17:15,000 --> 00:17:17,000
+exponential
+exponentiel
+
+00:17:17,000 --> 00:17:22,000
+or sinusoidal carrier with a carrier frequency of pie
+ou porteuse sinusoïdale avec une fréquence de porteuse de tarte
+
+00:17:22,000 --> 00:17:28,000
+than that in effect interchanges the low frequencies in the high frequencies
+en effet que les échangeurs basses fréquences des hautes fréquences
+
+00:17:28,000 --> 00:17:31,000
+and if and after modulation
+et si, après modulation et
+
+00:17:31,000 --> 00:17:36,000
+that is processed with a low pass filter
+qui est traité avec un filtre passe-bas
+
+00:17:36,000 --> 00:17:40,000
+and then the result is d modulated
+et le résultat est d modulée
+
+00:17:40,000 --> 00:17:44,000
+using exactly the same carrier namely a carrier which is
+en utilisant exactement le même transporteur à savoir un support qui est
+
+00:17:44,000 --> 00:17:47,000
+-1 to the end
+-1 À la fin
+
+00:17:47,000 --> 00:17:51,000
+then the effective that is equivalent
+alors l'effectif qui est équivalent
+
+00:17:51,000 --> 00:17:56,000
+to high-pass filtering on the original signal
+à un filtrage passe-haut du signal d'origine
+
+00:17:56,000 --> 00:17:59,000
+and a generalization a bad would involve instead a
+et une généralisation un mauvais impliquerait plutôt une
+
+00:17:59,000 --> 00:18:03,000
+this specific choice if -1 to the end
+ce choix spécifique si -1 à la fin
+
+00:18:03,000 --> 00:18:08,000
+would involve a choice in general or the e to the J Omega sed CNN
+impliquerait un choix en général ou le e à la J Oméga sed CNN
+
+00:18:08,000 --> 00:18:11,000
+that is a more general carrier frequency and
+qui est une fréquence de porteuse plus générale et
+
+00:18:11,000 --> 00:18:14,000
+d modulator which is either the minus J
+d modulateur qui est soit le moins J
+
+00:18:14,000 --> 00:18:18,000
+Omega subsea and and as i've represented here
+Omega-marine et et comme je l'ai représenté ici
+
+00:18:18,000 --> 00:18:23,000
+and as we had talked about it when we talked about the modulation property for
+et comme nous en avions parlé lorsque nous avons parlé de la propriété de modulation pour
+
+00:18:23,000 --> 00:18:25,000
+discrete-time signals
+signaux à temps discret
+
+00:18:25,000 --> 00:18:28,000
+we had specifically chosen the conversion of a low pass to a high pass
+nous avions choisi précisément la conversion d'un passe-bas à un passe-haut
+
+00:18:28,000 --> 00:18:30,000
+filter
+filtre
+
+00:18:30,000 --> 00:18:34,000
+well let me continue the review of that
+Eh bien, laissez-moi continuer l'examen de cette
+
+00:18:34,000 --> 00:18:38,000
+just by reminding you of the details of what happens with the spectra
+juste en vous rappelant les détails de ce qui se passe avec les spectres
+
+00:18:38,000 --> 00:18:41,000
+and specifically the notion
+et plus particulièrement la notion
+
+00:18:41,000 --> 00:18:46,000
+if we take this particular case omega-6 equal
+si nous prenons ce cas particulier oméga-6 égal
+
+00:18:46,000 --> 00:18:51,000
+to pie or covertly a carrier signal which is -1 to the end
+à tarte ou secrètement un signal de porteuse qui est à l'extrémité -1
+
+00:18:51,000 --> 00:18:57,000
+then if we have the original spectra
+alors si nous avons les spectres d'origine
+
+00:18:57,000 --> 00:19:00,000
+and the specter all
+et le spectre tout
+
+00:19:00,000 --> 00:19:05,000
+specter of the carrier signal the spectrum of the carrier signal
+spectre de la porteuse du signal du spectre du signal de porteuse
+
+00:19:05,000 --> 00:19:08,000
+convolved with this spectrum
+convoluée avec ce spectre
+
+00:19:08,000 --> 00:19:12,000
+will then in effect shift this by
+seront alors en vigueur déplacer ce par
+
+00:19:12,000 --> 00:19:15,000
+pie and so after
+tarte et ainsi de suite
+
+00:19:15,000 --> 00:19:18,000
+modulating the result that we have is
+moduler le résultat que nous avons est
+
+00:19:18,000 --> 00:19:23,000
+shifted that spectrum so that what happened at low frequencies now happens
+décalé que le spectre de sorte que ce qui s'est passé dans les basses fréquences qui se passe maintenant
+
+00:19:23,000 --> 00:19:26,000
+at high frequencies namely around pie
+à hautes fréquences à savoir autour de la tarte
+
+00:19:26,000 --> 00:19:31,000
+and what happens at what happened at high frequencies now happens
+et ce qui se passe à ce qui s'est passé dans les hautes fréquences qui se passe maintenant
+
+00:19:31,000 --> 00:19:36,000
+at low frequencies well if thats process now
+aux basses fréquences bien si c'est le processus maintenant
+
+00:19:36,000 --> 00:19:41,000
+with a low pass filter and this dashed line indicates the low-pass filter
+avec un filtre passe-bas et la ligne en pointillés indique que le filtre passe-bas
+
+00:19:41,000 --> 00:19:45,000
+then the result that we get is shown here
+alors le résultat que nous obtenons est montré ici
+
+00:19:45,000 --> 00:19:50,000
+where we've extracted the low-frequency portion of the modulated signal
+où nous avons extrait la partie basse fréquence du signal modulé
+
+00:19:50,000 --> 00:19:55,000
+and now when we modulate or D modulate back
+et maintenant quand on module ou D moduler retour
+
+00:19:55,000 --> 00:20:00,000
+then this spectrum is shifted back to where it belongs
+alors ce spectre est décalé au niveau où il appartient
+
+00:20:00,000 --> 00:20:05,000
+namely its shifted back to be centered around
+à savoir son décalé en arrière pour être centrée autour de
+
+00:20:05,000 --> 00:20:08,000
+minus pie and around plus Park
+moins tarte et autour, plus Parc
+
+00:20:08,000 --> 00:20:12,000
+so if we just compare this spectrum
+si l'on compare juste ce spectre
+
+00:20:12,000 --> 00:20:16,000
+with the original spectrum at the top
+avec le spectre d'origine au sommet
+
+00:20:16,000 --> 00:20:19,000
+what we can see is that in effect what we've done
+ce que nous pouvons voir, c'est que dans l'effet que nous avons fait
+
+00:20:19,000 --> 00:20:23,000
+is to extract a portion of the spectrum
+est d'extraire une partie du spectre
+
+00:20:23,000 --> 00:20:28,000
+acquittal and the processing with a high pass filter
+acquittement et le traitement avec un filtre passe-haut
+
+00:20:28,000 --> 00:20:33,000
+and again this is very similar to what we did in continuous-time
+et encore ce qui est très similaire à ce que nous avons fait en temps continu
+
+00:20:33,000 --> 00:20:37,000
+and all of the kinda analytical processes and
+et tous les procédés d'analyse et d'un peu
+
+00:20:37,000 --> 00:20:41,000
+and convolutions involved are very much the same
+et circonvolutions impliqués sont très sensiblement les mêmes
+
+00:20:41,000 --> 00:20:44,000
+really the biggest difference between continuous-time and discrete-time
+vraiment la plus grande différence entre les temps continu et à temps discret
+
+00:20:44,000 --> 00:20:48,000
+has to do not so much with the details of the analysis but
+a à faire non pas tant avec les détails de l'analyse, mais
+
+00:20:48,000 --> 00:20:52,000
+perhaps has more to do with issues
+a peut-être plus à voir avec les questions
+
+00:20:52,000 --> 00:20:59,000
+love are practical applications
+l'amour sont des applications pratiques
+
+00:20:59,000 --> 00:21:02,000
+okay well so what we've done
+ok, si bien que ce que nous avons fait
+
+00:21:02,000 --> 00:21:06,000
+so far for continuous-time and discrete-time
+la mesure de temps continu et discret dans le temps
+
+00:21:06,000 --> 00:21:11,000
+is to talk about modulation amplitude modulation
+est de parler de la modulation d'amplitude modulation
+
+00:21:11,000 --> 00:21:15,000
+with complex exponential and sinus or carriers
+avec exponentielle et sinus ou transporteurs complexe
+
+00:21:15,000 --> 00:21:18,000
+we saw that the analysis is very similar although
+nous avons vu que l'analyse est très similaire bien que
+
+00:21:18,000 --> 00:21:23,000
+applications are slightly different and now what I'd like to turn to
+applications sont légèrement différentes et maintenant ce que je voudrais tourner vers
+
+00:21:23,000 --> 00:21:26,000
+is a different choice love
+C'est un amour de choix différent
+
+00:21:26,000 --> 00:21:30,000
+carrier signal and the carrier signal in this particular case
+signal porteur et le signal porteur, dans ce cas particulier,
+
+00:21:30,000 --> 00:21:33,000
+is a post rain rather than
+est un poste de pluie plutôt que
+
+00:21:33,000 --> 00:21:37,000
+a sinusoidal signal now
+un signal sinusoïdal maintenant
+
+00:21:37,000 --> 00:21:42,000
+the idea is the following
+l'idée est la suivante
+
+00:21:42,000 --> 00:21:45,000
+in general of course the modulator
+en général bien sûr le modulateur
+
+00:21:45,000 --> 00:21:49,000
+it consists all multiplying x50
+il consiste tout x50 multipliant
+
+00:21:49,000 --> 00:21:53,000
+by whatever the carrier signal is and
+par quel que soit le signal de porteuse et est
+
+00:21:53,000 --> 00:21:57,000
+previously we've talked about a carrier signal which is sinusoidal
+Auparavant, nous avons parlé d'un signal porteur qui est sinusoïdale
+
+00:21:57,000 --> 00:22:00,000
+the carrier signal that we want to consider now
+le signal porteur que nous voulons considérer maintenant
+
+00:22:00,000 --> 00:22:03,000
+is a carrier signal which in fact is
+est un signal de porteuse qui est en fait
+
+00:22:03,000 --> 00:22:07,000
+a pulse train and so in fact
+un train d'impulsions et donc, en fait,
+
+00:22:07,000 --> 00:22:11,000
+what we want to do is multiply the input signal
+ce que nous voulons faire est de multiplier le signal d'entrée
+
+00:22:11,000 --> 00:22:16,000
+by a Paul strain and in effect then
+par une souche Paul et en effet alors
+
+00:22:16,000 --> 00:22:19,000
+the modulated signal consists
+le signal modulé est constitué
+
+00:22:19,000 --> 00:22:24,000
+of the original signal simply with time slices pulled out a bit as i've
+du signal original tout simplement avec le temps tranches sorti un peu comme je l'ai
+
+00:22:24,000 --> 00:22:26,000
+indicated in the bottom Kurt
+indiqué dans le fond Kurt
+
+00:22:26,000 --> 00:22:29,000
+so what we have now
+donc ce que nous avons maintenant
+
+00:22:29,000 --> 00:22:32,000
+is a modulated signal
+est un signal modulé
+
+00:22:32,000 --> 00:22:36,000
+that is a chopped or sliced version
+qui est une version haché ou coupé en tranches
+
+00:22:36,000 --> 00:22:40,000
+love the original waveform and
+l'amour de la forme d'onde originale et
+
+00:22:40,000 --> 00:22:46,000
+think that is what's referred to as pulse amplitude modulation
+pense que c'est ce qui est appelé comme impulsion de modulation d'amplitude
+
+00:22:46,000 --> 00:22:50,000
+now it seems like it's kinda crazy idea any ideas
+maintenant il semble que c'est un peu fou idée des idées
+
+00:22:50,000 --> 00:22:54,000
+search opt-out slices away form and
+forme tranches recherche d'opt-out de suite et
+
+00:22:54,000 --> 00:22:57,000
+the hope that you can kinda put things back together again
+l'espoir que vous pouvez mettre les choses un peu à nouveau ensemble
+
+00:22:57,000 --> 00:23:02,000
+and the amazing thing about it is we'll see is that in fact
+et la chose étonnante à ce sujet, c'est que nous allons voir est que, en fait,
+
+00:23:02,000 --> 00:23:06,000
+under fairly broad general and applicability
+sous assez large générale et l'applicabilité
+
+00:23:06,000 --> 00:23:11,000
+conditions you really can put the way for back together again
+conditions que vous pouvez vraiment mettre la voie à nouveau ensemble
+
+00:23:11,000 --> 00:23:14,000
+if you just have these times places
+si vous avez juste ces lieux fois
+
+00:23:14,000 --> 00:23:18,000
+not only that but that basic notion
+non seulement cela, mais cette notion de base
+
+00:23:18,000 --> 00:23:21,000
+as we'll see is independent in fact
+comme nous le verrons est indépendant de fait
+
+00:23:21,000 --> 00:23:25,000
+up with the with the those time slices or effect the with can go to zero
+avec la avec les ces tranches de temps ou pour effet de peut aller de zéro
+
+00:23:25,000 --> 00:23:30,000
+and in fact we're going to make the with go to zero and really only dependent
+et en fait, nous allons faire l'aller avec à zéro et vraiment ne dépend
+
+00:23:30,000 --> 00:23:35,000
+on what the frequency love the polls trainers
+sur ce que l'amour de la fréquence des sondages formateurs
+
+00:23:35,000 --> 00:23:38,000
+so let's explore that in some detail
+si nous allons explorer que dans le détail
+
+00:23:38,000 --> 00:23:44,000
+and what we want to look at is the analysis but let me
+et ce que nous voulons regarder est l'analyse, mais permettez-moi de
+
+00:23:44,000 --> 00:23:48,000
+let me first just comment very briefly there
+permettez-moi d'abord faire un commentaire très brièvement il
+
+00:23:48,000 --> 00:23:52,000
+all the analysis we go through as has been true in the case a sinusoidal
+toutes les analyses que nous traversons comme cela a été vrai dans le cas d'une sinusoïdale
+
+00:23:52,000 --> 00:23:56,000
+modulation all the analysis that we go through
+modulation toutes les analyses que nous traversons
+
+00:23:56,000 --> 00:23:59,000
+holes just as well with
+trous tout aussi bien avec
+
+00:23:59,000 --> 00:24:03,000
+especially minor analytical modifications to
+d'analyse des modifications mineures à particulier
+
+00:24:03,000 --> 00:24:07,000
+discrete-time pulse amplitude modulation as it does to
+temps discret impulsion de modulation d'amplitude comme il le fait pour
+
+00:24:07,000 --> 00:24:10,000
+continuous-time pulse amplitude modulation
+en temps continu impulsion de modulation d'amplitude
+
+00:24:10,000 --> 00:24:13,000
+and so will really only go through this
+et ne sera donc vraiment que passer par cette
+
+00:24:13,000 --> 00:24:17,000
+in terms of tracking the way for inspector for the continuous-time
+en termes de suivi de la manière de l'inspecteur pour le temps continu
+
+00:24:17,000 --> 00:24:21,000
+case but bear in mind that the results are basically similar
+cas, mais gardez à l'esprit que les résultats sont fondamentalement similaires
+
+00:24:21,000 --> 00:24:27,000
+for discrete-time okay well
+pour temps discret et correct
+
+00:24:27,000 --> 00:24:30,000
+let's see how we get the basic result
+nous allons voir comment nous obtenons le résultat de base
+
+00:24:30,000 --> 00:24:33,000
+that we want to get
+que nous voulons
+
+00:24:33,000 --> 00:24:36,000
+what we have is a
+ce que nous avons est un
+
+00:24:36,000 --> 00:24:40,000
+modulating signal which is a pulse train basically a square wave
+signal qui est un train d'impulsions essentiellement une onde carrée de modulation
+
+00:24:40,000 --> 00:24:45,000
+and as we've seen in previous lectures the spectra
+et comme nous l'avons vu dans les cours précédents les spectres
+
+00:24:45,000 --> 00:24:50,000
+or Fourier transform associated with that is an impulse train
+ou transformée de Fourier associé à qui est un train d'impulsions
+
+00:24:50,000 --> 00:24:53,000
+and the envelope that impulse train
+et l'enveloppe train d'impulsions
+
+00:24:53,000 --> 00:24:57,000
+is over for over sin x over X function
+est sur plus de sin x sur la fonction X
+
+00:24:57,000 --> 00:25:02,000
+the four th transform is impulses and the spacing of the impulses
+les quatre e transforment est impulsions et l'espacement des impulsions
+
+00:25:02,000 --> 00:25:07,000
+is Associated with the fundamental frequency
+est associée à la fréquence fondamentale
+
+00:25:07,000 --> 00:25:12,000
+all the Paul strain and thats Omega Sappi so make it appears to pride
+tous la souche Paul et c'est Omega Sappi ainsi faites-lui semble fierté
+
+00:25:12,000 --> 00:25:13,000
+divided by the period
+divisé par la période
+
+00:25:13,000 --> 00:25:17,000
+the pulse train and at the
+le train d'impulsions et à l'
+
+00:25:17,000 --> 00:25:21,000
+amplitude and shape but this envelope is dictated
+amplitude et la forme, mais cette enveloppe est dictée
+
+00:25:21,000 --> 00:25:24,000
+by that parameter Delta
+par ce paramètre Delta
+
+00:25:24,000 --> 00:25:28,000
+which has to do with how wide the pulses are
+qui a à voir avec la largeur des impulsions sont
+
+00:25:28,000 --> 00:25:32,000
+okay so we have a time function
+Bon alors nous avons une fonction de temps
+
+00:25:32,000 --> 00:25:36,000
+it's multiplied by this post rain now we're talking continuous-time
+il est multiplié par ce poste pluie maintenant, nous parlons en temps continu
+
+00:25:36,000 --> 00:25:39,000
+so in the frequency domain
+ainsi dans le domaine fréquentiel,
+
+00:25:39,000 --> 00:25:44,000
+we have the Fourier transform the time function convolved with
+nous avons la transformée de Fourier de la fonction de convolution avec le temps
+
+00:25:44,000 --> 00:25:48,000
+this Fourier transform for the pulse train and let's see what that looks like
+transformée de Fourier pour ce train d'impulsions et nous allons voir ce qui ressemble à
+
+00:25:48,000 --> 00:25:51,000
+if we were to consider let's say
+si nous devions envisager disons
+
+00:25:51,000 --> 00:25:56,000
+a Fourier transform which I A kinda chosen is more or less a general one
+transformée de Fourier qui IA un peu choisi est plus ou moins un caractère général
+
+00:25:56,000 --> 00:26:00,000
+then in fact when we can follow this
+alors en fait, quand nous pouvons suivre cette
+
+00:26:00,000 --> 00:26:04,000
+with this simple strain what we end up with
+avec cette simple contrainte que nous nous retrouvons avec
+
+00:26:04,000 --> 00:26:08,000
+is a replication all
+est un tout de réplication
+
+00:26:08,000 --> 00:26:11,000
+this spectrum at
+ce spectre à
+
+00:26:11,000 --> 00:26:15,000
+the places in the frequency domain
+les endroits dans le domaine des fréquences
+
+00:26:15,000 --> 00:26:19,000
+where the individual impulses occurred
+où les impulsions individuelles sont survenues
+
+00:26:19,000 --> 00:26:23,000
+so we can see that this spectrum is replicated at each's
+afin que nous puissions voir que ce spectre est reproduit à chaque de
+
+00:26:23,000 --> 00:26:27,000
+these locations and as long as
+ces endroits et aussi longtemps que
+
+00:26:27,000 --> 00:26:30,000
+the frequency
+la fréquence
+
+00:26:30,000 --> 00:26:34,000
+above the post-training is large enough compared
+dessus de la post-formation est assez grand par rapport
+
+00:26:34,000 --> 00:26:38,000
+with a maximum frequency in the
+avec une fréquence maximale dans l'
+
+00:26:38,000 --> 00:26:44,000
+original single X if T so that there is no overlap between these triangles
+original unique X si T afin qu'il n'y ait pas de chevauchement entre ces triangles
+
+00:26:44,000 --> 00:26:48,000
+then what you can see in fact somewhat amazingly
+alors ce que vous pouvez voir en fait peu étonnamment
+
+00:26:48,000 --> 00:26:53,000
+is dead simply by low-pass filtering the result
+est mort tout simplement par filtrage passe-bas le résultat
+
+00:26:53,000 --> 00:26:57,000
+we can get back except for an amplitude factor
+nous pouvons revenir, sauf pour un facteur d'amplitude
+
+00:26:57,000 --> 00:27:00,000
+we can give get back to the original signal
+nous pouvons donner revenir au signal d'origine
+
+00:27:00,000 --> 00:27:04,000
+now it's amazing it really is amazing
+maintenant c'est incroyable, il est vraiment incroyable
+
+00:27:04,000 --> 00:27:07,000
+dead all that this depends on
+mort tout ce que cela dépend
+
+00:27:07,000 --> 00:27:11,000
+is the original signal being banned limited
+est le signal d'origine est interdit limitée
+
+00:27:11,000 --> 00:27:15,000
+and the frequency the post-training be high enough
+et la fréquence de la post-formation soit suffisamment élevée
+
+00:27:15,000 --> 00:27:19,000
+so that when you replicate the spectrum in the frequency domain
+de sorte que lorsque vous répliquez le spectre dans le domaine fréquentiel
+
+00:27:19,000 --> 00:27:23,000
+is no overlap between these individual replications and will
+pas de chevauchement entre ces répétitions individuelles et la volonté
+
+00:27:23,000 --> 00:27:26,000
+have a dress that a little more in a few minutes
+avoir une robe un peu plus que dans quelques minutes
+
+00:27:26,000 --> 00:27:29,000
+but let me first the ball point out that
+mais permettez-moi tout d'abord la balle à souligner que
+
+00:27:29,000 --> 00:27:33,000
+this has a whole variety a very important implications
+ce qui a toute une variété un des implications très importantes
+
+00:27:33,000 --> 00:27:36,000
+one is in the context of communications
+on est dans le contexte des communications
+
+00:27:36,000 --> 00:27:39,000
+it leads to another very important
+elle conduit à un autre très important
+
+00:27:39,000 --> 00:27:44,000
+multiplexing scheme for communications we talked last time about
+schéma de multiplexage pour communications nous avons parlé la dernière fois sur
+
+00:27:44,000 --> 00:27:48,000
+frequency division multiplexing where individual signals were put into
+multiplexage fréquentiel où les signaux individuels ont été mis en
+
+00:27:48,000 --> 00:27:51,000
+individual frequency slots
+fentes de fréquences individuelles
+
+00:27:51,000 --> 00:27:55,000
+by choosing different carrier frequencies for sinusoidal modulated
+en choisissant des fréquences porteuses différentes pour sinusoïdale modulée
+
+00:27:55,000 --> 00:27:56,000
+signal
+signal
+
+00:27:56,000 --> 00:28:00,000
+what this suggests is that what we can do
+Cela suggère que ce que nous pouvons faire
+
+00:28:00,000 --> 00:28:03,000
+is put the
+est de mettre le
+
+00:28:03,000 --> 00:28:07,000
+sons put different signals into
+fils mis signaux différents en
+
+00:28:07,000 --> 00:28:10,000
+non-overlapping time slots
+tranches de temps qui ne se chevauchent
+
+00:28:10,000 --> 00:28:14,000
+and in fact be able to recover the original signals back again
+et, en fait, être en mesure de récupérer les signaux originaux de retour
+
+00:28:14,000 --> 00:28:18,000
+so in particular suppose that
+donc en particulier supposer que
+
+00:28:18,000 --> 00:28:22,000
+I had a signal which I modulated with a pulse train
+J'ai eu un signal que je modulé avec un train d'impulsions
+
+00:28:22,000 --> 00:28:27,000
+and I i chose another signal modulated with another poll strain
+et je j'ai choisi un autre signal modulé par une autre souche de sondage
+
+00:28:27,000 --> 00:28:32,000
+where the time slot was different and I continue this process
+où l'intervalle de temps est différente et je continue ce processus
+
+00:28:32,000 --> 00:28:37,000
+and after the after i'd done this with some number of channels
+et après le après que j'avais fait cela avec un nombre de canaux
+
+00:28:37,000 --> 00:28:41,000
+simply and it all those together
+simplement et tous ceux ensemble
+
+00:28:41,000 --> 00:28:47,000
+as i indicate here then as long as I knew what time slots to associate with
+Comme je l'indique ici, alors tant que je savais ce que les fentes de temps à associer à
+
+00:28:47,000 --> 00:28:48,000
+what signal
+quel signal
+
+00:28:48,000 --> 00:28:51,000
+I could get the original a
+Je pouvais obtenir le un original
+
+00:28:51,000 --> 00:28:54,000
+modulated signals back again
+signaux modulés à nouveau
+
+00:28:54,000 --> 00:28:57,000
+and then as long as the frequency 0
+et ensuite, tant que la fréquence 0
+
+00:28:57,000 --> 00:29:01,000
+the impulse train was such that
+le train d'impulsions est telle que
+
+00:29:01,000 --> 00:29:04,000
+I was able to do this reconstruction
+J'ai pu faire cette reconstruction
+
+00:29:04,000 --> 00:29:07,000
+by simply low-pass filtering then
+par un simple filtrage passe-bas puis
+
+00:29:07,000 --> 00:29:12,000
+I would be able to be my Julie so it's a very different very important modulation
+Je pourrais être ma Julie, donc c'est un très différente modulation très important
+
+00:29:12,000 --> 00:29:14,000
+scheme call time division
+régime appel répartition dans le temps
+
+00:29:14,000 --> 00:29:19,000
+multiplexing in contrast to frequency division multiplexing as we talked about
+multiplexage contrairement à multiplexage fréquentiel que nous avons parlé
+
+00:29:19,000 --> 00:29:20,000
+last time
+dernière fois
+
+00:29:20,000 --> 00:29:25,000
+I made reference earlier the concept of Trance multiplexing and in fact
+J'ai fait référence plus tôt, le concept de Trance multiplexage et en fait
+
+00:29:25,000 --> 00:29:29,000
+what happens in many communication systems
+ce qui se produit dans de nombreux systèmes de communication
+
+00:29:29,000 --> 00:29:33,000
+is dead the signals are represented in fact
+est mort les signaux sont représentés en fait
+
+00:29:33,000 --> 00:29:37,000
+in discrete-time the analog continues time signals are represented in
+en temps discret analogique continue des signaux de temps sont représentés dans
+
+00:29:37,000 --> 00:29:38,000
+discrete-time
+temps discret
+
+00:29:38,000 --> 00:29:41,000
+and very often the conversion from
+et très souvent la conversion de
+
+00:29:41,000 --> 00:29:45,000
+frequency division multiplexing to time division multiplexing and back
+multiplexage par répartition en fréquence à multiplexage par répartition dans le temps et à l'arrière
+
+00:29:45,000 --> 00:29:50,000
+is done in fact in the discrete-time to me
+se fait en effet dans le temps discret pour moi
+
+00:29:50,000 --> 00:29:54,000
+okay so what we have then
+Bon alors ce que nous avons alors
+
+00:29:54,000 --> 00:29:57,000
+is the notion
+est la notion
+
+00:29:57,000 --> 00:30:01,000
+dead we can
+mort que nous pouvons
+
+00:30:01,000 --> 00:30:06,000
+multiply a time function
+multiplier une fonction de temps
+
+00:30:06,000 --> 00:30:10,000
+by a poll strain as i indicated here
+par une souche de sondage comme je le disais ici
+
+00:30:10,000 --> 00:30:15,000
+and from the output I can
+et de la sortie que je peux
+
+00:30:15,000 --> 00:30:19,000
+if the frequency this post rain is high enough in relation to this band with
+si la fréquence de ce poste pluie est assez élevé par rapport à ce groupe de
+
+00:30:19,000 --> 00:30:22,000
+from the output which consists of both
+à partir de la sortie, qui se compose à la fois de
+
+00:30:22,000 --> 00:30:26,000
+time slices from those times places
+tranches de temps de ces lieux fois
+
+00:30:26,000 --> 00:30:31,000
+I can recover the original signal
+Je peux récupérer le signal original
+
+00:30:31,000 --> 00:30:34,000
+stressing again the reason it relates
+soulignant à nouveau la raison pour laquelle il se rapporte
+
+00:30:34,000 --> 00:30:37,000
+to the spectra and
+aux spectres et
+
+00:30:37,000 --> 00:30:41,000
+the reason is dead the original spectra
+la raison en est mort le spectre d'origine
+
+00:30:41,000 --> 00:30:44,000
+is simply replicated at
+est tout simplement répliqué à
+
+00:30:44,000 --> 00:30:47,000
+multiples all the fundamental frequency
+multiples tout la fréquence fondamentale
+
+00:30:47,000 --> 00:30:51,000
+upholstery
+tapisserie
+
+00:30:51,000 --> 00:30:55,000
+now is a very important thing to observe here
+est maintenant une chose très importante à observer ici
+
+00:30:55,000 --> 00:31:00,000
+which is dead the ability to do the reconstruction
+qui est mort la capacité de faire la reconstruction
+
+00:31:00,000 --> 00:31:04,000
+is associated with the notion of whether we can extract that
+est associé à la notion de savoir si nous pouvons extraire que
+
+00:31:04,000 --> 00:31:07,000
+kinda central triangle light happened choose a triangular shape but
+lumière de triangle un peu central arrivé choisir une forme triangulaire mais
+
+00:31:07,000 --> 00:31:11,000
+obviously I could be talking about any shape as long as it's been limited
+évidemment, je pourrais parler n'importe quelle forme tant qu'il a été limitée
+
+00:31:11,000 --> 00:31:14,000
+the ability to extract at and notice
+la capacité d'extraire et à préavis
+
+00:31:14,000 --> 00:31:19,000
+that in this modulated output spectrum
+que dans cette partie du spectre de sortie modulé
+
+00:31:19,000 --> 00:31:23,000
+the ability to recover this is totally independent
+la capacité de récupérer ce qui est totalement indépendant
+
+00:31:23,000 --> 00:31:27,000
+all what the value of Delta is in other words
+tout ce que la valeur de Delta est en d'autres termes
+
+00:31:27,000 --> 00:31:31,000
+if we look back at
+si nous regardons en arrière
+
+00:31:31,000 --> 00:31:35,000
+the modulator then
+le modulateur alors
+
+00:31:35,000 --> 00:31:38,000
+in fact we can make Delta
+en fait, nous pouvons faire Delta
+
+00:31:38,000 --> 00:31:42,000
+the with these pulses arbitrarily small
+ces impulsions avec la arbitrairement petit
+
+00:31:42,000 --> 00:31:45,000
+and in theory that doesn't affect
+et que, en théorie, ne pas affecter
+
+00:31:45,000 --> 00:31:50,000
+our ability to do the reconstruction now in practical terms it might
+notre capacité à faire la reconstruction maintenant dans la pratique il pourrait
+
+00:31:50,000 --> 00:31:54,000
+looking back once more at the specter of the output
+regarder en arrière une fois de plus à le spectre de la sortie
+
+00:31:54,000 --> 00:31:58,000
+noticed that this sample to is proportional to Delta
+remarqué que cet échantillon est proportionnelle à Delta
+
+00:31:58,000 --> 00:32:02,000
+and what that suggests is that as we make
+et ce que cela suggère est que nous faisons
+
+00:32:02,000 --> 00:32:05,000
+Delta smaller and smaller which we
+Delta plus en plus petits qui nous
+
+00:32:05,000 --> 00:32:08,000
+might in fact want to do if you want to time division multiplexed last two
+pourrait en effet vouloir faire si vous voulez multiplexés temporellement deux derniers
+
+00:32:08,000 --> 00:32:10,000
+channels
+filières
+
+00:32:10,000 --> 00:32:13,000
+in principle in theory you could make it an infinite number channels just by
+en principe, en théorie, vous pourriez faire un infini canaux numériques seulement par
+
+00:32:13,000 --> 00:32:15,000
+making an infinitesimally small
+faire un infiniment petit
+
+00:32:15,000 --> 00:32:21,000
+the smaller it is in some sense the less energy there is and again
+le plus petit, il est en quelque sorte le moins d'énergie, il est et encore
+
+00:32:21,000 --> 00:32:24,000
+in practical terms this one of those things if you push down here pops up
+en termes pratiques ce une de ces choses si vous poussez vers le bas ici saute vers le haut
+
+00:32:24,000 --> 00:32:25,000
+there
+là
+
+00:32:25,000 --> 00:32:30,000
+namely you eventually run into issues such as noise problems
+à savoir que vous avez éventuellement des questions telles que les problèmes de bruit
+
+00:32:30,000 --> 00:32:33,000
+so more more typically what's done is
+donc plus plus généralement ce qui est fait est
+
+00:32:33,000 --> 00:32:38,000
+to in fact eliminate the scale factor a delta
+en fait à éliminer le facteur d'échelle d'un delta
+
+00:32:38,000 --> 00:32:42,000
+and the way that that's done is very simply
+et la façon dont cela est fait est tout simplement
+
+00:32:42,000 --> 00:32:46,000
+it's done by choosing
+il est fait en choisissant
+
+00:32:46,000 --> 00:32:50,000
+the with I love the pulses
+la avec J'aime les impulsions
+
+00:32:50,000 --> 00:32:54,000
+and the height %uh the pulses in such a way
+et la hauteur des impulsions uh%, de telle sorte
+
+00:32:54,000 --> 00:32:58,000
+dead the area is constant even as
+morts de la zone est constante alors même que
+
+00:32:58,000 --> 00:33:02,000
+we make Delta get arbitrarily small so
+nous faisons Delta obtenir arbitrairement petit pour
+
+00:33:02,000 --> 00:33:06,000
+and we can just modify our argument
+et nous ne pouvons modifier notre argumentation
+
+00:33:06,000 --> 00:33:11,000
+so that what we're referring to is a modulating post rain
+de sorte que ce que nous faisons référence à une modulation après la pluie
+
+00:33:11,000 --> 00:33:15,000
+which is a pulse train with positive with Delta
+qui est un train d'impulsions de positif avec Delta
+
+00:33:15,000 --> 00:33:20,000
+and height one over Delta in that case
+et la hauteur l'un sur Delta dans ce cas
+
+00:33:20,000 --> 00:33:23,000
+as Delta gets arbitrarily small
+comme Delta obtient arbitrairement petit
+
+00:33:23,000 --> 00:33:27,000
+then in fact what these rectangles become
+alors, en fait, ce que ces rectangles deviennent
+
+00:33:27,000 --> 00:33:31,000
+are impulses in which case what we're talking about
+sont des impulsions dans ce cas, ce que nous parlons
+
+00:33:31,000 --> 00:33:35,000
+is a carrier signal
+est un signal de porteuse
+
+00:33:35,000 --> 00:33:39,000
+which in fact is an impulse train
+qui est en fait un train d'impulsions
+
+00:33:39,000 --> 00:33:42,000
+and the resulting modulated signal
+et le signal modulé résultant
+
+00:33:42,000 --> 00:33:46,000
+is and imposed strain for which the amplitudes
+est et déformation imposée pour lesquels les amplitudes
+
+00:33:46,000 --> 00:33:50,000
+of the impulses are proportional to
+des impulsions sont proportionnelles à
+
+00:33:50,000 --> 00:33:54,000
+the original input waveform at
+la forme d'onde d'entrée d'origine à
+
+00:33:54,000 --> 00:33:59,000
+the times at which these impulses occur
+les moments où ces impulsions se produisent
+
+00:33:59,000 --> 00:34:03,000
+okay well let's look at the analysis a bat
+ok bien regardons l'analyse une batte
+
+00:34:03,000 --> 00:34:06,000
+and so now what we're talking about
+et maintenant que nous parlons
+
+00:34:06,000 --> 00:34:10,000
+is a spectrum
+est un spectre
+
+00:34:10,000 --> 00:34:15,000
+dead up
+mort jusqu'à
+
+00:34:15,000 --> 00:34:18,000
+consists all the result
+consiste tout le résultat
+
+00:34:18,000 --> 00:34:23,000
+love the spectrum we talked about before the sin x over X envelope except
+aimer le spectre, nous avons parlé avant le péché x sur X enveloppe sauf
+
+00:34:23,000 --> 00:34:27,000
+that now is Delta goes to zero that becomes
+c'est maintenant Delta va à zéro qui devient
+
+00:34:27,000 --> 00:34:31,000
+flat in other words the modulating signal is an impulse train
+plat en d'autres termes le signal de modulation est un train d'impulsions
+
+00:34:31,000 --> 00:34:35,000
+and so as we look at the spectrum
+et ainsi que nous regardons le spectre
+
+00:34:35,000 --> 00:34:38,000
+the modulating signal that is then
+le signal de modulation qui est ensuite
+
+00:34:38,000 --> 00:34:41,000
+and impose train in the frequency domain the high
+et imposer le train dans le domaine de fréquence haute
+
+00:34:41,000 --> 00:34:45,000
+is proportional to the frequency
+est proportionnelle à la fréquence
+
+00:34:45,000 --> 00:34:49,000
+up the impulse train and Omega the best now denotes
+le train d'impulsions et Omega le meilleur désigne maintenant
+
+00:34:49,000 --> 00:34:53,000
+the frequency the impulse train and
+la fréquence du train d'impulsions et
+
+00:34:53,000 --> 00:34:57,000
+the resulting output the modulator
+la sortie résultante du modulateur
+
+00:34:57,000 --> 00:35:00,000
+has a spectrum which is
+a un spectre qui est
+
+00:35:00,000 --> 00:35:05,000
+this original spectrum again replicated around
+ce spectre initial de nouveau répliqué autour
+
+00:35:05,000 --> 00:35:09,000
+each love these impulses in other words replicated in multiples
+s'aiment ces impulsions en d'autres termes répliquées en multiples
+
+00:35:09,000 --> 00:35:13,000
+or the sampling frequency now
+ou la fréquence d'échantillonnage maintenant
+
+00:35:13,000 --> 00:35:18,000
+this is very much identical to the more general case we have
+ce qui est très bien identique au cas plus général, nous avons
+
+00:35:18,000 --> 00:35:21,000
+this replication the spectra
+Cette réplication des spectres
+
+00:35:21,000 --> 00:35:25,000
+and as long as
+et à condition que
+
+00:35:25,000 --> 00:35:29,000
+this sample the the frequency of the impulse train is
+cet échantillon, la fréquence du train d'impulsions est
+
+00:35:29,000 --> 00:35:33,000
+large enough compared with the band with the signal
+suffisamment grande par rapport à la bande avec le signal
+
+00:35:33,000 --> 00:35:36,000
+so that these triangles don't overlap
+de sorte que ces triangles ne se chevauchent pas
+
+00:35:36,000 --> 00:35:40,000
+I can extract this
+Je peux extraire ce
+
+00:35:40,000 --> 00:35:43,000
+portion of the spectrum by low-pass filtering
+partie du spectre par un filtrage passe-bas
+
+00:35:43,000 --> 00:35:47,000
+which in fact with then give us back
+qui, en fait, avec ensuite nous rendre
+
+00:35:47,000 --> 00:35:50,000
+the original signal now
+le signal original maintenant
+
+00:35:50,000 --> 00:35:54,000
+if instead this frequency Omega sed am
+si, au lieu de cette fréquence Omega sed h
+
+00:35:54,000 --> 00:35:58,000
+is greater than Omega best minus Omega sed am
+est supérieure à Omega meilleur moins Omega sed h
+
+00:35:58,000 --> 00:36:02,000
+we would have a spectrum that looked
+nous aurions un spectre qui ressemblait
+
+00:36:02,000 --> 00:36:05,000
+something more like this and what's happened
+quelque chose de plus de ce genre et ce qui s'est passé
+
+00:36:05,000 --> 00:36:08,000
+in this case is that because
+dans ce cas, est-ce parce
+
+00:36:08,000 --> 00:36:12,000
+we have an overlap here we've destroyed the ability
+nous avons ici un recoupement nous avons détruit la capacité
+
+00:36:12,000 --> 00:36:16,000
+to recover the original signal from the impulse train
+pour récupérer le signal original de la gare impulsion
+
+00:36:16,000 --> 00:36:20,000
+and that would be true also in general in a more general case
+et ce serait également vrai en général dans un cas plus général
+
+00:36:20,000 --> 00:36:23,000
+love pulse amplitude modulation with
+amour impulsion modulation d'amplitude
+
+00:36:23,000 --> 00:36:26,000
+pulses that up 90 with
+impulsions jusqu'à 90 avec
+
+00:36:26,000 --> 00:36:31,000
+this effect by the way is one that will be
+cet effet par la voie est celle qui sera
+
+00:36:31,000 --> 00:36:35,000
+exploring in considerably more detail in the next lecture and
+explorer dans beaucoup plus de détails dans la prochaine session et
+
+00:36:35,000 --> 00:36:39,000
+it's a phenomenon or distortion referred to as a leasing which
+c'est un phénomène ou distorsion appelé leasing qui
+
+00:36:39,000 --> 00:36:42,000
+in fact is important and interesting topic but
+en fait, est un sujet important et intéressant, mais
+
+00:36:42,000 --> 00:36:46,000
+going back to the case in which we've chosen the frequency of the upholstery
+revenir à l'affaire dans laquelle nous avons choisi la fréquence de l'ameublement
+
+00:36:46,000 --> 00:36:49,000
+in high enough
+suffisamment grande
+
+00:36:49,000 --> 00:36:53,000
+then we would recover the original signal
+alors nous récupérer le signal original
+
+00:36:53,000 --> 00:36:56,000
+by processing it through
+en le traitant à travers
+
+00:36:56,000 --> 00:37:00,000
+a low-pass filter
+un filtre passe-bas
+
+00:37:00,000 --> 00:37:03,000
+and in in that case
+et dans ce cas,
+
+00:37:03,000 --> 00:37:08,000
+what this says is dead if we have a signal
+ce que cela dit est mort si nous avons un signal
+
+00:37:08,000 --> 00:37:12,000
+and we modulated with an impulse train
+et nous avons modulé avec un train d'impulsions
+
+00:37:12,000 --> 00:37:17,000
+if we then process that impulse train through an ideal ok pass filter
+si nous processus alors que le train d'impulsion à travers un filtre idéal de passe ok
+
+00:37:17,000 --> 00:37:22,000
+given the right conditions on Sat on the frequency the impulse train and the band
+dans de bonnes conditions sur Sam sur la fréquence du train d'impulsions et la bande
+
+00:37:22,000 --> 00:37:23,000
+with the signal
+avec le signal
+
+00:37:23,000 --> 00:37:27,000
+we can recover the original signal back again
+nous pouvons récupérer le signal original à nouveau
+
+00:37:27,000 --> 00:37:31,000
+now let me stress just going back to
+maintenant, laissez-moi d'insister pour en revenir à
+
+00:37:31,000 --> 00:37:35,000
+the picture in which we have done this modulation
+l'image dans laquelle nous avons fait cette modulation
+
+00:37:35,000 --> 00:37:38,000
+that this process where the modulation
+que ce processus où la modulation
+
+00:37:38,000 --> 00:37:42,000
+where the carrier signal involves an impulse train is
+où le signal de porteuse comporte un train d'impulsions est
+
+00:37:42,000 --> 00:37:46,000
+often referred to as sampling and
+On appelle ce échantillonnage et
+
+00:37:46,000 --> 00:37:49,000
+what that mean specifically is dead
+ce que cela signifie est spécifiquement morts
+
+00:37:49,000 --> 00:37:55,000
+if we notice this resulting in polls train
+si nous constatons qu'il en résulte dans les sondages de train
+
+00:37:55,000 --> 00:37:58,000
+is in fact a sequence
+est en fait une séquence
+
+00:37:58,000 --> 00:38:01,000
+all samples all
+tous les échantillons tout
+
+00:38:01,000 --> 00:38:05,000
+the original continuous-time signal in other words
+le signal original à temps continu en d'autres termes
+
+00:38:05,000 --> 00:38:10,000
+what we've done in effect is taken instantaneous samples at this way form
+ce que nous avons fait en effet pris des échantillons instantanés à cette forme de façon
+
+00:38:10,000 --> 00:38:13,000
+and the implication is that if we do that
+et l'implication est que si nous le faisons
+
+00:38:13,000 --> 00:38:17,000
+at a rapid and afraid in relation
+à une relation rapide et peur dans
+
+00:38:17,000 --> 00:38:21,000
+to the band with the signal then
+à la bande avec le signal alors
+
+00:38:21,000 --> 00:38:25,000
+we can in fact recover the original signal back again
+nous pouvons en effet récupérer le signal original à nouveau
+
+00:38:25,000 --> 00:38:28,000
+and finally to remind you
+et enfin de vous rappeler
+
+00:38:28,000 --> 00:38:31,000
+I'll the argument once more
+Je vais l'argument une fois de plus
+
+00:38:31,000 --> 00:38:34,000
+we have an original signal
+nous avons un signal original
+
+00:38:34,000 --> 00:38:40,000
+and we have its spectrum when we've sampled it and this is now the sampled
+et nous avons le spectre lorsque nous avons goûté et c'est maintenant la échantillonné
+
+00:38:40,000 --> 00:38:44,000
+signal it's an impulse train whose instantaneous values
+signaler que c'est un train d'impulsions dont les valeurs instantanées
+
+00:38:44,000 --> 00:38:49,000
+are samples at the original waveform the spectrum a bad
+sont des échantillons de la forme d'onde d'origine le spectre d'une mauvaise
+
+00:38:49,000 --> 00:38:53,000
+is the original one replicated
+l'original est reproduit
+
+00:38:53,000 --> 00:38:57,000
+and when that is processed through a
+et quand ce sont traitées par un
+
+00:38:57,000 --> 00:39:01,000
+low-pass filter to extract this part of the spectrum
+filtre passe-bas pour extraire cette partie du spectre
+
+00:39:01,000 --> 00:39:05,000
+then after the low-pass filter we can
+puis après le filtre passe-bas nous pouvons
+
+00:39:05,000 --> 00:39:11,000
+recover the original signal back again
+récupérer le signal original à nouveau
+
+00:39:11,000 --> 00:39:14,000
+okay well in fact me although
+bon bien fait moi même
+
+00:39:14,000 --> 00:39:17,000
+a if you kinda follow through
+si vous suivez un peu par
+
+00:39:17,000 --> 00:39:21,000
+the specter and the waveforms this all seems fairly
+le spectre et les formes d'onde tout cela semble assez
+
+00:39:21,000 --> 00:39:24,000
+straightforward and perhaps
+simple et peut-être
+
+00:39:24,000 --> 00:39:28,000
+or perhaps not obvious
+ou peut-être pas évident
+
+00:39:28,000 --> 00:39:32,000
+it's really worth reflecting on how amazing
+c'est vraiment la peine de réfléchir sur la façon étonnante
+
+00:39:32,000 --> 00:39:36,000
+the result really is what it says we begin this discussion
+le résultat est vraiment ce qu'il dit, nous commençons cette discussion
+
+00:39:36,000 --> 00:39:41,000
+by talking about modulation and in fact modulation and sinusoidal modulation is
+en parlant de modulation et en fait la modulation et la modulation sinusoïdale est
+
+00:39:41,000 --> 00:39:44,000
+important in its own right
+important dans son propre droit
+
+00:39:44,000 --> 00:39:47,000
+we ended the discussion by talking
+nous avons terminé la discussion en parlant
+
+00:39:47,000 --> 00:39:51,000
+about first pulse amplitude modulation
+sur la première modulation d'amplitude d'impulsion
+
+00:39:51,000 --> 00:39:57,000
+and then showing how under the right set of conditions
+et puis en montrant comment, dans le bon ensemble de conditions
+
+00:39:57,000 --> 00:40:01,000
+you can in fact take away form and
+vous pouvez en effet emporter forme et
+
+00:40:01,000 --> 00:40:05,000
+sample it with a set of instantaneous samples
+échantillonner avec un ensemble d'échantillons instantanés
+
+00:40:05,000 --> 00:40:08,000
+and that said instantaneous samples in fact
+et que lesdits échantillons instantanés en fait
+
+00:40:08,000 --> 00:40:14,000
+are sufficient totally represent and reconstruct the signal
+sont suffisamment représentent totalement et reconstruire le signal
+
+00:40:14,000 --> 00:40:18,000
+what in fact the formal statement that is
+ce qui en fait la déclaration officielle qui est
+
+00:40:18,000 --> 00:40:22,000
+is referred to as the sampling theorem
+que l'on appelle le théorème d'échantillonnage
+
+00:40:22,000 --> 00:40:25,000
+very powerful their own that says
+très puissant qui leur dit
+
+00:40:25,000 --> 00:40:30,000
+if were given equally spaced samples over time function
+si ont reçu des échantillons régulièrement espacés sur la fonction de temps
+
+00:40:30,000 --> 00:40:35,000
+and if that time function is band limited
+et si cette fonction est à bande limitée
+
+00:40:35,000 --> 00:40:39,000
+and if the band with
+et si la bande de
+
+00:40:39,000 --> 00:40:44,000
+or is or if this if this sampling frequency is
+ou si cela est ou si cette fréquence d'échantillonnage est
+
+00:40:44,000 --> 00:40:48,000
+chosen in the right way in relation
+choisi dans le droit chemin en ce qui concerne
+
+00:40:48,000 --> 00:40:51,000
+to the
+à l'
+
+00:40:51,000 --> 00:40:55,000
+band with then in fact
+bande avec alors, en fait
+
+00:40:55,000 --> 00:40:58,000
+the original time function is
+la fonction d'origine de temps est
+
+00:40:58,000 --> 00:41:05,000
+uniquely recoverable with a low-pass filter
+unique récupérable avec un filtre passe-bas
+
+00:41:05,000 --> 00:41:08,000
+now the sampling theorem is kinda
+maintenant le théorème d'échantillonnage est un peu
+
+00:41:08,000 --> 00:41:12,000
+I would say a watershed a cornerstone
+Je dirais un bassin versant une pierre angulaire
+
+00:41:12,000 --> 00:41:15,000
+love a lot of the discussion we've been having
+l'amour d'une grande partie de la discussion que nous avons eu
+
+00:41:15,000 --> 00:41:20,000
+for a whole variety of reasons if first of all crops out almost as kind as
+pour toute une variété de raisons si la première de toutes les cultures presque aussi gentil que
+
+00:41:20,000 --> 00:41:24,000
+straightforward obvious statement but more importantly
+déclaration évidente simple mais le plus important
+
+00:41:24,000 --> 00:41:28,000
+what it says is dead
+ce qu'il dit est mort
+
+00:41:28,000 --> 00:41:33,000
+if I have a continuous-time signal which satisfies the right-center conditions
+si j'ai un signal en temps continu qui remplit les conditions centre-droit
+
+00:41:33,000 --> 00:41:36,000
+I can represent it by what it does
+Je peux représenter par ce qu'il fait
+
+00:41:36,000 --> 00:41:41,000
+at sampling instance or acquittal only at discrete
+au cas de l'échantillonnage ou d'acquittement qu'à discret
+
+00:41:41,000 --> 00:41:44,000
+is this a time
+est-ce un temps
+
+00:41:44,000 --> 00:41:47,000
+now what that leads to
+maintenant ce qui conduit à
+
+00:41:47,000 --> 00:41:51,000
+is a whole host of things wanna which
+est toute une foule de choses qui veulent
+
+00:41:51,000 --> 00:41:55,000
+is the statement that says if we have a continuous-time signal
+est la déclaration qui dit que si nous avons un signal en temps continu
+
+00:41:55,000 --> 00:41:58,000
+I could in fact represented
+Je pourrais en effet représenté
+
+00:41:58,000 --> 00:42:02,000
+as a discrete-time signal and I could even think
+comme un signal à temps discret et je ne pouvais même pas penser
+
+00:42:02,000 --> 00:42:06,000
+love processing a continuous-time signal
+aimer traitement d'un signal en temps continu
+
+00:42:06,000 --> 00:42:09,000
+using discrete time concepts
+en utilisant des concepts de temps discrets
+
+00:42:09,000 --> 00:42:12,000
+and when I'm all done converting back through
+et quand je suis tout fait la conversion à travers
+
+00:42:12,000 --> 00:42:15,000
+the power the sampling theorem converting back to a continuous-time
+la puissance du théorème d'échantillonnage de conversion vers un temps continu
+
+00:42:15,000 --> 00:42:16,000
+sick
+malade
+
+00:42:16,000 --> 00:42:20,000
+so the sampling theorem provides this
+de sorte que le théorème d'échantillonnage fournit cette
+
+00:42:20,000 --> 00:42:23,000
+with a very major important bridge between
+avec un très grand pont important entre
+
+00:42:23,000 --> 00:42:28,000
+continuous-time and discrete-time implementations and ideas
+en temps continu et à temps discret implémentations et des idées
+
+00:42:28,000 --> 00:42:34,000
+in the next several lectures we will be exploring so this in considerable detail
+au cours des prochaines conférences, nous allons explorer si cela en détail considérable
+
+00:42:34,000 --> 00:42:37,000
+first the focus in more next time
+d'abord l'accent en plus la prochaine fois
+
+00:42:37,000 --> 00:42:42,000
+on some with the specific issues and distortions associated with sampling and
+sur certaines des questions et des distorsions spécifiques associés à l'échantillonnage et
+
+00:42:42,000 --> 00:42:44,000
+following that
+suivant que
+
+00:42:44,000 --> 00:42:48,000
+a discussion are what is referred to as
+une discussion sont ce que l'on appelle
+
+00:42:48,000 --> 00:42:52,000
+discrete-time processing of continuous-time signals
+traitement en temps discret des signaux en temps continu
+
+00:42:52,000 --> 00:42:52,000
+thank you
+merci
+

@@ -1,0 +1,772 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+以下内容是根据Creative Commons授权提供
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+您的支持将有助于麻省理工学院开放式课程继续报价
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+免费优质教育资源
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+进行捐赠或查看附加材料由数百人资讯
+
+00:00:14,000 --> 00:00:15,000
+courses
+课程
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+参观麻省理工学院开放式课程在0 CW
+
+00:00:18,000 --> 00:00:20,000
+that MIT ided you
+麻省理工学院被提供的你
+
+00:00:20,000 --> 00:00:27,000
+home
+家
+
+00:00:35,000 --> 00:00:40,000
+in
+
+
+00:00:40,000 --> 00:00:45,000
+the norm
+规范
+
+00:00:45,000 --> 00:00:52,000
+are
+有
+
+00:00:57,000 --> 00:00:59,000
+the last lecture we discuss the number
+我们讨论的号码的最后演讲
+
+00:00:59,000 --> 00:01:03,000
+general properties for systems which
+对系统的一般特性的
+
+00:01:03,000 --> 00:01:07,000
+as you recall applied both to continuous-time
+因为你还记得这两个应用到连续时间
+
+00:01:07,000 --> 00:01:10,000
+and to discrete-time systems
+和离散时间系统
+
+00:01:10,000 --> 00:01:14,000
+and these properties were the properties
+而这些特性是属性
+
+00:01:14,000 --> 00:01:18,000
+associated with the system having memory the issue
+该系统具有内存问题相关
+
+00:01:18,000 --> 00:01:21,000
+love whether a system is or isn't convertible
+爱一个系统是否是或不是可兑换
+
+00:01:21,000 --> 00:01:25,000
+we talked about causality instability
+我们谈到因果关系的不稳定性
+
+00:01:25,000 --> 00:01:28,000
+and finally we talked about when the arity
+最后我们谈到当元数
+
+00:01:28,000 --> 00:01:32,000
+and time-invariant in today's lecture
+时不变在今天的讲座
+
+00:01:32,000 --> 00:01:36,000
+what I'd like to do is focused specifically on when the arity in time
+我想要做的是专门针对当时间参数数量
+
+00:01:36,000 --> 00:01:37,000
+invariance
+不变性
+
+00:01:37,000 --> 00:01:41,000
+and show how for systems that have those properties
+并说明如何为具有这些属性系统
+
+00:01:41,000 --> 00:01:45,000
+we can exploit them to generate
+我们可以利用它们来生成
+
+00:01:45,000 --> 00:01:48,000
+a general representation well let me begin by
+一般的表示也让我首先
+
+00:01:48,000 --> 00:01:52,000
+just reviewing the two properties again quickly
+刚刚重新检讨两个属性迅速
+
+00:01:52,000 --> 00:01:55,000
+time invariance as you recall
+你记得时间不变性
+
+00:01:55,000 --> 00:01:59,000
+is a property that apply both to continuous-time and discrete-time
+是同时适用于连续时间和离散时间的属性
+
+00:01:59,000 --> 00:02:00,000
+systems
+系统
+
+00:02:00,000 --> 00:02:05,000
+and in essence stated bad for any given
+并且在本质上说坏对于任何给定
+
+00:02:05,000 --> 00:02:09,000
+input and output relationship if we
+输入和输出的关系，如果我们
+
+00:02:09,000 --> 00:02:14,000
+simply shift the input than the output shift by the same amount
+简单地以相同的量移位的输入比输出移
+
+00:02:14,000 --> 00:02:19,000
+and of course exactly the same kind of statement
+当然完全相同的语句种类
+
+00:02:19,000 --> 00:02:24,000
+applied in discrete-time so it i mean variance was a property
+在离散时间应用，因此我的意思是方差的性质
+
+00:02:24,000 --> 00:02:28,000
+it said that the system didn't care about what the time origin
+它说，该系统并没有在意时间原点是什么
+
+00:02:28,000 --> 00:02:32,000
+the signal is when the arity
+该信号是元数时，
+
+00:02:32,000 --> 00:02:36,000
+was a property related to the fact that if we have
+是相关的事实的属性，如果我们有
+
+00:02:36,000 --> 00:02:40,000
+et cetera outputs associated with a given set of inputs
+与一组给定的输入相关联等等输出
+
+00:02:40,000 --> 00:02:44,000
+as i've indicated here with the inputs
+因为我已经在这里表示与投入
+
+00:02:44,000 --> 00:02:48,000
+as feasted K and the output decisive K
+作为尽情K和输出决定性Ķ
+
+00:02:48,000 --> 00:02:52,000
+then the property of when the arity
+那么元数时的财产
+
+00:02:52,000 --> 00:02:55,000
+States that if we have an input
+国家，如果我们有一个输入
+
+00:02:55,000 --> 00:02:59,000
+which is a linear combination up those inputs
+这是一个线性组合起来这些输入
+
+00:02:59,000 --> 00:03:02,000
+then the output is
+然后输出
+
+00:03:02,000 --> 00:03:05,000
+a linear combination of the Associated outputs
+的相关输出的线性组合
+
+00:03:05,000 --> 00:03:09,000
+so that linear combination of inputs
+投入使线性组合
+
+00:03:09,000 --> 00:03:15,000
+generates for linear system at the end output which is
+在端输出，是生成用于线性系统
+
+00:03:15,000 --> 00:03:20,000
+a linear combination up the Associated outputs now
+线性组合起来美联社现在输出
+
+00:03:20,000 --> 00:03:24,000
+the question is how can we exploit the properties have many arity
+问题是我们如何能够利用属性有很多元数
+
+00:03:24,000 --> 00:03:29,000
+and time-invariant and there's a basic strategy
+和时间不变，并有一个基本策略
+
+00:03:29,000 --> 00:03:32,000
+which will flow more or less through mostly this court's
+这将流动或多或少大多通过这个法庭的
+
+00:03:32,000 --> 00:03:36,000
+the strategy is to
+该策略是
+
+00:03:36,000 --> 00:03:41,000
+attempt to decompose the signal you the continuous-time and discrete-time
+尝试将信号分解你的连续时间和离散时间
+
+00:03:41,000 --> 00:03:44,000
+into it said a basic signals
+把它说一个基本的信号
+
+00:03:44,000 --> 00:03:48,000
+and I've indicated that
+我已经表明，
+
+00:03:48,000 --> 00:03:52,000
+here and the question then
+这里的问题就
+
+00:03:52,000 --> 00:03:56,000
+is what basic signal should we pick well
+什么是基本的信号，我们应该挑好
+
+00:03:56,000 --> 00:04:00,000
+the answer kinda is we should pick said a basic signals
+答案还挺就是我们应该选择说一个基本的信号
+
+00:04:00,000 --> 00:04:04,000
+they provide a certain degree have analytical convenience
+它们提供了一定程度的具有分析的方便
+
+00:04:04,000 --> 00:04:07,000
+so we choose instead of inputs for the decomposition
+所以我们选择，而不是投入的分解
+
+00:04:07,000 --> 00:04:10,000
+bad provide outputs
+坏的产出提供
+
+00:04:10,000 --> 00:04:14,000
+that we can easily generate now and we'll see
+我们可以很容易地生成现在，我们将看到
+
+00:04:14,000 --> 00:04:18,000
+when we do this there are to
+当我们这样做有来
+
+00:04:18,000 --> 00:04:22,000
+classes love inputs that are particularly suited
+类爱输入，是特别适合
+
+00:04:22,000 --> 00:04:26,000
+to that strategy one class is
+该战略一类是
+
+00:04:26,000 --> 00:04:31,000
+the set love the late impulses namely
+集爱迟到的冲动，即
+
+00:04:31,000 --> 00:04:34,000
+decomposing a signal into a linear combination if the
+分解一个信号成线性组合，如果
+
+00:04:34,000 --> 00:04:38,000
+is and as we'll see that leads to a representation
+是和我们将看到导致的代表性
+
+00:04:38,000 --> 00:04:42,000
+for linear time-invariant systems which is referred to
+对于其被称为线性时不变系统
+
+00:04:42,000 --> 00:04:46,000
+as convolution a second
+卷积第二
+
+00:04:46,000 --> 00:04:51,000
+is a decomposition of inputs into complex exponentials
+是一个分解的投入复指数
+
+00:04:51,000 --> 00:04:55,000
+a linear combination of complex exponentials
+复指数的线性组合
+
+00:04:55,000 --> 00:04:58,000
+and that leads to a representation
+现象，导致一个表示
+
+00:04:58,000 --> 00:05:03,000
+love signals and systems through what will refer to as
+通过什么将称之为爱情信号与系统
+
+00:05:03,000 --> 00:05:06,000
+for your analysis now
+现在您分析
+
+00:05:06,000 --> 00:05:10,000
+four-day analysis will be a topic for
+4天的分析将是一个主题
+
+00:05:10,000 --> 00:05:13,000
+a setup later lectures but I'd like to begin with
+一个安装后的演讲，但我想首先
+
+00:05:13,000 --> 00:05:18,000
+is the representation in terms of impulses and the associated description
+是冲动方面的代表及相关说明
+
+00:05:18,000 --> 00:05:21,000
+linear time-invariant systems using convolution
+使用卷积线性时不变系统
+
+00:05:21,000 --> 00:05:24,000
+so let's begin where
+所以让我们开始的地方
+
+00:05:24,000 --> 00:05:28,000
+a discussion are discrete-time signals
+讨论是离散时间信号
+
+00:05:28,000 --> 00:05:32,000
+and in particular the issue of how discrete-time signals
+特别是离散时间信号是如何的问题
+
+00:05:32,000 --> 00:05:35,000
+can be decomposed as a linear combination
+可以分解为一个线性组合
+
+00:05:35,000 --> 00:05:39,000
+love the lady impulses
+爱小姐冲动
+
+00:05:39,000 --> 00:05:43,000
+well in fact it's relatively straightforward
+以及实际上它是相对简单的
+
+00:05:43,000 --> 00:05:47,000
+what I've shown here is a general
+我在这里显示的是一般的
+
+00:05:47,000 --> 00:05:50,000
+sequence with values which i've indicated
+序列我已经指示值
+
+00:05:50,000 --> 00:05:54,000
+at the top and more or less
+在顶部和更多或更少的
+
+00:05:54,000 --> 00:05:58,000
+as we did when we talked about representing
+与我们一样，当我们谈到较
+
+00:05:58,000 --> 00:06:01,000
+a unit step in terms of impulses
+在脉冲条件的单位步
+
+00:06:01,000 --> 00:06:05,000
+we can think of this general sequence as a sequence
+我们可以认为这种一般顺序为序
+
+00:06:05,000 --> 00:06:08,000
+I'll impulses delayed
+我会冲动延迟
+
+00:06:08,000 --> 00:06:11,000
+namely occurring at the appropriate
+即在适当的发生
+
+00:06:11,000 --> 00:06:16,000
+prime instant and and with the appropriate ample to
+素瞬间，并用适当的充足到
+
+00:06:16,000 --> 00:06:20,000
+so we can think love this general sequence
+所以我们可以认为爱这个一般顺序
+
+00:06:20,000 --> 00:06:24,000
+as and im polls occurring at an equal 0
+为和IM民调发生在一个平等0
+
+00:06:24,000 --> 00:06:27,000
+and and with the high dive exit 0
+并且，与高台跳水退出0
+
+00:06:27,000 --> 00:06:31,000
+plus and im polls all quite active one
+再加上和IM民调都比较活跃的地区之一
+
+00:06:31,000 --> 00:06:35,000
+occurring at time n equals 1 and so that's active one time
+在时间n发生等于1，所以这是活跃的一个时间
+
+00:06:35,000 --> 00:06:40,000
+Delta than -1 and in polls at -1
+达比-1，在投票调查中在-1
+
+00:06:40,000 --> 00:06:43,000
+with an amplitude love exit -1
+与振幅爱射-1
+
+00:06:43,000 --> 00:06:48,000
+et cetera so if we continue
+等等，所以如果我们继续
+
+00:06:48,000 --> 00:06:52,000
+to generate a said Oh waited the late unit samples like that
+生成一个说哦，等待后期单元样品一样，
+
+00:06:52,000 --> 00:06:55,000
+and if we had all these together
+如果我们把所有这些结合在一起
+
+00:06:55,000 --> 00:07:00,000
+then that will generate the total sequence
+然后，将产生的总序列
+
+00:07:00,000 --> 00:07:03,000
+algebraically then what that corresponds to
+代数那么对应于
+
+00:07:03,000 --> 00:07:07,000
+is representing the sequence as
+是代表序列
+
+00:07:07,000 --> 00:07:11,000
+some love individual turns over as i've indicated here
+有些爱个别翻转，因为我已经在这里表示
+
+00:07:11,000 --> 00:07:14,000
+or in terms over general thumb
+或计算，较一般的拇指
+
+00:07:14,000 --> 00:07:18,000
+the song %uh exit K felt the then minus K
+这首歌％呃K出口感受到当时零下Ķ
+
+00:07:18,000 --> 00:07:23,000
+so that's our strategy the strategy is to decompose
+所以这是我们的战略策略是分解
+
+00:07:23,000 --> 00:07:26,000
+an arbitrary sequence into a linear combination
+任意序列转换的线性组合
+
+00:07:26,000 --> 00:07:30,000
+or waited too late impulses and here
+或等待为时已晚的冲动，在这里
+
+00:07:30,000 --> 00:07:34,000
+again is the representation which we just
+再次是表示我们刚刚
+
+00:07:34,000 --> 00:07:37,000
+finish generating
+完成发电
+
+00:07:37,000 --> 00:07:41,000
+now why is this representation useful
+现在为什么是这种表示有用
+
+00:07:41,000 --> 00:07:46,000
+it's useful because we now have a decomposition at the sequence
+因为我们现在有一个分解的顺序是非常有用
+
+00:07:46,000 --> 00:07:49,000
+as a linear combination all basic
+作为一个线性组合的所有基本
+
+00:07:49,000 --> 00:07:53,000
+sequences namely that the late impulses
+序列，即已故的冲动
+
+00:07:53,000 --> 00:07:58,000
+and if we are talking about a linear system
+如果我们是在谈论一个线性系统
+
+00:07:58,000 --> 00:08:04,000
+the response to that linear combination is a linear combination of the responses
+响应该线性组合的响应的线性组合
+
+00:08:04,000 --> 00:08:08,000
+so if we denote the response
+因此，如果我们表示响应
+
+00:08:08,000 --> 00:08:12,000
+to with the late in paul's as H+ the cave and
+与已故的保罗的以H +的洞穴和
+
+00:08:12,000 --> 00:08:16,000
+then the response to
+然后将反应
+
+00:08:16,000 --> 00:08:20,000
+this general input is what i've indicated here
+这个一般的输入是什么，我在这里表示
+
+00:08:20,000 --> 00:08:24,000
+where why event of course is the output
+在那里，为什么，当然事件是输出
+
+00:08:24,000 --> 00:08:27,000
+due to the general in protective and
+由于在保护性的一般和
+
+00:08:27,000 --> 00:08:31,000
+H+ the cave and is the output do
+H +的洞穴，是输出做
+
+00:08:31,000 --> 00:08:35,000
+to the late in polls and these are simply
+到后期在投票调查中，这些都是简单的
+
+00:08:35,000 --> 00:08:40,000
+the coefficients in the waiting
+在等待的系数
+
+00:08:40,000 --> 00:08:43,000
+so for linear system we have
+所以对于线性系统，我们有
+
+00:08:43,000 --> 00:08:46,000
+this representation and
+这表示和
+
+00:08:46,000 --> 00:08:50,000
+if now in addition the system is time-invariant
+如果现在除了系统是时不变
+
+00:08:50,000 --> 00:08:54,000
+we can in fact relate the outputs
+我们其实是可以与输出
+
+00:08:54,000 --> 00:08:57,000
+due to these individuals the late in polls
+由于这些人在投票调查中后期
+
+00:08:57,000 --> 00:09:00,000
+specifically if the system is time-invariant
+具体地，如果系统是时不变
+
+00:09:00,000 --> 00:09:04,000
+then the response to an impulse at the time
+然后响应于一个脉冲在时间
+
+00:09:04,000 --> 00:09:11,000
+K is exactly the same as the response to an impulse at time 0
+K是完全一样的响应的脉冲在时间0
+
+00:09:11,000 --> 00:09:15,000
+shifted over two-time K said another way
+移过两次K说的另一种方式
+
+00:09:15,000 --> 00:09:18,000
+h2k a van it simply
+H2K一辆面包车它只是
+
+00:09:18,000 --> 00:09:22,000
+80 then minus K where 80
+80再减去K其中80
+
+00:09:22,000 --> 00:09:27,000
+is the response to the system to an impulse at an equal 0
+是响应于该系统的脉冲以相等的0
+
+00:09:27,000 --> 00:09:30,000
+and it's generally useful to
+并且它通常很有用
+
+00:09:30,000 --> 00:09:33,000
+rather than carrying around 80 a band
+而不是随身携带80带
+
+00:09:33,000 --> 00:09:36,000
+just simply define 80 then
+只是简单地定义80则
+
+00:09:36,000 --> 00:09:40,000
+as a chip and which is
+作为一个芯片和其
+
+00:09:40,000 --> 00:09:45,000
+the unit sample or unit impulse response to the system
+单位样品或单位冲激响应系统
+
+00:09:45,000 --> 00:09:48,000
+and so the consequent then is for
+所以随之而来的则是
+
+00:09:48,000 --> 00:09:51,000
+a linear time-invariant system
+一个线性时不变系统
+
+00:09:51,000 --> 00:09:54,000
+the output can be expressed as this
+的输出可以表示为这
+
+00:09:54,000 --> 00:09:58,000
+some where a true then minus K
+一些地方真正然后减去Ķ
+
+00:09:58,000 --> 00:10:03,000
+is the response to an impulse occurring at time n equals K
+为响应在时间n发生的冲动等于Ķ
+
+00:10:03,000 --> 00:10:06,000
+and this is referred to
+这被称为
+
+00:10:06,000 --> 00:10:10,000
+as the convolution saw
+作为卷积锯
+
+00:10:10,000 --> 00:10:14,000
+now we can just to emphasize
+现在我们可以只强调
+
+00:10:14,000 --> 00:10:21,000
+how we've going about this let me show it from another perspective
+我们如何去了解这个让我从另一个角度表现出来
+
+00:10:22,000 --> 00:10:26,000
+we of course have taken the sequence X the van
+当然，我们所采取的序列X面包车
+
+00:10:26,000 --> 00:10:30,000
+we have decomposed that as
+我们已经腐烂，由于
+
+00:10:30,000 --> 00:10:35,000
+a linear combination out these waited the late impulses
+线性组合这些等待后期的冲动
+
+00:10:35,000 --> 00:10:39,000
+when these are added together those correspond
+当这些加在一起的对应
+
+00:10:39,000 --> 00:10:42,000
+to the original sequence active and
+到原来的顺序激活和
+
+00:10:42,000 --> 00:10:46,000
+if this in polls for example
+如果这个民调为例
+
+00:10:46,000 --> 00:10:49,000
+generates a response
+生成响应
+
+00:10:49,000 --> 00:10:54,000
+which is exit 0 times a chip and we're a tremendous the response
+这是退出0次一筹，而我们是一个巨大的反应
+
+00:10:54,000 --> 00:10:57,000
+to unit in polls at an equal 0
+到单位调查以相等0
+
+00:10:57,000 --> 00:11:01,000
+and the second one the late generates the delayed
+而第二个后期产生延迟
+
+00:11:01,000 --> 00:11:05,000
+waited response and the third one similarly
+等待响应，第三个同样
+
+00:11:05,000 --> 00:11:09,000
+and we generate these individual responses
+我们产生这些个人反应
+
+00:11:09,000 --> 00:11:13,000
+these are all added together and it that linear combination
+这些都加在一起，它的线性组合
+
+00:11:13,000 --> 00:11:16,000
+that forms the final output
+形成最终的输出
+
+00:11:16,000 --> 00:11:19,000
+so that's really kind of the way we're thinking about it we have a general
+所以这是样的，我们正在考虑这个问题，我们有一个大致的方式真的
+
+00:11:19,000 --> 00:11:20,000
+sequence
+序列
+
+00:11:20,000 --> 00:11:24,000
+we're thinking love each individual sample
+我们正在考虑的爱每一个样本
+
+00:11:24,000 --> 00:11:28,000
+individually each one of those pops the system
+个别那些中的每一个弹出系统
+
+00:11:28,000 --> 00:11:31,000
+and because the linearity the response is the sum
+并且，因为线性的响应的总和
+
+00:11:31,000 --> 00:11:34,000
+for those individual responses
+对于那些个别的反应
+
+00:11:34,000 --> 00:11:38,000
+well thats what happens in discrete-time and
+以及多数民众赞成在离散时间发生的事情，并
+
+00:11:38,000 --> 00:11:43,000
+pretty much the same strategy works in continuous-time
+几乎同样的战略工作在连续时间
+
+00:11:43,000 --> 00:11:46,000
+a particular
+一个特定的
+
+00:11:46,000 --> 00:11:49,000
+we can begin in continuous-time
+我们可以在连续时间开始
+
+00:11:49,000 --> 00:11:54,000
+with the notion 0 decomposing
+与概念0分解
+
+00:11:54,000 --> 00:11:57,000
+a continuous-time signal into
+连续时间信号转换成
+
+00:11:57,000 --> 00:12:02,000
+succession love are bitterly narrow rectangles
+继承的爱情是苦涩窄矩形
+
+00:12:02,000 --> 00:12:05,000
+and as these rectangles is the with the rectangles goes
+和这些矩形是用那张矩形
+
+00:12:05,000 --> 00:12:09,000
+0 the approximation gets better and
+0近似变得更好，
+
+00:12:09,000 --> 00:12:13,000
+essentially what's going to happen is that you to those individual rectangles
+本质上发生了什么事情要发生的是，你的那些个人矩形
+
+00:12:13,000 --> 00:12:17,000
+as they get narrower and narrower correspond more and more
+因为他们得到窄对应越来越多
+
+00:12:17,000 --> 00:12:21,000
+to an impulse well let me show you what I mean
+一个很好的冲动让我告诉你我是什么意思
+
+00:12:21,000 --> 00:12:26,000
+here we have a continue with time signal
+在这里，我们有一个继续进行的时间信号
+
+00:12:26,000 --> 00:12:30,000
+and I've approximated it
+我已经接近了
+
+00:12:30,000 --> 00:12:33,000
+by staircase
+由楼梯
+
+00:12:33,000 --> 00:12:36,000
+so in Athens I can't think of this
+所以在雅典，我不能想到这
+

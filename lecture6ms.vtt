@@ -1,0 +1,3032 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+kandungan berikut adalah disediakan di bawah lesen Creative Commons
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+sokongan anda akan membantu MIT OpenCourseWare terus tawaran
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+sumber-sumber pendidikan yang berkualiti tinggi secara percuma
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+untuk membuat sumbangan atau melihat bahan-bahan tambahan dari beratus-ratus daripada mereka IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+kursus
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+melawat MIT OpenCourseWare pada 0 CW
+
+00:00:18,000 --> 00:00:20,000
+that MIT ided you
+bahawa MIT Perak IDed anda
+
+00:00:20,000 --> 00:00:27,000
+ha
+
+
+00:00:42,000 --> 00:00:45,000
+the norm
+norma
+
+00:00:45,000 --> 00:00:52,000
+are
+adalah
+
+00:00:55,000 --> 00:00:59,000
+over the past several lectures we've developed the representation for linear
+sejak beberapa kuliah yang lepas kami telah membangunkan perwakilan untuk linear
+
+00:00:59,000 --> 00:01:00,000
+time-invariant systems
+sistem masa tak berubah
+
+00:01:00,000 --> 00:01:04,000
+in a particularly important center systems
+dalam sistem pusat penting
+
+00:01:04,000 --> 00:01:08,000
+which are linear and time-invariant are those that are represented by linear
+yang linear dan masa tak berubah adalah mereka yang diwakili oleh linear
+
+00:01:08,000 --> 00:01:12,000
+constant coefficient differential equations continuous-time
+pekali selisih persamaan berterusan masa
+
+00:01:12,000 --> 00:01:16,000
+or when your constant coefficient difference equations
+atau apabila berterusan persamaan perbezaan pekali anda
+
+00:01:16,000 --> 00:01:21,000
+in discrete-time for example electrical circuits that are built let's say I dove
+dalam diskret masa sebagai contoh litar elektrik yang dibina katakan saya merpati
+
+00:01:21,000 --> 00:01:24,000
+resistors inductors and capacitors perhaps with %ah pants
+perintang induktor dan kapasitor mungkin dengan% seluar ah
+
+00:01:24,000 --> 00:01:28,000
+correspond to systems described by differential equations
+sesuai dengan sistem diterangkan oleh persamaan pembezaan
+
+00:01:28,000 --> 00:01:32,000
+mechanical systems with springs and dash pots likewise
+sistem mekanikal dengan mata air dan periuk dash begitu juga
+
+00:01:32,000 --> 00:01:36,000
+are described by differential equations and in the discrete-time
+diterangkan oleh persamaan pembezaan dan dalam masa diskret yang
+
+00:01:36,000 --> 00:01:40,000
+case things such as moving average filters
+perkara kes seperti bergerak penapis purata
+
+00:01:40,000 --> 00:01:45,000
+digital filters and most simple kinda data smoothing
+penapis digital dan paling mudah kinda data pelicinan
+
+00:01:45,000 --> 00:01:48,000
+are all linear constant coefficient difference equations
+semua tetap persamaan perbezaan pekali linear
+
+00:01:48,000 --> 00:01:52,000
+now presumably
+kini mungkin
+
+00:01:52,000 --> 00:01:56,000
+in a previous course you've had some exposure to
+dalam kursus terdahulu yang anda telah mempunyai beberapa pendedahan kepada
+
+00:01:56,000 --> 00:02:01,000
+differential equations for continuous-time and
+persamaan pembezaan untuk berterusan masa dan
+
+00:02:01,000 --> 00:02:05,000
+their solution using notions like particular solution and homogeneous
+penyelesaian dengan menggunakan tanggapan seperti penyelesaian tertentu dan homogen
+
+00:02:05,000 --> 00:02:07,000
+solution initial conditions center
+penyelesaian keadaan awal pusat
+
+00:02:07,000 --> 00:02:10,000
+later on in the course
+kemudian dalam perjalanan
+
+00:02:10,000 --> 00:02:15,000
+when we've developed the concept to the 48 transforming after that the
+apabila kita telah membangunkan konsep ini kepada 48 dari tindakan selepas itu
+
+00:02:15,000 --> 00:02:17,000
+apostrophe its form
+Apostrophe bentuk
+
+00:02:17,000 --> 00:02:20,000
+will see some very efficient and useful ways
+akan melihat beberapa cara yang sangat cekap dan berguna
+
+00:02:20,000 --> 00:02:24,000
+generating solutions both differential and difference equations
+menjana penyelesaian kedua-dua perbezaan dan perbezaan persamaan
+
+00:02:24,000 --> 00:02:27,000
+at this point however I'd like to
+pada ketika ini namun saya ingin
+
+00:02:27,000 --> 00:02:30,000
+just introduce when your constant coefficient
+hanya memperkenalkan apabila pekali malar anda
+
+00:02:30,000 --> 00:02:34,000
+differential equations and the discrete-time counterpart
+persamaan pembezaan dan rakan sejawatannya diskret masa
+
+00:02:34,000 --> 00:02:37,000
+and address among other things the issue
+dan menangani antara lain isu
+
+00:02:37,000 --> 00:02:42,000
+love when they do and don't correspond to linear time-invariant systems
+suka apabila mereka lakukan dan tidak sesuai dengan sistem masa tak berubah linear
+
+00:02:42,000 --> 00:02:45,000
+well let's first consider
+baik mari kita pertama mempertimbangkan
+
+00:02:45,000 --> 00:02:49,000
+what I refer to as an nth order
+apa yang saya rujuk sebagai suatu perintah n
+
+00:02:49,000 --> 00:02:52,000
+linear constant coefficients differential equation as i've indicated
+pekali malar persamaan pembezaan linear seperti yang telah saya menyatakan
+
+00:02:52,000 --> 00:02:53,000
+here
+di sini
+
+00:02:53,000 --> 00:02:58,000
+and what it consists of is a linear combination of derivatives up the system
+dan apa yang ia terdiri daripada adalah gabungan linear derivatif sehingga sistem
+
+00:02:58,000 --> 00:02:59,000
+output
+output
+
+00:02:59,000 --> 00:03:02,000
+y'at equal to a linear combination
+y'at sama dengan gabungan linear
+
+00:03:02,000 --> 00:03:05,000
+of derivatives above the system input accept T
+derivatif atas sistem input yang menerima T
+
+00:03:05,000 --> 00:03:08,000
+and is referred to
+dan disebut
+
+00:03:08,000 --> 00:03:13,000
+as a constant coefficients equation of course because the
+sebagai pekali persamaan berterusan sudah tentu kerana
+
+00:03:13,000 --> 00:03:18,000
+coefficients are constant in other words not assume to be time-varying
+pekali adalah berterusan dalam erti kata lain tidak anggap sebagai masa yang berbeza-beza
+
+00:03:18,000 --> 00:03:21,000
+and its referred to
+dan yang disebut
+
+00:03:21,000 --> 00:03:26,000
+as linear because it corresponds to a linear combination
+sebagai linear kerana ia sepadan dengan gabungan linear
+
+00:03:26,000 --> 00:03:30,000
+love these derivatives not because
+suka derivatif ini bukan kerana
+
+00:03:30,000 --> 00:03:33,000
+it corresponds to a linear system and in fact
+ia sepadan dengan sistem linear dan sebenarnya
+
+00:03:33,000 --> 00:03:36,000
+as we'll see or as all indicate this
+seperti yang kita akan melihat atau kerana semua menunjukkan ini
+
+00:03:36,000 --> 00:03:40,000
+equation may or may not in fact correspond to
+persamaan mungkin atau tidak boleh sebenarnya sesuai dengan
+
+00:03:40,000 --> 00:03:44,000
+when your system in the discrete-time case
+apabila sistem anda dalam kes diskret masa
+
+00:03:44,000 --> 00:03:50,000
+the corresponding equation is a linear constant coefficient difference equation
+persamaan yang sepadan ialah pekali pemalar persamaan perbezaan linear
+
+00:03:50,000 --> 00:03:53,000
+and that corresponds to again
+dan yang sepadan dengan sekali lagi
+
+00:03:53,000 --> 00:03:58,000
+a linear combination love the late versions of the output equal to
+gabungan linear suka versi lewat daripada pengeluaran itu yang sama dengan
+
+00:03:58,000 --> 00:04:02,000
+a linear combination love the late versions at the input
+gabungan linear suka versi lewat input
+
+00:04:02,000 --> 00:04:05,000
+this equation is referred to as an nth order
+persamaan ini disebut perintah n
+
+00:04:05,000 --> 00:04:10,000
+difference equation the N referring to the number of the ladies
+persamaan perbezaan N yang merujuk kepada bilangan wanita
+
+00:04:10,000 --> 00:04:14,000
+are the output involved just as an aunt order differential equation
+adalah output yang terlibat hanya sebagai persamaan pembezaan makcik
+
+00:04:14,000 --> 00:04:19,000
+the N for the order the equation refers to the number of derivatives
+N bagi perintah itu persamaan merujuk kepada bilangan derivatif
+
+00:04:19,000 --> 00:04:22,000
+the output now let's first begin
+output sekarang mari kita mula-mula memulakan
+
+00:04:22,000 --> 00:04:26,000
+with the near constant coefficient differential equations
+dengan terdekat berterusan persamaan pekali pembezaan
+
+00:04:26,000 --> 00:04:30,000
+and the basic
+dan asas
+
+00:04:30,000 --> 00:04:33,000
+point or the solution for
+titik atau penyelesaian untuk
+
+00:04:33,000 --> 00:04:37,000
+the differential equations is the fact dead
+persamaan pembezaan adalah hakikat mati
+
+00:04:37,000 --> 00:04:40,000
+if we've generated some solution
+jika kita menghasilkan beberapa penyelesaian
+
+00:04:40,000 --> 00:04:44,000
+which I refer to here's why superiority some solution
+yang saya merujuk kepada di sini sebabnya keunggulan beberapa penyelesaian
+
+00:04:44,000 --> 00:04:47,000
+to the equation for a given input then
+dengan persamaan input yang diberikan kemudian
+
+00:04:47,000 --> 00:04:50,000
+in fact we can and to that solution
+sebenarnya kita boleh dan untuk penyelesaian yang
+
+00:04:50,000 --> 00:04:54,000
+any other solution which
+lain-lain penyelesaian yang
+
+00:04:54,000 --> 00:04:57,000
+satisfies what's referred to as
+memenuhi apa yang disebut sebagai
+
+00:04:57,000 --> 00:05:01,000
+the homogeneous equation so in fact
+persamaan homogen jadi sebenarnya
+
+00:05:01,000 --> 00:05:05,000
+this differential equation by itself
+persamaan kebezaan ini dengan sendirinya
+
+00:05:05,000 --> 00:05:08,000
+is not a unique specification
+tidak adalah spesifikasi yang unik
+
+00:05:08,000 --> 00:05:10,000
+the system
+sistem
+
+00:05:10,000 --> 00:05:13,000
+if I have any solution then I can
+jika saya mempunyai apa-apa penyelesaian maka saya boleh
+
+00:05:13,000 --> 00:05:18,000
+and to that solution any other solution which satisfies the homogeneous equation
+sehingga kepada perkhidmatan yang lain-lain penyelesaian yang memuaskan persamaan homogen
+
+00:05:18,000 --> 00:05:20,000
+and thus all those two
+dan dengan itu semua kedua-dua
+
+00:05:20,000 --> 00:05:24,000
+likewise be a solution and that's very straight forward to verify
+begitu juga menjadi penyelesaian dan itu sangat lurus ke hadapan untuk mengesahkan
+
+00:05:24,000 --> 00:05:28,000
+by simply substituting into the differential equation
+dengan hanya menggantikan ke dalam persamaan kebezaan
+
+00:05:28,000 --> 00:05:33,000
+some love the particular a particular and the homogeneous solution
+beberapa suka tertentu tertentu dan penyelesaian homogen
+
+00:05:33,000 --> 00:05:37,000
+and what you see is that the homogeneous contribution
+dan apa yang anda lihat adalah bahawa sumbangan homogen
+
+00:05:37,000 --> 00:05:41,000
+in fact goes to zero by definition
+sebenarnya pergi ke sifar mengikut definisi
+
+00:05:41,000 --> 00:05:45,000
+what we mean by the homogeneous equation now
+apa yang kita maksudkan dengan persamaan homogen sekarang
+
+00:05:45,000 --> 00:05:50,000
+the homogeneous solution for a when your constant coefficient differential
+penyelesaian homogen untuk apabila pekali pembezaan berterusan anda
+
+00:05:50,000 --> 00:05:51,000
+equation
+persamaan
+
+00:05:51,000 --> 00:05:55,000
+is of the form that I
+adalah dalam bentuk yang saya
+
+00:05:55,000 --> 00:05:58,000
+indicate at the bottom and
+menunjukkan di bahagian bawah dan
+
+00:05:58,000 --> 00:06:01,000
+it typically consists love a
+ia biasanya terdiri cinta
+
+00:06:01,000 --> 00:06:06,000
+song or capital and complex exponentials
+lagu atau modal dan exponentials kompleks
+
+00:06:06,000 --> 00:06:09,000
+and the Constance
+dan Constance
+
+00:06:09,000 --> 00:06:12,000
+are on determined by the equation itself
+adalah pada ditentukan oleh persamaan itu sendiri
+
+00:06:12,000 --> 00:06:17,000
+and this form for the homogeneous solution
+dan borang ini untuk penyelesaian homogen
+
+00:06:17,000 --> 00:06:22,000
+in essence drops out love examining
+pada dasarnya terganggu cinta memeriksa
+
+00:06:22,000 --> 00:06:26,000
+the homogeneous equation where
+persamaan homogen di mana
+
+00:06:26,000 --> 00:06:30,000
+if we assume that the former the homogeneous solution
+jika kita menganggap bahawa bekas penyelesaian homogen
+
+00:06:30,000 --> 00:06:34,000
+is a complex exponential with some
+adalah eksponen kompleks dengan beberapa
+
+00:06:34,000 --> 00:06:38,000
+on specified amplitude and unspecified exponent
+pada amplitud yang ditetapkan dan eksponen yang tidak ditentukan
+
+00:06:38,000 --> 00:06:42,000
+if we substitute this into are homogeneous equation
+jika kita gantikan ke dalam ini adalah persamaan homogen
+
+00:06:42,000 --> 00:06:45,000
+we end up with the equation that i've indicated
+kita berakhir dengan persamaan yang saya telah ditunjukkan
+
+00:06:45,000 --> 00:06:49,000
+year the factor A&E the st. can in fact be
+tahun faktor A & E st. sebenarnya boleh
+
+00:06:49,000 --> 00:06:53,000
+cancelled out and we find there that equation
+dibatalkan dan kita dapati ada persamaan yang
+
+00:06:53,000 --> 00:06:56,000
+is satisfied
+berpuas hati
+
+00:06:56,000 --> 00:06:59,000
+for capital N values
+untuk nilai-nilai modal N
+
+00:06:59,000 --> 00:07:02,000
+love s and
+suka dan
+
+00:07:02,000 --> 00:07:06,000
+that's true no matter what choices made for these
+yang benar tidak kira apa pilihan yang dibuat bagi
+
+00:07:06,000 --> 00:07:10,000
+coefficients and the essential consequence
+pekali dan akibat yang penting
+
+00:07:10,000 --> 00:07:13,000
+have all of that is that the homogeneous solution
+semuanya itu ialah penyelesaian homogen
+
+00:07:13,000 --> 00:07:17,000
+is of the form that I indicated previously
+adalah dalam bentuk yang saya telah menyatakan sebelum ini
+
+00:07:17,000 --> 00:07:20,000
+namely it consists love some
+iaitu ia terdiri cinta beberapa
+
+00:07:20,000 --> 00:07:24,000
+love capital and complex exponentials
+suka modal dan exponentials kompleks
+
+00:07:24,000 --> 00:07:28,000
+where the coefficients the capital and coefficients
+di mana pekali modal dan pekali
+
+00:07:28,000 --> 00:07:31,000
+attached to you to those complex exponentials
+dilampirkan kepada anda untuk mereka exponentials kompleks
+
+00:07:31,000 --> 00:07:34,000
+is undetermined Iran specified
+adalah tidak dapat ditentukan Iran dinyatakan
+
+00:07:34,000 --> 00:07:38,000
+so what this says is that in order to
+jadi apa ini mengatakan adalah bahawa untuk
+
+00:07:38,000 --> 00:07:42,000
+obtain the solution for a win here comes the coefficient differential equation
+mendapatkan penyelesaian untuk menang di sini datang persamaan pekali pembezaan
+
+00:07:42,000 --> 00:07:45,000
+we need some kind of auxiliary information
+kita perlu beberapa jenis maklumat tambahan
+
+00:07:45,000 --> 00:07:49,000
+tells us how to obtain these capital and
+memberitahu kita bagaimana untuk mendapatkan modal ini dan
+
+00:07:49,000 --> 00:07:53,000
+undetermined Constance and there are a variety of ways
+tidak dapat ditentukan Constance dan terdapat pelbagai cara
+
+00:07:53,000 --> 00:07:57,000
+specifying this auxiliary information or auxiliary conditions
+menyatakan maklumat ini tambahan atau syarat tambahan
+
+00:07:57,000 --> 00:08:02,000
+for example in addition to the differential equation
+sebagai contoh di samping persamaan pengkamiran
+
+00:08:02,000 --> 00:08:05,000
+what I can tell you is the value
+apa yang saya boleh katakan nilai
+
+00:08:05,000 --> 00:08:08,000
+of the output and and -1 up there
+daripada keluaran dan dan -1 di sana
+
+00:08:08,000 --> 00:08:12,000
+and -1 if its derivatives at some
+dan -1 jika terbitannya di beberapa
+
+00:08:12,000 --> 00:08:15,000
+specified time t0 and
+t0 masa yang dinyatakan dan
+
+00:08:15,000 --> 00:08:19,000
+so the differential equations together
+jadi bersama-sama persamaan pembezaan
+
+00:08:19,000 --> 00:08:23,000
+with the auxiliary information the initial conditions
+dengan maklumat yang bantu keadaan awal
+
+00:08:23,000 --> 00:08:26,000
+van lets you determine the total solution
+van membolehkan anda menentukan jumlah penyelesaian
+
+00:08:26,000 --> 00:08:31,000
+which namely lets you determine these previously unspecified
+yang iaitu membolehkan anda menentukan ini sebelum ini tidak ditentukan
+
+00:08:31,000 --> 00:08:35,000
+coefficients in the homogeneous solution
+pekali dalam penyelesaian homogen
+
+00:08:35,000 --> 00:08:40,000
+now depending on how the auxiliary information is stated or what auxiliary
+kini bergantung kepada bagaimana maklumat tambahan dinyatakan atau apa tambahan
+
+00:08:40,000 --> 00:08:41,000
+information is available
+maklumat boleh didapati
+
+00:08:41,000 --> 00:08:45,000
+the system a or may not correspond
+sistem atau mungkin tidak sesuai
+
+00:08:45,000 --> 00:08:49,000
+to a linear system and may or may not correspond to a linear time-invariant
+kepada sistem linear dan mungkin atau mungkin tidak sesuai dengan masa tak berubah linear
+
+00:08:49,000 --> 00:08:53,000
+system one essential condition
+sistem satu syarat penting
+
+00:08:53,000 --> 00:08:56,000
+for it to correspond to a linear system is that
+untuk ia sesuai dengan sistem linear ialah
+
+00:08:56,000 --> 00:09:00,000
+the initial conditions must be zero
+keadaan awal mestilah sifar
+
+00:09:00,000 --> 00:09:04,000
+and one can see the reason for that
+dan satu boleh melihat sebab untuk itu
+
+00:09:04,000 --> 00:09:09,000
+if we refer back to the previous lecture in which we saw that for a linear system
+jika kita merujuk kembali kepada kuliah yang lepas di mana kita melihat bahawa satu sistem linear
+
+00:09:09,000 --> 00:09:12,000
+if we put 0n we get zero out
+jika kita meletakkan 0n kita sifar keluar
+
+00:09:12,000 --> 00:09:17,000
+so if exit see the input is zero the output must be zero
+jadi jika keluar melihat input adalah sifar keluaran mestilah sifar
+
+00:09:17,000 --> 00:09:21,000
+and so that in essence tells us that at least for the system to be linear
+dan sebagainya yang pada asasnya memberitahu kita bahawa sekurang-kurangnya untuk sistem linear
+
+00:09:21,000 --> 00:09:24,000
+these initial conditions must be zero
+ini keadaan awal mestilah sifar
+
+00:09:24,000 --> 00:09:28,000
+now beyond that if
+sekarang lebih dari itu jika
+
+00:09:28,000 --> 00:09:31,000
+we want the system to be
+kita mahu sistem untuk menjadi
+
+00:09:31,000 --> 00:09:35,000
+causal and linear time in and time-invariant
+masa sebab dan akibat dan linear dalam dan masa-tak berubah
+
+00:09:35,000 --> 00:09:38,000
+then what's required on the
+maka apa yang diperlukan di
+
+00:09:38,000 --> 00:09:42,000
+initial conditions is that they be consistent with
+keadaan awal ialah mereka konsisten dengan
+
+00:09:42,000 --> 00:09:47,000
+what's referred to as initial rest initial arrest says
+apa yang disebut sebagai penangkapan awal awal lain kata
+
+00:09:47,000 --> 00:09:51,000
+that the output must be
+bahawa keluaran mestilah
+
+00:09:51,000 --> 00:09:54,000
+0 up until the time
+0 sampai waktu
+
+00:09:54,000 --> 00:09:58,000
+that the input becomes 90 and we can see
+input menjadi 90 dan kita dapat melihat
+
+00:09:58,000 --> 00:10:01,000
+of course that that's consistent with the notion of causality as
+sudah tentu bahawa itulah konsisten dengan tanggapan sebab dan akibat sebagai
+
+00:10:01,000 --> 00:10:05,000
+we talked about in the previous lecture and
+kita bercakap tentang dalam kuliah sebelum ini dan
+
+00:10:05,000 --> 00:10:09,000
+its relatively straightforward to see
+yang agak mudah untuk melihat
+
+00:10:09,000 --> 00:10:14,000
+that if the system is causal and linear and time-invariant
+bahawa jika sistem ini sebab-musabab dan linear dan masa tak berubah
+
+00:10:14,000 --> 00:10:17,000
+that will require
+yang memerlukan
+
+00:10:17,000 --> 00:10:21,000
+initial rest it's somewhat more difficult see
+rehat awal ia agak lihat lebih sukar
+
+00:10:21,000 --> 00:10:27,000
+that if we specify initial rest the NAT in fact is sufficient to
+bahawa jika kita nyatakan rehat awal NAT yang sebenarnya adalah mencukupi untuk
+
+00:10:27,000 --> 00:10:30,000
+determine that the system is both causal in linear
+menentukan bahawa sistem itu adalah kedua-dua sebab dan akibat dalam linear
+
+00:10:30,000 --> 00:10:34,000
+and time very but the essential point then is that
+dan kali tetapi titik penting maka ialah
+
+00:10:34,000 --> 00:10:37,000
+requires initial rest for both linearity
+memerlukan rehat awal untuk kedua-dua kelinearan
+
+00:10:37,000 --> 00:10:41,000
+and causality okay well
+dan sebab-musabab okay juga
+
+00:10:41,000 --> 00:10:44,000
+let's look at an example and
+mari kita lihat contoh dan
+
+00:10:44,000 --> 00:10:49,000
+let's take the example love a first-order
+mari kita mengambil contoh yang suka pesanan pertama
+
+00:10:49,000 --> 00:10:52,000
+differential equation as I've
+pembezaan persamaan seperti yang saya telah
+
+00:10:52,000 --> 00:10:55,000
+indicated here so we have
+ditunjukkan di sini supaya kita mempunyai
+
+00:10:55,000 --> 00:10:59,000
+a first-order differential equation the wife TTT
+persamaan pembezaan tertib pertama TTT isteri
+
+00:10:59,000 --> 00:11:02,000
+was a yote is the input exit
+adalah yote adalah keluar input
+
+00:11:02,000 --> 00:11:05,000
+T and let's first
+T dan mari kita pertama
+
+00:11:05,000 --> 00:11:08,000
+look at what the homogeneous solution this equation is
+melihat apa penyelesaian homogen persamaan ini adalah
+
+00:11:08,000 --> 00:11:12,000
+and so we can consider the homogeneous equation
+dan dengan itu kita boleh mempertimbangkan persamaan homogen
+
+00:11:12,000 --> 00:11:17,000
+namely the equation specify solutions
+iaitu persamaan menentukan penyelesaian
+
+00:11:17,000 --> 00:11:21,000
+which would correspond to zero input
+yang akan sesuai dengan sifar input
+
+00:11:21,000 --> 00:11:24,000
+we in essence guess for impose
+kita pada dasarnya meneka untuk mengenakan
+
+00:11:24,000 --> 00:11:28,000
+a solution love the form the homogeneous solution
+penyelesaian yang suka bentuk penyelesaian homogen
+
+00:11:28,000 --> 00:11:33,000
+is an amplitude factor times the complex exponential
+adalah amplitud satu kali faktor eksponen kompleks
+
+00:11:33,000 --> 00:11:37,000
+substituting this into the homogeneous equation
+menggantikan ini ke dalam persamaan homogen
+
+00:11:37,000 --> 00:11:40,000
+we then get the equation that i've indicated here
+kita kemudian mendapatkan persamaan yang saya telah ditunjukkan di sini
+
+00:11:40,000 --> 00:11:44,000
+what you can see is that this equates in this equation
+apa yang anda boleh lihat ialah bahawa ini bersamaan dalam persamaan ini
+
+00:11:44,000 --> 00:11:49,000
+I can cancel out the amplitude factor and this complex exponential
+Saya boleh membatalkan faktor amplitud dan eksponen kompleks ini
+
+00:11:49,000 --> 00:11:56,000
+so let's just cancel those out on both sides of the equation
+jadi mari kita hanya membatalkan mereka ke atas kedua-dua belah persamaan
+
+00:11:56,000 --> 00:12:00,000
+and what we're left with is an equation
+dan apa yang kita ditinggalkan dengan adalah persamaan
+
+00:12:00,000 --> 00:12:04,000
+that specifies what the complex exponent must be
+yang menentukan apa yang eksponen kompleks mesti
+
+00:12:04,000 --> 00:12:09,000
+in particular for the homogeneous solution s must be equal to minus a
+khususnya untuk penyelesaian homogen s mestilah sama dengan tolak
+
+00:12:09,000 --> 00:12:12,000
+and so finally are homogeneous solution
+dan sebagainya akhirnya adalah penyelesaian homogen
+
+00:12:12,000 --> 00:12:18,000
+is as I've indicated year
+adalah seperti yang telah saya menyatakan tahun
+
+00:12:18,000 --> 00:12:24,000
+okay now let's look at the solution for specific input let's consider for
+okay sekarang mari kita lihat penyelesaian untuk input tertentu mari kita mempertimbangkan untuk
+
+00:12:24,000 --> 00:12:25,000
+example input
+input contoh
+
+00:12:25,000 --> 00:12:28,000
+which is a scale units step and
+yang merupakan langkah unit skala dan
+
+00:12:28,000 --> 00:12:32,000
+although I won't work at the solution in detail and perhaps
+walaupun saya tidak akan berfungsi pada penyelesaian secara terperinci dan mungkin
+
+00:12:32,000 --> 00:12:36,000
+using what you've worked on previously
+menggunakan apa yang anda telah bekerja pada sebelum ini
+
+00:12:36,000 --> 00:12:39,000
+you know how to carry out the solution for that the
+anda tahu bagaimana untuk menjalankan penyelesaian untuk bahawa
+
+00:12:39,000 --> 00:12:42,000
+a solution with step input
+penyelesaian dengan input langkah
+
+00:12:42,000 --> 00:12:47,000
+is what i've indicated here scaler one minus the next financial times unit
+adalah apa yang saya telah ditunjukkan di sini scaler satu tolak kali kewangan unit seterusnya
+
+00:12:47,000 --> 00:12:51,000
+staff and you can verify that simply by substituting into the differential
+kakitangan dan anda boleh mengesahkan bahawa hanya dengan menggantikan ke dalam pengkamiran
+
+00:12:51,000 --> 00:12:53,000
+equations now
+persamaan kini
+
+00:12:53,000 --> 00:12:57,000
+we know that there's a family of solutions in other words
+kita tahu bahawa ada sebuah keluarga penyelesaian dalam erti kata lain
+
+00:12:57,000 --> 00:13:00,000
+any solution with
+apa-apa penyelesaian dengan
+
+00:13:00,000 --> 00:13:04,000
+a homogeneous solution added to it is again a solution
+penyelesaian homogen ditambah kepadanya sekali lagi penyelesaian yang
+
+00:13:04,000 --> 00:13:09,000
+and so if we consider the solution I just indicated
+dan jadi jika kita mempertimbangkan penyelesaian saya hanya menunjukkan
+
+00:13:09,000 --> 00:13:13,000
+we generate the entire family of solutions by
+kita menjana seluruh keluarga penyelesaian oleh
+
+00:13:13,000 --> 00:13:16,000
+ending a homogeneous solution to it and so
+berakhir penyelesaian homogen kepadanya dan sebagainya
+
+00:13:16,000 --> 00:13:20,000
+this then corresponds to the entire family of solutions
+ini maka sepadan dengan seluruh keluarga penyelesaian
+
+00:13:20,000 --> 00:13:24,000
+where the constant a is unspecified
+di mana yang berterusan ini tidak ditentukan
+
+00:13:24,000 --> 00:13:31,000
+so far and needs to be specified through some type avoids avery conditions
+setakat ini dan perlu dinyatakan melalui beberapa jenis mengelakkan keadaan Avery
+
+00:13:31,000 --> 00:13:34,000
+now a class A auxiliary conditions
+kini kelas A syarat tambahan
+
+00:13:34,000 --> 00:13:37,000
+is the Commissioner initial rest which
+rehat awal Pesuruhjaya yang
+
+00:13:37,000 --> 00:13:43,000
+as i indicated before is equivalent to the statement that the system
+sebagai i ditunjukkan sebelum adalah bersamaan dengan pernyataan bahawa sistem
+
+00:13:43,000 --> 00:13:47,000
+is causal and linear and time-invariant and
+adalah sebab-musabab dan linear dan masa tak berubah dan
+
+00:13:47,000 --> 00:13:51,000
+in that case for the initial rest condition
+dalam kes itu bagi keadaan rehat awal
+
+00:13:51,000 --> 00:13:55,000
+we would then require in this equation above
+kita kemudian akan memerlukan dalam persamaan ini di atas
+
+00:13:55,000 --> 00:13:59,000
+that this constant be equal to 0
+yang malar ini sama dengan 0
+
+00:13:59,000 --> 00:14:02,000
+and so finally the response
+dan sebagainya akhirnya sambutan
+
+00:14:02,000 --> 00:14:05,000
+to scales step if the system
+kepada skala langkah jika sistem
+
+00:14:05,000 --> 00:14:09,000
+is the correspond to cause a linear time-invariant system
+adalah didefinasi untuk menyebabkan sistem masa tak berubah linear
+
+00:14:09,000 --> 00:14:12,000
+is then just this term namely
+kemudian hanya istilah ini iaitu
+
+00:14:12,000 --> 00:14:15,000
+constant times one minus an exponential
+kali berterusan satu tolak eksponen
+
+00:14:15,000 --> 00:14:18,000
+times step
+kali langkah
+
+00:14:18,000 --> 00:14:22,000
+okay now if the system is a linear time-invariant system
+okay sekarang jika sistem adalah sistem masa tak berubah linear
+
+00:14:22,000 --> 00:14:25,000
+it can as we know be described through its impulse response
+ia boleh seperti yang kita tahu digambarkan melalui tindak balas impulsnya
+
+00:14:25,000 --> 00:14:29,000
+and as you've worked out previously
+dan seperti yang anda bekerja sebelum ini
+
+00:14:29,000 --> 00:14:32,000
+in the video course manual for
+dalam manual kursus video untuk
+
+00:14:32,000 --> 00:14:36,000
+a linear time-invariant system the impulse response
+sistem masa tak berubah linear sambutan dedenyut
+
+00:14:36,000 --> 00:14:40,000
+is the derivative love the step response adjusted quickly remind you
+adalah cinta terbitan sambutan langkah diselaraskan cepat mengingatkan anda
+
+00:14:40,000 --> 00:14:44,000
+love where that result comes from in essence
+suka di mana hasil yang datang dari pada dasarnya
+
+00:14:44,000 --> 00:14:49,000
+we can consider to linear time-invariant systems and Cascade
+kita boleh mempertimbangkan untuk sistem masa tak berubah linear dan Cascade
+
+00:14:49,000 --> 00:14:53,000
+wanna differentiator the other the system that we're talking about
+wanna pembeza lain sistem yang kita bercakap tentang
+
+00:14:53,000 --> 00:14:54,000
+described by
+diterangkan oleh
+
+00:14:54,000 --> 00:14:58,000
+the differential equation and step in here
+persamaan pembezaan dan langkah di sini
+
+00:14:58,000 --> 00:15:02,000
+then generated in polls into our system
+kemudian dihasilkan dalam pemilihan ke dalam sistem kami
+
+00:15:02,000 --> 00:15:06,000
+and out comes the impulse response well just using the fact that
+dan keluar datang sambutan dedenyut juga hanya menggunakan fakta bahawa
+
+00:15:06,000 --> 00:15:10,000
+these are both linear time-invariant systems and they can be cascaded in
+ini adalah kedua-dua sistem masa tak berubah linear dan mereka boleh disebarkan dalam
+
+00:15:10,000 --> 00:15:11,000
+either order
+sama ada perintah
+
+00:15:11,000 --> 00:15:15,000
+then means that if we have step response
+maka bermakna jika kita mempunyai sambutan langkah
+
+00:15:15,000 --> 00:15:19,000
+to our system and that goes through differentiator
+untuk sistem kami dan yang masuk melalui pembeza
+
+00:15:19,000 --> 00:15:24,000
+what must come out again is the impulse response
+apa yang perlu keluar lagi adalah sambutan dedenyut
+
+00:15:24,000 --> 00:15:28,000
+so differentiating the step response we get the impulse response
+jadi membezakan sambutan langkah kita mendapat sambutan dedenyut
+
+00:15:28,000 --> 00:15:32,000
+here again is the step response as we
+di sini sekali lagi adalah sambutan langkah seperti yang kita
+
+00:15:32,000 --> 00:15:37,000
+just worked it out this time for you next step if we differentiate
+hanya bekerja ia keluar masa ini untuk anda Langkah seterusnya jika kita membezakan
+
+00:15:37,000 --> 00:15:40,000
+we have then since the step response
+kita ada maka sejak sambutan langkah
+
+00:15:40,000 --> 00:15:44,000
+is the product of two terms the derivative a product is the sum
+adalah hasil dari dua istilah terbitan produk yang adalah jumlah wang yang
+
+00:15:44,000 --> 00:15:48,000
+the derivatives and carrying that algebra through
+derivatif dan menjalankan algebra yang melalui
+
+00:15:48,000 --> 00:15:51,000
+and using the fact that the derivative the step
+dan menggunakan fakta bahawa terbitan langkah
+
+00:15:51,000 --> 00:15:55,000
+is an impulse finally we come down
+adalah satu dorongan akhirnya kita turun
+
+00:15:55,000 --> 00:15:58,000
+to this statement for the impulse response
+kepada kenyataan ini untuk sambutan dedenyut
+
+00:15:58,000 --> 00:16:01,000
+and then recognizing that this is but I'm
+dan kemudian menyedari bahawa ini adalah tetapi saya
+
+00:16:01,000 --> 00:16:04,000
+function times and in polls and we know
+kali fungsi dan dalam pemilihan dan kita tahu
+
+00:16:04,000 --> 00:16:08,000
+that a time function times in polls takes on
+bahawa masa kali fungsi dalam pemilihan mengambil
+
+00:16:08,000 --> 00:16:13,000
+the value at the time that the impulse occurs
+nilai pada masa itu bahawa dorongan berlaku
+
+00:16:13,000 --> 00:16:17,000
+then this term is simply 0
+maka istilah ini adalah semata-mata 0
+
+00:16:17,000 --> 00:16:20,000
+and the impulse response then
+dan sambutan dedenyut kemudian
+
+00:16:20,000 --> 00:16:23,000
+finally is an exponential this for
+akhirnya adalah eksponen ini untuk
+
+00:16:23,000 --> 00:16:28,000
+and this is the peking exponential for a positive
+dan ini adalah eksponen Peking untuk yang positif
+
+00:16:28,000 --> 00:16:32,000
+it's a growing exponentially for a negative and
+ia adalah berkembang pesat untuk negatif dan
+
+00:16:32,000 --> 00:16:36,000
+recall that as we talked about previously
+ingat bahawa sebagaimana kita berbincang mengenai sebelum ini
+
+00:16:36,000 --> 00:16:40,000
+a system is a linear time-invariant system is stable
+sistem adalah sistem masa tak berubah linear stabil
+
+00:16:40,000 --> 00:16:44,000
+if its impulse response is absolutely integral
+jika sambutan impulsnya sememangnya penting
+
+00:16:44,000 --> 00:16:49,000
+for this particular case this impulse response
+untuk kes ini tindak balas impuls ini
+
+00:16:49,000 --> 00:16:52,000
+is absolutely integral provided that
+sememangnya penting dengan syarat bahawa
+
+00:16:52,000 --> 00:16:55,000
+the exponential factor a
+faktor eksponen
+
+00:16:55,000 --> 00:16:58,000
+is greater than 0
+adalah lebih besar daripada 0
+
+00:16:58,000 --> 00:17:02,000
+okay so what we've seen then is the
+okay jadi apa yang kita lihat kemudian ialah
+
+00:17:02,000 --> 00:17:07,000
+impulse response for system described by a linear constant coefficient
+sambutan denyut untuk Sistem yang dinyatakan oleh pekali malar linear
+
+00:17:07,000 --> 00:17:08,000
+differential equation
+persamaan pembezaan
+
+00:17:08,000 --> 00:17:11,000
+where in addition we will impose causality
+di mana di samping kami akan mengenakan sebab dan akibat
+
+00:17:11,000 --> 00:17:15,000
+when you're ready in time invariance essentially through the initial
+apabila anda siap dalam masa invariance dasarnya melalui awal
+
+00:17:15,000 --> 00:17:16,000
+conditions
+syarat
+
+00:17:16,000 --> 00:17:19,000
+love initial rest
+suka rehat awal
+
+00:17:19,000 --> 00:17:23,000
+now pretty much the same kinds of things happen
+kini cukup banyak jenis yang sama perkara yang berlaku
+
+00:17:23,000 --> 00:17:26,000
+with difference equations as we've gone through
+dengan perbezaan persamaan seperti yang kita telah melalui
+
+00:17:26,000 --> 00:17:30,000
+with differential equations in particular
+dengan persamaan pembezaan khususnya
+
+00:17:30,000 --> 00:17:33,000
+again let me remind you love the form love
+lagi biarlah saya mengingatkan anda suka cinta borang yang
+
+00:17:33,000 --> 00:17:37,000
+and aunt order when your constant coefficient difference equation
+dan perintah ibu saudara apabila pekali persamaan perbezaan berterusan anda
+
+00:17:37,000 --> 00:17:41,000
+its as I indicate here and
+sebagai saya menunjukkan di sini dan
+
+00:17:41,000 --> 00:17:47,000
+again a linear combination this time the late versions of the output equal to a
+lagi gabungan linear masa ini versi lewat output sama dengan
+
+00:17:47,000 --> 00:17:48,000
+linear combination
+gabungan linear
+
+00:17:48,000 --> 00:17:52,000
+up the late versions love the input once again
+sehingga versi lewat suka input sekali lagi
+
+00:17:52,000 --> 00:17:56,000
+the difference equation is not
+persamaan perbezaannya tidak
+
+00:17:56,000 --> 00:18:01,000
+a complete specification the system because we can and to the response
+spesifikasi lengkap sistem kerana kita boleh dan sambutan yang
+
+00:18:01,000 --> 00:18:04,000
+any homogeneous solution in other words
+mana-mana penyelesaian homogen dalam erti kata lain
+
+00:18:04,000 --> 00:18:08,000
+any solution that satisfies the homogeneous equation
+mana-mana penyelesaian yang memuaskan persamaan homogen
+
+00:18:08,000 --> 00:18:12,000
+in the summer those well also satisfy the original
+pada musim panas mereka dengan baik juga memenuhi asal
+
+00:18:12,000 --> 00:18:17,000
+difference equation so if we have
+persamaan perbezaan jadi jika kita mempunyai
+
+00:18:17,000 --> 00:18:21,000
+a particular response that satisfies
+tindak balas tertentu yang memenuhi
+
+00:18:21,000 --> 00:18:25,000
+the difference equation then ending to that
+persamaan perbezaan kemudian berakhir dengan
+
+00:18:25,000 --> 00:18:31,000
+any response there is a solution to the homogeneous equation
+sebarang jawapan terdapat satu penyelesaian kepada persamaan homogen
+
+00:18:31,000 --> 00:18:36,000
+will also be a solution to the total equation
+juga akan menjadi penyelesaian kepada jumlah persamaan
+
+00:18:36,000 --> 00:18:41,000
+the homogeneous solution again is of the form
+penyelesaian homogen lagi adalah dalam bentuk
+
+00:18:41,000 --> 00:18:45,000
+of a linear combination of exponentials here
+daripada gabungan linear exponentials sini
+
+00:18:45,000 --> 00:18:49,000
+we have the homogeneous equation as with
+kita mempunyai persamaan homogen seperti dengan
+
+00:18:49,000 --> 00:18:52,000
+differential equations we can
+persamaan pembezaan kita boleh
+
+00:18:52,000 --> 00:18:55,000
+guests or impose solutions for
+tetamu atau mengenakan penyelesaian untuk
+
+00:18:55,000 --> 00:18:59,000
+eight times an exponential when we substitute this
+lapan kali eksponen apabila kita gantikan ini
+
+00:18:59,000 --> 00:19:02,000
+into the homogeneous equation we then end up
+ke dalam persamaan homogen kita kemudian berakhir
+
+00:19:02,000 --> 00:19:07,000
+with equation that i've indicated here we recognize again
+dengan persamaan yang saya menunjukkan di sini kita mengenali lagi
+
+00:19:07,000 --> 00:19:11,000
+there a the amplitude
+terdapat amplitud
+
+00:19:11,000 --> 00:19:15,000
+and seats at the end
+dan tempat duduk di hujung
+
+00:19:15,000 --> 00:19:18,000
+this exponential factor cancel out
+faktor eksponen ini membatalkan
+
+00:19:18,000 --> 00:19:22,000
+and so this equation is satisfied
+dan sebagainya persamaan ini berpuas hati
+
+00:19:22,000 --> 00:19:26,000
+for any values love see
+bagi apa-apa nilai-nilai suka melihat
+
+00:19:26,000 --> 00:19:31,000
+that satisfy this equation and
+yang memuaskan persamaan ini dan
+
+00:19:31,000 --> 00:19:34,000
+there are and roots C-one through Z and
+terdapat dan akar C-satu melalui Z dan
+
+00:19:34,000 --> 00:19:37,000
+and so finally the form for the homogeneous solution
+dan sebagainya akhirnya borang untuk penyelesaian homogen
+
+00:19:37,000 --> 00:19:42,000
+is a linear combination love capital and
+adalah gabungan modal cinta linear dan
+
+00:19:42,000 --> 00:19:46,000
+exponentials capital and is the order the equation
+exponentials modal dan perintah itu persamaan
+
+00:19:46,000 --> 00:19:50,000
+with each of those exponentials the ample to factor is undetermined
+dengan setiap orang exponentials yang mencukupi untuk faktor adalah tidak dapat ditentukan
+
+00:19:50,000 --> 00:19:54,000
+and needs to be determined in some way through
+dan perlu ditentukan dalam beberapa cara melalui
+
+00:19:54,000 --> 00:19:57,000
+the imposition love appropriate
+pengenaan suka sesuai
+
+00:19:57,000 --> 00:20:02,000
+initial conditions are boundary conditions
+keadaan awal adalah syarat-syarat sempadan
+
+00:20:02,000 --> 00:20:05,000
+so the general form then
+jadi bentuk am maka
+
+00:20:05,000 --> 00:20:08,000
+for the solution to the difference equation
+untuk penyelesaian kepada persamaan kebezaan yang
+
+00:20:08,000 --> 00:20:11,000
+is
+
+
+00:20:11,000 --> 00:20:14,000
+some with the exponentials plus any particular solution
+beberapa dengan exponentials ditambah penyelesaian tertentu
+
+00:20:14,000 --> 00:20:20,000
+its through auxiliary conditions that we determine
+melalui syarat-syarat tambahan yang kita menentukan
+
+00:20:20,000 --> 00:20:23,000
+these coefficients we have
+pekali ini kita mempunyai
+
+00:20:23,000 --> 00:20:27,000
+and undetermined coefficients and so
+dan pekali tak ditentukan dan supaya
+
+00:20:27,000 --> 00:20:31,000
+we require capital and auxiliary conditions
+kita memerlukan modal dan tambahan syarat
+
+00:20:31,000 --> 00:20:35,000
+for example some set values
+sebagai contoh beberapa nilai set
+
+00:20:35,000 --> 00:20:38,000
+of the output at and this thing instance
+output pada dan perkara hal ini
+
+00:20:38,000 --> 00:20:41,000
+time
+masa
+
+00:20:41,000 --> 00:20:42,000
+now this
+sekarang ini
+
+00:20:42,000 --> 00:20:45,000
+was the same as with differential equations in the case a differential
+adalah sama seperti dengan persamaan pembezaan dalam kes kebezaan
+
+00:20:45,000 --> 00:20:47,000
+equations we talked about specifying
+persamaan kita bercakap tentang menyatakan
+
+00:20:47,000 --> 00:20:51,000
+the value of the output and its derivatives and
+nilai output dan terbitannya dan
+
+00:20:51,000 --> 00:20:54,000
+there we indicated dead for linearity
+di sana kami ditunjukkan mati untuk kelinearan
+
+00:20:54,000 --> 00:20:58,000
+what we required when the arity what we require
+apa yang kita diperlukan apabila arity yang kita perlukan
+
+00:20:58,000 --> 00:21:02,000
+is that the auxiliary conditions 30
+adalah bahawa syarat-syarat tambahan 30
+
+00:21:02,000 --> 00:21:05,000
+and the same thing applies here for the same reason
+dan perkara yang sama berlaku di sini atas sebab yang sama
+
+00:21:05,000 --> 00:21:10,000
+namely if the system is to be linear and the response if there's no input must be
+iaitu jika sistem ini adalah untuk menjadi linear dan sambutan jika tidak ada input mesti
+
+00:21:10,000 --> 00:21:13,000
+equal to 0
+sama dengan 0
+
+00:21:13,000 --> 00:21:15,000
+in addition what
+di samping apa yang
+
+00:21:15,000 --> 00:21:18,000
+we may want to impose on the system is
+kita mungkin mahu mengenakan ke atas sistem ini
+
+00:21:18,000 --> 00:21:22,000
+that it be causal and in addition to linear
+ia menjadi sebab-musabab dan sebagai tambahan kepada linear
+
+00:21:22,000 --> 00:21:25,000
+time-invariant and with that requires again
+masa tak berubah dan dengan itu memerlukan lagi
+
+00:21:25,000 --> 00:21:30,000
+is that it the auxiliary conditions be consistent with
+ialah ia syarat-syarat tambahan konsisten dengan
+
+00:21:30,000 --> 00:21:33,000
+initial rest namely that if
+rehat awal iaitu bahawa jika
+
+00:21:33,000 --> 00:21:37,000
+the input is zero prior to some time
+input adalah sifar sebelum masa
+
+00:21:37,000 --> 00:21:42,000
+in the output is zero prior to the same time
+pengeluaran adalah sifar sebelum masa yang sama
+
+00:21:42,000 --> 00:21:45,000
+okay so we've seen a very direct parallel
+okay jadi kami telah melihat selari yang langsung
+
+00:21:45,000 --> 00:21:48,000
+so far between differential equations
+setakat ini antara persamaan pembezaan
+
+00:21:48,000 --> 00:21:52,000
+and difference equations
+dan persamaan beza
+
+00:21:52,000 --> 00:21:55,000
+in fact one difference between them dead
+sebenarnya satu perbezaan di antara mereka mati
+
+00:21:55,000 --> 00:21:58,000
+in some sense makes difference equations
+dalam erti kata lain membuat persamaan beza
+
+00:21:58,000 --> 00:22:02,000
+easier to deal with in some situations is dead
+lebih mudah untuk berurusan dengan dalam sesetengah keadaan mati
+
+00:22:02,000 --> 00:22:06,000
+in contrast to a differential equation a
+berbeza dengan persamaan pembezaan yang
+
+00:22:06,000 --> 00:22:09,000
+difference equation if we assume causality
+persamaan perbezaan jika kita menganggap sebab dan akibat
+
+00:22:09,000 --> 00:22:12,000
+in fact is and explicit
+sebenarnya adalah dan jelas
+
+00:22:12,000 --> 00:22:15,000
+input-output relationship for the system now let me
+hubungan input-output bagi sistem sekarang mari saya
+
+00:22:15,000 --> 00:22:18,000
+show you what I mean
+menunjukkan kepada anda apa yang saya maksudkan
+
+00:22:18,000 --> 00:22:23,000
+let's consider the n-th order difference equation as i've indicated here
+mari kita mempertimbangkan susunan persamaan perbezaan n-ke-seperti yang telah saya dinyatakan di sini
+
+00:22:23,000 --> 00:22:27,000
+and let's assume that we're imposing causality
+dan mari kita andaikan bahawa kita mengenakan sebab dan akibat
+
+00:22:27,000 --> 00:22:30,000
+so there'd the output can only depend
+jadi akan output hanya boleh bergantung
+
+00:22:30,000 --> 00:22:35,000
+on prior values at the input and therefore on fire values at the output
+nilai-nilai sebelum pada masukan dan oleh itu nilai-nilai api pada keluaran
+
+00:22:35,000 --> 00:22:39,000
+well we can simply rearrange this equation
+juga kita hanya boleh menyusun semula persamaan ini
+
+00:22:39,000 --> 00:22:43,000
+solving for Y have an the leading term with cable 0
+menyelesaikan bagi tahun taksiran mempunyai sebutan utama dengan kabel 0
+
+00:22:43,000 --> 00:22:48,000
+taking all the other turns over to the right side of the equation
+mengambil semua gilir lain ke yang sebelah kanan persamaan
+
+00:22:48,000 --> 00:22:52,000
+and we then have a workers if equation
+dan kami kemudian mempunyai pekerja jika persamaan
+
+00:22:52,000 --> 00:22:58,000
+namely that an equation expresses the output interns
+iaitu bahawa persamaan meluahkan intern pengeluaran
+
+00:22:58,000 --> 00:23:01,000
+love prior values if the input which is this term
+suka nilai terlebih dahulu jika input yang istilah ini
+
+00:23:01,000 --> 00:23:05,000
+and prior values at the output
+dan nilai-nilai sebelum pada keluaran
+
+00:23:05,000 --> 00:23:09,000
+and so if in fact we have this equation running
+dan sebagainya jika sebenarnya kita mempunyai persamaan ini berjalan
+
+00:23:09,000 --> 00:23:12,000
+then once it started we know how to compute
+kemudian sekali ia bermula kita tahu bagaimana untuk mengira
+
+00:23:12,000 --> 00:23:16,000
+the output for the next time
+pengeluaran untuk masa yang akan datang
+
+00:23:16,000 --> 00:23:17,000
+well
+baik
+
+00:23:17,000 --> 00:23:21,000
+how do we get started the way we get it started of course
+bagaimana kita memulakan cara kita mendapatkan ia bermula sudah tentu
+
+00:23:21,000 --> 00:23:24,000
+is through the appropriate said love
+adalah melalui sesuai tersebut cinta
+
+00:23:24,000 --> 00:23:28,000
+initial conditions are boundary conditions and if for example
+keadaan awal adalah syarat-syarat sempadan dan jika sebagai contoh
+
+00:23:28,000 --> 00:23:32,000
+we assume initial rest corresponding to a causal when you're time-invariant
+kita menganggap rehat awal yang sepadan dengan sebab dan akibat apabila anda masa tak berubah
+
+00:23:32,000 --> 00:23:33,000
+system
+sistem
+
+00:23:33,000 --> 00:23:36,000
+then if the input is zero up until sometime
+maka jika input adalah sifar sehingga kadang-kadang
+
+00:23:36,000 --> 00:23:40,000
+the output must be zero up until that time and Matt in essence
+keluaran mestilah sifar sehingga masa itu dan Matt pada dasarnya
+
+00:23:40,000 --> 00:23:44,000
+helps us get the equation started well let's look at this
+membantu kita mendapatkan persamaan bermula dengan baik mari kita lihat ini
+
+00:23:44,000 --> 00:23:48,000
+specifically in the context love a
+khususnya dalam konteks cinta
+
+00:23:48,000 --> 00:23:51,000
+first-order difference equation so let's take
+persamaan perbezaan tertib pertama jadi mari kita mengambil
+
+00:23:51,000 --> 00:23:54,000
+a first-order difference equation
+persamaan perbezaan tertib pertama
+
+00:23:54,000 --> 00:23:57,000
+as i've indicated here
+seperti yang telah saya dinyatakan di sini
+
+00:23:57,000 --> 00:24:01,000
+and so we have an equation that tells us that why I have and minus eight times
+dan dengan itu kita mempunyai persamaan yang memberitahu kita bahawa mengapa saya dan tolak lapan kali
+
+00:24:01,000 --> 00:24:03,000
+wider than -1
+lebih luas daripada -1
+
+00:24:03,000 --> 00:24:06,000
+is equal to exit
+adalah sama dengan keluar
+
+00:24:06,000 --> 00:24:09,000
+now if we want this to correspond to
+sekarang jika kita mahu ini sesuai dengan
+
+00:24:09,000 --> 00:24:13,000
+a causal linear time-invariant system we
+masa tak berubah-sistem linear sebab-musabab kita
+
+00:24:13,000 --> 00:24:17,000
+oppose initial impose initial rest on it we can
+menentang awal mengenakan rehat awal padanya kita boleh
+
+00:24:17,000 --> 00:24:21,000
+rewrite the first-order difference equation by taking
+menulis semula persamaan perbezaan tertib pertama dengan mengambil
+
+00:24:21,000 --> 00:24:24,000
+the term involving y ven -1
+jangka yang melibatkan y Ven -1
+
+00:24:24,000 --> 00:24:28,000
+over to the right hand side of the equation
+ke sebelah kanan persamaan
+
+00:24:28,000 --> 00:24:32,000
+right now this gives us a workers if equation
+sekarang ini memberi kita pekerja jika persamaan
+
+00:24:32,000 --> 00:24:38,000
+that expresses the output interns the input and past values at the output
+yang menyatakan pelatih output input dan nilai-nilai yang lepas pada keluaran
+
+00:24:38,000 --> 00:24:42,000
+and since we've impose causality
+dan kerana kita telah mengenakan sebab dan akibat
+
+00:24:42,000 --> 00:24:46,000
+and if we're talking about a linear time-invariant system
+dan jika kita bercakap mengenai sistem masa tak berubah linear
+
+00:24:46,000 --> 00:24:50,000
+we can now inquire as to what the impulse responses and we know of course
+kita kini boleh menyiasat tentang apa jawapan gerak hati dan kita tahu sudah tentu
+
+00:24:50,000 --> 00:24:52,000
+that the impulse response
+bahawa sambutan dedenyut
+
+00:24:52,000 --> 00:24:56,000
+charles is everything that we need to know about the system
+charles adalah segala-galanya yang kita perlu tahu tentang sistem
+
+00:24:56,000 --> 00:25:01,000
+okay so let's shoes and input which is
+okay jadi mari kasut dan input yang
+
+00:25:01,000 --> 00:25:04,000
+an impulse so the impulse response
+impuls jadi sambutan dedenyut
+
+00:25:04,000 --> 00:25:08,000
+is Beltre van corresponding
+Beltre adalah perkara sama
+
+00:25:08,000 --> 00:25:11,000
+to the exit and appear plus eighty Delta
+untuk keluar dan muncul ditambah lapan puluh Delta
+
+00:25:11,000 --> 00:25:15,000
+love this should be a chip N -1
+suka ini harus menjadi N cip -1
+
+00:25:15,000 --> 00:25:20,000
+and let me just correct that this is a chip N -1
+dan biarlah saya betul bahawa ini adalah satu cip N -1
+
+00:25:20,000 --> 00:25:24,000
+so we have the impulse response as Delta van
+jadi kita perlu sambutan dedenyut sebagai Delta van
+
+00:25:24,000 --> 00:25:28,000
+was eight times a Japan -1
+lapan kali Jepun -1
+
+00:25:28,000 --> 00:25:31,000
+now from initial rest we know
+kini dari yang lain awal kita tahu
+
+00:25:31,000 --> 00:25:36,000
+bad since the input namely an impulse is 0 for and less than zero
+buruk kerana input iaitu satu dorongan adalah 0 dan untuk kurang daripada sifar
+
+00:25:36,000 --> 00:25:40,000
+the impulse response is likewise 0
+sambutan dedenyut adalah begitu juga 0
+
+00:25:40,000 --> 00:25:43,000
+for and less 0 and now
+untuk dan kurang 0 dan kini
+
+00:25:43,000 --> 00:25:47,000
+let's work out what 80 its well
+mari kita bersenam apa yang baik 80
+
+00:25:47,000 --> 00:25:50,000
+80 with an equal 0 is
+80 dengan yang sama 0 adalah
+
+00:25:50,000 --> 00:25:54,000
+delta up zero plus eight times
+delta sehingga sifar ditambah lapan kali
+
+00:25:54,000 --> 00:25:57,000
+a chip N -1 HRN minus 10
+cip N -1 HRN tolak 10
+
+00:25:57,000 --> 00:26:04,000
+and so h0 is equal to 1
+dan sebagainya h0 ialah sama dengan 1
+
+00:26:05,000 --> 00:26:08,000
+okay now that we have a chance 0 we can figure at H
+okay sekarang kita mempunyai peluang 0 kita boleh memikirkan di H
+
+00:26:08,000 --> 00:26:11,000
+one by running this recursive equations
+satu dengan menjalankan ini persamaan rekursi
+
+00:26:11,000 --> 00:26:15,000
+so 8 you've won is
+jadi 8 anda telah memenangi adalah
+
+00:26:15,000 --> 00:26:18,000
+Delta love one which is zero
+Delta cinta satu yang adalah sifar
+
+00:26:18,000 --> 00:26:22,000
+plus eight times h0 which we just figured out as one
+ditambah lapan h0 kali yang kita hanya digambarkan sebagai salah satu
+
+00:26:22,000 --> 00:26:27,000
+so HR one is equal to a and if we carry this through
+jadi HR satu adalah sama dengan satu dan jika kita terus ini melalui
+
+00:26:27,000 --> 00:26:32,000
+will have a chip to equal to a squared and
+akan mempunyai cip dengan menghadiah kepada kuasa dua dan
+
+00:26:32,000 --> 00:26:36,000
+this will continue on and in fact we can recognize
+ini akan terus dan sebenarnya kita boleh mengakui
+
+00:26:36,000 --> 00:26:40,000
+by looking at this and how we would expect these terms to build
+dengan melihat ini dan bagaimana kita inginkan terma untuk membina
+
+00:26:40,000 --> 00:26:44,000
+we would see that the impulse response a Japan
+kita akan melihat bahawa sambutan dedenyut Jepun
+
+00:26:44,000 --> 00:26:48,000
+in fact -ism form a to the end times
+pada hakikatnya-ism borang untuk akhir zaman
+
+00:26:48,000 --> 00:26:50,000
+you have an
+anda mempunyai
+
+00:26:50,000 --> 00:26:54,000
+and we also can recognize then dead
+dan kita juga boleh mengenali kemudian mati
+
+00:26:54,000 --> 00:26:58,000
+this corresponds to stable system
+ini sepadan dengan sistem stabil
+
+00:26:58,000 --> 00:27:01,000
+if and only if the impulse response
+jika dan hanya jika sambutan dedenyut
+
+00:27:01,000 --> 00:27:06,000
+which is what we just figured out if and only if the impulse response
+iaitu apa yang kita hanya digambarkan jika dan hanya jika sambutan dedenyut
+
+00:27:06,000 --> 00:27:10,000
+is absolutely so noble and what that will require
+sememangnya begitu mulia dan apa yang akan memerlukan
+
+00:27:10,000 --> 00:27:17,000
+is that the magnitude a the less
+ialah magnitud yang kurang
+
+00:27:17,000 --> 00:27:21,000
+okay now we impose causality linear ready in time invariance
+okay sekarang kita mengenakan linear sebab dan akibat siap dalam masa invariance
+
+00:27:21,000 --> 00:27:25,000
+and generated a solution recur simply
+dan menjana penyelesaian yang berulang hanya
+
+00:27:25,000 --> 00:27:29,000
+and now of course if we want to generate the more general
+dan kini sudah tentu jika kita mahu menjana lebih umum
+
+00:27:29,000 --> 00:27:32,000
+center solutions to this difference equation
+penyelesaian pusat kepada persamaan perbezaan ini
+
+00:27:32,000 --> 00:27:36,000
+we can't do that by adding all of the
+kita tidak boleh berbuat demikian dengan menambah semua
+
+00:27:36,000 --> 00:27:40,000
+homogeneous solutions namely all the solutions to satisfy the homogeneous
+penyelesaian homogen iaitu semua penyelesaian untuk memenuhi homogen
+
+00:27:40,000 --> 00:27:43,000
+equation so
+persamaan jadi
+
+00:27:43,000 --> 00:27:47,000
+here we have the causal linear time-invariant
+di sini kita mempunyai sebab dan akibat yang linear masa tak berubah
+
+00:27:47,000 --> 00:27:50,000
+impulse response in fact
+tindak balas impuls sebenarnya
+
+00:27:50,000 --> 00:27:56,000
+with an impulse input all of the possible solutions
+dengan input gerak hati semua penyelesaian yang mungkin
+
+00:27:56,000 --> 00:27:59,000
+are that impulse response plus
+adalah bahawa gerak hati sambutan ditambah
+
+00:27:59,000 --> 00:28:05,000
+the homogeneous solutions the homogeneous solution is the solution
+penyelesaian yang homogen penyelesaian homogen adalah penyelesaian
+
+00:28:05,000 --> 00:28:08,000
+that satisfies the homogeneous equation
+yang memuaskan persamaan homogen
+
+00:28:08,000 --> 00:28:11,000
+that will in general
+yang akan di umum
+
+00:28:11,000 --> 00:28:14,000
+believe the form an amplitude factor
+percaya bentuk faktor amplitud
+
+00:28:14,000 --> 00:28:18,000
+times an exponential factor and
+kali faktor eksponen dan
+
+00:28:18,000 --> 00:28:21,000
+if we substitute this into this equation
+jika kita gantikan ini ke dalam persamaan ini
+
+00:28:21,000 --> 00:28:24,000
+then we see that the homogeneous
+maka kita lihat bahawa homogen
+
+00:28:24,000 --> 00:28:27,000
+equation is satisfied for any values have a
+persamaan berpuas hati bagi mana-mana nilai-nilai mempunyai
+
+00:28:27,000 --> 00:28:31,000
+in any values see that satisfy
+dalam mana-mana nilai-nilai melihat bahawa memadakan
+
+00:28:31,000 --> 00:28:36,000
+this equation again as we did with differential equations
+persamaan ini sekali lagi seperti yang kita lakukan dengan persamaan pembezaan
+
+00:28:36,000 --> 00:28:43,000
+the factor Amy cancels out and also in fact I can cancel out is either the N
+faktor Amy membatalkan keluar dan juga sebenarnya saya boleh membatalkan keluar ialah sama ada N
+
+00:28:43,000 --> 00:28:47,000
+there and seat to the end here
+sana dan kerusi berakhir di sini
+
+00:28:47,000 --> 00:28:51,000
+and so what we're left with is a statement that tells us
+dan sebagainya apa yang kita ditinggalkan dengan adalah kenyataan yang memberitahu kita
+
+00:28:51,000 --> 00:28:54,000
+then dead the homogeneous
+kemudian mati homogen
+
+00:28:54,000 --> 00:28:58,000
+solution is over for AC to the end
+penyelesaian adalah lebih untuk AC ke akhir
+
+00:28:58,000 --> 00:29:02,000
+for any ban you capital A and any value
+bagi apa-apa larangan anda modal A dan mana-mana nilai
+
+00:29:02,000 --> 00:29:05,000
+see it satisfies this equation and
+melihatnya memuaskan persamaan ini dan
+
+00:29:05,000 --> 00:29:08,000
+that values the in particular is the
+yang menghargai khususnya adalah
+
+00:29:08,000 --> 00:29:12,000
+people today so the homogeneous solution then
+orang hari ini supaya penyelesaian homogen kemudian
+
+00:29:12,000 --> 00:29:16,000
+is any exponential this form with any amplitude factor
+sebarang eksponen borang ini dengan mana-mana faktor amplitud
+
+00:29:16,000 --> 00:29:20,000
+and so the family of solutions with an impulse
+dan sebagainya keluarga penyelesaian dengan satu dorongan
+
+00:29:20,000 --> 00:29:24,000
+input is the solution
+input adalah penyelesaian
+
+00:29:24,000 --> 00:29:28,000
+corresponding to the system being cause a linear and time-invariant
+bersamaan dengan sistem itu menyebabkan linear dan masa tak berubah
+
+00:29:28,000 --> 00:29:32,000
+plus the homogeneous sir
+ditambah tuan homogen
+
+00:29:32,000 --> 00:29:33,000
+if
+
+
+00:29:33,000 --> 00:29:37,000
+we impose causality Lenny a ready in time invariance
+kita mengenakan sebab dan akibat Lenny yang siap dalam masa invariance
+
+00:29:37,000 --> 00:29:40,000
+on the system then of course that additional
+pada sistem maka sudah tentu yang tambahan
+
+00:29:40,000 --> 00:29:44,000
+exponential factor will be 0 in other words capital A
+faktor eksponen akan 0 dalam modal erti kata lain A
+
+00:29:44,000 --> 00:29:48,000
+is 0
+adalah 0
+
+00:29:48,000 --> 00:29:53,000
+okay now in we seen the
+okay sekarang dalam kita melihat
+
+00:29:53,000 --> 00:29:56,000
+differential equations and difference equations interns
+persamaan pembezaan dan perbezaan persamaan intern
+
+00:29:56,000 --> 00:29:57,000
+love
+cinta
+
+00:29:57,000 --> 00:30:01,000
+the fact there there are families have solutions
+kes di ada keluarga mempunyai penyelesaian
+
+00:30:01,000 --> 00:30:05,000
+and in order to get causality Lenny a ready in time
+dan untuk mendapatkan sebab-musabab Lenny yang siap dalam masa
+
+00:30:05,000 --> 00:30:09,000
+variance requires imposing a particular set initial conditions namely
+varians memerlukan mengenakan khususnya syarat-syarat awal set iaitu
+
+00:30:09,000 --> 00:30:12,000
+imposing initial rest on the system
+mengenakan rehat awal pada sistem
+
+00:30:12,000 --> 00:30:17,000
+let's now look at the difference equation
+mari kita lihat kepada persamaan perbezaan
+
+00:30:17,000 --> 00:30:23,000
+and then later the differential equation interpreted in block diagrams
+dan kemudian persamaan pengkamiran ditafsirkan dalam gambar rajah blok
+
+00:30:23,000 --> 00:30:26,000
+now p the difference equation at
+kini p persamaan perbezaan di
+
+00:30:26,000 --> 00:30:30,000
+I just simply repeated here is why I have an
+Saya hanya hanya mengulangi di sini ialah mengapa saya mempunyai
+
+00:30:30,000 --> 00:30:33,000
+is accident was a white van -1
+adalah kemalangan adalah sebuah van putih -1
+
+00:30:33,000 --> 00:30:36,000
+where I've taken that the late term
+di mana saya telah mengambil bahawa istilah lewat
+
+00:30:36,000 --> 00:30:40,000
+over to the right hand side of the equation so in effect
+ke sebelah kanan persamaan supaya di kesan
+
+00:30:40,000 --> 00:30:44,000
+what on imposing on this system is causality
+apa yang di mengenakan ke atas sistem ini adalah sebab dan akibat
+
+00:30:44,000 --> 00:30:47,000
+I'm assuming that if I know the past history
+Saya menganggap bahawa jika saya tahu sejarah masa lalu
+
+00:30:47,000 --> 00:30:51,000
+the input and the output I can determine
+input dan output yang saya boleh menentukan
+
+00:30:51,000 --> 00:30:53,000
+the next value the out
+nilai seterusnya keluar
+
+00:30:53,000 --> 00:30:57,000
+well we can in fact draw a block diagram
+juga kita sebenarnya boleh lukis rajah blok
+
+00:30:57,000 --> 00:31:01,000
+represents that equation the equation says
+mewakili persamaan persamaan kata
+
+00:31:01,000 --> 00:31:04,000
+we take exit and for any given bad you
+kita mengambil keluar dan bagi apa-apa yang tidak baik diberikan anda
+
+00:31:04,000 --> 00:31:09,000
+a van say n0 whatever bad you were computing the output were
+van yang mengatakan apa sahaja N0 buruk anda telah pengiraan output telah
+
+00:31:09,000 --> 00:31:12,000
+we take the input at that time
+kita mengambil input pada masa itu
+
+00:31:12,000 --> 00:31:16,000
+and and to it the factor a
+dan dan ia faktor yang
+
+00:31:16,000 --> 00:31:22,000
+times the output value that we calculated last time so
+kali nilai output yang kita dikira masa lalu jadi
+
+00:31:22,000 --> 00:31:26,000
+if we have excessive and which is our input
+jika kita mempunyai berlebihan dan yang input kami
+
+00:31:26,000 --> 00:31:29,000
+and if we have why I have and which is our output
+dan jika kita mempunyai mengapa saya ada dan yang merupakan keluaran kami
+
+00:31:29,000 --> 00:31:33,000
+we in fact can't get why I have an
+kita sebenarnya tidak boleh mendapatkan mengapa saya mempunyai
+
+00:31:33,000 --> 00:31:37,000
+by taking the last value why event
+dengan mengambil nilai lepas mengapa acara
+
+00:31:37,000 --> 00:31:41,000
+indicated here by putting why I have an
+ditunjukkan di sini dengan meletakkan mengapa saya mempunyai
+
+00:31:41,000 --> 00:31:45,000
+threw it away multiplying Matt
+melemparkan ia jauh mendarabkan Matt
+
+00:31:45,000 --> 00:31:49,000
+by the factor
+dengan faktor
+
+00:31:49,000 --> 00:31:51,000
+a
+
+
+00:31:51,000 --> 00:31:56,000
+and then Anning that result
+dan kemudian Anning hasil yang
+
+00:31:56,000 --> 00:31:57,000
+to
+
+
+00:31:57,000 --> 00:31:59,000
+the input
+input
+
+00:31:59,000 --> 00:32:03,000
+and the result the doing that is
+dan hasilnya melakukan yang
+
+00:32:03,000 --> 00:32:05,000
+why event
+mengapa acara
+
+00:32:05,000 --> 00:32:08,000
+so the way this block diagram
+jadi cara gambarajah blok ini
+
+00:32:08,000 --> 00:32:13,000
+might be interpreted for example as an algorithm is this a
+mungkin ditafsirkan sebagai contoh sebagai algoritma adalah ini
+
+00:32:13,000 --> 00:32:17,000
+dead we take exit Van add to it
+mati kita mengambil keluar Van menambah kepadanya
+
+00:32:17,000 --> 00:32:22,000
+eight times the previous value the output that some gives us
+lapan kali nilai sebelumnya output bahawa beberapa memberikan kita
+
+00:32:22,000 --> 00:32:26,000
+the current value of the output which we then put out of the system
+nilai semasa output yang kemudiannya kami memadamkan sistem
+
+00:32:26,000 --> 00:32:30,000
+and also put into a delay element or
+dan juga dimasukkan ke dalam unsur kelewatan atau
+
+00:32:30,000 --> 00:32:35,000
+basically it was stored register to use on the next generation a recursion
+pada dasarnya ia disimpan daftar untuk digunakan pada generasi akan datang yang rekursi
+
+00:32:35,000 --> 00:32:40,000
+now how do we get this started well we know that the difference equation
+sekarang bagaimana kita mendapatkan ini bermula dengan baik kita tahu bahawa persamaan perbezaan
+
+00:32:40,000 --> 00:32:41,000
+requires initial conditions
+memerlukan keadaan awal
+
+00:32:41,000 --> 00:32:44,000
+and in fact the initial conditions
+dan sebenarnya keadaan awal
+
+00:32:44,000 --> 00:32:48,000
+correspond to what we store
+sesuai dengan apa yang kita menyimpan
+
+00:32:48,000 --> 00:32:52,000
+in that the late register when this block diagram
+dalam bahawa daftar lewat apabila gambarajah blok ini
+
+00:32:52,000 --> 00:32:55,000
+equation initially starts up
+persamaan mulanya dimulakan
+
+00:32:55,000 --> 00:32:58,000
+okay now let's look at
+okay sekarang mari kita lihat
+
+00:32:58,000 --> 00:33:02,000
+this for the case %uh difference equations
+ini untuk kes% uh persamaan beza
+
+00:33:02,000 --> 00:33:06,000
+more generally
+secara umum
+
+00:33:06,000 --> 00:33:13,000
+so what we said is dead we can calculate the output by
+jadi apa yang kita kata mati kita boleh mengira pengeluaran sebanyak
+
+00:33:13,000 --> 00:33:16,000
+having previous values that the input
+mempunyai nilai-nilai sebelum ini bahawa input
+
+00:33:16,000 --> 00:33:20,000
+previous values at the output and forming
+nilai-nilai sebelumnya pada keluaran dan membentuk
+
+00:33:20,000 --> 00:33:24,000
+the appropriate linear combination so
+gabungan linear yang sesuai supaya
+
+00:33:24,000 --> 00:33:27,000
+let's just build up the more general block diagram
+mari kita hanya membina gambarajah blok yang lebih umum
+
+00:33:27,000 --> 00:33:31,000
+that would correspond to this
+yang akan sesuai dengan ini
+
+00:33:31,000 --> 00:33:35,000
+and what it says is that we want to have a mechanism
+dan apa yang dikatakannya adalah bahawa kami mahu mempunyai satu mekanisme
+
+00:33:35,000 --> 00:33:41,000
+restoring past values the input in a mechanism for story past values at the
+memulihkan lalu menghargai input dalam mekanisme untuk nilai-nilai yang lepas cerita di
+
+00:33:41,000 --> 00:33:41,000
+output
+output
+
+00:33:41,000 --> 00:33:45,000
+and i've indicated that on this figure
+dan saya telah menunjukkan bahawa pada angka ini
+
+00:33:45,000 --> 00:33:48,000
+so far by a chain love
+setakat ini oleh cinta rantaian
+
+00:33:48,000 --> 00:33:52,000
+the layout its indicating
+susun atur yang menunjukkan yang
+
+00:33:52,000 --> 00:33:55,000
+that whatever what
+bahawa apa sahaja yang
+
+00:33:55,000 --> 00:33:58,000
+the output each delay is the input
+output setiap kelewatan adalah input
+
+00:33:58,000 --> 00:34:02,000
+delayed by one time it's
+terlewat satu masa ia
+
+00:34:02,000 --> 00:34:06,000
+or or interval and so
+atau atau selang dan sebagainya
+
+00:34:06,000 --> 00:34:10,000
+what we see down this chain of the ladies are the late replications
+apa yang kita lihat ke bawah rantaian ini daripada wanita adalah replikasi lewat
+
+00:34:10,000 --> 00:34:14,000
+love the input and what we see
+suka input dan apa yang kita lihat
+
+00:34:14,000 --> 00:34:18,000
+on the other chain is delayed
+pada rantai lain ditangguhkan
+
+00:34:18,000 --> 00:34:22,000
+replications love the output
+replikasi suka output
+
+00:34:22,000 --> 00:34:26,000
+now the difference equation says that we want to take these
+kini persamaan perbezaan mengatakan bahawa kita mahu mengambil ini
+
+00:34:26,000 --> 00:34:31,000
+and multiply them by the appropriate coefficients
+dan menggandakan mereka dengan pekali sesuai
+
+00:34:31,000 --> 00:34:34,000
+the coefficients in the difference equation and so we can do that
+pekali dalam persamaan perbezaan tersebut dan supaya kita boleh berbuat demikian
+
+00:34:34,000 --> 00:34:38,000
+as i've indicated here so
+seperti yang telah saya dinyatakan di sini supaya
+
+00:34:38,000 --> 00:34:42,000
+now we have these delay elements each multiplied
+sekarang kita mempunyai unsur-unsur kelewatan setiap didarab
+
+00:34:42,000 --> 00:34:46,000
+by the appropriate coefficients on the input and by
+oleh pekali sesuai pada input dan dengan
+
+00:34:46,000 --> 00:34:51,000
+appropriate coefficients on the output those are then
+pekali sesuai pada keluaran mereka adalah kemudian
+
+00:34:51,000 --> 00:34:54,000
+songs together and
+lagu-lagu bersama-sama dan
+
+00:34:54,000 --> 00:34:59,000
+so we now what's on these and what's on these
+jadi kami kini apa yang di ini dan apa yang ini
+
+00:34:59,000 --> 00:35:02,000
+after we've some these we want to add
+selepas kami telah beberapa ini kita mahu menambah
+
+00:35:02,000 --> 00:35:06,000
+those together and there's a factor 1 over 80 that comes in
+mereka bersama-sama dan ada faktor 1 lebih 80 yang datang dalam
+
+00:35:06,000 --> 00:35:10,000
+and that and generates are out
+dan itu dan menjana berada di luar
+
+00:35:10,000 --> 00:35:13,000
+and so this in fact and
+dan sebagainya ini sebenarnya dan
+
+00:35:13,000 --> 00:35:19,000
+represents a block diagram which is a general block diagram for implementing
+mewakili gambarajah blok yang merupakan gambarajah blok umum untuk melaksanakan
+
+00:35:19,000 --> 00:35:23,000
+war representing near constant coefficient difference
+perang mewakili perbezaan pekali berhampiran berterusan
+
+00:35:23,000 --> 00:35:25,000
+wage
+gaji
+
+00:35:25,000 --> 00:35:29,000
+now if you think about what it means in terms of what's a computer algorithm or
+sekarang jika anda berfikir tentang apa yang dimaksudkan dari segi apa yang algoritma komputer atau
+
+00:35:29,000 --> 00:35:30,000
+a piece of hardware
+sekeping perkakasan
+
+00:35:30,000 --> 00:35:34,000
+in fact this block diagram is a recipe or algorithm for doing the
+sebenarnya gambarajah blok ini adalah satu resipi atau algoritma untuk melakukan
+
+00:35:34,000 --> 00:35:35,000
+implementation
+pelaksanaan
+
+00:35:35,000 --> 00:35:39,000
+by it's important to
+oleh itu adalah penting untuk
+
+00:35:39,000 --> 00:35:43,000
+recognize even at this point dad it's only one
+mengiktiraf walaupun pada ketika ayah ini ia hanya satu
+
+00:35:43,000 --> 00:35:47,000
+many possible algorithms or implementations for this difference
+banyak algoritma mungkin atau pelaksanaan bagi perbezaan ini
+
+00:35:47,000 --> 00:35:49,000
+wage
+gaji
+
+00:35:49,000 --> 00:35:51,000
+just for example
+hanya sebagai contoh
+
+00:35:51,000 --> 00:35:57,000
+I can consider that equation
+Saya boleh mempertimbangkan persamaan yang
+
+00:35:57,000 --> 00:35:59,000
+core that block diagram
+teras yang menghalang gambar rajah
+
+00:35:59,000 --> 00:36:04,000
+and here I've redrawn at so
+dan di sini saya telah dilukis semula jadi di
+
+00:36:04,000 --> 00:36:08,000
+here once again I have the same block diagram that we just saw
+di sini sekali lagi saya mempunyai gambarajah blok yang sama bahawa kita hanya melihat
+
+00:36:08,000 --> 00:36:12,000
+and I can recognize for example
+dan saya boleh kenal sebagai contoh
+
+00:36:12,000 --> 00:36:16,000
+that this in essence corresponds to
+yang pada asasnya ini sepadan dengan
+
+00:36:16,000 --> 00:36:19,000
+to linear time-invariant systems
+untuk sistem linear masa tak berubah
+
+00:36:19,000 --> 00:36:22,000
+in cascade
+lata
+
+00:36:22,000 --> 00:36:25,000
+now that assumes of course that my
+sekarang yang menganggap kursus yang saya
+
+00:36:25,000 --> 00:36:29,000
+initial conditions are such dad I that the system is in fact
+keadaan awal adalah ayah seperti saya bahawa sistem itu adalah sebenarnya
+
+00:36:29,000 --> 00:36:34,000
+when you're and that in turn requires that we're assuming initial rest namely
+apabila anda dan seterusnya memerlukan kita menganggap rehat awal iaitu
+
+00:36:34,000 --> 00:36:36,000
+before the input does anything
+sebelum input melakukan apa-apa
+
+00:36:36,000 --> 00:36:40,000
+other than 0 there are just zero value stored in the registers
+selain daripada 0 terdapat hanya sifar nilai yang disimpan di dalam daftar-daftar yang
+
+00:36:40,000 --> 00:36:45,000
+but assuming that it corresponds to a linear time-invariant system
+tetapi menganggap bahawa ia sepadan dengan sistem masa tak berubah linear
+
+00:36:45,000 --> 00:36:50,000
+this is a cascade to linear time-invariant systems
+ini adalah satu lata untuk linear sistem masa tak berubah
+
+00:36:50,000 --> 00:36:53,000
+we know that two linear time-invariant systems can be cascaded
+kita tahu bahawa kedua-dua sistem masa tak berubah linear boleh disebarkan
+
+00:36:53,000 --> 00:36:57,000
+in either order so in particular I can consider
+sama ada perintah yang khususnya saya boleh mempertimbangkan
+
+00:36:57,000 --> 00:37:01,000
+breaking this cascade here and moving this block
+melanggar lata ini di sini dan bergerak blok ini
+
+00:37:01,000 --> 00:37:04,000
+over to the other side and so let's just
+kepada pihak lain dan supaya mari kita hanya
+
+00:37:04,000 --> 00:37:08,000
+do that
+berbuat demikian
+
+00:37:08,000 --> 00:37:11,000
+and when I do
+dan apabila saya melakukan
+
+00:37:11,000 --> 00:37:13,000
+I then have
+Saya kemudian mempunyai
+
+00:37:13,000 --> 00:37:16,000
+this combination systems
+sistem gabungan ini
+
+00:37:16,000 --> 00:37:20,000
+and of course you can ask what advantage there is to do in at
+dan sudah tentu anda boleh bertanya apa kelebihan ada untuk melakukan di di
+
+00:37:20,000 --> 00:37:23,000
+and the advantage arises because it the fact
+dan kelebihan ini timbul kerana ia hakikat
+
+00:37:23,000 --> 00:37:27,000
+there'd in this form
+ada sebaiknya di dalam borang ini
+
+00:37:27,000 --> 00:37:31,000
+exactly what is stored in these delays
+betul-betul apa yang disimpan dalam kelewatan ini
+
+00:37:31,000 --> 00:37:34,000
+is also stored in the still air registers
+juga disimpan dalam daftar udara masih
+
+00:37:34,000 --> 00:37:38,000
+in other words it's this intermediate variable
+dalam erti kata lain ia berubah-ubah pengantara ini
+
+00:37:38,000 --> 00:37:42,000
+whatever it is down this chain of delays and down this chain of the ladies
+apa sahaja ia turun rantai kelewatan dan ke bawah rantaian ini daripada wanita
+
+00:37:42,000 --> 00:37:46,000
+and so in fact I can collapse those delays
+dan sebagainya sebenarnya saya boleh runtuh mereka kelewatan
+
+00:37:46,000 --> 00:37:49,000
+into a single chain of delays and
+ke dalam rantaian tunggal kelewatan dan
+
+00:37:49,000 --> 00:37:54,000
+the network that I'm left with is the network that I indicate
+rangkaian yang saya ditinggalkan dengan adalah rangkaian yang saya nyatakan
+
+00:37:54,000 --> 00:37:59,000
+I missed you graph where what I've done is to simply collapse that
+Saya terlepas anda graf di mana apa yang saya lakukan adalah dengan hanya runtuh yang
+
+00:37:59,000 --> 00:38:02,000
+double chain of the ladies into a single chain
+rantaian dua daripada wanita dalam rantaian tunggal
+
+00:38:02,000 --> 00:38:04,000
+the waves
+ombak
+
+00:38:04,000 --> 00:38:08,000
+now want to ask well what's the advantage to doing that and the
+kini ingin bertanya juga apa yang kelebihan untuk melakukan itu dan
+
+00:38:08,000 --> 00:38:09,000
+advantage
+kelebihan
+
+00:38:09,000 --> 00:38:14,000
+one advantage simply stated is that when you think in terms of an implementation
+satu kelebihan hanya dinyatakan ialah apabila anda berfikir dari segi pelaksanaan sesuatu
+
+00:38:14,000 --> 00:38:15,000
+of a difference equation
+persamaan perbezaan
+
+00:38:15,000 --> 00:38:18,000
+the lady corresponds to
+wanita sepadan dengan
+
+00:38:18,000 --> 00:38:22,000
+storage register a memory location and by this
+penyimpanan mendaftar lokasi memori dan dengan ini
+
+00:38:22,000 --> 00:38:26,000
+by simply using the fact that we can interchange the order in which linear
+dengan hanya menggunakan fakta bahawa kita boleh bertukar ganti susunan linear
+
+00:38:26,000 --> 00:38:28,000
+time-invariant systems are cascaded
+sistem masa tak berubah juga diadakan
+
+00:38:28,000 --> 00:38:33,000
+we can reduce the amount of memory by a factor to
+kita boleh mengurangkan jumlah memori dengan satu faktor untuk
+
+00:38:33,000 --> 00:38:35,000
+okay now
+okay sekarang
+
+00:38:35,000 --> 00:38:40,000
+and essentially similar procedure can also be used for
+dan prosedur serupa tetapi juga boleh digunakan untuk
+
+00:38:40,000 --> 00:38:44,000
+differential equations in terms of implementation
+persamaan pembezaan dari segi pelaksanaan
+
+00:38:44,000 --> 00:38:48,000
+using block diagrams for the interpretation implementations
+menggunakan gambarajah blok bagi pelaksanaan tafsiran
+
+00:38:48,000 --> 00:38:52,000
+using like diagrams and let me first do that
+menggunakan seperti gambar rajah dan biarlah saya terlebih dahulu melakukannya
+
+00:38:52,000 --> 00:38:55,000
+rather than in general let me first do it in the in
+bukannya secara umum biarlah saya terlebih dahulu melakukannya dalam dalam
+
+00:38:55,000 --> 00:39:00,000
+the context love a specific example
+konteksnya suka contoh khusus
+
+00:39:00,000 --> 00:39:02,000
+so
+
+
+00:39:02,000 --> 00:39:08,000
+let's consider a when your constant coefficient differential equation as
+mari kita mempertimbangkan apabila persamaan pekali selisih anda sebagai
+
+00:39:08,000 --> 00:39:09,000
+i've indicated here
+Saya ditunjukkan di sini
+
+00:39:09,000 --> 00:39:13,000
+and I have terms on the left side in terms on the right side
+dan saya mempunyai terma pada sebelah kiri dari segi di sebelah kanan
+
+00:39:13,000 --> 00:39:18,000
+and with the differential equation
+dan dengan persamaan pengkamiran
+
+00:39:18,000 --> 00:39:21,000
+let's consider taking overturns
+mari kita menimbang untuk mengambil terbalik
+
+00:39:21,000 --> 00:39:24,000
+over to the right side of the equation except
+ke yang sebelah kanan persamaan kecuali
+
+00:39:24,000 --> 00:39:29,000
+for the highest the residue in the output next we
+untuk tertinggi baki dalam output kita seterusnya
+
+00:39:29,000 --> 00:39:32,000
+integrate both sides of the equation are so that
+mengintegrasikan kedua-dua belah persamaan adalah supaya
+
+00:39:32,000 --> 00:39:36,000
+when we're done we end up with the on the left side of the equation
+apabila kita selesai kita berakhir dengan di sebelah kiri persamaan
+
+00:39:36,000 --> 00:39:41,000
+with y ft on the right side of the equation with the appropriate number
+dengan y kaki di sebelah kanan persamaan dengan nombor yang sesuai
+
+00:39:41,000 --> 00:39:44,000
+%uh integrations and so the InterPro equation
+% Uh integrasi dan sebagainya persamaan InterPro yang
+
+00:39:44,000 --> 00:39:49,000
+that will get is for this example y ft the output is except the
+yang akan mendapat adalah untuk ini contoh y ft output adalah kecuali
+
+00:39:49,000 --> 00:39:53,000
+plus be the scale factor times the integral
+ditambah menjadi skala kali faktor kamiran
+
+00:39:53,000 --> 00:39:57,000
+the input and -8 at scale factor times the integral
+input dan -8 pada skala kali faktor kamiran
+
+00:39:57,000 --> 00:40:00,000
+the output so to
+output jadi untuk
+
+00:40:00,000 --> 00:40:04,000
+form the output in a block diagram turns
+membentuk output dalam blok diagram-gilir
+
+00:40:04,000 --> 00:40:07,000
+we form a linear combination of the input
+kita membentuk gabungan linear input
+
+00:40:07,000 --> 00:40:11,000
+scaled in to grow the input and a scale
+diskalakan di berkembang input dan skala yang
+
+00:40:11,000 --> 00:40:14,000
+integral love the output all of that and it together
+penting suka output semua itu dan ia bersama-sama
+
+00:40:14,000 --> 00:40:17,000
+so we need in addition to
+jadi kita perlu sebagai tambahan kepada
+
+00:40:17,000 --> 00:40:21,000
+the input we need the integral
+input yang kita perlukan kamiran
+
+00:40:21,000 --> 00:40:24,000
+love the input and so this box indicates an integrator
+suka input dan sebagainya kotak ini menunjukkan pengamir
+
+00:40:24,000 --> 00:40:28,000
+in addition to the output we need
+sebagai tambahan kepada output yang kita perlukan
+
+00:40:28,000 --> 00:40:31,000
+the integral the output and now
+kamiran output dan kini
+
+00:40:31,000 --> 00:40:34,000
+to for why ft we
+untuk mengapa kaki kita
+
+00:40:34,000 --> 00:40:38,000
+multiply the integrated in play
+membiak bersepadu dalam permainan
+
+00:40:38,000 --> 00:40:42,000
+by the scale factor B and
+oleh faktor B skala dan
+
+00:40:42,000 --> 00:40:46,000
+and back to exit C
+dan menyokong untuk keluar C
+
+00:40:46,000 --> 00:40:51,000
+and retake the integrated output multiplied by Minas de
+dan mengambil semula output bersepadu didarab dengan Minas de
+
+00:40:51,000 --> 00:40:55,000
+and and to that
+dan dan yang
+
+00:40:55,000 --> 00:40:58,000
+the result are the previous addition
+hasilnya adalah tambahan yang lepas
+
+00:40:58,000 --> 00:41:02,000
+and according to the integral equation then that forms
+dan menurut persamaan kamiran kemudian bahawa bentuk-bentuk
+
+00:41:02,000 --> 00:41:05,000
+the output
+output
+
+00:41:05,000 --> 00:41:08,000
+so just as we did with the difference equation
+jadi seperti yang kita lakukan dengan persamaan perbezaan
+
+00:41:08,000 --> 00:41:11,000
+we've converted the differential equation to
+kami telah ditukar persamaan pembezaan untuk
+
+00:41:11,000 --> 00:41:16,000
+an integral equation and we have a block diagram for very similar
+satu persamaan penting dan kami mempunyai gambarajah blok untuk hampir sama
+
+00:41:16,000 --> 00:41:20,000
+to what we had in the case the difference equation now the initial
+dengan apa yang kita mempunyai dalam kes persamaan perbezaan sekarang awal
+
+00:41:20,000 --> 00:41:22,000
+conditions of course
+syarat-syarat kursus
+
+00:41:22,000 --> 00:41:25,000
+are tied up and again how these integrators
+terikat dan sekali lagi bagaimana penyepadu ini
+
+00:41:25,000 --> 00:41:30,000
+are initialized assuming that we impose initial rest on the system
+adalah dimulakan dengan anggapan bahawa kita mengenakan rehat awal pada sistem
+
+00:41:30,000 --> 00:41:35,000
+weekend thinkers the overall system is a linear time-invariant system
+hujung minggu Pemikir keseluruhan sistem adalah sistem masa tak berubah linear
+
+00:41:35,000 --> 00:41:39,000
+and it's a cascade one linear time-invariant system with the second
+dan ia lata satu sistem masa tak berubah linear dengan kedua
+
+00:41:39,000 --> 00:41:43,000
+so we can in fact
+jadi kita boleh sebenarnya
+
+00:41:43,000 --> 00:41:45,000
+break this
+memecahkan ini
+
+00:41:45,000 --> 00:41:51,000
+and consider interchanging the order in which these two systems a cascade
+dan mempertimbangkan interchanging susunan kedua-dua sistem lata
+
+00:41:51,000 --> 00:41:55,000
+and so i've indicated that down below here
+dan jadi saya menunjukkan bahawa ke bawah di bawah sini
+
+00:41:55,000 --> 00:41:58,000
+I've simply taken the top block diagram
+Saya hanya mengambil gambar rajah blok atas
+
+00:41:58,000 --> 00:42:02,000
+interchange the order in which the to
+bertukar ganti perintah itu di mana untuk
+
+00:42:02,000 --> 00:42:06,000
+systems are cascaded and
+sistem yang disebarkan dan
+
+00:42:06,000 --> 00:42:09,000
+here again we can ask what the advantages to this
+di sini sekali lagi kita boleh bertanya apa kelebihan kepada ini
+
+00:42:09,000 --> 00:42:13,000
+as opposed to the previous one and what you can see
+bertentangan dengan yang sebelumnya dan apa yang anda boleh lihat
+
+00:42:13,000 --> 00:42:16,000
+just as we saw with the difference equation is that
+seperti yang kita lihat dengan persamaan perbezaan adalah bahawa
+
+00:42:16,000 --> 00:42:19,000
+now the integrators both integrators
+kini penyepadu kedua-dua penyepadu
+
+00:42:19,000 --> 00:42:22,000
+are integrating the same thing in particular
+mengintegrasikan perkara yang sama khususnya
+
+00:42:22,000 --> 00:42:27,000
+the input to this integrator and the input
+input untuk penyepadu ini dan input
+
+00:42:27,000 --> 00:42:31,000
+to this integrator are identical so in fact
+untuk penyepadu ini adalah sama jadi sebenarnya
+
+00:42:31,000 --> 00:42:35,000
+rather than using this one we can simply tap of
+daripada menggunakan satu ini kita hanya boleh mengetuk daripada
+
+00:42:35,000 --> 00:42:39,000
+from here we can in fact remove this integrator
+dari sini kita sebenarnya boleh mengeluarkan penyepadu ini
+
+00:42:39,000 --> 00:42:42,000
+break this connection
+memecahkan hubungan ini
+
+00:42:42,000 --> 00:42:46,000
+and happy and at this point and so
+dan bahagia dan pada ketika ini dan sebagainya
+
+00:42:46,000 --> 00:42:50,000
+what we've done and by interchange in the order in which the systems are
+apa yang kami lakukan dan dengan pertukaran dalam perintah itu di mana sistem yang
+
+00:42:50,000 --> 00:42:51,000
+cascaded
+disebarkan
+
+00:42:51,000 --> 00:42:56,000
+is reduced the implementation to the implementation
+dikurangkan pelaksanaan untuk pelaksanaan
+
+00:42:56,000 --> 00:42:59,000
+with a single integrated very much similar to
+dengan bersepadu amat serupa dengan
+
+00:42:59,000 --> 00:43:02,000
+what we talked about in the case the difference wage
+apa yang kita bercakap tentang dalam kes gaji perbezaan
+
+00:43:02,000 --> 00:43:06,000
+now let's just again with the integral equation
+sekarang mari kita hanya lagi dengan persamaan kamiran
+
+00:43:06,000 --> 00:43:10,000
+way the differential equation looked at
+cara persamaan pengkamiran melihat
+
+00:43:10,000 --> 00:43:13,000
+this somewhat more generally again
+ini agak lebih umum lagi
+
+00:43:13,000 --> 00:43:18,000
+if we take the differential equation the general differential equation
+jika kita mengambil persamaan pembezaan persamaan pengkamiran umum
+
+00:43:18,000 --> 00:43:23,000
+integrated a sufficient number of times to convert it to an integral equation
+bersepadu yang mencukupi kali untuk menukar kepada satu persamaan kamiran
+
+00:43:23,000 --> 00:43:27,000
+we would then have this cascaded systems
+kita kemudian akan mempunyai ini sistem disebarkan
+
+00:43:27,000 --> 00:43:32,000
+and again if we assume initial rest
+dan sekali lagi jika kita menganggap rehat awal
+
+00:43:32,000 --> 00:43:35,000
+so that these are both linear time-invariant systems
+supaya kedua-duanya adalah sistem masa tak berubah linear
+
+00:43:35,000 --> 00:43:38,000
+we can interchange the order in which they are cascaded
+kita boleh bertukar ganti perintah itu di mana ia disebarkan
+
+00:43:38,000 --> 00:43:42,000
+namely take the second system and
+iaitu mengambil sistem kedua dan
+
+00:43:42,000 --> 00:43:44,000
+move it
+memindahkannya
+
+00:43:44,000 --> 00:43:48,000
+to proceed the first system
+untuk meneruskan sistem pertama
+
+00:43:48,000 --> 00:43:51,000
+and then we recognize is that the input to this change
+dan kemudian kita menyedari bahawa input untuk perubahan ini
+
+00:43:51,000 --> 00:43:56,000
+integrators and this change integrators is exactly the same
+penyepadu dan ini penyepadu perubahan adalah sama
+
+00:43:56,000 --> 00:43:59,000
+and so in fact we can collapse these together
+dan sebagainya sebenarnya kita boleh runtuh ini bersama-sama
+
+00:43:59,000 --> 00:44:03,000
+using only one change integrators and the system
+dengan hanya menggunakan satu penyepadu perubahan dan sistem
+
+00:44:03,000 --> 00:44:07,000
+there we're left with then is system
+ada kita ditinggalkan dengan maka adalah sistem
+
+00:44:07,000 --> 00:44:10,000
+that looks as i've indicated here so we have
+yang kelihatan seperti yang telah saya dinyatakan di sini supaya kita mempunyai
+
+00:44:10,000 --> 00:44:14,000
+now just a single chain integrators
+kini hanya penyepadu rantaian tunggal
+
+00:44:14,000 --> 00:44:18,000
+is that a the two sets in
+adalah bahawa kedua-dua set dalam
+
+00:44:18,000 --> 00:44:23,000
+so we've seen that the situation is very similar here as it was in the case the
+jadi kami telah melihat bahawa keadaan hampir sama di sini kerana ia adalah dalam kes yang
+
+00:44:23,000 --> 00:44:24,000
+difference equation
+persamaan perbezaan
+
+00:44:24,000 --> 00:44:28,000
+again why do we want to cut the number integrators in half
+sekali lagi mengapa kita mahu mengurangkan bilangan penyepadu pada separuh
+
+00:44:28,000 --> 00:44:33,000
+well one reason is because integrators in effect represent hardware
+juga salah satu sebab adalah kerana penyatu di dalam kesan mewakili perkakasan
+
+00:44:33,000 --> 00:44:37,000
+and if we use half as much if we have half as many integrators
+dan jika kita menggunakan separuh banyak jika kita mempunyai setengah banyak penyepadu
+
+00:44:37,000 --> 00:44:41,000
+then using half as much hard
+kemudian menggunakan separuh lebih keras
+
+00:44:41,000 --> 00:44:45,000
+okay well let me just conclude by summarizing
+okay juga biarlah saya membuat kesimpulan dengan meringkaskan
+
+00:44:45,000 --> 00:44:49,000
+a number of points I indicated at the beginning
+beberapa mata saya telah menyatakan pada awal
+
+00:44:49,000 --> 00:44:53,000
+that linear constant coefficient differential equations a difference
+bahawa pekali selisih linear persamaan perbezaan
+
+00:44:53,000 --> 00:44:54,000
+equations
+persamaan
+
+00:44:54,000 --> 00:44:58,000
+will play an important role as linear time-invariant systems
+akan memainkan peranan yang penting sebagai sistem masa tak berubah linear
+
+00:44:58,000 --> 00:45:03,000
+throughout this coursing throughout the center lectures
+sepanjang ini pemburuan arnab sepanjang kuliah pusat
+
+00:45:03,000 --> 00:45:06,000
+I also stress
+Saya juga tekanan
+
+00:45:06,000 --> 00:45:10,000
+the fact that differential or difference equations
+hakikat bahawa perbezaan atau perbezaan persamaan
+
+00:45:10,000 --> 00:45:14,000
+by themselves are not a complete specification
+sahaja tidak spesifikasi lengkap
+
+00:45:14,000 --> 00:45:17,000
+the system because of the fact that we can and
+sistem kerana fakta bahawa kita boleh dan
+
+00:45:17,000 --> 00:45:22,000
+to any solution a homogeneous
+kepada mana-mana penyelesaian yang homogen
+
+00:45:22,000 --> 00:45:25,000
+I do we specify the appropriate initial conditions
+Saya nyatakan kita keadaan awal yang sesuai
+
+00:45:25,000 --> 00:45:30,000
+to ensure how do we specify the appropriate initial conditions to ensure
+untuk memastikan bagaimana kita menentukan keadaan awal yang sesuai bagi memastikan
+
+00:45:30,000 --> 00:45:31,000
+that the system
+bahawa sistem
+
+00:45:31,000 --> 00:45:35,000
+is linear and time-invariant well
+adalah linear dan masa tak berubah juga
+
+00:45:35,000 --> 00:45:40,000
+the auxiliary information namely the initial conditions
+maklumat tambahan iaitu keadaan awal
+
+00:45:40,000 --> 00:45:43,000
+dissociated with the system
+berlepas dengan sistem
+
+00:45:43,000 --> 00:45:47,000
+be causal linear and time-invariant
+menjadi linear sebab-musabab dan masa tak berubah
+
+00:45:47,000 --> 00:45:50,000
+are the conditions of initial rest
+syarat-syarat rehat awal
+
+00:45:50,000 --> 00:45:53,000
+and in fact for most of the cores
+dan sebenarnya bagi kebanyakan teras
+
+00:45:53,000 --> 00:45:57,000
+what will be interested in systems that are in fact cause a linear and
+apa yang akan menjadi yang berminat dalam sistem yang sebenarnya menyebabkan linear dan
+
+00:45:57,000 --> 00:45:58,000
+time-invariant
+masa tak berubah
+
+00:45:58,000 --> 00:46:03,000
+and so we will in fact be assuming initial rest conditions
+dan dengan itu kita akan sebenarnya akan menganggap keadaan rehat awal
+
+00:46:03,000 --> 00:46:06,000
+now
+kini
+
+00:46:06,000 --> 00:46:09,000
+as I also indicated their are
+kerana saya juga menunjukkan Adakah mereka
+
+00:46:09,000 --> 00:46:12,000
+a variety of efficient procedures for solving differential
+pelbagai prosedur berkesan untuk menyelesaikan perbezaan
+
+00:46:12,000 --> 00:46:16,000
+and difference equations that we haven't yet address and
+dan persamaan beza yang kita belum lagi menangani dan
+
+00:46:16,000 --> 00:46:20,000
+beginning with the next set of lectures will be talking about
+bermula dengan set seterusnya kuliah akan bercakap tentang
+
+00:46:20,000 --> 00:46:23,000
+for EA transform and much later in the course
+untuk EA mengubah dan kemudiannya dalam perjalanan
+
+00:46:23,000 --> 00:46:27,000
+what's referred to as the apostrophe its form for continuous-time
+apa yang dirujuk sebagai koma atas bentuk untuk berterusan masa
+
+00:46:27,000 --> 00:46:31,000
+and sea transport for discrete-time and what we'll see
+dan pengangkutan laut untuk diskret masa dan apa yang kita akan melihat
+
+00:46:31,000 --> 00:46:36,000
+is that with the Fourier transform in later with the apostasy transform
+ialah dengan Fourier di kemudian dengan kemurtadan mengubah
+
+00:46:36,000 --> 00:46:40,000
+will have a number love efficient and very useful ways
+akan mempunyai cinta bilangan cekap dan cara yang sangat berguna
+
+00:46:40,000 --> 00:46:44,000
+%uh generating the solution for
+% Uh menjana penyelesaian untuk
+
+00:46:44,000 --> 00:46:48,000
+differential and difference equations this under the assumption that the
+pembezaan dan perbezaan persamaan ini di bawah andaian bahawa
+
+00:46:48,000 --> 00:46:50,000
+system is causal
+sistem adalah sebab dan akibat
+
+00:46:50,000 --> 00:46:52,000
+when you're in time very
+apabila anda dalam masa yang sangat
+
+00:46:52,000 --> 00:46:57,000
+also will see in addition to the block diagram implementations
+juga akan melihat sebagai tambahan kepada pelaksanaan gambarajah blok
+
+00:46:57,000 --> 00:47:00,000
+the systems that we talked about so far
+sistem yang kita bercakap tentang setakat ini
+
+00:47:00,000 --> 00:47:04,000
+we'll see another a number of other useful
+kita akan melihat satu lagi beberapa lain yang berguna
+
+00:47:04,000 --> 00:47:09,000
+implementations that exploit a variety of properties associated with
+pelaksanaan yang mengeksploitasi pelbagai sifat yang berkaitan dengan
+
+00:47:09,000 --> 00:47:11,000
+Korean past thank you
+Lalu Korea terima kasih
+

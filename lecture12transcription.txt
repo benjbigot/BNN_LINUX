@@ -1,0 +1,648 @@
+000040~003450~the following content is provided under a Creative Commons license
+003490~003639~your support will help MIT OpenCourseWare continue to offer
+007129~003451~high-quality educational resources for free
+010580~003780~to make a donation or view additional materials from hundreds of them IT
+014360~000670~courses
+015030~003080~visit MIT OpenCourseWare at 0 CW
+018110~007000~that MIT that EDU home the
+029789~001721~the
+031510~002420~the
+033930~006780~the in
+040710~004420~the norm
+045130~007000~are the in discussing the
+057230~003100~continuous-time and discrete-time Fourier transforms we
+060330~003070~developed a number of important properties
+063400~003550~to particularly sitting significant ones as I mention
+066950~004880~at the time are the modulation property and the convolution property
+071830~004450~starting with the next lecture the one after this one
+076280~004010~will be developing and exploiting some other consequences
+080290~004439~the modulation property in today's lecture though I'd like to
+084729~004461~review and expand on the notion of filtering
+089190~004500~which as I had mentioned flows more less directly from
+093690~005120~the convolution property to begin let me just quickly review
+098810~004640~what the convolution property is both for continuous-time
+103450~004430~and for discrete-time the convolution property tells us
+107880~003049~that the 48 transform
+110929~003401~all the convolution up to time functions
+114330~003660~is the product up to 48 transforms
+117990~003129~now what this means
+121119~004170~in terms love linear time-invariant filters
+125289~003841~since we know that the in the time domain the output of a linear
+129130~002900~time-invariant filter is the convolution
+132030~003110~love the input and the impulse response
+135140~003980~it says essentially then in the frequency domain
+139120~003520~that the forty a transformer the output is the product
+142640~003470~of the 48 transform of the impulse response
+146110~003830~namely the frequency response and the Fourier transform
+149940~005610~love the input so the output is described through that product
+155550~003350~now recall also
+158900~004280~bad in developing the four EA transform I interpreted
+163180~003540~the Fourier transform as the complex amplitude
+166720~005060~over decomposition of the signal interns have a set of complex exponentials
+171780~003340~and the frequency response for the convolution property
+175120~005840~in effect tells us what the amplitudes how to modify the amplitudes
+180960~003680~avi to those complex exponentials as they go through the system
+184640~003180~now this led to the notion of filtering
+187820~005260~where the basic concept was that since we can modify
+193080~003080~the airport to %uh each of the exponential
+196160~004450~complex exponential components separately weekend for example
+200610~004190~retain some love them and totally eliminate others
+204800~003660~and this is the basic notion of filtering so
+208460~003990~we have as you recall first evolved the notion
+212450~004120~in continuous-time all an ideal filter
+216570~004240~for example I L a straight year an ideal
+220810~003870~low-pass filter where we pass exactly
+224680~003280~frequency comp phone it's in one band and reject
+227960~003710~totally frequency comp ponents in another band
+231670~003900~the van being passed of course referred to as the passband
+235570~004790~and the ban rejected as the stopping I
+240360~003110~illustrated here low pass filter we can of course
+243470~003660~reject the low frequencies and retain
+247130~004700~the high frequencies and that then corresponds to
+251830~005740~ideal high pass filter or we can just retain frequencies within a band
+257570~004790~and so I show below what is referred to commonly as
+262360~003429~a bandpass filter now
+265789~003551~this is what the ideal filters look like
+269340~004079~for continuous-time for discrete-time we have exactly
+273419~003261~the same situation namely we have
+276680~003820~an ideal discrete-time low-pass filter which
+280500~004410~passes exactly frequencies which are the low frequencies
+284910~004500~low frequencies of course being around zero and because the periodicity also
+289410~001270~around 2pi
+290680~003880~we show also an ideal
+294560~003609~high pass filter and a high pass filter
+298169~004561~as i indicated last time passes frequencies around pie
+302730~003960~and finally below that I show an ideal
+306690~005170~bandpass filter a an ideal bandpass filter passing frequencies
+311860~004360~someplace in the range between 0 and pie
+316220~004130~and recall also bat the basic difference between
+320350~003660~continuous-time and discrete-time for these filters is that
+324010~003620~the discrete-time versions are of course periodic
+327630~004550~in frequency now let's look at
+332180~004380~these ideal filters and in particular the idea low-pass filter
+336560~003770~in the time domain we have
+340330~004960~the frequency response 0 the idea low-pass filter
+345290~005349~and shown below it is the impulse response so here is the frequency
+350639~001481~response
+352120~003540~and below it the impulse response
+355660~003380~love the ideal low-pass filter
+359040~003250~and this of course is a sin x over X
+362290~003460~for with impulse response and recognize also
+365750~003970~or recall that since this frequency response
+369720~003260~is real value
+372980~003500~the impulse response in other words the inverse transform
+376480~003330~is an even function of time and
+379810~004370~notice also since I want to refer back to this
+384180~004100~that the impulse response to an ideal Lopez filter
+388280~005010~in fact is non causal that follows from Long other things from the fact that
+393290~001730~it's an even function
+395020~004119~but keep in mind in fact that sin x over its function
+399139~003341~goes off to infinity in both directions so
+402480~003100~the impulse response to the idea low-pass filter
+405580~007000~is symmetric and continues to have tales of the plus and minus infinity
+412669~003231~now the situation is basically the same
+415900~003750~in the discrete-time case
+419650~004920~let's look at the frequency response and associated impulse response
+424570~003620~for an ideal discrete-time low-pass filter
+428190~004270~so once again here is the
+432460~003739~frequency response love the idea low-pass filter
+436199~003771~and below it I show the impulse response
+439970~004710~again its a sin x over x-type impulse response
+444680~003230~and again we recognize
+447910~003890~that sits in the frequency domain this frequency response
+451800~004920~is real bad that means as a consequence
+456720~005620~of the properties love the forty a transforming inverse Fourier transform
+462340~003609~that the impulse response is an even function
+465949~003611~in the time domain and also incidently
+469560~003680~the sin x over expulsion goes off to infinity
+473240~003550~again in both directions
+476790~003800~now we talked about i do. filters
+480590~003560~in this discussion and ideal filters are
+484150~004560~in fact ideal in a certain sense what they do ideally
+488710~004070~is they pass a certain band of frequencies exactly
+492780~006220~and they reject a band of frequencies exactly
+499000~004330~on the other hand there are many filtering problems in which
+503330~004140~generally we don't have a sharp distinction between the frequencies we
+507470~000610~want to
+508080~003250~passed in the frequencies you wanna 12 reject
+511330~003649~one example if this that's elaborated on in the tax is
+514979~003211~the design of an automotive suspension system which in fact
+518190~004289~is the design all a low-pass filter
+522479~003071~and basically what you want to do in a case like that
+525550~003349~is filter out or attenuate
+528899~003021~very rapid Road variations and keep
+531920~004700~the lower variations in of course elevation of the highway
+536620~003639~or or road and what you can see
+540259~003681~intuitively is dead and there isn't really a very sharp
+543940~004440~distinction a sharp cutoff between what you would like to recall
+548380~004829~the low frequencies and what you would call the high frequencies
+553209~003971~now also somewhat related to this is the fact dead
+557180~004560~the as we've seen in the time domain is ideal filters have
+561740~004050~very particular kind of character for example let's look back
+565790~005160~at the ideal low-pass filter and
+570950~003240~we saw this the impulse response
+574190~003740~the impulse response is what we've shown here let's now look
+577930~003920~at the step response love the discrete-time
+581850~005720~ideal low-pass filter and noticed the fact that it has a tail that oscillates
+587570~005140~and when this step its in fact it has oscillatory behavior
+592710~004750~now exactly the same situation occurs
+597460~003620~in continuous-time let's look at the
+601080~003810~step response love the continuous-time
+604890~003290~ideal ok pass filter and
+608180~003180~what we see is that when a step its
+611360~003130~then in fact we get and isolation
+614490~003370~and very often that isolation
+617860~004000~is something this undesirable for example if you're designing
+621860~004479~an automotive suspension system and you hit a curve which is
+626339~004331~step input in fact you probably would not like
+630670~003690~to have the automobile oscillating sort
+634360~003900~sort dying down in in isolation
+638260~003530~now is another very important point which again
+641790~003210~we can see there in continuous-time and discrete-time
+645000~003980~which is that even if we wanted to have
+648980~004740~an ideal filter the ideal filter has another problem
+653720~004250~if we want to attempt to implemented in real time
+657970~003460~what's the problem the problem is
+661430~003750~that since the impulse responses even and in fact
+665180~003230~has details that go of the plus and minus infinity
+668410~004030~its non causal so if in fact
+672440~005589~we want to build a filter and the filter is restricted operate in real time
+678029~003411~than in fact we can't build
+681440~003030~an ideal filter so
+684470~004410~what that says is that in practice although i do. filters
+688880~005130~are nice to think about and perhaps relate to practical problems
+694010~003050~more typically what we consider
+697060~003490~are non-ideal filters and
+700550~004250~in the discrete-time case non-ideal filter
+704800~003670~then would have a characteristic somewhat
+708470~003309~like i've indicated here where instead o
+711779~004810~a very rapid transition from passband to stop and
+716589~003141~there would be more gradual transition
+719730~004030~with a passband cutoff frequency and
+723760~003220~a stop and cutoff frequency
+726980~003410~and perhaps also instead of having exactly
+730390~004540~flat characteristic in the stop band and in the past and
+734930~003210~we would allow a certain amount a ripple
+738140~003470~we also have exactly the same situation
+741610~005210~in continuous-time we're here will just simply change your frequency axis
+746820~005070~to a continuous frequency axis instead of the discrete frequency axes
+751890~004449~again we would think in terms of I'm allowable passband ripple
+756339~004641~a transition from stop and from passband to stop and
+760980~003710~with a passband cutoff frequency and a stop and
+764690~003019~cutoff frequency so
+767709~005491~kind of the notion here is dead again i do. filters are ideal in some respects
+773200~003180~not ideal in other respects and for many
+776380~004670~practical problems we may not want them and even if we did want them
+781050~005219~we may not be able to get them perhaps because at this issue of causality
+786269~003760~even if causality is not an issue what happens
+790029~003671~in filter design and implementation in fact
+793700~005670~is dead the sharper you attempt to make the cut off
+799370~003200~the more expensive in some sense the filter becomes
+802570~003090~either in terms of comp phone-ins in continuous-time
+805660~003429~or in terms of computation in discrete-time
+809089~004271~and so their are these whole variety of issues
+813360~003000~that really make it important to
+816360~003580~understand the notion love non-ideal
+819940~003040~filters now just two
+822980~003770~illustrate as an example let me remind you
+826750~005250~love one kinda bad example love what in fact is a non-ideal
+832000~004580~low-pass filter and we have look previously
+836580~003040~at The Associated differential equation
+839620~004350~let me now in fact related to a circuit
+843970~003070~and in particular an RC circuit
+847040~003910~where the output could either be across the capacitor
+850950~003660~or the output can be across the resistor so
+854610~003510~effect we have two systems here we have a system
+858120~004360~which is the system function from the voltage source input to the capacitor
+862480~001080~output
+863560~003300~the system from the both source input
+866860~003510~to the resistor output and in fact
+870370~003820~just up like your cause both its law to this we can relate those in a very
+874190~001639~straightforward way
+875829~003630~it's very straight forward to verify that
+879459~004291~the system from input to resist their output
+883750~003269~is simply the identity system with
+887019~004461~the capacitor output subtracted from
+891480~003010~now we can write the differential equation
+894490~004880~for either the system's and as we talked about last time
+899370~004040~in the last several lectures solve that equation using
+903410~003299~the exploiting the properties at a4e a transform
+906709~004271~and in fact we if we look at the differential equation
+910980~003310~relating the capacitor output to
+914290~004680~the voltage source input we recognize that this is an example
+918970~003950~that in effect we saw previously and so
+922920~004870~just working our way down applying the 48 transport to the differential
+927790~001200~equation
+928990~003960~and generating the system function by taking the ratio of the capacitor
+932950~001540~voltage
+934490~003900~or its Fourier transform to the Fourier transform the source
+938390~003650~we then have the system function Associated
+942040~004520~with the system for which the output is the capacitor voltage
+946560~003219~or if we solve instead for the system function
+949779~003870~associated with the resistor output
+953649~003721~we can simply subtract h1 from unity
+957370~004279~and the system function that we get in that case is the system function
+961649~003101~that I show here so we have
+964750~004240~now to system functions one for the capacitor output
+968990~003610~the other for the resistor output and
+972600~003840~one the first corresponding to the capacitor output
+976440~004089~in fact if we plotted on a linear ramp up to scale
+980529~003331~looks like this and as you can see and as we saw last time
+983860~003779~is an approximation to a low pass filter
+987639~003250~it is in fact and non-ideal ok pass filter
+990889~004510~whereas the resistor output is
+995399~003091~an approximation to a high pass filter
+998490~003700~or in effect and non-ideal high pass filter
+1002190~003339~so in one case just comparing the two we have
+1005529~004631~a low-pass filter as the capacitor output associate with the capacitor
+1010160~000950~output
+1011110~003010~and a high pass filter Associated with the
+1014120~003430~resistor out let's just quickly
+1017550~003860~look at that example now looking on a boat reply
+1021410~005249~instead o on the linear scale that we showed before
+1026659~003170~and recall incidently a and
+1029829~005500~be aware incident leave the fact that week and of course cascade
+1035329~003580~several filters if this type and approve the characteristics
+1038909~003740~so I have shown at the top
+1042649~004221~a bodie plot or the
+1046870~005450~capacitors system functions associated with the capacitor output it's flat out
+1052320~002430~to a frequency corresponding 21
+1054750~003809~over the time constant RC
+1058559~003240~and then it falls off at 10 DB
+1061799~003211~per decade a decade being a factor 10
+1065010~005419~or if instead we looked at the system function associated with the resistor
+1070429~003091~output that corresponds to a
+1073520~003789~10 dB per decade increase in frequency
+1077309~004411~up to approximately the reciprocal at the time constant and
+1081720~003829~then approaching a flat characteristic after that
+1085549~004260~and if we consider either one of these
+1089809~003011~looking back again at the low-pass
+1092820~004200~filter if we were to cascade several filters
+1097020~004680~with this frequency response then because we have things plotted on a boat
+1101700~000859~reply
+1102559~004201~the body plot for the Cascade would simply be summing these and so
+1106760~003130~if we castigated for example two stages
+1109890~003180~is that a role of at 10 dB per decade it would
+1113070~004700~role of at 20 DB for decades
+1117770~003200~now filters that this type RC filters
+1120970~003150~perhaps several of them in cascade are
+1124120~003030~in fact very prevalent
+1127150~004409~and in fact in a in a an environment
+1131559~003740~like this where where in fact doing recording
+1135299~003351~we see there there are
+1138650~004529~filters a fact I there show up very commonly both in the audio
+1143179~004620~and the video poker portion or the signal processing this Associated
+1147799~003561~with making this set of tapes in fact
+1151360~003010~are let's take a look in the control room
+1154370~003260~and what I'll be able to show you in the control room
+1157630~003120~is the audio portion love
+1160750~005059~the processing that's done and the kinds of filters very much of the type we just
+1165809~000831~talked about
+1166640~003830~their associated with signal processing this stunning
+1170470~003130~in preparing the audio the tapes so
+1173600~006240~let's just take a walk into the control room and see what we see
+1179840~004870~well this is the control room issues for camera switching its
+1184710~003459~use for computer editing and also audio control
+1188169~003521~you can see the monitors and these are used for the
+1191690~003970~camera switching and and this is the computer editing
+1195660~003980~console that use for online and offline computer editing
+1199640~004960~but I really want to demonstrate though in a context to the lecture is the audio
+1204600~001550~control panel
+1206150~004560~which contains among other things a variety of filters for high frequency
+1210710~003349~low frequencies cetera basically equalization
+1214059~004791~filters and what we have in the way of filtering is
+1218850~003829~first of all a was referred to as a graphic equalizer
+1222679~003761~which consists of a set a bandpass filters which are described
+1226440~003369~little more carefully in a minute and then also
+1229809~004000~and audio Control Panel which is down here
+1233809~003101~and which contains separate equalizer circuits for each
+1236910~004490~over a whole set of channels and also lotsa controls on them
+1241400~003710~well let me begin in the demonstration by
+1245110~005770~demonstrating a little bit of what the graphic equalizer does
+1250880~004940~okay well what we have is a set a bandpass filters
+1255820~004190~and what's indicated appear the center frequencies as the filters
+1260010~004430~and then a slider switch reach 18 Lexus attenuator amplify
+1264440~004440~and this is a DP scale so essentially
+1268880~003429~if you look across this banker filters
+1272309~004531~with the output olaf for the equalizer just being the summer the outputs from
+1276840~004930~you to these filters interestingly the position the slider switches as you move
+1281770~001300~across here
+1283070~003890~in effect shows you what the frequency response to the equalizer is
+1286960~003650~so you can change the overall shaping I'll
+1290610~004819~the filter by moving the switches up and down all right now the equalizer is
+1295429~000771~outlets
+1296200~004250~put the equaliser into the circuit and now I I put in this filtering
+1300450~001339~characteristic
+1301789~003871~and what I'd like to demonstrate is filtering
+1305660~004080~with this when we do things that are a little more dramatic than what would
+1309740~002910~normally be done in a typical audio recordings setting
+1312650~005040~and to do this let's add to my voice to music too
+1317690~004820~make it more interesting a not the my voice is an interesting as it is
+1322510~003159~but in any case let's bring some music up
+1325669~003711~and now what all do is
+1329380~006429~set the low frequencies flat and let me take out the high frequencies
+1335809~003211~above eight hundred cycle and
+1339020~004930~so now we have affectively is the low-pass filter it
+1343950~003790~and now the low-pass filter let me know
+1347740~003390~bring the high is backup
+1351130~004190~and so on bringing up those bandpass filters
+1355320~004200~and now let me cut-out the lows
+1359520~003710~and you'll hear the lows disappearing and in effect
+1363230~003640~keeping the highest affectively Crispin's
+1366870~003200~the sound my voice music
+1370070~006700~and finally let me go back 20db equalization I need to the filters
+1376770~003430~and what also to now is
+1380200~005660~take the equalizer out at the circuit totally
+1385860~004240~now let's take a look at the audio Master Control Panel
+1390100~003410~and this panel has of course
+1393510~003680~for each channel and for example channel that we're working on
+1397190~003590~a volume control I can turn the volume down
+1400780~003240~and I can turn the volume up and
+1404020~004850~it also has a set for this particular equalizer circuit
+1408870~004200~it has a set love 3 bandpass filters
+1413070~003330~and not switch lettuce either
+1416400~003029~put in up to 12 the be gain
+1419429~003051~or 12 DB attenuation in each of the bands
+1422480~003990~and also a selector switch the lights is select the center the band
+1426470~004810~so let me Jess a again demonstrate a little bit with this and
+1431280~005060~let's get a closeup of this panel so what we have is i indicated
+1436340~005530~is 3 bandpass filters and these knobs that I'm pointing to hear
+1441870~004200~are controls that allow us to reach the filters to put in
+1446070~003580~up to 12 dB gain or 12 dB attenuation
+1449650~004360~there are also with the to the filters a selector switch
+1454010~005180~that lets us adjust the center frequency the filter basically it's a
+1459190~005160~to position switch they're also as you can see is
+1464350~004480~a button dead Lexus either put the equalization in or out
+1468830~003990~currently the equalization is out but put the equalization in
+1472820~004030~we won't be here any effect from that because the game controls are all set at
+1476850~001420~0db
+1478270~004820~and I want to illustrate shortly the effective these but before I do let me
+1483090~001610~draw your attention
+1484700~003359~to one other filter which is
+1488059~003641~this white switch and this this which
+1491700~003540~is a high pass filter that essentially
+1495240~005179~cuts out frequencies below about a hundred cycle so what it means is that
+1500419~004431~but put this which in everything is more or less flat above a hundred cycles
+1504850~004829~and what that's used for basically is to eliminate
+1509679~004120~perhaps 60 cycle noise if that's present or some
+1513799~003291~low-frequency home or whatever well we won't
+1517090~005100~really demonstrate anything with that let so now with the equalization and
+1522190~003440~demonstrate the effect I'll
+1525630~003630~boosting or attenuating the low and high frequencies
+1529260~003440~and again I think for to demonstrate this it's
+1532700~004700~it illustrates the point the best if a if we have a little background music so
+1537400~003649~maestro if you can bring that up
+1541049~003380~and so now I'm gonna do is first
+1544429~003421~whose the low frequencies and that's what this
+1547850~003240~potentiometer knob will do so now I'll
+1551090~003329~increasing the low-frequency game
+1554419~003781~and in fact all the way up to 12 the be when I have the novel
+1558200~004000~was liza going here and so that has a very basic
+1562200~001939~sounding back
+1564139~002091~make it even base you're fighting
+1566230~002520~my sees and
+1568750~002260~attenuating knows by
+1571010~004920~well
+1575930~003370~okay well leads words some the high-frequency
+1579300~002290~back in
+1581590~003069~in now let's turn the low-frequency
+1584659~002841~game offers back down
+1587500~004770~20 and now we're back to flat equalization
+1592270~003600~and now I can turn the low-frequency game down
+1595870~004330~so dead attenuate the low frequencies by as much as 12 the
+1600200~003350~that's where we are now in service
+1603550~004499~force much first
+1608049~006921~to enhance the highs even more hike in addition coming out who's the highs
+1614970~005440~by his
+1620410~004360~okay well let's turn down the music now and
+1624770~006080~and go back to no equalization by setting these knives 20 dB in fact we
+1630850~001530~can take the equalizer out
+1632380~004790~well thats a quick look at some real-world filters
+1637170~003630~now let's the stop having so much fun and
+1640800~007000~let's go back to the lecture okay well
+1650010~003560~thats a little behind the scenes look but I'd
+1653570~003510~like to do now is turn our attention to
+1657080~003000~discrete-time filters and
+1660080~003450~as i've mentioned in previous lectures their are
+1663530~003440~basically two classes
+1666970~005020~love discrete-time filters or discrete time difference equations
+1671990~003270~one class is referred to
+1675260~003920~as a nonrecourse ive or moving average
+1679180~004090~filter and the basic idea
+1683270~003080~with the moving average filter is something that perhaps your
+1686350~004360~some what familiar with intuitively think I've the notion
+1690710~003480~I love taking that data sequence and
+1694190~004000~let's suppose that what we wanted to do was apply a some smoothing to the data
+1698190~000840~sequence
+1699030~003900~we could for example think taking adjacent points
+1702930~003920~averaging them together and then moving that average
+1706850~003930~along the data sequence what you can kinda see intuitively
+1710780~004340~is that that would have apply some smoothing so in fact
+1715120~003270~the difference equation let's say for a three-point moving average
+1718390~003250~would be the difference equation that I indicate here
+1721640~003260~just simply taking a data point
+1724900~003080~and the two data points adjacent to it
+1727980~003190~and forming an average over those three
+1731170~003510~so if we thought if the kinda processing involved
+1734680~003770~if performing an output sequence value
+1738450~003780~we would take three adjacent points an average though
+1742230~003880~that would give us the output at The Associated time
+1746110~004840~and then to compute the next output point we were just simply slide this
+1750950~005190~by a one-point average these together and that would give us the next output
+1756140~002520~point and we would continue along
+1758660~003060~just simply sliding in averaging
+1761720~003950~to form the output data sequence now
+1765670~004660~that's an example love what's commonly referred to as a three-point moving
+1770330~000730~average
+1771060~003020~in fact we can generalize that notion
+1774080~004070~in a number of ways one-way generalizing
+1778150~004250~the notion over moving average from the three-point moving average which I
+1782400~004060~summarize again here is to think or extending that
+1786460~003490~to a larger number of points and in fact
+1789950~003340~applying waits to that as i indicate here
+1793290~004580~so that in addition to just summing up the points and dividing by the number of
+1797870~001100~points on
+1798970~004150~we can in fact apply individual weights to the points
+1803120~003560~so that its what is often referred to as awaiting
+1806680~003190~with moving average and I show
+1809870~003280~below one possible kind of curve
+1813150~003240~that might result where these would-be
+1816390~003700~essentially the weights Associated with this waited
+1820090~004610~moving average and in fact its easy to verify
+1824700~003780~that this indeed corresponds to the impulse response
+1828480~003380~the filter well just two
+1831860~004340~cement this notion let me show you an example or two
+1836200~003400~here is an example all a
+1839600~003390~five-point moving average a five-point moving average
+1842990~003130~would have an impulse response dead
+1846120~003160~just consists of a rectangle Lovelinks 5
+1849280~005100~and if this is convolved with the data sequence that would corresponding
+1854380~005030~correspond to taking five adjacent points and in effect averaging them
+1859410~004720~we've looked previously at the quarry a transformer this rectangular sequence
+1864130~002720~and the forty a transformer that in fact
+1866850~003890~is all the form of a sign an axe over
+1870740~003310~sin x kar and as you can see
+1874050~003570~that is so approximation to
+1877620~003170~a low-pass filter and so this again is
+1880790~003550~a the impulse response and frequency response
+1884340~004070~all a non-ideal low-pass filter
+1888410~003270~now there are a variety of both
+1891680~004020~algorithms that in fact tell you how to choose the weights
+1895700~003470~associated with the waiting weighted moving average
+1899170~003330~to in some sense design better approximations
+1902500~004010~and without going into the details love any of those algorithms
+1906510~004830~let me just show the results of choosing the weights
+1911340~004650~for the design over 250 first 251 points
+1915990~003120~moving average filter where the weights
+1919110~004570~are chosen using an optimum algorithm to generate a sharp a cut-off
+1923680~003930~as can possibly be generated and so what I show here
+1927610~003010~is the frequency response
+1930620~004390~that the resulting filter on a logarithmic ample to scale
+1935010~005850~in a linear frequency scale noticed that on this scale the pass band is very flat
+1940860~004130~although here is an expanded you all that and in fact it
+1944990~004360~has was referred to as an equal ripple characteristic
+1949350~004710~and then here's the transition band and here we have to stop and
+1954060~003760~which in fact is down somewhat more than 80 dB
+1957820~005930~and again has what's referred to as an equal ripple characterised
+1963750~003890~now the notion of a moving average
+1967640~003890~for filtering is something dead is very commonly
+1971530~004290~use I a head shown last time actually the result
+1975820~004300~some filtering on a particular data sequence the Dow Jones Industrial
+1980120~001160~Average
+1981280~003440~and very often in
+1984720~004780~looking at various kinds a stock market publications
+1989500~004290~what you will see is this the Dow Jones average
+1993790~004580~shown in its raw form as a data sequence and then very typically
+1998370~003410~you you'll see also: the result all
+2001780~003200~moving average where the moving average might
+2004980~003170~be on the order love days or it might be on the order
+2008150~003190~months the whole notion being to take
+2011340~003340~some other random high frequency fluctuations
+2014680~003190~out at the average and show the low-frequency
+2017870~003240~or trends over
+2021110~003300~some period of time so let's
+2024410~003150~in fact go back to the Dow Jones average and
+2027560~003790~let me now show you what the result of filtering
+2031350~003650~with a moving average filter would look like
+2035000~005580~on the Seder same Dow Jones Industrial Average sequence that I showed last time
+2040580~006800~so once again we have the Dow Jones average from 1927 to roughly 1932
+2047380~004680~at the top we see the impulse response for the moving average
+2052060~003430~again I remind you on an expanded time scale
+2055490~004139~and was shown here is the moving average with just one point
+2059629~003421~so the output on the bottom trace is
+2063050~004910~just simply identical to the input now let's increase the link to the moving
+2067960~004949~average 22 points and we see that there's a small amount of smoothing
+2072909~004510~three points and just a little more smoothing pickets inserted
+2077419~003771~now a four-point moving average
+2081190~004959~and next the five-point moving average
+2086149~005510~and a six-point moving average next we see that the smoothing increases
+2091659~004551~now let's increase the link to the moving average filter much more rapidly
+2096210~003550~and watch how the output is
+2099760~003570~more and more smooth in relation to the input
+2103330~003410~again i emphasize that the timescale
+2106740~005020~for the impulse response is significantly expanded in relationship
+2111760~004710~to the timescale for both the input in the output
+2116470~004160~and once again through the magic of filtering we've been able to eliminate
+2120630~005880~the 1929 stock market crash
+2126510~003020~alright so we've seen moving average filters
+2129530~003460~and or what are sometimes referred to as
+2132990~003440~non workers is filters and
+2136430~003100~they are as I stressed very important class
+2139530~003030~discreet I filters another
+2142560~003000~very important class of discrete-time filters are
+2145560~003940~what are referred to as rehearses filters
+2149500~004900~workers the filters are filters that for which the difference equation
+2154400~003560~has feedback from the output back
+2157960~003130~into the input in other words the output
+2161090~005820~depends not only on the input but also on previous values if the output
+2166910~003130~so for example as i stress previously
+2170040~003130~a rikers a difference equation has
+2173170~003390~the general form that I indicate year
+2176560~004540~a linear combination love waited outputs on the left hand side and linear
+2181100~000850~combination
+2181950~004550~waited inputs on the right hand side and
+2186500~003460~as we talked about we can solve this equation
+2189960~003620~for the current output why I have an interns a
+2193580~003250~of current and past inputs and passed out
+2196830~003800~what's for example just two
+2200630~004330~interpret this focus on the interpretation of this is a filter
+2204960~003710~let's looking at a first-order difference equation which
+2208670~004100~we've talked about and generated the solution to previously
+2212770~003100~so the first-order a first 30 difference equation
+2215870~003330~would be as i indicated here
+2219200~003030~and imposing causality on this
+2222230~005420~so that we assume that we are running this is a recursion forward in time
+2227650~003480~we can solve this for why I have an intern's affects it man
+2231130~003300~and why I have and -1 waited
+2234430~004000~by the factor a and I simply indicate
+2238430~004760~the block diagram for this but what we want to examine now
+2243190~005180~for this first order recursion is the frequency response and see its
+2248370~001150~interpretation
+2249520~003370~as a filter well in fact again
+2252890~004680~the mathematics for this we've gone through in the last lecture
+2257570~004850~and so interpreting the first-order difference equation as a system
+2262420~003870~we can what what we're attempting to
+2266290~003030~generate is the frequency response
+2269320~003450~which is the forty a transformer the impulse response
+2272770~003920~and from the difference equation we can of course all
+2276690~005419~for either one of those by using the properties exploiting the properties in
+2282109~005241~for EA transform applying to 48 transport to the difference equation
+2287350~004200~we will end up with the forty a transformer the output
+2291550~004450~equal to the Fourier transform the input times this factor which
+2296000~003190~we know from the convolution property in fact
+2299190~003690~is the frequency response
+2302880~004570~of the system so this is the frequency response
+2307450~003840~and of course the inverse Fourier transform a bad
+2311290~003000~which I E indicate below
+2314290~003620~is the system impulse response
+2317910~003150~so we have the frequency response obtained by
+2321060~005190~applying to free a transformed to the difference equation the impulse response
+2326250~004020~and as we did last time we can
+2330270~003630~look at that interns love
+2333900~003130~a frequency response characteristic
+2337030~003280~and recall that depending on whether
+2340310~003790~the factor A is positive or negative we need to get
+2344100~003759~a low-pass filter or a high pass filter
+2347859~005031~and if in fact we look at the frequency response
+2352890~004980~for the factor a being positive then we see that this is an approximation
+2357870~006730~to a low-pass filter who wears below it I showed the frequency response
+2364600~004620~for a negative & mare the
+2369220~004250~this corresponds to a way high pass filter because we're attenuating
+2373470~003260~low frequencies and retaining
+2376730~003200~the high frequencies in and
+2379930~003600~recall also that we illustrated
+2383530~005190~this this characteristic as a low-pass high-pass filter for the recursion
+2388720~003850~for the first-order recursion by by looking at
+2392570~004400~how it work as a filter in both cases
+2396970~003590~when the input was the Dow Jones average and indeed we saw that
+2400560~003280~it generated both low-pass and high-pass filtering
+2403840~004200~in in the appropriate cases so for discrete-time
+2408040~003360~we have the two classes moving average and
+2411400~003520~a cursive filters and
+2414920~003160~and there are a variety of issues discussed in the text about why
+2418080~003990~in certain contexts one might want to use one or the other basically what
+2422070~000700~happens
+2422770~003610~is dead for the moving average filter
+2426380~003890~for a given set a filter specifications there are many more multiplications
+2430270~003370~required in for a cursive filter by
+2433640~004240~there are in certain contexts some very important compensating benefits
+2437880~003590~the moving average filter
+2441470~003280~now this concludes pretty much
+2444750~003420~what I A want to say in detail
+2448170~004700~about filtering the concept filtering in this set of lectures
+2452870~003830~this is only a very quick glimpse into
+2456700~003940~a very important and very rich topic and one of course that
+2460640~004620~can be studied on its own in considerable amount of detail
+2465260~003180~as the lectures go online what will find
+2468440~003320~is that the basic concept to filtering both
+2471760~003590~ideal and non-ideal filtering will will
+2475350~003840~be a very important part love what we do
+2479190~003060~and in in particular
+2482250~003100~beginning with the next lecture will turn to
+2485350~004150~a discussion of modulation exploiting
+2489500~005859~the property modulation as it relates to some practical problems
+2495359~003041~and what will find when we do that is that
+2498400~004330~a very important part of that discussion and in fact the very important part
+2502730~003180~love the use of modulation also
+2505910~003170~just naturally incorporates the concept
+2509080~002500~and properties filtering thank you

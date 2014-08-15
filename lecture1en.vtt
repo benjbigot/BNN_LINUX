@@ -1,0 +1,1416 @@
+00:00:06,000 --> 00:00:13,000
+ha the the
+
+00:00:27,000 --> 00:00:30,000
+the norm
+
+00:00:30,000 --> 00:00:36,000
+well
+
+00:00:36,000 --> 00:00:43,000
+the I'm out oppenheim
+
+00:00:43,000 --> 00:00:48,000
+and I'd like to welcome you to this video tape course on signals and systems
+
+00:00:48,000 --> 00:00:51,000
+signals at least
+
+00:00:51,000 --> 00:00:55,000
+as an informal definition are functions
+
+00:00:55,000 --> 00:00:58,000
+one or more independent variables that
+
+00:00:58,000 --> 00:01:03,000
+typically carry some type information systems in
+
+00:01:03,000 --> 00:01:07,000
+are setting with typically be used the process signals
+
+00:01:07,000 --> 00:01:11,000
+one very common example of a signal
+
+00:01:11,000 --> 00:01:15,000
+might be let's say speech signal and you might think
+
+00:01:15,000 --> 00:01:18,000
+love the air pressure as a function of time
+
+00:01:18,000 --> 00:01:22,000
+or perhaps the electrical signal effort goes through the microphone
+
+00:01:22,000 --> 00:01:26,000
+transducer is a function of time as representing the speech signal
+
+00:01:26,000 --> 00:01:30,000
+and we might see a typical speech signal
+
+00:01:30,000 --> 00:01:33,000
+looking something like i've indicated here
+
+00:01:33,000 --> 00:01:36,000
+its a function time
+
+00:01:36,000 --> 00:01:40,000
+in this particular case and the independent variable
+
+00:01:40,000 --> 00:01:44,000
+being time is in fact continuous
+
+00:01:44,000 --> 00:01:47,000
+and so a signal like this we will typically be referring to
+
+00:01:47,000 --> 00:01:52,000
+as a continuous-time signals now
+
+00:01:52,000 --> 00:01:55,000
+it also for this particular example is a function
+
+00:01:55,000 --> 00:01:59,000
+one independent variable and
+
+00:01:59,000 --> 00:02:02,000
+that will be referred to as
+
+00:02:02,000 --> 00:02:06,000
+the one dimensional signal
+
+00:02:06,000 --> 00:02:09,000
+corresponding to the fact that there's only
+
+00:02:09,000 --> 00:02:13,000
+one independent variable several independent variables
+
+00:02:13,000 --> 00:02:16,000
+so the speech signal is an example
+
+00:02:16,000 --> 00:02:20,000
+a continuous-time one-dimensional signal
+
+00:02:20,000 --> 00:02:23,000
+now signals can of course
+
+00:02:23,000 --> 00:02:29,000
+be multi-dimensional and they may not have as their independent variables time
+
+00:02:29,000 --> 00:02:29,000
+variables
+
+00:02:29,000 --> 00:02:32,000
+one very common example are
+
+00:02:32,000 --> 00:02:36,000
+the examples represented by images images
+
+00:02:36,000 --> 00:02:40,000
+as signals we might think I'll as
+
+00:02:40,000 --> 00:02:44,000
+representing brightness as it varies
+
+00:02:44,000 --> 00:02:47,000
+in a horizontal and vertical
+
+00:02:47,000 --> 00:02:50,000
+direction and so the brightness as a function
+
+00:02:50,000 --> 00:02:53,000
+these two spatial variables is then
+
+00:02:53,000 --> 00:03:00,000
+a two-dimensional signal and
+
+00:03:01,000 --> 00:03:04,000
+it the independent variables
+
+00:03:04,000 --> 00:03:09,000
+would typically be continuous but of course they're not time variables
+
+00:03:09,000 --> 00:03:12,000
+and incidently it's worth
+
+00:03:12,000 --> 00:03:16,000
+just commenting very often simply for convenience
+
+00:03:16,000 --> 00:03:20,000
+will have a tendency to refer to the independent variables when we talk about
+
+00:03:20,000 --> 00:03:21,000
+signals
+
+00:03:21,000 --> 00:03:25,000
+as time variables whether or not the really represent time
+
+00:03:25,000 --> 00:03:28,000
+well let me illustrate
+
+00:03:28,000 --> 00:03:32,000
+one example all image and
+
+00:03:32,000 --> 00:03:35,000
+this is a picture jpg for EA
+
+00:03:35,000 --> 00:03:39,000
+who perhaps more than anyone else
+
+00:03:39,000 --> 00:03:42,000
+is responsible for the elegance and beauty
+
+00:03:42,000 --> 00:03:47,000
+a lot of the concepts we'll be talking about throughout this course
+
+00:03:47,000 --> 00:03:50,000
+and when you look at this in addition to
+
+00:03:50,000 --> 00:03:54,000
+c4a himself you should recognize that what you're looking at
+
+00:03:54,000 --> 00:03:58,000
+is basically a signal which is brightness as a function
+
+00:03:58,000 --> 00:04:01,000
+the horizontal and vertical spatial variables
+
+00:04:01,000 --> 00:04:05,000
+as another example
+
+00:04:05,000 --> 00:04:09,000
+an image as a signal let's look at an aerial photograph
+
+00:04:09,000 --> 00:04:13,000
+this is an aerial photograph taken
+
+00:04:13,000 --> 00:04:16,000
+over a setter roads which
+
+00:04:16,000 --> 00:04:19,000
+you can more less recognized in the picture and
+
+00:04:19,000 --> 00:04:23,000
+wanted the difficulties with this signal is that it
+
+00:04:23,000 --> 00:04:26,000
+the road system is somewhat obscured by cloud cover
+
+00:04:26,000 --> 00:04:29,000
+and well wanna show later
+
+00:04:29,000 --> 00:04:32,000
+as an example what a system
+
+00:04:32,000 --> 00:04:38,000
+might do to such as signal in terms of processing is an attempt to
+
+00:04:38,000 --> 00:04:41,000
+at least compensate some way for the
+
+00:04:41,000 --> 00:04:46,000
+cloud cover represented in the photograph following terms a
+
+00:04:46,000 --> 00:04:49,000
+the detailed analysis we go through during the course are
+
+00:04:49,000 --> 00:04:53,000
+focus of attention is pretty much restricted to
+
+00:04:53,000 --> 00:04:57,000
+one-dimensional signals in fact we will be using
+
+00:04:57,000 --> 00:05:00,000
+two-dimensional signals more specifically images
+
+00:05:00,000 --> 00:05:03,000
+very often to illustrate a variety
+
+00:05:03,000 --> 00:05:06,000
+concepts now
+
+00:05:06,000 --> 00:05:10,000
+speech in images are examples
+
+00:05:10,000 --> 00:05:13,000
+what we refer to as continuous-time signals
+
+00:05:13,000 --> 00:05:16,000
+in that they are functions
+
+00:05:16,000 --> 00:05:19,000
+continuous variables equally
+
+00:05:19,000 --> 00:05:23,000
+important classes signals will be concentrating on
+
+00:05:23,000 --> 00:05:27,000
+in the cores are signals are
+
+00:05:27,000 --> 00:05:30,000
+discrete-time signals
+
+00:05:30,000 --> 00:05:33,000
+where by discrete-time we mean
+
+00:05:33,000 --> 00:05:36,000
+is that the signal is
+
+00:05:36,000 --> 00:05:40,000
+a function integer variable
+
+00:05:40,000 --> 00:05:43,000
+and so specifically only takes on values
+
+00:05:43,000 --> 00:05:48,000
+at in nature values the argument
+
+00:05:48,000 --> 00:05:52,000
+so here is a graphical illustration
+
+00:05:52,000 --> 00:05:57,000
+the discrete-time signal and discrete-time signals arise
+
+00:05:57,000 --> 00:06:01,000
+in a variety of ways one very common example
+
+00:06:01,000 --> 00:06:07,000
+it seems fairly often is discrete-time signals in the context
+
+00:06:07,000 --> 00:06:13,000
+economic time series and for example stock market analysis
+
+00:06:13,000 --> 00:06:16,000
+so what I show here is one
+
+00:06:16,000 --> 00:06:21,000
+very commonly occurring example the discrete-time signal
+
+00:06:21,000 --> 00:06:25,000
+it represents the weekly stock market index
+
+00:06:25,000 --> 00:06:28,000
+the independent variable in this case is
+
+00:06:28,000 --> 00:06:32,000
+the week number and we see what the
+
+00:06:32,000 --> 00:06:36,000
+stock market is doing over this particular period
+
+00:06:36,000 --> 00:06:39,000
+as a function or the number of the week and
+
+00:06:39,000 --> 00:06:43,000
+course along the vertical axis is the
+
+00:06:43,000 --> 00:06:46,000
+weekly index incidently
+
+00:06:46,000 --> 00:06:49,000
+this particular period was not chosen
+
+00:06:49,000 --> 00:06:53,000
+random in fact captures very interesting aspect
+
+00:06:53,000 --> 00:06:57,000
+stock market history namely the
+
+00:06:57,000 --> 00:07:00,000
+stock market crash in 1929
+
+00:07:00,000 --> 00:07:04,000
+which in fact is represented by behavior
+
+00:07:04,000 --> 00:07:08,000
+this discrete time signal or sequence
+
+00:07:08,000 --> 00:07:12,000
+in this particular area so this dramatic dip in fact
+
+00:07:12,000 --> 00:07:16,000
+is the stock market crash 1929
+
+00:07:16,000 --> 00:07:20,000
+well the dow jones weekly average is an example
+
+00:07:20,000 --> 00:07:24,000
+all a one-dimensional discrete-time signal
+
+00:07:24,000 --> 00:07:27,000
+and just as with continuous time
+
+00:07:27,000 --> 00:07:31,000
+we had not just one-dimensional multi-dimensional signals
+
+00:07:31,000 --> 00:07:35,000
+likewise we have multi-dimensional signals
+
+00:07:35,000 --> 00:07:39,000
+in the discrete-time case where
+
+00:07:39,000 --> 00:07:43,000
+in that case then the discrete-time signal that we're talking about a
+
+00:07:43,000 --> 00:07:44,000
+sequence
+
+00:07:44,000 --> 00:07:48,000
+is a function love to integer variables
+
+00:07:48,000 --> 00:07:53,000
+and is one example this might let's say represent a spatial
+
+00:07:53,000 --> 00:07:56,000
+antenna array where this is
+
+00:07:56,000 --> 00:07:59,000
+array number in let's say the horizontal
+
+00:07:59,000 --> 00:08:03,000
+direction and this is array number in the vertical direction
+
+00:08:03,000 --> 00:08:07,000
+both classes signals continuous-time and discrete-time
+
+00:08:07,000 --> 00:08:12,000
+as i've indicated are very important and it should be emphasized
+
+00:08:12,000 --> 00:08:17,000
+dead the importance I'll discrete-time signals associated processing
+
+00:08:17,000 --> 00:08:21,000
+continues to grow in large part because
+
+00:08:21,000 --> 00:08:24,000
+I'll the current and emerging technologies
+
+00:08:24,000 --> 00:08:28,000
+that permit basically the processing
+
+00:08:28,000 --> 00:08:31,000
+or continuous-time signals by
+
+00:08:31,000 --> 00:08:34,000
+first converting to discrete-time signals
+
+00:08:34,000 --> 00:08:38,000
+and processing them with discrete time systems
+
+00:08:38,000 --> 00:08:41,000
+and that in fact is a topic that we will
+
+00:08:41,000 --> 00:08:47,000
+discuss in a fair manner detail later on in the course
+
+00:08:47,000 --> 00:08:51,000
+let's now turn our attention to systems
+
+00:08:51,000 --> 00:08:54,000
+and as they indicated a system
+
+00:08:54,000 --> 00:08:58,000
+basically processes signals
+
+00:08:58,000 --> 00:09:01,000
+and they have of course inputs
+
+00:09:01,000 --> 00:09:04,000
+and outputs and depending on
+
+00:09:04,000 --> 00:09:08,000
+whether we're talking about continuous-time for discrete-time
+
+00:09:08,000 --> 00:09:12,000
+the system maybe a continuous-time system
+
+00:09:12,000 --> 00:09:16,000
+or a discrete-time system so in the continuous-time
+
+00:09:16,000 --> 00:09:19,000
+case I indicate here in input: accept T
+
+00:09:19,000 --> 00:09:22,000
+and an output y ft if we were talking
+
+00:09:22,000 --> 00:09:25,000
+about discrete-time system I would represent
+
+00:09:25,000 --> 00:09:29,000
+the the input in terms a discrete-time
+
+00:09:29,000 --> 00:09:32,000
+variable and of course the output interns a
+
+00:09:32,000 --> 00:09:36,000
+discrete-time variable also
+
+00:09:36,000 --> 00:09:40,000
+now in very general terms systems are hard to deal with
+
+00:09:40,000 --> 00:09:45,000
+because is they are defined very broadly a very generally
+
+00:09:45,000 --> 00:09:49,000
+and in dealing with systems and analyzing
+
+00:09:49,000 --> 00:09:52,000
+what we will do is attempt to exploit
+
+00:09:52,000 --> 00:09:56,000
+some very specific and as we'll see
+
+00:09:56,000 --> 00:09:59,000
+very useful system properties
+
+00:09:59,000 --> 00:10:04,000
+to indicate what I mean and how things might be split up
+
+00:10:04,000 --> 00:10:07,000
+we could talk about systems and we'll talk about systems
+
+00:10:07,000 --> 00:10:11,000
+that are linear and we could
+
+00:10:11,000 --> 00:10:15,000
+divide systems basically into systems that are either linear
+
+00:10:15,000 --> 00:10:19,000
+or nonlinear and we will
+
+00:10:19,000 --> 00:10:24,000
+or and also devices turns into systems that are
+
+00:10:24,000 --> 00:10:27,000
+what we refer to as time-invariant
+
+00:10:27,000 --> 00:10:31,000
+or time-varying systems and these aren't turns that
+
+00:10:31,000 --> 00:10:35,000
+we've defined yet of course but we will be defining
+
+00:10:35,000 --> 00:10:38,000
+in the course very shortly and while
+
+00:10:38,000 --> 00:10:43,000
+in some sense this division represents all systems and this those two
+
+00:10:43,000 --> 00:10:47,000
+the focus of the course is really going to be principally
+
+00:10:47,000 --> 00:10:50,000
+on linear time-invariant systems
+
+00:10:50,000 --> 00:10:54,000
+so in its basically the system's
+
+00:10:54,000 --> 00:10:57,000
+that we will be focusing on and
+
+00:10:57,000 --> 00:11:01,000
+will be referring to those systems as linear
+
+00:11:01,000 --> 00:11:04,000
+time-invariant systems
+
+00:11:04,000 --> 00:11:09,000
+well as a free clip said some other kinds of things that systems can do
+
+00:11:09,000 --> 00:11:13,000
+let me illustrate first in
+
+00:11:13,000 --> 00:11:16,000
+I a one-dimensional continuous-time
+
+00:11:16,000 --> 00:11:21,000
+context and then later with a discrete-time example
+
+00:11:21,000 --> 00:11:25,000
+one example I'll some processing
+
+00:11:25,000 --> 00:11:28,000
+I'll signals with an appropriate system
+
+00:11:28,000 --> 00:11:31,000
+the particular example that I want to illustrate
+
+00:11:31,000 --> 00:11:35,000
+relates to the restoration or old recordings
+
+00:11:35,000 --> 00:11:40,000
+and missus some work that was done by Professor Thomas stocker who
+
+00:11:40,000 --> 00:11:45,000
+is at the University Utah and work that he had done a number of years ago
+
+00:11:45,000 --> 00:11:49,000
+relating to the fact day in all recordings
+
+00:11:49,000 --> 00:11:53,000
+for example in caruso recordings
+
+00:11:53,000 --> 00:11:57,000
+the recording was done through mechanical morning
+
+00:11:57,000 --> 00:12:01,000
+and the characteristics love the horn tended to vary from day to day
+
+00:12:01,000 --> 00:12:04,000
+and because if the characteristics of the horn
+
+00:12:04,000 --> 00:12:08,000
+the recording tended to have a muffled quality something like
+
+00:12:08,000 --> 00:12:11,000
+yes sorta the sense that you would get
+
+00:12:11,000 --> 00:12:15,000
+if you were speaking through a megaphone
+
+00:12:15,000 --> 00:12:18,000
+what professor stock and it was developed a system
+
+00:12:18,000 --> 00:12:22,000
+to process these old recordings
+
+00:12:22,000 --> 00:12:25,000
+in such a way dead a lot or
+
+00:12:25,000 --> 00:12:28,000
+the characteristics and distortion do
+
+00:12:28,000 --> 00:12:31,000
+to that recording system was removed so I'd like to
+
+00:12:31,000 --> 00:12:36,000
+illustrate that as one example some signal processing with an appropriate
+
+00:12:36,000 --> 00:12:40,000
+continuous-time system and what you'll hear
+
+00:12:40,000 --> 00:12:43,000
+is a to track recording
+
+00:12:43,000 --> 00:12:47,000
+on the first track is the original on restored
+
+00:12:47,000 --> 00:12:51,000
+caruso recording and on the second track
+
+00:12:51,000 --> 00:12:55,000
+is the result of the restoration and so as I switch back and forth
+
+00:12:55,000 --> 00:12:59,000
+from channel one to channel two will be switching from
+
+00:12:59,000 --> 00:13:03,000
+the original to the restored will begin the tape
+
+00:13:03,000 --> 00:13:07,000
+by playing the original and
+
+00:13:07,000 --> 00:13:10,000
+day and as it proceeds will switch
+
+00:13:10,000 --> 00:13:15,000
+so we begin on channel one
+
+00:13:15,000 --> 00:13:21,000
+low pS The Regent
+
+00:13:21,000 --> 00:13:27,000
+switch now process middle
+
+00:13:27,000 --> 00:13:31,000
+him home
+
+00:13:31,000 --> 00:13:35,000
+his back 0 hit
+
+00:13:35,000 --> 00:13:42,000
+back to the original p
+
+00:13:42,000 --> 00:13:46,000
+I read
+
+00:13:46,000 --> 00:13:49,000
+back to the restoration
+
+00:13:49,000 --> 00:13:52,000
+mine yard
+
+00:13:52,000 --> 00:13:55,000
+home
+
+00:13:55,000 --> 00:13:59,000
+and once again back to the rigid
+
+00:13:59,000 --> 00:14:04,000
+mid
+
+00:14:04,000 --> 00:14:07,000
+and presumably and hopefully what you heard
+
+00:14:07,000 --> 00:14:11,000
+was dead in the restoration in fact a lot of the muffled
+
+00:14:11,000 --> 00:14:15,000
+characteristics the original recording
+
+00:14:15,000 --> 00:14:19,000
+were compensated for or remove now
+
+00:14:19,000 --> 00:14:23,000
+one of the interesting things that happened in fact in the work that
+
+00:14:23,000 --> 00:14:28,000
+lesser Stockham did is that in the process of the restoration and perhaps
+
+00:14:28,000 --> 00:14:29,000
+you've heard this
+
+00:14:29,000 --> 00:14:34,000
+in the process of the restoration in fact some other background noise on the
+
+00:14:34,000 --> 00:14:35,000
+recording
+
+00:14:35,000 --> 00:14:39,000
+was emphasize and so he processed
+
+00:14:39,000 --> 00:14:43,000
+this the signal further in an attempt to
+
+00:14:43,000 --> 00:14:47,000
+remove that background noise and with that particular processing the
+
+00:14:47,000 --> 00:14:48,000
+processing
+
+00:14:48,000 --> 00:14:52,000
+was very highly nonlinear a very interesting thing happened
+
+00:14:52,000 --> 00:14:57,000
+which was that not only in at processing
+
+00:14:57,000 --> 00:15:01,000
+was the background noise removal but somewhat surprisingly
+
+00:15:01,000 --> 00:15:05,000
+also the orchestra was and let me just plain bad
+
+00:15:05,000 --> 00:15:10,000
+now as an example love some very sophisticated processing
+
+00:15:10,000 --> 00:15:14,000
+with the nonlinear system what you'll hear on channel one
+
+00:15:14,000 --> 00:15:17,000
+0 is the restoration as
+
+00:15:17,000 --> 00:15:20,000
+we just plated when I switch to chat
+
+00:15:20,000 --> 00:15:23,000
+to will the Hampton
+
+00:15:23,000 --> 00:15:27,000
+processing him home
+
+00:15:27,000 --> 00:15:31,000
+and acted one now
+
+00:15:31,000 --> 00:15:36,000
+0 would im
+
+00:15:36,000 --> 00:15:39,000
+hell
+
+00:15:39,000 --> 00:15:41,000
+now inside
+
+00:15:41,000 --> 00:15:47,000
+back
+
+00:15:47,000 --> 00:15:50,000
+why did
+
+00:15:50,000 --> 00:15:56,000
+well
+
+00:15:56,000 --> 00:15:59,000
+him
+
+00:15:59,000 --> 00:16:02,000
+finally once again world
+
+00:16:02,000 --> 00:16:09,000
+okay so
+
+00:16:12,000 --> 00:16:15,000
+that's an example love processing Ave
+
+00:16:15,000 --> 00:16:20,000
+continuous-time signal with a corresponding continuous-time
+
+00:16:20,000 --> 00:16:24,000
+system now I'd like to illustrate an example
+
+00:16:24,000 --> 00:16:29,000
+some processing discrete-time signal and I'd like to do that in the context that
+
+00:16:29,000 --> 00:16:30,000
+the example
+
+00:16:30,000 --> 00:16:33,000
+ratio before a discrete-time signal which was
+
+00:16:33,000 --> 00:16:38,000
+the dow jones industrial weekly stock market index
+
+00:16:38,000 --> 00:16:41,000
+I head shown it before as
+
+00:16:41,000 --> 00:16:45,000
+I've shown it here again over a period
+
+00:16:45,000 --> 00:16:48,000
+of slightly more than a year where this
+
+00:16:48,000 --> 00:16:52,000
+is the number of weeks and this is the
+
+00:16:52,000 --> 00:16:55,000
+weekly index and to illustrate
+
+00:16:55,000 --> 00:16:59,000
+some of the processing what I'd like to do
+
+00:16:59,000 --> 00:17:02,000
+is show the stock market index
+
+00:17:02,000 --> 00:17:06,000
+weekly index over a much longer time period a particular
+
+00:17:06,000 --> 00:17:09,000
+the weekly index over a ten year period
+
+00:17:09,000 --> 00:17:12,000
+and that's what I show here so
+
+00:17:12,000 --> 00:17:16,000
+what this covers is roughly 1927
+
+00:17:16,000 --> 00:17:19,000
+to 1937 and
+
+00:17:19,000 --> 00:17:23,000
+in this case although this is still a discrete-time signal
+
+00:17:23,000 --> 00:17:27,000
+just simply for the purposes display what we've done
+
+00:17:27,000 --> 00:17:30,000
+is to essentially connect the dots and
+
+00:17:30,000 --> 00:17:35,000
+draw continuous curve through the points so that this picture isn't filled up
+
+00:17:35,000 --> 00:17:36,000
+with a lot of vertical lines
+
+00:17:36,000 --> 00:17:40,000
+so this is the discrete-time sequence
+
+00:17:40,000 --> 00:17:43,000
+represents the weekly Dow Jones
+
+00:17:43,000 --> 00:17:47,000
+Dow Jones index over a 10-year period and
+
+00:17:47,000 --> 00:17:52,000
+here by the way again is the crash of
+
+00:17:52,000 --> 00:17:56,000
+it's interesting to note by the way day
+
+00:17:56,000 --> 00:18:01,000
+actually the disaster in the stock market wasn't so much the 1929 crash
+
+00:18:01,000 --> 00:18:06,000
+but the long downward trend that follow that and you can see that here
+
+00:18:06,000 --> 00:18:10,000
+by kinda filtering through by I
+
+00:18:10,000 --> 00:18:14,000
+the rapid variations in the index and what you see is this
+
+00:18:14,000 --> 00:18:17,000
+smooth downward trend followed
+
+00:18:17,000 --> 00:18:23,000
+eventually by upward trend now
+
+00:18:23,000 --> 00:18:28,000
+this issue love looking at something like this looking at a sequence
+
+00:18:28,000 --> 00:18:33,000
+and following the smoother parts if it namely
+
+00:18:33,000 --> 00:18:37,000
+the long-term trends is in fact something
+
+00:18:37,000 --> 00:18:41,000
+that is done quite typically with economic time series like this
+
+00:18:41,000 --> 00:18:45,000
+and in particular what's done is to smooth it
+
+00:18:45,000 --> 00:18:49,000
+or average over some time period
+
+00:18:49,000 --> 00:18:56,000
+to emphasize the slow variations and de-emphasize the rapid variations
+
+00:18:56,000 --> 00:19:00,000
+and that in fact is processing that is done
+
+00:19:00,000 --> 00:19:05,000
+with discrete-time system solos when you hear referred to let's say
+
+00:19:05,000 --> 00:19:09,000
+in stock market reports fifty one day moving average
+
+00:19:09,000 --> 00:19:14,000
+that in fact is processing the stock market index
+
+00:19:14,000 --> 00:19:18,000
+with a particular discrete-time system the result
+
+00:19:18,000 --> 00:19:21,000
+up doing that on this particular example
+
+00:19:21,000 --> 00:19:26,000
+generates a smooth version the curve which I overly here
+
+00:19:26,000 --> 00:19:30,000
+and the overlay
+
+00:19:30,000 --> 00:19:33,000
+than is really attempting to track the
+
+00:19:33,000 --> 00:19:37,000
+smoother variations and deemphasized
+
+00:19:37,000 --> 00:19:40,000
+more rapid variations let me just
+
+00:19:40,000 --> 00:19:44,000
+slightly offset that so that the different stands out a little more
+
+00:19:44,000 --> 00:19:48,000
+and so here you see what is
+
+00:19:48,000 --> 00:19:51,000
+the original weekly index and
+
+00:19:51,000 --> 00:19:55,000
+this is the result processing that sequence
+
+00:19:55,000 --> 00:19:58,000
+with inappropriate system
+
+00:19:58,000 --> 00:20:02,000
+to apply smoothing and in fact
+
+00:20:02,000 --> 00:20:05,000
+what it is is a moving average and so here again
+
+00:20:05,000 --> 00:20:08,000
+you can see the in the smooth occurred
+
+00:20:08,000 --> 00:20:11,000
+this general downward trend
+
+00:20:11,000 --> 00:20:15,000
+up until this time period followed by eventually
+
+00:20:15,000 --> 00:20:19,000
+recovery I well we've seen
+
+00:20:19,000 --> 00:20:23,000
+example with a continuous-time signals
+
+00:20:23,000 --> 00:20:27,000
+caruso recording an example with the discrete-time signal
+
+00:20:27,000 --> 00:20:30,000
+this stock market index and what I'd also like to show
+
+00:20:30,000 --> 00:20:34,000
+is 30 example which is
+
+00:20:34,000 --> 00:20:38,000
+the result some processing on an image in particular
+
+00:20:38,000 --> 00:20:41,000
+the image that we talked about before which was the aerial photographs
+
+00:20:41,000 --> 00:20:45,000
+that had the problem some cloud cover
+
+00:20:45,000 --> 00:20:48,000
+so once again what we see here
+
+00:20:48,000 --> 00:20:51,000
+is the original aerial photograph
+
+00:20:51,000 --> 00:20:55,000
+with the cloud cover and
+
+00:20:55,000 --> 00:20:58,000
+some processing was applied to this using a system
+
+00:20:58,000 --> 00:21:01,000
+which in fact was both nonlinear
+
+00:21:01,000 --> 00:21:05,000
+and quote time-varying or in the case
+
+00:21:05,000 --> 00:21:10,000
+these independent variables would refer to it as spatially varying
+
+00:21:10,000 --> 00:21:14,000
+and the result applying that processing
+
+00:21:14,000 --> 00:21:17,000
+is shown in the joining
+
+00:21:17,000 --> 00:21:21,000
+picture and what we see the air is
+
+00:21:21,000 --> 00:21:24,000
+hopefully a reasonable attempt
+
+00:21:24,000 --> 00:21:27,000
+to compensate for the cloud cover and
+
+00:21:27,000 --> 00:21:32,000
+this by the way was some work was done by Professor
+
+00:21:32,000 --> 00:21:35,000
+them MIT and has been
+
+00:21:35,000 --> 00:21:38,000
+very successful type processing were
+
+00:21:38,000 --> 00:21:41,000
+aerial photographs I should say also
+
+00:21:41,000 --> 00:21:46,000
+that this particular example is one where although the original signal
+
+00:21:46,000 --> 00:21:51,000
+was a signal dead is continuous time that is
+
+00:21:51,000 --> 00:21:55,000
+the independent variables are continuous as they are in a spatial
+
+00:21:55,000 --> 00:21:59,000
+aerial photograph in fact for the processing
+
+00:21:59,000 --> 00:22:02,000
+that picture was first converted to a sequence
+
+00:22:02,000 --> 00:22:06,000
+through a process called sampling which will be talking about later
+
+00:22:06,000 --> 00:22:12,000
+and then the processing in fact was done on a digital computer
+
+00:22:12,000 --> 00:22:16,000
+okay well these then are some examples
+
+00:22:16,000 --> 00:22:19,000
+all the use I'll some
+
+00:22:19,000 --> 00:22:22,000
+systems to process
+
+00:22:22,000 --> 00:22:26,000
+some signals both in continuous-time
+
+00:22:26,000 --> 00:22:30,000
+in discrete-time for one-dimensional signals
+
+00:22:30,000 --> 00:22:34,000
+and for multi-dimensional signals
+
+00:22:34,000 --> 00:22:38,000
+and as I kinda refer to systems we've
+
+00:22:38,000 --> 00:22:41,000
+thought of them as kinda one big block with appropriate
+
+00:22:41,000 --> 00:22:44,000
+or associated input and output and
+
+00:22:44,000 --> 00:22:48,000
+as will be getting into in the first part of the course
+
+00:22:48,000 --> 00:22:52,000
+very often systems are interconnected together
+
+00:22:52,000 --> 00:22:56,000
+for a variety of reasons some other kinds of interconnections that will talk
+
+00:22:56,000 --> 00:22:58,000
+about
+
+00:22:58,000 --> 00:23:01,000
+are connecting systems
+
+00:23:01,000 --> 00:23:05,000
+in what are called series are cascaded connections
+
+00:23:05,000 --> 00:23:08,000
+parallel interconnections feedback
+
+00:23:08,000 --> 00:23:12,000
+interconnections and feedback interconnections
+
+00:23:12,000 --> 00:23:15,000
+in fact are very interesting very important
+
+00:23:15,000 --> 00:23:18,000
+for useful and will be major topic
+
+00:23:18,000 --> 00:23:22,000
+toward the end of the course feedback
+
+00:23:22,000 --> 00:23:25,000
+as you may or may not know
+
+00:23:25,000 --> 00:23:29,000
+comes into play in a variety of situations
+
+00:23:29,000 --> 00:23:32,000
+for example an amplifier design is we'll talk about
+
+00:23:32,000 --> 00:23:36,000
+the black feedback plays an important role
+
+00:23:36,000 --> 00:23:40,000
+in a situation where you have
+
+00:23:40,000 --> 00:23:45,000
+a basically unstable system feedback is often used to stabilize the system
+
+00:23:45,000 --> 00:23:49,000
+and feedback interconnections systems in that sense
+
+00:23:49,000 --> 00:23:52,000
+are very often used in high-performance aircraft
+
+00:23:52,000 --> 00:23:56,000
+which are inherently unstable and are stabilized
+
+00:23:56,000 --> 00:23:59,000
+this kind in action
+
+00:23:59,000 --> 00:24:02,000
+just two give you a little sense this
+
+00:24:02,000 --> 00:24:05,000
+without going into any of the details
+
+00:24:05,000 --> 00:24:10,000
+what i'd like to show you is and excerpt
+
+00:24:10,000 --> 00:24:14,000
+from a lecture day
+
+00:24:14,000 --> 00:24:17,000
+we'll be seeing toward the end of the course relating to
+
+00:24:17,000 --> 00:24:22,000
+feedback analysis a feedback systems and uses a feedback
+
+00:24:22,000 --> 00:24:25,000
+and this is in the context what's referred to
+
+00:24:25,000 --> 00:24:28,000
+as the inverted pendulum which is
+
+00:24:28,000 --> 00:24:31,000
+system that's basically unstable feedback
+
+00:24:31,000 --> 00:24:35,000
+interconnections are used to stabilize the idea
+
+00:24:35,000 --> 00:24:39,000
+as you'll see in this brief clip is that
+
+00:24:39,000 --> 00:24:42,000
+there is a cart that's moving on a track
+
+00:24:42,000 --> 00:24:45,000
+with a ride its pivoted at the base
+
+00:24:45,000 --> 00:24:49,000
+and so that system in the absence anything
+
+00:24:49,000 --> 00:24:52,000
+is unstable in that the ride attend for
+
+00:24:52,000 --> 00:24:55,000
+and as we going to in detail in the lecture
+
+00:24:55,000 --> 00:24:59,000
+later use feedback to
+
+00:24:59,000 --> 00:25:03,000
+position the card under the pendulum to balance it
+
+00:25:03,000 --> 00:25:06,000
+and in fact that balancing can be done even
+
+00:25:06,000 --> 00:25:10,000
+when we modify the system in a variety of ways
+
+00:25:10,000 --> 00:25:13,000
+as you'll see in this clip so let's take a look at that
+
+00:25:13,000 --> 00:25:17,000
+remembering that this is just a brief excerpt
+
+00:25:17,000 --> 00:25:21,000
+from a longer discussion I can change the
+
+00:25:21,000 --> 00:25:25,000
+overall system even further by
+
+00:25:25,000 --> 00:25:28,000
+let's say for example pouring a liquid
+
+00:25:28,000 --> 00:25:31,000
+and now let me also comment that
+
+00:25:31,000 --> 00:25:35,000
+change the physics of a little bit because the
+
+00:25:35,000 --> 00:25:38,000
+the liquid can slash around a little bit comes a little more complicated
+
+00:25:38,000 --> 00:25:42,000
+system but as you can see it still
+
+00:25:42,000 --> 00:25:45,000
+remains balance
+
+00:25:45,000 --> 00:25:49,000
+as you'll see when we get to it by the way that demonstration was a lot of fun
+
+00:25:49,000 --> 00:25:51,000
+to do
+
+00:25:51,000 --> 00:25:57,000
+now in talking about signals and systems as we go through the course
+
+00:25:57,000 --> 00:26:01,000
+their are several domains to in particular
+
+00:26:01,000 --> 00:26:04,000
+that we will find convenient for
+
+00:26:04,000 --> 00:26:10,000
+the analysis and representation signals and systems
+
+00:26:10,000 --> 00:26:13,000
+one is the time-domain
+
+00:26:13,000 --> 00:26:17,000
+which is what we tend to think
+
+00:26:17,000 --> 00:26:20,000
+and which we have kind of been focusing on
+
+00:26:20,000 --> 00:26:23,000
+in the discussion so far in this lecture
+
+00:26:23,000 --> 00:26:27,000
+by equally important is what's referred to
+
+00:26:27,000 --> 00:26:30,000
+as the frequency-domain
+
+00:26:30,000 --> 00:26:34,000
+as representation for signals
+
+00:26:34,000 --> 00:26:37,000
+and as a means for analysis for systems
+
+00:26:37,000 --> 00:26:42,000
+and in the context or the frequency-domain representation
+
+00:26:42,000 --> 00:26:46,000
+some old the kinds a ideas on topics that will be exploring
+
+00:26:46,000 --> 00:26:49,000
+are the Fourier transform and
+
+00:26:49,000 --> 00:26:53,000
+the le plus transform and
+
+00:26:53,000 --> 00:26:57,000
+a discrete-time counterpart the apostrophe is for which is the sea
+
+00:26:57,000 --> 00:26:59,000
+transport
+
+00:26:59,000 --> 00:27:04,000
+the Fourier transform discussion will get into fairly early in the course
+
+00:27:04,000 --> 00:27:07,000
+and the La Paz transforming z transform
+
+00:27:07,000 --> 00:27:12,000
+represent extensions the 48 transform and will be getting into
+
+00:27:12,000 --> 00:27:15,000
+that later in the course just kinda initially
+
+00:27:15,000 --> 00:27:20,000
+to think about the time domain and frequency domain
+
+00:27:20,000 --> 00:27:23,000
+you might think for example over No being played
+
+00:27:23,000 --> 00:27:27,000
+and the time-domain representation would be
+
+00:27:27,000 --> 00:27:30,000
+how let's say the
+
+00:27:30,000 --> 00:27:34,000
+sound pressure as a function of time would change
+
+00:27:34,000 --> 00:27:37,000
+and the frequency domain representation would
+
+00:27:37,000 --> 00:27:41,000
+correspond to representation the frequency content
+
+00:27:41,000 --> 00:27:45,000
+the No and in fact what I'd like to do is
+
+00:27:45,000 --> 00:27:49,000
+illustrate that and those two domain simultaneously
+
+00:27:49,000 --> 00:27:52,000
+by playing a glockenspiel
+
+00:27:52,000 --> 00:27:55,000
+no which'll here is the No
+
+00:27:55,000 --> 00:27:59,000
+repeated several times over and at the same time
+
+00:27:59,000 --> 00:28:02,000
+you'll see to displays one on the left
+
+00:28:02,000 --> 00:28:06,000
+representing the time domain display a representation
+
+00:28:06,000 --> 00:28:10,000
+the signal and the one on the right representing the frequency
+
+00:28:10,000 --> 00:28:13,000
+me so let's look at that and
+
+00:28:13,000 --> 00:28:20,000
+you'll hear the note and simultaneously see these two displays
+
+00:28:21,000 --> 00:28:24,000
+there's the No on the left time
+
+00:28:24,000 --> 00:28:28,000
+ways and on the right what we see
+
+00:28:28,000 --> 00:28:32,000
+is frequency content in particular
+
+00:28:32,000 --> 00:28:35,000
+indicating the fact dead there are several harmonics
+
+00:28:35,000 --> 00:28:42,000
+lines tell
+
+00:28:54,000 --> 00:28:57,000
+okay well what I've gone thru
+
+00:28:57,000 --> 00:29:01,000
+in this lecture represents a brief overview
+
+00:29:01,000 --> 00:29:07,000
+signals and systems and beginning with the next lecture we will be
+
+00:29:07,000 --> 00:29:11,000
+much more specific and precise first
+
+00:29:11,000 --> 00:29:14,000
+discussing some basic signals and then
+
+00:29:14,000 --> 00:29:18,000
+talking about systems and system properties and how to exploit
+
+00:29:18,000 --> 00:29:23,000
+as one final comment that I'd
+
+00:29:23,000 --> 00:29:27,000
+like to making this lecture I'd like to
+
+00:29:27,000 --> 00:29:30,000
+emphasizes at the out said
+
+00:29:30,000 --> 00:29:34,000
+dead the taped lectures
+
+00:29:34,000 --> 00:29:37,000
+represent only one com- ponent the cores
+
+00:29:37,000 --> 00:29:40,000
+and equally important will be
+
+00:29:40,000 --> 00:29:45,000
+both the textbook and the video course manual in particular
+
+00:29:45,000 --> 00:29:49,000
+it's important not only to reviewing the tapes
+
+00:29:49,000 --> 00:29:55,000
+but simultaneously or in conjunction with that
+
+00:29:55,000 --> 00:29:58,000
+doing the appropriate reading in the textbook and
+
+00:29:58,000 --> 00:30:02,000
+also working through the problems carefully
+
+00:30:02,000 --> 00:30:06,000
+in the video course manual in a course like this
+
+00:30:06,000 --> 00:30:10,000
+you basically only get out a bit as much as you put into it
+
+00:30:10,000 --> 00:30:13,000
+the hope is dead if you put the
+
+00:30:13,000 --> 00:30:18,000
+right amount of time and effort into it you'll find the course to be
+
+00:30:18,000 --> 00:30:22,000
+educational and interesting and I certainly hope that will be the case
+
+00:30:22,000 --> 00:30:22,000
+thank you
+

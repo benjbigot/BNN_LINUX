@@ -1,0 +1,1888 @@
+00:00:06,000 --> 00:00:13,000
+ha the the
+ஹெக்டேருக்கு The
+
+00:00:27,000 --> 00:00:30,000
+the norm
+விதிமுறை
+
+00:00:30,000 --> 00:00:36,000
+well
+அதே
+
+00:00:36,000 --> 00:00:43,000
+the I'm out oppenheim
+நான் இருக்கிறேன் ஓப்பேன்ஹைம்
+
+00:00:43,000 --> 00:00:48,000
+and I'd like to welcome you to this video tape course on signals and systems
+நான் சமிக்ஞைகள் மற்றும் அமைப்புகள் இந்த வீடியோ டேப் நிச்சயமாக உங்களை வரவேற்க விரும்புகிறேன்
+
+00:00:48,000 --> 00:00:51,000
+signals at least
+சிக்னல்களை குறைந்தது
+
+00:00:51,000 --> 00:00:55,000
+as an informal definition are functions
+ஒரு முறைசாரா வரையறை செயல்படுகிறது இருக்கின்றன
+
+00:00:55,000 --> 00:00:58,000
+one or more independent variables that
+ஒன்று அல்லது அதற்கு மேற்பட்ட மாற்றளவுகள் என்று
+
+00:00:58,000 --> 00:01:03,000
+typically carry some type information systems in
+பொதுவாக சில வகை தகவல் அமைப்புகள் செயல்படுத்த
+
+00:01:03,000 --> 00:01:07,000
+are setting with typically be used the process signals
+பொதுவாக குறியலைகளை பயன்படுத்தப்படும் கொண்டு அமைக்க
+
+00:01:07,000 --> 00:01:11,000
+one very common example of a signal
+ஒரு சமிக்ஞை ஒரு மிகவும் பொதுவான உதாரணம்
+
+00:01:11,000 --> 00:01:15,000
+might be let's say speech signal and you might think
+பேச்சு சமிக்ஞை சொல்கிறேன் நீங்கள் நினைக்கலாம்
+
+00:01:15,000 --> 00:01:18,000
+love the air pressure as a function of time
+நேரம் ஒரு செயல்பாடு காற்று அழுத்தம் பிடிக்கிறது
+
+00:01:18,000 --> 00:01:22,000
+or perhaps the electrical signal effort goes through the microphone
+அல்லது ஒருவேளை மின்சார சமிக்ஞையை முயற்சி ஒலிவாங்கி மூலம் செல்கிறது
+
+00:01:22,000 --> 00:01:26,000
+transducer is a function of time as representing the speech signal
+ஆற்றல்மாற்றி பேச்சு சமிக்ஞை குறிக்கும் என நேரம் ஒரு செயல்பாடு ஆகும்
+
+00:01:26,000 --> 00:01:30,000
+and we might see a typical speech signal
+நாம் ஒரு பொதுவான பேச்சு சமிக்ஞை பார்க்க வேண்டும்
+
+00:01:30,000 --> 00:01:33,000
+looking something like i've indicated here
+நான் இங்கே சுட்டி போல் ஏதாவது தேடும்
+
+00:01:33,000 --> 00:01:36,000
+its a function time
+அதன் ஒரு செயல்பாடு நேரம்
+
+00:01:36,000 --> 00:01:40,000
+in this particular case and the independent variable
+இந்த குறிப்பிட்ட வழக்கில் சுயாதீன மாறி
+
+00:01:40,000 --> 00:01:44,000
+being time is in fact continuous
+தற்போதைக்கு உண்மையில் தொடர்ச்சியான ஆகிறது
+
+00:01:44,000 --> 00:01:47,000
+and so a signal like this we will typically be referring to
+அதனால் இந்த மாதிரி ஒரு சமிக்ஞை நாம் பொதுவாக குறிப்பிடும்
+
+00:01:47,000 --> 00:01:52,000
+as a continuous-time signals now
+இப்போது ஒரு தொடர்ச்சியான நேர சமிக்ஞைகளை
+
+00:01:52,000 --> 00:01:55,000
+it also for this particular example is a function
+இது இந்த குறிப்பிட்ட உதாரணமாக ஒரு செயல்பாடு ஆகும்
+
+00:01:55,000 --> 00:01:59,000
+one independent variable and
+ஒரு சுயாதீன மாறி மற்றும்
+
+00:01:59,000 --> 00:02:02,000
+that will be referred to as
+என்று குறிப்பிடப்படுகிறது
+
+00:02:02,000 --> 00:02:06,000
+the one dimensional signal
+ஒரு பரிமாண சமிக்ஞை
+
+00:02:06,000 --> 00:02:09,000
+corresponding to the fact that there's only
+மட்டுமே உள்ளது என்பதை பொறுத்தே
+
+00:02:09,000 --> 00:02:13,000
+one independent variable several independent variables
+ஒரு சுதந்திர மாறி பல சுயாதீன மாறிகள்
+
+00:02:13,000 --> 00:02:16,000
+so the speech signal is an example
+எனவே பேச்சு சமிக்ஞை ஒரு உதாரணம் ஆகும்
+
+00:02:16,000 --> 00:02:20,000
+a continuous-time one-dimensional signal
+ஒரு தொடர்ச்சியான நேரம் ஒரு பரிமாண சமிக்ஞை
+
+00:02:20,000 --> 00:02:23,000
+now signals can of course
+இப்போது நிச்சயமாக முடியும் அடையாளம்
+
+00:02:23,000 --> 00:02:29,000
+be multi-dimensional and they may not have as their independent variables time
+பல பரிமாண இருக்க வேண்டும் மற்றும் அவர்கள் தங்கள் சுயாதீன மாறிகள் நேரம் இல்லை
+
+00:02:29,000 --> 00:02:29,000
+variables
+மாறிகள்
+
+00:02:29,000 --> 00:02:32,000
+one very common example are
+ஒரு மிகவும் பொதுவான உதாரணம் இருக்கிறது
+
+00:02:32,000 --> 00:02:36,000
+the examples represented by images images
+படங்கள் மூலம் குறிப்பிடப்படுகின்றன உதாரணங்கள்
+
+00:02:36,000 --> 00:02:40,000
+as signals we might think I'll as
+சிக்னல்களை நாம் நான் உன்னை நினைக்கலாம்
+
+00:02:40,000 --> 00:02:44,000
+representing brightness as it varies
+அது மாறுபடுகிறது போன்ற பிரகாசம் குறிக்கும்
+
+00:02:44,000 --> 00:02:47,000
+in a horizontal and vertical
+ஒரு கிடைமட்ட மற்றும் செங்குத்து
+
+00:02:47,000 --> 00:02:50,000
+direction and so the brightness as a function
+ஒரு செயல்பாடு திசையில் மற்றும் பிரகாசம்
+
+00:02:50,000 --> 00:02:53,000
+these two spatial variables is then
+இந்த இரண்டு வெளி மாறிகள் பின்னர் ஆகின்றன
+
+00:02:53,000 --> 00:03:00,000
+a two-dimensional signal and
+ஒரு இரு பரிமாண சிக்னல் மற்றும்
+
+00:03:01,000 --> 00:03:04,000
+it the independent variables
+அது மாற்றளவுகள்
+
+00:03:04,000 --> 00:03:09,000
+would typically be continuous but of course they're not time variables
+பொதுவாக தொடர்ந்து இருக்கும் ஆனால் நிச்சயமாக அவர்கள் நேரம் மாறிகள் இல்லை என்று
+
+00:03:09,000 --> 00:03:12,000
+and incidently it's worth
+மற்றும் விசு அது மதிப்பு
+
+00:03:12,000 --> 00:03:16,000
+just commenting very often simply for convenience
+வெறுமனே வசதிக்காக மிகவும் அடிக்கடி கருத்து
+
+00:03:16,000 --> 00:03:20,000
+will have a tendency to refer to the independent variables when we talk about
+நாம் பற்றி பேசும் போது மாற்றளவுகள் பார்க்கவும் ஒரு போக்கு வேண்டும்
+
+00:03:20,000 --> 00:03:21,000
+signals
+சிக்னல்களை
+
+00:03:21,000 --> 00:03:25,000
+as time variables whether or not the really represent time
+நேரம் மாறிகள் அல்லது உண்மையில் நேரம் பிரதிநிதித்துவம்
+
+00:03:25,000 --> 00:03:28,000
+well let me illustrate
+என்னை நன்றாக விளக்குகின்றன நாம்
+
+00:03:28,000 --> 00:03:32,000
+one example all image and
+ஒரு உதாரணம் அனைத்து படம் மற்றும்
+
+00:03:32,000 --> 00:03:35,000
+this is a picture jpg for EA
+இந்த ஈ.ஏ. ஒரு படம் jpg ஆகிறது
+
+00:03:35,000 --> 00:03:39,000
+who perhaps more than anyone else
+வேறு யாரையும் விட ஒருவேளை இன்னும் யார்
+
+00:03:39,000 --> 00:03:42,000
+is responsible for the elegance and beauty
+நேர்த்தியான மற்றும் அழகு பொறுப்பு
+
+00:03:42,000 --> 00:03:47,000
+a lot of the concepts we'll be talking about throughout this course
+கருத்துக்கள் நிறைய நாம் இந்த போக்கை முழுவதும் பற்றி
+
+00:03:47,000 --> 00:03:50,000
+and when you look at this in addition to
+நீங்கள் கூடுதலாக இந்த பார்க்கின்ற போது
+
+00:03:50,000 --> 00:03:54,000
+c4a himself you should recognize that what you're looking at
+c4a தன்னை நீங்கள் பார்த்து என்ன என்று அங்கீகரிக்க வேண்டும்
+
+00:03:54,000 --> 00:03:58,000
+is basically a signal which is brightness as a function
+அடிப்படையில் ஒரு செயல்பாடு பிரகாசம் இது ஒரு சமிக்ஞை ஆகும்
+
+00:03:58,000 --> 00:04:01,000
+the horizontal and vertical spatial variables
+கிடைமட்ட மற்றும் செங்குத்து வெளி மாறிகள்
+
+00:04:01,000 --> 00:04:05,000
+as another example
+மற்றொரு உதாரணமாக
+
+00:04:05,000 --> 00:04:09,000
+an image as a signal let's look at an aerial photograph
+ஒரு வான்வழி புகைப்படம் ஒரு சமிக்ஞை நாம் தோற்றம் போன்ற ஒரு படத்தை
+
+00:04:09,000 --> 00:04:13,000
+this is an aerial photograph taken
+இந்த எடுத்து ஒரு வான்வழி புகைப்படம் ஆகிறது
+
+00:04:13,000 --> 00:04:16,000
+over a setter roads which
+ஒரு செட்டர் சாலைகள் மீது எந்த
+
+00:04:16,000 --> 00:04:19,000
+you can more less recognized in the picture and
+நீங்கள் இன்னும் குறைவாக படத்தில் அங்கீகரிக்கப்பட்ட மற்றும்
+
+00:04:19,000 --> 00:04:23,000
+wanted the difficulties with this signal is that it
+இந்த சமிக்ஞை சிக்கல்கள் இருக்கிறது என்று அது
+
+00:04:23,000 --> 00:04:26,000
+the road system is somewhat obscured by cloud cover
+சாலை அமைப்பு ஓரளவு மேகம் கவர் மறைக்கப்பட்டது
+
+00:04:26,000 --> 00:04:29,000
+and well wanna show later
+மற்றும் இனி நிகழ்ச்சி பின்னர்
+
+00:04:29,000 --> 00:04:32,000
+as an example what a system
+ஒரு உதாரணம் என்ன ஒரு அமைப்பு
+
+00:04:32,000 --> 00:04:38,000
+might do to such as signal in terms of processing is an attempt to
+செயலாக்க அடிப்படையில் சிக்னல் போன்ற செய்யலாம் ஒரு முயற்சியாகும்
+
+00:04:38,000 --> 00:04:41,000
+at least compensate some way for the
+குறைந்தது சில வழி இழப்பீடு
+
+00:04:41,000 --> 00:04:46,000
+cloud cover represented in the photograph following terms a
+புகைப்படத்தை குறிப்பிடப்படுகின்றன மேகம் கவர் பின்வரும் அடிப்படையில் ஒரு
+
+00:04:46,000 --> 00:04:49,000
+the detailed analysis we go through during the course are
+நாம் நிச்சயமாக போது செல்ல விரிவான ஆய்வு இருக்கிறது
+
+00:04:49,000 --> 00:04:53,000
+focus of attention is pretty much restricted to
+கவனம் அழகான மிகவும் கட்டுப்படுத்தப்பட்டுள்ளது
+
+00:04:53,000 --> 00:04:57,000
+one-dimensional signals in fact we will be using
+நாம் பயன்படுத்தி கொள்ள வேண்டும் உண்மையில் ஒரு பரிமாண சமிக்ஞைகளை
+
+00:04:57,000 --> 00:05:00,000
+two-dimensional signals more specifically images
+இரு பரிமாண சமிக்ஞைகளை மேலும் குறிப்பாக படங்கள்
+
+00:05:00,000 --> 00:05:03,000
+very often to illustrate a variety
+மிகவும் அடிக்கடி பல்வேறு விளக்குவதற்கு
+
+00:05:03,000 --> 00:05:06,000
+concepts now
+இப்போது கருத்துக்கள்
+
+00:05:06,000 --> 00:05:10,000
+speech in images are examples
+படங்களை பேச்சு உதாரணங்கள் இருக்கிறது
+
+00:05:10,000 --> 00:05:13,000
+what we refer to as continuous-time signals
+நாங்கள் தொடர்ந்து நேர சிக்னல்களை என பார்க்கவும் என்ன
+
+00:05:13,000 --> 00:05:16,000
+in that they are functions
+என்று அவர்கள் செயல்பாடுகளை இருக்கிறார்கள்
+
+00:05:16,000 --> 00:05:19,000
+continuous variables equally
+தொடர்ந்து மாறிகள் சமமாக
+
+00:05:19,000 --> 00:05:23,000
+important classes signals will be concentrating on
+முக்கியமான வகுப்புகள் சிக்னல்களை கவனம் செலுத்த வேண்டும்
+
+00:05:23,000 --> 00:05:27,000
+in the cores are signals are
+கருக்கள் சிக்னல்களை உள்ளன
+
+00:05:27,000 --> 00:05:30,000
+discrete-time signals
+தனி நேர சிக்னல்களை
+
+00:05:30,000 --> 00:05:33,000
+where by discrete-time we mean
+அங்கு நாம் அர்த்தம் தனி நேரம்
+
+00:05:33,000 --> 00:05:36,000
+is that the signal is
+சிக்னல் உள்ளது
+
+00:05:36,000 --> 00:05:40,000
+a function integer variable
+ஒரு செயல்பாடு முழு எண் மாறி
+
+00:05:40,000 --> 00:05:43,000
+and so specifically only takes on values
+அதனால் குறிப்பாக மட்டுமே மதிப்புகள் எடுக்கிறது
+
+00:05:43,000 --> 00:05:48,000
+at in nature values the argument
+இயற்கையில் உள்ள வாதம் மதிப்புகள்
+
+00:05:48,000 --> 00:05:52,000
+so here is a graphical illustration
+அதனால் இங்கே ஒரு வரைகலை விளக்கம்
+
+00:05:52,000 --> 00:05:57,000
+the discrete-time signal and discrete-time signals arise
+தனி நேர சமிக்ஞை மற்றும் தனித்தியங்கும் நேர சிக்னல்களை எழுகின்றன
+
+00:05:57,000 --> 00:06:01,000
+in a variety of ways one very common example
+பல்வேறு வழிகளில் ஒரு மிகவும் பொதுவான உதாரணம்
+
+00:06:01,000 --> 00:06:07,000
+it seems fairly often is discrete-time signals in the context
+அது சூழலில் தனித்தியங்கும் நேர சிக்னல்களை, மிகவும் அடிக்கடி தெரிகிறது
+
+00:06:07,000 --> 00:06:13,000
+economic time series and for example stock market analysis
+பொருளாதார நேரம் தொடர் மற்றும் உதாரணமாக பங்கு சந்தை பகுப்பாய்வு
+
+00:06:13,000 --> 00:06:16,000
+so what I show here is one
+அதனால் என்ன நான் இங்கே காட்ட ஒன்று
+
+00:06:16,000 --> 00:06:21,000
+very commonly occurring example the discrete-time signal
+மிகவும் பொதுவாக எடுத்துக்காட்டாக தனி நேர சமிக்ஞை நிகழும்
+
+00:06:21,000 --> 00:06:25,000
+it represents the weekly stock market index
+அது வாராந்திர பங்கு சந்தை குறியீட்டு பிரதிபலிக்கிறது
+
+00:06:25,000 --> 00:06:28,000
+the independent variable in this case is
+இந்த வழக்கில் சுயாதீன மாறி இருக்கிறது
+
+00:06:28,000 --> 00:06:32,000
+the week number and we see what the
+வாரம் எண் மற்றும் நாம் பார்க்க என்ன
+
+00:06:32,000 --> 00:06:36,000
+stock market is doing over this particular period
+பங்கு சந்தை இந்த குறிப்பிட்ட காலத்தில் செய்து
+
+00:06:36,000 --> 00:06:39,000
+as a function or the number of the week and
+ஒரு செயல்பாடு அல்லது வார எண் மற்றும்
+
+00:06:39,000 --> 00:06:43,000
+course along the vertical axis is the
+செங்குத்து அச்சில் நிச்சயமாக இருக்கிறது
+
+00:06:43,000 --> 00:06:46,000
+weekly index incidently
+வாராந்திர குறியீட்டு விசு
+
+00:06:46,000 --> 00:06:49,000
+this particular period was not chosen
+இந்த குறிப்பிட்ட காலத்தில் தேர்வு இல்லை
+
+00:06:49,000 --> 00:06:53,000
+random in fact captures very interesting aspect
+உண்மையில் சீரற்ற மிகவும் சுவாரஸ்யமான அம்சம் பிடிக்கப்பட்ட
+
+00:06:53,000 --> 00:06:57,000
+stock market history namely the
+பங்கு சந்தை வரலாற்றில் அதாவது
+
+00:06:57,000 --> 00:07:00,000
+stock market crash in 1929
+1929 இன் பங்கு சந்தை வீழ்ச்சி
+
+00:07:00,000 --> 00:07:04,000
+which in fact is represented by behavior
+உண்மையில் நடத்தை மூலம் குறிப்பிடப்படுகின்றன இது
+
+00:07:04,000 --> 00:07:08,000
+this discrete time signal or sequence
+இந்த தனித்தியங்கும் நேர சமிக்ஞை அல்லது வரிசை
+
+00:07:08,000 --> 00:07:12,000
+in this particular area so this dramatic dip in fact
+இந்த குறிப்பிட்ட பகுதியில் உண்மையில் இந்த வியத்தகு சரிவு
+
+00:07:12,000 --> 00:07:16,000
+is the stock market crash 1929
+பங்கு சந்தை வீழ்ச்சி 1929 ஆகிறது
+
+00:07:16,000 --> 00:07:20,000
+well the dow jones weekly average is an example
+நன்கு டோவ் ஜோன்ஸ் வாராந்திர சராசரி ஒரு உதாரணம் ஆகும்
+
+00:07:20,000 --> 00:07:24,000
+all a one-dimensional discrete-time signal
+அனைத்து ஒரு பரிமாண தனி நேர சமிக்ஞை
+
+00:07:24,000 --> 00:07:27,000
+and just as with continuous time
+மற்றும் தொடர்ச்சியான நேரம் என
+
+00:07:27,000 --> 00:07:31,000
+we had not just one-dimensional multi-dimensional signals
+நாம் ஒரு பரிமாண பல பரிமாண சமிக்ஞைகளை மட்டும் இருந்தது
+
+00:07:31,000 --> 00:07:35,000
+likewise we have multi-dimensional signals
+இதேபோல் நாம் பல பரிமாண சமிக்ஞைகள்
+
+00:07:35,000 --> 00:07:39,000
+in the discrete-time case where
+தனி நேரம் வழக்கில், அங்கு
+
+00:07:39,000 --> 00:07:43,000
+in that case then the discrete-time signal that we're talking about a
+நாம் அந்த வழக்கில் ஒரு பற்றி பேசுகிறீர்கள் என்று பின்னர் தனி நேர சமிக்ஞை
+
+00:07:43,000 --> 00:07:44,000
+sequence
+வரிசை
+
+00:07:44,000 --> 00:07:48,000
+is a function love to integer variables
+மாறிகள் முழு எண் ஒரு செயல்பாடு காதல்
+
+00:07:48,000 --> 00:07:53,000
+and is one example this might let's say represent a spatial
+மற்றும் ஒரு உதாரணம் இந்த ஒரு வெளி பிரதிநிதித்துவம் சொல்கிறேன் என்று ஆகிறது
+
+00:07:53,000 --> 00:07:56,000
+antenna array where this is
+இந்த எங்கே ஆண்டெனா வரிசை
+
+00:07:56,000 --> 00:07:59,000
+array number in let's say the horizontal
+கிடைமட்ட சொல்கிறேன் வரிசை எண்
+
+00:07:59,000 --> 00:08:03,000
+direction and this is array number in the vertical direction
+திசை மற்றும் செங்குத்து திசையில் இந்த வரிசை எண்
+
+00:08:03,000 --> 00:08:07,000
+both classes signals continuous-time and discrete-time
+இரண்டு வகுப்புகள் தொடர்ச்சியான நேர மற்றும் தனித்தியங்கும் நேர சிக்னல்களை
+
+00:08:07,000 --> 00:08:12,000
+as i've indicated are very important and it should be emphasized
+நான் மிகவும் முக்கியம் சுட்டிக்காட்டினார் மற்றும் அது வலியுறுத்தப்பட வேண்டும் என
+
+00:08:12,000 --> 00:08:17,000
+dead the importance I'll discrete-time signals associated processing
+இறந்த முக்கியத்துவம் நான் தனி நேர சிக்னல்களை செயலாக்க தொடர்புடைய
+
+00:08:17,000 --> 00:08:21,000
+continues to grow in large part because
+அதற்கு முக்கிய காரணம் வளர தொடர்கிறது
+
+00:08:21,000 --> 00:08:24,000
+I'll the current and emerging technologies
+நான் உன்னை தற்போதைய மற்றும் வளர்ந்து வரும் தொழில்நுட்பங்கள்
+
+00:08:24,000 --> 00:08:28,000
+that permit basically the processing
+என்று அனுமதி அடிப்படையில் செயலாக்க
+
+00:08:28,000 --> 00:08:31,000
+or continuous-time signals by
+அல்லது தொடர்ச்சியான நேர சமிக்ஞைகளை
+
+00:08:31,000 --> 00:08:34,000
+first converting to discrete-time signals
+முதல் தனி நேர சிக்னல்களை மாற்றும்
+
+00:08:34,000 --> 00:08:38,000
+and processing them with discrete time systems
+மற்றும் தனித்தியங்கும் நேரம் அமைப்புகள் அவற்றை செயல்படுத்துவது
+
+00:08:38,000 --> 00:08:41,000
+and that in fact is a topic that we will
+என்று உண்மையில் நாம் என்று ஒரு தலைப்பு
+
+00:08:41,000 --> 00:08:47,000
+discuss in a fair manner detail later on in the course
+நிச்சயமாக பின்னர் ஒரு நியாயமான முறையில் விரிவாக விவாதிக்க
+
+00:08:47,000 --> 00:08:51,000
+let's now turn our attention to systems
+இப்போது அமைப்புகள் நமது கவனத்தை திருப்ப வேண்டும்
+
+00:08:51,000 --> 00:08:54,000
+and as they indicated a system
+அவர்கள் ஒரு முறை குறிப்பிட்ட
+
+00:08:54,000 --> 00:08:58,000
+basically processes signals
+அடிப்படையில் சமிக்ஞைகளை செயல்படுத்தி
+
+00:08:58,000 --> 00:09:01,000
+and they have of course inputs
+அவர்கள் நிச்சயமாக உள்ளீடுகளை வேண்டும்
+
+00:09:01,000 --> 00:09:04,000
+and outputs and depending on
+மற்றும் வெளியீடுகள் மற்றும் பொறுத்து
+
+00:09:04,000 --> 00:09:08,000
+whether we're talking about continuous-time for discrete-time
+நாம் தனித்தியங்கும் நேர தொடர்ச்சியான நேர பற்றி பேசுகிறீர்கள் என்பதை
+
+00:09:08,000 --> 00:09:12,000
+the system maybe a continuous-time system
+ஒருவேளை ஒரு தொடர்ச்சியான நேர அமைப்பு முறை
+
+00:09:12,000 --> 00:09:16,000
+or a discrete-time system so in the continuous-time
+அல்லது ஒரு தனி நேரம் கணினி அதனால் தொடர்ச்சியான நேரம்
+
+00:09:16,000 --> 00:09:19,000
+case I indicate here in input: accept T
+வழக்கு நான் உள்ளீடு இங்கே குறிக்கிறேன்: டி ஏற்க
+
+00:09:19,000 --> 00:09:22,000
+and an output y ft if we were talking
+நாம் பேசி இருந்தால் ஒரு வெளியீடு Y அடி
+
+00:09:22,000 --> 00:09:25,000
+about discrete-time system I would represent
+தனி முறை கணினியை பற்றி நான் பிரதிநிதித்துவப்படுத்தும்
+
+00:09:25,000 --> 00:09:29,000
+the the input in terms a discrete-time
+விதிமுறைகள் ஒரு தனி நேரம் உள்ளீடு
+
+00:09:29,000 --> 00:09:32,000
+variable and of course the output interns a
+மாறி நிச்சயமாக வெளியீடு பயிற்சியாளர்களுக்கு ஒரு
+
+00:09:32,000 --> 00:09:36,000
+discrete-time variable also
+தனி நேரம் மாறி மேலும்
+
+00:09:36,000 --> 00:09:40,000
+now in very general terms systems are hard to deal with
+இப்போது மிகவும் பொதுவாக அமைப்புகள் சமாளிக்க கடினமாக இருக்கும்
+
+00:09:40,000 --> 00:09:45,000
+because is they are defined very broadly a very generally
+அவர்கள் மிகவும் பொதுவாக மிகவும் பரந்த அளவில் வரையறுக்கப்பட்ட ஏனெனில்
+
+00:09:45,000 --> 00:09:49,000
+and in dealing with systems and analyzing
+மற்றும் அமைப்புகள் கையாள்வதில் ஆய்வு
+
+00:09:49,000 --> 00:09:52,000
+what we will do is attempt to exploit
+சுரண்டி கொள்வதில் நாம் என்ன செய்ய வேண்டும் என்பது தான்
+
+00:09:52,000 --> 00:09:56,000
+some very specific and as we'll see
+சில மிகவும் குறிப்பிட்ட மற்றும் நாம் பார்க்க வேண்டும் போல்
+
+00:09:56,000 --> 00:09:59,000
+very useful system properties
+மிகவும் பயனுள்ளதாக முறை
+
+00:09:59,000 --> 00:10:04,000
+to indicate what I mean and how things might be split up
+நான் என்ன குறிக்க மற்றும் பொருட்களை பிரித்து வேண்டும்
+
+00:10:04,000 --> 00:10:07,000
+we could talk about systems and we'll talk about systems
+நாங்கள் அமைப்புகள் பற்றி பேச முடியும் மற்றும் நாம் அமைப்புகள் பற்றி பேசுகிறேன்
+
+00:10:07,000 --> 00:10:11,000
+that are linear and we could
+நேரியல் மற்றும் நாம் முடியும் என்று
+
+00:10:11,000 --> 00:10:15,000
+divide systems basically into systems that are either linear
+அடிப்படையில் நேரியல் ஒன்று என்று அமைப்புகளில் அமைப்புகள் பிரித்து
+
+00:10:15,000 --> 00:10:19,000
+or nonlinear and we will
+அல்லது தொகையற்ற மற்றும் நாம் செய்வோம்
+
+00:10:19,000 --> 00:10:24,000
+or and also devices turns into systems that are
+அல்லது மேலும் சாதனங்கள் என்று அமைப்புகளில் மாறும்
+
+00:10:24,000 --> 00:10:27,000
+what we refer to as time-invariant
+நாம் என பார்க்கவும் என்ன நேரம் மாற்றமில்லாத
+
+00:10:27,000 --> 00:10:31,000
+or time-varying systems and these aren't turns that
+அல்லது நேரத்தை பல்வேறு அமைப்புகள் இந்த மாறிவிடும் இல்லை என்று
+
+00:10:31,000 --> 00:10:35,000
+we've defined yet of course but we will be defining
+நாம் நிச்சயமாக இன்னும் வரையறுக்கப்படவில்லை ஆனால் நாம் வரையறுக்கும் வேண்டும்
+
+00:10:35,000 --> 00:10:38,000
+in the course very shortly and while
+மிக விரைவில் போக்கில் போது
+
+00:10:38,000 --> 00:10:43,000
+in some sense this division represents all systems and this those two
+சில சமயங்களில், இந்த பிரிவு அனைத்து அமைப்புகள் மற்றும் இந்த அந்த இரண்டு பிரதிபலிக்கிறது
+
+00:10:43,000 --> 00:10:47,000
+the focus of the course is really going to be principally
+நிச்சயமாக கவனம் உண்மையில் முக்கியமாக போகிறது
+
+00:10:47,000 --> 00:10:50,000
+on linear time-invariant systems
+நேரியல் நேரம் மாற்றமில்லாத அமைப்புகள்
+
+00:10:50,000 --> 00:10:54,000
+so in its basically the system's
+எனவே அதன் அடிப்படையில் கணினி உள்ள
+
+00:10:54,000 --> 00:10:57,000
+that we will be focusing on and
+நாம் கவனம் செலுத்தும் என்று
+
+00:10:57,000 --> 00:11:01,000
+will be referring to those systems as linear
+நேரியல் என அந்த அமைப்புகள் பற்றி
+
+00:11:01,000 --> 00:11:04,000
+time-invariant systems
+நேர மாற்றம் அமைப்புகள்
+
+00:11:04,000 --> 00:11:09,000
+well as a free clip said some other kinds of things that systems can do
+ஒரு இலவச கிளிப் கூறினார் அத்துடன் அமைப்புகள் என்ன செய்ய முடியும் என்று விஷயங்கள் சில மற்ற வகையான
+
+00:11:09,000 --> 00:11:13,000
+let me illustrate first in
+எனக்கு முதல் காண்பிக்கலாம்
+
+00:11:13,000 --> 00:11:16,000
+I a one-dimensional continuous-time
+நான் ஒரு பரிமாண தொடர்ச்சியான நேரம்
+
+00:11:16,000 --> 00:11:21,000
+context and then later with a discrete-time example
+பின்னணியில் பின்னர் ஒரு தனி நேரம் உதாரணம்
+
+00:11:21,000 --> 00:11:25,000
+one example I'll some processing
+ஒரு உதாரணம் என்று நான் சில செயலாக்க
+
+00:11:25,000 --> 00:11:28,000
+I'll signals with an appropriate system
+ஒரு பொருத்தமான அமைப்பு என்று நான் சிக்னல்களை
+
+00:11:28,000 --> 00:11:31,000
+the particular example that I want to illustrate
+நான் விளக்க வேண்டும் என்று குறிப்பிட்ட எடுத்துக்காட்டாக
+
+00:11:31,000 --> 00:11:35,000
+relates to the restoration or old recordings
+மீண்டும் அல்லது பழைய பதிவுகளை தொடர்புடையது
+
+00:11:35,000 --> 00:11:40,000
+and missus some work that was done by Professor Thomas stocker who
+மற்றும் அத்தொகுதியில் பேராசிரியர் தாமஸ் Stocker செய்யப்பட்டது என்று சில வேலை யார்
+
+00:11:40,000 --> 00:11:45,000
+is at the University Utah and work that he had done a number of years ago
+பல்கலைக்கழகம் உட்டா உள்ளது மற்றும் அவர் ஆண்டுகளுக்கு முன்பு பல செய்த வேலை
+
+00:11:45,000 --> 00:11:49,000
+relating to the fact day in all recordings
+அனைத்து பதிவுகள் உண்மையில் நாள் தொடர்பான
+
+00:11:49,000 --> 00:11:53,000
+for example in caruso recordings
+காருஸோ பதிவுகளை எடுத்துக்காட்டாக
+
+00:11:53,000 --> 00:11:57,000
+the recording was done through mechanical morning
+பதிவு இயந்திர காலை மூலம் செய்யப்பட்டது
+
+00:11:57,000 --> 00:12:01,000
+and the characteristics love the horn tended to vary from day to day
+மற்றும் பண்புகள் கொம்பு நாளுக்கு நாள் மாறுபடும் முனைகிறது அன்பு
+
+00:12:01,000 --> 00:12:04,000
+and because if the characteristics of the horn
+ஏனெனில் என்றால் கொம்பு பண்புகள்
+
+00:12:04,000 --> 00:12:08,000
+the recording tended to have a muffled quality something like
+பதிவு போன்ற ஒரு muffled தரமான ஏதாவது வேண்டும் எண்ணப்பட்டன
+
+00:12:08,000 --> 00:12:11,000
+yes sorta the sense that you would get
+yes நீங்கள் கிடைக்கும் என்று உணர்வு அஸ்வினி
+
+00:12:11,000 --> 00:12:15,000
+if you were speaking through a megaphone
+நீங்கள் ஒரு மைக் மூலம் பேசி இருந்தால்
+
+00:12:15,000 --> 00:12:18,000
+what professor stock and it was developed a system
+அது ஒரு அமைப்பு உருவாக்கப்பட்டது பேராசிரியர் பங்கு மற்றும்
+
+00:12:18,000 --> 00:12:22,000
+to process these old recordings
+இந்த பழைய பதிவுகளை செயல்படுத்த
+
+00:12:22,000 --> 00:12:25,000
+in such a way dead a lot or
+இறந்த நிறைய அல்லது இது போன்ற ஒரு வழி
+
+00:12:25,000 --> 00:12:28,000
+the characteristics and distortion do
+பண்புகள் மற்றும் விலகல் செய்கின்றன
+
+00:12:28,000 --> 00:12:31,000
+to that recording system was removed so I'd like to
+என்று பதிவு கணினி நீக்கப்பட்டது, அதனால் நான் விரும்புகிறேன்
+
+00:12:31,000 --> 00:12:36,000
+illustrate that as one example some signal processing with an appropriate
+ஒரு பொருத்தமான ஒரு உதாரணமாக என்று விளக்குவதற்கு சில சமிக்ஞை செயலாக்க
+
+00:12:36,000 --> 00:12:40,000
+continuous-time system and what you'll hear
+தொடர்ச்சியான நேர கணினி மற்றும் நீங்கள் என்ன கேட்க வேண்டும்
+
+00:12:40,000 --> 00:12:43,000
+is a to track recording
+ஒரு பதிவு கண்காணிக்க ஆகிறது
+
+00:12:43,000 --> 00:12:47,000
+on the first track is the original on restored
+முதல் பாதையில் மீண்டும் அசல் ஆகிறது
+
+00:12:47,000 --> 00:12:51,000
+caruso recording and on the second track
+காருஸோ பதிவு மற்றும் இரண்டாவது பாதையில்
+
+00:12:51,000 --> 00:12:55,000
+is the result of the restoration and so as I switch back and forth
+மீண்டும் விளைவாக நான் முன்னும் பின்னுமாக மாற அதனால்
+
+00:12:55,000 --> 00:12:59,000
+from channel one to channel two will be switching from
+சேனல் ஒன்று, இரண்டு மாற்ற வேண்டும் சேனல்
+
+00:12:59,000 --> 00:13:03,000
+the original to the restored will begin the tape
+மீண்டும் அசல் டேப் தொடங்கும்
+
+00:13:03,000 --> 00:13:07,000
+by playing the original and
+அசல் விளையாடி மற்றும்
+
+00:13:07,000 --> 00:13:10,000
+day and as it proceeds will switch
+நாள் அது மேற்கொள்ளும்போது மாற வேண்டும்
+
+00:13:10,000 --> 00:13:15,000
+so we begin on channel one
+நாம் சேனல் ஒன்று தொடங்க
+
+00:13:15,000 --> 00:13:21,000
+low pS The Regent
+குறைந்த பிஎஸ் தி ரீஜண்ட்
+
+00:13:21,000 --> 00:13:27,000
+switch now process middle
+இப்போது செயல்முறை நடுத்தர மாற
+
+00:13:27,000 --> 00:13:31,000
+him home
+அவரை வீட்டில்
+
+00:13:31,000 --> 00:13:35,000
+his back 0 hit
+தனது முதுகில் 0 வெற்றி
+
+00:13:35,000 --> 00:13:42,000
+back to the original p
+அசல் ப
+
+00:13:42,000 --> 00:13:46,000
+I read
+நான் வாசிக்கிறேன்
+
+00:13:46,000 --> 00:13:49,000
+back to the restoration
+மீண்டும் மீண்டும் செய்ய
+
+00:13:49,000 --> 00:13:52,000
+mine yard
+என்னுடைய முற்றத்தில்
+
+00:13:52,000 --> 00:13:55,000
+home
+முகப்பு
+
+00:13:55,000 --> 00:13:59,000
+and once again back to the rigid
+மீண்டும் திடமான மீண்டும்
+
+00:13:59,000 --> 00:14:04,000
+mid
+இடைப்பட்ட
+
+00:14:04,000 --> 00:14:07,000
+and presumably and hopefully what you heard
+மற்றும் மறைமுகமாக மற்றும் வட்டம் நீங்கள் கேட்டது என்ன
+
+00:14:07,000 --> 00:14:11,000
+was dead in the restoration in fact a lot of the muffled
+உண்மையில் மீட்பு இறந்த muffled நிறைய
+
+00:14:11,000 --> 00:14:15,000
+characteristics the original recording
+பண்புகள் அசல் பதிவு
+
+00:14:15,000 --> 00:14:19,000
+were compensated for or remove now
+ஈடு அல்லது இப்போது நீக்க
+
+00:14:19,000 --> 00:14:23,000
+one of the interesting things that happened in fact in the work that
+வேலை உண்மையில் நடந்தது என்று சுவாரசியமான விஷயங்கள் என்று ஒன்று
+
+00:14:23,000 --> 00:14:28,000
+lesser Stockham did is that in the process of the restoration and perhaps
+குறைந்த Stockham செய்தார் என்று மீட்பு பணியில் ஒருவேளை
+
+00:14:28,000 --> 00:14:29,000
+you've heard this
+இந்த கேட்டிருக்கிறேன்
+
+00:14:29,000 --> 00:14:34,000
+in the process of the restoration in fact some other background noise on the
+உண்மையில் மீண்டும் பணியில் சில பின்புல இரைச்சல்
+
+00:14:34,000 --> 00:14:35,000
+recording
+பதிவு
+
+00:14:35,000 --> 00:14:39,000
+was emphasize and so he processed
+வலியுறுத்த அதனால் அவர் பதப்படுத்தப்பட்ட
+
+00:14:39,000 --> 00:14:43,000
+this the signal further in an attempt to
+இந்த முயற்சியில் மேலும் சமிக்ஞை
+
+00:14:43,000 --> 00:14:47,000
+remove that background noise and with that particular processing the
+என்று பின்னணி இரைச்சல் நீக்க மற்றும் அந்த குறிப்பிட்ட செயலாக்க
+
+00:14:47,000 --> 00:14:48,000
+processing
+செயலாக்க
+
+00:14:48,000 --> 00:14:52,000
+was very highly nonlinear a very interesting thing happened
+மிக உயர்ந்த நடந்தது ஒரு சுவாரசியமான விஷயம் தொகையற்ற
+
+00:14:52,000 --> 00:14:57,000
+which was that not only in at processing
+இது என்று மட்டும் செயலாக்க இல்
+
+00:14:57,000 --> 00:15:01,000
+was the background noise removal but somewhat surprisingly
+பின்னணி இரைச்சல் அகற்றுவதாக இருந்தது ஆனால் சற்றே ஆச்சரியமான
+
+00:15:01,000 --> 00:15:05,000
+also the orchestra was and let me just plain bad
+மேலும் இசை மற்றும் என்னை வெறும் கெட்ட நாம்
+
+00:15:05,000 --> 00:15:10,000
+now as an example love some very sophisticated processing
+இப்போது ஒரு உதாரணமாக சில மிகவும் சிக்கலான செயலாக்கம் நேசிக்கிறேன்
+
+00:15:10,000 --> 00:15:14,000
+with the nonlinear system what you'll hear on channel one
+நீங்கள் சேனல் ஒன்று கேட்க வேண்டும் என்ன தொகையற்ற அமைப்பு
+
+00:15:14,000 --> 00:15:17,000
+0 is the restoration as
+0 என மீட்பு
+
+00:15:17,000 --> 00:15:20,000
+we just plated when I switch to chat
+நான் அரட்டை மாற போது நாம் தான் பூசப்பட்ட
+
+00:15:20,000 --> 00:15:23,000
+to will the Hampton
+ஹாம்ப்டன் அறிவிக்கிறேன்
+
+00:15:23,000 --> 00:15:27,000
+processing him home
+வீட்டில் அவரை செயல்படுத்தும்போது
+
+00:15:27,000 --> 00:15:31,000
+and acted one now
+இப்போது ஒருவராக நடித்தார்
+
+00:15:31,000 --> 00:15:36,000
+0 would im
+0 im என்று
+
+00:15:36,000 --> 00:15:39,000
+hell
+நரகத்தில்
+
+00:15:39,000 --> 00:15:41,000
+now inside
+இப்போது உள்ளே
+
+00:15:41,000 --> 00:15:47,000
+back
+மீண்டும்
+
+00:15:47,000 --> 00:15:50,000
+why did
+ஏன் செய்யவில்லை
+
+00:15:50,000 --> 00:15:56,000
+well
+அதே
+
+00:15:56,000 --> 00:15:59,000
+him
+அவரை
+
+00:15:59,000 --> 00:16:02,000
+finally once again world
+இறுதியாக மீண்டும் உலக
+
+00:16:02,000 --> 00:16:09,000
+okay so
+சரி, அதனால்
+
+00:16:12,000 --> 00:16:15,000
+that's an example love processing Ave
+என்று Ave செயல்படுத்தும்போது ஒரு உதாரணம் காதல் தான்
+
+00:16:15,000 --> 00:16:20,000
+continuous-time signal with a corresponding continuous-time
+ஒரு தொடர்புடைய தொடர்ச்சியான நேர தொடர்ந்து நேர சமிக்ஞை
+
+00:16:20,000 --> 00:16:24,000
+system now I'd like to illustrate an example
+கணினி இப்போது நான் ஒரு உதாரணம் விளக்கும் விரும்புகிறேன்
+
+00:16:24,000 --> 00:16:29,000
+some processing discrete-time signal and I'd like to do that in the context that
+சில செயலாக்க தனி நேர சமிக்ஞை மற்றும் நான் சூழலில் அதை செய்ய விரும்புகிறேன் என்று
+
+00:16:29,000 --> 00:16:30,000
+the example
+உதாரணம்
+
+00:16:30,000 --> 00:16:33,000
+ratio before a discrete-time signal which was
+இது ஒரு தனி நேர சமிக்ஞை முன் விகிதம்
+
+00:16:33,000 --> 00:16:38,000
+the dow jones industrial weekly stock market index
+டோவ் ஜோன்ஸ் தொழில்துறை வாராந்திர பங்கு சந்தை குறியீட்டு
+
+00:16:38,000 --> 00:16:41,000
+I head shown it before as
+நான் முன்பு போல் இது காட்டுகிறது
+
+00:16:41,000 --> 00:16:45,000
+I've shown it here again over a period
+நான் ஒரு காலத்தில் இங்கே மீண்டும் அதை பார்க்க நான்
+
+00:16:45,000 --> 00:16:48,000
+of slightly more than a year where this
+ஒரு வருடம் விட சற்று அதிக இந்த
+
+00:16:48,000 --> 00:16:52,000
+is the number of weeks and this is the
+வாரங்கள் எண்ணிக்கை மற்றும் இந்த
+
+00:16:52,000 --> 00:16:55,000
+weekly index and to illustrate
+வாராந்திர குறியீட்டு மற்றும் விளக்குவதற்கு
+
+00:16:55,000 --> 00:16:59,000
+some of the processing what I'd like to do
+நான் செய்ய விரும்புகிறேன் என்ன செயலாக்க சில
+
+00:16:59,000 --> 00:17:02,000
+is show the stock market index
+பங்கு சந்தை குறியீட்டு காண்பிக்கிறது
+
+00:17:02,000 --> 00:17:06,000
+weekly index over a much longer time period a particular
+ஒரு நீண்ட கால ஒரு குறிப்பிட்ட மீது வாராந்திர குறியீட்டு
+
+00:17:06,000 --> 00:17:09,000
+the weekly index over a ten year period
+ஒரு பத்து ஆண்டு காலத்தில் வாராந்திர குறியீட்டு
+
+00:17:09,000 --> 00:17:12,000
+and that's what I show here so
+என்று நான் இங்கே காட்ட என்ன
+
+00:17:12,000 --> 00:17:16,000
+what this covers is roughly 1927
+என்ன இந்த உள்ளடக்கியது சுமார் 1927 ஆகிறது
+
+00:17:16,000 --> 00:17:19,000
+to 1937 and
+1937 மற்றும்
+
+00:17:19,000 --> 00:17:23,000
+in this case although this is still a discrete-time signal
+இந்த இன்னும் ஒரு தனி நேர சமிக்ஞை என்றாலும் இந்த வழக்கில்
+
+00:17:23,000 --> 00:17:27,000
+just simply for the purposes display what we've done
+நோக்கங்களுக்காக நாம் செய்துவிட்டேன் என்ன காண்பிக்கின்றன வெறுமனே ஒரு
+
+00:17:27,000 --> 00:17:30,000
+is to essentially connect the dots and
+அடிப்படையில் புள்ளிகளை இணைக்க மற்றும்
+
+00:17:30,000 --> 00:17:35,000
+draw continuous curve through the points so that this picture isn't filled up
+இந்த படத்தை பூர்த்தி இல்லை என்று புள்ளிகள் மூலம் தொடர்ச்சியான வளைவு வரைய
+
+00:17:35,000 --> 00:17:36,000
+with a lot of vertical lines
+செங்குத்து கோடுகள் நிறைய
+
+00:17:36,000 --> 00:17:40,000
+so this is the discrete-time sequence
+எனவே இந்த தனித்தியங்கும் நேர வரிசை
+
+00:17:40,000 --> 00:17:43,000
+represents the weekly Dow Jones
+வாராந்திர டோவ் ஜோன்ஸ் பிரதிபலிக்கிறது
+
+00:17:43,000 --> 00:17:47,000
+Dow Jones index over a 10-year period and
+டோவ் ஜோன்ஸ் ஒரு 10 ஆண்டு காலத்தில் குறியீட்டு மற்றும்
+
+00:17:47,000 --> 00:17:52,000
+here by the way again is the crash of
+இங்கே மூலம் மீண்டும் விபத்து ஆகிறது
+
+00:17:52,000 --> 00:17:56,000
+it's interesting to note by the way day
+அது வழி நாள் கவனிக்க சுவாரசியமாக
+
+00:17:56,000 --> 00:18:01,000
+actually the disaster in the stock market wasn't so much the 1929 crash
+உண்மையில் பங்கு சந்தையில் பேரழிவு மிகவும் 1929 சரிவிற்கு இல்லை
+
+00:18:01,000 --> 00:18:06,000
+but the long downward trend that follow that and you can see that here
+ஆனால் நீண்ட கீழ்நோக்கிய போக்கு என்று தொடர்ந்து நீங்கள் இங்கே பார்க்க முடியும் என்று
+
+00:18:06,000 --> 00:18:10,000
+by kinda filtering through by I
+கிரகமாக நான் மூலம் வடிகட்டி மூலம்
+
+00:18:10,000 --> 00:18:14,000
+the rapid variations in the index and what you see is this
+குறியீட்டு மற்றும் என்ன நீங்கள் பார்க்க அதிகமான வேறுபாடுகள் இந்த ஆகின்றன
+
+00:18:14,000 --> 00:18:17,000
+smooth downward trend followed
+தொடர்ந்து மென்மையான கீழ்நோக்கிய போக்கு
+
+00:18:17,000 --> 00:18:23,000
+eventually by upward trend now
+இறுதியில் மேல்நோக்கி போக்கு இப்போது
+
+00:18:23,000 --> 00:18:28,000
+this issue love looking at something like this looking at a sequence
+இந்த பிரச்சினை ஒரு காட்சியில் பார்த்து இப்படி பார்த்து
+
+00:18:28,000 --> 00:18:33,000
+and following the smoother parts if it namely
+மற்றும் மென்மையான பகுதிகளில் தொடர்ந்து இருந்தால், அது அதாவது
+
+00:18:33,000 --> 00:18:37,000
+the long-term trends is in fact something
+நீண்ட கால போக்குகள் உண்மையில் ஒன்று உள்ளது
+
+00:18:37,000 --> 00:18:41,000
+that is done quite typically with economic time series like this
+இந்த மாதிரி பொருளாதார நேரம் தொடர் மிகவும் பொதுவாக செய்யப்படுகிறது
+
+00:18:41,000 --> 00:18:45,000
+and in particular what's done is to smooth it
+செய்து என்ன குறிப்பாக மென்மையான ஆகிறது
+
+00:18:45,000 --> 00:18:49,000
+or average over some time period
+அல்லது சில நேரம் காலத்திற்கு சராசரி
+
+00:18:49,000 --> 00:18:56,000
+to emphasize the slow variations and de-emphasize the rapid variations
+மெதுவாக வேறுபாடுகள் வலியுறுத்த மற்றும் விரைவான வேறுபாடுகள் டி வலியுறுத்த
+
+00:18:56,000 --> 00:19:00,000
+and that in fact is processing that is done
+என்று உண்மையில் செய்யப்படுகிறது என்று செயலாக்க ஆகிறது
+
+00:19:00,000 --> 00:19:05,000
+with discrete-time system solos when you hear referred to let's say
+நீங்கள் தான் சொல்ல குறிப்பிடப்படுகிறது கேட்க போது தனி நேர கணினி தனிப்பாடல்களால்
+
+00:19:05,000 --> 00:19:09,000
+in stock market reports fifty one day moving average
+பங்கு சந்தையில் ஐம்பது ஒரு நாள் நகரும் சராசரி அறிக்கைகள்
+
+00:19:09,000 --> 00:19:14,000
+that in fact is processing the stock market index
+உண்மையில் பங்கு சந்தை குறியீட்டு செயலாக்கத்தில் உள்ளது என்று
+
+00:19:14,000 --> 00:19:18,000
+with a particular discrete-time system the result
+ஒரு குறிப்பிட்ட தனி நேர கணினி விளைவாக
+
+00:19:18,000 --> 00:19:21,000
+up doing that on this particular example
+இந்த குறிப்பிட்ட எடுத்துக்காட்டாக அந்த செய்து
+
+00:19:21,000 --> 00:19:26,000
+generates a smooth version the curve which I overly here
+ஒரு மென்மையான பதிப்பு இது நான் அதிக இங்கே வளைவு உருவாக்கிறது
+
+00:19:26,000 --> 00:19:30,000
+and the overlay
+மற்றும் மேலடுக்கு
+
+00:19:30,000 --> 00:19:33,000
+than is really attempting to track the
+விட உண்மையில் கண்காணிக்க முயன்று வருகிறது
+
+00:19:33,000 --> 00:19:37,000
+smoother variations and deemphasized
+மென்மையான வேறுபாடுகள் மற்றும் deemphasized
+
+00:19:37,000 --> 00:19:40,000
+more rapid variations let me just
+இன்னும் விரைவான வேறுபாடுகள் என்னை நான்
+
+00:19:40,000 --> 00:19:44,000
+slightly offset that so that the different stands out a little more
+வெவ்வேறு இன்னும் கொஞ்சம் வெளியே நின்று அதனால் சற்று என்று ஈடுசெய்ய
+
+00:19:44,000 --> 00:19:48,000
+and so here you see what is
+எனவே இங்கே நீங்கள் என்ன பார்க்க
+
+00:19:48,000 --> 00:19:51,000
+the original weekly index and
+அசல் வாராந்திர குறியீட்டு மற்றும்
+
+00:19:51,000 --> 00:19:55,000
+this is the result processing that sequence
+இந்த காட்சியில் இதன் விளைவாக செயலாக்க ஆகிறது
+
+00:19:55,000 --> 00:19:58,000
+with inappropriate system
+பொருத்தமற்ற அமைப்பு
+
+00:19:58,000 --> 00:20:02,000
+to apply smoothing and in fact
+விண்ணப்பிக்க வழுவழுப்பான மற்றும் உண்மையில்
+
+00:20:02,000 --> 00:20:05,000
+what it is is a moving average and so here again
+என்ன அது மீண்டும் இங்கே ஒரு நகரும் சராசரி மற்றும்
+
+00:20:05,000 --> 00:20:08,000
+you can see the in the smooth occurred
+நீங்கள் மென்மையான ஏற்பட்டது பார்க்க முடியும்
+
+00:20:08,000 --> 00:20:11,000
+this general downward trend
+இந்த பொது கீழ்நோக்கிய போக்கு
+
+00:20:11,000 --> 00:20:15,000
+up until this time period followed by eventually
+இறுதியில் தொடர்ந்து இந்த கால வரை
+
+00:20:15,000 --> 00:20:19,000
+recovery I well we've seen
+நான் நன்றாக நாம் பார்த்த மீட்பு
+
+00:20:19,000 --> 00:20:23,000
+example with a continuous-time signals
+ஒரு தொடர்ச்சியான நேர சிக்னல்களை கொண்டு எடுத்துக்காட்டாக
+
+00:20:23,000 --> 00:20:27,000
+caruso recording an example with the discrete-time signal
+காருஸோ தனி நேர சமிக்ஞை ஒரு உதாரணம் பதிவு
+
+00:20:27,000 --> 00:20:30,000
+this stock market index and what I'd also like to show
+இந்த பங்கு சந்தை குறியீட்டு மற்றும் என்ன நான் காட்ட விரும்புகிறேன்
+
+00:20:30,000 --> 00:20:34,000
+is 30 example which is
+30 உதாரணமாக இது உள்ளது
+
+00:20:34,000 --> 00:20:38,000
+the result some processing on an image in particular
+இதன் விளைவாக குறிப்பாக ஒரு படத்தை சில செயலாக்க
+
+00:20:38,000 --> 00:20:41,000
+the image that we talked about before which was the aerial photographs
+நாம் எந்த முன் பற்றி பேசினார் என்று படத்தை வான்வழி புகைப்படங்கள் இருந்தது
+
+00:20:41,000 --> 00:20:45,000
+that had the problem some cloud cover
+அந்த பிரச்சனை சில மேகம் கவர் இருந்தது
+
+00:20:45,000 --> 00:20:48,000
+so once again what we see here
+அதனால் மீண்டும் ஒருமுறை நாம் இங்கே பார்க்க என்ன
+
+00:20:48,000 --> 00:20:51,000
+is the original aerial photograph
+அசல் வான்வழி புகைப்படம்
+
+00:20:51,000 --> 00:20:55,000
+with the cloud cover and
+மேகம் கவர் மற்றும்
+
+00:20:55,000 --> 00:20:58,000
+some processing was applied to this using a system
+சில செயலாக்க ஒரு முறை பயன்படுத்தி இந்த பயன்படுத்தப்பட்டது
+
+00:20:58,000 --> 00:21:01,000
+which in fact was both nonlinear
+உண்மையில் தொகையற்ற இரு இருந்தது
+
+00:21:01,000 --> 00:21:05,000
+and quote time-varying or in the case
+மற்றும் அந்த நேரம் மாறுபடும் அல்லது வழக்கில்
+
+00:21:05,000 --> 00:21:10,000
+these independent variables would refer to it as spatially varying
+இந்த மாற்றளவுகள் வான்வெளியில் பல்வேறு அதை பார்க்கவும் என்று
+
+00:21:10,000 --> 00:21:14,000
+and the result applying that processing
+மற்றும் விளைவாக செயலாக்க விண்ணப்பிக்கும்
+
+00:21:14,000 --> 00:21:17,000
+is shown in the joining
+சேர்வதற்கு காட்டப்பட்டுள்ளது
+
+00:21:17,000 --> 00:21:21,000
+picture and what we see the air is
+படமாக நாம் காற்று பார்க்க என்ன
+
+00:21:21,000 --> 00:21:24,000
+hopefully a reasonable attempt
+வட்டம் ஒரு நியாயமான முயற்சி
+
+00:21:24,000 --> 00:21:27,000
+to compensate for the cloud cover and
+மேகம் கவர் ஈடு மற்றும்
+
+00:21:27,000 --> 00:21:32,000
+this by the way was some work was done by Professor
+இந்த வழியில் சில வேலை பேராசிரியர் செய்யப்பட்டது
+
+00:21:32,000 --> 00:21:35,000
+them MIT and has been
+அவர்கள் எம்ஐடி மற்றும் வருகிறது
+
+00:21:35,000 --> 00:21:38,000
+very successful type processing were
+மிகவும் வெற்றிகரமான வகை செயலாக்க இருந்தன
+
+00:21:38,000 --> 00:21:41,000
+aerial photographs I should say also
+வான்வழி புகைப்படங்கள் நான் சொல்ல வேண்டும்
+
+00:21:41,000 --> 00:21:46,000
+that this particular example is one where although the original signal
+இந்த குறிப்பிட்ட எடுத்துக்காட்டாக உள்ளது என்று அங்கு என்றாலும் அசல் சமிக்ஞையை
+
+00:21:46,000 --> 00:21:51,000
+was a signal dead is continuous time that is
+ஒரு சமிக்ஞை இறந்துவிட்டாள் என்று தொடர்ச்சியான நேரம் ஆகும்
+
+00:21:51,000 --> 00:21:55,000
+the independent variables are continuous as they are in a spatial
+அவர்கள் ஒரு வெளி உள்ளன மாற்றளவுகள் தொடர்ந்து இருக்கின்றன
+
+00:21:55,000 --> 00:21:59,000
+aerial photograph in fact for the processing
+செயலாக்க உண்மையில் வான்வழி புகைப்படம்
+
+00:21:59,000 --> 00:22:02,000
+that picture was first converted to a sequence
+அந்த படத்தை முதல் வரிசை மாற்றப்பட்டது
+
+00:22:02,000 --> 00:22:06,000
+through a process called sampling which will be talking about later
+பின்னர் பற்றி பேசி இருக்க வேண்டும், இது ஒரு செயல்முறை மாதிரி மூலம்
+
+00:22:06,000 --> 00:22:12,000
+and then the processing in fact was done on a digital computer
+பின்னர் உண்மையில் செயலாக்க ஒரு டிஜிட்டல் கணினியில் செய்யப்பட்டது
+
+00:22:12,000 --> 00:22:16,000
+okay well these then are some examples
+சரி, சரி, பின்னர் இவை சில உதாரணங்கள்
+
+00:22:16,000 --> 00:22:19,000
+all the use I'll some
+நான் சில தருகிறேன் அனைத்து பயன்பாடு
+
+00:22:19,000 --> 00:22:22,000
+systems to process
+செயல்படுத்த அமைப்புகள்
+
+00:22:22,000 --> 00:22:26,000
+some signals both in continuous-time
+தொடர்ச்சியான நேரத்தில் இரண்டு சில சமிக்ஞைகளை
+
+00:22:26,000 --> 00:22:30,000
+in discrete-time for one-dimensional signals
+ஒரு பரிமாண சிக்னல்களை தனி நேரம்
+
+00:22:30,000 --> 00:22:34,000
+and for multi-dimensional signals
+மற்றும் பல பரிமாண சிக்னல்களை
+
+00:22:34,000 --> 00:22:38,000
+and as I kinda refer to systems we've
+நான் கிரகமாக நாம் தான் அமைப்புகள் பார்க்கவும் போன்ற
+
+00:22:38,000 --> 00:22:41,000
+thought of them as kinda one big block with appropriate
+பொருத்தமான கிரகமாக ஒரு பெரிய தொகுதி என நினைத்தேன்
+
+00:22:41,000 --> 00:22:44,000
+or associated input and output and
+அல்லது தொடர்புடைய உள்ளீடு மற்றும் வெளியீடு மற்றும்
+
+00:22:44,000 --> 00:22:48,000
+as will be getting into in the first part of the course
+நிச்சயமாக முதல் பகுதி ஒரு பெற வேண்டும் என
+
+00:22:48,000 --> 00:22:52,000
+very often systems are interconnected together
+மிகவும் அடிக்கடி அமைப்புகள் ஒன்றாக ஒன்றோடொன்று
+
+00:22:52,000 --> 00:22:56,000
+for a variety of reasons some other kinds of interconnections that will talk
+காரணங்கள் பேசுவேன் என்று அவற்றுக்கு இடையேயான சில மற்ற வகையான பல்வேறு
+
+00:22:56,000 --> 00:22:58,000
+about
+பற்றி
+
+00:22:58,000 --> 00:23:01,000
+are connecting systems
+அமைப்புகள் இணைக்கும்
+
+00:23:01,000 --> 00:23:05,000
+in what are called series are cascaded connections
+தொடர் இணைப்புகளை தயார்படுத்தி வருகின்றனர் என்று என்ன
+
+00:23:05,000 --> 00:23:08,000
+parallel interconnections feedback
+இணை இடை கருத்து
+
+00:23:08,000 --> 00:23:12,000
+interconnections and feedback interconnections
+இடை மற்றும் கருத்துக்களை இடை
+
+00:23:12,000 --> 00:23:15,000
+in fact are very interesting very important
+உண்மையில் மிக முக்கியமான மிகவும் சுவாரசியமான
+
+00:23:15,000 --> 00:23:18,000
+for useful and will be major topic
+பயனுள்ள மற்றும் முக்கிய தலைப்பு இருக்கும்
+
+00:23:18,000 --> 00:23:22,000
+toward the end of the course feedback
+நிச்சயமாக கருத்துக்களை இறுதியில்
+
+00:23:22,000 --> 00:23:25,000
+as you may or may not know
+நீங்கள் அல்லது தெரியாது என
+
+00:23:25,000 --> 00:23:29,000
+comes into play in a variety of situations
+பல்வேறு சூழ்நிலைகளில் உள்ள நாடகம் வருகிறது
+
+00:23:29,000 --> 00:23:32,000
+for example an amplifier design is we'll talk about
+உதாரணமாக ஒரு பெருக்கியின் வடிவமைப்பு நாம் பற்றி பேசலாம் ஆகிறது
+
+00:23:32,000 --> 00:23:36,000
+the black feedback plays an important role
+கருப்பு கருத்துக்களை ஒரு முக்கிய பங்கு வகிக்கிறது
+
+00:23:36,000 --> 00:23:40,000
+in a situation where you have
+நீங்கள் வேண்டும், அங்கு ஒரு சூழ்நிலையில்
+
+00:23:40,000 --> 00:23:45,000
+a basically unstable system feedback is often used to stabilize the system
+ஒரு அடிப்படையில் நிலையற்ற கணினி கருத்துக்களை அடிக்கடி முறையை உறுதிப்படுத்த பயன்படுத்தப்படுகிறது
+
+00:23:45,000 --> 00:23:49,000
+and feedback interconnections systems in that sense
+அந்த உணர்வு மற்றும் கருத்துக்களை இடை அமைப்புகள்
+
+00:23:49,000 --> 00:23:52,000
+are very often used in high-performance aircraft
+மிக பெரும்பாலும் உயர் செயல்திறன் விமானம் பயன்படுத்தப்படுகிறது
+
+00:23:52,000 --> 00:23:56,000
+which are inherently unstable and are stabilized
+உள்ளார்ந்த உறுதியற்ற மற்றும் உறுதிப்படுத்தப்படும் இது
+
+00:23:56,000 --> 00:23:59,000
+this kind in action
+நடவடிக்கை இந்த வகையான
+
+00:23:59,000 --> 00:24:02,000
+just two give you a little sense this
+இரண்டு ஒரு சிறிய நீங்கள் இந்த கொடுக்கிறது
+
+00:24:02,000 --> 00:24:05,000
+without going into any of the details
+விவரங்கள் எந்த ஒரு இல்லாமல்
+
+00:24:05,000 --> 00:24:10,000
+what i'd like to show you is and excerpt
+நான் பகுதி மற்றும் காட்ட விரும்புகிறேன் என்ன
+
+00:24:10,000 --> 00:24:14,000
+from a lecture day
+ஒரு விரிவுரை நாள்
+
+00:24:14,000 --> 00:24:17,000
+we'll be seeing toward the end of the course relating to
+நாம் தொடர்பான நிச்சயமாக இறுதியில் பார்த்து இருக்க வேண்டும்
+
+00:24:17,000 --> 00:24:22,000
+feedback analysis a feedback systems and uses a feedback
+கருத்து பகுப்பாய்வு ஒரு கருத்து அமைப்புகள் மற்றும் ஒரு கருத்து பயன்படுத்துகிறது
+
+00:24:22,000 --> 00:24:25,000
+and this is in the context what's referred to
+இந்த குறிப்பிடப்படுகிறது என்ன சூழலில் இருக்கிறது
+
+00:24:25,000 --> 00:24:28,000
+as the inverted pendulum which is
+இது தலைகீழ் ஊசல் என
+
+00:24:28,000 --> 00:24:31,000
+system that's basically unstable feedback
+அடிப்படையில் நிலையற்ற கருத்துக்களை தான் அந்த அமைப்பு
+
+00:24:31,000 --> 00:24:35,000
+interconnections are used to stabilize the idea
+இடை யோசனை உறுதிப்படுத்த பயன்படுத்தப்படுகின்றன
+
+00:24:35,000 --> 00:24:39,000
+as you'll see in this brief clip is that
+இந்த சுருக்கமான காட்சியை பார்க்க வேண்டும் என அந்த ஆகிறது
+
+00:24:39,000 --> 00:24:42,000
+there is a cart that's moving on a track
+ஒரு பாதையில் நகரும் என்று ஒரு வண்டி அங்கு
+
+00:24:42,000 --> 00:24:45,000
+with a ride its pivoted at the base
+அதன் அடிப்பகுதியில் போலி சமாதானம் ஒரு பயணம்
+
+00:24:45,000 --> 00:24:49,000
+and so that system in the absence anything
+அதனால் இல்லாத எதையும் அந்த அமைப்பு
+
+00:24:49,000 --> 00:24:52,000
+is unstable in that the ride attend for
+இதில் கலந்து அந்த நிலையற்ற ஆகிறது
+
+00:24:52,000 --> 00:24:55,000
+and as we going to in detail in the lecture
+மற்றும் நாம் விரிவுரையில் விரிவாக போகிறது என
+
+00:24:55,000 --> 00:24:59,000
+later use feedback to
+பின்னர் கருத்து பயன்படுத்த
+
+00:24:59,000 --> 00:25:03,000
+position the card under the pendulum to balance it
+அதை சமப்படுத்த ஊசல் கீழ் அட்டை நிலைப்படுத்த
+
+00:25:03,000 --> 00:25:06,000
+and in fact that balancing can be done even
+உண்மையில் அந்த சமநிலை கூட செய்ய முடியும்
+
+00:25:06,000 --> 00:25:10,000
+when we modify the system in a variety of ways
+நாம் பல்வேறு வழிகளில் உள்ள முறையை மாற்ற போது
+
+00:25:10,000 --> 00:25:13,000
+as you'll see in this clip so let's take a look at that
+இந்த கிளிப்பை பார்க்க வேண்டும் என தான் என்று ஒரு பார்க்கலாம்
+
+00:25:13,000 --> 00:25:17,000
+remembering that this is just a brief excerpt
+இந்த ஒரு பகுதி என்று நினைத்து
+
+00:25:17,000 --> 00:25:21,000
+from a longer discussion I can change the
+ஒரு நீண்ட விவாதம் இருந்து நான் மாற்ற முடியும்
+
+00:25:21,000 --> 00:25:25,000
+overall system even further by
+ஒட்டுமொத்த அமைப்பின் இன்னும் மூலம்
+
+00:25:25,000 --> 00:25:28,000
+let's say for example pouring a liquid
+ஒரு திரவ ஊற்றி உதாரணமாக சொல்கிறேன்
+
+00:25:28,000 --> 00:25:31,000
+and now let me also comment that
+இப்போது என்னை மேலும் கருத்து அனுமதிக்க வேண்டும் என்று
+
+00:25:31,000 --> 00:25:35,000
+change the physics of a little bit because the
+சிறிது இயற்பியல் மாற்ற ஏனெனில்
+
+00:25:35,000 --> 00:25:38,000
+the liquid can slash around a little bit comes a little more complicated
+திரவ சற்று சுற்றி குறைக்க முடியும், இன்னும் கொஞ்சம் சிக்கலான வருகிறது
+
+00:25:38,000 --> 00:25:42,000
+system but as you can see it still
+கணினி ஆனால் நீங்கள் இன்னும் அதை பார்க்க முடியும் என
+
+00:25:42,000 --> 00:25:45,000
+remains balance
+சமநிலை இருக்கிறது
+
+00:25:45,000 --> 00:25:49,000
+as you'll see when we get to it by the way that demonstration was a lot of fun
+நீங்கள் பார்க்க வேண்டும் என நாம் வழி மூலம் அது கிடைக்கும் போது அந்த ஆர்ப்பாட்டம் வேடிக்கையாக இருந்தது
+
+00:25:49,000 --> 00:25:51,000
+to do
+செய்ய
+
+00:25:51,000 --> 00:25:57,000
+now in talking about signals and systems as we go through the course
+இப்போது சமிக்ஞைகள் மற்றும் அமைப்புகள் பற்றி நாம் நிச்சயமாக செல்ல
+
+00:25:57,000 --> 00:26:01,000
+their are several domains to in particular
+குறிப்பாக பல களங்களில் தங்கள் இருக்கின்றன
+
+00:26:01,000 --> 00:26:04,000
+that we will find convenient for
+நாம் வசதியாக இருக்கும் என்று
+
+00:26:04,000 --> 00:26:10,000
+the analysis and representation signals and systems
+பகுப்பாய்வு மற்றும் பிரதிநிதித்துவம் சமிக்ஞைகள் மற்றும் அமைப்புகள்
+
+00:26:10,000 --> 00:26:13,000
+one is the time-domain
+ஒரு முறை டொமைன் ஆகிறது
+
+00:26:13,000 --> 00:26:17,000
+which is what we tend to think
+நாம் நினைத்து கொண்டிருப்போம் என்ன இது
+
+00:26:17,000 --> 00:26:20,000
+and which we have kind of been focusing on
+மற்றும் நாம் வகையான கவனம் வருகின்றன
+
+00:26:20,000 --> 00:26:23,000
+in the discussion so far in this lecture
+இந்த விரிவுரை இதுவரை விவாதம்
+
+00:26:23,000 --> 00:26:27,000
+by equally important is what's referred to
+சமமாக முக்கியமான குறிப்பிடப்படுகிறது என்ன ஆகிறது
+
+00:26:27,000 --> 00:26:30,000
+as the frequency-domain
+அதிர்வெண் டொமைன் என
+
+00:26:30,000 --> 00:26:34,000
+as representation for signals
+சிக்னல்களை பிரதிநிதித்துவம்
+
+00:26:34,000 --> 00:26:37,000
+and as a means for analysis for systems
+மற்றும் அமைப்புகள் பகுப்பாய்வு ஒரு வழிமுறையாக
+
+00:26:37,000 --> 00:26:42,000
+and in the context or the frequency-domain representation
+மற்றும் சூழல் அல்லது அதிர்வெண் டொமைன் பிரதிநிதித்துவம்
+
+00:26:42,000 --> 00:26:46,000
+some old the kinds a ideas on topics that will be exploring
+சில பழைய வகையான ஆய்வு என்று தலைப்புகள் ஒரு யோசனைகள்
+
+00:26:46,000 --> 00:26:49,000
+are the Fourier transform and
+ஃபோரியர் மற்றும்
+
+00:26:49,000 --> 00:26:53,000
+the le plus transform and
+Le மாற்றும் மற்றும் பிளஸ்
+
+00:26:53,000 --> 00:26:57,000
+a discrete-time counterpart the apostrophe is for which is the sea
+குறி எந்த ஒரு தனி நேரம் எண்ணும் கடல் ஆகிறது
+
+00:26:57,000 --> 00:26:59,000
+transport
+போக்குவரத்து
+
+00:26:59,000 --> 00:27:04,000
+the Fourier transform discussion will get into fairly early in the course
+ஃபோரியர் கலந்துரையாடல் மிகவும் ஆரம்ப நிச்சயமாக கொண்டு வரும் மாற்றும்
+
+00:27:04,000 --> 00:27:07,000
+and the La Paz transforming z transform
+லா பாஸ் மாற்றும் z மாற்றும்
+
+00:27:07,000 --> 00:27:12,000
+represent extensions the 48 transform and will be getting into
+48 மாற்றும் நீட்சிகள் பிரதிநிதித்துவம் மற்றும் ஒரு பெற வேண்டும்
+
+00:27:12,000 --> 00:27:15,000
+that later in the course just kinda initially
+பின்னர் நிச்சயமாக ஒரு கிரகமாக ஆரம்பத்தில்
+
+00:27:15,000 --> 00:27:20,000
+to think about the time domain and frequency domain
+நேரம் டொமைன் மற்றும் அதிர்வெண் களத்தில் பற்றி யோசிக்க
+
+00:27:20,000 --> 00:27:23,000
+you might think for example over No being played
+நீங்கள் எந்த நடித்தார் உதாரணத்திற்கு நினைக்கலாம்
+
+00:27:23,000 --> 00:27:27,000
+and the time-domain representation would be
+நேரம் டொமைன் பிரதிநிதித்துவம் இருக்க வேண்டும்
+
+00:27:27,000 --> 00:27:30,000
+how let's say the
+எப்படி சொல்கிறேன்
+
+00:27:30,000 --> 00:27:34,000
+sound pressure as a function of time would change
+நேரம் ஒரு செயல்பாடு ஒலி அழுத்த மாற்ற வேண்டும்
+
+00:27:34,000 --> 00:27:37,000
+and the frequency domain representation would
+மற்றும் அதிர்வெண் களத்தில் பிரதிநிதித்துவம் என்று
+
+00:27:37,000 --> 00:27:41,000
+correspond to representation the frequency content
+நிகழ்வெண் உள்ளடக்கத்தை பிரதிநிதித்துவம் ஒத்திருக்கும்
+
+00:27:41,000 --> 00:27:45,000
+the No and in fact what I'd like to do is
+இல்லை, உண்மையில் நான் என்ன செய்ய விரும்புகிறேன் ஆகின்றன
+
+00:27:45,000 --> 00:27:49,000
+illustrate that and those two domain simultaneously
+ஒரே நேரத்தில் என்று அந்த இரண்டு டொமைன் விளக்குவதற்கு
+
+00:27:49,000 --> 00:27:52,000
+by playing a glockenspiel
+ஒரு வகை இசைக்கருவி விளையாடி
+
+00:27:52,000 --> 00:27:55,000
+no which'll here is the No
+இல்லை இங்கே இல்லை என்று
+
+00:27:55,000 --> 00:27:59,000
+repeated several times over and at the same time
+அதே நேரத்தில் மற்றும் பல முறை திரும்ப திரும்ப
+
+00:27:59,000 --> 00:28:02,000
+you'll see to displays one on the left
+நீங்கள் காட்சிகள் இடது ஒரு பார்க்கிறேன்
+
+00:28:02,000 --> 00:28:06,000
+representing the time domain display a representation
+நேரம் டொமைன் ஒரு பிரதிநிதித்துவம் காட்ட குறிக்கும்
+
+00:28:06,000 --> 00:28:10,000
+the signal and the one on the right representing the frequency
+அதிர்வெண் குறிக்கும் வலது சமிக்ஞை மற்றும் ஒரு
+
+00:28:10,000 --> 00:28:13,000
+me so let's look at that and
+என்னை தான் என்று பார்ப்போம் மற்றும்
+
+00:28:13,000 --> 00:28:20,000
+you'll hear the note and simultaneously see these two displays
+நீங்கள் நினைவில் கேட்க மற்றும் ஒரே நேரத்தில் இந்த இரண்டு காட்சிகள் பார்க்கிறேன்
+
+00:28:21,000 --> 00:28:24,000
+there's the No on the left time
+இல்லை இடது நேரத்தில் அங்கு
+
+00:28:24,000 --> 00:28:28,000
+ways and on the right what we see
+வழிகளில் நாம் பார்க்க என்ன வலது
+
+00:28:28,000 --> 00:28:32,000
+is frequency content in particular
+குறிப்பாக அதிர்வெண் உள்ளடக்கம்
+
+00:28:32,000 --> 00:28:35,000
+indicating the fact dead there are several harmonics
+உண்மையில் குறிக்கும் இறந்த பல ஒத்திசைகளை உள்ளன
+
+00:28:35,000 --> 00:28:42,000
+lines tell
+வரிகளை சொல்கின்றன
+
+00:28:54,000 --> 00:28:57,000
+okay well what I've gone thru
+சரி, சரி, நான் என்ன thru போயிருந்தேன்
+
+00:28:57,000 --> 00:29:01,000
+in this lecture represents a brief overview
+இந்த விரிவுரை ஒரு சுருக்கமான பார்வை பிரதிபலிக்கிறது
+
+00:29:01,000 --> 00:29:07,000
+signals and systems and beginning with the next lecture we will be
+அடுத்த விரிவுரை சமிக்ஞைகள் மற்றும் அமைப்புகள் மற்றும் ஆரம்பத்தில் நாம் இருக்கும்
+
+00:29:07,000 --> 00:29:11,000
+much more specific and precise first
+முதல் மிகவும் குறிப்பிட்ட மற்றும் துல்லியமான
+
+00:29:11,000 --> 00:29:14,000
+discussing some basic signals and then
+பின்னர் சில அடிப்படை சமிக்ஞைகளை விவாதித்து
+
+00:29:14,000 --> 00:29:18,000
+talking about systems and system properties and how to exploit
+அமைப்புகள் மற்றும் கணினி பண்புகள் மற்றும் எப்படி சுரண்ட பற்றி
+
+00:29:18,000 --> 00:29:23,000
+as one final comment that I'd
+நான் விட்டோம் என்று ஒரு இறுதி கருத்து
+
+00:29:23,000 --> 00:29:27,000
+like to making this lecture I'd like to
+இந்த விரிவுரை செய்யும் நான் விரும்புகிறேன்
+
+00:29:27,000 --> 00:29:30,000
+emphasizes at the out said
+அவுட் வலியுறுத்துகிறது என்றார்
+
+00:29:30,000 --> 00:29:34,000
+dead the taped lectures
+இறந்த பதிவு விரிவுரைகள்
+
+00:29:34,000 --> 00:29:37,000
+represent only one com- ponent the cores
+ஒரே ஒரு காம் Ponent கருக்கள் பிரதிநிதித்துவம்
+
+00:29:37,000 --> 00:29:40,000
+and equally important will be
+மற்றும் சமமாக முக்கியமான இருக்கும்
+
+00:29:40,000 --> 00:29:45,000
+both the textbook and the video course manual in particular
+பாடநூல் குறிப்பாக வீடியோ நிச்சயமாக கையேட்டில் இரண்டு
+
+00:29:45,000 --> 00:29:49,000
+it's important not only to reviewing the tapes
+இது நாடாக்கள் ஆய்வு செய்ய மட்டும் முக்கியம்
+
+00:29:49,000 --> 00:29:55,000
+but simultaneously or in conjunction with that
+ஆனால் ஒரே நேரத்தில் அல்லது இணைந்து
+
+00:29:55,000 --> 00:29:58,000
+doing the appropriate reading in the textbook and
+அதற்கான பாடநூல் வாசிப்பு செய்து
+
+00:29:58,000 --> 00:30:02,000
+also working through the problems carefully
+கவனமாக பிரச்சினைகள் மூலம் வேலை
+
+00:30:02,000 --> 00:30:06,000
+in the video course manual in a course like this
+இப்படி ஒரு போக்கை வீடியோ நிச்சயமாக கையேட்டில்
+
+00:30:06,000 --> 00:30:10,000
+you basically only get out a bit as much as you put into it
+நீங்கள் அடிப்படையில் மட்டுமே அதிக நீங்கள் அதை வைத்து ஒரு பிட் வெளியே
+
+00:30:10,000 --> 00:30:13,000
+the hope is dead if you put the
+நீங்கள் வைத்து இருந்தால் நம்பிக்கை இறந்த ஆகிறது
+
+00:30:13,000 --> 00:30:18,000
+right amount of time and effort into it you'll find the course to be
+நீங்கள் நிச்சயமாக இருக்க காணலாம் அதை நேரம் மற்றும் முயற்சி சரியான அளவு
+
+00:30:18,000 --> 00:30:22,000
+educational and interesting and I certainly hope that will be the case
+கல்வி மற்றும் சுவாரசியமான மற்றும் நான் நிச்சயமாக அந்த வழக்கில் இருக்கும் என்று நம்புகிறேன்
+
+00:30:22,000 --> 00:30:22,000
+thank you
+நன்றி
+

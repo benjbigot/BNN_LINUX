@@ -1,0 +1,3264 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+以下内容是根据Creative Commons授权提供
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+您的支持将有助于麻省理工学院开放式课程继续报价
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+免费优质教育资源
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+进行捐赠或查看附加材料由数百人资讯
+
+00:00:14,000 --> 00:00:15,000
+courses
+课程
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+参观麻省理工学院开放式课程在0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU home
+麻省理工学院的EDU家
+
+00:00:34,000 --> 00:00:41,000
+the
+该
+
+00:00:41,000 --> 00:00:48,000
+the new the last time
+新的最后一次
+
+00:00:56,000 --> 00:00:59,000
+we began the development love the discrete-time
+我们开始发展爱情的离散时间
+
+00:00:59,000 --> 00:01:02,000
+for EA transform and
+对EA变换和
+
+00:01:02,000 --> 00:01:06,000
+just days with the continuous-time case we first
+与连续时间情况下，仅仅几天我们首先
+
+00:01:06,000 --> 00:01:10,000
+treated the notion a periodic signals this led to the forty a series
+治疗的概念一个周期信号，这导致了40系列
+
+00:01:10,000 --> 00:01:14,000
+and then we generalize that to the Fourier transform
+然后我们推广的傅里叶变换
+
+00:01:14,000 --> 00:01:18,000
+and finally incorporated within the framework for the four th
+和为4个的范围内最终并入
+
+00:01:18,000 --> 00:01:22,000
+transform both a periodic and periodic signals
+改造既有周期性和周期信号
+
+00:01:22,000 --> 00:01:25,000
+in today's lecture but I'd like to do
+在今天的讲座，但是我想要做的
+
+00:01:25,000 --> 00:01:28,000
+is expand on some other properties
+是扩大了一些其他属性
+
+00:01:28,000 --> 00:01:33,000
+love for EA transform and indicate how those properties are used for a variety
+爱对EA变换，并指出如何将这些属性用于各种
+
+00:01:33,000 --> 00:01:34,000
+of things
+事
+
+00:01:34,000 --> 00:01:39,000
+well let's begin by reviewing the Fourier transform
+好，让我们首先回顾了傅立叶变换
+
+00:01:39,000 --> 00:01:42,000
+as we develop did last time it of course involves
+当然，我们开发并最后一次涉及
+
+00:01:42,000 --> 00:01:46,000
+a synthesis equation and and analysis equation
+合成公式，并分析方程
+
+00:01:46,000 --> 00:01:50,000
+the synthesis equation expressing X a van
+表示X中的面包车合成公式
+
+00:01:50,000 --> 00:01:54,000
+the sequence in terms of the Fourier transform
+在傅里叶变换计算的顺序
+
+00:01:54,000 --> 00:01:58,000
+any analysis equation telling us how to obtain
+任何分析方程告诉我们如何获得
+
+00:01:58,000 --> 00:02:02,000
+the Fourier transform from the original sequence
+从原始序列的傅立叶变换
+
+00:02:02,000 --> 00:02:05,000
+and I draw your attention again to
+我再次提请你注意
+
+00:02:05,000 --> 00:02:08,000
+the basic point that the synthesis equation
+基本点的合成公式
+
+00:02:08,000 --> 00:02:12,000
+essentially corresponds to decomposing
+基本上对应于分解
+
+00:02:12,000 --> 00:02:16,000
+the sequence as a linear combination
+该序列作为一个线性组合
+
+00:02:16,000 --> 00:02:21,000
+of complex exponentials with amplitude said are in effect
+复指数振幅说是效果
+
+00:02:21,000 --> 00:02:26,000
+proportional to the 48 transport now
+正比于48运输现
+
+00:02:26,000 --> 00:02:31,000
+in the discrete-time Fourier transform just as the continuous-time
+在离散时间傅里叶变换只是作为连续时间
+
+00:02:31,000 --> 00:02:34,000
+for a transform has a number all
+对于一个变换有许多都
+
+00:02:34,000 --> 00:02:37,000
+important and useful properties of course
+当然重要和有用的性质
+
+00:02:37,000 --> 00:02:41,000
+as i stress last time it's a function 0
+我强调最后一次它是一个功能0
+
+00:02:41,000 --> 00:02:47,000
+a continuous variable and it's also a complex-valued function
+连续变量和它也是一个复值函数
+
+00:02:47,000 --> 00:02:50,000
+which means dead when we represented in general
+这意味着死亡，当我们代表一般
+
+00:02:50,000 --> 00:02:54,000
+requires a representation in terms of its
+需要在方面有代表性
+
+00:02:54,000 --> 00:02:58,000
+real part an imaginary part or in terms of magnitude and angle
+实部的幅度和角度的一个虚部，或
+
+00:02:58,000 --> 00:03:03,000
+also as i indicated last time
+也正如我最后一次
+
+00:03:03,000 --> 00:03:06,000
+the Fourier transform is
+傅立叶变换是
+
+00:03:06,000 --> 00:03:09,000
+a periodic function of frequency
+频率的周期函数
+
+00:03:09,000 --> 00:03:13,000
+and the periodicity is
+和周期性
+
+00:03:13,000 --> 00:03:16,000
+with a period up to par i and
+与一期达到标准i和
+
+00:03:16,000 --> 00:03:21,000
+so it says in effect dead the Fourier transform if we replace the frequency
+所以说，实际上死的傅里叶变换，如果我们更换频率
+
+00:03:21,000 --> 00:03:22,000
+variable
+变量
+
+00:03:22,000 --> 00:03:25,000
+by an integer multiple to pie
+由整数倍来馅饼
+
+00:03:25,000 --> 00:03:30,000
+the function repeats and I stress again
+该功能重复，我再次强调
+
+00:03:30,000 --> 00:03:33,000
+that the underlying basis
+底层基础
+
+00:03:33,000 --> 00:03:37,000
+for this periodicity property is the fact
+这种周期性的属性是事实
+
+00:03:37,000 --> 00:03:40,000
+that its the setup complex exponentials
+其设置复指数
+
+00:03:40,000 --> 00:03:43,000
+that are inherently periodic in frequency
+这本质上是周期性的频率
+
+00:03:43,000 --> 00:03:47,000
+and so of course any representation using them would
+所以当然任何声明使用它们会
+
+00:03:47,000 --> 00:03:50,000
+in effect generate a
+实际上生成
+
+00:03:50,000 --> 00:03:54,000
+periodicity with this period of two pi
+周期性与此为期PI
+
+00:03:54,000 --> 00:03:57,000
+just an is
+只是一个是
+
+00:03:57,000 --> 00:04:01,000
+in continuous-time the Fourier transform has
+在连续时间傅里叶变换具有
+
+00:04:01,000 --> 00:04:04,000
+important symmetry properties and in particular
+重要的对称特性，特别是
+
+00:04:04,000 --> 00:04:08,000
+if the sequence x7 is
+如果序列X7是
+
+00:04:08,000 --> 00:04:11,000
+real value an the 4e
+真正的价值的4E
+
+00:04:11,000 --> 00:04:14,000
+transform is conjugate symmetric
+变换是共轭对称
+
+00:04:14,000 --> 00:04:18,000
+in other words if we replace Omega by minus Omega
+换句话说，如果我们取代了欧米茄欧米茄负
+
+00:04:18,000 --> 00:04:25,000
+that's equivalent to applying complex conjugation to the 48 transport and
+这相当于应用复共轭到48运输和
+
+00:04:25,000 --> 00:04:29,000
+as a cock consequence this conjugate symmetry
+作为一只公鸡这个结果共轭对称性
+
+00:04:29,000 --> 00:04:33,000
+this results in asymmetry
+这导致不对称
+
+00:04:33,000 --> 00:04:36,000
+in the real part that is an even symmetry
+中的实数部分是一个偶对称
+
+00:04:36,000 --> 00:04:39,000
+or the magnitude has an even symmetry
+或幅度具有均匀的对称性
+
+00:04:39,000 --> 00:04:43,000
+whereas the imaginary part or the phase angle
+而虚部或相位角
+
+00:04:43,000 --> 00:04:50,000
+is are are both art summit and these are symmetry properties again
+IS的都是艺术峰会，这些都是对称特性再次
+
+00:04:50,000 --> 00:04:53,000
+that are identical to the symmetry properties that we saw in
+这是相同的，我们在看到了对称性质
+
+00:04:53,000 --> 00:04:55,000
+continuous-time
+连续时间
+
+00:04:55,000 --> 00:04:59,000
+well let's see this in the context I'll an example that we worked last time and
+那么让我们来看看这在方面，我会说我们的工作上次的例子，
+
+00:04:59,000 --> 00:05:00,000
+that
+那
+
+00:05:00,000 --> 00:05:03,000
+will want to draw attention to
+将要提请注意
+
+00:05:03,000 --> 00:05:06,000
+in reference to several issues is this lecture goes along
+在提到的几个问题是这次讲座随之而来
+
+00:05:06,000 --> 00:05:09,000
+and that is the Fourier transform all
+那就是傅立叶变换所有
+
+00:05:09,000 --> 00:05:13,000
+a real damp expanding exponential
+一个真正受潮膨胀指数
+
+00:05:13,000 --> 00:05:16,000
+so the sequence that we
+这样的顺序，我们
+
+00:05:16,000 --> 00:05:20,000
+are talking about is a to the end you have an
+谈的是一个到最后你有一个
+
+00:05:20,000 --> 00:05:23,000
+and let's consider a to be positive
+让我们考虑一个是积极的
+
+00:05:23,000 --> 00:05:27,000
+we saw last time that the Fourier transform from the for this sequence
+我们看到最后一次傅里叶从变换顺序
+
+00:05:27,000 --> 00:05:31,000
+algebraically is up this form
+代数是此表
+
+00:05:31,000 --> 00:05:35,000
+and if we look at its magnitude and angle
+如果我们看一下它的大小和角度
+
+00:05:35,000 --> 00:05:40,000
+the magnet to I show here
+磁铁来我这里展示
+
+00:05:40,000 --> 00:05:45,000
+and the magnitude as we see has the properties that we indicated
+和我们看到的幅度具有我们所表示的性质
+
+00:05:45,000 --> 00:05:48,000
+is and even function of frequency
+是与频率的偶函数
+
+00:05:48,000 --> 00:05:52,000
+course it's a function of a continuous variable
+当然，这是一个连续变量的函数
+
+00:05:52,000 --> 00:05:55,000
+and it in addition is periodic
+它除了是周期性的
+
+00:05:55,000 --> 00:05:58,000
+with a period of two part
+用了一段两部分
+
+00:05:58,000 --> 00:06:02,000
+on the other hand if we look at the phase angle below it
+在另一方面，如果我们看看它下面的相位角
+
+00:06:02,000 --> 00:06:06,000
+the phase angle has a symmetry which is ought symmetric
+相位角具有对称性这是应该对称
+
+00:06:06,000 --> 00:06:09,000
+and that's indicated clearly in this picture
+而这清楚地表明了在这张照片
+
+00:06:09,000 --> 00:06:13,000
+and of course in addition to being eyed symmetric it naturally has to be
+当然除了是眼睛的对称它自然必须
+
+00:06:13,000 --> 00:06:16,000
+again a periodic function of frequency
+频率的再一个周期函数
+
+00:06:16,000 --> 00:06:20,000
+with the period up to par
+以期达到标准
+
+00:06:20,000 --> 00:06:24,000
+okay so we have some symmetry properties we have this inherent periodicity in the
+好了，我们有我们这种固有的周期性在一些对称性质
+
+00:06:24,000 --> 00:06:27,000
+48 transform which
+48的变换
+
+00:06:27,000 --> 00:06:31,000
+arms stressing very heavily because it forms
+武器强调非常沉重，因为它形成
+
+00:06:31,000 --> 00:06:36,000
+the basic difference between continuous-time and discrete-time
+连续时间和离散时间之间的基本区别
+
+00:06:36,000 --> 00:06:40,000
+in addition to these properties have the four EA transform
+除了这些属性有四个EA变换
+
+00:06:40,000 --> 00:06:44,000
+there are a number of other properties
+还有一些其它性质
+
+00:06:44,000 --> 00:06:47,000
+day are particularly useful in
+每天都在特别有用
+
+00:06:47,000 --> 00:06:50,000
+the manipulation of the 48 transform and in fact
+在48的操作变换和实际上
+
+00:06:50,000 --> 00:06:54,000
+using the Fourier transform to for example
+使用傅立叶变换，例如
+
+00:06:54,000 --> 00:06:58,000
+an ally systems represented by when you're past the coefficient difference
+当你过去系数差所代表的盟友系统
+
+00:06:58,000 --> 00:07:00,000
+equations
+方程
+
+00:07:00,000 --> 00:07:03,000
+bear in the text is a
+熊在文中是一个
+
+00:07:03,000 --> 00:07:07,000
+longer list the properties but let me just draw your attention
+不再列出的属性，但我只想提请您注意
+
+00:07:07,000 --> 00:07:10,000
+to several of them one
+几个其中之一
+
+00:07:10,000 --> 00:07:13,000
+is the time shifting property
+是时移特性
+
+00:07:13,000 --> 00:07:16,000
+and the time shifting property tells us dead
+和时移特性告诉我们死
+
+00:07:16,000 --> 00:07:21,000
+if Xserve Omega is the Fourier transform
+如果Xserve的欧米茄是傅立叶变换
+
+00:07:21,000 --> 00:07:24,000
+objective and then the Fourier transform
+目标，然后将傅立叶变换
+
+00:07:24,000 --> 00:07:27,000
+are x7 shifted in time
+在时间上X7转移
+
+00:07:27,000 --> 00:07:31,000
+is that same for EA transform multiplied by
+是相同的EA变换乘以
+
+00:07:31,000 --> 00:07:36,000
+this factor which is a with your face fact
+这个因素是一个与你的脸其实
+
+00:07:36,000 --> 00:07:39,000
+so time-shifting introduces
+因此时移介绍
+
+00:07:39,000 --> 00:07:43,000
+a linear phase turn and by the way I recall
+线性相位转和我记得的方式
+
+00:07:43,000 --> 00:07:48,000
+that in the continuous-time case we had a similar situation namely that a
+在连续时间的情况下，我们有一个类似的情况，即，一个
+
+00:07:48,000 --> 00:07:49,000
+timeshare
+分时度假
+
+00:07:49,000 --> 00:07:53,000
+corresponded to a linear phase
+对应于一个线性相位
+
+00:07:53,000 --> 00:07:56,000
+there also is a dual to the time shifting property
+也有是双的时移特性
+
+00:07:56,000 --> 00:08:00,000
+which is referred to as the frequency shifting property
+这被称为频移特性
+
+00:08:00,000 --> 00:08:04,000
+which tells us dead if we
+它告诉我们死了，如果我们
+
+00:08:04,000 --> 00:08:08,000
+multiply a time function by a complex exponential
+通过一个复杂的指数乘以一个时间函数
+
+00:08:08,000 --> 00:08:11,000
+that in effect generates
+在效果产生
+
+00:08:11,000 --> 00:08:15,000
+a frequency share and will see this frequency shifting property
+频率共享和会看到这个频移特性
+
+00:08:15,000 --> 00:08:19,000
+surface in a slightly different way shortly
+一个稍微不同的方式浮现在不久
+
+00:08:19,000 --> 00:08:24,000
+when we talk about the modulation property in the discrete-time case
+当我们谈论在离散时间情况下，调制特性
+
+00:08:24,000 --> 00:08:28,000
+another important property that will want to make you so
+该会希望你这样的另一个重要属性
+
+00:08:28,000 --> 00:08:33,000
+shortly is Lenny arity which follows in a very straightforward way from
+不久是莱尼元数它遵循一个非常简单的方法从
+
+00:08:33,000 --> 00:08:36,000
+the Fourier transform definition
+傅里叶变换的定义
+
+00:08:36,000 --> 00:08:40,000
+and the linearity property says simply
+和线性度性能说的简单
+
+00:08:40,000 --> 00:08:44,000
+that the 48 transform of Assam
+该48变换阿萨姆
+
+00:08:44,000 --> 00:08:48,000
+or linear combination is the same with your combination the Fourier transforms
+或线性组合是相同的与组合的傅立叶变换
+
+00:08:48,000 --> 00:08:52,000
+again that's a property that we saw in continuous-time
+再次，这是一个我们在连续时间看到属性
+
+00:08:52,000 --> 00:08:57,000
+and also among other properties
+还除其他性质
+
+00:08:57,000 --> 00:09:01,000
+there is a parser balls relation for the discrete-time case
+有对离散时间情况下的解析器球关系
+
+00:09:01,000 --> 00:09:05,000
+then in effect says something similar to continuous-time
+那么实际上是说类似于连续时间的东西
+
+00:09:05,000 --> 00:09:08,000
+specifically dead the energy E
+特别是死者的能量E
+
+00:09:08,000 --> 00:09:11,000
+in the sequence is proportional
+序列中的正比
+
+00:09:11,000 --> 00:09:15,000
+to the energy E in the 48 transform
+在48变换的能量E
+
+00:09:15,000 --> 00:09:18,000
+the energy over one period or said another way
+能量在一个周期或者说另一种方式
+
+00:09:18,000 --> 00:09:22,000
+in fact or another way that it can be said is
+事实上或另一种方式，也可以说是
+
+00:09:22,000 --> 00:09:25,000
+that the energy in the time domain is proportional to the power
+在时域中的能量正比于功率
+
+00:09:25,000 --> 00:09:30,000
+in his periodic for a transport
+在他的周期为一个传输
+
+00:09:30,000 --> 00:09:33,000
+okay so these are some other properties
+好了，这些都是一些其他属性
+
+00:09:33,000 --> 00:09:38,000
+in and are the as i indicated parallel somewhat properties that we saw in
+的，并且是我们在看到了正如我有点并行性能
+
+00:09:38,000 --> 00:09:40,000
+continuous-time
+连续时间
+
+00:09:40,000 --> 00:09:44,000
+two additional properties their will play important roles
+两个额外的属性其将发挥重要作用
+
+00:09:44,000 --> 00:09:47,000
+indiscreet I'm just as they did in continuous-time
+指手画脚，我只是因为他们在连续时间做
+
+00:09:47,000 --> 00:09:53,000
+are the convolution property and the modulation property
+是卷积特性和调制特性
+
+00:09:53,000 --> 00:09:57,000
+the convolution property is the property that tells us
+卷积属性是告诉我们的物业
+
+00:09:57,000 --> 00:10:01,000
+how to relate the Fourier transform
+如何与傅里叶变换
+
+00:10:01,000 --> 00:10:04,000
+all the convolution two sequences
+所有的卷积两个序列
+
+00:10:04,000 --> 00:10:08,000
+to the Fourier transforms of the individual sequences
+到各个序列的傅立叶变换
+
+00:10:08,000 --> 00:10:13,000
+and not surprisingly what happens and this can be
+并没有发生什么令人惊讶的，这可能是
+
+00:10:13,000 --> 00:10:17,000
+demonstrated algebraically not surprisingly
+证明代数不出奇
+
+00:10:17,000 --> 00:10:20,000
+the four EA transform above the convolution
+四EA变换的卷积以上
+
+00:10:20,000 --> 00:10:24,000
+is simply the product of the Fourier transforms
+简直是傅立叶变换的产品
+
+00:10:24,000 --> 00:10:28,000
+so Fourier transform maps
+所以傅立叶变换图
+
+00:10:28,000 --> 00:10:33,000
+convolution in the time domain the multiplication in the frequency domain
+卷积的时域频域的乘法
+
+00:10:33,000 --> 00:10:39,000
+now convolutional courses arises in the context of linear time-invariant systems
+现在卷积课程中出现的线性时不变系统的情况下
+
+00:10:39,000 --> 00:10:44,000
+in particular if we have a system with an impulse response a true fan
+特别是如果我们有一个系统的脉冲响应一个真正的球迷
+
+00:10:44,000 --> 00:10:47,000
+input excessive and the output is the convolution
+输入过大的输出是卷积
+
+00:10:47,000 --> 00:10:51,000
+the convolution property then tells us dead
+卷积属性则告诉我们死
+
+00:10:51,000 --> 00:10:55,000
+in the frequency domain for EA transform
+在对EA变换频域
+
+00:10:55,000 --> 00:10:58,000
+is the product love the Fourier transform
+是产品爱傅立叶变换
+
+00:10:58,000 --> 00:11:05,000
+the impulse response and the forty a transformer the input
+的脉冲响应和40的变压器的输入
+
+00:11:05,000 --> 00:11:08,000
+now we also saw
+现在我们也看到了
+
+00:11:08,000 --> 00:11:11,000
+and have talked about a relationship between
+和刚才讲的关系
+
+00:11:11,000 --> 00:11:16,000
+the Fourier transform the impulse response and what we called
+傅立叶变换的脉冲响应和此谓
+
+00:11:16,000 --> 00:11:19,000
+the frequency response
+的频率响应
+
+00:11:19,000 --> 00:11:23,000
+in the context love the response to the system
+在上下文爱响应系统
+
+00:11:23,000 --> 00:11:27,000
+to a complex exponential specifically
+到复指数具体
+
+00:11:27,000 --> 00:11:33,000
+complex exponentials are I can functions have linear time-invariant systems
+复指数是我能函数具有线性时不变系统
+
+00:11:33,000 --> 00:11:37,000
+wanna be's into the system gives us as an output
+想成为的进入系统给了我们作为一个输出
+
+00:11:37,000 --> 00:11:42,000
+a complex exponential with the same complex frequency
+复指数具有相同的复杂频率
+
+00:11:42,000 --> 00:11:45,000
+multiplied by what you referred to as the eye can value
+乘以你所提到的眼睛能重视
+
+00:11:45,000 --> 00:11:49,000
+and as you saw in the
+正如你在看
+
+00:11:49,000 --> 00:11:54,000
+video course manual this I can value this constant multiplier
+视频课程手册这样我可以珍惜这个常数乘法器
+
+00:11:54,000 --> 00:11:57,000
+on the exponential is in fact
+上的指数是实际上
+
+00:11:57,000 --> 00:12:01,000
+the 48 transform up the impulse response
+48变换向上的脉冲响应
+
+00:12:01,000 --> 00:12:05,000
+evaluated at that frequency
+在该频率计算
+
+00:12:05,000 --> 00:12:08,000
+now we saw exactly the same statement
+现在我们看到了一模一样的声明
+
+00:12:08,000 --> 00:12:12,000
+in continuous-time and in fact we use
+在连续时间，事实上，我们使用
+
+00:12:12,000 --> 00:12:16,000
+that statement the frequency response interpretation
+该语句的频率响应解释
+
+00:12:16,000 --> 00:12:20,000
+love the 48 trance for the impulse response
+爱48恍惚的脉冲响应
+
+00:12:20,000 --> 00:12:24,000
+we use that to motivate and intuitive interpretation
+我们用它来激励和直观的解释
+
+00:12:24,000 --> 00:12:28,000
+of the convolution property now formally the convolution property can be
+卷积物业现正式卷积属性可以是
+
+00:12:28,000 --> 00:12:30,000
+developed by
+由开发
+
+00:12:30,000 --> 00:12:34,000
+taking the convolution some applying the Fourier transforms into it
+服用一些应用傅立叶卷积转换成它
+
+00:12:34,000 --> 00:12:40,000
+doing the appropriate substitution variables in a changing order summations
+做在不断变化的顺序求和适当的替代变量
+
+00:12:40,000 --> 00:12:42,000
+Center in all the algebra
+中心在所有的代数
+
+00:12:42,000 --> 00:12:46,000
+works out to show that it's a product but as I stressed
+工程以表明它是一个产品，但我强调
+
+00:12:46,000 --> 00:12:51,000
+when we discussed this with continuous time the interpretation the underlying
+当我们讨论这与连续时间解释相关
+
+00:12:51,000 --> 00:12:52,000
+interpretation
+解释
+
+00:12:52,000 --> 00:12:56,000
+is particularly important to understand so let me review it again
+尤为重要的是了解，所以让我再作检讨的
+
+00:12:56,000 --> 00:12:59,000
+in the discrete-time case and it's exactly the same
+在离散时间情况下，它是完全相同的
+
+00:12:59,000 --> 00:13:03,000
+for discrete-time for continuous-time
+对于离散时间的连续时间
+
+00:13:03,000 --> 00:13:08,000
+specifically the argument was that the Fourier transform
+具体的说法是，傅立叶变换
+
+00:13:08,000 --> 00:13:12,000
+all a sequence or signal
+所有的序列或信号
+
+00:13:12,000 --> 00:13:16,000
+corresponds to decomposing it into a linear combination of complex
+对应于分解成复杂的线性组合
+
+00:13:16,000 --> 00:13:18,000
+exponentials
+指数函数
+
+00:13:18,000 --> 00:13:22,000
+what the airport to those complex exponentials its
+什么是机场到那些复杂的指数函数及其
+
+00:13:22,000 --> 00:13:25,000
+basically proportional to the four EA transport
+基本上正比于4 EA运输
+
+00:13:25,000 --> 00:13:30,000
+if we think a pushing through the system that linear combination
+如果我们认为推动通过线性组合系统
+
+00:13:30,000 --> 00:13:35,000
+then each love those complex exponentials
+那么每个爱那些复杂的指数函数
+
+00:13:35,000 --> 00:13:39,000
+gets the airport to modified are multiplied
+得到机场到修改的相乘
+
+00:13:39,000 --> 00:13:44,000
+by the Fourier transform all up by the frequency response
+由傅立叶的频率响应变换了一切
+
+00:13:44,000 --> 00:13:49,000
+which we saw is the Fourier transform love the impulse response
+我们看到的是傅立叶变换爱的脉冲响应
+
+00:13:49,000 --> 00:13:53,000
+so the airport to up the output complex exponentials
+所以到机场了输出复指数
+
+00:13:53,000 --> 00:13:58,000
+is then the amplitudes of the input complex exponentials
+是输入复指数的则振幅
+
+00:13:58,000 --> 00:14:01,000
+multiplied by the frequency response
+乘以频率响应
+
+00:14:01,000 --> 00:14:05,000
+and the Fourier transform the output in effect
+和傅立叶变换的效果的输出
+
+00:14:05,000 --> 00:14:09,000
+is an expression its expressing the summation
+它是表达的求和表达式
+
+00:14:09,000 --> 00:14:15,000
+or integration of the output as a linear combination of all of these exponentials
+或集成的输出，因为所有这些指数函数的线性组合
+
+00:14:15,000 --> 00:14:19,000
+with the appropriate complex amplitudes
+用适当的复振幅
+
+00:14:19,000 --> 00:14:22,000
+so its important in thinking about
+所以它在思考重要
+
+00:14:22,000 --> 00:14:27,000
+the convolution property to think about it in terms
+卷积财产去想它的条款
+
+00:14:27,000 --> 00:14:32,000
+a nothing more then the fact that we decompose the input
+一个没有那么多的事实，我们分解输入
+
+00:14:32,000 --> 00:14:35,000
+and we're now modifying separately
+而我们现在分别修改
+
+00:14:35,000 --> 00:14:40,000
+through multiplication scaling
+通过乘法缩放
+
+00:14:40,000 --> 00:14:47,000
+the airport to or each of the complex exponential company
+到机场或各复指数公司
+
+00:14:47,000 --> 00:14:52,000
+now what we saw in continuous time is that this interpretation
+现在我们在连续时间看到的是，这种解释
+
+00:14:52,000 --> 00:14:55,000
+and the convolution property
+和卷积性质
+
+00:14:55,000 --> 00:15:00,000
+lead to an important concept namely the concept the filtering
+导致一个重要的概念，即概念的过滤
+
+00:15:00,000 --> 00:15:05,000
+kind of the idea that if we decompose the input as a linear combination of
+样的想法，如果我们分解输入为的线性组合
+
+00:15:05,000 --> 00:15:07,000
+complex exponentials
+复指数
+
+00:15:07,000 --> 00:15:11,000
+we can separately attenuator amplify
+我们可以分别衰减器放大
+
+00:15:11,000 --> 00:15:14,000
+each of those compounds and in fact
+每个这些化合物和实际上
+
+00:15:14,000 --> 00:15:20,000
+we could exactly pass some center frequencies and totally eliminate other
+我们可以准确地传递一些中心频率和完全消除其他
+
+00:15:20,000 --> 00:15:23,000
+center frequencies
+中心频率
+
+00:15:23,000 --> 00:15:27,000
+so again just as in continuous-time
+所以再次正如在连续时间
+
+00:15:27,000 --> 00:15:32,000
+we can talk about an ideal filter
+我们可以谈论一个理想的滤波器
+
+00:15:32,000 --> 00:15:36,000
+and what I show here is the frequency response
+而我在这里展示的是频率响应
+
+00:15:36,000 --> 00:15:39,000
+love idea low-pass filter
+爱情的想法低通滤波器
+
+00:15:39,000 --> 00:15:43,000
+the idea low-pass filter of course passes
+当然，这个想法低通滤波器通过
+
+00:15:43,000 --> 00:15:46,000
+exactly with a gain of one
+正好与1的增益
+
+00:15:46,000 --> 00:15:50,000
+frequencies around zero and eliminates
+在零附近的频率和消除
+
+00:15:50,000 --> 00:15:55,000
+totally other frequencies
+完全其它频率
+
+00:15:55,000 --> 00:15:59,000
+however an important distinction here between continuous-time and
+然而一个重要的区别这里连续时间之间
+
+00:15:59,000 --> 00:16:00,000
+discrete-time
+离散时间
+
+00:16:00,000 --> 00:16:04,000
+is the fact that whereas in continuous time when we talked about an ideal
+是，而在连续的时间，当我们谈到一个理想的事实
+
+00:16:04,000 --> 00:16:06,000
+filter
+过滤器
+
+00:16:06,000 --> 00:16:10,000
+we passed a band of frequencies and totally eliminate everything else out to
+我们通过一个频带，并完全消除一切到
+
+00:16:10,000 --> 00:16:12,000
+infinity
+无穷大
+
+00:16:12,000 --> 00:16:16,000
+in a discrete-time case the frequency response
+在离散时间情况下的频率响应
+
+00:16:16,000 --> 00:16:19,000
+is periodic so obviously
+是周期性的如此明显
+
+00:16:19,000 --> 00:16:22,000
+the frequency response must periodically repeat
+频率响应必须周期性地重复
+
+00:16:22,000 --> 00:16:26,000
+the low low-pass filter and in fact we see that here
+低的低通滤波器，实际上我们可以看到，在这里
+
+00:16:26,000 --> 00:16:29,000
+if we look at the low-pass filter
+如果我们看一下低通滤波器
+
+00:16:29,000 --> 00:16:33,000
+then we've eliminated some frequencies
+那么我们已经消除了某些频率
+
+00:16:33,000 --> 00:16:36,000
+but then we passive course frequencies
+但后来我们被动当然频率
+
+00:16:36,000 --> 00:16:40,000
+around to pie and also frequencies
+周围的馅饼和频率也
+
+00:16:40,000 --> 00:16:44,000
+around minus 25 for that matter around any multiple
+在零下25为此事周围的任何倍数
+
+00:16:44,000 --> 00:16:48,000
+to pie although it's important to recognize
+到馅饼虽然它承认很重要
+
+00:16:48,000 --> 00:16:52,000
+that because of the inherent periodicity at the complex exponentials
+因为在复指数的内在周期性
+
+00:16:52,000 --> 00:16:57,000
+these frequencies are exactly the same frequencies
+这些频率是完全相同的频率
+
+00:16:57,000 --> 00:17:00,000
+as these frequencies so
+因为这些频率等等
+
+00:17:00,000 --> 00:17:05,000
+its low-pass filtering interpreted in terms of frequencies over a range
+其低通滤波的范围内解释在频率方面
+
+00:17:05,000 --> 00:17:09,000
+from minus buy the pie
+从零下买饼
+
+00:17:09,000 --> 00:17:13,000
+well just as we talk about a low-pass filter we can also talk about
+还有，正如我们谈论一个低通滤波器，我们也可以谈论
+
+00:17:13,000 --> 00:17:18,000
+a high pass filter and a high pass filter course with
+一个高通滤波器和一个高通滤波器过程中与
+
+00:17:18,000 --> 00:17:21,000
+past high frequencies
+过去的高频率
+
+00:17:21,000 --> 00:17:26,000
+in a continuous-time case high frequencies man frequencies that
+在连续时间的情况下的高频人频率的
+
+00:17:26,000 --> 00:17:29,000
+go out to infinity in the discrete-time case
+出去到无穷大的离散时间情况
+
+00:17:29,000 --> 00:17:34,000
+course the highest frequencies we can generate our frequencies up the pie
+当然，最高的频率，我们可以生成我们的频率高达馅饼
+
+00:17:34,000 --> 00:17:39,000
+and wants are complex exponentials go past pie
+并希望被复指数走过去馅饼
+
+00:17:39,000 --> 00:17:43,000
+then in fact we start seeing the lower frequencies again might be
+那么其实我们开始再次看到更低的频率可能是
+
+00:17:43,000 --> 00:17:46,000
+indicate what I mean if we think
+表明了我的意思，如果我们认为
+
+00:17:46,000 --> 00:17:51,000
+in the context of the low-pass filter these are low frequencies
+在低通滤波器的情况下这些都是低频
+
+00:17:51,000 --> 00:17:55,000
+as we move along the frequency axis these become high frequencies
+当我们沿着频率轴移动这些成为高频率
+
+00:17:55,000 --> 00:17:58,000
+and as we move further along the frequency axis
+和我们再进一步沿着频率轴
+
+00:17:58,000 --> 00:18:02,000
+what we'll see when we get to for example frequency
+我们会看到，当我们到达例如频率
+
+00:18:02,000 --> 00:18:06,000
+to pie are the same low frequencies
+以饼都是一样的低频率
+
+00:18:06,000 --> 00:18:10,000
+that we see around zero a particular then
+我们看到在零附近某则
+
+00:18:10,000 --> 00:18:14,000
+a and i do. high pass filter in the discrete-time case
+一个和我做。在离散时间情况下的高通滤波器
+
+00:18:14,000 --> 00:18:17,000
+would be a filter that eliminates these frequencies
+将消除这些频率的滤波器
+
+00:18:17,000 --> 00:18:23,000
+and passes frequencies around pie
+并绕过馅饼频率
+
+00:18:23,000 --> 00:18:26,000
+okay so and we've seen the
+好了，我们已经看到了
+
+00:18:26,000 --> 00:18:31,000
+convolution property and its interpretation in terms of filtering
+卷积性质及其解释在过滤方面
+
+00:18:31,000 --> 00:18:35,000
+more broadly the convolution property in combination
+更广泛地结合卷积财产
+
+00:18:35,000 --> 00:18:39,000
+with a number of the other properties today introduced in particular the time
+与一些其他属性今天特别引入的时间
+
+00:18:39,000 --> 00:18:41,000
+shifting and when the arity property
+移和时元数属性
+
+00:18:41,000 --> 00:18:45,000
+allows us to generator analyzes
+让我们到发电机的分析
+
+00:18:45,000 --> 00:18:50,000
+the an ally systems that are described by linear constant coefficient
+是由线性常系数描述的盟友系统
+
+00:18:50,000 --> 00:18:52,000
+difference equations
+差分方程
+
+00:18:52,000 --> 00:18:55,000
+and this again pareles very strongly
+而这又pareles非常强烈
+
+00:18:55,000 --> 00:18:58,000
+the discussion that we carried out in the continuous-time
+我们进行了在连续时间的讨论
+
+00:18:58,000 --> 00:19:03,000
+case their particular let's
+他们的情况下，特别是让我们
+
+00:19:03,000 --> 00:19:06,000
+think I love a discrete-time system
+我觉得爱一个离散时间系统
+
+00:19:06,000 --> 00:19:11,000
+there is described by when your car is the coefficient difference equation
+有被当你的车是系数差分方程描述
+
+00:19:11,000 --> 00:19:15,000
+and will restrict the initial conditions on the equation
+并且将限制的初始条件的方程
+
+00:19:15,000 --> 00:19:19,000
+such that it corresponds to linear time-invariant system
+以使得它对应于线性时不变系统
+
+00:19:19,000 --> 00:19:22,000
+and recall that in fact in our discussion
+并记得，其实在我们的讨论
+
+00:19:22,000 --> 00:19:26,000
+when your constant coefficient difference equations
+当你常系数差分方程
+
+00:19:26,000 --> 00:19:29,000
+is the condition of initial rest
+是的初始静止状态
+
+00:19:29,000 --> 00:19:32,000
+there on the equation that guarantees
+上，保证方程有
+
+00:19:32,000 --> 00:19:37,000
+4s that the system will be causal linear and time-invariant
+4秒，该系统将是因果线性时不变
+
+00:19:37,000 --> 00:19:40,000
+okay now let's consider
+好吧，现在让我们考虑
+
+00:19:40,000 --> 00:19:44,000
+a first-order difference equation system described by first-order difference
+由一阶差分描述的一阶差分方程系统
+
+00:19:44,000 --> 00:19:47,000
+equation and we've talked about the solution of this equation before
+方程和我们以前谈过这个方程的解
+
+00:19:47,000 --> 00:19:51,000
+essentially we run the solution recur simply
+本质上，我们运行该解决方案简单地重演
+
+00:19:51,000 --> 00:19:54,000
+let's now consider generating the solution by
+现在让我们考虑通过生成的解决方案
+
+00:19:54,000 --> 00:19:59,000
+taking advantage the properties the forty a transport
+趁着性质四十运输
+
+00:19:59,000 --> 00:20:03,000
+well just as we did in continuous time we can consider
+也正如我们在连续时间做了就可以考虑
+
+00:20:03,000 --> 00:20:07,000
+applying to 48 transformed to both sides of this equation
+施加到48变换与这个方程的两边
+
+00:20:07,000 --> 00:20:10,000
+and the Fourier transform are why I have been
+和傅里叶变换是为什么我一直
+
+00:20:10,000 --> 00:20:14,000
+courses y Omega and then using the shifting
+课程Ÿ欧米茄，然后使用偏移
+
+00:20:14,000 --> 00:20:20,000
+property the time shifting property the Fourier transform why event -1
+财产时移特性的傅立叶变换，为什么事件-1
+
+00:20:20,000 --> 00:20:23,000
+is y Omega multiplied by
+设为y欧米茄乘以
+
+00:20:23,000 --> 00:20:27,000
+you to the minus jail make and so we have this
+你到零下监狱做，所以我们有这个
+
+00:20:27,000 --> 00:20:32,000
+using the when the arity property we can carry down the scale factor in and these
+使用时的参数数量属性，我们可以扛下来的比例因子在这些
+
+00:20:32,000 --> 00:20:34,000
+two together as they read it here
+两者结合起来，因为他们读在这里
+
+00:20:34,000 --> 00:20:38,000
+and forty a transformer victim and is XO make
+四十变压器受害者，是XO化妆
+
+00:20:38,000 --> 00:20:42,000
+well Wii console this equation
+以及Wii游戏机这个方程
+
+00:20:42,000 --> 00:20:47,000
+the Fourier transform of the output in terms of the Fourier transform
+在傅立叶变换的计算的傅立叶变换的输出
+
+00:20:47,000 --> 00:20:51,000
+up the input and a
+构成输入和一个
+
+00:20:51,000 --> 00:20:55,000
+inappropriate complex scale factor and simply solving this
+不合适的复杂规模因素和根本解决这一
+
+00:20:55,000 --> 00:21:00,000
+for y Omega yields what we have here
+y的欧米茄产生我们这里
+
+00:21:00,000 --> 00:21:04,000
+now what we've used in going from this point to this point
+现在我们从这个点到这点用过
+
+00:21:04,000 --> 00:21:09,000
+is both the shifting property
+是两个换档属性
+
+00:21:09,000 --> 00:21:15,000
+and we've also used the linearity property
+而且我们还使用了线性特性
+
+00:21:15,000 --> 00:21:19,000
+at this point we can recognize that
+在这一点上，我们可以承认，
+
+00:21:19,000 --> 00:21:22,000
+here the Fourier transform the output is the product
+此处傅里叶变换的输出是产品
+
+00:21:22,000 --> 00:21:25,000
+the Fourier transform of the input and
+傅立叶变换的输入和
+
+00:21:25,000 --> 00:21:31,000
+some complex function and from the convolution property
+一些复杂的功能，并从卷积属性
+
+00:21:31,000 --> 00:21:35,000
+then that complex function must in fact
+那么实际上，复杂的函数必须
+
+00:21:35,000 --> 00:21:39,000
+correspond to the frequency response
+对应的频率响应
+
+00:21:39,000 --> 00:21:43,000
+or acquittal atlee the 48 transform
+或无罪阿特利48变换
+
+00:21:43,000 --> 00:21:47,000
+love the impulse response so if we wanted to determine the Fourier
+爱的脉冲响应，所以如果我们想确定傅立叶
+
+00:21:47,000 --> 00:21:48,000
+transform
+改造
+
+00:21:48,000 --> 00:21:53,000
+or the or where the impulse response to the system
+或或其中的系统的脉冲响应
+
+00:21:53,000 --> 00:21:56,000
+let's say for example then it becomes a matter
+比方说，例如它就会变成一个问题
+
+00:21:56,000 --> 00:22:01,000
+love having identified the 4e a transformer the impulse response which
+爱在确定的4E变压器的脉冲响应的
+
+00:22:01,000 --> 00:22:03,000
+is the frequency response
+是频率响应
+
+00:22:03,000 --> 00:22:08,000
+we now want to inverse transform to get the impulse response
+我们现在要进行反变换得到的脉冲响应
+
+00:22:08,000 --> 00:22:13,000
+well how do we inverse transform of course we could do it by attempting to
+以及我们如何当然逆变换，我们可以通过尝试做
+
+00:22:13,000 --> 00:22:16,000
+go through the synthesis equation
+经过合成公式
+
+00:22:16,000 --> 00:22:20,000
+for the Fourier transform or we can do is we did
+对于傅里叶变换，或者我们可以做的就是我们所做的
+
+00:22:20,000 --> 00:22:23,000
+in a continuous-time case which is to take advantage
+在连续时间的情况下这是利用
+
+00:22:23,000 --> 00:22:27,000
+I love what we know and in particular
+我爱我们所知道的，尤其是
+
+00:22:27,000 --> 00:22:31,000
+we know dead from an example that we work before
+我们知道死者从我们以前成功的例子
+
+00:22:31,000 --> 00:22:35,000
+this is in fact the 48 transform
+这实际上是在48变换
+
+00:22:35,000 --> 00:22:39,000
+all a sequence which is
+所有的序列是
+
+00:22:39,000 --> 00:22:42,000
+a to the N times
+一到N次
+
+00:22:42,000 --> 00:22:46,000
+you then and so in essence by inspection
+你再等在本质上通过检验
+
+00:22:46,000 --> 00:22:50,000
+very similar to what has going on can
+非常相似，有什么事情可以
+
+00:22:50,000 --> 00:22:53,000
+in continuous-time essentially by inspection
+在连续时间基本上是通过检查
+
+00:22:53,000 --> 00:22:58,000
+we can then solve for the impulse response to the system
+然后我们可以解决该系统的脉冲响应
+
+00:22:58,000 --> 00:23:02,000
+okay so that procedure follows very much
+还好，这样的程序如下十分
+
+00:23:02,000 --> 00:23:06,000
+the kind of procedure that we've carried out in continuous-time
+我们已经在连续时间进行的一种程序
+
+00:23:06,000 --> 00:23:09,000
+and this is the course is discussed in more detail
+这就是过程进行更详细的讨论
+
+00:23:09,000 --> 00:23:12,000
+in the text well let's
+在文中也让我们
+
+00:23:12,000 --> 00:23:15,000
+a look at that example
+看看这个例子
+
+00:23:15,000 --> 00:23:19,000
+then here we have the impulse response
+那么在这里我们有脉冲响应
+
+00:23:19,000 --> 00:23:23,000
+for that for associated with the system described by that particular
+对于与由该特定描述的系统相关联的
+
+00:23:23,000 --> 00:23:28,000
+difference equation and to the right of that
+差分方程，并以该权利
+
+00:23:28,000 --> 00:23:32,000
+we have the Associated frequency response
+我们有相关的频率响应
+
+00:23:32,000 --> 00:23:36,000
+and one other things that we notice and this is drawn for a
+而且我们注意到一个其他的东西，这是绘制一个
+
+00:23:36,000 --> 00:23:41,000
+positive between 0&1 what we noticed in fact is that
+介于0和1是什么，我们注意到其实值得肯定的是
+
+00:23:41,000 --> 00:23:44,000
+it is an approximation to
+它是一个近似
+
+00:23:44,000 --> 00:23:48,000
+a low-pass filter because it tends to attenuate
+一个低通滤波器，因为它往往会削弱
+
+00:23:48,000 --> 00:23:51,000
+the high frequencies and retain and in fact
+高频率和保留，事实上
+
+00:23:51,000 --> 00:23:55,000
+amplify the low-frequency now
+现在放大低频
+
+00:23:55,000 --> 00:23:59,000
+if instead actually the impulse response
+如果不是实际的脉冲响应
+
+00:23:59,000 --> 00:24:03,000
+was such that we picked a to be negative between minus 10
+就是这样，我们选择了一个为负零下10之间
+
+00:24:03,000 --> 00:24:08,000
+and the impulse response in the time domain looks like this
+和在时域中的脉冲响应是这样的
+
+00:24:08,000 --> 00:24:11,000
+and the corresponding frequency response
+和相应的频率响应
+
+00:24:11,000 --> 00:24:15,000
+looks like this and that becomes an approximation
+看起来是这样的，并且成为一个近似值
+
+00:24:15,000 --> 00:24:19,000
+to a high pass filter
+到一个高通滤波器
+
+00:24:19,000 --> 00:24:24,000
+so in fact a first-order difference equation
+所以其实一阶差分方程
+
+00:24:24,000 --> 00:24:28,000
+as we see has a frequency response depending on the value obey
+因为我们看到有根据值服从的频率响应
+
+00:24:28,000 --> 00:24:33,000
+dad either looks approximately like a low-pass filter for a positive or a high
+爸要么看起来大约像一个低通滤波器，用于正的或高的
+
+00:24:33,000 --> 00:24:35,000
+pass filter for a negative
+低通滤波器为一负
+
+00:24:35,000 --> 00:24:39,000
+very much like the first order differential equation
+非常喜欢的一阶微分方程
+
+00:24:39,000 --> 00:24:42,000
+looked like a low-pass filter in the continuous-time
+看起来像在连续时间低通滤波器
+
+00:24:42,000 --> 00:24:46,000
+case and in fact I'd like to illustrate
+区分，事实上我想说明
+
+00:24:46,000 --> 00:24:50,000
+is the filtering characteristics
+是的滤波特性
+
+00:24:50,000 --> 00:24:55,000
+for example love filtering using first-order difference equation
+比如喜欢用一阶差分方程滤波
+
+00:24:55,000 --> 00:24:58,000
+and the example that a lil astray
+和例子，一个可爱的小误入歧途
+
+00:24:58,000 --> 00:25:03,000
+is filtering over sequence that in fact is filtered very often
+被过滤过的序列，其实是过滤经常
+
+00:25:03,000 --> 00:25:08,000
+for a very practical reasons namely a sequence which represents the Dow Jones
+对于一个非常实际的原因，即一个序列，该序列代表道琼斯
+
+00:25:08,000 --> 00:25:09,000
+Industrial Average
+工业平均
+
+00:25:09,000 --> 00:25:12,000
+over a fairly long period and
+在一个相当长的时期，
+
+00:25:12,000 --> 00:25:16,000
+will process the Dow Jones Industrial Average first
+首先会处理道琼斯工业平均指数
+
+00:25:16,000 --> 00:25:20,000
+through first-order difference equation where if we begin
+通过在那里，如果我们开始的一阶差分方程
+
+00:25:20,000 --> 00:25:25,000
+with a sequel 0 then referring to the frequency response
+与续集0，则指的是频率响应
+
+00:25:25,000 --> 00:25:28,000
+that we have here equal 0 would simply be
+我们在这里等于0，简直是
+
+00:25:28,000 --> 00:25:32,000
+passing all frequencies as a as positive
+通过所有频率为为阳性
+
+00:25:32,000 --> 00:25:37,000
+we start to retain mostly low frequencies
+我们先来留住大部分是低频率
+
+00:25:37,000 --> 00:25:41,000
+and the larger a gets but still less than 1
+和较大的一个变，但仍小于1
+
+00:25:41,000 --> 00:25:48,000
+the more it attenuates high frequencies at the expensive low frequencies
+越衰减高频在昂贵的低频率
+
+00:25:48,000 --> 00:25:51,000
+so let's watch the filtering first
+让我们先看过滤
+
+00:25:51,000 --> 00:25:56,000
+with a positive and we'll see if behave as a low pass filter and then
+以积极的，我们会看到，如果表现为一个低通滤波器，然后
+
+00:25:56,000 --> 00:25:59,000
+with a negative and we'll see
+带有负，我们会看到
+
+00:25:59,000 --> 00:26:05,000
+the difference equation behaving as a high pass filter
+差分方程表现为一个高通滤波器
+
+00:26:05,000 --> 00:26:09,000
+what we see here is the Dow Jones Industrial Average over
+我们在这里看到的是道琼斯工业平均指数比
+
+00:26:09,000 --> 00:26:14,000
+roughly a five year period from 1927 to 1930 to
+大约五年期间1927年至1930年，以
+
+00:26:14,000 --> 00:26:17,000
+and in fact that big dip in the middle
+而实际上，在中间大倾角
+
+00:26:17,000 --> 00:26:21,000
+is the famous stock market crash of 1929
+是1929年的著名股灾
+
+00:26:21,000 --> 00:26:26,000
+and we can see that following that in fact the market continued
+我们可以看到，下面的，事实上，市场持续
+
+00:26:26,000 --> 00:26:29,000
+a very long downward trend and
+一个很长的下降趋势，
+
+00:26:29,000 --> 00:26:33,000
+what we now want to do is process this
+我们现在想要做的就是这个过程
+
+00:26:33,000 --> 00:26:36,000
+through a difference equation
+通过差分方程
+
+00:26:36,000 --> 00:26:41,000
+above the Dow Jones average we show the impulse response to the difference
+上面的道琼斯平均，我们表明该差值的脉冲响应
+
+00:26:41,000 --> 00:26:42,000
+equation here
+这里方程
+
+00:26:42,000 --> 00:26:46,000
+we've chosen the parameter a equal to 0
+我们选择的参数等于0
+
+00:26:46,000 --> 00:26:49,000
+and the impulse response will be displayed on
+和脉冲响应将被显示在
+
+00:26:49,000 --> 00:26:53,000
+in expanded scale in relation to
+在有关扩大规模
+
+00:26:53,000 --> 00:27:00,000
+the scale love the input and for that matter the scale of the output
+规模喜欢的输入和为此事输出规模
+
+00:27:00,000 --> 00:27:04,000
+now with the impulse response shown here which is just an impulse
+现在在这里它示出的脉冲响应是只是一个脉冲
+
+00:27:04,000 --> 00:27:08,000
+in fact the output shown on the bottom trace
+其实在底部走线所示的输出
+
+00:27:08,000 --> 00:27:11,000
+is exactly identical to the input
+是完全相同的输入
+
+00:27:11,000 --> 00:27:15,000
+and what will want to do now is increase
+什么会想现在要做的就是增加
+
+00:27:15,000 --> 00:27:19,000
+first the parameter a and the impulse response
+第一参数a和脉冲响应
+
+00:27:19,000 --> 00:27:23,000
+will begin to look like an exponential
+将开始看起来像一个指数
+
+00:27:23,000 --> 00:27:28,000
+with a duration: that's longer and longer as
+与时间：这是越来越长的
+
+00:27:28,000 --> 00:27:31,000
+a moves from 0 to 1
+从0移动到1
+
+00:27:31,000 --> 00:27:35,000
+correspondingly we will get more and more low pass filtering as the
+相应地，我们将获得越来越多的低通滤波的
+
+00:27:35,000 --> 00:27:37,000
+coefficient a
+系数a
+
+00:27:37,000 --> 00:27:40,000
+increases from 0 toward one so now
+增加了从0往一所以现在
+
+00:27:40,000 --> 00:27:44,000
+we are increasing the parameter a we see that
+我们增加了一个参数，我们可以看到，
+
+00:27:44,000 --> 00:27:48,000
+the bottom trace in relation to the middle trace in fact is
+相对于中间迹实际上底部迹线是
+
+00:27:48,000 --> 00:27:52,000
+looking more and more smooth or
+看起来越来越光滑或
+
+00:27:52,000 --> 00:27:55,000
+low-pass filtered and here now we have
+低通滤波，在这里我们现在有
+
+00:27:55,000 --> 00:28:00,000
+a fair amount of smoothing to the point where the stock market crash of 1929
+平滑的地步了相当数量，其中1929年的股市崩盘
+
+00:28:00,000 --> 00:28:04,000
+is totally lost in fact I'm sure there are many people who
+其实是完全失去我敢肯定有很多人谁
+
+00:28:04,000 --> 00:28:09,000
+wish that through filtering we could in fact have avoided the stock market crash
+希望通过筛选，我们实际上可能已经避免了股市大跌
+
+00:28:09,000 --> 00:28:11,000
+altogether
+共
+
+00:28:11,000 --> 00:28:14,000
+now let's decrease
+现在让我们减少
+
+00:28:14,000 --> 00:28:18,000
+a from one back toward zero
+从一个走回零
+
+00:28:18,000 --> 00:28:22,000
+and as we do that we will be taking out
+当我们这样做，我们将取出
+
+00:28:22,000 --> 00:28:27,000
+the low-pass filtering and when they finally reaches
+低通滤波和当他们终于到达
+
+00:28:27,000 --> 00:28:31,000
+0 the impulse response to the filter will again
+0到滤波器的脉冲响应将再次
+
+00:28:31,000 --> 00:28:35,000
+be in in polls and so the output will be
+在调查中，所以输出将是
+
+00:28:35,000 --> 00:28:38,000
+once again identical to the input
+再次与输入相同
+
+00:28:38,000 --> 00:28:42,000
+and that's where we are now
+而这也正是我们现在
+
+00:28:42,000 --> 00:28:46,000
+right now we want to continue to decrease
+现在我们要继续减少
+
+00:28:46,000 --> 00:28:49,000
+a so that it becomes negative moving
+一，使之成为负移动
+
+00:28:49,000 --> 00:28:53,000
+from zero toward -1 and what we will see in that case
+从零走向-1，我们在这种情况下，会看到
+
+00:28:53,000 --> 00:28:56,000
+is more and more high-pass filtering
+越来越高通滤波
+
+00:28:56,000 --> 00:29:00,000
+on the output in relation to the input
+上在相对于输入输出
+
+00:29:00,000 --> 00:29:04,000
+and this will be particularly evident in again
+并且这将是特别明显的再
+
+00:29:04,000 --> 00:29:08,000
+the region a pipe frequencies represented by sharp transitions which
+该地区由夏普为代表的过渡管道的频率
+
+00:29:08,000 --> 00:29:08,000
+of course
+当然
+
+00:29:08,000 --> 00:29:12,000
+the market crash goodnight 1929 would represent
+市场大跌晚安1929年会代表
+
+00:29:12,000 --> 00:29:16,000
+so here now a is decreasing
+所以这里现在正在减少
+
+00:29:16,000 --> 00:29:21,000
+toward -1 we see that the high frequencies
+朝-1我们看到高频率
+
+00:29:21,000 --> 00:29:26,000
+or rapid variations are emphasize
+或迅速变化是强调
+
+00:29:26,000 --> 00:29:30,000
+and finally let's move from -1
+最后，让我们从移动-1
+
+00:29:30,000 --> 00:29:33,000
+back toward zero taking out the high-pass filtering
+背面朝向零取出的高通滤波
+
+00:29:33,000 --> 00:29:37,000
+and ending up with
+并结束与
+
+00:29:37,000 --> 00:29:42,000
+equal to 0 corresponding to an impulse response which is an impulse
+等于0对应于它是一个脉冲的脉冲响应
+
+00:29:42,000 --> 00:29:45,000
+in other words and identity system and let me stress once again that
+在其他单词和识别系统，让我再一次强调，
+
+00:29:45,000 --> 00:29:49,000
+the time scale on which we displayed the impulse response
+上，我们显示的脉冲响应的时间尺度
+
+00:29:49,000 --> 00:29:53,000
+is an expanded time scale in relation to the timescale
+是一个扩展的时间刻度相对于时间刻度
+
+00:29:53,000 --> 00:29:59,000
+on which we displayed the input and the output
+上，我们显示的输入和输出
+
+00:29:59,000 --> 00:30:03,000
+okay so we see that in fact a
+好了，所以我们看到，其实是一个
+
+00:30:03,000 --> 00:30:06,000
+first-order difference equation is
+一阶差分方程为
+
+00:30:06,000 --> 00:30:10,000
+a filter and in fact it's a very important class the filters and its use
+一个过滤器，实际上它是一个非常重要的一类过滤器及其使用
+
+00:30:10,000 --> 00:30:11,000
+very often to do
+很多时候做
+
+00:30:11,000 --> 00:30:17,000
+approximate low-paying some high-pass filtering
+近似​​低薪一些高通滤波
+
+00:30:17,000 --> 00:30:20,000
+now in addition to
+现在除了
+
+00:30:20,000 --> 00:30:24,000
+the convolution property another
+卷积属性的另一个
+
+00:30:24,000 --> 00:30:27,000
+important property that we had in continuous-time and that we have in
+我们曾在连续时间的，我们有重要的属性
+
+00:30:27,000 --> 00:30:29,000
+discrete-time
+离散时间
+
+00:30:29,000 --> 00:30:33,000
+is the modulation property the modulation property tells us
+是调制特性调制特性告诉我们
+
+00:30:33,000 --> 00:30:37,000
+what happens in the frequency domain when
+在频域上发生的事情时，
+
+00:30:37,000 --> 00:30:41,000
+you multiply signals in the time domain
+你在时域中乘以信号
+
+00:30:41,000 --> 00:30:47,000
+in continuous-time the modulation property corresponded to the statement
+在连续时间调制属性对应于表
+
+00:30:47,000 --> 00:30:50,000
+that if we multiply in the time domain
+如果我们乘以在时域
+
+00:30:50,000 --> 00:30:54,000
+we convolved the 48 transforms
+我们的卷积变换48
+
+00:30:54,000 --> 00:30:58,000
+in the frequency domain and in discrete-time
+在频域中和在离散时间
+
+00:30:58,000 --> 00:31:01,000
+we have very much the same
+我们有很多相同的
+
+00:31:01,000 --> 00:31:05,000
+kinda relationship
+有点关系
+
+00:31:05,000 --> 00:31:08,000
+the only real distinction between the
+之间的唯一真正的区别
+
+00:31:08,000 --> 00:31:12,000
+is is that in the discrete-time case
+是的，在离散时间情况
+
+00:31:12,000 --> 00:31:16,000
+in carrying out the convolution its integration
+在开展卷积其整合
+
+00:31:16,000 --> 00:31:19,000
+only over a two-party interval and
+只有在两方的时间间隔和
+
+00:31:19,000 --> 00:31:23,000
+what that corresponds to is what's referred to as
+什么对应的是什么的简称
+
+00:31:23,000 --> 00:31:28,000
+a periodic convolution
+以周期卷积
+
+00:31:28,000 --> 00:31:32,000
+as opposed to the continuous-time case
+相对于连续时间情况
+
+00:31:32,000 --> 00:31:36,000
+where what we have is a convolution
+在那里我们所拥有的是一个卷积
+
+00:31:36,000 --> 00:31:41,000
+that is a periodic on pollution
+这是一个周期上的污染
+
+00:31:41,000 --> 00:31:46,000
+so again we have a convolution property in discrete-time
+所以我们再次在离散时间卷积性质
+
+00:31:46,000 --> 00:31:50,000
+that is very much like the convolution property in continuous-time
+这非常类似于在连续时间的卷积特性
+
+00:31:50,000 --> 00:31:54,000
+the only real difference is that here work involving
+唯一真正的区别是，这里涉及的工作
+
+00:31:54,000 --> 00:31:57,000
+periodic functions and so
+周期函数等
+
+00:31:57,000 --> 00:32:02,000
+its a periodic convolution which involves integration only over to pie
+它的一个周期卷积涉及整合只能交给馅饼
+
+00:32:02,000 --> 00:32:03,000
+and herbal
+和草药
+
+00:32:03,000 --> 00:32:08,000
+rather than in immigration from minus infinity the question
+而不是从负无穷移民问题
+
+00:32:08,000 --> 00:32:12,000
+well let's and take a look at the
+那么让我们来看一看在
+
+00:32:12,000 --> 00:32:16,000
+example love the modulation property which will then
+例如爱的调制特性它在将
+
+00:32:16,000 --> 00:32:21,000
+leave to one particular application and a very useful application
+离开一个特定的应用程序和一个非常有用的应用
+
+00:32:21,000 --> 00:32:26,000
+love the modulation property in discrete-time
+爱在离散时间调制特性
+
+00:32:26,000 --> 00:32:29,000
+example that I 12 pic is
+例如，我12 PIC是
+
+00:32:29,000 --> 00:32:34,000
+example in which we consider modulating a signal
+在此示例中，我们考虑调制信号
+
+00:32:34,000 --> 00:32:37,000
+with a signal with another signal
+与另一信号的信号
+
+00:32:37,000 --> 00:32:40,000
+X evander x1 event as i indicated
+正如我X霍利X1事件
+
+00:32:40,000 --> 00:32:44,000
+here which is -1 to the end
+这里是-1到端
+
+00:32:44,000 --> 00:32:47,000
+essentially with that says is that
+本质上，说的是，
+
+00:32:47,000 --> 00:32:51,000
+any signal which I modulate with this effect corresponds to taking the
+我与调节这种影响任何信号对应于服用
+
+00:32:51,000 --> 00:32:52,000
+original signal
+原始信号
+
+00:32:52,000 --> 00:32:57,000
+and then going through that signal alternating
+然后将通过该信号交替
+
+00:32:57,000 --> 00:33:00,000
+the algebraic sign
+代数符号
+
+00:33:00,000 --> 00:33:06,000
+now we in in applying the modulation property of course
+现在我们在应用过程中的调制特性
+
+00:33:06,000 --> 00:33:10,000
+what we need to do is develop the 48 transform
+我们需要做的是开发48变换
+
+00:33:10,000 --> 00:33:13,000
+this signal this signal which I
+这个信号此信号，我
+
+00:33:13,000 --> 00:33:18,000
+rewrite I can ride either is -1 to the air to rewrite is you DJ pie and since
+重写我可以骑要么是-1到空气中重写被你DJ馅饼和自
+
+00:33:18,000 --> 00:33:20,000
+you the J pie
+您歼馅饼
+
+00:33:20,000 --> 00:33:25,000
+is equal to -1 is a periodic signal
+是等于-1是一个周期性的信号
+
+00:33:25,000 --> 00:33:28,000
+and if the periodic signal that I show here
+如果周期信号，我在这里展示
+
+00:33:28,000 --> 00:33:34,000
+and recall that to get the 48 transform other periodic signal
+并记得拿到48变换其他周期性信号
+
+00:33:34,000 --> 00:33:37,000
+one way to do it is to
+做到这一点的一种方法是
+
+00:33:37,000 --> 00:33:42,000
+generate the forty a series coefficients for the periodic signal
+生成40的周期信号的一系列系数
+
+00:33:42,000 --> 00:33:45,000
+and then identify the Fourier transform as an impulse train
+然后找出傅立叶变换为脉冲串
+
+00:33:45,000 --> 00:33:49,000
+where the heights of the impulses in the impulse train
+凡在列车冲动冲动的高度
+
+00:33:49,000 --> 00:33:53,000
+are proportional the proportionality factor to pry
+是成正比的比例系数撬
+
+00:33:53,000 --> 00:33:58,000
+proportional 240 a series coefficients
+240系列的系数成正比
+
+00:33:58,000 --> 00:34:02,000
+so let's first workout what the for a series is it for this example
+所以让我们先锻炼一下了一系列它是在这个例子
+
+00:34:02,000 --> 00:34:05,000
+in fact it's fairly easy here is
+其实这也很容易在这里
+
+00:34:05,000 --> 00:34:09,000
+the general synthesis equation for
+对于一般合成方程
+
+00:34:09,000 --> 00:34:13,000
+the forty a series and
+第四十一个系列
+
+00:34:13,000 --> 00:34:17,000
+if we take our particular example
+如果我们把我们的特殊的例子
+
+00:34:17,000 --> 00:34:20,000
+where if we look back at the curve above
+在那里，如果我们回头看看上面的曲线
+
+00:34:20,000 --> 00:34:25,000
+what we recognize is that the period
+我们认识那是什么时期
+
+00:34:25,000 --> 00:34:29,000
+is equal to 2 merely repeat after two points
+在后两个点等于2只重复
+
+00:34:29,000 --> 00:34:32,000
+then capital in is equal to two
+那么资本等于两个
+
+00:34:32,000 --> 00:34:36,000
+and so we can just write this out with the two turns
+所以我们可以只写这一点与两圈
+
+00:34:36,000 --> 00:34:40,000
+and the two terms involved are x1 a van is a0
+而且这两个术语X1一辆面包车为A0
+
+00:34:40,000 --> 00:34:43,000
+0 go fishin as cake 0
+0去钓鱼蛋糕0
+
+00:34:43,000 --> 00:34:47,000
+in a1 and this is with
+在A1，这是与
+
+00:34:47,000 --> 00:34:52,000
+cake was one we substituted in capital an equal to two
+蛋糕是一个大家取代资本平等的两个
+
+00:34:52,000 --> 00:34:56,000
+right well we can do a little bit about to bring here obviously
+右好，我们可以做一点点地在这里带来明显
+
+00:34:56,000 --> 00:35:00,000
+cross of the factors to and what we recognize
+的因素穿越到什么，我们承认
+
+00:35:00,000 --> 00:35:04,000
+if we compare this expression with
+如果我们这个表达式与比较
+
+00:35:04,000 --> 00:35:07,000
+the original signal which is you the j-pop I N
+这是你的J-pop的I N的原始信号
+
+00:35:07,000 --> 00:35:11,000
+then we can simply identify the fact dead
+那么我们可以简单地识别的事实死
+
+00:35:11,000 --> 00:35:15,000
+80 0 coefficient is zero that's the DC term
+80 0系数为零那是直流项
+
+00:35:15,000 --> 00:35:19,000
+and call fish in a1 is equal to 1
+和a1中称之为鱼等于1
+
+00:35:19,000 --> 00:35:23,000
+so we've done it simply by essentially
+所以我们基本上是由它完成的简单
+
+00:35:23,000 --> 00:35:26,000
+inspecting the for EA
+检查对EA
+
+00:35:26,000 --> 00:35:30,000
+series synthesis equation
+系列合成公式
+
+00:35:30,000 --> 00:35:35,000
+okay now if we want to get the Fourier transform for this we take those
+现在没事了，如果我们想要得到的傅里叶变换，为此我们采取这些
+
+00:35:35,000 --> 00:35:37,000
+coefficients
+系数
+
+00:35:37,000 --> 00:35:40,000
+an essentially generate
+基本上产生
+
+00:35:40,000 --> 00:35:44,000
+an impulse train where we
+一个冲动的火车，我们
+
+00:35:44,000 --> 00:35:47,000
+chooses values for the impulses to pie
+选择值的冲动派
+
+00:35:47,000 --> 00:35:50,000
+times the forty a series coefficients
+倍的40一系列系数
+
+00:35:50,000 --> 00:35:56,000
+so before a series coefficients array0 sequel to zero in a one is equal to 1
+如此前的一系列系数ARRAY0续集零在一等于1
+
+00:35:56,000 --> 00:36:00,000
+so noticed that in
+所以注意到，在
+
+00:36:00,000 --> 00:36:05,000
+the plot that I shown here above the 40 a transform
+我这里显示的40变换上述情节
+
+00:36:05,000 --> 00:36:11,000
+love x1 a band we have the zeroth coefficient which happens to be 0
+爱X1带我们第零系数恰好是0
+
+00:36:11,000 --> 00:36:14,000
+and so I haven't indicated impose
+所以我没有强加表示
+
+00:36:14,000 --> 00:36:18,000
+there we have the
+还有，我们有
+
+00:36:18,000 --> 00:36:22,000
+coefficient a one and the coefficient a1
+系数A 1与系数a1
+
+00:36:22,000 --> 00:36:25,000
+occurs at a frequency which is
+发生的频率为
+
+00:36:25,000 --> 00:36:29,000
+Omega 0 and Omega 0 in fact is equal to hi
+欧米茄0和Omega 0实际上等于喜
+
+00:36:29,000 --> 00:36:33,000
+because the signal is the the j-pop I N
+因为信号是一些J-Pop I N
+
+00:36:33,000 --> 00:36:37,000
+well in what's this impulse over here
+以及在什么这种冲动在这里
+
+00:36:37,000 --> 00:36:41,000
+well any polls is ace
+以及任何调查是王牌
+
+00:36:41,000 --> 00:36:45,000
+corresponds to the four-day series go fishin a sieve -1
+对应于为期四天的系列去钓鱼筛子-1
+
+00:36:45,000 --> 00:36:48,000
+and of course if we drew this out
+当然，如果我们画了这一点
+
+00:36:48,000 --> 00:36:52,000
+over a longer frequency axis we would see lots of other impulses
+在一个较长的频率轴上，我们会看到很多其他的冲动
+
+00:36:52,000 --> 00:36:56,000
+because it the fact that the four th transform periodically repeats
+因为这一个事实，即4个变换周期性重复
+
+00:36:56,000 --> 00:37:00,000
+or equipment leader for a series coefficients periodically
+或设备的领导者定期一系列系数
+
+00:37:00,000 --> 00:37:03,000
+p so this is the coefficient
+p之间，这样，这是系数
+
+00:37:03,000 --> 00:37:07,000
+80 this is the coefficient
+80这是系数
+
+00:37:07,000 --> 00:37:12,000
+a one with a factor to pie this is 25 times a zero
+一个具有一个因素馅饼这是25次零
+
+00:37:12,000 --> 00:37:15,000
+and two pi times they won
+和两个PI时候，他们赢了
+
+00:37:15,000 --> 00:37:19,000
+and then this is simply an indication
+然后这仅仅是一个指示
+
+00:37:19,000 --> 00:37:24,000
+that is periodically repeated
+被周期性地重复
+
+00:37:24,000 --> 00:37:28,000
+right now let's consider what happens if we take a signal
+现在让我们考虑，如果我们采取一个信号发生了什么
+
+00:37:28,000 --> 00:37:32,000
+and multiplier modulated by
+和乘法器调制
+
+00:37:32,000 --> 00:37:36,000
+-1 to the end well in the frequency domain
+-1至末尾以及在频域
+
+00:37:36,000 --> 00:37:39,000
+that corresponds to a convolution
+对应于卷积
+
+00:37:39,000 --> 00:37:42,000
+let's consider a signal x2 a van
+让我们考虑一个信号X2一辆面包车
+
+00:37:42,000 --> 00:37:47,000
+which has a $4 EA transform as i've indicated here
+其中有4美元的EA变换，因为我已经在这里表示
+
+00:37:47,000 --> 00:37:51,000
+then the Fourier transform the product
+然后傅里叶变换的乘积
+
+00:37:51,000 --> 00:37:54,000
+affects 1 event next to %uh van is the convolution
+影响旁边％1事件呃面包车是卷积
+
+00:37:54,000 --> 00:37:58,000
+up these two spectra and
+了这两个光谱和
+
+00:37:58,000 --> 00:38:01,000
+recall that if you can fall something
+记得，如果你能掉下东西
+
+00:38:01,000 --> 00:38:06,000
+with an impulse train is this is that simply corresponds to taking the
+有一种冲动列车，这是简单地对应于服用
+
+00:38:06,000 --> 00:38:07,000
+something
+某物
+
+00:38:07,000 --> 00:38:10,000
+and placing it at the positions love
+并把它的位置爱
+
+00:38:10,000 --> 00:38:14,000
+should the impulses so in fact
+如若如此冲动，其实
+
+00:38:14,000 --> 00:38:17,000
+the result the convolution this with this
+该结果与此卷积这
+
+00:38:17,000 --> 00:38:22,000
+would then be the spectrum their I indicate here
+然后将频谱他们我在此说明
+
+00:38:22,000 --> 00:38:26,000
+namely this spectrum shifted up to pie
+即此谱移来的馅饼
+
+00:38:26,000 --> 00:38:29,000
+and of course two-minus by and then
+当然还有两减去，然后
+
+00:38:29,000 --> 00:38:33,000
+of course to not only Piper three pie in five
+当然，不仅派3派五
+
+00:38:33,000 --> 00:38:36,000
+by et cetera et cetera and
+村庄，等等等等，并
+
+00:38:36,000 --> 00:38:41,000
+so this spectrum finally corresponds to
+所以这个频谱终于对应
+
+00:38:41,000 --> 00:38:44,000
+the Fourier transform -1 to the end
+傅立叶变换-1到端
+
+00:38:44,000 --> 00:38:48,000
+times X to have an where x2 event is the sequence
+多次X有一个地方X2事件序列
+
+00:38:48,000 --> 00:38:53,000
+spectrum was x2 make
+谱X2化妆
+
+00:38:53,000 --> 00:38:57,000
+okay now this is in fact important
+现在没事了其实这是重要的
+
+00:38:57,000 --> 00:39:00,000
+useful and interesting point what it says is
+有用和有趣的一点是什么它说的是
+
+00:39:00,000 --> 00:39:04,000
+I have a signal with a certain spectrum and if I
+我有一个信号具有一定的频谱，如果我
+
+00:39:04,000 --> 00:39:08,000
+modulate multiply that signaled by -1 to the end
+乘法调制信号是由-1到年底
+
+00:39:08,000 --> 00:39:11,000
+meeting that I alternate the signs then
+会议认为我交替指示牌，然后
+
+00:39:11,000 --> 00:39:17,000
+it takes the low frequencies in effect the ship's the spectrum by pie
+它需要有效的低频船舶的频谱由馅饼
+
+00:39:17,000 --> 00:39:20,000
+so it takes the low frequencies and moves them up the high frequencies
+所以它需要的低频率和移动它们的高频率
+
+00:39:20,000 --> 00:39:24,000
+and will incidently take the high frequencies and movement the low
+并顺便说一句采取高频率和运动的低
+
+00:39:24,000 --> 00:39:26,000
+frequency
+频率
+
+00:39:26,000 --> 00:39:29,000
+so in fact we in essence saw this when we
+所以实际上我们在本质上看见了这个，当我们
+
+00:39:29,000 --> 00:39:33,000
+so or twenty talked about the example love
+因此，二十谈过恋爱的例子
+
+00:39:33,000 --> 00:39:36,000
+a sequence which was aided the end times you have an
+一个序列是援建结束时间你有一个
+
+00:39:36,000 --> 00:39:40,000
+notice let me draw your attention to the fact dead
+注意让我提请你注意这样的事实：死人
+
+00:39:40,000 --> 00:39:43,000
+when a is positive we have
+当a是正我们
+
+00:39:43,000 --> 00:39:48,000
+this sequence and its Fourier transform
+这个序列及其傅立叶变换
+
+00:39:48,000 --> 00:39:52,000
+is as II show on the right
+是为第二显示在右侧
+
+00:39:52,000 --> 00:39:55,000
+for a negative
+对于负
+
+00:39:55,000 --> 00:39:58,000
+the sequence is
+该序列是
+
+00:39:58,000 --> 00:40:03,000
+the identical to a positive but with alternating signs
+在相同的一个积极的，但有迹象交替
+
+00:40:03,000 --> 00:40:06,000
+and the Fourier transform it that you can now see
+和傅里叶变换它，你现在可以看到
+
+00:40:06,000 --> 00:40:10,000
+and verify also algebraically
+同时也验证代数
+
+00:40:10,000 --> 00:40:14,000
+if you'd like is identical to this spectrum
+如果你想是一样的这个频谱
+
+00:40:14,000 --> 00:40:17,000
+simply shifted by pie
+只需馅饼转移
+
+00:40:17,000 --> 00:40:20,000
+so it says in fact that multiplying
+所以说，在事实相乘
+
+00:40:20,000 --> 00:40:25,000
+that impulse response or if we think I've a positive and a negative
+该脉冲响应，或者如果我们认为我有一个正的和负
+
+00:40:25,000 --> 00:40:28,000
+that is algebraically similar to multiplying
+这是代数类似相乘
+
+00:40:28,000 --> 00:40:34,000
+the impulse response by -1 to the end and in the frequency domain
+由-1到端和在频域中的脉冲响应
+
+00:40:34,000 --> 00:40:38,000
+the affected that essentially is shifting the spectrum by pie
+受影响的，基本上是由饼转移谱
+
+00:40:38,000 --> 00:40:43,000
+we can interpret that in the context that the modulation property
+我们可以理解，在上下文中，调制特性
+
+00:40:43,000 --> 00:40:46,000
+now it's interesting that
+现在有趣的是，
+
+00:40:46,000 --> 00:40:49,000
+what that says is there
+什么，说是有
+
+00:40:49,000 --> 00:40:54,000
+if we have system which corresponds to
+如果我们有系统，其对应于
+
+00:40:54,000 --> 00:41:00,000
+a low-pass filter as i indicated here
+一个低通滤波器，正如我在这里
+
+00:41:00,000 --> 00:41:03,000
+with an impulse response a true fan
+用脉冲响应一个真正的球迷
+
+00:41:03,000 --> 00:41:08,000
+and its it can be any approximation to a low pass filter and even an idea Lopez
+并且其也可以是任何近似到低通滤波器，甚至一个想法洛佩兹
+
+00:41:08,000 --> 00:41:09,000
+filter
+过滤器
+
+00:41:09,000 --> 00:41:14,000
+if we want to convert that to a high pass filter
+如果我们想将其转换成一个高通滤波器
+
+00:41:14,000 --> 00:41:18,000
+we can't do that by generating a new system
+我们不能这样做，产生一个新的系统
+
+00:41:18,000 --> 00:41:22,000
+whose impulse response is -1 to the end
+其脉冲响应是-1到端
+
+00:41:22,000 --> 00:41:25,000
+times the impulse response the low-pass filter
+倍的脉冲响应低通滤波器
+
+00:41:25,000 --> 00:41:28,000
+and this modulation
+与该调制
+
+00:41:28,000 --> 00:41:33,000
+by -1 to the end will take the frequency response
+由-1到年底将采取频率响应
+
+00:41:33,000 --> 00:41:36,000
+this system and shifted by popeye
+这个系统和转向大力水手
+
+00:41:36,000 --> 00:41:39,000
+so that what's going on here at low frequencies
+所以说这是怎么回事就在低频
+
+00:41:39,000 --> 00:41:44,000
+will now go on here at high frequency
+现在将继续在这里高频
+
+00:41:44,000 --> 00:41:47,000
+this also says incidently dead if
+这也是说，顺便说一句，如果死
+
+00:41:47,000 --> 00:41:51,000
+we look at
+我们来看看
+
+00:41:51,000 --> 00:41:57,000
+the a and idea low-pass filter and i do. high pass filter
+的一个想法和低通滤波器和我做。高通滤波器
+
+00:41:57,000 --> 00:42:01,000
+and we choose the cutoff frequencies for comparison
+我们选择了截止频率进行比较
+
+00:42:01,000 --> 00:42:04,000
+for the band with the filter to be equal
+用于与过滤器的频带为等于
+
+00:42:04,000 --> 00:42:08,000
+since this ideal high pass filter is
+因为这个理想高通滤波器
+
+00:42:08,000 --> 00:42:13,000
+this idea low-pass filter with the frequency response shifted
+这个主意的低通滤波器的频率响应偏移
+
+00:42:13,000 --> 00:42:18,000
+by popeye the modulation property tells us
+通过大力水手的调制特性告诉我们
+
+00:42:18,000 --> 00:42:22,000
+that in the time domain with that corresponds to
+在与对应于该时域
+
+00:42:22,000 --> 00:42:26,000
+is an impulse response multiplied five minus one to the S
+时的脉冲响应乘以5减去1到S
+
+00:42:26,000 --> 00:42:30,000
+so it says that the impulse response
+所以说，脉冲响应
+
+00:42:30,000 --> 00:42:35,000
+love the high-pass filter or quently the inverse Fourier transform
+爱的高通滤波器或quently傅立叶逆变换
+
+00:42:35,000 --> 00:42:38,000
+love a high pass filter frequency response
+爱一个高通滤波器的频率响应
+
+00:42:38,000 --> 00:42:41,000
+is -1 to the end times the
+是-1到结束时间的
+
+00:42:41,000 --> 00:42:45,000
+impulse response to the low-pass filter that all follows for the modulation
+到低通滤波器，所有如下的调制脉冲响应
+
+00:42:45,000 --> 00:42:47,000
+property
+属性
+
+00:42:47,000 --> 00:42:51,000
+now there's another way interesting and useful way
+现在有另一种方式有趣和有用的方式
+
+00:42:51,000 --> 00:42:55,000
+that modulation can be used to
+该调制可以用于
+
+00:42:55,000 --> 00:43:00,000
+implement or convert from low pass filtering the high-pass filtering
+实施或由低通滤波，高通滤波转换
+
+00:43:00,000 --> 00:43:05,000
+the modulation property tells us about multiplying the time domain is shifting
+调制特性告诉我们乘以时域移
+
+00:43:05,000 --> 00:43:07,000
+in the frequency domain
+在频域
+
+00:43:07,000 --> 00:43:10,000
+and the example that we happen to pick said if you multiply
+而且我们发生的例子来接说，如果你乘
+
+00:43:10,000 --> 00:43:15,000
+or modulate by -1 to the end that takes low frequencies and ship them to
+或-1调节到去年底，采用低频率，并将它们运送到
+
+00:43:15,000 --> 00:43:17,000
+high-frequency
+高频
+
+00:43:17,000 --> 00:43:21,000
+what that tells us it as a practical and useful
+什么，告诉我们它作为一种实用和有用的
+
+00:43:21,000 --> 00:43:26,000
+notion is the following suppose we have a system
+概念是下列假设我们有一个系统
+
+00:43:26,000 --> 00:43:31,000
+that we know is a low pass filter and it's a good luck this
+我们知道是一个低通滤波器，这是一个好运气这
+
+00:43:31,000 --> 00:43:34,000
+how might we use it as a high pass filter
+怎么可能，我们把它作为一个高通滤波器
+
+00:43:34,000 --> 00:43:39,000
+well one way to do it instead of shifting its frequency response
+还有一种方式做，而不是改变其频率响应它
+
+00:43:39,000 --> 00:43:42,000
+is to take the original signal
+是取原始信号
+
+00:43:42,000 --> 00:43:46,000
+shift its low frequencies the high frequencies and its high frequencies the
+改变其低频率的高频率和它的高频率的
+
+00:43:46,000 --> 00:43:48,000
+low frequencies
+低频
+
+00:43:48,000 --> 00:43:53,000
+by multiplying the input signal the original signal by -1 to the yen
+乘以输入由-1信号的原始信号，以日元
+
+00:43:53,000 --> 00:43:57,000
+process that with the low-pass filter we're now with sitting at the low
+处理，与低通滤波器，我们现在正在与坐在低
+
+00:43:57,000 --> 00:44:00,000
+frequencies with a high frequencies
+频率的高频率
+
+00:44:00,000 --> 00:44:04,000
+and then unscramble it all at the output
+然后解读这一切在输出
+
+00:44:04,000 --> 00:44:07,000
+so that we put the frequencies back where they belong
+让我们把频率回属于他们的地方
+
+00:44:07,000 --> 00:44:12,000
+and I summarize that here let's suppose for example that
+我总结的是，这里我们假设的例子，
+
+00:44:12,000 --> 00:44:16,000
+this system was a low-pass filter in and
+这个系统是与一个低通滤波器
+
+00:44:16,000 --> 00:44:20,000
+so it low pass filters whatever comes into it
+所以低通滤波器任何进入它
+
+00:44:20,000 --> 00:44:25,000
+down below I indicate taking the input and first interchanging
+向下跌破我表示接受输入和第一互换
+
+00:44:25,000 --> 00:44:32,000
+the high and low frequencies through modulation with -1 to the end
+通过调制-1到最后的高频和低频
+
+00:44:32,000 --> 00:44:37,000
+doing a low-pass filtering which and what sitting at the low frequencies here
+做一个低通滤波的，什么坐在这里在低频率
+
+00:44:37,000 --> 00:44:38,000
+with a high frequencies
+具有高频率
+
+00:44:38,000 --> 00:44:42,000
+this signal and then after the low-pass filtering
+此信号然后经过低通滤波
+
+00:44:42,000 --> 00:44:45,000
+moving the frequencies back where they belong
+移动频率回到属于他们的地方
+
+00:44:45,000 --> 00:44:48,000
+by again modulating with -1 to the end
+通过再次-1调控进行到底
+
+00:44:48,000 --> 00:44:52,000
+and that in fact turns out to be a very useful
+并且事实上，原来是一个非常有用的
+
+00:44:52,000 --> 00:44:56,000
+a very useful notion for
+对于一个非常有用的概念
+
+00:44:56,000 --> 00:45:00,000
+applying a fixed low pass filter
+施加一个固定的低通滤波器
+
+00:45:00,000 --> 00:45:06,000
+to do high-pass filtering and vice versa
+做高通滤波，反之亦然
+
+00:45:06,000 --> 00:45:10,000
+okay no
+还好没有
+
+00:45:10,000 --> 00:45:14,000
+what we've seen and what we've talked about
+我们所看到的和我们谈过
+
+00:45:14,000 --> 00:45:18,000
+are the for a representation for
+是用于表示一个
+
+00:45:18,000 --> 00:45:22,000
+discrete-time signals and prior to that
+离散时间信号，并在此之前，
+
+00:45:22,000 --> 00:45:27,000
+continuous-time say and we've seen some very important similarities and
+连续时间说，我们已经看到了一些非常重要的相似之处和
+
+00:45:27,000 --> 00:45:28,000
+differences
+差异
+
+00:45:28,000 --> 00:45:32,000
+and what I'd like to do is conclude
+和我想要做的是总结
+
+00:45:32,000 --> 00:45:36,000
+this lecture by summarizing
+本次讲座通过总结
+
+00:45:36,000 --> 00:45:40,000
+those various relationships kinda ball in one package
+这些不同的关系还挺球在一个封装中
+
+00:45:40,000 --> 00:45:43,000
+and in fact drawing your attention to
+而事实上提请你注意
+
+00:45:43,000 --> 00:45:48,000
+both the similarities and differences and comparisons between
+二者的相同点和不同点之间的比较
+
+00:45:48,000 --> 00:45:52,000
+well let's begin in this summary
+好，让我们开始在本概要
+
+00:45:52,000 --> 00:45:55,000
+by first looking at the continuous-time
+首先着眼于连续时间
+
+00:45:55,000 --> 00:46:00,000
+for a series in a continuous time for a series
+对于一个系列中的连续时间系列
+
+00:46:00,000 --> 00:46:03,000
+we have a periodic time function
+我们有一个定期的时间函数
+
+00:46:03,000 --> 00:46:08,000
+expanded as a linear combination of harmonically related complex
+展开如下的谐波相关的复杂的线性组合
+
+00:46:08,000 --> 00:46:09,000
+exponentials
+指数函数
+
+00:46:09,000 --> 00:46:13,000
+and there are an infinite number these that are required to do the
+并且有无限多的这些所需要做的
+
+00:46:13,000 --> 00:46:15,000
+decomposition
+分解
+
+00:46:15,000 --> 00:46:19,000
+and we saw and analysis equation which tells us
+我们看到和分析方程，它告诉我们
+
+00:46:19,000 --> 00:46:23,000
+how to get these four EA series coefficients
+如何让这四个EA系列系数
+
+00:46:23,000 --> 00:46:28,000
+through an integration on the original time
+通过对原时间的积分
+
+00:46:28,000 --> 00:46:31,000
+and notice in this that what we have
+并注意在这一点，我们有什么
+
+00:46:31,000 --> 00:46:35,000
+is a continuous periodic timer function what we end up with
+是一个连续的周期性定时器功能，我们结束了
+
+00:46:35,000 --> 00:46:40,000
+are in the frequency domain is a sequence a Fourier series coefficients
+是在频域上是一个序列的傅立叶级数的系数
+
+00:46:40,000 --> 00:46:41,000
+which in fact
+这实际上
+
+00:46:41,000 --> 00:46:45,000
+is an infinite sequence namely requires all values
+是一个无限序列，即要求所有的值
+
+00:46:45,000 --> 00:46:49,000
+K in general
+K的一般
+
+00:46:49,000 --> 00:46:54,000
+we had then generalized that to the continuous time for EA transform
+我们当时曾概括说来持续时间对EA变换
+
+00:46:54,000 --> 00:46:58,000
+an ineffective doing that what happened is that
+一个无效的这样做，什么事是，
+
+00:46:58,000 --> 00:47:03,000
+the synthesis equation in the four EA
+在4 EA合成方程
+
+00:47:03,000 --> 00:47:07,000
+series became
+系列成为
+
+00:47:07,000 --> 00:47:11,000
+integral relationship in the Fourier transform
+在傅立叶积分变换关系
+
+00:47:11,000 --> 00:47:15,000
+and we now have a continuous-time
+而我们现在有一个连续时间
+
+00:47:15,000 --> 00:47:21,000
+function which is no longer periodic this was for the a periodic case
+函数，它不再是周期性的，这是为一个周期的情况下
+
+00:47:21,000 --> 00:47:27,000
+represented as a linear combination up infinite has only close and frequency
+表示为一个线性组合了无限的只有关闭和频率
+
+00:47:27,000 --> 00:47:32,000
+complex exponentials with complex amplitudes given by Eq civil make it the
+复杂的指数函数与方程给出复振幅民间使其成为
+
+00:47:32,000 --> 00:47:35,000
+Omega divided by two pi
+欧米加除以2圆周
+
+00:47:35,000 --> 00:47:41,000
+and we had of course the corresponding analysis equation the told us how to get
+我们不得不当然相应的分析方程告诉我们怎么走
+
+00:47:41,000 --> 00:47:44,000
+exe below me here
+exe文件下面我在这里
+
+00:47:44,000 --> 00:47:48,000
+we have a continuous-time function which is a periodic
+我们有一个连续时间函数，它是一个周期性的
+
+00:47:48,000 --> 00:47:52,000
+and a continuous function of frequency
+和频率的连续函数
+
+00:47:52,000 --> 00:47:56,000
+which is a periodic
+这是一个周期
+
+00:47:56,000 --> 00:48:01,000
+the conceptual strategy in a discrete-time case
+在离散时间情况下的概念的策略
+
+00:48:01,000 --> 00:48:04,000
+was very similar with
+是具有非常相似
+
+00:48:04,000 --> 00:48:07,000
+so differences resulting in the
+这样的差异导致
+
+00:48:07,000 --> 00:48:11,000
+relationships because of some inherent differences between
+由于存在一些本质上的差异关系
+
+00:48:11,000 --> 00:48:15,000
+continuous-time and discrete-time we had
+连续时间和离散时间我们有
+
+00:48:15,000 --> 00:48:19,000
+we began with the discrete-time for you series
+我们开始与离散时间为您系列
+
+00:48:19,000 --> 00:48:24,000
+corresponding to representing a periodic sequence
+对应于表示一个周期序列
+
+00:48:24,000 --> 00:48:27,000
+through a set of complex exponentials
+通过一组复指数
+
+00:48:27,000 --> 00:48:31,000
+where now we only required a finite number of the
+在那里，现在我们只需要的数量有限
+
+00:48:31,000 --> 00:48:35,000
+is because the fact that in fact with there are only a finite number of
+是因为这一事实实际上与只有有限数量的
+
+00:48:35,000 --> 00:48:38,000
+harmonically related complex exponentials
+谐波相关复指数
+
+00:48:38,000 --> 00:48:42,000
+that's an inherent property discrete-time complex exponentials
+这是一个固有的属性离散时间复指数
+
+00:48:42,000 --> 00:48:46,000
+and so we have a discrete
+所以我们有一个离散
+
+00:48:46,000 --> 00:48:53,000
+periodic type function and we ended up with a set of 48 series coefficients
+函数周期类型和我们结束了一套48系列系数
+
+00:48:53,000 --> 00:48:57,000
+which of course are discrete as for a series coefficients are
+这当然是不连续的，作为一系列系数是
+
+00:48:57,000 --> 00:49:01,000
+and which periodically repeat because it the fact
+并且周期性地重复，因为它的事实
+
+00:49:01,000 --> 00:49:05,000
+that the Associated complex exponentials periodically
+该相关复指数定期
+
+00:49:05,000 --> 00:49:08,000
+repeat we then
+重复我们再
+
+00:49:08,000 --> 00:49:11,000
+used in arguments similar to the continuous-time case
+在参数类似于连续时间的情况下使用
+
+00:49:11,000 --> 00:49:15,000
+for going for periodic time fortunes a periodic time
+对于持续了周期时间财富的周期时间
+
+00:49:15,000 --> 00:49:19,000
+functions and we ended up with a relationship
+功能和我们结束了一个关系
+
+00:49:19,000 --> 00:49:23,000
+describing representation for a periodic
+描述表示为一个周期
+
+00:49:23,000 --> 00:49:26,000
+discrete-time signals in which now
+离散时间信号，其中现
+
+00:49:26,000 --> 00:49:31,000
+the synthesis equation went from a summation to an integration
+从求和的合成公式去整合
+
+00:49:31,000 --> 00:49:35,000
+says the frequencies are now if it hasn't we close
+说的频率是现在，如果它没有我们关闭
+
+00:49:35,000 --> 00:49:39,000
+involving frequencies only over to pry interval
+涉及的频率仅在撬区间
+
+00:49:39,000 --> 00:49:42,000
+and for which the amplitude factor Xa bomb-maker
+且其振幅因子Xa炸弹制造者
+
+00:49:42,000 --> 00:49:47,000
+well the apathy factors X will make it the Omega divided by two pi
+好冷漠因素通道x将使其成为欧米茄分为两个圆周率
+
+00:49:47,000 --> 00:49:52,000
+and this term Mexico may go which is the 48 transform
+而这一届墨西哥可能会是在48变换
+
+00:49:52,000 --> 00:49:56,000
+is given by this some Asian
+由下式给出这方面的一些亚洲
+
+00:49:56,000 --> 00:50:01,000
+and course involves all of the values affects a bit
+当然涉及到所有值的影响有点
+
+00:50:01,000 --> 00:50:06,000
+and so the important difference between the continuous-time and discrete-time
+等连续时间和离散时间之间的重要区别
+
+00:50:06,000 --> 00:50:11,000
+case kinda rose in part to the fact that discrete I miss discrete-time
+情况有点上升部分的事实，分立我想念离散时间
+
+00:50:11,000 --> 00:50:13,000
+continuous-time is continuous time
+连续时间是连续的时间
+
+00:50:13,000 --> 00:50:17,000
+and the fact the complex exponentials a periodic
+和事实的复指数函数的周期性
+
+00:50:17,000 --> 00:50:21,000
+in discrete-time the harmonically related ones periodically repeat
+在离散时间的谐波相关的那些周期性地重复
+
+00:50:21,000 --> 00:50:25,000
+whereas they don't in continuous time
+而他们没有在连续的时间
+
+00:50:25,000 --> 00:50:30,000
+now this among other things has an important consequence for duality
+现在这其中包括具有二元性的一个重要后果
+
+00:50:30,000 --> 00:50:34,000
+and let's go back again and look at this equation
+让我们回头再来看这个等式
+
+00:50:34,000 --> 00:50:37,000
+despair equations clearly their
+绝望方程清楚自己的
+
+00:50:37,000 --> 00:50:41,000
+is no duality between these two equations
+是这两个方程之间没有双重性
+
+00:50:41,000 --> 00:50:44,000
+this involves a summation this involves an integration
+这涉及到一个求和这涉及到一个集成
+
+00:50:44,000 --> 00:50:47,000
+and so in fact if
+因此，事实上，如果
+
+00:50:47,000 --> 00:50:50,000
+we make reference to to our the
+我们会参考我们的
+
+00:50:50,000 --> 00:50:53,000
+their isn't the reality in the continuous-time
+其并不现实中的连续时间
+
+00:50:53,000 --> 00:50:56,000
+for a series however
+对于一系列然而
+
+00:50:56,000 --> 00:51:01,000
+for the continuous-time for EA transform
+对于连续时间为EA变换
+
+00:51:01,000 --> 00:51:05,000
+we're talking about a periodic timer functions in a periodic frequency
+我们谈论的周期性频率的周期定时器功能
+
+00:51:05,000 --> 00:51:06,000
+functions
+功能
+
+00:51:06,000 --> 00:51:11,000
+and in fact we look at these two equations we see very definitely duality
+而事实上我们看，我们看的很肯定二重性这两个方程
+
+00:51:11,000 --> 00:51:15,000
+in other words the time function effectively
+换句话说时间函数有效地
+
+00:51:15,000 --> 00:51:18,000
+is the Fourier transform the four th transport
+是傅立叶变换的4个传输
+
+00:51:18,000 --> 00:51:21,000
+little time reversal in there but basically that's the result
+很少有时间逆转在那里，但基本上是这样的结果
+
+00:51:21,000 --> 00:51:26,000
+and in fact we had exploited that duality property
+而事实上，我们已经利用了二元属性
+
+00:51:26,000 --> 00:51:32,000
+when we talked about the continuous-time for EA transport
+当我们谈到的连续时间为EA运输
+
+00:51:32,000 --> 00:51:36,000
+with the discrete-time Fourier series
+用离散时间傅立叶级数
+
+00:51:36,000 --> 00:51:40,000
+we have a duality
+我们有一个对偶
+
+00:51:40,000 --> 00:51:44,000
+indicated by the fact that we have a periodic time function
+的事实，我们有一个定期的时间函数表示
+
+00:51:44,000 --> 00:51:47,000
+and a sequence which is
+和一个序列，该序列是
+
+00:51:47,000 --> 00:51:51,000
+periodic in the frequency domain and in fact if you look at these two
+定期在频域，事实上，如果你看看这两个
+
+00:51:51,000 --> 00:51:52,000
+expressions
+表达式
+
+00:51:52,000 --> 00:51:56,000
+you see the duality very clearly and so
+你看到偶的很清楚，所以
+
+00:51:56,000 --> 00:51:59,000
+ants the discrete-time Fourier series
+蚂蚁的离散时间傅立叶级数
+
+00:51:59,000 --> 00:52:03,000
+that has to do our D and
+有做我们的D和
+
+00:52:03,000 --> 00:52:08,000
+finally the discrete-time Fourier transform loses the duality
+最后的离散时间傅里叶变换失去了对偶
+
+00:52:08,000 --> 00:52:12,000
+because the fact among other things then in the time domain
+因为中间然后其他的东西在时域中的事实
+
+00:52:12,000 --> 00:52:16,000
+things are inherently discrete whereas in the frequency domain
+事物本身是离散的，而在频域
+
+00:52:16,000 --> 00:52:20,000
+they are inherently continuous so in fact here
+他们本质上是连续的所以其实这里
+
+00:52:20,000 --> 00:52:25,000
+there is no do well
+有没有做好
+
+00:52:25,000 --> 00:52:30,000
+okay now that says that there's a difference in the duality
+现在没事了，指出有一个在二元性差异
+
+00:52:30,000 --> 00:52:33,000
+continuous-time and discrete-time and there's one
+连续时间和离散时间和有一个
+
+00:52:33,000 --> 00:52:37,000
+more very important peace to
+更重要的和平
+
+00:52:37,000 --> 00:52:41,000
+the duality relationship and we can see that
+对偶关系，我们可以看到，
+
+00:52:41,000 --> 00:52:44,000
+first algebraically by comparing
+第一代数比较
+
+00:52:44,000 --> 00:52:47,000
+the continuous-time for a series
+连续时间的一系列
+
+00:52:47,000 --> 00:52:54,000
+and the discrete-time for EA transport
+和离散时间为EA运输
+
+00:52:54,000 --> 00:52:57,000
+the continuous time for a series
+持续时间为一个系列
+

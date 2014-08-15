@@ -1,0 +1,799 @@
+000040~003450~the following content is provided under a Creative Commons license
+003490~003639~your support will help MIT OpenCourseWare continue to offer
+007129~003451~high-quality educational resources for free
+010580~003780~to make a donation or view additional materials from hundreds of them IT
+014360~000670~courses
+015030~003080~visit MIT OpenCourseWare at 0 CW
+018110~006050~that MIT that EDU home in
+024160~005040~the
+029200~000740~the
+029940~002700~the
+032640~003250~the
+035890~002700~in
+038590~002239~in
+040829~007000~the No
+049680~007000~the in the last several lectures we talked about
+059269~003271~a generalization love the continuous-time
+062540~003360~Fourier transform and a very similar
+065900~004380~strategy also applies to discrete-time and that's what we want to begin to deal
+070280~001370~with in today's lecture
+071650~003380~so what we want to talk about is
+075030~003410~generalizing the four EA transform
+078440~004209~and what this will lead to in discrete-time is a notion referred to as
+082649~001101~the sea transport
+083750~003030~now just as in continuous-time
+086780~003750~in discrete-time the 48 transform
+090530~003350~corresponded to a representation
+093880~004390~love a sequence as a linear combination
+098270~003489~love complex exponentials and
+101759~005691~so this was the synthesis equation and of course there is the corresponding
+107450~001430~analysis equation
+108880~004140~and as you recall and as is
+113020~003120~the same for continuous-time the reason
+116140~003170~that we pick complex exponentials was
+119310~003919~because of the fact that their I can functions of linear time-invariant
+123229~001221~systems
+124450~004440~in other words if you have a complex exponential
+128890~004640~into a linear time-invariant system the output is a complex exponential
+133530~003240~and the change in complex amplitude
+136770~004480~is which corresponds to the frequency response
+141250~004180~in fact is what led to the definition of the 48 transform
+145430~003130~in particular it is the Fourier transform
+148560~003530~up the impulse response well
+152090~004070~that said have notions is more or less identical to
+156160~003420~the way we motivated the look lost transform
+159580~004840~in the continuous-time case in the 48 transforming the continuous-time case
+164420~004349~and just as in continuous-time there
+168769~003610~it are a set signals more general
+172379~003251~then the complex exponentials which
+175630~003570~are also I can functions have linear time-invariant systems
+179200~003810~in particular and discrete-time if
+183010~003140~we had instead love an exponential
+186150~003470~you to the Chi Omega and we had a more general
+189620~003410~complex number Z bad
+193030~003200~the signals E to the end is also
+196230~003290~and I can function up a linear time-invariant system
+199520~003810~for any particular Z so
+203330~004890~and we can see that by substituting that it to the convolution some
+208220~004040~and recognizing again very strongly paralleling the
+212260~003540~continuous-time argument head we can
+215800~004060~rewrite this factor as Z to the N
+219860~003630~the to the minus K and
+223490~004160~because it the fact that it's a someone and are some on K
+227650~004620~and his term doesn't depend on K we can take that term out
+232270~003750~and the conclusion is that if we have
+236020~003100~Z to the end as an input that
+239120~004220~the output is love the same form times
+243340~003330~a factor which depends on C
+246670~003580~but of course doesn't depend on k cuz that is
+250250~004190~some doubt as we form the summation so in fact
+254440~004419~this some Asian corresponds to a complex number
+258859~003120~which will do no as agency
+261979~006601~where Z will represent a more general complex number
+268580~003459~namely see is are
+272039~004361~you to the jail maker are being the magnitude of this complex number
+276400~004780~and Omega of course being the angle so
+281180~004630~for linear time-invariant system a more general
+285810~003829~complex exponential sequence up this form
+289639~004161~generates an output a complex exponential sequence
+293800~003440~have the same form with a change in amplitude
+297240~003239~which were representing as a gypsy
+300479~004240~recognizing the fact that it's going to be a function of what that complex
+304719~001340~number is
+306059~005170~and this amplitude factor is given by this some Asian
+311229~003180~and it is this some Asian which
+314409~003711~is defined as busy transform
+318120~003960~all the sequence H event
+322080~005579~now let me stress that and I'll continue to stress this is the lecture goes on
+327659~003590~that much of what we've said is
+331249~004560~directly parallel to what we said in the continuous-time case
+335809~004021~and what we simply done is to expand
+339830~005729~from complex exponentials with a purely imaginary exponent
+345559~003811~complex exponential time functions are sequences
+349370~004129~that form into one's that have more general
+353499~003461~complex exponential factors
+356960~003449~now we have a mapping here
+360409~003451~from the impulse response to
+363860~003919~the Tampa to or the Aiken value
+367779~003940~associated with that input and this mapping
+371719~004401~is what is referred to as busy transport
+376120~003620~so a gypsy is in fact
+379740~003329~busy transform of the impulse response
+383069~003350~and if we consider applying this mapping
+386419~003291~as we did in continuous-time in a similar argument
+389710~003199~applying this mapping to a
+392909~003880~sequence whether or not it corresponds to the impulse response to the linear
+396789~001951~time-invariant system
+398740~004259~that leads then to busy transform
+402999~003280~love a general sequence XFN
+406279~003331~busy transform being defined by
+409610~003359~this relationship and again
+412969~003081~rotationally will often represent
+416050~004690~a time for action and it's the transform through shorthand notation
+420740~003039~just indicating that accepts the
+423779~005211~is this the transform love accident
+428990~003310~alright so we've kind of motivated the development
+432300~004259~in a manner exactly identical to what we had done with the a-plus transform
+436559~003390~kinda the idea that if you look at the eigen value associated
+439949~003000~in with the linear time-invariant system
+442949~003740~that essentially generates a mapping between
+446689~004521~the sequence impulse system impulse response
+451210~003220~and a function of Z and
+454430~004419~that corresponds to busy transform here at corresponded to applause transform
+458849~004000~in a continuous-time case that same argument
+462849~004011~is also the argument the kinda argument that we use
+466860~003049~to lead us into before EA transform
+469909~004780~originally an once again what you would expect
+474689~004120~is dead busy transform has a very close
+478809~003010~an important relationship to the Fourier transform
+481819~003320~and indeed that relationship turned down
+485139~003420~to be more or less identical to
+488559~003121~the relationship between the applause transform
+491680~003750~in the 48 transforming continuous-time
+495430~003199~well let's look at the relationship
+498629~003090~for civil what we recognize is
+501719~003600~they if we compare
+505319~003141~the for EA transform expression
+508460~003949~for a sequence and busy transform
+512409~003240~expression for the same sequence
+515649~004121~dead they involve essentially the same operations
+519770~004430~and in fact Cincy is of the form are
+524200~003520~e2 the jail maker if we want
+527720~003020~this some to look like this some
+530740~003170~then that would mean that we would choosy
+533910~004860~equal to either the jail maker said another way
+538770~004810~busy transform onesie is a to the J Omega
+543580~004370~is going to reduce to before EA transform
+547950~003590~so we have relationship like the one
+551540~003530~again we had between the law applies transforming the forty a transforming
+555070~001620~continuous-time
+556690~004440~namely dead for certain set values
+561130~004850~of the complex variable the transform busy transform reduces
+565980~004219~to the Fourier transform so if we have ecstasy
+570199~003481~busy transform and we look at that
+573680~003899~for see equal to either the jail maker
+577579~004070~and sequel to you to jail maker is
+581649~003461~similar to saying that we're looking at that for the magnitude of Z
+585110~005240~equal to 1 were specifically choosing are equal to one which is the magnitude
+590350~003560~see then this is equal to
+593910~003390~the four EA transform love the sequence
+597300~003099~so busy transform frazee
+600399~004060~equal to either J Omega is the Fourier transform
+604459~004731~and so this then corresponds to
+609190~005800~X love Omega namely the Fourier transform
+614990~003670~well we now have ourselves in a similar situation
+618660~004150~again to what we had when we talked about the applause transform
+622810~003360~namely a notational
+626170~004320~awkwardness or inconvenience which we can resolve by simply
+630490~003370~re defining some of our notation
+633860~003140~in particular the awkwardness relates to the fact that
+637000~003990~whereas we've been writing or 48 transforms this way
+640990~003060~as external make a if
+644050~004479~we were to express XZ and look at it it's equal to either the jail maker
+648529~004781~we end up with the independent variable be2 the jail maker
+653310~004019~rather than Omega well in fact
+657329~004331~the 48 transform is a functional Omega it's also a function to be the jail
+661660~000950~maker
+662610~003390~and now we can see is dead given
+666000~003370~the fact that we want to generalize the four the the
+669370~004899~for EA transformed to dizzy transform it's convenient now
+674269~003630~to use as notation for the four th
+677899~004211~transform exit Z was equal to you DJ Omega
+682110~004539~namely are Fourier transforms will now be written as i've indicated here
+686649~003440~so just summarizing that our new notation
+690089~004141~is dead the independent variable
+694230~003490~on the Fourier transform is now
+697720~003369~going to be expressed as EJ Omega rather than
+701089~003271~as omega its a
+704360~004120~minor notational change but I recognize the fact that
+708480~005149~its somewhat confusing initially and takes a few minutes to sit down and just
+713629~003130~get it straightened out it's very similar to what we did with the
+716759~001690~apostrophe in swarm
+718449~003890~but let me draw your attention to the fact that
+722339~004050~in the applause transform the independent variable that we ended up
+726389~001651~with
+728040~003229~in talking about the 48 transform
+731269~003411~is different then what we're ending up with here
+734680~003130~in particular before we head J Omega
+737810~003630~now we have the to the jail make
+741440~004300~and the reason for that is simply that
+745740~004120~the whereas in continuous time we were talking about functions are the four
+749860~003599~you to the st. now we're talking about
+753459~004320~sequences the form Z to the end
+757779~004531~alright so in we have one relationship between the four EA transform and dizzy
+762310~001649~transform namely
+763959~003300~the fact that for the magnitude is equal to 1
+767259~006091~busy transform reduces to the Fourier transform
+773350~004130~now in the applause transform we also had another important relationship an
+777480~001270~observation
+778750~004470~which was the fact that the
+783220~003190~applause transform was
+786410~004429~the Fourier transform love x50
+790839~003420~modified and how is a modified it was modified
+794259~003601~by multiplying by a decaying
+797860~003370~growing exponentially depending on what the real part a veces
+801230~004209~well we have a very similar situation with dizzy transform
+805439~004010~in particular in addition to the fact
+809449~004200~that busy transform for a sequel the DJ Omega
+813649~003560~reduces to the four EA transform we'll see
+817209~003560~that this is a transform for other values as the
+820769~003250~is the Fourier transform love
+824019~003951~the sequence with an exponential weighting and let's see where that comes
+827970~002239~from
+830209~005021~here we have the expression general expression for the transform
+835230~005399~and recognizing that see is a complex number which were expressing in polar
+840629~000760~form
+841389~003310~as are you to the jail maker
+844699~003990~substituting that in this summation now becomes
+848689~003551~exit Van are you to jail make it to the minus an
+852240~004589~we can factor out these two turns are to the minus and
+856829~003961~and into the minus J Omega and and
+860790~003589~combining the art a minus in with excessive and
+864379~003591~and the in the minus J Omega en
+867970~003059~being treated separately what we end up with
+871029~004550~is the summation that I have here
+875579~005601~well what this says is that the z transform which is this
+881180~003839~at sea equal to re: to jail maker
+885019~004541~is in fact the four EA transform
+889560~003649~allo what
+893209~003680~it's the Fourier transform our love xom.n
+896889~003711~multiplied by art to the -10
+900600~003599~so that is the expression
+904199~004050~that we have here and in continuous-time
+908249~003250~we had the applause transform is the Fourier transform
+911499~004200~love X 50 you to the minus Sigma T
+915699~006060~here we have the Fourier transform effective and art to the -10
+921759~003051~now something to just reflect on for a minute
+924810~005170~is the bit because it tends to cause
+929980~003729~little better problem with the algebra later on if
+933709~003521~your attention is drawn to it is that we're talking about multiplying
+937230~001669~excessive and
+938899~005040~times are to the minus n the question is
+943939~004250~for are greater than one
+948189~004710~bizarre to -10 increase exponentially as N increases
+952899~004781~it is a decrease we're talking about are to the minus and
+957680~003519~if the matter if are is greater than one of the magnitude of ours greater than
+961199~000971~one for example
+962170~004609~if it's equal to 2 are the minus and is a half to the N
+966779~004990~and so in fact that decreases exponentially or more generally
+971769~004091~the larger re: is the faster are to the -10
+975860~005180~DK's with increasing in
+981040~003269~okay well let's just look at
+984309~004161~some examples love the the transform
+988470~003150~and examples that I picked again
+991620~004449~are examples directly out of the text and so
+996069~003260~the details of the algebra you can
+999329~004961~look at more leisurely as you sit with the textbook
+1004290~003909~let's consider first the ball an exponential sequence x7
+1008199~004570~equals a to the N times unit step so zero for negative time
+1012769~003440~and an exponential for positive time
+1016209~003440~in and the Fourier transform as we've seen in
+1019649~003360~earlier lectures is won over one minus a
+1023009~003541~it to the minus jail maker but
+1026550~003730~this doesn't always converge in particular for convergence of the
+1030280~001750~Fourier transform
+1032030~004750~we would require absolute some ability up the original sequence
+1036780~003409~and that in turn requires that the magnitude have a
+1040189~004831~be less than 1 so the Fourier transform is this
+1045020~003130~provided that the magnitude have a is less than one
+1048150~006180~and what is the Fourier transform if the magnitude a vase not less than 1
+1054330~005750~well the answer is that in that case it doesn't converge
+1060080~004000~right now let's look at the Z transform busy transform
+1064080~006280~is the some from minus infinity plus infinity
+1070360~003810~Aug a to the N see the -10
+1074170~005010~times a unit staff the unit step will change the lower limit 20
+1079180~005840~so some from zero to infinity and this is all the form
+1085020~003210~eight times
+1088230~003250~Z to the -1 to the N
+1091480~004880~so we're summing from zero to infinity eight times even minus 12 the N
+1096360~006040~that some is one over one minus AZ the -1
+1102400~004580~but in order for that song to converge
+1106980~003350~we require that the magnitude have a
+1110330~005360~time see the -1 be less than 1
+1115690~005610~now this is busy transform is the Fourier transform
+1121300~004110~love the sequence a to the N
+1125410~003430~times are to the -10 and
+1128840~003780~this statement about busy transforming converging
+1132620~005550~see transform converging is exactly identical to the statement
+1138170~003700~that what we're requiring is there the magnet too
+1141870~004000~%uh a times art to the -1
+1145870~003560~be less than 1 where
+1149430~003470~this represents the exponential factor
+1152900~003060~that we have are that
+1155960~004140~in effect is applied to the sequence so that
+1160100~003910~the 48 transform becomes the transform and
+1164010~005050~so if we put this condition we can interpret this condition
+1169060~003720~in exactly the same way day we interpret the condition
+1172780~003340~on convergence of the 48 transform
+1176120~003050~right so from this six
+1179170~003560~from what we've worked out here then well we have
+1182730~003230~is the see transform or
+1185960~003230~a to the N times you have an is
+1189190~003550~won over one minus AZ the -1
+1192740~003550~that works for any bad you have a
+1196290~005270~provided that we pick the value Z correctly
+1201560~004370~in particular we have to pick the center values UVC
+1205930~004470~so that what so that the magnitude obey
+1210400~003200~time 0 -1 is less than one
+1213600~003200~or equivalently so that the magnitude of the
+1216800~003680~is greater than the magnitude a so
+1220480~003240~Associated with busy transform
+1223720~004480~of this sequence is this algebraic expression
+1228200~004630~and this set of values on C for which data algebraic expression is valid
+1232830~004200~and just as with the apostrophe its form
+1237030~004840~this range values is referred to as
+1241870~004110~the region of convergence love busy transform
+1245980~004000~now again
+1249980~003880~as we saw with the apostrophe s form it's important
+1253860~003010~to recognize dead in specifying
+1256870~003100~or having worked out the
+1259970~004600~d trance 4ever sequence it's not just the algebraic expression
+1264570~003870~but also the region of convergence that's required
+1268440~003260~to uniquely specified
+1271700~005800~to emphasize that further here is example ten-point to from the text
+1277500~004860~and if you work that went through what you find is that algebraically
+1282360~003470~busy transform love this sequence
+1285830~004300~is 101 minus AZ the -1
+1290130~004210~identical algebraically to what we had up here
+1294340~006630~but now with a region of convergence
+1300970~004250~which is the magnitude of the less than the magnitude have a
+1305220~003180~in contrast to this example
+1308400~003880~where the regional convergence was the magnitude of the
+1312280~003550~greater than the magnitude day
+1315830~004910~alright so again requires not just the algebraic expression
+1320740~003460~but also requires specification
+1324200~003020~the region of convergence and
+1327220~003300~also as with the applause transform
+1330520~003100~it's convenient in looking at
+1333620~004040~the z transform to
+1337660~004680~represented in the complex plane
+1342340~003390~in this case the complex plane referred to as the
+1345730~004440~seaplane whereas in continuous time we talked about the applause transform it
+1350170~001210~was the S point
+1351380~003590~Z of course because he is the complex variable interns in which were
+1354970~002000~representing the sea transport
+1356970~003510~so we will be representing
+1360480~003540~the z transform interns of
+1364020~003460~representations in the complex plane
+1367480~003060~real part an imaginary part
+1370540~004190~but I've also identified a circle here
+1374730~003000~and you could wonder well what's the significance
+1377730~003110~the circle recall
+1380840~004330~dead in the discussion that we just came from
+1385170~005620~when we talked about the relationship between is a transforming the 48
+1390790~001400~transform
+1392190~003290~busy transform reduces to the Fourier transform
+1395480~004150~when the magnitude of Z's equal to 1
+1399630~003990~the magnitude is equal to 1 in the complex plane is a circle
+1403620~003990~and that circle in fact is a circle love radius
+1407610~003740~1 and so its on this contour
+1411350~003300~in the seaplane that busy transform
+1414650~006570~reduces to the 48 transform and we'll see some additional significance to that
+1421220~004930~as we go along just again emphasize the relationship since
+1426150~004990~and differences with continuous-time with the a-plus transform is the
+1431140~002810~behavior in the ass playing on the J Omega axis
+1433950~003020~dead corresponds to
+1436970~005150~the Fourier transform here its the behavior on the unit circle
+1442120~004870~with busy transform corresponds to the Fourier transform
+1446990~004330~now we'll be talking as we did with a plus transform
+1451320~003790~we'll be talking very often about
+1455110~004640~transforms which are rational at and rational transfers as we kiss
+1459750~003550~was we'll see represent systems
+1463300~004020~which are characterized by linear cut the coefficient difference equations
+1467320~003340~and so 4
+1470660~003460~the rational transfer for the rational see transforms
+1474120~003910~will again find it convenient to use a representation
+1478030~003900~interns opposes zeros and dizzy play so let's
+1481930~003540~in look at are example as we worked it out
+1485470~003160~previously example ten-point 1 and
+1488630~003080~with this sequence
+1491710~004570~busy transformers one divided by one minus AZ the -1
+1496280~004320~and we happen to have written it as a function of Z to the -1
+1500600~004950~clearly we can rewrite this by multiplying
+1505550~004970~numerator and denominator by Z and this would equivalent leave NBC divided by
+1510520~002060~see minus a
+1512580~004780~and so if we were to represent this
+1517360~006080~through a poll 0 plot we would have 0 at the arch in corresponding this factor
+1523440~003030~and a poll at Z equals a
+1526470~003470~corresponding to the denominator factor and
+1529940~003140~so the poll 0 pattern for this
+1533080~003010~is then a poll it's equal to a
+1536090~004090~and 0 at the origin
+1540180~003540~now let me just comment quickly about the fact that we wrote
+1543720~003940~that we've written this as one over one minus AZ the -1
+1547660~004630~and it seems kinda strange because perhaps we should have multiplied
+1552290~001770~through by C
+1554060~003010~%uh let me just indicate dead
+1557070~005520~as you'll see as you work examples it's very typical for busy transform
+1562590~004070~to come out as a function %uh Zeta -1
+1566660~003850~and so very typically you'll get to recognize
+1570510~004320~dead things will be expressed in terms of factors involving
+1574830~004380~terms like one minus AZ the -1 rather than
+1579210~004660~factors are the foreign C-minus a alright well
+1583870~004880~here is the one example that we heard referred to
+1588750~003920~and if we consider another example
+1592670~003280~the other example which was example 10.22
+1595950~003540~consists love
+1599490~004150~a an algebraic expression as i indicate here
+1603640~004670~but its region %uh validity is the magnitude is the less than the magnitude
+1608310~000900~have a
+1609210~003140~and that corresponds to the same poll 0
+1612350~003020~apply but a region of convergence
+1615370~003180~which is inside this circle
+1618550~004990~whereas in the previous case
+1623540~003820~with the poll 0 plot we had a region of convergence
+1627360~004250~which was for the magnitude at sea greater than the magnitude have a
+1631610~003550~so these two examples this one and the other one
+1635160~004700~have exactly the same poll 0 pattern and their distinguished by
+1639860~003950~their regional convergence now
+1643810~005090~notice incidently that in this particular case
+1648900~003930~the region of convergence includes the unit circle provided that
+1652830~003990~the magnitude have a is less than one and so in fact
+1656820~003950~that would say dead the sequence
+1660770~004510~has 48 transform that converges namely with the magnitude see
+1665280~004650~equal to 1 whereas in this example
+1669930~004230~the regional convergence does not include the unit circle
+1674160~005420~and so in fact we cannot look at Exit see for the magnitude is equal to 1
+1679580~004090~and so this example with the magnitude have a less than 1
+1683670~004260~does not have a Fourier transform the convergence
+1687930~004240~well assuming that the bank to give a is less than one
+1692170~003790~and the Fourier transform converges we can in fact
+1695960~003610~look at the Fourier transform by
+1699570~004860~observing what happens as we go around the unit circle
+1704430~003920~we've seen as for the a-plus transform interns observing what happened as we
+1708350~002050~move along the jail make axis
+1710400~003730~and here again we can use
+1714130~003180~the vectors
+1717310~003770~as we trace out the unit circle
+1721080~003600~and in particular what we would be looking at in this case
+1724680~003330~is the ratio of the zero vector
+1728010~006180~to the polls actor for example if we were looking at the magnitude busy
+1734190~001080~transform
+1735270~005620~the magnitude is a transform with the the ratio the like that this factor
+1740890~003100~to the like that this specter
+1743990~004120~and to observe the Fourier transform we would observe
+1748110~003350~how those vectors change in length
+1751460~003590~as we move around the unit circle
+1755050~003880~and as we move around the unit circle what we were trace out
+1758930~003480~interns the ratio the lights are those vectors is
+1762410~004200~the for EA transform
+1766610~004510~okay well let's focus
+1771120~003250~on that also in the context
+1774370~005630~love a slightly different the transforming dizzy transform here
+1780000~005450~as we'll see in later lecture is this the transform associated with the
+1785450~000980~second-order
+1786430~004320~difference equation it's a it has a denominator factor which has
+1790750~004030~which has two poles associated with it
+1794780~003350~and so here if we assumed
+1798130~004190~that the forty a transformer The Associated sequence
+1802320~003440~converge then again we would look
+1805760~003970~at the behavior this as we moved around the unit circle
+1809730~004740~and the ratio the links at the appropriate vectors
+1814470~004590~would describe 4s the frequency response
+1819060~003330~I'm sorry the Fourier transform so
+1822390~004870~the Fourier transform magnitude would consist the
+1827260~003110~the ratio the lengths
+1830370~004580~above the zero vectors divided by the links to the poll vectors
+1834950~003490~and one thing that we observe is dead
+1838440~004000~as we move in frequency Omega in the vicinity
+1842440~003790~love this poll this poll fact there in fact
+1846230~003990~reaches a minimum length that would mean
+1850220~003600~there'd its reciprocal would be maximum
+1853820~004640~and then as we sweep past the lysate these two vectors would increase the
+1858460~001740~zero vector is a course
+1860200~003530~would retain the same way no matter where we were
+1863730~005660~on the unit circle so in fact if we look at the Fourier transform associated with
+1869390~002100~this poll 0 pattern
+1871490~003090~if this was for example the the
+1874580~003460~for EA the represented the the
+1878040~003540~see transform or the impulse response
+1881580~004720~the linear time-invariant system the corresponding frequency response
+1886300~003980~would be what I plotted out below and so
+1890280~003180~it would peak and in fact where it would peak
+1893460~006400~is in the vicinity above the frequency location of the poll
+1899860~006100~as I indicate up here
+1905960~003360~so as we sweep past is this poll
+1909320~003240~then in fact this 48 transform
+1912560~003090~peaks well
+1915650~004190~this notion love looking at the frequency response as we move around the
+1919840~001340~unit circle
+1921180~005000~is a very important notion and it's important to recognize that is the unit
+1926180~002980~circle that we're talking about here whereas before
+1929160~003520~we were talking about the jail major axis
+1932680~003350~and to emphasize this further
+1936030~003250~let me just show this example and in fact
+1939280~003090~the previous example with the
+1942370~004000~computer display so that we can see the frequency response
+1946370~004750~as it sweeps out as we go around the unit circle
+1951120~004390~so here we have the poll 0 pattern
+1955510~005620~for the second-order example and to generate the Fourier transform
+1961130~005300~we want to look at the behavior of the polling 0 vectors as we move around the
+1966430~001330~unit circle
+1967760~003460~so first let's display the vectors
+1971220~003070~and here we have them displayed to
+1974290~003570~the point corresponding to zero frequency
+1977860~004960~and the magnitude of the Fourier transform
+1982820~004540~will be as we discussed the magnet to the like that this 0 factors divided by
+1987360~002640~the magnitude of the like that the poll vectors
+1990000~004400~shown below will be the for EA transform
+1994400~003420~and we have the Fourier transform displayed
+1997820~003370~hear from 0 to 2pi rather than
+2001190~004300~from mine despite supply as it was displayed in the transparency
+2005490~003250~because the periodicity the Fourier transform
+2008740~003690~both those are acquittal
+2012430~004230~now we're sweeping away from I'll make equal 0
+2016660~003920~and the lengths on the pole vectors have changed
+2020580~003110~and that of course generates a change in
+2023690~003460~the 48 transform and
+2027150~003580~as we continue the process further
+2030730~003290~if we increase frequency
+2034020~004950~as we sweep closer to the location at the pole
+2038970~004090~the polls actor decreases in length dramatically
+2043060~003980~and net generates a residence in the 48 transform
+2047040~003490~very similar to what we saw in continuous-time
+2050530~003280~now as we continue to sweep
+2053810~003420~further what will happen is that
+2057230~004820~that poll factor will begin to increase in like that again
+2062050~004730~and so in fact the magnitude of the Fourier transform
+2066780~003539~will decrease and we see that here
+2070319~004931~as we sweep toward or making equal to pie
+2075250~003629~now notice in this process that the
+2078879~003270~like that the zero vector is has stayed the same
+2082149~003401~because the fact that this 0 the zeros
+2085550~005089~are at the origin and no matter where we are in the unit circle the like that
+2090639~001790~those factors is unity
+2092429~003960~so they don't influence in this example the magnitude but they would of course
+2096389~003031~influence the face
+2099420~003880~now we want to continue sweeping from make people to pie
+2103300~004650~around to 2pi and because the symmetry in the Fourier transform
+2107950~004360~what we will see in the magnitude is identical to what we would see
+2112310~003690~if we swept from a geek with the pie back
+2116000~003650~clockwise who are making equal 0
+2119650~003290~in particular now as we're increasing frequency
+2122940~003260~notice that the link love the poll
+2126200~004560~vector associated with the lower half plane poll is decreasing
+2130760~003040~and so in fact that corresponds to
+2133800~003550~to generating a residence as
+2137350~005270~we sweep past that polo cation as we are here
+2142620~003360~and then finally that poll factor increases in Lang
+2145980~003820~as we begin to approach will make people to 2pi
+2149800~007000~or equivalent Lee as we approach Omega equal to 0
+2159380~004200~no finally let's also look at
+2163580~003700~the for EA transform associated with
+2167280~004060~the first order example that we discussed earlier in the lecture
+2171340~005430~and so what we wanted look at is the four EA transform as the poll
+2176770~003130~n0 vectors change once again
+2179900~004420~the Fourier transform will be displayed on a scale from 0 to 2pi
+2184320~004750~frequency scale from 0 to 2pi rather than mine despite a pie
+2189070~004490~and we want to observe the poll n0 vectors as we sweep around the unit
+2193560~005170~circle
+2198730~003320~we display first the poll n0 vectors
+2202050~003680~at Omega equal to 0 and
+2205730~004580~as the frequency increases
+2210310~003630~the polls vector increases in length
+2213940~003540~zero vector since the zeros at the origin
+2217480~005000~will have constantly no matter where we are on the unit circle although it would
+2222480~003530~affect the phase which we are not displaying here
+2226010~004260~and so the principal affect the only affect really in the magnitude
+2230270~003810~is due to the poll vector as the frequency
+2234080~003370~continues to increase the poll vector
+2237450~003030~increases in length monotonically
+2240480~003940~in fact and so that means that the magnitude
+2244420~004790~above the 48 transform will decrease monotonically
+2249210~007000~until we get past Omega equal to pie
+2264840~003640~here we are now at Omega equal to pie
+2268480~004210~and when we continue sweeping past
+2272690~003480~this frequency around to 2pi then
+2276170~004040~we will see basically the same curve swept out
+2280210~003010~in reverse sense because the symmetry
+2283220~004370~again if the 48 transform magnitude sweeping from
+2287590~003330~hi tu Pai is going to be equivalent
+2290920~003690~with regard to the magnitude too sweeping from pie
+2294610~003820~back to zero and so now
+2298430~003920~the poll vector begins to decrease in length and
+2302350~003930~correspondingly the magnitude of the Fourier transform
+2306280~003540~will increase and
+2309820~004390~that will continue until we get around to make people to 2pi
+2314210~003150~which is equivalent of course will make people 0
+2317360~004950~and obviously if we continue to sweep around again we would simply
+2322310~003920~trace out other periods associated with
+2326230~007000~the forty a transport
+2335580~003160~well that hopefully gives you care some feel for
+2338740~004500~for the notion I love %uh sweeping around the unit circle and of course you
+2343240~000880~can see that
+2344120~003210~dead because the circle is periodic
+2347330~004050~as we go around and around of course what would get is a periodic for EA
+2351380~001430~transform which is
+2352810~004770~the way for EA transforms are supposed to be now
+2357580~004100~the just is
+2361680~003830~with the Laplace transform the
+2365510~003430~region of convergence that the transform
+2368940~003910~as we've seen in this example and
+2372850~004530~is a very important part the specification
+2377380~003340~above busy transform and we can
+2380720~003170~in talking about sequences near transforms either
+2383890~003880~specify the regional convergence implicitly or we can't specify
+2387770~001160~explicitly
+2388930~003500~we can for example say what it is says
+2392430~003300~let's say the magnitude easy being greater than the magnitude a
+2395730~004250~or we can recognize that the region of convergence
+2399980~003620~has certain constraints associated with
+2403600~004500~certain properties love the time function and
+2408100~003670~in particular there are
+2411770~004070~some important properties love the region of convergence
+2415840~003460~which allow us given
+2419300~003220~bed we know certain characteristics at the time function
+2422520~003000~to then identify the region of convergence
+2425520~003400~by looking at the poll 0 pad for example
+2428920~003100~we recognize that the region of convergence
+2432020~004860~does not contain any polls because the fact that at polls
+2436880~003230~busy transform in fact blows up
+2440110~004830~and of course can converge at that point furthermore
+2444940~003570~the region of convergence consists love a ring
+2448510~003460~in the seaplane centered about the origin
+2451970~003240~recall there with a plus transform
+2455210~003630~the regional convergence consisted of strips in
+2458840~006380~the S plane with the sea transform the region of convergence consist suffering
+2465220~003460~basically because if the fact that the regional convergence
+2468680~004560~is dependent on the magnitude of Z whereas
+2473240~003960~with a plus transform the region of convergence was dependent on the real
+2477200~000860~party vez
+2478060~003330~the fact that is the magnitude of the says
+2481390~004060~in effect dead all values see that have the same magnitude
+2485450~004290~lie on a circle and so the regional convergence you would expect
+2489740~004180~to be a concentric ring
+2493920~005740~in the seaplane furthermore as we've already talked about and exploited
+2499660~004140~actually convergence %uh the Fourier transform
+2503800~003660~is equivalent to the statement that the region of convergence
+2507460~005260~includes the unit circle in the play now
+2512720~005380~in we can also associate the region of convergence with issues
+2518100~003640~about whether the sequence is a finite duration
+2521740~003590~alright cited or left-sided in and
+2525330~003740~let's let me sir quickly indicate again
+2529070~003950~what this I love the argument is if
+2533020~003710~we have a finite duration sequence so that
+2536730~004540~the sequence is absolutely solvable and therefore has a Fourier transform that
+2541270~001050~converges
+2542320~005070~then because of the fact dead it 0 outside some interval
+2547390~004060~I can multiply it by an exponentially
+2551450~005670~decaying sequence or by an exponentially growing sequence
+2557120~003740~and since I'm only doing is over a finite interval
+2560860~003950~no matter how I choose that exponential will end up
+2564810~003090~with an absolutely some herbal product so
+2567900~004960~if accident is a finite duration that in fact the region of convergence
+2572860~003560~is the entire seaplane possibly
+2576420~006520~with the exception of the origin or insanity on the other hand
+2582940~005250~if the sequence is a right-sided sequence
+2588190~003540~then we have to be careful that we don't
+2591730~004140~multiply by an exponential that grows too fast
+2595870~003330~for positive time or equivalent Lee in
+2599200~003660~we have to might have to choose the exponential so that
+2602860~003850~it DK sufficiently fast for positive time
+2606710~004150~as a consequence if that for a right-sided sequence
+2610860~005230~if we have a value which is in the region of convergence
+2616090~003300~as long as I multiply by exponentials
+2619390~003290~that DK faster than that for positive time
+2622680~003320~then also have
+2626000~004170~convergence in other words all finite values Z
+2630170~003630~to which the magnitude it sees greater than this so that the exponentials die
+2633800~001700~of even faster
+2635500~003800~will also be in the region of convergence
+2639300~003400~if we combine that statement with the fact that there are no polls
+2642700~004160~in the region of convergence then we end up with a statement similar to what we
+2646860~002100~had with the applause transform
+2648960~005470~here the statement is dead if the sequences right-sided
+2654430~003470~then the regional convergence
+2657900~004400~has to be outside the outermost poll essentially because it has to be outside
+2662300~004930~someplace and can include any polls
+2667230~003610~finally if we have
+2670840~003340~a left-sided sequence
+2674180~004800~van the if we have a value which is in the region convergence
+2678980~003260~all values for which the magnitude see is less than that
+2682240~004930~will also be in the region of convergence or if ecstasy is rational
+2687170~003930~then the region of convergence must be inside the innermost poll
+2691100~004630~and finally if we have a two-sided sequence
+2695730~003130~then this kind of a balance between
+2698860~004380~the exponential factor that we use and so in that case
+2703240~003390~then the region of convergence will be ring
+2706630~004420~in the seaplane and a essentially will extend outward to a poll
+2711050~003680~an inward to a poll so if we had
+2714730~004220~an algebraic expression let's say as
+2718950~003600~in we have here
+2722550~003730~in then
+2726280~004690~we can associate with that a region of convergence outside this poll
+2730970~003800~and that would correspond to a right-sided sequence
+2734770~004810~or we can associate it with it a region of convergence
+2739580~004260~which is inside
+2743840~004620~the innermost poll and that would correspond to a left-sided sequence
+2748460~003950~and the third and only other possibility
+2752410~003070~is a region of convergence which
+2755480~003610~lies between these two poles and
+2759090~003920~that would then correspond to a two-sided sequence
+2763010~003210~noticed incidentally because that way right place these polls
+2766220~003950~that this is the only one for which the regional convergence includes the unit
+2770170~000980~circle
+2771150~006050~in other words it's the only one for which the Fourier transform convergence
+2777200~003860~okay now we move through that fairly quickly and
+2781060~004280~a I've emphasize the fact that it parallels very closely what we did
+2785340~003350~with the a-plus transform what I'd like to do
+2788690~003450~is just conclude with a discussion of
+2792140~003810~how we get the time function back again
+2795950~006120~when we have busy transform including its regional convergence
+2802070~004530~well we can first the ball develop a more less formal expression
+2806600~004850~and the algebra for this is going through in the text and you went through
+2811450~001120~something similar
+2812570~005270~to this with the applause transform in the video course manual so I won't carry
+2817840~001500~through the details
+2819340~005830~but basically well we can use to develop a formal expression is the fact
+2825170~004100~that dizzy transform is the Fourier transform
+2829270~004000~the sequence exponentially weighted so we can apply the inverse
+2833270~003000~transformed to that and
+2836270~003450~that gives is not active and protective an exponentially weighted
+2839720~004090~and if we track that through then what we'll end up with
+2843810~003970~is an expression after we've taken care of
+2847780~004060~few the app's lines and deltas will end up with an expression
+2851840~003000~that expresses formally
+2854840~003380~the sequence XFN interns
+2858220~003400~love busy transform where
+2861620~003770~this in fact is a cock to her in a goal in the complex plane
+2865390~003290~and so there's a formal expression just
+2868680~003600~as there's a formal expression for the apostrophe its form
+2872280~003820~but in fact the more typical procedure is
+2876100~005520~to use essentially transform pairs that we know
+2881620~005750~together with the idea of using a partial fraction expansion
+2887370~006030~so if we had a sequence if we had a see transformers I indicate here
+2893400~003570~and if we expanded out
+2896970~003430~in a partial fraction expansion
+2900400~003160~then weekend recognize as
+2903560~004320~we did in a similar style with the lip gloss transform
+2907880~003730~we can recognize dead each term
+2911610~005250~together with the identified region of convergence
+2916860~003320~corresponds to an exponential factor
+2920180~005740~and so this term together with the fact that we know that the magnitude of C
+2925920~003130~must be greater than to allows us
+2929050~003190~to recognize this as similar to
+2932240~004490~the example ten-point 1 and in particular than
+2936730~004220~the sequence associated with that is what I indicate here
+2940950~003270~and for the second term the sequence is
+2944220~003420~what I indicate here so
+2947640~003490~what we're simply doing is using the fact that
+2951130~003640~we've worked out big the example going one direction before
+2954770~004460~and now we use that together with the partial fraction expansion
+2959230~003820~to get the individual sequences back again
+2963050~003800~and then at them together is one other method which I'll just point to
+2966850~004560~which eg is also elaborated on a little more in the text
+2971410~004430~but it's kind of the idea I love developing the inverse
+2975840~003080~Z transformed by recognizing dead
+2978920~003650~this the transformer formula
+2982570~004340~in fact is a power series
+2986910~004150~so if we take exigency
+2991060~003100~and expanded into power series
+2994160~004540~then we can pick of the values affect the van
+2998700~003610~by identifying the individual coefficients
+3002310~003230~in this expansion
+3005540~005880~okay and so by simply doing long division for example
+3011420~003300~we can also get the inverse transform
+3014720~004290~and that by the way is very useful particularly
+3019010~003500~if we want to get the inverse see transform
+3022510~004950~for z transform expression which is not rational
+3027460~004670~right now we move through this fairly quickly on the other hand I stress
+3032130~004950~dead it's very similar to what we went through for the applause transform
+3037080~001130~except
+3038210~003140~for a very important difference
+3041350~004850~the principal difference really being that with a plus transform it was the J
+3046200~002390~Omega axis and the S plane
+3048590~004390~that we focused attention on when we're thinking about the Fourier transform
+3052980~005680~here the unit circle in the seaplane plays an important role
+3058660~004950~well we'll see when we continue this in the next lecture is dead
+3063610~003640~there are properties are busy transform
+3067250~003350~just as they were properties of us transform
+3070600~003240~and those properties allow us
+3073840~003000~to develop and exploit
+3076840~003180~busy transform in the context love
+3080020~003150~systems describable by when your constant coefficient difference
+3083170~001070~equations
+3084240~003300~so in the next lecture will focus on
+3087540~003660~some properties busy transform and then we'll see
+3091200~003040~how to use those properties to help us
+3094240~003780~in getting further insight and working with system
+3098020~002860~describe a wall by difference equations thank you

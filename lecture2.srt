@@ -1,0 +1,3046 @@
+1
+00:00:00,040 --> 00:00:03,490 
+the following content is provided under
+a Creative Commons license
+
+2
+00:00:03,490 --> 00:00:07,129 
+your support will help MIT
+OpenCourseWare continue to offer
+
+3
+00:00:07,129 --> 00:00:10,580 
+high-quality educational resources for
+free
+
+4
+00:00:10,580 --> 00:00:14,360 
+to make a donation or view additional
+materials from hundreds of them IT
+
+5
+00:00:14,360 --> 00:00:15,030 
+courses
+
+6
+00:00:15,030 --> 00:00:18,110 
+visit MIT OpenCourseWare at 0 CW
+
+7
+00:00:18,110 --> 00:00:20,800 
+that MIT ided you
+
+8
+00:00:20,800 --> 00:00:27,800 
+home
+
+9
+00:00:35,829 --> 00:00:38,800 
+in
+
+10
+00:00:38,800 --> 00:00:40,280 
+in
+
+11
+00:00:40,280 --> 00:00:47,280 
+the No
+
+12
+00:00:51,580 --> 00:00:56,990 
+for in the last lecture
+
+13
+00:00:56,990 --> 00:01:02,080 
+I introduced an illustrated the kinds of
+signals and systems that will be dealing
+
+14
+00:01:02,080 --> 00:01:02,530 
+with
+
+15
+00:01:02,530 --> 00:01:06,880 
+throughout this course in today's
+lecture I'd like to
+
+16
+00:01:06,880 --> 00:01:10,610 
+be a little more specific and in
+particular talk about
+
+17
+00:01:10,610 --> 00:01:15,229 
+some the basic signals both
+continuous-time and discrete-time
+
+18
+00:01:15,229 --> 00:01:18,479 
+that will form important building blocks
+as
+
+19
+00:01:18,479 --> 00:01:21,840 
+the course progresses let's begin
+
+20
+00:01:21,840 --> 00:01:26,790 
+with one signal the continuous-time
+sinusoidal signal which perhaps you're
+
+21
+00:01:26,790 --> 00:01:27,440 
+already
+
+22
+00:01:27,440 --> 00:01:30,820 
+somewhat familiar with mathematically
+
+23
+00:01:30,820 --> 00:01:35,790 
+the continuous-time sinusoidal signal is
+expressed as i've indicated here
+
+24
+00:01:35,790 --> 00:01:38,900 
+there are three parameters
+
+25
+00:01:38,900 --> 00:01:44,759 
+a Omega 0 and see the parameter a is
+referred to as
+
+26
+00:01:44,759 --> 00:01:48,520 
+the ample to the parameter Omega 0
+
+27
+00:01:48,520 --> 00:01:51,740 
+as the frequency and the parameter fee
+
+28
+00:01:51,740 --> 00:01:55,630 
+as the face and
+
+29
+00:01:55,630 --> 00:02:01,500 
+graphically the continuous-time
+sinusoidal signal has the form
+
+30
+00:02:01,500 --> 00:02:05,000 
+shown here now
+
+31
+00:02:05,000 --> 00:02:08,200 
+the sinusoidal signal has a number love
+
+32
+00:02:08,200 --> 00:02:13,180 
+important properties that will find it
+convenient to exploit as the
+
+33
+00:02:13,180 --> 00:02:16,450 
+course goes along one of which is
+
+34
+00:02:16,450 --> 00:02:20,230 
+the fact that the sinusoidal signal
+
+35
+00:02:20,230 --> 00:02:25,730 
+is what is referred to as periodic what
+I mean by periodic
+
+36
+00:02:25,730 --> 00:02:30,640 
+is that under inappropriate time shift
+which I indicate here
+
+37
+00:02:30,640 --> 00:02:34,430 
+as t0 the signal replicates
+
+38
+00:02:34,430 --> 00:02:37,459 
+or repeats itself force it another way
+
+39
+00:02:37,459 --> 00:02:41,680 
+if we shift the time origin by an
+appropriate amount
+
+40
+00:02:41,680 --> 00:02:46,190 
+t0 the smallest value t0 being referred
+to as the period
+
+41
+00:02:46,190 --> 00:02:52,069 
+then X 50 is equal to itself shifted and
+
+42
+00:02:52,069 --> 00:02:55,750 
+to demonstrate that we can demonstrated
+mathematically
+
+43
+00:02:55,750 --> 00:03:00,790 
+by simply substituting into the
+mathematical expression for the
+
+44
+00:03:00,790 --> 00:03:02,190 
+sinusoidal signal
+
+45
+00:03:02,190 --> 00:03:05,830 
+see plus capital T zero
+
+46
+00:03:05,830 --> 00:03:09,850 
+in place if T when we carry out the
+expansion
+
+47
+00:03:09,850 --> 00:03:13,290 
+we then have for the argument the
+sinusoid
+
+48
+00:03:13,290 --> 00:03:16,540 
+Omega 0t plus Omega 0
+
+49
+00:03:16,540 --> 00:03:20,570 
+capital T zero plus P now
+
+50
+00:03:20,570 --> 00:03:24,160 
+one of the things that we know about
+sinusoidal functions
+
+51
+00:03:24,160 --> 00:03:28,130 
+is dead if you change the argument by
+any integer multiple
+
+52
+00:03:28,130 --> 00:03:32,000 
+to pie and the function has the same
+value
+
+53
+00:03:32,000 --> 00:03:35,520 
+and so we can exploit that here in
+particular
+
+54
+00:03:35,520 --> 00:03:39,880 
+with Omega 0t0 and integer multiple
+
+55
+00:03:39,880 --> 00:03:44,050 
+up to par i then the right hand side of
+this equation
+
+56
+00:03:44,050 --> 00:03:47,770 
+is equal to the left hand side of the
+equation so
+
+57
+00:03:47,770 --> 00:03:52,480 
+with Omega 0t0 equal to two part times
+an integer
+
+58
+00:03:52,480 --> 00:03:56,840 
+or t0 equal to two part times an integer
+
+59
+00:03:56,840 --> 00:04:02,400 
+divided by Omega 0 the signal repeats
+the period is defined as the smallest
+
+60
+00:04:02,400 --> 00:04:05,920 
+value if t0 and so the period is to pie
+
+61
+00:04:05,920 --> 00:04:10,340 
+divided by Omega 0 and going back to
+
+62
+00:04:10,340 --> 00:04:13,780 
+are sinusoidal signal we can
+
+63
+00:04:13,780 --> 00:04:16,880 
+see that and
+
+64
+00:04:16,880 --> 00:04:20,410 
+i've indicated here then the period
+
+65
+00:04:20,410 --> 00:04:24,389 
+as to pie over Omega 0 and that's the
+bad you
+
+66
+00:04:24,389 --> 00:04:30,789 
+under which the signal repeats now
+
+67
+00:04:30,789 --> 00:04:34,220 
+in addition a useful
+
+68
+00:04:34,220 --> 00:04:38,080 
+property above the sinusoidal signal is
+the fact that
+
+69
+00:04:38,080 --> 00:04:41,620 
+a timeshare all a sinusoid
+
+70
+00:04:41,620 --> 00:04:45,650 
+is equivalent to a phase change and we
+can demonstrate
+
+71
+00:04:45,650 --> 00:04:49,639 
+that again mathematically in particular
+
+72
+00:04:49,639 --> 00:04:53,280 
+if we put the sinusoidal signal under
+
+73
+00:04:53,280 --> 00:04:57,819 
+a timeshare i've indicated that the
+probe the time shift that i'm talking
+
+74
+00:04:57,819 --> 00:05:00,130 
+about. by small t0
+
+75
+00:05:00,130 --> 00:05:03,440 
+and expand this out then
+
+76
+00:05:03,440 --> 00:05:06,590 
+we see that that is equivalent to
+
+77
+00:05:06,590 --> 00:05:11,450 
+a change in phase and important thing to
+recognize
+
+78
+00:05:11,450 --> 00:05:17,130 
+about this statement is that not only is
+a timeshare
+
+79
+00:05:17,130 --> 00:05:20,730 
+generating a phase change but in fact
+
+80
+00:05:20,730 --> 00:05:24,510 
+if we inserted a phase change
+
+81
+00:05:24,510 --> 00:05:27,740 
+there is always a value if t0
+
+82
+00:05:27,740 --> 00:05:31,470 
+which would correspond to
+
+83
+00:05:31,470 --> 00:05:34,530 
+an equivalent I'm ship said another way
+
+84
+00:05:34,530 --> 00:05:38,389 
+if retake Omega 0t0
+
+85
+00:05:38,389 --> 00:05:42,889 
+and think of that as are change in phase
+
+86
+00:05:42,889 --> 00:05:47,580 
+for any change in phase we can solve
+this equation for timeshift
+
+87
+00:05:47,580 --> 00:05:50,860 
+or conversely for any value timeshare
+that
+
+88
+00:05:50,860 --> 00:05:54,730 
+represents an appropriate face
+
+89
+00:05:54,730 --> 00:05:58,060 
+so a time shift corresponds to a phase
+change
+
+90
+00:05:58,060 --> 00:06:02,950 
+and a phase change likewise corresponds
+to it I'm ship
+
+91
+00:06:02,950 --> 00:06:06,360 
+and so for example if we
+
+92
+00:06:06,360 --> 00:06:10,139 
+look at the sinusoidal signal
+
+93
+00:06:10,139 --> 00:06:13,150 
+the general sinusoidal signal that we
+
+94
+00:06:13,150 --> 00:06:17,460 
+saw previously in effect changing the
+phase
+
+95
+00:06:17,460 --> 00:06:21,060 
+corresponds to moving this signal in
+time
+
+96
+00:06:21,060 --> 00:06:26,620 
+one way or the other for example if we
+look at the sinusoidal signal with
+
+97
+00:06:26,620 --> 00:06:30,120 
+a phase equal to 0 that corresponds
+
+98
+00:06:30,120 --> 00:06:33,910 
+to locating the time origin at this p
+
+99
+00:06:33,910 --> 00:06:37,430 
+and i've indicated that on
+
+100
+00:06:37,430 --> 00:06:41,820 
+the following grass
+
+101
+00:06:41,820 --> 00:06:45,699 
+so here we have illustrated a sinusoid
+
+102
+00:06:45,699 --> 00:06:49,540 
+with zero phase or cosine with zero
+phase
+
+103
+00:06:49,540 --> 00:06:52,880 
+corresponding to taking a general
+picture and shifting it
+
+104
+00:06:52,880 --> 00:06:56,740 
+shifting it appropriately as i've
+indicated here
+
+105
+00:06:56,740 --> 00:07:01,870 
+this of course still has the property
+that it's a periodic function
+
+106
+00:07:01,870 --> 00:07:05,520 
+since we simply displaced in time
+
+107
+00:07:05,520 --> 00:07:10,370 
+and by looking at the graph what we see
+is that it has another very important
+
+108
+00:07:10,370 --> 00:07:11,580 
+property
+
+109
+00:07:11,580 --> 00:07:14,990 
+a property referred to as even and
+
+110
+00:07:14,990 --> 00:07:18,199 
+that's a property that will find it
+useful in general
+
+111
+00:07:18,199 --> 00:07:22,970 
+to refer to in relation to signals a
+signal is said to be even
+
+112
+00:07:22,970 --> 00:07:28,820 
+if when we reflected about the origin it
+looks exactly the same so it's a metric
+
+113
+00:07:28,820 --> 00:07:32,389 
+about the origin and looking at
+
+114
+00:07:32,389 --> 00:07:37,020 
+this sinusoid that in fact has that
+property
+
+115
+00:07:37,020 --> 00:07:43,240 
+and mathematically this statement that
+it's even is equivalent to the statement
+
+116
+00:07:43,240 --> 00:07:46,300 
+that if we replace the time argument
+
+117
+00:07:46,300 --> 00:07:49,449 
+by its negative the function itself
+
+118
+00:07:49,449 --> 00:07:53,310 
+doesn't change
+
+119
+00:07:53,310 --> 00:07:57,259 
+now this corresponded to a phase shift 0
+in our original
+
+120
+00:07:57,259 --> 00:08:00,820 
+cosine expression if instead we had
+
+121
+00:08:00,820 --> 00:08:04,470 
+chosen a phase shift love let's say
+minus pie over to
+
+122
+00:08:04,470 --> 00:08:07,880 
+then is that a a cosigner so it'll
+signal
+
+123
+00:08:07,880 --> 00:08:11,770 
+well we would generate is a sinusoid
+
+124
+00:08:11,770 --> 00:08:15,360 
+with the appropriate phase or
+
+125
+00:08:15,360 --> 00:08:18,509 
+said another way if we take are
+
+126
+00:08:18,509 --> 00:08:22,280 
+original cosine and
+
+127
+00:08:22,280 --> 00:08:25,710 
+substitute in for the phase minus pie
+over to
+
+128
+00:08:25,710 --> 00:08:28,919 
+then of course we have this mathematical
+expression
+
+129
+00:08:28,919 --> 00:08:32,599 
+using just straight for trigonometric
+identities
+
+130
+00:08:32,599 --> 00:08:37,820 
+we can express that alternately as
+signed Omega 0t
+
+131
+00:08:37,820 --> 00:08:41,640 
+the frequency and amplitude of course
+haven't changed and
+
+132
+00:08:41,640 --> 00:08:45,350 
+that you can convince yourself also is
+equivalent
+
+133
+00:08:45,350 --> 00:08:48,750 
+to shifting the cosine by
+
+134
+00:08:48,750 --> 00:08:52,649 
+and a mountain time that I've indicated
+here namely
+
+135
+00:08:52,649 --> 00:08:56,480 
+a quarter of the period so illustrated
+below
+
+136
+00:08:56,480 --> 00:08:59,740 
+is the graph now when
+
+137
+00:08:59,740 --> 00:09:02,779 
+we have a phase of mine espy over to an
+arc cosine
+
+138
+00:09:02,779 --> 00:09:08,320 
+which is a sinusoidal signal of course
+it's still
+
+139
+00:09:08,320 --> 00:09:12,050 
+periodic its periodic with a period of
+two pi
+
+140
+00:09:12,050 --> 00:09:16,370 
+over Omega 0 again because all that
+we've done
+
+141
+00:09:16,370 --> 00:09:19,650 
+by introducing a phase change is
+
+142
+00:09:19,650 --> 00:09:24,420 
+introduce the timeshare now
+
+143
+00:09:24,420 --> 00:09:28,570 
+when we look at the sinusoid in
+comparison with the Cosi namely with
+
+144
+00:09:28,570 --> 00:09:30,520 
+this particular choice a phase
+
+145
+00:09:30,520 --> 00:09:34,100 
+this has a different symmetry and
+
+146
+00:09:34,100 --> 00:09:38,770 
+that symmetry is referred to as odd what
+ought symmetry means
+
+147
+00:09:38,770 --> 00:09:42,900 
+graphically is that when we flipped the
+signal
+
+148
+00:09:42,900 --> 00:09:46,550 
+about the origin
+
+149
+00:09:46,550 --> 00:09:51,010 
+but I margin we also multiply it by a
+minus sign
+
+150
+00:09:51,010 --> 00:09:54,790 
+so thats in effect antisymmetric
+
+151
+00:09:54,790 --> 00:09:57,890 
+it it's not the mirror image but it's
+the mirror image flipped over
+
+152
+00:09:57,890 --> 00:10:03,110 
+and will find many occasions not only to
+refer to signals more general and
+
+153
+00:10:03,110 --> 00:10:04,740 
+sinusoidal signals as
+
+154
+00:10:04,740 --> 00:10:08,520 
+even in some cases and odd in other
+cases
+
+155
+00:10:08,520 --> 00:10:12,850 
+and in general mathematically
+
+156
+00:10:12,850 --> 00:10:15,950 
+on signal is one which
+
+157
+00:10:15,950 --> 00:10:19,890 
+has satisfy is the algebraic expression
+
+158
+00:10:19,890 --> 00:10:22,930 
+that exit see when you replace
+
+159
+00:10:22,930 --> 00:10:27,140 
+TE by its negative is equal to
+
+160
+00:10:27,140 --> 00:10:31,870 
+minus exit -2 so replacing the argument
+by its negative
+
+161
+00:10:31,870 --> 00:10:35,070 
+corresponds to time River I A
+
+162
+00:10:35,070 --> 00:10:39,570 
+an algebraic sign rivers
+
+163
+00:10:39,570 --> 00:10:42,890 
+okay so in this is the class of
+continuous-time
+
+164
+00:10:42,890 --> 00:10:46,120 
+sinusoids will have a little more to say
+about it later
+
+165
+00:10:46,120 --> 00:10:49,230 
+but I've now like to turn to
+
+166
+00:10:49,230 --> 00:10:54,430 
+discrete-time sinusoids what we'll see
+is that discrete-time sinusoids
+
+167
+00:10:54,430 --> 00:10:58,220 
+are very much like continuous-time ones
+but also
+
+168
+00:10:58,220 --> 00:11:02,270 
+with some very important differences and
+we want to focus not only on the
+
+169
+00:11:02,270 --> 00:11:03,370 
+similarities
+
+170
+00:11:03,370 --> 00:11:07,200 
+but also on the differences well let's
+begin
+
+171
+00:11:07,200 --> 00:11:11,040 
+with the mathematical expression a
+
+172
+00:11:11,040 --> 00:11:15,220 
+discrete-time sinusoidal signal
+mathematically
+
+173
+00:11:15,220 --> 00:11:19,500 
+is as i've indicated here a cosine
+
+174
+00:11:19,500 --> 00:11:22,940 
+Omega 0 and plus the and just says
+
+175
+00:11:22,940 --> 00:11:26,770 
+in the continuous-time case the
+parameter
+
+176
+00:11:26,770 --> 00:11:30,890 
+a is what we refer to as the airport to
+
+177
+00:11:30,890 --> 00:11:34,920 
+Omega 0 as the frequency and see
+
+178
+00:11:34,920 --> 00:11:38,080 
+as the face
+
+179
+00:11:38,080 --> 00:11:42,140 
+and I've illustrated
+
+180
+00:11:42,140 --> 00:11:46,380 
+here several discrete-time
+
+181
+00:11:46,380 --> 00:11:49,670 
+sinusoidal signals and they kinda
+
+182
+00:11:49,670 --> 00:11:53,660 
+look similar in fact if you sort of
+track what you might think of is the
+
+183
+00:11:53,660 --> 00:11:54,690 
+envelope
+
+184
+00:11:54,690 --> 00:11:59,060 
+it looks very much like what a
+continuous-time sign outside so it might
+
+185
+00:11:59,060 --> 00:11:59,750 
+look like
+
+186
+00:11:59,750 --> 00:12:04,310 
+but keep in mind day at the independent
+variable in this case
+
+187
+00:12:04,310 --> 00:12:07,810 
+isn't integer variable and so
+
+188
+00:12:07,810 --> 00:12:10,840 
+the sequence in fact only takes on bag
+use
+
+189
+00:12:10,840 --> 00:12:14,500 
+at integer values up the argument and
+we'll see
+
+190
+00:12:14,500 --> 00:12:17,970 
+that that has a a very important
+
+191
+00:12:17,970 --> 00:12:22,510 
+implication and will see that shortly
+now
+
+192
+00:12:22,510 --> 00:12:27,230 
+one of the issues that we addressed in
+the continuous-time cases periodicity
+
+193
+00:12:27,230 --> 00:12:30,620 
+and I want to refer or return to that
+
+194
+00:12:30,620 --> 00:12:34,570 
+shortly because that is in fact one of
+the areas where there is an important
+
+195
+00:12:34,570 --> 00:12:35,570 
+distinction
+
+196
+00:12:35,570 --> 00:12:39,400 
+let's first
+
+197
+00:12:39,400 --> 00:12:43,290 
+though examine the statement similar to
+the one
+
+198
+00:12:43,290 --> 00:12:47,960 
+the week salmon for continuous-time
+namely the relationship between the time
+
+199
+00:12:47,960 --> 00:12:49,690 
+shift in a phase change
+
+200
+00:12:49,690 --> 00:12:53,950 
+now in continuous-time
+
+201
+00:12:53,950 --> 00:12:58,660 
+course we saw that a timeshare
+corresponds to a phase change in
+
+202
+00:12:58,660 --> 00:13:02,190 
+vice versa let's first look at
+
+203
+00:13:02,190 --> 00:13:07,090 
+the relationship between shifting time
+and generating a change in phase
+
+204
+00:13:07,090 --> 00:13:10,520 
+in particular for discrete-time if
+
+205
+00:13:10,520 --> 00:13:14,300 
+in fact I implement a timeshare that
+
+206
+00:13:14,300 --> 00:13:17,400 
+generates a phase change and we can see
+that
+
+207
+00:13:17,400 --> 00:13:21,920 
+easily by simply inserting a timeshare
+
+208
+00:13:21,920 --> 00:13:27,380 
+employs an 0 and if we expand at this
+argument we have
+
+209
+00:13:27,380 --> 00:13:31,700 
+Omega 0 and plus Omega 0n0
+
+210
+00:13:31,700 --> 00:13:35,070 
+and so I've done that on the right hand
+side of the equation
+
+211
+00:13:35,070 --> 00:13:38,200 
+year and the
+
+212
+00:13:38,200 --> 00:13:41,830 
+Omega 0n0 then simply corresponds to
+
+213
+00:13:41,830 --> 00:13:45,440 
+a change in phase so clearly
+
+214
+00:13:45,440 --> 00:13:48,690 
+a shift in time generates
+
+215
+00:13:48,690 --> 00:13:52,140 
+a change in phase and
+
+216
+00:13:52,140 --> 00:13:56,080 
+for example if we take a particular
+
+217
+00:13:56,080 --> 00:14:00,460 
+sinusoidal signal let's say we take the
+cosine signal
+
+218
+00:14:00,460 --> 00:14:04,930 
+at a particular frequency and with a
+phase equal to 0
+
+219
+00:14:04,930 --> 00:14:08,350 
+a sequence that we might generate is
+
+220
+00:14:08,350 --> 00:14:13,050 
+one that I've illustrated here so
+
+221
+00:14:13,050 --> 00:14:16,500 
+when I'm illustrating here is the cosine
+
+222
+00:14:16,500 --> 00:14:19,830 
+signal with 0 theta is
+
+223
+00:14:19,830 --> 00:14:22,860 
+and it has a particular
+
+224
+00:14:22,860 --> 00:14:26,620 
+behavior to it which will depend someone
+on the frequency
+
+225
+00:14:26,620 --> 00:14:31,300 
+if I now take this same sequence
+
+226
+00:14:31,300 --> 00:14:35,610 
+and shifted so that the time origin
+
+227
+00:14:35,610 --> 00:14:39,230 
+shifted a quarter of a period away then
+
+228
+00:14:39,230 --> 00:14:42,320 
+you can convince yourself and it's
+straightforward
+
+229
+00:14:42,320 --> 00:14:46,820 
+to work out that that timeshare
+corresponds to a phase shift
+
+230
+00:14:46,820 --> 00:14:49,880 
+of pie over to so
+
+231
+00:14:49,880 --> 00:14:53,170 
+in that case with the cosine
+
+232
+00:14:53,170 --> 00:14:57,540 
+with a phase minus pie over to
+
+233
+00:14:57,540 --> 00:15:01,540 
+that will correspond to the expression
+
+234
+00:15:01,540 --> 00:15:05,380 
+that I have here
+
+235
+00:15:05,380 --> 00:15:10,230 
+we can alternately right that using a
+get a trigonometric identity as sin
+
+236
+00:15:10,230 --> 00:15:13,750 
+as a sign function and that I've stated
+
+237
+00:15:13,750 --> 00:15:17,760 
+is equivalent to a timeshare
+
+238
+00:15:17,760 --> 00:15:21,440 
+namely this shift the pirate to is equal
+to an
+
+239
+00:15:21,440 --> 00:15:26,360 
+a certain time share and the timeshare
+for this particular example
+
+240
+00:15:26,360 --> 00:15:29,530 
+is in fact the quarter the period
+
+241
+00:15:29,530 --> 00:15:32,900 
+so here we have
+
+242
+00:15:32,900 --> 00:15:37,720 
+the sinusoid previously we had the
+cosine
+
+243
+00:15:37,720 --> 00:15:42,530 
+the cosine was exactly the same sequence
+but with the Argent located here
+
+244
+00:15:42,530 --> 00:15:45,970 
+and in fact that's exactly the way we
+drew this graph namely
+
+245
+00:15:45,970 --> 00:15:51,320 
+we just simply took the same values and
+change the time origin
+
+246
+00:15:51,320 --> 00:15:54,800 
+now looking at this sequence which is
+the
+
+247
+00:15:54,800 --> 00:15:58,000 
+sinusoidal sequence the phase
+
+248
+00:15:58,000 --> 00:16:03,280 
+-5 over to that has a certain symmetry
+and in fact what we see is that
+
+249
+00:16:03,280 --> 00:16:07,780 
+it has an oximetry just as in the
+continuous-time case
+
+250
+00:16:07,780 --> 00:16:12,290 
+namely if we take that sequence flip it
+about the axis
+
+251
+00:16:12,290 --> 00:16:17,380 
+and flip it over and sign then we get
+the same sequence back
+
+252
+00:16:17,380 --> 00:16:21,270 
+whereas with zero phase corresponding
+
+253
+00:16:21,270 --> 00:16:26,280 
+to the cosine that I show previously
+that hasn't even symmetry
+
+254
+00:16:26,280 --> 00:16:30,240 
+namely if I flipped about the time
+margin
+
+255
+00:16:30,240 --> 00:16:34,660 
+and don't do it sign reversal then the
+sequences maintain
+
+256
+00:16:34,660 --> 00:16:37,970 
+so here we have
+
+257
+00:16:37,970 --> 00:16:41,790 
+and on symmetry expressed mathematically
+
+258
+00:16:41,790 --> 00:16:44,800 
+as i've indicated namely
+
+259
+00:16:44,800 --> 00:16:48,770 
+replacing the independent variable by
+its negative
+
+260
+00:16:48,770 --> 00:16:52,350 
+attach is a negative sign to the whole
+sequence
+
+261
+00:16:52,350 --> 00:16:55,400 
+whereas in a previous case
+
+262
+00:16:55,400 --> 00:16:58,890 
+what we have is 0 phase
+
+263
+00:16:58,890 --> 00:17:02,220 
+and and even symmetry
+
+264
+00:17:02,220 --> 00:17:06,230 
+and that's expressed Mac mathematically
+as exit and
+
+265
+00:17:06,230 --> 00:17:11,510 
+equals X -8
+
+266
+00:17:11,510 --> 00:17:17,020 
+okay now one of the things I said so far
+about discrete-time sinusoids is dead
+
+267
+00:17:17,020 --> 00:17:21,210 
+a timeshare corresponds to a phase
+change
+
+268
+00:17:21,210 --> 00:17:25,480 
+and weekend then ask whether
+
+269
+00:17:25,480 --> 00:17:29,510 
+the river statement is also true and we
+knew that the river statement was true
+
+270
+00:17:29,510 --> 00:17:31,100 
+in continuous-time
+
+271
+00:17:31,100 --> 00:17:34,190 
+specifically is a true
+
+272
+00:17:34,190 --> 00:17:37,490 
+that a phase change
+
+273
+00:17:37,490 --> 00:17:40,510 
+always corresponds with time shift
+
+274
+00:17:40,510 --> 00:17:44,710 
+now we know that that is true namely
+that this statement works both ways
+
+275
+00:17:44,710 --> 00:17:48,560 
+in continuous-time does it in
+discrete-time
+
+276
+00:17:48,560 --> 00:17:52,060 
+well the answer somewhat
+
+277
+00:17:52,060 --> 00:17:55,710 
+interestingly are surprisingly into you
+sit down and think about it
+
+278
+00:17:55,710 --> 00:17:59,450 
+is no dead it is not
+
+279
+00:17:59,450 --> 00:18:03,310 
+necessarily true and discrete-time that
+any phase change
+
+280
+00:18:03,310 --> 00:18:08,080 
+can be interpreted as a simple
+time-shifted the sequence
+
+281
+00:18:08,080 --> 00:18:11,200 
+and let me just indicate what the
+problem is
+
+282
+00:18:11,200 --> 00:18:14,320 
+if we look
+
+283
+00:18:14,320 --> 00:18:19,510 
+at the relationship between the left
+side on the right side of this equation
+
+284
+00:18:19,510 --> 00:18:24,210 
+expanding this out as we did previously
+we have that Omega 0n
+
+285
+00:18:24,210 --> 00:18:30,060 
+plus Omega 0n0 must correspond to Omega
+0n plus
+
+286
+00:18:30,060 --> 00:18:33,680 
+p and so on make 0n0
+
+287
+00:18:33,680 --> 00:18:38,120 
+must correspond to the phase-change now
+
+288
+00:18:38,120 --> 00:18:42,610 
+which you can see pretty clearly is
+there'd depending
+
+289
+00:18:42,610 --> 00:18:46,490 
+on the relationship between see an Omega
+0
+
+290
+00:18:46,490 --> 00:18:50,240 
+n0 may or may not come out to be an
+integer
+
+291
+00:18:50,240 --> 00:18:53,960 
+now in continuous-time
+
+292
+00:18:53,960 --> 00:18:58,160 
+the amount of time shift did not have to
+be an integer a map
+
+293
+00:18:58,160 --> 00:19:02,210 
+indiscreet time when we talk about a
+timeshare the amount of time shift
+
+294
+00:19:02,210 --> 00:19:05,080 
+obviously because the nature
+discrete-time signals
+
+295
+00:19:05,080 --> 00:19:10,600 
+must be an integer so the face changes
+related to time shifts
+
+296
+00:19:10,600 --> 00:19:14,250 
+must satisfy this particular
+relationship
+
+297
+00:19:14,250 --> 00:19:17,850 
+namely that Omega 0n0
+
+298
+00:19:17,850 --> 00:19:24,850 
+were n0 is an integer is equal to the
+changing face
+
+299
+00:19:24,929 --> 00:19:30,299 
+okay now that's one distinction between
+continuous-time and discrete-time
+
+300
+00:19:30,299 --> 00:19:33,639 
+let's now focus on another one namely
+the
+
+301
+00:19:33,639 --> 00:19:37,149 
+issue of periodicity and what we'll see
+
+302
+00:19:37,149 --> 00:19:40,669 
+is that again whereas in continuous-time
+
+303
+00:19:40,669 --> 00:19:44,320 
+all continuous-time sinusoids our
+periodic
+
+304
+00:19:44,320 --> 00:19:48,269 
+in the discrete-time case that is not
+necessarily true
+
+305
+00:19:48,269 --> 00:19:51,929 
+to
+
+306
+00:19:51,929 --> 00:19:55,840 
+explore that little more carefully let's
+
+307
+00:19:55,840 --> 00:20:00,629 
+looked at the expression again for a
+general sinusoidal signal with
+
+308
+00:20:00,629 --> 00:20:04,919 
+an arbitrary effort to frequency and
+phase
+
+309
+00:20:04,919 --> 00:20:08,049 
+and for this to be periodic
+
+310
+00:20:08,049 --> 00:20:12,639 
+what we require is that there be some
+value capital and
+
+311
+00:20:12,639 --> 00:20:16,759 
+under which one we shift the sequence by
+that amount
+
+312
+00:20:16,759 --> 00:20:21,179 
+we get the same sequence back again and
+the smallest value capital and
+
+313
+00:20:21,179 --> 00:20:24,669 
+is what we've defined as the period now
+
+314
+00:20:24,669 --> 00:20:28,860 
+when we try that on a sinusoid we've
+core substitute in
+
+315
+00:20:28,860 --> 00:20:31,990 
+for and little and little and plus
+capital and
+
+316
+00:20:31,990 --> 00:20:36,360 
+and when we expand out the argument
+
+317
+00:20:36,360 --> 00:20:39,509 
+here we'll get
+
+318
+00:20:39,509 --> 00:20:43,100 
+the argument that I have on the right
+hand side
+
+319
+00:20:43,100 --> 00:20:46,559 
+and in order for
+
+320
+00:20:46,559 --> 00:20:50,570 
+this to repeat in other words in order
+for a press in effect
+
+321
+00:20:50,570 --> 00:20:56,340 
+to discard this term Omega 0 times
+capital and where capital is the period
+
+322
+00:20:56,340 --> 00:21:00,769 
+must be an integer multiple a two-part
+and
+
+323
+00:21:00,769 --> 00:21:04,909 
+in that case its periodic as long as
+
+324
+00:21:04,909 --> 00:21:08,639 
+Omega 0 times capital and capital in
+being the period
+
+325
+00:21:08,639 --> 00:21:13,340 
+is to provide times an integer just
+simply dividing this out
+
+326
+00:21:13,340 --> 00:21:16,830 
+we have capital in the period is to pie
+am
+
+327
+00:21:16,830 --> 00:21:21,350 
+divided by Omega 0 well
+
+328
+00:21:21,350 --> 00:21:25,620 
+you can say okay what's the big deal a
+whatever capital and happens to come out
+
+329
+00:21:25,620 --> 00:21:28,610 
+to be when we do that a little bit about
+your bro that's the period
+
+330
+00:21:28,610 --> 00:21:34,440 
+but in fact capital and or 2 p.m.
+divided by Omega 0
+
+331
+00:21:34,440 --> 00:21:38,940 
+may not ever come out to be an integer
+or may not come out to be the one that
+
+332
+00:21:38,940 --> 00:21:39,820 
+you thought it might
+
+333
+00:21:39,820 --> 00:21:42,919 
+for example let's look at
+
+334
+00:21:42,919 --> 00:21:49,030 
+some particular sinusoidal signals
+
+335
+00:21:49,030 --> 00:21:52,070 
+but say we have the first one here
+
+336
+00:21:52,070 --> 00:21:55,210 
+which is a sinusoid as I've shown
+
+337
+00:21:55,210 --> 00:21:59,870 
+and it has a frequency what i've
+referred to as the frequency
+
+338
+00:21:59,870 --> 00:22:03,550 
+Omega 0 equal to two pi divided by 12
+
+339
+00:22:03,550 --> 00:22:07,170 
+and what we'd like to look at
+
+340
+00:22:07,170 --> 00:22:10,260 
+is to pry divided by Omega 0
+
+341
+00:22:10,260 --> 00:22:13,730 
+in effect then find an integer to
+multiply that by
+
+342
+00:22:13,730 --> 00:22:17,160 
+in order to get another manager let's
+just try that here
+
+343
+00:22:17,160 --> 00:22:21,170 
+if we look at to prioritize make a zero
+
+344
+00:22:21,170 --> 00:22:26,010 
+to pry over Omega 0 for this case is
+equal to 12
+
+345
+00:22:26,010 --> 00:22:29,780 
+well that's fine 12 is an integer
+
+346
+00:22:29,780 --> 00:22:33,070 
+so what that says in fact is that this
+sinusoidal
+
+347
+00:22:33,070 --> 00:22:37,990 
+signal is periodic and in fact this
+period periodic with period of 12
+
+348
+00:22:37,990 --> 00:22:41,310 
+all right let's look at the next one
+
+349
+00:22:41,310 --> 00:22:45,110 
+the next one we would have to pile for
+Omega 0
+
+350
+00:22:45,110 --> 00:22:49,130 
+again and that's equal to 31 fourths
+
+351
+00:22:49,130 --> 00:22:52,800 
+so with that says
+
+352
+00:22:52,800 --> 00:22:57,750 
+is that the period is 31 forts wait a
+minute
+
+353
+00:22:57,750 --> 00:23:02,730 
+30 1/4 isn't an integer we have to
+multiply that by an injured
+
+354
+00:23:02,730 --> 00:23:06,770 
+to get another integer well we multiply
+that by four
+
+355
+00:23:06,770 --> 00:23:11,580 
+so to pile from a guys there are ties
+for is 3131 is an integer
+
+356
+00:23:11,580 --> 00:23:16,750 
+and so what that says is this is
+periodic not with the period up to par
+
+357
+00:23:16,750 --> 00:23:18,190 
+over make a zero
+
+358
+00:23:18,190 --> 00:23:21,260 
+by with a period love to pie
+
+359
+00:23:21,260 --> 00:23:25,220 
+over Omega 0 times for namely with the
+period
+
+360
+00:23:25,220 --> 00:23:30,550 
+I'll 31 finally
+
+361
+00:23:30,550 --> 00:23:35,260 
+let's take an exam the example where
+Omega 0z call to a6
+
+362
+00:23:35,260 --> 00:23:41,290 
+as shown here that actually looks if you
+track it with a ride like its periodic
+
+363
+00:23:41,290 --> 00:23:44,600 
+to pile over Omega 0 in that case
+
+364
+00:23:44,600 --> 00:23:48,220 
+is equal to 12 pie well
+
+365
+00:23:48,220 --> 00:23:51,820 
+what integer can I multiplied 12 pie
+
+366
+00:23:51,820 --> 00:23:55,390 
+by and get another integer the answer is
+none
+
+367
+00:23:55,390 --> 00:23:59,570 
+because pi is an irrational number so in
+fact
+
+368
+00:23:59,570 --> 00:24:03,000 
+what that says is that if you look at
+
+369
+00:24:03,000 --> 00:24:07,850 
+this sinusoidal signal it's not periodic
+at all
+
+370
+00:24:07,850 --> 00:24:12,200 
+even though you might for yourself into
+thinking it is
+
+371
+00:24:12,200 --> 00:24:16,740 
+simply because the envelope looks
+periodic namely the
+
+372
+00:24:16,740 --> 00:24:20,310 
+continuous-time acquittal with this is
+periodic
+
+373
+00:24:20,310 --> 00:24:26,759 
+the discrete-time sequence is not
+
+374
+00:24:26,759 --> 00:24:29,659 
+okay well we've seen then some
+
+375
+00:24:29,659 --> 00:24:34,009 
+important distinctions between
+continuous-time sinusoidal signals
+
+376
+00:24:34,009 --> 00:24:37,549 
+and discrete-time sinusoidal signals the
+first one
+
+377
+00:24:37,549 --> 00:24:41,049 
+is the fact that in the continuous-time
+case
+
+378
+00:24:41,049 --> 00:24:45,409 
+a time-shifted phase change are always
+equivalent
+
+379
+00:24:45,409 --> 00:24:49,789 
+where's the discrete-time case in effect
+that works one way
+
+380
+00:24:49,789 --> 00:24:53,239 
+but not the other way we've also
+
+381
+00:24:53,239 --> 00:24:57,539 
+seen that for a continuous-time signal
+
+382
+00:24:57,539 --> 00:25:00,539 
+the continuous-time signal is always
+periodic
+
+383
+00:25:00,539 --> 00:25:04,460 
+whereas the discrete-time signal is not
+necessarily
+
+384
+00:25:04,460 --> 00:25:07,820 
+in particular for the continuous-time
+case
+
+385
+00:25:07,820 --> 00:25:11,940 
+if we have a general expression for the
+sinusoidal signal
+
+386
+00:25:11,940 --> 00:25:15,399 
+that i've indicated here that's periodic
+
+387
+00:25:15,399 --> 00:25:19,359 
+for any choice Omega 0 whereas
+
+388
+00:25:19,359 --> 00:25:22,940 
+in a discrete-time case its periodic
+
+389
+00:25:22,940 --> 00:25:26,529 
+only air Omega 0 is to Poway
+
+390
+00:25:26,529 --> 00:25:30,109 
+well the only if
+
+391
+00:25:30,109 --> 00:25:34,700 
+to pie over Omega 0 can be multiplied by
+integer
+
+392
+00:25:34,700 --> 00:25:38,440 
+to get another injured now another
+
+393
+00:25:38,440 --> 00:25:42,440 
+important and as it turns out useful
+distinction
+
+394
+00:25:42,440 --> 00:25:46,309 
+between the continuous-time and
+discrete-time case
+
+395
+00:25:46,309 --> 00:25:49,399 
+is the fact that in the discrete-time
+
+396
+00:25:49,399 --> 00:25:54,929 
+case as we very what I've called the
+frequency Omega 0
+
+397
+00:25:54,929 --> 00:25:58,419 
+we only see
+
+398
+00:25:58,419 --> 00:26:02,349 
+distinct signals as omega 0
+
+399
+00:26:02,349 --> 00:26:06,489 
+varies over a two-party interval and if
+we let Omega 0
+
+400
+00:26:06,489 --> 00:26:12,580 
+very outside the Rangers let's say mine
+despite a pirate 0 to 2pi
+
+401
+00:26:12,580 --> 00:26:16,210 
+will see the same sequences all over
+again
+
+402
+00:26:16,210 --> 00:26:19,739 
+even though at first glance the
+mathematical expression might look
+
+403
+00:26:19,739 --> 00:26:20,179 
+different
+
+404
+00:26:20,179 --> 00:26:23,599 
+so in the discrete-time case
+
+405
+00:26:23,599 --> 00:26:26,820 
+this classes signals
+
+406
+00:26:26,820 --> 00:26:30,239 
+is identical for values Omega 0
+
+407
+00:26:30,239 --> 00:26:34,259 
+separated by two pi whereas
+
+408
+00:26:34,259 --> 00:26:37,349 
+in a continuous-time case that is not
+true
+
+409
+00:26:37,349 --> 00:26:42,639 
+in particular if I consider the
+sinusoidal continuous-time signals
+
+410
+00:26:42,639 --> 00:26:46,389 
+as I very Omega 0
+
+411
+00:26:46,389 --> 00:26:50,549 
+what will happen is that I will always
+see
+
+412
+00:26:50,549 --> 00:26:54,330 
+different sinusoidal signals namely
+these won't be
+
+413
+00:26:54,330 --> 00:26:58,320 
+and in in effect we can justify
+
+414
+00:26:58,320 --> 00:27:01,570 
+that statement algebraically and
+
+415
+00:27:01,570 --> 00:27:04,929 
+I will take the time to do it carefully
+but
+
+416
+00:27:04,929 --> 00:27:08,739 
+let's look first the mall at the
+discrete-time
+
+417
+00:27:08,739 --> 00:27:11,889 
+case and a statement that I'm making is
+that
+
+418
+00:27:11,889 --> 00:27:17,299 
+if I have to discrete-time sinusoidal
+signals
+
+419
+00:27:17,299 --> 00:27:22,190 
+at two different frequencies and if
+these frequencies
+
+420
+00:27:22,190 --> 00:27:27,239 
+are separated by an integer multiple to
+Pine namely
+
+421
+00:27:27,239 --> 00:27:31,399 
+if Omega to is equal to Omega one-plus
+
+422
+00:27:31,399 --> 00:27:36,139 
+to pie times in integer when
+
+423
+00:27:36,139 --> 00:27:39,229 
+I substitute this into this expression
+
+424
+00:27:39,229 --> 00:27:42,999 
+because it the fact that n is also an
+integer
+
+425
+00:27:42,999 --> 00:27:48,009 
+all have am times and as an integer
+multiple a two-part
+
+426
+00:27:48,009 --> 00:27:51,479 
+and that term of course will disappear
+because the periodicity
+
+427
+00:27:51,479 --> 00:27:54,769 
+the sinusoid and these two sequences
+will be equal
+
+428
+00:27:54,769 --> 00:27:59,210 
+on the other hand in the continuous-time
+case
+
+429
+00:27:59,210 --> 00:28:02,710 
+since this is not restricted to be an
+integer variable
+
+430
+00:28:02,710 --> 00:28:05,859 
+since T is not restricted to be an
+integer variable
+
+431
+00:28:05,859 --> 00:28:09,960 
+for different values I'll Omega wanna
+make it to
+
+432
+00:28:09,960 --> 00:28:16,960 
+the sinusoidal signals will always be
+different
+
+433
+00:28:17,280 --> 00:28:20,840 
+okay now many of the issues that I
+praise
+
+434
+00:28:20,840 --> 00:28:24,390 
+so far in relation to sinusoidal signals
+are elaborated on
+
+435
+00:28:24,390 --> 00:28:27,930 
+in more detail in the text and of course
+you'll have an opportunity
+
+436
+00:28:27,930 --> 00:28:31,460 
+to exercise so this
+
+437
+00:28:31,460 --> 00:28:34,840 
+as you worked through the video course
+manual
+
+438
+00:28:34,840 --> 00:28:37,840 
+let me stress that
+
+439
+00:28:37,840 --> 00:28:41,680 
+sinusoidal signals will play an
+extremely important role
+
+440
+00:28:41,680 --> 00:28:45,010 
+for us as building blocks for general
+signals
+
+441
+00:28:45,010 --> 00:28:48,870 
+and descriptions systems and leaves the
+whole concept
+
+442
+00:28:48,870 --> 00:28:52,990 
+all four EA an ala Cys which is very
+heavily exploited
+
+443
+00:28:52,990 --> 00:28:56,780 
+throughout the course
+
+444
+00:28:56,780 --> 00:29:00,070 
+what i'd now like to turn to in is
+
+445
+00:29:00,070 --> 00:29:03,830 
+another class love important building
+blocks
+
+446
+00:29:03,830 --> 00:29:08,210 
+and in fact will see that under certain
+conditions these relate strongly to
+
+447
+00:29:08,210 --> 00:29:09,630 
+sinusoidal signals
+
+448
+00:29:09,630 --> 00:29:13,710 
+namely the Class A real in complex
+exponentials
+
+449
+00:29:13,710 --> 00:29:16,720 
+let me begin first the ball with
+
+450
+00:29:16,720 --> 00:29:19,809 
+the real exponential and
+
+451
+00:29:19,809 --> 00:29:25,700 
+in particular in the continuous-time
+case a real continuous-time exponential
+
+452
+00:29:25,700 --> 00:29:28,900 
+is mathematically expressed as I
+
+453
+00:29:28,900 --> 00:29:32,200 
+indicate year X if T all to see
+
+454
+00:29:32,200 --> 00:29:35,990 
+you to the eighty where for
+
+455
+00:29:35,990 --> 00:29:39,400 
+the real exponential C&A
+
+456
+00:29:39,400 --> 00:29:42,780 
+are real numbers and that's what we mean
+by the real exponential
+
+457
+00:29:42,780 --> 00:29:47,850 
+up shortly will also consider complex
+exponentials where these numbers can
+
+458
+00:29:47,850 --> 00:29:48,410 
+then
+
+459
+00:29:48,410 --> 00:29:52,549 
+become complex so this is an exponential
+
+460
+00:29:52,549 --> 00:29:55,600 
+function and for example
+
+461
+00:29:55,600 --> 00:29:58,679 
+if the parameter a is positive
+
+462
+00:29:58,679 --> 00:30:02,799 
+that means that we have growing
+exponential function
+
+463
+00:30:02,799 --> 00:30:06,880 
+if the parameter a is negative than
+
+464
+00:30:06,880 --> 00:30:10,780 
+that means dead we have a decaying
+
+465
+00:30:10,780 --> 00:30:14,230 
+exponential function now
+
+466
+00:30:14,230 --> 00:30:18,230 
+some weight as an aside its kinda
+interesting to note
+
+467
+00:30:18,230 --> 00:30:21,630 
+that for exponentials a timeshare
+
+468
+00:30:21,630 --> 00:30:25,429 
+corresponds to a scale change which
+
+469
+00:30:25,429 --> 00:30:28,600 
+is somewhat different than what happens
+with sinusoids
+
+470
+00:30:28,600 --> 00:30:32,260 
+in the sinusoidal case we saw that a
+timeshare
+
+471
+00:30:32,260 --> 00:30:36,840 
+corresponded to a phase change the real
+exponential a timeshare
+
+472
+00:30:36,840 --> 00:30:40,270 
+as it turns out corresponds to simply
+changing the scale
+
+473
+00:30:40,270 --> 00:30:44,150 
+there's nothing particularly a
+
+474
+00:30:44,150 --> 00:30:48,330 
+crucial or exciting about that and in
+fact
+
+475
+00:30:48,330 --> 00:30:52,240 
+perhaps stressing it is a little
+misleading for general functions of
+
+476
+00:30:52,240 --> 00:30:52,830 
+course
+
+477
+00:30:52,830 --> 00:30:56,600 
+about all that you can say about what
+happens when you
+
+478
+00:30:56,600 --> 00:31:00,850 
+implement a timeshare is that implements
+a time ship
+
+479
+00:31:00,850 --> 00:31:05,299 
+okay so here's the real exponential
+
+480
+00:31:05,299 --> 00:31:09,130 
+just CE to the eighty let's
+
+481
+00:31:09,130 --> 00:31:12,890 
+look at the real exponential now in the
+discrete-time
+
+482
+00:31:12,890 --> 00:31:16,540 
+case and in the discrete-time case
+
+483
+00:31:16,540 --> 00:31:21,210 
+we have several alternate ways
+
+484
+00:31:21,210 --> 00:31:24,720 
+love expressing it we can
+
+485
+00:31:24,720 --> 00:31:27,720 
+express the real exponential in the four
+
+486
+00:31:27,720 --> 00:31:31,740 
+see be to the beta N or
+
+487
+00:31:31,740 --> 00:31:36,909 
+as will find more convenient in part for
+reason at all indicate shortly
+
+488
+00:31:36,909 --> 00:31:41,330 
+we can rewrite this as see time's alpha
+to the end where course
+
+489
+00:31:41,330 --> 00:31:44,350 
+alpha is equal to me to the beta
+
+490
+00:31:44,350 --> 00:31:48,440 
+more typically in a discrete-time case
+will express
+
+491
+00:31:48,440 --> 00:31:51,510 
+the exponential as see times
+
+492
+00:31:51,510 --> 00:31:56,020 
+alpha to the end so for example this
+becomes
+
+493
+00:31:56,020 --> 00:31:59,190 
+essentially a geometric series a
+progression
+
+494
+00:31:59,190 --> 00:32:03,049 
+as an continues for certain values about
+
+495
+00:32:03,049 --> 00:32:06,309 
+for here for example we have
+
+496
+00:32:06,309 --> 00:32:10,370 
+for alpha greater than 0
+
+497
+00:32:10,370 --> 00:32:14,520 
+first the ball on the top the case where
+the magnitude about the
+
+498
+00:32:14,520 --> 00:32:17,720 
+is greater than one so that
+
+499
+00:32:17,720 --> 00:32:21,370 
+this the sequence is exponentially
+
+500
+00:32:21,370 --> 00:32:26,049 
+geometrically growing on the bottom
+again without the positive
+
+501
+00:32:26,049 --> 00:32:29,669 
+but now with its magnitude less than 1
+
+502
+00:32:29,669 --> 00:32:33,130 
+we have a geometric progression
+
+503
+00:32:33,130 --> 00:32:36,140 
+that is exponentially or geometrically
+
+504
+00:32:36,140 --> 00:32:39,309 
+became okay so this
+
+505
+00:32:39,309 --> 00:32:43,679 
+in both these cases is with alpha
+greater than 0
+
+506
+00:32:43,679 --> 00:32:48,240 
+now the functional were talking about is
+alpha to the N
+
+507
+00:32:48,240 --> 00:32:53,000 
+and of course which you can see is that
+if al Phys negative is that a positive
+
+508
+00:32:53,000 --> 00:32:56,790 
+then when in is even
+
+509
+00:32:56,790 --> 00:33:00,860 
+that minus sign is gonna disappear when
+is Eid
+
+510
+00:33:00,860 --> 00:33:04,570 
+there will be a minus sign it so for
+alpha negative
+
+511
+00:33:04,570 --> 00:33:08,210 
+the sequences good alternate positive
+and negative ads
+
+512
+00:33:08,210 --> 00:33:11,950 
+so for example here we have
+
+513
+00:33:11,950 --> 00:33:14,970 
+alpha negative
+
+514
+00:33:14,970 --> 00:33:18,550 
+and with this magnitude less than one
+and you can see that
+
+515
+00:33:18,550 --> 00:33:22,190 
+again its envelope the case
+geometrically
+
+516
+00:33:22,190 --> 00:33:25,330 
+and the values alternate in sin
+
+517
+00:33:25,330 --> 00:33:29,110 
+and here we have the magnitude about the
+greater than one
+
+518
+00:33:29,110 --> 00:33:32,480 
+without the negative again they
+alternate in signing of course
+
+519
+00:33:32,480 --> 00:33:35,730 
+its growing geometrically
+
+520
+00:33:35,730 --> 00:33:40,059 
+now if you think about alpha positive
+
+521
+00:33:40,059 --> 00:33:45,149 
+and go back to the expression that I
+have at the top
+
+522
+00:33:45,149 --> 00:33:48,630 
+namely see times alpha to the end
+
+523
+00:33:48,630 --> 00:33:52,390 
+with alpha positive
+
+524
+00:33:52,390 --> 00:33:56,090 
+you can see a straightforward
+relationship between
+
+525
+00:33:56,090 --> 00:33:59,809 
+alpha and beta family beta is
+
+526
+00:33:59,809 --> 00:34:04,520 
+the logarithm natural logarithm a valve
+
+527
+00:34:04,520 --> 00:34:07,740 
+something to think about is what happens
+
+528
+00:34:07,740 --> 00:34:10,869 
+if alpha is negative which is of course
+a very
+
+529
+00:34:10,869 --> 00:34:16,310 
+important and useful class love real
+discreet I'm exponentials also
+
+530
+00:34:16,310 --> 00:34:21,070 
+well it turns out that without the
+negative if you try to express it as see
+
+531
+00:34:21,070 --> 00:34:26,770 
+me to the beta and then fag beta comes
+out to be an imaginary number
+
+532
+00:34:26,770 --> 00:34:29,879 
+and bad is one but not the only reason
+
+533
+00:34:29,879 --> 00:34:34,530 
+why in the discrete-time case its of the
+most convenient
+
+534
+00:34:34,530 --> 00:34:37,919 
+to phrase real exponentials
+
+535
+00:34:37,919 --> 00:34:41,040 
+in the for alpha to the end rather than
+
+536
+00:34:41,040 --> 00:34:44,869 
+you to the beta and in other words to
+express them
+
+537
+00:34:44,869 --> 00:34:51,869 
+in this form rather than in this for
+
+538
+00:34:52,440 --> 00:34:56,769 
+okay now let's those are real
+exponentials continuous-time and
+
+539
+00:34:56,769 --> 00:34:57,759 
+discrete-time
+
+540
+00:34:57,759 --> 00:35:01,019 
+now let's look at the continuous-time
+
+541
+00:35:01,019 --> 00:35:04,059 
+complex exponential and
+
+542
+00:35:04,059 --> 00:35:08,079 
+what I mean by a complex exponential
+
+543
+00:35:08,079 --> 00:35:11,970 
+again is an exponential the for
+
+544
+00:35:11,970 --> 00:35:17,099 
+see you to the eighty him but in this
+case
+
+545
+00:35:17,099 --> 00:35:21,059 
+we allow the parameters C&A to be
+
+546
+00:35:21,059 --> 00:35:25,549 
+complex numbers and let's just track
+this throughout your break Lee
+
+547
+00:35:25,549 --> 00:35:30,539 
+CNA a complex numbers let's write see in
+polar form so it has
+
+548
+00:35:30,539 --> 00:35:36,940 
+a magnet to an angle let's write a and
+rectangular form so it has a real part
+
+549
+00:35:36,940 --> 00:35:41,029 
+in an imaginary part and when we
+substitute these two
+
+550
+00:35:41,029 --> 00:35:44,190 
+in here combined some things together
+
+551
+00:35:44,190 --> 00:35:47,799 
+I'll actually having combined yet I have
+this
+
+552
+00:35:47,799 --> 00:35:51,229 
+for the amplitude for the effort to
+factor
+
+553
+00:35:51,229 --> 00:35:55,720 
+and this for the exponential factor I
+can now put a lot of this
+
+554
+00:35:55,720 --> 00:35:59,410 
+the term corresponding to eat to the RT
+
+555
+00:35:59,410 --> 00:36:04,380 
+and combine the imaginary parts together
+and I come down to the expression that I
+
+556
+00:36:04,380 --> 00:36:05,089 
+have here
+
+557
+00:36:05,089 --> 00:36:09,299 
+so following this for their
+
+558
+00:36:09,299 --> 00:36:13,680 
+a an exponential this form you to the J
+
+559
+00:36:13,680 --> 00:36:16,789 
+Omega were either the JC
+
+560
+00:36:16,789 --> 00:36:20,619 
+using Oilers relation can be expressed
+
+561
+00:36:20,619 --> 00:36:23,630 
+as the some Ave cosine
+
+562
+00:36:23,630 --> 00:36:26,829 
+was GA times assign
+
+563
+00:36:26,829 --> 00:36:31,400 
+and so that corresponds to this factor
+
+564
+00:36:31,400 --> 00:36:36,269 
+and then their is this time varying
+amplitude factor on top of that
+
+565
+00:36:36,269 --> 00:36:40,420 
+finally putting those together we end up
+with the expression
+
+566
+00:36:40,420 --> 00:36:44,529 
+that I show on the bottom and what this
+corresponds to
+
+567
+00:36:44,529 --> 00:36:48,009 
+are to sinusoidal signals
+
+568
+00:36:48,009 --> 00:36:53,700 
+ninety degrees out of phase as indicated
+by the fact is a cosine and sine
+
+569
+00:36:53,700 --> 00:36:56,859 
+so there's a real part in an imaginary
+part
+
+570
+00:36:56,859 --> 00:37:01,009 
+with sinus or does comp on its ninety
+degrees out of phase
+
+571
+00:37:01,009 --> 00:37:05,400 
+and a time varying amplitude factor
+
+572
+00:37:05,400 --> 00:37:08,690 
+which is a real exponential so it's a
+sinusoid
+
+573
+00:37:08,690 --> 00:37:13,769 
+multiplied by real exponential in both
+the real part in the imaginary part
+
+574
+00:37:13,769 --> 00:37:18,319 
+and let's just see what one of those
+terms might look like
+
+575
+00:37:18,319 --> 00:37:22,039 
+but i've indicated at the top
+
+576
+00:37:22,039 --> 00:37:26,329 
+is a sinusoidal signal
+
+577
+00:37:26,329 --> 00:37:30,819 
+with and exponential time very
+exponential
+
+578
+00:37:30,819 --> 00:37:33,910 
+on below or an envelope which is a real
+
+579
+00:37:33,910 --> 00:37:39,920 
+exponential and in particular which is
+growing namely with are greater than 0
+
+580
+00:37:39,920 --> 00:37:43,319 
+and on the bottom i've indicated
+
+581
+00:37:43,319 --> 00:37:46,969 
+the same thing with are less than zero
+and
+
+582
+00:37:46,969 --> 00:37:51,039 
+this kinda sinusoidal signal by the way
+
+583
+00:37:51,039 --> 00:37:54,719 
+is typically referred to as a damped
+sinusoids in
+
+584
+00:37:54,719 --> 00:37:58,869 
+so what are negative what we have in the
+real and imaginary parts
+
+585
+00:37:58,869 --> 00:38:02,079 
+are damped sinusoids and
+
+586
+00:38:02,079 --> 00:38:07,969 
+the sinusoidal compliments at that are
+ninety degrees out of phase
+
+587
+00:38:07,969 --> 00:38:13,249 
+in the real part and in the imaginary
+part okay now
+
+588
+00:38:13,249 --> 00:38:17,049 
+in the discrete-time case we have more
+or less
+
+589
+00:38:17,049 --> 00:38:20,529 
+the same kinda outcome in particular
+
+590
+00:38:20,529 --> 00:38:24,849 
+what will make reference to
+
+591
+00:38:24,849 --> 00:38:27,940 
+are complex exponentials in a
+discrete-time
+
+592
+00:38:27,940 --> 00:38:31,619 
+case the expression for the complex
+exponential
+
+593
+00:38:31,619 --> 00:38:35,999 
+looks very much like the expression for
+the real exponential
+
+594
+00:38:35,999 --> 00:38:39,210 
+except that now we have complex
+
+595
+00:38:39,210 --> 00:38:42,670 
+factors so see an alpha
+
+596
+00:38:42,670 --> 00:38:46,839 
+are complex numbers and again
+
+597
+00:38:46,839 --> 00:38:50,690 
+if we tracked through the algebra
+
+598
+00:38:50,690 --> 00:38:54,499 
+and get to a point where we have
+
+599
+00:38:54,499 --> 00:38:58,779 
+a real exponential multiplied by a
+factor
+
+600
+00:38:58,779 --> 00:39:02,890 
+which is a purely imaginary exponential
+
+601
+00:39:02,890 --> 00:39:07,289 
+apply Oilers relationship so this
+
+602
+00:39:07,289 --> 00:39:10,529 
+we then finally come down to a
+
+603
+00:39:10,529 --> 00:39:15,690 
+sequence which has a real exponential
+
+604
+00:39:15,690 --> 00:39:18,859 
+ample to multiplying
+
+605
+00:39:18,859 --> 00:39:23,400 
+once I saw it in the real part and in
+the imaginary part
+
+606
+00:39:23,400 --> 00:39:26,599 
+exit exactly the same kind of
+exponential
+
+607
+00:39:26,599 --> 00:39:29,759 
+multiplying a sinusoid thats
+
+608
+00:39:29,759 --> 00:39:33,259 
+ninety degrees out of phase from that
+
+609
+00:39:33,259 --> 00:39:38,390 
+and so if we look at what why these
+factors might look like
+
+610
+00:39:38,390 --> 00:39:41,420 
+its what we would expect given
+
+611
+00:39:41,420 --> 00:39:44,630 
+kind of the analogy with the
+continuous-time case
+
+612
+00:39:44,630 --> 00:39:48,880 
+namely its an exponential or rather a
+sinusoidal
+
+613
+00:39:48,880 --> 00:39:52,799 
+sequence with the a
+
+614
+00:39:52,799 --> 00:39:56,559 
+real exponential on below in the case
+were alpha
+
+615
+00:39:56,559 --> 00:40:00,369 
+is positive then is a growing on below
+
+616
+00:40:00,369 --> 00:40:04,039 
+in the case were out there is negative
+I'm sorry
+
+617
+00:40:04,039 --> 00:40:08,069 
+where the magnitude of alpha mang to
+ralph is greater than one
+
+618
+00:40:08,069 --> 00:40:11,890 
+is a growing exponential are below with
+a magnitude about the
+
+619
+00:40:11,890 --> 00:40:15,559 
+is less than 1 its a decaying
+
+620
+00:40:15,559 --> 00:40:20,469 
+exponential are below and so I
+demonstrated that here
+
+621
+00:40:20,469 --> 00:40:24,160 
+here we have the magnitude about the
+greater than one
+
+622
+00:40:24,160 --> 00:40:27,569 
+and here we have the magnitude about the
+less than 1
+
+623
+00:40:27,569 --> 00:40:31,700 
+in both cases sinusoidal sequences
+underneath the envelope
+
+624
+00:40:31,700 --> 00:40:35,140 
+and then an envelope and is dictated
+
+625
+00:40:35,140 --> 00:40:39,749 
+by what the magnitude about its
+
+626
+00:40:39,749 --> 00:40:42,769 
+okay now in the discrete-time
+
+627
+00:40:42,769 --> 00:40:47,150 
+case then we have results similar to the
+continuous-time case
+
+628
+00:40:47,150 --> 00:40:51,309 
+namely comp own it's a real or imaginary
+part
+
+629
+00:40:51,309 --> 00:40:54,980 
+that have a real exponential factor
+times
+
+630
+00:40:54,980 --> 00:40:58,180 
+a sinusoid of course
+
+631
+00:40:58,180 --> 00:41:01,880 
+if the magnitude of alpha is
+
+632
+00:41:01,880 --> 00:41:06,079 
+less than 1 I'm sorry the main to mouth
+is equal to 1
+
+633
+00:41:06,079 --> 00:41:09,190 
+then this factor disappears
+
+634
+00:41:09,190 --> 00:41:12,469 
+always equal to one in this factor is
+equal to 1
+
+635
+00:41:12,469 --> 00:41:17,710 
+and so we have sinusoids in both the
+real and imaginary parts
+
+636
+00:41:17,710 --> 00:41:21,180 
+now one can ask whether
+
+637
+00:41:21,180 --> 00:41:24,230 
+in general the complex exponential
+
+638
+00:41:24,230 --> 00:41:28,759 
+with the magnitude about the equal to
+one is periodically not periodic
+
+639
+00:41:28,759 --> 00:41:31,930 
+and a clue to that can be inferred
+
+640
+00:41:31,930 --> 00:41:36,789 
+by examining this expression
+
+641
+00:41:36,789 --> 00:41:42,150 
+in particular in the discrete-time case
+with the magnitude about equal to 1
+
+642
+00:41:42,150 --> 00:41:45,299 
+we have pure sinusoids in the real
+
+643
+00:41:45,299 --> 00:41:48,359 
+part in an imaginary part
+
+644
+00:41:48,359 --> 00:41:53,380 
+and in fact in a continuous-time case
+with are equal to 0
+
+645
+00:41:53,380 --> 00:41:59,710 
+we have sinusoids in the real party
+imaginary part
+
+646
+00:41:59,710 --> 00:42:03,690 
+in a continuous-time case we have a pure
+complex exponential
+
+647
+00:42:03,690 --> 00:42:08,500 
+in fact so that so the terms are
+exponentially growing your DK
+
+648
+00:42:08,500 --> 00:42:14,290 
+back those exponentials are always
+periodic because
+
+649
+00:42:14,290 --> 00:42:18,920 
+the course the real and imaginary
+sinusoidal Cup on its superior
+
+650
+00:42:18,920 --> 00:42:24,540 
+in the discrete-time case we know that
+the sinusoids may or may not be periodic
+
+651
+00:42:24,540 --> 00:42:29,380 
+depending on the bad you love Omega 0
+and so in fact
+
+652
+00:42:29,380 --> 00:42:32,810 
+in the discrete-time case the
+exponential
+
+653
+00:42:32,810 --> 00:42:35,870 
+eat to the J Omega 0n
+
+654
+00:42:35,870 --> 00:42:40,340 
+that i've indicated here may or may not
+be periodic
+
+655
+00:42:40,340 --> 00:42:47,250 
+depending on what the value Omega zeros
+
+656
+00:42:47,250 --> 00:42:50,200 
+okay now to summarize
+
+657
+00:42:50,200 --> 00:42:54,380 
+in this lecture I introduced and
+discussed
+
+658
+00:42:54,380 --> 00:42:58,110 
+a number of important basic signals
+
+659
+00:42:58,110 --> 00:43:01,520 
+in particular sinusoids an real
+
+660
+00:43:01,520 --> 00:43:06,270 
+and complex exponentials one of the
+important outcomes
+
+661
+00:43:06,270 --> 00:43:09,600 
+the discussion emphasize further in the
+text is that
+
+662
+00:43:09,600 --> 00:43:12,990 
+there are some very important
+similarities between them
+
+663
+00:43:12,990 --> 00:43:16,550 
+but there are also some very important
+differences
+
+664
+00:43:16,550 --> 00:43:20,680 
+and these differences will surface when
+we exploit
+
+665
+00:43:20,680 --> 00:43:24,740 
+sinusoids and complex exponentials
+
+666
+00:43:24,740 --> 00:43:29,400 
+as basic building blocks for more
+general continuous-time
+
+667
+00:43:29,400 --> 00:43:33,500 
+in discrete-time signals in the next
+lecture
+
+668
+00:43:33,500 --> 00:43:37,460 
+what I'll discuss are some other very
+important building blocks
+
+669
+00:43:37,460 --> 00:43:40,680 
+namely what are referred to as
+
+670
+00:43:40,680 --> 00:43:43,880 
+step signals an impulse signals and
+
+671
+00:43:43,880 --> 00:43:47,290 
+does together with the sinusoidal
+
+672
+00:43:47,290 --> 00:43:50,480 
+signals and exponentials as we've talked
+about today
+
+673
+00:43:50,480 --> 00:43:53,640 
+will really form the cornerstone
+
+674
+00:43:53,640 --> 00:43:58,660 
+for essentially all love the signal and
+system analysis
+
+675
+00:43:58,660 --> 00:44:02,140 
+there will be dealing with for the
+remainder the course thank you
+

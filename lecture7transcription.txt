@@ -1,0 +1,798 @@
+000030~003450~the following content is provided under a Creative Commons license
+003480~003640~your support will help MIT OpenCourseWare continue to offer
+007120~003440~high-quality educational resources for free
+010560~004460~to make a donation or view additional materials from 100 to them IT courses
+015020~003080~visit MIT OpenCourseWare at 0 CW
+018100~002430~that MIT ided you
+020530~007000~home
+030800~004770~the
+035570~003040~in
+038610~001540~in
+040150~004860~the new
+045010~006270~are
+051280~004320~for
+055600~003760~over the last several lectures we've dealt with the representation
+059360~003040~of linear time-invariant systems through convolution
+062400~004310~and just to remind you over basic strategy
+066710~003070~essentially the idea was to
+069780~003449~exploit the notion of when the arity by
+073229~003491~decomposing the input into summer basic inputs
+076720~005090~and then using when the arity to tell us that the output can be represented as
+081810~003590~the corresponding linear combination of the Associated outputs
+085400~003850~so if we have a linear system
+089250~004509~either continuous-time and discrete-time for example with continuous time
+093759~003961~if the input is decomposed as a linear combination
+097720~003690~a basic inputs with each of these basic inputs
+101410~004290~generating an Associated output and if the system is linear
+105700~003500~then the output love the system
+109200~003970~is the same linear combination love The Associated outputs
+113170~003070~and the same statement is identical
+116240~005480~both for continuous-time in discrete-time so
+121720~006000~the strategy is to decompose the input into these basic inputs
+127720~003099~and the imports
+130819~003301~were chosen also with some particular
+134120~004730~strategy in mind in particular for both continuous-time
+138850~004380~for discrete-time in this representation the
+143230~003110~basic inputs used in the decomposition
+146340~003780~are chosen first the ball so that
+150120~003550~a broad class signals can be represented
+153670~003940~interns are these basic inputs and second of all
+157610~003550~so that the response to these basic inputs
+161160~004980~is in some sense easy to compute now
+166140~003970~in the representation which latest
+170110~004900~to convolution the particular choice that we made
+175010~003490~in the discrete-time case for our basic inputs
+178500~004750~was a decomposition up the input interns
+183250~004490~or delayed impulses and
+187740~003600~The Associated outputs that that generated
+191340~003780~were delayed versions of the impulse response
+195120~003760~decomposing the input into a linear combination of these
+198880~003920~the output into the corresponding linear combination of these
+202800~003270~then led to the convolution some in
+206070~003090~the discrete-time case and
+209160~003560~in the continuous-time case a similar
+212720~004630~kinda decomposition in terms of impulses and Associated representation
+217350~003200~love the output in terms of the impulse response
+220550~004270~led to the convolution in ago now
+224820~004320~in this lecture and for number the succeeding lectures
+229140~003900~will want to turn our attention to a very different
+233040~003660~said the basic building blocks and
+236700~003120~in particular the signals there
+239820~004070~will be using as the building blocks for or more general signals
+243890~003110~rather than impulses as we've dealt with before
+247000~004440~will be in general complex exponentials
+251440~003090~so in a general sense
+254530~005459~in the continuous-time case and will be thinking in terms of a decomposition
+259989~003400~afar signals as a linear combination I'll
+263389~004051~complex exponentials continuous-time
+267440~003690~or in the discrete-time case
+271130~004710~complex exponentials where sees the case complex here
+275840~003430~in discrete-time and s2 K's complex here
+279270~003790~in continuous-time now
+283060~003900~the basic strategy of course requires
+286960~004230~dead we choose a settlement puts basic building blocks
+291190~003259~which have two properties one is that
+294449~004720~the system response be straightforward to compute were in some sense easy to
+299169~000590~compute
+299759~004121~and the second is that it be a fairly general said a building blocks
+303880~005420~so that we can build lots of signals I love them
+309300~005010~what will find with complex exponentials either continuous-time and discrete-time
+314310~003560~is that they very nicely have those two properties
+317870~003829~in particular the notion that the
+321699~004330~output over linear time-invariant system is easy to compute
+326029~004271~is tied to what's referred to as the eye can function property
+330300~003079~a complex exponentials which will focus on
+333379~003400~shortly in a little more detail
+336779~003420~and second of all the fact that
+340199~004620~weekend in fact represent very broad classes have signals as linear
+344819~000921~combinations
+345740~003959~these will be a topic an issue
+349699~003690~that will develop in detail over in fact are the next
+353389~004451~set of lectures this lecture and the next set of lectures
+357840~003020~now in in doing this although
+360860~004459~we could in fact begin with our attention focused
+365319~004690~on in general complex exponentials
+370009~005111~what will choose to do his first focus on the case in which
+375120~003639~the exponent in the continuous-time cases
+378759~003810~purely imaginary as i indicate here
+382569~003391~and in the discrete-time case where
+385960~003009~the magnitude of the complex number Z CK
+388969~005741~is equal to 1 so what that corresponds to in the continuous-time case
+394710~003009~is said building blocks
+397719~003181~the form you DJ Omega sed Katie
+400900~003340~and in the discrete-time case said a building blocks
+404240~003620~the for eat a DJ Omega KN
+407860~004829~well we'll see is a representation in these Terms
+412689~003880~leads to what's for two as for EA
+416569~003590~analysis and that's what we'll be dealing with over the next several
+420159~002701~lectures
+422860~003489~will then be exploiting this representation actually
+426349~003120~through most the course and then toward
+429469~003720~the end of the course will returned to generalizing
+433189~004040~the for a representation to the discussion over plus transforms the
+437229~001990~transforms
+439219~003211~so for now we want to restrict ourselves to
+442430~003250~complex exponentials a particular form in
+445680~003489~and in fact also initially to continuous-time
+449169~003150~signals and systems so let's begin
+452319~003831~with the continuous-time case the complex exponentials that we want to
+456150~000750~deal with
+456900~004669~in and focus first the ball on what I refer to as
+461569~004791~the eigenfunction property love this particular set a building blocks
+466360~003019~we're talking about
+469379~003840~basic signals the form either the J Omega some Katy
+473219~003551~and this statement is there
+476770~004459~for a linear time-invariant system the response to one of these
+481229~003210~is 0 exactly the same form
+484439~003581~just simply multiplied by a complex
+488020~003500~factor that complex factor depending on
+491520~003100~what the frequency Omega k is
+494620~005759~now more or less the justification for this is the proof follows by
+500379~005320~simply looking at the response to a complex exponential
+505699~003131~using the convolution integral so
+508830~003040~if we put a complex exponential
+511870~003440~into a linear time-invariant system
+515310~003620~with impulse response a gypsy then
+518930~003310~we can express the response as i've indicated here
+522240~003950~we can then recognize that this complex exponential
+526190~003540~can be factored into two terms and so
+529730~004430~we can rewrite this complex exponential
+534160~003770~as this product second recognize
+537930~003430~that this term can be taken
+541360~004810~outside the integral over here because of the fact that
+546170~003140~it depends only on tea and not on tap now
+549310~004250~and so what we're left with when we tracked this through
+553560~005360~is that with a complex exponential input we get
+558920~003330~an output which is the same complex exponential
+562250~003060~namely this factor times
+565310~003830~this integral and this integral is
+569140~003290~what I referred to above as
+572430~003339~H all omega-6 K
+575769~005810~and so in fact we put in a complex exponential
+581579~003811~we get out a complex exponential love the same frequency
+585390~003990~multiplied by a complex constant and
+589380~005189~that is what's referred to as the eigenfunction property I can function
+594569~000661~meaning
+595230~004089~that and I can function of a system or mathematical expression
+599319~003281~is a function which when you put it through the system
+602600~004479~comes out looking exactly the same except for a change in amplitude
+607079~004671~that change in amplitude being the eigen value so
+611750~003060~in fact this function is
+614810~003180~the eigenfunction
+617990~003149~and this bad you
+621139~006391~is the I can bag
+627530~003080~okay now it's because if the eigenfunction
+630610~004530~property that complex exponentials a particularly convenient as building
+635140~000560~blocks
+635700~004110~namely you put it through the system they come out with the same form
+639810~005230~and simply scale the other part to the question related
+645040~003950~to the strategy that we've been pursuing is
+648990~003590~to hope that the signals
+652580~004690~can be used as building blocks to represent a
+657270~003470~very broad classes signals through linear combination
+660740~004450~and in fact that turns out to be the case with complex exponentials
+665190~003380~as we worked our way through that
+668570~004820~will first consider the case love periodic signals
+673390~005060~and what that leads to is a representation a periodic signals
+678450~004980~through what's called the forty a series following that
+683430~005120~we will turn our attention to non periodic or as I refer to it a periodic
+688550~000810~signals
+689360~003660~and the representation that's developed
+693020~004200~interns love linear combinations a complex exponentials
+697220~004660~is what's referred to as the 48 transport so
+701880~003680~the first thing that we want to deal with our periodic signals
+705560~004640~and before you series okay so
+710200~003910~what we're talking about then is the continuous-time
+714110~003550~for a series and
+717660~003450~the for a series is a representation for
+721110~004700~periodic continuous-time signals we have
+725810~003610~a signal then which is periodic and
+729420~003490~were choosing t0 to denote the period
+732910~003110~so its t0
+736020~003220~then corresponds to the period
+739240~003750~our periodic signal Omega 0
+742990~003260~is to party over t0 as
+746250~003160~you recall from our discussion love
+749410~004990~periodic signals and sinusoids before and that's two pirates 0
+754400~005830~so this is the fundamental frequency now
+760230~003730~let's examine first the ball complex exponentials
+763960~003370~and recognize first the ball that
+767330~003120~there is a complex exponential that has
+770450~003120~exactly the same period and
+773570~003780~fundamental frequency as are more general periodic signal
+777350~004910~namely the complex exponential you to the jail maker 0t
+782260~005010~where Omega 0 is to Paul II over t0
+787270~005900~or equivalent Lee t0 is to pie over Omega 0 now
+793170~003289~that's the complex exponential which has
+796459~003750~t0 as the fundamental period but
+800209~004391~think there are harmonically related complex exponentials
+804600~004470~that also have t0 as a period
+809070~003000~although in fact their fundamental period shorter
+812070~004170~so we can also look at complex exponentials
+816240~003040~before either the JK Omega 0t
+819280~003150~these likewise are periodic
+822430~003900~with the period love t0
+826330~003040~although in fact their fundamental period
+829370~003540~is t0 divided by K or equivalently
+832910~003450~to par i divided by their fundamental frequency
+836360~003920~k Omega 0 so as K
+840280~003610~a richer varies these correspond to
+843890~003710~harmonically related complex exponentials
+847600~003460~now with the forty a series
+851060~005170~says and will justify this kinda bit by bit is the discussion goes I'm
+856230~004330~what the four-day series says that in fact what for EA
+860560~003300~said which was essentially the
+863860~003180~is brilliant insight is that if I have
+867040~005650~a very general periodic signal I can represented as a linear combination of
+872690~001570~these harmonically related
+874260~003240~complex exponentials so
+877500~004450~that representation is what i've indicated here
+881950~003270~and this summation is
+885220~003550~what will be referred to as
+888770~003720~the for EA
+892490~003519~series
+896009~003890~and as we proceed with the discussion there are two issues
+899899~004201~couldn't that will develop one is assuming
+904100~004120~that our periodic signal can be represented this way
+908220~004270~how do we determine the for a series coefficients
+912490~003500~as they refer to a suitcase that's one question
+915990~003230~and the second question will be
+919220~003789~how broad a class of signals in fact can be represented that
+923009~003680~this way and bats another question their
+926689~003431~will deal with separately
+930120~003890~now just focusing on this representation
+934010~003370~for a minute this representation
+937380~004310~love the four EA series which
+941690~003180~I repeated again
+944870~003680~here
+948550~003470~is what's referred to as the complex
+952020~003440~exponential form love for EA series
+955460~003070~and it's important to note incidently
+958530~005870~day this summation involves frequencies k Omega 0
+964400~003350~their are both positive and negative
+967750~003170~in other words this index K runs over
+970920~004120~limits that include both negative values and positive ads
+975040~004670~now that complex exponential form is one
+979710~003270~representation for before you a series
+982980~003450~and in fact it's the one that we will be principally
+986430~004820~relying on in this course there is another representation that
+991250~003190~perhaps you come across previously
+994440~003670~and that in a variety of other contacts is
+998110~003750~is typically used which is called the trigonometric form
+1001860~004540~the forty a series without really tracking through the algebra
+1006400~003870~essentially we can get to the trigonometric for
+1010270~003730~from the complex exponential form by
+1014000~004490~recognizing that if we express the complex coefficients
+1018490~004460~in polar for or in rectangular for
+1022950~003999~and expand the complex exponential
+1026949~004370~term out in terms of cosine plus J sign
+1031319~003510~using just simply Oilers relation then
+1034829~003681~in we will end up with the representation
+1038510~004040~for the periodic signal
+1042550~004420~were a re expression love the for a series
+1046970~005560~expression that we had previously either in the form that I indicate here
+1052530~004010~we're now the periodic signal is expressed
+1056540~003960~in terms of a summation love cosines
+1060500~003220~with appropriate ample to in phase
+1063720~004560~or another acquittal or triggered a metric for
+1068280~003140~involves rearranging this
+1071420~003040~in terms or a combination
+1074460~004010~of cosines and signs now
+1078470~004930~in this representation the frequencies of the sinusoids
+1083400~004390~very only over positive frequencies
+1087790~003270~and typically one thinks
+1091060~004200~of periodic signals is having positive frequencies associated with them
+1095260~003350~however let's look back
+1098610~004130~at the complex exponential form
+1102740~003330~for the forty a series at the top of the board
+1106070~005240~and in that representation when we use this representation
+1111310~003680~will find it convenient to refer to both
+1114990~004300~positive frequencies and negative frequencies so
+1119290~004320~the representation that we will most typically be using is the complex
+1123610~001370~exponential form
+1124980~006530~and in that form what will find as we think it decomposing a periodic signal
+1131510~003240~in to its compliments
+1134750~004020~at different frequencies it will involve both positive frequencies
+1138770~004029~negative frequencies
+1142799~003521~okay now we have the
+1146320~004620~for EA series representation as i've indicated here
+1150940~003290~again so far I sidestepped the issue as
+1154230~004990~to whether this in fact represents all the signals that we'd like to represent
+1159220~003079~let's first address the issue
+1162299~003201~love how we determine these coefficients
+1165500~004220~Acer K assuming that in fact this representation is Val
+1169720~004100~and again all kinda move through the algebra
+1173820~004670~fairly quickly its a the outbreak steps the ones that
+1178490~003290~you can pursue more leisurely just the kinda
+1181780~003279~verify them in step through them but
+1185059~004431~essentially the algebra develops I did the recognition
+1189490~005189~that if we integrate a complex exponential
+1194679~003471~over one period t0
+1198150~003820~and I mean by this notation that this is an integral
+1201970~003020~over a period where I don't particularly care
+1204990~004059~where the period starts and where the period stops in other words
+1209049~004021~exactly what period I picked that this integral
+1213070~003770~is equal to t0 when M is equal to 0
+1216840~003890~and it's equal to 0 if am is not equal to 0
+1220730~004809~that follow simply from the fact that if we substitute in
+1225539~005091~for using Oilers relations so that we have the integral to cosign
+1230630~003020~was J times assign if M
+1233650~003649~is not equal to 0 than
+1237299~003641~of these integrals over a period are
+1240940~005020~0 the integral over sign it a periodic have a sinus or a cosigner sign
+1245960~004260~over an integral number periods is zero whereas
+1250220~004579~if M is equal to 0 this in a crawl
+1254799~003421~will be equal to 20 the integral the cosine
+1258220~003730~and the integral on the sign is equal to
+1261950~003270~okay well the next step
+1265220~004010~in developing the expression for the coefficients a Sat K
+1269230~003360~is to refer back to
+1272590~003790~before a series expression which was that except he
+1276380~004740~is equal to the sum with basic K either the JK Omega 0t
+1281120~004419~if we multiply both sides that by either minus
+1285539~003551~jaan Omega 0t and
+1289090~007000~integrate that over a period
+1296840~003800~both sides of the equation integrated over a period
+1300640~004110~so these two equations are equal and then
+1304750~003900~in essence interchange the summation and the integration
+1308650~005210~so that this pardon the expression cons outside the psalm
+1313860~004720~and then we combine these two complex exponentials together
+1318580~003080~where we come out is
+1321660~003020~the expression that i've indicated here in
+1324680~004420~and then essentially what happens at this point algebraically
+1329100~003740~is that we use the result that we just developed
+1332840~003940~to evaluate this cynical so
+1336780~004390~multiplying both sides the forty a series in and doing the integration
+1341170~003690~leads us after the appropriate manipulation
+1344860~003220~to the expression that
+1348080~003840~I have up here and
+1351920~003100~this is equal to
+1355020~004310~this integral is equal to t0
+1359330~003210~if K is equal to an
+1362540~003310~corresponding 20 up here and 80
+1365850~004420~otherwise which is what we have demonstrated or are you previously
+1370270~003020~and the upshot of all that then is that
+1373290~003630~the right hand side if this expression disappears
+1376920~003710~except for the term when K is equal to n
+1380630~003910~and so finally we have what I indicate here
+1384540~005340~taking t0 and moving it over to the other side of the equation
+1389880~003240~we then that then tells us
+1393120~004440~how we determine the forty a series coefficients
+1397560~003620~a7 Auris K so
+1401180~003270~that in effect and is the
+1404450~004060~what we refer to as the analysis equation the equation that begins with
+1408510~001020~excessive to me
+1409530~003630~and tells us how to get the for a series coefficients
+1413160~003240~what are referred to as
+1416400~003080~the 48 series synthesis equation
+1419480~003000~is the equation that tells us
+1422480~003300~how to build exit see outta love
+1425780~004670~these complex exponentials so we have the synthesis equation
+1430450~003360~which is the one that we started from we have
+1433810~003650~the analysis equation which is the equation
+1437460~004400~that we just developed
+1441860~002910~okay so we in effect have
+1444770~005110~going through the issue love assuming there for a series representation
+1449880~003160~is in fact valid how we get
+1453040~003060~the coefficients we want to address
+1456100~003890~somewhat the question love how broad a classic signals that we're talking
+1459990~003500~are we talking about and what's in fact amazing
+1463490~003140~and was for EA's amazing insight
+1466630~003150~was that it's a very broad class say but
+1469780~003520~let's first look at just some examples
+1473300~006020~in which we take a signal assume that it has the Fourier series representation
+1479320~005420~and see what the for a series coefficients look like so
+1484740~004550~will begin with what I refer to as
+1489290~005610~an antisymmetric periodic square wave periodic of course because we're talking
+1494900~001910~about periodic signals
+1496810~003110~square wave referring to its shape and
+1499920~004780~antisymmetric referring to the fact that it is an odd
+1504700~003930~time function in other words it is antisymmetric
+1508630~003980~about the origin now
+1512610~003000~the expression for the for a series coefficients
+1515610~004270~tells us that we determine a sieve K
+1519880~005040~by taking one over 20 times the integral over a period
+1524920~003460~affects 50 either minus JK Omega 0t
+1528380~004360~DT the most convenient thing in this case
+1532740~003910~is to choose a period which
+1536650~004520~let's say goes from minus 20 over to the plus 20 over to
+1541170~003620~so here except he is -1 here
+1544790~003030~expertise plus one and so
+1547820~003940~I've expressed the for a series called efficiency as
+1551760~003690~this integral that's from minus 20 over
+1555450~003960~and then and it said that is the
+1559410~003970~positive part of the cycle and so we have
+1563380~004340~these two integrals now I don't want to
+1567720~003520~tracked through the details both the algebra again I
+1571240~003680~I guess I've decided that that's much more fun for you do on your own
+1574920~003520~but the way it comes out when you go through it
+1578440~004020~is the expression that I finally indicate after
+1582460~003640~suggesting that there are a few more steps to follow
+1586100~003060~and what develops is that
+1589160~003650~those two integrals together for K
+1592810~003800~not equal to 0 come out to this expression
+1596610~005830~and that expression is not valid for k equal to 0
+1602440~003660~per kg equal to 0 we can go back to
+1606100~004180~the basic expression for the forty a series
+1610280~003830~which is one over t0 the integral over a period
+1614110~004010~exit see in the minus JK Omega 0 /td TD
+1618120~003190~for cake 10 of course this term
+1621310~003550~just simply becomes one and
+1624860~005720~so the zeroth coefficient is one over 20 times the integral
+1630580~003750~X 50 over a period now
+1634330~003690~going back to the original function
+1638020~003530~that we have what we're saying then is that
+1641550~005550~0th coefficient is one over 20 times the integral over
+1647100~004510~one period which is in effect the average value
+1651610~004520~and it straight forward to verify the for this case that average value
+1656130~003920~is equal to 0 okay
+1660050~003270~now let's look at
+1663320~003620~these for a series coefficients on a bar graph
+1666940~004110~and i've indicated that here the
+1671050~004400~expression for the for a series coefficients we just developed and
+1675450~003010~a involves its
+1678460~004440~0 for cake 0 it's a factor this form
+1682900~003950~for canine equal to 0 plotted on a bar graph
+1686850~003180~then we see values like this 0
+1690030~003470~at cake 0 and and associated values
+1693500~003050~and their number things to focus on
+1696550~003290~when you look at this
+1699840~005480~one is the fact that the forty a series coefficients for this example
+1705320~004510~are surely imaginary
+1709830~004490~a second is that the Fourier series coefficients for this example
+1714320~004850~are odd sequence in other words if you look at this sequence which you see
+1719170~004040~are these values for negative K
+1723210~003100~flipped over so there their imaginary
+1726310~003300~and odd and
+1729610~003060~what that results in when
+1732670~003010~you look at the
+1735680~004140~the triggered a metric form the 4e a series
+1739820~005400~is that in fact those conditions if you put the terms altogether
+1745220~004360~lead you to a trigger a metric representation
+1749580~003430~which involves only sign terms
+1753010~003970~in other words no co-signed turns let me just draw your attention to the fact
+1756980~001490~that
+1758470~003440~since a suitcase the acer case or imaginary
+1761910~003300~this jay takes care that fact so that these coefficients
+1765210~003700~are in fact real so what this says
+1768910~004220~is that for the antisymmetric square wave the
+1773130~004000~it in effect the forty a series is a sign series
+1777130~003770~the antisymmetric square wave is an odd function
+1780900~004520~sinusoids are not are odd functions and so this is all kinda reasonable that
+1785420~001190~we're building
+1786610~004150~odd function ido odd functions
+1790760~004060~as an additional aside which a I won't
+1794820~003040~exploit or refer to any further here
+1797860~003720~but just draw your attention to is that another aspect
+1801580~004770~love this periodic square wave the particular one that we chose
+1806350~003200~is dead it is what's referred to as a
+1809550~003570~on harmonic function in other words
+1813120~003860~for even values if K
+1816980~004010~before a series coefficients 30 their only 90
+1820990~004060~for iPad use K
+1825050~004050~okay now let's look at another example another example
+1829100~004740~is the symmetric periodic square wave
+1833840~003480~and this is in fact example
+1837320~004250~4.5 worked out in more detail in the tax then
+1841570~004410~I won't bother to work work this out in detail here
+1845980~003300~except to draw your attention to several
+1849280~005030~points here is the symmetric periodic square wave
+1854310~003360~and what I mean by symmetric
+1857670~003060~is that it's an even time function
+1860730~004760~now just kinda extrapolating your intuition
+1865490~003020~what we you should expect is that if if it's a
+1868510~003590~only even time function it should be built up
+1872100~003570~or buildable if it's built up a little %ah to only
+1875670~003320~even sinusoids and in fact
+1878990~003370~that's the case so if we look at
+1882360~003350~the four-day series coefficients for this
+1885710~003290~the zeroth coefficient again as the average value
+1889000~003610~which in this case is a half here I've plotted
+1892610~003580~hi times the for a series coefficients so
+1896190~003400~0 thank you as pie over to
+1899590~003100~the coefficients are now and even sequence
+1902690~003270~and in in other words symmetric
+1905960~003880~about cake 0 and the consequences that
+1909840~003250~is that when you take these coefficients
+1913090~005650~and put together the equivalent triggered a metric form
+1918740~003060~the triggered a metric for involves
+1921800~003480~only cosines and no
+1925280~004060~sign turns now
+1929340~004060~you'll see this in and other examples not that will do in the lecture but
+1933400~003830~examples in the text in the video manual if in fact
+1937230~003290~the square way was neither symmetric or antisymmetric
+1940520~003160~then the trigonometric form would involve both
+1943680~003900~sines and cosines and
+1947580~003060~that is of course the more general case
+1950640~003539~furthermore in the two examples are shown here
+1954179~003111~we we in both cases
+1957290~003020~the signal is odd harmonic
+1960310~003560~in other words for even bad news K
+1963870~004600~the coefficients are equal to 0 although I won't justify that here that's a
+1968470~002480~consequence that the fact that
+1970950~003620~this symmetry is exactly about half a period
+1974570~003390~and if you made the on time with a square wave
+1977960~004290~different in relation to the of time then that property would also
+1982250~004139~disappear
+1986389~001281~now
+1987670~002970~what's kind amazing actually in
+1990640~004040~is that if we take a square wave like
+1994680~004350~I have here or as I had in the antisymmetric case
+1999030~003730~the implication is that I can bill
+2002760~003230~that square wave by adding up
+2005990~004710~on of signs were cosines and
+2010700~003930~it really seems kinda amazing because the square wave after all
+2014630~003120~is a very discontinuous functions
+2017750~004490~sinusoids are very continuous and it seems puzzling that in fact
+2022240~004439~you can do that well let's look in a little bit of detail
+2026679~003301~how the sinusoidal
+2029980~003260~turns and up to
+2033240~003700~build a square wave and to do that
+2036940~003720~let's first define what I refer to
+2040660~003450~as a partial song so
+2044110~003220~here we have the expression
+2047330~003240~which is the synthesis
+2050570~004440~equation telling us how accept T could be represented
+2055010~003909~as complex exponentials if it can be and
+2058919~003611~let's consider just a finite number of turns in this song
+2062530~004320~and so X 7ft of course as n goes to infinity
+2066850~004390~approaches the infinite sum that we're talking about and although we could do
+2071240~004649~this more generally let's not let's focus on the symmetric square wave case
+2075889~004621~where because it the symmetry of these coefficients namely that a suitcase
+2080510~001440~equal to minus
+2081950~003479~is equal to a serb minus K we can rewrite
+2085429~004601~these turns as cosine turns and so this partial some
+2090030~003840~can be express the way arm expressing it here
+2093870~003300~well let's look at
+2097170~004340~a few the Stearns on the graph I have
+2101510~003190~first the ball exit tea which is our
+2104700~003090~original square wave
+2107790~003800~the turn that I indicate here
+2111590~003330~is the factor over half which
+2114920~004600~is this term
+2119520~003810~with any calls one that would correspond to anyone co-signed term
+2123330~003570~to that and so the sole those two would be yes
+2126900~004449~which looks a little close to the square wave but
+2131349~004571~certainly not very close to it at all and in fact
+2135920~003210~in its somewhat hard to imagine without
+2139130~005170~seeing the terms build-up how in fact by adding more and more turns we can
+2144300~001450~generate something
+2145750~004099~that is essentially flat except at the discontinuities
+2149849~003770~so let's look at this example and what I'd like to show
+2153619~004511~is this example but now as we add many
+2158130~003320~more turns to it and let's see in fact
+2161450~003060~how these individual turns add up
+2164510~003150~to build up the square way so
+2167660~003520~this is the square wave that we want to build up
+2171180~003700~through the forty a series is this some of sinusoids
+2174880~005580~and the term for cake 0 will be a constant which represents the DC value
+2180460~000790~with this
+2181250~004510~and so in the partial sum as we develop it
+2185760~004390~the first thing they will show is just the term for cable 0
+2190150~005020~now for cables one we would add to that
+2195170~003370~one sinusoidal term and
+2198540~004660~so some love the term for cake was one cake was 0
+2203200~005740~is represented here now
+2208940~004200~when we go to K calls to because of the fact that this is an odd harmonic
+2213140~000840~function
+2213980~003570~in fact the term for cake was it was too
+2217550~004110~will be will have zero amplitude and so this won't change
+2221660~004520~here we show the
+2226180~003590~for a series would cake was to and there's no change
+2229770~004050~and then we will go to cable 23
+2233820~000760~and
+2234580~004490~and we will be adding then one additional sinusoidal term here's cake
+2239070~000840~was three
+2239910~004480~when we go to cable 24 again there won't be any change
+2244390~003550~but their will be another term that's
+2247940~004560~added at cake was five here and cable 6
+2252500~004980~again because it's odd harmonic no change and finally cable 7
+2257480~005900~is shown here okay and we can begin to see that
+2263380~004300~this starts to look somewhat like the square wave but
+2267680~003790~now to really emphasize how this builds up let's
+2271470~004640~more rapidly and Ed many more terms and in fact
+2276110~004140~increase the number of turns up to about a hundred recognizing
+2280250~003580~that the shape will only change on the inclusion
+2283830~004540~all the odd number terms not the even-numbered turns because it's an odd
+2288370~003530~harmonic function so now we're
+2291900~003820~increasing and we're building up toward
+2295720~003430~k equal to 100 200 turns an
+2299150~003360~notice that it is the higher
+2302510~003330~order turns dead tend to build up
+2305840~004170~the discontinuity corresponding to the notion
+2310010~004610~there'd the discontinuities or sharp edges in a signal
+2314620~003660~in fact are represented through the higher
+2318280~004490~frequencies in the forty a series and here we have
+2322770~003280~a not too unreasonable approximation
+2326050~004660~to the original square wave there is the artifact of the ripples at the
+2330710~002040~discontinuity and in fact
+2332750~003740~though that rippling behavior at the discontinuities
+2336490~003690~is referred to as the Gibbs phenomenon
+2340180~004530~and it's an inherent part love the forty a series representation at
+2344710~001130~discontinuities
+2345840~003120~now to emphasize this
+2348960~003380~let's decrease the number of turns back down
+2352340~003860~and we will carry this down
+2356200~003090~to k equal to 1 again
+2359290~004630~to emphasizes how the sinusoids are building up
+2363920~004160~the square wave here we are back at Cape cools
+2368080~003340~1 and then finally we
+2371420~003060~will and back in the sinusoids that we took out
+2374480~003460~and let's build this back up to 100 turns
+2377940~003240~showing the approximation dead
+2381180~007000~we generated with a hundred turns to the square way
+2400590~003100~okay so so what you saw is that
+2403690~003030~in fact we got awfully close to a square wave
+2406720~003460~and the other thing think that was kind of interesting about it is that went
+2410180~000650~along
+2410830~004890~was the fact that with the low frequencies
+2415720~003430~what we were tending to bill was the general behavior
+2419150~003130~and as the higher frequencies came in
+2422280~003090~that tended to contribute the discontinuities
+2425370~003720~work contribute to the discontinuity and
+2429090~003310~in fact something their will
+2432400~003330~standout more and more as we go through our discussion
+2435730~003780~love for a series of 48 transforms is
+2439510~003920~that general statement that its the low-frequency
+2443430~003900~terms bat represent
+2447330~003380~the broad time behavior and
+2450710~003560~its the high-frequency terms that are used to build up
+2454270~005490~the sharp transitions in the time domain
+2459760~003079~okay now we need to get a little more precise
+2462839~003201~about the question of how in fact
+2466040~003220~the 48 series
+2469260~003210~or when before you a series represents
+2472470~003530~the functions that we're talking about and in what sense they represent them
+2476000~003369~in and so if we look
+2479369~005991~again at the synthesis
+2485360~003000~ok wage in were really wanna ask
+2488360~003260~is if we add up enough for these terms
+2491620~003220~in what sense does this some represent
+2494840~003480~this time function well
+2498320~003990~let's again use the notion love are partial some
+2502310~004010~so we have the partial song down here
+2506320~004170~in and we can think love the difference between
+2510490~003630~this partial some and the
+2514120~003180~original time function as
+2517300~004480~the ever and I've defined the error here
+2521780~004260~and what we would like to know is does this error
+2526040~003750~decrease as we aired more and more turns
+2529790~004610~and in fact in what sense if the air does decrease in what sense
+2534400~004300~there's a decrease now in detail
+2538700~003930~this is a fairly complicated an elaborate topic I don't mean to make
+2542630~001310~that sound frightening
+2543940~005120~its mainly a statement that I don't want to explore it and a lot of detail
+2549060~003940~but it relates to what is referred to
+2553000~003230~as the issue a convergence the forty a series
+2556230~003890~and the convergence the 48 series
+2560120~004000~the the bottom line on at the kinda and statement
+2564120~004440~can be made in several ways one statement
+2568560~004490~related to convergence the for a series is the following if
+2573050~003630~I have a time function which
+2576680~003900~is what is referred to as square integrable namely
+2580580~004460~its integral over a period is finite then
+2585040~003360~what you can show kinda amazingly
+2588400~003640~is that the energy E in
+2592040~003460~that error in other words the energy in the difference between the original
+2595500~001020~function
+2596520~003810~and the partial some the energy and that
+2600330~005090~goes to zero as n goes to infinity
+2605420~005669~a somewhat tighter condition is a condition referred to as it the racially
+2611089~003230~conditions which says that
+2614319~003321~if the time function
+2617640~005959~is absolutely integral not square honorable but absolutely integral
+2623599~005341~and I've kinda hedge the issue by just simply referred to accept T as being
+2628940~001029~well behaved
+2629969~005560~then the statement is dead the error in fact goes to zero
+2635529~003710~as and increases except at the discontinuities
+2639239~003971~and what well-behaved means in that statement
+2643210~003879~is that as discussed in the book there are a finite number
+2647089~005091~maxima and minima in any period and a finite number finite discontinuities
+2652180~001460~which is essentially
+2653640~004530~always the case so under square in Accra bility
+2658170~004669~what we have is the statement not that the partial sum goes to the right value
+2662839~000930~at every point
+2663769~003830~but that the energy in the air goes to zero
+2667599~005101~under the jewish way conditions it says that in fact the signal goes to the
+2672700~001059~right back to you
+2673759~003990~at every time instant except
+2677749~003461~at the discontinuities so
+2681210~005590~going back to the square wave
+2686800~003970~the square wave satisfies either one of those conditions and so
+2690770~004410~what the consequences is that with the square wave
+2695180~003620~if we looked at the error then in fact
+2698800~003080~what we would find is that the energy
+2701880~003270~in the error would go to zero as we at
+2705150~003530~more and more turns in the partial some and in fact
+2708680~004670~if says the square wave also satisfies the dish les conditions
+2713350~004690~the actual value with the air the difference between
+2718040~003630~the partial some and the true value will will
+2721670~003780~actually go to zero that difference will go to zero
+2725450~003600~except at the discontinuities and
+2729050~003420~that in fact is kinda evident as
+2732470~003470~we watch the function build-up
+2735940~003450~by adding up these terms and so in fact
+2739390~003670~let's go back and see again
+2743060~003290~the development the partial sons
+2746350~004400~in relation to the original time function let's observe
+2750750~004240~this time again basically what we saw before which is that it builds up
+2754990~005610~to the right answer and furthermore what will plot this time also as a function
+2760600~000740~of time
+2761340~004850~is the energy in the air and what we'll see is that the energy in the air
+2766190~003380~will be tending toward zero as the number
+2769570~003160~turns increases so
+2772730~003180~once again we have the square wave and
+2775910~004080~we want to again show the buildup of the
+2779990~003240~forty a series this time showing also
+2783230~004090~how the energy in the air decreases as we had more and more turns
+2787320~003250~well once again will begin
+2790570~003570~with cake was 0 corresponding to the constant term
+2794140~003110~and was shown on the bottom trace is
+2797250~003450~the energy in the air between those two and
+2800700~003430~will then and the term for cables 1
+2804130~004940~to the DC term and will see that the energy will decrease
+2809070~004590~when we do that here we have then the summer
+2813660~003130~cake 10 cables 1 now
+2816790~003760~with cables to the energy won't decrease
+2820550~006779~any further because it's an odd harmonic function
+2827329~005181~that's what we've just added in when we add in the term for cables 3
+2832510~003190~again will see the energy in the air decrease
+2835700~006760~as reflected in the bottom curve
+2842460~004000~so there we are at cables 3 when
+2846460~004950~we go to cable 24 there again is no change in the air
+2851410~007000~at cables 5 again the air decreases
+2859880~003660~k equal to 6% know there will be no change again
+2863540~003760~an 8k course 7 the energy decreases
+2867300~004170~and now let's show the how the air decreases by building up the number
+2871470~004970~turns much more rapidly already the air has gotten somewhat small on the scale
+2876440~002550~in which were showing it so let's expand out
+2878990~003140~the ever scale the vertical axis
+2882130~003680~displaying the energy in the error so that we could watch
+2885810~003170~how the energy decreases as
+2888980~003570~we had more and more terms so here we have
+2892550~003150~the vertical scale expanded and
+2895700~003020~now what we'll do is increase
+2898720~004530~the number of turns in the forty a series and watch the energy in the air
+2903250~001200~at decreasing
+2904450~003280~always decreasing of course on the inclusion
+2907730~003850~love the odd number turns and
+2911580~003730~not on the inclusion of the even-numbered turns because the fact
+2915310~004140~that it's an odd harmonic function now the energy in the air
+2919450~003650~asymptotically will approach 0 although
+2923100~005130~point by point the forty a series will never be equal to the square wave
+2928230~004290~it will at every instant of time
+2932520~004040~except at the discontinuities where there will always be
+2936560~003450~some ripple corresponding to
+2940010~004860~what's referred to as the Gibbs phenomenon
+2944870~003540~okay well so what we've seen in is
+2948410~004210~a and a quick look at the Fourier series
+2952620~003320~representation love periodic signals
+2955940~004160~we more broadly
+2960100~003570~wanna have a more general representation
+2963670~005870~love oath signals in terms of complex exponentials and so our next step
+2969540~003830~will be to move toward a representation
+2973370~003230~I'll not periodic or a periodic signals
+2976600~004060~now the details if this I leave for the next lecture
+2980660~003140~the only thought that I want introduced at this point
+2983800~003090~is the basic strategy you which
+2986890~004150~is somewhat amazing and kinda interesting to reflect on
+2991040~003270~in the interim the basic strategy
+2994310~003530~with in a periodic signal is
+2997840~003680~to think love representing
+3001520~005830~this a periodic signal as a linear combination of complex exponentials
+3007350~004030~by this simple trick all
+3011380~003310~periodically replicating this signal
+3014690~003080~generating a periodic signal
+3017770~003250~using a Fourier series representation
+3021020~003620~for that periodic signal and then
+3024640~003360~simply letting the period go to infinity
+3028000~004960~as the period goes to infinity that periodic signal becomes the original
+3032960~003900~a periodic one that we have before and a 40 a series
+3036860~007000~representation then becomes what we refer to as the Fourier transform so
+3044040~003860~that's just a quick look at kind of the basic idea
+3047900~004230~and approach that will take in the next lecture will develop this
+3052130~004370~a little more carefully more fully moving from the 40 a series which we've
+3056500~001860~used for periodic signals
+3058360~003200~to develop the for EA transform
+3061560~003200~which will then be representation for a periodic see
+3064760~000820~thank you

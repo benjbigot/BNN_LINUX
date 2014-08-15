@@ -1,0 +1,1888 @@
+00:00:06,000 --> 00:00:13,000
+ha the the
+ha itu
+
+00:00:27,000 --> 00:00:30,000
+the norm
+norma
+
+00:00:30,000 --> 00:00:36,000
+well
+baik
+
+00:00:36,000 --> 00:00:43,000
+the I'm out oppenheim
+saya keluar Oppenheim yang
+
+00:00:43,000 --> 00:00:48,000
+and I'd like to welcome you to this video tape course on signals and systems
+dan saya ingin mengucapkan selamat datang ke kursus pita video ini ke isyarat dan sistem
+
+00:00:48,000 --> 00:00:51,000
+signals at least
+isyarat sekurang-kurangnya
+
+00:00:51,000 --> 00:00:55,000
+as an informal definition are functions
+definisi tidak rasmi adalah fungsi
+
+00:00:55,000 --> 00:00:58,000
+one or more independent variables that
+satu atau lebih pembolehubah bebas yang
+
+00:00:58,000 --> 00:01:03,000
+typically carry some type information systems in
+biasanya membawa beberapa sistem maklumat taip
+
+00:01:03,000 --> 00:01:07,000
+are setting with typically be used the process signals
+menetapkan dengan biasanya digunakan isyarat proses
+
+00:01:07,000 --> 00:01:11,000
+one very common example of a signal
+satu contoh yang biasa isyarat
+
+00:01:11,000 --> 00:01:15,000
+might be let's say speech signal and you might think
+mungkin katakan isyarat pertuturan dan yang anda sangka
+
+00:01:15,000 --> 00:01:18,000
+love the air pressure as a function of time
+suka tekanan udara sebagai fungsi masa
+
+00:01:18,000 --> 00:01:22,000
+or perhaps the electrical signal effort goes through the microphone
+atau mungkin usaha isyarat elektrik akan melalui mikrofon
+
+00:01:22,000 --> 00:01:26,000
+transducer is a function of time as representing the speech signal
+transduser adalah fungsi masa sebagai mewakili isyarat ucapan
+
+00:01:26,000 --> 00:01:30,000
+and we might see a typical speech signal
+dan kita mungkin melihat isyarat ucapan biasa
+
+00:01:30,000 --> 00:01:33,000
+looking something like i've indicated here
+mencari sesuatu seperti saya telah ditunjukkan di sini
+
+00:01:33,000 --> 00:01:36,000
+its a function time
+masa yang fungsinya
+
+00:01:36,000 --> 00:01:40,000
+in this particular case and the independent variable
+dalam kes ini dan pembolehubah bebas
+
+00:01:40,000 --> 00:01:44,000
+being time is in fact continuous
+menjadi masa sebenarnya berterusan
+
+00:01:44,000 --> 00:01:47,000
+and so a signal like this we will typically be referring to
+dan sebagainya isyarat seperti ini kita akan biasanya merujuk kepada
+
+00:01:47,000 --> 00:01:52,000
+as a continuous-time signals now
+sebagai isyarat berterusan masa kini
+
+00:01:52,000 --> 00:01:55,000
+it also for this particular example is a function
+ia juga sebagai contoh khusus ini adalah fungsi yang
+
+00:01:55,000 --> 00:01:59,000
+one independent variable and
+pemboleh ubah bebas dan
+
+00:01:59,000 --> 00:02:02,000
+that will be referred to as
+yang akan dirujuk sebagai
+
+00:02:02,000 --> 00:02:06,000
+the one dimensional signal
+satu isyarat dimensi
+
+00:02:06,000 --> 00:02:09,000
+corresponding to the fact that there's only
+sepadan dengan fakta bahawa hanya terdapat
+
+00:02:09,000 --> 00:02:13,000
+one independent variable several independent variables
+satu pembolehubah beberapa pembolehubah bebas bebas
+
+00:02:13,000 --> 00:02:16,000
+so the speech signal is an example
+jadi isyarat ucapan adalah contoh
+
+00:02:16,000 --> 00:02:20,000
+a continuous-time one-dimensional signal
+berterusan masa isyarat satu dimensi
+
+00:02:20,000 --> 00:02:23,000
+now signals can of course
+kini isyarat tin kursus
+
+00:02:23,000 --> 00:02:29,000
+be multi-dimensional and they may not have as their independent variables time
+menjadi multi-dimensi dan mereka mungkin tidak mempunyai masa pembolehubah bebas mereka
+
+00:02:29,000 --> 00:02:29,000
+variables
+pembolehubah
+
+00:02:29,000 --> 00:02:32,000
+one very common example are
+satu contoh yang biasa ialah
+
+00:02:32,000 --> 00:02:36,000
+the examples represented by images images
+contoh diwakili oleh imej imej
+
+00:02:36,000 --> 00:02:40,000
+as signals we might think I'll as
+sebagai isyarat kita mungkin berfikir saya akan sebagai
+
+00:02:40,000 --> 00:02:44,000
+representing brightness as it varies
+mewakili kecerahan kerana ia berbeza-beza
+
+00:02:44,000 --> 00:02:47,000
+in a horizontal and vertical
+dalam mendatar dan menegak
+
+00:02:47,000 --> 00:02:50,000
+direction and so the brightness as a function
+arah dan sebagainya kecerahan sebagai fungsi yang
+
+00:02:50,000 --> 00:02:53,000
+these two spatial variables is then
+kedua-dua pembolehubah spatial kemudian
+
+00:02:53,000 --> 00:03:00,000
+a two-dimensional signal and
+isyarat dua dimensi dan
+
+00:03:01,000 --> 00:03:04,000
+it the independent variables
+ia pembolehubah bebas
+
+00:03:04,000 --> 00:03:09,000
+would typically be continuous but of course they're not time variables
+biasanya akan berterusan tetapi sudah tentu mereka tidak pembolehubah masa
+
+00:03:09,000 --> 00:03:12,000
+and incidently it's worth
+dan kebetulan ia bernilai
+
+00:03:12,000 --> 00:03:16,000
+just commenting very often simply for convenience
+hanya mengulas seringkali hanya untuk kemudahan
+
+00:03:16,000 --> 00:03:20,000
+will have a tendency to refer to the independent variables when we talk about
+akan mempunyai kecenderungan untuk merujuk kepada pembolehubah bebas apabila kita bercakap mengenai
+
+00:03:20,000 --> 00:03:21,000
+signals
+isyarat
+
+00:03:21,000 --> 00:03:25,000
+as time variables whether or not the really represent time
+sebagai pembolehubah masa sama ada atau tidak benar-benar mewakili masa
+
+00:03:25,000 --> 00:03:28,000
+well let me illustrate
+juga biarlah saya menggambarkan
+
+00:03:28,000 --> 00:03:32,000
+one example all image and
+satu contoh semua imej dan
+
+00:03:32,000 --> 00:03:35,000
+this is a picture jpg for EA
+ini adalah satu jpg gambar untuk EA
+
+00:03:35,000 --> 00:03:39,000
+who perhaps more than anyone else
+yang mungkin lebih daripada orang lain
+
+00:03:39,000 --> 00:03:42,000
+is responsible for the elegance and beauty
+bertanggungjawab untuk keanggunan dan keindahan
+
+00:03:42,000 --> 00:03:47,000
+a lot of the concepts we'll be talking about throughout this course
+banyak konsep-konsep kita akan bercakap tentang sepanjang kursus ini
+
+00:03:47,000 --> 00:03:50,000
+and when you look at this in addition to
+dan apabila anda melihat ini sebagai tambahan kepada
+
+00:03:50,000 --> 00:03:54,000
+c4a himself you should recognize that what you're looking at
+c4a sendiri anda harus menyedari bahawa apa yang anda cari di
+
+00:03:54,000 --> 00:03:58,000
+is basically a signal which is brightness as a function
+pada dasarnya ialah isyarat yang kecerahan sebagai fungsi yang
+
+00:03:58,000 --> 00:04:01,000
+the horizontal and vertical spatial variables
+pembolehubah ruang mendatar dan menegak
+
+00:04:01,000 --> 00:04:05,000
+as another example
+sebagai contoh yang lain
+
+00:04:05,000 --> 00:04:09,000
+an image as a signal let's look at an aerial photograph
+imej sebagai pandangan yang disewakan isyarat pada foto udara
+
+00:04:09,000 --> 00:04:13,000
+this is an aerial photograph taken
+ini adalah gambar yang diambil dari udara
+
+00:04:13,000 --> 00:04:16,000
+over a setter roads which
+lebih jalan penetap yang
+
+00:04:16,000 --> 00:04:19,000
+you can more less recognized in the picture and
+anda lebih kurang diiktiraf di dalam gambar dan
+
+00:04:19,000 --> 00:04:23,000
+wanted the difficulties with this signal is that it
+mahu masalah dengan isyarat ini ialah ia
+
+00:04:23,000 --> 00:04:26,000
+the road system is somewhat obscured by cloud cover
+sistem jalan raya agak dikaburi oleh awan
+
+00:04:26,000 --> 00:04:29,000
+and well wanna show later
+dan menunjukkan juga wanna kemudian
+
+00:04:29,000 --> 00:04:32,000
+as an example what a system
+sebagai contoh apa yang sistem yang
+
+00:04:32,000 --> 00:04:38,000
+might do to such as signal in terms of processing is an attempt to
+mungkin melakukan kepada apa-apa sebagai isyarat dari segi pemprosesan adalah suatu percubaan untuk
+
+00:04:38,000 --> 00:04:41,000
+at least compensate some way for the
+sekurang-kurangnya pampasan beberapa cara untuk
+
+00:04:41,000 --> 00:04:46,000
+cloud cover represented in the photograph following terms a
+Terma awan diwakili dalam gambar berikut yang
+
+00:04:46,000 --> 00:04:49,000
+the detailed analysis we go through during the course are
+analisis terperinci kita melalui semasa kursus ini adalah
+
+00:04:49,000 --> 00:04:53,000
+focus of attention is pretty much restricted to
+tumpuan perhatian cukup banyak terhad kepada
+
+00:04:53,000 --> 00:04:57,000
+one-dimensional signals in fact we will be using
+isyarat satu dimensi sebenarnya kita akan menggunakan
+
+00:04:57,000 --> 00:05:00,000
+two-dimensional signals more specifically images
+isyarat dua dimensi lebih khusus imej
+
+00:05:00,000 --> 00:05:03,000
+very often to illustrate a variety
+seringkali untuk menggambarkan pelbagai
+
+00:05:03,000 --> 00:05:06,000
+concepts now
+konsep sekarang
+
+00:05:06,000 --> 00:05:10,000
+speech in images are examples
+ucapan dalam imej adalah contoh
+
+00:05:10,000 --> 00:05:13,000
+what we refer to as continuous-time signals
+apa yang kita rujuk sebagai isyarat berterusan masa
+
+00:05:13,000 --> 00:05:16,000
+in that they are functions
+dalam bahawa mereka adalah fungsi
+
+00:05:16,000 --> 00:05:19,000
+continuous variables equally
+pembolehubah berterusan sama
+
+00:05:19,000 --> 00:05:23,000
+important classes signals will be concentrating on
+kelas penting isyarat akan menumpukan kepada
+
+00:05:23,000 --> 00:05:27,000
+in the cores are signals are
+dalam teras adalah isyarat
+
+00:05:27,000 --> 00:05:30,000
+discrete-time signals
+isyarat diskret masa
+
+00:05:30,000 --> 00:05:33,000
+where by discrete-time we mean
+di mana dengan diskret masa kita maksudkan
+
+00:05:33,000 --> 00:05:36,000
+is that the signal is
+ialah isyarat
+
+00:05:36,000 --> 00:05:40,000
+a function integer variable
+pembolehubah fungsi integer
+
+00:05:40,000 --> 00:05:43,000
+and so specifically only takes on values
+dan sebagainya khusus hanya mengambil nilai-nilai
+
+00:05:43,000 --> 00:05:48,000
+at in nature values the argument
+di dalam alam semula jadi nilai hujah
+
+00:05:48,000 --> 00:05:52,000
+so here is a graphical illustration
+jadi di sini adalah satu contoh grafik
+
+00:05:52,000 --> 00:05:57,000
+the discrete-time signal and discrete-time signals arise
+isyarat dan diskret masa isyarat diskret masa timbul
+
+00:05:57,000 --> 00:06:01,000
+in a variety of ways one very common example
+dalam pelbagai cara salah satu contoh yang biasa
+
+00:06:01,000 --> 00:06:07,000
+it seems fairly often is discrete-time signals in the context
+ia seolah-olah agak kerap adalah isyarat diskret masa dalam konteks
+
+00:06:07,000 --> 00:06:13,000
+economic time series and for example stock market analysis
+siri masa ekonomi dan sebagai contoh analisis pasaran saham
+
+00:06:13,000 --> 00:06:16,000
+so what I show here is one
+jadi apa yang saya menunjukkan di sini adalah salah satu
+
+00:06:16,000 --> 00:06:21,000
+very commonly occurring example the discrete-time signal
+sangat biasa berlaku contoh isyarat diskret masa
+
+00:06:21,000 --> 00:06:25,000
+it represents the weekly stock market index
+ia mewakili indeks pasaran saham mingguan
+
+00:06:25,000 --> 00:06:28,000
+the independent variable in this case is
+pembolehubah bebas dalam kes ini adalah
+
+00:06:28,000 --> 00:06:32,000
+the week number and we see what the
+nombor minggu dan kita lihat apa yang
+
+00:06:32,000 --> 00:06:36,000
+stock market is doing over this particular period
+pasaran saham lakukan dalam tempoh tertentu
+
+00:06:36,000 --> 00:06:39,000
+as a function or the number of the week and
+sebagai fungsi atau bilangan minggu dan
+
+00:06:39,000 --> 00:06:43,000
+course along the vertical axis is the
+kursus sepanjang paksi menegak adalah
+
+00:06:43,000 --> 00:06:46,000
+weekly index incidently
+indeks mingguan kebetulan
+
+00:06:46,000 --> 00:06:49,000
+this particular period was not chosen
+tempoh tertentu ini tidak dipilih
+
+00:06:49,000 --> 00:06:53,000
+random in fact captures very interesting aspect
+rawak sebenarnya menangkap aspek yang menarik
+
+00:06:53,000 --> 00:06:57,000
+stock market history namely the
+sejarah pasaran saham iaitu
+
+00:06:57,000 --> 00:07:00,000
+stock market crash in 1929
+kejatuhan pasaran saham pada tahun 1929
+
+00:07:00,000 --> 00:07:04,000
+which in fact is represented by behavior
+yang sebenarnya diwakili oleh tingkah laku
+
+00:07:04,000 --> 00:07:08,000
+this discrete time signal or sequence
+ini isyarat masa diskret atau urutan
+
+00:07:08,000 --> 00:07:12,000
+in this particular area so this dramatic dip in fact
+di kawasan ini begitu ini berendam dramatik sebenarnya
+
+00:07:12,000 --> 00:07:16,000
+is the stock market crash 1929
+adalah kejatuhan pasaran saham 1929
+
+00:07:16,000 --> 00:07:20,000
+well the dow jones weekly average is an example
+telaga Dow Jones purata mingguan adalah contoh
+
+00:07:20,000 --> 00:07:24,000
+all a one-dimensional discrete-time signal
+semua isyarat diskret masa satu dimensi
+
+00:07:24,000 --> 00:07:27,000
+and just as with continuous time
+dan sama seperti dengan masa berterusan
+
+00:07:27,000 --> 00:07:31,000
+we had not just one-dimensional multi-dimensional signals
+kami bukan hanya satu dimensi isyarat pelbagai dimensi
+
+00:07:31,000 --> 00:07:35,000
+likewise we have multi-dimensional signals
+begitu juga kita mempunyai isyarat pelbagai dimensi
+
+00:07:35,000 --> 00:07:39,000
+in the discrete-time case where
+dalam kes diskret-masa di mana
+
+00:07:39,000 --> 00:07:43,000
+in that case then the discrete-time signal that we're talking about a
+dalam kes itu maka isyarat diskret masa yang kita sedang bercakap mengenai
+
+00:07:43,000 --> 00:07:44,000
+sequence
+urutan
+
+00:07:44,000 --> 00:07:48,000
+is a function love to integer variables
+adalah fungsi cinta kepada integer pembolehubah
+
+00:07:48,000 --> 00:07:53,000
+and is one example this might let's say represent a spatial
+dan merupakan salah satu contoh ini mungkin katakan mewakili ruang yang
+
+00:07:53,000 --> 00:07:56,000
+antenna array where this is
+antena di mana ini adalah
+
+00:07:56,000 --> 00:07:59,000
+array number in let's say the horizontal
+bilangan array di katakan mendatar
+
+00:07:59,000 --> 00:08:03,000
+direction and this is array number in the vertical direction
+arahan dan ini bilangan array adalah dalam arah menegak
+
+00:08:03,000 --> 00:08:07,000
+both classes signals continuous-time and discrete-time
+kedua-dua kelas isyarat berterusan masa dan diskret masa
+
+00:08:07,000 --> 00:08:12,000
+as i've indicated are very important and it should be emphasized
+seperti yang telah saya ditunjukkan adalah sangat penting dan ia perlu ditekankan
+
+00:08:12,000 --> 00:08:17,000
+dead the importance I'll discrete-time signals associated processing
+mati kepentingan saya akan isyarat diskret-masa yang berkaitan pemprosesan
+
+00:08:17,000 --> 00:08:21,000
+continues to grow in large part because
+terus berkembang sebahagian besar kerana
+
+00:08:21,000 --> 00:08:24,000
+I'll the current and emerging technologies
+Saya akan teknologi semasa dan baru muncul
+
+00:08:24,000 --> 00:08:28,000
+that permit basically the processing
+permit yang pada dasarnya pemprosesan
+
+00:08:28,000 --> 00:08:31,000
+or continuous-time signals by
+atau isyarat berterusan masa oleh
+
+00:08:31,000 --> 00:08:34,000
+first converting to discrete-time signals
+pertama memeluk isyarat diskret masa
+
+00:08:34,000 --> 00:08:38,000
+and processing them with discrete time systems
+dan memprosesnya dengan sistem masa diskret
+
+00:08:38,000 --> 00:08:41,000
+and that in fact is a topic that we will
+dan yang sebenarnya adalah topik yang kita akan
+
+00:08:41,000 --> 00:08:47,000
+discuss in a fair manner detail later on in the course
+membincangkan secara adil cara terperinci kemudian di dalam urusan
+
+00:08:47,000 --> 00:08:51,000
+let's now turn our attention to systems
+mari kita beralih pula perhatian kita kepada sistem
+
+00:08:51,000 --> 00:08:54,000
+and as they indicated a system
+dan kerana mereka menunjukkan sistem
+
+00:08:54,000 --> 00:08:58,000
+basically processes signals
+pada dasarnya proses isyarat
+
+00:08:58,000 --> 00:09:01,000
+and they have of course inputs
+dan mereka mempunyai input kursus
+
+00:09:01,000 --> 00:09:04,000
+and outputs and depending on
+dan output dan bergantung kepada
+
+00:09:04,000 --> 00:09:08,000
+whether we're talking about continuous-time for discrete-time
+sama ada kita bercakap tentang berterusan masa untuk diskret masa
+
+00:09:08,000 --> 00:09:12,000
+the system maybe a continuous-time system
+sistem mungkin sistem berterusan masa
+
+00:09:12,000 --> 00:09:16,000
+or a discrete-time system so in the continuous-time
+atau sistem diskret-masa demikian dalam masa berterusan
+
+00:09:16,000 --> 00:09:19,000
+case I indicate here in input: accept T
+kes saya menunjukkan di sini dalam input: menerima T
+
+00:09:19,000 --> 00:09:22,000
+and an output y ft if we were talking
+dan output y ft jika kita bercakap
+
+00:09:22,000 --> 00:09:25,000
+about discrete-time system I would represent
+tentang sistem diskret-kali saya akan mewakili
+
+00:09:25,000 --> 00:09:29,000
+the the input in terms a discrete-time
+input dari segi masa diskret yang
+
+00:09:29,000 --> 00:09:32,000
+variable and of course the output interns a
+berubah dan sudah tentu pelatih pengeluaran yang
+
+00:09:32,000 --> 00:09:36,000
+discrete-time variable also
+diskret-masa berubah-ubah juga
+
+00:09:36,000 --> 00:09:40,000
+now in very general terms systems are hard to deal with
+kini dari segi yang sangat umum sistem yang sukar untuk menangani
+
+00:09:40,000 --> 00:09:45,000
+because is they are defined very broadly a very generally
+kerana mereka adalah ditakrifkan sangat meluas yang biasanya
+
+00:09:45,000 --> 00:09:49,000
+and in dealing with systems and analyzing
+dan dalam berurusan dengan sistem dan menganalisis
+
+00:09:49,000 --> 00:09:52,000
+what we will do is attempt to exploit
+apa yang kita akan lakukan adalah percubaan untuk mengeksploitasi
+
+00:09:52,000 --> 00:09:56,000
+some very specific and as we'll see
+beberapa sangat khusus dan seperti yang kita akan melihat
+
+00:09:56,000 --> 00:09:59,000
+very useful system properties
+hartanah sistem yang sangat berguna
+
+00:09:59,000 --> 00:10:04,000
+to indicate what I mean and how things might be split up
+untuk menunjukkan apa yang saya maksudkan dan bagaimana perkara yang mungkin berpecah
+
+00:10:04,000 --> 00:10:07,000
+we could talk about systems and we'll talk about systems
+kita boleh bercakap tentang sistem dan kita akan bercakap tentang sistem
+
+00:10:07,000 --> 00:10:11,000
+that are linear and we could
+yang linear dan kita boleh
+
+00:10:11,000 --> 00:10:15,000
+divide systems basically into systems that are either linear
+membahagikan sistem pada dasarnya ke dalam sistem yang sama ada linear
+
+00:10:15,000 --> 00:10:19,000
+or nonlinear and we will
+atau tak linear dan kami akan
+
+00:10:19,000 --> 00:10:24,000
+or and also devices turns into systems that are
+atau dan juga peranti bertukar menjadi sistem yang
+
+00:10:24,000 --> 00:10:27,000
+what we refer to as time-invariant
+apa yang kita rujuk sebagai masa tak berubah
+
+00:10:27,000 --> 00:10:31,000
+or time-varying systems and these aren't turns that
+atau masa yang berbeza-beza sistem dan ini tidak bertukar yang
+
+00:10:31,000 --> 00:10:35,000
+we've defined yet of course but we will be defining
+kami telah ditakrifkan yet kursus tetapi kita akan menentukan
+
+00:10:35,000 --> 00:10:38,000
+in the course very shortly and while
+dalam perjalanan sangat lama dan semasa
+
+00:10:38,000 --> 00:10:43,000
+in some sense this division represents all systems and this those two
+dalam erti kata lain bahagian ini mewakili semua sistem dan orang-orang ini dua
+
+00:10:43,000 --> 00:10:47,000
+the focus of the course is really going to be principally
+fokus kursus yang benar-benar akan menjadi utama
+
+00:10:47,000 --> 00:10:50,000
+on linear time-invariant systems
+pada sistem masa tak berubah linear
+
+00:10:50,000 --> 00:10:54,000
+so in its basically the system's
+jadi pada yang pada dasarnya sistem
+
+00:10:54,000 --> 00:10:57,000
+that we will be focusing on and
+yang kita akan memberi tumpuan kepada dan
+
+00:10:57,000 --> 00:11:01,000
+will be referring to those systems as linear
+akan merujuk kepada sistem tersebut sebagai linear
+
+00:11:01,000 --> 00:11:04,000
+time-invariant systems
+sistem masa tak berubah
+
+00:11:04,000 --> 00:11:09,000
+well as a free clip said some other kinds of things that systems can do
+serta klip percuma berkata beberapa jenis lain perkara yang sistem boleh melakukan
+
+00:11:09,000 --> 00:11:13,000
+let me illustrate first in
+biarlah saya menggambarkan pertama di
+
+00:11:13,000 --> 00:11:16,000
+I a one-dimensional continuous-time
+Saya berterusan masa satu dimensi
+
+00:11:16,000 --> 00:11:21,000
+context and then later with a discrete-time example
+konteks dan kemudian dengan contoh yang diskret masa
+
+00:11:21,000 --> 00:11:25,000
+one example I'll some processing
+satu contoh saya akan beberapa pemprosesan
+
+00:11:25,000 --> 00:11:28,000
+I'll signals with an appropriate system
+Saya akan isyarat dengan sistem yang bersesuaian
+
+00:11:28,000 --> 00:11:31,000
+the particular example that I want to illustrate
+contoh tertentu yang saya mahu untuk menggambarkan
+
+00:11:31,000 --> 00:11:35,000
+relates to the restoration or old recordings
+berkaitan dengan pemulihan atau rakaman lama
+
+00:11:35,000 --> 00:11:40,000
+and missus some work that was done by Professor Thomas stocker who
+dan missus kerja-kerja yang telah dilakukan oleh Profesor Thomas Stocker yang
+
+00:11:40,000 --> 00:11:45,000
+is at the University Utah and work that he had done a number of years ago
+adalah di Universiti Utah dan kerja yang dia telah melakukan beberapa tahun yang lalu
+
+00:11:45,000 --> 00:11:49,000
+relating to the fact day in all recordings
+yang berkaitan dengan hari fakta dalam semua rakaman
+
+00:11:49,000 --> 00:11:53,000
+for example in caruso recordings
+sebagai contoh dalam rakaman Caruso
+
+00:11:53,000 --> 00:11:57,000
+the recording was done through mechanical morning
+rakaman itu dilakukan melalui pagi mekanikal
+
+00:11:57,000 --> 00:12:01,000
+and the characteristics love the horn tended to vary from day to day
+dan ciri-ciri suka tanduk cenderung untuk berbeza dari hari ke hari
+
+00:12:01,000 --> 00:12:04,000
+and because if the characteristics of the horn
+dan kerana jika ciri-ciri tanduk
+
+00:12:04,000 --> 00:12:08,000
+the recording tended to have a muffled quality something like
+rakaman cenderung untuk mempunyai sesuatu yang berkualiti sayu seperti
+
+00:12:08,000 --> 00:12:11,000
+yes sorta the sense that you would get
+ya sorta erti kata bahawa anda akan mendapat
+
+00:12:11,000 --> 00:12:15,000
+if you were speaking through a megaphone
+jika anda telah bercakap melalui megafon a
+
+00:12:15,000 --> 00:12:18,000
+what professor stock and it was developed a system
+apa saham profesor dan ia telah dibangunkan sistem
+
+00:12:18,000 --> 00:12:22,000
+to process these old recordings
+untuk memproses ini rakaman lama
+
+00:12:22,000 --> 00:12:25,000
+in such a way dead a lot or
+dalam apa-apa cara yang mati banyak atau
+
+00:12:25,000 --> 00:12:28,000
+the characteristics and distortion do
+ciri-ciri dan herotan melakukan
+
+00:12:28,000 --> 00:12:31,000
+to that recording system was removed so I'd like to
+dengan sistem rakaman telah dibuang jadi saya ingin
+
+00:12:31,000 --> 00:12:36,000
+illustrate that as one example some signal processing with an appropriate
+menggambarkan bahawa sebagai salah satu contoh beberapa pemprosesan isyarat yang sesuai dengan
+
+00:12:36,000 --> 00:12:40,000
+continuous-time system and what you'll hear
+sistem berterusan masa dan apa yang anda akan mendengar
+
+00:12:40,000 --> 00:12:43,000
+is a to track recording
+adalah untuk mengesan rakaman
+
+00:12:43,000 --> 00:12:47,000
+on the first track is the original on restored
+di landasan yang pertama adalah asal pada dipulihkan
+
+00:12:47,000 --> 00:12:51,000
+caruso recording and on the second track
+Caruso rakaman dan di landasan yang kedua
+
+00:12:51,000 --> 00:12:55,000
+is the result of the restoration and so as I switch back and forth
+adalah hasil daripada pemulihan dan sebagainya kerana saya beralih di
+
+00:12:55,000 --> 00:12:59,000
+from channel one to channel two will be switching from
+daripada saluran satu untuk menyalurkan dua akan bertukar daripada
+
+00:12:59,000 --> 00:13:03,000
+the original to the restored will begin the tape
+asal untuk dipulihkan akan bermula pita
+
+00:13:03,000 --> 00:13:07,000
+by playing the original and
+dengan bermain asal dan
+
+00:13:07,000 --> 00:13:10,000
+day and as it proceeds will switch
+hari dan apabila ia memasuki akan beralih
+
+00:13:10,000 --> 00:13:15,000
+so we begin on channel one
+jadi kami bermula pada saluran satu
+
+00:13:15,000 --> 00:13:21,000
+low pS The Regent
+rendah PS The Regent
+
+00:13:21,000 --> 00:13:27,000
+switch now process middle
+menukar kini proses pertengahan
+
+00:13:27,000 --> 00:13:31,000
+him home
+pulang
+
+00:13:31,000 --> 00:13:35,000
+his back 0 hit
+semula 0 melanda beliau
+
+00:13:35,000 --> 00:13:42,000
+back to the original p
+kembali ke p asal
+
+00:13:42,000 --> 00:13:46,000
+I read
+Saya membaca
+
+00:13:46,000 --> 00:13:49,000
+back to the restoration
+kembali kepada pemulihan
+
+00:13:49,000 --> 00:13:52,000
+mine yard
+kawasan saya
+
+00:13:52,000 --> 00:13:55,000
+home
+rumah
+
+00:13:55,000 --> 00:13:59,000
+and once again back to the rigid
+dan sekali lagi menyokong kepada tegar
+
+00:13:59,000 --> 00:14:04,000
+mid
+pertengahan
+
+00:14:04,000 --> 00:14:07,000
+and presumably and hopefully what you heard
+dan mungkin dan diharapkan apa yang anda dengar
+
+00:14:07,000 --> 00:14:11,000
+was dead in the restoration in fact a lot of the muffled
+telah mati dalam pemulihan sebenarnya banyak yang sayu
+
+00:14:11,000 --> 00:14:15,000
+characteristics the original recording
+ciri-ciri rakaman asal
+
+00:14:15,000 --> 00:14:19,000
+were compensated for or remove now
+telah pampasan atau mengeluarkan kini
+
+00:14:19,000 --> 00:14:23,000
+one of the interesting things that happened in fact in the work that
+salah satu perkara yang menarik yang berlaku sebenarnya dalam kerja-kerja yang
+
+00:14:23,000 --> 00:14:28,000
+lesser Stockham did is that in the process of the restoration and perhaps
+kurang Stockham lakukan adalah bahawa dalam proses pemulihan dan mungkin
+
+00:14:28,000 --> 00:14:29,000
+you've heard this
+anda pernah mendengar ini
+
+00:14:29,000 --> 00:14:34,000
+in the process of the restoration in fact some other background noise on the
+dalam proses pemulihan sebenarnya beberapa bunyi latar belakang lain di
+
+00:14:34,000 --> 00:14:35,000
+recording
+rakaman
+
+00:14:35,000 --> 00:14:39,000
+was emphasize and so he processed
+telah menekankan dan supaya dia diproses
+
+00:14:39,000 --> 00:14:43,000
+this the signal further in an attempt to
+ini isyarat lagi dalam usaha untuk
+
+00:14:43,000 --> 00:14:47,000
+remove that background noise and with that particular processing the
+keluarkan yang bunyi latar belakang dan dengan pemprosesan yang tertentu yang
+
+00:14:47,000 --> 00:14:48,000
+processing
+pemprosesan
+
+00:14:48,000 --> 00:14:52,000
+was very highly nonlinear a very interesting thing happened
+telah sangat sangat tak linear satu perkara yang sangat menarik berlaku
+
+00:14:52,000 --> 00:14:57,000
+which was that not only in at processing
+yang yang bukan sahaja dalam sekurang pemprosesan
+
+00:14:57,000 --> 00:15:01,000
+was the background noise removal but somewhat surprisingly
+ialah pemansuhan bunyi latar belakang tetapi agak menghairankan
+
+00:15:01,000 --> 00:15:05,000
+also the orchestra was and let me just plain bad
+juga orkestra itu dan biarlah saya hanya biasa buruk
+
+00:15:05,000 --> 00:15:10,000
+now as an example love some very sophisticated processing
+kini sebagai contoh suka beberapa pemprosesan yang canggih
+
+00:15:10,000 --> 00:15:14,000
+with the nonlinear system what you'll hear on channel one
+dengan sistem tak linear apa yang anda akan mendengar di saluran satu
+
+00:15:14,000 --> 00:15:17,000
+0 is the restoration as
+0 adalah pemulihan itu seperti yang
+
+00:15:17,000 --> 00:15:20,000
+we just plated when I switch to chat
+kita hanya bersalut apabila saya bertukar kepada berbual
+
+00:15:20,000 --> 00:15:23,000
+to will the Hampton
+diwasiatkan Hampton
+
+00:15:23,000 --> 00:15:27,000
+processing him home
+memproses pulang
+
+00:15:27,000 --> 00:15:31,000
+and acted one now
+dan bertindak sekarang
+
+00:15:31,000 --> 00:15:36,000
+0 would im
+0 im akan
+
+00:15:36,000 --> 00:15:39,000
+hell
+neraka
+
+00:15:39,000 --> 00:15:41,000
+now inside
+kini di dalam
+
+00:15:41,000 --> 00:15:47,000
+back
+kembali
+
+00:15:47,000 --> 00:15:50,000
+why did
+kenapa
+
+00:15:50,000 --> 00:15:56,000
+well
+baik
+
+00:15:56,000 --> 00:15:59,000
+him
+dia
+
+00:15:59,000 --> 00:16:02,000
+finally once again world
+akhirnya sekali lagi dunia
+
+00:16:02,000 --> 00:16:09,000
+okay so
+okay jadi
+
+00:16:12,000 --> 00:16:15,000
+that's an example love processing Ave
+itulah satu contoh cinta memproses Ave
+
+00:16:15,000 --> 00:16:20,000
+continuous-time signal with a corresponding continuous-time
+isyarat berterusan masa dengan berterusan-masa yang sama
+
+00:16:20,000 --> 00:16:24,000
+system now I'd like to illustrate an example
+sistem sekarang saya ingin untuk menggambarkan contoh
+
+00:16:24,000 --> 00:16:29,000
+some processing discrete-time signal and I'd like to do that in the context that
+beberapa pemprosesan isyarat diskret masa dan saya ingin melakukannya dalam konteks yang
+
+00:16:29,000 --> 00:16:30,000
+the example
+contoh
+
+00:16:30,000 --> 00:16:33,000
+ratio before a discrete-time signal which was
+nisbah sebelum isyarat diskret masa yang
+
+00:16:33,000 --> 00:16:38,000
+the dow jones industrial weekly stock market index
+indeks pasaran saham mingguan perindustrian Dow Jones
+
+00:16:38,000 --> 00:16:41,000
+I head shown it before as
+Saya kepala ditunjukkan sebelum ini sebagai
+
+00:16:41,000 --> 00:16:45,000
+I've shown it here again over a period
+Saya telah menunjukkan di sini sekali lagi dalam tempoh yang
+
+00:16:45,000 --> 00:16:48,000
+of slightly more than a year where this
+daripada sedikit lebih setahun di mana ini
+
+00:16:48,000 --> 00:16:52,000
+is the number of weeks and this is the
+adalah bilangan minggu dan ini adalah
+
+00:16:52,000 --> 00:16:55,000
+weekly index and to illustrate
+indeks mingguan dan untuk menggambarkan
+
+00:16:55,000 --> 00:16:59,000
+some of the processing what I'd like to do
+beberapa pemprosesan apa yang saya ingin lakukan
+
+00:16:59,000 --> 00:17:02,000
+is show the stock market index
+adalah menunjukkan indeks pasaran saham
+
+00:17:02,000 --> 00:17:06,000
+weekly index over a much longer time period a particular
+indeks mingguan sepanjang tempoh masa yang lebih lama yang tertentu
+
+00:17:06,000 --> 00:17:09,000
+the weekly index over a ten year period
+indeks mingguan sepanjang tempoh sepuluh tahun
+
+00:17:09,000 --> 00:17:12,000
+and that's what I show here so
+dan itulah yang saya menunjukkan di sini supaya
+
+00:17:12,000 --> 00:17:16,000
+what this covers is roughly 1927
+apa ini meliputi secara kasarnya 1927
+
+00:17:16,000 --> 00:17:19,000
+to 1937 and
+untuk tahun 1937 dan
+
+00:17:19,000 --> 00:17:23,000
+in this case although this is still a discrete-time signal
+dalam kes ini walaupun ini masih merupakan isyarat diskret masa
+
+00:17:23,000 --> 00:17:27,000
+just simply for the purposes display what we've done
+hanya semata-mata untuk tujuan memaparkan apa yang telah kami lakukan
+
+00:17:27,000 --> 00:17:30,000
+is to essentially connect the dots and
+adalah untuk menyambung dasarnya titik dan
+
+00:17:30,000 --> 00:17:35,000
+draw continuous curve through the points so that this picture isn't filled up
+lakarkan lengkung yang berterusan melalui titik supaya gambar ini tidak diisi
+
+00:17:35,000 --> 00:17:36,000
+with a lot of vertical lines
+dengan banyak garisan menegak
+
+00:17:36,000 --> 00:17:40,000
+so this is the discrete-time sequence
+jadi ini adalah urutan diskret masa
+
+00:17:40,000 --> 00:17:43,000
+represents the weekly Dow Jones
+mewakili mingguan Dow Jones
+
+00:17:43,000 --> 00:17:47,000
+Dow Jones index over a 10-year period and
+Indeks Dow Jones dalam tempoh 10 tahun dan
+
+00:17:47,000 --> 00:17:52,000
+here by the way again is the crash of
+di sini dengan cara itu sekali lagi adalah kemalangan
+
+00:17:52,000 --> 00:17:56,000
+it's interesting to note by the way day
+ia menarik untuk ambil perhatian melalui hari
+
+00:17:56,000 --> 00:18:01,000
+actually the disaster in the stock market wasn't so much the 1929 crash
+sebenarnya bencana di pasaran saham tidak begitu banyak 1929 kemalangan
+
+00:18:01,000 --> 00:18:06,000
+but the long downward trend that follow that and you can see that here
+tetapi trend menurun panjang yang mengikuti itu dan anda dapat melihat bahawa di sini
+
+00:18:06,000 --> 00:18:10,000
+by kinda filtering through by I
+oleh kinda bocor oleh I
+
+00:18:10,000 --> 00:18:14,000
+the rapid variations in the index and what you see is this
+variasi pesat dalam indeks dan apa yang anda lihat adalah ini
+
+00:18:14,000 --> 00:18:17,000
+smooth downward trend followed
+trend lancar ke bawah diikuti
+
+00:18:17,000 --> 00:18:23,000
+eventually by upward trend now
+akhirnya oleh trend menaik sekarang
+
+00:18:23,000 --> 00:18:28,000
+this issue love looking at something like this looking at a sequence
+isu ini suka melihat sesuatu seperti ini melihat urutan
+
+00:18:28,000 --> 00:18:33,000
+and following the smoother parts if it namely
+dan mengikut bahagian-bahagian lebih lancar jika ia iaitu
+
+00:18:33,000 --> 00:18:37,000
+the long-term trends is in fact something
+trend jangka panjang adalah sebenarnya sesuatu
+
+00:18:37,000 --> 00:18:41,000
+that is done quite typically with economic time series like this
+yang dilakukan agak biasanya dengan siri masa ekonomi seperti ini
+
+00:18:41,000 --> 00:18:45,000
+and in particular what's done is to smooth it
+dan khususnya apa yang dilakukan adalah untuk meratakan ia
+
+00:18:45,000 --> 00:18:49,000
+or average over some time period
+atau purata atas beberapa tempoh masa
+
+00:18:49,000 --> 00:18:56,000
+to emphasize the slow variations and de-emphasize the rapid variations
+memberi penekanan kepada variasi perlahan dan de-menekankan variasi pesat
+
+00:18:56,000 --> 00:19:00,000
+and that in fact is processing that is done
+dan yang sebenarnya adalah pemprosesan yang dilakukan
+
+00:19:00,000 --> 00:19:05,000
+with discrete-time system solos when you hear referred to let's say
+dengan solos sistem diskret-masa apabila anda mendengar dirujuk katakan
+
+00:19:05,000 --> 00:19:09,000
+in stock market reports fifty one day moving average
+dalam pasaran saham laporan lima puluh purata bergerak satu hari
+
+00:19:09,000 --> 00:19:14,000
+that in fact is processing the stock market index
+bahawa sebenarnya memproses indeks pasaran saham
+
+00:19:14,000 --> 00:19:18,000
+with a particular discrete-time system the result
+dengan sistem diskret-masa tertentu hasilnya
+
+00:19:18,000 --> 00:19:21,000
+up doing that on this particular example
+sehingga melakukan bahawa pada contoh ini tertentu
+
+00:19:21,000 --> 00:19:26,000
+generates a smooth version the curve which I overly here
+menjana versi licin keluk yang saya terlalu di sini
+
+00:19:26,000 --> 00:19:30,000
+and the overlay
+dan pelapisan
+
+00:19:30,000 --> 00:19:33,000
+than is really attempting to track the
+daripada yang benar-benar cuba untuk mengesan
+
+00:19:33,000 --> 00:19:37,000
+smoother variations and deemphasized
+variasi licin dan deemphasized
+
+00:19:37,000 --> 00:19:40,000
+more rapid variations let me just
+lebih banyak variasi pesat biarlah saya
+
+00:19:40,000 --> 00:19:44,000
+slightly offset that so that the different stands out a little more
+sedikit mengimbangi itu supaya yang berbeza menonjol lebih sedikit
+
+00:19:44,000 --> 00:19:48,000
+and so here you see what is
+dan sebagainya di sini anda melihat apa yang
+
+00:19:48,000 --> 00:19:51,000
+the original weekly index and
+indeks mingguan asal dan
+
+00:19:51,000 --> 00:19:55,000
+this is the result processing that sequence
+ini adalah pemprosesan keputusan bahawa urutan
+
+00:19:55,000 --> 00:19:58,000
+with inappropriate system
+dengan sistem yang tidak sesuai
+
+00:19:58,000 --> 00:20:02,000
+to apply smoothing and in fact
+memohon melicinkan dan sebenarnya
+
+00:20:02,000 --> 00:20:05,000
+what it is is a moving average and so here again
+apa itu adalah purata bergerak dan sebagainya di sini lagi
+
+00:20:05,000 --> 00:20:08,000
+you can see the in the smooth occurred
+anda boleh melihat di lancar berlaku
+
+00:20:08,000 --> 00:20:11,000
+this general downward trend
+ini trend menurun umum
+
+00:20:11,000 --> 00:20:15,000
+up until this time period followed by eventually
+sehingga tempoh masa ini diikuti dengan akhirnya
+
+00:20:15,000 --> 00:20:19,000
+recovery I well we've seen
+pemulihan saya juga kita telah melihat
+
+00:20:19,000 --> 00:20:23,000
+example with a continuous-time signals
+contoh dengan isyarat berterusan masa
+
+00:20:23,000 --> 00:20:27,000
+caruso recording an example with the discrete-time signal
+Caruso rakaman contoh dengan isyarat diskret masa
+
+00:20:27,000 --> 00:20:30,000
+this stock market index and what I'd also like to show
+ini indeks pasaran saham dan apa yang saya juga ingin menunjukkan
+
+00:20:30,000 --> 00:20:34,000
+is 30 example which is
+adalah 30 contoh yang
+
+00:20:34,000 --> 00:20:38,000
+the result some processing on an image in particular
+hasilnya beberapa pemprosesan pada imej khususnya
+
+00:20:38,000 --> 00:20:41,000
+the image that we talked about before which was the aerial photographs
+imej yang kita bercakap tentang sebelum yang merupakan gambar-gambar udara
+
+00:20:41,000 --> 00:20:45,000
+that had the problem some cloud cover
+yang mempunyai masalah yang beberapa awan
+
+00:20:45,000 --> 00:20:48,000
+so once again what we see here
+jadi sekali lagi apa yang kita lihat di sini
+
+00:20:48,000 --> 00:20:51,000
+is the original aerial photograph
+adalah foto udara asal
+
+00:20:51,000 --> 00:20:55,000
+with the cloud cover and
+dengan penutup awan dan
+
+00:20:55,000 --> 00:20:58,000
+some processing was applied to this using a system
+beberapa pemprosesan telah digunakan untuk ini menggunakan sistem
+
+00:20:58,000 --> 00:21:01,000
+which in fact was both nonlinear
+yang sebenarnya kedua-dua tak linear
+
+00:21:01,000 --> 00:21:05,000
+and quote time-varying or in the case
+dan quote masa yang berbeza-beza atau dalam hal
+
+00:21:05,000 --> 00:21:10,000
+these independent variables would refer to it as spatially varying
+pembolehubah bebas akan merujuk kepadanya sebagai spatial yang berbeza-beza
+
+00:21:10,000 --> 00:21:14,000
+and the result applying that processing
+dan hasilnya memohon pemprosesan yang
+
+00:21:14,000 --> 00:21:17,000
+is shown in the joining
+ditunjukkan dalam menyertai
+
+00:21:17,000 --> 00:21:21,000
+picture and what we see the air is
+gambar dan apa yang kita lihat udara adalah
+
+00:21:21,000 --> 00:21:24,000
+hopefully a reasonable attempt
+mudah-mudahan usaha yang munasabah
+
+00:21:24,000 --> 00:21:27,000
+to compensate for the cloud cover and
+untuk mengimbangi penutup awan dan
+
+00:21:27,000 --> 00:21:32,000
+this by the way was some work was done by Professor
+ini dengan cara yang telah beberapa kerja yang telah dilakukan oleh Profesor
+
+00:21:32,000 --> 00:21:35,000
+them MIT and has been
+mereka MIT dan telah
+
+00:21:35,000 --> 00:21:38,000
+very successful type processing were
+pemprosesan jenis yang sangat berjaya adalah
+
+00:21:38,000 --> 00:21:41,000
+aerial photographs I should say also
+gambar-gambar udara yang perlu saya katakan juga
+
+00:21:41,000 --> 00:21:46,000
+that this particular example is one where although the original signal
+bahawa contoh ini tertentu adalah salah satu di mana walaupun isyarat asal
+
+00:21:46,000 --> 00:21:51,000
+was a signal dead is continuous time that is
+adalah mati isyarat adalah masa berterusan yang
+
+00:21:51,000 --> 00:21:55,000
+the independent variables are continuous as they are in a spatial
+pembolehubah bebas adalah berterusan kerana mereka berada dalam ruang yang
+
+00:21:55,000 --> 00:21:59,000
+aerial photograph in fact for the processing
+foto udara sebenarnya untuk memproses
+
+00:21:59,000 --> 00:22:02,000
+that picture was first converted to a sequence
+gambar yang pertama kali memeluk urutan
+
+00:22:02,000 --> 00:22:06,000
+through a process called sampling which will be talking about later
+melalui proses yang dikenali sebagai persampelan yang akan bercakap tentang kemudian
+
+00:22:06,000 --> 00:22:12,000
+and then the processing in fact was done on a digital computer
+dan kemudian pemprosesan sebenarnya telah dilakukan pada komputer digital
+
+00:22:12,000 --> 00:22:16,000
+okay well these then are some examples
+okay baik ini maka adalah beberapa contoh
+
+00:22:16,000 --> 00:22:19,000
+all the use I'll some
+semua penggunaan saya akan beberapa
+
+00:22:19,000 --> 00:22:22,000
+systems to process
+sistem untuk memproses
+
+00:22:22,000 --> 00:22:26,000
+some signals both in continuous-time
+beberapa isyarat kedua-duanya dalam masa yang berterusan
+
+00:22:26,000 --> 00:22:30,000
+in discrete-time for one-dimensional signals
+dalam diskret masa untuk isyarat satu dimensi
+
+00:22:30,000 --> 00:22:34,000
+and for multi-dimensional signals
+dan untuk isyarat pelbagai dimensi
+
+00:22:34,000 --> 00:22:38,000
+and as I kinda refer to systems we've
+dan seperti yang saya agak merujuk kepada sistem kita telah
+
+00:22:38,000 --> 00:22:41,000
+thought of them as kinda one big block with appropriate
+dianggap mereka sebagai agak satu blok besar dengan sesuai
+
+00:22:41,000 --> 00:22:44,000
+or associated input and output and
+atau input yang berkaitan dan output dan
+
+00:22:44,000 --> 00:22:48,000
+as will be getting into in the first part of the course
+seperti yang akan masuk ke dalam bahagian pertama kursus ini
+
+00:22:48,000 --> 00:22:52,000
+very often systems are interconnected together
+seringkali sistem saling berkaitan bersama-sama
+
+00:22:52,000 --> 00:22:56,000
+for a variety of reasons some other kinds of interconnections that will talk
+untuk pelbagai sebab-sebab beberapa jenis lain saling hubungan yang akan bercakap
+
+00:22:56,000 --> 00:22:58,000
+about
+kira-kira
+
+00:22:58,000 --> 00:23:01,000
+are connecting systems
+adalah sistem yang menghubungkan
+
+00:23:01,000 --> 00:23:05,000
+in what are called series are cascaded connections
+dalam apa yang dipanggil siri disebarkan sambungan
+
+00:23:05,000 --> 00:23:08,000
+parallel interconnections feedback
+maklum balas saling hubungan selari
+
+00:23:08,000 --> 00:23:12,000
+interconnections and feedback interconnections
+saling hubungan dan saling hubungan maklum balas
+
+00:23:12,000 --> 00:23:15,000
+in fact are very interesting very important
+sebenarnya sangat menarik sangat penting
+
+00:23:15,000 --> 00:23:18,000
+for useful and will be major topic
+untuk berguna dan akan menjadi topik utama
+
+00:23:18,000 --> 00:23:22,000
+toward the end of the course feedback
+ke arah akhir maklum balas kursus
+
+00:23:22,000 --> 00:23:25,000
+as you may or may not know
+kerana anda mungkin atau mungkin tidak tahu
+
+00:23:25,000 --> 00:23:29,000
+comes into play in a variety of situations
+mula bermain dalam pelbagai situasi
+
+00:23:29,000 --> 00:23:32,000
+for example an amplifier design is we'll talk about
+sebagai contoh reka bentuk penguat kita akan bercakap tentang
+
+00:23:32,000 --> 00:23:36,000
+the black feedback plays an important role
+maklum balas yang hitam memainkan peranan penting
+
+00:23:36,000 --> 00:23:40,000
+in a situation where you have
+dalam situasi di mana anda mempunyai
+
+00:23:40,000 --> 00:23:45,000
+a basically unstable system feedback is often used to stabilize the system
+maklum balas sistem pada dasarnya tidak stabil sering digunakan untuk menstabilkan sistem
+
+00:23:45,000 --> 00:23:49,000
+and feedback interconnections systems in that sense
+dan saling hubungan maklum balas sistem dalam erti kata yang
+
+00:23:49,000 --> 00:23:52,000
+are very often used in high-performance aircraft
+sangat sering digunakan dalam pesawat berprestasi tinggi
+
+00:23:52,000 --> 00:23:56,000
+which are inherently unstable and are stabilized
+yang tidak stabil dan stabil
+
+00:23:56,000 --> 00:23:59,000
+this kind in action
+jenis ini dalam tindakan
+
+00:23:59,000 --> 00:24:02,000
+just two give you a little sense this
+hanya dua memberi anda rasa sedikit ini
+
+00:24:02,000 --> 00:24:05,000
+without going into any of the details
+tanpa perlu mana-mana perincian
+
+00:24:05,000 --> 00:24:10,000
+what i'd like to show you is and excerpt
+apa yang saya ingin menunjukkan kepada anda adalah dan petikan
+
+00:24:10,000 --> 00:24:14,000
+from a lecture day
+dari hari kuliah
+
+00:24:14,000 --> 00:24:17,000
+we'll be seeing toward the end of the course relating to
+kita akan melihat ke arah akhir kursus ini berkaitan dengan
+
+00:24:17,000 --> 00:24:22,000
+feedback analysis a feedback systems and uses a feedback
+analisis maklum balas sistem maklum balas dan menggunakan maklum balas yang
+
+00:24:22,000 --> 00:24:25,000
+and this is in the context what's referred to
+dan ini adalah di dalam konteks apa yang disebut
+
+00:24:25,000 --> 00:24:28,000
+as the inverted pendulum which is
+sebagai pendulum songsang yang
+
+00:24:28,000 --> 00:24:31,000
+system that's basically unstable feedback
+sistem yang pada dasarnya maklum balas tidak stabil
+
+00:24:31,000 --> 00:24:35,000
+interconnections are used to stabilize the idea
+saling hubungan yang digunakan untuk menstabilkan idea
+
+00:24:35,000 --> 00:24:39,000
+as you'll see in this brief clip is that
+seperti yang anda akan lihat dalam klip ringkas ini ialah
+
+00:24:39,000 --> 00:24:42,000
+there is a cart that's moving on a track
+terdapat sebuah MNB yang yang bergerak di landasan yang
+
+00:24:42,000 --> 00:24:45,000
+with a ride its pivoted at the base
+dengan menaiki yang dipangsikan di pangkalan
+
+00:24:45,000 --> 00:24:49,000
+and so that system in the absence anything
+dan sebagainya sistem yang dalam apa-apa jika tiada
+
+00:24:49,000 --> 00:24:52,000
+is unstable in that the ride attend for
+adalah tidak stabil kerana perjalanan menghadiri untuk
+
+00:24:52,000 --> 00:24:55,000
+and as we going to in detail in the lecture
+dan seperti yang kita akan secara terperinci dalam syarahan
+
+00:24:55,000 --> 00:24:59,000
+later use feedback to
+kemudian menggunakan maklum balas kepada
+
+00:24:59,000 --> 00:25:03,000
+position the card under the pendulum to balance it
+meletakkan kad di bawah bandul untuk mengimbangi
+
+00:25:03,000 --> 00:25:06,000
+and in fact that balancing can be done even
+dan sebenarnya pengimbangan yang boleh dilakukan walaupun
+
+00:25:06,000 --> 00:25:10,000
+when we modify the system in a variety of ways
+apabila kita mengubahsuai sistem dalam pelbagai cara
+
+00:25:10,000 --> 00:25:13,000
+as you'll see in this clip so let's take a look at that
+seperti yang anda akan lihat dalam klip ini jadi mari kita lihat bahawa
+
+00:25:13,000 --> 00:25:17,000
+remembering that this is just a brief excerpt
+mengingati bahawa ini adalah hanya satu petikan ringkas
+
+00:25:17,000 --> 00:25:21,000
+from a longer discussion I can change the
+daripada perbincangan yang lebih lama saya boleh menukar
+
+00:25:21,000 --> 00:25:25,000
+overall system even further by
+sistem secara keseluruhan lebih jauh lagi dengan
+
+00:25:25,000 --> 00:25:28,000
+let's say for example pouring a liquid
+katakan sebagai contoh mencurah cecair
+
+00:25:28,000 --> 00:25:31,000
+and now let me also comment that
+dan sekarang biarlah saya juga mengulas bahawa
+
+00:25:31,000 --> 00:25:35,000
+change the physics of a little bit because the
+menukar fizik sedikit kerana
+
+00:25:35,000 --> 00:25:38,000
+the liquid can slash around a little bit comes a little more complicated
+cecair boleh mengurangkan sekitar sedikit datang sedikit lebih rumit
+
+00:25:38,000 --> 00:25:42,000
+system but as you can see it still
+sistem tetapi seperti yang anda lihat ia masih
+
+00:25:42,000 --> 00:25:45,000
+remains balance
+kekal keseimbangan
+
+00:25:45,000 --> 00:25:49,000
+as you'll see when we get to it by the way that demonstration was a lot of fun
+seperti yang anda akan lihat apabila kita dapat dengan cara demonstrasi yang banyak keseronokan
+
+00:25:49,000 --> 00:25:51,000
+to do
+untuk melakukan
+
+00:25:51,000 --> 00:25:57,000
+now in talking about signals and systems as we go through the course
+kini dalam bercakap mengenai isyarat dan sistem seperti yang kita pergi melalui kursus
+
+00:25:57,000 --> 00:26:01,000
+their are several domains to in particular
+mereka beberapa domain untuk khususnya
+
+00:26:01,000 --> 00:26:04,000
+that we will find convenient for
+bahawa kita akan dapati mudah untuk
+
+00:26:04,000 --> 00:26:10,000
+the analysis and representation signals and systems
+analisis dan perwakilan isyarat dan sistem
+
+00:26:10,000 --> 00:26:13,000
+one is the time-domain
+satu adalah kali-domain
+
+00:26:13,000 --> 00:26:17,000
+which is what we tend to think
+iaitu apa yang kita cenderung untuk berfikir
+
+00:26:17,000 --> 00:26:20,000
+and which we have kind of been focusing on
+dan yang kita telah jenis telah memberi tumpuan kepada
+
+00:26:20,000 --> 00:26:23,000
+in the discussion so far in this lecture
+dalam perbincangan setakat ini dalam kuliah ini
+
+00:26:23,000 --> 00:26:27,000
+by equally important is what's referred to
+oleh sama penting adalah apa yang disebut
+
+00:26:27,000 --> 00:26:30,000
+as the frequency-domain
+sebagai frekuensi domain
+
+00:26:30,000 --> 00:26:34,000
+as representation for signals
+sebagai perwakilan untuk isyarat
+
+00:26:34,000 --> 00:26:37,000
+and as a means for analysis for systems
+dan sebagai satu cara untuk analisis bagi sistem
+
+00:26:37,000 --> 00:26:42,000
+and in the context or the frequency-domain representation
+dan dalam konteks atau perwakilan domain frekuensi
+
+00:26:42,000 --> 00:26:46,000
+some old the kinds a ideas on topics that will be exploring
+beberapa lama yang jenis idea mengenai topik-topik yang akan meneroka
+
+00:26:46,000 --> 00:26:49,000
+are the Fourier transform and
+adalah Fourier mengubah dan
+
+00:26:49,000 --> 00:26:53,000
+the le plus transform and
+yang le plus mengubah dan
+
+00:26:53,000 --> 00:26:57,000
+a discrete-time counterpart the apostrophe is for which is the sea
+seorang rakan diskret masa koma atas adalah yang mana adalah laut
+
+00:26:57,000 --> 00:26:59,000
+transport
+pengangkutan
+
+00:26:59,000 --> 00:27:04,000
+the Fourier transform discussion will get into fairly early in the course
+Fourier perbincangan akan masuk ke dalam agak awal dalam urusan
+
+00:27:04,000 --> 00:27:07,000
+and the La Paz transforming z transform
+dan La Paz mengubah z mengubah
+
+00:27:07,000 --> 00:27:12,000
+represent extensions the 48 transform and will be getting into
+mewakili sambungan 48 mengubah dan akan diikuti di dalam
+
+00:27:12,000 --> 00:27:15,000
+that later in the course just kinda initially
+yang kemudian dalam perjalanan hanya agak pada mulanya
+
+00:27:15,000 --> 00:27:20,000
+to think about the time domain and frequency domain
+untuk berfikir tentang domain masa dan domain frekuensi
+
+00:27:20,000 --> 00:27:23,000
+you might think for example over No being played
+anda mungkin berfikir sebagai contoh lebih Tiada yang dimainkan
+
+00:27:23,000 --> 00:27:27,000
+and the time-domain representation would be
+dan perwakilan masa-domain akan menjadi
+
+00:27:27,000 --> 00:27:30,000
+how let's say the
+bagaimana katakan yang
+
+00:27:30,000 --> 00:27:34,000
+sound pressure as a function of time would change
+tekanan bunyi sebagai fungsi masa akan mengubah
+
+00:27:34,000 --> 00:27:37,000
+and the frequency domain representation would
+dan perwakilan domain frekuensi akan
+
+00:27:37,000 --> 00:27:41,000
+correspond to representation the frequency content
+sesuai dengan perwakilan kandungan kekerapan
+
+00:27:41,000 --> 00:27:45,000
+the No and in fact what I'd like to do is
+Tiada dan sebenarnya apa yang saya ingin lakukan adalah
+
+00:27:45,000 --> 00:27:49,000
+illustrate that and those two domain simultaneously
+menggambarkan bahawa dan kedua-dua domain pada masa yang sama
+
+00:27:49,000 --> 00:27:52,000
+by playing a glockenspiel
+dengan bermain Glockenspiel yang
+
+00:27:52,000 --> 00:27:55,000
+no which'll here is the No
+ada di sini which'll adalah No
+
+00:27:55,000 --> 00:27:59,000
+repeated several times over and at the same time
+diulang beberapa kali dan pada masa yang sama
+
+00:27:59,000 --> 00:28:02,000
+you'll see to displays one on the left
+anda akan melihat untuk memaparkan satu di sebelah kiri
+
+00:28:02,000 --> 00:28:06,000
+representing the time domain display a representation
+mewakili domain masa memaparkan perwakilan yang
+
+00:28:06,000 --> 00:28:10,000
+the signal and the one on the right representing the frequency
+isyarat dan satu di sebelah kanan mewakili kekerapan
+
+00:28:10,000 --> 00:28:13,000
+me so let's look at that and
+saya jadi mari kita lihat pada itu dan
+
+00:28:13,000 --> 00:28:20,000
+you'll hear the note and simultaneously see these two displays
+anda akan mendengar nota dan pada masa yang sama melihat kedua-dua memaparkan
+
+00:28:21,000 --> 00:28:24,000
+there's the No on the left time
+ada yang Tiada pada masa yang kiri
+
+00:28:24,000 --> 00:28:28,000
+ways and on the right what we see
+cara dan pada sebelah kanan apa yang kita lihat
+
+00:28:28,000 --> 00:28:32,000
+is frequency content in particular
+adalah kandungan kekerapan khususnya
+
+00:28:32,000 --> 00:28:35,000
+indicating the fact dead there are several harmonics
+menunjukkan hakikat mati terdapat beberapa harmonik
+
+00:28:35,000 --> 00:28:42,000
+lines tell
+garis memberitahu
+
+00:28:54,000 --> 00:28:57,000
+okay well what I've gone thru
+okay juga apa yang saya pergi melalui
+
+00:28:57,000 --> 00:29:01,000
+in this lecture represents a brief overview
+dalam kuliah ini merupakan satu gambaran ringkas
+
+00:29:01,000 --> 00:29:07,000
+signals and systems and beginning with the next lecture we will be
+isyarat dan sistem dan permulaan dengan kuliah yang akan datang kita akan
+
+00:29:07,000 --> 00:29:11,000
+much more specific and precise first
+lebih khusus dan tepat pertama
+
+00:29:11,000 --> 00:29:14,000
+discussing some basic signals and then
+membincangkan beberapa isyarat asas dan kemudian
+
+00:29:14,000 --> 00:29:18,000
+talking about systems and system properties and how to exploit
+bercakap tentang sistem dan ciri-ciri sistem dan bagaimana untuk mengeksploitasi
+
+00:29:18,000 --> 00:29:23,000
+as one final comment that I'd
+sebagai salah satu komen terakhir yang saya akan
+
+00:29:23,000 --> 00:29:27,000
+like to making this lecture I'd like to
+seperti untuk membuat kuliah ini saya ingin
+
+00:29:27,000 --> 00:29:30,000
+emphasizes at the out said
+menekankan di luar tersebut
+
+00:29:30,000 --> 00:29:34,000
+dead the taped lectures
+mati kuliah dirakam
+
+00:29:34,000 --> 00:29:37,000
+represent only one com- ponent the cores
+mewakili hanya satu com-Ponent teras
+
+00:29:37,000 --> 00:29:40,000
+and equally important will be
+dan sama-sama penting adalah
+
+00:29:40,000 --> 00:29:45,000
+both the textbook and the video course manual in particular
+kedua-dua buku teks dan manual kursus video khususnya
+
+00:29:45,000 --> 00:29:49,000
+it's important not only to reviewing the tapes
+adalah penting bukan sahaja untuk mengkaji semula pita
+
+00:29:49,000 --> 00:29:55,000
+but simultaneously or in conjunction with that
+tetapi pada masa yang sama atau bersama dengan yang
+
+00:29:55,000 --> 00:29:58,000
+doing the appropriate reading in the textbook and
+melakukan bacaan yang sesuai dalam buku teks dan
+
+00:29:58,000 --> 00:30:02,000
+also working through the problems carefully
+juga bekerja melalui masalah dengan berhati-hati
+
+00:30:02,000 --> 00:30:06,000
+in the video course manual in a course like this
+dalam manual kursus video dalam kursus seperti ini
+
+00:30:06,000 --> 00:30:10,000
+you basically only get out a bit as much as you put into it
+anda pada dasarnya hanya keluar sedikit sebanyak yang anda dimasukkan ke dalam ia
+
+00:30:10,000 --> 00:30:13,000
+the hope is dead if you put the
+harapan itu telah mati jika anda meletakkan
+
+00:30:13,000 --> 00:30:18,000
+right amount of time and effort into it you'll find the course to be
+jumlah yang betul masa dan usaha ke dalamnya anda akan mencari jalan yang lebih
+
+00:30:18,000 --> 00:30:22,000
+educational and interesting and I certainly hope that will be the case
+pendidikan dan menarik dan saya amat berharap yang akan kes itu
+
+00:30:22,000 --> 00:30:22,000
+thank you
+terima kasih
+

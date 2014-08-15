@@ -1,0 +1,966 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU Horan
+
+00:00:28,000 --> 00:00:29,000
+the
+
+00:00:29,000 --> 00:00:31,000
+
+
+00:00:31,000 --> 00:00:34,000
+the
+
+00:00:34,000 --> 00:00:40,000
+the in
+
+00:00:40,000 --> 00:00:47,000
+the new
+
+00:00:48,000 --> 00:00:53,000
+the the
+
+00:00:53,000 --> 00:00:58,000
+during the course we've developed a number
+
+00:00:58,000 --> 00:01:02,000
+love very powerful and useful tools and we've seen how
+
+00:01:02,000 --> 00:01:07,000
+these can be used in designing and analyzing systems for example for
+
+00:01:07,000 --> 00:01:09,000
+filtering for modulation et cetera
+
+00:01:09,000 --> 00:01:12,000
+I'd like to conclude this
+
+00:01:12,000 --> 00:01:16,000
+series of lectures with an introduction to one more
+
+00:01:16,000 --> 00:01:19,000
+important topic namely the
+
+00:01:19,000 --> 00:01:22,000
+analysis love feedback systems and
+
+00:01:22,000 --> 00:01:27,000
+what are the principal reasons that we have left
+
+00:01:27,000 --> 00:01:32,000
+this discussion to the last part of the cores is so that we can exploit
+
+00:01:32,000 --> 00:01:36,000
+some of the ideas that we've just developed in
+
+00:01:36,000 --> 00:01:41,000
+summer the previous lectures namely the tools afforded us by
+
+00:01:41,000 --> 00:01:46,000
+applause NZ transforms now
+
+00:01:46,000 --> 00:01:49,000
+as I had indicated in one of the
+
+00:01:49,000 --> 00:01:53,000
+very first lectures a common example
+
+00:01:53,000 --> 00:01:56,000
+a feedback system is the problem love let's say
+
+00:01:56,000 --> 00:02:00,000
+balancing a broom or in the case if that lecture balancing
+
+00:02:00,000 --> 00:02:04,000
+my son's force on in the palm of your hand
+
+00:02:04,000 --> 00:02:07,000
+and kinda the idea there is dead
+
+00:02:07,000 --> 00:02:11,000
+what that relies on in order to
+
+00:02:11,000 --> 00:02:16,000
+make that a stable system is feedback in that particular case visual feedback
+
+00:02:16,000 --> 00:02:22,000
+that specific problem the one about saying something let's say in the palm
+
+00:02:22,000 --> 00:02:22,000
+of your hand
+
+00:02:22,000 --> 00:02:28,000
+is an example love a problem which is commonly referred to as
+
+00:02:28,000 --> 00:02:33,000
+inverted pendulum and it's one that we will actually be analyzing
+
+00:02:33,000 --> 00:02:36,000
+in a fair manner detailed not in this lecture but in the next lecture
+
+00:02:36,000 --> 00:02:40,000
+but let me just kinda vindicate what so the issues
+
+00:02:40,000 --> 00:02:46,000
+are let me describe this into context not over balancing a broom on your hand
+
+00:02:46,000 --> 00:02:46,000
+but
+
+00:02:46,000 --> 00:02:50,000
+let's say that we have a mechanical system which consists of a card
+
+00:02:50,000 --> 00:02:54,000
+and the card can move let's say in one dimension
+
+00:02:54,000 --> 00:02:57,000
+and it has mounted on it
+
+00:02:57,000 --> 00:03:00,000
+a bar a ride with the weight on the top
+
+00:03:00,000 --> 00:03:05,000
+and it pivots around the base so that essentially represents the
+
+00:03:05,000 --> 00:03:08,000
+inverted pendulum so that system can be
+
+00:03:08,000 --> 00:03:13,000
+more or less depicted as i've indicated here and this is the cart
+
+00:03:13,000 --> 00:03:17,000
+that can move along the x-axis and
+
+00:03:17,000 --> 00:03:21,000
+here we have a pivot point a ride await at the top
+
+00:03:21,000 --> 00:03:24,000
+and then of course there's several forces acting on this and
+
+00:03:24,000 --> 00:03:28,000
+their is an acceleration that can be applied to the cart:
+
+00:03:28,000 --> 00:03:32,000
+and that will be thought a as the external input
+
+00:03:32,000 --> 00:03:36,000
+and then on the pendulum itself on the wait
+
+00:03:36,000 --> 00:03:39,000
+there is the force of gravity and
+
+00:03:39,000 --> 00:03:43,000
+then typically said if external disturbances that might
+
+00:03:43,000 --> 00:03:47,000
+represent for example air currents or wind or whatever
+
+00:03:47,000 --> 00:03:50,000
+dead will attempt to
+
+00:03:50,000 --> 00:03:54,000
+Dez to destabilize the system specifically
+
+00:03:54,000 --> 00:03:58,000
+to have the pendulum fall down now
+
+00:03:58,000 --> 00:04:02,000
+if we look at this system in more or less
+
+00:04:02,000 --> 00:04:05,000
+a straightforward way what we have then
+
+00:04:05,000 --> 00:04:10,000
+are the system dynamics and
+
+00:04:10,000 --> 00:04:15,000
+several inputs one of which is the external disturbances
+
+00:04:15,000 --> 00:04:19,000
+and the second is the acceleration which is
+
+00:04:19,000 --> 00:04:23,000
+the external acceleration is supplied and the app for the system can be
+
+00:04:23,000 --> 00:04:24,000
+thought I love
+
+00:04:24,000 --> 00:04:28,000
+as the angular displacement love the pendulum which
+
+00:04:28,000 --> 00:04:33,000
+if we want a balanced we would like that angular displacement to be equal to 0
+
+00:04:33,000 --> 00:04:38,000
+now if we know exactly what the system dynamics are
+
+00:04:38,000 --> 00:04:42,000
+and if we knew exactly what the external disturbances are
+
+00:04:42,000 --> 00:04:47,000
+invented principal we could design and acceleration namely an input
+
+00:04:47,000 --> 00:04:50,000
+dead would exactly generate
+
+00:04:50,000 --> 00:04:56,000
+0 output in other words the angle would be equal to 0 but as you can imagine
+
+00:04:56,000 --> 00:04:59,000
+just is its basically impossible to balance a broom
+
+00:04:59,000 --> 00:05:04,000
+in the palm of your hand with your eyes close
+
+00:05:04,000 --> 00:05:08,000
+what is very hard to ascertain in advance or what the various
+
+00:05:08,000 --> 00:05:12,000
+dynamics and disturbances are and so more typically
+
+00:05:12,000 --> 00:05:15,000
+what you with a kid doing is measuring
+
+00:05:15,000 --> 00:05:18,000
+the output angle and
+
+00:05:18,000 --> 00:05:22,000
+then using that measurement to somehow
+
+00:05:22,000 --> 00:05:25,000
+influence the applied acceleration or fours
+
+00:05:25,000 --> 00:05:29,000
+and that then is an example other feedback system
+
+00:05:29,000 --> 00:05:33,000
+so we would major the output angle
+
+00:05:33,000 --> 00:05:36,000
+and generate
+
+00:05:36,000 --> 00:05:40,000
+an input acceleration which is
+
+00:05:40,000 --> 00:05:44,000
+some function love what that output angle is
+
+00:05:44,000 --> 00:05:48,000
+and if we choose the feedback dynamics correctly
+
+00:05:48,000 --> 00:05:52,000
+then in fact we can drive this output 20
+
+00:05:52,000 --> 00:05:56,000
+this is one example love a system
+
+00:05:56,000 --> 00:06:00,000
+which is inherently unstable because if we left it to its own
+
+00:06:00,000 --> 00:06:05,000
+devices the pendulum with simply fall down and essentially by applying
+
+00:06:05,000 --> 00:06:06,000
+feedback
+
+00:06:06,000 --> 00:06:10,000
+what we're trying to do is stabilize this inherently unstable system
+
+00:06:10,000 --> 00:06:15,000
+and we'll talk a little bit more about that specific application feedback
+
+00:06:15,000 --> 00:06:19,000
+shortly another common example a feedback
+
+00:06:19,000 --> 00:06:22,000
+is in positioning our tracking systems
+
+00:06:22,000 --> 00:06:26,000
+and I aid indicate one here
+
+00:06:26,000 --> 00:06:30,000
+which corresponds to the problem love positioning
+
+00:06:30,000 --> 00:06:33,000
+a telescope which is mounted on a rotating platform
+
+00:06:33,000 --> 00:06:37,000
+so in a system that tape for example
+
+00:06:37,000 --> 00:06:41,000
+I indicate here the rotating platform in the telescope
+
+00:06:41,000 --> 00:06:45,000
+it's driven by a motor and again
+
+00:06:45,000 --> 00:06:48,000
+we could imagine in principle the possibility love
+
+00:06:48,000 --> 00:06:51,000
+driving this to the desired angle
+
+00:06:51,000 --> 00:06:56,000
+by choosing an appropriate applied input voltage
+
+00:06:56,000 --> 00:07:01,000
+and as long as we know such things as what the disturbances are that influence
+
+00:07:01,000 --> 00:07:05,000
+the telescope mount and what the characteristics that the motor are
+
+00:07:05,000 --> 00:07:08,000
+in principle we could in fact
+
+00:07:08,000 --> 00:07:11,000
+carry this out in a form which is referred to as open loop
+
+00:07:11,000 --> 00:07:16,000
+namely we can choose an appropriate input voltage
+
+00:07:16,000 --> 00:07:19,000
+to drive a motor to set
+
+00:07:19,000 --> 00:07:24,000
+the platform ankle at the desired angular position
+
+00:07:24,000 --> 00:07:29,000
+however again there are enough unknowns in a problem like that
+
+00:07:29,000 --> 00:07:32,000
+so that one is motivated to employ
+
+00:07:32,000 --> 00:07:36,000
+feedback namely to make a measurement
+
+00:07:36,000 --> 00:07:41,000
+up the output angle and use that in a feedback loop
+
+00:07:41,000 --> 00:07:45,000
+to influence the press the drive for the motor
+
+00:07:45,000 --> 00:07:50,000
+so that the motor so that the telescope platform is positioned appropriately
+
+00:07:50,000 --> 00:07:54,000
+so if we look at this in a feedback
+
+00:07:54,000 --> 00:07:57,000
+context we would then
+
+00:07:57,000 --> 00:08:01,000
+take the measured output angle
+
+00:08:01,000 --> 00:08:05,000
+and the measured output angle
+
+00:08:05,000 --> 00:08:09,000
+would be fed back and compared
+
+00:08:09,000 --> 00:08:13,000
+with the desired angle and
+
+00:08:13,000 --> 00:08:17,000
+the difference between those which essentially is the error between the
+
+00:08:17,000 --> 00:08:20,000
+platform positioning and the desired position
+
+00:08:20,000 --> 00:08:25,000
+would be put perhaps through an appropriate gainer attenuation
+
+00:08:25,000 --> 00:08:28,000
+and used as the exhortation to the motor
+
+00:08:28,000 --> 00:08:32,000
+so in the mechanical or physical system
+
+00:08:32,000 --> 00:08:37,000
+that would correspond to measuring the angle let's say
+
+00:08:37,000 --> 00:08:40,000
+with the potentiometer so here we're measuring
+
+00:08:40,000 --> 00:08:44,000
+the angle and we have an output which is proportional
+
+00:08:44,000 --> 00:08:47,000
+to that measured angle and then we would use
+
+00:08:47,000 --> 00:08:51,000
+feedback comparing
+
+00:08:51,000 --> 00:08:56,000
+the measured angle to some
+
+00:08:56,000 --> 00:09:00,000
+proportionality factor multiplying the desired angle
+
+00:09:00,000 --> 00:09:03,000
+so here we have the desired angle
+
+00:09:03,000 --> 00:09:06,000
+again through some type a potentiometer
+
+00:09:06,000 --> 00:09:09,000
+the two are compared I do the comparator
+
+00:09:09,000 --> 00:09:13,000
+we basically have an indication of what the difference
+
+00:09:13,000 --> 00:09:17,000
+is and that represents an error between the desired in the true Engel
+
+00:09:17,000 --> 00:09:21,000
+and then that is used through perhaps an amplifier
+
+00:09:21,000 --> 00:09:25,000
+to control the motor and in that case
+
+00:09:25,000 --> 00:09:29,000
+of course when the air goes to zero that means that the actual angle on the
+
+00:09:29,000 --> 00:09:31,000
+desired angle
+
+00:09:31,000 --> 00:09:35,000
+are equal and in fact in that case also with this system
+
+00:09:35,000 --> 00:09:40,000
+the input to the motor is likewise equal to 0
+
+00:09:40,000 --> 00:09:43,000
+now and as i've illustrated here
+
+00:09:43,000 --> 00:09:47,000
+it tends to be in the context or a continuous-time
+
+00:09:47,000 --> 00:09:51,000
+or analog system and in fact another very common
+
+00:09:51,000 --> 00:09:54,000
+way of doing positioning or tracking is
+
+00:09:54,000 --> 00:09:58,000
+to instead implement the feedback
+
+00:09:58,000 --> 00:10:02,000
+using a discrete I'm a digital system
+
+00:10:02,000 --> 00:10:06,000
+and so in that case we would basically take the
+
+00:10:06,000 --> 00:10:09,000
+position output as its measures
+
+00:10:09,000 --> 00:10:12,000
+sample at a sexually
+
+00:10:12,000 --> 00:10:16,000
+convert that to additional discrete-time
+
+00:10:16,000 --> 00:10:22,000
+signal and then that is used in conjunction
+
+00:10:22,000 --> 00:10:26,000
+with the desired angle
+
+00:10:26,000 --> 00:10:30,000
+which both foreign ports to this processor
+
+00:10:30,000 --> 00:10:34,000
+and the output a bad is converted let's say back to
+
+00:10:34,000 --> 00:10:40,000
+and a an analog a continuous-time voltage and used to drive the motor
+
+00:10:40,000 --> 00:10:43,000
+now you could ask why would you go to
+
+00:10:43,000 --> 00:10:47,000
+a digital or discrete time measurement rather than doing it
+
+00:10:47,000 --> 00:10:51,000
+the way a I showed on the previous overlay which seemed relatively
+
+00:10:51,000 --> 00:10:52,000
+straightforward
+
+00:10:52,000 --> 00:10:56,000
+and the reason principally is dead in the context of a digital implementation
+
+00:10:56,000 --> 00:11:00,000
+the feedback process often
+
+00:11:00,000 --> 00:11:03,000
+you can implement a better controlled
+
+00:11:03,000 --> 00:11:06,000
+an offense also more sophisticated
+
+00:11:06,000 --> 00:11:12,000
+algorithm for the feedback dynamic so that you can take a cab perhaps not only
+
+00:11:12,000 --> 00:11:17,000
+the angle itself but also love the rate of change a bang going in fact
+
+00:11:17,000 --> 00:11:21,000
+the rate of change in the rate of change in angle and
+
+00:11:21,000 --> 00:11:24,000
+so the system Isis shown air then
+
+00:11:24,000 --> 00:11:28,000
+is basically has a discrete-time
+
+00:11:28,000 --> 00:11:33,000
+or digital feedback loop around a continuous-time system
+
+00:11:33,000 --> 00:11:36,000
+now open this is an example 0
+
+00:11:36,000 --> 00:11:39,000
+in fact the more general way in which
+
+00:11:39,000 --> 00:11:43,000
+discrete-time feedback is used with
+
+00:11:43,000 --> 00:11:46,000
+continuous systems and
+
+00:11:46,000 --> 00:11:49,000
+let me indicate in general what such
+
+00:11:49,000 --> 00:11:53,000
+what the character a block diagram such a system might be
+
+00:11:53,000 --> 00:11:59,000
+typically if we abstract away from the telescope Positioning System
+
+00:11:59,000 --> 00:12:03,000
+we might have a more general continuous-time system
+
+00:12:03,000 --> 00:12:08,000
+and around which we want to apply some feedback which we could do with a
+
+00:12:08,000 --> 00:12:10,000
+continuous-time system
+
+00:12:10,000 --> 00:12:13,000
+or with the discrete-time system by first
+
+00:12:13,000 --> 00:12:20,000
+converting the signals to discrete-time signals
+
+00:12:20,000 --> 00:12:24,000
+then processing that with a discrete-time system
+
+00:12:24,000 --> 00:12:28,000
+and then through inappropriate interpolation algorithm
+
+00:12:28,000 --> 00:12:32,000
+we would then convert that back to
+
+00:12:32,000 --> 00:12:36,000
+a continuous-time signal and
+
+00:12:36,000 --> 00:12:40,000
+the difference between the input signal and this continues to signal which is
+
+00:12:40,000 --> 00:12:41,000
+fed back
+
+00:12:41,000 --> 00:12:44,000
+then forms the exhortation to the system that
+
+00:12:44,000 --> 00:12:47,000
+essentially we're trying to control and in
+
+00:12:47,000 --> 00:12:51,000
+many systems that this type the advantage
+
+00:12:51,000 --> 00:12:54,000
+is that this system can be implemented
+
+00:12:54,000 --> 00:12:58,000
+in a very reproducible way either with a digital computer computer
+
+00:12:58,000 --> 00:13:02,000
+or with microprocessor and although
+
+00:13:02,000 --> 00:13:06,000
+we're not going to go into this in any detail
+
+00:13:06,000 --> 00:13:10,000
+in this lecture there is some discussion this in the text
+
+00:13:10,000 --> 00:13:14,000
+essentially if we make certain assumptions about
+
+00:13:14,000 --> 00:13:18,000
+this particular feedback system we can
+
+00:13:18,000 --> 00:13:22,000
+move the continues to discrete-time converter
+
+00:13:22,000 --> 00:13:26,000
+up to this point and to this point and we can move
+
+00:13:26,000 --> 00:13:30,000
+the interpolating system outside
+
+00:13:30,000 --> 00:13:34,000
+the summer and what happens in that case
+
+00:13:34,000 --> 00:13:37,000
+is that we end up with what
+
+00:13:37,000 --> 00:13:41,000
+looks like an inherently discrete-time
+
+00:13:41,000 --> 00:13:45,000
+feedback system so in fact we take those steps
+
+00:13:45,000 --> 00:13:48,000
+then what we'll end up with for a feedback system
+
+00:13:48,000 --> 00:13:52,000
+is a system that essentially
+
+00:13:52,000 --> 00:13:55,000
+can be analyzed as a discrete-time system
+
+00:13:55,000 --> 00:13:59,000
+here we have what is in the forward path
+
+00:13:59,000 --> 00:14:02,000
+and is basically the continuous-time system
+
+00:14:02,000 --> 00:14:06,000
+with the interpolator at one end and it continues to discrete-time converter at
+
+00:14:06,000 --> 00:14:07,000
+the other end
+
+00:14:07,000 --> 00:14:11,000
+and then we have whatever system it was in the feedback loop
+
+00:14:11,000 --> 00:14:15,000
+discrete-time that shows up in this
+
+00:14:15,000 --> 00:14:18,000
+feedback loop well show this
+
+00:14:18,000 --> 00:14:22,000
+mainly to emphasize the fact although there are some steps there that we
+
+00:14:22,000 --> 00:14:24,000
+obviously left out
+
+00:14:24,000 --> 00:14:28,000
+I show that mainly to emphasize the fact that feedback arises
+
+00:14:28,000 --> 00:14:32,000
+not just in the context of continuous-time systems
+
+00:14:32,000 --> 00:14:35,000
+but also the analysis love discrete-time
+
+00:14:35,000 --> 00:14:39,000
+feedback systems becomes important perhaps because
+
+00:14:39,000 --> 00:14:44,000
+we have used discrete-time feedback around a continuous-time system
+
+00:14:44,000 --> 00:14:48,000
+but also perhaps because the feedback system
+
+00:14:48,000 --> 00:14:52,000
+is inherently discrete-time in lobby and just illustrate
+
+00:14:52,000 --> 00:14:55,000
+one or indicate one example in which
+
+00:14:55,000 --> 00:14:59,000
+that might arise this is an example
+
+00:14:59,000 --> 00:15:02,000
+in which which is also
+
+00:15:02,000 --> 00:15:05,000
+discussed in so in more detail in the text
+
+00:15:05,000 --> 00:15:09,000
+but basically population studies for example
+
+00:15:09,000 --> 00:15:14,000
+represent examples all discrete-time feedback systems
+
+00:15:14,000 --> 00:15:19,000
+where let's say that we have some type of model
+
+00:15:19,000 --> 00:15:23,000
+for population growth and since people come
+
+00:15:23,000 --> 00:15:27,000
+in imager amounts that represents essentially
+
+00:15:27,000 --> 00:15:31,000
+the the I the output over any population model
+
+00:15:31,000 --> 00:15:35,000
+essentially are inherently represents a sequence namely its index
+
+00:15:35,000 --> 00:15:38,000
+on an integer variable
+
+00:15:38,000 --> 00:15:42,000
+and typically models for population growth
+
+00:15:42,000 --> 00:15:47,000
+are unstable systems you can kind imagine that because
+
+00:15:47,000 --> 00:15:52,000
+if you take simple models the population and what happens is that
+
+00:15:52,000 --> 00:15:55,000
+the in any generation the
+
+00:15:55,000 --> 00:15:58,000
+number all people or
+
+00:15:58,000 --> 00:16:01,000
+animals or whatever it is that this is modeling
+
+00:16:01,000 --> 00:16:05,000
+grows essentially exponentially I love with
+
+00:16:05,000 --> 00:16:09,000
+the size the previous generation now where does the feedback come in
+
+00:16:09,000 --> 00:16:13,000
+well the feedback typically comes in in in
+
+00:16:13,000 --> 00:16:18,000
+incorporating in the overall model various retarding factors for example
+
+00:16:18,000 --> 00:16:22,000
+as the population increases the food supply becomes more limited
+
+00:16:22,000 --> 00:16:26,000
+and that a sexually as a feedback process
+
+00:16:26,000 --> 00:16:30,000
+dead acts to
+
+00:16:30,000 --> 00:16:33,000
+retard the population growth and so
+
+00:16:33,000 --> 00:16:37,000
+an overall model are somewhat simplified
+
+00:16:37,000 --> 00:16:41,000
+for a for a population system
+
+00:16:41,000 --> 00:16:46,000
+is the open-loop model in the absence of retarding factors
+
+00:16:46,000 --> 00:16:49,000
+and then very often the retarding factors
+
+00:16:49,000 --> 00:16:53,000
+can be described as being related
+
+00:16:53,000 --> 00:16:56,000
+to the size of the population and those
+
+00:16:56,000 --> 00:16:59,000
+essentially act to reduce
+
+00:16:59,000 --> 00:17:04,000
+the overall input to the population model
+
+00:17:04,000 --> 00:17:07,000
+and so population studies are
+
+00:17:07,000 --> 00:17:14,000
+one very common example love discrete-time feedback systems
+
+00:17:14,000 --> 00:17:17,000
+well what would a look at and understand
+
+00:17:17,000 --> 00:17:21,000
+are the basic properties love
+
+00:17:21,000 --> 00:17:24,000
+feedback systems and to do that
+
+00:17:24,000 --> 00:17:28,000
+let's look at the basic block diagrams and equations
+
+00:17:28,000 --> 00:17:32,000
+for feedback systems either continuous-time and discrete-time
+
+00:17:32,000 --> 00:17:35,000
+let's begin with
+
+00:17:35,000 --> 00:17:38,000
+the continuous-time case
+
+00:17:38,000 --> 00:17:44,000
+and now what we've done is simply abstract out
+
+00:17:44,000 --> 00:17:48,000
+any of the applications to a fairly general system
+
+00:17:48,000 --> 00:17:51,000
+in which we have a system HVS
+
+00:17:51,000 --> 00:17:56,000
+in what's referred to as the forward path
+
+00:17:56,000 --> 00:18:00,000
+and a system GIS in the feedback path
+
+00:18:00,000 --> 00:18:03,000
+and the the
+
+00:18:03,000 --> 00:18:08,000
+input to the system HVS is the difference between the input to the
+
+00:18:08,000 --> 00:18:09,000
+overall system
+
+00:18:09,000 --> 00:18:13,000
+and the output out the feedback loop
+
+00:18:13,000 --> 00:18:16,000
+and I draw your attention to the fact that
+
+00:18:16,000 --> 00:18:20,000
+what we illustrate here and what we're analyzing is negative feedback
+
+00:18:20,000 --> 00:18:23,000
+namely this out this output is attracted
+
+00:18:23,000 --> 00:18:26,000
+from the input and thats done
+
+00:18:26,000 --> 00:18:30,000
+more for reasons have convention than for any other reasons
+
+00:18:30,000 --> 00:18:34,000
+its typical to do that an appropriate certainly
+
+00:18:34,000 --> 00:18:37,000
+in some feedback systems but not all and
+
+00:18:37,000 --> 00:18:42,000
+the output of the answer is commonly referred to as the error signal
+
+00:18:42,000 --> 00:18:45,000
+indicating that is the difference between the signal fed back
+
+00:18:45,000 --> 00:18:49,000
+and the input to the overall system
+
+00:18:49,000 --> 00:18:52,000
+now if we want to analyze the feedback system
+
+00:18:52,000 --> 00:18:55,000
+we would do that essentially by writing the appropriate equations
+
+00:18:55,000 --> 00:18:59,000
+and its best done and generating
+
+00:18:59,000 --> 00:19:03,000
+the equivalent system function for the overall system
+
+00:19:03,000 --> 00:19:08,000
+it's best on in the frequency or poss transform domain
+
+00:19:08,000 --> 00:19:11,000
+rather than a in the time domain and let me just indicate
+
+00:19:11,000 --> 00:19:15,000
+what the steps are that are involved in there are few steps have algebra that
+
+00:19:15,000 --> 00:19:20,000
+I that I'll leave in your hands but basically if we look at
+
+00:19:20,000 --> 00:19:26,000
+this feedback system we can label of course is the output is why ft
+
+00:19:26,000 --> 00:19:30,000
+we can label they look lost transform the output is why evas
+
+00:19:30,000 --> 00:19:35,000
+and we also have YS as the input here
+
+00:19:35,000 --> 00:19:41,000
+because this is the system function the apostrophe s former varsity is simply
+
+00:19:41,000 --> 00:19:45,000
+the applause transformer this and for which is why our best times Govs
+
+00:19:45,000 --> 00:19:48,000
+so here we have why evas times
+
+00:19:48,000 --> 00:19:51,000
+Govs at the air
+
+00:19:51,000 --> 00:19:55,000
+the input here is excessive ass
+
+00:19:55,000 --> 00:19:59,000
+and so the law applies transform of the error signal
+
+00:19:59,000 --> 00:20:04,000
+is simply exit ass
+
+00:20:04,000 --> 00:20:09,000
+minus our best which is why I've SG a vast so this is minus why evas
+
+00:20:09,000 --> 00:20:13,000
+GFS thats
+
+00:20:13,000 --> 00:20:17,000
+the love postures for the error signal the apostrophe its form
+
+00:20:17,000 --> 00:20:21,000
+all the output if this system is simply
+
+00:20:21,000 --> 00:20:25,000
+this expression times HFS
+
+00:20:25,000 --> 00:20:30,000
+so that's what we have here but what we have here we already called why evas
+
+00:20:30,000 --> 00:20:34,000
+so in fact we can simply say dead
+
+00:20:34,000 --> 00:20:37,000
+these two expressions have to be equal
+
+00:20:37,000 --> 00:20:40,000
+and so we've essentially done the analysis
+
+00:20:40,000 --> 00:20:44,000
+saying that those two expressions are equal lets us
+

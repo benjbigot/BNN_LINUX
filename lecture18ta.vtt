@@ -1,0 +1,1016 @@
+00:00:06,000 --> 00:00:13,000
+ha the
+ஹெக்டேருக்கு
+
+00:00:28,000 --> 00:00:31,000
+the norm
+விதிமுறை
+
+00:00:31,000 --> 00:00:38,000
+are
+இருக்கிகின்றன
+
+00:00:42,000 --> 00:00:42,000
+last time
+கடந்த முறை
+
+00:00:42,000 --> 00:00:47,000
+we began the discussion I'll discrete-time processing
+நாம் கலந்துரையாடல் என்று நான் தனி நேர செயலாக்க தொடங்கியது
+
+00:00:47,000 --> 00:00:51,000
+love continuous-time signals and
+தொடர்ச்சியான நேர சிக்னல்களை அன்பு
+
+00:00:51,000 --> 00:00:54,000
+as a reminder let me review
+ஒரு நினைவூட்டல் என்னை பற்றி பார்ப்போம்
+
+00:00:54,000 --> 00:00:57,000
+the basic notion the idea was
+யோசனை அடிப்படை கருத்து
+
+00:00:57,000 --> 00:01:00,000
+dead we convert
+இறந்த நாங்கள் மாற்ற
+
+00:01:00,000 --> 00:01:05,000
+from a continuous-time signal to a sequence
+ஒரு தொடர்ச்சியான நேர சமிக்ஞை இருந்து ஒரு வரிசையை
+
+00:01:05,000 --> 00:01:08,000
+through an operation which I
+ஒரு அறுவை சிகிச்சை மூலம் இது நான்
+
+00:01:08,000 --> 00:01:12,000
+represent as a continuous to discrete-time converter
+தனி நேரம் மாற்றி ஒரு தொடர் என பிரதிநிதித்துவம்
+
+00:01:12,000 --> 00:01:17,000
+and then that sequence
+பின்னர் அந்த காட்சியில்
+
+00:01:17,000 --> 00:01:20,000
+is used as the input to
+உள்ளீடு பயன்படுத்தப்படுகிறது
+
+00:01:20,000 --> 00:01:24,000
+inappropriate discrete-time system
+பொருத்தமற்ற தனி நேர அமைப்பு
+
+00:01:24,000 --> 00:01:28,000
+and after appropriate discrete-time processing
+அதற்கான தனி நேர செயலாக்க பிறகு
+
+00:01:28,000 --> 00:01:31,000
+that sequence is converted
+என்று வரிசை மாற்றப்படுகிறது
+
+00:01:31,000 --> 00:01:35,000
+back to a continuous-time signal
+மீண்டும் ஒரு தொடர்ச்சியான நேர சமிக்ஞை
+
+00:01:35,000 --> 00:01:38,000
+through an operation which i-label as
+ஒரு அறுவை சிகிச்சை மூலம் இது நான் லேபிள்
+
+00:01:38,000 --> 00:01:42,000
+a discrete to continuous-time converter
+தொடர்ச்சியான நேர மாற்றி ஒரு தனி
+
+00:01:42,000 --> 00:01:45,000
+now in the lecture
+இப்போது விரிவுரை
+
+00:01:45,000 --> 00:01:49,000
+last time we carried out some analysis
+நாம் சில ஆய்வு நடத்தப்பட்டது கடந்த முறை
+
+00:01:49,000 --> 00:01:53,000
+which related 4s the spectra
+நிறமாலை 4s தொடர்பான எந்த
+
+00:01:53,000 --> 00:01:56,000
+in the first step this operation namely
+இந்த அறுவை சிகிச்சை, அதாவது முதல் படியில்
+
+00:01:56,000 --> 00:02:00,000
+in the transformation from a continuous-time
+ஒரு தொடர்ச்சியான நேரம் மாற்றம்
+
+00:02:00,000 --> 00:02:04,000
+signal to sequence and
+வரிசை சமிக்ஞை மற்றும்
+
+00:02:04,000 --> 00:02:07,000
+let me by the way draw your attention to the fact
+வழி எனக்கு உண்மையில் உங்கள் கவனத்திற்கு நாம்
+
+00:02:07,000 --> 00:02:10,000
+that in the real world this operation
+என்று உண்மையான உலக இந்த அறுவை சிகிச்சை
+
+00:02:10,000 --> 00:02:13,000
+is essentially implemented
+அடிப்படையில் செயல்படுத்தப்படுகிறது
+
+00:02:13,000 --> 00:02:18,000
+by what you would typically label as an analog to digital converter
+நீங்கள் பொதுவாக டிஜிட்டல் மாற்றி ஒரு அனலாக் என லேபிள் என்று மூலம்
+
+00:02:18,000 --> 00:02:22,000
+if in fact the discrete-time processing
+உண்மையில் தனித்தியங்கும் நேர செயலாக்க
+
+00:02:22,000 --> 00:02:26,000
+is being done digitally now it's important to emphasize that it's not
+டிஜிட்டல் செய்து வருகிறது இப்போது அது இல்லை என்று வலியுறுத்த முக்கியம்
+
+00:02:26,000 --> 00:02:28,000
+exactly what an analog to digital converter
+சரியாக என்ன டிஜிட்டல் மாற்றி ஒரு அனலாக்
+
+00:02:28,000 --> 00:02:33,000
+does but in some sense at least you should think
+ஆனால் சில உணர்வு குறைந்தது நீங்கள் நினைக்கலாம்
+
+00:02:33,000 --> 00:02:36,000
+love this mapping from continuous time to discrete-time
+தொடர்ச்சியாக இருந்து தனி நேரம் இந்த மேப்பிங் அன்பு
+
+00:02:36,000 --> 00:02:39,000
+in very much the same way there one would think an analog to digital
+அங்கு மிகவும் அதே வழியில் ஒரு டிஜிட்டல் அனலாக் நினைக்கலாம்
+
+00:02:39,000 --> 00:02:40,000
+converter
+மாற்றி
+
+00:02:40,000 --> 00:02:45,000
+and the mapping back and is corresponds
+மீண்டும் மேப்பிங் மற்றும் தொடர்பு உள்ளது
+
+00:02:45,000 --> 00:02:48,000
+in some sense to a what would happen
+ஒரு என்ன நடக்கும் சில அர்த்தத்தில்
+
+00:02:48,000 --> 00:02:52,000
+with a digital to analog converter well
+நன்கு மாற்றி அனலாக் ஒரு டிஜிட்டல்
+
+00:02:52,000 --> 00:02:56,000
+let me review what is involved in the mapping from
+என்னை மேப்பிங் தொடர்பு என்ன மறுபார்வையிடலாம்
+
+00:02:56,000 --> 00:03:00,000
+the continuous-time signal to the sequence and
+தொடர்ச்சியான நேர வரிசை சமிக்ஞை மற்றும்
+
+00:03:00,000 --> 00:03:03,000
+let me stress again that this operation
+என்னை மீண்டும் வலியுறுத்தி அனுமதிக்க வேண்டும் என்று இந்த அறுவை சிகிச்சை
+
+00:03:03,000 --> 00:03:07,000
+is basically in the continues to discrete-time conversion
+அடிப்படையில் தனி நேர மாற்றம் தொடர்கிறது
+
+00:03:07,000 --> 00:03:10,000
+a two-step process in
+ஒரு இரண்டு படி செயல்முறை
+
+00:03:10,000 --> 00:03:14,000
+the first part of the process the continuous-time signal
+செயல்முறை முதல் பகுதி தொடர் நேர சமிக்ஞை
+
+00:03:14,000 --> 00:03:18,000
+is modulated with an impulse train
+ஒரு உந்துவிசை ரயில் மட்டுப்படுத்தப்படுகிறது
+
+00:03:18,000 --> 00:03:23,000
+where the period of the imposed strain is capital T
+திணிக்கப்பட்ட திரிபு காலம் மூலதன டி எங்கே
+
+00:03:23,000 --> 00:03:26,000
+and so we have a continuous-time
+எனவே நாம் ஒரு தொடர்ச்சியான நேரம்
+
+00:03:26,000 --> 00:03:30,000
+impose Train Signal which captures
+ரயில் சிக்னல் சுமத்த கைப்பற்றப்பட்டவை
+
+00:03:30,000 --> 00:03:33,000
+the samples love the original continuous-time signals
+மாதிரிகள், அசல் தொடர்ச்சியான நேர சிக்னல்களை அன்பு
+
+00:03:33,000 --> 00:03:37,000
+that in Paul strain
+என்று பால் திரிபு
+
+00:03:37,000 --> 00:03:40,000
+is then put through an operation
+பின்னர் ஒரு அறுவை சிகிச்சை மூலம் வைத்து
+
+00:03:40,000 --> 00:03:44,000
+which essentially re labels
+அடிப்படையில் அடையாளங்கள் மீண்டும் இது
+
+00:03:44,000 --> 00:03:48,000
+the samples so that the
+மாதிரிகள் என்று
+
+00:03:48,000 --> 00:03:51,000
+sample values the impulse areas
+மாதிரி உந்துவிசை பகுதிகளில் மதிப்புகள்
+
+00:03:51,000 --> 00:03:55,000
+are relabeled as sequence values
+வரிசை மதிப்புகள் relabeled
+
+00:03:55,000 --> 00:03:58,000
+and the result of that conversion is then
+அந்த மாற்றத்தின் விளைவாக பின்னர் ஆகிறது
+
+00:03:58,000 --> 00:04:03,000
+the sequence X event so the overall process then
+வரிசை எக்ஸ் நிகழ்வு அதனால் ஒட்டுமொத்த செயல்முறை பின்னர்
+
+00:04:03,000 --> 00:04:08,000
+is a sampling process followed by
+ஒரு மாதிரி செயல்முறை தொடர்ந்து
+
+00:04:08,000 --> 00:04:11,000
+what is simply in this box relabeling
+relabeling இந்த பெட்டியில் வெறுமனே என்ன ஆகிறது
+
+00:04:11,000 --> 00:04:14,000
+process and although as I
+செயல்முறை மற்றும் எனினும் நான்
+
+00:04:14,000 --> 00:04:19,000
+indicated just a minute ago that is essentially what an analog to digital
+அடிப்படையில் என்று ஒரு நிமிடம் முன்பு சுட்டிக்காட்டினார் டிஜிட்டல் என்ன ஒரு ஒப்புமை
+
+00:04:19,000 --> 00:04:20,000
+converter does
+மாற்றி செய்கிறது
+
+00:04:20,000 --> 00:04:25,000
+now like to digital converter doesn't necessarily carry it out
+இப்போது டிஜிட்டல் மாற்றி போன்ற அவசியம் அதை செயல்படுத்த முடியாது
+
+00:04:25,000 --> 00:04:28,000
+in those two steps but particularly
+அந்த இரண்டு படிகள் ஆனால் குறிப்பாக
+
+00:04:28,000 --> 00:04:31,000
+in terms love carrying through an analysis
+அடிப்படையில் ஒரு பகுப்பாய்வு மூலம் செல்லும் அன்பு
+
+00:04:31,000 --> 00:04:35,000
+thinking of it as a two-step process is particularly convenient
+ஒரு இரண்டு படி செயல்முறை என நினைத்து குறிப்பாக வசதியானது
+
+00:04:35,000 --> 00:04:40,000
+now we talked last time
+இப்போது நாம் கடந்த முறை பேசினார்
+
+00:04:40,000 --> 00:04:45,000
+about what this mapping from continuous time to discrete-time
+பற்றி தனி நேரம் தொடர்ச்சியாக இருந்து என்ன இந்த மேப்பிங்
+
+00:04:45,000 --> 00:04:49,000
+means both in the time domain in terms of the spectra
+நிறமாலை அடிப்படையில் நேரம் களத்தில் இரு பொருள்
+
+00:04:49,000 --> 00:04:52,000
+and in particular in the time domain we
+குறிப்பாக நேரம் களத்தில் நாம்
+
+00:04:52,000 --> 00:04:56,000
+begin with the continuous-time signal
+தொடர்ச்சியான நேர சமிக்ஞை தொடங்கும்
+
+00:04:56,000 --> 00:05:00,000
+which is then samples with an impulse train
+பின்னர் ஒரு உந்துவிசை ரயில் மாதிரிகள் இது
+
+00:05:00,000 --> 00:05:03,000
+and converted to a sequence by
+மற்றும் ஒரு வரிசை மாற்றப்படுகிறது
+
+00:05:03,000 --> 00:05:07,000
+simply generating a sequence whose values
+வெறுமனே அதன் மதிப்புகள் ஒரு வரிசை உருவாக்கும்
+
+00:05:07,000 --> 00:05:10,000
+are the area is love the impulses
+பகுதியில் காதல் தூண்டுதலின் உள்ளது
+
+00:05:10,000 --> 00:05:14,000
+and I stress the fact that what this corresponds to
+நான் இந்த தொடர்பு என்ன என்பதை வலியுறுத்தி
+
+00:05:14,000 --> 00:05:18,000
+essentially is and normalization of the time axis
+அடிப்படையில் நேரம் அச்சு இயல்புநிலைக்கு
+
+00:05:18,000 --> 00:05:23,000
+essentially by dividing the time axis by capital T
+அடிப்படையில் மூலதன டி நேரம் அச்சு வகுப்பதன் மூலம்
+
+00:05:23,000 --> 00:05:27,000
+in the frequency-domain then
+அதிர்வெண் களத்தில் பின்னர்
+
+00:05:27,000 --> 00:05:31,000
+we had the spectrum of the original signal
+நாம் அசல் சமிக்ஞையின் ஸ்பெக்ட்ரம் இருந்தது
+
+00:05:31,000 --> 00:05:35,000
+which because that the sampling process is
+இது மாதிரி செயல்பாட்டில் உள்ளது, ஏனெனில்
+
+00:05:35,000 --> 00:05:39,000
+replicated at multiples integer multiples
+மடங்குகள் முழு மடங்குகள் அமல்
+
+00:05:39,000 --> 00:05:42,000
+all the sampling frequency Omega so badass
+அனைத்து மாதிரி அதிர்வெண் ஒமேகா அதனால் தீபாவளிக்கு
+
+00:05:42,000 --> 00:05:45,000
+or to pile over capital T
+அல்லது மூலதன டி மேல் பைல்
+
+00:05:45,000 --> 00:05:49,000
+and then in converting the impulses
+பின்னர் தூண்டுதலின் மாற்றும்
+
+00:05:49,000 --> 00:05:53,000
+to a sequence we are essentially
+ஒரு வரிசையை நாம் அடிப்படையில் இருக்கிறோம்
+
+00:05:53,000 --> 00:05:57,000
+normalizing the frequency axis so that
+அதிர்வெண் அச்சு சீராக்கும் என்று
+
+00:05:57,000 --> 00:06:02,000
+the frequency to pile over capital T gets relabeled is to pie
+டி relabeled விடும் தலைநகர் மீது பைல் அதிர்வெண் பை ஆகிறது
+
+00:06:02,000 --> 00:06:05,000
+and the resulting discrete-time spectrum looks like
+அதன் விளைவாக தனி நேர ஸ்பெக்ட்ரம் தெரிகிறது
+
+00:06:05,000 --> 00:06:08,000
+I indicate here which really is
+நான் இது இங்கே குறிக்கிறேன்
+
+00:06:08,000 --> 00:06:12,000
+nothing more and a frequency scaling
+வேறொன்றுமில்லை மற்றும் ஒரு அலைவெண்
+
+00:06:12,000 --> 00:06:16,000
+corresponding to the Associated time scaling so the mapping
+அதனால் மேப்பிங் அளவிடுதல் தொடர்புடைய நேரம் தொடர்புடைய
+
+00:06:16,000 --> 00:06:20,000
+from the imposed strain spectrum to the discrete-time spectrum
+திணிக்கப்பட்ட திரிபு ஸ்பெக்ட்ரம் இருந்து தனி நேர ஸ்பெக்ட்ரம்
+
+00:06:20,000 --> 00:06:24,000
+corresponds to mapping specified
+குறிப்பிட்ட மேப்பிங் ஒத்துள்ளது
+
+00:06:24,000 --> 00:06:29,000
+by capital Omega equal to small make a times capital T
+சிறிய செய்ய ஒரு முறை தலைநகர் டி சமமாக மூலதன ஒமேகா மூலம்
+
+00:06:29,000 --> 00:06:33,000
+an equivalent Lee it's the frequency
+ஒரு சமமான லீ அதை அலைவரிசை தான்
+
+00:06:33,000 --> 00:06:36,000
+to pile over capital T which is
+மூலதன டி மேல் பைல் இது
+
+00:06:36,000 --> 00:06:41,000
+of course the sampling frequency which gets normalized
+சாதாரணமான பெறுகிறார் நிச்சயமாக மாதிரி அதிர்வெண்
+
+00:06:41,000 --> 00:06:44,000
+to the frequency to pie
+பை அதிர்வெண்
+
+00:06:44,000 --> 00:06:47,000
+and so in the frequency domain
+எனவே அதிர்வெண் களத்தில்
+
+00:06:47,000 --> 00:06:51,000
+their is a frequency normalization Associated
+தொடர்புடைய ஒரு அதிர்வெண் இயல்பு தங்கள் ஆகிறது
+
+00:06:51,000 --> 00:06:57,000
+with the fact dead corresponding to this spectrum
+உண்மையில் இறந்த இந்த ஸ்பெக்ட்ரம் தொடர்புடைய
+
+00:06:57,000 --> 00:07:02,000
+is a time sequence or discrete time sequence
+ஒரு நேரத்தில் வரிசை அல்லது தனித்தியங்கும் நேரம் வரிசை
+
+00:07:02,000 --> 00:07:06,000
+as I show previously and a discrete-time sequence
+நான் ஒரு தனி நேரம் வரிசை முன்னர் காண்பிக்கிறேன் மற்றும்
+
+00:07:06,000 --> 00:07:10,000
+is related to the
+தொடர்புடைய ஆகிறது
+
+00:07:10,000 --> 00:07:14,000
+original continuous-time signal
+அசல் தொடர்ச்சியான நேர சமிக்ஞை
+
+00:07:14,000 --> 00:07:19,000
+through a time normalization in other words
+வேறு வார்த்தைகளில் கூறுவதானால், ஒரு நேரத்தில் இயல்பாக்கம் மூலம்
+
+00:07:19,000 --> 00:07:24,000
+these sequence values are simply samples at the continuous-time signal
+இந்த வரிசை மதிப்புகள் தொடர்ச்சியான நேர சமிக்ஞை வெறுமனே மாதிரிகள்
+
+00:07:24,000 --> 00:07:30,000
+with the time axis we normalized
+நாம் மீள நேரம் அச்சில்
+
+00:07:30,000 --> 00:07:34,000
+now what we want to consider this is the conversion from continuous time to
+இப்போது நாம் என்ன இந்த கருத்தில் கொள்ள வேண்டும் தொடர்ச்சியான நேரம் மாற்றம் ஆகிறது
+
+00:07:34,000 --> 00:07:35,000
+discrete-time
+தனி நேரம்
+
+00:07:35,000 --> 00:07:39,000
+what we want to consider now is the overall system
+நாம் இப்போது கருத்தில் கொள்ள வேண்டும் ஒட்டுமொத்த அமைப்பின் ஆகிறது
+
+00:07:39,000 --> 00:07:42,000
+which implements not just the conversion but filtering
+இது மாற்று, ஆனால் வடித்தல் மட்டும் செயல்படுத்தும்
+
+00:07:42,000 --> 00:07:47,000
+and then coming back onto the conversion back to continuous-time
+பின்னர் தொடர்ச்சியான நேர மீண்டும் மாற்றம் மீது மீண்டும் வரும்
+
+00:07:47,000 --> 00:07:51,000
+so let's look at the overall system
+எனவே ஒட்டுமொத்த அமைப்பின் பார்போம்
+
+00:07:51,000 --> 00:07:55,000
+and the overall system courses I've
+மற்றும் நான் ஒட்டுமொத்த அமைப்பின் படிப்புகள்
+
+00:07:55,000 --> 00:07:58,000
+stressed several times in the past consists
+கடந்த உள்ளடக்கியது பலமுறை வலியுறுத்தினார்
+
+00:07:58,000 --> 00:08:04,000
+love first the sampling process
+முதல் மாதிரி செயல்முறை பிடிக்கிறது
+
+00:08:04,000 --> 00:08:08,000
+conversion to an impulse train
+ஒரு உந்துவிசை ரயில் மாற்றம்
+
+00:08:08,000 --> 00:08:13,000
+and the imposed strain converted to a sequence
+சுமத்தப்படும் திரிபு வரிசை மாற்றப்படுகிறது
+
+00:08:13,000 --> 00:08:17,000
+that sequence is then processed
+அந்த காட்சியில் பின்னர் பதப்படுத்தப்பட்ட
+
+00:08:17,000 --> 00:08:21,000
+through are discrete-time filter
+மூலம் தனி நேரம் வடிகட்டி இருக்கின்றன
+
+00:08:21,000 --> 00:08:25,000
+and after the discrete-time processing
+மற்றும் தனித்தியங்கும் நேர செயலாக்க பிறகு
+
+00:08:25,000 --> 00:08:28,000
+the result of that is converted back
+என்று முடிவு மாற்றப்படுகிறது
+
+00:08:28,000 --> 00:08:34,000
+to an impulse train so this resulting process sequence
+ஒரு உந்துவிசை ரயில் எனவே இந்த விளைவாக செயல்முறை வரிசையை
+
+00:08:34,000 --> 00:08:38,000
+is then converted back to an impulse train
+பின்னர் ஒரு உந்துவிசை ரயில் மாற்றப்படுகிறது
+
+00:08:38,000 --> 00:08:41,000
+and then finally we carry out the the sampling
+பின்னர் இறுதியாக நாம் மாதிரி முன்னெடுக்க
+
+00:08:41,000 --> 00:08:45,000
+process by simply using a low-pass filter
+வெறுமனே ஒரு குறைந்த பாஸ் வடிகட்டி பயன்படுத்தி செயல்முறை
+
+00:08:45,000 --> 00:08:50,000
+Associated with the with the cutoff associated with the sampling frequency
+தொடர்புடைய மாதிரி அதிர்வெண் தொடர்புடைய வெட்டு மூலம்
+
+00:08:50,000 --> 00:08:53,000
+that we use
+நாம் பயன்படுத்தும்
+
+00:08:53,000 --> 00:08:57,000
+now typically in a system like that which implements
+இப்போது பொதுவாக அப்படி ஒரு அமைப்பு இது கருவிகள்
+
+00:08:57,000 --> 00:09:00,000
+discrete-time processing continuous-time signals
+தனி நேரம் செயலாக்க தொடர்ச்சியான நேர சிக்னல்களை
+
+00:09:00,000 --> 00:09:04,000
+we either we need to ensure in one way or another
+நாம் ஒரு வழி அல்லது இன்னொரு உறுதி செய்ய வேண்டும் அல்லது
+
+00:09:04,000 --> 00:09:08,000
+that the band with love the input is
+காதல் இசைக்குழு உள்ளீடு என்று
+
+00:09:08,000 --> 00:09:12,000
+sufficiently limited so that we avoid aliasing
+நாம் மாற்றுப்பெயரிடும் தவிர்க்க, அதனால் போதுமான அளவு மட்டுமே
+
+00:09:12,000 --> 00:09:16,000
+one way to do that is to force it in one way or another or
+அதை செய்ய ஒரு வழி ஒரு வழி அல்லது இன்னொரு அதை கட்டாயப்படுத்த அல்லது
+
+00:09:16,000 --> 00:09:20,000
+simply know that our signal satisfies the band with constrain
+சாதாரணமாக நமது சமிக்ஞை கட்டுப்பாட்டை இசைக்குழுவின் திருப்திப்படுத்துகிறது தெரிகிறது
+
+00:09:20,000 --> 00:09:23,000
+although a fairly typical thing to do in addition
+ஒரு மிகவும் பொதுவான விஷயம் கூடுதலாக செய்ய என்றாலும்
+
+00:09:23,000 --> 00:09:26,000
+to this sampling process is
+இந்த மாதிரி செயல்முறை உள்ளது
+
+00:09:26,000 --> 00:09:30,000
+to include what is referred to as
+என குறிப்பிடப்படுகிறது என்ன சேர்க்க
+
+00:09:30,000 --> 00:09:35,000
+and anti aliasing filter in other words this is a filter
+மற்றும் வேறு வார்த்தைகளில் எதிர்ப்பு மாற்றுப்பெயரிடும் வடிகட்டி இந்த வடிகட்டி
+
+00:09:35,000 --> 00:09:38,000
+that would ban limit the input
+அந்த வரம்பை உள்ளீடு தடை விதிக்கப்படும் என
+
+00:09:38,000 --> 00:09:42,000
+and at least half the sampling frequency
+குறைந்தது அரை மாதிரி அதிர்வெண்
+
+00:09:42,000 --> 00:09:45,000
+so that we r guaranteed and
+நாங்கள் உத்தரவாதம் r மற்றும் என்று
+
+00:09:45,000 --> 00:09:48,000
+that their is no aliasing it's carried out
+எந்த மாற்றுப்பெயரிடும் தங்கள் என்று அதை நிறைவேற்றுவது
+
+00:09:48,000 --> 00:09:52,000
+in this process and it's important
+இந்த செயல்முறை மற்றும் அது முக்கியம்
+
+00:09:52,000 --> 00:09:56,000
+to stress dead in this kinda processing discrete-time processing
+இந்த கிரகமாக செயலாக்க தனி நேர செயலாக்க இறந்து வலியுறுத்தி
+
+00:09:56,000 --> 00:10:00,000
+continuous-time signals except in certain
+சில தவிர தொடர்ச்சியான நேர சிக்னல்களை
+
+00:10:00,000 --> 00:10:03,000
+special situations its very important
+சிறப்பு சூழ்நிலைகளில் அதன் மிக முக்கியமான
+
+00:10:03,000 --> 00:10:06,000
+to avoid aliasing because we're going to want
+நாங்கள் போகிறோம், ஏனெனில் மாற்றுப்பெயரிடும் தவிர்க்க
+
+00:10:06,000 --> 00:10:13,000
+to do a reconstruction after we do the sampling and processing
+நாம் மாதிரி மற்றும் செயலாக்க செய்ய ஒரு புனரமைப்பு செய்ய
+
+00:10:13,000 --> 00:10:17,000
+okay now this is the sequence of steps in the time domain
+சரி இப்போது இந்த நேரத்தில் டொமைன் வழிமுறைகளை ஆகிறது
+
+00:10:17,000 --> 00:10:20,000
+let's examine what happens as a consequence is this
+ஒரு விளைவாக என்ன நடக்கும் ஆராய்வோம் இந்த ஆகிறது
+
+00:10:20,000 --> 00:10:24,000
+in the frequency domain well
+அதிர்வெண் களத்தில் நன்றாக
+
+00:10:24,000 --> 00:10:28,000
+let's choose some typeof simple representative spectrum
+சில typeof எளிய பிரதிநிதி ஸ்பெக்ட்ரம் தேர்வு செய்யலாம்
+
+00:10:28,000 --> 00:10:31,000
+and of course what's important about it is that
+மற்றும் நிச்சயமாக என்ன இது பற்றி முக்கியம் என்று ஆகிறது
+
+00:10:31,000 --> 00:10:36,000
+the specter that we choose is banned limited or that there's an anti-aliasing
+நாம் தேர்வு என்று ஒழிப்பதற்கு ஒரு எதிர்ப்பு மாற்றுப்பெயரிடும் இருக்கிறது என்று வரையறுக்கப்பட்ட தடை அல்லது
+
+00:10:36,000 --> 00:10:37,000
+filter
+வடிகட்டி
+
+00:10:37,000 --> 00:10:41,000
+and it's not the shape of course that is critical
+அது முக்கியமானது என்று நிச்சயமாக வடிவம் இல்லை
+
+00:10:41,000 --> 00:10:44,000
+and as we work our way through the system
+நாம் கணினி வழியாக நம் வழி வேலை
+
+00:10:44,000 --> 00:10:47,000
+this is the continuous-time spectrum
+இந்த தொடர்ச்சியான நேர நிறமாலை உள்ளது
+
+00:10:47,000 --> 00:10:52,000
+after sampling that spectrum is replicated at
+மாதிரி பின்னர் அந்த நிறமாலை எதிரொலிக்கும்
+
+00:10:52,000 --> 00:10:56,000
+multiples of the sampling frequency integer multiples the sampling frequency
+மாதிரி அதிர்வெண் முழு மடங்குகள் மடங்குகள் மாதிரி அதிர்வெண்
+
+00:10:56,000 --> 00:10:57,000
+and so
+மற்றும்
+
+00:10:57,000 --> 00:11:01,000
+there would be another one over here and another one over here at cetera
+இங்கு மற்றொரு மற்றும் பயன்படுத்தப்படுகிறது இங்கே மீது மற்றொரு இருக்கும்
+
+00:11:01,000 --> 00:11:04,000
+and then in converting to a discrete-time sequence
+பின்னர் ஒரு தனி நேரம் வரிசையை மாற்றும்
+
+00:11:04,000 --> 00:11:08,000
+their is The Associated
+அசோசியேட்டட் தங்கள் ஆகிறது
+
+00:11:08,000 --> 00:11:12,000
+frequency normalization so that the sampling frequency
+அதிர்வெண் இயல்பு என்று மாதிரி அதிர்வெண்
+
+00:11:12,000 --> 00:11:15,000
+yes normalized to a frequency
+ஆம் ஒரு அதிர்வெண் இயல்பாக்கப்பட்ட
+
+00:11:15,000 --> 00:11:20,000
+to pie okay now at that point
+அந்த கட்டத்தில் இப்போது சரி பை
+
+00:11:20,000 --> 00:11:24,000
+where we are in the system
+நாம் கணினி எங்கே
+
+00:11:24,000 --> 00:11:27,000
+is at this point
+இந்த கட்டத்தில் இருக்கிறது
+
+00:11:27,000 --> 00:11:31,000
+so that we've converted to a sequence we now
+நாம் இப்போது ஒரு வரிசையில் நாம் மாற்றப்படுகிறது என்று
+
+00:11:31,000 --> 00:11:35,000
+want to carry out some filtering and then after that filtering
+சில வடிகட்டி முன்னெடுக்க பின்னர் அந்த வடிகட்டி பின்னர் வேண்டும்
+
+00:11:35,000 --> 00:11:40,000
+convert back to a continuous-time signals
+ஒரு தொடர்ச்சியான நேர சிக்னல்களை மீண்டும் மாற்ற
+
+00:11:40,000 --> 00:11:43,000
+alright so here we are at the
+சரி, அதனால் இங்கே நாம் இருக்கிறோம்
+
+00:11:43,000 --> 00:11:46,000
+spectrum Associated with the
+தொடர்புடைய ஸ்பெக்ட்ரம்
+
+00:11:46,000 --> 00:11:49,000
+sequence and now
+இப்போது வரிசை மற்றும்
+
+00:11:49,000 --> 00:11:53,000
+the processing they were carrying out is
+அவர்கள் நடத்தி செயலாக்க ஆகிறது
+
+00:11:53,000 --> 00:11:57,000
+linear time-invariant filtering in the discrete time domain
+தனி நேரம் டொமைன் நேரியல் நேரம் மாற்றமில்லாத வடித்தல்
+
+00:11:57,000 --> 00:12:01,000
+and what that corresponds to then is multiplying
+என்ன என்று பின்னர் ஒத்துள்ளது பெருக்குவதன்
+
+00:12:01,000 --> 00:12:06,000
+this spectrum by the filter frequency response and I've chosen
+வடிகட்டி அதிர்வெண் மறுமொழி மற்றும் நான் தேர்வு செய்த இந்த ஸ்பெக்ட்ரம்
+
+00:12:06,000 --> 00:12:10,000
+a particular shape and again it's not the shape that's important to the
+ஒரு குறிப்பிட்ட வடிவம் மற்றும் அதை மீண்டும் முக்கியம் என்று வடிவம் இல்லை
+
+00:12:10,000 --> 00:12:11,000
+discussion
+கலந்துரையாடல்
+
+00:12:11,000 --> 00:12:16,000
+but the fact for example that it has a particular cutoff frequency which will
+ஆனால் அது ஒரு குறிப்பிட்ட வெட்டு அதிர்வெண் கொண்ட உதாரணமாக உண்மையில் இது நான்
+
+00:12:16,000 --> 00:12:17,000
+kinda track
+கிரகமாக கண்காணிக்க
+
+00:12:17,000 --> 00:12:21,000
+as we work through this and so now
+நாம் இப்போது இந்த வழியாக வேலை மற்றும்
+
+00:12:21,000 --> 00:12:24,000
+the spectrum of why I have an the output
+நான் ஒரு வெளியீடு ஏன் ஸ்பெக்ட்ரம்
+
+00:12:24,000 --> 00:12:28,000
+the digital filter is the product this spectrum
+டிஜிட்டல் வடிகட்டி இந்த ஸ்பெக்ட்ரம் தயாரிப்பு
+
+00:12:28,000 --> 00:12:32,000
+and the 4e a transformer frequency response
+மற்றும் 4e ஒரு மின்மாற்றி அதிர்வெண் மறுமொழி
+
+00:12:32,000 --> 00:12:36,000
+I'll the digital filter
+நான் அந்த டிஜிட்டல் வடிகட்டி
+
+00:12:36,000 --> 00:12:41,000
+now in working our way through we're going to take the output at the filter
+இப்போது எங்கள் வழி வேலை நாம் வடிகட்டி வெளியீடு எடுக்க போகிறோம் மூலம்
+
+00:12:41,000 --> 00:12:46,000
+and undo the two-step process so we now want to take that sequence
+எனவே நாம் இப்போது அந்த காட்சியில் எடுக்க வேண்டும் இரண்டு படி செயல்முறை மீளமை
+
+00:12:46,000 --> 00:12:50,000
+converted to an impulse train and then take then imposed strain
+ஒரு உந்துவிசை ரயில் மாற்றப்பட்டு பின்னர் திணிக்கப்பட்ட எடுத்து திரிபு
+
+00:12:50,000 --> 00:12:53,000
+Andy sample through a low-pass filter
+ஒரு குறைந்த பாஸ் வடிகட்டி மூலம் ஆண்டி மாதிரி
+
+00:12:53,000 --> 00:12:59,000
+so here we are now at the output to the digital filter
+எனவே இங்கே நாம் டிஜிட்டல் வடிகட்ட வெளியீடு இப்போது இருக்கிறோம்
+
+00:12:59,000 --> 00:13:03,000
+we then convert that to an impulse train well that's really on doing the original
+நாம் அசல் செய்து உண்மையில் தான் ஒரு உந்துவிசை ரயில் நன்கு அந்த மாற்ற
+
+00:13:03,000 --> 00:13:05,000
+time normalization
+நேரம் இயல்புநிலைக்கு
+
+00:13:05,000 --> 00:13:08,000
+and so what that means is that we
+அதனால் என்ன என்று அர்த்தம் என்று நாங்கள்
+
+00:13:08,000 --> 00:13:13,000
+are on doing the frequency normalization in particular
+குறிப்பாக அதிர்வெண் இயல்பாக்கம் செய்து இருக்கின்றன
+
+00:13:13,000 --> 00:13:16,000
+we're dividing the frequency axis by
+நாம் அடிக்கடி அச்சு பிளவு
+
+00:13:16,000 --> 00:13:20,000
+capital T whereas this point
+மூலதன டி அதேசமயம் இந்த புள்ளி
+
+00:13:20,000 --> 00:13:23,000
+in y Omega was to pie
+y உள்ள ஒமேகா பை இருந்தது
+
+00:13:23,000 --> 00:13:26,000
+now it's to pile over capital T
+இப்போது அது மூலதன டி மேல் பைல் தான்
+
+00:13:26,000 --> 00:13:31,000
+what that means is that acquittal and Lee were multiplying this spectrum
+என்ன என்று அர்த்தம் விடுவிக்க மற்றும் லீ இந்த ஸ்பெக்ட்ரம் பெருக்குவதன் என்று ஆகிறது
+
+00:13:31,000 --> 00:13:35,000
+by the frequency response the digital filter
+அதிர்வெண் மறுமொழி டிஜிட்டல் வடிகட்டி
+
+00:13:35,000 --> 00:13:38,000
+but now linearly scaled in frequency
+ஆனால் இப்போது நேர்க்கோட்டில் அதிர்வெண் அளவிட
+
+00:13:38,000 --> 00:13:42,000
+so that will what was a cutoff frequency Omega subsea
+அதனால் ஒரு வெட்டு அதிர்வெண் ஒமேகா Subsea என்ன வேண்டும்
+
+00:13:42,000 --> 00:13:45,000
+is now a cutoff frequency up Omega subsea
+இப்போது ஒரு வெட்டு அதிர்வெண் வரை ஒமேகா Subsea ஆகிறது
+
+00:13:45,000 --> 00:13:49,000
+divided by capital T so
+மூலதன டி வகுக்க எனவே
+
+00:13:49,000 --> 00:13:53,000
+now the next step in the process is the reconstructing
+இப்போது செயல்பாட்டில் அடுத்த படிநிலை பூமியாகும்
+
+00:13:53,000 --> 00:13:58,000
+low-pass filter and what that extracts is simply the portion
+குறைந்த பாஸ் வடிகட்டி மற்றும் என்ன என்று உறிஞ்சி வெறுமனே பகுதி
+
+00:13:58,000 --> 00:14:02,000
+I'll this periodic spectrum around the origin
+நான் அந்த பிறப்பிடம் இந்த கால ஸ்பெக்ட்ரம்
+
+00:14:02,000 --> 00:14:06,000
+and so finally and spectrum of the output
+எனவே இறுதியாக மற்றும் வெளியீடு ஸ்பெக்ட்ரம்
+
+00:14:06,000 --> 00:14:10,000
+up the overall system will be the spectrum
+ஒட்டுமொத்த அமைப்பின் வரை ஸ்பெக்ட்ரம் இருக்கும்
+
+00:14:10,000 --> 00:14:13,000
+of the input multiplied
+பெருக்கப்படும் உள்ளீடு
+
+00:14:13,000 --> 00:14:17,000
+by a frequency response
+ஒரு அதிர்வெண் பதில்
+
+00:14:17,000 --> 00:14:21,000
+which is the digital filter frequency response
+டிஜிட்டல் வடிகட்டி அதிர்வெண் மறுமொழி இது
+
+00:14:21,000 --> 00:14:25,000
+frequency scaled by dividing
+அதிர்வெண் வகுப்பதன் மூலம் அளவிட
+
+00:14:25,000 --> 00:14:30,000
+that digital filter frequency axis by capital T
+மூலதன டி மூலம் டிஜிட்டல் வடிகட்டி அதிர்வெண் அச்சு
+
+00:14:30,000 --> 00:14:34,000
+okay now what we can ask is
+சரி இப்போது நாம் என்ன கேட்க முடியும்
+
+00:14:34,000 --> 00:14:37,000
+we've got this processing we've converted to discrete-time we've gone
+நாம் சென்று தனி நேரம் மாற்றப்படுகிறது நான் இந்த செயலாக்க கிடைத்துவிட்டது
+
+00:14:37,000 --> 00:14:39,000
+back to continuous-time
+மீண்டும் தொடர்ச்சியான நேரம்
+
+00:14:39,000 --> 00:14:42,000
+and one can ask now what acquittal and
+மற்றும் ஒரு என்ன விடுவிக்க இப்போது கேட்க முடியும்
+
+00:14:42,000 --> 00:14:46,000
+overall continuous-time systems is that correspond to
+ஒட்டுமொத்த தொடர்ச்சியான நேர அமைப்புகள் ஒத்திருக்கும் என்று
+
+00:14:46,000 --> 00:14:51,000
+in other words if we that of course is a continuous-time system it's a continuous
+நாம் நிச்சயமாக ஒரு தொடர்ச்சியான நேர கணினி என்றால் வேறு வார்த்தைகளில் அது ஒரு தொடர் தான்
+
+00:14:51,000 --> 00:14:53,000
+time you put a continuous-time output
+நீங்கள் ஒரு தொடர்ச்சியான நேர வெளியீடு வைத்து நேரம்
+
+00:14:53,000 --> 00:14:57,000
+and the overall system dan
+மற்றும் ஒட்டுமொத்த அமைப்பின் டான்
+
+00:14:57,000 --> 00:15:01,000
+would be one that would give us exactly the same output spectrum
+அதே வெளியீடு ஸ்பெக்ட்ரம் எங்களுக்கு கொடுக்க வேண்டும் என்று ஒரு இருக்கும்
+
+00:15:01,000 --> 00:15:05,000
+as we're getting well what is that well we have
+நாம் நன்றாக வருகிறோம் என என்ன நன்கு நாங்கள் என்று ஆகிறது
+
+00:15:05,000 --> 00:15:08,000
+is an output spectrum which is the product
+தயாரிப்பு இது ஒரு வெளியீடு ஸ்பெக்ட்ரம் ஆகிறது
+
+00:15:08,000 --> 00:15:14,000
+all the input spectrum and digital filter frequency characteristic
+அனைத்து உள்ளீடு நிறமாலை மற்றும் டிஜிட்டல் வடிகட்டி அதிர்வெண் பண்பு
+
+00:15:14,000 --> 00:15:18,000
+frequency scale and so in fact
+அதிர்வெண் அளவு மற்றும் அதனால் உண்மையில்
+
+00:15:18,000 --> 00:15:22,000
+the resulting digital filter I'm sorry continuous-time
+நான் வருந்துகிறேன் தொடர்ச்சியான நேர இருக்கிறேன் விளைவாக டிஜிட்டல் வடிகட்டி
+
+00:15:22,000 --> 00:15:26,000
+filter is simply the digital filter
+வடிகட்டி வெறுமனே டிஜிட்டல் வடிகட்டி ஆகிறது
+
+00:15:26,000 --> 00:15:29,000
+with inappropriate frequency scaling
+பொருத்தமற்ற அலைவெண் கொண்ட
+
+00:15:29,000 --> 00:15:34,000
+in other words with the frequency axis divided by capital T
+மூலதன டி வகுக்க அதிர்வெண் அச்சு வேறு வார்த்தைகளில்
+
+00:15:34,000 --> 00:15:37,000
+so sent another way if
+அதனால் வேறு வழி அனுப்பி என்றால்
+
+00:15:37,000 --> 00:15:41,000
+we show here
+நாம் இங்கே காட்ட
+
+00:15:41,000 --> 00:15:47,000
+the frequency response or the
+அதிர்வெண் மறுமொழி, அல்லது
+
+00:15:47,000 --> 00:15:50,000
+original digital filter
+அசல் டிஜிட்டல் வடிகட்டி
+
+00:15:50,000 --> 00:15:54,000
+then the corresponding continuous-time
+பின்னர் தொடர்புடைய தொடர்ச்சியான நேரம்
+
+00:15:54,000 --> 00:15:57,000
+filter would be this
+வடிகட்டி இந்த இருக்கும்
+
+00:15:57,000 --> 00:16:00,000
+frequency scaled and then because love
+அதிர்வெண் அளவிட பின்னர் ஏனெனில் காதல்
+
+00:16:00,000 --> 00:16:04,000
+The Associated low-pass filtering in the reconstruction
+புனரமைப்பு அசோசியேட்டட் குறைந்த பாஸ் வடிகட்டி
+
+00:16:04,000 --> 00:16:08,000
+we would select out just one of these periods in particular the portion around
+நாங்கள் குறிப்பாக இந்த காலங்களில் ஒரு அவுட் தேர்ந்தெடுக்க வேண்டும் சுற்றி பகுதி
+
+00:16:08,000 --> 00:16:10,000
+the origin
+பிறப்பிடம்
+
+00:16:10,000 --> 00:16:14,000
+and the essential consequences that is that the corresponding
+மற்றும் அத்தியாவசிய விளைவுகளை என்று தொடர்புடைய
+
+00:16:14,000 --> 00:16:17,000
+continuous-time filter then is
+தொடர்ச்சியான நேர வடிகட்டி பின்னர் ஆகிறது
+
+00:16:17,000 --> 00:16:21,000
+given by this and these two are related
+இந்த நிலையில் இந்த இரண்டு தொடர்பான
+
+00:16:21,000 --> 00:16:25,000
+simply by a linear scaling the frequency axis
+வெறுமனே அதிர்வெண் அச்சு அளவிடுதல் ஒரு நேர்கோட்டு மூலம்
+
+00:16:25,000 --> 00:16:29,000
+and note dead where the digital filter has a cutoff frequency
+மற்றும் குறிப்பு இறந்த டிஜிட்டல் வடிகட்டி ஒரு வெட்டு அதிர்வெண் எங்கே
+

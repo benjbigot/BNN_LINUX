@@ -1,0 +1,2550 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+
+00:00:18,000 --> 00:00:23,000
+that MIT that EDU home in
+
+00:00:23,000 --> 00:00:28,000
+the
+
+00:00:28,000 --> 00:00:31,000
+the
+
+00:00:31,000 --> 00:00:33,000
+the
+
+00:00:33,000 --> 00:00:40,000
+the in
+
+00:00:40,000 --> 00:00:47,000
+the moon
+
+00:00:49,000 --> 00:00:56,000
+the over the last series of lectures
+
+00:00:58,000 --> 00:01:02,000
+in discussing filtering modulation sampling we've seen how powerful
+
+00:01:02,000 --> 00:01:07,000
+and useful the four EA transform is beginning
+
+00:01:07,000 --> 00:01:10,000
+with this lecture and over the next several lectures I'd
+
+00:01:10,000 --> 00:01:14,000
+like to develop and exploit a generalization
+
+00:01:14,000 --> 00:01:19,000
+other 48 transform which will not only lead to some important new insights
+
+00:01:19,000 --> 00:01:21,000
+about signals and systems
+
+00:01:21,000 --> 00:01:25,000
+but also will remove some of the restrictions
+
+00:01:25,000 --> 00:01:31,000
+that we've had with the Fourier transform the generalization
+
+00:01:31,000 --> 00:01:36,000
+dead we'll be talking about in the continuous-time cases referred to
+
+00:01:36,000 --> 00:01:42,000
+as the apostrophe its form and in the discrete-time cases referred to as the z
+
+00:01:42,000 --> 00:01:43,000
+transform
+
+00:01:43,000 --> 00:01:47,000
+but I'd like to do in today's lecture is begin on the continuous-time
+
+00:01:47,000 --> 00:01:50,000
+case namely a discussion at the La Paz transform
+
+00:01:50,000 --> 00:01:54,000
+continued at it to the next lecture and following that
+
+00:01:54,000 --> 00:01:58,000
+develop the z transform for discrete-time
+
+00:01:58,000 --> 00:02:02,000
+and also as we go along exploit
+
+00:02:02,000 --> 00:02:05,000
+the two notions together now
+
+00:02:05,000 --> 00:02:09,000
+to introduce the notion of the law applies transform
+
+00:02:09,000 --> 00:02:15,000
+let me remind you again all what led us into the Fourier transform we
+
+00:02:15,000 --> 00:02:19,000
+develop the 48 transform by
+
+00:02:19,000 --> 00:02:22,000
+considering the idea love representing
+
+00:02:22,000 --> 00:02:27,000
+signals as linear combinations a basic signals
+
+00:02:27,000 --> 00:02:30,000
+and in the Fourier transform in the
+
+00:02:30,000 --> 00:02:34,000
+continuous-time case the basic signals
+
+00:02:34,000 --> 00:02:38,000
+that we picked in the representation were complex exponentials
+
+00:02:38,000 --> 00:02:41,000
+and in what we refer to as
+
+00:02:41,000 --> 00:02:45,000
+the synthesis equation the synthesis equation corresponded
+
+00:02:45,000 --> 00:02:50,000
+to in effect a dick opposition as a linear combination
+
+00:02:50,000 --> 00:02:56,000
+decomposition affects ft as a linear combination of complex exponentials
+
+00:02:56,000 --> 00:02:59,000
+and of course associated with this was
+
+00:02:59,000 --> 00:03:02,000
+the corresponding analysis equation dead
+
+00:03:02,000 --> 00:03:07,000
+in effect gave us the amplitudes associated with the complex exponentials
+
+00:03:07,000 --> 00:03:11,000
+now why did we pick complex exponentials
+
+00:03:11,000 --> 00:03:14,000
+well recall that the reason was
+
+00:03:14,000 --> 00:03:18,000
+that complex exponentials are I can functions of linear time-invariant
+
+00:03:18,000 --> 00:03:19,000
+systems
+
+00:03:19,000 --> 00:03:23,000
+and that was very convenient specifically
+
+00:03:23,000 --> 00:03:27,000
+if we have a linear time-invariant system
+
+00:03:27,000 --> 00:03:31,000
+with an impulse response 850 well we had shown
+
+00:03:31,000 --> 00:03:36,000
+is that that class a systems has the property
+
+00:03:36,000 --> 00:03:40,000
+that if we put in a complex exponential we get out
+
+00:03:40,000 --> 00:03:44,000
+a complex exponential at the same frequency
+
+00:03:44,000 --> 00:03:48,000
+and with the change in amplitude and this change in amplitude
+
+00:03:48,000 --> 00:03:53,000
+in fact corresponded as we showed as the discussion went along
+
+00:03:53,000 --> 00:03:56,000
+to 248 transform all
+
+00:03:56,000 --> 00:04:01,000
+the system impulse response so
+
+00:04:01,000 --> 00:04:04,000
+the notion love decomposing signals
+
+00:04:04,000 --> 00:04:09,000
+into complex exponentials was very intimately connected in the Fourier
+
+00:04:09,000 --> 00:04:12,000
+transforms very intimately connected
+
+00:04:12,000 --> 00:04:17,000
+with the eigenfunction property a complex exponentials for linear
+
+00:04:17,000 --> 00:04:18,000
+time-invariant systems
+
+00:04:18,000 --> 00:04:23,000
+well complex exponentials have that type are not
+
+00:04:23,000 --> 00:04:28,000
+the only I can functions for linear time-invariant systems
+
+00:04:28,000 --> 00:04:31,000
+in fact what you've seen previously
+
+00:04:31,000 --> 00:04:35,000
+is that if we took a more general exponential
+
+00:04:35,000 --> 00:04:38,000
+you to the st. where s
+
+00:04:38,000 --> 00:04:42,000
+is a more general complex number not just J Omega
+
+00:04:42,000 --> 00:04:47,000
+but in fact Sigma plus J Omega for any bad you have s
+
+00:04:47,000 --> 00:04:51,000
+a comp the complex exponential is an eigenfunction
+
+00:04:51,000 --> 00:04:56,000
+and we can justify that simply by substitution into the convolution
+
+00:04:56,000 --> 00:04:57,000
+integral
+
+00:04:57,000 --> 00:05:00,000
+in other words the response to this complex exponential
+
+00:05:00,000 --> 00:05:03,000
+is the convolution up the impulse response
+
+00:05:03,000 --> 00:05:07,000
+with the exhortation an notice
+
+00:05:07,000 --> 00:05:11,000
+there we can break this term into a product
+
+00:05:11,000 --> 00:05:14,000
+eat to the st. you need to the minus s
+
+00:05:14,000 --> 00:05:18,000
+now and BU the st. term
+
+00:05:18,000 --> 00:05:21,000
+become outside the integration
+
+00:05:21,000 --> 00:05:25,000
+and consequently just carrying through that algebra
+
+00:05:25,000 --> 00:05:28,000
+would reduce this integral
+
+00:05:28,000 --> 00:05:32,000
+to an integral with
+
+00:05:32,000 --> 00:05:37,000
+in the st. fact there outside so just simply carrying through the algebra
+
+00:05:37,000 --> 00:05:41,000
+what we would conclude is that a complex exponential
+
+00:05:41,000 --> 00:05:46,000
+with any complex number ass which generate as an output
+
+00:05:46,000 --> 00:05:50,000
+a complex exponential have the same form
+
+00:05:50,000 --> 00:05:53,000
+multiplied by whatever this integral is
+
+00:05:53,000 --> 00:05:58,000
+and this integral of course will depend on what the value a veces
+
+00:05:58,000 --> 00:06:02,000
+but that's all that it will depend on or said another way
+
+00:06:02,000 --> 00:06:05,000
+what this all can be denoted as
+
+00:06:05,000 --> 00:06:09,000
+is some function Hibs that
+
+00:06:09,000 --> 00:06:12,000
+depends on the value of s so finally
+
+00:06:12,000 --> 00:06:15,000
+then you the st. as an exhortation
+
+00:06:15,000 --> 00:06:19,000
+to linear time-invariant system generates a response
+
+00:06:19,000 --> 00:06:23,000
+which is a complex constant depending on S
+
+00:06:23,000 --> 00:06:26,000
+multiplying the same
+
+00:06:26,000 --> 00:06:30,000
+function that excited the system
+
+00:06:30,000 --> 00:06:33,000
+so what we have been is
+
+00:06:33,000 --> 00:06:38,000
+the I can function property more generally in terms of
+
+00:06:38,000 --> 00:06:41,000
+a more general complex exponential
+
+00:06:41,000 --> 00:06:46,000
+where the complex factor is given by this integral
+
+00:06:46,000 --> 00:06:50,000
+well in fact with that integral corresponds to
+
+00:06:50,000 --> 00:06:54,000
+is what we will the fine
+
+00:06:54,000 --> 00:06:58,000
+as the apostrophe its form of the impulse response
+
+00:06:58,000 --> 00:07:02,000
+and in fact we can apply this transformation
+
+00:07:02,000 --> 00:07:07,000
+to a more general time function that may or may not be
+
+00:07:07,000 --> 00:07:12,000
+the impulse response this ove a linear time-invariant system
+
+00:07:12,000 --> 00:07:16,000
+and so in general it is this transformation
+
+00:07:16,000 --> 00:07:19,000
+on a time function which is
+
+00:07:19,000 --> 00:07:23,000
+the a-plus transform that time function
+
+00:07:23,000 --> 00:07:26,000
+and it's a functional bests so
+
+00:07:26,000 --> 00:07:30,000
+the definition up the applause transform
+
+00:07:30,000 --> 00:07:34,000
+is that the applause transform overtime function X 50
+
+00:07:34,000 --> 00:07:38,000
+is the result love this transformation
+
+00:07:38,000 --> 00:07:42,000
+on exit to the it's the noted as excessive ass
+
+00:07:42,000 --> 00:07:47,000
+and as a shorthand notation as we had with the four EA transform
+
+00:07:47,000 --> 00:07:51,000
+then we have in the time domain the time function except the
+
+00:07:51,000 --> 00:07:55,000
+and in the apostrophe its form domain the
+
+00:07:55,000 --> 00:07:58,000
+function XFS and these then
+
+00:07:58,000 --> 00:08:01,000
+represent a transformed pair
+
+00:08:01,000 --> 00:08:04,000
+now let me remind you that
+
+00:08:04,000 --> 00:08:08,000
+that the the development of that mapping
+
+00:08:08,000 --> 00:08:12,000
+is exactly the process that we went through initially in developing
+
+00:08:12,000 --> 00:08:17,000
+a mapping that ended up giving the giving us the Fourier transform
+
+00:08:17,000 --> 00:08:20,000
+essentially what we've done is just broaden your horizon
+
+00:08:20,000 --> 00:08:24,000
+some white or our notation some white
+
+00:08:24,000 --> 00:08:28,000
+and rather than pushing just the complex exponential through the system
+
+00:08:28,000 --> 00:08:32,000
+we've pushed a more general time function either the st.
+
+00:08:32,000 --> 00:08:39,000
+where ass is a complex number with both a real part in an imaginary part
+
+00:08:39,000 --> 00:08:42,000
+well the discussion we going through so far course is
+
+00:08:42,000 --> 00:08:46,000
+very closely related to when what we went through
+
+00:08:46,000 --> 00:08:49,000
+for the Fourier transform the mapping and we've ended up with
+
+00:08:49,000 --> 00:08:54,000
+is called the applause transform and as you can well imagine and perhaps
+
+00:08:54,000 --> 00:08:58,000
+may have recognized already there's a very close connection
+
+00:08:58,000 --> 00:09:03,000
+between the applause transform and the Fourier transform
+
+00:09:03,000 --> 00:09:07,000
+well to see wanted the connections well we can observe
+
+00:09:07,000 --> 00:09:13,000
+is that if we look at the Fourier transform expression
+
+00:09:13,000 --> 00:09:17,000
+and if we look at the applause transform expression
+
+00:09:17,000 --> 00:09:23,000
+where ass is now a general complex number Sigma plus jail maker
+
+00:09:23,000 --> 00:09:27,000
+these two expressions in fact are identical
+
+00:09:27,000 --> 00:09:31,000
+if in fact Sigma is equal to 0
+
+00:09:31,000 --> 00:09:35,000
+if signatures equal to 0 so that ass is just jail maker
+
+00:09:35,000 --> 00:09:38,000
+then all that this transformation is
+
+00:09:38,000 --> 00:09:42,000
+is the same as that substitute in s equals jail maker
+
+00:09:42,000 --> 00:09:47,000
+and this is what we get so
+
+00:09:47,000 --> 00:09:53,000
+what this then tells us is dead if we have the apostrophe it's for
+
+00:09:53,000 --> 00:09:56,000
+and if we look at the applause transform at
+
+00:09:56,000 --> 00:10:01,000
+ass equals J Omega
+
+00:10:01,000 --> 00:10:05,000
+then that in fact corresponds to
+
+00:10:05,000 --> 00:10:09,000
+the Fourier transform affect safety
+
+00:10:09,000 --> 00:10:13,000
+now there's a slight notational issue
+
+00:10:13,000 --> 00:10:17,000
+that this raises and it's very straightforward to clean it up
+
+00:10:17,000 --> 00:10:21,000
+but it's something that its you have to just kinda
+
+00:10:21,000 --> 00:10:25,000
+focus on for second to understand what the issue is
+
+00:10:25,000 --> 00:10:29,000
+notice that on the left hand side of this equation
+
+00:10:29,000 --> 00:10:33,000
+X a vast representing the applause transform
+
+00:10:33,000 --> 00:10:37,000
+when we look at that would signal to 0 RS equal to jail maker
+
+00:10:37,000 --> 00:10:41,000
+are natural inclination is to write that
+
+00:10:41,000 --> 00:10:44,000
+as exit J Omega of course
+
+00:10:44,000 --> 00:10:47,000
+on the other hand the right hand side of the equation namely the Fourier
+
+00:10:47,000 --> 00:10:49,000
+transform exit T
+
+00:10:49,000 --> 00:10:53,000
+we've typically written as
+
+00:10:53,000 --> 00:10:57,000
+X all Omega focusing on the fact that
+
+00:10:57,000 --> 00:11:00,000
+it's a function love this variable Omega
+
+00:11:00,000 --> 00:11:04,000
+well there's a slight awkwardness here because here we're talking about
+
+00:11:04,000 --> 00:11:07,000
+an argument J Omega here we're talking about an argument Omega
+
+00:11:07,000 --> 00:11:11,000
+and a very straightforward way of dealing with that is
+
+00:11:11,000 --> 00:11:14,000
+to simply change our notation
+
+00:11:14,000 --> 00:11:18,000
+for the Fourier transform recognizing that the Fourier transform
+
+00:11:18,000 --> 00:11:22,000
+course is a function of Omega but it's also
+
+00:11:22,000 --> 00:11:26,000
+in fact the function J Omega and if we write it that way
+
+00:11:26,000 --> 00:11:31,000
+then the two notations come together in other words the applause transform
+
+00:11:31,000 --> 00:11:36,000
+at st. cause jail maker just simply were reduces both mathematically and
+
+00:11:36,000 --> 00:11:37,000
+rotationally
+
+00:11:37,000 --> 00:11:42,000
+to the Fourier transform so the notation that will now be adopting
+
+00:11:42,000 --> 00:11:46,000
+for the four th transform is the notation
+
+00:11:46,000 --> 00:11:51,000
+whereby we express the 48 transform no longer simply as active Omega
+
+00:11:51,000 --> 00:11:55,000
+but choosing as the argument jail make
+
+00:11:55,000 --> 00:11:59,000
+simple notational change
+
+00:11:59,000 --> 00:12:04,000
+now here we see one relationship between the Fourier transform and
+
+00:12:04,000 --> 00:12:07,000
+the the plots transform namely that
+
+00:12:07,000 --> 00:12:12,000
+the poss transform pressequals chair maker reduces to the Fourier transform
+
+00:12:12,000 --> 00:12:17,000
+we also have number another important relationship
+
+00:12:17,000 --> 00:12:20,000
+in particular the fact that the
+
+00:12:20,000 --> 00:12:23,000
+applause transform can be interpreted
+
+00:12:23,000 --> 00:12:28,000
+as the Fourier transform all a modified
+
+00:12:28,000 --> 00:12:32,000
+version affect safety let let me show you what I mean
+
+00:12:32,000 --> 00:12:36,000
+here of course we have the relationship that we just developed
+
+00:12:36,000 --> 00:12:42,000
+namely s equals jail maker plus transform reduces the Fourier transform
+
+00:12:42,000 --> 00:12:47,000
+but now let's look at the more general applause transform expression
+
+00:12:47,000 --> 00:12:51,000
+and if we substitute in s equals Sigma plus J Omega
+
+00:12:51,000 --> 00:12:56,000
+which is the general form for this complex variable ass
+
+00:12:56,000 --> 00:13:00,000
+and we carry through so the algebra
+
+00:13:00,000 --> 00:13:04,000
+breaking this into the product up to exponential
+
+00:13:04,000 --> 00:13:07,000
+the product the two exponential see the minus Sigma T
+
+00:13:07,000 --> 00:13:11,000
+time see the minus jail make it to the we now have
+
+00:13:11,000 --> 00:13:16,000
+this expression where of course in both these
+
+00:13:16,000 --> 00:13:20,000
+their is a DT
+
+00:13:20,000 --> 00:13:24,000
+and now when we look at this
+
+00:13:24,000 --> 00:13:27,000
+what we observe is that this in fact
+
+00:13:27,000 --> 00:13:30,000
+is the 48 transform of something
+
+00:13:30,000 --> 00:13:35,000
+what's the something it's not accept T anymore it's the Fourier transform up
+
+00:13:35,000 --> 00:13:36,000
+x50
+
+00:13:36,000 --> 00:13:40,000
+multiplied by e2 the minus Sigma T
+
+00:13:40,000 --> 00:13:43,000
+so if we think I've these two terms together
+
+00:13:43,000 --> 00:13:46,000
+this in a brawl is just the four EA transform
+
+00:13:46,000 --> 00:13:50,000
+it's the for a transformer Beck city multiplied
+
+00:13:50,000 --> 00:13:54,000
+by an exponential Sigma is greater than
+
+00:13:54,000 --> 00:13:57,000
+its a an exponential that
+
+00:13:57,000 --> 00:14:03,000
+the case with time Sigma is less than 0 it's an exponential the crows
+
+00:14:03,000 --> 00:14:06,000
+time so we have
+
+00:14:06,000 --> 00:14:11,000
+then this additional relationship which tells us that the apostrophe s for
+
+00:14:11,000 --> 00:14:15,000
+is the 48 transform love
+
+00:14:15,000 --> 00:14:19,000
+and exponentially weighted time function
+
+00:14:19,000 --> 00:14:23,000
+now this exponential weighting has
+
+00:14:23,000 --> 00:14:27,000
+some important significance in particular
+
+00:14:27,000 --> 00:14:31,000
+recall that there were issues have convergence with the 48 transform in
+
+00:14:31,000 --> 00:14:35,000
+particular the Fourier transform
+
+00:14:35,000 --> 00:14:38,000
+may or may not converge and for convergence in fact
+
+00:14:38,000 --> 00:14:42,000
+what's required is that but I'm fortunate we're transforming be
+
+00:14:42,000 --> 00:14:45,000
+absolutely integral now
+
+00:14:45,000 --> 00:14:51,000
+we can have a time function that isn't absolutely integral
+
+00:14:51,000 --> 00:14:55,000
+because let's say it grows exponentially as time
+
+00:14:55,000 --> 00:14:59,000
+increases but when we multiply it by this
+
+00:14:59,000 --> 00:15:03,000
+exponential factor that's embodied in a posh transform
+
+00:15:03,000 --> 00:15:07,000
+in fact that brings the function back down for positive time
+
+00:15:07,000 --> 00:15:11,000
+and will impose absolute integrability
+
+00:15:11,000 --> 00:15:15,000
+on the product %uh XFT times
+
+00:15:15,000 --> 00:15:18,000
+e2 the minus Sigma T and so
+
+00:15:18,000 --> 00:15:21,000
+the conclusion an important point is that
+
+00:15:21,000 --> 00:15:26,000
+the applause transformed the Fourier transform this product may converge
+
+00:15:26,000 --> 00:15:30,000
+even though the Fourier transform effective t doesn't in other words
+
+00:15:30,000 --> 00:15:35,000
+the apostrophe s form may converge even when the Fourier transform
+
+00:15:35,000 --> 00:15:38,000
+doesn't converge and will see that will see examples of it is the discussion
+
+00:15:38,000 --> 00:15:41,000
+goes along now let me also
+
+00:15:41,000 --> 00:15:44,000
+draw your attention to the fact although we won't be
+
+00:15:44,000 --> 00:15:48,000
+working through this in detail
+
+00:15:48,000 --> 00:15:51,000
+to the fact that this equation
+
+00:15:51,000 --> 00:15:55,000
+in effect provides the basis
+
+00:15:55,000 --> 00:15:59,000
+for us to figure out how to express accept T
+
+00:15:59,000 --> 00:16:03,000
+interns love the applause transform
+
+00:16:03,000 --> 00:16:07,000
+effect we can apply the inverse Fourier transform to this
+
+00:16:07,000 --> 00:16:11,000
+thereby to this account for the exponential factor by bring it over to
+
+00:16:11,000 --> 00:16:12,000
+the other side
+
+00:16:12,000 --> 00:16:16,000
+and if you go through this and in fact
+
+00:16:16,000 --> 00:16:20,000
+you'll have an opportunity to go through this both in the video course manual
+
+00:16:20,000 --> 00:16:24,000
+and also it's carried through in the text
+
+00:16:24,000 --> 00:16:28,000
+what you end up with is
+
+00:16:28,000 --> 00:16:31,000
+a synthesis equation X expression for exit T
+
+00:16:31,000 --> 00:16:35,000
+in terms of Xmas which corresponds to a synthesis equation
+
+00:16:35,000 --> 00:16:40,000
+and which now builds x50 I have a linear combination if not
+
+00:16:40,000 --> 00:16:44,000
+necessarily functions the foreign to the Chi Omega TV
+
+00:16:44,000 --> 00:16:48,000
+but interns love functions
+
+00:16:48,000 --> 00:16:52,000
+or basic signals which are more general exponentials
+
+00:16:52,000 --> 00:16:55,000
+you to the st.
+
+00:16:55,000 --> 00:16:59,000
+okay well let's just look at
+
+00:16:59,000 --> 00:17:03,000
+some examples love the apostrophe s form of some time functions
+
+00:17:03,000 --> 00:17:06,000
+and these examples that I'll go through
+
+00:17:06,000 --> 00:17:11,000
+are all examples that are worked out in attacks and so I don't want to focus on
+
+00:17:11,000 --> 00:17:14,000
+the algebra what I'd like to focus on
+
+00:17:14,000 --> 00:17:18,000
+are some with the issues and the interpretation
+
+00:17:18,000 --> 00:17:22,000
+let's first the ball look at example
+
+00:17:22,000 --> 00:17:25,000
+the example in the text which is example 9.1
+
+00:17:25,000 --> 00:17:29,000
+if we take the Fourier transform
+
+00:17:29,000 --> 00:17:33,000
+love this exponential then as you well know
+
+00:17:33,000 --> 00:17:37,000
+the result that we have is one over J Omega plus a
+
+00:17:37,000 --> 00:17:41,000
+and bekannt converge for any a
+
+00:17:41,000 --> 00:17:44,000
+in particular it's only for a greater than 0
+
+00:17:44,000 --> 00:17:49,000
+what that really means is that for convergence of the 48 transform this has
+
+00:17:49,000 --> 00:17:50,000
+to be
+
+00:17:50,000 --> 00:17:53,000
+a decaying exponential it can't be
+
+00:17:53,000 --> 00:17:57,000
+in increasing exponentially if
+
+00:17:57,000 --> 00:18:01,000
+instead we apply the applause transformed to this
+
+00:18:01,000 --> 00:18:06,000
+applying to the the deal applies transform is the same as taking the 48
+
+00:18:06,000 --> 00:18:07,000
+transform or
+
+00:18:07,000 --> 00:18:11,000
+X 50 times an exponential in and
+
+00:18:11,000 --> 00:18:15,000
+the exponential that we would multiply by is he to the minus Sigma T
+
+00:18:15,000 --> 00:18:20,000
+so in effect taking the applause transform of this
+
+00:18:20,000 --> 00:18:26,000
+is like taking the Fourier transform augie to the minus eighty
+
+00:18:26,000 --> 00:18:29,000
+e2 the minus Sigma T
+
+00:18:29,000 --> 00:18:33,000
+and if we carry that through just
+
+00:18:33,000 --> 00:18:36,000
+working through the integral we end up
+
+00:18:36,000 --> 00:18:42,000
+with applause transform which is one over est plus a
+
+00:18:42,000 --> 00:18:47,000
+but just as in the Fourier transform
+
+00:18:47,000 --> 00:18:50,000
+the Fourier transform all converge for any a
+
+00:18:50,000 --> 00:18:53,000
+now what happens is that the
+
+00:18:53,000 --> 00:18:57,000
+love pasta Rance form will only converge
+
+00:18:57,000 --> 00:19:00,000
+when the forty a transformer this converges
+
+00:19:00,000 --> 00:19:05,000
+said another way it's when the combination is a plus Sigma
+
+00:19:05,000 --> 00:19:08,000
+is greater than 0 so we would require
+
+00:19:08,000 --> 00:19:12,000
+that by right over here a plus Sigma
+
+00:19:12,000 --> 00:19:16,000
+is greater than 0 warmer that Sigma
+
+00:19:16,000 --> 00:19:20,000
+is greater than minus a so in fact
+
+00:19:20,000 --> 00:19:23,000
+in the apostrophe s former this
+
+00:19:23,000 --> 00:19:27,000
+we have an expression one over est plus a but
+
+00:19:27,000 --> 00:19:31,000
+we also require in interpreting that
+
+00:19:31,000 --> 00:19:34,000
+dead the real party bass be greater
+
+00:19:34,000 --> 00:19:38,000
+then minus a so that
+
+00:19:38,000 --> 00:19:42,000
+essentially the 48 transform up X 50
+
+00:19:42,000 --> 00:19:45,000
+times you to the minus Sigma T converges
+
+00:19:45,000 --> 00:19:48,000
+so it's important to recognize that the
+
+00:19:48,000 --> 00:19:51,000
+algebraic expression that we get is
+
+00:19:51,000 --> 00:19:56,000
+only valid for certain values love the real party vez
+
+00:19:56,000 --> 00:20:00,000
+and so for this example we can summarize it as
+
+00:20:00,000 --> 00:20:06,000
+this exponential as the apostrophe s form which is one over est plus a
+
+00:20:06,000 --> 00:20:10,000
+where ass is restricted to the range the real party best greater than
+
+00:20:10,000 --> 00:20:15,000
+minus a now
+
+00:20:15,000 --> 00:20:20,000
+we haven't had this issue before love restrictions on what the value a veces
+
+00:20:20,000 --> 00:20:23,000
+with the with 48 transform either recover Jordan converge
+
+00:20:23,000 --> 00:20:28,000
+with a plot strands form there are certain values the best we now have more
+
+00:20:28,000 --> 00:20:32,000
+flexibility and so they're certain values are the real party best for which
+
+00:20:32,000 --> 00:20:36,000
+it converges in certain values for which it doesn't
+
+00:20:36,000 --> 00:20:39,000
+the values Ave S for which the apostrophe s form
+
+00:20:39,000 --> 00:20:43,000
+converges is the values
+
+00:20:43,000 --> 00:20:47,000
+are referred to as the region of convergence
+
+00:20:47,000 --> 00:20:50,000
+up the applause transform
+
+00:20:50,000 --> 00:20:54,000
+and it's important to recognize that
+
+00:20:54,000 --> 00:20:59,000
+in specifying the applause transform what's required is not only the
+
+00:20:59,000 --> 00:21:01,000
+algebraic expression
+
+00:21:01,000 --> 00:21:05,000
+but also the domain or set of values evas
+
+00:21:05,000 --> 00:21:09,000
+for which that algebraic expression is
+
+00:21:09,000 --> 00:21:13,000
+ballot just two
+
+00:21:13,000 --> 00:21:17,000
+underscore that point let me draw your attention to another
+
+00:21:17,000 --> 00:21:21,000
+example in the text which is example 9.2
+
+00:21:21,000 --> 00:21:25,000
+example 9.2 we have an exponential
+
+00:21:25,000 --> 00:21:30,000
+for negative time 0 for positive time
+
+00:21:30,000 --> 00:21:33,000
+and if you carry through the algebra there you end up with
+
+00:21:33,000 --> 00:21:38,000
+a low price transform expression which is again one over S plus a
+
+00:21:38,000 --> 00:21:44,000
+exactly the same algebraic expression as we head for the previous example
+
+00:21:44,000 --> 00:21:47,000
+the important distinction is that now
+
+00:21:47,000 --> 00:21:51,000
+the real party bass is restricted to be less than minus a
+
+00:21:51,000 --> 00:21:56,000
+it so in fact if you compare this example
+
+00:21:56,000 --> 00:21:59,000
+with the one above it and let's just look back at
+
+00:21:59,000 --> 00:22:03,000
+the answer that we had the air
+
+00:22:03,000 --> 00:22:06,000
+if you compare that those two examples here
+
+00:22:06,000 --> 00:22:11,000
+the algebraic expression is 100 breast but say with a certain
+
+00:22:11,000 --> 00:22:14,000
+regional convergence here
+
+00:22:14,000 --> 00:22:18,000
+the algebraic expression is one over est plus a
+
+00:22:18,000 --> 00:22:22,000
+and the only difference between those two is the domain a region of
+
+00:22:22,000 --> 00:22:22,000
+convergence
+
+00:22:22,000 --> 00:22:27,000
+so there's another complication or twist now
+
+00:22:27,000 --> 00:22:33,000
+not only do we need to generate the algebraic expression
+
+00:22:33,000 --> 00:22:36,000
+but we also have to be careful to specify
+
+00:22:36,000 --> 00:22:39,000
+the region of convergence
+
+00:22:39,000 --> 00:22:44,000
+over which that algebraic expression is valid
+
+00:22:44,000 --> 00:22:48,000
+now later on in this lecture and actually also
+
+00:22:48,000 --> 00:22:52,000
+arm as the discussion a little past transform goes on
+
+00:22:52,000 --> 00:22:55,000
+will begin to see and understand more about
+
+00:22:55,000 --> 00:22:58,000
+how the region of convergence relates to
+
+00:22:58,000 --> 00:23:03,000
+various properties of the time function
+
+00:23:03,000 --> 00:23:08,000
+okay well let's finally look at one additional example from the tax
+
+00:23:08,000 --> 00:23:12,000
+and this is example 9.3 and what it consists of
+
+00:23:12,000 --> 00:23:16,000
+is the a type function which is the sum
+
+00:23:16,000 --> 00:23:19,000
+love two exponentials and
+
+00:23:19,000 --> 00:23:23,000
+although we haven't formally talked about properties a little fuss transform
+
+00:23:23,000 --> 00:23:24,000
+yet
+
+00:23:24,000 --> 00:23:27,000
+what are the properties that will see it is relatively easy to develop
+
+00:23:27,000 --> 00:23:31,000
+is the fact that the apostrophe s form of Assam
+
+00:23:31,000 --> 00:23:35,000
+is the summer the applause transform so in fact we can get
+
+00:23:35,000 --> 00:23:40,000
+the applause transform love the solo these two terms
+
+00:23:40,000 --> 00:23:44,000
+as some love the apostrophe its forms
+
+00:23:44,000 --> 00:23:47,000
+and so for this one we know from the
+
+00:23:47,000 --> 00:23:51,000
+example that we at looked at previously example 9.1
+
+00:23:51,000 --> 00:23:54,000
+that this is a form one over est plus one
+
+00:23:54,000 --> 00:24:00,000
+with a region of convergence which is the real party best greater than -1
+
+00:24:00,000 --> 00:24:05,000
+for this one we have a poss transform which is one over est plus two
+
+00:24:05,000 --> 00:24:09,000
+with a region of convergence which is the real party bass
+
+00:24:09,000 --> 00:24:12,000
+greater than -2 so
+
+00:24:12,000 --> 00:24:18,000
+for the two of them together we have to take the overlap with those two regions
+
+00:24:18,000 --> 00:24:22,000
+in other words we have to take the region that encompasses both the real
+
+00:24:22,000 --> 00:24:24,000
+party best greater than -1
+
+00:24:24,000 --> 00:24:29,000
+in the real party best greater than -2 and if we put those together then
+
+00:24:29,000 --> 00:24:33,000
+we have a combined regional convergence which is the real party best
+
+00:24:33,000 --> 00:24:39,000
+greater than -1 so this is the expression
+
+00:24:39,000 --> 00:24:43,000
+and for this particular example what we have
+
+00:24:43,000 --> 00:24:46,000
+is a ratio of polynomials
+
+00:24:46,000 --> 00:24:50,000
+the ratio polynomials is a numerator polynomial and at the nominator
+
+00:24:50,000 --> 00:24:51,000
+polynomial
+
+00:24:51,000 --> 00:24:54,000
+and it's convenient to
+
+00:24:54,000 --> 00:24:58,000
+summarize these by
+
+00:24:58,000 --> 00:25:01,000
+plotting the roots love the numerator polynomial
+
+00:25:01,000 --> 00:25:06,000
+and the roots to the denominator polynomial in the complex plane
+
+00:25:06,000 --> 00:25:09,000
+and the complex plane which they are plotted is referred to
+
+00:25:09,000 --> 00:25:13,000
+as vs playing
+
+00:25:13,000 --> 00:25:18,000
+so we can for example take the denominator polynomial
+
+00:25:18,000 --> 00:25:22,000
+and summarize it in by specifying the fact
+
+00:25:22,000 --> 00:25:25,000
+or by representing the fact
+
+00:25:25,000 --> 00:25:30,000
+that it has roots at st. cause -1 and at a Sikh was minus-2
+
+00:25:30,000 --> 00:25:33,000
+and I've done that in this picture by putting an X
+
+00:25:33,000 --> 00:25:37,000
+where the roots have the denominator polynomial order
+
+00:25:37,000 --> 00:25:41,000
+the numerator polynomial has a rude ass equals
+
+00:25:41,000 --> 00:25:44,000
+-3 hands and i've represented that by a circle
+
+00:25:44,000 --> 00:25:48,000
+so these are the roots to the denominator polynomial
+
+00:25:48,000 --> 00:25:51,000
+and this is the route up the numerator polynomial for this example
+
+00:25:51,000 --> 00:25:55,000
+and also for this example we can represent
+
+00:25:55,000 --> 00:25:59,000
+the region of convergence which
+
+00:25:59,000 --> 00:26:03,000
+is the real party best greater than -1 and so that's in fact
+
+00:26:03,000 --> 00:26:06,000
+the region over here
+
+00:26:06,000 --> 00:26:10,000
+there is also if I draw these just the router the numerator and denominator
+
+00:26:10,000 --> 00:26:12,000
+plan of polynomials
+
+00:26:12,000 --> 00:26:15,000
+I would need an additional piece of information
+
+00:26:15,000 --> 00:26:19,000
+to specify the algebraic expression completely namely
+
+00:26:19,000 --> 00:26:24,000
+multiply constant out in front of the whole thing
+
+00:26:24,000 --> 00:26:27,000
+well this particular example has
+
+00:26:27,000 --> 00:26:31,000
+the applause transform as a
+
+00:26:31,000 --> 00:26:35,000
+rational function namely its one polynomial in the numerator and another
+
+00:26:35,000 --> 00:26:38,000
+polynomial in the denominator
+
+00:26:38,000 --> 00:26:42,000
+and in fact as we'll see applies transformers which are ratios are
+
+00:26:42,000 --> 00:26:43,000
+polynomials
+
+00:26:43,000 --> 00:26:47,000
+form a very important class they were in fact represent systems
+
+00:26:47,000 --> 00:26:50,000
+better describe a ball by linear constant coefficient differential
+
+00:26:50,000 --> 00:26:51,000
+equations
+
+00:26:51,000 --> 00:26:56,000
+you shouldn't necessarily in fact for sure you shouldn't see why
+
+00:26:56,000 --> 00:26:59,000
+that's true now will see that later but
+
+00:26:59,000 --> 00:27:03,000
+that means that a-plus transforms
+
+00:27:03,000 --> 00:27:07,000
+that are rational functions namely
+
+00:27:07,000 --> 00:27:12,000
+the ratio love the numerator polynomial divided by the nominator polynomial
+
+00:27:12,000 --> 00:27:18,000
+become very important in the discussion that follows
+
+00:27:18,000 --> 00:27:23,000
+and in fact in we have some terminology for this the route so the numerator
+
+00:27:23,000 --> 00:27:24,000
+polynomial
+
+00:27:24,000 --> 00:27:28,000
+are referred to as zeros
+
+00:27:28,000 --> 00:27:33,000
+up the applause transform because of course those are the values a bass
+
+00:27:33,000 --> 00:27:36,000
+at which XFS become 0
+
+00:27:36,000 --> 00:27:40,000
+and the roots to the denominator polynomial are
+
+00:27:40,000 --> 00:27:44,000
+referred to as the polls up the applause transform
+
+00:27:44,000 --> 00:27:47,000
+and those are the values vs
+
+00:27:47,000 --> 00:27:52,000
+at which the applause transform blows up
+
+00:27:52,000 --> 00:27:56,000
+namely becomes infinite if you think love setting s
+
+00:27:56,000 --> 00:27:59,000
+equal to evaluate this denominator polynomial goes to zero
+
+00:27:59,000 --> 00:28:03,000
+of course extra bass becomes infinite and
+
+00:28:03,000 --> 00:28:06,000
+what we would expect in a course will see that
+
+00:28:06,000 --> 00:28:10,000
+that this is true well we would expect
+
+00:28:10,000 --> 00:28:13,000
+is that wherever that happens there must be some problem
+
+00:28:13,000 --> 00:28:18,000
+with convergence oval poss transform and indeed the applause transformed doesn't
+
+00:28:18,000 --> 00:28:19,000
+converge
+
+00:28:19,000 --> 00:28:24,000
+at the polls namely at the roots the denominator polynomial
+
+00:28:24,000 --> 00:28:28,000
+so in fact let's focus in on that a little further
+
+00:28:28,000 --> 00:28:33,000
+let's examine and talk about the region of convergence
+
+00:28:33,000 --> 00:28:36,000
+all the applause transform and
+
+00:28:36,000 --> 00:28:40,000
+how its associated both with properties of the time function
+
+00:28:40,000 --> 00:28:44,000
+and also with the location love the polls
+
+00:28:44,000 --> 00:28:47,000
+all the applause transform and as we'll see
+
+00:28:47,000 --> 00:28:51,000
+the air are some very specific and important
+
+00:28:51,000 --> 00:28:54,000
+relationships and conclusions that we can draw
+
+00:28:54,000 --> 00:28:57,000
+about how the region of convergence
+
+00:28:57,000 --> 00:29:01,000
+is constrained an Associated with the
+
+00:29:01,000 --> 00:29:05,000
+locations the polls in the ass point
+
+00:29:05,000 --> 00:29:09,000
+well to begin with we can
+
+00:29:09,000 --> 00:29:13,000
+of course make the statement as I just made
+
+00:29:13,000 --> 00:29:17,000
+that the region of convergence contains no polls
+
+00:29:17,000 --> 00:29:20,000
+in particular if I think
+
+00:29:20,000 --> 00:29:24,000
+love this general rational function
+
+00:29:24,000 --> 00:29:28,000
+the polls love XFS by the values evas
+
+00:29:28,000 --> 00:29:32,000
+at which the denominator 0 or equivalent Lee
+
+00:29:32,000 --> 00:29:35,000
+XFS blows up and of course
+
+00:29:35,000 --> 00:29:40,000
+then that implies that the expression is no longer converged
+
+00:29:40,000 --> 00:29:44,000
+okay well that's one statement that we can make now there
+
+00:29:44,000 --> 00:29:48,000
+are some others and one for example
+
+00:29:48,000 --> 00:29:52,000
+is the statement that if I have a point
+
+00:29:52,000 --> 00:29:55,000
+in the S plane that corresponds the convergence
+
+00:29:55,000 --> 00:29:59,000
+then in fact any line in the S plane
+
+00:29:59,000 --> 00:30:02,000
+with that same real part will also
+
+00:30:02,000 --> 00:30:06,000
+be said %uh values for which the apostrophes form converges
+
+00:30:06,000 --> 00:30:10,000
+and what's the reason for that the reason for that
+
+00:30:10,000 --> 00:30:14,000
+is dead s is Sigma plus J Omega
+
+00:30:14,000 --> 00:30:20,000
+and convergence all the applause transform is associated with
+
+00:30:20,000 --> 00:30:24,000
+convergence love the four EA transform all
+
+00:30:24,000 --> 00:30:28,000
+it to the minus Sigma see times X 50
+
+00:30:28,000 --> 00:30:31,000
+and so the convergence only depends on Sigma
+
+00:30:31,000 --> 00:30:35,000
+if it only depends on Sigma than
+
+00:30:35,000 --> 00:30:38,000
+for one if it converges for one value Sigma
+
+00:30:38,000 --> 00:30:41,000
+I'm sorry for what for a value Sigma
+
+00:30:41,000 --> 00:30:45,000
+for some valuable maker Danny will converge
+
+00:30:45,000 --> 00:30:49,000
+for that same Sigma for any valuable make
+
+00:30:49,000 --> 00:30:54,000
+the conclusion n is dead the region of convergence
+
+00:30:54,000 --> 00:30:58,000
+if I have a law if I have a point that I also have a line
+
+00:30:58,000 --> 00:31:02,000
+and so what that suggests is that as we look at the regional convergence
+
+00:31:02,000 --> 00:31:09,000
+in fact corresponds to strips in the complex plane
+
+00:31:09,000 --> 00:31:12,000
+now finally we can tie together
+
+00:31:12,000 --> 00:31:15,000
+the region of convergence to the
+
+00:31:15,000 --> 00:31:20,000
+convergence of the Fourier transform in particular since we know that
+
+00:31:20,000 --> 00:31:24,000
+the applause transform reduces
+
+00:31:24,000 --> 00:31:27,000
+to the 48 transform when
+
+00:31:27,000 --> 00:31:33,000
+the complex variable yes is Sigma is equal to jail maker
+
+00:31:33,000 --> 00:31:37,000
+the implication is that if we have the law applies transform
+
+00:31:37,000 --> 00:31:42,000
+and if the a-plus transform reduces to the 48 transform
+
+00:31:42,000 --> 00:31:46,000
+when sick make 10 in other words when s is equal to jail make a
+
+00:31:46,000 --> 00:31:50,000
+then the 4e a transformative exit see
+
+00:31:50,000 --> 00:31:53,000
+converging is equivalent to the statement
+
+00:31:53,000 --> 00:31:56,000
+that the a-plus transform converges
+
+00:31:56,000 --> 00:32:01,000
+for Sigma equal to 0 in other words that the region of convergence
+
+00:32:01,000 --> 00:32:06,000
+includes what DJ Omega axis
+
+00:32:06,000 --> 00:32:10,000
+in the ass point
+
+00:32:10,000 --> 00:32:15,000
+alright so we have then some statements that kinda tied together the location of
+
+00:32:15,000 --> 00:32:16,000
+the polls
+
+00:32:16,000 --> 00:32:20,000
+and the region convergence let me make one other statement which is
+
+00:32:20,000 --> 00:32:25,000
+much harder statement to justify and I won't try to I just simply stated
+
+00:32:25,000 --> 00:32:29,000
+and that is that the regional convergence oval plus transform
+
+00:32:29,000 --> 00:32:32,000
+is a connected region in other words
+
+00:32:32,000 --> 00:32:35,000
+if the entire region
+
+00:32:35,000 --> 00:32:39,000
+consists of a single strap in the S plane
+
+00:32:39,000 --> 00:32:44,000
+it can consist of a strip over here for example in a strip over there
+
+00:32:44,000 --> 00:32:50,000
+well let me let me I'm emphasize summer those points a little further
+
+00:32:50,000 --> 00:32:54,000
+let's suppose that I A have
+
+00:32:54,000 --> 00:32:57,000
+ale a-plus transform
+
+00:32:57,000 --> 00:33:01,000
+and Google+ transform their
+
+00:33:01,000 --> 00:33:04,000
+I am talking about is a rational function which is
+
+00:33:04,000 --> 00:33:09,000
+one over S plus one times as plus two
+
+00:33:09,000 --> 00:33:14,000
+then the poll 0 pattern as its referred to
+
+00:33:14,000 --> 00:33:17,000
+in the S play in the location love the roots love the
+
+00:33:17,000 --> 00:33:21,000
+numerator and denominator polynomial course there is no numerator polynomial
+
+00:33:21,000 --> 00:33:27,000
+the denominator polynomial roots which have represented by these X's
+
+00:33:27,000 --> 00:33:30,000
+are shown here and so this is
+
+00:33:30,000 --> 00:33:33,000
+the poll 0 pattern
+
+00:33:33,000 --> 00:33:36,000
+and from what I said the region of convergence
+
+00:33:36,000 --> 00:33:40,000
+can't include any polls
+
+00:33:40,000 --> 00:33:43,000
+and it must correspond to strips
+
+00:33:43,000 --> 00:33:47,000
+in the ass plane and furthermore it must be
+
+00:33:47,000 --> 00:33:51,000
+just want some one connected region rather than multiple regions
+
+00:33:51,000 --> 00:33:54,000
+and so with this algebraic expression
+
+00:33:54,000 --> 00:33:59,000
+then the possible choices for the region of convergence
+
+00:33:59,000 --> 00:34:02,000
+consistent with those properties are the following:
+
+00:34:02,000 --> 00:34:05,000
+one of them would be region of convergence
+
+00:34:05,000 --> 00:34:09,000
+to the right love this poll
+
+00:34:09,000 --> 00:34:14,000
+a second would be a region of convergence
+
+00:34:14,000 --> 00:34:18,000
+which lies between the two poles
+
+00:34:18,000 --> 00:34:22,000
+as a show here and
+
+00:34:22,000 --> 00:34:25,000
+a third is region of convergence
+
+00:34:25,000 --> 00:34:31,000
+which is to the left love this poll
+
+00:34:31,000 --> 00:34:35,000
+and because it the fact dead I said without proof that
+
+00:34:35,000 --> 00:34:41,000
+the region of convergence must be a single strip it can't be multiple strips
+
+00:34:41,000 --> 00:34:45,000
+in fact we could not consider as a possible region convergence
+
+00:34:45,000 --> 00:34:49,000
+what I show here in so in fact
+
+00:34:49,000 --> 00:34:52,000
+this is not a valid region of convergence
+
+00:34:52,000 --> 00:34:56,000
+there are only three possibilities Associated
+
+00:34:56,000 --> 00:35:00,000
+with this poll 0 pattern namely to the writer this poll
+
+00:35:00,000 --> 00:35:06,000
+between the two poles and to the left that this poll
+
+00:35:06,000 --> 00:35:09,000
+now to carry the discussion further
+
+00:35:09,000 --> 00:35:13,000
+we can in fact associate
+
+00:35:13,000 --> 00:35:17,000
+the region of convergence above the law applies transform
+
+00:35:17,000 --> 00:35:20,000
+with some very specific characteristics
+
+00:35:20,000 --> 00:35:26,000
+of the time function and what this will do is to help us understand
+
+00:35:26,000 --> 00:35:30,000
+how various for various choices
+
+00:35:30,000 --> 00:35:33,000
+love the region of convergence the interpretation
+
+00:35:33,000 --> 00:35:37,000
+that we can impose on the related time function
+
+00:35:37,000 --> 00:35:40,000
+let me show you what I mean
+
+00:35:40,000 --> 00:35:44,000
+suppose that we start with
+
+00:35:44,000 --> 00:35:48,000
+a time function as i indicated here
+
+00:35:48,000 --> 00:35:51,000
+which is a finite
+
+00:35:51,000 --> 00:35:55,000
+duration time function in other words it's zero
+
+00:35:55,000 --> 00:35:58,000
+except in some time interval now
+
+00:35:58,000 --> 00:36:02,000
+recall that the Fourier transform converges
+
+00:36:02,000 --> 00:36:05,000
+if the time for action has the property
+
+00:36:05,000 --> 00:36:10,000
+that is absolutely integral and as long as everything stays finite and
+
+00:36:10,000 --> 00:36:13,000
+interns have ample to in a finite duration signal
+
+00:36:13,000 --> 00:36:17,000
+there's no difficulty that we're gonna run into here
+
+00:36:17,000 --> 00:36:22,000
+now here the Fourier transform will converge and now
+
+00:36:22,000 --> 00:36:27,000
+the question is what can we say about the reach of convergence
+
+00:36:27,000 --> 00:36:30,000
+of the apostrophe it's for well
+
+00:36:30,000 --> 00:36:34,000
+the applies transform is the Fourier transform
+
+00:36:34,000 --> 00:36:37,000
+all the time function multiplied by an exponential
+
+00:36:37,000 --> 00:36:42,000
+and so we can ask a pan out whether we can destroy the absolute integrability
+
+00:36:42,000 --> 00:36:44,000
+of this
+
+00:36:44,000 --> 00:36:47,000
+by multiplying by an exponential that the case
+
+00:36:47,000 --> 00:36:53,000
+that grows too fast in the case too fast to whatever let's take a look at that
+
+00:36:53,000 --> 00:36:56,000
+suppose that this time function
+
+00:36:56,000 --> 00:37:00,000
+is absolutely integral and
+
+00:37:00,000 --> 00:37:03,000
+let's multiply it by
+
+00:37:03,000 --> 00:37:08,000
+a decaying exponential so this is now except eat I'm see the minus Sigma T
+
+00:37:08,000 --> 00:37:11,000
+if I think multiplying these two together
+
+00:37:11,000 --> 00:37:15,000
+and what you can see is that for negative for positive time
+
+00:37:15,000 --> 00:37:19,000
+sort of thinking informally I'm helping
+
+00:37:19,000 --> 00:37:23,000
+the integrability of the product because I'm pushing this part down
+
+00:37:23,000 --> 00:37:28,000
+for negative time unfortunately I'm making things bro
+
+00:37:28,000 --> 00:37:33,000
+but I don't let them grow indefinitely because there's some time before which
+
+00:37:33,000 --> 00:37:37,000
+this is equal to 0 likewise
+
+00:37:37,000 --> 00:37:43,000
+if I head a growing exponential
+
+00:37:43,000 --> 00:37:46,000
+then for a growing exponential
+
+00:37:46,000 --> 00:37:50,000
+for negative time or for this part perhaps
+
+00:37:50,000 --> 00:37:55,000
+this part making things smaller for positive time eventually this expansion
+
+00:37:55,000 --> 00:37:55,000
+was growing without
+
+00:37:55,000 --> 00:38:01,000
+found but the time function stocks at some point
+
+00:38:01,000 --> 00:38:05,000
+so the idea then kinda is dead
+
+00:38:05,000 --> 00:38:08,000
+for a finite duration
+
+00:38:08,000 --> 00:38:14,000
+time function no matter what kinda exponential I multiply by whether it's
+
+00:38:14,000 --> 00:38:18,000
+going this way are going this way because of the fact that
+
+00:38:18,000 --> 00:38:22,000
+essentially the limits on the integral are fine I'd I'm
+
+00:38:22,000 --> 00:38:26,000
+guaranteed that'll always maintain absolute integrability
+
+00:38:26,000 --> 00:38:30,000
+and so in fact then for a finite duration time function
+
+00:38:30,000 --> 00:38:36,000
+the region of convergence is the entire s play
+
+00:38:36,000 --> 00:38:39,000
+okay now in we can also
+
+00:38:39,000 --> 00:38:43,000
+make statements about other kinds of time functions
+
+00:38:43,000 --> 00:38:46,000
+and let's look
+
+00:38:46,000 --> 00:38:49,000
+at a time function
+
+00:38:49,000 --> 00:38:53,000
+which I a defined as a right-sided
+
+00:38:53,000 --> 00:38:57,000
+time function and
+
+00:38:57,000 --> 00:39:00,000
+a right-sided time function is one which
+
+00:39:00,000 --> 00:39:03,000
+is 0 up until sometime and then
+
+00:39:03,000 --> 00:39:08,000
+it goes on after that presumably off to infinity
+
+00:39:08,000 --> 00:39:11,000
+now let me remind you that
+
+00:39:11,000 --> 00:39:14,000
+the whole issue here with the region of convergence
+
+00:39:14,000 --> 00:39:18,000
+has to do with exponentials
+
+00:39:18,000 --> 00:39:21,000
+that we can multiply a time function by
+
+00:39:21,000 --> 00:39:26,000
+and have the product end up being absolutely integral
+
+00:39:26,000 --> 00:39:31,000
+well supposed dead when I multiply this time function
+
+00:39:31,000 --> 00:39:35,000
+by an exponential which lets ATK's
+
+00:39:35,000 --> 00:39:39,000
+but an exponentially to the minus Sigma 0t
+
+00:39:39,000 --> 00:39:42,000
+what you can see me sort of intuitively is dead if
+
+00:39:42,000 --> 00:39:45,000
+this product is absolutely integral
+
+00:39:45,000 --> 00:39:51,000
+if I would increase Sigma 0 then I'm making things even better for positive
+
+00:39:51,000 --> 00:39:53,000
+time because I'm pushing them down
+
+00:39:53,000 --> 00:39:57,000
+and whereas they might be worse for negative time
+
+00:39:57,000 --> 00:40:01,000
+that doesn't matter because before some time
+
+00:40:01,000 --> 00:40:06,000
+the product is equal to 0 so if this product is absolutely an agreeable
+
+00:40:06,000 --> 00:40:09,000
+then if are chosen exponential
+
+00:40:09,000 --> 00:40:13,000
+it's a minus signal one teeny where signal one
+
+00:40:13,000 --> 00:40:16,000
+is greater than 60 then that product
+
+00:40:16,000 --> 00:40:20,000
+will also be absolutely integral ball and we can draw
+
+00:40:20,000 --> 00:40:25,000
+important conclusion about that about the region of convergence from that
+
+00:40:25,000 --> 00:40:28,000
+in particular we can make this statement
+
+00:40:28,000 --> 00:40:33,000
+dead if the time function is right sided
+
+00:40:33,000 --> 00:40:36,000
+and if convergence
+
+00:40:36,000 --> 00:40:41,000
+occurs for some value segment 0
+
+00:40:41,000 --> 00:40:45,000
+then in fact we will have convergence of the law applies transform
+
+00:40:45,000 --> 00:40:49,000
+for all values all the real party bass
+
+00:40:49,000 --> 00:40:52,000
+greater than Sigma 0 the reason
+
+00:40:52,000 --> 00:40:56,000
+of course being dead if Sigma 0 increases
+
+00:40:56,000 --> 00:41:03,000
+then the exponential DK's even faster for positive time
+
+00:41:03,000 --> 00:41:08,000
+now what that says then thinking another way enters the region of convergence
+
+00:41:08,000 --> 00:41:11,000
+as we might droid in the ass plane is that
+
+00:41:11,000 --> 00:41:14,000
+if we have a point that's in the region of convergence corresponding to some
+
+00:41:14,000 --> 00:41:16,000
+value Sigma 0
+
+00:41:16,000 --> 00:41:19,000
+band all values evas to the right of that
+
+00:41:19,000 --> 00:41:24,000
+in the S plane will also be in the region convergence
+
+00:41:24,000 --> 00:41:28,000
+we can also combine that with the statement that for rational functions
+
+00:41:28,000 --> 00:41:31,000
+we know dead there can't be any polls
+
+00:41:31,000 --> 00:41:35,000
+in the region of convergence if you put those two statements together
+
+00:41:35,000 --> 00:41:39,000
+then we end up with a statement dead if
+
+00:41:39,000 --> 00:41:44,000
+x50 is right sided and if it's a plus transformers rational
+
+00:41:44,000 --> 00:41:48,000
+then the region of convergence is to the right
+
+00:41:48,000 --> 00:41:51,000
+up the rightmost poll so
+
+00:41:51,000 --> 00:41:56,000
+we have here a very important insight which tells us
+
+00:41:56,000 --> 00:41:59,000
+dead weekend im in for some property
+
+00:41:59,000 --> 00:42:02,000
+about the time function from the region of convergence
+
+00:42:02,000 --> 00:42:07,000
+or conversely if we know something about the time function namely being right
+
+00:42:07,000 --> 00:42:07,000
+sided
+
+00:42:07,000 --> 00:42:12,000
+then we can infer something about the regional convergence
+
+00:42:12,000 --> 00:42:16,000
+well in addition to right-sided
+
+00:42:16,000 --> 00:42:19,000
+signals we can also have left sided signals
+
+00:42:19,000 --> 00:42:23,000
+Analects I did signal is essentially a right-sided signal turned around
+
+00:42:23,000 --> 00:42:26,000
+in other words a left-sided signal is one
+
+00:42:26,000 --> 00:42:30,000
+that is zero after some time
+
+00:42:30,000 --> 00:42:34,000
+well we can carry out exactly the same kind of argument there
+
+00:42:34,000 --> 00:42:38,000
+namely if the signal goes off to infinity in the negative time direction
+
+00:42:38,000 --> 00:42:39,000
+and stops
+
+00:42:39,000 --> 00:42:44,000
+someplace for positive time if I have an exponential
+
+00:42:44,000 --> 00:42:48,000
+I can multiply it by and have that product be absolutely integral ball
+
+00:42:48,000 --> 00:42:52,000
+but if I choose an exponential that decays even faster for negative times
+
+00:42:52,000 --> 00:42:54,000
+that I'm pushing the stuff
+
+00:42:54,000 --> 00:42:57,000
+way out there down even further then
+
+00:42:57,000 --> 00:43:00,000
+II enhance the integrability even more
+
+00:43:00,000 --> 00:43:05,000
+an you might have to think through that a little bit but it's exactly
+
+00:43:05,000 --> 00:43:08,000
+the flip side of the argument for right-sided signals
+
+00:43:08,000 --> 00:43:12,000
+and the conclusion and is dead
+
+00:43:12,000 --> 00:43:16,000
+if we have a left-sided signal
+
+00:43:16,000 --> 00:43:20,000
+and we have a point a value up the real party best which is in the region of
+
+00:43:20,000 --> 00:43:22,000
+convergence
+
+00:43:22,000 --> 00:43:25,000
+then in fact all values
+
+00:43:25,000 --> 00:43:28,000
+to the left at that point in the S plane
+
+00:43:28,000 --> 00:43:32,000
+will also be in the region of convergence
+
+00:43:32,000 --> 00:43:36,000
+now solar to the statement that we made for right-sided signals
+
+00:43:36,000 --> 00:43:40,000
+if expertise left-sided and in fact we're talking about a rational applies
+
+00:43:40,000 --> 00:43:42,000
+transform which we most
+
+00:43:42,000 --> 00:43:46,000
+typically well then in fact we can make the statement
+
+00:43:46,000 --> 00:43:50,000
+there the region of convergence is to the left
+
+00:43:50,000 --> 00:43:53,000
+of the leftmost poll because
+
+00:43:53,000 --> 00:43:56,000
+we know it has if we find a point that's in the region of convergence
+
+00:43:56,000 --> 00:43:59,000
+everything to the left then has to be in the region of convergence
+
+00:43:59,000 --> 00:44:03,000
+we can have any polls in the region of convergence you put those two statements
+
+00:44:03,000 --> 00:44:04,000
+together and it says
+
+00:44:04,000 --> 00:44:07,000
+is to the left the leftmost poll
+
+00:44:07,000 --> 00:44:11,000
+now the final situation is the situation where
+
+00:44:11,000 --> 00:44:15,000
+we have a signal which is neither right side or left side it goes off to
+
+00:44:15,000 --> 00:44:17,000
+infinity for positive time
+
+00:44:17,000 --> 00:44:21,000
+and it goes off to infinity for negative time and their the thing to kinda
+
+00:44:21,000 --> 00:44:23,000
+recognizes that
+
+00:44:23,000 --> 00:44:27,000
+if you multiply by an exponential and its decaying
+
+00:44:27,000 --> 00:44:32,000
+very fast for positive time it's gonna be growing very fast for negative time
+
+00:44:32,000 --> 00:44:36,000
+conversely if it became very fast for negative time is growing very fast for
+
+00:44:36,000 --> 00:44:37,000
+positive time
+
+00:44:37,000 --> 00:44:41,000
+and this kind of this notion of trying to balance the value Sigma
+
+00:44:41,000 --> 00:44:45,000
+and in effect with that says is that the region of convergence can't
+
+00:44:45,000 --> 00:44:49,000
+extent too far to the left or too far to the right
+
+00:44:49,000 --> 00:44:52,000
+said another way for a two-sided
+
+00:44:52,000 --> 00:44:58,000
+signal and if we have a point which is in the region of convergence
+
+00:44:58,000 --> 00:45:01,000
+than that point defines
+
+00:45:01,000 --> 00:45:05,000
+strip in the ass plane dead takes
+
+00:45:05,000 --> 00:45:09,000
+that point and extends it to the left until you bump into a pole
+
+00:45:09,000 --> 00:45:15,000
+an extensive to the right until you bump into a pole
+
+00:45:15,000 --> 00:45:18,000
+fight so he you begin today and see that
+
+00:45:18,000 --> 00:45:22,000
+we can tie together some properties in the region of convergence
+
+00:45:22,000 --> 00:45:26,000
+and the right-sided mister left-sided mister two-sided NIS
+
+00:45:26,000 --> 00:45:31,000
+love the time function and you have a chance to examine that
+
+00:45:31,000 --> 00:45:35,000
+in more detail in the video course manual
+
+00:45:35,000 --> 00:45:38,000
+let's conclude this lecture by talking about
+
+00:45:38,000 --> 00:45:42,000
+how we might get the time function
+
+00:45:42,000 --> 00:45:46,000
+given the low class transformed
+
+00:45:46,000 --> 00:45:49,000
+well if we have a plus transform we can
+
+00:45:49,000 --> 00:45:52,000
+in principle get the time function back again by
+
+00:45:52,000 --> 00:45:56,000
+recognizing this relationship between the applause transform
+
+00:45:56,000 --> 00:46:00,000
+and the 48 transform and using the formal for EA transform expression
+
+00:46:00,000 --> 00:46:04,000
+or quietly the formal inverse Laplace transform
+
+00:46:04,000 --> 00:46:09,000
+expression which is in the tax but more typically what we would do is
+
+00:46:09,000 --> 00:46:14,000
+what we've done also with the Fourier transform
+
+00:46:14,000 --> 00:46:17,000
+which is to use simple
+
+00:46:17,000 --> 00:46:20,000
+plus transform pairs together with the notion
+
+00:46:20,000 --> 00:46:24,000
+all the partial fraction expansion and
+
+00:46:24,000 --> 00:46:28,000
+let's just go through that with an example
+
+00:46:28,000 --> 00:46:31,000
+let's suppose that I have
+
+00:46:31,000 --> 00:46:35,000
+a a-plus transform as i indicated here
+
+00:46:35,000 --> 00:46:39,000
+and its polls are applied and a region of convergence which
+
+00:46:39,000 --> 00:46:43,000
+is to the right if this poll and what we can identify
+
+00:46:43,000 --> 00:46:47,000
+from the region of convergence in fact is that we're talking
+
+00:46:47,000 --> 00:46:50,000
+about a right-sided time function
+
+00:46:50,000 --> 00:46:55,000
+so the rear richer convergence is the real party best greater than -1
+
+00:46:55,000 --> 00:47:00,000
+and now looking down at the algebraic expression
+
+00:47:00,000 --> 00:47:04,000
+we have the algebraic expression for this is i indicate here
+
+00:47:04,000 --> 00:47:09,000
+acquittal on tlie expanded in a partial fraction expansion
+
+00:47:09,000 --> 00:47:13,000
+as a show below so if you just simply combine these together
+
+00:47:13,000 --> 00:47:17,000
+that's the same as this and the region of convergence
+
+00:47:17,000 --> 00:47:21,000
+is the real party bass greater than -1
+
+00:47:21,000 --> 00:47:24,000
+now the region of convergence or
+
+00:47:24,000 --> 00:47:29,000
+this is a solid to turn so the the time function is this summer to time
+
+00:47:29,000 --> 00:47:30,000
+functions
+
+00:47:30,000 --> 00:47:33,000
+and the region of convergence
+
+00:47:33,000 --> 00:47:37,000
+all love the combination must be
+
+00:47:37,000 --> 00:47:41,000
+the intersection of the region of convergence associated with each one
+
+00:47:41,000 --> 00:47:46,000
+recognizing that this is to the right of the polls
+
+00:47:46,000 --> 00:47:50,000
+that tells us immediately that each of these two
+
+00:47:50,000 --> 00:47:53,000
+then would correspond to bill plus transform
+
+00:47:53,000 --> 00:47:57,000
+love a right-sided time function
+
+00:47:57,000 --> 00:48:00,000
+well let's look at it term by term
+
+00:48:00,000 --> 00:48:05,000
+the first term is the factor 1 over s plus one
+
+00:48:05,000 --> 00:48:10,000
+with the region of convergence to the right if this poll
+
+00:48:10,000 --> 00:48:14,000
+and this hat algebraically
+
+00:48:14,000 --> 00:48:17,000
+corresponds to what i've indicated and this in fact
+
+00:48:17,000 --> 00:48:21,000
+is similar to or special case if the
+
+00:48:21,000 --> 00:48:25,000
+example that we pointed to at the beginning at the lecture namely example
+
+00:48:25,000 --> 00:48:26,000
+9.1
+
+00:48:26,000 --> 00:48:30,000
+and so we can just simply use that result if you think back
+
+00:48:30,000 --> 00:48:33,000
+to that example or refer to your notes we know
+
+00:48:33,000 --> 00:48:37,000
+dead time function of the form
+
+00:48:37,000 --> 00:48:41,000
+eat to -80 gives us all a plus transform which is one over S Plus
+
+00:48:41,000 --> 00:48:45,000
+a with the real party bass greater than
+
+00:48:45,000 --> 00:48:50,000
+minus a and so this is the applause transformer the first
+
+00:48:50,000 --> 00:48:55,000
+or sorry this is the inverse the poss transform the first term
+
+00:48:55,000 --> 00:48:58,000
+if we now consider the poll add
+
+00:48:58,000 --> 00:49:02,000
+s equals -2
+
+00:49:02,000 --> 00:49:06,000
+and here is the region of convergence that we originally began with
+
+00:49:06,000 --> 00:49:11,000
+in fact we can having removed the pole at -1
+
+00:49:11,000 --> 00:49:14,000
+extend this region of convergence
+
+00:49:14,000 --> 00:49:18,000
+to this poll and we now have
+
+00:49:18,000 --> 00:49:22,000
+an algebraic expression which is -1 over s plus
+
+00:49:22,000 --> 00:49:26,000
+to the real party best greater than -1
+
+00:49:26,000 --> 00:49:29,000
+although in fact we can extend the region of convergence
+
+00:49:29,000 --> 00:49:33,000
+up to the poll and the inverse
+
+00:49:33,000 --> 00:49:36,000
+transformer this is now again
+
+00:49:36,000 --> 00:49:40,000
+referring to the same example minus you to the -2 T
+
+00:49:40,000 --> 00:49:44,000
+times a unit step and if we simply
+
+00:49:44,000 --> 00:49:48,000
+put the two turns together then
+
+00:49:48,000 --> 00:49:53,000
+adding the one that we have here to what we had before
+
+00:49:53,000 --> 00:49:57,000
+we have a total inverse Laplace transform
+
+00:49:57,000 --> 00:50:00,000
+which is that
+
+00:50:00,000 --> 00:50:04,000
+so essentially what's happened is dead
+
+00:50:04,000 --> 00:50:07,000
+each of the ex each over the polls has contributed
+
+00:50:07,000 --> 00:50:12,000
+an exponential factor and because if the region of convergence
+
+00:50:12,000 --> 00:50:15,000
+being to the right of all those polls that
+
+00:50:15,000 --> 00:50:20,000
+is consistent with the notion that both of those terms correspond to right-sided
+
+00:50:20,000 --> 00:50:22,000
+time functions
+
+00:50:22,000 --> 00:50:25,000
+well it's just the focus for
+
+00:50:25,000 --> 00:50:29,000
+for a second or two on the same
+
+00:50:29,000 --> 00:50:34,000
+Posey role pattern but instead I love
+
+00:50:34,000 --> 00:50:37,000
+a region of convergence which is to the right at the polls
+
+00:50:37,000 --> 00:50:42,000
+as we had before well now take a region of convergence which is between the two
+
+00:50:42,000 --> 00:50:43,000
+poles
+
+00:50:43,000 --> 00:50:46,000
+and I'll let you work through this more leisurely
+
+00:50:46,000 --> 00:50:52,000
+in the video course manual but when we carry out the partial fraction expansion
+
+00:50:52,000 --> 00:50:55,000
+as I've done below
+
+00:50:55,000 --> 00:50:59,000
+we would now associate with this poll
+
+00:50:59,000 --> 00:51:03,000
+a regional convergence to the right with this poll
+
+00:51:03,000 --> 00:51:07,000
+a region of convergence to the left
+
+00:51:07,000 --> 00:51:10,000
+and so while what we would have
+
+00:51:10,000 --> 00:51:15,000
+is the sum love a right-sided time function due to this poll
+
+00:51:15,000 --> 00:51:18,000
+and in fact that serve the form you to the minus T
+
+00:51:18,000 --> 00:51:22,000
+pretty positive and a left-sided
+
+00:51:22,000 --> 00:51:26,000
+type function due to this poll
+
+00:51:26,000 --> 00:51:29,000
+and in fact that serve the form in the minus two TV
+
+00:51:29,000 --> 00:51:32,000
+pretty negative and so in fact
+
+00:51:32,000 --> 00:51:36,000
+the answer that we will get when we decompose this
+
+00:51:36,000 --> 00:51:40,000
+use the partial fraction expansion being very careful
+
+00:51:40,000 --> 00:51:43,000
+about associating the region of convergence
+
+00:51:43,000 --> 00:51:47,000
+this poll to the right and if this poll to the left
+
+00:51:47,000 --> 00:51:50,000
+will have then when we're all done a time
+
+00:51:50,000 --> 00:51:54,000
+function which will be of the form eats the minus
+
+00:51:54,000 --> 00:51:58,000
+T times a unit step pretty positive
+
+00:51:58,000 --> 00:52:02,000
+and then we'll have a term of the for me
+
+00:52:02,000 --> 00:52:07,000
+to the I'm sorry this would-be to the minus 2 T's since this is at -2 in this
+
+00:52:07,000 --> 00:52:07,000
+is
+
+00:52:07,000 --> 00:52:11,000
+-1 this would be a plus sign in this would be minus
+
+00:52:11,000 --> 00:52:15,000
+you to the minus the for TE negative
+
+00:52:15,000 --> 00:52:19,000
+and you look at that a little more carefully when
+
+00:52:19,000 --> 00:52:24,000
+I you sit down with the video course manual
+
+00:52:24,000 --> 00:52:28,000
+okay well what we've gone through rather quickly is
+
+00:52:28,000 --> 00:52:32,000
+an introduction to the applause transform
+
+00:52:32,000 --> 00:52:36,000
+and a couple points to underscore again
+
+00:52:36,000 --> 00:52:40,000
+is the fact that the applause transform is very closely associated
+
+00:52:40,000 --> 00:52:45,000
+with the Fourier transform and in fact the applause transform
+
+00:52:45,000 --> 00:52:49,000
+4s equals jail maker reduces to the 48 transform
+
+00:52:49,000 --> 00:52:54,000
+but more generally the a-plus transform is the 48 transform
+
+00:52:54,000 --> 00:52:57,000
+love x50 with
+
+00:52:57,000 --> 00:53:03,000
+an exponential weighting and there are some exponentials for which that product
+
+00:53:03,000 --> 00:53:07,000
+converges there are other exponentials for which
+
+00:53:07,000 --> 00:53:10,000
+that product has a Fourier transform that doesn't converge
+
+00:53:10,000 --> 00:53:15,000
+bad then imposes on the discussion above plus transform
+
+00:53:15,000 --> 00:53:18,000
+what we refer to as the region of convergence
+
+00:53:18,000 --> 00:53:24,000
+and it's very important to understand that in specifying a a-plus transform
+
+00:53:24,000 --> 00:53:28,000
+it's important to identify not only
+
+00:53:28,000 --> 00:53:33,000
+the algebraic expression but also the values the best namely
+
+00:53:33,000 --> 00:53:36,000
+for which it it's valid namely
+
+00:53:36,000 --> 00:53:42,000
+the region of convergence low class transformed finally what we did was to
+
+00:53:42,000 --> 00:53:45,000
+tied together some properties over time function
+
+00:53:45,000 --> 00:53:49,000
+with things that we can say about the regional convergence office supplies
+
+00:53:49,000 --> 00:53:52,000
+transform
+
+00:53:52,000 --> 00:53:56,000
+now just as with the Fourier transform the applause transformer has some very
+
+00:53:56,000 --> 00:54:01,000
+important properties and I love these properties both
+
+00:54:01,000 --> 00:54:06,000
+are some mechanisms for using a fast transforming
+
+00:54:06,000 --> 00:54:10,000
+for such such systems as linear cut those described by a linear cut the
+
+00:54:10,000 --> 00:54:12,000
+coefficient
+
+00:54:12,000 --> 00:54:15,000
+differential equations but more importantly
+
+00:54:15,000 --> 00:54:20,000
+the properties will help us as we understand the further
+
+00:54:20,000 --> 00:54:24,000
+will help us in using exploiting
+
+00:54:24,000 --> 00:54:29,000
+the appliance transform to study and understand
+
+00:54:29,000 --> 00:54:32,000
+linear time-invariant systems and
+
+00:54:32,000 --> 00:54:36,000
+thats what will go on to next time in particular
+
+00:54:36,000 --> 00:54:39,000
+talking about properties and then associating
+
+00:54:39,000 --> 00:54:43,000
+with linear time-invariant systems much of the discussion
+
+00:54:43,000 --> 00:54:46,000
+dead we've had today relating
+
+00:54:46,000 --> 00:54:48,000
+to the austrians 1 thank you
+

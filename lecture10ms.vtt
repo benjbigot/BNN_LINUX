@@ -1,0 +1,3120 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+kandungan berikut adalah disediakan di bawah lesen Creative Commons
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+sokongan anda akan membantu MIT OpenCourseWare terus tawaran
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+sumber-sumber pendidikan yang berkualiti tinggi secara percuma
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+untuk membuat sumbangan atau melihat bahan-bahan tambahan dari beratus-ratus daripada mereka IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+kursus
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+melawat MIT OpenCourseWare pada 0 CW
+
+00:00:18,000 --> 00:00:25,000
+that MIT that EDU ha in
+MIT bahawa EDU hektar di
+
+00:00:28,000 --> 00:00:31,000
+in
+
+
+00:00:31,000 --> 00:00:33,000
+the
+yang
+
+00:00:33,000 --> 00:00:39,000
+the in
+dalam
+
+00:00:39,000 --> 00:00:46,000
+the moon
+bulan
+
+00:00:49,000 --> 00:00:52,000
+the
+yang
+
+00:00:52,000 --> 00:00:59,000
+over the last several lectures we developed the for a representation for
+sejak beberapa kuliah terakhir kami dibangunkan untuk perwakilan untuk
+
+00:01:00,000 --> 00:01:03,000
+and continuous-time signals what i'd
+dan berterusan masa isyarat apa yang saya
+
+00:01:03,000 --> 00:01:08,000
+now like to do is develop a similar representation for discrete-time
+sekarang suka lakukan adalah membangunkan perwakilan yang sama untuk masa diskret
+
+00:01:08,000 --> 00:01:11,000
+and let me begin a discussion by
+dan biarkan saya mulakan perbincangan dengan
+
+00:01:11,000 --> 00:01:16,000
+reminding you up what are basic motivation was the idea
+mengingatkan anda sehingga apakah motivasi asas adalah idea
+
+00:01:16,000 --> 00:01:20,000
+is that what we wanted to do was exploit the properties
+ialah apa yang kita mahu lakukan ialah mengeksploitasi sifat-sifat
+
+00:01:20,000 --> 00:01:25,000
+love linearity in time and variance for linear time-invariant systems
+kelinearan cinta dalam masa dan varians untuk sistem masa tak berubah linear
+
+00:01:25,000 --> 00:01:28,000
+so and in the case love
+demikian dan cinta kes
+
+00:01:28,000 --> 00:01:31,000
+linear time-invariant systems the
+sistem masa tak berubah linear
+
+00:01:31,000 --> 00:01:35,000
+basic idea was to consider
+Idea asas adalah untuk mempertimbangkan
+
+00:01:35,000 --> 00:01:40,000
+decomposing the input as a linear combination
+penguraian input sebagai gabungan linear
+
+00:01:40,000 --> 00:01:43,000
+love basic inputs and then
+suka input asas dan kemudian
+
+00:01:43,000 --> 00:01:47,000
+because I've Lenny arity the output could be expressed as
+kerana saya telah Lenny arity output boleh dinyatakan sebagai
+
+00:01:47,000 --> 00:01:52,000
+a linear combination of corresponding outputs where
+gabungan linear output sama di mana
+
+00:01:52,000 --> 00:01:55,000
+saw I serve I is the output
+melihat aku berkhidmat saya adalah output
+
+00:01:55,000 --> 00:02:00,000
+due to fee survive so
+kerana bayaran terus hidup begitu
+
+00:02:00,000 --> 00:02:04,000
+basically what we attempted to do was decompose the input
+pada dasarnya apa yang kita cuba lakukan ialah mengurai input
+
+00:02:04,000 --> 00:02:07,000
+and then reconstruct the output through
+dan kemudian membina semula keluaran menerusi
+
+00:02:07,000 --> 00:02:11,000
+a linear combination all the outputs to those basic inputs
+gabungan linear semua output kepada mereka input asas
+
+00:02:11,000 --> 00:02:15,000
+we then focused on the notion
+kami kemudiannya memberi tumpuan kepada tanggapan
+
+00:02:15,000 --> 00:02:18,000
+love choosing the basic inputs
+suka memilih input asas
+
+00:02:18,000 --> 00:02:22,000
+with two criterion mine one was
+dengan dua saya kriteria seorang pun
+
+00:02:22,000 --> 00:02:25,000
+to choose them so that a broad class signals
+untuk memilih mereka supaya isyarat kelas yang luas
+
+00:02:25,000 --> 00:02:29,000
+could be constructed out over those basic inputs
+boleh dibina daripada ke atas input asas
+
+00:02:29,000 --> 00:02:34,000
+and the second was to choose the basic inputs
+dan yang kedua adalah untuk memilih input asas
+
+00:02:34,000 --> 00:02:37,000
+so that the response to those was easy to compute
+supaya tindak balas kepada mereka adalah mudah untuk mengira
+
+00:02:37,000 --> 00:02:42,000
+and as you recall one representation that we ended up with
+dan seperti yang anda ingat satu representasi bahawa kita berakhir dengan
+
+00:02:42,000 --> 00:02:46,000
+with those basic criteria in mind:
+dengan kriteria asas dalam fikiran:
+
+00:02:46,000 --> 00:02:49,000
+was the representation through convolution
+adalah perwakilan melalui kekusutan
+
+00:02:49,000 --> 00:02:53,000
+and then in beginning the discussion love the for a representation of
+dan kemudian di awal perbincangan suka untuk perwakilan
+
+00:02:53,000 --> 00:02:55,000
+continuous-time signals
+isyarat berterusan masa
+
+00:02:55,000 --> 00:02:59,000
+we chose as another said a basic inputs
+kami memilih sebagai satu lagi berkata, input asas
+
+00:02:59,000 --> 00:03:02,000
+complex exponentials so
+bunyi eksponen kompleks
+
+00:03:02,000 --> 00:03:05,000
+for continuous-time we chose
+untuk berterusan masa kami memilih
+
+00:03:05,000 --> 00:03:09,000
+a set love basic inputs which were complex exponential
+set yang suka input asas yang tidak kompleks eksponen
+
+00:03:09,000 --> 00:03:14,000
+the motivation there was the fact that
+motivasi itu ada hakikat bahawa
+
+00:03:14,000 --> 00:03:18,000
+the complex exponentials have we referred to as
+yang exponentials kompleks kita dirujuk sebagai
+
+00:03:18,000 --> 00:03:21,000
+the I can function property namely
+yang saya boleh berfungsi harta iaitu
+
+00:03:21,000 --> 00:03:25,000
+if we put complex exponentials into our continuous-time systems
+jika kita meletakkan exponentials kompleks ke dalam sistem berterusan-masa kita
+
+00:03:25,000 --> 00:03:30,000
+than the output is a complex exponential
+daripada output adalah eksponen kompleks
+
+00:03:30,000 --> 00:03:34,000
+love the same form with
+suka bentuk yang sama dengan
+
+00:03:34,000 --> 00:03:37,000
+only a change in complex amplitude
+hanya perubahan dalam amplitud kompleks
+
+00:03:37,000 --> 00:03:40,000
+and that change in complex amplitude is
+dan bahawa perubahan dalam amplitud kompleks adalah
+
+00:03:40,000 --> 00:03:44,000
+what we referred to as the
+apa yang kita dirujuk sebagai
+
+00:03:44,000 --> 00:03:48,000
+frequency response %uh the system
+sambutan frekuensi% uh sistem
+
+00:03:48,000 --> 00:03:51,000
+and also by the way as it developed later
+dan juga dengan cara itu kerana ia dibangunkan kemudian
+
+00:03:51,000 --> 00:03:56,000
+that frequency response as you should now recognize from this expression
+bahawa sambutan frekuensi kerana anda kini harus mengakui dari ungkapan ini
+
+00:03:56,000 --> 00:04:01,000
+is in fact the 48 transform the continuous-time for EA transform
+adalah sebenarnya 48 mengubah masa berterusan untuk EA mengubah
+
+00:04:01,000 --> 00:04:07,000
+all the system impulse response and
+semua tindak balas sistem gerak hati dan
+
+00:04:07,000 --> 00:04:12,000
+the notion all decomposing a signal as a linear combination of both these complex
+tanggapan semua penguraian isyarat sebagai gabungan linear kedua-dua kompleks ini
+
+00:04:12,000 --> 00:04:13,000
+exponentials
+exponentials
+
+00:04:13,000 --> 00:04:17,000
+is what the first the forty a series
+adalah apa yang pertama empat puluh siri yang
+
+00:04:17,000 --> 00:04:21,000
+representation and then later the Fourier transform representation
+perwakilan dan kemudian Fourier perwakilan
+
+00:04:21,000 --> 00:04:22,000
+corresponded to
+berutus kepada
+
+00:04:22,000 --> 00:04:25,000
+and finally to remind you
+dan akhirnya untuk mengingatkan anda
+
+00:04:25,000 --> 00:04:31,000
+love one additional point the fact is that because the eigenfunction property
+suka satu mata tambahan hakikatnya kerana harta rangkap eigen yang
+
+00:04:31,000 --> 00:04:34,000
+the response
+sambutan
+
+00:04:34,000 --> 00:04:37,000
+once we decompose the input as a linear combination
+sebaik sahaja kami mengurai input sebagai gabungan linear
+
+00:04:37,000 --> 00:04:41,000
+complex exponentials the response to that when your combination
+exponentials kompleks sambutan itu apabila kombinasi anda
+
+00:04:41,000 --> 00:04:46,000
+is straightforward to compute once we know the frequency response
+adalah mudah untuk mengira sekali kita tahu sambutan frekuensi yang
+
+00:04:46,000 --> 00:04:50,000
+because if the eigenfunction property now
+kerana jika harta rangkap eigen sekarang
+
+00:04:50,000 --> 00:04:53,000
+basically the same strategy
+pada dasarnya strategi yang sama
+
+00:04:53,000 --> 00:04:57,000
+and many of the same ideas work in discrete-time
+dan banyak idea-idea yang sama bekerja di diskret masa
+
+00:04:57,000 --> 00:05:02,000
+paralleling almost exactly what happened in continuous-time
+berjajaran hampir apa yang berlaku pada masa yang berterusan
+
+00:05:02,000 --> 00:05:06,000
+so the similarities between discrete-time and continuous-time
+jadi persamaan antara diskret masa dan berterusan masa
+
+00:05:06,000 --> 00:05:10,000
+are very strong although as we'll see there are a number
+yang sangat kuat walaupun seperti yang kita akan lihat terdapat beberapa
+
+00:05:10,000 --> 00:05:13,000
+a differences and it's important
+satu perbezaan dan ia adalah penting
+
+00:05:13,000 --> 00:05:17,000
+as we go through the discussion to illuminate
+seperti yang kita pergi melalui perbincangan untuk menerangi
+
+00:05:17,000 --> 00:05:22,000
+not only the similarities but obviously also the differences
+bukan sahaja persamaan tetapi jelas juga perbezaan
+
+00:05:22,000 --> 00:05:26,000
+well let's begin with the I can function property
+baik mari kita bermula dengan saya boleh berfungsi dengan harta
+
+00:05:26,000 --> 00:05:31,000
+and let me just say that just as in continuous-time
+dan ingin saya katakan bahawa sama seperti di berterusan masa
+
+00:05:31,000 --> 00:05:35,000
+if we consider said a basic signals
+jika kita menganggap kata seorang isyarat asas
+
+00:05:35,000 --> 00:05:38,000
+which are complex exponentials
+yang exponentials kompleks
+
+00:05:38,000 --> 00:05:42,000
+then discrete-time linear time-invariant systems
+maka diskret masa sistem masa tak berubah linear
+
+00:05:42,000 --> 00:05:46,000
+have the I can function property namely
+mempunyai saya boleh berfungsi dengan harta iaitu
+
+00:05:46,000 --> 00:05:50,000
+if we put a complex exponential into the system
+jika kita meletakkan eksponen kompleks ke dalam sistem
+
+00:05:50,000 --> 00:05:53,000
+the response is a complex exponential
+sambutan adalah eksponen kompleks
+
+00:05:53,000 --> 00:05:56,000
+at the same complex frequency and
+pada frekuensi kompleks yang sama dan
+
+00:05:56,000 --> 00:06:00,000
+simply multiplied by inappropriate
+hanya didarab dengan tidak sesuai
+
+00:06:00,000 --> 00:06:03,000
+complex factor or constant
+faktor kompleks atau berterusan
+
+00:06:03,000 --> 00:06:07,000
+and just as we did in
+dan seperti yang kita lakukan pada
+
+00:06:07,000 --> 00:06:11,000
+continuous-time we will be
+berterusan-kali kita akan
+
+00:06:11,000 --> 00:06:15,000
+referring to this complex constant which is a function
+merujuk kepada malar ini kompleks yang fungsi
+
+00:06:15,000 --> 00:06:19,000
+of course the frequency other complex exponential input
+sudah tentu frekuensi yang lain input eksponen kompleks
+
+00:06:19,000 --> 00:06:24,000
+will be referring to this as the frequency response
+akan merujuk kepada ini sebagai tindak balas frekuensi
+
+00:06:24,000 --> 00:06:29,000
+and although it's not particularly evident at this point
+dan walaupun ia tidak jelas terbukti pada ketika ini
+
+00:06:29,000 --> 00:06:33,000
+as the discussion develops through this lecture what in fact will happen
+sebagai perbincangan membangun melalui kuliah ini apa yang sebenarnya akan berlaku
+
+00:06:33,000 --> 00:06:36,000
+is very much paralleling
+sangat berjajaran
+
+00:06:36,000 --> 00:06:40,000
+continuous-time this particular expression
+berterusan masa ungkapan tertentu
+
+00:06:40,000 --> 00:06:43,000
+in fact will correspond
+sebenarnya akan sesuai
+
+00:06:43,000 --> 00:06:46,000
+to what will refer to as the
+apa yang akan rujuk sebagai
+
+00:06:46,000 --> 00:06:50,000
+for EA transform the discrete-time Fourier transform
+untuk EA mengubah Fourier diskret masa mengubah
+
+00:06:50,000 --> 00:06:54,000
+up the system impulse response so there of course there's a very strong parallel
+sehingga tindak balas sistem gerak hati jadi sudah tentu ada selari yang sangat kuat
+
+00:06:54,000 --> 00:06:58,000
+between continuous-time and discrete-time
+antara berterusan masa dan diskret masa
+
+00:06:58,000 --> 00:07:01,000
+now just as we did in continuous-time
+kini hanya seperti yang kita lakukan pada masa yang berterusan
+
+00:07:01,000 --> 00:07:04,000
+let's begin a discussion by
+mari kita mulakan perbincangan dengan
+
+00:07:04,000 --> 00:07:09,000
+first concentrating on periodic the representation through complex
+pertama menumpukan kepada berkala perwakilan melalui kompleks
+
+00:07:09,000 --> 00:07:10,000
+exponentials
+exponentials
+
+00:07:10,000 --> 00:07:14,000
+love periodic sequences and then
+suka urutan berkala dan kemudian
+
+00:07:14,000 --> 00:07:18,000
+will generalize that discussion to the representation
+akan umum perbincangan yang kepada perwakilan
+
+00:07:18,000 --> 00:07:21,000
+Ave periodic signals so
+Ave isyarat berkala supaya
+
+00:07:21,000 --> 00:07:25,000
+let's consider furs a periodic signal
+mari kita pertimbangkan bulu isyarat berkala
+
+00:07:25,000 --> 00:07:28,000
+or in general signals which are periodic
+atau isyarat umum yang berkala
+
+00:07:28,000 --> 00:07:32,000
+period to notify capital and and then
+tempoh untuk memberitahu modal dan dan kemudian
+
+00:07:32,000 --> 00:07:35,000
+course the fundamental frequency is
+kursus kekerapan asas adalah
+
+00:07:35,000 --> 00:07:39,000
+to pie divided by capital
+untuk pai dibahagikan dengan modal
+
+00:07:39,000 --> 00:07:43,000
+now we can consider exponentials
+sekarang kita boleh mempertimbangkan exponentials
+
+00:07:43,000 --> 00:07:47,000
+which have this as a fundamental frequency
+yang mempunyai ini sebagai frekuensi asas
+
+00:07:47,000 --> 00:07:50,000
+war which are harmonics that
+perang yang harmonik yang
+
+00:07:50,000 --> 00:07:54,000
+and that would correspond to the class of complex exponentials
+dan yang akan sesuai dengan kelas exponentials kompleks
+
+00:07:54,000 --> 00:07:59,000
+the form you to the JK Omega 0n
+borang yang anda kepada 0n JK Omega
+
+00:07:59,000 --> 00:08:03,000
+so these complex exponentials then
+jadi ini exponentials kompleks kemudian
+
+00:08:03,000 --> 00:08:07,000
+as k varies are complex exponentials
+sebagai k Berbeza-beza adalah exponentials kompleks
+
+00:08:07,000 --> 00:08:11,000
+that are harmonically related with
+yang harmonik berkaitan dengan
+
+00:08:11,000 --> 00:08:15,000
+all of which our periodic with the same period
+semua yang kami berkala dengan tempoh yang sama
+
+00:08:15,000 --> 00:08:19,000
+capital and although the fundamental period
+modal dan walaupun tempoh asas
+
+00:08:19,000 --> 00:08:22,000
+is different for each of these each of them being related by
+adalah berbeza untuk setiap setiap daripada mereka yang berkaitan dengan
+
+00:08:22,000 --> 00:08:26,000
+an integer amount
+jumlah integer
+
+00:08:26,000 --> 00:08:31,000
+now again just as we did in continuous time we can consider
+kini sekali lagi seperti yang kita tidak dalam masa yang berterusan kita boleh mempertimbangkan
+
+00:08:31,000 --> 00:08:35,000
+attempting to build our periodic signal I have a linear combination
+cuba untuk membina isyarat berkala kami saya mempunyai kombinasi yang linear
+
+00:08:35,000 --> 00:08:38,000
+love these and so we consider
+suka ini dan jadi kami mengambil kira
+
+00:08:38,000 --> 00:08:42,000
+a periodic signal which is
+isyarat berkala yang
+
+00:08:42,000 --> 00:08:45,000
+a weighted sum all these
+sejumlah wajaran semua ini
+
+00:08:45,000 --> 00:08:48,000
+me complex exponentials and
+saya exponentials kompleks dan
+
+00:08:48,000 --> 00:08:53,000
+of course this periodic signal this is a periodic signal as can be
+sudah tentu isyarat berkala ini ini adalah satu isyarat berkala seperti yang boleh
+
+00:08:53,000 --> 00:08:58,000
+verified in more or less in a straightforward way by substitution
+disahkan dalam lebih kurang dengan cara yang mudah melalui penggantian
+
+00:08:58,000 --> 00:09:02,000
+and of course one of the things that will want to address shortly
+dan sudah tentu salah satu daripada perkara-perkara yang akan mahu untuk menangani tidak lama
+
+00:09:02,000 --> 00:09:06,000
+is how broad a classic signals again can be represented
+adalah bagaimana luas yang isyarat klasik lagi boleh diwakili
+
+00:09:06,000 --> 00:09:09,000
+by this psalm and another question obviously will be
+oleh Mazmur ini dan soalan lain jelas akan
+
+00:09:09,000 --> 00:09:13,000
+how do we determine the coefficients a suitcase
+bagaimana kita menentukan pekali beg
+
+00:09:13,000 --> 00:09:17,000
+however in before we do that let me
+bagaimanapun dalam sebelum kita yang membolehkan saya
+
+00:09:17,000 --> 00:09:20,000
+focus on an important distinction
+memberi tumpuan kepada perbezaan penting
+
+00:09:20,000 --> 00:09:24,000
+between continuous-time and discrete-time
+antara berterusan masa dan diskret masa
+
+00:09:24,000 --> 00:09:30,000
+in the context of these complex exponentials and this representation
+dalam konteks ini exponentials kompleks dan perwakilan ini
+
+00:09:30,000 --> 00:09:34,000
+when we talked about complex exponentials and sinusoids
+apabila kita bercakap tentang exponentials kompleks dan sinusoids
+
+00:09:34,000 --> 00:09:39,000
+early in the cores one up the difference is that we saw between continuous-time
+awal dalam teras satu sehingga perbezaan adalah bahawa kami melihat antara berterusan masa
+
+00:09:39,000 --> 00:09:40,000
+and discrete-time
+dan diskret masa
+
+00:09:40,000 --> 00:09:44,000
+is dead in continuous-time as we very
+mati dalam berterusan-masa seperti yang kita sangat
+
+00:09:44,000 --> 00:09:49,000
+in the frequency variable we see different complex exponentials
+dalam pembolehubah kekerapan kita melihat exponentials kompleks yang berbeza
+
+00:09:49,000 --> 00:09:53,000
+as Omega berries whereas in discrete-time
+beri Omega manakala dalam diskret masa
+
+00:09:53,000 --> 00:09:57,000
+we saw in fact dead there was a period this city
+kita lihat sebenarnya mati ada tempoh bandar ini
+
+00:09:57,000 --> 00:10:02,000
+or said another way it's straightforward to verify
+atau kata lain cara itu mudah untuk mengesahkan
+
+00:10:02,000 --> 00:10:06,000
+that if we think I love this
+bahawa jika kita berfikir Saya suka ini
+
+00:10:06,000 --> 00:10:09,000
+class a complex exponentials day
+kelas hari exponentials kompleks
+
+00:10:09,000 --> 00:10:13,000
+in fact if we consider burying
+sebenarnya jika kami mengambil kira menanam
+
+00:10:13,000 --> 00:10:17,000
+K by an ink to it
+K dengan dakwat untuk ia
+
+00:10:17,000 --> 00:10:20,000
+capital and where capital and is the period
+modal dan di mana modal dan adalah tempoh yang
+
+00:10:20,000 --> 00:10:23,000
+all the fundamental
+semua asas
+
+00:10:23,000 --> 00:10:28,000
+complex exponential then in fact
+kompleks eksponen maka sebenarnya
+
+00:10:28,000 --> 00:10:32,000
+if we replace K by K plus capital and
+jika kita menggantikan K oleh K ditambah modal dan
+
+00:10:32,000 --> 00:10:38,000
+we'll see exactly the same complex exponentials over again
+kita akan melihat betul-betul exponentials kompleks yang sama lagi
+
+00:10:38,000 --> 00:10:43,000
+now what does that say what it says is that if I consider this class of complex
+sekarang apa yang mengatakan apa yang dikatakannya adalah bahawa jika saya menganggap ini kelas kompleks
+
+00:10:43,000 --> 00:10:44,000
+exponentials
+exponentials
+
+00:10:44,000 --> 00:10:48,000
+SK varies from zero
+SK berbeza dari sifar
+
+00:10:48,000 --> 00:10:52,000
+through capital N -1 we've seen
+melalui modal N -1 kita telah melihat
+
+00:10:52,000 --> 00:10:56,000
+we will see all of the ones that there are two see
+kita akan melihat semua orang-orang yang terdapat dua lihat
+
+00:10:56,000 --> 00:10:59,000
+there aren't any more and so in fact
+tidak ada lagi dan sebagainya sebenarnya
+
+00:10:59,000 --> 00:11:02,000
+if we can build excessive and
+jika kita boleh membina yang berlebihan dan
+
+00:11:02,000 --> 00:11:06,000
+I have this linear combination then
+Saya mempunyai kombinasi linear ini maka
+
+00:11:06,000 --> 00:11:09,000
+we better be able to do it as k varies
+kita lebih baik dapat melakukannya sebagai k berbeza
+
+00:11:09,000 --> 00:11:13,000
+from 0
+dari 0
+
+00:11:13,000 --> 00:11:17,000
+up to and -1 because
+sehingga dan -1 kerana
+
+00:11:17,000 --> 00:11:21,000
+beyond that will simply see the same complex s
+di luar yang hanya akan melihat s sama kompleks
+
+00:11:21,000 --> 00:11:24,000
+exponentials over again so for example
+exponentials lagi jadi sebagai contoh
+
+00:11:24,000 --> 00:11:27,000
+if k takes on the value capital and
+jika k mengambil pada modal nilai dan
+
+00:11:27,000 --> 00:11:30,000
+that will be exactly the same complex exponential
+yang akan betul-betul eksponen kompleks yang sama
+
+00:11:30,000 --> 00:11:34,000
+as if KZ 0
+seolah-olah KZ 0
+
+00:11:34,000 --> 00:11:38,000
+so in fact this some ranges
+jadi sebenarnya ini beberapa julat
+
+00:11:38,000 --> 00:11:43,000
+only over capital in above the distinct complex exponentials
+hanya atas modal di atas exponentials kompleks berbeza
+
+00:11:43,000 --> 00:11:47,000
+let's say for example from 0 to capital and -1
+katakan sebagai contoh dari 0 kepada modal dan -1
+
+00:11:47,000 --> 00:11:51,000
+although in fact since these complex exponentials repeat
+walaupun sebenarnya kerana ini exponentials kompleks mengulangi
+
+00:11:51,000 --> 00:11:56,000
+in K I could actually consider instead have
+K saya sebenarnya boleh mempertimbangkan sebaliknya mempunyai
+
+00:11:56,000 --> 00:11:59,000
+from 0 to N -1 I could consider from one
+dari 0 kepada N -1 saya boleh mempertimbangkan dari satu
+
+00:11:59,000 --> 00:12:03,000
+and or from to too and plus one or whatever
+dan atau daripada terlalu dan tambah satu atau apa sahaja
+
+00:12:03,000 --> 00:12:08,000
+or said another way in this representation
+atau berkata cara yang lain dalam perwakilan ini
+
+00:12:08,000 --> 00:12:12,000
+I could alternatively shoes K
+Saya dapat sebagai alternatif kasut K
+
+00:12:12,000 --> 00:12:15,000
+outside this range thinking
+di luar julat pemikiran ini
+
+00:12:15,000 --> 00:12:20,000
+0 these coefficients simply as periodically repeating in K
+0 pekali-pekali ini hanya sebagai berkala mengulangi dalam K
+
+00:12:20,000 --> 00:12:24,000
+because if the fact that these complex exponentials
+kerana jika fakta bahawa ini exponentials kompleks
+
+00:12:24,000 --> 00:12:28,000
+periodically repeating K so in fact
+secara berkala mengulangi K jadi sebenarnya
+
+00:12:28,000 --> 00:12:32,000
+in place if this expression it will be comin in writing the forty a series
+di tempat jika ungkapan ini ia akan comin secara bertulis empat puluh siri yang
+
+00:12:32,000 --> 00:12:33,000
+expression
+ungkapan
+
+00:12:33,000 --> 00:12:38,000
+to write it as i've indicated here where the implication is
+untuk menulis kerana saya telah ditunjukkan di sini di mana implikasi adalah
+
+00:12:38,000 --> 00:12:41,000
+that these Fourier coefficients
+bahawa pekali Fourier
+
+00:12:41,000 --> 00:12:45,000
+periodically repeated as K continues to rip
+secara berkala berulang sebagai K terus merobek
+
+00:12:45,000 --> 00:12:49,000
+to repeat outside the interval from 0 to N -1
+mengulangi di luar selang dari 0 kepada N -1
+
+00:12:49,000 --> 00:12:53,000
+and so this notation in fact says
+dan sebagainya tatatanda ini sebenarnya kata
+
+00:12:53,000 --> 00:12:56,000
+at what we're going to use are
+pada apa yang kita akan gunakan adalah
+
+00:12:56,000 --> 00:13:00,000
+is K ranging over one period
+adalah K yang terdiri lebih daripada satu tempoh
+
+00:13:00,000 --> 00:13:04,000
+love this periodic sequence which is the forty a series called
+suka urutan ini berkala yang empat puluh siri yang dipanggil
+
+00:13:04,000 --> 00:13:08,000
+visions okay so
+visi okay jadi
+
+00:13:08,000 --> 00:13:13,000
+the expression that we have been for the forty a series
+ungkapan yang kita telah selama empat puluh siri yang
+
+00:13:13,000 --> 00:13:18,000
+I've repeated here and the implication now is that
+Saya berulang di sini dan implikasi sekarang ialah
+
+00:13:18,000 --> 00:13:22,000
+the AC K's are periodic they periodically repeat because of course
+JA K adalah berkala mereka secara berkala mengulangi kerana sudah tentu
+
+00:13:22,000 --> 00:13:25,000
+these exponentials periodically repeated
+exponentials ini secara berkala berulang
+
+00:13:25,000 --> 00:13:29,000
+this indicates there we only use them over one period
+ini menunjukkan ada kita hanya menggunakan mereka lebih satu tempoh
+
+00:13:29,000 --> 00:13:32,000
+and now we can inquire as to how
+dan kini kita boleh menyiasat tentang bagaimana
+
+00:13:32,000 --> 00:13:36,000
+we determine the coefficients aces K
+kita menentukan pekali ace K
+
+00:13:36,000 --> 00:13:39,000
+well we can formally go through this much as we did in
+baik kita secara rasmi boleh pergi melalui ini banyak yang kita lakukan pada
+
+00:13:39,000 --> 00:13:42,000
+the continuous-time case in and 0
+kes berterusan masa dalam dan 0
+
+00:13:42,000 --> 00:13:46,000
+we do in fact do that in the text which involves substituting some
+kita sebenarnya berbuat demikian dalam teks yang melibatkan menggantikan beberapa
+
+00:13:46,000 --> 00:13:49,000
+sums in a change in yours summation cetera
+jumlah wang perubahan dalam milik anda penjumlahan sebagainya
+
+00:13:49,000 --> 00:13:53,000
+but let me a draw your attention to the fact that
+tetapi biarlah saya yang menarik perhatian anda kepada fakta bahawa
+
+00:13:53,000 --> 00:13:56,000
+this in fact can be thought I love
+ini sebenarnya boleh fikir saya suka
+
+00:13:56,000 --> 00:14:02,000
+as capital in equations in capital and unknowns
+sebagai modal dalam persamaan dalam modal dan tidak diketahui
+
+00:14:02,000 --> 00:14:06,000
+in other words we know x7 over a period
+dalam erti kata lain kita tahu X7 dalam tempoh yang
+
+00:14:06,000 --> 00:14:12,000
+and so we know what the left hand side if this is for capital and bad news
+dan dengan itu kita tahu apa yang sebelah kiri jika ini adalah untuk modal dan berita buruk
+
+00:14:12,000 --> 00:14:16,000
+and we'd like to determine these constant sese K
+dan kami ingin untuk menentukan tetap Sese K
+
+00:14:16,000 --> 00:14:20,000
+well it turns out that their is a nice convening in closed form expression for
+dan ia ternyata bahawa mereka adalah mengadakan bagus dalam bentuk ungkapan yang tertutup
+
+00:14:20,000 --> 00:14:21,000
+that
+yang
+
+00:14:21,000 --> 00:14:26,000
+and in fact if we evaluate the closed-form expression
+dan sebenarnya jika kita menilai ungkapan tertutup bentuk
+
+00:14:26,000 --> 00:14:29,000
+through any variety of algebraic manipulations
+melalui mana-mana pelbagai manipulasi algebra
+
+00:14:29,000 --> 00:14:32,000
+we end up then with the
+kita akhirnya kemudian dengan
+
+00:14:32,000 --> 00:14:37,000
+analysis equation and the analysis equation
+persamaan analisis dan persamaan analisis
+
+00:14:37,000 --> 00:14:41,000
+which tells us how to get the coefficients AC K
+yang memberitahu kita bagaimana untuk mendapatkan pekali AC K
+
+00:14:41,000 --> 00:14:44,000
+from excessive and is what I've
+dari berlebihan dan adalah apa yang saya telah
+
+00:14:44,000 --> 00:14:47,000
+indicated here and
+ditunjukkan di sini dan
+
+00:14:47,000 --> 00:14:50,000
+so this tells us how for Maxim and
+jadi ini memberitahu kita bagaimana untuk Maxim dan
+
+00:14:50,000 --> 00:14:55,000
+to get the AC K's and of course the first equation
+untuk mendapatkan dan sudah tentu persamaan pertama AC K
+
+00:14:55,000 --> 00:14:59,000
+tells us how x7 is built up by the VA's
+memberitahu kita bagaimana X7 dibina oleh itu VA
+
+00:14:59,000 --> 00:15:03,000
+K's notice incidently that
+Notis K kebetulan yang
+
+00:15:03,000 --> 00:15:07,000
+there is a strong to our the between these two equations
+ada yang kuat kepada kita di antara kedua-dua persamaan
+
+00:15:07,000 --> 00:15:11,000
+and that's a duality that will return to
+dan itulah dualiti yang akan kembali ke
+
+00:15:11,000 --> 00:15:14,000
+actually toward the end of the next lecture now
+sebenarnya ke arah akhir kuliah seterusnya kini
+
+00:15:14,000 --> 00:15:17,000
+there is a real difference between the way those equations look
+terdapat perbezaan sebenar antara cara mereka melihat persamaan
+
+00:15:17,000 --> 00:15:21,000
+and the way the continuous-time forty a series look
+dan cara yang berterusan masa empat puluh siri lihat
+
+00:15:21,000 --> 00:15:25,000
+in a continuous-time case let me remind you
+dalam kes berterusan masa biarlah saya mengingatkan anda
+
+00:15:25,000 --> 00:15:28,000
+that it required
+bahawa ia diperlukan
+
+00:15:28,000 --> 00:15:32,000
+an infinite number of coefficients to build up this continuous-time
+bilangan tak terhingga pekali untuk membina berterusan masa ini
+
+00:15:32,000 --> 00:15:35,000
+function and so this was not simply a matter
+berfungsi dan sebagainya ini bukan hanya perkara yang
+
+00:15:35,000 --> 00:15:39,000
+of identifying how to invert capital and
+mengenal pasti bagaimana untuk boot modal dan
+
+00:15:39,000 --> 00:15:44,000
+were a finite number of equations in a finite number upon owns
+adalah beberapa terhingga persamaan dalam beberapa terhingga apabila memiliki
+
+00:15:44,000 --> 00:15:47,000
+and the analysis equation was
+dan persamaan analisis ialah
+
+00:15:47,000 --> 00:15:53,000
+and integration as opposed to the synthesis equation
+dan integrasi sebagai bertentangan dengan persamaan sintesis
+
+00:15:53,000 --> 00:15:56,000
+which is a summation so
+yang merupakan penjumlahan supaya
+
+00:15:56,000 --> 00:15:59,000
+their is a real difference there between
+mereka adalah perbezaan yang nyata ada antara
+
+00:15:59,000 --> 00:16:03,000
+the continuous-time and discrete-time cases and a difference
+kes-kes berterusan masa dan diskret-masa dan perbezaan
+
+00:16:03,000 --> 00:16:06,000
+arises to a large extent because
+timbul sebahagian besarnya kerana
+
+00:16:06,000 --> 00:16:11,000
+all this notion that in discrete-time the complex exponentials
+semua tanggapan ini bahawa dalam diskret-masa yang exponentials kompleks
+
+00:16:11,000 --> 00:16:14,000
+are periodic in
+adalah berkala dalam
+
+00:16:14,000 --> 00:16:18,000
+their frequency so we have been to summarize
+kekerapan mereka jadi kami telah merumuskan
+
+00:16:18,000 --> 00:16:22,000
+the synthesis equation and the analysis equation
+persamaan sintesis dan persamaan analisis
+
+00:16:22,000 --> 00:16:27,000
+for the discrete-time for a series
+untuk diskret-masa untuk siri
+
+00:16:27,000 --> 00:16:32,000
+again x7 are original signals periodic
+lagi X7 adalah isyarat asal berkala
+
+00:16:32,000 --> 00:16:35,000
+and of course the complex exponentials
+dan sudah tentu exponentials kompleks
+
+00:16:35,000 --> 00:16:40,000
+involve the periodic their periodic obviously in an
+melibatkan berkala berkala mereka jelas dalam
+
+00:16:40,000 --> 00:16:45,000
+by it in contrast the continuous-time these repeat
+olehnya berbeza masa berterusan berulang ini
+
+00:16:45,000 --> 00:16:48,000
+in K in other words as k Omega 0
+dalam K dalam erti kata lain sebagai k Omega 0
+
+00:16:48,000 --> 00:16:53,000
+goes outside arrange that covers a 25 interval
+pergi luar mengatur yang meliputi jarak 25
+
+00:16:53,000 --> 00:16:56,000
+and because if that we're imposing
+dan kerana jika itu kita mengenakan
+
+00:16:56,000 --> 00:17:02,000
+in a sense the interpretation that the AC Kesar likewise the periodic sequence
+dalam erti kata yang tafsiran bahawa AC Kesar begitu juga urutan berkala
+
+00:17:02,000 --> 00:17:05,000
+and in fact we look at the analysis equation
+dan sebenarnya kita melihat persamaan analisis
+
+00:17:05,000 --> 00:17:10,000
+as we let K very
+seperti yang kita biarkan K sangat
+
+00:17:10,000 --> 00:17:13,000
+outside the range from 0 to N -1
+di luar julat dari 0 hingga N -1
+
+00:17:13,000 --> 00:17:17,000
+what you can easily verified by substitution in here
+apa yang anda boleh dengan mudah disahkan oleh penggantian dalam sini
+
+00:17:17,000 --> 00:17:22,000
+is that this sequence will in fact periodically repeat
+ialah bahawa rentetan ini sebenarnya akan mengulangi secara berkala
+
+00:17:22,000 --> 00:17:27,000
+so to underscore the difference between the continuous-time and discrete-time
+jadi untuk menekankan perbezaan di antara masa yang berterusan dan diskret masa
+
+00:17:27,000 --> 00:17:29,000
+cases
+kes
+
+00:17:29,000 --> 00:17:33,000
+we have this periodicity in the time domain
+kita mempunyai jangka masa ini dalam domain masa
+
+00:17:33,000 --> 00:17:38,000
+and that's a periodicity dad is of course true in discrete-time
+dan itu adalah satu jangka masa untuk ayah sudah tentu benar dalam diskret masa
+
+00:17:38,000 --> 00:17:41,000
+and it's also true in continuous-time
+dan ia juga benar dalam masa yang berterusan
+
+00:17:41,000 --> 00:17:45,000
+if we replace the integer variable
+jika kita menggantikan pembolehubah integer
+
+00:17:45,000 --> 00:17:48,000
+by the discrete-time time variable
+oleh masa ubah diskret masa
+
+00:17:48,000 --> 00:17:52,000
+and we also indiscreet I'm have this periodicity
+dan kami juga tdk berhati-hati saya telah jangka masa ini
+
+00:17:52,000 --> 00:17:56,000
+in krak Omega 0 and correspondingly
+di Krak Omega 0 dan sepadan
+
+00:17:56,000 --> 00:17:59,000
+a periodicity in the four EA coefficients
+satu jangka masa dalam empat pekali EA
+
+00:17:59,000 --> 00:18:04,000
+and bad is center properties
+dan tidak baik ciri-ciri pusat
+
+00:18:04,000 --> 00:18:08,000
+dat does not happen
+dat tidak berlaku
+
+00:18:08,000 --> 00:18:12,000
+in continuous-time and is bad
+dalam masa yang berterusan dan tidak baik
+
+00:18:12,000 --> 00:18:17,000
+there essentially leads to all of the important differences between
+ada asasnya membawa kepada semua perbezaan penting antara
+
+00:18:17,000 --> 00:18:21,000
+discrete-time Fourier representations and in continuous-time
+perwakilan Fourier diskret dan tempoh masa yang berterusan masa
+
+00:18:21,000 --> 00:18:24,000
+Korea representation
+Korea perwakilan
+
+00:18:24,000 --> 00:18:28,000
+now just quickly let me draw your attention to the issue
+kini hanya cepat biarlah saya menarik perhatian anda kepada isu ini
+
+00:18:28,000 --> 00:18:35,000
+love convergence and when a sequence can and can't be represented at cetera
+suka penumpuan dan apabila urutan boleh dan tidak diwakili pada sebagainya
+
+00:18:35,000 --> 00:18:39,000
+a recall that in the continuous-time case
+ingat bahawa dalam kes berterusan masa
+
+00:18:39,000 --> 00:18:43,000
+we focused on convergence in the context either
+kita memberi tumpuan kepada penumpuan dalam konteks sama ada
+
+00:18:43,000 --> 00:18:46,000
+conditions which are referred to as where the group believe the
+keadaan yang dirujuk sebagai mana kumpulan percaya
+
+00:18:46,000 --> 00:18:51,000
+or another set of conditions which were the the Ridgeway conditions
+atau satu lagi keadaan yang menjadi syarat-syarat Ridgeway
+
+00:18:51,000 --> 00:18:55,000
+and there was this issue about when the signal doesn't doesn't convergent
+dan terdapat isu ini apabila isyarat tidak tidak menumpu
+
+00:18:55,000 --> 00:18:56,000
+discontinuities
+tidak berterusan
+
+00:18:56,000 --> 00:19:01,000
+center let me just simply draw your attention to the fact
+pusat biarlah saya hanya sekadar menarik perhatian anda kepada fakta
+
+00:19:01,000 --> 00:19:05,000
+there in the discrete-time case
+terdapat dalam kes diskret masa
+
+00:19:05,000 --> 00:19:09,000
+what we have is the representation of the periodic signal
+apa yang kita ada adalah perwakilan isyarat berkala
+
+00:19:09,000 --> 00:19:13,000
+as Assam all a finite number
+sebagai Assam semua beberapa terhingga
+
+00:19:13,000 --> 00:19:19,000
+turns this represents capital and equations in capital and unknowns
+bertukar ini mewakili modal dan persamaan dalam modal dan tidak diketahui
+
+00:19:19,000 --> 00:19:24,000
+if we consider the partial some namely taking
+jika kita mempertimbangkan beberapa separa iaitu mengambil
+
+00:19:24,000 --> 00:19:29,000
+a smaller number turns then simply what happens
+nombor yang lebih kecil bertukar maka hanya apa yang berlaku
+
+00:19:29,000 --> 00:19:33,000
+is as the number of turns increases
+adalah seperti bilangan lilitan meningkatkan
+
+00:19:33,000 --> 00:19:36,000
+to the finite number required to represent
+ke nombor terhingga diperlukan untuk mewakili
+
+00:19:36,000 --> 00:19:40,000
+ex-dividend we simply end up with
+ex-dividen kita hanya berakhir dengan
+
+00:19:40,000 --> 00:19:43,000
+the partial some representing the fun and Lightsey
+beberapa separa mewakili keseronokan dan Lightsey
+
+00:19:43,000 --> 00:19:47,000
+were all that boils down to is the statement
+semuanya yang bisul ke adalah kenyataan
+
+00:19:47,000 --> 00:19:51,000
+that in discrete-time there really are
+bahawa dalam masa diskret ada benar-benar
+
+00:19:51,000 --> 00:19:55,000
+no convergence issues as they were in continues time
+tiada isu penumpuan kerana mereka dalam masa terus
+
+00:19:55,000 --> 00:19:59,000
+okay well let's look at an example love the four EA
+okay juga mari kita lihat contoh suka empat EA
+
+00:19:59,000 --> 00:20:02,000
+series representation for a particular signal
+perwakilan siri untuk isyarat tertentu
+
+00:20:02,000 --> 00:20:06,000
+and the one that I think here is a simple one
+dan yang saya rasa di sini adalah satu yang mudah
+
+00:20:06,000 --> 00:20:10,000
+namely a constant a
+iaitu yang tetap
+
+00:20:10,000 --> 00:20:14,000
+are signed term and a cosine term
+jangka ditandatangani dan tempoh kosinus
+
+00:20:14,000 --> 00:20:18,000
+now for this particular example we can expand this out
+sekarang untuk contoh ini khususnya kita boleh mengembangkan ini daripada
+
+00:20:18,000 --> 00:20:21,000
+directly in terms of complex exponentials
+secara langsung dari segi exponentials kompleks
+
+00:20:21,000 --> 00:20:26,000
+and essentially recognize this as a somewhat complex exponentials
+dan pada dasarnya mengiktiraf ini sebagai exponentials agak kompleks
+
+00:20:26,000 --> 00:20:29,000
+its examined in more detail
+yang dikaji dengan lebih terperinci
+
+00:20:29,000 --> 00:20:33,000
+in example 5.2 in attacks
+dalam contoh 5.2 dalam serangan
+
+00:20:33,000 --> 00:20:38,000
+and if we looked at the for a series coefficients we can either look
+dan jika kita melihat untuk siri pekali kita boleh sama ada melihat
+
+00:20:38,000 --> 00:20:44,000
+at it in terms of real and imaginary parts are magnitude and angle
+pada itu dari segi bahagian-bahagian bayangan adalah magnitud dan sudut
+
+00:20:44,000 --> 00:20:50,000
+on the left side here I have the real part of the 48 coefficients
+pada sebelah kiri di sini saya mempunyai bahagian nyata 48 pekali
+
+00:20:50,000 --> 00:20:53,000
+and let me draw your attention to the fact
+dan biarlah saya menarik perhatian anda kepada fakta
+
+00:20:53,000 --> 00:20:57,000
+their I've drawn yes
+mereka saya tertarik ya
+
+00:20:57,000 --> 00:21:00,000
+to specifically illuminate the periodicity
+khusus untuk jangka masa yang menerangi
+
+00:21:00,000 --> 00:21:06,000
+other for a series coefficients in with a period of capital and so here are the
+lain untuk siri pekali dalam dengan tempoh modal dan sebagainya di sini adalah
+
+00:21:06,000 --> 00:21:08,000
+Fourier coefficients
+Pekali Fourier
+
+00:21:08,000 --> 00:21:14,000
+are and in fact its this line that represents the DCR constant term
+adalah dan sebenarnya barisan ini yang mewakili DCR jangka berterusan
+
+00:21:14,000 --> 00:21:17,000
+and these two lines represent the
+dan kedua-dua baris mewakili
+
+00:21:17,000 --> 00:21:21,000
+co-signed term and of course this
+jangka bersama ditandatangani dan kursus ini
+
+00:21:21,000 --> 00:21:25,000
+these are the three turns that are required or equivalent leave this one
+ini adalah tiga lilitan yang diperlukan atau yang setaraf meninggalkan satu ini
+
+00:21:25,000 --> 00:21:25,000
+this one
+satu ini
+
+00:21:25,000 --> 00:21:29,000
+and this one and then because the period this city
+dan ini satu dan kemudian kerana tempoh di bandar ini
+
+00:21:29,000 --> 00:21:33,000
+the for a series coefficients this simply periodically repeats
+untuk satu siri pekali ini mengulangi hanya secara berkala
+
+00:21:33,000 --> 00:21:38,000
+so here is the real part and below it I show
+jadi di sini adalah bahagian nyata dan di bawahnya aku tunjukkan
+
+00:21:38,000 --> 00:21:42,000
+the imaginary part and
+bahagian khayalan dan
+
+00:21:42,000 --> 00:21:45,000
+in the imaginary part incidently let me
+di bahagian khayalan kebetulan biarlah saya
+
+00:21:45,000 --> 00:21:48,000
+draw your attention to the fact dead its
+menarik perhatian anda kepada fakta yang mati
+
+00:21:48,000 --> 00:21:51,000
+this term and this term
+istilah ini dan istilah ini
+
+00:21:51,000 --> 00:21:56,000
+there represent in the imaginary part that represent the sinusoid
+ada mewakili di bahagian khayalan yang mewakili sinusoid yang
+
+00:21:56,000 --> 00:22:00,000
+whereas its the symmetric turns the real part
+manakala simetri yang bertukar bahagian nyata
+
+00:22:00,000 --> 00:22:04,000
+the represent the cosine okay let's
+mewakili kosinus okay Mari
+
+00:22:04,000 --> 00:22:07,000
+in look at another example
+di lihat contoh lain
+
+00:22:07,000 --> 00:22:11,000
+this is another example from the tax and one
+ini adalah contoh yang lain daripada cukai dan satu
+
+00:22:11,000 --> 00:22:14,000
+that will be making frequent reference to
+yang akan membuat rujukan yang kerap ke
+
+00:22:14,000 --> 00:22:17,000
+in this particular lecture
+dalam kuliah ini tertentu
+
+00:22:17,000 --> 00:22:21,000
+and what it is is
+dan apa yang adalah
+
+00:22:21,000 --> 00:22:24,000
+a square wave and
+gelombang persegi dan
+
+00:22:24,000 --> 00:22:28,000
+I've express the for a series coefficients which are out algebraically
+Saya menyatakan untuk satu siri pekali yang berada di luar secara algebra
+
+00:22:28,000 --> 00:22:30,000
+developed in attacks
+dibangunkan dalam serangan
+
+00:22:30,000 --> 00:22:33,000
+I've expressed the for a series coefficients as
+Saya menyatakan untuk siri pekali sebagai
+
+00:22:33,000 --> 00:22:36,000
+samples all an envelope
+sampel sampul surat semua satu
+
+00:22:36,000 --> 00:22:42,000
+function and so I've expressed that as samples if this
+fungsi dan jadi saya menyatakan bahawa sebagai sampel jika ini
+
+00:22:42,000 --> 00:22:46,000
+particular function which is referred to as a sign
+fungsi tertentu yang disebut sebagai tanda
+
+00:22:46,000 --> 00:22:50,000
+enacts over sin x function and let me just compare it
+Mengesahkan atas dosa x fungsi dan biarlah saya membandingkannya
+
+00:22:50,000 --> 00:22:53,000
+to a continuous-time example which is the
+untuk contoh yang berterusan masa yang merupakan
+
+00:22:53,000 --> 00:22:56,000
+continuous-time square wave
+gelombang persegi berterusan masa
+
+00:22:56,000 --> 00:23:00,000
+where with the continuous times square wave
+di mana dengan masa berterusan gelombang persegi
+
+00:23:00,000 --> 00:23:03,000
+the form or the for a series coefficients
+bentuk atau untuk siri pekali
+
+00:23:03,000 --> 00:23:07,000
+was as samples love what we refer to
+adalah sebagai sampel suka apa yang kita merujuk kepada
+
+00:23:07,000 --> 00:23:10,000
+as a sin x over expunge
+sebagai x dosa lebih Hapus
+
+00:23:10,000 --> 00:23:13,000
+now the sin NX
+sekarang dosa NX
+
+00:23:13,000 --> 00:23:17,000
+over sin x function which is the envelope for the for a series
+atas dosa x fungsi yang merupakan sampul surat untuk untuk siri yang
+
+00:23:17,000 --> 00:23:18,000
+coefficients
+pekali
+
+00:23:18,000 --> 00:23:22,000
+for the discrete-time periodic square wave
+untuk diskret masa gelombang persegi berkala
+
+00:23:22,000 --> 00:23:26,000
+plays the role and we'll see it very often in discrete-time
+memainkan peranan dan kita akan melihat sangat sering dalam diskret masa
+
+00:23:26,000 --> 00:23:29,000
+that sin x over exercise in continuous-time
+yang x dosa lebih latihan dalam masa yang berterusan
+
+00:23:29,000 --> 00:23:34,000
+and in fact we should understand right from the beginning
+dan sebenarnya kita harus faham dari awal
+
+00:23:34,000 --> 00:23:38,000
+that the sin x over extend below couldn't possibly be
+bahawa dosa yang x lebih melanjutkan di bawah tidak mungkin menjadi
+
+00:23:38,000 --> 00:23:42,000
+the envelope the discrete-time for a series coefficients
+sampul surat diskret-masa untuk siri pekali
+
+00:23:42,000 --> 00:23:45,000
+and one obvious reason is dead
+dan satu sebab yang jelas telah mati
+
+00:23:45,000 --> 00:23:49,000
+it is not periodic what we require of course
+ia tidak berkala yang kita perlukan sudah tentu
+
+00:23:49,000 --> 00:23:53,000
+from the discussion I just going through is periodicity
+dari perbincangan yang saya hanya akan melalui adalah jangka masa untuk
+
+00:23:53,000 --> 00:23:58,000
+are the coefficients and consequently also periodicity of the envelope
+adalah pekali dan seterusnya juga jangka masa untuk sampul surat
+
+00:23:58,000 --> 00:24:01,000
+in the discrete-time case so once again if we look back
+dalam kes diskret masa jadi sekali lagi jika kita melihat kembali
+
+00:24:01,000 --> 00:24:04,000
+at the algebraic expression that I have
+pada ungkapan algebra yang saya ada
+
+00:24:04,000 --> 00:24:08,000
+it samples about the sign an X over sin x
+ia sampel mengenai tanda X berbanding sin x
+
+00:24:08,000 --> 00:24:12,000
+function dead represent the for a series coefficients
+fungsi mati mewakili untuk siri pekali
+
+00:24:12,000 --> 00:24:16,000
+love this periodic square way
+suka cara ini persegi berkala
+
+00:24:16,000 --> 00:24:20,000
+now in the representation in
+kini dalam perwakilan di
+
+00:24:20,000 --> 00:24:24,000
+the continuous-time case we
+berterusan masa kes kami
+
+00:24:24,000 --> 00:24:29,000
+essentially head use the concept of an envelope
+dasarnya menuju menggunakan konsep sampul surat
+
+00:24:29,000 --> 00:24:32,000
+to represent the for a series coefficients
+untuk mewakili untuk siri pekali
+
+00:24:32,000 --> 00:24:35,000
+and the notion that the for a series coefficients were samples
+dan tanggapan bahawa untuk siri pekali adalah sampel
+
+00:24:35,000 --> 00:24:39,000
+up an envelope and that is said the same notion
+sebuah sampul surat dan yang dikatakan tanggapan yang sama
+
+00:24:39,000 --> 00:24:43,000
+there will be using in discrete-time so
+ada akan menggunakan dalam diskret masa jadi
+
+00:24:43,000 --> 00:24:46,000
+again for this square wave example
+sekali lagi sebagai contoh gelombang persegi ini
+
+00:24:46,000 --> 00:24:50,000
+then what we have is an envelope
+maka apa yang kita ada ialah sampul surat
+
+00:24:50,000 --> 00:24:53,000
+function the sign acts
+berfungsi perbuatan tanda
+
+00:24:53,000 --> 00:24:56,000
+over sin x envelope function for
+atas dosa fungsi sampul surat x bagi
+
+00:24:56,000 --> 00:25:01,000
+a particular value of the period here indicated with a period
+nilai tertentu tempoh di sini ditandakan dengan tempoh yang
+
+00:25:01,000 --> 00:25:04,000
+love 10 samples these
+suka 10 sampel ini
+
+00:25:04,000 --> 00:25:07,000
+samples at this envelope function with then
+sampel pada majlis sampul surat ini dengan kemudian
+
+00:25:07,000 --> 00:25:11,000
+represent the for a series coefficients
+mewakili untuk siri pekali
+
+00:25:11,000 --> 00:25:14,000
+if we increased
+jika kita meningkat
+
+00:25:14,000 --> 00:25:17,000
+the period then
+tempoh yang kemudian
+
+00:25:17,000 --> 00:25:20,000
+we would simply have a finer spacing
+kita hanya akan mempunyai jarak yang lebih halus
+
+00:25:20,000 --> 00:25:23,000
+on the samples are the envelope function
+atas sampel adalah fungsi sampul surat
+
+00:25:23,000 --> 00:25:27,000
+to get the 40 a series coefficients and
+untuk mendapatkan 40 siri dan pekali
+
+00:25:27,000 --> 00:25:31,000
+in likewise if we increase the period still further
+begitu juga dalam jika kita meningkatkan tempoh yang masih lagi
+
+00:25:31,000 --> 00:25:37,000
+what we would have is an even finer space
+apa yang kita perlu adalah ruang walaupun lebih halus
+
+00:25:37,000 --> 00:25:41,000
+so actually as the period increases recall we use this in the in
+jadi sebenarnya sebagai tempoh bertambah ingat kita menggunakan ini di dalam
+
+00:25:41,000 --> 00:25:43,000
+continuous-time also
+berterusan masa juga
+
+00:25:43,000 --> 00:25:48,000
+as the period increases we can view the for a series coefficients
+sebagai tempoh kenaikan kita boleh melihat untuk siri pekali
+
+00:25:48,000 --> 00:25:53,000
+samples of an envelope and as the period increases
+sampel sampul surat dan sebagai tempoh kenaikan
+
+00:25:53,000 --> 00:25:56,000
+the sample spacing gets finer and finer
+Jarak sampel mendapat lebih halus dan lebih halus
+
+00:25:56,000 --> 00:25:59,000
+and in fact as the period goes
+dan sebenarnya sebagai tempoh pergi
+
+00:25:59,000 --> 00:26:03,000
+of essentially to infinity the samples of the envelope
+daripada dasarnya untuk INFINITY sampel sampul surat
+
+00:26:03,000 --> 00:26:07,000
+in effect become the anvil and recall also
+berkuat kuasa menjadi andas dan ingat juga
+
+00:26:07,000 --> 00:26:11,000
+that this was essentially the trip that we use
+bahawa ini adalah pada dasarnya perjalanan yang kita gunakan
+
+00:26:11,000 --> 00:26:15,000
+in continuous-time to allow us
+dalam masa yang berterusan untuk membolehkan kita
+
+00:26:15,000 --> 00:26:18,000
+to develop or utilize the 48 series
+untuk membangunkan atau menggunakan siri 48
+
+00:26:18,000 --> 00:26:22,000
+to provide a representation %uh a periodic signals
+untuk menyediakan perwakilan% uh satu isyarat berkala
+
+00:26:22,000 --> 00:26:26,000
+as a linear combination of complex exponentials
+sebagai gabungan linear exponentials kompleks
+
+00:26:26,000 --> 00:26:30,000
+in particular what we did in
+khususnya yang kami lakukan pada
+
+00:26:30,000 --> 00:26:34,000
+the continuous-time case
+kes berterusan masa
+
+00:26:34,000 --> 00:26:37,000
+when we head and a periodic signal
+apabila kita menuju dan isyarat berkala
+
+00:26:37,000 --> 00:26:42,000
+was to consider constructing a periodic signal
+adalah untuk mempertimbangkan membina isyarat berkala
+
+00:26:42,000 --> 00:26:47,000
+for which be a periodic signal was one period
+yang mana dan ketinggian isyarat berkala adalah satu tempoh
+
+00:26:47,000 --> 00:26:50,000
+and then we developed the notion there since
+dan kemudian kita maju tanggapan di sana sejak
+
+00:26:50,000 --> 00:26:55,000
+the periodic signal has a forty eight series
+isyarat berkala mempunyai satu siri empat puluh lapan
+
+00:26:55,000 --> 00:26:58,000
+and since as the period
+dan sejak sebagai tempoh
+
+00:26:58,000 --> 00:27:01,000
+the periodic signal increases n goes to infinity
+isyarat berkala meningkatkan n tak terhingga
+
+00:27:01,000 --> 00:27:05,000
+the periodic signal represents the a periodic signal
+isyarat berkala mewakili isyarat berkala
+
+00:27:05,000 --> 00:27:09,000
+then essentially the 48 series
+maka pada dasarnya siri 48
+
+00:27:09,000 --> 00:27:12,000
+provides us with the representation now
+memberikan kita perwakilan kini
+
+00:27:12,000 --> 00:27:16,000
+we can do exactly the same thing in the discrete-time case
+kita boleh melakukan perkara yang sama dalam kes diskret masa
+
+00:27:16,000 --> 00:27:21,000
+the statement is exactly the same except dead in a discrete-time case
+kenyataan itu adalah sama kecuali mati dalam kes diskret masa
+
+00:27:21,000 --> 00:27:24,000
+instead of see as the independent variable
+bukan melihat sebagai pembolehubah bebas
+
+00:27:24,000 --> 00:27:27,000
+we simply make exactly the same statement
+kita hanya membuat betul-betul kenyataan yang sama
+
+00:27:27,000 --> 00:27:31,000
+but with are discrete-time variable
+tetapi dengan adalah diskret-masa berubah-ubah
+
+00:27:31,000 --> 00:27:35,000
+and so the basic notion then in representing
+dan sebagainya tanggapan asas maka dalam mewakili
+
+00:27:35,000 --> 00:27:41,000
+a discrete-time a periodic signal
+diskret masa isyarat berkala
+
+00:27:41,000 --> 00:27:45,000
+is to first construct
+ialah dengan membina
+
+00:27:45,000 --> 00:27:48,000
+a periodic signal here we have the
+isyarat berkala di sini kita mempunyai
+
+00:27:48,000 --> 00:27:53,000
+a periodic signal reconstruct a periodic signal
+isyarat berkala membina semula isyarat berkala
+
+00:27:53,000 --> 00:27:58,000
+by simply periodically replicating the a periodic signal
+dengan hanya berkala mereplikasi isyarat berkala
+
+00:27:58,000 --> 00:28:04,000
+the periodic signal in the a periodic signal are identical
+isyarat berkala dalam isyarat berkala adalah sama
+
+00:28:04,000 --> 00:28:08,000
+for one period and as
+untuk satu tempoh dan sebagai
+
+00:28:08,000 --> 00:28:11,000
+the period goes off to infinity
+tempoh yang padam ke infiniti
+
+00:28:11,000 --> 00:28:15,000
+it's the forty a series representation of the periodic signal
+ia empat puluh perwakilan siri isyarat berkala
+
+00:28:15,000 --> 00:28:18,000
+that provides a representation all
+yang menyediakan semua perwakilan
+
+00:28:18,000 --> 00:28:22,000
+the a periodic signal again
+isyarat berkala lagi
+
+00:28:22,000 --> 00:28:25,000
+to returned to the example
+untuk kembali ke contoh
+
+00:28:25,000 --> 00:28:28,000
+that we
+kita yang
+
+00:28:28,000 --> 00:28:34,000
+have been kinda working through this lecture namely the periodic square wave
+telah agak bekerja melalui kuliah ini iaitu gelombang persegi berkala
+
+00:28:34,000 --> 00:28:38,000
+if we have in a periodic signal which is a rectangle
+jika kita ada dalam isyarat berkala yang merupakan sebuah segiempat tepat
+
+00:28:38,000 --> 00:28:42,000
+and reconstruct the periodic signal
+dan membina semula isyarat berkala
+
+00:28:42,000 --> 00:28:46,000
+and now we consider letting this period increase to infinity
+dan kini kami mengambil kira membiarkan ini peningkatan tempoh ke infiniti
+
+00:28:46,000 --> 00:28:51,000
+we would first have this set of samples of the envelope
+kita mula-mula akan mempunyai set sampel sampul surat
+
+00:28:51,000 --> 00:28:57,000
+as the period increases we would decrease the sample spacing to this set
+sebagai tempoh kenaikan kita akan berkurangan Jarak sampel untuk set ini
+
+00:28:57,000 --> 00:28:58,000
+of samples
+sampel
+
+00:28:58,000 --> 00:29:02,000
+as the period increases further it would be
+sebagai tempoh meningkatkan lagi ia akan menjadi
+
+00:29:02,000 --> 00:29:07,000
+this set of samples and as the period goes off to infinity
+set sampel dan sebagai tempoh padam ke infiniti
+
+00:29:07,000 --> 00:29:10,000
+its every point on the envelope in fact
+titik setiap pada sampul surat sebenarnya
+
+00:29:10,000 --> 00:29:14,000
+what the representation up the a periodic signal
+apa perwakilan isyarat yang berkala
+
+00:29:14,000 --> 00:29:18,000
+is is the anvil
+adalah adalah andas
+
+00:29:18,000 --> 00:29:22,000
+okay well so that's the basic notion it's no different than what we did
+okay juga jadi itulah tanggapan asas ia tidak berbeza daripada apa yang kita lakukan
+
+00:29:22,000 --> 00:29:26,000
+in the continuous-time case and
+dalam kes berterusan masa dan
+
+00:29:26,000 --> 00:29:29,000
+mathematically it develops in
+matematik ia terbentuk dalam
+
+00:29:29,000 --> 00:29:33,000
+very much the same way as in the continuous-time
+sangat banyak cara yang sama seperti dalam masa berterusan
+
+00:29:33,000 --> 00:29:37,000
+case specifically
+kes khusus
+
+00:29:37,000 --> 00:29:41,000
+here is our representation
+di sini adalah perwakilan kami
+
+00:29:41,000 --> 00:29:46,000
+through the forty a series all the
+melalui empat puluh siri yang semua
+
+00:29:46,000 --> 00:29:51,000
+here here's a representation through the envelope function
+di sini di sini adalah perwakilan melalui fungsi sampul surat
+
+00:29:51,000 --> 00:29:55,000
+and this is the 48 series synthesis equation where
+dan ini adalah persamaan sintesis 48 siri di mana
+
+00:29:55,000 --> 00:29:59,000
+equation the equation below tells us
+Persamaan persamaan di bawah memberitahu kita
+
+00:29:59,000 --> 00:30:02,000
+how we'd get these for EA coefficients
+bagaimana kita akan mendapatkan ini untuk pekali EA
+
+00:30:02,000 --> 00:30:06,000
+or the envelope from accident
+atau sampul surat dari kemalangan
+
+00:30:06,000 --> 00:30:10,000
+now extolled event is the periodic signal and we know that
+acara kini memuji adalah isyarat berkala dan kita tahu bahawa
+
+00:30:10,000 --> 00:30:14,000
+over one period which is the only interval over which we use it
+lebih satu tempoh yang hanya selang di mana kita menggunakannya
+
+00:30:14,000 --> 00:30:18,000
+in fact this is identical to the a periodic signal
+sebenarnya ini adalah sama dengan isyarat berkala
+
+00:30:18,000 --> 00:30:21,000
+its own fact we can rewrite this equation
+fakta sendiri kita boleh menulis semula persamaan ini
+
+00:30:21,000 --> 00:30:27,000
+simply by substituting instead effect told The
+hanya dengan menggantikan kesan sebaliknya kepada The
+
+00:30:27,000 --> 00:30:30,000
+the original a periodic signal and now
+asal isyarat berkala dan kini
+
+00:30:30,000 --> 00:30:34,000
+we can use infinite limits on this some and
+kita boleh menggunakan had tak terhingga pada beberapa ini dan
+
+00:30:34,000 --> 00:30:38,000
+what we would want to examine mathematically is
+apa yang kita akan mahu mengkaji matematik Adakah
+
+00:30:38,000 --> 00:30:42,000
+what happens to the top equation
+apa yang berlaku kepada persamaan atas
+
+00:30:42,000 --> 00:30:47,000
+as to the top equation as we let the period
+untuk persamaan atas seperti yang kita membiarkan tempoh yang
+
+00:30:47,000 --> 00:30:51,000
+go off to infinity and what happens is
+pergi ke infiniti dan apa yang berlaku ialah
+
+00:30:51,000 --> 00:30:54,000
+exactly identical mathematically to continuous-time
+betul-betul serupa matematik untuk berterusan masa
+
+00:30:54,000 --> 00:30:58,000
+I won't the labor the details essentially
+Saya tidak akan buruh butiran dasarnya
+
+00:30:58,000 --> 00:31:01,000
+its this some that goes to an integral
+beberapa ini bahawa pergi ke yang penting
+
+00:31:01,000 --> 00:31:06,000
+Omega 0 which is the fundamental frequency is going
+Omega 0 yang frekuensi asas akan
+
+00:31:06,000 --> 00:31:09,000
+toward zero in fact becomes the differential in the integral
+ke arah sifar sebenarnya menjadi pengkamiran dalam kamiran
+
+00:31:09,000 --> 00:31:14,000
+and in the second equation of course this then becomes excessive Omega
+dan dalam persamaan kedua kursus ini kemudian menjadi Omega berlebihan
+
+00:31:14,000 --> 00:31:18,000
+and as n goes to infinity then
+dan sebagai n tak terhingga maka
+
+00:31:18,000 --> 00:31:22,000
+what the for a series becomes is the 48 transform
+apa yang untuk siri yang menjadi adalah 48 mengubah
+
+00:31:22,000 --> 00:31:25,000
+as summarized by the bottom to
+sepertimana yang dibuktikan oleh bahagian bawah untuk
+
+00:31:25,000 --> 00:31:29,000
+equations so although
+persamaan jadi walaupun
+
+00:31:29,000 --> 00:31:33,000
+there are is a little bit mathematical
+ada adalah sedikit matematik
+
+00:31:33,000 --> 00:31:36,000
+trickery year but I called trickery but subtlety
+tahun tipu muslihat tetapi saya dipanggil tipu muslihat tetapi kehalusan
+
+00:31:36,000 --> 00:31:40,000
+to be tracked through in detail the important conceptual thing to think
+untuk dikesan melalui secara terperinci apa yang penting konsep untuk berfikir
+
+00:31:40,000 --> 00:31:41,000
+about
+kira-kira
+
+00:31:41,000 --> 00:31:44,000
+is this notion dead
+adalah tanggapan ini mati
+
+00:31:44,000 --> 00:31:48,000
+we take the a periodic signal for periodic signal let the period go off to
+kita mengambil isyarat berkala untuk isyarat berkala membiarkan tempoh yang pergi ke
+
+00:31:48,000 --> 00:31:49,000
+infinity
+infiniti
+
+00:31:49,000 --> 00:31:53,000
+which case the forty a series coefficients became these
+mana empat puluh satu siri pekali menjadi ini
+
+00:31:53,000 --> 00:31:56,000
+envelope function and incidently mathematically
+fungsi sampul surat dan kebetulan matematik
+
+00:31:56,000 --> 00:31:59,000
+one of the sons ends up going to an integral
+salah seorang anak berakhir akan yang penting
+
+00:31:59,000 --> 00:32:02,000
+so what we have then is
+jadi apa yang kita telah maka
+
+00:32:02,000 --> 00:32:07,000
+the discrete-time for EA transform
+diskret-masa untuk mengubah EA
+
+00:32:07,000 --> 00:32:11,000
+which is a representation all
+yang merupakan perwakilan semua
+
+00:32:11,000 --> 00:32:14,000
+and a periodic signal and we have
+dan isyarat berkala dan kami mempunyai
+
+00:32:14,000 --> 00:32:19,000
+the synthesis equation which I show as the top equation honest
+persamaan sintesis yang saya menunjukkan sebagai persamaan atas jujur
+
+00:32:19,000 --> 00:32:22,000
+transparency and this
+ketelusan dan ini
+
+00:32:22,000 --> 00:32:27,000
+is the integral that the four East series
+adalah penting bahawa siri Timur empat
+
+00:32:27,000 --> 00:32:32,000
+synthesis equation went to as the period when off to infinity
+persamaan sintesis pergi ke sebagai tempoh bila off ke infiniti
+
+00:32:32,000 --> 00:32:36,000
+and we have the corresponding analysis equation
+dan kami mempunyai persamaan analisis yang sepadan
+
+00:32:36,000 --> 00:32:41,000
+which is shown below where this tells us the 48 transform
+yang ditunjukkan di bawah di mana ini memberitahu kita 48 mengubah
+
+00:32:41,000 --> 00:32:44,000
+in effect the envelope all the for a series coefficients
+berkuat kuasa sampul surat semua untuk siri pekali
+
+00:32:44,000 --> 00:32:48,000
+love that periodic signal in and here
+suka bahawa isyarat berkala dan di sini
+
+00:32:48,000 --> 00:32:53,000
+represented interns love the a periodic signal
+intern diwakili suka isyarat berkala
+
+00:32:53,000 --> 00:32:58,000
+okay so we have the analysis equation synthesis equation
+okay jadi kita perlu analisis persamaan persamaan sintesis
+
+00:32:58,000 --> 00:33:02,000
+there are a number of things to focus
+terdapat beberapa perkara yang perlu fokus
+
+00:33:02,000 --> 00:33:06,000
+on as you look at this and we'll talk about so its properties
+pada kerana anda melihat ini dan kita akan bercakap tentang begitu sifat-sifat
+
+00:33:06,000 --> 00:33:09,000
+actually in the next lecture by it sold them the
+sebenarnya dalam kuliah seterusnya dengan ia dijual mereka
+
+00:33:09,000 --> 00:33:12,000
+points the I'd like you to think about a focus on
+mata yang saya ingin anda untuk berfikir tentang memberi tumpuan kepada
+
+00:33:12,000 --> 00:33:15,000
+the fact that now there
+hakikat bahawa kini terdapat
+
+00:33:15,000 --> 00:33:20,000
+is somewhat have an imbalance or lack of duality between the time-domain and
+agak mempunyai ketidakseimbangan atau kekurangan dualiti antara masa-domain dan
+
+00:33:20,000 --> 00:33:21,000
+frequency-domain
+frekuensi domain
+
+00:33:21,000 --> 00:33:25,000
+x seven witches are a periodic signal is a course
+x tujuh ahli-ahli sihir adalah isyarat berkala adalah kursus yang
+
+00:33:25,000 --> 00:33:29,000
+discrete its Fourier transform
+Fourier diskret mengubah
+
+00:33:29,000 --> 00:33:33,000
+Xserve Omega is a function love a continuous variable
+Xserve Omega adalah cinta fungsi pembolehubah berterusan
+
+00:33:33,000 --> 00:33:36,000
+Omega is a continuous variable that that
+Omega adalah pembolehubah berterusan yang yang
+
+00:33:36,000 --> 00:33:41,000
+and that is essentially what represents the envelope
+dan yang pada asasnya apa yang mewakili sampul surat
+
+00:33:41,000 --> 00:33:44,000
+also in the time domain x7 is
+juga dalam X7 domain masa adalah
+
+00:33:44,000 --> 00:33:49,000
+a periodic its not a periodic function
+bukan fungsinya berkala berkala
+
+00:33:49,000 --> 00:33:54,000
+however in the frequency domain remember that the for a series coefficients were
+bagaimanapun dalam domain frekuensi ingat bahawa untuk siri pekali adalah
+
+00:33:54,000 --> 00:33:55,000
+always periodic
+sentiasa berkala
+
+00:33:55,000 --> 00:33:59,000
+well this envelope function then is also periodic
+juga fungsi sampul surat ini kemudian juga berkala
+
+00:33:59,000 --> 00:34:03,000
+with a period in omega up to par i
+dengan tempoh omega normal i
+
+00:34:03,000 --> 00:34:08,000
+what's again the reason for the periodicity it all stems back to the
+apa lagi alasan untuk jangka masa yang ia semua berpunca kembali ke
+
+00:34:08,000 --> 00:34:08,000
+fact
+fakta
+
+00:34:08,000 --> 00:34:12,000
+there when we talk about complex exponentials
+di sana apabila kita bercakap mengenai exponentials kompleks
+
+00:34:12,000 --> 00:34:16,000
+and recall back to the early lectures in discrete-time
+dan ingat kembali ke kuliah pada awal diskret masa
+
+00:34:16,000 --> 00:34:21,000
+as the frequency variable covers a range
+sebagai pembolehubah kekerapan merangkumi pelbagai
+
+00:34:21,000 --> 00:34:25,000
+all to parlay when you proceed past that range
+semua untuk Parlay apabila anda teruskan melebihi julat yang
+
+00:34:25,000 --> 00:34:30,000
+you simply see the same complex exponentials over and over again
+anda hanya melihat exponentials kompleks yang sama berulang-ulang kali
+
+00:34:30,000 --> 00:34:34,000
+and so obviously anything that we do with them would have to be periodic
+dan sebagainya jelas apa-apa yang kami lakukan dengan mereka akan menjadi berkala
+
+00:34:34,000 --> 00:34:39,000
+in that frequency variable alright notation Lee
+kerana frekuensi pembolehubah notasi mengapa Lee
+
+00:34:39,000 --> 00:34:42,000
+and will again represent the
+dan sekali lagi akan mewakili
+
+00:34:42,000 --> 00:34:46,000
+discrete-time Fourier transform here as i indicate here
+diskret masa Fourier mengubah sini sebagai i menunjukkan di sini
+
+00:34:46,000 --> 00:34:49,000
+and sense is a complex function of frequency
+dan rasa adalah fungsi kompleks kekerapan
+
+00:34:49,000 --> 00:34:53,000
+may on occasion want to either represented
+mungkin pada kesempatan mahu sama ada diwakili
+
+00:34:53,000 --> 00:34:57,000
+in rectangular form as i indicated this equation
+dalam bentuk segi empat tepat seperti yang ditunjukkan i persamaan ini
+
+00:34:57,000 --> 00:35:02,000
+or in polar for as i indicate in this equation
+atau di kutub sebagai i menunjukkan dalam persamaan ini
+
+00:35:02,000 --> 00:35:05,000
+all right let's and look at an example
+semua membiarkan hak dan melihat contoh
+
+00:35:05,000 --> 00:35:08,000
+and of course one example that
+dan sudah tentu salah satu contoh yang
+
+00:35:08,000 --> 00:35:12,000
+we can look at is the one that has kind of been tracking this
+kita boleh melihat adalah salah satu yang telah jenis telah mengesan ini
+
+00:35:12,000 --> 00:35:15,000
+through this lecture which is the example
+melalui kuliah ini yang merupakan contoh yang
+
+00:35:15,000 --> 00:35:18,000
+love a rectangle now
+suka segi empat tepat yang kini
+
+00:35:18,000 --> 00:35:22,000
+the rectangle if we refer back to our
+segiempat tepat itu jika kita merujuk kembali kepada kami
+
+00:35:22,000 --> 00:35:28,000
+argument love how we get a for a representation for a periodic signal
+hujah suka bagaimana kita akan mendapat untuk perwakilan untuk isyarat berkala
+
+00:35:28,000 --> 00:35:31,000
+we would form a periodic signal where this is repeated
+kita akan membentuk isyarat berkala di mana ini diulang
+
+00:35:31,000 --> 00:35:36,000
+and thats are square wave example as the period goes to infinity
+dan thats adalah contoh gelombang persegi sebagai tempoh tak terhingga
+
+00:35:36,000 --> 00:35:40,000
+the forty a transformer this is represented by the envelope
+empat puluh pengubah ini diwakili oleh sampul surat
+
+00:35:40,000 --> 00:35:43,000
+all those for a series coefficients and that was
+semua mereka untuk siri pekali dan yang
+
+00:35:43,000 --> 00:35:46,000
+are sign an X over sin x function
+adalah menandatangani X berbanding sin x fungsi
+
+00:35:46,000 --> 00:35:50,000
+which in this particular case for these particular numbers
+yang dalam ini kes tertentu untuk nombor-nombor tertentu
+
+00:35:50,000 --> 00:35:53,000
+is sin 5 Omega over to
+adalah dosa 5 Omega kepada
+
+00:35:53,000 --> 00:35:58,000
+divided by sign Omega over to
+dibahagikan dengan tanda Omega kepada
+
+00:35:58,000 --> 00:36:01,000
+and notice of course as we would expect
+dan notis sudah tentu kerana kami menjangka akan
+
+00:36:01,000 --> 00:36:05,000
+that notice that this is a
+bahawa notis bahawa ini adalah satu
+
+00:36:05,000 --> 00:36:09,000
+periodic function all the frequency variable Omega
+fungsi berkala semua frekuensi pembolehubah Omega
+
+00:36:09,000 --> 00:36:13,000
+repeating of course with a period up to par
+mengulangi kursus dengan tempoh sehingga setanding
+
+00:36:13,000 --> 00:36:17,000
+whereas in the time domain the function was not
+sedangkan dalam domain masa fungsi itu tidak
+
+00:36:17,000 --> 00:36:22,000
+a periodic function it's a period
+fungsi berkala ia tempoh yang
+
+00:36:22,000 --> 00:36:25,000
+now let's look at another example
+sekarang mari kita lihat contoh yang lain
+
+00:36:25,000 --> 00:36:28,000
+in let's look at example
+dalam melihat yang disewakan di contoh
+
+00:36:28,000 --> 00:36:32,000
+which is another signal that has
+yang merupakan satu lagi isyarat yang mempunyai
+
+00:36:32,000 --> 00:36:36,000
+kinda popped its head up from time to time as the lectures have gone along
+kinda muncul kepalanya dari semasa ke semasa sebagai kuliah telah bersama-sama
+
+00:36:36,000 --> 00:36:42,000
+signal which is another a periodic signal which is a decaying exponential
+isyarat yang merupakan satu lagi isyarat berkala yang merupakan mereput eksponen
+
+00:36:42,000 --> 00:36:45,000
+of this form with the
+borang ini dengan
+
+00:36:45,000 --> 00:36:50,000
+factor a chosen between 0&1
+Faktor yang dipilih antara 0 & 1
+
+00:36:50,000 --> 00:36:53,000
+and you can workout the algebra
+dan anda boleh bersenam algebra
+
+00:36:53,000 --> 00:36:57,000
+at your leisure basically if we substituted to the four EA
+pada masa lapang anda pada dasarnya jika kita digantikan untuk empat EA
+
+00:36:57,000 --> 00:37:00,000
+transform analysis equation its
+mengubah persamaan analisis
+
+00:37:00,000 --> 00:37:05,000
+this summer we evaluate because we have a unit step here
+musim panas ini kita menilai kerana kita mempunyai langkah unit di sini
+
+00:37:05,000 --> 00:37:09,000
+which shots this of for and less than zero
+yang tembakan ini untuk dan kurang daripada sifar
+
+00:37:09,000 --> 00:37:12,000
+we can change the limits on the some this then corresponds
+kita boleh mengubah had ke atas beberapa yang ini maka sepadan
+
+00:37:12,000 --> 00:37:17,000
+to the some over an infinite number turns
+kepada beberapa ke atas gilir nombor terhingga
+
+00:37:17,000 --> 00:37:21,000
+geometric series and that as we've seen before
+siri geometri dan yang seperti yang kita telah melihat sebelum
+
+00:37:21,000 --> 00:37:24,000
+is one divided by one minus a
+adalah salah satu dibahagi dengan satu tolak
+
+00:37:24,000 --> 00:37:28,000
+you to the minus jail make so
+anda ke penjara tolak membuat supaya
+
+00:37:28,000 --> 00:37:32,000
+let's look at what that looks like
+mari kita lihat apa yang kelihatan seperti
+
+00:37:32,000 --> 00:37:36,000
+here him then we have again
+di sini dia maka kita perlu sekali lagi
+
+00:37:36,000 --> 00:37:40,000
+the expression in the time domain
+ungkapan dalam domain masa
+
+00:37:40,000 --> 00:37:43,000
+and the expression in the frequency domain
+dan ungkapan dalam domain frekuensi
+
+00:37:43,000 --> 00:37:48,000
+and lets in particular focus I N what the magnitude of the Fourier transform
+dan membolehkan dalam tumpuan khusus DALAM apa magnitud Fourier
+
+00:37:48,000 --> 00:37:50,000
+looks like
+kelihatan seperti
+
+00:37:50,000 --> 00:37:54,000
+its as we show here
+sebagai kita menunjukkan di sini
+
+00:37:54,000 --> 00:37:58,000
+and for the particular values
+dan nilai-nilai tertentu
+
+00:37:58,000 --> 00:38:01,000
+Ave that I picked namely between 0&1
+Ave yang saya meningkat iaitu antara 0 & 1
+
+00:38:01,000 --> 00:38:05,000
+its larger at the origin then it is upon I
+lebih besar pada asal maka ia adalah di atas saya
+
+00:38:05,000 --> 00:38:09,000
+and then of course it is periodic
+dan kemudian tentu ia adalah berkala
+
+00:38:09,000 --> 00:38:14,000
+and the periodicity is inherent in the Fourier transform in discrete-time
+dan jangka masa ini wujud di dalam Fourier diskret dalam masa
+
+00:38:14,000 --> 00:38:18,000
+so we really might only need to look at this either from minus
+jadi kami mungkin hanya perlu melihat ini sama ada dari tolak
+
+00:38:18,000 --> 00:38:21,000
+fired upon by or from 0 to 2pi
+ditembak oleh atau dari 0 hingga 2pi
+
+00:38:21,000 --> 00:38:25,000
+the periodicity of course would imply what the rest at this is for other
+yang jangka masa sudah tentu akan membayangkan apa yang lain di ini adalah untuk lain
+
+00:38:25,000 --> 00:38:28,000
+values have or make it
+nilai-nilai mempunyai atau menjadikannya
+
+00:38:28,000 --> 00:38:31,000
+let me also draw your attention at war on it
+biarlah saya juga menarik perhatian anda berperang di atasnya
+
+00:38:31,000 --> 00:38:35,000
+the fact dead observed at if
+hakikat mati diperhatikan pada jika
+
+00:38:35,000 --> 00:38:38,000
+a were in fact negative then
+yang sebenarnya negatif maka
+
+00:38:38,000 --> 00:38:42,000
+this value would be less than this value
+nilai ini kurang daripada nilai ini
+
+00:38:42,000 --> 00:38:46,000
+and in fact for a negative
+dan sebenarnya untuk yang negatif
+
+00:38:46,000 --> 00:38:50,000
+the magnitude the frequency response would look like this except shifted
+magnitud sambutan frekuensi yang akan kelihatan seperti ini kecuali beralih
+
+00:38:50,000 --> 00:38:54,000
+by an amount in omega equal the pie
+dengan suatu amaun yang sama dengan Omega pai
+
+00:38:54,000 --> 00:38:57,000
+and this example will come up
+dan contoh ini akan datang
+
+00:38:57,000 --> 00:39:02,000
+and play an important role in our discussion next time
+dan memainkan peranan penting dalam perbincangan kami masa depan yang
+
+00:39:02,000 --> 00:39:06,000
+so try to keep it in mind in fact work it out more carefully between
+jadi cuba untuk memastikan ia dalam minda sebenarnya bekerja keluar dengan lebih teliti antara
+
+00:39:06,000 --> 00:39:10,000
+now and next time and also if you have a chance
+sekarang dan masa akan datang dan juga jika anda mempunyai peluang yang
+
+00:39:10,000 --> 00:39:14,000
+focus on this issue love how it looks
+memberi tumpuan kepada isu ini suka bagaimana ia kelihatan
+
+00:39:14,000 --> 00:39:18,000
+with a positive is compared with a negative
+dengan positif yang dibandingkan dengan negatif
+
+00:39:18,000 --> 00:39:23,000
+okay now we developed the 48 transform
+okay sekarang kita membangunkan 48 mengubah
+
+00:39:23,000 --> 00:39:29,000
+by beginning with the forty a series we did that in continuous time also
+oleh yang bermula dengan empat puluh siri yang kita lakukan dalam masa yang berterusan juga
+
+00:39:29,000 --> 00:39:33,000
+but I'd like to do now just as we did in continuous-time
+tetapi saya ingin lakukan sekarang hanya seperti yang kita lakukan pada masa yang berterusan
+
+00:39:33,000 --> 00:39:37,000
+is now absorb the forty a series
+kini menyerap empat puluh siri yang
+
+00:39:37,000 --> 00:39:41,000
+within the broader framework above the 40 a transport
+dalam rangka kerja yang lebih luas di atas 40 pengangkutan yang
+
+00:39:41,000 --> 00:39:47,000
+and there are two relationships between the forty a series the Fourier transform
+dan terdapat dua hubungan antara empat puluh satu siri Fourier
+
+00:39:47,000 --> 00:39:50,000
+which are identical to relationships that we had
+yang serupa kepada hubungan yang telah kita
+
+00:39:50,000 --> 00:39:54,000
+in the continuous-time case
+dalam kes berterusan masa
+
+00:39:54,000 --> 00:39:57,000
+let me remind you dead in
+biarlah saya mengingatkan anda mati di
+
+00:39:57,000 --> 00:40:01,000
+continuous-time we head
+berterusan masa kita menuju
+
+00:40:01,000 --> 00:40:08,000
+the statement there if we have a periodic signal
+kenyataan itu ada jika kita mempunyai isyarat yang berkala
+
+00:40:08,000 --> 00:40:13,000
+that in fact the forty a series coefficients that periodic signal
+bahawa sebenarnya empat puluh siri satu pekali isyarat berkala
+
+00:40:13,000 --> 00:40:16,000
+is proportional to
+adalah berkadar
+
+00:40:16,000 --> 00:40:20,000
+the two samples of the Fourier transform
+kedua-dua sampel bagi jelmaan Fourier
+
+00:40:20,000 --> 00:40:24,000
+all one period well
+semua tempoh satu baik
+
+00:40:24,000 --> 00:40:27,000
+in fact thats let me remind you flows
+sebenarnya thats biarlah saya mengingatkan anda aliran
+
+00:40:27,000 --> 00:40:30,000
+easily from all other things that we've built up
+dengan mudah dari semua perkara lain yang kami telah membina
+
+00:40:30,000 --> 00:40:35,000
+so far because of the fact that the for a transformer sexually
+setakat ini kerana fakta bahawa untuk pengubah seksual
+
+00:40:35,000 --> 00:40:38,000
+by definition love the way we developed it
+mengikut definisi suka cara kita maju ia
+
+00:40:38,000 --> 00:40:41,000
+is what we get as
+apa yang kita dapati sebagai
+
+00:40:41,000 --> 00:40:46,000
+the forty-a series coefficients
+pekali empat puluh satu siri
+
+00:40:46,000 --> 00:40:51,000
+as we focus on one period and then let the period go off to infinity
+seperti yang kita memberi tumpuan kepada satu tempoh dan kemudian membiarkan tempoh yang pergi ke infiniti
+
+00:40:51,000 --> 00:40:56,000
+well thats looking at one period before a transformer that then
+baik thats mencari pada satu tempoh sebelum pengubah yang kemudiannya
+
+00:40:56,000 --> 00:40:59,000
+is the envelope above the 40 a series coefficients
+adalah sampul surat di atas pekali 40 siri
+
+00:40:59,000 --> 00:41:03,000
+and so in continuous-time we have
+dan sebagainya dalam berterusan masa kita ada
+
+00:41:03,000 --> 00:41:07,000
+this relationship and in discrete-time
+hubungan ini dan pada masa diskret
+
+00:41:07,000 --> 00:41:12,000
+we have precisely the same relationship
+kita mempunyai tepat hubungan yang sama
+
+00:41:12,000 --> 00:41:15,000
+except that here we're talking about
+kecuali di sini kita berbicara tentang
+
+00:41:15,000 --> 00:41:20,000
+an integer variable and as opposed to the continuous variable and a period of
+pembolehubah integer dan sebagai bertentangan dengan pembolehubah berterusan dan tempoh
+
+00:41:20,000 --> 00:41:22,000
+capital and
+modal dan
+
+00:41:22,000 --> 00:41:25,000
+as opposed to a period
+berbanding dengan tempoh yang
+
+00:41:25,000 --> 00:41:30,000
+love t0 okay so
+t0 cinta okay jadi
+
+00:41:30,000 --> 00:41:33,000
+once again if we returned to
+sekali lagi jika kami berpindah kepada
+
+00:41:33,000 --> 00:41:37,000
+our example
+contoh kita
+
+00:41:37,000 --> 00:41:41,000
+if or Fri return to a periodic signal
+jika atau Fri kembali ke isyarat berkala
+
+00:41:41,000 --> 00:41:45,000
+we have a periodic signal and we consider
+kita mempunyai isyarat berkala dan kami mengambil kira
+
+00:41:45,000 --> 00:41:48,000
+the for EA transform love
+untuk EA mengubah cinta
+
+00:41:48,000 --> 00:41:52,000
+one period the for a series coefficients
+satu tempoh yang untuk siri pekali
+
+00:41:52,000 --> 00:41:55,000
+this periodic signal are in fact
+isyarat berkala ini sebenarnya
+
+00:41:55,000 --> 00:41:58,000
+samples as stated
+sampel seperti yang dinyatakan
+
+00:41:58,000 --> 00:42:02,000
+mathematically in the bottom equation samples
+matematik dalam sampel persamaan bawah
+
+00:42:02,000 --> 00:42:05,000
+love the four EA transform all
+suka empat EA mengubah semua
+
+00:42:05,000 --> 00:42:11,000
+one period so XO makers the for a transformer one period
+satu tempoh supaya pembuat XO untuk pengubah satu tempoh
+
+00:42:11,000 --> 00:42:15,000
+a suitcase at a4e series coefficients at the periodic signal
+sebuah beg di siri a4e pekali pada isyarat berkala
+
+00:42:15,000 --> 00:42:20,000
+and this relationship simply says their related except for a scale factor
+dan hubungan ini hanya berkata berkaitan kecuali faktor skala
+
+00:42:20,000 --> 00:42:26,000
+through samples along the frequency axis
+melalui sampel sepanjang paksi kekerapan
+
+00:42:26,000 --> 00:42:31,000
+and and the chorus we saw this
+dan dan korus yang kita lihat ini
+
+00:42:31,000 --> 00:42:34,000
+in the context all our
+dalam konteks semua kami
+
+00:42:34,000 --> 00:42:37,000
+square wave example in a square wave
+contoh gelombang persegi dalam gelombang persegi
+
+00:42:37,000 --> 00:42:42,000
+example we have a periodic signal
+contoh, kita mempunyai isyarat yang berkala
+
+00:42:42,000 --> 00:42:45,000
+which is a periodic square wave
+yang merupakan gelombang persegi berkala
+
+00:42:45,000 --> 00:42:49,000
+and the for EA transform
+dan untuk EA mengubah
+
+00:42:49,000 --> 00:42:53,000
+a one period in fact represents
+tempoh satu sebenarnya mewakili
+
+00:42:53,000 --> 00:42:57,000
+the on below and here we have the envelope function
+pada bawah dan di sini kita mempunyai fungsi sampul surat
+
+00:42:57,000 --> 00:43:02,000
+represents the envelope or the forty a series coefficients
+mewakili sampul surat atau empat puluh satu siri pekali
+
+00:43:02,000 --> 00:43:08,000
+and the for a series coefficients are samples
+dan untuk siri pekali adalah sampel
+
+00:43:08,000 --> 00:43:12,000
+so what we have been is
+jadi apa yang kita telah adalah
+
+00:43:12,000 --> 00:43:18,000
+a relationship back to before a series coefficients from the Fourier transform
+hubungan kembali ke sebelum satu siri pekali dari Fourier mengubah
+
+00:43:18,000 --> 00:43:21,000
+that tells us that for periodic signal now
+yang memberitahu kita bahawa untuk isyarat berkala kini
+
+00:43:21,000 --> 00:43:25,000
+the periodic signal the for a series coefficients
+isyarat berkala untuk siri pekali
+
+00:43:25,000 --> 00:43:29,000
+are related are samples of the Fourier transform
+adalah berkaitan adalah sampel Fourier
+
+00:43:29,000 --> 00:43:32,000
+one period now
+satu tempoh sekarang
+
+00:43:32,000 --> 00:43:36,000
+finally to kinda bring things back in a circle
+akhirnya agak membawa perkara kembali dalam bulatan
+
+00:43:36,000 --> 00:43:40,000
+and exactly identical to what we did it in the continuous-time
+dan betul-betul sama dengan yang kami lakukan dalam masa berterusan
+
+00:43:40,000 --> 00:43:43,000
+case we can finally absorber
+kes kita akhirnya boleh penyerap
+
+00:43:43,000 --> 00:43:47,000
+the 48 series indiscreet
+yang tdk berhati-hati 48 siri
+
+00:43:47,000 --> 00:43:50,000
+time we can absorb it into the framework
+masa kita dapat menyerap ke dalam rangka kerja
+
+00:43:50,000 --> 00:43:54,000
+all the four EA transport now
+semua pengangkutan empat EA kini
+
+00:43:54,000 --> 00:43:58,000
+remember or recall how we did at when
+ingat atau masih ingat bagaimana kami lakukan di apabila
+
+00:43:58,000 --> 00:44:02,000
+re tried to do a similar sort of thing
+semula cuba mengatur yang sama perkara
+
+00:44:02,000 --> 00:44:07,000
+in continuous-time in continuous-time
+dalam masa yang berterusan dalam masa yang berterusan
+
+00:44:07,000 --> 00:44:10,000
+what we essentially did is
+apa yang kita lakukan pada dasarnya adalah
+
+00:44:10,000 --> 00:44:14,000
+to develop that more less by definition
+untuk membangunkan bahawa lebih kurang dengan definisi
+
+00:44:14,000 --> 00:44:18,000
+we have occurred we have a periodic signal
+kita berlaku kita mempunyai isyarat yang berkala
+
+00:44:18,000 --> 00:44:21,000
+the periodic signal is represented through 48 series
+isyarat berkala diagihkan melalui 48 siri
+
+00:44:21,000 --> 00:44:25,000
+in forty a series coefficients essentially
+dalam empat puluh satu siri pekali dasarnya
+
+00:44:25,000 --> 00:44:30,000
+when I pointed out at that time was that if we define
+apabila saya menegaskan pada masa itu adalah bahawa jika kita menentukan
+
+00:44:30,000 --> 00:44:35,000
+and take it as a definition before a transformer the periodic signal
+dan mengambil ia sebagai definisi sebelum pengubah isyarat berkala
+
+00:44:35,000 --> 00:44:41,000
+as an impulse train where the amplitudes at the impulses are proportional
+sebagai kereta api gerak hati di mana amplitud di impuls adalah berkadar
+
+00:44:41,000 --> 00:44:44,000
+to the forty a series coefficients
+empat puluh siri satu pekali
+
+00:44:44,000 --> 00:44:48,000
+if we take an impulse train representation
+jika kita mengambil perwakilan kereta api gerak hati
+
+00:44:48,000 --> 00:44:52,000
+and simply plug it in
+dan hanya palamkan ia
+
+00:44:52,000 --> 00:44:55,000
+to the for EA
+kepada untuk EA
+
+00:44:55,000 --> 00:44:59,000
+transform synthesis equation what we end up with
+mengubah persamaan sintesis apa yang kita berakhir dengan
+
+00:44:59,000 --> 00:45:05,000
+is the for you see recent this equation
+adalah untuk anda melihat baru-baru ini persamaan ini
+
+00:45:05,000 --> 00:45:08,000
+so in continuous-time
+jadi dalam masa yang berterusan
+
+00:45:08,000 --> 00:45:12,000
+we bad done
+kita lakukan yang tidak baik
+
+00:45:12,000 --> 00:45:15,000
+we had used this definition I love
+kita telah menggunakan definisi ini saya suka
+
+00:45:15,000 --> 00:45:18,000
+the discrete-time up the continuous-time
+diskret-masa yang up-masa berterusan
+
+00:45:18,000 --> 00:45:22,000
+for EA transform other periodic signal
+untuk EA mengubah isyarat berkala lain
+
+00:45:22,000 --> 00:45:26,000
+and again in discrete-time it's simply a matter
+dan sekali lagi pada diskret-masa ia hanya perkara
+
+00:45:26,000 --> 00:45:30,000
+love using exactly the same expression
+suka menggunakan tepat ungkapan yang sama
+
+00:45:30,000 --> 00:45:34,000
+and using instead the appropriate
+dan menggunakan ganti yang sesuai
+
+00:45:34,000 --> 00:45:38,000
+variables related to discrete-time rather than the variables related to
+pembolehubah yang berkaitan dengan diskret-masa dan bukannya pembolehubah yang berkaitan dengan
+
+00:45:38,000 --> 00:45:40,000
+continuous-time
+berterusan masa
+
+00:45:40,000 --> 00:45:43,000
+so in discrete-time if we have a periodic signal
+jadi dalam masa diskret jika kita mempunyai isyarat yang berkala
+
+00:45:43,000 --> 00:45:46,000
+the Fourier transform that periodic signal
+Fourier isyarat berkala
+
+00:45:46,000 --> 00:45:49,000
+is defined as an impulse train where the
+ditakrifkan sebagai kereta api gerak hati di mana
+
+00:45:49,000 --> 00:45:52,000
+amplitudes up the impulses
+amplitud sehingga impuls
+
+00:45:52,000 --> 00:45:57,000
+are proportional to the forty a series coefficients
+adalah berkadar dengan empat puluh siri satu pekali
+
+00:45:57,000 --> 00:46:02,000
+if this expression is substituted into the synthesis equation
+jika ungkapan ini digantikan ke dalam persamaan sintesis
+
+00:46:02,000 --> 00:46:06,000
+for the 48 transform we will simply that will simply then reduced to
+untuk 48 mengubah kita akan hanya yang akan hanya kemudian dikurangkan kepada
+
+00:46:06,000 --> 00:46:11,000
+this synthesis equation for the forty a series
+persamaan sintesis ini selama empat puluh siri yang
+
+00:46:11,000 --> 00:46:14,000
+so wants more returning to
+jadi mahu lebih banyak kembali ke
+
+00:46:14,000 --> 00:46:19,000
+our example which is the square wave example that we carry through these
+contoh kita yang merupakan contoh gelombang persegi yang kita membawa melalui
+
+00:46:19,000 --> 00:46:20,000
+lectures
+kuliah
+
+00:46:20,000 --> 00:46:24,000
+or through this lecture we can see that
+atau melalui kuliah ini kita dapat melihat bahawa
+
+00:46:24,000 --> 00:46:28,000
+really what we're talking about really is a notational change
+benar-benar apa yang kita benar-benar bercakap tentang perubahan notasi
+
+00:46:28,000 --> 00:46:33,000
+here is the four EA here is the periodic signal
+di sini adalah empat EA di sini adalah isyarat berkala
+
+00:46:33,000 --> 00:46:36,000
+and below it are the forty a series
+dan di bawahnya empat puluh siri yang
+
+00:46:36,000 --> 00:46:41,000
+coefficients where I've removed the envelope function just indicate
+pekali di mana saya telah dikeluarkan fungsi sampul surat hanya menunjukkan
+
+00:46:41,000 --> 00:46:46,000
+the airport to the coefficients index of course on the coefficient number
+lapangan terbang ke indeks pekali yang sudah tentu bilangan pekali
+
+00:46:46,000 --> 00:46:50,000
+and so this represents a bar graph and
+dan sebagainya ini mewakili graf bar dan
+
+00:46:50,000 --> 00:46:54,000
+if instead of talking about the for a series coefficients
+jika bukan bercakap mengenai untuk siri pekali
+
+00:46:54,000 --> 00:46:58,000
+what I want to talk about are the
+apa yang saya mahu bercakap tentang adalah
+
+00:46:58,000 --> 00:47:02,000
+is the four EA transform the Fourier transform
+adalah empat EA mengubah Fourier
+
+00:47:02,000 --> 00:47:06,000
+in essence corresponds to simply redrawing mad
+pada dasarnya sepadan dengan hanya dikeluarkan semula gila
+
+00:47:06,000 --> 00:47:10,000
+using impulses and using
+menggunakan impuls dan menggunakan
+
+00:47:10,000 --> 00:47:13,000
+an axis that is essentially
+paksi yang pada asasnya
+
+00:47:13,000 --> 00:47:17,000
+index on the fundamental frequency Omega
+indeks pada frekuensi asas Omega
+
+00:47:17,000 --> 00:47:20,000
+rather than on the four EA series coefficient number
+bukan pada bilangan pekali empat siri EA
+
+00:47:20,000 --> 00:47:24,000
+K
+
+
+00:47:24,000 --> 00:47:27,000
+okay in so
+okay dalam supaya
+
+00:47:27,000 --> 00:47:30,000
+to summarize what we've done
+untuk meringkaskan apa yang kami lakukan
+
+00:47:30,000 --> 00:47:34,000
+is to pretty much parallel
+adalah cukup banyak selari
+
+00:47:34,000 --> 00:47:39,000
+are somewhat more quickly the kind of development that we went through
+agak lebih cepat jenis pembangunan yang kami lalui
+
+00:47:39,000 --> 00:47:44,000
+for continuous-time representation through complex exponentials
+untuk perwakilan berterusan masa melalui exponentials kompleks
+
+00:47:44,000 --> 00:47:47,000
+parallel that for the discrete-time case
+selari bahawa bagi kes diskret masa
+
+00:47:47,000 --> 00:47:52,000
+and pretty much the conceptual underpinnings that the development are
+dan cukup banyak yang asas tidak konsep yang pembangunan adalah
+
+00:47:52,000 --> 00:47:54,000
+identical
+serupa
+
+00:47:54,000 --> 00:47:58,000
+in discrete-time and in continuous time
+dalam diskret masa dan dalam masa yang berterusan
+
+00:47:58,000 --> 00:48:02,000
+we saw there'd their are
+kita lihat ada mereka akan adalah
+
+00:48:02,000 --> 00:48:06,000
+some major differences are important differences between continuous-time and
+beberapa perbezaan utama perbezaan yang penting antara berterusan masa dan
+
+00:48:06,000 --> 00:48:08,000
+discrete-time
+diskret masa
+
+00:48:08,000 --> 00:48:11,000
+I'm and the difference essentially
+Saya dan perbezaan dasarnya
+
+00:48:11,000 --> 00:48:16,000
+relates to two aspect one aspect is the fact that
+berkaitan dengan dua aspek satu aspek adalah hakikat bahawa
+
+00:48:16,000 --> 00:48:22,000
+in discrete-time we have a discrete representation in the time domain
+dalam diskret-kali kita mempunyai perwakilan diskret dalam domain masa
+
+00:48:22,000 --> 00:48:25,000
+whereas the independent variable in the frequency domain
+manakala pembolehubah bebas dalam domain frekuensi
+
+00:48:25,000 --> 00:48:29,000
+is a continuous variable whereas in continuous-time
+adalah pembolehubah berterusan sedangkan dalam masa yang berterusan
+
+00:48:29,000 --> 00:48:32,000
+for the Fourier transform we had duality between the time-domain and
+untuk Fourier mengubah kita mempunyai dualiti antara masa-domain dan
+
+00:48:32,000 --> 00:48:35,000
+frequency-domain
+frekuensi domain
+
+00:48:35,000 --> 00:48:39,000
+the other very important difference tied back to the difference between complex
+perbezaan yang sangat penting yang lain diikat kembali dengan perbezaan antara kompleks
+
+00:48:39,000 --> 00:48:43,000
+exponentials continuous-time and discrete-time
+exponentials berterusan masa dan diskret masa
+
+00:48:43,000 --> 00:48:48,000
+in continuous-time complex exponentials as you very the frequency
+dalam masa yang berterusan exponentials kompleks kerana anda sangat kekerapan
+
+00:48:48,000 --> 00:48:51,000
+generate distinct
+menjana berbeza
+
+00:48:51,000 --> 00:48:56,000
+time functions in discrete-time as you very the frequency
+fungsi masa di diskret-masa yang anda sangat kekerapan
+
+00:48:56,000 --> 00:49:00,000
+once you've covered a frequency interval to pie
+sebaik sahaja anda telah dilindungi selang frekuensi untuk pai
+
+00:49:00,000 --> 00:49:03,000
+then you've seen all the ones there are two see there are no more
+maka anda telah melihat semua yang terdapat dua melihat tidak ada lagi
+
+00:49:03,000 --> 00:49:08,000
+in this in a fact imposes a periodicity
+dalam ini sebenarnya mengenakan jangka masa yang
+
+00:49:08,000 --> 00:49:13,000
+on the 48 domain representation of discrete-time signals
+pada perwakilan 48 domain isyarat diskret masa
+
+00:49:13,000 --> 00:49:17,000
+and those so those differences and of course lots the similarities
+dan mereka begitu perbezaan-perbezaan dan sudah tentu banyak persamaan
+
+00:49:17,000 --> 00:49:22,000
+will surface both as we use this representation
+akan muncul kedua-duanya sebagai kita menggunakan perwakilan ini
+
+00:49:22,000 --> 00:49:26,000
+and as we develop for the property
+dan seperti yang kita membangunkan untuk harta
+
+00:49:26,000 --> 00:49:29,000
+in the next lecture what will do is
+dalam syarahan seterusnya apa yang akan dilakukan ialah
+
+00:49:29,000 --> 00:49:33,000
+to focus and again on the Fourier transform the discrete-time Fourier
+untuk memberi tumpuan dan sekali lagi pada Fourier mengubah Fourier diskret masa
+
+00:49:33,000 --> 00:49:36,000
+transform
+mengubah
+
+00:49:36,000 --> 00:49:41,000
+develop or eliminate so love the property serv the trip or a transform
+membangunkan atau menghapuskan jadi suka serv harta perjalanan atau mengubah
+
+00:49:41,000 --> 00:49:45,000
+and then see how these properties can be used
+dan kemudian melihat bagaimana sifat-sifat ini boleh digunakan
+
+00:49:45,000 --> 00:49:49,000
+for a number of things for example how the properties as they were in
+untuk beberapa perkara sebagai contoh bagaimana sifat-sifat seperti pada
+
+00:49:49,000 --> 00:49:50,000
+continuous-time
+berterusan masa
+
+00:49:50,000 --> 00:49:54,000
+can be used to efficiently
+boleh digunakan dengan cekap
+
+00:49:54,000 --> 00:49:58,000
+generate the solution and analyze when your constant coefficient difference
+menjana penyelesaian dan menganalisis apabila perbezaan pekali malar anda
+
+00:49:58,000 --> 00:50:00,000
+equations
+persamaan
+
+00:50:00,000 --> 00:50:03,000
+and then beyond that the concepts of
+dan kemudian melihat bahawa konsep
+
+00:50:03,000 --> 00:50:06,000
+filtering and modulation and
+penapisan dan modulasi dan
+
+00:50:06,000 --> 00:50:10,000
+the both the properties and interpretation which will very strongly
+kedua-dua ciri-ciri dan tafsiran yang sangat kuat akan
+
+00:50:10,000 --> 00:50:11,000
+parallel
+selari
+
+00:50:11,000 --> 00:50:14,000
+the kinds of developments along those lines that we did in the last night
+jenis perkembangan sepanjang garis yang kita lakukan pada malam terakhir
+
+00:50:14,000 --> 00:50:15,000
+thank you
+terima kasih
+

@@ -1,0 +1,2976 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+kandungan berikut adalah disediakan di bawah lesen Creative Commons
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+sokongan anda akan membantu MIT OpenCourseWare terus tawaran
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+sumber-sumber pendidikan yang berkualiti tinggi secara percuma
+
+00:00:10,000 --> 00:00:14,000
+to make a donation or view additional materials from hundreds of them IT
+untuk membuat sumbangan atau melihat bahan-bahan tambahan dari beratus-ratus daripada mereka IT
+
+00:00:14,000 --> 00:00:15,000
+courses
+kursus
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+melawat MIT OpenCourseWare pada 0 CW
+
+00:00:18,000 --> 00:00:23,000
+that MIT that EDU hard
+bahawa MIT yang EDU keras
+
+00:00:23,000 --> 00:00:29,000
+the
+yang
+
+00:00:29,000 --> 00:00:31,000
+the
+yang
+
+00:00:31,000 --> 00:00:34,000
+the
+yang
+
+00:00:34,000 --> 00:00:39,000
+the in
+dalam
+
+00:00:39,000 --> 00:00:45,000
+the norm
+norma
+
+00:00:45,000 --> 00:00:50,000
+are
+adalah
+
+00:00:50,000 --> 00:00:56,000
+the in the last two lectures
+di kedua-dua ceramah lepas
+
+00:00:56,000 --> 00:01:01,000
+and we saw how periodic not periodic signals could be represented as linear
+dan kita melihat bagaimana isyarat tidak berkala berkala boleh diwakili sebagai linear
+
+00:01:01,000 --> 00:01:03,000
+combinations a complex exponentials
+Kombinasi yang exponentials kompleks
+
+00:01:03,000 --> 00:01:08,000
+and this led to the Fourier series representation
+dan ini membawa kepada perwakilan siri Fourier
+
+00:01:08,000 --> 00:01:12,000
+in the periodic case and it led to the Fourier transform
+dalam kes berkala dan ia membawa kepada Fourier mengubah
+
+00:01:12,000 --> 00:01:15,000
+representation in the a periodic case and and then in fact
+perwakilan dalam kes berkala dan dan kemudian sebenarnya
+
+00:01:15,000 --> 00:01:20,000
+what we did was to incorporate the 4e a series
+apa yang kita lakukan ialah untuk menggabungkan 4e siri yang
+
+00:01:20,000 --> 00:01:26,000
+within the framework of the Fourier transform what I'd like to do in today's
+dalam rangka Fourier apa yang saya ingin lakukan di hari ini
+
+00:01:26,000 --> 00:01:28,000
+lecture is
+kuliah yang
+
+00:01:28,000 --> 00:01:31,000
+look at the 4-yard transform more closely
+melihat 4 meter mengubah lebih rapat
+
+00:01:31,000 --> 00:01:34,000
+in particular with regard to so this property's
+khususnya dengan mengambil kira supaya hartanah ini
+
+00:01:34,000 --> 00:01:37,000
+so let me begin by reminding you
+jadi biarlah saya mulakan dengan mengingatkan anda
+
+00:01:37,000 --> 00:01:41,000
+love the analysis and synthesis equations for the four th
+suka analisis dan sintesis persamaan untuk ke-empat
+
+00:01:41,000 --> 00:01:44,000
+transform and as I summarize them here
+mengubah dan seperti yang saya ringkaskan di sini
+
+00:01:44,000 --> 00:01:47,000
+the synthesis equation being a
+persamaan sintesis menjadi
+
+00:01:47,000 --> 00:01:50,000
+an equation that tells us how to build the
+persamaan yang memberitahu kita bagaimana untuk membina
+
+00:01:50,000 --> 00:01:54,000
+time function outta in essence a linear combination
+fungsi masa Segi pada dasarnya gabungan linear
+
+00:01:54,000 --> 00:01:59,000
+a complex exponentials and the analysis equation
+yang exponentials kompleks dan persamaan analisis
+
+00:01:59,000 --> 00:02:04,000
+telling us how to get the amplitudes love those complex exponentials
+memberitahu kita bagaimana untuk amplitud suka kepada exponentials kompleks
+
+00:02:04,000 --> 00:02:07,000
+from the Associated time function
+daripada fungsi masa yang bersekutu
+
+00:02:07,000 --> 00:02:10,000
+so essentially in the decomposition
+jadi pada dasarnya dalam penguraian
+
+00:02:10,000 --> 00:02:15,000
+affect safety as a linear combination of complex exponentials
+menjejaskan keselamatan sebagai gabungan linear exponentials kompleks
+
+00:02:15,000 --> 00:02:18,000
+the complex amplitudes if those are in effect
+amplitud kompleks jika mereka berada di kesan
+
+00:02:18,000 --> 00:02:21,000
+the 48 transform scaled by
+48 mengubah skala oleh
+
+00:02:21,000 --> 00:02:24,000
+the differential and scaled by one over two-part
+pembezaan dan diskalakan oleh satu lebih dua bahagian
+
+00:02:24,000 --> 00:02:28,000
+now as
+sekarang kerana
+
+00:02:28,000 --> 00:02:32,000
+I indicated last time the 48 transform
+Saya telah menyatakan masa lalu 48 mengubah
+
+00:02:32,000 --> 00:02:35,000
+is a complex function of frequency in
+adalah fungsi kompleks kekerapan dalam
+
+00:02:35,000 --> 00:02:39,000
+and in particular the complex function of frequency
+dan khususnya fungsi kompleks kekerapan
+
+00:02:39,000 --> 00:02:43,000
+has an important and very useful cemetery property
+mempunyai hartanah tanah perkuburan penting dan sangat berguna
+
+00:02:43,000 --> 00:02:47,000
+the symmetry love the Fourier transform
+simetri suka Fourier
+
+00:02:47,000 --> 00:02:50,000
+when X if T is real is
+apabila X jika T adalah benar
+
+00:02:50,000 --> 00:02:54,000
+what is referred to as conjugate symmetric in other words if we take the
+apa yang disebut sebagai konjugat simetri dalam erti kata lain jika kita mengambil
+
+00:02:54,000 --> 00:02:55,000
+complex
+kompleks
+
+00:02:55,000 --> 00:02:59,000
+function after Omega and and its complex conjugate
+fungsi selepas Omega dan dan konjugat kompleks
+
+00:02:59,000 --> 00:03:02,000
+that's equivalent to replacing Omega
+yang bersamaan dengan menggantikan Omega
+
+00:03:02,000 --> 00:03:06,000
+by minus Omega and a consequence if that
+oleh Omega tolak dan akibat jika itu
+
+00:03:06,000 --> 00:03:12,000
+if we think interns love the real party the Fourier transform
+jika kita berfikir intern suka parti sebenar Fourier
+
+00:03:12,000 --> 00:03:16,000
+the real part is and even function of frequency
+bahagian nyata dan juga adalah fungsi frekuensi
+
+00:03:16,000 --> 00:03:20,000
+and the magnet to is an even function of frequency
+dan magnet untuk adalah juga fungsi frekuensi
+
+00:03:20,000 --> 00:03:24,000
+whereas the imaginary part is an
+manakala bahagian khayalan adalah
+
+00:03:24,000 --> 00:03:28,000
+odd function of frequency and the phase angle
+fungsi ganjil kekerapan dan sudut fasa
+
+00:03:28,000 --> 00:03:31,000
+is an odd function of frequency so
+adalah fungsi ganjil frekuensi begitu
+
+00:03:31,000 --> 00:03:36,000
+we have this symmetry relationship that for except the real
+kami mempunyai hubungan simetri ini bahawa untuk kecuali sebenar
+
+00:03:36,000 --> 00:03:40,000
+if we think I've either the real part or the magnitude of the Fourier transform
+jika kita berfikir saya telah sama ada bahagian nyata atau magnitud Fourier
+
+00:03:40,000 --> 00:03:44,000
+its even symmetric and the imaginary part
+sebahagian juga simetri dan khayalan yang
+
+00:03:44,000 --> 00:03:48,000
+or the phase angle either one it is
+atau sudut fasa sama ada ia adalah satu
+
+00:03:48,000 --> 00:03:52,000
+fought symmetric in other words if we flip it we multiply by a minus sign
+simetri berjuang dalam erti kata lain jika kita flip ia kita darab dengan tanda tolak
+
+00:03:52,000 --> 00:03:55,000
+let's didn't look at an example
+mari kita tidak melihat contoh
+
+00:03:55,000 --> 00:03:59,000
+in the context love an example that we worked last time
+dalam konteks cinta satu contoh yang kita bekerja masa lalu
+
+00:03:59,000 --> 00:04:03,000
+for the Fourier transform we took
+untuk Fourier kami mengambil
+
+00:04:03,000 --> 00:04:06,000
+the case both a real exponential
+kes kedua-dua eksponen sebenar
+
+00:04:06,000 --> 00:04:10,000
+love the form eat to the -80 times this step
+suka bentuk yang makan untuk masa -80 langkah ini
+
+00:04:10,000 --> 00:04:14,000
+and the 48 transform as
+dan 48 sebagai mengubah
+
+00:04:14,000 --> 00:04:19,000
+we found was other algebraic form one over a plus J Omega
+kita dapati ialah bentuk algebra lain berbanding dengan tambah J Omega
+
+00:04:19,000 --> 00:04:24,000
+and incidently the 48 transform into grow only converged
+dan kebetulan 48 bertukar menjadi berkembang hanya tertumpu
+
+00:04:24,000 --> 00:04:27,000
+for a greater than 0 in other words
+untuk yang lebih besar daripada 0 dalam erti kata lain
+
+00:04:27,000 --> 00:04:32,000
+for this exponential became and I illustrated
+untuk eksponen ini menjadi dan saya digambarkan
+
+00:04:32,000 --> 00:04:36,000
+the magnitude and angle and what we see is that
+magnitud dan sudut dan apa yang kita lihat ialah
+
+00:04:36,000 --> 00:04:39,000
+you the minus 8c is a real
+anda 8c tolak adalah benar yang
+
+00:04:39,000 --> 00:04:42,000
+time function therefore its magnitude
+fungsi masa itu diterjemahkan kepada
+
+00:04:42,000 --> 00:04:46,000
+should be an even function of frequency and indeed it is
+harus menjadi walaupun fungsi frekuensi dan sememangnya ia adalah
+
+00:04:46,000 --> 00:04:49,000
+and its phase angle shown below
+dan sudut fasa yang ditunjukkan di bawah
+
+00:04:49,000 --> 00:04:54,000
+is and odd function of frequency
+adalah dan fungsi ganjil kekerapan
+
+00:04:54,000 --> 00:04:57,000
+so in fact in although
+jadi sebenarnya dalam walaupun
+
+00:04:57,000 --> 00:05:00,000
+I stressed last time that
+Saya menekankan masa lalu bahawa
+
+00:05:00,000 --> 00:05:05,000
+the complex exponentials required to build the time function
+yang exponentials kompleks diperlukan untuk membina fungsi masa yang
+
+00:05:05,000 --> 00:05:10,000
+require exponentials both positive and negative frequencies
+memerlukan exponentials kedua-dua positif dan negatif frekuensi
+
+00:05:10,000 --> 00:05:13,000
+for except the real what we see is that
+untuk kecuali sebenar apa yang kita lihat ialah
+
+00:05:13,000 --> 00:05:17,000
+because if the symmetry properties either for the real and imaginary or
+kerana jika sifat-sifat simetri sama ada bagi nyata dan khayalan atau
+
+00:05:17,000 --> 00:05:18,000
+magnitude and angle
+magnitud dan sudut
+
+00:05:18,000 --> 00:05:24,000
+we can specify a before you transform for let's say only positive frequencies
+kita boleh menentukan sebelum anda mengubah untuk katakan frekuensi hanya positif
+
+00:05:24,000 --> 00:05:27,000
+and asymmetry then implies are tells us
+dan asimetri maka membayangkan Adakah memberitahu kita
+
+00:05:27,000 --> 00:05:34,000
+what the Fourier transform then will be for the negative frequencies
+apa Fourier maka akan bagi frekuensi negatif
+
+00:05:34,000 --> 00:05:37,000
+okay now this same example the cause
+okay sekarang ini contoh sama punca
+
+00:05:37,000 --> 00:05:40,000
+the decaying exponential demonstrates
+eksponen yang mereput menunjukkan
+
+00:05:40,000 --> 00:05:43,000
+another important and often useful
+satu lagi penting dan sering berguna
+
+00:05:43,000 --> 00:05:47,000
+property the Fourier transform
+harta Fourier
+
+00:05:47,000 --> 00:05:51,000
+specifically let's rewrite algebraically this example
+khusus mari kita menulis semula secara algebra contoh ini
+
+00:05:51,000 --> 00:05:55,000
+as I indicate here so we have
+seperti yang saya nyatakan di sini supaya kita mempunyai
+
+00:05:55,000 --> 00:06:01,000
+again the exponential was 48 transformers one over a plus J Omega
+lagi eksponen adalah 48 transformer satu dari satu ditambah J Omega
+
+00:06:01,000 --> 00:06:06,000
+and if I A just simply divide numerator and denominator by a
+dan jika IA hanya sekadar membahagi pengangka dan penyebut dengan satu
+
+00:06:06,000 --> 00:06:10,000
+I can rewrite it in the form shown here
+Saya boleh menulis semula dalam bentuk yang ditunjukkan di sini
+
+00:06:10,000 --> 00:06:14,000
+and what we notice is dead in the time function
+dan apa yang kita lihat telah mati dalam fungsi masa yang
+
+00:06:14,000 --> 00:06:18,000
+we have a term of the form eight times TV
+kita mempunyai tempoh borang yang lapan kali TV
+
+00:06:18,000 --> 00:06:22,000
+and in the frequency function we have a term for the form Omega
+dan dalam fungsi frekuensi yang kita ada istilah untuk bentuk Omega
+
+00:06:22,000 --> 00:06:25,000
+divided by a or
+dibahagikan dengan atau
+
+00:06:25,000 --> 00:06:28,000
+equivalent Lee we can't think all the
+bersamaan Lee kita tidak boleh berfikir semua
+
+00:06:28,000 --> 00:06:32,000
+time function which I show here
+fungsi semasa yang mana saya menunjukkan di sini
+
+00:06:32,000 --> 00:06:36,000
+and as the pram enter a gets smaller
+dan sebagai kereta sorong masukkan semakin kecil
+
+00:06:36,000 --> 00:06:41,000
+the exponential gets spread out in time
+eksponen yang tersebar keluar dalam masa
+
+00:06:41,000 --> 00:06:44,000
+whereas s04e08 transform
+manakala s04e08 mengubah
+
+00:06:44,000 --> 00:06:49,000
+or the magnitude of its Fourier transform has the inverse property
+atau magnitud Fourier mengubah mempunyai harta songsang
+
+00:06:49,000 --> 00:06:52,000
+that as a get smaller in fact
+bahawa sebagai mendapatkan lebih kecil sebenarnya
+
+00:06:52,000 --> 00:06:56,000
+this scales down in frequency
+ini skala turun dalam frekuensi
+
+00:06:56,000 --> 00:06:59,000
+well this is a general property love
+baik ini adalah cinta harta umum
+
+00:06:59,000 --> 00:07:02,000
+the Fourier transform namely the fact
+Fourier iaitu hakikat
+
+00:07:02,000 --> 00:07:06,000
+that a a linear scaling a time
+yang linear satu skala masa yang
+
+00:07:06,000 --> 00:07:10,000
+generates the infers linear scaling a frequency
+menjana linear menyimpulkan yang menampal frekuensi yang
+
+00:07:10,000 --> 00:07:14,000
+and the general statement love this time frequency scaling is what
+dan cinta pernyataan umum kali ini kekerapan bersisik adalah apa yang
+
+00:07:14,000 --> 00:07:18,000
+I show at the top above the transparency namely the equation
+Saya menunjukkan di bahagian atas di atas ketelusan iaitu persamaan
+
+00:07:18,000 --> 00:07:22,000
+that if we scale the time function in time
+bahawa jika kami meningkatkan fungsi masa dalam masa
+
+00:07:22,000 --> 00:07:28,000
+then we apply and infers scaling a frequency
+maka kita dikenakan dan menyimpulkan skala frekuensi yang
+
+00:07:28,000 --> 00:07:31,000
+now her this in fact is probably a result
+kini beliau ini sebenarnya mungkin Akibatnya
+
+00:07:31,000 --> 00:07:35,000
+that you're already possibly familiar with in
+bahawa anda sudah mungkin biasa dengan dalam
+
+00:07:35,000 --> 00:07:39,000
+somewhat of a different context essentially you can think of this
+agak konteks yang berbeza pada dasarnya anda boleh memikirkan ini
+
+00:07:39,000 --> 00:07:44,000
+as an example poor generalization rather
+sebagai contoh generalisasi miskin dan bukan
+
+00:07:44,000 --> 00:07:47,000
+up the notion that if let's say I A
+sehingga tanggapan bahawa jika katakan saya A
+
+00:07:47,000 --> 00:07:53,000
+had a signal that was recorded on a tape player
+mempunyai isyarat yang dicatatkan pada pemain pita
+
+00:07:53,000 --> 00:07:57,000
+and if I play the tape back and let's say twice the speed which means that I'm
+dan jika saya bermain pita belakang dan katakan dua kali kelajuan yang bermaksud bahawa saya
+
+00:07:57,000 --> 00:07:59,000
+compressing the time axis
+memampatkan paksi masa
+
+00:07:59,000 --> 00:08:04,000
+linearly by a factor of two then in fact what happens is that
+linear dengan faktor dua maka sebenarnya apa yang berlaku ialah
+
+00:08:04,000 --> 00:08:08,000
+the frequencies that we observe get pushed up by a factor of two
+frekuensi yang kita memerhatikan mendapatkan ditolak oleh faktor dua
+
+00:08:08,000 --> 00:08:12,000
+and effect let me illustrate that
+dan kesan biarlah saya menggambarkan bahawa
+
+00:08:12,000 --> 00:08:15,000
+I have here a glockenspiel
+Saya ada di sini Glockenspiel yang
+
+00:08:15,000 --> 00:08:20,000
+and anyone who loves a parade certainly knows what I each
+dan sesiapa sahaja yang suka perarakan pasti tahu apa yang saya setiap
+
+00:08:20,000 --> 00:08:23,000
+blockage feel as and
+tersumbat berasa seolah dan
+
+00:08:23,000 --> 00:08:27,000
+this particular glockenspiel has
+Glockenspiel khusus ini mempunyai
+
+00:08:27,000 --> 00:08:32,000
+3 eighties separated each by an active there's a middle way
+3 tahun lapan puluhan dipisahkan setiap satu dengan yang aktif ada jalan tengah
+
+00:08:32,000 --> 00:08:38,000
+a high a us and a low a
+a kami yang tinggi dan yang rendah
+
+00:08:38,000 --> 00:08:42,000
+and what I've done is to record
+dan apa yang saya lakukan adalah untuk merekodkan
+
+00:08:42,000 --> 00:08:46,000
+the middle a on a tape
+tengah-tengah pada pita
+
+00:08:46,000 --> 00:08:51,000
+at seven and a half inches per second and
+pada tujuh setengah inci sesaat dan
+
+00:08:51,000 --> 00:08:54,000
+what I'd like to demonstrate is that as
+apa yang saya suka untuk menunjukkan adalah bahawa sebagai
+
+00:08:54,000 --> 00:08:58,000
+we play that back either a cloister half-speed
+kita bermain yang kembali sama ada biara separuh kelajuan
+
+00:08:58,000 --> 00:09:03,000
+the effective note gets moved down or up by a doctor
+nota berkesan mendapat berpindah bawah atau ke atas oleh doktor
+
+00:09:03,000 --> 00:09:06,000
+so let me first play the note at
+jadi biarlah saya pertama bermain nota tersebut pada
+
+00:09:06,000 --> 00:09:09,000
+the speed at which was recorded and so what we'll hear
+kelajuan di mana dicatatkan dan sebagainya apa yang kita akan mendengar
+
+00:09:09,000 --> 00:09:13,000
+is the middle a as i've recorded it and let me just start
+adalah tengah-tengah kerana saya telah merakamkannya dan biarlah saya hanya mula
+
+00:09:13,000 --> 00:09:20,000
+the tape player
+Pemain pita
+
+00:09:26,000 --> 00:09:29,000
+okay let me stop it and hopefully what you heard is the
+okay biarlah saya berhenti dan diharapkan apa yang anda dengar adalah
+
+00:09:29,000 --> 00:09:32,000
+same note from the tape recorder as
+nota sama dari perakam pita sebagai
+
+00:09:32,000 --> 00:09:36,000
+the note that I played on the glockenspiel okay well now
+nota yang saya bermain di Glockenspiel okay baik sekarang
+
+00:09:36,000 --> 00:09:40,000
+a rewind the tape and we go back to the beginning
+satu gulung semula pita dan kita kembali ke permulaan
+
+00:09:40,000 --> 00:09:44,000
+love that portion and
+suka bahagian itu dan
+
+00:09:44,000 --> 00:09:48,000
+now if I change the tapes the to
+sekarang jika saya menukar pita untuk
+
+00:09:48,000 --> 00:09:51,000
+half the speed so from seven and a half inches per second
+separuh kelajuan demikian daripada tujuh setengah inci sesaat
+
+00:09:51,000 --> 00:09:54,000
+a change the tape speed 233 quarter
+yang menukar kelajuan pita 233 suku
+
+00:09:54,000 --> 00:09:58,000
+inches per second and now
+inci sesaat dan kini
+
+00:09:58,000 --> 00:10:02,000
+when I play the tape back because effect because
+apabila saya bermain pita kembali kerana kesan kerana
+
+00:10:02,000 --> 00:10:07,000
+love the inverse relationship between time and frequency scaling we're now
+suka hubungan songsang antara masa dan kekerapan bersisik kami kini
+
+00:10:07,000 --> 00:10:11,000
+scaling in time by stretching out we would expect the frequencies to be
+mendaki dalam masa dengan meregangkan keluar kita inginkan frekuensi menjadi
+
+00:10:11,000 --> 00:10:12,000
+lowered
+diturunkan
+
+00:10:12,000 --> 00:10:15,000
+by a factor of two we should now expect the
+oleh faktor dua kami menjangka yang
+
+00:10:15,000 --> 00:10:19,000
+taped no to be an octave lower
+dirakam tidak menjadi oktaf lebih rendah
+
+00:10:19,000 --> 00:10:26,000
+matching the slower a so let's just play that okay let me stop it
+sepadan dengan perlahan supaya mari kita hanya bermain bahawa okay biarlah saya berhenti
+
+00:10:40,000 --> 00:10:44,000
+and again will rewind the tape
+dan sekali lagi akan gulung semula pita yang
+
+00:10:44,000 --> 00:10:47,000
+go back to
+kembali ke
+
+00:10:47,000 --> 00:10:50,000
+the beginning and now will play this at
+permulaan dan akan menentang ini pada
+
+00:10:50,000 --> 00:10:53,000
+twice the speed so I change from three and three-quarters
+dua kali kelajuan jadi saya berubah dari tiga dan tiga suku
+
+00:10:53,000 --> 00:10:59,000
+to 15 inches per second and now and I play it we would expect that
+15 inci sesaat dan sekarang dan saya bermain kita akan menjangkakan bahawa
+
+00:10:59,000 --> 00:11:06,000
+to match the upper no and let's just do that Ste
+untuk dipadankan dengan tidak atas dan mari kita hanya melakukannya Ste
+
+00:11:08,000 --> 00:11:10,000
+us
+
+
+00:11:10,000 --> 00:11:14,000
+us okay well
+kami okay juga
+
+00:11:14,000 --> 00:11:18,000
+although thats a result that intuitively probably
+walaupun thats hasil yang intuitif mungkin
+
+00:11:18,000 --> 00:11:22,000
+makes considerable sense in fact what that is
+masuk akal besar sebenarnya apa yang
+
+00:11:22,000 --> 00:11:26,000
+is an illustration love the inverse relationship between
+adalah contoh suka hubungan yang songsang antara
+
+00:11:26,000 --> 00:11:31,000
+time scaling frequency scaling and also by the way it was finally my opportunity
+masa mendaki kekerapan bersisik dan juga dengan cara itu ia akhirnya peluang saya
+
+00:11:31,000 --> 00:11:37,000
+to play the glockenspiel on television okayed now
+bermain Glockenspiel di televisyen okayed kini
+
+00:11:37,000 --> 00:11:40,000
+in in addition their is another
+dalam di samping mereka adalah satu lagi
+
+00:11:40,000 --> 00:11:44,000
+very important relationship between the time and frequency domains
+hubungan yang sangat penting antara masa dan domain frekuensi
+
+00:11:44,000 --> 00:11:47,000
+namely what is referred to as a
+iaitu apa yang disebut sebagai
+
+00:11:47,000 --> 00:11:51,000
+duality relationship and
+hubungan berbelah dan
+
+00:11:51,000 --> 00:11:54,000
+the duality relationship between time and frequency
+hubungan berbelah antara masa dan kekerapan
+
+00:11:54,000 --> 00:12:00,000
+falls out more less directly from
+gugur lebih kurang terus dari
+
+00:12:00,000 --> 00:12:05,000
+the equations the analysis and synthesis equations in particular if we look at
+persamaan analisis dan sintesis persamaan khususnya jika kita melihat
+
+00:12:05,000 --> 00:12:05,000
+the
+yang
+
+00:12:05,000 --> 00:12:09,000
+synthesis equation which I repeat here
+persamaan sintesis yang saya ulangi di sini
+
+00:12:09,000 --> 00:12:13,000
+and the analysis equation which I repeat below it
+dan persamaan analisis yang saya ulangi di bawahnya
+
+00:12:13,000 --> 00:12:17,000
+what we observe is dead in fact
+apa yang kita memerhatikan mati sebenarnya
+
+00:12:17,000 --> 00:12:21,000
+these equations are basically identical
+persamaan ini pada dasarnya sama
+
+00:12:21,000 --> 00:12:24,000
+except for the fact that in the top
+kecuali fakta bahawa di bahagian atas
+
+00:12:24,000 --> 00:12:28,000
+integral we have things as a function of Omega in the bottom integral as a
+penting kita ada perkara yang sebagai fungsi Omega dalam kamiran bahagian bawah sebagai
+
+00:12:28,000 --> 00:12:29,000
+function of T
+fungsi T
+
+00:12:29,000 --> 00:12:33,000
+and there's a factor of 10 ver tu Pai and by the way a minus sign
+dan ada faktor 10 ver tu Pai dan dengan cara itu tanda tolak
+
+00:12:33,000 --> 00:12:38,000
+well you can look at the algebra
+juga anda boleh melihat algebra
+
+00:12:38,000 --> 00:12:42,000
+more carefully at your leisure but especially with this says
+lebih berhati-hati pada masa lapang anda tetapi terutama dengan ini mengatakan
+
+00:12:42,000 --> 00:12:46,000
+is that if excessive Omega is
+adalah bahawa jika berlebihan Omega adalah
+
+00:12:46,000 --> 00:12:50,000
+the Fourier transform over type function exit see
+Fourier lebih jenis fungsi keluar melihat
+
+00:12:50,000 --> 00:12:54,000
+then in fact except Amy
+maka sebenarnya kecuali Amy
+
+00:12:54,000 --> 00:13:00,000
+is very much like the Fourier transform affective Omega
+adalah sangat seperti Fourier mengubah afektif Omega
+
+00:13:00,000 --> 00:13:03,000
+in fact it's the Fourier transform attacks have minus Omega
+sebenarnya ia adalah Fourier mengubah serangan yang tolak Omega
+
+00:13:03,000 --> 00:13:07,000
+to account for this minus sign and by the way there's just an additional
+untuk mengambil kira tanda tolak ini dan dengan cara yang ada hanya tambahan
+
+00:13:07,000 --> 00:13:08,000
+factor
+faktor
+
+00:13:08,000 --> 00:13:12,000
+one over 25 so the duality relationship which
+salah satu lebih 25 jadi hubungan dualiti yang
+
+00:13:12,000 --> 00:13:16,000
+follows from these two equations in fact
+berikut daripada kedua-dua persamaan sebenarnya
+
+00:13:16,000 --> 00:13:19,000
+says that if x50
+mengatakan bahawa jika X50
+
+00:13:19,000 --> 00:13:23,000
+an ex vivo maker are a4e a transformed pair
+ex vivo pembuat adalah a4e sepasang berubah
+
+00:13:23,000 --> 00:13:26,000
+if little accent capital XR Fourier transform pair
+jika modal loghat sedikit XR pasangan jelmaan Fourier
+
+00:13:26,000 --> 00:13:31,000
+then capital lacks in fact has a $4 EA transform
+maka modal kurang sebenarnya mempunyai $ 4 EA mengubah
+
+00:13:31,000 --> 00:13:36,000
+which is proportional a little lax turned around well
+yang berkadar yang longgar sedikit pulih dengan baik
+
+00:13:36,000 --> 00:13:41,000
+this to outdo ality in the continuous time Fourier transform
+ini untuk mengalahkan sahsiah dalam masa yang berterusan Fourier mengubah
+
+00:13:41,000 --> 00:13:45,000
+is very important it's very useful it by the way is not
+adalah amat penting ia sangat berguna dengan cara yang tidak
+
+00:13:45,000 --> 00:13:52,000
+duality that surface in a forty a series because as you recall the 48 series
+dualiti yang muncul dalam empat puluh satu siri kerana anda masih ingat siri 48
+
+00:13:52,000 --> 00:13:55,000
+begins with a continuous-time function
+bermula dengan fungsi selanjar masa
+
+00:13:55,000 --> 00:13:59,000
+and in the frequency domain generates a sequence
+dan dalam domain frekuensi menjana urutan
+
+00:13:59,000 --> 00:14:03,000
+which with just naturally have the proper have
+yang secara semula jadi dengan hanya mempunyai mempunyai yang betul
+
+00:14:03,000 --> 00:14:06,000
+problems associated with it if we attempted to
+masalah yang berkaitan dengannya jika kita cuba untuk
+
+00:14:06,000 --> 00:14:09,000
+interpreted to ality and we'll see also:
+diterjemahkan sahsiah dan kami akan lihat juga:
+
+00:14:09,000 --> 00:14:13,000
+that in a discrete-time case one of the important differences between
+bahawa dalam kes diskret masa salah satu perbezaan penting antara
+
+00:14:13,000 --> 00:14:16,000
+continuous-time and discrete-time Fourier transforms
+berterusan masa dan jelmaan Fourier diskret masa
+
+00:14:16,000 --> 00:14:20,000
+is the fact that in continuous-time we have to our the
+adalah hakikat bahawa dalam berterusan masa kita perlu kepada kami
+
+00:14:20,000 --> 00:14:25,000
+in discrete-time for then the discrete-time Fourier transform we don't
+dalam diskret masa untuk maka Fourier diskret masa mengubah kita tidak
+
+00:14:25,000 --> 00:14:27,000
+well
+baik
+
+00:14:27,000 --> 00:14:32,000
+let's indicate illustrate this with an example
+mari kita menunjukkan menggambarkan ini dengan satu contoh
+
+00:14:32,000 --> 00:14:35,000
+in here are in fact two examples
+di sini sebenarnya adalah dua contoh
+
+00:14:35,000 --> 00:14:39,000
+a Fourier transform pairs taken from examples in the text
+Fourier mengubah pasangan yang diambil dari contoh-contoh dalam teks
+
+00:14:39,000 --> 00:14:43,000
+to the top one being example
+dengan yang atas menjadi contoh
+
+00:14:43,000 --> 00:14:47,000
+four-point 11 from the tax and it's a time for action
+empat mata 11 daripada cukai dan ia merupakan masa untuk tindakan
+
+00:14:47,000 --> 00:14:51,000
+which is a sin 0 X over X type a function
+yang merupakan satu dosa 0 X lebih X menaip fungsi
+
+00:14:51,000 --> 00:14:55,000
+and its Fourier transform
+dan Fourier mengubah
+
+00:14:55,000 --> 00:14:58,000
+corresponds to a
+sepadan dengan
+
+00:14:58,000 --> 00:15:04,000
+rectangular shape in the frequency domain there's also
+bentuk segi empat tepat dalam domain frekuensi ada juga
+
+00:15:04,000 --> 00:15:08,000
+another example in the text the example the preseason this one
+satu lagi contoh dalam teks contoh preseason satu ini
+
+00:15:08,000 --> 00:15:13,000
+which is example four-point 10 and an example four point 10
+yang merupakan contoh empat mata 10 dan satu contoh empat titik 10
+
+00:15:13,000 --> 00:15:16,000
+we begin with a rectangle
+kita bermula dengan segi empat tepat
+
+00:15:16,000 --> 00:15:20,000
+and its Fourier transform is love the form
+dan Fourier mengubah cinta borang yang
+
+00:15:20,000 --> 00:15:24,000
+all a sin x over X function
+semua x dosa alih fungsi X
+
+00:15:24,000 --> 00:15:27,000
+so in fact if we look at these to
+jadi sebenarnya jika kita melihat ini untuk
+
+00:15:27,000 --> 00:15:30,000
+examples together what we see is
+contoh bersama-sama apa yang kita lihat ialah
+
+00:15:30,000 --> 00:15:34,000
+the duality very evident in other words
+dualiti yang sangat jelas dalam erti kata lain
+
+00:15:34,000 --> 00:15:37,000
+if we take this time function and
+jika kita mengambil fungsi masa ini dan
+
+00:15:37,000 --> 00:15:41,000
+instead think i've a frequency function that has the same form
+sebaliknya rasa saya telah fungsi frekuensi yang mempunyai bentuk yang sama
+
+00:15:41,000 --> 00:15:45,000
+then we simply interchange the rolls a time-frequency
+maka kita hanya bertukar ganti dalam daftar masa frekuensi
+
+00:15:45,000 --> 00:15:49,000
+in the other domains so the fact that these to correspond
+dalam domain lain supaya hakikat bahawa ini untuk sesuai
+
+00:15:49,000 --> 00:15:52,000
+means that these two cars find
+bermakna kedua-dua kereta mencari
+
+00:15:52,000 --> 00:15:56,000
+course and in this particular example
+kursus dan dalam contoh ini tertentu
+
+00:15:56,000 --> 00:16:01,000
+we because it the fact that we picked a symmetric function even function
+kami kerana ia hakikat bahawa kami memilih fungsi simetri walaupun fungsi
+
+00:16:01,000 --> 00:16:06,000
+in fact the additional twist love the time axis being reversed didn't show up
+sebenarnya twist tambahan suka masa paksi yang dibalikkan tidak muncul
+
+00:16:06,000 --> 00:16:10,000
+in her in duality with this example
+dalam keduaan dalam beliau dengan contoh ini
+
+00:16:10,000 --> 00:16:13,000
+now one thing he says of course is that essentially
+kini satu perkara yang dia kata sudah tentu adalah yang pada asasnya
+
+00:16:13,000 --> 00:16:17,000
+anytime you've calculated
+bila-bila masa anda dikira
+
+00:16:17,000 --> 00:16:20,000
+the 48 transform a one-time function
+48 mengubah fungsi satu masa
+
+00:16:20,000 --> 00:16:24,000
+then you actually calculate the Fourier transform
+maka anda sebenarnya mengira Fourier mengubah
+
+00:16:24,000 --> 00:16:27,000
+to type functions another one being
+dengan fungsi antara satu sama lain menjadi menaip
+
+00:16:27,000 --> 00:16:32,000
+the dual example to the one that you just calculated
+contoh berduaan satu yang anda hanya dikira
+
+00:16:32,000 --> 00:16:35,000
+now also somewhat related to do our the
+kini juga agak berkaitan untuk melakukan perkara yang kita
+
+00:16:35,000 --> 00:16:39,000
+is what is referred to as parce balls
+adalah apa yang disebut sebagai bola parce
+
+00:16:39,000 --> 00:16:43,000
+relation for the continuous-time Fourier transform
+berhubung untuk Fourier berterusan masa mengubah
+
+00:16:43,000 --> 00:16:47,000
+and essentially what parts are false relationship says
+dan pada dasarnya apa yang bahagian-bahagian yang hubungan palsu mengatakan
+
+00:16:47,000 --> 00:16:50,000
+is that as kind of a a summary other
+ialah sebagai jenis ringkasan yang lain
+
+00:16:50,000 --> 00:16:54,000
+it says dead the energy
+ia berkata mati tenaga
+
+00:16:54,000 --> 00:16:57,000
+in a time function and the energy
+dalam fungsi masa dan tenaga
+
+00:16:57,000 --> 00:17:01,000
+in its Fourier transform are proportional the proportionality factor
+dalam Fourier Transform adalah berkadar faktor proporsionalitas
+
+00:17:01,000 --> 00:17:03,000
+being a factor of two pi
+menjadi faktor dua pi
+
+00:17:03,000 --> 00:17:08,000
+it well that summarized here what's meant by the energy
+dengan baik yang diringkaskan di sini apa yang dimaksudkan dengan tenaga
+
+00:17:08,000 --> 00:17:12,000
+is course the ago the magnitude squared effect City
+adalah kursus yang lalu magnitud kuasa dua kesan City
+
+00:17:12,000 --> 00:17:16,000
+and the statement apart the balls relation and is dead
+dan pernyataan itu selain berhubung bola dan mati
+
+00:17:16,000 --> 00:17:20,000
+that in a brawl the energy and accept T
+bahawa dalam pergaduhan tenaga dan menerima T
+
+00:17:20,000 --> 00:17:23,000
+is proportional to this integral which is the energy
+adalah berkadar penting ini yang tenaga
+
+00:17:23,000 --> 00:17:26,000
+indexable Megan now
+indexable Megan kini
+
+00:17:26,000 --> 00:17:31,000
+although we've incorporated the 4e a series
+walaupun kami telah diperbadankan 4e siri yang
+
+00:17:31,000 --> 00:17:36,000
+within a framework for the Fourier transform parcels relation
+dalam rangka kerja untuk Fourier mengubah bungkusan berhubung
+
+00:17:36,000 --> 00:17:39,000
+needs to be modified slightly for
+perlu diubahsuai sedikit untuk
+
+00:17:39,000 --> 00:17:43,000
+for a series because the fact that periodic signal
+untuk siri kerana hakikat bahawa isyarat berkala
+
+00:17:43,000 --> 00:17:46,000
+has an infinite amount of energy and its and essentially
+mempunyai jumlah terbatas tenaga dan dan asasnya
+
+00:17:46,000 --> 00:17:50,000
+that former parcels relationship for the periodic case would say
+bahawa bekas hubungan bungkusan untuk kes berkala akan berkata
+
+00:17:50,000 --> 00:17:53,000
+infinity equals infinity which isn't too useful
+infiniti sama infiniti yang tidak terlalu berguna
+
+00:17:53,000 --> 00:17:59,000
+however can be modified so that part's a false relationship for the periodic case
+bagaimanapun boleh diubah suai supaya bahagian itu adalah satu hubungan palsu untuk kes berkala
+
+00:17:59,000 --> 00:18:02,000
+says essentially that the energy E
+kata dasarnya bahawa tenaga E
+
+00:18:02,000 --> 00:18:07,000
+in one period other periodic time function
+dalam satu tempoh lain fungsi masa berkala
+
+00:18:07,000 --> 00:18:12,000
+in is proportional with this is the proportionality factor
+dalam adalah berkadar dengan ini adalah faktor proporsionalitas
+
+00:18:12,000 --> 00:18:15,000
+proportional to the sum %uh the magnitude squared
+berkadar dengan jumlah% uh magnitud kuasa dua
+
+00:18:15,000 --> 00:18:19,000
+up the coefficients in other words the energy in one period
+sehingga pekali dalam erti kata lain tenaga dalam satu tempoh
+
+00:18:19,000 --> 00:18:23,000
+is proportional to the energy in the sequence
+adalah berkadar dengan tenaga dalam urutan
+
+00:18:23,000 --> 00:18:29,000
+that represents the four EA series coefficients
+yang mewakili empat siri pekali EA
+
+00:18:29,000 --> 00:18:32,000
+now okay there are lots of other properties
+kini okay terdapat banyak harta-harta lain
+
+00:18:32,000 --> 00:18:37,000
+and there developed in the text in the study guide
+dan ada yang dibangunkan di dalam teks di dalam panduan kajian
+
+00:18:37,000 --> 00:18:42,000
+a number a properties that we want to make particular you so
+sebilangan yang sifat-sifat yang kita ingin tertentu anda supaya
+
+00:18:42,000 --> 00:18:45,000
+during this lecture and in later lectures
+semasa kuliah ini dan dalam kuliah kemudian
+
+00:18:45,000 --> 00:18:49,000
+are ones that I summarize here and
+adalah orang-orang yang saya ringkaskan di sini dan
+
+00:18:49,000 --> 00:18:52,000
+I won't demonstrate the proves but
+Saya tidak akan menunjukkan membuktikan tetapi
+
+00:18:52,000 --> 00:18:58,000
+a principally focus on some with the interpretation is the lecture goes on
+yang memberi tumpuan terutamanya pada beberapa dengan tafsiran adalah kuliah seterusnya
+
+00:18:58,000 --> 00:19:02,000
+well in the first property that I have listed here's what's referred to as the
+baik dalam hartanah pertama yang saya telah disenaraikan di sini apa yang disebut
+
+00:19:02,000 --> 00:19:04,000
+time shifting property
+harta masa beralih
+
+00:19:04,000 --> 00:19:09,000
+and the time shifting property says if I have a time function
+dan masa yang beralih harta berkata jika saya mempunyai fungsi masa
+
+00:19:09,000 --> 00:19:13,000
+with a Fourier transform mexico maker
+dengan Fourier mengubah pembuat mexico
+
+00:19:13,000 --> 00:19:17,000
+if I shift that time function in time
+jika saya beralih bahawa fungsi masa dalam masa
+
+00:19:17,000 --> 00:19:21,000
+dan that corresponds to multiplying
+dan yang sepadan dengan mendarabkan
+
+00:19:21,000 --> 00:19:24,000
+the 48 transformed by this factor
+48 diubah oleh faktor ini
+
+00:19:24,000 --> 00:19:29,000
+now as you examine this factor what you can see is that
+sekarang kerana anda memeriksa faktor ini apa yang anda boleh lihat ialah bahawa
+
+00:19:29,000 --> 00:19:32,000
+this factor has magnitude unity
+faktor ini mempunyai perpaduan magnitud
+
+00:19:32,000 --> 00:19:36,000
+and it has a phase which is linear with frequency
+dan ia mempunyai fasa yang linear dengan kekerapan
+
+00:19:36,000 --> 00:19:39,000
+and is slow %uh minus 20
+dan% perlahan uh tolak 20
+
+00:19:39,000 --> 00:19:42,000
+so a statement to remember that will come up
+jadi kenyataan untuk ingat bahawa akan datang
+
+00:19:42,000 --> 00:19:46,000
+many times throughout the cores
+banyak kali sepanjang teras
+
+00:19:46,000 --> 00:19:51,000
+is that a timeshare after a displacement in time
+ialah timeshare selepas anjakan dalam masa
+
+00:19:51,000 --> 00:19:55,000
+corresponds to linear phase
+sepadan dengan fasa linear
+
+00:19:55,000 --> 00:20:01,000
+or change in linear phase earlier change in phase and frequency
+atau perubahan dalam fasa linear perubahan awal dalam fasa dan kekerapan
+
+00:20:01,000 --> 00:20:05,000
+another property in and in fact a pair of properties
+harta yang lain di dalam dan sebenarnya sepasang hartanah
+
+00:20:05,000 --> 00:20:10,000
+that will make reference to as we turn our attention toward the end of this
+yang akan membuat rujukan kepada seperti yang kita mengubah perhatian kita ke arah akhir ini
+
+00:20:10,000 --> 00:20:11,000
+lecture to
+syarahan untuk
+
+00:20:11,000 --> 00:20:16,000
+solving differential equations using the Fourier transform
+penyelesaian persamaan pembezaan menggunakan Fourier mengubah
+
+00:20:16,000 --> 00:20:21,000
+is hit was referred to as the differentiation property
+terkena dirujuk sebagai harta perbezaan
+
+00:20:21,000 --> 00:20:26,000
+and its companion which is the integration property
+dan sahabat yang mana adalah harta integrasi
+
+00:20:26,000 --> 00:20:30,000
+the differentiation property says again if we have
+harta pembezaan mengatakan sekali lagi jika kita mempunyai
+
+00:20:30,000 --> 00:20:34,000
+a time function whose with Fourier transform mexico maker
+fungsi masa yang dengan Fourier mengubah pembuat mexico
+
+00:20:34,000 --> 00:20:39,000
+the Fourier transform up the time derivative that
+Fourier sehingga terbitan masa yang
+
+00:20:39,000 --> 00:20:44,000
+is in corresponds to multiplying the Fourier transform
+adalah di sepadan dengan mendarabkan Fourier mengubah
+
+00:20:44,000 --> 00:20:47,000
+by a linear function of frequency so
+oleh fungsi linear kekerapan jadi
+
+00:20:47,000 --> 00:20:51,000
+here it's a linear able to change dead
+di sini ia adalah dapat linear untuk menukar mati
+
+00:20:51,000 --> 00:20:55,000
+that corresponds to differentiation
+yang sepadan dengan pembezaan
+
+00:20:55,000 --> 00:20:59,000
+now at first glance what you might think is that
+kini pada pandangan pertama apa yang anda mungkin berfikir adalah bahawa
+
+00:20:59,000 --> 00:21:02,000
+the integration property is just the reverse if that if
+harta integrasi hanya sebaliknya jika itu jika
+
+00:21:02,000 --> 00:21:06,000
+for the differentiation property you multiply by J Omega then
+bagi harta pembezaan yang anda darab dengan J Omega kemudian
+
+00:21:06,000 --> 00:21:10,000
+for integration you must abide by jail maker and thats almost correct
+untuk integrasi anda mesti mematuhi pembuat penjara dan thats hampir betul
+
+00:21:10,000 --> 00:21:14,000
+except not quite and the reason for the not quite
+kecuali tidak cukup dan sebab bagi yang tidak cukup
+
+00:21:14,000 --> 00:21:18,000
+is that recall that if you differentiate
+ialah ingat bahawa jika anda membezakan
+
+00:21:18,000 --> 00:21:22,000
+what happens of course is that you lose a constant
+apa yang berlaku sudah tentu ialah anda kehilangan pemalar
+
+00:21:22,000 --> 00:21:26,000
+and if we have a time function thats some fun and energy signal plus a
+dan jika kita mempunyai fungsi masa thats berseronok dan isyarat tenaga ditambah dengan
+
+00:21:26,000 --> 00:21:27,000
+constant
+berterusan
+
+00:21:27,000 --> 00:21:30,000
+differentiating will destroy the constant
+Membezakan akan memusnahkan pemalar
+
+00:21:30,000 --> 00:21:35,000
+and integration the immigration property in essence tries to bring that back
+dan integrasi harta imigresen pada dasarnya cuba untuk membawa kembali bahawa
+
+00:21:35,000 --> 00:21:39,000
+so the integration property which is the inverse
+supaya harta integrasi yang songsang
+
+00:21:39,000 --> 00:21:43,000
+of the differentiation property says that we divide
+harta perbezaan mengatakan bahawa kita membahagikan
+
+00:21:43,000 --> 00:21:47,000
+the transformed by J Omega and then
+yang diubah oleh J Omega dan kemudian
+
+00:21:47,000 --> 00:21:52,000
+if in fact their was a constant added to accept T
+jika sebenarnya mereka adalah tetap ditambah untuk menerima T
+
+00:21:52,000 --> 00:21:55,000
+we have to account for that by inserting an impulse
+kita perlu mengambil kira bahawa dengan memasukkan satu dorongan
+
+00:21:55,000 --> 00:21:59,000
+into the Fourier transform and
+ke dalam Fourier mengubah dan
+
+00:21:59,000 --> 00:22:03,000
+the file property that I want to draw your attention to
+harta fail yang saya ingin menarik perhatian anda kepada
+
+00:22:03,000 --> 00:22:06,000
+on this you graph is the linearity property
+pada ini anda graf adalah harta kelinearan yang
+
+00:22:06,000 --> 00:22:10,000
+which is very straight forward to demonstrate from
+yang ke hadapan yang sangat lurus untuk menunjukkan dari
+
+00:22:10,000 --> 00:22:14,000
+the analysis and synthesis equations which simply said is
+analisis dan sintesis persamaan yang hanya berkata adalah
+
+00:22:14,000 --> 00:22:19,000
+if X 100 maker is the Fourier transform X 1ft
+jika X 100 pembuat adalah Fourier mengubah X 1ft
+
+00:22:19,000 --> 00:22:23,000
+and x2 Omega is the Fourier transform X 2ft
+dan x2 Omega adalah Fourier X 2ft
+
+00:22:23,000 --> 00:22:27,000
+then the Fourier transform a linear combination is
+maka Fourier mengubah gabungan linear
+
+00:22:27,000 --> 00:22:32,000
+a linear combination love the Fourier transforms
+gabungan linear suka jelmaan Fourier
+
+00:22:32,000 --> 00:22:37,000
+now let me emphasize also that these properties for the most part
+sekarang mari saya juga menekankan sifat-sifat ini sebahagian besar
+
+00:22:37,000 --> 00:22:40,000
+apply both 240 a series and Fourier transforms
+memohon kedua-dua 240 siri Fourier dan jelmaan
+
+00:22:40,000 --> 00:22:44,000
+because in fact and what we've done is to incorporate
+kerana sebenarnya dan apa yang kita lakukan adalah untuk menggabungkan
+
+00:22:44,000 --> 00:22:47,000
+the forty a series within the
+empat puluh satu siri dalam
+
+00:22:47,000 --> 00:22:51,000
+framework of the Fourier transform
+rangka kerja bagi jelmaan Fourier
+
+00:22:51,000 --> 00:22:55,000
+okay now will be using a number of these properties shortly when we turn our
+okay sekarang akan menggunakan beberapa ciri-ciri ini tidak lama apabila kita beralih kami
+
+00:22:55,000 --> 00:22:56,000
+attention to
+perhatian kepada
+
+00:22:56,000 --> 00:23:01,000
+near-constant coefficient differential equations however before we do that I'd
+persamaan pekali pembezaan hampir malar bagaimanapun sebelum kita berbuat demikian saya akan
+
+00:23:01,000 --> 00:23:02,000
+like to
+seperti untuk
+
+00:23:02,000 --> 00:23:05,000
+focus on two additional
+memberi tumpuan kepada dua tambahan
+
+00:23:05,000 --> 00:23:08,000
+major properties and
+hartanah utama dan
+
+00:23:08,000 --> 00:23:12,000
+these are what are referred to as the convolution property and the modulation
+ini adalah apa yang disebut sebagai harta kekusutan dan modulasi
+
+00:23:12,000 --> 00:23:13,000
+property
+harta
+
+00:23:13,000 --> 00:23:17,000
+and in fact the convolution property as I'm about
+dan sebenarnya harta kekusutan kerana saya kira-kira
+
+00:23:17,000 --> 00:23:20,000
+to introduces forms the
+untuk memperkenalkan bentuk yang
+
+00:23:20,000 --> 00:23:24,000
+mathematical and conceptual basis for
+asas matematik dan konsep bagi
+
+00:23:24,000 --> 00:23:28,000
+the whole notion of filtering which in fact will be
+keseluruhan konsep penapisan yang sebenarnya akan
+
+00:23:28,000 --> 00:23:32,000
+a topic by itself in a set of lectures and
+topik dengan sendirinya dalam satu set kuliah dan
+
+00:23:32,000 --> 00:23:36,000
+and in fact is a chapter by itself in the textbook
+dan sebenarnya adalah bab dengan sendirinya dalam buku teks
+
+00:23:36,000 --> 00:23:40,000
+similarly what i'll refer to as the modulation property
+juga apa yang saya akan rujuk sebagai harta modulasi
+
+00:23:40,000 --> 00:23:43,000
+again well occupy its own set
+lagi baik menduduki set sendiri
+
+00:23:43,000 --> 00:23:48,000
+have lectures as we go through this scores and in fact has its own
+mempunyai kuliah seperti yang kita pergi melalui skor ini dan sebenarnya mempunyai sendiri
+
+00:23:48,000 --> 00:23:52,000
+a chapter in the textbook
+bab dalam buku teks
+
+00:23:52,000 --> 00:23:58,000
+let me in just indicate what the convolution property is
+biarlah saya hanya menunjukkan apa harta kekusutan ini
+
+00:23:58,000 --> 00:24:02,000
+and and what the convolution property
+dan dan apa harta kekusutan yang
+
+00:24:02,000 --> 00:24:08,000
+tells us is that
+memberitahu kita bahawa
+
+00:24:08,000 --> 00:24:12,000
+the 48 transform of the convolution
+48 mengubah pelingkaran yang
+
+00:24:12,000 --> 00:24:16,000
+a two-time functions is the product
+satu fungsi dua kali merupakan produk
+
+00:24:16,000 --> 00:24:19,000
+all therefore yea transforms
+semua itu tentulah jelmaan
+
+00:24:19,000 --> 00:24:22,000
+so it says for example dead
+jadi ia berkata sebagai contoh mati
+
+00:24:22,000 --> 00:24:27,000
+if I have a linear time-invariant system
+jika saya mempunyai sistem masa tak berubah linear
+
+00:24:27,000 --> 00:24:32,000
+and in I have an input exits the an impulse response HFT
+dan saya mempunyai input keluar daripada sambutan HFT gerak hati
+
+00:24:32,000 --> 00:24:35,000
+and the output of course being the convolution
+dan output sudah tentu menjadi kekusutan yang
+
+00:24:35,000 --> 00:24:41,000
+then in fact if I look at this in the frequency domain
+maka sebenarnya jika saya melihat ini dalam domain frekuensi
+
+00:24:41,000 --> 00:24:44,000
+the Fourier transform up the output
+Fourier sehingga output
+
+00:24:44,000 --> 00:24:47,000
+is the for EA transform the input
+adalah untuk EA mengubah input
+
+00:24:47,000 --> 00:24:53,000
+times the Fourier transform the impulse response
+kali Fourier mengubah sambutan dedenyut
+
+00:24:53,000 --> 00:24:56,000
+now you can demonstrate this property
+kini anda boleh menunjukkan harta ini
+
+00:24:56,000 --> 00:25:01,000
+algebraically by essentially taking the convolution integral
+algebra oleh dasarnya mengambil kamiran perlingkaran
+
+00:25:01,000 --> 00:25:04,000
+and applying to 48 transforming doing the appropriate
+dan yang memohon untuk 48 merubah melakukan yang sesuai
+
+00:25:04,000 --> 00:25:08,000
+in a changing the order integration et cetera
+dalam perubahan integrasi perintah itu dan sebagainya
+
+00:25:08,000 --> 00:25:12,000
+but who what I'd like to draw your attention to is a
+tetapi yang apa yang saya ingin menarik perhatian anda kepada adalah
+
+00:25:12,000 --> 00:25:16,000
+somewhat more intuitive interpretation of the property
+agak lebih intuitif tafsiran harta
+
+00:25:16,000 --> 00:25:20,000
+and the intuitive interpretations stems from
+dan tafsiran intuitif berpunca daripada
+
+00:25:20,000 --> 00:25:25,000
+the relationship between the Fourier transform at the impulse response
+hubungan antara Fourier pada sambutan dedenyut
+
+00:25:25,000 --> 00:25:29,000
+and what we refer to as the frequency response
+dan apa yang kita rujuk sebagai gerak balas frekuensi
+
+00:25:29,000 --> 00:25:32,000
+now recall dead wanna have
+kini menarik balik wanna mati telah
+
+00:25:32,000 --> 00:25:37,000
+the things that lettuce to use complex exponentials as building blocks
+perkara-perkara yang salad menggunakan exponentials kompleks seperti membina blok
+
+00:25:37,000 --> 00:25:41,000
+was the fact that there I can functions linear time-invariant systems in other
+adalah hakikat bahawa di sana saya boleh fungsi sistem masa tak berubah linear dalam lain
+
+00:25:41,000 --> 00:25:42,000
+words
+perkataan
+
+00:25:42,000 --> 00:25:45,000
+if we have linear time-invariant system
+jika kita mempunyai sistem masa tak berubah linear
+
+00:25:45,000 --> 00:25:49,000
+and I have an input which is a complex exponential
+dan saya mempunyai input yang merupakan eksponen kompleks
+
+00:25:49,000 --> 00:25:53,000
+the output is a complex exponential the same frequency
+output adalah eksponen frekuensi yang sama kompleks
+
+00:25:53,000 --> 00:25:57,000
+multiplied by what we call the frequency response
+didarab dengan apa yang kita panggil sambutan frekuensi yang
+
+00:25:57,000 --> 00:26:02,000
+and in fact the expression for the frequency response
+dan sebenarnya ungkapan untuk sambutan frekuensi yang
+
+00:26:02,000 --> 00:26:08,000
+is identical to the expression for the four EA transform the impulse response
+adalah sama dengan ungkapan bagi empat EA mengubah sambutan dedenyut
+
+00:26:08,000 --> 00:26:11,000
+in other words the frequency response is
+dalam erti kata lain sambutan frekuensi adalah
+
+00:26:11,000 --> 00:26:16,000
+the Fourier transform of the impulse response
+jelmaan Fourier sambutan dedenyut
+
+00:26:16,000 --> 00:26:19,000
+now in that context how can we
+kini dalam konteks itu bagaimana boleh kita
+
+00:26:19,000 --> 00:26:23,000
+interpret the convolution property well
+mentafsir dan harta kekusutan
+
+00:26:23,000 --> 00:26:28,000
+remember what I said at the beginning the lecture 1 I've pointed
+ingat apa yang saya katakan pada awal kuliah 1 saya menegaskan
+
+00:26:28,000 --> 00:26:31,000
+to the synthesis equation and I said in
+persamaan sintesis dan saya berkata dalam
+
+00:26:31,000 --> 00:26:34,000
+in essence the synthesis equation tells us
+pada dasarnya persamaan sintesis memberitahu kita
+
+00:26:34,000 --> 00:26:41,000
+how to decompose x50 as a linear combination a complex exponentials
+bagaimana untuk mengurai X50 sebagai gabungan linear exponentials kompleks
+
+00:26:41,000 --> 00:26:45,000
+what are the complex amplitudes are those complex exponentials
+apakah amplitud kompleks adalah mereka exponentials kompleks
+
+00:26:45,000 --> 00:26:48,000
+well interns love our notation year
+baik intern suka tahun notasi kami
+
+00:26:48,000 --> 00:26:52,000
+the complex amplitude of those complex exponentials
+amplitud kompleks mereka exponentials kompleks
+
+00:26:52,000 --> 00:26:58,000
+is Xserve Omega or proportional taxable make in particular taxable make a deal
+adalah Xserve Omega atau make boleh cukai berkadar khususnya boleh cukai membuat perjanjian
+
+00:26:58,000 --> 00:26:58,000
+maker
+pembuat
+
+00:26:58,000 --> 00:27:02,000
+and then a factor two-part well
+dan kemudian faktor dua bahagian dengan baik
+
+00:27:02,000 --> 00:27:07,000
+as this signal goes through this linear time-invariant system
+sebagai isyarat ini melalui sistem masa tak berubah linear ini
+
+00:27:07,000 --> 00:27:11,000
+what happens to each of those exponentials is
+apa yang berlaku kepada setiap orang-orang exponentials adalah
+
+00:27:11,000 --> 00:27:15,000
+it each one gets multiplied by the frequency response
+ia masing-masing mendapat didarab dengan sambutan frekuensi yang
+
+00:27:15,000 --> 00:27:18,000
+at The Associated frequency
+di Kekerapan bersekutu
+
+00:27:18,000 --> 00:27:21,000
+what comes out is the amplitude
+apa yang keluar ialah amplitud
+
+00:27:21,000 --> 00:27:25,000
+all the complex exponentials that are used
+semua exponentials kompleks yang digunakan
+
+00:27:25,000 --> 00:27:28,000
+to bill the output
+untuk menghantar bil kepada output
+
+00:27:28,000 --> 00:27:33,000
+so in fact the convolution property
+jadi sebenarnya harta kekusutan yang
+
+00:27:33,000 --> 00:27:36,000
+simply is telling us
+hanya memberitahu kita
+
+00:27:36,000 --> 00:27:40,000
+that interns have a decomposition the signal
+yang pelatih mempunyai penghuraian isyarat yang
+
+00:27:40,000 --> 00:27:44,000
+enters a complex exponentials as we push that signal through linear
+memasuki exponentials kompleks seperti yang kita menolak isyarat yang melalui linear
+
+00:27:44,000 --> 00:27:46,000
+time-invariant system
+sistem masa tak berubah
+
+00:27:46,000 --> 00:27:50,000
+were separately modifying with the frequency response were multiplying
+telah secara berasingan mengubahsuai dengan sambutan frekuensi yang telah mendarabkan
+
+00:27:50,000 --> 00:27:54,000
+by the frequency response the amplitudes
+dengan sambutan frekuensi amplitud
+
+00:27:54,000 --> 00:27:58,000
+love the exponential comp phones used to build the input
+suka telefon comp eksponen digunakan untuk membina input
+
+00:27:58,000 --> 00:28:01,000
+and that song intern is
+dan bahawa lagu pelatih adalah
+
+00:28:01,000 --> 00:28:06,000
+the decomposition of the output in terms of complex exponentials
+penguraian output dari segi exponentials kompleks
+
+00:28:06,000 --> 00:28:12,000
+now and I I understand that kinda going through that involves
+sekarang dan II faham bahawa agak akan melalui yang melibatkan
+
+00:28:12,000 --> 00:28:15,000
+a little bit of sorting out and I strongly encourage you
+sedikit menyusun keluar dan saya amat menggalakkan anda
+
+00:28:15,000 --> 00:28:21,000
+to try to understand and interpret the convolution property
+untuk cuba memahami dan mentafsir harta kekusutan yang
+
+00:28:21,000 --> 00:28:24,000
+in knows conceptual terms rather than simply by
+dalam tahu terma-terma konsep dan bukan hanya dengan
+
+00:28:24,000 --> 00:28:28,000
+applying the mathematics to the convolution integral and seeing that
+menggunakan matematik untuk kamiran perlingkaran dan melihat bahawa
+
+00:28:28,000 --> 00:28:33,000
+terms match up on both sides
+Terma perlawanan sehingga pada kedua-dua belah pihak
+
+00:28:33,000 --> 00:28:37,000
+now as i indicated the convolution property
+sekarang kerana i ditunjukkan harta kekusutan yang
+
+00:28:37,000 --> 00:28:41,000
+forms the basis for what's referred to as filtering
+membentuk asas bagi apa yang disebut sebagai penapisan
+
+00:28:41,000 --> 00:28:46,000
+and this is a topic that will be treating a
+dan ini adalah satu topik yang akan merawat
+
+00:28:46,000 --> 00:28:49,000
+considerable amount of detail and after
+sejumlah besar terperinci dan selepas
+
+00:28:49,000 --> 00:28:54,000
+we've also gone through a discussion love the discrete-time Fourier transform
+kami juga melalui perbincangan yang suka Fourier diskret masa mengubah
+
+00:28:54,000 --> 00:28:57,000
+in the next several lectures however what I'd like to do is just
+dalam beberapa kuliah seterusnya bagaimanapun apa yang saya ingin lakukan adalah hanya
+
+00:28:57,000 --> 00:29:00,000
+just indicate now a little bit love
+hanya menunjukkan kini cinta sedikit
+
+00:29:00,000 --> 00:29:04,000
+the conceptual ideas involve
+idea-idea konseptual melibatkan
+
+00:29:04,000 --> 00:29:09,000
+essentially conceptually what filtering as its
+dasarnya konsep apa penapisan sebagai yang
+
+00:29:09,000 --> 00:29:13,000
+typically referred to corresponds to
+biasanya dirujuk sepadan dengan
+
+00:29:13,000 --> 00:29:16,000
+is modifying separately
+mengubahsuai secara berasingan
+
+00:29:16,000 --> 00:29:20,000
+the individual frequency components in a signal
+komponen frekuensi individu dalam isyarat
+
+00:29:20,000 --> 00:29:25,000
+the convolution property told us that if we
+harta kekusutan itu memberitahu kita bahawa jika kita
+
+00:29:25,000 --> 00:29:29,000
+look at the individual frequency comp points they get multiplied by the
+melihat individu titik kekerapan comp mereka mendapatkan didarab dengan
+
+00:29:29,000 --> 00:29:34,000
+frequency response and so what that says is that we can amplify or it anyway
+sambutan frekuensi dan jadi apa yang mengatakan adalah bahawa kita boleh menguatkan atau teruskan
+
+00:29:34,000 --> 00:29:39,000
+any of those comp own it separately using a linear time-invariant system
+mana-mana comp mereka memiliki secara berasingan dengan menggunakan sistem masa tak berubah linear
+
+00:29:39,000 --> 00:29:43,000
+for example what I've illustrated here is
+sebagai contoh apa yang saya digambarkan di sini adalah
+
+00:29:43,000 --> 00:29:46,000
+the frequency response what is commonly referred to
+sambutan frekuensi yang apa yang biasanya dirujuk kepada
+
+00:29:46,000 --> 00:29:52,000
+as and ideal Lopez filter what an ideal 0 pass filter does
+sebagaimana dan ideal penapis Lopez apa yang ideal penapis lulus 0 tidak
+
+00:29:52,000 --> 00:29:55,000
+is to pass exactly
+adalah untuk lulus dengan tepat
+
+00:29:55,000 --> 00:29:59,000
+frequencies in one frequency range
+frekuensi dalam satu julat frekuensi
+
+00:29:59,000 --> 00:30:04,000
+and eliminate totally frequencies outside that range
+dan menghapuskan sama sekali di luar julat frekuensi yang
+
+00:30:04,000 --> 00:30:09,000
+another filter which is not so ideal might for example
+satu lagi penapis yang tidak sekuat begitu ideal sebagai contoh
+
+00:30:09,000 --> 00:30:12,000
+attenuate sit com phone it's in this band but not
+melemahkan sit com telefon ia dalam band ini tetapi tidak
+
+00:30:12,000 --> 00:30:19,000
+I rather attenuate conference in this band but not totally eliminate them
+Saya lebih melemahkan persidangan di band ini tetapi tidak menghapuskan sama sekali mereka
+
+00:30:19,000 --> 00:30:22,000
+now interns a filtering we can think back
+kini intern penapisan kita boleh berfikir kembali
+
+00:30:22,000 --> 00:30:25,000
+to the differentiation property and in fact interpreter
+kepada harta pembezaan dan sebenarnya jurubahasa
+
+00:30:25,000 --> 00:30:29,000
+differentiation or differentiator as a filter
+pembezaan atau pembeza sebagai penapis
+
+00:30:29,000 --> 00:30:33,000
+recall that the differentiation property said
+ingat bahawa harta pembezaan tersebut
+
+00:30:33,000 --> 00:30:39,000
+that the Fourier transform all the differentiated signal
+bahawa Fourier mengubah semua isyarat yang berbeza
+
+00:30:39,000 --> 00:30:43,000
+is the for a transformer the original signal multiplied by J Omega
+adalah untuk pengubah isyarat asal didarab dengan J Omega
+
+00:30:43,000 --> 00:30:46,000
+so what that says then
+jadi apa yang mengatakan maka
+
+00:30:46,000 --> 00:30:51,000
+is dead if we have a differentiator opened the frequency response to that
+mati jika kita mempunyai differentiator dibuka sambutan frekuensi untuk yang
+
+00:30:51,000 --> 00:30:56,000
+is J Omega in other words the Fourier transform of the output is Jay Omega
+adalah J Omega dalam erti kata lain jelmaan Fourier output adalah Jay Omega
+
+00:30:56,000 --> 00:31:00,000
+times the Fourier transform the input
+kali Fourier mengubah input
+
+00:31:00,000 --> 00:31:04,000
+and so the frequency response a differentiator
+dan sebagainya sambutan frekuensi yang differentiator
+
+00:31:04,000 --> 00:31:08,000
+looks like this and turns its magnitude and what it does
+kelihatan seperti ini dan bertukar magnitud dan apa yang ia
+
+00:31:08,000 --> 00:31:12,000
+of course is it amplifies high frequencies
+sudah tentu ia menguatkan frekuensi tinggi
+
+00:31:12,000 --> 00:31:17,000
+and attenuates low frequencies
+dan melemah frekuensi rendah
+
+00:31:17,000 --> 00:31:22,000
+well let me just to kinda cement summer these ideas
+juga biarlah saya hanya untuk musim panas agak mengukuhkan idea-idea
+
+00:31:22,000 --> 00:31:26,000
+illustrate them in a context 0
+menggambarkan mereka dalam konteks 0
+
+00:31:26,000 --> 00:31:29,000
+one kind of signal namely signal which in fact
+satu jenis isyarat iaitu isyarat yang sebenarnya
+
+00:31:29,000 --> 00:31:34,000
+is the spatial signal rather than a time signal
+adalah isyarat spatial dan bukan isyarat masa
+
+00:31:34,000 --> 00:31:39,000
+and this also gives me an opportunity to introduce you
+dan ini juga memberi saya peluang untuk memperkenalkan anda
+
+00:31:39,000 --> 00:31:43,000
+to our colleague JBJ for EA's
+kepada rakan sekerja kami JBJ untuk EA
+
+00:31:43,000 --> 00:31:47,000
+so if we could look at our colleague mister four EA
+jadi jika kita boleh melihat rakan sekerja kami mister empat EA
+
+00:31:47,000 --> 00:31:51,000
+who by the way is on
+yang dengan cara itu pada
+
+00:31:51,000 --> 00:31:55,000
+not only person who had tremendously brilliant insights
+bukan sahaja orang yang mempunyai pandangan dengan hebat cemerlang
+
+00:31:55,000 --> 00:31:58,000
+and his insights in fact have led to
+dan pandangan beliau sebenarnya telah membawa kepada
+
+00:31:58,000 --> 00:32:02,000
+the developments really for the foundation the developments that
+perkembangan benar-benar untuk asas perkembangan yang
+
+00:32:02,000 --> 00:32:07,000
+is the basis for this course he was also a very interesting fascinating person
+adalah asas bagi kursus ini dia juga adalah seorang yang sangat menarik menarik
+
+00:32:07,000 --> 00:32:11,000
+and there's a certain amount of historical discussion
+dan ada sejumlah perbincangan sejarah
+
+00:32:11,000 --> 00:32:17,000
+about for EA and his background which you might enjoy reading in the text
+kira-kira untuk EA dan latar belakang yang anda mungkin menikmati membaca dalam teks
+
+00:32:17,000 --> 00:32:20,000
+in any case what you're looking at a course is a signal
+dalam mana-mana apa yang anda cari di padang adalah isyarat
+
+00:32:20,000 --> 00:32:24,000
+and the signal is a spatial signal and
+dan isyarat adalah isyarat ruang dan
+
+00:32:24,000 --> 00:32:28,000
+it has high frequencies and low frequencies high frequencies
+ia mempunyai frekuensi yang tinggi dan frekuensi rendah frekuensi tinggi
+
+00:32:28,000 --> 00:32:32,000
+corresponding to things that are varying rapidly
+yang bersamaan dengan perkara-perkara yang berbeza-beza dengan cepat
+
+00:32:32,000 --> 00:32:35,000
+spatially and low frequencies barings
+spatial dan rendah frekuensi Barings
+
+00:32:35,000 --> 00:32:38,000
+very slowly spatially it so
+dengan perlahan-lahan supaya spatial
+
+00:32:38,000 --> 00:32:42,000
+for example we could low-pass filter
+sebagai contoh kita boleh rendah lulus penapis
+
+00:32:42,000 --> 00:32:45,000
+this picture simply by asking
+gambar ini hanya dengan meminta
+
+00:32:45,000 --> 00:32:49,000
+the video crew if they could slightly defocus
+krew video jika mereka sedikit boleh defocus
+
+00:32:49,000 --> 00:32:55,000
+and what you see as the picture is the focus if you can hold it there
+dan apa yang anda lihat sebagai gambar adalah tumpuan jika anda boleh tahan di sana
+
+00:32:55,000 --> 00:32:58,000
+is dead we've lost edges which
+adalah mati kita telah kehilangan tepi yang
+
+00:32:58,000 --> 00:33:03,000
+is the rapid variation and what we've retained is the broader
+variasi yang pesat dan apa yang kami dikekalkan adalah yang lebih luas
+
+00:33:03,000 --> 00:33:06,000
+slow variation and now let's take out
+variasi perlahan dan sekarang mari kita mengambil
+
+00:33:06,000 --> 00:33:10,000
+the d focusing low-pass filter and go back
+d yang menumpukan penapis laluan rendah dan kembali
+
+00:33:10,000 --> 00:33:16,000
+to a focused image
+kepada imej fokus
+
+00:33:16,000 --> 00:33:20,000
+okay now what
+okay sekarang apa
+
+00:33:20,000 --> 00:33:23,000
+and we can also consider is what would happen if we look
+dan kita juga boleh dipertimbangkan ialah apa yang akan berlaku jika kita melihat
+
+00:33:23,000 --> 00:33:27,000
+at the differentiated image and their are several ways that we can think about
+pada imej yang berbeza dan mereka adalah beberapa cara yang kita boleh berfikir tentang
+
+00:33:27,000 --> 00:33:28,000
+this
+ini
+
+00:33:28,000 --> 00:33:33,000
+one is that a differentiator of course the output of a differentiator
+satu ialah pembeza kursus pengeluaran differentiator
+
+00:33:33,000 --> 00:33:37,000
+is larger where the discontinuity
+adalah lebih besar di mana ketakselanjaran
+
+00:33:37,000 --> 00:33:40,000
+or where the variation is faster
+atau jika sesuatu perubahan adalah lebih cepat
+
+00:33:40,000 --> 00:33:43,000
+and so we would expect the edges
+dan dengan itu kita inginkan tepi
+
+00:33:43,000 --> 00:33:47,000
+to be enhanced if in fact we differentiated the image
+dipertingkatkan jika sebenarnya kita dibezakan imej
+
+00:33:47,000 --> 00:33:51,000
+or if we interpret differentiation in the context
+atau jika kita mentafsir perbezaan dalam konteks
+
+00:33:51,000 --> 00:33:55,000
+love our filter then what we're saying
+suka penapis kami maka apa yang kita katakan
+
+00:33:55,000 --> 00:33:59,000
+if hey what we're saying is that in effect
+jika hey apa yang kami katakan ialah dalam kesan
+
+00:33:59,000 --> 00:34:03,000
+what's happening is that the differentiator is
+apa yang berlaku ialah pembeza adalah
+
+00:34:03,000 --> 00:34:06,000
+accentuating the high frequencies
+accentuating frekuensi tinggi
+
+00:34:06,000 --> 00:34:11,000
+because if the frequency shape the differentiator now recall that this all
+kerana jika kekerapan membentuk pembeza sekarang ingat bahawa ini semua
+
+00:34:11,000 --> 00:34:14,000
+kinda fits together is a nice package
+agak sesuai bersama-sama adalah pakej yang bagus
+
+00:34:14,000 --> 00:34:18,000
+be expected to actively the differentiation will enhance ages
+dijangka akan aktif pembezaan akan meningkatkan peringkat umur
+
+00:34:18,000 --> 00:34:23,000
+when we talked about square waves and we so I have a for a series built up a
+apabila kita bercakap tentang gelombang persegi dan kami jadi saya mempunyai untuk siri yang membina sebuah
+
+00:34:23,000 --> 00:34:24,000
+square wave
+gelombang persegi
+
+00:34:24,000 --> 00:34:27,000
+we saw that it was the high frequencies
+kita melihat bahawa ia adalah frekuensi yang tinggi
+
+00:34:27,000 --> 00:34:31,000
+that were required in order to build up the sharp
+yang diperlukan untuk membina mendadak
+
+00:34:31,000 --> 00:34:36,000
+edges and so either viewed as a filter or viewed intuitively
+tepi dan sebagainya sama ada dilihat sebagai penapis atau dilihat secara intuitif
+
+00:34:36,000 --> 00:34:40,000
+we would expect that the differentiated image would in fact
+kita akan menjangkakan bahawa imej berbeza akan sebenarnya
+
+00:34:40,000 --> 00:34:46,000
+get would in fact it anyway the slowly varying background and amplify
+mendapatkan akan sebenarnya teruskan perlahan-lahan yang berbeza-beza latar belakang dan menguatkan
+
+00:34:46,000 --> 00:34:50,000
+the rapidly varying ages so let's look again at
+zaman pesat yang berbeza-beza jadi mari kita lihat sekali lagi pada
+
+00:34:50,000 --> 00:34:54,000
+our original image just to remind you love the fact that there are edges of
+imej asal kami hanya untuk mengingatkan anda suka hakikat bahawa terdapat tepi
+
+00:34:54,000 --> 00:34:56,000
+course and their
+kursus dan mereka
+
+00:34:56,000 --> 00:34:59,000
+is more slowly varying backgrounds
+lebih perlahan-lahan yang berbeza-beza latar belakang
+
+00:34:59,000 --> 00:35:03,000
+and now let's look at the
+dan sekarang mari kita melihat
+
+00:35:03,000 --> 00:35:06,000
+result love passing that through
+hasil suka lulus melalui
+
+00:35:06,000 --> 00:35:09,000
+a differentiator and as i think is
+pembeza dan sebagai i fikir adalah
+
+00:35:09,000 --> 00:35:13,000
+very evident in that in the resulting image
+sangat jelas dalam bahawa dalam imej yang terhasil
+
+00:35:13,000 --> 00:35:16,000
+clearly is the edges that a retained and
+jelas adalah tepi bahawa tertangguh dan
+
+00:35:16,000 --> 00:35:19,000
+the slow back to slower background variations
+belakang lambat untuk variasi latar belakang perlahan
+
+00:35:19,000 --> 00:35:26,000
+are destroyed which is consistent with everything we've said
+dimusnahkan yang selaras dengan segala yang kita telah berkata
+
+00:35:26,000 --> 00:35:30,000
+okay now i've emphasized the her will be returning
+okay sekarang saya telah menekankan beliau akan kembali
+
+00:35:30,000 --> 00:35:33,000
+to a much broader discussion a filtering at
+kepada perbincangan yang lebih luas penapisan di
+
+00:35:33,000 --> 00:35:38,000
+a later point in the cores right now like to comment on another
+mata kemudian dalam teras sekarang suka untuk mengulas mengenai satu lagi
+
+00:35:38,000 --> 00:35:42,000
+property which here is also as i indicated a topic I've
+harta yang di sini juga sebagai i ditunjukkan topik saya telah
+
+00:35:42,000 --> 00:35:46,000
+in its own right and which really is the dual
+yang tersendiri dan yang benar-benar adalah dua
+
+00:35:46,000 --> 00:35:51,000
+property to the convolution property and in fact could be argued directly from
+harta dengan harta kekusutan dan sebenarnya boleh dikatakan terus dari
+
+00:35:51,000 --> 00:35:53,000
+duality
+berbelah bahagi
+
+00:35:53,000 --> 00:35:59,000
+and that is what's referred to as the modulation property
+dan itu adalah apa yang disebut sebagai harta modulasi
+
+00:35:59,000 --> 00:36:03,000
+now the convolution property told us that
+kini harta kekusutan itu memberitahu kita bahawa
+
+00:36:03,000 --> 00:36:09,000
+if we convolved in the time domain we multiply in the frequency domain
+jika kita convolved dalam domain masa kita kali dalam domain frekuensi
+
+00:36:09,000 --> 00:36:12,000
+and we know the time and frequency domains are interchangeable because it
+dan kita tahu masa dan domain frekuensi boleh ditukar kerana ia
+
+00:36:12,000 --> 00:36:13,000
+to our the
+kepada kami
+
+00:36:13,000 --> 00:36:16,000
+so what that would suggest is dead
+jadi apa yang akan mencadangkan mati
+
+00:36:16,000 --> 00:36:19,000
+if we multiply in the time domain
+jika kita kali dalam domain masa
+
+00:36:19,000 --> 00:36:23,000
+that would correspond to convolution in the frequency domain
+yang akan sesuai dengan kekusutan dalam domain frekuensi
+
+00:36:23,000 --> 00:36:27,000
+and in fact head that is exactly what the modulation property is
+dan sebenarnya kepala ini adalah yang sebenarnya apa harta pemodulatan adalah
+
+00:36:27,000 --> 00:36:31,000
+I have a summarized here that if we multiply
+Saya yang diringkaskan di sini bahawa jika kita kali
+
+00:36:31,000 --> 00:36:34,000
+a time function by another time function then
+fungsi semasa oleh fungsi masa yang lain maka
+
+00:36:34,000 --> 00:36:38,000
+in the frequency domain week involved
+pada minggu domain frekuensi yang terlibat
+
+00:36:38,000 --> 00:36:41,000
+whereas the convolution property is just the duel at that
+sedangkan harta kekusutan itu hanya pertarungan pada itu
+
+00:36:41,000 --> 00:36:46,000
+namely convolved being in the time domain corresponds to
+iaitu convolved menjadi dalam domain masa sepadan dengan
+
+00:36:46,000 --> 00:36:49,000
+multiplication in the frequency domain
+pendaraban dalam domain frekuensi
+
+00:36:49,000 --> 00:36:54,000
+the convolution property is the basis as i indicated for filtering
+harta kekusutan ini adalah dasarnya sebagai i dinyatakan penapisan
+
+00:36:54,000 --> 00:36:58,000
+the modulation property as I've summarized it here
+harta modulasi yang seperti yang telah saya diringkaskan di sini
+
+00:36:58,000 --> 00:37:03,000
+in fact is the entire basis
+sebenarnya adalah keseluruhan asas
+
+00:37:03,000 --> 00:37:07,000
+for amplitude modulation systems issues
+untuk isu-isu sistem modulasi amplitud
+
+00:37:07,000 --> 00:37:10,000
+almost universally in communications and wait
+hampir universal dalam komunikasi dan tunggu
+
+00:37:10,000 --> 00:37:15,000
+the modulation property is we'll see when we explored in more detail
+harta pemodulatan ialah kita akan melihat apabila kita diterokai dengan lebih terperinci
+
+00:37:15,000 --> 00:37:20,000
+tells us is that if we have a signal with a certain spectrum
+memberitahu kita bahawa jika kita mempunyai isyarat dengan spektrum tertentu
+
+00:37:20,000 --> 00:37:23,000
+and we multiply by a sinusoidal
+dan kita darab dengan sinus
+
+00:37:23,000 --> 00:37:28,000
+signal whose for EA transformers said impulses
+isyarat yang untuk EA transformer impuls berkata
+
+00:37:28,000 --> 00:37:33,000
+then in a frequency-domain week involved and that corresponds
+maka dalam seminggu frekuensi domain yang terlibat dan yang sepadan
+
+00:37:33,000 --> 00:37:37,000
+to taking the original spectrum and translating it
+untuk mengambil spektrum asal dan menterjemahkannya
+
+00:37:37,000 --> 00:37:40,000
+shifting it in frequency up to
+beralih dalam frekuensi sehingga
+
+00:37:40,000 --> 00:37:43,000
+the frequency love the carrier namely
+kekerapan suka pengangkut iaitu
+
+00:37:43,000 --> 00:37:46,000
+the sinusoidal signal and as I said will
+isyarat sinus dan seperti yang saya katakan akan
+
+00:37:46,000 --> 00:37:52,000
+come to that in much more detail in a number of lectures
+datang untuk itu dalam lebih terperinci dalam beberapa kuliah
+
+00:37:52,000 --> 00:37:55,000
+okay now we've seen a number of properties
+okay sekarang kita telah melihat beberapa ciri-ciri
+
+00:37:55,000 --> 00:37:59,000
+and I indicated sometime earlier when we talked about
+dan saya kadang-kadang ditunjukkan sebelum ini apabila kita bercakap tentang
+
+00:37:59,000 --> 00:38:04,000
+and differential equations that in fact it's the properties are the 48 transform
+dan persamaan pembezaan yang sebenarnya ia adalah ciri-ciri adalah 48 mengubah
+
+00:38:04,000 --> 00:38:08,000
+that providers with a very useful
+bahawa pembekal dengan sangat berguna
+
+00:38:08,000 --> 00:38:14,000
+an important mechanism for solving linear constant coefficient differential
+satu mekanisme penting untuk menyelesaikan linear pekali selisih
+
+00:38:14,000 --> 00:38:15,000
+equations
+persamaan
+
+00:38:15,000 --> 00:38:18,000
+and but I'd like to do now
+dan tetapi saya ingin lakukan sekarang
+
+00:38:18,000 --> 00:38:23,000
+is illustrate the procedure the basis for that
+adalah menggambarkan prosedur asas yang
+
+00:38:23,000 --> 00:38:26,000
+and I think what we'll do is illustrated simply in the context of several
+dan saya fikir apa yang kita akan lakukan adalah hanya digambarkan dalam konteks beberapa
+
+00:38:26,000 --> 00:38:30,000
+examples
+contoh
+
+00:38:30,000 --> 00:38:33,000
+okay well in what i've indicated is
+okay baik dalam apa yang saya ditunjukkan adalah
+
+00:38:33,000 --> 00:38:37,000
+a system
+sistem yang
+
+00:38:37,000 --> 00:38:41,000
+with her a an impulse response HFT
+dengan dia satu sambutan HFT gerak hati
+
+00:38:41,000 --> 00:38:46,000
+or frequency response teachable nigga and of course we know that in the time
+atau sambutan frekuensi nigga boleh diajar dan sudah tentu kita tahu bahawa dalam masa yang
+
+00:38:46,000 --> 00:38:48,000
+domain it's just right to convolution
+domain ia hanya hak untuk kekusutan
+
+00:38:48,000 --> 00:38:54,000
+in the frequency domain its described through multiplication
+dalam domain frekuensi yang digambarkan melalui pendaraban
+
+00:38:54,000 --> 00:38:57,000
+and I in essence
+dan saya pada dasarnya
+
+00:38:57,000 --> 00:39:01,000
+am assuming that we're talking about a linear time-invariant system
+saya menganggap bahawa kita berbicara tentang sistem masa tak berubah linear
+
+00:39:01,000 --> 00:39:06,000
+and we're also going to assume that it's characterized by a win here comes the
+dan kami juga akan menganggap bahawa ia mempunyai ciri-ciri kemenangan di sini datang
+
+00:39:06,000 --> 00:39:09,000
+coefficient differential equation
+persamaan pekali pembezaan
+
+00:39:09,000 --> 00:39:12,000
+where we're going to oppose the condition
+di mana kita akan menentang keadaan
+
+00:39:12,000 --> 00:39:15,000
+that its causal linear and time-invariant
+yang linear sebab-musabab dan masa tak berubah
+
+00:39:15,000 --> 00:39:19,000
+or equivalent Lee that the initial condition conditions
+atau yang setaraf Lee bahawa syarat-syarat keadaan awal
+
+00:39:19,000 --> 00:39:22,000
+are consistent with initial rest
+adalah konsisten dengan rehat awal
+
+00:39:22,000 --> 00:39:26,000
+and it's because it the fact that we're assuming
+dan ia adalah kerana ia hakikat bahawa kita menganggap
+
+00:39:26,000 --> 00:39:29,000
+that is a linear time-invariant system that
+yang merupakan sistem masa tak berubah linear yang
+
+00:39:29,000 --> 00:39:34,000
+we can describe it in the frequency domain through the convolution property
+kita boleh menggambarkan ia dalam domain frekuensi melalui harta kekusutan yang
+
+00:39:34,000 --> 00:39:39,000
+and we can use the properties love the forty a transfer
+dan kita boleh menggunakan sifat-sifat suka empat puluh pemindahan yang
+
+00:39:39,000 --> 00:39:44,000
+so let's take as our example a first-order differential equation
+jadi mari kita mengambil contoh kita satu persamaan kebezaan tertib pertama
+
+00:39:44,000 --> 00:39:49,000
+as I indicate here so the derivative the output plus eight times the output is
+seperti yang saya nyatakan di sini supaya terbitan output ditambah lapan kali output adalah
+
+00:39:49,000 --> 00:39:51,000
+equal to the input
+sama dengan input
+
+00:39:51,000 --> 00:39:57,000
+and now we can use the differentiation property
+dan kini kita boleh menggunakan harta perbezaan
+
+00:39:57,000 --> 00:40:01,000
+if we for EA transform mystic entire expression
+jika kita untuk EA mengubah ungkapan keseluruhan mistik
+
+00:40:01,000 --> 00:40:05,000
+the differentiation property tells us that
+harta pembezaan memberitahu kita bahawa
+
+00:40:05,000 --> 00:40:08,000
+the forty a transformer the derivative of the output
+empat puluh pengubah terbitan output
+
+00:40:08,000 --> 00:40:14,000
+is the for a transformer the output multiplied by J Omega
+adalah untuk pengubah keluaran didarab dengan J Omega
+
+00:40:14,000 --> 00:40:18,000
+and Lenny arity well let us
+dan Lenny arity juga marilah kita
+
+00:40:18,000 --> 00:40:23,000
+right the Fourier transform love this as eight times while Omega
+hak Fourier mengubah cinta ini lapan kali manakala Omega
+
+00:40:23,000 --> 00:40:26,000
+and since these are added together and since we have the linear
+dan kerana ini ditambah bersama-sama dan kerana kita mempunyai linear
+
+00:40:26,000 --> 00:40:29,000
+linearity property these are added together
+harta kelinearan ini ditambah bersama-sama
+
+00:40:29,000 --> 00:40:34,000
+and XOM Omega is and the Fourier transform affect safety
+dan XOM Omega adalah dan Fourier menjejaskan keselamatan
+
+00:40:34,000 --> 00:40:40,000
+so what we've used is the differentiation property
+jadi apa yang kami digunakan adalah harta perbezaan
+
+00:40:40,000 --> 00:40:47,000
+and reviews the when the arity property
+dan mengkaji semula apabila harta arity yang
+
+00:40:47,000 --> 00:40:51,000
+right now weekend solve this equation
+sekarang hujung minggu menyelesaikan persamaan ini
+
+00:40:51,000 --> 00:40:55,000
+for y Omega the forty a transformer the output
+untuk y Omega empat puluh pengubah keluaran yang
+
+00:40:55,000 --> 00:40:58,000
+in terms of Xserve Omega the Fourier transform
+dari segi Xserve Omega Fourier
+
+00:40:58,000 --> 00:41:02,000
+the input and a simple algebraic step
+input dan satu langkah algebra mudah
+
+00:41:02,000 --> 00:41:08,000
+gets s to this expression so the for a chance for the output is one over
+mendapat s kepada ungkapan ini maka bagi peluang untuk output yang merupakan salah satu lebih
+
+00:41:08,000 --> 00:41:09,000
+Jamaica plus a
+Jamaica lagi
+
+00:41:09,000 --> 00:41:14,000
+ties the forty a transformer the input and I just simply repeated
+hubungan empat puluh pengubah input dan saya hanya mengulangi
+
+00:41:14,000 --> 00:41:18,000
+that equation appear
+persamaan yang muncul
+
+00:41:18,000 --> 00:41:22,000
+now so far this is algebra
+kini setakat ini adalah algebra
+
+00:41:22,000 --> 00:41:27,000
+and and question is now how do we interpret this
+dan soalan dan kini bagaimana kita mentafsir ini
+
+00:41:27,000 --> 00:41:32,000
+well we know that the for a transformer the output
+juga kita tahu bahawa untuk pengubah keluaran
+
+00:41:32,000 --> 00:41:37,000
+is the forty a transformer the input times the Fourier transform
+adalah empat puluh pengubah masa input Fourier
+
+00:41:37,000 --> 00:41:42,000
+are the impulse response to the system namely the frequency response
+adalah sambutan dedenyut untuk sistem iaitu gerak balas frekuensi
+
+00:41:42,000 --> 00:41:45,000
+so in fact if we think love
+jadi sebenarnya jika kita berfikir cinta
+
+00:41:45,000 --> 00:41:49,000
+a chip tanh Omega as a Fourier transform pair
+a Omega cip tanh sebagai pasangan jelmaan Fourier
+
+00:41:49,000 --> 00:41:53,000
+then is the convolution property that lets us
+maka adalah harta kekusutan yang membolehkan kita
+
+00:41:53,000 --> 00:41:56,000
+quaid this term with
+Quaid istilah ini dengan
+
+00:41:56,000 --> 00:41:59,000
+H Omega so here
+H Omega jadi di sini
+
+00:41:59,000 --> 00:42:05,000
+were using the convolution property
+telah menggunakan harta kekusutan yang
+
+00:42:05,000 --> 00:42:09,000
+and so we know what the 48 transform
+dan dengan itu kita tahu apa yang 48 mengubah
+
+00:42:09,000 --> 00:42:13,000
+or the impulse responses they only one over
+atau jawapan gerak hati mereka hanya satu lebih
+
+00:42:13,000 --> 00:42:16,000
+J Omega plus a now
+J Omega plus sekarang
+
+00:42:16,000 --> 00:42:20,000
+in we may have for example what is in our problem
+dalam kita mungkin mempunyai sebagai contoh apa yang ada dalam masalah kita
+
+00:42:20,000 --> 00:42:26,000
+instead of getting the frequency response to get the impulse response
+bukannya mendapat sambutan frekuensi untuk mendapatkan sambutan dedenyut
+
+00:42:26,000 --> 00:42:30,000
+and there are a variety of ways that we can't do this we can attempt to go
+dan terdapat pelbagai cara yang kita tidak boleh melakukan ini kita boleh cuba untuk pergi
+
+00:42:30,000 --> 00:42:33,000
+through the inverse Fourier transform expression
+melalui Fourier songsang mengubah ungkapan
+
+00:42:33,000 --> 00:42:38,000
+but in fact one of the most useful ways is their formally called
+tetapi sebenarnya salah satu cara yang paling berguna adalah mereka secara rasmi dipanggil
+
+00:42:38,000 --> 00:42:41,000
+the inspection method informally
+kaedah pemeriksaan rasmi
+
+00:42:41,000 --> 00:42:46,000
+its called if you work that out going one way
+yang dipanggil jika anda bersenam yang pergi satu cara
+
+00:42:46,000 --> 00:42:49,000
+then you ought to remember the answer so that you know how to get back
+maka anda harus ingat jawapan supaya anda tahu bagaimana untuk mendapatkan kembali
+
+00:42:49,000 --> 00:42:52,000
+method so what that says is
+kaedah jadi apa yang mengatakan adalah
+
+00:42:52,000 --> 00:42:58,000
+remember dead we worked an example and in fact I showed you the example
+ingat mati kita bekerja contoh dan sebenarnya saya menunjukkan anda contoh
+
+00:42:58,000 --> 00:43:01,000
+earlier in the lecture that
+sebelum ini dalam syarahan yang
+
+00:43:01,000 --> 00:43:04,000
+the Fourier transform a view to the minus eighty times a step
+Fourier tujuan untuk masa-masa lapan puluh tolak langkah
+
+00:43:04,000 --> 00:43:07,000
+is one over J Omega plus a
+adalah salah satu lebih J Omega ditambah dengan
+
+00:43:07,000 --> 00:43:13,000
+so what is the inverse Fourier transform a 1-over J Omega plus a
+jadi apa yang Fourier songsang mengubah 1-lebih J Omega ditambah dengan
+
+00:43:13,000 --> 00:43:17,000
+well ants need to the minus eighty
+juga semut perlu lapan puluh tolak
+
+00:43:17,000 --> 00:43:20,000
+times unit step
+kali seunit
+
+00:43:20,000 --> 00:43:26,000
+and that's just simply remembering in essence this particular transformed pier
+dan itu hanya sekadar mengingati pada dasarnya dermaga ini berubah tertentu
+
+00:43:26,000 --> 00:43:30,000
+well I've drawn graphically
+juga saya ditarik secara grafik
+
+00:43:30,000 --> 00:43:36,000
+the magnitude of the Fourier transform here
+magnitud Fourier mengubah sini
+
+00:43:36,000 --> 00:43:41,000
+and below it we have the impulse response
+dan di bawahnya kita mempunyai sambutan dedenyut
+
+00:43:41,000 --> 00:43:46,000
+the apostle spines is as I just indicated either -80
+duri rasul adalah kerana saya hanya menunjukkan sama ada -80
+
+00:43:46,000 --> 00:43:51,000
+times you see now let's go back up and look at
+kali anda lihat sekarang mari kita pergi kembali dan melihat
+
+00:43:51,000 --> 00:43:56,000
+the magnitude over the frequency response
+magnitud lebih sambutan frekuensi yang
+
+00:43:56,000 --> 00:44:00,000
+and given just a little bit of discussion that we had
+dan diberikan hanya sedikit perbincangan itu kami mempunyai
+
+00:44:00,000 --> 00:44:04,000
+previously about filtering you should be able to
+sebelum ini tentang penapisan anda akan dapat
+
+00:44:04,000 --> 00:44:09,000
+in for something about the filtering characteristics
+dalam sesuatu tentang ciri-ciri penapisan
+
+00:44:09,000 --> 00:44:14,000
+love this simple first-order differential equation
+suka persamaan pembezaan pertama pesanan mudah ini
+
+00:44:14,000 --> 00:44:17,000
+in particular if you look at that frequency response
+khususnya jika anda melihat bahawa sambutan frekuensi
+
+00:44:17,000 --> 00:44:22,000
+the frequency response falls off with frequency and so it tends to do
+sambutan frekuensi jatuh daripada dengan kekerapan dan sebagainya ia cenderung untuk melakukan
+
+00:44:22,000 --> 00:44:26,000
+is attenuate high frequencies and
+adalah melemahkan frekuensi tinggi dan
+
+00:44:26,000 --> 00:44:29,000
+retain low frequencies so in fact
+mengekalkan frekuensi rendah supaya sebenarnya
+
+00:44:29,000 --> 00:44:33,000
+you could think of the defocus saying that we did on
+anda boleh berfikir defocus yang mengatakan bahawa kita lakukan pada
+
+00:44:33,000 --> 00:44:37,000
+the imager for EA you could think if that approximately as
+yang pengimej untuk EA anda boleh berfikir jika itu kira-kira sebagai
+
+00:44:37,000 --> 00:44:40,000
+similar to the kind of filtering action that you would get
+sama dengan jenis tindakan penapisan yang anda akan mendapat
+
+00:44:40,000 --> 00:44:46,000
+by passing a signal through a first-order differential equation
+dengan melepaskan isyarat melalui persamaan pembezaan tertib pertama
+
+00:44:46,000 --> 00:44:50,000
+okay now just illustrate in one
+okay kini hanya menggambarkan dalam satu
+
+00:44:50,000 --> 00:44:55,000
+additional step in both evaluating inverse transforms and using Fourier
+langkah tambahan dalam kedua-dua menilai jelmaan songsang dan menggunakan Fourier
+
+00:44:55,000 --> 00:44:57,000
+transform properties
+mengubah sifat-sifat
+
+00:44:57,000 --> 00:45:01,000
+to solve a near constant coefficient differential equations
+untuk menyelesaikan berhampiran berterusan persamaan pekali pembezaan
+
+00:45:01,000 --> 00:45:05,000
+let's take this same example and rather
+mari kita mengambil contoh yang sama dan agak
+
+00:45:05,000 --> 00:45:09,000
+then finding the impulse response let's find the response
+kemudian mencari sambutan dedenyut mari kita cari sambutan
+
+00:45:09,000 --> 00:45:12,000
+to another exponential input
+yang lain input eksponen
+
+00:45:12,000 --> 00:45:15,000
+now we could of course do that using the convolution integral we just got the
+sekarang kita tentu boleh berbuat demikian dengan menggunakan kamiran perlingkaran kita hanya mendapat
+
+00:45:15,000 --> 00:45:18,000
+impulse response so we can put that
+impuls respon supaya kita boleh meletakkan bahawa
+
+00:45:18,000 --> 00:45:22,000
+through the convolution integral to get the response to this input
+melalui kamiran perlingkaran untuk mendapat jawapan untuk input ini
+
+00:45:22,000 --> 00:45:28,000
+but let's do it instead by going back to the differential equation
+tetapi mari kita melakukannya bukan dengan kembali kepada persamaan pengkamiran
+
+00:45:28,000 --> 00:45:33,000
+and so here i'm taking a differential equation
+dan jadi di sini saya mengambil persamaan pembezaan
+
+00:45:33,000 --> 00:45:36,000
+all choose just to have some numbers to work with
+semua memilih hanya untuk mempunyai beberapa nombor untuk bekerja dengan
+
+00:45:36,000 --> 00:45:39,000
+a equal to 2 and now
+yang bersamaan dengan 2 dan kini
+
+00:45:39,000 --> 00:45:44,000
+I'll choose an exponential on the right hand side either minus tee times you
+Saya akan memilih eksponen pada sebelah kanan sama ada tolak tee kali anda
+
+00:45:44,000 --> 00:45:46,000
+have t
+mempunyai t
+
+00:45:46,000 --> 00:45:52,000
+and again we for EA transform the equation
+dan sekali lagi kita untuk EA mengubah persamaan
+
+00:45:52,000 --> 00:45:55,000
+and we can remember
+dan kita boleh ingat
+
+00:45:55,000 --> 00:45:59,000
+this particular Fourier transform pair it's just the one who worked out
+ini Fourier tertentu mengubah pasangan ia hanya orang yang bekerja di luar
+
+00:45:59,000 --> 00:46:03,000
+previously now with a equal to 1 clearly we're getting a lot of mileage out of
+sebelum ini sekarang dengan bersamaan 1 jelas kami mendapat banyak perbatuan daripada
+
+00:46:03,000 --> 00:46:05,000
+that example
+contoh yang
+
+00:46:05,000 --> 00:46:11,000
+and now if we wanted determine what the output why if he is
+dan sekarang jika kita mahu menentukan apa output mengapa jika dia
+
+00:46:11,000 --> 00:46:15,000
+we can't do that by solving for Y Omega
+kita tidak boleh berbuat demikian dengan menyelesaikan untuk Y Omega
+
+00:46:15,000 --> 00:46:18,000
+and then generating the inverse Fourier transform
+dan kemudian menjana Fourier songsang mengubah
+
+00:46:18,000 --> 00:46:21,000
+well what's all this algebraically for y Omega
+baik apa yang semua ini secara algebra untuk y Omega
+
+00:46:21,000 --> 00:46:25,000
+and and that gets us to this expression
+dan dan yang mendapat kita kepada ungkapan ini
+
+00:46:25,000 --> 00:46:31,000
+and this is not a Fourier transform that we've worked out before
+dan ini bukanlah satu Fourier mengubah bahawa kita telah bekerja sebelum
+
+00:46:31,000 --> 00:46:34,000
+and this is have the second part to the
+dan ini adalah mempunyai bahagian kedua kepada
+
+00:46:34,000 --> 00:46:39,000
+inspection procedure what we have is a forty a transform which is a product
+prosedur pemeriksaan apa yang kita ada adalah empat puluh satu mengubah yang adalah produk yang
+
+00:46:39,000 --> 00:46:43,000
+of two turns each of which we can recognize
+dua-gilir setiap yang kita dapat mengenali
+
+00:46:43,000 --> 00:46:48,000
+and what we can consider doing is expanding that out
+dan apa yang kita boleh mempertimbangkan lakukan adalah berkembang yang keluar
+
+00:46:48,000 --> 00:46:52,000
+in a partial fraction expansion namely as a summer turns
+dalam pengembangan pecahan separa iaitu sebagai gilir musim panas
+
+00:46:52,000 --> 00:46:56,000
+because the lady arity property associated with the 48 transform
+kerana harta wanita arity yang berkaitan dengan 48 mengubah
+
+00:46:56,000 --> 00:47:00,000
+the inverse transform is then the song the inverse transform movie to those
+songsang mengubah kemudian lagu songsang mengubah filem kepada mereka
+
+00:47:00,000 --> 00:47:03,000
+terms
+terma-terma
+
+00:47:03,000 --> 00:47:08,000
+okay so if we expand this out in a partial fraction expansion
+okay jadi jika kita mengembangkan ini dalam pengembangan pecahan separa
+
+00:47:08,000 --> 00:47:11,000
+and you can just verify that
+dan anda hanya boleh mengesahkan bahawa
+
+00:47:11,000 --> 00:47:15,000
+if you add these two together you get back to where we started
+jika anda menambah kedua-dua bersama-sama anda kembali ke mana kita bermula
+
+00:47:15,000 --> 00:47:20,000
+we now have the sum of two terms
+kita kini mempunyai sejumlah dua syarat
+
+00:47:20,000 --> 00:47:25,000
+and if we now recognized by inspection
+dan jika kita kini diiktiraf oleh pemeriksaan
+
+00:47:25,000 --> 00:47:30,000
+the inverse Fourier transform love this we see that it simply
+Fourier songsang mengubah cinta ini kita lihat bahawa ia hanya
+
+00:47:30,000 --> 00:47:34,000
+minus either -2 TV times the unit step
+tolak sama ada -2 kali TV langkah unit
+
+00:47:34,000 --> 00:47:38,000
+this one is plus either the minus the times a unit step
+satu ini adalah plus sama ada tolak masa satu langkah unit
+
+00:47:38,000 --> 00:47:41,000
+and so in fact it's the summer these two terms
+dan sebagainya sebenarnya ia musim panas kedua-dua istilah
+
+00:47:41,000 --> 00:47:46,000
+which are the inverse transforms up the
+yang songsang mengubah sehingga
+
+00:47:46,000 --> 00:47:50,000
+individual turns in a partial fraction expansion
+gilir individu dalam pengembangan pecahan separa
+
+00:47:50,000 --> 00:47:56,000
+that then give us the for EA transform
+yang kemudiannya memberi kita untuk EA mengubah
+
+00:47:56,000 --> 00:47:59,000
+all y ft
+semua y ft
+
+00:47:59,000 --> 00:48:03,000
+her I'm sorry for her rather the output
+dia saya minta maaf untuk dia dan bukan output
+
+00:48:03,000 --> 00:48:07,000
+so this is a gypsy that this is why if the
+jadi ini adalah gipsi bahawa ini adalah mengapa jika
+
+00:48:07,000 --> 00:48:10,000
+which is the summer these two exponentials and this
+yang merupakan musim panas kedua-dua exponentials dan ini
+
+00:48:10,000 --> 00:48:13,000
+is the inverse Fourier transform
+adalah Fourier songsang mengubah
+
+00:48:13,000 --> 00:48:20,000
+love y Omega as we calculated it previously
+suka y Omega seperti yang kita dikira ia sebelum ini
+
+00:48:20,000 --> 00:48:24,000
+okay well hopefully you're beginning to get some sense now
+okay juga diharapkan anda mula mendapatkan rasa beberapa kini
+
+00:48:24,000 --> 00:48:27,000
+love how powerful and also beautiful
+suka bagaimana berkuasa dan juga cantik
+
+00:48:27,000 --> 00:48:31,000
+the 48 transform is we've seen already that
+48 mengubah adalah yang kita lihat sudah bahawa
+
+00:48:31,000 --> 00:48:34,000
+a glimpse or how it plays a role in
+kelibat atau bagaimana ia memainkan peranan dalam
+
+00:48:34,000 --> 00:48:38,000
+filtering modulation how its properties helpless with linear constant
+modulasi penapisan bagaimana sifat-sifat tidak berdaya dengan berterusan linear
+
+00:48:38,000 --> 00:48:43,000
+coefficient differential equations et cetera
+persamaan pekali pembezaan dan sebagainya
+
+00:48:43,000 --> 00:48:46,000
+what we will do
+apa yang akan kita lakukan
+
+00:48:46,000 --> 00:48:49,000
+beginning with the next lecture is develop
+bermula dengan kuliah seterusnya adalah membangunkan
+
+00:48:49,000 --> 00:48:53,000
+a similar set of tools for the discrete-time case and there are
+set yang sama alat untuk kes diskret-masa dan terdapat
+
+00:48:53,000 --> 00:48:58,000
+some very strong similarities to what we've done a continuous-time also some
+beberapa persamaan yang sangat kuat dengan apa yang kita telah melakukan masa yang berterusan juga beberapa
+
+00:48:58,000 --> 00:49:00,000
+very important differences
+perbezaan yang sangat penting
+
+00:49:00,000 --> 00:49:04,000
+and then after we have the continuous-time and discrete-time
+dan kemudian selepas kita mempunyai masa yang berterusan dan diskret masa
+
+00:49:04,000 --> 00:49:06,000
+Fourier transforms
+Jelmaan Fourier
+
+00:49:06,000 --> 00:49:10,000
+will then see how the concepts
+akan melihat bagaimana konsep-konsep
+
+00:49:10,000 --> 00:49:13,000
+involved in the properties involved leads to
+yang terlibat dalam hartanah terbabit membawa kepada
+
+00:49:13,000 --> 00:49:17,000
+very important powerful notions love filtering
+tanggapan sangat penting kuat suka menapis
+
+00:49:17,000 --> 00:49:20,000
+modulation sampling and other
+pensampelan modulasi dan lain-lain
+
+00:49:20,000 --> 00:49:22,000
+signal processing ideas thank you
+idea pemprosesan isyarat terima kasih
+

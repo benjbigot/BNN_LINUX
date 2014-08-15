@@ -1,0 +1,3192 @@
+00:00:00,000 --> 00:00:03,000
+the following content is provided under a Creative Commons license
+以下内容是根据Creative Commons授权提供
+
+00:00:03,000 --> 00:00:07,000
+your support will help MIT OpenCourseWare continue to offer
+您的支持将有助于麻省理工学院开放式课程继续报价
+
+00:00:07,000 --> 00:00:10,000
+high-quality educational resources for free
+免费优质教育资源
+
+00:00:10,000 --> 00:00:15,000
+to make a donation or view additional materials from 100 to them IT courses
+进行捐赠或查看其他材料从100到他们的IT课程
+
+00:00:15,000 --> 00:00:18,000
+visit MIT OpenCourseWare at 0 CW
+参观麻省理工学院开放式课程在0 CW
+
+00:00:18,000 --> 00:00:20,000
+that MIT ided you
+麻省理工学院被提供的你
+
+00:00:20,000 --> 00:00:27,000
+home
+家
+
+00:00:30,000 --> 00:00:35,000
+the
+该
+
+00:00:35,000 --> 00:00:38,000
+in
+
+
+00:00:38,000 --> 00:00:40,000
+in
+
+
+00:00:40,000 --> 00:00:45,000
+the new
+新
+
+00:00:45,000 --> 00:00:51,000
+are
+有
+
+00:00:51,000 --> 00:00:55,000
+for
+为
+
+00:00:55,000 --> 00:00:59,000
+over the last several lectures we've dealt with the representation
+在过去的几次讲座，我们已经处理了代表
+
+00:00:59,000 --> 00:01:02,000
+of linear time-invariant systems through convolution
+通过卷积线性时不变系统
+
+00:01:02,000 --> 00:01:06,000
+and just to remind you over basic strategy
+而只是提醒你过的基本策略
+
+00:01:06,000 --> 00:01:09,000
+essentially the idea was to
+基本想法是
+
+00:01:09,000 --> 00:01:13,000
+exploit the notion of when the arity by
+利用当元数由概念
+
+00:01:13,000 --> 00:01:16,000
+decomposing the input into summer basic inputs
+分解输入到夏天基本投入
+
+00:01:16,000 --> 00:01:21,000
+and then using when the arity to tell us that the output can be represented as
+然后使用时，元数来告诉我们，输出可以表示为
+
+00:01:21,000 --> 00:01:25,000
+the corresponding linear combination of the Associated outputs
+的相关输出相应的线性组合
+
+00:01:25,000 --> 00:01:29,000
+so if we have a linear system
+因此，如果我们有一个线性系统
+
+00:01:29,000 --> 00:01:33,000
+either continuous-time and discrete-time for example with continuous time
+无论是连续时间和离散时间例如用连续时间
+
+00:01:33,000 --> 00:01:37,000
+if the input is decomposed as a linear combination
+如果输入被分解为一个线性组合
+
+00:01:37,000 --> 00:01:41,000
+a basic inputs with each of these basic inputs
+每个这些基本输入基本输入
+
+00:01:41,000 --> 00:01:45,000
+generating an Associated output and if the system is linear
+产生一个相应的输出，如果该系统是线性的
+
+00:01:45,000 --> 00:01:49,000
+then the output love the system
+那么输出热爱系统
+
+00:01:49,000 --> 00:01:53,000
+is the same linear combination love The Associated outputs
+是一样的线性组合爱相关产出
+
+00:01:53,000 --> 00:01:56,000
+and the same statement is identical
+和相同的语句是相同的
+
+00:01:56,000 --> 00:02:01,000
+both for continuous-time in discrete-time so
+两个连续时间离散时间，以便
+
+00:02:01,000 --> 00:02:07,000
+the strategy is to decompose the input into these basic inputs
+该策略是分解输入到这些基本的输入
+
+00:02:07,000 --> 00:02:10,000
+and the imports
+而进口
+
+00:02:10,000 --> 00:02:14,000
+were chosen also with some particular
+被选为也有一些特殊的
+
+00:02:14,000 --> 00:02:18,000
+strategy in mind in particular for both continuous-time
+策略考虑，特别适用于连续时间
+
+00:02:18,000 --> 00:02:23,000
+for discrete-time in this representation the
+对于离散时间的这种表示的
+
+00:02:23,000 --> 00:02:26,000
+basic inputs used in the decomposition
+在分解中使用的基本输入
+
+00:02:26,000 --> 00:02:30,000
+are chosen first the ball so that
+第一个被选择的球，使
+
+00:02:30,000 --> 00:02:33,000
+a broad class signals can be represented
+一大类的信号可以被表示
+
+00:02:33,000 --> 00:02:37,000
+interns are these basic inputs and second of all
+实习生是这些基本的输入和所有第二
+
+00:02:37,000 --> 00:02:41,000
+so that the response to these basic inputs
+因此，应对这些基本的输入
+
+00:02:41,000 --> 00:02:46,000
+is in some sense easy to compute now
+在某种意义上容易了计算
+
+00:02:46,000 --> 00:02:50,000
+in the representation which latest
+在表示其最新的
+
+00:02:50,000 --> 00:02:55,000
+to convolution the particular choice that we made
+的卷积，我们提出的特定选择
+
+00:02:55,000 --> 00:02:58,000
+in the discrete-time case for our basic inputs
+在离散时间情况下，我们的基本投入
+
+00:02:58,000 --> 00:03:03,000
+was a decomposition up the input interns
+是分解了的输入实习生
+
+00:03:03,000 --> 00:03:07,000
+or delayed impulses and
+或延迟的冲动和
+
+00:03:07,000 --> 00:03:11,000
+The Associated outputs that that generated
+该生成相关产出
+
+00:03:11,000 --> 00:03:15,000
+were delayed versions of the impulse response
+被延迟的脉冲响应的版本
+
+00:03:15,000 --> 00:03:18,000
+decomposing the input into a linear combination of these
+分解输入到它们的线性组合
+
+00:03:18,000 --> 00:03:22,000
+the output into the corresponding linear combination of these
+输出到这些相应的线性组合
+
+00:03:22,000 --> 00:03:26,000
+then led to the convolution some in
+然后导致了卷积一些
+
+00:03:26,000 --> 00:03:29,000
+the discrete-time case and
+离散时间情况和
+
+00:03:29,000 --> 00:03:32,000
+in the continuous-time case a similar
+在连续时间的情况下类似的
+
+00:03:32,000 --> 00:03:37,000
+kinda decomposition in terms of impulses and Associated representation
+还挺分解冲动的条款及相关代表
+
+00:03:37,000 --> 00:03:40,000
+love the output in terms of the impulse response
+爱的脉冲响应的计算的输出
+
+00:03:40,000 --> 00:03:44,000
+led to the convolution in ago now
+导致卷积以前的事了
+
+00:03:44,000 --> 00:03:49,000
+in this lecture and for number the succeeding lectures
+在此讲学和数量后续讲座
+
+00:03:49,000 --> 00:03:53,000
+will want to turn our attention to a very different
+会想将注意力转移到一个非常不同的
+
+00:03:53,000 --> 00:03:56,000
+said the basic building blocks and
+说的基本构建块和
+
+00:03:56,000 --> 00:03:59,000
+in particular the signals there
+特别是那里的信号
+
+00:03:59,000 --> 00:04:03,000
+will be using as the building blocks for or more general signals
+将要使用的积木或更一般的信号
+
+00:04:03,000 --> 00:04:07,000
+rather than impulses as we've dealt with before
+而不是像我们以前处理的冲动
+
+00:04:07,000 --> 00:04:11,000
+will be in general complex exponentials
+将一般复指数
+
+00:04:11,000 --> 00:04:14,000
+so in a general sense
+所以在一般意义上
+
+00:04:14,000 --> 00:04:19,000
+in the continuous-time case and will be thinking in terms of a decomposition
+在连续时间的情况下，将被想到的一个分解的条件
+
+00:04:19,000 --> 00:04:23,000
+afar signals as a linear combination I'll
+远远望去作为信号的线性组合，我将
+
+00:04:23,000 --> 00:04:27,000
+complex exponentials continuous-time
+复指数的连续时间
+
+00:04:27,000 --> 00:04:31,000
+or in the discrete-time case
+或在离散时间情况
+
+00:04:31,000 --> 00:04:35,000
+complex exponentials where sees the case complex here
+复指数在那里看到这里的情况复杂
+
+00:04:35,000 --> 00:04:39,000
+in discrete-time and s2 K's complex here
+在离散时间和s2 K公司的复杂这里
+
+00:04:39,000 --> 00:04:43,000
+in continuous-time now
+在连续时间现在
+
+00:04:43,000 --> 00:04:46,000
+the basic strategy of course requires
+课程的基本战略需要
+
+00:04:46,000 --> 00:04:51,000
+dead we choose a settlement puts basic building blocks
+死了我们选择的和解提出的基本构建块
+
+00:04:51,000 --> 00:04:54,000
+which have two properties one is that
+其中有两个属性之一是
+
+00:04:54,000 --> 00:04:59,000
+the system response be straightforward to compute were in some sense easy to
+系统的响应是直接将计算为在某种意义上容易
+
+00:04:59,000 --> 00:04:59,000
+compute
+计算
+
+00:04:59,000 --> 00:05:03,000
+and the second is that it be a fairly general said a building blocks
+第二个是，它是一个相当普遍的所述一个积木
+
+00:05:03,000 --> 00:05:09,000
+so that we can build lots of signals I love them
+这样我们就可以建立很多的信号，我爱他们
+
+00:05:09,000 --> 00:05:14,000
+what will find with complex exponentials either continuous-time and discrete-time
+什么会发现与复指数无论是连续时间和离散时间
+
+00:05:14,000 --> 00:05:17,000
+is that they very nicely have those two properties
+是他们非常漂亮，有这两个属性
+
+00:05:17,000 --> 00:05:21,000
+in particular the notion that the
+在特定的概念，即
+
+00:05:21,000 --> 00:05:26,000
+output over linear time-invariant system is easy to compute
+输出过线性时不变系统是容易计算
+
+00:05:26,000 --> 00:05:30,000
+is tied to what's referred to as the eye can function property
+绑什么被称为眼可以起到财产
+
+00:05:30,000 --> 00:05:33,000
+a complex exponentials which will focus on
+一个复指数，将重点放在
+
+00:05:33,000 --> 00:05:36,000
+shortly in a little more detail
+不久，在一个稍微详细
+
+00:05:36,000 --> 00:05:40,000
+and second of all the fact that
+和所有的事实，即第二
+
+00:05:40,000 --> 00:05:44,000
+weekend in fact represent very broad classes have signals as linear
+周末其实代表非常广泛的课程有信号，线性
+
+00:05:44,000 --> 00:05:45,000
+combinations
+组合
+
+00:05:45,000 --> 00:05:49,000
+these will be a topic an issue
+这将是一个主题的问题
+
+00:05:49,000 --> 00:05:53,000
+that will develop in detail over in fact are the next
+将详细制定了​​其实就是下一个
+
+00:05:53,000 --> 00:05:57,000
+set of lectures this lecture and the next set of lectures
+一套讲座这个讲座和下一组讲座
+
+00:05:57,000 --> 00:06:00,000
+now in in doing this although
+现在在做这个，虽然
+
+00:06:00,000 --> 00:06:05,000
+we could in fact begin with our attention focused
+我们其实可以开始我们的注意力集中
+
+00:06:05,000 --> 00:06:10,000
+on in general complex exponentials
+在一般复指数
+
+00:06:10,000 --> 00:06:15,000
+what will choose to do his first focus on the case in which
+究竟会选择做他的第一个专注于案件中，
+
+00:06:15,000 --> 00:06:18,000
+the exponent in the continuous-time cases
+在连续时间情况下的指数
+
+00:06:18,000 --> 00:06:22,000
+purely imaginary as i indicate here
+纯属子虚乌有，因为我在这里表示
+
+00:06:22,000 --> 00:06:25,000
+and in the discrete-time case where
+并在离散时间情况下
+
+00:06:25,000 --> 00:06:28,000
+the magnitude of the complex number Z CK
+复数z CK的幅度
+
+00:06:28,000 --> 00:06:34,000
+is equal to 1 so what that corresponds to in the continuous-time case
+等于1有啥对应于在连续时间的情况下
+
+00:06:34,000 --> 00:06:37,000
+is said building blocks
+是说积木
+
+00:06:37,000 --> 00:06:40,000
+the form you DJ Omega sed Katie
+你的DJ欧米茄sed的凯蒂形式
+
+00:06:40,000 --> 00:06:44,000
+and in the discrete-time case said a building blocks
+并在离散时间情况下，所述一个积木
+
+00:06:44,000 --> 00:06:47,000
+the for eat a DJ Omega KN
+在为吃一个DJ欧米茄KN
+
+00:06:47,000 --> 00:06:52,000
+well we'll see is a representation in these Terms
+还有我们会看到，在这些条款的表示
+
+00:06:52,000 --> 00:06:56,000
+leads to what's for two as for EA
+会导致什么两个为EA
+
+00:06:56,000 --> 00:07:00,000
+analysis and that's what we'll be dealing with over the next several
+分析，这就是我们将与处理未来数
+
+00:07:00,000 --> 00:07:02,000
+lectures
+讲座
+
+00:07:02,000 --> 00:07:06,000
+will then be exploiting this representation actually
+然后将实际利用这种表示
+
+00:07:06,000 --> 00:07:09,000
+through most the course and then toward
+通过大多数的过程中，然后向
+
+00:07:09,000 --> 00:07:13,000
+the end of the course will returned to generalizing
+在课程结束时将返回概括
+
+00:07:13,000 --> 00:07:17,000
+the for a representation to the discussion over plus transforms the
+在一个代表性过度加讨论变换
+
+00:07:17,000 --> 00:07:19,000
+transforms
+变换
+
+00:07:19,000 --> 00:07:22,000
+so for now we want to restrict ourselves to
+所以现在我们要限制自己
+
+00:07:22,000 --> 00:07:25,000
+complex exponentials a particular form in
+复指数在一个特定的形式
+
+00:07:25,000 --> 00:07:29,000
+and in fact also initially to continuous-time
+而事实上也是最初到连续时间
+
+00:07:29,000 --> 00:07:32,000
+signals and systems so let's begin
+信号与系统，以便让我们开始
+
+00:07:32,000 --> 00:07:36,000
+with the continuous-time case the complex exponentials that we want to
+与连续时间的情况下，我们希望将复指数
+
+00:07:36,000 --> 00:07:36,000
+deal with
+处理
+
+00:07:36,000 --> 00:07:41,000
+in and focus first the ball on what I refer to as
+并首先集中在球上我指的是
+
+00:07:41,000 --> 00:07:46,000
+the eigenfunction property love this particular set a building blocks
+本征函数属性喜欢这组特定的构建块
+
+00:07:46,000 --> 00:07:49,000
+we're talking about
+我们谈论
+
+00:07:49,000 --> 00:07:53,000
+basic signals the form either the J Omega some Katy
+基本信号的形式无论是歼欧米茄一些凯蒂
+
+00:07:53,000 --> 00:07:56,000
+and this statement is there
+而这种说法是有
+
+00:07:56,000 --> 00:08:01,000
+for a linear time-invariant system the response to one of these
+对于一个线性时不变系统对这些中的一个
+
+00:08:01,000 --> 00:08:04,000
+is 0 exactly the same form
+0是完全相同的形式
+
+00:08:04,000 --> 00:08:08,000
+just simply multiplied by a complex
+只是简单地乘以一个复杂的
+
+00:08:08,000 --> 00:08:11,000
+factor that complex factor depending on
+那复杂的因素取决于因素
+
+00:08:11,000 --> 00:08:14,000
+what the frequency Omega k is
+什么样的频率欧米茄k是
+
+00:08:14,000 --> 00:08:20,000
+now more or less the justification for this is the proof follows by
+现在或多或少的理由，这是证明通过如下
+
+00:08:20,000 --> 00:08:25,000
+simply looking at the response to a complex exponential
+简单地着眼于应对复杂的指数
+
+00:08:25,000 --> 00:08:28,000
+using the convolution integral so
+使用卷积积分，以便
+
+00:08:28,000 --> 00:08:31,000
+if we put a complex exponential
+如果我们把一个复杂的指数
+
+00:08:31,000 --> 00:08:35,000
+into a linear time-invariant system
+成线性时不变系统
+
+00:08:35,000 --> 00:08:38,000
+with impulse response a gypsy then
+用脉冲响应一个吉普赛然后
+
+00:08:38,000 --> 00:08:42,000
+we can express the response as i've indicated here
+我们可以表达的反应，因为我已经在这里表示
+
+00:08:42,000 --> 00:08:46,000
+we can then recognize that this complex exponential
+然后我们能够认识到这个复指数
+
+00:08:46,000 --> 00:08:49,000
+can be factored into two terms and so
+可被分解成两个名词等
+
+00:08:49,000 --> 00:08:54,000
+we can rewrite this complex exponential
+我们可以重写这个复杂的指数
+
+00:08:54,000 --> 00:08:57,000
+as this product second recognize
+作为该产品的第二个认识
+
+00:08:57,000 --> 00:09:01,000
+that this term can be taken
+这个词可以采取
+
+00:09:01,000 --> 00:09:06,000
+outside the integral over here because of the fact that
+因为外面的事实的积分在这里了
+
+00:09:06,000 --> 00:09:09,000
+it depends only on tea and not on tap now
+它只取决于茶叶，而不是现在自来水
+
+00:09:09,000 --> 00:09:13,000
+and so what we're left with when we tracked this through
+还等什么我们留下了，当我们通过跟踪这
+
+00:09:13,000 --> 00:09:18,000
+is that with a complex exponential input we get
+是，与一个复指数的输入，我们得到
+
+00:09:18,000 --> 00:09:22,000
+an output which is the same complex exponential
+这是相同的复指数的输出
+
+00:09:22,000 --> 00:09:25,000
+namely this factor times
+即这个因素倍
+
+00:09:25,000 --> 00:09:29,000
+this integral and this integral is
+这个积分，这积分是
+
+00:09:29,000 --> 00:09:32,000
+what I referred to above as
+我上面提到的
+
+00:09:32,000 --> 00:09:35,000
+H all omega-6 K
+H所有的omega-6 K，
+
+00:09:35,000 --> 00:09:41,000
+and so in fact we put in a complex exponential
+所以实际上我们把一个复杂的指数
+
+00:09:41,000 --> 00:09:45,000
+we get out a complex exponential love the same frequency
+我们得到了一个复杂的爱情指数相同的频率
+
+00:09:45,000 --> 00:09:49,000
+multiplied by a complex constant and
+乘以一个复常数和
+
+00:09:49,000 --> 00:09:54,000
+that is what's referred to as the eigenfunction property I can function
+那是什么被称为本征函数属性，我可以发挥作用
+
+00:09:54,000 --> 00:09:55,000
+meaning
+含义
+
+00:09:55,000 --> 00:09:59,000
+that and I can function of a system or mathematical expression
+这一点，一个系统或数学表达式，我可以发挥作用
+
+00:09:59,000 --> 00:10:02,000
+is a function which when you put it through the system
+是一个函数，当你把它通过系统
+
+00:10:02,000 --> 00:10:07,000
+comes out looking exactly the same except for a change in amplitude
+出来寻找完全相同的，除了振幅的变化
+
+00:10:07,000 --> 00:10:11,000
+that change in amplitude being the eigen value so
+振幅是本征值变化，从而
+
+00:10:11,000 --> 00:10:14,000
+in fact this function is
+实际上这个功能是
+
+00:10:14,000 --> 00:10:17,000
+the eigenfunction
+本征函数
+
+00:10:17,000 --> 00:10:21,000
+and this bad you
+而这个坏你
+
+00:10:21,000 --> 00:10:27,000
+is the I can bag
+是的，我可以包
+
+00:10:27,000 --> 00:10:30,000
+okay now it's because if the eigenfunction
+现在没事了，这是因为，如果本征函数
+
+00:10:30,000 --> 00:10:35,000
+property that complex exponentials a particularly convenient as building
+属性复指数为建设一个特别方便
+
+00:10:35,000 --> 00:10:35,000
+blocks
+块
+
+00:10:35,000 --> 00:10:39,000
+namely you put it through the system they come out with the same form
+即你把它通过他们拿出相同的形式系统
+
+00:10:39,000 --> 00:10:45,000
+and simply scale the other part to the question related
+并简单地扩展其他部分相关的问题
+
+00:10:45,000 --> 00:10:48,000
+to the strategy that we've been pursuing is
+以，我们一直在追求的是战略
+
+00:10:48,000 --> 00:10:52,000
+to hope that the signals
+以希望的信号
+
+00:10:52,000 --> 00:10:57,000
+can be used as building blocks to represent a
+可以用作构建块来表示一个
+
+00:10:57,000 --> 00:11:00,000
+very broad classes signals through linear combination
+很大类信号通过线性组合
+
+00:11:00,000 --> 00:11:05,000
+and in fact that turns out to be the case with complex exponentials
+而事实上该结果是与复指数的情况下
+
+00:11:05,000 --> 00:11:08,000
+as we worked our way through that
+我们通过我们的工作方式
+
+00:11:08,000 --> 00:11:13,000
+will first consider the case love periodic signals
+首先会考虑的情况下爱的周期信号
+
+00:11:13,000 --> 00:11:18,000
+and what that leads to is a representation a periodic signals
+什么是导致是表示一个周期信号
+
+00:11:18,000 --> 00:11:23,000
+through what's called the forty a series following that
+通过什么所谓的40系列以下的
+
+00:11:23,000 --> 00:11:28,000
+we will turn our attention to non periodic or as I refer to it a periodic
+我们将我们的注意力转向非周期或者我把它周期性
+
+00:11:28,000 --> 00:11:29,000
+signals
+信号
+
+00:11:29,000 --> 00:11:33,000
+and the representation that's developed
+而这发展的代表性
+
+00:11:33,000 --> 00:11:37,000
+interns love linear combinations a complex exponentials
+实习生爱的线性组合的复指数
+
+00:11:37,000 --> 00:11:41,000
+is what's referred to as the 48 transport so
+是什么被称为48运输等等
+
+00:11:41,000 --> 00:11:45,000
+the first thing that we want to deal with our periodic signals
+我们要对付我们的周期信号的第一件事
+
+00:11:45,000 --> 00:11:50,000
+and before you series okay so
+和之前系列的这么好吗
+
+00:11:50,000 --> 00:11:54,000
+what we're talking about then is the continuous-time
+我们正在谈论的则是连续时间
+
+00:11:54,000 --> 00:11:57,000
+for a series and
+对于一个系列和
+
+00:11:57,000 --> 00:12:01,000
+the for a series is a representation for
+在一个系列为代表性
+
+00:12:01,000 --> 00:12:05,000
+periodic continuous-time signals we have
+我们有定期的连续时间信号
+
+00:12:05,000 --> 00:12:09,000
+a signal then which is periodic and
+一个信号，然后是周期性的，
+
+00:12:09,000 --> 00:12:12,000
+were choosing t0 to denote the period
+被选择T0表示的期间
+
+00:12:12,000 --> 00:12:16,000
+so its t0
+所以它的T0
+
+00:12:16,000 --> 00:12:19,000
+then corresponds to the period
+然后对应于该期
+
+00:12:19,000 --> 00:12:22,000
+our periodic signal Omega 0
+我们的周期信号欧米茄0
+
+00:12:22,000 --> 00:12:26,000
+is to party over t0 as
+是t0到党对作为
+
+00:12:26,000 --> 00:12:29,000
+you recall from our discussion love
+你从我们的讨论爱情回忆
+
+00:12:29,000 --> 00:12:34,000
+periodic signals and sinusoids before and that's two pirates 0
+前周期信号和正弦信号，这就是两名海盗0
+
+00:12:34,000 --> 00:12:40,000
+so this is the fundamental frequency now
+所以这是基频现
+
+00:12:40,000 --> 00:12:43,000
+let's examine first the ball complex exponentials
+让我们来看看第一个球复指数
+
+00:12:43,000 --> 00:12:47,000
+and recognize first the ball that
+并首先认识到这球
+
+00:12:47,000 --> 00:12:50,000
+there is a complex exponential that has
+有一个复指数，有
+
+00:12:50,000 --> 00:12:53,000
+exactly the same period and
+一模一样的时期，
+
+00:12:53,000 --> 00:12:57,000
+fundamental frequency as are more general periodic signal
+作为更一般的周期信号基波频率
+
+00:12:57,000 --> 00:13:02,000
+namely the complex exponential you to the jail maker 0t
+即复指数你到监狱厂商0吨
+
+00:13:02,000 --> 00:13:07,000
+where Omega 0 is to Paul II over t0
+其中欧米茄0是保禄二世在T0
+
+00:13:07,000 --> 00:13:13,000
+or equivalent Lee t0 is to pie over Omega 0 now
+或同等李T0是馅饼超过欧米茄0现在
+
+00:13:13,000 --> 00:13:16,000
+that's the complex exponential which has
+这是复杂的指数有
+
+00:13:16,000 --> 00:13:20,000
+t0 as the fundamental period but
+T0为基本周期，但
+
+00:13:20,000 --> 00:13:24,000
+think there are harmonically related complex exponentials
+认为有谐波相关复指数
+
+00:13:24,000 --> 00:13:29,000
+that also have t0 as a period
+这也有T0作为一个周期
+
+00:13:29,000 --> 00:13:32,000
+although in fact their fundamental period shorter
+但事实上他们的基本周期较短
+
+00:13:32,000 --> 00:13:36,000
+so we can also look at complex exponentials
+所以我们也可以看看复指数
+
+00:13:36,000 --> 00:13:39,000
+before either the JK Omega 0t
+无论是JK欧米茄0吨前
+
+00:13:39,000 --> 00:13:42,000
+these likewise are periodic
+这些同样是周期性的
+
+00:13:42,000 --> 00:13:46,000
+with the period love t0
+与周期T0的爱
+
+00:13:46,000 --> 00:13:49,000
+although in fact their fundamental period
+但事实上他们的基本周期
+
+00:13:49,000 --> 00:13:52,000
+is t0 divided by K or equivalently
+为T0除以K或等价
+
+00:13:52,000 --> 00:13:56,000
+to par i divided by their fundamental frequency
+以我看齐除以它们的基频
+
+00:13:56,000 --> 00:14:00,000
+k Omega 0 so as K
+K表欧米茄0，因此以K
+
+00:14:00,000 --> 00:14:03,000
+a richer varies these correspond to
+更丰富的这些变化对应于
+
+00:14:03,000 --> 00:14:07,000
+harmonically related complex exponentials
+谐波相关复指数
+
+00:14:07,000 --> 00:14:11,000
+now with the forty a series
+如今随着40系列
+
+00:14:11,000 --> 00:14:16,000
+says and will justify this kinda bit by bit is the discussion goes I'm
+说，将证明这有点儿点点滴滴是讨论去我
+
+00:14:16,000 --> 00:14:20,000
+what the four-day series says that in fact what for EA
+什么样的为期四天的系列说，其实什么EA
+
+00:14:20,000 --> 00:14:23,000
+said which was essentially the
+说这是本质上的
+
+00:14:23,000 --> 00:14:27,000
+is brilliant insight is that if I have
+是辉煌的观点是，如果我有
+
+00:14:27,000 --> 00:14:32,000
+a very general periodic signal I can represented as a linear combination of
+非常一般的周期信号能表示为的线性组合
+
+00:14:32,000 --> 00:14:34,000
+these harmonically related
+这些谐波相关
+
+00:14:34,000 --> 00:14:37,000
+complex exponentials so
+复指数的声音
+
+00:14:37,000 --> 00:14:41,000
+that representation is what i've indicated here
+这代表的是什么，我在这里表示
+
+00:14:41,000 --> 00:14:45,000
+and this summation is
+这是求和
+
+00:14:45,000 --> 00:14:48,000
+what will be referred to as
+什么将被称为
+
+00:14:48,000 --> 00:14:52,000
+the for EA
+在对EA
+
+00:14:52,000 --> 00:14:56,000
+series
+系列
+
+00:14:56,000 --> 00:14:59,000
+and as we proceed with the discussion there are two issues
+当我们着手讨论有两个问题
+
+00:14:59,000 --> 00:15:04,000
+couldn't that will develop one is assuming
+不能，将开发一种是假设
+
+00:15:04,000 --> 00:15:08,000
+that our periodic signal can be represented this way
+我们的周期信号可以表示这样
+
+00:15:08,000 --> 00:15:12,000
+how do we determine the for a series coefficients
+我们如何确定的一系列系数
+
+00:15:12,000 --> 00:15:15,000
+as they refer to a suitcase that's one question
+因为它们都指向一个手提箱这是一个问题
+
+00:15:15,000 --> 00:15:19,000
+and the second question will be
+而第二个问题将是
+
+00:15:19,000 --> 00:15:23,000
+how broad a class of signals in fact can be represented that
+如何广泛的一类，事实上信号可以表示该
+
+00:15:23,000 --> 00:15:26,000
+this way and bats another question their
+这种方式和蝙蝠又质疑自己
+
+00:15:26,000 --> 00:15:30,000
+will deal with separately
+将分别处理
+
+00:15:30,000 --> 00:15:34,000
+now just focusing on this representation
+现在只需专注于这种表示
+
+00:15:34,000 --> 00:15:37,000
+for a minute this representation
+一分钟，这表示
+
+00:15:37,000 --> 00:15:41,000
+love the four EA series which
+爱的四个EA系列里面
+
+00:15:41,000 --> 00:15:44,000
+I repeated again
+我又重复了一遍
+
+00:15:44,000 --> 00:15:48,000
+here
+这里
+
+00:15:48,000 --> 00:15:52,000
+is what's referred to as the complex
+是什么被称为复
+
+00:15:52,000 --> 00:15:55,000
+exponential form love for EA series
+对EA系列指数形式的爱
+
+00:15:55,000 --> 00:15:58,000
+and it's important to note incidently
+而且要注意顺便说一句很重要
+
+00:15:58,000 --> 00:16:04,000
+day this summation involves frequencies k Omega 0
+一天，这个总和涉及频率K表欧米茄0
+
+00:16:04,000 --> 00:16:07,000
+their are both positive and negative
+他们是正面和负面的
+
+00:16:07,000 --> 00:16:10,000
+in other words this index K runs over
+换句话说，这个指数的日K运行于
+
+00:16:10,000 --> 00:16:15,000
+limits that include both negative values and positive ads
+限制，包括消极的价值观和积极的广告
+
+00:16:15,000 --> 00:16:19,000
+now that complex exponential form is one
+现在，复杂的指数形式之一
+
+00:16:19,000 --> 00:16:22,000
+representation for before you a series
+对于之前的一系列代表性
+
+00:16:22,000 --> 00:16:26,000
+and in fact it's the one that we will be principally
+而事实上它是一个我们将主要
+
+00:16:26,000 --> 00:16:31,000
+relying on in this course there is another representation that
+在这个过程中依靠有另一种表示形式
+
+00:16:31,000 --> 00:16:34,000
+perhaps you come across previously
+也许你以前碰到过
+
+00:16:34,000 --> 00:16:38,000
+and that in a variety of other contacts is
+而且在其他各种接触是
+
+00:16:38,000 --> 00:16:41,000
+is typically used which is called the trigonometric form
+通常用于这就是所谓的三角形状
+
+00:16:41,000 --> 00:16:46,000
+the forty a series without really tracking through the algebra
+四十一系列不通过代数真的跟踪
+
+00:16:46,000 --> 00:16:50,000
+essentially we can get to the trigonometric for
+基本上我们可以得到的三角为
+
+00:16:50,000 --> 00:16:54,000
+from the complex exponential form by
+从由复指数形式
+
+00:16:54,000 --> 00:16:58,000
+recognizing that if we express the complex coefficients
+认识到，如果我们表示复系数
+
+00:16:58,000 --> 00:17:02,000
+in polar for or in rectangular for
+在极地或矩形的
+
+00:17:02,000 --> 00:17:06,000
+and expand the complex exponential
+并扩大复指数
+
+00:17:06,000 --> 00:17:11,000
+term out in terms of cosine plus J sign
+长期在余弦方面加Ĵ的标志
+
+00:17:11,000 --> 00:17:14,000
+using just simply Oilers relation then
+只用简单的油工关系，然后
+
+00:17:14,000 --> 00:17:18,000
+in we will end up with the representation
+在我们最终会与代表
+
+00:17:18,000 --> 00:17:22,000
+for the periodic signal
+为周期性信号
+
+00:17:22,000 --> 00:17:26,000
+were a re expression love the for a series
+被重新表达爱的系列
+
+00:17:26,000 --> 00:17:32,000
+expression that we had previously either in the form that I indicate here
+我们曾经无论是在我这里显示的形式表达
+
+00:17:32,000 --> 00:17:36,000
+we're now the periodic signal is expressed
+我们现在的周期信号表示
+
+00:17:36,000 --> 00:17:40,000
+in terms of a summation love cosines
+在求和爱余弦条款
+
+00:17:40,000 --> 00:17:43,000
+with appropriate ample to in phase
+适当充足的在相
+
+00:17:43,000 --> 00:17:48,000
+or another acquittal or triggered a metric for
+或另一无罪或引发度量
+
+00:17:48,000 --> 00:17:51,000
+involves rearranging this
+涉及重新安排这
+
+00:17:51,000 --> 00:17:54,000
+in terms or a combination
+在条款或组合
+
+00:17:54,000 --> 00:17:58,000
+of cosines and signs now
+余弦和现在的迹象
+
+00:17:58,000 --> 00:18:03,000
+in this representation the frequencies of the sinusoids
+在此表示的正弦波的频率
+
+00:18:03,000 --> 00:18:07,000
+very only over positive frequencies
+只有极了正频率
+
+00:18:07,000 --> 00:18:11,000
+and typically one thinks
+和一般人认为
+
+00:18:11,000 --> 00:18:15,000
+of periodic signals is having positive frequencies associated with them
+周期信号是有与它们相关联正频率
+
+00:18:15,000 --> 00:18:18,000
+however let's look back
+然而，让我们回顾一下
+
+00:18:18,000 --> 00:18:22,000
+at the complex exponential form
+在复指数形式
+
+00:18:22,000 --> 00:18:26,000
+for the forty a series at the top of the board
+第四十一个系列在电路板的顶层
+
+00:18:26,000 --> 00:18:31,000
+and in that representation when we use this representation
+并在这代表当我们使用这种表示方法
+
+00:18:31,000 --> 00:18:34,000
+will find it convenient to refer to both
+将是方便的同时指
+
+00:18:34,000 --> 00:18:39,000
+positive frequencies and negative frequencies so
+正频率和负频率等等
+
+00:18:39,000 --> 00:18:43,000
+the representation that we will most typically be using is the complex
+我们将最通常使用的表示为复
+
+00:18:43,000 --> 00:18:44,000
+exponential form
+指数形式
+
+00:18:44,000 --> 00:18:51,000
+and in that form what will find as we think it decomposing a periodic signal
+并以这种形式究竟会发现，因为我们认为它分解周期信号
+
+00:18:51,000 --> 00:18:54,000
+in to its compliments
+在它的赞美
+
+00:18:54,000 --> 00:18:58,000
+at different frequencies it will involve both positive frequencies
+在不同的频率会同时涉及正频率
+
+00:18:58,000 --> 00:19:02,000
+negative frequencies
+负频率
+
+00:19:02,000 --> 00:19:06,000
+okay now we have the
+现在没事了，我们有
+
+00:19:06,000 --> 00:19:10,000
+for EA series representation as i've indicated here
+对EA系列的代表性，因为我已经在这里表示
+
+00:19:10,000 --> 00:19:14,000
+again so far I sidestepped the issue as
+再次到目前为止，我回避了这个问题，因为
+
+00:19:14,000 --> 00:19:19,000
+to whether this in fact represents all the signals that we'd like to represent
+这是否实际上代表了所有我们想代表信号
+
+00:19:19,000 --> 00:19:22,000
+let's first address the issue
+让我们先来解决这个问题
+
+00:19:22,000 --> 00:19:25,000
+love how we determine these coefficients
+爱我们如何确定这些系数
+
+00:19:25,000 --> 00:19:29,000
+Acer K assuming that in fact this representation is Val
+宏碁ķ假设，其实这种表示是Val
+
+00:19:29,000 --> 00:19:33,000
+and again all kinda move through the algebra
+并再次全部还挺移动通过代数
+
+00:19:33,000 --> 00:19:38,000
+fairly quickly its a the outbreak steps the ones that
+很快它的一个爆发步骤是那些
+
+00:19:38,000 --> 00:19:41,000
+you can pursue more leisurely just the kinda
+你可以只是有点追求更悠闲
+
+00:19:41,000 --> 00:19:45,000
+verify them in step through them but
+验证它们在通过他们的一步，但
+
+00:19:45,000 --> 00:19:49,000
+essentially the algebra develops I did the recognition
+本质上是代数的发展我也承认
+
+00:19:49,000 --> 00:19:54,000
+that if we integrate a complex exponential
+如果我们整合一个复杂的指数
+
+00:19:54,000 --> 00:19:58,000
+over one period t0
+在一个周期T0
+
+00:19:58,000 --> 00:20:01,000
+and I mean by this notation that this is an integral
+我通过这种表示法意味着这是一个整体
+
+00:20:01,000 --> 00:20:04,000
+over a period where I don't particularly care
+过了一段，我并不特别关心
+
+00:20:04,000 --> 00:20:09,000
+where the period starts and where the period stops in other words
+其中期开始和其中换言之期间停止
+
+00:20:09,000 --> 00:20:13,000
+exactly what period I picked that this integral
+我挑到底是什么时期，这个积分
+
+00:20:13,000 --> 00:20:16,000
+is equal to t0 when M is equal to 0
+等于T0当M等于0时
+
+00:20:16,000 --> 00:20:20,000
+and it's equal to 0 if am is not equal to 0
+而且它等于0，如果点是不等于0的
+
+00:20:20,000 --> 00:20:25,000
+that follow simply from the fact that if we substitute in
+从事实遵循简单地说，如果我们在替换
+
+00:20:25,000 --> 00:20:30,000
+for using Oilers relations so that we have the integral to cosign
+使用油工关系，使我们有不可或缺的余弦
+
+00:20:30,000 --> 00:20:33,000
+was J times assign if M
+是的J倍指派如果M
+
+00:20:33,000 --> 00:20:37,000
+is not equal to 0 than
+是不等于0的比
+
+00:20:37,000 --> 00:20:40,000
+of these integrals over a period are
+这些积分在一段是
+
+00:20:40,000 --> 00:20:45,000
+0 the integral over sign it a periodic have a sinus or a cosigner sign
+0积分超过它标志一个周期有一个鼻窦或联署标志
+
+00:20:45,000 --> 00:20:50,000
+over an integral number periods is zero whereas
+在整数周期是零，而
+
+00:20:50,000 --> 00:20:54,000
+if M is equal to 0 this in a crawl
+如果M等于0这在抓取
+
+00:20:54,000 --> 00:20:58,000
+will be equal to 20 the integral the cosine
+将等于20的积分余弦
+
+00:20:58,000 --> 00:21:01,000
+and the integral on the sign is equal to
+并且在该标志的积分是相等
+
+00:21:01,000 --> 00:21:05,000
+okay well the next step
+还好以及下一步
+
+00:21:05,000 --> 00:21:09,000
+in developing the expression for the coefficients a Sat K
+在发展表达式系数a周六Ķ
+
+00:21:09,000 --> 00:21:12,000
+is to refer back to
+是指回
+
+00:21:12,000 --> 00:21:16,000
+before a series expression which was that except he
+这是一系列的表达式之前，除了他
+
+00:21:16,000 --> 00:21:21,000
+is equal to the sum with basic K either the JK Omega 0t
+等于与基本ķ任JK欧米茄0吨总和
+
+00:21:21,000 --> 00:21:25,000
+if we multiply both sides that by either minus
+如果我们乘双方的任何一方负
+
+00:21:25,000 --> 00:21:29,000
+jaan Omega 0t and
+朱展欧米茄0吨和
+
+00:21:29,000 --> 00:21:36,000
+integrate that over a period
+整合了一段
+
+00:21:36,000 --> 00:21:40,000
+both sides of the equation integrated over a period
+在等式两边集成在一段
+
+00:21:40,000 --> 00:21:44,000
+so these two equations are equal and then
+所以这两个方程是相等的，然后
+
+00:21:44,000 --> 00:21:48,000
+in essence interchange the summation and the integration
+在本质上交换求和及积分
+
+00:21:48,000 --> 00:21:53,000
+so that this pardon the expression cons outside the psalm
+所以，这个赦免诗篇外表达的利弊
+
+00:21:53,000 --> 00:21:58,000
+and then we combine these two complex exponentials together
+然后我们结合这两种复指数一起
+
+00:21:58,000 --> 00:22:01,000
+where we come out is
+我们走出来的
+
+00:22:01,000 --> 00:22:04,000
+the expression that i've indicated here in
+我已经在这里表示在表达式
+
+00:22:04,000 --> 00:22:09,000
+and then essentially what happens at this point algebraically
+然后基本上什么在这一点上发生代数
+
+00:22:09,000 --> 00:22:12,000
+is that we use the result that we just developed
+是我们使用，我们刚刚开发的结果
+
+00:22:12,000 --> 00:22:16,000
+to evaluate this cynical so
+评估这种愤世嫉俗所以
+
+00:22:16,000 --> 00:22:21,000
+multiplying both sides the forty a series in and doing the integration
+乘双方的40系列中，做整合
+
+00:22:21,000 --> 00:22:24,000
+leads us after the appropriate manipulation
+相应的操作后，使我们
+
+00:22:24,000 --> 00:22:28,000
+to the expression that
+该表达式
+
+00:22:28,000 --> 00:22:31,000
+I have up here and
+我在这里和
+
+00:22:31,000 --> 00:22:35,000
+this is equal to
+这等于
+
+00:22:35,000 --> 00:22:39,000
+this integral is equal to t0
+这个积分等于T0
+
+00:22:39,000 --> 00:22:42,000
+if K is equal to an
+如果K等于一个
+
+00:22:42,000 --> 00:22:45,000
+corresponding 20 up here and 80
+相应的20在这里和80
+
+00:22:45,000 --> 00:22:50,000
+otherwise which is what we have demonstrated or are you previously
+否则这就是我们已经证明，或者是你以前
+
+00:22:50,000 --> 00:22:53,000
+and the upshot of all that then is that
+和所有的结果则是，
+
+00:22:53,000 --> 00:22:56,000
+the right hand side if this expression disappears
+右手侧，如果该表达式中消失
+
+00:22:56,000 --> 00:23:00,000
+except for the term when K is equal to n
+除了当K等于n的术语
+
+00:23:00,000 --> 00:23:04,000
+and so finally we have what I indicate here
+所以最后我们有什么我在此说明
+
+00:23:04,000 --> 00:23:09,000
+taking t0 and moving it over to the other side of the equation
+服用t0和移动它交给等式的另一边
+
+00:23:09,000 --> 00:23:13,000
+we then that then tells us
+我们那么然后告诉我们
+
+00:23:13,000 --> 00:23:17,000
+how we determine the forty a series coefficients
+我们如何判断40一个级数的系数
+
+00:23:17,000 --> 00:23:21,000
+a7 Auris K so
+A7耳Ķ所以
+
+00:23:21,000 --> 00:23:24,000
+that in effect and is the
+在效果，并且是
+
+00:23:24,000 --> 00:23:28,000
+what we refer to as the analysis equation the equation that begins with
+我们所说的分析方程开头的方程
+
+00:23:28,000 --> 00:23:29,000
+excessive to me
+过度的给我
+
+00:23:29,000 --> 00:23:33,000
+and tells us how to get the for a series coefficients
+并告诉我们如何获得的一系列系数
+
+00:23:33,000 --> 00:23:36,000
+what are referred to as
+什么被称为
+
+00:23:36,000 --> 00:23:39,000
+the 48 series synthesis equation
+48系列合成公式
+
+00:23:39,000 --> 00:23:42,000
+is the equation that tells us
+就是告诉我们的方程式
+
+00:23:42,000 --> 00:23:45,000
+how to build exit see outta love
+如何建立退​​出看见失控的爱情
+
+00:23:45,000 --> 00:23:50,000
+these complex exponentials so we have the synthesis equation
+这些复杂的指数函数，所以我们有合成公式
+
+00:23:50,000 --> 00:23:53,000
+which is the one that we started from we have
+这是我们从我们开始了一个
+
+00:23:53,000 --> 00:23:57,000
+the analysis equation which is the equation
+分析方程，为方程
+
+00:23:57,000 --> 00:24:01,000
+that we just developed
+我们刚刚开发
+
+00:24:01,000 --> 00:24:04,000
+okay so we in effect have
+好了，所以我们实际上有
+
+00:24:04,000 --> 00:24:09,000
+going through the issue love assuming there for a series representation
+经历了爱情的问题假设有一个系列的代表性
+
+00:24:09,000 --> 00:24:13,000
+is in fact valid how we get
+其实有效的，我们怎么弄
+
+00:24:13,000 --> 00:24:16,000
+the coefficients we want to address
+我们要解决的系数
+
+00:24:16,000 --> 00:24:19,000
+somewhat the question love how broad a classic signals that we're talking
+有些问题爱怎么广义经典的信号，我们正在谈论
+
+00:24:19,000 --> 00:24:23,000
+are we talking about and what's in fact amazing
+我们谈论的是，什么是事实上惊人
+
+00:24:23,000 --> 00:24:26,000
+and was for EA's amazing insight
+并为EA的惊人的洞察力
+
+00:24:26,000 --> 00:24:29,000
+was that it's a very broad class say but
+是，它是一个非常广泛的一类，但说
+
+00:24:29,000 --> 00:24:33,000
+let's first look at just some examples
+让我们先来看看一些例子
+
+00:24:33,000 --> 00:24:39,000
+in which we take a signal assume that it has the Fourier series representation
+在此我们需要一个信号假设它有傅立叶级数表示
+
+00:24:39,000 --> 00:24:44,000
+and see what the for a series coefficients look like so
+看看是什么为一系列系数看起来像这样
+
+00:24:44,000 --> 00:24:49,000
+will begin with what I refer to as
+将开始与我所说的
+
+00:24:49,000 --> 00:24:54,000
+an antisymmetric periodic square wave periodic of course because we're talking
+当然反对称周期的方波周期，因为我们正在谈论
+
+00:24:54,000 --> 00:24:56,000
+about periodic signals
+关于周期信号
+
+00:24:56,000 --> 00:24:59,000
+square wave referring to its shape and
+方波指的是其形状和
+
+00:24:59,000 --> 00:25:04,000
+antisymmetric referring to the fact that it is an odd
+反对称指这样的事实，它是一个奇
+
+00:25:04,000 --> 00:25:08,000
+time function in other words it is antisymmetric
+换句话说，时间函数是反对称的
+
+00:25:08,000 --> 00:25:12,000
+about the origin now
+关于现在的起源
+
+00:25:12,000 --> 00:25:15,000
+the expression for the for a series coefficients
+为表达为一系列系数
+
+00:25:15,000 --> 00:25:19,000
+tells us that we determine a sieve K
+告诉我们，我们判断一个筛子Ķ
+
+00:25:19,000 --> 00:25:24,000
+by taking one over 20 times the integral over a period
+通过采取不可分割的单超过20倍过一段
+
+00:25:24,000 --> 00:25:28,000
+affects 50 either minus JK Omega 0t
+影响50或者减去JK欧米茄0吨
+
+00:25:28,000 --> 00:25:32,000
+DT the most convenient thing in this case
+DT在这种情况下，最方便的事
+
+00:25:32,000 --> 00:25:36,000
+is to choose a period which
+是选择的期间，
+
+00:25:36,000 --> 00:25:41,000
+let's say goes from minus 20 over to the plus 20 over to
+让我们说去从零下20多到20加过来
+
+00:25:41,000 --> 00:25:44,000
+so here except he is -1 here
+所以这里除了他是这里-1
+
+00:25:44,000 --> 00:25:47,000
+expertise plus one and so
+专业知识加1等
+
+00:25:47,000 --> 00:25:51,000
+I've expressed the for a series called efficiency as
+我已经表达了对一系列被称为效率
+
+00:25:51,000 --> 00:25:55,000
+this integral that's from minus 20 over
+这个积分这是从零下20多
+
+00:25:55,000 --> 00:25:59,000
+and then and it said that is the
+然后，它说，是
+
+00:25:59,000 --> 00:26:03,000
+positive part of the cycle and so we have
+周期的积极组成部分，所以我们有
+
+00:26:03,000 --> 00:26:07,000
+these two integrals now I don't want to
+这两个积分现在我不想
+
+00:26:07,000 --> 00:26:11,000
+tracked through the details both the algebra again I
+通过细节都再次代数跟踪我
+
+00:26:11,000 --> 00:26:14,000
+I guess I've decided that that's much more fun for you do on your own
+我想我已经决定，这是更有趣为你做你自己
+
+00:26:14,000 --> 00:26:18,000
+but the way it comes out when you go through it
+但它出来时，你通过它的方式
+
+00:26:18,000 --> 00:26:22,000
+is the expression that I finally indicate after
+为表达我后，终于显示
+
+00:26:22,000 --> 00:26:26,000
+suggesting that there are a few more steps to follow
+提示有几个步骤如下
+
+00:26:26,000 --> 00:26:29,000
+and what develops is that
+什么发展是
+
+00:26:29,000 --> 00:26:32,000
+those two integrals together for K
+这两个积分一起于K
+
+00:26:32,000 --> 00:26:36,000
+not equal to 0 come out to this expression
+不等于0出来这个表达
+
+00:26:36,000 --> 00:26:42,000
+and that expression is not valid for k equal to 0
+而且表达式无效对于k等于0
+
+00:26:42,000 --> 00:26:46,000
+per kg equal to 0 we can go back to
+每公斤等于0，我们可以回去
+
+00:26:46,000 --> 00:26:50,000
+the basic expression for the forty a series
+基本表达式为40系列
+
+00:26:50,000 --> 00:26:54,000
+which is one over t0 the integral over a period
+这是一个比T0的积分在一段
+
+00:26:54,000 --> 00:26:58,000
+exit see in the minus JK Omega 0 /td TD
+在零下JK欧米茄0 / TD TD出口看
+
+00:26:58,000 --> 00:27:01,000
+for cake 10 of course this term
+当然对于蛋糕10这个术语
+
+00:27:01,000 --> 00:27:04,000
+just simply becomes one and
+只是简单地变成一个，
+
+00:27:04,000 --> 00:27:10,000
+so the zeroth coefficient is one over 20 times the integral
+所以零系数是不可分割的单超过20倍
+
+00:27:10,000 --> 00:27:14,000
+X 50 over a period now
+X 50过了一段现在
+
+00:27:14,000 --> 00:27:18,000
+going back to the original function
+回到原来的功能
+
+00:27:18,000 --> 00:27:21,000
+that we have what we're saying then is that
+我们有我们在说什么，然后是
+
+00:27:21,000 --> 00:27:27,000
+0th coefficient is one over 20 times the integral over
+第0系数是超过20倍的积分超过
+
+00:27:27,000 --> 00:27:31,000
+one period which is in effect the average value
+1期是有效的平均值
+
+00:27:31,000 --> 00:27:36,000
+and it straight forward to verify the for this case that average value
+它直截了当地验证了这种情况的平均值
+
+00:27:36,000 --> 00:27:40,000
+is equal to 0 okay
+等于0好
+
+00:27:40,000 --> 00:27:43,000
+now let's look at
+现在让我们来看看
+
+00:27:43,000 --> 00:27:46,000
+these for a series coefficients on a bar graph
+这些对于一个条形图一系列系数
+
+00:27:46,000 --> 00:27:51,000
+and i've indicated that here the
+我已经指出，这里的
+
+00:27:51,000 --> 00:27:55,000
+expression for the for a series coefficients we just developed and
+为为一系列系数，我们刚刚开发与表达
+
+00:27:55,000 --> 00:27:58,000
+a involves its
+一个涉及其
+
+00:27:58,000 --> 00:28:02,000
+0 for cake 0 it's a factor this form
+0蛋糕0这是一个因素这种形式
+
+00:28:02,000 --> 00:28:06,000
+for canine equal to 0 plotted on a bar graph
+犬等于0上绘制条形图
+
+00:28:06,000 --> 00:28:10,000
+then we see values like this 0
+然后，我们看到这样的0值
+
+00:28:10,000 --> 00:28:13,000
+at cake 0 and and associated values
+在蛋糕0和关联的值
+
+00:28:13,000 --> 00:28:16,000
+and their number things to focus on
+其数量的东西集中在
+
+00:28:16,000 --> 00:28:19,000
+when you look at this
+当你看这个
+
+00:28:19,000 --> 00:28:25,000
+one is the fact that the forty a series coefficients for this example
+1是一个事实，即40对本例的一系列系数
+
+00:28:25,000 --> 00:28:29,000
+are surely imaginary
+肯定是虚构的
+
+00:28:29,000 --> 00:28:34,000
+a second is that the Fourier series coefficients for this example
+第二个是，在这个例子中的傅里叶级数的系数
+
+00:28:34,000 --> 00:28:39,000
+are odd sequence in other words if you look at this sequence which you see
+在换句话说奇数序列，如果你看一下这个序列，你看
+
+00:28:39,000 --> 00:28:43,000
+are these values for negative K
+这些值的阴K
+
+00:28:43,000 --> 00:28:46,000
+flipped over so there their imaginary
+翻转过来，让他们有虚
+
+00:28:46,000 --> 00:28:49,000
+and odd and
+和奇数和
+
+00:28:49,000 --> 00:28:52,000
+what that results in when
+是什么导致了当
+
+00:28:52,000 --> 00:28:55,000
+you look at the
+你看看
+
+00:28:55,000 --> 00:28:59,000
+the triggered a metric form the 4e a series
+触发度量形式的4E系列
+
+00:28:59,000 --> 00:29:05,000
+is that in fact those conditions if you put the terms altogether
+是，事实上，如果这些条件你把干脆条款
+
+00:29:05,000 --> 00:29:09,000
+lead you to a trigger a metric representation
+带你到一个触发度量表示
+
+00:29:09,000 --> 00:29:13,000
+which involves only sign terms
+其中只涉及迹象条款
+
+00:29:13,000 --> 00:29:16,000
+in other words no co-signed turns let me just draw your attention to the fact
+换句话说，没有共同签署轮流让我提请你注意这样的事实：
+
+00:29:16,000 --> 00:29:18,000
+that
+那
+
+00:29:18,000 --> 00:29:21,000
+since a suitcase the acer case or imaginary
+因为一个手提箱宏基情况或虚
+
+00:29:21,000 --> 00:29:25,000
+this jay takes care that fact so that these coefficients
+这杰伊需要照顾，事实上使这些系数
+
+00:29:25,000 --> 00:29:28,000
+are in fact real so what this says
+其实真正的有啥此说
+
+00:29:28,000 --> 00:29:33,000
+is that for the antisymmetric square wave the
+是，对于反对称方波的
+
+00:29:33,000 --> 00:29:37,000
+it in effect the forty a series is a sign series
+它实际上四系列是一个标志系列
+
+00:29:37,000 --> 00:29:40,000
+the antisymmetric square wave is an odd function
+反对称方波是奇函数
+
+00:29:40,000 --> 00:29:45,000
+sinusoids are not are odd functions and so this is all kinda reasonable that
+血窦不能是奇函数，所以这是所有还挺合理的
+
+00:29:45,000 --> 00:29:46,000
+we're building
+我们正在构建
+
+00:29:46,000 --> 00:29:50,000
+odd function ido odd functions
+奇函数IDO奇函数
+
+00:29:50,000 --> 00:29:54,000
+as an additional aside which a I won't
+作为一个额外拨出其中一个我不会
+
+00:29:54,000 --> 00:29:57,000
+exploit or refer to any further here
+利用或参考任何进一步这里
+
+00:29:57,000 --> 00:30:01,000
+but just draw your attention to is that another aspect
+但只是提请您注意的是，另一个方面
+
+00:30:01,000 --> 00:30:06,000
+love this periodic square wave the particular one that we chose
+喜欢这个周期性方波的特定的一个，我们选择了
+
+00:30:06,000 --> 00:30:09,000
+is dead it is what's referred to as a
+是死是什么被称为
+
+00:30:09,000 --> 00:30:13,000
+on harmonic function in other words
+上，换句话说谐函数
+
+00:30:13,000 --> 00:30:16,000
+for even values if K
+即使值在K
+
+00:30:16,000 --> 00:30:20,000
+before a series coefficients 30 their only 90
+一系列系数30的只有90才
+
+00:30:20,000 --> 00:30:25,000
+for iPad use K
+为iPad利用类型K
+
+00:30:25,000 --> 00:30:29,000
+okay now let's look at another example another example
+好吧，现在让我们来看另一个例子另一个例子
+
+00:30:29,000 --> 00:30:33,000
+is the symmetric periodic square wave
+是对称周期的方波
+
+00:30:33,000 --> 00:30:37,000
+and this is in fact example
+这实际上是在例如
+
+00:30:37,000 --> 00:30:41,000
+4.5 worked out in more detail in the tax then
+4.5制定了详细的税收再
+
+00:30:41,000 --> 00:30:45,000
+I won't bother to work work this out in detail here
+我不想在这里工作的工作这一点详细
+
+00:30:45,000 --> 00:30:49,000
+except to draw your attention to several
+除了提请你注意的几个
+
+00:30:49,000 --> 00:30:54,000
+points here is the symmetric periodic square wave
+点这里是对称周期的方波
+
+00:30:54,000 --> 00:30:57,000
+and what I mean by symmetric
+和我说的对称
+
+00:30:57,000 --> 00:31:00,000
+is that it's an even time function
+是，它是一个更时间功能
+
+00:31:00,000 --> 00:31:05,000
+now just kinda extrapolating your intuition
+现在只是有点推断你的直觉
+
+00:31:05,000 --> 00:31:08,000
+what we you should expect is that if if it's a
+我们应该期待什么，如果，如​​果它是一个
+
+00:31:08,000 --> 00:31:12,000
+only even time function it should be built up
+即使只有一次函数应该建立
+
+00:31:12,000 --> 00:31:15,000
+or buildable if it's built up a little %ah to only
+或可建，如果它建立了一点点％啊，只
+
+00:31:15,000 --> 00:31:18,000
+even sinusoids and in fact
+甚至血窦和实际上
+
+00:31:18,000 --> 00:31:22,000
+that's the case so if we look at
+是这样的话，所以如果我们看
+
+00:31:22,000 --> 00:31:25,000
+the four-day series coefficients for this
+这个为期四天的一系列系数
+
+00:31:25,000 --> 00:31:29,000
+the zeroth coefficient again as the average value
+再次第零系数的平均值
+
+00:31:29,000 --> 00:31:32,000
+which in this case is a half here I've plotted
+在这种情况下是半这里我绘制
+
+00:31:32,000 --> 00:31:36,000
+hi times the for a series coefficients so
+喜倍的一系列系数，从而
+
+00:31:36,000 --> 00:31:39,000
+0 thank you as pie over to
+0感谢你的馅饼交给
+
+00:31:39,000 --> 00:31:42,000
+the coefficients are now and even sequence
+该系数是现在乃至序列
+
+00:31:42,000 --> 00:31:45,000
+and in in other words symmetric
+和在换言之对称
+
+00:31:45,000 --> 00:31:49,000
+about cake 0 and the consequences that
+关于蛋糕0和后果
+
+00:31:49,000 --> 00:31:53,000
+is that when you take these coefficients
+是，当你把这些系数
+
+00:31:53,000 --> 00:31:58,000
+and put together the equivalent triggered a metric form
+并放在一起，相当于触发一个度量形式
+
+00:31:58,000 --> 00:32:01,000
+the triggered a metric for involves
+触发一个度量涉及
+
+00:32:01,000 --> 00:32:05,000
+only cosines and no
+只有余弦和无
+
+00:32:05,000 --> 00:32:09,000
+sign turns now
+现在标记变为
+
+00:32:09,000 --> 00:32:13,000
+you'll see this in and other examples not that will do in the lecture but
+你会看到这一点和其他的例子不就是会做演讲，但
+
+00:32:13,000 --> 00:32:17,000
+examples in the text in the video manual if in fact
+在视频说明书文本的例子，如果实际上
+
+00:32:17,000 --> 00:32:20,000
+the square way was neither symmetric or antisymmetric
+广场路既不是对称或反对称
+
+00:32:20,000 --> 00:32:23,000
+then the trigonometric form would involve both
+那么三角函数形式将涉及两个
+
+00:32:23,000 --> 00:32:27,000
+sines and cosines and
+正弦和余弦和
+
+00:32:27,000 --> 00:32:30,000
+that is of course the more general case
+这当然是更一般的情况
+
+00:32:30,000 --> 00:32:34,000
+furthermore in the two examples are shown here
+此外在这两个例子都在这里显示
+
+00:32:34,000 --> 00:32:37,000
+we we in both cases
+我们大家在这两种情况下
+
+00:32:37,000 --> 00:32:40,000
+the signal is odd harmonic
+该信号是奇次谐波
+
+00:32:40,000 --> 00:32:43,000
+in other words for even bad news K
+换句话说，即使坏新闻K
+
+00:32:43,000 --> 00:32:48,000
+the coefficients are equal to 0 although I won't justify that here that's a
+该系数等于0，虽然我不会辩解，在这里，这是一个
+
+00:32:48,000 --> 00:32:50,000
+consequence that the fact that
+结果是一个事实，即
+
+00:32:50,000 --> 00:32:54,000
+this symmetry is exactly about half a period
+这种对称性正是大约半期
+
+00:32:54,000 --> 00:32:57,000
+and if you made the on time with a square wave
+如果你有一个方波所做的时间
+
+00:32:57,000 --> 00:33:02,000
+different in relation to the of time then that property would also
+有关的时间不同，那么该属性也
+
+00:33:02,000 --> 00:33:06,000
+disappear
+消失
+
+00:33:06,000 --> 00:33:07,000
+now
+现在
+
+00:33:07,000 --> 00:33:10,000
+what's kind amazing actually in
+有什么样的惊人实际上是在
+
+00:33:10,000 --> 00:33:14,000
+is that if we take a square wave like
+是，如果我们把一个方波像
+
+00:33:14,000 --> 00:33:19,000
+I have here or as I had in the antisymmetric case
+我这里还是因为我曾在反对称情况
+
+00:33:19,000 --> 00:33:22,000
+the implication is that I can bill
+其含义是，我可以账单
+
+00:33:22,000 --> 00:33:25,000
+that square wave by adding up
+该方波通过加
+
+00:33:25,000 --> 00:33:30,000
+on of signs were cosines and
+对标志是余弦和
+
+00:33:30,000 --> 00:33:34,000
+it really seems kinda amazing because the square wave after all
+它似乎真的有点惊人的，因为方波毕竟
+
+00:33:34,000 --> 00:33:37,000
+is a very discontinuous functions
+是一个非常不连续的函数
+
+00:33:37,000 --> 00:33:42,000
+sinusoids are very continuous and it seems puzzling that in fact
+血窦非常连续，似乎令人费解，其实
+
+00:33:42,000 --> 00:33:46,000
+you can do that well let's look in a little bit of detail
+你可以做的那么好，让我们来看看详细的一点点
+
+00:33:46,000 --> 00:33:49,000
+how the sinusoidal
+如何正弦
+
+00:33:49,000 --> 00:33:53,000
+turns and up to
+打开和高达
+
+00:33:53,000 --> 00:33:56,000
+build a square wave and to do that
+建设方波，要做到这一点
+
+00:33:56,000 --> 00:34:00,000
+let's first define what I refer to
+让我们先来定义什么我指的是
+
+00:34:00,000 --> 00:34:04,000
+as a partial song so
+作为一个部分的歌曲等等
+
+00:34:04,000 --> 00:34:07,000
+here we have the expression
+在这里，我们有表达
+
+00:34:07,000 --> 00:34:10,000
+which is the synthesis
+它是合成
+
+00:34:10,000 --> 00:34:15,000
+equation telling us how accept T could be represented
+公式告诉我们如何接受Ŧ可以表示
+
+00:34:15,000 --> 00:34:18,000
+as complex exponentials if it can be and
+如果为复指数它可以和
+
+00:34:18,000 --> 00:34:22,000
+let's consider just a finite number of turns in this song
+让我们考虑的圈在这首歌只是数量有限
+
+00:34:22,000 --> 00:34:26,000
+and so X 7ft of course as n goes to infinity
+和则X当然，随着n的7英尺趋于无穷
+
+00:34:26,000 --> 00:34:31,000
+approaches the infinite sum that we're talking about and although we could do
+方法，我们正在谈论的无限求和，虽然我们可以做
+
+00:34:31,000 --> 00:34:35,000
+this more generally let's not let's focus on the symmetric square wave case
+这更普遍，我们不要让我们专注于对称方波的情况下
+
+00:34:35,000 --> 00:34:40,000
+where because it the symmetry of these coefficients namely that a suitcase
+在那里，因为它这些系数的对称性即一个手提箱
+
+00:34:40,000 --> 00:34:41,000
+equal to minus
+等于负
+
+00:34:41,000 --> 00:34:45,000
+is equal to a serb minus K we can rewrite
+等于一个塞族零下•我们可以重写
+
+00:34:45,000 --> 00:34:50,000
+these turns as cosine turns and so this partial some
+这些匝数为余弦转弯，所以这部分的一些
+
+00:34:50,000 --> 00:34:53,000
+can be express the way arm expressing it here
+可以表达手臂的方式在这里表达
+
+00:34:53,000 --> 00:34:57,000
+well let's look at
+也让我们来看看
+
+00:34:57,000 --> 00:35:01,000
+a few the Stearns on the graph I have
+几个贝尔斯登在图形上我有
+
+00:35:01,000 --> 00:35:04,000
+first the ball exit tea which is our
+第一球出口茶叶这是我们的
+
+00:35:04,000 --> 00:35:07,000
+original square wave
+原来的方波
+
+00:35:07,000 --> 00:35:11,000
+the turn that I indicate here
+该轮到我在此说明
+
+00:35:11,000 --> 00:35:14,000
+is the factor over half which
+超过一半的因子，它
+
+00:35:14,000 --> 00:35:19,000
+is this term
+就是这个词
+
+00:35:19,000 --> 00:35:23,000
+with any calls one that would correspond to anyone co-signed term
+与任何调用一个会符合任何人共同签署期限
+
+00:35:23,000 --> 00:35:26,000
+to that and so the sole those two would be yes
+到这一点，所以唯一的两个人会是肯定的
+
+00:35:26,000 --> 00:35:31,000
+which looks a little close to the square wave but
+这看起来有点接近方波，但
+
+00:35:31,000 --> 00:35:35,000
+certainly not very close to it at all and in fact
+当然不是非常接近它在所有与实际上
+
+00:35:35,000 --> 00:35:39,000
+in its somewhat hard to imagine without
+在某种程度上很难想象没有
+
+00:35:39,000 --> 00:35:44,000
+seeing the terms build-up how in fact by adding more and more turns we can
+眼看条款积聚如何，其实通过添加更多和更多的匝数，我们可以
+
+00:35:44,000 --> 00:35:45,000
+generate something
+生成的东西
+
+00:35:45,000 --> 00:35:49,000
+that is essentially flat except at the discontinuities
+这基本上是平的，除了在不连续
+
+00:35:49,000 --> 00:35:53,000
+so let's look at this example and what I'd like to show
+所以让我们来看看这个例子，我想展示
+
+00:35:53,000 --> 00:35:58,000
+is this example but now as we add many
+就是这个例子，但现在，我们增加了许多
+
+00:35:58,000 --> 00:36:01,000
+more turns to it and let's see in fact
+更多转向它，让我们事实上看到
+
+00:36:01,000 --> 00:36:04,000
+how these individual turns add up
+如何将这些各匝加起来
+
+00:36:04,000 --> 00:36:07,000
+to build up the square way so
+建立起来的方方式，使
+
+00:36:07,000 --> 00:36:11,000
+this is the square wave that we want to build up
+这是我们要建立的方波
+
+00:36:11,000 --> 00:36:14,000
+through the forty a series is this some of sinusoids
+经过四十一个系列是一些血窦
+
+00:36:14,000 --> 00:36:20,000
+and the term for cake 0 will be a constant which represents the DC value
+和术语蛋糕0将代表直流电值恒定
+
+00:36:20,000 --> 00:36:21,000
+with this
+与此
+
+00:36:21,000 --> 00:36:25,000
+and so in the partial sum as we develop it
+所以在我们开发它的部分和
+
+00:36:25,000 --> 00:36:30,000
+the first thing they will show is just the term for cable 0
+他们将显示的第一件事就是术语电缆0
+
+00:36:30,000 --> 00:36:35,000
+now for cables one we would add to that
+现在的电缆之一，我们将添加到该
+
+00:36:35,000 --> 00:36:38,000
+one sinusoidal term and
+一个正弦项和
+
+00:36:38,000 --> 00:36:43,000
+so some love the term for cake was one cake was 0
+所以一些爱术语蛋糕1蛋糕是0
+
+00:36:43,000 --> 00:36:48,000
+is represented here now
+这里指现时
+
+00:36:48,000 --> 00:36:53,000
+when we go to K calls to because of the fact that this is an odd harmonic
+我们去的时候，因为一个事实，即这是一个奇次谐波来调用K到
+
+00:36:53,000 --> 00:36:53,000
+function
+功能
+
+00:36:53,000 --> 00:36:57,000
+in fact the term for cake was it was too
+其实这个词的蛋糕是它太
+
+00:36:57,000 --> 00:37:01,000
+will be will have zero amplitude and so this won't change
+将将具有零幅度，所以这不会改变
+
+00:37:01,000 --> 00:37:06,000
+here we show the
+在这里，我们将展示
+
+00:37:06,000 --> 00:37:09,000
+for a series would cake was to and there's no change
+对于一系列将蛋糕并没有变化
+
+00:37:09,000 --> 00:37:13,000
+and then we will go to cable 23
+然后我们将去23线
+
+00:37:13,000 --> 00:37:14,000
+and
+和
+
+00:37:14,000 --> 00:37:19,000
+and we will be adding then one additional sinusoidal term here's cake
+我们将增加那么这里一个额外的正弦项的蛋糕
+
+00:37:19,000 --> 00:37:19,000
+was three
+是三
+
+00:37:19,000 --> 00:37:24,000
+when we go to cable 24 again there won't be any change
+当我们去到电缆24再次将不会有任何改变
+
+00:37:24,000 --> 00:37:27,000
+but their will be another term that's
+但他们的将是另一个术语，它是
+
+00:37:27,000 --> 00:37:32,000
+added at cake was five here and cable 6
+在蛋糕中加入五岁这里和电缆6
+
+00:37:32,000 --> 00:37:37,000
+again because it's odd harmonic no change and finally cable 7
+又因为它的奇次谐波没有改变，最后电缆7
+
+00:37:37,000 --> 00:37:43,000
+is shown here okay and we can begin to see that
+这里显示没关系，我们可以开始看到
+
+00:37:43,000 --> 00:37:47,000
+this starts to look somewhat like the square wave but
+这开始看起来有点像方波，但
+
+00:37:47,000 --> 00:37:51,000
+now to really emphasize how this builds up let's
+现在要真正强调的是如何建立起来让我们
+
+00:37:51,000 --> 00:37:56,000
+more rapidly and Ed many more terms and in fact
+更迅速和Ed有更多的方面和实际上
+
+00:37:56,000 --> 00:38:00,000
+increase the number of turns up to about a hundred recognizing
+增加圈数高达约一百承认
+
+00:38:00,000 --> 00:38:03,000
+that the shape will only change on the inclusion
+该形状将仅改变对夹杂物
+
+00:38:03,000 --> 00:38:08,000
+all the odd number terms not the even-numbered turns because it's an odd
+所有奇数条款不是偶数转弯，因为它是一个奇怪的
+
+00:38:08,000 --> 00:38:11,000
+harmonic function so now we're
+调和函数所以现在我们
+
+00:38:11,000 --> 00:38:15,000
+increasing and we're building up toward
+增加，我们正在建立对
+
+00:38:15,000 --> 00:38:19,000
+k equal to 100 200 turns an
+ķ等于100 200变为一个
+
+00:38:19,000 --> 00:38:22,000
+notice that it is the higher
+注意，它是较高的
+
+00:38:22,000 --> 00:38:25,000
+order turns dead tend to build up
+为了变成死倾向于建立
+
+00:38:25,000 --> 00:38:30,000
+the discontinuity corresponding to the notion
+对应于所述概念的不连续性
+
+00:38:30,000 --> 00:38:34,000
+there'd the discontinuities or sharp edges in a signal
+那里倒是在一个信号中的不连续性或尖锐的边缘
+
+00:38:34,000 --> 00:38:38,000
+in fact are represented through the higher
+实际上是通过较高的代表
+
+00:38:38,000 --> 00:38:42,000
+frequencies in the forty a series and here we have
+在40系列，在这里我们有频率
+
+00:38:42,000 --> 00:38:46,000
+a not too unreasonable approximation
+一个不太合理的近似
+
+00:38:46,000 --> 00:38:50,000
+to the original square wave there is the artifact of the ripples at the
+原来的方波存在的涟漪在神器
+
+00:38:50,000 --> 00:38:52,000
+discontinuity and in fact
+不连续性和实际上
+
+00:38:52,000 --> 00:38:56,000
+though that rippling behavior at the discontinuities
+虽然在不连续的行为荡漾
+
+00:38:56,000 --> 00:39:00,000
+is referred to as the Gibbs phenomenon
+被称为吉布斯现象
+
+00:39:00,000 --> 00:39:04,000
+and it's an inherent part love the forty a series representation at
+和它的一个固有部分爱40在一系列的代表性
+
+00:39:04,000 --> 00:39:05,000
+discontinuities
+不连续
+
+00:39:05,000 --> 00:39:08,000
+now to emphasize this
+现在强调这
+
+00:39:08,000 --> 00:39:12,000
+let's decrease the number of turns back down
+让我们来减小匝数回​​落
+
+00:39:12,000 --> 00:39:16,000
+and we will carry this down
+我们会进行下来
+
+00:39:16,000 --> 00:39:19,000
+to k equal to 1 again
+于k等于1再次
+
+00:39:19,000 --> 00:39:23,000
+to emphasizes how the sinusoids are building up
+要强调的是如何血窦正在建立
+
+00:39:23,000 --> 00:39:28,000
+the square wave here we are back at Cape cools
+方波在这里我们又回到海角冷却
+
+00:39:28,000 --> 00:39:31,000
+1 and then finally we
+1，然后最后我们
+
+00:39:31,000 --> 00:39:34,000
+will and back in the sinusoids that we took out
+将和回到我们拿出血窦
+
+00:39:34,000 --> 00:39:37,000
+and let's build this back up to 100 turns
+并让我们建立这个备份到100圈
+
+00:39:37,000 --> 00:39:41,000
+showing the approximation dead
+显示近似死
+
+00:39:41,000 --> 00:39:48,000
+we generated with a hundred turns to the square way
+我们有一百产生轮流到广场路
+
+00:40:00,000 --> 00:40:03,000
+okay so so what you saw is that
+好了，所以你看到的是，
+
+00:40:03,000 --> 00:40:06,000
+in fact we got awfully close to a square wave
+其实我们得到了非常接近方波
+
+00:40:06,000 --> 00:40:10,000
+and the other thing think that was kind of interesting about it is that went
+和其他的事情认为是一种有趣的关于它是去
+
+00:40:10,000 --> 00:40:10,000
+along
+沿
+
+00:40:10,000 --> 00:40:15,000
+was the fact that with the low frequencies
+的事实是，与低频
+
+00:40:15,000 --> 00:40:19,000
+what we were tending to bill was the general behavior
+什么我们倾向于法案是一般的行为
+
+00:40:19,000 --> 00:40:22,000
+and as the higher frequencies came in
+和更高的频率来在
+
+00:40:22,000 --> 00:40:25,000
+that tended to contribute the discontinuities
+这往往做出贡献的不连续性
+
+00:40:25,000 --> 00:40:29,000
+work contribute to the discontinuity and
+工作做出贡献的不连续性和
+
+00:40:29,000 --> 00:40:32,000
+in fact something their will
+其实一些自己的意志
+
+00:40:32,000 --> 00:40:35,000
+standout more and more as we go through our discussion
+杰出的事物越来越多，因为我们通过我们的讨论
+
+00:40:35,000 --> 00:40:39,000
+love for a series of 48 transforms is
+对于一系列48变换为爱
+
+00:40:39,000 --> 00:40:43,000
+that general statement that its the low-frequency
+该一般性发言，它的低频
+
+00:40:43,000 --> 00:40:47,000
+terms bat represent
+条款蝙蝠代表
+
+00:40:47,000 --> 00:40:50,000
+the broad time behavior and
+广阔的时间和行为
+
+00:40:50,000 --> 00:40:54,000
+its the high-frequency terms that are used to build up
+其被用于建立高频条款
+
+00:40:54,000 --> 00:40:59,000
+the sharp transitions in the time domain
+急剧转变中的时域
+
+00:40:59,000 --> 00:41:02,000
+okay now we need to get a little more precise
+还好现在我们需要得到更确切的一点
+
+00:41:02,000 --> 00:41:06,000
+about the question of how in fact
+有关如何在事实问题
+
+00:41:06,000 --> 00:41:09,000
+the 48 series
+48系列
+
+00:41:09,000 --> 00:41:12,000
+or when before you a series represents
+或者当你前一个系列代表
+
+00:41:12,000 --> 00:41:16,000
+the functions that we're talking about and in what sense they represent them
+我们正在谈论的和在什么意义上，他们代表他们的功能
+
+00:41:16,000 --> 00:41:19,000
+in and so if we look
+在所以如果我们看
+
+00:41:19,000 --> 00:41:25,000
+again at the synthesis
+再次在合成
+
+00:41:25,000 --> 00:41:28,000
+ok wage in were really wanna ask
+在确定工资真的想问问
+
+00:41:28,000 --> 00:41:31,000
+is if we add up enough for these terms
+就是如果我们添加了足够的这些条款
+
+00:41:31,000 --> 00:41:34,000
+in what sense does this some represent
+在何种意义上这方面的一些代表
+
+00:41:34,000 --> 00:41:38,000
+this time function well
+这个时间的功能以及
+
+00:41:38,000 --> 00:41:42,000
+let's again use the notion love are partial some
+让我们再次使用这个概念的爱都是一些偏
+
+00:41:42,000 --> 00:41:46,000
+so we have the partial song down here
+所以我们有部分歌曲到这里
+
+00:41:46,000 --> 00:41:50,000
+in and we can think love the difference between
+在我们能想到爱的区别
+
+00:41:50,000 --> 00:41:54,000
+this partial some and the
+这部分的一些和
+
+00:41:54,000 --> 00:41:57,000
+original time function as
+原来时间功能
+
+00:41:57,000 --> 00:42:01,000
+the ever and I've defined the error here
+不断和我在这里定义的错误
+
+00:42:01,000 --> 00:42:06,000
+and what we would like to know is does this error
+而我们想知道的是这个错误
+
+00:42:06,000 --> 00:42:09,000
+decrease as we aired more and more turns
+减少，因为我们播出越来越多的匝数
+
+00:42:09,000 --> 00:42:14,000
+and in fact in what sense if the air does decrease in what sense
+而事实上在何种意义上，如果空调确实减少在何种意义
+
+00:42:14,000 --> 00:42:18,000
+there's a decrease now in detail
+有一个减少现在详细
+
+00:42:18,000 --> 00:42:22,000
+this is a fairly complicated an elaborate topic I don't mean to make
+这是一个相当复杂的一个精心制作的主题我的意思不是让
+
+00:42:22,000 --> 00:42:23,000
+that sound frightening
+听起来可怕
+
+00:42:23,000 --> 00:42:29,000
+its mainly a statement that I don't want to explore it and a lot of detail
+其主要是我不想去探索它，很多细节的陈述
+
+00:42:29,000 --> 00:42:33,000
+but it relates to what is referred to
+但它涉及到什么被称为
+
+00:42:33,000 --> 00:42:36,000
+as the issue a convergence the forty a series
+作为这一问题的收敛四十一系列
+
+00:42:36,000 --> 00:42:40,000
+and the convergence the 48 series
+和收敛的48系列
+
+00:42:40,000 --> 00:42:44,000
+the the bottom line on at the kinda and statement
+就在有点和声明底线
+
+00:42:44,000 --> 00:42:48,000
+can be made in several ways one statement
+可以用几种方式之一语句来
+
+00:42:48,000 --> 00:42:53,000
+related to convergence the for a series is the following if
+以收敛为一个系列的以下相关，如果
+
+00:42:53,000 --> 00:42:56,000
+I have a time function which
+我有一个时间函数，
+
+00:42:56,000 --> 00:43:00,000
+is what is referred to as square integrable namely
+是什么被称为平方可积即
+
+00:43:00,000 --> 00:43:05,000
+its integral over a period is finite then
+它的积分在一个周期是有限的，然后
+
+00:43:05,000 --> 00:43:08,000
+what you can show kinda amazingly
+你能告诉是什么样的惊人
+
+00:43:08,000 --> 00:43:12,000
+is that the energy E in
+的是，在能量E
+
+00:43:12,000 --> 00:43:15,000
+that error in other words the energy in the difference between the original
+换句话说，能量在原来的区别是错误
+
+00:43:15,000 --> 00:43:16,000
+function
+功能
+
+00:43:16,000 --> 00:43:20,000
+and the partial some the energy and that
+和局部的一些能量，并且
+
+00:43:20,000 --> 00:43:25,000
+goes to zero as n goes to infinity
+趋近于零当n趋于无穷
+
+00:43:25,000 --> 00:43:31,000
+a somewhat tighter condition is a condition referred to as it the racially
+一个有点严格条件是指它在种族条件
+
+00:43:31,000 --> 00:43:34,000
+conditions which says that
+条件说
+
+00:43:34,000 --> 00:43:37,000
+if the time function
+如果时间功能
+
+00:43:37,000 --> 00:43:43,000
+is absolutely integral not square honorable but absolutely integral
+绝对是不可或缺的不是正方形的光荣，但绝对是不可或缺的
+
+00:43:43,000 --> 00:43:48,000
+and I've kinda hedge the issue by just simply referred to accept T as being
+我已经被刚刚简称接受T作为是有点冲的问题
+
+00:43:48,000 --> 00:43:49,000
+well behaved
+很乖
+
+00:43:49,000 --> 00:43:55,000
+then the statement is dead the error in fact goes to zero
+那么该语句是死的，其实误差趋于零
+
+00:43:55,000 --> 00:43:59,000
+as and increases except at the discontinuities
+如，除了在不连续性和增加
+
+00:43:59,000 --> 00:44:03,000
+and what well-behaved means in that statement
+在该声明中，什么乖巧的手段
+
+00:44:03,000 --> 00:44:07,000
+is that as discussed in the book there are a finite number
+是因为在本书中讨论有数量有限
+
+00:44:07,000 --> 00:44:12,000
+maxima and minima in any period and a finite number finite discontinuities
+最大值和最小值在任何时期和有限数量有限的不连续性
+
+00:44:12,000 --> 00:44:13,000
+which is essentially
+这实质上是
+
+00:44:13,000 --> 00:44:18,000
+always the case so under square in Accra bility
+总是那么下广场阿克拉bility的情况下
+
+00:44:18,000 --> 00:44:22,000
+what we have is the statement not that the partial sum goes to the right value
+我们所拥有的是语句不是部分和去正确的价值
+
+00:44:22,000 --> 00:44:23,000
+at every point
+在每一点上
+
+00:44:23,000 --> 00:44:27,000
+but that the energy in the air goes to zero
+但是，在空气中的能量变为零
+
+00:44:27,000 --> 00:44:32,000
+under the jewish way conditions it says that in fact the signal goes to the
+犹太人的方式条件下，它说，事实上，信号变到
+
+00:44:32,000 --> 00:44:33,000
+right back to you
+马上回你
+
+00:44:33,000 --> 00:44:37,000
+at every time instant except
+除了在每一次瞬间
+
+00:44:37,000 --> 00:44:41,000
+at the discontinuities so
+在这样的不连续性
+
+00:44:41,000 --> 00:44:46,000
+going back to the square wave
+回到方波
+
+00:44:46,000 --> 00:44:50,000
+the square wave satisfies either one of those conditions and so
+方波满足任一条件者等
+
+00:44:50,000 --> 00:44:55,000
+what the consequences is that with the square wave
+其后果是什么，与方波
+
+00:44:55,000 --> 00:44:58,000
+if we looked at the error then in fact
+如果我们看了看错误，那么实际上
+
+00:44:58,000 --> 00:45:01,000
+what we would find is that the energy
+我们所发现的是，能
+
+00:45:01,000 --> 00:45:05,000
+in the error would go to zero as we at
+在错误会去到零，因为我们在
+
+00:45:05,000 --> 00:45:08,000
+more and more turns in the partial some and in fact
+在一些局部和实际上越来越多匝
+
+00:45:08,000 --> 00:45:13,000
+if says the square wave also satisfies the dish les conditions
+如果说，方波也满足了菜莱条件
+
+00:45:13,000 --> 00:45:18,000
+the actual value with the air the difference between
+与空气之间的差的实际值
+
+00:45:18,000 --> 00:45:21,000
+the partial some and the true value will will
+局部和一些真正的价值将将
+
+00:45:21,000 --> 00:45:25,000
+actually go to zero that difference will go to zero
+实际上变为零的差异将变为零
+
+00:45:25,000 --> 00:45:29,000
+except at the discontinuities and
+除了上面的不连续性和
+
+00:45:29,000 --> 00:45:32,000
+that in fact is kinda evident as
+那其实是有点明显的，因为
+
+00:45:32,000 --> 00:45:35,000
+we watch the function build-up
+我们看功能集结
+
+00:45:35,000 --> 00:45:39,000
+by adding up these terms and so in fact
+在事实上增加了这些条款等
+
+00:45:39,000 --> 00:45:43,000
+let's go back and see again
+让我们回去再看看
+
+00:45:43,000 --> 00:45:46,000
+the development the partial sons
+发展中的部分子
+
+00:45:46,000 --> 00:45:50,000
+in relation to the original time function let's observe
+相对于原有的计时功能，让我们观察
+
+00:45:50,000 --> 00:45:54,000
+this time again basically what we saw before which is that it builds up
+此时再次基本上是我们以前看见的是，它建立了
+
+00:45:54,000 --> 00:46:00,000
+to the right answer and furthermore what will plot this time also as a function
+正确的答案，此外什么将绘制这个时候也作为一个函数
+
+00:46:00,000 --> 00:46:01,000
+of time
+时间
+
+00:46:01,000 --> 00:46:06,000
+is the energy in the air and what we'll see is that the energy in the air
+是在空气中的能量，以及我们将看到的是，在空气中的能量
+
+00:46:06,000 --> 00:46:09,000
+will be tending toward zero as the number
+将朝向零的数目来趋向
+
+00:46:09,000 --> 00:46:12,000
+turns increases so
+原来如此增加
+
+00:46:12,000 --> 00:46:15,000
+once again we have the square wave and
+再次，我们拥有方波和
+
+00:46:15,000 --> 00:46:19,000
+we want to again show the buildup of the
+我们要再次显示的积聚
+
+00:46:19,000 --> 00:46:23,000
+forty a series this time showing also
+40系列这一次还展示
+
+00:46:23,000 --> 00:46:27,000
+how the energy in the air decreases as we had more and more turns
+如何在空气中的能量减小，因为我们有越来越多匝
+
+00:46:27,000 --> 00:46:30,000
+well once again will begin
+以及再次将开始
+
+00:46:30,000 --> 00:46:34,000
+with cake was 0 corresponding to the constant term
+与蛋糕被相应的常数项0
+
+00:46:34,000 --> 00:46:37,000
+and was shown on the bottom trace is
+并显示在底部的痕迹是
+
+00:46:37,000 --> 00:46:40,000
+the energy in the air between those two and
+这两个和之间的能量在空气中
+
+00:46:40,000 --> 00:46:44,000
+will then and the term for cables 1
+之后会和术语电缆1
+
+00:46:44,000 --> 00:46:49,000
+to the DC term and will see that the energy will decrease
+到DC任期，并看到能量将减少
+
+00:46:49,000 --> 00:46:53,000
+when we do that here we have then the summer
+当我们这样做，在这里我们有那么夏天
+
+00:46:53,000 --> 00:46:56,000
+cake 10 cables 1 now
+蛋糕10线1现在
+
+00:46:56,000 --> 00:47:00,000
+with cables to the energy won't decrease
+用电缆将能量不会减少
+
+00:47:00,000 --> 00:47:07,000
+any further because it's an odd harmonic function
+任何进一步的，因为它是一个奇次谐波功能
+
+00:47:07,000 --> 00:47:12,000
+that's what we've just added in when we add in the term for cables 3
+这就是我们刚刚添加的，当我们添加的期限为3电缆
+
+00:47:12,000 --> 00:47:15,000
+again will see the energy in the air decrease
+再次将看到的能量在空中减少
+
+00:47:15,000 --> 00:47:22,000
+as reflected in the bottom curve
+这反映在底部曲线
+
+00:47:22,000 --> 00:47:26,000
+so there we are at cables 3 when
+所以我们在电缆3时
+
+00:47:26,000 --> 00:47:31,000
+we go to cable 24 there again is no change in the air
+我们去的电缆24再次出现在空气中无变化
+
+00:47:31,000 --> 00:47:38,000
+at cables 5 again the air decreases
+在电缆5再次降低空气
+
+00:47:39,000 --> 00:47:43,000
+k equal to 6% know there will be no change again
+ķ等于6％知道有将再次没有变化
+
+00:47:43,000 --> 00:47:47,000
+an 8k course 7 the energy decreases
+一个8K当然7的能量减少
+
+00:47:47,000 --> 00:47:51,000
+and now let's show the how the air decreases by building up the number
+现在，让我们通过建立数字显示的是如何减少空气
+
+00:47:51,000 --> 00:47:56,000
+turns much more rapidly already the air has gotten somewhat small on the scale
+原来快得多已经在空气已经变得有些小的规模
+
+00:47:56,000 --> 00:47:58,000
+in which were showing it so let's expand out
+其中显示了它让我们拓展出
+
+00:47:58,000 --> 00:48:02,000
+the ever scale the vertical axis
+不断扩展，垂直轴
+
+00:48:02,000 --> 00:48:05,000
+displaying the energy in the error so that we could watch
+显示在错误的能量，使我们可以看
+
+00:48:05,000 --> 00:48:08,000
+how the energy decreases as
+如何能随着
+
+00:48:08,000 --> 00:48:12,000
+we had more and more terms so here we have
+我们有越来越多的方面所以在这里我们有
+
+00:48:12,000 --> 00:48:15,000
+the vertical scale expanded and
+垂直刻度扩大，
+
+00:48:15,000 --> 00:48:18,000
+now what we'll do is increase
+现在我们要做的就是增加
+
+00:48:18,000 --> 00:48:23,000
+the number of turns in the forty a series and watch the energy in the air
+圈中的40系列的数目和观看的能量在空气中
+
+00:48:23,000 --> 00:48:24,000
+at decreasing
+在减少
+
+00:48:24,000 --> 00:48:27,000
+always decreasing of course on the inclusion
+总是递减的过程中就列入
+
+00:48:27,000 --> 00:48:31,000
+love the odd number turns and
+爱奇绕组匝数
+
+00:48:31,000 --> 00:48:35,000
+not on the inclusion of the even-numbered turns because the fact
+不包含偶数匝，因为事实
+
+00:48:35,000 --> 00:48:39,000
+that it's an odd harmonic function now the energy in the air
+这是一个奇怪的调和函数现在的能量在空中
+
+00:48:39,000 --> 00:48:43,000
+asymptotically will approach 0 although
+渐近将接近0，虽然
+
+00:48:43,000 --> 00:48:48,000
+point by point the forty a series will never be equal to the square wave
+逐点的40系列永远不会等于方波
+
+00:48:48,000 --> 00:48:52,000
+it will at every instant of time
+它会在每个时间瞬间
+
+00:48:52,000 --> 00:48:56,000
+except at the discontinuities where there will always be
+除了在不连续的地方，总是会有
+
+00:48:56,000 --> 00:49:00,000
+some ripple corresponding to
+对应于一定的纹波
+
+00:49:00,000 --> 00:49:04,000
+what's referred to as the Gibbs phenomenon
+什么是被称为吉布斯现象
+
+00:49:04,000 --> 00:49:08,000
+okay well so what we've seen in is
+好舒服，所以我们所看到的是
+
+00:49:08,000 --> 00:49:12,000
+a and a quick look at the Fourier series
+一个又一个快速浏览一下傅里叶级数
+
+00:49:12,000 --> 00:49:15,000
+representation love periodic signals
+代表爱情的周期信号
+
+00:49:15,000 --> 00:49:20,000
+we more broadly
+我们更广泛地
+
+00:49:20,000 --> 00:49:23,000
+wanna have a more general representation
+希望有一个更一般的表示
+
+00:49:23,000 --> 00:49:29,000
+love oath signals in terms of complex exponentials and so our next step
+在复指数方面，所以爱的誓言信号，我们的下一个步骤
+
+00:49:29,000 --> 00:49:33,000
+will be to move toward a representation
+将走向一个代表性
+
+00:49:33,000 --> 00:49:36,000
+I'll not periodic or a periodic signals
+我不会定期或周期信号
+
+00:49:36,000 --> 00:49:40,000
+now the details if this I leave for the next lecture
+现在的细节，如果这让我在接下来的演讲
+
+00:49:40,000 --> 00:49:43,000
+the only thought that I want introduced at this point
+我在这一点上希望推出的唯一的想法
+
+00:49:43,000 --> 00:49:46,000
+is the basic strategy you which
+是基本策略你的
+
+00:49:46,000 --> 00:49:51,000
+is somewhat amazing and kinda interesting to reflect on
+是有点惊人的，还挺有趣的反思
+
+00:49:51,000 --> 00:49:54,000
+in the interim the basic strategy
+在此期间的基本策略
+
+00:49:54,000 --> 00:49:57,000
+with in a periodic signal is
+在一个周期信号是
+
+00:49:57,000 --> 00:50:01,000
+to think love representing
+想表示爱
+
+00:50:01,000 --> 00:50:07,000
+this a periodic signal as a linear combination of complex exponentials
+本周期信号作为复指数的线性组合
+
+00:50:07,000 --> 00:50:11,000
+by this simple trick all
+通过这个简单的技巧都
+
+00:50:11,000 --> 00:50:14,000
+periodically replicating this signal
+定期复制此信号
+
+00:50:14,000 --> 00:50:17,000
+generating a periodic signal
+生成的周期信号
+
+00:50:17,000 --> 00:50:21,000
+using a Fourier series representation
+用傅立叶级数表示
+
+00:50:21,000 --> 00:50:24,000
+for that periodic signal and then
+对于周期性的信号，然后
+
+00:50:24,000 --> 00:50:28,000
+simply letting the period go to infinity
+只是让期间去到无穷大
+
+00:50:28,000 --> 00:50:32,000
+as the period goes to infinity that periodic signal becomes the original
+作为周期趋于无穷大的周期信号变为原来的
+
+00:50:32,000 --> 00:50:36,000
+a periodic one that we have before and a 40 a series
+周期性的事，我们面前和40系列
+
+00:50:36,000 --> 00:50:43,000
+representation then becomes what we refer to as the Fourier transform so
+表示就变成了我们所说的傅立叶变换，
+
+00:50:44,000 --> 00:50:47,000
+that's just a quick look at kind of the basic idea
+这只是一个快速浏览一下那种基本思路
+
+00:50:47,000 --> 00:50:52,000
+and approach that will take in the next lecture will develop this
+和方法，将在下一讲将开发这个
+
+00:50:52,000 --> 00:50:56,000
+a little more carefully more fully moving from the 40 a series which we've
+多一点小心地从40系列，我们已经更充分地移动
+
+00:50:56,000 --> 00:50:58,000
+used for periodic signals
+用于周期信号
+
+00:50:58,000 --> 00:51:01,000
+to develop the for EA transform
+以发展为EA变换
+
+00:51:01,000 --> 00:51:04,000
+which will then be representation for a periodic see
+这样会成为一个周期性见示意图
+
+00:51:04,000 --> 00:51:05,000
+thank you
+谢谢
+

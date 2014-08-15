@@ -1,0 +1,813 @@
+000040~003450~the following content is provided under a Creative Commons license
+003490~003639~your support will help MIT OpenCourseWare continue to offer
+007129~003451~high-quality educational resources for free
+010580~003780~to make a donation or view additional materials from hundreds of them IT
+014360~000670~courses
+015030~003080~visit MIT OpenCourseWare at 0 CW
+018110~007000~that MIT that EDU Horan
+028810~000980~the
+029790~001850~
+031640~002290~the
+033930~004480~the in
+038410~001690~in
+040100~004049~the
+044149~003541~are in
+047690~007000~for in discussing the sampling theorem
+057270~003450~we saw date for a ban limited signal which is sampled
+060720~004500~at a frequency that that is at least twice the highest frequency
+065220~003210~we can implement exact reconstruction
+068430~004860~of the original signal by low-pass filtering
+073290~005670~an impulse train whose areas are identical to the sample values
+078960~003000~well essentially this low pass filtering
+081960~004320~operation provides for us and interpolation
+086280~004449~in between the sample values in other words the output to the low-pass filter
+090729~000750~in fact
+091479~003041~is a continuous curve which
+094520~003800~fits between a sample values some continuous function
+098320~005890~now I'm sure that many have you are familiar with other kinds of
+104210~002620~interpolation that we could potentially provide
+106830~003960~in between sample values and in fact in today's lecture
+110790~003869~why I would like to do is first the ball
+114659~003350~develop the interpretation
+118009~004531~all the reconstruction as an interpolation process
+122540~003050~and then also see how this
+125590~003250~exact interpolation using a low-pass filter
+128840~003130~relates to other kinds of interpolation
+131970~003870~such as linear interpolation that you may already be familiar with
+135840~003890~well to begin let's again review
+139730~003569~what the overall system is for exact reconstruction
+143299~003811~sampling and reconstruction and so let me remind you that
+147110~004770~the overall system for sampling and D sampling a reconstruction is as i
+151880~001150~indicate here
+153030~003280~the sampling process consists love
+156310~004850~multiplying by an impulse train and then the reconstruction process
+161160~003740~corresponds the processing that impulse train with
+164900~003510~a low-pass filter so if the
+168410~003180~spectrum of the original signal
+171590~003500~is what I indicate in this diagram
+175090~003490~then after sampling with an impulse train
+178580~004330~that spectrum is replicated and
+182910~003990~this replicated spectrum for reconstruction
+186900~003390~is then processed through a low-pass filter
+190290~003510~and so in fact if this frequency response
+193800~004960~is an idea low-pass filter as i indicated on the diagram below
+198760~003640~then multiplying the
+202400~004550~spectrum of the sample signal by this extracts 4s
+206950~003039~just the portion all
+209989~003021~the spectrum centered around the origin
+213010~003030~and what we're left with then is the
+216040~003839~spectrum finally of the reconstructed signal
+219879~003241~which for the case of an idea low-pass filter
+223120~004020~is exactly equal to the spectrum of the original signal
+227140~003110~now that is the
+230250~004170~frequency domain picture
+234420~004349~all the sampling and reconstruction let's also look at
+238769~003761~basically the same process but let's examine it now
+242530~004030~in the time domain well in the time domain
+246560~004410~what we have is are original signal
+250970~003950~multiply it by an impulse train and
+254920~003050~this then is the sampled
+257970~004689~signal or the impulse train whose areas are equal to the sample values
+262659~004591~and because it the fact that this is an impulse train
+267250~003229~in fact we can take this term
+270479~003141~inside the summation
+273620~004250~and of course what counts about except Ian this expression
+277870~003520~is just as bad use at the sampling instants
+281390~004560~which are displaced in time by capital T and so
+285950~003380~to what we can to quietly right is the
+289330~004649~expression for the impulse train samples or
+293979~003031~imposed strain of samples as i've indicated here
+297010~006399~simply an imposed strain whose areas are the sample bad
+303409~003620~now in the reconstruction we process
+307029~005471~that impulse train with a low-pass filter that's the basic notion of the
+312500~001370~reconstruction
+313870~004490~and so in the time domain be reconstructed signal
+318360~004910~is related to the imposed strain of samples
+323270~005009~through a convolution with the filter impulse response
+328279~003690~and carrying out this convolution since
+331969~004870~this is just the train of pulses in effect what happens in this convolution
+336839~003791~is dead this impulse response gets
+340630~003500~reproduced at each of the locations 0
+344130~004659~the impulses index a PFD with the appropriate area
+348789~004921~and finally then in the time domain the reconstructed signal
+353710~003870~is simply a linear combination
+357580~004220~love shifted versions of the impulse response
+361800~003289~with amplitudes Witcher the sample values
+365089~004310~and so this expression in fact and is our basic
+369399~005450~reconstruction expression in the time domain
+374849~003180~well in terms of a diagram
+378029~003081~we can think of the original waveform
+381110~003030~as I've shown here and
+384140~003199~the red arrows denote be
+387339~003291~sampled waveform or the train
+390630~003349~love impulses whose amplitude are
+393979~003591~the sample values up the original
+397570~003709~continuous-time signal and
+401279~005041~then I've shown here it what might be a typical impulse response
+406320~004620~particularly typical in the case where we're talking about reconstruction with
+410940~002339~an ideal 0 pass filter
+413279~004440~now what happens in the reconstruction
+417719~003211~is that the convolution love these
+420930~003200~impulses with this impulse response
+424130~003370~means that in the reconstruction
+427500~004289~we superimpose wanted these impulse responses whatever the filter IPO's
+431789~002031~response happens to be
+433820~004540~at each of these time instants and in doing that
+438360~005309~then those are added up and that gives us the total reconstructed signal
+443669~005050~of course for the case in which the filter is an ideal
+448719~005161~low-pass filter then what we know is that in that case
+453880~004219~the impulse response is on the form of a sync function
+458099~005250~but generally we may want to consider other kinds of impulse responses and so
+463349~001021~in fact
+464370~003010~the interpolating impulse response
+467380~003269~may have and will have is this discussion goes along some different
+470649~002161~shapes
+472810~004830~now what I'd like to do is illustrator demonstrate this process
+477640~004370~love all affectively doing the interpolation
+482010~004370~by replacing each of the impulses
+486380~003890~by an appropriate interpolating impulse response and adding the stop
+490270~004439~and I'd like to do this with a computer movie that we generated
+494709~003130~and what you're seeing the computer movie is
+497839~004021~essentially original way for which is a continuous curve
+501860~003570~and then below that in the movie
+505430~003570~is a train samples
+509000~004659~and then below that will be the reconstructed signal and the
+513659~000961~reconstruction
+514620~005979~will be carried out by showing the location of the impulse response as it
+520599~002360~moves along in the way form
+522959~004481~and then the reconstructed kurt is simply the summation of those is that
+527440~001940~impulse response moves along
+529380~005260~so what you'll see then is an impulse response like this for the particular
+534640~000780~case
+535420~004300~love and idea low-pass filter for the reconstruction
+539720~003140~an impulse response like this place
+542860~003020~successively at the locations love
+545880~004530~these impulses and that is the convolution process
+550410~004049~and below that then will be the summation if these
+554459~004291~and the summation up those will then be the reconstructed signal
+558750~004500~so let's take a look at first of all that reconstruction
+563250~003550~where the impulse response corresponds to the impulse response
+566800~004160~have an idea low-pass filter shown here first
+570960~003520~is the continuous-time signal which
+574480~004160~we want to sample and then reconstruct using
+578640~003230~fan limited interpolation or equivalently
+581870~003250~idea low-pass filtering on the set of samples
+585120~004790~so the first step then is the sample this continuous time signal
+589910~003930~and we see here now the set of samples
+593840~004730~and superimposed on the samples are the original continuous 5 signal
+598570~004840~to focus on the fact that those are samples are the top curve
+603410~004120~let's now remove the continuous-time
+607530~004680~envelope with the samples and it's this set of samples that we then want to use
+612210~002270~for the reconstruction
+614480~003410~the reconstruction process interpreted as interpolation
+617890~005070~consists of replacing each sample with a sin x over X function
+622960~003760~and so let's first consider the sample
+626720~003590~at equal 0 and here is the
+630310~003650~interpolating sin x over X function Associated
+633960~003090~with that sample now the more general
+637050~003280~process then is to
+640330~005550~place a sin x over expulsion at the time location of each sample and superimpose
+645880~003050~those
+648930~003790~let's begin that process at the left-hand and
+652720~003820~the set of samples and in the bottom curve
+656540~004310~will build up the reconstruction as those sin x over X functions
+660850~004470~are added together so we begin with the left hand sample and we see their the
+665320~001570~sin x over X function
+666890~005000~on the bottom curve then is the first step in the reconstruction
+671890~004090~we now have the sin x over X function associated with the second sample
+675980~003900~let's add that in now we move on
+679880~005110~to the third sample and that sin x over X function
+684990~003000~is added in
+687990~003230~continuing on the next
+691220~003610~sample generates a sin x over X function
+694830~003380~which is superimposed on the result that we've accumulated
+698210~003190~so far and now let's just
+701400~004120~speed up the process will move on to the fifth sample
+705520~003200~add that in the sect sample add that in
+708720~003600~and continue on through the set of samples and
+712320~004520~keep in mind the fact that basically what we're doing explicitly here
+716840~005400~is the convolution up the impulse train with a sin x over X function
+722240~003300~and because the set of samples that we started with
+725540~003150~where samples haven't exactly been limited function
+728690~003360~what we are reconstructing exactly
+732050~003390~is the original continuous-time signal
+735440~007000~that we have on the top trace
+744900~002710~okay so that then
+747610~003460~kinda gives you the picture above doing
+751070~005390~interpolation by replacing the impulses by a continuous curve and that's the way
+756460~000820~we're fitting
+757280~003400~a continuous curve to the original
+760680~003580~impulse train and let me stress
+764260~003380~that this reconstruction process
+767640~003200~by putting the impulses through
+770840~003230~a filter the reconstruction process
+774070~004450~follows this relationship whether or not
+778520~004860~this impulse response in fact corresponds to an ideal ok pass filter
+783380~004700~what this expression always says is dead reconstructing this way
+788080~003470~corresponds to replacing the impulses
+791550~004200~by a shift in impulse response with an effort to
+795750~007000~dead is an amplitude corresponding to the sample value now
+802820~004870~be kinda reconstruction dead we've just talked about and the ideal
+807690~001170~reconstruction
+808860~004200~is often referred to as band limited
+813060~004350~interpolation because for interpolating in between the samples
+817410~003310~by making the assumption that the signals ban limited
+820720~004420~and using the impulse response for an idea low-pass filter
+825140~004110~which has a cutoff frequency consistent with
+829250~004160~the soon band with for the signal so if we look
+833410~003610~here for example at the impulse train
+837020~003840~then in the demonstration that you just saw
+840860~005500~we built up the reconstructed curve by replacing each of these impulses
+846360~003270~with the sync function and the some of those
+849630~004510~built up the reconstruct the curve well
+854140~003340~there are lots of other kinds of interpolation
+857480~003350~dead are perhaps maybe not as exact
+860830~004850~by often easier to implement and what I'd like to do is focus our attention on
+865680~000960~to appease
+866640~004830~one of these the first that I want to mention is what's referred to as a
+871470~001390~zero-order hold
+872860~004070~where in effect we do the interpolation in between these
+876930~004020~sample values by simply holding the sample value
+880950~004250~until the next sampling instant and the reconstruction
+885200~004080~that we end up with in that that case will look something like this:
+889280~003560~it's a staircase or boxcar kinda function
+892840~003680~where we've simply held the sample value
+896520~004880~until the next sampling instant and then replaced by that value held until the
+901400~001570~next sampling instant et cetera
+902970~004340~now that's one kinda interpolation
+907310~003430~another kinda very common interpolation is
+910740~003020~what's referred to as linear interpolation we simply fit
+913760~004370~a straight line between the sample values and in that case
+918130~003530~the cut be type reconstruction that we would get
+921660~004640~would look something like I indicate here where we take a sample value
+926300~006560~and the following sample value and simply fit interpolated curve between
+932860~000750~them
+933610~003450~which is a straight line now
+937060~004280~interestingly in fact both the zero-order hold
+941340~003440~and the linear interpolation which is
+944780~004110~often referred to as a first-order hold can also
+948890~004140~be either implemented or interpreted both implemented interpreted
+953030~003480~in the context of the equation that we just develop
+956510~003070~in particular the processing I'll the
+959580~003560~imposed strain of samples by
+963140~003460~a linear time-invariant filter specifically
+966600~003450~if we consider a
+970050~003500~system where the impulse response
+973550~003900~is a rectangular function
+977450~003080~then in fact if
+980530~003470~we processed the train if samples
+984000~004220~through a filter with this impulse response exactly
+988220~004190~the reconstruction that we would get is what I've shown here
+992410~004260~alternatively if we chose an impulse response
+996670~003150~which was a triangular
+999820~003610~impulse response then
+1003430~003040~what in effect happens is that each of these impulses
+1006470~003220~activates this triangle
+1009690~005320~and when we add up those triangles at successive locations in fact
+1015010~004700~what we generate is this linear interpolation
+1019710~003720~so what this says in fact is dead
+1023430~003090~either a zero-order hold
+1026520~003150~which holds the value or linear interpolation
+1029670~003710~can likewise be interpreted as a process
+1033380~003720~love convolved thing the impulse trainer samples
+1037100~004270~with inappropriate filter impulse response
+1041370~003100~well what I'd like to do is demonstrate
+1044470~003400~as we did with the ban limit interpolation or
+1047870~005230~these sink interpolation is sometimes called interplay with a sin x over axe
+1053100~003230~let me now show the process first the ball
+1056330~004340~where we have a zero-order hold
+1060670~003610~as corresponding to this impulse response
+1064280~004490~in which case we'll see basically the same process as we saw your
+1068770~003600~in the computer-generated movie previously
+1072370~003430~but now rather than a sync function replacing
+1075800~003970~each of these impulses will have a rectangular function
+1079770~006330~that will generate then are approximation which is a zero-order hold
+1086100~004380~and following that will do exactly the same thing with the same way form
+1090480~004510~using a first-order hold or a triangular impulse response
+1094990~005080~in which case well we'll see again is that as the triangle moves along here
+1100070~004370~and we build up the running some or the convolution
+1104440~003440~then will in fact fit the original curve
+1107880~003700~with a linear curve soul now let's
+1111580~003390~again look at that remembering that at the top will see
+1114970~003830~the original continuous curve exactly the one that we had before
+1118800~003270~below it the set of samples together with
+1122070~005150~the impulse response moving along and then finally below that
+1127220~004100~the accumulation of those impulse responses work with only
+1131320~004750~the convolution or equivalent Lee the reconstruction
+1136070~005610~so we have the same continuous-time signal that we use previously with
+1141680~003130~ban limited interpolation and in this case
+1144810~004230~now we want to sample and then interpolate first for the zero-order
+1149040~001150~hold
+1150190~003340~and then with the first-order whole so the first step then
+1153530~003650~is the sample the continuous-time signal
+1157180~004180~and we show here at the set of samples once again
+1161360~003990~superimposed on which we have the continuous-time signal
+1165350~003160~which of course is exactly the same curve as
+1168510~003090~we have in the top well let's
+1171600~003150~remove that envelope so that we focus attention
+1174750~003050~on the samples that were using to interpolate
+1177800~005030~any interpolation process consists love replacing each sample
+1182830~003540~by a rectangular signal
+1186370~003200~whose amplitude is equal to the sample size
+1189570~003920~so let's put one first of all at equal 0 Associated
+1193490~003060~with that sample
+1196550~005810~and that then would be the interpolating rectangle associated with the sample at
+1202360~002000~equal 0
+1204360~004330~now to build up the interpolation what will have is one of those that each
+1208690~001540~sample time and those are
+1210230~004040~added together will start that process as we did before
+1214270~003340~at the left hand and that the set of samples
+1217610~003640~and build the interpolating signal on the bottom so
+1221250~003450~with the left hand sample we have first
+1224700~003790~the rectangle associated with that that shown
+1228490~003530~now on the bottom curve we now
+1232020~003310~have a senator plating rectangle with the second
+1235330~004870~sample that gets headed into the bottom curve
+1240200~004710~similarly and interpolating rectangle for the zero-order hold
+1244910~004540~with the third sample we had bad in to the bottom curve
+1249450~004480~and as we proceed we're building a staircase approximation
+1253930~003700~on to the next sample that gets added in
+1257630~003120~as we see the air and now lets speed up the process
+1260750~003090~and we'll see the staircase approximation
+1263840~003589~building up and notice in this case
+1267429~004051~as in the previous case that what we're basically watching dynamically
+1271480~004920~is the convolution love the imposed strain of samples
+1276400~003500~with the impulse response the interpolating filter
+1279900~004920~which in this particular case is just a rectangular Paul's
+1284820~003500~and so this staircase approximation that we're generating
+1288320~003190~is the zero-order hold interpolation
+1291510~003230~between the samples I love the
+1294740~007000~ban limited signal which is at the top
+1301880~004700~now let's do the same thing with the first-order whole so in this case
+1306580~004480~we want to interpolate using a triangular impulse response
+1311060~004460~rather than the sin x over X or rectangular impulse responses that we
+1315520~001460~showed previously
+1316980~004400~so first let's say with the sample it equals 0
+1321380~004910~we would replace that with a triangular
+1326290~003380~interpolating function and more generally
+1329670~003870~each in polls or sample is replaced with a triangular
+1333540~004020~interpolating function of the height equal to the sample height
+1337560~004110~and these are superposed to generate the linear interpolation
+1341670~003300~will begin this process with the leftmost
+1344970~003900~sample and will build the superposition
+1348870~003170~below and the bottom curve so here
+1352040~003350~is the interpolating triangle for the
+1355390~005370~leftmost sample and now it's reproduced below
+1360760~004270~with the second sample we have an interpolating triangle which is added
+1365030~001149~into the bottom
+1366179~004500~curve and now on to the third sample
+1370679~005111~and again that interpolating triangle will be added onto
+1375790~003740~the curve that we've developed so far
+1379530~003760~and now on to the next sample
+1383290~004200~we had that in there will speed up the process
+1387490~003320~and as we proceed through
+1390810~004400~we are building basically a linear interpolation
+1395210~003440~in between the sample points
+1398650~004260~a sexually corresponding to if one wants to think of it this way connecting the
+1402910~000790~dots
+1403700~004690~and what you're watching once again is essentially the convolution process
+1408390~004080~involving the impulse train with the impulse response
+1412470~003840~the interpolating filter and what we're generating then
+1416310~004410~is a linear approximation
+1420720~007000~to the fam limited continuous-time curve at the top
+1428230~004750~okay so what we have then is
+1432980~003300~several other kinds of interpolation which
+1436280~003649~fit within the same context as
+1439929~003561~exact ban limit interpolation one being
+1443490~004640~interpolation in the time domain with an impulse response which is a rectangle
+1448130~003760~the second being interpolation in the time domain
+1451890~003630~with an impulse response which is a triangle
+1455520~003170~and in fact its interesting to also
+1458690~003989~look at the relationship between at and ban limit interpolation
+1462679~004571~look at it specifically in the frequency domain
+1467250~003200~well in the frequency-domain
+1470450~004840~what we know of course is dead for exact interpolation
+1475290~005480~what we want as our interpolating filter is an ideal Lopez filter
+1480770~004620~now keep in mind by the way that an idea low-pass filter is an abstraction is a
+1485390~004430~stress several times in the past an idea low-pass filter
+1489820~004650~is a9 causal filter and in fact infinite extent which is
+1494470~004240~one of the reasons why in any case we would you some approximation to it
+1498710~003290~but here what we have is the
+1502000~003700~exact interpolating filter
+1505700~005300~and that corresponds to an ideal 0 pass filter
+1511000~005020~if instead we carried out the interpolation
+1516020~004550~using the zero-order hold the zero-order hold has a
+1520570~004810~rectangular impulse response and that means in the frequency domain
+1525380~003500~its frequency response is of the form love
+1528880~003010~a sync function or sin x over iraq's
+1531890~004000~and so this in fact when we're doing the reconstruction
+1535890~004320~with a zero-order hold is The Associated frequency response
+1540210~005850~now notice that it does some approximate Lopez filtering but of course
+1546060~004260~it has significant it permits significant energy
+1550320~003510~outside the pass band at the filter
+1553830~004490~well instead the zero-order hold if we use the first-order hold corresponding
+1558320~002750~to the triangular impulse response
+1561070~003980~in that case then in the frequency domain The Associated
+1565050~004020~frequency response would be the forty a transformer the triangle
+1569070~004120~and the Fourier transform a triangle is a sin squared
+1573190~003120~X over X where'd kinda function
+1576310~003000~and so in that case what we would have
+1579310~004540~for the frequency response associated with the first-order hold
+1583850~003880~is a frequency response as I show here
+1587730~005570~and the fact dead that there's somewhat more attenuation
+1593300~003070~outside the pass band at the ideal filter
+1596370~005890~is what suggests in fact dead the first-order hold or linear interpolation
+1602260~004010~gives us a somewhat smoother approximation to the original
+1606270~003350~signal then the zero-order hold does
+1609620~003330~and so in fact just to compare these two
+1612950~003190~we can see that here is
+1616140~003120~the ideal filter here is
+1619260~003230~the zero-order hold corresponding to
+1622490~003310~generating a boxcar kinda reconstruction
+1625800~006680~and here is the first order hold corresponding to a linear interpolation
+1632480~004210~now in fact in many sampling systems
+1636690~003910~in any sampling system really we need to use some approximation
+1640600~004890~to the low-pass filter and very often in fact
+1645490~004320~what is done in many sampling systems is the first to use
+1649810~004109~just a zero-order hold and then follow the zero-order hold
+1653919~003921~with some additional 0 pass filtering
+1657840~003400~well to illustrate some with these ideas
+1661240~003320~and the notion love doing reconstruction
+1664560~003970~with a zero-order hold a first-order hold and then in fact
+1668530~004500~are ending to that some additional 0 pass filtering
+1673030~003980~what I'd like to do is is demonstrator illustrate
+1677010~004240~sampling and interpolation in the context love some images
+1681250~003860~image of course is a two-dimensional signal the
+1685110~004500~the independent variables are spatial variables not time variables
+1689610~006380~and of course we can sample in both or the spatial dimensions both in X&Y
+1695990~003830~and were chosen as so
+1699820~003090~a possibly appropriate choice for
+1702910~006430~an image is again our friend and colleague JBJ 48
+1709340~004460~so let's begin with the original image which we then
+1713800~004860~want to sample and reconstruct and a sampling is done by
+1718660~004780~effectively multiplying by appalls both horizontally and vertically
+1723440~003120~the sample picture is then the next one
+1726560~004619~that I show and as you can see this corresponds in effect
+1731179~004750~to extracting small brightness elements I did the original image in fact
+1735929~005151~let's look in a little closer and what you can see essentially is that
+1741080~003339~well we have of course tonight impulses spatially but
+1744419~003231~small spatial pillars dead
+1747650~003790~implement the sampling for us okay now
+1751440~003870~going back to the original sample picture
+1755310~004150~we know that a picture can be reconstructed by low-pass filtering from
+1759460~001540~the samples and in fact
+1761000~005490~we can do that optically in this case by simply d focusing the camera
+1766490~004550~and when we do that what happens is that we smear out the picture
+1771040~004599~or affectively convolved the impulses with the point spread function of the
+1775639~000991~optical system
+1776630~003680~an this then is not too bad a reconstruction
+1780310~006099~so thats a an approximate reconstruction and focusing back now
+1786409~007000~what we have again is the sample picture
+1793980~003260~now these images are in fact a can often of
+1797240~004020~a computer display and a common procedure in
+1801260~004060~computer-generated are displayed image is is in fact
+1805320~005240~the use of a zero-order hold and if the sampling rate is high enough
+1810560~003680~then that actually works reasonably well so now
+1814240~003360~let's look at the result of applying a zero-order hold
+1817600~003079~to the sampled image that I
+1820679~003901~just showed
+1824580~004569~the zero-order hold corresponds to replacing the impulses by
+1829149~003971~rectangles and you can see that what that generates
+1833120~003410~is a mosaic affect as you would
+1836530~004399~expect and in fact let's going a little closer and
+1840929~003841~emphasize the mosaic affect you can see that essentially where they were
+1844770~001840~impulses previously
+1846610~004250~there are now rectangles with those brightness values
+1850860~004850~a very common procedure with computer-generated images is the first
+1855710~003090~20 order holders we've done here
+1858800~004379~and then follow that with some additional ok pass filtering and in fact
+1863179~004750~we can do that low pass filtering now again by D focusing the camera
+1867929~003131~and you can't begin to see
+1871060~004200~dead with the zero-order all plus the low-pass filtering the reconstruction is
+1875260~001970~not that bad
+1877230~003320~well let's go back to the full
+1880550~003359~image with the zero-order hold
+1883909~005111~and again now the effective low pass filter I will be
+1889020~004260~somewhat better and let's tee focus again year
+1893280~003270~and you can begin to see that this is
+1896550~004170~a reasonable reconstruction with the mosaic
+1900720~003330~in fact with this back in focus you can
+1904050~004089~apply your own low-pass filtering to it either by squinting
+1908139~004821~or if you have the right or wrong kind of my classes either taking them off for
+1912960~002830~putting them on
+1915790~004750~now in addition to the zero-order hold weekend of course apply a first-order
+1920540~001670~hold and that would
+1922210~005070~correspond to replacing the impulses instead of with rectangles as we have
+1927280~000840~here
+1928120~003390~replacing them with triangles an
+1931510~004350~so now let's take a look at the result all a first-order hold applied to the
+1935860~002539~original samples
+1938399~004461~and you can see now that the reconstruction is somewhat smoother
+1942860~002860~because the fact that we're using an impulse response
+1945720~004150~that somewhat smoother or a corresponding frequency response that
+1949870~001450~has a sharper cut off
+1951320~003819~i emphasize again that this is a somewhat low pass filtered version of
+1955139~001510~the original because
+1956649~003051~we have under sampled some what spatially
+1959700~007000~to bring out the point that I want to illustrate
+1966840~003470~okay to emphasize these effects
+1970310~003410~even more what I'd like to do is go through
+1973720~004179~basically the same sequence again but in this case what we'll do
+1977899~004750~is double the sample spacing both horizontal horizontally and vertically
+1982649~004371~this of course means there will be even more highly under sampled been
+1987020~004420~in the ones that I preview show previously showed and so the result of
+1991440~002590~the reconstructions with some low pass filtering
+1994030~004889~will be a much more low-pass filtered image
+1998919~005500~so we now have the sample picture but I've now under sampled considerably
+2004419~003701~more and you can see the effect of the sampling
+2008120~003529~and if we now apply is zero-order hold
+2011649~004141~to this picture we will again get a mosaic and lets
+2015790~004240~look at that and that mosaic of course looks
+2020030~004830~even block here than the original and again emphasizes the fact that the
+2024860~001250~zero-order hold
+2026110~004960~simply corresponds to filling in squares or replacing the impulses
+2031070~003470~by squares with the corresponding brightness
+2034540~005290~values finally if we instead of a zero-order hold
+2039830~004750~use a first-order hold corresponding to two-dimensional triangles in places
+2044580~003470~in place at these original blocks what we get is
+2048050~005760~the next image and that again is a smoother reconstruction consistent with
+2053810~003200~the fact that the triangles are smoother than the rectangles
+2057010~004200~again i emphasize that this looks so highly low-pass filtered
+2061210~003800~because of the fact that we've under sampled so severely
+2065010~006110~to essentially emphasize the effect
+2071120~003100~as I mentioned the images that we
+2074220~003150~just looked at were taken from a computer although
+2077370~003430~because the original images were continuous-time
+2080800~004410~images or more specifically continuous space that is the independent variable
+2085210~001620~is a spatial variable
+2086830~003730~now computer processing
+2090560~004300~love signals pictures speech or whatever the signals are
+2094860~003070~is very important and useful because
+2097930~004270~it offers a lot of flexibility and in fact the kinds of things that I showed
+2102200~001220~these pictures
+2103420~003500~would have been very hard to do without
+2106920~003680~in fact doing computer processing
+2110600~004260~well in computer processing %uh any kind of signal
+2114860~003940~basically what's required is dead
+2118800~005260~we do the processing in the context of discrete-time signals and discrete-time
+2124060~000970~processing
+2125030~004270~because it the fact dead a computer is run off the clock
+2129300~003370~and essentially things happen in the computer
+2132670~006760~in a as a sequence of numbers and as a sequence of events
+2139430~004000~well it turns out dead the sampling theorem in fact as i've indicated
+2143430~001420~previously
+2144850~003400~provides us with a very nice mechanism
+2148250~003890~for converting are continuous-time signals
+2152140~005390~into discrete-time signals for example for computer processing
+2157530~004650~or in fact if it's not a computer for some other kind of discrete-time or
+2162180~002690~perhaps digital processing
+2164870~004100~well the basic idea as i've indicated previously
+2168970~005180~is to carry out discreet I processing
+2174150~003460~of continuous-time signals by
+2177610~003590~first converting the continuous-time signal
+2181200~004440~to a discrete-time signal carry out
+2185640~003780~the appropriate discrete-time processing
+2189420~005400~love the discrete-time signal and then after we're done with that process
+2194820~000690~saying
+2195510~003520~converting from the discrete-time sequence
+2199030~003660~back to a continuous-time signal
+2202690~005310~corresponding to the output that we have here
+2208000~004570~well in the remainder this lecture what I'd like to analyze
+2212570~004160~is the first step in that process namely the conversion
+2216730~003650~from a continuous-time signal to a discrete-time signal
+2220380~003340~and understand how the
+2223720~004190~to relate both in the time domain in the frequency domain
+2227910~003440~and in the next lecture will be analyzing and demonstrating
+2231350~004140~the overall system including some intermediate processing
+2235490~003110~so be first step in the process
+2238600~003920~is the conversion from a continuous-time signal
+2242520~005420~to a discrete-time signal and that can be thought of as a process that involves
+2247940~005110~two steps although in practical terms it may not be implemented specifically
+2253050~003600~as these two steps the two steps are
+2256650~003440~to first convert from the continuous-time
+2260090~004260~for continuous-time continuous signal
+2264350~005140~to an impulse train through a sampling process
+2269490~003390~and then to convert
+2272880~003780~that impulse train to a discrete-time sequence
+2276660~003760~and the discrete-time sequence exit then
+2280420~004280~is simply then a sequence a bad news
+2284700~004760~which are the samples all the continuous-time signal
+2289460~003810~and as we'll see as we walk through this basically this step
+2293270~003670~going from the impulse train to the sequence
+2296940~004550~corresponds principally to worry labeling staff where
+2301490~003530~we pic of the impulse bad news
+2305020~003850~and use those as the sequence values
+2308870~003450~up for the discrete-time signal so
+2312320~004890~what I'd like to do as a first step in understanding this process
+2317210~005370~is to analyze it in particular with our attention focused on trying to
+2322580~001300~understand
+2323880~003050~what the relationship is in the frequency domain
+2326930~003190~between the discrete-time Fourier transform
+2330120~003850~love the sequence discrete-time signal
+2333970~003410~and the continuous-time 48 transform
+2337380~003140~love the original on sampled and then
+2340520~003920~the sampled signal so let's go through that
+2344440~003250~and in particular
+2347690~004640~what we have is a process where the continuous-time signal
+2352330~003650~is of course modulator multiplied
+2355980~003430~by an impulse train and that gives us then
+2359410~004070~another continuous-time signal we're still in the continuous time domain
+2363480~004630~it gives us another continuous-time signal which is an impulse train
+2368110~003050~and in fact we've gone through this analysis
+2371160~003510~previously and what we have is
+2374670~004450~this multiplication or taking this term inside
+2379120~004080~the summation and recognizing that the impulse train
+2383200~003720~is is simply an impulse train
+2386920~003130~with areas above the impulses which
+2390050~003470~are the samples above the continuous-time function
+2393520~005910~we can then carry out the analysis in the frequency domain
+2399430~004000~now in the time domain we have a multiplication process so in the
+2403430~001270~frequency domain
+2404700~003340~we have a convolution above the Fourier transform
+2408040~004980~love the continuous-time signal the original signal
+2413020~005590~and the Fourier transform of the impulse train which is itself an impulse train
+2418610~003720~so in the frequency domain then the 48 transform
+2422330~003770~of the sampled signal which is an impulse train
+2426100~004120~is the convolution %uh the Fourier transform up the sampling
+2430220~006110~function PFT and the Fourier transform of the sampled signal
+2436330~004930~since the sampling signal is a periodic imposed strain
+2441260~003160~its Fourier transform is an impulse train
+2444420~004640~and consequently carrying out this convolution
+2449060~003370~in effect says that this for EA transform
+2452430~005150~simply gets replicated at each of the locations of these impulses
+2457580~003039~and finally what we end up with an
+2460619~003781~is a 48 transform after
+2464400~003040~the sampling process which is
+2467440~003660~the original for EA transform love the continuous
+2471100~003480~signal but and it to itself
+2474580~003020~shifted by integer multiples
+2477600~004300~above the sampling frequency and so this is the basic equation then
+2481900~004140~that tells us in the frequency domain what happens
+2486040~004450~through the first part all this two-step process
+2490490~004570~now I emphasize that is a two-step process the first process
+2495060~003450~is sampling where we're still essentially
+2498510~003780~in the continuous-time world the next step
+2502290~003450~is essentially a relabeling process
+2505740~004910~where we convert that impulse train simply to a sequence
+2510650~003120~so let's look at the next step
+2513770~003980~the next step is to take the impulse train and converted
+2517750~003960~through a process to sequence
+2521710~003080~and the sequence values are simply then
+2524790~004760~samples 0 the original continuous signal
+2529550~003120~and so now we
+2532670~003780~can analyze this and what we want to relate
+2536450~003270~is the discrete-time Fourier transform
+2539720~004010~love this and the continuous 540 a transformer
+2543730~003840~this or in fact that continues type for a transformer affects up to you
+2547570~003380~safety okay
+2550950~003490~well we have the imposed strain
+2554440~003610~and its Fourier transform we can
+2558050~003960~get by simply evaluating for EA transform
+2562010~003420~and since the Fourier transform love this
+2565430~004640~since this corresponds to an impulse train the 48 transformed by the time we
+2570070~001890~change them something in it rolls
+2571960~003880~will then have this in paul's replace
+2575840~003010~524 e a transformer the shift in polls
+2578850~003960~which is this exponential factor so this expression
+2582810~003240~is before a transformer the impulse train
+2586050~004380~the continuous time Fourier transform and alternatively
+2590430~003300~we can look at the Fourier transform all
+2593730~003060~the sequence and this of course is
+2596790~004210~a discrete-time Fourier transform
+2601000~006030~so we have the continuous time Fourier transform the imposed strain
+2607030~003339~we have the discrete-time Fourier transform the sequence
+2610369~003671~and now we want to look at how those to relate
+2614040~004930~well it pretty much falls out of just comparing these two summations
+2618970~003690~in particular this term and this term
+2622660~003780~are identical that's just the relabeling
+2626440~005630~Nov all what the sequence values are
+2632070~005010~and notice that when we compare these exponential factors
+2637080~005060~they're identical as long as we associate capital Omega
+2642140~003350~with little or may get times capital T in other words
+2645490~003790~if we were to replace here capital may go by a little Omega
+2649280~003630~times capital T and replace exhibition
+2652910~003290~by excessive see a venti in this expression
+2656200~004000~would be identical to this expression
+2660200~003080~so in fact these two are equal
+2663280~005230~where a relabeling or with the transformation between small Megan
+2668510~001450~capital make
+2669960~004100~and so in fact then the relationship that we have
+2674060~003980~is that the discrete-time Fourier transform are
+2678040~003120~the sequence of samples
+2681160~003900~is equal to the continuous time Fourier transform
+2685060~003300~all the impulse strain of samples
+2688360~004530~where we associate the continuous-time frequency variable
+2692890~003610~and the discrete-time pic script frequency variable through
+2696500~004610~a frequency scaling as i indicate here or said another way
+2701110~006110~the discrete-time spectrum is the continuous I spectrum of the samples
+2707220~004660~with capital mate with small Omega replaced by capital Omega
+2711880~003110~divided by capital T
+2714990~004640~fight so we have then this two-step process
+2719630~003350~the first step is taking the continuous-time signal
+2722980~003160~sampling with it sampling it with an impulse train
+2726140~003460~in the frequency domain that corresponds to
+2729600~003280~replicating the four EA transform
+2732880~003670~all the original continuous-time signals
+2736550~004370~the second step is relabeling Matt
+2740920~003810~in effect turning it into a sequence and what that does in the frequency domain
+2744730~001860~is provide us
+2746590~004230~with a rescaling if the frequency axis or as we'll see
+2750820~005140~a frequency normalization which is associated with the corresponding time
+2755960~001100~normalization
+2757060~003540~in the time domain well let's look at
+2760600~003750~those statements a little more specifically
+2764350~005410~when I show here it is the original continuous-time signal
+2769760~003109~and then below it is
+2772869~004071~the sampled signal and these two
+2776940~003810~are signals in the continuous-time domain
+2780750~003680~now what is the conversion from this impulse train
+2784430~003780~to a sequence well it simply taking
+2788210~003940~these in polls areas are bad news the sample values
+2792150~004070~and relabeling them in effect is a show below
+2796220~005619~relabeling them as sequence values
+2801839~003811~and essentially I'm now replacing
+2805650~005030~the impulse by the designation of a sequence value
+2810680~003450~that's one step but the other important step to focus on
+2814130~005610~is dead whereas in the impulse trainees impulses are spaced
+2819740~005040~by integer multiples of the sampling period capital T
+2824780~003220~in the sequence of course because if the way that we
+2828000~003670~label sequences these are always space by
+2831670~003080~simply integer multiples of 1
+2834750~004089~so in effect you could say that the step in going from here
+2838839~005381~to hear corresponds to normalizing out in the time domain
+2844220~003329~the sampling period capital T
+2847549~004941~to stress that another way if the sampling period were doubled
+2852490~005770~so there'd in this picture this spacing stretched out by a factor of two
+2858260~004370~nevertheless in the discrete-time
+2862630~004090~for the discrete-time signal the spacing would remain as one
+2866720~003450~and essentially its the
+2870170~003179~envelope of those sequence values
+2873349~003111~that would then get contracts compressed in time
+2876460~005420~so you can think all the step in going from the impulse train to the samples
+2881880~003830~as a sexually a time normalization
+2885710~004349~now let's look at this in the frequency domain in the frequency domain
+2890059~004030~what we have is the Fourier transform of our original continuous
+2894089~004861~signal after sampling with an impulse train
+2898950~003430~this spectrum retains its shape
+2902380~005050~him but is replicated at integer multiples of the sampling frequency to
+2907430~001750~pry over capital T
+2909180~003179~as i indicated here now
+2912359~004581~we know that a discrete-time spectrum
+2916940~003619~must be periodic and frequency with a period of two pi
+2920559~005040~here we have the periodicity but it's not periodic with period have to pry
+2925599~005091~its periodic with period which is equal to the sampling frequency
+2930690~004460~however in converting from the samples
+2935150~003469~to the sequence values and we go through another step
+2938619~003541~what the other step the other step is a time normalization
+2942160~003740~where we take the impulses which your space by the sampling period
+2945900~003640~and we rescale at essentially in the time domain
+2949540~003509~to a space in which is unity so we're dividing out
+2953049~004141~in the time domain by a
+2957190~003369~by a factor which is
+2960559~003040~equal to the sampling period well
+2963599~003641~dividing out in the time domain by
+2967240~003990~capital T would correspond to
+2971230~005260~multiplying in the frequency domain the frequency axis by capital T and indeed
+2976490~003980~what happens is dead in going from the imposed strain
+2980470~004210~to the sequence values we now rescale
+2984680~003659~this axis so that in fact
+2988339~003240~the axis gets stretched by capital T
+2991579~004831~and the frequency which corresponded to 2pi over capital T
+2996410~004580~now gets re normalized 22 part
+3000990~004740~so just looking at this again and perhaps with the overall picture
+3005730~003960~in the time domain we've gone from a continuous curve
+3009690~006100~two samples relabel those and in effect implemented a time normalization
+3015790~003360~correspondingly in the frequency domain we
+3019150~004459~have replicated the spectrum through the initial sampling process
+3023609~003561~and then rescale the frequency axis
+3027170~003100~so that in fact now this periodicity
+3030270~004110~corresponds to a periodicity here which is to Popeye
+3034380~003500~and here which is the sampling frequency
+3037880~005150~so very often in fact and will be doing this next time
+3043030~003210~very often when you think
+3046240~005220~love continuous-time signals which have been converted to discrete-time signals
+3051460~003070~when you look at the discrete-time frequency axis
+3054530~003339~the frequency to pie is Associated
+3057869~003031~with the sampling frequency
+3060900~005620~as it will it was applied to the original continuous-time signals
+3066520~004680~now as i indicated what will want to go on to from here
+3071200~003460~is understanding I'll
+3074660~003290~what happens when we take a continuous-time signal
+3077950~003450~converted to a discrete-time signal as I just going through
+3081400~003570~do some discreet I processing with the linear time-invariant system
+3084970~004560~and then carry that back into the continuous-time world
+3089530~003900~that is a procedure that will go through and
+3093430~003320~analyze and in fact illustrate in some detail
+3096750~003420~next time in preparation for that
+3100170~004060~what I would be eager to encourage you to do
+3104230~003339~using the study guide and in reviewing this lecture
+3107569~004191~is to begin the next lecture
+3111760~003569~with a careful and thorough understanding love
+3115329~003321~the arguments that I just going through in particular
+3118650~004600~understanding the process that's involved in going from a continuous-time
+3123250~001930~signal
+3125180~003179~through sampling to a discrete-time signal
+3128359~003960~and what that means in the frequency domain interns to taking the original
+3132319~001451~spectrum
+3133770~003480~replicating it because if the sampling process
+3137250~003109~and then sry scaling that so that
+3140359~004151~the periodicity gets rescaled so that its periodic
+3144510~004390~with a period of two part so will continue with that next time focusing
+3148900~000550~now
+3149450~003210~on the subsequent steps
+3152660~001209~in the process thank you
